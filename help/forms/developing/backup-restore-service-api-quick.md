@@ -1,8 +1,8 @@
 ---
 title: Démarrages de l’API du service de sauvegarde et de restauration
-seo-title: Démarrages de l’API du service de sauvegarde et de restauration
+seo-title: Backup and Restore Service APIQuick Starts
 description: Utilisez l’API du service de sauvegarde et de restauration pour passer en mode de sauvegarde et la quitter à l’aide du démarrage rapide de l’API Java.
-seo-description: Utilisez l’API du service de sauvegarde et de restauration pour passer en mode de sauvegarde et la quitter à l’aide du démarrage rapide de l’API Java.
+seo-description: Use the Backup and Restore Service API to enter and leave backup mode using the Java API Quick Start.
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: b4fa018f-48a6-4991-9f80-d2d6e0b30555
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '249'
 ht-degree: 1%
 
 ---

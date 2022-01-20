@@ -1,8 +1,8 @@
 ---
 title: Documents de référence SPA
-seo-title: Documents de référence SPA
+seo-title: SPA Reference Materials
 description: Aperçu des références d’API d’application sur une seule page et des référentiels de code source
-seo-description: Aperçu des références d’API d’application sur une seule page et des référentiels de code source
+seo-description: An overview of the single page application API references and source code repositories
 uuid: 503a1bec-da8b-4f5e-adcc-fe65c3c96034
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: c3a81baa-98b0-40b4-bd34-f39e8491acca
 exl-id: d4f7f94c-11f2-47c7-84ad-115aa5f2a06e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 79%
+source-wordcount: '161'
+ht-degree: 80%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 79%
 Vous trouverez ci-dessous les références d’API JavaScript disponibles des modules NPM pour le framework SDK de l’éditeur de SPA AEM.
 
 >[!NOTE]
->La fonction Éditeur d’application sur une seule page (SPA) requiert [AEM Service Pack 2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html) ou une version plus récente.
+>La fonction Éditeur d’application sur une seule page (SPA) nécessite [AEM 6.4 Service Pack 2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html) ou plus récent.
 >
 >L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 

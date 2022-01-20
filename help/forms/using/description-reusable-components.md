@@ -1,8 +1,8 @@
 ---
 title: Description des composants réutilisables
-seo-title: Description des composants réutilisables
+seo-title: Description of reusable components
 description: Liste complète des composants réutilisables, avec les noms de fichier et les dépendances, pour vous permettre d’intégrer le composant espace de travail AEM Forms dans vos applications Web.
-seo-description: Liste complète des composants réutilisables, avec les noms de fichier et les dépendances, pour vous permettre d’intégrer le composant espace de travail AEM Forms dans vos applications Web.
+seo-description: A complete list of reusable components with filenames and dependencies, to help you integrate AEM Forms workspace component in your web applications.
 uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
@@ -12,14 +12,14 @@ discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 exl-id: 2790a2d3-444a-4c13-99b0-ea31923fc547
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1231'
 ht-degree: 88%
 
 ---
 
 # Description des composants réutilisables {#description-of-reusable-components}
 
-L’espace de travail AEM Forms est composé de [composants réutilisables](/help/forms/using/integrating-html-ws-components-web.md) organisés dans une [structure de dossiers](/help/forms/using/folder-structure.md) spécifique dans CRX™. Chaque composant possède des fichiers de modèle, de vue et de contrôleur à l’emplacement spécifié dans la structure de dossiers, des dépendances JavaScript™ à d’autres fichiers de composant, des événements écoutés par le composant et des objets JavaScript qui peuvent déclencher ces événements dans l’espace de travail AEM Forms. La liste complète des composants réutilisables avec leurs noms de fichier et leurs dépendances figure ici.
+L’espace de travail AEM Forms est composé de [réutilisable](/help/forms/using/integrating-html-ws-components-web.md) composants organisés dans une [structure de dossiers](/help/forms/using/folder-structure.md) dans CRX™. Chaque composant possède des fichiers de modèle, de vue et de contrôleur à l’emplacement spécifié dans la structure de dossiers, des dépendances JavaScript™ à d’autres fichiers de composant, des événements écoutés par le composant et des objets JavaScript qui peuvent déclencher ces événements dans l’espace de travail AEM Forms. La liste complète des composants réutilisables avec leurs noms de fichier et leurs dépendances figure ici.
 
 ## TaskList {#tasklist}
 
@@ -924,7 +924,7 @@ L’espace de travail AEM Forms est composé de [composants réutilisables](/hel
    <td> 
     <ul> 
      <li>userImageUrlFetched – modèle userinfo</li> 
-     <li>sessionRenewed - modèle userinfo  <br /> </li> 
+     <li>sessionRenewed - modèle userinfo <br /> </li> 
      <li>sessionExpired - modèle userinfo </li> 
     </ul> </td> 
   </tr> 
@@ -1085,7 +1085,7 @@ L’espace de travail AEM Forms est composé de [composants réutilisables](/hel
   </tr> 
   <tr> 
    <td><p>Dépendances JS</p> </td> 
-   <td>s.o.<br /> </td> 
+   <td>NA<br /> </td> 
   </tr> 
   <tr> 
    <td><p>Événements écoutés (Nom de l’événement - Déclencheur)</p> </td> 

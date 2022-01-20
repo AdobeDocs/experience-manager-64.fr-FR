@@ -1,8 +1,8 @@
 ---
 title: PhoneGap
-seo-title: Création de contenu pour Adobe PhoneGap Enterprise
+seo-title: Authoring Content for Adobe PhoneGap Enterprise
 description: Cette page sert de point de départ au développement d’applications à l’aide de PhoneGap Enterprise avec AEM. AEM s’intègre dans PhoneGap pour vous aider à créer aisément des applications à l’aide de pages AEM. PhoneGap permet à l’utilisateur de créer des applications utilitaires qui permettent à l’utilisateur de travailler avec le contenu.
-seo-description: Cette page sert de point de départ au développement d’applications à l’aide de PhoneGap Enterprise avec AEM. AEM s’intègre dans PhoneGap pour vous aider à créer aisément des applications à l’aide de pages AEM. PhoneGap permet à l’utilisateur de créer des applications utilitaires qui permettent à l’utilisateur de travailler avec le contenu.
+seo-description: This page serves as starting point for developing apps using PhoneGap Enterprise with AEM. AEM integrates with PhoneGap so that you can easily create apps using AEM pages. PhoneGap allows the user to create utility apps that lets user to work with the content.
 uuid: c6ac02fa-d41c-4b57-95d8-171a96540dd6
 contentOwner: User
 content-type: reference
@@ -11,7 +11,7 @@ discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 exl-id: c21c66e1-ac14-4b34-8821-c0c819c05b21
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '251'
 ht-degree: 28%
 
 ---
@@ -26,7 +26,7 @@ AEM s’intègre dans PhoneGap pour vous aider à créer aisément des applicati
 
 >[!NOTE]
 >
->Avant de commencer à utiliser AEM Mobile avec Adobe PhoneGap, assurez-vous de configurer votre environnement et de commencer à utiliser le [tableau de bord de l’application AEM Mobile](/help/mobile/phonegap-authoring-apps.md).
+>Avant de commencer à utiliser AEM Mobile avec Adobe PhoneGap, assurez-vous de configurer votre environnement et de commencer à utiliser le [Tableau de bord des applications AEM Mobile](/help/mobile/phonegap-authoring-apps.md).
 
 Les ressources suivantes vous aideront à prendre en main AEM Mobile à l’aide d’Adobe PhoneGap :
 
@@ -42,7 +42,7 @@ Les ressources suivantes vous aideront à prendre en main AEM Mobile à l’aide
 
 >[!NOTE]
 >
->Pour exécuter vos applications mobiles AEM sur n’importe quel appareil mobile iOS ou Android, voir [Démarrage rapide mobile à l’aide d’AEM Verify App](/help/mobile/phonegap-mobile-quickstart.md).
+>Pour exécuter vos applications mobiles AEM sur n’importe quel appareil mobile iOS ou Android, voir [Démarrage rapide mobile à l’aide de AEM Verify App](/help/mobile/phonegap-mobile-quickstart.md).
 
 ## Prise en main {#getting-ahead}
 

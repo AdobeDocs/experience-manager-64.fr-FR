@@ -30,7 +30,7 @@ Les facettes de recherche qui apparaissent dans le panneau Filtres sont définie
 
 Pour des recherches de texte intégral, ajoutez le prédicat Texte intégral au formulaire. Utilisez le prédicat Propriété pour rechercher les ressources qui correspondent à une propriété unique que vous spécifiez. Utilisez le prédicat Options pour rechercher les ressources correspondant à une ou plusieurs valeurs pour une propriété spécifique. Ajoutez le prédicat Période pour rechercher les ressources créées au cours d’une période donnée.
 
-1. Appuyez/cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Rechercher dans Forms]**.
+1. Appuyez/cliquez sur le bouton [!DNL Experience Manager] logo, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Rechercher dans Forms]**.
 1. Sur la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Localisez et sélectionnez le rail de recherche d’administrateurs de ressources](assets/assets_admin_searchrail.png)
@@ -39,10 +39,10 @@ Pour des recherches de texte intégral, ajoutez le prédicat Texte intégral au 
 
    >[!NOTE]
    >
-   >Pour utiliser la fonctionnalité de recherche de dossiers à partir du **Rail de recherche d’administrateurs de ressources** préconfiguré à partir d’une version [!DNL Experience Manager] antérieure, procédez comme suit :
+   >Pour utiliser la fonctionnalité de recherche de dossiers de la **Rail de recherche d’administrateurs de ressources** d’une version antérieure [!DNL Experience Manager] version, procédez comme suit :
    > 
    >1. Accédez à */conf/global/settings/dam/search/facets/assets/jcr:content/items* dans CRX-DE.
-   >1. Supprimez le noeud **type** .
+   >1. Supprimez la variable **type** noeud .
    >1. Dans le chemin */libs/settings/dam/search/facets/assets/jcr:content/items*, copiez les nœuds **asset, directory, typeor, excludepaths** et **search type** dans le chemin d’accès mentionné à l’étape 1.
    >1. Enregistrez les modifications.
 
@@ -117,14 +117,14 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 >
 >Le prédicat Options est un wrapper personnalisé qui comprend des prédicats de propriété pour démontrer le comportement décrit. Pour l’heure, aucun point de terminaison REST n’est disponible pour la prise en charge native de cette fonctionnalité.
 
-1. Appuyez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils > Général > Forms de recherche]**.
+1. Appuyez sur le bouton [!DNL Experience Manager] logo, puis accédez à **[!UICONTROL Outils > Général > Rechercher dans Forms]**.
 1. Sur la page **[!UICONTROL Formulaires de recherche]**, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur l’icône Modifier.
 1. Sur la page **[!UICONTROL Modifier le formulaire de recherche]**, faites glisser **[!UICONTROL Options du prédicat]** de l’onglet **[!UICONTROL Sélectionner le prédicat]** jusqu’au volet principal.
 1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un nom pour la propriété. Par exemple, pour rechercher des ressources en fonction de leur format, indiquez un nom convivial pour le libellé ; **[!UICONTROL Type de fichier]**, par exemple. Indiquez la propriété sur laquelle sera axée la recherche dans le champ de propriété ; `jcr:content/metadata/dc:format.`, par exemple.
 1. Utilisez l’une des méthodes suivantes :
 
    * Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez le chemin du fichier JSON où sont définis les nœuds des options et spécifiez les paires clé-valeur correspondantes.
-   * Appuyez sur ![Ajouter une icône](assets/do-not-localize/aem_assets_add_icon.png) en regard du champ Options pour spécifier le texte affiché et la valeur pour les options que vous souhaitez fournir dans le panneau Filtres. Pour ajouter une autre option, appuyez/cliquez sur ![Ajouter une icône](assets/do-not-localize/aem_assets_add_icon.png) et répétez l’étape.
+   * Appuyer ![Icône Ajouter](assets/do-not-localize/aem_assets_add_icon.png) en regard du champ Options pour spécifier le texte affiché et la valeur pour les options que vous souhaitez fournir dans le panneau Filtres . Pour ajouter une autre option, appuyez/cliquez sur ![Icône Ajouter](assets/do-not-localize/aem_assets_add_icon.png) et répétez l’étape.
 
 1. Assurez-vous que l’option **[!UICONTROL Sélection simple]** est désactivée pour permettre à l’utilisateur de sélectionner plusieurs options à la fois pour les types de fichiers (Images, Documents, Multimédia et Archives, par exemple). Si vous choisissez **[!UICONTROL Sélection simple]**, l’utilisateur ne peut sélectionner qu’une seule option à la fois pour les types de fichiers.
 
@@ -137,9 +137,9 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 
 ## Ajout d’un prédicat de propriété à plusieurs valeurs {#adding-a-multi-value-property-predicate}
 
-Le prédicat de propriété à plusieurs valeurs vous permet de rechercher plusieurs valeurs dans des ressources. Supposons que vous ayez des images de plusieurs produits dans [!DNL Experience Manager] Ressources et que les métadonnées de chaque image incluent un numéro de SKU associé au produit. Vous pouvez utiliser ce prédicat pour rechercher des images de produit sur la base de plusieurs numéros de SKU.
+Le prédicat de propriété à plusieurs valeurs vous permet de rechercher plusieurs valeurs dans des ressources. Supposons que vous ayez des images de plusieurs produits dans [!DNL Experience Manager] Les ressources et les métadonnées de chaque image incluent un numéro de SKU associé au produit. Vous pouvez utiliser ce prédicat pour rechercher des images de produit sur la base de plusieurs numéros de SKU.
 
-1. Cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Rechercher dans Forms]**.
+1. Cliquez sur le bouton [!DNL Experience Manager] logo, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Rechercher dans Forms]**.
 1. Sur la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
 1. Sur la page Modifier le formulaire de recherche, faites glisser **[!UICONTROL Prédicat de propriété à plusieurs valeurs]** de l’onglet **[!UICONTROL Sélectionner le prédicat]** jusqu’au volet principal.
 1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; `jcr:content/metadata/dc:value`, par exemple. Vous pouvez également utiliser la boîte de dialogue de sélection pour sélectionner un nœud.
@@ -152,7 +152,7 @@ Le prédicat de propriété à plusieurs valeurs vous permet de rechercher plusi
 
 Le prédicat Balise vous permet d’effectuer des recherches de ressources basées sur des balises. Par défaut, [!DNL Experience Manager] Assets recherche une ou plusieurs correspondances de balises dans les ressources en fonction des balises que vous spécifiez. En d’autres termes, la requête de recherche effectue une opération OR à l’aide des balises indiquées. Cependant, vous pouvez utiliser l’option de correspondance de toutes les balises pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
-1. Cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Rechercher dans Forms]**.
+1. Cliquez sur le bouton [!DNL Experience Manager] logo, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Rechercher dans Forms]**.
 1. Sur la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
 1. Sur la page Modifier le formulaire de recherche, faites glisser **[!UICONTROL Prédicat de balises]** de l’onglet Sélectionner le prédicat jusqu’au volet principal.
 1. Dans l’onglet Paramètres, saisissez un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; *jcr:content/metadata/cq:tags*, par exemple. Vous pouvez également sélectionner un nœud dans CRXDE à partir de la boîte de dialogue de sélection.
@@ -205,7 +205,7 @@ L’icône de cadenas en regard d’une option de la page Formulaires de recherc
 Pour restaurer la facette de recherche par défaut, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]** sur la page **[!UICONTROL Formulaires de recherche]**.
-1. Appuyez sur **[!UICONTROL Supprimer]** ![supprimer ](assets/deleteoutline.png) dans la barre d’outils.
+1. Appuyer **[!UICONTROL Supprimer]** ![deletecomposition](assets/deleteoutline.png) dans la barre d’outils.
 1. Dans la boîte de dialogue de confirmation, appuyez sur **[!UICONTROL Supprimer]** pour supprimer les modifications personnalisées.
 
    Après avoir supprimé les modifications personnalisées apportées aux facettes de recherche, l’icône représentant un cadenas réapparaît devant **[!UICONTROL Rail de recherche d’administrateurs de ressources]** sur la page **[!UICONTROL Formulaires de recherche]**.

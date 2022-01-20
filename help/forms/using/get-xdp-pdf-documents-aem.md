@@ -1,8 +1,8 @@
 ---
 title: Obtention de documents XDP et PDF dans AEM Forms
-seo-title: Obtention de documents XDP et PDF dans AEM Forms
+seo-title: Getting XDP and PDF documents in AEM Forms
 description: AEM Forms vous permet de transférer des formulaires et des ressources prises en charge en vue de les utiliser avec des formulaires adaptatifs. Vous pouvez également transférer en bloc les formulaires et les ressources connexes sous la forme d’un fichier ZIP.
-seo-description: AEM Forms vous permet de transférer des formulaires et des ressources prises en charge en vue de les utiliser avec des formulaires adaptatifs. Vous pouvez également transférer en bloc les formulaires et les ressources connexes sous la forme d’un fichier ZIP.
+seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
 uuid: c2a86d89-0c56-4d29-932a-dd09277fa7cb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,7 +12,7 @@ role: Admin
 exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '667'
 ht-degree: 94%
 
 ---
@@ -27,7 +27,7 @@ Vous pouvez importer vos formulaires depuis votre système de fichiers local ver
 * Formulaires PDF
 * Document (documents PDF aplatis)
 
-Vous pouvez charger les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Vous pouvez télécharger une ressource de type `Resource`, uniquement à côté d’un formulaire XFA dans une archive ZIP.
+Vous pouvez charger les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Vous pouvez charger une ressource de type `Resource`, uniquement avec un formulaire XFA dans une archive ZIP.
 
 >[!NOTE]
 >
@@ -85,6 +85,6 @@ La suppression d’un modèle de formulaire altère le formulaire adaptatif ou l
 
 ![Avertissement de formulaire adaptatif désynchronisé après la mise à jour du formulaire DFA associé](assets/dirtyaf.png)
 
-Un indicateur est conservé pour indiquer si un formulaire adaptatif est de type « dirty ». Ces informations sont disponibles sur la page de propriétés du formulaire, avec les métadonnées du formulaire. Uniquement pour les formulaires adaptatifs non conformes, une propriété de métadonnées `Model Refresh` affiche la valeur `Recommended`.
+Un indicateur est conservé pour indiquer si un formulaire adaptatif est de type « dirty ». Ces informations sont disponibles sur la page de propriétés du formulaire, avec les métadonnées du formulaire. Uniquement pour les formulaires adaptatifs non conformes, une propriété de métadonnées `Model Refresh` affiche `Recommended` .
 
 ![Indication d’un formulaire adaptatif désynchronisé par rapport au modèle XFA](assets/model-refresh.png)

@@ -1,8 +1,8 @@
 ---
 title: Stockage   Configuration
-seo-title: Stockage   Configuration
+seo-title: Storage Configuration
 description: Accès à la console de configuration de stockage
-seo-description: Accès à la console de configuration de stockage
+seo-description: How to access the Storage Configuration Console
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -13,8 +13,8 @@ role: Admin
 exl-id: 905b6dc5-cf17-4f58-a687-27e2910a0729
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 4%
+source-wordcount: '198'
+ht-degree: 3%
 
 ---
 
@@ -42,9 +42,9 @@ Pour sélectionner une option de stockage autre que le JCR par défaut :
 * sélectionner une option
 * Configurer correctement
 
-   * Voir les détails de la [sélection de MSRP](msrp.md#select-msrp)
-   * Voir les détails de la [sélection de DSRP](dsrp.md#select-dsrp)
-   * Voir les détails de la [sélection de l’ASRP](asrp.md#select-asrp)
+   * Voir les détails de [sélection de MSRP](msrp.md#select-msrp)
+   * Voir les détails de [sélection de DSRP](dsrp.md#select-dsrp)
+   * Voir les détails de [sélection de l’ASRP](asrp.md#select-asrp)
 
 * Sélectionnez **[!UICONTROL Envoyer]**
 
@@ -52,10 +52,10 @@ Pour sélectionner une option de stockage autre que le JCR par défaut :
 
 Notez que si aucune sélection n’est effectuée, la valeur par défaut est le référentiel AEM, JCR.
 
-JCR est *et non* un magasin commun partagé par les environnements de création et de publication. Le contenu de la communauté n’est visible que depuis l’environnement de création ou de publication dans lequel il a été créé.
+JCR est *not* un magasin commun partagé par les environnements de création et de publication. Le contenu de la communauté n’est visible que depuis l’environnement de création ou de publication dans lequel il a été créé.
 
-Pour plus d’informations, consultez la [boutique JCR](jsrp.md).
+Visite [Magasin JCR](jsrp.md) pour plus d’informations.
 
 >[!NOTE]
 >
->L’absence du noeud `srpc`sous `/etc/socialconfig` indique le [magasin JCR par défaut](jsrp.md).
+>L’absence du noeud `srpc`under `/etc/socialconfig` indique la valeur par défaut [Magasin JCR](jsrp.md).

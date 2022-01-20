@@ -1,8 +1,8 @@
 ---
 title: Flux de travail basé sur l’utilisation de Forms sur OSGi | Gestion des données utilisateur
-seo-title: Flux de travail basé sur l’utilisation de Forms sur OSGi | Gestion des données utilisateur
+seo-title: Forms-centric workflows on OSGi | Handling user data
 description: Les flux de travail AEM basé sur l’utilisation de Forms vous permettent d’automatiser les processus réels d’entreprise axés sur les formulaires. Explorez plus en détail les données utilisateur et les entrepôts de données. Découvrez comment accéder aux données utilisateur et les supprimer.
-seo-description: Les flux de travail AEM basé sur l’utilisation de Forms vous permettent d’automatiser les processus réels d’entreprise axés sur les formulaires. Explorez plus en détail les données utilisateur et les entrepôts de données. Découvrez comment accéder aux données utilisateur et les supprimer.
+seo-description: Forms-centric AEM workflows enable you to automate real-world Forms-centric business processes. Dig deeper on user data and data stores. Learn how to access and delete user data.
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ role: Admin
 exl-id: 65c13bc8-da82-4c4b-b014-341ce1b59b71
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 95%
+source-wordcount: '1033'
+ht-degree: 96%
 
 ---
 
@@ -144,7 +144,7 @@ Vous devez être un administrateur AEM pour supprimer des données utilisateur d
 
    Pour plus d’informations sur l’utilisation des instances de flux de travail, voir [Gestion des instances de flux de travail](/help/sites-administering/workflows-administering.md).
 
-1. Accédez à la console CRXDE Lite, accédez au chemin d’accès de la charge utile d’une instance de workflow, puis supprimez le noeud `payload`.
+1. Accédez à la console CRXDE Lite, accédez au chemin d’accès de la charge utile d’une instance de workflow, puis supprimez le `payload` noeud .
 1. Accédez au chemin d’accès des brouillons d’une instance de flux de travail et supprimez le nœud `draft`.
 1. Accédez au chemin d’accès de l’historique d’une instance de flux de travail et supprimez le nœud `history`.
 1. Accédez au chemin d’accès d’une instance de flux de travail et supprimez le nœud `[workflow-instance-ID]` du flux de travail.

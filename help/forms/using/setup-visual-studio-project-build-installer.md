@@ -1,8 +1,8 @@
 ---
 title: Configuration du projet Visual Studio et création d’une application Windows
-seo-title: Configuration du projet Visual Studio et création d’une application Windows
+seo-title: Set up the Visual Studio project and build the Windows app
 description: Découvrez comment configurer un projet Visual Studio afin de créer l’application AEM Forms pour les périphériques mobiles Windows.
-seo-description: Découvrez comment configurer un projet Visual Studio afin de créer l’application AEM Forms pour les périphériques mobiles Windows.
+seo-description: Learn how to set up a Visual Studio project to build the AEM Forms Windows mobile device app.
 uuid: 0a72387a-d920-4f66-8983-d500ef0ecd90
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,14 +11,14 @@ discoiquuid: 85048fe4-ca1b-41fa-8e19-6eeb8dd09962
 exl-id: ae0463de-271f-47c0-b947-f6d149ded8ab
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 73%
+source-wordcount: '911'
+ht-degree: 72%
 
 ---
 
 # Configuration du projet Visual Studio et création d’une application Windows {#set-up-the-visual-studio-project-and-build-the-windows-app}
 
-AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour générer une application d’espace de travail personnalisée. L’archive du code source, `adobe-lc-mobileworkspace-src-<version>.zip`fait partie du package `adobe-aemfd-forms-app-src-pkg-<version>.zip` sur la distribution logicielle.
+AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour générer une application d’espace de travail personnalisée. l&#39;archive du code source, `adobe-lc-mobileworkspace-src-<version>.zip`fait partie de la variable `adobe-aemfd-forms-app-src-pkg-<version>.zip` module sur Distribution logicielle.
 
 Pour obtenir le code source de l’application AEM Forms, procédez comme suit :
 
@@ -26,8 +26,8 @@ Pour obtenir le code source de l’application AEM Forms, procédez comme suit�
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
-   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Téléchargements de recherche]** pour filtrer les résultats.
-1. Appuyez sur le nom du module approprié à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur (EULA)]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser la variable **[!UICONTROL Recherche de téléchargements]** pour filtrer les résultats.
+1. Appuyez sur le nom du package correspondant à votre système d’exploitation, puis sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur]**, puis appuyez sur **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
@@ -39,7 +39,7 @@ L&#39;image suivante affiche le contenu extrait du fichier`adobe-lc-mobileworksp
 
 ![mws-content-2](assets/mws-content-2.png)
 
-L’image suivante affiche la structure du répertoire du dossier `windows` dans le dossier `src`.
+L’image suivante affiche la structure de répertoires de `windows` dans le dossier `src` dossier.
 
 ![win-dir](assets/win-dir.png)
 
@@ -55,12 +55,12 @@ Pour les périphériques Windows, vous devez disposer des éléments suivants :
 
 Exécutez les étapes suivantes pour configurer le projet de l’application AEM Forms dans Visual Studio.
 
-1. Copiez l’archive `adobe-lc-mobileworkspace-src-<version>.zip` dans le dossier `%HOMEPATH%\Projects` du périphérique Windows 8.1 ou Windows 10 avec Visual Studio 2015 installé et configuré.
-1. Extrayez l’archive dans le répertoire `%HOMEPATH%\Projects\MobileWorkspace`.
-1. Accédez au répertoire `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows` .
+1. Copiez le `adobe-lc-mobileworkspace-src-<version>.zip` archiver à `%HOMEPATH%\Projects` dans le périphérique Windows 8.1 ou Windows 10 avec Visual Studio 2015 installé et configuré.
+1. Extrayez l’archive dans le `%HOMEPATH%\Projects\MobileWorkspace` répertoire .
+1. Accédez au `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows` répertoire .
 1. Ouvrez le fichier `CordovaApp.sln` à l’aide de Visual Studio 2015 et continuez à créer l’application AEM Forms.
 
-## Génération de l&#39;application AEM Forms {#build-aem-forms-app}
+## Génération de l’application AEM Forms {#build-aem-forms-app}
 
 Suivez les étapes ci-après pour générer et déployer l’application AEM Forms.
 
@@ -68,10 +68,10 @@ Suivez les étapes ci-après pour générer et déployer l’application AEM For
 >
 >Les données stockées sur le système de fichiers Windows de l’application AEM Forms ne sont pas chiffrées. Il est recommandé d’utiliser un outil tiers tel que Windows BitLocker Drive Encryption pour crypter les données du disque.
 
-1. Dans la barre d’outils Visual Studio Standard, sélectionnez **Version** dans la liste déroulante pour le mode de création.
+1. Dans la barre d’outils Visual Studio Standard, sélectionnez **Version** dans la liste déroulante du mode de création.
 
 1. Sélectionnez Windows-AnyCPU, Windows-x64 ou Windows-x86 en fonction de votre plateforme. Windows-AnyCPU est recommandé.
-1. Dans l’Explorateur de solutions Visual Studio, cliquez avec le bouton droit sur le projet **CordovaApp.Windows** et sélectionnez **Boutique > Créer des packages d’application**.
+1. Dans l’Explorateur de solutions Visual Studio, cliquez avec le bouton droit sur le projet. **CordovaApp.Windows** et sélectionnez **Boutique > Créer des modules d’application**.
 
    ![create apppackages](assets/createapppackages.png)
 
@@ -79,7 +79,7 @@ Suivez les étapes ci-après pour générer et déployer l’application AEM For
 
    Le fichier d’installation CordovaApp.Windows_3.0.2.0_anycpu.appx est créé dans le répertoire platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test.
 
-   Si vous rencontrez l’erreur `Retarget to windows 8.1 required`, cliquez avec le bouton droit de la souris sur l’erreur et, dans le menu contextuel, sélectionnez **Recibler à Windows 8.1**.
+   Si vous rencontrez l’erreur `Retarget to windows 8.1 required`, cliquez avec le bouton droit de la souris sur l’erreur, puis, dans le menu contextuel, sélectionnez **Reciblage Vers Windows 8.1**.
 
    ![reciblage-solution](assets/retarget-solution.png)
 
@@ -96,7 +96,7 @@ Suivez les étapes ci-après pour générer et déployer l’application AEM For
    * Windows PowerShell
    * Visual Studio
 
-   Le package `.appx` nécessite les éléments suivants pour s’installer correctement :
+   Le `.appx` Le package nécessite les éléments suivants pour s’installer correctement :
 
    1. Bibliothèque WinJS
    1. Assurez-vous que le package s’accompagne d’un certificat auto-signé ou qu’une autorité approuvée, telle que VeriSign, a signé le certificat public.
@@ -111,13 +111,13 @@ Suivez les étapes ci-après pour générer et déployer l’application AEM For
 
 
 
-## Déploiement d’une application à l’aide de Windows PowerShell  {#deploying-an-app-using-windows-powershell}
+## Déploiement d’une application à l’aide de Windows PowerShell {#deploying-an-app-using-windows-powershell}
 
 Il existe deux manières d’installer l’application sur un périphérique Windows.
 
 ### Via l’acquisition d’une licence développeur {#by-acquiring-the-developer-license}
 
-1. Cliquez avec le bouton droit sur le fichier PowerShell ( `Add-AppDevPackage.ps1)`), puis sélectionnez **Exécuter avec PowerShell**.
+1. Cliquez avec le bouton droit sur le fichier PowerShell ( `Add-AppDevPackage.ps1)`, puis choisissez **Exécution avec PowerShell**.
 
 1. La configuration vous invite à obtenir une licence développeur. Utilisez les informations de connexion de votre compte Microsoft pour l’acquérir.
 
@@ -125,7 +125,7 @@ Il existe deux manières d’installer l’application sur un périphérique Win
 
 1. Lors de l’acquisition de la licence développeur, la configuration entraîne l’installation d’un certificat auto-signé sur le système et l’application s’installe correctement.
 
-### Via des périphériques d’entreprise  {#by-using-enterprise-owned-devices}
+### Via des périphériques d’entreprise {#by-using-enterprise-owned-devices}
 
 Pour les périphériques d’entreprise connectés au domaine de l’entreprise, la licence développeur n’est pas obligatoire.
 
@@ -157,13 +157,13 @@ Pour Windows 8.1 Famille, il n’y a aucune stratégie de groupe. Le sideloading
 
 Pour plus d’informations, cliquez [ici](https://blogs.msdn.com/b/mvpawardprogram/archive/2014/03/24/side-loading-deployment-of-windows-store-apps-in-enterprises-step-by-step.aspx).
 
-## Déploiement d’une application à l’aide de Visual Studio  {#deploying-an-app-using-visual-studio}
+## Déploiement d’une application à l’aide de Visual Studio {#deploying-an-app-using-visual-studio}
 
 Pour installer l’application sous Windows à l’aide de Visual Studio :
 
 1. Connectez le périphérique à l’aide du débogueur à distance.
 
-   Pour plus d’informations, voir [Exécution d’applications Windows Store sur une machine distante](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
+   Pour plus d’informations, voir [Exécution des applications Windows Store sur un ordinateur distant](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
 
 1. Avec l’application ouverte dans Visual Studio, sélectionnez Windows x64, Windows-x86 ou Windows-AnyCPU à partir de la liste des plateformes de solution, puis sélectionnez **Ordinateur distant**.
 1. Votre application est déployée sur un ordinateur distant.

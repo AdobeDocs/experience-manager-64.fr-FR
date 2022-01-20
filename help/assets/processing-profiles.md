@@ -29,7 +29,7 @@ Vous devez disposer de droits d’administrateur pour créer, modifier et suppri
 
 Une fois votre profil vidéo, de métadonnées ou d’image créé, vous pouvez l’affecter à un ou plusieurs dossiers utilisés comme destination des ressources qui viennent d’être chargées.
 
-Un concept important concernant l’utilisation des profils dans les ressources [!DNL Experience Manager] est qu’ils sont affectés à des dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par les profils. Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous pouvez tirer pleinement parti de votre collection de ressources numériques et vous assurer que les bons fichiers sont traités par le profil adéquat. Pour obtenir un exemple, voir [organisation des ressources à l’aide de dossiers](organize-assets.md#organize-using-folders).
+Un concept important concernant l’utilisation des profils dans [!DNL Experience Manager] Les ressources sont affectées à des dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par les profils. Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous pouvez tirer pleinement parti de votre collection de ressources numériques et vous assurer que les bons fichiers sont traités par le profil adéquat. Pour consulter un exemple, reportez-vous à la section [organisation des ressources à l’aide de dossiers](organize-assets.md#organize-using-folders).
 
 >[!NOTE]
 >
@@ -84,11 +84,11 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
 1. Cliquez sur **[!UICONTROL Début]**, puis sur **[!UICONTROL Confirmer]**.
 
-   Pour surveiller le workflow ou vérifier sa progression, dans la page de la console principale [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils > Workflow]**. Sélectionnez un workflow dans la page Instances de processus. Dans la barre de menus, cliquez sur **[!UICONTROL Ouvrir l’historique]**. Vous pouvez également arrêter, suspendre ou renommer un workflow sélectionné à partir de la même page Instances de processus.
+   Pour surveiller le workflow ou vérifier sa progression, dans la [!DNL Experience Manager] page console principale, cliquez sur **[!UICONTROL Outils > Processus]**. Sélectionnez un workflow dans la page Instances de processus. Dans la barre de menus, cliquez sur **[!UICONTROL Ouvrir l’historique]**. Vous pouvez également arrêter, suspendre ou renommer un workflow sélectionné à partir de la même page Instances de processus.
 
 ### Réglage de la taille du lot du workflow de retraitement {#adjusting-load}
 
-(Facultatif) La taille de lot par défaut dans le workflow de retraitement est de 50 ressources par tâche. Cette taille optimale est déterminée par la taille moyenne des ressources et les types MIME des ressources sur lesquelles le retraitement est exécuté. Une valeur plus élevée signifie qu’une seule tâche de retraitement comprendra de nombreux fichiers. Par conséquent, la bannière de traitement reste plus longtemps sur les ressources [!DNL Experience Manager]. Cependant, si la taille de fichier moyenne est inférieure ou égale à 1 Mo, Adobe recommande de définir cette valeur sur plusieurs centaines de Mo, mais de ne jamais dépasser 1 000 Mo. Si la taille de fichier moyenne est élevée (de l’ordre de quelques centaines de Mo), Adobe recommande de réduire la taille du lot jusqu’à 10.
+(Facultatif) La taille de lot par défaut dans le workflow de retraitement est de 50 ressources par tâche. Cette taille optimale est déterminée par la taille moyenne des ressources et les types MIME des ressources sur lesquelles le retraitement est exécuté. Une valeur plus élevée signifie qu’une seule tâche de retraitement comprendra de nombreux fichiers. Par conséquent, la bannière de traitement reste active. [!DNL Experience Manager] ressources pendant une durée plus longue. Cependant, si la taille de fichier moyenne est inférieure ou égale à 1 Mo, Adobe recommande de définir cette valeur sur plusieurs centaines de Mo, mais de ne jamais dépasser 1 000 Mo. Si la taille de fichier moyenne est élevée (de l’ordre de quelques centaines de Mo), Adobe recommande de réduire la taille du lot jusqu’à 10.
 
 **Pour régler, si nécessaire, la taille de lot du workflow de retraitement, procédez comme suit :**
 
@@ -103,7 +103,7 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
    ![Composant Transfert par lots Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Transfert par lots vers les propriétés Scene7-Step]**, définissez les éléments suivants :
+1. Sur le **[!UICONTROL Transfert par lots vers les propriétés Scene7-Step]** , définissez les options suivantes :
    * Dans les zones de texte **[!UICONTROL Titre]** et **[!UICONTROL Description]**, saisissez un titre et une description pour la tâche, le cas échéant.
    * Sélectionnez **[!UICONTROL Avance du gestionnaire]** si votre gestionnaire doit passer à l’étape suivante.
    * Dans le champ **[!UICONTROL Délai d’expiration]**, saisissez le délai d’expiration du processus externe (en secondes).
@@ -115,7 +115,7 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
 1. Dans le coin supérieur droit de la boîte de dialogue **[!UICONTROL Transfert par lots vers Scene7 – Propriétés des étapes]**, appuyez sur **[!UICONTROL Terminé]**.
 
-1. Dans le coin supérieur droit de la page du modèle de workflow Scene7 : Retraiter les ressources, appuyez sur **[!UICONTROL Synchroniser]**. Lorsque **[!UICONTROL Synchronisé]** s’affiche, le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter la ressource dans un dossier.
+1. Dans le coin supérieur droit de la page du modèle de workflow Scene7 : Retraiter les ressources, appuyez sur **[!UICONTROL Synchroniser]**. Lorsque vous voyez **[!UICONTROL Synchronisé]**, le modèle d’exécution de workflow est correctement synchronisé et prêt à retraiter la ressource dans un dossier.
 
    ![Synchronisation du modèle de workflow](/help/assets/assets-dm/reprocess-assets1.png)
 

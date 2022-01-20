@@ -19,7 +19,7 @@ La section Meilleures pratiques décrit comment développer, administrer ou util
 
 Une documentation sur les meilleures pratiques est disponible pour les aspects suivants :
 
-* [Assets](#assets)
+* [Ressources](#assets)
 * [Sites](#sites)
 
 Pour connaître les meilleures pratiques concernant la création, le déploiement et la maintenance ou le développement, voir l’une des rubriques suivantes :
@@ -32,7 +32,7 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
 
 ## Ressources {#assets}
 
-Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
+Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
 
 <table> 
  <tbody>
@@ -48,7 +48,7 @@ Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Dyna
   </tr>
   <tr>
    <td>Intégration de Dynamic Media Classic et d’AEM</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Bonnes pratiques pour l’intégration de Dynamic Media Classic à AEM</a></td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Bonnes pratiques pour intégrer Dynamic Media Classic à AEM</a></td> 
    <td><p>Indique quand activer l’importateur d’interrogations, comment tester votre intégration et quand utiliser l’explorateur de contenu plutôt qu’un téléchargement direct dans les ressources.</p> </td> 
   </tr>
   <tr>

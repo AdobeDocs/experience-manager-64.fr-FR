@@ -1,8 +1,8 @@
 ---
 title: Prise en charge des scripts pour les formulaires HTML5
-seo-title: Prise en charge des scripts pour les formulaires HTML5
+seo-title: Scripting support for HTML5 forms
 description: JavaScript, propriétés de FormCalc, et autres méthodes prises en charge dans les formulaires HTML5.
-seo-description: JavaScript, propriétés de FormCalc, et autres méthodes prises en charge dans les formulaires HTML5.
+seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
 uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
@@ -13,7 +13,7 @@ feature: Mobile Forms
 exl-id: 2194bbbb-22d9-4422-aefb-9651fd795ca3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3894'
 ht-degree: 98%
 
 ---
@@ -48,7 +48,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr> 
    <td><code>newtext</code></td> 
    <td>Indique le contenu du champ une fois qu’il a été modifié suite aux actions de l’utilisateur.</td> 
-   <td><p>La propriété <code>newText</code> ne fonctionne pas correctement pour les cas suivants :</p> 
+   <td><p>Le <code>newText</code> ne fonctionne pas correctement pour les cas suivants :</p> 
     <ul> 
      <li>Lorsque vous sélectionnez des textes de remplacement</li> 
      <li>Lorsque vous supprimez, copiez et collez des textes</li> 
@@ -1173,7 +1173,7 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
  </tbody> 
 </table>
 
-### Prise en charge des API Acrobat  {#acrobat-api-support}
+### Prise en charge des API Acrobat {#acrobat-api-support}
 
 1. **Fonctions arithmétiques**
 
@@ -1338,7 +1338,7 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
  </tbody> 
 </table>
 
-## Evénements XFA pris en charge  {#supported-xfa-events}
+## Evénements XFA pris en charge {#supported-xfa-events}
 
 Les événements XFA côté client suivants sont pris en charge :
 

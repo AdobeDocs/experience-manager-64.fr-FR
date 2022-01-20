@@ -1,8 +1,8 @@
 ---
 title: Obtention de variables de tâche dans l’URL de résumé
-seo-title: Obtention de variables de tâche dans l’URL de résumé
+seo-title: Getting Task Variables in Summary URL
 description: Comment réutiliser les informations d’une tâche et générer une URL de résumé pour résumer ou décrire une tâche.
-seo-description: Comment réutiliser les informations d’une tâche et générer une URL de résumé pour résumer ou décrire une tâche.
+seo-description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
 uuid: 9eab3a6a-a99a-40ae-b483-33ec7d21c5b6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 exl-id: f80d006b-6970-4448-aa38-3ffec8b08c18
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '432'
 ht-degree: 88%
 
 ---
@@ -65,7 +65,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
       Définissez également une variable de sortie **ptoNodePath **qui sera utilisée lors de la définition de l’URL de résumé.
 
-   1. Dans le processus **create PTO summary** , utilisez le composant **set value** pour définir les détails d’entrée dans une carte **nodeProperty **(**nodeProps**).
+   1. Dans le **create PTO summary** processus, utilisez la méthode **valeur définie** pour définir les détails d’entrée dans un **nodeProperty **(**nodeProps**).
 
       Les clés de ce mappage doivent être identiques à celles définies dans votre rendu HTML à l’étape précédente.
 
@@ -77,7 +77,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
       * **Chemin d’accès au dossier** : le chemin du dossier dans lequel le nouveau nœud CRX est créé. Définissez le chemin comme **/content**.
       * **Nom de nœud** : affectez la variable d’entrée nodeName à ce champ. Il s’agit d’une chaîne de nom de nœud unique.
-      * **Type** de noeud : Définissez le type  **nt:unstructured**. La sortie de ce processus est nodePath. Le nodePath est le chemin CRX du nœud que vous venez de créer. Le nodePath serait la dernière sortie du processus de résumé **create PTO**.
+      * **Type de noeud**: Définissez le type comme **nt:unstructured**. La sortie de ce processus est nodePath. Le nodePath est le chemin CRX du nœud que vous venez de créer. Le nodePath serait la dernière sortie du processus de résumé **create PTO**.
    1. Transmettez les données de formulaire envoyées (**employeeName**, **employeeID**, **ptoReason** et **totalDays**) comme entrée du nouveau processus **create PTO summary**. Prenez la sortie comme **ptoSummaryNodePath**.
 
 

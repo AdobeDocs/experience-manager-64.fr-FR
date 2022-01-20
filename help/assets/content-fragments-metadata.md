@@ -1,8 +1,8 @@
 ---
 title: Métadonnées – propriétés des fragments
-seo-title: Métadonnées – propriétés des fragments
+seo-title: Metadata - Fragment Properties
 description: Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu.
-seo-description: Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu.
+seo-description: You can view and edit the metadata (properties) for content fragments.
 uuid: 2744610b-215a-4ee8-893e-e167376f9df5
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 96cf7c92-af98-417f-ab60-b368e3846ef8
 exl-id: 0123fb44-9f38-4d9e-9dce-7c9cfd4260e1
-feature: Fragments de contenu, métadonnées
+feature: Content Fragments,Metadata
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 87%
+source-wordcount: '112'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 87%
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de la fonction [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
 
 ## Modification des propriétés/métadonnées {#editing-properties-meta-data}
 

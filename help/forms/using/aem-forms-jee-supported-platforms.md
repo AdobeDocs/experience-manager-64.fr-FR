@@ -74,7 +74,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong>Plate-forme</strong></p> </th> 
+   <th><p><strong>Plateforme</strong></p> </th> 
    <th><p><strong>Niveau de prise en charge</strong></p> </th> 
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th> 
   </tr> 
@@ -106,7 +106,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>Plate-forme</strong></p> </td> 
+   <td><p><strong>Plateforme</strong></p> </td> 
    <td><p><strong> Description</strong></p> </td> 
    <td><p><strong>Niveau de prise en charge</strong></p> </td> 
   </tr> 
@@ -154,7 +154,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>Plate-forme</strong></p> </td> 
+   <td><p><strong>Plateforme</strong></p> </td> 
    <td><p><strong> Description</strong></p> </td> 
    <td><p><strong>Niveau de prise en charge AEM 6.4</strong></p> </td> 
    <td><p><strong>Niveau de prise en charge AEM 6.4 Forms on JEE</strong></p> </td> 
@@ -192,7 +192,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
  <tbody> 
   <tr> 
    <th>Base de données </th> 
-   <th><p><strong>Plate-forme</strong></p> </th> 
+   <th><p><strong>Plateforme</strong></p> </th> 
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th> 
   </tr> 
   <tr> 
@@ -223,7 +223,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong> Plate-forme</strong></p> </td> 
+   <td><p><strong> Plateforme</strong></p> </td> 
    <td><p><strong>Niveau de prise en charge</strong></p> </td> 
    <td><p><strong>Définitions de correctif prises en charge</strong></p> </td> 
   </tr> 
@@ -256,7 +256,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong> Plate-forme</strong></p> </th> 
+   <th><p><strong> Plateforme</strong></p> </th> 
    <th><p><strong>Niveau de prise en charge</strong></p> </th> 
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th> 
   </tr> 
@@ -540,7 +540,7 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [5
 <table> 
  <tbody> 
   <tr> 
-   <td>Plate-forme</td> 
+   <td>Plateforme</td> 
    <td>Configuration matérielle requise</td> 
   </tr> 
   <tr> 
@@ -592,7 +592,7 @@ Pour la configuration requise supplémentaire, voir :
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong>Plate-forme</strong></p> </th> 
+   <th><p><strong>Plateforme</strong></p> </th> 
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th> 
   </tr> 
   <tr> 

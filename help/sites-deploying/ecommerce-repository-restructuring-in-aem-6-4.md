@@ -1,25 +1,25 @@
 ---
 title: Restructuration des référentiels e-Commerce dans AEM 6.4
-seo-title: Restructuration des référentiels e-Commerce dans AEM 6.4
+seo-title: E-Commerce Repository Restructuring in AEM 6.4
 description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans AEM 6.4 pour e-Commerce.
-seo-description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans AEM 6.4 pour e-Commerce.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for E-Commerce.
 uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
-feature: Mise à niveau
+feature: Upgrading
 exl-id: 6adcc1a4-eb0f-4410-8219-dbd7e6bbe469
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 85%
+source-wordcount: '201'
+ht-degree: 84%
 
 ---
 
 # Restructuration des référentiels e-Commerce dans AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Comme décrit sur la page parente [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution de commerce électronique d’AEM. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
+Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications de référentiel ayant un impact sur la solution AEM e-Commerce. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
 
 ## Avec la mise à niveau vers la version 6.4 {#with-upgrade}
 

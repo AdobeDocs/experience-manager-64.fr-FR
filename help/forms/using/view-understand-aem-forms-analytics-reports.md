@@ -1,8 +1,8 @@
 ---
 title: Consultation et compréhension des rapports d’analyse d’AEM Forms
-seo-title: Consultation et compréhension des rapports d’analyse d’AEM Forms
+seo-title: View and understand AEM Forms analytics reports
 description: AEM Forms s’intègre à Adobe Analytics et fournit des analyses résumées et détaillées des formulaires adaptatifs que vous avez publiés.
-seo-description: AEM Forms s’intègre à Adobe Analytics et fournit des analyses résumées et détaillées des formulaires adaptatifs que vous avez publiés.
+seo-description: AEM Forms integrates with Adobe Analytics and provides you summary and detailed analytics about your published adaptive forms.
 uuid: 193f472d-4aa3-4c31-b3c7-b5a2957dfb3d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: a9045816-cae7-42cf-a734-6c3a25d0f522
 exl-id: 0483b6ed-676a-4272-a00e-23d53a979b07
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 89%
+source-wordcount: '1050'
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 89%
 
 Adobe Experience Manager Forms s’intègre à Adobe Analytics, ce qui permet la capture et le suivi des mesures de performances des formulaires et des documents que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser.
 
-## Configuration de l’analyse  {#setting-up-analytics}
+## Configuration de l’analyse {#setting-up-analytics}
 
 La fonctionnalité d’analyse des formulaires AEM est disponible dans le module complémentaire des formulaires AEM. Pour plus d’informations sur l’installation du module complémentaire, voir [Installation et configuration d’AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
@@ -28,7 +28,7 @@ Outre le module complémentaire, vous devez disposer d’un compte Adobe Analyti
 
 Une fois que vous disposez du module complémentaire AEM Forms et d’un compte Adobe Analytics, intégrez le compte Adobe Analytics à AEM Forms et activez le suivi sur vos formulaires ou documents comme décrit à la section [Configuration des analyses et des rapports](/help/forms/using/configure-analytics-forms-documents.md).
 
-## Enregistrement des informations d’interaction utilisateur  {#how-user-interaction-information-is-recorded}
+## Enregistrement des informations d’interaction utilisateur {#how-user-interaction-information-is-recorded}
 
 Lorsqu’un utilisateur interagit avec le formulaire, les interactions sont enregistrées et envoyées au serveur d’analyse. La liste suivante indique les appels de serveur pour différentes activités utilisateur :
 
@@ -58,13 +58,13 @@ Pour afficher les rapports d’analyse, procédez comme suit :
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**A.** Commande du rapport Analytics
+**A.** Rapport Analytics, commande
 
 AEM Forms affiche des rapports d’analyse pour le formulaire et chaque panneau de celui-ci, comme illustré dans le rapport de synthèse ci-dessous.
 
 ![Rapport de synthèse d’un formulaire adaptatif](assets/analyticsdashboard_callout.png)
 
-**A.** Conversions  **B.** Résumé au niveau du formulaire  **C.** Résumé au niveau du panneau  **D.**  Navigateurs des visiteurs - filtre  **E.** Système d’exploitation des visiteurs - filtre  **F.** Langue des visiteurs - filtre
+**A.** Conversions **B.** Synthèse au niveau du formulaire **C.** Synthèse au niveau du panneau **D.** Navigateurs des visiteurs - filtre **E.** Système d’exploitation des visiteurs - filtre **F.** Langue des visiteurs - filtre
 
 Par défaut, le rapport affiche l’analyse des sept derniers jours. Vous pouvez afficher des récapitulatifs pour les 15 derniers jours, le dernier mois et ainsi de suite, ou bien indiquer une période.
 
@@ -94,7 +94,7 @@ La section de synthèse de niveau formulaire donne des informations sur les perf
 * **Brouillons** : nombre de fois que le formulaire a été enregistré en tant que brouillon. 
 * **Envois** : nombre de fois que le formulaire a été envoyé.
 * **Abandons** : nombre de fois que les utilisateurs ont commencé à remplir le formulaire sans le compléter.
-* **Visiteurs** uniques : Nombre de fois où le formulaire est &quot;rendu par des visiteurs uniques. Pour plus d’informations sur les visiteurs uniques, voir [Visiteurs uniques, visites et comportement des clients](https://www.adobe.com/fr/marketing-cloud/social-media-marketing.html). 
+* **Visiteurs uniques**: Nombre de fois où le formulaire est &quot;rendu par des visiteurs uniques. Pour plus d’informations sur les visiteurs uniques, voir [Visiteurs uniques, visites et comportement des clients](https://www.adobe.com/fr/marketing-cloud/social-media-marketing.html). 
 
 ![Rapport d’analyse de synthèse de niveau formulaire développé](assets/analytics-report.png)
 
@@ -118,7 +118,7 @@ Le rapport détaillé affiche les valeurs de tous les champs du panneau.
 
 Le rapport Panneau se compose de trois onglets :
 
-* **Rapport de temps**  (par défaut) : Affiche le temps (en secondes) passé à remplir chacun des champs du panneau.
+* **Rapport sur la période** (Par défaut) : Affiche le temps (en secondes) passé à remplir chacun des champs du panneau.
 * **Rapport d’erreurs** : nombre d’erreurs générées par les utilisateurs qui remplissent les champs
 * **Rapport sur l’aide** : nombre de fois que l’aide d’un champ en particulier a été affiché
 

@@ -1,18 +1,18 @@
 ---
 title: Envoi asynchrone de formulaires adaptatifs
-seo-title: Envoi asynchrone de formulaires adaptatifs
+seo-title: Asynchronous submission of adaptive forms
 description: Apprenez à configurer l’envoi asynchrone pour les formulaires adaptatifs.
-seo-description: Apprenez à configurer l’envoi asynchrone pour les formulaires adaptatifs.
+seo-description: Learn to configure asynchronous submission for adaptive forms.
 uuid: 3b8aeac8-cb38-4a2b-8375-556b2736d58b
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 6e4e3af5-4260-4f38-9b29-0818e92bc182
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 1ca492e9-9832-4e5d-8020-2690ac4f5505
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '655'
 ht-degree: 94%
 
 ---
@@ -38,15 +38,15 @@ Pour configurer la soumission asynchrone pour un formulaire adaptatif :
 
 ## Fonctionnement de l’envoi asynchrone {#how-asynchronous-submission-works}
 
-AEM Forms fournit des gestionnaires de réussite et d’erreur prêts à l’emploi pour les envois de formulaires. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de réussite ou d’erreur pour l’envoi. Les informations sont transmises en tant que paramètres au gestionnaire approprié pour exécuter la fonction.
+AEM Forms fournit des gestionnaires de réussite et d’erreur prêts à l’emploi pour les envois de formulaires. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises en tant que paramètres au gestionnaire approprié pour exécuter la fonction.
 
 En outre, les auteurs de formulaire et les développeurs peuvent écrire des règles au niveau du formulaire pour remplacer les gestionnaires par défaut. Pour plus d’informations, voir [Remplacer les gestionnaires par défaut à l’aide de règles](#custom).
 
-Examinons d’abord la réponse du serveur pour les événements de réussite et d’erreur.
+Examinons d’abord la réponse du serveur pour les événements de succès et d’erreur.
 
-### Réponse du serveur pour l’événement de réussite de l’envoi {#server-response-for-submission-success-event}
+### Réponse du serveur pour l’événement de succès de l’envoi {#server-response-for-submission-success-event}
 
-La structure de la réponse du serveur pour l’événement de réussite de l’envoi est la suivante :
+La structure de la réponse du serveur pour l’événement de succès de l’envoi est la suivante :
 
 ```
 {
@@ -92,7 +92,7 @@ Le gestionnaire d’erreurs lit la réponse du serveur et affiche le message d�
 
 ## Remplacer les gestionnaires par défaut en utilisant des règles {#custom}
 
-Les développeurs et les auteurs de formulaires peuvent écrire des règles, au niveau du formulaire, dans l’éditeur de code pour remplacer les gestionnaires par défaut. La réponse du serveur pour les événements de réussite et d’erreur est exposée au niveau du formulaire. Les développeurs peuvent y accéder à l’aide de `$event.data` dans les règles.
+Les développeurs et les auteurs de formulaires peuvent écrire des règles, au niveau du formulaire, dans l’éditeur de code pour remplacer les gestionnaires par défaut. La réponse du serveur pour les événements de succès et d’erreur est exposée au niveau du formulaire. Les développeurs peuvent y accéder à l’aide de `$event.data` dans les règles.
 
 Effectuez les étapes suivantes pour écrire des règles dans l’éditeur de code afin de gérer les événements de réussite et d’erreur.
 

@@ -1,8 +1,8 @@
 ---
 title: Configuration des points de fin Remoting
-seo-title: Configuration des points de fin Remoting
+seo-title: Configuring Remoting endpoints
 description: Découvrez comment configurer des points de fin Remoting.
-seo-description: Découvrez comment configurer des points de fin Remoting.
+seo-description: Learn how to configure remoting endpoints.
 uuid: 4d4f9274-dcae-4b9f-975a-575376c2f89c
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: aab9d622-d76b-4100-9ca6-e5b86f543381
 exl-id: d8e31f99-0558-4634-ae35-f4a09f34ad6d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 67%
+source-wordcount: '120'
+ht-degree: 65%
 
 ---
 
@@ -23,4 +23,4 @@ Un point de fin Remoting permet à une application créée avec Flex d’appeler
 
 ## Paramètres des points de fin Remoting {#remoting-endpoint-settings}
 
-**Méthode d’authentification du client Flex :** détermine le type de réponse que le serveur renvoie au client lorsque le service appelé est activé pour la sécurité, l’opération appelée ne prend pas en charge les appels anonymes et le client transmet des informations d’identification non valides ou aucune information d’identification non valide.
+**Méthode d’authentification du client Flex :** Détermine le type de réponse que le serveur renvoie au client lorsque la sécurité du service appelé est activée, l’opération appelée ne prend pas en charge les appels anonymes et le client transmet des informations d’identification non valides ou non valides.

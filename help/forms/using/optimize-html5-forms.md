@@ -1,8 +1,8 @@
 ---
 title: Optimisation des formulaires HTML5
-seo-title: Optimisation des formulaires HTML5
+seo-title: Optimizing HTML5 forms
 description: Vous pouvez optimiser la taille de sortie des formulaires HTML5.
-seo-description: Vous pouvez optimiser la taille de sortie des formulaires HTML5.
+seo-description: You can optimize the output size of the HTML5 forms.
 uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,7 +12,7 @@ feature: Mobile Forms
 exl-id: 8d2b5294-9763-4348-b927-706ebac90b95
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '284'
 ht-degree: 94%
 
 ---
@@ -58,7 +58,7 @@ Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
    >
    >Lorsque vous utilisez un proxy, les modifications de configuration suivantes sont requises :
    > 
-   >* Accès : *https://&lt;serveur>:&lt;port>/system/console/configMgr*
+   >* Accès : *https://&lt;server>:&lt;port>/system/console/configMgr*
    * Modification de la configuration pour Apache Sling Referrer Filter
    * Dans le champ Allow Hosts (Autoriser les hôtes), ajoutez une entrée pour le serveur proxy
 

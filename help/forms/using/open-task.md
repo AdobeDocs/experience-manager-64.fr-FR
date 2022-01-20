@@ -1,8 +1,8 @@
 ---
 title: Ouverture d’une tâche
-seo-title: Ouverture d’une tâche
+seo-title: Opening a task
 description: Étapes d’ouverture d’une tâche dans l’application AEM Forms.
-seo-description: Étapes d’ouverture d’une tâche dans l’application AEM Forms.
+seo-description: Steps to open a task on your AEM Forms app.
 uuid: 3f543391-a62b-40ef-aa28-59b7f99554f1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 exl-id: c87a35d5-3371-472d-af28-14d3412d6ebe
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '323'
 ht-degree: 100%
 
 ---

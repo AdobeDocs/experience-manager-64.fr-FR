@@ -1,8 +1,8 @@
 ---
 title: Connexion d’AEM Forms à Adobe LiveCycle
-seo-title: Connexion d’AEM Forms à Adobe LiveCycle
+seo-title: Connecting AEM Forms with Adobe LiveCycle
 description: AEM LiveCycle Connector vous permet de démarrer LiveCycle ES4 Document Services à partir des applications et des processus AEM.
-seo-description: AEM LiveCycle Connector vous permet de démarrer LiveCycle ES4 Document Services à partir des applications et des processus AEM.
+seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,7 +12,7 @@ role: Admin
 exl-id: f40674c1-a1dd-41ef-8a19-82ece3103bcc
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1006'
 ht-degree: 93%
 
 ---
@@ -54,7 +54,7 @@ Les applications clientes peuvent démarrer des services LiveCycle par programma
 
 AEM LiveCycle Connector simplifie ce flux en exposant ces instances de client comme des services OSGi accessibles par des méthodes OSGi standard. Le connecteur de LiveCycle fournit les fonctionnalités suivantes :
 
-* Instances de client en tant que service OSGi : Les clients conditionnés en tant que bundles OSGI sont répertoriés dans la section [Liste de Document Services](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) . Chaque jar client enregistre l’instance de client comme service OSGi auprès du registre de services OSGi.
+* Instances de client en tant que service OSGi : Les clients conditionnés en tant que lots OSGI sont répertoriés dans la variable [Liste de Services de document](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) . Chaque jar client enregistre l’instance de client comme service OSGi auprès du registre de services OSGi.
 * Propagation des informations d’identification : les détails de connexion requis pour la connexion au serveur LiveCycle sont gérés de manière centralisée.
 * Service ServiceClientFactory : pour démarrer les processus, l’application cliente peut accéder à l’instance ServiceClientFactory.
 
@@ -82,7 +82,7 @@ Pour démarrer un service exposé à partir d’AEM, procédez comme suit :
    </dependency>
    ```
 
-   Pour démarrer un service, ajoutez la dépendance Maven correspondante. Pour consulter la liste des dépendances, reportez-vous à la section [Liste de Document Services](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Par exemple, pour le service Generate PDF, ajoutez la dépendance suivante :
+   Pour démarrer un service, ajoutez la dépendance Maven correspondante. Pour consulter la liste des dépendances, reportez-vous à la section [Liste de Document Services](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Par exemple, pour le service Generate PDF , ajoutez la dépendance suivante :
 
    ```xml
    <dependency>

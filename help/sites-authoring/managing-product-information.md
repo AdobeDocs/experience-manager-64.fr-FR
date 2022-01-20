@@ -1,8 +1,8 @@
 ---
 title: Projet de création et intégration à PIM
-seo-title: Projet de création et intégration à PIM
+seo-title: Creative Project and PIM Integration
 description: La fonction Projet de création simplifie l’ensemble du worfklow de séance photo, notamment la génération d’une demande de séance photo, le transfert d’une séance photo, la collaboration sur une séance photo et le regroupement des ressources approuvées
-seo-description: La fonction Projet de création simplifie l’ensemble du worfklow de séance photo, notamment la génération d’une demande de séance photo, le transfert d’une séance photo, la collaboration sur une séance photo et le regroupement des ressources approuvées
+seo-description: Creative Project streamlines the entire photo shoot workflow that including generating a photo shoot request, uploading a photo shoot, collaborating on a photo shoot, and packaging approved assets
 uuid: 09f27d36-e725-45cb-88d1-27383aedceed
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: b477d6ab-126a-489a-a13f-2b6f439ab85b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3013'
+source-wordcount: '2980'
 ht-degree: 68%
 
 ---
@@ -47,7 +47,7 @@ Le modèle comporte les workflows suivants :
 
 ## Création d’un projet de séance photo du produit {#create-a-product-photo-shoot-project}
 
-1. Dans la console **Projets**, appuyez/cliquez sur **Créer**, puis sélectionnez **Créer un projet** dans la liste.
+1. Dans le **Projets** console, appuyez/cliquez **Créer** puis choisissez **Créer un projet** dans la liste.
 
    ![chlimage_1-132](assets/chlimage_1-132.png)
 
@@ -60,7 +60,7 @@ Le modèle comporte les workflows suivants :
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
 1. Cliquez/appuyez sur **Créer**. Un message de confirmation indique que le projet est créé.
-1. Appuyez/cliquez sur **Terminé** pour revenir à la console **Projets**. Vous pouvez également appuyer/cliquer sur **Ouvrir** pour afficher les ressources dans le projet de séance photo.
+1. Appuyez/cliquez sur **Terminé** pour revenir au **Projets** console. Vous pouvez également appuyer/cliquer sur **Ouvrir** pour afficher les ressources du projet de séance photo.
 
 ## Commencer à travailler dans un projet de séance photo du produit {#starting-work-in-a-product-photo-shoot-project}
 
@@ -101,7 +101,7 @@ Les deux workflows incluent des étapes pour lier les produits à leurs ressourc
 * Lancement d’un worfklow de projet : explique comment lancer une séance photo du produit.
 * Détails des tâches de worfklow : fournit le détail des tâches disponibles dans le worfklow.
 
-## Suivi de la progression du projet    {#tracking-project-progress}
+## Suivi de la progression du projet {#tracking-project-progress}
 
 Vous pouvez effectuer le suivi de l’avancement d’un projet en consultant les tâches actives/terminées au sein d’un projet.
 
@@ -130,12 +130,12 @@ Cette tâche consiste à affecter des étapes de worfklow aux utilisateurs en fo
 
 Pour configurer le worfklow **Séance photo du produit** :
 
-1. Accédez à **Outils** > **Processus**, puis appuyez sur la mosaïque **Modèles** pour ouvrir la page **Modèles de processus**.
-1. Sélectionnez le workflow **Séance photo du produit** , puis appuyez sur l’icône **Modifier** de la barre d’outils pour l’ouvrir en mode d’édition.
+1. Accédez à **Outils** > **Workflows**, puis appuyez sur le bouton **Modèles** pour ouvrir la mosaïque **Modèles de processus** page.
+1. Sélectionnez la **Séance photo du produit** et appuyez sur **Modifier** dans la barre d’outils pour l’ouvrir en mode d’édition.
 
    ![chlimage_1-138](assets/chlimage_1-138.png)
 
-1. Sur la page **Workflow de séance photo du produit** , ouvrez une tâche de projet. Par exemple, ouvrez la tâche **Transférer la liste de plans**.
+1. Dans le **Workflow de séance photo du produit** , ouvrez une tâche de projet. Par exemple, ouvrez la tâche **Transférer la liste de plans**.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -156,14 +156,14 @@ Pour configurer le worfklow **Séance photo du produit** :
    * Critique de la séance photo
    * Déplacer vers la production
 
-   Exécutez une procédure similaire pour configurer les tâches dans le workflow **Séance photo du produit (Intégration de commerce)**.
+   Effectuez une procédure similaire pour configurer les tâches dans la variable **Workflow Séance photo du produit (Intégration de commerce)**.
 
 Cette section décrit comment intégrer la gestion des informations produit (PIM) à votre projet de création.
 
-## Démarrage d’un worfklow de projet  {#starting-a-project-workflow}
+## Démarrage d’un worfklow de projet {#starting-a-project-workflow}
 
-1. Accédez à un projet Séance photo du produit, puis appuyez/cliquez sur l’icône **Ajouter un travail** de la carte **Workflows** .
-1. Sélectionnez le worfklow **Séance photo du produit (Intégration de commerce)** pour le démarrer. Si les informations sur le produit ne sont pas disponibles sous /etc/commerce, sélectionnez le workflow **Séance photo du produit** et démarrez le workflow Séance photo du produit.
+1. Accédez à un projet Séance photo du produit, puis appuyez/cliquez sur le **Ajouter un travail** sur l’icône **Workflows** carte.
+1. Sélectionnez le worfklow **Séance photo du produit (Intégration de commerce)** pour le démarrer. Si les informations sur le produit ne sont pas disponibles sous /etc/commerce, sélectionnez la variable **Séance photo du produit** et démarrez le workflow Séance photo du produit .
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
@@ -180,15 +180,15 @@ Cette section décrit comment intégrer la gestion des informations produit (PIM
 
 Le worfklow de séance photo comprend plusieurs tâches. Chaque tâche est affectée à un groupe d’utilisateurs en fonction de la configuration définie pour la tâche.
 
-#### Tâche Créer une liste de plans  {#create-shot-list-task}
+#### Tâche Créer une liste de plans {#create-shot-list-task}
 
 La tâche **Créer une liste de plans** permet au propriétaire du projet de sélectionner les produits pour lesquels des images sont requises. Selon l’option sélectionnée par l’utilisateur, un fichier CSV est généré avec les informations de base sur les produits.
 
-1. Dans le dossier du projet, appuyez/cliquez sur les points de suspension de la [Carte des tâches](#tracking-project-progress) pour afficher l’élément de tâche dans le workflow.
+1. Dans le dossier du projet, appuyez/cliquez sur les ellipses du dossier [Carte des tâches](#tracking-project-progress) pour afficher l’élément de tâche dans le workflow.
 
    ![chlimage_1-143](assets/chlimage_1-143.png)
 
-1. Sélectionnez la tâche **Créer une liste de plans**, puis appuyez/cliquez sur l’icône **Ouvrir** dans la barre d’outils.
+1. Sélectionnez la **Créer une liste de plans** , puis appuyez/cliquez sur l’icône **Ouvrir** dans la barre d’outils.
 
    ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -200,7 +200,7 @@ La tâche **Créer une liste de plans** permet au propriétaire du projet de sé
 
    ![chlimage_1-146](assets/chlimage_1-146.png)
 
-1. Appuyez/cliquez sur l’icône **Ajouter à la liste de plans** pour créer un fichier CSV contenant la liste de tous les produits de ce type. Un message confirme que la liste de plans est créée pour les produits sélectionnés. Cliquez sur **Fermer** pour terminer le worfklow.
+1. Appuyez/cliquez sur le bouton **Ajouter à la liste de plans** pour créer un fichier CSV contenant la liste de tous ces produits. Un message confirme que la liste de plans est créée pour les produits sélectionnés. Cliquez sur **Fermer** pour terminer le worfklow.
 1. Une fois la liste de plans créée, le lien **Afficher la liste de plans** apparaît. Pour ajouter d’autres produits à la liste de plans, appuyez/cliquez sur **Ajouter à la liste de plans**. Dans ce cas, les données sont ajoutées à la liste de plans créée.
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
@@ -209,13 +209,13 @@ La tâche **Créer une liste de plans** permet au propriétaire du projet de sé
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
-   Pour modifier les données existantes ou ajouter de nouvelles données, appuyez/cliquez sur **Modifier** dans la barre d’outils. Seuls les champs **Produit **et **Description** sont modifiables.
+   Pour modifier les données existantes ou ajouter de nouvelles données, appuyez/cliquez sur **Modifier** dans la barre d’outils. Seul le **produit **et **Description** sont modifiables.
 
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
-   Après avoir mis à jour le fichier, appuyez/cliquez sur **Enregistrer** dans la barre d’outils pour enregistrer le fichier.
+   Après avoir mis à jour le fichier, appuyez/cliquez sur **Enregistrer** sur la barre d’outils pour enregistrer le fichier.
 
-1. Après avoir ajouté les produits, appuyez/cliquez sur l’icône **Terminer** dans la page de détails de la tâche **Créer une liste de plans ** pour marquer la tâche comme terminée. Vous pouvez ajouter un commentaire (facultatif).
+1. Après avoir ajouté les produits, appuyez/cliquez sur l’icône **Terminer** sur la page de détails de la tâche **Créer une liste de plans ** pour marquer la tâche comme terminée. Vous pouvez ajouter un commentaire (facultatif).
 
    La fin de la tâche apporte les modifications suivantes au sein du projet :
 
@@ -225,7 +225,7 @@ La tâche **Créer une liste de plans** permet au propriétaire du projet de sé
 
    Transférer la liste de plans est la première tâche du worfklow Séance photo du produit (sans intégration de commerce). Appuyez/cliquez sur **Transférer la liste de plans** pour transférer un fichier **shotlist.csv**. Le fichier CSV doit contenir l’ID du produit. Les autres champs sont facultatifs. Vous pouvez les utiliser pour mapper les ressources aux produits.
 
-### Transférer une tâche de liste de plans  {#upload-shot-list-task}
+### Transférer une tâche de liste de plans {#upload-shot-list-task}
 
 Cette tâche fait partie du worfklow Séance photo du produit. Vous effectuez cette tâche si les informations produit ne sont pas disponibles dans AEM. Dans ce cas, vous transférez dans un fichier CSV la liste des produits pour lesquels des ressources d’images sont requises. En fonction des détails du fichier CSV, vous mappez les ressources image avec les produits.
 
@@ -237,14 +237,14 @@ Un produit peut appartenir à une catégorie particulière. La catégorie du pro
 
 >[!NOTE]
 >
->Le nom des images à télécharger doit commencer par &quot;**&lt;IDProduit>_&quot;** où l’ID de produit est référencé à partir du champ **Id** dans le fichier *shotlist.csv* . Par exemple, pour un produit de la liste de plans avec l’ID **ID 397122**, vous pouvez charger des fichiers portant les noms **397122_Highcontraste.jpg**, **397122_lowlight.png**, etc.
+>Le nom des images à télécharger doit commencer par &quot;**&lt;productid>_&quot;** où l’ID de produit est référencé à partir de la variable **Id** dans le champ *shotlist.csv* fichier . Par exemple, pour un produit de la liste de plans avec **Id 397122**, vous pouvez charger des fichiers avec des noms. **397122_Highcontraste.jpg**, **397122_lowlight.png**, etc.
 
-1. Dans le dossier du projet, appuyez/cliquez sur les points de suspension de la [Carte des tâches](#tracking-project-progress) pour afficher la liste des tâches du workflow.
-1. Sélectionnez la tâche **Transférer la liste de plans**, puis appuyez/cliquez sur l’icône **Ouvrir** dans la barre d’outils.
+1. Dans le dossier du projet, appuyez/cliquez sur les ellipses du dossier [Carte des tâches](#tracking-project-progress) pour afficher la liste des tâches du workflow.
+1. Sélectionnez la **Transférer la liste de plans** , puis appuyez/cliquez sur l’icône **Ouvrir** dans la barre d’outils.
 
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
-1. Passez en revue les détails de la tâche, puis appuyez/cliquez sur le bouton **Transférer la liste de plans** .
+1. Vérifiez les détails de la tâche, puis appuyez/cliquez sur l’icône **Transférer la liste de plans** bouton .
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -255,34 +255,34 @@ Un produit peut appartenir à une catégorie particulière. La catégorie du pro
 
    Cliquez sur l’icône **Terminé** pour terminer la tâche.
 
-1. Appuyez/cliquez sur l’icône **Terminer** pour terminer la tâche.
+1. Appuyez/cliquez sur le bouton **Terminer** pour terminer la tâche.
 
 ### Tâche Transférer la séance photo {#upload-photo-shoot-task}
 
-Si vous êtes un éditeur, vous pouvez télécharger des plans pour les produits répertoriés dans le fichier **shotlist.csv** qui est créé ou chargé dans la tâche précédente.
+Si vous êtes un éditeur, vous pouvez télécharger des plans pour les produits répertoriés dans la section **shotlist.csv** fichier créé ou chargé dans la tâche précédente.
 
-Le nom des images à télécharger doit commencer par **&quot;&lt;productId>_&quot;** où l’ID de produit est référencé à partir du champ **Id** dans le fichier **shotlist.csv** . Par exemple, pour un produit dans la liste de plans portant l’**ID 397122**, vous pouvez transférer des fichiers avec les noms **397122_fortcontraste.jpg**, **397122_faibleluminosité.png**, etc.
+Le nom des images à télécharger doit commencer par **&quot;&lt;productid>_&quot;** où l’ID de produit est référencé à partir de la variable **Id** dans le champ **shotlist.csv** fichier . Par exemple, pour un produit dans la liste de plans portant l’**ID 397122**, vous pouvez transférer des fichiers avec les noms **397122_fortcontraste.jpg**, **397122_faibleluminosité.png**, etc.
 
 Vous pouvez transférer les images directement ou transférer un fichier ZIP contenant les images. En fonction de leurs noms, les images sont placées à l’intérieur des dossiers de leurs produits respectifs au sein du dossier **Séance photo**.
 
-1. Sous le dossier du projet, appuyez/cliquez sur les points de suspension de la [Carte des tâches](#tracking-project-progress) pour afficher l’élément de tâche dans le processus.
-1. Sélectionnez la tâche **Transférer la séance photo**, puis appuyez/cliquez sur l’icône **Ouvrir** dans la barre d’outils.
+1. Sous le dossier du projet, appuyez/cliquez sur les points de suspension dans le [Task Card](#tracking-project-progress) pour afficher l’élément de tâche dans le workflow.
+1. Sélectionnez la **Télécharger la séance photo** , puis appuyez/cliquez sur l’icône **Ouvrir** dans la barre d’outils.
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
 
 1. Appuyez/cliquez sur **Télécharger la séance photo **et chargez les images de la séance photo.
 1. Appuyez/cliquez sur l’icône **Terminé** de la barre d’outils pour terminer la tâche.
 
-### Tâche Retoucher la séance photo  {#retouch-photo-shoot-task}
+### Tâche Retoucher la séance photo {#retouch-photo-shoot-task}
 
 Si vous disposez de droits de modification, effectuez la tâche Retoucher la séance photo afin de modifier les images transférées dans le dossier Séance photo.
 
-1. Sous le dossier du projet, appuyez/cliquez sur les points de suspension de la [Carte des tâches](#tracking-project-progress) pour afficher l’élément de tâche dans le processus.
-1. Sélectionnez la tâche **Retoucher la séance photo**, puis appuyez/cliquez sur l’icône **Ouvrir** dans la barre d’outils.
+1. Sous le dossier du projet, appuyez/cliquez sur les points de suspension dans le [Task Card](#tracking-project-progress) pour afficher l’élément de tâche dans le workflow.
+1. Sélectionnez la **Retoucher la séance photo** , puis appuyez/cliquez sur l’icône **Ouvrir** dans la barre d’outils.
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
-1. Appuyez/cliquez sur le lien **Afficher les ressources téléchargées** de la page **Retoucher la séance photo** pour parcourir les images téléchargées.
+1. Appuyez/cliquez sur le bouton **Affichage des ressources téléchargées** dans le **Retoucher la séance photo** pour parcourir les images téléchargées.
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -296,12 +296,12 @@ Si vous disposez de droits de modification, effectuez la tâche Retoucher la sé
 
 Cette tâche consiste à réviser les images de la séance photo transférées par un photographe et à les marquer comme approuvées pour utilisation.
 
-1. Sous le dossier du projet, appuyez/cliquez sur les points de suspension de la [Carte des tâches](#tracking-project-progress) pour afficher l’élément de tâche dans le processus.
-1. Sélectionnez la tâche **Réviser et approuver**, puis appuyez/cliquez sur l’icône **Ouvrir** dans la barre d’outils.
+1. Sous le dossier du projet, appuyez/cliquez sur les points de suspension dans le [Task Card](#tracking-project-progress) pour afficher l’élément de tâche dans le workflow.
+1. Sélectionnez la **Réviser et approuver** , puis appuyez/cliquez sur l’icône **Ouvrir** dans la barre d’outils.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Sur la page **Réviser et approuver**, affectez la tâche de révision au rôle, par exemple Réviseurs, puis appuyez/cliquez sur **Réviser** pour commencer à examiner les images de produit transférées.
+1. Dans le **Réviser et approuver** , affectez la tâche de révision au rôle, par exemple les réviseurs, puis appuyez/cliquez sur **Réviser** pour commencer à examiner les images de produit chargées.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -325,12 +325,12 @@ La fonction Projet de création associe les ressources approuvées au produit r�
 >[!NOTE]
 Dans le worfklow Séance photo du produit (sans intégration de commerce), les images approuvées n’ont aucune association avec des produits.
 
-### Déplacer vers la tâche de production  {#move-to-production-task}
+### Déplacer vers la tâche de production {#move-to-production-task}
 
 Cette tâche déplace les ressources approuvées dans le dossier Prêt pour la production de manière à pouvoir les utiliser.
 
-1. Sous le dossier du projet, appuyez/cliquez sur les points de suspension de la [Carte des tâches](#tracking-project-progress) pour afficher l’élément de tâche dans le processus.
-1. Sélectionnez la tâche **Déplacer vers la production**, puis appuyez/cliquez sur l’icône **Ouvrir** de la barre d’outils.
+1. Sous le dossier du projet, appuyez/cliquez sur les points de suspension dans le [Task Card](#tracking-project-progress) pour afficher l’élément de tâche dans le workflow.
+1. Sélectionnez la **Déplacer vers la production** , puis appuyez/cliquez sur l’icône **Ouvrir** dans la barre d’outils.
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -338,7 +338,7 @@ Cette tâche déplace les ressources approuvées dans le dossier Prêt pour la p
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. Saisissez le chemin d’accès au dossier prêt pour la production dans le champ **Déplacer vers** .
+1. Saisissez le chemin d’accès au dossier prêt pour la production dans le champ **Déplacer vers** champ .
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
@@ -346,23 +346,23 @@ Cette tâche déplace les ressources approuvées dans le dossier Prêt pour la p
 
 1. Appuyez/cliquez sur l’icône **Terminé** dans la barre d’outils. Le worfklow se termine et la dernière étape est marquée comme étant terminée.
 
-## Affichage des métadonnées des ressources de gestion des actifs numériques  {#viewing-dam-asset-metadata}
+## Affichage des métadonnées des ressources de gestion des actifs numériques {#viewing-dam-asset-metadata}
 
 Après votre approbation, les ressources sont liées aux produits correspondants. La [page des propriétés](/help/assets/managing-assets-touch-ui.md#editing-properties) des ressources approuvées comprend maintenant un nouvel onglet **Données du produit** (les informations sur les produits liés) Cet onglet affiche les détails du produit, le numéro SKU ainsi que d’autres détails relatifs au produit lié à la ressource. Appuyez/cliquez sur l’icône **Modifier** pour mettre à jour une propriété de ressource. Les informations relatives aux produits restent en lecture seule.
 
 Appuyez/cliquez sur le lien qui s’affiche pour accéder à la page des détails du produit correspondante dans la console du produit à laquelle la ressource est associée.
 
-## Personnalisation des worfklow de séance photo du projet  {#customizing-the-project-photo-shoot-workflows}
+## Personnalisation des worfklow de séance photo du projet {#customizing-the-project-photo-shoot-workflows}
 
 Vous pouvez personnaliser les workflows de travaux de séance photo du projet en fonction de vos besoins. Il s’agit d’une tâche facultative, et basée sur les rôles, que vous effectuez pour définir la valeur d’une variable au sein du projet. Vous pouvez ensuite utiliser ultérieurement la valeur configurée pour prendre une décision.
 
-1. Cliquez/appuyez sur le logo AEM, puis accédez à **Outils** > **Processus** > **Modèles** pour ouvrir la page Modèles de processus.
+1. Cliquez/appuyez sur le logo AEM, puis accédez à **Outils** > **Workflow** > **Modèles** pour ouvrir la page Modèles de processus .
 1. Sélectionnez le worfklow **Séance photo du produit (Intégration de commerce)** ou **Séance photo du produit**, et cliquez/appuyez sur **Modifier** dans la barre d’outils pour ouvrir le worfklow en mode d’édition.
 1. Ouvrez les tâches **Projets** dans le sidekick, puis faites glisser l’étape **Créer une tâche de projet en fonction du rôle** dans le worfklow.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Ouvrez l’étape **Tâche basée sur le rôle** .
+1. Ouvrez le **Tâche basée sur les rôles** étape .
 1. Sous l’onglet **Tâche**, saisissez le nom de la tâche qui s’affichera dans la liste **Tâche**. Vous pouvez également affecter la tâche à un rôle, définir la priorité par défaut, fournir une description et spécifier l’heure d’échéance de la tâche.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
@@ -374,9 +374,9 @@ Vous pouvez personnaliser les workflows de travaux de séance photo du projet en
 1. Après avoir ajouté les options, cliquez sur **OK** pour ajouter les modifications à l’étape.
 
    >[!NOTE]
-   Appuyez/cliquez sur **OK** n’enregistre pas les modifications dans le workflow. Pour enregistrer les modifications dans le worfklow, appuyez/cliquez sur **Enregistrer**.
+   Appuyer/cliquer **OK** n’enregistre pas les modifications dans le workflow. Pour enregistrer les modifications dans le worfklow, appuyez/cliquez sur **Enregistrer**.
 
-1. Ouvrez les tâches **Workflow** à partir du sidekick, puis ajoutez une tâche **Atteindre**.
+1. Ouvrez le **Workflow** tâches à partir du sidekick et ajoutez une **Atteindre** tâche.
 1. Ouvrez la tâche **Atteindre** et appuyez/cliquez sur l’onglet **Processus**.
 1. Saisissez le code suivant dans la zone **Script** :
 
@@ -401,7 +401,7 @@ Vous pouvez personnaliser les workflows de travaux de séance photo du projet en
 ```
 
 >[!NOTE]
-Pour plus d’informations sur les scripts des étapes de workflow, voir [Définition d’une règle pour une division OU](/help/sites-developing/workflows-models.md).
+Pour plus d’informations sur les scripts des étapes de processus, voir [Définition d’une règle pour une division OU](/help/sites-developing/workflows-models.md).
 
 ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -411,7 +411,7 @@ Pour plus d’informations sur les scripts des étapes de workflow, voir [Défin
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Une nouvelle tâche d’acceptation du propriétaire du projet apparaît maintenant une fois la [tâche Déplacer vers la production](#move-to-production-task) terminée et est affectée au propriétaire.
+1. Une nouvelle tâche d’acceptation du propriétaire du projet apparaît maintenant après la [Tâche Déplacer vers la production](#move-to-production-task) est terminée et est affectée au propriétaire.
 
    L’utilisateur avec le rôle de propriétaire peut terminer la tâche et sélectionner une action (parmi la liste des actions ajoutées dans les configurations d’étape de worfklow) à partir de la liste dans la fenêtre contextuelle de commentaires.
 

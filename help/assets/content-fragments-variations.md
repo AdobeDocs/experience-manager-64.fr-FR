@@ -1,8 +1,8 @@
 ---
 title: Variations – création de contenu de fragment
-seo-title: Variations – création de contenu de fragment
+seo-title: Variations - Authoring Fragment Content
 description: Les variations permettent de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon l’objectif recherché (si nécessaire).
-seo-description: Les variations permettent de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon l’objectif recherché (si nécessaire).
+seo-description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
 uuid: affccda0-be5f-47d2-85b6-8701b77ac932
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
-feature: Fragments de contenu
+feature: Content Fragments
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 92%
+source-wordcount: '1738'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 92%
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](../release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de la fonction [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](../release-notes/sp-release-notes.md).
 
 Les [variations](content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu, car elles permettent de créer et de modifier des copies du contenu maître pour une utilisation sur des canaux spécifiques et/ou dans des cas spécifiques.
 
@@ -88,7 +88,7 @@ L’éditeur plein écran fournit :
 
 Les actions suivantes sont également disponibles (pour tous les [formats](#formats)) lorsque l’éditeur plein écran (c’est-à-dire pour le texte sur plusieurs lignes) est ouvert :
 
-* Sélectionnez le [format](#formats) ([Texte enrichi](#rich-text), [Texte brut](#plain-text), [Texte (Markdown](#markdown)).
+* Sélectionnez la [format](#formats) ([Texte enrichi](#rich-text), [Texte brut](#plain-text), [Markdown](#markdown))
 * [Affichage des statistiques de texte](#viewing-key-statistics)
 * [Chargement du contenu](#uploading-content)
 * [Synchronisation avec le gabarit](#synchronizing-with-master) (lors de la modification d’une variation)
@@ -196,13 +196,12 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
 >
 >D’autres langues sont disponibles en tant que modules de modèle de langues sur le portail Distribution logicielle :
 >
->* [Français (fr) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Allemand (de) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italien (it) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Espagnol (es) de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Français (fr) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Allemand (de) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Italien (it) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Espagnol (es) de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 >
-
 
 
 1. Sélectionnez **[!UICONTROL Maître]** ou la variante requise.
@@ -311,7 +310,7 @@ Pour créer une variation, procédez comme suit :
    >
    >Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
 
-### Modification d’une variation  {#editing-a-variation}
+### Modification d’une variation {#editing-a-variation}
 
 Vous pouvez apporter des modifications au contenu de la variation après avoir :
 
@@ -336,7 +335,7 @@ Pour renommer une variation existante :
 >
 >Cette opération concerne uniquement le **Titre** de la variation.
 
-### Suppression d’une variation  {#deleting-a-variation}
+### Suppression d’une variation {#deleting-a-variation}
 
 Pour supprimer une variation existante :
 

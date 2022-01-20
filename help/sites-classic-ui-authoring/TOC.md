@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.4 Classic UI
 breadcrumb-title: Guide de création de l’interface utilisateur classique
 user-guide-description: Ce guide couvre les concepts de création dans AEM dans l’interface utilisateur classique.
-feature: 'Création '
+feature: Authoring
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 80%
+source-wordcount: '272'
+ht-degree: 79%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 80%
    + [Configuration de l’environnement du compte](author-env-user-props.md)
    + [Choix de l’interface utilisateur](author-env-select-ui.md)
    + [Rechercher](author-env-search.md)
-   + [Votre boîte de réception ](author-env-inbox.md)
-   + [Raccourcis clavier pour les consoles ](author-env-keyboard-shortcuts.md)
+   + [Votre boîte de réception](author-env-inbox.md)
+   + [Raccourcis clavier pour les consoles](author-env-keyboard-shortcuts.md)
 + Création {#authoring}
    + [Création de pages](classic-page-author.md)
    + [Création – Environnement et outils](classic-page-author-env-tools.md)
@@ -61,7 +61,7 @@ ht-degree: 80%
    + [Création de lancements](classic-launches-creating.md)
    + [Modification de lancements](classic-launches-editing.md)
    + [Conversion de lancements](classic-launches-promoting.md)
-+ Personnalisation  {#personalization}
++ Personnalisation {#personalization}
    + [Compréhension de la segmentation](classic-personalization-campaigns-segmentation.md)
    + [Gestion de campagnes](classic-personalization-campaigns.md)
    + [Teasers et stratégies](classic-personalization-campaigns-teasers-strategy.md)
@@ -85,5 +85,5 @@ ht-degree: 80%
    + [Ajout de ressources Dynamic Media aux pages](dynamic-media-assets-adding-to-page.md)
    + [Ajout de fonctionnalités Dynamic Media Classic (Scene7) à votre page](manage-assets-classic-s7.md)
    + [Utilisation de Dynamic Media](dynamic-media-assets.md)
-   + [Vidéo](manage-assets-classic-s7-video.md)
+   + [Vidéo ](manage-assets-classic-s7-video.md)
    + [Conventions de dénomination pour le test des ressources](asset-naming-conventions.md)

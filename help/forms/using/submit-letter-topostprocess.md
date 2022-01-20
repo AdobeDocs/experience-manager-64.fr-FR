@@ -1,19 +1,19 @@
 ---
 title: Post-traitement des lettres et communications interactives
-seo-title: Post-traitement des lettres
-description: Post-traitement de lettres dans Correspondence Management vous permet de créer des post-traitements Forms et d’AEM, tels que l’impression et l’email, et de les intégrer à vos lettres.
-seo-description: Le post-traitement des lettres dans Correspondence Management vous permet de créer des post-processus de formulaires et d’AEM, tels que l’impression et le courrier électronique, et de les intégrer dans vos lettres.
+seo-title: Post Processing of Letters
+description: Le post-traitement des lettres dans Correspondence Management vous permet de créer des post-processus de formulaires et d’AEM, tels que l’impression et le courrier électronique, et de les intégrer dans vos lettres.
+seo-description: Post Processing of Letters in Correspondence Management lets you create AEM and Forms post processes, such as print and email, and integrate them with your letters.
 uuid: 4163bba9-e82b-4d3e-b1df-909855413a9e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 637342e8-fbdd-4cda-b175-56a805b3b480
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: d2dfdab8-815e-4378-b287-81e31c9d9333
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 66%
+source-wordcount: '832'
+ht-degree: 67%
 
 ---
 
@@ -27,9 +27,9 @@ Les agents peuvent associer et exécuter les flux de travaux de post-traitement 
 
 Pour associer les post-traitements aux lettres et communications interactives, vous devez commencer par configurer les post-traitements. Deux types de workflows peuvent être exécutés sur les lettres envoyées :
 
-1. **Forms Workflow :**  il s’agit des processus de gestion des processus d’AEM Forms on JEE. Instructions de configuration de [Forms Workflow](#formsworkflow).
+1. **Forms Workflow :** Il s’agit des processus de gestion des processus d’AEM Forms on JEE. Instructions de configuration [Forms Workflow](#formsworkflow).
 
-1. **AEM Workflow :** AEM workflows peuvent également être utilisés comme post-traitements pour les lettres envoyées. Instructions pour configurer [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
+1. **AEM Workflow :** AEM workflows peuvent également être utilisés comme post-traitements pour les lettres envoyées. Instructions de configuration [Processus AEM](/help/forms/using/aem-forms-workflow.md).
 
 ## Processus des formulaires {#formsworkflow}
 
@@ -53,23 +53,23 @@ Pour associer les post-traitements aux lettres et communications interactives, v
 
 1. Pour authentifier un processus/service, copiez le nom d’un processus et retournez sur la page Configurations de la console Web Adobe Experience Manager > Configuration du SDK de client Adobe AEM Forms et ajoutez le processus en tant que nouveau service.
 
-   Par exemple, si la liste déroulante de la page Propriétés de la lettre affiche le nom du processus comme Forms Workflow -> ValidCCPostProcess/SaveXML, ajoutez un nom de service comme `ValidCCPostProcess/SaveXML`.
+   Par exemple, si la liste déroulante de la page Propriétés de la lettre affiche le nom du processus comme Forms Workflow -> ValidCCPostProcess/SaveXML, ajoutez un Nom de service comme `ValidCCPostProcess/SaveXML`.
 
 1. Pour utiliser les flux de travaux AEM Forms on JEE pour le post-traitement, configurez les paramètres et les sorties nécessaires. Les valeurs par défaut des paramètres sont indiquées ci-dessous.
 
    Accédez à la page Configurations de la console web Adobe Experience Manager > **[!UICONTROL Configurations de Correspondence Management]** et configurez les paramètres suivants :
 
-   1. **inPDFDoc (paramètre de document PDF) :**  document PDF en entrée. Cette entrée contient la lettre générée comme entrée. Les noms de paramètre indiqués peuvent être configurés. Ils peuvent être configurés depuis les configurations de Correspondence Management, sous Configuration.
-   1. **inXMLDoc (paramètre de données XML) :** document XML en entrée. Cette entrée contient les données saisies par l’utilisateur sous la forme XML.
-   1. **inXDPDoc (paramètre de document XDP) :** un document XML en entrée. Cette entrée contient la mise en page sous-jacente (XDP).
-   1. **inAttachmentDocs (paramètre de documents joints) :**  paramètre d’entrée de liste. Cette entrée contient toutes les pièces jointes comme entrée.
-   1. **redirectURL (sortie d’URL de redirection) :**  type de sortie indiquant l’URL vers laquelle rediriger.
+   1. **inPDFDoc (paramètre de document du PDF) :** Un document de PDF comme entrée. Cette entrée contient la lettre générée comme entrée. Les noms de paramètre indiqués peuvent être configurés. Ils peuvent être configurés depuis les configurations de Correspondence Management, sous Configuration.
+   1. **inXMLDoc (paramètre de données XML) :** Un document XML en entrée. Cette entrée contient les données saisies par l’utilisateur sous la forme XML.
+   1. **inXDPDoc (paramètre de document XDP) :** Un document XML en entrée. Cette entrée contient la mise en page sous-jacente (XDP).
+   1. **inAttachmentDocs (paramètre de documents joints) :** Un paramètre d’entrée de liste. Cette entrée contient toutes les pièces jointes comme entrée.
+   1. **redirectURL (sortie de l’URL de redirection) :** Un type de sortie indiquant l’URL vers laquelle rediriger la page.
 
    Votre processus des formulaires doit présenter un paramètre de document PDF ou un paramètre de données XML en tant qu’entrée avec un nom identique à celui spécifié dans les **[!UICONTROL configurations de Correspondence Management]**. Ces informations sont requises pour que le processus soit répertorié dans la liste déroulante Post-traitement.
 
 ## Paramètres de l’instance de publication {#settings-on-the-publish-instance}
 
-1. Connectez-vous à `http://localhost:publishport/aem/forms`.
+1. se connecter à `http://localhost:publishport/aem/forms`.
 1. Accédez à **[!UICONTROL Lettres]** pour afficher la lettre publiée disponible sur l’instance de publication.
 1. Configurez les paramètres AEM DS. Voir [Configuration des paramètres AEM DS](/help/forms/using/configuring-the-processing-server-url-.md).
 

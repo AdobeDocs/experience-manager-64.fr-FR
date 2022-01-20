@@ -1,8 +1,8 @@
 ---
 title: Notes de mise à jour de Livefyre Feature Pack 2.0.6
-seo-title: Notes de mise à jour de Livefyre Feature Pack 2.0.6
+seo-title: Livefyre Feature Pack 2.0.6 Release Notes
 description: Notes de mise à jour de Livefyre Feature Pack 2.0.6
-seo-description: Notes de mise à jour de Livefyre Feature Pack 2.0.6
+seo-description: Livefyre Feature Pack 2.0.6 Release Notes
 uuid: 81ee0527-72c3-4530-80f1-c802ddbe62d0
 products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
@@ -10,12 +10,12 @@ discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 exl-id: e09d2d59-41f0-4cf2-bcf3-ec3dbc3b8474
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '647'
 ht-degree: 5%
 
 ---
 
-# Notes de mise à jour du pack de fonctionnalités Livefyre 2.0.6 {#livefyre-feature-pack-release-notes}
+# Notes de mise à jour de Livefyre Feature Pack 2.0.6 {#livefyre-feature-pack-release-notes}
 
 ## Informations sur la version {#release-information}
 
@@ -28,7 +28,7 @@ ht-degree: 5%
 | Compatibilité (*) | AEM 6.4 SP1, 6.4, 6.3 GA et 6.2 SP1 |
 | Description | Ce module vous permet d’intégrer les fonctionnalités de traitement de pointe de Livefyre à votre instance AEM, ce qui vous permet de publier en quelques minutes sur votre site du contenu généré par les utilisateurs à partir des réseaux sociaux. |
 
-## Éléments inclus dans le pack de fonctionnalités Livefyre 2.0.6 {#what-is-included-in-livefyre-feature-pack}
+## Éléments inclus dans Livefyre Feature Pack 2.0.6 {#what-is-included-in-livefyre-feature-pack}
 
 Ce module intègre les principales fonctionnalités de traitement du secteur Livefyre à votre instance AEM, ce qui vous permet de publier en quelques minutes sur votre site du contenu créé par les utilisateurs (UGC) à partir des réseaux sociaux. Ce module contient trois composants différents :
 
@@ -62,10 +62,10 @@ En raison des mises à jour affectant l’agrégation du contenu des comptes uti
 #### Nouvelle fonctionnalité ou amélioration {#new-feature-or-improvement}
 
 * Ajout de la possibilité de rechercher du contenu créé par l’utilisateur avant de configurer des comptes de réseaux sociaux de demande de droits dans Livefyre. Vous devez configurer des comptes de réseaux sociaux pour demander des droits ou remplacer la demande de droits si vous possédez le contenu.
-* Mise à jour du [workflow de demande de droits UGC](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) Instagram et Twitter pour se conformer aux dernières API -
+* Instagram et Twitter [Workflow de demande de droits UGC](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) a été mis à jour pour se conformer aux dernières API.
 * L’état des droits et les actions appropriées s’affichent désormais dans l’écran de demande de droits.
 
-#### Correctifs de bogues {#bug-fixes}
+#### Correctifs {#bug-fixes}
 
 * Correction d’un problème en raison duquel la suppression d’un compte social dans Livefyre Studio utilisé pour la demande de droits entraînait une erreur lors du chargement de la bibliothèque UGC dans AEM.
 * Correction d’un problème en raison duquel le nombre de ressources dans Livefyre Studio ne correspondait pas au nombre de ressources dans la bibliothèque UGC AEM.

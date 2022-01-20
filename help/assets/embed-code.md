@@ -23,7 +23,7 @@ ht-degree: 95%
 
 Utilisez la fonction **[!UICONTROL Code incorporé]** lorsque vous souhaitez lire une vidéo ou afficher une ressource incorporée dans une page web. Vous copiez le code incorporé dans le Presse-papiers afin de le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Code incorporé]**.
 
-Vous devez incorporer les URL uniquement si vous _n’utilisez pas_ comme outil de gestion de contenu web. [!DNL Experience Manager] Si vous utilisez [!DNL Experience Manager] comme gestion du contenu web, [vous ajoutez les ressources directement sur votre page.](adding-dynamic-media-assets-to-pages.md)
+Vous devez incorporer les URL uniquement si vous _n’utilisez pas_ comme outil de gestion de contenu web. [!DNL Experience Manager] Si vous utilisez [!DNL Experience Manager] en tant que WCM, [vous ajoutez les ressources directement sur votre page.](adding-dynamic-media-assets-to-pages.md)
 
 Voir [Liaison d’URL à une application web.](linking-urls-to-yourwebapplication.md)
 

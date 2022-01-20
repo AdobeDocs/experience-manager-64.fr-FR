@@ -1,8 +1,8 @@
 ---
 title: Modification des paramètres régionaux de l’interface utilisateur de l’espace de travail AEM Forms
-seo-title: Modification des paramètres régionaux de l’interface utilisateur de l’espace de travail AEM Forms
+seo-title: Changing the locale of AEM Forms workspace user interface
 description: Procédure de modification de l’espace de travail AEM Forms pour localiser le texte, les catégories réduites, les files d’attente, les processus et le sélecteur de date de l’interface.
-seo-description: Procédure de modification de l’espace de travail AEM Forms pour localiser le texte, les catégories réduites, les files d’attente, les processus et le sélecteur de date de l’interface.
+seo-description: How to modify the AEM Forms workspace to localize text, collapsed categories, queues, and processes, and the date picker on the interface.
 uuid: f8e7d399-98d9-4655-b51f-0346a5713f06
 contentOwner: robhagat
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
 exl-id: 9968f399-454b-4cb2-b6af-2c16428ca7b4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 59%
+source-wordcount: '557'
+ht-degree: 56%
 
 ---
 
@@ -27,27 +27,27 @@ Pour localiser l’interface utilisateur de l’espace de travail AEM Forms dans
 * Localisez les catégories réduites, les files d’attente et les processus.
 * Localisez le sélecteur de date.
 
-Avant d’effectuer les étapes ci-dessus, veillez à suivre les étapes répertoriées dans [Étapes génériques pour la personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+Avant d’effectuer les étapes ci-dessus, veillez à suivre les étapes répertoriées dans [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 >[!NOTE]
 >
 >Pour modifier la langue de l’écran de connexion de l’espace de travail AEM Forms, voir [Création d’un nouvel écran de connexion](/help/forms/using/creating-new-login-screen.md).
 
-## Localisation du texte  {#localizing-text}
+## Localisation du texte {#localizing-text}
 
-Effectuez les étapes suivantes pour ajouter la prise en charge d’une langue *Nouvelle* et du code de paramètres régionaux du navigateur *nw*.
+Effectuez les étapes suivantes pour ajouter la prise en charge d’une langue *Nouveau* et le code de paramètres régionaux du navigateur *nw*.
 
 1. Connectez-vous à CRXDE Lite.
 
-   L’URL par défaut du CRXDE Lite est `https://[server]:[port]/lc/crx/de/index.jsp`.
+   L’URL par défaut du CRXDE Lite est : `https://[server]:[port]/lc/crx/de/index.jsp`.
 
-1. Accédez à l’emplacement `apps/ws/locales` et créez un dossier `nw.`
-1. Copiez le fichier `translation.json`de l’emplacement `/apps/ws/locales/en-US` vers l’emplacement `/apps/ws/locales/nw`.
-1. Accédez à `/apps/ws/locales/nw` et ouvrez `translation.json` pour le modifier. Effectuez des modifications spécifiques aux paramètres régionaux dans le fichier translation.json.
+1. Accédez à l’emplacement `apps/ws/locales` et créer un dossier `nw.`
+1. Copiez le fichier `translation.json`à partir de l’emplacement `/apps/ws/locales/en-US` vers l’emplacement `/apps/ws/locales/nw`.
+1. Accédez à `/apps/ws/locales/nw` et ouvrir `translation.json` pour modification. Effectuez des modifications spécifiques aux paramètres régionaux dans le fichier translation.json.
 
    Les exemples suivants contiennent le fichier translation.json pour les environnements locaux en anglais et en français de l’espace de travail AEM Forms.
 
-   ![translation_json_in_](assets/translation_json_in_en.png) ![entranslation_json_in_fr](assets/translation_json_in_fr.png)
+   ![translation_json_in_en](assets/translation_json_in_en.png) ![translation_json_in_fr](assets/translation_json_in_fr.png)
 
 ## Localisation des catégories réduites, des files d’attente et des processus {#localizing-collapsed-categories-queues-and-processes}
 
@@ -80,8 +80,8 @@ Effectuez les étapes suivantes pour localiser les images :
    }
    ```
 
-1. Effectuez toutes les modifications sémantiques répertoriées dans l’article [Personnalisation de l’espace de travail](/help/forms/using/introduction-customizing-html-workspace.md) .
-1. Accédez au dossier *js/runtime/utility* et ouvrez le fichier* usersession.js* pour le modifier.
+1. Effectuez toutes les modifications sémantiques répertoriées dans la variable [Personnalisation de Workspace](/help/forms/using/introduction-customizing-html-workspace.md) article.
+1. Accédez au *js/runtime/utility* et ouvrez le fichier* usersession.js* pour le modifier.
 1. Recherchez le code figurant dans le bloc de code original et ajoutez la condition *lang !== &#39;nw&#39;* à l’instruction if :
 
    ```
@@ -114,14 +114,14 @@ Vous avez besoin d’un package de développement pour localiser l’API *datepi
 
 1. Téléchargez et ouvrez le [progiciel d’interface utilisateur jQuery](https://jqueryui.com/download/all/), naviguez jusqu’à *&lt;progiciel d’interface utilisateur jQuery extrait>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copiez le fichier jquery.ui.datepicker-nw.js du nouveau code de paramètres régionaux dans apps/ws/js/libs/jqueryui et apportez les modifications propres aux paramètres locaux dans le fichier.
-1. Accédez à `apps/ws/js` et ouvrez le fichier `jquery.ui.datepicker-nw.js` pour le modifier.
-1. Dans le fichier main.js , créez un alias pour `jquery.ui.datepicker-nw.js.` Le code permettant de créer un alias pour le fichier `jquery.ui.datepicker-nw.js` est le suivant :
+1. Accédez à `apps/ws/js` et ouvrez le `jquery.ui.datepicker-nw.js` pour modification.
+1. Dans le fichier main.js , créez un alias pour `jquery.ui.datepicker-nw.js.` Le code permettant de créer un alias pour la variable `jquery.ui.datepicker-nw.js` est :
 
    ```
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
-1. Utilisez l’alias `jqueryuidatepickernw` pour inclure le fichier `jquery.ui.datepicker-nw.js` dans tous les fichiers qui utilisent le sélecteur de données. L’API datepicker est utilisée dans les fichiers suivants :
+1. Utiliser un alias `jqueryuidatepickernw` pour inclure la variable `jquery.ui.datepicker-nw.js` dans tous les fichiers qui utilisent datepicker. L’API datepicker est utilisée dans les fichiers suivants :
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`

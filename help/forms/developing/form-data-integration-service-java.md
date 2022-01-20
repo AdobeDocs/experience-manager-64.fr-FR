@@ -1,8 +1,8 @@
 ---
 title: Démarrage rapide de l’API Java du service d’intégration des données de formulaire (SOAP)
-seo-title: Démarrage rapide de l’API Java du service d’intégration des données de formulaire (SOAP)
-description: Utilisez le service Form Data Integration pour importer des données dans un formulaire PDF et exporter des données d’un formulaire PDF à l’aide de l’API Java.
-seo-description: Utilisez le service Form Data Integration pour importer des données dans un formulaire PDF et exporter des données d’un formulaire PDF à l’aide de l’API Java.
+seo-title: Form Data Integration Service JavaAPI Quick Start(SOAP)
+description: Utilisez le service Form Data Integration pour importer des données dans un formulaire de PDF et exporter des données d’un formulaire de PDF à l’aide de l’API Java.
+seo-description: Use the Form Data Integration service to import data into a PDF form and export data from a PDF form using the Java API.
 uuid: bde8e83d-56d3-4331-a025-82b327c219b7
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: c60ef25a-26a0-4421-b635-ced54baa324d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '254'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 ## Démarrage rapide (mode SOAP) : Importation de données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-L’exemple de code Java suivant importe des données dans un formulaire PDF. Les données se trouvent dans un fichier XML nommé *Loan_data.xml* et le formulaire PDF est enregistré sous la forme d’un fichier PDF nommé *ResultLoanForm.pdf*. (Voir [Importation de données de formulaire](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
+L’exemple de code Java suivant importe les données dans un formulaire PDF. Les données se trouvent dans un fichier XML nommé *Loan_data.xml* et le formulaire du PDF est enregistré en tant que fichier de PDF nommé *ResultLoanForm.pdf*. (Voir [Importation de données de formulaire](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
 ```as3
  /* 
@@ -136,7 +136,7 @@ L’exemple de code Java suivant importe des données dans un formulaire PDF. Le
 
 ## Démarrage rapide (mode SOAP) : Exportation des données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-L’exemple de code Java suivant exporte les données d’un formulaire PDF. Les données du formulaire sont enregistrées sous la forme d’un fichier XML nommé *Loan_data.xml*. (Voir [Exportation des données de formulaire](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
+L’exemple de code Java suivant exporte les données d’un formulaire de PDF. Les données du formulaire sont enregistrées sous la forme d’un fichier XML nommé *Loan_data.xml*. (Voir [Exportation des données de formulaire](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
 ```as3
  /* 

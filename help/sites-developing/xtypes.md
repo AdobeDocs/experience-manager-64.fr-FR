@@ -1,8 +1,8 @@
 ---
 title: Utilisation des xtypes (IU classique)
-seo-title: Utilisation des xtypes (IU classique)
+seo-title: Using xtypes (Classic UI)
 description: Découvrez tous les xtypes disponibles avec AEM.
-seo-description: Découvrez tous les xtypes disponibles avec AEM.
+seo-description: Learn about all the xtypes that are available with AEM
 uuid: 6497caa4-2f9b-4f21-9023-88d485fd1d78
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: adb70b43-1b0b-4302-905a-c7612675dabb
 exl-id: 81d7fa0c-86db-47a1-8fac-44941d3affde
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '6414'
+source-wordcount: '6400'
 ht-degree: 52%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 52%
 
 Cette page décrit tous les xtypes disponibles avec Adobe Experience Manager (AEM).
 
-Dans le langage ExtJS, un xtype est un nom symbolique donné à une classe. Vous pouvez lire le paragraphe &quot;Component XTypes&quot; de la section [Présentation d’ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) pour obtenir une explication détaillée de ce qu’est un xtype et de sa manière de l’utiliser.
+Dans le langage ExtJS, un xtype est un nom symbolique donné à une classe. Vous pouvez lire le paragraphe &quot;Component XTypes&quot; du [Présentation d’ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) pour obtenir une explication détaillée sur un xtype et sur la manière dont il peut être utilisé.
 
 Pour obtenir des informations complètes sur tous les widgets disponibles dans AEM, reportez-vous à la [documentation relative à l’API de widget](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -33,7 +33,7 @@ Pour savoir dans quels composants un xtype donné est utilisé dans AEM, vous po
 >
 >Cette page décrit l’utilisation des xtypes ExtJS dans l’IU classique.
 >
->Adobe vous recommande d’utiliser l’[IU tactile moderne standard](/help/sites-developing/touch-ui-concepts.md) en fonction de l’[IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) et de l’[IU Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
+>Adobe vous recommande d’utiliser les [IU tactile](/help/sites-developing/touch-ui-concepts.md) basé sur [IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) et [IU Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
 
 ## xtypes {#xtypes}
 
@@ -95,7 +95,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    [CQ.form.BrowseField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.BrowseField)
 
-   **Obsolète : Utilisez  [CQ.form.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) PathField à la place.**
+   **Obsolète : Utilisation [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) au lieu**
 
 * bulkeditor
 
@@ -417,7 +417,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    [CQ.Ext.form.HtmlEditor](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
 
-   Fournit un composant Éditeur HTML léger. Certaines fonctions de barre d’outils ne sont pas prises en charge par Safari et automatiquement masquées si nécessaire. Elles sont répertoriées dans les options de configuration, le cas échéant.
+   Fournit un composant Éditeur de HTML léger. Certaines fonctions de barre d’outils ne sont pas prises en charge par Safari et automatiquement masquées si nécessaire. Elles sont répertoriées dans les options de configuration, le cas échéant.
 
    Les boutons de la barre d’outils de l’éditeur ont des infos-bulle définies dans la propriété [buttonTips](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor).
 
@@ -619,7 +619,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    [CQ.form.PathCompletion](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathCompletion)
 
-   **Obsolète : Utilisez  [CQ.form.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) PathField à la place.**
+   **Obsolète : Utilisation [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) au lieu**
 
 * pathfield
 
@@ -639,7 +639,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    [CQ.Ext.grid.PropertyGrid](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyGrid)
 
-    Mise en œuvre de grille spécialisée conçue pour imiter la grille de propriété classique figurant généralement dans les IDE de développement. Chaque ligne de la grille représente une propriété d’un objet et les données sont stockées sous la forme d’un ensemble de paires nom/valeur dans [CQ.Ext.grid.PropertyRecord](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord)s.
+    Mise en œuvre de grille spécialisée conçue pour imiter la grille de propriété classique figurant généralement dans les IDE de développement. Chaque ligne de la grille représente une propriété d’un objet et les données sont stockées sous la forme d’un ensemble de paires nom/valeur dans la [CQ.Ext.grid.PropertyRecord](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord)s.
 
 * propgrid
 
@@ -821,7 +821,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    [CQ.form.TableEdit](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit)
 
-   **Obsolète : Utilisez  [CQ.form.TableEdit2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit2)  à la place.**
+   **Obsolète : Utilisation [CQ.form.TableEdit2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit2) au lieu de .**
 
 * tableedit2
 
@@ -833,7 +833,7 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel)
 
-   Conteneur d’onglets de base. TabPanels peut être utilisé exactement comme un [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel) standard à des fins de mise en page, mais il peut également avoir une prise en charge spéciale pour contenir des composants enfants ([`items`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)).
+   Conteneur d’onglets de base. TabPanels peut être utilisé exactement comme un standard [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel) à des fins de mise en page, mais ils disposent également d’une prise en charge spéciale pour contenir des composants enfants ([`items`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)).
 
 * tags
 
@@ -949,4 +949,4 @@ Vous trouverez ci-dessous la liste des xtypes disponibles dans Adobe Experience
 
    Petite classe d’aide permettant de faciliter la création des [CQ.Ext.data.Stores](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) à partir de données XML. Un XmlStore est automatiquement configuré avec un [CQ.Ext.data.XmlReader](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.XmlReader).
 
-   **** cqincludePseudo xtype qui inclut des définitions de widget provenant d’un autre chemin dans le référentiel. Il est le plus souvent utilisé dans les boîtes de dialogue de page. Il n’existe aucune classe de widget JavaScript pour ce xtype. Il est traité par la fonction formatData() de la classe CQ.Util. Pour plus d’informations, voir cet article de la base de connaissances.
+   **cqinclude** Pseudo xtype qui inclut des définitions de widget provenant d’un autre chemin d’accès dans le référentiel. Il est le plus souvent utilisé dans les boîtes de dialogue de page. Il n’existe aucune classe de widget JavaScript pour ce xtype. Il est traité par la fonction formatData() de la classe CQ.Util. Pour plus d’informations, voir cet article de la base de connaissances.

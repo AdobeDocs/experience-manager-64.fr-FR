@@ -1,15 +1,15 @@
 ---
 title: Hub du guide de l’utilisateur d’AEM 6.4
-seo-title: Hub du guide de l’utilisateur d’AEM 6.4
+seo-title: AEM 6.4 User Guide Hub
 description: Présentation de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser AEM 6.4
-seo-description: Présentation de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser AEM 6.4
+seo-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: dbeb093b-489b-46c3-b136-e33a430793e0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 31%
+source-wordcount: '214'
+ht-degree: 34%
 
 ---
 
@@ -44,7 +44,7 @@ Les délégués de l’assistance peuvent obtenir de l’aide via :
 
 >[!NOTE]
 >
->Vous ne savez pas si vous êtes un **délégué du support** ? Découvrez si ce [type d’utilisateur s’applique à vous](https://helpx.adobe.com/experience-cloud/supported-users.html) et découvrez les [conditions de prise en charge de l’entreprise](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
+>Vous ne savez pas si vous êtes une **délégué du support**? Découvrez si : [le type d’utilisateur s’applique à vous](https://helpx.adobe.com/experience-cloud/supported-users.html) et découvrez notre [conditions d’assistance aux entreprises](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
 
 ## Communauté {#community}
 

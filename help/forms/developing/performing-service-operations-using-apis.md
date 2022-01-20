@@ -1,8 +1,8 @@
 ---
 title: Exécution d’opérations de service à l’aide d’API
-seo-title: Exécution d’opérations de service à l’aide d’API
+seo-title: Performing Service Operations Using APIs
 description: Développez des applications client à l’aide des API AEM Forms.
-seo-description: Développez des applications client à l’aide des API AEM Forms.
+seo-description: Develop client applications using the AEM Forms APIs.
 uuid: a5697c91-d643-4265-973c-18467ca0437a
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: a7c60be2-4a58-4f0a-a90e-386ef91c3335
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---

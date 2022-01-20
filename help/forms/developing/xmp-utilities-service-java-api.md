@@ -1,8 +1,8 @@
 ---
 title: XMP Utilities Service Java APIQuick Start (SOAP)
-seo-title: XMP Utilities Service Java APIQuick Start (SOAP)
+seo-title: XMP Utilities Service Java APIQuick Start(SOAP)
 description: Utilisez le service XMP Utilities pour exporter et importer XMP métadonnées.
-seo-description: Utilisez le service XMP Utilities pour exporter et importer XMP métadonnées.
+seo-description: Use the XMP Utilities service to export and import XMP metadata.
 uuid: 5db4c623-75db-4a34-9ad2-3c917619e296
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: fdbf9942-7e4d-4b76-971f-d26d89c4c4cf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '233'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,7 @@ L’exemple de code suivant récupère, inspecte et enregistre XMP métadonnées
 
 ## Démarrage rapide (mode SOAP) : Importation de métadonnées XMP à l’aide de l’API Java {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-L’exemple de code suivant importe XMP métadonnées et enregistre le nouveau fichier PDF sur le disque. Le document PDF est basé sur un fichier PDF nommé Loan.pdf. Le document XML qui contient les métadonnées à importer dans le document PDF est basé sur un fichier XML nommé *LoanMetaData.xml*. Pour plus d’informations sur ce fichier XML, voir [Importation de métadonnées dans des documents PDF](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
+L’exemple de code suivant importe XMP métadonnées et enregistre le nouveau fichier de PDF sur le disque. Le document du PDF est basé sur un fichier de PDF nommé Loan.pdf. Le document XML contenant les métadonnées à importer dans le document du PDF est basé sur un fichier XML nommé *LoanMetaData.xml*. Pour plus d’informations sur ce fichier XML, voir [Importation de métadonnées dans des documents PDF](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
 ```as3
  /* 

@@ -1,8 +1,8 @@
 ---
 title: Composants d’AEM Communities
-seo-title: Composants d’AEM Communities
+seo-title: Communities Components
 description: 'Ajout de fonctionnalités de communauté à n’importe quel site AEM '
-seo-description: 'Ajout de fonctionnalités de communauté à n’importe quel site AEM '
+seo-description: Adding community features to any AEM site
 uuid: 676abcda-3021-498d-a6eb-b60004315349
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: dc149196-fa56-494e-975c-b11ca1ef193b
 exl-id: 7118dbca-e9b4-4b69-b4c3-34bb52008168
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 67%
+source-wordcount: '286'
+ht-degree: 68%
 
 ---
 
@@ -31,17 +31,17 @@ Pour en savoir plus sur la création d’un site de communauté, voir :
 
 >[!NOTE]
 >
->Si vous ne connaissez pas l’environnement de création, consultez la documentation sur la [gestion de base](../../help/sites-authoring/basic-handling.md) et un guide rapide [pour créer des pages](../../help/sites-authoring/qg-page-authoring.md).
+>Si vous ne connaissez pas l’environnement de création, consultez la documentation sur [gestion de base](../../help/sites-authoring/basic-handling.md) et un [guide rapide pour la création de pages](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Composants d’AEM Communities disponibles {#available-communities-components}
 
 Le tableau suivant répertorie les composants de communauté visibles pour les auteurs s’ils sont activés dans le navigateur de composants (sidekick).
 
-Voir aussi le [Guide des composants de la communauté](components-guide.md) interactif.
+Voir aussi le rapport interactif [Guide des composants de communauté](components-guide.md).
 
 >[!NOTE]
 >
->Lisez la section [Principes de base des composants des communautés](basics.md), car elle contient des informations nécessaires à la création avec des composants des communautés.
+>Lecture [Principes de base des composants des communautés](basics.md) car il contient des informations nécessaires à la création avec des composants Communities.
 
 | **Libellé du composant**  | **Fonctionnalité** |
 |---|---|
@@ -82,8 +82,8 @@ Voir aussi le [Guide des composants de la communauté](components-guide.md) inte
 
 ## Documentation sur les communautés associée {#related-communities-documentation}
 
-* Visitez [Déploiement de communautés](deploy-communities.md) pour en savoir plus sur les déploiements recommandés.
+* Visite [Déploiement de communautés](deploy-communities.md) pour en savoir plus sur les déploiements recommandés.
 
 * Reportez-vous à la section [Administration des sites de communauté](administer-landing.md) pour en savoir plus sur la création d’un site de communauté, la configuration de modèles de sites de communauté, la modération du contenu de communauté, la gestion des membres et la configuration de la messagerie.
 
-* Visitez [Développement de communautés](communities.md) pour en savoir plus sur la structure de composants sociaux (SCF) et la personnalisation des composants et fonctionnalités de communautés.
+* Visite [Développement de communautés](communities.md) pour en savoir plus sur la structure de composants sociaux (SCF) et la personnalisation des composants et fonctionnalités des communautés.

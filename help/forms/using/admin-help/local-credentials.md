@@ -1,8 +1,8 @@
 ---
 title: Gestion des informations d’identification locales
-seo-title: Gestion des informations d’identification locales
+seo-title: Managing local credentials
 description: Découvrez comment gérer vos informations d’identification locales.
-seo-description: Découvrez comment gérer vos informations d’identification locales.
+seo-description: Learn how to manage local credentials.
 uuid: 3c4358e0-aaff-4e94-a6b2-04b463fca260
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 exl-id: f8c6f4e3-4c2d-4843-8f29-6d3297e57c89
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '501'
 ht-degree: 98%
 
 ---
@@ -48,7 +48,7 @@ Pour obtenir des informations et des instructions concernant les extensions d’
 
    Si le message d’erreur « Echec de l’importation des informations d’identification en raison d’un format de fichier incorrect ou d’un mot de passe incorrect » s’affiche, assurez-vous que le mot de passe est valide.
 
-## Exportation des informations d’identification  {#export-a-credential}
+## Exportation des informations d’identification {#export-a-credential}
 
 Elles sont exportées sous forme de fichiers P12 au format PKCS#12.
 
@@ -57,7 +57,7 @@ Elles sont exportées sous forme de fichiers P12 au format PKCS#12.
 1. Dans le champ Password, saisissez le mot de passe. Ce mot de passe est nouveau et permet de chiffrer les informations d’identification exportées.
 1. Cliquez sur Exporter, suivez les instructions pour exporter les informations d’identification, puis cliquez sur OK.
 
-## Modification de l’alias ou du type de Trust Store des informations d’identification  {#edit-a-credential-s-alias-or-trust-store-type}
+## Modification de l’alias ou du type de Trust Store des informations d’identification {#edit-a-credential-s-alias-or-trust-store-type}
 
 Une fois que des informations d’identification ont été importées, vous pouvez modifier le nom d’alias et le type de Trust Store qui leur sont associés.
 
@@ -66,7 +66,7 @@ Une fois que des informations d’identification ont été importées, vous pouv
 1. Cliquez sur Mettre à jour les informations d’identification.
 1. Modifiez le nom d’alias et le type de Trust Store selon vos besoins, puis cliquez sur OK.
 
-## Suppression d’informations d’identification  {#delete-a-credential}
+## Suppression d’informations d’identification {#delete-a-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
 1. Cochez les cases correspondant aux informations d’identification à supprimer.

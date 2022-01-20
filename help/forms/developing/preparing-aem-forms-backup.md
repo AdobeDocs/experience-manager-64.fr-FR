@@ -1,8 +1,8 @@
 ---
 title: Préparation d’AEM Forms pour la sauvegarde
-seo-title: Préparation d’AEM Forms pour la sauvegarde
+seo-title: Preparing AEM Forms for Backup
 description: Découvrez comment utiliser le service Backup and Restore pour passer en mode Sauvegarde du serveur AEM Forms et le quitter à l’aide de l’API Java et de l’API Web Service.
-seo-description: Découvrez comment utiliser le service Backup and Restore pour passer en mode Sauvegarde du serveur AEM Forms et le quitter à l’aide de l’API Java et de l’API Web Service.
+seo-description: Learn how to use the Backup and Restore service to enter and leave the Backup mode for AEM Forms server using the Java API and the Web Service API.
 uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: fa2bff05-a3b8-4230-95d6-1fbdc96bac3b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2506'
 ht-degree: 2%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 2%
 
 ## À propos du service de sauvegarde et de restauration {#about-the-backup-and-restore-service}
 
-Le service Sauvegarde et restauration vous permet de mettre AEM Forms en *mode de sauvegarde*, ce qui permet d’effectuer des sauvegardes à chaud. Le service Sauvegarde et restauration n’effectue pas de sauvegarde d’AEM Forms ni ne restaure votre système. Il place plutôt votre serveur dans un état pour des sauvegardes cohérentes et fiables tout en permettant à votre serveur de continuer à fonctionner. Vous êtes responsable des actions de sauvegarde du stockage global de documents et de la base de données connectée au serveur Forms. Le répertoire de stockage global de documents est un répertoire utilisé pour stocker les fichiers utilisés dans un processus de longue durée.
+Le service Sauvegarde et restauration vous permet de placer AEM Forms dans *mode de sauvegarde*, qui permet d’effectuer des sauvegardes à chaud. Le service Sauvegarde et restauration n’effectue pas de sauvegarde d’AEM Forms ni ne restaure votre système. Il place plutôt votre serveur dans un état pour des sauvegardes cohérentes et fiables tout en permettant à votre serveur de continuer à fonctionner. Vous êtes responsable des actions de sauvegarde du stockage global de documents et de la base de données connectée au serveur Forms. Le répertoire de stockage global de documents est un répertoire utilisé pour stocker les fichiers utilisés dans un processus de longue durée.
 
-Le mode de sauvegarde est un état où le serveur entre, de sorte que les fichiers du répertoire de stockage global de documents ne soient pas purgés pendant une procédure de sauvegarde. Au lieu de cela, les sous-répertoires sont créés sous le répertoire de stockage global de documents afin de conserver un enregistrement des fichiers à purger après la fin du mode de sauvegarde. Un fichier est conçu pour survivre aux redémarrages du système et peut couvrir des jours, voire des années. Ces fichiers constituent une partie essentielle de l’état global du serveur Forms et peuvent inclure des fichiers PDF, des stratégies ou des modèles de formulaire. Si l’un de ces fichiers est perdu ou corrompu, les processus sur le serveur Forms peuvent devenir instables et les données risquent d’être perdues.
+Le mode de sauvegarde est un état où le serveur entre, de sorte que les fichiers du répertoire de stockage global de documents ne soient pas purgés pendant une procédure de sauvegarde. Au lieu de cela, les sous-répertoires sont créés sous le répertoire de stockage global de documents afin de conserver un enregistrement des fichiers à purger après la fin du mode de sauvegarde. Un fichier est conçu pour survivre aux redémarrages du système et peut couvrir des jours, voire des années. Ces fichiers constituent une partie essentielle de l’état global du serveur Forms et peuvent inclure des fichiers de PDF, des stratégies ou des modèles de formulaire. Si l’un de ces fichiers est perdu ou corrompu, les processus sur le serveur Forms peuvent devenir instables et les données risquent d’être perdues.
 
 Vous pouvez choisir d’effectuer des sauvegardes instantanées, où vous passez généralement en mode de sauvegarde pendant un certain temps, puis quitter le mode de sauvegarde une fois vos activités de sauvegarde terminées. Le fait de quitter le mode de sauvegarde est nécessaire afin que les fichiers puissent être purgés du répertoire de stockage global de documents pour s’assurer qu’il ne s’étend pas inutilement. Vous pouvez quitter le mode de sauvegarde explicitement ou attendre que le temps expire au cours d’une session du mode de sauvegarde.
 
@@ -43,13 +43,13 @@ Vous pouvez effectuer les tâches suivantes à l’aide du service Sauvegarde et
 
 >[!NOTE]
 >
->Pour plus d’informations sur ce qu’il convient de prendre en compte lors des sauvegardes pour AEM Forms, voir [Aide à l’administration](https://www.adobe.com/go/learn_aemforms_admin_63).
+>Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, voir [Aide à l’administration](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Backup and Restore, voir [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Backup and Restore, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Passage en mode de sauvegarde sur le serveur Forms {#entering-backup-mode-on-the-forms-server}
+## Activation du mode de sauvegarde sur le serveur Forms {#entering-backup-mode-on-the-forms-server}
 
 Vous passez en mode de sauvegarde pour permettre les sauvegardes à chaud d’un serveur Forms. Lorsque vous passez en mode de sauvegarde, vous spécifiez les informations suivantes en fonction des procédures de sauvegarde de votre entreprise :
 
@@ -57,11 +57,11 @@ Vous passez en mode de sauvegarde pour permettre les sauvegardes à chaud d’un
 * Heure à laquelle la procédure de sauvegarde doit être terminée.
 * Indicateur qui indique si le mode de sauvegarde en continu doit être activé, ce qui n’est utile que si vous effectuez des sauvegardes en continu.
 
-Avant d’écrire des applications pour passer en mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde qui seront utilisées après avoir mis le serveur Forms en mode de sauvegarde. Pour plus d’informations sur ce qu’il convient de prendre en compte lors des sauvegardes pour AEM Forms, voir [Aide à l’administration](https://www.adobe.com/go/learn_aemforms_admin_63).
+Avant d’écrire des applications pour passer en mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde qui seront utilisées après avoir mis le serveur Forms en mode de sauvegarde. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, voir [Aide à l’administration](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Backup and Restore, voir [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Backup and Restore, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -100,7 +100,7 @@ Une fois que vous êtes en mode de sauvegarde, vous pouvez récupérer des infor
 
 Une fois le mode de sauvegarde activé, vous pouvez effectuer une sauvegarde du stockage global de documents (GDS) et de la base de données à laquelle le serveur Forms est connecté. Cette étape est spécifique à votre entreprise, car vous pouvez effectuer cette étape manuellement ou exécuter d’autres outils pour exécuter la procédure de sauvegarde.
 
-### Passez en mode de sauvegarde à l’aide de l’API Java {#enter-backup-mode-using-the-java-api}
+### Passer en mode de sauvegarde à l’aide de l’API Java {#enter-backup-mode-using-the-java-api}
 
 Passez en mode de sauvegarde à l’aide de l’API du service de sauvegarde et de restauration :
 
@@ -116,10 +116,10 @@ Passez en mode de sauvegarde à l’aide de l’API du service de sauvegarde et 
 
 1. Création d’un objet API client BackupService
 
-   Vous utilisez un objet `ServiceClientFactory` et l’objet API client BackupService ensemble.
+   Vous utilisez une `ServiceClientFactory` et l’objet API client BackupService ensemble.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Créez un objet `BackupService` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
+   * Créez un `BackupService` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory` .
 
 1. Choisissez un libellé unique, déterminez le temps nécessaire à la sauvegarde et décidez s’il faut passer en mode de sauvegarde continue.
 
@@ -129,21 +129,21 @@ Passez en mode de sauvegarde à l’aide de l’API du service de sauvegarde et 
 
    Passez en mode de sauvegarde en appelant la méthode `enterBackupMode` avec les paramètres suivants :
 
-   * Valeur `String` qui spécifie un libellé lisible par l’utilisateur unique qui identifie la session du mode de sauvegarde. Il est recommandé de ne pas utiliser d’espaces ou de caractères qui ne peuvent pas être codés au format XML.
-   * Valeur `int` qui spécifie le nombre de minutes pour rester en mode de sauvegarde. Vous pouvez définir une valeur comprise entre `1` et `10080` (nombre de minutes dans une semaine). Cette valeur est ignorée lors de l’utilisation du mode de sauvegarde continue.
-   * Valeur `Boolean` qui spécifie s’il faut être en mode de sauvegarde continu. La valeur `True` indique qu’il s’agit d’un mode de sauvegarde continu. En mode de sauvegarde continue, la valeur que vous indiquez pour le nombre de minutes de maintien en mode de sauvegarde est ignorée.
+   * A `String` qui spécifie un libellé lisible par l’utilisateur unique qui identifie la session du mode de sauvegarde. Il est recommandé de ne pas utiliser d’espaces ou de caractères qui ne peuvent pas être codés au format XML.
+   * Un `int` qui spécifie le nombre de minutes pour rester en mode de sauvegarde. Vous pouvez spécifier une valeur de `1` to `10080` (nombre de minutes dans une semaine). Cette valeur est ignorée lors de l’utilisation du mode de sauvegarde continue.
+   * A `Boolean` qui spécifie s’il faut être en mode de sauvegarde continu. Une valeur de `True` indique qu’il est en mode de sauvegarde continu. En mode de sauvegarde continue, la valeur que vous indiquez pour le nombre de minutes de maintien en mode de sauvegarde est ignorée.
 
-      Le mode de sauvegarde continu signifie qu’une nouvelle session du mode de sauvegarde est lancée une fois la session en cours terminée. Une valeur `False` signifie que le mode de sauvegarde continue n’est pas utilisé et, après avoir quitté le mode de sauvegarde, la purge des fichiers du répertoire de stockage global de documents reprend.
+      Le mode de sauvegarde continu signifie qu’une nouvelle session du mode de sauvegarde est lancée une fois la session en cours terminée. Une valeur de `False` signifie que le mode de sauvegarde continue n’est pas utilisé et, après avoir quitté le mode de sauvegarde, la purge des fichiers du répertoire de stockage global de documents reprend.
 
 1. Récupération des informations sur la session du mode de sauvegarde sur le serveur
 
-   Récupérez les informations à l’aide de l’objet `BackupModeEntryResult` renvoyé après avoir appelé la méthode `enterBackupMode` . Les informations que vous pouvez récupérer après avoir passé en mode de sauvegarde peuvent s’avérer utiles pour l’intégration à vos procédures de sauvegarde. Par exemple, le libellé, l’identifiant de sauvegarde et l’heure de début peuvent être utiles comme entrée pour les noms de fichier de votre procédure de sauvegarde.
+   Récupérez des informations à l’aide du `BackupModeEntryResult` qui est renvoyé après l’appel de la fonction `enterBackupMode` . Les informations que vous pouvez récupérer après avoir passé en mode de sauvegarde peuvent s’avérer utiles pour l’intégration à vos procédures de sauvegarde. Par exemple, le libellé, l’identifiant de sauvegarde et l’heure de début peuvent être utiles comme entrée pour les noms de fichier de votre procédure de sauvegarde.
 
 1. Sauvegarde du répertoire de stockage global de documents et de la base de données
 
    Sauvegardez le stockage global de documents et la base de données à laquelle votre serveur Forms est connecté. Les actions permettant d’effectuer la sauvegarde ne font pas partie du SDK AEM Forms et peuvent même inclure des étapes manuelles spécifiques aux procédures de sauvegarde de votre entreprise.
 
-### Passez en mode de sauvegarde à l’aide de l’API de service Web {#enter-backup-mode-using-the-web-service-api}
+### Passez en mode de sauvegarde à l’aide de l’API du service Web {#enter-backup-mode-using-the-web-service-api}
 
 Passez en mode de sauvegarde à l’aide du service Web fourni par l’API du service de sauvegarde et de restauration :
 
@@ -154,7 +154,7 @@ Passez en mode de sauvegarde à l’aide du service Web fourni par l’API du se
 
 1. Création d’un objet API client BackupService
 
-   À l’aide de l’assemblage client Microsoft .NET, créez un objet `BackupServiceService` en appelant son constructeur par défaut et spécifiez les informations d’identification à l’aide de la méthode `Credentials` .
+   À l’aide de l’assemblage client .NET Microsoft, créez une `BackupServiceService` en appelant son constructeur par défaut et en spécifiant les informations d’identification à l’aide de l’objet `Credentials` .
 
 1. Choisissez un libellé unique, déterminez le temps nécessaire à la sauvegarde et décidez s’il faut passer en mode de sauvegarde continue.
 
@@ -164,11 +164,11 @@ Passez en mode de sauvegarde à l’aide du service Web fourni par l’API du se
 
    Pour passer en mode de sauvegarde, appelez la méthode enterBackupMode et transmettez les valeurs suivantes :
 
-   * Valeur `String` qui spécifie un libellé lisible par l’utilisateur unique qui identifie la session du mode de sauvegarde. Il est recommandé de ne pas utiliser d’espaces ou de caractères qui ne peuvent pas être codés au format XML.
-   * Valeur `Uint32` qui spécifie le nombre de minutes pour rester en mode de sauvegarde. Vous pouvez spécifier une valeur comprise entre `1` et `10080` (nombre de minutes dans une semaine). Cette valeur est ignorée lors de l’utilisation du mode de sauvegarde continue.
-   * Valeur `Boolean` qui spécifie s’il faut être en mode de sauvegarde continu. La valeur `True` indique qu’il s’agit d’un mode de sauvegarde continu. En mode de sauvegarde continue, la valeur que vous indiquez pour le nombre de minutes de maintien en mode de sauvegarde est ignorée. Le mode de sauvegarde continu signifie qu’une nouvelle session du mode de sauvegarde est lancée une fois la session en cours terminée.
+   * A `String` qui spécifie un libellé lisible par l’utilisateur unique qui identifie la session du mode de sauvegarde. Il est recommandé de ne pas utiliser d’espaces ou de caractères qui ne peuvent pas être codés au format XML.
+   * A `Uint32` qui spécifie le nombre de minutes pour rester en mode de sauvegarde. Vous pouvez spécifier une valeur de `1` to `10080` (nombre de minutes dans une semaine). Cette valeur est ignorée lors de l’utilisation du mode de sauvegarde continue.
+   * A `Boolean` qui spécifie s’il faut être en mode de sauvegarde continu. Une valeur de `True` indique qu’il est en mode de sauvegarde continu. En mode de sauvegarde continue, la valeur que vous indiquez pour le nombre de minutes de maintien en mode de sauvegarde est ignorée. Le mode de sauvegarde continu signifie qu’une nouvelle session du mode de sauvegarde est lancée une fois la session en cours terminée.
 
-      Une valeur `False` signifie que le mode de sauvegarde continue n’est pas utilisé et, après avoir quitté le mode de sauvegarde, la purge des fichiers du répertoire de stockage global de documents reprend.
+      Une valeur de `False` signifie que le mode de sauvegarde continue n’est pas utilisé et, après avoir quitté le mode de sauvegarde, la purge des fichiers du répertoire de stockage global de documents reprend.
 
 1. Récupération des informations sur la session du mode de sauvegarde sur le serveur
 
@@ -182,11 +182,11 @@ Passez en mode de sauvegarde à l’aide du service Web fourni par l’API du se
 
 Vous quittez le mode de sauvegarde afin que le serveur Forms puisse reprendre la purge des fichiers du répertoire de stockage global de documents (GDS) sur le serveur Forms.
 
-Avant d’écrire des demandes pour passer en mode de sortie, il est recommandé de comprendre les procédures de sauvegarde utilisées avec AEM Forms. Pour plus d’informations sur ce qu’il convient de prendre en compte lors des sauvegardes pour AEM Forms, voir [Aide à l’administration](https://www.adobe.com/go/learn_aemforms_admin_63).
+Avant d’écrire des demandes pour passer en mode de sortie, il est recommandé de comprendre les procédures de sauvegarde utilisées avec AEM Forms. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, voir [Aide à l’administration](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Backup and Restore, voir [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Backup and Restore, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -231,20 +231,20 @@ Quittez le mode de sauvegarde à l’aide de l’API du service de sauvegarde et
 
 1. Création d’un objet API client BackupService
 
-   Vous utilisez un objet `ServiceClientFactory` et l’objet API client BackupService ensemble.
+   Vous utilisez une `ServiceClientFactory` et l’objet API client BackupService ensemble.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Créez un objet `BackupService` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory` comme paramètre.
+   * Créez un `BackupService` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory` comme paramètre.
 
 1. Activation du mode de sauvegarde
 
-   Quittez le mode de sauvegarde en appelant la méthode `leaveBackupMode` .
+   Quitter le mode de sauvegarde en appelant la méthode `leaveBackupMode` .
 
 1. Récupération des informations sur la session du mode de sauvegarde sur le serveur
 
-   Récupérez des informations sur l’opération à l’aide de l’objet `BackupModeResult` renvoyé. Les informations que vous pouvez récupérer après avoir passé en mode de sauvegarde peuvent s’avérer utiles pour l’intégration à vos procédures de sauvegarde. Par exemple, le libellé, l’identifiant de sauvegarde et l’heure de début peuvent être utiles comme entrée pour les noms de fichier de votre procédure de sauvegarde.
+   Récupérez des informations sur l’opération à l’aide du `BackupModeResult` qui est renvoyé. Les informations que vous pouvez récupérer après avoir passé en mode de sauvegarde peuvent s’avérer utiles pour l’intégration à vos procédures de sauvegarde. Par exemple, le libellé, l’identifiant de sauvegarde et l’heure de début peuvent être utiles comme entrée pour les noms de fichier de votre procédure de sauvegarde.
 
-### Quitter le mode de sauvegarde à l’aide de l’API de service Web {#leave-backup-mode-using-the-web-service-api}
+### Quitter le mode de sauvegarde à l’aide de l’API du service Web {#leave-backup-mode-using-the-web-service-api}
 
 Quittez le mode de sauvegarde à l’aide de l’API du service de sauvegarde et de restauration (service Web) :
 
@@ -257,11 +257,11 @@ Quittez le mode de sauvegarde à l’aide de l’API du service de sauvegarde et
 
 1. Création d’un objet API client BackupService
 
-   À l’aide de l’assemblage client Microsoft .NET, créez un objet `BackupServiceService` en appelant son constructeur par défaut.
+   À l’aide de l’assemblage client .NET Microsoft, créez une `BackupServiceService` en appelant son constructeur par défaut.
 
 1. Activation du mode de sauvegarde
 
-   Quittez le mode de sauvegarde en appelant l’opération de service Web `leaveBackupMode`.
+   Quitter le mode de sauvegarde en appelant la méthode `leaveBackupMode` opération de service Web.
 
 1. Récupération des informations sur la session du mode de sauvegarde sur le serveur
 

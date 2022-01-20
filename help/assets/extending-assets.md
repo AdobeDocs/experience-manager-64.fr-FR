@@ -16,7 +16,7 @@ ht-degree: 67%
 
 Asset Editor est le point d’accès Principal que les utilisateurs d’un site web Enterprise Manager d’Adobe vont utiliser pour rechercher, afficher et manipuler les ressources numériques de votre référentiel.
 
-En tant que développeur de [!DNL Experience Manager], vous pouvez personnaliser et étendre l’Éditeur de ressources de plusieurs manières, présentant aux utilisateurs une interface et un ensemble de fonctionnalités spécifiquement personnalisés.
+En tant que [!DNL Experience Manager] développeur, vous pouvez personnaliser et étendre l’Éditeur de ressources de différentes manières, en présentant aux utilisateurs une interface et un ensemble de fonctionnalités spécifiquement personnalisés.
 
 Les aspects suivants de la fonctionnalité peuvent être adaptés ou développés :
 
@@ -37,6 +37,6 @@ Les aspects suivants de l’apparence de l’Éditeur de ressources sont personn
 
 ## Personnalisation des rendus {#customizing-renditions}
 
-Dans la terminologie [!DNL Experience Manager Assets], un rendu est la forme sous laquelle une ressource est présentée. En général, une ressource particulière peut posséder plusieurs rendus. Par exemple, une image en couleur peut avoir un rendu dans sa taille d’origine, une autre à un format réduit et une autre à la fois dans un format réduit et un format converti en niveaux de gris.
+Dans [!DNL Experience Manager Assets] terminologie : un rendu est le formulaire dans lequel une ressource est présentée. En général, une ressource particulière peut posséder plusieurs rendus. Par exemple, une image en couleur peut avoir un rendu dans sa taille d’origine, une autre à un format réduit et une autre à la fois dans un format réduit et un format converti en niveaux de gris.
 
 Les rendus dans lesquels une ressource particulière est disponible peuvent être personnalisés, et de nouveaux rendus peuvent être créés.

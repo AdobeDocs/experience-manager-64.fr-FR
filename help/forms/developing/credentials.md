@@ -1,8 +1,8 @@
 ---
 title: Utilisation des informations d’identification
-seo-title: Utilisation des informations d’identification
+seo-title: Working with Credentials
 description: Importez des informations d’identification dans AEM Forms à l’aide de l’API Trust Manager et de l’API Java. En outre, découvrez comment supprimer des informations d’identification à l’aide de l’API Trust Manager et de l’API Java.
-seo-description: Importez des informations d’identification dans AEM Forms à l’aide de l’API Trust Manager et de l’API Java. En outre, découvrez comment supprimer des informations d’identification à l’aide de l’API Trust Manager et de l’API Java.
+seo-description: Import credentials into AEM Forms using the Trust Manager API and Java API. In addition, learn how to delete credentials using the Trust Manager API and Java API.
 uuid: b794428f-49bf-4a91-bc5f-d855881f4f38
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: 7dcfcee1-998e-41d8-badc-3106055e6ba7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1071'
 ht-degree: 12%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 12%
 
 Les informations d’identification contiennent les informations de clé privée dont vous avez besoin pour signer ou identifier des documents. Un certificat correspond aux informations de clé publique que vous configurez pour l’approbation. AEM Forms utilise des certificats et des informations d’identification à plusieurs fins :
 
-* Les extensions d’Acrobat Reader DC utilisent des informations d’identification pour activer les droits Adobe Reader des documents PDF (Voir [Application de droits d’utilisation aux documents PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
+* Les extensions d’Acrobat Reader DC utilisent des informations d’identification pour activer les droits Adobe Reader des documents PDF (Voir [Application des droits d’utilisation aux documents du PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
 * Le service Signature accède aux certificats et aux informations d’identification lors d’opérations telles que la signature numérique de documents PDF. (Voir [Signature numérique de documents PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 Vous pouvez interagir par programmation avec le service d’informations d’identification à l’aide de l’API Java Trust Manager. Vous pouvez effectuer les tâches suivantes :
@@ -38,9 +38,9 @@ Vous pouvez interagir par programmation avec le service d’informations d’ide
 
 ## Importation des informations d’identification à l’aide de l’API Trust Manager {#importing-credentials-by-using-the-trust-manager-api}
 
-Vous pouvez importer des informations d’identification par programmation dans AEM Forms à l’aide de l’API Trust Manager. Par exemple, vous pouvez importer les informations d’identification utilisées pour signer un document PDF. (Voir [Signature numérique de documents PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
+Vous pouvez importer des informations d’identification par programmation dans AEM Forms à l’aide de l’API Trust Manager. Par exemple, vous pouvez importer des informations d’identification utilisées pour signer un document de PDF. (Voir [Signature numérique de documents PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
 
-Lors de l’importation d’informations d’identification, vous spécifiez un alias pour ces informations. L’alias est utilisé pour effectuer une opération Forms nécessitant des informations d’identification. Une fois les informations d’identification importées, elles peuvent être affichées dans la console d’administration, comme illustré ci-dessous. Notez que l’alias des informations d’identification est *Secure*.
+Lors de l’importation d’informations d’identification, vous spécifiez un alias pour ces informations. L’alias est utilisé pour effectuer une opération Forms nécessitant des informations d’identification. Une fois les informations d’identification importées, elles peuvent être affichées dans la console d’administration, comme illustré ci-dessous. Notez que l’alias des informations d’identification est *Sécurisé*.
 
 ![www_www_truststore](assets/ww_ww_truststore.png)
 
@@ -69,7 +69,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classe
 * adobe-utility.jar (Obligatoire si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclusion de fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Création d’un client de service d’identification**
 
@@ -95,7 +95,7 @@ Après avoir référencé les informations d’identification, importez-les dans
 
 [Suppression d’informations d’identification à l’aide de l’API Trust Manager](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
-### Importer des informations d’identification à l’aide de l’API Java {#import-credentials-using-the-java-api}
+### Importation des informations d’identification à l’aide de l’API Java {#import-credentials-using-the-java-api}
 
 Importez des informations d’identification dans AEM Forms à l’aide de l’API Trust Manager (Java) :
 
@@ -111,17 +111,17 @@ Importez des informations d’identification dans AEM Forms à l’aide de l’A
 1. Référence des informations d’identification
 
    * Créez un objet `java.io.FileInputStream` en utilisant son constructeur. Transmettez une valeur string qui spécifie l’emplacement des informations d’identification.
-   * Créez un objet `com.adobe.idp.Document` qui stocke les informations d’identification à l’aide du constructeur `com.adobe.idp.Document`. Transmettez l’objet `java.io.FileInputStream` contenant les informations d’identification au constructeur.
+   * Créez un `com.adobe.idp.Document` qui stocke les informations d’identification à l’aide de l’objet `com.adobe.idp.Document` constructeur. Transmettez la variable `java.io.FileInputStream` contenant les informations d’identification du constructeur.
 
 1. Effectuer l&#39;opération d&#39;import
 
-   * Créez un tableau de chaîne contenant un élément . Attribuez la valeur `truststore.usage.type.sign` à l’élément .
-   * Appelez la méthode `importCredential` de l’objet `CredentialServiceClient` et transmettez les valeurs suivantes :
+   * Créez un tableau de chaîne contenant un élément . Attribuer la valeur `truststore.usage.type.sign` à l’élément .
+   * Appeler la variable `CredentialServiceClient` de `importCredential` et transmettez les valeurs suivantes :
 
       * Une valeur string qui spécifie la valeur alias pour les informations d’identification.
-      * Instance `com.adobe.idp.Document` qui stocke les informations d’identification.
+      * Le `com.adobe.idp.Document` qui stocke les informations d’identification.
       * Une valeur string qui spécifie le mot de passe associé aux informations d’identification.
-      * Tableau de chaînes contenant la valeur d’utilisation. Par exemple, vous pouvez spécifier cette valeur `truststore.usage.type.sign`. Pour importer des informations d’identification d’extension de Reader, spécifiez `truststore.usage.type.lcre`.
+      * Tableau de chaînes contenant la valeur d’utilisation. Par exemple, vous pouvez spécifier cette valeur. `truststore.usage.type.sign`. Pour importer des informations d’identification d’extension de Reader, spécifiez `truststore.usage.type.lcre`.
 
 **Voir également**
 
@@ -133,7 +133,7 @@ Importez des informations d’identification dans AEM Forms à l’aide de l’A
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Suppression des informations d’identification à l’aide de l’API Trust Manager {#deleting-credentials-by-using-the-trust-manager-api}
+## Suppression d’informations d’identification à l’aide de l’API Trust Manager {#deleting-credentials-by-using-the-trust-manager-api}
 
 Vous pouvez supprimer des informations d’identification par programmation à l’aide de l’API Trust Manager. Lors de la suppression d’informations d’identification, vous spécifiez un alias correspondant à ces informations. Une fois supprimées, les informations d’identification ne peuvent pas être utilisées pour effectuer une opération.
 
@@ -159,7 +159,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 * adobe-utility.jar (Obligatoire si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclusion de fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Création d’un client de service d’identification**
 
@@ -194,7 +194,7 @@ Supprimez des informations d’identification d’AEM Forms à l’aide de l’A
 
 1. Exécution de l’opération de suppression
 
-   Appelez la méthode `deleteCredential` de l’objet `CredentialServiceClient` et transmettez une valeur string qui spécifie la valeur d’alias.
+   Appeler la variable `CredentialServiceClient` de `deleteCredential` et transmettez une valeur string qui spécifie la valeur d’alias.
 
 **Voir également**
 

@@ -1,8 +1,8 @@
 ---
 title: Gestion des applications et des tâches Forms dans la boîte de réception AEM
-seo-title: Gestion des applications et des tâches Forms dans la boîte de réception AEM
+seo-title: Manage Forms applications and tasks in AEM Inbox
 description: La boîte de réception AEM vous permet de lancer des processus orientés formulaire via l’envoi d’applications et de tâches de gestion.
-seo-description: La boîte de réception AEM vous permet de lancer des processus orientés formulaire via l’envoi d’applications et de tâches de gestion.
+seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: 5173558a-542a-4130-8bb6-5ac555ecc507
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -11,12 +11,12 @@ discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
 exl-id: 7076807a-40ad-4f3b-beb0-70c1577a8ee7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '920'
 ht-degree: 95%
 
 ---
 
-# Gestion des applications et des tâches Forms dans la boîte de réception AEM {#manage-forms-applications-and-tasks-in-aem-inbox}
+# Gestion des applications et des tâches Forms dans la boîte de réception AEM  {#manage-forms-applications-and-tasks-in-aem-inbox}
 
 L’une des nombreuses façons de lancer ou de déclencher un processus orienté formulaire consiste à utiliser des applications dans la boîte de réception AEM. Vous devez créer une application de processus pour rendre un processus Forms disponible en tant qu’application dans la boîte de réception. Pour plus d’informations sur l’application de processus et d’autres façons de lancer les processus de Forms, voir [Lancement d’un processus orienté formulaire sur OSGi](/help/forms/using/aem-forms-workflow.md#launch).
 
@@ -32,15 +32,15 @@ En résumé, la boîte de réception vous permet de créer une nouvelle applicat
 
 ## Création d’une application {#create-application}
 
-1. Accédez à AEM Boîte de réception à l’adresse `https://[server]:[port]/aem/inbox`.
+1. Accédez à AEM boîte de réception à l’adresse `https://[server]:[port]/aem/inbox`.
 1. Dans l’interface utilisateur de la boîte de réception, appuyez sur **[!UICONTROL Créer > Application]**. La page Sélectionner l’application s’affiche.
-1. Sélectionnez une application, puis appuyez sur **[!UICONTROL Créer]**. Le formulaire adaptatif associé à l’application s’ouvre. Remplissez les formulaires et appuyez sur **[!UICONTROL Submit]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
+1. Sélectionnez une application, puis appuyez sur **[!UICONTROL Créer]**. Le formulaire adaptatif associé à l’application s’ouvre. Remplissez les formulaires et appuyez sur **[!UICONTROL Envoyer]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
 
 ## Gestion des tâches {#manage-tasks}
 
 Lorsqu’un processus Forms est déclenché et que vous êtes une personne désignée ou un membre du groupe de personnes désignées, une tâche s’affiche dans votre boîte de réception. Vous pouvez afficher les détails de la tâche et effectuer les actions disponibles pour la tâche depuis la boîte de réception.
 
-### Demande ou délégation de tâches  {#claim-or-delegate-tasks}
+### Demande ou délégation de tâches {#claim-or-delegate-tasks}
 
 Les tâches affectées à un groupe s’affichent dans la boîte de réception de tous les membres du groupe. Tout membre du groupe peut demander cette tâche ou la déléguer à un autre membre du groupe. Pour ce faire :
 
@@ -100,7 +100,7 @@ La barre d’outils Actions affiche toutes les options disponibles pour la tâch
 
 Lorsque vous agissez sur la tâche, elle se poursuit dans le processus.
 
-### Affichage des tâches terminées  {#view-completed-tasks}
+### Affichage des tâches terminées {#view-completed-tasks}
 
 La boîte de réception AEM affiche uniquement les tâches actives. Les tâches terminées n’apparaissent pas dans la liste. Cependant, vous pouvez utiliser les filtres de la boîte de réception pour filtrer les tâches en fonction de plusieurs paramètres, tels que le type de tâche, l’état, les dates de début et de fin, etc. Pour afficher les tâches terminées :
 
@@ -111,7 +111,7 @@ La boîte de réception AEM affiche uniquement les tâches actives. Les tâches 
 
 1. Appuyez pour sélectionner une tâche et appuyez sur **[!UICONTROL Ouvrir]**.
 
-La tâche s’ouvre pour afficher le document ou le formulaire adaptatif associé à la tâche. Pour le formulaire adaptatif, il affiche le formulaire adaptatif en lecture seule ou son document d’enregistrement PDF tel que configuré dans l’onglet Formulaire/document de l’[étape de processus Affecter une tâche](/help/sites-developing/workflows-step-ref.md).
+La tâche s’ouvre pour afficher le document ou le formulaire adaptatif associé à la tâche. Pour le formulaire adaptatif, il affiche le formulaire adaptatif en lecture seule ou son document d’enregistrement de PDF tel que configuré dans l’onglet Formulaire/document de la [Étape de processus Assign Task](/help/sites-developing/workflows-step-ref.md).
 
 La section de détails de la tâche affiche des informations telles qu’une mesure prise, l’état de la tâche, la date de début et la date de fin.
 

@@ -1,8 +1,8 @@
 ---
 title: Introduction à la personnalisation de l’espace de travail AEM Forms
-seo-title: Introduction à la personnalisation de l’espace de travail AEM Forms
+seo-title: Introduction to Customizing AEM form workspace
 description: Une présentation rapide offrant des informations techniques et conceptuelles pour personnaliser l’espace de travail AEM Forms LiveCycle en vue de la gestion des processus.
-seo-description: Une présentation rapide offrant des informations techniques et conceptuelles pour personnaliser l’espace de travail AEM Forms LiveCycle en vue de la gestion des processus.
+seo-description: A quick introduction, with conceptual and technical information, to customize LiveCycle AEM Forms workspace for process management.
 uuid: 23d19629-b94a-46cc-bb44-9c6088669ec5
 contentOwner: robhagat
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 80a70f5c-dcc4-425f-9971-9e0feec094d6
 exl-id: 4831abe0-7d82-4cdd-8579-9736aa6a94d6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1761'
 ht-degree: 84%
 
 ---
@@ -37,7 +37,7 @@ Vous pouvez modifier l’aspect, la mise en page et la sémantique d’une autre
 
 Les étapes les plus courantes sont décrites dans la section [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md). Pour des exemples spécifiques de ces personnalisations, y compris les étapes détaillées, voir les articles connexes à la fin de cet article.
 
-#### Présentation de la feuille de style  {#understanding-the-style-sheet}
+#### Présentation de la feuille de style {#understanding-the-style-sheet}
 
 Avant de personnaliser l’espace de travail, familiarisez-vous avec la feuille de style par défaut fournie avec AEM Forms sous /libs/ws/css/style.css.
 
@@ -124,7 +124,7 @@ Les étapes de niveau supérieur pour une personnalisation CSS sont les suivante
 
 * Créez un fichier CSS.
 * Ajoutez des éléments de style dans ce fichier CSS. Voir Description des styles CSS pour plus d’informations.
-* Mettez à jour ses références dans `html.jsp`.
+* Mettre à jour ses références dans `html.jsp`.
 
 Pour connaître les étapes exactes pour effectuer ces personnalisations, voir [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md). Le fichier CSS fourni avec l’espace de travail AEM Forms se trouve à l’emplacement /libs/ws/css/. Pour les personnalisations CSS, utilisez la commande [Ship Package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Vous trouverez des exemples spécifiques de personnalisations CSS dans les rubriques d’aide connexes à la fin de cet article.
 
@@ -139,11 +139,11 @@ Les étapes de niveau supérieur pour des personnalisations des images sont les 
 * Ajoutez de nouveaux styles correspondant aux images ajoutées.
 * Etablissez le lien vers le nouveau fichier CSS dans le fichier `html.jsp`.
 
-Pour commencer à personnaliser les images dans l’espace de travail AEM Forms, suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md). Vous trouverez des exemples spécifiques de personnalisations d’images dans les rubriques d’aide connexes à la fin de cet article.
+Pour commencer à personnaliser les images dans l’espace de travail AEM Forms, suivez le [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md). Vous trouverez des exemples spécifiques de personnalisations d’images dans les rubriques d’aide connexes à la fin de cet article.
 
 #### Contrôleur HTML {#html-template}
 
-Les modèles HTML permettent de définir l’aspect et la mise en page de l’interface utilisateur de l’espace de travail. Lors de la mise à jour des contrôleurs HTML par défaut, vous pouvez personnaliser l’interface de l’utilisateur par défaut de la mise en page.
+Les modèles de HTML permettent de définir l’aspect et la mise en page de l’interface utilisateur de l’espace de travail. Lors de la mise à jour des contrôleurs HTML par défaut, vous pouvez personnaliser l’interface de l’utilisateur par défaut de la mise en page.
 
 Les étapes de niveau supérieur pour les personnalisations du contrôleur HTML sont les suivantes :
 
@@ -153,7 +153,7 @@ Les étapes de niveau supérieur pour les personnalisations du contrôleur HTML 
 
 Vous trouverez des exemples spécifiques de ces personnalisations dans les rubriques d’aide fournies à la fin de cet article. Choisissez entre [Exécution de la commande Ship](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) ou [Exécution de la commande Dev](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), selon le modèle à personnaliser.
 
-### Modifications sémantiques  {#semantic-changes}
+### Modifications sémantiques {#semantic-changes}
 
 Pour modifier la fonctionnalité de l’espace de travail AEM Forms, modifiez le code source JavaScript. Les modifications dans les principales fonctionnalités ne sont pas libellées comme modifications sémantiques. Vous modifiez des modèles, des vues et des contrôleurs fournis en tant que partie intégrante du code source de l’espace de travail AEM Forms.
 
@@ -176,14 +176,14 @@ Pour plus d’informations conceptuelles, voir [Description des composants réut
 
 ### Paquet SDK {#sdk-package}
 
-Le paquet contient le code source de l’espace de travail AEM Forms. Le package est disponible à l’adresse `[*LC root*]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
+Le paquet contient le code source de l’espace de travail AEM Forms. Le module est disponible à l’adresse `[*LC root*]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
 
 Il est essentiellement destiné aux personnalisations, car il permet de générer les éléments suivants :
 
 * paquets CRX pour les profils Ship, Debug et Dev (mentionnés ci-dessous dans [Paquets CRX](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
 * Version minifiée de code personnalisé (pour les modifications sémantiques).
 
-#### Contenu du dossier WS  {#ws-content}
+#### Contenu du dossier WS {#ws-content}
 
 * client-pkg :
 
@@ -215,7 +215,7 @@ Il est essentiellement destiné aux personnalisations, car il permet de génére
             * views - contient les vues Backbone de tous les composants dans l’espace de travail AEM Forms.
          * main.js
          * router.js
-      * libs/ws : pdf.html et pluginPing.pdf sont utilisés pour le chargement de PDF forms dans l’espace de travail AEM Forms et WSNextAdapter.swf est utilisé pour charger des formulaires SWF et des guides dans l’espace de travail AEM Forms.
+      * libs/ws : pdf.html et pluginPing.pdf sont utilisés pour le chargement de PDF forms dans l’espace de travail AEM Forms et WSNextAdapter.swf est utilisé pour charger des formulaires et des guides SWF dans l’espace de travail AEM Forms.
       * locales :
 
          * de-DE : contient translation.json pour l’allemand.
@@ -229,7 +229,7 @@ Il est essentiellement destiné aux personnalisations, car il permet de génére
 
 
 
-### Package CRX  {#crx-package}
+### Package CRX {#crx-package}
 
 Le paquet CRX peut être déployé sur le référentiel CRX™. Elle est disponible à l’adresse `[*LC root*]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
 
@@ -241,7 +241,7 @@ Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 | Profil Debug | Ce profil crée un paquet CRX modérément efficace. La taille du paquet est légèrement supérieure à celle du paquet créé à l’aide du profil Ship. Ce paquet a la plupart des fichiers JavaScript combinés dans un seul fichier JS. | Utilisez ce profil pour le débogage. |
 | Profil Dev | Ce profil crée un paquet CRX de la plus grande taille possible. Tous les fichiers JavaScript sont disponibles séparément, car ils sont dans le paquet SDK. | Utilisez ce profil lors de l’incorporation de modifications sémantiques. |
 
-#### Profil Ship  {#ship-profile}
+#### Profil Ship {#ship-profile}
 
 #### Commande {#command}
 
@@ -337,7 +337,7 @@ Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 
 mvn clean -P Dev install sur client-pkg
 
-#### Contenu du dossier WS  {#ws-content-3}
+#### Contenu du dossier WS {#ws-content-3}
 
 * css - contient style.css, ie.css et jquery-ui.css.
 * images : contient toutes les images.

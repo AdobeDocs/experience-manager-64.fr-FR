@@ -26,11 +26,11 @@ Ce document répond aux questions suivantes :
 
 ## Pourquoi créer et configurer des pages Éditeur de ressources personnalisées ? {#why-create-and-configure-asset-editor-pages}
 
-La gestion des actifs numériques est utilisée dans un nombre toujours plus grand de scénarios. Lorsque vous passez d’une solution à petite échelle pour un petit groupe d’utilisateurs formés de manière professionnelle (par exemple, des photographes ou des taxonomistes) à des groupes d’utilisateurs plus larges et plus variés (par exemple, des utilisateurs professionnels, des auteurs de gestion de contenu web, des journalistes, etc.), la puissante interface utilisateur de [!DNL Adobe Experience Manager Assets] pour les utilisateurs professionnels peut fournir trop d’informations et les parties prenantes commencent à demander des interfaces utilisateur ou des applications spécifiques pour accéder aux ressources numériques qui les intéressent.
+La gestion des actifs numériques est utilisée dans un nombre toujours plus grand de scénarios. Lorsque vous passez d’une solution à petite échelle pour un petit groupe d’utilisateurs professionnels (par exemple, des photographes ou des taxonomistes) à des groupes d’utilisateurs plus larges et plus variés (par exemple, des utilisateurs professionnels, des auteurs de gestion de contenu web, des journalistes, etc.), la puissante interface utilisateur de [!DNL Adobe Experience Manager Assets] pour les utilisateurs professionnels peuvent fournir trop d’informations et les parties prenantes commencent à demander des interfaces utilisateur ou des applications spécifiques pour accéder aux ressources numériques qui les intéressent.
 
 Ces applications axées sur les ressources peuvent être de simples galeries de photos dans un intranet où les employés peuvent charger des photos de visite d’un salon ou d’un centre de presse sur un site web public, tel que l’exemple fourni avec Geometrixx. Les applications axées sur les ressources peuvent également s’étendre à des solutions complètes, y compris les paniers, le passage en caisse et les processus de vérification.
 
-La création d’une application axée sur les ressources devient, dans une large mesure, un processus de configuration ne nécessitant pas de codage, mais uniquement la connaissance des groupes d’utilisateurs et de leurs besoins ainsi que des métadonnées utilisées. Les applications axées sur les ressources créées avec [!DNL Assets] sont extensibles : avec un effort de codage modéré, il est possible de créer des composants réutilisables pour la recherche, l’affichage et la modification des ressources.
+La création d’une application axée sur les ressources devient, dans une large mesure, un processus de configuration ne nécessitant pas de codage, mais uniquement la connaissance des groupes d’utilisateurs et de leurs besoins ainsi que des métadonnées utilisées. Applications centrées sur les ressources créées avec [!DNL Assets] sont extensibles : avec un effort de codage modéré, il est possible de créer des composants réutilisables pour la recherche, l’affichage et la modification des ressources.
 
 Une application axée sur les ressources dans [!DNL Experience Manager] se compose d’une page Éditeur de ressources, qui peut être utilisée pour obtenir une vue détaillée d’une ressource spécifique. Une page Éditeur de ressources permet également de modifier les métadonnées, à condition que l’utilisateur accédant à la ressource dispose des autorisations nécessaires.
 
@@ -57,7 +57,7 @@ Pour créer une page Partage de ressources dans la console **Sites web**, procé
 
 1. Dans l’onglet **[!UICONTROL Sites web]**, accédez à l’emplacement où vous souhaitez créer une page Partage de ressources et cliquez sur **[!UICONTROL Nouveau]**.
 
-1. Sélectionnez la page **[!UICONTROL Partage de ressources]** et cliquez sur **[!UICONTROL Créer]**. La nouvelle page est créée et la page Partage de ressources est répertoriée dans l’onglet **[!UICONTROL Sites web]**.
+1. Sélectionnez la **[!UICONTROL Partage de ressources]** page et clic **[!UICONTROL Créer]**. La nouvelle page est créée et la page Partage de ressources est répertoriée dans l’onglet **[!UICONTROL Sites web]**.
 
 ![dam8](assets/dam8.png)
 
@@ -65,7 +65,7 @@ La page de base créée à l’aide du modèle Partage de ressources de gestion 
 
 ![screen_shot_2012-04-18at115456am](assets/screen_shot_2012-04-18at115456am.png)
 
-Pour personnaliser la page Partage de ressources, utilisez les éléments du sidekick. Vous pouvez également modifier les propriétés du créateur de requêtes. La page **[!UICONTROL Geometrixx Press Center]** est une version personnalisée d’une page basée sur ce modèle :
+Pour personnaliser la page Partage de ressources, utilisez les éléments du sidekick. Vous pouvez également modifier les propriétés du créateur de requêtes. La page **[!UICONTROL Centre de presse Geometrixx]** est une version personnalisée d’une page basée sur ce modèle :
 
 ![screen_shot_2012-04-19at123048pm](assets/screen_shot_2012-04-19at123048pm.png)
 
@@ -97,10 +97,10 @@ Pour ajouter des actions à la page Partage de ressources :
 |---|---|
 | [!UICONTROL Supprimer l’action] | Les utilisateurs peuvent supprimer les ressources sélectionnées. |
 | [!UICONTROL Télécharger l’action] | Permet aux utilisateurs de télécharger les ressources sélectionnées sur leurs ordinateurs. |
-| [!UICONTROL Action Lightbox] | Enregistre les ressources dans une &quot;Lightbox&quot;   où vous pouvez effectuer d’autres actions sur ces éléments. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. Elle peut également être utilisée comme panier pour les ressources. |
-| [!UICONTROL Déplacer l’action] | Les utilisateurs peuvent déplacer la ressource vers une autre   location |
+| [!UICONTROL Action Lightbox] | Enregistre les ressources dans une &quot;Lightbox&quot; où vous pouvez effectuer d’autres actions. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. Elle peut également être utilisée comme panier pour les ressources. |
+| [!UICONTROL Déplacer l’action] | Les utilisateurs peuvent déplacer la ressource vers un autre emplacement. |
 | [!UICONTROL Action sur les tags] | Permet aux utilisateurs d’ajouter des balises aux ressources sélectionnées |
-| [!UICONTROL Action Afficher un élément] | Ouvre la ressource dans l’éditeur de ressources pour   manipulation de l’utilisateur. |
+| [!UICONTROL Action Afficher un élément] | Ouvre la ressource dans l’éditeur de ressources à des fins de manipulation par l’utilisateur. |
 
 1. Faites glisser l’action appropriée vers la zone **Actions** de la page. Cette opération crée un bouton utilisé pour effectuer cette action.
 
@@ -151,7 +151,7 @@ Pour personnaliser Query Builder :
 
 1. Saisissez un autre type de nœud, le cas échéant.
 
-1. Dans le champ **[!UICONTROL URL de Query Builder]** , vous pouvez remplacer ou encapsuler le Query Builder et saisir les nouvelles URL de servlet avec le composant Query Builder existant. Dans le champ **[!UICONTROL URL du flux]**, vous pouvez également remplacer l’URL du flux.
+1. Dans le **[!UICONTROL URL de Query Builder]** , vous pouvez remplacer ou renvoyer à la ligne le Query Builder et saisir les nouvelles URL de servlet avec le composant Query Builder existant. Dans le champ **[!UICONTROL URL du flux]**, vous pouvez également remplacer l’URL du flux.
 
    ![screen_shot_2012-04-23at15313pm](assets/screen_shot_2012-04-23at15313pm.png)
 
@@ -212,7 +212,7 @@ La page de base créée à l’aide du modèle Éditeur de ressources de Geometr
 
 ![assetshare5](assets/assetshare5.bmp)
 
-Pour personnaliser votre page Éditeur de ressources, utilisez les éléments du sidekick. La page Éditeur de ressources accessible à partir du **[!UICONTROL Centre de presse de Geometrixx]** est une version personnalisée d’une page basée sur ce modèle :
+Pour personnaliser votre page Éditeur de ressources, utilisez les éléments du sidekick. La page Éditeur de ressources accessible à partir de **[!UICONTROL Centre de presse Geometrixx]** est une version personnalisée d’une page basée sur ce modèle :
 
 ![assetshare6](assets/assetshare6.bmp)
 
@@ -252,7 +252,7 @@ Pour ajouter des composants de l’Éditeur de ressources :
 
    | Composant | Description |
    |---|---|
-   | **[!UICONTROL Champ de texte de ] formulaire de métadonnées  [!UICONTROL et de métadonnées]** | Permet d’ajouter des métadonnées supplémentaires à une ressource et d’effectuer une action, telle que l’envoi, sur cette ressource. |
+   | **[!UICONTROL Formulaire de métadonnées] et [!UICONTROL Champ de texte de métadonnées]** | Permet d’ajouter des métadonnées supplémentaires à une ressource et d’effectuer une action, telle que l’envoi, sur cette ressource. |
    | **[!UICONTROL Sous-ressources]** | Permet de personnaliser les sous-ressources. |
    | **Balises** | Permet aux utilisateurs de sélectionner et d’ajouter des balises à une ressource. |
    | **[!UICONTROL Miniature]** | Affiche une miniature de la ressource, son nom de fichier et vous permet d’ajouter un texte de remplacement. Vous pouvez également ajouter des actions de l’Éditeur de ressources dans ce composant. |
@@ -379,12 +379,12 @@ Pour ajouter des actions à la page Éditeur de ressources :
 
    | Action | Description |
    |---|---|
-   | [!UICONTROL Télécharger] | Permet aux utilisateurs de télécharger les   à leurs ordinateurs. |
-   | [!UICONTROL Editeurs] | Permet aux utilisateurs de modifier une image.   (modification interactive) |
-   | [!UICONTROL Lightbox] | Enregistre les ressources dans une   &quot;Lightbox&quot; où vous pouvez effectuer d’autres actions sur ces périphériques. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. |
+   | [!UICONTROL Télécharger] | Permet aux utilisateurs de télécharger les ressources sélectionnées sur leurs ordinateurs. |
+   | [!UICONTROL Editeurs] | Permet aux utilisateurs de modifier une image (édition interactive) |
+   | [!UICONTROL Lightbox] | Enregistre les ressources dans une &quot;Lightbox&quot; où vous pouvez effectuer d’autres actions. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. |
    | [!UICONTROL Verrouillage] | Permet aux utilisateurs de verrouiller une ressource. Cette fonctionnalité n’est pas activée par défaut et doit être activée dans la liste des composants. |
-   | [!UICONTROL Références] | Cliquez sur ceci pour afficher sur quelles pages   la ressource est utilisée. |
-   | [!UICONTROL Contrôle de version] | Permet de créer et restaurer   versions d’une ressource. |
+   | [!UICONTROL Références] | Cliquez sur cette option pour afficher les pages sur lesquelles la ressource est utilisée. |
+   | [!UICONTROL Contrôle de version] | Permet de créer et de restaurer des versions d’une ressource. |
 
 1. Faites glisser l’action appropriée vers la zone **Actions** de la page. Cette opération crée un bouton utilisé pour effectuer cette action.
 
@@ -392,20 +392,20 @@ Pour ajouter des actions à la page Éditeur de ressources :
 
 ## Modification de plusieurs ressources à l’aide de la page Éditeur de ressources {#multi-editing-assets-with-the-asset-editor-page}
 
-Avec [!DNL Assets], vous pouvez apporter des modifications à plusieurs ressources à la fois. Après avoir sélectionné les ressources, vous pouvez simultanément modifier leurs :
+Avec [!DNL Assets] vous pouvez apporter des modifications à plusieurs ressources à la fois. Après avoir sélectionné les ressources, vous pouvez simultanément modifier leurs :
 
 * Balises
 * Métadonnées
 
 Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeur de ressources :
 
-1. Ouvrez la page **[!UICONTROL Centre de presse]** du Geometrixx à l’adresse `http://localhost:4502/content/geometrixx/en/company/press.html`.
+1. Ouvrir le Geometrixx **[!UICONTROL Centre de presse]** page à `http://localhost:4502/content/geometrixx/en/company/press.html`.
 1. Sélectionnez les ressources :
 
    * sous Windows : `Ctrl + click` chaque ressource.
-   * sous Mac : `Cmd + click` chaque ressource.
+   * sur Mac : `Cmd + click` chaque ressource.
 
-   Pour sélectionner une plage de ressources : cliquez sur la première ressource, puis sur `Shift + click` la dernière ressource.
+   Pour sélectionner une plage de ressources : cliquez sur la première ressource, puis `Shift + click` la dernière ressource.
 
 1. Cliquez sur **[!UICONTROL Éditer les métadonnées]** dans le champ **Actions** (partie gauche de la page).
 
@@ -424,8 +424,8 @@ Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeu
    Vous pouvez :
 
    * cliquer sur l’icône `x` pour supprimer la balise de toutes les ressources ;
-   * Cliquez sur l’icône `+` pour ajouter la balise à toutes les ressources.
-   * Cliquez sur `arrow` et sélectionnez une balise pour ajouter une nouvelle balise à toutes les ressources.
+   * Cliquez sur le bouton `+` pour ajouter la balise à toutes les ressources.
+   * Cliquez sur le bouton `arrow` et sélectionnez une balise pour ajouter une nouvelle balise à toutes les ressources.
 
    Cliquez sur **[!UICONTROL OK]** pour enregistrer les modifications apportées au formulaire. La case en regard du champ **Balises** est automatiquement activée.
 

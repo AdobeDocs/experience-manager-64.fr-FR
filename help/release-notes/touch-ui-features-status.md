@@ -1,8 +1,8 @@
 ---
 title: État des fonctionnalités de l’IU tactile
-seo-title: État des fonctionnalités de l’IU tactile
+seo-title: Touch UI Feature Status
 description: Notes de mise à jour spécifiques à l’IU tactile d’Adobe Experience Manager 6.3.
-seo-description: Notes de mise à jour spécifiques à l’IU tactile d’Adobe Experience Manager 6.3.
+seo-description: Release notes specific to Adobe Experience Manager 6.3 Touch UI.
 uuid: dc335334-6c50-4cee-8a2e-183958742686
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,8 +12,8 @@ discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
 exl-id: e1422581-143b-4fce-976e-e5aa3360e2d0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 65%
+source-wordcount: '1060'
+ht-degree: 64%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 65%
 
 >[!CAUTION]
 >
->Avec la version 6.4 d’AEM, l’[interface utilisateur classique est obsolète](/help/release-notes/deprecated-removed-features.md). Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont encouragés à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
+>Avec la version 6.4 d’AEM, la variable [L’interface utilisateur classique est obsolète.](/help/release-notes/deprecated-removed-features.md). Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont encouragés à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
 
 Depuis la version 6.0, AEM est doté d’une nouvelle interface appelée IU optimisée pour les écrans tactiles (ou IU tactile) qui est cohérente avec Adobe Marketing Cloud et les instructions générales concernant les interfaces utilisateur Adobe. Avec la mise en œuvre quasi totale de la parité des fonctionnalités, cette interface est devenue l’interface utilisateur standard d’AEM. L’ancienne interface orientée bureau est dénommée « IU classique ».
 
@@ -29,7 +29,7 @@ Bien que la plupart des fonctionnalités soient déjà présentes dans l’inter
 
 La liste suivante présente l’état actuel des fonctionnalités mises en oeuvre dans AEM 6.4.
 
-Pour plus d’informations sur les recommandations destinées aux clients qui effectuent une mise à niveau vers AEM 6.4, voir [Recommendations d’interface utilisateur pour les clients](/help/sites-deploying/ui-recommendations.md) .
+Pour des recommandations destinées aux clients qui effectuent une mise à niveau vers AEM 6.4, reportez-vous à la section [Recommendations de l’interface utilisateur pour les clients](/help/sites-deploying/ui-recommendations.md) pour plus d’informations.
 
 >[!NOTE]
 >
@@ -44,14 +44,14 @@ Pour plus d’informations sur les recommandations destinées aux clients qui ef
 ## Légende {#legend}
 
 * **Complète :** la fonctionnalité est entièrement disponible dans l’IU optimisée pour les écrans tactiles.
-* **Principalement** : Cette fonctionnalité est principalement disponible dans l’IU tactile.
+* **Principalement**: Cette fonctionnalité est principalement disponible dans l’IU tactile.
 * **Absente :** la fonctionnalité n’est pas disponible dans l’IU optimisée pour les écrans tactiles. L’IU classique doit être utilisée pour exécuter cette action.
 * **Remplacée :** la fonctionnalité a été remplacée par une nouvelle implémentation qui fonctionne différemment.
 * **Supprimée :** la fonctionnalité n’existe plus dans l’IU optimisée pour les écrans tactiles et elle ne sera pas remplacée.
 
 ## État des fonctionnalités : Administration de sites {#feature-status-sites-admin}
 
-Il s’agit d’une liste des fonctionnalités de l’administrateur de site de l’IU classique ( `/siteadmin`) et de l’état de l’IU tactile ( `/sites.html`).
+Il s’agit d’une liste des fonctionnalités de l’interface utilisateur classique de l’administrateur de site ( `/siteadmin`) a et l’état dans l’interface utilisateur tactile ( `/sites.html`).
 
 <table> 
  <tbody>
@@ -220,7 +220,7 @@ Il s’agit d’une liste des fonctionnalités de l’administrateur de site de 
 
 ## État des fonctionnalités : éditeur de page {#feature-status-page-editor}
 
-Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU classique ( `/cf#`) et de l’état dans l’IU optimisée pour les écrans tactiles ( `/editor.html`).
+Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU classique ( `/cf#`) a et l’état dans la fonction tactile ( `/editor.html`).
 
 <table> 
  <tbody>
@@ -317,7 +317,7 @@ Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU
   <tr>
    <td>Présentation des packages de processus</td> 
    <td>Principalement</td> 
-   <td>Complètement accessible dans l’interface utilisateur tactile. Plusieurs payload de workflow sont toujours présentées dans l’IU classique.<br /> </td> 
+   <td>Complètement accessible dans l’interface utilisateur tactile. Plusieurs payload de workflow sont toujours présentés dans l’IU classique.<br /> </td> 
   </tr>
   <tr>
    <td>Verrouiller/déverrouiller la page</td> 
@@ -426,7 +426,7 @@ Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU
   </tr>
   <tr>
    <td>Avec la création automatique de composants, faites glisser le contenu directement dans l’espace réservé parsys<br /> </td> 
-   <td>Complète</td> 
+   <td>Terminé</td> 
    <td> </td> 
   </tr>
  </tbody>
@@ -451,7 +451,7 @@ Il s’agit d’une liste des fonctionnalités de l’IU classique Texte, Tablea
   <tr>
    <td>Activation/désactivation des modules externes de l’éditeur de texte enrichi</td> 
    <td>Terminé<br /> </td> 
-   <td>Vous pouvez utiliser l’<a href="/help/sites-authoring/templates.md">éditeur de modèles</a>.</td> 
+   <td>Cette opération peut être effectuée à l’aide de la méthode <a href="/help/sites-authoring/templates.md">Éditeur de modèles</a>.</td> 
   </tr>
   <tr>
    <td>Utilisation de l’éditeur de texte enrichi pour le texte brut</td> 
@@ -514,7 +514,7 @@ Il s’agit d’une liste des fonctionnalités de l’IU classique Texte, Tablea
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Éditeur de source (Modifier HTML)<br /> </td> 
+   <td>Module externe de l’éditeur de texte enrichi : Éditeur de source (Modifier le HTML)<br /> </td> 
    <td>Terminé<br /> </td> 
    <td>Disponible uniquement dans la boîte de dialogue et en plein écran.<br /> </td> 
   </tr>
@@ -544,7 +544,7 @@ Il s’agit d’une liste des fonctionnalités de l’IU classique Texte, Tablea
    <td>Utilisable sur place, dans une boîte de dialogue et en plein écran.<br /> </td> 
   </tr>
   <tr>
-   <td>Faire glisser et déposer l’image dans la cellule de tableau<br /> </td> 
+   <td>Glisser-déposer une image dans une cellule de tableau<br /> </td> 
    <td>Terminé</td> 
    <td>Utilisable en ligne</td> 
   </tr>
@@ -556,7 +556,7 @@ Il s’agit d’une liste des fonctionnalités de l’IU classique Texte, Tablea
   <tr>
    <td>Activation/désactivation des modules externes IPE</td> 
    <td>Terminé</td> 
-   <td>Il existe désormais une interface utilisateur dans l’<a href="/help/sites-authoring/templates.md">éditeur de modèles</a>.</td> 
+   <td>Il existe désormais une interface utilisateur dans <a href="/help/sites-authoring/templates.md">Éditeur de modèles</a>.</td> 
   </tr>
   <tr>
    <td>Module externe IPE : Recadrer</td> 
@@ -605,7 +605,7 @@ La liste ci-dessous répertorie divers outils proposés dans l’IU classique et
   <tr>
    <td>Gestion des tâches</td> 
    <td>Remplacé</td> 
-   <td>La version 6.0 a introduit <a href="/help/sites-authoring/projects.md">Projets et tâches</a>.<br /> </td> 
+   <td>Introduction de la version 6.0 <a href="/help/sites-authoring/projects.md">Projets et tâches</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Boîte de réception des workflows<br /> </td> 
@@ -613,7 +613,7 @@ La liste ci-dessous répertorie divers outils proposés dans l’IU classique et
    <td> </td> 
   </tr>
   <tr>
-   <td>Configuration du modèle de workflow vers page (<code>/etc/workflow/wcm/templates.html</code>)</td> 
+   <td>Configuration de modèle de workflow vers page (<code>/etc/workflow/wcm/templates.html</code>)</td> 
    <td>Absente<br /> </td> 
    <td>Utiliser l’IU classique.</td> 
   </tr>
@@ -639,8 +639,8 @@ La liste ci-dessous répertorie divers outils proposés dans l’IU classique et
   </tr>
   <tr>
    <td>Interface utilisateur des utilisateurs, groupes et autorisations<br /> </td> 
-   <td>Principalement Complète<br /> </td> 
-   <td>Pour la modification avancée des autorisations, utilisez l’interface utilisateur classique.<br /> </td> 
+   <td>Principalement terminé<br /> </td> 
+   <td>Pour la modification avancée d’autorisations, utilisez l’interface utilisateur classique.<br /> </td> 
   </tr>
   <tr>
    <td>Purge des versions (<code>/etc/versioning/purge.html</code>)</td> 

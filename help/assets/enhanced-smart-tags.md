@@ -32,7 +32,7 @@ Une fois une balise entraînée et prête, le service peut appliquer ces balises
 
 En arrière-plan, le service de contenu dynamique utilise la structure d’intelligence artificielle d’Adobe Sensei pour entraîner son algorithme de reconnaissance d’image sur votre structure de balises et votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
-Le service de contenu dynamique est un service cloud hébergé sur [!DNL Adobe I/O]. Pour l’utiliser dans Adobe Experience Manager, l’administrateur système doit intégrer votre instance [!DNL Experience Manager] à [!DNL Adobe I/O].
+Le service de contenu dynamique est un service cloud hébergé sur [!DNL Adobe I/O]. Pour l’utiliser dans Adobe Experience Manager, l’administrateur système doit intégrer votre [!DNL Experience Manager] instance avec [!DNL Adobe I/O].
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
@@ -52,9 +52,9 @@ Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respe
 
 ## Intégration  {#onboarding}
 
-Le service de contenu dynamique est disponible à l’achat sous la forme d’un module complémentaire de [!DNL Experience Manager] . Une fois l’achat effectué, un courrier électronique est envoyé à l’administrateur de votre entreprise avec un lien vers [!DNL Adobe I/O].
+Le service de contenu dynamique est disponible à l’achat sous la forme d’un module complémentaire pour [!DNL Experience Manager] . Une fois l’achat effectué, un courrier électronique est envoyé à l’administrateur de votre entreprise avec un lien vers [!DNL Adobe I/O].
 
-L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à [!DNL Experience Manager] . Pour intégrer le service à [!DNL Experience Manager] Assets, voir [Configuration des balises intelligentes](config-smart-tagging.md).
+L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à [!DNL Experience Manager] . Pour intégrer le service à [!DNL Experience Manager] Ressources, voir [Configuration des balises intelligentes](config-smart-tagging.md).
 
 Le processus d’intégration est terminé lorsque l’administrateur configure le service et ajoute des utilisateurs dans [!DNL Experience Manager] .
 
@@ -69,7 +69,7 @@ Ajoutez les ressources à un dossier, puis appliquez les balises à chaque resso
 >[!NOTE]
 >
 >1. L’entraînement est un processus irrévocable. Adobe recommande de bien passer en revue les balises dans la série de ressources sélectionnée bien avant d’entraîner le service de contenu dynamique sur les balises.
->1. Lisez les [instructions d’entraînement du service de contenu dynamique](smart-tags-training-guidelines.md) avant de commencer l’entraînement pour n’importe quelle balise.
+>1. Veuillez lire [Instructions de formation du service de contenu dynamique](smart-tags-training-guidelines.md) avant de commencer l’entraînement pour n’importe quelle balise.
 >1. Lorsque vous entraînez le service de contenu dynamique pour la première fois, Adobe recommande de réaliser l’entraînement sur au moins deux balises distinctes.
 
 >
@@ -89,17 +89,17 @@ Vous pouvez entraîner le service de contenu dynamique périodiquement ou en fon
 
 ### Entraînement périodique {#periodic-training}
 
-Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne périodiquement sur les ressources et les balises associées au sein d’un dossier. Ouvrez la page des propriétés de votre dossier de ressources, sélectionnez **[!UICONTROL Activer les balises intelligentes]** sous l’onglet **[!UICONTROL Détails]**, puis enregistrez les modifications.
+Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne périodiquement sur les ressources et les balises associées au sein d’un dossier. Ouvrez la page des propriétés de votre dossier de ressources, puis sélectionnez **[!UICONTROL Activation des balises intelligentes]** sous le **[!UICONTROL Détails]** et enregistrez les modifications.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Une fois cette option sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un workflow d’entraînement afin d’entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
+Une fois cette option sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un workflow d’entraînement pour entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
 
 ### Entraînement à la demande {#on-demand-training}
 
 Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est nécessaire à partir de la console Processus.
 
-1. Appuyez/cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils > Processus > Modèles]**.
+1. Appuyez/cliquez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Processus > Modèles]**.
 1. Dans la page **[!UICONTROL Modèles de processus]**, sélectionnez le processus **[!UICONTROL Entraînement des balises dynamiques]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
 1. Dans la boîte de dialogue **[!UICONTROL Exécuter le processus]**, localisez le dossier de charge utile qui comprend les ressources balisées pour entraîner le service.
 1. Indiquez le titre du workflow et ajoutez un commentaire. Ensuite, appuyez/cliquez sur **[!UICONTROL Exécuter]**. Les ressources et les balises sont soumises à l’entraînement.
@@ -114,7 +114,7 @@ Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est 
 
 Pour vérifier que le service de contenu dynamique est entraîné sur vos balises dans la série de ressources d’entraînement, examinez le rapport de workflow d’entraînement dans la console Rapports.
 
-1. Appuyez/cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils > Ressources > Rapports]**.
+1. Appuyez/cliquez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Ressources > Rapports]**.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, appuyez/cliquez sur **[!UICONTROL Créer]**.
 1. Sélectionnez le rapport **[!UICONTROL Entraînement des balises intelligentes]**, puis appuyez/cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Ensuite, appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
@@ -139,7 +139,7 @@ Vous pouvez exécuter le workflow de balisage périodiquement ou au besoin.
 
 ### Balisage périodique {#periodic-tagging}
 
-Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Ouvrez la page des propriétés de votre dossier de ressources, sélectionnez **[!UICONTROL Activer les balises intelligentes]** sous l’onglet **[!UICONTROL Détails]**, puis enregistrez les modifications.
+Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Ouvrez la page des propriétés de votre dossier de ressources, puis sélectionnez **[!UICONTROL Activation des balises intelligentes]** sous le **[!UICONTROL Détails]** et enregistrez les modifications.
 
 Une fois cette option sélectionnée pour un dossier, le service de contenu dynamique balise automatiquement les ressources qu’il contient. Par défaut, le workflow de balisage s’exécute tous les jours à 00h00.
 
@@ -156,7 +156,7 @@ Vous pouvez déclencher le workflow de balisage à partir des emplacements suiva
 
 #### Balisage des actifs de la console de processus {#tagging-assets-from-the-workflow-console}
 
-1. Appuyez/cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils > Processus > Modèles]**.
+1. Appuyez/cliquez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Processus > Modèles]**.
 1. Dans la page **[!UICONTROL Modèles de processus]**, sélectionnez le processus **[!UICONTROL Ressources de balises dynamiques DAM]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)

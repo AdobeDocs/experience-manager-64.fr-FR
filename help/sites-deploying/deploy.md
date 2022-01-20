@@ -1,8 +1,8 @@
 ---
 title: Déploiement et maintenance
-seo-title: Déploiement et maintenance
+seo-title: Deploying and Maintaining
 description: Découvrez comment démarrer l’installation d’AEM.
-seo-description: Découvrez comment démarrer l’installation d’AEM.
+seo-description: Learn how to get started with the AEM installation.
 uuid: 552a41a1-a8b3-4c5a-bfb3-718bcb612752
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 exl-id: 9a779cde-dfdf-4d70-a452-5e7d12bf3f28
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1823'
 ht-degree: 78%
 
 ---
@@ -57,17 +57,17 @@ Une fois que vous serez familiarisé avec ces principes fondamentaux, vous pourr
 * [Introduction à la plateforme AEM](/help/sites-deploying/platform.md)
 * [Instructions de performance](/help/sites-deploying/performance-guidelines.md)
 * [Prise en main d’AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Qu’est-ce qu’AEM Screens ? ](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Qu’est-ce qu’AEM Screens ?](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Concepts de base {#basic-concepts}
 
-### Présentation d’AEM{#what-is-aem}
+### Présentation d’AEM {#what-is-aem}
 
 Adobe Experience Manager est un système client-serveur web qui permet de créer, de gérer et de déployer des sites web commerciaux et des services associés. Cette solution associe dans un seul package intégré plusieurs fonctions de niveau application et de niveau infrastructure.
 
 Au niveau infrastructure, AEM fournit les éléments suivants :
 
-* **Web Application Server** : AEM peut être déployé en mode autonome (il comprend un serveur Web Jetty intégré) ou en tant qu’application Web au sein d’un serveur d’applications tiers (WebLogic, WebSphere, etc.).
+* **Serveur d’applications web**: AEM peut être déployé en mode autonome (il comprend un serveur Web Jetty intégré) ou en tant qu’application Web au sein d’un serveur d’applications tiers (WebLogic, WebSphere, etc.).
 * **Infrastructure d’application web** : AEM intègre l’infrastructure d’application web Sling qui simplifie l’écriture d’applications web REST orientées contenu.
 * **Référentiel de contenu** : AEM comprend un référentiel de contenu Java (JCR). Il s’agit d’un type de base de données hiérarchique destiné aux données semi-structurées et non structurées. Le référentiel stocke le contenu affiché aux utilisateurs et l’ensemble du code, des modèles et des données internes utilisés par l’application.
 
@@ -76,14 +76,14 @@ Sur cette base, AEM propose également plusieurs fonctions de niveau application
 * **Sites web**
 * **Applications mobiles**
 * **Publications numériques**
-* **Forms**
+* **Formulaires**
 * **Ressources numériques**
 * **Communities**
 * **Commerce en ligne**
 
 Enfin, les clients peuvent utiliser ces blocs de construction de niveau application et de niveau infrastructure pour créer des solutions personnalisées en concevant leurs propres applications.
 
-Le serveur AEM est **basé sur Java** et s’exécute sur la plupart des systèmes d’exploitation qui prennent en charge cette plateforme. Toutes les interactions client avec AEM sont effectuées via un **navigateur web**.
+Le serveur AEM est **Basé sur Java** et s’exécute sur la plupart des systèmes d’exploitation qui prennent en charge cette plate-forme. Toutes les interactions client avec AEM sont effectuées au moyen d’une **navigateur web**.
 
 ### Scénarios de déploiement classique {#typical-deployment-scenarios}
 
@@ -110,7 +110,7 @@ Vous pouvez installer AEM sur des serveurs dans votre environnement d’entrepri
 
 Pour en savoir plus sur les déploiements On-Premise classiques, reportez-vous[ aux déploiements recommandés](/help/sites-deploying/recommended-deploys.md).
 
-### Managed Services utilisant Cloud Manager  {#managed-services-using-cloud-manager}
+### Managed Services utilisant Cloud Manager {#managed-services-using-cloud-manager}
 
 AEM Managed Services est une solution complète pour la gestion de l’expérience numérique. Il offre les avantages de la solution de diffusion d’expérience dans le cloud tout en conservant tous les avantages en termes de contrôle, de sécurité et de personnalisation d’un déploiement sur site. AEM Managed Services permet aux clients de se lancer plus rapidement en se déployant sur le cloud et en s’appuyant sur les meilleures pratiques et sur l’assistance technique d’Adobe. Les organisations et les utilisateurs professionnels peuvent engager les clients en un minimum de temps, générer des parts de marché et se concentrer sur la création de campagnes marketing innovantes tout en réduisant les charges informatiques.
 
@@ -126,31 +126,31 @@ Avec AEM Managed Services, les clients peuvent bénéficier des avantages suivan
 
 **Cloud Manager :** composant de l’offre Managed Services d’Adobe Experience Manager, Cloud Manager est un portail en libre-service qui permet aux entreprises de gérer elles-mêmes Adobe Experience Manager dans le cloud. Il inclut un pipeline d’intégration et de distribution continues (CI/CD) qui permet aux équipes informatiques et aux partenaires d’implémentation d’accélérer la livraison de personnalisations ou de mises à jour sans compromettre les performances ou la sécurité. Cloud Manager est uniquement disponible pour les clients d’Adobe Managed Service.
 
-Pour en savoir plus sur Cloud Manager et ses ressources, consultez le [**Guide de l’utilisateur de Cloud Manager**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
+Pour en savoir plus sur Cloud Manager et ses ressources, reportez-vous à la section [**Guide de l’utilisateur de Cloud Manager**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
 
 ## Prise en main {#getting-started}
 
 ### Prérequis {#prerequisites}
 
-Bien que les instances de production soient généralement exécutées sur des machines dédiées exécutant un système d’exploitation officiellement pris en charge (voir [Exigences techniques](/help/sites-deploying/technical-requirements.md)), le serveur de Experience Manager s’exécute sur n’importe quel système prenant en charge [**Java Standard Edition 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+Bien que les instances de production s’exécutent généralement sur des ordinateurs dédiés exécutant un système d’exploitation officiellement pris en charge (voir [Exigences techniques](/help/sites-deploying/technical-requirements.md)), le serveur du Experience Manager s’exécute sur n’importe quel système prenant en charge [**Java Standard Edition 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
 Pour se familiariser avec AEM et développer sur AEM, il est courant d’utiliser une instance installée sur un ordinateur local exécutant Apple OS X ou les versions de bureau de Microsoft Windows ou Linux.
 
-Côté client, AEM fonctionne avec tous les navigateurs modernes (**Microsoft Edge**, **Internet Explorer** 11, **Chrome** 51+ , **Firefox** 47+, **Safari** 8+) sur les onglets les systèmes d’exploitation. Voir [Plateformes clientes prises en charge](/help/sites-deploying/technical-requirements.md#supported-client-platforms) pour plus d’informations.
+Côté client, AEM fonctionne avec tous les navigateurs modernes (**Microsoft Edge**, **Internet Explorer** 11, **Chrome** 51+ , **Firefox** 47+, **Safari** 8+) sur les systèmes d’exploitation de tablette et de bureau. Voir [Plateformes clientes prises en charge](/help/sites-deploying/technical-requirements.md#supported-client-platforms) pour plus d’informations.
 
 ### Obtention du logiciel {#getting-the-software}
 
-Les clients qui ont un contrat de maintenance et d’assistance valide doivent avoir reçu une notification par courrier électronique avec un code et pouvoir télécharger AEM à partir du [**site Web de licences d’Adobe**](https://licensing.adobe.com/). Les partenaires commerciaux peuvent demander l’accès au téléchargement à l’adresse [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
+Les clients qui disposent d’un contrat de maintenance et d’assistance valide doivent avoir reçu une notification par courrier électronique comportant un code et être en mesure de télécharger AEM depuis le [**Adobe Licensing Website**](https://licensing.adobe.com/). Les partenaires commerciaux peuvent demander l’accès au téléchargement auprès de [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
 Le package logiciel AEM est disponible sous deux formes :
 
-* **cq-quickstart-6.4.0.jar :** fichier  ** jarutable autonome qui comprend tous les éléments nécessaires pour démarrer.
+* **cq-quickstart-6.4.0.jar :** Fichier exécutable autonome *jar* qui comprend tous les éléments nécessaires pour démarrer.
 
-* **cq-quickstart-6.4.0.war :**  ** fichier warfile à déployer sur un serveur d’applications tiers.
+* **cq-quickstart-6.4.0.war :** A *guerre* pour un déploiement sur un serveur d’applications tiers.
 
-Dans la section suivante, nous décrivons l’**installation autonome**. Pour plus d’informations sur l’installation d’AEM au sein d’un serveur d’applications, voir [Installation sur un serveur d’applications](/help/sites-deploying/application-server-install.md).
+Dans la section qui suit, nous décrivons le **installation autonome**. Pour plus d’informations sur l’installation d’AEM au sein d’un serveur d’applications, voir [Installation sur un serveur d’applications](/help/sites-deploying/application-server-install.md).
 
-### Installation locale par défaut  {#default-local-install}
+### Installation locale par défaut {#default-local-install}
 
 1. Créez un répertoire d’installation sur votre ordinateur local. Par exemple :
 
@@ -164,7 +164,7 @@ Dans la section suivante, nous décrivons l’**installation autonome**. Pour pl
 
    *Notez que le chemin d’accès au répertoire de fichiers doit comporter uniquement des caractères US-ASCII.*
 
-1. Placez les fichiers **jar** et **license** dans ce répertoire :
+1. Placez le **jar** et **license** fichiers dans ce répertoire :
 
    ```shell
    <aem-install>/
@@ -172,9 +172,9 @@ Dans la section suivante, nous décrivons l’**installation autonome**. Pour pl
        license.properties
    ```
 
-   Si vous ne fournissez pas de fichier `license.properties`, AEM redirigera votre navigateur vers un écran **Bienvenue** au démarrage, où vous pouvez saisir une clé de licence. Si vous ne disposez pas d’une clé de licence valide, vous devez en demander une à Adobe.
+   Si vous ne fournissez pas d’événement `license.properties` , AEM redirigera votre navigateur vers un **Bienvenue** au démarrage, où vous pouvez saisir une clé de licence. Si vous ne disposez pas d’une clé de licence valide, vous devez en demander une à Adobe.
 
-1. Pour démarrer l’instance dans un environnement d’interface utilisateur graphique, double-cliquez sur le fichier **`cq-quickstart-6.4.0.jar`**.
+1. Pour démarrer l’instance dans un environnement d’interface utilisateur graphique, double-cliquez sur l’icône **`cq-quickstart-6.4.0.jar`** fichier .
 
    Vous pouvez également lancer AEM à partir d’une ligne de commande. Pour une machine virtuelle JAVA 32 bits, saisissez la commande suivante :
 
@@ -200,7 +200,7 @@ Pour accéder à l’instance, faites pointer le navigateur sur :
 
 L’instance de création est alors automatiquement configurée pour se connecter à une **instance de publication** sur **`localhost:4503`**.
 
-### Installations des instances de création et de publication {#author-and-publish-installs}
+### Installation des instances de création et de publication {#author-and-publish-installs}
 
 L’installation par défaut (instance de **création** sur **`localhost:4502`**) peut être modifiée en renommant le fichier `jar` avant de le lancer pour la première fois. Le modèle de dénomination est :
 
@@ -263,13 +263,13 @@ Si l’instance a été installée à partir de l’interface utilisateur graphi
 >
 >Si vous utilisez des liens symboliques, consultez la section sur les [problèmes liés aux liens symboliques](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html).
 
-### Starting and Stopping {#starting-and-stopping}
+### Démarrage et arrêt {#starting-and-stopping}
 
 Une fois AEM décompressé et démarré pour la première fois, un double-clic sur le fichier jar dans le répertoire d’installation démarre l’instance. Celle-ci n’est pas réinstallée.
 
 Pour arrêter l’instance dans l’interface utilisateur graphique, cliquez sur le bouton bascule **activé/désactivé** dans la fenêtre de l’application de bureau.
 
-Vous pouvez également arrêter et démarrer AEM à partir d’une ligne de commande. En supposant que vous ayez déjà installé l’instance pour la première fois, les **scripts de ligne de commande** se trouvent ici :
+Vous pouvez également arrêter et démarrer AEM à partir d’une ligne de commande. En supposant que vous ayez déjà installé l’instance pour la première fois, la variable **scripts de ligne de commande** se trouvent ici :
 
 **`<aem-install>/crx-quickstart/bin/`**
 
@@ -292,7 +292,7 @@ AEM démarre et redirige automatiquement le navigateur web vers la page adéquat
 
 Une fois connecté, vous avez accès à AEM. Pour plus d’informations en fonction de votre rôle, reportez-vous aux sections suivantes :
 
-* [Création  ](/help/sites-authoring/home.md)
+* [Création](/help/sites-authoring/home.md)
 * [Administration](/help/sites-administering/home.md)
 * [Développement](/help/sites-developing/home.md)
 * [Gestion](/help/managing/best-practices.md)
@@ -318,4 +318,4 @@ La section ci-dessus doit vous permettre de bien comprendre les principes fondam
 * [Introduction à la plateforme AEM](/help/sites-deploying/platform.md)
 * [Instructions de performance](/help/sites-deploying/performance-guidelines.md)
 * [Prise en main d’AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Qu’est-ce qu’AEM Screens ? ](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Qu’est-ce qu’AEM Screens ?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)

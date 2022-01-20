@@ -1,8 +1,8 @@
 ---
 title: Création d’un écran de connexion
-seo-title: Création d’un écran de connexion
+seo-title: Creating a new login screen
 description: Comment modifier la page de connexion des modules de LiveCycle, par exemple de l’espace de travail AEM Forms ou de Forms Manager.
-seo-description: Comment modifier la page de connexion des modules de LiveCycle, par exemple de l’espace de travail AEM Forms ou de Forms Manager.
+seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
 uuid: c7643f87-4a08-4c63-b87c-f987dbe18ece
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 exl-id: caa4f835-c353-49d5-b18c-4d0538c1136f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '468'
 ht-degree: 62%
 
 ---
@@ -20,33 +20,33 @@ ht-degree: 62%
 
 Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui utilisent l’écran de connexion AEM Forms. Par exemple, les modifications affectent à la fois l’écran de connexion de Forms Manager et de l’espace de travail AEM Forms.
 
-## Condition préalable {#prerequisite}
+## Prérequis {#prerequisite}
 
-1. Connectez-vous à `/lc/crx/de` avec les autorisations d’administrateur.
+1. Connectez-vous à `/lc/crx/de` avec les autorisations Administrateur.
 1. Procédez comme suit :
 
-   1. Répliquez la structure hiérarchique : de `/libs/livecycle/core/content` à `/apps/livecycle/core/content`. Conservez les mêmes propriétés (nœud/dossier) et contrôle d’accès.
-   1. Copiez le dossier de contenu : de `/libs/livecycle/core` à `/apps/livecycle/core`.
-   1. Supprimez le contenu du dossier `/apps/livecycle/core`.
+   1. Répliquez la structure hiérarchique : de `/libs/livecycle/core/content` at `/apps/livecycle/core/content`. Conservez les mêmes propriétés (nœud/dossier) et contrôle d’accès.
+   1. Copiez le dossier de contenu : de `/libs/livecycle/core` to `/apps/livecycle/core`.
+   1. Supprimer le contenu de `/apps/livecycle/core` dossier.
 
 1. Procédez comme suit :
 
-   1. Répliquez la structure hiérarchique : de `/libs/livecycle/core/components/login` à `/apps/livecycle/core/components/login`. Conservez les mêmes propriétés (nœud/dossier) et contrôle d’accès.
-   1. Copiez le dossier de composants : de `/libs/livecycle/core` à `/apps/livecycle/core`.
+   1. Répliquez la structure hiérarchique : de `/libs/livecycle/core/components/login` at `/apps/livecycle/core/components/login`. Conservez les mêmes propriétés (nœud/dossier) et contrôle d’accès.
+   1. Copiez le dossier de composants : de `/libs/livecycle/core` to `/apps/livecycle/core`.
    1. Supprimez le contenu du dossier : `/apps/livecycle/core/components/login`.
 
 ## Ajout d’un nouveau paramètre régional {#adding-a-new-locale}
 
-1. Copiez le dossier `i18n` :
+1. Copiez le `i18n` folder:
 
    * de `/libs/livecycle/core/components/login`
    * vers `/apps/livecycle/core/components/login`
 
-1. Supprimez tous les dossiers à l’intérieur de `i18n` sauf un, par exemple `en`.
+1. Supprimer tous les dossiers à l’intérieur `i18n` sauf un, par exemple `en`.
 1. Sur le dossier `en`, procédez comme suit :
 
    1. Donnez au dossier le nom du paramètre régional que vous souhaitez prendre en charge. Par exemple, `ar`.
-   1. Remplacez la valeur de la propriété `jcr:language` par `ar` (pour le dossier `ar`).
+   1. Modification de la propriété `jcr:language` valeur à `ar`(pour la variable `ar` ).
 
    >[!NOTE]
    >
@@ -57,7 +57,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
    * de `/libs/livecycle/core/components/login`
    * vers `/apps/livecycle/core/components/login`
 
-1. Modifiez le fragment de code suivant pour `/apps/livecycle/core/components/login/login.jsp` :
+1. Modifiez le fragment de code suivant pour `/apps/livecycle/core/components/login/login.jsp`:
 
    ***Le paramètre régional est un code de langue***
 
@@ -179,9 +179,9 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
    for(int i=0; i<locales.length; i++)
    ```
 
-## Ajout de nouveau texte ou modification du texte existant  {#adding-new-text-or-modifying-existing-text}
+## Ajout de nouveau texte ou modification du texte existant {#adding-new-text-or-modifying-existing-text}
 
-1. Copiez le dossier `i18n` :
+1. Copier `i18n` folder:
 
    * de `/libs/livecycle/core/components/login`
    * vers `/apps/livecycle/core/components/login`
@@ -194,7 +194,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
       * de `/libs/livecycle/core/components/login`
       * vers `/apps/livecycle/core/components/login`
-   1. Modifiez `/apps/livecycle/core/components/login/login.jsp` pour incorporer le texte nouvellement ajouté.
+   1. Modifier `/apps/livecycle/core/components/login/login.jsp` pour incorporer le texte nouvellement ajouté.
 
    ![capture](assets/capture.png)
 
@@ -217,12 +217,12 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
 ## Ajout d’un nouveau style ou modification d’un style existant {#adding-new-style-or-modifying-existing-style}
 
-1. Copiez le noeud `login` :
+1. Copier `login` node:
 
    * de `/libs/livecycle/core/content`
    * vers `/apps/livecycle/core/content`
 
-1. Supprimez les fichiers `login.js` et `jquery-1.8.0.min.js` du noeud `/apps/livecycle/core/content/login.`
+1. Suppression de fichiers `login.js` et `jquery-1.8.0.min.js`, à partir du noeud `/apps/livecycle/core/content/login.`
 1. Modifiez les styles définis dans le fichier CSS.
 1. Pour ajouter de nouveaux styles :
 
@@ -231,12 +231,12 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
       * de `/libs/livecycle/core/components/login`
       * vers `/apps/livecycle/core/components/login`
-   1. Modifiez `/apps/livecycle/core/components/login/login.jsp` pour incorporer les styles nouvellement ajoutés.
+   1. Modifier `/apps/livecycle/core/components/login/login.jsp` pour incorporer les styles nouvellement ajoutés.
 
 
 1. Par exemple :
 
-   * Ajoutez ce qui suit à `/apps/livecycle/core/content/login/login.css`.
+   * Ajoutez le code suivant à `/apps/livecycle/core/content/login/login.css`.
 
    ```css
    .newLoginContentArea {
@@ -257,22 +257,22 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
 >[!NOTE]
 >
->Si les images existantes dans `/apps/livecycle/core/content/login` (copiées à partir de `/libs/livecycle/core/content/login`) sont supprimées, supprimez les références correspondantes dans CSS.
+>Si les images existantes dans `/apps/livecycle/core/content/login` (copié depuis `/libs/livecycle/core/content/login`) sont supprimés, puis supprimez les références correspondantes dans CSS.
 
 ## Ajoutez de nouvelles images {#add-new-images}
 
 1. Suivez les étapes de la section Ajout d’un nouveau style ou modification d’un style existant (décrites ci-dessus).
-1. Ajoutez de nouvelles images dans `/apps/livecycle/core/content/login`. Pour ajouter une image :
+1. Ajouter de nouvelles images dans `/apps/livecycle/core/content/login`. Pour ajouter une image :
 
    1. Installez le client WebDAV.
-   1. Accédez au dossier `/apps/livecycle/core/content/login` à l’aide du client webDAV. Pour plus d’informations, voir : [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. Accédez à `/apps/livecycle/core/content/login` à l’aide du client webDAV. Pour plus d’informations, voir : [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
    1. Ajoutez de nouvelles images.
 
-1. Ajoutez de nouveaux styles dans `/apps/livecycle/core/content/login/login.css,` correspondant aux nouvelles images ajoutées dans `/apps/livecycle/core/content/login`.
-1. Utilisez les nouveaux styles dans `login.jsp` à l’adresse `/apps/livecycle/core/components`.
+1. Ajout de styles dans `/apps/livecycle/core/content/login/login.css,` correspondant aux nouvelles images ajoutées dans `/apps/livecycle/core/content/login`.
+1. Utilisation des nouveaux styles dans `login.jsp` at `/apps/livecycle/core/components`.
 1. Par exemple :
 
-   * Ajoutez ce qui suit à `/apps/livecycle/core/content/login/login.css`
+   * Ajoutez le code suivant à `/apps/livecycle/core/content/login/login.css`
 
    ```css
    .newLoginContainerBkg {

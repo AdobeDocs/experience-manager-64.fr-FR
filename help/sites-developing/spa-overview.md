@@ -1,8 +1,8 @@
 ---
 title: Présentation de l’éditeur de SPA
-seo-title: Présentation de l’éditeur de SPA
+seo-title: SPA Editor Overview
 description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
-seo-description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
+seo-description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
 uuid: 600f1100-5cfa-4b75-a58c-f773395b5e05
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 exl-id: 5145b6ab-588a-458f-946f-b730ae319f61
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 90%
+source-wordcount: '1675'
+ht-degree: 89%
 
 ---
 
@@ -25,7 +25,7 @@ L’éditeur de SPA constitue une solution complète pour la prise en charge des
 
 >[!NOTE]
 >
->La fonction Éditeur d’application sur une seule page (SPA) requiert [AEM Service Pack 2](/help/release-notes/sp-release-notes.md) ou une version plus récente.
+>La fonction Éditeur d’application sur une seule page (SPA) nécessite [AEM 6.4 Service Pack 2](/help/release-notes/sp-release-notes.md) ou plus récent.
 >
 >L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
@@ -105,7 +105,6 @@ En gardant à l’esprit les éléments clés de l’éditeur de SPA, le workflo
 >* En cours de production (publication), l’éditeur de SPA n’est jamais chargé.
 
 >
-
 
 
 ### Workflow d’édition de pages client-serveur {#client-server-page-editing-workflow}
@@ -188,7 +187,7 @@ Il s’agit d’un aperçu plus détaillé axé sur l’expérience de création
 
 ## Conditions requises et restrictions {#requirements-limitations}
 
-Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application sur une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Consultez le document [Prise en main de SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) pour obtenir le minimum de connaissances nécessaires pour que le vôtre soit en cours d’exécution.
+Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application sur une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Veuillez consulter la [Prise en main de SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) document pour obtenir le minimum de connaissances nécessaires pour que le vôtre soit en cours d’exécution.
 
 ### Frameworks pris en charge {#supported-frameworks}
 
@@ -211,10 +210,10 @@ Il est possible de définir et personnaliser d’autres sélecteurs dans le cadr
 
 Si vous souhaitez utiliser l’éditeur statique d’un composant de texte créé dans une SPA, une configuration supplémentaire est nécessaire.
 
-1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas de l’exemple de contenu WKND Journal, il s’agit d’un élément `<div>` et le sélecteur utilisé est `data-rte-editelement`.
+1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas de l’exemple de contenu du journal WKND, il s’agit d’un `<div>` et le sélecteur qui a été utilisé est `data-rte-editelement`.
 1. Définissez la propriété `editElementQuery` sur la configuration `cq:InplaceEditingConfig` du composant de texte AEM correspondant qui pointe vers ce sélecteur, par exemple `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.
 
-Pour obtenir un exemple de la façon dont cela est fait, consultez l’ [exemple de contenu du journal WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+Pour obtenir un exemple de la façon dont cela est fait, reportez-vous à la section [Exemple de contenu du journal WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
 Pour plus d’informations sur la propriété `editElementQuery` et la configuration de l’éditeur de texte enrichi, voir [Configuration de l’éditeur de texte enrichi.](/help/sites-administering/rich-text-editor.md)
 

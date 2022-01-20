@@ -1,8 +1,8 @@
 ---
 title: Début et arrêt d’AEM à partir de la ligne de commande
-seo-title: Début et arrêt d’AEM à partir de la ligne de commande
+seo-title: Command Line Start and Stop
 description: Découvrez comment démarrer et arrêter AEM à partir de la ligne de commande.
-seo-description: Découvrez comment démarrer et arrêter AEM à partir de la ligne de commande.
+seo-description: Learn how to start and stop AEM from the command line.
 uuid: 585f071c-2286-4a2c-af07-404bf298cba8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 exl-id: 9d2682c2-6360-402e-a020-0021f5051a2d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 93%
+source-wordcount: '366'
+ht-degree: 92%
 
 ---
 
@@ -119,8 +119,8 @@ Si vous souhaitez uniquement préconfigurer le référentiel (sans le déplacer)
 
 * extraire `repository.xml` à l’emplacement requis ;
 
-* mettre à jour `repository.xml` selon les besoins
+* update `repository.xml` selon les besoins
 
-* créer `bootstrap.properties` et définir `repository.config`
+* create `bootstrap.properties` et définir `repository.config`
 
 Vous devez effectuer ces opérations avant de démarrer l’installation actuelle.

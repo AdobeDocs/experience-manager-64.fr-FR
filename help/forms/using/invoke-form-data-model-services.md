@@ -1,18 +1,18 @@
 ---
 title: API pour appeler le service de modèle de données de formulaire à partir de formulaires adaptatifs
-seo-title: API pour appeler le service de modèle de données de formulaire à partir de formulaires adaptatifs
+seo-title: API to invoke form data model service from adaptive forms
 description: 'Décrit l’API invokeWebServices que vous pouvez utiliser pour appeler les services Web écrits dans WSDL depuis un champ de formulaire adaptatif. '
-seo-description: 'Décrit l’API invokeWebServices que vous pouvez utiliser pour appeler les services Web écrits dans WSDL depuis un champ de formulaire adaptatif. '
+seo-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 0653b0e4-a697-472a-8093-5ed48ede3c75
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 92%
+source-wordcount: '351'
+ht-degree: 91%
 
 ---
 

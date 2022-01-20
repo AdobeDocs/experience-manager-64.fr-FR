@@ -1,6 +1,6 @@
 ---
 title: Recherche de ressources vidéo
-description: Utilisez des mots-clés, des propriétés de fichier telles qu’un type Mime, une taille ou un horodatage récemment modifié pour trouver rapidement votre fichier dans  [!DNL Experience Manager] Assets.
+description: Utilisez des mots-clés, des propriétés de fichier telles qu’un type Mime, une taille ou un horodatage récemment modifié pour trouver rapidement votre fichier dans [!DNL Experience Manager] Ressources.
 contentOwner: AG
 feature: Video,Search
 role: User
@@ -22,7 +22,7 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 
 | Champ de recherche | Valeurs de propriété de recherche |
 |---|---|
-| Types MIME | [!UICONTROL Images],  [!UICONTROL Documents],  [!UICONTROL Multimédia],  [!UICONTROL Archives] ou Autre. |
+| Types MIME | [!UICONTROL Images], [!UICONTROL Documents], [!UICONTROL Multimédia], [!UICONTROL Archives]ou Autre. |
 | [!UICONTROL Dernière modification] | Heure, Jour, Semaine, Mois ou Année. |
 | [!UICONTROL Taille de fichier] | Petit, Moyen ou Grand. |
 | [!UICONTROL État de publication] | Publiée ou Publication annulée. |

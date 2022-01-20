@@ -1,8 +1,8 @@
 ---
 title: API Java de Task Manager Service QuickStart (SOAP)
-seo-title: API Java de Task Manager Service QuickStart (SOAP)
+seo-title: Task Manager Service Java API QuickStart(SOAP)
 description: Utilisez le service Task Manager pour affecter des tâches, verrouiller des tâches, récupérer les tâches assignées aux utilisateurs, récupérer les données de formulaire des tâches, modifier les données de formulaire, récupérer les pièces jointes et récupérer les informations de tâche.
-seo-description: Utilisez le service Task Manager pour affecter des tâches, verrouiller des tâches, récupérer les tâches assignées aux utilisateurs, récupérer les données de formulaire des tâches, modifier les données de formulaire, récupérer les pièces jointes et récupérer les informations de tâche.
+seo-description: Use the Task Manager service to assign tasks, lock tasks, retrieve tasks assigned to users, retrieve form data from tasks, modify form data, retrieve file attachments, and retrieve task information.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: 302b38e9-71fc-4e83-af01-856d7bd9af40
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 >[!NOTE]
 >
->Vous ne pouvez pas rechercher les tâches affectées aux utilisateurs à l’aide de l’API de service Web. La raison est que vous ne pouvez pas appeler la méthode `taskList`, qui est un appel de méthode nécessaire pour effectuer cette tâche.
+>Vous ne pouvez pas rechercher les tâches affectées aux utilisateurs à l’aide de l’API de service Web. La raison est que vous ne pouvez pas appeler la variable `taskList` , qui est un appel de méthode nécessaire pour effectuer cette tâche.
 
 >[!NOTE]
 >
@@ -396,7 +396,7 @@ L’exemple de code Java suivant récupère toutes les tâches affectées à un 
 
 ## Démarrage rapide (mode SOAP) : Récupération des données de formulaire des tâches à l’aide de l’API Java {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
-L’exemple de code Java suivant récupère les données de formulaire d’une tâche avec la valeur d’identifiant 304. Les données de formulaire sont écrites dans un fichier XML nommé *FormData.xml* situé à l’adresse C:\Adobe.
+L’exemple de code Java suivant récupère les données de formulaire d’une tâche avec la valeur d’identifiant 304. Les données de formulaire sont écrites dans un fichier XML nommé *FormData.xml* à l’adresse C:\Adobe.
 
 ```as3
  /* 
@@ -502,7 +502,7 @@ L’exemple de code Java suivant récupère les données de formulaire d’une t
 
 ## Démarrage rapide (mode SOAP) : Modification des données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-L’exemple de code Java suivant met à jour un formulaire avec des données situées dans le fichier *FormData.xml*.
+L’exemple de code Java suivant met à jour un formulaire avec des données situées dans la variable *FormData.xml* fichier .
 
 ```as3
  /* 
@@ -716,7 +716,7 @@ L’exemple de code Java suivant récupère les pièces jointes. Chaque pièce j
 
 ## Démarrage rapide (mode SOAP) : Récupération des informations de tâche à l’aide de l’API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-L’exemple de code Java suivant récupère toutes les tâches basées sur un processus nommé *MortgageLoan - Prebuilt*. L’état de chaque tâche renvoyée est vérifié pour s’assurer qu’elle est terminée. Des informations telles que le nom de l’utilisateur qui a terminé la tâche et la date à laquelle la tâche a été terminée sont récupérées et affichées.
+L’exemple de code Java suivant récupère toutes les tâches basées sur un processus nommé *Prêt hypothécaire - Préconstruit*. L’état de chaque tâche renvoyée est vérifié pour s’assurer qu’elle est terminée. Des informations telles que le nom de l’utilisateur qui a terminé la tâche et la date à laquelle la tâche a été terminée sont récupérées et affichées.
 
 ```as3
  /* 

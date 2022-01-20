@@ -1,8 +1,8 @@
 ---
 title: Bonnes pratiques
-seo-title: Bonnes pratiques
+seo-title: Best Practices
 description: Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
-seo-description: Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
+seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 72%
+source-wordcount: '279'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +23,7 @@ Les meilleures pratiques en matière de création décrivent comment utiliser AE
 
 Une documentation sur les meilleures pratiques est disponible pour les aspects suivants :
 
-* [Assets](#assets)
+* [Ressources](#assets)
 * [Sites](#sites)
 * [Formulaires](#forms)
 
@@ -72,6 +72,6 @@ Création : [Environnement et outils de création](/help/sites-classic-ui-author
 
 ## Formulaires {#forms}
 
-Formulaires adaptatifs : [Bonnes pratiques relatives à l’utilisation des formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md) : décrit les bonnes pratiques relatives à la configuration, la création et la personnalisation de formulaires adaptatifs.
+Formulaires adaptatifs : [Bonnes pratiques relatives à l’utilisation des formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md) - Décrit les bonnes pratiques pour la configuration, la création et la personnalisation de formulaires adaptatifs.
 
-Formulaires HTML5 : [Bonnes pratiques pour la conception de formulaires HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Décrit les bonnes pratiques pour travailler sur la mise en page et la conception de formulaires HTML5.
+HTML5 forms : [Bonnes pratiques pour la conception de formulaires HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Décrit les bonnes pratiques pour travailler sur la mise en page et la conception de formulaires HTML5.

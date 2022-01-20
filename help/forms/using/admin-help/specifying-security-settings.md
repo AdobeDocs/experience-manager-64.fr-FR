@@ -1,8 +1,8 @@
 ---
 title: Définition des paramètres de protection
-seo-title: Définition des paramètres de protection
+seo-title: Specifying security settings
 description: Découvrez comment spécifier des paramètres de sécurité.
-seo-description: Découvrez comment spécifier des paramètres de sécurité.
+seo-description: Learn how to specify security settings.
 uuid: 63ba7819-e4eb-4d28-8463-142ff4233a1e
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 36a7e16f-d09d-4cc5-babd-1ccadba76e16
 exl-id: 0bda2e58-9470-48fa-a60b-04a1a32689bb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 92%
+source-wordcount: '73'
+ht-degree: 91%
 
 ---
 

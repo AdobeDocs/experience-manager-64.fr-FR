@@ -1,20 +1,20 @@
 ---
-title: 'Utilisation de métadonnées dans une notification électronique '
-seo-title: 'Utilisation des métadonnées dans une notification électronique '
+title: 'Utilisation des métadonnées dans une notification électronique '
+seo-title: Use metadata in an email notification
 description: Utilisation des métadonnées pour renseigner les informations dans une notification électronique de processus de formulaires
-seo-description: Utilisation des métadonnées pour renseigner les informations dans une notification électronique de processus de formulaires
+seo-description: Use metadata to populate information in a forms workflow email notification
 uuid: 17e018c9-6bf8-4042-bba9-4ebe449304ac
 topic-tags: publish
 discoiquuid: bdf13893-630a-43cd-aaeb-c7c16bf4f8a6
 exl-id: 248c5adf-23e9-463f-9f29-869ae2426c22
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '902'
 ht-degree: 96%
 
 ---
 
-# Utilisation de métadonnées dans une notification électronique  {#use-metadata-in-an-email-notification}
+# Utilisation des métadonnées dans une notification électronique  {#use-metadata-in-an-email-notification}
 
 Utilisation des métadonnées pour renseigner les informations dans une notification électronique de processus de formulaires
 
@@ -195,13 +195,13 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
       | Type | Chaîne |
       | Valeur | Indiquez le titre du script. Par exemple, Métadonnées personnalisées pour le titulaire de la police. La valeur spécifiée s’affiche à l’étape Affecter une tâche. |
 
-### Utilisation d’un bundle OSGi et d’une interface Java pour ajouter des métadonnées personnalisées  {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
+### Utilisation d’un bundle OSGi et d’une interface Java pour ajouter des métadonnées personnalisées {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
 Vous pouvez utiliser l’interface Java WorkitemUserMetadataService pour ajouter des métadonnées personnalisées aux modèles de courrier électronique. Vous pouvez créer un bundle OSGi qui utilise l’interface Java WorkitemUserMetadataService et le déployer sur le serveur AEM Forms. Il rend les métadonnées disponibles pour la sélection à l’étape Affecter une tâche.
 
 Pour créer un bundle OSGi avec une interface Java, ajoutez les fichiers .jar [SDK client AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) et [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
 
-1. Ouvrez l’IDE Eclipse. Accédez à Fichier  Nouveau projet.
+1. Ouvrez l’IDE Eclipse. Accédez à Fichier > Nouveau projet.
 
 1. Sur l’écran de sélection de l’assistant, sélectionnez Projet Maven puis cliquez sur Suivant.
 

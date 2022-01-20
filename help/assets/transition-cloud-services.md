@@ -8,13 +8,13 @@ exl-id: 87883a3f-db95-41f4-b0aa-cdaeb7e6f555
 source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
 # Application de services cloud de traduction à des dossiers {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager vous permet de bénéficier des services de traduction cloud du fournisseur de traduction de votre choix pour vous assurer que vos ressources sont traduites en fonction de vos besoins.
+Adobe Experience Manager vous offre des services de traduction basés sur le cloud du fournisseur de traduction de votre choix afin de vous assurer que vos ressources sont traduites en fonction de vos besoins.
 
 Vous pouvez appliquer le service cloud de traduction directement à votre dossier de ressources afin qu’elles puissent être utilisées au cours des workflows de traduction.
 
@@ -43,7 +43,7 @@ L’application de services cloud directement à votre dossier de ressources él
 Si vous souhaitez appliquer un connecteur personnalisé pour les services de traduction que vous souhaitez utiliser dans les workflows. Pour appliquer un connecteur personnalisé, installez d’abord le connecteur à partir de Package Manager. Configurez ensuite le connecteur depuis la console Cloud Services. Une fois le connecteur configuré, il est disponible dans la liste des connecteurs de l’onglet Cloud Services décrits dans la section [Application des services de traduction](transition-cloud-services.md#applying-the-translation-services). Une fois que vous avez appliqué le connecteur personnalisé et exécuté des workflows de traduction, la mosaïque **[!UICONTROL Résumé de traduction]** du projet de traduction affiche les détails du connecteur dans les sections **[!UICONTROL Fournisseur]** et **[!UICONTROL Méthode]**.
 
 1. Installez le connecteur depuis le gestionnaire de modules.
-1. Cliquez/appuyez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils > Déploiement > Cloud Services]**.
+1. Cliquez/appuyez sur [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Déploiement > Cloud Services]**.
 1. Localisez le connecteur que vous avez installé sous **[!UICONTROL Services tiers]** sur la page **[!UICONTROL Services Cloud]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

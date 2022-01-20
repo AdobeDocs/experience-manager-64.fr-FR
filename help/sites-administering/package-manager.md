@@ -1,8 +1,8 @@
 ---
 title: Utilisation des modules
-seo-title: Utilisation des modules
+seo-title: How to Work With Packages
 description: Découvrez les notions fondamentales de l’utilisation des modules dans AEM.
-seo-description: Découvrez les notions fondamentales de l’utilisation des modules dans AEM.
+seo-description: Learn the basics of working with packages in AEM.
 uuid: e9eb4f88-9df6-4019-92e0-2aafcffe1aab
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
 exl-id: eebc10fa-1d49-4797-a9e6-b6615bfe0173
 source-git-commit: 9b2cf8887f799aff316f720ab173087e14692120
 workflow-type: tm+mt
-source-wordcount: '4037'
+source-wordcount: '4021'
 ht-degree: 82%
 
 ---
@@ -60,7 +60,7 @@ Vous pouvez effectuer les actions ci-dessous sur des modules ou avec des modules
 * Télécharger des modules, comme des correctifs, à partir de la bibliothèque du partage de modules
 * Charger des modules dans la section entreprise-interne de la bibliothèque du Partage de modules
 
-## Informations sur les modules  {#package-information}
+## Informations sur les modules {#package-information}
 
 Une définition de module comprend différents types d’informations :
 
@@ -151,10 +151,10 @@ La boîte de dialogue **Paramètres du module** est accessible à l’aide du bo
 
 ### Filtres de module {#package-filters}
 
-Les filtres identifient les nœuds du référentiel à inclure dans le module. Une **Définition de filtre** spécifie les informations suivantes :
+Les filtres identifient les nœuds du référentiel à inclure dans le module. A **Définition du filtre** indique les informations suivantes :
 
 * **Chemin d’accès racine** du contenu à inclure.
-* **** Règles qui incluent ou excluent des noeuds spécifiques sous le chemin racine.
+* **Règles** qui incluent ou excluent des noeuds spécifiques sous le chemin racine.
 
 Les filtres peuvent ne comporter aucune règle ou en comporter plusieurs. Lorsqu’aucune règle n’est définie, le module contient tout le contenu sous le chemin d’accès racine.
 
@@ -198,7 +198,7 @@ Les filtres de module sont le plus souvent définis lorsque vous [créez le modu
 
 Vous pouvez associer des captures d’écran au module afin de fournir une représentation visuelle du contenu, par exemple, en fournissant des captures d’écran de la nouvelle fonctionnalité.
 
-### Icônes de module  {#package-icons}
+### Icônes de module {#package-icons}
 
 Vous pouvez également associer une icône au module afin de fournir une représentation visuelle de référence rapide du contenu du module. Elle est ensuite affichée dans la liste de modules et peut vous aider à identifier facilement le module ou la classe du module.
 
@@ -234,11 +234,11 @@ Pour accorder aux utilisateurs le droit de créer, de modifier, de charger et d�
 
 Pour plus d’informations sur la modification des autorisations, voir [Définition des autorisations](/help/sites-administering/security.md).
 
-### Création d’un module  {#creating-a-new-package}
+### Création d’un module {#creating-a-new-package}
 
 Pour créer une définition de module :
 
-1. Dans l’écran d’accueil d’AEM, cliquez sur **Packages** (ou dans la console **Outils**, double-cliquez sur **Packages**).
+1. Dans l’écran de bienvenue AEM, cliquez sur **Packages** (ou de la fonction **Outils** double-cliquez sur la console **Packages**).
 
 1. Ensuite, sélectionnez **Gestionnaire de modules**.
 1. Cliquez sur **Créer un package**.
@@ -391,15 +391,13 @@ Cette section décrit comment télécharger un module d’AEM vers votre systèm
 >
 >* Télécharger des modules du [partage de modules directement vers votre instance AEM locale](#downloading-and-installing-packages-from-package-share).\
    >   Lors du téléchargement, le module est importé dans votre référentiel, après quoi vous pouvez l’installer immédiatement dans votre instance locale à l’aide du **Gestionnaire de modules**. Ces modules comportent des correctifs et d’autres modules partagés.
-   >
-   >
-* Télécharger des modules du [partage de modules vers votre système de fichiers](#downloading-packages-to-your-file-system-from-package-share).
+>
+>* Télécharger des modules du [partage de modules vers votre système de fichiers](#downloading-packages-to-your-file-system-from-package-share).
 
 >
 
 
-
-1. Dans l’écran de bienvenue d’AEM, cliquez sur **Packages**, puis sélectionnez **Gestionnaire de modules**.
+1. Dans l’écran de bienvenue AEM, cliquez sur **Packages**, puis sélectionnez **Gestionnaire de modules**.
 1. Accédez au module à télécharger.
 
    ![packagesdownload](assets/packagesdownload.png)
@@ -428,7 +426,7 @@ Pour charger un module :
 
    * **File**
 
-      Vous pouvez saisir directement le nom du fichier ou utiliser la commande **Parcourir...** pour sélectionner le module requis dans votre système de fichiers local (après la sélection, cliquez sur **OK**).
+      Vous pouvez saisir directement le nom du fichier ou utiliser la variable **Parcourir..** pour sélectionner le module requis dans votre système de fichiers local (après la sélection, cliquez sur **OK**).
 
    * **Forcer le chargement**
 
@@ -439,9 +437,9 @@ Pour charger un module :
    >
    >Pour mettre le contenu à disposition dans AEM, veillez à [installer le module](#installing-packages).
 
-### Validation de modules  {#validating-packages}
+### Validation de modules {#validating-packages}
 
-Avant d’installer un module, vous pouvez vérifier son contenu. Comme les packages peuvent modifier des fichiers superposés sous `/apps` et/ou ajouter, modifier et supprimer des listes de contrôle d’accès, il est souvent utile de valider ces modifications avant l’installation.
+Avant d’installer un module, vous pouvez vérifier son contenu. Parce que les modules peuvent modifier des fichiers superposés sous `/apps` et/ou ajouter, modifier et supprimer des listes de contrôle d’accès, il est souvent utile de valider ces modifications avant l’installation.
 
 #### Options de validation {#validation-options}
 
@@ -461,7 +459,7 @@ Ces options sont détaillées ci-dessous.
 
    **Comment sont-ils signalés ?**
 
-   Toutes les dépendances versionnées qui ne peuvent pas être satisfaites par l’instance AEM sont répertoriées dans le **Journal d’activité** du gestionnaire de modules.
+   Toutes les dépendances versionnées qui ne peuvent pas être satisfaites par l’instance AEM sont répertoriées dans la variable **Journal d’activité** du gestionnaire de modules.
 
    **États d’erreur**
 
@@ -477,7 +475,7 @@ Ces options sont détaillées ci-dessous.
 
    Cette validation détermine si le module en cours d’installation contient un fichier déjà recouvert dans l’instance AEM de destination.
 
-   Par exemple, étant donné qu’une superposition existante se trouve à `/apps/sling/servlet/errorhandler/404.jsp`, un module contenant `/libs/sling/servlet/errorhandler/404.jsp`, de sorte qu’il modifie le fichier existant à `/libs/sling/servlet/errorhandler/404.jsp`.
+   Par exemple, selon une superposition existante à l’emplacement `/apps/sling/servlet/errorhandler/404.jsp`, un module contenant `/libs/sling/servlet/errorhandler/404.jsp`, de sorte qu’il modifie le fichier existant à l’adresse `/libs/sling/servlet/errorhandler/404.jsp`.
 
    **Comment sont-ils signalés ?**
 
@@ -489,7 +487,7 @@ Ces options sont détaillées ci-dessous.
 
    **Résolution d’erreurs**
 
-   Pour résoudre ce problème, le responsable de l’ du fichier de recouvrement dans `/apps` doit examiner les modifications apportées au fichier recouvert dans `/libs` et incorporer les modifications nécessaires dans le recouvrement ( `/apps`), puis redéployer le fichier recouvert.
+   Pour résoudre ce problème, le responsable de l’ du fichier de recouvrement dans `/apps` doit réviser les modifications apportées au fichier recouvert dans `/libs` et incorporer les modifications nécessaires dans le recouvrement ( `/apps`), puis redéployez le fichier recouvert.
 
    >[!NOTE]
    >
@@ -517,7 +515,7 @@ Ces options sont détaillées ci-dessous.
    >
    >Il est recommandé que les modules n’affectent pas les listes ACL fournies par AEM, car cela pourrait entraîner un comportement inattendu du produit.
 
-#### Validation  {#performing-validation}
+#### Validation {#performing-validation}
 
 La validation des modules peut être effectuée de deux manières différentes :
 
@@ -531,7 +529,7 @@ La validation des modules peut être effectuée de deux manières différentes 
 **Validation de modules via le Gestionnaire de modules**
 
 1. Ouvrez le gestionnaire de modules à l’adresse `https://<server>:<port>/crx/packmgr`
-1. Sélectionnez le package dans la liste, puis sélectionnez la liste déroulante **Plus** dans l’en-tête, puis **Valider** dans le menu déroulant.
+1. Sélectionnez le package dans la liste, puis sélectionnez **Plus** dans le menu déroulant de l’en-tête, puis **Valider** dans le menu déroulant.
 
    >[!NOTE]
    >
@@ -558,8 +556,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 >* `acls`
 
 >
->
-La valeur de `type` est définie par défaut sur `osgiPackageImports` si elle n’est pas transmise.
+>La valeur de `type` par défaut : `osgiPackageImports` si elle n’est pas transmise.
 
 Voici un exemple illustrant comment exécuter la validation d’un module à l’aide de cURL.
 
@@ -579,7 +576,7 @@ Voici un exemple illustrant comment exécuter la validation d’un module à l�
 
 Après avoir chargé un module, vous devez installer le contenu. Pour que le contenu du module soit installé et opérationnel, il doit être :
 
-* chargé dans AEM (soit [téléchargé à partir de votre système de fichiers](#uploading-packages-from-your-file-system) ou [téléchargé à partir du partage de package](#downloading-and-installing-packages-from-package-share)).
+* chargé dans AEM (soit [téléchargé depuis votre système de fichiers](#uploading-packages-from-your-file-system) ou [téléchargé à partir du partage de package](#downloading-and-installing-packages-from-package-share))
 
 * installé.
 
@@ -590,14 +587,12 @@ Après avoir chargé un module, vous devez installer le contenu. Pour que le con
 >Pour afficher le contenu ou l’impact d’un module, vous pouvez :
 >
 >* Effectuez un test d&#39;installation du package sans modifier le contenu :\
-   >  Ouvrez le package (cliquez sur l’icône ou le nom du package) et cliquez sur **Tester l’installation**.
-   >
-   >
-* Consultez la liste des contenus de package :\
-   >  Ouvrez le package et cliquez sur **Contenu**.
+   >  Ouvrez le module (cliquez sur l’icône ou le nom du module), puis cliquez sur **Test Install**.
+>
+>* Consultez la liste des contenus de package :\
+   >  Ouvrez le module et cliquez sur **Contenu**.
 
 >
-
 
 
 >[!NOTE]
@@ -611,13 +606,12 @@ Après avoir chargé un module, vous devez installer le contenu. Pour que le con
 >Si vous installez des ressources numériques, vous devez effectuer les opérations suivantes :
 >
 >* Tout d’abord, désactivez WorkflowLauncher.\
-   >  Utilisez l’option de menu Composants de la console OSGi pour désactiver `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl`.
-   >
-   >
-* Ensuite, une fois l’installation terminée, réactivez WorkflowLauncher.
+   >  Utilisez l’option de menu Composants de la console OSGi pour la désactiver. `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl`.
 >
+>* Ensuite, une fois l’installation terminée, réactivez WorkflowLauncher.
+
 >
-La désactivation de WorkflowLauncher permet de s’assurer que la structure d’importation d’actifs ne manipule pas (involontairement) les actifs lors de l’installation.
+>La désactivation de WorkflowLauncher permet de s’assurer que la structure d’importation d’actifs ne manipule pas (involontairement) les actifs lors de l’installation.
 
 1. Dans le Gestionnaire de modules, accédez au module à installer.
 
@@ -631,9 +625,9 @@ La désactivation de WorkflowLauncher permet de s’assurer que la structure d�
 
    Le mot **Installé** s’affiche en regard du module une fois qu’il a été installé.
 
-### Chargement et installation basés sur le système de fichiers  {#file-system-based-upload-and-installation}
+### Chargement et installation basés sur le système de fichiers {#file-system-based-upload-and-installation}
 
-Il existe une autre façon de charger et d’installer des modules sur votre instance. Dans votre système de fichiers, un dossier `crx-quicksart` avec votre fichier JAR et le fichier `license.properties`. Vous devez créer un dossier nommé `install` sous `crx-quickstart`. Vous aurez alors quelque chose comme ceci : `<aem_home>/crx-quickstart/install`
+Il existe une autre façon de charger et d’installer des modules sur votre instance. Dans votre système de fichiers, un dossier `crx-quicksart` avec votre fichier JAR et le fichier `license.properties`. Vous devez créer un dossier nommé `install` under `crx-quickstart`. Vous aurez alors quelque chose comme ceci : `<aem_home>/crx-quickstart/install`
 
 Dans ce dossier d’installation, vous pouvez ajouter directement des modules. Ils sont chargés et installés automatiquement sur votre instance. Une fois l’opération terminée, vous pouvez afficher les modules dans le Gestionnaire de modules.
 
@@ -643,7 +637,7 @@ Si votre instance est en cours d’exécution, l’ajout d’un module au dossie
 >
 >Vous pouvez également effectuer cette opération avant de démarrer l’instance pour la première fois. À cet effet, vous devez créer manuellement le dossier `crx-quickstart`, créer le dossier `install` en dessous et y placer les modules. Lorsque vous lancez votre instance pour la première fois, les modules sont installés dans l’ordre alphabétique.
 
-### Désinstallation des modules  {#uninstalling-packages}
+### Désinstallation des modules {#uninstalling-packages}
 
 AEM vous permet de désinstaller des packages. Cette action renvoie le contenu concerné du référentiel vers l’instantané enregistré juste avant l’installation des modules.
 
@@ -665,7 +659,7 @@ Pour supprimer un module dans les listes du Gestionnaire de modules :
 >
 >Les fichiers/nœuds installés du module ne sont **pas** supprimés.
 
-1. Dans la console **Outils**, développez le dossier **Packages** pour afficher votre package dans le volet de droite.
+1. Dans le **Outils** , développez la console **Packages** pour afficher votre package dans le volet de droite.
 
 1. Cliquez sur le module à supprimer afin de le sélectionner, puis :
 
@@ -697,9 +691,9 @@ Il a été remplacé par [Distribution logicielle.](#software-distribution)
 
 ## Distribution logicielle {#software-distribution}
 
-[La ](https://downloads.experiencecloud.adobe.com) distribution logicielle est la nouvelle interface utilisateur conçue pour simplifier la recherche et le téléchargement des packages AEM.
+[Distribution logicielle](https://downloads.experiencecloud.adobe.com) est la nouvelle interface utilisateur conçue pour simplifier la recherche et le téléchargement des modules AEM.
 
-Pour plus d’informations, consultez la [documentation Distribution logicielle.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Pour plus d’informations, reportez-vous au [Distribution logicielle .](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 >[!CAUTION]
 >

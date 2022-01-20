@@ -1,8 +1,8 @@
 ---
 title: Préremplissage de Forms avec des dispositions souple
-seo-title: Préremplissage de Forms avec des dispositions souple
+seo-title: Prepopulating Forms with Flowable Layouts
 description: Préremplir les formulaires avec disposition souple pour afficher les données aux utilisateurs dans un formulaire rendu à l’aide de l’API Java et de l’API Web Service.
-seo-description: Préremplir les formulaires avec disposition souple pour afficher les données aux utilisateurs dans un formulaire rendu à l’aide de l’API Java et de l’API Web Service.
+seo-description: Prepopulate forms with flowable layout to display data to users within a rendered form using the Java API and the Web Service API.
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -13,14 +13,14 @@ role: Developer
 exl-id: 92bc6878-6963-442a-8441-fba42e89c859
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3533'
-ht-degree: 4%
+source-wordcount: '3505'
+ht-degree: 5%
 
 ---
 
-# Préremplissage de Forms avec des mises en page souples {#prepopulating-forms-with-flowable-layouts1}
+# Préremplissage de Forms avec des dispositions souple {#prepopulating-forms-with-flowable-layouts1}
 
-## Préremplissage de Forms avec des mises en page souples {#prepopulating-forms-with-flowable-layouts2}
+## Préremplissage de Forms avec des dispositions souple {#prepopulating-forms-with-flowable-layouts2}
 
 Le préremplissage de formulaires affiche des données aux utilisateurs dans un formulaire rendu. Supposons, par exemple, qu’un utilisateur se connecte à un site web avec un nom d’utilisateur et un mot de passe. Si l’authentification est réussie, l’application cliente interroge une base de données pour obtenir des informations sur l’utilisateur. Les données sont fusionnées dans le formulaire, puis le formulaire est rendu à l’utilisateur. Par conséquent, l’utilisateur peut afficher des données personnalisées dans le formulaire.
 
@@ -41,7 +41,7 @@ Lorsque vous préremplissez un formulaire qui contient déjà des données, vous
 
 Vous pouvez, par exemple, préremplir un formulaire tel que l’exemple de formulaire de confirmation. (Voir &quot;Formulaire de confirmation&quot; dans [Rendu des PDF forms interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
-Pour préremplir l’exemple de formulaire de confirmation, vous devez créer une source de données XML qui contient trois éléments XML correspondant aux trois champs du formulaire. Ce formulaire contient les trois champs suivants : `FirstName`, `LastName` et `Amount`. La première étape consiste à créer une source de données XML contenant des éléments XML correspondant aux champs situés dans la conception de formulaire. L’étape suivante consiste à attribuer des valeurs de données aux éléments XML, comme illustré dans le code XML suivant.
+Pour préremplir l’exemple de formulaire de confirmation, vous devez créer une source de données XML qui contient trois éléments XML correspondant aux trois champs du formulaire. Ce formulaire contient les trois champs suivants : `FirstName`, `LastName`, et `Amount`. La première étape consiste à créer une source de données XML contenant des éléments XML correspondant aux champs situés dans la conception de formulaire. L’étape suivante consiste à attribuer des valeurs de données aux éléments XML, comme illustré dans le code XML suivant.
 
 ```as3
      <Untitled> 
@@ -178,7 +178,7 @@ Notez que chaque sous-groupe de données contient quatre éléments XML qui corr
 
 Le nom de l’élément XML parent d’un sous-groupe de données doit correspondre au nom du sous-formulaire situé dans la conception de formulaire. Par exemple, dans le diagramme précédent, notez que le nom de l’élément XML parent du sous-groupe de données est `detail`. Cela correspond au nom du sous-formulaire situé dans la conception de formulaire sur laquelle repose le formulaire de bon de commande. Si le nom de l’élément XML parent du sous-groupe de données et le sous-formulaire ne correspondent pas, aucun formulaire côté serveur n’est prérempli.
 
-Chaque sous-groupe de données doit contenir des éléments XML correspondant aux noms des champs dans le sous-formulaire. Le sous-formulaire `detail` situé dans la conception de formulaire contient les champs suivants :
+Chaque sous-groupe de données doit contenir des éléments XML correspondant aux noms des champs dans le sous-formulaire. Le `detail` Le sous-formulaire situé dans la conception de formulaire contient les champs suivants :
 
 * txtPartNum
 * txtDescription
@@ -187,7 +187,7 @@ Chaque sous-groupe de données doit contenir des éléments XML correspondant au
 
 >[!NOTE]
 >
->Si vous tentez de préremplir un formulaire avec une source de données contenant des éléments XML qui se répètent et que vous définissez l’option `RenderAtClient` sur `No`, seul le premier enregistrement de données est fusionné dans le formulaire. Pour vous assurer que tous les enregistrements de données sont fusionnés dans le formulaire, définissez `RenderAtClient` sur `Yes`. Pour plus d’informations sur l’option `RenderAtClient`, voir [Rendu du Forms sur le client](/help/forms/developing/rendering-forms-client.md).
+>Si vous tentez de préremplir un formulaire avec une source de données contenant des éléments XML qui se répètent, définissez la variable `RenderAtClient` option à `No`, seul le premier enregistrement de données est fusionné dans le formulaire. Pour vous assurer que tous les enregistrements de données sont fusionnés dans le formulaire, définissez la variable `RenderAtClient` to `Yes`. Pour plus d’informations sur la variable `RenderAtClient` , voir [Rendu de Forms sur le client](/help/forms/developing/rendering-forms-client.md).
 
 >[!NOTE]
 >
@@ -212,19 +212,19 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Création d’une source de données XML en mémoire**
 
-Vous pouvez utiliser les classes `org.w3c.dom` pour créer une source de données XML en mémoire afin de préremplir un formulaire avec une disposition souple. Vous devez placer les données dans une source de données XML conforme au formulaire. Pour plus d’informations sur la relation entre un formulaire avec une disposition souple et la source de données XML, voir [Présentation des sous-groupes de données](#understanding-data-subgroups).
+Vous pouvez utiliser `org.w3c.dom` pour créer une source de données XML en mémoire afin de préremplir un formulaire avec une disposition souple. Vous devez placer les données dans une source de données XML conforme au formulaire. Pour plus d’informations sur la relation entre un formulaire avec une disposition souple et la source de données XML, voir [Présentation des sous-groupes de données](#understanding-data-subgroups).
 
 **Conversion de la source de données XML**
 
-Une source de données XML en mémoire créée à l’aide des classes `org.w3c.dom` peut être convertie en objet `com.adobe.idp.Document` avant de pouvoir être utilisée pour préremplir un formulaire. Une source de données XML en mémoire peut être convertie à l’aide de classes de transformation XML Java.
+Une source de données XML en mémoire créée à l’aide de `org.w3c.dom` peuvent être converties en `com.adobe.idp.Document` avant de pouvoir être utilisé pour préremplir un formulaire. Une source de données XML en mémoire peut être convertie à l’aide de classes de transformation XML Java.
 
 >[!NOTE]
 >
->Si vous utilisez le WSDL du service Forms pour préremplir un formulaire, vous devez convertir un objet `org.w3c.dom.Document` en objet `BLOB`.
+>Si vous utilisez le fichier WSDL du service Forms pour préremplir un formulaire, vous devez convertir une `org.w3c.dom.Document` en objet `BLOB` .
 
 **Rendu d’un formulaire prérempli**
 
-Vous générez un formulaire prérempli comme tout autre formulaire. La seule différence est que vous utilisez l’objet `com.adobe.idp.Document` qui contient la source de données XML pour préremplir le formulaire.
+Vous générez un formulaire prérempli comme tout autre formulaire. La seule différence réside dans le fait que vous utilisez la variable `com.adobe.idp.Document` contenant la source de données XML pour préremplir le formulaire.
 
 **Voir également**
 
@@ -248,63 +248,63 @@ Pour préremplir un formulaire avec une disposition souple à l’aide de l’AP
 
 1. Création d’une source de données XML en mémoire
 
-   * Créez un objet Java `DocumentBuilderFactory` en appelant la méthode `DocumentBuilderFactory` class’ `newInstance` .
-   * Créez un objet Java `DocumentBuilder` en appelant la méthode `newDocumentBuilder` de l’objet `DocumentBuilderFactory`.
-   * Appelez la méthode `newDocument` de l’objet `DocumentBuilder` pour instancier un objet `org.w3c.dom.Document`.
-   * Créez l’élément racine de la source de données XML en appelant la méthode `createElement` de l’objet `org.w3c.dom.Document`. Cela crée un objet `Element` qui représente l’élément racine. Transmettez une valeur string représentant le nom de l’élément à la méthode `createElement` . Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément racine au document en appelant la méthode `appendChild` de l’objet `Document` et transmettez l’objet d’élément racine en tant qu’argument. Les lignes de code suivantes présentent cette logique d’application :
+   * Création d’un Java `DocumentBuilderFactory` en appelant la fonction `DocumentBuilderFactory` class’ `newInstance` .
+   * Création d’un Java `DocumentBuilder` en appelant la fonction `DocumentBuilderFactory` de `newDocumentBuilder` .
+   * Appelez le `DocumentBuilder` de `newDocument` pour instancier une `org.w3c.dom.Document` .
+   * Créez l’élément racine de la source de données XML en appelant la méthode `org.w3c.dom.Document` de `createElement` . Cela crée une `Element` qui représente l’élément racine. Transmettez une valeur string représentant le nom de l’élément au `createElement` . Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément racine au document en appelant la fonction `Document` de `appendChild` et transmettez l’objet d’élément racine en tant qu’argument. Les lignes de code suivantes présentent cette logique d’application :
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * Créez l’élément d’en-tête de la source de données XML en appelant la méthode `createElement` de l’objet `Document`. Transmettez une valeur string représentant le nom de l’élément à la méthode `createElement` . Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément d’en-tête à l’élément racine en appelant la méthode `appendChild` de l’objet `root` et transmettez l’objet d’élément d’en-tête en tant qu’argument. Les éléments XML ajoutés à l’élément d’en-tête correspondent à la partie statique du formulaire. Les lignes de code suivantes présentent cette logique d’application :
+   * Créez l’élément d’en-tête de la source de données XML en appelant la fonction `Document` de `createElement` . Transmettez une valeur string représentant le nom de l’élément au `createElement` . Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément d’en-tête à l’élément racine en appelant la fonction `root` de `appendChild` et transmettez l’objet d’élément d’en-tête en tant qu’argument. Les éléments XML ajoutés à l’élément d’en-tête correspondent à la partie statique du formulaire. Les lignes de code suivantes présentent cette logique d’application :
 
       ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Créez un élément enfant qui appartient à l’élément d’en-tête en appelant la méthode `createElement` de l’objet `Document` et transmettez une valeur string qui représente le nom de l’élément. Convertissez la valeur de retour en `Element`. Ensuite, définissez une valeur pour l’élément enfant en appelant sa méthode `appendChild` et transmettez la méthode `createTextNode` de l’objet `Document` en tant qu’argument. Spécifiez une valeur string qui apparaît comme valeur de l’élément enfant. Enfin, ajoutez l’élément enfant à l’élément d’en-tête en appelant la méthode `appendChild` de l’élément d’en-tête et transmettez l’objet d’élément enfant comme argument. Les lignes de code suivantes présentent cette logique d’application :
+   * Créez un élément enfant qui appartient à l’élément d’en-tête en appelant la fonction `Document` de `createElement` et transmettez une valeur string qui représente le nom de l’élément. Convertissez la valeur de retour en `Element`. Ensuite, définissez une valeur pour l’élément enfant en appelant son `appendChild` et transmettez la variable `Document` de `createTextNode` comme argument. Spécifiez une valeur string qui apparaît comme valeur de l’élément enfant. Enfin, ajoutez l’élément enfant à l’élément d’en-tête en appelant le `appendChild` et transmettez l’objet d’élément enfant en tant qu’argument. Les lignes de code suivantes présentent cette logique d’application :
 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Ajoutez tous les éléments restants à l’élément d’en-tête en répétant la dernière sous-étape pour chaque champ apparaissant dans la partie statique du formulaire (dans le diagramme de la source de données XML, ces champs sont affichés dans la section A. (Voir [Présentation des sous-groupes de données](#understanding-data-subgroups)).
-   * Créez l’élément de détail de la source de données XML en appelant la méthode `createElement` de l’objet `Document`. Transmettez une valeur string représentant le nom de l’élément à la méthode `createElement` . Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément de détail à l’élément racine en appelant la méthode `appendChild` de l’objet `root` et transmettez l’objet d’élément de détail comme argument. Les éléments XML ajoutés à l’élément de détail correspondent à la partie dynamique du formulaire. Les lignes de code suivantes présentent cette logique d’application :
+   * Ajoutez tous les éléments restants à l’élément d’en-tête en répétant la dernière sous-étape pour chaque champ apparaissant dans la partie statique du formulaire (dans le diagramme de source de données XML, ces champs sont affichés dans la section A. (Voir [Présentation des sous-groupes de données](#understanding-data-subgroups).)
+   * Créez l’élément de détail de la source de données XML en appelant la méthode `Document` de `createElement` . Transmettez une valeur string représentant le nom de l’élément au `createElement` . Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément de détail à l’élément racine en appelant le `root` de `appendChild` et transmettez l’objet d’élément de détail en tant qu’argument. Les éléments XML ajoutés à l’élément de détail correspondent à la partie dynamique du formulaire. Les lignes de code suivantes présentent cette logique d’application :
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Créez un élément enfant qui appartient à l’élément de détail en appelant la méthode `createElement` de l’objet `Document` et transmettez une valeur string qui représente le nom de l’élément. Convertissez la valeur de retour en `Element`. Ensuite, définissez une valeur pour l’élément enfant en appelant sa méthode `appendChild` et transmettez la méthode `createTextNode` de l’objet `Document` en tant qu’argument. Spécifiez une valeur string qui apparaît comme valeur de l’élément enfant. Enfin, ajoutez l’élément enfant à l’élément de détail en appelant la méthode `appendChild` de l’élément de détail et transmettez l’objet de l’élément enfant comme argument. Les lignes de code suivantes présentent cette logique d’application :
+   * Créez un élément enfant qui appartient à l’élément de détail en appelant la fonction `Document` de `createElement` et transmettez une valeur string qui représente le nom de l’élément. Convertissez la valeur de retour en `Element`. Ensuite, définissez une valeur pour l’élément enfant en appelant son `appendChild` et transmettez la variable `Document` de `createTextNode` comme argument. Spécifiez une valeur string qui apparaît comme valeur de l’élément enfant. Enfin, ajoutez l’élément enfant à l’élément de détail en appelant le `appendChild` et transmettez l’objet d’élément enfant en tant qu’argument. Les lignes de code suivantes présentent cette logique d’application :
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * Répétez la dernière sous-étape pour tous les éléments XML à ajouter à l’élément de détail. Pour créer correctement la source de données XML utilisée pour remplir le formulaire de bon de commande, vous devez ajouter les éléments XML suivants à l’élément de détail : `txtDescription`, `numQty` et `numUnitPrice`.
+   * Répétez la dernière sous-étape pour tous les éléments XML à ajouter à l’élément de détail. Pour créer correctement la source de données XML utilisée pour remplir le formulaire de bon de commande, vous devez ajouter les éléments XML suivants à l’élément de détail : `txtDescription`, `numQty`, et `numUnitPrice`.
    * Répétez les deux dernières sous-étapes pour tous les éléments de données utilisés pour préremplir le formulaire.
 
 1. Conversion de la source de données XML
 
-   * Créez un objet `javax.xml.transform.Transformer` en appelant la méthode `javax.xml.transform.Transformer` statique de l’objet `newInstance`.
-   * Créez un objet `Transformer` en appelant la méthode `newTransformer` de l’objet `TransformerFactory`.
+   * Créez un `javax.xml.transform.Transformer` en appelant le `javax.xml.transform.Transformer` statique de l’objet `newInstance` .
+   * Créez un `Transformer` en appelant le `TransformerFactory` de `newTransformer` .
    * Créez un objet `ByteArrayOutputStream` en utilisant son constructeur.
-   * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `org.w3c.dom.Document` créé à l’étape 1.
+   * Créez un `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `org.w3c.dom.Document` qui a été créé à l’étape 1.
    * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `ByteArrayOutputStream`. 
-   * Renseignez l’objet Java `ByteArrayOutputStream` en appelant la méthode `transform` de l’objet `javax.xml.transform.Transformer` et en transmettant les objets `javax.xml.transform.dom.DOMSource` et `javax.xml.transform.stream.StreamResult`.
-   * Créez un tableau d’octets et affectez la taille de l’objet `ByteArrayOutputStream` au tableau d’octets.
-   * Renseignez le tableau d’octets en appelant la méthode `toByteArray` de l’objet `ByteArrayOutputStream`.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant le tableau d’octets.
+   * Renseignement du code Java `ByteArrayOutputStream` en appelant le `javax.xml.transform.Transformer` de `transform` et transmission de la méthode `javax.xml.transform.dom.DOMSource` et le `javax.xml.transform.stream.StreamResult` objets.
+   * Créez un tableau d’octets et affectez la taille de la variable `ByteArrayOutputStream` vers le tableau d’octets.
+   * Renseignez le tableau d’octets en appelant la variable `ByteArrayOutputStream` de `toByteArray` .
+   * Créez un `com.adobe.idp.Document` en utilisant son constructeur et en transmettant le tableau d’octets.
 
 1. Rendu d’un formulaire prérempli
 
-   Appelez la méthode `renderPDFForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
+   Appeler la variable `FormsServiceClient` de `renderPDFForm` et transmettez les valeurs suivantes :
 
    * Une valeur string qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
-   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Assurez-vous d’utiliser l’objet `com.adobe.idp.Document` créé aux étapes 1 et 2.
-   * Objet `PDFFormRenderSpec` qui stocke les options d’exécution.
-   * Objet `URLSpec` contenant des valeurs URI requises par le service Forms.
-   * Objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif qui vous permet de spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+   * A `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Veillez à utiliser la variable `com.adobe.idp.Document` créé aux étapes 1 et 2.
+   * A `PDFFormRenderSpec` qui stocke les options d’exécution.
+   * A `URLSpec` contenant des valeurs URI requises par le service Forms.
+   * A `java.util.HashMap` qui stocke les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
 
-   La méthode `renderPDFForm` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur Web client.
+   Le `renderPDFForm` renvoie une `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur Web client.
 
-   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données de formulaire au navigateur Web client.
-   * Créez un objet `com.adobe.idp.Document` en appelant la méthode `FormsResult` de l’objet `getOutputContent`.
-   * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
-   * Créez un tableau d’octets pour le remplir avec le flux de données de formulaire en appelant la méthode `InputStream` de l’objet `read` et en transmettant le tableau d’octets en tant qu’argument.
-   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur Web client. Transmettez le tableau d’octets à la méthode `write` .
+   * Créez un `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données de formulaire au navigateur Web client.
+   * Créez un `com.adobe.idp.Document` en appelant le `FormsResult` object ‘s `getOutputContent` .
+   * Créez un `java.io.InputStream` en appelant le `com.adobe.idp.Document` de `getInputStream` .
+   * Créez un tableau d’octets pour le remplir avec le flux de données de formulaire en appelant la fonction `InputStream` de `read` et transmission du tableau d’octets en tant qu’argument.
+   * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets au `write` .
 
 
 **Voir également**
@@ -326,72 +326,72 @@ Pour préremplir un formulaire avec une disposition souple à l’aide de l’AP
 
 1. Création d’une source de données XML en mémoire
 
-   * Créez un objet Java `DocumentBuilderFactory` en appelant la méthode `DocumentBuilderFactory` class’ `newInstance` .
-   * Créez un objet Java `DocumentBuilder` en appelant la méthode `newDocumentBuilder` de l’objet `DocumentBuilderFactory`.
-   * Appelez la méthode `newDocument` de l’objet `DocumentBuilder` pour instancier un objet `org.w3c.dom.Document`.
-   * Créez l’élément racine de la source de données XML en appelant la méthode `createElement` de l’objet `org.w3c.dom.Document`. Cela crée un objet `Element` qui représente l’élément racine. Transmettez une valeur string représentant le nom de l’élément à la méthode `createElement` . Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément racine au document en appelant la méthode `appendChild` de l’objet `Document` et transmettez l’objet d’élément racine en tant qu’argument. Les lignes de code suivantes présentent cette logique d’application :
+   * Création d’un Java `DocumentBuilderFactory` en appelant la fonction `DocumentBuilderFactory` class’ `newInstance` .
+   * Création d’un Java `DocumentBuilder` en appelant la fonction `DocumentBuilderFactory` de `newDocumentBuilder` .
+   * Appelez le `DocumentBuilder` de `newDocument` pour instancier une `org.w3c.dom.Document` .
+   * Créez l’élément racine de la source de données XML en appelant la méthode `org.w3c.dom.Document` de `createElement` . Cela crée une `Element` qui représente l’élément racine. Transmettez une valeur string représentant le nom de l’élément au `createElement` . Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément racine au document en appelant la fonction `Document` de `appendChild` et transmettez l’objet d’élément racine en tant qu’argument. Les lignes de code suivantes présentent cette logique d’application :
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * Créez l’élément d’en-tête de la source de données XML en appelant la méthode `createElement` de l’objet `Document`. Transmettez une valeur string représentant le nom de l’élément à la méthode `createElement` . Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément d’en-tête à l’élément racine en appelant la méthode `appendChild` de l’objet `root` et transmettez l’objet d’élément d’en-tête en tant qu’argument. Les éléments XML ajoutés à l’élément d’en-tête correspondent à la partie statique du formulaire. Les lignes de code suivantes présentent cette logique d’application :
+   * Créez l’élément d’en-tête de la source de données XML en appelant la fonction `Document` de `createElement` . Transmettez une valeur string représentant le nom de l’élément au `createElement` . Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément d’en-tête à l’élément racine en appelant la fonction `root` de `appendChild` et transmettez l’objet d’élément d’en-tête en tant qu’argument. Les éléments XML ajoutés à l’élément d’en-tête correspondent à la partie statique du formulaire. Les lignes de code suivantes présentent cette logique d’application :
 
       ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Créez un élément enfant qui appartient à l’élément d’en-tête en appelant la méthode `createElement` de l’objet `Document` et transmettez une valeur string qui représente le nom de l’élément. Convertissez la valeur de retour en `Element`. Ensuite, définissez une valeur pour l’élément enfant en appelant sa méthode `appendChild` et transmettez la méthode `createTextNode` de l’objet `Document` en tant qu’argument. Spécifiez une valeur string qui apparaît comme valeur de l’élément enfant. Enfin, ajoutez l’élément enfant à l’élément d’en-tête en appelant la méthode `appendChild` de l’élément d’en-tête et transmettez l’objet d’élément enfant comme argument. Les lignes de code suivantes présentent cette logique d’application :
+   * Créez un élément enfant qui appartient à l’élément d’en-tête en appelant la fonction `Document` de `createElement` et transmettez une valeur string qui représente le nom de l’élément. Convertissez la valeur de retour en `Element`. Ensuite, définissez une valeur pour l’élément enfant en appelant son `appendChild` et transmettez la variable `Document` de `createTextNode` comme argument. Spécifiez une valeur string qui apparaît comme valeur de l’élément enfant. Enfin, ajoutez l’élément enfant à l’élément d’en-tête en appelant le `appendChild` et transmettez l’objet d’élément enfant en tant qu’argument. Les lignes de code suivantes présentent cette logique d’application :
 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Ajoutez tous les éléments restants à l’élément d’en-tête en répétant la dernière sous-étape pour chaque champ apparaissant dans la partie statique du formulaire (dans le diagramme de la source de données XML, ces champs sont affichés dans la section A. (Voir [Présentation des sous-groupes de données](#understanding-data-subgroups)).
-   * Créez l’élément de détail de la source de données XML en appelant la méthode `createElement` de l’objet `Document`. Transmettez une valeur string représentant le nom de l’élément à la méthode `createElement` . Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément de détail à l’élément racine en appelant la méthode `appendChild` de l’objet `root` et transmettez l’objet d’élément de détail comme argument. Les éléments XML ajoutés à l’élément de détail correspondent à la partie dynamique du formulaire. Les lignes de code suivantes présentent cette logique d’application :
+   * Ajoutez tous les éléments restants à l’élément d’en-tête en répétant la dernière sous-étape pour chaque champ apparaissant dans la partie statique du formulaire (dans le diagramme de source de données XML, ces champs sont affichés dans la section A. (Voir [Présentation des sous-groupes de données](#understanding-data-subgroups).)
+   * Créez l’élément de détail de la source de données XML en appelant la méthode `Document` de `createElement` . Transmettez une valeur string représentant le nom de l’élément au `createElement` . Convertissez la valeur de retour en `Element`. Ensuite, ajoutez l’élément de détail à l’élément racine en appelant le `root` de `appendChild` et transmettez l’objet d’élément de détail en tant qu’argument. Les éléments XML ajoutés à l’élément de détail correspondent à la partie dynamique du formulaire. Les lignes de code suivantes présentent cette logique d’application :
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Créez un élément enfant qui appartient à l’élément de détail en appelant la méthode `createElement` de l’objet `Document` et transmettez une valeur string qui représente le nom de l’élément. Convertissez la valeur de retour en `Element`. Ensuite, définissez une valeur pour l’élément enfant en appelant sa méthode `appendChild` et transmettez la méthode `createTextNode` de l’objet `Document` en tant qu’argument. Spécifiez une valeur string qui apparaît comme valeur de l’élément enfant. Enfin, ajoutez l’élément enfant à l’élément de détail en appelant la méthode `appendChild` de l’élément de détail et transmettez l’objet de l’élément enfant comme argument. Les lignes de code suivantes présentent cette logique d’application :
+   * Créez un élément enfant qui appartient à l’élément de détail en appelant la fonction `Document` de `createElement` et transmettez une valeur string qui représente le nom de l’élément. Convertissez la valeur de retour en `Element`. Ensuite, définissez une valeur pour l’élément enfant en appelant son `appendChild` et transmettez la variable `Document` de `createTextNode` comme argument. Spécifiez une valeur string qui apparaît comme valeur de l’élément enfant. Enfin, ajoutez l’élément enfant à l’élément de détail en appelant le `appendChild` et transmettez l’objet d’élément enfant en tant qu’argument. Les lignes de code suivantes présentent cette logique d’application :
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * Répétez la dernière sous-étape pour tous les éléments XML à ajouter à l’élément de détail. Pour créer correctement la source de données XML utilisée pour remplir le formulaire de bon de commande, vous devez ajouter les éléments XML suivants à l’élément de détail : `txtDescription`, `numQty` et `numUnitPrice`.
+   * Répétez la dernière sous-étape pour tous les éléments XML à ajouter à l’élément de détail. Pour créer correctement la source de données XML utilisée pour remplir le formulaire de bon de commande, vous devez ajouter les éléments XML suivants à l’élément de détail : `txtDescription`, `numQty`, et `numUnitPrice`.
    * Répétez les deux dernières sous-étapes pour tous les éléments de données utilisés pour préremplir le formulaire.
 
 1. Conversion de la source de données XML
 
-   * Créez un objet `javax.xml.transform.Transformer` en appelant la méthode `javax.xml.transform.Transformer` statique de l’objet `newInstance`.
-   * Créez un objet `Transformer` en appelant la méthode `newTransformer` de l’objet `TransformerFactory`.
+   * Créez un `javax.xml.transform.Transformer` en appelant le `javax.xml.transform.Transformer` statique de l’objet `newInstance` .
+   * Créez un `Transformer` en appelant le `TransformerFactory` de `newTransformer` .
    * Créez un objet `ByteArrayOutputStream` en utilisant son constructeur.
-   * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `org.w3c.dom.Document` créé à l’étape 1.
+   * Créez un `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `org.w3c.dom.Document` qui a été créé à l’étape 1.
    * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `ByteArrayOutputStream`. 
-   * Renseignez l’objet Java `ByteArrayOutputStream` en appelant la méthode `transform` de l’objet `javax.xml.transform.Transformer` et en transmettant les objets `javax.xml.transform.dom.DOMSource` et `javax.xml.transform.stream.StreamResult`.
-   * Créez un tableau d’octets et affectez la taille de l’objet `ByteArrayOutputStream` au tableau d’octets.
-   * Renseignez le tableau d’octets en appelant la méthode `toByteArray` de l’objet `ByteArrayOutputStream`.
-   * Créez un objet `BLOB` à l’aide de son constructeur, appelez sa méthode `setBinaryData` et transmettez le tableau d’octets.
+   * Renseignement du code Java `ByteArrayOutputStream` en appelant le `javax.xml.transform.Transformer` de `transform` et transmission de la méthode `javax.xml.transform.dom.DOMSource` et le `javax.xml.transform.stream.StreamResult` objets.
+   * Créez un tableau d’octets et affectez la taille de la variable `ByteArrayOutputStream` vers le tableau d’octets.
+   * Renseignez le tableau d’octets en appelant la variable `ByteArrayOutputStream` de `toByteArray` .
+   * Créez un `BLOB` en utilisant son constructeur et en appelant son objet `setBinaryData` et transmettez le tableau byte.
 
 1. Rendu d’un formulaire prérempli
 
-   Appelez la méthode `renderPDFForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
+   Appeler la variable `FormsService` de `renderPDFForm` et transmettez les valeurs suivantes :
 
    * Une valeur string qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
-   * Objet `BLOB` contenant les données à fusionner avec le formulaire. Assurez-vous d’utiliser l’objet `BLOB` créé aux étapes 1 et 2.
-   * Objet `PDFFormRenderSpecc` qui stocke les options d’exécution. Pour plus d’informations, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * Objet `URLSpec` contenant des valeurs URI requises par le service Forms.
-   * Objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif qui vous permet de spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
-   * Objet `com.adobe.idp.services.holders.BLOBHolder` vide renseigné par la méthode . Il est utilisé pour stocker le formulaire PDF rendu.
-   * Objet `javax.xml.rpc.holders.LongHolder` vide renseigné par la méthode . (Cet argument stocke le nombre de pages dans le formulaire).
-   * Objet `javax.xml.rpc.holders.StringHolder` vide renseigné par la méthode . (Cet argument stocke la valeur du paramètre régional).
-   * Objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
+   * A `BLOB` contenant les données à fusionner avec le formulaire. Veillez à utiliser la variable `BLOB` qui a été créé aux étapes 1 et 2.
+   * A `PDFFormRenderSpecc` qui stocke les options d’exécution. Pour plus d’informations, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * A `URLSpec` contenant des valeurs URI requises par le service Forms.
+   * A `java.util.HashMap` qui stocke les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+   * Une valeur vide `com.adobe.idp.services.holders.BLOBHolder` qui est renseigné par la méthode . Il est utilisé pour stocker le formulaire de PDF rendu.
+   * Une valeur vide `javax.xml.rpc.holders.LongHolder` qui est renseigné par la méthode . (Cet argument stocke le nombre de pages dans le formulaire).
+   * Une valeur vide `javax.xml.rpc.holders.StringHolder` qui est renseigné par la méthode . (Cet argument stocke la valeur du paramètre régional).
+   * Une valeur vide `com.adobe.idp.services.holders.FormsResultHolder` qui contiendra les résultats de cette opération.
 
-   La méthode `renderPDFForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` transmis en tant que valeur du dernier argument avec un flux de données de formulaire qui doit être écrit dans le navigateur Web client.
+   Le `renderPDFForm` renseigne la méthode `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
-   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de l’objet `com.adobe.idp.services.holders.FormsResultHolder`.
-   * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-   * Obtenez le type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
-   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
-   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
-   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur Web client. Transmettez le tableau d’octets à la méthode `write` .
+   * Créez un `FormResult` en obtenant la valeur de la variable `com.adobe.idp.services.holders.FormsResultHolder` de `value` membre de données.
+   * Créez un `BLOB` qui contient des données de formulaire en appelant la méthode `FormsResult` de `getOutputContent` .
+   * Obtention du type de contenu de la variable `BLOB` en appelant son objet `getContentType` .
+   * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant sa propriété `setContentType` et transmettre le type de contenu de la méthode `BLOB` .
+   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
+   * Créez un tableau d’octets et renseignez-le en appelant la variable `BLOB` de `getBinaryData` . Cette tâche affecte le contenu de la `FormsResult` vers le tableau d’octets.
+   * Appeler la variable `javax.servlet.http.HttpServletResponse` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets au `write` .
 
    >[!NOTE]
    >
-   >La méthode `renderPDFForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` transmis en tant que valeur du dernier argument avec un flux de données de formulaire qui doit être écrit dans le navigateur Web client.
+   >Le `renderPDFForm` renseigne la méthode `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
 **Voir également**
 

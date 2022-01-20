@@ -14,7 +14,7 @@ exl-id: 0c80ee60-d2dd-49ad-a283-81fdb1fd201e
 source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
 source-wordcount: '258'
-ht-degree: 80%
+ht-degree: 85%
 
 ---
 
@@ -26,7 +26,7 @@ AEM fournit plusieurs API pour le développement d’applications. La liste suiv
 
 * [Différences entre les API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/diff-previous/changes.html)
 
-* [Documentation de l’API de l’IU (compatible avec les écrans tactiles) Granite](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+* [Documentation de l’API de l’IU (compatible avec les écrans tactiles) Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 * [Guide de l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
@@ -47,7 +47,7 @@ API de diffusion et de gestion de contenu AEM :
 
 * Composants principaux (JSON)
 
-   * [Exportateur JSON](/help/sites-developing/json-exporter.md)
+   * [Exportateur JSON ](/help/sites-developing/json-exporter.md)
    * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md)
    * Pour plus d’informations, consultez la [section Composants du Guide de l’utilisateur pour le développement](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js).
 

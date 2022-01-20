@@ -96,7 +96,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Appuyez/cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
-1. Connectez-vous à [!DNL Experience Manager] Assets en tant qu’approbateur et accédez à la console Ressources. Pour approuver des ressources, appuyez/cliquez sur l’icône **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
+1. Connectez-vous à [!DNL Experience Manager] Ressources en tant qu’approbateur et accédez à la console Ressources. Pour approuver des ressources, appuyez/cliquez sur l’icône **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
 1. Sur la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis appuyez/cliquez sur **[!UICONTROL Réviser]**.
 1. Toutes les ressources situées dans la collection sont visibles dans le panneau de révision. Sélectionnez les ressources, puis appuyez/cliquez sur l’icône **[!UICONTROL Approuver/Rejeter]** pour approuver ou rejeter les ressources selon les besoins.
 

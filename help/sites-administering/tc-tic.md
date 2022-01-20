@@ -77,7 +77,7 @@ Si différentes parties de votre site web impliquent différentes exigences en m
 
 Une fois que vous avez configuré une structure d’intégration de traduction, vous pouvez l’[associer aux pages](/help/sites-administering/tc-prep.md) qui l’utilisent.
 
-**Remarque :** Pour une présentation des fonctionnalités de traduction de contenu dans AEM, voir  [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md).
+**Remarque :** Pour un aperçu des fonctionnalités de traduction de contenu dans AEM, voir [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md).
 
 Une configuration unique de la structure contrôle la façon de traduire le contenu d’une page, le contenu d’une communauté et les ressources.
 ![chlimage_1-386](assets/translation-config-64.jpg)
@@ -137,7 +137,7 @@ Les propriétés des communautés contrôlent la façon dont le contenu créé p
 |---|---|
 | Fournisseur de traduction | Sélectionnez le fournisseur de traduction pour effectuer la traduction. Le fournisseur pour lequel des configurations de cloud sont créées est répertorié dans la liste. |
 | Catégorie de contenu | Une catégorie qui décrit le contenu que vous traduisez. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions. |
-| Choisissez Un Paramètre Régional À Utiliser Comme Magasin De Partage Global | (Facultatif) Si vous sélectionnez un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue s’affichent dans une conversation globale. Par convention, choisissez la langue de base [langue](/help/communities/sites-console.md#translation) du site web. Si vous sélectionnez No Common Store (Pas de magasin commun), la traduction globale sera désactivée. Par défaut, la traduction globale est désactivée. |
+| Choisissez Un Paramètre Régional À Utiliser Comme Magasin De Partage Global | (Facultatif) Si vous sélectionnez un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue s’affichent dans une conversation globale. Par convention, choisissez la langue de votre choix. [langue de base](/help/communities/sites-console.md#translation) pour le site web. Si vous sélectionnez No Common Store (Pas de magasin commun), la traduction globale sera désactivée. Par défaut, la traduction globale est désactivée. |
 
 ### Propriétés de configuration des ressources {#assets-configuration-properties}
 
@@ -207,7 +207,7 @@ Lorsque vous associez une page à une configuration de cloud, les descendants de
 
 Lorsque cela est nécessaire, vous pouvez remplacer l’association dans une page descendante. Par exemple, le contenu d’un site web concerne principalement l’habillement. Cependant, une branche des pages décrit l’entreprise. La page principale du site est associée à une structure d’intégration de traduction qui spécifie la traduction automatique à l’aide de la catégorie Habillement. La branche qui décrit l’entreprise utilise une structure qui effectue une traduction automatique à l’aide la catégorie Général.
 
-De plus, pour toutes les communautés [composants SCF](/help/communities/scf.md) sur les pages, le contenu généré par l’utilisateur (UGC) inclura la possibilité pour les utilisateurs de traduire le contenu. Pour plus d’informations, voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).
+En outre, pour toutes les communautés [Composants SCF](/help/communities/scf.md) sur les pages, le contenu généré par l’utilisateur inclut la possibilité pour les utilisateurs de traduire le contenu. Pour plus d’informations, voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).
 
 ### Association d’une page à un fournisseur de traduction {#associating-a-page-with-a-translation-provider}
 

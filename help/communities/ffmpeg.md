@@ -1,8 +1,8 @@
 ---
 title: FFmpeg pour les communautés
-seo-title: FFmpeg pour les communautés
+seo-title: FFmpeg for Communities
 description: Installation et configuration de FFmpeg pour Communities
-seo-description: Installation et configuration de FFmpeg pour Communities
+seo-description: How to install and configure FFmpeg for Communities
 uuid: ef2f821c-70e9-4889-a8d7-a93b10a1d428
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 9ed54ee3-3509-4a43-a710-90f4543ccaf3
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '305'
 ht-degree: 1%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 1%
 
 ## Présentation {#overview}
 
-FFmpeg est une solution pour la conversion et la diffusion en continu d’audio et de vidéo. Lorsqu’elle est installée, elle est utilisée pour le transcodage correct des [ressources vidéo](../../help/sites-authoring/default-components-foundation.md#video) ainsi que pour la fonction d’activation des communautés AEM.
+FFmpeg est une solution pour la conversion et la diffusion en continu d’audio et de vidéo. Lorsqu’elle est installée, elle est utilisée pour le transcodage correct de [ressources vidéo](../../help/sites-authoring/default-components-foundation.md#video) ainsi que pour la fonction d’activation d’AEM Communities.
 
 FFmpeg est utilisé dans l’environnement de création pour obtenir des métadonnées pour les ressources d’activation chargées, ainsi que pour générer une miniature à afficher lors de la mise en liste de la ressource d’activation.
 
 ## Installation de FFmpeg {#installing-ffmpeg}
 
-FFmpeg doit être installé sur le ou les serveurs hébergeant la ou les instances *author* AEM.
+FFmpeg doit être installé sur le ou les serveurs hébergeant l’AEM *author* instances.
 
 1. Accédez à [https://www.ffmpeg.org](https://www.ffmpeg.org/)
 1. Téléchargez la dernière version de FFmpeg pour votre environnement spécifique (Macintosh, Windows ou Linux).
@@ -53,20 +53,20 @@ Pour modifier le workflow Ressources de mise à jour de gestion des actifs numé
 
 * Connexion à l’instance d’auteur avec des privilèges d’administrateur
 * À partir de la navigation globale : **[!UICONTROL Outils > Processus > Modèles]**
-* Localisez **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**
+* Localiser **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**
 * Double-cliquez pour ouvrir le workflow à modifier dans l’interface utilisateur classique.
 
    Emplacement obtenu : [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Double-cliquez sur l’étape **[!UICONTROL Transcodage FFmpeg]** pour accéder à la boîte de dialogue Propriétés des étapes .
-* Sous l’onglet **[!UICONTROL Processus]** :
+* Double-cliquez sur le **[!UICONTROL Transcodage FFmpeg]** pour accéder à la boîte de dialogue Propriétés des étapes
+* Sous , **[!UICONTROL Processus]** tab :
 
-   * **[!UICONTROL Arugments]** : Effacer toutes les entrées pour désactiver le transcodage Valeurs par défaut :  `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+   * **[!UICONTROL Arugments]**: Effacer toutes les entrées pour désactiver le transcodage Valeurs par défaut : `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
 ![chlimage_1-372](assets/chlimage_1-372.png)
 
-* Sélectionnez **[!UICONTROL OK]** pour fermer la boîte de dialogue `Step Properties`.
+* Sélectionner **[!UICONTROL OK]** pour fermer la `Step Properties` dialog
 
-* Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le workflow `DAM Update Asset`.
+* Sélectionner **[!UICONTROL Enregistrer]** pour enregistrer le `DAM Update Asset` workflow
 
    (coin supérieur gauche)

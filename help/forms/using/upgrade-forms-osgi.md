@@ -1,8 +1,8 @@
 ---
 title: Mise à niveau vers AEM 6.4 Forms
-seo-title: Mise à niveau vers AEM 6.4 Forms
+seo-title: Upgrade to AEM 6.4 Forms
 description: 'Vous pouvez effectuer une mise à niveau directe à partir de AEM 6.1 Forms, AEM 6.2 Forms et LiveCycle ES4 SP1 vers AEM 6.3 Forms. '
-seo-description: 'Vous pouvez effectuer une mise à niveau directe à partir de AEM 6.1 Forms, AEM 6.2 Forms et LiveCycle ES4 SP1 vers AEM 6.3 Forms. '
+seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 183ed9c6-6a9a-4932-8405-5ae2c6fac1ec
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '827'
 ht-degree: 86%
 
 ---
@@ -31,7 +31,7 @@ Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.2 Forms o
    1. Installez le dernier Service Pack et les derniers correctifs pour AEM 6.2 Forms ou AEM 6.3 Forms. Pour plus d’informations, voir :
 
       * [Notes de mise à jour d’AEM 6.2](https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html)
-      * [Notes de mise à jour d’AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
+      * [Notes de mise à jour d’AEM 6.3](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html)
       * [AEM Sustenance Hub](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr)
    1. Préparez l’instance source pour la mise à niveau. Pour obtenir des instructions détaillées, reportez-vous à l’article [Mise à niveau vers AEM 6.4](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance).
    1. Téléchargez [AEM 6.4 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software).
@@ -39,13 +39,13 @@ Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.2 Forms o
 
       `chmod -R 755 ../crx-quickstart`
 
-   1. Mettez à niveau votre instance d’AEM vers AEM 6.3. Pour obtenir des instructions étape par étape, voir [Mise à niveau vers la version 6.4](/help/sites-deploying/upgrade.md) d’.
+   1. Mettez à niveau votre instance AEM vers AEM 6.3. Pour obtenir des instructions étape par étape, reportez-vous à la section [Mise à niveau vers AEM 6.4](/help/sites-deploying/upgrade.md).
 
       Avant de passer aux étapes suivantes, attendez que le journal &lt;crx-repository>/error.log contiennent les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED.
 
       >[!NOTE]
       >
-      >Une fois le serveur en marche, quelques lots AEM Forms conservent l’état d’installation. Le nombre de lots peut varier d’une installation à l’autre. Vous pouvez ignorer l’état de ces lots en toute sécurité. Les lots sont répertoriés à `https://[server]:[port]/system/console/`.
+      >Une fois le serveur en marche, quelques lots AEM Forms conservent l’état d’installation. Le nombre de lots peut varier d’une installation à l’autre. Vous pouvez ignorer l’état de ces lots en toute sécurité. Les lots sont répertoriés à l’adresse `https://[server]:[port]/system/console/`.
 
 
 1. Installation du module complémentaire AEM Forms. Les étapes sont énumérées ci-dessous :
@@ -54,12 +54,12 @@ Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.2 Forms o
    1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
    1. Dans la section **[!UICONTROL Filtres]** :
       1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
-      1. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Téléchargements de recherche]** pour filtrer les résultats.
-   1. Appuyez sur le nom du module approprié à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur (EULA)]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+      1. Sélectionnez la version et le type du package. Vous pouvez également utiliser la variable **[!UICONTROL Recherche de téléchargements]** pour filtrer les résultats.
+   1. Appuyez sur le nom du package correspondant à votre système d’exploitation, puis sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur]**, puis appuyez sur **[!UICONTROL Télécharger]**.
    1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
    1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
-      Vous pouvez également télécharger le package à l’aide du lien direct répertorié dans l’ [article Versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) .
+      Vous pouvez également télécharger le package à l’aide du lien direct répertorié dans la section [Versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) article.
 
       >[!NOTE]
       >
@@ -115,4 +115,4 @@ Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.2 Forms o
 
 ## AEM 6.0 Forms et AEM 6.1 Forms vers AEM 6.4 Forms {#upgrade-aem-forms-60-61-to-64}
 
-Le chemin de mise à niveau directe d’**AEM 6.0 Forms** et **AEM 6.1 Forms** vers AEM 6.4 Forms n’est pas disponible. Effectuez une mise à niveau intermédiaire [vers AEM 6.2 Forms](/help/forms/using/upgrade.md) ou [vers AEM 6.3 Forms](/help/forms/using/upgrade.md), puis effectuez une mise à niveau d’6.2 Forms ou d’6.3 Forms vers la version 6.4.
+Le chemin de mise à niveau directe d’**AEM 6.0 Forms** et **AEM 6.1 Forms** vers AEM 6.4 Forms n’est pas disponible. Effectuer une opération intermédiaire [Mise à niveau vers AEM 6.2 Forms](/help/forms/using/upgrade.md) ou [Mise à niveau vers AEM 6.3 Forms](/help/forms/using/upgrade.md) puis effectuez une mise à niveau d’AEM 6.2 Forms ou d’AEM 6.3 Forms vers la version 6.4 Forms.

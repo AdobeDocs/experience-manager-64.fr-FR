@@ -1,8 +1,8 @@
 ---
 title: Utilisation des jeux de formulaires dans l’espace de travail AEM Forms
-seo-title: Utilisation des jeux de formulaires dans l’espace de travail AEM Forms
+seo-title: Working with Formsets in AEM Forms workspace
 description: Un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés comme un ensemble unique de formulaires aux utilisateurs finaux. Découvrez comment utiliser des jeux de formulaires dans l’espace de travail AEM Forms.
-seo-description: Un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés comme un ensemble unique de formulaires aux utilisateurs finaux. Découvrez comment utiliser des jeux de formulaires dans l’espace de travail AEM Forms.
+seo-description: A formset is a collection of HTML5 forms grouped and presented as a single set of forms to end users. Learn how you can work with formsets in AEM Forms workspace.
 uuid: 77f81465-bd60-4aee-8507-585fe08adb78
 contentOwner: vishgupt
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: c1793e2e-413c-4b6f-b96b-09e011f06263
 exl-id: 4e39f6dd-b7a3-4c6c-be1f-66b9a5743352
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 73%
+source-wordcount: '346'
+ht-degree: 71%
 
 ---
 
@@ -26,15 +26,15 @@ L’espace de travail AEM Forms prend en charge les jeux de formulaires. Avec le
 ## Comment joindre un jeu de formulaires au point de départ dans l’application d’espace de travail AEM Forms {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
 
 1. Créez un flux de processus d’entreprise dans Workbench. Pour plus d’informations, voir [Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
-1. Dans les propriétés de processus du point de départ, sélectionnez **Use A CRX Asset** dans Presentation &amp; Data.
+1. Dans les propriétés de processus du point de départ, sélectionnez **Utilisation d’une ressource CRX** dans Présentation et données.
 
-   ![3-1](assets/1-1.png)
+   ![1-1](assets/1-1.png)
 
 1. Cliquez sur ![parcourir](assets/browse.png) (Parcourir) en regard du chemin d’accès de la ressource CRX. La boîte de dialogue Sélection de l’actif de formulaire s’affiche.
 
    ![2](assets/2.png)
 
-1. Cliquez sur l’onglet **Jeu de formulaires**, sélectionnez le jeu de formulaires approprié dans la liste, puis cliquez sur **OK**.
+1. Cliquez sur le bouton **Jeu de formulaires** , sélectionnez le jeu de formulaires approprié dans la liste, puis cliquez sur **OK**.
 
 1. Déployez l’application après la mise à jour d’autres propriétés de processus appropriées.
 

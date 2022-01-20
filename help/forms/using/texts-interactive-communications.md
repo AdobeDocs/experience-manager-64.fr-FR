@@ -1,17 +1,17 @@
 ---
 title: Textes dans les communications interactives
-seo-title: Texte dans les communications interactives
+seo-title: Text in Interactive Communications
 description: 'Création et modification de fragments de document texte à utiliser dans les communications interactives - Texte est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont des fragments de condition, de liste et de mise en page.  '
-seo-description: Création et modification des fragments de document texte à utiliser dans les communications interactives
+seo-description: Creating and editing text document fragments to be used in Interactive Communications
 uuid: b2188d34-14f9-4c4e-bbe0-a2e763ed2958
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
-feature: Communication interactive
+feature: Interactive Communication
 exl-id: a689aead-7b39-4d66-8922-ae8910c5e9ef
 source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2233'
 ht-degree: 72%
 
 ---
@@ -29,16 +29,16 @@ Le fragment de document texte dans la communication interactive prend en charge 
 * **Objets de modèle de données** : les propriétés des données utilisent une source de données d’arrière-plan.
 * **Contenu basé sur des règles** : parties du contenu d’un texte qui apparaissent ou sont masquées en fonction d’une règle. Une règle peut également être basée sur des propriétés et des variables de modèle de données de formulaire.
 * **Variables** : dans le fragment de document texte, les variables ne sont pas liées à une source de données d’arrière-plan. L’agent remplit/sélectionne des valeurs dans des variables ou lie les variables aux sources de données lors de la préparation de la communication interactive pour l’envoyer à un post-traitement.
-* **Répétez** : Vous pouvez disposer d’informations dynamiques dans votre communication interactive, telles que des transactions dans un relevé de carte de crédit, dont le nombre d’occurrences peut continuer à changer avec chaque communication interactive générée. La répétition permet de mettre en forme et structurer ces informations dynamiques. Pour plus d’informations, voir [Condition intégrée et répétition](cm-inline-condition.md).
+* **Répéter**: Vous pouvez disposer d’informations dynamiques dans votre communication interactive, telles que des transactions dans un relevé de carte de crédit, dont le nombre d’occurrences peut continuer à changer avec chaque communication interactive générée. La répétition permet de mettre en forme et structurer ces informations dynamiques. Pour plus d’informations, voir [Condition intégrée et répétition](cm-inline-condition.md).
 
 ## Créer du texte {#createtext}
 
-1. Sélectionnez **`[!UICONTROL Forms]`** > **[!UICONTROL Fragments de document]**.
-1. Sélectionnez **`[!UICONTROL Create]`** > **[!UICONTROL Texte]**.
+1. Sélectionner **`[!UICONTROL Forms]`** > **[!UICONTROL Fragments de document]**.
+1. Sélectionner **`[!UICONTROL Create]`** > **[!UICONTROL Texte]**.
 1. Saisissez les informations suivantes :
 
-   * **[!UICONTROL Titre]** : (Facultatif) Saisissez le titre du fragment de document texte. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés.
-   * **[!UICONTROL Nom]** : Nom unique du texte, dans un dossier. Aucun fragment de document (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre fragment de document dans un dossier. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les nombres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom . Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
+   * **[!UICONTROL Titre]**: (Facultatif) Saisissez le titre du fragment de document texte. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés.
+   * **[!UICONTROL Nom]**: Nom unique du texte, dans un dossier. Aucun fragment de document (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre fragment de document dans un dossier. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les nombres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom . Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
    * **[!UICONTROL Description]** : entrez une description du texte.
    * **[!UICONTROL Modèle de données de formulaire]** : facultativement, sélectionnez le bouton radio Modèle de données de formulaire pour créer le texte en fonction d’un modèle de données de formulaire. Lorsque vous sélectionnez le bouton radio Modèle de données de formulaire, le champ **[!UICONTROL Modèle de données de formulaire]** s’affiche. Recherchez et sélectionnez un modèle de données de formulaire. Lorsque vous créez un texte et une condition pour une communication interactive, veillez à utiliser le même modèle de données que celui que vous avez l’intention d’utiliser dans la communication interactive. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données](/help/forms/using/data-integration.md).
    * **[!UICONTROL Balises]** : éventuellement, pour créer une balise personnalisée, entrez la valeur dans le champ de texte et appuyez sur Entrée. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont créées.
@@ -70,7 +70,7 @@ Le fragment de document texte dans la communication interactive prend en charge 
 
 Vous pouvez modifier un fragment de document texte existant en suivant les étapes ci-dessous. Vous pouvez également choisir de modifier un fragment de document texte dans un éditeur de communication interactive.
 
-1. Sélectionnez **`[!UICONTROL Forms]`** > **[!UICONTROL Fragments de document]**.
+1. Sélectionner **`[!UICONTROL Forms]`** > **[!UICONTROL Fragments de document]**.
 1. Accédez à un fragment de document texte et sélectionnez-le.
 1. Appuyez sur **[!UICONTROL Modifier]**.
 1. Effectuez les modifications nécessaires. Pour plus d’informations sur les options dans le texte, consultez [Créer du texte](#createtext).
@@ -84,9 +84,9 @@ Si vous avez spécifié un modèle de données de formulaire lors de la créatio
 
 ![Insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* Pour insérer une propriété FDM dans du texte, placez le curseur à l’endroit où vous souhaitez insérer la propriété, puis sélectionnez la propriété **`[A]`** dans le volet de gauche en appuyant dessus, et appuyez sur **`[B]`** **[!UICONTROL Ajouter la sélection]**. Vous pouvez également appuyer deux fois sur la propriété pour l’insérer à la position du curseur **`[C]`**. Les propriétés du modèle de données de formulaire sont mises en surbrillance dans une couleur d’arrière-plan brunâtre.
+* Pour insérer une propriété FDM dans du texte, placez le curseur à l’endroit où vous souhaitez insérer la propriété, puis sélectionnez la propriété **`[A]`** dans le volet de gauche en appuyant dessus, puis appuyez sur **`[B]`** **[!UICONTROL Ajouter la sélection]**. Vous pouvez également appuyer deux fois sur la propriété pour l’insérer au niveau de la propriété **`[C]`** position du curseur. Les propriétés du modèle de données de formulaire sont mises en surbrillance dans une couleur d’arrière-plan brunâtre.
 
-* Pour permettre aux agents de modifier la valeur d’une propriété FDM dans l’interface utilisateur de l’agent tout en [Préparant et envoyant une communication interactive](/help/forms/using/prepare-send-interactive-communication.md) à l’aide de l’interface utilisateur de l’agent, appuyez sur l’icône de verrouillage **`[D]`** pour cette propriété et assurez-vous qu’elle est à l’état déverrouillé. L’état par défaut de la propriété est verrouillé et un agent ne peut pas modifier la propriété dans l’interface utilisateur de l’agent.
+* Pour permettre aux agents de modifier la valeur d’une propriété FDM dans l’interface utilisateur de l’agent pendant que [Préparation et envoi d’une communication interactive](/help/forms/using/prepare-send-interactive-communication.md) à l’aide de l’interface utilisateur de l’agent, appuyez sur la **`[D]`** icône de verrouillage pour cette propriété et assurez-vous qu’elle est à l’état déverrouillé. L’état par défaut de la propriété est verrouillé et un agent ne peut pas modifier la propriété dans l’interface utilisateur de l’agent.
 
 Vous pouvez également utiliser les propriétés du modèle de données de formulaire pour construire des règles d’affichage ou de masquage de parties du contenu. Pour en savoir plus, consultez [Créer des règles dans le texte](#rules).
 
@@ -100,7 +100,7 @@ Vous pouvez utiliser des variables plutôt que des propriétés du modèle de do
 * Le fragment de document texte ne dispose pas de modèle de données de formulaire au moment de sa création. Vous pouvez insérer des variables et les lier ensuite aux propriétés du modèle de données du formulaire au moment de la création de la communication interactive.
 * Vous devez lier et récupérer du texte à partir d’un fragment de document texte. Seuls ces fragments de document texte peuvent être liés à des variables qui ne contiennent aucune variable.
 
-Lors de la création ou de la modification d’un fragment de document texte, vous pouvez créer et insérer des variables. Les variables que vous créez apparaissent dans l’onglet Données de l’interface utilisateur de l’agent. L’agent spécifie les valeurs des variables pendant [Préparez et envoyez la communication interactive à l’aide de l’interface utilisateur de l’agent](/help/forms/using/prepare-send-interactive-communication.md).
+Lors de la création ou de la modification d’un fragment de document texte, vous pouvez créer et insérer des variables. Les variables que vous créez apparaissent dans l’onglet Données de l’interface utilisateur de l’agent. L’agent spécifie les valeurs des variables pendant que [Préparation et envoi d’une communication interactive à l’aide de l’interface utilisateur de l’agent](/help/forms/using/prepare-send-interactive-communication.md).
 
 ### Créer des variables {#create-variables}
 
@@ -114,12 +114,12 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
 
    Le volet Créer des variables apparaît.
 
-1. Saisissez les informations suivantes et appuyez sur **[!UICONTROL Créer]** :
+1. Saisissez les informations suivantes et appuyez sur **[!UICONTROL Créer]**:
 
    * **[!UICONTROL Nom*]** : nom de la variable.
    * **[!UICONTROL Description]** : entrez éventuellement une description de la variable.
    * **[!UICONTROL Type*]** : sélectionnez un type de variable : Chaîne, Nombre, Valeur booléenne ou Date.
-   * **[!UICONTROL Autoriser les valeurs spécifiques uniquement]** : pour les variables de type Chaîne et Nombre, vous pouvez garantir que l’agent choisisse parmi un ensemble spécifique de valeurs pour un espace réservé dans l’interface utilisateur de l’agent. Pour spécifier l’ensemble de valeurs, sélectionnez cette option, puis spécifiez des valeurs séparées par des virgules qui sont autorisées dans le champ **[!UICONTROL Valeurs]**.
+   * **[!UICONTROL Autoriser les valeurs spécifiques uniquement]** : pour les variables de type Chaîne et Nombre, vous pouvez garantir que l’agent choisisse parmi un ensemble spécifique de valeurs pour un espace réservé dans l’interface utilisateur de l’agent. Pour spécifier l’ensemble de valeurs, sélectionnez cette option, puis spécifiez les valeurs séparées par des virgules qui sont autorisées dans la variable **[!UICONTROL Valeurs]** champ .
 
 1. Appuyez sur **[!UICONTROL Créer]**.
 
@@ -213,9 +213,9 @@ Pour mettre en surbrillance ou mettre en évidence des parties de texte dans un 
 
 ![textbackgroundcolorapply-1](assets/textbackgroundcolorapplied-1.png)
 
-Vous pouvez soit directement appuyer sur une couleur de base **`[A]`** présente dans la palette Couleurs de base, soit appuyer sur **Sélectionner** après avoir utilisé le curseur **`[B]`** pour choisir l’nuance appropriée de la couleur.
+Vous pouvez appuyer directement sur une couleur de base. **`[A]`** présente dans la palette Couleurs de base ou appuyez sur **Sélectionner** après avoir utilisé le curseur **`[B]`** pour choisir l’nuance appropriée de la couleur.
 
-Vous pouvez également accéder à l’onglet Avancé pour sélectionner la teinte, la luminosité et la saturation **`[C]`** appropriée afin de créer la couleur précise, puis appuyer sur Sélectionner **`[D]`** pour appliquer la couleur afin de mettre le texte en surbrillance.
+Vous pouvez également accéder à l’onglet Avancé pour sélectionner la teinte, la luminosité et la saturation appropriées. **`[C]`** pour créer une couleur précise, puis appuyez sur Sélectionner . **`[D]`** pour appliquer la couleur pour mettre le texte en surbrillance.
 
 ![textbackgroundcolor-2](assets/textbackgroundcolor-2.png)
 
@@ -245,7 +245,7 @@ Si nécessaire, insérez des caractères spéciaux dans le fragment de document.
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
 
-L’éditeur de texte offre une prise en charge intégrée de 210 caractères spéciaux. L’administrateur peut [ajouter la prise en charge de caractères spéciaux plus ou personnalisés en personnalisant](/help/forms/using/custom-special-characters.md).
+L’éditeur de texte offre une prise en charge intégrée de 210 caractères spéciaux. L’administrateur peut [ajout de la prise en charge de caractères spéciaux plus ou personnalisés par personnalisation](/help/forms/using/custom-special-characters.md).
 
 ## Recherche et remplacement de texte {#search-features}
 

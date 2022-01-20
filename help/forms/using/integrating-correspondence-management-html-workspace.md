@@ -1,8 +1,8 @@
 ---
 title: Intégration d’applications tierces à l’espace de travail AEM Forms
-seo-title: Intégration d’applications tierces à l’espace de travail AEM Forms
+seo-title: Integrating third-party applications in AEM Forms workspace
 description: Comment intégrer des applications tierces comme Correspondance Management dans l’espace de travail AEM Forms.
-seo-description: Comment intégrer des applications tierces comme Correspondance Management dans l’espace de travail AEM Forms.
+seo-description: How-to integrate third-party apps like Correspondence Management in AEM Forms workspace.
 uuid: 9649157c-fe28-43bf-a7d3-52ed55a0bf4f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
@@ -10,7 +10,7 @@ discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
 exl-id: 4df9a16c-0853-4bbf-81bb-1856ab55c5ee
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '623'
 ht-degree: 86%
 
 ---
@@ -25,13 +25,13 @@ Par exemple, considérons Correspondence Management comme exemple de candidat po
 
 ## Création d’actifs de Correspondence Management {#create-correspondence-management-assets}
 
-Commencez par créer un exemple de modèle Correspondence Management rendu dans l’espace de travail AEM Forms. Pour plus d’informations, voir [Création d’un modèle de lettre](/help/forms/using/create-letter.md).
+Commencez par créer un exemple de modèle Correspondence Management rendu dans l’espace de travail AEM Forms. Pour plus d’informations, voir [Créer un modèle de lettre](/help/forms/using/create-letter.md).
 
 Accédez au modèle Correspondence Management à son URL pour vérifier si le rendu du modèle Correspondence Management peut être effectué avec succès. L’URL a un modèle similaire à `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 où `encodedLetterId` correspond à l’ID de lettre codé URL. Spécifiez le même identifiant de lettre lors de la définition du processus de rendu pour une tâche d’espace de travail dans Workbench.
 
-## Création d’une tâche pour le rendu et l’envoi d’une lettre dans l’espace de travail AEM  {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
+## Création d’une tâche pour le rendu et l’envoi d’une lettre dans l’espace de travail AEM {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 Avant d’exécuter ces étapes, assurez-vous d’être membre des groupes suivants :
 
@@ -44,7 +44,7 @@ Procédez comme suit pour créer une tâche pour le rendu et l’envoi d’une l
 
 1. Lancez Workbench. Connectez-vous à localhost en tant qu’administrateur.
 1. Cliquez sur Fichier > Nouveau > Application. Dans le champ Nom de l’application, saisissez `CMDemoSample`, puis cliquez sur Terminer.
-1. Sélectionnez `CMDemoSample/1.0` et cliquez avec le bouton droit de la souris `NewProcess`. Dans le champ Nom, saisissez `CMRenderer`, puis cliquez sur Terminer.
+1. Sélectionner `CMDemoSample/1.0` et cliquez avec le bouton droit `NewProcess`. Dans le champ Nom, saisissez `CMRenderer`, puis cliquez sur Terminer.
 1. Faites glisser le sélecteur d’activité du point de départ et configurez-le :
 
    1. Dans Données de présentation, sélectionnez Utiliser un actif CRX.
@@ -100,8 +100,8 @@ Procédez comme suit pour créer une tâche pour le rendu et l’envoi d’une l
    }
    ```
 
-   [Get ](assets/dscsample.zip)
-FileDownload DSC : Un exemple de DSC est disponible dans le  `DSCSample.zip` fichier joint ci-dessus. Téléchargez et décompressez le fichier `DSCSample.zip`. Avant d’utiliser le service DSC, vous devez le configurer. Pour plus d’informations, [Configuration du service DSC](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   [Obtenir le fichier](assets/dscsample.zip)
+Télécharger DSC : Un exemple de DSC est disponible dans la `DSCSample.zip` fichier joint ci-dessus. Téléchargez et décompressez le fichier `DSCSample.zip` fichier . Avant d’utiliser le service DSC, vous devez le configurer. Pour plus d’informations, [Configuration du service DSC](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Dans la boîte de dialogue Définir l’activité, sélectionnez l’activité appropriée tel que GetLetterInstanceInfo et cliquez sur **OK**.
 

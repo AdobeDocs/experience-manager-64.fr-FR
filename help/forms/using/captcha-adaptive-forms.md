@@ -1,18 +1,18 @@
 ---
 title: Utilisation de CAPTCHA dans les formulaires adaptifs
-seo-title: Utilisation de CAPTCHA dans les formulaires adaptifs
+seo-title: Using CAPTCHA in adaptive forms
 description: Découvrez comment configurer le service AEM CAPTCHA ou Google reCAPTCHA dans les formulaires adaptatifs.
-seo-description: Découvrez comment configurer le service AEM CAPTCHA ou Google reCAPTCHA dans les formulaires adaptatifs.
+seo-description: Learn how to configure AEM CAPTCHA or Google reCAPTCHA service in adaptive forms.
 uuid: 8bcb0dd7-b43c-4a36-8f6b-7875b68f9ba1
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author, adaptive_forms
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 1129004b-5e8b-42fd-98ed-f203edde93b9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '655'
 ht-degree: 98%
 
 ---
@@ -54,7 +54,7 @@ Pour mettre en place le service reCAPTCHA dans AEM Forms :
 
 1. Configurez le service cloud pour reCAPTCHA.
 
-   1. Sur votre instance d’auteur AEM, accédez à ![outils](assets/tools.png) > **Cloud Services**.
+   1. Sur votre instance d’auteur AEM, accédez à ![outils](assets/tools.png) >  **Cloud Services**.
    1. Appuyez sur **[!UICONTROL reCAPTCHA]**. La page Configurations s’ouvre. Sélectionnez le conteneur de configurations créé à l’étape précédente et appuyez sur **[!UICONTROL Créer]**.
    1. Indiquez le nom, la clé de site et la clé secrète pour le service reCAPTCHA, puis appuyez sur **[!UICONTROL Créer]** pour créer la configuration du service cloud.
    1. Dans cette boîte de dialogue, spécifiez le site et les clés de site et secrète obtenues à l’étape 1. Appuyez sur **[!UICONTROL Enregistrer les paramètres]** puis sur **[!UICONTROL OK]** pour terminer la configuration.

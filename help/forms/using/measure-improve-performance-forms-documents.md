@@ -1,8 +1,8 @@
 ---
 title: Mesure et amélioration de l’efficacité et de la conversion des formulaires
-seo-title: Mesure et amélioration de l’efficacité et de la conversion des formulaires
+seo-title: Measure and improve effectiveness and conversion of forms
 description: AEM Forms s’intègre aux solutions Adobe Target et Adobe Analytics, ce qui vous permet de mesurer et d’améliorer les performances et le taux de conversion de vos formulaires.
-seo-description: AEM Forms s’intègre aux solutions Adobe Target et Adobe Analytics, ce qui vous permet de mesurer et d’améliorer les performances et le taux de conversion de vos formulaires.
+seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that allows you to measure and improve the performance and conversion rate of your forms.
 uuid: 5876f2f3-1c97-4fb9-a032-b869ee3c6a45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 6b62b280-d101-410a-ba8c-02940f766c32
 exl-id: 364dd7f3-9009-440e-8aff-28e2dac08fe7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1278'
 ht-degree: 93%
 
 ---
@@ -32,9 +32,9 @@ Pour optimiser le retour sur investissement, les entreprises doivent contrôler 
 
 ## La solution {#the-solution}
 
-AEM Forms s’intègre aux solutions [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) et [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - qui peuvent vous aider à surveiller et analyser les performances de vos formulaires et vous permettent d’expérimenter et d’identifier l’expérience qui conduit à un meilleur taux de conversion.
+AEM Forms s’intègre à [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) solutions - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) et [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - qui peuvent vous aider à surveiller et analyser les performances de vos formulaires et vous permettre d’expérimenter et d’identifier l’expérience qui conduit à un meilleur taux de conversion.
 
-## Le flux de travail {#the-workflow}
+## Le processus {#the-workflow}
 
 Voyons en détail la façon dont vous pouvez mesurer les performances et améliorer les taux de conversion des formulaires.
 
@@ -126,7 +126,7 @@ Dans cette étape, vous analyserez les points de données des rapports d’analy
 
 Après avoir analysé ces points de données et formulé une hypothèse, apportez les modifications requises au formulaire.
 
-#### Étape 4 : Valider votre analyse et vos correctifs  {#step-validate-your-analysis-and-fixes}
+#### Étape 4 : Valider votre analyse et vos correctifs {#step-validate-your-analysis-and-fixes}
 
 Dans cette étape, vous allez valider les modifications apportées au formulaire et vérifier si elles influencent le taux de conversion.
 

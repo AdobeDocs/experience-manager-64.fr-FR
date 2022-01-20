@@ -1,8 +1,8 @@
 ---
 title: Outil de migration CRX2OAK
-seo-title: Outil de migration CRX2OAK
+seo-title: CRX2OAK Migration Tool
 description: Notes de mise à jour spécifiques à l’outil de migration CRX2OAK d’Adobe Experience Manager 6.4.
-seo-description: Notes de mise à jour spécifiques à l’outil de migration CRX2OAK d’Adobe Experience Manager 6.4.
+seo-description: Release notes specific to the Adobe Experience Manager 6.4 CRX2OAK Migration tool.
 uuid: 1b582faf-2dc6-41a2-9419-7e82347f9d6c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,8 +12,8 @@ discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
 exl-id: 441c8ba0-f8b2-4c2c-b7be-cfdad9e1e498
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 66%
+source-wordcount: '252'
+ht-degree: 64%
 
 ---
 

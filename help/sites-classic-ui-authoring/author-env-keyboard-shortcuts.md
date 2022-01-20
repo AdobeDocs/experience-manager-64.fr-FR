@@ -1,8 +1,8 @@
 ---
-title: 'Raccourcis clavier pour les consoles  '
-seo-title: 'Raccourcis clavier pour les consoles  '
+title: Raccourcis clavier pour les consoles
+seo-title: Keyboard Shortcuts for Consoles
 description: Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à l’utilisation de consoles et d’autres à la modification de pages.
-seo-description: Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à l’utilisation de consoles et d’autres à la modification de pages.
+seo-description: Various keyboard shortcuts are available throughout AEM. Some apply to the use of consoles, others to page editing.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 exl-id: f98302cf-159b-488b-aa62-8739ad32460c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '114'
 ht-degree: 100%
 
 ---
 
-# Raccourcis clavier pour les consoles  {#keyboard-shortcuts-for-consoles}
+# Raccourcis clavier pour les consoles{#keyboard-shortcuts-for-consoles}
 
 Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à l’utilisation de consoles et d’autres à la [modification de pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
@@ -28,8 +28,8 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 >* Windows : maintenez la touche **Ctrl** enfoncée tout en **cliquant** sur les composants requis.
 >
 >* Mac : maintenez la touche **Cmd** enfoncée tout en **cliquant** sur les composants requis.
->
 
+>
 
 
 ## Raccourcis clavier {#keyboard-shortcuts}

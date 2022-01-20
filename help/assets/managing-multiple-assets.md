@@ -47,11 +47,11 @@ Pour personnaliser la page des propriétés de métadonnées, notamment ajouter,
 
 ## Configuration du nombre maximal de paramètres pour la mise à jour des métadonnées en masse {#configure-limit-for-bulk-metadata-update}
 
-Pour éviter une situation similaire à DOS, [!DNL Experience Manager] limite le nombre de paramètres pris en charge dans une requête Sling. Lors de la mise à jour simultanée de plusieurs fichiers, vous pouvez atteindre le nombre maximal de paramètres et les métadonnées ne sont pas mises à jour pour d’autres fichiers. [!DNL Experience Manager] génère l’avertissement suivant dans les journaux :
+Pour éviter une situation similaire à DOS, procédez comme suit : [!DNL Experience Manager] limite le nombre de paramètres pris en charge dans une requête Sling. Lors de la mise à jour simultanée de plusieurs fichiers, vous pouvez atteindre le nombre maximal de paramètres et les métadonnées ne sont pas mises à jour pour d’autres fichiers. [!DNL Experience Manager] génère l’avertissement suivant dans les journaux :
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Pour modifier cette limite, accédez à **[!UICONTROL Outils > Opérations > Console web]** et modifiez la valeur de [!UICONTROL Paramètres POST max.] dans la [!UICONTROL Gestion des paramètres de requête Sling Apache] configuration OSGi.
+Pour modifier la limite, accédez à **[!UICONTROL Outils > Opérations > Console web]** et modifiez la valeur de [!UICONTROL Nombre maximal de paramètres de POST] in [!UICONTROL Gestion des paramètres de requête Apache Sling] Configuration OSGi.
 
 >[!MORELIKETHIS]
 >

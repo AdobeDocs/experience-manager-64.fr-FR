@@ -1,8 +1,8 @@
 ---
 title: Fonctionnement des rapports de traitement
-seo-title: Fonctionnement des rapports de traitement
+seo-title: How Process Reporting Works
 description: Description des services qui constituent les rapports de processus d’AEM Forms on JEE et présentation de l’interface utilisateur des rapports de processus
-seo-description: Description des services qui constituent les rapports de processus d’AEM Forms on JEE et présentation de l’interface utilisateur des rapports de processus
+seo-description: Description of the services that make up the AEM Forms on JEE Process Reporting and an introduction to the Process Reporting UI
 uuid: 4631b734-a679-495c-a708-2348bf22c1f7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: a1af9920-5d2a-462f-bdee-ccec4c047c5b
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '345'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Les rapports de processus se composent des modules suivants :
 
 ![processreportingarchitarchitecture](assets/processreportingarchitecture.png)
 
-## Modules de reporting de processus {#process-reporting-modules}
+## Modules Process Reporting {#process-reporting-modules}
 
 ### Service ProcessDataPublisher {#processdatapublisher-service-br}
 
@@ -74,5 +74,5 @@ Le service utilise ensuite les services OSGi pour obtenir les données de rappor
 
 Vous pouvez créer vos propres rapports personnalisés et les afficher dans l’onglet Rapports personnalisés de l’interface utilisateur Process Reporting.
 
-Pour connaître les étapes de création d’un rapport personnalisé, voir Création d’un rapport personnalisé dans l’article [Rapports personnalisés dans les rapports de processus](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Pour connaître les étapes de création d’un rapport personnalisé, voir Pour créer un rapport personnalisé dans l’article [Rapports personnalisés dans les rapports de processus](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
 

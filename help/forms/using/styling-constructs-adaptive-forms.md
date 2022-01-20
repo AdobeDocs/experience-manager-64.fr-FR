@@ -1,17 +1,17 @@
 ---
 title: Mise en forme des éléments pour les formulaires adaptatifs
-seo-title: Mise en forme des éléments pour les formulaires adaptatifs
+seo-title: Styling constructs for adaptive forms
 description: La structure LESS permet de personnaliser l’aspect des formulaires adaptatifs.
-seo-description: La structure LESS permet de personnaliser l’aspect des formulaires adaptatifs.
+seo-description: Use LESS framework to customize appearance of adaptive forms.
 uuid: 45590fd5-6438-4bb3-8ef8-f0b8f9da3ae9
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 8d7d4a7a-8899-4ad5-9ca8-b961f3f15528
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2170'
 ht-degree: 96%
 
 ---
@@ -35,7 +35,7 @@ Vous pouvez personnaliser les styles des formulaires adaptatifs des manières su
 * Modification du thème
 * Modification du style d’un composant
 
-## Modification du thème  {#changing-theme}
+## Modification du thème {#changing-theme}
 
 Vous pouvez modifier le thème d’un formulaire adaptatif pour vous assurer que son aspect est cohérent avec les pages Web sur lesquelles le formulaire adaptatif est incorporé.
 
@@ -283,7 +283,7 @@ Selon leur type, les widgets contiennent également des classes. En règle gén�
  </tbody> 
 </table>
 
-### Restrictions de la définition de style de widget  {#limitations-in-widget-styling}
+### Restrictions de la définition de style de widget {#limitations-in-widget-styling}
 
 La définition du style des champs ciblés, obligatoires et désactivés est limitée à l’aide de variables. Toutefois, vous pouvez le modifier en remplaçant les styles. La restriction à l’aide de variables est fournie principalement pour garder un œil sur le nombre de variables. La restriction peut être relâchée si l’aspect d’un champ change considérablement car il est dans l’un des états décrits précédemment.
 
@@ -328,7 +328,7 @@ Un auteur peut spécifier le contenu d’aide dans les champs à l’aide de com
  </tbody> 
 </table>
 
-## Termes et conditions  {#terms-and-conditions}
+## Termes et conditions {#terms-and-conditions}
 
 Le widget des termes et conditions (TnC`` ``) vous permet de spécifier les termes et conditions. Vous pouvez personnaliser le widget à l’aide des variables décrites dans le tableau suivant.
 
@@ -569,7 +569,7 @@ Le widget de pièce jointe des formulaires adaptatifs vous permet de télécharg
  </tbody> 
 </table>
 
-## Styles de navigateur  {#navigator-styles}
+## Styles de navigateur {#navigator-styles}
 
 Il existe quatre types d’onglet de navigateur. Il s’agit des onglets sur la gauche, en haut, de l’assistant et en accordéon. Chaque navigateur possède une classe différente.
 
@@ -943,7 +943,7 @@ Un panneau comporte une barre d’outils facultative et son contenu.
 
 Le nœud du panneau est divisé en navigateurs et contenu. Il `` ``n’y a pas de composant de définition du style séparé pour le contenu. Les variables décrites sont appliquées sur le navigateur ainsi que sur le contenu.
 
-&amp;ast;Le panneau le plus haut (RootPanel) ne dispose pas de cette classe.
+&amp;ast;Le panneau supérieur (RootPanel) ne dispose pas de cette classe.
 
 ## Styles mobiles {#mobile-styling}
 
@@ -981,7 +981,7 @@ Ces variables influent sur la barre d’en-tête visible sur un périphérique m
  </tbody> 
 </table>
 
-## Indicateur de défilement  {#scroll-indicator}
+## Indicateur de défilement {#scroll-indicator}
 
 Ces variables influent sur l’indicateur de défilement, qui est une flèche orange qui s’affiche sur un périphérique mobile ou équipé d’un petit écran. Un indicateur de défilement indique la présence de contenu au-delà de la partie visible à l’écran. Vous pouvez faire défiler l’écran pour l’afficher. Lorsque vous atteignez la fin du contenu, la flèche disparaît.
 
@@ -1019,7 +1019,7 @@ Ces variables influent sur l’indicateur de défilement, qui est une flèche or
  </tbody> 
 </table>
 
-## Variables spécifiques à la disposition de la barre d’outils fixe pour mobile  {#mobile-fixed-toolbar-layout-specific-variables}
+## Variables spécifiques à la disposition de la barre d’outils fixe pour mobile {#mobile-fixed-toolbar-layout-specific-variables}
 
 Ces variables dans le tableau suivant influent sur la disposition de la barre d’outils fixe pour mobile.
 

@@ -1,18 +1,18 @@
 ---
 title: Personnaliser l'interface de création de correspondance
-seo-title: Personnaliser l'interface de création de correspondance
+seo-title: Customize create correspondence UI
 description: Découvrez comment personnaliser l’interface de création de correspondance.
-seo-description: Découvrez comment personnaliser l’interface de création de correspondance.
+seo-description: Learn how to customize create correspondence UI.
 uuid: 5b6eb8fd-0270-4638-bdf4-cb7015919d57
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: 63cd01d2-a0d5-4f85-b9d2-ec3007ce3fa9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1095'
 ht-degree: 67%
 
 ---
@@ -25,18 +25,18 @@ Correspondence Management vous permet d’adapter le modèle de solution à l’
 
 Vous pouvez changer le logo dans l&#39;interface utilisateur de création de correspondance pour le remplacer par le logo de votre entreprise.
 
-![Icône personnalisée dans l’](assets/0_1_introscreenshot.png)
-**interface utilisateur de création de correspondance :** *icône personnalisée dans l’interface utilisateur de création de correspondance*
+![Icône personnalisée dans l’interface utilisateur de création de correspondance](assets/0_1_introscreenshot.png)
+**Figure :** *Icône personnalisée dans l’interface utilisateur de création de correspondance*
 
 ### Modification du logo dans l&#39;interface utilisateur de création de correspondance {#changing-the-logo-in-the-create-correspondence-ui}
 
 Pour configurer une image de logo de votre choix, procédez comme suit :
 
-1. Créez la structure de dossiers [appropriée dans CRX](#creatingfolderstructure).
-1. [Téléchargez le nouveau ](#uploadlogo) fichier logo dans le dossier que vous avez créé dans CRX.
+1. Créez les [structure de dossiers dans CRX](#creatingfolderstructure).
+1. [Chargement du nouveau fichier de logo](#uploadlogo) dans le dossier que vous avez créé dans CRX.
 
-1. [Configurez le ](#createcss) CSS sur CRX pour faire référence au nouveau logo.
-1. Effacez l’historique du navigateur et [actualisez l’interface utilisateur de création de correspondance](#refreshccrui).
+1. [Configuration du CSS](#createcss) sur CRX pour faire référence au nouveau logo.
+1. Effacer l’historique du navigateur et [actualisation de l’interface utilisateur de création de correspondance](#refreshccrui).
 
 ## Création de la structure de dossiers requise {#creatingfolderstructure}
 
@@ -57,17 +57,17 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
 
    Procédure de création du dossier css :
 
-   1. Cliquez avec le bouton droit sur le dossier **css** à l’emplacement suivant et sélectionnez **Noeud de recouvrement** : `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
+   1. Cliquez avec le bouton droit de la souris sur le **css** à l’emplacement suivant et sélectionnez **Noeud de recouvrement**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
       ![Nœud de recouvrement](assets/1_overlaynode_css.png)
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Chemin :** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
       **Emplacement de la superposition :** /apps/
 
-      **Faire correspondre les types de noeud :** coché
+      **Faire correspondre les types de noeud :** Cochée
 
       ![Chemin d&#39;accès au nœud de recouvrement](assets/0_1_5ioverlaynodedialog.png)
 
@@ -82,16 +82,16 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
 
    1. Cliquez sur **OK**. Le dossier CSS est créé au niveau du chemin d&#39;accès indiqué.
 
-1. Dans le dossier des applications, créez un dossier nommé `imgs` avec un chemin/une structure semblables au dossier imgs (situé dans le dossier ccrui).
+1. Dans le dossier des applications, créez un dossier nommé `imgs` avec un chemin/une structure similaires au dossier imgs (situé dans le dossier ccrui).
 
-   1. Cliquez avec le bouton droit sur le dossier **imgs** à l’emplacement suivant et sélectionnez **Noeud de recouvrement** : `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
+   1. Cliquez avec le bouton droit de la souris sur le **imgs** à l’emplacement suivant et sélectionnez **Noeud de recouvrement**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **Chemin :** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
       **Emplacement de la superposition :** /apps/
 
-      **Faire correspondre les types de noeud :** coché
+      **Faire correspondre les types de noeud :** Cochée
 
    1. Cliquez sur **OK**.
 
@@ -105,7 +105,7 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
 
 Téléchargez votre fichier de logo personnalisé dans CRX. Les règles HTML standard régissent le rendu du logo. Les formats de fichiers image pris en charge dépendent du navigateur que vous utilisez pour accéder à AEM Forms. Tous les navigateurs prennent en charge les fichiers JPEG, GIF et PNG. Pour en savoir plus, reportez-vous à la documentation du navigateur sur les formats d&#39;image pris en charge.
 
-* Les dimensions par défaut de l’image du logo sont 48 px &amp;ast; 48 px. Assurez-vous que votre image est de cette taille ou d’une taille supérieure à 48 px &amp;ast; 48 px.
+* Les dimensions par défaut de l’image du logo sont de 48 px &amp;ast; 48 px. Assurez-vous que votre image est de cette taille ou d’une taille supérieure ou égale à 48 pixels ; 48 px.
 * Si la hauteur de l&#39;image de logo est de plus de 50 px, l&#39;interface utilisateur de création de correspondance réduit l&#39;image à une hauteur maximale de 50 px car il s&#39;agit de la hauteur de l&#39;en-tête. Lors de la réduction de l&#39;image, l&#39;interface utilisateur de création de correspondance conserve les proportions de votre image.
 * L&#39;interface utilisateur de création de correspondance n&#39;agrandit pas votre image si elle est petite. Vous devez donc vous assurer que vous utilisez une image de logo d&#39;au moins 48 px de haut et d&#39;une largeur suffisante pour la clarté.
 
@@ -132,7 +132,7 @@ Suivez les étapes ci-dessous pour télécharger le fichier du logo personnalis�
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. Double-cliquez sur la propriété **jcr:data**.
+1. Double-cliquez sur le **jcr:data** .
 
    La boîte de dialogue Edit jcr:data s&#39;affiche.
 
@@ -161,7 +161,7 @@ Effectuez les étapes suivantes pour définir la feuille de style pour le rendu 
    Procédure à suivre pour créer le fichier customcss.css :
 
    1. Faites un clic droit sur le dossier **css** et sélectionnez **Créer > Créer un fichier**.
-   1. Dans la boîte de dialogue Nouveau fichier, indiquez le nom du fichier CSS sous la forme `customcss.css` (vous ne pouvez pas utiliser un autre nom de fichier), puis cliquez sur **OK**.
+   1. Dans la boîte de dialogue Nouveau fichier, indiquez le nom du CSS en tant que `customcss.css`(vous ne pouvez pas utiliser un autre nom de fichier), puis cliquez sur **OK**.
    1. Ajoutez le code suivant dans le fichier CSS que vous venez de créer. Dans la partie content:url du code, indiquez le nom de l&#39;image que vous avez téléchargée dans le dossier imgs dans CRXDE.
 
       ```css
@@ -176,5 +176,5 @@ Effectuez les étapes suivantes pour définir la feuille de style pour le rendu 
 
 Effacez la mémoire cache du navigateur, puis ouvrez l&#39;instance de l&#39;interface utilisateur de création de correspondance dans votre navigateur. Vous devez voir votre logo personnalisé.
 
-![Interface utilisateur de création de correspondance avec ](assets/0_1_introscreenshot-1.png)
-**logo personnaliséFigure :** *Icône personnalisée dans l’interface utilisateur de création de correspondance*
+![Interface utilisateur de création de correspondance avec un logo personnalisé](assets/0_1_introscreenshot-1.png)
+**Figure :** *Icône personnalisée dans l’interface utilisateur de création de correspondance*

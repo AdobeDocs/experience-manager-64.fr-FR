@@ -1,8 +1,8 @@
 ---
 title: Fragments d’expérience
-seo-title: Fragments d’expérience
+seo-title: Experience Fragments
 description: Fragments d’expérience
-seo-description: 'null'
+seo-description: null
 uuid: be1aceef-eb6e-47e5-a920-be5cc6de6191
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 exl-id: 8906b3ab-cb08-4b3e-8796-334e36b1e491
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1309'
 ht-degree: 90%
 
 ---
@@ -45,7 +45,7 @@ Vous pouvez utiliser des fragments d’expérience :
 >
 >Si vous rencontrez des problèmes, contactez votre administrateur système.
 
-## Quand utiliser les fragments d’expérience ?   {#when-should-you-use-experience-fragments}
+## Quand utiliser les fragments d’expérience ? {#when-should-you-use-experience-fragments}
 
 Les fragments d’expérience doivent être utilisés dans les cas suivants :
 
@@ -89,11 +89,11 @@ La création de dossiers vous permet d’effectuer les opérations suivantes :
    >
    >Vous pouvez utiliser l’[éditeur de modèles](/help/sites-authoring/templates.md) pour créer votre propre modèle.
 
-L’exemple suivant montre les fragments d’expérience structurés selon `Contributors`. La structure utilisée illustre également l’utilisation d’autres fonctionnalités, telles que la gestion multisite (y compris des copies de langue).
+L’exemple suivant illustre les fragments d’expérience structurés en fonction de `Contributors`. La structure utilisée illustre également l’utilisation d’autres fonctionnalités, telles que la gestion multisite (y compris des copies de langue).
 
 >[!CAUTION]
 >
->La capture d’écran suivante a été tirée du site WKND à l’aide d’Adobe Experience Manager en tant que Cloud Service.
+>La capture d’écran suivante a été tirée du site WKND à l’aide d’Adobe Experience Manager as a Cloud Service.
 
 ![Dossiers des fragments d’expérience](assets/xf-folders.png)
 
@@ -107,7 +107,7 @@ Pour créer et configurer un dossier pour vos fragments d’expérience, il est 
 
 >[!NOTE]
 >
->Il est également possible de configurer les [modèles autorisés pour votre instance](#configure-allowed-templates-instance), mais cette méthode est **non** recommandée, car les valeurs peuvent être remplacées lors de la mise à niveau.
+>Il est également possible de configurer la variable [Modèles autorisés pour votre instance](#configure-allowed-templates-instance), mais cette méthode est la suivante : **not** recommandé, car les valeurs peuvent être remplacées lors de la mise à niveau.
 
 ### Configuration des modèles autorisés pour votre dossier {#configure-allowed-templates-folder}
 
@@ -124,7 +124,7 @@ Pour créer et configurer un dossier pour vos fragments d’expérience, il est 
    Par exemple :
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
 
-   ![Propriétés des fragments d’expérience - Modèles autorisés](assets/xf-folders-templates.png)
+   ![Propriétés des fragments d’expérience – Modèles autorisés](assets/xf-folders-templates.png)
 
 1. Sélectionnez **[!UICONTROL Enregistrer et fermer]**.
 
@@ -132,7 +132,7 @@ Pour créer et configurer un dossier pour vos fragments d’expérience, il est 
 
 >[!CAUTION]
 >
->Il n’est pas recommandé de modifier les **[!UICONTROL Modèles autorisés]** par cette méthode, car les modèles spécifiés peuvent être remplacés lors de la mise à niveau.
+>Il n’est pas recommandé de modifier la variable **[!UICONTROL Modèles autorisés]** par cette méthode, car les modèles spécifiés peuvent être écrasés lors de la mise à niveau.
 >
 >Veuillez utiliser cette boîte de dialogue uniquement à titre d’information.
 
@@ -308,8 +308,8 @@ Par exemple :
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Exportation de fragments d’expérience    {#exporting-experience-fragments}
+## Exportation de fragments d’expérience {#exporting-experience-fragments}
 
 Par défaut, les fragments d’expérience sont fournis au format HTML. Ils peuvent être utilisés à la fois par AEM et les canaux tiers.
 
-Pour l’exportation vers Adobe Target, du code HTML est utilisé. Pour obtenir des informations complètes, voir [Intégration de Target aux ](/help/sites-administering/experience-fragments-target.md)Fragments d’expérience.
+Pour l’exportation vers Adobe Target, le HTML est utilisé. Pour obtenir des informations complètes, voir [Intégration de Target aux ](/help/sites-administering/experience-fragments-target.md)Fragments d’expérience.

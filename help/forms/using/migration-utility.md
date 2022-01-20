@@ -21,7 +21,7 @@ ht-degree: 71%
 
 # Migration de ressources et de documents AEM Forms {#migrate-aem-forms-assets-and-documents}
 
-L’utilitaire de migration convertit les [ressources Forms adaptatives](/help/forms/using/introduction-forms-authoring.md), les [configurations cloud](/help/sites-developing/extending-cloud-config.md) et les [ressources Correspondence Management](/help/forms/using/cm-overview.md) du format utilisé dans les versions antérieures au format utilisé dans AEM Forms 6.4. Lorsque vous exécutez l’utilitaire de migration, les éléments suivants sont migrés :
+L’utilitaire de migration convertit la variable [Ressources Forms adaptatives](/help/forms/using/introduction-forms-authoring.md), [configurations cloud](/help/sites-developing/extending-cloud-config.md), et [Actifs de Correspondence Management](/help/forms/using/cm-overview.md) du format utilisé dans les versions antérieures au format utilisé dans AEM 6.4 Forms. Lorsque vous exécutez l’utilitaire de migration, les éléments suivants sont migrés :
 
 * Composants personnalisés pour les formulaires adaptatifs
 * Modèles de formulaires adaptatifs et de Correspondence Management
@@ -34,7 +34,7 @@ L’utilitaire de migration convertit les [ressources Forms adaptatives](/help/f
 
 ## Approche de la migration {#approach-to-migration}
 
-Vous pouvez [mettre à niveau](/help/forms/using/upgrade.md) vers la dernière version d’AEM Forms 6.4 à partir d’AEM Forms 6.3 ou 6.2 ou effectuer une nouvelle installation. Selon que vous avez mis à niveau votre installation précédente ou procédé à une nouvelle installation, vous devez effectuer l’une des opérations suivantes :
+Vous pouvez [upgrade](/help/forms/using/upgrade.md) à la dernière version d’AEM Forms 6.4 à partir d’AEM Forms 6.3 ou 6.2 ou effectuez une nouvelle installation. Selon que vous avez mis à niveau votre installation précédente ou procédé à une nouvelle installation, vous devez effectuer l’une des opérations suivantes :
 
 **En cas de mise à niveau statique**
 
@@ -44,9 +44,9 @@ Vous devez ensuite les mettre à jour en [exécutant l’utilitaire de migration
 
 **En cas d’installation dynamique**
 
-S’il s’agit d’une installation dynamique (récente), vous devez installer le [package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (comprend le package de compatibilité Correspondence Management) avant de pouvoir utiliser les actifs et les documents.
+S’il s’agit d’une installation dynamique (nouvelle), vous devez installer les actifs et les documents avant de pouvoir les utiliser. [Package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (inclut le package de compatibilité Correspondence Management).
 
-Vous devez ensuite importer votre package de ressources (zip ou cmp) dans la nouvelle configuration, puis mettre à jour les ressources et les documents en [exécutant l’utilitaire de migration](#runningmigrationutility). En raison de changements [liés à la rétrocompatibilité](/help/sites-deploying/backward-compatibility.md), les emplacements de quelques dossiers dans crx-repository ont changé. Exportez et importez manuellement les dépendances (bibliothèques et ressources personnalisées) de la configuration précédente vers un nouvel environnement.
+Ensuite, vous devez importer votre package de ressources (zip ou cmp) dans la nouvelle configuration, puis mettre à jour les ressources et les documents par [exécution de l’utilitaire de migration](#runningmigrationutility). En raison de changements [liés à la rétrocompatibilité](/help/sites-deploying/backward-compatibility.md), les emplacements de quelques dossiers dans crx-repository ont changé. Exportez et importez manuellement les dépendances (bibliothèques et ressources personnalisées) de la configuration précédente vers un nouvel environnement.
 
 ## Lire avant de procéder à la migration {#prerequisites}
 
@@ -116,16 +116,16 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
    >  * Nouveaux modèles - Modèles de formulaires adaptatifs créés à l’aide de l’éditeur de modèles sous /conf. Cela inclut la migration des règles et des scripts créés à l’aide de l’éditeur de règles.
 
 
-   * Pour migrer les composants personnalisés de formulaire adaptatif, appuyez sur **Migration des composants personnalisés de Forms adaptatif** et, dans la page Migration des composants personnalisés, appuyez sur **Démarrer la migration**. Les éléments suivants sont migrés :
+   * Pour migrer les composants personnalisés de formulaire adaptatif, appuyez sur **Migration des composants personnalisés de Forms adaptatif** et dans la page Migration des composants personnalisés, appuyez sur **Démarrer la migration**. Les éléments suivants sont migrés :
 
       * Composants personnalisés écrits pour les formulaires adaptatifs
       * Incrustations de composants, le cas échéant.
-   * Pour migrer des modèles de formulaire adaptatif, appuyez sur **Migration de modèles de Forms adaptatif** et, dans la page Migration des composants personnalisés, appuyez sur **Démarrer la migration**. Les éléments suivants sont migrés :
+   * Pour migrer des modèles de formulaires adaptatifs, appuyez sur **Migration de modèles de Forms adaptatif** et dans la page Migration des composants personnalisés, appuyez sur **Démarrer la migration**. Les éléments suivants sont migrés :
 
       * Les modèles de formulaire adaptatif créés sous /apps ou /conf à l’aide de l’éditeur de modèles AEM.
    * Migrez les services de configuration cloud d’AEM Forms pour exploiter le nouveau paradigme de service cloud contextuel comprenant l’interface utilisateur tactile (sous /conf). Lorsque vous migrez les services de configuration cloud d’AEM Forms, les services cloud dans /etc sont déplacés vers /conf. Si vous ne disposez d’aucune personnalisation de services cloud qui dépend des chemins hérités (/etc), il est recommandé d’exécuter l’utilitaire de migration juste après la mise à niveau vers la version 6.4 et d’utiliser l’interface utilisateur tactile de configuration cloud pour tout travail supplémentaire. Si vous disposez déjà de personnalisations de services cloud, continuez à utiliser l’interface utilisateur classique dans la configuration mise à niveau jusqu’à ce que les personnalisations soient mises à jour et concordent avec les chemins migrés (/conf), puis exécutez l’utilitaire de migration.
 
-   Pour migrer les **services cloud AEM Forms**, qui incluent les éléments suivants, appuyez sur Migration de la configuration cloud AEM Forms (la migration de la configuration cloud est indépendante du package de compatibilité AEMFD), appuyez sur Migration des configurations cloud AEM Forms, puis sur la page Migration de la configuration, appuyez sur **Démarrer la migration** :
+   Pour migrer **Services cloud AEM Forms**, qui comprend les éléments suivants, appuyez sur Migration de la configuration cloud AEM Forms (la migration de la configuration cloud est indépendante du package de compatibilité AEMFD), appuyez sur Migration des configurations du cloud AEM Forms, puis sur la page Migration de la configuration, appuyez sur **Démarrer la migration**:
 
    * Services cloud du modèle de données de formulaire
 
@@ -173,4 +173,4 @@ Après avoir exécuté l’utilitaire de migration, effectuez les tâches de mai
    1. Téléchargez le fichier XFA dans l’interface utilisateur de Forms.
 
 1. Publiez tous les actifs qui ont été publiés dans le système précédent avant migration. L’utilitaire de migration met à jour les actifs uniquement dans l’instance d’auteur. Pour mettre à jour les actifs dans la ou les instances de publication, vous devez les publier.
-1. Dans la version 6.4 d’AEM Forms, certains des droits des groupes d’utilisateurs de formulaires sont modifiés. Si vous souhaitez que vos utilisateurs puissent charger des fichiers XDP et des formulaires adaptatifs contenant des scripts ou utiliser un éditeur de code, vous devez les ajouter au groupe forms-power-users. De même, le groupe template-authors ne peut plus utiliser l’éditeur de code dans l’éditeur de règles. Pour que les utilisateurs puissent utiliser l’éditeur de code, ajoutez-les au groupe af-template-script-writers. Pour plus d’informations sur l’ajout d’utilisateurs aux groupes, voir [Gestion des utilisateurs et des groupes d’utilisateurs](/help/communities/users.md).
+1. Dans la version 6.4 d’AEM Forms, certains des droits des groupes d’utilisateurs de formulaires sont modifiés. Si vous souhaitez que vos utilisateurs puissent charger des fichiers XDP et des formulaires adaptatifs contenant des scripts ou utiliser un éditeur de code, vous devez les ajouter au groupe forms-power-users. De même, le groupe template-authors ne peut plus utiliser l’éditeur de code dans l’éditeur de règles. Pour que les utilisateurs puissent utiliser l’éditeur de code, ajoutez-les au groupe af-template-script-writers. Pour plus d’informations sur l’ajout d’utilisateurs à des groupes, voir [Gestion des utilisateurs et des groupes d’utilisateurs](/help/communities/users.md).

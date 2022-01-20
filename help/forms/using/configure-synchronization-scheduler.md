@@ -1,8 +1,8 @@
 ---
 title: Configuration du planificateur de synchronisation
-seo-title: Configuration du planificateur de synchronisation
+seo-title: Configuring the synchronization scheduler
 description: Apprenez à migrer et à synchroniser des ressources, à configurer le planificateur de synchronisation et à organiser les ressources dans des dossiers.
-seo-description: Apprenez à migrer et à synchroniser des ressources, à configurer le planificateur de synchronisation et à organiser les ressources dans des dossiers.
+seo-description: Learn how to migrate and sync assets, configure sync scheduler, and use folders to arrange assets.
 uuid: a6445b45-9c1c-4483-a32e-453648c488c5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ role: Admin
 exl-id: 7f1c4bac-accf-43e4-9439-89c5420d50f2
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 79%
+source-wordcount: '286'
+ht-degree: 77%
 
 ---
 
@@ -25,7 +25,7 @@ Par défaut, le planificateur de synchronisation s’exécute toutes les 3 minu
 
 Suivez les étapes suivantes pour modifier l’intervalle du planificateur de synchronisation :
 
-1. Connectez-vous au Configuration Manager d’AEM. L’URL de Configuration Manager est `https://[Server]:[Port]/lc/system/console/configMgr`
+1. Connectez-vous au Configuration Manager d’AEM. L’URL de Configuration Manager est la suivante : `https://[Server]:[Port]/lc/system/console/configMgr`
 
 1. Recherchez et ouvrez le lot **FormsManagerConfiguration.**
 
@@ -41,9 +41,9 @@ Vous pouvez utiliser l’option **Synchroniser les ressources à partir du réf�
 
    ![Interface utilisateur d’AEM Forms](assets/aem_forms_ui.png)
 
-   **Figure : Interface utilisateur d’** *AEM Forms*
+   **Figure :** *Interface utilisateur d’AEM Forms*
 
-1. Cliquez sur l’icône ![aem6forms_sync](assets/aem6forms_sync.png) dans la barre d’outils. Si vous ne disposez d’aucune ressource dans le dernier chemin configuré, la boîte de dialogue s’affiche comme ci-dessous. Cliquez sur **Démarrer** pour lancer la synchronisation.
+1. Cliquez sur le bouton ![aem6forms_sync](assets/aem6forms_sync.png) dans la barre d’outils. Si vous ne disposez d’aucune ressource dans le dernier chemin configuré, la boîte de dialogue s’affiche comme ci-dessous. Cliquez sur **Démarrer** pour lancer la synchronisation.
 
    ![Boîte de dialogue de synchronisation](assets/migrate-and-syncronize.png)
 
@@ -53,7 +53,7 @@ Vous pouvez utiliser l’option **Synchroniser les ressources à partir du réf�
 
 Vous pouvez créer de nouvelles applications dans le Concepteur de flux de travaux (LiveCycle Workbench).
 
-Si l’application nouvellement créée et un dossier situé à l’emplacement /content/dam/formsanddocuments portent le même nom, une erreur &quot;*Une ressource portant le même nom que cette application existe déjà au niveau racine.*&quot; est consigné.
+Si l’application nouvellement créée et un dossier situé à /content/dam/formsanddocuments portent le même nom, une erreur &quot;*Une ressource portant le même nom que cette application existe déjà au niveau racine.*&quot; est consigné.
 
 Pour résoudre le conflit, renommez l’application puis synchronisez manuellement les actifs.
 

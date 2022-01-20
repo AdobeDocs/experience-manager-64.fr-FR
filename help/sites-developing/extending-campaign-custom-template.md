@@ -1,8 +1,8 @@
 ---
 title: Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign
-seo-title: Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign
+seo-title: Creating Custom AEM Page Template with Adobe Campaign Form Components
 description: Créez un modèle de page personnalisé qui utilise des composants de formulaire Adobe Campaign.
-seo-description: Créez un modèle de page personnalisé qui utilise des composants de formulaire Adobe Campaign.
+seo-description: Build a custom page template that uses Adobe Campaign Form components
 uuid: 8162ace2-b661-4c39-b0fb-288e1c035b9c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,14 +12,14 @@ discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
 exl-id: e70c9d23-5a4d-4137-82ad-3f3237f468c0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 59%
+source-wordcount: '238'
+ht-degree: 55%
 
 ---
 
 # Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Cette page explique comment créer un modèle de page personnalisé qui utilise les composants [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md) en examinant la manière dont le modèle de Geometrixx extérieur ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) est mis en oeuvre et vous indique les informations importantes dont vous avez besoin lors de la création de votre propre modèle personnalisé.
+Cette page explique comment créer un modèle de page personnalisé qui utilise [Formulaire Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) composants en examinant la manière dont le modèle de Geometrixx-plein ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) est implémenté et vous indique les informations importantes dont vous avez besoin lors de la création de votre propre modèle personnalisé.
 
 >[!NOTE]
 >
@@ -40,9 +40,9 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
 
 1. **Paramètres de ClientContext**
 
-   Lorsque vous observez les paramètres clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`), vous voyez les paramètres suivants :
+   Lorsque vous examinez les paramètres de ClientContext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) les paramètres suivants s’affichent :
 
-   * ClientContext pointe vers `/etc/clientcontext/campaign`
+   * Points de ClientContext vers `/etc/clientcontext/campaign`
    * Il existe également un nœud *config* supplémentaire.
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
@@ -75,7 +75,7 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
 
 1. **Paramètres de modèle**.
 
-   Dans le modèle ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`), les valeurs par défaut suivantes s’affichent :
+   Dans le modèle ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) les valeurs par défaut suivantes s’affichent :
 
    | **acMapping** | mapRecipient (pour Adobe Campaign 6.1), profile (pour Adobe Campaign Standard) |
    |---|---|

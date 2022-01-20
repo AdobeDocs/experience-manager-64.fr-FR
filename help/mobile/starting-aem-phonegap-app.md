@@ -1,8 +1,8 @@
 ---
 title: Démarrage AEM PhoneGap
-seo-title: Démarrage AEM PhoneGap
+seo-title: Starting AEM PhoneGap
 description: Consultez cette page pour en savoir plus sur le starterkit pour les développeurs.
-seo-description: Consultez cette page pour en savoir plus sur le starterkit pour les développeurs.
+seo-description: Follow this page to learn about the starterkit for developers.
 uuid: 952bf9f9-5c79-4212-91b7-1d3850ec2402
 contentOwner: User
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 2ecf05ed-4e56-4e0b-89cf-5161741f9001
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '407'
 ht-degree: 14%
 
 ---
@@ -31,18 +31,18 @@ Le starterkit vous aidera à avancer rapidement en vous guidant à travers les p
 
 Les développeurs peuvent utiliser cet exemple comme point de départ pour essayer une application AEM Mobile à l’aide de PhoneGap. L’exécution du starterkit et de l’application de référence vous permettra de bien comprendre les principes de base de la création d’applications mobiles enrichies.
 
-* Utilisez le [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) pour créer des applications adaptées au catalogue AEM Mobile.
-* Une [application de référence](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) avec une source complète a été créée. Elle présente de nombreuses nouvelles fonctionnalités d’AEM Mobile, que vous migriez une application existante vers AEM Mobile ou que vous la commenciez à nouveau.
+* Utilisez la variable [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) pour créer des applications adaptées au catalogue AEM Mobile.
+* A [application de référence](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) avec la source complète a été créée. Elle indique de nombreuses nouvelles fonctionnalités d’AEM Mobile, que vous migriez une application existante dans AEM Mobile ou que vous la commenciez à nouveau.
 * Tous nos exemples sont disponibles ici sur github : [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps) et incluez l’amorçage de votre projet avec Maven.
-* La plupart des conférences utilisent le [tutoriel Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink), que vous pouvez également trouver dans Github et qui se concentre sur l’utilisation de l’extensibilité native Apache Cordova.
+* La plupart des discussions de la conférence exploiteront la [Tutoriel sur Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink), que vous pouvez également trouver dans Github et qui est axé sur l’utilisation de l’extensibilité native Apache Cordova.
 
 >[!NOTE]
 >
->Une fois que vous avez eu la possibilité de vous familiariser avec le Starterkit, il est important de découvrir les *composants et les modèles Adobe Experience Manager.*
+>Une fois que vous avez eu la possibilité de vous familiariser avec le Starterkit, il est important de découvrir Adobe Experience Manager. *composants et modèles.*
 
 ## Modèles et composants {#templates-and-components}
 
-AEM *Les modèles* et *les composants* permettent aux propriétaires de gamme de créer des expériences personnalisées. *Modèles *et *Les composants* sont disponibles prêts à l’emploi ou peuvent être développés par vous, le développeur, soit en étendant les composants existants, soit en créant un champ vert (avancé). ** Les modèles et  ** les composants permettent à l’auteur AEM de faire glisser et de déposer pour créer des expériences pertinentes et attrayantes.
+AEM *Modèles* et *Composants* permettre aux propriétaires de gamme d’activités de créer des expériences personnalisées. *Modèles *et *Composants* sont disponibles prêts à l’emploi ou peuvent être développés par vous, le développeur, soit en étendant les composants existants, soit en créant un champ vert (avancé). *Modèles* et *Composants* sont les éléments qui permettent à l’auteur AEM de faire glisser et de déposer pour créer des expériences attrayantes et pertinentes.
 
 1. [Création de composants](/help/sites-developing/components.md)
 1. [Création de modèles](/help/sites-developing/templates.md)

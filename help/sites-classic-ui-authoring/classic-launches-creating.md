@@ -1,8 +1,8 @@
 ---
 title: Création de lancements
-seo-title: Création de lancements
+seo-title: Creating Launches
 description: Créez un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future. Lors de la création d’un lancement, vous devez spécifier un titre et la page source.
-seo-description: Créez un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future. Lors de la création d’un lancement, vous devez spécifier un titre et la page source.
+seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: e67608a9-e6c9-42f3-bd1d-63a5fa87ae18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,8 +13,8 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2f5c022e-bd98-4912-9409-d08137a1caf1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 96%
+source-wordcount: '370'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 96%
 
 Créez un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future. Lors de la création d’un lancement, vous devez spécifier un titre et la page source :
 
-* Le titre apparaît dans le **Sidekick**, à partir duquel les auteurs peuvent y accéder pour y travailler.
+* Le titre apparaît dans la **Sidekick**, à partir de laquelle les auteurs peuvent y accéder pour y travailler.
 * Les pages enfants de la page source sont incluses, par défaut, dans le lancement. Si vous le souhaitez, vous pouvez n’utiliser que la page source.
 * Par défaut, [Live Copy](/help/sites-administering/msm.md) met automatiquement à jour les pages de lancement à mesure que les pages source changent. Vous pouvez spécifier qu’une copie statique soit créée afin d’empêcher les modifications automatiques.
 

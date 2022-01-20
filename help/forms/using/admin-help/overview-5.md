@@ -1,8 +1,8 @@
 ---
 title: Introduction à l’utilisation de PDF Generator
-seo-title: Introduction à l’utilisation de PDF Generator
+seo-title: Introduction to working with PDF Generator
 description: Découvrez comment convertir divers fichiers au format PDF.
-seo-description: Découvrez comment convertir divers fichiers au format PDF.
+seo-description: Learn how to convert various file formats to PDF.
 uuid: 1bf3a811-ef8d-481e-8b8d-1a910da8c57d
 contentOwner: admin
 content-type: reference
@@ -13,8 +13,8 @@ feature: PDF Generator
 exl-id: 217f0f80-fce6-4671-9853-633691d447f5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 89%
+source-wordcount: '141'
+ht-degree: 87%
 
 ---
 

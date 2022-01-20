@@ -1,14 +1,14 @@
 ---
 title: Intégration des ressources avec Flux d’activités
-description: Décrit les fonctionnalités d’enregistrement de  [!DNL Experience Manager] and how to configure [!DNL Experience Manager] pour enregistrer des événements spécifiques.
+description: Décrit les fonctionnalités d’enregistrement de [!DNL Experience Manager] et comment configurer [!DNL Experience Manager] pour enregistrer des événements spécifiques.
 contentOwner: AG
 feature: Asset Management
 role: Developer
 exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
 source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 67%
+source-wordcount: '272'
+ht-degree: 66%
 
 ---
 
@@ -18,7 +18,7 @@ Les utilisateurs d’Adobe Experience Manager Assets effectuent de nombreuses op
 
 ## Performances et comportement par défaut {#performance-considerations-and-default-behavior}
 
-Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. Pour ces raisons, l’intégration de [!DNL Experience Manager] ressources avec le flux d’activités est désactivée par défaut.
+Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. Pour ces raisons, la variable [!DNL Experience Manager] L’intégration des ressources avec le flux d’activités est désactivée par défaut.
 
 ## Événements d’actions pris en charge {#supported-action-events}
 
@@ -40,9 +40,9 @@ Il est possible de configurer l’enregistrement des événements suivants :
 * Sous-ressource mise à jour (SUBASSET_UPDATED)
 * Sous-ressource supprimée (SUBASSET_REMOVED)
 
-## Configuration de l’enregistrement des événements [!DNL Assets] {#configuring-aem-assets-events-recording}
+## Configuration [!DNL Assets] Enregistrement d’événements {#configuring-aem-assets-events-recording}
 
-La [console Web](/help/sites-deploying/configuring-osgi.md) permet d’accéder au réglage [!DNL Assets] Enregistreur d’événements. Pour configurer l’enregistreur d’événements [!DNL Assets], procédez comme suit :
+Le [Console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder au [!DNL Assets] Réglage de l’enregistreur d’événements. Pour configurer la variable [!DNL Assets] Enregistreur d’événements, procédez comme suit :
 
 1. Accédez à la **[!UICONTROL console web]**.
 

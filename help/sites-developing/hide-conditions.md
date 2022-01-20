@@ -1,8 +1,8 @@
 ---
 title: Utilisation de conditions de masquage
-seo-title: Utilisation de conditions de masquage
+seo-title: Using Hide Conditions
 description: Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non.
-seo-description: Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non.
+seo-description: Hide conditions can be used to determine if a component resource is rendered or not.
 uuid: 93b4f450-1d94-4222-9199-27b5f295f8e6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 exl-id: 646146b1-55bf-4d13-ba3d-2e9bdfd8d8af
 source-git-commit: c408d1072722fe4419e351b4f8bf257cf2e5a8a2
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '628'
 ht-degree: 98%
 
 ---

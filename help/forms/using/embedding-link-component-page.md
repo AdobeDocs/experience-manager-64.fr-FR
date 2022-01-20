@@ -1,8 +1,8 @@
 ---
 title: Intégration du composant Link dans une page
-seo-title: Intégration du composant Link dans une page
+seo-title: Embedding link component in a page
 description: 'Vous pouvez utiliser le composant Link pour lier un document adaptatif ou un formulaire adaptatif depuis la page que vous souhaitez.  '
-seo-description: 'Vous pouvez utiliser le composant Link pour lier un document adaptatif ou un formulaire adaptatif depuis la page que vous souhaitez.  '
+seo-description: You can use the link component to link an adaptive document or an adaptive form from any page.
 uuid: fde56b5f-634c-406f-a026-875f972f7c8f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: a4a36e73-3f7a-4173-8807-931f26daa35a
 exl-id: eb816a35-0773-4eda-95b2-1d351c71be8b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 94%
+source-wordcount: '408'
+ht-degree: 93%
 
 ---
 
@@ -38,11 +38,11 @@ Suivez les étapes ci-après pour ajouter un composant Link à la page :
    * **Link Tooltip** : info-bulle du lien.
    * **Modèle de mise en page** : modèle pour la mise en page du composant Link.
 
-1. Ouvrez l’onglet **Informations d’actif** et spécifiez le type d’actif. Une ressource peut être un **formulaire**. Selon le type de fichier sélectionné, les options ci-dessous s’affichent : 
+1. Ouvrez l’onglet **Informations d’actif** et spécifiez le type d’actif. Une ressource peut être **formulaire**. Selon le type de fichier sélectionné, les options ci-dessous s’affichent : 
 
    * **Chemin d’accès à l’actif** : chemin d’accès au référentiel de stockage de l’actif.
    * **Type de rendu** : le format de rendu : PDF, HTML ou Auto. Le type de rendu Auto détecte l’environnement de l’utilisateur et effectue le rendu du formulaire en conséquence, au format HTML ou PDF. Par exemple, si le formulaire est utilisé sur un périphérique mobile, le type de rendu Auto est effectué au format HTML.
-   * **URL d’envoi :**  URL du servlet vers lequel les données de formulaire sont envoyées.
+   * **Submit URL :**  URL du servlet vers lequel les données de formulaire sont envoyées.
    * **Profil HTML** : profil de rendu du formulaire au format HTML.
    * **Profil PDF** : profil de rendu du formulaire au format PDF.
 

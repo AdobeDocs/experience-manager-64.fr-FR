@@ -1,8 +1,8 @@
 ---
-title: 'Lancement des API de Document Services à partir d’un flux de travail AEM '
-seo-title: 'Lancement des API de Services de document à partir d’un flux de travail AEM '
+title: 'Lancement des API de Services de document à partir d’un flux de travail AEM '
+seo-title: Initiate Document Services APIs from AEM Workflow
 description: Découvrez comment appeler AEM Document Services sur DDX ou des entrées fournies. Voir également Conversion d’un PDF en PDF/A
-seo-description: Découvrez comment appeler AEM Document Services sur DDX ou des entrées fournies. Voir également Conversion d’un PDF en PDF/A
+seo-description: Learn how to invoke AEM Document services on DDX or supplied inputs. Also see hwo to convert PDF to PDF/A
 uuid: aacec2df-1ad6-4ff2-a99d-ef206efcdc09
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,12 +11,12 @@ discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 exl-id: a2821338-f31d-4b08-91e6-7f934dc01384
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1171'
 ht-degree: 90%
 
 ---
 
-# Lancement des API Document Services depuis un processus AEM  {#initiate-document-services-apis-from-aem-workflow}
+# Lancement des API de Services de document à partir d’un flux de travail AEM  {#initiate-document-services-apis-from-aem-workflow}
 
 ## Assembler {#assembler}
 
@@ -27,13 +27,13 @@ AEM Forms fournit des workflows personnalisés pour appeler les API de service A
 
 ### Flux de travail Invoke DDX {#invoke-ddx-workflow}
 
-Le workflow **Invoke DDX** appelle l’ `Invoke` API du service Assembler, que vous pouvez utiliser pour assembler ou désassembler des documents, ajouter un filigrane à un PDF, etc.
+Le **Invoquer DDX** le workflow appelle la variable `Invoke` API du service Assembler, que vous pouvez utiliser pour assembler ou désassembler des documents, ajouter un filigrane à un PDF, etc.
 
 1. Faites glisser l’étape de flux de travail **[!UICONTROL Invoke DDX]** sous l’onglet Forms Workflow dans Sidekick.
 1. Cliquez deux fois sur l’étape supplémentaire de flux de travail pour modifier le composant.
 1. Dans la boîte de dialogue Modifier le composant, configurez les documents d’entrée, les options d’environnement et les documents de sortie, puis cliquez sur **[!UICONTROL OK]**.
 
-#### Documents d’entrée  {#input-documents}
+#### Documents d’entrée {#input-documents}
 
 Le flux de travail Invoke DDX nécessite les documents d’entrée suivants :
 
@@ -45,9 +45,9 @@ Le flux de travail Invoke DDX nécessite les documents d’entrée suivants :
 
 * **Create Map from PayLoad** : si vous activez cette option, les documents sous le dossier de charge sont ajoutés au mappage de document d’entrée pour l’API `invoke` dans Assembler. Le nom du nœud pour chaque document est utilisé comme clé dans la carte.
 
-* **Input Document’s Map** : Spécifie la carte du document d’entrée. Vous pouvez ajouter plusieurs entrées, où chaque entrée spécifie la clé du document dans la carte et la source du document.
+* **Input Document’s Map**: Spécifie la carte du document d’entrée. Vous pouvez ajouter plusieurs entrées, où chaque entrée spécifie la clé du document dans la carte et la source du document.
 
-#### Options d&#39;environnement {#environment-options}
+#### Options d’environnement {#environment-options}
 
 L’onglet Environment Options permet de définir différentes options de traitement pour l’API d’appel.
 
@@ -60,12 +60,12 @@ L’onglet Environment Options permet de définir différentes options de traite
 
 Selon input DDX, l’API d’appel peut produire plusieurs documents de sortie. L’onglet Output documents vous permet de sélectionner le document de sortie à enregistrer.
 
-1. *Enregistrer la sortie dans la charge utile* : Enregistre les documents de sortie sous le dossier de charge utile ou remplace la charge utile si la charge est un fichier .
+1. *Enregistrer la sortie dans la charge utile*: Enregistre les documents de sortie sous le dossier de charge utile ou remplace la charge utile si la charge est un fichier .
 1. *Output Document’s Map* : permet de spécifier explicitement où enregistrer chaque document de sortie en ajoutant une entrée par document de sortie. Chaque entrée spécifie le document et l’emplacement d’enregistrement. Output document peut écraser la charge ou être enregistré dans le dossier de charge. Cette option peut être utile lorsque qu’il y a plusieurs documents de sortie.
 
 1. *Job Log* : indique l’emplacement d’enregistrement du document de journal de tâche, ce qui peut être utile pour le dépannage des échecs.
 
-### Flux de travail de conversion en PDF/A  {#convert-to-pdf-a-workflow}
+### Flux de travail de conversion en PDF/A {#convert-to-pdf-a-workflow}
 
 L’étape de flux de travail Convert to PDF/A (Convertir en PDF/A) appel l’API du service d’Assembler `toPDFA`. Il est utilisé pour convertir des documents PDF en documents conformes au format PDF/A.
 
@@ -74,7 +74,7 @@ L’étape de flux de travail Convert to PDF/A (Convertir en PDF/A) appel l’AP
 1. Cliquez deux fois sur l’étape supplémentaire de flux de travail pour modifier le composant.
 1. Dans la boîte de dialogue Modifier le composant, configurez les documents d’entrée, les options de conversion et les documents de sortie, puis cliquez sur **[!UICONTROL OK]**.
 
-#### Documents d’entrée  {#input-documents-1}
+#### Documents d’entrée {#input-documents-1}
 
 Spécifiez la source du document à convertir en fichier conforme au format PDF/A de l’une des manières suivantes.
 
@@ -90,7 +90,7 @@ L’onglet Conversion Options permet de spécifier des options qui affectent le 
 * *Result Level * : Indique le niveau de journal à utiliser pour les journaux de conversion PDF/A.
 * *Signatures* : indique la façon dont les signatures du document d’entrée doivent être traitées lors de la conversion.
 * *Color Space* : indique l’espace colorimétrique prédéfini à utiliser pour le document de sortie PDF/A.
-* ** VerifyConversion : Indique si le document PDF/A converti doit être vérifié pour la conformité PDF/A après la conversion.
+* *Vérifier* Conversion : Indique si le document converti PDF/A doit être vérifié pour la conformité PDF/A après la conversion.
 * *Job Log Level* : indique le niveau de journal à utiliser pour les journaux de traitement.
 
 * *Metadata Extension Schema* : indique le chemin du schéma d’extension de métadonnées à utiliser pour les propriétés XMP dans les métadonnées du document PDF.
@@ -112,7 +112,7 @@ Le flux de travail Render PDF Form est une enveloppe de l’API du service Forms
 1. Cliquez deux fois sur l’étape supplémentaire de flux de travail pour modifier le composant.
 1. Dans la boîte de dialogue Modifier le composant, configurez les documents d’entrée, les documents de sortie et les paramètres supplémentaires, puis cliquez sur **[!UICONTROL OK]**.
 
-#### Documents d’entrée  {#input-documents-2}
+#### Documents d’entrée {#input-documents-2}
 
 * *Template File* : indique l’emplacement du modèle XDP. Ce champ est obligatoire.
 
@@ -122,7 +122,7 @@ Le flux de travail Render PDF Form est une enveloppe de l’API du service Forms
 
 * *Output Document* : indique le nom du formulaire PDF généré.
 
-#### Paramètres supplémentaires  {#additional-parameters}
+#### Paramètres supplémentaires {#additional-parameters}
 
 * *Content Root* : indique le chemin d’accès au dossier du référentiel dans lequel les fragments et les images utilisés dans le modèle XDP d’entrée sont stockés.
 * *Submit Url* : indique l’URL d’envoi par défaut du formulaire PDF généré.
@@ -133,7 +133,7 @@ Le flux de travail Render PDF Form est une enveloppe de l’API du service Forms
 
 ## Sortie {#output}
 
-Le flux de travail Generate Non Interactive PDF Workflow (Générer un PDF non interactif) est une enveloppe de l’API de service Output `generatePDFOutput`. Il est utilisé pour générer des documents PDF non interactifs à partir d’un modèle XDP et d’un fichier de données XML.
+Le flux de travail Generate Non Interactive PDF Workflow (Générer un PDF non interactif) est une enveloppe de l’API de service Output `generatePDFOutput`. Il est utilisé pour générer des documents de PDF non interactifs à partir d’un modèle XDP et d’un fichier XML de données.
 
 ### Flux de travail Generate Non Interactive PDF Output   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
@@ -141,7 +141,7 @@ Le flux de travail Generate Non Interactive PDF Workflow (Générer un PDF non i
 1. Cliquez deux fois sur l’étape supplémentaire de flux de travail pour modifier le composant.
 1. Dans la boîte de dialogue Modifier le composant, configurez les documents d’entrée, les documents de sortie et les paramètres supplémentaires, puis cliquez sur **[!UICONTROL OK]**.
 
-#### Documents d’entrée  {#input-documents-3}
+#### Documents d’entrée {#input-documents-3}
 
 * *Template File* : indique l’emplacement du modèle XDP. Ce champ est obligatoire.
 
@@ -151,7 +151,7 @@ Le flux de travail Generate Non Interactive PDF Workflow (Générer un PDF non i
 
 *Output Document* : indique le nom du formulaire PDF généré.
 
-#### Paramètres supplémentaires  {#additional-parameters-1}
+#### Paramètres supplémentaires {#additional-parameters-1}
 
 * *Content Root* : indique le chemin d’accès au dossier du référentiel dans lequel les fragments et les images utilisés dans le modèle XDP d’entrée sont stockés.
 * *Locale* : indique la langue par défaut du formulaire PDF généré.

@@ -1,20 +1,20 @@
 ---
 title: Support de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs
-seo-title: Support de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs
+seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs. Les paramètres régionaux pris en charge par défaut sont l’anglais, le français, l’allemand et le japonais.
-seo-description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs. Les paramètres régionaux pris en charge par défaut sont l’anglais, le français, l’allemand et le japonais.
+seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
 uuid: d4cee51b-c555-4544-9ae9-4aa8d38b2b17
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 role: Admin
 exl-id: 9f0e7284-ac11-406d-8d8c-7682f1d66fff
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 88%
+source-wordcount: '691'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 88%
 
 La localisation des formulaires adaptatifs repose sur deux types de dictionnaires de paramètres régionaux : 
 
-**Dictionnaire spécifique au formulaire** Contient les chaînes utilisées dans les formulaires adaptatifs. Par exemple, étiquettes, noms de champs, messages d’erreur, descriptions d’aide, etc. Il est géré sous la forme d’un ensemble de fichiers XLIFF pour chaque langue et vous pouvez y accéder à l’adresse https://`<host>`:`<port>`/libs/cq/i18n/translator.html.
+**Dictionnaire spécifique au formulaire** Contient les chaînes utilisées dans les formulaires adaptatifs. Par exemple, étiquettes, noms de champs, messages d’erreur, descriptions d’aide, etc. Il est géré sous la forme d’un ensemble de fichiers XLIFF pour chaque paramètre régional et vous pouvez y accéder à l’adresse https://`<host>`:`<port>`/libs/cq/i18n/translator.html.
 
 **Dictionnaires globaux** : la bibliothèque client AEM comporte deux dictionnaires globaux, gérés en tant qu’objets JSON. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, etc. Vous pouvez trouver ces dictionnaires dans CRXDe Lite, à l’adresse /libs/fd/xfaforms/clientlibs/I18N. Ces emplacements contiennent des dossiers distincts pour chaque jeu de paramètres régionaux. Étant donné que les dictionnaires globaux ne sont généralement pas mis à jour fréquemment, conserver des fichiers JavaScript distincts pour chaque jeu de paramètres régionaux permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur. 
 
@@ -34,7 +34,7 @@ Lorsqu’un formulaire adaptatif est rendu, il identifie les paramètres région
 
 * Paramètre de requête `afAcceptLang`
 
-   Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre le paramètre de requête `afAcceptLang` pour forcer les paramètres régionaux. Par exemple, l’URL ci-dessous force le rendu du formulaire dans les paramètres régionaux japonais :
+   Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre la variable `afAcceptLang` paramètre de requête pour forcer le paramètre régional. Par exemple, l’URL ci-dessous force le rendu du formulaire dans les paramètres régionaux japonais :
 
    `https://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`
 

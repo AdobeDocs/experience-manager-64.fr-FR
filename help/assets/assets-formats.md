@@ -1,5 +1,5 @@
 ---
-title: Formats de fichier pris en charge dans [!DNL Experience Manager] Assets
+title: Formats de fichier pris en charge dans [!DNL Experience Manager] Ressources
 description: Liste des formats de fichiers et des types MIME pris en charge par Assets et des fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 feature: Asset Management,Renditions
@@ -12,11 +12,11 @@ ht-degree: 62%
 
 ---
 
-# Formats de fichiers pris en charge par [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
+# Formats de fichiers pris en charge dans [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
 [!DNL Experience Manager Assets] prend en charge un large éventail de formats de fichier. Chaque fonctionnalité prend en charge différents types MIME.
 
-Pour intégrer [!DNL Assets] à d’autres solutions de gestion des actifs numériques (DAM) et logiciels de bureau conformes aux normes, utilisez la plateforme de métadonnées extensible (XMP) d’Adobe.
+Pour intégrer [!DNL Assets] avec d’autres solutions de gestion des actifs numériques (DAM) et logiciels de bureau conformes aux normes, utilisez la plateforme de métadonnées extensible (XMP) d’Adobe.
 
 Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 
@@ -50,7 +50,7 @@ Les formats d’image pixellisés pris en charge pour les fonctionnalités de ge
 
 Les formats d’image pixellisés pris en charge pour les fonctionnalités Dynamic Media sont les suivants :
 
-| Format | Télécharger<br> (format d’entrée) | Créer<br> image<br> paramètre prédéfini<br> (format de sortie) | Aperçu<br> rendu dynamique<br> | Diffuser<br> rendu dynamique<br> | Télécharger<br> rendu dynamique<br> |
+| Format | Télécharger<br> (Format d’entrée) | Créer<br> image<br> paramètre prédéfini<br> (Format de sortie) | Aperçu<br> dynamic<br> rendu | Diffuser<br> dynamic<br> rendu | Télécharger<br> dynamic<br> rendu |
 |---|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -61,7 +61,7 @@ Les formats d’image pixellisés pris en charge pour les fonctionnalités Dynam
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD **** | ✓ |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
@@ -72,7 +72,7 @@ Outre les informations ci-dessus, tenez compte des points suivants :
 
 * La prise en charge des fichiers EPS s’applique uniquement aux images pixellisées. Par exemple, la génération de vignettes pour les images vectorielles EPS n’est pas prise en charge par défaut. Pour ajouter une prise en charge, [configurez ImageMagick](best-practices-for-imagemagick.md). Pour intégrer des outils tiers afin d’activer des fonctionnalités supplémentaires, voir [Gestionnaire de médias en ligne de commande](media-handlers.md#command-line-based-media-handler).
 
-* L’écriture différée des métadonnées fonctionne pour le format de fichier PSB lorsqu’il est ajouté au gestionnaire `NComm`.
+* L’écriture différée des métadonnées fonctionne pour le format de fichier PSB lorsqu’il est ajouté au `NComm` gestionnaire.
 
 * Pour utiliser Dynamic Media pour prévisualiser et générer des rendus dynamiques pour les fichiers EPS, voir [Adobe Illustrator (AI), Postscript (EPS) et les formats de fichier PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
@@ -80,7 +80,7 @@ Outre les informations ci-dessus, tenez compte des points suivants :
 
 ## Formats d’image pixellisée non pris en charge dans Dynamic Media {#unsupported-image-formats-dynamic-media}
 
-La liste suivante décrit les sous-types de formats de fichier image pixellisée *non* pris en charge dans Dynamic Media.
+La liste suivante décrit les sous-types de formats de fichiers image pixellisés qui sont *not* pris en charge dans Dynamic Media.
 
 Voir aussi [Détecter les formats de fichiers non pris en charge pour Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
@@ -95,7 +95,7 @@ Voir aussi [Détecter les formats de fichiers non pris en charge pour Dynamic Me
 
 La bibliothèque Adobe PDF Rasterizer génère des miniatures de haute qualité et des aperçus pour les fichiers Adobe Illustrator et PDF de grande taille et riches en contenu. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit :
 
-* Fichiers AI/PDF riches en contenu qui nécessitent un traitement intensif en ressources.
+* Fichiers AI/PDF gourmands en contenu dont le traitement nécessite beaucoup de ressources.
 * Fichiers AI/PDF pour lesquels les miniatures ne sont pas générées par défaut.
 * Fichiers AI contenant des couleurs PMS (Pantone Matching System).
 
@@ -105,19 +105,19 @@ Voir [Utilisation de PDF Rasterizer](aem-pdf-rasterizer.md).
 
 La bibliothèque ITL est une solution de traitement des images qui exécute des fonctions essentielles de gestion des images, telles que le codage, le transcodage, le rééchantillonnage et le redimensionnement.
 
-La bibliothèque ITL prend en charge les types MIME JPG/JPEG, PNG (8 et 16 bits), GIF, BMP, TIFF/Compressé (à l’exception des fichiers TIFF 32 bits et des fichiers PTIFF), ICO et ICN.
+La bibliothèque de transcodage d’imagerie prend en charge les types MIME JPG/JPEG, PNG (8 et 16 bits), GIF, BMP, TIFF/compression (à l’exception des fichiers de TIFF 32 bits et des fichiers PTIFF), ICO et ICN.
 
 Voir [Bibliothèque de transcodage d’imagerie](imaging-transcoding-library.md).
 
 ## Camera Raw {#supported-camera-raw}
 
-La bibliothèque Adobe Camera Raw permet à [!DNL Assets] d’ingérer des images brutes. Voir [Prise en charge Camera Raw](camera-raw.md).
+La bibliothèque Adobe Camera Raw active [!DNL Assets] pour ingérer des images brutes. Voir [Prise en charge Camera Raw](camera-raw.md).
 
 ## Formats de document {#supported-document-formats}
 
 Les formats de documents pris en charge pour les fonctionnalités de gestion des ressources sont les suivants:
 
-| Format | Stockage | Gestion des métadonnées<br> | Extraction de texte intégral<br> | Extraction des métadonnées<br> | Génération de miniatures<br> | Extraction de sous-ressource<br> | Écriture différée des métadonnées<br> |
+| Format | Stockage | Métadonnées<br> gestion | Texte intégral<br> extraction | Métadonnées<br> extraction | Miniature<br> génération | Subasset<br> extraction | Métadonnées<br> write-back |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
@@ -140,7 +140,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 Les formats de document pris en charge pour les fonctionnalités Dynamic Media sont les suivants :
 
-| Format | Télécharger<br> (format d’entrée) | Créer<br> image<br> paramètre prédéfini<br> (format de sortie) | Aperçu<br> rendu dynamique<br> | Diffuser<br> rendu dynamique<br> | Télécharger<br> rendu dynamique<br> |
+| Format | Télécharger<br> (Format d’entrée) | Créer<br> image<br> paramètre prédéfini<br> (Format de sortie) | Aperçu<br> dynamic<br> rendu | Diffuser<br> dynamic<br> rendu | Télécharger<br> dynamic<br> rendu |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
 | DOC |  |  |  |  |  |
@@ -167,7 +167,7 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 * Pour utiliser Dynamic Media de sorte à prévisualiser et générer des rendus dynamiques pour des fichiers AI, voir [Adobe Illustrator (AI), Postscript (EPS) et les formats de fichier PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Pour utiliser Dynamic Media afin de générer des rendus dynamiques pour les fichiers INDD, voir [Format de fichier d’InDesign (INDD)](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Pour utiliser Dynamic Media afin de générer des rendus dynamiques pour des fichiers INDD, voir [Format de fichier InDesign (INDD)](../assets/managing-image-presets.md#indesign-indd-file-format).
 
 ## Formats multimédias {#supported-multimedia-formats}
 
@@ -240,11 +240,11 @@ Le tableau ci-dessous décrit l’applicabilité des processus de gestion des ac
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (lorsque configuré avec son propre domaine de diffusion) |  |  |  |  |  | ✓ |
 
-**#** Les autres formats sont pris en charge dans DAM pour la gestion du stockage, de la création de versions, de la liste de contrôle d’accès, du processus, de la publication et des métadonnées.
+**#** Les autres formats sont pris en charge dans DAM pour la gestion du stockage, de la création de versions, de la liste de contrôle d’accès, des workflows, de la publication et des métadonnées.
 
 ## Types MIME pris en charge {#supported-mime-types}
 
-Par défaut, [!DNL Experience Manager] détecte le type de fichier à l’aide de l’extension de fichier. [!DNL Experience Manager] peut le détecter à partir du contenu des fichiers. Pour plus d’informations, sélectionnez l’option [!UICONTROL Détecter le MIME à partir du contenu] dans [!UICONTROL Service de type MIME de la gestion des actifs numériques Day CQ] dans la console web [!DNL Experience Manager].
+Par défaut, [!DNL Experience Manager] détecte le type de fichier à l’aide de l’extension de fichier. [!DNL Experience Manager] peut le détecter à partir du contenu des fichiers. Pour plus de détails, sélectionnez [!UICONTROL Détecter MIME du contenu] dans [!UICONTROL Service Day CQ DAM Mime Type] dans le [!DNL Experience Manager] Console web.
 
 Une liste des types MIME pris en charge est disponible en CRXDE Lite à l’adresse `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
@@ -308,6 +308,6 @@ Une liste des types MIME pris en charge est disponible en CRXDE Lite à l’adre
 
 >[!MORELIKETHIS]
 >
->* [Activez la prise en charge](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) des paramètres de tâche de téléchargement de ressources/Dynamic Media Classic basés sur le type MIME.
->* [Configurez le type MIME en fonction de la prise en charge](config-dynamic.md) des paramètres de tâche de téléchargement.
+>* [Activation de la prise en charge des paramètres de tâche de téléchargement Assets/Dynamic Media Classic basés sur le type MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+>* [Configuration du type MIME pour la prise en charge des paramètres de tâche de téléchargement](config-dynamic.md).
 

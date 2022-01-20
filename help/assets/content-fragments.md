@@ -23,7 +23,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de la fonction [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
 
 Les fragments de contenu Adobe Experience Manager (AEM) vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-authoring/content-fragments.md). Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples/sur plusieurs canaux.
 
@@ -103,7 +103,7 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 
 >[!NOTE]
 >
->AEM prend également en charge la traduction des fragments de contenu. Voir [Création de projets de traduction pour les fragments de contenu](creating-translation-projects-for-content-fragments.md) pour plus d’informations.
+>AEM prend également en charge la traduction des fragments de contenu. Voir [Création de projets de traduction pour des fragments de contenu](creating-translation-projects-for-content-fragments.md) pour plus d’informations.
 
 ## Types de fragments de contenu {#types-of-content-fragment}
 

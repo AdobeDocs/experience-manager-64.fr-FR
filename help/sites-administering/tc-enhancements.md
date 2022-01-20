@@ -1,18 +1,18 @@
 ---
 title: Amélioration des traductions
-seo-title: Amélioration des traductions
+seo-title: Translation Enhancements
 description: Amélioration des traductions dans AEM.
-seo-description: Amélioration des traductions dans AEM.
+seo-description: Translation enhancements in AEM.
 uuid: 0563603f-327b-48f1-ac14-6777c06734b9
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
-feature: Copie de la langue
+feature: Language Copy
 exl-id: 57a77cec-e228-4ec7-8502-e6e23baddd92
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '552'
 ht-degree: 70%
 
 ---
@@ -65,11 +65,11 @@ Il est possible de configurer plusieurs langues cibles dans un projet de traduct
 
 Les modifications manuelles du contenu traduit peuvent être synchronisées avec le système de gestion de traduction (TMS) pour entraîner sa mémoire de traduction.
 
-1. Dans la console Sites , après avoir mis à jour le contenu textuel dans une page traduite, sélectionnez **Mettre à jour la mémoire de traduction**.
+1. Dans la console Sites , après avoir mis à jour le contenu textuel d’une page traduite, sélectionnez **Mettre à jour la mémoire de traduction**.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction qui doivent être synchronisées avec la mémoire de traduction, puis sélectionnez **Mettre à jour la mémoire**.
+1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction à synchroniser avec la mémoire de traduction, puis sélectionnez **Mettre à jour la mémoire**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
@@ -91,8 +91,7 @@ Les racines de langues peuvent désormais être regroupées sous des nœuds, par
 >* `/content/we-retail/language-masters/americas/central-america/es`
 
 >
->
-Cette copie de la langue `es` n’est pas détectée, car elle se trouve à deux niveaux (americas/central-america) du nœud `en`.
+>Cette copie de la langue `es` n’est pas détectée, car elle se trouve à deux niveaux (americas/central-america) du nœud `en`.
 
 >[!NOTE]
 >

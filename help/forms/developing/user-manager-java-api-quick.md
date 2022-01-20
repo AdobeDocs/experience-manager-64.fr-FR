@@ -1,8 +1,8 @@
 ---
 title: Démarrage rapide de l’API Java User Manager (SOAP)
-seo-title: Démarrage rapide de l’API Java User Manager (SOAP)
+seo-title: User Manager Java API Quick Start(SOAP)
 description: Utilisez l’API User Manager pour ajouter des utilisateurs, supprimer des utilisateurs, créer des groupes, gérer des utilisateurs et des groupes, gérer des rôles et des autorisations, synchroniser les utilisateurs par programmation et gérer les noeuds de préférences par programmation.
-seo-description: Utilisez l’API User Manager pour ajouter des utilisateurs, supprimer des utilisateurs, créer des groupes, gérer des utilisateurs et des groupes, gérer des rôles et des autorisations, synchroniser les utilisateurs par programmation et gérer les noeuds de préférences par programmation.
+seo-description: Use User Manager API to add users, delete users, create groups, manage users and groups, manage roles and permissions, synchronize users programmatically, and manage the Preferences Nodes programmatically.
 uuid: 0a2aa4ab-9329-485f-a30e-47bb471ce1b5
 contentOwner: admin
 content-type: reference
@@ -13,12 +13,12 @@ role: Developer
 exl-id: 130b5669-4533-4e88-9a64-bbbd7c68a5ca
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
 
-# User Manager Java API Quick Start (SOAP) {#user-manager-java-api-quick-start-soap}
+# Démarrage rapide de l’API Java User Manager (SOAP) {#user-manager-java-api-quick-start-soap}
 
 L’API Java Quick Start (SOAP) est disponible pour l’API User Manager.
 
@@ -161,7 +161,7 @@ L’exemple de code suivant ajoute un utilisateur nommé Wendy Blue à AEM Forms
  
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression des utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-deleting-users-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Suppression d’utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
 L’exemple de code suivant supprime un utilisateur nommé Wendy Blue d’AEM Forms. (Voir [Suppression d’utilisateurs](/help/forms/developing/users.md#deleting-users).)
 
@@ -1006,9 +1006,9 @@ public class ManagePreferences {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Gestion par programmation des noeuds Preferences à l’aide de l’API Java {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Gestion par programmation des noeuds de préférences à l’aide de l’API Java {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
 
-Les modèles de code Java suivants gèrent les noeuds Preferences à l’aide des API User Management ( voir [Gestion par programmation des noeuds Preferences](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)).
+Les modèles de code Java suivants gèrent les noeuds Preferences à l’aide des API User Management ( voir [Gestion par programmation des noeuds de préférences](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
 ```as3
 /* 

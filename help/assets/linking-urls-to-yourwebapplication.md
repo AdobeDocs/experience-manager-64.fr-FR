@@ -1,8 +1,8 @@
 ---
 title: Liaison d’URL à une application web
-seo-title: Liaison d’URL à une application web
+seo-title: Linking URLs to your Web Application
 description: Comment lier des URL à votre application web dans Dynamic Media
-seo-description: Comment lier des URL à votre application web dans Dynamic Media
+seo-description: How to link URLs to your web application in dynamic media
 uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -14,7 +14,7 @@ feature: Configuration
 role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1272'
 ht-degree: 96%
 
 ---
@@ -181,7 +181,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    | Protocole de diffusion vidéo que vous utilisez | Sélecteur de protocole à utiliser |
    |---|---|
-   | HTTP  <br> Si vous utilisez HTTP (diffusion vidéo non sécurisée), veillez à remplacer https par http dans la valeur URL du service vidéo que vous avez copiée précédemment. | `public/` |
+   | HTTP <br> Si vous utilisez HTTP (diffusion vidéo non sécurisée), veillez à remplacer https par http dans la valeur URL du service vidéo que vous avez copiée précédemment. | `public/` |
    | HTTPS | `public-ssl/` |
 
 1. Copiez le chemin complet de la ressource vidéo dans AEM, tel qu’il est traité par Dynamic Media. Vous aurez besoin de ce chemin d’accès à la ressource vidéo copié dans ces étapes.

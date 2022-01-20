@@ -1,12 +1,12 @@
 ---
 title: Guide de l’utilisateur pour le déploiement d’AEM 6.4
-seo-title: Guide de l’utilisateur pour le déploiement d’AEM 6.4
+seo-title: AEM 6.4 Deploying User Guide
 description: 'Ce guide couvre toutes les tâches AEM Déploiement, telles que l’installation et le déploiement d’AEM. '
-seo-description: 'Couvre toutes les tâches AEM Déploiement, telles que l’installation et le déploiement d’AEM. '
+seo-description: Covers all AEM Deploying tasks, such as installing and deploying AEM.
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 35%
+source-wordcount: '341'
+ht-degree: 38%
 
 ---
 

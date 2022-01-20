@@ -1,19 +1,19 @@
 ---
 title: Création de formulaires adaptatifs à l’aide d’un schéma XML
-seo-title: Création de formulaires adaptatifs à l’aide d’un schéma XML
+seo-title: Creating adaptive forms using XML Schema
 description: Les formulaires adaptatifs peuvent utiliser un schéma XML en tant que modèle de formulaire, ce qui vous permet d’exploiter les modèles XSD existants pour créer des formulaires adaptatifs. Vous pouvez faire glisser et déposer des éléments de schéma du modèle XSD jusqu’à votre formulaire adaptatif.
-seo-description: Les formulaires adaptatifs peuvent utiliser un schéma XML en tant que modèle de formulaire, ce qui vous permet d’exploiter les modèles XSD existants pour créer des formulaires adaptatifs. Vous pouvez faire glisser et déposer des éléments de schéma du modèle XSD jusqu’à votre formulaire adaptatif.
+seo-description: Adaptive forms can use XML schema as form model, allowing you to leverage existing XSD templates to create adaptive forms. You can drag-and-drop schema elements from XSD onto your adaptive form.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 92%
+source-wordcount: '1044'
+ht-degree: 91%
 
 ---
 
@@ -148,18 +148,18 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
   <tr> 
    <td><code>default="default value"</code></td> 
    <td>Ajoute une valeur par défaut.</td> 
-   <td>Elément et attribut</td> 
+   <td>Élément et attribut</td> 
   </tr> 
   <tr> 
    <td><code>minOccurs="3"</code></td> 
    <td><p>Spécifie les occurrences minimales.</p> <p>(Pour les sous-formulaires répétables (types complexes))</p> </td> 
-   <td>Elément (type complexe)</td> 
+   <td>Élément (type complexe)</td> 
   </tr> 
   <tr> 
    <td><code class="code">maxOccurs="10"
       </code></td> 
    <td><p>Spécifie les occurrences maximales.</p> <p>(Pour les sous-formulaires répétables (types complexes))</p> </td> 
-   <td>Elément (type complexe)</td> 
+   <td>Élément (type complexe)</td> 
   </tr> 
  </tbody> 
 </table>
@@ -172,8 +172,7 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
 >* l’insertion d’un espace entre la casse mixte.
 
 >
->
-Par exemple, si vous ajoutez l’élément de schéma `userFirstName` , la légende générée dans le formulaire adaptatif est `User First Name`.
+>Par exemple, si vous ajoutez la variable `userFirstName` élément de schéma, la légende générée dans le formulaire adaptatif est `User First Name`.
 
 ## Valeurs possibles de limite pour un composant de formulaire adaptatif {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -289,7 +288,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
  </tbody> 
 </table>
 
-## Forum aux questions {#frequently-asked-questions}
+## Questions fréquemment posées  {#frequently-asked-questions}
 
 **Comment savoir quel élément de l’arborescence est associé à quel élément XML ?**
 
@@ -297,11 +296,11 @@ Lorsque vous double-cliquez sur un élément dans l’outil de recherche de cont
 
 ![Champ bindref d’un élément de schéma XML](assets/dblclick.png)
 
-Le champ bindRef</code> affiche l’association entre un élément de l’arborescence et un élément ou un attribut d’un schéma.
+Le bindRef</code> affiche l’association entre un élément de l’arborescence et un élément ou un attribut d’un schéma.
 
 >[!NOTE]
 >
->Les attributs comportent un symbole `@` dans leur valeur `bindRef`pour les distinguer des éléments. Par exemple, `/config/projectDetails/@duration`.
+>Les attributs comportent une `@` symbole de leur `bindRef`pour les distinguer des éléments. Par exemple, `/config/projectDetails/@duration`.
 
 **Pourquoi est-ce que je ne parviens pas à faire glisser des éléments individuels d’un sous-formulaire (structure générée à partir de n’importe quel type complexe) pour les sous-formulaires répétables (les valeurs minOccurs ou maxOccurs sont supérieures à 1) ?**
 

@@ -1,8 +1,8 @@
 ---
 title: Modification des couleurs de l’interface
-seo-title: Modification des couleurs de l’interface
+seo-title: Changing the color scheme of the interface
 description: Comment modifier les couleurs de sections spécifiques de l’interface utilisateur de l’espace de travail AEM Forms.
-seo-description: Comment modifier les couleurs de sections spécifiques de l’interface utilisateur de l’espace de travail AEM Forms.
+seo-description: How to modify the color scheme of AEM Forms workspace user interface portions selectively.
 uuid: 32c32f7a-8271-4d2c-8a1f-ad5ab3c90b83
 contentOwner: robhagat
 content-type: reference
@@ -12,14 +12,14 @@ discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 exl-id: efbb9a9e-0ddf-49f2-bcb8-14cd0c6de5ee
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 76%
+source-wordcount: '229'
+ht-degree: 74%
 
 ---
 
 # Modification des couleurs de l’interface {#changing-the-color-scheme-of-the-interface}
 
-Vous pouvez modifier les couleurs des différentes parties de l’interface utilisateur de l’espace de travail AEM Forms selon vos besoins. Voici quelques exemples de personnalisation des couleurs. Outre les étapes décrites dans cet article, reportez-vous à la section [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+Vous pouvez modifier les couleurs des différentes parties de l’interface utilisateur de l’espace de travail AEM Forms selon vos besoins. Voici quelques exemples de personnalisation des couleurs. Outre les étapes décrites dans cet article, voir [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Barre de navigation supérieure {#top-navigation-bar}
 
@@ -42,7 +42,7 @@ Pour mettre à jour la barre de navigation en haut de l’espace de travail AEM 
    }
    ```
 
-### Utilisation de la propriété color dans la feuille de style CSS  {#using-color-property-in-css}
+### Utilisation de la propriété color dans la feuille de style CSS {#using-color-property-in-css}
 
 1. Ajoutez le style suivant dans newStyle.css sous /apps/ws/css.
 
@@ -53,9 +53,9 @@ Pour mettre à jour la barre de navigation en haut de l’espace de travail AEM 
    }
    ```
 
-## Composant de catégories  {#category-component}
+## Composant de catégories {#category-component}
 
-Le composant de catégories affiche les différentes catégories de tâches dans le volet de gauche. Pour modifier sa couleur, définissez la couleur de fond dans l’élément `.category` du fichier CSS.
+Le composant de catégories affiche les différentes catégories de tâches dans le volet de gauche. Pour modifier sa couleur, définissez la couleur d’arrière-plan dans `.category` élément du fichier CSS.
 
 ## Composant de tâches {#task-component}
 

@@ -8,7 +8,7 @@ exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
 source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 62%
+ht-degree: 66%
 
 ---
 
@@ -22,7 +22,7 @@ La fonction Statistiques sur les ressources capture les détails de l’activit�
 
 Pour que la fonction Statistiques sur les ressources capture les statistiques d’utilisation des ressources à partir d’un site web, vous devez inclure le code intégré de la ressource dans le code du site web.
 
-Pour permettre à Assets Insights d’afficher les statistiques d’utilisation des ressources, configurez d’abord la fonction pour récupérer les données de rapport à partir de [!DNL Adobe Analytics]. Pour plus d’informations, voir [Configuration des statistiques sur les ressources](touch-ui-configuring-asset-insights.md). Pour utiliser cette fonctionnalité dans une installation on-premise, achetez la licence [!DNL Adobe Analytics] séparément. Les clients sur [!DNL Managed Services] reçoivent la licence [!DNL Analytics] inclue avec [!DNL Experience Manager]. Voir [Description du produit Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Pour afficher les statistiques d’utilisation des ressources, commencez par configurer la fonction afin qu’elle récupère les données de rapports d’[!DNL Adobe Analytics]. Pour plus d’informations, consultez la section [Configuration des statistiques sur les ressources](touch-ui-configuring-asset-insights.md). Pour utiliser cette fonctionnalité dans une installation on-premise, achetez [!DNL Adobe Analytics] licence séparément. Clients sur [!DNL Managed Services] recevoir [!DNL Analytics] licence groupée avec [!DNL Experience Manager]. Voir [Description du produit Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
    >[!NOTE]
    >
-   >La fonction Statistiques sur les ressources récupère les données des solutions de [!DNL Adobe Analytics] de manière périodique. Il se peut que la section des solutions n’affiche pas les données les plus récentes. La période pour laquelle les données sont affichées dépend du planning de l’opération de récupération exécutée par Assets Insights pour récupérer les données [!DNL Analytics].
+   >La fonction Statistiques sur les ressources récupère les données des solutions [!DNL Adobe Analytics] de manière périodique, la section solutions peut ne pas afficher les données les plus récentes. La période pour laquelle les données sont affichées dépend du planning de l’opération de récupération exécutée par Assets Insights pour récupérer les données. [!DNL Analytics] data.
 
 1. Pour afficher les statistiques de performances de l’actif sous forme graphique sur une période donnée, sélectionnez une période dans la section **[!UICONTROL Statistiques de performances]**. Les détails, y compris les clics et les impressions, sont affichés sous forme de lignes de tendance dans un graphique.
 
@@ -77,7 +77,7 @@ Vous pouvez afficher les scores de toutes les ressources d’un dossier simultan
 
 Assets Insights récupère les données d’utilisation des ressources des suites de rapports Adobe Analytics de manière périodique. Par défaut, Assets Insights exécute une tâche en arrière-plan toutes les 24 heures à 02h00 pour récupérer les données. Cependant, vous pouvez modifier la fréquence et l’heure en configurant le service de **[!UICONTROL tâche de synchronisation de rapport de performances de ressource Adobe CQ DAM]** via la console web.
 
-1. Appuyez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Opérations > Console web]**.
+1. Appuyez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Opérations > Console web]**.
 1. Ouvrez la configuration de service **[!UICONTROL Tâche de synchronisation des rapports sur les performances des ressources de la gestion des actifs numériques Adobe CQ]**.
 
    ![chlimage_1-304](assets/chlimage_1-304.png)

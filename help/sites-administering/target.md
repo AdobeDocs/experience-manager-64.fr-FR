@@ -1,8 +1,8 @@
 ---
 title: Intégration à Adobe Target
-seo-title: Intégration à Adobe Target
+seo-title: Integrating with Adobe Target
 description: Pour en savoir plus sur l’intégration d’AEM à Adobe Target.
-seo-description: Pour en savoir plus sur l’intégration d’AEM à Adobe Target.
+seo-description: Learn about integrating AEM with Adobe Target.
 uuid: b90346e8-9757-4272-a870-bbe5e647303f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 10c40e33-e62f-451f-b5d4-e34081f4340e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '600'
 ht-degree: 94%
 
 ---
@@ -53,7 +53,6 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 >
 
 
-
 >[!CAUTION]
 >
 >Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
@@ -66,7 +65,7 @@ Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](/hel
 >
 >Lorsque vous ciblez un composant dans le mode Auteur AEM, il effectue une série d’appels côté serveur vers Adobe Target afin d’enregistrer la campagne, de configurer des offres et de récupérer des segments Adobe Target (si cela est configuré). Aucun appel côté serveur n’est effectué depuis la publication AEM vers Adobe Target.
 
-## Sources d’informations sur le contexte  {#background-information-sources}
+## Sources d’informations sur le contexte {#background-information-sources}
 
 Intégrer AEM à Adobe Target nécessite des connaissances sur Adobe Target, la gestion des activités AEM et la gestion des publics AEM. Vous devez connaître les éléments suivants :
 
@@ -82,7 +81,5 @@ Intégrer AEM à Adobe Target nécessite des connaissances sur Adobe Target, la 
 >* 2 000 expériences
 >* 50 mesures
 >* 50 segments de création de rapports
-
 >
-
 

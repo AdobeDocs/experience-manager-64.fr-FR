@@ -1,8 +1,8 @@
 ---
 title: Modification des styles par défaut des formulaires HTML5
-seo-title: Modification des styles par défaut des formulaires HTML5
+seo-title: Changing default styles of HTML5 forms
 description: Le style de formulaires HTML5 est basé sur le code CSS. Vous pouvez modifier les styles par défaut du formulaire.
-seo-description: Le style de formulaires HTML5 est basé sur le code CSS. Vous pouvez modifier les styles par défaut du formulaire.
+seo-description: HTML5 forms styling is based on CSS. You can change the default styles of the form.
 uuid: dab888b1-d1a9-4990-ab21-96570beafd26
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ feature: Mobile Forms
 exl-id: 74e54d96-e418-40aa-9b93-561fbdd6312d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 76%
+source-wordcount: '315'
+ht-degree: 75%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 76%
 
 Les formulaires HTML5 sont rendu utilisant des fonctionnalités HTML5 et le style du formulaire rendu est fait utilisant CSS. L’apparence par défaut des formulaires HTML5 est similaire à son rendu PDF. Les développeurs peuvent utiliser des CSS personnalisés pour modifier l’apparence par défaut des formulaires HTML5.
 
-Cet article fournit des informations détaillées sur la modification du style d’un formulaire HTML5 et l’article [Introduction aux styles](/help/forms/using/css-styles.md) contient des informations détaillées sur divers aspects de style des formulaires HTML5. Assurez-vous de lire l’article Introduction aux styles avant d’effectuer les étapes mentionnées dans cet article.
+Cet article fournit des informations détaillées pour modifier le style d’un formulaire HTML5 et [Présentation des styles](/help/forms/using/css-styles.md) Cet article contient des informations détaillées sur les différents aspects de style des formulaires HTML5. Assurez-vous de lire l’article Introduction aux styles avant d’effectuer les étapes mentionnées dans cet article.
 
 Les deux images qui suivent montrent la différence entre les styles par défaut et les styles personnalisés.
 
@@ -31,7 +31,7 @@ Les deux images qui suivent montrent la différence entre les styles par défaut
 
 1. **Sélectionner un profil auquel ajouter des styles personnalisés**
 
-   Accédez à l’interface CRX DE à l’adresse URL : **https://&lt;serveur>:&lt;port>/crx/de** et créez un profil ou choisissez un profil existant. Pour savoir comment créer un profil, voir [Création d’un nouveau profil](/help/forms/using/custom-profile.md)
+   Accédez à l’interface CRX DE à l’adresse URL : **https://&lt;server>:&lt;port>/crx/de** et créer un profil ou choisir un profil existant. Pour savoir comment créer un profil, voir [Création d’un profil](/help/forms/using/custom-profile.md)
 
 1. **Création d’une feuille de style CSS pour modifier le style des formulaires HTML5**
 

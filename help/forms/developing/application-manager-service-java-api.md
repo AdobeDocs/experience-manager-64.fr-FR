@@ -1,8 +1,8 @@
 ---
 title: Démarrage rapide de l’API Java du service Application Manager (SOAP)
-seo-title: Démarrage rapide de l’API Java du service Application Manager (SOAP)
+seo-title: Application Manager Service JavaAPI Quick Start(SOAP)
 description: Utilisez le service Application Manager pour déployer et supprimer des applications à l’aide de l’API Java Quick Start.
-seo-description: Utilisez le service Application Manager pour déployer et supprimer des applications à l’aide de l’API Java Quick Start.
+seo-description: Use the Application Manager service to deploy and remove applications using the Java API Quick Start.
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
 content-type: reference
@@ -13,12 +13,12 @@ role: Developer
 exl-id: 1d93a7c2-631a-4cf7-938f-0133536c7e09
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '211'
 ht-degree: 1%
 
 ---
 
-# Démarrage rapide (SOAP) de l’API Java du service Application Manager {#application-manager-service-javaapi-quick-start-soap}
+# Démarrage rapide de l’API Java du service Application Manager (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
 Java API Quick Start (SOAP) est disponible pour le service Application Manager.
 

@@ -1,8 +1,8 @@
 ---
 title: Configuration d’une page pour la modification en masse des propriétés de page
-seo-title: Configuration d’une page pour la modification en masse des propriétés de page
+seo-title: Configuring your Page for Bulk Editing of Page Properties
 description: La modification des propriétés de page vous permet de modifier les propriétés de plusieurs pages à la fois
-seo-description: La modification des propriétés de page vous permet de modifier les propriétés de plusieurs pages à la fois
+seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
 uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 0aefe8c0-662e-4177-a369-feab174fa510
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 88%
+source-wordcount: '416'
+ht-degree: 87%
 
 ---
 
@@ -39,10 +39,9 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 >
 
 
-
 >[!NOTE]
 >
->La modification en masse est également disponible pour les actifs. Elle est très similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs actifs.](/help/assets/managing-multiple-assets.md) Vous pouvez personnaliser les champs de l’éditeur de métadonnées en bloc pour les ressources à l’aide de l’[éditeur de schémas](/help/assets/metadata-schemas.md).
+>La modification en masse est également disponible pour les actifs. Elle est très similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs actifs.](/help/assets/managing-multiple-assets.md) Vous pouvez personnaliser les champs de l’éditeur de métadonnées en bloc pour les ressources à l’aide de la variable [Éditeur de schéma](/help/assets/metadata-schemas.md).
 
 ## Activation d’un champ {#enabling-a-field}
 
@@ -60,7 +59,6 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 >
 
 
-
 Les champs sont activés sur le composant de page (et *non* sur le modèle) :
 
 1. En utilisant CRXDE Lite (ou une méthode équivalente), ouvrez votre composant de page.
@@ -71,7 +69,7 @@ Les champs sont activés sur le composant de page (et *non* sur le modèle) :
    >
    >Cet exemple suppose que les composants de base ont été installés sur l’instance, ce qui est le cas si l’instance est exécutée avec un exemple de contenu We.Retail. Pour plus d’informations, voir la [documentation relative aux composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html).
 
-1. Accédez au champ requis dans la définition `cq:dialog`.
+1. Accédez au champ requis dans le `cq:dialog` définition.
 1. Définissez la propriété suivante sur le nœud de champ :
 
    * **Nom** : `allowBulkEdit`
@@ -94,7 +92,7 @@ Les champs sont activés sur le composant de page (et *non* sur le modèle) :
    >
    >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
    >
-   >    1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
+   >    1. Recréez l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
    >    1. Apportez les modifications désirées dans `/apps`
 
 

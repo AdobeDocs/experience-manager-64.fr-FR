@@ -1,8 +1,8 @@
 ---
 title: Modification de l’ordre d’évaluation pour l’authentification
-seo-title: Modification de l’ordre d’évaluation pour l’authentification
+seo-title: Change the order of evaluation for authentication
 description: 'Vous pouvez modifier l’ordre dans lequel AEM Forms évalue plusieurs fournisseurs d’authentification. '
-seo-description: 'Vous pouvez modifier l’ordre dans lequel AEM Forms évalue plusieurs fournisseurs d’authentification. '
+seo-description: You can change the order in which AEM forms evaluates multiple authentication providers.
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
 exl-id: cac16c50-a85d-4e40-a590-8a0a52be893c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 91%
+source-wordcount: '147'
+ht-degree: 89%
 
 ---
 

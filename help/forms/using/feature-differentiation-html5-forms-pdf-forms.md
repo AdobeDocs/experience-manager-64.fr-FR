@@ -1,8 +1,8 @@
 ---
 title: 'Différences de caractéristiques entre formulaires HTML5 et formulaires PDF '
-seo-title: 'Différences de caractéristiques entre formulaires HTML5 et formulaires PDF '
+seo-title: Feature differentiation between HTML5 forms and PDF forms
 description: Caractéristiques prises en charge dans les formulaires HTML5 et les formulaires PDF
-seo-description: Caractéristiques prises en charge dans les formulaires HTML5 et les formulaires PDF
+seo-description: Feature supported in HTML5 forms and PDF forms
 uuid: b0a96da5-31d3-4f99-b100-91ad51736ffb
 contentOwner: robhagat
 content-type: reference
@@ -13,8 +13,8 @@ feature: Mobile Forms
 exl-id: 2b82e68c-ec11-417d-a8e2-769da9b35140
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 83%
+source-wordcount: '485'
+ht-degree: 82%
 
 ---
 
@@ -52,7 +52,7 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   <tr>
    <td>Pagination<br /> </td> 
    <td><p>Un formulaire HTML5 est divisé en panneaux et en zones pour lui donner un aspect similaire aux formulaires PDF. La taille d’une page est calculée de façon dynamique. Si tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge est masquée et un espace vide (espace blanc) ne s’affiche pas entre les pages, au-dessus et au-dessous de la page vierge.</p> <p>Si la fusion des données ou des scripts ajoutent du contenu à une page, la longueur de la page s’ajuste au contenu qui vient d’être ajouté. Aucune nouvelle page n’est ajoutée au formulaire pour s’ajuster au contenu qui vient d’être ajouté. </p> <p><strong>Remarque :</strong> lorsque tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge (espace blanc) reste visible entre la 1ère et 2e page mais pas entre les autres pages.</p> </td> 
-   <td>La pagination dans le PDF dépend du contenu des données fusionnées ou du contenu de l’utilisateur et le nombre de pages est augmenté/réduit en fonction de ce contenu.</td> 
+   <td>La pagination dans PDF dépend du contenu des données fusionnées ou du contenu de l’utilisateur et le nombre de pages est augmenté/réduit en fonction de ce contenu.</td> 
   </tr>
   <tr>
    <td>En-têtes/pieds de page </td> 
@@ -66,12 +66,12 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   </tr>
   <tr>
    <td>API de script XFA</td> 
-   <td>Prend en charge les éléments de script XFA les plus couramment utilisés. Pour obtenir la liste détaillée des éléments pris en charge, voir <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td> 
+   <td>Prend en charge les éléments de script XFA les plus couramment utilisés. Pour obtenir la liste détaillée des éléments pris en charge, voir <a href="/help/forms/using/scripting-support.md">prise en charge des scripts</a>.</td> 
    <td>Prend en charge tous les éléments de script XFA.</td> 
   </tr>
   <tr>
    <td>API des scripts Acrobat </td> 
-   <td>Les formulaires HTML5 prennent en charge la plupart des API couramment utilisées. Pour plus d’informations, voir <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td> 
+   <td>Les formulaires HTML5 prennent en charge la plupart des API couramment utilisées. Pour plus d’informations, voir <a href="/help/forms/using/scripting-support.md">prise en charge des scripts</a>.</td> 
    <td>Si le fichier PDF est ouvert dans Acrobat ou Reader, il prend également en charge toutes les API de script fournies par Acrobat.</td> 
   </tr>
   <tr>
@@ -82,4 +82,4 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
  </tbody>
 </table>
 
-Suivez les bonnes pratiques pour activer un modèle de formulaire pour les rendus HTML5 et vous assurer que le comportement et l’aspect des formulaires HTML5 et des PDF basés sur XFA sont cohérents. Vous pouvez consulter la liste détaillée des recommandations à la page [Recommandations de conception d’un formulaire HTML5.](/help/forms/using/best-practices-for-html5-forms.md)
+Suivez les bonnes pratiques pour activer un modèle de formulaire pour les rendus HTML5 et vous assurer que le comportement et l’aspect des formulaires HTML5 et du PDF XFA sont cohérents. Vous pouvez consulter la liste détaillée des recommandations à la page [Recommandations de conception d’un formulaire HTML5.](/help/forms/using/best-practices-for-html5-forms.md)

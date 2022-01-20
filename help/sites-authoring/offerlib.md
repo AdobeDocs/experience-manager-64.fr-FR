@@ -1,8 +1,8 @@
 ---
-title: 'Création et gestion d’offres  '
-seo-title: 'Création et gestion d’offres  '
+title: Création et gestion d’offres
+seo-title: Creating and Managing Offers
 description: Utilisez la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
-seo-description: Utilisez la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
+seo-description: Use the Offers console to create offers that you can use in activity experiences
 uuid: 0b7c64e2-1451-4947-aa59-1d8255806910
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: 889b5ffc-3652-47d8-b576-128f3cee513a
 exl-id: 5c7c1cda-0e9c-454f-91c4-8e1f37a155c3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '862'
 ht-degree: 100%
 
 ---
 
-# Création et gestion d’offres  {#creating-and-managing-offers}
+# Création et gestion d’offres{#creating-and-managing-offers}
 
 Utilisez la console Offres pour créer des offres que vous pourrez [utiliser dans le cadre d’expériences associées à des activités](/help/sites-authoring/content-targeting-touch.md). La création d’offres dans la console Offres permet de gagner du temps lorsque plusieurs expériences nécessitent la même offre :
 
@@ -26,13 +26,13 @@ Utilisez la console Offres pour créer des offres que vous pourrez [utiliser dan
 
 La console Offres trie les offres par marque. Chaque marque contient une bibliothèque d’offres qui peuvent être utilisées dans les expériences d’une marque. Utilisez des dossiers pour organiser hiérarchiquement les offres dans chaque bibliothèque. Une structure de dossiers logique permet aux auteurs de retrouver facilement des offres en les parcourant. Les outils de balisage et de recherche permettent également aux auteurs de retrouver des offres pertinentes.
 
-## Ajout d’une marque dans la console Offres   {#add-a-brand-using-the-offers-console}
+## Ajout d’une marque dans la console Offres {#add-a-brand-using-the-offers-console}
 
 Créez une marque à laquelle vos offres sont associées. Ouvrez une marque dans la console Offres pour accéder à la bibliothèque d’offres dans laquelle vous pouvez créer des dossiers et des offres.
 
 Lorsque vous créez une marque à l’aide de la console Offres, elle s’affiche également dans la console [Activités](/help/sites-authoring/activitylib.md) où vous pouvez ajouter et gérer des activités relatives à la marque.
 
-1. Dans la console de navigation, cliquez ou appuyez sur **Personnalisation** > **Offres**.
+1. Dans la console de navigation, cliquez ou appuyez sur **Personnalisation** > **Offres**.
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
 
@@ -41,7 +41,7 @@ Lorsque vous créez une marque à l’aide de la console Offres, elle s’affich
 1. Saisissez un titre pour la marque tel qu’il doit apparaître dans les consoles Offres et Activités. Si vous le souhaitez, saisissez ou sélectionnez une ou plusieurs balises à associer à la marque.
 1. Cliquez ou appuyez sur **Créer**.
 
-## Ajout d’un fichier à une bibliothèque d’offres    {#add-a-folder-to-an-offer-library}
+## Ajout d’un fichier à une bibliothèque d’offres {#add-a-folder-to-an-offer-library}
 
 Ajoutez un dossier à la bibliothèque d’offres d’une marque pour y organiser et y stocker les offres. Vous pouvez créer un dossier sous la marque ou sous d’autres dossiers.
 
@@ -57,7 +57,7 @@ Ajoutez un dossier à la bibliothèque d’offres d’une marque pour y organise
 
 1. Cliquez ou appuyez sur **Créer**.
 
-## Ajout d’une offre à une bibliothèque d’offres    {#add-an-offer-to-an-offer-library}
+## Ajout d’une offre à une bibliothèque d’offres {#add-an-offer-to-an-offer-library}
 
 Ajoutez une offre à la bibliothèque d’offres d’une marque afin de pouvoir l’ajouter à des expériences liées à cette marque. Lorsque vous ajoutez une offre, il convient de saisir un titre. Vous pouvez également associer l’offre à une ou plusieurs balises pour optimiser la recherche.
 
@@ -81,7 +81,7 @@ Vous pouvez ouvrir une offre à partir d’un dossier d’une bibliothèque d’
 1. Dans la console Offres, cliquez ou appuyez sur l’icône située en regard de l’offre, puis sur **Modifier**.
 1. Ajoutez des composants à l’offre et publiez le contenu en suivant la procédure habituelle.
 
-## Suppression d’une offre    {#deleting-an-offer}
+## Suppression d’une offre {#deleting-an-offer}
 
 Supprimez une offre lorsqu’elle n’est plus nécessaire. Si vous essayez de supprimer une offre utilisée dans une expérience, vous êtes invité à confirmer la suppression. La confirmation supprime l’offre et la retire également des expériences.
 
@@ -97,7 +97,7 @@ Vous pouvez supprimer une offre tout en affichant le contenu des dossiers de la 
    * Pour supprimer l’offre et la retirer des expériences, cliquez ou appuyez sur **Forcer la suppression**.
    * Pour conserver l’offre, cliquez ou appuyez sur **Annuler**.
 
-## Recherche d’offres    {#searching-for-offers}
+## Recherche d’offres {#searching-for-offers}
 
 Recherchez les offres d’une marque quelconque à l’aide de mots-clés correspondant à leur titre.
 

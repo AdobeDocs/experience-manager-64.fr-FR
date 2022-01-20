@@ -1,8 +1,8 @@
 ---
 title: Administration de sites web
-seo-title: Administration de sites web
+seo-title: Website Administration
 description: Découvrez comment gérer des sites web multilingues dans AEM.
-seo-description: Découvrez comment gérer des sites web multilingues dans AEM.
+seo-description: Learn how to manage multilingual websites in AEM.
 uuid: a32d458b-a5ad-46ef-a68c-4717c63b4bdd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: e8f83d21-b55e-4415-a581-8df1b71a84b1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '341'
 ht-degree: 94%
 
 ---
@@ -53,6 +53,7 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >
 >* [MSM](/help/sites-administering/msm.md) gère le déploiement du contenu traduit d’un plan directeur (par exemple, un gabarit mondial) des Live Copies (par exemple, les sites locaux), dans les limites d’une langue.
 >* Les fonctionnalités d’intégration de [traduction](/help/sites-administering/translation.md) d’AEM, combinées aux services de gestion de traduction tiers, gèrent les langues et le contenu de traduction dans ces différentes langues.
+
 >
 >Pour les cas d’utilisation plus avancés, MSM peut également être utilisé dans les gabarits de langue.
 
@@ -61,8 +62,9 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >Dans tous les cas, il est recommandé de lire les bonnes pratiques suivantes :
 >
 >* [Bonnes pratiques liées à MSM](/help/sites-administering/msm-best-practices.md); en particulier :
+   >
+   >   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
->   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
->   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >* [Bonnes pratiques de traduction](/help/sites-administering/tc-bp.md)
 

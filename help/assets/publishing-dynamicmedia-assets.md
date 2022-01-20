@@ -1,21 +1,21 @@
 ---
-title: 'Publication de ressources Dynamic Media '
+title: Publication de ressources Dynamic Media
 description: Comment publier des ressources Dynamic Media, y compris la diffusion HTTP/2 de ces ressources.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: ebe30c07-1d76-4338-b301-49591f981688
-feature: Gestion des ressources
+feature: Asset Management
 role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '409'
 ht-degree: 95%
 
 ---
 
-# Publication de ressources Dynamic Media  {#publishing-dynamic-media-assets}
+# Publication de ressources Dynamic Media {#publishing-dynamic-media-assets}
 
 Pour publier vos ressources Dynamic Media, sélectionnez-les en appuyant sur l’icône **[!UICONTROL Publier]**. Une fois les ressources Dynamic Media publiées, vous pouvez les inclure dans une page web via une URL ou une incorporation.
 
@@ -39,7 +39,6 @@ Voir aussi [Incorporation de la visionneuse de vidéos dans une page web.](embed
 >* Les paramètres d’image prédéfinis et les paramètres de visionneuse prédéfinis doivent être activés et publiés pour une diffusion en direct.
 
 >
-
 
 
 Pour plus d’informations sur la publication d’une visionneuse ou d’une ressource, reportez-vous à la section [Publication de ressources.](managing-assets-touch-ui.md)

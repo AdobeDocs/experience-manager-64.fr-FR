@@ -1,8 +1,8 @@
 ---
 title: Gestion de projets
-seo-title: Gestion de projets
+seo-title: Managing Projects
 description: La console Projets vous permet d’organiser votre projet en regroupant les ressources dans une seule entité accessible et gérée dans la console Projets.
-seo-description: La console Projets vous permet d’organiser votre projet en regroupant les ressources dans une seule entité accessible et gérée dans la console Projets.
+seo-description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed in the Projects console
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 5066e2a2-9904-4203-914f-b0d4da2c88e4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 92%
+source-wordcount: '1037'
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ Sans configuration supplémentaire, AEM propose les modèles suivants pour crée
 * Projet de séance photo du produit
 * Projet de traduction
 
-Les étapes de création d’un projet sont identiques d’un projet à l’autre. La différence entre les types de projets porte sur les [rôles utilisateur](/help/sites-authoring/projects.md) et les [workflows](/help/sites-authoring/projects-with-workflows.md) disponibles.  Pour créer un projet :
+Les étapes de création d’un projet sont identiques d’un projet à l’autre. La différence entre les types de projets porte sur les [rôles utilisateur](/help/sites-authoring/projects.md) et les [workflows](/help/sites-authoring/projects-with-workflows.md) disponibles. Pour créer un projet :
 
 1. Dans **Projets**, appuyez/cliquez sur **Créer** pour ouvrir l’assistant **Créer un projet** :
 1. Sélectionner un modèle. Sans configuration supplémentaire, vous pouvez choisir parmi les modèles suivants : projet simple, projet de média, [projet de traduction](/help/sites-administering/tc-manage.md) et [projet de séance photo du produit](/help/sites-authoring/managing-product-information.md) puis cliquer sur **Suivant**.
@@ -61,7 +61,7 @@ Les étapes de création d’un projet sont identiques d’un projet à l’autr
 
 1. Cliquez/appuyez sur **Créer**. Le message de confirmation vous demande si vous voulez ouvrir votre projet ou revenir à la console.
 
-### Association de ressources à un projet   {#associating-resources-with-your-project}
+### Association de ressources à un projet {#associating-resources-with-your-project}
 
 Dans la mesure où les projets permettent de regrouper les ressources dans une seule entité, il convient d’associer des ressources à votre projet. Ces ressources sont connues sous le nom de **mosaïques**. Les types de ressources que vous pouvez ajouter sont décrits dans la section [Mosaïques de projet](/help/sites-authoring/projects.md#project-tiles).
 
@@ -106,7 +106,7 @@ Pour ajouter des éléments à une mosaïque :
 
    ![chlimage_1-259](assets/chlimage_1-259.png)
 
-1. Ajoutez un élément à la mosaïque comme vous le feriez pour créer une mosaïque. Les mosaïques de projets sont décrites [ici](/help/sites-authoring/projects.md#project-tiles). Dans cet exemple, un autre worfklow a été ajouté.
+1. Ajoutez un élément à la mosaïque comme vous le feriez pour créer une mosaïque. Les mosaïques de projets sont décrites [ici](/help/sites-authoring/projects.md#project-tiles). Dans cet exemple, un autre workflow a été ajouté.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 

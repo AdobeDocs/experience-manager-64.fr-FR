@@ -1,8 +1,8 @@
 ---
 title: Annotations lors de la modification d’une page
-seo-title: Annotations lors de la modification d’une page
+seo-title: Annotations when Editing a Page
 description: L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette procédure, de nombreux composants directement liés au contenu permettent d’ajouter une annotation.
-seo-description: L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette procédure, de nombreux composants directement liés au contenu permettent d’ajouter une annotation.
+seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -13,7 +13,7 @@ discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 exl-id: 76e36d3b-4a8a-45ee-bb4e-28b150ec089c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '782'
 ht-degree: 95%
 
 ---
@@ -81,7 +81,6 @@ Les trois icônes dans la partie supérieure gauche vous permettent de minimiser
 >* les schémas existants, créés dans un autre navigateur, ne s’affichent pas.
 
 >
-
 
 
 Les schémas sont une fonctionnalité des annotations qui vous permet de créer des graphiques en courbes simples, n’importe où dans la fenêtre de navigateur (partie visible) :

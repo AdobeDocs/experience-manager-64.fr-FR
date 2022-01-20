@@ -1,8 +1,8 @@
 ---
 title: Concepts de l’interface utilisateur (IU) tactile d’AEM
-seo-title: Concepts de l’interface utilisateur (IU) tactile d’AEM
+seo-title: Concepts of the AEM Touch-Enabled UI
 description: Adobe a lancé, avec AEM 5.6, une nouvelle interface utilisateur optimisée pour les écrans tactiles. Cette interface s’accompagne également de la technologie responsive design pour l’environnement de création.
-seo-description: Adobe a lancé, avec AEM 5.6, une nouvelle interface utilisateur optimisée pour les écrans tactiles. Cette interface s’accompagne également de la technologie responsive design pour l’environnement de création.
+seo-description: With AEM 5.6 Adobe introduced a new touch-optimized UI with responsive design for the author environment
 uuid: 8ec6514e-f623-40be-a7bf-2e85bf4385ca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
 exl-id: a89cf964-cc9f-46d7-afd8-150d48948513
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2197'
 ht-degree: 93%
 
 ---
@@ -77,7 +77,7 @@ Les principes de base dans l’IU tactile sont les suivants :
 * Inclure des tests intégrés
 * Approche ascendante pour garantir l’application de ces principes à tous les éléments et composants
 
-Pour un aperçu plus complet de la structure de l’IU tactile, consultez l’article [Structure de l’IU tactile AEM](/help/sites-developing/touch-ui-structure.md).
+Pour une présentation plus détaillée de la structure de l’interface utilisateur tactile, reportez-vous à l’article [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md).
 
 ## Pile technologique AEM {#aem-technology-stack}
 
@@ -185,7 +185,7 @@ Il est aussi intéressant d’examiner les différences entre l’IU Granite et 
    <td><strong>IU Granite</strong></td> 
   </tr> 
   <tr> 
-   <td>Appel de procédure à distance<br /> </td> 
+   <td>Appel de procédure distante<br /> </td> 
    <td>Transmissions d’état</td> 
   </tr> 
   <tr> 
@@ -299,15 +299,13 @@ L’interface utilisateur (IU) Coral est une implémentation du style visuel d�
 >* Personnalisations mineures.
 
 >
->
-Vous devez éviter d’utiliser l’IU Coral dans les cas suivants :
+>Vous devez éviter d’utiliser l’IU Coral dans les cas suivants :
 >
 >* Documents et autres éléments non liés à Adobe.
 >* Environnements de création de contenu (dans lesquels les éléments précédents peuvent être générés par des tiers).
 >* Applications/composants/pages web qui ne sont pas clairement associés à Adobe.
 
 >
-
 
 
 L’IU Coral est un ensemble de composantes de base destinées au développement d’applications web.
@@ -318,7 +316,7 @@ Conçu dès le début dans une optique de modularité, chaque module forme une c
 
 L’IU Coral n’exige pas l’utilisation d’un modèle, ni d’une plate-forme de développement spécifique. L’objectif principal de Coral est de fournir un balisage HTML5 net et unifié, indépendant de la méthode utilisée pour émettre les balises. Ce balisage peut être utilisé pour le rendu côté client ou serveur, les modèles, JSP, PHP ou encore les applications RIA Adobe Flash, pour ne citer que quelques exemples.
 
-### Éléments HTML – Calque de balisage  {#html-elements-the-markup-layer}
+### Éléments HTML – Calque de balisage {#html-elements-the-markup-layer}
 
 Les éléments HTML offrent une apparence commune pour tous les éléments d’interface de base (y compris la barre de navigation, les boutons, les menus, le rail, etc.).
 
@@ -380,14 +378,14 @@ Un module externe est soit :
 Le comportement du module externe peut être personnalisé en utilisant l’une des méthodes suivantes :
 
 * Transmission des paramètres via un appel JavaScript
-* Utilisation d’attributs `data-*` dédiés liés aux balises HTML
+* Utilisation dédiée `data-*` attributs liés au balisage de HTML
 
 Bien que le développeur puisse choisir la méthode la mieux adaptée à chaque module externe, le principe de base consiste à utiliser :
 
-* `data-*` attributs pour les options liées à la mise en page HTML. pour indiquer le nombre de colonnes, par exemple.
+* `data-*` attributs pour les options liées à la mise en page des HTMLS. pour indiquer le nombre de colonnes, par exemple.
 * Des options/classes API pour les fonctionnalités liées aux données ; pour créer la liste des éléments à afficher, par exemple.
 
-Le même concept est utilisé pour implémenter la validation de formulaire. Pour un élément que vous souhaitez valider, vous devez spécifier le formulaire de saisie requis sous la forme d’un attribut `data-*` personnalisé. Cet attribut est ensuite utilisé comme option pour un module externe de validation.
+Le même concept est utilisé pour implémenter la validation de formulaire. Pour un élément que vous souhaitez valider, vous devez spécifier le formulaire d’entrée requis en tant que formulaire personnalisé. `data-*` attribut. Cet attribut est ensuite utilisé comme option pour un module externe de validation.
 
 >[!NOTE]
 >
@@ -403,7 +401,7 @@ Objectif:
 Mise en œuvre:
 
 * Module externe jQuery, lié à un ou plusieurs éléments DOM spécifiques.
-* Utilisation d’attributs `data-*` pour personnaliser le comportement
+* Utilisation `data-*` attributs pour personnaliser le comportement
 
 Extrait d’exemples de balisage (notez les options spécifiées en tant que data-&amp;ast; Attributs) :
 

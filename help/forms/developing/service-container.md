@@ -1,8 +1,8 @@
 ---
 title: Conteneur de services
-seo-title: Conteneur de services
-description: En savoir plus sur les fonctionnalités du conteneur de services. En outre, l’article décrit les différentes manières dont vous pouvez appeler les services AEM Forms par programmation.
-seo-description: En savoir plus sur les fonctionnalités du conteneur de services. En outre, l’article décrit les différentes manières dont vous pouvez appeler les services AEM Forms par programmation.
+seo-title: Service container
+description: En savoir plus sur les fonctionnalités du conteneur de services. En outre, l’article décrit les différentes façons dont vous pouvez appeler les services AEM Forms par programmation.
+seo-description: Learn more about the functionalities of service container. In addition, the article also describes the different ways in which you can programmatically invoke AEM Forms services.
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: 92351e2d-1928-4bc4-aaff-d557ee09d1ee
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '931'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Le tableau suivant décrit les différentes manières dont vous pouvez appeler l
  <tbody>
   <tr>
    <td><p>Intégration distante</p></td> 
-   <td><p>L’intégration distante permet aux clients Flex d’appeler les opérations de service. (Voir <a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Appel d’AEM Forms à l’aide d’ (obsolète pour les formulaires AEM) AEM Forms Remoting</a>.)</p></td> 
+   <td><p>L’intégration distante permet aux clients Flex d’appeler les opérations de service. (Voir <a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Appel d’AEM Forms à l’aide d’AEM Forms Remoting (obsolète pour AEM forms)</a>.)</p></td> 
   </tr> 
   <tr>
    <td><p>API Java</p></td> 
@@ -42,11 +42,11 @@ Le tableau suivant décrit les différentes manières dont vous pouvez appeler l
   </tr> 
   <tr>
    <td><p>Services web</p></td> 
-   <td><p>AEM Forms prend en charge les normes de service Web telles que SOAP/HTTP. Un service peut être exposé en tant que service Web, le WSDL respectant les normes de service Web définies par le W3C.</p><p>Un service peut être appelé à partir de n’importe quelle pile de services Web, y compris .NET Framework et le SDK Sun™ Web Services. (Voir <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Appel d’AEM Forms à l’aide des services web</a>.)</p></td> 
+   <td><p>AEM Forms prend en charge les normes de service Web telles que SOAP/HTTP. Un service peut être exposé en tant que service Web, le WSDL respectant les normes de service Web définies par le W3C.</p><p>Un service peut être appelé à partir de n’importe quelle pile de services Web, y compris .NET Framework et le SDK Sun™ Web Services. (Voir <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Appel d’AEM Forms à l’aide de services web</a>.)</p></td> 
   </tr> 
   <tr>
    <td><p>Requêtes REST</p></td> 
-   <td><p>AEM Forms prend en charge les requêtes REST. Un service peut être appelé directement à partir d’une page HTML. (Voir <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Appel d’AEM Forms à l’aide de requêtes REST</a>.)</p></td> 
+   <td><p>AEM Forms prend en charge les requêtes REST. Un service peut être appelé directement à partir d’une page de HTML. (Voir <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Appel d’AEM Forms à l’aide de requêtes REST</a>.)</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -55,22 +55,22 @@ L’illustration suivante présente une représentation visuelle des différente
 
 >[!NOTE]
 >
->Outre l’utilisation du SDK AEM Forms pour créer des applications clientes pouvant appeler les services AEM Forms, vous pouvez créer des composants qui peuvent être déployés sur le conteneur de services. Par exemple, vous pouvez créer un composant Bank qui contient des types de données personnalisés qui peuvent être utilisés dans des processus. En d’autres termes, vous pouvez créer un type de données tel que `com.adobe.idp.BankAccount`. Vous pouvez ensuite créer des instances `com.adobe.idp.BankAccount` dans vos applications clientes.
+>Outre l’utilisation du SDK AEM Forms pour créer des applications clientes pouvant appeler les services AEM Forms, vous pouvez créer des composants qui peuvent être déployés sur le conteneur de services. Par exemple, vous pouvez créer un composant Bank qui contient des types de données personnalisés qui peuvent être utilisés dans des processus. En d’autres termes, vous pouvez créer un type de données tel que `com.adobe.idp.BankAccount`. Vous pouvez ensuite créer `com.adobe.idp.BankAccount` dans vos applications clientes.
 
 Le conteneur de services offre les fonctionnalités suivantes :
 
 * Permet d’appeler les services AEM Forms à l’aide de méthodes différentes. Vous pouvez configurer un service en définissant des points de fin afin qu’il puisse être appelé à l’aide de toutes les méthodes : Remoting, l’API Java, les services web et REST. (Voir [Gestion des points de fin par programmation](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
-* Convertit un message dans un format normalisé appelé demande d’appel. Une demande d’appel est envoyée d’une application cliente (ou d’un autre service) à un service situé dans le conteneur de services. Une demande d’appel contient des informations telles que le nom du service à appeler et les valeurs de données requises pour effectuer l’opération. De nombreux services requièrent un document pour effectuer une opération. Par conséquent, une demande d’appel contient généralement un document, qui peut être des données PDF, des données XDP, des données XML, etc.
+* Convertit un message dans un format normalisé appelé demande d’appel. Une demande d’appel est envoyée d’une application cliente (ou d’un autre service) à un service situé dans le conteneur de services. Une demande d’appel contient des informations telles que le nom du service à appeler et les valeurs de données requises pour effectuer l’opération. De nombreux services requièrent un document pour effectuer une opération. Par conséquent, une demande d’appel contient généralement un document, qui peut être des données de PDF, des données XDP, des données XML, etc.
 * achemine les demandes d’appel vers les services appropriés (le nom du service à appeler fait partie de la demande d’appel).
 * exécute des tâches telles que la détermination de l’autorisation de l’appelant à appeler l’opération de service spécifiée. La demande d’appel doit contenir un nom d’utilisateur et un mot de passe AEM valides.
 
-   Il existe différentes manières d’envoyer une demande d’appel à un service. Il existe également différentes manières d’envoyer les valeurs d’entrée requises au service. Supposons, par exemple, que vous utilisiez l’API Java pour appeler un service nécessitant un document PDF. La méthode Java correspondante contient un paramètre qui accepte un document PDF. Dans ce cas, le type de données du paramètre est `com.adobe.idp.Document`. (Voir [Transmission de données aux services AEM Forms à l’aide de l’API Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+   Il existe différentes manières d’envoyer une demande d’appel à un service. Il existe également différentes manières d’envoyer les valeurs d’entrée requises au service. Supposons, par exemple, que vous utilisiez l’API Java pour appeler un service nécessitant un document de PDF. La méthode Java correspondante contient un paramètre qui accepte un document de PDF. Dans ce cas, le type de données du paramètre est `com.adobe.idp.Document`. (Voir [Transmission de données aux services AEM Forms à l’aide de l’API Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
    Si vous appelez un service à l’aide de dossiers de contrôle, une demande d’appel est envoyée lorsque vous placez un fichier dans un dossier de contrôle configuré. Si vous appelez un service par courrier électronique, une demande d’appel est envoyée à un service lorsqu’un message électronique arrive dans une boîte de réception configurée.
 
-   Le conteneur de services renvoie une réponse d’appel une fois l’opération effectuée. Une réponse d’appel contient des informations telles que les résultats de l’opération. Par exemple, si l’opération modifie un document PDF, la réponse d’appel contient le document PDF modifié. Si l’opération a échoué, la réponse d’appel contient un message d’erreur.
+   Le conteneur de services renvoie une réponse d’appel une fois l’opération effectuée. Une réponse d’appel contient des informations telles que les résultats de l’opération. Par exemple, si l’opération modifie un document de PDF, la réponse d’appel contient le document de PDF modifié. Si l’opération a échoué, la réponse d’appel contient un message d’erreur.
 
-   Une réponse d’appel peut être récupérée de la même manière qu’une demande d’appel est envoyée. En d’autres termes, si la demande d’appel est envoyée à l’aide de l’API Java, une réponse d’appel peut être récupérée à l’aide de l’API Java. Supposons, par exemple, qu’une opération modifie un document PDF. Vous pouvez récupérer le document PDF modifié en obtenant la valeur renvoyée par la méthode Java qui a appelé le service.
+   Une réponse d’appel peut être récupérée de la même manière qu’une demande d’appel est envoyée. En d’autres termes, si la demande d’appel est envoyée à l’aide de l’API Java, une réponse d’appel peut être récupérée à l’aide de l’API Java. Supposons, par exemple, qu’une opération modifie un document de PDF. Vous pouvez récupérer le document de PDF modifié en obtenant la valeur renvoyée de la méthode Java qui a appelé le service.
 
    Lorsqu’un processus de longue durée est appelé, une réponse d’appel contient une valeur d’identifiant associée à la demande d’appel. Cette valeur d’identifiant vous permet de vérifier ultérieurement l’état du processus. Prenons l’exemple du service de longue durée MortgageLoan. À l’aide de la valeur d’identifiant, vous pouvez vérifier si le processus s’est terminé avec succès. (Voir [Appel de processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 

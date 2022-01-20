@@ -1,6 +1,6 @@
 ---
 title: Extension de la recherche de ressources
-description: Étendez les fonctionnalités de recherche de  [!DNL Experience Manager] ressources au-delà des recherches prêtes à l’emploi de ressources par chaînes.
+description: Étendre les fonctionnalités de recherche de [!DNL Experience Manager] Les ressources au-delà des recherches prêtes à l’emploi recherchent des ressources par chaînes.
 contentOwner: AG
 feature: Search
 role: Developer
@@ -14,15 +14,15 @@ ht-degree: 81%
 
 # Extension de la recherche de ressources {#extending-assets-search}
 
-Vous pouvez étendre les fonctionnalités de recherche d’Adobe Experience Manager Assets. [!DNL Experience Manager] Assets recherche des ressources par chaînes.
+Vous pouvez étendre les fonctionnalités de recherche d’Adobe Experience Manager Assets. Prêt à l’emploi, [!DNL Experience Manager] Les ressources recherchent des ressources par chaînes.
 
 La recherche est effectuée par le biais de l’interface QueryBuilder, de sorte qu’elle puisse être personnalisée avec plusieurs prédicats. Vous pouvez remplacer l’ensemble des prédicats par défaut dans le répertoire suivant : `/apps/dam/content/search/searchpanel/facets`.
 
-Vous pouvez également ajouter des onglets supplémentaires au [!DNL Experience Manager] panneau d’administration des ressources.
+Vous pouvez également ajouter d’autres onglets au [!DNL Experience Manager] Panneau d’administration des ressources.
 
 >[!CAUTION]
 >
->À compter de la version [!DNL Experience Manager] 6.4, l’interface utilisateur classique est obsolète. Pour consulter l’annonce correspondante, voir [Fonctionnalités obsolètes et supprimées](../release-notes/deprecated-removed-features.md). Vous êtes invité à utiliser l’IU tactile. Pour les personnalisations, voir [Facettes de recherche](search-facets.md).
+>À partir de [!DNL Experience Manager] 6.4, l’interface utilisateur classique est obsolète. Pour consulter l’annonce correspondante, voir [Fonctionnalités obsolètes et supprimées](../release-notes/deprecated-removed-features.md). Vous êtes invité à utiliser l’IU tactile. Pour les personnalisations, voir [Facettes de recherche](search-facets.md).
 
 ## Remplacement {#overlaying}
 
@@ -36,20 +36,20 @@ Pour remplacer les prédicats préconfigurés, copiez le nœud `facets` du répe
 
 ## Ajout d’onglets {#adding-tabs}
 
-Vous pouvez ajouter d’autres onglets de recherche en les configurant dans l’ [!DNL Experience Manager] administrateur de ressources. Pour créer des onglets supplémentaires, procédez comme suit :
+Vous pouvez ajouter d’autres onglets de recherche en les configurant dans le [!DNL Experience Manager] Administration des ressources. Pour créer des onglets supplémentaires, procédez comme suit :
 
 1. Créez la structure de dossiers `/apps/wcm/core/content/damadmin/tabs,`si elle n’existe pas encore, puis copiez le nœud `tabs` dans le répertoire `/libs/wcm/core/content/damadmin` et collez-le.
 1. Créez et configurez le second onglet, le cas échéant.
 
    >[!NOTE]
    >
-   >Lorsque vous créez un deuxième panneau siteadminsearchpanel, veillez à définir une propriété `id` afin d’éviter les conflits de formulaire.
+   >Lorsque vous créez un deuxième panneau siteadminsearchpanel, veillez à définir une `id` afin d’éviter les conflits de formulaire.
 
 ## Création de prédicats personnalisés {#creating-custom-predicates}
 
 [!DNL Experience Manager] Assets est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Outre l’utilisation de prédicats préexistants, les développeurs [!DNL Experience Manager] peuvent également créer leurs propres prédicats à l’aide de l’[API Query Builder](/help/sites-developing/querybuilder-api.md).
+En plus d’utiliser des prédicats préexistants, [!DNL Experience Manager] les développeurs peuvent également créer leurs propres prédicats à l’aide de la variable [API Query Builder](/help/sites-developing/querybuilder-api.md).
 
 La création de prédicats personnalisés nécessite des connaissances de base sur la [structure des widgets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -142,7 +142,7 @@ Pour créer un prédicat de propriété, procédez comme suit :
    </script>
    ```
 
-1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, dans CRXDE, ajoutez un noeud `cq:editConfig` de type Principal `cq:EditConfig`. Pour pouvoir supprimer des paragraphes, ajoutez une propriété `cq:actions` à plusieurs valeurs avec une seule valeur de **DELETE**.
+1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, ajoutez un noeud dans CRXDE. `cq:editConfig` de type Principal `cq:EditConfig`. Pour pouvoir supprimer des paragraphes, ajoutez une propriété `cq:actions` à plusieurs valeurs avec une seule valeur de **DELETE**.
 1. Accédez à votre navigateur puis, sur votre exemple de page (par exemple `press.html`), basculez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicats (par exemple **left**).
 
 1. En mode d’**édition**, le nouveau composant est désormais disponible dans le sidekick (accessible dans le groupe **Recherche**). Insérez le composant dans la colonne **Prédicats** et saisissez un mot de recherche, par exemple **Diamant**, puis cliquez sur la loupe pour lancer la recherche.
@@ -249,7 +249,7 @@ Pour créer un prédicat de groupe, procédez comme suit :
        });
    ```
 
-1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, dans CRXDE, ajoutez un noeud `cq:editConfig` de type Principal `cq:EditConfig`. Afin de pouvoir supprimer des paragraphes, ajoutez une propriété à valeurs multiples `cq:actions` avec une valeur unique de `DELETE`.
+1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, ajoutez un noeud dans CRXDE. `cq:editConfig` de type Principal `cq:EditConfig`. Afin de pouvoir supprimer des paragraphes, ajoutez une propriété à valeurs multiples `cq:actions` avec une valeur unique de `DELETE`.
 1. Accédez à votre navigateur puis, sur votre exemple de page (par exemple `press.html`), basculez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicats (par exemple **left**).
 1. En mode d’**édition**, le nouveau composant est désormais disponible dans le sidekick (accessible dans le groupe **Recherche**). Insérez le composant dans la colonne **Prédicats**.
 
@@ -305,4 +305,4 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
 
 La présentation des résultats de la recherche sur une page de partage des ressources est régie par la loupe sélectionnée. [!DNL Experience Manager] Assets est fourni avec un ensemble de loupes prédéfinies qui peuvent être utilisées pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Outre l’utilisation de loupes préexistantes, les développeurs [!DNL Experience Manager] peuvent également créer leurs propres loupes.
+En plus d&#39;utiliser des lentilles préexistantes, [!DNL Experience Manager] les développeurs peuvent également créer leurs propres loupes.

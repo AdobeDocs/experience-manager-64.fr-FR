@@ -1,8 +1,8 @@
 ---
 title: Gestion des fragments de contenu
-seo-title: Gestion des fragments de contenu
+seo-title: Managing Content Fragments
 description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
-seo-description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
+seo-description: Content Fragments are stored as Assets, so are primarily managed from the Assets console.
 uuid: 0659cf03-b4e8-4b8b-bec7-0082f980115a
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
-feature: Fragments de contenu
+feature: Content Fragments
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1492'
 ht-degree: 98%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de la fonction [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
 
 Les fragments de contenu sont stockés en tant que **[!UICONTROL Ressources]**, et ils sont donc principalement gérés par l’intermédiaire de la console **[!UICONTROL Ressources]**.
 
@@ -144,9 +144,8 @@ Pour ouvrir votre fragment à des fins de modification :
    >[!NOTE]
    >
    >1. Un message s’affiche si le fragment est déjà référencé dans une page de contenu.
-      >
-      >
-   2. Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **[!UICONTROL Activer/désactiver le panneau latéral]**.
+   >
+   >2. Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **[!UICONTROL Activer/désactiver le panneau latéral]**.
 
 
 1. Naviguez parmi les trois modes à l’aide des icônes du panneau latéral :
@@ -219,19 +218,19 @@ Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des v
 
 Une fois que vous avez ouvert le fragment, vous pouvez utiliser l’onglet [Variations](content-fragments-variations.md) pour créer votre contenu.
 
-## Création et gestion de variations dans un fragment  {#creating-and-managing-variations-within-your-fragment}
+## Création et gestion de variations dans un fragment {#creating-and-managing-variations-within-your-fragment}
 
 Une fois que vous avez créé le contenu maître, vous pouvez créer et gérer des [Variations](content-fragments-variations.md) de ce contenu.
 
-## Association de contenu au fragment  {#associating-content-with-your-fragment}
+## Association de contenu au fragment {#associating-content-with-your-fragment}
 
 Vous pouvez également [associer du contenu](content-fragments-assoc-content.md) à un fragment. Cela fournit une liaison pour que les ressources (c’est-à-dire les images) puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
 
-## Affichage et modification des métadonnées (propriétés) du fragment  {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Affichage et modification des métadonnées (propriétés) du fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de l’onglet [[!UICONTROL Métadonnées]](content-fragments-metadata.md).
 
-## Chronologie pour les fragments de contenu  {#timeline-for-content-fragments}
+## Chronologie pour les fragments de contenu {#timeline-for-content-fragments}
 
 Outre les options standard, la [Chronologie](managing-assets-touch-ui.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
 
@@ -256,8 +255,7 @@ Outre les options standard, la [Chronologie](managing-assets-touch-ui.md#timelin
 >* Liés à la ressource de fragment
 
 >
->
-Les annotations (pour les fragments de contenu) sont :
+>Les annotations (pour les fragments de contenu) sont :
 >
 >* Entrées dans l’éditeur de fragments
 >* Spécifiques à un segment de texte sélectionné au sein du fragment

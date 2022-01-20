@@ -1,15 +1,15 @@
 ---
 title: Utilisation des modèles de courrier électronique personnalisés dans une étape Affecter une tâche
-seo-title: Utilisation des modèles de courrier électronique personnalisés dans une étape Affecter une tâche
+seo-title: Use custom email templates in an Assign Task step
 description: 'Modèles de courrier électronique personnalisés pour les notifications électroniques de processus de formulaires '
-seo-description: 'Modèles de courrier électronique personnalisés pour les notifications électroniques de processus de formulaires '
+seo-description: Custom email templates for forms workflow email notifications
 uuid: bc2af94d-d4ad-417e-b3d2-bcfffc1b306d
 topic-tags: publish
 discoiquuid: c447fc39-c0f3-4932-ac6c-465d1fb83f8c
 exl-id: 5af73823-2c32-41b3-9ab8-a7ad9fd9532f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '531'
 ht-degree: 96%
 
 ---
@@ -66,9 +66,9 @@ AEM Forms fournit un modèle prêt à l’emploi pour les notifications électro
 
 L’étape Affecter une tâche prête à l’emploi est configurée pour utiliser le modèle par défaut, htmlEmailTemplate.txt. Vous pouvez choisir d’utiliser un modèle personnalisé. Pour modifier le modèle :
 
-1. Ouvrez l’étape **[!UICONTROL Affecter une tâche]** .
+1. Ouvrez le **[!UICONTROL Assign Task]** étape .
 
-1. Accédez à **[!UICONTROL Cessionnaire > Modèle de courrier électronique HTML]**.
+1. Accédez à **[!UICONTROL Cessionnaire > Modèle de courrier électronique de HTML]**.
 
 1. Sélectionnez le modèle de courrier électronique HTML nouvellement créé.
 

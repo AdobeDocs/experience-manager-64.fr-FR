@@ -1,8 +1,8 @@
 ---
 title: Éléments de stockage dans AEM 6.4
-seo-title: Éléments de stockage dans AEM 6.4
+seo-title: Storage Elements in AEM 6.4
 description: 'Obtenez des informations sur les mises en œuvre du stockage de nœud disponibles dans AEM 6.4 et la maintenance du référentiel. '
-seo-description: 'Obtenez des informations sur les mises en œuvre du stockage de nœud disponibles dans AEM 6.4 et la maintenance du référentiel. '
+seo-description: Learn about the node storage implementations available in AEM 6.4 and how to maintain the repository.
 uuid: 3b018830-c42e-48e0-9b6f-cd230b02d914
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 3b1100ed-44c6-4c09-aec4-9e6670234567
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '714'
 ht-degree: 82%
 
 ---
@@ -92,12 +92,12 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
 
    Où **`-r`** est le mode d’exécution principal. Dans cet exemple, il commence par la prise en charge MongoDB. 
 
-#### Désactiver les pages THP  {#disabling-transparent-huge-pages}
+#### Désactiver les pages THP {#disabling-transparent-huge-pages}
 
 Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transparent Huge Pages (THP). Tandis qu’AEM effectue des lectures et des écritures affinées, THP est optimisé pour des opérations plus volumineuses. Pour cette raison, il est recommandé de désactiver THP sur le stockage Tar et Mongo. Pour désactiver l’algorithme, procédez comme suit :
 
-1. Ouvrez le fichier `/etc/grub.conf` dans l’éditeur de texte de votre choix.
-1. Ajoutez la ligne suivante au fichier **grub.conf** :
+1. Ouvrez le `/etc/grub.conf` dans l’éditeur de texte de votre choix.
+1. Ajoutez la ligne suivante au **grub.conf** fichier :
 
    ```
    transparent_hugepage=never
@@ -119,11 +119,10 @@ Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transpar
 >
 >De plus, vous pouvez également consulter les ressources suivantes :
 >
->* Pour plus d’informations sur Transparent Huge Pages sous Red Hat Linux, consultez cet [article](https://access.redhat.com/solutions/46111).
->* Pour obtenir des conseils sur le réglage de Linux, consultez cet [article](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
+>* Pour plus d’informations sur Transparent Huge Pages sous Red Hat Linux, voir ceci [article](https://access.redhat.com/solutions/46111).
+>* Pour obtenir des conseils sur l’optimisation pour Linux, voir cette section [article](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
 
 >
-
 
 
 ## Maintenance du référentiel {#maintaining-the-repository}

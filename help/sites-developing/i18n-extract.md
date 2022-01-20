@@ -1,8 +1,8 @@
 ---
 title: Extraction de chaînes pour la traduction
-seo-title: Extraction de chaînes pour la traduction
+seo-title: Extracting Strings for Translating
 description: Utilisez xgettext-maven-plugin pour extraire de votre code source les chaînes qui doivent être traduites.
-seo-description: Utilisez xgettext-maven-plugin pour extraire de votre code source les chaînes qui doivent être traduites.
+seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
 uuid: 2c586ecb-8494-4f8f-b31a-1ed73644d611
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 50c2479b-72b6-42fa-8e48-45c8e9596161
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 71%
+source-wordcount: '476'
+ht-degree: 70%
 
 ---
 
@@ -84,7 +84,7 @@ Lorsqu’il est utilisé dans un modèle, le caractère / indique un sous-réper
   </tr> 
   <tr> 
    <td><code>{ /exclude "*.pdf" }</code></td> 
-   <td>Exclure tous les fichiers PDF.</td> 
+   <td>Exclure tous les fichiers du PDF.</td> 
   </tr> 
   <tr> 
    <td><code> { /exclude "*/pom.xml" }</code></td> 
@@ -136,7 +136,7 @@ mvn xgettext:extract
 ### Fichiers de sortie {#output-files}
 
 * `raw.xliff`: chaînes extraites
-* `warn.log`: avertissements (le cas échéant), si  `CQ.I18n.getMessage()` l’API n’est pas utilisée correctement. Une correction est toujours nécessaire, suivie d’une nouvelle exécution.
+* `warn.log`: les avertissements (le cas échéant), si `CQ.I18n.getMessage()` L’API n’est pas utilisée correctement. Une correction est toujours nécessaire, suivie d’une nouvelle exécution.
 
 * `parserwarn.log` : avertissements de l’analyseur (le cas échéant) ; problèmes de l’analyseur js, par exemple
 * `potentials.xliff` : candidats « potentiels » qui ne sont pas extraits, mais il peut s’agir de chaînes lisibles qui doivent être traduites (peuvent être ignorées ; produisent toujours un grand nombre de faux positifs)

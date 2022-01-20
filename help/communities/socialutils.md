@@ -1,8 +1,8 @@
 ---
 title: Refactorisation de SocialUtils
-seo-title: Refactorisation de SocialUtils
+seo-title: SocialUtils Refactoring
 description: Le package com.adobe.cq.social.ugcbase.SocialUtils a été abandonné dans AEM 6.1.
-seo-description: Le package com.adobe.cq.social.ugcbase.SocialUtils a été abandonné dans AEM 6.1.
+seo-description: The package com.adobe.cq.social.ugcbase.SocialUtils was deprecated in AEM 6.1
 uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 exl-id: ba23188b-a72a-4349-b3e5-0fb50fd6312f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 0%
+source-wordcount: '296'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ Le package **com.adobe.cq.social.ugcbase.SocialUtils** a été abandonné dans A
 
 Les tableaux suivants répertorient les méthodes à utiliser à la place des méthodes SocialUtils.
 
-## Package SocialResourceUtilities {#socialresourceutilities-package}
+## Package SocialResourceUtilities  {#socialresourceutilities-package}
 
 | Méthodes dans com.adobe.cq.social.srp.utility.api.SocialResourceUtilities |
 |---|
@@ -43,7 +43,7 @@ Les tableaux suivants répertorient les méthodes à utiliser à la place des m�
 | Chaîne UGCToResourcePath(String ugcPath) | signature de méthode modifiée |
 | Chaîne UGCToResourcePath(chaîne ugcPath, résolveur ResourceResolver) | new |
 
-| Méthodes de `com.adobe.cq.social.`utility.resource.api.SocialResourceUtilities |
+| Méthodes dans `com.adobe.cq.social.`Utilitaires.resource.api.SocialResourceUtilities |
 |---|
 | SocialResourceProvider getSocialResourceProvider(Resource) | remplace SocialResourceProvider getConfiguredProvider(Resource ressource) |
 
@@ -59,7 +59,7 @@ Les tableaux suivants répertorient les méthodes à utiliser à la place des m�
 | Chaîne getSocialProfileURL(Chaîne nom d’utilisateur, résolveur ResourceResolver, page) |
 | UserProperties getUserProperties(ResourceResolver resolver, String userId) |
 
-## Pour Une Utilisation Interne Uniquement {#for-internal-use-only}
+## Pour une utilisation interne uniquement {#for-internal-use-only}
 
 | booléen canAddNode(session de session, chemin de chaîne) |
 |---|

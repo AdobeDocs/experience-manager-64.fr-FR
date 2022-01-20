@@ -1,8 +1,8 @@
 ---
 title: Content Services
-seo-title: Content Services
+seo-title: Content Services
 description: Content Services
-seo-description: 'null'
+seo-description: null
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
 content-type: reference
@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 12%
+source-wordcount: '301'
+ht-degree: 11%
 
 ---
 
@@ -34,11 +34,11 @@ Content Services introduit plusieurs nouveaux éléments d’AEM qui permettent 
 
 Ces éléments sont nécessaires pour préserver la flexibilité et permettre une extension future en fournissant une couche d’abstraction entre le contenu géré AEM et les applications mobiles qui consomment le contenu. Cela permet à AEM Content Services de fonctionner comme une couche d’abstraction entre les exigences de contenu de l’application native et le référentiel de contenu AEM.
 
-Content Services peut diffuser le contenu sous forme de ressources, de code HTML (HTML/CSS/JS) ou de contenu indépendant des canaux.
+Content Services peut diffuser le contenu sous la forme de ressources, de HTML empaqueté (HTML/CSS/JS) ou de contenu indépendant du canal.
 
 >[!CAUTION]
 >
->**Conditions préalables:**
+>**Prérequis:**
 >
 >Avant de commencer à utiliser Content Services, assurez-vous d’activer l’indicateur Content Services. Pour activer la création et la gestion des modèles dans votre application, vous devez activer les modèles de données dans le navigateur de configuration.
 >

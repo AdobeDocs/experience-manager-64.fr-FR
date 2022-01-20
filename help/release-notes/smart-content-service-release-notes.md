@@ -1,8 +1,8 @@
 ---
 title: Notes de mise à jour de Smart Content Service
-seo-title: Notes de mise à jour de Smart Content Service
+seo-title: Smart Content Service Release Notes
 description: Présentation du service de contenu dynamique et des problèmes connus relatifs à ce service.
-seo-description: Présentation du service de contenu dynamique et des problèmes connus relatifs à ce service.
+seo-description: Overview of the Smart Content Service and known issues around the service.
 uuid: 5f474b36-3451-48ea-8669-b2d793638b06
 content-type: reference
 products: SG_EXPERIENCEMANAGER
@@ -10,8 +10,8 @@ discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
 source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 16%
+source-wordcount: '511'
+ht-degree: 17%
 
 ---
 
@@ -27,7 +27,7 @@ Vous devez former le service de contenu dynamique à un ensemble organisé de re
 
 Le service de contenu dynamique est optimisé par la plateforme Adobe Sensei, qui vous permet d’entraîner l’algorithme de reconnaissance d’images à votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur les ressources similaires.
 
-## Améliorations clés {#key-improvements}
+## Principales améliorations {#key-improvements}
 
 Le service de contenu dynamique comprend les améliorations clés suivantes :
 
@@ -94,4 +94,4 @@ Ces sites sont réservés aux clients. Si vous êtes client et avez besoin d’u
 * [Accès aux produits](https://login.experiencecloud.adobe.com/exc-content/login.html)
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/).
 * Mises à jour de produit, correctifs et packages pour des fonctionnalités supplémentaires sur [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Assistance clientèle via Admin Console](https://adminconsole.adobe.com/). Pour plus d’informations, voir [Nouvelle expérience du service clientèle Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* [Service clientèle via Admin Console](https://adminconsole.adobe.com/). Pour plus d’informations, voir [Nouvelle expérience du service clientèle Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).

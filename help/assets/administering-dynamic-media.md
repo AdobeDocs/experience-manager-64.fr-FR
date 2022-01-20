@@ -1,8 +1,8 @@
 ---
 title: Configuration de Dynamic Media
-seo-title: Configuration de Dynamic Media
+seo-title: Setting Up Dynamic Media
 description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
-seo-description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
+seo-description: To set up dynamic media, you need to configure dynamic media and manage image and viewer presets
 uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -12,25 +12,25 @@ feature: Configuration
 role: Admin,User,Developer
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 73%
+source-wordcount: '253'
+ht-degree: 71%
 
 ---
 
-# Configuration de Dynamic Media {#setting-up-dynamic-media}
+# Configuration de Dynamic Media  {#setting-up-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) facilite la gestion des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
 >[!NOTE]
 >
->Cette documentation décrit les fonctionnalités de Dynamic Media, qui sont intégrées directement dans AEM. Si vous utilisez Dynamic Media Classic intégré à AEM, consultez la [documentation sur l’intégration de Dynamic Media Classic](/help/sites-administering/scene7.md).
+>Cette documentation décrit les fonctionnalités de Dynamic Media, qui sont intégrées directement dans AEM. Si vous utilisez Dynamic Media Classic intégré à AEM, reportez-vous à la section [Documentation sur l’intégration de Dynamic Media Classic](/help/sites-administering/scene7.md).
 >
->Voir [Scénario à double utilisation](/help/sites-administering/scene7.md#dual-use-scenario) pour connaître les cas où vous pouvez utiliser AEM intégré à Dynamic Media Classic avec Dynamic Media.
+>Voir [Scénario à double usage](/help/sites-administering/scene7.md#dual-use-scenario) pour les cas où vous pouvez utiliser AEM intégré à Dynamic Media Classic avec Dynamic Media.
 
 Si vous administrez des médias dynamiques, les rubriques suivantes peuvent vous intéresser :
 
-* [Configuration du mode](config-dms7.md)  Dynamic Media-Scene7 : utilisez cette configuration si vous êtes un nouveau client Dynamic Media.
-* [Configuration du mode](config-dynamic.md)  hybride Dynamic Media : utilisez cette configuration si vous êtes déjà un client Dynamic Media effectuant une mise à niveau AEM.
+* [Configuration du mode Dynamic Media-Scene7](config-dms7.md) - Utilisez cette configuration si vous êtes un nouveau client Dynamic Media.
+* [Configuration du mode Dynamic Media hybride](config-dynamic.md) - Utilisez cette configuration si vous êtes déjà un client Dynamic Media effectuant une mise à niveau AEM.
 * [Gestion des paramètres d’image prédéfinis](managing-image-presets.md)
 * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
 * [Résolution des problèmes liés à Dynamic Media - Mode Scene7](troubleshoot-dms7.md)

@@ -1,8 +1,8 @@
 ---
 title: Importation et exportation des fichiers de configuration de PDF Generator
-seo-title: Importation et exportation des fichiers de configuration de PDF Generator
+seo-title: Importing and exporting PDF Generator configuration files
 description: Découvrez comment importer et exporter des fichiers de configuration PDF Generator.
-seo-description: Découvrez comment importer et exporter des fichiers de configuration PDF Generator.
+seo-description: Learn how to import and export PDF Generator configuration files.
 uuid: 3367253b-d222-4c5f-9455-a1810d96112e
 contentOwner: admin
 content-type: reference
@@ -13,12 +13,12 @@ feature: PDF Generator
 exl-id: 57673410-b8f1-494e-b4a0-c6724bab643c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '378'
 ht-degree: 98%
 
 ---
 
-# Importation et exportation des fichiers de configuration de PDF Generator {#importing-and-exporting-pdf-generator-configuration-files}
+# Importation et exportation des fichiers de configuration de PDF Generator {#importing-and-exporting-pdf-generator-configuration-files}
 
 Le fichier de configuration contient les informations de conversion de PDF Generator, y compris les paramètres de PDF, de type de fichier et de sécurité.
 
@@ -38,7 +38,7 @@ Le fichier de configuration contient les informations de conversion de PDF Gener
 
 1. Cliquez sur Télécharger, puis enregistrez le fichier XML à l’emplacement approprié.
 
-## Importation d’un fichier de configuration  {#import-a-configuration-file}
+## Importation d’un fichier de configuration {#import-a-configuration-file}
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Le fichier de configuration contient les informations de conversion de PDF Gener
 1. Sélectionnez Importer un fichier de configuration existant.
 1. Pour définir l’emplacement du fichier, dans le champ Fichier de configuration, cliquez sur Parcourir pour localiser et sélectionner le fichier, puis cliquez sur **Importer**.
 
-## Conversion de tous les calques des fichiers AutoCAD  {#convert-all-layers-within-autocad-files}
+## Conversion de tous les calques des fichiers AutoCAD {#convert-all-layers-within-autocad-files}
 
 Par défaut, PDF Generator ne convertit que le calque par défaut des fichiers AutoCAD au format PDF et non l’ensemble des calques des fichiers. Pour convertir l’ensemble des calques, suivez la procédure ci-dessous.
 
@@ -60,7 +60,7 @@ Par défaut, PDF Generator ne convertit que le calque par défaut des fichiers A
 
    Tous les calques d’un fichier AutoCAD converti à l’aide du fichier de configuration modifié seront traités.
 
-## Rétablissement des paramètres de configuration d’origine installés avec PDF Generator  {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
+## Rétablissement des paramètres de configuration d’origine installés avec PDF Generator {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
 
 1. Dans Administration Console, sélectionnez Services > PDF Generator > Fichiers de configuration > Importer la configuration.
 1. Sélectionnez Réinitialiser la configuration pour rétablir les paramètres par défaut et cliquez sur Importer.

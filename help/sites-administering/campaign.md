@@ -1,8 +1,8 @@
 ---
 title: Intégration à Adobe Campaign
-seo-title: Intégration à Adobe Campaign
+seo-title: Integrating with Adobe Campaign
 description: Découvrez comment intégrer AEM à Adobe Campaign.
-seo-description: Découvrez comment intégrer AEM à Adobe Campaign.
+seo-description: Learn how to integrate AEM with Adobe Campaign.
 uuid: 6113279e-d1f5-46c3-ac94-50270fa55060
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: 482c5889-d756-428b-bf0c-38c372e3c8b6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 87%
+source-wordcount: '139'
+ht-degree: 86%
 
 ---
 

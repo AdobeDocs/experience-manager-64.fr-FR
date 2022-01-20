@@ -1,8 +1,8 @@
 ---
 title: Intégration des pages d’entrée à Adobe Analytics
-seo-title: Intégration des pages d’entrée à Adobe Analytics
+seo-title: Integrating Landing Pages with Adobe Analytics
 description: Découvrez comment intégrer des pages d’entrée à Adobe Analytics.
-seo-description: Découvrez comment intégrer des pages d’entrée à Adobe Analytics.
+seo-description: Learn how to integrate landing pages with Adobe Analytics.
 uuid: 8f6672d1-497f-4ccb-b3cc-f6120fc467ba
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,14 +12,14 @@ discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: 2923ae94-375a-4c44-a08f-f992eb08000a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 48%
+source-wordcount: '376'
+ht-degree: 46%
 
 ---
 
 # Intégration des pages d’entrée à Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM a intégré la solution des landing pages avec [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) en utilisant les composants CTA (call-to-action) suivants :
+AEM a intégré la solution de landing pages à [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) en utilisant les composants CTA (call-to-action) suivants :
 
 1. Composant Lien des clics publicitaires
 1. Composant Lien graphique
@@ -28,11 +28,11 @@ Ces composants présentent certains attributs qui peuvent être mappés via des 
 
 ## Prérequis {#prerequisites}
 
-Adobe vous recommande de passer par l’[intégration existante AEM-Adobe Analytics](/help/sites-administering/adobeanalytics.md) pour comprendre le fonctionnement de cette intégration.
+Adobe vous recommande de passer par la [intégration AEM-Adobe Analytics existante](/help/sites-administering/adobeanalytics.md) pour comprendre le fonctionnement de cette intégration.
 
 ## Composants disponibles pour le mappage {#components-available-for-mapping}
 
-Dans AEM, les composants **Appel à l’action** - **ClickThroughLink** et **GraphicalLink** - affichés ici dans le sidekick, peuvent être mappés à des variables Adobe Analytics.
+Dans AEM, la variable **Appel à l’action** components - **ClickThroughLink** et **GraphicalLink** : s’affiche ici dans le sidekick et peut être mappé à des variables Adobe Analytics.
 
 ![chlimage_1-21](assets/chlimage_1-21.jpeg)
 
@@ -89,7 +89,7 @@ Pour mapper des composants de page d’entrée sur Adobe Analytics :
 </table>
 
 1. Mappez ces attributs exposés avec toute variable Adobe Analytics issue du Content Finder. La structure est maintenant prête à être utilisée.
-1. Vous pouvez désormais créer une page d’entrée ou ouvrir une page d’entrée existante avec des composants CTA existants, puis cliquer sur l’onglet **Cloud Services** dans **Propriétés de page** dans le sidekick (dans l’IU optimisée pour les écrans tactiles, sélectionnez **Ouvrir les propriétés** et cliquez sur **Cloud Services**) et configurez la structure à utiliser avec la page d’entrée. Sélectionnez la structure dans la liste déroulante.
+1. Vous pouvez maintenant créer une page d’entrée ou ouvrir une page d’entrée existante avec des composants CTA existants, puis cliquer sur **Cloud Services** dans **Propriétés de la page** dans le sidekick (dans l’IU optimisée pour les écrans tactiles, sélectionnez **Ouvrir les propriétés** et cliquez sur **Cloud Services**) et configurez la structure à utiliser avec la landing page. Sélectionnez la structure dans la liste déroulante.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 

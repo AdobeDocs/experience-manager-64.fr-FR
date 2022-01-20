@@ -1,8 +1,8 @@
 ---
 title: Conditions préalables à l’intégration à Adobe Target
-seo-title: Conditions préalables à l’intégration à Adobe Target
+seo-title: Prerequisites for Integrating with Adobe Target
 description: Découvrez les conditions requises pour l’intégration avec Adobe Target.
-seo-description: Découvrez les conditions requises pour l’intégration avec Adobe Target.
+seo-description: Find out about the prerequisites for integrating with Adobe Target.
 uuid: 88be6a97-c964-4e42-a3a2-ed9b2c9ee49e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,14 +12,14 @@ discoiquuid: a84fd0ab-0bcd-48cf-bba3-fb29308fa0f8
 exl-id: f47e5c6a-ed52-4493-83bd-73e5e693d117
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 70%
+source-wordcount: '524'
+ht-degree: 69%
 
 ---
 
 # Conditions préalables à l’intégration à Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
-Dans le cadre de l’intégration [d’AEM et d’Adobe Target](/help/sites-administering/target.md), vous devez vous enregistrer auprès d’Adobe Target, configurer l’agent de réplication et sécuriser les paramètres d’activité sur le noeud de publication.
+Dans le cadre de la [intégration d’AEM et d’Adobe Target](/help/sites-administering/target.md), vous devez vous enregistrer auprès d’Adobe Target, configurer l’agent de réplication et sécuriser les paramètres d’activité sur le noeud de publication.
 
 ## Inscription à Adobe Target {#registering-with-adobe-target}
 
@@ -36,7 +36,7 @@ Le code client identifie le compte client Adobe Target en appelant le serveur A
 
 ## Activation de l’agent de réplication Target {#enabling-the-target-replication-agent}
 
-L’agent de réplication [Test et Target ](/help/sites-deploying/replication.md) doit être activé sur l’instance d’auteur. Notez que cet agent de réplication n’est pas activé par défaut si vous avez utilisé le mode d’exécution [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) pour installer AEM. Pour plus d’informations sur la sécurisation de votre environnement de production, voir [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
+Test et Target [agent de réplication](/help/sites-deploying/replication.md) doit être activé sur l’instance d’auteur. Notez que cet agent de réplication n’est pas activé par défaut si vous avez utilisé la variable [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) mode d’exécution pour l’installation d’AEM. Pour plus d’informations sur la sécurisation de votre environnement de production, voir [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
 
 1. Sur la page d’accueil d’AEM, cliquez ou appuyez sur **Outils** > **Déploiement** > **Réplication**.
 1. Cliquez ou appuyez sur **Agents sur l’auteur**.
@@ -53,9 +53,9 @@ L’agent de réplication [Test et Target ](/help/sites-deploying/replication.md
 
 Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 
-Le noeud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`* *sous le noeud jcr:content des activités ;* *par exemple `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
+Le **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`* *sous le noeud jcr:content des activités ;* *par exemple `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
 
-Le noeud **cq:ActivitySettings** sous le noeud jcr:content de l’activité est protégé par les listes de contrôle d’accès suivantes :
+Le **cq:ActivitySettings** sous le noeud jcr:content de l’activité est protégé par les listes de contrôle d’accès suivantes :
 
 * Tout refuser pour tout le monde
 * Autoriser jcr:read,rep:write pour target-activity-authors (l’auteur est membre de ce groupe par défaut)
@@ -69,7 +69,7 @@ Lors de la modification d’une activité dans Adobe Target, l’URL pointe sur
 
 Pour configurer l’externaliseur AEM :
 
-1. Accédez à la console web OSGi à l’adresse **https://&lt;serveur>:&lt;port>/system/console/configMgr.**
+1. Accédez à la console web OSGi à l’adresse **https://&lt;server>:&lt;port>/system/console/configMgr**
 1. Recherchez **Day CQ Link Externalizer** et saisissez le domaine du nœud de création.
 
    ![chlimage_1-120](assets/chlimage_1-120.png)

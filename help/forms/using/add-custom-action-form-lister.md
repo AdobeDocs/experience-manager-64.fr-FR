@@ -1,8 +1,8 @@
 ---
 title: Ajout d’une action personnalisée sur des éléments de liste de formulaire
-seo-title: Ajout d’une action personnalisée sur des éléments de liste de formulaire
+seo-title: Adding custom action on form lister items
 description: Les développeurs de formulaires peuvent ajouter des actions à la liste des formulaires sur la page Forms Portal. Par défaut, la liste des formulaires vous permet d’accéder au formulaire, de le remplir et de l’envoyer.
-seo-description: Les développeurs de formulaires peuvent ajouter des actions à la liste des formulaires sur la page Forms Portal. Par défaut, la liste des formulaires vous permet d’accéder au formulaire, de le remplir et de l’envoyer.
+seo-description: Form developers can add more actions to the listing of forms on the forms portal page. By default, the form listing allows you to access the form, fill it, and submit it.
 uuid: 02c64f7d-f726-4a5b-a303-ec96934e9c01
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 0e0a9b6b-fd2f-4cec-b233-500c940ee4d5
 exl-id: d8f60be3-474a-4dd1-aaa5-7b6a97e1a9bd
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '265'
 ht-degree: 100%
 
 ---

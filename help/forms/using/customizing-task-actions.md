@@ -1,8 +1,8 @@
 ---
 title: Personnalisation des actions de tâche
-seo-title: Personnalisation des actions de tâche
+seo-title: Customizing Task Actions
 description: Vous pouvez personnaliser l’aspect des actions de tâche, utiliser uniquement des images pour les actions, et personnaliser les images utilisées dans des actions d’acheminement.
-seo-description: Vous pouvez personnaliser l’aspect des actions de tâche, utiliser uniquement des images pour les actions, et personnaliser les images utilisées dans des actions d’acheminement.
+seo-description: You can customize appearance of the task actions, use only images for actions, and customize the images used in route actions.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 exl-id: 3534864b-3d1c-42ca-96a0-5becbfbc8ce6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 63%
+source-wordcount: '293'
+ht-degree: 60%
 
 ---
 
@@ -22,7 +22,7 @@ L’espace de travail AEM Forms permet aux utilisateurs de personnaliser les act
 
 ## Personnalisation du style de texte {#customizing-text-style}
 
-Pour personnaliser le style de texte, ajoutez le fragment de code suivant dans le fichier `/apps/ws/css/newStyle.css` :
+Pour personnaliser le style de texte, ajoutez le fragment de code suivant dans le `/apps/ws/css/newStyle.css` fichier :
 
 ```css
 /*-------- For Task Actions visible in task list task action popup ----------------------------------------------------*/
@@ -110,7 +110,7 @@ Pour personnaliser le style de texte, ajoutez le fragment de code suivant dans l
 
 ## Personnalisation des images {#customizing-images}
 
-Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichier `/apps/ws/css/newStyle.css`. Le fragment de code suivant personnalise l’image pour l’action *lock* :
+Pour personnaliser les images, ajoutez le fragment de code suivant dans le `/apps/ws/css/newStyle.css` fichier . Le fragment de code suivant personnalise l’image pour l’action *lock* :
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -131,9 +131,9 @@ Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichi
 }
 ```
 
-## Affichage des images pour des actions uniquement  {#showing-only-images-for-actions}
+## Affichage des images pour des actions uniquement {#showing-only-images-for-actions}
 
-Pour afficher uniquement des images pour des actions, personnalisez les images utilisées dans les actions d’acheminement. Pour plus d’informations, voir [Images pour actions d’itinéraire](/help/forms/using/images-route-actions.md).
+Pour afficher uniquement des images pour des actions, personnalisez les images utilisées dans les actions d’acheminement. Pour plus d’informations, voir [Images pour les actions d’itinéraire](/help/forms/using/images-route-actions.md).
 
 ### Menu contextuel de l’action de tâche Liste de tâches {#task-list-task-action-nbsp-pop-up-menu}
 
@@ -212,7 +212,7 @@ Pour afficher uniquement des images pour des actions, personnalisez les images u
        </div>
    ```
 
-1. Supprimez la largeur fixe affectée à une balise d’ancrage dans le fichier `/apps/ws/css/newStyle.css` :
+1. Supprimez la largeur fixe affectée à une balise d’ancrage de la propriété `/apps/ws/css/newStyle.css` fichier :
 
    ```css
    .task .taskActionsPopUp ul{
@@ -266,7 +266,7 @@ Pour afficher uniquement des images pour des actions, personnalisez les images u
 
 Effectuez les étapes suivantes pour personnaliser le menu contextuel des actions de tâche Détails :
 
-* Copiez le fichier /libs/ws/js/runtime/templates/taskdetails.html dans le dossier `/apps/ws/js/runtime/templates/` :
+* Copiez le fichier /libs/ws/js/runtime/templates/taskdetails.html dans le dossier `/apps/ws/js/runtime/templates/` folder:
 * Encapsulez la balise de l’icône dans la balise d’ancrage au lieu du texte. Par exemple, le *nouveau code *répertorié ci-dessous encapsule la balise d’icône dans la balise d’ancrage :
 
 ```
@@ -359,7 +359,7 @@ Effectuez les étapes suivantes pour personnaliser le menu contextuel des action
 ```
 
 * Ouvrez le fichier /apps/ws/js/registry.js pour le modifier.
-* Recherchez le texte suivant :  `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
+* Recherchez le texte suivant : `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * Remplacez le texte localisé par le texte suivant : `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
 
 [**Contacter le support technique**](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -1,19 +1,19 @@
 ---
 title: Console web
-seo-title: Console web
+seo-title: Web Console
 description: Apprenez à utiliser le console web d’AEM.
-seo-description: Apprenez à utiliser le console web d’AEM.
+seo-description: Learn how to use the AEM web console.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
-feature: Configuration
+feature: Configuring
 exl-id: a8a3267d-2af5-4cca-b76d-66de62d93f69
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '718'
 ht-degree: 75%
 
 ---
@@ -103,7 +103,7 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
 ## Lots {#bundles}
 
-L’onglet **Lots** est le mécanisme d’installation des lots OSGi requis pour AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
+Le **Lots** tab est le mécanisme d’installation des lots OSGi requis pour AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
 
 * Le menu déroulant :
 
@@ -121,7 +121,7 @@ En utilisant cet onglet vous pouvez :
 
 * **Installation ou mise à jour**
 
-   Vous pouvez **Parcourir** pour trouver le fichier contenant votre lot et spécifier s’il doit **Démarrer** immédiatement et à quel **niveau de départ**.
+   Vous pouvez **Parcourir** pour trouver le fichier contenant votre lot et spécifier s’il doit **Début** immédiatement et à quel moment **Niveau de départ**.
 
 * **Recharger**
 
@@ -155,7 +155,7 @@ En utilisant cet onglet vous pouvez :
 
 ## Composants {#components}
 
-L’onglet **Composants** vous permet d’activer et/ou de désactiver les différents composants. Il est accessible soit par :
+Le **Composants** vous permet d’activer et/ou de désactiver les différents composants. Il est accessible soit par :
 
 * Le menu déroulant :
 

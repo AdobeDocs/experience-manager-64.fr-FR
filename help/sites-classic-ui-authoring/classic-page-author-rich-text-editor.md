@@ -1,8 +1,8 @@
 ---
 title: Éditeur de texte enrichi
-seo-title: Éditeur de texte enrichi
+seo-title: Rich Text Editor
 description: L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM.
-seo-description: L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM.
+seo-description: The Rich Text Editor is a basic building block for inputting textual content into AEM.
 uuid: 42001071-f7a7-475d-8aab-a8054303db68
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
 exl-id: 44cd0092-de40-4a72-a682-1e8f5906b2e5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1796'
 ht-degree: 88%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 88%
 L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants, dont :
 
 * Texte
-* Texte Image
+* Texte et Image
 * Tableau
 
 ## Éditeur de texte enrichi {#rich-text-editor-2}
@@ -59,7 +59,7 @@ Pour l’heure, le mode Modifier statique est activé pour les éléments de pag
 
 ## Fonctions de l’Editeur de texte enrichi {#features-of-the-rich-text-editor}
 
-L’éditeur de texte enrichi fournit diverses fonctions, [selon la configuration](/help/sites-administering/rich-text-editor.md) du composant individuel. Les fonctionnalités sont disponibles dans les interfaces utilisateur classique et optimisée pour les écrans tactiles.
+L’éditeur de texte enrichi offre plusieurs fonctions, telles que [dépendent de la configuration](/help/sites-administering/rich-text-editor.md) du composant individuel. Les fonctionnalités sont disponibles dans les interfaces utilisateur classique et optimisée pour les écrans tactiles.
 
 ### Formats de caractères de base {#basic-character-formats}
 
@@ -77,7 +77,7 @@ Ces options vous permettent d’appliquer une mise en forme aux caractères que 
 
 Toutes ces options fonctionnent selon le principe de bascule, ce qui signifie qu’une nouvelle sélection supprime la mise en forme.
 
-### Styles et formats prédéfinis  {#predefined-styles-and-formats}
+### Styles et formats prédéfinis {#predefined-styles-and-formats}
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
@@ -99,7 +99,7 @@ Un style peut être supprimé ; placez le curseur dans le texte auquel le style
 >
 >Abstenez-vous de resélectionner une partie du texte auquel le style a été appliqué. Cela entraînerait, en effet, la désactivation de l’icône.
 
-### Couper, Copier, Coller  {#cut-copy-paste}
+### Couper, Copier, Coller {#cut-copy-paste}
 
 ![](do-not-localize/cq55_rte_cutcopypaste.png)
 
@@ -119,7 +119,7 @@ Les fonctions **Couper** et **Copier** standard sont disponibles. Plusieurs vers
 
    Cette option colle le contenu au format HTML (avec le reformatage nécessaire).
 
-### Annuler, Rétablir  {#undo-redo}
+### Annuler, Rétablir {#undo-redo}
 
 ![](do-not-localize/cq55_rte_undoredo.png)
 
@@ -183,8 +183,7 @@ Vous pouvez :
 
 >[!NOTE]
 >
->Vous pouvez faire précéder l’URI de l’un des protocoles configurés pour votre installation. Dans une installation standard, ces valeurs sont `https://`, `ftp://` et `mailto:`. Les protocoles non configurés pour votre installation seront refusés et marqués comme non valides.
-
+>Vous pouvez faire précéder l’URI de l’un des protocoles configurés pour votre installation. Dans une installation standard, ces éléments sont : `https://`, `ftp://`, et `mailto:`. Les protocoles non configurés pour votre installation seront refusés et marqués comme non valides.
 
 Pour rompre le lien, placez le curseur dans le texte du lien et cliquez ensuite sur l’icône **Rompre le lien** : 
 
@@ -228,7 +227,7 @@ Vous pouvez faire glisser des images à partir de l’Outil de recherche de cont
 
 >[!NOTE]
 >
->AEM propose également des composants spécialisés permettant une configuration d’image plus détaillée ; Par exemple, les composants **Image** et **Image de texte** sont disponibles.
+>AEM propose également des composants spécialisés permettant une configuration d’image plus détaillée ; Par exemple, la fonction **Image** et **Image texte** sont disponibles.
 
 ### Vérificateur orthographique {#spelling-checker}
 
@@ -258,7 +257,7 @@ Des tableaux sont disponibles :
 
    >[!NOTE]
    >
-   >Bien que les tableaux soient disponibles dans l’éditeur de texte enrichi, il est recommandé d’utiliser le composant **Tableau** lors de la création de tableaux.
+   >Bien que les tableaux soient disponibles dans l’éditeur de texte enrichi, il est recommandé d’utiliser la variable **Tableau** lors de la création de tableaux.
 
 Dans les composants **Texte** et **Tableau**, la fonctionnalité de tableau est accessible par le biais du menu contextuel (qui s’ouvre généralement à l’aide du bouton droit de la souris) ; par exemple :
 
@@ -302,7 +301,7 @@ Les fonctions spécifiques au tableau sont les suivantes :
  </tbody> 
 </table>
 
-#### Table Properties {#table-properties}
+#### Propriétés du tableau {#table-properties}
 
 ![cq55_rte_tableproperties_icon](assets/cq55_rte_tableproperties_icon.png)
 
@@ -352,15 +351,15 @@ Les propriétés d’une cellule spécifique ou d’une série de cellules peuve
 
 * **Largeur**
 * **Hauteur**
-* **Alignement**  horizontal - Gauche, Centre ou Droite
-* **Alignement vertical**  - Haut, Milieu, Bas ou Ligne de base
-* **Type de cellule**  - Données ou En-tête
+* **Alignement horizontal** - Gauche, Centre ou Droite
+* **Alignement vertical** - Haut, Milieu, Bas ou Ligne de base
+* **Type de cellule** - Données ou en-tête
 * **Appliquer à :**
    * Une seule cellule
    * Ligne entière
    * Colonne entière
 
-#### Ajouter ou supprimer des lignes {#add-or-delete-rows}
+#### Ajouter ou Supprimer des lignes {#add-or-delete-rows}
 
 ![cq55_rte_rows](assets/cq55_rte_rows.png)
 
@@ -368,7 +367,7 @@ Vous pouvez ajouter des lignes au-dessus ou sous la ligne en cours.
 
 La ligne en cours peut également être supprimée.
 
-#### Ajouter ou Supprimer des colonnes  {#add-or-delete-columns}
+#### Ajouter ou Supprimer des colonnes {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
@@ -376,7 +375,7 @@ Vous pouvez ajouter des colonnes à gauche ou à droite de la colonne en cours.
 
 La colonne en cours peut également être supprimée.
 
-#### Sélectionner des lignes ou colonnes entières  {#selecting-entire-rows-or-columns}
+#### Sélectionner des lignes ou colonnes entières {#selecting-entire-rows-or-columns}
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -384,12 +383,12 @@ Cette option sélectionne toute la ligne ou la colonne en cours. Vous pouvez alo
 
 #### Fusionner des cellules {#merge-cells}
 
-![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergecq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * Si vous avez sélectionné un groupe de cellules, vous pouvez toutes les fusionner en une seule.
 * Si une seule cellule est sélectionnée, vous pouvez la fusionner avec celle située à sa droite ou en dessous.
 
-#### Diviser des cellules  {#split-cells}
+#### Diviser des cellules {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
@@ -398,7 +397,7 @@ Sélectionnez une seule cellule pour la diviser :
 * La division d’une cellule dans le sens horizontal génère une nouvelle cellule à droite de la cellule actuelle, dans la colonne en cours.
 * La division d’une cellule dans le sens vertical génère une nouvelle cellule sous la cellule actuelle, mais dans la ligne en cours.
 
-#### Création de tableaux imbriqués  {#creating-nested-tables}
+#### Création de tableaux imbriqués {#creating-nested-tables}
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -414,8 +413,7 @@ La création d’un tableau imbriqué génère un nouveau tableau autonome dans 
 >
 
 
-
-#### Remove Table {#remove-table}
+#### Supprimer le tableau {#remove-table}
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
 
@@ -431,7 +429,7 @@ Des caractères spéciaux peuvent être mis à la disposition de votre éditeur 
 
 Survolez un caractère à l’aide du pointeur de la souris pour en afficher une version agrandie, puis cliquez pour l’insérer à l’emplacement actuel dans votre texte.
 
-### Mode d’édition de source  {#source-editing-mode}
+### Mode d’édition de source {#source-editing-mode}
 
 ![](do-not-localize/cq55_rte_sourceedit.png)
 

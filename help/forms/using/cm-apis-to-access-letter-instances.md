@@ -1,19 +1,19 @@
 ---
 title: Utiliser les API pour accéder aux instances de lettre
-seo-title: Utiliser les API pour accéder aux instances de lettre
+seo-title: APIs to access letter instances
 description: Découvrez comment utiliser des API pour accéder aux instances de lettre.
-seo-description: Découvrez comment utiliser des API pour accéder aux instances de lettre.
+seo-description: Learn how to use APIs to access letter instances.
 uuid: e7fb7798-f49d-458f-87f5-22df5f3e7d10
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: 64ca6baa-5534-4227-a969-fb67cc6eb207
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 62%
+source-wordcount: '578'
+ht-degree: 61%
 
 ---
 
@@ -42,9 +42,9 @@ Correspondence Management expose les API pour récupérer des instances de lett
 
 ### Utilisation de getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-L’API suivante recherche les instances de lettre en fonction de l’objet de la requête (envoyée et brouillon). Si l’objet de requête est nul, il renvoie toutes les instances de lettre. Cette API renvoie la liste des objets [LetterInstanceVO](https://helpx.adobe.com/experience-manager/6-2/forms/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) pouvant être utilisés pour extraire des informations supplémentaires sur l’instance de lettre.
+L’API suivante recherche les instances de lettre en fonction de l’objet de la requête (envoyée et brouillon). Si l’objet de requête est nul, il renvoie toutes les instances de lettre. Cette API renvoie la liste des [LetterInstanceVO](https://helpx.adobe.com/experience-manager/6-2/forms/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objets, qui peuvent être utilisés pour extraire des informations supplémentaires sur l’instance de lettre
 
-**Syntaxe** :  `List getAllLetterInstances(Query query) throws ICCException;`
+**Syntaxe**: `List getAllLetterInstances(Query query) throws ICCException;`
 
 <table> 
  <tbody> 
@@ -61,7 +61,7 @@ L’API suivante recherche les instances de lettre en fonction de l’objet de l
 
 #### Exemple 1 : récupérer toutes les instances de lettre de type ENVOYEE {#example-fetch-all-the-letter-instances-of-type-submitted}
 
-Le code suivant renvoie la liste des instances de lettre envoyées. Pour obtenir uniquement les brouillons, remplacez `LetterInstanceType.COMPLETE.name()` par `LetterInstanceType.DRAFT.name().`
+Le code suivant renvoie la liste des instances de lettre envoyées. Pour obtenir uniquement les brouillons, modifiez la variable `LetterInstanceType.COMPLETE.name()` to `LetterInstanceType.DRAFT.name().`
 
 ```java
 @Reference
@@ -122,7 +122,7 @@ LetterInstanceVO letterInstance = letterInstanceService.getLetterInstance(letter
 
 Vérifier si une instance de lettre existe selon le nom donné
 
-**Syntaxe** :  `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
+**Syntaxe**: `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
 
 | **Paramètre** | **Description** |
 |---|---|
@@ -135,7 +135,7 @@ String letterInstanceName = "sampleLetterInstance";
 Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName );
 ```
 
-## Ouverture d’instances de lettre  {#opening-letter-instances}
+## Ouverture d’instances de lettre {#opening-letter-instances}
 
 L’instance de lettre peut être de type Envoyée ou Brouillon. L’ouverture des deux types d’instance de lettre présente deux cas de figure différents :
 

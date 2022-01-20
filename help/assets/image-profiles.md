@@ -1,8 +1,8 @@
 ---
-title: Profils d’image Dynamic Media
-seo-title: Profils d’image Dynamic Media
+title: Profils d’image Dynamic Media
+seo-title: Dynamic Media image profiles
 description: Créez des profils d’image qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’image.
-seo-description: Créez des profils d’image qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’image.
+seo-description: Create image profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,16 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
-feature: Profils d’image
+feature: Image Profiles
 role: Admin,User
 source-git-commit: ec0770120d04a1393c69786c0a46bb216dd67300
 workflow-type: tm+mt
-source-wordcount: '2719'
-ht-degree: 91%
+source-wordcount: '2686'
+ht-degree: 92%
 
 ---
 
-# Profils d’image Dynamic Media {#image-profiles}
+# Profils d’image Dynamic Media {#image-profiles}
 
 Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en appliquant un profil d’image au dossier.
 
@@ -77,7 +77,7 @@ Vous avez le choix entre deux options de recadrage d’image. Vous avez égaleme
 
 ## Accentuation {#unsharp-mask}
 
-Vous utilisez **Masquage flou** pour affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, son rayon (mesuré en pixels) et un seuil de contraste qui sera ignoré. Cet effet utilise les mêmes options que le filtre &quot;Masquage flou&quot; d’Adobe Photoshop.
+Vous utilisez **Accentuation** pour affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, son rayon (mesuré en pixels) et un seuil de contraste qui sera ignoré. Cet effet utilise les mêmes options que le filtre &quot;Masquage flou&quot; d’Adobe Photoshop.
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ L’option **Accentuation** propose les options de filtre suivantes :
   </tr> 
   <tr> 
    <td>Rayon</td> 
-   <td>Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2.  La plage est 0 à 250.</td> 
+   <td>Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2. La plage est 0 à 250.</td> 
   </tr> 
   <tr> 
    <td>Seuil</td> 
@@ -112,7 +112,7 @@ L’accentuation est décrite dans [Accentuation des images](/help/assets/assets
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](config-dms7.md#configuring-asset-processing).
 
-**Pour créer des profils** d’image Dynamic Media :
+**Pour créer des profils d’image Dynamic Media**:
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
 1. Appuyez sur **[!UICONTROL Créer]** pour ajouter un nouveau profil d’image.
@@ -178,7 +178,7 @@ En plus d’appliquer un profil à un dossier, vous pouvez en appliquer un de fa
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Accédez à **https://&lt;AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** et appliquez le profil approprié, puis appuyez sur **Enregistrer**.
+   * Accédez à **https://&lt;aem server=&quot;&quot;>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** et appliquez le profil approprié, puis appuyez sur **Enregistrer**.
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 

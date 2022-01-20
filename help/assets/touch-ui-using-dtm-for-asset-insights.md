@@ -18,33 +18,33 @@ La gestion dynamique des balises Adobe est un outil permettant d’activer vos o
 
 >[!CAUTION]
 >
->Adobe de la gestion dynamique des balises est abandonnée au profit de [!DNL Adobe Experience Platform] et atteindra bientôt la [fin de vie](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande [d’utiliser [!DNL Adobe Experience Platform] pour les informations sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM est obsolète au profit de [!DNL Adobe Experience Platform] et atteindra bientôt [fin de vie](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande de [use [!DNL Adobe Experience Platform] pour les informations sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Effectuez les étapes suivantes pour activer Assets Insights via DTM :
 
-1. Appuyez/cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configuration des statistiques]**.
-1. [Configuration de l’instance  [!DNL Experience Manager] avec le Cloud Service de gestion dynamique des balises](../sites-administering/dtm.md)
+1. Appuyez/cliquez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configuration des statistiques]**.
+1. [Configurer [!DNL Experience Manager] instance avec le Cloud Service DTM](../sites-administering/dtm.md)
 
-   Le jeton API doit être disponible une fois que vous vous connectez à [https://dtm.adobe.com](https://dtm.adobe.com/) et que vous accédez à **[!UICONTROL Paramètres du compte]** à partir de l’icône Profil . Cette étape n’est pas requise du point de vue d’Assets Insights, car l’intégration de [!DNL Experience Manager Sites] à Assets Insights est toujours en cours d’exécution.
+   Le jeton API doit être disponible une fois que vous vous connectez à [https://dtm.adobe.com](https://dtm.adobe.com/) et visite **[!UICONTROL Paramètres du compte]** à partir de l’icône Profil . Cette étape n’est pas requise du point de vue d’Assets Insights, car l’intégration de [!DNL Experience Manager Sites] avec Assets Insights est toujours en cours d’exécution.
 
 1. Connectez-vous à [https://dtm.adobe.com](https://dtm.adobe.com/) et sélectionnez une entreprise, comme approprié.
 1. Création/ouverture d’une propriété web existante
 
-   * Sélectionnez l’onglet **[!UICONTROL Propriétés web]**, puis appuyez/cliquez sur **[!UICONTROL Ajouter une propriété]**.
+   * Sélectionnez la **[!UICONTROL Propriétés web]** , puis appuyez/cliquez sur **[!UICONTROL Ajouter une propriété]**.
    * Mettez les champs à jour selon les besoins, puis appuyez/cliquez sur **[!UICONTROL Créer une propriété]** (voir [documentation](https://helpx.adobe.com/fr/experience-manager/using/dtm.html)).
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
-1. Dans l’onglet **[!UICONTROL Règles]**, sélectionnez **[!UICONTROL Règles de chargement de page]** dans le volet de navigation, puis appuyez/cliquez sur **[!UICONTROL Créer une règle]**.
+1. Dans le **[!UICONTROL Règles]** onglet, sélectionnez **[!UICONTROL Règles de chargement de page]** dans le volet de navigation, puis appuyez/cliquez sur **[!UICONTROL Créer une règle]**.
 
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
-1. Développez **[!UICONTROL Balises JavaScript/tierces]**. Ensuite, appuyez/cliquez sur **[!UICONTROL Ajouter un nouveau script]** dans l’onglet **[!UICONTROL HTML séquentiel]** pour ouvrir la boîte de dialogue Script.
+1. Développer **[!UICONTROL Balises JavaScript/tierces]**. Ensuite, appuyez/cliquez sur **[!UICONTROL Ajouter un nouveau script]** dans le **[!UICONTROL HTML séquentiel]** pour ouvrir la boîte de dialogue Script.
 
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
-1. Appuyez/cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils > Ressources]**.
-1. Appuyez/cliquez sur **[!UICONTROL Dispositif de suivi de la page de statistiques]**, copiez le code de suivi, puis collez-le dans la boîte de dialogue Script que vous avez ouverte à l’étape 6. Enregistrez les modifications.
+1. Appuyez/cliquez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Ressources]**.
+1. Appuyez/cliquez sur **[!UICONTROL Suivi de page Insights]**, copiez le code de suivi, puis collez-le dans la boîte de dialogue Script que vous avez ouverte à l’étape 6. Enregistrez les modifications.
 
    >[!NOTE]
    >
@@ -60,11 +60,11 @@ Effectuez les étapes suivantes pour activer Assets Insights via DTM :
 
    Sélectionnez des suites de rapports de production/intermédiaires, selon les besoins.
 
-1. Développez **[!UICONTROL Gestion de bibliothèque]** et assurez-vous que **[!UICONTROL Charger la bibliothèque à]** est défini sur **[!UICONTROL Haut de page]**.
+1. Développer **[!UICONTROL Gestion des bibliothèques]**, et assurez-vous que **[!UICONTROL Charger la bibliothèque à l’emplacement]** est défini sur **[!UICONTROL Haut de page]**.
 
    ![chlimage_1-197](assets/chlimage_1-197.png)
 
-1. Développez **[!UICONTROL Personnaliser le code de page]**, puis cliquez ou appuyez sur **[!UICONTROL Ouvrir l’éditeur]**.
+1. Développer **[!UICONTROL Personnalisation du code de page]**, puis cliquez ou appuyez sur **[!UICONTROL Ouvrir l’éditeur]**.
 
    ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -107,12 +107,12 @@ Effectuez les étapes suivantes pour activer Assets Insights via DTM :
    ```
 
    * La règle de chargement de page dans la gestion dynamique des balises inclut uniquement le code pagetracker.js . Tous les champs `assetAnalytics` sont considérés comme des remplacements des valeurs par défaut. Ils ne sont pas requis par défaut.
-   * Le code appelle `assetAnalytics.dispatcher.init()` après avoir vérifié que `_satellite.getToolsByType('sc')[0].getS()` est initialisé et que `assetAnalytics,dispatcher.init` est disponible. Par conséquent, vous pouvez ignorer son ajout à l’étape 11.
-   * Comme indiqué dans les commentaires dans le code de suivi de page de statistiques (**[!UICONTROL Outils > Ressources > Dispositif de suivi de la page de statistiques]**), lorsque le dispositif de suivi de page ne crée pas d’objet `AppMeasurement`, les trois premiers arguments (RSID, Serveur de suivi et Espace de noms du visiteur) ne sont pas pertinents. Des chaînes vides sont transmises à la place pour mettre ceci en évidence.
+   * Les appels de code `assetAnalytics.dispatcher.init()` après avoir vérifié que `_satellite.getToolsByType('sc')[0].getS()` est initialisé et `assetAnalytics,dispatcher.init` est disponible. Par conséquent, vous pouvez ignorer son ajout à l’étape 11.
+   * Comme indiqué dans les commentaires dans le code de suivi de la page de statistiques (**[!UICONTROL Outils > Ressources > Dispositif de suivi de la page de statistiques]**), lorsque le dispositif de suivi de page ne crée pas une `AppMeasurement` , les trois premiers arguments (RSID, Serveur de suivi et Espace de noms du visiteur) ne sont pas pertinents. Des chaînes vides sont transmises à la place pour mettre ceci en évidence.
 
       Les arguments restants correspondent à ce qui est configuré sur la page Configuration des statistiques (**[!UICONTROL Outils > Ressources > Configuration des statistiques]**).
 
    * L’objet AppMeasurement est récupéré en interrogeant `satelliteLib` pour tous les moteurs SiteCatalyst disponibles. Si plusieurs balises sont configurées, modifiez l’index du sélecteur de tableau de manière appropriée. Les entrées du tableau sont triées en fonction des outils SiteCatalyst disponibles dans l’interface de gestion dynamique des balises.
 
 1. Enregistrez et fermez la fenêtre Éditeur de code, puis enregistrez les modifications dans la configuration de l’outil.
-1. Dans l&#39;onglet **[!UICONTROL Validations]** , validez les deux validations en attente. La balise DTM est prête à être insérée sur votre page web. Pour plus d’informations sur l’insertion de balises DTM dans les pages web, voir la page archivée sur [l’intégration de DTM dans les modèles de page personnalisés](https://web.archive.org/web/20180816221834/https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template).
+1. Dans le **[!UICONTROL Approbations]** , validez les deux validations en attente. La balise DTM est prête à être insérée sur votre page web. Pour plus d’informations sur l’insertion de balises DTM dans des pages web, reportez-vous à la page archivée à propos de [intégration de DTM dans les modèles de page personnalisés](https://web.archive.org/web/20180816221834/https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template).

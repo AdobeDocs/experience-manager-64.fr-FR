@@ -1,19 +1,19 @@
 ---
 title: Fonctions distantes du Générateur d’expression
-seo-title: Générateur d’expression
-description: Expression Builder dans Correspondence Management vous permet de créer des expressions et des fonctions distantes.
-seo-description: Le Générateur d’expression de Correspondence Management permet de créer des expressions et des fonctions distantes.
+seo-title: Expression Builder
+description: Le Générateur d’expression de Correspondence Management permet de créer des expressions et des fonctions distantes.
+seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
 uuid: 998f7ec9-2645-431e-b483-c68d24ef49cb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: cd565ec5-f453-4692-83f8-e1fb06dc28c7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 83%
+source-wordcount: '783'
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 83%
 
 Avec le Générateur d’expression, vous pouvez créer des expressions ou des conditions qui effectuent les calculs des valeurs de données fournies par le dictionnaire de données ou par les utilisateurs. Correspondence Management utilise le résultat de l’évaluation de l’expression pour sélectionner des actifs (par exemple, texte, images, listes, conditions) et les insérer dans la correspondance selon les besoins.
 
-## Création d’expressions et de fonctions distantes avec Expression Builder {#creating-expressions-and-remote-functions-with-expression-builder}
+## Création d’expressions et de fonctions distantes avec le Générateur d’expression {#creating-expressions-and-remote-functions-with-expression-builder}
 
 Le Générateur d’expression utilise en interne des bibliothèques EL JSP. L’expression est donc conforme à la syntaxe JSPEL. Pour plus d’informations, voir [Exemples d’expressions](#exampleexpressions).
 
@@ -41,7 +41,7 @@ Vous trouverez ci-dessous quelques exemples d’EL JSP couramment utilisés que 
 
 Vous trouverez plus d’informations dans [Spécification de l’EL JSP](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Le gestionnaire d’expression côté client ne prend pas en charge certaines variables et fonctions de la spécification de l’EL JSP, plus précisément :
 
-* Les index de collection et les clés de mappage (à l’aide de la notation []) ne sont pas pris en charge dans les noms de variable pour les expressions évaluées côté client.
+* Index de collection et clés de mappage (à l’aide de la méthode [] ) ne sont pas prises en charge dans les noms de variable pour les expressions évaluées côté client.
 * Voici une liste des types de paramètre ou types de retour de fonctions utilisées dans les expressions :
 
    * java.lang.String
@@ -156,7 +156,7 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Voici des exemples d’échantillons à utiliser :
 
-* **GoodFunctions.jar.** zipis le fichier jar avec un lot contenant un exemple de définition de fonction distante. Téléchargez le fichier GoodFunctions.jar.zip et décompressez-le pour obtenir le fichier jar.
+* **GoodFunctions.jar.zip** est le fichier jar avec un lot contenant un exemple de définition de fonction distante. Téléchargez le fichier GoodFunctions.jar.zip et décompressez-le pour obtenir le fichier jar.
 * **GoodFunctions.zip** est le package de code source pour définir une fonction distante personnalisée et créer un lot pour elle.
 
 GoodFunctions.jar.zip

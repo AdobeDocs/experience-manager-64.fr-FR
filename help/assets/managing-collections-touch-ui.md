@@ -65,7 +65,7 @@ Vous pouvez faire glisser des ressources de l’interface utilisateur Assets jus
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
-   Relâchez le bouton de la souris lorsque la zone de dépôt devient principale et que son libellé passe à **[!UICONTROL Déposer pour ajouter]**.
+   Relâchez le bouton de la souris lorsque la zone de dépôt devient principale et que son libellé se transforme en **[!UICONTROL Déposer pour ajouter]**.
 
    ![drop_to_add](assets/drop_to_add.png)
 
@@ -117,11 +117,11 @@ Pour créer une collection dynamique, procédez comme suit :
 
 Vous pouvez ajouter des ressources à une collection qui comporte une liste de ressources ou de dossiers référencés. Les collections dynamiques utilisent une requête de recherche pour rassembler les ressources. Pour cette raison, les références statiques aux ressources et dossiers ne s’appliquent pas à celles-ci.
 
-1. Dans l’interface utilisateur Assets, sélectionnez la ressource et appuyez/cliquez sur l’icône **[!UICONTROL À la collection]** de la barre d’outils.
+1. Dans l’interface utilisateur d’Assets, sélectionnez la ressource, puis appuyez/cliquez sur le bouton **[!UICONTROL À la collection]** dans la barre d’outils.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-   Vous pouvez également faire glisser la ressource vers la zone **[!UICONTROL Déposer dans la collection]** de l’interface. Ajoutez les ressources lorsque le libellé de la région devient **[!UICONTROL Déposez pour ajouter]**.
+   Vous pouvez également faire glisser la ressource vers le **[!UICONTROL Déposer dans la collection]** de l’interface. Ajoutez les ressources lorsque le libellé de la région devient **[!UICONTROL Déposer pour ajouter]**.
 
 1. Sur la page **[!UICONTROL Ajouter à la collection]**, sélectionnez la collection à laquelle vous souhaitez ajouter la ressource.
 
@@ -185,7 +185,7 @@ Vous pouvez modifier simultanément les métadonnées de plusieurs collections. 
 
    >[!NOTE]
    >
-   >Les métadonnées que vous ajoutez pour les collections sélectionnées remplacent les métadonnées précédentes de ces collections. Utilisez le [!UICONTROL mode d’ajout] pour ajouter de nouvelles valeurs aux métadonnées existantes dans les champs pouvant contenir plusieurs valeurs. Les champs à valeur unique sont toujours remplacés. Toutes les balises que vous ajoutez dans le champ [!UICONTROL Balises] sont ajoutées à la liste existante des balises dans les métadonnées.
+   >Les métadonnées que vous ajoutez pour les collections sélectionnées remplacent les métadonnées précédentes de ces collections. Utilisez la variable [!UICONTROL Mode d’ajout] pour ajouter de nouvelles valeurs aux métadonnées existantes dans les champs pouvant contenir plusieurs valeurs. Les champs à valeur unique sont toujours remplacés. Toutes les balises que vous ajoutez dans le champ [!UICONTROL Balises] sont ajoutées à la liste existante des balises dans les métadonnées.
 
 Pour personnaliser la page [!UICONTROL Propriétés] de métadonnées, notamment ajouter, modifier et supprimer des propriétés de métadonnées, utilisez l’éditeur de schéma.
 
@@ -195,7 +195,7 @@ Pour personnaliser la page [!UICONTROL Propriétés] de métadonnées, notamment
 
 ## Recherche de collections {#searching-collections}
 
-Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez une recherche avec des mots-clés dans la zone Omni-recherche, [!DNL Experience Manager] Assets recherche les noms de collection, les métadonnées et les balises ajoutées aux collections.
+Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez une recherche avec des mots-clés dans la zone Omni-recherche, [!DNL Experience Manager] Les ressources recherchent les noms de collection, les métadonnées et les balises ajoutées aux collections.
 
 Si vous recherchez des collections à partir du niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. Les ressources ou dossiers à l’intérieur des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), tous les fichiers, dossiers et collections appropriés sont renvoyés.
 
@@ -210,7 +210,7 @@ Dans une collection, la recherche est limitée aux ressources (ainsi qu’à leu
 Vous pouvez modifier les paramètres d’une collection, tels que le titre et la description, ou ajouter des membres à une collection.
 
 1. Sélectionnez une collection et appuyez/cliquez sur l’icône **[!UICONTROL Paramètres]** dans la barre d’outils. Vous pouvez également utiliser l’action rapide **[!UICONTROL Paramètres]** à partir de la miniature de la collection.
-1. Modifiez les paramètres de la collection dans la page **[!UICONTROL Paramètres de la collection]** . Par exemple, modifiez le titre, les descriptions, les membres et les autorisations de la collection, comme décrit dans la section [Ajout de collections](#creating-a-collection).
+1. Modifiez les paramètres de la collection dans le **[!UICONTROL Paramètres de la collection]** page. Par exemple, modifiez le titre, les descriptions, les membres et les autorisations de la collection, comme décrit dans la section [Ajout de collections](#creating-a-collection).
 
 1. Pour enregistrer les modifications, appuyez/cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -222,7 +222,7 @@ Vous pouvez modifier les paramètres d’une collection, tels que le titre et la
 
    >[!NOTE]
    >
-   >Vous pouvez également supprimer des collections dynamiques en [supprimant les recherches enregistrées](#deleting-saved-searches).
+   >Vous pouvez également supprimer des collections dynamiques par [suppression de recherches enregistrées](#deleting-saved-searches).
 
 ## Téléchargement d’une collection {#downloading-a-collection}
 
@@ -262,7 +262,7 @@ Dans l’interface utilisateur d’Assets, vous pouvez rechercher ou filtrer des
 
 ### Créer des recherches enregistrées {#creating-saved-searches}
 
-Les recherches enregistrées sont créées lorsque vous créez une collection dynamique. Les collections dynamiques sont automatiquement ajoutées à la liste **[!UICONTROL Recherches enregistrées]**. La requête Recherches enregistrées de la collection est enregistrée dans la propriété `dam:query` de crxde à l’emplacement relatif `/content/dam/collections/`. Les recherches que vous pouvez enregistrer et les recherches enregistrées affichées dans la liste ne sont pas limitées.
+Les recherches enregistrées sont créées lorsque vous créez une collection dynamique. Les collections dynamiques sont automatiquement ajoutées à la liste **[!UICONTROL Recherches enregistrées]**. La requête Recherches enregistrées de la collection est enregistrée dans le `dam:query` dans crxde à l’emplacement relatif `/content/dam/collections/`. Les recherches que vous pouvez enregistrer et les recherches enregistrées affichées dans la liste ne sont pas limitées.
 
 >[!NOTE]
 >
@@ -282,7 +282,7 @@ La modification des recherches enregistrées est identique à celle des collecti
 
 1. Appuyez ou cliquez sur l’icône de navigation globale afin d’afficher le panneau Filtres.
 
-1. Dans la liste **[!UICONTROL Recherches enregistrées]**, appuyez/cliquez sur l’icône de suppression en regard de la collection dynamique à supprimer.
+1. Dans la **[!UICONTROL Recherches enregistrées]** dans la liste, appuyez/cliquez sur l’icône de suppression en regard de la collection dynamique à supprimer.
 
    ![select_smart_collection-1](assets/select_smart_collection-1.png)
 
@@ -304,6 +304,6 @@ Vous pouvez exécuter un workflow pour les ressources d’une collection. Si la 
 
 >[!MORELIKETHIS]
 >
->* [Configuration des notifications électroniques de Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
+>* [Configuration des notifications par courrier électronique Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
 >* [Création d’une tâche de révision pour les collections](bulk-approval.md)
 

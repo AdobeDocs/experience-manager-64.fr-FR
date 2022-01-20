@@ -1,8 +1,8 @@
 ---
 title: Document Security | Gestion des données utilisateur
-seo-title: Document Security | Gestion des données utilisateur
+seo-title: Document Security | Handling user data
 description: AEM Forms Document Security vous permet de créer, de stocker et d’appliquer des paramètres de sécurité prédéfinis à vos documents. Cela garantit que seuls les utilisateurs autorisés peuvent utiliser les documents. Découvrez comment Document Security organise les données dans les tables de base de données, accède aux données Document Security et les exporte pour les utilisateurs dans les bases de données et, si nécessaire, supprimez-les définitivement.
-seo-description: AEM Forms Document Security vous permet de créer, de stocker et d’appliquer des paramètres de sécurité prédéfinis à vos documents. Cela garantit que seuls les utilisateurs autorisés peuvent utiliser les documents. Découvrez comment Document Security organise les données dans les tables de base de données, accède aux données Document Security et les exporte pour les utilisateurs dans les bases de données et, si nécessaire, supprimez-les définitivement.
+seo-description: AEM Forms document security allows you to create, store, and apply predefined security settings to your documents. It ensures that only authorized users can use the documents. Learn how document security organizes data in database tables, access and export document security data for users in the databases, and if required, delete it permanently.
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ role: Admin
 exl-id: eeffd886-8955-46eb-aa6d-dd4da5e8570c
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 60%
+source-wordcount: '996'
+ht-degree: 62%
 
 ---
 
@@ -24,7 +24,7 @@ AEM Forms Document Security vous permet de créer, de stocker et d’appliquer d
 
 ## Données utilisateur et stockage de données {#user-data-and-data-stores}
 
-Document Security stocke des stratégies et des données associées à des documents protégés, notamment des données utilisateur stockées dans une base de données telle que MySQL, Oracle, MS SQL Server et IBM DB2. Par ailleurs, les données des utilisateurs autorisés sont stockées dans une stratégie dans User Management. Pour plus d’informations sur les données stockées dans la gestion des utilisateurs, voir [Gestion utilisateur de Forms : Gestion des données utilisateur](/help/forms/using/user-management-handling-user-data.md).
+Document Security stocke des stratégies et des données associées à des documents protégés, notamment des données utilisateur stockées dans une base de données telle que MySQL, Oracle, MS SQL Server et IBM DB2. Par ailleurs, les données des utilisateurs autorisés sont stockées dans une stratégie dans User Management. Pour plus d’informations sur les données stockées dans User Management, voir [Gestion utilisateur de Forms : Gestion des données utilisateur](/help/forms/using/user-management-handling-user-data.md).
 
 Le tableau suivant montre comment Document Security organise les données dans les tables de base de données.
 
@@ -87,7 +87,7 @@ Vous pouvez accéder et exporter les données de Document Security pour les util
 
 Pour exporter ou supprimer des données utilisateur d’une base de données, vous devez vous connecter à la base de données à l’aide d’un client de base de données et rechercher l’ID principal en fonction des informations d’identification personnelle de l’utilisateur. Par exemple, pour récupérer l’ID principal d’un utilisateur à l’aide d’un ID de connexion, exécutez la commande `select` suivante sur la base de données.
 
-Dans la commande `select`, remplacez `<user_login_id>` par l&#39;identifiant de connexion de l&#39;utilisateur dont vous souhaitez récupérer l&#39;identifiant principal à partir de la table de base de données `EdcPrincipalUserEntity`.
+Dans le `select` , remplacez la commande `<user_login_id>` avec l’identifiant de connexion de l’utilisateur dont vous souhaitez récupérer l’identifiant principal à partir de la variable `EdcPrincipalUserEntity` table de base de données.
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -97,11 +97,11 @@ Une fois que vous connaissez l’ID principal, vous pouvez exporter ou supprimer
 
 ### Exportation des données utilisateur {#export-user-data}
 
-Exécutez les commandes de base de données suivantes pour exporter les données utilisateur d’un ID principal à partir des tables de base de données. Dans la commande `select`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez exporter les données.
+Exécutez les commandes de base de données suivantes pour exporter les données utilisateur d’un ID principal à partir des tables de base de données. Dans le `select` commande, remplacer `<principal_id>` avec l’identifiant principal de l’utilisateur dont vous souhaitez exporter les données.
 
 >[!NOTE]
 >
->Les commandes suivantes utilisent des noms de tables de base de données dans les bases de données MySQL et IBM DB2. Lors de l’exécution de ces commandes sur les bases de données Oracle et MS SQL, remplacez `EdcPolicySetPrincipalEntity` par `EdcPolicySetPrincipalEnt` dans les commandes.
+>Les commandes suivantes utilisent des noms de tables de base de données dans les bases de données MySQL et IBM DB2. Lors de l’exécution de ces commandes sur les bases de données Oracle et MS SQL, remplacez `EdcPolicySetPrincipalEntity` avec `EdcPolicySetPrincipalEnt` dans les commandes.
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -127,7 +127,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->Pour exporter des données de la table `EdcAuditEntity`, utilisez l’API [EventManager.exportEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) qui utilise [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) comme paramètre pour exporter les données d’audit en fonction de `principalId`, `policyId` ou `licenseId`.
+>Pour exporter des données depuis le `EdcAuditEntity` , utilisez la méthode [EventManager.exportEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API qui prend [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) comme paramètre pour exporter les données d’audit en fonction de `principalId`, `policyId`ou `licenseId`.
 
 Pour obtenir des informations complètes sur un utilisateur du système, vous devez accéder et exporter les données de la base de données User Management. Pour plus d’informations, voir [Gestion des utilisateurs de Forms : Gestion des données utilisateur](/help/forms/using/user-management-handling-user-data.md).
 
@@ -136,7 +136,7 @@ Pour obtenir des informations complètes sur un utilisateur du système, vous de
 Procédez comme suit pour supprimer les données de Document Security pour un ID principal des tables de la base de données.
 
 1. Arrêtez le serveur AEM Forms.
-1. Exécutez les commandes de base de données suivantes pour supprimer les données de l’ID principal des tables de base de données pour Document Security. Dans la commande `Delete`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez supprimer les données.
+1. Exécutez les commandes de base de données suivantes pour supprimer les données de l’ID principal des tables de base de données pour Document Security. Dans le `Delete` commande, remplacer `<principal_id>` avec l’ID principal de l’utilisateur dont vous souhaitez supprimer les données.
 
    ```sql
    Delete from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -152,17 +152,17 @@ Procédez comme suit pour supprimer les données de Document Security pour un ID
 
    >[!NOTE]
    >
-   >Pour supprimer des données de la table `EdcAuditEntity`, utilisez l’API [EventManager.deleteEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) qui utilise [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) comme paramètre pour supprimer les données d’audit en fonction de `principalId`, `policyId` ou `licenseId`.
+   >Pour supprimer des données du `EdcAuditEntity` , utilisez la méthode [EventManager.deleteEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API qui prend [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) comme paramètre pour supprimer des données d’audit en fonction de `principalId`, `policyId`ou `licenseId`.
 
-1. Les fichiers XML de stratégie principal et archivés sont stockés dans les tables de base de données `EdcPolicyXmlEntity` et `EdcPolicyArchiveEntity`, respectivement. Pour supprimer les données d’un utilisateur de ces tables, procédez comme suit :
+1. Les fichiers XML de stratégie principal et archivés sont stockés dans la variable `EdcPolicyXmlEntity` et `EdcPolicyArchiveEntity` les tables de base de données, respectivement. Pour supprimer les données d’un utilisateur de ces tables, procédez comme suit :
 
-   1. Ouvrez l’objet Blob XML de chaque ligne dans le tableau `EdcPolicyXMLEntity` ou `EdcPolicyArchiveEntity` et extrayez le fichier XML. Le fichier XML ressemble à l’un des fichiers ci-dessous.
+   1. Ouvrez l’objet Blob XML de chaque ligne dans la `EdcPolicyXMLEntity` ou `EdcPolicyArchiveEntity` et extrayez le fichier XML. Le fichier XML ressemble à l’un des fichiers ci-dessous.
    1. Modifiez le fichier XML pour supprimer l’objet Blog de l’ID principal.
    1. Répétez les étapes 1 et 2 pour l’autre fichier.
 
    >[!NOTE]
    >
-   >Vous devez supprimer l’objet blob complet dans la balise `Principal` d’un ID principal ou le code XML de la stratégie peut être corrompu ou inutilisable.
+   >Vous devez supprimer l’objet Blob complet dans la variable `Principal` La balise pour un ID principal ou le code XML de stratégie peut être corrompue ou inutilisable.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -209,7 +209,7 @@ Procédez comme suit pour supprimer les données de Document Security pour un ID
 
    >[!NOTE]
    >
-   >Les administrateurs peuvent rechercher, accéder et supprimer des données utilisateur des stratégies personnelles d’autres utilisateurs dans **[!UICONTROL Services > Document Security > Mes stratégies]** à l’aide de la console d’administration.
+   >Les administrateurs peuvent rechercher, accéder et supprimer des données utilisateur des stratégies personnelles d’autres utilisateurs dans **[!UICONTROL Services > Document Security > Mes stratégies]** à l’aide d’Administration Console.
 
-1. Supprimez les données de l’ID principal de la base de données User Management. Pour obtenir des instructions détaillées, voir [Gestion utilisateur de Forms | Gestion des données utilisateur](/help/forms/using/user-management-handling-user-data.md).
+1. Supprimez les données de l’ID principal de la base de données User Management. Pour obtenir des instructions détaillées, voir [Gestion des utilisateurs de Forms | Gestion des données utilisateur](/help/forms/using/user-management-handling-user-data.md).
 1. Démarrez le serveur AEM Forms.

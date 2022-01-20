@@ -1,15 +1,15 @@
 ---
 title: Référence sur les étapes du processus basé sur l’utilisation de Forms on OSGi
-seo-title: Référence sur les étapes du processus basé sur l’utilisation de Forms on OSGi
+seo-title: Forms-centric workflow on OSGi - Step Reference
 description: Les étapes du processus basé sur l’utilisation de Forms on OSGi vous permettent de créer rapidement des formulaires adaptatifs basés sur des processus.
-seo-description: Les étapes du processus basé sur l’utilisation de Forms on OSGi vous permettent de créer rapidement des formulaires adaptatifs basés sur des processus.
+seo-description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
 uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '4561'
+source-wordcount: '4542'
 ht-degree: 91%
 
 ---
@@ -40,7 +40,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Gestionnaire de dépassement de délai :** sélectionnez le script à exécuter lorsque l’étape Affecter une tâche dépasse l’échéance. Les scripts placés dans le référentiel CRX à l’emplacement [apps]/fd/dashboard/scripts/timeoutHandler peuvent être sélectionnés. Le chemin spécifié n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser.
 * **Sélectionner l’action et ajouter un commentaire depuis la dernière tâche dans Détails de la tâche :** sélectionnez cette option pour afficher la dernière action qui a été effectuée et le dernier commentaire reçu dans la section Détails de la tâche.
 * **Type :** sélectionnez le type de document à remplir lors du lancement du processus. Vous pouvez sélectionner un formulaire adaptatif, un formulaire adaptatif en lecture seule ou un document PDF non interactif.
-* **Utiliser le formulaire adaptatif :** indiquez la méthode pour localiser le formulaire adaptatif d’entrée. Vous pouvez utiliser le formulaire adaptatif disponible à un chemin absolu, envoyé en tant que charge utile au workflow, ou disponible à un chemin calculé à l’aide d’une variable. Vous pouvez utiliser une variable de type chaîne pour spécifier le chemin d’accès.
+* **Use Adaptive Form :** Spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Vous pouvez utiliser le formulaire adaptatif disponible à un chemin absolu, envoyé en tant que charge utile au workflow, ou disponible à un chemin calculé à l’aide d’une variable. Vous pouvez utiliser une variable de type chaîne pour spécifier le chemin d’accès.
 * **Chemin d’accès du formulaire adaptatif** : indiquez le chemin d’accès du formulaire adaptatif. Le champ est disponible lorsque vous utilisez l’option de formulaire adaptatif ou de formulaire adaptatif en lecture seule dans le champ Type conjointement avec l’option de chemin d’accès absolu dans le champ Utiliser le formulaire adaptatif .
 * **Chemin d’accès du fichier PDF :** indiquez le chemin d’accès d’un document PDF non interactif. Le champ apparaît lorsque vous sélectionnez un document PDF non interactif dans le champ Type. Le chemin d’accès est toujours relatif à la charge. Par exemple, [Répertoire_Charge_utile]/Workflow/PDF/credit-card.pdf. Le chemin n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser. Vous devez activer l’option Document d’enregistrement ou posséder des formulaires adaptatifs basés sur un modèle de formulaire pour utiliser l’option Chemin d’accès du fichier PDF.
 * **Une fois la tâche terminée, effectuer le rendu du formulaire adaptatif en tant que** : lorsqu’une tâche est marquée comme terminée, vous pouvez effectuer le rendu du formulaire adaptatif en tant que formulaire adaptatif en lecture seule ou document PDF. Vous devez activer l’option Document d’enregistrement ou posséder des formulaires adaptatifs basés sur un modèle de formulaire pour effectuer le rendu du formulaire adaptatif en tant que Document d’enregistrement.
@@ -72,8 +72,8 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Actions par défaut :** les actions Prêt à l’emploi, Envoyer, Enregistrer et Réinitialiser sont disponibles. Par défaut, toutes les actions par défaut sont activées.
 * **Variable d’itinéraire :** nom de la variable d’itinéraire. La variable d’itinéraire capture les actions personnalisées qu’un utilisateur sélectionne dans la boîte de réception AEM.
 * **Itinéraires :** une tâche peut se composer de plusieurs itinéraires. Lorsque cette option est sélectionnée dans la boîte de réception AEM, l’itinéraire renvoie une valeur et les branches du processus en fonction de l’itinéraire sélectionné.
-* **Titre** : Indiquez le titre de l’itinéraire. Il s’affiche dans la boîte de réception AEM.
-* **Icône Corail** : indiquez l’attribut HTML d’une icône corail. La bibliothèque Adobe CorelUI fournit un vaste ensemble d’icônes tactiles. Vous pouvez sélectionner et utiliser une icône pour l’itinéraire. Elle s’affiche avec le titre dans la boîte de réception AEM.
+* **Titre**: Indiquez le titre de l’itinéraire. Il s’affiche dans la boîte de réception AEM.
+* **Icône Corail** : indiquez l’attribut HTML d’une icône corail. La bibliothèque Adobe CoralUI fournit un vaste ensemble d’icônes tactiles. Vous pouvez sélectionner et utiliser une icône pour l’itinéraire. Elle s’affiche avec le titre dans la boîte de réception AEM.
 * **Autoriser la personne désignée à ajouter des commentaires** : sélectionnez cette option pour activer les commentaires pour la tâche. Une personne désignée peut ajouter des commentaires à partir de la boîte de réception AEM au moment de l’envoi de la tâche.
 * **Autoriser la personne désignée à ajouter des pièces jointes à la tâche** : sélectionnez cette option pour activer les pièces jointes pour la tâche. Une personne désignée peut ajouter des pièces jointes à partir de la boîte de réception AEM au moment de l’envoi de la tâche.
 * **Chemin d’accès de sortie des pièces jointes de la tâche** : indiquez l’emplacement de la pièce jointe. L’emplacement est relatif à la charge.
@@ -84,7 +84,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Afficher les données des étapes suivantes :** sélectionnez cette option pour permettre à la personne actuellement désignée d’afficher l’action effectuée et les commentaires ajoutés à la tâche par les personnes désignées suivantes. Cette option permet également à la personne actuellement désignée d’afficher un document d’enregistrement de la tâche terminée, le cas échéant.
 * **Visibilité du type de données :** par défaut, une personne désignée peut afficher un document d’enregistrement, des personnes désignées, une action effectuée et les commentaires des personnes désignées précédentes et suivantes qui ont été ajoutés. Utilisez l’option de visibilité du type de données pour limiter le type de données visibles pour les personnes désignées.
 
-## Etape Envoyer un courrier électronique {#send-email-step}
+## Étape Envoyer un courrier électronique {#send-email-step}
 
 Utilisez l’étape Envoyer un courrier électronique pour, par exemple, envoyer un courrier électronique avec un document d’enregistrement, un lien d’un formulaire adaptatif, un lien d’une communication interactive ou avec un document PDF joint. L’étape Envoyer un courrier électronique prend en charge [le courrier électronique HTML](https://en.wikipedia.org/wiki/HTML_email). Les courriers électroniques HTML sont réactifs et s’adaptent à différents clients de messagerie et tailles d’écran. Vous pouvez utiliser un modèle de courrier électronique HTML pour définir l’aspect, le modèle de couleurs et le comportement du courrier électronique.
 
@@ -98,15 +98,15 @@ L’étape Envoyer un courrier électronique utilise le service de messagerie Da
 
 **Modèle de courrier électronique HTML** : modèle HTML pour le courrier électronique. Vous pouvez spécifier des variables dans un modèle de courrier électronique. L’étape Envoyer un courrier électronique extrait et affiche toutes les variables incluses dans un modèle pour les entrées.
 
-**Métadonnées du modèle de courrier électronique :**  la valeur des variables du modèle de courrier électronique peut être une valeur spécifiée par l’utilisateur, le chemin d’accès d’une ressource sur le serveur de création ou de publication, une image ou une propriété de métadonnées de workflow.
+**Métadonnées du modèle de courrier électronique :** La valeur des variables de modèle de courrier électronique peut être une valeur spécifiée par l’utilisateur, le chemin d’accès d’une ressource sur l’auteur ou le serveur de publication, une image ou une propriété de métadonnées de workflow.
 
 * **Littéral** : utilisez cette option lorsque vous connaissez la valeur exacte à spécifier. Par exemple, [example@example.com](mailto:example@example.com).
 
 * **Métadonnées de processus :** utilisez cette option lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de processus. Après avoir sélectionné cette option, saisissez le nom de la propriété des métadonnées dans la zone de texte vide en dessous de l’option Métadonnées de processus. Par exemple, emailAddress.
-* **URL de la ressource :** utilisez cette option pour incorporer un lien web d’une communication interactive dans l’email. Après avoir sélectionné l’option, recherchez et sélectionnez la communication interactive à incorporer. Un actif peut résider sur le serveur de création ou de publication.
-* **Image :** utilisez cette option pour inclure une image au courrier électronique. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est disponible uniquement pour les balises d’image (&lt;img src=&quot;&amp;ast;&quot;/>) disponibles dans le modèle d’email.
+* **URL de la ressource :** Utilisez cette option pour incorporer un lien web d’une communication interactive dans le courrier électronique. Après avoir sélectionné l’option, recherchez et sélectionnez la communication interactive à incorporer. Un actif peut résider sur le serveur de création ou de publication.
+* **Image :** utilisez cette option pour inclure une image au courrier électronique. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est disponible uniquement pour les balises d’image (&lt;img src=&quot;&amp;ast;&quot; />) disponibles dans le modèle d’email.
 
-**Adresse électronique de l’expéditeur/du destinataire :** sélectionnez l’option  **** Littéralité pour spécifier manuellement une adresse électronique ou sélectionnez l’option  **Récupérer à partir des** métadonnées de workflow pour récupérer l’adresse électronique à partir d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérez à partir des métadonnées de processus.**
+**Adresse électronique de l’expéditeur/du destinataire :** Sélectionnez la **Littéral** pour spécifier manuellement une adresse électronique ou sélectionner l’option **Récupération à partir des métadonnées de workflow** pour récupérer l’adresse électronique à partir d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérez à partir des métadonnées de processus.**
 
 **Chemin d’accès de la pièce jointe de fichier :** l’actif disponible à l’emplacement spécifié est joint au courrier électronique. Le chemin d’accès de l’actif peut être lié à la charge utile ou au chemin d’accès absolu. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/
 
@@ -118,7 +118,7 @@ Lorsqu’un formulaire est rempli ou envoyé, vous pouvez conserver un enregistr
 
 L’étape Document d’enregistrement possède les propriétés suivantes :
 
-**Utiliser le formulaire** adaptatif : Spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Vous pouvez utiliser le formulaire adaptatif disponible à un chemin absolu, envoyé en tant que charge utile au workflow, ou disponible à un chemin calculé à l’aide d’une variable. Vous pouvez utiliser une variable de type chaîne pour spécifier le chemin d’accès.
+**Utiliser le formulaire adaptatif**: Spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Vous pouvez utiliser le formulaire adaptatif disponible à un chemin absolu, envoyé en tant que charge utile au workflow, ou disponible à un chemin calculé à l’aide d’une variable. Vous pouvez utiliser une variable de type chaîne pour spécifier le chemin d’accès.
 
 **Chemin d’accès du formulaire adaptatif** : indiquez le chemin d’accès du formulaire adaptatif. Le champ est disponible lorsque vous utilisez l’option de formulaire adaptatif ou de formulaire adaptatif en lecture seule dans le champ Type conjointement avec l’option de chemin d’accès absolu dans le champ Utiliser le formulaire adaptatif .
 
@@ -132,7 +132,7 @@ Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par
 
 **Paramètre régional** : spécifiez la langue du document d’enregistrement.
 
-## Etape Invoquer le service de modèle de données de formulaire {#invoke-form-data-model-service-step}
+## Étape Invoquer le service de modèle de données de formulaire {#invoke-form-data-model-service-step}
 
 Vous pouvez utiliser l’[intégration de données AEM Forms](/help/forms/using/data-integration.md) pour configurer des sources de données disparates et vous y connecter. Ces sources de données peuvent être une base de données, un service Web, un service REST, un service OData et une solution CRM. L’intégration de données AEM Forms vous permet de créer un modèle de données de formulaire regroupant plusieurs services afin d’effectuer des opérations de récupération, d’ajout et de mise à jour de données sur la base de données configurée. Vous pouvez utiliser **l’étape Invoquer le service de modèle de données de formulaire** pour sélectionner un modèle de données de formulaire (FDM) et utiliser les services du FDM pour récupérer, mettre à jour ou ajouter des données aux sources de données disparates.
 
@@ -143,7 +143,7 @@ Pour mieux comprendre les entrées des champs de l’étape, la table de base de
 <table> 
  <tbody> 
   <tr> 
-   <td>Propriétés</td> 
+   <td>Propriété</td> 
    <td>Valeur<br /> </td> 
   </tr> 
   <tr> 
@@ -209,10 +209,10 @@ L’étape Invoquer le service de modèle de données de formulaire contient les
 
 * **JSON Dot Notation :** laissez le champ vide pour utiliser tous les objets du fichier JSON spécifié en tant qu’entrée pour les arguments de service. Pour lire un objet JSON spécifique à partir du fichier JSON spécifié en tant qu’entrée pour des arguments de service, spécifiez la notation par point pour l’objet JSON. Par exemple, si vous avez un fichier JSON identique à l’un des fichiers indiqué au début de la section, spécifiez insurance.customerDetails pour fournir tous les détails d’un client en tant qu’entrée du service.
 * **Sortie de service > Mapper et écrire les valeurs de sortie dans les métadonnées :** sélectionnez cette option pour enregistrer les valeurs de sortie en tant que propriétés du nœud de métadonnées de l’instance de processus dans le référentiel CRX. Spécifiez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez la valeur numéro_de_téléphone renvoyé par le service de sortie avec la propriété numéro_de_téléphone des métadonnées du processus.
-* **Sortie de service > Enregistrer la sortie au format JSON :** sélectionnez l’option permettant d’enregistrer les valeurs de sortie dans un fichier JSON.
+* **Sortie de service > Enregistrer la sortie au format JSON :** Sélectionnez l’option pour enregistrer les valeurs de sortie dans un fichier JSON.
 * **Chemin d’accès au fichier JSON de sortie :** chemin d’accès pour enregistrer le fichier JSON de sortie. Le chemin d’accès du fichier JSON peut être relatif à la charge utile ou à un chemin d’accès absolu.
 
-## Etape Signer le document {#sign-document-step}
+## Étape Signer le document {#sign-document-step}
 
 L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer des documents. L’étape Signer le document possède les propriétés suivantes :
 
@@ -232,7 +232,7 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 * **Script ou service pour sélectionner les signataires :** cette option est disponible uniquement si l’option De manière dynamique est sélectionnée dans le champ Sélectionner les signataires. Vous pouvez spécifier un script ECMAScript ou un service pour sélectionner des signataires et des options de vérification pour un document.
 
 * **Détails du signataire :** cette option est disponible uniquement si l’option Manuellement est sélectionnée dans le champ Sélectionner les signataires. Indiquez l’adresse électronique et choisissez une méthode de vérification facultative. Avant de sélectionner une méthode de vérification en 2 étapes, assurez-vous que l’option de vérification correspondante est activée pour le compte Adobe Sign configuré.
-* **Variable d’état :** l’état de signature d’un document activé par Adobe Sign est stocké dans une variable. Spécifiez le nom de la variable d’état (adobeSignStatus). Une variable d’état d’une instance est disponible dans CRXDE à l’adresse /etc/workflow/instances/&lt;serveur>/&lt;date-time>/&lt;instance du modèle de processus>/workItems/&lt;noeud>/metaData contient l’état d’une variable.
+* **Variable d’état :** l’état de signature d’un document activé par Adobe Sign est stocké dans une variable. Spécifiez le nom de la variable d’état (adobeSignStatus). Une variable d’état d’une instance est disponible dans CRXDE à l’adresse /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData contient l’état d’une variable.
 * **Chemin d’accès du document signé :** spécifiez l’emplacement pour conserver les documents signés. Vous pouvez choisir de remplacer le fichier de charge utile ou de placer le document signé à un emplacement dans le répertoire de charge utile.
 
 ## Etapes Services de document {#document-services-steps}
@@ -243,14 +243,14 @@ Les services de document AEM sont un ensemble de services permettant de créer, 
 
 Ajoute un horodatage à un document. Indiquez les détails du document, tels que le chemin d’accès du document d’entrée, le nom du document d’entrée, l’emplacement de stockage des données exportées. Vous pouvez remplacer le fichier de charge utile existant ou choisir un autre nom de fichier pour stocker des données dans un autre fichier sous le dossier de charge utile.
 
-### Etape Convertir en image  {#convert-to-image-step}
+### Etape Convertir en image {#convert-to-image-step}
 
 Convertit un document PDF en fichier image. Les formats d’image pris en charge sont JPEG, JPEG2000, PNG et TIFF. Les informations suivantes s’appliquent aux conversions en images TIFF :
 
 * Un fichier TIFF de plusieurs pages est généré.
 * Certaines annotations ne sont pas incluses dans les images TIFF. Les annotations requises par Acrobat pour générer leur aspect ne sont pas incluses.
 
-### Etape Convertir en PDF/A  {#convert-to-pdf-a-step}
+### Etape Convertir en PDF/A {#convert-to-pdf-a-step}
 
 Convertit un document PDF au format PDF/A à l’aide des options fournies. La version PDF/A du format PDF (Portable Document Format) est réservée à l’archivage et la conservation des documents à long terme.
 
@@ -258,7 +258,7 @@ Convertit un document PDF au format PDF/A à l’aide des options fournies. La v
 
 Convertir des documents PDF en PostScript. Lors d’une conversion au format PostScript, vous pouvez indiquer le document source et choisir entre une conversion vers PostScript niveau 2 ou 3. Le document PDF à convertir en fichier PostScript ne doit pas être interactif.
 
-### Etape Créer le PDF depuis le type spécifié  {#create-pdf-from-specified-type-step}
+### Etape Créer le PDF depuis le type spécifié {#create-pdf-from-specified-type-step}
 
 Génère un document PDF à partir d’un fichier d’entrée. Le document d’entrée peut être relatif à la charge utile ou posséder un chemin d’accès absolu ou encore être une charge utile.
 
@@ -266,15 +266,15 @@ Génère un document PDF à partir d’un fichier d’entrée. Le document d’e
 
 Génère un document PDF à partir de l’URL fournie ou du fichier HTML et ZIP.
 
-### Etape Exporter des données  {#export-data-step}
+### Etape Exporter des données {#export-data-step}
 
 Exporte des données à partir d’un formulaire PDF ou d’un XDP. Vous devez saisir le chemin d’accès du document d’entrée et le format d’exportation des données. Les options Exporter le format de données sont Auto, XDP et XmlData.
 
-### Etape Exporter un PDF vers le type spécifié  {#export-pdf-to-specified-type-step}
+### Etape Exporter un PDF vers le type spécifié {#export-pdf-to-specified-type-step}
 
 Convertit un document PDF au format sélectionné.
 
-### Etape Générer un PDF non interactif  {#generate-non-interactive-pdf-step}
+### Etape Générer un PDF non interactif {#generate-non-interactive-pdf-step}
 
 Génère un PDF non interactif. Cette étape comprend différentes options de personnalisation.
 
@@ -282,17 +282,17 @@ Génère un PDF non interactif. Cette étape comprend différentes options de pe
 
 Fusionne les données de formulaire dans un formulaire PDF. Vous pouvez importer les données de formulaire dans un formulaire au format PDF.
 
-### Etape Invoquer DDX  {#invoke-ddx-step}
+### Etape Invoquer DDX {#invoke-ddx-step}
 
 Exécute le fichier DDX sur la carte spécifiée des documents d’entrée et renvoie les documents PDF ayant fait l’objet d’une manipulation.
 
-### Etape Optimiser un PDF  {#optimize-pdf-step}
+### Etape Optimiser un PDF {#optimize-pdf-step}
 
 Optimise les fichiers PDF en réduisant leur taille. Le résultat de cette conversion est un fichier PDF qui peut être plus petit que ses versions d’origine. Cette opération permet également de convertir des documents PDF vers la version PDF spécifiée dans les paramètres d’optimisation.
 
 Les paramètres d’optimisation spécifient le mode d’optimisation des fichiers. Voici des exemples de paramètres :
 
-* Version PDF cible
+* Version du PDF de Target
 * Ignorer les objets tels que les actions JavaScript et les miniatures de page incorporées
 * Ignorer les données utilisateur telles que les commentaires et les pièces jointes
 * Ignorer les paramètres non valides ou inutilisés
@@ -300,11 +300,11 @@ Les paramètres d’optimisation spécifient le mode d’optimisation des fichie
 * Suppression des polices incorporées
 * Définition des valeurs de transparence
 
-### Etape Effectuer un rendu de formulaire PDF  {#render-pdf-form-step}
+### Etape Effectuer un rendu de formulaire PDF {#render-pdf-form-step}
 
 Enregistre un formulaire créé dans Form Designer (XDP) dans un formulaire PDF.
 
-### Etape Protéger un document  {#secure-document-step}
+### Etape Protéger un document {#secure-document-step}
 
 Chiffre, signe et certifie un document. AEM Forms prend en charge le chiffrement par mot de passe et au moyen d’un certificat. Vous pouvez également choisir entre plusieurs algorithmes pour signer des documents. SHA-256 et SH-512, par exemple. Vous pouvez également utiliser l’étape de processus pour étendre Reader aux documents PDF. L’étape de processus propose une option qui permet d’activer le décodage de code-barres, les signatures numériques, l’importation et l’exportation de données au format PDF et d’autres options.
 

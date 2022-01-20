@@ -1,20 +1,20 @@
 ---
 title: Propriétés de configuration des communications interactives
-seo-title: Propriétés de configuration de la communication interactive
+seo-title: Interactive Communication configuration properties
 description: Modifier les propriétés de configuration par défaut des communications interactives
-seo-description: Modifier les propriétés de configuration par défaut des communications interactives
+seo-description: Edit default configuration properties for Interactive Communications
 uuid: 793da9c0-7e8b-464c-b41d-559a72fac9eb
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
-feature: Communication interactive
+feature: Interactive Communication
 exl-id: 2caf7242-8588-4fc9-9429-40e24416d6eb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 70%
+source-wordcount: '531'
+ht-degree: 69%
 
 ---
 
@@ -24,9 +24,9 @@ Modifier les propriétés de configuration par défaut des communications intera
 
 Les communications interactives incluent les propriétés qui sont configurées automatiquement après l’installation du package du [module complémentaire AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Les auteurs de la communication interactive peuvent modifier ces propriétés de configuration par défaut en utilisant la page de **configuration de la console web d’Adobe Experience Manager**.
 
-Ouvrez la page **Configuration de la console web Adobe Experience Manager** à l’aide de l’URL suivante :
+Ouvrez le **Configuration de la console web Adobe Experience Manager** à l’aide de l’URL suivante :
 
-https://&lt;serveur>:&lt;port>/&lt;contextPath>/system/console/configMgr
+https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 
 Les propriétés de configuration incluent :
 
@@ -37,7 +37,7 @@ Les propriétés de configuration incluent :
 
 ## Configuration de fragments de document {#document-fragments-configuration}
 
-Appuyez sur **Configuration des fragments de document** sur la page **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration des fragments de document.
+Appuyer **Configuration des fragments de document** sur le **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration des fragments de document.
 
 <table> 
  <tbody> 
@@ -83,26 +83,26 @@ Appuyez sur **Configuration des fragments de document** sur la page **Configurat
 
 ## Configuration de la création de correspondance {#create-correspondence-configuration}
 
-Appuyez sur **Configuration de la création de correspondance** sur la page **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration de l’interface utilisateur de l’agent.
+Appuyer **Configuration de la création de correspondance** sur le **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration de l’interface utilisateur de l’agent.
 
 | Propriété | Description | Valeur par défaut | Valeurs acceptables |
 |---|---|---|---|
 | Afficher le contenu résolu pour modification | Cochez la case pour afficher le contenu résolu (valeurs réelles au lieu d’espaces réservés) lors de la modification du module de texte sur l’interface utilisateur de l’agent. | Non sélectionné | Non applicable |
-| Appliquer un filigrane lors de l’aperçu | Cochez la case pour appliquer un filigrane au canal d’impression de la communication interactive en mode Aperçu. | Non sélectionné | Ne s’applique pas |
+| Appliquer un filigrane lors de l’aperçu | Cochez la case pour appliquer un filigrane au canal d’impression de la communication interactive en mode Aperçu. | Non sélectionné | Non applicable |
 
-## Configuration de canal web du formulaire adaptatif et de la communication interactive  {#adaptive-form-and-interactive-communication-web-channel-configuration}
+## Configuration de canal web du formulaire adaptatif et de la communication interactive {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Appuyez sur **Configuration du canal web du formulaire adaptatif et de la communication interactive** sur la page **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration du canal web du Forms adaptatif et des communications interactives. Le tableau suivant décrit les propriétés liées aux communications interactives :
+Appuyer **Configuration du canal web du formulaire adaptatif et de la communication interactive** sur le **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration du canal web Forms adaptatif et communications interactives. Le tableau suivant décrit les propriétés liées aux communications interactives :
 
 | Propriété | Description | Valeur par défaut | Valeurs acceptables |
 |---|---|---|---|
 | Afficher l’espace réservé | Cochez la case pour activer l’affichage des espaces réservés pour les champs inclus dans les formulaires adaptatifs et les communications interactives. | Sélectionné | Non applicable |
 | Nombre maximal d’entrées de cache | Définissez le nombre maximal de formulaires adaptatifs et de communications interactives pouvant être récupérés à l’aide de la mémoire cache. | 100 | Nombre |
-| Rendre le nom de fichier unique | Cochez la case pour attribuer des noms uniques aux fichiers en tant que pièces jointes dans les formulaires adaptatifs et les communications interactives. | Non sélectionné | Ne s’applique pas |
+| Rendre le nom de fichier unique | Cochez la case pour attribuer des noms uniques aux fichiers en tant que pièces jointes dans les formulaires adaptatifs et les communications interactives. | Non sélectionné | Non applicable |
 
-## Configuration des thèmes de canal web du formulaire adaptatif et de la communication interactive  {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Configuration des thèmes de canal web du formulaire adaptatif et de la communication interactive {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Appuyez sur **Configuration du thème du canal web du formulaire adaptatif et de la communication interactive** sur la page **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration des thèmes du canal web du Forms adaptatif et des communications interactives.
+Appuyer **Configuration du thème du canal web du formulaire adaptatif et de la communication interactive** sur le **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration des thèmes de canal web Forms adaptatif et Communications interactives.
 
 <table> 
  <tbody> 

@@ -75,14 +75,14 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 [Gestion des rendus vidéo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
-      * [Publier des ressources](publishing-dynamicmedia-assets.md)
-   * Utiliser des métadonnées vidéo
+      * [Publication des ressources](publishing-dynamicmedia-assets.md)
+   * Utilisation des métadonnées vidéo
 
       * Affichez les propriétés d’un rendu vidéo codé, telles que la fréquence d’image, le débit audio et vidéo et le codec :
 
          [Affichage des propriétés de rendu vidéo](video-renditions.md)
 
-      * Modifiez les propriétés de la vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisés :
+      * Modifiez les propriétés vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisées :
 
 [Modification des propriétés vidéo](managing-assets-touch-ui.md#editing-properties)
 
@@ -92,7 +92,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 
       * [Annotation de vidéos](managing-video-assets.md#annotating-video-assets) ou [Annotation de ressources](managing-assets-touch-ui.md#annotating)
       * [Application de workflows aux ressources](assets-workflow.md) ou [Démarrage d’un workflow sur une ressource](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
-      * [Examiner les ressources des dossiers](bulk-approval.md)
+      * [Examen des ressources des dossiers](bulk-approval.md)
       * [Projets](/help/sites-authoring/projects.md)
 
 

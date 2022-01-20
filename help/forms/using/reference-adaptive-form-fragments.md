@@ -19,7 +19,7 @@ ht-degree: 92%
 
 [Un fragment de formulaire adaptatif](/help/forms/using/adaptive-form-fragments.md) est un groupe de champs ou un panneau contenant un groupe de champs que vous pouvez utiliser lors de la création d’un formulaire. Il vous permet de créer un formulaire facilement et rapidement. Vous pouvez glisser-déposer un fragment de formulaire adaptatif dans un formulaire à l’aide du navigateur de ressources de la barre latérale, et vous pouvez le modifier dans l’éditeur de formulaire.
 
-Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fournis dans le [module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Il inclut les configurations suivantes :
+Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fournis dans le [Package de module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Il inclut les configurations suivantes :
 
 * Adresse
 * Coordonnées
@@ -32,7 +32,7 @@ Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fo
 * Conditions générales
 * Conditions générales avec saisie tactile
 
-Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Formulaires et documents. Pour installer un package, voir [Comment utiliser des packages](/help/sites-administering/package-manager.md).
+Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Formulaires et documents. Pour installer un package, voir [Utilisation de modules](/help/sites-administering/package-manager.md).
 
 ![Tous les fragments répertoriés](assets/ootb-frags.png)
 

@@ -1,18 +1,18 @@
 ---
 title: 'Présentation de la création de formulaires adaptatifs '
-seo-title: 'Présentation de la création de formulaires adaptatifs '
+seo-title: Introduction to authoring adaptive forms
 description: AEM Forms fournit une interface à la fois conviviale et puissante permettant de créer des formulaires adaptatifs. Les nombreux composants et outils proposés vous permettent de créer des formulaires.
-seo-description: AEM Forms fournit une interface à la fois conviviale et puissante permettant de créer des formulaires adaptatifs. Les nombreux composants et outils proposés vous permettent de créer des formulaires.
+seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
 uuid: 07ff8e79-daf7-4608-9171-91854619cc0b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction, author
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 62f1ddd3-9fc2-49dd-b588-0c3520e1cdd2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3045'
 ht-degree: 91%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 91%
 Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit une interface utilisateur intuitive et des composants prêts à l’emploi pour la création et l’utilisation de formulaires adaptatifs. Vous pouvez choisir de créer un formulaire adaptatif basé sur un modèle de formulaire ou un schéma ou sans modèle de formulaire. Il est important de choisir avec soin le modèle de formulaire qui convient non seulement à vos besoins, mais qui étend également vos investissements et vos ressources d’infrastructure existantes. Vous pouvez choisir parmi les options suivantes pour créer un formulaire adaptatif :
 
 * **Utilisation d’un modèle de données de formulaire**
-   [L’](/help/forms/using/data-integration.md) intégration de données vous permet d’intégrer des entités et des services provenant de sources de données disparates dans à un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
+   [Intégration de données](/help/forms/using/data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates dans à un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
 
 * **Utilisation d’un modèle de formulaire XDP**
 Il s’agit d’un modèle de formulaire idéal si vous investissez dans des formulaires XFA ou XDP. Il fournit une méthode directe de conversion des formulaires de type XFA en formulaires adaptatifs. Toutes les règles XFA existantes sont conservées dans les formulaires adaptatifs associés. Les formulaires adaptatifs qui en résultent prennent en charge les éléments XFA, tels que les validations, les événements, les propriétés et les motifs.
@@ -56,7 +56,7 @@ Lorsque vous créez ou modifiez un formulaire adaptatif, vous utilisez les élé
 
 ![Interface de création de formulaires adaptatifs](assets/formeditor.png)
 
-**A.** Barre latérale  **B.**  Barre d’outils de la page  **C.** Page de formulaire adaptatif
+**A.** Barre latérale **B.** Barre d’outils Page **C.** Page de formulaire adaptatif
 
 ### Barre latérale {#sidebar}
 
@@ -64,7 +64,7 @@ La barre latérale vous permet de
 
 * Voir le contenu du formulaire tel que les panneaux, les composants, les champs et la mise en page.
 * Modifier les propriétés du composant.
-* Rechercher, afficher et utiliser des ressources dans votre référentiel de gestion des ressources numériques AEM.
+* Rechercher, afficher et utiliser des ressources dans votre référentiel de gestion des ressources numériques (DAM) AEM.
 * Ajouter des composants dans le formulaire.
 
    ![Barre latérale](assets/sidebar-comps-2.png)
@@ -92,7 +92,7 @@ La barre latérale comprend les explorateurs suivants :
 
    Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction d’un composant. Pour afficher les propriétés du conteneur de formulaires adaptatifs :
 
-   Sélectionnez un composant, puis appuyez sur ![field-level](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, puis sur ![cmppr](assets/cmppr.png).
+   Sélectionnez un composant, puis appuyez sur ![champ-level](assets/field-level.png) > **[!UICONTROL Conteneur de formulaires adaptatifs]**, puis appuyez sur ![cmppr](assets/cmppr.png).
 
 * **Explorateur de ressources**
 
@@ -153,7 +153,7 @@ La barre latérale comprend les explorateurs suivants :
    <td><p>Ajoute un champ pour capturer une adresse électronique. Le composant Courrier électronique, par défaut, valide les adresses électroniques à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td> 
   </tr> 
   <tr> 
-   <td>Fichier en pièce jointe</td> 
+   <td>Pièce jointe</td> 
    <td><p>Ajoute un bouton qui permet aux utilisateurs de rechercher et de joindre des documents annexes au formulaire.</p> <p><strong>Remarque :</strong> le composant Pièce jointe prend en charge un ensemble prédéfini de formats de fichiers dans des formulaires adaptatifs activés pour Adobe Sign. Pour plus d’informations, voir <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Formats de fichiers pris en charge</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -278,12 +278,12 @@ La barre latérale comprend les explorateurs suivants :
 Les meilleures pratiques et les points clés suivants sont à prendre en compte lors de l’utilisation de composants de formulaire adaptatifs :
 
 * Chaque composant est associé à des propriétés qui contrôlent son apparence et ses fonctionnalités. Pour configurer les propriétés d’un composant, appuyez sur le composant et appuyez sur ![cmppr](assets/cmppr.png) pour ouvrir les propriétés du composant dans l’explorateur de propriétés.
-* Un composant est identifié par son nom d’élément. Lorsque vous appuyez sur ![cmppr](assets/cmppr.png), vous pouvez modifier le nom du composant en modifiant la valeur du champ **[!UICONTROL Nom de l’élément]** dans l’explorateur de propriétés. Vous pouvez saisir uniquement des lettres, des chiffres, des traits d’union (-) et des traits de soulignement (_) dans le champ Nom de l’élément. D’autres caractères spéciaux ne sont pas autorisés et le nom de l’élément doit commencer par une lettre.
+* Un composant est identifié par son nom d’élément. Lorsque vous appuyez sur ![cmppr](assets/cmppr.png), vous pouvez modifier le nom du composant en modifiant la variable **[!UICONTROL Nom de l’élément]** valeur de champ dans l’explorateur de propriétés. Vous pouvez saisir uniquement des lettres, des chiffres, des traits d’union (-) et des traits de soulignement (_) dans le champ Nom de l’élément. D’autres caractères spéciaux ne sont pas autorisés et le nom de l’élément doit commencer par une lettre.
 
 * Vous pouvez modifier la propriété de titre d’un composant de formulaire adaptatif en ligne dans l’éditeur de formulaire sans ouvrir le navigateur de propriétés tant que le titre est visible sur le formulaire. Pour ce faire :
 
    1. Appuyez pour sélectionner un composant qui a une propriété **[!UICONTROL Titre]** et dont la propriété **[!UICONTROL Masquer le titre]** est désactivée.
-   1. Appuyez sur ![aem_6_3_edit](assets/aem_6_3_edit.png) pour rendre le titre modifiable.
+   1. Appuyer ![aem_6_3_edit](assets/aem_6_3_edit.png) pour rendre le titre modifiable.
    1. Modifiez le titre et appuyez sur la touche Retour ou appuyez n’importe où en dehors du composant pour enregistrer les modifications. Appuyez sur la touche Échap pour annuler les modifications.
 
 * Certains composants de formulaire adaptatifs, tels que Courrier électronique et Téléphone, incluent des modèles de validation prêts à l’emploi. Toutefois, vous pouvez spécifier une validation personnalisée en mettant à jour le champ **[!UICONTROL Modèle de validation]** sous l’accordéon Modèles dans les propriétés du composant. Voir les descriptions des composants dans le tableau ci-dessus pour plus d’informations sur les validations par défaut.
@@ -303,7 +303,7 @@ Les meilleures pratiques et les points clés suivants sont à prendre en compte 
 
 * Pour permettre aux utilisateurs de joindre un fichier PDF à l’aide du navigateur Safari, veillez à ajouter **[!UICONTROL application/pdf]** à la propriété Types de fichiers pris en charge du composant Pièce jointe. Les formulaires adaptatifs créés avec la version précédente d’AEM Forms peuvent contenir **[!UICONTROL .pdf]** au lieu de **[!UICONTROL application/pdf]** dans la propriété Types de fichiers pris en charge.
 
-Pour plus d’informations sur les meilleures pratiques concernant les formulaires adaptatifs, voir [Bonnes pratiques relatives à l’utilisation des formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md).
+Pour plus d’informations sur les bonnes pratiques relatives aux formulaires adaptatifs, voir [Bonnes pratiques relatives à l’utilisation des formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md).
 
 >[!NOTE]
 >
@@ -327,7 +327,7 @@ La barre d’outils de la page, située en haut de l’écran, propose des optio
 
       * Découvrir la composition des formulaires.
       * Déboguer en temps réel afin de mieux résoudre les problèmes.
-   * **[!UICONTROL Conception]** : Permet d’activer ou de désactiver des composants personnalisés ou des composants prêts à l’emploi qui ne sont pas répertoriés dans la barre latérale.
+   * **[!UICONTROL Conception]**: Permet d’activer ou de désactiver des composants personnalisés ou des composants prêts à l’emploi qui ne sont pas répertoriés dans la barre latérale.
 
 
 * **[!UICONTROL Aperçu]** : permet de prévisualiser le formulaire avant de le publier.
@@ -371,7 +371,7 @@ J.**Autres** : Fournit des options permettant d’utiliser le composant sélect
 * Ajouter une barre d’outils de panneau (pour les panneaux uniquement)
 * Remplacer (pas pour les panneaux)
 
-### Page de formulaires adaptatifs  {#af-page}
+### Page de formulaires adaptatifs {#af-page}
 
 La page de formulaires adaptatifs est le formulaire proprement dit. Elle est identique à toute autre page de gestion de contenu Web modélisée en tant que composant de gestion de contenu Web `cq:Page`. L’illustration suivante présente la structure de contenu d’un formulaire adaptatif standard.
 
@@ -386,8 +386,8 @@ La structure de contenu contient généralement les composants principaux ci-des
    * *Action d’envoi* : définit la manière dont le formulaire est traité sur le serveur lorsque l’utilisateur l’envoie.
    * *Style* : indique le chemin d’accès au fichier CSS utilisé pour personnaliser l’apparence du formulaire.
 
-* **[!UICONTROL rootPanel]** : Panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le nœud d’éléments. Une mise en page peut être associée à chaque panneau qui comprend le panneau racine. La mise en page du panneau détermine la disposition du formulaire. Par exemple, dans la disposition Accordéon*, *ses éléments sont disposés sous la forme d’étapes Accordéon .
+* **[!UICONTROL rootPanel]**: Panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le nœud d’éléments. Une mise en page peut être associée à chaque panneau qui comprend le panneau racine. La mise en page du panneau détermine la disposition du formulaire. Par exemple, dans la disposition Accordéon*, *ses éléments sont disposés sous la forme d’étapes Accordéon .
 
-* **[!UICONTROL barre d’outils]** : Un conteneur de formulaires adaptatifs est associé à une barre d’outils globale, qui est globale dans le formulaire. Cette barre d’outils peut être ajoutée à l’aide de l’action **Ajouter une barre d’outils** de la barre d’édition, ce qui permet aux auteurs d’ajouter des actions telles que Envoyer, Enregistrer, réinitialiser, etc.
+* **[!UICONTROL barre d’outils]**: Un conteneur de formulaires adaptatifs est associé à une barre d’outils globale, qui est globale dans le formulaire. Cette barre d’outils peut être ajoutée à l’aide de l’action **Ajouter une barre d’outils** de la barre d’édition, ce qui permet aux auteurs d’ajouter des actions telles que Envoyer, Enregistrer, réinitialiser, etc.
 
-* **[!UICONTROL ressources]** : Ce noeud contient des informations supplémentaires utilisées pour la création de formulaires. Il s’agit, par exemple, de détails sur le modèle de formulaire, de détails de localisation, etc).
+* **[!UICONTROL ressources]**: Ce noeud contient des informations supplémentaires utilisées pour la création de formulaires. Il s’agit, par exemple, de détails sur le modèle de formulaire, de détails de localisation, etc).

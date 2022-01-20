@@ -1,8 +1,8 @@
 ---
 title: Présentation du site de référence de recrutement des employés
-seo-title: Recrutement des employés
+seo-title: Employee recruitment
 description: Le site de référence AEM Forms présente la manière dont les organisations peuvent utiliser les fonctionnalités AEM Forms pour mettre en œuvre le processus de recrutement des employés.
-seo-description: Le site de référence AEM Forms présente la manière dont les organisations peuvent utiliser les fonctionnalités AEM Forms pour mettre en œuvre le processus de recrutement des employés.
+seo-description: AEM Forms reference site showcases how organizations can use AEM Forms features to implement employee recruitment workflow.
 uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,14 +10,14 @@ discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 exl-id: f07e3786-d396-47de-83cb-fc7afc423d09
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1433'
 ht-degree: 90%
 
 ---
 
 # Recrutement des employés présentation du site de référence {#employee-recruitment-reference-site-walkthrough}
 
-## Condition préalable {#prerequisite}
+## Prérequis {#prerequisite}
 
 Installez les sites de référence comme décrit dans [Installation et configuration des sites de référence d’AEM Forms](/help/forms/using/setup-reference-sites.md).
 
@@ -68,7 +68,7 @@ Le scénario implique les personnages suivants :
 * Gloria Rios, la responsable des recrutements
 * John Doe, le responsable des ressources humaines
 
-## Sarah dépose sa candidature pour un emploi  {#sarah-applies-for-a-job}
+## Sarah dépose sa candidature pour un emploi {#sarah-applies-for-a-job}
 
 Sarah Rose recherche un emploi dans l’entreprise. Elle visite le portail web de l’entreprise et parcourt les offres d’emploi répertoriées sur la page Carrières. Elle trouve un emploi qui lui convient et postule.
 
@@ -94,7 +94,7 @@ Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en.ht
 
 Assurez-vous de spécifier un ID de courrier électronique valide dans la demande, car toute communication par le biais de cette procédure pas à pas sera envoyée à l’ID de courrier électronique spécifié.
 
-## John Jacobs présélectionne le profil de Sarah Rose pour la sélection de la responsable des recrutements  {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
+## John Jacobs présélectionne le profil de Sarah Rose pour la sélection de la responsable des recrutements {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
 L’entreprise reçoit la candidature envoyée par Sarah. John Jacobs, un recruteur, se voit attribuer la tâche de consultation du profil de Sarah. Il consulte la candidature dans sa boîte de réception AEM, trouve que le profil correspond aux besoins du poste et clique sur Présélectionner. Le profil de Sarah est envoyé à Gloria Rios, la responsable des ressources humaines, pour approbation.
 
@@ -110,11 +110,11 @@ John Jacobs présélectionne le profil de Sarah Rose pour la sélection de la re
 
 L’action d’envoi dans le formulaire de candidature déclenche un processus qui crée une tâche de sélection de demande dans la boîte de réception de John Jacob. Lorsque John examine et présélectionne la demande, le processus crée une tâche dans la boîte de réception de la responsable des recrutements, Gloria.
 
-### Démonstration  {#see-it-yourself-1}
+### Démonstration {#see-it-yourself-1}
 
 Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`et connectez-vous en utilisant jjacobs/password comme nom d’utilisateur/mot de passe pour John Jacobs. Ouvrez la tâche de consultation du profil du candidat et sélectionnez le candidat.
 
-## Gloria consulte la demande et approuve la candidate pour un entretien  {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
+## Gloria consulte la demande et approuve la candidate pour un entretien {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
 Gloria, la responsable des recrutements, reçoit le profil présélectionné comme tâche dans sa boîte de réception AEM. Elle la consulte et approuve la candidate Sarah Rose pour un entretien.
 
@@ -130,13 +130,13 @@ Gloria approuve Sarah Rose pour un entretien
 
 Lorsque Gloria approuve la candidate pour un entretien, le processus crée une tâche dans la boîte de réception AEM de John Doe, qui est un recruteur de We.Finance.
 
-### Démonstration  {#see-it-yourself-2}
+### Démonstration {#see-it-yourself-2}
 
 Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et connectez-vous en utilisant jjacobs/password comme nom d’utilisateur/mot de passe pour John Jacobs. Ouvrez la tâche de consultation du profil du candidat et sélectionnez le candidat.
 
 Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et connectez-vous en utilisant grios/password comme nom d’utilisateur/mot de passe pour Gloria Rios. Ouvrez la tâche de consultation du profil de la candidate et cliquez sur Planifier l’entretien.
 
-## John Doe planifie un entretien  {#john-doe-schedules-an-interview}
+## John Doe planifie un entretien {#john-doe-schedules-an-interview}
 
 John Doe reçoit la tâche de planification d’un entretien dans sa boîte de réception. John Doe sélectionne et ouvre la tâche et définit la date et l’heure de l’entretien, le lieu et la personne des ressources humaines responsable de l’entretien : John Jacob. John Doe clique sur Envoyer un courrier électronique d’invitation. Un courrier électronique est envoyé à Sarah et une tâche est affectée à Gloria, la responsable des recrutements, pour l’entretien avec Sarah.
 
@@ -148,7 +148,7 @@ Boîte de réception AEM de John Doe
 
 John Doe planifie l’entretien et envoie les détails à Sarah Rose
 
-## Sarah Rose reçoit le courrier électronique avec la planification de l’entretien  {#sarah-rose-receives-the-email-with-interview-schedule}
+## Sarah Rose reçoit le courrier électronique avec la planification de l’entretien {#sarah-rose-receives-the-email-with-interview-schedule}
 
 Sarah Rose reçoit le courrier électronique avec la planification de l’entretien, le lieu et d’autres détails. Elle clique sur Accepter pour signifier qu’elle est d’accord avec l’horaire et le lieu de l’entretien. Guidée par ces informations précises, Sarah se rend à l’entretien.
 
@@ -156,7 +156,7 @@ Sarah Rose reçoit le courrier électronique avec la planification de l’entret
 
 Sarah Rose reçoit la planification de l’entretien
 
-## Après les entretiens, le responsable des recrutements présélectionne Sarah Rose  {#after-the-interviews-the-hiring-manager-shortlists-sarah-rose}
+## Après les entretiens, le responsable des recrutements présélectionne Sarah Rose {#after-the-interviews-the-hiring-manager-shortlists-sarah-rose}
 
 Une fois que Sarah Rose a passé et terminé les entretiens, Gloria Rios, la responsable des recrutements, ouvre la tâche de sélection de candidat depuis sa boîte de réception et clique sur Sélectionner. La décision de Gloria Rios est transférée à la personne des ressources humaines, John Doe, pour être traitée ultérieurement.
 
@@ -168,15 +168,15 @@ Boîte de réception AEM de Gloria
 
 Gloria Rios sélectionne Sarah Rose après les entretiens
 
-## John Doe demande plus d’informations  {#john-doe-requests-more-information}
+## John Doe demande plus d’informations {#john-doe-requests-more-information}
 
 Avant de demander à un candidat de rejoindre l’entreprise, son parcours doit être vérifié. John Doe ouvre et consulte les informations du demandeur sélectionné et découvre que certaines informations relatives à ses études et son parcours professionnel ne sont pour le moment pas renseignées. John Doe clique sur Besoin de plus d’informations.
 
-![](assets/johndoeinbox.png) ![johndoeinboxjohndoeneedmore](assets/johndoeneedmoreinformation.png)
+![johndoeinbox](assets/johndoeinbox.png) ![johndoeneedmore](assets/johndoeneedmoreinformation.png)
 
 John Doe demande plus d’informations à Sarah Rose sur ses études et son expérience professionnelle
 
-## Sarah Rose reçoit un courrier électronique lui demandant des informations supplémentaires  {#sarah-rose-receives-an-email-requesting-further-information}
+## Sarah Rose reçoit un courrier électronique lui demandant des informations supplémentaires {#sarah-rose-receives-an-email-requesting-further-information}
 
 Sarah Rose reçoit un courrier électronique l’informant que des informations supplémentaires sont requises pour traiter sa candidature. Ce courrier inclut un lien vers le formulaire pour renseigner les informations requises.
 
@@ -194,7 +194,7 @@ Sarah ouvre le formulaire d’informations supplémentaires en cliquant sur le l
 
 Sarah renseigne les informations supplémentaires comme demandé par John Doe et clique sur Envoyer
 
-## John Doe accède au profil de la candidate sélectionnée pour consulter les informations supplémentaires fournies  {#john-doe-reviews-the-selected-candidate-profile-for-the-additional-information-provided}
+## John Doe accède au profil de la candidate sélectionnée pour consulter les informations supplémentaires fournies {#john-doe-reviews-the-selected-candidate-profile-for-the-additional-information-provided}
 
 John Doe sélectionne la demande de consultation de la candidate et l’ouvre. John Doe estime que Sarah a renseigné toutes les informations nécessaires. Après avoir consulté la demande, John Doe clique sur Approuver. Sur approbation de John Doe, la demande de vérification du parcours de Sarah Rose est transférée à John Jacobs.
 
@@ -206,7 +206,7 @@ Boîte de réception AEM de John Doe
 
 John Doe consulte les informations supplémentaires fournies par Sarah et les approuve
 
-## John Jacobs reçoit une demande de vérification de parcours  {#john-jacobs-receives-a-background-check-request}
+## John Jacobs reçoit une demande de vérification de parcours {#john-jacobs-receives-a-background-check-request}
 
 John Jacobs voit la demande de vérification de parcours dans la boîte de réception. John Jacobs ouvre la tâche et consulte les informations fournies par Sarah Rose. Après avoir vérifié le parcours, John Jacobs clique sur Avancer pour indiquer que la vérification du parcours est concluante.
 
@@ -218,7 +218,7 @@ Boîte de réception AEM de John Jacobs
 
 Après avoir vérifié le parcours, John Jacobs clique sur Avancer
 
-## John Doe envoie la lettre de recrutement à Sarah Rose  {#john-doe-sends-out-the-joining-letter-to-sarah-rose}
+## John Doe envoie la lettre de recrutement à Sarah Rose {#john-doe-sends-out-the-joining-letter-to-sarah-rose}
 
 John Doe reçoit une demande dans sa boîte de réception AEM pour l’envoi de la lettre de recrutement. John ouvre la demande et affiche les détails. John Doe ajoute le fichier PDF de lettre de recrutement et clique sur Joindre et envoyer la lettre de recrutement.
 
@@ -230,7 +230,7 @@ Boîte de réception AEM de John Doe
 
 John Doe envoie la lettre de recrutement pour signature
 
-## Sarah Rose reçoit et signe la lettre de recrutement  {#sarah-rose-receives-and-signs-the-joining-letter}
+## Sarah Rose reçoit et signe la lettre de recrutement {#sarah-rose-receives-and-signs-the-joining-letter}
 
 Sarah Rose reçoit la lettre de recrutement pour signature. Sarah clique sur Cliquez ici pour consulter et signer la lettre de recrutement. Le fichier PDF de lettre de recrutement s’ouvre avec un champ pour signer le document.
 

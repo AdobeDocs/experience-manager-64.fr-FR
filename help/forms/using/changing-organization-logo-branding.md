@@ -1,8 +1,8 @@
 ---
 title: Modification du logo de l’organisation pour l’identité graphique
-seo-title: Modification du logo de l’organisation pour l’identité graphique
+seo-title: Changing the organization logo for branding
 description: Pour attribuer une identité graphique à l’espace de travail d’AEM Forms, fournissez le logo de votre entreprise en personnalisant le logo par défaut.
-seo-description: Pour attribuer une identité graphique à l’espace de travail d’AEM Forms, fournissez le logo de votre entreprise en personnalisant le logo par défaut.
+seo-description: To brand AEM Forms workspace provide the logo of your organization by customizing the default logo.
 uuid: f0c340ee-2e54-4bb0-9c30-383cc1bbadb8
 contentOwner: robhagat
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 2c651302-f4ef-4211-b897-f5942ed0ffb1
 exl-id: 890e98af-0491-4b59-9a9b-6c245db54f0f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 82%
+source-wordcount: '134'
+ht-degree: 79%
 
 ---
 

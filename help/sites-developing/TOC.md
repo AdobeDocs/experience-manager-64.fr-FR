@@ -11,7 +11,7 @@ role: Developer
 source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 81%
+ht-degree: 83%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 81%
 # Guide de l’utilisateur pour le développement dans AEM 6.4 {#developing}
 
 + [Présentation du guide de l’utilisateur du développement](home.md)
-+ Introduction pour les développeurs{#introduction}
-   + [Prise en main du développement d’AEM Sites – Tutoriel WKND](getting-started.md)
++ Présentation pour les développeurs{#introduction}
+   + [Prise en main du développement d’AEM Sites – Tutoriel WKND ](getting-started.md)
    + [Concepts de base d’AEM](the-basics.md)
    + [Structure de l’interface utilisateur tactile d’AEM](touch-ui-structure.md)
    + [Concepts de l’interface utilisateur (IU) tactile d’AEM](touch-ui-concepts.md)
@@ -35,7 +35,7 @@ ht-degree: 81%
    + [Documents de référence](reference-materials.md)
    + [Création d’un site web complet (IU classique)](website.md)
    + [Conceptions et Designer (IU classique)](designer.md)
-+ Plate-forme{#platform}
++ Plateforme{#platform}
    + [Aide-mémoire pour Sling](sling-cheatsheet.md)
    + [Utilisation des adaptateurs Sling](sling-adapters.md)
    + [Bibliothèques de balises](taglib.md)
@@ -94,7 +94,7 @@ ht-degree: 81%
       + [Internationalisation des chaînes d’interface utilisateur](i18n-dev.md)
       + [Utilisation du traducteur pour gérer les dictionnaires](i18n-translator.md)
       + [Extraction de chaînes pour la traduction](i18n-extract.md)
-   + Composants d’IU classique{#classic-ui-components}
+   + Composants de l’interface utilisateur classique{#classic-ui-components}
       + [Développement de composants AEM (IU classique)](developing-components-classic.md)
       + [Utilisation et extension de widgets (IU classique)](widgets.md)
       + [Utilisation des xtypes (IU classique)](xtypes.md)
@@ -164,7 +164,7 @@ ht-degree: 81%
       + [Meilleures pratiques en matière de workflow](workflows-best-practices.md)
       + [Référence sur les processus de workflow](workflows-process-ref.md)
    + [Extension du Multi Site Manager](extending-msm.md)
-   + Suivi et Analytics{#extending-analytics}
+   + Suivi et analyses{#extending-analytics}
       + [Extension du suivi des événements](extending-analytics.md)
       + [Ajout d’un suivi Adobe Analytics aux composants](extending-analytics-components.md)
       + [Personnalisation de la structure Adobe Analytics](extending-analytics-framework.md)
@@ -179,7 +179,7 @@ ht-degree: 81%
       + [Script d’analyse des requêtes](analyze-request.md)
    + [Intégration de services à la console JMX](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/jmx-integration.html)
    + [Développement de l’éditeur en masse](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/dev-bulk-editor.html)
-   + Extension de l’IU classique{#extending-classic-ui}
+   + Extension de l’interface utilisateur classique{#extending-classic-ui}
       + [Personnalisation de la console Sites web (IU classique)](customizing-siteadmin.md)
       + [Personnalisation de la console de bienvenue (IU classique)](customizing-the-welcome-console.md)
       + [Élaboration de rapports](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/dev-reports.html)

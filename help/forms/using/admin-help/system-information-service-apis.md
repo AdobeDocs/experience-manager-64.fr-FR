@@ -1,8 +1,8 @@
 ---
 title: API du service d’informations système
-seo-title: API du service d’informations système
+seo-title: System information Service APIs
 description: Ce document fournit des informations détaillées sur les API fournies par le service d’informations système.
-seo-description: Ce document fournit des informations détaillées sur les API fournies par le service d’informations système.
+seo-description: This document provides detailed information about the APIs provided by the system information service.
 uuid: 7f624216-56e6-4d49-b9a1-3c9af045dabe
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 exl-id: 7eee8103-8d6c-4397-acaf-dd662cc09a56
 source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 68%
+source-wordcount: '338'
+ht-degree: 70%
 
 ---
 

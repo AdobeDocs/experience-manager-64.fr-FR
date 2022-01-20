@@ -1,8 +1,8 @@
 ---
 title: Configuration de l’environnement du compte
-seo-title: Configuration de l’environnement du compte
+seo-title: Configuring your account environment
 description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
-seo-description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
 uuid: 01e76771-9ac8-4919-9e50-0a63826177d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
 exl-id: f620e85e-8c77-41a3-a238-9b93c819909d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 95%
+source-wordcount: '481'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
-À l’aide de l’option [Utilisateur](/help/sites-authoring/user-properties.md#user-settings) de l’en-tête [](/help/sites-authoring/basic-handling.md#the-header) et de la boîte de dialogue [Mes préférences](#my-preferences) associée, vous pouvez modifier vos options utilisateur.
+En utilisant la variable [Utilisateur](/help/sites-authoring/user-properties.md#user-settings) dans le [header](/help/sites-authoring/basic-handling.md#the-header) et le [Mes préférences](#my-preferences) vous pouvez modifier les options de l’utilisateur.
 
 ## Paramètres utilisateur {#user-settings}
 

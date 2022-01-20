@@ -1,8 +1,8 @@
 ---
 title: Console des composants
-seo-title: Console des composants
+seo-title: Components Console
 description: Console des composants
-seo-description: 'null'
+seo-description: null
 uuid: 308b7fa1-9525-43f3-8c15-1076485b3f8c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
 exl-id: fa583a06-e75c-41de-a977-7e459ab8bca9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '260'
 ht-degree: 95%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 La console des composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés pour chacun d’eux.
 
-Elle est accessible à partir de **Outils** -> **Général** -> **Composants**. Dans la console, les modes Carte et Liste sont disponibles. Comme il n’existe pas de structure d’arborescence pour les composants, le mode Colonnes n’est pas disponible.
+Il est accessible à partir de **Outils** -> **Général** -> **Composants**. Dans la console, les modes Carte et Liste sont disponibles. Comme il n’existe pas de structure d’arborescence pour les composants, le mode Colonnes n’est pas disponible.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -29,7 +29,7 @@ Elle est accessible à partir de **Outils** -> **Général** -> **Composants**. 
 >
 >La console des composants affiche tous les composants du système. L’[Explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser) affiche les composants qui sont disponibles pour les auteurs et masque tous les groupes de composants qui commencent par un point ( `.`).
 
-## Recherche {#search-features}
+## Rechercher {#search-features}
 
 Avec l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir le panneau de **recherche** pour rechercher et/ou filtrer les composants :
 

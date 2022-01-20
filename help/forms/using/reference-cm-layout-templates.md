@@ -20,7 +20,7 @@ ht-degree: 92%
 
 Dans Correspondence Management, un modèle de lettre contient des champs de formulaire classiques, des fonctions de mise en page (en-têtes et pieds de page, par exemple) et des « zones cibles » vides où placer du contenu.
 
-Correspondence Management fournit des modèles de lettre dans le package AEM Forms [Package de module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Pour installer un package, voir [Comment utiliser des packages](/help/sites-administering/package-manager.md). Vous pouvez personnaliser les modèles dans Designer en fonction de vos besoins de marque et d’entreprise. Le package inclut les modèles suivants :
+Correspondence Management fournit des modèles de lettre dans le package AEM Forms [Package de module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Pour installer un package, voir [Utilisation de modules](/help/sites-administering/package-manager.md). Vous pouvez personnaliser les modèles dans Designer en fonction de vos besoins de marque et d’entreprise. Le package inclut les modèles suivants :
 
 * Classique
 * Classique simple

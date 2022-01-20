@@ -1,19 +1,19 @@
 ---
 title: Intégration de l’interface utilisateur de création de correspondance dans votre portail personnalisé
-seo-title: Intégration de l’interface utilisateur de création de correspondance dans votre portail personnalisé
+seo-title: Integrating Create Correspondence UI with your custom portal
 description: Découvrez comment intégrer l’interface utilisateur de création de correspondance dans votre portail personnalisé
-seo-description: Découvrez comment intégrer l’interface utilisateur de création de correspondance dans votre portail personnalisé
+seo-description: Learn how to integrate create correspondence UI with your custom portal
 uuid: 4ae9c5fb-bb9d-46d8-be84-455f386ab443
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: 8b1bbd85-66ba-4e96-917a-d768d84a417f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 78%
+source-wordcount: '478'
+ht-degree: 77%
 
 ---
 
@@ -44,11 +44,11 @@ Si le nom du modèle de lettre est à portée de main sur le portail, l’URL pe
 >
 >Avant d’appeler l’application de création de correspondance, enregistrez et chargez les données d’appel de l’interface utilisateur de création de correspondance au niveau de l’URL de données requise. Cette opération peut être réalisée à partir du portail personnalisé ou à l’aide d’un autre processus différent d’arrière-plan.
 
-## Appel inséré basé sur les données  {#inline-data-based-invocation}
+## Appel inséré basé sur les données {#inline-data-based-invocation}
 
-Un autre moyen (plus sécurisé) d’appeler l’application de création de correspondance consiste à accéder simplement à l’URL à l’adresse `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, tout en envoyant les paramètres et les données pour appeler l’application de création de correspondance en tant que demande de POST (en les masquant à l’utilisateur final). En outre, vous pouvez désormais transmettre les données XML à l’application de création de correspondance en mode POST (dans le cadre de la même demande à l’aide du paramètre cmData), ce qui n’était pas possible (ou idéal) dans l’approche précédente.
+Un autre moyen (plus sécurisé) d’appeler l’application de création de correspondance consiste à simplement accéder à l’URL à l’adresse `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, lors de l’envoi des paramètres et des données pour appeler l’application de création de correspondance en tant que demande de POST (en les masquant à l’utilisateur final). En outre, vous pouvez désormais transmettre les données XML à l’application de création de correspondance en mode POST (dans le cadre de la même demande à l’aide du paramètre cmData), ce qui n’était pas possible (ou idéal) dans l’approche précédente.
 
-### Paramètres de définition de lettre  {#parameters-for-specifying-letter}
+### Paramètres de définition de lettre {#parameters-for-specifying-letter}
 
 <table> 
  <tbody>
@@ -77,7 +77,7 @@ Un autre moyen (plus sécurisé) d’appeler l’application de création de cor
 
 L’ordre des paramètres du tableau indique la préférence de paramètres utilisés pour le chargement de la lettre.
 
-### Paramètres de définition de la source de données XML  {#parameters-for-specifying-the-xml-data-source}
+### Paramètres de définition de la source de données XML {#parameters-for-specifying-the-xml-data-source}
 
 <table> 
  <tbody>

@@ -1,5 +1,5 @@
 ---
-title: Consoles Outils
+title: 'Consoles Outils '
 description: Découvrez les différentes consoles d’outils dans Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 ---
 
-# Consoles Outils{#tools-consoles}
+# Consoles Outils {#tools-consoles}
 
 Les consoles **Outils** permettent d’accéder à différents outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. Pour le moment, il existe deux versions de la console **Outils** selon l’interface utilisateur que vous utilisez :
 
@@ -57,7 +57,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   <tr> 
    <td>Gestion des actifs numériques : outil de vérification d’état<br /> </td> 
    <td> </td> 
-   <td>Compare <code>/var/dam</code> et <code>/content/dam</code> et recherche toutes les incohérences <br />. Les fichiers/dossiers répertoriés peuvent alors être synchronisés ou supprimés. Les types de nœuds pour la comparaison de dossiers peuvent être configurés dans la console web.</td> 
+   <td>Comparaisons <code>/var/dam</code> et <code>/content/dam</code> et vérifie<br /> incohérences. Les fichiers/dossiers répertoriés peuvent alors être synchronisés ou supprimés. Les types de nœuds pour la comparaison de dossiers peuvent être configurés dans la console web.</td> 
   </tr> 
   <tr> 
    <td>Gestion des actifs numériques : Adobe InDesign<br /> </td> 
@@ -150,7 +150,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Permet de configurer les messages électroniques que les utilisateurs reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et pour confirmer qu’un mot de passe a été réinitialisé.</td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentation </a></td> 
+   <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentation</a></td> 
    <td> </td> 
    <td>Les intérêts et objectifs des visiteurs qui se rendent sur un site sont variés. La compréhension de ces objectifs et la satisfaction de ces attentes constituent un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en caractérisant les détails d’un visiteur.<br /> </td> 
   </tr> 
@@ -202,7 +202,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <th>Objectif</th> 
   </tr> 
   <tr> 
-   <td>Création  </td> 
+   <td>Création</td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -243,7 +243,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">Cloud Services</a></td> 
+   <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">Services cloud</a></td> 
    <td>Connectez-vous à Adobe Marketing Cloud.</td> 
   </tr> 
   <tr> 

@@ -13,7 +13,7 @@ exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
 source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
 workflow-type: tm+mt
 source-wordcount: '1789'
-ht-degree: 86%
+ht-degree: 89%
 
 ---
 
@@ -92,7 +92,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et/ou plus explicite.
 
-   Par exemple, si l’URL Vanity est définie sur w `elcome`sur la page identifiée par le chemin / `v1.0/startpage`pour le site web h `ttp://example.com,` alors h `ttp://example.com/welcome`serait l’URL Vanity de h `ttp://example.com/content/v1.0/startpage`
+   Par exemple, si l’URL Vanity est définie sur w `elcome`à la page identifiée par le chemin / `v1.0/startpage`pour le site web h `ttp://example.com,` puis h `ttp://example.com/welcome`serait l’URL Vanity de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -124,9 +124,9 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Indique un alias à utiliser avec cette page.
 
-   * Par exemple, si vous définissez un alias `private` pour la page `/content/wknd/us/en/magazine/members-only`, cette page est également accessible via `/content/wknd/us/en/magazine/private`.
-   * La création d’un alias définit la propriété `sling:alias` sur le noeud de page, ce qui affecte uniquement la ressource, et non le chemin du référentiel.
-   * Les pages accessibles par alias dans l&#39;éditeur ne peuvent pas être publiées. [Les ](/help/sites-authoring/publishing-pages.md) options de publication dans l’éditeur ne sont disponibles que pour les pages accessibles à partir de leur chemin d’accès réel.
+   * Par exemple, si vous définissez un alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, cette page est également accessible via `/content/wknd/us/en/magazine/private`.
+   * La création d’un alias permet de définir la propriété `sling:alias` sur le nœud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
+   * Les pages accessibles par alias dans l’éditeur ne peuvent pas être publiées. Les [options de publication](/help/sites-authoring/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
    * Pour plus d’informations, voir [Noms de page localisés sous Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **Modèles autorisés**
@@ -141,7 +141,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    >[!CAUTION]
    >
-   >L’onglet **[Autorisations](/help/sites-authoring/editing-page-properties.md#permissions)** permet de modifier les configurations de CUG en fonction de la présence du mixin `granite:AuthenticationRequired`. Si les autorisations de page sont configurées à l’aide de configurations de CUG obsolètes, basées sur la présence de la propriété cq:cugEnabled , un message d’avertissement s’affiche sous **Exigence d’authentification** et l’option ne sera pas modifiable, pas plus que les [autorisations](/help/sites-authoring/editing-page-properties.md#permissions) ne le seront.
+   >Le **[Autorisations](/help/sites-authoring/editing-page-properties.md#permissions)** permet de modifier les configurations des groupes d’utilisateurs fermés en fonction de la présence de la variable `granite:AuthenticationRequired` mixin. Si les autorisations de page sont configurées à l’aide de configurations CUG obsolètes, basées sur la présence de la propriété cq:cugEnabled , un message d’avertissement s’affiche sous **Exigence d’authentification** et l’option ne sera pas modifiable, pas plus que la variable [Autorisations](/help/sites-authoring/editing-page-properties.md#permissions) être modifiable.
    >
    >
    >Le cas échéant, les autorisations des groupes d’utilisateurs fermés doivent être modifiées dans l’[IU classique](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -179,7 +179,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    * **Variation de fragment d’expérience préférée**
 Définit la variation de fragment d’expérience utilisée pour générer les métadonnées de la page.
 
-### Cloud Services {#cloud-services}
+### Services cloud {#cloud-services}
 
 * **Cloud Services**
 
@@ -203,14 +203,14 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
 
    >[!CAUTION]
    >
-   >L’onglet **Autorisations** permet de modifier les configurations de CUG en fonction de la présence du mixin `granite:AuthenticationRequired`. Si les autorisations de page sont configurées à l’aide de configurations des groupes d’utilisateurs fermés obsolètes, basées sur la présence de la propriété `cq:cugEnabled`, un message d’avertissement s’affiche et les autorisations des groupes d’utilisateurs fermés ne sont pas modifiables, non plus que l’option Exigence d’authentification de l’onglet [Avancé](/help/sites-authoring/editing-page-properties.md#advanced).
+   >Le **Autorisations** permet de modifier les configurations des groupes d’utilisateurs fermés en fonction de la présence de la variable `granite:AuthenticationRequired` mixin. Si les autorisations de page sont configurées à l’aide de configurations des groupes d’utilisateurs fermés obsolètes, basées sur la présence de la propriété `cq:cugEnabled`, un message d’avertissement s’affiche et les autorisations des groupes d’utilisateurs fermés ne sont pas modifiables, non plus que l’option Exigence d’authentification de l’onglet [Avancé](/help/sites-authoring/editing-page-properties.md#advanced).
    >
    >
    >Le cas échéant, les autorisations des groupes d’utilisateurs fermés doivent être modifiées dans l’[IU classique](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >L’onglet Autorisation ne permet pas la création de groupes d’utilisateurs fermés vides, ce qui peut être utile pour refuser l’accès à tous les utilisateurs de façon simple. Pour ce faire, vous devez utiliser l’explorateur CRX. Pour plus d’informations, consultez le document [Administration des droits d’accès, des groupes et des utilisateurs](/help/sites-administering/user-group-ac-admin.md) .
+   >L’onglet Autorisation ne permet pas la création de groupes d’utilisateurs fermés vides, ce qui peut être utile pour refuser l’accès à tous les utilisateurs de façon simple. Pour ce faire, vous devez utiliser l’explorateur CRX. Voir le document [Administration des utilisateurs, des groupes et des droits d’accès](/help/sites-administering/user-group-ac-admin.md) pour plus d’informations.
 
 ### Blueprint {#blueprint}
 
@@ -271,7 +271,7 @@ Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour d
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Sélectionnez **Ouvrir les propriétés** et une boîte de dialogue s’ouvre pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
+1. Sélectionner **Ouvrir les propriétés** et une boîte de dialogue s’ouvre pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
 
    * **Annuler**
    * **Enregistrer et fermer**
@@ -295,7 +295,7 @@ Vous pouvez sélectionner plusieurs pages en vue d’une modification en masse d
 
 ![screen_shot_2018-03-22at100039](assets/screen_shot_2018-03-22at100039.png)
 
-Après avoir sélectionné les pages, puis cliqué ou appuyé sur l’option **Propriétés**, les propriétés en bloc s’affichent :
+Après avoir sélectionné les pages, puis cliqué ou appuyé sur l’icône **Propriétés** , les propriétés en bloc s’affichent :
 
 ![screen_shot_2018-03-22at100114](assets/screen_shot_2018-03-22at100114.png)
 

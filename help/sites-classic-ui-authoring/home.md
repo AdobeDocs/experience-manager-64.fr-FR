@@ -1,12 +1,12 @@
 ---
 title: Guide de l’utilisateur pour la création dans AEM 6.4 Classic UI
-seo-title: Guide de l’utilisateur pour la création dans AEM 6.4 Classic UI
+seo-title: AEM 6.4 Classic UI Authoring User Guide
 description: 'Ce guide couvre les concepts de création dans AEM dans l’interface utilisateur classique. '
-seo-description: 'Il aborde les concepts de création dans AEM IU classique. '
+seo-description: Covers the concepts of authoring in AEM in the classic UI.
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 34%
+source-wordcount: '347'
+ht-degree: 37%
 
 ---
 

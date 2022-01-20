@@ -1,8 +1,8 @@
 ---
 title: Procédure de mise à niveau
-seo-title: Procédure de mise à niveau
+seo-title: Upgrade Procedure
 description: 'Découvrez la procédure à suivre pour mettre à niveau AEM. '
-seo-description: 'Découvrez la procédure à suivre pour mettre à niveau AEM. '
+seo-description: Learn about the procedure you need to follow in order to upgrade AEM.
 uuid: 56fb6af7-6e5f-4288-822b-f40c4605a28b
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -10,11 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
-feature: Mise à niveau
+feature: Upgrading
 exl-id: e6092e80-3a39-4fde-8a94-084eee5fa8a9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '820'
 ht-degree: 97%
 
 ---
@@ -44,7 +44,7 @@ La topologie utilisée pour cette section se compose d’un serveur s’exécuta
 1. Désactivez les agents de réplication sur l’auteur
 1. Exécutez les [tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
 
-### Exécution de la mise à niveau  {#upgrade-execution-1}
+### Exécution de la mise à niveau {#upgrade-execution-1}
 
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
@@ -120,7 +120,7 @@ La topologie utilisée pour cette section se compose d’un groupe d’auteurs M
 1. Démarrez les instances d’auteur secondaires
 1. Nettoyez les instances d’auteur, le nœud Mongo et l’entrepôt de données mis à niveau.
 
-## Ferme de publication TarMK  {#tarmk-publish-farm}
+## Ferme de publication TarMK {#tarmk-publish-farm}
 
 ### Ferme de publication TarMK {#publish-farm}
 

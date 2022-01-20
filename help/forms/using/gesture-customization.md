@@ -1,8 +1,8 @@
 ---
 title: Personnalisation de mouvement
-seo-title: Personnalisation de mouvement
+seo-title: Gesture customization
 description: Personnaliser les mouvements sur votre application AEM Forms
-seo-description: Personnaliser les mouvements sur votre application AEM Forms
+seo-description: Customize the gestures on your AEM Forms app
 uuid: 117e0e21-66bd-42f1-879c-6c1443991974
 contentOwner: robhagat
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 238410e0-1623-49dc-b2fc-b5b2d5fb362b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 44%
+source-wordcount: '296'
+ht-degree: 42%
 
 ---
 
@@ -27,27 +27,27 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
 
 1. Ouvrez votre projet.
 
-   * Pour iOS, ouvrez `Capture.xcodeproj` dans Xcode.
+   * Pour iOS, ouvrez `Capture.xcodeproj` dans Xcode
    * Pour Android, ouvrez le projet Android dans Eclipse.
    * Pour Windows, ouvrez `MWSWindows.sln` dans Visual Studio.
 
-1. Accédez au dossier views et ouvrez le fichier `task.js` en vue de le modifier.
+1. Accédez au dossier des vues et ouvrez le `task.js` pour modification.
 
-   * Dans Xcode, accédez au dossier **Capture > www > wsmobile > js > runtime > views** .
-   * Dans Eclipse, accédez au dossier **assets > www > wsmobile > js > runtime > views** .
-   * Dans Visual Studio, accédez au dossier **MWSWindows > www > wsmobile > js > runtime > views** .
+   * Dans Xcode, accédez au **Capture > www > wsmobile > js > runtime > vues** dossier.
+   * Dans Eclipse, accédez au **ressources > www > wsmobile > js > runtime > vues** dossier.
+   * Dans Visual Studio, accédez au **MWSWindows > www > wsmobile > js > runtime > views** dossier.
 
    >[!NOTE]
    >
    >Le fichier task.js contient la vue Backbone associée à chaque tâche ou point de départ, tel que répertorié dans les listes de tâches ou de points de départ.
 
-1. Dans le fichier `task.js`, recherchez la propriété events de la vue.
+1. Dans le `task.js` , recherchez la propriété events de la vue.
 
    La propriété events est une map avec chaque entrée au format :
 
    `"EventName Selector": "Function"`
 
-   Lorsque vous déclenchez un événement JavaScript nommé `EventName`sur un élément HTML spécifié par `Selector`, `Function`est appelé.
+   Lorsque vous déclenchez un événement JavaScript nommé `EventName`sur un élément de HTML spécifié par `Selector`, la variable `Function`est appelée.
 
 1. Rechercher
 

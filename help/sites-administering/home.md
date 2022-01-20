@@ -1,21 +1,21 @@
 ---
 title: Guide de l’utilisateur pour l’administration dans AEM 6.4
-seo-title: Guide de l’utilisateur pour l’administration dans AEM 6.4
+seo-title: AEM 6.4 Administering User Guide
 description: AEM administrer
-seo-description: AEM administrer
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+seo-description: AEM administering
+exl-id: 74ffdd0a-681c-498e-a4a4-5ab88fd4f58f
+source-git-commit: 657bb7df01a7b8e03d39c3bda868d87253b81b2a
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 42%
+source-wordcount: '323'
+ht-degree: 43%
 
 ---
-
 
 # Guide de l’utilisateur pour l’administration dans AEM 6.4
 
 Ce guide couvre toutes les tâches d’administration AEM.
 
-## Articles relatifs à  essentiels
+## Articles essentiels relatifs à  
 
 * [Prise en main d’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=fr)
 * [Notes de mise à jour d’AEM 6.4](/help/release-notes/home.md)

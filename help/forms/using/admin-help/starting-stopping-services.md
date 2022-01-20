@@ -1,8 +1,8 @@
 ---
 title: Démarrage et arrêt des services
-seo-title: Démarrage et arrêt des services
+seo-title: Starting and stopping services
 description: Découvrez comment démarrer et arrêter des services associés aux modules AEM Forms et au serveur d’applications et à la base de données.
-seo-description: Découvrez comment démarrer et arrêter des services associés aux modules AEM Forms et au serveur d’applications et à la base de données.
+seo-description: Learn how to start and stop services associated with AEM Forms modules and the application server and database.
 uuid: 8c831cb2-4165-4118-8a09-764cec4e5e05
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
 exl-id: 6e0607d6-171c-4119-95a1-373b30fb63c1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 82%
+source-wordcount: '265'
+ht-degree: 81%
 
 ---
 
@@ -31,14 +31,14 @@ Les modules AEM forms (par exemple, Forms, Rights Management et Output) fonction
 1. Dans Administration Console, cliquez sur **Services** > **Applications et services** > **Gestion des services**.
 1. Dans la page Gestion des services, cochez la case en regard du service à arrêter ou démarrer et cliquez sur Arrêter ou Démarrer.
 
-## Démarrage ou arrêt des services pour le serveur d’applications et la base de données  {#start-or-stop-services-for-the-application-server-and-database}
+## Démarrage ou arrêt des services pour le serveur d’applications et la base de données {#start-or-stop-services-for-the-application-server-and-database}
 
 Une implémentation complète d’AEM forms comprend des services de serveur d’applications et de base de données :
 
 * *`[application server]`* pour les formulaires AEM
 * *`[database]`* pour les formulaires AEM
 
-Sous Windows, ces services sont accessibles via **Outils d’administration** > **Panneau Services**. Par exemple, si vous avez installé AEM forms sur JBoss à l’aide de la méthode clé en main, les services suivants sont disponibles :
+Sous Windows, ces services sont accessibles par le biais du **Outils d’administration** > **Panneau Services**. Par exemple, si vous avez installé AEM forms sur JBoss à l’aide de la méthode clé en main, les services suivants sont disponibles :
 
 * JBoss pour Adobe Experience Manager forms
 * MySQL pour Adobe Experience Manager forms

@@ -1,8 +1,8 @@
 ---
 title: Manipulation de base
-seo-title: Manipulation de base
+seo-title: Basic Handling
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
-seo-description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
+seo-description: Get comfortable with navigating AEM and its basic usage
 uuid: 12958209-6a49-41ad-8a8e-b112503d26b1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 exl-id: 9abef452-b435-4419-895c-083cae6cd7d2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2764'
+source-wordcount: '2753'
 ht-degree: 94%
 
 ---
@@ -22,13 +22,11 @@ ht-degree: 94%
 >[!NOTE]
 >
 >* Cette page donne un aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il utilise la console **Sites** comme base.
-   >
-   >
-* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et des fonctionnalités supplémentaires peuvent être disponibles dans certaines consoles. Vous trouverez des informations spécifiques plus détaillées sur les consoles individuelles et leurs fonctions sur d’autres pages.
+>
+>* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et des fonctionnalités supplémentaires peuvent être disponibles dans certaines consoles. Vous trouverez des informations spécifiques plus détaillées sur les consoles individuelles et leurs fonctions sur d’autres pages.
 >* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-authoring/keyboard-shortcuts.md) et de la [modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
 >
-
 
 
 ## Prise en main {#getting-started}
@@ -53,7 +51,7 @@ La première fois que vous accédez à une console, un didacticiel de navigation
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
-Cliquez ou appuyez sur **Compris !** pour passer à la page suivante de la présentation. Cliquez ou appuyez sur **Fermer** ou cliquez ou appuyez en dehors de la boîte de dialogue de présentation pour fermer.
+Cliquez ou appuyez sur **Compris !** pour passer à la page suivante de la présentation. Cliquez ou appuyez sur **Fermer** ou cliquez ou appuyez en dehors de la boîte de dialogue de présentation pour la fermer.
 
 Si vous ne désélectionnez pas l’option **Ne plus afficher ce message**, la présentation redémarrera la prochaine fois que vous accéderez à la console.
 
@@ -71,7 +69,7 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **Navigation** : représenté par une boussole
+* **Navigation** : représenté par une boussole 
 * **Outils** : représenté par un marteau
 
 Les options disponibles dans ces panneaux sont décrites ci-dessous.
@@ -189,7 +187,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Cet élément est disponible en mode Liste uniquement. Voir [vue de liste](#list-view) pour plus d’informations.
+   Cet élément est disponible en mode Liste uniquement. Voir [mode liste](#list-view) pour plus d’informations.
 
 * Bouton **Créer**
 
@@ -205,7 +203,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![screen_shot_2018-03-23at104504](assets/screen_shot_2018-03-23at104504.png)
 
-## Accès à l’aide {#accessing-help}
+## Accès à l’Aide    {#accessing-help}
 
 Plusieurs ressources d’aide sont disponibles :
 
@@ -245,7 +243,7 @@ Ressources et téléchargements pour les développeurs.
    >Pour une présentation de tous les raccourcis clavier, reportez-vous à la documentation suivante :
    >
    >* [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   * [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
+   >* [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Barre d’outils d’actions {#actions-toolbar}
@@ -265,9 +263,10 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 ![screen_shot_2018-03-23at104827](assets/screen_shot_2018-03-23at104827.png)
 
 >[!NOTE]
-Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
+>
+>Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
-## Actions rapides  {#quick-actions}
+## Actions rapides {#quick-actions}
 
 Dans le [mode Carte](#quick-actions), certaines actions, en plus d’être disponibles dans la barre d’outils, le sont également sous la forme d’icônes d’actions rapides. Les icônes d’actions rapides sont disponibles pour un seul élément à la fois et évitent d’avoir à présélectionner l’action.
 
@@ -287,9 +286,10 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 * [Mode Liste](#list-view)
 
 >[!NOTE]
-Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
+>
+>Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
-### Sélection de ressources  {#selecting-resources}
+### Sélection de ressources {#selecting-resources}
 
 La sélection d’une ressource en particulier dépend de la combinaison du mode et de l’appareil :
 
@@ -317,13 +317,13 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
    <td>Mode Carte<br /> </td> 
    <td>
     <ul> 
-     <li>Bureau :<br /> pointez, puis utilisez l’action rapide en forme de coche.</li> 
+     <li>Bureau :<br /> Pointez dessus, puis utilisez l’action rapide en forme de coche.</li> 
      <li>Appareil mobile :<br /> maintenez la carte enfoncée</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li>Bureau :<br /> cliquez sur la carte</li> 
-     <li>Appareil mobile :<br /> Appuyez sur la carte</li> 
+     <li>Bureau :<br /> Cliquez sur la carte</li> 
+     <li>Appareil mobile :<br /> Appuyez sur la carte.</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -360,7 +360,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 1. Une fois que vous avez sélectionné une ressource, l’en-tête de premier niveau est couvert par la [barre d’outils Actions](#actions-toolbar), qui permet d’accéder aux actions actuellement applicables à la ressource sélectionnée.
 
-   Pour quitter le mode de sélection, sélectionnez le **X** en haut à droite.
+   Pour quitter le mode de sélection, sélectionnez **X** en haut à droite.
 
 ### Mode Colonnes {#column-view}
 
@@ -455,7 +455,8 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 * Modifiez l’ordre des éléments à l’aide de la barre verticale en pointillés tout à droite de chaque élément de la liste.
 
 >[!NOTE]
-La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
+>
+>La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
 
 ![screen_shot_2018-03-23at110113](assets/screen_shot_2018-03-23at110113.png)
 
@@ -480,7 +481,8 @@ Par exemple, dans la console Sites, vous pouvez sélectionner le contenu uniquem
 Si Contenu uniquement est sélectionné, alors seule l’icône de rail s’affiche. Si n’importe quelle autre option est sélectionnée, le nom des options apparaît en regard de l’icône de rail.
 
 >[!NOTE]
-Des [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
+>
+>Des [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
 
 ### Arborescence de contenu {#content-tree}
 
@@ -491,8 +493,10 @@ En utilisant le panneau latéral d’arborescence de contenu en même temps qu�
 ![screen_shot_2018-03-21at100858](assets/screen_shot_2018-03-21at100858.png)
 
 >[!NOTE]
-Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
-Voir les [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) pour plus d’informations.
+>
+>Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
+>
+>Voir les [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) pour plus d’informations.
 
 ### Chronologie {#timeline}
 
@@ -506,7 +510,7 @@ La colonne Chronologie permet d’effectuer les actions suivantes :
 
       * [Commentaires](#TimelineAddingandViewingComments)
       * Annotations
-      * Activités  
+      * Activités
       * [Lancements](/help/sites-authoring/launches.md)
       * [Versions](/help/sites-authoring/working-with-page-versions.md)
       * [Workflows](/help/sites-authoring/workflows-applying.md)
@@ -531,7 +535,7 @@ Ces fonctionnalités sont accessibles par le biais du chevron en regard du champ
 Les **références** affichent toutes les connexions avec la ressource sélectionnée. Dans la console **Sites**, par exemple, les [références](/help/sites-authoring/author-environment-tools.md#references) des pages affichent les informations suivantes :
 
 * [Lancements](/help/sites-authoring/launches.md#launches-in-references-sites-console)
-* [Live copies](/help/sites-administering/msm-livecopy-overview.md)
+* [Live Copies](/help/sites-administering/msm-livecopy-overview.md)
 * [Copies de langue](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Références de contenu (par exemple, contenu emprunté et/ou prêté par le composant Référence)
 

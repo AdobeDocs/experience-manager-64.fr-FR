@@ -8,7 +8,7 @@ exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
 source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 72%
+ht-degree: 73%
 
 ---
 
@@ -28,20 +28,20 @@ Pour importer des métadonnées en bloc, procédez comme suit :
 
 1. Accédez à l’IU Assets et appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Dans le menu, sélectionnez **[!UICONTROL Métadonnées]**.
-1. Sur la page **[!UICONTROL Importation de métadonnées]** , appuyez/cliquez sur **[!UICONTROL Sélectionner un fichier]**.  Sélectionnez le fichier CSV contenant les métadonnées.
+1. Sur le **[!UICONTROL Importation des métadonnées]** , appuyez/cliquez sur la page **[!UICONTROL Sélectionner un fichier]**.  Sélectionnez le fichier CSV contenant les métadonnées.
 1. Assurez-vous que le fichier CSV contient les paramètres suivants :
 
    | Paramètres d’importation des métadonnées | Description |
    |:---|:---|
    | [!UICONTROL Taille du lot] | Nombre de ressources dans un lot pour lesquelles les métadonnées doivent être importées. La valeur par défaut est 50. La valeur maximale est 100. |
    | [!UICONTROL Séparateur de champs] | La valeur par défaut est `,` - une virgule. Vous pouvez spécifier n’importe quel autre caractère. |
-   | [!UICONTROL Délimiteur à plusieurs valeurs] | Séparateur des valeurs de métadonnées. La valeur par défaut est `|` - une barre verticale. |
-   | [!UICONTROL Lancer les workflows] | Faux par défaut. Lorsque la valeur est définie sur true et que les paramètres par défaut sont en vigueur pour `DAM Metadata WriteBack Workflow` (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows a un impact sur les performances du système. |
+   | [!UICONTROL Délimiteur à plusieurs valeurs] | Séparateur des valeurs de métadonnées. La valeur par défaut est `|` - une pipe. |
+   | [!UICONTROL Lancer les workflows] | Faux par défaut. Lorsque la valeur est définie sur true et que les paramètres par défaut sont appliqués pour la variable `DAM Metadata WriteBack Workflow` (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows a un impact sur les performances du système. |
    | [!UICONTROL Nom de colonne du chemin d’accès à la ressource] | Définit le nom de la colonne du fichier CSV avec des ressources. |
 
 1. Appuyez/cliquez sur **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification est envoyée à votre boîte de réception de notifications. Accédez à la page de propriété des ressources et vérifiez que les valeurs des métadonnées sont correctement importées pour les ressources.
 
-Pour ajouter une date et un horodatage au cours de l’importation de métadonnées, utilisez le format de date et d’heure `YYYY-MM-DDThh:mm:ss.fff-00:00`. La date et l’heure sont séparées par `T`, `hh` correspond aux heures au format 24 heures, `fff` aux nanosecondes et `-00:00` au décalage du fuseau horaire. Par exemple, `2020-03-26T11:26:00.000-07:00` est le 26 mars 2020 à 11h:26:00.000 heure du Pacifique.
+Pour ajouter une date et un horodatage au cours de l’importation de métadonnées, utilisez le format de date et d’heure `YYYY-MM-DDThh:mm:ss.fff-00:00`. La date et l’heure sont séparées par `T`, `hh` correspond aux heures au format 24 heures, `fff` aux nanosecondes et `-00:00` au décalage du fuseau horaire. Par exemple, `2020-03-26T11:26:00.000-07:00` correspond au 26 mars 2020 à 11:26:00.000, heure du Pacifique.
 
 >[!CAUTION]
 >
@@ -56,18 +56,18 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées par lot
 * Test ou contrôle des métadonnées pour la conformité.
 * Externalisation des métadonnées pour une localisation distincte.
 
-Vous pouvez exporter des métadonnées pour plusieurs ressources au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, [!DNL Experience Manager] parcourt les propriétés du noeud de ressource `jcr:content/metadata` et de ses noeuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
+Vous pouvez exporter des métadonnées pour plusieurs ressources au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, procédez comme suit : [!DNL Experience Manager] parcourt les propriétés du noeud de ressource `jcr:content/metadata` et ses noeuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
 
 Pour exporter des métadonnées de plusieurs ressources en bloc, procédez comme suit :
 
 1. Sélectionnez le dossier de ressources pour lequel vous souhaitez exporter des métadonnées. Dans la barre d’outils, sélectionnez **[!UICONTROL Exporter les métadonnées]**.
 
-1. Dans la boîte de dialogue [!UICONTROL Exportation des métadonnées], indiquez un nom pour le fichier CSV. Pour exporter des métadonnées des ressources dans les sous-dossiers, sélectionnez **[!UICONTROL Inclure les ressources dans les sous-dossiers]**.
+1. Dans le [!UICONTROL Exportation des métadonnées] spécifiez un nom pour le fichier CSV. Pour exporter des métadonnées des ressources dans les sous-dossiers, sélectionnez **[!UICONTROL Inclure les ressources dans les sous-dossiers]**.
 
    ![export_metadata_page](assets/export_metadata_page.png)
 
 1. Sélectionnez les options souhaitées. Indiquez un nom de fichier et, si nécessaire, une date.
-1. Dans la section **[!UICONTROL Propriétés à exporter]**, indiquez si vous souhaitez exporter toutes les propriétés ou des propriétés spécifiques. Si vous choisissez des propriétés **[!UICONTROL sélectives]** à exporter, ajoutez les propriétés souhaitées.
+1. Dans le **[!UICONTROL Propriétés à exporter]**, indiquez si vous souhaitez exporter toutes les propriétés ou des propriétés spécifiques. Si vous choisissez **[!UICONTROL Selective]** propriétés à exporter, ajoutez les propriétés souhaitées.
 
 1. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Exporter]**. Un message confirme que les métadonnées ont été exportées. Fermez le message.
 

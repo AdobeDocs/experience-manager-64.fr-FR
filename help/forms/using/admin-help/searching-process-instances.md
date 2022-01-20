@@ -1,8 +1,8 @@
 ---
 title: Recherche d’instances de processus
-seo-title: Recherche d’instances de processus
+seo-title: Searching for process instances
 description: Utilisez la page Recherche de processus pour entrer les critères de recherche qui vous permettront de trouver une instance de processus.
-seo-description: Utilisez la page Recherche de processus pour entrer les critères de recherche qui vous permettront de trouver une instance de processus.
+seo-description: Use the Process Search page to enter search criteria for finding a process instance.
 uuid: 4a9c5b05-add5-4278-9c6f-d1928b6860d2
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 exl-id: 25a01630-47ec-4823-ad11-9a636697f3dc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 98%
+source-wordcount: '449'
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ Pour effectuer une recherche générale, vous entrez des critères de base. Si v
 
 1. Cliquez sur Rechercher. La page Instance du processus s’affiche, répertoriant les instances trouvées.
 
-## Exécution d’une recherche de processus détaillée  {#perform-a-detailed-search-for-a-process}
+## Exécution d’une recherche de processus détaillée {#perform-a-detailed-search-for-a-process}
 
 Vous pouvez entrer des attributs spécifiques pour effectuer une recherche détaillée. Une recherche détaillée est plus appropriée si les instances de processus en cours d’exécution sont nombreuses et que vous souhaitez limiter le nombre d’instances trouvées en utilisant des critères de recherche.
 

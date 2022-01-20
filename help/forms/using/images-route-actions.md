@@ -1,8 +1,8 @@
 ---
 title: Personnalisation des images utilisées dans les actions d’itinéraire
-seo-title: Personnalisation des images utilisées dans les actions d’itinéraire
+seo-title: Customize images used in route actions
 description: Comment personnaliser les images utilisées dans les actions d’itinéraire dans l’espace de travail LiveCycle AEM Forms.
-seo-description: Comment personnaliser les images utilisées dans les actions d’itinéraire dans l’espace de travail LiveCycle AEM Forms.
+seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 exl-id: 7b1f60e7-c8fa-43b6-bef4-88b42e7bbc36
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 51%
+source-wordcount: '308'
+ht-degree: 49%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 51%
 
 Pour personnaliser les images utilisées dans les actions d’itinéraire, suivez les étapes décrites dans [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md), puis la procédure décrite dans cet article.
 
-## Images pour les actions d’itinéraire  {#images-for-route-actions}
+## Images pour les actions d’itinéraire {#images-for-route-actions}
 
 1. Ajoutez les styles définissant les images dans le CSS à l’emplacement suivant pour les nouvelles actions d’itinéraire :
 
    `/apps/ws/css/newStyle.css`
 
-   Par exemple : Ajoutez un nouveau style appelé `myStyle1`comme illustré ci-dessous et téléchargez le fichier image `myStyleIcon1.png` dans le dossier `/apps/ws/image`s à l’aide d’un client WebDAV.
+   Par exemple : Ajoutez un nouveau style appelé `myStyle1`comme illustré ci-dessous et téléchargez le fichier image `myStyleIcon1.png` au `/apps/ws/image`dossier s à l’aide d’un client WebDAV.
 
    >[!NOTE]
    >
@@ -44,13 +44,13 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
        }
    ```
 
-## Menu déroulant de l’action de tâche Liste de tâches  {#task-list-task-action-popup}
+## Menu déroulant de l’action de tâche Liste de tâches {#task-list-task-action-popup}
 
 1. Créez un menu déroulant d’actions de liste de tâches, voir [Création du code de l’espace de travail AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Vous devez utiliser le paquet de développement.
 
 1. Copiez `/libs/ws/js/runtime/templates/task.html` dans `/apps/ws/js/runtime/templates/task.html`.
 
-1. Si le nom du style CSS est identique au nom de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/task.html` :
+1. Si le nom du style CSS est identique au nom de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/task.html`:
 
    ```
    <%if(routeList == null){%>
@@ -120,7 +120,7 @@ To
 
 1. Copiez `/libs/ws/js/runtime/templates/taskdetails.html` dans `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. Si le nom du style CSS est identique au nom de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/taskdetails.html` :
+1. Si le nom du style CSS est identique au nom de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/taskdetails.html`:
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -168,7 +168,7 @@ To
                <%}%>
    ```
 
-1. Ouvrez `/apps/ws/js/registry.js` pour le modifier et recherchez le texte suivant :\
+1. Ouvrir `/apps/ws/js/registry.js` pour modifier et rechercher le texte suivant :\
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. Remplacez le texte par ce qui suit :\

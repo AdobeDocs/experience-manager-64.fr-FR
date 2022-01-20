@@ -1,8 +1,8 @@
 ---
 title: Adobe Classifications
-seo-title: Adobe des classifications
+seo-title: Adobe Classifications
 description: Découvrez Adobe Classifications.
-seo-description: Découvrez Adobe Classifications.
+seo-description: Learn about Adobe Classifications.
 uuid: 57fb59f4-da90-4fe7-a5b1-c3bd51159a16
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,14 +12,14 @@ discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 exl-id: 25e58c68-5c67-4894-9a54-1717d90d7831
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '573'
 ht-degree: 71%
 
 ---
 
-# Classifications Adobe{#adobe-classifications}
+# Adobe des classifications{#adobe-classifications}
 
-Adobe Classifications exporte les données de classification vers [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de manière planifiée. L’exportateur est une implémentation de **com.adobe.cq.scheduled.exporter.Exporter**.
+Adobe Classifications exporte les données de classification vers [Adobe Analytics](/help/sites-administering/adobeanalytics.md) selon un calendrier précis. L’exportateur est une implémentation de **com.adobe.cq.scheduled.exporter.Exporter**.
 
 Pour configurer cela :
 
@@ -57,7 +57,7 @@ Une page peut avoir une taille maximale de 25 000 par définition dans les class
 
 Pour modifier la taille de page :
 
-1. Accédez à la console OSGI à l’adresse **https://&lt;host>:&lt;port>/system/console/configMgr** et sélectionnez **Adobe de l’exportateur de classifications AEM**.
+1. Accédez à la console OSGI à l’adresse **https://&lt;host>:&lt;port>/system/console/configMgr** et sélectionnez **Adobe AEM l’exportateur de classifications**.
 
    ![aa-26](assets/aa-26.png)
 
@@ -69,7 +69,7 @@ Pour modifier la taille de page :
 >
 >Auparavant, Adobe Classifications était appelé exportateur SAINT.
 
-Un exportateur peut utiliser un transformateur pour transformer les données d’exportation vers un format spécifique. Pour les classifications d’Adobe, une sous-interface `SAINTTransformer<String[]>` mettant en oeuvre l’interface de transformateur a été fournie. Cette interface permet de limiter le type de données à `String[]` utilisé par l’API SAINT et de disposer d’une interface de marquage pour trouver ces services à sélectionner.
+Un exportateur peut utiliser un transformateur pour transformer les données d’exportation vers un format spécifique. Pour les classifications d’Adobe, une sous-interface `SAINTTransformer<String[]>` La mise en oeuvre de l’interface de Transformer a été fournie. Cette interface permet de limiter le type de données à `String[]` qui est utilisé par l’API SAINT et pour disposer d’une interface de marquage afin de trouver ces services à sélectionner.
 
 Dans l’implémentation par défaut SAINTDefaultTransformer, les ressources enfants de la source de l’exportateur sont traitées comme des enregistrements avec des noms de propriété comme clés et des valeurs de propriété comme valeurs. La colonne **Clé** est automatiquement ajoutée en tant que première colonne ; sa valeur est le nom du nœud. Les propriétés d’espace de noms (contenant :) ne sont pas prises en compte.
 
@@ -134,6 +134,6 @@ Les propriétés sont par exemple les suivantes :
  </tbody> 
 </table>
 
-## Automatisation de l’exportation d’Adobe Classifications  {#automating-adobe-classifications-export}
+## Automatisation de l’exportation d’Adobe Classifications {#automating-adobe-classifications-export}
 
 Vous pouvez créer votre propre workflow, de sorte que toutes les nouvelles importations le lancent afin de créer les données appropriées et structurées dans **/var/export/** pour qu’elles puissent être exportées dans Adobe Classifications.

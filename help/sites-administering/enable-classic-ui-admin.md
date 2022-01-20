@@ -1,8 +1,8 @@
 ---
 title: Consoles d’administration
-seo-title: Consoles d’administration
+seo-title: Admin Consoles
 description: Comment utiliser les consoles d’administration disponibles dans AEM.
-seo-description: Comment utiliser les consoles d’administration disponibles dans AEM.
+seo-description: Lear how to use the Admin Consoles available in AEM.
 uuid: 701dc57c-f7b4-421e-a847-577ae2585e80
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 98ba3093-1edb-4891-abbe-47cf6e4f1feb
 exl-id: f3c03562-aaeb-4d43-aee1-d92d661ee329
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 72%
+source-wordcount: '227'
+ht-degree: 70%
 
 ---
 
@@ -23,7 +23,7 @@ Par défaut, la possibilité de basculer vers l’IU classique via les consoles 
 
 ![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
-Chaque console disposant d’une version d’IU classique dans `/libs/cq/core/content/nav` peut être réactivée individuellement afin que l’option **IU classique** s’affiche une fois de plus sur l’icône de console lorsqu’elle est pointée sur celle-ci.
+Chaque console disposant d’une version d’interface utilisateur classique dans `/libs/cq/core/content/nav` peut être réactivé individuellement de sorte que la variable **IU classique** s’affiche une fois de plus sur l’icône de la console lorsqu’elle est pointée.
 
 Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
@@ -39,7 +39,7 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    `/libs/cq/core/content/nav/sites`
 
-1. Créez une superposition à l’aide de l’option **Noeud de recouvrement** ; par exemple :
+1. Créez une superposition à l’aide de la fonction **Noeud de recouvrement** option; par exemple :
 
    * **Chemin**: `/apps/cq/core/content/nav/sites`
    * **Emplacement du recouvrement**: `/apps/`

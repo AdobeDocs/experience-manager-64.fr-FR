@@ -2,7 +2,7 @@
 title: ContextHub
 seo-title: ContextHub
 description: ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles
-seo-description: ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles
+seo-description: ContextHub is a framework for storing, manipulating, and presenting context data
 uuid: 14e6ff4f-ffbe-454a-b2ec-a35333526e27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 exl-id: 0a6b815a-5055-4c44-96d1-ff238b4285f3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '286'
 ht-degree: 86%
 
 ---
@@ -27,7 +27,7 @@ ContextHub est une structure pour stocker, manipuler et présenter des données 
 
 >[!CAUTION]
 >
->Le chemin contenant l’exemple de configuration ContextHub utilisé par l’[implémentation de référence We.Retail](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) ne doit être utilisé que comme référence pour créer votre propre configuration.
+>Chemin d’accès contenant l’exemple de configuration ContextHub utilisé par la variable [Implémentation de référence We.Retail](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) ne doit être utilisé que comme référence pour créer votre propre configuration.
 >
 >Il ne doit pas être utilisé dans un projet comme votre propre configuration ContextHub.
 
@@ -42,7 +42,7 @@ Chaque magasin ContextHub est une instance d’un type de magasin prédéfini :
 * Les développeurs peuvent [créer des types de magasin personnalisés](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Les développeurs peuvent [accéder aux données du magasin](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via Javascript.
 
-## Segmentation  {#segmentation}
+## Segmentation {#segmentation}
 
 ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API Javascript pour [déterminer les segments résolus](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments).
 

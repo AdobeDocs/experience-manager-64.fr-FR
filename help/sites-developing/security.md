@@ -1,8 +1,8 @@
 ---
 title: Sécurité
-seo-title: Sécurité
+seo-title: Security
 description: La sécurité des applications débute lors de la phase de développement.
-seo-description: La sécurité des applications débute lors de la phase de développement.
+seo-description: Application Security starts during the development phase
 uuid: efd5f3bc-da07-4fc8-a6ce-f1e6f5084c9e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 exl-id: 22c48f8c-38df-4c9b-88cf-67f6ae46e7e1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 76%
+source-wordcount: '426'
+ht-degree: 75%
 
 ---
 
@@ -41,7 +41,7 @@ Il est important que vous adaptiez cette configuration à vos besoins en matièr
 >
 >Il est vivement conseillé de toujours accéder à l’API de protection XSS en utilisant l’interface [XSSAPI fournie par AEM](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
-En outre, un pare-feu d’application web, tel que [mod_security pour Apache](https://www.modsecurity.org), peut fournir un contrôle central fiable sur la sécurité de l’environnement de déploiement et se protéger contre les attaques de script intersite qui n’avaient pas été détectées auparavant.
+En outre, un pare-feu d’application web, tel que [mod_security pour Apache](https://www.modsecurity.org), peut fournir un contrôle central et fiable sur la sécurité de l’environnement de déploiement et se protéger contre les attaques de script intersite qui n’avaient pas été détectées auparavant.
 
 ## Accès aux informations de service cloud {#access-to-cloud-service-information}
 

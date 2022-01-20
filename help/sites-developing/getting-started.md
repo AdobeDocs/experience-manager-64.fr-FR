@@ -1,8 +1,8 @@
 ---
 title: Prise en main du développement d’AEM Sites – Tutoriel WKND
-seo-title: Prise en main du développement d’AEM Sites – Tutoriel WKND
+seo-title: Getting Started Developing AEM Sites - WKND Tutorial
 description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
-seo-description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
+seo-description: New to developing AEM? Need a refresher on best practices? This is the place to start! The goal for this multi-part tutorial is to teach a developer who is new to AEM how to implement a website in AEM using the latest standards and technologies.
 uuid: 42db7bc5-5818-40e4-83b4-0cafc1acac42
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 54e48abc-be75-4477-83fa-bd74d5b995af
 exl-id: 82554eb8-34a0-4877-b92c-56ee662dda97
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 84%
+source-wordcount: '259'
+ht-degree: 81%
 
 ---
 
@@ -27,7 +27,7 @@ L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un dévelo
 
 ## Tutoriel du développeur WKND {#wknd-developer-tutorial}
 
-Le tutoriel est disponible [ici](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ou cliquez sur l’image ci-dessous.
+Le tutoriel est disponible [here](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ou cliquez sur l’image ci-dessous.
 
 [![image de clic](assets/screen_shot_2018-11-23at152453.png)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
@@ -45,4 +45,4 @@ Veuillez parcourir le tutoriel avant de vous plonger dans les concepts ci-dessus
 
 ## Étapes suivantes {#next-steps}
 
-Une fois que vous avez terminé le [tutoriel](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), envisagez de parcourir le document [AEM Concepts de base](/help/sites-developing/the-basics.md) afin de mieux comprendre certaines des technologies sous-jacentes et des paradigmes de développement d’AEM.
+Une fois que vous avez terminé la [tutoriel](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), envisagez de réviser le document. [Concepts de base d’AEM](/help/sites-developing/the-basics.md) pour mieux comprendre certaines des technologies sous-jacentes et des paradigmes de développement de l&#39;AEM.

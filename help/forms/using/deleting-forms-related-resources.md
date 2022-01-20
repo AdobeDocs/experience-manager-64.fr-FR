@@ -1,8 +1,8 @@
 ---
 title: Suppression des formulaires et des ressources associées
-seo-title: Suppression des formulaires et des ressources associées
+seo-title: Deleting forms and related resources
 description: Découvrez comment supprimer un formulaire ou une ressource dans AEM Forms et quel est l’impact de cette suppression sur les ressources et les formulaires XFA référencés et de référence.
-seo-description: Découvrez comment supprimer un formulaire ou une ressource dans AEM Forms et quel est l’impact de cette suppression sur les ressources et les formulaires XFA référencés et de référence.
+seo-description: How to delete a form or an asset in AEM Forms and the impact on referenced and referring assets and XFA forms.
 uuid: df522b87-59d8-4678-922d-c9aab82b1381
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ role: Admin
 exl-id: 94a66d83-b359-4be6-b668-4b4ba024b1e7
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 94%
+source-wordcount: '371'
+ht-degree: 93%
 
 ---
 

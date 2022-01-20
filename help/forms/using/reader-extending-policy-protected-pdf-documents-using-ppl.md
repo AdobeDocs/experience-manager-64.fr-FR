@@ -1,8 +1,8 @@
 ---
 title: Documents PDF protégés par une stratégie Reader Extension à l’aide de la bibliothèque de protection portable
-seo-title: Documents PDF protégés par une stratégie Reader Extension à l’aide de la bibliothèque de protection portable
+seo-title: Reader extending policy-protected PDF documents using Portable Protection Library
 description: 'Les extensions Reader permettent d’activer des fonctions interactives dans les documents Adobe PDF via Acrobat Reader. Vous pouvez utiliser la bibliothèque portable de protection (PPL) et étendre Reader aux document PDF protégés DRM. '
-seo-description: 'Les extensions Reader permettent d’activer des fonctions interactives dans les documents Adobe PDF via Acrobat Reader. Vous pouvez utiliser la bibliothèque portable de protection (PPL) et étendre Reader aux document PDF protégés DRM. '
+seo-description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents.
 uuid: 0da17641-d24c-43c2-b918-8b5abe1e5473
 contentOwner: khsingh
 content-type: reference
@@ -13,8 +13,8 @@ feature: Document Security
 exl-id: aa32050e-fe52-4823-b826-66ea06e1a6bf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 98%
+source-wordcount: '796'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ Vous pouvez exécuter les tâches ci-dessous à l’aide du service Reader Exten
 * Supprimer les droits d’utilisation d’un document PDF protégé par une stratégie.
 * Rechercher les droits d’utilisation appliqués à un document PDF protégé par une stratégie.
 
-### Appliquer les droits d’utilisation à un document PDF protégé par une stratégie de sécurité documentaire.{#apply-usage-rights-to-a-document-security-policy-protected-pdf-document}
+### Appliquer les droits d’utilisation à un document PDF protégé par une stratégie de sécurité documentaire. {#apply-usage-rights-to-a-document-security-policy-protected-pdf-document}
 
 Vous pouvez utiliser l’API Java `applyUsageRights` pour appliquer des droits d’utilisation aux documents PDF protégés par une stratégie. Les droits d’utilisation appartiennent à la fonctionnalité disponible par défaut dans Acrobat mais non dans Adobe Reader, telle que la capacité à ajouter des commentaires à un formulaire ou à remplir des champs de formulaire et enregistrer ce dernier. Les documents PDF dotés de droits d’utilisation sont appelés des documents dont les droits sont activés. Un utilisateur qui ouvre un document dont les droits sont activés dans Adobe Reader peut effectuer les opérations autorisées pour ce document spécifique.
 

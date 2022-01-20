@@ -1,17 +1,17 @@
 ---
 title: Association de réviseurs d’envoi à un formulaire
-seo-title: Association de réviseurs d’envoi à un formulaire
+seo-title: Associating submission reviewers with a form
 description: Apprenez à associer des réviseurs d’envoi à un formulaire dans AEM Forms. Les réviseurs associés examinent un formulaire envoyé via un portail de formulaires.
-seo-description: Apprenez à associer des réviseurs d’envoi à un formulaire dans AEM Forms. Les réviseurs associés examinent un formulaire envoyé via un portail de formulaires.
+seo-description: Learn how to associate submission reviewers with a form in AEM Forms. Associated reviewers review a form submitted via forms portal.
 uuid: 66834c2b-ae70-4a6e-ae8e-07d0e38de06b
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 7c39383b-b430-40a1-9bcb-f5aaccb616ad
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: b45d844e-acf9-4da2-b54e-08c67aa183a3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '493'
 ht-degree: 98%
 
 ---
@@ -24,7 +24,7 @@ AEM Forms vous permet d’associer un groupe de réviseurs à un formulaire. Les
 
 Les groupes de réviseurs assignés à un formulaire peuvent uniquement analyser les envois du formulaire spécifié.
 
-## Condition préalable {#prerequisite}
+## Prérequis {#prerequisite}
 
 ### Activation de la propriété des groupes de réviseurs d’envoi pour des formulaires adaptatifs à l’aide de l’éditeur de schéma de métadonnées {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}
 
@@ -76,4 +76,4 @@ Pour associer des groupes d’utilisateurs à un formulaire adaptatif :
 >
 >Dupliquez les utilisateurs et les formulaires pour assurer leur disponibilité dans l’implémentation à distance d’AEM Forms.
 >
->Veillez à ce que tous les utilisateurs soient dupliqués comme membres de révision des groupes d’utilisateurs dans l’implémentation à distance.
+>Veillez à ce que tous les utilisateurs soient répliqués comme membres de révision des groupes d’utilisateurs dans l’implémentation distante.

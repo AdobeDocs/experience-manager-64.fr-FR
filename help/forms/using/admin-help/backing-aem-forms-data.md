@@ -1,8 +1,8 @@
 ---
 title: Sauvegarde des données AEM Forms
-seo-title: Sauvegarde des données AEM Forms
+seo-title: Backing up the AEM forms data
 description: Ce document décrit les étapes nécessaires à la réalisation d’une sauvegarde complète, à chaud ou en ligne, de la base de données AEM Forms, de même que du répertoire de stockage global de documents et du répertoire racine de stockage de contenu.
-seo-description: Ce document décrit les étapes nécessaires à la réalisation d’une sauvegarde complète, à chaud ou en ligne, de la base de données AEM Forms, de même que du répertoire de stockage global de documents et du répertoire racine de stockage de contenu.
+seo-description: This document describes the steps that are required to complete a hot, or online, backup of the AEM forms database, the GDS, and Content Storage Root directories.
 uuid: ac7856be-e3b7-4b81-b8b9-fc909b5907b4
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
 exl-id: d86cf58f-6595-4f37-977f-09437a7f89f9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1540'
 ht-degree: 93%
 
 ---
@@ -72,7 +72,7 @@ Ces articles vous aident à utiliser les fonctions de sauvegarde et de récupér
 >
 >la sauvegarde de la base de données doit être terminée avant que vous commenciez à sauvegarder le répertoire de stockage global de documents. Si ce n’est pas le cas, vos données seront désynchronisées.
 
-### Passage en mode de sauvegarde  {#entering-the-backup-modes}
+### Passage en mode de sauvegarde {#entering-the-backup-modes}
 
 Vous pouvez utiliser Administration Console, la commande LCBackupMode ou l’API accompagnant l’installation AEM forms pour passer à un mode de sauvegarde et le quitter. L’option d’Administration Console n’est pas disponible pour le mode de sauvegarde restauration (couverture en continu) ; utilisez l’option de ligne de commande ou l’API. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM forms API Reference on Help and Tutorials page. -->
 
@@ -93,12 +93,12 @@ Vous pouvez utiliser Administration Console, la commande LCBackupMode ou l’API
 Vous pouvez utiliser les scripts `LCBackupMode` de l’interface de ligne de commande pour passer AEM Forms en mode de sauvegarde sécurisé.
 
 1. Définissez ADOBE_LIVECYCLE et lancez le serveur d’applications.
-1. Accédez au dossier `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` .
+1. Accédez au `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` dossier.
 1. Modifiez le script `LCBackupMode.cmd` ou `LCBackupMode.sh` de façon à indiquer les valeurs par défaut correspondant à votre système d’exploitation.
 1. Dans l’invite de commande, exécutez la commande suivante sur une seule ligne :
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*nom_hôte* `] [-port=`*numéro_port* `] [-user=`*nom_utilisateur* `] [-password=`*mot_de_passe* `] [-label=`*nom_libellé* `] [-timeout=`*secondes* `]`
-   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*nom_hôte* `] [-port=`*numéro_port* `] [-user=`*nom_utilisateur* `] [-password=`*mot_de_passe* `] [-label=`*nom_libellé* `]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `] [-label=`*labelname* `] [-timeout=`*seconds* `]`
+   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `] [-label=`*labelname* `]`
 
    Dans les commandes précédentes, les emplacements réservés peuvent être définis comme suit :
 
@@ -116,7 +116,7 @@ Vous pouvez utiliser les scripts `LCBackupMode` de l’interface de ligne de com
 
    Pour plus d’informations sur l’interface de ligne de commande pour le mode de sauvegarde, voir le fichier Lisez-moi (Readme) dans le répertoire BackupRestoreCommandline.
 
-### Quitter les modes de sauvegarde  {#leaving-backup-modes}
+### Quitter les modes de sauvegarde {#leaving-backup-modes}
 
 Vous pouvez utiliser Administration Console ou l’option de ligne de commande pour quitter les modes de sauvegarde.
 
@@ -132,7 +132,7 @@ Pour passer AEM Forms en mode de sauvegarde sécurisée (mode d’instantané) �
 
 Vous pouvez utiliser l’interface de ligne de commande et sortir AEM Forms du mode de sauvegarde sécurisé (mode d’instantané) ou pour mettre un terme à la session du mode de sauvegarde en cours (mode de sauvegarde de restauration). Vous ne pouvez pas utiliser Administration Console pour quitter le mode de sauvegarde restauration. Lorsque le mode de sauvegarde restauration est activé, les commandes Utilitaires de sauvegarde d’Administration Console sont désactivées. Vous devez utiliser l’appel d’API ou la commande LCBackupMode.
 
-1. Accédez au dossier `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` .
+1. Accédez au `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` dossier.
 1. Modifiez le script `LCBackupMode.cmd` ou `LCBackupMode.sh` de façon à indiquer les valeurs par défaut correspondant à votre système d’exploitation.
 
    >[!NOTE]
@@ -141,8 +141,8 @@ Vous pouvez utiliser l’interface de ligne de commande et sortir AEM Forms du m
 
 1. Exécutez la commande suivante sur une même ligne :
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*nom_hôte* `] [-port=`*numéro_port* `] [-user=`*nom_utilisateur* `] [-password=`*mot_de_passe* `]`
-   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*nom_hôte* `] [-port=`*numéro_port* `] [-user=`*nom_utilisateur* `] [-password=`*mot_de_passe* `]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `]`
+   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `]`
 
       Dans les commandes précédentes, les emplacements réservés peuvent être définis comme suit :
 

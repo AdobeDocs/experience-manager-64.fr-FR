@@ -1,6 +1,6 @@
 ---
 title: Lightbox
-description: Découvrez Lightbox dans  [!DNL Experience Manager] Assets.
+description: En savoir plus sur Lightbox dans [!DNL Experience Manager] Ressources.
 contentOwner: AG
 feature: Developer Tools,Renditions
 role: User,Admin
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 # Lightbox {#lightbox}
 
-Découvrez Lightbox dans [!DNL Experience Manager] Assets.
+En savoir plus sur Lightbox dans [!DNL Experience Manager] Ressources.
 
 Lightbox est un type spécial de collection fournissant un accès aisé aux ressources. Vous pouvez accéder rapidement à Lightbox pour ajouter ou supprimer des ressources. Il sert de galerie d’images personnelle.
 

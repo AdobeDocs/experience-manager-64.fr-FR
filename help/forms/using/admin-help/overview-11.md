@@ -1,8 +1,8 @@
 ---
 title: Présentation de Health Monitor
-seo-title: Présentation de Health Monitor
+seo-title: Overview of Health Monitor
 description: Ce document fournit une présentation de Health Monitor et des détails sur la manière dont vous pouvez y accéder.
-seo-description: Ce document fournit une présentation de Health Monitor et des détails sur la manière dont vous pouvez y accéder.
+seo-description: This document provides the overview of the Health monitor, and details about how you can access it.
 uuid: 5934fd2d-80a5-4c6d-b3ee-882c2865705b
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: c303e967-944d-40b0-96ca-f91e2f42a0d0
 exl-id: 70ccc0ae-04c6-4af9-9150-72d0d71c945f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '296'
 ht-degree: 100%
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: Création ou configuration d’un dossier de contrôle
-seo-title: Création ou configuration d’un dossier de contrôle
+seo-title: Create or Configure a watched folder
 description: Découvrez comment créer ou supprimer un dossier de contrôle, ou modifier les propriétés d’un dossier de contrôle existant.
-seo-description: Découvrez comment créer ou supprimer un dossier de contrôle, ou modifier les propriétés d’un dossier de contrôle existant.
+seo-description: Learn how to create or delete a watched folder, or modify the properties of an existing watched folder.
 uuid: 659d4d8c-99b8-40dd-b884-bfee4d476fe1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 exl-id: 7e2706e2-092f-4780-be8f-2bf444613d70
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1824'
 ht-degree: 93%
 
 ---
@@ -32,7 +32,7 @@ Avant de configurer un dossier de contrôle, vérifiez les éléments suivants :
 
 * Les dossiers de contrôle constituent une fonctionnalité avancée d’AEM Forms. Le module complémentaire AEM Forms est requis pour un bon fonctionnement. Assurez-vous que le module complémentaire approprié d’AEM Forms est installé et configuré.
 * Vous pouvez créer le dossier de contrôle à un emplacement de stockage local ou partagé. Assurez-vous que l’utilisateur d’AEM Forms configuré pour exécuter le dossier de contrôle dispose des autorisations de lecture et d’écriture sur le dossier de contrôle.
-* Vous pouvez utiliser un service, un flux de travail ou un script pour automatiser une opération avec un dossier de contrôle. Vérifiez que le service, flux de travail ou script correspondant est créé et prêt à exécution. Pour plus d’informations sur la création d’un service, d’un workflow et d’un script, voir [Diverses méthodes de traitement des fichiers](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
+* Vous pouvez utiliser un service, un flux de travail ou un script pour automatiser une opération avec un dossier de contrôle. Vérifiez que le service, flux de travail ou script correspondant est créé et prêt à exécution. Pour plus d’informations sur la création d’un service, d’un workflow et d’un script, voir [Différentes méthodes de traitement des fichiers](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
 * Un dossier de contrôle possède différentes propriétés, voir [Propriétés de dossier de contrôle](/help/forms/using/watched-folder-in-aem-forms.md#watchedfolderproperties).
 
 Effectuez les étapes suivantes pour créer un dossier de contrôle :
@@ -75,10 +75,10 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
    * **Supprimer les fichiers de scène expirés en cas de ralentissement** : si cette option est activée, le mécanisme **Expiration des fichiers de scène toutes les** est activé uniquement lorsque l’option de ralentissement est activé pour le dossier de contrôle.
    * **Analyser le dossier d’entrée toutes les :** spécifiez l’intervalle de temps, en secondes, entre les analyses du dossier de contrôle des entrées. À moins que le paramètre Ralentissement ne soit activé, l’attribut Intervalle de répétition doit être supérieur à la durée du traitement d’une tâche moyenne, faute de quoi le système risque d’être surchargé. La valeur de l’intervalle doit être supérieure ou égale à un.
    * **Exclure le modèle de fichier** : indiquez une liste délimitée par des points-virgules (;) de modèles utilisés par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
-   * **Inclure le modèle de fichier** : spécifiez une liste délimitée par des points-virgules (;) des modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Par exemple, si l’option Inclure le modèle de fichier est input&amp;ast;, tous les fichiers et dossiers correspondant à input&amp;ast; sont ramassées. La valeur par défaut est &amp;ast; et indique tous les fichiers et dossiers. Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+   * **Inclure le modèle de fichier** : spécifiez une liste délimitée par des points-virgules (;) des modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Par exemple, si l’option Inclure le modèle de fichier est input&amp;ast, tous les fichiers et dossiers correspondant à input&amp;ast; sont ramassées. La valeur par défaut est &amp;ast; et indique tous les fichiers et dossiers. Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Durée d’attente :** indiquez le temps, en millisecondes, à patienter avant l’analyse d’un dossier ou fichier après sa création. Par exemple, si la durée d’attente est de 3 600 000 millisecondes (une heure) et que le fichier a été créé une minute auparavant, ce dernier est sélectionné après 59 minutes ou plus. La valeur par défaut est 0.
 
-      Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous avez un fichier volumineux à traiter et que le téléchargement du fichier prend dix minutes, définissez le temps d’attente sur 10&amp;ast;60 &amp;ast;1000 millisecondes. Cet intervalle évite que le dossier de contrôle analyse le fichier tant que ce dernier a une existence inférieure à dix minutes.
+      Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous avez un fichier volumineux à traiter et que le téléchargement du fichier prend dix minutes, définissez le délai d’attente sur 10&amp;ast;60 &amp;ast;1 000 millisecondes. Cet intervalle évite que le dossier de contrôle analyse le fichier tant que ce dernier a une existence inférieure à dix minutes.
 
    * **Supprimer les résultats antérieurs à :** indiquez l’heure, en fonction du nombre de jours, à attendre avant de supprimer les fichiers et dossiers antérieurs à la valeur spécifiée. Grâce à ce paramètre, le dossier obtenu n’est jamais plein. La valeur -1 jour indique de ne jamais supprimer le dossier result. La valeur par défaut est -1.
    * **Nom du dossier de résultat :** spécifiez le nom du dossier dans lequel enregistrer les résultats. Si les résultats ne s’affichent pas dans ce dossier, vérifiez le dossier des échecs. Les fichiers en lecture seule ne sont pas traités ; ils sont enregistrés dans le dossier des échecs. Vous pouvez utiliser un chemin d’accès relatif ou absolu répondant aux modèles de fichiers suivants :
@@ -108,13 +108,13 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
    * **Ralentir sur :** lorsque cette option est sélectionnée, elle permet de limiter le nombre de tâches du dossier de contrôle qu’AEM Forms peut traiter en une seule fois. La valeur Taille du lot détermine le nombre maximal de tâches. Pour plus d’informations, voir [Ralentissement](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling).
    * **Écraser les fichiers existants portant le même nom :** lorsque ce paramètre est défini sur true, les fichiers du dossier obtenu et du dossier conservé sont remplacés. Lorsqu’il est défini sur false, les fichiers et les dossiers pourvus d’un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est False.
    * **Conserver les fichiers en cas d’échec :** lorsque ce paramètre est défini sur true, les fichiers d’entrée sont conservés en cas d’échec. La valeur par défaut est true.
-   * **Inclure les fichiers avec modèle :** spécifiez une liste délimitée par des points-virgules (;) des modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Par exemple, si l’option Inclure le modèle de fichier est input&amp;ast;, tous les fichiers et dossiers correspondant à input&amp;ast; sont ramassées. Pour plus d’informations, voir [Aide à l’administration](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) 
+   * **Inclure les fichiers avec modèle :** spécifiez une liste délimitée par des points-virgules (;) des modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Par exemple, si l’option Inclure le modèle de fichier est input&amp;ast, tous les fichiers et dossiers correspondant à input&amp;ast; sont ramassées. Pour plus d’informations, voir [Aide à l’administration](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) 
    * **Appeler un dossier de contrôle de manière asynchrone :** identifie le type d’appel comme étant asynchrone ou synchrone. La valeur par défaut est asynchrone. Le mode asynchrone est recommandé pour les processus de longue durée, tandis que le mode synchrone est préférable pour les processus transitoires ou de courte durée.
    * **Activer le dossier de contrôle :** lorsque cette option est activée, le dossier de contrôle est activé. La valeur par défaut est True.
 
 
 
-## Modification des propriétés d’un dossier de contrôle existant  {#modify-properties-of-an-existing-watched-folder}
+## Modification des propriétés d’un dossier de contrôle existant {#modify-properties-of-an-existing-watched-folder}
 
 En plus de changer le nom du dossier de contrôle, vous pouvez modifier toutes les propriétés d’un dossier de contrôle existant. Effectuez les étapes suivantes pour modifier les propriétés d’un dossier de contrôle existant :
 

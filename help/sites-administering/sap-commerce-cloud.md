@@ -1,8 +1,8 @@
 ---
 title: SAP Commerce Cloud
-seo-title: SAP Commerce Cloud
+seo-title: SAP Commerce Cloud
 description: Découvrez comment utiliser AEM avec SAP Commerce Cloud.
-seo-description: Découvrez comment utiliser AEM avec SAP Commerce Cloud.
+seo-description: Learn how to use AEM with SAP Commerce Cloud.
 uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -14,8 +14,8 @@ feature: Commerce Integration Framework
 exl-id: 27537d62-f032-4fb5-b2cf-003579b61ea8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 91%
+source-wordcount: '1714'
+ht-degree: 90%
 
 ---
 
@@ -58,7 +58,7 @@ Après l’installation, vous pouvez configurer votre instance :
    >
    >Utilisez le menu contextuel (généralement clic droit) pour sélectionner `Create Solr sort`.
    >
-   >Pour Hybris 5.0.0, ouvrez l’onglet `Indexed Types`, double-cliquez sur `ClothesVariantProduct`, puis l’onglet `SOLR Sort`.
+   >Pour Hybris 5.0.0, ouvrez la `Indexed Types` onglet, double-cliquez sur `ClothesVariantProduct`, puis l’onglet `SOLR Sort`.
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -102,8 +102,8 @@ Après l’installation, vous pouvez configurer votre instance :
 1. **Enregistrez** les modifications.
 1. Ouvrez **System**, **Facet search**, puis **Indexer operation wizard**. Commencez une tâche cronjob :
 
-   * **Opération** de l’indexeur :  `full`
-   * **Configuration** Solr :  `Sample Solr Config for Clothes`
+   * **Opération Indexer**: `full`
+   * **Configuration Solr**: `Sample Solr Config for Clothes`
 
 ## Configuration de la version du catalogue {#configure-the-catalog-version}
 
@@ -120,7 +120,7 @@ La **version du catalogue** est généralement définie sur `Online` (en ligne) 
 
 La sortie du journal fournit un retour sur les pages et les composants créés et signale les erreurs potentielles.
 
-## Configuration de la structure d’importation  {#configure-the-import-structure}
+## Configuration de la structure d’importation {#configure-the-import-structure}
 
 La liste ci-dessous présente un exemple de la structure (des ressources, des pages et des composants) créée par défaut :
 
@@ -170,7 +170,7 @@ La structure à générer lors de l’importation peut être configurée pour :
 
 Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md). Pour obtenir une liste exhaustive des paramètres configurables et de leurs valeurs par défaut, reportez-vous également à la console.
 
-## Configuration des attributs du produit à charger  {#configure-the-product-attributes-to-load}
+## Configuration des attributs du produit à charger {#configure-the-product-attributes-to-load}
 
 L’analyseur de réponse peut être configuré pour définir des propriétés et des attributs à charger pour des produits (variantes) :
 
@@ -209,7 +209,7 @@ Les propriétés ci-dessous indiquent le lien avec Hybris :
 >
 >Le serveur Hybris est référencé chaque fois que des informations sur un produit sont demandées.
 
-### Importation complète  {#full-import}
+### Importation complète {#full-import}
 
 1. Si nécessaire, supprimez toutes les données existantes d’un produit à l’aide de CRXDE Lite.
 
@@ -379,7 +379,7 @@ Pour supprimer un ou plusieurs produits du catalogue, procédez comme suit :
    Par exemple :
 
    * Ouvrez la page [http://localhost:9001/productcockpit](http://localhost:9001/productcockpit).
-   * Sélectionnez le catalogue `Outdoors Staged`
+   * Sélectionner le catalogue `Outdoors Staged`
    * Recherchez `Cajamara`
    * Sélectionnez ce produit et définissez l’état d’approbation sur `unapproved`.
 
@@ -392,12 +392,12 @@ Pour supprimer un ou plusieurs produits du catalogue, procédez comme suit :
 
       [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
 
-   * Déployer le catalogue `Hybris Base`
+   * Déployez la variable `Hybris Base` catalogue
    * Ouvrez :
 
       [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-   * Le produit `Cajamara` a été supprimé de la catégorie `Bike`.
+   * Le `Cajamara` Le produit a été supprimé de la variable `Bike` category
 
 1. Pour réinstaller le produit :
 
@@ -408,13 +408,13 @@ Pour supprimer un ou plusieurs produits du catalogue, procédez comme suit :
       1. Redéployez le catalogue approprié.
       1. Actualisez la page de catégories appropriée.
 
-## Ajout de la caractéristique Historique de commandes à ClientContext  {#add-order-history-trait-to-the-client-context}
+## Ajout de la caractéristique Historique de commandes à ClientContext {#add-order-history-trait-to-the-client-context}
 
 Pour ajouter un historique de commandes à [ClientContext](/help/sites-developing/client-context.md), procédez comme suit :
 
 1. Ouvrez la [page de conception de ClientContext](/help/sites-administering/client-context.md) selon l’une des méthodes suivantes :
 
-   * Ouvrez une page à modifier, puis ouvrez ClientContext à l’aide de **Ctrl-Alt-c** (Windows) ou **Ctrl-option-c** (Mac). À l’aide de l’icône de crayon dans le coin supérieur gauche de ClientContext, **ouvrez la page de conception de ClientContext**.
+   * Ouvrez une page à modifier, puis ouvrez ClientContext à l’aide de **Ctrl+Alt+C** (Windows) ou **control-option-c** (Mac). À l’aide de l’icône de crayon dans le coin supérieur gauche de ClientContext, **ouvrez la page de conception de ClientContext**.
    * Accédez directement à [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html).
 
 1. [Ajoutez le composant **Historique de commandes**](/help/sites-administering/client-context.md#adding-a-property-component) au composant **Panier** de ClientContext.
@@ -438,8 +438,7 @@ Pour ajouter un historique de commandes à [ClientContext](/help/sites-developin
    >
    >  La campagne se compose d’une expérience.
    >
-   >* Cliquez sur le segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html)).
-      >
-      >
-   * Le segment est créé à l’aide de la caractéristique **Propriété de l’historique de commandes**.
+   >* Cliquez sur le segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
+   >
+   >* Le segment est créé à l’aide de la caractéristique **Propriété de l’historique de commandes**.
 

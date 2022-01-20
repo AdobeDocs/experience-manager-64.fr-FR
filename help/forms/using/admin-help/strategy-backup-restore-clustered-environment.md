@@ -1,8 +1,8 @@
 ---
 title: Stratégie de sauvegarde et de restauration dans un environnement organisé en grappes
-seo-title: Stratégie de sauvegarde et de restauration dans un environnement organisé en grappes
+seo-title: Strategy for backup and restore in a clustered environment
 description: Si votre déploiement d’AEM Forms stocke les données personnalisées supplémentaires dans une base de données différente, vous devez mettre en place une stratégie de sauvegarde pour ces données veillant à ce qu’elles soient synchronisées avec les données AEM Forms.
-seo-description: Si votre déploiement d’AEM Forms stocke les données personnalisées supplémentaires dans une base de données différente, vous devez mettre en place une stratégie de sauvegarde pour ces données veillant à ce qu’elles soient synchronisées avec les données AEM Forms.
+seo-description: If your AEM forms implementation stores additional custom data in a different database, you must implement a strategy to back up this data ensuring that it remains in sync with the AEM forms data.
 uuid: c29b989c-30ed-4a8e-bab8-9b7746291a33
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: c332985b-4556-4056-961a-fce2356da88d
 exl-id: 432221c9-4b78-4d0d-bf22-b56810bf4256
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 73%
+source-wordcount: '1476'
+ht-degree: 72%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->Si votre déploiement d’AEM Forms stocke les données personnalisées supplémentaires dans une base de données différente, vous devez mettre en place une stratégie de sauvegarde pour ces données veillant à ce qu’elles soient synchronisées avec les données AEM Forms. De plus, vous devez concevoir l’application de sorte à ce qu’elle puisse gérer un scénario dans lequel les bases de données supplémentaires se désynchronisent. Il est fortement recommandé d’effectuer toutes les opérations de base de données dans le contexte d’une transaction pour veiller à sa cohérence.
+>Si votre déploiement d&#39;AEM forms stocke les données personnalisées supplémentaires dans une base de données différente, vous devez mettre en place une stratégie de sauvegarde pour ces données veillant à ce qu’elles soient synchronisées avec les données AEM forms. De plus, vous devez concevoir l’application de sorte à ce qu’elle puisse gérer un scénario dans lequel les bases de données supplémentaires se désynchronisent. Il est fortement recommandé d’effectuer toutes les opérations de base de données dans le contexte d’une transaction pour veiller à sa cohérence.
 
 Vous devez sauvegarder les éléments suivants du système AEM Forms pour récupérer d’une erreur :
 
@@ -42,7 +42,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
 * Sauvegarde en ligne sans temps d’interruption, mais un retard de réponse
 * Sauvegarde du fichier de propriétés de démarrage
 
-### Sauvegarde hors connexion avec temps d’interruption  {#offline-backup-with-downtime}
+### Sauvegarde hors connexion avec temps d’interruption {#offline-backup-with-downtime}
 
 1. Arrêtez l’ensemble de la grappe et des services connexes. (Voir la section [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
 1. Sur n’importe quel nœud, sauvegardez la base de données, le stockage global de documents et les connecteurs. (Voir [Fichiers à sauvegarder et à récupérer](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover).)
@@ -57,7 +57,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
 1. Le cas échéant, sauvegardez toutes les autres données, telles que les polices du client.
 1. Redémarrez la grappe.
 
-### Sauvegarde hors connexion sans temps d’interruption  {#offline-backup-with-no-downtime}
+### Sauvegarde hors connexion sans temps d’interruption {#offline-backup-with-no-downtime}
 
 1. Passez en mode de sauvegarde restauration. (Voir [Passage en mode de sauvegarde](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes).)
 
@@ -76,7 +76,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
 1. Le cas échéant, sauvegardez toutes les autres données, telles que les polices du client.
 1. Redémarrez la grappe.
 
-### Sauvegarde en ligne sans temps d’interruption, mais un retard de réponse  {#online-backup-with-no-downtime-but-delay-in-response}
+### Sauvegarde en ligne sans temps d’interruption, mais un retard de réponse {#online-backup-with-no-downtime-but-delay-in-response}
 
 1. Passez en mode de sauvegarde restauration. (Voir [Passage en mode de sauvegarde](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes).)
 
@@ -93,7 +93,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
 1. Le cas échéant, sauvegardez toutes les autres données, telles que les polices du client.
 1. Redémarrez la grappe.
 
-### Sauvegarde du fichier de propriétés de démarrage  {#back-up-the-bootstrap-properties-file}
+### Sauvegarde du fichier de propriétés de démarrage {#back-up-the-bootstrap-properties-file}
 
 Lorsque nous créons une grappe d’AEM, un fichier de propriétés est créé dans le serveur d’applications pour tous les noeuds secondaires. Il est conseillé de sauvegarder le fichier de propriétés de démarrage. Vous pouvez trouver le fichier à l’emplacement suivant sur votre serveur d’applications :
 
@@ -111,7 +111,7 @@ Pour la récupération d’un nœud unique, il vous suffit d’arrêter le nœud
 
 Dans le cas d’un échec de l’ensemble de la grappe en raison d’échecs tels qu’une panne de base de données, vous devez effectuer les étapes suivantes. La restauration dépend de la méthode de sauvegarde utilisée.
 
-### Restauration d’un nœud unique  {#restoring-a-single-node}
+### Restauration d’un nœud unique {#restoring-a-single-node}
 
 1. Arrêtez le nœud corrompu.
 
@@ -164,7 +164,7 @@ Dans le cas d’un échec de l’ensemble de la grappe en raison d’échecs tel
    1. Supprimez le fichier clusterNode/revision.log sur tous les nœuds de la grappe.
    1. Supprimez le fichier .lock sur tous les nœuds de la grappe, le cas échéant.
    1. Supprimez le fichier repository/system.id sur tous les nœuds de la grappe, le cas échéant.
-   1. Supprimez les fichiers &amp;ast;&amp;ast;/listener.properties sur tous les noeuds de grappe, le cas échéant.
+   1. Supprimez les fichiers &amp;ast;&amp;ast;/listener.properties sur tous les noeuds de la grappe, le cas échéant.
    1. Restaurez le fichier repository/cluster_node.id pour les nœuds individuels de la grappe.
 
 >[!NOTE]
@@ -179,13 +179,13 @@ Dans le cas d’un échec de l’ensemble de la grappe en raison d’échecs tel
 
 Le noeud de l’éditeur n’a aucune relation Principale-secondaire dans un environnement organisé en grappes. Vous pouvez réaliser une sauvegarde de tout nœud d’éditeur en suivant le document [Sauvegarde et restauration](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
-### Récupération d’un seul nœud d’éditeur  {#recover-a-single-publisher-node}
+### Récupération d’un seul nœud d’éditeur {#recover-a-single-publisher-node}
 
 1. Arrêtez le nœud qui doit être récupéré et ne réalisez aucune activité de publication avant que le nœud fonctionne à nouveau.
-1. Restaurez le noeud de publication à l’aide de la commande [Restauration de la sauvegarde](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring la sauvegarde).
+1. Restaurez le noeud de publication à l’aide de [Restauration de la sauvegarde](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring la sauvegarde).
 
 ### Récupération d’une grappe {#recover-a-cluster}
 
 1. Arrêtez la grappe.
-1. Restaurez le noeud de publication à l’aide de la commande [Restauration de la sauvegarde](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring la sauvegarde).
+1. Restaurez le noeud de publication à l’aide de [Restauration de la sauvegarde](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring la sauvegarde).
 1. Démarrez le noeud Principal suivi du noeud secondaire de la grappe d’auteur.

@@ -1,17 +1,17 @@
 ---
 title: Application de signatures électroniques à un formulaire à l’aide de signatures tactiles
-seo-title: Application de signatures électroniques à un formulaire à l’aide de signatures tactiles
+seo-title: Apply electronic signatures to a form using scribble signatures
 description: Signature de formulaires à l’aide de la saisie tactile
-seo-description: Signature de formulaires à l’aide de la saisie tactile
+seo-description: Signing forms using scribble
 uuid: e807d0de-6d5f-458e-be3e-273ed7a521c0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: a870c4b7-4040-4bd8-b477-286ebe6a4b01
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '498'
 ht-degree: 95%
 
 ---
@@ -27,7 +27,7 @@ Les deux composants présentent une fenêtre, comme illustré ci-dessous, pour s
 ## Configuration d’un formulaire adaptatif pour utiliser la signature tactile {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Créez une option Document d’enregistrement activée ou un formulaire adaptatif basé sur modèle de formulaire. Pour obtenir des informations détaillées, voir [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md).
-1. Faites glisser et déposez le composant **Signature tactile** de l’explorateur de composants vers le formulaire adaptatif.
+1. Faites glisser et déposez le **Signature tactile** du navigateur de composants au formulaire adaptatif.
 1. Appuyez sur l’icône de ![configuration](assets/configure.png) **Configurer**. Vous ouvrez ainsi le navigateur de propriétés qui affiche les propriétés du composant Signature tactile. Configurez les propriétés du composant Signature tactile.
 1. Faites glisser et déposez le composant Étape de signature de l’explorateur de composants vers le formulaire adaptatif.
 

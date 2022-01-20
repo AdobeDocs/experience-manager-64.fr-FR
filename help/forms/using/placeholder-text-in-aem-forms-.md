@@ -1,17 +1,17 @@
 ---
 title: 'Texte d’espace réservé dans AEM Forms '
-seo-title: 'Texte d’espace réservé dans AEM Forms '
+seo-title: Placeholder text in AEM Forms
 description: Le texte d’espace réservé est destiné à aider l’utilisateur à saisir des données lorsque la valeur de la commande est vide. Il peut s’agir d’un exemple de valeur ou une brève description du format attendu.
-seo-description: Le texte d’espace réservé est destiné à aider l’utilisateur à saisir des données lorsque la valeur de la commande est vide. Il peut s’agir d’un exemple de valeur ou une brève description du format attendu.
+seo-description: Placeholder text is intended to aid the user with data entry when the control has no value. It could be a sample value or a brief description of the expected format.
 uuid: 553ed988-ad2c-4bdb-bf1e-332e48cf7dfa
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 2d7367fa-6cb8-40a1-8566-1fd0d46fdfde
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 26a1a5f7-b4d4-4f38-81a4-5f2d39702138
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '215'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Les textes d’espace réservé ne sont pas pris en charge pour le widget natif 
 
 1. Effectuez un clic droit sur un composant prenant en charge le texte d’espace réservé et cliquez sur **Modifier**. La boîte de dialogue Modifier le composant apparaît.
 
-1. Ouvrez l&#39;onglet **Titre et texte.**
+1. Ouvrez l’onglet **Titre et texte.**
 1. Indiquez un mot ou un groupe de mots court dans **la zone d’espace réservé**. Cliquez sur **OK**.
 
 >[!NOTE]

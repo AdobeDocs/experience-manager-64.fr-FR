@@ -1,8 +1,8 @@
 ---
 title: '"Base de données DB2 : exécution d’un processus hebdomadaire"'
-seo-title: '"Base de données DB2 : exécution d’un processus hebdomadaire"'
+seo-title: 'DB2 database: Running a process weekly'
 description: Découvrez comment vous pouvez améliorer la performance de votre base de données AEM Forms DB2.
-seo-description: Découvrez comment vous pouvez améliorer la performance de votre base de données AEM Forms DB2.
+seo-description: See how you can improve the performance of your AEM forms DB2 database.
 uuid: 36070087-c250-41df-a841-aa922e777697
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: fc0e8183-5d50-4fc0-997a-5f3168ba0d70
 exl-id: f40fcfab-63e0-4e43-aac5-95426e3dd1fb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '145'
 ht-degree: 100%
 
 ---
 
-# Base de données DB2 : exécution d’un processus hebdomadaire{#db-database-running-a-process-weekly}
+# Base de données DB2 : exécution d’un processus hebdomadaire{#db-database-running-a-process-weekly}
 
 Si la base de données AEM forms DB2 montre des signes de ralentissement, effectuez la procédure suivante chaque semaine pour améliorer ses performances :
 

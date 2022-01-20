@@ -13,7 +13,7 @@ exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
 source-git-commit: 7f80933dfe8439bbd57ef85ece96399f7ec39f64
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
@@ -46,7 +46,7 @@ Si vous utilisez Microsoft Edge comme navigateur :
 * Sélectionner **[!UICONTROL Toujours désactivé]**.
 * Redémarrez le navigateur.
 
-## Plate-forme {#platform}
+## Plateforme {#platform}
 
 * **Tableau de bord des opérations :** la barre de progression n’apparaît pas lorsque l’extension .zip est manquante dans le fichier de sauvegarde. (GRANITE-10713)
 * **HTL :** L’objet Use Java avec un espace de fin dans la déclaration du package gèle le SightlyJavaCompilerService (GRANITE-20836).
@@ -142,5 +142,5 @@ Si vous utilisez Microsoft Edge comme navigateur :
 * Le composant Graphique des formulaires adaptatifs prend davantage d’espace qu’il en prend normalement.
 * Une exception est renvoyée lors de l’enregistrement des propriétés des formulaires adaptatifs, des fragments de formulaire adaptatif ou des communications interactives dans l’interface utilisateur de Forms Manager.
 * Le nombre maximal de caractères spécifié pour un champ de texte de formulaire adaptatif n’est pas honoré sur les périphériques Samsung sous Android 6.0. (Réf. CQ-4235205)
-* Lorsque vous envoyez un formulaire contenant un champ de chargement HTML standard d’un appareil iOS d’Apple, le contenu du fichier n’est parfois pas envoyé et un fichier de 0 octet est reçu à l’autre bout. Apple iOS 15.1 fournit un correctif pour le problème.
+* Lorsque vous envoyez un formulaire contenant un champ de chargement HTML standard d’un appareil iOS d’Apple, le contenu du fichier n’est parfois pas envoyé et un fichier de 0 octet est reçu à l’autre bout. Apple iOS 15.1 apporte un correctif pour le problème.
 

@@ -1,8 +1,8 @@
 ---
 title: Mise à niveau vers AEM 6.4 Forms
-seo-title: Mise à niveau vers AEM 6.4 Forms
+seo-title: Upgrade to AEM 6.4 Forms
 description: 'Vous pouvez effectuer une mise à niveau directe à partir de AEM 6.1 Forms, AEM 6.2 Forms et LiveCycle ES4 SP1 vers AEM 6.3 Forms. '
-seo-description: 'Vous pouvez effectuer une mise à niveau directe à partir de AEM 6.1 Forms, AEM 6.2 Forms et LiveCycle ES4 SP1 vers AEM 6.3 Forms. '
+seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: e41eb0fa-ae88-44d5-9181-0d925b8b62c6
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1680'
 ht-degree: 80%
 
 ---
@@ -27,8 +27,8 @@ Utilisez l’un des chemins de mise à niveau suivants, selon votre environnemen
 Effectuez la procédure suivante pour mettre à niveau AEM 6.2 Forms on JEE ou AEM 6.3 Forms on JEE vers AEM 6.4 Forms on JEE :
 
 1. Téléchargez le programme d’installation d’AEM 6.4 Forms on JEE à partir du site [Adobe Licensing Website (LWS)](https://licensing.adobe.com/). Pour télécharger le programme d’installation, vous devez disposer d’un contrat de Maintenance &amp; Support.
-1. Voir [Liste de contrôle et planification de la mise à niveau](https://www.adobe.com/go/learn_aemfroms_upgrade_checklist_63) pour en savoir plus sur les vérifications à effectuer pour garantir la réussite de la mise à niveau.
-1. Voir [Préparation à la mise à niveau vers AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_63) pour découvrir et exécuter les tâches permettant de garantir que la mise à niveau s’exécute correctement, avec un temps d’arrêt du serveur minimal.
+1. Voir [Aide-mémoire et planification de la mise à niveau](https://www.adobe.com/go/learn_aemfroms_upgrade_checklist_63) pour en savoir plus sur les vérifications à effectuer pour garantir la réussite de la mise à niveau.
+1. Voir [Préparation à la mise à niveau vers AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_63) pour découvrir et exécuter les tâches permettant de s’assurer que la mise à niveau s’exécute correctement avec un temps d’arrêt du serveur minimal.
 1. En fonction de votre environnement et de votre serveur d’application, sélectionnez l’un des documents suivants et suivez les instructions.
 
    * [Mise à niveau d’AEM 6.2 Forms ou d’AEM 6.3 Forms vers AEM 6.4 Forms pour JBoss](assets/upgrade-jboss.pdf)
@@ -77,7 +77,7 @@ Voici une présentation de la procédure de mise à niveau d’un serveur LiveCy
 
       >[!NOTE]
       >
-      >Sur l’écran Sélection de la tâche de mise à niveau, sélectionnez l’option **[!UICONTROL Mettre à niveau à partir d’Adobe Experience Manager Forms 6.2.0]** . L’option **[!UICONTROL Mise à niveau depuis Adobe Experience Manager Forms 6.2.0]** permet au gestionnaire de configuration de mettre à niveau LiveCycle ES4 SP1 vers AEM 6.4 Forms.
+      >Sur l’écran Sélection de la tâche de mise à niveau, sélectionnez la **[!UICONTROL Mise à niveau à partir d’Adobe Experience Manager Forms 6.2.0]** . Le **[!UICONTROL Mise à niveau à partir d’Adobe Experience Manager Forms 6.2.0]** permet à Configuration Manager de mettre à niveau LiveCycle ES4 SP1 vers AEM 6.4 Forms.
 
    1. (Non requis pour le module de sécurité des documents AEM Forms) Importez le contenu vers le référentiel de contenu (référentiel CRX) sur le serveur AEM 6.4 Forms.
 
@@ -137,7 +137,7 @@ Voici une présentation de la procédure de mise à niveau d’un serveur LiveCy
 
       >[!NOTE]
       >
-      >Sur l’écran Sélection de la tâche de mise à niveau, sélectionnez l’option **[!UICONTROL Mettre à niveau à partir d’Adobe Experience Manager Forms 6.2.0]** . L’option **[!UICONTROL Mise à niveau depuis Adobe Experience Manager Forms 6.2.0]** permet au gestionnaire de configuration de mettre à niveau LiveCycle ES3 vers AEM 6.4 Forms.
+      >Sur l’écran Sélection de la tâche de mise à niveau, sélectionnez la **[!UICONTROL Mise à niveau à partir d’Adobe Experience Manager Forms 6.2.0]** . Le **[!UICONTROL Mise à niveau à partir d’Adobe Experience Manager Forms 6.2.0]** permet à Configuration Manager de procéder à la mise à niveau de LiveCycle ES3 vers AEM 6.4 Forms.
 
    1. (Non requis pour le module de sécurité des documents AEM Forms) Mettez à niveau et importez le référentiel CRX vers le serveur AEM 6.4 Forms.
 

@@ -1,8 +1,8 @@
 ---
-title: Offres Document Security
-seo-title: Offres de Document Security
+title: Offres de Document Security
+seo-title: Document security offerings
 description: Découvrez les différents outils et fonctionnalités d’AEM Document Security
-seo-description: Découvrez les différents outils et fonctionnalités d’AEM Document Security
+seo-description: Learn about various tools and features of AEM Document Security
 uuid: b9417ca7-ddfb-46d0-a5b7-2f39ee90b9dd
 contentOwner: khsingh
 geptopics: SG_AEMFORMS/categories/working_with_document_security
@@ -13,7 +13,7 @@ feature: Document Security
 exl-id: 18ebc041-0660-4595-bc96-2039474f91fb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1202'
 ht-degree: 91%
 
 ---
@@ -58,7 +58,7 @@ Vous pouvez utiliser SDK Document Security, Adobe Acrobat, Document Security Ext
 
 * **Document Security Extension for Microsoft Office** : vous pouvez utiliser Document Security Extension for Microsoft Office pour appliquer des stratégies prédéfinies à vos fichiers Microsoft Office au sein même des programmes Microsoft Office. L’extension garantit que seules les personnes autorisées peuvent utiliser les fichiers Microsoft Word, Excel et PowerPoint protégés par une stratégie. Seuls les utilisateurs autorisés qui possèdent le module externe peuvent utiliser les fichiers protégés par une stratégie.﻿
 
-   L’extension Document Security est disponible sous forme de module externe Microsoft Office. Vous pouvez télécharger l’extension à partir du [site Web d’Adobe](https://helpx.adobe.com/aem-forms/aem-document-security/download-installer.html). Ultérieurement, vous pouvez consulter [Document Security Extension for Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/aem-document-security-extension-help.html) pour découvrir comment installer, configurer et utiliser l’extension.
+   L’extension Document Security est disponible sous forme de module externe Microsoft Office. Vous pouvez télécharger l’extension à partir de [Adobe web](https://helpx.adobe.com/aem-forms/aem-document-security/download-installer.html). Ultérieurement, vous pouvez consulter [Document Security Extension for Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/aem-document-security-extension-help.html) pour découvrir comment installer, configurer et utiliser l’extension.
 
 * **Bibliothèque portable de protection :** La bibliothèque portable de protection (PPL) protège un document localement sans l’envoyer vers le serveur AEM Forms. Seules les informations d’identification de sécurité et les détails de la stratégie transitent sur le réseau. PPL vous permet également de limiter l’accès à la récupération des stratégies aux seuls utilisateurs connectés. Vous pouvez récupérer des stratégies avec le contexte de l’utilisateur connecté à l’utilisateur AEM.
 
@@ -66,13 +66,13 @@ Vous pouvez utiliser SDK Document Security, Adobe Acrobat, Document Security Ext
 
    La bibliothèque portable de protection est disponible pour les langues de Java et C++ dans les versions 32 bits et 64 bits. Elle est également disponible en tant que bundle OSGi pour AEM Forms on OSGi. Le fichier PPL C++ peut être compilé avec Microsoft Visual Studio 2013. Si vous possédez un module complémentaire Document Security AEM Forms sous licence, vous pouvez contacter l’équipe d’assistance de [Document Security AEM Forms](https://helpx.adobe.com/marketing-cloud/contact-support.html) pour accéder à la bibliothèque portable de protection. Ultérieurement, vous pouvez utiliser l’aide de la bibliothèque portable de protection (fournie avec la bibliothèque) pour installer et utiliser la bibliothèque portable de protection.
 
-### Affichage ou modification des documents protégés  {#view-or-edit-protected-documents}
+### Affichage ou modification des documents protégés {#view-or-edit-protected-documents}
 
 * Pour les **documents PDF**, vous pouvez utiliser Adobe Acrobat DC, Acrobat Reader et Acrobat Reader Mobile pour afficher les documents PDF protégés. Acrobat Reader est souvent déjà installé sur le périphérique de la plupart des utilisateurs, qui n’ont donc pas besoin d’obtenir ou d’apprendre un nouveau logiciel pour afficher les documents protégés. Vous pouvez également télécharger Acrobat Reader à partir du [site Web de téléchargement d’Acrobat Reader](https://get.adobe.com/reader/).
 
 * Pour les **documents Microsoft Office**, vous devez disposer de Microsoft Office et de l’extension Document Security for Microsoft Office AEM Forms. L’extension Document Security est disponible sous forme de module externe Microsoft Office. Vous pouvez télécharger l’extension depuis le site Web d’Adobe.
 
-### Indexation des documents protégés  {#index-protected-documents}
+### Indexation des documents protégés {#index-protected-documents}
 
 Les moteurs de recherche de texte intégral de Microsoft Windows (serveur SharePoint Index) et Adobe Experience Manager (AEM) peuvent effectuer une recherche de texte intégral dans les formats de document courants tels que les fichiers texte brut, les documents Microsoft Office et les fichiers PDF. Vous pouvez utiliser des indexeurs Document Security pour permettre aux moteurs de recherche de texte intégral de rechercher les documents PDF protégés :
 

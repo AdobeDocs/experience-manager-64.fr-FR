@@ -1,8 +1,8 @@
 ---
 title: Modification du contenu de la page
-seo-title: Modification du contenu de la page
+seo-title: Editing Page Content
 description: Le contenu est ajouté à l’aide des composants que vous pouvez déplacer sur la page. Ils peuvent ensuite être modifiés sur place, déplacés ou supprimés.
-seo-description: Le contenu est ajouté à l’aide des composants que vous pouvez déplacer sur la page. Ils peuvent ensuite être modifiés sur place, déplacés ou supprimés.
+seo-description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 uuid: 0b34fb45-286a-4acb-b5d1-efc3d0e4ab70
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
 exl-id: 2d0f11ac-f24b-431e-9076-3e6099eab4ac
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1755'
 ht-degree: 99%
 
 ---
 
-# Modification du contenu de la page {#editing-page-content}
+# Modification du contenu de la page{#editing-page-content}
 
 Une fois la page créée (une nouvelle page ou dans le cadre d’un lancement ou d’une Live Copy), vous pouvez modifier le contenu pour effectuer toute mise à jour dont vous avez besoin.
 
@@ -96,7 +96,7 @@ Ceci est valide pour les types de ressources suivants (certains dépendent du sy
 | Image | Image |
 | Document | Télécharger |
 | Produit | Produit |
-| Vidéo | Modèle  |
+| Vidéo  | Modèle  |
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ Pour créer un composant en faisant glisser l’un des types de ressources ci-de
 
 1. [Modifiez](#editmovecopypastedelete) le composant si nécessaire.
 
-## Modification d’un composant (contenu et propriétés)  {#editing-a-component-content-and-properties}
+## Modification d’un composant (contenu et propriétés) {#editing-a-component-content-and-properties}
 
 Pour modifier un paragraphe existant, procédez comme suit :
 
@@ -202,7 +202,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, c
 
 Les [Annotations](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permettent aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
 
-## Aperçu des pages  {#previewing-pages}
+## Aperçu des pages {#previewing-pages}
 
 Deux icônes disponibles dans la bordure inférieure du sidekick sont importantes pour afficher un aperçu des pages :
 
@@ -224,7 +224,7 @@ Deux icônes disponibles dans la bordure inférieure du sidekick sont importante
 
 Pour les modifications à plus grande échelle d’une même expression, utilisez l’option **[Rechercher et remplacer](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** pour rechercher et remplacer plusieurs instances d’une chaîne dans une section du site web.
 
-## Verrouillage d’une page {#locking-a-page}
+## Verrouillage d’une page    {#locking-a-page}
 
 AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Ceci s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
 
@@ -286,7 +286,6 @@ Les commandes Annuler et Rétablir fonctionnent de la même manière que dans le
 >* Vous pouvez également utiliser les [raccourcis clavier](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) pour les opérations d’annulation et de rétablissement.
 
 >
-
 
 
 Vous pouvez utiliser les commandes d’annulation et de rétablissement pour les types de modification suivants :

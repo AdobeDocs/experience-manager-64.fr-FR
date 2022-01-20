@@ -26,7 +26,7 @@ ht-degree: 73%
 >
 >Pour plus d’informations sur le dépannage et la résolution des problèmes de performances, voir aussi l’[arborescence des performances](/help/sites-deploying/performance-tree.md).
 >
->En outre, vous pouvez consulter un article de la base de connaissances sur les [Conseils d’optimisation des performances.](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html)
+>En outre, vous pouvez consulter un article de la base de connaissances sur [Conseils sur l’optimisation des performances.](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html)
 
 L’un des problèmes majeurs est le temps que met votre site web pour répondre aux requêtes des visiteurs. Bien que cette valeur varie pour chaque demande, une valeur cible moyenne peut être définie. Une fois que cette valeur se révèle être à la fois réalisable et gérable, elle peut être utilisée pour surveiller les performances du site web et indiquer le développement d’éventuels problèmes.
 
@@ -129,7 +129,7 @@ La structure d’un référentiel de contenu peut également se répercuter sur 
 
 Lors d’une activité ordinaire d’optimisation des performances, les ressources suivantes sont d’une très grande utilité :
 
-* le `request.log`
+* la valeur `request.log`
 * le minutage par composant
 * et enfin, mais non des moindres, un profileur Java
 
@@ -172,9 +172,9 @@ Le diagramme suivant illustre le chemin d’accès qu’une demande de contenu A
 
 La performance est également un équilibre entre volume et capacité :
 
-**** Volume : quantité de sortie traitée et diffusée par le système.
+**Volume** La quantité de sortie qui est traitée et diffusée par le système.
 
-**** CapacitéCapacité du système à fournir le volume.
+**Capacité** Capacité du système à fournir le volume.
 
 Cet aspect est présent à différents endroits de la chaîne web.
 
@@ -231,17 +231,17 @@ Le moteur de workflow utilise les files d’attente de tâches Apache Sling pou
 
 Configurez ces services pour limiter le nombre maximal de workflows en cours d’exécution.
 
-**Remarque :**  La configuration de ces files d’attente de tâches affecte tous les workflows, sauf si vous avez créé une file d’attente de tâches pour un modèle de workflow spécifique (voir  [Configuration de la file d’attente pour un ](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) modèle de workflow spécifique ci-dessous).
+**Remarque :** La configuration de ces files d’attente de tâches affecte tous les workflows, sauf si vous avez créé une file d’attente de tâches pour un modèle de workflow spécifique (voir [Configuration de la file d’attente pour un modèle de processus spécifique](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) ci-dessous).
 
 #### Configuration dans le référentiel {#configuration-in-the-repo}
 
-Si vous configurez les services [à l’aide d’un noeud sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), vous devez trouver le PID des services existants, par exemple : org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Vous pouvez détecter le PID à l’aide de la console web.
+Si vous configurez les services [utilisation d’un noeud sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), vous devez trouver le PID des services existants, par exemple : org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Vous pouvez détecter le PID à l’aide de la console web.
 
 Vous devez configurer la propriété nommée `queue.maxparallel`.
 
 #### Configuration dans la console web {#configuration-in-the-web-console}
 
-Pour configurer ces services [à l’aide de la console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), recherchez les éléments de configuration existants sous la fabrique de services Configuration de la file d’attente de tâches Apache Sling .
+Pour configurer ces services [à l’aide de la console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), recherchez les éléments de configuration existants sous la fabrique de services Configuration de la file d’attente des tâches Apache Sling .
 
 Vous devez configurer la propriété nommée Maximum Parallel Jobs (Nombre maximal de tâches en parallèle).
 
@@ -272,7 +272,7 @@ La procédure suivante crée une file d’attente de tâches pour un workflow, e
 
 1. Créez une file d’attente pour chacune de ces rubriques. Pour créer une file d’attente, créez une configuration de fabrique pour le service de fabrique File d’attente des tâches Apache.
 
-   Les configurations de fabrique sont similaires à la file d’attente de workflow Granite décrite dans [Traitement de workflow simultané](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing), à l’exception de la propriété Rubriques qui correspond à la rubrique de vos tâches de workflow.
+   Les configurations d’usine sont similaires à la file d’attente de workflow Granite décrite dans [Traitement de workflow simultané](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing), à l’exception de la propriété Rubriques , qui correspond à la rubrique de vos tâches de workflow.
 
 ### AEM Service de synchronisation des ressources de la gestion des actifs numériques {#cq-dam-asset-synchronization-service}
 
@@ -296,9 +296,9 @@ Autres points à prendre en compte :
 
 Les performances sont primordiales pour votre environnement de publication. Par conséquent, vous devez scrupuleusement planifier et analyser les tests de performances que vous allez effectuer pour l’environnement de publication lors de la mise en œuvre de votre projet.
 
-Cette section vise à fournir un aperçu normalisé des problèmes liés à la définition d’un concept de test spécifique aux tests de performance sur votre environnement de *publication*. Elle s’adresse principalement aux ingénieurs en assurance qualité, aux chefs de projet et aux administrateurs système.
+Cette section vise à fournir un aperçu normalisé des problèmes liés à la définition d’un concept de test spécifique aux tests de performance sur vos *publier* environnement. Elle s’adresse principalement aux ingénieurs en assurance qualité, aux chefs de projet et aux administrateurs système.
 
-Vous trouverez ci-dessous une approche normalisée des tests de performance pour une application AEM sur l’environnement *Publier*. Cela implique les 5 phases suivantes :
+Les sections suivantes décrivent une approche normalisée des tests de performance pour une application AEM sur la page *Publier* environnement. Cela implique les 5 phases suivantes :
 
 * [Vérification des connaissances](#verification-of-knowledge)
 * [Définition de la portée](#scope-definition)
@@ -389,8 +389,8 @@ Dans les deux cas, vous pouvez définir le nombre attendu de transactions par se
 |---|---|---|---|---|---|
 | Page d’accueil Utilisateur unique | Moyenne | 1 | 1 |  |  |
 |  | Crête | 1 | 3 |  |  |
-| Page d’accueil 100 utilisateurs | Moyenne | 100 | 1 |  |  |
-|  | Crête | 100 | 1 |  |
+| Page d’accueil 100 utilisateurs | Moyenne | 100 | 3 |  |  |
+|  | Crête | 100 | 3 |  |
 
 #### Tests sur des composants combinés {#combined-component-tests}
 
@@ -402,7 +402,7 @@ En testant une combinaison de composants, vous vous dotez d’une visibilité pl
 |  | Rechercher | 10 | 1 |  |  |
 |  | Actualités | 10 | 2 |  |  |
 |  | Événements | 10 | 1 |  |  |
-|  | Activations | 10 | 1 |  | Simulation du comportement de l’auteur. |
+|  | Activations | 10 | 3 |  | Simulation du comportement de l’auteur. |
 | Pic mixte | Page d’accueil | 100 | 5 |  |  |
 |  | Rechercher | 50 | 5 |  |  |
 |  | Actualités | 100 | 10 |  |  |
@@ -432,7 +432,7 @@ Lors de la conception de ces tests, il faut garder à l’esprit que tous les sc
 
 | Scénario d’erreur | Type d’erreur | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 1 |  | Seulement &amp;ast;&amp;ast;&amp;ast;ast;ast; sont recherchées. |
+| Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 1 |  | Only &amp;ast;&amp;ast;&amp;ast; sont recherchées. |
 |  | Mot de fin | 20 | 2 |  | À la recherche d&#39;un mot stop. |
 |  | Chaîne vide | 10 | 1 |  | Recherche d’une chaîne vide. |
 |  | Caractères spéciaux | 10 | 1 |  | Recherche de caractères spéciaux. |
@@ -447,7 +447,7 @@ Certains problèmes ne feront surface qu’après une période continue de fonct
 |  | Rechercher | 10 | 1 |  |  |
 |  | Actualités | 20 | 2 |  |  |
 |  | Événements | 10 | 1 |  |  |
-|  | Activations | 1 | 1 |  | Simulation du comportement de l’auteur. |
+|  | Activations | 1 | 3 |  | Simulation du comportement de l’auteur. |
 
 ### Optimisation {#optimization}
 
@@ -502,7 +502,7 @@ Le dispatcher propose un certain nombre de mécanismes intégrés pour optimiser
 >
 >En général, de nombreuses stratégies de mise en cache impliquent de sélectionner les URL appropriées et de ne pas s’en tenir à ces informations supplémentaires.
 >
->Avec la version 4.1.1 de Dispatcher, vous pouvez également mettre en cache les en-têtes de réponse. Voir [Mise en cache des en-têtes de réponse HTTP](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
+>Avec la version 4.1.11 de Dispatcher, vous pouvez également mettre en cache les en-têtes de réponse. Voir [Mise en cache des en-têtes de réponse HTTP](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 
 ### Calcul du ratio cache/dispatcher {#calculating-the-dispatcher-cache-ratio}
 
@@ -510,11 +510,11 @@ La formule du ratio évalue le pourcentage des demandes traitées par le cache p
 
 * Le nombre total de demandes. Ces informations sont disponibles dans Apache `access.log`. Pour plus d’informations, voir la [documentation officielle Apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
-* Le nombre de demandes traitées par l’instance de publication. Ces informations sont disponibles dans la balise `request.log` de l’instance. Pour plus d’informations, voir [Interprétation de request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) et [Recherche des fichiers journaux](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
+* Le nombre de demandes traitées par l’instance de publication. Ces informations sont disponibles dans la variable `request.log` de l’instance . Pour plus d’informations, voir [Interprétation de request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) et [Recherche des fichiers journaux](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
 
 Formule de calcul du ratio :
 
-* (Nombre total de requêtes **moins** le nombre de requêtes sur l’élément Publier) **divisé** par le nombre total de requêtes.
+* (Nombre total de demandes) **moins** le nombre de requêtes sur la publication) **divisé** par le nombre total de requêtes.
 
 Par exemple, si le nombre total de demandes est 129491 et le nombre de demandes servies par l’instance de publication est 58959, le ratio est : **(129491 – 58959)/129491 = 54,5 %**.
 
@@ -584,7 +584,7 @@ Si vous affichez les titres de page ou tout autre texte sous la forme d’images
 
    `<page file name>.<image file name>`
 
-Par exemple, vous pouvez stocker le titre de la page myPage.html dans le fichier `myPage.title.gif`. Ce fichier est automatiquement supprimé lorsque la page est mise à jour, de sorte que toute modification du titre de la page est automatiquement répercutée dans le cache.
+Par exemple, vous pouvez stocker le titre de la page myPage.html dans le fichier . `myPage.title.gif`. Ce fichier est automatiquement supprimé lorsque la page est mise à jour, de sorte que toute modification du titre de la page est automatiquement répercutée dans le cache.
 
 >[!NOTE]
 >
@@ -611,7 +611,7 @@ Il est recommandé de limiter la personnalisation à l’endroit nécessaire. Ex
 
 >[!TIP]
 >
->Pour plus d’informations sur la configuration du cache de Dispatcher, consultez le [Tutoriel AEM sur le cache de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) et sa section sur la [mise en cache de contenu protégé.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
+>Pour plus d’informations sur la configuration du cache de Dispatcher, voir la section [Tutoriel sur le cache de Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) et sa section sur [Mise en cache de contenu protégé](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
 
 Si vous personnalisez chaque page (par exemple en plaçant le nom de l’utilisateur dans la barre de titre), cela peut avoir un impact sur les performances.
 
@@ -623,7 +623,7 @@ En ce qui concerne le mélange de contenu public et restreint sur une page, vous
 
 >[!TIP]
 >
->Pour gérer le contenu public mixte et le contenu restreint, voir [Configuration de l’inclusion dynamique Sling.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
+>Pour gérer le contenu public mixte et le contenu restreint, voir [Configurez l’inclusion dynamique Sling.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
 #### Connexions persistantes  {#sticky-connections}
 
@@ -648,7 +648,7 @@ Avec la version 4.1.11 du dispatcher, vous pouvez mettre en cache les en-têtes
 Pour s’assurer que ces fichiers sont correctement mis en cache, suivez les consignes suivantes :
 
 * Assurez-vous que les fichiers ont toujours l’extension appropriée.
-* Évitez les scripts de serveur de fichiers génériques avec des URL telles que `download.jsp?file=2214`. Réécrivez le script pour utiliser les URL contenant la spécification du fichier. Dans l’exemple précédent, il s’agit de `download.2214.pdf`.
+* Évitez les scripts de serveur de fichiers génériques, qui contiennent des URL telles que `download.jsp?file=2214`. Réécrivez le script pour utiliser les URL contenant la spécification du fichier. Dans l’exemple précédent, ce serait : `download.2214.pdf`.
 
 ## Performances des sauvegardes {#backup-performance}
 
@@ -687,8 +687,8 @@ La référence de sauvegarde est répétée avec les jeux de contenu supplément
 
 Les essais comparatifs de sauvegarde couvrent deux scénarios principaux : les sauvegardes lorsque le système est soumis à une charge applicative importante et lorsqu’il est inactif. Bien que la recommandation générale soit que les sauvegardes soient effectuées lorsque AEM est aussi inactif que possible, il existe des situations dans lesquelles il est nécessaire que la sauvegarde soit exécutée lorsque le système est en charge.
 
-* **Les** sauvegardes d’état inactives sont effectuées sans autre activité sur AEM.
-* **Sous** LoadBackups , la charge du système est inférieure à 80 % par rapport aux processus en ligne. Variation du délai de sauvegarde pour déterminer l’impact sur la charge.
+* **État inactif** Les sauvegardes sont effectuées sans autre activité sur AEM.
+* **Sous Chargement** Les sauvegardes sont effectuées lorsque la charge du système est inférieure à 80 % par rapport aux processus en ligne. Variation du délai de sauvegarde pour déterminer l’impact sur la charge.
 
 Les heures de sauvegarde et la taille de la sauvegarde résultante sont obtenues à partir des journaux du serveur AEM. Il est normalement recommandé que les sauvegardes soient planifiées pour les heures de panne lorsque l’AEM est inactive, par exemple au milieu de la nuit. Ce scénario est représentatif de l’approche recommandée.
 
@@ -696,8 +696,8 @@ La charge comporte des activités de création/suppression, parcours et requête
 
 L’impact de la charge sur les performances de sauvegarde peut être évalué par la différence entre les performances avec et sans cette charge applicative. L’impact de la sauvegarde sur le débit de l’application est obtenu en comparant le débit du scénario dans les transactions horaires avec et sans sauvegarde simultanée à des sauvegardes soumises à différents paramètres de « délai de sauvegarde ».
 
-* **** Paramètre de délai : pour plusieurs des scénarios, nous avons également modifié le paramètre de délai de sauvegarde, en utilisant des valeurs de 10 ms (par défaut), 1 ms et 0 ms, afin d’explorer la manière dont ce paramètre a affecté les performances des sauvegardes.
-* **** Type de sauvegarde : toutes les sauvegardes étaient des sauvegardes externes du référentiel effectuées dans un répertoire de sauvegarde sans créer de fichier zip, sauf dans un cas particulier pour la comparaison où la commande tar a été utilisée directement. Étant donné que les sauvegardes incrémentielles ne peuvent pas être créées dans un fichier zip ou si la sauvegarde complète antérieure est un fichier zip, la méthode du répertoire de sauvegarde est la plus souvent utilisée dans des situations de production.
+* **Paramètre de délai** Pour plusieurs des scénarios, nous avons également modifié le paramètre de délai de sauvegarde, en utilisant des valeurs de 10 ms (par défaut), 1 ms et 0 ms, afin d’explorer la manière dont ce paramètre a affecté les performances des sauvegardes.
+* **Type de sauvegarde** Toutes les sauvegardes étaient des sauvegardes externes du référentiel effectuées dans un répertoire de sauvegarde sans créer de fichier zip, sauf dans un cas pour comparaison où la commande tar était utilisée directement. Étant donné que les sauvegardes incrémentielles ne peuvent pas être créées dans un fichier zip ou si la sauvegarde complète antérieure est un fichier zip, la méthode du répertoire de sauvegarde est la plus souvent utilisée dans des situations de production.
 
 ### Résumé des résultats {#summary-of-results}
 

@@ -1,8 +1,8 @@
 ---
 title: Administration d’instances de workflow
-seo-title: Administration d’instances de workflow
+seo-title: Administering Workflow Instances
 description: Découvrez comment administrer des instances de workflows.
-seo-description: Découvrez comment administrer des instances de workflows.
+seo-description: Lear how to administer Workflow Instances.
 uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 70d4117b-5e49-46e4-a0b8-f56cf985536e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '818'
 ht-degree: 94%
 
 ---
@@ -23,7 +23,7 @@ La console de workflows fournit plusieurs outils permettant d’administrer les 
 
 >[!NOTE]
 >
->La [console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fournit des opérations de maintenance de workflow supplémentaires.
+>Le [Console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fournit des opérations de maintenance de workflow supplémentaires.
 
 Différentes consoles sont à votre disposition pour administrer les workflows. Utilisez la [navigation globale](/help/sites-authoring/basic-handling.md#global-navigation) pour ouvrir le panneau **Outils**, puis sélectionnez **Workflows** :
 
@@ -151,9 +151,9 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
  </tbody> 
 </table>
 
-## Définition de la taille maximale de la boîte de réception  {#setting-the-maximum-size-of-the-inbox}
+## Définition de la taille maximale de la boîte de réception {#setting-the-maximum-size-of-the-inbox}
 
-Vous pouvez définir la taille maximale de la boîte de réception en configurant le **service de workflow Granite Adobe**, à l’aide de la [console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [ajoutez une configuration OSGi au référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Le tableau suivant décrit la propriété que vous configurez pour l’une ou l’autre des méthodes.
+Vous pouvez définir la taille maximale de la boîte de réception en configurant la variable **Service de processus Adobe Granite**, à l’aide de la fonction [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [ajouter une configuration OSGi au référentiel ;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Le tableau suivant décrit la propriété que vous configurez pour l’une ou l’autre des méthodes.
 
 >[!NOTE]
 >

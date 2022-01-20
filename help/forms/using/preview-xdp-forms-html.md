@@ -1,8 +1,8 @@
 ---
 title: Génération de l’aperçu HTML5 d’un formulaire XDP
-seo-title: Génération de l’aperçu HTML5 d’un formulaire XDP
+seo-title: Generate HTML5 preview of an XDP form
 description: L’onglet Aperçu HTML dans LiveCycle Designer peut être utilisé pour prévisualiser les formulaires dans un navigateur.
-seo-description: L’onglet Aperçu HTML dans LiveCycle Designer peut être utilisé pour prévisualiser les formulaires dans un navigateur.
+seo-description: Preview HTML tab in LiveCycle Designer can be used to preview forms as they appear in a browser.
 uuid: d004e75d-e569-4e85-8dfa-5c411bc959af
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
@@ -11,7 +11,7 @@ feature: Mobile Forms
 exl-id: f855d3f9-cf3c-4883-b82b-d607250c3dae
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '795'
 ht-degree: 81%
 
 ---
@@ -28,7 +28,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 * Désactiver le mode Protégé
 * Spécification des détails sur le serveur AEM Forms
 
-### Configurer le service d&#39;authentification Apache Sling {#configure-apache-sling-authentication-service}
+### Configurer le service d’authentification Apache Sling {#configure-apache-sling-authentication-service}
 
 1. Accédez à `https://[server]:[port]/system/console/configMgr` sur AEM Forms s’exécutant sur OSGi ou
 
@@ -66,14 +66,14 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
 1. Ouvrez les **[!UICONTROL configurations de Mobile Forms]** à des fins d’édition.
 1. Désélectionnez l’option **[!UICONTROL Mode Protégé]** et cliquez sur **[!UICONTROL Enregistrer]**.
 
-### Spécification des détails sur le serveur AEM Forms  {#provide-details-of-aem-forms-server}
+### Spécification des détails sur le serveur AEM Forms {#provide-details-of-aem-forms-server}
 
 1. Dans Designer, cliquez sur **Tools**> **Options**.
-1. Dans la fenêtre Options, sélectionnez la page **Options du serveur**, fournissez les détails suivants, puis cliquez sur **OK**.
+1. Dans la fenêtre Options, sélectionnez **Options du serveur** , fournissez les informations suivantes, puis cliquez sur **OK**.
 
    * **URL de serveur** : URL du serveur de AEM Forms.
    * **Numéro de port HTTP** : port du serveur AEM. La valeur par défaut est 4502.
-   * **Contexte de l’aperçu HTML :** chemin du profil pour le rendu des formulaires XFA. Les profils par défaut suivants sont utilisés pour prévisualiser le formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
+   * **Contexte de l’aperçu du HTML :** Chemin d’accès du profil pour le rendu des formulaires XFA. Les profils par défaut suivants sont utilisés pour prévisualiser le formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
@@ -82,13 +82,13 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
       * `/aem/forms` (AEM Forms on OSGi)
       * `/lc/forms` (AEM Forms on JEE)
 
-   **Remarque :***assurez-vous que le serveur AEM Forms est en cours d’exécution. L’aperçu HTML se connecte au serveur CRX pour* générer *un aperçu.*
+   **Remarque :***assurez-vous que le serveur AEM Forms est en cours d’exécution. L’aperçu du HTML se connecte au serveur CRX à* générer *un aperçu.*
 
    ![Options d’AEM Forms Designer ](assets/server_options.png)
 
    Options d’AEM Forms Designer
 
-1. Pour prévisualiser un formulaire au format HTML, cliquez sur l’onglet **Aperçu HTML** .
+1. Pour prévisualiser un HTML, cliquez sur le bouton **Prévisualiser le HTML** .
 
    >[!NOTE]
    >

@@ -1,17 +1,17 @@
 ---
 title: Créer une communication interactive
-seo-title: Créer une communication interactive
+seo-title: Create an Interactive Communication
 description: 'Créez une communication interactive à l’aide de l’éditeur de communication interactive. Utilisez la fonctionnalité glisser-déposer pour créer la communication interactive et prévisualisez les sorties d’impression et web sur différents types d’appareils. '
-seo-description: 'Créez une communication interactive à l’aide de l’éditeur de communication interactive. Utilisez la fonctionnalité glisser-déposer pour créer la communication interactive et prévisualisez les sorties d’impression et web sur différents types d’appareils. '
+seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
 uuid: b98e9a49-cef2-42f2-b484-8765b859895b
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c106aa41-cbc0-4daf-9ac6-6c0d23710010
-feature: Communication interactive
+feature: Interactive Communication
 exl-id: a65b775d-040c-4069-b43a-6815be959b31
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3154'
+source-wordcount: '3120'
 ht-degree: 61%
 
 ---
@@ -29,55 +29,55 @@ Les communications interactives centralisent et gèrent la création, l’assemb
 Les conditions préalables à la création d’une communication interactive sont les suivantes :
 
 * Configurez un [modèle de données de formulaire](/help/forms/using/data-integration.md) contenant des données de test ou une source de données réelle, telle qu’une instance de Microsoft® Dynamics.
-* Vérifiez que vous disposez des [fragments de document](/help/forms/using/document-fragments.md).
-* Vérifiez que vous disposez des [modèles pour les canaux d’impression et web](/help/forms/using/web-channel-print-channel.md).
+* Assurez-vous que vous disposez de la variable [Fragments de document](/help/forms/using/document-fragments.md).
+* Assurez-vous que vous avez [Modèles de canal d’impression et web](/help/forms/using/web-channel-print-channel.md).
 * Assurez-vous de disposer du [thème](/help/forms/using/themes.md) requis pour le canal web.
 
 ## Créer une communication interactive {#createic}
 
 1. Connectez-vous à l’instance d’auteur AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Appuyez sur **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Communication interactive]**. La page Créer une communication interactive s’affiche.
+1. Appuyer **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Communication interactive]**. La page Créer une communication interactive s’affiche.
 
    ![create-interactive-communication](assets/create-interactive-communication.png)
 
 1. Saisissez les informations suivantes :  :
 
    * **[!UICONTROL Titre]** : entrez le titre de la communication interactive.
-   * **[!UICONTROL Nom*]** : Le nom de la communication interactive est dérivé du titre que vous saisissez. Modifiez-le, si nécessaire.
+   * **[!UICONTROL Nom*]**: Le nom de la communication interactive est dérivé du titre que vous saisissez. Modifiez-le, si nécessaire.
    * **[!UICONTROL Description]** : entrez une description de la communication interactive.
    * **[!UICONTROL Modèle de données de formulaire*]** : recherchez et sélectionnez le modèle de données de formulaire. Pour plus d’informations sur le modèle de données de formulaire, voir [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
-   * **[!UICONTROL Service de préremplissage]** : Sélectionnez le service de préremplissage pour récupérer les données et préremplir la communication interactive.
-   * **[!UICONTROL Type de post-traitement]** : Vous pouvez sélectionner AEM ou le workflow Forms à déclencher lors de l’envoi de la communication interactive. Sélectionnez le type de processus à déclencher.
-   * **[!UICONTROL Post-traitement]** : sélectionnez le nom du processus à déclencher. Lorsque vous sélectionnez AEM processus, fournissez les éléments Chemin de la pièce jointe, Chemin de mise en page, Chemin PDF, Chemin d’accès aux données d’impression et Chemin des données web.
-   * **[!UICONTROL Balises]** : Sélectionnez les balises à appliquer à la communication interactive. Vous pouvez également saisir un nom de balise nouveau ou personnalisé et appuyer sur Entrée pour créer la balise.
+   * **[!UICONTROL Service de préremplissage]**: Sélectionnez le service de préremplissage pour récupérer les données et préremplir la communication interactive.
+   * **[!UICONTROL Type de post-traitement]**: Vous pouvez sélectionner AEM ou le workflow Forms à déclencher lors de l’envoi de la communication interactive. Sélectionnez le type de processus à déclencher.
+   * **[!UICONTROL Post-traitement]** : sélectionnez le nom du processus à déclencher. Lorsque vous sélectionnez AEM processus, fournissez les éléments Chemin de la pièce jointe, Chemin de mise en page, Chemin du PDF, Chemin d’accès aux données d’impression et Chemin des données web.
+   * **[!UICONTROL Balises]**: Sélectionnez les balises à appliquer à la communication interactive. Vous pouvez également saisir un nom de balise nouveau ou personnalisé et appuyer sur Entrée pour créer la balise.
    * **[!UICONTROL Auteur]** : le nom de l’auteur est automatiquement extrait du nom de l’utilisateur connecté.
    * **[!UICONTROL Date de publication :]** entrez la date de publication de la communication interactive.
-   * **[!UICONTROL Date d’annulation de la publication]** : Saisissez la date d’annulation de la publication de la communication interactive.
+   * **[!UICONTROL Date d’annulation de la publication]**: Saisissez la date d’annulation de la publication de la communication interactive.
 
 1. Appuyez sur **[!UICONTROL Suivant]**. L’écran de spécification des informations relatives aux canaux web et d’impression s’affiche.
 1. Entrez la commande suivante :
 
    * **[!UICONTROL Imprimer]** : sélectionnez cette option pour générer le canal d’impression de la communication interactive.
-   * **[!UICONTROL Modèle d’impression* :]**  recherchez et sélectionnez un modèle d’impression XDP.
-   * **[!UICONTROL Utiliser l’impression comme Principal pour le canal web :]** sélectionnez cette option pour créer le canal web en synchronisation avec le canal d’impression. L’utilisation du canal d’impression comme page principale du canal web garantit que le contenu et la liaison des données du canal web sont dérivés du canal d’impression et que les modifications apportées au canal d’impression sont répercutées sur le canal web lorsque vous appuyez sur Synchroniser. Les auteurs sont toutefois autorisés à interrompre l’héritage pour des composants spécifiques dans le canal web, selon les besoins. Pour plus d’informations, consultez [Synchroniser le canal web avec le canal d’impression](/help/forms/using/create-interactive-communication.md#synchronize).
-   * **[!UICONTROL Web :]** sélectionnez cette option pour générer le canal web ou la sortie réactive de la communication interactive.
+   * **[!UICONTROL Modèle d’impression* :]** Recherchez et sélectionnez un fichier XDP comme modèle d’impression.
+   * **[!UICONTROL Utiliser l’impression comme Principal pour le canal web :]** Sélectionnez cette option pour créer le canal web en synchronisation avec le canal d’impression. L’utilisation du canal d’impression comme page principale du canal web garantit que le contenu et la liaison des données du canal web sont dérivés du canal d’impression et que les modifications apportées au canal d’impression sont répercutées sur le canal web lorsque vous appuyez sur Synchroniser. Les auteurs sont toutefois autorisés à interrompre l’héritage pour des composants spécifiques dans le canal web, selon les besoins. Pour plus d’informations, consultez [Synchroniser le canal web avec le canal d’impression](/help/forms/using/create-interactive-communication.md#synchronize).
+   * **[!UICONTROL Web :]** Sélectionnez cette option pour générer le canal web ou la sortie réactive de la communication interactive.
    * **[!UICONTROL Modèle Web de communication interactive* :]** recherchez et sélectionnez le modèle Web.
-   * **** Thème et  **[!UICONTROL sélectionnez Thème*]** : Recherchez et sélectionnez le thème pour mettre en forme le canal web de la communication interactive. Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/using/themes.md).
+   * **[!UICONTROL Thème]** et **[!UICONTROL Sélectionner un thème*]**: Recherchez et sélectionnez le thème pour mettre en forme le canal web de la communication interactive. Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/using/themes.md).
    Pour plus d’informations sur le canal d’impression et le canal web, voir [Canal d’impression et canal web](/help/forms/using/web-channel-print-channel.md).
 
-1. Appuyez sur **[!UICONTROL Créer]**. La communication interactive est créée et une zone d’alerte s’affiche. Appuyez sur **[!UICONTROL Modifier]** pour commencer à créer le contenu de la communication interactive, comme expliqué dans la section [Ajout de contenu à l’aide de l’interface utilisateur de création de communication interactive](#step2). Vous pouvez également appuyer sur **[!UICONTROL Terminé]** et choisir de modifier ultérieurement la communication interactive.
+1. Appuyez sur **[!UICONTROL Créer]**. La communication interactive est créée et une zone d’alerte s’affiche. Appuyer **[!UICONTROL Modifier]** pour commencer à créer le contenu de la communication interactive, comme expliqué dans la section [Ajout de contenu à l’aide de l’interface utilisateur de création de communication interactive](#step2). Vous pouvez également appuyer sur **[!UICONTROL Terminé]** et choisissez de modifier la communication interactive ultérieurement.
 
 ## Ajouter du contenu à la communication interactive {#step2}
 
 Après avoir créé une communication interactive, vous pouvez utiliser l’interface de création de communication interactive pour construire son contenu.
 
-Pour plus d’informations sur l’interface de création de communication interactive, voir [Présentation de la création de communication interactive](/help/forms/using/introduction-interactive-communication-authoring.md).
+Pour plus d’informations sur l’interface de création de la communication interactive, voir [Présentation de la création de communication interactive](/help/forms/using/introduction-interactive-communication-authoring.md).
 
-1. L’interface de création de communication interactive est lancée lorsque vous appuyez sur Modifier comme mentionné dans [Créer une communication interactive](#createic). Vous pouvez également accéder à une ressource de communication interactive existante sur AEM, la sélectionner, puis appuyer sur **[!UICONTROL Modifier]** pour lancer l’interface de création de communication interactive.
+1. L’interface de création de communication interactive est lancée lorsque vous appuyez sur Modifier comme indiqué dans la section [Créer une communication interactive](#createic). Vous pouvez également accéder à une ressource de communication interactive existante sur AEM, la sélectionner, puis appuyer sur **[!UICONTROL Modifier]** pour lancer l’interface de création de communication interactive.
 
    Par défaut, le canal d’impression de la communication interactive s’affiche, sauf si la communication interactive est uniquement destinée au canal web. Le canal d’impression de la communication interactive affiche les zones cible, telles qu’elles sont disponibles dans le modèle de canal d’impression/XDP sélectionné. Vous pouvez ajouter des composants ou des ressources dans ces zones et champs cibles.
 
-1. Lorsque le canal d’impression est sélectionné, sélectionnez l’onglet **[!UICONTROL Composants]** . Les composants suivants sont disponibles dans le canal d’impression :
+1. Lorsque le canal d’impression est sélectionné, sélectionnez l’option **[!UICONTROL Composants]** . Les composants suivants sont disponibles dans le canal d’impression :
 
    | **Composant** | **Fonctionnalité** |
    |---|---|
@@ -103,7 +103,7 @@ Pour plus d’informations sur l’interface de création de communication inter
   </tr> 
   <tr> 
    <td><a href="/help/forms/using/texts-interactive-communications.md" target="_blank">Texte</a></td> 
-   <td>Texte pour ajouter l’adresse, l’adresse électronique du destinataire et le texte du corps de la lettre </td> 
+   <td>Texte d’ajout de l’adresse électronique du destinataire, et du corps du texte de la lettre </td> 
   </tr> 
   <tr> 
    <td><a href="/help/forms/using/conditions-interactive-communications.md" target="_blank">Condition</a></td> 
@@ -118,12 +118,12 @@ Pour plus d’informations sur l’interface de création de communication inter
 
 Pour plus d’informations sur les fragments de document, reportez-vous à la section [Fragments de document](/help/forms/using/document-fragments.md).
 
-1. Pour configurer la liaison des variables, appuyez sur une variable et sélectionnez ![configure_icon](assets/configure_icon.png) (Configurer), puis configurez les propriétés de liaison dans le panneau Propriétés de la barre latérale.
+1. Pour configurer la liaison de variables, appuyez sur une variable et sélectionnez ![configure_icon](assets/configure_icon.png) (Configurer), puis configurez les propriétés de liaison dans le panneau Propriétés de la barre latérale.
 
    * **[!UICONTROL Aucun]** : l’agent remplira la valeur de la variable.
    * **[!UICONTROL Fragment de texte]** : si cette option est sélectionnée, vous pouvez rechercher et sélectionner un fragment de document texte dont le contenu est rendu dans le champ. Seuls ces fragments de document texte peuvent être liés à des variables qui ne contiennent aucune variable.
    * **[!UICONTROL Objet de modèle de données]** : sélectionnez une propriété de modèle de données de formulaire dont la valeur est renseignée dans le champ.
-   Vous pouvez également choisir de configurer le fragment de document texte approprié. Le panneau Propriétés affiche la liste des variables dans le fragment de document texte. Vous pouvez appuyer sur ![edit](assets/edit.png) (Modifier) en regard d’un nom de variable pour afficher les paramètres de cette variable à modifier.
+   Vous pouvez également choisir de configurer le fragment de document texte approprié. Le panneau Propriétés affiche la liste des variables dans le fragment de document texte. Vous pouvez appuyer sur ![edit](assets/edit.png) (Modifier) en regard d’un nom de variable pour afficher les paramètres de cette variable en vue de la modifier.
 
 1. Pour l’ajout d’un tableau, lorsque le canal d’impression est sélectionné, appliquez le filtre pour afficher uniquement les fragments de mise en page dans l’onglet **[!UICONTROL Ressources]**. Glissez-déposez le fragment de mise en page requis dans la communication interactive. Un fragment de mise en page est basé sur XDP et peut être utilisé pour créer des mises en page graphiques ou des tableaux statiques et dynamiques dans la communication interactive qui sont renseignés avec des données dynamiques.
 
@@ -147,7 +147,7 @@ Pour plus d’informations sur les fragments de document, reportez-vous à la se
    * [Ajouter des règles aux composants](/help/forms/using/create-interactive-communication.md#rules)
 
 
-1. Passez à **[!UICONTROL Canal Web]**. Le canal web apparaît dans l’éditeur de communication interactive. Lorsque vous passez du canal d’impression au canal web pour la première fois, la synchronisation automatique a lieu. Pour plus d’informations, voir [Synchronisation du canal web à partir du canal d’impression](/help/forms/using/create-interactive-communication.md#synchronize).
+1. Basculer vers **[!UICONTROL Canal web]**. Le canal web apparaît dans l’éditeur de communication interactive. Lorsque vous passez du canal d’impression au canal web pour la première fois, la synchronisation automatique a lieu. Pour plus d’informations, voir [Synchronisation du canal web à partir du canal d’impression](/help/forms/using/create-interactive-communication.md#synchronize).
 
    Comme nous utilisons le canal d’impression comme base pour le canal web dans cet exemple, les espaces réservés, le contenu et la liaison de données du canal d’impression sont synchronisés avec le canal web. Toutefois, vous pouvez modifier et personnaliser le contenu spécifique dans le canal web selon vos besoins.
 
@@ -157,7 +157,7 @@ Pour plus d’informations sur les fragments de document, reportez-vous à la se
 
    | Composants | Fonctionnalité |
    |---|---|
-   | Graphique | Ajoute un graphique que vous pouvez utiliser dans la communication interactive pour la représentation visuelle des données bidimensionnelles extraites d’une collection de modèles de données de formulaire. Pour plus d’informations, voir [Utilisation du composant graphique](/help/forms/using/chart-component-interactive-communications.md). |
+   | Graphique | Ajoute un graphique que vous pouvez utiliser dans la communication interactive pour la représentation visuelle des données bidimensionnelles extraites d’une collection de modèles de données de formulaire. Pour plus d’informations, voir [Utilisation du composant de graphique](/help/forms/using/chart-component-interactive-communications.md). |
    | Fragment de document | Permet d’ajouter un composant, un texte, une liste ou une condition réutilisable à une communication interactive. Le composant réutilisable que vous ajoutez à une communication interactive peut être basé sur un modèle de données de formulaire ou sans modèle de données de formulaire. |
    | Image | Permet d’insérer une image. |
    | Panneau | Le composant Panneau est un espace réservé pour regrouper d’autres composants et contrôle la disposition d’un groupe de composants (accordéons et onglets) dans la communication interactive. Un composant de panneau vous permet également de permettre la répétition d’un groupe de composants pour l’utilisateur final, par exemple dans plusieurs entrées requises pour remplir les informations d’identification. |
@@ -167,23 +167,23 @@ Pour plus d’informations sur les fragments de document, reportez-vous à la se
 
 1. Au besoin, insérez des ressources dans votre canal web.
 
-   Vous pouvez [prévisualiser votre communication interactive](#previewic) pour voir à quoi ressemblent les sorties impression et web de la communication interactive et continuer à apporter des modifications, si nécessaire.
+   Vous pouvez [prévisualiser votre communication interactive](#previewic) pour voir à quoi ressemblent les sorties impression et web de la communication interactive et continuer à apporter des modifications, selon les besoins.
 
 ## Prévisualiser la communication interactive {#previewic}
 
-Vous pouvez utiliser l’option **[!UICONTROL Aperçu]** pour évaluer l’aspect de la communication interactive. Le canal web de la communication interactive offre également une option Émuler l’expérience d’une communication interactive pour divers appareils. Par exemple, iPhone, iPad et appareils de bureau. Vous pouvez utiliser conjointement les options **[!UICONTROL Aperçu]** et **[!UICONTROL Émulateur]** ![règle](assets/ruler.png) pour prévisualiser les sorties web pour les appareils de tailles d’écran différentes. Les exemples de données dans l’aperçu sont renseignés à partir du modèle de données de formulaires spécifié.
+Vous pouvez utiliser la variable **[!UICONTROL Aperçu]** pour évaluer l’aspect de la communication interactive. Le canal web de la communication interactive offre également une option Émuler l’expérience d’une communication interactive pour divers appareils. Par exemple, iPhone, iPad et appareils de bureau. Vous pouvez utiliser les deux **[!UICONTROL Aperçu]** et **[!UICONTROL Émulateur]** ![règle](assets/ruler.png) les options les unes avec les autres pour prévisualiser les sorties web pour les appareils de tailles d’écran différentes. Les exemples de données dans l’aperçu sont renseignés à partir du modèle de données de formulaires spécifié.
 
 1. Sélectionnez le canal (d’impression ou web) à prévisualiser et appuyez sur Aperçu. La communication interactive s’affiche.
 
    >[!NOTE]
    >
-   >L’aperçu est rempli avec les exemples de données du modèle de données de formulaire spécifié. Pour plus d’informations sur l’aperçu de la communication interactive avec d’autres données ou l’utilisation du service de préremplissage, voir [Utilisation du modèle de données de formulaire](/help/forms/using/using-form-data-model.md) et [Utilisation du modèle de données de formulaire](/help/forms/using/work-with-form-data-model.md).
+   >L’aperçu est rempli avec les exemples de données du modèle de données de formulaire spécifié. Pour plus d’informations sur l’aperçu de la communication interactive avec d’autres données ou l’utilisation du service de préremplissage, voir [Utiliser le modèle de données de formulaire](/help/forms/using/using-form-data-model.md) et [Utilisation du modèle de données de formulaire](/help/forms/using/work-with-form-data-model.md).
 
-1. Pour le canal web, utilisez ![ruler](assets/ruler.png) pour afficher l’aspect de la communication interactive sur divers appareils.
+1. Pour le canal web, utilisez ![règle](assets/ruler.png) pour afficher l’aspect de la communication interactive sur différents appareils.
 
    ![webchannelpreview](assets/webchannelpreview.png)
 
-De plus, vous pouvez [Préparer et envoyer une communication interactive à l’aide de l’interface utilisateur de l’agent](/help/forms/using/prepare-send-interactive-communication.md).
+De plus, vous pouvez [Préparation et envoi d’une communication interactive à l’aide de l’interface utilisateur de l’agent](/help/forms/using/prepare-send-interactive-communication.md).
 
 ## Configuration des propriétés dans la communication interactive  {#configuring-properties-in-interactive-communication}
 
@@ -204,7 +204,7 @@ Dans le canal d’impression, vous pouvez configurer les pièces jointes et l’
    * **[!UICONTROL Autoriser l’accès à la bibliothèque]** : sélectionnez cette option pour permettre à l’agent d’accéder à la bibliothèque dans l’interface utilisateur de l’agent. Si cette option est activée, l’agent peut ajouter des fichiers depuis la bibliothèque tout en préparant la communication interactive.
    * **[!UICONTROL Autoriser la réorganisation des pièces jointes]** : sélectionnez cette option pour permettre à l’agent de réorganiser les pièces jointes avec la communication interactive.
    * **[!UICONTROL Nombre max de pièces jointes autorisé]** : spécifiez le nombre maximum de pièces jointes autorisées avec la communication interactive.
-   * **[!UICONTROL Fichiers à joindre]** : Appuyez sur  **** Ajouter et parcourez l’arborescence pour sélectionner les fichiers à joindre et spécifiez les éléments suivants :
+   * **[!UICONTROL Fichiers à joindre]**: Appuyer **[!UICONTROL Ajouter]** et recherchez les fichiers à joindre et indiquez ce qui suit :
 
       * **[!UICONTROL Joindre ce fichier au document par défaut]** : vous pouvez modifier cette option si seule la pièce jointe n’est pas obligatoire.
       * **[!UICONTROL Obligatoire :]** l’agent ne pourra pas supprimer la pièce jointe dans l’interface utilisateur de l’agent.
@@ -214,7 +214,7 @@ Dans le canal d’impression, vous pouvez configurer les pièces jointes et l’
 
 ### Propriétés du champ XDP/mise en page {#xdplayoutfieldproperties}
 
-1. Lors de la modification du canal d’impression d’une communication interactive, passez la souris sur un champ intégré au modèle de canal d’impression, puis sélectionnez ![configure_icon](assets/configure_icon.png) (Configurer).
+1. Lors de la modification du canal d’impression d’une communication interactive, passez la souris sur un champ intégré au modèle de canal d’impression, puis sélectionnez ![configure_icon](assets/configure_icon.png) (Configuration).
 
    La boîte de dialogue Propriétés s’affiche dans la barre latérale.
 
@@ -232,16 +232,16 @@ Dans le canal d’impression, vous pouvez configurer les pièces jointes et l’
    * **[!UICONTROL Valeurs par défaut]** : la valeur par défaut veille à ce que le champ ne soit pas vide lorsqu’aucune valeur n’est fournie par l’objet de modèle de données ou le fragment de texte spécifié. Si aucun type de liaison de données n’est défini, la valeur par défaut est préremplie dans la zone.
    * **[!UICONTROL Modifiable par l’agent]** : sélectionnez cette option pour permettre à l’agent de modifier la valeur du champ de l’interface utilisateur de l’agent. Ce paramètre n’est pas applicable si le type de liaison est Fragment de texte.
    * **[!UICONTROL Libellé]** : spécifiez une chaîne de texte affichée avec le champ dans l’interface utilisateur de l’agent. Ce paramètre n’est pas applicable si le type de liaison est Fragment de texte.
-   * **[!UICONTROL Info-bulle]** : Saisissez une chaîne de texte qui sera visible lorsque vous passez le curseur de la souris sur l’agent dans l’interface utilisateur de l’agent. Ce paramètre n’est pas applicable si le type de liaison est Fragment de texte.
+   * **[!UICONTROL Info-bulle]**: Saisissez une chaîne de texte qui sera visible lorsque vous passez le curseur de la souris sur l’agent dans l’interface utilisateur de l’agent. Ce paramètre n’est pas applicable si le type de liaison est Fragment de texte.
    * **[!UICONTROL Obligatoire]** : sélectionnez cette option pour que le champ soit obligatoire pour l’agent. Ce paramètre n’est pas applicable si le type de liaison est Fragment de texte.
    * **[!UICONTROL Permettre des lignes multiples]** : sélectionnez ce champ pour activer les lignes de texte multiples comme entrée dans le champ. Ce paramètre n’est pas applicable si le type de liaison est Fragment de texte.
 
 
-1. Appuyez sur ![done_icon](assets/done_icon.png).
+1. Appuyer ![done_icon](assets/done_icon.png).
 
 ## Appliquer des règles à des composants de communication interactive {#rules}
 
-Pour conditionner les composants ou le contenu dans la communication interactive, appuyez sur le composant/l’élément de contenu et sélectionnez ![createruleicon](assets/createruleicon.png) (Créer une règle) pour lancer l’éditeur de règles.
+Pour conditionner des composants ou du contenu dans la communication interactive, appuyez sur le composant/élément de contenu et sélectionnez ![createruleicon](assets/createruleicon.png) (Créer une règle) pour lancer l’éditeur de règles.
 
 Pour en savoir plus, voir:
 
@@ -265,7 +265,7 @@ Vous pouvez ajouter des tableaux dynamiques dans la communication interactive à
 
 1. Spécifiez la liaison de données pour chacune des cellules du tableau. Pour créer une ligne répétable, insérez les propriétés du modèle de données de formulaire dans la ligne appartenant à une propriété de collection commune.
 
-   1. Appuyez sur une cellule du tableau et sélectionnez ![configure_icon](assets/configure_icon.png) (Configurer).
+   1. Appuyez sur une cellule du tableau et sélectionnez ![configure_icon](assets/configure_icon.png) (Configuration).
 
       La boîte de dialogue Propriétés s’affiche dans la barre latérale.
 
@@ -274,15 +274,15 @@ Vous pouvez ajouter des tableaux dynamiques dans la communication interactive à
    1. Configurez les propriétés :
 
       * **[!UICONTROL Nom]** : nom du nœud JCR.
-      * **[!UICONTROL Titre]** : Saisissez un titre qui sera visible dans l’éditeur de communication interactive.
-      * **[!UICONTROL Type de liaison]**&amp;ast; Sélectionnez l’un des types de liaison suivants pour le champ.
+      * **[!UICONTROL Titre]**: Saisissez un titre qui sera visible dans l’éditeur de communication interactive.
+      * **[!UICONTROL Type de liaison]**&amp;ast; : Sélectionnez l’un des types de liaison suivants pour le champ.
 
          * **[!UICONTROL Aucune]**
          * **[!UICONTROL Objet de modèle de données]** : une valeur de propriété de modèle de données de formulaire est renseignée dans le champ.
-      * **[!UICONTROL Objet de modèle de données]** : Propriété de modèle de données de formulaire dont la valeur est renseignée dans le champ .
-      * **[!UICONTROL Valeur]** par défaut : La valeur par défaut garantit que le champ n’est pas vide lorsqu’aucune valeur n’est fournie par l’objet de modèle de données spécifié. La valeur par défaut est prérenseignée dans le champ.
+      * **[!UICONTROL Objet de modèle de données]**: Propriété de modèle de données de formulaire dont la valeur est renseignée dans le champ .
+      * **[!UICONTROL Valeur par défaut]**: La valeur par défaut garantit que le champ n’est pas vide lorsqu’aucune valeur n’est fournie par l’objet de modèle de données spécifié. La valeur par défaut est prérenseignée dans le champ.
       * **[!UICONTROL Modifiable par l’agent]** : sélectionnez cette option pour permettre à l’agent de modifier la valeur du champ de l’interface utilisateur de l’agent.
-   1. Appuyez sur ![done_icon](assets/done_icon.png).
+   1. Appuyer ![done_icon](assets/done_icon.png).
 
 
 
@@ -323,13 +323,13 @@ Si vous utilisez le canal d’impression comme canal principal pour le canal web
 
 Dans le canal web, les composants sont inclus dans les zones cible.
 
-Pointez sur la zone cible appropriée du canal web et sélectionnez ![annuler l’héritage](assets/cancelinheritance.png) (Annuler l’héritage), puis, dans la boîte de dialogue Annuler l’héritage, appuyez sur **[!UICONTROL Oui]**.
+Passez la souris sur la zone cible appropriée du canal web et sélectionnez ![annulation inheritance](assets/cancelinheritance.png) (Annuler l’héritage), puis, dans la boîte de dialogue Annuler l’héritage, appuyez sur **[!UICONTROL Oui]**.
 
 L’héritage des composants dans la zone cible est annulé et vous pouvez désormais les modifier selon vos besoins.
 
 ### Réactiver l’héritage {#re-enable-inheritance}
 
-Dans le canal web, vous pouvez réactiver l’héritage d’un composant si vous l’avez annulé. Pour réactiver l’héritage, passez la souris sur la limite de la zone cible appropriée, qui inclut le composant, et appuyez sur ![réactiver l’héritage](assets/reenableinheritance.png).
+Dans le canal web, vous pouvez réactiver l’héritage d’un composant si vous l’avez annulé. Pour réactiver l’héritage, passez la souris sur la limite de la zone cible appropriée, qui inclut le composant, puis appuyez sur ![réactiver l’héritage](assets/reenableinheritance.png).
 
 La boîte de dialogue Inverser l’héritage s’affiche.
 

@@ -1,17 +1,17 @@
 ---
 title: Tableaux dans les formulaires adaptatifs
-seo-title: Tableaux dans les formulaires adaptatifs
+seo-title: Tables in adaptive forms
 description: 'Le composant Tableau d’AEM Forms permet de créer des tableaux dans les formulaires adaptatifs qui sont sensibles aux mises en page des périphériques mobiles. Il permet aussi d’utiliser des composants de table XDP. '
-seo-description: 'Le composant Tableau d’AEM Forms permet de créer des tableaux dans les formulaires adaptatifs qui sont sensibles aux mises en page des périphériques mobiles. Il permet aussi d’utiliser des composants de table XDP. '
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 uuid: 604cd51f-2a47-4410-b414-9cb13fe63713
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 3269aab9-ac39-4adc-9a6b-9fe9f4276b29
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2172'
+source-wordcount: '2140'
 ht-degree: 90%
 
 ---
@@ -50,7 +50,7 @@ Par exemple, la première rangée du corps du tableau ci-dessous inclut les comp
 
 Vous pouvez fusionner deux cellules du corps ou plus en sélectionnant les cellules que vous souhaitez fusionner, puis en cliquant avec le bouton droit et en choisissant la commande **Fusionner**. Vous pouvez aussi diviser une cellule fusionnée en cliquant sur celle-ci et en sélectionnant **Fractionner les cellules**.
 
-### Ajout, suppression et déplacement de lignes et de colonnes  {#add-delete-move-rows-and-columns}
+### Ajout, suppression et déplacement de lignes et de colonnes {#add-delete-move-rows-and-columns}
 
 Vous pouvez ajouter et supprimer une ligne ou une colonne, ou encore déplacer une ligne vers le haut et vers le bas dans un tableau.
 
@@ -68,13 +68,13 @@ Le menu déroulant pour la ligne propose également l’opération Modifier pour
 >
 >Alors qu’il est possible d’ajouter un nombre quelconque de lignes à un tableau, le nombre maximal de colonnes que vous pouvez ajouter est de six. En outre, vous ne pouvez pas supprimer la ligne d’en-tête du tableau.
 
-### Définir la largeur de colonne d’un tableau {#set-column-width}
+### Définition de la largeur d’une colonne pour un tableau {#set-column-width}
 
 Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
 
-1. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur le composant **[!UICONTROL Tableau]** et appuyez sur l’icône Configurer (![Configurer](assets/configure-icon.svg)).
+1. Dans le **[!UICONTROL Contenu]** , appuyez sur la touche **[!UICONTROL Tableau]** et appuyez sur Configurer (![Configurer](assets/configure-icon.svg)).
 
-1. Entrez la liste des valeurs séparées par des virgules dans le champ **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, la spécification de 2,4,6 comme valeur dans le champ **[!UICONTROL Largeur de colonne]** entraîne la définition de la largeur des colonnes comme 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième colonne. 2/12 comme la largeur de la première colonne fait référence à un sixième de la largeur du tableau. De même, 4/12 définit la largeur de la deuxième colonne sur un tiers de celle du tableau et 6/12 définit la largeur de la troisième colonne sur la moitié de celle du tableau.
+1. Entrez la liste des valeurs séparées par des virgules dans la variable **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, 2,4,6 comme valeur dans la variable **[!UICONTROL Largeur de colonne]** , la largeur des colonnes est définie sur 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième. 2/12 comme la largeur de la première colonne fait référence à un sixième de la largeur du tableau. De même, 4/12 définit la largeur de la deuxième colonne sur un tiers de celle du tableau et 6/12 définit la largeur de la troisième colonne sur la moitié de celle du tableau.
 
 ### Ajout d’une description de tableau {#add-table-description}
 
@@ -88,7 +88,7 @@ Vous pouvez ajouter une description au tableau pour expliquer comment il organis
 
 Vous pouvez définir le style d’un tableau à l’aide du mode Style dans la barre d’outils de la page. Exécutez les étapes suivantes pour passer en mode Style et modifier le style du tableau.
 
-1. Dans la barre d’outils de la page, avant l’aperçu, appuyez sur ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Dans la barre d’outils de la page, avant l’aperçu, appuyez sur ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
 
 1. Dans la barre latérale, sélectionnez le tableau, puis appuyez sur le bouton Modifier ![edit-button](assets/edit-button.png).
 
@@ -108,15 +108,15 @@ Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou l
 1. Dans l’onglet Paramètres de répétition, spécifiez les valeurs minimale et maximale pour limiter le nombre de lignes du tableau.
 1. Cliquez sur **Terminé**.
 
-Au moment de l’exécution, les boutons **`+`** et *`-`* s’affichent pour ajouter ou supprimer une ligne.
+Au moment de l’exécution, vous verrez **`+`** et *`-`* pour ajouter ou supprimer une rangée.
 
 ![ajout-suppression-dynamique-de lignes](assets/add-delete-rows-dynamically.png)
 
 >[!NOTE]
 >
->L’ajout ou la suppression dynamique d’une ligne n’est pas prise en charge dans les en-têtes à gauche de la disposition des tableaux mobiles.
+>L’ajout ou la suppression dynamique d’une ligne n’est pas pris en charge dans les en-têtes à gauche de la disposition des tableaux mobiles.
 
-## Expressions dans un tableau  {#expressions-in-a-table}
+## Expressions dans un tableau {#expressions-in-a-table}
 
 Les tableaux des formulaires adaptatifs permettent d’écrire des expressions en JavaScript pour induire des comportements, tels qu’afficher ou masquer un tableau ou une ligne, ajouter tous les nombres et afficher le total dans une cellule, activer ou désactiver une cellule, valider une entrée utilisateur, etc. Ces expressions utilisent le modèle de script API des formulaires adaptatifs.
 
@@ -142,17 +142,17 @@ Pour obtenir la liste complète des classes de formulaires adaptatifs, des évé
 
 Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. AEM Forms offre deux types de dispositions de tableaux pour les appareils mobiles - En-têtes à gauche et Colonnes réductibles.
 
-Vous pouvez configurer une disposition de tableau pour périphériques mobiles depuis l’onglet Style de la boîte de dialogue Modifier le composant.
+Vous pouvez configurer une disposition de tableau pour appareils mobiles depuis l’onglet Style de la boîte de dialogue Modifier le composant.
 
-### Disposition En-têtes à gauche  {#headers-on-left}
+### Disposition En-têtes à gauche {#headers-on-left}
 
 Dans la disposition En-têtes à gauche, les en-têtes du tableau sont transposés à gauche. Une seule cellule apparaît pour un en-tête. Chaque ligne dans cette disposition s’affiche en tant que partie distincte. Les images suivantes comparent un tableau sur un bureau et le même tableau sur un périphérique mobile.
 
-![](assets/desktopview.png)
-**desktopviewFigure :** *vue bureau d’un tableau avec disposition En-tête à gauche*
+![desktopview](assets/desktopview.png)
+**Figure :** *Vue Bureau d’un tableau avec disposition En-tête à gauche*
 
-![](assets/headersontheleft.png)
-**headersontheleftFigure :** *vue mobile d’un tableau avec disposition En-tête à gauche*
+![headersontheleft](assets/headersontheleft.png)
+**Figure :** *Vue mobile d’un tableau avec disposition En-tête à gauche*
 
 ### Disposition Colonnes réductibles {#collapsible-columns-layout}
 
@@ -160,17 +160,17 @@ Dans la disposition Colonnes réductibles, les colonnes du tableau sont réduite
 
 >[!NOTE]
 >
->Remarque : alors que la disposition Colonne réductible est optimisée pour les appareils mobiles, elle fonctionne également sur le bureau, si la largeur disponible est insuffisante pour afficher toutes les colonnes d’un tableau.
+>Remarque : Alors que la disposition Colonne réductible est optimisée pour les appareils mobiles, elle fonctionne également sur le bureau, si la largeur disponible est insuffisante pour afficher toutes les colonnes d’un tableau.
 
 Les images suivantes comparent l’aspect d’un tableau affiché sur un périphérique, l’un comportant des colonnes réduites, l’autre les affichant développées.
 
-![collapsed-column](assets/collapsed-column.png) 
-**Figure :** *Colonnes réduites d’un tableau contenant uniquement deux colonnes s’affichant sur un périphérique mobile*
+![collapsed-column](assets/collapsed-column.png)
+**Figure :** *Colonnes réduites d’un tableau ne comportant que deux colonnes et apparaissant sur un périphérique mobile*
 
-![collapse_](assets/collapsible_column.png)
-**columnFigure :** *colonne développée d’un tableau sur un appareil mobile*
+![collapse_column](assets/collapsible_column.png)
+**Figure :** *Colonne développée d’un tableau sur un périphérique mobile*
 
-## Fusion de données dans un tableau  {#merge-data-in-a-table}
+## Fusion de données dans un tableau {#merge-data-in-a-table}
 
 Les tableaux des formulaires adaptatifs permettent de renseigner le tableau lors de l’exécution avec des données provenant d’un fichier XML. Le fichier XML de données peut résider dans le système de fichiers local de l’ordinateur sur lequel le serveur AEM Forms est exécuté ou dans le référentiel CRX.
 

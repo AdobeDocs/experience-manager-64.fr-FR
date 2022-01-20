@@ -1,8 +1,8 @@
 ---
 title: Résumé des nouvelles fonctionnalités | AEM 6.4 Forms
-seo-title: Résumé des nouvelles fonctionnalités | AEM 6.4 Forms
+seo-title: New features summary | AEM 6.4 Forms
 description: Résumé des nouvelles fonctionnalités et améliorations de la version 6.4 d’AEM Forms.
-seo-description: Résumé des nouvelles fonctionnalités et améliorations de la version 6.4 d’AEM Forms.
+seo-description: Summary of new features and enhancements in AEM 6.4 Forms.
 uuid: 152068ec-47a8-43f4-b9c8-3a17d1f085fe
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 exl-id: 21b8ed83-9c0c-41ee-9fbb-56ccebaee132
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2002'
 ht-degree: 81%
 
 ---
@@ -22,7 +22,7 @@ Résumé des nouvelles fonctionnalités et améliorations de la version 6.4 d’
 
 AEM Forms comporte plusieurs nouvelles fonctionnalités et améliorations qui optimisent la création, la gestion et les expériences utilisateur avec des formulaires adaptatifs et des communications interactives.
 
-Lisez ci-après la présentation rapide des nouvelles fonctionnalités et améliorations. Consultez la documentation pour de plus amples informations. Vous pouvez également consulter les [notes de mise à jour](/help/release-notes/forms.md) d’AEM 6.4 Forms. Pour accéder à la documentation complète d’AEM 6.4 Forms, consultez le [Guide Forms 6.4](/help/forms/home.md).
+Lisez ci-après la présentation rapide des nouvelles fonctionnalités et améliorations. Consultez la documentation pour de plus amples informations. Vous pouvez également consulter les [notes de mise à jour](/help/release-notes/forms.md) d’AEM 6.4 Forms. Pour consulter la documentation complète d’AEM 6.4 Forms, rendez-vous sur la page [Guide d’AEM 6.4 Forms](/help/forms/home.md).
 
 ## Communications interactives {#interactive-communications}
 
@@ -81,7 +81,7 @@ Pour plus d’informations, voir [Préparation et envoi d’une communication in
 
 La communication interactive prend en charge les graphiques dans le canal d’impression et le canal web pour des communications plus riches. À l’aide de graphiques (circulaire, anneau, barre et colonne), vous pouvez condenser et présenter une large quantité d’informations pour faciliter l’interprétation et l’analyse.
 
-![diagramme-2](assets/chart-2.png) ![](assets/chart.png)
+![chart-2](assets/chart-2.png) ![chart](assets/chart.png)
 
 Pour plus d’informations, voir [Utilisation de graphiques dans les communications interactives](/help/forms/using/chart-component-interactive-communications.md).
 
@@ -111,7 +111,7 @@ Pour en savoir plus, voir:
 
 Par défaut, les actifs de lettres des versions précédentes d’AEM Forms ne sont pas pris en charge dans cette version. Pour continuer à utiliser les lettres dans AEM 6.3 Forms et AEM 6.2 Forms, vous devez installer un package de compatibilité.
 
-## Intégration de données {#data-integration}
+## Intégration de données  {#data-integration}
 
 ![](do-not-localize/data-integeration-1.png)
 
@@ -127,7 +127,7 @@ De même, vous pouvez créer des entités et des propriétés enfant dans un mod
 
 Pour plus d’informations, voir [Créer un modèle de données de formulaire](/help/forms/using/create-form-data-models.md).
 
-### Création des propriétés calculées  {#create-computed-properties}
+### Création des propriétés calculées {#create-computed-properties}
 
 Les auteurs et les développeurs de formulaires peuvent créer des propriétés calculées dans un modèle de données de formulaire. Ils vous permettent de calculer une valeur pour la propriété en créant des règles ou une logique sur les données disponibles dans les sources de données configurées. Une règle est une expression évaluée lorsque les données sont chargées dans le modèle de données de formulaire ou que les valeurs des propriétés de l’expression changent. Par exemple, une propriété calculée appelée Versements calcule le montant mensuel à payer pour un prêt en fonction du taux d’intérêt spécifié dans la source de données et du montant du prêt et de la durée spécifiés par l’utilisateur dans le formulaire.
 
@@ -141,11 +141,11 @@ Le modèle de données de formulaire permet de générer des exemples de donnée
 
 L’exemple de données est un ensemble de valeurs aléatoires qui change chaque fois que vous le générez. Cependant, vous pouvez modifier et enregistrer les exemples de données qui persistent même si vous les régénérez. Par exemple, si vous modifiez et enregistrez les exemples de données pour les propriétés Prénom et Nom et si vous ajoutez ultérieurement une autre propriété ou entité dans le modèle de données de formulaire et régénérez les exemples de données, les propriétés Prénom et Nom afficheront les valeurs enregistrées tandis que les valeurs des autres propriétés seront régénérées.
 
-Pour plus d’informations, voir [Utilisation du modèle de données de formulaire](/help/forms/using/using-form-data-model.md).
+Pour plus d’informations, voir [Utiliser le modèle de données de formulaire](/help/forms/using/using-form-data-model.md).
 
 ### Actualiser les définitions de source de données {#refresh-data-source-definitions}
 
-Toute mise à jour dans les propriétés ou les entités de source de données ne se reflète pas automatiquement dans les modèles de données de formulaire associés. L’éditeur de modèle de données de formulaire comprend désormais ![refresh_forms_di](assets/refresh_forms_di.png) (Actualiser les définitions de source de données) qui invalide le cache du serveur et récupère le schéma mis à jour de la source de données pour le refléter immédiatement dans le modèle de données de formulaire.
+Toute mise à jour dans les propriétés ou les entités de source de données ne se reflète pas automatiquement dans les modèles de données de formulaire associés. L’éditeur de modèle de données de formulaire est désormais disponible ![refresh_forms_di](assets/refresh_forms_di.png) (Actualiser les définitions de source de données) qui invalide le cache du serveur et récupère le schéma mis à jour de la source de données pour qu’il soit immédiatement reflété dans le modèle de données de formulaire.
 
 ### Configurer les sources de données à l’aide de l’interface utilisateur tactile {#configure-data-sources-using-touch-user-interface}
 
@@ -165,7 +165,7 @@ Plusieurs améliorations ont été apportées à la fonctionnalité de chargemen
 * Les fragments de formulaire adaptatif avec activation du chargement différé sont pris en charge dans des panneaux répétables.
 * Les formulaires adaptatifs avec fragments à chargement différé sont pris en charge dans l’application AEM Forms.
 
-## Processus AEM basés sur l’utilisation de Forms  {#forms-centric-aem-workflows}
+## Processus AEM basés sur l’utilisation de Forms {#forms-centric-aem-workflows}
 
 ![aem-forms-workflow-on-osgi-](assets/aem-forms-workflow-on-osgi-.png)
 
@@ -181,7 +181,7 @@ Vous trouverez ci-dessous les améliorations apportées aux workflows Forms-Cent
 
 ![aem-forms-app](assets/aem-forms-app.png)
 
-L’application AEM Forms permet aux agents de terrain de synchroniser leurs périphériques mobiles avec un serveur AEM Forms, puis de travailler sur leurs formulaires. L’application est exécutée sans accroc lorsque le périphérique est hors connexion et que les données y sont enregistrées en local et synchronisées avec le serveur lorsque le périphérique est de nouveau en ligne. Pour plus d’informations, voir [Application AEM Forms](/help/forms/using/aem-forms-app.md).
+L’application AEM Forms permet aux agents de terrain de synchroniser leurs périphériques mobiles avec un serveur AEM Forms, puis de travailler sur leurs formulaires. L’application est exécutée sans accroc lorsque le périphérique est hors connexion et que les données y sont enregistrées en local et synchronisées avec le serveur lorsque le périphérique est de nouveau en ligne. Pour plus d’informations, voir [application AEM Forms](/help/forms/using/aem-forms-app.md).
 
 Voici les améliorations apportées à l’application AEM Forms :
 

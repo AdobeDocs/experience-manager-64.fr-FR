@@ -1,15 +1,15 @@
 ---
 title: '"Didacticiel : création d’un formulaire adaptatif"'
-seo-title: '"Création d’un formulaire adaptatif"'
+seo-title: Create an adaptive form
 description: Apprenez à créer, mettre en page et prévisualiser un formulaire adaptatif. Apprenez également à configurer les actions d’envoi.
-seo-description: Apprenez à créer, mettre en page et prévisualiser un formulaire adaptatif. Apprenez également à configurer les actions d’envoi.
+seo-description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.
 page-status-flag: de-activated
 uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
 discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1397'
 ht-degree: 80%
 
 ---
@@ -45,7 +45,7 @@ Il est plus facile de créer et de gérer des formulaires en suivant un processu
 
 1. L’option **Ajouter des propriétés** s’affiche. Les champs **Titre** et **Nom** sont obligatoires :
 
-   * **Titre :** indiquez  `Add new or update shipping address` dans le champ Titre. Le champ Titre spécifie le nom d’affichage du formulaire. Le titre vous permet d’identifier le formulaire dans l’interface utilisateur d’AEM Forms.
+   * **Titre :** Spécifier `Add new or update shipping address` dans le champ Titre . Le champ Titre spécifie le nom d’affichage du formulaire. Le titre vous permet d’identifier le formulaire dans l’interface utilisateur d’AEM Forms.
    * **Nom :** spécifiez `shipping-address-add-update-form` dans le champ Nom. Le champ Nom indique le nom du formulaire. Un nœud portant le nom indiqué est alors créé dans le référentiel. Lorsque vous commencez à saisir un titre, une valeur pour le champ de nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ de nom peut contenir uniquement des caractères alphanumériques, des traits d’union et des tirets bas. Toutes les entrées non valides sont remplacées par un tiret.
 
 1. Appuyez sur **Créer**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche. Appuyez sur **Ouvrir** pour ouvrir le formulaire nouvellement créé dans un nouvel onglet. Le formulaire s’ouvre pour modification. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé selon vos besoins.
@@ -58,24 +58,24 @@ Il est plus facile de créer et de gérer des formulaires en suivant un processu
 
 AEM Forms fournit de nombreux composants pour l’affichage d’informations sur un formulaire adaptatif. Les composants d’en-tête et de pied de page contribuent à une apparence cohérente du formulaire. Un en-tête comprend généralement le logo d’une entreprise, le titre du formulaire et un résumé. Un pied de page contient généralement des informations de copyright, ainsi que des liens vers d’autres pages.
 
-1. Appuyez sur ![toggle-side-panel](assets/toggle-side-panel.png) > ![treeexpanall](assets/treeexpandall.png). L’explorateur de composants s’affiche. Faites glisser et déposez le composant **En-tête** de l’explorateur de composants vers le formulaire adaptatif.
-1. Appuyez sur **Logo**. La barre d’outils s’affiche. Appuyez sur ![aem_6_3_edit](assets/aem_6_3_edit.png) dans la barre d’outils, saisissez **We.Retail**, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Appuyer ![bouton bascule-côté-panneau](assets/toggle-side-panel.png) > ![treeextenall](assets/treeexpandall.png). L’explorateur de composants s’affiche. Faites glisser et déposez le composant **En-tête** de l’explorateur de composants vers le formulaire adaptatif.
+1. Appuyez sur **Logo**. La barre d’outils s’affiche. Appuyer ![aem_6_3_edit](assets/aem_6_3_edit.png) dans la barre d’outils, saisissez **We.Retail**, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-1. Appuyez sur l’image. La barre d’outils s’affiche. Appuyez sur ![cmppr](assets/cmppr.png). L’explorateur de propriétés s’ouvre sur la partie gauche de l’écran. **Recherchez** et téléchargez l’image du logo. Appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). L’image apparaît dans l’en-tête.
+1. Appuyez sur l’image. La barre d’outils s’affiche. Appuyer ![cmppr](assets/cmppr.png). L’explorateur de propriétés s’ouvre sur la partie gauche de l’écran. **Recherchez** et téléchargez l’image du logo. Appuyer ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). L’image apparaît dans l’en-tête.
 
    Vous pouvez appuyer sur Obtenir le fichier pour télécharger le logo utilisé dans cet article si vous n’en avez pas.
 
 [Obtenir le fichier](assets/logo.png)
 
-1. Faites glisser le composant **Pied de page** de ![treeexpand](assets/treeexpandall.png) vers le formulaire adaptatif. À ce stade, le formulaire ressemble à ce qui suit :
+1. Faites glisser le **Pied de page** du composant ![treeextenall](assets/treeexpandall.png) au formulaire adaptatif. À ce stade, le formulaire ressemble à ce qui suit :
 
    ![adaptive-form-with-headers-and-footers](assets/adaptive-form-with-headers-and-footers.png)
 
 ## Étape 3 : ajout de composants pour capturer et afficher les informations {#step-add-components-to-capture-and-display-information}
 
-Les composants sont les blocs de construction d’un formulaire adaptatif. AEM Forms fournit de nombreux composants pour la capture et l’affichage d’informations dans un formulaire adaptatif. Vous pouvez faire glisser les composants de ![treeextenall](assets/treeexpandall.png) vers un formulaire. Pour en savoir plus sur les composants disponibles et les fonctionnalités correspondantes, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
+Les composants sont les blocs de construction d’un formulaire adaptatif. AEM Forms fournit de nombreux composants pour la capture et l’affichage d’informations dans un formulaire adaptatif. Vous pouvez faire glisser les composants depuis ![treeextenall](assets/treeexpandall.png) à un formulaire. Pour en savoir plus sur les composants disponibles et les fonctionnalités correspondantes, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
-1. Faites glisser le composant Zone numérique dans le formulaire adaptatif. Placez-le avant le composant de pied de page. Ouvrez les propriétés du composant, remplacez **Titre** du composant par **`Customer ID`**, remplacez **Nom de l’élément** par **`customer_ID`**, activez l’option **Champ requis**, activez l’option **Utiliser le type d’entrée numérique HTML5** et appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Faites glisser le composant Zone numérique dans le formulaire adaptatif. Placez-le avant le composant de pied de page. Ouvrez les propriétés du composant, modifiez **Titre** du composant à **`Customer ID`**, modifier **Nom de l’élément** to **`customer_ID`**, activez la variable **Champ obligatoire** , activez l’option **Use HTML5 Number Input Type** et appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Faites glisser trois composants de la zone de texte vers le formulaire adaptatif. Placez-les avant le pied de page. Définissez les propriétés suivantes pour ces zones de texte. :
 
 <table> 
@@ -113,9 +113,9 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM 
  </tbody> 
 </table>
 
-1. Faites glisser un composant de **Zone numérique** avant le composant de pied de page. Ouvrez les propriétés du composant, définissez les valeurs répertoriées dans le tableau ci-dessous, appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Faites glisser un composant de **Zone numérique** avant le composant de pied de page. Ouvrez les propriétés du composant, définissez les valeurs répertoriées dans le tableau ci-dessous, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-   | Propriétés | Valeur |
+   | Propriété | Valeur |
    |---|---|
    | Titre | Code postal |
    | Nom de l’élément | customer_ZIPCode |
@@ -125,7 +125,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM 
 
 1. Faites glisser un composant **Courrier électronique** avant le composant de pied de page. Ouvrez les propriétés du composant, définissez les valeurs répertoriées dans le tableau ci-dessous, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-   | Propriétés | Valeur |
+   | Propriété | Valeur |
    |---|---|
    | Titre | E-mail |
    | Nom de l’élément | customer_Email |
@@ -136,7 +136,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM 
 <table> 
  <tbody> 
   <tr> 
-   <td>Propriétés</td> 
+   <td>Propriété</td> 
    <td>Valeur</td> 
   </tr> 
   <tr> 
@@ -168,15 +168,15 @@ Les étapes suivantes vous permettent de configurer l’action d’envoi par cou
 
    /content/help/en/experience-manager/6-4/sites-administering/notification.html
 
-1. Appuyez sur **Form Container** dans l’explorateur de contenu, puis appuyez sur ![cmppr](assets/cmppr.png). L’explorateur de propriétés s’ouvre sur la partie gauche de l’écran.
+1. Appuyer **Conteneur de formulaires** dans l’explorateur de contenu, puis appuyez sur ![cmppr](assets/cmppr.png). L’explorateur de propriétés s’ouvre sur la partie gauche de l’écran.
 1. Accédez à **Envoi** > **Action d’envoi**. Sélectionnez **Envoyer un courrier électronique**. Spécifiez les valeurs suivantes et appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-   | Propriétés | Valeur |
+   | Propriété | Valeur |
    |--- |--- |
    | Origine | `donotreply@weretail.com` |
    | To | `${customer_Email}` |
    | Objet | Accusé de réception : vous avez ajouté l’adresse de livraison sur le site Web de We.Retail. |
-   | Modèle de courrier électronique | Bonjour `${customer_Name}`, L&#39;adresse suivante est ajoutée comme adresse de livraison pour votre compte : <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Regards, We.Retail |
+   | Modèle de courrier électronique | Bonjour `${customer_Name}`, l’adresse suivante est ajoutée comme adresse de livraison pour votre compte : <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Regards, We.Retail |
    | Inclure les pièces jointes | Activé |
 
    Votre formulaire est prêt. Vous pouvez à présent prévisualiser le formulaire et tester la fonctionnalité. Si vous avez utilisé le nom mentionné dans le didacticiel et accédez au formulaire sur la machine qui exécute le serveur AEM Forms, le formulaire est disponible à l’adresse [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
@@ -185,10 +185,10 @@ Les étapes suivantes vous permettent de configurer l’action d’envoi par cou
 
 Vous pouvez utiliser l’option **Aperçu** pour évaluer l’apparence et le comportement d’un formulaire. Vous pouvez envoyer un formulaire en mode aperçu et vérifier les validations appliquées à un formulaire. Si une erreur s’affiche lorsqu’un champ obligatoire est laissé vide, par exemple.
 
-Les formulaires adaptatifs permettent également d’émuler l’expérience d’un formulaire pour différents appareils. Par exemple, iPhone, iPad et appareils de bureau. Vous pouvez utiliser conjointement les options **Aperçu** et **Émulateur** ![règle](assets/ruler.png) pour prévisualiser un formulaire pour des périphériques de tailles d’écran différentes.
+Les formulaires adaptatifs permettent également d’émuler l’expérience d’un formulaire pour différents appareils. Par exemple, iPhone, iPad et appareils de bureau. Vous pouvez utiliser les deux **Aperçu** et **Émulateur** ![règle](assets/ruler.png) les options les unes avec les autres pour prévisualiser un formulaire pour les périphériques de tailles d’écran différentes.
 
 1. Appuyez sur l’option **Aperçu** sur le côté droit de l’éditeur de formulaires. Le formulaire s’ouvre en mode aperçu. Si vous avez utilisé le nom mentionné dans le didacticiel, l’URL de l’aperçu du formulaire est [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
-1. Utilisez ![ruler](assets/ruler.png) pour afficher l’apparence du formulaire sur divers périphériques.
+1. Utilisation ![règle](assets/ruler.png) pour afficher l’aspect du formulaire sur différents périphériques.
 1. Remplissez les champs du formulaire et appuyez sur **Envoyer**. Le formulaire est envoyé et vous êtes redirigé vers la **page de remerciement** par défaut. Vous pouvez également spécifier une page de remerciement personnalisée. Pour plus de détails, voir [Configuration de la page de redirection](/help/forms/using/configuring-redirect-page.md).
 
 Le formulaire adaptatif pour l’ajout d’une adresse est prêt. Si vous avez utilisé le nom mentionné dans le didacticiel et accédez au formulaire sur la machine qui exécute le serveur AEM Forms, le formulaire est disponible à l’adresse [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).

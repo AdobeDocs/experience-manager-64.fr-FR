@@ -1,8 +1,8 @@
 ---
 title: Tester votre IU
-seo-title: Tester votre IU
+seo-title: Testing Your UI
 description: AEM fournit un framework pour l’automatisation des tests liés à votre IU AEM
-seo-description: AEM fournit un framework pour l’automatisation des tests liés à votre IU AEM
+seo-description: AEM provides a framework for automating tests for your AEM UI
 uuid: b0280a70-643e-4455-82ea-fa7a90823b53
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
 exl-id: 16b4088d-13b4-47b9-b89d-0c4a13676f12
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '703'
 ht-degree: 74%
 
 ---
@@ -25,7 +25,7 @@ La structure de test d’AEM utilise Hobbes.js, une bibliothèque de tests écri
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’API, consultez la [documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html) de Hobbes.js .
+>Reportez-vous au fichier Hobbes.js . [documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html) pour plus d’informations sur l’API.
 
 ## Structure des tests {#structure-of-tests}
 
@@ -33,9 +33,9 @@ Lors de l’utilisation de tests automatisés dans AEM, il est important de comp
 
 |  |  |
 |---|---|
-| Action | Une **action** est une activité spécifique sur une page web, comme cliquer sur un lien ou un bouton. |
-| Cas de test | Un **cas de test** est une situation spécifique qui peut être composée d’une ou de plusieurs **actions**. |
-| Suite de tests | Une **suite de tests** est un groupe de **cas de test** associés qui testent ensemble un cas d’utilisation spécifique. |
+| Action | Un **Action** est une activité spécifique sur une page web, par exemple un clic sur un lien ou un bouton. |
+| Cas de test | A **Cas de test** est une situation spécifique qui peut être composée d’une ou de plusieurs **Actions**. |
+| Suite de tests | A **Suite de tests** est un groupe associé ; **Cas de test** qui testent ensemble un cas d’utilisation spécifique. |
 
 ## Exécution de tests {#executing-tests}
 
@@ -91,19 +91,19 @@ Les suites de tests s’exécutent séquentiellement dans l’ordre dans lequel 
 
    ![](do-not-localize/chlimage_1-8.png)
 
-1. Pour afficher les résultats de chaque cas de test, appuyez ou cliquez sur le titre du cas de test. Appuyez ou cliquez sur le nom de votre test dans le panneau **Résultat** pour afficher tous les détails.
+1. Pour afficher les résultats de chaque cas de test, appuyez ou cliquez sur le titre du cas de test. Appuyez ou cliquez sur le nom de votre test dans le **Résultat** affiche tous les détails.
 
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
 ## Création et utilisation d’une suite de tests simple {#creating-and-using-a-simple-test-suite}
 
-La procédure suivante vous guide tout au long de la création et de l’exécution d’une suite de tests à l’aide du [contenu We.Retail](/help/sites-developing/we-retail.md), mais vous pouvez facilement modifier le test pour utiliser une autre page web.
+La procédure suivante vous guide tout au long de la création et de l’exécution d’une suite de tests à l’aide de [Contenu We.Retail](/help/sites-developing/we-retail.md), mais vous pouvez facilement modifier le test pour utiliser une autre page web.
 
 Pour plus d’informations sur la création de vos propres suites de tests, reportez-vous à la documentation de l’API [Hobbes.js](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html).
 
 1. Ouvrez CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
-1. Cliquez avec le bouton droit sur le dossier `/etc/clientlibs` et cliquez sur **Créer > Créer un dossier**. Tapez `myTests` comme nom et cliquez sur **OK**.
-1. Cliquez avec le bouton droit sur le dossier `/etc/clientlibs/myTests` et cliquez sur **Créer > Créer un noeud**. Entrez les valeurs de propriété suivantes, puis cliquez sur **OK** :
+1. Cliquez avec le bouton droit de la souris sur le `/etc/clientlibs` et cliquez sur **Créer > Créer un dossier**. Tapez `myTests` comme nom et cliquez sur **OK**.
+1. Cliquez avec le bouton droit de la souris sur le `/etc/clientlibs/myTests` et cliquez sur **Créer > Créer un noeud**. Entrez les valeurs de propriété suivantes, puis cliquez sur **OK** :
 
    * Nom : `myFirstTest`
    * Type : `cq:ClientLibraryFolder`
@@ -121,9 +121,9 @@ Pour plus d’informations sur la création de vos propres suites de tests, repo
    >
    >Pour tester des formulaires adaptatifs, ajoutez les valeurs suivantes aux catégories et aux dépendances. Par exemple :
    >
-   >**categories** :  `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
+   >**categories**: `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
    >
-   >**dependencies** :  `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
+   >**dependencies**: `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
 
 1. Cliquez sur **Enregistrer tout**.
 1. Cliquez avec le bouton droit sur le nœud `myFirstTest` et cliquez sur **Créer > Créer un fichier**. Nommez le fichier `js.txt` et cliquez sur **OK**.

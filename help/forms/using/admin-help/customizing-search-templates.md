@@ -1,8 +1,8 @@
 ---
 title: Personnalisation des modèles de recherche
-seo-title: Personnalisation des modèles de recherche
+seo-title: Customizing search templates
 description: Vous pouvez créer des modèles de recherche à utiliser dans Workspace pour rechercher des instances de processus depuis les pages de tâches et de suivi. Vous pouvez également modifier ou supprimer des modèles de recherche existants.
-seo-description: Vous pouvez créer des modèles de recherche à utiliser dans Workspace pour rechercher des instances de processus depuis les pages de tâches et de suivi. Vous pouvez également modifier ou supprimer des modèles de recherche existants.
+seo-description: You can create search templates to be used in Workspace to search for instances of processes from the To Do and Tracking pages. You can also edit or delete existing search templates.
 uuid: 2043ba8a-07f0-4054-af3c-f3a14c2183ab
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: 5230222b-53f8-414c-aaa1-848d6e9369e8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '856'
 ht-degree: 88%
 
 ---
@@ -36,7 +36,7 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
 1. (Facultatif) Cliquez sur l’onglet Critère et indiquez le critère de recherche du modèle.
 1. Cliquez sur l’onglet Enregistrer, entrez un nom unique pour le modèle, puis cliquez sur Enregistrer.
 
-## Création ou modification d’un modèle de recherche  {#create-or-edit-a-search-template}
+## Création ou modification d’un modèle de recherche {#create-or-edit-a-search-template}
 
 1. Dans Administration Console, cliquez sur Services > Workspace > Modèles de recherche.
 1. (Facultatif) Si vous modifiez un modèle existant ou que vous vous servez d’un modèle existant pour en créer un nouveau, sélectionnez le modèle dans la liste Nom du modèle de recherche.
@@ -46,9 +46,9 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
 
    * Dans la partie supérieure de l’onglet Critère, sélectionnez un élément de processus ou de tâche.
 
-      **Conseil** :  *Si vous avez précédemment sélectionné l’élément Process Name et que vous avez spécifié un processus, toute variable de processus définie dans ce processus peut également être sélectionnée.*
+      **Conseil**: *Si vous avez précédemment sélectionné l’élément Process Name et que vous avez spécifié un processus, toute variable de processus définie dans ce processus peut également être sélectionnée.*
 
-      **Conseil** :  *Si vous sélectionnez l’élément Tâche visible , les utilisateurs pourront supprimer les tâches terminées des résultats de recherche.*
+      **Conseil**: *Si vous sélectionnez l’élément Tâche visible , les utilisateurs pourront supprimer les tâches terminées des résultats de recherche.*
 
       Les champs relatifs au critère de recherche de l’élément sélectionné s’affichent au bas de l’onglet Critère.
 
@@ -58,9 +58,9 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
       * (Facultatif) Pour autoriser des utilisateurs à modifier la valeur de l’opérande dans Workspace, sélectionnez Autoriser l’utilisateur à modifier l’opérande.
       * (Facultatif) Pour autoriser des utilisateurs à modifier l’opérateur relationnel, sélectionnez Autoriser l’utilisateur à sélectionner un autre opérateur relationnel. Dans la liste qui apparaît, sélectionnez les opérateurs auxquels les utilisateurs pourront faire appel.
 
-      **Conseil** :  *Si vous avez sélectionné Nom du processus comme élément, vous pouvez cliquer sur l’icône en regard du champ de l’opérande pour afficher une liste dans laquelle vous pouvez sélectionner un processus en cours d’exécution sur le serveur Forms. Après avoir sélectionné un processus, toute variable définie pour ce processus peut être sélectionnée dans Variables de processus, dans la partie supérieure de l’onglet Critère.*
+      **Conseil**: *Si vous avez sélectionné Nom du processus comme élément, vous pouvez cliquer sur l’icône en regard du champ de l’opérande pour afficher une liste dans laquelle vous pouvez sélectionner un processus en cours d’exécution sur le serveur Forms. Après avoir sélectionné un processus, toute variable définie pour ce processus peut être sélectionnée dans Variables de processus, dans la partie supérieure de l’onglet Critère.*
 
-      **Conseil** :  *Vous pouvez supprimer un élément du modèle de recherche en cliquant sur l’icône Supprimer en regard des critères de recherche de l’élément.*
+      **Conseil**: *Vous pouvez supprimer un élément du modèle de recherche en cliquant sur l’icône Supprimer en regard des critères de recherche de l’élément.*
 
 
 1. (Facultatif) Pour chaque en-tête de colonne à afficher dans les résultats de recherche, cliquez sur l’onglet Mise en page et procédez comme suit :
@@ -83,7 +83,7 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
 1. (Facultatif) Si vous créez un modèle de recherche, affectez-lui un nom unique. Si vous n’indiquez pas un nom unique, vous risquez de remplacer un modèle existant.
 1. Cliquez sur le bouton Enregistrer.
 
-## Suppression d’un modèle de recherche  {#delete-a-search-template}
+## Suppression d’un modèle de recherche {#delete-a-search-template}
 
 1. Dans l’onglet Identification, sélectionnez un nom dans la liste Nom du modèle de recherche.
 1. Cliquez sur Supprimer ce modèle, puis sur OK.

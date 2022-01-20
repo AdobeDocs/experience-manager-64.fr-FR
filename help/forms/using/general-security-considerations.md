@@ -1,8 +1,8 @@
 ---
 title: Considérations générales sur la sécurité d’AEM Forms on JEE
-seo-title: Considérations générales sur la sécurité d’AEM Forms on JEE
+seo-title: General Security Considerations for AEM Forms on JEE
 description: Découvrez comment vous préparer au renforcement de votre environnement AEM Forms on JEE.
-seo-description: Découvrez comment vous préparer au renforcement de votre environnement AEM Forms on JEE.
+seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
 uuid: c5f6ffc7-b987-4541-ab60-e97b4ff5b2a4
 content-type: reference
 topic-tags: Security
@@ -12,8 +12,8 @@ role: Admin
 exl-id: cde40670-ce9d-4b96-92d3-9e56cb15bdce
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 60%
+source-wordcount: '1091'
+ht-degree: 61%
 
 ---
 
@@ -103,7 +103,7 @@ Pour plus de détails sur la sécurité des serveurs d’applications pris en ch
  <tbody>
   <tr> 
    <td><p>Oracle WebLogic®</p> </td> 
-   <td><p>Recherchez Understanding WebLogic Security à l’adresse <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
+   <td><p>Recherchez Présentation de WebLogic Security à l’adresse <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
   </tr> 
   <tr> 
    <td><p>IBM WebSphere®</p> </td> 
@@ -221,9 +221,9 @@ Le serveur d’applications JBoss utilise 8080 en tant que port HTTP par défaut
 
    Installations en grappe : [racine JBoss]/domain/configuration/domain.xml
 
-1. Remplacez la valeur de l’attribut **port** dans la balise **&lt;socket-binding>** par un numéro de port personnalisé. Par exemple, le code suivant utilise le port 8090 :
+1. Modifiez la valeur de **port** dans le **&lt;socket-binding>** vers un numéro de port personnalisé. Par exemple, le code suivant utilise le port 8090 :
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. Enregistrez et fermez le fichier.
 1. Redémarrez le serveur d’applications JBoss.
@@ -244,7 +244,7 @@ AEM Forms on JEE utilise la base de données d’AEM Forms on JEE pour stocker d
 
 Le serveur d’applications utilisé pour exécuter AEM Forms sur JEE nécessite sa propre configuration pour accéder à votre base de données via une source de données configurée sur le serveur d’applications. Assurez-vous que votre serveur d’applications n’expose pas le mot de passe de votre base de données en texte clair dans son fichier de configuration de source de données.
 
-Le fichier lc_[database].xml ne doit pas contenir de mot de passe au format texte en clair. Consultez le revendeur de votre serveur d’applications pour savoir comment chiffrer ces mots de passe pour votre serveur d’applications.
+Le lc_[base]Le fichier .xml ne doit pas contenir de mot de passe au format texte en clair. Consultez le revendeur de votre serveur d’applications pour savoir comment chiffrer ces mots de passe pour votre serveur d’applications.
 
 >[!NOTE]
 >

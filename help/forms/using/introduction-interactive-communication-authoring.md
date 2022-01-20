@@ -1,19 +1,19 @@
 ---
 title: Introduction à l’interface utilisateur de création d’une communication interactive
-seo-title: Introduction aux différents éléments de l’interface utilisateur permettant de créer une communication interactive
+seo-title: An introduction to the various user interface elements you can use to author Interactive Communication
 description: Introduction aux différents éléments de l’interface utilisateur permettant de créer une communication interactive
-seo-description: Introduction aux différents éléments de l’interface utilisateur permettant de créer une communication interactive
+seo-description: An introduction to the various user interface elements you can use to author Interactive Communication
 uuid: 4e301b9a-76a1-4beb-9d67-dbd0a3bdd2e4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 565bfb42-6099-49f4-83ba-b1f0c129aab7
-feature: Communication interactive
+feature: Interactive Communication
 exl-id: 1537490b-71b3-4ab3-b8d1-d85eac88d857
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 56%
+source-wordcount: '1285'
+ht-degree: 55%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 56%
 
 Introduction aux différents éléments de l’interface utilisateur permettant de créer une communication interactive
 
-L’interface utilisateur pour la création de [communication interactive](/help/forms/using/interactive-communications-overview.md) est intuitive et fournit les éléments suivants pour la création de canaux d’impression et web de la communication interactive :
+Interface utilisateur pour la création [Communication interactive](/help/forms/using/interactive-communications-overview.md) est intuitif et fournit les éléments suivants pour la création de canaux d’impression et web de la communication interactive :
 
 * Editeur de document glisser-déposer WYSIWYGM
 * Référentiel intégré pour les ressources : les ressources chargées et créées sur le serveur sont disponibles dans l’explorateur de ressources de l’interface de création de communication interactive.
@@ -36,7 +36,7 @@ Lorsque vous [créez une communication interactive ou en modifiez une existante]
 
 ![Interface utilisateur de création de communication interactive](assets/form-editor.png)
 
-**A.** Barre latérale  **B.**  Barre d’outils de la page  **C.** Zone de contenu
+**A.** Barre latérale **B.** Barre d’outils Page **C.** Zone de contenu
 
 ## Barre latérale {#sidebar}
 
@@ -44,7 +44,7 @@ Lorsque vous [créez une communication interactive ou en modifiez une existante]
 
 [Cliquez sur l’image pour l’agrandir](assets/sidebar-comps-1.png)
 
-**A.** Explorateur de canaux  **B.** Explorateur de contenu  **C.** Explorateur de propriétés  **D.** Explorateur de ressources  **E.** Explorateur de composants  **F.** Explorateur de sources de données - Modèle de données  **G.** Explorateur de sources de données - Contenu par Principal
+**A.** Explorateur de canaux **B.** Explorateur de contenu **C.** Explorateur de propriétés **D.** Explorateur de ressources **E.** Explorateur de composants **F.** Explorateur des sources de données - Modèle de données **G.** Explorateur des sources de données - Contenu du Principal
 
 La barre latérale contient les éléments suivants :
 
@@ -60,7 +60,7 @@ La barre latérale contient les éléments suivants :
 
    Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction du composant. Par exemple, pour afficher les propriétés du conteneur de documents :
 
-   Sélectionnez un composant, puis appuyez sur ![field-level](assets/field-level.png) > **Conteneur de document**, puis sur ![cmppr](assets/cmppr.png).
+   Sélectionnez un composant, puis appuyez sur ![champ-level](assets/field-level.png) > **Conteneur de documents**, puis appuyez sur ![cmppr](assets/cmppr.png).
 
 * **Explorateur de ressources**
 
@@ -97,7 +97,7 @@ Les points clés lorsque vous utilisez des composants de communication interacti
 * Vous pouvez modifier la propriété Titre d’un composant de communication interactive en ligne dans l’éditeur sans ouvrir le navigateur Propriétés tant que le titre est visible dans la communication interactive. Pour ce faire :
 
    1. Appuyez pour sélectionner un composant qui a une propriété Titre et dont la propriété Masquer le titre est désactivée.
-   1. Appuyez sur ![aem_6_3_edit](assets/aem_6_3_edit.png) pour rendre le titre modifiable.
+   1. Appuyer ![aem_6_3_edit](assets/aem_6_3_edit.png) pour rendre le titre modifiable.
    1. Modifiez le titre et appuyez sur la touche Retour ou appuyez n’importe où en dehors du composant pour enregistrer les modifications. Appuyez sur la touche Échap pour annuler les modifications.
 
 ## Barre d’outils de composants {#component-toolbar}
@@ -108,23 +108,23 @@ Lorsque vous sélectionnez un composant, une barre d’outils s’affiche, vous 
 
 A. **Configurer** : lorsque vous appuyez sur **Configurer**, les propriétés du composant sont visibles dans la barre latérale.
 
-B. **Modifier les règles** : Lorsque vous appuyez sur Modifier les règles, l’éditeur de règles s’affiche dans lequel vous pouvez modifier et créer des règles pour le composant sélectionné. Dans l’éditeur de règles, vous pouvez également sélectionner d’autres objets de formulaire (composants) et modifier/créer des règles pour ces objets de formulaire.
+B. **Modifier des règles**: Lorsque vous appuyez sur Modifier les règles, l’éditeur de règles s’affiche dans lequel vous pouvez modifier et créer des règles pour le composant sélectionné. Dans l’éditeur de règles, vous pouvez également sélectionner d’autres objets de formulaire (composants) et modifier/créer des règles pour ces objets de formulaire.
 
 C.** Copier** : permet de copier un composant et le coller ailleurs dans la communication interactive.
 
-D. **Couper** : Vous pouvez utiliser l’option de coupure pour déplacer un composant d’un emplacement à un autre dans la communication interactive.
+D. **Couper**: Vous pouvez utiliser l’option de coupure pour déplacer un composant d’un emplacement à un autre dans la communication interactive.
 
-E. **Supprimer** : Permet de supprimer le composant de la communication interactive.
+E. **Supprimer**: Permet de supprimer le composant de la communication interactive.
 
-F. **Insérer un composant** : Permet d’insérer un composant au-dessus du composant sélectionné.
+F. **Insérer un composant**: Permet d’insérer un composant au-dessus du composant sélectionné.
 
-G. **Coller** : Permet de coller le composant coupé ou copié à l’aide des options décrites ci-dessus.
+G. **Coller**: Permet de coller le composant coupé ou copié à l’aide des options décrites ci-dessus.
 
 H. **Groupe** : permet de sélectionner plusieurs composants permettant de couper, copier ou coller plusieurs composants ensemble.
 
 I. **Parent** : permet de sélectionner le parent d’un composant.
 
-J. **Plus** : Fournit d’autres options pour utiliser le composant sélectionné.
+J. **Plus**: Fournit d’autres options pour utiliser le composant sélectionné.
 
 * Afficher l’expression SOM (pour les panneaux uniquement)
 * Regrouper les objets dans le panneau (pour les panneaux uniquement)
@@ -139,9 +139,9 @@ J. **Plus** : Fournit d’autres options pour utiliser le composant sélectionn�
 La barre d’outils Page dans la partie supérieure fournit des options qui vous permettent de prévisualiser la communication interactive et de modifier ses propriétés. Vous pouvez prévisualiser la communication interactive lors de sa création et apporter des modifications en conséquence. Dans la barre d’outils de la page, vous voyez :
 
 * Activer/désactiver le panneau latéral![ toggle-side-panel](assets/toggle-side-panel.png) : affiche ou masque la barre latérale.
-* Informations sur la page ![pageinformation ad](assets/pageinformationad.png) : Permet d’afficher les propriétés de la page.
-* Émulateur ![règle](assets/ruler.png) : Vous permet d’émuler l’aspect de votre communication interactive pour différentes tailles d’affichage, telles que les tablettes et les téléphones.
-* Modifier : permet de sélectionner d&#39;autres modes comme : Modifier, Style, Développeur et Conception.
+* Informations sur la page ![pageinformation ad](assets/pageinformationad.png): Permet d’afficher les propriétés de la page.
+* Émulateur ![règle](assets/ruler.png): Vous permet d’émuler l’aspect de votre communication interactive pour différentes tailles d’affichage, telles que les tablettes et les téléphones.
+* Modifier : permet de sélectionner d’autres modes comme : Modifier, Style, Développeur et Conception.
 
    * Modifier : Permet de modifier les propriétés de la communication interactive et de ses composants. Exemple : l’ajout d’un composant, le dépôt d’une image et l’indication des champs obligatoires.
    * Style : définit l’aspect des composants de votre communication interactive. Par exemple, en mode Style, vous pouvez sélectionner un panneau et définir sa couleur d’arrière-plan.

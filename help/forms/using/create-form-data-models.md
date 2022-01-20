@@ -1,22 +1,22 @@
 ---
 title: Création d’un modèle de données de formulaire
-seo-title: Création d’un modèle de données de formulaire
+seo-title: Create form data model
 description: Découvrez comment créer des modèles de données de formulaire avec ou sans sources de données configurées.
-seo-description: Découvrez comment créer des modèles de données de formulaire avec ou sans sources de données configurées.
+seo-description: Learn how to create form data models with or without configured data sources.
 uuid: bed1a82e-a799-4034-9068-1478b95e6c70
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 3a3a6ede-52af-4c37-8a51-c2ea721a28dc
-feature: Modèle de données de formulaire
+feature: Form Data Model
 exl-id: 16d1d5ea-6076-448d-9f63-78a0f2ff2756
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '949'
 ht-degree: 84%
 
 ---
 
-# Créer un modèle de données de formulaire {#create-form-data-model}
+# Création d’un modèle de données de formulaire {#create-form-data-model}
 
 Découvrez comment créer des modèles de données de formulaire avec ou sans sources de données configurées.
 
@@ -32,9 +32,9 @@ L’intégration de données d’AEM Forms fournit une interface utilisateur in
 >
 >Vous devez être membre des deux groupes **fdm-author** et **forms-user** pour pouvoir créer et utiliser le modèle de données de formulaire. Contactez votre administrateur AEM pour devenir membre des groupes.
 
-## Créer un modèle de données de formulaire {#data-sources}
+## Création d’un modèle de données de formulaire {#data-sources}
 
-Assurez-vous d’avoir configuré les sources de données que vous prévoyez d’utiliser dans le modèle de données de formulaire comme décrit dans la section [Configuration des sources de données](/help/forms/using/configure-data-sources.md). Procédez comme suit pour créer un modèle de données de formulaire basé sur des sources de données configurées :
+Assurez-vous d’avoir configuré les sources de données que vous prévoyez d’utiliser dans le modèle de données de formulaire, comme décrit dans la section [Configuration des sources de données](/help/forms/using/configure-data-sources.md). Procédez comme suit pour créer un modèle de données de formulaire basé sur des sources de données configurées :
 
 1. Dans l’instance d’auteur AEM, accédez à **[!UICONTROL Forms (Formulaires) > Data Integrations]** (Intégrations de données).
 1. Appuyez sur **[!UICONTROL Créer > Modèle de données de formulaire]**.
@@ -47,7 +47,7 @@ Assurez-vous d’avoir configuré les sources de données que vous prévoyez d�
    Appuyez sur **[!UICONTROL Suivant]**.
 
 1. (**Applicable uniquement si des sources de données sont configurées**) L’écran **[!UICONTROL Sélectionner la source de données]** répertorie les sources de données disponibles, le cas échéant. Sélectionnez les sources de données que vous souhaitez utiliser dans le modèle de données de formulaire.
-1. Appuyez sur **[!UICONTROL Créer]** et, dans la boîte de dialogue de confirmation, appuyez sur **[!UICONTROL Ouvrir]** pour ouvrir l’éditeur de modèle de données de formulaire.
+1. Appuyer **[!UICONTROL Créer]** et, dans la boîte de dialogue de confirmation, appuyez sur **[!UICONTROL Ouvrir]** pour ouvrir l’éditeur de modèle de données de formulaire.
 
 Examinons les différents composants de l’interface utilisateur de l’éditeur de modèle de données de formulaire.
 
@@ -55,7 +55,7 @@ Examinons les différents composants de l’interface utilisateur de l’éditeu
 
 **A. Sources de données** Répertorie les sources de données dans un modèle de données de formulaire. Développez une source de données pour afficher ses objets et services de modèle de données.
 
-**B. Actualiser les** définitions de source de données Récupère toutes les modifications apportées aux définitions de source de données à partir des sources de données configurées et les met à jour dans l’onglet Sources de données de l’éditeur de modèle de données de formulaire.
+**B. Actualiser les définitions de source de données** Récupère toutes les modifications apportées aux définitions de source de données à partir des sources de données configurées et les met à jour dans l’onglet Sources de données de l’éditeur de modèle de données de formulaire.
 
 **C. Modèle** Zone de contenu dans laquelle les objets de modèle de données ajoutés apparaissent.
 
@@ -76,7 +76,7 @@ Pour ajouter ou mettre à jour des sources de données dans un modèle de donné
 
    Dans l’onglet Mettre à jour la source :
 
-   * Appuyez sur l’icône de navigation dans le champ **[!UICONTROL Configuration contextuelle]** et sélectionnez un nœud de configuration où se trouve la configuration cloud de la source de données que vous voulez utiliser. Si vous ne sélectionnez pas de nœud, les configurations cloud qui se trouvent uniquement dans le nœud `global` sont répertoriées lorsque vous appuyez sur **[!UICONTROL Ajouter des sources]**.
+   * Appuyez sur l’icône de navigation dans le champ **[!UICONTROL Configuration tenant compte du contexte]** et sélectionnez un nœud de configuration où se trouve la configuration cloud de la source de données que vous voulez utiliser. Si vous ne sélectionnez pas de nœud, les configurations cloud qui se trouvent uniquement dans le nœud `global` sont répertoriées lorsque vous appuyez sur **[!UICONTROL Ajouter des sources]**.
    * Pour ajouter une nouvelle source de données, appuyez sur **[!UICONTROL Ajouter des sources]** et sélectionnez les sources de données à ajouter au modèle de données de formulaire. Toutes les sources de données configurées en `global` et le nœud de configuration sélectionné, le cas échéant, s’affichent.
    * Pour remplacer une source de données existante par une autre source de données du même type, appuyez sur l’icône **[!UICONTROL Modifier]** de la source de données et sélectionnez-en une dans la liste des sources de données disponibles.
    * Pour supprimer une source de données existante, appuyez sur l’icône **[!UICONTROL Supprimer]** de la source de données. L’icône Supprimer est désactivée si un objet de modèle de données dans la source de données est ajouté au modèle de données de formulaire.

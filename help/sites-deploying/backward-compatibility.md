@@ -1,20 +1,20 @@
 ---
 title: Compatibilité descendante dans AEM 6.4
-seo-title: Compatibilité descendante dans AEM 6.4
+seo-title: Backward Compatibility in AEM 6.4
 description: Découvrez comment faire en sorte que vos applications et configurations restent compatibles avec AEM 6.4
-seo-description: Découvrez comment faire en sorte que vos applications et configurations restent compatibles avec AEM 6.4
+seo-description: Learn how to keep your apps and configurations compatible with AEM 6.4
 uuid: 2fa8525e-7f3b-4096-ac85-01c2c76bc9ac
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
-feature: Mise à niveau
+feature: Upgrading
 exl-id: 5798100a-e03a-43f8-9189-ae51c06e192b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 77%
+source-wordcount: '486'
+ht-degree: 76%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 77%
 
 >[!NOTE]
 >
->Pour obtenir la liste des modifications de contenu et de configuration qui ne font pas partie du package de compatibilité, voir [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>Pour obtenir la liste des modifications de contenu et de configuration qui ne font pas partie du module de compatibilité, voir [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 Dans AEM 6.4, toutes les fonctionnalités ont été développées en tenant compte de la compatibilité ascendante.
 
@@ -62,7 +62,7 @@ Le mode hérité s’adresse aux utilisateurs qui possèdent des interfaces pers
 
 ## Méthode de configuration {#how-to-set-up}
 
-Le package de compatibilité AEM 6.3 peut être installé en tant que package à l’aide du gestionnaire de modules. Vous pouvez télécharger le [module de compatibilité AEM 6.3 à partir du site Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
+Le package de compatibilité AEM 6.3 peut être installé en tant que package à l’aide du gestionnaire de modules. Vous pouvez télécharger le [Package de compatibilité AEM 6.3 de la distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63) site.
 
 Une fois le module de compatibilité installé, le routage peut être activé ou désactivé à l’aide d’un commutateur dans la configuration OSGI, comme indiqué ci-dessous :
 

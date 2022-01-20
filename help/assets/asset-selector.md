@@ -16,17 +16,17 @@ ht-degree: 67%
 
 >[!NOTE]
 >
->Le sélecteur de ressources était appelé [Sélecteur de ressources](https://helpx.adobe.com/fr/experience-manager/6-2/assets/using/asset-picker.html) dans les versions antérieures de [!DNL Experience Manager].
+>Le sélecteur de ressources a été appelé [Sélecteur de ressources](https://helpx.adobe.com/fr/experience-manager/6-2/assets/using/asset-picker.html) dans les versions antérieures de [!DNL Experience Manager].
 
 Le sélecteur de ressources vous permet de parcourir, rechercher et filtrer des ressources dans [!DNL Adobe Experience Manager] Ressources. Il vous permet également de récupérer les métadonnées des ressources sélectionnées à l’aide du sélecteur de ressources. Pour personnaliser l’interface du sélecteur de ressources, vous pouvez le démarrer avec les paramètres de requête pris en charge. Ces paramètres configurent le sélecteur de ressources pour un scénario particulier.
 
-Actuellement, vous pouvez transmettre les paramètres de requête `assettype` (*Image/Video/Text*) et la sélection `mode` (*Unique/Multiple*) comme informations contextuelles pour le sélecteur de ressources, qui reste intact tout au long de la sélection.
+Actuellement, vous pouvez transmettre les paramètres de requête. `assettype` (*Image/Vidéo/Texte*) et sélection `mode` (*Mono/multiple*) comme informations contextuelles pour le sélecteur de ressources, qui reste intact tout au long de la sélection.
 
-Le sélecteur de ressources utilise le message HTML5 **Window.postMessage** pour envoyer au destinataire les données de la ressource sélectionnée.
+Le sélecteur de ressources utilise HTML5 **Window.postMessage** message pour envoyer au destinataire les données de la ressource sélectionnée.
 
 Le sélecteur de ressources utilise le vocabulaire d’interface foundation picker de Granite. Par défaut, le sélecteur de ressources fonctionne en mode de navigation. Cependant, vous pouvez appliquer des filtres à l’aide de l’expérience Omni-recherche pour affiner votre recherche de ressources spécifiques.
 
-Vous pouvez intégrer n’importe quelle page web (qu’elle fasse ou non partie du conteneur CQ) au sélecteur de ressources (`https://[AEM_server]:[port]/aem/assetpicker.html`).
+Vous pouvez intégrer n’importe quelle page web (qu’elle fasse partie ou non du conteneur CQ) au sélecteur de ressources (`https://[AEM_server]:[port]/aem/assetpicker.html`).
 
 ## Paramètres contextuels {#contextual-parameters}
 

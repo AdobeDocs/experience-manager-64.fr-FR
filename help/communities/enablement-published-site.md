@@ -1,8 +1,8 @@
 ---
 title: Expérience du site publié
-seo-title: Expérience du site publié
+seo-title: Experience the Published Site
 description: Accès à un site publié pour l’activation
-seo-description: Accès à un site publié pour l’activation
+seo-description: Browse to a published site for enablement
 uuid: 1bfefa8a-fd9c-4ca8-b2ff-add79776c8ae
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 exl-id: bdf91013-2136-464a-a637-a3047144ec98
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1237'
+source-wordcount: '1226'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 **[⇐ Créer et attribuer des ressources d’activation](resource.md)**
 
-## Accédez au nouveau site sur la publication {#browse-to-new-site-on-publish}
+## Accéder au nouveau site lors de la publication {#browse-to-new-site-on-publish}
 
 Maintenant que le site de la communauté nouvellement créé, ses ressources d’activation et son parcours de formation ont été publiés, il est possible de tester le site du tutoriel d’activation.
 
@@ -31,7 +31,7 @@ Accédez tout d’abord à l’URL affichée lors de la création du site, mais 
 * URL de l’auteur = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
 * URL de publication = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
-Si la [page d’accueil par défaut a été définie](enablement-create-site.md#changethedefaulthomepage), il suffit de naviguer jusqu’à [http://localhost:4503/](http://localhost:4503/) pour lancer le site.
+Si la variable [la page d’accueil par défaut a été définie.](enablement-create-site.md#changethedefaulthomepage), puis simplement en accédant à [http://localhost:4503/](http://localhost:4503/) doit lancer le site.
 
 En arrivant sur le site publié pour la première fois, le visiteur du site n’était généralement pas déjà connecté et était anonyme.
 
@@ -39,7 +39,7 @@ En arrivant sur le site publié pour la première fois, le visiteur du site n’
 
 ![chlimage_1-433](assets/chlimage_1-433.png)
 
-## Visiteur du site anonyme {#anonymous-site-visitor}
+## Visiteur anonyme du site {#anonymous-site-visitor}
 
 Un visiteur anonyme du site se voit immédiatement présenter la page de connexion de ce site de la communauté d’activation privée. Notez qu’il n’existe aucune option d’auto-inscription ni de connexion avec Facebook ou Twitter.
 
@@ -48,26 +48,26 @@ Notez que cette page d’accueil affiche quatre options de menu : `Assignments, 
 >[!NOTE]
 >
 >Il est possible d’accorder un accès anonyme à un site d’activation sans permettre aux visiteurs du site de s’inscrire eux-mêmes.\
->Si une ressource d’activation est définie sur `show in catalog` et `allow anonymous access`, les visiteurs anonymes du site pourront afficher les ressources dans le catalogue.
+>Si une ressource d’activation est définie sur `show in catalog` et `allow anonymous access`, il sera possible pour les visiteurs anonymes du site d’afficher les ressources dans le catalogue.
 
 ### Empêcher l’accès anonyme sur JCR {#prevent-anonymous-access-on-jcr}
 
-Une limitation connue expose le contenu du site de la communauté aux visiteurs anonymes par le biais du contenu jcr et de json , bien que **[!UICONTROL autoriser l’accès anonyme]** soit désactivé pour le contenu du site. Cependant, ce comportement peut être contrôlé à l’aide de restrictions Sling comme solution de contournement.
+Une limitation connue expose le contenu du site de la communauté aux visiteurs anonymes par le biais de contenu jcr et json , bien que **[!UICONTROL autoriser l’accès anonyme]** est désactivé pour le contenu du site. Cependant, ce comportement peut être contrôlé à l’aide de restrictions Sling comme solution de contournement.
 
 Pour protéger le contenu de votre communauté contre l’accès des utilisateurs anonymes par le biais de jcr content et json , procédez comme suit :
 
-1. Sur l’instance d’auteur AEM, accédez à https://&lt;hôte>:&lt;port>/editor.html/content/site/&lt;nom_site>.html.
+1. Sur l’instance AEM Author, accédez à https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html.
 
    >[!NOTE]
    >
    >Ne pas accéder au site localisé.
 
-1. Accédez à **[!UICONTROL Propriétés de page]**.
+1. Accédez à **[!UICONTROL Propriétés de la page]**.
 
    ![page-properties-1](assets/page-properties-1.png)
 
 1. Accédez à l’onglet **[!UICONTROL Avancé]**.
-1. Activez **[!UICONTROL Exigence d’authentification]**.
+1. Activer **[!UICONTROL Exigence d’authentification]**.
 
    ![site-authentication-1](assets/site-authentication-1.png)
 
@@ -76,7 +76,7 @@ Pour protéger le contenu de votre communauté contre l’accès des utilisateur
 
 ## Membre inscrit {#enrolled-member}
 
-Cette expérience repose sur le fait que les utilisateurs `Riley Taylor` et `Sidney Croft` sont [créés](enablement-setup.md#publishcreateenablementmembers) et [affectés](resource.md#settings) au parcours d’apprentissage *Ski* par le biais de leur adhésion au groupe *Classe de ski communautaire*.
+Cette expérience s’appuie sur les utilisateurs `Riley Taylor` et `Sidney Croft` en cours [created](enablement-setup.md#publishcreateenablementmembers) et [affecté](resource.md#settings) au *Leçons de ski* parcours d’apprentissage par l’intermédiaire de leur appartenance à *Classe de ski communautaire* groupe.
 
 Se connecter avec
 
@@ -105,21 +105,21 @@ Le type d’affectation est indiqué par une icône dans le coin supérieur gauc
 
 ![chlimage_1-435](assets/chlimage_1-435.png)
 
-Sélectionnez *Leçons de ski* pour afficher les deux ressources d’activation référencées par le chemin d’apprentissage.
+Sélection *Leçons de ski* affiche les deux ressources d’activation référencées par le chemin d’apprentissage.
 
 ![chlimage_1-436](assets/chlimage_1-436.png)
 
-Si vous sélectionnez *Leçon de ski 1*, la page de détails de la ressource d’activation s’ouvre.
+Sélection *Leçon de ski 1* ouvre la page des détails de la ressource d’activation.
 
-Sur la page des détails, le membre peut apprendre [rate](rating.md) la leçon et ajouter des [commentaires](comments.md). Toute activité de membre sera reflétée dans la section Nouveautés du site.
+Sur la page des détails, le membre peut apprendre, [rate](rating.md) la leçon et ajoutez [commentaires](comments.md). Toute activité de membre sera reflétée dans la section Nouveautés du site.
 
-Les interactions avec la ressource d’activation seront notées dans la section Rapport accessible dans l’environnement de création.
+Les interactions avec la ressource d’activation seront notées dans la section Rapport , accessible dans l’environnement de création.
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
 ### Catalogue Ski {#ski-catalog}
 
-La page Catalogue Ski est le catalogue des ressources d’activation balisées avec des balises de l’espace de noms `Tutorial`. Les deux ressources *Leçon de ski* sont balisées avec la balise `Skiing`, de sorte que si des balises autres que `All` ou `Tutorial: Sports / Skiing` sont sélectionnées, rien ne s’affiche.
+La page Catalogue Ski est le catalogue des ressources d’activation balisées avec des balises de la `Tutorial` espace de noms. Les deux *Leçon de ski* Les ressources sont balisées avec la variable `Skiing` , par exemple si des balises autres que `All` ou `Tutorial: Sports / Skiing` est sélectionnée, aucun élément n’est affiché.
 
 Lorsqu’un membre n’a pas reçu de ressources d’activation, directement ou par le biais d’un parcours d’apprentissage, il est possible d’interagir avec les ressources d’activation situées dans un catalogue et de fournir des commentaires et des évaluations.
 
@@ -127,9 +127,9 @@ Lorsqu’un membre n’a pas reçu de ressources d’activation, directement ou 
 
 ### Discussions {#discussions}
 
-Outre l’évaluation et les commentaires sur les ressources d’activation ([lorsqu’elle est activée](enablement-create-site.md#step33asettings)), le modèle de site de communauté à partir duquel `Enablement Tutorial` a été créé inclut la [fonction de forum](functions.md#forum-function) (le titre est `Discussions)`).
+Outre l’évaluation et les commentaires sur les ressources d’activation ([quand activé](enablement-create-site.md#step33asettings)), le modèle de site de la communauté à partir duquel `Enablement Tutorial` a été créé et inclut la variable [fonction de forum](functions.md#forum-function) (le titre est `Discussions)`.
 
-Sélectionnez le lien `Discussions`et publiez une rubrique.
+Sélectionnez la `Discussions`lier et publier une rubrique.
 
 Déconnectez-vous et connectez-vous en tant que Sidney Croft (sidney / password), répondez à la question, puis suivez le sujet.
 
@@ -139,15 +139,15 @@ Notez qu’en plus de la modération en ligne, il existe des options pour partag
 
 ### Nouveautés {#what-s-new}
 
-L’élément de menu `What's New` est le titre donné à la [fonction de flux d’activité](functions.md#activity-stream-function) dans la structure de ce site communautaire.
+Le `What's New` est le titre attribué à l’élément de menu [fonction de flux d’activités](functions.md#activity-stream-function) dans la structure de ce site communautaire.
 
-Toujours connecté en tant que Sidney, sélectionnez le lien `What's New` pour afficher l’activité.
+Toujours connecté en tant que Sidney, sélectionnez la variable `What's New` pour afficher l’activité.
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
-## Membre de la communauté approuvée {#trusted-community-member}
+## Membre de la communauté approuvé {#trusted-community-member}
 
-Cette expérience suppose que ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)` se voit attribuer les rôles [modérateur](enablement-create-site.md#moderation) et [contact de ressource](resource.md#settings).
+Cette expérience suppose que ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)` a été affecté aux rôles de [modérateur](enablement-create-site.md#moderation) et [contact de ressource](resource.md#settings).
 
 Se connecter avec
 
@@ -162,7 +162,7 @@ La page d’accueil est identifiée par le premier élément de menu, Affectatio
 
 ### Administration {#administration}
 
-Il existe une activité des deux apprenants, `Riley Taylor` et `Sidney Croft. By s`en sélectionnant le lien `Administration`pour accéder à la console de modération, Quinn peut utiliser la [console de modération en bloc](moderation.md) pour modérer leurs publications.
+Ce qu&#39;il y a, c&#39;est l&#39;activité des deux apprenants, `Riley Taylor` et `Sidney Croft. By s`en sélectionnant le `Administration`pour accéder à la console de modération, Quinn peut utiliser la variable [console de modération en bloc](moderation.md) pour modérer leurs publications.
 
 La sélection de l’icône du panneau latéral permet d’ouvrir les filtres utilisés pour rechercher le contenu de la communauté.
 
@@ -174,12 +174,12 @@ Le survol d’une carte de commentaire affiche les actions de modération.
 
 Il existe deux manières d’accéder aux rapports sur les apprenants et aux ressources d’activation.
 
-Une fois l’auteur créé, accédez à la **console Ressources](resources.md)**, où sont gérées les ressources d’activation. Après avoir sélectionné un site de communauté, il est possible de générer des rapports pour[
+Sur l’auteur, accédez à la **Communautés, [Console Ressources](resources.md)**, où les ressources d’activation sont gérées, et après avoir sélectionné un site de communauté, il est possible de générer des rapports pour
 
 * Toutes les ressources d’activation et tous les parcours de formation
 * Une ressource d’activation ou un parcours d’apprentissage spécifique
 
-Accédez à **Communautés, [Console Rapports](reports.md)** et générez des rapports selon les
+Accédez au **Communautés, [Console Rapports](reports.md)** et générer des rapports en fonction des
 
 * Affectations à des ressources d’activation et à des parcours d’apprentissage
 * Publications sur un site de la communauté au cours d’une période spécifique
@@ -202,10 +202,10 @@ Avec un peu d’activité et d’interaction avec les ressources sur la publicat
 
 * À l’auteur
 * Connexion avec droits d’administrateur
-* Accédez à **[!UICONTROL Communautés > Ressources]** dans le menu principal.
-* Sélectionnez le site `Enablement Tutorial`
-* Sélectionnez l&#39;icône `Report`pour un résumé de toutes les ressources
-* Sélectionnez une ressource, puis l’icône `Report`pour un rapport sur cette ressource.
+* Accédez au **[!UICONTROL Communautés > Ressources]**
+* Sélectionnez la `Enablement Tutorial` site
+* Sélectionnez la `Report`pour un résumé de toutes les ressources
+* Sélectionnez une ressource, puis le `Report`icône pour un rapport sur cette ressource
 
 Notez qu’il est probablement trop tôt pour afficher les données d’Adobe Analytics, qui peuvent prendre entre 1 et 12 heures pour apparaître. Toutefois, les rapports SCORM de base sont déjà disponibles.
 
@@ -213,36 +213,36 @@ Notez qu’il est probablement trop tôt pour afficher les données d’Adobe An
 
 ![chlimage_1-443](assets/chlimage_1-443.png)
 
-#### Rapport Utilisateur Des Leçons De Ski {#ski-lessons-user-report}
+#### Rapport Sur Les Leçons D’Utilisation De Ski {#ski-lessons-user-report}
 
-* Sélectionnez **[!UICONTROL Communautés > Ressources]**
+* Sélectionner **[!UICONTROL Communautés > Ressources]**
 
-* Carte d’ouverture `Enablement Tutorial`
-* Carte d’ouverture `Ski Lessons`
+* Ouvrir la carte `Enablement Tutorial`
+* Ouvrir la carte `Ski Lessons`
 * `select Report, User Report`
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
 
-### Console Rapports{#reports-console} 
+### Console Rapports  {#reports-console}
 
 La console Rapports permet de générer des rapports sur les
 
-* **** Affectations pour tout site de communauté d’activation
-* **** Affichages pour n’importe quel site de communauté
-* **** Publications d’un site de communauté
+* **Affectations** pour tout site de la communauté d’activation
+* **Vues** pour tout site communautaire
+* **Publications** pour tout site communautaire
 
 Pour les rapports sur les affectations :
 
 * À l’auteur
 * Connexion avec droits d’administrateur
 * Accédez à **[!UICONTROL Communautés > Rapports > Rapport Affectations]**
-* Sélectionnez un **[!UICONTROL Site]** dans le menu déroulant (sélectionnez `Enablement Tutorial`).
+* Sélectionnez une **[!UICONTROL Site]** dans le menu déroulant (sélectionnez `Enablement Tutorial`)
 
-* Sélectionnez **[!UICONTROL Groupe]** (sélectionnez `Community Ski Class`).
+* Sélectionner **[!UICONTROL Groupe]** (sélectionnez `Community Ski Class`)
 
-* Sélectionnez une **[!UICONTROL affectation]** (sélectionnez `Ski Lessons`).
+* Sélectionnez une **[!UICONTROL Attribution]** (sélectionnez `Ski Lessons`)
 
-* Sélectionnez **[!UICONTROL Générer]**
+* Sélectionner **[!UICONTROL Générer]**
 
 ![chlimage_1-445](assets/chlimage_1-445.png)
 
@@ -251,13 +251,13 @@ Pour les rapports sur les vues :
 * À l’auteur
 * Connexion avec droits d’administrateur
 * Accédez à **[!UICONTROL Communautés > Rapports > Rapport Vues]**
-* Sélectionnez un **[!UICONTROL Site]** dans le menu déroulant (sélectionnez `Enablement Tutorial`).
+* Sélectionnez une **[!UICONTROL Site]** dans le menu déroulant (sélectionnez `Enablement Tutorial`)
 
-* Sélectionnez **[!UICONTROL Type de contenu]** (sélectionnez `all`).
+* Sélectionner **[!UICONTROL Type de contenu]** (sélectionnez `all`)
 
-* Sélectionnez une **[!UICONTROL période]** (sélectionnez `Last 7 days`).
+* Sélectionnez une **[!UICONTROL période]** (sélectionnez `Last 7 days`)
 
-* Sélectionnez **[!UICONTROL Générer]**
+* Sélectionner **[!UICONTROL Générer]**
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Améliorations de l’expérience utilisateur dans Assets
-description: Cet article décrit les améliorations de l’expérience utilisateur dans  [!DNL Experience Manager] 6.4 Assets.
+description: Cet article décrit les améliorations de l’expérience utilisateur dans [!DNL Experience Manager] 6.4 Assets.
 contentOwner: AG
 feature: Release Information
 role: Leader,User
@@ -22,7 +22,7 @@ Vous pouvez personnaliser les différents modes : Carte, Liste et Colonnes. Par
 
 ## Chargement différé {#lazy-loading}
 
-Lorsque vous parcourez/recherchez des ressources dans [!DNL Experience Manager] 6.4 Assets, jusqu’à 200 ressources s’affichent à la fois. Vous pouvez faire défiler les résultats plus rapidement, ce qui est particulièrement utile si vous naviguez dans une longue liste de résultats. Puisqu’un nombre considérable de ressources sont chargées à la fois, la navigation est fluide.
+Lorsque vous recherchez des ressources dans [!DNL Experience Manager] 6.4 Ressources, jusqu’à 200 ressources s’affichent à la fois. Vous pouvez faire défiler les résultats plus rapidement, ce qui est particulièrement utile si vous naviguez dans une longue liste de résultats. Puisqu’un nombre considérable de ressources sont chargées à la fois, la navigation est fluide.
 
 Si vous appuyez/cliquez sur une ressource pour consulter sa page de détails, vous pouvez revenir à la page de résultats, simplement en appuyant/cliquant sur le bouton Retour de la barre d’outils.
 
@@ -32,11 +32,11 @@ Selon le périphérique que vous utilisez et la quantité de détails que vous s
 
 Pour redimensionner les miniatures en mode Carte, procédez comme suit :
 
-1. Appuyez/cliquez sur l’icône Mise en page de la barre d’outils, puis sélectionnez l’option **[!UICONTROL Afficher les paramètres]** .
+1. Appuyez/cliquez sur l’icône Mise en page de la barre d’outils, puis sélectionnez l’option **[!UICONTROL Paramètres d’affichage]** .
 
    ![view_settings](assets/view_settings.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Paramètres d’affichage]**, sélectionnez la taille de miniature souhaitée, puis appuyez/cliquez sur **[!UICONTROL Mettre à jour]**.
+1. Dans la **[!UICONTROL Paramètres d’affichage]** , sélectionnez la taille de miniature souhaitée, puis appuyez/cliquez sur **[!UICONTROL Mettre à jour]**.
 
    ![view_settings_dialog](assets/view_settings_dialog.png)
 
@@ -68,7 +68,7 @@ En plus des modes Carte et Liste, vous accédez désormais à la page de détail
 
 [!DNL Experience Manager] 6.4 Assets inclut une arborescence qui permet de parcourir facilement votre hiérarchie de ressources et d’accéder à la ressource ou au dossier souhaité.
 
-Pour ouvrir l’arborescence, appuyez/cliquez sur l’icône de navigation globale dans `Assets UI`, puis sélectionnez **[!UICONTROL Arborescence de contenu]** dans le menu.
+Pour ouvrir l’arborescence, appuyez/cliquez sur l’icône de navigation globale dans la `Assets UI`, puis choisissez **[!UICONTROL Arborescence de contenu]** dans le menu.
 
 ![content_tree](assets/content_tree.png)
 
@@ -88,7 +88,7 @@ En fonction de la mise en page sélectionnée, vous pouvez ouvrir la page de dé
 |---|---|
 | [!UICONTROL Mode Carte] | Appuyez/cliquez sur la mosaïque de la ressource. |
 | [!UICONTROL Mode Liste] | Appuyez/cliquez sur l’entrée de ligne de la ressource dans la liste. |
-| [!UICONTROL Mode Colonnes] | Appuyez/cliquez sur le bouton **[!UICONTROL Plus de détails]** de l’instantané de la ressource. |
+| [!UICONTROL Mode Colonnes] | Appuyez/cliquez sur le bouton **[!UICONTROL Plus de détails]** à partir de l’instantané de la ressource. |
 
 Utilisez les boutons Précédent/Suivant pour vous déplacer entre les ressources.
 

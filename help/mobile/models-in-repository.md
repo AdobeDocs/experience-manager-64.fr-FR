@@ -1,8 +1,8 @@
 ---
 title: Modèles dans le référentiel
-seo-title: Modèles dans le référentiel
+seo-title: Models in Repository
 description: 'null'
-seo-description: 'null'
+seo-description: null
 uuid: 54f81180-4178-4e33-a6f0-e9e6ea50798e
 contentOwner: User
 content-type: reference
@@ -11,7 +11,7 @@ noindex: true
 redirecttarget: /content/help/en/experience-manager/6-4/mobile/using/administer-mobile-apps
 source-git-commit: 5fe3d533e51a0536064b22e9549578bb5ba754a4
 workflow-type: tm+mt
-source-wordcount: '1332'
+source-wordcount: '1328'
 ht-degree: 2%
 
 ---
@@ -29,17 +29,17 @@ En tant que développeur, vous devez connaître la structure du modèle dans le 
 
 ## Création de types de modèle {#creating-model-types}
 
-Il existe deux types de modèle fournis par le système sous */libs/settings/mobileapps/model-types*. Si vous souhaitez remplacer les types de modèle système, un noeud *mobileapps/model-types* doit être créé sous le noeud de configuration sur lequel vous souhaitez que le remplacement se produise.
+Il existe deux types de modèles fournis par le système sous */libs/settings/mobileapps/model-types*. Si vous souhaitez remplacer les types de modèle système par *mobileapps/model-types* doit être créé sous le noeud de configuration sur lequel vous souhaitez que le remplacement se produise.
 
-Par exemple, si vous avez créé des configurations à */conf/myconf1* et */conf/myconf2* et que vous souhaitez remplacer les types de modèle système uniquement sur *conf1*, vous créez un noeud *mobileapps/model-types* sous les paramètres de *conf1*.
+Par exemple, si vous avez créé des configurations à l’adresse */conf/myconf1* et */conf/myconf2* et souhaitez remplacer les types de modèle système sur *conf1* vous ne pouvez créer qu’une seule *mobileapps/model-types* sous les paramètres de *conf1*.
 
-Si vous souhaitez autoriser l’ajout de types de données à un modèle, le type de modèle doit comporter un noeud enfant nommé &quot;scaffolding&quot; de type &quot;cq:Page&quot; et un type de ressource *wcm/scaffolding/components/scaffolding*.
+Si vous souhaitez autoriser l’ajout de types de données à un modèle, le type de modèle doit avoir un noeud enfant nommé &quot;scaffolding&quot; de type &quot;cq:Page&quot; et un type de ressource de *wcm/scaffolding/components/scaffolding*.
 
-La page de génération de modèles automatique doit également inclure une propriété *dataTypesConfig* sur le noeud PageContent qui indique que les modèles de types de données créés à partir de ce type seront autorisés à être utilisés.
+La page de génération de modèles automatique doit également inclure une *dataTypesConfig* sur le noeud PageContent , qui indique les types de données que les modèles créés à partir de ce type seront autorisés à utiliser.
 
 >[!NOTE]
 >
->Un **Scaffolding** est une page qui définit les types de données qui peuvent être modifiés par une entité en fonction du modèle. Chaque type de données peut également être configuré pour définir comment le champ sera présenté dans l’interface utilisateur, ainsi que la manière dont la valeur de données sera conservée.
+>A **Génération de modèles automatique** est une page qui définit les types de données qui peuvent être modifiés par une entité en fonction du modèle. Chaque type de données peut également être configuré pour définir comment le champ sera présenté dans l’interface utilisateur, ainsi que la manière dont la valeur de données sera conservée.
 
 ### Configuration des types de données {#data-types-config}
 
@@ -60,7 +60,7 @@ Le noeud de configuration des types de données contient une liste d’élément
 
 La propriété &#39;dataTypesConfig&#39; prend en charge la fusion des ressources Sling. Cela signifie que les types de données utilisés par les types de modèle système (ou même les types de modèle personnalisés) peuvent être personnalisés à l’aide de noeuds de recouvrement.
 
-Une superposition de */libs/settings/mobileapps/models/formbuilderconfig/datatypes* devra être créée, puis personnalisée selon vos besoins.
+Une superposition de */libs/settings/mobileapps/models/formbuilderconfig/datatypes* doivent être créés, puis personnalisés selon vos besoins.
 
 Par exemple, une superposition pour le type de données String peut être ajoutée afin de remplacer fieldResourceType par un composant personnalisé.
 
@@ -101,9 +101,9 @@ Le tableau suivant affiche les propriétés définies pour un modèle :
 
 >[!NOTE]
 >
->Les propriétés *enfants autorisés* et *parents autorisés* suivent les mêmes règles que les modèles de page. Pour plus d’informations, voir [Modèles de page](/help/sites-developing/page-templates-static.md).
+>Le *enfants autorisés* et *parents autorisés* Les propriétés suivent les mêmes règles que les modèles de page. Pour plus d’informations, voir [Modèles de page](/help/sites-developing/page-templates-static.md).
 >
->En référence à la propriété *Type de modèle* , tous les modèles doivent avoir un super type *mobileapps/caas/components/data/entity*, mais peuvent avoir un sous-type qui permet de personnaliser la diffusion de contenu. Le fait de s’assurer que tous les types de modèle sont uniques peut également aider les clients des services de contenu à distinguer les objets dans les données.
+>En référence à *Type de modèle* , tous les modèles doivent avoir un super type de *mobileapps/caas/components/data/entity* mais peut comporter un sous-type qui permet de personnaliser la diffusion de contenu. Le fait de s’assurer que tous les types de modèle sont uniques peut également aider les clients des services de contenu à distinguer les objets dans les données.
 
 ### Modification d’un modèle {#editing-a-model}
 
@@ -113,7 +113,7 @@ Lorsque le modèle est localisé, l’éditeur de modèles génère tout ce qui 
 
 >[!NOTE]
 >
->Tous les modèles sont des modèles, ils suivent donc toutes les règles de modèle AEM. Cela permet d’utiliser des propriétés telles que les propriétés *allowedParents* et *allowedChildren*. Elles sont efficaces lors de la création d’entités basées sur un modèle. Les règles de modèle garantissent que les entités ne peuvent être basées que sur certains modèles selon leur hiérarchie.
+>Tous les modèles sont des modèles, ils suivent donc toutes les règles de modèle AEM. Cela permet d’utiliser des propriétés telles que *allowedParents* et *allowedChildren* propriétés. Elles sont efficaces lors de la création d’entités basées sur un modèle. Les règles de modèle garantissent que les entités ne peuvent être basées que sur certains modèles selon leur hiérarchie.
 >
 >Pour en savoir plus sur la modification d’un modèle à partir du tableau de bord, voir [Création d’un modèle](/help/mobile/administer-mobile-apps.md) sous la section Création pour les applications mobiles.
 
@@ -121,18 +121,18 @@ Lorsque le modèle est localisé, l’éditeur de modèles génère tout ce qui 
 
 Deux types de modèles système prédéfinis sont fournis pour une réutilisation simple du contenu. Ces modèles ne peuvent pas être modifiés.
 
-**** Modèle de pagesLe modèle Pages fournit une méthode rapide pour réutiliser du contenu existant de Sites pour une diffusion par des services de contenu.
+**Modèle de pages** Le modèle Pages fournit une méthode rapide pour réutiliser du contenu existant de Sites pour une diffusion par des services de contenu.
 
 Le resourceType des entités basé sur le modèle Pages est : mobileapps/caas/components/data/pages
 
 Chemin : Chemin d’accès à une page Sites. Le contenu de ce chemin (et de ses enfants) sera rendu par les gestionnaires de services de contenu.
 
-**** Modèle AssetsLe modèle Assets fournit une méthode rapide pour réutiliser du contenu existant d’Assets en vue de sa diffusion par les services de contenu.
+**Modèle Assets** Le modèle Assets fournit une méthode rapide pour réutiliser du contenu existant d’Assets en vue de sa diffusion par les services de contenu.
 
 Le resourceType des entités basé sur le modèle Pages est : *mobileapps/caas/components/data/assets.*
 
-Liste des ressources : Liste des chemins d’accès à partir d’Assets. Chaque ressource est ajoutée en tant que noeud d’entité enfant avec un resourceType *wcm/foundation/components/image*.
+Liste des ressources : Liste des chemins d’accès à partir d’Assets. Chaque ressource est ajoutée en tant que noeud d’entité enfant avec un resourceType de *wcm/foundation/components/image*.
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’utilisation de ces modèles pour créer des modèles à partir du tableau de bord, voir [Création d’un modèle](/help/mobile/administer-mobile-apps.md) sous la section Création pour les applications mobiles.
+>Pour en savoir plus sur l’utilisation de ces modèles pour créer des modèles à partir du tableau de bord, voir [Création d’un modèle](/help/mobile/administer-mobile-apps.md) sous la section Création pour les applications mobiles.

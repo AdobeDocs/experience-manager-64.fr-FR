@@ -1,8 +1,8 @@
 ---
 title: Mappage du modèle dynamique avec les composants pour les SPA
-seo-title: Mappage du modèle dynamique avec les composants pour les SPA
+seo-title: Dynamic Model to Component Mapping for SPAs
 description: Cet article décrit le fonctionnement du mappage du modèle dynamique avec les composants dans le SDK JavaScript SPA pour AEM.
-seo-description: Cet article décrit le fonctionnement du mappage du modèle dynamique avec les composants dans le SDK JavaScript SPA pour AEM.
+seo-description: This article describes how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM.
 uuid: 337b8d90-efd7-442e-9fac-66c33cc26212
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 exl-id: 2bbbfbaa-b0a1-4f8a-9445-51325d80e368
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 88%
+source-wordcount: '357'
+ht-degree: 87%
 
 ---
 

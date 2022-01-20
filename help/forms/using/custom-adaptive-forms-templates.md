@@ -1,8 +1,8 @@
 ---
 title: Création d’un modèle de formulaire adaptatif personnalisé
-seo-title: Création d’un modèle de formulaire adaptatif personnalisé
+seo-title: Creating a custom adaptive form template
 description: Cet article décrit comment créer des modèles de formulaire adaptatif personnalisés.
-seo-description: Cet article décrit comment créer des modèles de formulaire adaptatif personnalisés.
+seo-description: This article describes how to create custom adaptive form templates.
 uuid: 8f8c770f-984c-48e8-978c-7cdfcd1af95b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
 exl-id: 83f978ca-d451-4d27-820f-3620331285cf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1145'
 ht-degree: 76%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 76%
 
 ## Prérequis {#prerequisites}
 
-* Compréhension de l’AEM [Modèle de page](/help/sites-authoring/templates.md) et [Création de formulaire adaptatif](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
+* Compréhension des AEM [Modèle de page](/help/sites-authoring/templates.md) et [Création de formulaires adaptatifs](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
 
 * Présentation des [bibliothèques côté client](/help/sites-developing/clientlibs.md) AEM
 
-## Modèle de formulaire adaptatif  {#adaptive-form-template}
+## Modèle de formulaire adaptatif {#adaptive-form-template}
 
 Un modèle de formulaire adaptatif est un modèle de page AEM spécialisé avec des propriétés et une structure de contenu qui est utilisé pour créer un formulaire adaptatif. Il possède des dispositions, des styles et une structure de contenu initiale de base préconfigurés.
 
@@ -46,7 +46,7 @@ Le tableau suivant montre l’association entre les modèles et le composant de 
  <tbody> 
   <tr> 
    <td><p><strong>Modèle</strong></p> </td> 
-   <td><p><strong>Composant de page</strong></p> </td> 
+   <td><p><strong>Composant de page </strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>/libs/fd/af/templates/surveyTemplate</p> </td> 
@@ -67,7 +67,7 @@ Le tableau suivant montre l’association entre les modèles et le composant de 
  </tbody> 
 </table>
 
-## Création d’un modèle de formulaire adaptatif à l’aide de l’éditeur de modèle  {#creating-an-adaptive-form-template-using-template-editor}
+## Création d’un modèle de formulaire adaptatif à l’aide de l’éditeur de modèle {#creating-an-adaptive-form-template-using-template-editor}
 
 Vous pouvez spécifier la structure et le contenu initial d’un formulaire adaptatif à l’aide de l’éditeur de modèles. Par exemple, vous souhaitez que tous les auteurs de formulaire aient quelques zones de texte, des boutons de navigation, ainsi qu’un bouton permettant de soumettre un formulaire d’inscription. Vous pouvez créer un modèle que les auteurs peuvent utiliser pour créer un formulaire compatible à d’autres formulaires d’inscription. L’éditeur de modèles AEM permet d’effectuer les opérations suivantes :
 
@@ -91,15 +91,15 @@ Pour créer un modèle personnalisé comme simpleEnrollmentTemplate, suivez la p
 1. Sous le répertoire /apps, créez la structure des dossiers pour votre application. Si le nom de l’application est par exemple mycompany, créez un dossier portant ce nom. En règle générale, le dossier d’application contient les répertoires d’installation, de composants, de configuration, de modèles et src. Dans le cadre de cet exemple, créez les dossiers de composants, de configuration et de modèles.
 
 1. Accédez au dossier /libs/fd/af/templates.
-1. Copiez le noeud `simpleEnrollmentTemplate` .
+1. Copiez le `simpleEnrollmentTemplate` noeud .
 1. Accédez au dossier /apps/mycompany/templates. Cliquez avec le bouton droit dessus et sélectionnez **[!UICONTROL Coller]**.
 1. Si nécessaire, renommez le nœud de modèle que vous avez copié. Renommez-le par exemple en tant qu’enrollment-template.
 
 1. Accédez à l’emplacement /apps/mycompany/templates/enrollment-template.
 
-1. Modifiez les propriétés `jcr:title` et `jcr:description` du noeud `jcr:content` pour distinguer le modèle du modèle que vous avez copié.
+1. Modifiez le `jcr:title` et `jcr:description` pour la propriété `jcr:content` pour distinguer le modèle du modèle que vous avez copié.
 
-1. Le noeud `jcr:content` du modèle modifié contient les composants `guideContainer` et `guideformtitle`. Le composant `guideContainer` est le conteneur qui contient le formulaire adaptatif. Le composant `guideformtitle` affiche le nom, la description et d’autres informations sur l’application.
+1. Le `jcr:content` du modèle modifié contient le noeud `guideContainer` et `guideformtitle` composants. Le composant `guideContainer` est le conteneur qui contient le formulaire adaptatif. Le composant `guideformtitle` affiche le nom, la description et d’autres informations sur l’application.
 
    A la place du composant `guideformtitle`, vous pouvez inclure un composant personnalisé ou le composant `parsys`. Par exemple, supprimez le composant `guideformtitle` et ajoutez un composant personnalisé ou le nœud de composant `parsys`. Vérifiez que la propriété `sling:resourceType` du composant référence ce dernier et que la même propriété est définie dans le fichier `component.jsp` de la page.
 
@@ -118,9 +118,9 @@ Le modèle personnalisé possède les mêmes styles que le modèle par défaut, 
 
 1. Renommez le composant copié en `enrollmentpage`.
 
-1. **(Uniquement si vous disposez déjà d’une page de contenu)** Effectuez les étapes suivantes (a-d), si vous disposez d’un  `contentpage`composant existant pour votre site web. Si vous ne disposez pas d’un composant `contentpage`existant pour votre site web, vous pouvez laisser la propriété `resourceSuperType`pour qu’elle pointe vers la page de base prête à l’emploi.
+1. **(Uniquement si vous disposez déjà d’une page de contenu)** Effectuez les étapes suivantes (a-d), si vous disposez d’une `contentpage`pour votre site web. Si vous ne disposez pas d’une `contentpage`pour votre site web, vous pouvez laisser la variable `resourceSuperType`pour pointer vers la page de base prête à l’emploi.
 
-   1. Pour le noeud `enrollmentpage`, définissez la valeur de la propriété `sling:resourceSuperType` sur mycompany/components/page/contentpage. Le composant `contentpage` est le composant de page base de votre site. D’autres composants de page peuvent l’étendre. Supprimez les fichiers de script sous `enrollmentpage`, à l’exception de `head.jsp`, `content.jsp` et `library.jsp`. Le composant `sling:resourceSuperType`, qui est `contentpage` dans ce cas, inclut tous ces scripts. Les en-têtes, dont la barre de navigation et le pied de page, sont hérités du composant `contentpage`
+   1. Pour le `enrollmentpage` noeud, définir la valeur de la propriété `sling:resourceSuperType` à mycompany/components/page/contentpage. Le composant `contentpage` est le composant de page base de votre site. D’autres composants de page peuvent l’étendre. Supprimer les fichiers de script sous `enrollmentpage`, sauf `head.jsp`, `content.jsp`, et `library.jsp`. Le `sling:resourceSuperType` qui est `contentpage` dans ce cas, inclut tous ces scripts. Les en-têtes, dont la barre de navigation et le pied de page, sont hérités du composant `contentpage`
 
    1. Ouvrez le fichier `head.jsp`.
 
@@ -128,18 +128,18 @@ Le modèle personnalisé possède les mêmes styles que le modèle par défaut, 
 
       Le fichier `library.jsp` contient la bibliothèque cliente `guide.theme.simpleEnrollment`, qui comporte les styles du formulaire adaptatif.
 
-      Le composant de page `enrollmentpage` comporte un fichier `head.jsp` exclusif qui remplace le fichier `head.jsp` du composant `contentpage`.
+      Composant de page `enrollmentpage` possède une `head.jsp` qui remplace le fichier `head.jsp` du fichier `contentpage` composant.
 
-   1. Incluez tous les scripts du fichier `head.jsp` du composant `contentpage` dans le fichier `head.jsp` du composant `enrollmentpage`.
+   1. Inclure tous les scripts dans la variable `head.jsp` pour le fichier `contentpage` au composant `head.jsp` pour le fichier `enrollmentpage` composant.
    1. Dans le script `content.jsp`, vous pouvez ajouter du contenu de page ou des références supplémentaires à d’autres composants inclus lors du rendu de la page. Par exemple, si vous ajoutez l’`applicationformheader` du composant personnalisé, veillez à ajouter la référence suivante au composant dans le fichier JSP :
 
       `<cq:include path="applicationformheader" resourceType="mycompany/components/applicationformheader"/>`
 
       De même, si vous ajoutez un composant `parsys` à la structure du nœud de modèle, incluez également le composant personnalisé.
 
-## Création d&#39;une bibliothèque cliente de formulaire adaptatif {#creating-an-adaptive-form-client-library}
+## Création d’une bibliothèque cliente de formulaire adaptatif {#creating-an-adaptive-form-client-library}
 
-Le fichier `head.jsp` du composant `enrollmentpage` pour le nouveau modèle comprend une bibliothèque cliente `guide.theme.simpleEnrollment`. Le modèle par défaut utilise également cette bibliothèque cliente. Modifiez le style du nouveau modèle à l’aide de l’une de ces méthodes :
+Le `head.jsp` du fichier `enrollmentpage` Le composant du nouveau modèle comprend une bibliothèque cliente. `guide.theme.simpleEnrollment`. Le modèle par défaut utilise également cette bibliothèque cliente. Modifiez le style du nouveau modèle à l’aide de l’une de ces méthodes :
 
 * Définissez un thème personnalisé et remplacez le thème par défaut `guide.theme.simpleEnrollment` par celui-ci.
 * Définissez une nouvelle bibliothèque cliente sous /etc/designs/mycompany. Incluez la bibliothèque cliente après l’entrée de thème par défaut dans la page jsp. Incluez tous les styles remplacés et les fichiers JavaScript supplémentaires dans cette bibliothèque cliente.

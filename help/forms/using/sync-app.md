@@ -1,8 +1,8 @@
 ---
 title: Synchronisation de l’application
-seo-title: Synchronisation de l’application
+seo-title: Synchronizing the app
 description: Synchronisation de l’application AEM Forms sur votre périphérique mobile avec le serveur AEM Forms.
-seo-description: Synchronisation de l’application AEM Forms sur votre périphérique mobile avec le serveur AEM Forms.
+seo-description: Synchronize the AEM Forms app on your mobile device with the AEM Forms server.
 uuid: 7e1526e1-13bd-498a-a265-cd4f2d05ccdd
 contentOwner: robhagat
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 exl-id: b5681fe5-69ba-4fc0-95e3-6ffdcdd95382
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '369'
 ht-degree: 96%
 
 ---
@@ -29,7 +29,7 @@ Lorsque vous êtes connecté avec le serveur AEM Forms, votre application est s
 
 **Synchronisation manuelle de l’application**
 
-Appuyez sur le bouton Synchroniser ![sync-app](assets/sync-app.png) dans le coin inférieur droit de l’écran d’accueil.
+Appuyez sur le bouton Synchroniser . ![sync-app](assets/sync-app.png) dans le coin inférieur droit de l’écran d’accueil.
 
 **Modification de la fréquence de synchronisation**
 
@@ -41,7 +41,7 @@ Appuyez sur le bouton Synchroniser ![sync-app](assets/sync-app.png) dans le coin
 1. Au niveau de l’option Sync Frequency (Fréquence de synchronisation), appuyez sur la valeur à droite de Sync Frequency.
 1. Dans la liste déroulante, sélectionnez la nouvelle fréquence de synchronisation.
 
-### Spécifications techniques  {#technical-specifications}
+### Spécifications techniques {#technical-specifications}
 
 * La logique principale d’envoi des données d’application hors connexion au serveur AEM Forms est incluse dans le fichier runtime/offline/util/offline.js.
 * Dans le fichier .js, l’appel de la fonction processOfflineSubmittedSavedTasks(...) envoie vers le serveur les tâches enregistrées/envoyées. Il gère également les erreurs ou les conflits dans le processus de synchronisation. En cas d’échec de l’envoi de la tâche, la tâche est marquée comme en échec dans l’application. En outre, la tâche reste dans votre Outbox.

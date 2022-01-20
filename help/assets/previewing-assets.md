@@ -1,8 +1,8 @@
 ---
 title: Aperçu de ressources Dynamic Media
-seo-title: Aperçu de ressources Dynamic Media
+seo-title: Previewing Dynamic Media assets
 description: Découvrez comment prévisualiser des ressources dans Dynamic Media
-seo-description: Découvrez comment prévisualiser des ressources dans Dynamic Media
+seo-description: Learn how to preview assets in Dynamic Media
 uuid: f0ff2fc4-a263-4dbe-ba46-b07077b49ae0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,18 +10,18 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 77296bff-8429-4240-af93-26076ae431ec
 exl-id: ec05569a-6449-4430-9b9f-7ab051f44970
-feature: Gestion des ressources,Rendus
+feature: Asset Management,Renditions
 role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1016'
 ht-degree: 90%
 
 ---
 
 # Aperçu de ressources Dynamic Media {#previewing-assets}
 
-Vous pouvez utiliser **[!UICONTROL Aperçu]** pour voir à quoi ressemble une ressource numérique Dynamic Media lorsqu’elle est affichée par un client dans son propre navigateur web. La visionneuse multi-appareils incorporée par défaut qui est affectée à la ressource est utilisée pour l’ **[!UICONTROL aperçu]**.
+Vous pouvez utiliser **[!UICONTROL Aperçu]** pour voir à quoi ressemble une ressource numérique Dynamic Media lorsqu’elle est affichée par un client dans son propre navigateur web. La visionneuse multi-appareils incorporée par défaut qui est affectée à la ressource est utilisée pour la variable **[!UICONTROL Aperçu]**.
 
 Une visionneuse est un ensemble de paramètres ou de « paramètres prédéfinis », tels que la taille d’affichage de la visionneuse, le comportement du zoom, les modèles de couleurs, les bordures et les polices, qui déterminent la manière dont les utilisateurs voient le contenu multimédia enrichi sur leurs écrans d’ordinateur et appareils mobiles.
 
@@ -36,7 +36,7 @@ Outre l’utilisation de la fonction d’aperçu dédiée pour la vidéo, les vi
 
 **Prévisualisation d’une ressource**:
 
-1. Dans **Adobe Experience Manager**, sur la page **[!UICONTROL Navigation]**, appuyez sur **[!UICONTROL Ressource]s**, puis sur **[!UICONTROL Fichiers]** pour accéder aux ressources.
+1. De **Adobe Experience Manager**, sur le **[!UICONTROL Navigation]** page, appuyez sur **[!UICONTROL Ressource]s**, puis **[!UICONTROL Fichiers]** pour accéder aux ressources.
 1. Dans le coin supérieur droit de la page, dans la liste déroulante **[!UICONTROL Afficher]**, appuyez sur **[!UICONTROL Mode Liste]**.
 1. (Facultatif) Utilisez la colonne **[!UICONTROL Type]** pour trier les ressources en fonction du type que vous souhaitez prévisualiser.
 1. Sous la colonne **[!UICONTROL Titre]**, cliquez sur le nom du titre (et non sur l’image miniature) de la ressource à prévisualiser.

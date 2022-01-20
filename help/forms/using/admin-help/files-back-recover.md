@@ -142,7 +142,7 @@ Utilisez MySQLAdmin ou modifiez les fichiers INI dans Windows pour configurer vo
 >
 >`binlog_format=mixed log-bin=logname`
 
-Vous pouvez utiliser l’utilitaire mysqldump pour effectuer la sauvegarde intégrale de la base de données. Les sauvegardes intégrales sont nécessaires, mais ne sont pas toujours pratiques. Elles génèrent des fichiers de sauvegarde volumineux et leur exécution prend du temps. Pour effectuer une sauvegarde incrémentielle, veillez à démarrer le serveur avec l’option - `log-bin` comme décrit dans la section précédente. A chaque fois que le serveur MySQL redémarre, il cesse d’écrire dans le journal binaire courant, en crée un nouveau, qui devient dès lors le nouveau journal binaire courant. Vous pouvez forcer un commutateur manuellement à l’aide de la commande `FLUSH LOGS SQL`. Après la première sauvegarde intégrale, les sauvegardes incrémentielles suivantes sont effectuées en utilisant l’utilitaire mysqladmin avec la commande `flush-logs`, qui crée le fichier journal suivant.
+Vous pouvez utiliser l’utilitaire mysqldump pour effectuer la sauvegarde intégrale de la base de données. Les sauvegardes intégrales sont nécessaires, mais ne sont pas toujours pratiques. Elles génèrent des fichiers de sauvegarde volumineux et leur exécution prend du temps. Pour effectuer une sauvegarde incrémentielle, assurez-vous que vous démarrez le serveur avec le paramètre - `log-bin` , comme décrit dans la section précédente. A chaque fois que le serveur MySQL redémarre, il cesse d’écrire dans le journal binaire courant, en crée un nouveau, qui devient dès lors le nouveau journal binaire courant. Vous pouvez forcer un sélecteur manuellement à l’aide de l’option `FLUSH LOGS SQL` . Après la première sauvegarde intégrale, les sauvegardes incrémentielles suivantes sont effectuées en utilisant l’utilitaire mysqladmin avec la commande `flush-logs`, qui crée le fichier journal suivant.
 
 Voir [Résumé de la stratégie de sauvegarde](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
@@ -181,7 +181,7 @@ Lors de l’installation de Content Services (obsolète) dans un environnement o
 
 **Répertoire racine d’index :** répertoire créé sur chaque nœud de la grappe et ayant toujours les mêmes chemin et nom.
 
-L’emplacement par défaut du répertoire racine de stockage de contenu est *[racine du stockage global de documents]*/lccs_data, où *[racine du stockage global de documents]* est l’emplacement décrit dans [Emplacement du stockage global de documents](files-back-recover.md#gds-location). Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
+L’emplacement par défaut du répertoire racine de stockage de contenu est *[Racine GDS]*/lccs_data, où *[Racine GDS]* est l’emplacement décrit dans la section [Emplacement du répertoire de stockage global de documents](files-back-recover.md#gds-location). Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
 
 /audit.contentstore
 
@@ -201,6 +201,6 @@ Sauvegardez séparément les polices supplémentaires éventuellement installée
 
 >[!NOTE]
 >
->Par défaut, les polices Adobe installées avec AEM forms se trouvent dans le répertoire [racine aem-forms]/fonts.
+>Par défaut, les polices Adobe installées avec AEM forms se trouvent dans la variable [racine aem-forms]répertoire /fonts.
 
 Si vous réinitialisez le système d’exploitation sur l’ordinateur hôte et que vous souhaitez utiliser des polices du précédent système d’exploitation, le contenu du répertoire des polices système doit également être sauvegardé. (Pour plus d’instructions, reportez-vous à la documentation de votre système d’exploitation).

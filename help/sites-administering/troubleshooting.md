@@ -1,8 +1,8 @@
 ---
 title: Utilisation des journaux
-seo-title: Utilisation des journaux
+seo-title: Working with Logs
 description: Découvrez comment résoudre les problèmes d’AEM à l’aide des journaux.
-seo-description: Découvrez comment résoudre les problèmes d’AEM à l’aide des journaux.
+seo-description: Learn how to troubleshoot AEM by working with logs.
 uuid: b64e0b25-5228-4c2f-9cc1-dde524134026
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: b4c1cb82-865b-48dd-b5c0-946e6610ce8e
 exl-id: 201e2b57-17c0-4454-9b0e-026e2c95ac63
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 93%
+source-wordcount: '234'
+ht-degree: 92%
 
 ---
 

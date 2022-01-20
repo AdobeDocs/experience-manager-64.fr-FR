@@ -35,19 +35,19 @@ Lorsque le package est installé, les entités et services suivants sont déploy
 * Service cloud OData MS Dynamics (service OData)
 * Modèle de données de formulaire avec entités et services Microsoft Dynamics préconfigurés.
 
-Le Cloud Service OData et le modèle de données de formulaire avec entités et services Microsoft Dynamics préconfigurés ne sont disponibles sur votre instance AEM Forms que si le mode d’exécution de l’instance AEM est défini sur `samplecontent` (par défaut). Pour plus d’informations sur la configuration des modes d’exécution pour une instance AEM, voir [Modes d’exécution](/help/sites-deploying/configure-runmodes.md).
+Le Cloud Service OData et le modèle de données de formulaire avec entités et services Microsoft Dynamics préconfigurés ne sont disponibles sur votre instance AEM Forms que si le mode d’exécution de l’instance AEM est défini comme `samplecontent`(par défaut). Pour plus d’informations sur la configuration des modes d’exécution pour une instance AEM, voir [Modes d’exécution](/help/sites-deploying/configure-runmodes.md).
 
 ## Prérequis {#prerequisites}
 
 Avant de commencer à installer et configurer Microsoft Dynamics, vérifiez que vous avez :
 
-* Installation du [module complémentaire Forms 6.4AEM](https://helpx.adobe.com//experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)
+* Installé le [Package de module complémentaire Forms AEM 6.4](https://helpx.adobe.com//experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)
 * Configuré Microsoft Dynamics 365 en ligne ou installé une instance de l’une des versions de Microsoft Dynamics suivantes :
 
    * Microsoft Dynamics 365 sur site
    * Microsoft Dynamics 2016 sur site
 
-* [Enregistrement de l’application pour le service en ligne Microsoft Dynamics avec Microsoft Azure Principale Directory](https://docs.microsoft.com/fr-fr/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Notez les valeurs de l’ID client (également appelé « ID d’application ») et du secret du client pour le service enregistré. Ces valeurs sont utilisées lors de l’utilisation de la [configuration du service cloud pour votre service Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [Enregistrement de l’application pour le service en ligne Microsoft Dynamics avec Microsoft Azure Principal Directory](https://docs.microsoft.com/fr-fr/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Notez les valeurs de l’ID client (également appelé « ID d’application ») et du secret du client pour le service enregistré. Ces valeurs sont utilisées lors de l’utilisation de la [configuration du service cloud pour votre service Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## Définition de l’URL de réponse pour l’application Microsoft Dynamics enregistrée {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -73,7 +73,7 @@ Microsoft Dynamics utilise l’authentification basée sur les réclamations po
 >
 >Utilisez cette procédure uniquement lors de l’intégration d’AEM Forms au serveur Microsoft Dynamics sur site.
 
-1. Configurez l’instance Microsoft Dynamics sur site pour IFD comme décrit dans [Configuration d’IFD pour Microsoft Dynamics](https://technet.microsoft.com/fr-fr/library/dn609803.aspx).
+1. Configurez l’instance Microsoft Dynamics sur site pour IFD comme décrit dans [Configuration de IFD pour Microsoft Dynamics](https://technet.microsoft.com/fr-fr/library/dn609803.aspx).
 1. Exécutez les commandes suivantes à l’aide de Windows PowerShell pour configurer les paramètres de réclamation sur Microsoft Dynamics compatible avec IFD :
 
    ```
@@ -118,7 +118,7 @@ Pour enregistrer un client OAuth sur l’ordinateur Active Directory Federatio
 
 ## Configurer le service cloud pour votre service Microsoft Dynamics {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
-La configuration **Cloud Service OData MS Dynamics (service OData)** est fournie avec la configuration OData par défaut. Pour le configurer afin qu’il se connecte à votre service Microsoft Dynamics, procédez comme suit.
+Le **Cloud Service OData MS Dynamics (service OData)** est fourni avec la configuration OData par défaut. Pour le configurer afin qu’il se connecte à votre service Microsoft Dynamics, procédez comme suit.
 
 1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]** et appuyez sur le dossier de configuration `global`.
 1. Sélectionnez la configuration du **[!UICONTROL service cloud OData MS Dynamics (service OData)]** et appuyez sur **[!UICONTROL Propriétés]**. La boîte de dialogue Propriété de configuration du service cloud s’affiche.
@@ -126,13 +126,13 @@ La configuration **Cloud Service OData MS Dynamics (service OData)** est fournie
    Dans l’onglet **[!UICONTROL Paramètres d’authentification]** :
 
    1. Saisissez la valeur pour le champ **[!UICONTROL Racine du service]**. Accédez à l’instance Dynamics et à **[!UICONTROL Ressources de développement]** pour afficher la valeur du champ Racine du service. Par exemple, https://&lt;nom-client>/api/data/v9.1/
-   1. Remplacez les valeurs par défaut dans les champs **[!UICONTROL ID client]** (également appelé **[!UICONTROL ID d’application]**), **[!UICONTROL Secret client]**, **[!UICONTROL URL OAuth]**, **[!UICONTROL URL du jeton d’actualisation]**, **[!UICONTROL URL du jeton d’accès]** et **[!UICONTROL Ressource]** avec les valeurs de votre configuration de service Microsoft Dynamics. Il est obligatoire de spécifier l’URL de l’instance de dynamique dans le champ **[!UICONTROL Ressource]** pour configurer Microsoft Dynamics avec un modèle de données de formulaire. Utilisez l’URL racine du service pour dériver l’URL de l’instance dynamique. For example, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
-   1. Spécifiez **[!UICONTROL openid]** dans le champ **[!UICONTROL Portée de l’autorisation]** pour le processus d’autorisation sur Microsoft Dynamics.
+   1. Remplacez les valeurs par défaut dans les champs **[!UICONTROL ID client]** (également appelé **[!UICONTROL ID d’application]**), **[!UICONTROL Secret client]**, **[!UICONTROL URL OAuth]**, **[!UICONTROL URL du jeton d’actualisation]**, **[!UICONTROL URL du jeton d’accès]** et **[!UICONTROL Ressource]** avec les valeurs de votre configuration de service Microsoft Dynamics. Il est obligatoire de spécifier l’URL de l’instance de dynamique dans la variable **[!UICONTROL Ressource]** pour configurer Microsoft Dynamics avec un modèle de données de formulaire. Utilisez l’URL racine du service pour dériver l’URL de l’instance dynamique. For example, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. Spécifier **[!UICONTROL openid]** dans le **[!UICONTROL Portée de l’autorisation]** champ pour le processus d’autorisation sur Microsoft Dynamics.
 
    ![dynamics_authentication_settings](assets/dynamics_authentication_settings.png)
 
 1. Cliquez sur **[!UICONTROL Connexion à OAuth]**. Vous êtes redirigé vers la page de connexion de Microsoft Dynamics.
-1. Connectez-vous avec vos informations d’identification Microsoft Dynamics et acceptez de permettre à la configuration du service cloud de se connecter au service Microsoft Dynamics. C’est une tâche ponctuelle qui permet d’établir une connexion entre le service cloud et le service.
+1. Connectez-vous à l’aide de vos informations d’identification Microsoft Dynamics et acceptez d’autoriser la configuration du service cloud à vous connecter au service Microsoft Dynamics. C’est une tâche ponctuelle qui permet d’établir une connexion entre le service cloud et le service.
 
    Vous êtes ensuite redirigé vers la page de configuration du service cloud, qui affiche un message indiquant que la configuration OData a été enregistrée avec succès.
 

@@ -1,8 +1,8 @@
 ---
 title: Présentation de la configuration SSL
-seo-title: Présentation de la configuration SSL
+seo-title: Overview of configuring SSL
 description: Découvrez comment améliorer la sécurité de la communication lors de la configuration de SSL.
-seo-description: Découvrez comment améliorer la sécurité de la communication lors de la configuration de SSL.
+seo-description: Learn about how to enhance security of communication by configuring SSL.
 uuid: 3e99d2bf-137b-45ba-8384-309624094623
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
 exl-id: 5dc68401-f6bc-42cb-84db-1db805b045c5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '211'
 ht-degree: 100%
 
 ---

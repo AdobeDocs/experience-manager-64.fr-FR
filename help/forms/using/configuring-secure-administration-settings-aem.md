@@ -1,8 +1,8 @@
 ---
 title: Configuration des paramètres d’administration sécurisée d’AEM Forms on JEE
-seo-title: Configuration des paramètres d’administration sécurisée d’AEM Forms on JEE
+seo-title: Configuring Secure Administration Settings for AEM Forms on JEE
 description: Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un environnement de développement privé, ne sont pas requis dans un environnement de production d’AEM Forms on JEE.
-seo-description: Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un environnement de développement privé, ne sont pas requis dans un environnement de production d’AEM Forms on JEE.
+seo-description: Learn how to administer user accounts and services that, although required in a private development environment, are not required in a production environment of AEM Forms on JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -12,8 +12,8 @@ role: Admin
 exl-id: 980d420c-a768-4634-9b8c-3f1d7327285d
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 80%
+source-wordcount: '847'
+ht-degree: 84%
 
 ---
 
@@ -78,7 +78,7 @@ Certains services du serveur de formulaires permettent d’appeler sans authenti
 
 1. Cliquez sur **Services > Applications et services > Gestion des services**.
 1. Cliquez sur le nom du service à désactiver (par exemple, AuthenticationManagerService).
-1. Cliquez sur l’onglet **Sécurité**, désélectionnez **Accès anonyme autorisé**, puis cliquez sur **Enregistrer**.
+1. Cliquez sur le bouton **Onglet Sécurité**, désélectionnez **Accès anonyme autorisé**, puis cliquez sur **Enregistrer**.
 1. Effectuez les étapes 3 et 4 pour les services suivants :
 
    * AuthenticationManagerService

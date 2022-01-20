@@ -1,8 +1,8 @@
 ---
 title: Envoi sécurisé de gros volumes d’information
-seo-title: Envoi sécurisé de gros volumes d’information
+seo-title: High-volume secure information delivery
 description: Dans des environnements de production de masse, Document Security prend en charge l’association des licences aux utilisateurs plutôt qu’aux documents.
-seo-description: Dans des environnements de production de masse, Document Security prend en charge l’association des licences aux utilisateurs plutôt qu’aux documents.
+seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
 uuid: 9747d283-506c-434e-9850-e50b95290cc8
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ feature: Document Security
 exl-id: 78fc7c4a-a634-4628-927a-c9622bdc13fc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '324'
 ht-degree: 98%
 
 ---

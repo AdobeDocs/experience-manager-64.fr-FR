@@ -60,23 +60,23 @@ Pour utiliser un serveur LDAP différent pour l’authentification, sélectionn
 
 **Serveur :** (obligatoire) nom de domaine complet (FQDN) du serveur d’annuaire. Par exemple, pour un ordinateur appelé x sur le réseau example.com, le nom de domaine complet est x.example.com. Il est possible d’utiliser une adresse IP à la place du nom de domaine complet du serveur.
 
-**Port :**  (obligatoire) port utilisé par le serveur d’annuaire. Il s’agit du port 389 ou 636 si les informations d’authentification sont envoyées via le protocole SSL sur le réseau.
+**Port :** (obligatoire) port utilisé par le serveur d’annuaire. Il s’agit du port 389 ou 636 si les informations d’authentification sont envoyées via le protocole SSL sur le réseau.
 
 **SSL :** (obligatoire) indique si le serveur d’annuaire utilise SSL lors de l’envoi de données sur le réseau. La valeur par défaut est Non. Avec la valeur Oui, le certificat du serveur LDAP correspondant doit être approuvé par l’environnement d’exécution Java™ (JRE) du serveur d’applications.
 
-**Binding**  (obligatoire) indique comment accéder à l’annuaire.
+**Liaison** (obligatoire) indique le mode d’accès à l’annuaire.
 
-**Anonyme :** aucun nom d’utilisateur ou mot de passe n’est requis.
+**Anonyme :** Aucun nom d’utilisateur ou mot de passe n’est requis.
 
-**Utilisateur :** l’authentification est requise. Dans le champ Nom, indiquez le nom de l’enregistrement utilisateur qui peut accéder à l’annuaire. Il est généralement conseillé d’entrer le nom distinctif complet (ND) du compte utilisateur, par exemple : cn=Jane Doe, ou=user, dc=can, dc=com. Dans le champ Mot de passe, indiquez le mot de passe associé. Ces paramètres sont obligatoires lorsque vous sélectionnez Utilisateur pour l’option Liaison.
+**Utilisateur :** L’authentification est requise. Dans le champ Nom, indiquez le nom de l’enregistrement utilisateur qui peut accéder à l’annuaire. Il est généralement conseillé d’entrer le nom distinctif complet (ND) du compte utilisateur, par exemple : cn=Jane Doe, ou=user, dc=can, dc=com. Dans le champ Mot de passe, indiquez le mot de passe associé. Ces paramètres sont obligatoires lorsque vous sélectionnez Utilisateur pour l’option Liaison.
 
-**Récupérer les DN de base :**  (non obligatoire) récupère les ND de base et les affiche dans la liste déroulante. Ce paramètre est utile lorsque vous avez plusieurs DN de base et que vous devez sélectionner une valeur.
+**Récupérer les DN de base :** (Non obligatoire) récupère les ND de base et les affiche dans la liste déroulante. Ce paramètre est utile lorsque vous avez plusieurs DN de base et que vous devez sélectionner une valeur.
 
-**ND de base :**  (obligatoire) utilisé comme point de départ pour la synchronisation des utilisateurs et des groupes à partir de la hiérarchie LDAP. Il est préférable de spécifier un DN de base au niveau inférieur de la hiérarchie, de manière à englober tous les utilisateurs et les groupes à synchroniser pour les services. N’incluez pas le ND de l’utilisateur dans ce paramètre. Pour synchroniser un utilisateur particulier, utilisez le paramètre Filtre de recherche.
+**ND de base :** (Obligatoire) Utilisé comme point de départ pour la synchronisation des utilisateurs et des groupes à partir de la hiérarchie LDAP. Il est préférable de spécifier un DN de base au niveau inférieur de la hiérarchie, de manière à englober tous les utilisateurs et les groupes à synchroniser pour les services. N’incluez pas le ND de l’utilisateur dans ce paramètre. Pour synchroniser un utilisateur particulier, utilisez le paramètre Filtre de recherche.
 
-**Renseigner la page avec :**  (non obligatoire) lorsque cette option est sélectionnée, les attributs des pages de paramètres Utilisateur et Groupe sont renseignés avec les valeurs LDAP par défaut correspondantes.
+**Renseignez la page avec :** (Facultatif) Lorsque cette option est sélectionnée, les attributs des pages de paramètres Utilisateur et Groupe sont renseignés avec les valeurs LDAP par défaut correspondantes.
 
-**Filtre de recherche :**  (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé à l’utilisateur. Voir Syntaxe des filtres de recherche.
+**Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé à l’utilisateur. Voir Syntaxe des filtres de recherche.
 
 ### Paramètres Kerberos {#kerberos-settings}
 
@@ -84,9 +84,9 @@ Si vous configurez une authentification pour un domaine d’entreprise ou hybrid
 
 **IP DNS :** l’adresse IP du serveur DNS qui exécute AEM forms. Sous Windows, vous pouvez déterminer cette adresse IP en exécutant ipconfig /all sur la ligne de commande.
 
-**Hôte KDC :** nom d’hôte complet ou adresse IP du serveur Principal Directory utilisé pour l’authentification.
+**Hôte KDC :** Nom d’hôte complet ou adresse IP du serveur Principal Directory utilisé pour l’authentification.
 
-**Utilisateur du service :** si vous utilisez Principal Directory 2003, cette valeur est le mappage créé pour l’entité de service dans le formulaire  `HTTP/<server name>`. Si vous utilisez Active Directory 2008, cette valeur correspond à l’ID de connexion du nom principal de service. Supposons, par exemple, que l’entité de service soit nommée um spnego, que l’ID utilisateur soit spnegodemo et que le mappage soit HTTP/example.yourcompany.com. Avec Principal Directory 2003, vous définissez Service User sur HTTP/example.yourcompany.com. Avec Active Directory 2008, affectez à Utilisateur du service la valeur spnegodemo. Voir Activation de la fonction SSO à l’aide de SPNEGO .
+**Utilisateur du service :** Si vous utilisez Principale Directory 2003, cette valeur correspond au mappage créé pour l’entité de service dans le formulaire. `HTTP/<server name>`. Si vous utilisez Active Directory 2008, cette valeur correspond à l’ID de connexion du nom principal de service. Supposons, par exemple, que l’entité de service soit nommée um spnego, que l’ID utilisateur soit spnegodemo et que le mappage soit HTTP/example.yourcompany.com. Avec Principal Directory 2003, vous définissez Service User sur HTTP/example.yourcompany.com. Avec Active Directory 2008, affectez à Utilisateur du service la valeur spnegodemo. Voir Activation de la fonction SSO à l’aide de SPNEGO .
 
 **Domaine d’administration du service :** nom de domaine pour Active Directory
 
@@ -98,13 +98,13 @@ Si vous configurez une authentification pour un domaine d’entreprise ou hybrid
 
 Si vous configurez une authentification pour un domaine d’entreprise ou hybride et optez pour une authentification SAML, les paramètres ci-après sont disponibles. Pour plus d’informations sur les paramètres SAML supplémentaires, voir [Configuration des paramètres du fournisseur de services SAML](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
 
-**Sélectionnez un fichier de métadonnées de fournisseur d’identité SAML à importer :** cliquez sur Parcourir pour sélectionner un fichier de métadonnées de fournisseur d’identité SAML généré à partir de votre fournisseur d’identité SAML, puis cliquez sur Importer. Les détails relatifs au fournisseur d’identité s’affichent.
+**Sélectionnez un fichier de métadonnées de fournisseur d’identité SAML à importer :** Cliquez sur Parcourir pour sélectionner un fichier de métadonnées de fournisseur d’identité SAML généré à partir de votre fournisseur d’identité, puis cliquez sur Importer. Les détails relatifs au fournisseur d’identité s’affichent.
 
-**Titre :** alias de l’URL indiquée par l’ID d’entité. Le titre s’affiche également sur la page de connexion des utilisateurs d’entreprise et locaux.
+**Titre :** Alias de l’URL indiquée par l’ID d’entité. Le titre s’affiche également sur la page de connexion des utilisateurs d’entreprise et locaux.
 
-**Le fournisseur d’identité prend en charge l’authentification de base du client :**  l’authentification de base du client est utilisée lorsque le fournisseur d’identité utilise un profil SAML Artifact Resolution (résolution d’artefacts). Dans ce profil, User Management se reconnecte à un service Web s’exécutant au niveau du fournisseur d’identité afin de récupérer l’assertion SAML réelle. Le fournisseur d’identité peut demander une authentification. Si ce n’est pas le cas, sélectionnez cette option et définissez un nom d’utilisateur et un mot de passe dans les champs prévus à cet effet.
+**Le fournisseur d’identité prend en charge l’authentification de base du client :** L’authentification de base du client est utilisée lorsque le fournisseur d’identité utilise un profil de résolution d’artefacts SAML. Dans ce profil, User Management se reconnecte à un service Web s’exécutant au niveau du fournisseur d’identité afin de récupérer l’assertion SAML réelle. Le fournisseur d’identité peut demander une authentification. Si ce n’est pas le cas, sélectionnez cette option et définissez un nom d’utilisateur et un mot de passe dans les champs prévus à cet effet.
 
-**Propriétés personnalisées :** permet de spécifier des propriétés supplémentaires. Ces propriétés sont des paires nom=valeur séparées par des nouvelles lignes.
+**Propriétés personnalisées :** Permet de spécifier des propriétés supplémentaires. Ces propriétés sont des paires nom=valeur séparées par des nouvelles lignes.
 
 Les propriétés personnalisées suivantes sont requises en cas d’utilisation de la liaison d’artefact.
 
@@ -131,11 +131,11 @@ Cette procédure décrit le fonctionnement général de l’authentification dan
 1. Le fournisseur d’authentification valide les informations d’identification.
 1. Il vérifie ensuite si l’utilisateur existe dans la base de données User Management. L’un des états suivants s’affiche :
 
-   **** ExistsSi l’utilisateur est en cours et déverrouillé, User Management renvoie la réussite de l’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
+   **Existe** Si l’utilisateur est en cours et déverrouillé, User Management renvoie la réussite de l’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
 
-   **Does not** existsUser Management renvoie un échec d’authentification.
+   **N’existe pas** User Management renvoie l’échec d’authentification.
 
-   **** InvalidUser Management renvoie l’échec de l’authentification.
+   **Non valide** User Management renvoie l’échec d’authentification.
 
 1. L’état indiqué par le fournisseur d’authentification est évalué. Si ce dernier a confirmé l’authentification, l’utilisateur peut alors ouvrir une session. Dans le cas contraire, User Management vérifie auprès du fournisseur d’authentification suivant. (les étapes 2 et 3)
 1. Un échec d’authentification est indiqué lorsqu’aucun fournisseur d’authentification disponible n’a pu valider les informations d’identification de l’utilisateur.

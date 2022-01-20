@@ -1,17 +1,17 @@
 ---
 title: Prévisualisation d’un formulaire
-seo-title: Prévisualisation d’un formulaire
+seo-title: Previewing a form
 description: Vous pouvez prévisualiser vos formulaires avant de les publier ou de les activer pour vérifier qu’ils répondent à vos attentes. Les options d’aperçu peuvent varier en fonction des types de formulaire pris en charge.
-seo-description: Vous pouvez prévisualiser vos formulaires avant de les publier ou de les activer pour vérifier qu’ils répondent à vos attentes. Les options d’aperçu peuvent varier en fonction des types de formulaire pris en charge.
+seo-description: You can preview your forms before publishing or activating to ensure it meets the expectations. Preview options may vary across the supported form types.
 uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 130bdc9f-b19e-4b7d-a6ad-ef5097c9cf41
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '365'
 ht-degree: 100%
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire
-seo-title: Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire
+seo-title: Enable AEM to search document security protected PDF documents
 description: 'Découvrez comment permettre à la recherche AEM native d’effectuer une recherche de texte intégral sur des documents PDF protégés par DRM.  '
-seo-description: 'Découvrez comment permettre à la recherche AEM native d’effectuer une recherche de texte intégral sur des documents PDF protégés par DRM.  '
+seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
 uuid: c743cda3-252f-4c1f-8d94-e6d26d91dcd8
 contentOwner: khsingh
 content-type: reference
@@ -13,7 +13,7 @@ feature: Document Security
 exl-id: c405c69b-3588-4701-8f36-1ea0680e056d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '660'
 ht-degree: 94%
 
 ---
@@ -38,7 +38,7 @@ La recherche AEM peut rechercher et localiser des ressources AEM et effectuer un
    * Pour AEM Forms sur OSGi, les lots sont répertoriés à l’adresse `https://[server]:[port]/system/console/bundles`.
    * Pour AEM Forms on JEE, les lots sont répertoriés à l’adresse `https://[server]:[port]/[context-path]/system/console/bundles`. Par exemple, `http://localhost:8080/lc/system/console/bundles`.
 
-* Ajoutez le package *sun.util.calendar* à la liste autorisée. Pour ajouter le package à la liste autorisée, procédez comme suit :
+* Ajoutez la variable *sun.util.calendar* vers la liste autorisée. Pour ajouter le package à la liste autorisée, procédez comme suit :
 
    1. Ouvrez la console web AEM. L’URL est `https://[server]:[port]/system/console/configMgr`.
    1. Recherchez et ouvrez **la configuration du pare-feu de désérialisation.**
@@ -53,7 +53,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
 
 ### Configurer le groupe de SDK client Adobe LiveCycle avec les informations d’identification d’administrateur d’AEM Forms on JEE {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
-1. Ouvrez la console web AEM. L’URL est `https://[server]:[port]/system/console/configMgr`.
+1. Ouvrez la console Web AEM. L’URL est `https://[server]:[port]/system/console/configMgr`.
 1. Recherchez et ouvrez le **bundle Adobe LiveCycle Client SDK**. Spécifiez la valeur des champs suivants :
 
    * **URL du serveur** : spécifiez l’URL HTTPS d’AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur avec le paramètre -Djavax.net.ssl.trustStore=&lt;chemin du fichier de stockage de clés AEM Forms on JEE>.
@@ -79,7 +79,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
 
    Cliquez sur **Enregistrer**. AEM est activé pour effectuer une recherche de documents PDF protégés par la sécurité documentaire.
 
-## Indexer un document PDF protégé par un exemple de stratégie  {#index-a-sample-policy-protected-pdf-document}
+## Indexer un document PDF protégé par un exemple de stratégie {#index-a-sample-policy-protected-pdf-document}
 
 1. Connectez-vous à AEM Assets en tant qu’administrateur.
 1. Créez un dossier dans AEM Digital Asset Manager et téléchargez les documents PDF protégés par une stratégie vers le dossier que vous venez de créer.

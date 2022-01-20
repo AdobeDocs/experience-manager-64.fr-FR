@@ -1,8 +1,8 @@
 ---
 title: Publication de pages
-seo-title: Publication de pages
+seo-title: Publishing Pages
 description: Une fois le contenu créé et révisé dans l’environnement de création, l’objectif est de le rendre disponible sur votre site web public.
-seo-description: Une fois le contenu créé et révisé dans l’environnement de création, l’objectif est de le rendre disponible sur votre site web public.
+seo-description: Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website.
 uuid: 2b1cb08b-dbe9-4032-8527-15a11aa59d51
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
 exl-id: 7b3f58df-036e-46a8-913e-e695de34ddd7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 82%
+source-wordcount: '1046'
+ht-degree: 81%
 
 ---
 
@@ -31,16 +31,13 @@ Vous pouvez également publier/annuler la publication d’une page immédiatemen
 >
 >* **Publier/Annuler la publication**
    >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
-   >
-   >
-* **Activer/Désactiver**
+>
+>* **Activer/Désactiver**
    >  Ces termes sont synonymes de publication/annulation de la publication.
-   >
-   >
-* **Répliquer/Réplication**
+>
+>* **Répliquer/Réplication**
    >  Il s’agit de termes techniques décrivant le déplacement des données (contenu de page, fichiers, code, commentaires d’utilisateur, par exemple) d’un environnement à un autre, comme lors de la publication ou de la réplication inverse des commentaires d’utilisateur.
 >
-
 
 
 >[!NOTE]
@@ -50,7 +47,6 @@ Vous pouvez également publier/annuler la publication d’une page immédiatemen
 >* Un workflow est déclenché afin d’aviser la personne concernée de votre demande de publication.
 >* Un message s’affiche (pendant un bref laps de temps) pour vous en informer.
 >
-
 
 
 ## Publication d’une page {#publishing-a-page}
@@ -87,7 +83,7 @@ Vous pouvez activer des pages dans la console Sites web. Après avoir ouvert une
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
-### Activating a Page from Sidekick {#activating-a-page-from-sidekick}
+### Activation d’une page à partir de Sidekick {#activating-a-page-from-sidekick}
 
 Vous pouvez également activer une page ouverte à des fins d’édition.
 
@@ -128,11 +124,11 @@ L’activation différée lance un workflow pour activer cette version de la pag
 
 Pour annuler cette activation/désactivation, rendez-vous dans la [console Worfklow](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) pour mettre un terme au workflow correspondant.
 
-### Désactiver plus tard  {#deactivate-later}
+### Désactiver plus tard {#deactivate-later}
 
 Pour planifier la désactivation à une heure ultérieure :
 
-1. Dans la console Sites Web, accédez au menu **Désactiver**, puis sélectionnez **Désactiver plus tard**.
+1. Dans la console Sites Web, accédez à la **Désactiver** et sélectionnez **Désactiver plus tard**.
 
 1. Dans la boîte de dialogue qui s’ouvre, indiquez la date et l’heure de désactivation, puis cliquez sur **OK**.
 
@@ -142,7 +138,7 @@ La **désactivation différée** lance un workflow pour désactiver cette versio
 
 Pour annuler cette désactivation, rendez-vous dans la [console Worfklow](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) pour mettre un terme au workflow correspondant.
 
-## Activation/désactivation planifiée (heure d’activation/désactivation)  {#scheduled-activation-deactivation-on-off-time}
+## Activation/désactivation planifiée (heure d’activation/désactivation) {#scheduled-activation-deactivation-on-off-time}
 
 Pour programmer les heures de publication/annulation de publication d’une page, utilisez les options **Heure d’activation** et **Heure de désactivation** dans les [Propriétés de la page](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
@@ -150,11 +146,11 @@ Pour programmer les heures de publication/annulation de publication d’une page
 
 Vous pouvez vérifier l’état dans la [console Sites web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). Les couleurs indiquent l’état de publication.
 
-## Activation d’une section (arborescence) complète de votre site web  {#activating-a-complete-section-tree-of-your-website}
+## Activation d’une section (arborescence) complète de votre site web {#activating-a-complete-section-tree-of-your-website}
 
 Vous pouvez activer les différentes pages à partir de l’onglet **Sites web**. Après avoir saisi ou mis à jour un nombre élevé de pages de contenu (toutes résidant sous la même page racine), il peut s’avérer plus simple d’activer toute l’arborescence en une seule opération. Vous pouvez également effectuer une exécution d’essai afin d’émuler une activation et de mettre en surbrillance les pages à activer.
 
-1. Ouvrez la console **Outils** en la sélectionnant dans la page **Bienvenue**, puis en double-cliquant sur **Réplication** pour ouvrir la console ( `http://localhost:4502/etc/replication.html`).
+1. Ouvrez le **Outils** en la sélectionnant dans la console **Bienvenue** puis double-cliquez sur **Réplication** pour ouvrir la console ( `http://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
@@ -173,5 +169,5 @@ Vous pouvez activer les différentes pages à partir de l’onglet **Sites web**
 
 1. Sélectionnez l’opération à effectuer :
 
-   1. Sélectionnez **Exécution d’essai** si vous souhaitez vérifier quelles pages *seront* activées. Il s’agit uniquement d’une émulation. Aucune page ne sera activée.
-   1. Sélectionnez **Activer** si vous souhaitez activer les pages.
+   1. Sélectionner **Exécution d’essai** si vous souhaitez vérifier les pages *serait* être activée. Il s’agit uniquement d’une émulation. Aucune page ne sera activée.
+   1. Sélectionner **Activer** si vous souhaitez activer les pages.

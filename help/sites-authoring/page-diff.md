@@ -1,8 +1,8 @@
 ---
 title: Outil de comparaison des pages
-seo-title: Outil de comparaison des pages
+seo-title: Page Diff
 description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
-seo-description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
+seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: cf029ed8-606e-4f12-ac8e-5ea9ebd70b1b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
 exl-id: 1b1fa592-a145-4abe-a455-df24d551b937
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 96%
+source-wordcount: '672'
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ De fait, l’outil de comparaison des pages permet d’afficher côte à côte d
 
 >[!CAUTION]
 >
->Si vous exécutez une version antérieure à AEM 6.4.3, l’utilisateur doit disposer de l’autorisation **Modify/Create/Delete** sur le noeud `/content/versionhistory` pour pouvoir utiliser la fonctionnalité.
+>Si vous exécutez une version antérieure à AEM 6.4.3, l’utilisateur doit disposer de la variable **Modifier/Créer/Supprimer** autorisation sur le noeud `/content/versionhistory` pour utiliser la fonctionnalité.
 >
 >Consultez la section consacrée à l’[outil de comparaison des pages](/help/sites-developing/pagediff.md#operation-details) pour plus d’informations sur cette fonction.
 
@@ -75,7 +75,7 @@ Notez que la couleur bleue est utilisée à la fois pour les modifications et le
 >
 >Lorsque vous comparez des copies de langue, la mise en surbrillance est désactivée. En effet, dans la mesure où la traduction modifie tout le contenu, la mise en surbrillance ne présente aucun intérêt.
 
-### Affichage en mode plein écran  {#fullscreen-and-exiting}
+### Affichage en mode plein écran {#fullscreen-and-exiting}
 
 Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez cliquer sur l’icône du mode plein écran pour l’un ou l’autre des deux « côtés » de votre comparaison. Cela vous permet d’afficher la version en plein écran dans la fenêtre du navigateur.
 

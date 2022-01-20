@@ -1,8 +1,8 @@
 ---
 title: Ajout de ContextHub à des pages et accès à des magasins
-seo-title: Ajout de ContextHub à des pages et accès à des magasins
+seo-title: Adding ContextHub to Pages and Accessing Stores
 description: Ajoutez ContextHub à vos pages pour activer les fonctionnalités ContextHub et créer un lien vers les bibliothèques JavaScript ContextHub
-seo-description: Ajoutez ContextHub à vos pages pour activer les fonctionnalités ContextHub et créer un lien vers les bibliothèques JavaScript ContextHub
+seo-description: Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub Javascript libraries
 uuid: ade37960-21c4-4d64-a525-68f0d199f955
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
 exl-id: 99efe308-bf8a-41ad-8203-b57fce20820c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1008'
 ht-degree: 96%
 
 ---
@@ -35,7 +35,7 @@ Pour activer les fonctionnalités ContextHub et créer un lien vers les biblioth
 
 Notez que vous devez également déterminer si la barre d’outils ContextHub apparaît ou non dans le mode Aperçu. Voir [Affichage et masquage de l’IU ContextHub](/help/sites-administering/contexthub-config.md#showing-and-hiding-the-contexthub-ui).
 
-## À propos des magasins ContextHub  {#about-contexthub-stores}
+## À propos des magasins ContextHub {#about-contexthub-stores}
 
 Utilisez des magasins ContextHub pour conserver des données contextuelles. ContextHub fournit les types de magasins suivants, qui constituent la base de tous les types :
 
@@ -46,7 +46,7 @@ Utilisez des magasins ContextHub pour conserver des données contextuelles. Cont
 
 Tous les types de magasins sont des extensions de la classe [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core). Pour plus d’informations sur la création d’un type de magasin, voir [Création de magasins personnalisés](/help/sites-developing/ch-extend.md#creating-custom-store-candidates). Pour plus d’informations sur les exemples de types de magasins, voir [Exemples de candidats au titre de magasins ContextHub](/help/sites-developing/ch-samplestores.md).
 
-### Modes de persistance  {#persistence-modes}
+### Modes de persistance {#persistence-modes}
 
 Les magasins ContextHub utilisent l’un des modes de persistance suivants :
 
@@ -167,7 +167,7 @@ Les règles utilisées pour résoudre ces segments sont résumées comme suit :
 * Le genre « Homme » ou « Femme » est déterminé à partir de l’élément de données `gender` du magasin [profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate).
 
 * L’âge est déterminé à partir de l’élément de données « age » du magasin « profile ».
-* La saison est déterminée à partir de l’élément de données de latitude du magasin [geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) et de l’élément de données du mois du magasin surferinfo.
+* La saison est déterminée à partir de l’élément de données de latitude de la variable [géolocalisation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) et l’élément de données month du magasin surferinfo.
 
 >[!WARNING]
 >
@@ -177,7 +177,7 @@ Les règles utilisées pour résoudre ces segments sont résumées comme suit :
 
 Configurez le service OSGi ContextHub d’Adobe Granite (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) pour consigner des messages de débogage détaillés qui s’avèrent utiles dans le cadre du développement.
 
-Pour configurer le service, vous pouvez utiliser la [console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou utiliser un noeud [JCR dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
+Pour configurer le service, vous pouvez utiliser la variable [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou utilisez un [Noeud JCR dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 
 * Console web : pour consigner des messages de débogage, sélectionnez la propriété Debug.
 * Nœud JCR : pour consigner des messages de débogage, définissez la propriété booléenne `com.adobe.granite.contexthub.debug` sur `true`.

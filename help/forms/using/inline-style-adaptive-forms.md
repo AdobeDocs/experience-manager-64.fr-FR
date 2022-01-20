@@ -1,17 +1,17 @@
 ---
 title: Styles intégrés des composants de formulaire adaptatif
-seo-title: Propriétés CSS intégrées pour les composants de formulaire adaptatif
+seo-title: Inline CSS properties for adaptive form components
 description: Si vous pouvez appliquer des styles personnalisés à un formulaire adaptatif, vous pouvez également appliquer des propriétés de style CSS intégré sur les différents composants d’un formulaire adaptatif.
-seo-description: Si vous pouvez appliquer des styles personnalisés à un formulaire adaptatif, vous pouvez également appliquer des propriétés de style CSS intégré sur les différents composants d’un formulaire adaptatif.
+seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: ab948f02-3b41-4304-955b-6dd51d27088e
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 8e7ba9d2-207f-419b-bcd5-74ba9b14ab92
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '526'
 ht-degree: 98%
 
 ---
@@ -96,8 +96,8 @@ Notez la modification du style de la zone de texte comme illustré ci-dessous ap
  </tbody> 
 </table>
 
-![Style de zone de texte après l’application du style intégré](assets/applied-style.png) 
-**Figure : Composant de zone de texte** *après application des propriétés de style intégré*
+![Style de zone de texte après l’application du style intégré](assets/applied-style.png)
+**Figure :** *Composant de zone de texte après application des propriétés de style intégré*
 
 En suivant les étapes ci-dessus, vous pouvez sélectionner et styliser d’autres composants, tels que les panneaux, les boutons d’envoi et les boutons radio.
 

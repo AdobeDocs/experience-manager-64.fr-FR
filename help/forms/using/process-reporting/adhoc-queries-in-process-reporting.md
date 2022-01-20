@@ -1,8 +1,8 @@
 ---
 title: Requêtes ad hoc dans les rapports de processus
-seo-title: Requêtes ad hoc dans les rapports de processus
+seo-title: Ad-hoc Queries in Process Reporting
 description: Création de requêtes personnalisées pour rechercher les détails des processus et des tâches d’AEM Forms on JEE dans Process Reporting
-seo-description: Création de requêtes personnalisées pour rechercher les détails des processus et des tâches d’AEM Forms on JEE dans Process Reporting
+seo-description: Create custom queries to search for AEM Forms on JEE  process and task details in Process Reporting
 uuid: bcd9eecd-5c83-402d-8533-a27f6b346191
 content-type: reference
 topic-tags: process-reporting
@@ -11,7 +11,7 @@ discoiquuid: 812f9212-2732-4966-a7fa-389aa2332c7e
 exl-id: a5ac05b2-076a-4d3d-8325-32813657a7b3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1668'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ Les requêtes ad hoc dans les rapports de processus vous permettent de créer de
 
 En outre, les requêtes ad hoc peuvent être définies à l’aide de filtres de propriétés de processus et de tâche. Ces filtres peuvent ensuite être enregistrés et utilisés pour exécuter les rapports ultérieurement.
 
-[**Recherche**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p) de processus : Recherchez des instances de processus avec un filtre de recherche défini par l’utilisateur en fonction des attributs de processus.
+[**Recherche de processus**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p): Recherchez des instances de processus avec un filtre de recherche défini par l’utilisateur en fonction des attributs de processus.
 
-[**Détails**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p) du processus : Affichez les détails d’une instance de processus en spécifiant l’ID de processus.
+[**Détails du processus**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p): Affichez les détails d’une instance de processus en spécifiant l’ID de processus.
 
-**Recherche de tâche** : Recherchez des instances de tâche avec un filtre de recherche défini par l’utilisateur en fonction des attributs de tâche.
+**Recherche de tâches**: Recherchez des instances de tâche avec un filtre de recherche défini par l’utilisateur en fonction des attributs de tâche.
 
-**Détails** de la tâche : Affichez les détails d’une instance de tâche en spécifiant l’identifiant de la tâche.
+**Détails de la tâche**: Affichez les détails d’une instance de tâche en spécifiant l’identifiant de la tâche.
 
 ## Processus et tâches {#processes-and-tasks}
 
@@ -44,20 +44,20 @@ Vous utilisez Process/Task Search pour définir des filtres pour interroger les 
 
 ### Pour créer une requête de recherche de processus/tâche {#to-create-a-process-task-search-query}
 
-1. Pour afficher les requêtes de recherche de processus/tâche enregistrées ou créer une requête, cliquez sur **Adhoc Queries**, puis sur **Recherche de processus/tâche**.
+1. Pour afficher les requêtes de recherche de processus/de tâche enregistrées ou créer une requête, cliquez sur **Requêtes ad hoc** puis cliquez sur **Recherche de processus/tâche**.
 
    ![search_nodes](assets/search_nodes.png)
 
-   Le panneau **Mes filtres** s’affiche à droite de l’arborescence.
+   Le **Mes filtres** s’affiche à droite de l’arborescence.
 
-   Dans le panneau **Mes filtres**, vous pouvez créer des requêtes ad hoc et cliquer pour exécuter des requêtes précédemment enregistrées.
+   Dans le **Mes filtres** , vous pouvez créer des requêtes ad hoc et cliquer sur pour exécuter des requêtes précédemment enregistrées.
 
    ![my_filters_panel](assets/my_filters_panel.png)
 
-1. Pour exécuter une requête existante, il vous suffit de cliquer sur la requête dans le panneau **Mes filtres**.
+1. Pour exécuter une requête existante, il vous suffit de cliquer sur la requête dans le **Mes filtres** du panneau.
 1. Pour créer une requête, cliquez sur **Ajouter** (+).
 
-   Le panneau **Créer un filtre** s’affiche.
+   Le **Créer un filtre** s’affiche.
 
    ![create_filter_panel](assets/create_filter_panel.png)
 
@@ -85,30 +85,30 @@ Vous utilisez Process/Task Search pour définir des filtres pour interroger les 
 
       ![filter_value](assets/filter_value.png)
 
-   1. Pour ajouter un autre filtre à la requête, cliquez sur **Ajouter(+)** à droite de la ligne de filtre.
+   1. Pour ajouter un autre filtre à la requête, cliquez sur **Add(+)** à droite de la ligne de filtrage.
 
-      Pour supprimer un filtre de la requête, cliquez sur **Delete(-)** à droite de la ligne de filtre.
+      Pour supprimer un filtre de la requête, cliquez sur **Delete(-)** à droite de la ligne de filtrage.
 
       ![filter_add_del](assets/filter_add_del.png)
 
-Après avoir créé une requête, utilisez les options situées dans le coin supérieur droit du panneau **Créer un filtre** pour :
+Après avoir créé une requête, utilisez les options situées dans le coin supérieur droit de l’objet **Créer un filtre** pour :
 
-* **Annuler** : Annulez les modifications et revenez au panneau  **Mon** filtre.
+* **Annuler**: Annuler les modifications et revenir au **Mes filtres** du panneau.
 
-* **Exécutez** : Exécutez la requête actuelle pour afficher et/ou vérifier les résultats. Dans ce cas, il n&#39;est pas nécessaire d&#39;enregistrer la requête avant de l&#39;exécuter. Vous pouvez vérifier les résultats, apporter des modifications si nécessaire, puis enregistrer la requête lorsque vous êtes satisfait de la sortie.
+* **Exécuter**: Exécutez la requête actuelle pour afficher et/ou vérifier les résultats. Dans ce cas, il n&#39;est pas nécessaire d&#39;enregistrer la requête avant de l&#39;exécuter. Vous pouvez vérifier les résultats, apporter des modifications si nécessaire, puis enregistrer la requête lorsque vous êtes satisfait de la sortie.
 
-* **Enregistrer** : Enregistrez le filtre. Le filtre peut ensuite être affiché et exécuté à partir du panneau **Mes filtres**.
+* **Enregistrer**: Enregistrez le filtre. Le filtre peut ensuite être visualisé et exécuté à partir de la fonction **Mes filtres** du panneau.
 
 ### Options dans le panneau Mes filtres {#options-in-my-filters-panel}
 
-Utilisez les options du panneau **Mes filtres** pour **Ajouter** ![lc_pr_add_filter](assets/lc_pr_add_filter.png), **Modifier** ![lc_pr_delete_filter](assets/lc_pr_delete_filter.png) ou **Supprimer** &lt;a 12/>lc_pr_edit_filter](assets/lc_pr_edit_filter.png)une requête ad hoc.![
+Utilisez les options de la variable **Mes filtres** pour **Ajouter** ![lc_pr_add_filter](assets/lc_pr_add_filter.png), **Modifier** ![lc_pr_delete_filter](assets/lc_pr_delete_filter.png)ou **Supprimer** ![lc_pr_edit_filter](assets/lc_pr_edit_filter.png)une requête ad hoc.
 
 ![my_filters_options](assets/my_filters_options.png)
 
 ### Pour exécuter une requête de recherche {#to-execute-a-search-query}
 
-1. Pour exécuter une requête, cliquez sur le filtre dans le panneau **Mes filtres** ou cliquez sur le bouton **Exécuter** si vous créez ou modifiez un filtre.
-1. Les résultats de la requête s’affichent dans le panneau **Rapport** de la fenêtre **Process Reporting**.
+1. Pour exécuter une requête, cliquez sur le filtre dans la variable **Mes filtres** ou cliquez sur le bouton **Exécuter** si vous créez ou modifiez un filtre.
+1. Les résultats de la requête s’affichent dans la variable **Rapport** du panneau **Rapports de processus** fenêtre.
 
    ![process_search_result](assets/process_search_result.png)
 
@@ -116,18 +116,18 @@ Utilisez les options du panneau **Mes filtres** pour **Ajouter** ![lc_pr_add_fil
 
    ![process_result_pgn](assets/process_result_pgn.png)
 
-   Dans la liste déroulante **Afficher** , choisissez le nombre de résultats à afficher par page.
+   Dans le **Affichage** , choisissez le nombre de résultats à afficher par page.
 
-   Dans la zone de texte **Page** , saisissez un numéro de page pour accéder directement à cette page.
+   Dans le **Page** , saisissez un numéro de page pour accéder directement à cette page.
 
 1. Les champs suivants s’affichent dans un résultat de recherche de processus :
 
-   * **ID** du processus : L’identifiant du processus. Le champ est lié par un lien hypertexte. Si vous cliquez sur un ID de processus dans ce champ, vous êtes redirigé vers le panneau **[!UICONTROL Détails du processus]** pour le processus.
-   * **Initiateur** : L’utilisateur AEM Forms qui a démarré l’instance de processus
-   * **Heure de création** : Date et heure de démarrage de l’instance de processus
-   * **Durée** terminée : Date et heure auxquelles l’instance de processus s’est terminée
-   * **Durée** : Durée du début à la fin de l’instance de processus.
-   * **État** : État actuel de l’instance de processus.
+   * **ID de processus**: L’identifiant du processus. Le champ est lié par un lien hypertexte. Si vous cliquez sur un ID de processus dans ce champ, vous êtes redirigé vers le **[!UICONTROL Détails du processus]** du processus.
+   * **Initiateur**: L’utilisateur AEM Forms qui a démarré l’instance de processus
+   * **Heure de création**: Date et heure de démarrage de l’instance de processus
+   * **Durée terminée**: Date et heure auxquelles l’instance de processus s’est terminée
+   * **Durée**: Durée du début à la fin de l’instance de processus.
+   * **État**: État actuel de l’instance de processus.
 
    Par défaut, le résultat est trié par ID de processus. Toutefois, pour trier le résultat en fonction de l’un des champs, cliquez sur le titre du champ.
 
@@ -135,13 +135,13 @@ Utilisez les options du panneau **Mes filtres** pour **Ajouter** ![lc_pr_add_fil
 
    De même, les champs suivants s’affichent dans un résultat Recherche de tâche :
 
-   * **Task ID** : L’identifiant de la tâche. Le champ est lié par un lien hypertexte. Si vous cliquez sur un ID de tâche dans ce champ, vous êtes redirigé vers le panneau **[!UICONTROL Détails de la tâche]** correspondant à la tâche.
-   * **Initiateur** : L’utilisateur AEM Forms qui a démarré l’instance de processus
-   * **Heure de création** : Date et heure de démarrage de l’instance de processus
+   * **Task ID**: L’identifiant de la tâche. Le champ est lié par un lien hypertexte. Si vous cliquez sur un identifiant de tâche dans ce champ, vous êtes redirigé vers le **[!UICONTROL Détails de la tâche]** pour la tâche.
+   * **Initiateur**: L’utilisateur AEM Forms qui a démarré l’instance de processus
+   * **Heure de création**: Date et heure de démarrage de l’instance de processus
 
-   * **Durée** terminée : Date et heure auxquelles l’instance de processus s’est terminée
-   * **Durée** : Durée du début à la fin de l’instance de processus.
-   * **État** : État actuel de l’instance de processus.
+   * **Durée terminée**: Date et heure auxquelles l’instance de processus s’est terminée
+   * **Durée**: Durée du début à la fin de l’instance de processus.
+   * **État**: État actuel de l’instance de processus.
 
    Par défaut, le résultat est trié par l’identifiant de tâche. Toutefois, pour trier le résultat en fonction de l’un des champs, cliquez sur le titre du champ. Le résultat est trié selon la colonne indiquée par une flèche sombre en regard de l’en-tête de colonne.
 
@@ -149,11 +149,11 @@ Utilisez les options du panneau **Mes filtres** pour **Ajouter** ![lc_pr_add_fil
 
    ![task_search_result](assets/task_search_result.png)
 
-1. Cliquez sur le bouton de rail ![lc_pr_rail_button](assets/lc_pr_rail_button.png) dans le coin supérieur gauche pour réduire le volet **Mes filtres** et augmenter l’espace disponible pour le panneau **Rapport**.
-1. Utilisez les options situées dans le coin supérieur droit du panneau **Rapport** pour effectuer des opérations sur le résultat de la requête.
+1. Cliquez sur le bouton de rail. ![lc_pr_rail_button](assets/lc_pr_rail_button.png) dans le coin supérieur gauche pour réduire la variable **Mes filtres** et agrandit l’espace disponible pour le **Rapport** du panneau.
+1. Utilisez les options situées dans le coin supérieur droit du **Rapport** pour effectuer des opérations sur le résultat de la requête.
 
-   * **Actualiser** : Actualise le rapport avec les dernières données stockées
-   * **Exporter au format CSV** : Exportez les données du rapport dans un fichier séparé par des virgules.
+   * **Actualiser**: Actualise le rapport avec les dernières données stockées
+   * **Exportation au format CSV**: Exportez les données du rapport dans un fichier séparé par des virgules.
 
    >[!NOTE]
    >
@@ -161,11 +161,11 @@ Utilisez les options du panneau **Mes filtres** pour **Ajouter** ![lc_pr_add_fil
 
 ## Détails du processus/de la tâche {#process-task-details}
 
-Utilisez le panneau **Détails du processus** pour afficher les détails d’un processus spécifique.
+Vous utilisez le **Détails du processus** pour afficher les détails d’un processus spécifique.
 
-De même, vous utilisez le panneau **Détails de la tâche** pour afficher les détails d’une tâche spécifique.
+De même, vous utilisez la variable **Détails de la tâche** pour afficher les détails d’une tâche spécifique.
 
-### Pour afficher les détails du processus/de la tâche {#to-view-process-task-details}
+### Pour afficher les détails d’un processus/d’une tâche {#to-view-process-task-details}
 
 Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spécifique :
 
@@ -180,9 +180,9 @@ Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spé
 
    ![process_id_list](assets/process_id_list.png)
 
-1. Cliquez sur un ID de processus dans la liste pour afficher les détails de ce processus dans le panneau **Détails du processus**.
+1. Cliquez sur un ID de processus dans la liste pour afficher les détails de ce processus dans la variable **Détails du processus** du panneau.
 
-   Le résultat de la requête **Détails du processus/de la tâche** affiche les détails des tâches/formulaires contenus dans le processus/la tâche.
+   Le **Détails du processus/de la tâche** query result affiche les détails des tâches/formulaires contenus dans le processus/la tâche.
 
    Par défaut, le résultat est trié par Tâche/ID de formulaire. Toutefois, pour trier le résultat en fonction de l’un des champs, cliquez sur le titre du champ. La colonne de tri du résultat est indiquée par une flèche foncée en regard de l’en-tête de colonne.
 
@@ -192,7 +192,7 @@ Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spé
 
    ![process_details](assets/process_details.png)
 
-   **Panneau de gauche :** affiche les détails suivants du processus sélectionné :
+   **Panneau de gauche :** Affiche les détails suivants du processus sélectionné :
 
    * Nom du processus
    * Date et heure de création du processus
@@ -201,7 +201,7 @@ Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spé
    * État du processus
    * Initiateur du processus
 
-   **Panneau supérieur droit :** affiche les détails suivants des tâches qui constituent le processus sélectionné :
+   **Panneau supérieur droit :** Affiche les détails suivants des tâches qui composent le processus sélectionné :
 
    * Task ID
    * Nom de la tâche
@@ -212,7 +212,7 @@ Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spé
    * Durée de la tâche
    * Statut de la tâche
 
-   **Panneau inférieur droit :** affiche les détails suivants de l’historique des processus du processus sélectionné :
+   **Panneau inférieur droit :** Affiche les détails suivants de l’historique des processus du processus sélectionné :
 
    * Nom du processus
    * Initiateur du processus
@@ -224,7 +224,7 @@ Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spé
 
    ![task_details](assets/task_details.png)
 
-   **Panneau de gauche :** affiche les détails suivants de la tâche sélectionnée :
+   **Panneau de gauche :** Affiche les détails suivants de la tâche sélectionnée :
 
    * Nom de la tâche
    * ID du processus auquel appartient cette tâche
@@ -235,14 +235,14 @@ Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spé
    * Statut de la tâche
    * Itinéraire sélectionné de la tâche
 
-   **Panneau supérieur droit :** affiche les détails suivants des formulaires qui constituent la tâche sélectionnée :
+   **Panneau supérieur droit :** Affiche les détails suivants des formulaires qui constituent la tâche sélectionnée :
 
    * ID de formulaire
    * Date et heure de création du formulaire
    * Date et heure de mise à jour du formulaire
    * URL du modèle de formulaire
 
-   **Panneau inférieur droit :** affiche les détails suivants de l’historique des processus de la tâche sélectionnée :
+   **Panneau inférieur droit :** Affiche les détails suivants de l’historique des processus de la tâche sélectionnée :
 
    * Type d’affectation de tâche
    * Propriétaire de la tâche
@@ -254,15 +254,15 @@ Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spé
 
 
 
-1. Cliquez sur **Retour à la recherche de processus/tâche** pour revenir au résultat de recherche à partir duquel les détails du processus/de la tâche ont été détaillés.
+1. Cliquez sur **Retour à Recherche de processus/tâche** pour revenir au résultat de recherche à partir duquel les détails du processus/de la tâche ont été détaillés.
 
    ![back_to_search](assets/back_to_search.png)
 
-   Cependant, si les détails du processus/de la tâche ont été trouvés en saisissant un ID de processus/de tâche spécifique, le fait de cliquer sur Retour à la recherche de processus/de tâche vous ramène à **Recherche de processus/de tâche**, sans afficher de résultat de recherche.
+   Cependant, si les détails du processus/de la tâche ont été trouvés en saisissant un ID de processus/de tâche spécifique, le fait de cliquer sur Retour à la recherche de processus/de tâche vous ramène à **Recherche de processus/tâche**, sans afficher de résultat de recherche.
 
 #### En saisissant l’ID de processus/tâche dans le panneau Détails du processus/de la tâche {#by-entering-the-process-task-id-in-the-process-task-details-panel-br}
 
-1. Accédez au panneau **Détails du processus/de la tâche**.
+1. Accédez au **Détails du processus/de la tâche** du panneau.
 
    ![details_nodes](assets/details_nodes.png)
 
@@ -270,7 +270,7 @@ Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spé
 
    ![process_details-1](assets/process_details-1.png)
 
-   Les champs du résultat de la requête **Détails du processus/de la tâche** sont des champs spécifiques à un processus/une tâche AEM Forms.
+   Les champs de la variable **Détails du processus/de la tâche** les résultats de la requête sont des champs spécifiques à un processus/une tâche AEM Forms.
 
    Pour un processus, le résultat de la requête affiche les détails des tâches contenues dans le processus.
 

@@ -10,7 +10,7 @@ user-guide-description: Créez, gérez, publiez et mettez à jour des formulaire
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '3730'
+source-wordcount: '3729'
 ht-degree: 75%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 75%
       + [Didacticiel : Créer des fragments de document](using/create-document-fragments.md)
       + [Didacticiel : Créer des modèles](using/create-templates-print-web.md)
       + [Didacticiel : Créer une communication interactive](using/create-interactive-communication-tutorial.md)
-   + Documents de référence AEM Forms {#aem-forms-reference-collaterals}
+   + Collectes de référence AEM Forms {#aem-forms-reference-collaterals}
       + [Installation et configuration des sites de référence d’AEM Forms](using/setup-reference-sites.md)
       + [Présentation du site de référence We.Finance](using/finance-reference-site-walkthrough.md)
       + [Présentation du site de référence We.Gov](using/gov-reference-site-walkthrough.md)
@@ -76,7 +76,7 @@ ht-degree: 75%
       + [Configuration d’Adobe Experience Manager Forms on JEE sur une grappe JBoss](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64_fr)
       + [Configuration d’Adobe Experience Manager Forms on JEE sur une grappe WebLogic](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64_fr)
       + [Configuration d’Adobe Experience Manager Forms on JEE sur une grappe WebSphere](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64_fr)
-   + Configurer AEM Forms {#configure-aem-forms}
+   + Configuration d’AEM Forms {#configure-aem-forms}
       + [Réglage des performances du serveur AEM Forms](using/performance-tuning-aem-forms.md)
       + [Configurer le cache de formulaires adaptatifs](using/configure-adaptive-forms-cache.md)
       + [Configuration des paramètres AEM DS](using/configuring-the-processing-server-url-.md)
@@ -129,7 +129,7 @@ ht-degree: 75%
 + Modèle de données de formulaire {#form-data-model}
    + [Présentation de l’intégration des données AEM Forms](using/data-integration.md)
    + [Configuration des sources de données](using/configure-data-sources.md)
-   + [Configuration des données Microsoft Dynamics](using/ms-dynamics-odata-configuration.md)
+   + [Configuration de Microsoft Dynamics Odata](using/ms-dynamics-odata-configuration.md)
    + [Création d’un modèle de données de formulaire](using/create-form-data-models.md)
    + [Utilisation d’un modèle de données de formulaire](using/work-with-form-data-model.md)
    + [Utilisation d’un modèle de données de formulaire](using/using-form-data-model.md)
@@ -170,7 +170,7 @@ ht-degree: 75%
    + [Modèles de formulaires adaptatifs](using/template-editor.md)
    + [Expressions de formulaire adaptatif](using/adaptive-form-expressions.md)
    + [Générer un document d’enregistrement pour les formulaires adaptatifs](using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-   + [Amélioration des performances des formulaires volumineux avec le chargement différé](using/lazy-loading-adaptive-forms.md)
+   + [Amélioration des performances des formulaires volumineux avec le chargement différé ](using/lazy-loading-adaptive-forms.md)
    + [Préremplissage des champs de formulaires adaptatifs](using/prepopulate-adaptive-form-fields.md)
    + [Utilisation d’expressions SOM dans des formulaires adaptatifs](using/using-som-expressions-adaptive-forms.md)
    + [Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire](using/form-submission-metadata.md)
@@ -324,17 +324,17 @@ ht-degree: 75%
    + [Condition intégrée et répétition dans les communications interactives et les lettres](using/cm-inline-condition.md)
    + [Fragments de document](using/lists.md)
    + [Propriétés de configuration de Correspondence Management](using/cm-configuration-properties.md)
-+ Intégration d’AEM Forms avec les solutions Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
++ Intégration d’AEM Forms à des solutions Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
    + [Création d’expériences ciblées dans AEM Forms](/help/forms/using/experience-targeting-forms.md)
    + [Mesure et amélioration de l’efficacité et de la conversion des formulaires](using/measure-improve-performance-forms-documents.md)
    + [Configuration des analyses et des rapports](using/configure-analytics-forms-documents.md)
    + [Consultation et compréhension des rapports d’analyse d’AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Créer et gérer des tests A/B pour les formulaires adaptatifs](using/ab-testing-adaptive-forms.md)
-+ Publier et traiter AEM Forms {#publish-process-aem-forms}
++ Publication et traitement d’AEM Forms {#publish-process-aem-forms}
    + [Présentation de la publication de formulaires sur un portail](using/introduction-publishing-forms.md)
    + [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](using/integrate-draft-submission-database.md)
    + [Configuration des services de stockage pour les brouillons et les envois](using/configuring-draft-submission-storage.md)
-   + [Gestion des applications et des tâches Forms dans la boîte de réception AEM](using/manage-applications-inbox.md)
+   + [Gestion des applications et des tâches Forms dans la boîte de réception AEM ](using/manage-applications-inbox.md)
    + [Dossier de contrôle dans AEM Forms](using/watched-folder-in-aem-forms.md)
    + [Composant Drafts &amp; Submissions](using/draft-submission-component.md)
    + [Intégration du composant Link dans une page](using/embedding-link-component-page.md)
@@ -588,7 +588,7 @@ ht-degree: 75%
          + [Appel d’AEM Forms à l’aide d’API](developing/invoking-aem-forms-using-apis.md)
          + [Présentation des processus AEM Forms](developing/aem-forms-processes.md)
          + [Conteneur de services](developing/service-container.md)
-      + Java API Quick Start - Exemples de code {#java-api-quick-start-code-examples}
+      + Démarrage rapide de l’API Java - Exemples de code {#java-api-quick-start-code-examples}
          + [Démarrage rapide de l’API Java client d’Application Manager (SOAP)](developing/application-manager-client-java-api.md)
          + [Démarrage rapide de l’API Java du service Application Manager (SOAP)](developing/application-manager-service-java-api.md)
          + [API Java du service Assembler QuickStart (SOAP)](developing/assembler-service-java-api-quick.md)
@@ -596,7 +596,7 @@ ht-degree: 75%
          + [Démarrages de l’API du service de sauvegarde et de restauration](developing/backup-restore-service-api-quick.md)
          + [Barcoded Forms Service Java APIQuick Start (SOAP)](developing/barcoded-forms-service-java-api.md)
          + [Composants et services Java APIQuick Start (SOAP)](developing/components-services-java-api-quick.md)
-         + [API Java de service Convert PDF QuickStart (SOAP)](developing/convert-pdf-service-java-api.md)
+         + [API Java de service de conversion QuickStart (SOAP)](developing/convert-pdf-service-java-api.md)
          + [API Java Credential Service QuickStart (SOAP)](developing/credential-service-java-api-quick.md)
          + [API Java Distiller Service QuickStart (SOAP)](developing/distiller-service-java-api-quick.md)
          + [API Java DocConverter Service QuickStart (SOAP)](developing/docconverter-service-java-api-quick.md)
@@ -627,21 +627,21 @@ ht-degree: 75%
          + [Exécution d’opérations de service à l’aide d’API](developing/performing-service-operations-using-apis.md)
          + [Rendu de Forms](developing/rendering-forms.md)
          + [Assemblage de documents PDF](developing/assembling-pdf-documents.md)
-         + [Assemblage de documents PDF par programmation](developing/programmatically-assembling-pdf-documents.md)
-         + [Conversion entre les formats de fichier et PDF](developing/converting-file-formats-pdf.md)
+         + [Assemblage par programmation de documents PDF](developing/programmatically-assembling-pdf-documents.md)
+         + [Conversion entre les formats de fichier et le PDF](developing/converting-file-formats-pdf.md)
          + [Démontage programmatique de documents PDF](developing/programmatically-disassembling-pdf-documents.md)
          + [Assemblage de documents PDF chiffrés](developing/assembling-encrypted-pdf-documents.md)
          + [Assemblage de plusieurs fragments XDP](developing/assembling-multiple-xdp-fragments.md)
          + [Assemblage de documents à l’aide de la numérotation Bates](developing/assembling-documents-using-bates-numbering.md)
-         + [Assemblage de documents PDF non interactifs](developing/assembling-non-interactive-pdf-documents.md)
+         + [Assemblage de documents de PDF non interactifs](developing/assembling-non-interactive-pdf-documents.md)
          + [Assemblage de documents PDF avec des signets](developing/assembling-pdf-documents-bookmarks.md)
          + [Attribution des droits d’utilisation](developing/assigning-usage-rights.md)
-         + [Assemblage de Portfolios PDF](developing/assembling-pdf-portfolios.md)
+         + [Assemblage de Portfolios de PDF](developing/assembling-pdf-portfolios.md)
          + [Calcul des données de formulaire](developing/calculating-form-data.md)
          + [Création d’applications web qui rendent Forms](developing/creating-web-applications-renders-forms.md)
          + [Création de documents PDF avec des données XML envoyées](developing/creating-pdf-documents-submitted-xml.md)
-         + [Désassemblage d’un document PDF à l’aide de l’API du service Web](developing/disassemble-pdf-document-using-web.md)
-         + [Déterminer si les documents sont conformes à la norme PDF/A](developing/determining-whether-documents-pdf-a.md)
+         + [Désassemblage d’un document de PDF à l’aide de l’API de service Web](developing/disassemble-pdf-document-using-web.md)
+         + [Déterminer si les documents sont conformes au PDF/A](developing/determining-whether-documents-pdf-a.md)
          + [Création dynamique de documents DDX](developing/dynamically-creating-ddx-documents.md)
          + [Gestion des Forms envoyées](developing/handling-submitted-forms.md)
          + [Optimisation des performances du service Forms](developing/optimizing-performance-forms-service.md)
@@ -649,25 +649,25 @@ ht-degree: 75%
          + [Préremplissage de Forms avec des dispositions souple](developing/prepopulating-forms-flowable-layouts.md)
          + [Rendu de Forms basé sur des fragments](developing/rendering-forms-based-fragments.md)
          + [Rendu de Forms par valeur](developing/rendering-forms-value.md)
-         + [Rendu de Forms au format HTML](developing/rendering-forms-html.md)
+         + [Rendu de Forms en tant que HTML](developing/rendering-forms-html.md)
          + [Rendu de Forms sur le client](developing/rendering-forms-client.md)
-         + [Rendu de Forms HTML à l’aide de fichiers CSS personnalisés](developing/rendering-html-forms-using-custom.md)
-         + [Rendu de HTML Forms avec des barres d’outils personnalisées](developing/rendering-html-forms-custom-toolbars.md)
+         + [Rendu de Forms de HTML à l’aide de fichiers CSS personnalisés](developing/rendering-html-forms-using-custom.md)
+         + [Rendu du Forms de HTML avec des barres d’outils personnalisées](developing/rendering-html-forms-custom-toolbars.md)
          + [Rendu des PDF forms interactifs](developing/rendering-interactive-pdf-forms.md)
          + [Rendu de Forms compatible avec les droits](developing/rendering-rights-enabled-forms.md)
          + [Validation de documents DDX](developing/validating-ddx-documents.md)
-         + [Conversion de fichiers PDF en fichiers Postscript et Image](developing/converting-pdf-postscript-image-files.md)
-         + [Conversion de PostScript en documents PDF](developing/converting-postscript-pdf-documents.md)
+         + [Conversion de PDF en fichiers Postscript et Image](developing/converting-pdf-postscript-image-files.md)
+         + [Conversion de Postscript en documents PDF](developing/converting-postscript-pdf-documents.md)
          + [Création de flux de sortie de document](developing/creating-document-output-streams.md)
          + [Signature numérique et certification de documents](developing/digitally-signing-certifying-documents.md)
-         + [Chiffrement et déchiffrement de documents PDF](developing/encrypting-decrypting-pdf-documents.md)
+         + [Chiffrement et déchiffrement des documents du PDF](developing/encrypting-decrypting-pdf-documents.md)
          + [Import et export de données](developing/importing-exporting-data.md)
          + [Gestion des utilisateurs](developing/users.md)
          + [Utilisation du référentiel AEM Forms](developing/aem-forms-repository.md)
          + [Utilisation de formulaires à code-barres](developing/barcoded-forms.md)
          + [Utilisation des informations d’identification](developing/credentials.md)
          + [Utilisation de documents PDF/A](developing/pdf-a-documents.md)
-         + [Utilisation de PDF Utilities](developing/pdf-utilities.md)
+         + [Utilisation des utilitaires PDF](developing/pdf-utilities.md)
          + [Utilisation de XMP Utilitaires](developing/xmp-utilities.md)
          + [Préparation d’AEM Forms pour la sauvegarde](developing/preparing-aem-forms-backup.md)
          + [Gestion des points de fin par programmation](developing/programmatically-endpoints.md)

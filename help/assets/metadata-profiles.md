@@ -18,8 +18,8 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
 ## Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
 
-1. Appuyez ou cliquez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**, puis appuyez sur **[!UICONTROL Créer]**.
-1. Saisissez un titre pour le profil de métadonnées, par exemple, Exemple de métadonnées, puis cliquez sur **[!UICONTROL Envoyer]**. Le **[!UICONTROL formulaire de modification]** du profil de métadonnées s’affiche.
+1. Appuyez ou cliquez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**, puis appuyez sur **[!UICONTROL Créer]**.
+1. Saisissez un titre pour le profil de métadonnées, par exemple, Exemple de métadonnées, puis cliquez sur **[!UICONTROL Envoyer]**. Le **[!UICONTROL Modifier le formulaire]** pour le profil de métadonnées s’affiche.
 
    ![chlimage_1-480](assets/chlimage_1-480.png)
 
@@ -29,12 +29,12 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
    Modifiez les propriétés suivantes pour le composant **[!UICONTROL Description]** :
 
-   * **[!UICONTROL Libellé]** du champ : Nom d’affichage de la propriété de métadonnées. Il est uniquement disponible à titre de référence.
-   * **[!UICONTROL Associer à la propriété]** : La valeur de cette propriété fournit le chemin/nom relatif au noeud de ressource où elle est enregistrée dans le référentiel. La valeur doit toujours commencer par  `./` car elle indique que le chemin d’accès se trouve sous le noeud de la ressource.
+   * **[!UICONTROL Libellé du champ]**: Nom d’affichage de la propriété de métadonnées. Il est uniquement disponible à titre de référence.
+   * **[!UICONTROL Associer à la propriété]**: La valeur de cette propriété fournit le chemin/nom relatif au noeud de ressource où elle est enregistrée dans le référentiel. La valeur doit toujours commencer par `./` car cela indique que le chemin d’accès se trouve sous le noeud de la ressource.
 
    ![chlimage_1-482](assets/chlimage_1-482.png)
 
-   La valeur que vous indiquez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le nœud de métadonnées de la ressource. Par exemple, si vous spécifiez . `/jcr:content/metadata/dc:desc` comme nom de  **[!UICONTROL Associer à la propriété]**,  [!DNL Experience Manager] Assets stocke la valeur  `dc:desc` au niveau du noeud de métadonnées de la ressource.
+   La valeur que vous indiquez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le nœud de métadonnées de la ressource. Par exemple, si vous spécifiez . `/jcr:content/metadata/dc:desc` comme nom de **[!UICONTROL Associer à la propriété]**, [!DNL Experience Manager] Assets stocke la valeur `dc:desc` sur le noeud de métadonnées de la ressource.
 
    * **[!UICONTROL Valeur par défaut]** : utilisez cette propriété pour ajouter une valeur par défaut pour le composant des métadonnées. Par exemple, si vous indiquez « Ma description », cette valeur est affectée à la propriété `dc:desc` au niveau du nœud de métadonnées de la ressource.
 
@@ -42,34 +42,34 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
    >[!NOTE]
    >
-   >Ajout d’une valeur par défaut à une nouvelle propriété de métadonnées (qui n’existe pas déjà dans . `/jcr:content/metadata` ) n’affiche pas par défaut la propriété et sa valeur sur la  **** page Propriétés de la ressource. Pour afficher la nouvelle propriété sur la page [!UICONTROL Propriétés] de la ressource, modifiez le formulaire de schéma correspondant.
+   >Ajout d’une valeur par défaut à une nouvelle propriété de métadonnées (qui n’existe pas déjà dans . `/jcr:content/metadata` (noeud) n’affiche pas la propriété et sa valeur dans la variable **[!UICONTROL Propriétés]** par défaut. Pour afficher la nouvelle propriété sur la [!UICONTROL Propriétés] de la ressource, modifiez le formulaire de schéma correspondant.
 
-1. (Facultatif) Ajoutez d’autres composants à **[!UICONTROL Modifier le formulaire]** depuis l’onglet **[!UICONTROL Créer le formulaire]** et configurez leurs propriétés dans l’onglet **[!UICONTROL Paramètres]**. Les propriétés suivantes sont disponibles à partir de l’onglet **[!UICONTROL Créer le formulaire]** :
+1. (Facultatif) Ajoutez d’autres composants au **[!UICONTROL Modifier le formulaire]** de la **[!UICONTROL Créer un formulaire]** et configurez leurs propriétés dans l’onglet **[!UICONTROL Paramètres]** . Les propriétés suivantes sont disponibles dans la variable **[!UICONTROL Créer un formulaire]** tab :
 
 | Composant | Propriétés |
 |---|---|
 | [!UICONTROL En-tête de section] | Libellé du champ, <br> Description |
-| [!UICONTROL Une seule ligne de texte] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Texte à plusieurs valeurs] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Nombre] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Date] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Balises standard] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut, <br> Description |
+| [!UICONTROL Une seule ligne de texte] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut |
+| [!UICONTROL Texte à plusieurs valeurs] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut |
+| [!UICONTROL Nombre] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut |
+| [!UICONTROL Date] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut |
+| [!UICONTROL Balises standard] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut, <br> Description |
 
 ![chlimage_1-484](assets/chlimage_1-484.png)
 
-1. Cliquez sur **[!UICONTROL Terminé]**. Le profil de métadonnées est ajouté à la liste des profils de la page **[!UICONTROL Profils de métadonnées]** .
+1. Cliquez sur **[!UICONTROL Terminé]**. Le profil de métadonnées est ajouté à la liste des profils dans la variable **[!UICONTROL Profils de métadonnées]** page.
 
    ![chlimage_1-485](assets/chlimage_1-485.png)
 
 ## Copie d’un profil de métadonnées {#copying-a-metadata-profile}
 
-1. Sur la page **[!UICONTROL Profils de métadonnées]** , sélectionnez un profil pour en faire une copie.
+1. Dans la **[!UICONTROL Profils de métadonnées]** , sélectionnez un profil pour en faire une copie.
 
    ![chlimage_1-486](assets/chlimage_1-486.png)
 
 1. Cliquez sur **[!UICONTROL Copier]** dans la barre d’outils.
-1. Dans la boîte de dialogue **[!UICONTROL Copier le profil de métadonnées]**, saisissez le titre de la nouvelle copie du profil.
-1. Cliquez sur **[!UICONTROL Copier]**. Une copie du profil apparaît dans la liste des profils de la page **[!UICONTROL Profils de métadonnées]** .
+1. Dans le **[!UICONTROL Copier le profil de métadonnées]** , saisissez le titre de la nouvelle copie du profil.
+1. Cliquez sur **[!UICONTROL Copier]**. Une copie du profil apparaît dans la liste des profils de la **[!UICONTROL Profils de métadonnées]** page.
 
    ![chlimage_1-487](assets/chlimage_1-487.png)
 
@@ -102,7 +102,7 @@ Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profi
 
 #### Application de profils de métadonnées à des dossiers à partir de l’interface utilisateur des profils {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-1. Appuyez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
+1. Appuyez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à appliquer à un ou à plusieurs dossiers.
 
    ![chlimage_1-490](assets/chlimage_1-490.png)
@@ -122,7 +122,7 @@ Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profi
 
 ### Application d’un profil de métadonnées à l’ensemble des ressources {#applying-a-metadata-profile-globally}
 
-Outre l’application d’un profil à un dossier, vous pouvez en appliquer un de manière globale de sorte que le profil sélectionné soit appliqué à tout contenu chargé dans les ressources [!DNL Experience Manager] d’un dossier. Pour appliquer un profil de métadonnées de manière globale, procédez comme suit :
+Outre l’application d’un profil à un dossier, vous pouvez en appliquer un de manière globale afin que tout contenu chargé dans [!DNL Experience Manager] Le profil sélectionné est appliqué aux ressources d’un dossier. Pour appliquer un profil de métadonnées de manière globale, procédez comme suit :
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -144,16 +144,16 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 
 Pour supprimer un profil de métadonnées d’un dossier via l’interface utilisateur Profils , procédez comme suit :
 
-1. Appuyez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
+1. Appuyez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
-1. Appuyez sur **[!UICONTROL Supprimer le profil de métadonnées du ou des dossiers]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer un profil, puis appuyez sur **[!UICONTROL Terminé]**.
+1. Appuyer **[!UICONTROL Supprimer le profil de métadonnées du ou des dossiers]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer un profil, puis appuyez sur **[!UICONTROL Terminé]**.
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil de métadonnées n’est plus appliqué à un dossier.
 
 ### Suppression de profils de métadonnées des dossiers au moyen des propriétés {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Appuyez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Ressources]** , puis au dossier duquel vous souhaitez supprimer un profil de métadonnées.
+1. Appuyez sur le bouton [!DNL Experience Manager] logo et navigation **[!UICONTROL Ressources]** puis au dossier duquel vous souhaitez supprimer un profil de métadonnées.
 1. Dans le dossier, appuyez sur la coche pour le sélectionner, puis sur **[!UICONTROL Propriétés]**.
-1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]**, puis **[!UICONTROL Aucun]** dans le menu déroulant. Appuyez sur **[!UICONTROL Enregistrer]**.
+1. Sélectionnez la **[!UICONTROL Profils de métadonnées]** , puis sélectionnez **[!UICONTROL Aucun]** dans le menu déroulant. Appuyez sur **[!UICONTROL Enregistrer]**.
 
 Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.

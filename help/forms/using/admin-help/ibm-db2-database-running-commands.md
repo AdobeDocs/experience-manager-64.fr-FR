@@ -1,8 +1,8 @@
 ---
 title: '"Base de données IBM DB2 : exécution des commandes pour des opérations de maintenance standard"'
-seo-title: '"Base de données IBM DB2 : exécution des commandes pour des opérations de maintenance standard"'
+seo-title: 'IBM DB2 database: Running commands for regular maintenance'
 description: 'Ce document répertorie les commandes IBM DB2 recommandées dans le cadre des opérations de maintenance standard de votre base de données AEM Forms. '
-seo-description: 'Ce document répertorie les commandes IBM DB2 recommandées dans le cadre des opérations de maintenance standard de votre base de données AEM Forms. '
+seo-description: This document lists IBM DB2 commands that are recommended for regular maintenance of your AEM forms database.
 uuid: 235d59df-b9b9-4770-8b7d-00713701c3c2
 contentOwner: admin
 content-type: reference
@@ -12,18 +12,18 @@ discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
 exl-id: b4877c24-3450-44b6-adcd-78a694b28857
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 89%
+source-wordcount: '388'
+ht-degree: 88%
 
 ---
 
-# Base de données IBM DB2 : exécution des commandes pour des opérations de maintenance standard {#ibm-db-database-running-commands-for-regular-maintenance}
+# Base de données IBM DB2 : exécution des commandes pour des opérations de maintenance standard {#ibm-db-database-running-commands-for-regular-maintenance}
 
 Il est recommandé d’exécuter régulièrement les commandes IBM DB2 suivantes dans le cadre des opérations de maintenance standard de votre base de données AEM forms. Pour obtenir des informations détaillées sur la maintenance et l’amélioration des performances de la base de données DB2, reportez-vous au *Guide d’administration d’IBM DB2*.
 
 * **runstats :** cette commande met à jour les statistiques décrivant les caractéristiques physiques d’une table de base de données et des index associés. Les instructions SQL dynamiques générées par AEM forms utilisent automatiquement ces statistiques mises à jour, mais pour les instructions SQL statiques intégrées à une base de données, l’instruction `db2rbind` doit également être exécutée.
-* **db2rbind :** cette commande réassocie tous les packages de la base de données. Utilisez cette commande après avoir exécuté l’utilitaire `runstats` pour revalider tous les packages dans la base de données.
-* **reorg table ou index :**  cette commande vérifie si une réorganisation de certaines tables et index est requise.
+* **db2rbind :** Cette commande réassocie tous les packages de la base de données. Utilisez cette commande après avoir exécuté l’utilitaire `runstats` pour revalider tous les packages dans la base de données.
+* **reorg table ou index :** Cette commande vérifie si une réorganisation de certaines tables et de certains index est requise.
 
    A mesure que la taille de vos bases de données augmente et qu’elles subissent des modifications, il est important de recalculer régulièrement les statistiques des tables pour améliorer les performances. Ces commandes peuvent être exécutées manuellement en utilisant des scripts ou en utilisant une tâche cron.
 
@@ -43,7 +43,7 @@ Exécutez la commande `runstats` sur les tables et index de base de données AEM
 >
 >la commande `runstats` ne doit être exécutée que lors de la première synchronisation de base de données. Toutefois, elle doit être exécutée à deux reprises pendant ce processus : la première fois pendant la synchronisation des utilisateurs et groupes, puis la seconde fois lors de la synchronisation des membres de groupe. Vérifiez que le script s’exécute totalement chaque fois que vous le lancez.
 
-Pour une syntaxe et une utilisation correctes, consultez la documentation du fabricant de la base de données. Ci-dessous, `<schema>` est utilisé pour représenter le schéma associé à votre nom d’utilisateur DB2. Si vous disposez d’une installation DB2 par défaut, il s’agit du nom de schéma de la base de données.
+Pour une syntaxe et une utilisation correctes, consultez la documentation du fabricant de la base de données. Ci-dessous : `<schema>` est utilisé pour représenter le schéma associé à votre nom d’utilisateur DB2. Si vous disposez d’une installation DB2 par défaut, il s’agit du nom de schéma de la base de données.
 
 ```as3
      TABLE <schema>.EDCPRINCIPALGROUPENTITY 

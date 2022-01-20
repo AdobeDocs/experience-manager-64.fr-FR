@@ -1,8 +1,8 @@
 ---
 title: Résolution des incidents liés à AEM
-seo-title: Résolution des incidents liés à AEM
+seo-title: Troubleshooting AEM
 description: Découvrez les problèmes de résolution des incidents liés à AEM.
-seo-description: Découvrez les problèmes de résolution des incidents liés à AEM.
+seo-description: Learn about troubleshooting issues with AEM.
 uuid: d68e9ead-8aa6-4108-9f1e-85d7cd7a370f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 1bc19f9a-fa3f-43e3-813e-23ab0b708d43
 exl-id: 34b509d5-4e80-4229-b155-40004856e87e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 78%
+source-wordcount: '547'
+ht-degree: 80%
 
 ---
 
@@ -70,17 +70,17 @@ Pour plus d’informations sur les scénarios de résolution des incidents ci-de
 * Les applications qui s’exécutent sur CRX génèrent des erreurs de mémoire insuffisante.
 * Après avoir double-cliqué sur Quickstart AEM, l’écran de bienvenue d’AEM ne s’affiche pas dans le navigateur.
 
-## Méthodes d’analyse de la résolution des incidents  {#methods-for-troubleshooting-analysis}
+## Méthodes d’analyse de la résolution des incidents {#methods-for-troubleshooting-analysis}
 
 ### Création d’une image mémoire des threads {#making-a-thread-dump}
 
 L’image mémoire des threads est une liste de toutes les unités d’exécution Java actuellement actives. Si AEM ne répond pas correctement, l’image mémoire des threads peut vous aider à identifier des verrouillages ou d’autres problèmes.
 
-### Utilisation du programme d’image mémoire des threads Sling  {#using-sling-thread-dumper}
+### Utilisation du programme d’image mémoire des threads Sling {#using-sling-thread-dumper}
 
-1. Ouvrez la **console Web AEM**; par exemple, à `http://localhost:4502/system/console/`.
+1. Ouvrez le **Console web d’AEM**; par exemple à `http://localhost:4502/system/console/`.
 
-1. Sélectionnez l’onglet **Threads** sous **État** .
+1. Sélectionnez la **Threads** under **État** .
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -98,7 +98,7 @@ L’image mémoire des threads est une liste de toutes les unités d’exécutio
 
 >[!NOTE]
 >
->Vous pouvez ajouter les images mémoire de threads à un fichier journal à l’aide de la redirection de sortie `>>` :
+>Vous pouvez ajouter les images mémoire de threads à un fichier journal à l’aide du `>>` redirection de sortie :
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
@@ -109,18 +109,18 @@ Pour plus d’informations, voir [Comment utiliser les images mémoire des threa
 Lorsque la fonctionnalité est développée pour AEM WCM, il est possible d’ouvrir des sessions JCR (cela s’apparente à l’ouverture d’une connexion de base de données). Si les sessions ouvertes ne sont jamais fermées, votre système peut rencontrer les symptômes suivants :
 
 * Le système est ralenti.
-* Vous pouvez voir beaucoup de CacheManager : resizeAll entrées dans le fichier journal ; le nombre suivant (size=&lt;x>) indique le nombre de caches. chaque session ouvre plusieurs caches.
+* Vous pouvez voir beaucoup de CacheManager : resizeAll entrées dans le fichier journal ; le nombre suivant (size=&lt;x>) affiche le nombre de caches. Chaque session ouvre plusieurs caches.
 * Parfois, la mémoire du système est saturée (après quelques heures, jours ou semaines, selon la gravité).
 
 Pour analyser les sessions non fermées et découvrir le code qui ne ferme pas une session, consulter l’article [Analyse des sessions non fermées](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html) de la base de connaissances.
 
-### Utilisation de la console web d’Adobe Experience Manager  {#using-the-adobe-experience-manager-web-console}
+### Utilisation de la console web d’Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
 Le statut des lots OSGi peut également fournir une indication précoce de problèmes éventuels.
 
-1. Ouvrez la **console Web AEM**; par exemple, à `http://localhost:4502/system/console/`.
+1. Ouvrez le **Console web d’AEM**; par exemple à `http://localhost:4502/system/console/`.
 
-1. Sélectionnez **Lots** sous l’onglet **OSGI**.
+1. Sélectionner **Lots** under **OSGI** .
 
 1. Vérifiez :
 

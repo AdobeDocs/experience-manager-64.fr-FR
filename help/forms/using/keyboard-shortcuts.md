@@ -1,18 +1,18 @@
 ---
 title: Raccourcis clavier AEM Forms
-seo-title: Raccourcis clavier AEM Forms
+seo-title: AEM Forms Keyboard Shortcuts
 description: Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec l’éditeur de formulaire adaptatif, l’éditeur de thème, l’explorateur de contenu et Correspondence Management pour les systèmes d’exploitation Windows et Macintosh.
-seo-description: Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec l’éditeur de formulaire adaptatif, l’éditeur de thème, l’explorateur de contenu et Correspondence Management.
+seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 08cf95bc-3417-48d4-9df2-5bd56797bc5d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1147'
 ht-degree: 80%
 
 ---
@@ -44,7 +44,7 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un &quot;&amp;ast;&quot; fonctionnent avec les touches Ctrl et Commande sous Mac OS.
+>Les raccourcis marqués d’un &quot;&amp;ast;&quot; fonctionnent avec les touches Ctrl et Commande du système d’exploitation Mac.
 
 >[!NOTE]
 >
@@ -54,7 +54,6 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 >* MAC OS : Commande + clic sur les composants nécessaires.
 
 >
-
 
 
 ## Éditeur de thème  {#themeeditor}
@@ -69,7 +68,7 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un &quot;&amp;ast;&quot; fonctionnent avec les touches Ctrl et Commande sous Mac OS.
+>Les raccourcis marqués d’un &quot;&amp;ast;&quot; fonctionnent avec les touches Ctrl et Commande du système d’exploitation Mac.
 
 ## Explorateur de contenu  {#contentbrowser}
 
@@ -89,8 +88,8 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 Cette section répertorie les différents raccourcis clavier et raccourcis d’accessibilité que vous pouvez utiliser dans l’éditeur de texte de Correspondence Management. Vous pouvez utiliser ces raccourcis lorsque vous effectuez les actions suivantes :
 
-* Création ou modification d’une ressource [Texte](document-fragments.md)
-* Modification d’un module de texte après avoir appuyé sur l’icône Modifier appropriée ( ![edittextmodule](assets/edittextmodule.png)) lors de la [création d’une correspondance](/help/forms/using/create-correspondence.md).
+* Création ou modification d’une [Texte](document-fragments.md) ressource
+* Modification d’un module de texte après avoir appuyé sur l’icône Modifier appropriée ( ![edittextmodule](assets/edittextmodule.png)) lorsque [création d’une correspondance](/help/forms/using/create-correspondence.md).
 
 ### Sélection de texte et déplacement du curseur {#text-selection-and-moving-the-cursor-around}
 
@@ -264,7 +263,7 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
  </tbody>
 </table>
 
-### Modification de la taille de police  {#changing-font-size}
+### Modification de la taille de police {#changing-font-size}
 
 <table> 
  <tbody>
@@ -286,7 +285,7 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
  </tbody>
 </table>
 
-### Suppression d’un mot  {#deleting-a-word}
+### Suppression d’un mot {#deleting-a-word}
 
 <table> 
  <tbody>
@@ -308,7 +307,7 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
  </tbody>
 </table>
 
-### Copier et coller  {#copy-and-paste}
+### Copier et coller {#copy-and-paste}
 
 <table> 
  <tbody>

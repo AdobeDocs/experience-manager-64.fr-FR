@@ -21,11 +21,11 @@ ht-degree: 60%
 
 Les fonctionnalités, points forts et améliorations clés d’AEM 6.4 Assets sont abordés dans ces notes de mise à jour. Pour plus d’informations, suivez les liens proposés.
 
-## Adobe Asset Link {#adobe-asset-link}
+## Adobe Asset Link {#adobe-asset-link}
 
 Adobe Asset Link dans Creative Cloud abonnement Entreprise simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le cadre du processus de création de contenu. Il s’agit d’une nouvelle fonctionnalité native en Creative Cloud pour les entreprises, qui permet de se connecter à AEM Assets directement à partir d’Adobe Photoshop, d’Adobe Illustrator ou d’Adobe InDesign, sans quitter ces outils.
 
-Pour en savoir plus sur la fonctionnalité, les conditions préalables et comment y accéder, consultez la [page Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html).
+Pour en savoir plus sur la fonctionnalité, les conditions préalables et comment y accéder, voir la section [Adobe d’un lien de ressource](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) page.
 
 ## Balises intelligentes améliorées (avec technologie Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
@@ -74,7 +74,7 @@ Améliorations des outils d’administration
 
 Catalogues
 
-* Amélioration de l’expérience utilisateur, alignement avec l’interface utilisateur des modèles. Pour plus d’informations, voir [Catalog Producer](../sites-administering/catalog-producer.md).
+* Amélioration de l’expérience utilisateur, alignement avec l’interface utilisateur des modèles. Pour plus d’informations, voir [Producteur de catalogue](../sites-administering/catalog-producer.md).
 
 ## Métadonnées {#metadata}
 
@@ -98,14 +98,14 @@ La version 6.4 d’AEM offre d’importantes améliorations au niveau du reporti
 * **Publication en parallèle** : jusqu’à réplications peuvent se produire entre AEM Assets et Brand Portal (contre une auparavant), ce qui améliore considérablement les performances de publication.
 * **Publication des schémas et des facettes de recherche** : possibilité de publier les schémas de métadonnées et les facettes de recherche personnalisée sur Brand Portal, évitant ainsi le dédoublement des efforts.
 * **Publication en masse des balises** : possibilité de publier les taxonomies (avec les hiérarchies) sur Brand Portal, évitant ainsi le dédoublement des efforts.
-* **Auto-inscription ou demande d’accès** : Workflow pour les utilisateurs non enregistrés dans Brand Portal.
+* **Auto-inscription ou demande d’accès**: Workflow pour les utilisateurs non enregistrés dans Brand Portal.
 * **Notification de maintenance dans l’application (à l’écran)** : les notifications sont affichées longtemps à l’avance afin d’éviter toute interruption de l’activité.
 * **Amélioration de la création des rapports** : trois rapports prêts à l’emploi sont disponibles (téléchargements, publication et partages de lien).
 * **Restrictions basées sur DRM** : lorsqu’un actif sous licence expire, il n’est plus disponible en téléchargement depuis Brand Portal.
 
 ## Application de bureau AEM {#aem-desktop-app}
 
-L’appli de bureau AEM a été mise à jour vers la version 1.8, qui est compatible avec AEM 6.4. La liste complète des modifications apportées à l’appli de bureau d’Adobe est fournie dans un document [Notes de mise à jour de l’appli de bureau](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/release-notes.html) dédié.\
+L’appli de bureau AEM a été mise à jour vers la version 1.8, qui est compatible avec AEM 6.4. La liste complète des modifications apportées à l’appli de bureau Adobe est fournie dans un dossier dédié. [Notes de mise à jour de l’appli de bureau AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/release-notes.html) document.\
 Voici une liste des principales caractéristiques de l’appli de bureau AEM depuis AEM 6.3 :
 
 * Possibilité de télécharger des dossiers hiérarchiques en arrière-plan.
@@ -118,7 +118,7 @@ Voici une liste des principales caractéristiques de l’appli de bureau AEM dep
 Pour accéder plus facilement à la documentation et aux meilleures pratiques, la documentation suivante est disponible :
 
 * [Guide de l’utilisateur](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html), destiné aux utilisateurs finaux utilisant l’application.
-* [Guide](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/install-upgrade.html) d’installation destiné aux administrateurs configurant l’appli de bureau AEM et AEM pour qu’ils travaillent ensemble
+* [Guide d’installation](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/install-upgrade.html), destiné aux administrateurs configurant l’appli de bureau AEM et AEM pour qu’ils travaillent ensemble
 
 ## Stockage à plusieurs niveaux {#tiered-storage}
 
@@ -138,7 +138,7 @@ Pour une présentation des plateformes prises en charge, consultez la [documenta
 
 Dans la version 6.4, Dynamic Media prend en charge un nouveau mode, dans lequel l’actif original est téléchargé et géré à l’aide de l’interface utilisateur web d’AEM Assets, tandis que les rendus dynamiques et autres fonctions de médias dynamiques sont traités en arrière-plan par le service de livraison sur le cloud de Dynamic Media.
 
-Dans ce mode (introduit en premier avec la version de [AEM 6.3 Feature Packs 14410 et 18912](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), les utilisateurs bénéficient de fonctionnalités de gestion de ressources de bout en bout et de médias dynamiques à l’aide de l’interface utilisateur web d’AEM Assets moderne, tout en tirant parti des services de diffusion rétrocompatibles avec Dynamic Media Classic (Scene7), y compris les URL de diffusion inchangées.
+Dans ce mode (introduit en premier avec la sortie de [AEM 6.3 Feature Packs 14410 et 18912](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), les utilisateurs bénéficient des fonctionnalités de gestion de ressources de bout en bout et de Dynamic Media à l’aide de l’interface utilisateur web moderne d’AEM Assets, tout en tirant parti des services de diffusion rétrocompatibles avec Dynamic Media Classic (Scene7), y compris les URL de diffusion inchangées.
 
 En outre, AEM 6.4 introduit de nouvelles fonctions reposant sur Adobe Sensei pour les médias émergents, tels que VR et 3D, les visionneuses Dynamic Media et la prise en charge des fragments d’expérience au sein des images interactives et des bannières de carrousel.
 

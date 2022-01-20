@@ -1,8 +1,8 @@
 ---
-title: Guide rapide à propos de la création de pages
-seo-title: Guide rapide pour la création de pages
+title: Guide rapide pour la création de pages
+seo-title: Quick Guide to Authoring Pages
 description: Guide rapide de haut niveau des principales actions à entreprendre pour créer le contenu d’une page
-seo-description: Guide rapide de haut niveau des principales actions à entreprendre pour créer le contenu d’une page
+seo-description: A quick, high-level guide to the key actions of authoring page content
 uuid: 35442d98-caf9-4cdb-8e68-4fc611e66290
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 163a4887-7c33-4305-8c48-882630f2caa1
 exl-id: c63e44e7-cc89-4fa0-8ba4-460d682df601
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1538'
 ht-degree: 96%
 
 ---
@@ -65,7 +65,7 @@ Avant d’aborder ce thème dans le détail, nous vous offrons quelques conseils
 >Il existe plusieurs raccourcis clavier qui peuvent faciliter l’expérience de création.
 >
 >* [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-* [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
+>* [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Recherche de votre page {#finding-your-page}
@@ -82,14 +82,14 @@ Avant d’aborder ce thème dans le détail, nous vous offrons quelques conseils
 
 ### Création d’une page {#creating-a-new-page}
 
-1. [Accédez à l’emplacement où créer la page.](#finding-your-page)
+1. [Accédez à l’emplacement](#finding-your-page) où créer la page.
 1. Cliquez sur l’icône **Créer** et sélectionnez **Page** dans la liste :
 
    ![screen_shot_2018-03-21at160324](assets/screen_shot_2018-03-21at160324.png)
 
 1. Un assistant s’ouvre, qui vous aidera à collecter les informations nécessaires lors de la [création de votre page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Suivez les instructions à l’écran.
 
-## Sélection de la page pour d’autres actions   {#selecting-your-page-for-further-action}
+## Sélection de la page pour d’autres actions {#selecting-your-page-for-further-action}
 
 Sélectionnez une page pour y effectuer des actions. Ce faisant, la barre d’outils est automatiquement mise à jour afin de présenter les actions appropriées pour cette ressource.
 
@@ -106,7 +106,8 @@ La méthode de sélection d’une page dépend du mode d’affichage dans la con
 
       * Une coche apparaît sur la carte afin d’indiquer que la page a été sélectionnée.
    >[!NOTE]
-   En mode de sélection, l’icône **Sélectionner** (coche) est transformée en icône **Désélectionner** (croix).
+   >
+   >En mode de sélection, l’icône **Sélectionner** (coche) est transformée en icône **Désélectionner** (croix).
 
 1. Mode Liste :
 
@@ -166,7 +167,8 @@ La méthode de sélection d’une page dépend du mode d’affichage dans la con
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Copier** puis **Coller** suivant vos besoins.
       >[!NOTE]
-      Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
+      >
+      >Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
 
    * [Supprimer](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un composant :
 
@@ -183,9 +185,10 @@ La méthode de sélection d’une page dépend du mode d’affichage dans la con
    * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide du sélecteur déroulant **Modifier**.
 
    >[!NOTE]
-   Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
+   >
+   >Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
 
-## Modification des propriétés de page    {#editing-the-page-properties}
+## Modification des propriétés de page {#editing-the-page-properties}
 
 Vous pouvez [modifier les propriétés de page](/help/sites-authoring/editing-page-properties.md) de deux (principales) façons :
 
@@ -237,7 +240,7 @@ Il existe deux méthodes principales pour [publier une page](/help/sites-authori
 
    Pour plus d’informations, voir [Publication de pages](/help/sites-authoring/publishing-pages.md#unpublishing-pages).
 
-## Déplacement, copier-coller ou suppression d’une page    {#move-copy-and-paste-or-delete-your-page}
+## Déplacement, copier-coller ou suppression d’une page {#move-copy-and-paste-or-delete-your-page}
 
 1. [Accédez à la page](#finding-your-page) à déplacer, à copier-coller ou à supprimer.
 1. Sélectionnez l’icône de copie (puis de collage), de déplacement ou de suppression selon vos besoins à l’aide de l’une des méthodes suivantes :
@@ -255,7 +258,8 @@ Il existe deux méthodes principales pour [publier une page](/help/sites-authori
 
       * Vous serez alors invité à confirmer l’opération.
    >[!NOTE]
-   La suppression n’est pas proposée comme action rapide.
+   >
+   >La suppression n’est pas proposée comme action rapide.
 
 ## Verrouillage d’une page (puis déverrouillage) {#locking-your-page-then-unlocking}
 
@@ -283,7 +287,7 @@ Un [accès rapide aux références](/help/sites-authoring/author-environment-too
 
 1. Appuyez ou cliquez sur le type de référence requis pour afficher d’autres détails et (le cas échéant) accomplir d’autres actions.
 
-## Création d’une version d’une page    {#creating-a-version-of-your-page}
+## Création d’une version d’une page {#creating-a-version-of-your-page}
 
 1. Pour ouvrir le rail de la chronologie, sélectionnez la **[Chronologie](/help/sites-authoring/basic-handling.md#timeline)** à l’aide de l’icône de la barre d’outils (avant ou après la [sélection d’une page](#selecting-your-page-for-further-action)) :
 

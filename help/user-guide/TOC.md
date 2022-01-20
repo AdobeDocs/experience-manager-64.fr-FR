@@ -5,12 +5,12 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur d’AEM 6.4
 user-guide-description: Présentation de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser AEM 6.4.
 contentOwner: Chris Bohnert
-feature: Informations sur la version
+feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 4%
+source-wordcount: '60'
+ht-degree: 1%
 
 ---
 

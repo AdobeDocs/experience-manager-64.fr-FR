@@ -1,19 +1,19 @@
 ---
 title: Conception de la mise en page
-seo-title: Conception de la mise en page
+seo-title: Layout Design
 description: Détails de conception de la mise en page explique comment créer des mises en page à utiliser pour vos lettres ou vos communications interactives.
-seo-description: Conception de la mise en page Détails explique comment créer des mises en page à utiliser pour vos lettres ou communications interactives.
+seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
 uuid: b21af474-07f5-4bfe-af7d-0c322e2452ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: 92f90e7f-2869-4201-a927-47de1fc08f5c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 93%
+source-wordcount: '1285'
+ht-degree: 94%
 
 ---
 
@@ -62,7 +62,7 @@ Par défaut, tous les champs sont considérés comme pouvant être associés à 
 
 Un champ associable doit :
 
-* être un &lt;champ> XFA ou &lt;exclGroup>
+* être un XFA ; &lt;field> ou &lt;exclgroup>
 * disposer d’une référence de liaison XFA ;
 * s’il s’agit d’un champ &lt;exclGroup>, il doit contenir au moins un champ de bouton radio enfant, faute de quoi son type de valeur ne pourra pas être déterminé.
 
@@ -74,13 +74,13 @@ Un champ associable ne doit pas :
 
 * inclure de suffixe « _int » dans son nom ;
 * avoir une liaison définie comme « aucune » ;
-* être l’enfant d’un élément &lt;exclGroup>
+* être un enfant d’un &lt;exclgroup> element
 
 Dès lors qu’un champ associable répond aux critères décrits ci-dessus, il peut être situé à n’importe quel emplacement et dans n’importe quel niveau d’imbrication de la mise en page. Vous pouvez utiliser les champs associables dans les pages de gabarit.
 
 La configuration de la mise en page des champs est plus flexible que celle des sous-formulaires de zone cible. Mais les champs sont liés à un seul type de valeur. Vous pouvez définir un champ pour qu’il soit grand ou définir le champ avec une hauteur ou une largeur fixes, etc. Le résultat du module ou de la règle est envoyé dans le champ. 
 
-## Quand utiliser des sous-formulaires et des champs de texte  {#deciding-when-to-use-subforms-and-text-nbsp-fields}
+## Quand utiliser des sous-formulaires et des champs de texte {#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
 Utilisez un sous-formulaire si vous voulez capturer plusieurs contenus de module dans une mise en forme de haut en bas à flux vertical (plusieurs paragraphes ou images). Votre mise en page doit gérer le fait que le sous-formulaire se développe en hauteur afin d’accueillir son contenu. Si vous n’êtes pas sûr que la longueur du contenu associé au sous-formulaire/à la cible ne dépassera jamais l’espace réservé dans la mise en page pour le sous-formulaire, créez ce dernier en tant qu’enfant dans un conteneur de sous-formulaires à mise en page souple. Cette procédure garantit que les objets de mise en page situés en dessous du sous-formulaire se déplaceront vers le bas au fur et à mesure que le sous-formulaire s’agrandira.
 
@@ -119,12 +119,12 @@ Utilisez un champ si vous souhaitez capturer dans votre schéma de mise en page 
  </tbody> 
 </table>
 
-## Configuration d’éléments répétitifs  {#setting-up-repetitive-elements}
+## Configuration d’éléments répétitifs {#setting-up-repetitive-elements}
 
 Lorsque des éléments comme le logo et l’adresse de votre organisation figurent sur toutes les pages d’une lettre/communication interactive, créez des champs de formulaire pour ces éléments et placez-les sur la page de gabarit. Utilisez la liaison Nom (Nom du champ) pour ces champs.
 
-## Spécifiez le format de rendu du serveur  {#specify-the-server-nbsp-render-format}
+## Spécifiez le format de rendu du serveur {#specify-the-server-nbsp-render-format}
 
 Utilisez le format de rendu du serveur de la mise en page pour le formulaire XML dynamique, faute de quoi aucune lettre/communication interactive basée sur cette mise en page ne s’affichera correctement. Par défaut, le format de rendu du serveur dans LiveCycle Designer est défini comme formulaire XML dynamique. Pour vous assurer que vous utilisez le format correct :
 
-* Dans Designer, cliquez sur **[!UICONTROL Fichier > Propriétés du formulaire > Valeur par défaut]**, puis assurez-vous que le paramètre PDF Render/Format est défini sur Formulaire XML dynamique.
+* Dans Designer, cliquez sur **[!UICONTROL Fichier > Propriétés du formulaire > Par défaut]**, et assurez-vous que le paramètre Rendu/Format du PDF est défini sur Formulaire XML dynamique.

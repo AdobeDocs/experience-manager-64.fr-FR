@@ -1,13 +1,13 @@
 ---
 title: Guide de l’utilisateur d’AEM 6.4 Communities
-seo-title: Guide de l’utilisateur d’AEM 6.4 Communities
+seo-title: AEM 6.4 Communities User Guide
 description: Ce guide couvre toutes les tâches d’AEM Communities, telles que la création d’expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctions sociales.
-seo-description: Il couvre toutes les tâches d’AEM Communities, telles que la création d’expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctions sociales.
+seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 exl-id: 4711564b-adcc-4835-8215-138b209d1578
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 36%
+source-wordcount: '361'
+ht-degree: 38%
 
 ---
 

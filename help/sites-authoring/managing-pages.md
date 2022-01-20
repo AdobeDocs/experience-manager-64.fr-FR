@@ -1,8 +1,8 @@
 ---
 title: Création et organisation des pages
-seo-title: Création et organisation des pages
+seo-title: Creating and Organizing Pages
 description: Comment créer et gérer des pages avec AEM
-seo-description: Comment créer et gérer des pages avec AEM
+seo-description: How to create and manage pages with AEM
 uuid: 9bdc3222-6a0c-48a2-be1d-79ceb3bbc828
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 exl-id: 0182155a-0156-458c-b89b-35ab3e27819e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2295'
 ht-degree: 95%
 
 ---
@@ -42,13 +42,13 @@ Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour org
 
 La structure d’un site web peut être comparée à celle d’un arbre qui soutient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former des URL qui indiquent les titres lorsque le contenu des pages est affiché.
 
-Vous trouverez ci-dessous un exemple tiré du site We.Retail, sur lequel vous pouvez accéder à une page de shorts de randonnée ( `desert-sky-shorts`) :
+Vous trouverez ci-dessous un exemple tiré du site We.Retail, où une page de shorts de randonnée ( `desert-sky-shorts`) est accessible :
 
 * Environnement de création : `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Environnement de publication: `http://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Selon la configuration de votre instance, l’utilisation de `/content` peut être facultative dans l’environnement de publication.
+Selon la configuration de votre instance, utilisez `/content` peut être facultatif dans l’environnement de publication.
 
 ```xml
  /content
@@ -170,12 +170,12 @@ Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 ### Composants {#components}
 
-Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est fourni avec un éventail de [composants prêts à l’emploi](/help/sites-authoring/default-components-console.md) qui offrent des fonctionnalités complètes. Il s’agit notamment :
+Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM s’accompagne d’un éventail de [Composants prêts à l’emploi](/help/sites-authoring/default-components-console.md) qui offrent des fonctionnalités complètes. Il s’agit notamment :
 
 * Texte
 * Image
 * Diaporama
-* Vidéo
+* Vidéo 
 * Etc.
 
 Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l’aide des composants](/help/sites-authoring/editing-content.md#inserting-a-component), qui sont disponibles dans l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser).
@@ -252,7 +252,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 1. Sélectionnez votre page à l’aide de l’une des fonctionnalités suivantes :
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
-   * le [mode de sélection](/help/sites-authoring/basic-handling.md#product-navigation) et la barre d’outils
+   * Le [mode de sélection](/help/sites-authoring/basic-handling.md#product-navigation) et la barre d’outils
 
    Sélectionnez ensuite l’icône **Modifier** :
 
@@ -272,7 +272,7 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
-   * le [mode de sélection](/help/sites-authoring/basic-handling.md#product-navigation) et la barre d’outils
+   * Le [mode de sélection](/help/sites-authoring/basic-handling.md#product-navigation) et la barre d’outils
 
    Sélectionnez ensuite l’icône de page **Copier** :
 
@@ -315,7 +315,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
-   * le [mode de sélection](/help/sites-authoring/basic-handling.md#product-navigation) et la barre d’outils
+   * Le [mode de sélection](/help/sites-authoring/basic-handling.md#product-navigation) et la barre d’outils
 
    Sélectionnez ensuite l’icône de page **Déplacer** :
 
@@ -391,7 +391,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 >
 >Si une page est déjà publiée, la publication est automatiquement annulée avant la suppression.
 
-### Verrouillage d’une page {#locking-a-page}
+### Verrouillage d’une page    {#locking-a-page}
 
 Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-authoring/editing-content.md#locking-a-page) à partir d’une console ou lorsque vous modifiez une page. Les deux environnements indiquent également si une page est verrouillée ou non.
 
@@ -412,7 +412,6 @@ Vous pouvez créer des dossiers pour classer vos fichiers et vos pages.
 >* Dans une Live Copy, les dossiers ne peuvent pas être sélectionnés.
 
 >
-
 
 
 1. Ouvrez la console **Sites**, puis accédez à l’emplacement requis.

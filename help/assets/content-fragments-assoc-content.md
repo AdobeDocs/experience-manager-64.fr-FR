@@ -1,8 +1,8 @@
 ---
 title: Contenu associé
-seo-title: Contenu associé
+seo-title: Associated Content
 description: Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
-seo-description: Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
+seo-description: Associated content provides the connection so that assets can be (optionally) used with the fragment when it is added to a content page.
 uuid: 1bc1eefa-7a7c-43be-a8a8-0d153d60c5c4
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 exl-id: af4f25d4-a784-47fe-bca4-75c8d373f7d2
-feature: Fragments de contenu
+feature: Content Fragments
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '229'
 ht-degree: 94%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de la fonction [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
 
 Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu. Vous bénéficiez ainsi d’une certaine souplesse,[ car vous disposez d’une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page.](/help/sites-authoring/content-fragments.md#using-associated-content) Cela permet aussi de réduire le temps nécessaire pour rechercher la ressource appropriée.
 

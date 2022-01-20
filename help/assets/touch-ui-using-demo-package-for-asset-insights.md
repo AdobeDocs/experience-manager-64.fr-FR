@@ -16,10 +16,10 @@ ht-degree: 41%
 
 À l’aide du module de démonstration, vous pouvez activer Adobe Assets Insights pour capturer des données à partir de et générer des informations pour un exemple de page web.
 
-## Utilisation de [!DNL Experience Manager] statistiques sur les ressources avec un exemple de page web  {#using-aem-assets-insights-with-sample-web-page}
+## Utilisation [!DNL Experience Manager] Statistiques sur les ressources avec un exemple de page web  {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configurez les statistiques sur les ressources en suivant les instructions de la section [Configuration des statistiques sur les ressources](touch-ui-configuring-asset-insights.md).
-1. Téléchargez l’exemple de module [!DNL Experience Manager] Ressources ci-dessous et installez le module à partir du gestionnaire de modules CRXDE.
+1. Configurez les statistiques sur les ressources en suivant les instructions de la rubrique [Configuration des statistiques sur les ressources](touch-ui-configuring-asset-insights.md).
+1. Télécharger l’exemple [!DNL Experience Manager] Package de ressources ci-dessous et installez le package à partir du gestionnaire de packages CRXDE.
 
 [Obtenir le fichier](assets/insightsdemo.zip)
 

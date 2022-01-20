@@ -1,18 +1,18 @@
 ---
 title: Tutoriel - Créer votre première communication interactive
-seo-title: Créer votre première communication interactive
+seo-title: Create your first Interactive Communication
 description: Découvrez comment créer votre première communication interactive.
-seo-description: Découvrez comment créer votre première communication interactive.
+seo-description: Learn to create your first Interactive Communication.
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
-feature: Communication interactive
+feature: Interactive Communication
 exl-id: 4b2754dc-4b41-4d0d-a22c-d45595b36f84
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1043'
 ht-degree: 92%
 
 ---
@@ -52,7 +52,7 @@ Un opérateur de télécommunications envoie des factures mensuelles aux clients
 * Configurez une instance d’auteur AEM.
 * Installez le [module complémentaire AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) sur une instance de création
 * Configurez la base de données MYSQL.
-* Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données MySQL et utilisent le [pilote de base de données JDBC MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html) de l’Oracle.
+* Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données MySQL et l’utilisation d’Oracle [Pilote de base de données MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## Étape 1 : Planifier la communication interactive {#step-plan-the-interactive-communication}
 

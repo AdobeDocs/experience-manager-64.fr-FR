@@ -1,8 +1,8 @@
 ---
 title: Utilisation d’un formulaire
-seo-title: Utilisation d’un formulaire
+seo-title: Working with a Form
 description: Affichage et mise à jour d’un formulaire associé à une tâche ou à un point de départ dans l’application AEM Forms
-seo-description: Affichage et mise à jour d’un formulaire associé à une tâche ou à un point de départ dans l’application AEM Forms
+seo-description: View and update the form associated with a task or Startpoint in the AEM Forms app
 uuid: 7481ca5c-a2c0-4697-9008-1e51bce2012e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: ae565dbd-2631-4364-89f7-675700b43320
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '349'
 ht-degree: 96%
 
 ---
@@ -27,7 +27,7 @@ Pour synchroniser votre formulaire dans l’application AEM Forms :
 1. Dans l’instance d’auteur, sélectionnez un formulaire, puis cliquez sur **Afficher les propriétés**. 
 
 1. Dans la page des propriétés, cliquez sur **Avancé.** 
-1. Sous Avancé, activez l’option : **Synchroniser avec l’application AEM Forms**, puis appuyez sur **Enregistrer**.
+1. Sous Avancé, activez l’option : **Synchronisation avec l’application AEM Forms**, puis appuyez sur **Enregistrer**.
 
 Pour synchroniser plusieurs formulaires, dans l’instance d’auteur, sélectionnez plusieurs formulaires dans le gestionnaire de formulaires et appuyez sur **Synchroniser avec l’application AEM Forms**. Lorsque le formulaire est publié, l’application AEM Forms peut se connecter au serveur de publication et récupérer les formulaires.
 
@@ -39,8 +39,7 @@ Pour synchroniser plusieurs formulaires, dans l’instance d’auteur, sélectio
 >* Formulaires mobiles
 
 >
->
-Les pièces jointes au niveau du formulaire ne sont pas prises en charge dans les formulaires adaptatifs extraits dans l’application AEM Forms synchronisée avec le serveur AEM Forms OSGi. Les utilisateurs peuvent ajouter des pièces jointes à un champ si l’auteur a activé les pièces jointes au niveau du formulaire au moment de sa création.
+>Les pièces jointes au niveau du formulaire ne sont pas prises en charge dans les formulaires adaptatifs extraits dans l’application AEM Forms synchronisée avec le serveur AEM Forms OSGi. Les utilisateurs peuvent ajouter des pièces jointes à un champ si l’auteur a activé les pièces jointes au niveau du formulaire au moment de sa création.
 
 **Ouverture et mise à jour d’un formulaire**
 

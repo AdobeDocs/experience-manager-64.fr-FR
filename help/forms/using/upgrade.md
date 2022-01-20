@@ -1,8 +1,8 @@
 ---
 title: Mise à niveau vers AEM 6.4 Forms
-seo-title: Mise à niveau vers AEM 6.4 Forms
+seo-title: Upgrade to AEM 6.4 Forms
 description: 'Vous pouvez effectuer une mise à niveau directe à partir de AEM 6.1 Forms, AEM 6.2 Forms et LiveCycle ES4 SP1 vers AEM 6.3 Forms. '
-seo-description: 'Vous pouvez effectuer une mise à niveau directe à partir de AEM 6.1 Forms, AEM 6.2 Forms et LiveCycle ES4 SP1 vers AEM 6.3 Forms. '
+seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: c613b54b-8768-46ef-a6f5-15bcc1642a75
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '208'
 ht-degree: 100%
 
 ---

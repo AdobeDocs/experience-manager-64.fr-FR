@@ -34,16 +34,16 @@ Avant de commencer à créer et analyser les tests A/B pour les formulaires adap
 
 Pour intégrer AEM avec Target, vérifiez que vous disposez d’un compte Adobe Target valide. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client, de l’adresse e-mail associée au compte Target et du mot de passe pour vous connecter à AEM avec Target.
 
-Le code client identifie le compte client Adobe Target et est utilisé comme un sous-domaine dans l’URL lors de l’appel du serveur Adobe Target. Avant de poursuivre, connectez-vous à [https://experience.adobe.com/](https://experience.adobe.com/) et, si vous y avez accès, consultez l’option [!DNL Adobe Target] de la section [!UICONTROL Accès rapide] .
+Le code client identifie le compte client Adobe Target et est utilisé comme un sous-domaine dans l’URL lors de l’appel du serveur Adobe Target. Before proceeding, log on to [https://experience.adobe.com/](https://experience.adobe.com/) and, if you have access, view the [!DNL Adobe Target] option in the [!UICONTROL Quick Access] section.
 
 ### Intégration de Target dans AEM Forms {#integrate-target-in-aem-forms}
 
 Pour intégrer un serveur Target en cours d’exécution avec AEM Forms, procédez comme suit :
 
-1. Sur AEM serveur, accédez à https://&quot;a0/>hostname *:&quot;a2/>port&lt;a3/&quot;/libs/cq/core/content/tools/cloudservices.html.***
+1. Sur AEM serveur, accédez à https://&lt;*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html.
 1. Dans la section **Adobe Target**, cliquez sur **Afficher les configurations** puis sur l’icône **+** pour ajouter une nouvelle configuration.
 
-   Si vous configurez Target pour la première fois, cliquez sur **Configurer maintenant**.
+   If you are configuring target for the first time, click **Configure Now**.
 
 1. Dans la boîte de dialogue Créer une configuration, spécifiez un **titre** et éventuellement un **nom** pour la configuration.
 1. Cliquez sur **Créer**. La boîte de dialogue Modifier le composant s’ouvre.
@@ -51,10 +51,10 @@ Pour intégrer un serveur Target en cours d’exécution avec AEM Forms, procéd
 1. Sélectionnez **Rest** dans la liste déroulante Type d’API.
 1. Cliquez sur **Se connecter à Adobe Target** pour lancer la connexion à Target. Si la connexion est établie, le message Connexion réussie s’affiche. Cliquez sur **OK** dans le message et **OK** dans la boîte de dialogue. Le compte Target est configuré.
 1. Créez une structure Target, comme décrit à la section [Ajout d’une structure](/help/sites-administering/target.md).
-1. Accédez à https://&quot;a0/>hostname *:&quot;a2/>port*/system/console/configMgr.**
+1. Go to https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr.
 1. Cliquez sur **AEM Forms Target Configuration**.
 1. Sélectionnez **Target Framework**.
-1. Dans le champ **Target URLs**, spécifiez toutes les URL où les tests A/B seront exécutés. Par exemple, https://&quot;a0/>hostname *:* port */ pour le serveur AEM Forms sur OSGi ou https://&quot;a4/>hostname*:*port*/lc/ pour le serveur AEM Forms sur JEE.**
+1. Dans le champ **Target URLs**, spécifiez toutes les URL où les tests A/B seront exécutés. Par exemple, https://&lt;*hostname*>:&lt;*port*>/ pour le serveur AEM Forms sur OSGi ou https://&lt;*hostname*>:&lt;*port*>/lc/ pour le serveur AEM Forms on JEE.
 
     Si vous souhaitez configurer une URL Target pour une instance de publication à laquelle vos clients peuvent accéder à l’aide du nom d’hôte ou de l’adresse IP, vous devez configurer les deux comme des URL Target (via le nom d’hôte ainsi que l’adresse IP). Si vous configurez uniquement une des URL, votre test A/B ne s’exécutera pas pour les clients provenant de l’autre URL. Cliquez sur le signe **+** pour spécifier plusieurs URL.
 
@@ -86,8 +86,8 @@ AEM vous permet de créer un public et de les utiliser pour un test A/B. Le publ
 1. Dans la boîte de dialogue Configuration d’Adobe Target, sélectionnez une configuration Cible et cliquez sur **Ok**.
 1. Sur la page Créer un public, créez des règles. Les règles vous permettent de classer le public par catégorie. Par exemple, vous pouvez trier les publics par catégorie en fonction du système d’exploitation. Le public A provient de Windows et le public B de linux.
 
-   * Pour classer l’audience en fonction de Windows, dans la règle #1, sélectionnez le type d’attribut **OS**. Dans la liste déroulante, sélectionnez **Windows**.
-   * Pour classer l’audience selon Linux, dans la règle #2, sélectionnez le type d’attribut **OS**. Dans la liste déroulante Lorsque , sélectionnez **Linux**, puis cliquez sur **Suivant**.
+   * Pour classer l’audience en fonction de Windows, dans #1 de règle, sélectionnez **SE** type d’attribut. Dans la liste déroulante, sélectionnez **Windows**.
+   * Pour classer l’audience selon Linux, dans #2 de règle, sélectionnez **SE** type d’attribut. Dans la liste déroulante Lorsque , sélectionnez **Linux**, puis cliquez sur **Suivant**.
 
 1. Spécifiez un nom pour le public créé, puis cliquez sur **Enregistrer**.
 
@@ -97,7 +97,7 @@ Vous pouvez sélectionner le public lorsque vous configurez le test A/B d’un f
 
 Effectuez les étapes suivantes pour créer un test A/B pour un formulaire adaptatif.
 
-1. Accédez à **Forms &amp; Documents** à l’adresse https://&quot;a2/>hostname *:* port&lt;a5/&quot;/aem/forms.html/content/dam/formsanddocuments.**
+1. Accédez à **Forms et documents** à l’adresse https://&lt;*hostname*>:&lt;*port*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Accédez au dossier contenant le formulaire adaptatif.
 1. Cliquez sur l’outil **Sélection** dans la barre d’outils et sélectionnez le formulaire adaptatif.

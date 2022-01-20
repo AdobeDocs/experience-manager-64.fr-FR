@@ -91,7 +91,7 @@ Adobe Experience Manager 6.4.8.4 fournit des correctifs pour les problèmes suiv
 
 **Problèmes résolus dans AEM Forms-6.4.0-0027**
 
-* (JEE uniquement) Vulnérabilités de sécurité critiques (CVE-2021-44228 et CVE-2021-45046) signalées pour Apache Log4j2.
+* (JEE uniquement) Vulnérabilités de sécurité critiques (CVE-2021-44228 et CVE-2021-45046) signalées pour Apache Log4j2.
 
 Pour plus d’informations sur les mises à jour de sécurité, voir [Page bulletins de sécurité Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 

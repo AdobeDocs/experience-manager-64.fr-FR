@@ -1,8 +1,8 @@
 ---
 title: Configuration des analyses et des rapports
-seo-title: Configuration des analyses et des rapports
+seo-title: Configuring analytics and reports
 description: 'Découvrez comment configurer Adobe Analytics pour déterminer les schémas et les problèmes d’interaction auxquels sont confrontés les utilisateurs lorsqu’ils utilisent des formulaires adaptatifs, des documents adaptatifs et des formulaires HTML5. '
-seo-description: 'Découvrez comment configurer Adobe Analytics pour déterminer les schémas et les problèmes d’interaction auxquels sont confrontés les utilisateurs lorsqu’ils utilisent des formulaires adaptatifs, des documents adaptatifs et des formulaires HTML5. '
+seo-description: Learn how to configure Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms, adaptive documents, and HTML5 forms.
 uuid: f5671600-e1e2-4fef-9e47-6c8ede027700
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 6301e0ef-3faa-4e6f-932d-37b049577cec
 exl-id: a55999a8-a92b-4750-bf05-ee326d079f65
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1517'
 ht-degree: 83%
 
 ---
@@ -49,7 +49,7 @@ Les données Analytics sont stockées dans des référentiels spécifiques aux u
 Procédez comme suit pour créer une suite de rapports.
 
 1. Connectez-vous à [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
-1. Dans le Marketing Cloud, sélectionnez **Admin** > **Admin Console** > **Suites de rapports**.
+1. Dans le Marketing Cloud, sélectionnez **Administration** > **Admin Console** >  **Suites de rapports**.
 1. Sélectionnez **Nouveau** > **Suite de rapports** dans le Gestionnaire de suites de rapports.
 
    ![Création d’une suite de rapports](assets/newreportsuite.png)
@@ -78,21 +78,21 @@ Procédez comme suit pour créer une suite de rapports.
    ![Paramètres du compte général](assets/geographic_settings.png)
    **Figure :** *Paramètres du compte général*
 
-1. Dans l’écran Paramètres du compte général, activez **Rapports de géographie**, puis cliquez sur **Enregistrer**.
+1. Dans l’écran Paramètres du compte général , activez **Rapports de géographie**, puis cliquez sur **Enregistrer**.
 1. Cliquez sur **Modifier les paramètres** > **Trafic** > **Variables de trafic**.
 
 1. Dans la suite de rapports, configurez et activez les variables de trafic suivantes.
 
    * **formName** : identifiant d’un formulaire adaptatif.
    * **formInstance** : identifiant d’une instance de formulaire adaptatif. Activez les rapports Chemin pour cette variable.
-   * **fieldName** : Identifiant d’un champ de formulaire adaptatif. Activez les rapports Chemin pour cette variable.
-   * **panelName** : Identifiant d’un panneau de formulaire adaptatif. Activez les rapports Chemin pour cette variable.
+   * **fieldName**: Identifiant d’un champ de formulaire adaptatif. Activez les rapports Chemin pour cette variable.
+   * **panelName**: Identifiant d’un panneau de formulaire adaptatif. Activez les rapports Chemin pour cette variable.
    * **formTitle** : titre du formulaire.
    * **fieldTitle** : titre du champ de formulaire.
    * **panelTitle** : titre du panneau de formulaire.
    * **analyticsVersion** : version de l’analyse de formulaire.
 
-1. Accédez à **Modifier les paramètres** > **Conversion** > **Événements de succès**. Définissez et activez les événements de succès suivants :
+1. Accédez à **Modifier les paramètres** > **Conversion** >  **Événements de succès**. Définissez et activez les événements de succès suivants :
 
    | Événement de réussite | Type |
    |---|---|
@@ -108,17 +108,17 @@ Procédez comme suit pour créer une suite de rapports.
 
    >[!NOTE]
    >
-   >Les numéros d’événement et de prop utilisés pour configurer AEM Forms Analytics doivent être différents des numéros d’événement et de prop utilisés dans la configuration [AEM analytics](/help/sites-administering/adobeanalytics.md).
+   >Les numéros d’événement et de prop utilisés pour configurer AEM Forms Analytics doivent être différents des numéros d’événement et de prop utilisés dans [AEM analytics](/help/sites-administering/adobeanalytics.md) configuration.
 
 1. Déconnectez-vous du compte Adobe Marketing Cloud.
 
-## Création de la configuration du service Cloud  {#creating-cloud-service-configuration}
+## Création de la configuration du service Cloud {#creating-cloud-service-configuration}
 
 La configuration du service Cloud rassemble les informations sur votre compte Adobe Analytics. Elle permet à Adobe Experience Manager (AEM) de se connecter à Adobe Analytics. Créez une configuration distincte pour chaque compte Analytics que vous utilisez.
 
 1. Connectez-vous à votre instance d’auteur en tant qu’administrateur AEM.
-1. Dans le coin supérieur gauche, cliquez sur **Adobe Experience Manager** > **Outils** ![outils](assets/tools.png) **Cloud Services** > **Cloud Services hérités**.
-1. Recherchez l’icône **Adobe Analytics**. Cliquez sur **Afficher les configurations**, puis cliquez sur **[+]** pour ajouter une nouvelle configuration.
+1. Dans le coin supérieur gauche, cliquez sur **Adobe Experience Manager** > **Outils** ![outils](assets/tools.png)> **Cloud Services** > **Cloud Services hérités**.
+1. Recherchez l’icône **Adobe Analytics**. Cliquez sur **Afficher les configurations** puis cliquez sur **[+]** pour ajouter une nouvelle configuration.
 
    Si vous êtes un utilisateur novice, cliquez sur **Configurer maintenant**.
 
@@ -130,9 +130,9 @@ La configuration du service Cloud rassemble les informations sur votre compte Ad
 
    * **Nom d’utilisateur** : nom utilisé pour se connecter à Adobe Analytics.
 
-   * **Mot de passe** : Mot de passe Adobe Analytics du compte ci-dessus.
+   * **Mot de passe**: Mot de passe Adobe Analytics du compte ci-dessus.
 
-   * **Centre** de données : Centre de données de votre compte Adobe Analytics.
+   * **Centre de données**: Centre de données de votre compte Adobe Analytics.
 
 1. Cliquez sur **Se connecter à Analytics**. Un message s’affiche pour stipuler que la connexion a réussi. Cliquez sur **OK**.
 
@@ -142,7 +142,7 @@ Un cadre Adobe Analytics est un ensemble de mappages entre les variables Adobe A
 
 1. Sur la console de services Cloud AEM, cliquez sur **Afficher les configurations**, sous Adobe Analytics.
 
-1. Cliquez sur le lien **[+]** en regard de votre configuration Analytics.
+1. Cliquez sur le bouton **[+]** lien en regard de votre configuration Analytics.
 
    ![Configuration d’Adobe Analytics](assets/adobe-analytics-cloud-services.png)
    **Figure :** *Configuration Adobe Analytics*
@@ -164,7 +164,7 @@ Un cadre Adobe Analytics est un ensemble de mappages entre les variables Adobe A
 
 ## Configuration du service de configuration d’AEM Forms Analytics {#configuring-aem-forms-analytics-configuration-service}
 
-1. Sur l’instance d’auteur, ouvrez AEM gestionnaire de configuration de la console web à l’adresse https://&quot;a0/>server *:* port */system/console/configMgr.*
+1. Sur l’instance d’auteur, ouvrez AEM gestionnaire de configuration de la console web à l’adresse https://&lt;*server*>:&lt;*port*>/system/console/configMgr.
 1. Recherche et ouverture de la configuration AEM Forms Analytics
 
    ![Service de configuration d’AEM Forms Analytics](assets/analytics_configuration.png)
@@ -185,14 +185,14 @@ Un cadre Adobe Analytics est un ensemble de mappages entre les variables Adobe A
 
 Désormais, vous pouvez activer les analyses pour les formulaires et générer un rapport d’analyse.
 
-## Activation des analyses pour un formulaire ou un document  {#enabling-analytics-for-a-form-or-document}
+## Activation des analyses pour un formulaire ou un document {#enabling-analytics-for-a-form-or-document}
 
-1. Connectez-vous à AEM portail à l’adresse `https://[hostname]:[port]`.
+1. Connectez-vous à AEM Portal à l’adresse `https://[hostname]:[port]`.
 1. Cliquez sur **Formulaires > Formulaires &amp; Documents**, sélectionnez un formulaire ou un document, puis cliquez sur **Activer les analyses**. Les analyses sont activées.
 
    ![Activation des analyses pour un formulaire ou un document](assets/enable-analytics-1.png)
    **Figure :** *Activation des analyses pour un formulaire*
 
-   **A.** Bouton Activer Analytics  **B.** Formulaire sélectionné
+   **A.** Bouton Activer Analytics **B.** Formulaire sélectionné
 
    Pour plus d’informations sur l’affichage des rapports d’analyse de formulaires, voir [Affichage et compréhension des rapports d’analyse AEM Forms](/help/forms/using/view-understand-aem-forms-analytics-reports.md)

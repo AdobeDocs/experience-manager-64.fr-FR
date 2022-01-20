@@ -1,8 +1,8 @@
 ---
-title: 'Utilisation de Sling Resource Merger dans AEM   '
-seo-title: 'Utilisation de Sling Resource Merger dans AEM   '
+title: Utilisation de Sling Resource Merger dans AEM
+seo-title: Using the Sling Resource Merger in AEM
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
-seo-description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
+seo-description: The Sling Resource Merger provides services to access and merge resources
 uuid: 0a28fdc9-caea-490b-8f07-7c4a6b802e09
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 4ddbdba8-073b-42ed-b4c9-d97d20b4739b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1254'
 ht-degree: 99%
 
 ---
 
-# Utilisation de Sling Resource Merger dans AEM   {#using-the-sling-resource-merger-in-aem}
+# Utilisation de Sling Resource Merger dans AEM{#using-the-sling-resource-merger-in-aem}
 
 ## Objectif {#purpose}
 
@@ -62,13 +62,11 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
-   >
-   >
-1. Apportez les modifications désirées dans `/apps`
+>1. Recréez l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
+>
+>1. Apportez les modifications désirées dans `/apps`
 
 >
-
 
 
 ### Propriétés {#properties}

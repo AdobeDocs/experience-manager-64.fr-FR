@@ -1,8 +1,8 @@
 ---
 title: SPA et rendu côté serveur
-seo-title: SPA et rendu côté serveur
+seo-title: SPA and Server-Side Rendering
 description: '"SPA et rendu côté serveur"'
-seo-description: 'null'
+seo-description: null
 uuid: fbf7d0d1-865d-45d2-aeec-a7e3caf3fcb2
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,15 +12,15 @@ discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 exl-id: 89e45231-885a-4d35-839b-2b50239503ad
 source-git-commit: cc31f2fa2f79154749776260f7621f6631e9db4a
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 62%
+source-wordcount: '1776'
+ht-degree: 67%
 
 ---
 
-# SPA et rendu côté serveur {#spa-and-server-side-rendering}
+# SPA et rendu côté serveur{#spa-and-server-side-rendering}
 
 >[!NOTE]
->La fonction Éditeur d’application sur une seule page (SPA) requiert [AEM Service Pack 2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html) ou une version plus récente.
+>La fonction Éditeur d’application sur une seule page (SPA) nécessite [AEM 6.4 Service Pack 2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html) ou plus récent.
 >
 >L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
@@ -49,7 +49,7 @@ Ce n’est que lorsqu’au moins une de ces deux questions reçoit une réponse 
 
 ## Adobe I/O Runtime {#adobe-io-runtime}
 
-Si vous êtes [certain que votre projet nécessite la mise en oeuvre du rendu côté serveur](#when-to-use-ssr), la solution recommandée par l’Adobe est d’utiliser Adobe I/O Runtime.
+Si vous êtes [confiant que votre projet nécessite la mise en oeuvre du rendu côté serveur](#when-to-use-ssr), la solution recommandée par Adobe est d’utiliser Adobe I/O Runtime.
 
 Pour plus d’informations sur Adobe I/O Runtime, voir
 
@@ -63,13 +63,13 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 
 >[!NOTE]
 >
->Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Cela permet d’obtenir des modèles de cycle de vie de développement de systèmes classiques avec différentes versions d’une seule application déployée dans différents environnements. Pour plus d’informations, consultez le document [CI/CD pour les applications Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) .
+>Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Il est ainsi possible d’obtenir des modèles de cycle de vie de développement de systèmes (SDLC) types, avec différentes versions d’une application unique, déployée dans différents environnements. Pour plus d’informations, consultez le document [CI/CD pour les applications Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
 >
->Un espace de travail distinct n’est pas nécessaire par instance (auteur, publication), sauf s’il existe des différences dans l’implémentation du runtime par type d’instance.
+>Un espace de travail distinct n’est pas nécessaire pour chaque instance (auteur, publication), sauf s’il existe des différences dans l’implémentation de l’environnement d’exécution (runtime) par type d’instance.
 
 ## Configuration du moteur de rendu de contenu distant {#remote-content-renderer-configuration}
 
-AEM doit savoir à quel emplacement le contenu rendu distant peut être récupéré. Quel que soit le [modèle que vous choisissiez d’implémenter pour SSR](#adobe-io-runtime), vous devrez indiquer pour AEM comment accéder à ce service de rendu distant.
+AEM doit savoir à quel emplacement le contenu rendu distant peut être récupéré. Indépendamment de [le modèle que vous choisissez de mettre en oeuvre pour le rendu côté serveur ;](#adobe-io-runtime), vous devez indiquer pour AEM comment accéder à ce service de rendu distant.
 
 Cela s’effectue via le **** service RemoteContentRenderer – Configuration d’usine OSGi. Recherchez la chaîne « RemoteContentRenderer » dans la console de configuration de la console web à `http://<host>:<port>/system/console/configMgr`.
 
@@ -86,17 +86,17 @@ Les champs suivants sont disponibles pour la configuration :
 
 >[!NOTE]
 >
->Que vous choisissiez de mettre en oeuvre le [flux de communication AEM](#aem-driven-communication-flow) ou le [flux piloté par Adobe I/O Runtime](#adobe-io-driven-communication-flow), vous devez définir une configuration de moteur de rendu de contenu distant.
+>Que vous choisissiez de mettre en oeuvre la variable [Flux de communication AEM](#aem-driven-communication-flow) ou le [Flux piloté par Adobe I/O Runtime](#adobe-io-driven-communication-flow), vous devez définir une configuration de moteur de rendu de contenu distant.
 >
->Cette configuration doit également être définie si vous choisissez [d’utiliser un serveur Node.js personnalisé](#using-node-js).
+>Cette configuration doit également être définie si vous choisissez de [utilisation d’un serveur Node.js personnalisé](#using-node-js).
 
 >[!NOTE]
 >
->Cette configuration exploite le moteur [Remote Content Renderer](#remote-content-renderer), qui dispose d’options d’extension et de personnalisation supplémentaires.
+>Cette configuration exploite les [Moteur de rendu de contenu distant](#remote-content-renderer), qui propose des options d’extension et de personnalisation supplémentaires.
 
 ## Flux de communication piloté par AEM {#aem-driven-communication-flow}
 
-Lors de l’utilisation du rendu côté serveur, le [processus d’interaction des composants](/help/sites-developing/spa-overview.md#workflow) de SPA dans AEM inclut une phase au cours de laquelle le contenu initial de l’application est généré par Adobe I/O Runtime.
+Lors de l’utilisation du rendu côté serveur, la variable [workflow d’interaction des composants](/help/sites-developing/spa-overview.md#workflow) de SPA dans AEM inclut une phase au cours de laquelle le contenu initial de l’application est généré par Adobe I/O Runtime.
 
 1. Le navigateur demande le contenu du rendu côté serveur à AEM.
 1. AEM publie le modèle dans Adobe I/O Runtime.
@@ -107,7 +107,7 @@ Lors de l’utilisation du rendu côté serveur, le [processus d’interaction d
 
 ### Flux de communication piloté par Adobe I/O Runtime {#adobe-io-driven-communication-flow}
 
-La section [Flux de communication piloté par l’AEM](#aem-driven-communication-flow) décrit l’implémentation standard et recommandée du rendu côté serveur en ce qui concerne SPA dans l’, où l’ effectue le démarrage et la diffusion du contenu.
+La section [Flux de communication piloté par AEM](#aem-driven-communication-flow) décrit l’implémentation standard et recommandée du rendu côté serveur en ce qui concerne les SPA dans AEM, où l’instance d’AEM effectue le démarrage et la diffusion du contenu.
 
 Une autre solution consiste à mettre en œuvre le rendu côté serveur de sorte qu’Adobe I/O Runtime soit responsable du démarrage, ce qui inverse le flux de communication.
 
@@ -115,8 +115,8 @@ Les deux modèles sont valides et pris en charge par AEM. Toutefois, il faut ten
 
 | Démarrage | Avantages | Inconvénients |
 |---|---|---|
-| Via AEM | AEM gère les bibliothèques d’injection lorsque cela est nécessaire<br>Les ressources ne doivent être conservées que sur AEM | Solution pouvant être peu connue des développeurs de SPA |
-| Via Adobe I/O Runtime | Solution mieux connue des développeurs SPA | Les ressources clientlib requises par l’application, telles que CSS et JavaScript, doivent être mises à disposition par le développeur de l’AEM via la [`allowProxy` propriété](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)<br>Les ressources doivent être synchronisées entre AEM et Adobe I/O Runtime<br>Pour permettre la création de la version de la base, un serveur proxy pour Adobe I/O Runtime peut être nécessaire. |
+| Via AEM | AEM gère les bibliothèques d’injection si nécessaire.<br>Les ressources ne doivent être conservées que sur AEM | Solution pouvant être peu connue des développeurs de SPA |
+| Via Adobe I/O Runtime | Solution mieux connue des développeurs SPA | Les ressources clientlib requises par l’application, telles que CSS et JavaScript, doivent être mises à disposition par le développeur AEM via le [`allowProxy` property](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)<br>Les ressources doivent être synchronisées entre AEM et Adobe I/O Runtime<br>Pour permettre la création de la SPA, un serveur proxy pour Adobe I/O Runtime peut être nécessaire. |
 
 ## Planification du rendu côté serveur {#planning-for-ssr}
 
@@ -139,10 +139,10 @@ Tout comme AEM prend en charge les frameworks SPA Angular et React clé en main,
 * React : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Angular : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
-Pour un exemple simpliste, reportez-vous à l’[application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Il effectue le rendu de l’ensemble du serveur d’applications. Bien qu’il ne s’agisse pas d’un exemple concret, il illustre ce qui est nécessaire à la mise en oeuvre du rendu côté serveur.
+Pour un exemple simpliste, reportez-vous au [Application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Il effectue le rendu de l’ensemble du serveur d’applications. Bien qu’il ne s’agisse pas d’un exemple concret, il illustre ce qui est nécessaire à la mise en oeuvre du rendu côté serveur.
 
 >[!CAUTION]
->[L’application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) est destinée uniquement à des fins de démonstration et utilise donc Node.js comme exemple simple au lieu de la version Adobe I/O Runtime recommandée. Cet exemple ne doit être utilisé pour aucun travail de projet.
+>Le [Application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) est à des fins de démonstration uniquement et utilise donc Node.js comme exemple simple au lieu du Adobe I/O Runtime recommandé. Cet exemple ne doit être utilisé pour aucun travail de projet.
 
 >[!NOTE]
 >Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html), qui prend en charge les projets SPA à l’aide de React ou d’Angular et tire parti du SDK SPA.
@@ -195,11 +195,11 @@ La configuration du gestionnaire par défaut doit être établie comme décrit d
 Pour qu’un servlet récupère et renvoie du contenu pouvant être injecté dans la page :
 
 1. Assurez-vous que votre serveur distant est accessible.
-1. Ajoutez l’un des fragments de code suivants au modèle HTML d’un composant AEM.
+1. Ajoutez l’un des fragments de code suivants au modèle HTL d’un composant AEM.
 1. Vous pouvez éventuellement créer ou modifier les configurations OSGi.
 1. Parcourir le contenu de votre site
 
-En général, le modèle HTML d’un composant de page est le principal destinataire d’une telle fonctionnalité.
+En général, le modèle HTL d’un composant de page est le principal destinataire d’une telle fonctionnalité.
 
 ```
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />

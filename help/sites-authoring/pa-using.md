@@ -1,8 +1,8 @@
 ---
 title: Affichage des données d’analyse de page
-seo-title: Affichage des données d’analyse de page
+seo-title: Seeing Page Analytics Data
 description: Utilisez les données d’analyse de page pour mesurer l’efficacité de leur contenu de page
-seo-description: Utilisez les données d’analyse de page pour mesurer l’efficacité de leur contenu de page
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 6509c0ce-fc3a-4248-8dc7-db10602c30d6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '441'
 ht-degree: 93%
 
 ---
@@ -75,17 +75,17 @@ Les membres du groupe d’utilisateurs administrateurs d’analyse peuvent confi
 
 ### Ouverture de Content Insights à partir de la console Sites {#opening-content-insights-from-sites}
 
-Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour en savoir plus sur l’efficacité des pages.
+Ouvrir [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour en savoir plus sur l’efficacité des pages.
 
 1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez voir Content Insight.
 1. Sur la barre d’outils, cliquez sur l’icône Analyses et recommandations.
 
    ![](do-not-localize/chlimage_1-16.png)
 
-## Les données d’analyse sont visibles dans l’éditeur de page (carte d’activité)  {#analytics-visible-from-the-page-editor-activity-map}
+## Les données d’analyse sont visibles dans l’éditeur de page (carte d’activité) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->Le [module ActivityMap fourni par Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) doit maintenant être utilisé.
+>Le [Module externe ActivityMap fourni par Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) doit maintenant être utilisé.

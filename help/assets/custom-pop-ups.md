@@ -1,8 +1,8 @@
 ---
 title: Création de fenêtres contextuelles personnalisées à l’aide d’aperçus rapides
-seo-title: Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées
+seo-title: Using Quickviews to create custom pop-ups
 description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles.
-seo-description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles.
+seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -14,7 +14,7 @@ feature: Configuration
 role: Admin,User,Developer
 source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1010'
 ht-degree: 97%
 
 ---

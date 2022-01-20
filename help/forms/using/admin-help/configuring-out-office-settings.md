@@ -1,8 +1,8 @@
 ---
 title: Configuration des paramètres d’absence du bureau
-seo-title: Configuration des paramètres d’absence du bureau
+seo-title: Configuring Out of Office Settings
 description: La fonction d’absence du bureau vous permet de spécifier les périodes pendant lesquelles un utilisateur est absent du bureau et n’est pas en mesure d’exécuter les tâches qui lui ont été affectées par AEM forms.
-seo-description: La fonction d’absence du bureau vous permet de spécifier les périodes pendant lesquelles un utilisateur est absent du bureau et n’est pas en mesure d’exécuter les tâches qui lui ont été affectées par AEM forms.
+seo-description: The Out of Office feature enables you to specify when a user will be out of the office and unable to complete tasks assigned by AEM forms.
 uuid: 0d01df0a-aa6a-40e5-bf24-423ed1c932cc
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
 exl-id: 8787ffa9-9ddc-439d-9934-8913d1ed459e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '659'
 ht-degree: 96%
 
 ---
@@ -38,14 +38,14 @@ Lors de la création d’un processus, l’utilisateur de Workbench peut spécif
 
 1. Cliquez sur le nom d’un utilisateur pour afficher ses informations d’absence du bureau au-dessous de la liste des utilisateurs.
 
-## Modification de l’état d’absence du bureau d’un utilisateur  {#change-a-user-s-out-of-office-status}
+## Modification de l’état d’absence du bureau d’un utilisateur {#change-a-user-s-out-of-office-status}
 
 1. Recherchez l’utilisateur, comme indiqué dans [Affichage des informations d’absence du bureau d’un utilisateur](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Cliquez sur le nom de l’utilisateur voulu.
 1. Dans la liste *Nom d’utilisateur* est actuellement, sélectionnez Au bureau ou Absence du bureau.
 1. Cliquez sur Enregistrer.
 
-## Ajout d’une plage de dates d’absence du bureau d’un utilisateur  {#add-an-out-of-office-date-range-for-a-user}
+## Ajout d’une plage de dates d’absence du bureau d’un utilisateur {#add-an-out-of-office-date-range-for-a-user}
 
 1. Recherchez l’utilisateur, comme indiqué dans [Affichage des informations d’absence du bureau d’un utilisateur](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Cliquez sur le nom de l’utilisateur voulu.
@@ -53,7 +53,7 @@ Lors de la création d’un processus, l’utilisateur de Workbench peut spécif
 1. Saisissez une heure de début et une heure de fin. Vous pouvez cliquer sur l’icône du calendrier pour sélectionner une date. Si vous ne spécifiez pas d’heure de fin, l’utilisateur est considéré comme étant indéfiniment absent du bureau.
 1. Cliquez sur Enregistrer.
 
-## Affectation d’un utilisateur aux tâches d’absence du bureau  {#assign-a-user-for-out-of-office-tasks}
+## Affectation d’un utilisateur aux tâches d’absence du bureau {#assign-a-user-for-out-of-office-tasks}
 
 Vous pouvez affecter l’exécution des tâches d’un utilisateur absent du bureau à un ou plusieurs autres utilisateurs. Vous pouvez définir les configurations suivantes :
 

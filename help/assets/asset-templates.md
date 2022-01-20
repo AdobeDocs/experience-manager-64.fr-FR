@@ -1,6 +1,6 @@
 ---
 title: Modèles de ressources
-description: Découvrez les modèles de ressources dans  [!DNL Experience Manager] Ressources et comment utiliser les modèles de ressources pour créer des documents marketing.
+description: En savoir plus sur les modèles de ressources dans [!DNL Experience Manager] Ressources et utilisation des modèles de ressources pour créer des documents marketing.
 uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -25,7 +25,7 @@ Parce qu’ils permettent de réaliser des modifications limitées tout en garan
 
 En tant que marketeur, vous pouvez stocker et gérer des modèles dans [!DNL Experience Manager] Ressources et utiliser un seul modèle de base pour créer facilement plusieurs expériences d’impression personnalisées. Vous pouvez créer différents types de documents marketing, par exemple, des brochures, des prospectus, des cartes postales, des cartes de visite, etc. pour transmettre de façon claire votre message marketing à vos clients. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Vous pouvez surtout diffuser des expériences à la fois numériques et papier simultanément en toute simplicité et offrir ainsi aux utilisateurs une expérience intégrée cohérente.
 
-Si les modèles de ressources sont pour la plupart des fichiers InDesign, il n’est pas nécessaire de maîtriser InDesign pour réaliser des documents de qualité. Vous n’avez pas besoin de mapper les champs de votre modèle InDesign avec vos champs produit comme cela est nécessaire lors de la création de catalogues. Vous pouvez éditer les modèles en mode WYSIWYG directement depuis l&#39;interface web. Cependant, pour que l’InDesign traite vos modifications, vous devez d’abord configurer [!DNL Experience Manager] Ressources à intégrer au serveur InDesign.
+Si les modèles de ressources sont pour la plupart des fichiers InDesign, il n’est pas nécessaire de maîtriser InDesign pour réaliser des documents de qualité. Vous n’avez pas besoin de mapper les champs de votre modèle InDesign avec vos champs produit comme cela est nécessaire lors de la création de catalogues. Vous pouvez éditer les modèles en mode WYSIWYG directement depuis l&#39;interface web. Toutefois, pour que l’InDesign traite vos modifications, vous devez d’abord configurer [!DNL Experience Manager] Ressources à intégrer au serveur InDesign.
 
 La possibilité de modifier les modèles InDesign depuis l’interface web contribue à une meilleure collaboration entre les équipes marketing et créatives tout en réduisant le délai de diffusion des actions de promotion locales.
 
@@ -51,7 +51,7 @@ Vous pouvez également télécharger ces différents formats sur votre système 
 
 Imaginons que vous voulez créer des contenus numériques papier, comme des brochures, des prospectus ou des publicités pour une future campagne, et les envoyer à des magasins dans le monde entier. Créer de tels documents à l’aide d’un modèle vous permet de proposer la même expérience client sur tous les canaux de diffusion. Les concepteurs peuvent créer les modèles de campagne (une ou plusieurs pages) à l’aide d’une solution créative, telle que l’InDesign et le chargement des modèles vers [!DNL Assets] pour vous. Avant de créer un document, vous devez avoir préalablement chargé un ou plusieurs modèles INDD et les mettre à disposition en Experience Manager.
 
-1. Cliquez sur le logo [!DNL Experience Manager], puis sur **[!UICONTROL Ressources]** dans la page de navigation.
+1. Cliquez sur le bouton [!DNL Experience Manager] logo, puis cliquez sur **[!UICONTROL Ressources]** sur la page Navigation .
 1. Dans les options, choisissez **[!UICONTROL Modèles]**.
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
@@ -97,17 +97,17 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    Vous pouvez utiliser l’éditeur de texte pour modifier le texte à afficher dans le champ de texte. Vous pouvez modifier la taille, le style, la couleur et le type de police au niveau de la balise.
 
-   À l’aide de l’outil de recherche de ressources, vous pouvez parcourir ou rechercher des images dans [!DNL Assets] et remplacer les images modifiables du modèle par les images de votre choix.
+   À l’aide de l’outil de recherche de ressources, vous pouvez parcourir ou rechercher des images dans [!DNL Assets] et remplacez les images modifiables dans le modèle par les images de votre choix.
 
    ![chlimage_1-314](assets/chlimage_1-314.png)
 
-   Les champs modifiables sont affichés à droite. Pour qu’un champ soit modifiable dans [!DNL Assets], le champ correspondant dans le modèle doit être balisé en InDesign. Plus exactement, il doit être indiqué comme étant modifiable dans InDesign.
+   Les champs modifiables sont affichés à droite. Pour qu’un champ soit modifiable dans [!DNL Assets], le champ correspondant dans le modèle doit être balisé dans InDesign. Plus exactement, il doit être indiqué comme étant modifiable dans InDesign.
 
    ![chlimage_1-315](assets/chlimage_1-315.png)
 
    >[!NOTE]
    >
-   >Assurez-vous que votre instance [!DNL Experience Manager] est intégrée à un serveur d’InDesign pour permettre à [!DNL Assets] d’extraire des données du modèle d’InDesign et de les rendre disponibles pour modification. Pour plus d’informations, voir [Intégration [!DNL Assets] à InDesign Server](indesign.md).
+   >Assurez-vous que la variable [!DNL Experience Manager] est intégrée à un serveur InDesign pour permettre [!DNL Assets] pour extraire les données du modèle d’InDesign et les rendre disponibles pour modification. Pour plus d’informations, voir [Intégration [!DNL Assets] avec InDesign Server](indesign.md).
 
 1. Pour modifier le texte d’un champ modifiable, cliquez/appuyez sur le champ de texte dans la liste des champs modifiables, puis modifiez le texte dans le champ.
 
@@ -119,7 +119,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-317](assets/chlimage_1-317.png)
 
-1. Pour permuter une image, cliquez/appuyez sur l’icône **[!UICONTROL Outil de recherche de ressources]**.
+1. Pour permuter une image, cliquez/appuyez sur le bouton **[!UICONTROL Outil de recherche de ressources]** icône .
 
    ![chlimage_1-318](assets/chlimage_1-318.png)
 
@@ -127,11 +127,11 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-319](assets/chlimage_1-319.png)
 
-   Vous pouvez également rechercher des images à l’aide de mots-clés, de balises ou selon leur état de publication. Vous pouvez parcourir le référentiel [!DNL Assets] et accéder à l’emplacement de l’image souhaitée.
+   Vous pouvez également rechercher des images à l’aide de mots-clés, de balises ou selon leur état de publication. Vous pouvez parcourir le [!DNL Assets] et accédez à l’emplacement de l’image souhaitée.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
-1. Cliquez/appuyez sur l’icône **[!UICONTROL Aperçu]** pour prévisualiser l’image.
+1. Cliquez/appuyez sur **[!UICONTROL Aperçu]** pour prévisualiser l’image.
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -143,26 +143,26 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    >[!NOTE]
    >
-   >Les icônes Aperçu et Terminé sont activées uniquement lorsqu’il ne manque aucune icône aux champs d’image modifiables dans le document. S’il manque des icônes dans votre document, c’est parce que [!DNL Experience Manager] ne peut pas résoudre les images dans le modèle d’InDesign. En règle générale, [!DNL Experience Manager] ne peut pas résoudre les images dans les cas suivants :
+   >Les icônes Aperçu et Terminé sont activées uniquement lorsqu’il ne manque aucune icône aux champs d’image modifiables dans le document. S’il manque des icônes dans votre document, c’est parce que [!DNL Experience Manager] ne parvient pas à résoudre les images dans le modèle d’InDesign. En général, [!DNL Experience Manager] ne peut pas résoudre les images dans les cas suivants :
    >
    >* Les images ne sont pas incorporées dans le modèle d’InDesign sous-jacent.
    >* Les images ne sont pas liées depuis le système de fichiers local.
 
    >
-   >Pour permettre à [!DNL Experience Manager] de résoudre les images, procédez comme suit :
+   >Pour activer [!DNL Experience Manager] pour résoudre des images, procédez comme suit :
    >
    >* Incorporez les images lorsque vous créez les modèles InDesign (reportez-vous à la section [À propos des liens et des objets graphiques incorporés](https://helpx.adobe.com/fr/indesign/using/graphics-links.html)).
-   >* Montez [!DNL Experience Manager] sur votre système de fichiers local, puis mappez les icônes manquantes avec les ressources [!DNL Experience Manager] existantes.
+   >* Mont [!DNL Experience Manager] à votre système de fichiers local, puis mappez les icônes manquantes avec les [!DNL Experience Manager] ressources.
 
    >
-   >Pour plus d’informations sur l’utilisation des documents InDesign, voir [Bonnes pratiques relatives à l’utilisation des documents InDesign dans  [!DNL Experience Manager]](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Pour plus d’informations sur l’utilisation des documents InDesign, voir [Bonnes pratiques relatives à l’utilisation de documents d’InDesign dans [!DNL Experience Manager]](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Pour générer un rendu PDF pour la brochure, sélectionnez l’option Acrobat dans la boîte de dialogue, puis cliquez sur **[!UICONTROL Continuer]**.
 1. Le document est créé dans le dossier où vous avez commencé. Pour afficher les rendus, ouvrez le document et choisissez **[!UICONTROL Rendus]** dans la liste de navigation globale.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
 
-1. Cliquez/appuyez sur le rendu PDF dans la liste des rendus pour télécharger le fichier PDF. Ouvrez le fichier PDF pour réviser le document.
+1. Cliquez/appuyez sur le rendu du PDF dans la liste des rendus pour télécharger le fichier du PDF. Ouvrez le fichier PDF pour réviser le document.
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
@@ -171,7 +171,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
 1. Cliquez ou appuyez sur **[!UICONTROL Outils > Ressources]**.
 1. Dans les options, choisissez **[!UICONTROL Modèles]**.
-1. Cliquez/appuyez sur **[!UICONTROL Créer]** et choisissez **[!UICONTROL Fusionner]** dans le menu.
+1. Cliquez/appuyez sur **[!UICONTROL Créer]** et choisissez **[!UICONTROL Fusion]** dans le menu.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
@@ -187,7 +187,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-328](assets/chlimage_1-328.png)
 
-   Vous pouvez parcourir le référentiel [!DNL Assets] ou les collections, accéder à l’emplacement des modèles souhaités, puis les sélectionner pour la fusion.
+   Vous pouvez parcourir le [!DNL Assets] référentiel ou collections, puis accédez à l’emplacement des modèles souhaités et sélectionnez-les pour la fusion.
 
    ![chlimage_1-329](assets/chlimage_1-329.png)
 
@@ -196,7 +196,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
    ![chlimage_1-330](assets/chlimage_1-330.png)
 
 1. Cliquez ou appuyez sur **[!UICONTROL Suivant]** dans la barre d’outils.
-1. Dans l’écran **[!UICONTROL Aperçu et réorganisation]**, réorganisez les modèles si nécessaire et prévisualisez la sélection de modèles à fusionner. Cliquez/appuyez ensuite sur **[!UICONTROL Suivant]** dans la barre d’outils.
+1. Dans le **[!UICONTROL Aperçu et réorganisation]** réorganisez les modèles si nécessaire et prévisualisez la sélection des modèles à fusionner. Cliquez/appuyez ensuite sur **[!UICONTROL Suivant]** dans la barre d’outils.
 
    ![chlimage_1-331](assets/chlimage_1-331.png)
 

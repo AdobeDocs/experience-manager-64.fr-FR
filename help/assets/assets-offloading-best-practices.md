@@ -1,6 +1,6 @@
 ---
 title: Bonnes pratiques de déchargement dans Assets
-description: Cas d’utilisation recommandés et bonnes pratiques pour le déchargement des workflows d’assimilation et de réplication de ressources dans  [!DNL Experience Manager] Assets.
+description: Cas d’utilisation recommandés et bonnes pratiques pour le déchargement des workflows d’assimilation et de réplication de ressources dans [!DNL Experience Manager] Ressources.
 contentOwner: AG
 feature: Asset Management
 role: User,Admin
@@ -16,7 +16,7 @@ ht-degree: 76%
 
 >[!WARNING]
 >
->Cette fonctionnalité est obsolète à partir de la version [!DNL Experience Manager] 6.4 et est supprimée de la version [!DNL Experience Manager] 6.5. Planifiez en conséquence.
+>Cette fonctionnalité est obsolète. [!DNL Experience Manager] À compter de la version 6.4, et est supprimé dans [!DNL Experience Manager] 6.5. Planifiez en conséquence.
 
 La gestion de fichiers volumineux et l’exécution de workflows dans Adobe Experience Manager Assets peuvent consommer une quantité considérable de ressources d’unité centrale, de mémoire et d’E/S. En particulier, la taille des ressources, les workflows, le nombre d’utilisateurs et la fréquence d’assimilation des ressources peuvent affecter les performances globales du système. Les opérations les plus gourmandes en ressources comprennent l’ingestion de ressources et les workflows de réplication. L’utilisation intensive de ces workflows sur une seule instance de création  peut avoir un impact négatif sur l’efficacité de la création.
 
@@ -46,11 +46,11 @@ Le structure de déchargement identifie les tâches de déchargement des workflo
 
 ### Consommateur de tâche du déchargement des workflows {#workflow-offloading-job-consumer}
 
-Une fois qu’une tâche est écrite sur le programme de travail, le gestionnaire de tâches appelle le consommateur de tâche responsable de la rubrique *com/adobe/granite/workflow/offloading* . Le consommateur de tâche exécute alors le workflow Ressources de mise à jour de gestion des actifs numériques sur la ressource.
+Une fois qu’une tâche est écrite sur le programme de travail, le gestionnaire de tâches appelle le consommateur de tâche responsable de la *com/adobe/granite/workflow/offloading* rubrique. Le consommateur de tâche exécute alors le workflow Ressources de mise à jour de gestion des actifs numériques sur la ressource.
 
 ## Topologie Sling {#sling-topology}
 
-La topologie Sling regroupe les instances [!DNL Experience Manager] et leur permet de se connaître les unes les autres, indépendamment de la persistance sous-jacente. Cette caractéristique de la topologie Sling permet de créer des topologies pour des scénarios sans cluster, en cluster et mixtes. Une instance peut présenter des propriétés à l’ensemble de la topologie. La structure fournit des rappels permettant d’écouter les modifications de la topologie (instances et propriétés). La topologie Sling fournit la base des tâches distribuées Sling.
+Groupes de topologie Sling [!DNL Experience Manager] et leur permet de se connaître les uns les autres, indépendamment de la persistance sous-jacente. Cette caractéristique de la topologie Sling permet de créer des topologies pour des scénarios sans cluster, en cluster et mixtes. Une instance peut présenter des propriétés à l’ensemble de la topologie. La structure fournit des rappels permettant d’écouter les modifications de la topologie (instances et propriétés). La topologie Sling fournit la base des tâches distribuées Sling.
 
 ### Tâches distribuées Sling {#sling-distributed-jobs}
 
@@ -89,7 +89,7 @@ Si vous estimez que le déchargement des ressources est une approche adaptée à
 
 ### Déploiement recommandé du déchargement des ressources {#recommended-assets-offloading-deployment}
 
-Avec [!DNL Experience Manager] et Oak, plusieurs scénarios de déploiement sont possibles. Pour le déchargement des ressources, un déploiement basé sur TarMK avec une banque de données partagée est recommandé. Le diagramme ci-dessous décrit le déploiement recommandé :
+Avec [!DNL Experience Manager] et Oak, il existe plusieurs scénarios de déploiement possibles. Pour le déchargement des ressources, un déploiement basé sur TarMK avec une banque de données partagée est recommandé. Le diagramme ci-dessous décrit le déploiement recommandé :
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -99,7 +99,7 @@ Pour plus d’informations sur la configuration d’une banque de données, voir
 
 Adobe recommande de désactiver la gestion automatique des agents car elle ne prend pas en charge la réplication sans fichier binaire et peut entraîner une confusion lors de la configuration d’une nouvelle topologie de déchargement. De plus, il ne prend pas automatiquement en charge le flux de réplication vers l’avant requis par la réplication sans fichier binaire.
 
-1. Ouvrez Configuration Manager à partir de l’URL `http://localhost:4502/system/console/configMgr`.
+1. Ouvrez Configuration Manager à partir de l’URL. `http://localhost:4502/system/console/configMgr`.
 1. Ouvrez la configuration pour `OffloadingAgentManager` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`).
 1. Désactivez la gestion automatique des agents.
 
@@ -107,10 +107,10 @@ Adobe recommande de désactiver la gestion automatique des agents car elle ne pr
 
 Par défaut, le transport du déchargement utilise la réplication inverse pour transférer les ressources déchargées du programme de travail vers l’instance principale. Les agents de réplication inverse ne prennent pas en charge la réplication sans fichier binaire. Vous devez configurer le déchargement afin d’utiliser la réplication de transfert pour transférer les ressources déchargées du programme de travail vers l’instance principale.
 
-1. Si vous migrez à partir de la configuration par défaut à l’aide de la réplication inverse, désactivez ou supprimez tous les agents nommés &quot;`offloading_outbox`&quot; et &quot;`offloading_reverse_*`&quot; sur Principal et worker, où &amp;ast; représente l’identifiant Sling de l’instance cible.
+1. Si vous migrez à partir de la configuration par défaut à l’aide de la réplication inverse, désactivez ou supprimez tous les agents nommés &quot; `offloading_outbox`&quot; et &quot; `offloading_reverse_*`&quot; sur Principal et worker, où &amp;ast; représente l’identifiant Sling de l’instance cible.
 1. Sur chaque programme de travail, créez un agent de réplication de transfert pointant vers l’instance principale. La procédure est la même que la création d’agents de transfert de Principal à worker. Voir [Création d’agents de réplication pour le déchargement](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) pour obtenir des instructions sur la configuration des agents de réplication de déchargement.
-1. Ouvrez la configuration pour `OffloadingDefaultTransporter` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
-1. Remplacez la valeur de la propriété `default.transport.agent-to-master.prefix` de `offloading_reverse` par `offloading`.
+1. Ouvrir la configuration pour `OffloadingDefaultTransporter`  (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
+1. Modification de la valeur de la propriété `default.transport.agent-to-master.prefix` de `offloading_reverse` to `offloading`.
 
 <!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
 TBD: Update the property in the last step when GRANITE-30586 is fixed.
@@ -124,18 +124,18 @@ L’utilisation de la réplication sans fichier binaire est recommandée pour r�
 
 Par défaut, le déchargement crée un module de contenu comportant la tâche de déchargement et la charge utile de la tâche (la ressource d’origine) et transporte ce module de déchargement unique à l’aide d’une seule demande de réplication. La création de ces modules de déchargement est contre-productive lors de l’utilisation de la réplication sans fichier binaire, car les fichiers binaires sont à nouveau sérialisés dans le module lors de la création de ce dernier. L’utilisation de ces modules de transport peut être désactivée, ce qui entraîne le transport de la tâche de déchargement et de la charge utile dans plusieurs demandes de réplication, une pour chaque entrée de charge utile. De cette façon, vous pouvez bénéficier de la réplication sans fichier binaire.
 
-1. Ouvrez la configuration du composant *OffloadingDefaultTransporter* à l’adresse [http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)
-1. Désactivez la propriété *Package de réplication (default.transport.contentpackage)*.
+1. Ouvrez la configuration du composant de *OffloadingDefaultTransporter* component at [http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)
+1. Désactivation de la propriété *Package de réplication (default.transport.contentpackage)*.
 
 ### Désactivation du transport du modèle de workflow {#disabling-the-transport-of-workflow-model}
 
-Par défaut, le workflow de déchargement *Déchargement des ressources de mise à jour de gestion des actifs numériques* ajoute le modèle de workflow pour appeler le programme de travail sur la charge utile de la tâche. Comme ce workflow suit le modèle par défaut *Ressource de mise à jour de gestion des actifs numériques*, cette charge utile supplémentaire peut être supprimée.
+Par défaut, la variable *Déchargement des ressources de mise à jour de gestion des actifs numériques* le workflow de déchargement ajoute le modèle de workflow pour appeler le programme de travail à la charge utile de la tâche. Parce que ce workflow suit le modèle d&#39;usine *Ressources de mise à jour de gestion des actifs numériques* par défaut, cette payload supplémentaire peut être supprimée.
 
 Si le modèle de workflow est désactivé à partir de la charge utile de la tâche, assurez-vous de distribuer les modifications au modèle de workflow référencé à l’aide d’autres outils, tels que le gestionnaire de modules.
 
 Pour désactiver le transport du modèle de workflow, modifiez le workflow Déchargement des ressources de mise à jour de gestion des actifs numériques.
 
-1. Ouvrez la console de workflow à partir de [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
+1. Ouvrez la console de processus à partir de [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 1. Ouvrez l’onglet Modèles.
 1. Ouvrez le modèle de workflow Déchargement des ressources de mise à jour de gestion des actifs numériques .
 1. Ouvrez les propriétés de l’étape Déchargement du workflow de gestion des actifs numériques .
@@ -146,7 +146,7 @@ Pour désactiver le transport du modèle de workflow, modifiez le workflow Déch
 
 Le déchargement des workflows est mis en oeuvre à l’aide d’un workflow externe sur la Principale, qui interroge la fin du workflow déchargé sur le programme de travail. La fréquence d’interrogation par défaut pour les workflows externes est de cinq secondes. Adobe recommande d’augmenter la fréquence d’interrogation de l’étape de déchargement des ressources à au moins 15 secondes afin de réduire la surcharge de déchargement sur l’instance principale.
 
-1. Ouvrez la console de workflow à partir de [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
+1. Ouvrez la console de processus à partir de [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
 1. Ouvrez l’onglet Modèles.
 1. Ouvrez le modèle de workflow Déchargement des ressources de mise à jour de gestion des actifs numériques .

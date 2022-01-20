@@ -1,8 +1,8 @@
 ---
 title: Création d’une page d’entrée efficace pour une newsletter
-seo-title: Création d’une page d’entrée efficace pour une newsletter
+seo-title: Creating an Effective Newsletter Landing Page
 description: Une page d’entrée efficace pour newsletter vous permet d’inciter autant de personnes que possible à s’abonner à votre newsletter (ou à toute autre campagne de marketing par messagerie électronique). Vous pouvez utiliser les informations que vous collectez via les abonnements à votre newsletter pour obtenir des pistes.
-seo-description: Une page d’entrée efficace pour newsletter vous permet d’inciter autant de personnes que possible à s’abonner à votre newsletter (ou à toute autre campagne de marketing par messagerie électronique). Vous pouvez utiliser les informations que vous collectez via les abonnements à votre newsletter pour obtenir des pistes.
+seo-description: An effective newsletter landing page helps you get as many people as possible to sign up for your newsletter (or other email marketing campaign). You can use the information you gather from your newsletter sign ups to get leads.
 uuid: 810f3d1c-6648-4342-9fbc-0701765311a1
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
 exl-id: 1ab81235-2627-4304-bbf2-71598de948db
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '613'
 ht-degree: 93%
 
 ---
@@ -31,7 +31,7 @@ Pour créer une page d’entrée efficace pour votre newsletter, vous devez proc
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’améliorer davantage cette fonctionnalité (Gestion des pistes et des listes).\
->Il est recommandé d’utiliser [Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
+>Il est recommandé d’utiliser la variable [Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
 
 ## Création d’une liste pour la newsletter {#creating-a-list-for-the-newsletter}
 

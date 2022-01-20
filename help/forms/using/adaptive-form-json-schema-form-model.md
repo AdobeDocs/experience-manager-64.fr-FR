@@ -1,17 +1,17 @@
 ---
 title: Création de formulaires adaptatifs à l’aide d’un schéma JSON
-seo-title: Création de formulaires adaptatifs à l’aide d’un schéma JSON
+seo-title: Creating adaptive forms using JSON Schema
 description: 'Les formulaires adaptatifs peuvent utiliser un schéma JSON en tant que modèle de formulaire, ce qui vous permet d’exploiter les modèles JSON existants pour créer des formulaires adaptatifs. '
-seo-description: 'Les formulaires adaptatifs peuvent utiliser un schéma JSON en tant que modèle de formulaire, ce qui vous permet d’exploiter les modèles JSON existants pour créer des formulaires adaptatifs. '
+seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
 uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1207'
 ht-degree: 83%
 
 ---
@@ -102,7 +102,7 @@ Le formulaire adaptatif utilise les informations disponibles dans le schéma JSO
 * La propriété readOnly définit l’attribut readonly d’un composant de formulaire adaptatif.
 * La propriété requise marque le champ de formulaire adaptatif comme étant obligatoire, tandis que dans le cas du panneau (où le type est objet), les données JSON finales envoyées ont des champs avec une valeur vide correspondant à cet objet.
 * La propriété pattern est définie comme modèle de validation (expression régulière) dans le formulaire adaptatif.
-* L’extension du fichier de schéma JSON doit être conservée dans .schema.json. Par exemple, &lt;nom_fichier>.schéma.json.
+* L’extension du fichier de schéma JSON doit être conservée dans .schema.json. Par exemple, &lt;nom_fichier>.schema.json.
 
 ## Exemple de schéma JSON {#sample-json-schema}
 
@@ -319,7 +319,7 @@ L’exemple ci-dessus définit un enregistrement de client dans lequel chaque cl
 
 ## Préconfiguration des champs dans la définition du schéma JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le champ de schéma JSON afin de le mapper à un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
+Vous pouvez utiliser la variable **aem:afProperties** pour préconfigurer le champ de schéma JSON afin de le mapper à un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
 
 ```
 {
@@ -339,7 +339,7 @@ Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le 
 }
 ```
 
-## Valeurs possibles de limite pour un composant de formulaire adaptatif  {#limit-acceptable-values-for-an-adaptive-form-component}
+## Valeurs possibles de limite pour un composant de formulaire adaptatif {#limit-acceptable-values-for-an-adaptive-form-component}
 
 Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON pour limiter les valeurs acceptables pour un composant de formulaire adaptatif :
 
@@ -446,7 +446,7 @@ Les formulaires adaptatifs ne prennent pas en charge les éléments suivants de 
 * OneOf, AnyOf, AllOf, et NOT
 * Seuls les tableaux homogènes sont pris en charge. Par conséquent, la contrainte d’éléments doit être un objet et ne doit pas être un tableau.
 
-## Forum aux questions {#frequently-asked-questions}
+## Questions fréquemment posées {#frequently-asked-questions}
 
 **Pourquoi est-ce que je ne parviens pas à faire glisser des éléments individuels d’un sous-formulaire (structure générée à partir de n’importe quel type complexe) pour les sous-formulaires répétables (les valeurs minOccurs ou maxOccurs sont supérieures à 1) ?**
 

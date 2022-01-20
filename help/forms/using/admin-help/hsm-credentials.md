@@ -1,8 +1,8 @@
 ---
 title: Gestion des informations d’identification HSM
-seo-title: Gestion des informations d’identification HSM
+seo-title: Managing HSM credentials
 description: Découvrez comment gérer vos informations d’identification HSM.
-seo-description: Découvrez comment gérer vos informations d’identification HSM.
+seo-description: Learn how to manage HSM credentials.
 uuid: 30ddcd4a-f771-44d5-bdef-4826adcd0c44
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
 exl-id: f38057d7-b500-448a-8664-a45374d4cfea
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1304'
 ht-degree: 99%
 
 ---
@@ -44,7 +44,7 @@ AEM Forms Digital Signatures peut utiliser les informations d’identification s
 1. Dans la zone Numéro PIN du jeton, saisissez le mot de passe requis pour accéder à la clé HSM, puis cliquez sur Suivant.
 1. Dans la zone Informations d’identification, sélectionnez des informations d’identification. Cliquez sur Enregistrer.
 
-## Création d’un alias pour des informations d’identification HSM lorsque le périphérique HSM est hors ligne  {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-offline}
+## Création d’un alias pour des informations d’identification HSM lorsque le périphérique HSM est hors ligne {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-offline}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification HSM, puis sur Ajouter.
 1. Dans la zone Nom du profil, saisissez une chaîne utilisée pour identifier l’alias. Cette valeur est utilisée en tant que propriété pour certaines opérations de Digital Signatures, comme l’opération de saisie du champ de signature.
@@ -67,39 +67,39 @@ AEM Forms Digital Signatures peut utiliser les informations d’identification s
 
 1. Dans la zone Mot de passe, saisissez le mot de passe requis pour accéder à la clé HSM correspondant aux informations d’emplacement données, puis cliquez sur Enregistrer.
 
-## Affichage des propriétés d’alias d’informations d’identification HSM  {#view-hsm-credential-alias-properties}
+## Affichage des propriétés d’alias d’informations d’identification HSM {#view-hsm-credential-alias-properties}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion de Trust Store > Informations d’identification HSM.
 1. Cliquez sur le nom d’alias des informations d’identification pour en afficher les propriétés, puis cliquez sur OK.
 
-## Vérification de l’état des informations d’identification HSM  {#check-the-status-of-an-hsm-credential}
+## Vérification de l’état des informations d’identification HSM {#check-the-status-of-an-hsm-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion de Trust Store > Informations d’identification HSM.
 1. Sélectionnez la case à cocher située en regard des informations d’identification à vérifier, puis cliquez sur Vérifier l’état.
 
 La colonne Etat indique l’état actuel des informations d’identification. En cas d’échec, une croix (X) rouge s’affiche dans cette colonne. Placez votre souris sur le X afin d’afficher une info-bulle expliquant la raison de l’échec.
 
-## Mise à jour des propriétés d’alias d’informations d’identification HSM  {#update-hsm-credential-alias-properties}
+## Mise à jour des propriétés d’alias d’informations d’identification HSM {#update-hsm-credential-alias-properties}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion de Trust Store > Informations d’identification HSM.
 1. Cliquez sur le nom de l’alias des informations d’identification.
 1. Cliquez sur Mettre à jour les informations d’identification, puis mettez à jour les paramètres si nécessaire.
 
-## Réinitialisation de toutes les connexions HSM  {#reset-all-hsm-connections}
+## Réinitialisation de toutes les connexions HSM {#reset-all-hsm-connections}
 
 Réinitialisez les connexions ouvertes à un périphérique HSM après toute interruption de la session réseau entre le serveur Forms et le périphérique HSM. Par exemple, des interruptions peuvent survenir à la suite d’une panne de réseau ou lorsque le périphérique HSM est mis hors ligne pendant une mise à jour de logiciel. Après une interruption, les connexions existantes sont caduques et toutes les demandes de signature relatives à ces connexions échouent. L’option Réinitialiser toutes les connexions HSM permet d’effacer les anciennes connexions.
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion de Trust Store > Informations d’identification HSM.
 1. Cliquez sur Réinitialiser toutes les connexions HSM.
 
-## Suppression d’un alias d’informations d’identification HSM  {#delete-an-hsm-credential-alias}
+## Suppression d’un alias d’informations d’identification HSM {#delete-an-hsm-credential-alias}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion de Trust Store > Informations d’identification HSM.
 1. Cochez les cases correspondant aux informations d’identification HSM à supprimer, cliquez sur Supprimer, puis sur OK.
 
-## Configuration de la prise en charge HSM à distance  {#configure-remote-hsm-support}
+## Configuration de la prise en charge HSM à distance {#configure-remote-hsm-support}
 
-AEM Forms utilise un mécanisme IPC/RPC basé sur les services Web. Ce mécanisme permet à AEM Forms d’utiliser un HSM installé sur un ordinateur distant. Pour utiliser cette fonctionnalité, installez le service Web sur l’ordinateur distant où HSM est installé. Pour plus d’informations, consultez [Configuration de la prise en charge HSM pour AEM Forms ES à l’aide du JDK Sun sur une plateforme Windows 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html).
+AEM forms utilise un mécanisme IPC/RPC basé sur les services Web. Ce mécanisme permet à AEM Forms d’utiliser un HSM installé sur un ordinateur distant. Pour utiliser cette fonctionnalité, installez le service Web sur l’ordinateur distant où HSM est installé. Pour plus d’informations, consultez [Configuration de la prise en charge HSM pour AEM Forms ES à l’aide du JDK Sun sur une plateforme Windows 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html).
 
 Ce mécanisme ne prend pas en charge la création en ligne de profils HSM ou les vérifications d’état. Toutefois, il existe deux façons de créer des profils HSM et d’effectuer des vérifications d’état :
 

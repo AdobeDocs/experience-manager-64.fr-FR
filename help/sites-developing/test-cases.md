@@ -1,8 +1,8 @@
 ---
 title: Définition de cas de test
-seo-title: Définition de cas de test
+seo-title: Defining your Test Cases
 description: Vos cas de test doivent être basés sur des cas d’utilisation et le cahier des charges détaillé
-seo-description: Vos cas de test doivent être basés sur des cas d’utilisation et le cahier des charges détaillé
+seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
 uuid: 82dff825-da58-49a2-bf35-f5bb905e523d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
 exl-id: ad529be3-9d31-492f-943f-ef3e99e13586
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 77%
+source-wordcount: '529'
+ht-degree: 76%
 
 ---
 
@@ -54,12 +54,11 @@ Lors du test AEM certains détails spécifiques présentent un intérêt particu
 
 Environnements de création et de publication
 
-Bien qu’il soit décrit dans la section [Environnements](/help/sites-developing/the-basics.md#environments), il convient de souligner un facteur décisif d’AEM en ce qui concerne les tests.
+Bien que couvert par [Environnements](/help/sites-developing/the-basics.md#environments) il convient de souligner un facteur décisif d&#39;AEM en ce qui concerne les tests.
 
 Vous devez considérer AEM comme deux applications :
 
-* l&#39;environnement **Auteur**
-Cette instance permet aux auteurs de saisir et de publier du contenu.
+* la valeur **Auteur** environnement Cette instance permet aux auteurs de saisir et de publier du contenu.
 Elle comporte un plus petit nombre prévisible d’utilisateurs, pour qui des fonctionnalités et des performances spécifiques sont indispensables.
 * l’environnement de **publication**
 Cette instance affiche le site web sous sa forme publiée pour que les visiteurs puissent y accéder.
@@ -88,12 +87,12 @@ La plupart des projets installent le dispatcher pour la mise en cache et l’éq
 Les tests sont difficiles (la mise en cache se fait à différents niveaux et à divers endroits) et doivent être réalisés en boîte noire. Les aspects clés à tester sont les suivants :
 
 * **Précision**; s’assurer que les mises à jour du contenu sont visibles par le visiteur du site web.
-* **la continuité**; vérifiez que le site web est toujours disponible lorsqu’un serveur est arrêté.
-* **** ClustersClusters est utilisé pour fournir :
-   * ****
-Basculement : si un serveur échoue, les autres serveurs de la grappe prennent le relais.
-   * ****
-L’équilibrage PerformanceLoad avec basculement complet améliore les performances d’une grappe.
+* **Continuité**; vérifiez que le site web est toujours disponible lorsqu’un serveur est arrêté.
+* **Clusters** Les clusters sont utilisés pour fournir :
+   * **Basculement**
+Si un serveur échoue, les autres serveurs de la grappe prennent le relais.
+   * **Performances**
+L’équilibrage de charge avec basculement complet améliore les performances d’une grappe.
 
 Lorsqu’il est utilisé pour un projet client, le cluster doit être testé pour confirmer le bon fonctionnement de la configuration.
 

@@ -1,8 +1,8 @@
 ---
 title: Utilisation des versions de page
-seo-title: Utilisation des versions de page
+seo-title: Working with Page Versions
 description: Création, comparaison et restauration des versions d’une page
-seo-description: Création, comparaison et restauration des versions d’une page
+seo-description: Create, compare, and restore versions of a page
 uuid: b0328431-c2cf-48f4-b358-261238338241
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: fa331c03-5587-452d-ab96-ac2926ae0da3
 exl-id: 2df7c08f-db17-4666-ba39-e81cc2e656d7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1075'
 ht-degree: 96%
 
 ---
@@ -82,7 +82,6 @@ Une fois une version créée, vous pouvez y revenir si nécessaire.
 >
 
 
-
 Pour restaurer une ancienne version, procédez comme suit :
 
 1. Naviguez pour afficher la page pour laquelle restaurer une ancienne version.
@@ -94,7 +93,7 @@ Pour restaurer une ancienne version, procédez comme suit :
 
 1. Sélectionnez **Revenir à cette version**. La version sélectionnée est restaurée et les informations dans la frise chronologique sont mises à jour.
 
-## Aperçu d’une version    {#previewing-a-version}
+## Aperçu d’une version   {#previewing-a-version}
 
 Vous pouvez prévisualiser une version spécifique :
 

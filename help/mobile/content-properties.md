@@ -1,8 +1,8 @@
 ---
 title: Propriétés et noeuds de contenu
-seo-title: Propriétés et noeuds de contenu
+seo-title: Content Properties and Nodes
 description: 'Consultez cette page pour en savoir plus sur les propriétés de contenu et les noeuds.  '
-seo-description: 'Consultez cette page pour en savoir plus sur les propriétés de contenu et les noeuds.  '
+seo-description: Follow this page to learn about content properties and nodes.
 uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
 contentOwner: User
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 exl-id: 85a367fe-a124-42af-ae3e-fe4d10425ea1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 25%
+source-wordcount: '355'
+ht-degree: 26%
 
 ---
 
@@ -36,8 +36,8 @@ Les tableaux suivants décrivent les propriétés et les noeuds du contenu.
 | dps-id | Chaîne |  | affectée par AEM Mobile et stockée par AEM une fois chargée dans AEM Mobile ou importée depuis AEM Mobile |
 | dps-resourceType | Chaîne | dps:Article | dps:Bannière | dps:Collection | propriété de type d’entité |
 | dps-version | Chaîne |  | version de l’entité AEM Mobile (également contenue dans aemm-id complet) |
-| dps-lastSynced | Date |  | date de la dernière synchronisation/importation d’AEM Mobile dans AEM |
-| dps-lastUploaded | Date |  | date du dernier téléchargement d’AEM vers AEM Mobile |
+| dps-lastSynced | Date  |  | date de la dernière synchronisation/importation d’AEM Mobile dans AEM |
+| dps-lastUploaded | Date  |  | date du dernier téléchargement d’AEM vers AEM Mobile |
 | dps-lastUploadedBy | Chaîne : userid |  | ID de l’utilisateur qui a effectué la dernière requête de chargement d’AEM vers AEM Mobile |
 
 ## Propriétés des métadonnées principales {#core-metadata-properties}

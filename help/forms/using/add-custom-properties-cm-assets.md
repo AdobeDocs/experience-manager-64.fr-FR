@@ -1,18 +1,18 @@
 ---
 title: Ajout de propriétés personnalisées aux actifs Correspondence Management
-seo-title: Ajout de propriétés personnalisées aux actifs Correspondence Management
+seo-title: Add custom properties to Correspondence Management assets
 description: Découvrez comment ajouter des propriétés personnalisées aux actifs Correspondence Management
-seo-description: Découvrez comment ajouter des propriétés personnalisées aux actifs Correspondence Management
+seo-description: Learn how to add custom properties to Correspondence Management assets.
 uuid: 64b3f92b-6144-4633-b61d-b1a33e263148
 content-type: reference
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 601108d8-f432-4a6b-9ec9-831cf054e52f
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: d58c2468-3e77-41a0-a2ba-c19912c77f73
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '4462'
+source-wordcount: '4443'
 ht-degree: 68%
 
 ---
@@ -48,7 +48,7 @@ procédez comme suit pour ajouter une propriété personnalisée à tous les typ
 1. Accédez à `https://[server]:[port]/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 1. Dans le dossier d’applications, créez un dossier nommé css avec un chemin/une structure semblables au dossier css (situé dans le dossier ccrui) en procédant comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+   1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
@@ -56,7 +56,7 @@ procédez comme suit pour ajouter une propriété personnalisée à tous les typ
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items
+      **Chemin :** /libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items
 
       **Emplacement :** /apps/
 
@@ -104,19 +104,19 @@ procédez comme suit pour ajouter une propriété personnalisée à tous les typ
 
    >[!NOTE]
    >
-   >Les propriétés communes à toutes les ressources que vous ajoutez s’affichent dans l’onglet de base des propriétés des ressources. Par défaut, les propriétés communes ajoutées à toutes les ressources sont répertoriés sur la page de propriétés ainsi que sur la page de création de ressources. Pour masquer les propriétés communes, vous devez disposer de la commande `[link to show / hide properties]`.
+   >Les propriétés communes à toutes les ressources que vous ajoutez s’affichent dans l’onglet de base des propriétés des ressources. Par défaut, les propriétés communes ajoutées à toutes les ressources sont répertoriés sur la page de propriétés ainsi que sur la page de création de ressources. Pour masquer les propriétés communes, vous devez `[link to show / hide properties]`.
 
-### Scénario : ajout d’une liste déroulante et de valeurs personnalisées à une propriété/un champ personnalisé(e){#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
+### Scénario : ajout d’une liste déroulante et de valeurs personnalisées à une propriété/un champ personnalisé(e) {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 
 Ce scénario vous indique comment ajouter une propriété personnalisée à tous les types de ressources et y ajouter des valeurs de liste déroulante.
 
-1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement**:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
 1. Sous le noeud de recouvrement nouvellement créé (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items)
 
-   Créez un noeud pour chacune des propriétés (champs) pour lesquelles vous devez créer une liste déroulante (ici `geographicallocation`) de type nt:unstructured.
+   Créez un noeud pour chacune des propriétés (champs) pour lesquelles vous devez créer une liste déroulante (ici `geographicallocation`) du type nt:unstructured.
 
 1. Ajoutez les propriétés suivantes au nœud (ici geographicallocation) et cliquez sur **Enregistrer tout** :
 
@@ -127,11 +127,11 @@ Ce scénario vous indique comment ajouter une propriété personnalisée à tous
    | renderReadOnly | Booléen | true |
    | sling:resourceType | Chaîne | granite/ui/components/coral/foundation/form/select |
 
-1. Sous le noeud de propriété (ici geographicallocation), ajoutez un nouveau noeud nommé `items`. Sous le nœud d’éléments, ajoutez un nœud à chacune des valeurs de la liste déroulante. Comme bonne pratique, ajoutez un premier nœud vide pour qu’il serve de valeur par défaut à la liste déroulante et une option destinée à l’utilisateur pour qu’il spécifie Aucune valeur pour le champ. Pour ajouter plusieurs options/valeurs de liste déroulante, répétez les étapes suivantes :
+1. Sous le noeud de propriété (ici geographicallocation), ajoutez un nouveau noeud nommé . `items`. Sous le nœud d’éléments, ajoutez un nœud à chacune des valeurs de la liste déroulante. Comme bonne pratique, ajoutez un premier nœud vide pour qu’il serve de valeur par défaut à la liste déroulante et une option destinée à l’utilisateur pour qu’il spécifie Aucune valeur pour le champ. Pour ajouter plusieurs options/valeurs de liste déroulante, répétez les étapes suivantes :
 
    1. Cliquez avec le bouton droit sur le nœud de propriété (ici geographicallocation) et sélectionnez **Créer** > **Créer un nœud**.
-   1. Saisissez le nom du champ `item1,` et conservez le type nt:unstructured, puis cliquez sur **OK**.
-   1. Ajoutez les propriétés suivantes au noeud nouvellement créé (ici item1), puis cliquez sur **Enregistrer tout** :
+   1. Saisissez le nom du champ comme `item1,` conservez le type nt:unstructured, puis cliquez sur **OK**.
+   1. Ajoutez les propriétés suivantes au noeud que vous venez de créer (ici item1), puis cliquez sur **Enregistrer tout**:
 
       | Nom | Type | Valeur |
       |--- |--- |--- |
@@ -155,7 +155,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 1. Accédez à `https://[server]:[port]/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 1. Dans le dossier d’applications, créez un dossier nommé cmmetadataproperties avec un chemin/une structure similaire au dossier cmmetadataproperties (situé dans le dossier content) en procédant comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier cmmetadataproperties à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+   1. Cliquez avec le bouton droit sur le dossier cmmetadataproperties à l’emplacement suivant et sélectionnez **Noeud de recouvrement**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties`
 
@@ -163,7 +163,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/fd/cm/ma/gui/content/cmmetadataproperties
+      **Chemin :** /libs/fd/cm/ma/gui/content/cmmetadataproperties
 
       **Emplacement :** /apps/
 
@@ -217,7 +217,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
       **Type :** nt:unstructured
 
-   1. Ajoutez la propriété suivante au noeud (ici Column1), puis cliquez sur **Enregistrer tout** :
+   1. Ajoutez la propriété suivante au noeud (ici Column1), puis cliquez sur **Enregistrer tout**:
 
       | Nom | Type | Valeur |
       |--- |--- |--- |
@@ -256,17 +256,17 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items`
 
-   Pour créer une superposition pour une lettre ou une autre ressource, utilisez le chemin suivant en remplaçant [assettype] par du texte, une condition, une liste, un dictionnaire de données ou un fragment :
+   Pour créer une superposition pour des lettres ou une ressource différente, utilisez le chemin suivant en remplaçant [assettype] avec du texte, une condition, une liste, un dictionnaire de données ou un fragment :
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[assettype]/items/tabs/items`
 
-   1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+   1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/fd/cm/ma/gui/content/cmmetadataproperties/letter/items/tabs/items
+      **Chemin :** /libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items
 
       **Emplacement :** /apps/
 
@@ -321,11 +321,11 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items`
 
-   [AssetType]  = texte, condition, liste, lettre, dictionnaire de données ou fragment
+   [AssetType] = texte, condition, liste, lettre, dictionnaire de données ou fragment
 
    Vous trouverez ci-dessous les étapes à suivre pour créer la structure de dossiers :
 
-   1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+   1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items`
 
@@ -337,7 +337,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin :** /libs/fd/cm/ma/gui/content/cmmetadataproperties/[AssetType]/items/tabs/items
+      **Chemin :** /libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items
 
       **Emplacement :** /apps/
 
@@ -408,7 +408,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
    1. Cliquez avec le bouton droit sur le nœud approprié (ici Column1) et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **Nom :** nom de votre choix (ici GeoLocation)
+      **Nom :** Nom de votre choix (ici GeoLocation)
 
       **Type :** nt:unstructured
 
@@ -433,13 +433,13 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
 Par défaut, les propriétés personnalisées ajoutées aux nouveaux onglets sont visibles uniquement sur la page Propriétés et non sur la page de création de la ressource, car la page de création de la ressource n’a pas de mise en page avec onglet. Pour afficher les propriétés personnalisées sur la page de création des ressources avec d’autres propriétés, vous devez effectuer les opérations suivantes :
 
-1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement**:
 
    `/libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items`
 
 1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes pour une lettre. Pour les autres types de ressources, le chemin est indiqué dans le tableau suivant :
 
-   **Chemin d’accès :** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items/items
+   **Chemin :** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items/items/items/items/items
 
    **Emplacement :** /apps/
 
@@ -457,7 +457,7 @@ Par défaut, les propriétés personnalisées ajoutées aux nouveaux onglets son
 
 1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications.
 
-1. Sous le noeud d’éléments de recouvrement que vous avez créé, créez un noeud du nom col4 (ou de tout autre nom) et cliquez sur **Enregistrer tout**.
+1. Sous le noeud d’éléments de recouvrement que vous avez créé, créez un noeud du nom col4 (ou tout autre nom) et cliquez sur **Enregistrer tout**.
 
    Par exemple, le nœud suivant est le nœud de recouvrement créé pour les lettres.
 
@@ -493,7 +493,7 @@ Par défaut, les propriétés personnalisées ajoutées aux nouveaux onglets son
 
    Propriété personnalisée, Langue, apparaissant dans l’interface utilisateur pour créer une lettre
 
-## Personnalisation de la vue Liste afin d’afficher les propriétés personnalisées  {#customize-the-list-view-to-show-custom-properties}
+## Personnalisation de la vue Liste afin d’afficher les propriétés personnalisées {#customize-the-list-view-to-show-custom-properties}
 
 Après avoir ajouté une propriété personnalisée aux ressources de Correspondence Management, vous devez apporter des modifications supplémentaires à CRX/DE pour vous assurer que la propriété personnalisée s’affiche dans l’interface utilisateur de Correspondence Management.
 
@@ -506,13 +506,13 @@ Procédez comme suit pour afficher la propriété personnalisée dans l’interf
 
    Vous trouverez ci-dessous les étapes à suivre pour créer la structure de dossiers :
 
-   1. Cliquez avec le bouton droit sur le dossier de colonnes à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+   1. Cliquez avec le bouton droit sur le dossier de colonnes à l’emplacement suivant et sélectionnez **Noeud de recouvrement**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
+      **Chemin :** /libs/fd/cm/ma/gui/content/massets/jcr:content/views/lists/columns
 
       **Emplacement :** /apps/
 
@@ -527,7 +527,7 @@ Procédez comme suit pour afficher la propriété personnalisée dans l’interf
    1. Cliquez avec le bouton droit sur le nœud approprié (columns) et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **Nom :** nom de votre choix (ici GeographicalLocation)
+      **Nom :** Nom de votre choix (ici GeographicalLocation)
 
       **Type :** nt:unstructured
 
@@ -545,13 +545,13 @@ Procédez comme suit pour afficher la propriété personnalisée dans l’interf
 
    Vous trouverez ci-dessous les étapes à suivre pour créer la structure de dossiers :
 
-   1. Cliquez avec le bouton droit sur le dossier de colonnes à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+   1. Cliquez avec le bouton droit sur le dossier de colonnes à l’emplacement suivant et sélectionnez **Noeud de recouvrement**:
 
       `/libs/fd/cm/ma/gui/components/admin/childpagerenderer/childlistpage`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/fd/cm/ma/gui/components/admin/childpagerenderer/childlistpage
+      **Chemin :** /libs/fd/cm/ma/gui/components/admin/childpagerenderer/childlistpage
 
       **Emplacement :** /apps/
 
@@ -593,7 +593,7 @@ Procédez comme suit pour afficher la propriété personnalisée dans l’interf
       %>
       ```
 
-   1. Ajoutez le code suivant avant le début de la balise &lt;tr> (&lt;tr &lt;%= attrs.build() %&quot;) :
+   1. Ajoutez ce qui suit avant le début de la &lt;tr> balise (&lt;tr attrs.build=&quot;&quot;>>) :
 
       ```
       <%
@@ -609,7 +609,7 @@ Procédez comme suit pour afficher la propriété personnalisée dans l’interf
 
       Dans le code, GeoLocation correspond à la valeur définie dans la propriété de nom lors de la création du nœud/champ personnalisé. Lors de la création d’un nœud/champ personnalisé, vous avez entré le nom de la propriété avec ./extendedproperties/ prefix : ./extendedproperties/GeoLocation. Dans le code, le préfixe n’est pas obligatoire.
 
-   1. Pour afficher la nouvelle propriété dans l’interface utilisateur, ajoutez une balise TD comme suit avant la balise de fermeture tr (&lt;/tr>) :
+   1. Pour afficher la nouvelle propriété dans l’interface utilisateur, ajoutez une balise TD comme suit avant le tr de fermeture (&lt;/tr>) :
 
       ```
       <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
@@ -631,7 +631,7 @@ Procédez comme suit pour afficher la propriété personnalisée dans l’interf
 
    | Nom | Type | Valeur |
    |--- |--- |--- |
-   | sling:orderBefore | Chaîne | Nom du noeud de colonne au chemin &quot;`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns`&quot; devant lequel la colonne personnalisée doit apparaître sur l’interface utilisateur. Ici, si vous souhaitez que la colonne Emplacement géographique apparaisse avant (à gauche) la colonne Version , ajoutez la propriété `sling:orderBefore` au noeud GeoLocation au chemin &quot;`/apps/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns/GeoLocation`&quot; et définissez la valeur de la propriété sur version. |
+   | sling:orderBefore | Chaîne | Le nom du noeud de colonne au chemin &quot;`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns`&quot; devant laquelle la colonne personnalisée doit apparaître dans l’interface utilisateur. Ici, si vous souhaitez que la colonne Emplacement géographique apparaisse avant (à gauche) la colonne Version , ajoutez la propriété . `sling:orderBefore` au noeud GeoLocation au chemin d’accès &quot;`/apps/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns/GeoLocation`&quot; et définissez la valeur de la propriété sur version. |
 
    Lorsque vous ajoutez la propriété sling:orderBefore pour spécifier l’emplacement de la colonne, vous devez également mettre à jour la séquence de la balise &lt;td> correspondante spécifiée à l’étape 6.4 de cette procédure. Par exemple, dans ce cas, vous devez vous assurer que la balise &lt;td> de la position géographique est placée avant la balise &lt;td> de la colonne Version :
 
@@ -640,7 +640,7 @@ Procédez comme suit pour afficher la propriété personnalisée dans l’interf
    <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(version) %>"><%= xssAPI.encodeForHTML(version) %></td>
    ```
 
-## Activation de la recherche des propriétés personnalisées  {#enable-search-for-custom-properties}
+## Activation de la recherche des propriétés personnalisées {#enable-search-for-custom-properties}
 
 Par défaut, la recherche de texte intégral n’inclut pas les propriétés personnalisées que vous ajoutez à L’interface utilisateur au moyen de CRX/DE.
 
@@ -649,7 +649,7 @@ Pour inclure les propriétés personnalisées dans la recherche, vous devez auto
 Pour ce faire, effectuez les étapes suivantes :
 
 1. Accédez à `https://[server]:[port]/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
-1. Accédez à `/oak:index/cmLucene`et ajoutez un noeud nommé **aggregates** en dessous.
+1. Accédez à `/oak:index/cmLucene`et ajoutez un noeud nommé **agrégats** sous celle-ci.
 
    1. Cliquez avec le bouton droit sur le dossier cmLucene et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
@@ -713,18 +713,18 @@ Pour ce faire, effectuez les étapes suivantes :
 >
 >/oak:index/cmLucene » et modifier la valeur de la propriété
 
-## Modification de la vue par défaut de la page de recherche  {#change-default-view-of-the-search-page}
+## Modification de la vue par défaut de la page de recherche {#change-default-view-of-the-search-page}
 
 1. Accédez à `https://[server]:[port]/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 1. Dans le dossier des applications, créez un dossier nommé list avec un chemin/une structure similaire au dossier list situé dans /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views :
 
-   1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+   1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement**:
 
       `/libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list
+      **Chemin :** /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list
 
       **Emplacement :** /apps/
 
@@ -753,13 +753,13 @@ Pour ce faire, effectuez les étapes suivantes :
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
 
-   1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+   1. Cliquez avec le bouton droit sur le dossier éléments à l’emplacement suivant et sélectionnez **Noeud de recouvrement**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list
+      **Chemin :** /libs/fd/cm/ma/gui/content/massets/jcr:content/views/list
 
       **Emplacement :** /apps/
 
@@ -777,7 +777,7 @@ Pour ce faire, effectuez les étapes suivantes :
 
 1. Effacez les cookies de votre navigateur ou utilisez le mode navigation privée de votre navigateur pour afficher les ressources. La page des ressources s’affiche par défaut dans la mise en page de carte.
 
-## Afficher/masquer les propriétés personnalisées sur les pages Création de ressources et Propriétés  {#show-hide-custom-properties-on-asset-creation-and-properties-pages}
+## Afficher/masquer les propriétés personnalisées sur les pages Création de ressources et Propriétés {#show-hide-custom-properties-on-asset-creation-and-properties-pages}
 
 Pour ce faire, effectuez les étapes suivantes :
 
@@ -788,7 +788,7 @@ Pour ce faire, effectuez les étapes suivantes :
    |---|---|---|
    | sling:resourceType | Chaîne | fd/cm/ma/gui/components/admin/assetsproperties/custompropertyconfig |
 
-1. Pour masquer cette propriété sur la page de création de la ressource, ajoutez-lui la propriété suivante et cliquez sur **Enregistrer tout** :
+1. Pour masquer cette propriété sur la page de création de la ressource, ajoutez-y la propriété suivante, puis cliquez sur **Enregistrer tout**:
 
    | Nom | Type | Valeur |
    |---|---|---|

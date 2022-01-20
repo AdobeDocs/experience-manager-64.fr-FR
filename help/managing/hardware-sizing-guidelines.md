@@ -51,14 +51,14 @@ Les facteurs de base à prendre en compte sont (dans cet ordre) :
 
 ## Architecture {#architecture}
 
-Une configuration AEM type se compose d’un environnement de création et de publication. Ces environnements ont différentes exigences en ce qui concerne la taille du matériel sous-jacent et la configuration système. Les considérations détaillées pour les deux environnements sont décrites dans les sections [Environnement de création](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) et [Environnement de publication](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) .
+Une configuration AEM type se compose d’un environnement de création et de publication. Ces environnements ont différentes exigences en ce qui concerne la taille du matériel sous-jacent et la configuration système. Les considérations détaillées relatives aux deux environnements sont décrites dans la section [environnement de création](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) et [environnement de publication](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) sections.
 
 Dans une configuration de projet type, vous disposez de plusieurs environnements sur lesquels définir les phases du projet :
 
 * L’**environnement de développement** pour le développement de nouvelles fonctions ou pour apporter des modifications importantes. La meilleure pratique consiste à travailler dans un environnement de développement par développeur (généralement des installations locales sur leurs systèmes personnels).
 
-* ****
-Environnement de test de créationPour vérifier les modifications. Le nombre d’environnements de test peut varier en fonction des exigences du projet (par exemple, distinct pour le contrôle qualité, le test d’intégration ou le test d’acceptation par l’utilisateur).
+* **Environnement de test de création**
+Pour vérifier les modifications. Le nombre d’environnements de test peut varier en fonction des exigences du projet (par exemple, distinct pour le contrôle qualité, le test d’intégration ou le test d’acceptation par l’utilisateur).
 
 * L’**environnement de test de publication** principalement pour tester les cas d’utilisation de collaboration sociale et/ou l’interaction entre l’instance de création et plusieurs instances de publication.
 
@@ -109,12 +109,12 @@ Un site web doté de la prévention de défaillance est déployé sur au moins d
 
 #### Évolutivité des ressources système {#system-resources-scalability}
 
-Lorsque tous les systèmes sont en cours d’exécution, une performance de calcul accrue est disponible. Ces performances supplémentaires ne sont pas nécessairement linéaires avec le nombre de noeuds de grappe, car la relation dépend fortement de l’environnement technique ; pour plus d’informations, consultez la [documentation sur les grappes](/help/sites-deploying/recommended-deploys.md) .
+Lorsque tous les systèmes sont en cours d’exécution, une performance de calcul accrue est disponible. Ces performances supplémentaires ne sont pas nécessairement linéaires avec le nombre de noeuds de grappe, car la relation dépend fortement de l’environnement technique ; veuillez consulter la section [Documentation sur les grappes](/help/sites-deploying/recommended-deploys.md) pour plus d’informations.
 
 L’estimation du nombre de nœuds de grappes nécessaires dépend des exigences de base, ainsi que des cas d’utilisation spécifiques du projet web en question :
 
 * Du point de vue de la prévention de défaillance, il est nécessaire de déterminer, pour tous les environnements, l’importance de la défaillance et le temps de compensation de la défaillance en fonction du temps nécessaire pour qu’un nœud de grappes se rétablisse.
-* En ce qui concerne l’évolutivité, le nombre d’opérations d’écriture est fondamentalement le facteur le plus important. Voir [Auteurs travaillant en parallèle](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) pour l’environnement de création et [Collaboration sociale](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations) pour l’environnement de publication. L’équilibrage de charge peut être établi pour les opérations qui accèdent uniquement au système pour traiter les opérations de lecture ; voir [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) pour plus d’informations.
+* En ce qui concerne l’évolutivité, le nombre d’opérations d’écriture est fondamentalement le facteur le plus important. Voir [Auteurs travaillant en parallèle](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) pour l’environnement de création et [Collaboration sociale](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations) pour l’environnement de publication. L’équilibrage de charge peut être établi pour les opérations qui accèdent uniquement au système pour traiter les opérations de lecture ; see [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) pour plus d’informations.
 
 ## Calculs spécifiques à l’environnement de création {#author-environment-specific-calculations}
 
@@ -182,7 +182,7 @@ Vous pouvez calculer le nombre d’ordinateurs (ou processeurs) requis pour l’
 
 Cette formule peut servir d’orientation générale pour dimensionner les unités centrales lorsque les auteurs effectuent des opérations de base avec AEM. Elle part du principe que le système et l’application sont optimisés. Toutefois, la formule ne convient pas pour les fonctions avancées telles que MSM ou Assets (voir les sections ci-dessous).
 
-Consultez également les commentaires supplémentaires sur [la mise en parallèle](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) et [l’optimisation des performances](/help/sites-deploying/configuring-performance.md).
+Veuillez également consulter les commentaires supplémentaires sur [Mise en parallèle](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) et [Optimisation des performances](/help/sites-deploying/configuring-performance.md).
 
 ### Recommandations matérielles {#hardware-recommendations}
 
@@ -271,15 +271,15 @@ Les variables de l’équation sont les suivantes :
 Si vous possédez un site web plus complexe, vous avez également besoin de serveurs web plus puissants afin qu’AEM réponde à une requête dans un délai acceptable.
 
 * Complexité inférieure à 4 :
-   * JVM 1024 Mo RAM&amp;ast;
+   * JVM RAM&amp;ast 1024 Mo ;
    * Processeur basse à moyenne performance
 
 * Complexité entre 4 et 8 :
-   * JVM 2048 Mo RAM&amp;ast;
+   * JVM RAM&amp;ast 2 048 Mo ;
    * Processeur milieu à hautes performances
 
 * Complexité supérieure à 8 :
-   * JVM RAM&amp;amp de 4 096 Mo;ast;
+   * JVM RAM&amp;ast 4096 Mo ;
    * Processeur hautes performances de bout en bout
 
 >[!NOTE]

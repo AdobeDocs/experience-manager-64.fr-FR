@@ -1,8 +1,8 @@
 ---
 title: Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC
-seo-title: Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC
+seo-title: Configuring credentials for use with Acrobat Reader DC extensions
 description: Découvrez comment configurer les informations d’identification à utiliser avec les extensions Acrobat Reader DC.
-seo-description: Découvrez comment configurer les informations d’identification à utiliser avec les extensions Acrobat Reader DC.
+seo-description: Learn how to configure credentials for use with Acrobat Reader DC extensions.
 uuid: 9210e6c9-6f5c-402d-b355-b104cdffd5eb
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 exl-id: 40c2e205-0115-4ebe-ab24-66c8ee0663fa
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '555'
 ht-degree: 97%
 
 ---
 
-# Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
+# Configuration des informations d’identification à utiliser avec les extensions d&#39;Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
-Pour appliquer des droits d’utilisation aux documents PDF, configurez AEM Forms avec des informations d’identification valides pour les extensions d’Acrobat Reader DC. Ces informations d’identification ont éventuellement été configurées pendant l’installation d’AEM Forms. Si vous n’avez configuré aucune information d’identification pour les extensions d’Acrobat Reader DC dans Configuration Manager ou si vous devez importer des informations d’identification nouvelles ou modifiées, utilisez les pages de gestion de Trust Store.
+Pour appliquer des droits d’utilisation aux documents PDF, configurez AEM forms avec des informations d’identification valides pour les extensions d&#39;Acrobat Reader DC. Ces informations d’identification ont éventuellement été configurées pendant l’installation d’AEM Forms. Si vous n’avez configuré aucune information d’identification pour les extensions d’Acrobat Reader DC dans Configuration Manager ou si vous devez importer des informations d’identification nouvelles ou modifiées, utilisez les pages de gestion de Trust Store.
 
 Si vous utilisez des informations d’identification d’évaluation, remplacez-les par des informations d’identification de production lors du passage à votre environnement de production. Pour mettre à jour des informations d’identification d’évaluation ou ayant expiré, vous devez tout d’abord supprimer les anciennes informations d’identification des extensions d’Acrobat Reader DC.
 
@@ -51,12 +51,12 @@ Le Trust Store peut comporter plusieurs jeux d’informations d’identification
 
    Si le message d’erreur « Echec de l’importation des informations d’identification en raison d’un format de fichier incorrect ou d’un mot de passe incorrect » s’affiche, assurez-vous que le mot de passe est valide.
 
-## Suppression des informations d’identification des extensions d’Acrobat Reader DC  {#remove-a-acrobat-reader-dc-extensions-credential}
+## Suppression des informations d’identification des extensions d’Acrobat Reader DC {#remove-a-acrobat-reader-dc-extensions-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
 1. Sélectionnez les informations d’identification, puis cliquez sur Supprimer.
 
-## Remplacement des informations d’identification des extensions d’Acrobat Reader DC  {#replace-a-acrobat-reader-dc-extensions-credential}
+## Remplacement des informations d’identification des extensions d’Acrobat Reader DC {#replace-a-acrobat-reader-dc-extensions-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
 1. Notez l’alias existant des informations d’identification, sélectionnez-le, puis cliquez sur Supprimer.

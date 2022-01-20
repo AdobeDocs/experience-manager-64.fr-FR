@@ -1,8 +1,8 @@
 ---
 title: Affichage d’une liste des formulaires sur une page Web à l’aide d’API
-seo-title: Affichage d’une liste des formulaires sur une page Web à l’aide d’API
+seo-title: Listing forms on a web page using APIs
 description: Interroger Forms Manager par programmation pour récupérer une liste de formulaires filtrée et l’afficher sur vos propres pages Web.
-seo-description: Interroger Forms Manager par programmation pour récupérer une liste de formulaires filtrée et l’afficher sur vos propres pages Web.
+seo-description: Programmatically query Forms Manager to retrieve a filtered list of forms and display on your own web pages.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '693'
 ht-degree: 84%
 
 ---
@@ -115,7 +115,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Indique si le contenu binaire doit être récupéré ou non. L’attribut <code>includeXdp</code> s’applique aux ressources de type <code>FORM</code>, <code>PDFFORM</code> et <code>PRINTFORM</code>.</td>
+   <td>Indique si le contenu binaire doit être récupéré ou non. Le <code>includeXdp</code> s’applique aux ressources de type <code>FORM</code>, <code>PDFFORM</code>, et <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
@@ -124,7 +124,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
  </tbody>
 </table>
 
-## Exemple de demande  {#sample-request}
+## Exemple de demande {#sample-request}
 
 ```
 func : searchForms

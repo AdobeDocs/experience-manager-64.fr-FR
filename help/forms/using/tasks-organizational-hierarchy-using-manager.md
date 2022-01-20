@@ -1,8 +1,8 @@
 ---
 title: Gestion des tâches dans une hiérarchie organisationnelle à l’aide de la vue du gestionnaire
-seo-title: Gestion des tâches dans une hiérarchie organisationnelle à l’aide de la vue du gestionnaire
+seo-title: Managing tasks in an organizational hierarchy using Manager View
 description: Accès et gestion par les managers et dirigeants des tâches relatives à leurs rapports directs et indirects dans l’onglet Tâches de l’espace de travail AEM Forms.
-seo-description: Accès et gestion par les managers et dirigeants des tâches relatives à leurs rapports directs et indirects dans l’onglet Tâches de l’espace de travail AEM Forms.
+seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
 uuid: a44d5a64-c03a-4337-8577-b121e6202449
 contentOwner: robhagat
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 exl-id: 28877528-2f91-4ee0-b9d8-c7df364ed803
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 79%
+source-wordcount: '344'
+ht-degree: 77%
 
 ---
 
@@ -21,17 +21,17 @@ ht-degree: 79%
 
 Dans l’espace de travail AEM Forms, les gestionnaires peuvent désormais accéder à toutes les tâches assignées aux personnes au sein de leur hiérarchie (rapports directs ou indirects) et y effectuer diverses opérations. Les tâches sont accessibles par l’intermédiaire de l’onglet Tâches de l’espace de travail AEM Forms. Les actions prises en charge pour les tâches de rapports directs sont :
 
-**** Transférer une tâche d’un rapport direct à n’importe quel utilisateur.
+**Transférer** Transférez une tâche d’un rapport direct à n’importe quel utilisateur.
 
-**** Demander une tâche d’un rapport direct.
+**Demander** Demande une tâche d’un rapport direct.
 
-**Demander et** ouvrirDemander une tâche d’un rapport direct et l’ouvrir automatiquement dans la liste des tâches du responsable.
+**Demander et ouvrir** Demandez une tâche d’un rapport direct et ouvrez-la automatiquement dans la liste des tâches du responsable.
 
-**** RejeterRejetez une tâche transférée vers un rapport direct par un autre utilisateur. Cette option est disponible pour les tâches transférées vers un rapport direct par d’autres utilisateurs.
+**Rejeter** Rejeter une tâche transférée vers un rapport direct par un autre utilisateur. Cette option est disponible pour les tâches transférées vers un rapport direct par d’autres utilisateurs.
 
 AEM Forms restreint l’accès d’un utilisateur aux seules tâches pour lesquelles cet utilisateur dispose d’un contrôle d’accès (ACL). Ceci permet de garantir que l’utilisateur ne puisse extraire que les tâches pour lesquelles il dispose de droits d’accès. En utilisant des services Web et des implémentations tiers pour définir la hiérarchie, une organisation peut personnaliser la définition des rapports directs et gestionnaires selon ses besoins.
 
-1. Créez un DSC. Pour plus d’informations, voir la rubrique &quot;Développement de composants pour AEM Forms&quot; dans le guide [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
+1. Créez un DSC. Pour plus d’informations, voir la rubrique &quot;Développement de composants pour AEM Forms&quot; dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guide.
 1. Dans le DSC, définissez une nouvelle SPI pour la gestion de hiérarchie afin de définir les rapports directs et la hiérarchie des utilisateurs d’AEM Forms. Voici un exemple de fragment de code Java™ :
 
    ```as3
@@ -111,7 +111,7 @@ AEM Forms restreint l’accès d’un utilisateur aux seules tâches pour lesque
    </component>
    ```
 
-1. Déployez DSC via Workbench. Redémarrez le service `ProcessManagementTeamTasksService`.
+1. Déployez DSC via Workbench. Redémarrer `ProcessManagementTeamTasksService` service.
 1. Il se peut que vous ayez à actualiser votre navigateur ou à vous déconnecter/connecter de nouveau avec l’utilisateur.
 
 L’écran suivant illustre l’accès aux tâches de rapports directs et les actions disponibles.

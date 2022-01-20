@@ -1,8 +1,8 @@
 ---
-title: 'Votre boîte de réception  '
-seo-title: Votre boîte de réception
+title: Votre boîte de réception
+seo-title: Your Inbox
 description: Gestion de vos tâches à l’aide de la boîte de réception
-seo-description: Gestion de vos tâches à l’aide de la boîte de réception
+seo-description: Managing your tasks with the inbox
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 exl-id: 9037f21c-5392-4322-af0d-7e220c810954
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '888'
 ht-degree: 99%
 
 ---
 
-# Votre boîte de réception  {#your-inbox}
+# Votre boîte de réception{#your-inbox}
 
 Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris des workflows et des projets. Ces notifications peuvent par exemple concerner les éléments suivants :
 
@@ -49,6 +49,7 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 >* [Workflows](/help/sites-authoring/workflows.md)
 >* [Formulaires](/help/forms/home.md)
 
+>
 
 
 ## Boîte de réception dans l’en-tête {#inbox-in-the-header}
@@ -70,7 +71,7 @@ AEM est fourni avec quatre tâches prêtes à l’emploi attribuées au groupe d
 * Autoriser la collecte de statistiques d’utilisation agrégées
 * [Configurer HTTPS](/help/sites-administering/ssl-by-default.md)
 
-## Ouverture de la boîte de réception   {#opening-the-inbox}
+## Ouverture de la boîte de réception {#opening-the-inbox}
 
 Pour ouvrir la boîte de réception des notifications AEM :
 
@@ -155,6 +156,7 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
    >[!NOTE]
    >
    >Pour plus d’informations, voir :
+   >
    >* Éléments de workflow – [Participation aux workflows](/help/sites-authoring/workflows-participating.md)
 
 
@@ -212,6 +214,7 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-authoring/pro
    >[!NOTE]
    >
    >Seules les tâches créées à l’aide de l’option **Créer** de la **boîte de réception** peuvent être utilisées pour créer un projet.
+   >
    >Les éléments de travail (d’un workflow) ne peuvent pas être utilisés pour créer un projet.
 
 1. Sélectionnez **Créer un projet** depuis la barre d’outils pour ouvrir l’assistant.
@@ -228,7 +231,6 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-authoring/pro
    * **Avancé**
 
       * **Nom**
-
    >[!NOTE]
    >
    >Pour plus d’informations, voir [Création d’un projet](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project).

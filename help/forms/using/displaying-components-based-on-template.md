@@ -1,8 +1,8 @@
 ---
 title: Affichage des composants en fonction du modèle utilisé
-seo-title: Affichage des composants en fonction du modèle utilisé
+seo-title: Displaying components based on the template used
 description: Lorsque vous créez un formulaire, découvrez comment vous pouvez activer les composants dans la barre latérale en fonction du modèle sélectionné.
-seo-description: Lorsque vous créez un formulaire, découvrez comment vous pouvez activer les composants dans la barre latérale en fonction du modèle sélectionné.
+seo-description: When you create a form, learn how you can enable components in the sidebar based on the template selected.
 uuid: 4e87f400-fb45-413d-9be8-72edbe99f210
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ discoiquuid: 940e45b4-dbf1-4207-bd4a-cf677d645fb4
 exl-id: a4cee2e6-a56f-4355-8176-b3ed7478a775
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 75%
+source-wordcount: '352'
+ht-degree: 73%
 
 ---
 
@@ -23,7 +23,7 @@ Lorsqu’un auteur de formulaire crée un formulaire adaptatif à l’aide d’u
 
 ## Modification de la stratégie de contenu d’un modèle {#changing-the-content-policy-of-a-template}
 
-Lorsque vous créez un modèle, il est créé sous `/conf` dans le référentiel de contenu. En fonction des dossiers que vous avez créés dans le répertoire `/conf` , le chemin d’accès à votre modèle est le suivant : `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
+Lorsque vous créez un modèle, il est créé sous `/conf` dans le référentiel de contenu. En fonction des dossiers que vous avez créés dans la variable `/conf` répertoire, le chemin d’accès à votre modèle est : `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
 Effectuez les étapes suivantes pour afficher les composants dans la barre latérale en fonction de la stratégie de contenu d’un modèle :
 
@@ -45,7 +45,7 @@ Effectuez les étapes suivantes pour afficher les composants dans la barre laté
 
    ![Copie des stratégies par défaut](assets/crx-default1.png)
 
-1. Sélectionnez la nouvelle stratégie que vous créez, puis la propriété **components** dans le panneau de droite avec le type `string[]`.
+1. Sélectionnez la nouvelle stratégie que vous créez, puis le **components** dans le panneau de droite avec le type `string[]`.
 
    Lorsque vous sélectionnez et ouvrez la propriété de composants, la boîte de dialogue Modifier les composants s’affiche. Elle vous permet d’ajouter ou de supprimer les groupes de composants en utilisant les boutons **+** et **-**. Vous pouvez ajouter le groupe de composants qui comprend des composants du formulaire que vous souhaitez que les auteurs utilisent.
 
@@ -57,7 +57,7 @@ Effectuez les étapes suivantes pour afficher les composants dans la barre laté
 
    Pour modifier la stratégie, dans CRXDE, accédez à `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/guideContainer/rootPanel/items`.
 
-   Dans la propriété `cq:policy` , remplacez `default` par le nouveau nom de la stratégie ( `myPolicy`).
+   Dans le `cq:policy` propriété, modifier `default` au nouveau nom de la stratégie ( `myPolicy`).
 
    ![Stratégie de contenu de modèle mise à jour](assets/updated-policy.png)
 

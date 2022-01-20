@@ -1,8 +1,8 @@
 ---
-title: 'Exporter au format CSV  '
-seo-title: 'Exporter au format CSV  '
+title: Exporter au format CSV
+seo-title: Export to CSV
 description: Exportez les informations relatives à vos pages vers un fichier CSV situé sur votre système local
-seo-description: Exportez les informations relatives à vos pages vers un fichier CSV situé sur votre système local
+seo-description: Export information about your pages to a CSV file on your local system
 uuid: aa03adac-bbfb-4566-a153-25fe6f6843dd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
 exl-id: 52eb9c2f-ce29-4622-8726-802ac40246d4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 79%
+source-wordcount: '190'
+ht-degree: 77%
 
 ---
 
-# Exporter au format CSV  {#export-to-csv}
+# Exporter au format CSV{#export-to-csv}
 
 **Créer une exportation CSV** vous permet d’exporter les informations relatives à vos pages vers un fichier CSV situé sur votre système local.
 
@@ -33,7 +33,7 @@ L’assistant Créer une exportation CSV vous permet de sélectionner les élém
 
 * Propriétés à exporter
 
-   * Métadonnées  
+   * Métadonnées
 
       * Modifié
       * Publié
@@ -55,14 +55,14 @@ Vous pouvez ouvrir le fichier `export.csv` obtenu dans Excel (ou toute autre app
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-L’option Créer **Exportation CSV** est disponible lorsque vous parcourez la console **Sites** (en mode Liste) : il s’agit d’une option du menu déroulant **Créer** :
+La création **Exportation CSV** est disponible lors de la navigation dans la **Sites** console (en mode Liste) : il s’agit d’une option de la fonction **Créer** menu déroulant :
 
 ![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
 
 Pour créer une exportation CSV :
 
 1. Ouvrez la console **Sites**, puis, le cas échéant, accédez à l’emplacement requis.
-1. Dans la barre d’outils, sélectionnez **Créer** puis **Exportation CSV** pour ouvrir l’assistant :
+1. Dans la barre d’outils, sélectionnez **Créer** then **Exportation CSV** pour ouvrir l’assistant :
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 

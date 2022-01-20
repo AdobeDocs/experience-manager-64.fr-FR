@@ -1,8 +1,8 @@
 ---
 title: Utilisation de l’outil de serveur proxy
-seo-title: Utilisation de l’outil de serveur proxy
+seo-title: How to use the Proxy Server Tool
 description: Le serveur proxy joue le rôle d’un serveur intermédiaire qui relaie les demandes entre un client et un serveur
-seo-description: Le serveur proxy joue le rôle d’un serveur intermédiaire qui relaie les demandes entre un client et un serveur
+seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
 uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 exl-id: 63f3a172-b551-433a-aad5-58c6bfda82bb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '943'
 ht-degree: 91%
 
 ---
@@ -114,7 +114,7 @@ avec un fichier image situé dans
 
 `/content/test.jpg`
 
-Le contenu de `test.html` est le suivant :
+Le contenu de `test.html` est :
 
 ```xml
 <html>
@@ -128,11 +128,11 @@ Le contenu de `test.html` est le suivant :
 </html>
 ```
 
-En supposant que l’instance AEM s’exécute sur `localhost:4502`, nous démarrons le proxy comme suit :
+En supposant que l’instance AEM est en cours d’exécution `localhost:4502` nous démarrons le proxy comme suit :
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-L’instance CQ/CRX est désormais accessible via le proxy à `localhost:4444` et toutes les communications via ce port sont consignées dans `test.log`.
+L’instance CQ/CRX est maintenant accessible via le proxy à l’adresse `localhost:4444` et toute communication via ce port est connectée à `test.log`.
 
 La sortie du proxy montre l’interaction entre le navigateur et l’instance AEM.
 
@@ -147,7 +147,7 @@ Nous ouvrons ensuite un navigateur et nous accédons à la page de test :
 
 `http://localhost:4444/content/test.html`
 
-et nous voyons le navigateur effectuer une requête `GET` pour la page :
+et nous voyons le navigateur créer une `GET` requête pour la page :
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]

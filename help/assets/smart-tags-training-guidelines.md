@@ -23,7 +23,7 @@ Pour pouvoir baliser efficacement vos images de marque, le service de contenu dy
 
 Pour un résultat optimal, les images de votre corpus d’entraînement doivent respecter les instructions suivantes :
 
-**Quantité et taille :**  **30 images au minimum par balise**. Minimum 500 pixels sur le côté le plus long.
+**Quantité et taille :** Minimum **30 images par balise**. Minimum 500 pixels sur le côté le plus long.
 
 **Cohérence** : les images associées à une même balise doivent être visuellement similaires.
 
@@ -53,7 +53,7 @@ Les balises intelligentes améliorées sont basées sur des modèles d’apprent
 
 * Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises coupe droite ou ajustée.
 * Impossibilité d’identifier des balises basées sur des motifs/éléments minuscules d’une image. Par exemple, des logos sur des T-shirts.
-* Le balisage est pris en charge dans les paramètres régionaux où [!DNL Experience Manager] est pris en charge. Pour obtenir la liste des langues, voir [Notes de mise à jour du service de contenu dynamique](/help/release-notes/smart-content-service-release-notes.md).
+* Le balisage est pris en charge dans les paramètres régionaux qui [!DNL Experience Manager] est prise en charge dans . Pour obtenir la liste des langues, voir [Notes de mise à jour du service de contenu dynamique](/help/release-notes/smart-content-service-release-notes.md).
 
 Pour rechercher des ressources avec des balises intelligentes (standard ou améliorées), utilisez la recherche de texte intégral d’Assets. Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 

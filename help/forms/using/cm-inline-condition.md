@@ -1,19 +1,19 @@
 ---
 title: Condition intégrée et répétition dans les communications interactives et les lettres
-seo-title: Condition intégrée et répétition dans les communications interactives et les lettres
+seo-title: Inline condition and repeat in Interactive Communications and letters
 description: 'La condition intégrée et la répétition dans les communications interactives et les lettres permettent de créer des communications hautement contextuelles et parfaitement structurées. '
-seo-description: 'La condition intégrée et la répétition dans les communications interactives et les lettres permettent de créer des communications hautement contextuelles et parfaitement structurées. '
+seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
 uuid: 16e38929-f81b-4582-9daf-6c756a4390e9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
 discoiquuid: f376b8c1-e176-4fe6-b298-f3d493c59319
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: 1b669f86-5090-4618-9bd2-85fcec44d51a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 90%
+source-wordcount: '1685'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +37,7 @@ Pour en savoir plus, voir:
 
 Pour conditionner une phrase, un paragraphe ou une chaîne de texte dans une communication interactive, vous pouvez créer une règle dans le fragment de document texte approprié. L’exemple suivant utilise une règle pour afficher un numéro sans frais uniquement pour les destinataires des États-Unis de la communication interactive.
 
-Pour plus d’informations, voir Créer une règle dans du texte dans [Textes dans les communications interactives](/help/forms/using/texts-interactive-communications.md).
+Pour plus d’informations, voir Créer une règle dans le texte de [Textes dans les communications interactives](/help/forms/using/texts-interactive-communications.md).
 
 Une fois que vous avez inclus le fragment de texte dans une communication interactive et que l’agent utilise l’interface utilisateur de l’agent pour préparer une communication interactive, les données (modèle de données de formulaire) des destinataires sont évaluées et le texte est présenté uniquement aux destinataires aux États-Unis.
 
@@ -59,7 +59,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 
    >[!NOTE]
    >
-   >Une expression conditionnelle vide ou non valide ne peut pas être enregistrée. Pour enregistrer l’expression, une expression conditionnelle valide doit se trouver à l’intérieur de `${}`.
+   >Une expression conditionnelle vide ou non valide ne peut pas être enregistrée. Une expression conditionnelle valide doit se trouver à l’intérieur de `${}` pour enregistrer l’expression.
 
 1. Procédez comme suit pour créer une condition pour déterminer si le texte sélectionné/soumis à une condition apparaît dans la lettre, puis appuyez sur la coche pour enregistrer l’expression :
 
@@ -75,7 +75,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editcondition removeconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
-1. Insérez une condition similaire en sélectionnant le texte `Ma'am`.
+1. Insérer une condition similaire en sélectionnant le texte `Ma'am`.
 
    ```java
    ${DD_creditcard_Gender == "Female"}

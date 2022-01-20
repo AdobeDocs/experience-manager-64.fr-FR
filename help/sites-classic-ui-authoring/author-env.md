@@ -1,8 +1,8 @@
 ---
 title: Utilisation de l’environnement de création
-seo-title: Utilisation de l’environnement de création
+seo-title: Working with the Author Environment
 description: L’environnement de création vous permet d’effectuer des tâches liées à la création (y compris la création de pages et la gestion de ressources) et d’administrer les tâches nécessaires pour générer et gérer le contenu sur votre site web.
-seo-description: L’environnement de création vous permet d’effectuer des tâches liées à la création (y compris la création de pages et la gestion de ressources) et d’administrer les tâches nécessaires pour générer et gérer le contenu sur votre site web.
+seo-description: The author environment allows you to perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
 uuid: ebeaa2c3-05b0-4108-8e84-69b9ba48cfbe
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 exl-id: 8421a092-6e99-4c05-9647-c0cc76667c85
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 87%
+source-wordcount: '250'
+ht-degree: 85%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->La documentation suivante porte sur l’IU classique. Pour plus d’informations sur la création dans l’IU tactile moderne, consultez la [documentation de création standard](/help/assets/assets.md).
+>La documentation suivante porte sur l’IU classique. Pour plus d’informations sur la création dans l’IU tactile moderne, voir [documentation de création standard](/help/assets/assets.md).
 
 L’environnement de création vous permet d’effectuer les opérations suivantes :
 
-* [Création](/help/sites-authoring/author.md)  (y compris la  [création de ](/help/sites-authoring/qg-page-authoring.md) pages et la  [gestion de ressources](/help/assets/assets.md))
+* [Création](/help/sites-authoring/author.md) (y compris [création de pages](/help/sites-authoring/qg-page-authoring.md) et [gestion des ressources](/help/assets/assets.md))
 
 * [Administration](/help/sites-administering/administer-best-practices.md) des tâches nécessaires pour générer et gérer le contenu sur votre site web
 
@@ -45,7 +45,7 @@ Deux interfaces utilisateur graphiques sont à votre disposition, accessibles da
    * Plus récente, il s’agit de l’interface utilisateur standard d’AEM.
    * Particulièrement épurée, elle est principalement grise.
    * Elle est conçue à la fois pour les appareils à écran tactile et les ordinateurs de bureau (elle est optimisée pour les écrans tactiles). L’apparence est identique sur tous les appareils, bien que[ l’affichage et la sélection des ressources](/help/sites-authoring/basic-handling.md) diffère légèrement (appuyer ou cliquer).  
-   * Voir la [documentation de création standard](/help/sites-authoring/author.md) pour plus d’informations sur la création à l’aide de l’interface utilisateur tactile. La documentation suivante porte sur l’IU classique.
+   * Voir [documentation de création standard](/help/sites-authoring/author.md) pour plus d’informations sur la création à l’aide de l’interface utilisateur tactile. La documentation suivante porte sur l’IU classique.
 
    * Bureau :
    ![chlimage_1-150](assets/chlimage_1-150.png)

@@ -1,8 +1,8 @@
 ---
 title: Exemples de code
-seo-title: Exemples de code
+seo-title: Code Samples
 description: L’équipe Adobe Consulting Services a établi une série d’exemples de code AEM.
-seo-description: L’équipe Adobe Consulting Services a établi une série d’exemples de code AEM.
+seo-description: The Adobe Consulting Services Team has generated a series of AEM code samples
 uuid: 16f23fa6-5a3c-4697-87de-86db37b3ec1b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 07bf0224-6744-42d4-861f-d656ccfad171
 exl-id: 20f3c5d6-0f70-4b66-9e43-be1709dc8eb6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 72%
+source-wordcount: '223'
+ht-degree: 70%
 
 ---
 

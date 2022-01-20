@@ -1,13 +1,13 @@
 ---
 title: Rapports sur l’utilisation et le partage de vos ressources numériques.
-description: Des rapports sur vos ressources dans  [!DNL Adobe Experience Manager Assets]  vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
+description: Des rapports sur vos ressources dans [!DNL Adobe Experience Manager Assets] vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
-feature: Rapports de ressources,Gestion des ressources
+feature: Asset Reports,Asset Management
 role: User,Admin
 exl-id: 6f03ee04-d2e2-47e6-892b-50fad3043a28
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1061'
 ht-degree: 89%
 
 ---
@@ -28,7 +28,7 @@ Si un rapport est généré, vous êtes averti par un courrier électronique (fa
 
 Pour générer des rapports, assurez-vous que :
 
-* Activez le service Enregistreur d’événements de la gestion des actifs numériques Day CQ ] à partir de **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.[!UICONTROL 
+* Activer [!UICONTROL Enregistreur d’événements DAM Day CQ] service à partir de **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 * Sélectionnez les activités ou les événements sur lesquels vous souhaitez créer des rapports. Par exemple, pour générer un rapport sur les ressources téléchargées, sélectionnez [!UICONTROL Ressource téléchargée (TÉLÉCHARGÉE)].
 
 ![Activation de la création de rapports de ressources dans la console web](assets/reports-config-day-cq-dam-event-recorder.png)
@@ -54,17 +54,17 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
    ![Page Outils pour parcourir le rapport des ressources](assets/navigation.png)
 
 1. Sur la page [!UICONTROL Rapports de ressources], cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
-1. Sur la page **[!UICONTROL Créer un rapport]** , sélectionnez le rapport à créer, puis cliquez sur **[!UICONTROL Suivant]**.
+1. Dans la **[!UICONTROL Page Créer un rapport]** , sélectionnez le rapport à créer, puis cliquez sur **[!UICONTROL Suivant]**.
 
    ![Sélectionner le type de rapport](assets/choose_report.png)
 
    >[!NOTE]
    >
-   >Par défaut, les fragments de contenu et les partages de lien sont inclus dans la ressource [!UICONTROL Rapport téléchargé]. Sélectionnez l’option appropriée pour créer un rapport de partages de lien ou pour exclure les fragments de contenu du rapport de téléchargement.
+   >Par défaut, les fragments de contenu et les partages de lien sont inclus dans la ressource. [!UICONTROL Rapport téléchargé]. Sélectionnez l’option appropriée pour créer un rapport de partages de lien ou pour exclure les fragments de contenu du rapport de téléchargement.
 
    >[!NOTE]
    >
-   >Le rapport [!UICONTROL Télécharger] affiche uniquement les détails des ressources sélectionnées individuellement et téléchargées ou téléchargées à l’aide de l’action rapide. Cependant, il n’inclut pas les détails des ressources qui se trouvaient dans un dossier téléchargé.
+   >Le [!UICONTROL Télécharger] Le rapport affiche uniquement les détails des ressources sélectionnées individuellement et téléchargées ou téléchargées à l’aide de l’action rapide. Cependant, il n’inclut pas les détails des ressources qui se trouvaient dans un dossier téléchargé.
 
 1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier dans le référentiel CRX où le rapport est stocké. Par défaut, le chemin du dossier est `/content/dam`. Vous pouvez spécifier un autre chemin.
 
@@ -113,7 +113,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    Cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils pour télécharger le rapport au format CSV.
 
-## Ajout de colonnes personnalisées   {#add-custom-columns}
+## Ajout de colonnes personnalisées  {#add-custom-columns}
 
 Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour afficher davantage de données en fonction de vos besoins :
 

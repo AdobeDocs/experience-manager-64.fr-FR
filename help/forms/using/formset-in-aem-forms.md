@@ -1,8 +1,8 @@
 ---
 title: Jeu de formulaires dans AEM Forms
-seo-title: Jeu de formulaires dans AEM Forms
+seo-title: Form set in AEM Forms
 description: Cet article présente la notion de jeu de formulaires et explique comment créer des jeux de formulaire par l’assemblage de formulaires au format HTML5. Cet article explique également comment vous pouvez préremplir des données XML dans un jeu de formulaires et comment utiliser des jeux de formulaires dans Process Management.
-seo-description: Cet article présente la notion de jeu de formulaires et explique comment créer des jeux de formulaire par l’assemblage de formulaires au format HTML5. Cet article explique également comment vous pouvez préremplir des données XML dans un jeu de formulaires et comment utiliser des jeux de formulaires dans Process Management.
+seo-description: This article introduces form set and explains how to create form sets by stitching together HTML5 forms. This article also explains how you can prefill xml data to a form set and how you can use form sets in process management.
 uuid: 20ff948a-db5c-45b9-84e7-cacdeae44ebe
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,7 +12,7 @@ feature: Mobile Forms
 exl-id: 0d52400a-5a04-4e0b-8fc2-b8d1799f1c08
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2825'
 ht-degree: 90%
 
 ---
@@ -35,7 +35,7 @@ Les jeux de formulaires sont également pris en charge dans l’application AEM 
 
 Vous pouvez associer plusieurs XDP ou modèles de formulaire, créés à l’aide de Designer, dans un jeu de formulaires. Les jeux de formulaires peuvent ensuite être utilisés pour rendre les XDP de manière sélective en fonction des valeurs saisies par les utilisateurs dans les formulaires initiaux et de leurs profils.
 
-Utilisez [l’interface utilisateur d’AEM Forms](/help/forms/using/introduction-managing-forms.md) pour gérer tous vos formulaires, jeux de formulaires et ressources associés.
+Utilisation [Interface utilisateur d’AEM Forms](/help/forms/using/introduction-managing-forms.md) pour gérer tous les formulaires, les jeux de formulaires et les actifs associés.
 
 ### Créer un jeu de formulaires {#create-a-form-set}
 
@@ -69,7 +69,7 @@ Pour créer un jeu de formulaires, procédez comme suit :
    * Racine des données : pour chaque formulaire du jeu, l’auteur peut configurer XPATH où les données d’un formulaire donné sont situées dans les données XML envoyées. Par défaut, la valeur est de /. Si tous les formulaires du jeu sont liés à un schéma et partagent le même schéma XML, vous pouvez modifier cette valeur. Il est recommandé que chaque champ du formulaire ait la liaison de données appropriée spécifiée dans XDP. Si deux champs de deux formulaires différents partagent la liaison de données commune, le champ du second formulaire est pré-rempli avec les valeurs du premier formulaire. Ne liez pas deux sous-formulaires avec le même contenu interne au même nœud XML. Pour plus d’informations sur la structure XML du jeu de formulaires, voir [Préremplissage XML du jeu de formulaires](/help/forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
    * Expression d’éligibilité : spécifie une expression JavaScript qui évalue une valeur booléenne et indique si un formulaire du jeu est éligible au remplissage. Si elle est fausse, l’utilisateur n’est pas invité ou le formulaire à remplir n’est pas affiché. En règle générale, l’expression est basée sur les valeurs des champs qui sont collectées avant ce formulaire. Les expressions contiennent également des appels à la valeur de fs.valueOf de l’API du jeu de formulaires pour extraire les valeurs renseignées par l’utilisateur dans un champ de formulaire du jeu de formulaires :
 
-   *fs.valueOf(&lt;form Identifier=&quot;&quot;>,  &lt;fieldsom expression=&quot;&quot;>) >  &lt;value>*
+   *fs.valueOf(&lt;form identifier=&quot;&quot;>, &lt;fieldsom expression=&quot;&quot;>) > &lt;value>*
 
    Par exemple, si vous avez deux formulaires dans le jeu de formulaires (les coûts d’exploitation et les frais de déplacement), vous pouvez ajouter un fragment de code JavaScript dans le champ Expression d’éligibilité pour ces deux formulaires pour contrôler l’entrée utilisateur du type de dépenses dans un formulaire. Si l’utilisateur sélectionne Frais d’exploitation, le formulaire Frais d’exploitation est présenté à l’utilisateur final. Si l’utilisateur sélectionne des frais de transport, un autre formulaire est présenté à l’utilisateur final. Pour plus d’informations, voir Expression d’éligibilité.
 
@@ -81,7 +81,7 @@ Pour créer un jeu de formulaires, procédez comme suit :
    >
    >Tous les formulaires qui sont utilisés dans le jeu de formulaires sont gérés par l’interface utilisateur d’AEM Forms.
 
-### Gestion d’un jeu de formulaires  {#managing-a-form-set}
+### Gestion d’un jeu de formulaires {#managing-a-form-set}
 
 Une fois que le jeu de formulaires est créé, vous pouvez y effectuer les actions suivantes :
 
@@ -102,7 +102,7 @@ Une fois que le jeu de formulaires est créé, vous pouvez y effectuer les actio
 Pour modifier un jeu de formulaires, procédez comme suit : 
 
 1. Sélectionnez formulaires > Formulaires &amp; Documents.
-1. Localisez le jeu de formulaires que vous souhaitez modifier. Passez la souris dessus et sélectionnez Modifier ( ![édition](assets/editicon.png)).
+1. Localisez le jeu de formulaires que vous souhaitez modifier. Placez le pointeur de la souris dessus et sélectionnez Modifier ( ![editicon](assets/editicon.png)).
 1. Dans la page Configurer le(s) formulaire(s), vous pouvez modifier les éléments suivants : 
 
    * L’ordre des formulaires
@@ -112,11 +112,11 @@ Pour modifier un jeu de formulaires, procédez comme suit :
 
    Vous pouvez également cliquer sur l’icône Supprimer correspondante afin de supprimer le formulaire du jeu.
 
-## Jeu de formulaires dans Process Management  {#form-set-in-process-management}
+## Jeu de formulaires dans Process Management {#form-set-in-process-management}
 
 Une fois que vous avez créé un jeu de formulaires avec l’interface utilisateur de gestion d’AEM Forms, vous pouvez utiliser le jeu de formulaires dans l’activité Point de départ ou Affectation de tâches à l’aide de Workbench.
 
-### Utilisation du jeu de formulaires dans Tâche ou Point de départ  {#using-form-set-in-task-or-start-point}
+### Utilisation du jeu de formulaires dans Tâche ou Point de départ {#using-form-set-in-task-or-start-point}
 
 1. Lors de la conception d’un processus, sous la section Présentation et Données d’Assigner Tâche/Point de départ, sélectionnez **Utilisation d’un actif CRX**. Le navigateur de ressources CRX s’affiche.
 
@@ -248,7 +248,7 @@ Dans un jeu de formulaires, le code XML a défini un schéma XML avec la syntaxe
 >
 >S’il existe deux formes présentant des racines de données se chevauchant ou si la hiérarchie d’éléments d’un formulaire chevauche la hiérarchie de racine de données d’un autre formulaire, dans le xml de préremplissage, les valeurs des éléments chevauchés sont fusionnées. Le code XML envoyé est doté d’une structure semblable à celle du code XML de préremplissage, mais comporte plus de balises wrapper et certaines balises de données contextuelles de jeu de formulaires sont ajoutées à la fin.
 
-### Description des éléments XML de pré-remplissage  {#prefill-xml-elements-description}
+### Description des éléments XML de pré-remplissage {#prefill-xml-elements-description}
 
 Règles de syntaxe pour créer un fichier XML de préremplissage :
 
@@ -274,7 +274,7 @@ Règles de syntaxe pour créer un fichier XML de préremplissage :
 
 Elément racine du XML du jeu de formulaires. Il est conseillé de ne pas utiliser ce mot comme nom de rootSubform d’un formulaire dans le jeu de formulaires.
 
-### FS_DATA  {#fs-data}
+### FS_DATA {#fs-data}
 
 `parent elements:`
 
@@ -316,7 +316,7 @@ Cette balise indique le début du XML du formulaire HTML5. Cela est ajouté à l
 
 `children: xfa:data`
 
-### XFA : DATA {#xfa-data}
+### XFA:DATA {#xfa-data}
 
 `parent elements: xfa:datasets`
 
@@ -348,11 +348,11 @@ NOM DE LA BALISE DE L’ELEMENT RACINE
 
 Au cas où il y aurait un élément racine dans le XML prérempli, le nom de cet élément est également présent dans le XML envoyé. S’il n’existe aucun XML prérempli, le nom de l’élément rootElement est le nom du sous-formulaire racine du premier formulaire dans le jeu de formulaires dont la propriété dataRoot est définie sur « / ». En l’absence d’un tel formulaire, le nom de l’élément rootElement est **fs_dummy_root**, qui est un mot-clé réservé.
 
-## Jeu de formulaires dans l’application AEM Forms  {#formset-in-workspace-app}
+## Jeu de formulaires dans l’application AEM Forms {#formset-in-workspace-app}
 
 L’application AEM Forms permet aux agents de terrain de synchroniser leurs périphériques mobiles avec un serveur AEM Forms, puis de travailler sur leurs tâches. L’application est exécutée même lorsque le périphérique est hors ligne et que les données y sont enregistrées en local. A l’aide des fonctions d’annotation comme les photos, les agents de terrain peuvent fournir des informations précises à intégrer dans des processus d’entreprise.
 
-Pour plus d’informations sur l’application AEM Forms, voir [Application AEM Forms](/help/forms/using/aem-forms-app.md).
+Pour plus d’informations sur l’application AEM Forms, voir [application AEM Forms](/help/forms/using/aem-forms-app.md).
 
 ## Limites connues - Modèles qui ne sont pas pleinement pris en charge dans le jeu de formulaires {#known-limitations-patterns-not-fully-supported-in-form-set}
 

@@ -1,8 +1,8 @@
 ---
 title: Gestion des activités
-seo-title: Gestion des activités
+seo-title: Managing Activities
 description: 'La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques :'
-seo-description: 'La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques :'
+seo-description: The Activities console enables you to create, organize, and manage the marketing activities of your brands
 uuid: 544be007-3d4b-4f55-a7f8-34a3dfcaf503
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
 exl-id: 269eee08-5fca-4621-a56e-93db9361fa64
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 95%
+source-wordcount: '2005'
+ht-degree: 96%
 
 ---
 
-# Gestion des activités {#managing-activities}
+# Gestion des activités{#managing-activities}
 
 La console Activités vous permet de créer, d’organiser et de gérer les [activités](/help/sites-authoring/personalization.md#activities) marketing de vos marques :
 
@@ -46,12 +46,11 @@ Les activités sont présentées avec un libellé décrivant le type d’activit
 >Les types d’activités disponibles sont déterminés par ce qui suit :
 >
 >* Si l’option **xt_only** est activée sur le client Adobe Target (clientcode) utilisé sur AEM pour se connecter à Adobe Target, vous pouvez créer **uniquement** des activités XT dans AEM.
-   >
-   >
-* Si les options **xt_only** **ne sont pas** activées sur le client Adobe Target (clientcode), vous pouvez créer **à la fois** des activités XT et A/B dans AEM.
 >
+>* Si les options **xt_only** **ne sont pas** activées sur le client Adobe Target (clientcode), vous pouvez créer **à la fois** des activités XT et A/B dans AEM.
+
 >
-**Remarque :** L’option **xt_only** est un paramètre appliqué à un certain client Adobe Target (clientcode) et peut uniquement être modifiée directement dans Adobe Target. Vous ne pouvez pas activer ni désactiver cette option dans AEM.
+>**Remarque :** L’option **xt_only** est un paramètre appliqué à un certain client Adobe Target (clientcode) et peut uniquement être modifiée directement dans Adobe Target. Vous ne pouvez pas activer ni désactiver cette option dans AEM.
 
 >[!CAUTION]
 >
@@ -74,15 +73,15 @@ Quand vous créez une marque avec la console Activités, elle apparaît égaleme
 1. Saisissez le titre de la marque tel qu’il doit apparaître dans les consoles Activités et Offres. Si vous le souhaitez, saisissez ou sélectionnez une ou plusieurs balises à associer à la marque.
 1. Cliquez ou appuyez sur **Créer**. Votre marque apparaît dans la console Activités.
 
-## Ajout/modification d’une activité à l’aide de la console Activités  {#adding-editing-an-activity-using-the-activities-console}
+## Ajout/modification d’une activité à l’aide de la console Activités {#adding-editing-an-activity-using-the-activities-console}
 
 Ajoutez une activité ou modifiez une activité existante pour concentrer vos efforts marketing sur certaines audiences. Lorsque vous créez/modifiez une activité, vous spécifiez les informations suivantes :
 
 * **Nom :** nom de l’activité.
-* **Moteur de ciblage :**[AEM](/help/sites-authoring/personalization.md#aem) ou [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) comme moteur du contenu ciblé.
+* **Moteur de ciblage :** [AEM](/help/sites-authoring/personalization.md#aem) ou [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) comme moteur du contenu ciblé.
 
 * **Sélectionnez une configuration Target :** (Adobe Target uniquement) Configuration du cloud que cette activité doit utiliser pour se connecter à Adobe Target. Cette option s’affiche uniquement lorsque Adobe Target est sélectionné pour le moteur de ciblage.
-* **Type d’activité :** type d’activité - Test A/B ou Ciblage d’expérience.
+* **Type d’activité :** Type d’activité - Test A/B ou Ciblage de l’expérience
 * **Objectif :** (facultatif) description de l’activité.
 * **Expériences :** correspond aux noms d’audience et aux segments marketing que vous ciblez.
 * **Pourcentages de trafic :** si Test A/B est sélectionné, vous pouvez modifier le volume de trafic (en pourcentage) affecté à chaque expérience.
@@ -146,7 +145,7 @@ Vous devez publier les activités afin de les rendre disponibles. À l’inverse
 
 >[!NOTE]
 >
->Lors de l’annulation de la publication d’une activité, son état ne change pas, sauf si vous actualisez la page.
+>Lorsque vous annulez la publication d’une activité, l’état de l’activité ne change que si vous actualisez la page.
 
 Pour publier des activités ou annuler leur publication :
 
@@ -157,14 +156,14 @@ Pour publier des activités ou annuler leur publication :
 
 1. Pour publier, appuyez ou cliquez sur **Publier**. Pour annuler la publication, appuyez ou cliquez sur **Annuler la publication**. Les activités sont publiées ou leur publication est annulée, et leur état change dans la console Activités (une actualisation peut être nécessaire).
 
-## Activités sur les instances de création et de publication   {#activities-on-author-and-publish-instances}
+## Activités sur les instances de création et de publication {#activities-on-author-and-publish-instances}
 
 Lorsqu’une activité qui utilise le moteur ciblé Adobe Target est activée, une seconde activité est créée sur l’instance de publication :
 
 * L’activité sur l’instance de création suit l’activité sur l’instance de création et s’avère utile pour simuler l’expérience des visiteurs. Les analyses enregistrées pour cette activité ne reflètent que ce qui se produit sur l’instance de création.
 * L’activité sur l’instance de publication reflète l’activité sur le serveur de publication et y réagit. Il s’agit de l’activité qui s’exécute sur le site web public. Seule l’activité de publication est pertinente pour suivre et analyser l’utilisation du site public.
 
-## Affichage des performances et conversion des expériences gagnantes (test A/B)   {#viewing-performance-and-converting-winning-experiences-a-b-test}
+## Affichage des performances et conversion des expériences gagnantes (test A/B) {#viewing-performance-and-converting-winning-experiences-a-b-test}
 
 Vous pouvez afficher les performances de n’importe quelle activité Adobe Target (XT ou A/B). Si vous utilisez les tests A/B, vous pouvez également convertir l’expérience gagnante, qui devient alors l’expérience par défaut.
 
@@ -172,7 +171,7 @@ Pour afficher les performances des activités et convertir les expériences gagn
 
 1. Dans **Personnalisation**, cliquez ou appuyez sur **Activités** pour accéder à la console **Activités**.
 1. Cliquez ou appuyez sur la marque dont vous souhaitez voir les activités.
-1. Sélectionnez l’activité, cliquez ou appuyez sur **Afficher les propriétés **, cliquez sur l’onglet **Rapports** et sélectionnez l’activité pour laquelle vous souhaitez afficher les performances ou convertir des expériences gagnantes. Les données de performances sont affichées.
+1. Sélectionnez l’activité, cliquez ou appuyez sur **Afficher les propriétés **et cliquez sur le bouton **Rapports** et sélectionnez l’activité pour laquelle vous souhaitez afficher les performances/convertir des expériences gagnantes. Les données de performances sont affichées.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -189,7 +188,7 @@ Pour afficher les performances des activités et convertir les expériences gagn
 
 1. Cliquez ou appuyez sur **Oui** pour confirmer que vous souhaitez convertir le gagnant, c’est-à-dire désactiver l’expérience actuelle et la remplacer par le contenu de l’expérience gagnante.
 
-## Synchronisation des activités avec Adobe Target   {#synchronizing-activities-with-adobe-target}
+## Synchronisation des activités avec Adobe Target {#synchronizing-activities-with-adobe-target}
 
 Les activités qui utilisent le moteur de ciblage Adobe Target sont synchronisées avec les campagnes Adobe Target. Une activité est automatiquement synchronisée avec Adobe Target lorsque les conditions suivantes sont réunies :
 
@@ -210,7 +209,7 @@ Les activités _author sont synchronisées immédiatement lorsque l’activité 
 
 Les activités de publication sont synchronisées lorsque l’activité est publiée sur l’instance de publication AEM.
 
-## Résolution des problèmes de synchronisation d’activité   {#troubleshooting-activity-synchronization}
+## Résolution des problèmes de synchronisation d’activité {#troubleshooting-activity-synchronization}
 
 Lorsque AEM synchronise une activité avec Adobe Target, AEM ajoute une propriété appelée `thirdPartyId`. La valeur de cette propriété est basée sur le chemin de l’activité dans le référentiel AEM. Dans Adobe Target, les campagnes ne peuvent avoir la même valeur pour la propriété `thirdPartyId`. Par conséquent, une activité ne se synchronise pas si une campagne existante (d’un autre type A/B ou XT) dans Adobe Target utilise la même valeur pour `thirdPartyId`.
 
@@ -228,7 +227,7 @@ Pour éviter des problèmes de synchronisation, donnez toujours des noms uniques
 
 >[!NOTE]
 >
->Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId t`à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, `thirdPartyId` n’est pas supprimé. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Ainsi, les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
+>Lorsque vous créez une campagne dans Adobe Target, elle affecte une propriété appelée `thirdPartyId t`Pour chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, `thirdPartyId` n’est pas supprimé. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Ainsi, les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
 >
 >Si vous utilisez le même nom dans le même type de campagne, vous remplacerez la campagne existante.
 >

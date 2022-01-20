@@ -1,8 +1,8 @@
 ---
 title: Bannières de carrousel
-seo-title: Bannières de carrousel
+seo-title: Carousel Banners
 description: Découvrez comment utiliser des bannières de carrousel dans Dynamic Media
-seo-description: Découvrez comment utiliser des bannières de carrousel dans Dynamic Media
+seo-description: Learn how to work with carousel banners in dynamic media
 uuid: 6d6de9ac-a6e1-4f07-a610-cc84e26bf76b
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 exl-id: d2fdad3f-513b-4147-a7c6-a3c1b64dd6e3
-feature: Bannières de carrousel
+feature: Carousel Banners
 role: User
 source-git-commit: 76592d2714106f96184196b9e8db012801bf7c28
 workflow-type: tm+mt
-source-wordcount: '4749'
+source-wordcount: '4735'
 ht-degree: 84%
 
 ---
@@ -115,7 +115,7 @@ Il peut parfois être nécessaire de consulter les spécialistes informatiques r
 
 La majorité des implémentations d’aperçu rapide utilisent le paradigme suivant :
 
-* L’utilisateur active un élément d’interface utilisateur sur le site web. Par exemple, en cliquant sur un bouton **[!UICONTROL Aperçu rapide]**.
+* L’utilisateur active un élément d’interface utilisateur sur le site web. Par exemple, en cliquant sur un **[!UICONTROL Aperçu rapide]** bouton .
 * Le site web envoie une demande Ajax au serveur principal afin de charger les données ou le contenu de l’aperçu rapide, le cas échéant.
 * Les données de l’aperçu rapide sont traduites en contenu en préparation du rendu sur la page web.
 * Enfin, le code en front-end effectue le rendu visuel de ce contenu à l’écran.
@@ -124,7 +124,7 @@ L’approche consiste alors à visiter différentes zones du site web existant o
 
 Normalement, il n’est pas nécessaire d’utiliser des outils de débogage spécialisés. Les navigateurs web modernes incluent des inspecteurs web qui font un travail correct. Vous trouverez ci-dessous quelques exemples de navigateurs web qui incluent des inspecteurs web :
 
-* Pour afficher toutes les requêtes HTTP sortantes dans Google Chrome, appuyez sur F12 (Windows) ou Command-Option-I (Mac) pour ouvrir le panneau Outils de développement, puis appuyez sur l’onglet **[!UICONTROL Réseau]** .
+* Pour afficher toutes les requêtes HTTP sortantes dans Google Chrome, appuyez sur F12 (Windows) ou Command-Option-I (Mac) pour ouvrir le panneau Outils de développement, puis appuyez sur la **[!UICONTROL Réseau]** .
 * Dans Firefox, vous pouvez activer le plug-in Firebug en appuyant sur F12 (Windows) ou Contrôle-Option-I (Mac) et utilisez l’onglet Réseau ou vous pouvez utiliser l’outil Inspecteur intégré et son onglet Réseau.
 
 Lorsque la surveillance de réseau est activée dans le navigateur, déclenchez l’aperçu rapide sur la page.
@@ -137,7 +137,7 @@ Dans le cas le plus simple, la seule partie variable dans l’URL de l’aperçu
 
 Cependant, dans les cas complexes, l’URL d’aperçu rapide comporte différents éléments variables en complément du SKU, comme l’identifiant de la catégorie, le code couleur, le code taille, etc. Dans ce cas, chaque élément est une variable distincte dans la définition des données de zone réactive ou de zone cliquable dans la fonction de bannière de carrousel.
 
-Examinez les exemples suivants d’URL d’aperçu rapide et les variables de zone réactive ou de zone cliquable qui en résultent :
+Consultez les exemples d’URL d’aperçu rapide ci-dessous et les variables de zone réactive et de zone cliquable obtenues :
 
 <table> 
  <tbody> 
@@ -183,7 +183,7 @@ Si vous avez déjà chargé les images à utiliser, passez à l’étape suivant
 
 Pour charger des bannières d’image, voir [Chargement de ressources](managing-assets-touch-ui.md).
 
-## Création d’ensembles de carrousels  {#creating-carousel-sets}
+## Création d’ensembles de carrousels {#creating-carousel-sets}
 
 >[!NOTE]
 >
@@ -192,16 +192,16 @@ Pour charger des bannières d’image, voir [Chargement de ressources](managing-
 **Pour créer un ensemble de carrousel** :
 
 1. Dans Ressources, cherchez le dossier dans lequel vous souhaitez créer l’ensemble de carrousel, puis appuyez sur **[!UICONTROL Créer > Ensemble de carrousel]**.
-1. Sur la page **[!UICONTROL Éditeur de bannière de carrousel]** , appuyez sur **[!UICONTROL Appuyez pour ouvrir le sélecteur de ressources]** afin de sélectionner l’image de votre première diapositive.
+1. Sur le **[!UICONTROL Éditeur de bannière de carrousel]** page, appuyez sur **[!UICONTROL Appuyez sur pour ouvrir le sélecteur de ressources.]** pour sélectionner l’image de votre première diapositive.
 
-   Sur la page **[!UICONTROL Éditeur de bannière de carrousel]** , effectuez l’une des opérations suivantes :
+   Sur le **[!UICONTROL Éditeur de bannière de carrousel]** effectuez l’une des opérations suivantes :
 
    * Dans le coin supérieur gauche de la page, appuyez sur l’icône **[!UICONTROL Ajouter une diapositive]**.
    * Près du milieu de la page, appuyez sur **[!UICONTROL Appuyer pour ouvrir le sélecteur de ressources]**.
 
    Appuyez pour sélectionner les ressources à inclure dans votre ensemble de carrousel. Les ressources sélectionnées sont cochées. Lorsque vous avez terminé, en haut à droite de la page, appuyez sur **[!UICONTROL Sélectionner]**.
 
-   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant sur **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis appuyez sur l’icône **[!UICONTROL Filtre]** de la barre d’outils. Modifiez la vue en appuyant sur l’icône **[!UICONTROL Afficher]** et en sélectionnant **[!UICONTROL Mode Colonnes]**, **[!UICONTROL Mode Carte]** ou **[!UICONTROL Mode Liste]**.
+   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant sur **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis appuyez sur l’icône **[!UICONTROL Filtre]** de la barre d’outils. Modifiez l’affichage en appuyant sur la **[!UICONTROL Affichage]** icône et sélection **[!UICONTROL Mode Colonnes]**, **[!UICONTROL Mode Carte]** ou **[!UICONTROL Mode Liste]**.
 
    Pour plus d’informations, voir [Utilisation de sélecteurs](working-with-selectors.md).
 
@@ -212,7 +212,7 @@ Pour charger des bannières d’image, voir [Chargement de ressources](managing-
    * Pour supprimer une image, sélectionnez-la, puis appuyez sur **[!UICONTROL Supprimer la diapositive]** dans la barre d’outils.
    * Pour appliquer une préconfiguration, à proximité du coin supérieur droit de la page, appuyez sur la liste déroulante de paramètres prédéfinis, puis sélectionnez un paramètre prédéfini à appliquer à l’ensemble simultanément.
 
-   Pour supprimer une diapositive, appuyez sur la diapositive, puis sur **[!UICONTROL Supprimer la diapositive]** dans la barre d’outils. Pour déplacer une diapositive, appuyez sur l’icône Réorganiser et maintenez le pointeur enfoncé jusqu’à l’emplacement souhaité.
+   Pour supprimer une diapositive, appuyez sur la diapositive, puis appuyez sur **[!UICONTROL Supprimer la diapositive]** dans la barre d’outils. Pour déplacer une diapositive, appuyez sur l’icône Réorganiser et maintenez le pointeur enfoncé jusqu’à l’emplacement souhaité.
 
 1. Une fois que vous avez ajouté les images aux diapositives, vous pouvez ajouter à votre image une zone réactive, une zone cliquable, ou les deux. Voir [Ajout de zones réactives ou cliquables](#adding-hotspots-or-image-maps-to-an-image-banner).
 1. Vous pouvez modifier l’apparence et le comportement des ensembles de carrousels en appuyant ou en cliquant sur les onglets Comportement et Apparence et en apportant des ajustements à l’apparence de votre bannière de carrousel et au comportement des éléments spécifiques. Pour plus d’informations sur l’utilisation de l’éditeur de visionneuses, reportez-vous à la section [Gestion des paramètres prédéfinis de visionneuse](viewer-presets.md).
@@ -245,7 +245,7 @@ Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
 À mesure que vous ajoutez des zones réactives ou des zones cliquables à une image, pensez à enregistrer votre travail. **[!UICONTROL Les options Annuler et Rétablir, proches du coin supérieur droit de la page, sont prises en charge au cours de la session de création/modification actuelle.]******
 
-Une fois la création de votre bannière de carrousel terminée, vous pouvez éventuellement utiliser **[!UICONTROL Aperçu]** pour afficher une représentation de la manière dont votre bannière de carrousel apparaîtra pour les clients.
+Lorsque vous avez terminé de créer votre bannière de carrousel, vous pouvez éventuellement utiliser **[!UICONTROL Aperçu]** pour afficher une représentation de la manière dont votre bannière de carrousel s’affiche pour les clients.
 
 Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners).
 
@@ -279,32 +279,32 @@ Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-car
 
    * Appuyez sur **[!UICONTROL Aperçu rapide]**.
 
-      * Si vous êtes un client AEM Sites et eCommerce, appuyez sur l’icône **[!UICONTROL Sélecteur de produit]** (loupe) pour ouvrir la page **[!UICONTROL Sélectionner un produit]**. Appuyez sur le produit que vous souhaitez utiliser, puis sur la coche dans le coin supérieur droit de la page pour revenir à l’**[!UICONTROL éditeur de bannières de carrousel]**.
+      * Si vous êtes client AEM Sites et eCommerce, appuyez sur la variable **[!UICONTROL Sélecteur de produits]** (loupe) pour ouvrir la **[!UICONTROL Sélectionner un produit]** page. Appuyez sur le produit à utiliser, puis sur la coche dans le coin supérieur droit de la page pour revenir à la **[!UICONTROL Éditeur de bannière de carrousel]**.
       * Si vous n’êtes pas client AEM Sites ou eCommerce
 
          * Voir [Identification des variables de zone réactive](#identifying-hotspot-and-image-map-variables), car vous souhaitez peut-être définir ces variables.
-         * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte **[!UICONTROL Valeur de SKU]** , saisissez la SKU (unité de gestion des stocks) du produit, qui est un identifiant unique pour chaque produit ou service distinct que vous proposez. La valeur de la SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer la zone réactive sur laquelle l’utilisateur appuie et l’aperçu rapide d’une SKU spécifique.
+         * Ensuite, entrez manuellement la valeur de SKU. Dans le **[!UICONTROL Valeur SKU]** Champ de texte, saisissez la SKU (unité de gestion des stocks) du produit, qui est un identifiant unique pour chaque produit ou service distinct que vous proposez. La valeur de la SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer la zone réactive sur laquelle l’utilisateur appuie et l’aperçu rapide d’une SKU spécifique.
          * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide dont vous avez besoin pour identifier un produit, appuyez sur **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Mens` est une variable ajoutée.
          * Pour plus d’informations, voir [Utilisation de sélecteurs](working-with-selectors.md).
    * Appuyez sur **[!UICONTROL Lien hypertexte]**.
 
-      * Si vous êtes un client AEM Sites, appuyez sur l’icône **[!UICONTROL Sélecteur de site]** (dossier) pour accéder à une URL.
+      * Si vous êtes un client AEM Sites, appuyez sur **[!UICONTROL Sélecteur de site]** pour accéder à une URL.
 
          >[!NOTE]
          >La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
 
-      * Si vous êtes un client autonome, dans le champ de texte **[!UICONTROL HREF]** , spécifiez le chemin URL complet vers une page web liée.
+      * Si vous êtes un client autonome, dans la variable **[!UICONTROL HREF]** Champ de texte, indiquez le chemin URL complet vers une page web liée.
 
          Veillez à spécifier si vous souhaitez ouvrir le lien dans un nouvel onglet du navigateur (paramètre par défaut recommandé) ou dans le même onglet.
 
          Pour plus d’informations, voir [Utilisation de sélecteurs](working-with-selectors.md).
    * Appuyez sur **[!UICONTROL Fragment d’expérience]**.
 
-      * Si vous êtes un client AEM Sites, appuyez sur l’icône **[!UICONTROL Rechercher]** (loupe) pour ouvrir la page Fragment d’expérience. Appuyez sur le fragment d’expérience que vous souhaitez utiliser, puis appuyez sur **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page pour revenir à la page de gestion des zones réactives.
+      * Si vous êtes un client AEM Sites, appuyez sur **[!UICONTROL Rechercher]** (loupe) pour ouvrir la page Fragment d’expérience. Appuyez sur le fragment d’expérience que vous souhaitez utiliser, puis appuyez sur **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page pour revenir à la page de gestion des zones réactives.
 
          Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
-         **Remarque** : N’oubliez pas que les outils de partage sur les médias sociaux dans la bannière de carrousel ne sont pas pris en charge lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+         **Remarque**: N’oubliez pas que les outils de partage sur les médias sociaux dans la bannière de carrousel ne sont pas pris en charge lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
       * Indiquez la largeur et la hauteur du fragment d’expérience tel qu’il apparaît dans la bannière.
 
@@ -319,7 +319,7 @@ Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-car
 
    Reportez-vous à la section [Ajout d’un ensemble de carrousel à la page d’entrée de votre site web](#adding-a-carousel-banner-to-your-website-page).
 
-## Modification d’ensembles de carrousels  {#editing-carousel-sets}
+## Modification d’ensembles de carrousels {#editing-carousel-sets}
 
 >[!NOTE]
 >
@@ -346,9 +346,9 @@ Si vous modifiez des images interactives avec des zones réactives et que vous r
 
 1. Pour modifier l’ensemble de carrousel, effectuez l’une des opérations suivantes :
 
-   * Pour ajouter une diapositive, appuyez sur l’icône **[!UICONTROL Ajouter une diapositive]** , puis accédez à la ressource à ajouter à cette diapositive et appuyez sur la coche.
+   * Pour ajouter une diapositive, appuyez sur la **[!UICONTROL Ajouter une diapositive]** puis accédez à la ressource à ajouter à cette diapositive et appuyez sur la coche.
    * Pour réorganiser les diapositives, faites glisser une diapositive vers un nouvel emplacement (sélectionnez l’icône Réorganiser pour déplacer les éléments).
-   * Pour ajouter une zone réactive ou une zone cliquable, appuyez sur les icônes de zone réactive ou de zone cliquable et voir [Ajout de zones réactives et de zones cliquables](#adding-hotspots-or-image-maps-to-an-image-banner).
+   * Pour ajouter une zone réactive ou une zone cliquable, appuyez sur les icônes de zone réactive ou de zone cliquable et reportez-vous à la section [ajout de zones réactives et de zones cliquables](#adding-hotspots-or-image-maps-to-an-image-banner).
    * Pour modifier l’aspect ou le comportement de l’ensemble de carrousel, appuyez sur l’onglet **[!UICONTROL Apparences]** ou l’onglet **[!UICONTROL Comportement]**, puis définissez les options de votre choix.
    * Pour modifier les zones réactives ou cliquables, sur la diapositive appropriée, sélectionnez une zone réactive ou cliquable, puis apportez les modifications nécessaires à l’aide de l’onglet **[!UICONTROL Actions]**.
    * Pour supprimer une diapositive, sélectionnez-la, puis appuyez sur **[!UICONTROL Supprimer la diapositive]** dans la barre d’outils.
@@ -357,7 +357,7 @@ Si vous modifiez des images interactives avec des zones réactives et que vous r
 
 ## (Facultatif) Aperçu des bannières de carrousel {#optional-previewing-carousel-banners}
 
-Vous pouvez utiliser **[!UICONTROL Aperçu]** pour voir à quoi ressemblera votre bannière de carrousel pour les clients et tester les zones réactives et les zones cliquables des bannières de carrousel pour vous assurer qu’elles se comportent comme prévu.
+Vous pouvez utiliser **[!UICONTROL Aperçu]** pour voir à quoi ressemblera votre bannière de carrousel pour les clients et pour tester les zones réactives et cliquables des bannières de carrousel afin de vous assurer qu’elles se comportent comme prévu.
 
 Lorsque vous êtes satisfait de la bannière de carrousel, vous pouvez la publier.
 
@@ -381,7 +381,7 @@ Vous pouvez afficher un aperçu des bannières de carrousel dans l’éditeur de
 **Pour afficher un aperçu des bannières de carrousel à partir de la liste Visionneuses** :
 
 1. Dans **[!UICONTROL Ressources]**, accédez à une bannière de carrousel que vous avez créée et appuyez pour l’afficher.
-1. Dans le coin supérieur gauche de la page **[!UICONTROL Aperçu]**, appuyez sur l’icône **[!UICONTROL Contenu]**.
+1. Près du coin supérieur gauche de la **[!UICONTROL Aperçu]** , appuyez sur **[!UICONTROL Contenu]** icône .
 1. Dans la liste **[!UICONTROL Visionneuses]** du panneau situé du côté gauche de la page, appuyez sur le nom du paramètre prédéfini de visionneuse de bannière de carrousel que vous souhaitez utiliser.
 1. Appuyez sur les zones réactives ou cliquables de l’image pour tester les actions associées.
 
@@ -395,7 +395,7 @@ De plus, si vous modifiez une image interactive publiée existante que vous util
 
 Voir [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md) pour savoir comment publier des bannières de carrousel.
 
-## Ajout d’une bannière de carrousel à votre page web  {#adding-a-carousel-banner-to-your-website-page}
+## Ajout d’une bannière de carrousel à votre page web {#adding-a-carousel-banner-to-your-website-page}
 
 Une fois que vous avez chargé les images de la bannière pour créer un carrousel, ajouté des zones réactives et/ou cliquables à la bannière et publié l’ensemble de carrousel, vous êtes prêt à l’ajouter à votre page web existante.
 
@@ -415,7 +415,7 @@ Cependant, si vous êtes un client AEM Assets autonome, vous pouvez ajouter man
 
 Cette tâche ne s’applique que si vous êtes un client AEM Assets autonome.
 
-La dernière étape de ce processus consiste à intégrer la bannière de carrousel à une mise en oeuvre d’aperçu rapide existante sur votre site web. Chaque mise en œuvre de l’aperçu rapide est unique, et une approche spécifique est nécessaire, ce qui implique généralement l’assistance d’un informaticien compétent en systèmes frontaux.
+La dernière étape de cette procédure consiste à intégrer la bannière de carrousel à la mise en œuvre d’un aperçu rapide existant à votre site web. Chaque mise en œuvre de l’aperçu rapide est unique, et une approche spécifique est nécessaire, ce qui implique généralement l’assistance d’un informaticien compétent en systèmes frontaux.
 
 L’implémentation d’aperçus rapides existante représente normalement une chaîne d’actions entre-associées qui se produisent sur la page web dans l’ordre suivant :
 

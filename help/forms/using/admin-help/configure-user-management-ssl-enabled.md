@@ -1,8 +1,8 @@
 ---
 title: Configuration de User Management pour un serveur LDAP compatible SSL
-seo-title: Configuration de User Management pour un serveur LDAP compatible SSL
+seo-title: Configure User Management for an SSL-enabled LDAP server
 description: Découvrez comment configurer User Management pour un serveur LDAP SSL afin de permettre le fonctionnement correct de la synchronisation sur LDAPS.
-seo-description: Découvrez comment configurer User Management pour un serveur LDAP SSL afin de permettre le fonctionnement correct de la synchronisation sur LDAPS.
+seo-description: Learn how  to configure User Management for an SSL-enabled LDAP server to enable synchronization to work properly over LDAPS.
 uuid: 4b3f8ac7-fa38-4adf-a851-82d55fe431fe
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
 exl-id: 9ed22c75-bce7-4d26-a4cd-a58e41e5068e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 90%
+source-wordcount: '278'
+ht-degree: 89%
 
 ---
 
 # Configuration de User Management pour un serveur LDAP compatible SSL {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
-Pour un bon fonctionnement de la synchronisation sur LDAPS, les certificats LDAP délivrés par l’autorité de certification doivent être présents dans l’environnement JRE (Java Runtime Environment) du serveur d’applications. Importez le certificat dans le fichier cacerts JRE du serveur d’applications, qui se trouve généralement dans le répertoire *[JAVA_HOME]*/jre/lib/security/cacerts.
+Pour un bon fonctionnement de la synchronisation sur LDAPS, les certificats LDAP délivrés par l’autorité de certification doivent être présents dans l’environnement JRE (Java Runtime Environment) du serveur d’applications. Importez le certificat dans le fichier cacerts JRE du serveur d’applications, qui se trouve généralement dans la variable *[JAVA_HOME]* répertoire /jre/lib/security/cacerts.
 
 1. Activez SSL sur le serveur d’annuaire. Pour plus d’informations, consultez la documentation fournie avec l’annuaire.
 1. Exportez un certificat client depuis le serveur d’annuaire.

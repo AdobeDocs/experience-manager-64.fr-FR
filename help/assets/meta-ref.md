@@ -18,7 +18,7 @@ La référence ci-après contient des informations sur un schéma de métadonné
 
 ## Dublin Core {#dublin-core}
 
-La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour décrire les ressources afin de faciliter leur recherche. Dans [!DNL Experience Manager] Assets, Dublin Core décrit les ressources numériques, notamment la vidéo, le son, les images et les documents.
+La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour décrire les ressources afin de faciliter leur recherche. Dans [!DNL Experience Manager] Assets, Dublin Core décrit les ressources numériques, notamment les vidéos, le son, les images et les documents.
 
 Le DCMES (Dublin Core Metadata Element Set) contient 15 éléments de métadonnées qui sont répertoriés dans le tableau ci-après. Chaque élément Dublin Core est facultatif et peut être utilisé plusieurs fois. Vous pouvez ajouter ou supprimer des informations de métadonnées Dublin Core comme vous le feriez pour les métadonnées spécifiques au type de média.
 

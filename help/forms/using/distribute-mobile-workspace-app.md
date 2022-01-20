@@ -1,8 +1,8 @@
 ---
 title: Distribuer l’application AEM Forms
-seo-title: Distribuer l’application AEM Forms
+seo-title: Distribute AEM Forms app
 description: Les solutions MDM (Mobile Device Management) permettent le déploiement à grande échelle des applications sur des périphériques mobiles.
-seo-description: Les solutions MDM (Mobile Device Management) permettent le déploiement à grande échelle des applications sur des périphériques mobiles.
+seo-description: Use Mobile Device Management (MDM) for the large-scale deployment of apps on mobile devices.
 uuid: 8a2ce42b-5e9b-42c1-a945-c069f6152f6e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 exl-id: c1bf0a0e-70f7-41dd-8b1a-c114d89a265b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '243'
 ht-degree: 92%
 
 ---
@@ -24,7 +24,7 @@ Les solutions MDM (Mobile Device Management) permettent le déploiement à grand
 >
 >Cette distribution s’applique aux périphériques iOS et Android uniquement.
 
-## Fonctions clés que proposent généralement les solutions MDM :  {#main-features-generally-provided-by-mdm-solutions}
+## Fonctions clés que proposent généralement les solutions MDM : {#main-features-generally-provided-by-mdm-solutions}
 
 * Enregistrement des périphériques dans votre environnement d’entreprise
 * Configuration et mise à jour des paramètres des périphériques

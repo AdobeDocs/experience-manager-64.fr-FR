@@ -193,9 +193,9 @@ Pour les notifications de tâche uniquement, le processus des formulaires inclut
 >
 >Flex Workspace est obsolète pour la version d’AEM Forms.
 
-Si votre solution est déployée dans un environnement organisé en grappes, remplacez `@@notification-host@@` par l’adresse de la grappe.
+Si votre solution est déployée dans un environnement en grappe, remplacez `@@notification-host@@` avec l’adresse de la grappe.
 
-`<`** `>` PORTest le numéro de port de l’écouteur HTTP pour le serveur d’applications. Les ports d’écouteur HTTP par défaut pour les serveurs d’applications pris en charge sont les suivants :
+`<`*PORT* `>` est le numéro de port de l’écouteur HTTP pour le serveur d’applications. Les ports d’écouteur HTTP par défaut pour les serveurs d’applications pris en charge sont les suivants :
 
 **JBoss :** 8080
 
@@ -203,7 +203,7 @@ Si votre solution est déployée dans un environnement organisé en grappes, rem
 
 **IBM WebSphere :** 9080
 
-Pour que ces URL fonctionnent correctement, remplacez `<`*PORT* `>` par le numéro de port approprié à votre environnement.
+Pour que ces URL fonctionnent correctement, remplacez `<`*PORT* `>` avec le numéro de port approprié à votre environnement.
 
 >[!NOTE]
 >
@@ -211,27 +211,27 @@ Pour que ces URL fonctionnent correctement, remplacez `<`*PORT* `>` par le numé
 
 ### Sélecteur de variables {#variable-picker}
 
-La liste Sélectionneur de variables fournit des variables utiles que vous pouvez faire glisser vers les champs Objet ou Modèle de notification. Lorsque vous déposez une variable dans les zones Objet ou Modèle de notification, elle se transforme en nom réel de variable de processus des formulaires avec deux symboles @ de chaque côté, par exemple `@@taskid@@`.
+La liste Sélectionneur de variables fournit des variables utiles que vous pouvez faire glisser vers les champs Objet ou Modèle de notification. Lorsque vous déposez une variable dans les zones Objet ou Modèle de notification, elle se transforme en nom réel de variable de processus des formulaires avec deux symboles @ de chaque côté, par exemple : `@@taskid@@`.
 
 Pour les rappels, affectations de tâche et échéances des utilisateurs et des groupes, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
-**** descriptionContenu de la propriété Description, tel que défini dans l’étape utilisateur (point de départ, opération Assign Task ou opération Assign Multiple Tasks) du processus dans Workbench.
+**description** Contenu de la propriété Description, tel que défini dans l’étape utilisateur (point de départ, opération Assign Task ou opération Assign Multiple Tasks) du processus dans Workbench.
 
-**** instructionsContenu de la propriété Task Instructions, tel que défini dans l’étape utilisateur du processus dans Workbench.
+**instructions** Contenu de la propriété Task Instructions, tel que défini dans l’étape utilisateur du processus dans Workbench.
 
-**notification-** hostNom d’hôte du serveur d’applications AEM forms .
+**notification-host** Nom d’hôte du serveur d’applications AEM forms .
 
-**process-** nameNom du processus.
+**process-name** Nom du processus.
 
-**operation-** nameNom de l’étape.
+**operation-name** Nom de l’étape.
 
-**** taskidIdentifiant unique de la tâche en cours.
+**taskid** Identifiant unique de la tâche en cours.
 
-**** actionsGénère une liste numérotée d’itinéraires valides (par exemple, Approuver, Rejeter) sur lesquels le destinataire peut cliquer.
+**actions** Génère une liste numérotée d’itinéraires valides (par exemple, Approuver, Rejeter) sur lesquels le destinataire peut cliquer.
 
 De plus, pour les rappels, affectations de tâche et échéances de groupe, vous pouvez aussi utiliser les variables suivantes :
 
-**group-** nameNom du groupe auquel l’élément de travail est affecté.
+**group-name** Nom du groupe auquel l’élément de travail est affecté.
 
 >[!NOTE]
 >
@@ -239,21 +239,21 @@ De plus, pour les rappels, affectations de tâche et échéances de groupe, vous
 
 Pour les branches bloquées, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
-**branch-** idIdentifiant de branche.
+**branch-id** Identifiant de branche.
 
-**process-** idIdentifiant de l’instance de processus.
+**process-id** Identifiant de l’instance de processus.
 
-**notification-** hostNom d’hôte du serveur d’applications AEM forms .
+**notification-host** Nom d’hôte du serveur d’applications AEM forms .
 
 Pour les opérations bloquées, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
-**action-** idIdentifiant de l’opération.
+**action-id** Identifiant de l’opération.
 
-**branch-** idIdentifiant de branche.
+**branch-id** Identifiant de branche.
 
-**process-** idIdentifiant de l’instance de processus.
+**process-id** Identifiant de l’instance de processus.
 
-**notification-** hostNom d’hôte du serveur d’applications AEM forms .
+**notification-host** Nom d’hôte du serveur d’applications AEM forms .
 
 ### Utilisation d’une variable dans la zone Objet {#using-a-variable-in-the-subject-box}
 
@@ -271,7 +271,7 @@ Si vous saisissez le texte suivant dans le champ Modèle de notification pour de
 
 `Branch @@branch-id@@ has stalled! You have received this notification from @@notification-host@@.`
 
-L’administrateur reçoit un courrier électronique contenant le contenu suivant si le numéro de branche est le 4868 et que le nom du serveur est `ServerXYZ` :
+L’administrateur reçoit un courrier électronique contenant le contenu suivant si le numéro de branche est 4868 et que le nom du serveur est `ServerXYZ`:
 
 `Branch 4868 has stalled! You have received this notification from ServerXYZ.`
 

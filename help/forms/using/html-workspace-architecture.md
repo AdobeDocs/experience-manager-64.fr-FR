@@ -1,8 +1,8 @@
 ---
 title: Architecture de l’espace de travail AEM Forms
-seo-title: Architecture de l’espace de travail AEM Forms
+seo-title: AEM Forms Workspace Architecture
 description: Informations conceptuelles et présentation de l’architecture de l’espace de travail LiveCycle AEM Forms.
-seo-description: Informations conceptuelles et présentation de l’architecture de l’espace de travail LiveCycle AEM Forms.
+seo-description: Conceptual information and overview of the architecture of LiveCycle AEM Forms workspace.
 uuid: e1a48452-ed44-4ea7-ba38-d961c8faafa5
 contentOwner: robhagat
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 exl-id: 30bde8d6-7959-4e4b-a6f4-faf52444e67a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 81%
+source-wordcount: '219'
+ht-degree: 79%
 
 ---
 

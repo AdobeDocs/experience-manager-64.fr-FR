@@ -2,7 +2,7 @@
 title: Notes de mise à jour d’AEM Sites
 seo-title: AEM Sites
 description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.4 Sites.
-seo-description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.4 Sites.
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Sites.
 uuid: 593928ec-5d1a-4a88-bd73-897421c5984a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,7 +12,7 @@ discoiquuid: 40225441-7cfe-4395-ac71-60504b42e764
 exl-id: 19ec5c00-eae5-4e7f-9dc5-c7a88b06fd2a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1010'
 ht-degree: 80%
 
 ---
@@ -103,7 +103,7 @@ Voir la documentation suivante pour une description détaillée des amélioratio
 * Les mises à jour de traduction dynamique reconnaissent désormais les nouvelles pages ajoutées à une branche principale de langue
 * Introduction de la création de rapports d’état dans le mode Liste de l’administration de site
 
-### Gestion multisite (MSM, Multi-Site Management)  {#multi-site-management-msm}
+### Gestion multisite (MSM, Multi-Site Management) {#multi-site-management-msm}
 
 * Évolutivité MSM améliorée en utilisant un index basé sur Oak plutôt qu’en mémoire (LiveCopyIndex)
 
@@ -118,7 +118,7 @@ Voir la documentation suivante pour une description détaillée des amélioratio
 * Dossiers d’assistance pour l’organisation des segments en fonction du site/contexte (CQ-94620)
 * Emplacement par défaut des segments déplacé dans /conf pour disposer de listes de segments spécifiques en fonction du site/contexte.
 
-### AEM et Adobe Target   {#aem-amp-adobe-target-nbsp}
+### AEM et Adobe Target  {#aem-amp-adobe-target-nbsp}
 
 * Intégration des fragments de contenu AEM à Adobe Target. La synchronisation des fragments d’expérience avec Adobe Target créera dans ce dernier des offres utilisables avec son outil de composition d’expérience visuelle afin de l’incorporer dans n’importe quelle expérience optimisée par Target.
 * Adobe Target mbox.js version 63 est désormais inclus. Adobe recommande de choisir at.js pour la mise en œuvre.
@@ -133,7 +133,7 @@ Voir la documentation suivante pour une description détaillée des amélioratio
 
 Voir la [page de notes de mise à jour sur Communities](/help/release-notes/communities-release-notes.md)
 
-## Module complémentaire Screens  {#screens-add-on}
+## Module complémentaire Screens {#screens-add-on}
 
 * Ajout de la prise en charge de la connexion des lecteurs Screens aux serveurs de publication AEM pour les téléchargements de commande, de contrôle et de canal (au lieu de se connecter directement sur le serveur de création AEM).
 * Ajout de la possibilité de regrouper les affectations des canaux dans les planifications.

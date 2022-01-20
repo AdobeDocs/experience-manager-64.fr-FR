@@ -2,12 +2,12 @@
 title: Traitement des ressources à l’aide des workflows et des gestionnaires de médias
 description: En savoir plus sur les différents gestionnaires de médias et sur la façon de les utiliser dans les workflows afin d’effectuer des tâches sur les ressources.
 contentOwner: AG
-feature: Workflow,Rendus
+feature: Workflow,Renditions
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
 source-git-commit: bc27dee618ee57dc188c7f35a1af4d1dba80cf1b
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2225'
 ht-degree: 45%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 45%
 
 Adobe Experience Manager Assets fournit un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Un workflow définit une tâche type de gestion et de traitement des ressources, puis délègue les tâches spécifiques aux gestionnaires de médias, par exemple la génération de miniatures ou l’extraction de métadonnées.
 
-Un workflow peut être défini de manière à s’exécuter automatiquement lorsqu’une ressource d’un type ou d’un format particulier est chargée sur le serveur. Les étapes de traitement sont définies sous la forme d’une série de gestionnaires de médias Experience Manager Assets. Adobe Experience Manager fournit des [gestionnaires intégrés,](#default-media-handlers) et d’autres gestionnaires peuvent être [développés personnalisés](#creating-a-new-media-handler) ou définis en déléguant le processus à un [outil de ligne de commande](#command-line-based-media-handler).
+Un workflow peut être défini de manière à s’exécuter automatiquement lorsqu’une ressource d’un type ou d’un format particulier est chargée sur le serveur. Les étapes de traitement sont définies sous la forme d’une série de gestionnaires de médias Experience Manager Assets. Adobe Experience Manager fournit quelques [gestionnaires intégrés,](#default-media-handlers) et plus peuvent être [développé personnalisé](#creating-a-new-media-handler) ou défini en déléguant le processus à une [outil de ligne de commande](#command-line-based-media-handler).
 
-Les gestionnaires de médias sont des services au sein des ressources Experience Manager qui effectuent des actions spécifiques sur les ressources. Par exemple, lorsqu’un fichier audio MP3 est téléchargé dans Experience Manager, un workflow déclenche un gestionnaire MP3 qui extrait les métadonnées et génère une miniature. Les gestionnaires de médias sont utilisés avec des workflows. La plupart des types MIME courants sont pris en charge dans Experience Manager. Vous pouvez exécuter des tâches spécifiques sur les ressources en effectuant l’une des opérations suivantes :
+Les gestionnaires de médias sont des services de Experience Manager Assets qui effectuent des actions spécifiques sur les ressources. Par exemple, lorsqu’un fichier audio MP3 est téléchargé dans Experience Manager, un workflow déclenche un gestionnaire MP3 qui extrait les métadonnées et génère une miniature. Les gestionnaires de médias sont utilisés avec des workflows. La plupart des types MIME courants sont pris en charge dans Experience Manager. Vous pouvez exécuter des tâches spécifiques sur les ressources en effectuant l’une des opérations suivantes :
 
 * Extension ou création de workflows.
 * Extension ou création de gestionnaires de médias.
@@ -26,7 +26,7 @@ Les gestionnaires de médias sont des services au sein des ressources Experience
 
 >[!NOTE]
 >
->Voir la page [Formats pris en charge par les ressources](assets-formats.md) pour une description de tous les formats pris en charge par les ressources et fonctionnalités prises en charge par le Experience Manager pour chaque format.
+>Voir [Formats pris en charge par Assets](assets-formats.md) pour obtenir une description de tous les formats pris en charge par Experience Manager Assets et des fonctionnalités prises en charge pour chaque format.
 
 ## Gestionnaires de médias par défaut {#default-media-handlers}
 
@@ -37,7 +37,7 @@ Les gestionnaires de médias suivants sont disponibles dans Experience Manager A
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Important</b>  - Lorsque vous téléchargez un fichier MP3, il est  [traité à l’aide d’une bibliothèque](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html) tierce. La bibliothèque calcule une longueur approximative non précise si le MP3 a un débit variable (VBR). |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Important</b> - Lorsque vous téléchargez un fichier MP3, il s’agit de [traité à l’aide d’une bibliothèque tierce](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). La bibliothèque calcule une longueur approximative non précise si le MP3 a un débit variable (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -64,11 +64,11 @@ Il est possible d’afficher les gestionnaires de médias actifs :
 
 Les gestionnaires de médias sont des services utilisés avec des workflows.
 
-Experience Manager dispose de workflows par défaut pour traiter les ressources. Pour les afficher, ouvrez la console Processus et cliquez sur l’onglet **[!UICONTROL Modèles]** : les titres de workflow commençant par Experience Manager Assets sont ceux qui sont spécifiques aux ressources.
+Experience Manager dispose de workflows par défaut pour traiter les ressources. Pour les afficher, ouvrez la console Processus et cliquez sur le bouton **[!UICONTROL Modèles]** tab : les titres de workflow commençant par Experience Manager Assets sont spécifiques aux ressources.
 
 Les workflows existants peuvent être étendus et de nouveaux workflows peuvent être créés pour gérer les ressources en fonction d’exigences spécifiques.
 
-L’exemple suivant montre comment améliorer le workflow **[!UICONTROL Synchronisation AEM Assets]** afin que des sous-ressources soient générées pour toutes les ressources, à l’exception des documents PDF.
+L’exemple suivant montre comment améliorer la variable **[!UICONTROL Synchronisation AEM Assets]** de sorte que les sous-ressources soient générées pour toutes les ressources, à l’exception des documents de PDF.
 
 ### Désactivation/activation d’un gestionnaire de médias {#disabling-enabling-a-media-handler}
 
@@ -132,15 +132,15 @@ Dans cette section, vous allez créer un gestionnaire de texte spécifique qui g
 
 Procédez comme suit :
 
-Reportez-vous à [Outils de développement](../sites-developing/dev-tools.md) pour installer et configurer Eclipse avec un module externe Maven et pour configurer les dépendances nécessaires au projet Maven.
+Voir [Outils de développement](../sites-developing/dev-tools.md) pour installer et configurer Eclipse avec un module externe Maven et configurer les dépendances nécessaires au projet Maven.
 
 Après avoir exécuté la procédure suivante, lorsque vous téléchargez un fichier texte dans Experience Manager, les métadonnées du fichier sont extraites et deux miniatures avec un filigrane sont générées.
 
-1. Dans Eclipse, créez un projet Maven `myBundle` :
+1. Dans Eclipse, créez `myBundle` Projet Maven :
 
    1. Dans la barre de menus, cliquez sur **[!UICONTROL Fichier > Nouveau > Autre]**.
    1. Dans la boîte de dialogue, développez le dossier Maven, sélectionnez Projet Maven, puis cliquez sur **[!UICONTROL Suivant]**.
-   1. Cochez la case **[!UICONTROL Créer un projet simple]** et la case **[!UICONTROL Utiliser les emplacements de Workspace par défaut]**, puis cliquez sur **[!UICONTROL Suivant]**.
+   1. Vérifiez les **[!UICONTROL Création d’un projet simple]** et le **[!UICONTROL Utilisation des emplacements de Workspace par défaut]** , puis cliquez sur **[!UICONTROL Suivant]**.
    1. Définissez le projet Maven avec les valeurs suivantes :
 
       * Id de groupe : com.day.cq5.myhandler
@@ -152,7 +152,7 @@ Après avoir exécuté la procédure suivante, lorsque vous téléchargez un fic
 
 1. Définissez le compilateur Java™ sur la version 1.5 :
 
-   1. Cliquez avec le bouton droit de la souris sur le projet `myBundle`, puis sélectionnez Propriétés.
+   1. Cliquez avec le bouton droit de la souris sur le `myBundle` projet, sélectionnez Propriétés.
    1. Sélectionnez Compilateur Java™ et définissez les propriétés suivantes sur 1.5 :
 
       * Niveau de conformité du compilateur
@@ -278,16 +278,16 @@ Après avoir exécuté la procédure suivante, lorsque vous téléchargez un fic
     </dependencies>
    ```
 
-1. Créez le package `com.day.cq5.myhandler` qui contient les classes Java™ sous `myBundle/src/main/java` :
+1. Créer le package `com.day.cq5.myhandler` qui contient les classes Java™ sous `myBundle/src/main/java`:
 
-   1. Sous myBundle, cliquez avec le bouton droit de la souris sur `src/main/java`, sélectionnez Nouveau, puis Package.
+   1. Sous myBundle, cliquez avec le bouton droit de la souris. `src/main/java`, sélectionnez Nouveau, puis Package.
    1. Nommez-le `com.day.cq5.myhandler` et cliquez sur Terminer.
 
-1. Créez la classe Java™ `MyHandler` :
+1. Création de la classe Java™ `MyHandler`:
 
-   1. Dans Eclipse, sous `myBundle/src/main/java`, cliquez avec le bouton droit sur le package `com.day.cq5.myhandler`, sélectionnez Nouveau, puis Classe.
+   1. Dans Eclipse, sous `myBundle/src/main/java`, cliquez avec le bouton droit de la souris sur le `com.day.cq5.myhandler` module, sélectionnez Nouveau, puis Classe.
    1. Dans la boîte de dialogue, nommez la classe Java™ MyHandler et cliquez sur Terminer. Eclipse crée le fichier MyHandler.java et l’ouvre.
-   1. Dans `MyHandler.java`, remplacez le code existant par le code suivant, puis enregistrez les modifications :
+   1. Dans `MyHandler.java` remplacez le code existant par le code suivant, puis enregistrez les modifications :
 
    ```java
    package com.day.cq5.myhandler; 
@@ -431,12 +431,12 @@ Après avoir exécuté la procédure suivante, lorsque vous téléchargez un fic
 
 1. Compilez la classe Java™ et créez le lot :
 
-   1. Cliquez avec le bouton droit sur le projet myBundle, sélectionnez **[!UICONTROL Exécuter en tant que]**, puis **[!UICONTROL Installation de Maven]**.
+   1. Cliquez avec le bouton droit sur le projet myBundle, puis sélectionnez **[!UICONTROL Exécutez comme]**, puis **[!UICONTROL Installation de Maven]**.
    1. Le lot `myBundle-0.0.1-SNAPSHOT.jar` (contenant la classe compilée) est créé sous `myBundle/target`.
 
 1. Dans l’Explorateur CRX, créez un noeud sous `/apps/myApp`. Nom = `install`, Type = `nt:folder`.
-1. Copiez le lot `myBundle-0.0.1-SNAPSHOT.jar` et stockez-le sous `/apps/myApp/install` (par exemple avec WebDAV). Le nouveau gestionnaire de texte est désormais principal en Experience Manager.
-1. Dans votre navigateur, ouvrez la console de gestion web Apache Felix. Sélectionnez l’onglet Composants et désactivez le gestionnaire de texte par défaut `com.day.cq.dam.core.impl.handler.TextHandler`.
+1. Copier le lot `myBundle-0.0.1-SNAPSHOT.jar` et stockez-le sous `/apps/myApp/install` (par exemple avec WebDAV). Le nouveau gestionnaire de texte est désormais principal en Experience Manager.
+1. Dans votre navigateur, ouvrez la console de gestion web Apache Felix. Sélectionnez l’onglet Composants et désactivez le gestionnaire de texte par défaut. `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Gestionnaire de médias en ligne de commande {#command-line-based-media-handler}
 
@@ -465,12 +465,12 @@ Le processus `CommandLineProcess` effectue les opérations suivantes par ordre d
 
 ### Exemple utilisant ImageMagick {#an-example-using-imagemagick}
 
-L’exemple suivant montre comment configurer l’étape de processus de ligne de commande. Chaque fois qu’une ressource de type MIME gif ou tiff est ajoutée à `/content/dam` sur le serveur de Experience Manager, une image inversée de l’original est créée avec trois miniatures supplémentaires (140x100, 48x48 et 10x250).
+L’exemple suivant montre comment configurer l’étape de processus de ligne de commande. Chaque fois qu’une ressource de type MIME gif ou tiff est ajoutée à `/content/dam` sur le serveur Experience Manager, une image inversée de l’original est créée avec trois miniatures supplémentaires (140x100, 48x48 et 10x250).
 
 Pour effectuer cette étape de processus, utilisez ImageMagick. Installez ImageMagick sur le disque hébergeant le serveur Experience Manager :
 
-1. Installation d’ImageMagick. Voir [la documentation d’ImageMagick](https://www.imagemagick.org/script/download.php) pour plus d’informations.
-1. Configurez l’outil afin que vous puissiez exécuter `convert` sur la ligne de commande.
+1. Installation d’ImageMagick. Voir [Documentation d’ImageMagick](https://www.imagemagick.org/script/download.php) pour plus d’informations.
+1. Configurez l’outil pour pouvoir exécuter `convert` sur la ligne de commande.
 1. Pour vérifier si cet outil est installé correctement, exécutez la commande `convert -h` sur la ligne de commande.
 
    Il affiche un écran d’aide avec toutes les options possibles de l’outil de conversion.
@@ -479,7 +479,7 @@ Pour effectuer cette étape de processus, utilisez ImageMagick. Installez ImageM
    >
    >Dans certaines versions de Windows® (par exemple, Windows® SE), la commande convert ne s’exécute pas, car elle entre en conflit avec l’utilitaire de conversion natif qui fait partie de l’installation de Windows®. Dans ce cas, indiquez le chemin complet de l’utilitaire ImageMagick utilisé pour convertir les fichiers image en miniatures. Par exemple, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. Pour vérifier si l’outil s’exécute correctement, ajoutez une image JPG au répertoire de travail et exécutez la commande `convert <image-name>.jpg -flip <image-name>-flipped.jpg` sur la ligne de commande.
+1. Pour vérifier si l’outil s’exécute correctement, ajoutez une image de JPG dans le répertoire de travail et exécutez la commande . `convert <image-name>.jpg -flip <image-name>-flipped.jpg` sur la ligne de commande.
 
    Une image inversée est ajoutée au répertoire.
 
@@ -501,19 +501,19 @@ Pour tester le workflow modifié, ajoutez une ressource à `/content/dam`.
 
 #### Configuration de l’étape de processus CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-Cette section décrit la procédure à suivre pour définir les **[!UICONTROL Arguments du processus]** de `CommandLineProcess`. Séparez les valeurs de [!UICONTROL Arguments du processus] à l’aide d’une virgule et ne commencez pas de valeur par un espace.
+Cette section décrit la procédure à suivre pour définir les **[!UICONTROL Arguments du processus]** de `CommandLineProcess`. Séparez les valeurs de [!UICONTROL Arguments de processus] utilisez une virgule et ne commencez pas de valeur avec un espace.
 
 | Argument-Format | Description |
 |---|---|
 | mime:&lt;mime-type> | Argument facultatif. Le processus est appliqué si la ressource a le même type MIME que celui des arguments. <br>Plusieurs types MIME peuvent être définis. |
 | tn:&lt;width>:&lt;height> | Argument facultatif. Le processus crée une miniature avec les dimensions définies dans l’argument. <br>Plusieurs miniatures peuvent être définies. |
-| cmd: &lt;command> | Définit la commande qui est exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Les variables suivantes peuvent être utilisées pour créer la commande : <br>`${filename}` nom du fichier d’entrée, par exemple original.jpg  <br> `${file}`: chemin d’accès complet du fichier d’entrée, par exemple /tmp/cqdam0816.tmp/original.jpg  <br> `${directory}`: répertoire du fichier d’entrée, par exemple /tmp/cqdam0816.tmp  <br>`${basename}`: nom du fichier d&#39;entrée sans son extension, par exemple original  <br>`${extension}`: extension du fichier d’entrée, par exemple jpg |
+| cmd: &lt;command> | Définit la commande qui est exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Les variables suivantes peuvent être utilisées pour créer la commande :<br>`${filename}`: nom du fichier d’entrée, par exemple original.jpg <br> `${file}`: chemin d’accès complet du fichier d’entrée, par exemple /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: répertoire du fichier d’entrée, par exemple /tmp/cqdam0816.tmp <br>`${basename}`: nom du fichier d’entrée sans son extension, par exemple original <br>`${extension}`: extension du fichier d’entrée, par exemple jpg |
 
-Par exemple, si ImageMagick est installé sur le disque hébergeant le serveur Experience Manager et si vous créez une étape de processus en utilisant **CommandLineProcess** comme implémentation et les valeurs suivantes comme **Arguments du processus** :
+Par exemple, si ImageMagick est installé sur le disque hébergeant le serveur Experience Manager et si vous créez une étape de processus à l’aide de **CommandLineProcess** comme implémentation et les valeurs suivantes comme **Arguments de processus**:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-Ensuite, lorsque le workflow s’exécute, l’étape s’applique uniquement aux ressources dont les types MIME sont `image/gif` ou `mime:image/tiff`. Il crée une image inversée de l’original, la convertit en .jpg et crée trois miniatures aux dimensions suivantes : 140x100, 48x48 et 10x250.
+Ensuite, lorsque le workflow s’exécute, l’étape s’applique uniquement aux ressources qui ont `image/gif` ou `mime:image/tiff` comme des types MIME. Il crée une image inversée de l’original, la convertit en .jpg et crée trois miniatures aux dimensions suivantes : 140x100, 48x48 et 10x250.
 
 Utilisez les [!UICONTROL Arguments de processus] suivants pour créer les trois miniatures standards à l’aide d’ImageMagick :
 
@@ -525,4 +525,4 @@ Utilisez les [!UICONTROL Arguments de processus] suivants pour créer le rendu w
 
 >[!NOTE]
 >
->L’étape `CommandLineProcess` s’applique uniquement aux ressources (noeuds de type `dam:Asset`) ou aux descendants d’une ressource.
+>Le `CommandLineProcess` s’applique uniquement aux ressources (noeuds de type `dam:Asset`) ou des descendants d’une ressource.

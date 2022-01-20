@@ -1,8 +1,8 @@
 ---
 title: Applications mobiles
-seo-title: Applications mobiles
+seo-title: Mobile-Apps
 description: '"Mobile-Apps"'
-seo-description: 'null'
+seo-description: null
 uuid: 4a91241e-8c78-42fe-a5d3-732a6c34cbfd
 contentOwner: msm-service
 content-type: reference
@@ -11,12 +11,12 @@ discoiquuid: eda55579-4140-477b-b4d0-a87d14ec3237
 exl-id: 51b062f3-6308-4389-8c5f-3a855fa66626
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 17%
+source-wordcount: '118'
+ht-degree: 16%
 
 ---
 
-# Mobile-Apps{#mobile-apps}
+# Applications mobiles{#mobile-apps}
 
 >[!NOTE]
 >
@@ -31,4 +31,4 @@ AEM Mobile propose plusieurs méthodes pour créer des applications. Les différ
 
 >[!NOTE]
 >
->Si vous découvrez Adobe Experience Manager, vous pouvez passer en revue la section [Prise en main d’AEM](/help/sites-deploying/deploy.md).
+>Si vous utilisez Adobe Experience Manager pour la première fois, vous pouvez effectuer les opérations suivantes : [Prise en main d’AEM](/help/sites-deploying/deploy.md).

@@ -1,8 +1,8 @@
 ---
 title: Présentation de la loi sur l’accès à l’information pour le site de référence We.Gov
-seo-title: Présentation de la loi sur l’accès à l’information pour le site de référence We.Gov
+seo-title: We.Gov reference site FOIA walkthrough
 description: 'Consultez la présentation du site de référence pour comprendre comment AEM Forms aide les administrations à recevoir et donner les informations demandées par les utilisateurs dans le cadre de la loi sur l’accès à l’information. '
-seo-description: 'Consultez la présentation du site de référence pour comprendre comment AEM Forms aide les administrations à recevoir et donner les informations demandées par les utilisateurs dans le cadre de la loi sur l’accès à l’information. '
+seo-description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments receive and impart information requested by individuals under the Freedom of Information Act.
 uuid: 65d4233c-8dad-4e5e-8e39-22eb4f145adc
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,8 +10,8 @@ discoiquuid: cef8f597-7935-4d98-aacf-9981470ab620
 exl-id: 92ad5d8b-fc8c-4502-ab62-d27eb9784b65
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 75%
+source-wordcount: '853'
+ht-degree: 74%
 
 ---
 
@@ -39,7 +39,7 @@ Le scénario implique les personnages suivants :
 * John Jacobs, la personne qui gère la demande et la fait suivre au service approprié
 * Gloria Rios, la fonctionnaire du gouvernement qui fournit les informations de la demande
 
-## Sarah lance la demande d’informations dans le cadre de la loi sur l’accès à l’information  {#sarah-initiates-request-for-information-under-foia}
+## Sarah lance la demande d’informations dans le cadre de la loi sur l’accès à l’information {#sarah-initiates-request-for-information-under-foia}
 
 En vertu de la loi sur l’accès à l’information, Sarah demande une copie des registres des cas de l’Administration pour les enfants et les familles pour les années 2013 à 2016. Sarah envoie cette demande au bureau de la stratégie des informations du Ministère de la Justice et indique également qu’elle est prête à payer jusqu’à 100 dollars américains pour les frais d’impression et d’envoi.
 
@@ -51,12 +51,12 @@ Dans votre navigateur, ouvrez `https://<hostname>:<PublishPort>/wegov`. Sur le s
 
 ## Sarah commence sa demande d’informations dans le cadre de la loi sur l’accès à l’information {#sarah-starts-her-application-for-information-under-foia}
 
-Sarah clique sur **Appliquer** et dans la page Formulaire de demande de la loi sur l’accès à l’information, Sarah saisit les informations suivantes :
+Sarah clique **Appliquer** et dans la page Formulaire de demande de la loi sur l’accès à l’information, Sarah saisit les informations suivantes :
 
-* **Agence :** Sarah indique l’agence à laquelle la demande a été adressée en tant que Ministère de la Justice - Bureau de la politique de l’information.
+* **Agence :** Sarah indique l’agence à laquelle la demande a été adressée en tant que Département de la Justice - Bureau de la politique de l’information.
 
 * **Versera jusqu’à** : Sarah indique qu’elle est prête à payer jusqu’à 100 dollars américains pour les frais d’impression et d’envoi.
-* **Décrivez la requête en détail** : Sarah indique &quot;Demande de copie des registres des cas de l’Administration pour les enfants et les familles pour les années fiscales 2013 à 2016&quot;.
+* **Description détaillée de la requête**: Sarah indique &quot;Demande de copie des registres des cas de l’Administration pour les enfants et les familles pour les années fiscales 2013 à 2016&quot;.
 
 ![Demande de copie des registres des cas de l’Administration pour les enfants et les familles pour les années 2013 à 2016](assets/sarahfiosform.png)
 
@@ -66,7 +66,7 @@ Demande de copie des registres des cas de l’Administration pour les enfants et
 
 >[!NOTE]
 >
->Le processus à partir d’un courrier électronique fonctionne avec les utilisateurs connectés uniquement. Dans le scénario de site de référence, assurez-vous que l’utilisateur Sarah Rose est ajouté. Les informations de connexion de Sarah sont `srose/password`.
+>Le processus à partir d’un courrier électronique fonctionne avec les utilisateurs connectés uniquement. Dans le scénario de site de référence, assurez-vous que l’utilisateur Sarah Rose est ajouté. Les informations de connexion de Sarah sont les suivantes : `srose/password`.
 
 ## John Jacobs reçoit et approuve la demande {#john-jacobs-receives-and-approves-the-application}
 
@@ -78,7 +78,7 @@ Lorsque Sarah remplit et envoie la demande dans le cadre de la loi sur l’accè
 
 ### Démonstration {#see-it-yourself-1}
 
-Vous pouvez accéder à la boîte de réception d’AEM à l’adresse https://&quot;a0/>hostname ***:&quot;a2/>PublishPort&lt;a3/&quot;/content/we-finance/global/en/login.html?resource=/aem/inbox.html.********* Connectez-vous à la boîte de réception d’AEM, à l’aide de jjacobs/password comme nom d’utilisateur/mot de passe pour John Jacobs, et consultez l’application FOIA. Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour les tâches de flux de travail centrées sur les formulaires, voir [Gestion des applications et des tâches Forms dans AEM boîte de réception](/help/forms/using/manage-applications-inbox.md).
+Vous pouvez accéder à la boîte de réception AEM à l’adresse https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Connectez-vous à la boîte de réception d’AEM, à l’aide de jjacobs/password comme nom d’utilisateur/mot de passe pour John Jacobs, et consultez l’application FOIA. Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour les tâches de flux de travail axées sur les formulaires, voir [Gestion des applications et des tâches Forms dans AEM boîte de réception](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -104,7 +104,7 @@ Lorsque John Jacobs approuve la demande dans le cadre de la loi sur l’accès �
 
 ### Jugez-en par vous-même {#see-for-yourself}
 
-Vous pouvez accéder à la boîte de réception d’AEM à l’adresse https://&quot;a0/>hostname ***:&quot;a2/>PublishPort&lt;a3/&quot;/content/we-finance/global/en/login.html?resource=/aem/inbox.html.********* Connectez-vous à la boîte de réception d’AEM à l’aide de grios/password comme nom d’utilisateur/mot de passe pour Gloria Rios, puis consultez la demande FOIS.
+Vous pouvez accéder à la boîte de réception AEM à l’adresse https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Connectez-vous à la boîte de réception d’AEM à l’aide de grios/password comme nom d’utilisateur/mot de passe pour Gloria Rios, puis consultez la demande FOIS.
 
 Gloria ouvre la demande et examine les détails de la demande dans le cadre de la loi sur l’accès à l’information. Après avoir consulté les détails de la demande et vérifié la possibilité de fournir les documents requis, Gloria approuve la demande.
 

@@ -1,8 +1,8 @@
 ---
 title: Installation et configuration de Designer
-seo-title: Installation et configuration de Designer
+seo-title: Installing and configuring Designer
 description: 'Designer est disponible sous la forme d’un programme autonome et est également fourni avec Workbench. Découvrez comment installer la version autonome de Designer.  '
-seo-description: 'Designer est disponible sous la forme d’un programme autonome et est également fourni avec Workbench. Découvrez comment installer la version autonome de Designer.  '
+seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.
 uuid: 46f4a640-092c-46db-a0b2-8e25501a00b9
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -14,8 +14,8 @@ role: Admin
 exl-id: 9791ffd5-04c4-4eed-8e99-b390e539197d
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 92%
+source-wordcount: '142'
+ht-degree: 91%
 
 ---
 

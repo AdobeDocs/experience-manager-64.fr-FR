@@ -1,25 +1,25 @@
 ---
 title: Restructuration des référentiels de Forms dans AEM 6.4
-seo-title: Restructuration des référentiels de Forms dans AEM 6.4
+seo-title: Forms Repository Restructuring in AEM 6.4
 description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans AEM 6.4 pour Forms.
-seo-description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans AEM 6.4 pour Forms.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Forms.
 uuid: e60830d4-23ca-4be9-941a-ee4abe4786a6
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
-feature: Mise à niveau
+feature: Upgrading
 exl-id: a2d6524e-3f5b-4d1e-af64-61ff95889657
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 88%
+source-wordcount: '529'
+ht-degree: 87%
 
 ---
 
 # Restructuration des référentiels de Forms dans AEM 6.4{#forms-repository-restructuring-in-aem}
 
-Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution AEM Forms. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
+Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications de référentiel ayant un impact sur la solution AEM Forms. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
 
 **Avec la mise à niveau vers la version 6.4**
 
@@ -100,7 +100,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
 | **Conseil de restructuration** | L’utilitaire [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) doit être déclenché depuis l’interface utilisateur de migration Forms. |
 | **Remarques** | N/A |
 
-### Configurations du service cloud Recaptcha  {#recaptcha-cloud-service-configurations}
+### Configurations du service cloud Recaptcha {#recaptcha-cloud-service-configurations}
 
 | **Emplacement précédent** | `/etc/cloudservices/recaptcha` |
 |---|---|
@@ -108,7 +108,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
 | **Conseil de restructuration** | L’utilitaire [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) doit être déclenché depuis l’interface utilisateur de migration Forms. |
 | **Remarques** | N/A |
 
-### Configurations du service cloud Typekit  {#typekit-cloud-service-configurations}
+### Configurations du service cloud Typekit {#typekit-cloud-service-configurations}
 
 | **Emplacement précédent** | `/etc/cloudservices/typekit` |
 |---|---|
@@ -116,7 +116,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
 | **Conseil de restructuration** | L’utilitaire [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) doit être déclenché depuis l’interface utilisateur de migration Forms. |
 | **Remarques** | N/A |
 
-### Divers  {#misc-1}
+### Divers {#misc-1}
 
 | **Emplacement précédent** | `/etc/cloudservices/fdm` |
 |---|---|
@@ -127,5 +127,5 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
 | **Emplacement précédent** | `/etc/designs/fd/fp` |
 |---|---|
 | **Nouveaux emplacements** | `/libs/fd/fp` |
-| **Conseil de restructuration** | Toutes les références aux modèles /etc doivent éventuellement être mises à jour afin de pointer vers leurs homologues `/libs`. |
+| **Conseil de restructuration** | Toutes les références aux modèles /etc doivent être mises à jour pour pointer vers leurs `/libs` leurs homologues. |
 | **Remarques** | N/A |

@@ -1,8 +1,8 @@
 ---
 title: AEM et les consignes pour l’accessibilité web
-seo-title: AEM et les consignes pour l’accessibilité web
+seo-title: AEM and the Web Accessibility Guidelines
 description: Apprenez à créer des sites web et des contenus accessibles avec AEM.
-seo-description: Apprenez à créer des sites web et des contenus accessibles avec AEM.
+seo-description: Learn how to create accessible websites and content with AEM.
 uuid: b68281af-3e8a-4842-b762-1c59f9132795
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -12,8 +12,8 @@ discoiquuid: 13c7e0bd-54af-49f3-9743-075ce6f3314d
 exl-id: f0ccdeae-3dbb-4dba-89cf-4c8b759da22b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 85%
+source-wordcount: '484'
+ht-degree: 84%
 
 ---
 
@@ -60,18 +60,18 @@ Le [World Wide Web Consortium (W3C)](https://www.w3.org/) est une communauté
 
 En utilisant Adobe Experience Manager, les auteurs de contenu et/ou les propriétaires de sites web peuvent créer du contenu web qui satisfait les critères de réussite des niveaux A et AA de WCAG 2.0.
 
-Certains aspects de WCAG 2.0 sont accentués dans notre [guide rapide relatif à WCAG 2.0](/help/managing/qg-wcag.md).
+Certains aspects de WCAG 2.0 sont abordés dans notre [guide rapide relatif à WCAG 2.0](/help/managing/qg-wcag.md).
 
-### Niveaux de conformité à l’accessibilité WCAG 2.0  {#wcag-accessibility-conformance-levels}
+### Niveaux de conformité à l’accessibilité WCAG 2.0 {#wcag-accessibility-conformance-levels}
 
 WCAG 2.0 fournit des [consignes (avec les critères de réussite associés) couvrant les niveaux d’accessibilité](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
 
-Celles-ci, en ce qui concerne les AEM, sont couvertes par les [conformité A et AA](/help/sites-authoring/creating-accessible-content.md). Lors de la création de votre site, vous devez déterminer à quel niveau général il doit se conformer.
+Celles-ci, en ce qui concerne les AEM, sont couvertes par la section [Conformité aux niveaux A et AA](/help/sites-authoring/creating-accessible-content.md). Lors de la création de votre site, vous devez déterminer à quel niveau général il doit se conformer.
 
 >[!NOTE]
 >
 >Étant donné qu’il est impossible de répondre à tous les critères de réussite du niveau AAA pour certains types de contenu, il n’est pas recommandé comme niveau de conformité requis.
 
-## L’accessibilité chez Adobe   {#accessibility-at-adobe}
+## L’accessibilité chez Adobe  {#accessibility-at-adobe}
 
 Pour plus d’informations, consultez le [Centre de ressources sur l’accessibilité Adobe](https://www.adobe.com/accessibility/).

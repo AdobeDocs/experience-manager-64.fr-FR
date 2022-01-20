@@ -1,8 +1,8 @@
 ---
 title: Mise à jour du lien vers la documentation
-seo-title: Mise à jour du lien vers la documentation
+seo-title: Updating the link to the documentation
 description: Comment mettre à jour la destination du lien d’aide de l’espace de travail dans l’espace de travail AEM Forms pour renvoyer à votre lien de documentation personnalisé.
-seo-description: Comment mettre à jour la destination du lien d’aide de l’espace de travail dans l’espace de travail AEM Forms pour renvoyer à votre lien de documentation personnalisé.
+seo-description: How-to update the destination of Workspace Help link in AEM Forms workspace to point to your custom documentation link.
 uuid: 64056d10-1451-44ed-8f25-81a21037dc75
 contentOwner: robhagat
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 exl-id: 68fe3f97-ded8-4223-b4b9-02704077e37e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 94%
+source-wordcount: '141'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ Tenez compte des cas d’utilisation suivants lorsque vous souhaitez changer l�
 
 Pour mettre à jour l’URL de la documentation en ligne, suivez la [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md), puis les étapes suivantes.
 
-1. Copiez le fichier `userinfo.html` de `/libs/ws/js/runtime/templates` vers `/apps/ws/js/runtime/templates`.
+1. Copiez le `userinfo.html` fichier à partir de `/libs/ws/js/runtime/templates` to `/apps/ws/js/runtime/templates`.
 1. Modification:
 
    ```
@@ -50,4 +50,4 @@ Pour mettre à jour l’URL de la documentation en ligne, suivez la [Procédure 
 1. Procédez comme suit :
 
    1. Ouvrez /apps/ws/js/registry.js pour le modifier.
-   1. Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/userinfo.html` par `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
+   1. Rechercher et remplacer `text!/lc/libs/ws/js/runtime/templates/userinfo.html` avec `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.

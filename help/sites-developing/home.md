@@ -1,12 +1,12 @@
 ---
 title: Guide de l’utilisateur pour le développement dans AEM 6.4
-seo-title: Guide de l’utilisateur pour le développement dans AEM 6.4
+seo-title: AEM 6.4 Developing User Guide
 description: Ce guide explique comment créer votre instance AEM.
-seo-description: Décrit comment créer votre instance AEM.
+seo-description: Covers how to build out your AEM instance.
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 45%
+source-wordcount: '335'
+ht-degree: 47%
 
 ---
 

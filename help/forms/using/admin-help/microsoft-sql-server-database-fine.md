@@ -1,8 +1,8 @@
 ---
 title: '"Base de données SQL Server : réglage précis de la configuration"'
-seo-title: '"Base de données SQL Server : réglage précis de la configuration"'
+seo-title: 'Microsoft SQL Server database: Fine-tuning the configuration'
 description: Découvrez comment vous pouvez affiner la configuration de votre base de données Microsoft SQL Server.
-seo-description: Découvrez comment vous pouvez affiner la configuration de votre base de données Microsoft SQL Server.
+seo-description: Learn how you can fine tune the configuration of your Microsoft SQL Server database.
 uuid: 2d618aab-3c67-4edb-a28f-a20904689e6f
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 70559a94-42ea-411a-a32f-5f38bc17ff96
 exl-id: 5392027c-eb5a-49c4-bf9b-fe7d399ae0a1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '294'
 ht-degree: 100%
 
 ---
 
-# Base de données SQL Server : réglage précis de la configuration {#microsoft-sql-server-database-fine-tuning-the-configuration}
+# Base de données SQL Server : réglage précis de la configuration {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
 Lorsque vous utilisez Microsoft SQL Server, vous pouvez modifier les paramètres de configuration par défaut. Cliquez avec le bouton droit de la souris sur le serveur local dans Oracle Enterprise Manager pour accéder à la boîte de dialogue des propriétés.
 

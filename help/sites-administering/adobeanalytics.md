@@ -1,8 +1,8 @@
 ---
 title: Intégration à Adobe Analytics
-seo-title: Intégration à Adobe Analytics
+seo-title: Integrating with Adobe Analytics
 description: Découvrez comment intégrer AEM à Adobe Analytics.
-seo-description: Découvrez comment intégrer AEM à Adobe Analytics.
+seo-description: Learn how to integrate AEM with Adobe Analytics.
 uuid: 8329d891-1897-46f6-80ee-40244b079c0e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 0089394f-0107-49eb-ad73-52e9cabe71b1
 exl-id: ca11bfcd-06d1-4ca9-9069-afa91d8a6610
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '290'
 ht-degree: 94%
 
 ---
@@ -49,7 +49,7 @@ Vous pouvez également utiliser l’[assistant de souscription](/help/sites-admi
 Voir :
 
 * [Extension de l’intégration à Adobe Analytics](/help/sites-developing/extending-analytics.md) pour plus d’informations sur le développement de composants qui collectent des données utilisateur et la personnalisation de la structure d’Adobe Analytics.
-* L’article de la base de connaissances, [Intégration Adobe Analytics : résolution des incidents ](https://helpx.adobe.com/fr/experience-manager/kb/sitecatalystintegrationtroubleshooting.html) pour plus d’informations concernant le dépannage de votre intégration Adobe Analytics.
+* L’article de la base de connaissances, [Intégration Adobe Analytics : résolution des incidents](https://helpx.adobe.com/fr/experience-manager/kb/sitecatalystintegrationtroubleshooting.html) pour plus d’informations concernant le dépannage de votre intégration Adobe Analytics.
 
 >[!NOTE]
 >
@@ -57,9 +57,7 @@ Voir :
 >
 >* **Day Commons HTTP Client 3.1** pour configurer l’API 3.x ;\
    >  par exemple, [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
-   >
-   >
-* **Apache HTTP Components Proxy Configuration** pour configurer l’API 4.x ;
 >
->  
-par exemple, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* **Apache HTTP Components Proxy Configuration** pour configurer l’API 4.x ;
+>
+>  par exemple, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)

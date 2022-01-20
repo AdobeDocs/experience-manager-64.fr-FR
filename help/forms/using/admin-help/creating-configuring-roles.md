@@ -1,8 +1,8 @@
 ---
 title: Création et configuration des rôles
-seo-title: Création et configuration des rôles
+seo-title: Creating and configuring roles
 description: Découvrez comment associer des utilisateurs et des groupes à des rôles faisant partie de la base de données User Management. Vous pouvez également créer, modifier et supprimer des rôles.
-seo-description: Découvrez comment associer des utilisateurs et des groupes à des rôles faisant partie de la base de données User Management. Vous pouvez également créer, modifier et supprimer des rôles.
+seo-description: Learn how to associate users and groups with roles that are already part of the User Management database. You can also create, edit, and delete roles.
 uuid: e8e4331d-48e1-4fa9-8f44-f885f4ab1a54
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: 794769f8-57c7-43c1-87dd-952121ced3e4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 51%
+source-wordcount: '2526'
+ht-degree: 50%
 
 ---
 
@@ -23,9 +23,9 @@ Les pages Web de User Management vous permettent d’associer des utilisateurs e
 
 User Management comporte deux types de rôles :
 
-**Rôles mutables :** ce type de rôle peut être modifié et supprimé, et les autorisations de rôle peuvent être ajoutées et supprimées de ces types de rôle. Les rôles que vous créez sont des rôles mutables. Vous pouvez ajouter et supprimer des utilisateurs et groupes affectés à des rôles mutables.
+**Rôles mutables :** Ce type de rôle peut être modifié et supprimé, et les autorisations de rôle peuvent être ajoutées et supprimées de ces types de rôle. Les rôles que vous créez sont des rôles mutables. Vous pouvez ajouter et supprimer des utilisateurs et groupes affectés à des rôles mutables.
 
-**Rôles non modifiables :**  les rôles par défaut inclus dans User Management sont des rôles non modifiables. Ils ne peuvent être ni modifiés ni supprimés. Toutefois, vous pouvez ajouter ou supprimer des utilisateurs et des groupes affectés à des rôles non modifiables.
+**Rôles non modifiables :** Les rôles par défaut inclus dans User Management sont des rôles non modifiables. Ils ne peuvent être ni modifiés ni supprimés. Toutefois, vous pouvez ajouter ou supprimer des utilisateurs et des groupes affectés à des rôles non modifiables.
 
 Les API d&#39;AEM forms permettent également de créer des rôles modifiables et non modifiables.
 
@@ -33,63 +33,63 @@ Les API d&#39;AEM forms permettent également de créer des rôles modifiables e
 
 Les rôles par défaut suivants sont inclus dans la base de données Gestion des utilisateurs.
 
-**Utilisateur d’Administration Console :** peut accéder à Administration Console.
+**Utilisateur d’Administration Console :** peuvent accéder à Administration Console.
 
-**Administrateur d’application :** peut utiliser toutes les fonctionnalités de Workbench. Peut utiliser les pages Applications et services de Administration Console pour configurer des propriétés d’exécution de services, des points de fin et la sécurité.
+**Administrateur de l’application :** Peut utiliser toutes les fonctionnalités de Workbench. Peut utiliser les pages Applications et services de Administration Console pour configurer des propriétés d’exécution de services, des points de fin et la sécurité.
 
 **Administrateur d’AEM forms :** peut effectuer toutes les tâches pour tous les services installés.
 
-**Administrateur de sécurité :**  contrôle les paramètres User Management et gère les utilisateurs et les groupes associés à n’importe quel domaine User Manager.
+**Administrateur de sécurité :** Contrôle les paramètres User Management et gère les utilisateurs et les groupes associés à un domaine User Manager.
 
-**Utilisateur des services :** peut afficher et appeler n’importe quel service.
+**Utilisateur des services :** peut afficher et appeler n’importe quel service ;
 
-**Super administrateur :** a accès à toutes les fonctionnalités d’administration du système, y compris les services.
+**Super administrateur :** a accès à toutes les fonctionnalités d’administration du système, y compris les services ;
 
-**Administrateur de confiance :** peut gérer les paramètres d’approbation PKI et les informations d’identification PKI gérés à partir de la page Trust Store Management dans Administration Console.
+**Trust Administrator :** peut gérer les paramètres d’approbation PKI et les informations d’identification PKI gérés à partir de la page Trust Store Management de la console d’administration.
 
 ### Rôles par défaut supplémentaires {#additional-default-roles}
 
 Les rôles par défaut supplémentaires suivants peuvent également être inclus, selon les composants d’AEM Forms installés.
 
-**Utilisateur de l’application de téléchargement de document :** peut télécharger des documents à l’aide de Flex Remoting.
+**Utilisateur de l’application de téléchargement de document :** Peut télécharger des documents à l’aide de Flex Remoting.
 
 **Administrateur Forms :** peut afficher et modifier les paramètres de la page Forms dans Administration Console.
 
 **AEM forms Contentspace Administrator :** peut afficher et modifier les paramètres de la page Content Services (obsolète) dans Administration Console.
 
-**AEM utilisateur Contentspace de formulaires :** peut se connecter aux pages web Contentspace (obsolète).
+**AEM utilisateur Contentspace de forms :** Peut se connecter aux pages web de Contentspace (obsolète)
 
 **Documentum Connector Administrator :** peut afficher et modifier les paramètres de la page Connector for EMC Documentum dans Administration Console.
 
-**Administrateur FileNet Connector d’AEM forms :** peut afficher et modifier les paramètres de la page Connector for IBM FileNet dans Administration Console.
+**Administrateur du connecteur FileNet d’AEM forms :** peut afficher et modifier les paramètres de la page Connector for IBM FileNet dans Administration Console.
 
-**Administrateur d’AEM forms IBM CM Connector :** peut afficher et modifier les paramètres de la page Connector for IBM Content Manager dans Administration Console.
+**Administrateur IBM CM Connector :** peut afficher et modifier les paramètres de la page Connector for IBM Content Manager dans Administration Console.
 
-**Administrateur de Rights Management :**  effectue toutes les tâches requises pour toutes les configurations de serveur sur les pages de Rights Management appropriées.
+**Administrateur Rights Management :** exécute toutes les tâches requises pour toutes les configurations de serveur sur les pages de Rights Management appropriées ;
 
-**Utilisateur final du Rights Management :** peut accéder aux pages web des utilisateurs finaux du Rights Management.
+**Utilisateur final du Rights Management :** peut accéder aux pages web des utilisateurs finaux Rights Management ;
 
-**Rights Management Invitation d’un utilisateur :** peut inviter des utilisateurs
+**Rights Management Invite User :** Peut inviter des utilisateurs
 
-**Rights Management Gérer les utilisateurs invités et locaux :** peut exécuter les tâches requises pour gérer tous les utilisateurs invités et locaux sur les pages de Rights Management appropriées.
+**Rights Management Gérer les utilisateurs invités et locaux :** peut effectuer les tâches requises pour gérer tous les utilisateurs invités et locaux sur les pages de Rights Management appropriées ;
 
-**Administrateur de jeu de stratégies de Rights Management :**  effectue toutes les tâches requises pour tous les jeux de stratégies sur les pages de Rights Management appropriées.
+**Administrateur du jeu de stratégies de Rights Management :** exécute toutes les tâches requises pour tous les jeux de stratégies sur les pages de Rights Management appropriées ;
 
-**Super administrateur Rights Management :** effectue toutes les tâches requises à partir de la page du Rights Management.
+**Super administrateur Rights Management :** exécute toutes les tâches requises à partir de la page du Rights Management ;
 
-**AEM’administrateur de l’espace de travail des formulaires :**  peut afficher et modifier les paramètres de la page Workspace dans Administration Console.
+**Administrateur d’AEM forms Workspace :** peut afficher et modifier les paramètres de la page Workspace dans Administration Console.
 
 ***Remarque ** : Flex Workspace est obsolète pour la version d’AEM Forms.*
 
-**Utilisateur de Workspace :** peut se connecter à l’application d’utilisateur final de Workspace.
+**Utilisateur de Workspace :** peut se connecter à l’application Workspace destinée aux utilisateurs finaux ;
 
 **Administrateur Output :** peut afficher et modifier les paramètres de la page Output d’Administration Console.
 
 **Administrateur PDFG :** peut afficher et modifier les paramètres de la page PDF Generator dans Administration Console.
 
-**Utilisateur de PDFG :** peut accéder à toutes les fonctionnalités non administratives de PDF Generator.
+**Utilisateur PDFG :** Peut accéder à toutes les fonctionnalités non administratives de PDF Generator
 
-**Application web des extensions Acrobat Reader DC :** peut utiliser l’application web des extensions Acrobat Reader DC.
+**Application web des extensions Acrobat Reader DC :** Peut utiliser l’application web des extensions Acrobat Reader DC
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 1. Pour afficher les détails relatifs aux utilisateurs et aux groupes, sélectionnez l’entité.
 1. Cliquez sur OK, puis sur Terminer.
 
-## Modification d’un rôle  {#edit-a-role}
+## Modification d’un rôle {#edit-a-role}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des rôles, puis sur Nom du rôle.
 
@@ -138,7 +138,7 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
    * Pour affecter le rôle à de nouveaux utilisateurs et à de nouveaux groupes, cliquez sur Rechercher des utilisateurs/groupes et saisissez les informations de recherche. Activez la case à cocher correspondant aux utilisateurs et aux groupes auxquels affecter ce rôle, cliquez sur OK, puis sur Enregistrer.
    * Pour supprimer le rôle, activez la case à cocher correspondant aux utilisateurs ou aux groupes, cliquez sur Retirer, puis sur Enregistrer.
 
-## Suppression d’un rôle  {#delete-a-role}
+## Suppression d’un rôle {#delete-a-role}
 
 Vous pouvez supprimer tous les rôles créés, mais pas les rôles AEM Forms par défaut intégrés au produit.
 
@@ -148,7 +148,7 @@ Vous pouvez supprimer tous les rôles créés, mais pas les rôles AEM Forms par
 
 1. Cochez la case correspondant au rôle à supprimer, cliquez sur Supprimer, puis sur OK.
 
-## Affectation d’un rôle aux utilisateurs et aux groupes  {#assign-a-role-to-users-and-groups}
+## Affectation d’un rôle aux utilisateurs et aux groupes {#assign-a-role-to-users-and-groups}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
 1. Indiquez les informations permettant d’affiner la recherche et cliquez sur Rechercher. Les résultats de recherche apparaissent au bas de la page. Vous pouvez trier la liste en cliquant sur les en-têtes de colonne.
@@ -157,7 +157,7 @@ Vous pouvez supprimer tous les rôles créés, mais pas les rôles AEM Forms par
 
 Cette opération peut également s’effectuer via la page Gestion des rôles.
 
-## Identification de la personne à laquelle est affecté un rôle  {#determine-who-is-assigned-to-a-role}
+## Identification de la personne à laquelle est affecté un rôle {#determine-who-is-assigned-to-a-role}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des rôles, puis sur Nom du rôle.
 
@@ -165,7 +165,7 @@ Cette opération peut également s’effectuer via la page Gestion des rôles.
 
 1. Dans la page Détails du rôle, cliquez sur l’onglet Utilisateurs de rôle. La liste des utilisateurs et des groupes directement associés au rôle s’affiche.
 
-## Modification des droits d’un rôle  {#change-role-permissions}
+## Modification des droits d’un rôle {#change-role-permissions}
 
 Vous pouvez modifier les droits des rôles que vous avez créés, mais pas ceux qui sont attribués aux rôles AEM Forms par défaut inclus au produit.
 
@@ -177,167 +177,167 @@ Vous pouvez modifier les droits des rôles que vous avez créés, mais pas ceux 
 1. Pour modifier ces droits, cliquez sur Rechercher des droits, activez les cases à cocher correspondant aux droits à ajouter au rôle, cliquez sur OK, puis sur Enregistrer.
 1. Pour supprimer un droit, sélectionnez-le, cliquez sur Supprimer, puis sur Enregistrer.
 
-### Autorisations d’AEM Forms  {#aem-forms-permissions}
+### Autorisations d’AEM Forms {#aem-forms-permissions}
 
-**ADD_REMOVE_ENDPOINT_PERM :** ajout, suppression et modification des points de fin d’un service
+**ADD_REMOVE_ENDPOINT_PERM :** Ajout, suppression et modification des points de fin d’un service
 
-**Connexion du Admin Console :** affichage de la console d’administration
+**Connexion du Admin Console :** Affichage de la console d’administration
 
-**Certificate Modify :** modifiez les paramètres d’approbation de tout certificat dans Trust Store.
+**Certificate Modify :** Modifier les paramètres d’approbation de tout certificat dans Trust Store
 
-**Certificat Lu :** Lisez n’importe quel certificat dans Trust Store.
+**Certificate Read :** Lire tout certificat dans Trust Store
 
-**Écriture de certificat :** ajoutez un certificat à Trust Store.
+**Certificate Write :** Ajout d’un certificat à Trust Store
 
-**Ajout de composant :** installez un nouveau composant dans le système.
+**Component Add :** Installer un nouveau composant dans le système
 
-**Suppression de composants :** supprimez tout composant du système.
+**Suppression de composants :** Suppression de tout composant du système
 
-**Component Read :** permet de lire n’importe quel composant du système.
+**Component Read :** Lire tout composant du système
 
 **Administrateur Contentspace :** Autorisation pour l’administrateur Contentspace (obsolète)
 
-**Connexion à la console Contentspace :** autorisation de connexion à la console Contentspace (obsolète)
+**Contentspace Console Login :** Autorisation de connexion à la console Contentspace (obsolète)
 
-**Contrôle des paramètres principaux :** gérez les paramètres de la page Paramètres de Core System dans Administration Console.
+**Contrôle des paramètres principaux :** Gestion des paramètres de la page Paramètres de Core System dans Administration Console
 
-**CREATE_VERSION_PERM :** création d’une version d’un service
+**CREATE_VERSION_PERM :** Création d’une version d’un service
 
-**Modification des informations d’identification :**  modifiez les informations d’identification de signature dans Trust Store.
+**Credential Modify :** Modification des informations d’identification de signature dans Trust Store
 
-**Credential Read :** Lisez les informations d’identification de signature dans Trust Store.
+**Credential Read :** Lire les informations d’identification de signature dans Trust Store
 
-**Écriture des informations d’identification :** ajoutez des informations d’identification de signature au Trust Store.
+**Credential Write :** Ajout d’informations d’identification de signature à Trust Store
 
-**Modification de la liste CRL :** modifiez n’importe quelle liste CRL (liste de révocation des certificats) dans Trust Store.
+**CRL Modify :** Modifier toute liste de révocation des certificats (CRL) dans Trust Store
 
-**CRL Lu :** Lisez toute CRL dans Trust Store.
+**CRL Read :** Lire toute liste CRL dans Trust Store
 
-**Écriture CRL :** ajoutez une CRL à Trust Store.
+**CRL Write :** Ajout d’une liste CRL à Trust Store
 
-**Déléguer :** définir une ACL sur une ressource
+**Déléguer :** Définir une ACL sur une ressource
 
-**DELETE_VERSION_PERM :** suppression d’une version d’un service
+**DELETE_VERSION_PERM :** Suppression d’une version d’un service
 
-**Téléchargement du document :** téléchargement de documents dans AEM forms
+**Document Upload :** Téléchargement de documents dans AEM forms
 
-**Contrôle de domaine :** créez, supprimez ou modifiez des paramètres pour n’importe quel domaine User Management, y compris ses fournisseurs d’authentification et d’annuaire.
+**Domain Control :** Créer, supprimer ou modifier des paramètres pour tout domaine User Management, y compris ses fournisseurs d’authentification et d’annuaire
 
-**Modification du type d’événement :** modification des types d’événement
+**Event Type Edit :** Modification des types d’événement
 
-**Contrôle d’emprunt d’identité :** identité empruntée dans User Manager
+**Identity Impersonation Control :** Emprunter l’identité dans User Manager
 
-**INVOKE_PERM :** appel de toutes les opérations sur un service
+**INVOKE_PERM :** Appeler toutes les opérations sur un service
 
-**LCDS Data Model Control :** lecture et déploiement de modèles de données dans Data Services
+**LCDS Data Model Control :** Lecture et déploiement de modèles de données dans Data Services
 
-**Mise à jour de License Manager :** mise à jour des informations de licence
+**Mise à jour de License Manager :** Mise à jour des informations de licence
 
-**MODIFY_CONFIG_PERM :** modification de la configuration d’un service.
+**MODIFY_CONFIG_PERM :** Modification de la configuration d’un service
 
-**** TERMM Modifier la version d’un service
+**TERM** Modification de la version d’un service
 
-**PDFGAdminPermission :** administrateur PDFG
+**PDFGAdminPermission :** Administrateur PDFG
 
-**PDFGUserPermission :** utilisateur de PDFG
+**PDFGUserPermission :** Utilisateur PDFG
 
-**PERM_DCTM_ADMIN : administrateur de** Documentum Connector.
+**PERM_DCTM_ADMIN :** Administrateur Documentum Connector
 
-**PERM_FILENET_ADMIN : administrateur de** FileNet Connector.
+**PERM_FILENET_ADMIN :** Administrateur FileNet Connector
 
-**PERM_FORMS_ADMIN :** administrateur Forms
+**PERM_FORMS_ADMIN :** Administrateur Forms
 
-**PERM_IBMCM_ADMIN :** administrateur IBM CM Connector.
+**PERM_IBMCM_ADMIN :** Administrateur IBM CM Connector
 
 **PERM_OUTPUT_ADMIN :** Administrateur Output
 
-**PERM_READER_EXTENSIONS_WEB_APPLICATION :** utilisation de l’application web des extensions Acrobat Reader DC
+**PERM_READER_EXTENSIONS_WEB_APPLICATION :** Utilisation de l’application web des extensions Acrobat Reader DC
 
-**PERM_SP_ADMIN :** Gestion des paramètres de SharePoint Connector
+**PERM_SP_ADMIN :** Gestion des paramètres du connecteur SharePoint
 
 **PERM_WORKSPACE_ADMIN :** Gestion des paramètres de Workspace
 
-**PERM_WORKSPACE_USER :** connectez-vous à l’application de l’utilisateur final de Workspace.
+**PERM_WORKSPACE_USER :** Connectez-vous à l’application Workspace destinée aux utilisateurs finaux.
 
-**Contrôle d’entité de sécurité :** gérez les utilisateurs et les groupes pour n’importe quel domaine, et gérez les affectations de rôles pour tous les utilisateurs et groupes de n’importe quel domaine.
+**Principal Control :** Gérer les utilisateurs et les groupes pour n’importe quel domaine et gérer les affectations de rôles pour tous les utilisateurs et groupes d’un domaine.
 
-**Enregistrement de processus Lecture/suppression :** répertorie et récupère les instances d’audit de workflow
+**Lecture/Suppression de l’enregistrement de processus :** Liste et récupération des instances d’audit de workflow
 
-**PROCESS_OWNER_PERM :** affiche les données de tendance et exécute des actions administratives sur un service créé à partir d’un processus.
+**PROCESS_OWNER_PERM :** Affichage des données de tendance et exécution d’actions administratives sur un service créé à partir d’un processus
 
-**Lecture :** lecture du contenu d’une ressource
+**Lecture :** Lire le contenu d&#39;une ressource
 
-**READ_PERM :** lecture ou affichage d’un service
+**READ_PERM :** Lecture ou affichage d’un service
 
 **Renouveler l’assertion :** Renouveler les assertions dans User Management
 
-**Repository Delegate :** définition d’une ACL sur une ressource
+**Repository Delegate :** Définir une ACL sur une ressource
 
-**Lecture du référentiel :** Lecture du contenu d’une ressource
+**Repository Read :** Lire le contenu d&#39;une ressource
 
-**Repository Traverse :** inclut une ressource dans une requête de ressources de liste ou lit les métadonnées d’une ressource.
+**Repository Traverse :** Inclure une ressource dans une requête de ressources de liste ou lire les métadonnées d’une ressource
 
-**Référentiel Write :** Ecrire des métadonnées et du contenu du référentiel
+**Repository Write :** Écriture des métadonnées et du contenu du référentiel
 
-**Rights Management Modifier le propriétaire de la stratégie :** modifier le propriétaire de la stratégie
+**Rights Management Change Policy Owner :** Modifier le propriétaire de la stratégie
 
-**Connexion à la console de l’utilisateur final du Rights Management :** connectez-vous à l’interface utilisateur de l’utilisateur final du Rights Management.
+**Rights Management End User Console Login :** Connexion à l’interface utilisateur de l’utilisateur final du Rights Management
 
-**Rights Management Manage Configuration (Gérer la configuration) :** Gestion de la configuration du serveur
+**Configuration de la gestion des Rights Management :** Gestion de la configuration du serveur
 
 **Rights Management Gérer les utilisateurs invités et locaux :** Gestion des utilisateurs invités et locaux
 
-**Rights Management Gérer les jeux de stratégies :**  gérez tous les documents et stratégies d’un jeu de stratégies.
+**Rights Management Gérer les jeux de stratégies :** Gérer toutes les stratégies et tous les documents d’un jeu de stratégies
 
-**Rights Management Policy Set Add Coordinator :** Ajouter, supprimer et modifier des autorisations pour les coordinateurs de jeux de stratégies.
+**Rights Management Policy Set Add Coordinator :** Ajouter, supprimer et modifier des autorisations pour les coordinateurs de jeux de stratégies
 
-**Rights Management Policy Set Create Policy :** création d’une stratégie pour un jeu de stratégies
+**Création d’un jeu de stratégies de Rights Management :** Création d’une stratégie pour un jeu de stratégies
 
-**Stratégie de suppression d’un jeu de stratégies de Rights Management :**  suppression d’une stratégie d’un jeu de stratégies
+**Stratégie de suppression du jeu de stratégies de Rights Management :** Suppression d’une stratégie d’un jeu de stratégies
 
-**Stratégie de modification du jeu de stratégies de Rights Management :**  modifiez une stratégie dans un jeu de stratégies.
+**Stratégie de modification du jeu de stratégies de Rights Management :** Modification d’une stratégie dans un jeu de stratégies
 
-**Rights Management Policy Set Manage Document Publisher :** lorsque vous créez des jeux de stratégies, vous attribuez aux utilisateurs le rôle d’éditeur de document. L’éditeur est l’utilisateur qui protège le document avec une stratégie.
+**Rights Management Policy Set Manage Document Publisher :** Lorsque vous créez des jeux de stratégies, vous attribuez aux utilisateurs le rôle d’éditeur de document. L’éditeur est l’utilisateur qui protège le document avec une stratégie.
 
-**Rights Management Policy Set Remove Coordinator :** Supprimer un coordinateur de jeux de stratégies d’un jeu de stratégies
+**Rights Management Policy Set Remove Coordinator :** Suppression d’un coordinateur de jeux de stratégies d’un jeu
 
-**Document de révocation du jeu de stratégies de Rights Management :**  permet d’annuler l’accès aux documents d’un jeu de stratégies.
+**Document de révocation du jeu de stratégies de Rights Management :** Révocation de l’accès aux documents d’un jeu de stratégies
 
-**Rights Management Policy Set Switch Policy :** changer de stratégie pour un document
+**Stratégie de changement de jeu de stratégies de Rights Management :** Changement de stratégies pour un document
 
-**Désactivation de la révocation du document du jeu de stratégies de Rights Management :**  annulation de la révocation d’un document
+**Document de révocation du jeu de stratégies de Rights Management :** Annulation de la révocation d’un document
 
-**Evénement d’affichage du jeu de stratégies de Rights Management :**  affichage des événements de stratégie et de document pour n’importe quelle stratégie ou document dans un jeu de stratégies.
+**Événement d’affichage du jeu de stratégies de Rights Management :** Affichage des événements de stratégie et de document d’une stratégie ou d’un document dans un jeu de stratégies
 
-**Rights Management Afficher les événements du serveur :** recherchez et affichez tous les événements de contrôle.
+**Événements du serveur de vue Rights Management :** Recherche et affichage de tous les événements de contrôle
 
-**Contrôle de rôle :** créez, supprimez et modifiez des rôles dans User Management.
+**Contrôle de rôle :** Création, suppression et modification des rôles dans User Management
 
-**Service Activate :** démarrez un service, le rendant disponible pour l’appel.
+**Service Activate :** Démarrez n’importe quel service, le rendant disponible pour appel
 
-**Service Add :** déployez un nouveau service dans le registre de services. Cela inclut l’ajout de nouveaux processus et de variantes de processus.
+**Service Add :** Déployez un nouveau service dans le registre des services. Cela inclut l’ajout de nouveaux processus et de variantes de processus.
 
-**Service Deactivate :** Arrêtez tout service du système.
+**Service Deactivate :** Arrêter tout service du système
 
-**Service Delete :** supprimez tout service du système, y compris les processus et les variantes de processus.
+**Service Delete :** Supprimez tout service du système, y compris les processus et les variantes de processus.
 
-**Service Invoke :** appelez tout service dans le registre de services disponible au moment de l’exécution.
+**Service Invoke :** Appeler tout service dans le registre de services disponible au moment de l’exécution
 
-**Service Modify :**  modifiez les propriétés de configuration de tout service du système. Cela inclut le verrouillage et le déverrouillage d’un service dans l’IDE, et l’ajout ou la suppression de points de fin au niveau d’un service.
+**Service Modify :** Modifiez les propriétés de configuration de tout service du système. Cela inclut le verrouillage et le déverrouillage d’un service dans l’IDE, et l’ajout ou la suppression de points de fin au niveau d’un service.
 
-**Service Read :** permet de lire tous les services du système. Cela inclut tous les processus et variantes de processus.
+**Service Read :** Lisez tous les services du système. Cela inclut tous les processus et variantes de processus.
 
-**SERVICE_AGENT_PERM :** affiche des données et interagit avec des instances de processus pour un service créé à partir d’un processus.
+**SERVICE_AGENT_PERM :** Afficher des données et interagir avec des instances de processus pour un service créé à partir d’un processus
 
-**SERVICE_MANAGER_PERM :** exécute l’équilibrage de charge et d’autres actions administratives sur un service créé à partir d’un processus.
+**SERVICE_MANAGER_PERM :** Exécution de l’équilibrage de charge et d’autres actions administratives sur un service créé à partir d’un processus
 
 **START_STOP_PERM :** Démarrer ou arrêter un service
 
-**SUPERVISOR_PERM :** affichage des données d’instance de processus pour un service créé à partir d’un processus.
+**SUPERVISOR_PERM :** Affichage des données d’instance de processus pour un service créé à partir d’un processus
 
-**Traverse :** Incluez une ressource dans une requête de ressources de liste ou lisez les métadonnées d’une ressource.
+**Traverse :** Inclure une ressource dans une requête de ressources de liste ou lire les métadonnées d’une ressource
 
-**Écriture :** Ecrire des métadonnées et du contenu du référentiel
+**Write :** Écriture des métadonnées et du contenu du référentiel
 
 **Ouverture de fichiers dans Workbench**
 
@@ -348,7 +348,7 @@ Pour consulter le contenu de l’affichage Ressources de Workbench et ouvrir des
 * Service Invoke
 * Service Read
 
-## Suppression d’un utilisateur ou d’un groupe d’un rôle  {#remove-a-user-or-group-from-a-role}
+## Suppression d’un utilisateur ou d’un groupe d’un rôle {#remove-a-user-or-group-from-a-role}
 
 La page Gestion des rôles permet de supprimer des utilisateurs et des groupes d’un rôle particulier. Si l’utilisateur ou le groupe a hérité de l’affectation du rôle, il est impossible de supprimer ce rôle au niveau de l’utilisateur ou du groupe. Supprimez l’utilisateur ou le groupe dans l’arborescence d’héritage ou supprimez le rôle depuis le parent.
 

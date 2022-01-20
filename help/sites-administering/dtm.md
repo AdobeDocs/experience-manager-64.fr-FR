@@ -1,8 +1,8 @@
 ---
 title: Intégration à Adobe Dynamic Tag Management
-seo-title: Intégration à Adobe Dynamic Tag Management
+seo-title: Integrating with Adobe Dynamic Tag Management
 description: Découvrez l’intégration à Adobe Dynamic Tag Management.
-seo-description: Découvrez l’intégration à Adobe Dynamic Tag Management.
+seo-description: Learn about integration with Adobe Dynamic Tag Management.
 uuid: cbb9f942-44e3-4cd5-b07d-4298a7a08376
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: d7108d54-cb87-4587-9b52-6711ba38bed2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2210'
 ht-degree: 67%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 67%
 
 Intégrez la [gestion dynamique des balises Adobe](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) à AEM afin de pouvoir utiliser vos propriétés web de gestion dynamique des balises pour effectuer le suivi des sites AEM. Dynamic Tag Management permet aux marketeurs de gérer les balises pour collecter des données et distribuer des données sur les systèmes de marketing numérique. Par exemple, utilisez Dynamic Tag Management pour collecter des données d’utilisation pour votre site web AEM et distribuer les données à des fins d’analyse dans Adobe Analytics ou Adobe Target.
 
-Avant de procéder à l’intégration, vous devez créer la [propriété web](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) de gestion dynamique des balises qui surveille le domaine de votre site AEM. Les [options d’hébergement](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) de la propriété web doivent être configurées afin que vous puissiez configurer AEM pour accéder aux bibliothèques de Dynamic Tag Management.
+Avant de procéder à l’intégration, vous devez créer la [propriété web](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) de gestion dynamique des balises qui surveille le domaine de votre site AEM. Le [options d’hébergement](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) de la propriété web doit être configurée de sorte que vous puissiez configurer AEM pour accéder aux bibliothèques de Dynamic Tag Management.
 
 Une fois que vous avez configuré l’intégration, les modifications apportées aux outils et aux règles de déploiement de gestion dynamique des balises ne nécessitent pas de modifier la configuration de gestion dynamique des balises dans AEM. Les modifications sont automatiquement disponibles pour AEM.
 
@@ -35,12 +35,11 @@ Une fois que vous avez configuré l’intégration, les modifications apportées
 >
 
 
-
-## Options de déploiement  {#deployment-options}
+## Options de déploiement {#deployment-options}
 
 Les options de déploiement suivantes affectent la configuration de l’intégration à la gestion dynamique des balises.
 
-### Hébergement de la gestion dynamique des balises  {#dynamic-tag-management-hosting}
+### Hébergement de la gestion dynamique des balises {#dynamic-tag-management-hosting}
 
 AEM prend en charge la gestion dynamique des balises hébergée dans le cloud ou hébergée dans AEM.
 
@@ -49,7 +48,7 @@ AEM prend en charge la gestion dynamique des balises hébergée dans le cloud ou
 
 Le type d’hébergement utilisé par votre implémentation détermine certaines des tâches de configuration et d’implémentation que vous effectuez. Pour plus d’informations sur les options d’hébergement, voir la rubrique [Hébergement - Onglet Incorporer](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) de l’aide de la gestion dynamique des balises.
 
-### Bibliothèque intermédiaire et bibliothèque de production  {#staging-and-production-library}
+### Bibliothèque intermédiaire et bibliothèque de production {#staging-and-production-library}
 
 Décidez si votre instance de création AEM utilise du code intermédiaire ou de production pour la gestion dynamique des balises.
 
@@ -65,11 +64,11 @@ Pour utiliser le crochet de déploiement, la gestion dynamique des balises doit 
 
 Dans certains cas, AEM peut être inaccessible (par exemple, lorsqu’il se trouve derrière un pare-feu). Dans ces cas, vous pouvez utiliser l’option d’importateur d’interrogations d’AEM pour récupérer régulièrement les bibliothèques. Une expression de tâche cron détermine la planification des téléchargements de bibliothèque.
 
-## Autorisation de l’accès pour le service de crochet de déploiement  {#enabling-access-for-the-deployment-hook-service}
+## Autorisation de l’accès pour le service de crochet de déploiement {#enabling-access-for-the-deployment-hook-service}
 
 Autorisez le service de crochet de déploiement de gestion dynamique des balises à accéder à AEM afin qu’il puisse mettre à jour les bibliothèques hébergées dans AEM. Indiquez l’adresse IP des serveurs de gestion dynamique des balises qui mettent à jour les bibliothèques d’évaluation et de production selon les besoins :
 
-* Intermédiaire: `107.21.99.31`
+* Évaluation: `107.21.99.31`
 * Production : `23.23.225.112` et `204.236.240.48`
 
 Exécutez la configuration à l’aide de la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou d’un nœud [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
@@ -90,7 +89,7 @@ Créez une configuration cloud de sorte que l’instance AEM puisse s’authenti
 
 >[!NOTE]
 >
->Évitez l’inclusion de deux codes de suivi Adobe Analytics sur vos pages lorsque votre propriété web de gestion dynamique des balises comprend l’outil Adobe Analytics et que vous utilisez également [Content Insight](/help/sites-authoring/content-insights.md). Dans votre [configuration cloud Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), sélectionnez l’option Ne pas inclure le code de suivi .
+>Évitez l’inclusion de deux codes de suivi Adobe Analytics sur vos pages lorsque votre propriété web de gestion dynamique des balises comprend l’outil Adobe Analytics et que vous utilisez également [Content Insight](/help/sites-authoring/content-insights.md). Dans votre [Configuration cloud Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), sélectionnez l’option Ne pas inclure le code de suivi .
 
 ### Paramètres généraux {#general-settings}
 
@@ -105,7 +104,7 @@ Créez une configuration cloud de sorte que l’instance AEM puisse s’authenti
    <td>La valeur de la propriété Jeton API de votre compte utilisateur Dynamic Tag Management. AEM utilise cette propriété pour l’authentification auprès de la gestion dynamique des balises.</td> 
   </tr> 
   <tr> 
-   <td>Entreprise</td> 
+   <td>Société</td> 
    <td>Société à laquelle votre identifiant de connexion est associé.</td> 
   </tr> 
   <tr> 
@@ -151,15 +150,15 @@ Lorsque les bibliothèques de gestion dynamique des balises sont hébergées sur
   </tr> 
   <tr> 
    <td>Conseil du domaine</td> 
-   <td><p>(Facultatif) Domaine du serveur AEM qui héberge la bibliothèque de gestion dynamique des balises. Spécifiez une valeur pour remplacer le domaine par défaut configuré pour le <a href="/help/sites-developing/externalizer.md">service Day CQ Link Externalizer</a>.</p> <p>Lorsqu’il est connecté à la gestion dynamique des balises, AEM utilise cette valeur pour configurer le chemin d’accès HTTP intermédiaire ou le chemin d’accès HTTP de production des propriétés Téléchargement de bibliothèque de la propriété web de gestion dynamique des balises.</p> </td> 
+   <td><p>(Facultatif) Domaine du serveur AEM qui héberge la bibliothèque de gestion dynamique des balises. Spécifiez une valeur pour remplacer le domaine par défaut configuré pour la variable <a href="/help/sites-developing/externalizer.md">Service d’externaliseur de liens Day CQ</a>.</p> <p>Lorsqu’il est connecté à la gestion dynamique des balises, AEM utilise cette valeur pour configurer le chemin d’accès HTTP intermédiaire ou le chemin d’accès HTTP de production des propriétés Téléchargement de bibliothèque de la propriété web de gestion dynamique des balises.</p> </td> 
   </tr> 
   <tr> 
    <td>Conseil du domaine sécurisé</td> 
-   <td><p>(Facultatif) Domaine du serveur AEM qui héberge la bibliothèque Dynamic Tag Management par HTTPS. Spécifiez une valeur pour remplacer le domaine par défaut configuré pour le <a href="/help/sites-developing/externalizer.md">service Day CQ Link Externalizer</a>.</p> <p>Lorsqu’il est connecté à la gestion dynamique des balises, AEM utilise cette valeur pour configurer le chemin d’accès HTTPS intermédiaire ou le chemin d’accès HTTPS de production des propriétés Téléchargement de bibliothèque de la propriété web de gestion dynamique des balises.</p> </td> 
+   <td><p>(Facultatif) Domaine du serveur AEM qui héberge la bibliothèque Dynamic Tag Management par HTTPS. Spécifiez une valeur pour remplacer le domaine par défaut configuré pour la variable <a href="/help/sites-developing/externalizer.md">Service d’externaliseur de liens Day CQ</a>.</p> <p>Lorsqu’il est connecté à la gestion dynamique des balises, AEM utilise cette valeur pour configurer le chemin d’accès HTTPS intermédiaire ou le chemin d’accès HTTPS de production des propriétés Téléchargement de bibliothèque de la propriété web de gestion dynamique des balises.</p> </td> 
   </tr> 
   <tr> 
    <td>Secret partagé</td> 
-   <td><p>(Facultatif) Secret partagé à utiliser pour déchiffrer le téléchargement. Récupérez cette valeur dans le champ Secret partagé de la page Téléchargement de bibliothèque de Dynamic Tag Management.</p> <p><strong>Remarque :</strong> les bibliothèques  <a href="https://www.openssl.org/docs/apps/openssl.html"></a> OpenSSL doivent être installées sur l’ordinateur où AEM est installé afin qu’AEM puisse déchiffrer les bibliothèques téléchargées.</p> </td> 
+   <td><p>(Facultatif) Secret partagé à utiliser pour déchiffrer le téléchargement. Récupérez cette valeur dans le champ Secret partagé de la page Téléchargement de bibliothèque de Dynamic Tag Management.</p> <p><strong>Remarque :</strong> Vous devez avoir la variable <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> bibliothèques installées sur l’ordinateur sur lequel AEM est installé afin qu’AEM puisse déchiffrer les bibliothèques téléchargées.</p> </td> 
   </tr> 
   <tr> 
    <td>Activer l'importateur d'interrogations</td> 
@@ -227,7 +226,7 @@ La procédure suivante utilise l’IU optimisée pour les écrans tactiles afin 
 1. Si vous utilisez un code intermédiaire sur l’instance de création, désélectionnez l’option Inclure le code de production sur l’auteur.
 1. Saisissez les valeurs des propriétés dans les onglets Paramètres de zone de transit et Paramètres de production si nécessaire, puis cliquez sur OK.
 
-## Téléchargement manuel de la bibliothèque de gestion dynamique des balises  {#manually-downloading-the-dynamic-tag-management-library}
+## Téléchargement manuel de la bibliothèque de gestion dynamique des balises {#manually-downloading-the-dynamic-tag-management-library}
 
 Téléchargez manuellement les bibliothèques de gestion dynamique des balises pour les mettre immédiatement à jour dans AEM. Par exemple, téléchargez-les manuellement lorsque vous voulez tester une bibliothèque mise à jour avant que l’importateur d’interrogations ne soit programmé pour télécharger automatiquement la bibliothèque.
 
@@ -249,7 +248,6 @@ Téléchargez manuellement les bibliothèques de gestion dynamique des balises p
 >* `servertype`
 
 >
-
 
 
 ## Association d’une configuration de gestion dynamique des balises à votre site {#associating-a-dynamic-tag-management-configuration-with-your-site}

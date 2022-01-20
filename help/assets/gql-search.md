@@ -1,6 +1,6 @@
 ---
 title: Recherche de texte intégral GQL
-description: Explorez la fonction de recherche de texte intégral GQL dans  [!DNL Experience Manager] Ressources. Utilisez-la afin de rechercher des ressources selon des métadonnées spécifiques telles que le titre, la description et le nom de l’auteur.
+description: Explorez la fonction de recherche de texte intégral GQL dans [!DNL Experience Manager] Ressources. Utilisez-la afin de rechercher des ressources selon des métadonnées spécifiques telles que le titre, la description et le nom de l’auteur.
 contentOwner: AG
 feature: Search,Metadata
 role: User
@@ -24,12 +24,12 @@ Pour rechercher, par exemple, les ressources dont le titre est « Cible », su
 
 ## Recherche de ressources {#searching-assets}
 
-1. Dans la barre d’outils de l’interface utilisateur Assets, cliquez ou appuyez sur l’icône **[!UICONTROL Rechercher]** pour afficher la zone Omni-recherche.
+1. Dans la barre d’outils de l’interface utilisateur d’Assets, cliquez ou appuyez sur le bouton **[!UICONTROL Rechercher]** pour afficher la zone Omni-recherche.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Le curseur étant situé dans la zone de recherche, appuyez sur la touche Entrée.
-1. Cliquez ou appuyez sur l’icône de navigation globale pour afficher le panneau **[!UICONTROL Filtres]**.
+1. Cliquez ou appuyez sur l’icône de navigation globale pour afficher le **[!UICONTROL Filtres]** du panneau.
 1. Indiquez la valeur « Cible » dans le champ de recherche. Pour limiter la recherche à un dossier spécifique, cliquez ou appuyez sur l’icône Parcourir dans le panneau Filtres et sélectionnez le dossier. Dans ce cas, la correspondance est recherchée uniquement dans le dossier et les sous-dossiers.
 
    >[!NOTE]
@@ -38,7 +38,7 @@ Pour rechercher, par exemple, les ressources dont le titre est « Cible », su
 
    ![gql_search](assets/gql_search.png)
 
-1. Appuyez sur **[!UICONTROL Entrée]**. L’interface utilisateur [!DNL Assets] affiche uniquement les ressources dont le titre correspond exactement à &quot;Target&quot;.
+1. Press **[!UICONTROL Entrée]**. Le [!DNL Assets] L’interface utilisateur affiche uniquement les ressources dont le titre correspond exactement à &quot;Target&quot;.
 
 La fonction de recherche de texte intégral GQL vous permet de rechercher des ressources en fonction des éléments suivants :
 
@@ -63,11 +63,11 @@ La fonction de recherche en texte intégral GQL vous permet de rechercher des re
 | [!UICONTROL Détenteur de copyright] | copyrightowner:&quot;Adobe Systems&quot; |
 | [!UICONTROL Contributeur] | contributor:John |
 | [!UICONTROL Conditions d’utilisation] | usageterms:&quot;CopyRights Reserved&quot; |
-| [!UICONTROL Créé] | created:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JJTHH:MM:SS.000+05:30 |
-| [!UICONTROL Date d’expiration] | expires:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JJTHH:MM:SS.000+05:30 |
-| [!UICONTROL Heure d’activation] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JJTHH:MM:SS.000+05:30 |
-| [!UICONTROL Heure de désactivation] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JJTHH:MM:SS.000+05:30 |
-| [!UICONTROL Plage de temps]  (date d’expiration, heure d’arrêt) | facet field : lowerboundupperbound |
+| [!UICONTROL Créé] | created:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JTHH:MM:SS.000+05:30 |
+| [!UICONTROL Date d’expiration] | expires:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JTHH:MM:SS.000+05:30 |
+| [!UICONTROL Heure d’activation] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JTHH:MM:SS.000+05:30 |
+| [!UICONTROL Heure de désactivation] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-JTHH:MM:SS.000+05:30 |
+| [!UICONTROL Période] (date d’expiration, heure d’activation, heure d’arrêt) | facet field : lowerboundupperbound |
 | [!UICONTROL Chemin] | /content/dam/&lt;nom_dossier> |
 | [!UICONTROL Titre du PDF] | pdftitle:&quot;Adobe Document&quot; |
 | [!UICONTROL Objet] | subject:&quot;Training&quot; |

@@ -1,8 +1,8 @@
 ---
 title: Choix de l’interface utilisateur
-seo-title: Choix de l’interface utilisateur
+seo-title: Selecting your UI
 description: Configurez l’interface que vous utiliserez pour travailler dans AEM.
-seo-description: Configurez l’interface que vous utiliserez pour travailler dans AEM.
+seo-description: Configure which interface you will use to work in AEM
 uuid: af956219-178e-477b-a0cd-dd2341ed2ff0
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 exl-id: 415efbe0-95f5-4c9e-ac33-c4a384a8271e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 69%
+source-wordcount: '907'
+ht-degree: 68%
 
 ---
 
@@ -54,7 +54,7 @@ Deux interfaces utilisateur graphiques sont à votre disposition, accessibles da
 
 ## Changement d’interface utilisateur
 
-Bien que l’IU tactile soit maintenant l’IU standard et que la [parité des fonctionnalités](../release-notes/touch-ui-features-status.md) ait presque été atteinte avec l’administration et la modification des sites, il peut arriver que l’utilisateur souhaite passer à l’[IU classique](/help/sites-classic-ui-authoring/classicui.md). Pour ce faire, plusieurs possibilités s’offrent à lui.
+Bien que l’IU tactile soit désormais l’IU standard et [parité des fonctionnalités](../release-notes/touch-ui-features-status.md) a presque été atteint avec l’administration et la modification des sites, il peut arriver que l’utilisateur souhaite passer à la [IU classique](/help/sites-classic-ui-authoring/classicui.md). Pour ce faire, plusieurs possibilités s’offrent à lui.
 
 >[!NOTE]
 >
@@ -62,11 +62,11 @@ Bien que l’IU tactile soit maintenant l’IU standard et que la [parité des f
 
 Vous pouvez choisir quelle IU utiliser à divers emplacements :
 
-* [Configuration de l’IU par défaut pour votre instance](#configuring-the-default-ui-for-your-instance)  : cette option définit l’IU par défaut à afficher lors de la connexion de l’utilisateur, bien que l’utilisateur puisse la remplacer et sélectionner une autre IU pour son compte ou la session en cours.
+* [Configuration de l’IU par défaut pour votre instance](#configuring-the-default-ui-for-your-instance) - L’interface utilisateur par défaut sera définie lors de la connexion de l’utilisateur, bien que l’utilisateur puisse la remplacer et sélectionner une autre interface utilisateur pour son compte ou la session en cours.
 
-* [Définition de la création d’interfaces utilisateur classiques pour votre compte](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)  : cette option définit l’interface utilisateur à utiliser par défaut lors de la modification des pages, bien que l’utilisateur puisse remplacer cette option et sélectionner une autre interface utilisateur pour son compte ou la session en cours.
+* [Définition de la création d’interfaces utilisateur classiques pour votre compte](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) - L’interface utilisateur sera définie comme valeur par défaut lors de la modification des pages, bien que l’utilisateur puisse remplacer cette valeur et sélectionner une autre interface utilisateur pour son compte ou la session en cours.
 
-* [Passage à l’IU classique pour la session](#switching-to-classic-ui-for-the-current-session)  en cours : cette option passe à l’IU classique pour la session en cours.
+* [Passage à l’IU classique pour la session en cours](#switching-to-classic-ui-for-the-current-session) - Cette option passe à l’IU classique pour la session en cours.
 
 * En cas de [création de pages, le système procède à certains remplacements dans la relation à l’interface utilisateur](#ui-overrides-for-the-editor).
 
@@ -80,7 +80,7 @@ Vous pouvez choisir quelle IU utiliser à divers emplacements :
 >
 >Les instances mises à niveau à partir d’une version précédente conservent l’IU classique pour la création de pages.
 >
->Après la mise à niveau, la création de pages ne passe pas automatiquement à l’interface utilisateur tactile, mais vous pouvez la configurer à l’aide de la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du **service WCM Authoring UI Mode** (service `AuthoringUIMode`). Voir [IU par défaut en fonction de l’éditeur](#ui-overrides-for-the-editor).
+>Après la mise à niveau, la création de pages ne passe pas automatiquement à l’interface utilisateur tactile, mais vous pouvez la configurer à l’aide de l’option [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) de **Service WCM Author UI Mode** ( `AuthoringUIMode` ). Voir [IU par défaut en fonction de l’éditeur](#ui-overrides-for-the-editor).
 
 ## Configuration de l’IU par défaut pour votre instance {#configuring-the-default-ui-for-your-instance}
 
@@ -94,7 +94,7 @@ Chaque utilisateur peut accéder à ses [préférences utilisateur](/help/sites-
 
 Les paramètres de la session peuvent remplacer ce comportement.
 
-## Activation de l’IU classique pour la session en cours  {#switching-to-classic-ui-for-the-current-session}
+## Activation de l’IU classique pour la session en cours {#switching-to-classic-ui-for-the-current-session}
 
 Ainsi, si l’IU tactile est activée sur un ordinateur de bureau, les utilisateurs peuvent souhaiter revenir à l’IU classique (ordinateur de bureau uniquement). Plusieurs méthodes permettent de basculer vers l’IU classique pour la session en cours :
 
@@ -115,7 +115,7 @@ Ainsi, si l’IU tactile est activée sur un ordinateur de bureau, les utilisate
 
 * **URL**
 
-   L’IU classique est accessible à partir de l’URL de l’écran de bienvenue à l’adresse `welcome.html`. Par exemple :
+   L’IU classique est accessible à l’aide de l’URL de l’écran de bienvenue à l’adresse `welcome.html`. Par exemple :
 
    `http://localhost:4502/welcome.html`
 
@@ -138,7 +138,7 @@ Si cette option est activée, l’option **Ouvrir l’IU classique** est dispon
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-### UI Overrides for the Editor {#ui-overrides-for-the-editor}
+### IU par défaut en fonction de l’éditeur {#ui-overrides-for-the-editor}
 
 Les paramètres définis par un utilisateur ou un administrateur du système peuvent être remplacés par les paramètres système en cas de création de page.
 
@@ -154,9 +154,9 @@ Les paramètres définis par un utilisateur ou un administrateur du système peu
 
 * Tout recours forcé à un certain éditeur est temporaire et valide uniquement pour la session en cours.
 
-   * Un jeu de cookies sera défini selon que tactile ( `editor.html`) ou classique ( `cf#`) est utilisé ou non.
+   * Un jeu de cookies est défini selon qu’il est tactile ou non ( `editor.html`) ou classique ( `cf#`) est utilisée.
 
-* Lors de l’ouverture de pages par `siteadmin`, des vérifications sont effectuées pour vérifier l’existence des éléments suivants :
+* Lors de l’ouverture de pages par `siteadmin`, des contrôles seront effectués pour vérifier l’existence des éléments suivants :
 
    * présence du cookie ;
    * préférence utilisateur ;
@@ -172,7 +172,5 @@ Les paramètres définis par un utilisateur ou un administrateur du système peu
 >
 >* Modifier manuellement l’URL : une URL non standard risque de générer une situation inconnue et une absence de fonctionnalité.
 >* Ouvrir les deux éditeurs en même temps ; dans des fenêtres distinctes, par exemple.
-
 >
-
 

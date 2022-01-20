@@ -1,8 +1,8 @@
 ---
 title: Composants pour la création de page
-seo-title: Composants pour la création de page
+seo-title: Components for Page Authoring
 description: Les composants sont disponibles lors de la modification d’une page à partir de l’onglet Composants du sidekick et du sélecteur Insérer un nouveau composant (lorsque vous double-cliquez dans la zone Faire glisser des composants ou éléments ici).
-seo-description: Les composants sont disponibles lors de la modification d’une page à partir de l’onglet Composants du sidekick et du sélecteur Insérer un nouveau composant (lorsque vous double-cliquez dans la zone Faire glisser des composants ou éléments ici).
+seo-description: The components are available when editing a page from the Components tab of the sidekick and the Insert New Component selector (when you double-click in the Drag components or assets here area).
 uuid: 6e4db6b1-af52-4b54-88a5-b82634f264fa
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: 62c6826d-bc8b-4177-a3bb-134ebafed8d2
 exl-id: b6c8c2b8-78d1-43a3-80b5-3535183ebf20
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '6177'
+source-wordcount: '6141'
 ht-degree: 82%
 
 ---
 
-# Composants pour la création de page{#components-for-page-authoring}
+# Composants pour la création de pages{#components-for-page-authoring}
 
 Les composants suivants sont conçus pour être utilisés lors de la création de contenu pour une page web standard. Ils forment un sous-ensemble des composants disponibles « prêts à l’emploi » pour une installation standard d’AEM.
 
@@ -29,9 +29,9 @@ Certains d’entre eux sont immédiatement visibles dans le sidekick, d’autres
 >
 >En fonction de votre instance, vous disposez peut-être de composants personnalisés développés explicitement pour vos besoins. Ces composants peuvent même avoir le même nom que certains composants traités ici.
 
-Les composants sont disponibles lorsque vous [modifiez une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) à partir de l’onglet **Composants** du sidekick et du sélecteur **Insérer un nouveau composant** (lorsque vous double-cliquez dans la zone **Faire glisser des composants ou des ressources ici**).
+Les composants sont disponibles lorsque [modification d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) de la **Composants** de l’onglet du sidekick et de la variable **Insérer un nouveau composant** (lorsque vous double-cliquez dans le **Faire glisser des composants ou des ressources ici** ).
 
-Vous pouvez sélectionner un composant et le faire glisser vers l’emplacement souhaité sur votre page, puis [Modifier le contenu et les propriétés](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
+Vous pouvez sélectionner un composant et le faire glisser vers l’emplacement souhaité sur votre page, puis [Modification du contenu et des propriétés](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
 
 Les composants sont triés en plusieurs catégories (groupes de composants) y compris (pour la création de page) :
 
@@ -49,7 +49,7 @@ Vous pouvez définir un lien avec un titre et une description.
 
 ![](do-not-localize/chlimage_1-4.png)
 
-### Image adaptative  {#adaptive-image}
+### Image adaptative {#adaptive-image}
 
 Le composant d’image adaptative génère des images dimensionnées en fonction de la fenêtre dans laquelle s’ouvre la page web. Pour utiliser le composant, vous devez fournir une image issue du système de fichiers ou du gestionnaire des actifs numériques. Si la page web s’ouvre, le navigateur web télécharge une copie de l’image qui a été redimensionnée, afin qu’elle s’adapte à la fenêtre active.
 
@@ -184,7 +184,7 @@ Vous spécifiez ici la manière dont les pages sont incluses dans le carrousel 
 
          * **Pages**
 
-            Sélectionnez une liste de pages. Utilisez `+` pour ajouter d’autres entrées et les boutons haut/bas pour ajuster l’ordre.
+            Sélectionnez une liste de pages. Utilisation `+` pour ajouter d’autres entrées et les boutons haut/bas pour ajuster l’ordre.
       * **Options de recherche**
 
          * **Démarrer dans**
@@ -198,10 +198,10 @@ Vous spécifiez ici la manière dont les pages sont incluses dans le carrousel 
 
             Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat de Query Builder. Par exemple, vous pouvez saisir &quot;fulltext=Marketing&quot; pour que toutes les pages comportant &quot;Marketing&quot; dans leur contenu s’affichent dans le carrousel.
 
-            Voir [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour une discussion complète sur les expressions de requête et d’autres exemples.
+            Voir [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour une discussion complète des expressions de requête et d’autres exemples.
    * **Classer par**
 
-      Sélectionnez `jcr:title`, `jcr:created`, `cq:lastModified` ou `cq:template` dans le menu déroulant.
+      Sélectionner `jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` dans le menu déroulant.
 
    * **Limite**
 
@@ -369,7 +369,7 @@ Vous pouvez faire glisser et déposer une image à partir de l’[Outil de reche
 >
 >Les utilisateurs d’Internet Explorer doivent charger l’image, cliquer sur **OK**, puis rouvrir l’image pour afficher le fichier téléchargé dans l’aperçu et être en mesure d’y apporter des modifications (un recadrage, par exemple).
 >
->Voir la section [Plateformes certifiées](/help/release-notes/release-notes.md#certifiedplatforms) pour plus d’informations sur les fonctionnalités HTML5 utilisées par AEM.
+>Voir [Plateformes certifiées](/help/release-notes/release-notes.md#certifiedplatforms) pour plus d’informations sur les fonctionnalités de HTML5 utilisées par AEM.
 
 Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
@@ -437,19 +437,19 @@ Le composant Liste vous permet de configurer des critères de recherche pour aff
 
       * **Options des pages enfants**
 
-         * **Enfants de**  (page parente)
+         * **Enfants de** (Page parente)
 
             Spécifiez un chemin manuellement ou à l’aide du sélecteur. Laissez vide pour utiliser la page active comme parent.
       * **Options de la liste fixe**
 
-         * **Pages**  : sélectionnez une liste de pages. Utilisez + pour ajouter d’autres entrées et les boutons haut/bas pour ajuster l’ordre.
+         * **Pages** - Sélectionnez une liste de pages. Utilisez + pour ajouter d’autres entrées et les boutons haut/bas pour ajuster l’ordre.
       * **Options de recherche**
 
-         * **Démarrer dans**  : saisissez un chemin de départ, manuellement ou à l’aide du sélecteur. Requête de recherche Entrez une requête de recherche en texte brut.
+         * **Commencer dans** - Entrez un chemin de départ, manuellement ou à l’aide du sélecteur. Requête de recherche Entrez une requête de recherche en texte brut.
       * **Options de la recherche avancée**
 
-         * **Notation des prédicats de Query Builder**  : vous pouvez saisir une requête de recherche à l’aide de la notation des prédicats de Query Builder. Par exemple, vous pouvez saisir &quot;fulltext=Marketing&quot; pour que toutes les pages comportant &quot;Marketing&quot; dans leur contenu s’affichent dans le carrousel. Voir  [QueryBuilder ](/help/sites-developing/querybuilder-api.md) pour une discussion complète sur les expressions de requête et d’autres exemples.
-      * **Balises**  : indiquez la page  **parente**, les  **mots-clés/** baliseset les critères de correspondance que vous souhaitez.
+         * **Notation des prédicats de Query Builder** - Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat de Query Builder. Par exemple, vous pouvez saisir &quot;fulltext=Marketing&quot; pour que toutes les pages comportant &quot;Marketing&quot; dans leur contenu s’affichent dans le carrousel. Voir [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour une discussion complète des expressions de requête et d’autres exemples.
+      * **Balises** - Spécifiez la variable **Page parente**, **Balises/Mots-clés** et vos critères de correspondance requis.
    * **Afficher comme**
 
       Permet de spécifier comment les éléments doivent être répertoriés (Liens, Teasers et Actualités).
@@ -563,7 +563,7 @@ Une fois configuré, le contenu s’affiche exactement comme sur la page source.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
-### Recherche {#search-features}
+### Rechercher {#search-features}
 
 Le composant Rechercher offre des capacités de recherche à votre page.
 
@@ -652,7 +652,7 @@ Vous pouvez configurer :
 
    * **Nouvelle diapositive**
 
-      Vous pouvez spécifier une sélection de diapositives à l’aide des boutons **Ajouter** (et **Supprimer**).
+      Vous pouvez spécifier une sélection de diapositives à l’aide de l’option **Ajouter** (et **Supprimer**).
 
    * **Titre**
 
@@ -744,11 +744,11 @@ Le composant Texte et image permet d’ajouter un bloc de texte et une image. Vo
 
 Vous pouvez configurer :
 
-* **Styles de composant**  (**Styles**)
+* **Styles de composant** (**Styles**)
 
    Vous pouvez ici aligner l’image à droite ou à gauche. Le paramètre par défaut est aligné à **Gauche**, avec l’image à gauche.
 
-* **Propriétés de l’image**  (**Propriétés avancées de l’image**)
+* **Propriétés de l’image** (**Propriétés d’image avancées**)
 
    Sous cet onglet, vous pouvez spécifier les paramètres suivants :
 
@@ -805,7 +805,7 @@ L’exemple suivant montre un composant **Titre** affiché (la conception est d�
 
 ![dc_title_use](assets/dc_title_use.png)
 
-### Vidéo {#video}
+### Vidéo  {#video}
 
 Le composant **Vidéo** permet de placer un élément vidéo prédéfini « prêt à l’emploi » sur une page.
 
@@ -813,10 +813,10 @@ Voir également [configurer vos profils vidéo](/help/sites-administering/config
 
 Une fois une instance du composant placée sur la page, vous pouvez configurer les options suivantes :
 
-* Vidéo
+* Vidéo 
 
-   * **Ressource vidéo**  : téléchargez ou déposez votre ressource vidéo.
-   * **Taille**  : la taille native de la vidéo (largeur x hauteur en pixels) apparaîtra dans les zones en regard de Taille (voir ci-dessus). Saisissez ici manuellement les dimensions de largeur et de hauteur si vous souhaitez remplacer les dimensions natives de la vidéo. Cliquez sur  **** OK pour fermer la boîte de dialogue.
+   * **Ressource vidéo** - Chargez ou déposez votre ressource vidéo.
+   * **Taille** - La taille native de la vidéo (largeur x hauteur en pixels) apparaîtra dans les zones en regard de Taille (voir ci-dessus). Saisissez ici manuellement les dimensions de largeur et de hauteur si vous souhaitez remplacer les dimensions natives de la vidéo. Cliquez sur **OK** pour fermer la boîte de dialogue.
 
 >[!NOTE]
 >
@@ -827,7 +827,6 @@ Une fois une instance du composant placée sur la page, vous pouvez configurer l
 >* `FLV` (vidéo par Flash)
 
 >
-
 
 
 ## Colonnes {#columns}
@@ -842,7 +841,7 @@ L’exemple suivant illustre l’utilisation des composants 2 colonnes et 3 co
 
 Composant Contrôle de colonne qui est égal par défaut à 2 colonnes.
 
-### 3 colonnes  {#columns-2}
+### 3 colonnes {#columns-2}
 
 Composant Contrôle de colonne qui est égal par défaut à 3 colonnes.
 
@@ -949,8 +948,8 @@ Ces onglets vous fournissent les paramètres nécessaires ; ceux-ci peuvent dé
 
       Cela dépend du type de composant de formulaire, mais fournit une ou plusieurs zones de clic pour indiquer que ce champ, ou certaines parties de ce champ, sont obligatoires.
 
-   * **Message obligatoire**  : message informant les utilisateurs que ce champ est obligatoire. un champ obligatoire est également marqué avec un astérisque et .
-   * **Contrainte**  : les contraintes disponibles pour la sélection dépendent du type de composant de formulaire.
+   * **Message requis** - Un message informant les utilisateurs que ce champ est obligatoire ; un champ obligatoire est également marqué avec un astérisque et .
+   * **Contrainte** - Les contraintes disponibles pour la sélection dépendent du type de composant de formulaire.
    * **Message de contrainte**
  Message qui informe les utilisateurs de ce qui est obligatoire.
 
@@ -974,7 +973,7 @@ Le composant Formulaire définit le début et la fin d’un formulaire à l’ai
 
 Entre le début et la fin d’un formulaire, vous pouvez ajouter des composants qui définissent les champs de saisie réels à l’intention des utilisateurs.
 
-#### Début du formulaire  {#start-of-form}
+#### Début du formulaire {#start-of-form}
 
 Ce composant est nécessaire pour définir le début d’un nouveau formulaire sur la page. Vous pouvez configurer :
 
@@ -989,7 +988,7 @@ Détermine quel workflow est déclenché une fois le formulaire envoyé.
 
    * **Type d’action**
 
-      Un formulaire requiert une action. L’action définit l’opération déclenchée avec les données soumises par l’utilisateur (semblable à action= en langage HTML). Certains ont besoin d’une **Configuration de l’action** correspondante.
+      Un formulaire requiert une action. L’action définit l’opération déclenchée avec les données soumises par l’utilisateur (semblable à action= en langage HTML). Certains ont besoin d’une **Configuration d’action**.
 
       Plusieurs types d’action sont inclus dans une installation d’AEM standard :
 
@@ -1045,7 +1044,7 @@ Détermine quel workflow est déclenché une fois le formulaire envoyé.
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **Configuration de l’action**
 
-      Les options disponibles dans **Configuration de l’action** dépendent du **Type d’action** sélectionné :
+      Les options disponibles dans **Configuration d’action** dépendent de la variable **Type d’action** selected :
 
       * **Demande de compte**
 
@@ -1097,7 +1096,7 @@ Page utilisée lors de la création d’un compte.
 
          * **Afficher des données...**
 
-            Cliquez sur ce bouton pour accéder aux informations sur les résultats de formulaire dans l’éditeur en masse. À partir de là, vous pouvez exporter les informations vers un fichier `.tsv` (séparé par des tabulations) (à utiliser, par exemple, dans une feuille de calcul Excel).
+            Cliquez sur ce bouton pour accéder aux informations sur les résultats de formulaire dans l’éditeur en masse. À partir de là, vous pouvez exporter les informations vers une `.tsv` (séparé par des tabulations) (pour une utilisation dans une feuille de calcul Excel, par exemple).
       * **Courrier**
 
          * **Du**
@@ -1137,7 +1136,7 @@ Page utilisée lors de la création d’un compte.
             Cliquez sur ce bouton pour accéder aux informations sur les résultats de formulaire dans l’éditeur en masse. Vous avez alors la possibilité d’exporter les informations vers un fichier .tsv (séparé par des tabulations) en vue de l’utiliser, par exemple, dans une feuille de calcul Excel).
       * **Stocker le contenu avec les chargements**
 
-         Il dispose des mêmes options que **Stocker le contenu**.
+         Cette option présente les mêmes options que la variable **Stocker le contenu**.
 
       * **Désabonner l’abonné**
 
@@ -1206,9 +1205,9 @@ Le composant Captcha requiert que l’utilisateur saisisse une chaîne alphanum�
 
 Vous pouvez configurer plusieurs paramètres différents pour ce composant, notamment un message à afficher lorsque la chaîne Captcha n’est pas valide.
 
-### Groupe de cases à cocher  {#checkbox-group}
+### Groupe de cases à cocher {#checkbox-group}
 
-Une case à cocher vous permet de créer une liste composée d&#39;une ou de plusieurs cases à cocher (plusieurs d&#39;entre elles peuvent être simultanément cochées).
+Une case à cocher vous permet de créer une liste composée d’une ou de plusieurs cases à cocher (plusieurs d’entre elles peuvent être simultanément cochées).
 
 ![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
 
@@ -1242,7 +1241,7 @@ Vous pouvez spécifier un titre et des éléments pour qu’ils apparaissent dan
 
 ### Téléchargement du fichier {#file-upload}
 
-Le composant Chargement du fichier fournit à l&#39;utilisateur un moyen pour sélectionner un fichier et le télécharger.
+Le composant Chargement du fichier fournit à l’utilisateur un moyen pour sélectionner un fichier et le télécharger.
 
 ![dc_form_fileupload](assets/dc_form_fileupload.png)
 
@@ -1270,13 +1269,13 @@ Un bouton d’image permet de créer un bouton comportant vos texte et image :
 
 ### Téléchargement de l’image {#image-upload}
 
-Le composant Chargement de l&#39;image fournit à l&#39;utilisateur un moyen pour sélectionner un fichier image et le télécharger.
+Le composant Chargement de l’image fournit à l’utilisateur un moyen pour sélectionner un fichier image et le télécharger.
 
 ![dc_form_imageupload](assets/dc_form_imageupload.png)
 
 ### Champ du lien {#link-field}
 
-Le champ Lien permet à l&#39;utilisateur de spécifier une URL.
+Le champ Lien permet à l’utilisateur de spécifier une URL.
 
 ![dc_form_link](assets/dc_form_link.png)
 
@@ -1353,7 +1352,7 @@ Le champ de texte standard peut être configuré selon la taille et la largeur r
 
 ![dc_form_text](assets/dc_form_text.png)
 
-### Bouton(s) d’envoi de workflow {#workflow-submit-button-s}
+### Bouton d’envoi du workflow {#workflow-submit-button-s}
 
 Permet de créer un bouton Envoyer à utiliser dans un workflow.
 

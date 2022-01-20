@@ -1,8 +1,8 @@
 ---
 title: Guide rapide relatif à WCAG 2.0
-seo-title: Guide rapide relatif à WCAG 2.0
+seo-title: Quick Guide to WCAG 2.0
 description: Lisez une introduction rapide aux consignes d’accessibilité WCAG 2.0.
-seo-description: Lisez une introduction rapide aux consignes d’accessibilité WCAG 2.0.
+seo-description: Read a quick overview of the WCAG 2.0 accessibility guidelines.
 uuid: a5cf463e-89e9-4cc0-9c91-69a1fd3d8ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -12,7 +12,7 @@ discoiquuid: 3cac0e34-7514-48ce-a93b-592bbdbcd252
 exl-id: 80edcd53-bc3c-4f61-8dfb-c592e7e51f60
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1672'
 ht-degree: 92%
 
 ---
@@ -35,11 +35,11 @@ Par conséquent, la compréhension des objectifs de WCAG 2.0 et de la structure
 
 L’objectif de WCAG 2.0 est de fournir des consignes présentant les caractéristiques suivantes :
 
-* sont **agnostiques en matière de technologie:**
+* Are **agnostique en technologie :**
 
-   En d’autres termes, des consignes qui peuvent être appliquées à divers formats de contenu web, et pas seulement au format HTML. Ainsi, WCAG 2.0 peut couvrir le contenu généré par ou fourni au format PDF, Flash, JavaScript, ainsi que d’autres technologies web actuelles et futures. Cela vise à corriger une faiblesse identifiée de WCAG 1.0, dans la mesure où il était axé sur le format HTML au détriment d’autres formats de contenu web.
+   En d’autres termes, des consignes qui peuvent être appliquées à un large éventail de formats de contenu web, et pas seulement à des HTMLS. Ainsi, WCAG 2.0 peut couvrir le contenu généré par ou fourni au format PDF, Flash, JavaScript, ainsi que d’autres technologies web actuelles et futures. Cela vise à corriger une faiblesse identifiée de WCAG 1.0, dans la mesure où il était axé sur le format HTML au détriment d’autres formats de contenu web.
 
-* Sont **testable:**
+* Are **testable :**
 
    Chaque consigne est écrite de manière à pouvoir être testée objectivement pour s’assurer qu’un groupe d’experts en accessibilité conviendrait généralement que la consigne a été respectée. L’un des défis des consignes d’accessibilité est que, alors que certaines peuvent être testées par des moyens techniques, d’autres requièrent un jugement humain afin de vérifier si la consigne a été respectée. WCAG 2.0 a été écrit dans le but de réduire la subjectivité de certaines consignes et certains points de contrôle de WCAG 1.0.
 

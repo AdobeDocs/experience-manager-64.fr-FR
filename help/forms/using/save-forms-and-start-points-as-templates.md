@@ -1,8 +1,8 @@
 ---
 title: Enregistrer les formulaires sous forme de modèles
-seo-title: Enregistrer les formulaires sous forme de modèles
+seo-title: Save forms as templates
 description: 'Apprenez à créer des modèles à partir de formulaires contenant des données souvent requises. '
-seo-description: 'Apprenez à créer des modèles à partir de formulaires contenant des données souvent requises. '
+seo-description: Learn how to create templates from forms with data required repeatedly.
 uuid: 090c6271-4061-4adc-a063-9df4953b47ce
 contentOwner: khsingh
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
 exl-id: 355c4810-6e45-41cb-9b60-73225bd53526
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 80%
+source-wordcount: '328'
+ht-degree: 79%
 
 ---
 
@@ -24,7 +24,7 @@ Parfois, lorsque les utilisateurs remplissent un formulaire, les entrées à cer
 Pour créer un modèle, procédez comme suit :
 
 1. Ouvrez un formulaire et sélectionnez ou remplissez les champs dont les valeurs sont identiques presqu’à chaque fois que vous l’utilisez. Vous pouvez inclure une pièce jointe au modèle que vous ajoutez généralement lorsque vous remplissez le formulaire.
-1. Appuyez sur l’icône **Enregistrer comme modèle** ![save_as_template](assets/save_as_template.png). Une boîte de dialogue pour indiquer le nom du modèle s’affiche.
+1. Appuyez sur le bouton **Enregistrer en tant que modèle** ![save_as_template](assets/save_as_template.png)icône . Une boîte de dialogue pour indiquer le nom du modèle s’affiche.
 1. Indiquez le nom du modèle et appuyez sur **Enregistrer**. Le modèle s’affiche dans le dossier Templates.
 
    Si un modèle portant le même nom existe, une boîte de dialogue de confirmation de remplacement du modèle existant s’affiche. Pour remplacer le modèle existant par le nouveau modèle, appuyez sur **Continuer** ou pour enregistrer le modèle sous un autre nom, appuyez sur **Annuler**.

@@ -1,19 +1,19 @@
 ---
 title: Gérer les images de signature d’agent
-seo-title: Gérer les images de signature d’agent
+seo-title: Manage agent signature images
 description: Après la création d’un modèle de lettre, vous pouvez l’utiliser pour créer une correspondance dans AEM Forms en gérant les données, le contenu et les pièces jointes.
-seo-description: Après la création d’un modèle de lettre, vous pouvez l’utiliser pour créer une correspondance dans AEM Forms en gérant les données, le contenu et les pièces jointes.
+seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
 uuid: 720dd075-9059-4311-ad52-70e2f7c76c58
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 7313c108-39fa-4cf4-8955-2d54be41d476
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: 4e261228-14a4-4983-97ac-6ca476bee126
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 71%
+source-wordcount: '690'
+ht-degree: 70%
 
 ---
 
@@ -45,7 +45,7 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
       >[!NOTE]
       >
-      >cmUserRoot correspond à l’emplacement par défaut où AEM recherche l’image de la signature de l’agent. Vous pouvez toutefois le modifier en modifiant la propriété Racine de l’utilisateur de CM dans les [propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md).
+      >cmUserRoot correspond à l’emplacement par défaut où AEM recherche l’image de la signature de l’agent. Vous pouvez toutefois le modifier en modifiant la propriété Racine de l’utilisateur de CM dans le [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md).
 
 1. Dans l’explorateur de contenu, accédez au dossier cmUserRoot et ajoutez-y l’image de la signature de l’agent.
 
@@ -61,17 +61,17 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
       **Type :** nt:file
 
-      Sous le dossier `cmUserRoot` , un nouveau dossier appelé `JohnDoe` (ou le nom que vous avez donné à l’étape précédente) est créé.
+      Sous , `cmUserRoot` dossier, un nouveau dossier appelé `JohnDoe` (ou le nom que vous avez donné à l’étape précédente) est créé.
 
    1. Cliquez sur le nouveau dossier que vous avez créé (ici`JohnDoe` ). L’Explorateur de contenu affiche le contenu du dossier en grisé.
 
-   1. Double-cliquez sur la propriété **jcr:content**, définissez son type sur **nt:resource**, puis cliquez sur la coche verte pour enregistrer l’entrée.
+   1. Double-cliquez sur le **jcr:content** , définissez son type sur **nt:resource**, puis cliquez sur la coche verte pour enregistrer l’entrée.
 
       Si la propriété n’est pas disponible, vous devez d’abord créer une propriété avec le nom jcr:content.
 
       ![propriété jcr:content](assets/3_jcrcontentntresource.png)
 
-      Parmi les sous-propriétés de jcr:content se trouve jcr:data en grisé. Double-cliquez sur jcr:data. La propriété devient modifiable et le bouton Choisir un fichier apparaît dans l’entrée. Cliquez sur **Choisir le fichier** et sélectionnez le fichier image à utiliser comme logo. Le fichier image n’a pas besoin d’extension.
+      Parmi les sous-propriétés de jcr:content se trouve jcr:data en grisé. Double-cliquez sur jcr:data. La propriété devient modifiable et le bouton Choisir un fichier apparaît dans l’entrée. Cliquez sur **Choisir un fichier** et sélectionnez le fichier image à utiliser comme logo. Le fichier image n’a pas besoin d’extension.
 
       ![Données JCR](assets/5_jcrdata.png)
    Cliquez sur **Enregistrer tout**.

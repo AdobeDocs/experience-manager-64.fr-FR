@@ -46,7 +46,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 >[!NOTE]
 >
->Si vous disposez d’un composant personnalisé et que vous utilisez des protocoles SOAP ou EJB pour appeler des DSC sur le même serveur local, et que ces appels cessent de fonctionner après une mise à niveau, utilisez la stratégie d’appel in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)). Utilisez la méthode d’appel DSC in-VM avec ServiceClientFactory par défaut et ne construisez pas ServiceClientFactory à l’aide des protocoles SOAP ou EJB.
+>Si vous disposez d’un composant personnalisé et que vous utilisez des protocoles SOAP ou EJB pour appeler des DSC sur le même serveur local, et que ces appels cessent de fonctionner après une mise à niveau, puis utilisez In-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)) stratégie d’appel. Utilisez la méthode d’appel DSC in-VM avec ServiceClientFactory par défaut et ne construisez pas ServiceClientFactory à l’aide des protocoles SOAP ou EJB.
 
 ## Démarrage rapide (mode SOAP) : Déploiement d’un composant à l’aide de l’API Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
@@ -357,7 +357,7 @@ L’exemple de code Java suivant désactive la sécurité de l’exemple de serv
 
 ## Démarrage rapide (mode SOAP) : Démarrage d’un service à l’aide de l’API Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-L’exemple de code Java suivant lance un service nommé *SendEmailService*.
+L’exemple de code Java suivant démarre un service nommé *SendEmailService*.
 
 ```as3
  package com.adobe.sample.servicemanager; 

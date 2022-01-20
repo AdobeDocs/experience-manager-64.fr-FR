@@ -1,17 +1,17 @@
 ---
 title: Création de formulaires avec des sections répétables
-seo-title: Création de formulaires avec des sections répétables
+seo-title: Creating forms with repeatable sections
 description: 'Les sections répétables sont des panneaux qui peuvent être dynamiquement ajoutés ou supprimés dans un formulaire.  '
-seo-description: 'Les sections répétables sont des panneaux qui peuvent être dynamiquement ajoutés ou supprimés dans un formulaire.  '
+seo-description: Repeatable sections are panels that can be dynamically added or removed to a form.
 uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 6ae70f02-a86d-4514-abc5-1ed08e484852
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1119'
 ht-degree: 95%
 
 ---
@@ -24,7 +24,7 @@ Par exemple, lorsqu’elle dépose sa candidature pour un poste, la personne à 
 
 Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthodes suivantes :
 
-## Utilisation du gestionnaire d’instances via des scripts   {#using-instance-manager-via-scripts-nbsp}
+## Utilisation du gestionnaire d’instances via des scripts  {#using-instance-manager-via-scripts-nbsp}
 
 1. En mode d’édition, sélectionnez panneau, puis appuyez sur ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, activez **Activer la répétition du panneau**. Spécifiez des valeurs pour les champs **[!UICONTROL Maximum]** et **[!UICONTROL Minimum.]**
 
@@ -46,8 +46,8 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
       1. Dans la zone de la règle, sous QUAND, sélectionnez l’état **est cliqué**.
       1. Sous PUIS :
 
-         * Pour créer un bouton d’ajout de panneau, sélectionnez **Ajouter une instance** et glissez-déposez le panneau à l’aide du ![panneau latéral](assets/toggle-side-panel.png) ou sélectionnez-le à l’aide de l&#39;option **Déposer l’objet ou sélectionner ici.**
-         * Pour créer un bouton de suppression de panneau, sélectionnez **Supprimer une instance**, et glissez-déposez le panneau à l’aide du ![panneau latéral](assets/toggle-side-panel.png) ou sélectionnez-le à l’aide de l&#39;option **Déposer l&#39;objet ou sélectionner ici**
+         * Pour créer un bouton d’ajout de panneau, sélectionnez **Ajouter une instance** et glissez-déposez le panneau à l’aide du ![panneau latéral](assets/toggle-side-panel.png) ou sélectionnez-le à l’aide de l’option **Déposer l’objet ou sélectionner ici.**
+         * Pour créer un bouton de suppression de panneau, sélectionnez **Supprimer une instance**, et glissez-déposez le panneau à l’aide du ![panneau latéral](assets/toggle-side-panel.png) ou sélectionnez-le à l’aide de l’option **Déposer l’objet ou sélectionner ici**
 
       Sélectionnez **Éditeur de code** dans la ligne Objets et fonctions de formulaire. Cliquez sur **Modifier les règles** et dans la zone de code :
 
@@ -96,19 +96,7 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-## Utilisation de la mise en page en accordéon pour le panneau parent {#using-the-accordion-layout-for-the-parent-panel-nbsp}
+## Utilisation de la mise en page en accordéon pour le panneau parent  {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
 Un panneau possède différentes options de mise en forme. La mise en page de l’option de conception en accordéon prend en charge les panneaux répétables. Pour créer un panneau répétable avec la mise en page de l’option de conception en accordéon, procédez comme suit :
 
@@ -141,7 +129,7 @@ Le fichier .zip joint contient un exemple de sous-formulaire répétable.
 
 Vous pouvez créer des panneaux répétables à partir d’un schéma XML et de la propriété minOccurs et maxOccurs de n’importe quel élément de type complexe. Pour des informations détaillées sur le schéma XML, voir [Création de formulaires adaptatifs à l’aide du schéma XML en tant que modèle de formulaire](/help/forms/using/adaptive-form-xml-schema-form-model.md).
 
-Dans le code suivant, le panneau`SampleType` utilise la propriété minOccours &amp; maxOccurs.
+Dans le code suivant, le panneau`SampleType` utilise la propriété minOccurs &amp; maxOccurs.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 

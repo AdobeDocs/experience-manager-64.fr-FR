@@ -1,18 +1,18 @@
 ---
 title: Composant Separator dans les formulaires adaptatifs
-seo-title: Composant Separator dans les formulaires adaptatifs
+seo-title: Separator component in adaptive forms
 description: Vous pouvez utiliser le composant séparateur pour isoler visuellement les sections d’un formulaire.
-seo-description: Vous pouvez utiliser le composant séparateur pour isoler visuellement les sections d’un formulaire.
+seo-description: You can use the separator component to visually segregate sections of a form.
 uuid: d51c3797-8227-41ed-88cd-c56cc129eb86
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: ba674a2d-7c78-430e-8e17-1a18619e71cb
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 7e37401a-8c63-4711-8a33-61e6bd4b419f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 95%
+source-wordcount: '280'
+ht-degree: 94%
 
 ---
 
@@ -34,4 +34,4 @@ Pour définir les propriétés d’un composant séparateur :
 1. Dans le champ adjacent, spécifiez une valeur valide pour la propriété CSS3 spécifiée. Par exemple,**noir 3px**.
 1. Cliquez sur **Ajouter un élément** pour définir une autre propriété et sa valeur.
 1. Cliquez sur **Aperçu** pour prévisualiser les modifications dans le formulaire.
-1. Cliquez sur **OK** pour confirmer les modifications ou sur **Annuler ** pour quitter la boîte de dialogue sans modification.
+1. Cliquez sur **OK** pour confirmer les modifications ou **Annuler **pour quitter la boîte de dialogue sans aucune modification.

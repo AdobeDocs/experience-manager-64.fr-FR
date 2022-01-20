@@ -1,18 +1,18 @@
 ---
 title: Configuration d’une page de redirection
-seo-title: Configuration d’une page de redirection
+seo-title: Configuring redirect page
 description: Après avoir complété un formulaire adaptatif, les utilisateurs peuvent être redirigés vers une page Web que les auteurs de formulaires peuvent configurer lors de la phase de création.
-seo-description: Après avoir complété un formulaire adaptatif, les utilisateurs peuvent être redirigés vers une page Web que les auteurs de formulaires peuvent configurer lors de la phase de création.
+seo-description: After filling an adaptive form, users can be redirected to a webpage that form authors can configure while creating the form.
 uuid: 5a5f912a-9696-4bc1-af3f-ead78f767e02
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c51817aa-193a-4d4f-bd83-06518ddfb395
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: bbe10952-d6a7-4adc-bab9-388c1ee8e56a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 79%
+source-wordcount: '238'
+ht-degree: 77%
 
 ---
 
@@ -27,14 +27,14 @@ Pour chaque formulaire, les auteurs peuvent configurer une page vers laquelle le
 1. Indiquez L’URL de la page de redirection sous Page de remerciement dans la section Envoyer. 
 1. Sous Action Envoyer, vous pouvez éventuellement configurer le paramètre à transmettre à la page de redirection pour l’action Envoyer vers le point de fin REST.
 
-![Configuration de la page de redirection](assets/thank-you-setting-1.png) 
+![Configuration de la page de redirection](assets/thank-you-setting-1.png)
 **Figure :** *Configuration de la page de redirection*
 
-Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. Pour toutes les actions d’envoi disponibles, les paramètres `status` et `owner` sont transmis. Outre ces deux paramètres, des paramètres supplémentaires sont transmis pour les actions d’envoi suivantes :
+Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. Pour toutes les actions d’envoi disponibles, `status` et `owner` Les paramètres sont transmis. Outre ces deux paramètres, des paramètres supplémentaires sont transmis pour les actions d’envoi suivantes :
 
-* **Action**  Stocker le contenu (obsolète) :  `contentPath`: le chemin d’accès du noeud dans le référentiel où sont stockées les données envoyées est transmis.
+* **Action Stocker le contenu** (obsolète) : `contentPath`: le chemin d’accès du noeud dans le référentiel où sont stockées les données envoyées est transmis.
 
-* **Action Stocker le PDF**  (obsolète) :  `contentPath`—des données envoyées et du chemin d’accès au noeud stockant le fichier PDF dans le référentiel—est transmis.
+* **Action du PDF de magasin** (obsolète) : `contentPath`—des données envoyées et du chemin d’accès au noeud qui stocke le fichier du PDF dans le référentiel—est transmis.
 
 * **Flux de travail Envoyer aux formulaires** : les paramètres de sortie renvoyés à partir du flux de travail des formulaires sont transmis.
 

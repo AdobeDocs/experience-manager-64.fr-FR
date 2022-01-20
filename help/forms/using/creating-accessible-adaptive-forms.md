@@ -1,17 +1,17 @@
 ---
 title: Création de formulaires adaptatifs accessibles
-seo-title: Création de formulaires adaptatifs accessibles
+seo-title: Creating accessible adaptive forms
 description: AEM Forms propose les outils nécessaires pour créer des formulaires adaptatifs accessibles et répondre aux normes d’accessibilité.
-seo-description: AEM Forms propose les outils nécessaires pour créer des formulaires adaptatifs accessibles et répondre aux normes d’accessibilité.
+seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
 uuid: eceb3282-0b90-4e0a-8b89-137d27029747
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: adad26fa-b27a-4bd7-806c-4ddfbaae7a37
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '903'
 ht-degree: 99%
 
 ---

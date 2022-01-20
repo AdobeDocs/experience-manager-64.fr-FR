@@ -1,8 +1,8 @@
 ---
 title: Présentation des Services de document AEM
-seo-title: Présentation des Services de document AEM
+seo-title: Overview of AEM Document Services
 description: Les Services de document AEM sont un ensemble de services OSGi permettant de créer, d’assembler et de sécuriser des documents PDF.
-seo-description: Les Services de document AEM sont un ensemble de services OSGi permettant de créer, d’assembler et de sécuriser des documents PDF.
+seo-description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
 uuid: 17fd42ef-9950-4b51-9ae7-82e8b4759fe8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 0685478b-d08e-4d69-8dd3-f75270772167
 exl-id: aabfd05d-581b-4205-8e61-5667d5713cb1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1399'
 ht-degree: 96%
 
 ---
@@ -43,7 +43,7 @@ Les quatre opérations du service Output mentionnées ci-dessous sont disponible
 * **generatePrintedOutput** : fusionne une conception de formulaire avec des données pour générer un document à envoyer à une imprimante laser ou une imprimante d’étiquettes réseau.
 
 * **generatePDFOutputBatch** : Fusionne en un seul appel plusieurs modèles avec plusieurs enregistrements de données pour générer un lot de fichiers PDF. Il existe également une option pour générer un fichier PDF unique en combinant tous les fichiers PDF
-* **generatePrintedOutputBatch** : Fusionne plusieurs modèles avec plusieurs enregistrements de données en un seul appel pour générer un lot de documents d’impression (PS,PCL,ZPL,DPL,IPL,TPCL). Il existe également une option pour générer un document d’impression unique.
+* **generatePrintedOutputBatch**: Fusionne plusieurs modèles avec plusieurs enregistrements de données en un seul appel pour générer un lot de documents d’impression (PS,PCL,ZPL,DPL,IPL,TPCL). Il existe également une option pour générer un document d’impression unique.
 
 ## Incohérence affectant le service assembleur {#assembler-service}
 
@@ -90,7 +90,7 @@ Vous pouvez utiliser une simple mise en correspondance des entrées pour indique
 * FTP
 * HTTP/HTTPS
 
-## Service Doc Assurance  {#doc-assurance-service}
+## Service Doc Assurance {#doc-assurance-service}
 
 Le service Doc Assurance vous permet de chiffrer et de déchiffrer des documents, d’ajouter des droits d’utilisation aux fonctionnalités d’Adobe Reader ou encore d’ajouter des signatures numériques à vos documents. Vos utilisateurs peuvent facilement interagir avec les documents et formulaires PDF, tandis que votre entreprise améliore la sécurité, l’archivage et la conformité.
 
@@ -110,7 +110,7 @@ Le service Signature accède aux certificats et aux informations d’identificat
 
 Le service Encryption permet de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Vous pouvez chiffrer l’intégralité d’un document PDF (contenu, métadonnées et pièces jointes), tous les éléments autres que ses métadonnées ou uniquement les pièces jointes. Un utilisateur autorisé peut déchiffrer le document pour pouvoir accéder à son contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Acrobat. Si un document PDF est chiffré avec un certificat, l’utilisateur doit déchiffrer ce document avec une clé privée (certificat). Cette clé doit correspondre à la clé publique utilisée pour le chiffrement.
 
-### Service Reader Extensions  {#reader-extension-service}
+### Service Reader Extensions {#reader-extension-service}
 
 Le service Reader Extensions permet à votre entreprise de partager facilement des documents PDF interactifs en étendant la fonctionnalité d’Adobe Reader avec des droits d’utilisation supplémentaires. Le service Reader Extensions fonctionne avec Adobe Reader 7.0 et versions ultérieures. Ce service ajoute des droits d’utilisation dans un document PDF. Cela active des fonctionnalités généralement indisponibles à l’ouverture d’un document PDF dans Adobe Reader, comme l’ajout de commentaires dans un document, le remplissage de formulaires et l’enregistrement du document. Les utilisateurs tiers n’ont pas besoin de disposer d’un logiciel supplémentaire ni de modules externes pour utiliser les documents définis avec des droits d’utilisation.
 
@@ -129,6 +129,6 @@ Ces fonctions d’utilisateur spéciales sont automatiquement activées lorsqu�
 
 Le service Doc Assurance ne peut pas être utilisé immédiatement. Pour configurer le service DocAssurance, voir[ configuration de Document Services](/help/forms/using/install-configure-document-services.md).
 
-## Service SendToPrinter  {#send-to-printer-service}
+## Service SendToPrinter {#send-to-printer-service}
 
 Le service SendToPrinter fournit une API pour envoyer des documents vers l’imprimante spécifiée pour l’impression.

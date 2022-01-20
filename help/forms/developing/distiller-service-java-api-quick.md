@@ -1,8 +1,8 @@
 ---
 title: API Java Distiller Service QuickStart (SOAP)
-seo-title: API Java Distiller Service QuickStart (SOAP)
-description: Utilisez l’API Java du service Distiller pour convertir un fichier PostScript en document PDF.
-seo-description: Utilisez l’API Java du service Distiller pour convertir un fichier PostScript en document PDF.
+seo-title: Distiller Service Java API QuickStart(SOAP)
+description: Utilisez l’API Java du service Distiller pour convertir un fichier PostScript en document de PDF.
+seo-description: Use the Distiller Service Java API to convert a PostScript file to a PDF document.
 uuid: 7781f074-cea4-4109-892b-118cfad4ec36
 contentOwner: admin
 content-type: reference
@@ -13,8 +13,8 @@ role: Developer
 exl-id: 0d7cdb60-e892-4644-8a72-a8068ca2e224
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 1%
+source-wordcount: '185'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 ## Démarrage rapide (mode SOAP) : Conversion d’un fichier PostScript en document PDF à l’aide de l’API Java {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
-L’exemple de code suivant convertit un fichier PostScript appelé *Loan.ps* en fichier PDF appelé *Loan.pdf*. (Voir [Conversion de documents PostScript en documents PDF](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
+L’exemple de code suivant convertit un fichier PostScript appelé *Loan.ps* en fichier PDF appelé *Loan.pdf*. (Voir [Conversion de PostScript en documents de PDF](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
 
 ```as3
  /* 

@@ -1,8 +1,8 @@
 ---
 title: AEM Commerce – Préparation pour le RGPD
-seo-title: AEM Commerce – Préparation pour le RGPD
+seo-title: AEM Commerce - GDPR Readiness
 description: '"AEM Commerce – Préparation pour le RGPD"'
-seo-description: 'null'
+seo-description: null
 uuid: 7ca26587-8cce-4c75-8629-e0e5cfb8166c
 contentOwner: carlino
 discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 exl-id: c5002812-cbc6-4b3e-85be-3446630b4e8a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '309'
 ht-degree: 76%
 
 ---
@@ -39,7 +39,7 @@ Pour certaines plateformes commerciales, nous stockons les informations de profi
 
 En ce qui concerne l’intégration de Salesforce Commerce Cloud, AEM Commerce ne stocke aucune information relevant du RGPD. Vous devriez transférer la demande au [Salesforce Cloud](https://documentation.demandware.com/).
 
-Pour les intégrations hybris et IBM WebSphere, il existe des données dans AEM. Vous devriez utiliser les [instructions relatives au RGPD pour la plate-forme AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) et vous poser les questions suivantes :
+Pour les intégrations Hybris et IBM WebSphere, il existe des données dans AEM. Vous devriez utiliser les [instructions relatives au RGPD pour la plate-forme AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) et vous poser les questions suivantes :
 
 1. **Où mes données sont-elles stockées/utilisées ?** Les informations de profil utilisateur mises en cache comme le nom, l’identifiant de l’utilisateur commercial, le jeton, le mot de passe, les coordonnées, etc. sont affichées à partir d’AEM.
 1. **Avec qui partager les données couvertes par le RGPD ?** Aucune mise à jour des données relevant du RGPD dans AEM Commerce n’est enregistrée (à l’exception des données de profil appropriées, comme indiqué ci-dessus), elles sont en effet traitées par proxy sur la plate-forme commerciale.

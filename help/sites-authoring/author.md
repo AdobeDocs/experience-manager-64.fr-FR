@@ -1,8 +1,8 @@
 ---
 title: Concept de création
-seo-title: Concept de création
+seo-title: Concept of Authoring
 description: Concepts de création dans AEM
-seo-description: Concepts de création dans AEM
+seo-description: Concepts of authoring in AEM
 uuid: 824c8b91-07c7-471b-b3aa-5a73d6d48414
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 exl-id: 23e30de9-1a30-484a-b370-f9f0d45b4e41
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '547'
 ht-degree: 85%
 
 ---
@@ -65,7 +65,7 @@ Certaines tâches administratives peuvent aussi vous aider à gérer votre conte
 
 ## Environnement de publication {#publish-environment}
 
-Une fois prêt, le contenu du site AEM est publié dans l’ **environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
+Une fois prêt, le contenu du site d’AEM est publié sur la page **environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
 
 Dans le cas d’un site web ordinaire, l’environnement de publication est situé à l’intérieur de la zone DMZ ; en d’autres termes, il est disponible sur Internet, mais il ne bénéficie plus de la protection absolue de votre réseau interne.
 
@@ -77,16 +77,13 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
 >
 >* **Publier/Annuler la publication**
    >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
-   >
-   >
-* **Activer/Désactiver**
+>
+>* **Activer/Désactiver**
    >  Ces termes sont synonymes de publication/annulation de la publication. Elles sont plus courantes dans l’IU classique.
-   >
-   >
-* **Répliquer/Réplication**
+>
+>* **Répliquer/Réplication**
    >  Il s’agit des termes techniques utilisés pour indiquer le mouvement des données (contenu de page, fichiers, code, commentaires utilisateur, etc.) d’un environnement à un autre. c’est-à-dire lors de la publication ou de la réplication inverse des commentaires utilisateur.
 >
-
 
 
 ## Dispatcher {#dispatcher}

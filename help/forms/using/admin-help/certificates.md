@@ -1,8 +1,8 @@
 ---
 title: Gestion de certificats
-seo-title: Gestion de certificats
+seo-title: Managing certificates
 description: Découvrez comment importer et exporter un certificat et modifier ses paramètres d’approbation.
-seo-description: Découvrez comment importer et exporter un certificat et modifier ses paramètres d’approbation.
+seo-description: Learn how to import and export a certificate and edit its trust settings.
 uuid: 46b1dbe5-517c-4294-bb52-cc6700a768e8
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
 exl-id: b8d4f35b-dc9c-4e0a-b855-f49275d4ac1f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '641'
 ht-degree: 83%
 
 ---
@@ -49,12 +49,12 @@ Vous pouvez également importer et supprimer des certificats à l’aide de l’
    >un certificat racine Adobe est implicitement approuvé par le Trust Store pour l’authentification de certificat, la signature, la certification de signature et l’identité.
 
 1. Dans la zone Alias, saisissez l’identificateur du certificat.
-1. Cliquez sur **[!UICONTROL Parcourir]** pour localiser le certificat, puis sur **[!UICONTROL OK]**.
+1. Cliquez sur **[!UICONTROL Parcourir]** pour localiser le certificat, puis cliquez sur **[!UICONTROL OK]**.
 
 ## Exportation d’un certificat {#export-a-certificate}
 
 1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Trust Store Management > Certificats]**.
-1. Cliquez sur le nom d’alias du certificat à exporter. La page **[!UICONTROL Détails du certificat]** s’affiche.
+1. Cliquez sur le nom d’alias du certificat à exporter. Le **[!UICONTROL Détails du certificat]** s’affiche.
 1. Cliquez sur **[!UICONTROL Exporter]**, suivez les instructions pour exporter le certificat, puis cliquez sur **[!UICONTROL OK]**.
 
 ## Modification des paramètres d’approbation et du type de Trust Store d’un certificat {#edit-a-certificate-s-trust-settings-and-trust-store-type}
@@ -69,4 +69,4 @@ Vous pouvez également importer et supprimer des certificats à l’aide de l’
 ## Suppression d’un certificat {#delete-a-certificate}
 
 1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Trust Store Management > Certificats]**.
-1. Cochez les cases correspondant aux certificats à supprimer, cliquez sur **[!UICONTROL Supprimer]**, puis sur **[!UICONTROL OK]**.
+1. Cochez les cases correspondant aux certificats à supprimer, puis cliquez sur **[!UICONTROL Supprimer]**, puis cliquez sur **[!UICONTROL OK]**.

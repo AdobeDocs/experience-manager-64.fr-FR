@@ -5,11 +5,11 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur pour la gestion dans AEM 6.4
 breadcrumb-title: Guide de gestion
 user-guide-description: Découvrez comment gérer un projet AEM.
-feature: Déploiement
+feature: Deploying
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '72'
 ht-degree: 93%
 
 ---

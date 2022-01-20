@@ -49,7 +49,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. (Facultatif) Dans l’éditeur de schéma de métadonnées, créez un champ pour l’application de conditions. Spécifiez un nom et un chemin de propriété sous l’onglet **[!UICONTROL Paramètres.]**
 
-   Pour créer un onglet, appuyez/cliquez sur **[!UICONTROL +]** pour ajouter un onglet, puis ajoutez un champ de métadonnées.
+   Pour créer un onglet, appuyez/cliquez sur **[!UICONTROL +]** pour ajouter un onglet, puis ajouter un champ de métadonnées.
 
    ![add_tab](assets/add_tab.png)
 

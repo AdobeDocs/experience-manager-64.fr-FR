@@ -1,8 +1,8 @@
 ---
 title: Bonnes pratiques pour les tests de performance
-seo-title: Bonnes pratiques pour les tests de performance
+seo-title: Best Practices for Performance Testing
 description: Cet article présente les stratégies et méthodologies globales utilisées pour les tests de performance ainsi que certains des outils disponibles pour faciliter le processus.
-seo-description: Cet article présente les stratégies et méthodologies globales utilisées pour les tests de performance ainsi que certains des outils disponibles pour faciliter le processus.
+seo-description: This article outlines the overall strategies and methodologies used for performance testing as well as some of the tools that are available to assist in the process.
 uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: 8d0863be-108d-49d8-8243-ea5e404ed64c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1893'
 ht-degree: 92%
 
 ---
@@ -45,7 +45,7 @@ Les tests n’auront aucun sens sans un environnement qui ressemble le plus poss
 
 De nombreux problèmes de performances ne sont pas visibles tant que le système n’est pas soumis à une charge importante. De bons tests de performance devraient simuler la charge à laquelle les systèmes de production seront soumis à leur maximum.
 
-### Établissement des objectifs  {#setting-goals}
+### Établissement des objectifs {#setting-goals}
 
 Avant de commencer les tests de performance, il est nécessaire de définir des exigences non fonctionnelles afin de spécifier la charge et les temps de réponse. Si vous migrez à partir d’un système existant, assurez-vous que le temps de réponse est similaire à vos valeurs de production actuelles. Pour la charge, il est préférable d’utiliser la charge de pointe actuelle et de la doubler. Cela permet au site web de continuer à être performant à mesure qu’il se développe.
 
@@ -60,7 +60,7 @@ De nombreux outils de test de performance sont proposés sur le marché. Lors de
 * AEM fournit des outils prêts à l’emploi pour identifier rapidement les requêtes, demandes et messages d’erreur problématiques. Pour plus d’informations, voir la section [Outils de diagnostic](/help/sites-administering/operations-dashboard.md#diagnosis-tools) de la documentation Tableau de bord des opérations.
 * Apache propose un produit appelé **JMeter** pouvant être utilisé pour les tests de performance et de charge ainsi que pour le comportement fonctionnel. Il s’agit d’un logiciel open source et gratuit, mais dont le jeu de fonctionnalités est plus restreint que les produits destinées aux entreprises et dont la courbe d’apprentissage est plus rapide. JMeter se trouve sur le site web d’Apache à l’adresse [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load** Runner est un produit de test de charge de niveau entreprise. Une version d’évaluation gratuite est disponible. Vous trouverez plus d’informations à l’adresse [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
+* **Load Runner** est un produit de test de charge de niveau entreprise. Une version d’évaluation gratuite est disponible. Vous trouverez plus d’informations à l’adresse [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
 
 * Des outils de test de charge dans le cloud comme [Neustar](https://www.neustar.biz/services/web-performance/load-testing) peuvent également être utilisés.
 * Pour tester des sites web mobiles ou réactifs, un jeu d’outils distinct doit être utilisé. Ils fonctionnent en limitant la bande passante réseau et en simulant des connexions mobiles plus lentes telles que 3G ou EDGE. Les outils les plus utilisés sont les suivants : 
@@ -80,7 +80,7 @@ L’une des nouvelles fonctionnalités de l’interface utilisateur tactile d’
 
 **Utilisation de rlog.jar pour lire les journaux de demandes**
 
-Pour une analyse plus complète des journaux de demandes d’un système AEM, vous pouvez utiliser `rlog.jar` pour rechercher et trier les fichiers `request.log` générés par AEM. Ce fichier jar est inclus avec une installation AEM dans le dossier `/crx-quickstart/opt/helpers`. Pour plus d’informations sur l’outil rlog et le journal des demandes en général, voir la documentation [Surveillance et gestion](/help/sites-deploying/monitoring-and-maintaining.md).
+Pour une analyse plus complète des journaux de demandes d’un système AEM, vous pouvez utiliser `rlog.jar` pour rechercher et trier les fichiers `request.log` générés par AEM. Ce fichier jar est inclus avec une installation AEM dans la variable `/crx-quickstart/opt/helpers` dossier. Pour plus d’informations sur l’outil rlog et le journal des demandes en général, voir la documentation [Surveillance et gestion](/help/sites-deploying/monitoring-and-maintaining.md).
 
 **Outil Explain Query**
 
@@ -108,7 +108,7 @@ Sur les systèmes dotés de serveurs principaux MongoDB, AEM fournit plusieurs M
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-Pour le cache nommé **Document-Diff**, le taux d’accès doit être supérieur à `.90`. Si le taux d’accès chute en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. L’assistance pour les produits Adobe peut vous recommander des paramètres optimaux pour votre environnement.
+Pour le cache nommé **Document-Diff**, le taux d’accès doit être dépassé. `.90`. Si le taux d’accès chute en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. L’assistance pour les produits Adobe peut vous recommander des paramètres optimaux pour votre environnement.
 
 * Mbean **Oak Repository Statistics**. Il est accessible directement depuis :
 
@@ -130,7 +130,7 @@ Sur un système qui ne nécessite pas un niveau élevé de personnalisation, le 
 
 Dans le cas de tests simples, Apache Bench peut servir à mesurer les temps de réponse du serveur web et à créer une charge pour mesurer des événements comme des fuites de mémoire. Pour plus d’informations, voir l’exemple de la [documentation Surveillance](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
-## Résolution des problèmes liés aux performances  {#troubleshooting-performance-issues}
+## Résolution des problèmes liés aux performances {#troubleshooting-performance-issues}
 
 Après avoir exécuté des tests de performance sur l’instance de création, tous les problèmes doivent être analysés, diagnostiqués et résolus. Vous pouvez avoir recours à plusieurs outils et techniques pour effectuer des analyses et résoudre des problèmes :
 

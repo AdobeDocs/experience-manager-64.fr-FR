@@ -1,18 +1,18 @@
 ---
 title: Création d’une page de portail de formulaires
-seo-title: Création d’une page de portail de formulaires
+seo-title: Creating a forms portal page
 description: Forms Portal fournit aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide d’Adobe Experience Manager (AEM).
-seo-description: Forms Portal fournit aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide d’Adobe Experience Manager (AEM).
+seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
 uuid: 328f3342-d6ca-4413-9f1d-1a550df74bde
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 7387dfe8-0029-4ad0-b319-fc519928318b
-feature: Portail Formulaires
+feature: Forms Portal
 exl-id: 4d66ab64-a132-4f2a-89ca-3fbd8dc56ce2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1595'
 ht-degree: 74%
 
 ---
@@ -25,14 +25,14 @@ Les composants de Forms Portal fournissent aux développeurs Web des composants 
 
 Les composants de Forms Portal ne peuvent pas être utilisés par défaut. Assurez-vous que les catégories de composants de Forms Portal suivantes sont activées tel qu’indiqué dans [Activation des composants d’un portail de formulaires](/help/forms/using/enabling-forms-portal-components.md).
 
-**Document** Services : comprend les composants Search &amp; Lister, Link et Drafts and Submissions.
+**Document Services** Inclut les composants Search &amp; Lister, Link et Drafts and Submissions.
 
 **Prédicats de services de document** : comprend les composants des attributs Date, Texte complet, Propriétés et Balises. Ces composants sont utilisés pour configurer la recherche dans le composant Search &amp; Lister.
 
 Une fois qu’elles sont activées sur une page de sites AEM, ces catégories de composants peuvent être utilisées dans l’explorateur de composants.
 
-![Composants du portail AEM Forms dans le ](assets/component-categories.png)
-**navigateur de composantsFigure :** *Catégories de composants du portail Forms*
+![Composants du portail AEM Forms dans l’explorateur de composants](assets/component-categories.png)
+**Figure :** *Catégories de composants du portail Forms*
 
 ## Composant Search &amp; Lister {#search-amp-lister-component}
 
@@ -43,19 +43,19 @@ Le composant Search &amp; Lister, disponible dans la catégorie des composants D
 
 Vous pouvez faire glisser et déposer le composant Search &amp; Lister de la catégorie de composants Document Services dans l’explorateur de composants sur la page. Une fois ajouté, le composant se présente comme suit.
 
-![Composant Search &amp; Lister dans une ](assets/fp-grid-viw.png)
-**pageFigure :** *Composant Search &amp; Lister dans une page avec une disposition Grille*
+![Composant Search &amp; Lister dans une page](assets/fp-grid-viw.png)
+**Figure :** *Composant Search &amp; Lister dans une page avec une disposition Grille*
 
-### Zone de liste {#list-pane}
+### Volet Liste {#list-pane}
 
 La zone de liste contient vos formulaires répertoriés. Le composant Search &amp; Lister fournit différentes options de configuration à utiliser pour contrôler l’affichage de formulaires dans le volet Liste.
 
-Pour configurer le volet Liste, appuyez sur le composant Search and Lister , puis sur ![settings_icon](assets/settings_icon.png). La boîte de dialogue **[!UICONTROL Modifier le composant]** s’ouvre.
+Pour configurer le volet Liste, appuyez sur le composant Search and Lister, puis appuyez sur ![settings_icon](assets/settings_icon.png). La boîte de dialogue **[!UICONTROL Modifier le composant]** s’ouvre.
 
-![Volet Liste en ](assets/edit-list.png)
-**mode d’éditionFigure :** *volet Liste en mode d’édition*
+![Volet Liste en mode d’édition](assets/edit-list.png)
+**Figure :** *Volet Liste en mode d’édition*
 
-La boîte de dialogue **[!UICONTROL Modifier]** comprend plusieurs onglets fournissant des options de configuration décrites dans le tableau ci-dessous. Lorsque vous avez terminé, appuyez sur **[!UICONTROL OK]** pour enregistrer la configuration.
+La boîte de dialogue **[!UICONTROL Modifier]** comprend plusieurs onglets fournissant des options de configuration décrites dans le tableau ci-dessous. Appuyer **[!UICONTROL OK]** pour enregistrer la configuration, une fois cette opération terminée.
 
 <table> 
  <tbody> 
@@ -97,17 +97,17 @@ La boîte de dialogue **[!UICONTROL Modifier]** comprend plusieurs onglets fourn
   <tr> 
    <td> </td> 
    <td>Texte des résultats</td> 
-   <td><p>Configure le texte des résultats (par exemple, 1-12 sur 601 <strong>Résultats</strong>). La valeur par défaut est <strong>Résultats</strong>.</p> <p>Par exemple, si vous indiquez <strong>Forms </strong>dans ce champ et qu’il y a un total de 601 formulaires, le texte de résultat passe à 1-12 de 601 <strong>Forms.</strong></p> </td> 
+   <td><p>Configure le texte des résultats (par exemple, 1-12 sur 601 <strong>Résultats</strong>). La valeur par défaut est <strong>Résultats</strong>.</p> <p>Par exemple, si vous spécifiez <strong>Forms </strong>dans ce champ, il y a un total de 601 formulaires, le texte de résultat passe à 1-12 sur 601. <strong>Forms.</strong></p> </td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td>Texte de la page</td> 
-   <td><p>Configure le texte de la page (par exemple, <strong>Page </strong>1 de 51). La valeur par défaut est <strong>Page</strong>.</p> <p>Par exemple, si vous indiquez <strong>Formulaire de demande </strong>dans ce champ et qu’il y a 51 pages, le texte de la page passe à <strong>Formulaire de demande </strong>1 de 51.</p> </td> 
+   <td><p>Configure le texte de la page (par exemple, <strong>Page </strong>1 sur 51). La valeur par défaut est <strong>Page</strong>.</p> <p>Par exemple, si vous spécifiez <strong>Formulaire de demande </strong>dans ce champ et il y a 51 pages, le texte de la page se transforme en <strong>Formulaire de demande </strong>1 sur 51.</p> </td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td>Texte de</td> 
-   <td><p>Remplace le mot <strong>de</strong> par le texte spécifié (Page 1 <strong>de </strong>51). La valeur par défaut est <strong>de</strong>.</p> <p>Par exemple, si vous spécifiez <strong>sur </strong>dans ce champ, le texte devient Page 1 <strong>sur </strong>51.</p> </td> 
+   <td><p>Remplace le mot <strong>de</strong> avec le texte spécifié (Page 1) <strong>de </strong>51). La valeur par défaut est <strong>de</strong>.</p> <p>Par exemple, si vous spécifiez <strong>out </strong>dans ce champ, le texte passe à la page 1. <strong>out </strong>51.</p> </td> 
   </tr> 
   <tr> 
    <td><span class="uicontrol"><strong>Lien de formulaire</strong></span></td> 
@@ -142,7 +142,7 @@ La boîte de dialogue **[!UICONTROL Modifier]** comprend plusieurs onglets fourn
   <tr> 
    <td><span class="uicontrol"><strong>Style</strong></span></td> 
    <td>Type de style</td> 
-   <td>Permet de spécifier <strong>Aucun style, Style par défaut</strong> ou <strong>Style personnalisé </strong>pour répertorier les formulaires.</td> 
+   <td>Permet de spécifier <strong>Aucun style, style par défaut</strong>ou <strong>Style personnalisé </strong>pour répertorier les formulaires.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -152,14 +152,14 @@ La boîte de dialogue **[!UICONTROL Modifier]** comprend plusieurs onglets fourn
  </tbody> 
 </table>
 
-### Zone de recherche {#search-pane}
+### Volet Recherche {#search-pane}
 
 La zone de recherche vous permet d’ajouter les composants Date Predicate (attribut de date), Full Text Predicate (attribut de texte intégral) et Tags predicate (attribut d’étiquette) dans la catégorie Document Services Predicates du sidekick d’AEM. Ces composants implémentent la fonction de recherche pour permettre aux utilisateurs d’effectuer une recherche dans les formulaires répertoriés.
 
-**Conseil :** *vous pouvez contrôler la liste des formulaires affichée sur votre portail de formulaires en fonction d’un paramètre prédéfini et masquer la fonctionnalité de recherche pour les utilisateurs finaux. Pour contrôler la liste des formulaires, utilisez les attributs pour appliquer des filtres de recherche. Vous pouvez également spécifier les valeurs de filtre par défaut et désactiver la recherche dans l’onglet Affichage de la boîte de dialogue Modifier le composant.*
+**Conseil :** *vous pouvez contrôler la liste des formulaires affichée sur votre portail de formulaires en fonction d’un paramètre prédéfini et masquer la fonctionnalité de recherche pour les utilisateurs finaux. Pour contrôler la liste des formulaires, utilisez les attributs pour appliquer des filtres de recherche. Vous pouvez également spécifier les valeurs de filtre par défaut et désactiver la recherche dans l’onglet Affichage de la boîte de dialogue Modifier le composant .*
 
-![Panneau de recherche avec les ](assets/search-with-predicates.png)
-**prédicats Date, Texte complet, Propriétés et BalisesFigure :** *Panneau de recherche avec les prédicats Date, Texte complet, Propriétés et Balises*
+![Panneau de recherche avec prédicat Date, Texte complet, Propriétés et Balises](assets/search-with-predicates.png)
+**Figure :** *Panneau de recherche avec prédicat Date, Texte complet, Propriétés et Balises*
 
 #### Prédicat de la date {#date-predicate}
 
@@ -170,11 +170,11 @@ Pour configurer l’attribut de date :
 1. Appuyez sur le composant, puis sur ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
 1. Indiquez les informations suivantes :
 
-   * **[!UICONTROL Type :]** la seule option disponible est  **[!UICONTROL Date de dernière modification]**.
+   * **[!UICONTROL Type :]** La seule option disponible est **[!UICONTROL Date de dernière modification]**.
    * **[!UICONTROL Texte]** : libellé ou légende pour l’attribut de date. La valeur par défaut est **[!UICONTROL Date de la dernière modification]**.
-   * **[!UICONTROL Libellé de date de début :]** libellé ou légende du champ de date de début.
-   * **[!UICONTROL Libellé de date de fin :]** libellé ou légende pour le champ de date de fin.
-   * **[!UICONTROL Masquer :]** pour appliquer un filtre de date par défaut permettant de répertorier les formulaires.
+   * **[!UICONTROL Libellé de date de début :]** Libellé ou légende du champ Date de début.
+   * **[!UICONTROL Libellé de date de fin :]** Libellé ou légende du champ de date de fin.
+   * **[!UICONTROL Masquer :]** Pour appliquer un filtre de date par défaut afin de répertorier les formulaires.
 
 1. Appuyez sur **[!UICONTROL OK]**.
 
@@ -194,10 +194,10 @@ L’attribut de propriétés permet d’effectuer une recherche dans les propri�
 
 Pour configurer l’attribut de propriétés, procédez comme suit :
 
-1. Appuyez sur le composant, puis sur ![settings_icon](assets/settings_icon.png). La **[!UICONTROL boîte de dialogue Modifier]** s’ouvre.
-1. Dans l&#39;onglet **[!UICONTROL Général]**, indiquez le libellé de la recherche. La valeur par défaut est **[!UICONTROL Propriétés]**.
+1. Appuyez sur le composant, puis sur ![settings_icon](assets/settings_icon.png). Le **[!UICONTROL Boîte de dialogue Modifier]** s’ouvre.
+1. Dans le **[!UICONTROL Général]** , indiquez le libellé de la recherche. La valeur par défaut est **[!UICONTROL Propriétés]**.
 
-1. Dans l’onglet **[!UICONTROL Options]**, appuyez sur **[!UICONTROL Ajouter un élément]**.
+1. Dans le **[!UICONTROL Options]** onglet, appuyez sur **[!UICONTROL Ajouter un élément]**.
 1. Sélectionnez une propriété dans la liste déroulante et spécifiez un libellé de recherche pour la propriété dans le champ situé sous la liste déroulante.
 1. Répétez l’étape 4 pour ajouter d’autres propriétés. Vous pouvez également indiquer une valeur de filtre par défaut pour répertorier les formulaires basés sur les critères spécifiés et masquer la propriété pour les recherches effectuées par les utilisateurs finaux. Cochez la case Masquer d’une propriété et spécifiez la valeur de filtre par défaut.
 
@@ -211,7 +211,7 @@ L’attribut de balises permet d’effectuer une recherche de formulaires constr
 
 Pour configurer l’attribut de balises, procédez comme suit :
 
-1. Appuyez sur le composant, puis sur ![settings_icon](assets/settings_icon.png). La **[!UICONTROL boîte de dialogue Modifier]** s’ouvre.
+1. Appuyez sur le composant, puis sur ![settings_icon](assets/settings_icon.png). Le **[!UICONTROL Boîte de dialogue Modifier]** s’ouvre.
 1. Cliquez sur la flèche vers le bas située en regard du champ Balises.
 1. Sélectionnez les balises appropriées.
 1. Appuyez sur **[!UICONTROL OK]**.
@@ -232,13 +232,13 @@ Le composant Search &amp; Lister de Forms Portal est compatible avec les périph
 
 L’image suivante montre le composant Search &amp; Lister lorsqu’il est ouvert sur un périphérique mobile :
 
-![Capture d’écran du ](assets/search_lister.png)
-**composant Search &amp; ListerFigure :** *Composant Search &amp; Lister*
+![Capture d’écran du composant Search and Lister](assets/search_lister.png)
+**Figure :** *Composant Search &amp; Lister*
 
-## Personnalisation d’une page Forms Portal {#customizing-a-forms-portal-page-br}
+## Personnalisation d’une page Forms Portal {#customizing-a-forms-portal-page-br}
 
 Vous pouvez personnaliser une page du portail de formulaires pour donner un aspect spécifique à la page. Vous pouvez également ajouter des métadonnées pour améliorer l’expérience de recherche, pour modifier la disposition de la page, ou encore ajouter des styles CSS personnalisés. Pour plus d’informations, voir [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md).
 
-L’interface utilisateur d’AEM Forms vous permet d’ajouter des métadonnées personnalisées aux formulaires. Les métadonnées personnalisées se révèlent particulièrement utiles pour mettre à la disposition des utilisateurs un environnement permettant de répertorier et de rechercher des formulaires. Pour plus d’informations sur les métadonnées personnalisées, voir [Personnalisation des modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md).
+L’interface utilisateur d’AEM Forms vous permet d’ajouter des métadonnées personnalisées aux formulaires. Les métadonnées personnalisées se révèlent particulièrement utiles pour mettre à la disposition des utilisateurs un environnement permettant de répertorier et de rechercher des formulaires. Pour plus d’informations sur les métadonnées personnalisées, voir [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md).
 
 Forms Portal propose des actions de rendu prêtes à l’emploi. Vous pouvez personnaliser Forms Portal afin d’ajouter d’autres actions. Pour en savoir plus, consultez [Ajout d’une action personnalisée sur des éléments de liste de formulaire.](/help/forms/using/add-custom-action-form-lister.md)

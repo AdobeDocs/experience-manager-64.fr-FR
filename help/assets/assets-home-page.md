@@ -14,30 +14,30 @@ ht-degree: 41%
 
 # [!DNL Adobe Experience Manager Assets] Expérience de page d’accueil {#aem-assets-home-page-experience}
 
-Personnalisez la [!DNL Experience Manager Assets] page d’accueil pour bénéficier d’une expérience d’écran de bienvenue enrichie, y compris un instantané des activités récentes concernant les ressources.
+Personnalisez le [!DNL Experience Manager Assets] Page d’accueil pour une expérience d’écran de bienvenue riche, avec un instantané des activités récentes concernant les ressources.
 
-La [!DNL Adobe Experience Manager Assets] page d’accueil offre une expérience d’écran de bienvenue riche et personnalisée, qui inclut un instantané des activités récentes, telles que les ressources récemment affichées ou chargées.
+Le [!DNL Adobe Experience Manager Assets] La page d’accueil offre une expérience d’écran de bienvenue riche et personnalisée, qui inclut un instantané des activités récentes, telles que les ressources récemment affichées ou chargées.
 
 La page d’accueil d’Assets est désactivée par défaut. Pour l’activer, procédez comme suit :
 
 1. Pour accéder à [!DNL Experience Manager] Configuration Manager, cliquez sur **[!UICONTROL Outils > Opération > Console web]**.
-1. Ouvrez le service **Enregistreur d’événements de la gestion des actifs numériques Day CQ** .
-1. Sélectionnez le **[!UICONTROL Activer ce service]** pour activer l’enregistrement des activités.
+1. Ouvrez le **Enregistreur d’événements DAM Day CQ** service.
+1. Sélectionnez la **[!UICONTROL Activer ce service]** pour activer l’enregistrement des activités.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Dans la liste **Types d’événement**, sélectionnez les événements à enregistrer et enregistrez les modifications.
+1. Dans la **Types d’événement** sélectionnez les événements à enregistrer et enregistrez les modifications.
 
    >[!CAUTION]
    >
    >Activer les options Ressource affichée, Projets affichés et Collections affichées augmente significativement le nombre d’événements enregistrés.
 
-1. Ouvrez le service **[!UICONTROL Indicateur de fonction de page d’accueil des ressources de gestion des actifs numériques]** à partir de Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Sélectionnez l’option **[!UICONTROL isEnabled.name]** pour activer la fonction Page d’accueil des ressources. Enregistrez les modifications.
+1. Ouvrez le **[!UICONTROL Indicateur de fonction de la page d’accueil des ressources DAM]** à partir de Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Sélectionnez la **[!UICONTROL isEnabled.name]** pour activer la fonction Page d’accueil des ressources. Enregistrez les modifications.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Ouvrez la boîte de dialogue **[!UICONTROL Préférences utilisateur]**, puis sélectionnez **[!UICONTROL Activer la page d’accueil des ressources]**. Enregistrez les modifications.
+1. Ouvrez le **[!UICONTROL Préférences utilisateur]** et sélectionnez **[!UICONTROL Activer la page d’accueil des ressources]**. Enregistrez les modifications.
 
    ![user_preferences](assets/user_preferences.png)
 
@@ -45,7 +45,7 @@ Après avoir activé la page d’accueil des ressources, accédez à l’interfa
 
 ![home_page](assets/home_page.png)
 
-Appuyez/cliquez sur **[!UICONTROL Cliquez ici pour configurer votre lien d’expérience]** afin d’ajouter votre nom d’utilisateur, votre image d’arrière-plan et votre image de profil.
+Appuyez/cliquez sur le bouton **[!UICONTROL Cliquez ici pour configurer le lien de votre expérience]** pour ajouter votre nom d’utilisateur, votre image d’arrière-plan et votre image de profil.
 
 La page d’accueil des ressources inclut les sections suivantes :
 
@@ -66,19 +66,19 @@ Cette section s’affiche sous la section Bienvenue et contient des widgets prê
 * Récent
 * Découvrez
 
-**Activité** : Dans cette section, le widget  **Mon** activité affiche les activités récentes effectuées par l’utilisateur connecté avec des ressources (y compris des ressources sans rendus), par exemple les chargements de ressources, les téléchargements, la création de ressources, les modifications, les commentaires, les annotations et les partages.
+**Activité**: Dans cette section, la variable **Mon activité** Le widget affiche les activités récentes effectuées par l’utilisateur connecté avec des ressources (y compris des ressources sans rendu), par exemple les chargements, téléchargements, création de ressources, modifications, commentaires, annotations et partages de ressources.
 
-**Récent** : Le widget  **Récemment** affiché sous cette section affiche les entités récemment consultées par l’utilisateur connecté, y compris les dossiers, les collections et les projets.
+**Récent**: Le **Récemment consultés** sous cette section, le widget affiche les entités récemment consultées par l’utilisateur connecté, y compris les dossiers, les collections et les projets.
 
-**Discover** : Le  **** widget situé sous cette section affiche les ressources et les rendus récemment chargés sur l’ [!DNL Assets] instance.
+**Discover**: Le **Nouveau** Le widget situé sous cette section affiche les ressources et les rendus récemment chargés dans le [!DNL Assets] instance.
 
-Pour activer la purge des données d’activité de l’utilisateur, activez le **service de purge des événements de gestion des actifs numériques** à partir de Configuration Manager. Une fois que vous avez activé ce service, les activités de l’utilisateur connecté dépassant le nombre spécifié sont supprimées par le système.
+Pour activer la purge des données d’activité de l’utilisateur, activez l’option **Service de purge des événements de la gestion des actifs numériques** à partir de Configuration Manager. Une fois que vous avez activé ce service, les activités de l’utilisateur connecté dépassant le nombre spécifié sont supprimées par le système.
 
 L’écran de bienvenue fournit des outils d’aide à la navigation, comme des icônes sur la barre d’outils afin d’accéder aux dossiers, aux collections et aux catalogues.
 
 >[!NOTE]
 >
->L’activation des services Enregistreur d’événements de la gestion des actifs numériques Day CQ et Purge des événements de la gestion des actifs numériques augmente les opérations d’écriture sur JCR et l’indexation de recherche, ce qui augmente considérablement la charge sur le serveur [!DNL Experience Manager]. La charge supplémentaire sur le serveur [!DNL Experience Manager] peut avoir une incidence sur ses performances.
+>L’activation des services Enregistreur d’événements de la gestion des actifs numériques Day CQ et Purge d’événements de la gestion des actifs numériques augmente les opérations d’écriture sur JCR et l’indexation de recherche, ce qui augmente considérablement la charge sur le [!DNL Experience Manager] serveur. La charge supplémentaire sur le [!DNL Experience Manager] peut avoir un impact sur ses performances.
 
 >[!CAUTION]
 >

@@ -1,8 +1,8 @@
 ---
 title: Configuration des messages de validation
-seo-title: Configuration des messages de validation
+seo-title: Configuring validation messages
 description: Découvrez comment spécifier l’affichage des messages de validation et leur emplacement par rapport au formulaire renvoyé dans le navigateur Web.
-seo-description: Découvrez comment spécifier l’affichage des messages de validation et leur emplacement par rapport au formulaire renvoyé dans le navigateur Web.
+seo-description: Learn how to specify how validation messages are displayed and their location relative to the form returned in the web browser.
 uuid: f6bff4fa-f90f-4135-ae40-7ab3d3613122
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
 exl-id: 2016ac85-12a1-42cb-bc03-fced94947010
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '350'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Pour les formulaires rendus au format HTML, les erreurs de validation de formula
 
 1. Cliquez sur Enregistrer.
 
-## Définition de l’emplacement des messages de validation par rapport au formulaire renvoyé dans le navigateur Web  {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
+## Définition de l’emplacement des messages de validation par rapport au formulaire renvoyé dans le navigateur Web {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
 
 Lorsque l’option Rapport est définie sur Cadre ou Aucun cadre, vous pouvez indiquer l’emplacement des messages de validation.
 
@@ -56,7 +56,7 @@ Lorsque l’option Rapport est définie sur Cadre ou Aucun cadre, vous pouvez in
 
 1. Cliquez sur Enregistrer.
 
-## Définition de la taille du cadre  {#specify-the-frame-border-size}
+## Définition de la taille du cadre {#specify-the-frame-border-size}
 
 Lorsque l’option Rapport est définie sur Cadre, vous pouvez indiquer la taille du cadre.
 

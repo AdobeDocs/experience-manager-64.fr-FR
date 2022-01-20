@@ -1,8 +1,8 @@
 ---
 title: Démarrage rapide de l’API Java LiveCycleProcess (SOAP)
-seo-title: Démarrage rapide de l’API Java LiveCycleProcess (SOAP)
+seo-title: LiveCycleProcess Java API(SOAP)Quick Start
 description: Utilisez le démarrage rapide de l’API Java LiveCycle Process (SOAP) pour rechercher des instances de processus, suspendre des instances de processus, démarrer des instances de processus suspendues, arrêter des instances de processus, purger des données de processus et récupérer l’état d’une tâche.
-seo-description: Utilisez le démarrage rapide de l’API Java LiveCycle Process (SOAP) pour rechercher des instances de processus, suspendre des instances de processus, démarrer des instances de processus suspendues, arrêter des instances de processus, purger des données de processus et récupérer l’état d’une tâche.
+seo-description: Use the LiveCycleProcess Java API (SOAP) Quick Start to search for process instances, suspend process instances, start suspended process instances, terminate process instances, purge process data, and retrieve the status of a job.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
 content-type: reference
@@ -13,14 +13,14 @@ role: Developer
 exl-id: ee8f5f16-218a-41eb-be42-fda4537b2b4e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
 # Démarrage rapide de l’API Java LiveCycleProcess (SOAP) {#livecycleprocess-java-api-soap-quick-start}
 
-Le démarrage rapide de l’API Java (SOAP) est disponible pour les processus. Une *instance de processus* est une occurrence d’un processus spécifique qui a été démarré par une méthode d’appel telle que l’API d’appel ou depuis Workspace.
+Le démarrage rapide de l’API Java (SOAP) est disponible pour les processus. A *instance de processus* est une occurrence d’un processus spécifique qui a été démarré par une méthode d’appel telle que l’API d’appel ou depuis Workspace.
 
 [Démarrage rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -42,7 +42,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 ## Démarrage rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-L’exemple de code Java suivant recherche des instances de processus basées sur le processus *MortgageLoan - Prebuilt* .
+L’exemple de code Java suivant recherche des instances de processus basées sur la variable *Prêt hypothécaire - Préconstruit* processus.
 
 ```as3
  /* 
@@ -431,7 +431,7 @@ L’exemple de code Java suivant met fin à une instance de processus avec la va
 
 ## Démarrage rapide (mode SOAP) : Purge des données de processus à l’aide de l’API Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-Le code Java suivant purge les données d’un processus nommé *SecureDocument*. Un filtre est utilisé pour spécifier de purger les données pour les instances de processus où la variable de processus nommée *inValue* est supérieure à 200.
+Le code Java suivant purge les données d’un processus nommé *SecureDocument*. Un filtre est utilisé pour spécifier de purger les données pour les instances de processus où la variable de processus nommée *inValue* est supérieur à 200.
 
 ```as3
  /* 

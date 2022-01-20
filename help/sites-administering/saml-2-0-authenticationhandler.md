@@ -1,8 +1,8 @@
 ---
 title: Gestionnaire d’authentification SAML 2.0
-seo-title: Gestionnaire d’authentification SAML 2.0
+seo-title: SAML 2.0 Authentication Handler
 description: Découvrez le gestionnaire d’authentification SAML 2.0 dans AEM.
-seo-description: Découvrez le gestionnaire d’authentification SAML 2.0 dans AEM.
+seo-description: Learn about the SAML 2.0 Authentication Handler in AEM.
 uuid: 51f97315-350a-42a4-af2c-2de87307c6ad
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 4868daad-0f3e-48cb-9b20-08dee270e74e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 60%
+source-wordcount: '842'
+ht-degree: 59%
 
 ---
 
@@ -50,56 +50,55 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 >
 
 
-
 >[!NOTE]
 >
 >Les assertions SAML sont signées et peuvent éventuellement être chiffrées. Pour que cela fonctionne, vous devez fournir au moins le certificat public du fournisseur d’identité dans le TrustStore. Voir [Ajout de certificat IdP à TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) pour plus d’informations.
 
-**** Chemin d’accès PathRepository pour lequel ce gestionnaire d’authentification doit être utilisé par Sling. Si le champ est vide, le gestionnaire d’authentification est désactivé.
+**Chemin** Chemin du référentiel pour lequel ce gestionnaire d’authentification doit être utilisé par Sling. Si le champ est vide, le gestionnaire d’authentification est désactivé.
 
-**Valeur de classement du service** de structure OSGi pour indiquer l’ordre dans lequel appeler ce service. Il s’agit d’un nombre entier, et les valeurs les plus élevées indiquent une priorité plus élevée.
+**Classement des services** Valeur de classement du service de structure OSGi pour indiquer l’ordre dans lequel appeler ce service. Il s’agit d’un nombre entier, et les valeurs les plus élevées indiquent une priorité plus élevée.
 
-**Alias de certificat IDP** Alias du certificat IdP dans le TrustStore global. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé. Voir le chapitre Ajout du certificat IdP au TrustStore AEM ci-dessous sur la façon de le configurer.
+**Alias de certificat IDP** L’alias du certificat IdP dans le TrustStore global. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé. Voir le chapitre Ajout du certificat IdP au TrustStore AEM ci-dessous sur la façon de le configurer.
 
-**URL du fournisseur d’identité** du fournisseur d’identité auquel la demande d’authentification SAML doit être envoyée. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé.
+**URL du fournisseur d’identité** URL du fournisseur d’identité auquel la demande d’authentification SAML doit être envoyée. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé.
 
 >[!CAUTION]
 >
 >Le nom d’hôte du fournisseur d’identité doit être ajouté à la configuration OSGi **Filtre de référents Sling Apache**. Voir la section [Console web](/help/sites-deploying/configuring-osgi.md) pour plus d’informations.
 
-**Identifiant de l’entité du fournisseur de services** qui identifie de manière unique ce fournisseur de services avec le fournisseur d’identité. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé.
+**Identifiant d’entité du fournisseur de services** Identifiant qui identifie de manière unique ce fournisseur de services auprès du fournisseur d’identité. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé.
 
-**Redirection** par défaut : emplacement par défaut vers lequel rediriger après une authentification réussie.
+**Redirection par défaut** L’emplacement par défaut vers lequel rediriger après une authentification réussie.
 
 >[!NOTE]
 >
 >Cet emplacement est utilisé uniquement si le cookie `request-path` n’est pas défini. Si vous demandez une page sous le chemin configuré sans jeton de connexion valide, le chemin demandé est stocké dans un cookie.\
 >et le navigateur sera redirigé vers cet emplacement après une authentification réussie.
 
-**User-ID** AttributeNom de l’attribut contenant l’ID utilisateur utilisé pour authentifier et créer l’utilisateur dans le référentiel CRX.
+**Attribut User-ID** Nom de l’attribut contenant l’ID utilisateur utilisé pour authentifier et créer l’utilisateur dans le référentiel CRX.
 
 >[!NOTE]
 >
 >L’ID utilisateur n’est pas obtenu à partir du nœud `saml:Subject` de l’assertion SAML, mais à partir de ce `saml:Attribute`.
 
-**Utiliser** Encryption : indique si ce gestionnaire d’authentification attend ou non des assertions SAML chiffrées.
+**Utiliser le chiffrement** Que ce gestionnaire d’authentification attende ou non des assertions SAML chiffrées.
 
-**Créer automatiquement des** utilisateurs CRX Indique s’il faut créer automatiquement des utilisateurs non existants dans le référentiel après une authentification réussie.
+**Création automatique d’utilisateurs CRX** Si vous souhaitez créer automatiquement des utilisateurs non existants dans le référentiel après une authentification réussie.
 
 >[!CAUTION]
 >
 >Si la création automatique des utilisateurs CRX est désactivée, les utilisateurs doivent être créés manuellement.
 
-**Ajouter à** Groupes : indique si un utilisateur doit être automatiquement ajouté aux groupes CRX après une authentification réussie.
+**Ajouter aux groupes** Si un utilisateur doit être automatiquement ajouté aux groupes CRX après une authentification réussie.
 
-**Appartenance au groupe** : nom du saml:Attribute contenant une liste de groupes CRX auxquels cet utilisateur doit être ajouté.
+**Appartenance à un groupe** Le nom du saml:Attribute contenant une liste des groupes CRX auxquels cet utilisateur doit être ajouté.
 
 ## Ajout du certificat IdP au TrustStore AEM {#add-the-idp-certificate-to-the-aem-truststore}
 
 Les assertions SAML sont signées et peuvent éventuellement être chiffrées. Pour que cela fonctionne, vous devez fournir au moins le certificat public de l’IdP dans le référentiel. Pour ce faire, vous devez :
 
 1. Accédez à *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
-1. Appuyez sur le **[!UICONTROL lien Créer TrustStore]**
+1. Appuyez sur la touche **[!UICONTROL Créer un lien TrustStore]**
 1. Saisissez le mot de passe du TrustStore et appuyez sur **[!UICONTROL Enregistrer]**.
 1. Cliquez sur **[!UICONTROL Gérer TrustStore]**.
 1. Téléchargez le certificat IdP.
@@ -107,14 +106,14 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-## Ajoutez la clé de fournisseur et la chaîne de certificats au KeyStore AEM.{#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
+## Ajoutez la clé de fournisseur et la chaîne de certificats au KeyStore AEM. {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
 >[!NOTE]
 >
 >Les étapes ci-dessous sont obligatoires, sinon l’exception suivante sera générée : `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`
 
 1. Accédez à : [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
-1. Modifiez l’utilisateur `authentication-service`.
+1. Modifiez la variable `authentication-service` utilisateur.
 1. Créez un KeyStore en cliquant sur **Créer le KeyStore** sous **Paramètres du compte**.
 
 >[!NOTE]
@@ -131,8 +130,8 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 
 Vous pouvez configurer un enregistreur afin de déboguer tous les problèmes pouvant résulter d’une mauvaise configuration de SAML. Vous pouvez le faire en procédant comme suit :
 
-1. Accédez à la console web, à l’adresse *http://localhost:4502/system/console/configMgr*
-1. Recherchez et cliquez sur l’entrée **Configuration de l’enregistreur de journalisation Apache Sling**.
+1. Accédez à la console web à l’adresse *http://localhost:4502/system/console/configMgr*
+1. Recherchez et cliquez sur l’entrée appelée **Configuration de l’enregistreur de journalisation Apache Sling**
 1. Créez un enregistreur avec la configuration suivante :
 
    * **Niveau de consignation :** débogage

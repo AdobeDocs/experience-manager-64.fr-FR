@@ -1,8 +1,8 @@
 ---
 title: Création de thèmes de formulaires adaptatifs personnalisés
-seo-title: Création de thèmes de formulaires adaptatifs personnalisés
+seo-title: Creating custom adaptive form themes
 description: Un thème de formulaire adaptatif est une bibliothèque client AEM utilisée pour définir les styles, c’est-à-dire l’apparence d’un formulaire adaptatif. Découvrez comment vous pouvez créer des thèmes de formulaire adaptatif personnalisés.
-seo-description: Un thème de formulaire adaptatif est une bibliothèque client AEM utilisée pour définir les styles, c’est-à-dire l’apparence d’un formulaire adaptatif. Découvrez comment vous pouvez créer des thèmes de formulaire adaptatif personnalisés.
+seo-description: An adaptive form theme is an AEM client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
 uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
 content-type: reference
 topic-tags: customization
@@ -11,8 +11,8 @@ discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 exl-id: e6aa866f-3483-4db1-abaa-01ee585928dc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 82%
+source-wordcount: '788'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 82%
 
 >[!CAUTION]
 >
->AEM Forms fournit la fonctionnalité [Éditeur de thème](/help/forms/using/themes.md) pour créer et modifier des formulaires adaptatifs [themes](/help/forms/using/themes.md). Exécutez les étapes répertoriées dans cet article, uniquement si vous avez effectué une mise à niveau à partir d’une version qui ne dispose pas de l’[éditeur de thème](/help/forms/using/themes.md) et si vous avez déjà investi dans des thèmes créés à l’aide de fichiers less/CSS (méthode d’éditeur de pré-thème).
+>AEM Forms fournit la variable [Éditeur de thème](/help/forms/using/themes.md) possibilité de créer et de modifier des formulaires adaptatifs [thèmes](/help/forms/using/themes.md). Exécutez les étapes répertoriées dans cet article, uniquement si vous avez effectué une mise à niveau à partir d’une version qui ne dispose pas de [Éditeur de thème](/help/forms/using/themes.md) et vous disposez d’un investissement dans les thèmes créés à l’aide de fichiers less/CSS (méthode d’éditeur de pré-thème).
 
 ## Prérequis {#prerequisites}
 
@@ -44,10 +44,10 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
 >
 >Si vous procédez comme suit en utilisant les noms, le modèle résultant ressemble normalement à l’instantané suivant : 
 
-![Diagramme de ](assets/thumbnail.png)
-**cliché du formulaire adaptatif avec thème ForêtFigure :** *Exemple de thème Forêt*
+![Instantané de formulaire adaptatif à thème Forêt](assets/thumbnail.png)
+**Figure :** *Exemple de thème de forêt*
 
-1. Créez un noeud de type `cq:ClientLibraryFolder` sous le noeud `/apps`.
+1. Création d’un noeud de type `cq:ClientLibraryFolder` sous le `/apps`noeud .
 
    Par exemple, créez le nœud suivant :
 
@@ -59,9 +59,9 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
 
    ![Instantané du référentiel CRX](assets/3-2.png)
 
-1. Ajoutez deux dossiers, `less` et `css`, et un fichier `css.txt` au noeud créé à l’étape 1 :
+1. Ajouter deux dossiers, `less` et `css`et un fichier `css.txt` au noeud créé à l’étape 1 :
 
-   * `less` folder: Contient les fichiers de  `less` variables dans lesquels vous définissez les  `less` variables et  `less mixins` qui sont utilisées pour gérer les styles .css.
+   * `less` folder: Contient le `less` fichiers variables dans lesquels vous définissez `less` et `less mixins` qui sont utilisés pour gérer les styles .css.
 
       Ce dossier se compose de fichiers de variables `less`, de fichiers mixin `less` et de fichiers `less` de définition utilisant les mixins et les variables. Et tous ces fichiers less sont ensuite importés dans styles.less.
 
@@ -94,7 +94,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
    @button-font-color: #ffffff;
    ```
 
-   Pour remplacer les variables `less`:
+   Pour remplacer la variable `less`variables :
 
    1. Importez les variables de formulaire adaptatif par défaut :
 
@@ -212,7 +212,7 @@ Après avoir créé un thème de formulaire adaptatif, effectuez les étapes sui
 
    Par exemple, `/apps/myAfCustomizations/myAfPages/forestPage`
 
-   1. Ajoutez une propriété `sling:resourceSuperType` et définissez sa valeur sur `fd/af/components/page/base`.
+   1. Ajouter un `sling:resourceSuperType` et définissez sa valeur sur `fd/af/components/page/base`.
 
       ![Instantané du référentiel CRX](assets/1-2.png)
 

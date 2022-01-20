@@ -1,8 +1,8 @@
 ---
 title: Work Manager et le ralentissement
-seo-title: Work Manager et le ralentissement
+seo-title: Work Manager and throttling
 description: Ce document fournit des informations sur Work Manager, ainsi que des instructions sur la configuration des options de ralentissement de Work Manager.
-seo-description: Ce document fournit des informations sur Work Manager, ainsi que des instructions sur la configuration des options de ralentissement de Work Manager.
+seo-description: This document provides background information on Work Manager, and provides instructions on configuring Work Manager throttling options.
 uuid: b90998bc-e3d4-493a-9371-55ccb44da20d
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 exl-id: 759cff3e-960a-4c38-a731-9fff21e739cf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1026'
 ht-degree: 95%
 
 ---
@@ -27,7 +27,7 @@ Dans AEM Forms, les opérations effectuées par les services peuvent être de lo
 
 Les opérations de longue durée peuvent mobiliser plusieurs systèmes ou s’étendre au-delà de l’entreprise, notamment lorsqu’un client doit compléter et soumettre un formulaire de demande de prêt dans le cadre d’une solution regroupant de multiples tâches humaines et automatisées. Ces opérations doivent continuer tout en attendant une réponse. Les opérations de longue durée s’exécutent de manière asynchrone, tout en permettant d’allouer des ressources à une autre tâche entre-temps. Contrairement à une opération de courte durée, Work Manager ne considère pas une opération de longue durée comme terminée lorsqu’elle est appelée. Un déclencheur externe, comme un système demandant une autre opération au même service ou un utilisateur envoyant un formulaire, doit être activé pour achever l’opération.
 
-## A propos de Work Manager  {#about-work-manager}
+## A propos de Work Manager {#about-work-manager}
 
 AEM Forms (et les versions antérieures) utilisaient les files d’attente JMS pour exécuter des opérations de façon asynchrone. AEM Forms utilise Work Manager pour planifier et exécuter des opérations asynchrones via des threads gérés.
 
@@ -39,7 +39,7 @@ Les opérations asynchrones sont gérées comme suit :
 
 Les administrateurs AEM forms peuvent utiliser Health Monitor pour vérifier les statistiques Work Manager, telles que le nombre de travaux dans la file d’attente et leur statut. Vous pouvez également utiliser Health Monitor pour mettre en pause, reprendre, réessayer ou supprimer des tâches (voir [Affichage des statistiques relatives à Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)).
 
-## Configuration des options de ralentissement de Work Manager  {#configuring-work-manager-throttling-options}
+## Configuration des options de ralentissement de Work Manager {#configuring-work-manager-throttling-options}
 
 Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâches ne soient planifiées qu’une fois les ressources mémoire suffisantes. Pour configurer le ralentissement, définissez les options suivantes pour la JVM dans votre serveur d’applications.
 
@@ -81,12 +81,12 @@ Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâc
 **Ajout d’options Java à JBoss**
 
 1. Arrêtez le serveur d’applications JBoss.
-1. Ouvrez la *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez l’une des options Java requises, au format `-Dproperty=value`.
+1. Ouvrez le *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez toutes les options Java requises, au format `-Dproperty=value`.
 1. Redémarrez le serveur.
 
 **Ajout d’options Java à WebLogic**
 
-1. Ouvrez WebLogic Administration Console en saisissant `https://`*[nom d’hôte ]*`:`*[port]* `/console` dans un navigateur Web.
+1. Démarrez WebLogic Administration Console en saisissant `https://`*[nom d’hôte ]*`:`*[port]* `/console` dans un navigateur web.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.

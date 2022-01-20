@@ -1,9 +1,9 @@
 ---
 title: Maintenance du journal d’audit dans AEM 6
-seo-title: Maintenance du journal d’audit dans AEM 6
+seo-title: Audit Log Maintenance in AEM 6
 description: Découvrez comment tenir à jour le journal d’audit dans AEM.
-feature: Opérations
-seo-description: Découvrez comment tenir à jour le journal d’audit dans AEM.
+feature: Operations
+seo-description: Lear about Audit Log Maintenance in AEM.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,7 +13,7 @@ discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: bcbdab55-4871-4c7f-b82a-b7d8280e82e3
 source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '603'
 ht-degree: 81%
 
 ---
@@ -55,14 +55,14 @@ Suivez ces étapes pour configurer la purge du journal d’audit :
 
    >[!NOTE]
    >
-   >Le chemin d’accès au contenu s’applique uniquement aux enfants du noeud `/var/audit/com.day.cq.wcm.core.page` du référentiel.
+   >Le chemin d’accès au contenu s’applique uniquement aux enfants des `/var/audit/com.day.cq.wcm.core.page` dans le référentiel.
 
 1. Enregistrez la règle.
 1. La règle que vous venez de créer doit être exposée dans le tableau de bord des opérations afin d’être exécutée. Pour ce faire, accédez à **Outils - Opérations - Maintenance** dans l’écran de bienvenue d’AEM.
 
 1. Appuyez sur la carte **Période de maintenance hebdomadaire**.
 
-1. La tâche de maintenance est déjà présente sous la carte **Tâche de maintenance du journal d’audit**.
+1. Vous trouverez la tâche de maintenance déjà présente sous le **Tâche de maintenance du journal d’audit** carte.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -70,7 +70,7 @@ Suivez ces étapes pour configurer la purge du journal d’audit :
 
 Dans AEM 6.3, si la fenêtre de maintenance planifiée se ferme avant que la tâche Purge du journal d’audit ne puisse se terminer, la tâche s’arrête automatiquement. Elle reprend lorsque commence la période de maintenance suivante.
 
-**Avec AEM 6.4**, vous pouvez arrêter manuellement une tâche de purge du journal d’audit en cours d’exécution en cliquant sur l’ **** icône Arrêter. La tâche reprendra sans risque à la prochaine exécution.
+**Avec AEM 6.4**, vous pouvez arrêter manuellement une tâche de purge du journal d’audit en cours d’exécution en cliquant sur **Arrêter** icône . La tâche reprendra sans risque à la prochaine exécution.
 
 >[!NOTE]
 >

@@ -1,8 +1,8 @@
 ---
 title: Exemples de types de module d’IU ContextHub
-seo-title: Exemples de types de module d’IU ContextHub
+seo-title: Sample ContextHub UI Module Types
 description: ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions
-seo-description: ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions
+seo-description: ContextHub provides several sample UI modules that you can use in your solutions
 uuid: af1a8fa1-8f8b-49c8-b2ca-ba92c955871e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: fa68c786-5102-4cc3-b61c-2565ee919768
 exl-id: 637ec80e-320f-4cf7-b09a-9f3cbf47bb63
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1176'
 ht-degree: 91%
 
 ---
@@ -27,7 +27,7 @@ ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser 
 
 Pour plus d’informations sur l’ajout de modules d’IU à ContextHub, voir [Ajout d’un module d’IU](/help/sites-administering/contexthub-config.md#adding-a-ui-module). Pour plus d’informations sur le développement de modules d’IU, voir [Création de types de module d’IU ContextHub](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
-## Type de module d’IU contexthub.base  {#contexthub-base-ui-module-type}
+## Type de module d’IU contexthub.base {#contexthub-base-ui-module-type}
 
 Le type de module d’IU contexthub.base est le type de base pour tous les autres types de module d’IU. En tant que tel, il fournit des fonctionnalités génériques pour le rendu des données de magasin.
 
@@ -107,7 +107,7 @@ Les instances du module d’IU contexthub.browserinfo ne requièrent pas de vale
 }
 ```
 
-## Type de module d’IU contexthub.datetime   {#contexthub-datetime-ui-module-type}
+## Type de module d’IU contexthub.datetime {#contexthub-datetime-ui-module-type}
 
 Le module d’IU contextthub.datetime affiche la date et l’heure stockées dans un magasin nommé datetime basé sur le magasin candidat [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate).
 
@@ -175,7 +175,7 @@ Les instances du module d’IU contexthub.geolocation ne requièrent pas de vale
 }
 ```
 
-## Type de module d’IU contexthub.screen-orientation   {#contexthub-screen-orientation-ui-module-type}
+## Type de module d’IU contexthub.screen-orientation {#contexthub-screen-orientation-ui-module-type}
 
 Le module d’IU contextthub.screen-orientation affiche l’orientation actuelle de l’écran du client. Bien que désactivé par défaut, le module présente une fenêtre contextuelle qui permet de sélectionner une orientation. Le module obtient des informations à partir d’un magasin ContextHub nommé emulators et basé sur le magasin candidat [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate).
 
@@ -223,7 +223,7 @@ Les instances du module d’IU contexthub.tagcloud ne requièrent pas de valeur 
 }
 ```
 
-## Type de module d’IU granite.profile   {#granite-profile-ui-module-type}
+## Type de module d’IU granite.profile {#granite-profile-ui-module-type}
 
 Le module d’IU ContextHub granite.profile affiche le nom d’affichage de l’utilisateur actuel. La fenêtre contextuelle révèle l’identifiant de connexion de l’utilisateur et permet de modifier la valeur du nom affiché. Le module obtient des informations à partir d’un magasin ContextHub nommé tagcloud et basé sur le magasin candidat [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate).
 

@@ -1,8 +1,8 @@
 ---
 title: Affichage d’informations dans le volet Résumé de la tâche
-seo-title: Affichage d’informations dans le volet Résumé de la tâche
+seo-title: Displaying information in the Task Summary pane
 description: Dans l’espace de travail AEM Forms, un panneau de résumé de la tâche peut être configuré afin d’afficher le récapitulatif de la tâche ou d’afficher toute autre page Web.
-seo-description: Dans l’espace de travail AEM Forms, un panneau de résumé de la tâche peut être configuré afin d’afficher le récapitulatif de la tâche ou d’afficher toute autre page Web.
+seo-description: In AEM Forms workspace, a Task Summary pane can be configured to summarize the task or display any other web page.
 uuid: 2fcc3d9f-0ec2-4250-8dc1-9746fd72ea60
 contentOwner: robhagat
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 exl-id: cb9de2d7-04ad-4221-8db7-403464c9888b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 68%
+source-wordcount: '277'
+ht-degree: 65%
 
 ---
 
@@ -32,10 +32,10 @@ L’espace de travail AEM Forms vous permet d’afficher une page web de votre c
 1. Configurez le champ URL du résumé de la tâche. Vous pouvez spécifier une valeur littérale, un contrôleur, une variable ou une expression XPath.
 1. Vous trouverez un exemple d’affichage des informations sur la page du résumé de la tâche ci-dessous.
 
-   * Connectez-vous à l’environnement de CRXDE Lite à l’adresse `https://[server]:[port]/lc/crx/de`.
-   * `Create a node`**SampleSummary** ` under `/` with type `content:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
-   * `Create a folder`**** SampleSummaryunder  `/apps`. Dans la liste de contrôle d’accès de `/apps/SampleSummary`, ajoutez une entrée pour `PERM_WORKSPACE_USER` autorisant `jcr:readprivileges`.
-   * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
+   * Connectez-vous à l’environnement CRXDE Lite à l’adresse `https://[server]:[port]/lc/crx/de`.
+   * `Create a node`**SampleSummary** ` under `/content` with type `nt:unstructured`. In the properties of this node, add `sling:resourceType` of type String and value `SampleSummary`. In the Access Control List of this node, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:read` privileges.`
+   * `Create a folder`**SampleSummary** under `/apps`. Dans la liste de contrôle d’accès de `/apps/SampleSummary`, ajoutez une entrée pour `PERM_WORKSPACE_USER` allow `jcr:readprivileges`.
+   * `Create a file `html.esp` at `/apps/SampleSummary`. For example, add the following lines in `html.esp`.`
 
    ```
    <html>
@@ -51,4 +51,4 @@ L’espace de travail AEM Forms vous permet d’afficher une page web de votre c
    ```
 
    * Définissez la valeur de l’URL de résumé de la tâche sur `/lc/content/SampleSummary.html` à l’étape Affecter une tâche .
-   * Lorsque la tâche associée à cette étape Assign Task est ouverte dans l’espace de travail AEM Forms, la balise `html.esp` située à `/apps/SampleSummary` est rendue dans le volet de résumé de la tâche.
+   * Lorsque la tâche associée à cette étape est ouverte dans l’espace de travail AEM Forms, la fonction `html.esp` at `/apps/SampleSummary` est rendu dans le volet de résumé de la tâche.

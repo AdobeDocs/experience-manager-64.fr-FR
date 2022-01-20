@@ -1,8 +1,8 @@
 ---
 title: Personnalisation
-seo-title: Personnalisation
+seo-title: Personalization
 description: En savoir plus sur la personnalisation dans AEM.
-seo-description: En savoir plus sur la personnalisation dans AEM.
+seo-description: Learn about personalization in AEM.
 uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 841f54da-962a-4fa7-a295-571e2178ed23
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1687'
 ht-degree: 72%
 
 ---
@@ -40,7 +40,7 @@ Trois éléments principaux sont impliqués dans la personnalisation :
 
 ### Les règles {#rules}
 
-* Définissez la manière dont la personnalisation se produit, le contenu que l’utilisateur peut voir et le moment où.
+* Définissez la manière dont la personnalisation se produit réellement, le contenu que l’utilisateur peut voir et le moment où.
 
 La personnalisation peut être soit :
 
@@ -54,7 +54,7 @@ La personnalisation peut être soit :
 * Filtrage simple : les sélections sont effectuées sur la base de profils prédéfinis au niveau de l’utilisateur et/ou du groupe.
 * Filtrage collaboratif/sur recommandation : le comportement de l’utilisateur est enregistré selon des règles prédéfinies. Ces règles sont basées sur le comportement observé chez des personnes ayant des centres d’intérêt similaires. Les informations collectées sont utilisées pour personnaliser les informations affichées sur l’écran de l’utilisateur, en particulier sous forme de recommandations.
 
-## Comment et quand la personnalisation peut-elle être utilisée ?  {#how-and-when-can-personalization-be-used}
+## Comment et quand la personnalisation peut-elle être utilisée ? {#how-and-when-can-personalization-be-used}
 
 La personnalisation peut être utilisée dans de nombreuses situations, par exemple :
 
@@ -107,7 +107,7 @@ Lors de l’utilisation de la personnalisation, tenez compte des points suivants
 
 >[!TIP]
 >
->L’effet de la personnalisation sur les performances et les rubriques de mise en cache associées sont abordés plus en détail dans le document [Optimisation des performances.](/help/sites-deploying/configuring-performance.md)
+>L’effet de la personnalisation sur les performances et les rubriques de mise en cache associées sont abordés plus en détail dans le document . [Optimisation des performances.](/help/sites-deploying/configuring-performance.md)
 
 ##### Précision des règles {#accuracy}
 
@@ -124,7 +124,7 @@ Lors de l’utilisation de la personnalisation, tenez compte des points suivants
 
 * De nombreux utilisateurs sont soucieux de la protection et de la sécurité des données, en particulier en ce qui concerne les données collectées en surveillant leur comportement sur le web.
 
-## Personnalisation et accès  {#personalization-and-access}
+## Personnalisation et accès {#personalization-and-access}
 
 Même si ces deux aspects sont liés, la personnalisation et le contrôle d’accès doivent chacun être pris en compte de manière distincte.
 
@@ -132,7 +132,7 @@ La personnalisation ne crée en elle-même aucune forme de contrôle d’accès.
 
 Toutefois, le contrôle d’accès peut être utilisé pour créer une forme de personnalisation. Si vous autorisez ou refusez à un utilisateur l’accès à un contenu, ceci affecte inévitablement le choix de contenu dont cet utilisateur dispose, et donc la personnalisation de son expérience web.
 
-## Composants disponibles pour la personnalisation  {#components-available-for-personalization}
+## Composants disponibles pour la personnalisation {#components-available-for-personalization}
 
 Divers composants sont fournis avec AEM en vue de la personnalisation. Certains de ces composants permettent aux utilisateurs de se connecter et de modifier leur profil, tandis que d’autres (par exemple, Mes gadgets) leur permettent de configurer une page spécifique :
 
@@ -171,7 +171,7 @@ Divers composants sont fournis avec AEM en vue de la personnalisation. Certains 
 
 Les fonctions de communauté telles que les blogs, les forums et les calendriers entraînent la création de contenu de communauté, généralement appelé contenu créé par l’utilisateur. Lorsque du contenu créé par l’utilisateur est entré dans un environnement de publication consistant en plusieurs instances AEM ([ferme de publication](/help/communities/topologies.md)), un problème majeur est de trouver un moyen de synchroniser ce contenu sur toutes les instances.
 
-Avec l’extension [AEM Communities 6.1](/help/communities/overview.md), ce problème est résolu à l’aide d’un [magasin commun pour UGC](/help/communities/working-with-srp.md). En ce qui concerne la personnalisation, Communities inclut [Connexion sociale](/help/communities/social-login.md) - la possibilité de fournir aux visiteurs du site l’option de connexion à Facebook et Twitter.
+Avec [AEM Communities 6.1](/help/communities/overview.md) , ce problème est résolu à l’aide d’une [magasin commun pour le contenu généré par l’utilisateur](/help/communities/working-with-srp.md). En ce qui concerne la personnalisation, les communautés incluent [Connexion au réseau social](/help/communities/social-login.md) - la possibilité pour les visiteurs du site de se connecter à Facebook et Twitter.
 
 Sans l’extension Communities, les différentes méthodes à examiner pour résoudre le problème lié à l’homogénéité du contenu créé par l’utilisateur sont les suivantes :
 

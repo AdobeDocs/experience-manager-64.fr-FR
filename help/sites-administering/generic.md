@@ -1,8 +1,8 @@
 ---
 title: Administration d’eCommerce générique
-seo-title: Administration d’eCommerce générique
+seo-title: Administering Generic eCommerce
 description: La solution AEM générique fournit des méthodes pour gérer les informations commerciales conservées dans le référentiel.
-seo-description: La solution AEM générique fournit des méthodes pour gérer les informations commerciales conservées dans le référentiel.
+seo-description: The AEM generic solution provides methods of managing the commerce information held within the repository.
 uuid: 8af6933a-2dee-4b73-bc15-71b8394d082f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,7 +13,7 @@ feature: Commerce Integration Framework
 exl-id: 614815ef-6fe3-4b06-9c56-bc9fee127825
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3007'
+source-wordcount: '2986'
 ht-degree: 85%
 
 ---
@@ -62,7 +62,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 >
 >Vous pouvez créer une définition de produit n’importe où sous cet emplacement sans aucune configuration supplémentaire.
 
-### Importation de produits  {#importing-products}
+### Importation de produits {#importing-products}
 
 #### Importation de produits – IU optimisée pour les écrans tactiles {#importing-products-touch-optimized-ui}
 
@@ -76,7 +76,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
    * **Importateur**
 
-      L’importateur pour le [fournisseur de commerce](/help/sites-administering/concepts.md#commerce-providers) spécifique, par défaut `Geometrixx`.
+      L’importateur pour le [fournisseur](/help/sites-administering/concepts.md#commerce-providers), par défaut `Geometrixx`.
 
    * **Source**
 
@@ -103,7 +103,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
 1. Sélectionnez **Terminé** pour fermer l’assistant.
 
-#### Importation de produits – IU classique  {#importing-products-classic-ui}
+#### Importation de produits – IU classique {#importing-products-classic-ui}
 
 1. À l’aide de la console **Outils**, ouvrez le dossier **Commerce**.
 1. Double-cliquez pour ouvrir l’**Importateur de produit** :
@@ -120,7 +120,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
    * **Fournisseur de commerce**
 
-      l’importateur pour votre [fournisseur de commerce](/help/sites-administering/concepts.md#commerce-providers) ; par défaut.
+      L’importateur pour votre [fournisseur](/help/sites-administering/concepts.md#commerce-providers); par défaut.
 
    * **Fichier source**
 
@@ -132,11 +132,11 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
 1. Cliquez sur **Importer les produits**.
 
-### Création d’informations sur les produits  {#creating-product-information}
+### Création d’informations sur les produits {#creating-product-information}
 
 >[!NOTE]
 >
->La gestion des produits standard est basique, car le jeu de produits Geometrixx-Outdoors a également été défini de manière basique. La complexité est basée sur le [scaffolding](/help/sites-authoring/scaffolding.md) du produit. Par conséquent, avec votre propre scaffolding de produit, il est possible d’effectuer des modifications plus sophistiquées.
+>La gestion des produits standard est basique, car le jeu de produits Geometrixx-Outdoors a également été défini de manière basique. La complexité dépend du produit. [scaffolding](/help/sites-authoring/scaffolding.md), donc avec votre propre modèle automatique de produit, il est possible d’effectuer des modifications plus sophistiquées.
 
 #### Création d’informations sur les produits – IU optimisée pour les écrans tactiles {#creating-product-information-touch-optimized-ui}
 
@@ -162,7 +162,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 >
 >Les produits et leurs variantes sont stockés sous la forme d’une arborescence, les informations sur les produits figurent en haut, et les variantes en dessous (cette structure est imposée par l’IU).
 
-### Modification des informations sur les produits  {#editing-product-information}
+### Modification des informations sur les produits {#editing-product-information}
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 >
 >Cela signifie que, par défaut, elles sont bloquées par le [répartiteur](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html). Configurez-les donc selon vos besoins.
 
-#### Modification des informations sur les produits – IU optimisée pour les écrans tactiles  {#editing-product-information-touch-optimized-ui}
+#### Modification des informations sur les produits – IU optimisée pour les écrans tactiles {#editing-product-information-touch-optimized-ui}
 
 1. À l’aide de la console **Produits** (via **Commerce**), accédez à vos informations sur les produits.
 1. Utilisez :
@@ -220,20 +220,20 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
 1. Cliquez/appuyez sur un produit pour l’ouvrir. Vous pouvez également le publier ou afficher ses données.
 
-#### Extension d’une recherche  {#extending-search}
+#### Extension d’une recherche {#extending-search}
 
 Vous pouvez modifier une facette existante ou en ajouter de nouvelles à l’aide de CRXDE Lite :
 
-1. Accédez à:
+1. Accédez à :
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
-1. Vous pouvez par exemple modifier les tailles qui apparaissent sur la page de recherche de produits. Cliquez sur le noeud `sizegroup` .
-1. Cliquez sur le noeud `items`, puis sur le noeud `propertypredicate`.
-1. Vous pouvez modifier le `propertyValues`. Par exemple, vous pouvez ajouter XS ou XXL, ou supprimer une taille.
+1. Vous pouvez par exemple modifier les tailles qui apparaissent sur la page de recherche de produits. Cliquez sur le bouton `sizegroup` noeud .
+1. Cliquez sur `items` , puis cliquez sur `propertypredicate` noeud .
+1. Vous pouvez modifier la variable `propertyValues`. Par exemple, vous pouvez ajouter XS ou XXL, ou supprimer une taille.
 1. Cliquez sur **Enregistrer tout** et accédez à la page de recherche de produits. Vos modifications doivent s’afficher.
 
-### Plusieurs ressources  {#multiple-assets}
+### Plusieurs ressources {#multiple-assets}
 
 Vous pouvez ajouter plusieurs ressources dans le composant de produit, puis spécifier les ressources qui apparaissent sur la page du produit.
 
@@ -241,10 +241,10 @@ Vous pouvez ajouter plusieurs ressources dans le composant de produit, puis spé
 >
 >Tout ce qui affecte plusieurs ressources est effectué dans l’IU optimisée pour les écrans tactiles.
 
-#### Ajout de plusieurs ressources  {#adding-multiple-assets}
+#### Ajout de plusieurs ressources {#adding-multiple-assets}
 
 1. Accédez à la console **Produits** via **Commerce**.
-1. À l’aide de la console **Produits**, accédez au produit requis.
+1. En utilisant la variable **Produits** , accédez au produit requis.
 
    >[!NOTE]
    >
@@ -269,7 +269,7 @@ Vous pouvez ajouter plusieurs ressources dans le composant de produit, puis spé
 Deux ressources sont désormais stockées dans votre composant de produit. Vous pouvez configurer celle qui apparaît sur la page du produit. Cela fonctionne avec un système de catégorie. Vous devez d’abord ajouter une catégorie aux ressources individuelles :
 
 1. Appuyez/cliquez sur **Afficher les données du produit**.
-1. Saisissez une **catégorie de ressources** sous les ressources, par exemple `cat1` et `cat2`.
+1. Saisissez un **Catégorie de ressources** sous les ressources, par exemple `cat1` et `cat2`.
 
    >[!NOTE]
    >
@@ -309,21 +309,21 @@ Le mécanisme pour sélectionner l’image à afficher se présente comme suit 
 1. Accédez à votre catalogue.
 1. Appuyez/cliquez sur **Afficher les propriétés**.
 1. Appuyez/cliquez sur **Modifier**.
-1. Appuyez/cliquez sur l’onglet **Ressources** .
+1. Appuyez/cliquez sur le bouton **Ressources** .
 1. Saisissez la **catégorie de ressources de produit** requise.
 1. Appuyez/cliquez sur **Terminé.**
 1. [Déployez](#rolling-out-a-catalog) vos modifications.
 
 #### Console Produits {#products-console}
 
-1. À l’aide de la console **Produits**, accédez au produit requis.
+1. En utilisant la variable **Produits** , accédez au produit requis.
 1. Appuyez/cliquez sur **Afficher les données du produit**.
 1. Appuyez/cliquez sur **Modifier**.
 1. Saisissez une **catégorie de ressources par défaut**.
 1. Appuyez/cliquez sur **Terminé.**
 1. [Déployez](#rolling-out-a-catalog) vos modifications.
 
-### Publication/annulation de la publication des informations sur les produits  {#publishing-unpublishing-product-information}
+### Publication/annulation de la publication des informations sur les produits {#publishing-unpublishing-product-information}
 
 #### Publication/annulation de la publication des informations sur les produits – IU optimisée pour les écrans tactiles {#publishing-unpublishing-product-information-touch-optimized-ui}
 
@@ -356,7 +356,7 @@ L’intégration de Search &amp; Promote vous permet d’effectuer les opératio
 
 Pour plus d’informations, consulter [Flux de produit](/help/sites-administering/product-feed.md).
 
-### Gestionnaire d’événements pour les mises à jour de produits  {#event-handler-for-product-updates}
+### Gestionnaire d’événements pour les mises à jour de produits {#event-handler-for-product-updates}
 
 Il existe un gestionnaire d’événements qui consigne un événement lorsqu’un produit est ajouté, modifié ou supprimé, et lorsqu’une page produit est ajoutée, modifiée ou supprimée. Il y a les événements OSGi suivants :
 
@@ -367,7 +367,7 @@ Il existe un gestionnaire d’événements qui consigne un événement lorsqu’
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_MODIFIED`
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_DELETED`
 
-Pour les événements `PRODUCT_*` , le chemin pointe vers le produit de base dans `/etc/commerce/products`. Pour les événements `PRODUCT_PAGE_*` , le chemin pointe vers le noeud `cq:Page` .
+Pour le `PRODUCT_*` , le chemin pointe vers le produit de base dans `/etc/commerce/products`. Pour le `PRODUCT_PAGE_*` , le chemin pointe vers la variable `cq:Page` noeud .
 
 Vous pouvez les consulter dans la console web dans les événements OSGI ( `/system/console/events`), par exemple :
 
@@ -375,7 +375,7 @@ Vous pouvez les consulter dans la console web dans les événements OSGI ( `/sys
 
 >[!NOTE]
 >
->Lisez également [Gestion des événements dans AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>Lire aussi [Gestion des événements dans AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
 
 ### Image avec les liens Ajouter au panier {#image-with-add-to-cart-links}
 
@@ -405,7 +405,7 @@ Cliquez sur la zone réactive pour ouvrir une boîte de dialogue qui vous permet
 
 1. Modifiez et déplacez la forme selon vos besoins.
 1. Cliquez sur la forme.
-1. Cliquez sur l’icône Parcourir pour ouvrir le [sélecteur de ressources](/help/assets/asset-selector.md#using-the-asset-selector).
+1. Cliquez sur l’icône Parcourir pour ouvrir la [Sélecteur de ressources](/help/assets/asset-selector.md#using-the-asset-selector).
 
    >[!NOTE]
    >
@@ -427,7 +427,7 @@ Cliquez sur la zone réactive pour ouvrir une boîte de dialogue qui vous permet
 1. Cliquez sur le bouton Ajouter au panier. La boîte de dialogue se ferme.
 1. Accédez à votre panier. Le produit doit être ici.
 
-#### Options de configuration  {#configuration-options}
+#### Options de configuration {#configuration-options}
 
 Vous pouvez configurer l’apparence de la boîte de dialogue lorsque vous cliquez sur la zone réactive :
 
@@ -447,7 +447,7 @@ Vous pouvez configurer l’apparence de la boîte de dialogue lorsque vous cliqu
 
 ## Catalogues {#catalogs}
 
-### Génération d’un catalogue  {#generating-a-catalog}
+### Génération d’un catalogue {#generating-a-catalog}
 
 #### Génération d’un catalogue – IU optimisée pour les écrans tactiles {#generating-a-catalog-touch-optimized-ui}
 
@@ -463,7 +463,7 @@ Pour générer un catalogue :
 
    ![](do-not-localize/chlimage_1-23.png)
 
-1. Dans la liste, sélectionnez **Créer un catalogue**. L’assistant Créer un catalogue s’ouvre.
+1. Dans la liste, sélectionnez **Créer un catalogue**, l’assistant Créer un catalogue s’ouvre.
 
    ![chlimage_1-337](assets/chlimage_1-337.png)
 
@@ -473,14 +473,14 @@ Pour générer un catalogue :
 
    ![chlimage_1-338](assets/chlimage_1-338.png)
 
-1. Saisissez un **titre** et un **nom**.
+1. Saisissez un **Titre** et un **Nom**.
 1. Appuyez/cliquez sur le bouton **Créer**. Le catalogue est créé, et une boîte de dialogue s’ouvre.
 
    ![chlimage_1-339](assets/chlimage_1-339.png)
 
 1. Appuyez/cliquez sur le bouton **Terminé** pour revenir à la console Sites où vous pouvez voir votre catalogue.
 
-   Appuyez/cliquez sur le bouton **Ouvrir le catalogue** pour ouvrir votre catalogue (par exemple `http://localhost:4502/editor.html/content/test-catalog.html`).
+   Appuyer/cliquer **Ouvrir le catalogue** pour ouvrir votre catalogue (par exemple, `http://localhost:4502/editor.html/content/test-catalog.html`).
 
 #### Génération d’un catalogue – IU classique {#generating-a-catalog-classic-ui}
 
@@ -498,12 +498,12 @@ Pour générer un catalogue :
 
    Par exemple, `Swimwear`.
 
-1. Ouvrez la nouvelle page `Swimwear`, puis cliquez sur **Modifier le plan directeur** pour ouvrir la boîte de dialogue **Propriétés**, dans laquelle vous pouvez configurer la sélection **Produits**.
+1. Ouvrez le nouveau `Swimwear` page, puis cliquez sur **Modifier le plan directeur** pour ouvrir le **Propriétés** , dans laquelle vous pouvez configurer la variable **Produits** sélection.
 
    Par exemple, ouvrez le champ **Balises / Mots-clés** pour sélectionner Activité, puis Swimming dans la section Geometrixx-Outdoors.
 
 1. Cliquez sur **OK** pour enregistrer les propriétés ; les exemples de produits sont affichés sous **Critères de sélection des produits** sur la page de plan directeur.
-1. Cliquez sur **Déployer les modifications**, sélectionnez **Déployer la page et toutes les sous-pages**, puis cliquez sur **Suivant** et **Déployer**. Une fois le déploiement terminé, l’indicateur **Status** s’affiche en vert.
+1. Cliquez sur **Déployer les modifications**, sélectionnez **Déployer la page et toutes les sous-pages**, puis cliquez sur **Suivant** et **Déployer**. Une fois le déploiement terminé, la variable **État** s’affiche en vert.
 1. Vous pouvez maintenant cliquer sur **Fermer** et vérifier la nouvelle section de catalogue, par exemple, à cette adresse et sous celle-ci :
 
    `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
@@ -512,13 +512,13 @@ Pour générer un catalogue :
 1. Cliquez sur **OK** pour enregistrer les propriétés ; les informations de bannière sont affichées sous **Critères de sélection des produits** sur la page de plan directeur.
 1. Déployez ces nouvelles modifications.
 
-### Déploiement d’un catalogue  {#rolling-out-a-catalog}
+### Déploiement d’un catalogue {#rolling-out-a-catalog}
 
 #### Déploiement d’un catalogue – IU optimisée pour les écrans tactiles {#rolling-out-a-catalog-touch-optimized-ui}
 
 Pour déployer un catalogue :
 
-1. Accédez à la console **Catalogues** via **Commerce**.
+1. Accédez au **Catalogues** console, via **Commerce**.
 1. Accédez au catalogue à déployer.
 1. Utilisez :
 
@@ -548,7 +548,7 @@ Pour déployer un catalogue :
 
 #### Importateur de plans directeurs – IU optimisée pour les écrans tactiles {#blueprint-importer-touch-optimized-ui}
 
-1. Accédez à la console **Catalogues** via **Commerce**.
+1. Accédez au **Catalogues** console, via **Commerce**.
 1. Accédez à l’emplacement où vous souhaitez importer le plan directeur de catalogue.
 1. Appuyez/cliquez sur l’icône **Importer les plans directeurs**.
 
@@ -560,9 +560,9 @@ Pour déployer un catalogue :
 
 1. Appuyez/cliquez sur **Terminé** lorsque l’importation est terminée.
 
-#### Importateur de plans directeurs – IU classique  {#blueprint-importer-classic-ui}
+#### Importateur de plans directeurs – IU classique {#blueprint-importer-classic-ui}
 
-1. À l’aide de la console **Outils**, accédez à **Commerce**.
+1. En utilisant la variable **Outils** console, accédez à **Commerce**.
 
    Par exemple :
 
@@ -574,7 +574,7 @@ Pour déployer un catalogue :
 
 ## Promotions {#promotions}
 
-### Création d’une promotion  {#creating-a-promotion}
+### Création d’une promotion {#creating-a-promotion}
 
 #### Création d’une promotion – IU classique {#creating-a-promotion-classic-ui}
 
@@ -604,7 +604,7 @@ Pour déployer un catalogue :
 
 ## Bons {#vouchers}
 
-### Création d’un bon  {#creating-a-voucher}
+### Création d’un bon {#creating-a-voucher}
 
 #### Création d’un bon – IU classique {#creating-a-voucher-classic-ui}
 
@@ -618,7 +618,7 @@ Pour déployer un catalogue :
 
 1. Vous pouvez désormais activer le bon, afin que les clients puissent l’utiliser dans leur panier sur l’instance de publication.
 
-### Suppression des bons  {#removing-vouchers}
+### Suppression des bons {#removing-vouchers}
 
 #### Suppression des bons – IU classique {#removing-vouchers-classic-ui}
 
@@ -629,13 +629,13 @@ Pour qu’un bon ne soit plus disponible pour vos clients, vous pouvez effectuer
 
 Les deux actions peuvent être effectuées à partir de la console **Sites web**.
 
-### Modification des bons  {#modifying-vouchers}
+### Modification des bons {#modifying-vouchers}
 
 #### Modification des bons – IU classique {#modifying-vouchers-classic-ui}
 
 Pour modifier les propriétés d’un bon ou d’une promotion, vous pouvez double-cliquer dessus sur la console **Sites web** et cliquer sur **Modifier**. Après son enregistrement, vous devez l’activer afin que les modifications soient reflétées sur la ou les instances de publication.
 
-### Ajout des bons à un panier  {#adding-vouchers-to-a-cart}
+### Ajout des bons à un panier {#adding-vouchers-to-a-cart}
 
 Pour permettre aux utilisateurs d’ajouter des bons à leurs paniers, vous pouvez utiliser le composant **Bons** intégré (catégorie Commerce). Vous devez l’ajouter sur la page où le panier est affiché (mais cela n’est pas obligatoire). Le composant Bons est simplement un formulaire dans lequel l’utilisateur peut saisir un code de bon. C’est le composant Panier qui affiche la liste des bons appliqués et leur remise.
 
@@ -658,7 +658,7 @@ Sur le site de démonstration (Geometrixx outdoors - anglais), vous pouvez aff
 >  
 >  Les informations sur les commandes des clients sont conservées dans les répertoires home et sont exposées par l’historique de commandes pour leur compte. Ces informations sont publiées avec le reste de leur répertoire home.
 
-### Création d’informations sur une commande  {#creating-order-information}
+### Création d’informations sur une commande {#creating-order-information}
 
 #### Création d’informations sur une commande – IU optimisée pour les écrans tactiles {#creating-order-information-touch-optimized-ui}
 
@@ -671,7 +671,7 @@ Sur le site de démonstration (Geometrixx outdoors - anglais), vous pouvez aff
 
 1. Sélectionnez **Créer** pour enregistrer les informations.
 
-### Modification des informations sur une commande  {#editing-order-information}
+### Modification des informations sur une commande {#editing-order-information}
 
 #### Modifications des informations sur une commande – IU optimisée pour les écrans tactiles {#editing-order-information-touch-optimized-ui}
 

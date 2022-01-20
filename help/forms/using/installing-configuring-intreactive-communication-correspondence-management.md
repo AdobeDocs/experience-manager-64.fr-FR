@@ -23,7 +23,7 @@ AEM Form permet de centraliser la création, l’assemblage, la gestion et la di
 
 Vous pouvez utiliser la fonctionnalité de communication interactive pour produire une communication dans plusieurs formats, par exemple, Web et PDF. Vous pouvez intégrer la communication interactive au processus AEM pour traiter et fournir la communication assemblée aux clients sur le canal de leur choix. Par exemple, l’envoi d’une communication à l’utilisateur final par email.
 
-Si vous effectuez une mise à niveau à partir d’une version précédente et que vous avez déjà investi dans Correspondence Management, vous pouvez installer le [package de compatibilité](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) pour continuer à utiliser Correspondence Management. Pour plus d’informations sur les différences entre la communication interactive et la gestion des correspondances, voir [Présentation de la communication interactive](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
+Si vous effectuez une mise à niveau à partir d’une version précédente et que vous avez déjà investi dans Correspondence Management, vous pouvez installer la variable [package de compatibilité](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) pour continuer à utiliser la gestion de la correspondance. Pour plus d’informations sur les différences entre la communication interactive et la gestion des correspondances, voir [Présentation de la communication interactive](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
 
 AEM Forms est une plate-forme d’entreprise performante. La communication interactive n’est que l’une des fonctionnalités d’AEM Forms. Pour obtenir la liste complète des fonctionnalités, voir [Présentation d’AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
@@ -92,14 +92,14 @@ Le package du module complémentaire AEM Forms est une application déployée s
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
-   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Téléchargements de recherche]** pour filtrer les résultats.
-1. Appuyez sur le nom du module approprié à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur (EULA)]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser la variable **[!UICONTROL Recherche de téléchargements]** pour filtrer les résultats.
+1. Appuyez sur le nom du package correspondant à votre système d’exploitation, puis sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur]**, puis appuyez sur **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
-   Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
+   Vous pouvez également télécharger le package à partir du lien direct répertorié dans le [Versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) article.
 
-1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier  [AEM-Installation-Directory]/crx-quickstart/logs/error.log et que le journal soit stable.
+1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans la variable [AEM-Installation-Directory]/crx-quickstart/logs/error.log et le journal est stable.
 1. Répétez les étapes 1 à 7 sur toutes les instances de création et de publication.
 
 ## Configurations post-installation {#post-installation-configurations}
@@ -113,9 +113,9 @@ AEM Forms comporte quelques configurations obligatoires et facultatives. Les con
 Effectuez les étapes suivantes sur toutes les instances de création et de publication pour déléguer le démarrage des bibliothèques :
 
 1. Arrêtez l’instance AEM sous-jacente.
-1. Ouvrez le fichier [AEM répertoire d’installation]\crx-quickstart\conf\sling.properties pour le modifier.
+1. Ouvrez le [Répertoire d’installation AEM]\crx-quickstart\conf\sling.properties pour modification.
 
-   Si vous avez utilisé [AEM répertoire d’installation]\crx-quickstart\bin\start.bat pour démarrer AEM, modifiez le fichier sling.properties situé à l’adresse [racine_de_l’utilisateur ]\crx-quickstart\.
+   Si vous avez utilisé [Répertoire d’installation AEM]\crx-quickstart\bin\start.bat pour commencer AEM, puis modifiez le fichier sling.properties situé à l’adresse [AEM_root]\crx-quickstart\.
 
 1. Ajoutez les propriétés suivantes au fichier sling.properties :
 
@@ -139,7 +139,7 @@ Effectuez les étapes suivantes sur toutes les instances de création et de publ
 
 1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. L’URL par défaut est `https://[server]:[port]/system/console/configMgr`.
 1. Recherchez et ouvrez la **configuration du pare-feu de désérialisation**.
-1. Ajoutez le package **sun.util.calendar** au champ **liste autorisée**. Cliquez sur Enregistrer.
+1. Ajoutez la variable **sun.util.calendar** vers le module **liste autorisée** champ . Cliquez sur Enregistrer.
 1. Répétez les étapes 1 à 3 sur toutes les instances de création et de publication.
 
 ### Configurations post-installation facultatives {#optional-post-installation-configurations}
@@ -157,7 +157,7 @@ Le package de compatibilité AEMFD vous permet d’utiliser les actifs suivants 
 
 #### La configuration de Dispatcher {#configure-dispatcher}
 
-Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pour AEM. Le répartiteur AEM aide également à protéger le serveur AEM des attaques.  Vous pouvez augmenter la sécurité de votre instance AEM en utilisant le répartiteur conjointement avec un serveur Web de niveau élevé. Si vous utilisez [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), effectuez les configurations suivantes pour AEM Forms :
+Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pour AEM. Le répartiteur AEM aide également à protéger le serveur AEM des attaques.  Vous pouvez augmenter la sécurité de votre instance AEM en utilisant le répartiteur conjointement avec un serveur Web de niveau élevé. Si vous utilisez [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), puis effectuez les configurations suivantes pour AEM Forms :
 
 1. Configurez l’accès à AEM Forms:
 
@@ -169,7 +169,7 @@ Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pou
 
 1. Configurez le service de filtrage des référents :
 
-   Connectez-vous à Configuration Manager d’Apache Felix en tant qu’administrateur. L’URL par défaut du gestionnaire de configuration est `https://[server]:[port_number]/system/console/configMgr`. Dans le menu **Configurations**, sélectionnez l’option **Apache Sling Referrer Filter.** Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **Enregistrer**. Le format de l’entrée est `https://[server]:[port]`.
+   Connectez-vous à Configuration Manager d’Apache Felix en tant qu’administrateur. L’URL par défaut du gestionnaire de configuration est : `https://[server]:[port_number]/system/console/configMgr`. Dans le menu **Configurations**, sélectionnez l’option **Apache Sling Referrer Filter.** Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **Enregistrer**. Le format de l’entrée est `https://[server]:[port]`.
 
 #### Intégration d’Adobe Target {#integrate-adobe-target}
 

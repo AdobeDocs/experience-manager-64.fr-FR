@@ -5,12 +5,12 @@ audience: end-user
 user-guide-title: Notes de mise à jour d’Adobe Experience Manager 6.4
 breadcrumb-title: Notes de mise à jour
 user-guide-description: Découvrez les dernières nouvelles fonctionnalités d’AEM 6.4 dans les notes de mise à jour.
-feature: Informations sur la version
+feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 48%
+source-wordcount: '87'
+ht-degree: 47%
 
 ---
 

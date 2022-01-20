@@ -1,8 +1,8 @@
 ---
 title: Architecture des formulaires HTML5
-seo-title: Architecture des formulaires HTML5
+seo-title: Architecture of HTML5 forms
 description: HTML5 Forms est déployé sous la forme d’un package au sein de l’instance AEM intégrée et expose la fonctionnalité sous la forme d’un point de fin REST sur HTTP/S à l’aide de l’architecture Apache Sling RESTful.
-seo-description: HTML5 Forms est déployé sous la forme d’un package au sein de l’instance AEM intégrée et expose la fonctionnalité sous la forme d’un point de fin REST sur HTTP/S à l’aide de l’architecture Apache Sling RESTful.
+seo-description: HTML5 forms is deployed as a package within the embedded AEM instance and exposes the functionality as REST end point over HTTP/S using RESTful Apache Sling architecture.
 uuid: f32f9946-20f6-4c64-b1bd-03882517e11a
 contentOwner: robhagat
 content-type: reference
@@ -13,7 +13,7 @@ feature: Mobile Forms
 exl-id: 5bb8b307-93f0-4ccd-89ac-de82d65021e6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2006'
 ht-degree: 78%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 78%
 
 ## Architecture {#architecture}
 
-La fonctionnalité de formulaires HTML5 est déployée sous la forme d’un package au sein de l’instance d’AEM intégrée et exposée sous la forme d’un point de terminaison REST sur HTTP/S à l’aide de RESTful [Apache Sling Architecture](https://sling.apache.org/).
+La fonctionnalité HTML5 forms est déployée sous la forme d’un package au sein de l’instance d’AEM incorporée et exposée sous la forme d’un point de terminaison REST sur HTTP/S à l’aide de RESTful. [Architecture d’Apache Sling](https://sling.apache.org/).
 
 ![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)
 
@@ -42,35 +42,35 @@ HTML5 forms masque tous les objets intermédiaires requis pour le traitement (g�
 
 Mobile Form conserve deux niveaux différents de caches, le cache de prérendu (preRender) et le cache de rendu (Render). Le cache de prérendu contient tous les fragments et images d’un modèle résolu et le cache de rendu est composé du contenu rendu tel que le code HTML.
 
-![Processus des formulaires HTML5 ](assets/cacheworkflow.png)
-**Figure :** *processus des formulaires HTML5*
+![Processus des formulaires HTML5](assets/cacheworkflow.png)
+**Figure :** *Processus des formulaires HTML5*
 
 HTML5 forms ne met pas en cache les modèles avec des références d’images ou de fragments manquantes. Si HTML5 forms a besoin de plus de temps que d’habitude, alors vérifiez les journaux du serveur pour voir les références et avertissements manquants. Assurez-vous également que l’objet n’a pas encore atteint la taille maximale.
 
 Le service Forms OSGi traite une requête en deux étapes :
 
 * **Génération de mises en page et d’état de formulaire initial ** : le service de rendu Forms OSGi appelle le composant Forms Cache pour déterminer si le formulaire a déjà été mis en cache et s’il n’a pas été invalidé. Si le formulaire est mis en cache et valide, il sert la sortie HTML du cache. Si le formulaire est invalidé, le service de rendu Forms OSGi génère la mise en page et l’état initial du formulaire au format XML. Ce fichier XML est transformé en mise en page HTML et en état de formulaire JSON initial par le service Forms OSGi, puis mis en mémoire cache pour les requêtes suivantes.
-* **Forms prérempli** : Lors du rendu, si un utilisateur demande des formulaires avec des données préremplies, le service de rendu Forms OSGi appelle le conteneur de services Forms et génère un nouvel état de formulaire avec les données fusionnées. Toutefois, dans la mesure où une mise en page est déjà créée à l’étape précédente, cet appel est plus rapide que le premier. Cet appel exécute uniquement la fusion des données et les scripts sur les données.
+* **Forms préremplie**: Lors du rendu, si un utilisateur demande des formulaires avec des données préremplies, le service de rendu Forms OSGi appelle le conteneur de services Forms et génère un nouvel état de formulaire avec les données fusionnées. Toutefois, dans la mesure où une mise en page est déjà créée à l’étape précédente, cet appel est plus rapide que le premier. Cet appel exécute uniquement la fusion des données et les scripts sur les données.
 
 S’il existe une mise à jour dans le formulaire ou l’une des ressources utilisées dans le formulaire, le composant de cache de formulaire le détecte et le cache de ce formulaire est invalidé. Une fois que le service Forms OSGi a terminé le traitement, le JSP du rendu du profil ajoute les références à la bibliothèque JavaScript et le style à ce formulaire et renvoie la réponse au client. Un serveur Web standard tel qu’[Apache](https://httpd.apache.org/) peut être utilisé ici avec la compression HTML activée. Un serveur web réduirait considérablement la taille de réponse, le trafic réseau et le temps nécessaire pour diffuser les données entre le serveur et l’ordinateur client.
 
-Lorsqu’un utilisateur envoie le formulaire, le navigateur envoie l’état du formulaire au format JSON à [proxy de service d’envoi](/help/forms/using/service-proxy.md) ; Ensuite, le proxy de service d’envoi génère un fichier XML de données à l’aide des données JSON et envoie ce fichier XML au point de terminaison d’envoi.
+Lorsqu’un utilisateur envoie le formulaire, le navigateur envoie l’état du formulaire au format JSON à la variable [proxy de service d’envoi](/help/forms/using/service-proxy.md); Ensuite, le proxy de service d’envoi génère un fichier XML de données à l’aide des données JSON et envoie ce fichier XML au point de terminaison d’envoi.
 
 ## Composants {#components}
 
 Vous avez besoin du package de module complémentaire d’AEM Forms pour autoriser les formulaires HTML5. Pour plus d’informations sur l’installation du module complémentaire AEM Forms, voir [Installation et configuration d’AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
-### Composants OSGi (adobe-lc-forms-core.jar)  {#osgi-components-adobe-lc-forms-core-jar}
+### Composants OSGi (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
 
-**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** est le nom d’affichage du lot OSGi des formulaires HTML5 affiché à partir de la vue du lot de la console d’administration Felix (https://[host]:[port]/system/console/bundles).
+**Adobe du moteur de rendu XFA Forms (com.adobe.livecycle.adobe-lc-forms-core)** est le nom d’affichage du lot OSGi de HTML5 forms lorsqu’il est affiché à partir de la vue du lot de la console d’administration Felix (https://)[hôte]:[port]/system/console/bundles).
 
 Ce composant contient les composants OSGi pour le rendu, la gestion de la mémoire cache et les paramètres de configuration.
 
-#### Service Forms OSGi  {#forms-osgi-service}
+#### Service Forms OSGi {#forms-osgi-service}
 
 Ce service OSGi contient la logique de génération d’un XDP au format HTML et gère l’envoi d’un formulaire pour générer des données XML. Ce service utilise le conteneur de services de formulaires. Le conteneur de services de formulaires appelle en interne le composant natif `XMLFormService.exe` qui effectue le traitement.
 
-Si une demande de rendu est reçue, ce composant appelle le conteneur de services Forms pour générer des informations de mise en page et d’état qui sont ensuite traitées afin de générer des états DOM de formulaire HTML et JSON.
+Si une demande de rendu est reçue, ce composant appelle le conteneur de services Forms pour générer des informations de mise en page et d’état qui sont ensuite traitées afin de générer des états DOM de HTML et de formulaire JSON.
 
 Ce composant est également responsable de la génération de données XML à partir de l’état du formulaire au format JSON envoyé.
 
@@ -109,9 +109,9 @@ HTML5 forms effectue la mise en mémoire cache à l’aide de la stratégie LRU.
 
 Le service de configuration permet l’optimisation des paramètres de configuration et des paramètres de la mémoire cache pour HTML5 forms.
 
-Pour mettre à jour ces paramètres, accédez au Admin Console CQ Felix (disponible à l’adresse `https://[server]:[port]/system/console/configMgr`), recherchez et sélectionnez Configuration de Forms mobile.
+Pour mettre à jour ces paramètres, accédez au Admin Console Felix CQ (disponible à l’adresse `https://[server]:[port]/system/console/configMgr`), recherchez et sélectionnez Configuration de Mobile Forms.
 
-Vous pouvez configurer la taille de la mémoire cache ou désactiver la mémoire cache à l’aide du service de configuration. Vous pouvez également activer le débogage à l’aide du paramètre Options de débogage. Vous trouverez plus d’informations sur le débogage des formulaires à l’adresse [Débogage des formulaires HTML5](/help/forms/using/debug.md).
+Vous pouvez configurer la taille de la mémoire cache ou désactiver la mémoire cache à l’aide du service de configuration. Vous pouvez également activer le débogage à l’aide du paramètre Options de débogage. Pour plus d’informations sur le débogage des formulaires, voir [Débogage des formulaires HTML5](/help/forms/using/debug.md).
 
 ### Composants d’exécution (adobe-lc-forms-runtime-pkg.zip) {#runtime-components-adobe-lc-forms-runtime-pkg-zip}
 
@@ -119,7 +119,7 @@ Le package d’exécution contient les bibliothèques côté client utilisées p
 
 **Composants importants disponibles dans le package d’exécution :**
 
-#### Moteur de script  {#scripting-engine}
+#### Moteur de script {#scripting-engine}
 
 L’implémentation d’Adobe XFA prend en charge deux types de langage de script pour activer l’exécution de la logique définie par l’utilisateur dans les formulaires : JavaScript et FormCalc.
 
@@ -127,7 +127,7 @@ Le moteur de script des formulaires HTML est écrit en langage JavaScript pour p
 
 Lors du rendu, le script FormCalc est traduit (et mis en mémoire cache) en JavaScript sur le serveur de manière transparente pour l’utilisateur ou le concepteur.
 
-Ce moteur de script utilise certaines fonctionnalités d’ECMAScript5 comme Object.defineProperty. Le moteur et/ou la bibliothèque sont délivrés en tant que bibliothèques client CQ avec pour nom de catégorie **xfaforms.profile**.  Il fournit également l’**API FormBridge** pour permettre aux portails ou applications externes d’interagir avec le formulaire. A l’aide de FormBridge, une application externe peut masquer certains éléments, obtenir ou définir leurs valeurs, ou modifier leurs attributs de manière programmée.
+Ce moteur de script utilise certaines fonctionnalités d’ECMAScript5 comme Object.defineProperty. Le moteur et/ou la bibliothèque sont délivrés en tant que bibliothèques client CQ avec pour nom de catégorie **xfaforms.profile**.  Il fournit également **API FormBridge** pour permettre aux portails ou applications externes d’interagir avec le formulaire. A l’aide de FormBridge, une application externe peut masquer certains éléments, obtenir ou définir leurs valeurs, ou modifier leurs attributs de manière programmée.
 
 Pour plus d’informations, voir l’article sur [Form Bridge](/help/forms/using/form-bridge-apis.md).
 
@@ -141,13 +141,13 @@ Pour plus d’informations sur les widgets et les contrats correspondants, voir 
 
 #### Style {#styling}
 
-Le style associé aux éléments HTML est ajouté en ligne ou en fonction du bloc CSS incorporé. Certains styles courants qui ne dépendent pas du formulaire font partie de la bibliothèque cliente CQ avec le nom de catégorie xfaforms.profile.
+Le style associé aux éléments de HTML est ajouté en ligne ou en fonction du bloc CSS incorporé. Certains styles courants qui ne dépendent pas du formulaire font partie de la bibliothèque cliente CQ avec le nom de catégorie xfaforms.profile.
 
 En plus des propriétés de style par défaut, chaque élément du formulaire contient également certaines classes CSS en fonction du type d’élément, du nom et d’autres propriétés. A l’aide de ces classes, vous pouvez redéfinir le style des éléments en spécifiant leur propre CSS.
 
 Pour plus d’informations sur le style et les classes par défaut, voir [Introduction aux styles](/help/forms/using/css-styles.md).
 
-#### Script côté serveur et services Web  {#server-side-script-and-web-services}
+#### Script côté serveur et services Web {#server-side-script-and-web-services}
 
 Tous les scripts marqués pour exécution sur le serveur ou pour appeler un service Web (quel que soit l’endroit où il est marqué pour exécution) sont toujours exécutés sur le serveur.
 
@@ -158,7 +158,7 @@ Le moteur de script client :
 1. Génère un nouvel état JSON ;
 1. Fusionne le nouvel état JSON sur le client lorsque la réponse est renvoyée.
 
-#### Lots des ressources de localisation  {#localization-resource-bundles}
+#### Lots des ressources de localisation {#localization-resource-bundles}
 
 Les formulaires HTML5 prennent en charge l’italien (it), l’espagnol (es), le portugais brésilien (pt_BR), le chinois simplifié (zh_CN), le chinois traditionnel (prise en charge limitée uniquement) (zh_TW), le coréen (ko_KR), l’anglais (en_US), le français (fr_FR), l’allemand (de_DE) et le japonais (ja). En fonction du jeu de paramètres régionaux reçus dans l’en-tête de requête, le lot de ressources correspondant est envoyé au client. Ce lot de ressources est ajouté au profil JSP sous la forme d’une bibliothèque cliente CQ sous le nom de catégorie **xfaforms.I18N**. Vous pouvez remplacer la logique du profil consistant à prendre les packages avec paramètres régionaux.
 
@@ -172,7 +172,7 @@ Les profils sont les nœuds de ressources dans sling qui représentent un formul
 
 #### Rendus des profils {#profile-renderers}
 
-Le nœud de profil possède une propriété **sling:resourceSuperType** avec la valeur **xfaforms/profile**. Cette propriété envoie en interne des requêtes de transfert au script sling pour les noeuds de profil situés dans le dossier **/libs/xfaforms/profile**. Ces scripts sont des pages JSP, qui sont des conteneurs permettant de rassembler des formulaires HTML et des artefacts JS/CSS obligatoires. Les pages comportent des références à :
+Le nœud de profil possède une propriété **sling:resourceSuperType** avec la valeur **xfaforms/profile**. Cette propriété envoie en interne des requêtes de transfert au script sling pour les noeuds de profil situés dans le **/libs/xfaforms/profile** dossier. Ces scripts sont des pages JSP, qui sont des conteneurs permettant de rassembler des formulaires HTML et des artefacts JS/CSS obligatoires. Les pages comportent des références à :
 
 * **xfaforms. I18N.&lt;locale>** : cette bibliothèque contient des données localisées.
 * **xfaforms.profile** : cette bibliothèque contient l’implémentation pour les moteurs de script XFA et de mise en page.

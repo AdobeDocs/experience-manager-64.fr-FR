@@ -1,15 +1,15 @@
 ---
 title: Guide de l’utilisateur des fonctionnalités d’AEM 6.4
-seo-title: Guide de l’utilisateur des fonctionnalités d’AEM 6.4
+seo-title: AEM 6.4 Capabilities User Guide
 description: Présentation des fonctionnalités essentielles d’AEM 6.4
-seo-description: Présentation des fonctionnalités essentielles d’AEM 6.4
+seo-description: An overview of the essential capabilities of AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: f4dea584-3cd1-4d9f-ae3c-2573726dde95
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 52%
+source-wordcount: '141'
+ht-degree: 56%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 52%
 
 ## AEM Foundation {#aem-foundation}
 
-[En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4](/help/sites-deploying/home.md), y compris sur notre déploiement cloud Adobe Managed Services.
+[En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4](/help/sites-deploying/home.md), y compris notre déploiement cloud Adobe Managed Services .
 
 [Découvrez comment gérer un projet AEM](/help/managing/home.md).
 
@@ -27,7 +27,7 @@ ht-degree: 52%
 
 [Découvrez comment administrer AEM](/help/sites-administering/home.md).
 
-## AEM Assets {#aem-assets}
+## AEM Assets {#aem-assets}
 
 [Créez, gérez, diffusez et optimisez des ressources numériques.](/help/assets/home.md)
 

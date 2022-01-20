@@ -1,8 +1,8 @@
 ---
 title: API Java Credential Service QuickStart (SOAP)
-seo-title: API Java Credential Service QuickStart (SOAP)
+seo-title: Credential Service Java API QuickStart(SOAP)
 description: Utilisez l’API Java Credential Service pour importer et supprimer des informations d’identification.
-seo-description: Utilisez l’API Java Credential Service pour importer et supprimer des informations d’identification.
+seo-description: Use the Credential Service Java API to import and delete credentials.
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: a81b2360-9d17-46c7-9443-51b366b0724a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '224'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 ## Démarrage rapide (mode SOAP) : Importation des informations d’identification à l’aide de l’API Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-L’exemple de code suivant importe des informations d’identification en fonction d’un fichier nommé *cred.p12*. La valeur d’alias utilisée pour importer les informations d’identification est `Secure`. (Voir [Importation des informations d’identification à l’aide de l’API Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+L’exemple de code suivant importe des informations d’identification basées sur un fichier nommé *cred.p12*. La valeur d’alias utilisée pour importer les informations d’identification est `Secure`. (Voir [Importation des informations d’identification à l’aide de l’API Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```as3
  /* 
@@ -139,7 +139,7 @@ L’exemple de code suivant importe des informations d’identification en fonct
 
 ## Démarrage rapide (mode SOAP) : Suppression des informations d’identification à l’aide de l’API Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-L’exemple de code suivant supprime des informations d’identification en fonction d’une valeur d’alias *secure*. (Voir [Suppression des informations d’identification à l’aide de l’API Trust Manager](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+L’exemple de code suivant supprime des informations d’identification en fonction d’une valeur d’alias. *secure*. (Voir [Suppression d’informations d’identification à l’aide de l’API Trust Manager](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```as3
  /* 

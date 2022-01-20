@@ -1,9 +1,9 @@
 ---
 title: Contrôle des opérations de gestion des utilisateurs dans AEM
-seo-title: Contrôle des opérations de gestion des utilisateurs dans AEM
+seo-title: How to Audit User Management Operations in AEM
 description: Découvrez comment contrôler les opérations de gestion des utilisateurs dans AEM.
-feature: Opérations
-seo-description: Découvrez comment contrôler les opérations de gestion des utilisateurs dans AEM.
+feature: Operations
+seo-description: Learn how to audit User Management Operations in AEM.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,7 +13,7 @@ discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 exl-id: f987c4f5-64dd-491b-aafe-cb98acf0b1eb
 source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '302'
 ht-degree: 97%
 
 ---

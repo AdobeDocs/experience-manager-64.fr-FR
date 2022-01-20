@@ -1,8 +1,8 @@
 ---
 title: Projets
-seo-title: Projets
+seo-title: Projects
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
-seo-description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
+seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
 uuid: c279fa04-05ef-4a4c-9295-2194879a6271
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 42b224e5-1256-44b6-9b46-4cd6de5927fb
 exl-id: 70a70f56-1d33-4d8a-984a-a3e6f8deedeb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1374'
 ht-degree: 95%
 
 ---
@@ -68,7 +68,7 @@ Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles
 * Lancements
 * Tâches
 
-### Ressources   {#assets}
+### Ressources {#assets}
 
 Dans la mosaïque **Ressources**, vous pouvez regrouper tous les éléments dont vous avez besoin pour un projet particulier.
 
@@ -86,7 +86,7 @@ Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/
 
 Ajoutez une collection en cliquant sur **Ajouter une collection** et en sélectionnant la collection appropriée dans la liste.
 
-### Expériences   {#experiences}
+### Expériences {#experiences}
 
 La mosaïque **Expériences** permet d’ajouter au projet une application mobile, un site web ou une publication.
 
@@ -182,12 +182,12 @@ AEM est fourni avec trois modèles prêts à l’emploi :
 
 * Un projet simple : un modèle de référence pour tous les projets auxquels les autres catégories ne sont pas adaptées. Il comprend trois rôles de base (propriétaires, éditeurs et observateurs) et quatre workflows (Approbation de projet, Demander un lancement, Demander la page d’entrée et Demander un courrier électronique).
 * Un projet de média : un modèle de référence pour des activités multimédias. Il comprend plusieurs rôles de projet relatifs aux médias (photographes, éditeurs, rédacteurs, concepteurs, propriétaires et observateurs). Il comprend également deux workflows liés au contenu multimédia : Demander la copie (pour demander et réviser du texte) et Projet de séance photo du produit (pour gérer des photos relatives à des produits).
-* [Projet de séance photo du produit](/help/sites-authoring/managing-product-information.md)  : un exemple de référence pour gérer la photographie de produit liée au commerce électronique. Il comprend les rôles suivants : photographes, éditeurs, retoucheurs de photos, propriétaires, directeurs créatifs, marketeurs de réseaux sociaux, directeurs marketing, réviseurs et observateurs.
+* [Projet de séance photo du produit](/help/sites-authoring/managing-product-information.md) - Exemple de référence pour la gestion de la photographie de produit liée au commerce électronique. Il comprend les rôles suivants : photographes, éditeurs, retoucheurs de photos, propriétaires, directeurs créatifs, marketeurs de réseaux sociaux, directeurs marketing, réviseurs et observateurs.
 * [Un projet de traduction](/help/sites-administering/translation.md) : modèle de référence pour gérer des activités liées à la traduction. Il prévoit trois rôles de base (propriétaires, éditeurs et observateurs). Il comprend deux workflows accessibles dans l’interface utilisateur Workflows.
 
 En fonction du modèle sélectionné, plusieurs options s’offrent à vous, notamment en termes de rôles utilisateur et de workflows.
 
-## Rôles utilisateur dans un projet  {#user-roles-in-a-project}
+## Rôles utilisateur dans un projet {#user-roles-in-a-project}
 
 Différents rôles utilisateur sont définis dans un modèle de projet et utilisés pour deux principales raisons :
 

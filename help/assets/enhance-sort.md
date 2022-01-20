@@ -1,6 +1,6 @@
 ---
 title: Tri optimisé des ressources dans AEM
-description: Découvrez comment  [!DNL Experience Manager] Assets déploie le tri côté serveur pour trier simultanément les ressources des dossiers ou une requête de recherche au lieu de les trier par lots côté client.
+description: Découvrez comment [!DNL Experience Manager] Assets déploie le tri côté serveur pour trier simultanément les ressources de dossier ou une requête de recherche au lieu de les trier par lots côté client.
 contentOwner: AG
 feature: Search
 role: User
@@ -14,7 +14,7 @@ ht-degree: 77%
 
 # Tri optimisé des ressources dans [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-Découvrez comment [!DNL Experience Manager] Assets déploie le tri côté serveur pour trier simultanément des ressources de dossier ou une requête de recherche au lieu de les trier par lots côté client.
+Découvrez comment [!DNL Experience Manager] Assets déploie le tri côté serveur pour trier simultanément les ressources de dossier ou une requête de recherche au lieu de les trier par lots côté client.
 
 La fonctionnalité de recherche d’Adobe Experience Manager Assets est améliorée afin de trier efficacement un grand nombre de ressources dans la vue Liste de dossiers et les pages de résultats de recherche. Vous pouvez également trier les entrées de la chronologie.
 
@@ -51,7 +51,7 @@ La fonctionnalité de recherche d’Adobe Experience Manager Assets est amélior
 
 >[!NOTE]
 >
->Pour trier les valeurs des colonnes `Name` ou `Title`, recouvrez `/libs/dam/gui/content/commons/availablecolumns` et remplacez la valeur de `sortable` par `True`.
+>Pour trier les valeurs de la variable `Name` ou le `Title`colonnes, superposition `/libs/dam/gui/content/commons/availablecolumns` et modifiez la valeur de `sortable` to `True`.
 
 ## Tri des ressources dans les résultats de la recherche {#sorting-assets-in-search-results}
 

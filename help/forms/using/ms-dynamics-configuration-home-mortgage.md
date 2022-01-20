@@ -1,8 +1,8 @@
 ---
 title: Configuration de Microsoft Dynamics 365 pour le processus de prêt immobilier du site de référence We.Finance
-seo-title: Configuration de Microsoft Dynamics 365 pour le processus de prêt immobilier du site de référence We.Finance
+seo-title: Configure Microsoft Dynamics 365 for the home mortgage workflow of the We.Finance reference site
 description: Découvrez comment optimiser les services Microsoft® Dynamics 365 via des formulaires adaptatifs pour le processus de prêt immobilier du site de référence We.Finance
-seo-description: Découvrez comment optimiser les services Microsoft® Dynamics 365 via des formulaires adaptatifs pour le processus de prêt immobilier du site de référence We.Finance
+seo-description: Learn how to leverage the Microsoft® Dynamics 365 services through adaptive forms for the home mortgage workflow of the We.Finance Reference site
 uuid: a0656d90-84c7-46d1-9a16-dadcc19ff9ef
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
@@ -10,8 +10,8 @@ discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 exl-id: 7e1f417e-6a6b-4ef2-a453-866331fe3e96
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 79%
+source-wordcount: '449'
+ht-degree: 77%
 
 ---
 
@@ -23,7 +23,7 @@ Découvrez comment optimiser les services Microsoft® Dynamics 365 via des formu
 
 Microsoft® Dynamics 365 est un logiciel de gestion de la relation client et de planification des ressources de l’entreprise (ERP) qui fournit des solutions d’entreprise pour la création et la gestion de comptes clients, de contacts, de prospects, d’opportunités et de cas.
 
-AEM Forms fournit un service cloud pour intégrer Dynamics 365 avec le module [Intégration de données Forms](/help/forms/using/data-integration.md). Le scénario de la [présentation de l’application de prêt immobilier avec Microsoft® Dynamics](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics) montre comment un client utilise le site de référence We.Finance pour demander un prêt lorsque le site utilise Microsoft® Dynamics pour l’intégration de données de formulaire. Avant de pouvoir utiliser la présentation de l’application de prêt immobilier avec le scénario Microsoft® Dynamics, vous devez configurer Microsoft® Dynamics 365 pour l’utiliser avec le site de référence We.Finance.
+AEM Forms fournit un service cloud pour intégrer Dynamics 365 à [Intégration de données Forms](/help/forms/using/data-integration.md) module . Le scénario de la [présentation de l’application de prêt immobilier avec Microsoft® Dynamics](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics) montre comment un client utilise le site de référence We.Finance pour demander un prêt lorsque le site utilise Microsoft® Dynamics pour l’intégration de données de formulaire. Avant de pouvoir utiliser la présentation de la demande de prêt immobilier avec le scénario Microsoft® Dynamics, vous devez configurer Microsoft® Dynamics 365 pour l’utiliser avec le site de référence We.Finance.
 
 ## Prérequis {#prerequisites}
 
@@ -40,7 +40,7 @@ Avant de commencer à installer et configurer Dynamics 365, vérifiez que vous 
 
 1. Sur une instance d’auteur, accédez à la page suivante :
 
-   https://[serveur]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html
+   https://[sderver]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html
 
 1. Faites défiler l’écran vers le calculateur de prêt immobilier.
 1. Sélectionnez le panneau de la colonne de droite (du calculateur) et appuyez pour afficher le menu contextuel. Dans le menu contextuel, appuyez sur Configurer. La boîte de dialogue Modifier le conteneur d’AEM Forms s’affiche.

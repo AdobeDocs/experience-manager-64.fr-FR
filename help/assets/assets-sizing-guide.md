@@ -1,6 +1,6 @@
 ---
 title: Guide de dimensionnement des ressources
-description: 'Bonnes pratiques pour déterminer des mesures efficaces pour estimer l’infrastructure et les ressources nécessaires au déploiement des  [!DNL Experience Manager] ressources. '
+description: 'Bonnes pratiques pour déterminer des mesures efficaces pour estimer l’infrastructure et les ressources nécessaires au déploiement [!DNL Experience Manager] Ressources. '
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -23,7 +23,7 @@ Lors du dimensionnement de l’environnement pour une mise en oeuvre d’Adobe E
 
 ### Banque de données {#datastore}
 
-Une erreur courante lors du dimensionnement de l’espace disque requis pour une mise en œuvre d’Assets consiste à baser les calculs sur la taille des images brutes à intégrer dans le système. Par défaut, [!DNL Experience Manager] crée trois rendus en plus de l’image d’origine à utiliser dans le rendu des éléments de l’interface utilisateur [!DNL Experience Manager]. Dans les mises en œuvre précédentes, il a été observé que la taille de ces rendus était deux fois supérieure à la taille des ressources qui sont intégrées.
+Une erreur courante lors du dimensionnement de l’espace disque requis pour une mise en œuvre d’Assets consiste à baser les calculs sur la taille des images brutes à intégrer dans le système. Par défaut, [!DNL Experience Manager] crée trois rendus en plus de l’image d’origine à utiliser dans le rendu de la variable [!DNL Experience Manager] Eléments de l’interface utilisateur. Dans les mises en œuvre précédentes, il a été observé que la taille de ces rendus était deux fois supérieure à la taille des ressources qui sont intégrées.
 
 La plupart des utilisateurs définissent des rendus personnalisés en plus des rendus prêts à l’emploi. Outre les rendus, Assets vous permet d’extraire des sous-ressources à partir de types de fichiers courants, tels qu’InDesign et Illustrator.
 
@@ -38,7 +38,7 @@ Compte tenu de ces facteurs, vous avez besoin d’une méthodologie permettant d
 1. Si vous prévoyez d’utiliser des sous-ressources, générez-les pour les types de fichiers appropriés. Voir la documentation en ligne sur la génération de pages de sous-ressources à partir de fichiers InDesign ou PNG/PDF provenant de calques d’Illustrator.
 1. Comparez la taille des images, rendus et sous-ressources de sortie avec les images d’origine. Cette comparaison permet de générer un facteur de croissance attendu lorsque le système est chargé. Par exemple, si vous générez des rendus et des sous-ressources d’une taille combinée de 3 Go après le traitement de 1 Go de ressources, le facteur de croissance des rendus est de 3.
 1. Déterminez la durée maximale pendant laquelle les versions des ressources doivent être conservées dans le système.
-1. Déterminez la fréquence à laquelle les ressources existantes sont modifiées dans le système. Si [!DNL Experience Manager] est utilisé comme centre de collaboration dans les workflows créatifs, le nombre de modifications est élevé. Si seules les ressources terminées sont chargées dans le système, ce nombre est beaucoup plus bas.
+1. Déterminez la fréquence à laquelle les ressources existantes sont modifiées dans le système. If [!DNL Experience Manager] est utilisé comme hub de collaboration dans les workflows créatifs, le nombre de modifications est élevé. Si seules les ressources terminées sont chargées dans le système, ce nombre est beaucoup plus bas.
 1. Déterminez le nombre de ressources chargées dans le système chaque mois. Si vous avez le moindre doute, vérifiez le nombre de ressources actuellement disponibles et divisez ce nombre par l’âge de la ressource la plus ancienne afin de calculer un nombre approximatif.
 
 La réalisation des étapes 1 à 9 vous aide à déterminer ce qui suit :
@@ -51,7 +51,7 @@ La réalisation des étapes 1 à 9 vous aide à déterminer ce qui suit :
 * Nombre de nouvelles ressources chargées chaque mois
 * Nombre d’années de croissance pour lesquelles allouer de l’espace
 
-Vous pouvez indiquer ces chiffres dans la feuille de calcul Dimensionnement du réseau afin de déterminer l’espace total requis pour la banque de données. Il s’agit également d’un outil utile pour déterminer l’impact de la maintenance des versions de ressources ou de la modification des ressources dans [!DNL Experience Manager] sur la croissance du disque.
+Vous pouvez indiquer ces chiffres dans la feuille de calcul Dimensionnement du réseau afin de déterminer l’espace total requis pour la banque de données. Il s’agit également d’un outil utile permettant de déterminer l’impact de la maintenance de versions de ressources ou de la modification de ressources dans [!DNL Experience Manager] sur la croissance du disque.
 
 Les exemples de données renseignés dans l’outil montrent à quel point il est important de réaliser les étapes mentionnées. Si vous dimensionnez la banque de données uniquement en fonction des images brutes à charger (1 To), vous avez peut-être sous-estimé la taille du référentiel d’un facteur de 15.
 
@@ -106,11 +106,11 @@ Pour le référentiel, utilisez des SSD ou des disques avec un niveau d’IOPS s
 
 ## Réseau {#network}
 
-[!DNL Assets] comporte plusieurs cas d’utilisation qui rendent la performance du réseau plus importante que sur la plupart de nos projets [!DNL Experience Manager] Un client peut disposer d’un serveur rapide, mais si la connexion réseau n’est pas assez puissante pour soutenir la charge des utilisateurs qui chargent et téléchargent des ressources à partir du système, il semblera toujours lent. Il existe une bonne méthodologie pour déterminer le point d’étranglement dans la connexion réseau d’un utilisateur à [!DNL Experience Manager] à [[!DNL Experience Manager]  Considérations des ressources pour l’expérience utilisateur, le dimensionnement des instances, l’évaluation des workflows et la topologie de réseau](assets-network-considerations.md).
+[!DNL Assets] comporte plusieurs cas d’utilisation qui rendent la performance du réseau plus importante que sur la plupart de nos projets [!DNL Experience Manager] Un client peut disposer d’un serveur rapide, mais si la connexion réseau n’est pas assez puissante pour soutenir la charge des utilisateurs qui chargent et téléchargent des ressources à partir du système, il semblera toujours lent. Il existe une bonne méthodologie pour déterminer le point d’étranglement dans la connexion réseau d’un utilisateur à [!DNL Experience Manager] at [[!DNL Experience Manager]  Considérations sur les ressources pour l’expérience utilisateur, le dimensionnement des instances, l’évaluation des workflows et la topologie de réseau](assets-network-considerations.md).
 
 ## WebDAV {#webdav}
 
-Si vous ajoutez l’appli de bureau [!DNL Experience Manager] à la combinaison, les problèmes de réseau deviennent plus graves en raison de l’inefficacité du protocole WebDAV.
+Si vous ajoutez le [!DNL Experience Manager] L’appli de bureau en parallèle, les problèmes de réseau deviennent plus graves en raison de l’inefficacité du protocole WebDAV.
 
 Pour illustrer ce manque d’efficacité, Adobe a testé les performances du système à l’aide de WebDAV sur OS X. Un fichier InDesign de 3,5 Mo a été ouvert, modifié et les modifications enregistrées. Les observations suivantes ont été faites :
 
@@ -122,7 +122,7 @@ Pour illustrer ce manque d’efficacité, Adobe a testé les performances du sys
 
 Lors de l’analyse du temps moyen d’enregistrement des fichiers sur WebDAV, il a été constaté que les performances augmentent considérablement lorsque la bande passante augmente jusqu’au niveau de 5-10 Mbits/s. Par conséquent, Adobe recommande que chaque utilisateur accédant simultanément au système dispose d’une vitesse de chargement d’au moins 10 Mbits/s et d’une bande passante comprise entre 5 et 10 Mbits/s.
 
-Pour plus d’informations, voir [Dépannage [!DNL Experience Manager] de l’appli de bureau](https://helpx.adobe.com/fr/experience-manager/kb/troubleshooting-companion-app.html).
+Pour plus d’informations, voir [Dépannage [!DNL Experience Manager] application de bureau](https://helpx.adobe.com/fr/experience-manager/kb/troubleshooting-companion-app.html).
 
 ## Restrictions {#limitations}
 
@@ -130,7 +130,7 @@ Lorsque vous dimensionnez une mise en œuvre, il est important de garder à l’
 
 La taille des fichiers n’est pas le seul facteur qui contribue aux problèmes de mémoire insuffisante. Cela dépend également des dimensions de l’image. Vous pouvez éviter les problèmes d’insuffisance de mémoire en fournissant une taille de tas supérieure lorsque vous démarrez AEM.
 
-En outre, vous pouvez modifier la propriété de taille de seuil du composant `com.day.cq.dam.commons.handler.StandardImageHandler` dans Configuration Manager pour utiliser un fichier temporaire intermédiaire supérieur à zéro.
+En outre, vous pouvez modifier la propriété de taille de seuil de la variable `com.day.cq.dam.commons.handler.StandardImageHandler` dans Configuration Manager pour utiliser un fichier temporaire intermédiaire supérieur à zéro.
 
 ## Nombre maximal de ressources {#maximum-number-of-assets}
 
@@ -142,8 +142,8 @@ La limite du nombre de fichiers pouvant exister dans une banque de données peut
 
 Si les rendus ne sont pas générés correctement, utilisez la bibliothèque Camera Raw. Toutefois, dans ce cas, le côté le plus long de l’image ne doit pas dépasser 65 000 pixels. En outre, l’image ne doit pas contenir plus de 512 MP (512 &amp;ast; 1024 &amp;ast; 1 024 pixels)&quot;. *La taille de la ressource est sans importance*.
 
-Il est difficile d’estimer précisément la taille du fichier TIFF pris en charge prêt à l’emploi avec un tas spécifique pour [!DNL Experience Manager], car des facteurs supplémentaires, tels que la taille des pixels, influencent le traitement. Il est possible que [!DNL Experience Manager] puisse traiter un fichier d’une taille de 255 Mo en standard, mais ne puisse pas traiter une taille de fichier de 18 Mo, car cette dernière comporte un nombre de pixels exceptionnellement supérieur à celui de la première.
+Il est difficile d’estimer avec précision la taille du fichier de TIFF pris en charge prêt à l’emploi avec un tas spécifique pour [!DNL Experience Manager] car d’autres facteurs, tels que la taille des pixels, influencent le traitement. Il est possible que [!DNL Experience Manager] peut traiter un fichier de 255 Mo en standard, mais ne peut pas traiter une taille de fichier de 18 Mo car cette dernière comprend un nombre de pixels exceptionnellement supérieur à celui de la première.
 
 ## Taille des ressources {#size-of-assets}
 
-Par défaut, [!DNL Experience Manager] vous permet de charger des ressources de tailles de fichier allant jusqu’à 2 Go. Pour charger des ressources très volumineuses dans AEM, voir [Configuration pour charger des ressources très volumineuses](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
+Par défaut, [!DNL Experience Manager] vous permet de charger des ressources d’une taille de fichier pouvant aller jusqu’à 2 Go. Pour charger des ressources très volumineuses dans AEM, voir [Configuration pour charger des ressources très volumineuses](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).

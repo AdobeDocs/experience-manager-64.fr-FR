@@ -1,8 +1,8 @@
 ---
 title: Implémentation de référence We.Retail
-seo-title: Implémentation de référence We.Retail
+seo-title: We.Retail Reference Implementation
 description: We.Retail est un aperçu technologique d’une implémentation de référence qui illustre la méthode recommandée pour mettre en place une présence en ligne avec AEM.
-seo-description: We.Retail est un aperçu technologique d’une implémentation de référence qui illustre la méthode recommandée pour mettre en place une présence en ligne avec AEM.
+seo-description: We.Retail is a technology preview of a reference implementation that illustrates the recommended way of setting up an online presence with AEM
 uuid: d8833192-b592-4812-bf9b-bd882e8ee7f0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 66c19394-9d2f-4bdd-9c17-f0ec8090f0b4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 89%
+source-wordcount: '751'
+ht-degree: 88%
 
 ---
 
@@ -57,7 +57,7 @@ We.Retail est fourni sous la forme d’un échantillon de contenu d’AEM. Pour 
 
 ### Dernière version {#latest-version}
 
-Bien que We.Retail soit distribué avec la version AEM, il se peut que des mises à jour soient apportées au contenu et à ses fonctionnalités après la publication du produit. Il est donc possible de [télécharger la dernière version à partir de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) puis de [télécharger](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) et [l’installer](/help/sites-administering/package-manager.md#installing-packages) sous la forme d’un package sur votre instance AEM.
+Bien que We.Retail soit distribué avec la version AEM, il se peut que des mises à jour soient apportées au contenu et à ses fonctionnalités après la publication du produit. Il est donc possible de [télécharger la dernière version à partir de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) puis [charger](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) et [install](/help/sites-administering/package-manager.md#installing-packages) il s’agit d’un package sur votre instance AEM.
 
 ### Premiers pas {#first-steps}
 
@@ -84,7 +84,7 @@ Le tableau suivant vous donne un aperçu des principales fonctionnalités qui so
 | Structure de site globalisée | Maîtres de langue copiés en direct dans des sites spécifiques à un pays | Non disponible |
 | Fragments de contenu | Disponible | Non disponible |
 | Fragments d’expérience | Disponible | Non disponible |
-| Mise en page réactive   | Pour toutes les pages | Uniquement les Geometrixx Media |
+| Mise en page réactive | Pour toutes les pages | Uniquement les Geometrixx Media |
 | Modèles modifiables | Pour toutes les pages | Non disponible |
 | HTL | Tous les composants | Limitée |
 | Ciblage | Pour toutes les pages | Uniquement les Geometrixx Outdoors |
@@ -113,7 +113,7 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 La dernière version peut également être [téléchargée directement](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) en tant que module à +installer.
 
-Si vous rencontrez des problèmes, enregistrez les [problèmes GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+Si vous rencontrez des problèmes, veuillez soumettre un fichier [Problèmes GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
 
 N’hésitez pas à répliquer ou à contribuer avec des [requêtes d’extraction](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls).
 

@@ -1,8 +1,8 @@
 ---
 title: Modification des paramètres de conversion de l’exportation au format PDF
-seo-title: Modification des paramètres de conversion de l’exportation au format PDF
+seo-title: Modifying the PDF Export conversion settings
 description: Découvrez comment modifier les paramètres de conversion de l’exportation au format PDF.
-seo-description: Découvrez comment modifier les paramètres de conversion de l’exportation au format PDF.
+seo-description: Learn how to modify the PDF Export conversion settings.
 uuid: 7bade010-f422-4a76-a876-705e3cf346e6
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ feature: PDF Generator
 exl-id: 29dc0b02-226d-4650-8266-2ad2c17dc6a5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '166'
 ht-degree: 100%
 
 ---

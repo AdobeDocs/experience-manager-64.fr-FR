@@ -1,8 +1,8 @@
 ---
 title: Présentation des lancements
-seo-title: Présentation des lancements
+seo-title: Launches Overview
 description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
-seo-description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
+seo-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
 uuid: ff6a2898-7a77-4315-bb1f-efa9caa5f3b2
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
 exl-id: a6dca5d7-21b5-4a7f-9e83-b0f5ea77bc88
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '812'
 ht-degree: 99%
 
 ---
 
-# Présentation des lancements{#launches}
+# Lancements Présentation{#launches}
 
 La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure.
 
@@ -28,7 +28,7 @@ Par exemple, les pages de produits saisonniers de votre boutique en ligne sont m
 * Modifications apportées aux pages source dans le cadre des tâches de maintenance normales. Ces modifications sont automatiquement dupliquées dans les pages de lancement.
 * Modifications effectuées directement sur les pages de lancement en vue du prochain trimestre.
 
-À l’approche du trimestre suivant, vous convertissez les pages de lancement pour pouvoir modifier les pages source (contenant le contenu mis à jour). Vous pouvez convertir toutes les pages ou uniquement celles que vous avez modifiées. 
+À l’approche du trimestre suivant, vous convertissez les pages de lancement pour pouvoir modifier les pages source (contenant le contenu mis à jour). Vous pouvez convertir toutes les pages ou uniquement celles que vous avez modifiées.
 
 Les lancements peuvent également être :
 
@@ -62,7 +62,7 @@ La fonction Lancements vous permet de :
 * Modifier la configuration de lancement :
 
    * Ajoutez ou supprimez des pages et/ou des branches vers/à partir du lancement.
-   * Modifiez des propriétés de lancement, comme le **titre**, la **date de lancement** et l’indicateur **Prêt pour la production**. 
+   * Modifiez des propriétés de lancement, comme le **titre**, la **date de lancement** et l’indicateur **Prêt pour la production**.
 
 * Vous pouvez convertir et modifier le contenu manuellement ou automatiquement :
 
@@ -71,7 +71,7 @@ La fonction Lancements vous permet de :
       * Convertissez votre contenu de lancement en **Cible** (pages source) lorsqu’il est prêt à être publié.
       * Modifiez le contenu des pages source (après les avoir à nouveau converties).
       * Convertissez toutes les pages ou uniquement celles qui ont été modifiées.
-   * Automatiquement, ce qui implique les étapes suivantes : 
+   * Automatiquement, ce qui implique les étapes suivantes :
 
       * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
       * L’indicateur **Prêt pour la production** : cette option n’est sélectionnable que lors de la modification d’un lancement.
@@ -82,8 +82,8 @@ La fonction Lancements vous permet de :
 
 * Mettez à jour vos pages source et de lancement en parallèle :
 
-   * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy). 
-   * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source. 
+   * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy).
+   * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source.
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -102,9 +102,9 @@ La fonction Lancements vous permet de :
 >
 >La création et la modification de lancements exigent des droits d’accès à `/content/launches`, comme avec le groupe par défaut `content-authors`.
 >
->Si vous rencontrez des difficultés, contactez votre administrateur système. 
+>Si vous rencontrez des difficultés, contactez votre administrateur système.
 
-### Console de lancements {#the-launches-console}
+### Console Lancements {#the-launches-console}
 
 La console Lancements fournit un aperçu de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
 

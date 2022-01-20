@@ -1,8 +1,8 @@
 ---
 title: Correspondence Management | Gestion des données utilisateur
-seo-title: Correspondence Management | Gestion des données utilisateur
+seo-title: Correspondence Management | Handling user data
 description: AEM Forms Correspondence Management vous permet de créer, gérer et rationaliser des correspondances client sécurisées et personnalisées. Découvrez comment configurer le stockage des données pour les brouillons et les lettres envoyées dans AEM référentiel, accéder aux données stockées et supprimer les données stockées.
-seo-description: AEM Forms Correspondence Management vous permet de créer, gérer et rationaliser des correspondances client sécurisées et personnalisées. Découvrez comment configurer le stockage des données pour les brouillons et les lettres envoyées dans AEM référentiel, accéder aux données stockées et supprimer les données stockées.
+seo-description: AEM Forms Correspondence Management enables you to create, manage, and streamline secure and personalized customer correspondences. Learn how to configure storing data for draft and submitted letters in AEM repository, access stored data, and delete stored data.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ role: Admin
 exl-id: 4a6b3403-2941-4098-bb30-769281adedc2
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 82%
+source-wordcount: '572'
+ht-degree: 84%
 
 ---
 
@@ -58,7 +58,7 @@ Selon la persistance du stockage de données configuré pour votre déploiement 
 * `[node-id]` correspond à l’ID attribué au dossier contenant la lettre
 * `[letter-instance-name]` correspond au nom spécifié lors de l’enregistrement ou de l’envoi d’une lettre
 
-Sous le noeud [letter-instance-name] , la structure de noeud suivante est créée et les données de chaque instance de lettre sont stockées dans le référentiel AEM :
+Sous , [letter-instance-name] , la structure de noeud suivante est créée et les données de chaque instance de lettre sont stockées dans le référentiel AEM :
 
 | Nœud | Description |
 |---|---|

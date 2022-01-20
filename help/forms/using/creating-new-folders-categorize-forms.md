@@ -1,8 +1,8 @@
 ---
 title: Création de dossiers pour classer les formulaires
-seo-title: Création de dossiers pour classer les formulaires
+seo-title: Create new folders to categorize forms
 description: Utilisez des dossiers pour organiser vos modèles de formulaire, vos fichiers PDF, vos ressources et vos formulaires adaptatifs.
-seo-description: Utilisez des dossiers pour organiser vos modèles de formulaire, vos fichiers PDF, vos ressources et vos formulaires adaptatifs.
+seo-description: Use folders to organize your form templates, PDFs, resources, and adaptive forms.
 uuid: 63fcb807-c9cf-49ae-ad69-6b1187543470
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ role: Admin
 exl-id: 6c989701-10c7-466e-b3e5-008a6d377574
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 94%
+source-wordcount: '393'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Vous pouvez créer un dossier dans AEM Forms à l’aide de l’une des méthode
 
 1. Connectez-vous à l’interface utilisateur d’AEM Forms à l’adresse `https://<server>:<port>/aem/forms.html`.
 1. Accédez à l’emplacement où vous souhaitez créer un dossier.
-1. Cliquez sur l’icône ![aem6forms_add](assets/aem6forms_add.png) dans la barre d’outils, puis sélectionnez **[!UICONTROL Créer un dossier]**.
+1. Cliquez sur le bouton ![aem6forms_add](assets/aem6forms_add.png) dans la barre d’outils, puis sélectionnez **[!UICONTROL Créer un dossier]**.
 
 1. Saisissez les informations suivantes :
 
@@ -53,6 +53,6 @@ Vous pouvez créer un dossier dans AEM Forms à l’aide de l’une des méthode
 ### Modification du titre d’un dossier {#edit-the-folder-title-br}
 
 1. Sélectionnez le dossier dont vous souhaitez modifier le titre.
-1. Cliquez sur l’icône de modification ![aem6forms_edit](assets/aem6forms_edit.png) dans la barre d’outils.
+1. Cliquez sur Modifier . ![aem6forms_edit](assets/aem6forms_edit.png) dans la barre d’outils.
 1. Entrez le nouveau titre. Le champ de texte est prérenseigné avec la valeur actuelle du titre du dossier. Vous pouvez remplacer cette valeur.
 1. Cliquez sur **[!UICONTROL Envoyer].**

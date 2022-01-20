@@ -1,8 +1,8 @@
 ---
 title: AEM Foundation et référentiel
-seo-title: AEM Foundation et référentiel
+seo-title: AEM Foundation & Repository
 description: Notes de mise à jour spécifiques à la plateforme et au référentiel d’Adobe Experience Manager 6.3.
-seo-description: Notes de mise à jour spécifiques à la plateforme et au référentiel d’Adobe Experience Manager 6.3.
+seo-description: Release notes specific to Adobe Experience Manager 6.3 AEM Platform and Repository.
 uuid: 147b38d0-cf87-467c-a52d-3399d4af7e6e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,14 +12,14 @@ discoiquuid: e5dd9d0d-6d67-4430-aeb3-2be91356f624
 exl-id: 6f131247-d35e-4298-958f-35b94ff08c58
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '719'
 ht-degree: 81%
 
 ---
 
 # AEM Foundation et référentiel {#aem-foundation-repository}
 
-## Liste des modifications  {#list-of-changes}
+## Liste des modifications {#list-of-changes}
 
 ### Référentiel {#repository}
 
@@ -35,14 +35,13 @@ ht-degree: 81%
    * Le nettoyage des révisions en continu pour MongoMK remplace la maintenance de nettoyage planifiée.
 
 * Efficacité accrue du nettoyage des·révisions sur les magasins de nœuds de documents
-* Voir [Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) et [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) pour un aperçu complet des problèmes résolus.
+* Veuillez consulter [Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) et [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) pour une vue d’ensemble complète des problèmes résolus.
 
 >[!CAUTION]
 >
 >* La nouvelle version d’Oak Segment Tar présente depuis AEM 6.3 nécessite une migration de référentiel. Cette étape est obligatoire si vous effectuez une mise à niveau à partir d’une ancienne version de TarMK ou si vous souhaitez remplacer le nouveau Segment Tar par un autre type de persistance. Pour en savoir plus sur les avantages du nouveau Segment Tar, voir [FAQ sur la migration vers Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 
 >
-
 
 
 ### Recherche et indexation {#search-amp-indexing}
@@ -71,10 +70,9 @@ ht-degree: 81%
 
 >[!CAUTION]
 >
->* Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique. AEM 6.4 inclut l’interface utilisateur classique, et les clients effectuant une mise à niveau à partir de versions antérieures peuvent continuer à l’utiliser en l’état. Notez que l’interface utilisateur classique reste entièrement prise en charge tout en étant obsolète [En savoir plus](/help/sites-deploying/ui-recommendations.md).
+>* Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique. AEM 6.4 inclut l’interface utilisateur classique, et les clients effectuant une mise à niveau à partir de versions antérieures peuvent continuer à l’utiliser en l’état. Notez que l’interface utilisateur classique reste entièrement prise en charge tout en étant obsolète. [En savoir plus](/help/sites-deploying/ui-recommendations.md).
 
 >
-
 
 
 ### Distribution de contenu {#content-distribution}
@@ -113,9 +111,9 @@ ht-degree: 81%
 * Évaluation de la complexité de la mise à niveau : le nouvel outil de détection des motifs évalue la complexité de vos mises à niveau avant que vous ne les effectuiez.
 * Mises à niveau possibles : l’introduction de la surface d’API et de la classification du contenu vous permet de suivre facilement les meilleures pratiques pour une mise à niveau efficace et transparente vers la prochaine version tout au long du cycle de développement.
 * Restructuration des référentiels : Une restructuration significative (principalement /etc) pour faciliter les mises à niveau et promouvoir les bonnes pratiques de mise en oeuvre. [En savoir plus.](/help/sites-deploying/repository-restructuring.md)
-* Pour plus d’informations sur ces fonctionnalités, voir la [documentation sur la mise à niveau](/help/sites-deploying/upgrade.md) .
+* Veuillez consulter la [Documentation de mise à niveau](/help/sites-deploying/upgrade.md) pour plus d’informations sur ces fonctionnalités.
 
-### Cloud Services {#cloud-services}
+### Services cloud {#cloud-services}
 
 * De nombreux Cloud Services peuvent désormais être configurés via l’interface utilisateur tactile ; le reste peut être configuré sous la carte Cloud Services hérités .
 * Les dossiers Sites et Ressources peuvent être configurés avec des Cloud Services chargés selon le contexte.

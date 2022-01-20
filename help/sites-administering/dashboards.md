@@ -1,8 +1,8 @@
 ---
 title: Tableaux de bord
-seo-title: Tableaux de bord
+seo-title: Dashboards
 description: Apprenez à créer, configurer et développer de nouveaux tableaux de bord AEM.
-seo-description: Apprenez à créer, configurer et développer de nouveaux tableaux de bord AEM.
+seo-description: Learn how to create, configure and develop new AEM dashboards.
 uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: e1f0e210-2c63-4a5f-9e69-4e73624a4304
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '835'
 ht-degree: 71%
 
 ---
@@ -59,7 +59,7 @@ Vous pouvez, si vous le souhaitez, disposer de plusieurs tableaux de bord afin d
 
 1. Entrez le **Nom** de votre nouveau tableau de bord.
 
-### Suppression d’un tableau de bord  {#removing-a-dashboard}
+### Suppression d’un tableau de bord {#removing-a-dashboard}
 
 1. Dans la section **Outils**, cliquez sur **Console de configuration**.
 
@@ -70,13 +70,13 @@ Vous pouvez, si vous le souhaitez, disposer de plusieurs tableaux de bord afin d
 
 1. Cliquez sur **Oui** pour confirmer.
 
-## Composants du tableau de bord  {#dashboard-components}
+## Composants du tableau de bord {#dashboard-components}
 
 ### Présentation {#overview}
 
 Les composants de tableau de bord ne sont rien de plus que des [composants AEM](/help/sites-developing/developing-components-samples.md) standard. Cette section décrit les composants de génération de rapports fournis avec AEM.
 
-### Composants de génération de rapports sur les analyses Web  {#web-analytics-reporting-components}
+### Composants de génération de rapports sur les analyses web {#web-analytics-reporting-components}
 
 AEM est fourni avec un ensemble de composants qui effectuent le rendu de plusieurs mesures de vos données [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Ces composants sont répertoriés dans le Sidekick, sous la section **Tableau de bord**.
 
@@ -93,11 +93,11 @@ Les composants de génération de rapports sont initialisés avec une configurat
 
 L’onglet **De base** vous donne accès aux entrées de configuration suivantes :
 
-**** TitreTitre affiché dans le tableau de bord.
+**Titre** Titre affiché dans le tableau de bord.
 
-**** Type de requêteMéthode de demande des données.
+**Type de requête** Méthode de demande des données.
 
-**Configuration de SiteCatalyst (facultatif)** Configuration que vous souhaitez utiliser pour vous connecter à SiteCatalyst. En l’absence de configuration, on suppose qu’elle est configurée sur la page Tableau de bord (via les propriétés de page).
+**Configuration du SiteCatalyst (facultatif)** Configuration que vous souhaitez utiliser pour vous connecter à SiteCatalyst. En l’absence de configuration, on suppose qu’elle est configurée sur la page Tableau de bord (via les propriétés de page).
 
 **Identifiant de suite de rapports (facultatif)** Suite de rapports de SiteCatalyst que vous souhaitez utiliser pour générer le graphique.
 
@@ -109,39 +109,39 @@ Pour pouvoir afficher des statistiques web, vous devez définir la plage de date
 >
 >La définition d’une plage de dates étendue a pour effet de diminuer la réactivité du tableau de bord.
 
-**Date** FromAbsolute ou date relative à laquelle les données sont récupérées.
+**Date de début** Date absolue ou relative à partir de laquelle les données sont récupérées.
 
-**Date** àDate absolue ou date relative à laquelle les données sont récupérées.
+**Date jusqu’à** Date absolue ou relative à laquelle les données sont récupérées.
 
 Chaque composant définit également des paramètres spécifiques.
 
-#### Rapport d’heures supplémentaires  {#overtime-report}
+#### Rapport d’heures supplémentaires {#overtime-report}
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
-**Date** GranularitéUnité de temps de l’axe X (par exemple, jour, heure).
+**Granularité des dates** Unité de temps de l’axe X (par ex. jour, heure).
 
-**** Mesures : liste des événements à afficher.
+**Mesures** Liste des événements que vous souhaitez afficher.
 
-**** Éléments : liste des éléments qui ventilent les données de mesures dans le graphique.
+**Éléments** Liste des éléments qui ventilent les données de mesure dans le graphique.
 
 #### Rapport de liste avec classement {#ranked-list-report}
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-**** Éléments : élément qui ventile les données de mesures dans le graphique.
+**Éléments** Elément qui ventile les données de mesures dans le graphique.
 
-**** Mesures : événement que vous souhaitez afficher.
+**Mesures** L’événement que vous souhaitez afficher.
 
-**Non. of top items** Nombre d’éléments affichés par le rapport.
+**Non. des principaux éléments** Nombre d’éléments affichés par le rapport.
 
 #### Rapport avec classement {#ranked-report}
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-**** Mesures : événement que vous souhaitez afficher.
+**Mesures** L’événement que vous souhaitez afficher.
 
-**** Éléments : élément qui ventile les données de mesures dans le graphique.
+**Éléments** Elément qui ventile les données de mesures dans le graphique.
 
 #### Rapport de section du site supérieur {#top-site-section-report}
 
@@ -155,11 +155,11 @@ Ce composant affiche un graphique qui présente la section la plus visitée d’
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
-**Date** GranularitéUnité de temps de l’axe X (par exemple, jour, heure).
+**Granularité des dates** Unité de temps de l’axe X (par ex. jour, heure).
 
-**** Mesures : événement que vous souhaitez afficher.
+**Mesures** L’événement que vous souhaitez afficher.
 
-**** Éléments : élément qui ventile les données de mesures dans le graphique.
+**Éléments** Elément qui ventile les données de mesures dans le graphique.
 
 ## Extension du tableau de bord {#extending-dashboard}
 
@@ -167,7 +167,7 @@ Ce composant affiche un graphique qui présente la section la plus visitée d’
 
 Les tableaux de bord sont des pages normales (`cq:Page`). N’importe quel composant peut donc être utilisé pour les assembler.
 
-Il existe un groupe de composants par défaut `Dashboard` contenant les composants de création de rapports d’analyse activés par défaut sur le modèle.
+Il existe un groupe de composants par défaut. `Dashboard` contenant les composants de reporting analytics qui sont activés par défaut sur le modèle.
 
 ### Création d’un modèle de tableau de bord {#creating-a-dashboard-template}
 
@@ -179,13 +179,13 @@ Les modèles de tableau de bord sont créés comme les autres modèles de page, 
 >
 >Les modèles de tableau de bord sont partagés entre les utilisateurs.
 
-### Développement d’un composant Tableau de bord  {#developing-a-dashboard-component}
+### Développement d’un composant Tableau de bord {#developing-a-dashboard-component}
 
 Le développement d’un composant Tableau de bord consiste à créer un composant AEM ordinaire. Cette section illustre un composant qui affiche les 10 principaux contributeurs.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
-Les principaux composants de création sont stockés dans le référentiel à l’emplacement `/apps/geometrixx-outdoors/components/reporting` et se composent de :
+Les principaux composants de création sont stockés dans le référentiel à l’adresse `/apps/geometrixx-outdoors/components/reporting` et est composé de :
 
 1. Un fichier `jsp` qui lit les données jcr et définit le pseudo-élément `html`.
 
@@ -242,7 +242,7 @@ $.ajax({
 });  
 ```
 
-`JSP` comprend à la fois `global.jsp` et `clientlib`.
+Le `JSP` inclut les deux `global.jsp` et `clientlib`.
 
 #### top_authors.jsp {#top-authors-jsp}
 

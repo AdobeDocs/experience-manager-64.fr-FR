@@ -26,7 +26,7 @@ L’article fournit des conseils et des pratiques recommandées de sécurisation
 Cet article décrit des techniques de renforcement à appliquer au cours des étapes suivantes, lors du cycle de vie de l’installation et de la configuration :
 
 * **Préinstallation :** Utilisez ces techniques avant d’installer AEM Forms sur JEE.
-* **Installation :** utilisez ces techniques pendant le processus d’installation d’AEM Forms on JEE.
+* **Installation :** Utilisez ces techniques pendant le processus d’installation d’AEM Forms on JEE.
 * **Post-installation :** Utilisez ces techniques après l’installation, puis régulièrement par la suite.
 
 AEM Forms sur JEE est hautement personnalisable et compatible avec de nombreux environnements. Il est possible que certains des conseils présentés ici ne soient pas directement applicables à votre entreprise.
@@ -70,13 +70,13 @@ Le tableau suivant décrit des processus classiques qui permettent de réduire l
    <td><p>Utilisez les critères suivants pour choisir une solution de pare-feu :</p> 
     <ul> 
      <li><p>Implémentez des pare-feu qui prennent en charge les serveurs proxy et/ou la <em>vérification avec état</em> plutôt que de simples solutions de filtrage des paquets.</p> </li> 
-     <li><p>Utilisez un pare-feu qui prend en charge un <em>refus de tous les services, à l’exception des paradigmes de sécurité explicitement autorisés</em>.</p> </li> 
+     <li><p>Utilisez un pare-feu qui prend en charge une <em>refuser tous les services sauf ceux explicitement autorisés</em> paradigmes de sécurité.</p> </li> 
      <li><p>Implémentez une solution de pare-feu à double hébergement ou à hébergement multiple. Cette architecture propose le meilleur niveau de sécurité et contribue à empêcher les utilisateurs non autorisés de contourner le pare-feu.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p>Ports de base de données</p> </td> 
-   <td><p>N’utilisez pas les ports d’écoute par défaut pour les bases de données (MySQL - 3306, Oracle - 1521, MS SQL - 1433). Pour plus de détails sur la redéfinition des ports de base de données, reportez-vous à la documentation de votre base de données.</p> <p>L’utilisation d’un port de base de données différent affecte la configuration globale d’AEM Forms sur JEE. Si vous redéfinissez les ports par défaut, vous devez modifier en conséquence la configuration et, notamment, les sources de données d’AEM Forms sur JEE.</p> <p>Pour plus d’informations sur la configuration des sources de données dans AEM Forms on JEE, voir Installation et mise à niveau d’AEM Forms on JEE ou Mise à niveau vers AEM Forms on JEE pour votre serveur d’applications à l’adresse <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">Guide de l’utilisateur d’AEM Forms</a>.</p> </td> 
+   <td><p>N’utilisez pas les ports d’écoute par défaut pour les bases de données (MySQL - 3306, Oracle - 1521, MS SQL - 1433). Pour plus de détails sur la redéfinition des ports de base de données, reportez-vous à la documentation de votre base de données.</p> <p>L’utilisation d’un port de base de données différent affecte la configuration globale d’AEM Forms sur JEE. Si vous redéfinissez les ports par défaut, vous devez modifier en conséquence la configuration et, notamment, les sources de données d’AEM Forms sur JEE.</p> <p>Pour plus d’informations sur la configuration des sources de données dans AEM Forms on JEE, voir Installation et mise à niveau d’AEM Forms on JEE ou Mise à niveau vers AEM Forms on JEE pour votre serveur d’applications à l’adresse <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">Guide d’utilisation d’AEM Forms</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -140,11 +140,11 @@ Cette section décrit des techniques que vous pouvez utiliser pendant le process
   </tr> 
   <tr> 
    <td><p>Fichier de stratégie interdomaines</p> </td> 
-   <td><p>La présence d’un fichier <code>crossdomain.xml</code> sur le serveur peut immédiatement affaiblir ce serveur. Il est recommandé de rendre la liste des domaines aussi restrictive que possible. Ne placez pas en production le fichier <code>crossdomain.xml</code> utilisé pendant la phase de développement lors de l’utilisation des guides <em>(obsolète)</em>. Dans le cas d’un guide qui utilise les services Web, si le service figure sur le même serveur ayant servi le guide, aucun fichier <code>crossdomain.xml</code> n’est nécessaire. En revanche, si le service figure sur un autre serveur ou si des grappes sont impliquées, la présence d’un fichier <code>crossdomain.xml</code> est nécessaire. Voir <a href="https://kb2.adobe.com/cps/142/tn_14213.html">https://kb2.adobe.com/cps/142/tn_14213.html</a> pour plus d’informations sur le fichier crossdomain.xml.</p> </td> 
+   <td><p>La présence d’un fichier <code>crossdomain.xml</code> sur le serveur peut immédiatement affaiblir ce serveur. Il est recommandé de rendre la liste des domaines aussi restrictive que possible. Ne placez pas en production le fichier <code>crossdomain.xml</code> utilisé pendant la phase de développement lors de l’utilisation des guides <em>(obsolète)</em>. Dans le cas d’un guide qui utilise les services Web, si le service figure sur le même serveur ayant servi le guide, aucun fichier <code>crossdomain.xml</code> n’est nécessaire. En revanche, si le service figure sur un autre serveur ou si des grappes sont impliquées, la présence d’un fichier <code>crossdomain.xml</code> est nécessaire. Voir <a href="https://kb2.adobe.com/cps/142/tn_14213.html">https://kb2.adobe.com/cps/142/tn_14213.html</a>, pour plus d’informations sur le fichier crossdomain.xml.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Paramètres de sécurité du système d’exploitation</p> </td> 
-   <td><p>Si vous devez utiliser un chiffrement XML 192 bits ou 256 bits sur les plateformes Solaris, veillez à installer <code>pkcs11_softtoken_extra.so</code> au lieu de <code>pkcs11_softtoken.so</code>.</p> </td> 
+   <td><p>Si vous devez utiliser un chiffrement XML 192 bits ou 256 bits sur les plateformes Solaris, assurez-vous que vous installez . <code>pkcs11_softtoken_extra.so</code> au lieu de <code>pkcs11_softtoken.so</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -195,7 +195,7 @@ Pour exécuter le serveur d’applications sur lequel est déployé AEM Forms su
 
 Configuration Manager a utilisé une servlet déployée sur votre serveur d’applications pour amorcer la base de données AEM Forms sur JEE. Configuration Manager accédant à cette servlet avant la fin de la configuration, son accès n’a pas été sécurisé pour les utilisateurs autorisés et il convient de le désactiver après avoir utilisé Configuration Manager pour configurer AEM Forms sur JEE.
 
-1. Décompressez le fichier adobe-livecycle-[appserver].ear.
+1. Décompressez le fichier adobe-livecycle-[appserver]fichier .ear.
 1. Ouvrez le fichier META-INF/application.xml.
 1. Recherchez la section adobe-bootstrapper.war :
 
@@ -282,9 +282,9 @@ Lorsqu’AEM Forms sur JEE est installé, un compte utilisateur par défaut uniq
 
 En outre, il est recommandé de modifier le mot de passe par défaut de l’administrateur CRX en procédant comme suit :
 
-1. Connectez-vous à `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` à l’aide du nom d’utilisateur/mot de passe par défaut.
+1. Se connecter `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` à l’aide du nom d’utilisateur/mot de passe par défaut.
 1. Saisissez Administrator dans le champ de recherche, puis cliquez sur **Aller**.
-1. Sélectionnez **Administrator** dans le résultat de la recherche, puis cliquez sur l’icône **Modifier** en bas à droite de l’interface utilisateur.
+1. Sélectionner **Administrateur** dans le résultat de la recherche, puis cliquez sur l’icône **Modifier** en bas à droite de l’interface utilisateur.
 1. Indiquez le nouveau mot de passe dans le champ **Nouveau mot de passe** et l’ancien mot de passe dans le champ **Votre mot de passe**.
 1. Cliquez sur l’icône Enregistrer en bas à droite de l’interface utilisateur.
 
@@ -299,7 +299,7 @@ La génération Web Service Definition Language (WSDL) doit être activée u
    ```
 
 1. Cliquez sur **Paramètres > Paramètres de Core System > Configurations de base**.
-1. Désélectionnez **Activer WSDL** et cliquez sur **OK**.
+1. Désélectionner **Activer WSDL** et cliquez sur **OK**.
 
 ### Sécurité du serveur d’applications {#application-server-security}
 
@@ -319,7 +319,7 @@ Le tableau suivant décrit certaines techniques qui permettent de sécuriser vot
   </tr> 
   <tr> 
    <td><p>Paramétrage des cookies pour le serveur d’applications</p> </td> 
-   <td><p>Les cookies des applications sont contrôlés par le serveur d’applications. Lorsqu’il déploie l’application, l’administrateur du serveur d’applications peut spécifier des préférences concernant les cookies, soit à l’échelle du serveur, soit pour des applications spécifiques. Par défaut, les paramètres définis à l’échelle du serveur sont prioritaires.</p> <p>Tous les cookies de session générés par votre serveur d’applications devraient inclure l’attribut <code>HttpOnly</code>. Par exemple, lorsque vous utilisez JBoss Application Server, vous pouvez modifier l’élément SessionCookie en <code>httpOnly="true"</code> dans le fichier <code>WEB-INF/web.xml</code>.</p> <p>Vous pouvez limiter l’envoi de cookies au moyen de HTTPS uniquement. En conséquence, les cookies ne sont pas envoyés non codés sur HTTP. Il est conseillé aux administrateurs de serveurs d’applications d’autoriser les cookies sûrs à l’échelle du serveur. Par exemple, si vous utilisez JBoss Application Server, vous pouvez redéfinir l’élément connecteur sur <code>secure=true</code> dans le fichier <code>server.xml</code>.</p> <p>Reportez-vous à la documentation de votre serveur d’applications pour plus d’informations sur les paramètres des cookies.</p> </td> 
+   <td><p>Les cookies des applications sont contrôlés par le serveur d’applications. Lorsqu’il déploie l’application, l’administrateur du serveur d’applications peut spécifier des préférences concernant les cookies, soit à l’échelle du serveur, soit pour des applications spécifiques. Par défaut, les paramètres définis à l’échelle du serveur sont prioritaires.</p> <p>Tous les cookies de session générés par votre serveur d’applications devraient inclure l’attribut <code>HttpOnly</code>. Par exemple, lorsque vous utilisez JBoss Application Server, vous pouvez modifier l’élément SessionCookie en <code>httpOnly="true"</code> dans le <code>WEB-INF/web.xml</code> fichier .</p> <p>Vous pouvez limiter l’envoi de cookies au moyen de HTTPS uniquement. En conséquence, les cookies ne sont pas envoyés non codés sur HTTP. Il est conseillé aux administrateurs de serveurs d’applications d’autoriser les cookies sûrs à l’échelle du serveur. Par exemple, si vous utilisez JBoss Application Server, vous pouvez redéfinir l’élément connecteur sur <code>secure=true</code> dans le fichier <code>server.xml</code>.</p> <p>Reportez-vous à la documentation de votre serveur d’applications pour plus d’informations sur les paramètres des cookies.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Exploration des répertoires</p> </td> 
@@ -336,7 +336,7 @@ Sur Oracle, le compte de base de données que vous utilisez nécessite uniquemen
 
 #### Configuration de la sécurité intégrée dans SQL Server sur Windows pour JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
-1. Modifiez [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} pour ajouter `integratedSecurity=true` à l’URL de connexion, comme indiqué dans l’exemple suivant :
+1. Modifier [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} à ajouter `integratedSecurity=true` à l’URL de connexion, comme indiqué dans l’exemple suivant :
 
    ```as3
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
@@ -355,9 +355,9 @@ Sur Oracle, le compte de base de données que vous utilisez nécessite uniquemen
    ```
 
 1. Sous Change Center, cliquez sur **Lock &amp; Edit**.
-1. Sous Domain Structure, cliquez sur *[base_domain]* > **Services** > **JDBC** > **Data Sources** et, dans le volet de droite, cliquez sur **IDP_DS**.
+1. Sous Domain Structure, cliquez sur *[base_domain]* > **Services** > **JDBC** > **Sources de données** et, dans le volet de droite, cliquez sur **IDP_DS**.
 1. Dans l’écran suivant, dans l’onglet **Configuration**, cliquez sur l’onglet **Connection Pool** et, dans la zone **Properties**, saisissez `integratedSecurity=true`.
-1. Sous Domain Structure, cliquez sur **[base_domain]** > **Services** > **JDBC** > **Data Sources** et, dans le volet de droite, cliquez sur **RM_DS**.
+1. Sous Domain Structure, cliquez sur **[base_domain]** > **Services** > **JDBC** > **Sources de données** et, dans le volet de droite, cliquez sur **RM_DS**.
 1. Dans l’écran suivant, dans l’onglet **Configuration**, cliquez sur l’onglet **Connection Pool** et, dans la zone **Properties**, saisissez `integratedSecurity=true`.
 1. Ajoutez le fichier sqljdbc_auth.dll au chemin d’accès du système Windows sur l’ordinateur exécutant le serveur d’applications. Le fichier sqljdbc_auth.dll se trouve avec les fichiers d’installation du pilote Microsoft SQL JDBC 6.2.1.0.
 1. Faites passer la sécurité de SQL Server du mode **Mixte** au mode **Authentification Windows**.
@@ -369,11 +369,11 @@ Sur WebSphere, vous pouvez configurer la sécurité intégrée uniquement lorsqu
 1. Connectez-vous à WebSphere Administrative Console.
 1. Dans l’arborescence de navigation, cliquez sur **Resources** > **JDBC** > **Data Sources**, puis, dans le volet de droite, cliquez sur **IDP_DS**.
 1. Dans le volet de droite, sous Additional Properties, cliquez sur **Custom Properties**, puis sur **New**.
-1. Dans la zone **Name**, saisissez `integratedSecurity` et, dans la zone **Value**, saisissez `true`.
+1. Dans le **Nom** box, type `integratedSecurity` et dans la variable **Valeur** box, type `true`.
 1. Dans l’arborescence de navigation, cliquez sur **Resources** > **JDBC** > **Data Sources**, puis, dans le volet de droite, cliquez sur **RM_DS**.
 1. Dans le volet de droite, sous Additional Properties, cliquez sur **Custom Properties**, puis sur **New**.
-1. Dans la zone **Name**, saisissez `integratedSecurity` et, dans la zone **Value**, saisissez `true`.
-1. Sur l’ordinateur sur lequel WebSphere est installé, ajoutez le fichier sqljdbc_auth.dll au chemin du système Windows (C:\Windows). Le fichier sqljdbc_auth.dll se trouve au même emplacement que l’installation du pilote Microsoft SQL JDBC 1.2 (la valeur par défaut est *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
+1. Dans le **Nom** box, type `integratedSecurity` et dans la variable **Valeur** box, type `true`.
+1. Sur l’ordinateur sur lequel WebSphere est installé, ajoutez le fichier sqljdbc_auth.dll au chemin du système Windows (C:\Windows). Le fichier sqljdbc_auth.dll se trouve au même emplacement que le programme d’installation du pilote Microsoft SQL JDBC 1.2 (la valeur par défaut est *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
 1. Sélectionnez **Démarrer** > **Panneau de configuration** > **Services**, cliquez avec le bouton droit de la souris sur le service Windows pour WebSphere (IBM WebSphere Application Server &lt;version> - &lt;nœud>), puis sélectionnez **Propriétés**.
 1. Dans la boîte de dialogue Propriétés, cliquez sur l’onglet **Ouvrir une session**.
 1. Sélectionnez **Ce compte** et indiquez les informations requises pour définir le compte de connexion à utiliser.
@@ -389,7 +389,7 @@ Pour une sécurité accrue, prévoyez d’utiliser des outils spécifiques au re
 * clé de chiffrement de PIN HSM Trust Store ;
 * hachages des mots de passe des utilisateurs locaux.
 
-Pour plus d’informations sur les outils spécifiques aux fournisseurs, voir [&quot;Informations sur la sécurité de la base&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
+Pour plus d’informations sur les outils spécifiques aux fournisseurs, voir [&quot;Informations sur la sécurité des bases de données&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### Sécurité LDAP {#ldap-security}
 
@@ -643,10 +643,10 @@ Les caractéristiques suivantes sont communes aux cas de CSRF :
 
 AEM Forms on JEE utilise la fonction de filtrage des référents pour bloquer les attaques CSRF. Les termes suivants sont utilisés dans cette section pour décrire le mécanisme de filtrage des référents :
 
-* **Référent autorisé :** un référent est l’adresse de la page source qui envoie une requête au serveur. Pour les pages ou les formulaires JSP, les référents sont généralement la page précédente dans l’historique de navigation. Le référent des images est généralement les pages sur lesquelles les images sont affichées. Vous pouvez identifier les référents autorisés à accéder à vos ressources de serveur en les ajoutant à la liste de référents autorisés.
-* **Exceptions aux référents autorisés :** vous pouvez restreindre la portée de l’accès d’un référent particulier dans votre liste de référents autorisés. Pour appliquer cette restriction, vous pouvez ajouter des chemins d’accès individuels de ce référent à la liste des exceptions aux référents autorisés. Les requêtes provenant des chemins d’accès de la liste des exceptions aux référents autorisés ne peuvent pas appeler de ressource sur le serveur Forms. Vous pouvez définir des exceptions aux référents autorisés pour une application spécifique et utiliser également une liste globale d’exceptions qui s’appliquent à toutes les applications.
-* **URI autorisés :** il s’agit d’une liste de ressources à traiter sans vérification de l’en-tête du référent. Par exemple, les ressources telles que les pages d’aide, qui n’entraînent pas de changements d’état sur le serveur, peuvent être ajoutées à cette liste. Les ressources de la liste des URI autorisés ne sont jamais bloquées par le filtre de référent, quel que soit le référent.
-* **Référent nul :** une requête de serveur qui n’est pas associée à une page web parente ou qui ne provient pas de cette dernière est considérée comme une requête d’un référent nul. Par exemple, lorsque vous ouvrez une nouvelle fenêtre de navigateur, saisissez une adresse et appuyez sur Entrée, le référent envoyé au serveur est nul. Une application de bureau (.NET ou SWING) qui émet une requête HTTP à un serveur web envoie également un référent null au serveur.
+* **Référent autorisé :** Un référent est l’adresse de la page source qui envoie une requête au serveur. Pour les pages ou les formulaires JSP, les référents sont généralement la page précédente dans l’historique de navigation. Le référent des images est généralement les pages sur lesquelles les images sont affichées. Vous pouvez identifier les référents autorisés à accéder à vos ressources de serveur en les ajoutant à la liste de référents autorisés.
+* **Exceptions aux référents autorisés :** Vous pouvez restreindre la portée de l’accès d’un référent particulier dans votre liste de référents autorisés. Pour appliquer cette restriction, vous pouvez ajouter des chemins d’accès individuels de ce référent à la liste des exceptions aux référents autorisés. Les requêtes provenant des chemins d’accès de la liste des exceptions aux référents autorisés ne peuvent pas appeler de ressource sur le serveur Forms. Vous pouvez définir des exceptions aux référents autorisés pour une application spécifique et utiliser également une liste globale d’exceptions qui s’appliquent à toutes les applications.
+* **URI autorisés :** Il s’agit d’une liste des ressources à traiter sans vérification de l’en-tête du référent. Par exemple, les ressources telles que les pages d’aide, qui n’entraînent pas de changements d’état sur le serveur, peuvent être ajoutées à cette liste. Les ressources de la liste des URI autorisés ne sont jamais bloquées par le filtre de référent, quel que soit le référent.
+* **Référent nul :** Une requête de serveur qui n’est pas associée à une page web parente ou qui ne provient pas de cette dernière est considérée comme une requête d’un référent de valeur NULL. Par exemple, lorsque vous ouvrez une nouvelle fenêtre de navigateur, saisissez une adresse et appuyez sur Entrée, le référent envoyé au serveur est nul. Une application de bureau (.NET ou SWING) qui émet une requête HTTP à un serveur web envoie également un référent null au serveur.
 
 ### Filtrage des référents {#referer-filtering}
 
@@ -655,7 +655,7 @@ Le processus de filtrage des référents peut être décrit comme suit :
 1. Le serveur Forms vérifie la méthode HTTP utilisée pour l’appel :
 
    1. S’il est POST, le serveur Forms vérifie l’en-tête du référent.
-   1. S’il est GET, le serveur Forms ignore la vérification du référent, sauf si *CSRF_CHECK_GETS* est défini sur true, auquel cas il vérifie l’en-tête du référent. La variable *CSRF_CHECK_GETS* est spécifiée dans le fichier *web.xml* pour votre application.
+   1. S’il est GET, le serveur Forms ignore la vérification du référent, sauf si *CSRF_CHECK_GETS* est définie sur true, auquel cas elle vérifie l’en-tête du référent. La variable *CSRF_CHECK_GETS* est spécifiée dans le fichier *web.xml* pour votre application.
 
 1. Le serveur Forms vérifie si l’URI requis est placé sur la liste autorisée :
 
@@ -674,13 +674,13 @@ Le processus de filtrage des référents peut être décrit comme suit :
 
 ### Gestion du filtrage des référents {#managing-referer-filtering}
 
-AEM Forms on JEE fournit un filtre de référent pour spécifier les référents autorisés à accéder aux ressources de votre serveur. Par défaut, le filtre Référent ne filtre pas les requêtes qui utilisent une méthode HTTP sécurisée, par exemple, GET, sauf si *CSRF_CHECK_GETS* est défini sur true. Si le numéro de port d’une entrée de référent autorisé est défini sur 0, AEM Forms on JEE autorise toutes les requêtes de référent de cet hôte, quel que soit le numéro de port. Si aucun numéro de port n’est spécifié, seules les requêtes provenant du port par défaut 80 (HTTP) ou du port 443 (HTTPS) sont autorisées. Le filtrage des référents est désactivé si toutes les entrées de la liste de référents autorisés sont supprimées.
+AEM Forms on JEE fournit un filtre de référent pour spécifier les référents autorisés à accéder aux ressources de votre serveur. Par défaut, le filtre Référent ne filtre pas les requêtes qui utilisent une méthode HTTP sécurisée, par exemple, GET, sauf si *CSRF_CHECK_GETS* est définie sur true. Si le numéro de port d’une entrée de référent autorisé est défini sur 0, AEM Forms on JEE autorise toutes les requêtes de référent de cet hôte, quel que soit le numéro de port. Si aucun numéro de port n’est spécifié, seules les requêtes provenant du port par défaut 80 (HTTP) ou du port 443 (HTTPS) sont autorisées. Le filtrage des référents est désactivé si toutes les entrées de la liste de référents autorisés sont supprimées.
 
 Lors de la première installation de Document Services, la liste de référents autorisés est mise à jour avec l’adresse du serveur sur lequel Document Services est installé. Les entrées pour le serveur comprennent le nom du serveur, l’adresse IPv4, l’adresse IPv6 si le protocole IPv6 est activé, l’adresse de bouclage et une entrée localhost. Les noms ajoutés à la liste de référents autorisés sont renvoyés par le système d’exploitation hôte. Par exemple, un serveur dont l’adresse IP est 10.40.54.187 contiendra les entrées suivantes : `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Pour tout nom non qualifié renvoyé par le système d’exploitation hôte (noms ne disposant pas d’adresse IPv4, d’adresse IPv6 ou de nom de domaine qualifié), la liste autorisée n’est pas mise à jour. Modifiez la liste de référents autorisés en fonction de votre environnement d’entreprise. Ne déployez pas le serveur Forms dans l’environnement de production avec la liste de référents autorisés par défaut. Après avoir modifié un référent autorisé, une exception de référent ou un URI, assurez-vous de redémarrer le serveur pour que les modifications soient prises en compte.
 
 **Gestion de la liste de référents autorisés**
 
-Vous pouvez gérer la liste de référents autorisés à partir de l’interface de gestion des utilisateurs d’Administration Console. L’interface User Management offre des fonctionnalités pour créer, éditer ou supprimer la liste. Pour plus d’informations sur l’utilisation de la liste de référents autorisés, reportez-vous à la section * [Prévention des attaques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* de l’ *aide à l’administration* .
+Vous pouvez gérer la liste de référents autorisés à partir de l’interface de gestion des utilisateurs d’Administration Console. L’interface User Management offre des fonctionnalités pour créer, éditer ou supprimer la liste. Reportez-vous au * [Prévention des attaques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* de la section *Aide à l’administration* pour plus d’informations sur l’utilisation de la liste de référents autorisés.
 
 **Gestion des exceptions aux référents autorisés et des listes d’URI autorisés**
 
@@ -697,7 +697,7 @@ AEM Forms on JEE fournit des API pour gérer la liste des exceptions aux référ
 
 Pour plus d’informations sur les API, consultez la* référence de l’API d’AEM Forms on JEE* .
 
-Utilisez la liste ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** pour les exceptions aux référents autorisés au niveau global, c’est-à-dire pour définir les exceptions qui s’appliquent à toutes les applications. Cette liste contient uniquement des URI avec un chemin absolu (par exemple, `/index.html`) ou un chemin relatif (par exemple, `/sample/`). Vous pouvez également ajouter une expression régulière à la fin d’un URI relatif ; `/sample/(.)*`, par exemple.
+Utilisez la variable ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** Liste des exceptions aux référents autorisés au niveau global, c’est-à-dire pour définir des exceptions qui s’appliquent à toutes les applications. Cette liste contient uniquement des URI avec un chemin absolu (par exemple,  `/index.html`) ou un chemin relatif (par exemple,  `/sample/`). Vous pouvez également ajouter une expression régulière à la fin d’un URI relatif. Par exemple :  `/sample/(.)*`.
 
 L’ID de liste ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** est définie comme une constante dans la classe `UMConstants` de l’espace de noms `com.adobe.idp.um.api`, figurant dans `adobe-usermanager-client.jar`. Vous pouvez utiliser les API AEM Forms pour créer, modifier ou éditer cette liste. Par exemple, pour créer la liste globale des exceptions aux référents autorisés, utilisez :
 
@@ -711,21 +711,21 @@ Utilisez la liste ***CSRF_ALLOWED_REFERER_EXCEPTIONS*** pour les exceptions spé
 
 Si le filtre de référent bloque complètement l’accès au serveur Forms et que vous ne pouvez pas modifier la liste de référents autorisés, vous pouvez mettre à jour le script de démarrage du serveur et désactiver le filtrage des référents.
 
-Insérez l’argument JAVA `-Dlc.um.csrffilter.disabled=true` dans le script de démarrage et redémarrez le serveur. Assurez-vous de supprimer l’argument JAVA après avoir correctement reconfiguré la liste de référents autorisés.
+Inclure la variable `-Dlc.um.csrffilter.disabled=true` Argument JAVA dans le script de démarrage et redémarrez le serveur. Assurez-vous de supprimer l’argument JAVA après avoir correctement reconfiguré la liste de référents autorisés.
 
 **Filtrage des référents pour les fichiers WAR personnalisés**
 
-Vous avez peut-être créé des fichiers WAR personnalisés afin de travailler avec AEM Forms sur JEE pour répondre aux besoins de l’activité. Pour activer le filtrage des référents pour vos fichiers WAR personnalisés, incluez ***adobe-usermanager-client.jar*** dans le chemin de classe pour le WAR et insérez une entrée de filtre dans le fichier* web.xml* avec les paramètres suivants :
+Vous avez peut-être créé des fichiers WAR personnalisés afin de travailler avec AEM Forms sur JEE pour répondre aux besoins de l’activité. Pour activer le filtrage des référents pour vos fichiers WAR personnalisés, incluez ***adobe-usermanager-client.jar*** dans le chemin de classe de la WAR et incluez une entrée de filtre dans le fichier* web.xml* avec les paramètres suivants :
 
-**CSRF_CHECK_** GETScontrôle la vérification du référent sur les requêtes de GET. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. Incluez ce paramètre uniquement si vous souhaitez filtrer vos requêtes GET.
+**CSRF_CHECK_GETS** contrôle la vérification du référent sur les requêtes de GET. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. Incluez ce paramètre uniquement si vous souhaitez filtrer vos requêtes GET.
 
-**CSRF_ALLOWED_REFERER_** EXCEPTIONSest l’identifiant de la liste des exceptions aux référents autorisés. Le filtre de référent empêche les requêtes provenant de référents de la liste identifiés par l’identifiant de liste d’appeler toute ressource du serveur Forms.
+**CSRF_ALLOWED_REFERER_EXCEPTIONS** est l’identifiant de la liste des exceptions aux référents autorisés. Le filtre de référent empêche les requêtes provenant de référents de la liste identifiés par l’identifiant de liste d’appeler toute ressource du serveur Forms.
 
 **CSRF_ALLOWED_URIS_LIST_NAME** est l’ID de la liste des URI autorisés. Le filtre de référent ne bloque aucune requête pour les ressources de la liste identifiées par l’identifiant de liste, quelle que soit la valeur de l’en-tête de référent dans la requête.
 
-**CSRF_ALLOW_NULL_** REFERERcontrôle le comportement du filtre de référent lorsque le référent est nul ou non présent. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. N’incluez ce paramètre que si vous souhaitez autoriser les référents de valeur NULL. L’autorisation de référents nuls peut autoriser certains types d’attaques par falsification de requête inter-sites.
+**CSRF_ALLOW_NULL_REFERER** contrôle le comportement du filtre de référent lorsque le référent est nul ou n’est pas présent. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. N’incluez ce paramètre que si vous souhaitez autoriser les référents de valeur NULL. L’autorisation de référents nuls peut autoriser certains types d’attaques par falsification de requête inter-sites.
 
-**CSRF_NULL_REFERER_** EXCEPTIONSest une liste des URI pour lesquels une vérification de référent n’est pas effectuée lorsque le référent est nul. Ce paramètre est activé uniquement lorsque la variable *CSRF_ALLOW_NULL_REFERER* est définie sur false. Séparez les URI de la liste à l’aide de virgules.
+**CSRF_NULL_REFERER_EXCEPTIONS** est une liste des URI pour lesquels une vérification de référent n’est pas effectuée lorsque le référent est nul. Ce paramètre est activé uniquement lorsque la variable *CSRF_ALLOW_NULL_REFERER* est définie sur false. Séparez les URI de la liste à l’aide de virgules.
 
 Voici un exemple de l’entrée de filtre dans le fichier *web.xml* pour un ***exemple*** de dossier WAR :
 
@@ -923,7 +923,7 @@ Pour plus d’informations sur les ports WebSphere requis par AEM Forms on JEE, 
 
 ### Configuration de SSL {#configuring-ssl}
 
-En vous référant à l’architecture physique décrite dans la section [Architecture physique d’AEM Forms on JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), vous devez configurer SSL pour toutes les connexions que vous prévoyez d’utiliser. Spécifiquement, toutes les connexions SOAP doivent être établies via SSL pour empêcher que les informations d’identification des utilisateurs soient exposées sur un réseau.
+Référence à l’architecture physique décrite dans la section [Architecture physique d’AEM Forms on JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), vous devez configurer SSL pour toutes les connexions que vous prévoyez d’utiliser. Spécifiquement, toutes les connexions SOAP doivent être établies via SSL pour empêcher que les informations d’identification des utilisateurs soient exposées sur un réseau.
 
 Pour obtenir des instructions sur la manière de configurer SSL sur JBoss, WebLogic et WebSphere, voir Configuration de SSL, dans l’[aide à l’administration](https://www.adobe.com/go/learn_aemforms_admin_64).
 
@@ -939,9 +939,9 @@ Pour configurer la redirection SSL pour WebSphere et WebLogic, reportez-vous à 
 
 1. Ouvrez le fichier JBOSS_HOME/standalone/configuration/standalone.xml pour le modifier.
 
-   Après l’élément &lt;subsystem xmlns=&quot;urn:jboss:domain:web:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;> , ajoutez les détails suivants :
+   Après la &lt;subsystem xmlns=&quot;urn&lt;span id=&quot; translate=&quot;no&quot; />domain:web:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;> , ajoutez les détails suivants ::jboss:
 
-   &lt;connector name=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; scheme=&quot;https&quot; socket-binding=&quot;https&quot; enabled=&quot;true&quot; secure=&quot;true&quot; />
+   &lt;connector name=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; scheme=&quot;https&quot; socket-binding=&quot;https&quot; enabled=&quot;true&quot; secure=&quot;true&quot;/>
 
 1. Ajoutez le code suivant dans l’élément connecteur https :
 
@@ -1032,7 +1032,7 @@ Cette section présente des recommandations relatives à la configuration du ser
 
 ### Désactivation de l’exploration des répertoires {#disable_directory_browsing-2}
 
-Définissez la propriété `directoryBrowsingEnabled` du fichier ibm-web-ext.xml sur `false`.
+Définissez la variable `directoryBrowsingEnabled` dans le fichier ibm-web-ext.xml en `false`.
 
 ### Activation de la sécurité administrative de WebSphere {#enable-websphere-administrative-security}
 

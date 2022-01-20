@@ -1,8 +1,8 @@
 ---
 title: Prise en main de l’espace de travail AEM Forms
-seo-title: Prise en main de l’espace de travail AEM Forms
+seo-title: Getting started with AEM Forms workspace
 description: Initiation à la gestion de vos processus d’automatisation d’entreprise avec l’espace de travail LiveCycle AEM Forms.
-seo-description: Initiation à la gestion de vos processus d’automatisation d’entreprise avec l’espace de travail LiveCycle AEM Forms.
+seo-description: How to get started with using the LiveCycle AEM Forms workspace to manage your business automation processes.
 uuid: 35ca1a51-92c3-40d8-8de3-604be8704752
 contentOwner: robhagat
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 exl-id: 8c45f145-1729-4e5c-b391-6b1bbd50494b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '993'
 ht-degree: 82%
 
 ---
@@ -25,7 +25,7 @@ Vous pouvez utiliser l’espace de travail AEM Forms pour effectuer les tâches 
 * afficher et agir sur les tâches qui vous sont affectées ou qui sont affectées à d’autres listes Tâches auxquelles vous avez accès ;
 * effectuer le suivi de tâches qui font partie des processus que vous avez démarrés ou modifiés.
 
-## Navigation dans l’espace de travail AEM Forms  {#navigating-html-workspace}
+## Navigation dans l’espace de travail AEM Forms {#navigating-html-workspace}
 
 Les différents éléments de l’interface utilisateur de l’espace de travail AEM Forms s’affichent en fonction du processus et de la tâche sur lesquels vous travaillez. Vous pouvez afficher ou masquer les onglets Résumé, Formulaires, Détails, Historique, Pièces jointes ou Notes, ou l’ensemble des boutons décrits dans cette aide à tout moment.
 
@@ -41,17 +41,17 @@ Vous pouvez naviguer dans l’interface utilisateur de l’espace de travail AEM
 
 ## Utilisation de l’espace de travail AEM Forms avec des lecteurs d’écran {#using-html-workspace-with-screen-readers}
 
-L’espace de travail AEM Forms est une application HTML web compatible avec les lecteurs d’écran. Vous pouvez naviguer dans l’interface de l’espace de travail AEM Forms à l’aide du clavier.
+AEM Forms Workspace est une application de HTML web compatible avec les lecteurs d’écran. Vous pouvez naviguer dans l’interface de l’espace de travail AEM Forms à l’aide du clavier.
 
 Pour utiliser l’espace de travail AEM Forms avec un lecteur d’écran, tenez compte des points suivants :
 
-* L’espace de travail AEM Forms est une application HTML standard conforme à tout outil de lecteur d’écran standard. Vous n’avez pas besoin de script spécifique pour exécuter un outil de lecteur d’écran.
+* AEM Forms Workspace est une application de HTML standard conforme à tout outil de lecteur d’écran standard. Vous n’avez pas besoin de script spécifique pour exécuter un outil de lecteur d’écran.
 * Dans l’espace de travail AEM Forms, toute la navigation se fait par le biais de balises d’ancrage, qui sont facilement accessibles via des onglets.
 * Le chargement des formulaires peut prendre quelques secondes. Le lecteur d’écran ne vous informe pas de manière audible que le formulaire est en cours de chargement et que vous devez attendre.
 
-## Navigation dans l’espace de travail AEM Forms à l’aide du clavier  {#navigating-html-workspace-using-a-keyboard}
+## Navigation dans l’espace de travail AEM Forms à l’aide du clavier {#navigating-html-workspace-using-a-keyboard}
 
-Lorsque vous naviguez dans l’espace de travail AEM Forms à l’aide du clavier, la navigation est conforme aux conventions d’accessibilité HTML. Dans certaines situations, l’ordre de tabulation ne suit pas l’ordre conventionnel classique. Les conseils suivants vous aident à naviguer dans l’interface :
+Lorsque vous naviguez dans l’espace de travail AEM Forms à l’aide du clavier, la navigation est conforme aux conventions d’accessibilité du HTML. Dans certaines situations, l’ordre de tabulation ne suit pas l’ordre conventionnel classique. Les conseils suivants vous aident à naviguer dans l’interface :
 
 * Si vous n’arrivez pas à quitter les barres d’outils situées dans la partie supérieure du navigateur avec la touche Tab, appuyez sur la combinaison de touches Ctrl+Tab pour entrer dans le contenu de la fenêtre du navigateur.
 * L’aide de l’espace de travail AEM Forms s’ouvre dans une fenêtre de navigateur distincte. Après avoir consulté l’aide, le focus retourne à la fenêtre du navigateur qui contient l’espace de travail AEM Forms. Le menu Aide reste affiché lorsque le focus retourne à la fenêtre du navigateur.
@@ -69,7 +69,7 @@ Vous pouvez définir les différentes préférences de l’espace de travail AEM
 
 **Paramètres de l’interface :** définit des préférences pour l’interaction avec l’espace de travail AEM Forms. Voir [Définition des préférences d’interface utilisateur](#set-user-interface-preferences).
 
-### Définition des préférences d’interface utilisateur  {#set-user-interface-preferences}
+### Définition des préférences d’interface utilisateur {#set-user-interface-preferences}
 
 Définissez les préférences de l’interface utilisateur dans l’onglet Préférences > Paramètres de l’interface. Les préférences suivantes sont disponibles :
 

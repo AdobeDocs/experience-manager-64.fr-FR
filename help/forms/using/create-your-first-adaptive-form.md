@@ -1,17 +1,17 @@
 ---
 title: Création de votre premier formulaire adaptatif
-seo-title: Création de votre premier formulaire adaptatif
+seo-title: Create your first adaptive form
 description: 'Apprenez à créer des formulaires professionnels, interactifs et réactifs. '
-seo-description: 'Apprenez à créer des formulaires professionnels, interactifs et réactifs. '
+seo-description: Learn to create business class, interactive, and responsive forms.
 page-status-flag: de-activated
 uuid: 62f5222c-c787-46be-95fa-a701aa0e6115
 topic-tags: introduction
 discoiquuid: 4e247e70-c50a-4571-8ac1-fbbb07100262
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: f634a73a-e720-4a38-a459-6ddbe4fdc565
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '950'
 ht-degree: 85%
 
 ---
@@ -39,11 +39,11 @@ Un site Web propose une gamme de produits pour des clients divers. Les clients p
 
 Le site Web est basé sur Adobe Experience Manager (AEM) et utilise AEM Forms pour la capture et le traitement des données. Le formulaire d’ajout et de mise à jour d’adresse est un formulaire adaptatif. Le site Web stocke les coordonnées du client dans une base de données. Ils utilisent le formulaire d&#39;ajout et de mise à jour des adresses pour récupérer et afficher les adresses disponibles. Il utilise également le formulaire adaptatif pour accepter les adresses mises à jour et les nouvelles adresses.
 
-### Condition préalable {#prerequisite}
+### Prérequis {#prerequisite}
 
 * Configurez une instance d’auteur AEM.
 * Installez le [module complémentaire AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) sur une instance de création.
-* Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données MySQL et utilisent le [pilote de base de données JDBC MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html) de l’Oracle.
+* Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données MySQL et l’utilisation d’Oracle [Pilote de base de données MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 * Configurez une base de données contenant les données client avec les champs affichés ci-dessous. Une base de données n’est pas essentielle pour créer un formulaire adaptatif. Ce didacticiel utilise une base de données pour afficher les fonctionnalités de modèle de données de formulaire et de persistance d’AEM Forms.
 
@@ -84,7 +84,7 @@ Objectifs:
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Les formulaires adaptatifs fournissent un éditeur pour l’écriture de règles sur des objets de formulaire adaptatifs. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des saisies de l’utilisateur et des actions de l’utilisateur sur le formulaire. Cela permet d’assurer la précision et accélère le remplissage des formulaires.
+Les formulaires adaptatifs fournissent un éditeur pour l’écriture de règles sur des objets de formulaire adaptatifs. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des entrées de l’utilisateur et des actions de l’utilisateur sur le formulaire. Cela permet d’assurer la précision et accélère le remplissage des formulaires.
 
 Objectifs:
 
@@ -95,7 +95,7 @@ Objectifs:
 
 ![09-Style-your-adaptive-form_small](assets/09-Style-your-adaptive-form_small.png)
 
-Les formulaires adaptatifs fournissent des thèmes et un [éditeur](/help/forms/using/themes.md) pour créer des thèmes pour les formulaires adaptatifs. Un thème contient les informations de style pour les composants et les panneaux, et vous pouvez réutiliser un thème dans plusieurs formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème à votre formulaire, le style spécifié se reflète sur des composants correspondants de votre formulaire. Les formulaires adaptatifs prennent également en charge le style en ligne pour les styles spécifiques à un formulaire.
+Les formulaires adaptatifs fournissent des thèmes et une [éditeur](/help/forms/using/themes.md) pour créer des thèmes pour les formulaires adaptatifs. Un thème contient les informations de style pour les composants et les panneaux, et vous pouvez réutiliser un thème dans plusieurs formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème à votre formulaire, le style spécifié se reflète sur des composants correspondants de votre formulaire. Les formulaires adaptatifs prennent également en charge le style en ligne pour les styles spécifiques à un formulaire.
 
 Objectifs:
 

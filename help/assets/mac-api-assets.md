@@ -2,13 +2,13 @@
 title: API HTTP Assets  dans [!DNL Adobe Experience Manager].
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-feature: API,API HTTP Assets,outils de développement
+feature: APIs,Assets HTTP API,Developer Tools
 role: Developer
 exl-id: 3d7d078c-5046-489a-a8e0-258acaea7191
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 86%
+source-wordcount: '1552'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne 
 
 >[!CAUTION]
 >
->[L’API HTTP met à jour les ](#update-asset-metadata) propriétés de métadonnées dans l’ `jcr` espace de noms. Cependant, l’interface utilisateur du Experience Manager met à jour les propriétés de métadonnées dans l’espace de noms `dc`.
+>[L’API HTTP met à jour les propriétés des métadonnées](#update-asset-metadata) dans le `jcr` espace de noms. Toutefois, l’interface utilisateur du Experience Manager met à jour les propriétés de métadonnées dans la variable `dc` espace de noms.
 
 ## Modèle de données {#data-model}
 
@@ -86,11 +86,11 @@ L’API Assets HTTP offre les fonctionnalités suivantes :
 >
 >Pour faciliter la lecture, la notation cURL complète n’est pas utilisée dans les exemples suivants. En fait, la notation est liée à [Resty](https://github.com/micha/resty) qui est un wrapper de script pour `cURL`.
 
-**Conditions préalables**
+**Prérequis**
 
 * Accédez à l’adresse `https://[aem_server]:[port]/system/console/configMgr`.
-* Accédez à **[!UICONTROL Adobe Granite CSRF Filter]**.
-* Assurez-vous que la propriété **[!UICONTROL Méthodes de filtre]** comprend : `POST`, `PUT`, `DELETE`.
+* Accédez à **[!UICONTROL Adobe du filtre CSRF Granite]**.
+* Assurez-vous que la propriété **[!UICONTROL Méthodes de filtre]** inclut : `POST`, `PUT`, `DELETE`.
 
 ## Récupérer une liste de dossiers {#retrieve-a-folder-listing}
 
@@ -126,11 +126,11 @@ Un appel d’API échoue avec un code de réponse `500` si le nœud parent du ch
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
 * 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
 
-## Créer une ressource {#create-an-asset}
+## Créer une ressource  {#create-an-asset}
 
-Placez le fichier fourni à l’emplacement indiqué pour créer une ressource dans le référentiel DAM. Si `*` est fourni à la place d’un nom de noeud, le servlet utilise le nom du paramètre ou le nom du fichier comme nom de noeud.
+Placez le fichier fourni à l’emplacement indiqué pour créer une ressource dans le référentiel DAM. Si une `*` est fourni à la place d’un nom de noeud, le servlet utilise le nom du paramètre ou le nom du fichier comme nom de noeud.
 
-**Paramètres** : Les paramètres sont  `name` pour le nom de la ressource et  `file` pour la référence au fichier.
+**Paramètres**: Les paramètres sont les suivants : `name` pour le nom de la ressource et `file` pour la référence au fichier.
 
 **Requête**
 
@@ -170,9 +170,9 @@ Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez 
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
 * 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
 
-### Mise à jour des métadonnées de synchronisation entre `dc` et l’espace de noms `jcr` {#sync-metadata-between-namespaces}
+### Mise à jour des métadonnées de synchronisation entre `dc` et `jcr` namespace {#sync-metadata-between-namespaces}
 
-La méthode API met à jour les propriétés de métadonnées dans l’espace de noms `jcr`. Les mises à jour effectuées à l’aide de l’interface utilisateur tactile modifient les propriétés de métadonnées dans l’espace de noms `dc`. Pour synchroniser les valeurs des métadonnées entre l’espace de noms `dc` et `jcr`, vous pouvez créer un workflow et configurer Experience Manager pour exécuter le workflow lors de la modification de la ressource. Utilisez un script ECMA pour synchroniser les propriétés de métadonnées requises. L’exemple de script suivant synchronise la chaîne de titre entre `dc:title` et `jcr:title`.
+La méthode API met à jour les propriétés de métadonnées dans la variable `jcr` espace de noms. Les mises à jour effectuées à l’aide de l’interface utilisateur tactile modifient les propriétés de métadonnées dans la variable `dc` espace de noms. Pour synchroniser les valeurs des métadonnées entre `dc` et `jcr` , vous pouvez créer un workflow et configurer Experience Manager pour exécuter le workflow lors de la modification des ressources. Utilisez un script ECMA pour synchroniser les propriétés de métadonnées requises. L’exemple de script suivant synchronise la chaîne de titre entre `dc:title` et `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();

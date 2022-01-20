@@ -1,8 +1,8 @@
 ---
 title: Options de définition de l’internationalisation
-seo-title: Options de définition de l’internationalisation
+seo-title: Setting internationalization options
 description: Découvrez comment spécifier le paramètre régional utilisé pour le rendu des formulaires et spécifier le jeu de caractères utilisé pour encoder le flux de sortie.
-seo-description: Découvrez comment spécifier le paramètre régional utilisé pour le rendu des formulaires et spécifier le jeu de caractères utilisé pour encoder le flux de sortie.
+seo-description: Learn how to specify the locale used to render forms and how to specify the character set used to encode the output stream.
 uuid: bb77f5f3-634f-4285-9b10-c4dd40085e69
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: e845d13f-bef2-442d-af9a-4f92d7616a46
 exl-id: 1fb51e4a-e0e8-4a58-8877-98337fe29fac
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '222'
 ht-degree: 100%
 
 ---

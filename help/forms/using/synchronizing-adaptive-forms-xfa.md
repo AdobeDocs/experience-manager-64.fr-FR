@@ -1,17 +1,17 @@
 ---
 title: Synchronisation de formulaires adaptatifs avec des modèles de formulaire XFA
-seo-title: Synchronisation de formulaires adaptatifs avec des modèles de formulaire XFA
+seo-title: Synchronizing Adaptive Forms with XFA Form Templates
 description: Synchronisation des formulaires adaptatifs avec des fichiers XFA/XDP.
-seo-description: Synchronisation des formulaires adaptatifs avec des fichiers XFA/XDP.
+seo-description: Synchronizing Adaptive forms with XFA/XDP files.
 uuid: 6613a9bf-c862-4c18-a5b5-f574d301e936
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 29c0a78c-53b5-4ce7-a2f3-63e1b089b0d0
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 014c735e-84f8-4cdb-979e-bfab24b3f666
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1155'
 ht-degree: 93%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 93%
 
 ## Présentation {#introduction}
 
-Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour créer un formulaire adaptatif, voir [Créer un formulaire adaptatif basé sur un modèle](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA ( `*.XDP` ). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour créer un formulaire adaptatif, [Créer un formulaire adaptatif basé sur un modèle](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
 Vous pouvez réutiliser des champs du fichier XDP dans votre formulaire adaptatif. Ces champs sont appelés champs liés. Les propriétés des champs liés (comme les scripts, les libellés et le format d’affichage) sont copiées à partir du fichier XDP. Vous pouvez également choisir de remplacer la valeur de certaines de ces propriétés.
 
@@ -105,9 +105,9 @@ Pour mettre à jour les propriétés dans l’exemple de formulaire adaptatif, c
 
 >[!NOTE]
 >
->Le libellé AF Numeric Field n’a pas été modifié car vous avez remplacé cette propriété dans la boîte de dialogue des propriétés du composant, comme décrit dans la section [Ajout de contenu aux formulaires adaptatifs](#p-add-content-to-adaptive-form-br-p).
+>Le libellé AF Numeric Field n’a pas été modifié car vous avez remplacé cette propriété dans la boîte de dialogue des propriétés du composant, comme décrit dans la section [Ajouter du contenu aux formulaires adaptatifs](#p-add-content-to-adaptive-form-br-p).
 
-### Ajout de nouveaux champs du fichier XDP au formulaire adaptatif {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
+### Ajout de nouveaux champs du fichier XDP au formulaire adaptatif  {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
 Les champs qui sont ultérieurement ajoutés au fichier XDP d’origine apparaissent dans l’onglet Hiérarchie du formulaire. Vous pouvez les faire glisser jusqu’au formulaire adaptatif.
 

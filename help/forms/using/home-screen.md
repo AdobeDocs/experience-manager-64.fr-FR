@@ -1,8 +1,8 @@
 ---
 title: Écran d’accueil
-seo-title: Écran d’accueil
-description: Description des composants de l’écran d’accueil de l’application AEM Forms.
-seo-description: Description des composants de l’écran d’accueil de l’application AEM Forms
+seo-title: Home screen
+description: Description des composants de l’écran d’accueil de l’application AEM Forms
+seo-description: Description of the components of the AEM Forms app Home screen
 uuid: 7705b499-8b38-4c2e-abd8-6901cf268428
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: e4636b25-20a4-4326-82fb-f22f735e43c0
 exl-id: b8f515fd-7ab7-4237-9a35-2840f708e856
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 83%
+source-wordcount: '334'
+ht-degree: 82%
 
 ---
 
@@ -20,20 +20,20 @@ ht-degree: 83%
 
 Lorsque vous vous connectez à l’application AEM Forms, vous êtes redirigé vers l’écran d’accueil.
 
-## Écran d’accueil par défaut  {#default-home-screen}
+## Écran d’accueil par défaut {#default-home-screen}
 
 Par défaut, l’écran d’accueil affiche tous les formulaires, y compris les points de départ et les tâches (si le serveur connecté est activé pour le flux de travail d’AEM forms), avec les vignettes associées. Vous pouvez spécifier les vignettes dans le serveur AEM Forms.
 
 La figure suivante est annotée avec les légendes des principaux composants de l’écran d’accueil.
-![Accueil de l’application Forms ](assets/home-screen-1.png)
-[écranCliquez pour agrandir](assets/home-screen-1-1.png)
+![Écran d’accueil de l’application Forms](assets/home-screen-1.png)
+[Cliquez pour agrandir](assets/home-screen-1-1.png)
 
-1. **Bouton** Menu : Appuyez sur le bouton  **** Menubutton pour accéder aux tâches, à Forms, à la boîte d’envoi et aux paramètres. Si votre application AEM Forms est connectée à un serveur AEM Forms JEE, vous pouvez voir l’option Tâches. L’option de tâches stocke également les brouillons créés à partir des tâches dans un processus. Pour les serveurs AEM Forms OSGi, l’option Tâches est masquée. La boîte d’envoi stocke les formulaires enregistrés et les brouillons avant sa synchronisation avec le serveur. Tous les formulaires et brouillons enregistrés dans la boîte d’envoi sont chargés sur le serveur AEM Forms lorsque l’application est [synchronisée avec le serveur](/help/forms/using/sync-app.md). Pour plus d’informations sur les paramètres, voir [Mise à jour des paramètres généraux](/help/forms/using/update-general-settings.md).
+1. **Bouton Menu**: Appuyez sur le bouton **Menu** pour accéder aux tâches, à Forms, à la boîte d’envoi et aux paramètres. Si votre application AEM Forms est connectée à un serveur AEM Forms JEE, vous pouvez voir l’option Tâches. L’option de tâches stocke également les brouillons créés à partir des tâches dans un processus. Pour les serveurs AEM Forms OSGi, l’option Tâches est masquée. La boîte d’envoi stocke les formulaires enregistrés et les brouillons avant sa synchronisation avec le serveur. Tous les formulaires et brouillons enregistrés dans la boîte d’envoi sont chargés sur le serveur AEM Forms lorsque l’application est [synchronisé avec le serveur](/help/forms/using/sync-app.md). Pour plus d’informations sur les paramètres, voir [Mise à jour des paramètres généraux](/help/forms/using/update-general-settings.md).
 1. **Tâche ou formulaire** : Appuyez sur la tâche ou le formulaire répertorier afin de pouvoir travailler dessus.
-1. **Points de suspension horizontaux** : Indique si les actions sont disponibles pour le formulaire. Tapez sur les points de suspension pour afficher les actions et la description fournie par l’auteur. L’option **Supprimer le brouillon** et **Complète** est visible lorsque vous appuyez sur les points de suspension.
+1. **Points de suspension horizontaux** : Indique si les actions sont disponibles pour le formulaire. Tapez sur les points de suspension pour afficher les actions et la description fournie par l’auteur. Le **Supprimer le brouillon** et **Terminer** est visible lorsque vous appuyez sur les points de suspension.
 1. **Icône Synchronisation** : appuyez sur l’icône d’actualisation pour synchroniser votre application avec le serveur AEM Forms.
 
-## Personnalisation de l’écran d’accueil  {#customizing-the-home-screen}
+## Personnalisation de l’écran d’accueil {#customizing-the-home-screen}
 
 ![Paramètres généraux](assets/gen-settings.png)
 

@@ -1,8 +1,8 @@
 ---
 title: Présentation de l’espace de travail AEM Forms
-seo-title: Présentation de l’espace de travail AEM Forms
+seo-title: Introduction to AEM Forms workspace
 description: Augmentez l’efficacité de l’entreprise et diminuez les tâches d’administration grâce à l’automatisation des processus d’entreprise via l’espace de travail LiveCycle AEM Forms.
-seo-description: Augmentez l’efficacité de l’entreprise et diminuez les tâches d’administration grâce à l’automatisation des processus d’entreprise via l’espace de travail LiveCycle AEM Forms.
+seo-description: Increase org efficiency and create paperless office by business process automation using LiveCycle AEM Forms workspace.
 uuid: 6171d1e7-8d1f-4adb-be8f-49521cd4cc6f
 contentOwner: robhagat
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 7efc8ad6-2bb1-41a6-ac0b-7f8ddddbf2a6
 exl-id: d60462a7-b941-4d0c-b6c5-20289d553a25
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 88%
+source-wordcount: '205'
+ht-degree: 86%
 
 ---
 

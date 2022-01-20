@@ -1,8 +1,8 @@
 ---
 title: Modèles de fragment de contenu
-seo-title: Modèles de fragment de contenu
+seo-title: Content Fragment Templates
 description: Les modèles sont sélectionnés lors de la création d’un fragment de contenu et fournissent au nouveau fragment la structure de base, l’élément et la variation
-seo-description: Les modèles sont sélectionnés lors de la création d’un fragment de contenu et fournissent au nouveau fragment la structure de base, l’élément et la variation
+seo-description: Templates are selected when creating a content fragmen and provide the new fragment with the basic structure, element, and variation
 uuid: 74675e82-26b4-4105-8031-21de51131236
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
 exl-id: fdf1aba8-17fa-473a-9c32-7189d0628927
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 43%
+source-wordcount: '632'
+ht-degree: 40%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 43%
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de la fonction [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md).
 
 >[!CAUTION]
 >
@@ -55,13 +55,11 @@ L’ordre de priorité est (dans l’ordre décroissant) `/conf`, `/apps`, `/lib
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
-   >
-   >
-1. Apportez les modifications désirées dans `/apps`
+>1. Recréez l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
+>
+>1. Apportez les modifications désirées dans `/apps`
 
 >
-
 
 
 La structure de base d’un modèle est stockée sous :
@@ -125,12 +123,12 @@ Plus de détails sur les nœuds et leurs propriétés :
   <tr> 
    <td><code>jcr:title</code></td> 
    <td><p><code>String</code></p> <p>required<br /> </p> </td> 
-   <td>Titre du modèle (affiché dans l’assistant <strong>Créer un fragment</strong>).</td> 
+   <td>Le titre du modèle (affiché dans la <strong>Créer un fragment</strong> ).</td> 
   </tr> 
   <tr> 
    <td><code>jcr:description</code></td> 
    <td><p><code>String</code></p> <p>facultatif</p> </td> 
-   <td>Texte décrivant l’objectif du modèle (affiché dans l’assistant <strong>Créer un fragment</strong>).</td> 
+   <td>Un texte qui décrit l’objet du modèle (affiché dans la <strong>Créer un fragment</strong> ).</td> 
   </tr> 
   <tr> 
    <td><code>initialAssociatedContent</code></td> 
@@ -140,12 +138,12 @@ Plus de détails sur les nœuds et leurs propriétés :
   <tr> 
    <td><code>precreateElements</code></td> 
    <td><p><code>Boolean</code></p> <p>required</p> </td> 
-   <td><p><code>true</code>, si les sous-ressources représentant les éléments (à l’exception de l’élément principal) du fragment de contenu doivent être créées lors de la création du fragment de contenu ; <em>false</em> s’ils doivent être créés "à la volée".</p> <p><strong>Remarque</strong> : Actuellement, ce paramètre doit être défini sur  <code>true</code>.</p> </td> 
+   <td><p><code>true</code>, si les sous-ressources représentant les éléments (à l’exception de l’élément principal) du fragment de contenu doivent être créées lors de la création du fragment de contenu ; <em>false</em> s'ils doivent être créés "à la volée".</p> <p><strong>Remarque</strong>: Actuellement, ce paramètre doit être défini sur <code>true</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><code>version</code></td> 
    <td><p><code>Long</code></p> <p>required</p> </td> 
-   <td><p>la version de la structure de contenu ; actuellement pris en charge :</p> <p><strong>Remarque</strong> : Actuellement, ce paramètre doit être défini sur  <code>2</code>.<br /> </p> </td> 
+   <td><p>la version de la structure de contenu ; actuellement pris en charge :</p> <p><strong>Remarque</strong>: Actuellement, ce paramètre doit être défini sur <code>2</code>.<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -162,7 +160,7 @@ Plus de détails sur les nœuds et leurs propriétés :
   <tr> 
    <td><code>elements</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>required</p> </td> 
-   <td><p>Noeud contenant la définition des éléments du fragment de contenu. Elle est obligatoire et doit contenir au moins un noeud enfant pour l’élément <strong>Main</strong> , mais peut contenir [1..n] nœuds enfants.</p> <p>Lorsque le modèle est utilisé, la sous-branche éléments est copiée dans la sous-branche modèle du fragment.</p> <p>Le premier élément (affiché en CRXDE Lite) est automatiquement considéré comme l’élément <i>main</i> ; le nom du noeud n’est pas pertinent et le noeud lui-même n’a pas de signification particulière, à l’exception du fait qu’il est représenté par la ressource principale ; les autres éléments sont traités comme des sous-ressources.</p> </td> 
+   <td><p>Noeud contenant la définition des éléments du fragment de contenu. Elle est obligatoire et doit contenir au moins un noeud enfant pour la variable <strong>Principal</strong> , mais peut contenir [1..n] nœuds enfants.</p> <p>Lorsque le modèle est utilisé, la sous-branche éléments est copiée dans la sous-branche modèle du fragment.</p> <p>Le premier élément (tel qu’affiché dans CRXDE Lite) est automatiquement considéré comme le <i>main</i> element; le nom du noeud n’est pas pertinent et le noeud lui-même n’a pas de signification particulière, à l’exception du fait qu’il est représenté par la ressource principale ; les autres éléments sont traités comme des sous-ressources.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -188,12 +186,12 @@ Plus de détails sur les nœuds et leurs propriétés :
   </tr> 
   <tr> 
    <td><code>defaultContent</code></td> 
-   <td><p><code>String</code></p> <p>facultatif</p> <p>default: ""</p> </td> 
+   <td><p><code>String</code></p> <p>facultatif</p> <p>par défaut: ""</p> </td> 
    <td>Contenu initial de l’élément ; utilisé uniquement si <code>precreateElements</code><i> = </i><code>true</code></td> 
   </tr> 
   <tr> 
    <td><code>initialContentType</code></td> 
-   <td><p><code>String</code></p> <p>facultatif</p> <p>default: <code>text/html</code></p> </td> 
+   <td><p><code>String</code></p> <p>facultatif</p> <p>par défaut: <code>text/html</code></p> </td> 
    <td><p>Type de contenu initial de l’élément ; utilisé uniquement si <code>precreateElements</code><i> = </i><code>true</code>; actuellement pris en charge :</p> 
     <ul> 
      <li><code>text/html</code></li> 
@@ -239,17 +237,17 @@ Plus de détails sur les nœuds et leurs propriétés :
    <td><code>&lt;<i>variation-name</i>&gt;</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>requis si un noeud de variation est présent</p> </td> 
    <td><p>Définit une variation initiale.<br /> La variation est ajoutée à tous les éléments du fragment de contenu par défaut.</p> <p>La variation aura le même contenu initial que l’élément correspondant (voir <code class="code">defaultContent/
-       initialContentType</code>).</p> </td> 
+       initialContentType</code>)</p> </td> 
   </tr> 
   <tr> 
    <td><code>jcr:title</code></td> 
    <td><p><code>String</code></p> <p>required</p> </td> 
-   <td>Titre de la variation (affiché dans l’onglet <strong>Variation</strong> de l’éditeur de fragment (rail de gauche)).</td> 
+   <td>Titre de la variation (affiché dans le <strong>Variation</strong> (rail de gauche).</td> 
   </tr> 
   <tr> 
    <td><code>jcr:desciption</code></td> 
-   <td><p><code>String</code></p> <p>facultatif</p> <p>default : ""</p> </td> 
-   <td>Texte qui fournit une description de la variation <span> (affichée dans l’onglet <strong>Variation</strong> de l’éditeur de fragments (rail de gauche).</span></td> 
+   <td><p><code>String</code></p> <p>facultatif</p> <p>par défaut: ""</p> </td> 
+   <td>Texte qui fournit une description de la variation <span>(affiché dans le <strong>Variation</strong> (rail de gauche).</span></td> 
   </tr> 
  </tbody> 
 </table>

@@ -1,8 +1,8 @@
 ---
 title: Personnalisation de la création de pages
-seo-title: Personnalisation de la création de pages
+seo-title: Customizing Page Authoring
 description: AEM s’accompagne de divers mécanismes pour vous permettre de personnaliser la fonctionnalité de création de pages.
-seo-description: AEM s’accompagne de divers mécanismes pour vous permettre de personnaliser la fonctionnalité de création de pages.
+seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
 uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: d7617d8a-b9b1-4a55-a8b7-4bdf90fd6905
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1360'
 ht-degree: 82%
 
 ---
@@ -52,8 +52,7 @@ Ils peuvent être utilisés de différentes manières pour étendre la fonctionn
 >* [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md) pour plus d’informations sur les zones structurelles utilisées pour la création de pages.
 
 >
->
-Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) – [Personnalisation de l’interface utilisateur pour AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
+>Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) – [Personnalisation de l’interface utilisateur pour AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
 
 >[!CAUTION]
 >
@@ -63,7 +62,7 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
+>1. Recréez l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
 >1. Apportez les modifications désirées dans `/apps`
 
 
@@ -75,7 +74,7 @@ Lorsque vous modifiez une page, plusieurs [modes](/help/sites-authoring/author-e
 
 Une instance AEM standard fournit le calque MSM. Elle accède aux données associées à la [gestion multisite](/help/sites-administering/msm.md) et les met en évidence dans le calque.
 
-Pour l’afficher en action, vous pouvez modifier toute page [Copie de langue We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) (ou toute autre page Live Copy) et sélectionner le mode **État de Live Copy** .
+Pour l’afficher en action, vous pouvez modifier n’importe quelle [Copie de langue We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) (ou toute autre page Live Copy) et sélectionnez **État de Live Copy** mode .
 
 Vous trouverez la définition du calque MSM (pour référence) à l’emplacement suivant :
 
@@ -124,11 +123,11 @@ Pour plus d’informations sur la création d’un prédicat personnalisé, cons
 >
 >Consultez cet [article de la base de connaissances](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) pour obtenir un exemple d’implémentation d’un prédicat personnalisé dans l’interface utilisateur classique.
 
-## Ajout d’une nouvelle action à une barre d’outils de composants  {#add-new-action-to-a-component-toolbar}
+## Ajout d’une nouvelle action à une barre d’outils de composants {#add-new-action-to-a-component-toolbar}
 
 Chaque composant (en règle générale) s’accompagne d’une barre d’outils qui permet d’accéder à un éventail d’actions auxquelles il peut être soumis.
 
-### Exemple de code  {#code-sample-2}
+### Exemple de code {#code-sample-2}
 
 `aem-authoring-extension-toolbar-screenshot` est un exemple de package qui montre comment créer une action de barre d’outils personnalisée pour effectuer le rendu de composants.
 
@@ -210,7 +209,7 @@ Pour mettre en œuvre un nouvel éditeur statique (au sein de votre bibliothèqu
 
 1. Fournissez la connexion entre l’éditeur et chaque type de ressource (comme dans le composant) qui peut l’utiliser.
 
-#### Exemple de code pour créer un éditeur statique  {#code-sample-for-creating-a-new-in-place-editor}
+#### Exemple de code pour créer un éditeur statique {#code-sample-for-creating-a-new-in-place-editor}
 
 `aem-authoring-extension-inplace-editor` est un exemple de package montrant comment créer un éditeur statique dans AEM.
 
@@ -223,13 +222,13 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 #### Configuration de plusieurs éditeurs statiques {#configuring-multiple-in-place-editors}
 
-Il est possible de configurer un composant afin qu’il comporte plusieurs éditeurs statiques. Lorsque plusieurs éditeurs statiques sont configurés, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat. Pour plus d’informations, consultez la documentation [Configuration de plusieurs éditeurs statiques](/help/sites-developing/multiple-inplace-editors.md) .
+Il est possible de configurer un composant afin qu’il comporte plusieurs éditeurs statiques. Lorsque plusieurs éditeurs statiques sont configurés, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat. Voir [Configuration de plusieurs éditeurs statiques](/help/sites-developing/multiple-inplace-editors.md) pour plus d’informations.
 
 ## Ajout d’une nouvelle action de page {#add-a-new-page-action}
 
 Vous pouvez ajouter une action de page à la barre d’outils de la page ; **Retour aux sites** (console), par exemple.
 
-### Exemple de code  {#code-sample-3}
+### Exemple de code {#code-sample-3}
 
 `aem-authoring-extension-header-backtosites` est un exemple de package qui montre comment créer une action de barre d’en-tête personnalisée pour revenir à la console Sites.
 
@@ -244,9 +243,9 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 Le workflow prêt à l’emploi **Demander l’activation** se déclenche automatiquement lorsqu’un auteur de contenu ne dispose pas des droits de réplication appropriés.
 
-Pour avoir un comportement personnalisé lors de cette activation, vous pouvez superposer le workflow **Demande d’activation** :
+Pour avoir un comportement personnalisé lors de cette activation, vous pouvez superposer la variable **Demande d’activation** workflow :
 
-1. Dans `/apps`, superposez l’assistant **Sites** :
+1. Dans `/apps` recouvrez la propriété **Sites** assistant :
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 
@@ -257,4 +256,4 @@ Pour avoir un comportement personnalisé lors de cette activation, vous pouvez s
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
 1. Mettez à jour le [modèle de workflow](/help/sites-developing/workflows-models.md) et les configurations/scripts associés selon les besoins.
-1. Supprimez le droit à l’action [ `replicate`](/help/sites-administering/security.md#actions) de tous les utilisateurs appropriés pour toutes les pages pertinentes ; pour déclencher ce workflow en tant qu’action par défaut lorsque l’un des utilisateurs tente de publier (ou de répliquer) une page.
+1. Retirer le droit au [ `replicate` action](/help/sites-administering/security.md#actions) de tous les utilisateurs appropriés pour toutes les pages pertinentes ; pour déclencher ce workflow en tant qu’action par défaut lorsque l’un des utilisateurs tente de publier (ou de répliquer) une page.

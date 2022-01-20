@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
-feature: Gestion des ressources,Rendus
+feature: Asset Management,Renditions
 role: User
 source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1461'
 ht-degree: 93%
 
 ---
@@ -43,7 +43,7 @@ Pour le dimensionnement des images, il est recommandé d’utiliser `&wid=<value
 
 ## Bonnes pratiques relatives à l’accentuation des images {#best-practices-for-image-sharpening}
 
-L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou dans AEM en vous référant au guide [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) qui s’applique également à AEM.
+L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou dans AEM en vous référant à la variable [Bonnes pratiques relatives à la qualité des images Adobe Dynamic Media Classic et à l’accentuation](/help/assets/assets/sharpening_images.pdf) guide qui s’applique également à AEM.
 
 Voir aussi [Accentuation d’une image avec un masque flou](https://helpx.adobe.com/photoshop/using/adjusting-image-sharpness-blur.html).
 
@@ -65,7 +65,7 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
              Ce paramètre définit l’écart recherché entre les pixels accentués et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et que le filtre les accentue. Le paramètre **[!UICONTROL seuil]** permet d’éviter l’accentuation excessive de zones aux couleurs similaires, telles que les tons chair. Par exemple, une valeur de seuil de 12 permet d’ignorer les légères variations de la luminosité de la peau pour éviter d’ajouter du « bruit », tout en ajoutant un contraste sur les bords dans les zones à fort contraste, comme l’endroit où les cils rencontrent la peau.
          
-         Pour plus d’informations sur la définition de ces trois paramètres, y compris les bonnes pratiques à utiliser avec le filtre, consultez le guide [Adobe de la qualité d’image Dynamic Media Classic et des bonnes pratiques d’accentuation](/help/assets/assets/sharpening_images.pdf) (s’applique également à Dynamic Media sur AEM).
+         Pour plus d’informations sur la définition de ces trois paramètres, y compris les bonnes pratiques à utiliser avec le filtre, voir la section [Bonnes pratiques relatives à la qualité des images Adobe Dynamic Media Classic et à l’accentuation](/help/assets/assets/sharpening_images.pdf) guide (s’applique également à Dynamic Media sur AEM).
    * AEM permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/intensité de l’image en utilisant la valeur 1.
 
 
@@ -80,7 +80,7 @@ Augmentez graduellement la valeur de 1,75 à 4. Si l’accentuation ne correspon
 
 Laissez le paramètre monochrome sur 0.
 
-### Bonnes pratiques relatives à la compression JPEG (&amp;qlt=) {#best-practices-for-compression-qlt}
+### Bonnes pratiques relatives à la compression des JPEG (&amp;qlt=) {#best-practices-for-compression-qlt}
 
 * Ce paramètre contrôle la qualité du codage JPG. Une valeur élevée produit une image de meilleure qualité, mais un fichier plus volumineux ; en revanche, une valeur faible signifie une image de qualité inférieure mais un fichier plus petit. Ce paramètre est compris entre 0 et 100.
 * Pour optimiser la qualité, ne définissez pas la valeur du paramètre sur 100. La différence entre une valeur de 90, 95 ou 100 est presque imperceptible. Par contre, la valeur 100 augmente de manière inutile la taille du fichier image. En conséquence, pour optimiser la qualité, mais éviter que les fichiers image deviennent trop volumineux, définissez `qlt=<value>` sur 90 ou 95.

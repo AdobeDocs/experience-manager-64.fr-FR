@@ -1,8 +1,8 @@
 ---
 title: Interaction de Backbone
-seo-title: Interaction de Backbone
+seo-title: Backbone interaction
 description: Informations conceptuelles sur l’utilisation des modèles Backbone JavaScript dans l’espace de travail AEM Forms.
-seo-description: Informations conceptuelles sur l’utilisation des modèles Backbone JavaScript dans l’espace de travail AEM Forms.
+seo-description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
 uuid: c70da848-e514-42bc-a59b-44a7c00aa529
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
 exl-id: f726cb73-732c-4893-bdb5-10ddcf4a340a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 81%
+source-wordcount: '434'
+ht-degree: 80%
 
 ---
 
@@ -22,13 +22,13 @@ Backbone est une bibliothèque qui permet de créer et de suivre une architectur
 
 Voici quelques concepts clés :
 
-**Backbone** modelContient des données et la plupart de la logique liée à ces données.
+**Modèle Backbone** Contient des données et la plupart de la logique associée à ces données.
 
-**Backbone** viewUtilisé pour représenter l’état du modèle correspondant. Une vue Backbone se comporte en fait comme un contrôleur, écoutant les événements de l’interface utilisateur comme les clics de l’utilisateur, ou les événements de modèle (comme les modifications de données), et modifie l’interface utilisateur en fonction des besoins.
+**Vue Backbone** Utilisé pour représenter l’état du modèle correspondant. Une vue Backbone se comporte en fait comme un contrôleur, écoutant les événements de l’interface utilisateur comme les clics de l’utilisateur, ou les événements de modèle (comme les modifications de données), et modifie l’interface utilisateur en fonction des besoins.
 
-**Modèle HTML** : modèle d’élément wrapper contenant des espaces réservés renseignés par le modèle.
+**Modèle de HTML** Modèle d’encapsulation contenant des espaces réservés renseignés par le modèle.
 
-**AEM Forms** workspaceContient plusieurs composants individuels. Chaque composant :
+**Espace de travail AEM Forms** Contient plusieurs composants individuels. Chaque composant :
 
 * représente un seul élément d’interface utilisateur logique ;
 * il peut s’agir d’un ensemble de composants similaires ;

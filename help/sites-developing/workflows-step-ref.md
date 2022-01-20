@@ -1,8 +1,8 @@
 ---
 title: Référence sur les étapes de workflow
-seo-title: Référence sur les étapes de workflow
+seo-title: Workflow Step Reference
 description: Référence sur les étapes de workflow
-seo-description: 'null'
+seo-description: null
 uuid: 72a64495-d1b1-49e7-8257-d6b2ed36961c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 exl-id: dfa39c6c-7a1a-4aa4-a72d-caa5e3ebf4a8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2829'
 ht-degree: 70%
 
 ---
@@ -28,13 +28,14 @@ Les modèles de workflow se composent d’une série d’étapes de différents 
 >Pour les étapes spécifiques aux modules, voir également :
 >
 >* [Référence sur les étapes de workflow d’AEM Forms](/help/forms/using/aem-forms-workflow-step-reference.md)
-* [Traitement des ressources à l’aide des gestionnaires de médias et des workflows](/help/assets/media-handlers.md)
+>* [Traitement des ressources à l’aide des workflows et des gestionnaires de médias](/help/assets/media-handlers.md)
 
+>
 
 
 ## Propriétés des étapes {#step-properties}
 
-Chaque composant d’étape comporte une boîte de dialogue **[!UICONTROL Propriétés de l’étape]** qui vous permet de définir et de modifier les propriétés requises.
+Chaque composant d’étape comporte une **[!UICONTROL Propriétés de l’étape]** qui vous permet de définir et de modifier les propriétés requises.
 
 ### Propriétés des étapes – onglet Commun {#step-properties-common-tab}
 
@@ -50,13 +51,13 @@ Une combinaison des propriétés suivantes est disponible pour la plupart des co
 
 * **[!UICONTROL Étape du processus]**
 
-   Sélecteur de liste déroulante auquel appliquer une [étape](/help/sites-developing/workflows.md#workflow-stages) à l’étape.
+   Sélecteur de liste déroulante auquel appliquer une [Évaluation](/help/sites-developing/workflows.md#workflow-stages) à l’étape .
 
 * **[!UICONTROL Délai dépassé]**
 
    La période au bout de laquelle l’étape sera &quot;expirée&quot;.
 
-   Vous pouvez choisir entre : **[!UICONTROL Désactivé]**, **[!UICONTROL Immédiat]**, **[!UICONTROL 1h]**, **[!UICONTROL 6h]**, **[!UICONTROL 12h]**, **[!UICONTROL 24h]**.
+   Vous pouvez choisir entre : **[!UICONTROL Off]**, **[!UICONTROL Immédiat]**, **[!UICONTROL 1h]**, **[!UICONTROL 6h]**, **[!UICONTROL 12h]**, **[!UICONTROL 24h]**.
 
 * **[!UICONTROL Gestionnaire de dépassement de délai]**
 
@@ -81,20 +82,20 @@ Les propriétés suivantes sont disponibles pour de nombreux composants d’éta
 
    * Une boîte de sélection déroulante vous permet de localiser et de sélectionner un utilisateur ou un groupe.
    * Si vous attribuez l’étape à un utilisateur spécifique, seul cet utilisateur peut agir sur l’étape.
-   * Si vous attribuez l’étape à un groupe entier, lorsque le workflow atteint cette étape, tous les utilisateurs de ce groupe auront l’action dans leur **[!UICONTROL boîte de réception de workflow]**.
+   * Si vous attribuez l’étape à un groupe entier, lorsque le workflow atteint cette étape, tous les utilisateurs de ce groupe auront l’action dans leur **[!UICONTROL Boîte de réception des workflows]**.
    * Voir [Participation à des workflows](/help/sites-authoring/workflows-participating.md) pour plus d’informations.
 
 ## Division ET {#and-split}
 
-La **[!UICONTROL Division ET]** crée une division dans le workflow, après laquelle les deux branches seront principales. Vous ajoutez des étapes de processus à chaque branche selon vos besoins. Cette étape vous permet d’ajouter plusieurs chemins de traitement dans le workflow. Par exemple, vous pouvez autoriser l’exécution de certaines étapes de révision en parallèle, ce qui représente un réel gain de temps.
+Le **[!UICONTROL Division ET]** crée une division dans le workflow, après laquelle les deux branches seront principales. Vous ajoutez des étapes de processus à chaque branche selon vos besoins. Cette étape vous permet d’ajouter plusieurs chemins de traitement dans le workflow. Par exemple, vous pouvez autoriser l’exécution de certaines étapes de révision en parallèle, ce qui représente un réel gain de temps.
 
 ![wf-26](assets/wf-26.png)
 
 ### Division ET – configuration {#and-split-configuration}
 
-* Modifiez les propriétés **[!UICONTROL AND Split]** :
+* Modifiez la variable **[!UICONTROL Division ET]** properties:
 
-   * **[!UICONTROL Fractionner le nom]** : attribuer un nom à des fins d’explication.
+   * **[!UICONTROL Nom de la division]**: attribuer un nom à des fins d’explication.
    * Sélectionnez le nombre de branches requis : 2, 3, 4 ou 5.
 
 * Ajoutez des étapes de workflow aux branches selon vos besoins.
@@ -103,9 +104,9 @@ La **[!UICONTROL Division ET]** crée une division dans le workflow, après laqu
 
 ## Étape du conteneur {#container-step}
 
-Une étape **[!UICONTROL Container]** lance un autre modèle de workflow qui s’exécute en tant que workflow enfant.
+A **[!UICONTROL Conteneur]** Cette étape lance un autre modèle de workflow qui s’exécute en tant que workflow enfant.
 
-Ce **[!UICONTROL conteneur]** vous permet de réutiliser des modèles de workflow pour implémenter des séquences d’étapes courantes. Par exemple, un modèle de workflow de traduction peut être utilisé dans plusieurs workflows de modification.
+Ceci **[!UICONTROL Conteneur]** permet de réutiliser des modèles de workflow pour implémenter des séquences d’étapes courantes. Par exemple, un modèle de workflow de traduction peut être utilisé dans plusieurs workflows de modification.
 
 ![wf-28](assets/wf-28.png)
 
@@ -118,7 +119,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
    * **[!UICONTROL Processus secondaire]** : sélectionnez le workflow à démarrer.
 
-## Atteindre l’étape  {#goto-step}
+## Atteindre l’étape {#goto-step}
 
 **[!UICONTROL Atteindre l’étape]** permet de spécifier la prochaine étape du modèle de workflow à exécuter, selon le résultat d’un ECMAScript :
 
@@ -126,7 +127,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
 * `false` : **[!UICONTROL Atteindre l’étape]** se termine et la logique de routage normale détermine la prochaine étape à exécuter.
 
-**[!UICONTROL Atteindre l’étape]** vous permet de mettre en œuvre des structures de routage avancées dans vos modèles de workflow. Par exemple, pour mettre en oeuvre une boucle, il est possible de définir **[!UICONTROL Atteindre l’étape]** afin d’exécuter une étape précédente du workflow, le script évaluant une condition de boucle.
+**[!UICONTROL Atteindre l’étape]** vous permet de mettre en œuvre des structures de routage avancées dans vos modèles de workflow. Par exemple, pour mettre en oeuvre une boucle, l’événement **[!UICONTROL Atteindre l’étape]** peut être défini pour exécuter une étape précédente du workflow, avec le script évaluant une condition de boucle.
 
 ### Atteindre l’étape – configuration {#goto-step-configuration}
 
@@ -135,12 +136,13 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 * [**[!UICONTROL Courant]**](#step-properties-common-tab)
 * **[!UICONTROL Processus]**
 
-   * **[!UICONTROL Étape à]** : Sélectionnez l’étape à exécuter.
-   * **[!UICONTROL Chemin du script]** : Le chemin d’accès à ECMAScript qui détermine si l’ **[!UICONTROL étape Atteindre l’étape]** doit être exécutée.
-   * **[!UICONTROL Script]** : ECMAScript qui détermine si l’ **[!UICONTROL étape Atteindre]** doit être exécutée.
+   * **[!UICONTROL Étape à suivre]**: Sélectionnez l’étape à exécuter.
+   * **[!UICONTROL Chemin du script]**: Le chemin d’accès à ECMAScript qui détermine s’il faut exécuter la variable **[!UICONTROL Atteindre l’étape]**.
+   * **[!UICONTROL Script]**: ECMAScript qui détermine s’il faut exécuter la variable **[!UICONTROL Atteindre l’étape]**.
 
 >[!CAUTION]
-Spécifiez le **[!UICONTROL chemin du script]** ou le **[!UICONTROL script]**. Les deux options ne peuvent pas être utilisées simultanément. Si vous spécifiez des valeurs dans les deux propriétés, l’étape utilise le **[!UICONTROL chemin du script]**.
+>
+>Spécifiez le **[!UICONTROL chemin du script]** ou le **[!UICONTROL script]**. Les deux options ne peuvent pas être utilisées simultanément. Si vous spécifiez des valeurs dans les deux propriétés, l’étape utilise le **[!UICONTROL chemin du script]**.
 
 #### Simulation d’une boucle for {#simulating-a-for-loop}
 
@@ -149,7 +151,7 @@ La simulation d’une boucle for requiert que vous comptiez le nombre d’itéra
 * Le compte représente généralement un index des éléments qui ont été suivis d’actions dans le workflow.
 * Le nombre est évalué comme critère de sortie de la boucle.
 
-Par exemple, pour mettre en œuvre un workflow qui effectue une action sur plusieurs nœuds JCR, vous pouvez utiliser un compteur de boucles en tant qu’index pour les nœuds. Pour conserver le nombre, stockez une valeur `integer` dans la carte de données de l’instance de workflow. Utilisez le script de l’étape définie dans **[!UICONTROL Atteindre l’étape]** pour incrémenter le nombre, ainsi que pour comparer le nombre au critère de sortie.
+Par exemple, pour mettre en œuvre un workflow qui effectue une action sur plusieurs nœuds JCR, vous pouvez utiliser un compteur de boucles en tant qu’index pour les nœuds. Pour conserver le décompte, stockez une `integer` dans la carte de données de l’instance de workflow. Utilisez le script de l’étape définie dans **[!UICONTROL Atteindre l’étape]** pour incrémenter le nombre, ainsi que pour comparer le nombre au critère de sortie.
 
 ```
 function check(){
@@ -180,40 +182,45 @@ function check(){
 La **[!UICONTROL division OU]** crée une division dans le workflow, après quoi seule une branche est active. Cette étape permet d’ajouter des chemins de traitement conditionnels dans le processus. Vous ajoutez des étapes de processus à chaque branche selon vos besoins.
 
 >[!NOTE]
-Pour plus d’informations sur la création d’une division OU, voir : [https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html](https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html)
+>
+>Pour plus d’informations sur la création d’une division OU, voir : [https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html](https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html)
 
 ![wf-29](assets/wf-29.png)
 
 ### Division OU – configuration {#or-split-configuration}
 
-* Modifiez les propriétés **[!UICONTROL OU Split]** :
+* Modifiez la variable **[!UICONTROL Division OU]** properties:
 
    * **[!UICONTROL Courant]**
 
       * Sélectionnez le nombre de branches requis : 2, 3, 4 ou 5.
-   * **[!UICONTROL Branche :  *x*>]**
+   * **[!UICONTROL Branche : *x*>]**
 
       * **[!UICONTROL Chemin du script]** : chemin d’accès au fichier contenant le script.
       * **[!UICONTROL Script]** : ajoutez le script dans la boîte de dialogue.
       * **[!UICONTROL Chemin par défaut]** : la branche par défaut est suivie lorsque plusieurs branches renvoient la valeur true. Vous pouvez spécifier uniquement une branche par défaut.
 
    >[!NOTE]
-   Il existe un onglet distinct pour chaque branche :
-   * Les scripts de chaque branche sont évalués un par un.
-   * Les branches sont évaluées de gauche à droite.
-   * Le premier script qui renvoie true est exécuté.
-   * Si aucune branche n’a la valeur true, le workflow ne progresse pas.
+   >
+   >Il existe un onglet distinct pour chaque branche :
+   >
+   >* Les scripts de chaque branche sont évalués un par un.
+   >* Les branches sont évaluées de gauche à droite.
+   >* Le premier script qui renvoie true est exécuté.
+   >* Si aucune branche n’a la valeur true, le workflow ne progresse pas.
 
 
    >[!CAUTION]
-   Spécifiez le **[!UICONTROL chemin du script]** ou le **[!UICONTROL script]**. Les deux options ne peuvent pas être utilisées simultanément. Si vous spécifiez des valeurs dans les deux propriétés, l’étape utilise le **[!UICONTROL chemin du script]**.
+   >
+   >Spécifiez le **[!UICONTROL chemin du script]** ou le **[!UICONTROL script]**. Les deux options ne peuvent pas être utilisées simultanément. Si vous spécifiez des valeurs dans les deux propriétés, l’étape utilise le **[!UICONTROL chemin du script]**.
 
    >[!NOTE]
-   Voir [Définition d’une règle pour une division OUI](/help/sites-developing/workflows-models.md#example-defining-a-rule-for-an-or-split).
+   >
+   >Voir [Définition d’une règle pour une division OUI](/help/sites-developing/workflows-models.md#example-defining-a-rule-for-an-or-split).
 
 * Ajoutez des étapes de workflow aux branches selon vos besoins.
 
-## Étapes et programmes de sélection des participants  {#participant-steps-and-choosers}
+## Étapes et programmes de sélection des participants {#participant-steps-and-choosers}
 
 ### Étape du participant {#participant-step}
 
@@ -221,7 +228,7 @@ Une **[!UICONTROL étape du participant]** vous permet d’attribuer la possessi
 
 Bien que ceci ne soit pas directement associé, l’autorisation de l’utilisateur doit être prise en compte lors de l’attribution d’une action ; l’utilisateur doit avoir accès à la page qui est la charge utile du workflow.
 
-#### Étape du participant – configuration  {#participant-step-configuration}
+#### Étape du participant – configuration {#participant-step-configuration}
 
 Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
@@ -229,14 +236,18 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 * [**[!UICONTROL Utilisateur/Groupe]**](#step-properties-user-group-tab)
 
 >[!NOTE]
-L’initiateur du workflow est toujours averti lorsque :
-* le workflow est terminé ;
-* le workflow est interrompu.
+>
+>L’initiateur du workflow est toujours averti lorsque :
+>
+>* le workflow est terminé ;
+>* le workflow est interrompu.
 
+>
 
 
 >[!NOTE]
-Certaines propriétés doivent être configurées pour activer les notifications électroniques. Vous pouvez également personnaliser le modèle de courrier électronique ou en ajouter un pour une nouvelle langue. Voir [Configuration des notifications par e-mail](/help/sites-administering/notification.md) pour configurer les notifications par e-mail dans AEM.
+>
+>Certaines propriétés doivent être configurées pour activer les notifications électroniques. Vous pouvez également personnaliser le modèle de courrier électronique ou en ajouter un pour une nouvelle langue. Voir [Configuration des notifications par e-mail](/help/sites-administering/notification.md) pour configurer les notifications électroniques dans AEM.
 
 ### Étape de participant de la boîte de dialogue {#dialog-participant-step}
 
@@ -246,7 +257,7 @@ Lors de chaque étape, la boîte de dialogue **[!UICONTROL Terminer l’élémen
 
 Pour configurer l’étape, vous spécifiez le groupe ou l’utilisateur auquel attribuer l’élément de travail et le chemin de la boîte de dialogue.
 
-#### Étape de participant de boîte de dialogue – configuration  {#dialog-participant-step-configuration}
+#### Étape de participant de boîte de dialogue – configuration {#dialog-participant-step-configuration}
 
 Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
@@ -254,9 +265,9 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 * [**[!UICONTROL Utilisateur/Groupe]**](#step-properties-user-group-tab)
 * **[!UICONTROL Boîte de dialogue]**
 
-   * **[!UICONTROL Chemin de la boîte de dialogue**] : Chemin d’accès au noeud dialog de la boîte de dialogue [que vous créez](#dialog-participant-step-creating-a-dialog).
+   * **[!UICONTROL Chemin de la boîte de dialogue**]: Chemin d’accès au noeud de boîte de dialogue de la propriété [boîte de dialogue que vous créez](#dialog-participant-step-creating-a-dialog).
 
-#### Étape de participant de la boîte de dialogue - Création d’une boîte de dialogue{#dialog-participant-step-creating-a-dialog}
+#### Étape de participant de boîte de dialogue - Création d’une boîte de dialogue{#dialog-participant-step-creating-a-dialog}
 
 Pour créer une boîte de dialogue :
 
@@ -282,9 +293,9 @@ Vous pouvez stocker des données de widget dans la charge utile de workflow ou d
 
       `nodename`
 
-   * Les données sont stockées dans la propriété `nodename` de l’élément de travail `metadata`. Les données sont conservées si la boîte de dialogue utilisée ultérieurement présente la même charge utile.
+   * Les données sont stockées dans la variable `nodename` de l’élément de travail ; `metadata`. Les données sont conservées si la boîte de dialogue utilisée ultérieurement présente la même charge utile.
 
-#### Étape de participant de la boîte de dialogue – définition de boîte de dialogue  {#dialog-participant-step-dialog-definition}
+#### Étape de participant de la boîte de dialogue – définition de boîte de dialogue {#dialog-participant-step-dialog-definition}
 
 1. **[!UICONTROL Structure de boîte de dialogue]**
 
@@ -308,11 +319,12 @@ Vous pouvez stocker des données de widget dans la charge utile de workflow ou d
    ```
 
    >[!NOTE]
-   Pour plus d’informations, voir [Création et configuration d’une boîte de dialogue](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog).
+   >
+   >Pour plus d’informations, voir [Création et configuration d’une boîte de dialogue](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog).
 
 1. **[!UICONTROL Propriété Chemin de la boîte de dialogue]**
 
-   **[!UICONTROL Étape du participant de la boîte de dialogue]** possède la propriété **[!UICONTROL Chemin de la boîte de dialogue]** (ainsi que les propriétés d’une [Étape du participant](#participant-step)). La valeur de la propriété **[!UICONTROL Chemin de la boîte de dialogue]** est le chemin du nœud `dialog` de la boîte de dialogue.
+   Le **[!UICONTROL Étape de participant de la boîte de dialogue]** contient la variable **[!UICONTROL Chemin de la boîte de dialogue]** (ainsi que les propriétés d’une propriété [Étape du participant](#participant-step)). La valeur de la propriété **[!UICONTROL Chemin de la boîte de dialogue]** est le chemin du nœud `dialog` de la boîte de dialogue.
 
    Par exemple, la boîte de dialogue se trouve dans un composant nommé `EmailWatch` qui est stocké dans le nœud :
 
@@ -326,7 +338,7 @@ Vous pouvez stocker des données de widget dans la charge utile de workflow ou d
 
 1. **Exemple de définition de boîte de dialogue**
 
-   Le fragment de code XML suivant représente une boîte de dialogue qui stocke une valeur `String` dans le noeud `watchEmail` du contenu de la charge utile. Le nœud de titre représente le composant [textfield](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) :
+   Le fragment de code XML suivant représente une boîte de dialogue qui stocke une `String` dans la variable `watchEmail` noeud du contenu de la payload. Le nœud de titre représente le composant [textfield](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) :
 
    ```xml
    jcr:primaryType="nt:unstructured" 
@@ -364,7 +376,7 @@ Le composant **[!UICONTROL Étape choix dynamique de participant]** est semblabl
 
 Pour configurer l’étape, vous sélectionnez un **[!UICONTROL programme de sélection des participants]** qui identifie le participant auquel attribuer l’élément de travail, ainsi qu’une boîte de dialogue.
 
-#### Étape choix dynamique de participant – configuration  {#dynamic-participant-step-configuration}
+#### Étape choix dynamique de participant – configuration {#dynamic-participant-step-configuration}
 
 Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
@@ -379,7 +391,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
    * **[!UICONTROL Chemin de la boîte de dialogue]** : chemin du nœud de la [boîte de dialogue que vous créez (avec l’**étape de participant de la boîte de dialogue**)](#dialog-participant-step-creating-a-dialog).
 
-#### Étape choix dynamique de participant – développement du programme de sélection des participants  {#dynamic-participant-step-developing-the-participant-chooser}
+#### Étape choix dynamique de participant – développement du programme de sélection des participants {#dynamic-participant-step-developing-the-participant-chooser}
 
 Vous créez le programme de sélection des participants. Par conséquent, vous pouvez utiliser toute logique ou tout critère de sélection. Par exemple, le programme de sélection des participants peut sélectionner l’utilisateur (dans un groupe) qui a le moins d’éléments de travail. Vous pouvez créer un nombre illimité de programmes de sélection des participants à utiliser avec des instances différentes du composant **Étape choix dynamique de participant** dans vos modèles de workflow.
 
@@ -387,15 +399,18 @@ Créez un service OSGi ou un ECMAScript qui sélectionne un utilisateur auquel a
 
 * **[!UICONTROL ECMAscript]**
 
-   Les scripts doivent inclure une fonction nommée getParticipant qui renvoie un ID utilisateur sous la forme d’une valeur `String`. Stockez vos scripts personnalisés dans, par exemple, le dossier `/apps/myapp/workflow/scripts` ou un sous-dossier.
+   Les scripts doivent inclure une fonction nommée getParticipant qui renvoie un ID utilisateur en tant que `String` . Stockez vos scripts personnalisés dans, par exemple, le `/apps/myapp/workflow/scripts` ou un sous-dossier.
 
    Un exemple de script est inclus dans une instance AEM standard :
 
    `/libs/workflow/scripts/initiator-participant-chooser.ecma`
 
    >[!CAUTION]
-   Vous ne devez *rien* modifier dans le chemin `/libs`.
-   En effet, le contenu de `/libs` est remplacé la prochaine fois que vous mettez à niveau votre instance (et peut l’être lorsque vous appliquez un correctif ou un Feature Pack).
+   >
+   >Vous ne devez *rien* modifier dans le chemin `/libs`.
+   >
+   >
+   >En effet, le contenu de `/libs` est remplacé la prochaine fois que vous mettez à niveau votre instance (et peut l’être lorsque vous appliquez un correctif ou un Feature Pack).
 
    Ce script choisit l’initiateur de workflow en tant que participant :
 
@@ -406,29 +421,34 @@ Créez un service OSGi ou un ECMAScript qui sélectionne un utilisateur auquel a
    ```
 
    >[!NOTE]
-   Le composant **[!UICONTROL Programme de sélection des participants de l’initiateur de workflow]** étend l’**[!UICONTROL étape du participant dynamique]** et utilise ce script comme implémentation de l’étape.
+   >
+   >Le **[!UICONTROL Programme de sélection des participants de l’initiateur de workflow]** étend le composant **[!UICONTROL Étape choix dynamique de participant]** et utilise ce script comme implémentation de l’étape.
 
 * **[!UICONTROL Service OSGi]**
 
-   Les services doivent implémenter l’interface [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) . L’interface définit les membres suivants :
+   Les services doivent mettre en oeuvre la variable [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) . L’interface définit les membres suivants :
 
    * `SERVICE_PROPERTY_LABEL` field : Utilisez ce champ pour spécifier le nom du programme de sélection des participants. Le nom s’affiche dans la liste des programmes de sélection des participants disponibles dans les propriétés **[!UICONTROL Étape choix dynamique de participant]**.
-   * `getParticipant` method : Renvoie l’identifiant principal résolu dynamiquement en tant que  `String` valeur.
+   * `getParticipant` method : Renvoie l’identifiant principal résolu dynamiquement en tant que `String` .
 
    >[!CAUTION]
-   La méthode `getParticipant` renvoie l’ID d’entité de sécurité résolu dynamiquement. Il peut s’agir d’un ID de groupe ou d’utilisateur.
-   Toutefois, un ID de groupe ne peut être utilisé pour une **[!UICONTROL étape de participant]**, lorsqu’une liste de participants est renvoyée. Pour une **[!UICONTROL Étape choix dynamique de participant]** , une liste vide est renvoyée et ne peut pas être utilisée pour la délégation.
+   >
+   >Le `getParticipant` renvoie l’identifiant principal résolu dynamiquement. Il peut s’agir d’un ID de groupe ou d’utilisateur.
+   >
+   >
+   >Toutefois, un ID de groupe ne peut être utilisé pour une **[!UICONTROL étape de participant]**, lorsqu’une liste de participants est renvoyée. Pour un **[!UICONTROL Étape choix dynamique de participant]** une liste vide est renvoyée et ne peut pas être utilisée pour la délégation.
 
    Pour rendre votre mise en œuvre disponible aux composants **[!UICONTROL Étape choix dynamique de participant]**, ajoutez votre classe Java à un lot OSGi qui exporte le service et déployez le lot vers le serveur AEM.
 
    >[!NOTE]
-   Le **[!UICONTROL programme de sélection aléatoire des participants]** est un exemple de service qui sélectionne un utilisateur aléatoire ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). L’exemple de composant d’étape **[!UICONTROL Programme de sélection aléatoire des participants]** étend l’ **[!UICONTROL Étape choix dynamique de participant]** et utilise ce service comme implémentation de l’étape.
+   >
+   >Le **[!UICONTROL programme de sélection aléatoire des participants]** est un exemple de service qui sélectionne un utilisateur aléatoire ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). Le **[!UICONTROL Programme de sélection aléatoire des participants]** exemple de composant d’étape étend **[!UICONTROL Étape choix dynamique de participant]** et utilise ce service comme implémentation de l’étape.
 
 #### Étape choix dynamique de participant – exemple de service Programme de sélection des participants {#dynamic-participant-step-example-participant-chooser-service}
 
 La classe Java suivante met en œuvre l’interface `ParticipantStepChooser`. La classe renvoie le nom du participant qui a initié le workflow. Le code utilise la même logique que l’exemple de script ( `initator-participant-chooser.ecma`).
 
-L’annotation `@Property` définit la valeur du champ `SERVICE_PROPERTY_LABEL` sur `Workflow Initiator Participant Chooser`.
+Le `@Property` annotation définit la valeur de la propriété `SERVICE_PROPERTY_LABEL` champ à `Workflow Initiator Participant Chooser`.
 
 ```java
 package com.adobe.example;
@@ -467,7 +487,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 }
 ```
 
-Dans la boîte de dialogue des propriétés **[!UICONTROL Étape choix dynamique de participant]**, la liste **[!UICONTROL Programme de sélection des participants]** contient l’élément `Workflow Initiator Participant Chooser (script)`, qui représente ce service.
+Dans le **[!UICONTROL Étape choix dynamique de participant]** propriétés, boîte de dialogue **[!UICONTROL Programme de sélection des participants]** La liste inclut l’élément `Workflow Initiator Participant Chooser (script)`, qui représente ce service.
 
 &quot;Lorsque le modèle de workflow est démarré, le journal indique l’identifiant de l’utilisateur qui a lancé le workflow et qui se voit attribuer l’élément de travail. Dans cet exemple, l’utilisateur `admin` a commencé le workflow.
 
@@ -480,7 +500,8 @@ L’**[!UICONTROL étape de participant du formulaire]** présente un formulaire
 Pour configurer l’étape, vous spécifiez le groupe ou l’utilisateur auquel attribuer l’élément de travail et le chemin du formulaire.
 
 >[!CAUTION]
-Cette section traite de la [section Formulaires des composants de base pour la création de pages](/help/sites-authoring/default-components-foundation.md#form).
+>
+>Cette section traite de la [section Formulaires des composants de base pour la création de pages](/help/sites-authoring/default-components-foundation.md#form).
 
 #### Étape de participant du formulaire – configuration {#form-participant-step-configuration}
 
@@ -490,35 +511,35 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 * [**[!UICONTROL Utilisateur/Groupe]**](#step-properties-user-group-tab)
 * **[!UICONTROL Formulaire]**
 
-   * **[!UICONTROL Form Path]** : Chemin d’accès au  [formulaire que vous créez](#form-participant-step-creating-the-form).
+   * **[!UICONTROL Chemin du formulaire]**: Le chemin d’accès à [formulaire que vous créez](#form-participant-step-creating-the-form).
 
 #### Étape de participant du formulaire – création de formulaire {#form-participant-step-creating-the-form}
 
 Créez un formulaire à utiliser avec une **[!UICONTROL étape de participant du formulaire]** de façon normale. Toutefois, les formulaires d’une étape de participant du formulaire doivent avoir les configurations suivantes :
 
-* Le composant **[!UICONTROL Début du formulaire]** doit avoir la propriété **[!UICONTROL Type d’action]** définie sur `Edit Workflow Controlled Resource(s)`.
+* Le **[!UICONTROL Début du formulaire]** doit avoir la propriété **[!UICONTROL Type d’action]** définie sur `Edit Workflow Controlled Resource(s)`.
 
-* Le composant **[!UICONTROL Début du formulaire]** doit avoir une valeur pour la propriété `Form Identifier`.
+* Le **[!UICONTROL Début du formulaire]** doit avoir une valeur pour la variable `Form Identifier` .
 
 * Les composants de formulaire doivent présenter la propriété **Nom de l’élément** définie sur le chemin du nœud dans lequel les données de champs sont stockées. Le chemin d’accès doit localiser un noeud dans le contenu de la charge utile de workflow. La valeur utilise le format suivant :
 
    `./jcr:content/path_to_node`
 
-* Le formulaire doit inclure un composant **[!UICONTROL Bouton(s) d’envoi de workflow]** . Vous ne configurez pas de propriétés du composant.
+* Le formulaire doit inclure un **[!UICONTROL Bouton(s) d’envoi de workflow]** composant. Vous ne configurez pas de propriétés du composant.
 
-Les exigences de votre workflow indiquent où vous devez stocker les données de champs. Par exemple, les données de champs peuvent être utilisées pour configurer les propriétés du contenu de la page. La valeur suivante d’une propriété **[!UICONTROL Nom de l’élément]** stocke les données de champ comme valeur de la propriété `redirectTarget` du noeud `jcr:content` :
+Les exigences de votre workflow indiquent où vous devez stocker les données de champs. Par exemple, les données de champs peuvent être utilisées pour configurer les propriétés du contenu de la page. La valeur suivante d’une **[!UICONTROL Nom de l’élément]** stocke les données de champ comme valeur de la propriété `redirectTarget` de la propriété `jcr:content` node:
 
 `./jcr:content/redirectTarget`
 
-Dans l’exemple suivant, les données de champ sont utilisées comme contenu d’un composant **[!UICONTROL Texte]** sur la page de payload :
+Dans l&#39;exemple suivant, les données de champ sont utilisées comme contenu d&#39;une **[!UICONTROL Texte]** sur la page de payload :
 
 `./jcr:content/par/text_3/text`
 
-&quot;Le premier exemple peut être utilisé pour n’importe quelle page rendue par le composant `cq:Page`. Le second exemple peut uniquement être utilisé lorsque la page de la charge utile inclut un composant **Texte** possédant l’ID `text_3`.
+&quot;Le premier exemple peut être utilisé pour n’importe quelle page qui `cq:Page` effectue le rendu du composant. Le second exemple peut uniquement être utilisé lorsque la page de la charge utile inclut un composant **Texte** possédant l’ID `text_3`.
 
 Le formulaire peut se trouver n’importe où dans le référentiel, toutefois les utilisateurs du workflow doivent être autorisés à lire le formulaire.
 
-### Programme de sélection aléatoire des participants  {#random-participant-chooser}
+### Programme de sélection aléatoire des participants {#random-participant-chooser}
 
 L’étape **[!UICONTROL Programme de sélection aléatoire des participants]** est un programme de sélection des participants qui attribue l’élément de travail généré à un utilisateur qui est choisi de manière aléatoire à partir d’une liste.
 
@@ -533,11 +554,11 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
    * **[!UICONTROL Participants]** : spécifie la liste des utilisateurs disponibles pour la sélection. Pour ajouter un utilisateur à la liste, cliquez sur **[!UICONTROL Ajouter un élément]**, puis saisissez le chemin du répertoire de base du nœud de l’utilisateur ou l’ID de l’utilisateur. L’ordre des utilisateurs n’affecte pas la probabilité de se voir attribuer un élément de travail.
 
-### Programme de sélection des participants de l’initiateur de workflow  {#workflow-initiator-participant-chooser}
+### Programme de sélection des participants de l’initiateur de workflow {#workflow-initiator-participant-chooser}
 
 L’étape **[!UICONTROL Programme de sélection des participants de l’initiateur de workflow]** est un programme de sélection des participants qui attribue l’élément de travail généré à l’utilisateur qui a démarré le workflow. Il n’y a aucune propriété à configurer à part les propriétés de l’onglet **[!UICONTROL Courant]**.
 
-#### Programme de sélection des participants de l’initiateur de workflow – configuration  {#workflow-initiator-participant-chooser-configuration}
+#### Programme de sélection des participants de l’initiateur de workflow – configuration {#workflow-initiator-participant-chooser-configuration}
 
 Pour configurer l’étape, modifiez-la à l’aide des onglets suivants :
 
@@ -545,7 +566,7 @@ Pour configurer l’étape, modifiez-la à l’aide des onglets suivants :
 
 ## Étape du processus {#process-step}
 
-Une **[!UICONTROL Étape du processus]** exécute un ECMAScript ou appelle un service OSGi pour effectuer un traitement automatique.
+A **[!UICONTROL Étape du processus]** exécute un ECMAScript ou appelle un service OSGi pour effectuer un traitement automatique.
 
 ![wf-32](assets/wf-32.png)
 
@@ -559,7 +580,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
    * **[!UICONTROL Processus]** : mise en œuvre de processus à exécuter. Utilisez le menu déroulant pour sélectionner le service ECMAScript ou OSGi. Pour obtenir des informations sur :
 
       * les ECMAScripts et les services OSGi standard, voir [Processus intégrés pour les étapes du processus](/help/sites-developing/workflows-process-ref.md) ;
-      * Création de ECMAScripts pour une étape **[!UICONTROL Processus]**, voir [Mise en oeuvre d’une étape de processus avec un ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
-      * Création de services OSGi pour une étape **[!UICONTROL Processus]**, voir [Mise en oeuvre d’une étape de processus avec une classe Java](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+      * Création de ECMAScripts pour un **[!UICONTROL Processus]** étape, voir [Mise en oeuvre d’une étape de processus avec un ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+      * Création de services OSGi pour un **[!UICONTROL Processus]** étape, voir [Mise en oeuvre d’une étape de processus avec une classe Java](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
    * **[!UICONTROL Avance du gestionnaire]** : sélectionnez cette option pour avancer automatiquement le workflow à l’étape suivante après l’exécution. Si cette option n’est pas sélectionnée, le script de mise en œuvre doit gérer l’avancement du workflow.
    * **[!UICONTROL Arguments]** : arguments à transmettre au processus.

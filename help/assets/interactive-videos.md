@@ -1,19 +1,19 @@
 ---
 title: Vidéos interactives
-seo-title: Vidéos interactives
+seo-title: Interactive Videos
 description: Découvrez comment utiliser du contenu vidéo interactif dans Dynamic Media
-seo-description: Découvrez comment utiliser du contenu vidéo interactif dans Dynamic Media
+seo-description: Learn how to work with interactive video in dynamic media
 uuid: 5de8844f-d5d0-4fda-b59e-74682eda949f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
-feature: Vidéos interactives, Vidéo
+feature: Interactive Videos,Video
 role: User
 source-git-commit: af8a4d73d530c9438ff63a1b200be2d6e97c232c
 workflow-type: tm+mt
-source-wordcount: '5987'
-ht-degree: 76%
+source-wordcount: '5972'
+ht-degree: 79%
 
 ---
 
@@ -25,9 +25,9 @@ Lorsque la vidéo se termine, un résumé visuel de toutes les offres s’affich
 
 Voir aussi [Images interactives](interactive-images.md).
 
-## Vidéos interactives à l’œuvre  {#interactive-video-in-action}
+## Vidéos interactives à l’œuvre {#interactive-video-in-action}
 
-Pour voir une vidéo interactive Shoppable en action, cliquez sur [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), faites défiler la page jusqu’à l’en-tête **[!UICONTROL Médias Shoppable]**, puis cliquez sur la vidéo Shoppable.
+Pour visionner une vidéo interactive pouvant faire l’objet d’un achat en action, cliquez sur [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), faites défiler l’écran jusqu’au **[!UICONTROL Média Shoppable]** sur la page, puis cliquez sur la vidéo Shoppable.
 
 * Pendant la lecture, lorsque les produits sont utilisés dans la vidéo, le produit identique s’affiche à droite sous forme de miniature.
 
@@ -35,22 +35,22 @@ Pour voir une vidéo interactive Shoppable en action, cliquez sur [Démonstratio
 
 <!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
-![Image d’une ](assets/chlimage_1-126.png) *vidéo interactive ShoppableCapture d’images vidéo d’une vidéo interactive pouvant faire l’objet d’un achat.*
+![Image d’une vidéo interactive pouvant faire l’objet d’un achat](assets/chlimage_1-126.png) *Capture d’images vidéo à partir d’une vidéo interactive Shoppable.*
 
 >[!NOTE]
 >
 >Si vous créez une vidéo interactive pour lancer une page web lorsqu’un utilisateur clique sur une miniature, certains périphériques empêchent l’ouverture de la page web contextuelle. Dans ce cas, vous devez modifier le paramètre de blocage des fenêtres contextuelles sur le dispositif. Par exemple, sur un Apple iPhone 6, appuyez sur **[!UICONTROL Paramètres]** > **safari** > **Bloquer les fenêtres contextuelles**, puis faites glisser la commande sur **[!UICONTROL Désactivé]**. À présent, lorsque vous visionnez une vidéo interactive et que vous cliquez sur une vignette, vous êtes invité à ouvrir la fenêtre contextuelle. Si vous acceptez, la page web s’affiche.
 
-## Découvrez comment les vidéos interactives sont créées  {#watch-how-interactive-videos-are-created}
+## Découvrez comment les vidéos interactives sont créées {#watch-how-interactive-videos-are-created}
 
-Suivez la [procédure détaillée pour créer des vidéos interactives](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA). (7 minutes 30 secondes) Bien que la présentation vidéo porte la marque Assets on Demand, les principes et les étapes s’appliquent toujours à la vidéo interactive dans Adobe Experience Manager Assets.
+Lire la présentation en cours [création de vidéos interactives](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA). (7 minutes 30 secondes) Bien que la présentation vidéo porte la marque Assets on Demand, les principes et les étapes s’appliquent toujours à la vidéo interactive dans Adobe Experience Manager Assets.
 
 ## Webinaire « Succès des clients Adobe »  {#adobe-customer-success-webinar}
 
-Le webinaire &quot;Utilisation de la vidéo interactive, du partage de liens et du partage YouTube dans les ressources du Experience Manager&quot; vous explique comment utiliser la vidéo interactive et d’autres fonctionnalités pour lier des événements dépendant de la conversion dans votre contenu marketing vidéo.
+Le webinaire &quot;Utilisation de la vidéo interactive, du partage de liens et du partage YouTube dans Experience Manager Assets&quot; explique comment utiliser la vidéo interactive et d’autres fonctionnalités pour lier des événements pilotés par la conversion à votre contenu marketing vidéo.
 
 >[!NOTE]
-[Utilisation de la vidéo interactive, du partage de liens et du partage YouTube dans les ressources](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) Experience Manager.
+[Utilisation de la vidéo interactive, du partage de liens et du partage YouTube dans Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## Démarrage rapide : vidéos interactives {#quick-start-interactive-videos}
 
@@ -58,22 +58,22 @@ La description du workflow étape par étape qui suit est conçue pour vous aide
 
 Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel reposant sur cette page web de démonstration de démarrage qui n’est *pas encore* interactive:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=fr)
 
 Les **exemples** permettent d’illustrer les étapes d’intégration de vidéos interactives à votre site web.
 
 Lorsque vous avez terminé le tutoriel dans la dernière section Exemple, la page web de démonstration finale avec la vidéo interactive complètement intégrée ressemble à ce qui suit :
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=fr)
 
 **Processus vidéo interactif :**
 
 1. **(Facultatif) Identification de variables d’aperçu rapide** : commencez par identifier les variables dynamiques utilisées par votre mise en œuvre existante de l’aperçu rapide. Vous utilisez des variables pour mapper des vignettes de produit à l’aperçu rapide du produit correspondant lorsque vous créez votre vidéo interactive. Consulter [(Facultatif) Identification des variables d’aperçu rapide](#optional-identifying-quickview-variables).
 
-   *Cette étape n’est nécessaire que si toutes les conditions suivantes sont vraies* :
+   *Cette étape n’est nécessaire que si toutes les conditions suivantes sont vraies*:
 
    * Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
-   * Votre mise en oeuvre de Experience Manager n’utilise *pas* une structure d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir de n’importe quelle solution de commerce électronique, comme IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Voir [Concepts de commerce électronique dans Experience Manager Assets](/help/sites-administering/concepts.md).
+   * Votre mise en oeuvre de Experience Manager fonctionne *not* utilisez un framework d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir de n’importe quelle solution de commerce électronique, telle qu’IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Voir [Concepts d’eCommerce dans Experience Manager Assets](/help/sites-administering/concepts.md).
 
 1. **(Facultatif) Création d’un paramètre prédéfini de visionneuse de vidéos interactives** : personnalisez l’aspect et le comportement des différents composants qui constituent la visionneuse, comme la barre vidéo et les miniatures interactives.
 
@@ -105,8 +105,7 @@ Voir [Création d’un paramètre prédéfini de visionneuse](managing-viewer-pr
 >[!NOTE]
 Cette tâche n’est nécessaire que si les conditions ci-dessous sont vraies :
 * Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
-* Votre mise en oeuvre de Experience Manager n’utilise *pas* une structure d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir de n’importe quelle solution de commerce électronique, comme IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Voir [Concepts de commerce électronique dans Experience Manager Assets](/help/sites-administering/concepts.md).
-
+* Votre mise en oeuvre de Experience Manager fonctionne *not* utilisez un framework d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir de n’importe quelle solution de commerce électronique, telle qu’IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Voir [Concepts d’eCommerce dans Experience Manager Assets](/help/sites-administering/concepts.md).
 Si votre mise en œuvre d’Experience Manager utilise l’e-commerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
 
 Commencez par identifier les variables dynamiques utilisées par votre mise en œuvre existante d’aperçu rapide pour faire correspondre les miniatures de produits à l’aperçu rapide des produits correspondants lors du processus de création de vidéo interactive.
@@ -117,9 +116,9 @@ Il est important d’identifier correctement les variables qui sont requises pou
 
 Il peut parfois être nécessaire de consulter les informaticiens responsables de votre implémentation d’aperçu rapide existante. Il est probable qu’ils connaissent le jeu minimum de données nécessaires pour identifier l’aperçu rapide dans le système. Cependant, il est possible d’analyser le comportement existant du code en front-end.
 
-La plupart des implémentations d’aperçu rapide utilisent le paradigme suivant :
+La plupart des implémentations d’aperçu rapide utilisent le modèle suivant :
 
-* L’utilisateur active un élément d’interface utilisateur sur le site web. Par exemple, en cliquant sur un bouton **[!UICONTROL Aperçu rapide]**.
+* L’utilisateur active un élément d’interface utilisateur sur le site web. Par exemple, en cliquant sur un **[!UICONTROL Aperçu rapide]** bouton .
 * Le site web envoie une demande Ajax au serveur principal afin de charger les données ou le contenu de l’aperçu rapide, le cas échéant.
 * Les données de l’aperçu rapide sont traduites en contenu en préparation du rendu sur la page web.
 * Enfin, le code en front-end effectue le rendu visuel de ce contenu à l’écran.
@@ -128,9 +127,9 @@ L’approche, par conséquent, consiste à visiter différentes zones de votre s
 
 Normalement, il n’est pas nécessaire d’utiliser des outils de débogage spécialisés. Les navigateurs web modernes incluent des inspecteurs web qui font un travail correct. Vous trouverez ci-dessous quelques exemples de navigateurs web qui incluent des inspecteurs web :
 
-* Pour afficher toutes les requêtes HTTP sortantes dans Google Chrome, utilisez le raccourci clavier `F12` (Windows) ou `Command + Options + I` (Mac) pour ouvrir le panneau **[!UICONTROL Outils de développement]**, puis cliquez sur l’onglet **[!UICONTROL Réseau]** .
+* Pour afficher toutes les requêtes HTTP sortantes dans Google Chrome, utilisez le raccourci clavier `F12` (Windows) ou `Command + Options + I` (Mac) pour ouvrir le **[!UICONTROL Outils de développement]** puis cliquez sur le bouton **[!UICONTROL Réseau]** .
 
-* Dans Mozilla Firefox, vous pouvez activer le module externe Firebug à l’aide du raccourci clavier `F12` (Windows) ou `Command + Options + I` (Mac) et utiliser son onglet **[!UICONTROL Net]**, ou vous pouvez utiliser l’outil Inspecteur intégré et son onglet Réseau.
+* Dans Mozilla Firefox, vous pouvez activer le module externe Firebug à l’aide du raccourci clavier . `F12` (Windows) ou `Command + Options + I` (Mac) et utilisez ses **[!UICONTROL Net]** ou vous pouvez utiliser l’outil Inspecteur intégré et son onglet Réseau.
 
 * Dans Internet Explorer, activez l’outil de débogage en appuyant sur `F12`.
 
@@ -189,9 +188,9 @@ Consultez ci-dessous les exemples d’URL d’aperçu rapide et les variables de
 
 **Exemple**
 
-Lorsque l’approche ci-dessus est appliquée au site web Exemple, vous disposez d’une page web avec plusieurs miniatures de produit, chacune ayant un bouton **[!UICONTROL VOIR PLUS]** :
+Lorsque l’approche ci-dessus est appliquée au site web Exemple, vous disposez d’une page web avec plusieurs miniatures de produit, chacune ayant une **[!UICONTROL EN SAVOIR PLUS]** button :
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Une fois que vous avez activé l’aperçu rapide de tous les produits disponibles dans la page, vous obtenez la liste de demandes d’aperçu rapide exécutées en arrière-plan ci-dessous :
 
@@ -229,17 +228,17 @@ En fonction de cette analyse, vous concluez que vous pouvez utiliser les deux va
 
 Vous êtes maintenant prêt à charger une vidéo et les ressources de vignette associées.
 
-## (En option) Création d’un paramètre prédéfini de la visionneuse de vidéo interactive  {#optional-creating-an-interactive-video-viewer-preset}
+## (En option) Création d’un paramètre prédéfini de la visionneuse de vidéo interactive {#optional-creating-an-interactive-video-viewer-preset}
 
-Vous pouvez ignorer cette tâche et passer à la tâche suivante si vous envisagez d’utiliser l’un des types de paramètres prédéfinis de visionneuse de vidéos interactives par défaut, prêts à l’emploi, appelés `Shoppable_Video_dark` ou `Shoppable_Video_light`.
+Vous pouvez ignorer cette tâche et passer à la tâche suivante si vous envisagez d’utiliser l’un des types de paramètres prédéfinis de visionneuse de vidéos interactives par défaut, prêts à l’emploi, connus sous le nom de `Shoppable_Video_dark` ou `Shoppable_Video_light`.
 
-Lorsqu’une miniature est sélectionnée dans l’environnement de création, un aperçu de la boîte de dialogue **[!UICONTROL Aperçu rapide]** s’affiche.
+Lorsqu’une miniature est sélectionnée dans l’environnement de création, un aperçu de la variable **[!UICONTROL Aperçu rapide]** s’affiche.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
 Vous avez la possibilité de créer votre propre paramètre prédéfini de visionneuse de vidéos interactives personnalisé. Vous pouvez déterminer, entre autres, le style de la visionneuse de vidéos, les vignettes interactives et l’affichage sous forme de grille des vignettes, qui s’affiche à la fin de la vidéo.
 
-Un paramètre prédéfini de visionneuse de vidéo interactive restitue correctement la vidéo et tous les segments de la chronologie que vous avez ajoutés. Il utilise également un exemple d’aperçu rapide par défaut lorsque vous cliquez sur une miniature de produit en mode **[!UICONTROL Aperçu]** afin que vous puissiez tester son interactivité avant de le publier.
+Un paramètre prédéfini de visionneuse de vidéo interactive restitue correctement la vidéo et tous les segments de la chronologie que vous avez ajoutés. Il utilise également un exemple d’aperçu rapide par défaut lorsque vous cliquez sur une miniature de produit dans **[!UICONTROL Aperçu]** afin que vous puissiez tester son interactivité avant de publier.
 
 Une fois le paramètre prédéfini de la visionneuse enregistré, son état est automatiquement définit sur **[!UICONTROL On]**(Activé) dans la page Paramètres prédéfinis de la visionneuse. Cet état signifie qu’il est visible dans le composant Dynamic Media et chaque fois que vous prévisualisez une vidéo avec ce paramètre prédéfini. **** Veillez à également publier manuellement votre nouveau paramètre prédéfini de visionneuse.
 
@@ -285,13 +284,13 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
    * Pointez sur l’image, puis appuyez sur **[!UICONTROL Autres actions]** (icône représentant des points de suspension) > **[!UICONTROL Modifier]**.
    * Appuyez sur l’image pour l’ouvrir dans la page Affichage des détails . Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier]**.
 
-1. Sur la page **[!UICONTROL Créer une vidéo interactive]** , effectuez l’une des opérations suivantes :
+1. Sur le **[!UICONTROL Créer une vidéo interactive]** , effectuez l’une des opérations suivantes :
 
-   * Appuyez sur le bouton **[!UICONTROL Lire]** pour lire la vidéo. Lorsqu’un produit, un service ou un détail particulier que vous souhaitez mettre en évidence est affiché, appuyez sur **[!UICONTROL Ajouter un segment]** dans la barre d’outils. Répétez cette opération jusqu’à ce que vous ayez atteint la fin de la vidéo.
+   * Appuyez sur le bouton **[!UICONTROL Play]** pour pouvoir lire la vidéo. Lorsqu’un produit, un service ou un détail particulier que vous souhaitez mettre en évidence est affiché, appuyez sur **[!UICONTROL Ajouter un segment]** dans la barre d’outils. Répétez cette opération jusqu’à ce que vous ayez atteint la fin de la vidéo.
 
       Pour chaque segment à ajouter, affectez-lui une ou plusieurs images miniatures, puis liez ces miniatures aux pages produit d’aperçu rapide pour que les clients puissent acheter ou aux pages web pour plus d’informations.
 
-   * Appuyez sur le bouton **[!UICONTROL Lire]** pour lire la vidéo. Lorsqu’un produit, un service ou un détail particulier que vous souhaitez mettre en évidence est affiché, appuyez sur **[!UICONTROL Pause]** dans la barre d’outils. Appuyez sur **[!UICONTROL Ajouter le segment]**.
+   * Appuyez sur le bouton **[!UICONTROL Play]** pour pouvoir lire la vidéo. Lorsqu’un produit, un service ou un détail particulier que vous souhaitez mettre en évidence est affiché, appuyez sur **[!UICONTROL Pause]** dans la barre d’outils. Appuyez sur **[!UICONTROL Ajouter le segment]**.
 
       Continuez la lecture et la mise en pause de la vidéo à des points de la chronologie où vous souhaitez ajouter un segment jusqu’à la fin de la vidéo.
 
@@ -299,7 +298,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
 
    ![chlimage_1-128](assets/chlimage_1-128.png)
 
-   Selon la durée de la vidéo, la **[!UICONTROL durée du segment]** utilise par défaut les valeurs suivantes :
+   Selon la durée de la vidéo, la variable **[!UICONTROL Durée du segment]** La valeur par défaut est la suivante :
 
    <table> 
     <tbody> 
@@ -332,25 +331,25 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
 
    La chronologie vidéo utilise autant d’espace dans l’écran qu’il y a d’espace disponible. Ainsi, lorsque vous redimensionnez le navigateur, les segments que vous avez ajoutés conservent leur largeur correcte.
 
-   Pour illustration, les trois écrans ci-dessous utilisent la même vidéo. Notez que la largeur de chaque segment change en fonction du paramètre **[!UICONTROL Échelle de la chronologie]** .
+   Pour illustration, les trois écrans ci-dessous utilisent la même vidéo. Notez que la largeur de chaque segment change en fonction de la variable **[!UICONTROL Échelle de la chronologie]** .
 
    ![chlimage_1-129](assets/chlimage_1-129.png)
 
    Capture d’écran A
 
-   La capture d’écran A ci-dessus présente l’affichage par défaut d’une vidéo de produit de 29 secondes. La **[!UICONTROL échelle de la chronologie]** est définie par défaut sur 5 secondes.
+   La capture d’écran A ci-dessus présente l’affichage par défaut d’une vidéo de produit de 29 secondes. Le **[!UICONTROL Échelle de la chronologie]** est défini sur la valeur par défaut de 5 secondes.
 
    ![chlimage_1-130](assets/chlimage_1-130.png)
 
    Capture d’écran B
 
-   Dans la capture d’écran B ci-dessus, le curseur **[!UICONTROL Échelle de la chronologie]** a été glissé de la valeur par défaut de 5 secondes à 3 secondes. Notez que les **[!UICONTROL Échelle de la chronologie]** individuelles sont désormais toutes définies à des intervalles de 3 secondes.
+   Dans la capture d’écran B ci-dessus, la variable **[!UICONTROL Échelle de la chronologie]** a été glissé de la valeur par défaut de 5 secondes à 3 secondes. Notez que la variable **[!UICONTROL Échelle de la chronologie]** les horodatages sont désormais tous définis à des intervalles de 3 secondes.
 
    ![chlimage_1-131](assets/chlimage_1-131.png)
 
    Capture d’écran C
 
-   Dans la capture d’écran C ci-dessus, le paramètre **[!UICONTROL Échelle de la chronologie]** a été déplacé à 8 secondes. Notez la façon dont les segments contenant les vignettes de produit se sont réduits. Le zoom arrière de cette façon s’avère utile si la vidéo est longue et que vous souhaitez pouvoir afficher un aperçu de plus de segments que la largeur de la page ne pourrait en contenir normalement.
+   Dans la capture d’écran C ci-dessus, la variable **[!UICONTROL Échelle de la chronologie]** a été déplacé à 8 secondes. Notez la façon dont les segments contenant les vignettes de produit se sont réduits. Le zoom arrière de cette façon s’avère utile si la vidéo est longue et que vous souhaitez pouvoir afficher un aperçu de plus de segments que la largeur de la page ne pourrait en contenir normalement.
 
 1. (En option) Effectuez l’une des actions suivantes :
 
@@ -370,14 +369,14 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
 
    * Pour supprimer un segment
 
-      Sélectionnez le dernier segment qui se trouve sur la chronologie puis, sur la barre d’outils, appuyez sur **[!UICONTROL Supprimer le segment]**. Si plusieurs segments sont sélectionnés, la fonction **[!UICONTROL Supprimer le segment]** est désactivée.
+      Sélectionnez le dernier segment qui se trouve sur la chronologie puis, sur la barre d’outils, appuyez sur **[!UICONTROL Supprimer le segment]**. Si plusieurs segments sont sélectionnés, la variable **[!UICONTROL Supprimer le segment]** est désactivée.
 
       Vous ne pouvez supprimer que le dernier segment. Par exemple, pour supprimer tous les segments de la chronologie, vous devez toujours sélectionner le dernier segment et appuyer ensuite sur **[!UICONTROL Supprimer le segment]**.
 
 
 1. Sélectionnez un segment de temps auquel vous souhaitez associer une ou plusieurs images miniatures.
 1. A la droite de la vidéo, appuyez sur l’onglet **[!UICONTROL Contenu]**.
-1. Sous l’onglet **[!UICONTROL Contenu]**, appuyez sur **[!UICONTROL Sélectionner les ressources]**, puis recherchez et sélectionnez toutes les ressources d’image que vous souhaitez utiliser avec votre vidéo. Les ressources sélectionnées sont ajoutées au panneau **[!UICONTROL Sélecteur de ressources]** dans l’onglet **[!UICONTROL Contenu]**.
+1. Sous , **[!UICONTROL Contenu]** onglet, appuyez sur **[!UICONTROL Sélectionner les ressources]**, puis recherchez et sélectionnez toutes les ressources d’image que vous souhaitez utiliser avec votre vidéo. Les ressources sélectionnées sont ajoutées au **[!UICONTROL Sélecteur de ressources]** dans le panneau **[!UICONTROL Contenu]** .
 
 1. Dans le sélecteur de ressources, sous l’onglet Contenu, effectuez l’une des actions suivantes :
 
@@ -417,7 +416,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
        <li>Voir <a href="/help/assets/carousel-banners.md#identifying-hotspot-and-image-map-variables">Identification des variables de zone réactive</a>. Vous devez définir ces variables. </li> 
        <li>Par défaut, ce champ SKU utilise le nom de fichier de la ressource image sans l’extension. Si vous respectez une convention d’affectation de nom standard pour vos fichiers basée sur le SKU, les fichiers ne nécessitent généralement aucune modification supplémentaire. </li> 
        <li>Sinon, modifiez la valeur par défaut et entrez la valeur de SKU appropriée. Dans le champ de texte Valeur de SKU, entrez la SKU, qui est un identifiant unique pour chaque produit ou service que vous proposez. La valeur de SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer l’image sur laquelle l’utilisateur appuie à l’aperçu rapide d’un SKU spécifique.</li> 
-       </ul> <p>(Facultatif) S’il existe d’autres variables dans l’aperçu rapide que vous devez utiliser pour identifier un produit, appuyez sur <strong>Ajouter la variable générique</strong>. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, <code>category=Womens</code> est une variable ajoutée.</p> <p> </p> </td> 
+       </ul> <p>(Facultatif) S’il existe d’autres variables dans l’aperçu rapide que vous devez utiliser pour identifier un produit, appuyez sur <strong>Ajout d’une variable générique</strong>. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, <code>category=Womens</code> est une variable ajoutée.</p> <p> </p> </td> 
       </tr> 
       <tr> 
       <td>Pour associer l’image miniature sélectionnée à un lien hypertexte</td> 
@@ -438,7 +437,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
        </ul><strong>Remarque</strong> : Les outils de partage sur les médias sociaux ne sont pas pris en charge dans la vidéo interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.</p></tr>&lt; 
       <tr> 
       <td>Pour modifier une action déjà attribuée à une image miniature</td> 
-      <td>Dans un segment de chronologie, appuyez sur une image miniature qui comporte un lien de chaîne à droite de son libellé de texte. Le lien de chaîne indique qu’une action lui est attribuée. Appuyez sur l’onglet <strong>Actions</strong> afin d’apporter vos modifications.</td> 
+      <td>Dans un segment de chronologie, appuyez sur une image miniature qui comporte un lien de chaîne à droite de son libellé de texte. Le lien de chaîne indique qu’une action lui est attribuée. Appuyez sur le bouton <strong>Actions</strong> pour que vous puissiez apporter vos modifications.</td> 
       </tr> 
       <tr> 
       <td>Pour modifier le libellé de texte d’une image miniature</td> 
@@ -535,7 +534,7 @@ Toutefois, si vous avez ajouté une interactivité pour déclencher un aperçu r
 
 En vous servant du site web de démonstration comme exemple, procédez comme suit :
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Remarquez qu’il s’agit d’un code intégré vidéo standard :
 
@@ -566,7 +565,7 @@ Remarquez qu’il s’agit d’un code intégré vidéo standard :
 
 L’intégration est aussi simple que la suppression du code intégré de la vidéo et son remplacement par le code intégré de la vidéo interactive à partir d’Experience Manager. Vous pouvez afficher le résultat à l’adresse URL suivante : Même si la page contient une vidéo interactive, celle-ci n’est pas encore intégrée aux aperçus rapides existants :
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=fr)
 
 ## Intégration d’une vidéo interactive avec un aperçu rapide existant {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -648,7 +647,7 @@ Il suffit donc de supprimer les commentaires du fragment de code mis en évidenc
 
 Le code intégré standard comporte deux gestionnaires de rappel par défaut : `quickViewActivate` et `initComplete`. Le gestionnaire `quickViewActivate` se déclenche lorsqu’un utilisateur clique sur une miniature dans la visionneuse. Utilisez-le pour intégrer la visionneuse à la logique d’activation de l’aperçu rapide. Le gestionnaire `initComplete` ne se déclenche qu’une seule fois lorsque la visionneuse se charge dans la page. Ce descripteur est utilisé pour modifier l’emplacement de la boîte de dialogue d’aperçu rapide dans le modèle objet de document (DOM) de la page web.
 
-La procédure de construction de l’URL de l’aperçu rapide est la procédure inverse de l’identification des variables de vignette, dont nous avons parlé plus tôt dans cette rubrique. En utilisant les exemples d’URL d’aperçu rapide identifiés précédemment, vous pouvez voir comment l’URL d’aperçu rapide est créée dans chaque cas :
+La procédure de construction de l’URL de l’aperçu rapide est la procédure inverse de l’identification des variables de vignette, dont nous avons parlé plus tôt dans cette rubrique. En utilisant les exemples d’URL d’aperçu rapide identifiés, vous pouvez découvrir comment l’URL d’aperçu rapide est construite dans chaque cas :
 
 <table> 
      <tbody> 
@@ -699,13 +698,13 @@ var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-Le site web de démonstration déclenche la boîte de dialogue d’aperçu rapide si vous utilisez un simple appel de la fonction `loadQuickView()`. Cette fonction n’accepte qu’un seul argument, qui est l’URL des données d’aperçu rapide. La dernière étape consiste à intégrer la vidéo interactive en ajoutant la ligne de code suivante au gestionnaire `quickViewActivate` :
+Le site web de démonstration déclenche la boîte de dialogue d’aperçu rapide si vous utilisez un simple appel de la fonction `loadQuickView()`. Cette fonction n’accepte qu’un seul argument, qui est l’URL des données d’aperçu rapide. La dernière étape consiste à intégrer la vidéo interactive en ajoutant la ligne de code suivante au `quickViewActivate` gestionnaire :
 
 ```xml
 loadQuickView(quickViewUrl);
 ```
 
-Enfin, veillez à ce que la boîte de dialogue **[!UICONTROL Aperçu rapide]** soit associée à l’élément de conteneur de la visionneuse. Le code intégré par défaut indique les exemples d’étapes à suivre pour bénéficier de cette fonctionnalité. Pour obtenir une référence à l’élément de conteneur de la visionneuse, vous pouvez utiliser les lignes de code ci-dessous :
+Enfin, assurez-vous que la variable **[!UICONTROL Aperçu rapide]** est associée à l’élément de conteneur de la visionneuse. Le code intégré par défaut indique les exemples d’étapes à suivre pour bénéficier de cette fonctionnalité. Pour obtenir une référence à l’élément de conteneur de la visionneuse, vous pouvez utiliser les lignes de code ci-dessous :
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -716,7 +715,7 @@ Où `inner_container` est une référence à un élément `DIV` géré par la vi
 
 La procédure de recherche de l’élément de boîte de dialogue modale et d’association au conteneur ci-dessus dépend de chaque cas. Là encore, vous pouvez obtenir de l’aide auprès du développeur frontal, qui connaît votre mise en œuvre de l’aperçu rapide nécessaire.
 
-Pour l’exemple de site web, la boîte de dialogue modale de l’aperçu rapide est mise en oeuvre sous la forme `DIV` avec l’ID quickview-modal associé directement au document `BODY`. Par conséquent, le code utilisé pour déplacer cette boîte de dialogue dans le conteneur de la visionneuse est aussi simple que ce qui suit :
+Pour l’exemple de site web, la boîte de dialogue modale de l’aperçu rapide est mise en œuvre sous forme d’élément `DIV`, l’ID quickview-modal étant associé directement à l’élément `BODY` du document. Par conséquent, le code utilisé pour déplacer cette boîte de dialogue dans le conteneur de la visionneuse est aussi simple que ce qui suit :
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -769,7 +768,7 @@ Le code source complet se présente comme suit :
 
 Le dernier site web de démonstration avec la vidéo interactive totalement intégrée se présente comme suit :
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Création de fenêtres contextuelles personnalisées à l’aide d’aperçus rapides {#using-quickviews-to-create-custom-pop-ups}
 

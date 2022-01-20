@@ -1,20 +1,20 @@
 ---
 title: Purge de version
-seo-title: Purge de version
+seo-title: Version Purging
 description: Cet article décrit les options disponibles pour la purge de version.
-seo-description: Cet article décrit les options disponibles pour la purge de version.
+seo-description: This article describes the available options for version purging.
 uuid: 6140c87e-ae1c-409d-bdbb-71b397f0b738
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
-feature: Configuration
+feature: Configuring
 exl-id: 357d5f23-3e75-44e3-905f-4efe960858bf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 64%
+source-wordcount: '716'
+ht-degree: 63%
 
 ---
 
@@ -32,11 +32,11 @@ Ces versions n’étant jamais purgées, la taille du référentiel va continuer
 
 AEM est livré avec divers mécanismes vous permettant de gérer le référentiel :
 
-* [Gestionnaire de versions](#version-manager)
+* la valeur [Version Manager](#version-manager)
 
    Il peut être configuré pour purger les anciennes versions lors de la création de nouvelles versions.
 
-* l’outil [Purge des versions](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
+* la valeur [Purge des versions](/help/sites-deploying/monitoring-and-maintaining.md#version-purging) outil
 
    Il est utilisé dans le cadre de la surveillance et de la maintenance de votre référentiel.
 
@@ -50,7 +50,7 @@ AEM est livré avec divers mécanismes vous permettant de gérer le référentie
 
        Lorsque l’âge d’une version dépasse cette valeur, elle est purgée du référentiel. 
 
-* la [tâche de maintenance Purge de version](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Par conséquent, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
+* la valeur [Tâche de maintenance de purge de version](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Par conséquent, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
 
 >[!CAUTION]
 >
@@ -74,7 +74,7 @@ Les options suivantes sont disponibles :
 
    Une version n’est créée que si l’activation se produit sur un chemin contenu dans versionmanager.ivPaths (voir ci-dessous).
 
-* `versionmanager.ivPaths` (Chaîne[], valeur par défaut : {&quot;/&quot;})
+* `versionmanager.ivPaths` (Chaîne)[], par défaut : {&quot;/&quot;})
 
    chemins d’accès sur lesquels les versions sont implicitement créées lors de l’activation si versionmanager.createVersionOnActivation a la valeur true.
 
@@ -82,7 +82,7 @@ Les options suivantes sont disponibles :
 
    l’activation ou non de la purge lors de la création de nouvelles versions
 
-* `versionmanager.purgePaths` (Chaîne[], valeur par défaut : {&quot;/content&quot;})
+* `versionmanager.purgePaths` (Chaîne)[], par défaut : {&quot;/content&quot;})
 
    sur les chemins d’accès pour purger les versions lors de la création de nouvelles versions.
 
@@ -104,7 +104,7 @@ Les options suivantes sont disponibles :
 
 ### Combinaison d’options de conservation {#combining-retention-options}
 
-Les options définissant la manière dont les versions doivent être conservées ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) peuvent être combinées selon vos besoins.
+Les options définissant la manière dont les versions doivent être conservées ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), peut être combiné selon vos besoins.
 
 Par exemple, en définissant le nombre maximum de versions à conserver ET la version la plus ancienne à conserver :
 
@@ -140,4 +140,4 @@ Par exemple, en définissant les nombres maximum ET minimum de versions à conse
 
 ## Outil de purge des versions {#purge-versions-tool}
 
-L’outil [Purge de versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) est prévu pour la purge des versions d’un nœud ou d’une hiérarchie de nœuds dans votre référentiel. Son principal objectif est de vous aider à réduire la taille du référentiel en supprimant les anciennes versions de vos nœuds. 
+L’outil de [purge des versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) est conçu pour la purge des versions d’un nœud ou d’une hiérarchie de nœuds dans votre référentiel. Son principal objectif est de vous aider à réduire la taille du référentiel en supprimant les anciennes versions de vos nœuds. 

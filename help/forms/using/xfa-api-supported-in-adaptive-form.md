@@ -1,18 +1,18 @@
 ---
 title: Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP
-seo-title: Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP
+seo-title: XFA support in XDP-based adaptive forms
 description: Répertorie les événements XFA pris en charge, les propriétés, les scripts et la validation dans les formulaires adaptatifs.
-seo-description: Répertorie les événements XFA pris en charge, les propriétés, les scripts et la validation dans les formulaires adaptatifs.
+seo-description: Lists supported XFA events, properties, scripts, and validation in adaptive forms.
 uuid: 2f976de3-2cdf-4bbb-acd1-048a498930f0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 86596819-8108-409e-af14-4634e8a1959d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 94%
+source-wordcount: '683'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,7 @@ Lorsqu’un formulaire adaptatif est créé à partir d’un fichier XDP, les pr
 
 Cet article répertorie les événements XFA, les propriétés et les validations pris en charge dans les formulaires adaptatifs et explique comment les remplacer dans ces formulaires. 
 
-## Éléments XFA pris en charge et leur mappage dans les formulaires adaptatifs{#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}   
+## Éléments XFA pris en charge et leur mappage dans les formulaires adaptatifs    {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### Champs {#fields}
 

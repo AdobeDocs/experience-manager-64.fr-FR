@@ -16,17 +16,17 @@ ht-degree: 49%
 
 >[!NOTE]
 >
->[Pour plus d’informations ou pour obtenir le correctif, contactez le ](https://www.adobe.com/account/sign-in.supportportal.html) support technique.
+>[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html) pour plus d’informations ou pour obtenir le correctif.
 
 ## A propos du programme d&#39;installation de correctif {#about-the-patch-installer}
 
-Le programme d’installation du correctif Forms JEE d’AEM 6.4 comprend tous les problèmes résolus pour tous les composants d’AEM 6.4 Forms JEE disponibles jusqu’à la publication de ce correctif. Consultez les [Notes de mise à jour du pack de correctifs cumulatifs](cfp-release-notes.md) pour obtenir la liste complète des problèmes résolus.
+Le programme d’installation du correctif Forms JEE d’AEM 6.4 comprend tous les problèmes résolus pour tous les composants d’AEM 6.4 Forms JEE disponibles jusqu’à la publication de ce correctif. Consultez la dernière version  [Notes de mise à jour Cumulative Fix Pack](cfp-release-notes.md) pour obtenir une liste complète des problèmes résolus.
 
 ## Prérequis pour installer le correctif {#prerequisites-to-installing-the-patch}
 
 * AEM 6.4 Forms
 
-## Installation et configuration du correctif {#installing-and-configuring-the-patch}
+## Installer et configurer le correctif {#installing-and-configuring-the-patch}
 
 1. Effectuez une sauvegarde du dossier de déploiement &lt;*AEM_forms_root*>/. Il est nécessaire si vous décidez de désinstaller le Quick Fix.
 1. Arrêtez le serveur d’applications.
@@ -57,17 +57,17 @@ Accédez au répertoire approprié sur le support d’installation ou dans le do
 1. Lisez le résumé du correctif Quick Fix, puis cliquez sur **[!UICONTROL Suivant]**.
 1. Lisez le résumé relatif à la pré-installation, puis cliquez sur **[!UICONTROL Installer]**.
 1. Une fois l’installation terminée, cliquez sur **[!UICONTROL Suivant]**pour appliquer les mises à jour de Quick Fix à vos fichiers installés.
-1. [Windows ] Effectuez l’une des étapes suivantes :
+1. [Windows uniquement] Effectuez l’une des étapes suivantes :
 
-   * Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Exécutez Configuration Manager ultérieurement à l’aide du fichier `ConfigurationManager.bat` situé dans `[aem-forms root]\configurationManager\bin`. L’utilisation de `ConfigurationManager.bat` permet d’éviter la mise à jour manuelle du nom axis.jar dans les fichiers .lax.
-   * Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Avant d’exécuter Configuration Manager à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez au répertoire *&lt;AEMForms_Install_Dir>\configurationManager\bin* et mettez à jour **axis.jar** vers **axis-1.1.4.1.4.1.1.1.1.1.1.1.1 1.jar** dans les fichiers suivants :
+   * Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Exécutez Configuration Manager ultérieurement à l’aide de la méthode `ConfigurationManager.bat` fichier situé dans `[aem-forms root]\configurationManager\bin`. Utilisation `ConfigurationManager.bat` vous permet d’éviter la mise à jour manuelle du nom axis.jar dans les fichiers .lax .
+   * Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Avant d’exécuter Configuration Manager à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez à *&lt;aemforms_install_dir>\configurationManager\bin* répertoire et mise à jour **axis.jar** to **axis-1.4.1.1.jar** dans les fichiers suivants :
 
       * ConfigurationManager.lax
       * ConfigurationManager_IPv6.lax
 
 1. (Unix uniquement) La case à cocher Démarrer Configuration Manager est sélectionnée par défaut. Cliquez sur **[!UICONTROL Terminé]** pour exécuter Configuration Manager.
 
-   Pour exécuter Configuration Manager ultérieurement, désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Vous pouvez lancer Configuration Manager ultérieurement à l’aide du script approprié dans le répertoire `[AEM_forms_root]/configurationManager/bin`.
+   Pour exécuter Configuration Manager ultérieurement, désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Vous pouvez démarrer Configuration Manager ultérieurement à l’aide du script approprié dans la variable `[AEM_forms_root]/configurationManager/bin` répertoire .
 
 1. En fonction de votre serveur d’applications, sélectionnez l’un des documents suivants et suivez les instructions de la section *Configuration et déploiement d’AEM Forms*.
 

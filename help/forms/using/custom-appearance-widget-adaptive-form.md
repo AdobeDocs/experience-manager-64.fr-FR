@@ -1,8 +1,8 @@
 ---
 title: Création d’apparences personnalisées pour les champs de formulaire adaptatif
-seo-title: Création d’apparences personnalisées pour les champs de formulaire adaptatif
+seo-title: Create custom appearances for adaptive form fields
 description: 'Personnalisation de l’apparence des composants prêts à l’emploi dans les formulaires adaptatifs. '
-seo-description: 'Personnalisation de l’apparence des composants prêts à l’emploi dans les formulaires adaptatifs. '
+seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
 uuid: 1f2d2ac4-44e1-45f9-a6a0-eb95931b0633
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 1115697c-cb7d-441a-876f-3c01761568c0
 exl-id: 91d9a31d-a0af-45f6-9a20-4b52e2848979
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '1713'
 ht-degree: 73%
 
 ---
@@ -26,35 +26,35 @@ Ce document explique comment utiliser un module externe jQuery pour créer ces e
 
 Tout d’abord, examinons les termes et concepts clés utilisés dans cet article.
 
-**** AspectFait référence au style, à l’aspect et à l’organisation des différents éléments d’un champ de formulaire adaptatif. Il comprend généralement un intitulé, une zone interactive pour saisir des données, une icône d’aide et des descriptions longues et courtes du champ. La personnalisation de l’apparence abordée dans cet article s’applique à l’apparence de la zone de saisie du champ.
+**Apparence** Fait référence au style, à l’aspect et à l’organisation des différents éléments d’un champ de formulaire adaptatif. Il comprend généralement un intitulé, une zone interactive pour saisir des données, une icône d’aide et des descriptions longues et courtes du champ. La personnalisation de l’apparence abordée dans cet article s’applique à l’apparence de la zone de saisie du champ.
 
-**jQuery** pluginFournit un mécanisme standard, basé sur la structure du widget jQuery, pour mettre en oeuvre une autre apparence.
+**Module externe jQuery** Fournit un mécanisme standard, basé sur la structure du widget jQuery, pour mettre en oeuvre une autre apparence.
 
-**** ClientLibSystème de bibliothèques côté client dans AEM traitement côté client piloté par du code JavaScript et CSS complexe. Pour plus d’informations, voir Utilisation des bibliothèques côté client.
+**ClientLib** Système de bibliothèques côté client dans AEM traitement côté client piloté par du code JavaScript et CSS complexe. Pour plus d’informations, voir Utilisation des bibliothèques côté client.
 
-**** Kit d’outils de modèle de projet Maven archetypeA défini comme modèle ou modèle d’origine pour les projets Maven. Pour en savoir plus, voir Présentation des archétypes.
+**Archetype** Boîte à outils de modèle de projet Maven définie comme modèle ou modèle d’origine pour les projets Maven. Pour en savoir plus, voir Présentation des archétypes.
 
-**User** Control Fait référence à l’élément principal d’un widget qui contient la valeur du champ. Il est utilisé par la structure d’aspect pour lier l’interface utilisateur du widget personnalisé au modèle de formulaire adaptatif.
+**Contrôle utilisateur** Fait référence à l’élément principal d’un widget qui contient la valeur du champ et est utilisé par la structure de l’apparence pour lier l’interface utilisateur du widget personnalisé au modèle de formulaire adaptatif.
 
 ## Procédure à suivre pour créer une apparence personnalisée {#steps-to-create-a-custom-appearance}
 
 Les étapes, à un niveau élevé, pour créer une apparence personnalisée sont les suivantes :
 
-1. **Créez un projet** : Créez un projet Maven qui génère un module de contenu à déployer sur AEM.
-1. **Étendez une classe** de widget existante : Étendez une classe de widget existante et remplacez les classes requises.
+1. **Création d’un projet**: Créez un projet Maven qui génère un module de contenu à déployer sur AEM.
+1. **Étendre une classe de widget existante**: Étendez une classe de widget existante et remplacez les classes requises.
 1. **Créer une bibliothèque cliente** : créez une bibliothèque `clientLib: af.customwidget` et ajoutez les fichiers Javascript et CSS requis.
 
-1. **Créez et installez le projet** : Créez le projet Maven et installez le module de contenu généré sur AEM.
-1. **Mettre à jour le formulaire** adaptatif : Mettez à jour les propriétés du champ de formulaire adaptatif pour utiliser l’apparence personnalisée.
+1. **Création et installation du projet**: Créez le projet Maven et installez le module de contenu généré sur AEM.
+1. **Mettre à jour le formulaire adaptatif**: Mettez à jour les propriétés du champ de formulaire adaptatif pour utiliser l’apparence personnalisée.
 
 ### Création d’un projet {#create-a-project}
 
 Un archétype d’expert est un point de départ pour créer une apparence personnalisée. Les détails de l’archétype à utiliser sont les suivants :
 
-* **Référentiel** : https://repo.adobe.com/nexus/content/groups/public/
-* **Id De L’Artifact** : custom-apparence-archetype
-* **ID de groupe** : com.adobe.aemforms
-* **Version** : 1.0.4
+* **Référentiel**: https://repo.adobe.com/nexus/content/groups/public/
+* **Id D’Artifact**: custom-apparence-archetype
+* **Identifiant de groupe**: com.adobe.aemforms
+* **Version**: 1.0.4
 
 Exécutez la commande suivante pour créer un projet local en fonction de l’archétype :
 
@@ -112,7 +112,7 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
 
 1. Incluez la dépendance de module externe tiers au projet.
 
-   1. Placez les modules externes jQuery tiers ou personnalisés dans le dossier `jqueryplugin/javascript` et les fichiers CSS associés dans le dossier `jqueryplugin/css`. Pour plus d’informations, voir les fichiers JS et CSS sous le dossier `jqueryplugin/javascript and jqueryplugin/css` .
+   1. Placez les modules externes jQuery tiers ou personnalisés dans le `jqueryplugin/javascript` dossier et fichiers CSS associés dans `jqueryplugin/css` dossier. Pour plus d’informations, voir les fichiers JS et CSS sous `jqueryplugin/javascript and jqueryplugin/css` dossier.
    1. Modifiez les fichiers `js.txt` et `css.txt` pour inclure les fichiers Javascript et CSS supplémentaires du module externe jQuery.
 
 1. Intégrez le module externe tiers au cadre pour permettre une interaction entre le cadre d’apparence personnalisée et le module externe jQuery. Le nouveau widget sera fonctionnel uniquement après avoir étendu ou remplacé les fonctions suivantes.
@@ -125,13 +125,13 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
   </tr> 
   <tr> 
    <td><code>render</code></td> 
-   <td>La fonction de rendu renvoie l’objet jQuery à l’élément HTML par défaut du widget. L’élément HTML par défaut doit être d’un type pouvant être actif. Par exemple, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> et <code>&lt;li&gt;</code>. L’élément renvoyé est utilisé comme <code>$userControl</code>. Si <code>$userControl</code> spécifie la contrainte ci-dessus, les fonctions de la classe <code>AbstractWidget</code> fonctionnent comme prévu, sinon certaines des API courantes (mise au point, clic) nécessitent des modifications. </td> 
+   <td>La fonction de rendu renvoie l’objet jQuery à l’élément HTML par défaut du widget. L’élément HTML par défaut doit être d’un type pouvant être actif. Par exemple : <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, et <code>&lt;li&gt;</code>. L’élément renvoyé est utilisé comme <code>$userControl</code>. Si la variable <code>$userControl</code> spécifie la contrainte ci-dessus, les fonctions de la fonction <code>AbstractWidget</code> fonctionne comme prévu, sinon certaines des API courantes (mise au point, clic) nécessitent des modifications. </td> 
   </tr> 
   <tr> 
    <td><code>getEventMap</code></td> 
    <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Cet exemple montre qu’ <code>blur</code> il s’agit d’un événement HTML et  <code>XFA_EXIT_EVENT</code> qu’il s’agit de l’événement XFA correspondant. </td> 
+      }</code><br /> Cet exemple montre que <code>blur</code> est un événement de HTML et <code>XFA_EXIT_EVENT</code> est l’événement XFA correspondant. </td> 
   </tr> 
   <tr> 
    <td><code>getOptionsMap</code></td> 
@@ -154,7 +154,7 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
 
 1. Mettez le fichier Javascript à jour dans le dossier `integration/javascript` selon les besoins.
 
-   * Remplacez le texte `__widgetName__` par le nom réel du widget.
+   * Remplacer le texte `__widgetName__` avec le nom réel du widget.
    * Etendez le widget à partir d’une classe de widgets prêts à l’emploi convenable. Dans la plupart des cas, il s’agit de la classe de widget correspondant au widget existant à remplacer. Le nom de la classe parente est utilisé à plusieurs endroits, il est donc recommandé de rechercher toutes les instances de la chaîne `xfaWidget.textField` dans le fichier, et de les remplacer par la classe parente réelle utilisée.
    * Etendez la méthode `render` pour fournir une autre interface utilisateur. Il s’agit de l’emplacement d’où le module externe jQuery sera appelé pour mettre à jour l’interface utilisateur ou le comportement de l’interaction. La méthode `render` doit retourner un élément de contrôle de l’utilisateur.
    * Etendez la méthode `getOptionsMap` pour remplacer le paramètre d’option concerné suite à une modification du widget. La fonction renvoie un mappage qui fournit des détails sur l’action à effectuer lors de la modification d’une option. Les clés sont les options fournies au widget les valeurs sont les fonctions appelées chaque fois qu’un changement de l’option est détecté.
@@ -183,9 +183,9 @@ Pour appliquer l’apparence personnalisée à un champ de formulaire adaptatif 
 
 1. Ouvrez le formulaire adaptatif en mode d’édition.
 1. Ouvrez la boîte de dialogue **Propriétés** pour trouver le champ auquel vous voulez appliquer l’apparence personnalisée.
-1. Dans l’onglet **Style** , mettez à jour la propriété `CSS class` pour ajouter le nom de l’apparence au format `widget_<widgetName>` . Par exemple : **widget_numericstepper**
+1. Dans le **Style** , mettez à jour la variable `CSS class` pour ajouter le nom de l’apparence dans la propriété `widget_<widgetName>` format. Par exemple : **widget_numericstepper**
 
-## Exemple : Créer une apparence personnalisée    {#sample-create-a-custom-appearance-nbsp}
+## Exemple : Créer une apparence personnalisée   {#sample-create-a-custom-appearance-nbsp}
 
 Examinons à présent un exemple de création d’une apparence personnalisée pour qu’un champ numérique s’affiche sous forme d’exécution numérique pas à pas ou de curseur. Exécutez les étapes suivantes :
 
@@ -236,11 +236,11 @@ Examinons à présent un exemple de création d’une apparence personnalisée p
    * La méthode `render` doit être remplacée pour appeler la méthode `bootstrapNumber`.
    * Il n’y a aucune dépendance pour le module externe autre que le code source principal du module externe.
    * L’exemple n’effectue aucune mise en forme sur l’exécution automatique pas à pas ; aucun CSS supplémentaire n’est donc requis.
-   * L’objet `$userControl` doit être disponible pour la méthode `render` . Il s’agit d’un champ de type `text` qui est cloné avec le code du module externe.
+   * Le `$userControl` doit être disponible pour la fonction `render` . Il s’agit d’un champ de la variable `text` type qui est cloné avec le code du module externe.
    * Les boutons **+** et **-** doivent être désactivés lorsque le champ est désactivé.
 
 1. Remplacez le contenu de `bootstrap-number-input.js`(module externe jQuery) par le contenu du fichier `numericStepper-plugin.js` .
-1. Dans le fichier `numericStepper-widget.js` , ajoutez le code suivant pour remplacer la méthode de rendu pour appeler le module externe et renvoyer l’objet `$userControl` :
+1. Dans le `numericStepper-widget.js` , ajoutez le code suivant pour remplacer la méthode render pour appeler le module externe et renvoyer la variable `$userControl` objet :
 
    ```java
    render : function() {
@@ -260,7 +260,7 @@ Examinons à présent un exemple de création d’une apparence personnalisée p
    }
    ```
 
-1. Dans le fichier `numericStepper-widget.js` , remplacez la propriété `getOptionsMap` pour remplacer l’option d’accès, puis masquez les boutons + et - en mode désactivé.
+1. Dans le `numericStepper-widget.js` , remplacez la variable `getOptionsMap` pour remplacer l’option d’accès et masquer les boutons + et - en mode désactivé.
 
    ```java
    getOptionsMap: function(){
@@ -302,7 +302,7 @@ Examinons à présent un exemple de création d’une apparence personnalisée p
     }
    ```
 
-1. Enregistrez les modifications, accédez au dossier contenant le fichier `pom.xml` et exécutez la commande Maven suivante pour créer le projet :
+1. Enregistrez les modifications, accédez au dossier contenant les `pom.xml` et exécutez la commande Maven suivante pour créer le projet :
 
    `mvn clean install`
 

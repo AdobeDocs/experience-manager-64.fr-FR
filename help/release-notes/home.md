@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour d’Adobe Experience Manager 6.4
-seo-title: Notes de mise à jour d’AEM 6.4
+seo-title: AEM 6.4 Release Notes
 description: Les notes de mise à jour d’AEM comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.
-seo-description: Les notes de mise à jour d’AEM comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.
+seo-description: The AEM Release Notes cover important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues.
 exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 52%
+source-wordcount: '373'
+ht-degree: 50%
 
 ---
 

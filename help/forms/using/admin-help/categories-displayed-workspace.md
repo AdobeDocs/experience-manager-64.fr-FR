@@ -1,8 +1,8 @@
 ---
 title: 'Gestion des catégories affichées dans Workspace '
-seo-title: 'Gestion des catégories affichées dans Workspace '
+seo-title: Managing the categories displayed in Workspace
 description: Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent dans les catégories du volet de navigation gauche. Découvrez comment gérer ces catégories affichées dans l’espace de travail.
-seo-description: Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent dans les catégories du volet de navigation gauche. Découvrez comment gérer ces catégories affichées dans l’espace de travail.
+seo-description: In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. Learn how you can manage these categories displayed in Workspace.
 uuid: c2a275f5-872e-467f-9f07-4b130631e8a8
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 exl-id: 5a2bd0ea-2c5e-4e0c-aff1-dba06be6a5b7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 97%
+source-wordcount: '481'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent d
 
 Lorsque vous spécifiez des noms de catégorie, vous devez les créer afin qu’ils s’affichent correctement dans le volet de navigation de Workspace. Par défaut, le volet de navigation gauche a une largeur fixe de 210 pixels, soit environ 24 caractères. Si le nom de catégorie que vous indiquez est trop long pour tenir dans la largeur définie du volet de navigation gauche, ce nom est tronqué. Le nom complet ne s’affiche que si le pointeur de la souris est posé dessus. Evitez d’utiliser des noms de catégorie qui seront tronqués. Les deux exemples suivants illustrent les noms de catégories qui conviennent et ceux qui sont tronqués :
 
-**Nom de catégorie qui convient :** Attente et absence
+**Nom de catégorie adapté :** Participation et absence
 
 **Nom de catégorie tronqué :** Participation et sortie (États-Unis)
 
@@ -46,7 +46,7 @@ Lorsque vous utilisez MySQL en tant que base de données AEM forms, Administrati
 1. Sélectionnez la catégorie que vous souhaitez modifier et cliquez sur Modifier. Vous pouvez également cliquer deux fois sur une catégorie pour la modifier.
 1. Modifiez le nom de la catégorie dans la zone Nom.
 
-## Suppression d’une catégorie  {#remove-a-category}
+## Suppression d’une catégorie {#remove-a-category}
 
 Vous ne pouvez supprimer que les catégories que vous n’utilisez pas.
 

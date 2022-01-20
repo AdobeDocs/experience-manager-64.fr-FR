@@ -1,8 +1,8 @@
 ---
 title: Mise à jour du type de licence pour le déploiement
-seo-title: Mise à jour du type de licence pour le déploiement
+seo-title: Update the license type for the deployment
 description: Mise à jour du type de licence pour le déploiement à l’aide de la page de modification de licence dans Administration Console.
-seo-description: Mise à jour du type de licence pour le déploiement à l’aide de la page de modification de licence dans Administration Console.
+seo-description: Update the license type for the deployment by using the Change License page in administration console.
 uuid: 0152635e-2c00-4944-b9b6-64b368589a91
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: e4f31377-ccc9-4986-a3bf-ef2e83d12448
 exl-id: 07671470-59dd-4290-be9a-465fcd89ac2d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '270'
 ht-degree: 100%
 
 ---

@@ -1,19 +1,19 @@
 ---
 title: Autorisation d’accès à l’éditeur de règles pour des groupes d’utilisateurs sélectionnés
-seo-title: Autorisation d’accès à l’éditeur de règles pour des groupes d’utilisateurs sélectionnés
+seo-title: Grant rule editor access to select user groups
 description: Autorisez l’accès limité à l’éditeur de règles pour des groupes d’utilisateurs sélectionnés.
-seo-description: Autorisez l’accès limité à l’éditeur de règles pour des groupes d’utilisateurs sélectionnés.
+seo-description: Grant restricted access to rule editor to select user groups.
 uuid: 3d982858-b2b5-4370-a9d7-5a95842a7897
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 5e2960f2-b172-48a7-bba3-4561a5f9c7bc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 74%
+source-wordcount: '316'
+ht-degree: 72%
 
 ---
 
@@ -25,18 +25,18 @@ Plusieurs types d’utilisateurs dotés de différentes compétences peuvent uti
 
 AEM Forms permet de limiter l’accès à l’éditeur de règles des utilisateurs selon leur rôle ou fonction. Dans les paramètres du service de configuration des formulaires adaptatifs, vous pouvez spécifier les [groupes d’utilisateurs](/help/sites-administering/security.md) qui pourront afficher l’éditeur de règles et y accéder.
 
-## Spécification des groupes d’utilisateurs qui peuvent accéder à l’éditeur de règles {#specify-user-groups-that-can-access-rule-editor}
+## Spécification des groupes d’utilisateurs qui peuvent accéder à l’éditeur de règles {#specify-user-groups-that-can-access-rule-editor}
 
 1. Connectez-vous à AEM Forms en tant qu’administrateur.
 1. Dans l’instance d’auteur, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![marteau](assets/hammer.png) > Opérations > Console web. La console web s’ouvre dans une nouvelle fenêtre.
 
    ![1](assets/1.png)
 
-1. Dans la fenêtre de la console web, recherchez et cliquez sur **[!UICONTROL Configuration du canal web du formulaire adaptatif et de la communication interactive]**. **[!UICONTROL La boîte de dialogue de]** configuration de canal web du formulaire adaptatif et de la communication interactive s’affiche. Ne modifiez aucune valeur, puis cliquez sur **[!UICONTROL Enregistrer]**.
+1. Dans la fenêtre de la console web, recherchez et cliquez **[!UICONTROL Configuration du canal web du formulaire adaptatif et de la communication interactive]**. **[!UICONTROL Configuration du canal web du formulaire adaptatif et de la communication interactive]** s’affiche. Ne modifiez aucune valeur, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
    Vous créez ainsi un fichier /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config dans le référentiel CRX.
 
-1. Connectez-vous à CRDXE en tant qu’administrateur. Ouvrez le fichier /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config pour le modifier.
+1. Connectez-vous à CRXDE en tant qu’administrateur. Ouvrez le fichier /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config pour le modifier.
 1. Utilisez la propriété suivante pour spécifier le nom d’un groupe pouvant accéder à l’éditeur de règles (par exemple, RuleEditorsUserGroup) et cliquez sur **Enregistrer tout**.
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup"]`
@@ -47,7 +47,7 @@ AEM Forms permet de limiter l’accès à l’éditeur de règles des utilisateu
 
    ![create-user](assets/create-user.png)
 
-   Désormais, lorsqu’un utilisateur qui ne fait pas partie du groupe d’utilisateurs spécifié (ici RuleEditorsUserGroup) clique sur un champ, l’icône Modifier la règle ( ![edit-rules1](assets/edit-rules1.png)) n’est pas disponible dans la barre d’outils des composants :
+   Désormais, lorsqu’un utilisateur qui ne fait pas partie du groupe d’utilisateurs spécifié (ici RuleEditorsUserGroup) clique sur un champ, l’icône Modifier la règle ( ![edit-rules1](assets/edit-rules1.png)) n’est pas disponible pour elle dans la barre d’outils des composants :
 
    ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 

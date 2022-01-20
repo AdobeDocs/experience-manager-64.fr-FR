@@ -1,19 +1,19 @@
 ---
 title: Prise en charge RDBMS dans AEM 6.4
-seo-title: Prise en charge RDBMS dans AEM 6.4
+seo-title: RDBMS Support in AEM 6.4
 description: 'Obtenez des informations sur la prise en charge de la persistance de la base de données relationnelle dans AEM 6.4 et les options de configuration disponibles. '
-seo-description: 'Obtenez des informations sur la prise en charge de la persistance de la base de données relationnelle dans AEM 6.4 et les options de configuration disponibles. '
+seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
 uuid: 599d3e61-99eb-4a1c-868b-52b20a615500
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
-feature: Configuration
+feature: Configuring
 exl-id: 89523bb4-e4c4-469c-802b-6fe27c816a2e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '700'
 ht-degree: 72%
 
 ---
@@ -70,14 +70,14 @@ Une fois que les lots sont en place, suivez les étapes ci-dessous en vue de con
 
    1. Téléchargez l’archive ZIP à partir de https://dev.mysql.com/downloads/connector/j/
       * version doit être >= 5.1.38
-   1. Extrayez le `mysql-connector-java-version-bin.jar` (lot) de l’archive.
+   1. Extrayez le `mysql-connector-java-version-bin.jar` (lot) à partir de l’archive
    1. Utilisez la console web pour installer et démarrer le lot :
       * Accédez à *http://serveraddress:serverport/system/console/bundles*
-      * Sélectionnez **Installer/Mettre à jour**
+      * Sélectionner **Installer/Mettre à jour**
       * Accédez à la sélection du lot extrait de l’archive ZIP téléchargée.
-      * Vérifiez que **Oracle Corporation&#39;s JDBC Driver for MySQLcom.mysql.jdbc** est principal et démarrez-le.
+      * Vérifiez que **Pilote JDBC d’Oracle Corporation pour MySQLcom.mysql.jdbc** est principale et démarrez-la.
 
-1. Enfin, commencez AEM par les modes d’exécution `crx3` et `crx3rdb` :
+1. Enfin, commencez AEM par le `crx3` et `crx3rdb` Modes d’exécution :
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb

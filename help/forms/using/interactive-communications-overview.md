@@ -1,8 +1,8 @@
 ---
 title: Présentation des communications interactives
-seo-title: Présentation des communications interactives
+seo-title: Interactive Communications Overview
 description: Cet article comprend une présentation, des exemples de cas d’utilisation, un processus de création et les différences entre les communications interactives et les lettres.
-seo-description: Fonctionnalités principales de la communication interactive, exemples de cas d’utilisation, processus de création et différences entre la communication interactive et Correspondence Management
+seo-description: Interactive Communication key capabilities, sample use cases, creation workflow, and differences between Interactive Communication and Correspondence Management
 uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
@@ -11,8 +11,8 @@ discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 386fc8b2-c92d-4731-8445-1bb6af54fd98
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 78%
+source-wordcount: '506'
+ht-degree: 77%
 
 ---
 
@@ -37,7 +37,7 @@ Voici les fonctionnalités principales des communications interactives :
 
 ## Exemples de cas d’utilisation {#sample-use-case}
 
-Le [kit de bienvenue pour un exemple de cas d’utilisation de carte de crédit ](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) présente les fonctionnalités d’une communication interactive.
+Le [Kit de bienvenue pour un client détenteur d’une carte de crédit](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) un exemple de cas d’utilisation présente les fonctionnalités d’une communication interactive.
 
 ## Création de la communication interactive  {#interactive-communication-creation}
 
@@ -45,7 +45,7 @@ Le [kit de bienvenue pour un exemple de cas d’utilisation de carte de crédit 
 
 ### Workflow {#workflow}
 
-Pour créer une communication interactive, préparez les [blocs de création](#buildingblocks) pour la communication interactive, puis effectuez les étapes suivantes :
+Pour créer une communication interactive, vous devez disposer de la variable [blocs de création](#buildingblocks) pour la communication interactive prête, puis effectuez les étapes suivantes :
 
 1. Choisissez de [créer une communication interactive](/help/forms/using/create-interactive-communication.md).
 
@@ -55,7 +55,7 @@ Pour créer une communication interactive, préparez les [blocs de création](#b
 1. Configurez les propriétés suivantes des composants insérés :
 
    1. Images
-   1. [Tableaux](/help/forms/using/create-interactive-communication.md#tables)  (y compris les fragments de mise en page)
+   1. [Tableaux](/help/forms/using/create-interactive-communication.md#tables) (y compris les fragments de mise en page)
    1. [Graphiques](/help/forms/using/chart-component-interactive-communications.md)
    1. [Fragments de document](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
@@ -70,7 +70,7 @@ Les blocs de construction requis pour la création d’une communication interac
 * [Modèles de canaux web et d’impression](/help/forms/using/web-channel-print-channel.md)
 * [Fragments de document](/help/forms/using/document-fragments.md)
 * Images
-* [](/help/forms/using/themes.md) Thèmes pour le canal web
+* [Thèmes](/help/forms/using/themes.md) pour le canal web
 
 ## Comparaison entre les communications interactives et Correspondence Management {#interactive-communications-vs-correspondence-management}
 
@@ -108,7 +108,7 @@ La communication interactive est l’approche par défaut et recommandée pour c
    <td>Aucune interface utilisateur pour la création d’une expression conditionnelle</td> 
   </tr>
   <tr>
-   <td>Création  </td> 
+   <td>Création</td> 
    <td>Interface glisser-déposer pour la construction des canaux web et d’impression</td> 
    <td>Aucun mécanisme de glisser-déposer </td> 
   </tr>

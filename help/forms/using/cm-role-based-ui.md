@@ -1,8 +1,8 @@
 ---
 title: NE PAS PUBLIER L’interface utilisateur en fonction du rôle dans Correspondence Management
-seo-title: NE PAS PUBLIER L’interface utilisateur en fonction du rôle dans Correspondence Management
+seo-title: DO NOT PUBLISH Role based user interface in Correspondence Management
 description: NE PAS PUBLIER L’interface utilisateur en fonction du rôle dans Correspondence Management
-seo-description: NE PAS PUBLIER L’interface utilisateur en fonction du rôle dans Correspondence Management
+seo-description: DO NOT PUBLISH Role based user interface in Correspondence Management
 page-status-flag: de-activated
 uuid: 60808852-f63f-4c0a-badb-b0af93c995a8
 contentOwner: gtalwar
@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 342f111e-f15a-4f9a-8993-f90760363c02
 source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 27%
+source-wordcount: '485'
+ht-degree: 28%
 
 ---
 
@@ -24,19 +24,19 @@ L’interface d’AEM affiche les options, telles que la création ou la modific
 
 Bien que CRX vous permette de configurer les droits d’accès pour les comptes d’utilisateurs et de groupes, cet article traite des droits d’accès basés sur les rôles ou les groupes d’utilisateurs.
 
-Pour plus d’informations sur les groupes, les autorisations, les listes de contrôle d’accès et la gestion des utilisateurs et des groupes, voir [Administration des utilisateurs et sécurité](/help/sites-administering/security.md).
+Pour plus d’informations sur les groupes, les autorisations, les listes de contrôle d’accès et la gestion des utilisateurs et des groupes, voir [Administration et sécurité des utilisateurs](/help/sites-administering/security.md).
 
 ## Gestion des autorisations {#managing-permissions}
 
 1. Assurez-vous que l’utilisateur pour lequel vous souhaitez gérer les autorisations est ajouté au groupe d’utilisateurs approprié.
 
-   Par exemple, l’utilisateur John Doe est ajouté aux groupes `agents` et `cm-creditcard`. Pour plus d’informations, voir Ajout d’utilisateurs ou de groupes à un groupe. Pour plus d’informations, voir [Gestion des utilisateurs et des groupes d’utilisateurs](/help/communities/users.md).
+   Par exemple, l’utilisateur John Doe est ajouté aux groupes. `agents` et `cm-creditcard`. Pour plus d’informations, voir Ajout d’utilisateurs ou de groupes à un groupe. Pour plus d’informations, voir [Gestion des utilisateurs et des groupes d’utilisateurs](/help/communities/users.md).
 
    ![]()
 
 1. Créez les dossiers adaptés aux autorisations prévues.
 
-   Par exemple, si une entreprise possède des divisions du prêt immobilier, de la carte de crédit et de l’assurance, elle peut créer des dossiers nommés `HomeMortgage`, `CreditCard,`et `Insurance` pour conserver les actifs pertinents et donner accès de manière sélective aux agents pour les actifs propres à son service uniquement.
+   Par exemple, si une entreprise possède des divisions de prêt immobilier, de carte de crédit et d’assurance, elle peut créer des dossiers nommés `HomeMortgage`, `CreditCard,`et `Insurance` conserver les ressources appropriées et donner accès sélectivement aux agents pour les ressources pertinentes uniquement pour leur service.
 
 1. Pour accéder à la sécurité AEM WCM, effectuez l’une des opérations suivantes :
 
@@ -53,7 +53,7 @@ Pour plus d’informations sur les groupes, les autorisations, les listes de con
 
    Pour localiser le nom du groupe, vous pouvez saisir son nom dans l’espace prévu à cet effet.
 
-1. Dans l’onglet Autorisations, accédez au chemin auquel vous souhaitez ajouter des autorisations. Les dossiers de Correspondence Management se trouvent sous le dossier `content/apps/cm/` .
+1. Dans l’onglet Autorisations, accédez au chemin auquel vous souhaitez ajouter des autorisations. Les dossiers de Correspondence Management se trouvent sous le `content/apps/cm/` dossier.
 
    Dans la colonne Membre, cochez la case correspondant aux membres qui doivent disposer d’autorisations au niveau de ce chemin d’accès. Décochez la case correspondant aux membres dont vous souhaitez supprimer les autorisations. Un triangle rouge apparaît dans la cellule à laquelle vous avez apporté des modifications.
 

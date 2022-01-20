@@ -1,8 +1,8 @@
 ---
 title: Utilisation des pages Web de Document Security
-seo-title: Utilisation des pages Web de Document Security
+seo-title: Using the document security webpages
 description: Découvrez comment vous connecter, naviguer et utiliser les pages Web de sécurité des documents.
-seo-description: Découvrez comment vous connecter, naviguer et utiliser les pages Web de sécurité des documents.
+seo-description: Learn how you can login, navigate and use the document security web pages.
 uuid: b4863343-cda5-474a-a101-a20e39b1f8c7
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ feature: Document Security
 exl-id: f93d496e-6bd3-462a-b57a-80085647a636
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '935'
 ht-degree: 96%
 
 ---
@@ -36,9 +36,9 @@ Pour ouvrir une session en tant qu’administrateur, vous devez avoir le rôle d
 
 Pour ouvrir une session de pages Web à l’aide d’un navigateur, vous devez disposer d’un compte et de l’URL Document Security. L’URL des utilisateurs diffère de celle des administrateurs. Les administrateurs peuvent également se connecter aux pages utilisateur pour créer des stratégies.
 
-Si vous avez accès à plusieurs installations de Document Security, vous avez besoin de l’URL de l’instance de Document Security à laquelle vous souhaitez accéder. Contactez votre administrateur si vous ne disposez pas de cette information. L’URL par défaut des pages utilisateur est https://*[host]*:*[port]*/edc. Dans certains cas, le numéro de port n’est pas nécessaire. Renseignez-vous auprès de votre administrateur pour plus de précisions.
+Si vous avez accès à plusieurs installations de Document Security, vous avez besoin de l’URL de l’instance de Document Security à laquelle vous souhaitez accéder. Contactez votre administrateur si vous ne disposez pas de cette information. L’URL par défaut des pages utilisateur est https://*[hôte]*:*[port]*/edc. Dans certains cas, le numéro de port n’est pas nécessaire. Renseignez-vous auprès de votre administrateur pour plus de précisions.
 
-L’URL par défaut pour les administrateurs est https://*[host]*:*[port]*/adminui.
+L’URL par défaut pour les administrateurs est https://*[hôte]*:*[port]*/adminui.
 
 A l’intention des administrateurs, un compte de super-administrateur par défaut est créé lors de l’installation. Vous pouvez utiliser ce compte pour ouvrir une session à la première installation de Document Security.
 
@@ -59,7 +59,7 @@ A l’intention des administrateurs, un compte de super-administrateur par défa
 >
 >lorsque vous travaillez sur des pages Web, évitez d’utiliser les boutons du navigateur, tels que le bouton Précédent, le bouton Actualiser, ainsi que les flèches permettant d’afficher la page précédente ou suivante, car cette opération risque de capturer des données non souhaitées et d’entraîner des problèmes d’affichage.
 
-## Navigation dans les pages Web  {#navigating-the-web-pages}
+## Navigation dans les pages Web {#navigating-the-web-pages}
 
 Lorsque vous vous connectez aux pages Web utilisateur, vous voyez apparaître des liens vous permettant d’accéder aux pages utilisateur Stratégies, Documents et Evénements.
 
@@ -83,7 +83,7 @@ Cliquez sur ces liens pour accéder aux pages vous permettant de créer et de g�
 >
 >lorsque vous travaillez sur des pages Web, évitez d’utiliser les boutons du navigateur, tels que le bouton Précédent, le bouton Actualiser, ainsi que les flèches permettant d’afficher la page précédente ou suivante, car cette opération risque de capturer des données non souhaitées et d’entraîner des problèmes d’affichage.
 
-## Configuration de l’accès à Document Security à partir d’applications clientes  {#setting-up-access-to-document-security-from-client-applications}
+## Configuration de l’accès à Document Security à partir d’applications clientes {#setting-up-access-to-document-security-from-client-applications}
 
 Les applications clientes doivent être configurées pour se connecter à Document Security afin de protéger des documents, d’ouvrir des documents protégés par une stratégie et de se connecter aux pages Web de Document Security. Consultez l’*Aide d’Acrobat* ou l’*Aide de Rights Management Extension* pour plus d’informations sur la configuration de la connexion à partir de l’application cliente.
 
@@ -100,7 +100,7 @@ Ces instructions s’appliquent à Internet Explorer, mais vous pouvez installe
 1. Fermez votre session de navigateur.
 1. Ouvrez une autre fenêtre du navigateur et saisissez la même URL dans le champ Adresse. Aucune boîte de dialogue Alerte de sécurité ne doit s’afficher. Ce test confirme que le certificat est correctement installé.
 
-## Fermeture d’une session de pages Web  {#log-out-of-the-web-pages}
+## Fermeture d’une session de pages Web {#log-out-of-the-web-pages}
 
 Fermez votre session lorsque vous avez fini d’utiliser les pages Web, afin d’utiliser votre navigateur Web en toute sécurité pour d’autres activités. Selon la configuration de Document Security, il peut se révéler nécessaire de fermer le navigateur pour fermer totalement la session.
 

@@ -1,15 +1,15 @@
 ---
 title: AEM Mobile – Préparation pour le RGPD
-seo-title: AEM Mobile – Préparation pour le RGPD
+seo-title: AEM Mobile - GDPR Readiness
 description: '"AEM Mobile – Préparation pour le RGPD"'
-seo-description: 'null'
+seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: 2b73e843-690b-4cf3-9b8f-936b70c84406
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '692'
 ht-degree: 85%
 
 ---
@@ -50,9 +50,9 @@ Fournissez au moins l’une des informations suivantes :
 * Pour les utilisateurs d’applications Windows, l’ID de la boutique d’applications de l’utilisateur final : *dpsc-windowsAppStoreId*
 * L’adresse électronique de utilisateur final utilisée pour interagir avec l’application DPS : *email*
 
-### Questions fréquentes  {#frequently-asked-questions-faq}
+### Questions fréquentes {#frequently-asked-questions-faq}
 
-**L’Adobe supprimera-t-il mes achats de la boutique d’applications lors du lancement d’une demande de DELETE ?**
+**Adobe supprimera-t-il mes achats App Store lors du lancement d’une demande de DELETE ?**
 
 Adobe supprime les informations qu’il contient au sujet des achats dans les boutiques d’applications (abonnements, etc.), mais les achats resteront enregistrés dans les boutiques d’applications. Si l’application (pour l’utilisateur final) est consignée dans la boutique d’applications, ces reçus seront à nouveau détectés et envoyés à Adobe ; ils seront considérés comme de nouveaux achats et restaurés par l’application afin d’en rétablir l’accès.
 

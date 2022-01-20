@@ -7,11 +7,11 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
-feature: Paramètres d’image prédéfinis
+feature: Image Presets
 role: Admin,User
 source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '3837'
+source-wordcount: '3835'
 ht-degree: 79%
 
 ---
@@ -34,7 +34,7 @@ Cette section explique comment créer, modifier et gérer des paramètres d’im
 
 Tout comme une macro logicielle, un paramètre d’image prédéfini est un ensemble prédéfini de commandes de dimensionnement et de formatage enregistrées sous un nom. Pour comprendre le fonctionnement des paramètres d’image prédéfinis, supposons que votre site web exige que chaque image du produit apparaisse dans différentes tailles, différents formats et taux de compression pour les diffusions mobiles et de bureau.
 
-Vous pouvez créer deux paramètres d’image prédéfinis : une avec 500 x 500 pixels pour la version de bureau et 150 x 150 pixels pour la version mobile. Vous créez deux paramètres d’image prédéfinis, l’un appelé *Agrandir* pour afficher des images à 500 x 500 pixels et l’autre appelé *Miniature* pour afficher des images à 150 x 150 pixels. Pour diffuser des images aux formats Agrandir et Miniature, AEM recherche la définition du paramètre prédéfini d’image agrandie et du paramètre prédéfini d’image miniature. Ensuite, AEM génère de manière dynamique une image dont la taille et le format correspondent à chaque paramètre d’image prédéfini.
+Vous pouvez créer deux paramètres d’image prédéfinis : une avec 500 x 500 pixels pour la version de bureau et 150 x 150 pixels pour la version mobile. Vous créez deux paramètres d’image prédéfinis, l’un appelé *Agrandir* pour afficher des images à 500 x 500 pixels et une image appelée *Miniature* pour afficher les images à 150 x 150 pixels. Pour diffuser des images aux formats Agrandir et Miniature, AEM recherche la définition du paramètre prédéfini d’image agrandie et du paramètre prédéfini d’image miniature. Ensuite, AEM génère de manière dynamique une image dont la taille et le format correspondent à chaque paramètre d’image prédéfini.
 
 Les images de taille réduite, lorsqu’elles sont diffusées dynamiquement, peuvent perdre en netteté et en détail. C’est la raison pour laquelle chaque paramètre d’image prédéfini contient des commandes de formatage permettant d’optimiser l’image lorsqu’elle est diffusée avec une taille particulière. Ces commandes garantissent une image nette et claire au moment de la diffusion vers le site web ou l’application.
 
@@ -77,15 +77,15 @@ Vous pouvez afficher les sous-ressources ou les pages lorsque vous ouvrez la res
 
 Pour utiliser Dynamic Media afin de prévisualiser et de générer des rendus dynamiques pour des fichiers AI, EPS ou PDF, les étapes de traitement suivantes doivent être exécutées :
 
-1. Dans le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**, le composant de processus **[!UICONTROL Pixelliser le rendu d’aperçu d’image PDF/AI]** pixellise la première page de la ressource d’origine, à l’aide de la résolution configurée, dans un rendu `cqdam.preview.png`.
+1. Dans le **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]** le workflow, **[!UICONTROL Pixelliser le rendu d’aperçu d’image PDF/AI]** Le composant de processus pixellise la première page de la ressource d’origine à l’aide de la résolution configurée dans une `cqdam.preview.png` rendu.
 
 1. Le rendu `cqdam.preview.png` est ensuite optimisé dans un fichier PTIFF par le composant de processus **[!UICONTROL Ressources d’image du processus de média dynamique]** à l’intérieur du processus.
 
 >[!NOTE]
 >
->Dans le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**, l’étape **[!UICONTROL Miniatures EPS]** génère des miniatures pour les fichiers EPS.
+>Dans le **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]** le workflow, **[!UICONTROL Miniatures EPS]** génère des miniatures pour les fichiers EPS.
 
-### Propriétés des métadonnées de ressource PDF/AI/EPS  {#pdf-ai-eps-asset-metadata-properties}
+### Propriétés des métadonnées de ressource PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
 
 | **Propriété de métadonnées** | **Description** |
 |---|---|
@@ -94,9 +94,9 @@ Pour utiliser Dynamic Media afin de prévisualiser et de générer des rendus d
 
 Vous accédez aux options du composant de processus **[!UICONTROL Pixelliser le rendu d’aperçus d’image PDF/AI]** par l’intermédiaire du processus **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**.
 
-Appuyez sur Adobe Experience Manager dans le coin supérieur gauche de l’écran, puis accédez à **[!UICONTROL Outils > Processus > Modèles]**. Sur la page **[!UICONTROL Modèles de processus]**, sélectionnez **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**, puis, sur la barre d’outils, appuyez sur **[!UICONTROL Modifier]**. Sur la page **[!UICONTROL Processus de mise à jour des ressources de gestion des actifs numériques]** , appuyez deux fois sur le composant de processus **[!UICONTROL Pixelliser le rendu d’aperçu d’image PDF/AI]** pour ouvrir sa boîte de dialogue **[!UICONTROL Propriétés de l’étape]** .
+Appuyez sur Adobe Experience Manager dans le coin supérieur gauche de l’écran, puis accédez à **[!UICONTROL Outils > Processus > Modèles]**. Sur le **[!UICONTROL Modèles de processus]** page, sélectionnez **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**, puis, sur la barre d’outils, appuyez sur **[!UICONTROL Modifier]**. Sur le **[!UICONTROL Workflow Ressources de mise à jour de gestion des actifs numériques]** , appuyez deux fois sur la **[!UICONTROL Pixelliser le rendu d’aperçu d’image PDF/AI]** composant de processus pour ouvrir son **[!UICONTROL Propriétés de l’étape]** de la boîte de dialogue
 
-### Options de rendu d’aperçu d’image PDF/AI pixellisé {#rasterize-pdf-ai-image-preview-rendition-options}
+### Options de rendu d’aperçu d’image de PDF/AI pixellisé {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Arguments pour pixelliser le workflow PDF ou AI](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -138,7 +138,7 @@ Appuyez sur Adobe Experience Manager dans le coin supérieur gauche de l’éc
 
 Une valeur maximale est définie pour le composant de processus **[!UICONTROL Pixelliser le rendu d’aperçus d’image PDF/AI]**, afin de s’assurer qu’il ne crée pas d’images exagérément grandes en mémoire. Ces images volumineuses peuvent, en effet, dépasser la capacité de mémoire allouée à la machine virtuelle Java (JVM). Il faut veiller à fournir suffisamment de mémoire à la machine virtuelle Java pour gérer le nombre configuré de workflows parallèles, de sorte que chacun d’eux soit en mesure de créer une image à la taille maximale configurée.
 
-### Format de fichier InDesign (INDD)  {#indesign-indd-file-format}
+### Format de fichier InDesign (INDD) {#indesign-indd-file-format}
 
 Si vous avez l’intention de prendre en charge l’assimilation de fichiers INDD de manière à pouvoir générer le rendu dynamique de ce format de fichier, vous pouvez consulter les informations suivantes avant de créer des paramètres d’image prédéfinis.
 
@@ -150,7 +150,7 @@ Le composant Extraction de médias du processus **[!UICONTROL Ressource de mise 
 
 ![Chemins ExtendScript dans les arguments du processus Extraction de médias](assets/media_extraction_arguments.png)
 
-Chemins **[!UICONTROL Étendre le script]** dans les arguments du composant de processus **[!UICONTROL Extraction de médias]** dans le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**.
+Le **[!UICONTROL Étendre le script]** chemins dans les arguments de **[!UICONTROL Extraction de médias]** composant de processus dans la **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]** workflow.
 
 Les scripts suivants sont utilisés par l’intégration de Dynamic Media :
 
@@ -190,18 +190,16 @@ Le dimensionnement des miniatures est défini au format suivant : **width:height
 >[!NOTE]
 >
 >* La taille des miniatures pour les fichiers EPS est configurée à l’étape **[!UICONTROL Miniatures EPS]**, dans l’onglet **[!UICONTROL Arguments]****[!UICONTROL sous Miniatures]**.
-   >
-   >
-* La taille des miniatures pour les vidéos est configurée à l’étape **[!UICONTROL Miniatures FFmpeg]**, dans l’onglet **[!UICONTROL Processus]** sous **[!UICONTROL Arguments]**.
+>
+>* La taille des miniatures pour les vidéos est configurée à l’étape **[!UICONTROL Miniatures FFmpeg]**, dans l’onglet **[!UICONTROL Processus]** sous **[!UICONTROL Arguments]**.
 
 >
 
 
-
-**Pour configurer la taille** des miniatures :
+**Pour configurer la taille des miniatures**:
 
 1. Appuyez sur **[!UICONTROL Outils > Processus > Modèles > Ressource de mise à jour de gestion des actifs numériques (DAM) > Modifier]**.
-1. Appuyez sur l’étape **[!UICONTROL Dynamic Media Process Image Assets]** , puis sur l’onglet **[!UICONTROL Miniatures]** . Modifiez la taille de la miniature, si nécessaire, puis appuyez sur **[!UICONTROL OK]**.
+1. Appuyez sur le bouton **[!UICONTROL Ressources d’image de processus Dynamic Media]** , puis appuyez sur **[!UICONTROL Miniatures]** . Modifiez la taille de la miniature, si nécessaire, puis appuyez sur **[!UICONTROL OK]**.
 
    ![step_properties_thumbnailarguments](assets/step_properties_thumbnailarguments.png)
 
@@ -217,14 +215,14 @@ Le dimensionnement des miniatures est défini au format suivant : **width:height
 
 Les paramètres d’image prédéfinis que vous créez sont disponibles sous la forme de rendus dynamiques lorsque vous prévisualisez des ressources. AEM affiche une grande variété de rendus dynamiques lors de l’affichage de ressources à partir de **[!UICONTROL Affichage des détails > Rendus]**. Vous pouvez augmenter ou diminuer la limite des rendus affichés.
 
-**Pour augmenter ou diminuer le nombre de paramètres d’image prédéfinis Dynamic Media affichés** :
+**Pour augmenter ou diminuer le nombre de paramètres d’image prédéfinis Dynamic Media affichés**:
 
 1. Accédez à **[!UICONTROL CRXDE Lite]** ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Accédez au nœud de liste des paramètres d’image prédéfinis à l’adresse `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
-1. Dans la propriété **[!UICONTROL limit]** , remplacez la **[!UICONTROL valeur]**, définie par défaut sur 15, par le nombre souhaité.
+1. Dans le **[!UICONTROL limit]** , modifiez la propriété **[!UICONTROL value]**, qui est défini sur 15 par défaut, selon le nombre souhaité.
 1. Accédez à la source de données des paramètres d’image prédéfinis à l’adresse `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
@@ -249,10 +247,10 @@ Si vous avez l’intention de prendre en charge l’assimilation de fichiers IND
 >
 >Pour créer des paramètres d’image prédéfinis Dynamic Media, vous devez disposer de droits d’administrateur AEM ou d’administrateur Admin Console.
 
-**Pour créer un paramètre d’image prédéfini** Dynamic Media :
+**Pour créer un paramètre d’image prédéfini Dynamic Media**:
 
 1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale.
-1. Appuyez sur l’icône **[!UICONTROL Outils]**, puis accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
+1. Appuyez sur le bouton **[!UICONTROL Outils]** , puis accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
 1. Appuyez sur **[!UICONTROL Créer]**.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -261,7 +259,7 @@ Si vous avez l’intention de prendre en charge l’assimilation de fichiers IND
    >
    >Pour rendre ce paramètre d’image prédéfini réactif, effacez les valeurs des champs **[!UICONTROL largeur]** et **[!UICONTROL hauteur]** et laissez-les vides.
 
-1. Sur la page **[!UICONTROL Modifier le paramètre d’image prédéfini]** , saisissez les valeurs appropriées dans les onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]**, y compris un nom. Les options sont décrites dans [Options d’image prédéfinies](#image-preset-options). Les paramètres prédéfinis s’affichent dans le volet de gauche et peuvent être utilisés à la volée avec d’autres ressources.
+1. Sur le **[!UICONTROL Modifier le paramètre d’image prédéfini]** , entrez des valeurs dans la variable **[!UICONTROL De base]** et **[!UICONTROL Avancé]** onglets, le cas échéant, y compris un nom. Les options sont décrites dans [Options d’image prédéfinies](#image-preset-options). Les paramètres prédéfinis s’affichent dans le volet de gauche et peuvent être utilisés à la volée avec d’autres ressources.
 
    ![chlimage_1-497](assets/chlimage_1-497.png)
 
@@ -285,11 +283,11 @@ Lorsque ces valeurs sont vides, AEM détermine que ce paramètre d’image préd
 
 ### Options des paramètres d’image prédéfinis {#image-preset-options}
 
-Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous disposez des options décrites dans cette section. En outre, Adobe recommande les trois options suivantes *Bonne pratique* pour commencer :
+Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous disposez des options décrites dans cette section. Adobe recommande en outre les trois éléments suivants : *bonne pratique* options de démarrage :
 
-* **[!UICONTROL Format]**  (**** onglet de base) : sélectionnez  **** JPEGou un autre format qui répond à vos besoins. Tous les navigateurs web prennent en charge le format d’image JPEG ; il offre un bon équilibre entre les petites tailles de fichiers et la qualité d’image. Toutefois, les images au format JPEG utilisent un modèle de compression avec perte qui peut introduire des artefacts d’image indésirables si le paramètre de compression est trop faible. C’est pourquoi Adobe recommande de définir la qualité de compression sur 75. Ce paramètre offre un bon équilibre entre la qualité d’image et la taille de fichier réduite.
-* **[!UICONTROL Activer l’accentuation simple]**  : ne sélectionnez pas l’option  **[!UICONTROL Activer l’accentuation simple]**  (ce filtre d’accentuation offre moins de contrôle que les paramètres Masquage flou).
-* **[!UICONTROL Accentuation : Mode Rééchantillonnage]**  : sélectionnez  **[!UICONTROL Bicubique]**.
+* **[!UICONTROL Format]** (**[!UICONTROL De base]** (onglet) - Sélectionner **[!UICONTROL JPEG]** ou un autre format qui répond à vos besoins. Tous les navigateurs Web prennent en charge le format d’image du JPEG ; il offre un bon équilibre entre les petites tailles de fichiers et la qualité d’image. Toutefois, les images au format JPEG utilisent un modèle de compression avec perte qui peut introduire des artefacts d’image indésirables si le paramètre de compression est trop faible. C’est pourquoi Adobe recommande de définir la qualité de compression sur 75. Ce paramètre offre un bon équilibre entre la qualité d’image et la taille de fichier réduite.
+* **[!UICONTROL Activer l’accentuation simple]** - Ne sélectionnez pas **[!UICONTROL Activer l’accentuation simple]** (Ce filtre d’accentuation offre moins de contrôle que les paramètres Masquage flou).
+* **[!UICONTROL Accentuation : Mode Rééchantillonnage]** - Sélectionner **[!UICONTROL Bicubique]**.
 
 #### Options de l’onglet De base {#basic-tab-options}
 
@@ -387,7 +385,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
     </ul>
     <div>
       L’accentuation est décrite dans la section  
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-64/assets/sharpening_images.pdf">Adobe des bonnes pratiques en matière de qualité d’image et d’accentuation de Dynamic Media Classic</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-64/assets/sharpening_images.pdf">Bonnes pratiques relatives à la qualité des images Adobe Dynamic Media Classic et à l’accentuation</a>.
     </div> </td>
   </tr>
   <tr>
@@ -424,7 +422,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 
 ## Définition des options de paramètre d’image prédéfini à l’aide de modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
 
-Outre les options disponibles dans les onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]**, vous pouvez définir des modificateurs d’image pour vous donner plus d’options lorsque vous définissez des paramètres d’image prédéfinis. Le rendu des images repose sur l’API de rendu d’images de Dynamic Media. L’API est définie en détail dans la [Référence du protocole HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html).
+Outre les options disponibles dans la variable **[!UICONTROL De base]** et **[!UICONTROL Avancé]** avec les onglets, vous pouvez définir des modificateurs d’image pour vous donner plus d’options lorsque vous définissez des paramètres d’image prédéfinis. Le rendu des images repose sur l’API de rendu d’images de Dynamic Media. L’API est définie en détail dans la section [Référence du protocole HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html).
 
 Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l’aide des modificateurs d’image.
 
@@ -474,15 +472,15 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
 ## Modification des paramètres d’image prédéfinis {#modifying-image-presets}
 
-**Pour modifier les paramètres d’image prédéfinis** :
+**Pour modifier des paramètres d’image prédéfinis**:
 
 1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale.
-1. Appuyez sur l’icône **[!UICONTROL Outils]**, puis accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
+1. Appuyez sur le bouton **[!UICONTROL Outils]** , puis accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
 
    ![chlimage_1-504](assets/chlimage_1-504.png)
 
 1. Sélectionnez un paramètre prédéfini, puis appuyez sur **[!UICONTROL Modifier]**.
-1. Sur la page **[!UICONTROL Modifier les paramètres d’image prédéfinis]** , apportez les modifications souhaitées, puis appuyez sur **[!UICONTROL Enregistrer]**.
+1. Sur le **[!UICONTROL Modifier les paramètres d’image prédéfinis]** , apportez les modifications souhaitées, puis appuyez sur **[!UICONTROL Enregistrer]**.
 
 ## Publication des paramètres d’image prédéfinis Dynamic Media {#publishing-image-presets}
 
@@ -490,10 +488,10 @@ Si vous exécutez le mode hybride de Dynamic Media, vous devez publier manuellem
 
 Si vous exécutez le mode Scene7 de Dynamic Media, les paramètres d’image prédéfinis sont automatiquement publiés ; vous n’avez pas besoin de réaliser ces étapes.
 
-**Pour publier des paramètres d’image prédéfinis dans Dynamic Media en mode** hybride :
+**Pour publier des paramètres d’image prédéfinis dans Dynamic Media en mode hybride**:
 
 1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale.
-1. Appuyez sur l’icône **[!UICONTROL Outils]**, puis accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
+1. Appuyez sur le bouton **[!UICONTROL Outils]** , puis accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
 1. Sélectionnez un ou plusieurs paramètres d’image prédéfinis dans la liste, puis appuyez sur **[!UICONTROL Publier]**.
 1. Une fois le paramètre d’image prédéfini publié, l’état passe de Non publié à Publié.
 
@@ -502,5 +500,5 @@ Si vous exécutez le mode Scene7 de Dynamic Media, les paramètres d’image pr�
 ## Suppression de paramètres d’image prédéfinis Dynamic Media {#deleting-image-presets}
 
 1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale.
-1. Appuyez sur l’icône **[!UICONTROL Outils]**, puis accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
+1. Appuyez sur le bouton **[!UICONTROL Outils]** , puis accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis]**.
 1. Sélectionnez un paramètre prédéfini, puis appuyez sur **[!UICONTROL Supprimer]**. Dynamic Media vous invite à confirmer la suppression. Appuyez sur **[!UICONTROL Supprimer]**.

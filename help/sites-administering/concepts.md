@@ -211,13 +211,13 @@ Si les deux catégories ci-dessous peuvent être différenciées, vous pouvez cr
 
 * *Catégories structurelles
 
-   Arborescence de catégories définissant *ce qui est un produit* ; par exemple :
+   Arborescence de catégories définissant *qu’est-ce qu’un produit ?*; par exemple :
 
    `/products/mens/shoes/sneakers`
 
-* ** Catégories marketing
+* *Marketing* categories
 
-   Toutes les autres catégories d’un produit *peuvent appartenir à* ; par exemple :
+   Toutes les autres catégories ont *peut appartenir à*; par exemple :
 
    `/special-offers/christmas/shoes`)
 
@@ -230,7 +230,7 @@ Les données peuvent être :
 * Gérées directement dans AEM (générique).
 * Gérées dans le moteur eCommerce et mises à disposition dans AEM.
 
-   Selon le type de données, il est [synchronisé](#catalog-maintenance-data-synchronization) selon les besoins ou directement accessible ; par exemple, des données très volatiles et critiques, telles que les prix des produits, sont récupérées à partir du moteur eCommerce à chaque demande de page pour s’assurer qu’elles sont toujours à jour.
+   Selon le type de données qu’il contient [synchronisé](#catalog-maintenance-data-synchronization) le cas échéant, ou accessible directement; par exemple, des données très volatiles et critiques, telles que les prix des produits, sont récupérées à partir du moteur eCommerce à chaque demande de page pour s’assurer qu’elles sont toujours à jour.
 
 Dans un cas comme dans l’autre, lorsque les données des produits ont été saisies/importées dans AEM, elles sont visibles dans la console **Produits**. Dans l’exemple ci-dessous, les vues sous forme de carte et de liste fournissent des informations du type suivant :
 
@@ -501,7 +501,7 @@ Des pages de proxy sont utilisées pour simplifier la structure du référentiel
 
 La création d’un catalogue utilise dix nœuds par produit, car elle fournit des composants individuels pour chaque produit, que vous pouvez mettre à jour et personnaliser dans AEM. Ce grand nombre de nœuds peut devenir problématique si votre catalogue contient des centaines, voire des milliers de produits. Pour éviter tout problème, créez le catalogue en utilisant des pages de proxy.
 
-Les pages de proxy utilisent une structure à deux noeuds ( `cq:Page` et `jcr:content`) qui ne contient aucun du contenu réel du produit. Le contenu est généré, au moment de la demande, en référençant les données du produit et la page du modèle.
+Les pages de proxy utilisent une structure à deux noeuds ( `cq:Page` et `jcr:content`) qui ne contient aucun contenu de produit réel. Le contenu est généré, au moment de la demande, en référençant les données du produit et la page du modèle.
 
 Ceci présente cependant un inconvénient : vous ne pourrez pas personnaliser les informations sur les produits dans AEM, car un modèle standard (défini pour votre site) est utilisé.
 
@@ -579,7 +579,7 @@ Une promotion peut être contenue dans une expérience ou directement dans la ca
 
    `/content/campaigns/geometrixx-outdoors/big-spender/ordervalueover100/free-shipping`
 
-   se trouve dans une expérience. Se déclenche donc automatiquement chaque fois que le segment ( `ordervalueover100`) est résolu.
+   se déclenche automatiquement chaque fois que le segment ( `ordervalueover100`) est résolu.
 
 * Si une promotion ne s’affiche pas dans une expérience (seulement dans la campagne), elle ne peut pas être appliquée automatiquement à une audience. Cependant, elle peut se déclencher si l’acheteur saisit un bon dans son panier et que ce bon est associé à la promotion.
 
@@ -664,7 +664,7 @@ Ce composant Carnet d’adresses permet ce qui suit :
 
 Vous pouvez choisir l’adresse à définir par défaut.
 
-Le composant Carnet d’adresses est accessible à partir de la page **Mon compte** en cliquant sur **Carnet d’adresses** ou en accédant à `/content/geometrixx-outdoors/en/user/account/address-book.html`.
+Le composant du carnet d’adresses est accessible à partir de la **Mon compte** en cliquant sur **Carnet d’adresses** ou en accédant à `/content/geometrixx-outdoors/en/user/account/address-book.html`.
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
@@ -678,10 +678,10 @@ Le carnet d’adresses est utilisé lors du passage en caisse de votre panier :
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
-Les adresses sont conservées sous `user_home/profile/addresses`.\
+Les adresses sont conservées ci-dessous. `user_home/profile/addresses`.\
 Par exemple, pour Alison Parker, il se trouve sous /home/users/geometrixx/aparker@geometrixx.info/profile/addresses
 
-Vous pouvez définir l’adresse à sélectionner par défaut. Ces informations sont conservées dans le profil de l’acheteur plutôt qu’avec l’adresse. La propriété de profil `address.default` est définie avec le chemin de l’adresse sélectionnée pour la valeur.
+Vous pouvez définir l’adresse à sélectionner par défaut. Ces informations sont conservées dans le profil de l’acheteur plutôt qu’avec l’adresse. La propriété de profil `address.default` est défini avec le chemin de l’adresse sélectionnée pour la valeur .
 
 ### Tarification spécifique à un client {#customer-specific-pricing}
 
@@ -733,12 +733,12 @@ Le panier est enregistré en fonction du moteur utilisé :
 
 Dans un cas comme dans l’autre, les articles restent dans le panier (et peuvent être restaurés) au-delà de la connexion/déconnexion (mais uniquement sur le même ordinateur/dans le même navigateur). Par exemple :
 
-* Parcourez l’application en tant que `anonymous` et ajoutez des produits au panier.
-* se connecter en tant que `Allison Parker` : son panier est vide
+* parcourir en tant que `anonymous` et ajouter des produits au panier
+* se connecter en tant que `Allison Parker` - son panier est vide
 * Ajoutez des produits à son panier.
 * déconnexion : le panier affiche les produits pour `anonymous`
 
-* reconnectez-vous en tant que `Allison Parker` - ses produits sont restaurés
+* se reconnecter en tant que `Allison Parker` - ses produits sont restaurés
 
 >[!NOTE]
 >
@@ -746,7 +746,7 @@ Dans un cas comme dans l’autre, les articles restent dans le panier (et peuven
 
 >[!NOTE]
 >
->Il n’est pas recommandé de tester la restauration du contenu du panier avec le compte `admin`, car cela peut entrer en conflit avec le compte `admin` du moteur eCommerce (Hybris, par exemple).
+>Il n’est pas recommandé de tester la restauration du contenu du panier avec l’événement `admin` , car cela peut entrer en conflit avec la variable `admin` compte du moteur eCommerce (Hybris, par exemple).
 
 >[!NOTE]
 >

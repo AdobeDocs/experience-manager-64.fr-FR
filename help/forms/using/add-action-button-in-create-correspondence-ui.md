@@ -23,7 +23,7 @@ ht-degree: 54%
 
 La solution Correspondence Management vous permet d’ajouter des actions personnalisées à l’interface utilisateur de création de correspondance.
 
-Le scénario de ce document explique comment créer un bouton dans l’interface utilisateur de création de correspondance pour partager une lettre en tant que révision PDF jointe à un courrier électronique.
+Le scénario de ce document explique comment créer un bouton dans l’interface utilisateur de création de correspondance pour partager une lettre en tant que PDF de révision joint à un courrier électronique.
 
 ### Prérequis {#prerequisites}
 
@@ -43,9 +43,9 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 ### Ajout du bouton à l’interface utilisateur de création de correspondance {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. Accédez à `https://[server]:[port]/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
-1. Dans le dossier des applications, créez un dossier nommé `defaultApp` avec un chemin/une structure semblables au dossier defaultApp (situé dans le dossier config ). Procédez comme suit pour créer le dossier :
+1. Dans le dossier des applications, créez un dossier nommé `defaultApp` avec un chemin/une structure similaires au dossier defaultApp (situé dans le dossier config ). Procédez comme suit pour créer le dossier :
 
-   * Cliquez avec le bouton droit sur le dossier **[!UICONTROL defaultApp]** à l’emplacement suivant et sélectionnez **[!UICONTROL Noeud de recouvrement]** :
+   * Cliquez avec le bouton droit de la souris sur le **[!UICONTROL defaultApp]** à l’emplacement suivant et sélectionnez **[!UICONTROL Noeud de recouvrement]**:
 
       /libs/fd/cm/config/defaultApp/
 
@@ -53,11 +53,11 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
    * Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **[!UICONTROL Chemin d’accès :]** /libs/fd/cm/config/defaultApp/
+      **[!UICONTROL Chemin :]** /libs/fd/cm/config/defaultApp/
 
       **[!UICONTROL Emplacement de la superposition :]** /apps/
 
-      **[!UICONTROL Faire correspondre les types de noeud :]** coché
+      **[!UICONTROL Faire correspondre les types de noeud :]** Cochée
 
       ![Nœud de recouvrement](assets/2_defaultappoverlaynode.png)
 
@@ -104,7 +104,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
    La balise modelExtension dispose d’un jeu de balises enfant customAction qui permet de configurer l’action, les autorisations et l’aspect du bouton d’action. Voici la liste des balises de configuration customAction :
 
-   | **Name** (Nom) | **Description** |
+   | **Nom** | **Description** |
    |---|---|
    | name | Nom alphanumérique de l’action à exécuter. La valeur de cette balise est obligatoire, doit être unique (dans la balise modelExtension) et doit commencer par une lettre de l’alphabet. |
    | label | Libellé du bouton d’action. |
@@ -115,7 +115,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
    Outre les paramètres ci-dessus, des configurations supplémentaires associées à une action personnalisée customAction peuvent exister. Ces configurations supplémentaires sont mises à la disposition du gestionnaire via l’objet CustomAction .
 
-   | **Name** (Nom) | **Description** |
+   | **Nom** | **Description** |
    |---|---|
    | serviceName | Si une action personnalisée customAction contient une balise enfant nommée serviceName, puis en cliquant sur le bouton/lien correspondant, un processus est appelé avec le nom représenté par la balise serviceName . Assurez-vous que ce processus a la même signature que le post-processus de lettre. Ajoutez le préfixe « Flux de travail Forms - > » au nom du service. |
    | Paramètres contenant le préfixe cm_ dans le nom de balise | Si une action personnalisée customAction contient une balise enfant dont le nom commence par cm_, dans le post-traitement (qu’il s’agisse du post-traitement de lettre ou du processus spécial représenté par la balise serviceName), ces paramètres sont disponibles dans le code XML d’entrée sous la balise appropriée avec le préfixe cm_ supprimé. |
@@ -127,21 +127,21 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
 Le fichier ACMExtensionsMessages.properties comprend des libellés et des messages d’info-bulle pour divers champs de l’interface utilisateur de création de correspondance. Effectuez une copie de ce fichier dans la branche /apps afin que les actions/boutons personnalisé(e)s fonctionnent.
 
-1. Cliquez avec le bouton droit sur le dossier **[!UICONTROL locale]** à l’emplacement suivant et sélectionnez **[!UICONTROL Noeud de recouvrement]** :
+1. Cliquez avec le bouton droit de la souris sur le **[!UICONTROL locale]** à l’emplacement suivant et sélectionnez **[!UICONTROL Noeud de recouvrement]**:
 
    /libs/fd/cm/config/defaultApp/locale
 
 1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-   **[!UICONTROL Chemin d’accès :]** /libs/fd/cm/config/defaultApp/locale
+   **[!UICONTROL Chemin :]** /libs/fd/cm/config/defaultApp/locale
 
    **[!UICONTROL Emplacement de la superposition :]** /apps/
 
-   **[!UICONTROL Faire correspondre les types de noeud :]** coché
+   **[!UICONTROL Faire correspondre les types de noeud :]** Cochée
 
 1. Cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**.
-1. Cliquez avec le bouton droit sur le fichier suivant et sélectionnez **[!UICONTROL Copier]** :
+1. Cliquez avec le bouton droit sur le fichier suivant et sélectionnez **[!UICONTROL Copier]**:
 
    `/libs/fd/cm/config/defaultApp/locale/ACMExtensionsMessages.properties`
 
@@ -151,7 +151,7 @@ Le fichier ACMExtensionsMessages.properties comprend des libellés et des messag
 
    Le fichier ACMExtensionsMessages.properties est copié dans le dossier de paramètres régionaux.
 
-1. Pour localiser les libellés de l’action/du bouton personnalisé nouvellement ajouté, créez le fichier ACMExtensionsMessages.properties pour le paramètre régional approprié dans `/apps/fd/cm/config/defaultApp/locale/`.
+1. Pour localiser les libellés de l’action ou du bouton personnalisé que vous venez d’ajouter, créez le fichier ACMExtensionsMessages.properties pour les paramètres régionaux appropriés dans la `/apps/fd/cm/config/defaultApp/locale/`.
 
    Par exemple, pour localiser l’action/le bouton personnalisé(e) créé(e) dans cet article, créez un fichier nommé ACMExtensionsMessages_fr.properties avec l’entrée suivante :
 
@@ -199,24 +199,24 @@ La gestion de l’action ou du bouton lors d’un clic sur l’action/le bouton 
 
    Procédez comme suit pour créer le dossier :
 
-   1. Cliquez avec le bouton droit sur le dossier **[!UICONTROL js]** à l’emplacement suivant et sélectionnez **[!UICONTROL Noeud de recouvrement]** :
+   1. Cliquez avec le bouton droit de la souris sur le **[!UICONTROL js]** à l’emplacement suivant et sélectionnez **[!UICONTROL Noeud de recouvrement]**:
 
       `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **[!UICONTROL Chemin d’accès :]** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
+      **[!UICONTROL Chemin :]** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
 
       **[!UICONTROL Emplacement de la superposition :]** /apps/
 
-      **[!UICONTROL Faire correspondre les types de noeud :]** coché
+      **[!UICONTROL Faire correspondre les types de noeud :]** Cochée
 
    1. Cliquez sur **[!UICONTROL OK]**.
    1. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
 1. Dans le dossier js, créez un fichier nommé ccrcustomization.js avec le code de traitement d’action du bouton en procédant comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier **[!UICONTROL js]** à l’emplacement suivant et sélectionnez **[!UICONTROL Créer > Créer un fichier]** :
+   1. Cliquez avec le bouton droit de la souris sur le **[!UICONTROL js]** à l’emplacement suivant et sélectionnez **[!UICONTROL Créer > Créer un fichier]**:
 
       `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
@@ -326,10 +326,10 @@ La gestion de l’action ou du bouton lors d’un clic sur l’action/le bouton 
 
 Dans ce scénario, activez les composants suivants, qui font partie du fichier joint components.zip :
 
-* Composant DSC jar (`DSCSample.jar`)
+* Fichier jar du composant DSC (`DSCSample.jar`)
 * Processus LCA d’envoi de la lettre pour révision (`SendLetterForReview.lca`)
 
-Téléchargez et décompressez le fichier `components.zip` pour obtenir les fichiers `DSCSample.jar` et `SendLetterForReview.lca`. Utilisez ces fichiers comme indiqué dans les procédures suivantes.
+Téléchargez et décompressez le fichier `components.zip` fichier à obtenir `DSCSample.jar` et `SendLetterForReview.lca` fichiers . Utilisez ces fichiers comme indiqué dans les procédures suivantes.
 
 [Obtenir le fichier](assets/components.zip)
 
@@ -344,10 +344,10 @@ Le processus LCA s’exécute sur le serveur LiveCycle et requiert l’adresse d
 1. Accédez à `https://[server]:[port]/system/console/configMgr` et connectez-vous en tant qu’administrateur.
 1. Localisez la configuration du SDK client d’Adobe LiveCycle et cliquez sur **[!UICONTROL Modifier]** (icône de modification). Le panneau de configuration s’ouvre.
 
-1. Saisissez les informations suivantes et cliquez sur **[!UICONTROL Enregistrer]** :
+1. Saisissez les informations suivantes, puis cliquez sur **[!UICONTROL Enregistrer]**:
 
-   * **[!UICONTROL URL]** Du Serveur : URL du serveur LC dont le service Send For Review est utilisé par le code du gestionnaire d’actions.
-   * **[!UICONTROL Nom d’utilisateur]** : Nom d’utilisateur administrateur du serveur LC.
+   * **[!UICONTROL URL du serveur]**: URL du serveur LC dont le service Send For Review est utilisé par le code du gestionnaire d’actions.
+   * **[!UICONTROL Nom d’utilisateur]**: Nom d’utilisateur administrateur du serveur LC.
    * **[!UICONTROL Mot de passe]** : mot de passe du nom d’utilisateur de l’administrateur.
 
    ![Configuration du SDK client d’Adobe LiveCycle](assets/3_clientsdkconfiguration.png)
@@ -360,7 +360,7 @@ Processus de LiveCycle requis qui active le processus de service de messagerie.
 >
 >Workbench est requis pour connaître le fonctionnement de ce processus ou créer un processus similaire.
 
-1. Connectez-vous en tant qu’administrateur à l’interface d’administration du serveur LiveCycle à l’adresse `https:/[lc server]/:[lc port]/adminui`.
+1. Connectez-vous en tant qu’administrateur à l’interface administrateur du serveur LiveCycle à l’adresse `https:/[lc server]/:[lc port]/adminui`.
 
 1. Accédez à **[!UICONTROL Accueil > Services > Applications et services > Gestion des applications]**.
 
@@ -370,13 +370,13 @@ Processus de LiveCycle requis qui active le processus de service de messagerie.
 
 1. Cliquez sur **[!UICONTROL Importer]**.
 
-1. Cliquez sur **[!UICONTROL Choisir le fichier]** et sélectionnez **[!UICONTROL SendLetterForReview.lca]**.
+1. Cliquez sur **[!UICONTROL Choisir un fichier]** et sélectionnez **[!UICONTROL SendLetterForReview.lca]**.
 
    ![Sélection du fichier SendLetterForReview.lca](assets/14_sendletterforreview_lca.png)
 
 1. Cliquez sur **[!UICONTROL Aperçu]**.  
 
-1. Sélectionnez **[!UICONTROL Déployer les ressources au moment de l’exécution lorsque l’importation est terminée]**.
+1. Sélectionner **[!UICONTROL Déployer des ressources à l’exécution une fois l’importation terminée]**.
 
 1. Cliquez sur **[!UICONTROL Importer]**.
 
@@ -386,8 +386,8 @@ Indiquez dans le serveur AEM les services LiveCycle auxquels vous souhaitez qu�
 
 1. Connectez-vous en tant qu’administrateur à `https:/[host]/:[port]/system/console/configMgr`.
 
-1. Recherchez et cliquez sur **[!UICONTROL Adobe LiveCycle Client SDK Configuration]**. Le panneau Configuration du SDK client d’Adobe LiveCycle s’affiche.
-1. Dans la liste Nom du service, cliquez sur l’icône + et ajoutez un serviceName **[!UICONTROL SendLetterForReview/SendLetterForReviewProcess]**.
+1. Recherchez et cliquez sur **[!UICONTROL Configuration du SDK client Adobe LiveCycle]**. Le panneau Configuration du SDK client d’Adobe LiveCycle s’affiche.
+1. Dans la liste Service Name, cliquez sur l’icône + et ajoutez un serviceName. **[!UICONTROL SendLetterForReview/SendLetterForReviewProcess]**.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -395,7 +395,7 @@ Indiquez dans le serveur AEM les services LiveCycle auxquels vous souhaitez qu�
 
 Dans ce scénario, configurez le service de messagerie dans le serveur LiveCycle afin que Correspondence Management puisse envoyer un courrier électronique.
 
-1. Connectez-vous avec les informations d’identification d’administrateur à l’interface d’administration du serveur Livecycle à l’adresse `https:/[lc server]:[lc port]/adminui`.
+1. Connectez-vous avec les informations d’identification d’administrateur à l’interface utilisateur du serveur LiveCycle à l’adresse `https:/[lc server]:[lc port]/adminui`.
 
 1. Accédez à **[!UICONTROL Accueil > Services > Applications et services > Gestion des services]**.
 
@@ -407,38 +407,38 @@ Dans ce scénario, configurez le service de messagerie dans le serveur LiveCycle
 
 #### Configuration du service DSC {#configure-the-dsc-service}
 
-Pour utiliser l’API Correspondence Management, téléchargez la `DSCSample.jar` (jointe dans ce document dans le cadre de la fonction `components.zip`) et téléchargez-la sur le serveur LiveCycle. Une fois le fichier `DSCSample.jar` chargé sur le serveur LiveCycle, le serveur AEM utilise le fichier `DSCSample.jar` pour accéder à l’API renderLetter.
+Pour utiliser l’API Correspondence Management, téléchargez la `DSCSample.jar` (joint à ce document en tant que partie intégrante de `components.zip`) et chargez-le sur le serveur LiveCycle. Après la `DSCSample.jar` est chargé sur le serveur LiveCycle, le serveur AEM utilise la variable `DSCSample.jar` pour accéder à l’API renderLetter.
 
 Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
-1. Mettez à jour l’URL du serveur d’AEM dans cmsa.properties dans `DSCSample.jar`, qui se trouve à l’emplacement suivant :
+1. Mettez à jour l’URL du serveur AEM dans cmsa.properties dans `DSCSample.jar`, qui se trouve à l’emplacement suivant :
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
 1. Indiquez les paramètres suivants dans le fichier de configuration :
 
-   * **crx.serverUrl**=https:/[host]/:[port]/[context path]/[AEM URL]
+   * **crx.serverUrl**=https:/[hôte]/:[port]/[chemin du contexte]/[URL AEM]
    * **crx.username**= nom d’utilisateur AEM
-   * **crx.password** = AEM mot de passe
+   * **crx.password**= AEM mot de passe
    * **crx.appRoot**=/content/apps/cm
 
    >[!NOTE]
    >
    >Chaque fois que vous apportez des modifications côté serveur, redémarrez le serveur.
 
-   Le fichier `DSCSample.jar` utilise l’API `renderLetter`. Pour plus d’informations sur l’API renderLetter, voir [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   Le `DSCSample.jar` utilise la variable `renderLetter` API. Pour plus d’informations sur l’API renderLetter, voir [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importation de DSC dans AEM Forms on JEE {#import-dsc-to-livecyle}
 
 `DSCSample.jar``renderLetter`Le fichier utilise l’API pour effectuer le rendu d’une lettre sous forme d’octets PDF à partir des données XML fournies par C en tant qu’entrée. Pour plus d’informations sur l’API renderLetter et les autres API, voir [Service de rendu de lettre](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Démarrer Workbench et connectez-vous.
-1. Sélectionnez **[!UICONTROL Fenêtre > Afficher les vues > Composants]**. La vue Components est ajoutée à Workbench ES2.
+1. Sélectionner **[!UICONTROL Fenêtre > Afficher les vues > Composants]**. La vue Components est ajoutée à Workbench ES2.
 
-1. Cliquez avec le bouton droit de la souris sur **[!UICONTROL Composants]** et sélectionnez **[!UICONTROL Installer le composant]**.
+1. Clic droit **[!UICONTROL Composants]** et sélectionnez **[!UICONTROL Installation du composant]**.
 
-1. Sélectionnez le fichier `DSCSample.jar` dans l’explorateur de fichiers, puis cliquez sur **[!UICONTROL Ouvrir]**.
-1. Cliquez avec le bouton droit de la souris sur **[!UICONTROL RenderWrapper]** et sélectionnez **[!UICONTROL Démarrer le composant]**. Si le composant démarre, une flèche verte apparaît en regard du nom du composant.
+1. Sélectionnez la `DSCSample.jar` via l’explorateur de fichiers, puis cliquez sur **[!UICONTROL Ouvrir]**.
+1. Clic droit **[!UICONTROL RenderWrapper]** et sélectionnez **[!UICONTROL Commencer le composant]**. Si le composant démarre, une flèche verte apparaît en regard du nom du composant.
 
 ## Envoi de la lettre pour révision {#send-letter-for-review}
 

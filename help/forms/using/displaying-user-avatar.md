@@ -1,8 +1,8 @@
 ---
 title: Affichage de l’avatar de l’utilisateur
-seo-title: Affichage de l’avatar de l’utilisateur
+seo-title: Displaying the user avatar
 description: Comment personnaliser l’espace de travail AEM Forms pour afficher l’image d’un utilisateur connecté.
-seo-description: Comment personnaliser l’espace de travail AEM Forms pour afficher l’image d’un utilisateur connecté.
+seo-description: How to customize the AEM Forms workspace to display the image of a logged-in user.
 uuid: 2961dc93-f0d0-4842-80f1-3c239a20e348
 contentOwner: robhagat
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 exl-id: 2bc70cd6-1ea6-4594-9b42-ab3d3000a0c5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 80%
+source-wordcount: '192'
+ht-degree: 78%
 
 ---
 
@@ -25,7 +25,7 @@ L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droi
 >
 >le rapport d’aspect des images de l’utilisateur est de 1:1.
 
-1. Créez un DSC, à l’aide des détails mentionnés dans l’étape suivante. Pour plus d’informations, voir la rubrique &quot;Développement de composants pour AEM Forms&quot; dans le guide [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
+1. Créez un DSC, à l’aide des détails mentionnés dans l’étape suivante. Pour plus d’informations, voir la rubrique &quot;Développement de composants pour AEM Forms&quot; dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guide.
 1. Dans le DSC, définissez une nouvelle SPI qui expose les méthodes getCurrentUserImageUrl et getUserImageUrl afin d’obtenir l’URL d’image d’un utilisateur d’AEM Forms. Voici un exemple de fragment de code Java™ :
 
    ```as3
@@ -83,5 +83,5 @@ L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droi
    </component>
    ```
 
-1. Déployez DSC via Workbench. Redémarrez le service `ProcessManagementClientSessionService`.
+1. Déployez DSC via Workbench. Redémarrer `ProcessManagementClientSessionService` service.
 1. Il se peut que vous ayez à actualiser votre navigateur ou à vous déconnecter/connecter de nouveau avec l’utilisateur.

@@ -1,8 +1,8 @@
 ---
 title: Personnalisation de la liste des instances de processus
-seo-title: Personnalisation de la liste des instances de processus
+seo-title: Customizing the listing of process instances
 description: Comment personnaliser les propriétés affichées dans une instance de processus de l’espace de travail AEM Forms.
-seo-description: Comment personnaliser les propriétés affichées dans une instance de processus de l’espace de travail AEM Forms.
+seo-description: How-to customize the properties displayed in process instance in AEM Forms workspace.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 exl-id: e7b8206c-bac2-48a6-b353-d06bc73b29f9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 88%
+source-wordcount: '284'
+ht-degree: 87%
 
 ---
 
@@ -69,7 +69,7 @@ Dans la liste des instances de processus, pour chaque instance de processus, l�
 
 **Exemple:**
 
-Pour afficher la propriété `description` de l’instance de processus dans la carte de l’instance de processus, procédez comme suit.
+Pour afficher la variable `description` de l’instance de processus dans la carte de l’instance de processus, effectuez les étapes suivantes.
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Procédez comme suit :
@@ -84,7 +84,7 @@ Pour afficher la propriété `description` de l’instance de processus dans la 
 1. Procédez comme suit :
 
    1. Ouvrez /apps/ws/js/registry.js pour le modifier.
-   1. Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/processinstance.html`par `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html.
+   1. Rechercher et remplacer `text!/lc/libs/ws/js/runtime/templates/processinstance.html`avec `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html.
 
 1. Les changements ci-dessus peuvent nécessiter une mise à jour du fichier CSS en ajoutant une entrée dans la feuille de style /apps/ws/css/newStyle.css comme suit :
 

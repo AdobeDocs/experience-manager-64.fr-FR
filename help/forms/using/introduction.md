@@ -1,8 +1,8 @@
 ---
 title: Présentation des formulaires HTML5
-seo-title: Présentation des formulaires HTML5
+seo-title: Introduction to HTML5 forms
 description: 'Les formulaires HTML5 sont une nouvelle fonctionnalité du logiciel Adobe Experience Manager 6.0 (AEM 6.0) qui offre le rendu des modèles de formulaires XFA au format HTML5. '
-seo-description: 'Les formulaires HTML5 sont une nouvelle fonctionnalité du logiciel Adobe Experience Manager 6.0 (AEM 6.0) qui offre le rendu des modèles de formulaires XFA au format HTML5. '
+seo-description: HTML5 forms is a new capability in Adobe Experience Manager 6.0 (AEM 6.0) software that offers rendering of XFA form templates in HTML5 format.
 uuid: a68f1ca1-32dd-48f9-9359-8f09abd1c3de
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
@@ -11,7 +11,7 @@ feature: Mobile Forms
 exl-id: c69b5ae6-c5c5-46df-8290-3e41470cd09e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '414'
 ht-degree: 96%
 
 ---

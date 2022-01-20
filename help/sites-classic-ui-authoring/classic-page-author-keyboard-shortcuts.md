@@ -1,8 +1,8 @@
 ---
 title: Raccourcis clavier lors de la modification de pages
-seo-title: Raccourcis clavier lors de la modification de pages
+seo-title: Keyboard Shortcuts when Editing Pages
 description: Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent lors de la modification de pages, d’autres lors de l’utilisation de consoles.
-seo-description: Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent lors de la modification de pages, d’autres lors de l’utilisation de consoles.
+seo-description: Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the use of consoles.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 04075ed1-3a52-4371-aa4e-0c3d61c878ef
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '313'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 >[!NOTE]
 >
->Dans les tableaux suivants, pour les combinaisons de touches de la colonne **Raccourci** , les touches Ctrl et Commande fonctionnent toutes deux sous macOS.
+>Dans les tableaux ci-dessous, pour les combinaisons de touches de la fonction **Raccourci** les touches Ctrl et Commande fonctionnent toutes deux sur macOS.
 
 >[!NOTE]
 >
@@ -33,7 +33,6 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 >* Mac : maintenez la touche Cmd enfoncée tout en cliquant sur les composants requis.
 
 >
-
 
 
 ## Raccourcis clavier d’édition {#editing-keyboard-shortcuts}
@@ -154,7 +153,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
  </tbody> 
 </table>
 
-Lors de l’utilisation des [consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md), plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau.
+Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau qui utilisent les [consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 ## Raccourcis clavier pour les développeurs {#keyboard-shortcuts-for-development}
 
@@ -169,7 +168,7 @@ Des raccourcis clavier supplémentaires sont disponibles pour les développeurs 
   </tr> 
   <tr> 
    <td>Mode d’édition</td> 
-   <td>Définissez le suffixe suivant dans l’URL :<br /> <code>?debugClientLibs=true</code><br /> Puis utilisez :<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Définissez le suffixe suivant dans l’URL :<br /> <code>?debugClientLibs=true</code><br /> Ensuite, utilisez :<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>Afficher les statistiques de synchronisation pour le chargement de page.</td> 
   </tr> 
  </tbody> 

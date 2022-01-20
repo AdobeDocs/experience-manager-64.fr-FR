@@ -17,7 +17,7 @@ ht-degree: 82%
 
 # Thèmes de référence {#reference-themes}
 
-Les [thèmes](/help/forms/using/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Outre le thème par défaut, vous pouvez obtenir les thèmes suivants en installant le [module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) :
+Les [thèmes](/help/forms/using/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Outre le thème par défaut, vous pouvez obtenir les thèmes suivants en installant le[Package de module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
 
 * Beryl
 * Exec
@@ -34,13 +34,13 @@ Chaque thème comporte un style unique et élégant que vous pouvez utiliser pou
 
 Les thèmes inclus dans ce package sont réactifs et le style de ces thèmes est défini pour des affichages mobiles et de bureau. La plupart des navigateurs modernes sur différents périphériques peuvent sans problème rendre des formulaires auxquels est appliqué l’un de ces thèmes.
 
-Pour plus d’informations sur l’installation du package, voir [Comment utiliser les packages](/help/sites-administering/package-manager.md).
+Pour plus d’informations sur l’installation du package, voir [Utilisation de modules](/help/sites-administering/package-manager.md).
 
 ## Beryl {#beryl}
 
 Le thème Beryl est utilisé par le [formulaire adaptatif We.Gov](/help/forms/using/gov-reference-site-walkthrough.md) et souligne l’utilisation d’une image d’arrière-plan, de la transparence et de grandes icônes aplaties. Dans la capture d’écran ci-dessous, vous pouvez voir à quoi ressemble le thème Beryl, et comment il peut augmenter le style de votre formulaire.
-![Beryl ](assets/beryl.png)
-[themeClick pour agrandir](assets/beryl-1.png)
+![Thème Beryl](assets/beryl.png)
+[Cliquez pour agrandir](assets/beryl-1.png)
 
 ## Exec {#exec}
 

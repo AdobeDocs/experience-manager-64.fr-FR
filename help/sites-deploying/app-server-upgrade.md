@@ -1,19 +1,19 @@
 ---
 title: Procédure de mise à niveau pour les installations de serveur d’applications
-seo-title: Procédure de mise à niveau pour les installations de serveur d’applications
+seo-title: Upgrade Steps for Application Server Installations
 description: Découvrez comment mettre à niveau des instances AEM qui sont déployées par le biais de serveurs d’applications.
-seo-description: Découvrez comment mettre à niveau des instances AEM qui sont déployées par le biais de serveurs d’applications.
+seo-description: Learn how to upgrade instances of AEM that are deployed via Application Servers.
 uuid: df3fa715-af4b-4c81-b2c5-130fbc82f395
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
-feature: Mise à niveau
+feature: Upgrading
 exl-id: 1c72093e-82c8-49ad-bd3c-d61904aaab28
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '504'
 ht-degree: 96%
 
 ---
@@ -56,7 +56,7 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
 
 1. Supprimez les propriétés requises du fichier sling.properties en procédant comme suit :
 
-   1. Ouvrez le fichier situé à l’emplacement `crx-quickstart/launchpad/sling.properties`.
+   1. Ouvrez le fichier situé à l’adresse `crx-quickstart/launchpad/sling.properties`
    1. Supprimez les propriétés suivantes et enregistrez le fichier :
 
       1. `sling.installer.dir`
@@ -71,8 +71,8 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
 1. Supprimez les fichiers et dossiers qui ne sont plus nécessaires. Vous devez précisément supprimer les éléments suivants :
 
    * Le **dossier launchpad/startup**. Vous pouvez le supprimer en exécutant la commande suivante dans le terminal :`rm -rf crx-quickstart/launchpad/startup`
-   * Le **fichier base.jar** : `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * Fichier **BootstrapCommandFile_timestamp.txt** : `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * Le **fichier base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * Le **Fichier BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. Copiez le segmentstore (magasin de segments) nouvellement migré à son emplacement approprié :
 
@@ -98,7 +98,7 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
 
 1. Modifiez les fichiers de configuration pour les rendre prêts à l’emploi. Plus précisément :
 
-   * Ajoutez la ligne suivante à **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config** :
+   * Ajoutez la ligne suivante à **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
 
       `customBlobStore=true`
 

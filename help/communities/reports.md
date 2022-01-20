@@ -1,8 +1,8 @@
 ---
 title: 'Console Rapports '
-seo-title: 'Console Rapports '
+seo-title: Reports Console
 description: Découvrez comment accéder aux rapports
-seo-description: Découvrez comment accéder aux rapports
+seo-description: Learn how to access reports
 uuid: 580f5eb8-24b2-4404-90d4-81f7108d1ee6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -13,8 +13,8 @@ role: Admin
 exl-id: 766711ea-f3d3-49ab-8346-4e4477c261bd
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 8%
+source-wordcount: '551'
+ht-degree: 7%
 
 ---
 
@@ -26,11 +26,11 @@ Pour AEM Communities, plusieurs rapports sont accessibles de plusieurs manières
 
 En général, les différents rapports sont les suivants :
 
-* [Rapport d’affectations](#assignments-report)  : pour une communauté d’ [activation](overview.md#enablement-community), fournit un aperçu de l’avancement des apprenants sur leurs affectations, y compris un score associé lors de la mise en oeuvre de la norme SCORM.
-* [Rapport Vues](#views-report)  : fournit un tableau des vues du contenu par les membres de la communauté et les visiteurs du site pour n’importe quel site de la communauté.
-* [Rapport Publications](#posts-report)  : fournit un graphique des différents types de publications par les membres de la communauté sur n’importe quel site de la communauté.
+* [Rapport Affectations](#assignments-report) - pour un [communauté d&#39;activation](overview.md#enablement-community), fournit un aperçu de l’avancement des apprenants sur leurs affectations, y compris un score associé lors de la mise en oeuvre de la norme SCORM.
+* [Rapport Vues](#views-report) - fournit un tableau des vues du contenu par les membres de la communauté et les visiteurs du site pour n’importe quel site de la communauté.
+* [Rapport Publications](#posts-report) - fournit un graphique des différents types de publications par les membres de la communauté sur n’importe quel site de la communauté.
 
-Lorsque [Adobe Analytics est activé](sites-console.md#analytics), les rapports comprennent le nombre de vues, lectures, commentaires et évaluations pour chaque ressource d’activation au fil du temps.
+When [Adobe Analytics est activé](sites-console.md#analytics), les rapports comprennent le nombre de vues, lectures, commentaires et évaluations pour chaque ressource d’activation au fil du temps.
 
 Les rapports tabulaires peuvent être exportés au format .csv pour un traitement ultérieur.
 
@@ -52,9 +52,9 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
 * À partir de la navigation globale : **[!UICONTROL Navigation > Communautés > Ressources]**
 * Sélectionner un site de communauté d’activation existant
-   * Sélectionnez **[!UICONTROL Icône Report]** pour générer des rapports qui couvrent toutes les ressources d’activation.
+   * Sélectionner **[!UICONTROL Rapport]** pour générer des rapports couvrant toutes les ressources d&#39;activation.
    * Sélection d’un chemin d’apprentissage d’activation
-   * Sélectionnez **[!UICONTROL Icône Report]** pour générer des rapports pour
+   * Sélectionner **[!UICONTROL Rapport]** icône de génération de rapports pour
       * Ressources d’activation incluses
       * Les apprenants affectés au parcours d’apprentissage
 * Ces rapports fournissent les éléments suivants :
@@ -77,16 +77,15 @@ Le rapport fournit des informations sur leurs progrès ainsi que sur les comment
 
 Sélectionnez les critères du rapport :
 
-* ****
-SiteSélectionner un site de la communauté d’activation
+* **[!UICONTROL Site]**
+Sélectionner un site de communauté d’activation
 * **[!UICONTROL Utilisateur ou groupe]**
    * Sélectionnez Utilisateur pour générer un rapport destiné à un apprenant.
-   * Sélectionnez Groupe pour générer un rapport pour un groupe d’apprenants.
-Le service Tunnel accède aux membres et aux groupes de membres à partir de l’environnement de publication.
-* ****
-AttributionChoisissez parmi les ressources d’activation affectées aux apprenants sélectionnés.
+   * Sélectionner un groupe pour générer un rapport pour un groupe d’apprenants Le service tunnel accède aux membres et aux groupes de membres à partir de l’environnement de publication.
+* **[!UICONTROL Attribution]**
+Faites votre choix parmi les ressources d’activation affectées aux apprenants sélectionnés.
 
-Sélectionnez **[!UICONTROL Générer]** pour créer le rapport :
+Sélectionner **[!UICONTROL Générer]** pour créer le rapport :
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -98,18 +97,17 @@ La console Vues permet de générer des rapports sur les pages vues par fonction
 
 Sélectionnez les critères du rapport :
 
-* ****
-SiteSelect a community site
-* **[!UICONTROL Type]**
-de contenuPeut sélectionner tout le contenu ou l’une des fonctionnalités présentes sur le site.
-* Période
-Sélectionnez l’une des options suivantes :
+* **[!UICONTROL Site]**
+Sélectionner un site communautaire
+* **[!UICONTROL Type de contenu]**
+Peut sélectionner tout le contenu ou l’une des fonctionnalités présentes sur le site
+* Période Sélectionnez l’une des options suivantes :
    * 7 derniers jours
    * 30 derniers jours
    * 90 derniers jours
    * L&#39;année dernière
 
-Sélectionnez **[!UICONTROL Générer]** pour créer le rapport :
+Sélectionner **[!UICONTROL Générer]** pour créer le rapport :
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -121,18 +119,17 @@ La console Publications permet de générer des rapports sur le nombre de public
 
 Sélectionnez les critères du rapport :
 
-* ****
-SiteSelect a community site
-* **[!UICONTROL Type]**
-de contenuPeut sélectionner tout le contenu ou l’une des fonctionnalités présentes sur le site.
-* Période
-Sélectionnez l’une des options suivantes :
+* **[!UICONTROL Site]**
+Sélectionner un site communautaire
+* **[!UICONTROL Type de contenu]**
+Peut sélectionner tout le contenu ou l’une des fonctionnalités présentes sur le site
+* Période Sélectionnez l’une des options suivantes :
    * 7 derniers jours
    * 30 derniers jours
    * 90 derniers jours
    * L&#39;année dernière
 
-Sélectionnez **[!UICONTROL Générer]** pour créer le rapport :
+Sélectionner **[!UICONTROL Générer]** pour créer le rapport :
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 

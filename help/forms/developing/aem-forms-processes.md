@@ -1,8 +1,8 @@
 ---
 title: Présentation des processus AEM Forms
-seo-title: Présentation des processus AEM Forms
+seo-title: Understanding AEM Forms Processes
 description: Découvrez comment utiliser les processus d’entreprise AEM Forms pour automatiser les opérations. Activez les processus pour créer un service afin que vous puissiez l’appeler comme d’autres services. Les processus peuvent être de courte durée ou de longue durée.
-seo-description: Découvrez comment utiliser les processus d’entreprise AEM Forms pour automatiser les opérations. Activez les processus pour créer un service afin que vous puissiez l’appeler comme d’autres services. Les processus peuvent être de courte durée ou de longue durée.
+seo-description: Learn how to use AEM Forms business processes to automate operations. Activate the processes to create a service so that you can invoke it like other services. Processes can be short-lived or long-lived.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: 0ae0ddbf-ded6-4494-bf94-bf6cf7f1fd46
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '818'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ La valeur de l’identifiant d’appel vous permet de suivre l’état du proces
 
 **Exemple de processus de courte durée**
 
-L’illustration suivante est un exemple de processus de courte durée appelé *MyApplication/EncryptDocument*.
+L’illustration suivante est un exemple de processus de courte durée nommé *MyApplication/EncryptDocument*.
 
 >[!NOTE]
 >
@@ -50,32 +50,32 @@ L’illustration suivante est un exemple de processus de courte durée appelé *
 
 Lorsque ce processus de courte durée est appelé, il effectue les actions suivantes :
 
-1. Obtient le document PDF non sécurisé transmis au processus en tant que valeur d’entrée.
+1. Obtient le document de PDF non sécurisé transmis au processus en tant que valeur d’entrée.
 1. Chiffrement du document PDF avec un mot de passe. Le nom du paramètre d’entrée pour ce processus est `inDoc` et le type de données est document.
-1. Enregistre le document PDF chiffré par mot de passe en tant que fichier PDF dans le système de fichiers local. Ce processus renvoie le document PDF chiffré en tant que valeur de sortie. Le nom du paramètre de sortie pour ce processus est `outDoc` et le type de données est document.
+1. Enregistre le document de PDF chiffré par mot de passe en tant que fichier de PDF dans le système de fichiers local. Ce processus renvoie le document de PDF chiffré en tant que valeur de sortie. Le nom du paramètre de sortie pour ce processus est `outDoc` et le type de données est document.
 
-   Ce processus est terminé de manière synchrone sur le même thread d’exécution à partir duquel il a été appelé. Le nom de ce processus de courte durée est `MyApplication/EncryptDocument`et son opération est `invoke`.
+   Ce processus est terminé de manière synchrone sur le même thread d’exécution à partir duquel il a été appelé. Le nom de ce processus de courte durée est `MyApplication/EncryptDocument`et son fonctionnement est `invoke`.
 
    >[!NOTE]
    >
    >En règle générale, un processus de courte durée comprend plus de trois actions. Vous créez un processus à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
-   *La programmation avec AEM* forms décrit les méthodes suivantes par programmation pour appeler ce processus de courte durée :
+   *Programmation avec les AEM forms* décrit les méthodes suivantes par lesquelles vous pouvez appeler ce processus de courte durée par programmation :
 
-   * [Appel d’un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)  (à l’aide d’une application Flex)
-   * [Appel d’un processus de courte durée à l’aide de l’API d’appel ](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api)  (API d’appel Java)
-   * [Appel d’AEM Forms à l’aide de l’encodage](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)  Base64 (exemple de service Web)
-   * [Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)  (exemple de service Web)
-   * [Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)  (exemple de service Web)
-   * [Appel d’AEM Forms à l’aide de données BLOB sur HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)  (exemple de service Web)
-   * [Appel d’AEM Forms à l’aide de DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime)  (exemple de service Web)
+   * [Appel d’un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Utilisation d’une application Flex)
+   * [Appel d’un processus de courte durée à l’aide de l’API d’appel](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API d’appel Java)
+   * [Appel d’AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (exemple de service web)
+   * [Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (exemple de service web)
+   * [Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (exemple de service web)
+   * [Appel d’AEM Forms à l’aide de données BLOB sur HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (exemple de service web)
+   * [Appel d’AEM Forms à l’aide de DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (exemple de service web)
    * [Appel du processus MyApplication/EncryptDocument à l’aide de REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
 
 **Exemple de processus de longue durée**
 
 L’illustration suivante est un exemple de processus de longue durée.
 
-Ce processus est appelé lorsqu’un demandeur envoie un formulaire de prêt. Le processus n’est pas terminé tant qu’un agent de prêt n’a pas approuvé ou rejeté la demande de prêt. Le nom de ce processus de longue durée est * FirstAppSolution/PreLoanProcess *et son opération est `invoke_Async`. Ce processus doit être appelé de manière asynchrone. Pour plus d’informations sur l’appel par programmation de ce processus de longue durée, voir [Appel de processus de longue durée pour des intervenants humains](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
+Ce processus est appelé lorsqu’un demandeur envoie un formulaire de prêt. Le processus n’est pas terminé tant qu’un agent de prêt n’a pas approuvé ou rejeté la demande de prêt. Le nom de ce processus de longue durée est* FirstAppSolution/PreLoanProcess *et son opération est `invoke_Async`. Ce processus doit être appelé de manière asynchrone. Pour plus d’informations sur l’appel par programmation de ce processus de longue durée, voir [Appel de processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
 >[!NOTE]
 >

@@ -1,8 +1,8 @@
 ---
 title: Groupes communautaires
-seo-title: Groupes communautaires
+seo-title: Community Groups
 description: Création de groupes communautaires
-seo-description: Création de groupes communautaires
+seo-description: Creating community groups
 uuid: 05429b23-9083-498c-9eb3-d49b049d9446
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: 868a3d5d-d505-4ce5-8776-5bbe68a30ccb
 exl-id: 4b663228-9cb6-45c0-99dd-8dd7fc2aa4a6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 48%
+source-wordcount: '526'
+ht-degree: 49%
 
 ---
 
@@ -21,19 +21,19 @@ ht-degree: 48%
 
 La fonctionnalité de groupes de communautés permet à une sous-communauté d’être créée dynamiquement dans un site de communauté par des utilisateurs autorisés (membres de la communauté et auteurs) à partir des environnements de publication et de création.
 
-Cette fonctionnalité est présente lorsque la fonction [groups](functions.md#groups-function) est présente dans la structure [site communautaire](sites-console.md).
+Cette fonctionnalité est présente lorsque la variable [fonction groups](functions.md#groups-function) est présent dans la variable [site communautaire](sites-console.md) structure.
 
-Un [modèle de groupe de communautés](tools-groups.md) fournit la conception de la page de groupe de communautés lorsqu’un groupe de communautés est créé dynamiquement.
+A [modèle de groupe de communautés](tools-groups.md) fournit la conception de la page de groupe de communautés lorsqu’un groupe de communautés est créé dynamiquement.
 
 Un ou plusieurs modèles de groupe sont sélectionnés pour la fonction de groupes lorsque la fonction est ajoutée à la structure d’un site de communauté ou à un modèle de site de communauté. Cette liste de modèles de groupe est présentée au membre ou à l’auteur qui crée dynamiquement un nouveau groupe sur le site de la communauté.
 
 ## Création d’un nouveau groupe {#creating-a-new-group}
 
-La possibilité de créer un groupe de communautés dépend de l’existence d’un site de communauté qui inclut la fonction de groupes, comme un site créé à partir de ` [Reference Site Template](sites.md)`.
+La possibilité de créer un groupe de communautés dépend de l’existence d’un site de communauté qui inclut la fonction de groupes, comme celui créé à partir de la fonction ` [Reference Site Template](sites.md)`.
 
-Les exemples qui suivent utilisent le site de la communauté créé à partir de `Reference Site Template` comme décrit dans le tutoriel [Prise en main d’AEM Communities](getting-started.md) .
+Les exemples qui suivent utilisent le site de la communauté créé à partir du `Reference Site Template` comme décrit dans la section [Prise en main d’AEM Communities](getting-started.md) tutoriel .
 
-Il s’agit de la page qui se charge lors de la publication lorsque l’option de menu **[!UICONTROL Groupes]** est sélectionnée :
+Il s’agit de la page qui se charge lors de la publication lorsque la variable **[!UICONTROL Groupes]** est sélectionnée :
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -51,15 +51,15 @@ Dans l’onglet **[!UICONTROL Paramètres]**, spécifiez les fonctionnalités de
 
 * **[!UICONTROL Nom de l’URL de groupe]** Le nom de la page de groupe qui est intégré à l’URL.
 
-* **[!UICONTROL Ouvrir]**
-la sélection de groupe 
-`Open Group` indique que tout visiteur anonyme du site peut afficher le contenu et le désélectionner  `Member Only Group`.
+* **[!UICONTROL Ouvrir le groupe]**
+Sélection 
+`Open Group` indique que tout visiteur anonyme du site peut afficher le contenu et se désélectionner. `Member Only Group`.
 
-* **[!UICONTROL Member Only]**
-GroupSelecting 
-`Member Only Group` indique que seuls les membres du groupe peuvent afficher le contenu et se désélectionner  `Open Group`.
+* **[!UICONTROL Groupe de membres uniquement]**
+Sélection 
+`Member Only Group` indique que seuls les membres du groupe peuvent afficher le contenu et se désélectionner. `Open Group`.
 
-Sous l’onglet **[!UICONTROL Modèle]**, vous pouvez sélectionner dans la liste des modèles de groupe de communautés qui ont été spécifiés lorsque la fonction de groupes a été incluse dans la structure du site de la communauté ou dans un modèle de site de la communauté.
+Sous , **[!UICONTROL Modèle]** tab permet de sélectionner dans la liste des modèles de groupe de communautés qui ont été spécifiés lorsque la fonction de groupes a été incluse dans la structure du site de la communauté ou dans un modèle de site de la communauté.
 
 ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -73,16 +73,16 @@ Par exemple, la page Groupes comportant une nouvelle sous-communauté nommée «
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
-Si vous sélectionnez le lien `Focus Group`, la page Groupe d’orientation s’ouvre dans le navigateur. Celui-ci a une apparence initiale basée sur le modèle sélectionné et comprend un sous-menu sous le menu du site de la communauté principale :
+En sélectionnant le `Focus Group` Le lien ouvre la page Groupe d’orientation dans le navigateur, qui a une apparence initiale basée sur le modèle sélectionné et comprend un sous-menu sous le menu du site de la communauté principale :
 
 ![chlimage_1-241](assets/chlimage_1-241.png)
 
 ## Composant Liste des membres de groupes de communautés {#community-group-member-list-component}
 
-Le composant `Community Group Member List` est destiné aux développeurs de modèles de groupe.
+Le `Community Group Member List` est destiné aux développeurs de modèles de groupe.
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur les groupes communautaires](essentials-groups.md) pour les développeurs.
+Vous trouverez plus d’informations sur la [Notions fondamentales sur les groupes de communautés](essentials-groups.md) pour les développeurs.
 
-Pour plus d’informations sur les groupes de communautés, voir [Gestion des utilisateurs et des groupes d’utilisateurs](users.md).
+Pour plus d’informations sur les groupes de communautés, consultez [Gestion des utilisateurs et des groupes d’utilisateurs](users.md).

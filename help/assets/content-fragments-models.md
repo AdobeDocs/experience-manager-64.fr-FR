@@ -1,19 +1,19 @@
 ---
 title: Modèles de fragment de contenu
-seo-title: Modèles de fragment de contenu
+seo-title: Content Fragment Models
 description: Les modèles de fragment de contenu sont utilisés pour créer des fragments de contenu avec du contenu structuré.
-seo-description: Les modèles de fragment de contenu sont utilisés pour créer des fragments de contenu avec du contenu structuré.
+seo-description: Content Fragment Models are used to create content fragments with structured content.
 uuid: 59176a32-1255-4a46-ad00-344bde843ea6
 content-type: reference
 topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 exl-id: 39ed07ec-54a6-4387-8435-e891726c411c
-feature: Fragments de contenu
+feature: Content Fragments
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '689'
 ht-degree: 92%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 92%
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de fragment de contenu nécessitent l’application de [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](../release-notes/sp-release-notes.md).
+>Certaines fonctionnalités de fragment de contenu nécessitent l’application de la fonction [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](../release-notes/sp-release-notes.md).
 
 Les modèles de fragment de contenu définissent la structure du contenu pour vos [fragments de contenu](content-fragments.md).
 
@@ -30,7 +30,7 @@ Les modèles de fragment de contenu définissent la structure du contenu pour vo
 
 >[!CAUTION]
 >
->Si vous n’activez pas **[!UICONTROL Modèles de fragment de contenu]**, l’option **[!UICONTROL Créer]** ne sera pas disponible pour la création de modèles.
+>Si vous n’activez pas **[!UICONTROL Modèles de fragment de contenu]**, la variable **[!UICONTROL Créer]** ne sera pas disponible pour la création de modèles.
 
 Pour activer les modèles de fragment de contenu, vous devez :
 
@@ -75,7 +75,7 @@ Pour utiliser d’autres configurations (c’est-à-dire à l’exclusion de la 
 
 1. Utilisez le bouton **[!UICONTROL Créer]** pour enregistrer le modèle vide. Un message indique que l’action a réussi. Vous pouvez alors sélectionner **[!UICONTROL Ouvrir]** pour publier immédiatement le modèle ou **[!UICONTROL Terminé]** pour revenir à la console.
 
-## Définition de votre modèle de fragment de contenu  {#defining-your-content-fragment-model}
+## Définition de votre modèle de fragment de contenu {#defining-your-content-fragment-model}
 
 Le modèle de fragment de contenu définit la structure des fragments de contenu qui en résultent. À l’aide de l’éditeur de modèles, vous pouvez ajouter et configurer les champs obligatoires :
 
@@ -95,7 +95,7 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 
    >[!NOTE]
    >
-   >Lorsqu’un champ est **Obligatoire**, le **Libellé** indiqué dans le volet de gauche sera marqué d’un astérisque (**&amp;ast;**).
+   >Lorsqu’un champ est **Obligatoire**, la variable **Libellé** indiqué dans le volet de gauche sera marqué d’un astérisque (**&amp;ast;**).
 
    ![cfm-6420-12](assets/cfm-6420-12.png)
 
@@ -136,7 +136,7 @@ Pour supprimer un modèle de fragment de contenu :
    >
    >Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
 
-## Publication d’un modèle de fragment de contenu  {#publishing-a-content-fragment-model}
+## Publication d’un modèle de fragment de contenu {#publishing-a-content-fragment-model}
 
 Les modèles de fragment de contenu doivent être publiés avant ou pendant la publication des fragments de contenu dépendants.
 

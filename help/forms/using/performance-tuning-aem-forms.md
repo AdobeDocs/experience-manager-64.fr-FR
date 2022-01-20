@@ -1,8 +1,8 @@
 ---
 title: Réglage des performances du serveur AEM Forms
-seo-title: Réglage des performances du serveur AEM Forms
+seo-title: Performance tuning of AEM Forms server
 description: Pour qu’AEM Forms s’exécute de manière optimale, vous pouvez affiner les paramètres du cache et les paramètres JVM. En outre, l’utilisation d’un serveur Web peut améliorer les performances du déploiement d’AEM Forms.
-seo-description: Pour qu’AEM Forms s’exécute de manière optimale, vous pouvez affiner les paramètres du cache et les paramètres JVM. En outre, l’utilisation d’un serveur Web peut améliorer les performances du déploiement d’AEM Forms.
+seo-description: For AEM Forms to perform optimally, you can fine-tune the cache settings and JVM parameters. Also, using a web server can enhance the performance of AEM Forms deployment.
 uuid: 77eaeecc-ca52-4d3d-92e6-1ab4d91b9edd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ role: Admin
 exl-id: bc750571-08a5-414c-aed5-4e839f6695ae
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 79%
+source-wordcount: '866'
+ht-degree: 78%
 
 ---
 
@@ -48,7 +48,7 @@ Les paramètres de cache par défaut d’AEM Forms peuvent ne pas suffire pour o
 
 ## Paramètres JVM    {#jvm-parameters}
 
-Pour des performances optimales, il est recommandé d’utiliser les arguments `init` JVM suivants pour configurer les `Java heap` et `PermGen`.
+Pour des performances optimales, il est recommandé d’utiliser la JVM suivante : `init` arguments de configuration `Java heap` et `PermGen`.
 
 ```java
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -81,7 +81,7 @@ Les étapes suivantes présentent les modifications à effectuer pour activer la
 
 Apache peut communiquer avec CRX via le protocole HTTP. Les configurations concernent l’optimisation via HTTP.
 
-1. Supprimez les commentaires des configurations de module suivantes dans le fichier `APACHE_HOME/conf/httpd.conf`.
+1. Supprimez les commentaires des configurations de module suivantes dans `APACHE_HOME/conf/httpd.conf` fichier .
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -91,18 +91,18 @@ Apache peut communiquer avec CRX via le protocole HTTP. Les configurations conce
 
    >[!NOTE]
    >
-   >Pour Linux, la valeur par défaut `APACHE_HOME` est `/etc/httpd/`.
+   >Pour Linux, la valeur par défaut `APACHE_HOME` is `/etc/httpd/`.
 
 1. Configurez le proxy sur le port 4502 de crx.
 
-   Ajoutez la configuration suivante dans le fichier de configuration `APACHE_HOME/conf/httpd.conf`.
+   Ajoutez la configuration suivante dans `APACHE_HOME/conf/httpd.conf` fichier de configuration.
 
    ```java
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Activez la compression. Ajoutez la configuration suivante dans le fichier de configuration `APACHE_HOME/conf/httpd.conf`.
+1. Activez la compression. Ajoutez la configuration suivante dans `APACHE_HOME/conf/httpd.conf` fichier de configuration.
 
    **Pour les formulaires HTML5**
 
@@ -138,7 +138,7 @@ Apache peut communiquer avec CRX via le protocole HTTP. Les configurations conce
    </Location>
    ```
 
-   Pour accéder au serveur crx, utilisez `https://[server]:80`, où `server` est le nom du serveur sur lequel le serveur Apache est exécuté.
+   Pour accéder au serveur crx, utilisez `https://[server]:80`où `server` est le nom du serveur sur lequel le serveur Apache est en cours d’exécution.
 
 ## À l’aide d’un antivirus sur un serveur exécutant AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -148,13 +148,13 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 
 * Répertoire d’installation d’AEM. S’il n’est pas possible d’exclure le répertoire complet, excluez les fichiers suivants :
 
-   * [AEM répertoire d’installation]\crx-repository\temp
-   * [AEM répertoire d’installation]\crx-repository\repository
-   * [AEM répertoire d’installation]\crx-repository\launchpad
+   * [Répertoire d’installation AEM]\crx-repository\temp
+   * [Répertoire d’installation AEM]\crx-repository\repository
+   * [Répertoire d’installation AEM]\crx-repository\launchpad
 
 * Répertoire temporaire du serveur d’applications. L’emplacement par défaut est :
 
-   * (Jboss) [AEM répertoire d’installation]\jboss\standalone\tmp
+   * (Jboss) [Répertoire d’installation AEM]\jboss\standalone\tmp
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (Websphere) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
@@ -167,12 +167,10 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 * **(AEM Forms on JEE uniquement)** Journaux du serveur et répertoire temporaire AEM Forms. L’emplacement par défaut est :
 
    * Journaux du serveur - `[AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs`
-   * Répertoire temporaire - [Répertoire d’installation AEM Forms]\temp
+   * Répertoire temporaire - [Répertoire d’installation d’AEM Forms]\temp
 
 >[!NOTE]
 >
 >* Si vous utilisez un autre emplacement pour le répertoire de stockage global de documents et le répertoire temporaire, ouvrez l’interface utilisateur d’administration à l’adresse `https://[server]:[port]/adminui)`, accédez à **Accueil > Paramètres > Paramètres de Core System > Configurations de base** pour confirmer l’emplacement utilisé.
-
 * Si le serveur AEM Forms est lent, même après avoir exclu les répertoires suggérés, excluez également le fichier exécutable Java (java.exe).
-
 

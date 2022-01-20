@@ -1,8 +1,8 @@
 ---
 title: Meilleures pratiques en matière de développement
-seo-title: Meilleures pratiques en matière de développement
+seo-title: Development Practices
 description: Meilleures pratiques de développement dans AEM
-seo-description: Meilleures pratiques de développement dans AEM
+seo-description: Best practices for developing on AEM
 uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,14 +12,14 @@ discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 exl-id: 32fb6479-ae53-4bb3-8827-db15d7f5705e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '629'
 ht-degree: 100%
 
 ---
 
-# Pratiques de développement{#development-practices}
+# Meilleures pratiques en matière de développement{#development-practices}
 
-## Travailler selon une « définition de fini » (DoD){#work-according-to-a-definition-of-done}
+## Travailler selon une « définition de fini » (DoD) {#work-according-to-a-definition-of-done}
 
 Chaque équipe possède une définition différente du concept de « fini » ; c’est ce que l’on désigne en anglais sous le nom de « Definition of Done » (DoD). Cependant, il est essentiel d’en établir une et de s’assurer qu’une story répond aux critères définis avant d’être acceptée.
 
@@ -46,11 +46,11 @@ Les développeurs doivent recourir au développement piloté par les tests (TDD)
 
 Il existe des structures personnalisées, comme Jackalope et Prosper, pour faciliter la simulation d’API JCR afin de garantir la productivité des développeurs lors de la création de tests unitaires.
 
-### Un système toujours prêt pour la démo  {#stay-demo-ready}
+### Un système toujours prêt pour la démo {#stay-demo-ready}
 
 Le système doit être disponible à des fins de démonstration à la fin de chaque itération. En maintenant le système dans cet état, l’équipe se trouvera toujours à une itération de la mise en production. Cela permettra, en outre, de maintenir la dette technique à un niveau gérable.
 
-### Mise en œuvre et utilisation d’un environnement d’intégration continue (CI){#implement-a-continuous-integration-environment-and-use-it}
+### Mise en œuvre et utilisation d’un environnement d’intégration continue (CI) {#implement-a-continuous-integration-environment-and-use-it}
 
 La mise en œuvre d’un environnement d’intégration continue vous permet d’exécuter, aisément et de manière répétée, des tests unitaires et des tests d’intégration. Cela permet également de décharger l’équipe de développement des tâches de déploiement, améliorant ainsi l’efficacité des autres parties de l’équipe, tout en garantissant des déploiement plus stables et prévisibles.
 

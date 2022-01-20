@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
 exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
-feature: Profils vidéo,Vidéo
+feature: Video Profiles,Video
 role: Admin,User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3071'
+source-wordcount: '3068'
 ht-degree: 74%
 
 ---
@@ -27,9 +27,9 @@ Voici d’autres facteurs qui déterminent la qualité des vidéos :
 
 * **Taille du lecteur vidéo**
 
-   Par défaut, la **[!UICONTROL largeur]** du profil Codage vidéo adaptatif est définie sur **[!UICONTROL Auto]**. Encore une fois, lors de la lecture, la meilleure qualité est utilisée en fonction de la taille du lecteur.
+   Par défaut, la variable **[!UICONTROL Largeur]** dans le profil Codage vidéo adaptatif est défini sur **[!UICONTROL Auto]**. Encore une fois, lors de la lecture, la meilleure qualité est utilisée en fonction de la taille du lecteur.
 
-Consultez également la section [Bonnes pratiques en matière de codage vidéo](video.md#best-practices-for-encoding-videos).
+Voir aussi [Bonnes pratiques relatives au codage vidéo](video.md#best-practices-for-encoding-videos).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Consultez également la section [Bonnes pratiques en matière de codage vidéo](
 >
 >Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](video.md#monitoring-video-encoding-and-youtube-publishing-progress). Si vous avez activé Dynamic Media et configuré les services cloud vidéo, le workflow **[!UICONTROL Vidéo d’encodage Dynamic Media]** prend automatiquement effet lorsque vous chargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le workflow **[!UICONTROL Ressource de mise à jour DAM]** prend effet.)
 >
->Les métadonnées sont utiles lorsque vous recherchez des ressources. Les miniatures sont des images vidéo statiques qui sont générées lors du codage. Elles sont requises par le système AEM et utilisées dans l’interface utilisateur pour vous aider à identifier visuellement les vidéos dans la vue **[!UICONTROL Carte]**, **[!UICONTROL Résultats de la recherche]** et la vue **[!UICONTROL Liste des ressources]**. Vous pouvez voir les miniatures générées lorsque vous appuyez sur l’icône **[!UICONTROL Rendus]** (palette d’un peintre) d’une vidéo codée.
+>Les métadonnées sont utiles lorsque vous recherchez des ressources. Les miniatures sont des images vidéo statiques qui sont générées lors du codage. Ils sont requis par le système AEM et utilisés dans l’interface utilisateur pour vous aider à identifier visuellement les vidéos dans la variable **[!UICONTROL Mode Carte]**, **[!UICONTROL Résultats de la recherche]** et la variable **[!UICONTROL Liste des ressources]** vue. Vous pouvez voir les miniatures générées lorsque vous appuyez sur la **[!UICONTROL Rendus]** icône (palette d’un peintre) d’une vidéo codée.
 
 Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossiers. Voir [Application d’un profil vidéo à des dossiers.](#applying-a-video-profile-to-folders)
 
@@ -57,7 +57,7 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
    <td><strong>Débit vidéo (kbit/s)</strong></td> 
    <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td> 
    <td><strong>Codec audio</strong></td> 
-   <td><strong>Débit audio  (kbit/s)</strong></td> 
+   <td><strong>Débit audio (kbit/s)</strong></td> 
   </tr> 
   <tr> 
    <td><p>MP4 H.264 (mp4)</p> </td> 
@@ -96,7 +96,7 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
 
 Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif (groupe de paramètres de chargement vidéo pour MP4 H.264) qui est optimisé pour la visualisation. Vous pouvez utiliser ce profil lorsque vous chargez vos vidéos.
 
-Cependant, si ce profil prédéfini ne répond pas à vos besoins, vous pouvez choisir de créer votre propre profil de codage de vidéo adaptative. Lorsque vous utilisez le paramètre **[!UICONTROL Coder pour la diffusion en continu adaptative]**-*une bonne pratique* - tous les paramètres prédéfinis de codage que vous ajoutez au profil sont validés afin de vous assurer que toutes les vidéos ont les mêmes proportions. En outre, les vidéos codées sont traitées comme un ensemble à débit multiple pour la diffusion en continu.
+Cependant, si ce profil prédéfini ne répond pas à vos besoins, vous pouvez choisir de créer votre propre profil de codage de vidéo adaptative. Lorsque vous utilisez le paramètre **[!UICONTROL Coder pour la diffusion en continu adaptative]**-*une bonne pratique*- tous les paramètres prédéfinis de codage que vous ajoutez au profil sont validés afin de vous assurer que toutes les vidéos ont les mêmes proportions. En outre, les vidéos codées sont traitées comme un ensemble à débit multiple pour la diffusion en continu.
 
 Lors de la création du profil de codage vidéo, vous pouvez remarquer que la plupart des options sont préremplies avec les paramètres par défaut recommandés. Si vous sélectionnez une valeur autre que celle par défaut recommandée, vous risquez d’obtenir une qualité vidéo médiocre pendant la lecture et de rencontrer d’autres problèmes de performances.
 
@@ -111,7 +111,7 @@ Pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les
 * Profil H264
 * Taux d’échantillonnage audio
 
-Si les valeurs ne sont pas identiques, vous pouvez continuer à créer le profil tel quel. Sachez toutefois que la diffusion en continu adaptative ne sera pas possible. Les utilisateurs vivront à la place une expérience de diffusion en continu à un seul débit. Il est recommandé de modifier les paramètres de codage afin d’utiliser les mêmes valeurs dans chaque paramètre prédéfini de codage du profil. (Notez que l’éditeur de profil vidéo/paramètre prédéfini doit appliquer la parité des paramètres de codage vidéo adaptatif si l’option **[!UICONTROL Coder pour la diffusion en continu adaptative]** est activée.)
+Si les valeurs ne sont pas identiques, vous pouvez continuer à créer le profil tel quel. Sachez toutefois que la diffusion en continu adaptative ne sera pas possible. Les utilisateurs vivront à la place une expérience de diffusion en continu à un seul débit. Il est recommandé de modifier les paramètres de codage afin d’utiliser les mêmes valeurs dans chaque paramètre prédéfini de codage du profil. (Notez que l’éditeur de profil vidéo/paramètre prédéfini doit appliquer la parité des paramètres de codage vidéo adaptatif si **[!UICONTROL Coder pour la diffusion en continu adaptative]** est activé.)
 
 Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu progressive](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -121,7 +121,7 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
 Une fois le profil vidéo créé, vous l’appliquez à un ou plusieurs dossiers.
 
-**Pour créer un profil de codage vidéo Dynamic Media en vue de la diffusion en continu** adaptative :
+**Création d’un profil de codage vidéo Dynamic Media pour la diffusion en continu adaptative**:
 
 1. Appuyez ou cliquez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils vidéo]**.
 1. Appuyez sur **[!UICONTROL Créer]** pour ajouter un nouveau profil vidéo.
@@ -139,7 +139,7 @@ Une fois le profil vidéo créé, vous l’appliquez à un ou plusieurs dossiers
    Utilisez l’une des méthodes suivantes :
 
    * Dans le champ **[!UICONTROL Largeur]**, saisissez **[!UICONTROL auto]**. Dans le champ **[!UICONTROL Hauteur]**, saisissez une valeur en pixels.
-   * Pour visualiser plus facilement la taille de la vidéo, appuyez sur l’icône **[!UICONTROL Informations]** (i) située à droite de **[!UICONTROL Hauteur]** pour ouvrir la page **[!UICONTROL Calcul de la taille]** . Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions vidéo (représentées par la zone bleue) souhaitées. Appuyez sur **[!UICONTROL X]** dans le coin supérieur droit lorsque vous avez terminé.
+   * Pour visualiser plus facilement la taille de la vidéo, appuyez sur la **[!UICONTROL Informations]** (i) à droite de **[!UICONTROL Hauteur]** pour ouvrir le **[!UICONTROL Calcul de la taille]** page. Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions vidéo (représentées par la zone bleue) souhaitées. Appuyez sur **[!UICONTROL X]** dans le coin supérieur droit lorsque vous avez terminé.
 
 1. (Facultatif) Appuyez sur l’onglet **[!UICONTROL Avancé]** et assurez-vous que la case **[!UICONTROL Utiliser les valeurs par défaut]** est cochée (recommandé). Vous pouvez également modifier les paramètres vidéo et audio avancés.
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer le paramètre prédéfini.
@@ -176,20 +176,20 @@ Une fois le profil vidéo créé, vous l’appliquez à un ou plusieurs dossiers
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils vidéo]**.
 1. Appuyez sur **[!UICONTROL Créer]** pour ajouter un nouveau profil vidéo.
 1. Saisissez un nom et une description pour le profil.
-1. Décochez la case **[!UICONTROL Coder pour la diffusion en continu adaptative]** .
+1. Effacez la variable **[!UICONTROL Coder pour la diffusion en continu adaptative]** .
 1. Appuyez sur **[!UICONTROL Ajouter une préconfiguration de codage vidéo]**.
 1. Définissez les options audio et vidéo dans l’onglet **[!UICONTROL De base.]**
 
-   Appuyez sur l’icône **[!UICONTROL Informations]** en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
+   Appuyez sur le bouton **[!UICONTROL Informations]** en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
 
-1. (Facultatif) Sous l’en-tête **Taille de la vidéo**, désélectionnez **[!UICONTROL Conserver les proportions]**.
-1. Dans le champ **[!UICONTROL Largeur]**, saisissez **[!UICONTROL auto]**; à droite du champ **[!UICONTROL Hauteur]**, appuyez sur l’icône **[!UICONTROL Information]** . Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions de votre choix pour la vidéo (encadré bleu). Appuyez sur **[!UICONTROL X]** lorsque vous avez terminé.
+1. (Facultatif) Sous **Taille de la vidéo** titre, décocher **[!UICONTROL Conserver les proportions]**.
+1. Dans le **[!UICONTROL Largeur]** champ, entrer **[!UICONTROL auto]**; à droite du **[!UICONTROL Hauteur]** , appuyez sur le champ **[!UICONTROL Informations]** icône . Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions de votre choix pour la vidéo (encadré bleu). Appuyez sur **[!UICONTROL X]** lorsque vous avez terminé.
 1. (Facultatif) Effectuez l’une des opérations suivantes :
 
    * Appuyez sur l’onglet **[!UICONTROL Avancé]** et assurez-vous que la case **[!UICONTROL Utiliser les valeurs par défaut]** est cochée (recommandé).
    * Désélectionnez la case **[!UICONTROL Utiliser les valeurs par défaut]** et spécifiez les paramètres vidéo et audio de votre choix.
 
-      Appuyez sur l’icône **[!UICONTROL Informations]** en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
+      Appuyez sur le bouton **[!UICONTROL Informations]** en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
 
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer le paramètre prédéfini.
 1. Utilisez l’une des méthodes suivantes :
@@ -199,16 +199,16 @@ Une fois le profil vidéo créé, vous l’appliquez à un ou plusieurs dossiers
 
 ## Utilisation de paramètres de codage vidéo personnalisés {#using-custom-added-video-encoding-parameters}
 
-Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de paramètres de codage vidéo avancés qui ne figurent pas dans l’interface utilisateur lors de la création ou de la modification d’un profil vidéo dans AEM. Vous avez personnalisé l’ajout d’un ou de plusieurs paramètres avancés, tels que **[!UICONTROL minBitrate]** et **[!UICONTROL maxBitrate]**, à votre profil existant.
+Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de paramètres de codage vidéo avancés qui ne figurent pas dans l’interface utilisateur lors de la création ou de la modification d’un profil vidéo dans AEM. Vous pouvez personnaliser l’ajout d’un ou de plusieurs paramètres avancés, tels que **[!UICONTROL minBitrate]** et **[!UICONTROL maxBitrate]**: vers votre profil existant.
 
 **Pour utiliser des paramètres de codage vidéo personnalisés, procédez comme suit** :
 
 1. Appuyez sur le logo AEM, puis accédez à **[!UICONTROL Outils > Général > CRXDE Lite]**.
-1. Sur la page **[!UICONTROL CRXDE Lite]**, dans le panneau **[!UICONTROL Explorateur]** à gauche, accédez à ce qui suit :
+1. Dans la **[!UICONTROL CRXDE Lite]** , dans la **[!UICONTROL Explorateur]** sur la gauche, accédez à ce qui suit :
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit*`
 
-1. Dans le panneau situé en bas à droite de la page, dans l’onglet **[!UICONTROL Propriétés]**, spécifiez le **[!UICONTROL Nom]**, le **[!UICONTROL Type]** et la **[!UICONTROL Valeur]** du paramètre à utiliser.
+1. Dans le panneau situé dans l’angle inférieur droit de la page, à partir de **[!UICONTROL Propriétés]** , spécifiez la variable **[!UICONTROL Nom]**, **[!UICONTROL Type]**, et **[!UICONTROL Valeur]** du paramètre que vous souhaitez utiliser.
 
    Les paramètres avancés suivants sont disponibles :
 
@@ -261,7 +261,7 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de par
    * Répétez les étapes 3 et 4 pour ajouter un autre paramètre à votre profil de codage vidéo.
    * Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Enregistrer tout]**.
 
-1. Dans le coin supérieur gauche de la page **[!UICONTROL CRXDE Lite]** , appuyez sur l’icône **[!UICONTROL Retour à l’accueil]** pour revenir à l’AEM.
+1. Dans le coin supérieur gauche de la **[!UICONTROL CRXDE Lite]** , appuyez sur **[!UICONTROL Retour à la maison]** pour revenir à AEM.
 
 ### Modification d’un profil de codage vidéo Dynamic Media {#editing-a-video-encoding-profile}
 
@@ -273,41 +273,41 @@ Consultez également la section [Bonnes pratiques en matière de codage vidéo](
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](config-dms7.md#configuring-asset-processing).
 
-**Pour modifier un profil** de codage vidéo Dynamic Media :
+**Pour modifier un profil de codage vidéo Dynamic Media**:
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils vidéo]**.
-1. Sur la page **[!UICONTROL Profils vidéo]** , cochez un nom de profil vidéo.
+1. Sur le **[!UICONTROL Profils vidéo]** , cochez un nom de profil vidéo.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier]**.
-1. Sur la page **[!UICONTROL Profil de codage vidéo]**, modifiez le nom et la description, suivant vos besoins.
+1. Sur le **[!UICONTROL Profil de codage vidéo]** , modifiez le nom et la description, suivant vos besoins.
 1. La bonne pratique consiste à vérifier que la case **[!UICONTROL Coder pour la diffusion en continu adaptative]** est cochée.
 
    Appuyez sur l’icône d’information pour obtenir une description de la diffusion en continu adaptative. (Si vous modifiez un profil de vidéo progressive, ne cochez pas cette case.)
 
-1. Sous l’en-tête **[!UICONTROL Paramètres prédéfinis de codage vidéo]**, ajoutez, modifiez ou supprimez les paramètres prédéfinis de codage vidéo qui constituent le profil.
+1. Sous , **[!UICONTROL Paramètres prédéfinis de codage vidéo]** en-tête, ajout, modification ou suppression des paramètres prédéfinis de codage vidéo qui constituent le profil.
 
-   Appuyez sur l’icône **[!UICONTROL Informations]** en regard de chaque option dans les onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]** pour obtenir des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
+   Appuyez sur le bouton **[!UICONTROL Informations]** en regard de chaque option de la **[!UICONTROL De base]** et **[!UICONTROL Avancé]** onglets pour des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
 
 1. Dans l’angle supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
 
 ### Copie d’un profil de codage vidéo Dynamic Media {#copying-a-video-encoding-profile}
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils vidéo]**.
-1. Sur la page **[!UICONTROL Profils vidéo]** , cochez un nom de profil vidéo.
+1. Sur le **[!UICONTROL Profils vidéo]** , cochez un nom de profil vidéo.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Copier]**.
-1. Sur la page **[!UICONTROL Profil de codage vidéo]** , saisissez un nouveau nom pour le profil.
+1. Sur le **[!UICONTROL Profil de codage vidéo]** , saisissez un nouveau nom pour le profil.
 1. La bonne pratique consiste à vérifier que la case **[!UICONTROL Coder pour la diffusion en continu adaptative]** est cochée. Appuyez sur l’icône d’information pour obtenir une description de la diffusion en continu adaptative. (Si vous copiez un profil de vidéo progressive, ne cochez pas cette case.)
 
     Dans le mode hybride de Dynamic Media, si un paramètre prédéfini vidéo WebM fait partie du profil vidéo, l’option **[!UICONTROL Coder pour la diffusion en continu adaptative]** n’est pas disponible, car tous les paramètres prédéfinis doivent être des paramètres MP4.
-1. Sous l’en-tête **[!UICONTROL Paramètres prédéfinis de codage vidéo]**, ajoutez, modifiez ou supprimez les paramètres prédéfinis de codage vidéo qui constituent le profil.
+1. Sous , **[!UICONTROL Paramètres prédéfinis de codage vidéo]** en-tête, ajout, modification ou suppression des paramètres prédéfinis de codage vidéo qui constituent le profil.
 
-   Appuyez sur l’icône **[!UICONTROL Informations]** en regard de chaque option dans les onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]** pour accéder aux descriptions et paramètres recommandés.
+   Appuyez sur le bouton **[!UICONTROL Informations]** en regard de chaque option de la **[!UICONTROL De base]** et **[!UICONTROL Avancé]** des onglets pour les paramètres et descriptions recommandés.
 
 1. Dans l’angle supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
 
 ### Suppression d’un profil de codage vidéo Dynamic Media {#deleting-a-video-encoding-profile}
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils vidéo]**.
-1. Sur la page **[!UICONTROL Profils vidéo]** , cochez un ou plusieurs noms de profil vidéo.
+1. Sur le **[!UICONTROL Profils vidéo]** , cochez un ou plusieurs noms de profil vidéo.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Supprimer]**.
 1. Appuyez sur **[!UICONTROL OK]**.
 
@@ -337,9 +337,9 @@ Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profi
 
 #### Application de profils vidéo Dynamic Media aux dossiers à partir des propriétés {#applying-video-profiles-to-folders-from-properties}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]** , puis au dossier auquel vous souhaitez appliquer un profil vidéo.
+1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]** puis au dossier auquel vous souhaitez appliquer un profil vidéo.
 1. Dans le dossier, appuyez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés]**.
-1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]** , sélectionnez le profil dans le menu déroulant, puis appuyez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Sélectionnez la **[!UICONTROL Profils vidéo]** et sélectionnez le profil dans le menu déroulant, puis appuyez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 
@@ -347,10 +347,10 @@ Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profi
 
 En plus d’appliquer un profil à un dossier, vous pouvez en appliquer un de façon globale, de sorte que tout contenu chargé dans AEM Assets soit traité par ce profil, indifféremment du dossier.
 
-**Pour appliquer globalement** un profil vidéo Dynamic Media :
+**Pour appliquer globalement un profil vidéo Dynamic Media**:
 
 1. Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`.
-1. Ajoutez la propriété **[!UICONTROL videoProfile]** : `/etc/dam/video/dynamicmedia/<name_of_video_encoding_profile>`
+1. Ajouter la propriété **[!UICONTROL videoProfile]**: `/etc/dam/video/dynamicmedia/<name_of_video_encoding_profile>`
 1. Appuyez sur **[!UICONTROL Enregistrer tout]**.
 
 ![chlimage_1-519](assets/chlimage_1-519.png)
@@ -365,12 +365,12 @@ Vous pouvez supprimer un profil vidéo d’un dossier à partir du menu **[!UICO
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils vidéo]**.
 1. Sélectionnez le profil vidéo à supprimer d’un ou plusieurs dossiers.
-1. Appuyez sur **[!UICONTROL Supprimer le profil du(s) dossier(s)]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil, puis appuyez sur **[!UICONTROL Supprimer]**.
+1. Appuyer **[!UICONTROL Supprimer le profil du ou des dossiers]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil, puis appuyez sur **[!UICONTROL Supprimer]**.
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil vidéo n’est plus appliqué à un dossier.
 
 ### Suppression de profils vidéo Dynamic Media des dossiers à l’aide des propriétés {#removing-video-profiles-from-folders-via-properties}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]** , puis au dossier duquel vous souhaitez supprimer un profil vidéo.
+1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]** puis au dossier duquel vous souhaitez supprimer un profil vidéo.
 1. Dans le dossier, appuyez sur la coche pour le sélectionner, puis sur **[!UICONTROL Propriétés]**.
-1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]** et sélectionnez **[!UICONTROL Aucun]** dans le menu déroulant, puis appuyez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Sélectionnez la **[!UICONTROL Profils vidéo]** et sélectionnez **[!UICONTROL Aucun]** dans le menu déroulant, appuyez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.

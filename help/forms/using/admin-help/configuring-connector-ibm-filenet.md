@@ -1,8 +1,8 @@
 ---
 title: Configuration de Connector for IBM FileNet
-seo-title: Configuration de Connector for IBM FileNet
+seo-title: Configuring Connector for IBM FileNet
 description: Découvrez comment configurer le connecteur pour IBM FileNet pour permettre la communication entre AEM forms et IBM FileNet.
-seo-description: Découvrez comment configurer le connecteur pour IBM FileNet pour permettre la communication entre AEM forms et IBM FileNet.
+seo-description: Learn how to configure the Connector for IBM FileNet to enable communication between AEM forms and IBM FileNet.
 uuid: 29d4e221-97f7-4cfb-b7e4-75a8289d2604
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 exl-id: 3a3d59c2-6811-4513-8384-aa77fdc38686
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '735'
 ht-degree: 94%
 
 ---
@@ -54,7 +54,7 @@ IBM FileNet P8 Content Engine fournit des services logiciels permettant de gé
 1. Dans le champ Nom d’utilisateur, saisissez le nom d’un utilisateur possédant les droits d’accès à la banque d’objets par défaut spécifiée à l’étape précédente.
 1. Dans le champ Mot de passe, saisissez le mot de passe de l’utilisateur et cliquez sur Enregistrer.
 
-## Configuration des paramètres de Process Engine  {#configure-the-process-engine-settings}
+## Configuration des paramètres de Process Engine {#configure-the-process-engine-settings}
 
 Connector for IBM FileNet contient le service Process Engine Connector for IBM FileNet, qui permet d’interagir avec IBM FileNet Process Engine. Vous pouvez configurer les paramètres de ce service.
 
@@ -67,24 +67,24 @@ Connector for IBM FileNet contient le service Process Engine Connector for IBM F
 1. Dans le champ Nom d’utilisateur, saisissez le nom d’utilisateur utilisé pour établir la connexion au moteur de processus.
 1. Dans le champ Mot de passe, saisissez le mot de passe utilisé pour établir la connexion au moteur de processus et cliquez sur Enregistrer.
 
-## Validation des paramètres d’un service  {#validation-of-service-settings}
+## Validation des paramètres d’un service {#validation-of-service-settings}
 
 Si vous saisissez un nom d’utilisateur ou un mot de passe incorrect lors de la configuration de la connexion à Content Engine ou des paramètres de Process Engine, vous obtiendrez les résultats suivants selon que les services sont en cours d’exécution ou non :
 
 * Si les services Repository Provider pour IBM FileNet et Content Repository Connector for IBM FileNet sont arrêtés, aucune erreur n’apparaît lorsque vous enregistrez les informations de configuration du service. Toutefois, lors du prochain démarrage du service, une exception sera générée et le service ne démarrera pas.
 * Si ni le service Repository Provider pour IBM FileNet ni le service Content Repository Connector for IBM FileNet ne sont démarrés, le service tente de valider immédiatement les informations d’identification lorsque vous enregistrez les informations de configuration du service. Dans ce cas, une erreur se produit et les informations de configuration ne sont pas enregistrées.
 
-## Modification du fournisseur de services de référentiel  {#change-the-repository-service-provider}
+## Modification du fournisseur de services de référentiel {#change-the-repository-service-provider}
 
 Vous pouvez configurer le fournisseur de services de référentiel à utiliser avec FileNet. Les appels des services de référentiel sont délégués au fournisseur que vous configurez.
 
 Les options suivantes sont disponibles :
 
-**Nom du fournisseur de référentiel actuel :** nom du fournisseur de services de référentiel actuel.
+**Nom du fournisseur de référentiel actuel :** Nom du fournisseur de services de référentiel actuel.
 
-**Fournisseur du référentiel IBM FileNet :** fait du fournisseur du référentiel FileNet le fournisseur du référentiel. Cette option est obsolète.
+**Fournisseur de référentiel IBM FileNet :** Transforme le fournisseur de référentiel FileNet en fournisseur pour le référentiel. Cette option est obsolète.
 
-**fournisseur de référentiel :** fait du fournisseur de référentiel natif le fournisseur du référentiel.
+**fournisseur de référentiel :** Transforme le fournisseur de référentiel natif en fournisseur pour le référentiel
 
 >[!NOTE]
 >

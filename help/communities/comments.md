@@ -1,8 +1,8 @@
 ---
 title: Utilisation des commentaires
-seo-title: Utilisation des commentaires
+seo-title: Using Comments
 description: La fonction Commentaires permet aux visiteurs connectés du site de partager leurs opinions et leurs connaissances.
-seo-description: La fonction Commentaires permet aux visiteurs connectés du site de partager leurs opinions et leurs connaissances.
+seo-description: Comments feature lets signed-in site visitors share their opinions and knowledge
 uuid: 30fc48ac-134c-4acb-a65c-398855c93829
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 exl-id: 8ad5ce3e-c5dd-48d7-8812-43172eda36cc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 38%
+source-wordcount: '995'
+ht-degree: 39%
 
 ---
 
@@ -25,8 +25,8 @@ La fonction Commentaires permet aux visiteurs connectés (membres) d’échanger
 
 Cette section de la documentation décrit :
 
-* Ajout de `Comments`à une page
-* Paramètres de configuration du composant `Comments`
+* Ajouter `Comments`vers une page
+* Paramètres de configuration de la variable `Comments`component
 
 >[!NOTE]
 >
@@ -34,27 +34,27 @@ Cette section de la documentation décrit :
 
 ## Ajout de commentaires à une page {#adding-comments-to-a-page}
 
-Pour ajouter un composant `Comments`à une page en mode création, utilisez l’explorateur de composants pour accéder à
+Pour ajouter une `Comments`sur une page en mode création, utilisez l’explorateur de composants pour accéder à
 
 * `Communities / Comments`
 
 et faites glisser le composant sur une page, par exemple à un endroit relatif à la fonction pour que les utilisateurs puissent commenter, ou simplement au bas de la page.
 
-Pour plus d’informations, voir [Principes de base des composants des communautés](basics.md).
+Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
 
-Lorsque les [bibliothèques côté client requises](essentials-comments.md#essentials-for-client-side) sont incluses, voici comment le composant `Comments`apparaîtra.
+Lorsque la variable [bibliothèques côté client requises](essentials-comments.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Comments`s’affiche.
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
 >
->Un seul composant `Comments`peut exister sur une page. Sachez que de nombreuses fonctions d’AEM Communities incluent déjà des commentaires. C’est le cas des blogs, des calendriers, des forums, des Q&amp;R et des révisions.
+>Un seul `Comments`peut exister sur une page. Sachez que de nombreuses fonctions d’AEM Communities incluent déjà des commentaires. C’est le cas des blogs, des calendriers, des forums, des Q&amp;R et des révisions.
 
 ## Configuration des commentaires {#configuring-comments}
 
-Sélectionnez le composant `Comments` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Comments` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
-![](assets/configure.png) ![configurecommendationsettings](assets/commentssettings.png)
+![configure](assets/configure.png) ![comments settings](assets/commentssettings.png)
 
 ### Onglet Commentaires {#comments-tab}
 
@@ -102,7 +102,7 @@ Sous l’onglet **[!UICONTROL Commentaires]**, indiquez la façon dont les comme
 
 ### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-Sous l’onglet **[!UICONTROL Modération d’utilisateur]** , indiquez comment les commentaires publiés sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
+Sous , **[!UICONTROL Modération d’utilisateur]** , indiquez comment les commentaires publiés sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
 
 * **[!UICONTROL Prémodération]**
 
@@ -142,41 +142,41 @@ Sous l’onglet **[!UICONTROL Modération d’utilisateur]** , indiquez comment 
 
 ### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet **[!UICONTROL Paramètres de tri]**, indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
+Sous , **[!UICONTROL Paramètres de tri]** , indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
 
 * **[!UICONTROL Champ de tri]**
 
-   Appuyez sur la touche pour sélectionner `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed` ou `Most Liked`.
+   Menu déroulant pour sélectionner l’un des `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`ou `Most Liked`.
 
 * **[!UICONTROL Ordre de tri]**
 
-   Appuyez sur la touche pour sélectionner l’une des valeurs `Ascending` ou `Descending`.
+   Menu déroulant pour sélectionner l’un des `Ascending` ou `Descending`.
 
 ### Modification d’un type de commentaire personnalisé {#changing-to-a-custom-comment-type}
 
 En modifiant le type de ressource de commentaire, le système de commentaires ne génère plus une instance d’un commentaire avec les paramètres par défaut, mais plutôt un commentaire personnalisé (étendu) par les développeurs.
 
-Une fois les types de ressources personnalisés connus, saisissez [Mode de conception](../../help/sites-authoring/default-components-designmode.md) et double-cliquez sur le composant `Comments` inséré pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
+Une fois les types de ressources personnalisés connus, saisissez [Mode de conception](../../help/sites-authoring/default-components-designmode.md) et double-cliquez sur le `Comments` pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
 
-Sous l’onglet **[!UICONTROL Types de ressource]** , spécifiez le type de ressource personnalisé pour les nouvelles instances des composants `Comments or Voting`:
+Sous , **[!UICONTROL Types de ressources]** , spécifiez le type de ressource personnalisé pour les nouvelles instances de la variable `Comments or Voting`composants :
 
 ![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **[!UICONTROL Type de ressource de commentaire]**
 
-   Accédez au resourceType d’un composant `comment`étendu (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`
+   Accédez au resourceType d’une extension `comment`composant (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`
 
    Cette ressource identifie le type de ressource du contenu créé par un visiteur lorsqu’il publie un commentaire.
 
 * **[!UICONTROL Type de ressource de vote]**
 
-   Accédez au resourceType d’un composant `voting`étendu dans /apps. Par exemple, `/apps/social/components/hbs/voting`
+   Accédez au resourceType d’une extension `voting`dans /apps. Par exemple, `/apps/social/components/hbs/voting`
 
    Cette ressource identifie le type de ressource du contenu créé par un visiteur lorsqu’il publie un vote.
 
 * **[!UICONTROL Type de ressource système de commentaires]**
 
-   Accédez au resourceType d’un composant `comments`étendu (système de commentaires) dans /apps. Laissez vide, sauf si le modèle de page [inclut dynamiquement](scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). Pour en savoir plus, consultez la section [{{include} Helper](handlebars-helpers.md#include).
+   Accédez au resourceType d’une extension `comments`(système de commentaires) dans /apps. Laissez vide, sauf si le modèle de page [inclut dynamiquement](scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). En savoir plus en lisant les [{{include} helper](handlebars-helpers.md#include).
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -199,8 +199,8 @@ Les visiteurs non connectés peuvent lire les commentaires et les traduire lorsq
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur les commentaires](essentials-comments.md) pour les développeurs.
+Vous trouverez plus d’informations sur la [Notions fondamentales sur les commentaires](essentials-comments.md) pour les développeurs.
 
-Pour plus d’informations sur la modération des commentaires publiés, voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
+Pour la modération des commentaires publiés, voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
 Pour des informations sur la traduction des commentaires publiés, voir [Traduction de contenu généré par les utilisateurs](translate-ugc.md).

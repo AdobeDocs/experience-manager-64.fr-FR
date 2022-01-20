@@ -1,8 +1,8 @@
 ---
 title: Recommandations relatives aux formulaires HTML5
-seo-title: Recommandations relatives aux formulaires HTML5
+seo-title: Best practices for HTML5 forms
 description: 'Modifiez vos formulaires HTML5 basés sur XFA pour optimiser les performances. '
-seo-description: 'Découvrez comment modifier vos formulaires HTML5 basés sur XFA pour optimiser les performances. '
+seo-description: Learn how to tune your XFA-based HTML5 Forms for best performance.
 uuid: 739700c7-4f88-4b53-9453-1be6d5bc8432
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -13,8 +13,8 @@ feature: Mobile Forms
 exl-id: 5f85882c-f7a7-448e-9946-e04a0d74dee1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 89%
+source-wordcount: '1426'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ Il est plus facile pour les navigateurs d’effectuer le rendu d’un DOM plus p
 * Utilisez la propriété de légende pour ajouter un libellé à un champ. N’utilisez pas un élément de texte distinct pour ajouter un libellé. Cela permet d’alléger la structure et d’améliorer les performances. Cela permet également d’éviter les problèmes de mise en page.
 * Limitez le nombre d’éléments de texte de dessin sur un formulaire au strict minimum. Les éléments de dessin permettent d’améliorer la lisibilité et l’apparence mais ne permettent pas de stocker des informations. Nous vous conseillons de fusionner les éléments de texte de dessin multiples dans un élément de texte de dessin. Essayez de réduire le volume d’un formulaire par tous les moyens.
 
-## Les formulaires légers sont plus performants et permettent de conserver les ressources compressées  {#lite-forms-perform-better-keep-the-resources-compressed}
+## Les formulaires légers sont plus performants et permettent de conserver les ressources compressées {#lite-forms-perform-better-keep-the-resources-compressed}
 
 Un formulaire HTML5 peut contenir plusieurs ressources externes, telles que des fichiers image, JavaScript et CSS. Chaque fois que le navigateur demande un formulaire, les ressources externes sont envoyées via le réseau. Le temps nécessaire pour la transmission sur le réseau est directement proportionnel à la taille des fichiers.
 
@@ -57,7 +57,7 @@ Un formulaire HTML5 peut s’exécuter dans plusieurs centaines de pages. Un for
 * Envisagez de diviser les sections et de placer chacune d’elles sur une page différente. Les formulaires HTML5 chargent dynamiquement chaque page lors de la requête de défilement de page. Seules les pages consultées (la page en cours d’affichage et les pages précédentes) sont stockées dans la mémoire ; le reste des pages est chargé sur demande. Par conséquent, la division et le placement d’une section sur une page distincte réduisent la durée de chargement d’un formulaire. Vous pouvez également utiliser la première page du formulaire en tant que page d’entrée. Elle est semblable à la table des matières d’un livre. Une page d’entrée du formulaire contient uniquement les liens conduisant vers d’autres sections du formulaire. Elle améliore considérablement le temps de chargement de la première page du formulaire et l’expérience utilisateur.
 * Laissez les sections conditionnelles masquées par défaut. Affichez-les uniquement quand une condition spécifique est remplie. Cela permet de conserver la taille minimale du DOM. Vous pouvez également utiliser la navigation par onglets pour afficher une seule section à la fois.
 
-## Pour faire mieux avec moins, réduisez le nombre de pages  {#less-is-more-reduce-the-number-of-pages}
+## Pour faire mieux avec moins, réduisez le nombre de pages {#less-is-more-reduce-the-number-of-pages}
 
 Les formulaires HTML5 peuvent contenir des champs axés sur des données (tableaux et sous-formulaires). Ces champs augmentent la taille du formulaire à l’exécution. Par exemple, un tableau axé sur des données d’un formulaire HTML5 peut contenir des milliers de lignes. Ces tableaux peuvent entraîner une dégradation de la mise en page et des performances. Les optimisations suggérées ci-dessous peuvent vous aider à réduire le temps de chargement des formulaires HTML5 contenant des champs axés sur des données :
 
@@ -66,11 +66,11 @@ Les formulaires HTML5 peuvent contenir des champs axés sur des données (tablea
 * Envisagez de fusionner plusieurs colonnes en lecture seule en une seule colonne. Cela réduit la mémoire requise pour afficher le formulaire. En outre, il est préférable de ne pas afficher les colonnes qui n’exigent aucune intervention de la part de l’utilisateur.
 * Envisagez de diviser le formulaire axé sur des données pour obtenir un [ensemble de formulaires](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html) si les suggestions ci-dessus ne produisent pas de nombreuses améliorations. Par exemple, si un tableau contient plus de 1 000 lignes, déplacez alors chaque ensemble de 100 lignes dans un formulaire différent. Cela permet d’améliorer le temps de chargement et les performances des formulaires.  Notez également qu’un jeu de formulaires génère un fichier XML d’envoi consolidé pour tous les formulaires. Pour différencier les données de chaque formulaire, utilisez différentes racines de données. Pour plus d’informations, voir [Jeu de formulaires dans AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
 
-## Puissance de deux pour le document d’enregistrement (DOR) {#power-of-two-for-document-of-record-dor}
+## Puissance deux pour le document d’enregistrement {#power-of-two-for-document-of-record-dor}
 
 Dans un formulaire XFA, un grand nombre de sections peut être dédié uniquement à un document d’enregistrement. Pour réduire le nombre de noeuds et améliorer les performances d’un tel formulaire, vous pouvez conserver différentes copies du formulaire : une copie pour remplir le formulaire et une autre pour générer un document d’enregistrement sur le serveur. Dans la copie utilisée pour remplir le formulaire XFA, affichez les champs requis uniquement pour capturer des données. Dans le formulaire XFA de génération du document d’enregistrement, conservez les champs requis uniquement dans la sortie imprimée du formulaire. Avant de choisir l’approche suggérée, évaluez le gain de performances et la surcharge de maintenance.
 
-## Lectures recommandées   {#recommended-reads}
+## Lectures recommandées  {#recommended-reads}
 
 Adobe Experience Manager (AEM) Forms vous permet de transformer des opérations complexes en de simples et remarquables expériences numériques. Toutefois, vous devez chercher à développer des formulaires efficaces et productifs. Outre les formulaires HTML5, voici quelques recommandations de lecture au sujet des meilleures pratiques générales concernant AEM :
 
@@ -79,9 +79,9 @@ Adobe Experience Manager (AEM) Forms vous permet de transformer des opération
 * [Meilleures pratiques d’administration dans AEM ](/help/sites-administering/administer-best-practices.md)
 * [Meilleures pratiques pour le développement de solutions](/help/sites-developing/best-practices.md)
 * [Meilleures pratiques pour travailler avec les formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md)
-* [Le serveur AEM Forms n’incorpore pas de polices à un formulaire PDF dynamique](https://helpx.adobe.com/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
+* [Le serveur AEM Forms n’incorpore pas de polices à un formulaire de PDF dynamique](https://helpx.adobe.com/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
 
 ## Carte de référence rapide {#quick-reference-card}
 
-Vous pouvez imprimer la carte suivante (cliquez sur la carte pour télécharger une version haute résolution) et la conserver sur votre bureau pour une référence rapide :
-[ ![Carte de référence rapide des bonnes pratiques Forms HTML5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+Vous pouvez imprimer la carte suivante (cliquez dessus pour télécharger une version haute définition) et la conserver sur votre bureau pour la consulter facilement :
+[ ![Carte de référence rapide des meilleures pratiques concernant les formulaires HTML5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

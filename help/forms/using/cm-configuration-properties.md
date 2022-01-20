@@ -1,19 +1,19 @@
 ---
 title: Propriétés de configuration de Correspondence Management
-seo-title: Propriétés de configuration de Correspondence Management
+seo-title: Correspondence Management Configuration Properties
 description: Cette rubrique explique comment modifier Asset Composer avec des configurations propres à cette solution. Cette rubrique détaille les propriétés que vous pouvez modifier, avec leur description, leurs valeurs par défaut et leurs valeurs acceptables.
-seo-description: Cette rubrique explique comment modifier Asset Composer avec des configurations propres à cette solution. Cette rubrique détaille les propriétés que vous pouvez modifier, avec leur description, leurs valeurs par défaut et leurs valeurs acceptables.
+seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
 uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: 102e4f39-192e-4cc1-a249-4b6bc641919d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 97%
+source-wordcount: '845'
+ht-degree: 96%
 
 ---
 
@@ -255,7 +255,7 @@ Correspondence Management possède les propriétés de configuration suivantes 
   </tr> 
   <tr> 
    <td><p>Enable Letter Cache</p> </td> 
-   <td><p>Active/désactive le cache de lettres.</p> <p>La modification de cette valeur entraînera le nettoyage du cache en   <code>in-memory </code> cache.</p> </td> 
+   <td><p>Active/désactive le cache de lettres.</p> <p>La modification de cette valeur entraînera le nettoyage du cache en  <code>in-memory </code> cache.</p> </td> 
    <td><p>true</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 

@@ -1,8 +1,8 @@
 ---
 title: Créer des tableaux complexes accessibles dans des formulaires HTML5
-seo-title: Créer des tableaux complexes accessibles dans des formulaires HTML5
+seo-title: Create accessible complex tables in HTML5 forms
 description: 'Découvrez comment créer des tableaux accessibles dans des formulaires HTML5. '
-seo-description: 'Découvrez comment créer des tableaux accessibles dans des formulaires HTML5. '
+seo-description: Learn how to create accessible tables in HTML5 forms.
 uuid: e52562d2-4dc3-4359-9dbb-c18614921808
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ feature: Mobile Forms
 exl-id: a3337bb1-635c-4dc9-b438-3a829d4a9e03
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 82%
+source-wordcount: '274'
+ht-degree: 81%
 
 ---
 
@@ -34,7 +34,7 @@ Pour utiliser le nouveau format dans les formulaires HTML5, indiquez que le tabl
  </extras>
 ```
 
-Les tableaux marqués comme *complexTable* suivent le rendu HTML natif et offrent une meilleure prise en charge de l’accessibilité pour certains lecteurs d’écran.  Pour créer une étendue de ligne, sélectionnez les cellules consécutives d’un tableau dans la même colonne, cliquez avec le bouton droit de la souris sur la sélection, puis cliquez sur l’option **[!UICONTROL Fusionner les cellules]**.
+Les tableaux marqués comme *complexTable* suivez le rendu de HTML natif et fournissez une meilleure prise en charge de l’accessibilité pour certains lecteurs d’écran.  Pour créer une étendue de ligne, sélectionnez les cellules consécutives d’un tableau dans la même colonne, cliquez avec le bouton droit de la souris sur la sélection, puis cliquez sur l’option **[!UICONTROL Fusionner les cellules]**.
 
 ***Remarque :**la création d’une étendue de ligne fonctionne pour les cellules situées les plus à gauche uniquement.* 
 
@@ -42,7 +42,7 @@ Pour marquer une ligne comme en-tête de ligne, sélectionnez toutes les cellule
 
 Pour marquer une cellule en tant qu’en-tête de colonne, sélectionnez une cellule de la colonne, cliquez avec le bouton droit de la souris sur la sélection, puis cliquez sur **[!UICONTROL Marquer l’en-tête]**.
 
-Limites dans le nouveau format *AccessibleTable* :
+Limites dans les nouvelles *AccessibleTable* format :
 
 * Absence de prise en charge des champs extensibles si l’étendue de ligne est utilisée dans le tableau
 * Pas de prise en charge des tableaux imbriqués (tableaux dans les cellules d’un tableau)

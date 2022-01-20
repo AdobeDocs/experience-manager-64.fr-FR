@@ -1,8 +1,8 @@
 ---
 title: Utiliser HSM pour signer ou certifier des documents numériquement
-seo-title: Utiliser HSM pour certifier des documents signés électroniquement
+seo-title: Use HSM to certify eSigned documents
 description: Utiliser des modules HSM ou etoken pour certifier des documents signés électroniquement
-seo-description: Utiliser des modules HSM ou etoken pour certifier des documents signés électroniquement
+seo-description: Use HSM or etoken devices to certify eSigned documents
 uuid: bbe057c1-6150-41f9-9c82-4979d31d305d
 contentOwner: vishgupt
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 exl-id: ab5233dd-182e-4871-997f-b2142901bce7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '996'
 ht-degree: 87%
 
 ---
@@ -45,11 +45,11 @@ Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes 
 
 1. Arrêtez l’instance auteur de votre environnement AEM Forms. 
 
-1. Ouvrez le fichier [AEM_root]\crx-quickstart\conf\sling.properties pour le modifier.
+1. Ouvrez le [AEM_root]\crx-quickstart\conf\sling.properties pour modification.
 
    >[!NOTE]
    >
-   >Si vous avez utilisé le fichier [AEM_root]\crx-quickstart\bin\start.bat pour démarrer l’instance AEM, ouvrez le fichier [racine_de_l’AEM]\crx-quickstart\sling.properties pour le modifier.
+   >Si vous avez utilisé la variable [AEM_root]\crx-quickstart\bin\start.bat pour démarrer l’instance d’AEM, puis ouvrez le fichier [AEM_root]\crx-quickstart\sling.properties pour modification.
 
 1. Ajoutez ou remplacez les propriétés suivantes au fichier sling.properties :
 
@@ -63,7 +63,7 @@ Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes 
 1. Enregistrez et fermez le fichier sling.properties.
 1. Redémarrez l’instance AEM.
 
-## Configuration des certificats pour Reader Extensions {#set-up-certificates-for-reader-extensions}
+## Configuration des certificats pour les extensions Lecture {#set-up-certificates-for-reader-extensions}
 
 Effectuez les étapes suivantes pour configurer des certificats :
 
@@ -75,13 +75,13 @@ Effectuez les étapes suivantes pour configurer des certificats :
 
 1. Sur la page **Modifier les paramètres utilisateur**, cliquez sur **Gérer le KeyStore**.
 
-1. Dans la boîte de dialogue Gestion du KeyStore, développez l’option **Ajouter la clé privée à partir du fichier de magasin de clés** et fournissez un alias. L’alias est utilisé pour effectuer l’opération Reader Extensions.
-1. Pour charger le fichier de certificat, cliquez sur **Sélectionner le fichier de magasin de clés** et chargez un fichier `.pfx`.
+1. Dans la boîte de dialogue Gestion du KeyStore, développez **Ajout d’une clé privée à partir du fichier Key Store** et fournissez un alias. L’alias est utilisé pour effectuer l’opération Reader Extensions.
+1. Pour charger le fichier de certificat, cliquez sur **Sélectionner le fichier de magasin de clés** et télécharger un `.pfx` fichier .
 1. Ajoutez les **mot de passe du magasin de clés**, **mot de passe de la clé privée** et **alias de la clé privée** associés au certificat dans les champs respectifs. Cliquez sur **Envoyer**.
 
    >[!NOTE]
    >
-   >Pour déterminer le P **alias de clé privée** d’un certificat, vous pouvez utiliser la commande Java keytool : `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+   >Pour déterminer le P **Alias de clé privée** d’un certificat, vous pouvez utiliser la commande Java keytool : `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
    >[!NOTE]
    >
@@ -99,7 +99,7 @@ Effectuez les étapes suivantes pour configurer des certificats :
 
 L’alias contient l’ensemble des paramètres dont a besoin un périphérique HSM ou etoken. Suivez les instructions ci-dessous pour créer un alias pour les informations d’identification de chaque module HSM ou etoken qu’utilisent eSign ou les signatures numériques :
 
-1. Ouvrez la console AEM. L’URL par défaut de la console AEM est https://&lt;host>:&lt;port>/system/console/configMgr
+1. Ouvrez la console AEM. L’URL par défaut de AEM console est https://&lt;host>:&lt;port>/system/console/configMgr
 1. Ouvrez le **Service de configuration des informations d’identification HSM** et spécifiez les valeurs des champs suivants :
 
    * **Alias d’authentification** : spécifiez une chaîne utilisée pour identifier l’alias. Cette valeur est utilisée en tant que propriété pour certaines opérations de signatures numériques, comme l’opération de saisie du champ de signature.

@@ -1,12 +1,12 @@
 ---
 title: Guide de l’utilisateur pour la création dans AEM 6.4
-seo-title: Guide de l’utilisateur pour la création dans AEM 6.4
+seo-title: AEM 6.4 Authoring User Guide
 description: 'Ce guide explique les concepts de création dans AEM. '
-seo-description: 'Explique les concepts de création dans AEM. '
+seo-description: Explains the concepts of authoring in AEM.
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 40%
+source-wordcount: '333'
+ht-degree: 41%
 
 ---
 

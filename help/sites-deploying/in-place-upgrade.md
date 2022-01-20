@@ -1,19 +1,19 @@
 ---
 title: Exécution d’une mise à niveau statique
-seo-title: Exécution d’une mise à niveau statique
+seo-title: Performing an In-Place Upgrade
 description: Découvrez comment effectuer une mise à niveau statique.
-seo-description: Découvrez comment effectuer une mise à niveau statique.
+seo-description: Learn how to perform an in-place upgrade.
 uuid: c7428dc0-2b9e-401d-8f80-19e936f6d739
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: b1bd40f4-21c6-48f5-a41e-42daeaad3687
-feature: Mise à niveau
+feature: Upgrading
 exl-id: 70c5ef98-1004-46d0-b805-9435613ec36b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1227'
 ht-degree: 80%
 
 ---
@@ -50,7 +50,7 @@ Avant d’effectuer la mise à niveau, différentes étapes doivent être exécu
 
 Cette migration n’est pas requise si vous effectuez une mise à niveau à partir d’AEM 6.3. Pour les versions antérieures à 6.3, Adobe fournit un outil qui permet de faire migrer le référentiel vers la nouvelle version du fichier Oak Segment Tar présente dans AEM 6.3. Fourni dans le cadre du module de démarrage rapide, cet outil est obligatoire pour toutes les mises à niveau qui utilisent TarMK. Les mises à niveau pour les environnements qui utilisent MongoMK n’impliquent pas de migrer le référentiel. Pour plus d’informations sur les avantages du nouveau format de fichier TAR Segment, reportez-vous à la section [Questions fréquentes sur la migration vers le fichier TAR d’Oak Segment](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
-La migration réelle est effectuée à l’aide du fichier jar de démarrage rapide d’AEM standard, exécuté avec une nouvelle option `-x crx2oak` qui exécute l’outil crx2oak afin de simplifier la mise à niveau et de la rendre plus robuste.
+La migration réelle est effectuée à l’aide du fichier jar de démarrage rapide standard d’AEM, exécuté avec une nouvelle `-x crx2oak` qui exécute l&#39;outil crx2oak afin de simplifier la mise à niveau et la rendre plus robuste.
 
 >[!NOTE]
 >
@@ -59,7 +59,6 @@ La migration réelle est effectuée à l’aide du fichier jar de démarrage rap
 >* `--promote-runmode nosamplecontent`
 
 >
-
 
 
 Pour déterminer la commande à exécuter, utilisez la commande suivante :
@@ -123,15 +122,15 @@ Où `<<YOUR_PROFILE>>` et `<<ADDITIONAL_FLAGS>>` sont remplacés par le profil e
 
 **Vous pouvez également avoir besoin de commutateurs supplémentaires pour les scénarios suivants :**
 
-* Si vous effectuez la mise à niveau sur un système Windows où le mappage de la mémoire Java n’est pas géré correctement, ajoutez le paramètre `--disable-mmap` à la commande.
+* Si vous effectuez la mise à niveau sur un système Windows où le mappage de mémoire Java n’est pas géré correctement, ajoutez la variable `--disable-mmap` à la commande.
 
-* Si vous utilisez Java 7, ajoutez le paramètre `-XX:MaxPermSize=2048m` juste après le paramètre `-Xmx` .
+* Si vous utilisez Java 7, ajoutez la variable `-XX:MaxPermSize=2048m` juste après le paramètre `-Xmx` .
 
 Pour plus d’informations sur l’utilisation de l’outil crx2oak, reportez-vous à la section [Utilisation de l’outil de migration CRX2Oak](/help/sites-deploying/using-crx2oak.md). Le fichier JAR auxiliaire de crx2oak peut être mis à niveau manuellement, si nécessaire, en le remplaçant manuellement par des versions récentes après la décompression du démarrage rapide. Son emplacement dans le dossier d’installation AEM est le suivant : `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. La dernière version de l’outil de migration CRX2Oak peut être téléchargée sur Adobe Repository, à l’adresse : [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
 
 Si la migration a réussi, l’outil quitte avec un code de sortie égal à 0. Cherchez également des messages AVERTISSEMENT et ERREUR dans le fichier `upgrade.log`, disponible sous `crx-quickstart/logs` dans le répertoire d’installation d’AEM, car ils peuvent indiquer des erreurs non fatales qui se sont produites lors de la migration.
 
-Vérifiez les fichiers de configuration sous le dossier `crx-quickstart/install` . Si une migration est nécessaire, ils sont mis à jour de manière à refléter le référentiel cible.
+Vérifiez les fichiers de configuration sous `crx-quickstart/install` dossier. Si une migration est nécessaire, ils sont mis à jour de manière à refléter le référentiel cible.
 
 >[!NOTE]
 >
@@ -143,7 +142,7 @@ Veuillez ignorer cette section si vous effectuez une mise à niveau à partir de
 
 **Les points de contrôle ne sont pas copiés, car aucun magasin de données externe n’a été spécifié. De ce fait, le référentiel sera entièrement réindexé au premier démarrage. Utilisez --skip-checkpoints pour forcer la migration ou reportez-vous à https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration pour plus d’informations.**
 
-Pour une raison quelconque, la procédure de migration doit accéder aux fichiers binaires du magasin de données et ne le trouve pas. Pour définir la configuration de la banque de données, incluez les indicateurs suivants dans la partie `<<ADDITIONAL_FLAGS>>` de la commande de migration :
+Pour une raison quelconque, la procédure de migration doit accéder aux fichiers binaires du magasin de données et ne le trouve pas. Pour spécifier votre configuration de banque de données, incluez les indicateurs suivants dans la variable `<<ADDITIONAL_FLAGS>>` partie de la commande de migration :
 
 **Pour les magasins de données S3 :**
 
@@ -159,7 +158,7 @@ Où `/path/to/SharedS3DataStore.config` représente le chemin d’accès à votr
 --src-datastore=/path/to/datastore
 ```
 
-Où `/path/to/datastore` représente le chemin d’accès à votre banque de données de fichier.
+Où `/path/to/datastore` représente le chemin d’accès à votre banque de données de fichiers.
 
 ## Exécution de la mise à niveau {#performing-the-upgrade}
 
@@ -169,11 +168,11 @@ Où `/path/to/datastore` représente le chemin d’accès à votre banque de don
 
 1. Téléchargez la dernière version du connecteur S3 1.8.x à partir de [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)
 
-1. Extrayez le package dans un dossier temporaire et copiez le contenu de `jcr_root/libs/system/install` dans le dossier `crx-quickstart/install`.
+1. Extrayez le package dans un dossier temporaire et copiez le contenu de `jcr_root/libs/system/install` au `crx-quickstart/install` dossier.
 
 ### Détermination de la commande de démarrage de mise à niveau appropriée {#determining-the-correct-upgrade-start-command}
 
-Pour effectuer la mise à niveau, il est important de démarrer AEM à l’aide du fichier JAR pour activer l’instance. Pour passer à la version 6.4, veuillez également consulter d’autres options de migration et de restructuration de contenu dans [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) que vous pouvez choisir avec la commande de mise à niveau.
+Pour effectuer la mise à niveau, il est important de démarrer AEM à l’aide du fichier JAR pour activer l’instance. Pour passer à la version 6.4, veuillez également consulter d’autres options de migration et de restructuration de contenu dans [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md) que vous pouvez choisir avec la commande upgrade.
 
 Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas la mise à niveau. La plupart des clients démarrent AEM à l’aide du script de démarrage et ont personnalisé ce script de démarrage de manière à inclure des commutateurs pour les configurations d’environnement, comme les paramètres de mémoire, les certificats de sécurité, etc. Pour cette raison, il est recommandé de suivre cette procédure pour déterminer la commande de mise à niveau appropriée :
 
@@ -197,7 +196,7 @@ Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas l
 
    Cela permet de s’assurer que tous les paramètres de mémoire appropriés, modes d’exécution personnalisés et autres paramètres d’environnement sont appliqués pour la mise à niveau. Une fois que la mise à niveau est terminée, l’instance peut être démarrée à partir du script de démarrage lors des démarrages ultérieurs.
 
-## Déploiement de la base de code mise à niveau  {#deploy-upgraded-codebase}
+## Déploiement de la base de code mise à niveau {#deploy-upgraded-codebase}
 
 Une fois que la procédure de mise à niveau statique est terminée, la base de code mise à jour doit être déployé. La procédure de mise à jour de la base de code pour qu’elle fonctionne dans la version cible d’AEM est disponible dans la page [Mise à niveau du code et personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md).
 

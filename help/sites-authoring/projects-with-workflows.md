@@ -1,8 +1,8 @@
 ---
 title: Utilisation des workflows de projet
-seo-title: Utilisation des workflows de projet
+seo-title: Working with Project Workflows
 description: Plusieurs workflows de projet sont directement disponibles.
-seo-description: Plusieurs workflows de projet sont directement disponibles.
+seo-description: A variety of project workflows are available out of the box.
 uuid: 376922ca-e09e-4ac8-88c8-23dac2b49dbe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 9d7e9d46-9f38-44a0-9c83-4bc4fceb17c8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '724'
 ht-degree: 97%
 
 ---
@@ -44,7 +44,7 @@ Selon le modèle de projet sélectionné, certains workflows sont disponibles :
 
 >[!NOTE]
 >
->&amp;ast;Ces workflows ne sont pas lancés via la mosaïque **Workflow** dans les projets. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-administering/tc-manage.md).
+>&amp;ast; Ces workflows ne sont pas lancés via la mosaïque **Workflow** dans les projets. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-administering/tc-manage.md).
 
 Les étapes permettant de lancer et de terminer les workflows sont identiques quel que soit le workflow choisi. Seules les étapes changent.
 
@@ -79,7 +79,7 @@ Les workflows Séance photo du produit (commerce et sans commerce) sont abordés
 
 Dans le workflow d’approbation de projet, vous attribuez du contenu à un utilisateur et passez en revue ce contenu, puis vous l’approuvez.
 
-1. Dans votre projet simple, sélectionnez le signe ****+** dans la mosaïque **Workflows** et sélectionnez **Processus d’approbation de projet**.
+1. Dans votre projet simple, sélectionnez la ****+** se connecter à **Workflows** et sélectionnez **Workflow d’approbation de projet**.
 1. Entrez un titre et sélectionnez la personne à laquelle l’affecter dans la liste Équipe. Le cas échéant, entrez une description, le chemin d’accès au contenu, la priorité de tâche et la date d’échéance.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
@@ -110,7 +110,7 @@ Ce workflow vous permet de demander une page d’entrée.
 
 1. Cliquez sur **Créer**. Le workflow commence. La tâche apparaît dans la mosaïque **Tâches**.
 
-## Worfklow de demande d’adresse électronique  {#request-email-workflow}
+## Worfklow de demande d’adresse électronique {#request-email-workflow}
 
 Ce workflow vous permet de demander une adresse électronique. Il s’agit du même workflow que celui qui s’affiche dans la mosaïque **Courriels**.
 

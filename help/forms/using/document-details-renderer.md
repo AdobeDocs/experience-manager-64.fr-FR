@@ -1,8 +1,8 @@
 ---
 title: Détails de document pour le rendu
-seo-title: Détails de document pour le rendu
+seo-title: Document details for renderer
 description: Informations conceptuelles sur le mode de fonctionnement du rendu de différents types de formulaires et de fichiers dans AEM Forms.
-seo-description: Informations conceptuelles sur le mode de fonctionnement du rendu de différents types de formulaires et de fichiers dans AEM Forms.
+seo-description: Conceptual information on how renders work in AEM Forms workspace to render the various supported form and file types.
 uuid: ae3f0585-9105-4ca7-a490-ffdefd3ac8cd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 exl-id: 192ba4c4-a133-4e16-9882-98005f25ba7f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 66%
+source-wordcount: '655'
+ht-degree: 64%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 66%
 
 ## Présentation {#introduction}
 
-Dans l’espace de travail AEM Forms, plusieurs types de formulaires sont pris en charge en toute simplicité. Celles-ci comprennent :
+Dans l’espace de travail AEM Forms, plusieurs types de formulaires sont pris en charge en toute simplicité. Celles-ci comprennent les éléments suivants :
 
 * Formulaires PDF (XDP / Acroform / PDF aplatis)
 * Nouveaux formulaires HTML
@@ -35,7 +35,7 @@ Les PDF forms sont rendus par `PdfTaskForm View`.
 
 Lorsqu’un formulaire XDP est rendu au format PDF, un `FormBridge` JavaScript™ est ajouté par le service FormsAugmenter. Ce JavaScript™ (dans le formulaire PDF) permet d’effectuer des actions telles que l’envoi d’un formulaire, la sauvegarde d’un formulaire ou la mise hors ligne d’un formulaire.
 
-Dans l’espace de travail AEM Forms, la vue PDFTaskForm communique avec `FormBridge`javascript, via un code HTML intermédiaire présent à `/lc/libs/ws/libs/ws/pdf.html`. Le flux est :
+Dans l’espace de travail AEM Forms, la vue PDFTaskForm communique avec le `FormBridge`javascript, via un HTML intermédiaire présent à l’adresse `/lc/libs/ws/libs/ws/pdf.html`. Le flux est :
 
 **Vue PDFTaskForm - pdf.html**
 
@@ -53,7 +53,7 @@ Cette méthode est la méthode standard de communication avec un javascript PDF 
 >
 >Il n’est pas recommandé de modifier le pdf.html/contenu de la vue PdfTaskForm.
 
-## Nouveaux formulaires HTML  {#new-html-forms}
+## Nouveaux formulaires HTML {#new-html-forms}
 
 Les nouveaux formulaires HTML sont rendus par la vue NewHTMLTaskForm.
 
@@ -69,7 +69,7 @@ Ce javascript est différent de celui des formulaires PDF décris ci-dessus, mai
 
 Les formulaires Flex sont rendus par SwfTaskForm et les guides sont rendus par les vues HtmlTaskForm respectivement.
 
-Dans l’espace de travail AEM Forms, ces vues communiquent avec le fichier SWF réel qui constitue le formulaire/guide flex à l’aide d’un fichier SWF intermédiaire présent à `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+Dans l’espace de travail AEM Forms, ces vues communiquent avec le SWF réel qui constitue le formulaire/guide flex à l’aide d’un SWF intermédiaire présent dans `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
 La communication se fait à l’aide de `swfObject.postMessage` / `window.flexMessageHandler`.
 
@@ -85,14 +85,14 @@ Les applications tierces sont rendues à l’aide de la vue ExtAppTaskForm.
 
 **Communication entre l’application tierce et l’espace de travail AEM Forms**
 
-L’espace de travail AEM Forms écoute sur `window.global.postMessage([Message],[Payload])`
+L’espace de travail AEM Forms écoute `window.global.postMessage([Message],[Payload])`
 
-[] Le message peut être une chaîne spécifiée comme  `SubmitMessage`|  `CancelMessage`|  `ErrorMessage`|  `actionEnabledMessage`dans le  `runtimeMap`. Les applications tierces doivent utiliser cette interface pour avertir l’espace de travail AEM Forms si nécessaire. L’utilisation de cette interface est obligatoire, car l’espace de travail AEM Forms doit savoir que lorsque la tâche est envoyée, afin qu’elle puisse nettoyer la fenêtre de la tâche.
+[Message] peut être une chaîne spécifiée comme `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`dans le `runtimeMap`. Les applications tierces doivent utiliser cette interface pour avertir l’espace de travail AEM Forms si nécessaire. L’utilisation de cette interface est obligatoire, car l’espace de travail AEM Forms doit savoir que lorsque la tâche est envoyée, afin qu’elle puisse nettoyer la fenêtre de la tâche.
 
 **Communication entre l’espace de travail AEM Forms et une application tierce**
 
-Si les boutons d’action directe de l’espace de travail AEM Forms sont visibles, il appelle `window.[External-App-Name].getMessage([Action])`, où `[Action]` est lu à partir de la balise `routeActionMap`. L’application tierce doit écouter sur cette interface, puis notifier AEM Forms workspace via l’API `postMessage ()`.
+Si les boutons d’action directe de l’espace de travail AEM Forms sont visibles, il appelle `window.[External-App-Name].getMessage([Action])`où `[Action]` est lu à partir de la fonction `routeActionMap`. L’application tierce doit écouter sur cette interface, puis notifier AEM Forms Workspace via le `postMessage ()` API.
 
-Par exemple, une application Flex peut définir `ExternalInterface.addCallback('getMessage', listener)` pour prendre en charge cette communication. Si l’application tierce souhaite gérer l’envoi du formulaire via ses propres boutons, vous devez spécifier `hideDirectActions = true() in the runtimeMap` et vous pouvez ignorer cet écouteur. Par conséquent, cette syntaxe est facultative.
+Par exemple, une application Flex peut définir `ExternalInterface.addCallback('getMessage', listener)` pour prendre en charge cette communication. Si l’application tierce souhaite gérer l’envoi de formulaire via ses propres boutons, vous devez spécifier `hideDirectActions = true() in the runtimeMap` et vous pouvez ignorer cet écouteur. Par conséquent, cette syntaxe est facultative.
 
 Pour plus d’informations sur l’interaction d’applications tierces, notamment Correspondence Management, voir [Intégration de Correspondence Management dans l’espace de travail AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md).

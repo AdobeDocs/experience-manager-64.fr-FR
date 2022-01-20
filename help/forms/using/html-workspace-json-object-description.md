@@ -1,8 +1,8 @@
 ---
 title: Description de l’objet JSON de l’espace de travail AEM Forms
-seo-title: Description de l’objet JSON de l’espace de travail AEM Forms
+seo-title: AEM Forms workspace JSON object description
 description: Informations conceptuelles sur les objets JavaScript JSON utilisés dans l’espace de travail LiveCycle AEM Forms pour la personnalisation, l’extension, la modification et la réutilisation.
-seo-description: Informations conceptuelles sur les objets JavaScript JSON utilisés dans l’espace de travail LiveCycle AEM Forms pour la personnalisation, l’extension, la modification et la réutilisation.
+seo-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
 uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 exl-id: 8c7e1ee2-0f7f-427e-aca2-d4bf523fd7f1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2109'
 ht-degree: 93%
 
 ---
@@ -442,7 +442,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>dateRanges<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Contient des objets de tableau des plannings d’absences du bureau d’un utilisateur. Dans chaque objet de planning, le champ startDate contient la date de début du planning et le champ endDate contient la date de fin du planning. Si endDate est nul dans le planning, cela implique que l'utilisateur n'a pas programmé la date de fin du planning d'absence du bureau.<br type="_moz" /> </td> 
+   <td>Contient des objets de tableau des plannings d’absences du bureau d’un utilisateur. Dans chaque objet de planning, le champ startDate contient la date de début du planning et le champ endDate contient la date de fin du planning. Si endDate est nul dans le planning, cela implique que l’utilisateur n’a pas planifié la date de fin du planning d’absence du bureau.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td> 
@@ -730,7 +730,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>autorisations ;<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Autorisations associées à une pièce jointe. Le champ allowRead sert à l’autorisation de lecture, allowWrite est pour l’autorisation d’écriture, allowDelete est pour l’autorisation de suppression.<br type="_moz" /> </td> 
+   <td>Autorisations associées à une pièce jointe. Le champ allowRead sert à l’autorisation de lecture, allowWrite à l’autorisation d’écriture, allowDelete à l’autorisation de suppression.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>size<br type="_moz" /> ; </td> 

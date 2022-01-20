@@ -6,11 +6,11 @@ audience: admin-user
 user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.4
 breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
-feature: Administration
+feature: Administering
 role: Admin
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 94%
 
 ---
@@ -62,13 +62,13 @@ ht-degree: 94%
    + [Configuration d’Applications AEM](config-apps.md)
    + [Administration des workflows](workflows.md)
    + [Configuration des formulaires de recherche](search-forms.md)
-   + [Consoles Outils](tools-consoles.md)
+   + [Consoles Outils ](tools-consoles.md)
    + [Création de rapports](reporting.md)
    + [Administration d’instances de workflow](workflows-administering.md)
    + [Configuration du conteneur et du mode de mises en page](configuring-responsive-layout.md)
    + [Activation de l’accès à l’IU classique](enable-classic-ui.md)
    + [Démarrage d’un workflow](workflows-starting.md)
-   + [Configuration des modules externes d’éditeur de texte enrichi ](configure-rich-text-editor-plug-ins.md)
+   + [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
    + [Consoles d’administration](enable-classic-ui-admin.md)
 + Sécurité {#security}
    + [Administration et sécurité des utilisateurs](security.md)
@@ -95,8 +95,8 @@ ht-degree: 94%
    + [Prise en charge du chiffrement des propriétés de configuration](encryption-support-for-configuration-properties.md)
    + [Traitement des demandes RGPD pour AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Filtre de disposition du contenu](content-disposition-filter.md)
-+ Personnalisation  {#personalization}
-   + [Personnalisation ](personalization.md)
++ Personnalisation {#personalization}
+   + [Personnalisation](personalization.md)
    + [Configuration de ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
    + [Campagnes](campaigns.md)
@@ -106,7 +106,7 @@ ht-degree: 94%
    + [Intégration des pages d’entrée à Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
 + eCommerce {#ecommerce}
    + [eCommerce](ecommerce.md)
-   + [Concepts ](concepts.md)
+   + [Concepts](concepts.md)
    + [Administration d’eCommerce générique](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)

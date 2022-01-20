@@ -1,8 +1,8 @@
 ---
 title: Création d’un profil personnalisé pour HTML5 forms
-seo-title: Création d’un profil personnalisé pour HTML5 forms
+seo-title: Creating a custom profile for HTML5 forms
 description: Un profil HTML5 forms est un nœud de ressources dans Apache Sling. Il représente une version personnalisée du service de rendu HTML5 forms.
-seo-description: Un profil HTML5 forms est un nœud de ressources dans Apache Sling. Il représente une version personnalisée du service de rendu HTML5 forms.
+seo-description: A HTML5 forms profile is a resource node in Apache Sling. It represents a customized version of HTML5 forms Render service.
 uuid: b9938280-a92c-4dde-b465-04372db3ca8d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,14 +12,14 @@ feature: Mobile Forms
 exl-id: 4630c43f-5b47-435c-8ce5-b4e0d986ec02
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 62%
+source-wordcount: '661'
+ht-degree: 60%
 
 ---
 
 # Création d’un profil personnalisé pour HTML5 forms {#creating-a-custom-profile-for-html-forms}
 
-Un profil est un noeud de ressource dans [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu de formulaires HTML5 pour personnaliser l’apparence, le comportement et les interactions des formulaires HTML5. Un noeud de profil existe dans le dossier `/content` du référentiel JCR. Vous pouvez placer le noeud directement sous le dossier `/content` ou tout sous-dossier du dossier `/content`.
+Un profil est un noeud de ressource dans [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu de HTML5 forms pour personnaliser l’apparence, le comportement et les interactions des HTMLS5. Un noeud de profil existe dans la variable `/content` dans le référentiel JCR. Vous pouvez placer le noeud directement sous le noeud `/content` dossier ou tout sous-dossier de `/content` dossier.
 
 Le nœud de profil présente la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**. Le script de rendu du noeud se trouve à l’emplacement /libs/xfaforms/profile.
 
@@ -43,13 +43,13 @@ Le fichier toolbar.jsp contient le code pour créer la barre d’outils colorée
 
 ## formBody.jsp {#formbody-jsp}
 
-Le module formBody.jsp sert à la représentation HTML du formulaire XFA.
+Le module formBody.jsp sert à la représentation par HTML du formulaire XFA.
 
 ## nav_footer.jsp {#nav-footer-jsp}
 
 HTML5 forms commence par générer uniquement la première page du formulaire. Lorsqu’un utilisateur fait défiler le formulaire, le reste des formulaires est chargé. La vitesse de chargement est ainsi optimisée. Le composant nav_footer.jsp contient tous les styles et éléments requis pour faciliter le chargement des pages dans le défilement.
 
-## footer.jsp {#footer-jsp}
+## footer.jsp  {#footer-jsp}
 
 Le module footer.jsp est vide. Il vous permet d’ajouter des scripts qui ne sont utilisés que pour les interactions utilisateur.
 
@@ -73,12 +73,12 @@ Pour créer un profil personnalisé, procédez comme suit :
 
 Après la création d’un profil personnalisé, ajoutez les informations de rendu à ce profil. Lorsqu’il reçoit une demande pour le nouveau profil, CRX vérifie l’existence du dossier/apps pour la page JSP à générer. Créez la page JSP dans le dossier /apps.
 
-1. Dans le volet de gauche, accédez au dossier `/apps` .
-1. Cliquez avec le bouton droit sur le dossier `/apps` et choisissez de créer un dossier nommé **hrform**.
-1. Dans le dossier **hrform** , créez un dossier nommé **demo**.
+1. Dans le volet de gauche, accédez au `/apps` dossier.
+1. Cliquez avec le bouton droit de la souris sur le `/apps` et choisissez de créer un dossier portant le nom **hrform**.
+1. Insider la variable **hrform** créer un dossier nommé **demo**.
 1. Cliquez sur le bouton **Enregistrer tout**.
 1. Accédez à `/libs/xfaforms/profile/html.jsp` et copiez le noeud **html.jsp**.
-1. Collez le noeud **html.jsp** dans le dossier `/apps/hrform/demo` créé ci-dessus avec le même nom **html.jsp** et cliquez sur **Enregistrer**.
+1. Coller **html.jsp** dans le noeud `/apps/hrform/demo` dossier créé ci-dessus avec le même nom **html.jsp** et cliquez sur **Enregistrer**.
 1. Si vous rencontrez d’autres composants du script de profil, suivez les étapes 1 à 6 pour copier les composants dans le dossier /apps/hrform/demo.
 
 1. Pour vérifier que le profil est créé, ouvrez l’URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`

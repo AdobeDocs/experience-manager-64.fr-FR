@@ -39,7 +39,7 @@ Pour plus d’informations, voir [Ressources rendues compatibles avec AEM Forms 
 
 Après avoir effectué une mise à niveau, exécutez les opérations suivantes pour installer le package de compatibilité AEMFD et rendre vos actifs compatibles avec la version 6.4 :
 
-Vérifiez que le [package de compatibilité AEM](/help/sites-deploying/backward-compatibility.md) est préinstallé.
+Assurez-vous que vous avez [Package de compatibilité AEM](/help/sites-deploying/backward-compatibility.md) pré-installé.
 
 1. Installez le [package de compatibilité](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
@@ -48,7 +48,7 @@ Vérifiez que le [package de compatibilité AEM](/help/sites-deploying/backward-
 1. Une fois les journaux stabilisés, redémarrez le serveur.
 1. Utilisez l’utilitaire de migration pour rendre vos actifs compatibles avec la version 6.4.
 
-   Pour plus d’informations, voir [Utilitaire de migration](/help/forms/using/migration-utility.md).
+   Pour plus d’informations, voir [utilitaire de migration](/help/forms/using/migration-utility.md).
 
 ## Actifs devenus compatibles avec AEM Forms 6.4 après l’installation du package de compatibilité {#assetsmadecompatible}
 

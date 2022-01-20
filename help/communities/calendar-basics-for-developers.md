@@ -1,8 +1,8 @@
 ---
 title: Principes de base du calendrier
-seo-title: Principes de base du calendrier
+seo-title: Calendar Essentials
 description: Présentation de la fonction Calendrier
-seo-description: Présentation de la fonction Calendrier
+seo-description: Calendar feature overview
 uuid: 14ff7a83-b2a7-4f7e-8ee7-88f336329a1a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
 exl-id: cdf5e5d3-a78c-4f32-ad40-665876392a97
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '216'
 ht-degree: 3%
 
 ---
@@ -48,14 +48,14 @@ Cette page fournit des informations essentielles sur l’utilisation de la fonct
   </tr>
   <tr>
    <td><strong> properties</strong></td> 
-   <td>voir <a href="calendar.md">Utilisation des calendriers</a></td> 
+   <td>see <a href="calendar.md">Utilisation des calendriers</a></td> 
   </tr>
  </tbody>
 </table>
 
 * [Personnalisations côté client](client-customize.md)
 
-## Principes élémentaires côté serveur {#essentials-for-server-side}
+## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
 * [API de calendrier](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
@@ -65,17 +65,17 @@ Cette page fournit des informations essentielles sur l’utilisation de la fonct
 
 ### Fonction Calendrier {#calendar-function}
 
-Une structure de site de communauté qui comprend la fonction [Calendrier](functions.md#calendar-function) aura un composant c `alendar`configuré. La fonction Calendrier prend en charge l’identification d’un [groupe d’utilisateurs privilégiés](users.md#privileged-members-group).
+Une structure de site de communauté qui inclut [Fonction Calendrier](functions.md#calendar-function) aura un c configuré `alendar`composant. La fonction Calendrier prend en charge l’identification d’un [groupe d’utilisateurs de membres privilégiés](users.md#privileged-members-group).
 
 ### Accès aux publications du calendrier (UGC) {#accessing-calendar-posts-ugc}
 
-Depuis AEM 6.1 Communities, l’utilisation d’un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
-**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement**.
+**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md)  - Présentation et utilisation du référentiel
-* [Notions fondamentales relatives à la SRP et au contenu généré par l’utilisateur](srp-and-ugc.md)  - Exemples et méthodes d’utilitaire SRP
-* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md)  - Instructions de codage
-* [Refactorisation](socialutils.md)  de SocialUtils : mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - présentation et utilisation du référentiel
+* [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes d’utilitaire SRP et exemples
+* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage
+* [Refactorisation de SocialUtils](socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles

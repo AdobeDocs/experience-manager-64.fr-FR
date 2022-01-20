@@ -1,8 +1,8 @@
 ---
 title: 'Gestion des projets : liste de contrôle des meilleures pratiques'
-seo-title: 'Gestion des projets : liste de contrôle des meilleures pratiques'
+seo-title: Managing Projects - Best Practices Checklist
 description: 'La gestion d’un projet de mise en œuvre d’Adobe Experience Manager (AEM) nécessite planification et compréhension. Les listes de contrôle de projet sont conçues comme un ensemble de meilleures pratiques pour la mise en route d’un projet. Elles vous guident tout au long du cycle de vie du projet et assurent une surveillance de niveau supérieur de votre état actuel. '
-seo-description: 'La gestion d’un projet de mise en œuvre d’Adobe Experience Manager (AEM) nécessite planification et compréhension. Les listes de contrôle de projet sont conçues comme un ensemble de meilleures pratiques pour la mise en route d’un projet. Elles vous guident tout au long du cycle de vie du projet et assurent une surveillance de niveau supérieur de votre état actuel. '
+seo-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
 uuid: 61b45b1b-af0b-4b1b-9a52-6767611fc1ab
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -12,7 +12,7 @@ discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
 exl-id: 1699b24f-cf2a-419b-a2f9-be294fa3591f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3313'
+source-wordcount: '3261'
 ht-degree: 94%
 
 ---
@@ -30,11 +30,11 @@ Pour vous aider, les meilleures pratiques se composent des éléments suivants 
 
 * La documentation, fondée directement sur la [liste de contrôle](/help/managing/best-practices-checklist.md), qui décrit :
 
-   * [Analyse des ](#project-heartbeat-dashboard) pulsations du projet.
-   * [État par ](#status-by-role) Roleoverview.
+   * [Pulsation du projet](#project-heartbeat-dashboard) analyse.
+   * [État par rôle](#status-by-role) aperçu.
    * les [phases et jalons](#phases-and-milestones).
    * le [personnage principal](#persona) et sa participation à chaque étape (appropriée).
-   * [Glossaire ](/help/managing/best-practices-glossary.md) des [documents et éléments livrables requis](#required-documents-and-deliverables).
+   * A [Glossaire](/help/managing/best-practices-glossary.md) de [Documents requis et éléments livrables](#required-documents-and-deliverables).
 
 * D’[autres documents de référence](/help/managing/best-practices-further-reference.md) pour fournir plus de détails sur des domaines spécifiques.
 
@@ -54,7 +54,7 @@ La feuille de calcul de **pulsation du projet** fournit un aperçu graphique des
 
    * À tout moment au cours du projet, cela indique l’avancement de chaque phase de votre projet.
 
-## État par rôle  {#status-by-role}
+## État par rôle {#status-by-role}
 
 La feuille de calcul **État par rôle** indique le détail de l’**[état, la qualité et la complétude](#project-heartbeat-dashboard)** par **[phase](#phases-and-milestones)** et **[personnage](#persona)**.
 
@@ -120,7 +120,7 @@ Les quatre facteurs :
 
 La planification du projet consolide la préparation. Il s’agit ici de commencer à transformer vos objectifs et vos attentes en une feuille de route bien définie constituée de tâches concrètes, associées à une communication claire, avec des révisions strictes pour mesurer la progression.
 
-#### Jalons  {#milestones-1}
+#### Jalons {#milestones-1}
 
 * **Remise du projet**
 
@@ -157,7 +157,7 @@ La planification du projet consolide la préparation. Il s’agit ici de commenc
 
 La planification du développement est essentielle pour vous assurer que votre projet est conçu sur des bases solides par une équipe qui dispose des connaissances requises.
 
-#### Jalons  {#milestones-2}
+#### Jalons {#milestones-2}
 
 * **Sélection et formation de l’équipe de développement**
 
@@ -181,7 +181,7 @@ La planification du développement est essentielle pour vous assurer que votre p
    * les sous-systèmes ;
    * les systèmes tiers ;
    * les interfaces : matérielle, logicielle et interaction humaine ;
-   * Serveurs pour chaque environnement ; voir [Exigences techniques](/help/sites-deploying/technical-requirements.md) et [Instructions de dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md)
+   * Serveurs pour chaque environnement ; voir la [Exigences techniques](/help/sites-deploying/technical-requirements.md) et [Instructions de dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md)
    * les processus pour chaque environnement, par exemple, les exigences de déploiement et de maintenance ;
    * les activités de maintenance (GC de banque de données, optimisation TarPM, etc.) ;
    * [](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Mise en cache du Dispatcher
@@ -237,11 +237,11 @@ La planification du développement est essentielle pour vous assurer que votre p
 
    Voir aussi le [portail d’assistance d’Adobe](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
 
-### Les opérations et leur planification  {#operations-planning-and-operations}
+### Les opérations et leur planification {#operations-planning-and-operations}
 
 De la même façon, les opérations doivent être correctement planifiées de manière à vous assurer de disposer des environnements dont vous avez besoin pour toutes les étapes du cycle de vie du projet. Vous avez également besoin des processus appropriés pour leur maintenance.
 
-#### Jalons  {#milestones-3}
+#### Jalons {#milestones-3}
 
 * **Autorisations**
 
@@ -249,10 +249,10 @@ De la même façon, les opérations doivent être correctement planifiées de ma
 
    Par exemple :
 
-   * Liste des rôles (c’est-à-dire des groupes) avec des définitions d’accès `read`/ `write` pour chaque
+   * Liste des rôles (c’est-à-dire des groupes) avec `read`/ `write` définitions d’accès pour chaque
    * Définition de l’utilisation des privilèges qui affectent l’environnement de publication ; par exemple, `replicate`
    * Pour les utilisateurs qui disposent de privilèges minimaux, les processus doivent être définis
-   * Les utilisateurs du groupe `editor` ne doivent pas disposer des droits `admin` ni faire partie du groupe `administrators` .
+   * Utilisateurs dans la variable `editor` ne doit pas avoir `admin` ne font pas partie des droits `administrators` group
    Pour plus d’informations, voir [Administration et sécurité des utilisateurs](/help/sites-administering/security.md).
 
 * **Surveillance et maintenance**
@@ -275,7 +275,7 @@ De la même façon, les opérations doivent être correctement planifiées de ma
 
 Le développement est une étape essentielle nécessitant plus qu’un simple codage.
 
-#### Jalons  {#milestones-4}
+#### Jalons {#milestones-4}
 
 * **Environnement de développement**
 
@@ -312,7 +312,7 @@ Le développement est une étape essentielle nécessitant plus qu’un simple co
    * la cadence de déploiement.
    * les dépendances/l’intégration des logiciels tiers ;
    * la configuration de la sécurité ;
-   * Les performances de base sont vérifiées en exécutant les [tests Tough Day](/help/sites-developing/tough-day.md) sur la configuration de production.
+   * Les performances de ligne de base vérifiées en exécutant la fonction [Tough Day tests](/help/sites-developing/tough-day.md) sur la configuration de production
    * les exigences des tests de performance ; voir [Meilleures pratiques pour l’assurance qualité](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance).
 
 * **Intégration**
@@ -340,9 +340,9 @@ Le développement est une étape essentielle nécessitant plus qu’un simple co
 
    * un manuel des opérations ;
    * toute personnalisation qui peut affecter les mises à niveau ;
-   * les notes de mise à jour.
+   * Notes de mise à jour
 
-### Performances et tests  {#performance-and-testing}
+### Performances et tests {#performance-and-testing}
 
 Une fois la nouvelle application disponible, elle doit subir des tests stricts, à la fois en matière de fonctionnalité et de [performance](/help/sites-deploying/configuring-performance.md).
 
@@ -379,7 +379,7 @@ Une fois la nouvelle application disponible, elle doit subir des tests stricts, 
 
 Le déploiement de votre nouvelle application nécessite une planification soigneuse pour garantir une activation sans heurt. Cela inclut d’assurer un haut niveau de sécurité, de former tous les utilisateurs potentiels et de réaliser plusieurs exécutions d’essai pour confirmer que tous les problèmes ont été traités.
 
-#### Jalons  {#milestones-6}
+#### Jalons {#milestones-6}
 
 * **Préparation**
 
@@ -417,11 +417,11 @@ Le déploiement de votre nouvelle application nécessite une planification soign
 
    Voir la [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) pour plus de détails.
 
-### Activation  {#go-live}
+### Activation {#go-live}
 
 Vous souhaitez que l’activation se déroule de la meilleure manière possible. Une nouvelle fois, les étapes finales doivent être planifiées pour une exécution soignée.
 
-#### Jalons  {#milestones-7}
+#### Jalons {#milestones-7}
 
 * **Préparation**
 
@@ -447,7 +447,7 @@ Vous souhaitez que l’activation se déroule de la meilleure manière possible.
 
    Préparez et exécutez vos tests de détection de fumée.
 
-## Personnage {#persona}
+## Personne {#persona}
 
 Les listes de contrôle sont conçues par personnage. Il s’agit des rôles importants impliqués dans le cycle de vie du projet.
 
@@ -480,7 +480,7 @@ L’architecte de la solution :
 * aide à définir la stratégie de mise en œuvre d’AEM (par exemple, pour déterminer si une installation en grappe, une reprise progressive ou un réseau de diffusion de contenu est nécessaire) ;
 * définit l’architecture de la solution AEM en fonction des exigences du client. Cela peut comprendre le concept des rôles d’utilisateurs (avec les droits connexes), la relation entre les modèles et les composants ou quand utiliser la gestion de sites multiples.
 
-### Analyste métier  {#business-analyst}
+### Analyste métier {#business-analyst}
 
 L’analyste métier :
 
@@ -505,7 +505,7 @@ Le responsable du développement :
 
 * travaille en étroite collaboration avec l’architecte (notamment lors de l’établissement de la stratégie de développement pour AEM) afin de définir des aspects tels que la relation entre les modèles et les composants, la stratégie d’intégration des applications tierces et toute fonctionnalité spécifique.
 
-### Responsable de la qualité  {#quality-lead}
+### Responsable de la qualité {#quality-lead}
 
 Le responsable de la qualité :
 
@@ -531,7 +531,7 @@ Le responsable de la sécurité :
 * est responsable du concept global de sécurité de la solution, afin qu’elle soit alignée sur toutes les exigences et stratégies du client ;
 * fournit un concept de sécurité, des opérations de sécurité et des recommandations pour n’importe quel concept reposant sur le matériel, comme les zones et les pare-feu.
 
-### Autre personnage  {#other-persona}
+### Autre personnage {#other-persona}
 
 * Parties prenantes
    * Personnes (appartenant souvent à l’entreprise) qui ont un intérêt particulier dans la réussite du projet. Elles contribuent souvent au budget.
@@ -550,9 +550,9 @@ Le responsable de la sécurité :
 * Auteurs et utilisateurs finaux
    * Personnes qui utilisent le système pour créer le contenu de votre site web et en effectuer la maintenance.
 
-## Documents requis et éléments livrables  {#required-documents-and-deliverables}
+## Documents requis et éléments livrables {#required-documents-and-deliverables}
 
-Les listes de contrôle couvrent les **documents requis** et **éléments livrables** pour chaque jalon.
+Les listes de contrôle couvrent la variable **Documents requis** et **Deliverables** pour chaque jalon.
 
 * Il n’existe pas de relation de 1 à 1 entre eux, par exemple, un groupe de documents requis peut correspondre à un seul élément livrable.
 * Un élément livrable d’un personnage peut être un document requis pour un autre personnage lors du même jalon.
@@ -561,7 +561,7 @@ Les listes de contrôle couvrent les **documents requis** et **éléments livrab
 
 Les **documents requis** sont nécessaires pour le personnage approprié lors de la production de ses éléments livrables.
 
-Pour chaque **document requis**, le persona doit indiquer :
+Pour chaque **Document requis** le persona doit indiquer :
 
 * **O/N** : s’il a été reçu ;
 * **1-3** : la qualité du document reçu.
@@ -570,11 +570,11 @@ Pour chaque **document requis**, le persona doit indiquer :
 
 Pour chaque jalon, le personnage approprié est chargé de livrer les documents spécifiques et donc d’accomplir ses responsabilités pour un jalon donné.
 
-Pour chaque **livrable**, le persona doit indiquer :
+Pour chaque **Délivrés** le persona doit indiquer :
 
 * **O/N** : s’il est terminé.
 
-Les éléments livrables sont souvent utilisés comme **documents requis** pour le jalon actuel ou ultérieur.
+Les éléments livrables sont souvent utilisés comme **Documents requis** pour le jalon actuel ou un jalon ultérieur.
 
 ## Meilleures pratiques connexes {#related-best-practices}
 

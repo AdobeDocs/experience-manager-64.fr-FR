@@ -1,8 +1,8 @@
 ---
 title: Prise en main du reporting de processus
-seo-title: Prise en main du reporting de processus
+seo-title: Getting Started with Process Reporting
 description: Étapes à suivre pour commencer à utiliser les rapports de processus d’AEM Forms on JEE
-seo-description: Étapes à suivre pour commencer à utiliser les rapports de processus d’AEM Forms on JEE
+seo-description: The steps you need to follow to get started with AEM Forms on JEE Process Reporting
 uuid: 86ba17da-57e5-4e7a-a864-583d8c0f830e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,14 +11,14 @@ discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
 exl-id: 0af2e992-6670-4e31-9d26-ab74c5b9df8e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1716'
 ht-degree: 4%
 
 ---
 
-# Prise en main de la création de rapports de processus {#getting-started-with-process-reporting}
+# Prise en main du reporting de processus {#getting-started-with-process-reporting}
 
-La création de rapports de processus permet aux utilisateurs d’AEM Forms d’interroger des informations sur les processus AEM Forms actuellement définis dans la mise en oeuvre d’AEM Forms. Toutefois, les rapports de processus n’accèdent pas directement aux données à partir du référentiel AEM Forms. Les données sont d’abord publiées dans le référentiel Process Reporting sur une base planifiée (*par le service ProcessDataPublisher et ProcessDataStorage* s). Les rapports et requêtes des rapports de processus sont ensuite générés à partir des données des rapports de processus publiées dans le référentiel. Process Reporting est installé dans le cadre du module Forms Workflow.
+La création de rapports de processus permet aux utilisateurs d’AEM Forms d’interroger des informations sur les processus AEM Forms actuellement définis dans la mise en oeuvre d’AEM Forms. Toutefois, les rapports de processus n’accèdent pas directement aux données à partir du référentiel AEM Forms. Les données sont d’abord publiées dans le référentiel Process Reporting selon un calendrier (*par le service ProcessDataPublisher et ProcessDataStorage* s). Les rapports et requêtes des rapports de processus sont ensuite générés à partir des données des rapports de processus publiées dans le référentiel. Process Reporting est installé dans le cadre du module Forms Workflow.
 
 Cet article décrit les étapes à suivre pour activer la publication des données AEM Forms dans le référentiel Process Reporting. Ensuite, vous pourrez utiliser Process Reporting pour exécuter des rapports et des requêtes. L’article couvre également les options disponibles pour configurer les services Process Reporting.
 
@@ -34,7 +34,7 @@ Pour plus d’informations sur la purge des données de processus AEM Forms, voi
 
 >[!NOTE]
 >
->Pour obtenir des conseils et astuces sur l’utilitaire de purge, reportez-vous à l’article Adobe Developer Connection sur [Purge des processus et des tâches](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
+>Pour obtenir des conseils et astuces sur l’utilitaire de purge, reportez-vous à l’article Adobe Developer Connection sur [Purge des traitements et traitements](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
 
 ## Configuration des services Process Reporting {#configuring-process-reporting-services}
 
@@ -52,13 +52,13 @@ Effectuez les étapes suivantes pour modifier le planning de publication :
 >
 >Si vous exécutez l’implémentation d’AEM Forms sur une grappe, effectuez les étapes suivantes sur chaque noeud de la grappe.
 
-#### JBoss Application Server {#jboss-application-server}
+#### JBoss Application Server  {#jboss-application-server}
 
 1. Arrêtez l’instance du serveur AEM Forms.
-   * (Pour Windows) Ouvrez le fichier `[*JBoss root*]/bin/run.conf.bat` dans un éditeur.
-   * (Pour Linux, AIX et Solaris) Fichier `[*JBoss root*]/bin/run.conf.sh` dans un éditeur.
+   * (Pour Windows) Ouvrez le `[*JBoss root*]/bin/run.conf.bat` dans un éditeur.
+   * (Pour Linux, AIX et Solaris) `[*JBoss root*]/bin/run.conf.sh` dans un éditeur.
 
-1. Ajoutez l’argument JVM `-Dreporting.publisher.cron = <expression>.`
+1. Ajout de l’argument JVM `-Dreporting.publisher.cron = <expression>.`
 
    Exemple : L’expression cron suivante entraîne la création de rapports de processus à publier des données AEM Forms dans le référentiel de création de rapports de processus toutes les 5 heures :
 
@@ -71,15 +71,15 @@ Effectuez les étapes suivantes pour modifier le planning de publication :
 #### WebSphere Application Server {#websphere-application-server}
 
 1. Arrêtez l’instance du serveur AEM Forms.
-1. Connectez-vous à la console d’administration WebSphere. Dans l’arborescence de navigation, cliquez sur **Servers** > **Application servers**, puis, dans le volet de droite, cliquez sur le nom du serveur.
+1. Connectez-vous à la console d’administration WebSphere. Dans l’arborescence de navigation, cliquez sur **Serveurs** >  **Serveurs d’application** puis, dans le volet de droite, cliquez sur le nom du serveur.
 
 1. Sous Server Infrastructure, cliquez sur **Java and Process Management**> **Process Definition**.
 
 1. Sous Additional Properties, cliquez sur **Java Virtual Machine**.
 
-   Dans la zone Generic JVM arguments , ajoutez l’argument `-Dreporting.publisher.cron = <expression>.`
+   Dans la zone Generic JVM arguments , ajoutez l’argument . `-Dreporting.publisher.cron = <expression>.`
 
-   **Exemple** : L’expression cron suivante entraîne la création de rapports de processus à publier des données AEM Forms dans le référentiel de création de rapports de processus toutes les 5 heures :
+   **Exemple**: L’expression cron suivante entraîne la création de rapports de processus à publier des données AEM Forms dans le référentiel de création de rapports de processus toutes les 5 heures :
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
@@ -90,7 +90,7 @@ Effectuez les étapes suivantes pour modifier le planning de publication :
 #### WebLogic Application Server {#weblogic-application-server}
 
 1. Arrêtez l’instance du serveur AEM Forms.
-1. Connectez-vous à WebLogic Administration Console. L’adresse par défaut de WebLogic Administration Console est `https://[hostname]:[port]/console`.
+1. Connectez-vous à WebLogic Administration Console. L’adresse par défaut de WebLogic Administration Console est : `https://[hostname]:[port]/console`.
 
 1. Sous Change Center, cliquez sur **Lock &amp; Edit**.
 
@@ -98,9 +98,9 @@ Effectuez les étapes suivantes pour modifier le planning de publication :
 
 1. Dans l’écran suivant, cliquez sur les onglets **Configuration** > **Server Start**.
 
-1. Dans la zone Arguments , ajoutez l’argument JVM `-Dreporting.publisher.cron = <expression>`.
+1. Dans la zone Arguments , ajoutez l’argument JVM. `-Dreporting.publisher.cron = <expression>`.
 
-   **Exemple** : L’expression cron suivante entraîne la création de rapports de processus à publier des données AEM Forms dans le référentiel de création de rapports de processus toutes les 5 heures :
+   **Exemple**: L’expression cron suivante entraîne la création de rapports de processus à publier des données AEM Forms dans le référentiel de création de rapports de processus toutes les 5 heures :
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
@@ -116,12 +116,12 @@ Le service ProcessDataStorageProvider reçoit les données de processus du servi
 
 À chaque cycle de publication, les données sont enregistrées dans des sous-dossiers d’un dossier racine prédéfini.
 
-Vous pouvez utiliser la console d’administration pour configurer la racine (**default**) : `/content/reporting/pm`) emplacement et sous-dossier (**default** : `/yyyy/mm/dd/hh/mi/ss`) format de hiérarchie où les données de processus seraient stockées.
+Vous pouvez utiliser la console d’administration pour configurer la racine (**default**: `/content/reporting/pm`) emplacement et sous-dossier (**default**: `/yyyy/mm/dd/hh/mi/ss`) dans le format de hiérarchie où les données de processus seraient stockées.
 
-#### Pour configurer les emplacements du référentiel de création de rapports de processus {#to-configure-the-process-reporting-repository-locations}
+#### Pour configurer les emplacements du référentiel Process Reporting {#to-configure-the-process-reporting-repository-locations}
 
-1. Connectez-vous à **Administration Console** à l’aide des informations d’identification de l’administrateur. L’URL par défaut d’Administration Console est `https://[server]:[port]/adminui`
-1. Accédez à **Accueil** > **Services** > **Applications et services** > **Gestion des services** et ouvrez le service **ProcessDataStorageProvider**.
+1. Connectez-vous à **Console d’administration** avec les informations d’identification de l’administrateur. L’URL par défaut d’Administration Console est la suivante : `https://[server]:[port]/adminui`
+1. Accédez à **Accueil** >  **Services** >  **Applications et services** > **Gestion des services** et ouvrez le **ProcessDataStorageProvider** service.
 
    ![process-data-storage-service](assets/process-data-storage-service.png)
 
@@ -135,7 +135,7 @@ Vous pouvez utiliser la console d’administration pour configurer la racine (**
 
    Hiérarchie de dossiers à l’intérieur de laquelle les données de processus sont stockées en fonction de l’heure de création du processus.
 
-   `Default`:  `/yyyy/mm/dd/hh/mi/ss`
+   `Default`: `/yyyy/mm/dd/hh/mi/ss`
 
 1. Cliquez sur **Enregistrer**.
 
@@ -145,29 +145,29 @@ Le service ReportConfiguration est utilisé par Process Reporting pour configure
 
 #### Pour configurer le service ReportingConfiguration {#to-configure-the-reportingconfiguration-service}
 
-1. Connectez-vous à **Configuration Manager** à l’aide des informations d’identification d’administrateur CRX. L’URL par défaut de Configuration Manager est `https://[*server*]:[*port*]/lc/system/console/configMgr`
-1. Ouvrez le service **ReportingConfiguration** .
+1. Connectez-vous à **Configuration Manager** avec les informations d’identification de l’administrateur CRX. L’URL par défaut de Configuration Manager est la suivante : `https://[*server*]:[*port*]/lc/system/console/configMgr`
+1. Ouvrez le **ReportingConfiguration** service.
 1. **Nombre d’enregistrements**
 
    Lors de l’exécution d’une requête sur le référentiel, un résultat peut potentiellement contenir un grand nombre d’enregistrements. Si le jeu de résultats est volumineux, l’exécution de la requête peut consommer des ressources du serveur.
 
    Pour gérer les jeux de résultats volumineux, le service ReportConfiguration divise le traitement des requêtes en lots d’enregistrements. Cela réduit la charge du système.
 
-   `Default`:  `1000`
+   `Default`: `1000`
 
    **Chemin de stockage CRX**
 
    Emplacement CRX à l’intérieur duquel les données de processus doivent être stockées pour la création de rapports.
 
-   `Default`:  `/content/reporting/pm`
+   `Default`: `/content/reporting/pm`
 
    >[!NOTE]
    >
-   >Il s’agit du même emplacement que celui spécifié dans l’option de configuration ProcessDataStorage **Root Folder**.
+   >Il s’agit du même emplacement que celui spécifié dans l’option de configuration ProcessDataStorage . **Dossier racine**.
    >
    >Si vous mettez à jour l’option Root Folder dans la configuration ProcessDataStorage, vous devez mettre à jour l’emplacement CRX Storage Path dans le service ReportConfiguration.
 
-1. Cliquez sur **Enregistrer** et fermez **CQ Configuration Manager**.
+1. Cliquez sur **Enregistrer** et fermer **CQ Configuration Manager**.
 
 ### Service ProcessDataPublisher {#processdatapublisher-service}
 
@@ -175,11 +175,11 @@ Le service ProcessDataPublisher importe les données de processus de la base de 
 
 #### Pour configurer le service ProcessDataPublisher   {#to-configure-processdatapublisher-service-nbsp}
 
-1. Connectez-vous à **Administration Console** à l’aide des informations d’identification de l’administrateur.
+1. Connectez-vous à **Console d’administration** avec les informations d’identification de l’administrateur.
 
    L’URL par défaut est `https://[server]:port]/adminui/`.
 
-1. Accédez à **Accueil** > **Services** > **Applications et services** > **Gestion des services** et ouvrez le service **ProcessDataPublisher**.
+1. Accédez à **Accueil** >  **Services** >  **Applications et services** > **Gestion des services** et ouvrez le **ProcessDataPublisher** service.
 
 ![processdatapublisherservice-1](assets/processdatapublisherservice-1.png)
 
@@ -191,7 +191,7 @@ Activez la création de rapports de processus uniquement lorsque toutes les conf
 
 Vous pouvez également utiliser cette option pour désactiver la publication des données de processus lorsqu’elle n’est plus nécessaire.
 
-`Default`:  `Off`
+`Default`: `Off`
 
 **Intervalle de lot (sec)**
 
@@ -201,9 +201,9 @@ Cela permet de contrôler la taille des données que les processus de l’édite
 
 Par exemple, si l’éditeur s’exécute tous les jours, au lieu de traiter l’ensemble des données pendant un jour au cours d’une seule exécution, il divise par défaut le traitement en 24 lots d’une heure chacun.
 
-`Default`:  `3600`
+`Default`: `3600`
 
-`Unit`:  `Seconds`
+`Unit`: `Seconds`
 
 **Verrouiller le délai d’expiration (s)**
 
@@ -211,9 +211,9 @@ Le service d’éditeur acquiert un verrou lorsqu’il démarre le traitement de
 
 Si un service d’éditeur qui a acquis un verrou est inactif pendant le nombre de secondes défini par la valeur Délai d’expiration du verrou, son verrou est libéré afin que d’autres instances de service d’éditeur puissent continuer le traitement.
 
-`Default`:  `3600`
+`Default`: `3600`
 
-`Unit`:  `Seconds`
+`Unit`: `Seconds`
 
 **Publier les données à partir de**
 
@@ -223,11 +223,11 @@ Par défaut, le service ProcessDataPublisher importe toutes les données de la b
 
 En fonction de vos besoins de création de rapports, si vous prévoyez d’exécuter des rapports et des requêtes sur des données après une certaine date et heure, il est recommandé de spécifier la date et l’heure. Le service de publication publiera alors la date à partir de cette date.
 
-`Default`:  `01-01-1970 00:00:00`
+`Default`: `01-01-1970 00:00:00`
 
-`Format`:  `dd-MM-yyyy HH:mm:ss`
+`Format`: `dd-MM-yyyy HH:mm:ss`
 
-## Accès à l’interface utilisateur de Process Reporting {#accessing-the-process-reporting-user-interface}
+## Accès à l’interface utilisateur Process Reporting {#accessing-the-process-reporting-user-interface}
 
 L’interface utilisateur de Process Reporting est basée sur un navigateur.
 
@@ -237,7 +237,7 @@ Une fois que vous avez configuré Process Reporting, vous pouvez commencer à ut
 
 ### Connexion aux rapports de processus {#log-in-to-process-reporting}
 
-Lorsque vous accédez à l’URL Process Reporting (https://&lt;server>:&lt;port>/lc/pr), l’écran de connexion s’affiche.
+Lorsque vous accédez à l’URL Process Reporting (https://).&lt;server>:&lt;port>/lc/pr), l’écran de connexion s’affiche.
 
 Indiquez vos informations d’identification pour vous connecter au module Process Reporting.
 
@@ -249,44 +249,44 @@ Indiquez vos informations d’identification pour vous connecter au module Proce
 
 ![capture](assets/capture.png)
 
-Lorsque vous vous connectez à Process Reporting, l’écran **[!UICONTROL Home]** s’affiche.
+Lorsque vous vous connectez à Process Reporting, l’événement **[!UICONTROL Accueil]** s’affiche.
 
 ### Écran d’accueil des rapports de processus {#process-reporting-home-screen}
 
 ![process-reporting-home-screen](assets/process-reporting-home-screen.png)
 
-**Arborescence des rapports de processus :**  l’arborescence du côté gauche de l’écran d’accueil contient les éléments des modules de rapports de processus.
+**Arborescence des rapports de processus :** L’arborescence sur le côté gauche de l’écran d’accueil contient les éléments des modules Process Reporting.
 
 L’arborescence est composée des éléments de niveau supérieur suivants :
 
-**Rapports :** cet élément contient les rapports d’usine fournis avec Process Reporting.
+**Rapports :** Cet élément contient les rapports d’usine fournis avec Process Reporting.
 
-Pour plus d’informations sur les rapports prédéfinis, voir [Rapports prédéfinis dans Process Reporting](pre-defined-reports-in-process-reporting.md).
+Pour plus d’informations sur les rapports prédéfinis, voir [Rapports prédéfinis dans les rapports de processus](pre-defined-reports-in-process-reporting.md).
 
-**Requêtes ad hoc :** cet élément contient des options permettant d’effectuer une recherche basée sur des filtres pour les processus et les tâches.
+**Requêtes ad hoc :** Cet élément contient des options permettant d’effectuer une recherche basée sur des filtres pour les processus et les tâches.
 
 Pour plus d’informations sur les requêtes ad hoc, voir [Requêtes ad hoc dans les rapports de processus](adhoc-queries-in-process-reporting.md).
 
-**Personnalisé :** le noeud Personnalisé affiche les rapports personnalisés que vous créez.
+**Personnalisé :** Le noeud Personnalisé affiche les rapports personnalisés que vous créez.
 
-Pour connaître la procédure de création et d’affichage de rapports personnalisés, voir [Rapports personnalisés dans Process Reporting](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Pour connaître la procédure de création et d’affichage de rapports personnalisés, voir [Rapports personnalisés dans les rapports de processus](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
 
-**Barre de titre Process Reporting :**  la barre de titre Process Reporting contient des options génériques que vous pouvez utiliser lorsque vous travaillez dans l’interface utilisateur.
+**Barre de titre des rapports de processus :** La barre de titre Process Reporting contient des options génériques que vous pouvez utiliser lorsque vous travaillez dans l’interface utilisateur.
 
-**Titre des rapports de processus :** le titre des rapports de processus s’affiche dans le coin gauche de la barre de titre.
+**Process Reporting title :** Le titre Process Reporting s’affiche dans le coin gauche de la barre de titre.
 
 Cliquez sur le titre à tout moment pour revenir à l’écran d’accueil.
 
-**Dernière heure de mise à jour :**  les données de processus sont publiées de la base de données AEM Forms vers le référentiel Process Reporting selon un calendrier précis.
+**Dernière heure de mise à jour :** Les données de processus sont publiées de la base de données AEM Forms vers le référentiel Process Reporting selon un calendrier précis.
 
 L’heure de la dernière mise à jour affiche la date et l’heure auxquelles les mises à jour de données ont été transmises au référentiel Process Reporting.
 
-Pour plus d’informations sur le service de publication de données et sur la planification de ce service, voir [Planification de la publication des données de processus](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) dans l’article Prise en main des rapports de processus.
+Pour plus d’informations sur le service de publication de données et sur la planification de ce service, voir [Planification de la publication des données de processus](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) dans l’article Prise en main des rapports de processus .
 
-**Utilisateur Process Reporting :**  le nom d’utilisateur connecté s’affiche à droite de l’heure de la dernière mise à jour.
+**Utilisateur Process Reporting :** Le nom d’utilisateur connecté s’affiche à droite de l’heure de la dernière mise à jour.
 
-**Liste déroulante de la barre de titre des rapports de processus :**  la liste déroulante située dans le coin droit de la barre de titre des rapports de processus contient les options suivantes :
+**Liste déroulante de la barre de titre des rapports de processus :** La liste déroulante située dans le coin droit de la barre de titre Process Reporting contient les options suivantes :
 
-* **[!UICONTROL Synchronisation]** : Synchronisez le référentiel Process Reporting incorporé avec la base de données AEM Forms.
-* **[!UICONTROL Aide]** : Consultez la documentation d’aide sur les rapports de processus.
-* **[!UICONTROL Déconnexion]** : Déconnexion des rapports de processus
+* **[!UICONTROL Synchronisation]**: Synchronisez le référentiel Process Reporting incorporé avec la base de données AEM Forms.
+* **[!UICONTROL Aide]**: Consultez la documentation d’aide sur les rapports de processus.
+* **[!UICONTROL Déconnexion]**: Déconnexion des rapports de processus

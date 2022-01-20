@@ -1,8 +1,8 @@
 ---
 title: Listes de contrôle
-seo-title: Listes de contrôle
+seo-title: Checklists
 description: La liste de contrôle suivante présente certains des problèmes de test majeurs
-seo-description: La liste de contrôle suivante présente certains des problèmes de test majeurs
+seo-description: The following checklist highlights some of the main testing issues
 uuid: 0456c98c-779f-415d-9641-b17ac141698b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 exl-id: addb71f8-d042-4b14-8775-f15ab9fa5b6b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 38%
+source-wordcount: '157'
+ht-degree: 34%
 
 ---
 

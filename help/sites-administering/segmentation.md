@@ -1,8 +1,8 @@
 ---
 title: Configuration de la segmentation avec ContextHub
-seo-title: Configuration de la segmentation avec ContextHub
+seo-title: Configuring Segmentation with ContextHub
 description: Découvrez comment configurer la segmentation avec ContextHub.
-seo-description: Découvrez comment configurer la segmentation avec ContextHub.
+seo-description: Learn how to configure segmentation with Context Hub.
 uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,23 +12,22 @@ discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 83e73a5d-c6fa-426a-8476-78769ae7a8c1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1447'
 ht-degree: 97%
 
 ---
 
-# Configuration de la segmentation avec ContextHub {#configuring-segmentation-with-contexthub}
+# Configuration de la segmentation avec ContextHub{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
 >
 >Cette section décrit la configuration de la segmentation lors de l’utilisation du ContextHub. Si vous utilisez la fonctionnalité ClientContext, voir la documentation appropriée concernant la [configuration de la segmentation pour ClientContext](/help/sites-administering/campaign-segmentation.md).
 
-
 La segmentation est un élément clé de la création d’une campagne. Voir [Gestion des audiences](/help/sites-authoring/managing-audiences.md) pour plus d’informations sur le fonctionnement de la segmentation et les termes clés.
 
 En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies requis pour votre contenu ciblé.
 
-Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Personnalisation](/help/sites-authoring/personalization.md) du site web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
+Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la variable [Personnalisation](/help/sites-authoring/personalization.md) du site Web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
 AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs. Il vous permet également de vérifier les résultats de vos définitions de segment.
 
@@ -177,7 +176,7 @@ Commencez par placer un composant de conteneur OU dans le conteneur ET par défa
 
 À l’aide du composant Référence de script, l’évaluation d’une propriété de segment peut être déléguée à un script externe. Une fois le script correctement configuré, il peut être utilisé comme n’importe quel autre composant d’une condition de segment.
 
-#### Définition d’une référence de script  {#defining-a-script-to-reference}
+#### Définition d’une référence de script {#defining-a-script-to-reference}
 
 1. Ajoutez le fichier `contexthub.segment-engine.scripts` à la propriété clientlib.
 1. Implémentez une fonction qui renvoie une valeur. Par exemple :
@@ -225,7 +224,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Ajoutez le composant **Référence de script** à l’emplacement souhaité du segment.
 1. Ouvrez la boîte de dialogue de modification du composant **Référence de script**. S’il est [correctement configuré](/help/sites-administering/segmentation.md#defining-a-script-to-reference), le script doit être disponible dans le menu déroulant **Nom du script**.
 
-## Test de l’application d’un segment  {#testing-the-application-of-a-segment}
+## Test de l’application d’un segment {#testing-the-application-of-a-segment}
 
 Une fois le segment défini, les résultats potentiels peuvent être testés avec **[ContextHub](/help/sites-authoring/ch-previewing.md).**
 
@@ -262,6 +261,6 @@ Si vous avez configuré une activité et une expérience à l’aide du segment 
 
    ![chlimage_1-315](assets/chlimage_1-315.png)
 
-## Utilisation de votre segment  {#using-your-segment}
+## Utilisation de votre segment {#using-your-segment}
 
 Les segments sont utilisés afin d’orienter le contenu réel affiché pour une audience cible spécifique. Voir [Gestion des audiences](/help/sites-authoring/managing-audiences.md) pour plus d’informations sur les audiences et les segments et [Création de contenu ciblé](/help/sites-authoring/content-targeting-touch.md) pour plus d’informations sur l’utilisation des audiences et des segments afin de cibler du contenu.

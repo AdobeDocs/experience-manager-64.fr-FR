@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales sur le contenu proposé
-seo-title: Notions fondamentales sur le contenu proposé
+seo-title: Featured Content Essentials
 description: Utilisation du contenu des fonctionnalités
-seo-description: Utilisation du contenu des fonctionnalités
+seo-description: Working with feature content
 uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,12 +12,12 @@ discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 exl-id: 4805db0f-18d2-4bbc-a4d6-eaafa7a4c152
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 7%
+source-wordcount: '106'
+ht-degree: 8%
 
 ---
 
-# Notions fondamentales sur le contenu présenté {#featured-content-essentials}
+# Notions fondamentales sur le contenu proposé {#featured-content-essentials}
 
 Cette page fournit les informations essentielles pour utiliser le contenu présenté.
 
@@ -58,4 +58,4 @@ Contrairement à l’épinglage d’une publication en haut d’un forum, cette 
 
 ### Fonction Bibliothèque de fichiers {#file-library-function}
 
-Une structure de site de communauté qui comprend la fonction [Contenu proposé](functions.md#featured-content-function), comprend un composant `featured content` configuré.
+Une structure de site de communauté qui inclut [Fonction Contenu en vedette](functions.md#featured-content-function), inclut une `featured content` composant.

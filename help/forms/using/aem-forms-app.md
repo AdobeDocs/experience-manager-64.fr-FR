@@ -1,8 +1,8 @@
 ---
-title: Application AEM Forms
-seo-title: Application AEM Forms
+title: Application AEM Forms
+seo-title: AEM Forms app
 description: 'L’application AEM Forms permet aux agents de terrain d’utiliser les formulaires adaptatifs sur leurs appareils mobiles. '
-seo-description: 'L’application AEM Forms permet aux agents de terrain d’utiliser les formulaires adaptatifs sur leurs appareils mobiles. '
+seo-description: AEM Forms app enables your field workers to use adaptive forms on their mobile devices.
 uuid: fac976c8-b713-4492-b153-f567e7a11ceb
 contentOwner: sashanka
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 exl-id: 449b479a-f8b4-4534-af28-8eaed2d18210
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2499'
+source-wordcount: '2481'
 ht-degree: 77%
 
 ---
@@ -25,7 +25,7 @@ L’application AEM Forms permet de synchroniser des formulaires adaptatifs, des
 
 Le code source de l’application AEM Forms est accessible via la Distribution de logiciels. Le package de code source dans Distribution logicielle est disponible sous la forme : `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
-L’application AEM Forms est prise en charge sur les périphériques iOS, Android, Windows. Vous pouvez installer l’application AEM Forms pour Android à partir de Google Play, d’iOS à partir de l’App Store et de Windows à partir de la boutique Windows.
+L’application AEM Forms est prise en charge sur les périphériques iOS, Android, Windows. Vous pouvez installer l’application AEM Forms pour Android à partir de Google Play, iOS à partir d’App Store et Windows à partir de la boutique Windows.
 
 [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
 
@@ -61,15 +61,15 @@ Pour synchroniser votre formulaire dans l’application AEM Forms :
 1. Dans l’instance d’auteur, sélectionnez un formulaire, puis cliquez sur **[!UICONTROL Afficher les propriétés]**. 
 
 1. Dans la page des propriétés, cliquez sur **[!UICONTROL Avancé]**.
-1. Sous Avancé, activez l’option : **[!UICONTROL Synchroniser avec l’application AEM Forms]** et appuyez sur **[!UICONTROL Enregistrer]**.
+1. Sous Avancé, activez l’option : **[!UICONTROL Synchronisation avec l’application AEM Forms]** et appuyez sur **[!UICONTROL Enregistrer]**.
 
 Lorsque le formulaire est publié, l’application se synchronise avec le serveur et récupère le formulaire. Pour synchroniser plusieurs formulaires, dans l’instance d’auteur, sélectionnez plusieurs formulaires dans le gestionnaire de formulaires et appuyez sur **[!UICONTROL Synchroniser avec l’application AEM Forms]**.
 
-## Prise en charge des périphériques mobiles  {#mobile-device-support}
+## Prise en charge des périphériques mobiles {#mobile-device-support}
 
 Consultez [Application AEM Forms (précédemment connue sous le nom de Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
 
-## Fonctions clés de l’application AEM Forms  {#key-features-of-aem-forms-app}
+## Fonctions clés de l’application AEM Forms {#key-features-of-aem-forms-app}
 
 ### Application AEM Forms avec les serveurs AEM Forms {#aem-forms-app-with-aem-forms-servers}
 
@@ -91,11 +91,11 @@ Avec le serveur AEM Forms sans AEM Forms workflow, un formulaire activé pour sy
 
    Consultez la section [Enregistrer des formulaires en tant que modèles](/help/forms/using/save-forms-and-start-points-as-templates.md).
 
-### Utilisation des tâches et des formulaires  {#working-with-tasks-and-forms}
+### Utilisation des tâches et des formulaires {#working-with-tasks-and-forms}
 
 Vous pouvez synchroniser votre application avec le serveur AEM Forms Workflow et travailler avec des tâches et des formulaires sur votre périphérique mobile.
 
-Une tâche sur le périphérique mobile contient un formulaire adaptatif, un formulaire HTML5 ou un jeu de formulaires et peut également contenir des pièces jointes et [URL de résumé](/help/forms/using/getting-task-variables-summary-url.md). Par défaut, les tâches qui vous sont affectées sont placées dans le dossier **[!UICONTROL Tâches]**. Lorsque vous travaillez sur une tâche, vous pouvez la modifier et enregistrer un brouillon de la tâche sur le serveur AEM Forms.
+Une tâche sur le périphérique mobile contient un formulaire adaptatif, un HTML5 ou un jeu de formulaires et peut également contenir des pièces jointes et des [URL de résumé](/help/forms/using/getting-task-variables-summary-url.md). Par défaut, les tâches qui vous sont affectées sont placées dans la variable **[!UICONTROL Tâches]** dossier. Lorsque vous travaillez sur une tâche, vous pouvez la modifier et enregistrer un brouillon de la tâche sur le serveur AEM Forms.
 
 Un formulaire sur le périphérique mobile peut être un formulaire adaptatif ou un formulaire mobile. Les formulaires activés pour synchronisation dans l’application de formulaires sont disponibles dans le dossier Formulaires. Vous pouvez synchroniser des formulaires activés dans le serveur AEM Forms sans AEM Forms Workflow (AEM Forms on OSGi).
 
@@ -110,13 +110,13 @@ Vous pouvez travailler sur votre périphérique mobile en mode hors connexion. V
 
 Pour plus d’informations, consultez la section [Utilisation en mode hors connexion](/help/forms/using/work-offline-mode.md).
 
-### Ajout d’annotations  {#adding-annotations}
+### Ajout d’annotations {#adding-annotations}
 
 Vous pouvez ajouter les pièces jointes suivantes à un formulaire sur votre périphérique mobile
 
-* **Notes** : utilisez la fonction Notes pour ajouter une saisie tactile à main levée ou une note de texte dans votre formulaire. Pour plus d’informations, consultez la section [Ajout d’une note](/help/forms/using/add-attachments.md#adding-a-note).
+* **Remarques**- Vous pouvez utiliser la fonction Notes pour ajouter une saisie tactile à main levée ou une note de texte dans votre formulaire. Pour plus d’informations, consultez la section [Ajout d’une note](/help/forms/using/add-attachments.md#adding-a-note).
 
-* **Image** : l’application AEM Forms comprend une fonctionnalité qui utilise l’appareil photo ou la galerie de votre appareil mobile. En utilisant la pièce jointe de photo, vous pouvez ajouter une photo avec le formulaire associé. Pour plus d’informations, consultez la section [Ajout d’une photographie](/help/forms/using/add-attachments.md#adding-a-photograph).
+* **Image**- L’application AEM Forms comprend une fonctionnalité qui utilise la fonctionnalité d’appareil photo ou la galerie de votre appareil mobile. En utilisant la pièce jointe de photo, vous pouvez ajouter une photo avec le formulaire associé. Pour plus d’informations, consultez la section [Ajout d’une photographie](/help/forms/using/add-attachments.md#adding-a-photograph).
 
 ### Enregistrement auto {#autosave}
 
@@ -124,15 +124,15 @@ Lorsqu’un utilisateur saisit des données dans l’application AEM Forms, la f
 
 Référez-vous à la section [Utilisation de l’enregistrement automatique dans l’application AEM Forms](/help/forms/using/autosave-data-app.md).
 
-## Différences entre les fonctionnalités de la boîte de réception AEM et l’application AEM Forms  {#differences-between-aem-inbox-and-aem-forms-app-features}
+## Différences entre les fonctionnalités de la boîte de réception AEM et l’application AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Deux des méthodes principales pour lancer un workflow centré sur Forms utilisent [AEM Boîte de réception](/help/forms/using/manage-applications-inbox.md) et l’application AEM Forms. Les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms sont cependant différentes. AEM boîte de réception fonctionne uniquement avec les [workflows centrés sur Forms](/help/forms/using/aem-forms-workflow.md) tandis que l’application AEM Forms fonctionne avec les workflows centrés sur Forms et la gestion des processus. Pour plus d’informations sur les différences entre les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms, voir [Actions et fonctionnalités des processus d’AEM basés sur l’utilisation de Forms on OSGi et des processus AEM Forms JEE](/help/forms/using/capabilities-osgi-jee-workflows.md).
+Deux des méthodes principales pour lancer un workflow centré sur Forms sont les suivantes : [Boîte de réception AEM](/help/forms/using/manage-applications-inbox.md) et l’application AEM Forms. Les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms sont cependant différentes. AEM boîte de réception fonctionne uniquement avec [Workflows basés sur l’utilisation de Forms](/help/forms/using/aem-forms-workflow.md) pendant que l’application AEM Forms fonctionne avec les workflows centrés sur Forms ainsi qu’avec la gestion des processus. Pour plus d’informations sur les différences entre les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms, voir [Actions et fonctionnalités des processus d’AEM basés sur l’utilisation de Forms sur OSGi et AEM Forms JEE](/help/forms/using/capabilities-osgi-jee-workflows.md).
 
 ## Formulaires pris en charge {#supported-forms}
 
 Types de formulaire pris en charge par l’application AEM Forms :
 
-### Formulaire adaptatif  {#adaptive-form}
+### Formulaire adaptatif {#adaptive-form}
 
 Un formulaire adaptatif qui s’adapte de façon dynamique aux entrées utilisateur est pris en charge par l’application AEM Forms. Les formulaires adaptatifs chargés en différé sont également pris en charge.
 
@@ -148,13 +148,13 @@ Avec les jeux de formulaires, plusieurs formulaires associés à un service ou p
 >
 >Nécessite AEM Forms Workflow (AEM Forms sous JEE).
 
-## Fonctionnement de l’application AEM Forms  {#how-aem-forms-app-works}
+## Fonctionnement de l’application AEM Forms {#how-aem-forms-app-works}
 
 L’application AEM Forms fournit une solution mobile permettant aux agents de terrain de travailler sur les formulaires qui leur sont affectés. L’application met en cache les données complètes à partir du serveur et apporte une expérience utilisateur supérieure en enregistrant le travail en local. Les données du disque sont envoyées au serveur via les mises à jour régulières de synchronisation.
 
 L’application AEM Forms est une application PhoneGap 5.0 dans laquelle le modèle Backbone est utilisé efficacement pour présenter des données stockées dans les modèles par le biais de vues. Toutes les opérations natives sont exécutées via des modules externes PhoneGap.
 
-## Personnaliser, créer et distribuer l’application AEM Forms  {#customize-build-distribute}
+## Personnaliser, créer et distribuer l’application AEM Forms {#customize-build-distribute}
 
 >[!NOTE]
 >
@@ -168,9 +168,9 @@ Vous pouvez personnaliser votre application aux fins suivantes :
 
 **Identité graphique** : modifiez l’icône de l’application, le nom de l’application, les images de lancement et les pages dans l’application AEM Forms. Vous pouvez également modifier le texte pour adapter l’application à une région particulière. Pour plus d’informations sur l’identité graphique de l’application AEM Forms, référez-vous à [ Personnalisation de l’identité graphique](/help/forms/using/branding-customization.md).
 
-**Thème** : Modifiez les styles de couleur, police et espacement dans l’interface utilisateur de l’application AEM Forms. Pour plus d’informations, consultez [Personnalisation du thème](/help/forms/using/theme-customization.md).
+**Thème**: Modifiez les styles de couleur, police et espacement dans l’interface utilisateur de l’application AEM Forms. Pour plus d’informations, consultez [Personnalisation du thème](/help/forms/using/theme-customization.md).
 
-**Gestes** : Modifiez les gestes, tels que le glissement vers la droite ou vers la gauche, dans l’interface utilisateur de l’application AEM Forms. Pour plus d’informations, consultez [Personnalisation des gestes](/help/forms/using/gesture-customization.md).
+**Gestes**: Modifiez les gestes, tels que le glissement vers la droite ou vers la gauche, dans l’interface utilisateur de l’application AEM Forms. Pour plus d’informations, consultez [Personnalisation des gestes](/help/forms/using/gesture-customization.md).
 
 Pour plus d’informations sur la configuration d’un projet d’application AEM Forms à des fins de personnalisation, consultez :
 
@@ -181,7 +181,7 @@ Pour plus d’informations sur la configuration d’un projet d’application AE
 
 ### Créer et distribuer {#build-and-distribute}
 
-Le code source de l’application AEM Forms peut être extrait à partir de la balise `adobe-lc-mobileworkspace-src.zip` disponible dans le package source de l’application AEM Forms sur la distribution logicielle.
+Le code source de l’application AEM Forms peut être extrait du `adobe-lc-mobileworkspace-src.zip` qui est disponible dans le cadre du package source de l’application AEM Forms sur la distribution logicielle.
 
 Pour obtenir le code source de l’application AEM Forms, procédez comme suit :
 
@@ -189,12 +189,12 @@ Pour obtenir le code source de l’application AEM Forms, procédez comme suit�
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
-   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Téléchargements de recherche]** pour filtrer les résultats.
-1. Appuyez sur le nom du module approprié à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur (EULA)]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser la variable **[!UICONTROL Recherche de téléchargements]** pour filtrer les résultats.
+1. Appuyez sur le nom du package correspondant à votre système d’exploitation, puis sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur]**, puis appuyez sur **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
-1. Pour télécharger le package, ouvrez `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` dans votre navigateur.
+1. Pour télécharger le module, ouvrez `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` dans votre navigateur.
 
    Le package source est téléchargé sur votre périphérique.
 
@@ -206,13 +206,13 @@ Pour plus d’informations sur la manière de signer l’application AEM Forms a
 
 **Pour Android** :
 
-Pour plus d’informations sur la création d’une application Android (.apk), voir [Configuration du projet Eclipse et création de l’application Android](/help/forms/using/setup-eclipse-project-build-installer.md).
+Pour plus d’informations sur la création d’une application Android (.apk), reportez-vous à la section [Configuration du projet Eclipse et création de l’application Android](/help/forms/using/setup-eclipse-project-build-installer.md).
 
 Pour plus d’informations sur la manière de signer l’application AEM Forms, voir [Signature de vos applications](https://developer.android.com/tools/publishing/app-signing.html).
 
 **Pour Windows** :
 
-Pour plus d’informations sur la création d’une application Windows (.appx), voir [Configuration du projet Visual Studio et création de l’application Windows](/help/forms/using/setup-visual-studio-project-build-installer.md).
+Pour plus d’informations sur la création d’une application Windows (.appx), reportez-vous à la section [Configuration du projet Visual Studio et création de l’application Windows](/help/forms/using/setup-visual-studio-project-build-installer.md).
 
 Pour plus d’informations sur les modalités de distribution de l’application via MDM, consultez la page [Distribution de l’application AEM Forms](/help/forms/using/distribute-mobile-workspace-app.md). La distribution de l’application via MDM s’applique uniquement à iOS et Android.
 
@@ -222,6 +222,6 @@ Si vous effectuez une mise à niveau vers la dernière version de l’applicatio
 
 * **Si vous avez installé une version antérieure de l’application à partir du Play Store sur Android,** vous pouvez mettre à niveau l’application directement du Play Store.
 
-* **Si une version antérieure de l’application est créée et installée à l’aide du code source (applicable pour iOS et Android)** :
+* **Si une version antérieure de l’application est créée et installée à l’aide du code source (applicable pour iOS et Android)**:
 
    Avant d’installer la nouvelle application, synchronisez toutes vos données avec le serveur AEM Forms. Une fois les données synchronisées, désinstallez la version antérieure de l’application et installez la nouvelle application.

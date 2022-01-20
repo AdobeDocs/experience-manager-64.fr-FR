@@ -1,19 +1,19 @@
 ---
 title: Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
-seo-title: Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
+seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Découvrez comment utiliser l’outil de détection des motifs pour évaluer la complexité de votre mise à niveau.
-seo-description: Découvrez comment utiliser l’outil de détection des motifs pour évaluer la complexité de votre mise à niveau.
+seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 4fcfdb16-3183-442a-aa5b-5f9c4fb7e091
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
-feature: Mise à niveau
+feature: Upgrading
 exl-id: 375e202c-21d4-41f1-a2d5-592ac95c8f25
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '500'
 ht-degree: 93%
 
 ---
@@ -55,7 +55,7 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
 
 * **Via une interface JSON standard ou une interface en mode texte réactive**
 
-* **Via une interface** de lignes JSON réactive, qui génère un document JSON distinct dans chaque ligne.
+* **Via une interface de lignes JSON réactive**, qui génère un document JSON distinct dans chaque ligne.
 
 Vous trouverez, ci-dessous, une description détaillée de ces deux méthodes :
 
@@ -68,7 +68,7 @@ Le résultat est actuellement disponible sous 2 URL :
 1. Interface en mode texte brut
 1. Interface JSON
 
-## Gestion de l’interface en mode texte brut  {#handling-the-plain-text-interface}
+## Gestion de l’interface en mode texte brut {#handling-the-plain-text-interface}
 
 Les informations contenues dans la sortie se présentent sous la forme d’une série d’entrées d’événement. Il existe deux canaux : un pour la publication des infractions et un autre pour la publication de la progression.
 
@@ -98,7 +98,7 @@ Ce qui donne le résultat suivant :
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Gestion de l’interface JSON  {#handling-the-json-interface}
+## Gestion de l’interface JSON {#handling-the-json-interface}
 
 De même, JSON pourra être traité à l’aide de l’[outil jq](https://stedolan.github.io/jq/) dès qu’il sera publié.
 

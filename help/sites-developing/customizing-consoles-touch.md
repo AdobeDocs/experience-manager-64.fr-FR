@@ -1,8 +1,8 @@
 ---
 title: Personnalisation des consoles
-seo-title: Personnalisation des consoles
+seo-title: Customizing the Consoles
 description: AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles de votre instance de création.
-seo-description: AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles de votre instance de création.
+seo-description: AEM provides various mechanisms to enable you to customize the consoles of your authoring instance
 uuid: f10cea87-ef8a-468e-94ca-89a1017dcf44
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 exl-id: 31bced35-4845-40d1-9bfd-5c75d54e1a83
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 79%
+source-wordcount: '684'
+ht-degree: 78%
 
 ---
 
@@ -27,7 +27,7 @@ AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les cons
 
 * Clientlibs
 
-    Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, elle peut contenir le code requis pour votre composant personnalisé.
+    Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, il peut contenir le code requis pour votre composant personnalisé.
 
 * Recouvrements
 
@@ -44,8 +44,7 @@ Ils peuvent être utilisés de différentes manières pour étendre les consoles
 >* [Granite](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >
->
-Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) – [Personnalisation de l’interface utilisateur pour AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+>Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) – [Personnalisation de l’interface utilisateur pour AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >
@@ -55,16 +54,14 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
-   >
-   >
-1. Apportez les modifications désirées dans `/apps`
+>1. Recréez l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
+>
+>1. Apportez les modifications désirées dans `/apps`
 
 >
 
 
-
-Par exemple, les emplacements suivants dans la structure `/libs` peuvent être superposés :
+Par exemple, les emplacements suivants dans la variable `/libs` peut être superposée :
 
 * Consoles (toutes les consoles basées sur les pages de l’IU Granite), par exemple :
 
@@ -294,7 +291,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   En utilisant les propriétés sur ce noeud, vous pouvez définir la balise `groups` autorisée à exécuter l’action spécifique. par exemple, `administrators`
+   À l’aide des propriétés sur ce noeud, vous pouvez définir la variable `groups` autorisé à effectuer l’action spécifique ; par exemple, `administrators`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -367,7 +364,7 @@ You can restrict access to a navigation option using ACLs:
 
 >[!NOTE]
 >
->Cette fonctionnalité est optimisée pour les colonnes de champs de texte ; pour les autres types de données, il est possible de superposer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` dans `/apps`.
+>Cette fonctionnalité est optimisée pour les colonnes de champs de texte ; pour d’autres types de données, il est possible de superposer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -392,7 +389,7 @@ Pour personnaliser les colonnes en mode Liste :
 
 1. Si vous le souhaitez :
 
-   * Si vous souhaitez ajouter des données supplémentaires, vous devez écrire une balise ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` avec une balise
+   * Si vous souhaitez ajouter des données supplémentaires, vous devez écrire une ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` avec un
 
       `pageInfoProviderType` property.
    Par exemple, voir la classe/le lot (tiré de GitHub) ci-dessous.

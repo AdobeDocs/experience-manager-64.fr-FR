@@ -1,18 +1,18 @@
 ---
 title: Incorporation d’un formulaire adaptatif ou d’une communication interactive dans une page des sites AEM
-seo-title: Incorporation d’un formulaire adaptatif ou d’une communication interactive dans une page des sites AEM
+seo-title: Embed an adaptive form or interactive communication in AEM sites page
 description: Vous pouvez incorporer des formulaires adaptatifs dans des pages de sites AEM. Les utilisateurs peuvent remplir et envoyer des formulaires sans quitter les pages du site.
-seo-description: Vous pouvez incorporer des formulaires adaptatifs dans des pages de sites AEM. Les utilisateurs peuvent remplir et envoyer des formulaires sans quitter les pages du site.
+seo-description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications, author
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: ba5d21a4-231c-4e1e-b172-4d700cb9696e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1083'
 ht-degree: 83%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 83%
 
 AEM Forms permet aux développeurs de formulaires d’incorporer facilement des formulaires adaptatifs et des communications interactives dans une page de sites AEM ou une page Web hébergée en dehors d’AEM. Le formulaire adaptatif et la communication interactive incorporés fonctionnent parfaitement et les utilisateurs peuvent les remplir et les envoyer sans quitter la page. Cela permet à l’utilisateur de rester dans le contexte des autres éléments de la page Web et d’interagir simultanément avec le formulaire ou la communication interactive.
 
-Pour plus d’informations sur l’incorporation d’un formulaire adaptatif dans une page Web externe, voir [Incorporation d’un formulaire adaptatif dans une page Web externe](/help/forms/using/embed-adaptive-form-external-web-page.md).
+Pour plus d’informations sur l’incorporation d’un formulaire adaptatif dans une page web externe, voir [Incorporer le formulaire adaptatif dans une page web externe](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
 Sur la page AEM Sites, vous pouvez ajouter un formulaire adaptatif ou une communication interactive à l’aide des éléments suivants :
 
@@ -54,9 +54,9 @@ Pour incorporer un formulaire adaptatif ou une communication interactive à l’
 1. Appuyez sur le composant Conteneur d’AEM Forms sur la page de site, puis appuyez sur ![settings_icon](assets/settings_icon.png) dans la barre d’action. La boîte de dialogue **[!UICONTROL Modifier le conteneur d’AEM Forms]** s’affiche.
 1. Dans la boîte de dialogue Modifier le conteneur d’AEM Forms, précisez ce qui suit.
 
-   * **Type d’actif :** sélectionnez le type d’actif à incorporer. Vous pouvez choisir entre formulaire adaptatif et communication interactive
-   * **Chemin d’accès** à la ressource : Recherchez et sélectionnez le formulaire adaptatif ou la communication interactive à incorporer. Il est prérempli si vous le faites glisser à partir du navigateur de ressources.
-   * (Formulaire adaptatif uniquement) **Publier l’envoi** : Sélectionnez l’action à déclencher lors de l’envoi du formulaire. Vous pouvez choisir d’afficher un message de remerciement ou une page de remerciement.
+   * **Type de ressource :** sélectionnez le type de ressource à incorporer. Vous pouvez choisir entre formulaire adaptatif et communication interactive
+   * **Chemin de la ressource**: Recherchez et sélectionnez le formulaire adaptatif ou la communication interactive à incorporer. Il est prérempli si vous le faites glisser à partir du navigateur de ressources.
+   * (Formulaire adaptatif uniquement) **Envoi de publication**: Sélectionnez l’action à déclencher lors de l’envoi du formulaire. Vous pouvez choisir d’afficher un message de remerciement ou une page de remerciement.
 
       * **Message de remerciement** : rédigez un message à l’aide de l’éditeur de texte enrichi à afficher après l’envoi du formulaire. Cette option n’est disponible que lorsque vous choisissez d’afficher un message de remerciement.
       * **Page de remerciement** : recherchez et sélectionnez la page à afficher après l’envoi du formulaire. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.

@@ -1,8 +1,8 @@
 ---
 title: Application de bureau AEM pour AEM Forms
-seo-title: Application de bureau AEM pour AEM Forms
+seo-title: AEM desktop app for AEM Forms
 description: L’appli de bureau AEM vous permet de mapper le référentiel Adobe Experience Manager (AEM) Assets et les fichiers binaires AEM Forms à un répertoire réseau de votre système. En savoir plus sur les ressources prises en charge dans l’appli de bureau AEM et sur l’activation d’AEM Forms pour l’appli de bureau AEM.
-seo-description: L’appli de bureau AEM vous permet de mapper le référentiel Adobe Experience Manager (AEM) Assets et les fichiers binaires AEM Forms à un répertoire réseau de votre système. En savoir plus sur les ressources prises en charge dans l’appli de bureau AEM et sur l’activation d’AEM Forms pour l’appli de bureau AEM.
+seo-description: AEM desktop app lets you map the Adobe Experience Manager (AEM) Assets repository and AEM Forms binary files to a network directory on your system. Learn more about the assets supported in AEM desktop app and how to enable AEM Forms for AEM desktop app.
 uuid: 99e0f2fb-8623-45bb-8e2e-5c5d6f482366
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -13,8 +13,8 @@ role: Admin
 exl-id: 26cd0851-cadf-4a8f-b3bf-59f77671f584
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 48%
+source-wordcount: '458'
+ht-degree: 53%
 
 ---
 
@@ -37,10 +37,10 @@ Vous pouvez utiliser l’application pour synchroniser les fichiers binaires des
 L’appli de bureau AEM utilise le protocole WebDAV sous Microsoft Windows et SMB1 sous Mac OS X pour se connecter à un serveur AEM Forms. Le serveur AEM Forms n’est pas prêt à l’emploi pour synchroniser les fichiers binaires et autres ressources avec un client WebDAV ou SMB. Effectuez les étapes suivantes pour activer AEM Forms pour l’appli de bureau AEM :
 
 1. Connectez-vous à AEM Forms en tant qu’administrateur.
-1. Dans l’instance d’auteur, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Outils]** ![marteau](assets/hammer.png) **[!UICONTROL Déploiement > Opérations > Console web]**. La console web s’ouvre dans une nouvelle fenêtre.
+1. Dans l’instance d’auteur, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Outils]** ![marteau](assets/hammer.png) **[!UICONTROL > Déploiement > Opérations > Console web]**. La console web s’ouvre dans une nouvelle fenêtre.
 1. Dans la fenêtre de la console Web, recherchez et ouvrez l’option **[!UICONTROL Configuration du module complémentaire Forms Manager]**.
 1. Dans la boîte de dialogue Configuration du module complémentaire Forms Manager, désélectionnez la case à cocher **[!UICONTROL Synchroniser les ressources de façon asynchrone]**, puis cliquez sur **[!UICONTROL Enregistrer]**.
 1. Redémarrez le serveur AEM Forms. Après le redémarrage, le serveur AEM Forms est activé pour accepter et partager du contenu avec l’appli de bureau AEM.
 1. Ouvrez l’application et connectez-vous au serveur AEM Forms.
 
-   Une fois la connexion établie, l’application remplit les dossiers `content/dam` et `content/dam/formsanddocuments`. En plus de déplacer des fichiers des dossiers ci-dessus vers des dossiers locaux et vice versa, vous pouvez utiliser l’application pour déplacer le contenu entre des dossiers remplis automatiquement.
+   Une fois la connexion établie, l’application renseigne la variable `content/dam` et `content/dam/formsanddocuments` dossiers. En plus de déplacer des fichiers des dossiers ci-dessus vers des dossiers locaux et vice versa, vous pouvez utiliser l’application pour déplacer le contenu entre des dossiers remplis automatiquement.

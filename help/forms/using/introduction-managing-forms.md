@@ -1,8 +1,8 @@
 ---
 title: Présentation de la gestion des formulaires
-seo-title: Présentation de la gestion des formulaires
+seo-title: Introduction to managing forms
 description: AEM Forms met à la disposition des utilisateurs des outils destinés à la gestion des formulaires adaptatifs et des ressources connexes. Cet article vous présente les principales fonctionnalités de gestion des formulaires, ainsi que les éléments de l’interface utilisateur.
-seo-description: AEM Forms met à la disposition des utilisateurs des outils destinés à la gestion des formulaires adaptatifs et des ressources connexes. Cet article vous présente les principales fonctionnalités de gestion des formulaires, ainsi que les éléments de l’interface utilisateur.
+seo-description: AEM Forms provides tools to manage Adaptive Forms and related assets. This article introduces you to the key forms management capabilities and user interface elements.
 uuid: 8a9fe83a-e9dc-410e-9bae-eca936c6eb8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 6f9cb26a-ac7f-4218-827f-9d4d55b859b4
 exl-id: 08686ad6-85cc-4de5-86d8-05d55acec418
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1576'
 ht-degree: 80%
 
 ---
@@ -30,7 +30,7 @@ sur un serveur de portail pour les utilisateurs finaux. Vous pouvez utiliser l�
 
 ## Accéder aux composants AEM Forms {#access-aem-forms-components}
 
-Outre des options permettant de créer des formulaires, des documents et des ressources associées, AEM fournit des options qui permettent de créer des sites, des ressources, de gérer une instance AEM, etc. Vous pouvez cliquer sur le logo du Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) pour accéder à tous les outils disponibles. Outre des liens donnant accès aux consoles d’autres composants, il contient également des liens pour AEM Forms. Pour accéder à AEM Forms, cliquez sur le **logo du Experience Manager** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **navigation** ![boussole](assets/compass.png) > **Forms**. Les liens des consoles suivantes sont affichés :
+Outre des options permettant de créer des formulaires, des documents et des ressources associées, AEM fournit des options qui permettent de créer des sites, des ressources, de gérer une instance AEM, etc. Vous pouvez cliquer sur le bouton ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Logo du Experience Manager pour accéder à tous les outils disponibles. Outre des liens donnant accès aux consoles d’autres composants, il contient également des liens pour AEM Forms. Pour accéder à AEM Forms, cliquez sur le **Logo du Experience Manager** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **navigation** ![boussole](assets/compass.png) > **Forms**. Les liens des consoles suivantes sont affichés :
 
 * Formulaires et documents
 * Thèmes
@@ -46,7 +46,7 @@ Formulaires et documents fournit des options permettant de créer une communicat
 
 Le bouton de création est le point de départ du processus de création de chargement d’une ressource AEM Forms. Il vous offre les options de création suivantes :
 
-* **Communication interactive** : Une communication interactive est une correspondance, une instruction ou un document numérique HTML personnalisé, interactif et compatible avec les appareils. Réactives par nature, les communications interactives modifient automatiquement leur mise en forme et leur conception en fonction du périphérique et des paramètres de l’utilisateur. Pour en savoir plus, consultez la section [Aperçu des communications interactives](/help/forms/using/interactive-communications-overview.md).
+* **Communication interactive**: Une communication interactive est une correspondance, une instruction ou un document numérique, basé sur un HTML personnalisé, interactif et compatible avec les appareils. Réactives par nature, les communications interactives modifient automatiquement leur mise en forme et leur conception en fonction du périphérique et des paramètres de l’utilisateur. Pour en savoir plus, consultez la section [Aperçu des communications interactives](/help/forms/using/interactive-communications-overview.md).
 
 * **Formulaire adaptatif :** un formulaire adaptatif est un formulaire engageant et réactif. Vous pouvez créer un formulaire adaptatif pour l’adapter de manière dynamique aux entrées de l’utilisateur en ajoutant ou en supprimant des sections de formulaire en fonction de la réponse de l’utilisateur, de l’appareil ou de l’environnement de travail. L’article [Introduction à la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md) fournit plus d’informations sur les formulaires adaptatifs.
 
@@ -61,7 +61,7 @@ Le bouton de création est le point de départ du processus de création de char
 
 ![dossiers](assets/folders.png)
 
-**A.** Dossier général  **B.** Dossier du Forms Workflow
+**A.** Dossier général **B.** dossier Forms Workflow
 
 Le panneau Formulaires et document fournit également des options pour effectuer les actions suivantes :
 
@@ -91,30 +91,30 @@ En règle générale, les utilisateurs professionnels n’ont pas besoin de conn
 
 Pour plus d’informations sur la création et l’utilisation de dictionnaires de données, voir l’article [Créer un dictionnaire de données](/help/forms/using/data-dictionary.md).
 
-## Accès aux configurations AEM Forms  {#accessing-aem-forms-configurations}
+## Accès aux configurations AEM Forms {#accessing-aem-forms-configurations}
 
-Le panneau d’outils AEM contient des outils pour divers composants. Pour accéder aux outils spécifiques à AEM Forms, cliquez sur le **logo du Experience Manager** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **outils** ![marteau](assets/hammer.png) > **Forms**. Les outils affichés permettent d’effectuer les opérations suivantes :
+Le panneau d’outils AEM contient des outils pour divers composants. Pour accéder aux outils spécifiques à AEM Forms, cliquez sur le **Logo du Experience Manager** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **outils** ![marteau](assets/hammer.png) > **Forms**. Les outils affichés permettent d’effectuer les opérations suivantes :
 
 * **Configurer le dossier de contrôle :** un administrateur peut configurer un dossier réseau, appelé dossier de contrôle, de sorte que lorsqu’un utilisateur y place un fichier (par exemple un fichier PDF), une opération pré-configurée est lancée et manipule le fichier. <!-- Fix broken link For detailed information, see Create and Configure a watched folder. -->
 
-* **Configurer le service hors ligne de l’application Forms :** le service hors ligne de l’application AEM Forms met en cache les chemins ou les URL des ressources utilisées dans un formulaire. La mise en cache des chemins ou des URL des ressources utilisées dans un formulaire améliore les performances côté serveur. Pour configurer le composant hors ligne côté serveur de l’application AEM Forms, voir [Utilisation en mode hors ligne](/help/forms/using/work-offline-mode.md).
+* **Configuration du service hors ligne de l’application Forms :** Le service hors ligne de l’application AEM Forms met en cache les chemins ou URL des ressources utilisées dans un formulaire. La mise en cache des chemins ou des URL des ressources utilisées dans un formulaire améliore les performances côté serveur. Pour configurer le composant hors ligne côté serveur de l’application AEM Forms, voir [Utilisation en mode hors ligne](/help/forms/using/work-offline-mode.md).
 
 ![aem-forms-tools](assets/aem-forms-tools.png)
 
 * **Configurer PDF Generator :** un administrateur peut configurer les paramètres PDF AEM Forms, ajouter des comptes utilisateur, et importer ou exporter la configuration dans PDF Generator.
-* **Publier les actifs de gestion de correspondance :** AEM Forms permet de publier l’ensemble des lettres, des fragments de document et des dictionnaires de données et les dépendances associées d’une instance d’auteur simultanément. Les éléments publiés comportent tous les éléments de Correspondence Management et dépendances connexes. Pour plus d’informations, voir [Publication et annulation de publication de formulaires et documents](/help/forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
+* **Publier les actifs de gestion de correspondance :** AEM Forms permet de publier l’ensemble des lettres, des fragments de document et des dictionnaires de données et les dépendances associées d’une instance d’auteur simultanément. Les éléments publiés comportent tous les éléments de Correspondence Management et dépendances connexes. Pour plus d’informations, voir [Publication et annulation de la publication de formulaires et documents](/help/forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **Exporter les actifs de gestion de correspondance :** vous pouvez télécharger tous les actifs Correspondence Management et les dépendances connexes sous la forme d’un package depuis une instance AEM Forms. Pour la procédure détaillée, voir [Importation et exportation des actifs dans AEM Forms](/help/forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
 ## Éléments courants de l’interface utilisateur {#commonelements}
 
-* **Rail de gauche :** vous pouvez cliquer sur l’icône de rail de gauche  ![](assets/railleftpng.png) pour afficher les fonctionnalités Chronologie et Références d’AEM Forms.
+* **Rail de gauche :** Vous pouvez cliquer sur l’icône du rail de gauche ![railftpng](assets/railleftpng.png) pour afficher les fonctionnalités Chronologie et Références d’AEM Forms.
 
    * **Montage :** vous pouvez ajouter et afficher un commentaire sur un actif qui est disponible à des fins d’examen dans le montage. Pour des instructions détaillées, voir [Création et gestion de révisions des actifs d’un formulaire](/help/forms/using/create-reviews-forms.md).
    * **Références :** un actif AEM Forms peut être utilisé dans plusieurs actifs AEM Forms. Par exemple, un fragment de document peut être utilisé dans plusieurs lettres. Les références sont une liste des actifs (d’autres formulaires ou ressources) dans lesquels l’actif sélectionné est utilisé et également la liste des autres actifs que l’actif sélectionné utilise.
 
 * **Chemins de navigation :** un chemin de navigation représente le titre de la console ou du dossier actif. Vous pouvez cliquer sur l’option Chemin de navigation pour naviguer entre le niveau des dossiers qui sont plus élevés dans la hiérarchie.
-* **Sélecteur d’affichage :** vous pouvez cliquer sur l’icône du sélecteur d’affichage  ![](assets/viewlist.png) viewlistor  ![](assets/viewcard.png) viewcardby pour basculer rapidement entre le mode Liste et le mode Carte. Pour plus d’informations sur les composants d’interface utilisateur communs, voir [Utilisation de l’environnement de rédaction](/help/sites-authoring/basic-handling.md).
-* **Recherche :** l’option de recherche  ![](assets/search.png) search permet de rechercher rapidement le contenu et les outils dont vous avez besoin et d’y accéder. Saisissez le nom de la fonctionnalité de contenu ou de produit, puis sélectionnez l’une des suggestions. Par exemple, saisissez « documents » pour rechercher et accéder rapidement à la console Formes et documents ou Fragments de document. Pour plus de détails sur la recherche, voir l’article sur la [recherche](/help/sites-authoring/search.md) AEM 6.2.
+* **Sélecteur d’affichage :** Vous pouvez cliquer sur l’icône du sélecteur d’affichage ![viewlist](assets/viewlist.png) ou ![viewcard](assets/viewcard.png) pour basculer rapidement entre le mode liste et le mode carte. Pour plus d’informations sur les composants d’interface utilisateur communs, voir [Utilisation de l’environnement de rédaction](/help/sites-authoring/basic-handling.md).
+* **Rechercher :** Option de recherche ![search](assets/search.png) offre la possibilité de trouver rapidement le contenu et les outils dont vous avez besoin et d’y accéder. Saisissez le nom de la fonctionnalité de contenu ou de produit, puis sélectionnez l’une des suggestions. Par exemple, saisissez « documents » pour rechercher et accéder rapidement à la console Formes et documents ou Fragments de document. Pour plus de détails sur la recherche, voir l’article sur la [recherche](/help/sites-authoring/search.md) AEM 6.2.
 * **Barre d’outils Actions** : lors de la sélection d’un actif, la barre d’outils des actions s’affiche au-dessus de la liste des actifs. Elle contient tous les outils de gestion pour l’actif sélectionné. Vous pouvez placer votre curseur sur l’icône d’outil pour afficher l’info-bulle qui en décrit la fonctionnalité
 
 >[!NOTE]

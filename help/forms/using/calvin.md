@@ -1,19 +1,19 @@
 ---
 title: Automatiser les tests des formulaires adaptatifs
-seo-title: Automatiser les tests des formulaires adaptatifs
+seo-title: Automate testing of adaptive forms
 description: En utilisant Calvin, vous pouvez créer des cas de test dans CRXDE et exécuter des tests d’interface utilisateur directement dans le navigateur Web pour tester vos formulaires adaptatifs.
-seo-description: En utilisant Calvin, vous pouvez créer des cas de test dans CRXDE et exécuter des tests d’interface utilisateur directement dans le navigateur Web pour tester vos formulaires adaptatifs.
+seo-description: Using Calvin you can create test cases in CRXDE and run UI tests directly in the web browser to thoroughly test your adaptive forms.
 uuid: 2a89d1c0-58f6-4bbf-a367-5fe659851c13
 contentOwner: gtalwar
 content-type: reference
 topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: d7406206-d63a-48da-bb95-e62db0f2c8a5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 84%
+source-wordcount: '1253'
+ht-degree: 83%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 84%
 
 Les formulaires adaptatifs font partie intégrante de vos interactions avec les clients. Il est important de tester vos formulaires adaptatifs à chaque modification apportée, comme lors du déploiement d’un nouveau groupe de correctifs ou de la modification d’une règle dans le formulaire. Cependant, les formulaires adaptatifs de test fonctionnel et tous les champs qu’ils contiennent peuvent s’avérer fastidieux.
 
-Calvin vous permet d’automatiser les tests de vos formulaires adaptatifs dans le navigateur Web. Calvin utilise l’interface utilisateur de [Hobbes](/help/sites-developing/hobbes.md) pour exécuter les tests et fournit les outils suivants :
+Calvin vous permet d’automatiser les tests de vos formulaires adaptatifs dans le navigateur Web. Calvin utilise [Hobbes](/help/sites-developing/hobbes.md)L’interface utilisateur de d’ pour exécuter les tests et fournit les outils suivants :
 
 * Une API JavaScript pour créer des tests.
 * Une interface utilisateur pour exécuter des tests.
@@ -129,7 +129,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
-1. Cliquez avec le bouton droit sur le noeud test (ici **afTestRegistration)**, puis cliquez sur **[!UICONTROL Créer > Créer un fichier]**. Nommez le fichier js.txt et cliquez sur **[!UICONTROL OK]**.
+1. Cliquez avec le bouton droit sur le noeud test (ici **afTestRegistration)** puis cliquez sur **[!UICONTROL Créer > Créer un fichier]**. Nommez le fichier js.txt et cliquez sur **[!UICONTROL OK]**.
 1. Dans le fichier js.txt, ajoutez le texte suivant :
 
    ```
@@ -139,7 +139,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
 
 1. Cliquez sur **[!UICONTROL Enregistrer tout]** et fermez le fichier js.txt.
 1. Cliquez avec le bouton droit sur le noeud test (ici **afTestRegistration)** et cliquez sur **[!UICONTROL Créer > Créer un fichier]**. Nommez le fichier init.js et cliquez sur **[!UICONTROL OK]**.
-1. Copiez le code suivant dans le fichier init.js et cliquez sur **[!UICONTROL Enregistrer tout]** :
+1. Copiez le code suivant dans le fichier init.js et cliquez sur **[!UICONTROL Enregistrer tout]**:
 
    ```
    (function(window, hobs) {
@@ -157,7 +157,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
 
    Le code ci-dessus crée une suite de tests nommée **Adaptive Form - Demo Test**. Pour créer une suite de tests avec un nom différent, changez le nom en conséquence.
 
-1. Cliquez sur **[!UICONTROL Créer]** > **Créer un nœud** pour créer un nœud sous le dossier clientlib pour chaque formulaire que vous souhaitez tester. Cet exemple utilise un noeud nommé **testForm** pour tester un formulaire adaptatif nommé **testForm** `.`Spécifiez les propriétés suivantes et cliquez sur **[!UICONTROL OK]** :
+1. Cliquez sur **[!UICONTROL Créer]** > **Créer un nœud** pour créer un nœud sous le dossier clientlib pour chaque formulaire que vous souhaitez tester. Cet exemple utilise un noeud nommé **testForm** pour tester un formulaire adaptatif nommé **testForm** `.`Spécifiez les propriétés suivantes, puis cliquez sur **[!UICONTROL OK]**:
 
    * Nom : testForm (le nom de votre formulaire)
    * Type : cq:ClientLibraryFolder
@@ -271,7 +271,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
     }(window, window.hobs));
    ```
 
-   Le cas de test est créé. Procédez à l’exécution du cas de test pour tester les formulaires adaptatifs via Hobbes. Pour connaître les étapes d’exécution des cas de test, voir [Exécution de tests dans Test de votre interface utilisateur à l’aide de tests automatisés](/help/sites-developing/hobbes.md).
+   Le cas de test est créé. Procédez à l’exécution du cas de test pour tester les formulaires adaptatifs via Hobbes. Pour connaître les étapes d’exécution des cas de test, voir [Exécution de tests dans le test de votre interface utilisateur à l’aide de tests automatisés](/help/sites-developing/hobbes.md).
 
 Vous pouvez également installer le package dans le fichier joint SampleTestPackage.zip pour obtenir les mêmes résultats qu’avec les étapes expliquées dans Exemple : créer une suite de tests pour un formulaire adaptatif en utilisant Hobbes comme cadre de test.
 

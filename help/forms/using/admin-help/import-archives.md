@@ -1,8 +1,8 @@
 ---
-title: Importation et gestion des archives de
-seo-title: Importation et gestion des archives
+title: Importation et gestion des archives
+seo-title: Import and manage archives
 description: Découvrez comment importer et gérer des archives.
-seo-description: Découvrez comment importer et gérer des archives.
+seo-description: Learn how to import and manage archives.
 uuid: aa1613dd-6350-49a7-9643-44365e2acdcc
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 12183806-5e00-46e8-bf25-5379a07a56a4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1454'
 ht-degree: 100%
 
 ---
 
-# Importation et gestion des archives {#import-and-manage-archives}
+# Importation et gestion des archives de {#import-and-manage-archives}
 
 Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Archives.
 
@@ -93,14 +93,14 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
 1. Cliquez sur Terminé pour achever la configuration.
 
-## Configuration des services AEM forms faisant partie d’un fichier d’archive  {#configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Configuration des services AEM forms faisant partie d’un fichier d’archive {#configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis sur l’onglet Archives.
 1. Dans la page Gestion des archives, sélectionnez le fichier d’archives à configurer.
 1. Dans la page Afficher l’archive, sélectionnez la ressource de l’archive mise en surbrillance.
 1. Configurez le fichier d’archives de processus importé.
 
-## Configuration des services AEM forms faisant partie d’un fichier d’archive à l’aide de l’assistant de configuration  {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Configuration des services AEM forms faisant partie d’un fichier d’archive à l’aide de l’assistant de configuration {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis sur l’onglet Archives.
 1. Cliquez sur Configurer en regard du fichier d’archives à configurer.
@@ -158,7 +158,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
       Cliquez sur Terminé pour ajouter l’entité de sécurité au profil de sécurité.
 
-## Suppression d’une archive  {#remove-an-archive}
+## Suppression d’une archive {#remove-an-archive}
 
 >[!NOTE]
 >

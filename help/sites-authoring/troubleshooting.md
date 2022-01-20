@@ -1,8 +1,8 @@
 ---
 title: Résolution des problèmes d’AEM lors de la création
-seo-title: Résolution des problèmes d’AEM lors de la création
+seo-title: Troubleshooting AEM when Authoring
 description: Problèmes pouvant survenir lors de l’utilisation d’AEM
-seo-description: Problèmes pouvant survenir lors de l’utilisation d’AEM
+seo-description: Some issues that you might encounter when using AEM
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: b0890070-c9e8-4ce4-9149-00c8c38298ce
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '294'
 ht-degree: 100%
 
 ---
@@ -35,11 +35,11 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Vous avez modifié une page et l’avez répliquée sur le site de publication, mais l’*ancienne* version de la page est toujours visible sur le site de publication.
 
-* **Raison**:
+* **Raison** :
 
    * Les raisons peuvent être multiples, mais sont généralement liées à la mémoire cache (de votre navigateur local ou du dispatcher), bien qu’il s’agisse parfois d’un problème de la file d’attente de réplication.
 
-* **Solutions**:
+* **Solutions** :
 
    * Plusieurs solutions sont possibles :
    * Vérifiez que la page a bien été répliquée. Vérifiez l’état de la page et, si nécessaire, l’état de la file d’attente de réplication.
@@ -57,10 +57,10 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * La plage entière des actions de composants applicables n’est pas visible lors de la modification d’une page de contenu dans l’environnement de création.
 
-* **Raison**:
+* **Raison** :
 
    * Dans de rares cas, une action précédente peut avoir un impact sur la barre d’outils.
 
-* **Solution**:
+* **Solution** :
 
    * Actualisez la page.

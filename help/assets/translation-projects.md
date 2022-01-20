@@ -313,4 +313,4 @@ Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie d
 
 1. Accédez à la console Ressources et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 
-Pour obtenir des conseils sur la traduction efficace des métadonnées des ressources, consultez cette page archivée sur les [5 étapes de traduction efficace des métadonnées](https://web.archive.org/web/20181217033517/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+Pour obtenir des conseils sur la traduction efficace des métadonnées des ressources, consultez cette page archivée à propos de [5 étapes pour traduire efficacement les métadonnées](https://web.archive.org/web/20181217033517/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).

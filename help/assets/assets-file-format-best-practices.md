@@ -1,6 +1,6 @@
 ---
 title: Meilleures pratiques relatives au format de fichier des ressources
-description: Bonnes pratiques relatives à la prise en charge des fichiers dans  [!DNL Experience Manager] Assets.
+description: Bonnes pratiques relatives à la prise en charge des fichiers dans [!DNL Experience Manager] Ressources.
 contentOwner: AG
 feature: Asset Management,Developer Tools
 role: Admin
@@ -41,7 +41,7 @@ Les miniatures et les aperçus générés à l’aide de l’interpréteur de PD
 
 ## Serveur Adobe InDesign {#adobe-indesign-cc-server}
 
-Adobe vous recommande d’utiliser le serveur Adobe InDesign pour extraire des rendus spécifiques à Adobe InDesign, tels que IDML et HTML. Pour plus d’informations, voir [Ajout de  [!DNL Experience Manager] ressources en tant que références dans Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+Adobe vous recommande d’utiliser le serveur Adobe InDesign pour extraire des rendus spécifiques à Adobe InDesign, tels que IDML et HTML. Pour plus d’informations, voir [Ajouter [!DNL Experience Manager] ressources en tant que références dans Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 

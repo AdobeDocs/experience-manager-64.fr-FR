@@ -3,13 +3,13 @@ title: Configuration d’ [!DNL Workfront for Experience Manager enhanced connec
 description: Configuration d’ [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
+exl-id: dcf90a29-59a9-40d1-b8ee-56d327072b3e
+source-git-commit: 657bb7df01a7b8e03d39c3bda868d87253b81b2a
 workflow-type: tm+mt
 source-wordcount: '1635'
 ht-degree: 0%
 
 ---
-
 
 # Configuration d’[!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 

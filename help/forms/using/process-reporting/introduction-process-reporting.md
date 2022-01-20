@@ -1,8 +1,8 @@
 ---
 title: Présentation des rapports de processus
-seo-title: Présentation des rapports de processus
+seo-title: Introduction to Process Reporting
 description: Présentation et principales fonctionnalités des rapports de processus d’AEM Forms on JEE
-seo-description: Présentation et principales fonctionnalités des rapports de processus d’AEM Forms on JEE
+seo-description: Introduction and key capabilities of AEM Forms on JEE Process Reporting
 uuid: a33ea729-7e1f-4093-bdb6-b8dc3afd59a7
 content-type: reference
 topic-tags: process-reporting
@@ -11,12 +11,12 @@ discoiquuid: 0cfe62b8-839e-414b-95e5-1bfce6a9d16a
 exl-id: 279b2f89-5b91-4b8f-ab0f-8ade9b9f3932
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
 
-# Introduction aux rapports de processus {#introduction-to-process-reporting}
+# Présentation des rapports de processus {#introduction-to-process-reporting}
 
 ![process-reporting](assets/process-reporting.png)
 
@@ -36,7 +36,7 @@ Les rapports de processus sont construits sur des modules qui :
 
 ## Fonctionnalités clés {#key-capabilities}
 
-### Création de rapports &quot;toujours&quot; {#always-on-reporting}
+### Création de rapports permanents {#always-on-reporting}
 
 ![gestion de site](assets/site-management.png)
 

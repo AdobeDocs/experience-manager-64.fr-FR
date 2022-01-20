@@ -1,16 +1,16 @@
 ---
 title: Préremplissage des champs de formulaires adaptatifs
-seo-title: Préremplissage des champs de formulaires adaptatifs
+seo-title: Prefill adaptive form fields
 description: Employez les données existantes pour préremplir les champs d’un formulaire adaptatif.
-seo-description: Avec les formulaires adaptatifs, les utilisateurs peuvent préremplir les informations de base dans un formulaire en se connectant avec leur profil de réseau social. Cet article décrit comment.
+seo-description: With adaptive forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
 uuid: 05d74a59-3950-4513-bfce-6ff3d9d5318c
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ddb33a5-0d62-46f4-8f8c-0f0807a975cb
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '2001'
 ht-degree: 97%
 
 ---
@@ -200,9 +200,9 @@ Voici un exemple sans le wrapper `afData/afBoundData` :
 >
 >L’utilisation de champs non liés dans les panneaux liés (panneaux avec une valeur bindRef non vides qui ont été créés en faisant glisser des composants du Sidekick ou de l’onglet Sources de données) n’est **pas** recommandée car elle peut entraîner une perte de données des champs non liés. Il est recommandé d’utiliser des noms de champs uniques dans le formulaire, notamment pour les champs non liés.
 
-## Formulaire adaptatif sans modèle de formulaire  {#adaptive-form-with-no-form-model}
+## Formulaire adaptatif sans modèle de formulaire {#adaptive-form-with-no-form-model}
 
-Pour les formulaires adaptatifs sans modèle de formulaire, les données de tous les champs se trouvent sous la balise `<data>` `<afUnboundData> tag`.
+Pour les formulaires adaptatifs sans modèle de formulaire, les données de tous les champs se trouvent sous la propriété `<data>` balise `<afUnboundData> tag`.
 
 Prenez également en compte les points suivants :
 
@@ -227,7 +227,7 @@ Les balises XML des données utilisateur envoyées pour différents champs sont 
 </afData>
 ```
 
-## Configuration du service de préremplissage à l’aide de Configuration Manager  {#configuring-prefill-service-using-configuration-manager}
+## Configuration du service de préremplissage à l’aide de Configuration Manager {#configuring-prefill-service-using-configuration-manager}
 
 Pour activer le service de préremplissage, spécifiez la configuration de service de préremplissage par défaut dans la configuration de la console web d’AEM. Pour configurer le service de préremplissage, procédez comme suit :
 
@@ -256,7 +256,7 @@ Pour activer le service de préremplissage, spécifiez la configuration de servi
    >
    >Le protocole crx s’occupe de la sécurité des données préremplies et par conséquent, est activé par défaut. Le préremplissage par le biais d’autres protocoles à l’aide de l’expression regex peut entraîner une vulnérabilité. Dans la configuration, spécifiez une configuration d’URL sécurisée pour protéger vos données.
 
-## Cas étrange des panneaux répétables  {#the-curious-case-of-repeatable-panels}
+## Cas étrange des panneaux répétables {#the-curious-case-of-repeatable-panels}
 
 En règle générale, les champs liés (schéma de formulaire) et non liés sont créés dans un même formulaire adaptatif. Les éléments suivants constituent cependant quelques exceptions lorsque les liaisons sont répétables :
 
@@ -267,11 +267,11 @@ En règle générale, les champs liés (schéma de formulaire) et non liés sont
 >
 >En règle générale, vous ne devez pas mélanger de champs liés et non liés s’ils sont recoupés dans les données remplies dans les champs non liés par l’utilisateur final. Si possible, vous devez modifier le schéma ou le modèle de formulaire XFA et ajouter une entrée pour les champs non liés pour qu’ils deviennent également liés et que ses données soient disponibles comme tout autre champ dans les données envoyées.
 
-## Protocoles pris en charge pour le préremplissage des données utilisateur  {#supported-protocols-for-prefilling-user-data}
+## Protocoles pris en charge pour le préremplissage des données utilisateur {#supported-protocols-for-prefilling-user-data}
 
 Les formulaires adaptatifs peuvent être préremplis avec des données d’utilisateurs au format de données de préremplissage via les protocoles suivants lorsqu’ils sont configurés avec une expression regex valide :
 
-### Protocole crx:// {#the-crx-protocol}
+### Protocole crx://  {#the-crx-protocol}
 
 ```xml
 http://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
@@ -279,7 +279,7 @@ http://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///
 
 Le nœud spécifié doit posséder une propriété nommée `jcr:data` et contenir les données.
 
-### Protocole file:// {#the-file-protocol-nbsp}
+### Protocole file://  {#the-file-protocol-nbsp}
 
 ```xml
 http://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
@@ -287,13 +287,13 @@ http://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file
 
 Le fichier référencé doit se trouver sur le même serveur.
 
-### Protocole https:// {#the-http-protocol}
+### Protocole https://  {#the-http-protocol}
 
 ```xml
 http://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=http://localhost:8000/somesamplexmlfile.xml
 ```
 
-### Protocole service:// {#the-service-protocol}
+### Protocole service://  {#the-service-protocol}
 
 ```xml
 http://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
@@ -306,7 +306,7 @@ http://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service
 >
 >La transmission des paramètres d’authentification n’est pas prise en charge.
 
-### Définition de l’attribut data dans slingRequest  {#setting-data-attribute-in-slingrequest}
+### Définition de l’attribut data dans slingRequest {#setting-data-attribute-in-slingrequest}
 
 Vous pouvez également définir l’attribut `data` dans `slingRequest`, où l’attribut `data` correspond à une chaîne contenant des balises XML ou JSON, comme illustré dans l’exemple de code ci-après (exemple pour XML) :
 
@@ -343,9 +343,9 @@ Vous pouvez utiliser le service de préremplissage personnalisé pour les scéna
 
 ### Création et exécution d’un service de préremplissage {#create-and-run-a-prefill-service}
 
-Le service de préremplissage est un service OSGi et fait partie du package OSGi. Vous créez le groupe OSGi, vous le chargez et l’installez sur les groupes AEM Forms. Avant de débuter la création du groupe :
+Le service de préremplissage est un service OSGi et fait partie du bundle OSGi. Vous créez le groupe OSGi, vous le chargez et l’installez sur les groupes AEM Forms. Avant de débuter la création du bundle :
 
-* [Téléchargez le SDK Client d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html)
+* [Téléchargez l’AEM Forms Client SDK](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html)
 * [Téléchargement du package standard](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
 * Placez le fichier de données (données de préremplissage) dans le référentiel crx. Vous pouvez placer le fichier à tout emplacement dans le dossier \contents du référentiel crx.
@@ -362,9 +362,9 @@ Le package standard (exemple de package de services de préremplissage) contient
 
 1. Enregistrez et fermez le fichier `Prefill.java`.
 1. Ajoutez le package `AEM Forms Client SDK` sur le chemin de génération du projet standard.
-1. Compilez le projet et créez le fichier .jar pour le groupe.
+1. Compilez le projet et créez le fichier .jar pour le bundle.
 
-#### Démarrage et utilisation du service de préremplissage  {#start-and-use-the-prefill-service}
+#### Démarrage et utilisation du service de préremplissage {#start-and-use-the-prefill-service}
 
 Pour démarrer le service de préremplissage, chargez le fichier JAR dans la console web d’AEM Forms et activez le service. Désormais, le démarrage du service s’affiche dans l’éditeur de formulaires adaptatifs. Pour associer un service de préremplissage à un formulaire adaptatif :
 

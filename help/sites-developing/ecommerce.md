@@ -2,7 +2,7 @@
 title: eCommerce
 seo-title: eCommerce
 description: Le framework d’intégration comporte une couche d’intégration avec une API
-seo-description: Le framework d’intégration comporte une couche d’intégration avec une API
+seo-description: The integration framework includes an integration layer with an API
 uuid: 39a13c2f-4478-4030-8fe4-03f5b271d04f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
 exl-id: a5f36d26-1be4-4e06-9237-3943e903d850
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 65%
+source-wordcount: '175'
+ht-degree: 63%
 
 ---
 
@@ -31,7 +31,7 @@ Pour en savoir plus, voir:
 
 >[!NOTE]
 >
->Comme la structure eCommerce peut être utilisée avec n’importe quelle solution eCommerce, voir [Développement (générique)](/help/sites-developing/generic.md) pour plus d’informations sur le développement de possibilités avec Intershop, Elastic Path ou IBM WebSphere Commerce.
+>Puisque la structure eCommerce peut être utilisée avec n’importe quelle solution eCommerce, reportez-vous à la section [Développement (générique)](/help/sites-developing/generic.md) pour plus d’informations sur le développement de possibilités avec Intershop, Elastic Path ou IBM WebSphere Commerce.
 
 >[!NOTE]
 >
@@ -49,4 +49,4 @@ Pour plus d’informations, voir la [documentation de l’API](https://helpx.ado
 
 >[!NOTE]
 >
->Pour un article complet détaillant toutes les étapes de création d’un fournisseur eCommerce, voir [Création de fournisseurs eCommerce Adobe Experience Manager 6.2 personnalisés](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
+>Pour consulter un article complet détaillant toutes les étapes de création d’un fournisseur eCommerce, voir [Création de fournisseurs en ligne personnalisés Adobe Experience Manager 6.2](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).

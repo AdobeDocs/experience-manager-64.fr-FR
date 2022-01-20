@@ -1,8 +1,8 @@
 ---
 title: Conseils pour minimiser la croissance de la base de données
-seo-title: Conseils pour minimiser la croissance de la base de données
+seo-title: Tips for minimizing database growth
 description: Les processus de longue durée stockent des données de processus dans la base de données AEM Forms. La croissance de la base de données AEM forms peut être minimisée grâce à quelques stratégies simples de configuration de produit et de conception de processus.
-seo-description: Les processus de longue durée stockent des données de processus dans la base de données AEM Forms. La croissance de la base de données AEM forms peut être minimisée grâce à quelques stratégies simples de configuration de produit et de conception de processus.
+seo-description: Long-lived processes store process data in the AEM forms database. The growth of the AEM forms database can be minimized using a few easy process design and product configuration strategies.
 uuid: 13f99d4f-848e-451e-90d9-55e202dc0bdb
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 89441336-babc-4d1f-9053-d1566cd42d22
 exl-id: 7b266170-c7e2-42e7-8ee0-153e1e73a901
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '408'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Utilisez les variables avec parcimonie. Si vous exploitez des processus de longu
 
 Préférez les types de variable simples (par exemple, string ou int) aux types de variable complexes. La base de données alloue un espace aux variables même lorsque celles-ci ne contiennent aucune valeur. En général, les variables complexes requièrent davantage d’espace que les variables simples.
 
-## Conseils pour l’administration du produit  {#product-administration-tips}
+## Conseils pour l’administration du produit {#product-administration-tips}
 
 Utilisez efficacement le stockage global de documents. Le répertoire de stockage global de documents sur le serveur Forms permet de stocker, entre autres, les fichiers qui sont transmis aux services AEM Forms dans les processus. Pour améliorer les performances, les documents plus petits sont stockés en mémoire et conservés dans la base de données.
 

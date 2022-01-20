@@ -42,7 +42,7 @@ Dans la plupart des cas, la copie de l’exemple existant de `init.jsp` (`/apps/
 
 ### Configuration des actions JS {#configuring-js-actions}
 
-Certains composants [!DNL Assets] requièrent des fonctions JS définies dans `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
+Certains [!DNL Assets] Les composants requièrent des fonctions JS définies dans `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -52,7 +52,7 @@ L’exemple charge cette source JavaScript dans `head.jsp`(`/apps/geometrixx/com
 
 ### Feuilles de style supplémentaires {#additional-style-sheets}
 
-Certains composants [!DNL Assets] utilisent la bibliothèque de widgets [!DNL Experience Manager]. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
+Certains [!DNL Assets] Les composants utilisent la variable [!DNL Experience Manager] bibliothèque de widgets. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">

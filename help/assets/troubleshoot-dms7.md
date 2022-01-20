@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
-feature: Résolution des problèmes
+feature: Troubleshooting
 role: Admin,User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1295'
 ht-degree: 89%
 
 ---
@@ -23,14 +23,14 @@ Le document suivant décrit la résolution des problèmes affectant Dynamic Medi
 
 Assurez-vous que Dynamic Media a été correctement configuré en procédant comme suit :
 
-* La commande Start up contient l’argument `-r dynamicmedia_scene7` runmode.
+* La commande Start up contient la commande `-r dynamicmedia_scene7` argument runmode.
 * Tous les packs de correctifs cumulatifs (CFP) AEM 6.4 ont été installés *avant* tout Feature Pack Dynamic Media disponible.
 * Le Feature Pack 18912 facultatif est installé.
 
    Ce Feature Pack facultatif est utile pour la prise en charge FTP ou si vous effectuez une migration des ressources de Dynamic Media vers Dynamic Media Classic.
 
 * Accédez à l’interface utilisateur des services cloud et vérifiez que le compte fourni s’affiche sous **[!UICONTROL Configurations disponibles]**.
-* Assurez-vous que l’agent de réplication **[!UICONTROL Dynamic Media Asset Activation (scene7)]** est activé.
+* Assurez-vous que la variable **[!UICONTROL Activation des ressources Dynamic Media (scene7)]** l’agent de réplication est activé.
 
    Cet agent de réplication se trouve sous **[!UICONTROL Agents]** sur l’auteur.
 
@@ -51,7 +51,7 @@ Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE L
 
 ### Journalisation de la synchronisation {#synchronization-logging}
 
-Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur AEM `/crx-quickstart/logs/`). La journalisation est suffisante pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter la journalisation sur DEBUG sur le module `com.adobe.cq.dam.ips` via la console Sling ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) pour collecter plus d’informations.
+Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur AEM `/crx-quickstart/logs/`). Une journalisation suffisante est disponible pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter la journalisation sur DEBUG sur la page `com.adobe.cq.dam.ips` via la console Sling ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) pour recueillir plus d’informations.
 
 ### Déplacement, copie ou suppression {#move-copy-delete}
 
@@ -65,11 +65,11 @@ Avant d’effectuer une opération de déplacement, de copie ou de suppression, 
 
 Lorsque vous remplacez une ressource Dynamic Media existante (même nom et emplacement), vous avez la possibilité de conserver les deux ressources ou de remplacer ou de créer une version :
 
-* Si vous conservez les deux, une nouvelle ressource est créée avec un nom unique pour l’URL de la ressource publiée. Par exemple, **[!UICONTROL image.jpg]** est la ressource d’origine et **[!UICONTROL image1.jpg]** est la ressource qui vient d’être chargée.
+* Si vous conservez les deux, une nouvelle ressource est créée avec un nom unique pour l’URL de la ressource publiée. Par exemple : **[!UICONTROL image.jpg]** est la ressource d’origine et **[!UICONTROL image1.jpg]** est la ressource qui vient d’être chargée.
 
 * La création d’une version n’est pas prise en charge dans le cadre de la diffusion en mode Scene7 de Dynamic Media. La nouvelle version remplace la ressource existante lors de la diffusion.
 
-## Images et visionneuses  {#images-and-sets}
+## Images et visionneuses {#images-and-sets}
 
 Si des problèmes surviennent avec les images et les visionneuses, reportez-vous aux conseils de dépannage ci-dessous.
 
@@ -181,7 +181,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
    <td>Le traitement vidéo prend trop de temps.</td> 
    <td><p>Pour déterminer si le codage vidéo est toujours en cours ou s’il est passé à l’état d’échec :</p> 
     <ul> 
-     <li>Vérifiez l’état de la vidéo <code>http://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt;  <span class="kbd">dam:assetState</span></li> 
+     <li>Vérifiez l’état de la vidéo <code>http://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <span class="kbd">dam:assetState</span></li> 
      <li>Surveillez la vidéo via la console de workflow <code>http://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; onglets Instances, Archive, Échecs.</li> 
     </ul> </td> 
    <td> </td> 

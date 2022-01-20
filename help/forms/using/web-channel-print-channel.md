@@ -1,18 +1,18 @@
 ---
 title: Canal d’impression et canal web
-seo-title: Canal d’impression et canal web
+seo-title: Print channel and web channel
 description: Importation de modèles de canaux d’impression et création et activation de modèles de canaux web
-seo-description: Importation de modèles de canaux d’impression et création et activation de modèles de canaux web
+seo-description: Importing print channel templates and creating and enabling web channel templates
 uuid: 19e6ffab-00d2-4084-9ee7-9643b11eb6c6
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
-feature: Communication interactive
+feature: Interactive Communication
 exl-id: cb7a8e96-4440-47ec-b506-275d5acc774e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 66%
+source-wordcount: '698'
+ht-degree: 65%
 
 ---
 
@@ -24,7 +24,7 @@ Les communications interactives peuvent être fournies par deux canaux : impres
 
 Les auteurs de communication interactive peuvent réutiliser des ressources telles que des fragments de document et des images pour créer des versions d’impression et des versions web de la communication interactive.
 
-L’une des conditions préalables à la [création d’une communication interactive](/help/forms/using/create-interactive-communication.md) est que les modèles pour l’impression et/ou le canal web soient disponibles sur le serveur. Alors que les auteurs de modèles créent le modèle de canal web dans AEM, le modèle de canal d’impression XDP est créé dans Adobe Forms Designer et téléchargé sur le serveur.
+L’une des conditions préalables pour [Création d’une communication interactive](/help/forms/using/create-interactive-communication.md) doit disposer des modèles pour l’impression et/ou le canal web disponible sur le serveur. Alors que les auteurs de modèles créent le modèle de canal web dans AEM, le modèle de canal d’impression XDP est créé dans Adobe Forms Designer et téléchargé sur le serveur.
 
 ## Canal d’impression {#printchannel}
 
@@ -36,13 +36,13 @@ Pour télécharger le modèle, vous devez être membre du groupe forms-user. Sui
 
 1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 
-1. Appuyez sur **[!UICONTROL Créer]** > **[!UICONTROL Chargement de fichier]**.
+1. Appuyez sur **[!UICONTROL Créer]** > **[!UICONTROL Chargement de fichier]**.
 
    Naviguez et sélectionnez le modèle de canal d’impression approprié (XDP), puis appuyez sur **[!UICONTROL Ouvrir]**.
 
 ## Canal web {#web-channel}
 
-Les auteurs de modèles et les administrateurs peuvent créer, modifier et activer des modèles web. Pour autoriser d’autres utilisateurs à créer des modèles web, vous devez leur accorder des droits. Pour plus d’informations, voir [Administration des droits d’utilisateur, de groupe et d’accès](/help/sites-administering/user-group-ac-admin.md).
+Les auteurs de modèles et les administrateurs peuvent créer, modifier et activer des modèles web. Pour autoriser d’autres utilisateurs à créer des modèles web, vous devez leur accorder des droits. Pour plus d’informations, voir [Administration des utilisateurs, des groupes et des droits d’accès](/help/sites-administering/user-group-ac-admin.md).
 
 ### Création de modèle de canal web {#authoring-web-channel-template}
 
@@ -52,10 +52,10 @@ Pour créer un modèle de canal web Effectuez les étapes suivantes :
 
 1. Créez un dossier Modèle pour conserver vos modèles web de communication interactive, si vous n’en avez pas déjà un. Pour plus d’informations, voir Dossiers de modèles dans [Modèles de page - Modifiables](/help/sites-developing/page-templates-editable.md).
 
-   1. Appuyez sur **[!UICONTROL Outils]** ![tools-1](assets/tools-1.png) > **[!UICONTROL Navigateur de configuration]**.
+   1. Appuyer **[!UICONTROL Outils]** ![tools-1](assets/tools-1.png) > **[!UICONTROL Explorateur de configuration]**.
       * Pour plus d’informations, consultez la documentation relative au [](/help/sites-administering/configurations.md)Navigateur de configuration.
-   1. Sur la page du navigateur de configuration, appuyez sur **[!UICONTROL Créer]**.
-   1. Dans la boîte de dialogue Créer une configuration, indiquez un titre pour le dossier, cochez **[!UICONTROL Modèles modifiables]**, puis appuyez sur **[!UICONTROL Créer]**.
+   1. Sur la page du navigateur de configuration, appuyez sur . **[!UICONTROL Créer]**.
+   1. Dans la boîte de dialogue Créer une configuration, indiquez un titre pour le dossier, puis cochez la case **[!UICONTROL Modèles modifiables]**, puis appuyez sur **[!UICONTROL Créer]**.
 
       Le dossier est créé et répertorié dans la page du navigateur de configuration.
 
@@ -63,7 +63,7 @@ Pour créer un modèle de canal web Effectuez les étapes suivantes :
 
    1. Accédez au dossier de modèle approprié en sélectionnant **[!UICONTROL Outils]** > **[!UICONTROL Modèles > Dossier]**.
    1. Appuyez sur **[!UICONTROL Créer]**.
-   1. Sélectionnez **[!UICONTROL Communication interactive - Canal web]** et appuyez sur **[!UICONTROL Suivant]**.
+   1. Sélectionner **[!UICONTROL Communication interactive - Canal web]** et appuyez sur **[!UICONTROL Suivant]**.
    1. Entrez un titre et une description de modèle, puis appuyez sur **[!UICONTROL Créer]**.
 
       Le modèle est créé et une boîte de dialogue s’affiche.
@@ -74,12 +74,12 @@ Pour créer un modèle de canal web Effectuez les étapes suivantes :
 
       ![webchanneltemplate](assets/webchanneltemplate.png)
 
-      Lors de la création ou de la modification d’un modèle, un auteur de modèles peut définir différents aspects. La création ou la modification d’un modèle est similaire à la création de pages. Pour plus d’informations, voir Modification de modèles - créateurs de modèles dans [Création de modèles de page](/help/sites-authoring/templates.md).
+      Lors de la création ou de la modification d’un modèle, un auteur de modèles peut définir différents aspects. La création ou la modification d’un modèle est similaire à la création de pages. Pour plus d’informations, voir Modification de modèles - Créateurs de modèles dans [Création de modèles de page](/help/sites-authoring/templates.md).
 
 1. Pour permettre l’utilisation de ce modèle pour la création de communication interactive, activez le modèle.
 
-   1. Appuyez sur **[!UICONTROL Outils]** ![tools-1](assets/tools-1.png) > **[!UICONTROL Modèles]**.
-   1. Accédez au modèle approprié, sélectionnez-le, puis appuyez sur **[!UICONTROL Activer]** et, dans le message d’alerte, appuyez sur **[!UICONTROL Activer]**.
+   1. Appuyer **[!UICONTROL Outils]** ![tools-1](assets/tools-1.png) > **[!UICONTROL Modèles]**.
+   1. Accédez au modèle approprié, sélectionnez-le, puis appuyez sur **[!UICONTROL Activer]** et dans le message d’alerte, appuyez sur **[!UICONTROL Activer]**.
 
       Le modèle est activé et son statut s’affiche comme Activé. Vous pouvez maintenant créer une communication interactive dans laquelle vous pouvez utiliser le modèle de canal web nouvellement créé.
 

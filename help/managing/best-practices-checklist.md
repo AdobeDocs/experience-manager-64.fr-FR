@@ -1,8 +1,8 @@
 ---
 title: La liste de contrôle
-seo-title: La liste de contrôle
+seo-title: The Checklist
 description: 'Les listes de contrôle de projet sont conçues comme un ensemble de meilleures pratiques pour la mise en route d’un projet. Elles vous guident tout au long du cycle de vie du projet et assurent une surveillance de niveau supérieur de votre état actuel. '
-seo-description: 'Les listes de contrôle de projet sont conçues comme un ensemble de meilleures pratiques pour la mise en route d’un projet. Elles vous guident tout au long du cycle de vie du projet et assurent une surveillance de niveau supérieur de votre état actuel. '
+seo-description: The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
 uuid: e8ab9042-4d54-445d-b104-23d5d38f58b6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -12,8 +12,8 @@ discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 exl-id: d85fa478-8192-42b9-a5fc-a38a87cfc7dd
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 82%
+source-wordcount: '316'
+ht-degree: 80%
 
 ---
 
@@ -47,8 +47,8 @@ Les feuilles de calcul suivantes sont fournies :
 
 Pour livrer un projet de grande qualité, vous devez suivre tous les éléments affichés dans les listes de contrôle, de préférence dans l’ordre :
 
-1. Les listes de contrôle sont définies en fonction de **[Persona](/help/managing/best-practices.md#persona)** (rôle) impliqué. Chaque personne doit utiliser la liste de contrôle appropriée à son rôle dans le projet.
-1. Les listes de contrôle couvrent les **[Documents requis](/help/managing/best-practices.md#required-documents)** et **[Livrables](/help/managing/best-practices.md#deliverables)** pour chaque jalon : le personnage concerné doit définir les champs de statut et de qualité appropriés.
+1. Les listes de contrôle sont définies en fonction de la variable **[Persona](/help/managing/best-practices.md#persona)** (rôle) impliqué. Chaque personne doit utiliser la liste de contrôle appropriée à son rôle dans le projet.
+1. Les listes de contrôle couvrent la variable **[Documents requis](/help/managing/best-practices.md#required-documents)** et **[Deliverables](/help/managing/best-practices.md#deliverables)** pour chaque jalon : le personnage concerné doit définir les champs d’état et de qualité appropriés.
 
    >[!NOTE]
    >

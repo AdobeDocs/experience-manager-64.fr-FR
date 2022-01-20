@@ -20,7 +20,7 @@ Le service [!DNL Adobe Stock] permet aux créateurs et aux entreprises d’accé
 
 ## Prérequis {#prerequisites}
 
-Pour que l’intégration soit possible, l’[abonnement Adobe Stock entreprise](https://stockenterprise.adobe.com/) est requis et  6.4 (Service Pack 2 minimum) doit être déployé. [!DNL Experience Manager] Pour obtenir des [!DNL Experience Manager] détails sur le Service Pack 6.4, consultez ces [notes de mise à jour](/help/release-notes/sp-release-notes.md).
+Pour que l’intégration soit possible, l’[abonnement Adobe Stock entreprise](https://stockenterprise.adobe.com/) est requis et  6.4 (Service Pack 2 minimum) doit être déployé. [!DNL Experience Manager] Pour [!DNL Experience Manager] 6.4 Informations détaillées sur le Service Pack, voir ces [notes de mise à jour](/help/release-notes/sp-release-notes.md).
 
 ## Intégration d’[!DNL Experience Manager] et [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -45,7 +45,7 @@ Pour permettre à [!DNL Experience Manager] et [!DNL Adobe Stock] de communiquer
 
 ### Création d’une configuration [!DNL Adobe Stock] dans [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}
 
-1. Dans l’interface utilisateur [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. Dans le [!DNL Experience Manager] interface utilisateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Cliquez sur **[!UICONTROL Créer]** pour créer une configuration et l’associer à votre configuration IMS existante. Sélectionnez `PROD` comme paramètre d’environnement.
 1. Ne modifiez pas l’emplacement défini dans le champ **[!UICONTROL Chemin d’accès aux ressources sous licence]**. Ne modifiez pas l’emplacement où vous souhaitez stocker les ressources [!DNL Adobe Stock].
 1. Pour terminer la procédure de création, ajoutez toutes les propriétés requises. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
@@ -53,7 +53,7 @@ Pour permettre à [!DNL Experience Manager] et [!DNL Adobe Stock] de communiquer
 
 >[!NOTE]
 >
->S’il existe plusieurs [!DNL Adobe Stock] configurations, sélectionnez la configuration souhaitée dans le panneau Préférences utilisateur (**[!UICONTROL AEM]** > **[!UICONTROL Icône utilisateur]** > **[!UICONTROL Préférences utilisateur]** > **[!UICONTROL Configuration de stock]**).
+>S’il existe plusieurs [!DNL Adobe Stock] configurations, sélectionnez la configuration souhaitée dans le panneau Préférences utilisateur (**[!UICONTROL AEM]** > **[!UICONTROL Icône de l’utilisateur]** > **[!UICONTROL Préférences utilisateur]** > **[!UICONTROL Configuration des stocks]**).
 
 ## Utilisation et gestion de ressources [!DNL Adobe Stock] dans [!DNL Experience Manager] {#usemanage}
 
@@ -63,9 +63,9 @@ Une fois qu’une ressource [!DNL Adobe Stock] est sous licence dans [!DNL Exper
 
 ![Recherche de ressources Adobe Stock et filtrage des résultats de votre espace de travail Adobe Experience Manager](assets/adobe-stock-search-results-workspace.png)
 
-*Figure : Recherchez  [!DNL Adobe Stock] des ressources et filtrez les résultats à partir de votre  [!DNL Experience Manager] interface.*
+*Figure : Rechercher [!DNL Adobe Stock] ressources et filtrez les résultats de vos [!DNL Experience Manager] .*
 
-**A.**[!DNL Adobe Stock] Rechercher les ressources semblables à celles dont l’ID est fourni. **B.** Rechercher les ressources correspondant à la forme ou à l’orientation que vous avez sélectionnée. **C.** Recherchez l’un des types de ressources les plus pris en charge  **D.** Ouvrez ou réduisez le volet des filtres  **E.**  Donnez la licence et enregistrez la ressource sélectionnée dans  [!DNL Experience Manager] **F.** Enregistrez la ressource dans  [!DNL Experience Manager] avec le filigrane  **G.** Explorez les ressources du site web  [!DNL Adobe Stock] semblables à la ressource sélectionnée  **H.** Afficher les ressources sélectionnées sur le site web  [!DNL Adobe Stock]  **.**   **J.** Basculement entre le mode Carte et le mode Liste
+**A.**[!DNL Adobe Stock] Rechercher les ressources semblables à celles dont l’ID est fourni. **B.** Rechercher les ressources correspondant à la forme ou à l’orientation que vous avez sélectionnée. **C.** Recherche d’un autre type de ressource pris en charge **D.** Ouvrir ou réduire le volet Filtres **E.** Licence et enregistrement de la ressource sélectionnée dans [!DNL Experience Manager] **F.** Enregistrez la ressource dans [!DNL Experience Manager] avec filigrane **G.** Exploration des ressources sur [!DNL Adobe Stock] site web similaire à la ressource sélectionnée **H.** Afficher les ressources sélectionnées sur [!DNL Adobe Stock] site web **I.** Nombre de ressources sélectionnées à partir des résultats de recherche **J.** Basculer entre le mode Carte et le mode Liste
 
 ### Recherche de ressources {#find-assets}
 
@@ -123,7 +123,7 @@ Les utilisateurs peuvent afficher les propriétés de toutes les ressources, ave
 
 >[!MORELIKETHIS]
 >
->* [Tutoriel vidéo sur l’ [!DNL Adobe Stock] utilisation de ressources avec [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr)
+>* [Tutoriel vidéo sur l’utilisation de [!DNL Adobe Stock] ressources avec [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr)
 >* [[!DNL Adobe Stock] aide pour les plans d’entreprise](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
 >* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/fr/stock/faq.html)
 

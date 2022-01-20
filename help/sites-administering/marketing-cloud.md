@@ -26,11 +26,11 @@ Avec Adobe Experience Manager, vous pouvez intégrer facilement les produits Ado
 * Adobe Search&amp;Promote permet aux marketeurs de contrôler et d’optimiser les résultats de la recherche sur leurs sites.
 * Adobe Campaign vous permet de gérer le contenu de livraison de courrier électronique directement dans Adobe Experience Manager.
 
-En outre, vous pouvez intégrer Adobe Experience Manager avec le [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) et avec les [services tiers](/help/sites-administering/third-party-services.md).
+En outre, vous pouvez intégrer Adobe Experience Manager à la [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) et [services tiers](/help/sites-administering/third-party-services.md).
 
 ## Intégration à Adobe Analytics {#integrating-with-adobe-analytics}
 
-[Adobe ](https://www.omniture.com/en/products/analytics/sitecatalyst) Analytics est la solution de pointe qui fournit aux spécialistes du marketing numérique un point unique pour mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne sur plusieurs canaux marketing. Il fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies numériques et des initiatives marketing. Avec Adobe Analytics, les marketeurs peuvent rapidement identifier les chemins d’accès les plus rentables sur un site web, segmenter le trafic afin de repérer les visiteurs web ayant le plus de valeur, déterminer où se rendent les visiteurs quand ils quittent leur site et identifier les mesures clés de réussite pour les campagnes de marketing en ligne. Adobe Analytics fait partie de la suite d’applications d’optimisation des activités en ligne Adobe Marketing Cloud.
+[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) est la solution de pointe du secteur qui fournit aux spécialistes du marketing numérique un emplacement unique où mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne sur plusieurs canaux marketing. Il fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies numériques et des initiatives marketing. Avec Adobe Analytics, les marketeurs peuvent rapidement identifier les chemins d’accès les plus rentables sur un site web, segmenter le trafic afin de repérer les visiteurs web ayant le plus de valeur, déterminer où se rendent les visiteurs quand ils quittent leur site et identifier les mesures clés de réussite pour les campagnes de marketing en ligne. Adobe Analytics fait partie de la suite d’applications d’optimisation des activités en ligne Adobe Marketing Cloud.
 
 Vous pouvez utiliser Adobe Analytics pour analyser les données de vos sites.
 
@@ -53,7 +53,7 @@ Vous pouvez également utiliser l’[assistant de souscription](/help/sites-admi
 
 Les besoins des cyberconsommateurs sont aujourd’hui en constante évolution et ils attendent des très nombreux sites et sources de contenus qu’ils leur offrent des contenus pertinents, voire personnalisés. Pour séduire ce public, il est essentiel que les marketeurs identifient rapidement les offres et les contenus pertinents et attrayants pour leurs publics. Forts de ce savoir, les marketeurs ont besoin de pouvoir faire évoluer en permanence leurs sites et de cibler le contenu adapté aux différents publics.
 
-[Intégration à Adobe ](/help/sites-administering/target.md) Target explique comment intégrer votre site à Adobe Target.
+[Intégration à Adobe Target](/help/sites-administering/target.md) explique comment intégrer votre site à Adobe Target.
 
 Vous pouvez également utiliser l’[assistant de souscription](/help/sites-administering/opt-in.md) pour exécuter facilement l’intégration.
 
@@ -69,19 +69,19 @@ Pour plus d’informations, voir [Souscription à Adobe Analytics et Target.](/
 
 ## Intégration à Dynamic Media Classic {#integrating-with-scene}
 
-Adobe Dynamic Media Classic est une solution hébergée permettant de publier, gérer, améliorer et diffuser des ressources de marketing dynamique et de merchandising visuel enrichi sur le web, les appareils mobiles, les e-mails, les médias sociaux, les écrans connectés à Internet et l’impression.
+Adobe Dynamic Media Classic est une solution hébergée qui permet de publier, gérer, améliorer et diffuser des ressources marketing dynamiques et de réaliser un marchandisage visuel riche sur le web, les appareils mobiles, les e-mails, les médias sociaux, les écrans connectés à Internet et l’impression.
 
 Dans Adobe Experience Manager, vous pouvez publier des ressources numériques directement d’Adobe Experience Manager vers Dynamic Media Classic et vous pouvez publier des ressources numériques de Dynamic Media Classic vers Adobe Experience Manager.
 
 En outre, vous pouvez afficher les ressources Adobe Experience Manager publiées dans Dynamic Media Classic dans différentes visionneuses telles que Zoom de base et Vidéo.
 
-Pour plus d’informations sur la façon dont Adobe Experience Manager s’intègre à Dynamic Media Classic, voir la documentation [Intégration à Dynamic Media Classic](/help/sites-administering/scene7.md) .
+Pour plus d’informations sur l’intégration d’Adobe Experience Manager à Dynamic Media Classic, voir [Intégration à Dynamic Media Classic](/help/sites-administering/scene7.md) documentation.
 
 ## Intégration à Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
 [Adobe Dynamic Tag Management offre aux marketeurs des outils intuitifs grâce auxquels ils peuvent gérer facilement et rapidement un nombre illimité de balises Adobe et de tierces parties. ](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) Vous pouvez optimiser pratiquement n’importe quel élément en ligne, avec une plus grande maîtrise et plus de souplesse, tout en dépendant moins des ressources informatiques.
 
-[Intégrez la ](/help/sites-administering/dtm.md) gestion dynamique des balises à Adobe Experience Manager afin d’utiliser les propriétés web de la gestion dynamique des balises pour effectuer le suivi des sites Adobe Experience Manager.
+[Intégration de la gestion dynamique des balises Adobe](/help/sites-administering/dtm.md) avec Adobe Experience Manager afin que vous puissiez utiliser les propriétés web de Dynamic Tag Management pour effectuer le suivi des sites Adobe Experience Manager.
 
 ## Intégration à Adobe Audience Manager {#integrating-with-adobe-audience-manager}
 
@@ -99,7 +99,7 @@ Pour plus d’informations sur l’intégration d’Adobe Experience Manager et 
 
 [Adobe Campaign](https://www.adobe.com/solutions/campaign-management.html) vous permet de gérer le contenu de livraison de courrier électronique directement dans Adobe Experience Manager.
 
-Pour plus d’informations sur la façon dont Adobe Experience Manager s’intègre à Adobe Campaign, voir [Intégration à Adobe Campaign](/help/sites-administering/campaignstandard.md).
+Pour plus d’informations sur l’intégration d’Adobe Experience Manager à Adobe Campaign, voir [Intégration à Adobe Campaign](/help/sites-administering/campaignstandard.md).
 
 ## Intégration à Livefyre {#integrating-with-livefyre}
 

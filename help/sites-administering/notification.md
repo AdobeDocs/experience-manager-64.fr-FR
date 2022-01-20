@@ -29,7 +29,7 @@ AEM envoie des notifications aux utilisateurs qui :
 Conditions préalables :
 
 * L’utilisateur doit disposer d’une adresse électronique valide définie dans son profil.
-* Le **service de messagerie Day CQ** doit être correctement configuré.
+* Le **Service de messagerie Day CQ** doit être correctement configuré.
 
 Lorsque l’utilisateur est averti, il reçoit un courrier électronique dans la langue définie dans son profil. Chaque langue possède son propre modèle, qui peut être personnalisé. De nouveaux modèles de courrier électronique peuvent être ajoutés pour de nouvelles langues.
 
@@ -45,7 +45,7 @@ Les contraintes suivantes s’appliquent :
 
 * Le **port de serveur SMTP** doit être le port 25 ou supérieur.
 
-* Le **nom d’hôte du serveur SMTP** ne doit pas être vide.
+* Le **Nom d’hôte du serveur SMTP** ne doit pas être vide.
 * L’**adresse « De »** ne doit pas être vide.
 
 Pour résoudre plus facilement un problème avec le **service de messagerie Day CQ**, vous pouvez examiner les journaux du service :
@@ -67,7 +67,7 @@ Pour configurer l’adresse électronique De, ajoutez un nœud `sling:OsgiConfig
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` de type `sling:OsgiConfig`
 
-1. Ajoutez une propriété `String` au noeud nommé `email.from`. Pour la valeur, indiquez l’adresse électronique que vous souhaitez utiliser.
+1. Ajouter un `String` au noeud nommé `email.from`. Pour la valeur, indiquez l’adresse électronique que vous souhaitez utiliser.
 
 1. Cliquez sur **Enregistrer tout**.
 
@@ -144,7 +144,7 @@ Le modèle doit avoir le format suivant :
 * `${userId}`, l’ID de l’utilisateur ayant déclenché l’événement.
 * `${modifications}`, décrit le type de l’événement de page et le chemin de page au format suivant :
 
-   &lt;page event=&quot;&quot; type=&quot;&quot;> =>  &lt;page path=&quot;&quot;>
+   &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
 
    Par exemple :
 
@@ -193,7 +193,7 @@ Le modèle doit avoir le format suivant :
  footer=<text_4>
 ```
 
-Où `<text_x>` peut être un mélange de texte statique et de variables de chaîne dynamique.
+Où `<text_x>` peut être un mélange de texte statique et de variables de chaîne dynamiques.
 
 Les variables suivantes peuvent être utilisées dans le modèle de courrier électronique pour les notifications de forum :
 
@@ -250,11 +250,11 @@ subject=<text_1>
 
 >[!NOTE]
 >
->Où `<text_x>` peut être un mélange de texte statique et de variables de chaîne dynamique. Chaque ligne d’un élément `<text_x>` doit se terminer par une barre oblique inverse ( `\`), à l’exception de la dernière instance, lorsque l’absence de la barre oblique inverse indique la fin de la variable de chaîne `<text_x>`.
+>Où `<text_x>` peut être un mélange de texte statique et de variables de chaîne dynamiques. Chaque ligne d’une `<text_x>` doit se terminer par une barre oblique inverse ( `\`), sauf pour la dernière instance, lorsque l’absence de la barre oblique inverse indique la fin de la variable `<text_x>` variable string .
 >
 >Vous trouverez plus d’informations sur le format des modèles dans la méthode [javadocs of the Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
 
-La méthode `${payload.path.open}` affiche le chemin d’accès à la charge utile de l’élément de travail. Par exemple, pour une page dans Sites, `payload.path.open` serait similaire à `/bin/wcmcommand?cmd=open&path=…`.; sans le nom du serveur, c’est pourquoi le modèle ajoute `${host.prefix}` en préfixe.
+La méthode `${payload.path.open}` affiche le chemin d’accès à la charge utile de l’élément de travail. Par exemple, pour une page dans Sites , puis `payload.path.open` serait similaire à `/bin/wcmcommand?cmd=open&path=…`.; sans le nom du serveur, c’est pourquoi le modèle ajoute `${host.prefix}`.
 
 Les variables suivantes peuvent être utilisées dans le modèle de courrier électronique :
 
@@ -301,7 +301,7 @@ Pour ajouter un modèle pour une nouvelle langue :
 
 >[!NOTE]
 >
->`<language-code>` utilisé comme nom de fichier pour le modèle de courrier électronique doit être un code de langue en minuscules de deux lettres reconnu par AEM. Pour les codes de langue, AEM s’appuie sur la norme ISO-639-1.
+>Le `<language-code>` utilisé comme nom de fichier pour le modèle de courrier électronique doit être un code de langue en minuscules de deux lettres reconnu par AEM. Pour les codes de langue, AEM s’appuie sur la norme ISO-639-1.
 
 ## Configuration des notifications électroniques d’AEM Assets {#assetsconfig}
 

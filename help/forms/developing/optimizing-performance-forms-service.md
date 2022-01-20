@@ -1,8 +1,8 @@
 ---
 title: Optimisation des performances du service Forms
-seo-title: Optimisation des performances du service Forms
-description: Définissez les options d’exécution lors du rendu d’un formulaire et stockez des fichiers XDP dans le référentiel afin d’optimiser les performances du service Forms.
-seo-description: Définissez les options d’exécution lors du rendu d’un formulaire et stockez des fichiers XDP dans le référentiel afin d’optimiser les performances du service Forms.
+seo-title: Optimizing the Performance of theForms Service
+description: Définissez les options d’exécution lors du rendu d’un formulaire et stockez les fichiers XDP dans le référentiel afin d’optimiser les performances du service Forms.
+seo-description: Set run-time options when rendering a form and store XDP files in the repository to optimize the performance of the Forms service.
 uuid: 9040c09a-e5d0-432b-b1c5-ad46ab57c4fc
 contentOwner: admin
 content-type: reference
@@ -14,7 +14,7 @@ role: Developer
 exl-id: a6d468cd-2b70-4332-8277-15f8b9fc1329
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1417'
 ht-degree: 7%
 
 ---
@@ -45,18 +45,18 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Création d’un objet API client Forms**
 
-Avant d’effectuer par programmation une opération d’API client de service Forms, vous devez créer un client de service Forms. Si vous utilisez l’API Java, créez un objet `FormsServiceClient` . Si vous utilisez l’API du service Web Forms, créez un objet `FormsService` .
+Avant d’effectuer par programmation une opération d’API client de service Forms, vous devez créer un client de service Forms. Si vous utilisez l’API Java, créez une `FormsServiceClient` . Si vous utilisez l’API du service Web Forms, créez une `FormsService` .
 
 **Définition des options d’exécution des performances**
 
 Vous pouvez définir les options d’exécution de performances suivantes afin d’améliorer les performances du service Forms :
 
-* **Mise en cache** des formulaires : Vous pouvez mettre en cache un formulaire rendu au format PDF dans le cache du serveur. Chaque formulaire est mis en cache après avoir été généré pour la première fois. Sur un rendu ultérieur, si le formulaire mis en cache est plus récent que l’horodatage de conception de formulaire, le formulaire est récupéré depuis le cache. En mettant en cache des formulaires, vous améliorez les performances du service Forms, car il n’a pas à récupérer la conception de formulaire à partir d’un référentiel.
+* **Mise en cache des formulaires**: Vous pouvez mettre en cache un formulaire rendu en tant que PDF dans le cache du serveur. Chaque formulaire est mis en cache après avoir été généré pour la première fois. Sur un rendu ultérieur, si le formulaire mis en cache est plus récent que l’horodatage de conception de formulaire, le formulaire est récupéré depuis le cache. En mettant en cache des formulaires, vous améliorez les performances du service Forms, car il n’a pas à récupérer la conception de formulaire à partir d’un référentiel.
 * Le rendu des guides de formulaire (obsolète) peut prendre plus de temps que les autres types de transformation. Il est recommandé de mettre en cache les guides de formulaire (obsolète) afin d’améliorer les performances.
-* **Option** autonome : Si vous n’avez pas besoin du service Forms pour effectuer des calculs côté serveur, vous pouvez définir l’option Autonome sur  `true`, ce qui entraîne la génération de formulaires sans informations d’état. Les informations d’état sont nécessaires si vous souhaitez rendre un formulaire interactif à un utilisateur final qui saisit ensuite les informations dans le formulaire et renvoie le formulaire au service Forms. Le service Forms effectue ensuite une opération de calcul et renvoie le formulaire à l’utilisateur avec les résultats affichés dans le formulaire. Si un formulaire sans informations d’état est renvoyé au service Forms, seules les données XML sont disponibles et les calculs côté serveur ne sont pas effectués.
-* **Linearized PDF** : Un fichier PDF linéarisé est organisé pour permettre un accès incrémentiel efficace dans un environnement réseau. Le fichier PDF est un fichier PDF valide à tous les égards et est compatible avec toutes les visionneuses et autres applications PDF existantes. En d’autres termes, un PDF linéarisé peut être affiché pendant son téléchargement.
-* Cette option n’améliore pas les performances lorsqu’un formulaire PDF est rendu sur le client.
-* **Option** GuideRSL : Active la génération du guide de formulaire (obsolète) à l’aide de bibliothèques partagées d’exécution. Cela signifie que la première requête téléchargera un fichier SWF plus petit, ainsi que des bibliothèques partagées plus grandes qui sont stockées dans le cache du navigateur. Pour plus d’informations, voir RSL dans la documentation Flex.
+* **Option autonome**: Si vous n’avez pas besoin du service Forms pour effectuer des calculs côté serveur, vous pouvez définir l’option Autonome sur `true`, ce qui entraîne la génération de formulaires sans informations d’état. Les informations d’état sont nécessaires si vous souhaitez rendre un formulaire interactif à un utilisateur final qui saisit ensuite les informations dans le formulaire et renvoie le formulaire au service Forms. Le service Forms effectue ensuite une opération de calcul et renvoie le formulaire à l’utilisateur avec les résultats affichés dans le formulaire. Si un formulaire sans informations d’état est renvoyé au service Forms, seules les données XML sont disponibles et les calculs côté serveur ne sont pas effectués.
+* **PDF linéarisé**: Un fichier de PDF linéarisé est organisé pour permettre un accès incrémentiel efficace dans un environnement réseau. Le fichier de PDF est un PDF valide à tous les égards et est compatible avec toutes les visionneuses et autres applications de PDF existantes. En d’autres termes, un PDF linéarisé peut être affiché pendant son téléchargement.
+* Cette option n’améliore pas les performances lorsqu’un formulaire de PDF est rendu sur le client.
+* **Option GuideRSL**: Active la génération du guide de formulaire (obsolète) à l’aide de bibliothèques partagées d’exécution. Cela signifie que la première requête téléchargera un fichier de SWF plus petit, ainsi que des bibliothèques partagées plus volumineuses qui sont stockées dans le cache du navigateur. Pour plus d’informations, voir RSL dans la documentation Flex.
 * Vous pouvez également améliorer les performances du service Forms en effectuant le rendu d’un formulaire sur le client. (Voir [Rendu de Forms sur le client](/help/forms/developing/rendering-forms-client.md).)
 
 **Rendu du formulaire**
@@ -77,11 +77,11 @@ Une fois que le service Forms a rendu un formulaire, il renvoie un flux de donn�
 
 [Rendu des PDF forms interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Rendu de Forms au format HTML](/help/forms/developing/rendering-forms-html.md)
+[Rendu de Forms en tant que HTML](/help/forms/developing/rendering-forms-html.md)
 
 [Création d’applications web qui renvoient Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-### Optimiser les performances à l’aide de l’API Java {#optimize-the-performance-using-the-java-api}
+### Optimisation des performances à l’aide de l’API Java {#optimize-the-performance-using-the-java-api}
 
 Rendre un formulaire avec des performances optimisées à l’aide de l’API Forms (Java) :
 
@@ -92,33 +92,33 @@ Rendre un formulaire avec des performances optimisées à l’aide de l’API Fo
 1. Création d’un objet API client Forms
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
+   * Créez un `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory` .
 
 1. Définition des options d’exécution des performances
 
    * Créez un objet `PDFFormRenderSpec` en utilisant son constructeur.
-   * Définissez l’option de cache de formulaire en appelant la méthode `setCacheEnabled` de l’objet `PDFFormRenderSpec` et en transmettant `true`.
-   * Définissez l’option linéarisée en appelant la méthode `setLinearizedPDF` de l’objet `PDFFormRenderSpec` et en transmettant `true.`
+   * Définissez l’option de cache de formulaire en appelant la méthode `PDFFormRenderSpec` de `setCacheEnabled` méthode et transmission `true`.
+   * Définissez l’option linéarisée en appelant la variable `PDFFormRenderSpec` de `setLinearizedPDF` méthode et transmission `true.`
 
 1. Rendu du formulaire
 
-   Appelez la méthode `renderPDFForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
+   Appeler la variable `FormsServiceClient` de `renderPDFForm` et transmettez les valeurs suivantes :
 
    * Une valeur string qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
-   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner de données, transmettez un objet `com.adobe.idp.Document` vide.
-   * Objet `PDFFormRenderSpec` qui stocke des options d’exécution afin d’améliorer les performances.
-   * Objet `URLSpec` contenant des valeurs URI requises par le service Forms.
-   * Objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif qui vous permet de spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+   * A `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un `com.adobe.idp.Document` .
+   * A `PDFFormRenderSpec` qui stocke des options d’exécution afin d’améliorer les performances.
+   * A `URLSpec` contenant des valeurs URI requises par le service Forms.
+   * A `java.util.HashMap` qui stocke les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
 
-   La méthode `renderPDFForm` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur Web client.
+   Le `renderPDFForm` renvoie une `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur Web client.
 
 1. Écrire le flux de données de formulaire dans le navigateur Web client
 
-   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données de formulaire au navigateur Web client.
-   * Créez un objet `com.adobe.idp.Document` en appelant la méthode `FormsResult` de l’objet `getOutputContent`.
-   * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
-   * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `InputStream` de l’objet `read`et en transmettant le tableau d’octets en tant qu’argument.
-   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur Web client. Transmettez le tableau d’octets à la méthode `write` .
+   * Créez un `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données de formulaire au navigateur Web client.
+   * Créez un `com.adobe.idp.Document` en appelant le `FormsResult` object ‘s `getOutputContent` .
+   * Créez un `java.io.InputStream` en appelant le `com.adobe.idp.Document` de `getInputStream` .
+   * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la fonction `InputStream` de `read`et transmission du tableau d’octets en tant qu’argument.
+   * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets au `write` .
 
 **Voir également**
 
@@ -128,7 +128,7 @@ Rendre un formulaire avec des performances optimisées à l’aide de l’API Fo
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Optimiser les performances à l’aide de l’API de service Web {#optimize-the-performance-using-the-web-service-api}
+### Optimisation des performances à l’aide de l’API de service Web {#optimize-the-performance-using-the-web-service-api}
 
 Rendre un formulaire avec des performances optimisées à l’aide de l’API Forms (service Web) :
 
@@ -139,38 +139,38 @@ Rendre un formulaire avec des performances optimisées à l’aide de l’API Fo
 
 1. Création d’un objet API client Forms
 
-   Créez un objet `FormsService` et définissez des valeurs d’authentification.
+   Créez un `FormsService` et définissez les valeurs d’authentification.
 
 1. Définition des options d’exécution des performances
 
    * Créez un objet `PDFFormRenderSpec` en utilisant son constructeur.
-   * Définissez l’option de cache de formulaire en appelant la méthode `setCacheEnabled` de l’objet `PDFFormRenderSpec` et en transmettant true.
-   * Définissez l’option autonome en appelant la méthode `setStandAlone` de l’objet `PDFFormRenderSpec` et en transmettant la valeur true.
-   * Définissez l’option linéarisée en appelant la méthode `setLinearizedPDF` de l’objet `PDFFormRenderSpec` et en transmettant true.
+   * Définissez l’option de cache de formulaire en appelant la méthode `PDFFormRenderSpec` de `setCacheEnabled` et transmettre la valeur true.
+   * Définissez l’option autonome en appelant la méthode `PDFFormRenderSpec` de `setStandAlone` et transmettre la valeur true.
+   * Définissez l’option linéarisée en appelant la variable `PDFFormRenderSpec` de `setLinearizedPDF` et transmettre la valeur true.
 
 1. Rendu du formulaire
 
-   Appelez la méthode `renderPDFForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
+   Appeler la variable `FormsService` de `renderPDFForm` et transmettez les valeurs suivantes :
 
    * Une valeur string qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
-   * Objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez `null`.
-   * Objet `PDFFormRenderSpecc` qui stocke les options d’exécution.
-   * Objet `URLSpec` contenant des valeurs URI requises par le service Forms.
-   * Objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif qui vous permet de spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
-   * Objet `com.adobe.idp.services.holders.BLOBHolder` vide renseigné par la méthode . Il est utilisé pour stocker le formulaire PDF rendu.
-   * Objet `javax.xml.rpc.holders.LongHolder` vide renseigné par la méthode . (Cet argument stocke le nombre de pages dans le formulaire).
-   * Objet `javax.xml.rpc.holders.StringHolder` vide renseigné par la méthode . (Cet argument stocke la valeur du paramètre régional).
-   * Objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
+   * A `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`.
+   * A `PDFFormRenderSpecc` qui stocke les options d’exécution.
+   * A `URLSpec` contenant des valeurs URI requises par le service Forms.
+   * A `java.util.HashMap` qui stocke les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+   * Une valeur vide `com.adobe.idp.services.holders.BLOBHolder` qui est renseigné par la méthode . Il est utilisé pour stocker le formulaire de PDF rendu.
+   * Une valeur vide `javax.xml.rpc.holders.LongHolder` qui est renseigné par la méthode . (Cet argument stocke le nombre de pages dans le formulaire).
+   * Une valeur vide `javax.xml.rpc.holders.StringHolder` qui est renseigné par la méthode . (Cet argument stocke la valeur du paramètre régional).
+   * Une valeur vide `com.adobe.idp.services.holders.FormsResultHolder` qui contiendra les résultats de cette opération.
 
-   La méthode `renderPDFForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` transmis en tant que valeur du dernier argument avec un flux de données de formulaire qui doit être écrit dans le navigateur Web client.
+   Le `renderPDFForm` renseigne la méthode `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
 1. Écrire le flux de données de formulaire dans le navigateur Web client
 
-   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de l’objet `com.adobe.idp.services.holders.FormsResultHolder`.
-   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données de formulaire au navigateur Web client.
-   * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur Web client. Transmettez le tableau d’octets à la méthode `write` .
+   * Créez un `FormResult` en obtenant la valeur de la variable `com.adobe.idp.services.holders.FormsResultHolder` de `value` membre de données.
+   * Créez un `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données de formulaire au navigateur Web client.
+   * Créez un `BLOB` qui contient des données de formulaire en appelant la méthode `FormsResult` de `getOutputContent` .
+   * Créez un tableau d’octets et renseignez-le en appelant la variable `BLOB` de `getBinaryData` . Cette tâche affecte le contenu de la `FormsResult` vers le tableau d’octets.
+   * Appeler la variable `javax.servlet.http.HttpServletResponse` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets au `write` .
 
 **Voir également**
 

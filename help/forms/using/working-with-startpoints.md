@@ -1,8 +1,8 @@
 ---
 title: Utilisation des points de départ
-seo-title: Utilisation des points de départ
+seo-title: Working with Startpoints
 description: Travailler avec un processus AEM Forms défini dans Workbench depuis votre périphérique mobile.
-seo-description: Travailler avec un processus AEM Forms défini dans Workbench depuis votre périphérique mobile.
+seo-description: Steps to work with a AEM Forms process from your Mobile device defined in Workbench.
 uuid: 9c51ce52-e7ba-43d3-a85c-67067f680ccb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 exl-id: ef9352c7-c164-4cbf-8f18-5b97aa5f56be
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 81%
+source-wordcount: '244'
+ht-degree: 80%
 
 ---
 
@@ -31,7 +31,7 @@ Pour lancer un processus à partir de l’application AEM Forms, vous devez disp
 **Démarrage d’un processus défini dans Workbench**
 
 1. Pour afficher les points de départ disponibles dans l’application AEM Forms, accédez à l’écran [Accueil](/help/forms/using/home-screen.md).
-1. Dans l’écran **[!UICONTROL Accueil]**, la liste **[!UICONTROL Toutes les Forms]** s’affiche par défaut.
+1. Sur le **[!UICONTROL Accueil]** par défaut, l’écran **[!UICONTROL Toutes les Forms]** s’affiche.
 
    Le point de départ est associé à un formulaire. Appuyez sur le formulaire associé au point de départ dans la liste pour l’ouvrir.
 

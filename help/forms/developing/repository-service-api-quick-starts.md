@@ -64,7 +64,7 @@ Le chemin d’accès à une ressource située dans le référentiel AEM Forms es
 
 ## Démarrage rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
-L’exemple de code Java suivant crée un dossier appelé *FormsFolder* à l’emplacement suivant `/Applications/FormsApplication/1.0/`. (Voir [Création de dossiers](/help/forms/developing/aem-forms-repository.md#creating-folders).)
+L’exemple de code Java suivant crée un dossier appelé *FormsFolder* à l’emplacement suivant : `/Applications/FormsApplication/1.0/`. (Voir [Création de dossiers](/help/forms/developing/aem-forms-repository.md#creating-folders).)
 
 ```as3
  /* 
@@ -170,7 +170,7 @@ L’exemple de code Java suivant crée un dossier appelé *FormsFolder* à l’e
 
 ## Démarrage rapide (mode SOAP) : Écriture d’une ressource à l’aide de l’API Java {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
-L’exemple de code Java suivant écrit une ressource appelée *loan.xdp* dans le référentiel. La ressource est ajoutée à l’emplacement `/Applications/FormsApplication/1.0/FormsFolder` . (Voir [Écriture de ressources](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+L’exemple de code Java suivant écrit une ressource appelée *loan.xdp* dans le référentiel. La ressource est ajoutée au `/Applications/FormsApplication/1.0/FormsFolder` emplacement. (Voir [Écriture de ressources](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 ```as3
  /* 
@@ -397,7 +397,7 @@ L’exemple de code Java suivant répertorie les ressources qui se trouvent dans
 
 ## Démarrage rapide (mode SOAP) : Lecture d&#39;une ressource à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
 
-L’exemple de code Java suivant lit une ressource appelée *Loan.xdp* du référentiel. Le fichier XDP se trouve dans `/Applications/FormsApplication/1.0/FormsFolder/`. (Voir [Ressources de lecture](/help/forms/developing/aem-forms-repository.md#reading-resources).)
+L’exemple de code Java suivant lit une ressource appelée *Loan.xdp* du référentiel. Le fichier XDP se trouve dans `/Applications/FormsApplication/1.0/FormsFolder/`. (Voir [Lire les ressources](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
 ```as3
  /* 
@@ -498,7 +498,7 @@ L’exemple de code Java suivant lit une ressource appelée *Loan.xdp* du réfé
 
 ## Démarrage rapide (mode SOAP) : Mise à jour d’une ressource à l’aide de l’API Java {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
 
-L’exemple de code Java suivant met à jour `/Applications/FormsApplication/1.0/FormsFolder` en modifiant sa description. (Voir [Mise à jour des ressources](/help/forms/developing/aem-forms-repository.md#updating-resources).)
+Les exemples de mises à jour de code Java suivants `/Applications/FormsApplication/1.0/FormsFolder` en modifiant sa description. (Voir [Mise à jour des ressources](/help/forms/developing/aem-forms-repository.md#updating-resources).)
 
 ```as3
  /* 
@@ -734,7 +734,7 @@ L’exemple de code Java suivant recherche Loan.xdp dans `Applications/FormsAppl
 
 ## Démarrage rapide (mode SOAP) : Création de relations entre les ressources à l’aide de l’API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
-L’exemple de code Java suivant crée une relation entre deux ressources dans le référentiel AEM Forms. (Voir [Création de relations de ressources](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
+L’exemple de code Java suivant crée une relation entre deux ressources dans le référentiel AEM Forms. (Voir [Création de relations avec les ressources](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
 
 ```as3
  /* 

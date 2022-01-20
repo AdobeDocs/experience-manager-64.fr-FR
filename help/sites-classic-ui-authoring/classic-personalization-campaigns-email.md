@@ -1,8 +1,8 @@
 ---
 title: Marketing par messagerie électronique
-seo-title: Marketing par messagerie électronique
+seo-title: E-mail Marketing
 description: Le marketing par messagerie électronique (les newsletters, par exemple) constitue une partie importante de toute campagne de marketing, car il vous sert à pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
-seo-description: Le marketing par messagerie électronique (les newsletters, par exemple) constitue une partie importante de toute campagne de marketing, car il vous sert à pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
+seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
 uuid: 798e06cd-64dd-4a8d-8a7a-9a7ba80045f6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
 source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1726'
 ht-degree: 94%
 
 ---

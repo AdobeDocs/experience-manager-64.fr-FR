@@ -1,8 +1,8 @@
 ---
 title: Les pièges du codage
-seo-title: Les pièges du codage
+seo-title: Code pitfalls
 description: Pièges de codage communs à éviter lors du développement pour AEM
-seo-description: Pièges de codage communs à éviter lors du développement pour AEM
+seo-description: Common coding pitfalls to avoid when developing for AEM
 uuid: e7413bdc-4889-45ff-bdcb-b0893d33a3b7
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 01362026-a696-4a5d-94e9-ea784eaa6e4b
 exl-id: f39910cf-1875-43fc-bfb5-259b9d8f135d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '88'
 ht-degree: 94%
 
 ---

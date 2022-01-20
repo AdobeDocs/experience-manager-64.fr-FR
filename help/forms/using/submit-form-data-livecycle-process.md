@@ -1,8 +1,8 @@
 ---
 title: Configuration d’AEM Forms pour envoyer des données de formulaire aux processus AEM Forms sur JEE
-seo-title: Configuration d’AEM Forms pour envoyer des données de formulaire aux processus AEM Forms sur JEE
+seo-title: Configuring AEM Forms to submit form data to an AEM Forms on JEE process
 description: AEM Forms vous permet d’intégrer des formulaires adaptatifs aux processus AEM Forms sur JEE pour traiter les données des formulaires.
-seo-description: AEM Forms vous permet d’intégrer des formulaires adaptatifs aux processus AEM Forms sur JEE pour traiter les données des formulaires.
+seo-description: AEM Forms allows you to integrate adaptive forms with AEM Forms on JEE processes for processing form data.
 uuid: ee7ea442-d604-4520-9af5-ad40ec4927a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ role: Admin
 exl-id: 260e405e-f59c-4aea-b83f-53ee103df94e
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 83%
+source-wordcount: '326'
+ht-degree: 81%
 
 ---
 
@@ -25,7 +25,7 @@ Les formulaires adaptatifs prennent en charge l’envoi de données à un proces
 
 Effectuez les étapes suivantes pour permettre à votre serveur AEM Forms d’envoyer des données à un serveur AEM Forms sur JEE :
 
-1. Accédez à AEM console de configuration web à l’adresse https://[*host*]:[*port*]/system/console/configMgr.
+1. Accédez à AEM console de configuration web à l’adresse https://[*hôte*]:[*port*]/system/console/configMgr
 
 1. Recherchez et cliquez sur le composant **Configuration du SDK client d’Adobe LiveCycle**.
 1. Cliquer pour modifier l’URL du serveur de configuration, le nom d’utilisateur et le mot de passe du serveur AEM Forms sur JEE.
@@ -40,7 +40,7 @@ Une fois que votre AEM Forms est configuré, associez les données XML et les p
 1. Dans la console de configuration web d’AEM, cliquez pour modifier la configuration **Localisateur et invocateur du processus Guide LiveCycle**.
 1. Spécifiez les paramètres suivants :
 
-   * **Nom du paramètre**  XML de données (obligatoire) : Spécifiez le fichier de propriétés XML du processus AEM Forms on JEE qui doit traiter les données envoyées. La valeur par défaut est **dataxml**.
+   * **Nom du paramètre xml de données** (obligatoire) : Spécifiez le fichier de propriétés XML du processus AEM Forms on JEE qui doit traiter les données envoyées. La valeur par défaut est **dataxml**.
    * **Nom du paramètre de pièces jointes**(facultatif) : spécifiez la liste d’objets de document que le processus AEM Forms sur JEE doit traiter. La valeur par défaut est **fileAttachmentsList**.
 
 1. Vérifiez les paramètres et cliquez sur **Enregistrer**.

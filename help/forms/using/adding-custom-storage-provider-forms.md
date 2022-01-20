@@ -1,36 +1,36 @@
 ---
-title: Stockage personnalisé pour le composant Drafts & Submissions
-seo-title: Stockage personnalisé pour le composant Brouillons et envois
+title: Stockage personnalisé pour le composant Brouillons et envois
+seo-title: Custom storage for drafts and submissions component
 description: Découvrez comment personnaliser le stockage des données utilisateur pour les brouillons et les envois.
-seo-description: Découvrez comment personnaliser le stockage des données utilisateur pour les brouillons et les envois.
+seo-description: See how to customize the storage of user data for drafts and submissions.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
-feature: Portail Formulaires
+feature: Forms Portal
 exl-id: 22f78940-de5f-4e16-b1f8-c3762d81802b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 75%
+source-wordcount: '311'
+ht-degree: 73%
 
 ---
 
-# Stockage personnalisé pour les composants Drafts et Submissions {#custom-storage-for-drafts-and-submissions-component}
+# Stockage personnalisé pour le composant Brouillons et envois {#custom-storage-for-drafts-and-submissions-component}
 
 ## Présentation {#overview}
 
 AEM Forms vous permet d’enregistrer un formulaire sous forme de brouillon. La fonctionnalité de brouillon vous permet de mettre à jour un formulaire de travail en cours, que vous pouvez remplir et envoyer ultérieurement sur n’importe quel périphérique.
 
-Par défaut, AEM Forms stocke les données utilisateur associées au brouillon et à l’envoi d’un formulaire dans le noeud `/content/forms/fp` de l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Par exemple, vous pouvez stocker des données utilisateur dans un magasin de données.
+Par défaut, AEM Forms stocke les données utilisateur associées au brouillon et à l’envoi d’un formulaire dans la variable `/content/forms/fp` sur l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Par exemple, vous pouvez stocker des données utilisateur dans un magasin de données.
 
 ## Prérequis  {#prerequisites}
 
-* Activation des [composants Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
-* Créer une [page Forms Portal](/help/forms/using/creating-form-portal-page.md)
-* Activation de [formulaires adaptatifs pour le portail de formulaires](/help/forms/using/draft-submission-component.md)
-* Découvrez les [détails de mise en oeuvre du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Activer [Composants de Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* Créez un [page Forms Portal](/help/forms/using/creating-form-portal-page.md)
+* Activer [formulaires adaptatifs pour le portail de formulaires](/help/forms/using/draft-submission-component.md)
+* En savoir plus [détails d’implémentation du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Service de données de brouillon {#draft-data-service}
 

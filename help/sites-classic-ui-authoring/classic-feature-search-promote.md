@@ -1,8 +1,8 @@
 ---
 title: Ajout de fonctionnalités Search&amp;Promote à votre page
-seo-title: Ajout de fonctionnalités Search&amp;Promote à votre page
-description: L’intégration des fonctionnalités Search&amp;Promote dans votre site web, vous pouvez utiliser les composants Search&amp;Promote pour ajouter des fonctionnalités à vos pages, telles que la recherche par mots-clés, l’amélioration de la recherche de pages de résultats de recherche et les bannières.
-seo-description: L’intégration des fonctionnalités Search&amp;Promote dans votre site web, vous pouvez utiliser les composants Search&amp;Promote pour ajouter des fonctionnalités à vos pages, telles que la recherche par mots-clés, l’amélioration de la recherche de pages de résultats de recherche et les bannières.
+seo-title: Adding Search&amp;Promote features to your page
+description: L’intégration des fonctionnalités Search&amp;Promote dans votre site web vous permet d’utiliser les composants Search&amp;Promote pour ajouter des fonctionnalités à vos pages, telles que la recherche par mot-clé, l’amélioration de la recherche dans les pages de résultats de recherche et les bannières.
+seo-description: Integrating Search&amp;Promote capabilities in your web site, you can use the Search&amp;Promote components to add features to your pages such as keyword search, search results page search refinement, and banners.
 uuid: 8831aa56-9d7f-44ca-9d32-5901bf762154
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,14 +12,14 @@ discoiquuid: 277d7e67-5778-48cb-89bb-29bcc734a485
 exl-id: 69a1e149-8706-42a5-ab84-2ffcfd1ec3cc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 64%
+source-wordcount: '1208'
+ht-degree: 66%
 
 ---
 
 # Ajout de fonctionnalités de Search &amp; Promote à votre page {#adding-search-promote-features-to-your-page}
 
-Pour intégrer des fonctionnalités de Search &amp; Promote à votre site web, utilisez les composants [!UICONTROL Search &amp; Promote] afin d’ajouter les fonctionnalités suivantes à vos pages :
+Pour intégrer des fonctionnalités de Search &amp; Promote à votre site web, utilisez la méthode [!UICONTROL Search &amp; Promote] composants pour ajouter les fonctionnalités suivantes à vos pages :
 
 * Recherche par mot-clé
 * Page des résultats de la recherche
@@ -83,20 +83,20 @@ Le composant **[!UICONTROL Pagination]** permet aux utilisateurs de naviguer au 
 
 ![srchpagination](assets/srchpagination.png)
 
-Vous pouvez configurer les propriétés de composant suivantes en mode [!UICONTROL Modifier] pour contrôler le comportement d’exécution :
+Vous pouvez configurer les propriétés de composant suivantes dans [!UICONTROL Modifier] pour contrôler le comportement d’exécution :
 
-* **[!UICONTROL Masquer la page]**  à résultat unique : sélectionnez cette option pour masquer les commandes de navigation de la page lorsque la recherche renvoie une seule page de résultats.
-* **[!UICONTROL Masquer le premier/dernier]**  : sélectionnez cette option pour empêcher les utilisateurs d’accéder à la première ou à la dernière page de résultats.
-* **[!UICONTROL Masquer le précédent/suivant]**  : détermine si les utilisateurs peuvent parcourir les pages de résultats par rapport à la page active.
-* **[!UICONTROL Masquer Afficher tout]**  : détermine si l’utilisateur peut consolider tous les résultats de recherche sur une seule page. En général, le fait de fournir des données paginées optimise l’utilisation des ressources serveur. Sélectionnez cette option pour empêcher le transfert d’importants jeux de données dans un seul message de réponse.
+* **[!UICONTROL Masquer la page de résultat unique]** - Sélectionnez cette option pour masquer les commandes de navigation de la page lorsque la recherche renvoie une seule page de résultats.
+* **[!UICONTROL Masquer le premier/dernier]** - Sélectionnez cette option pour empêcher les utilisateurs d’accéder à la première ou à la dernière page de résultats.
+* **[!UICONTROL Masquer Précédent/Suivant]** - Détermine si les utilisateurs peuvent parcourir les pages de résultats par rapport à la page active.
+* **[!UICONTROL Tout masquer]** - Détermine si l’utilisateur peut consolider tous les résultats de recherche sur une seule page. En général, le fait de fournir des données paginées optimise l’utilisation des ressources serveur. Sélectionnez cette option pour empêcher le transfert d’importants jeux de données dans un seul message de réponse.
 
-## Activation du filtrage des résultats par le biais de facettes  {#enabling-the-filtering-of-results-by-facets}
+## Activation du filtrage des résultats par le biais de facettes {#enabling-the-filtering-of-results-by-facets}
 
-Vous pouvez autoriser les utilisateurs à filtrer les résultats d’une recherche au moyen de facettes. Les composants **[!UICONTROL Liste de cases à cocher Facette]**, **[!UICONTROL Liste déroulante Facette]** et **[!UICONTROL Liste de liens Facette]** permettent aux utilisateurs de sélectionner une ou plusieurs facettes pour le filtrage. Lorsque vous utilisez ces composants, vous devez également inclure le composant **[!UICONTROL Chemin de navigation]**. Les chemins de navigation indiquent les filtres actuels qui sont utilisés.
+Vous pouvez autoriser les utilisateurs à filtrer les résultats d’une recherche au moyen de facettes. Le **[!UICONTROL Liste des cases à cocher - Facette]**, **[!UICONTROL Liste déroulante Facette]**, et **[!UICONTROL Facette Liste des liens]** Les composants permettent aux utilisateurs de sélectionner une ou plusieurs facettes pour le filtrage. Lorsque vous utilisez ces composants, vous devez également inclure le composant **[!UICONTROL Chemin de navigation]**. Les chemins de navigation indiquent les filtres actuels qui sont utilisés.
 
-Les composants **[!UICONTROL Liste de cases à cocher Facette]**, **[!UICONTROL Liste déroulante Facette]** et **[!UICONTROL Liste de liens Facette]** possèdent chacun les propriétés suivantes que vous configurez en mode **[!UICONTROL Modifier]** :
+Le **[!UICONTROL Liste des cases à cocher - Facette]**, **[!UICONTROL Liste déroulante Facette]**, et **[!UICONTROL Facette Liste des liens]** Les composants possèdent chacun les propriétés suivantes que vous configurez dans **[!UICONTROL Modifier]** mode :
 
-* **[!UICONTROL Nom de la facette]**  : nom de la facette utilisée pour les filtres.
+* **[!UICONTROL Nom de la facette]** - Nom de la facette utilisée pour les filtres.
 
 Le composant **[!UICONTROL Liste des cases à cocher - Facettes]** présente une liste de facettes accompagnée d’une case à cocher. Utilisez **[!UICONTROL Liste des cases à cocher - Facettes]** pour permettre aux utilisateurs d’afficher un sous-ensemble de résultats intégrant les éléments de plusieurs facettes. Par exemple, la facette Marque est appropriée, car plusieurs marques fournissent le même type de produit.
 
@@ -116,7 +116,7 @@ Les membres de facette s’affichent sous la forme d’une liste de liens. Le te
 
 ![sandplinklistcomp](assets/sandplinklistcomp.png)
 
-Les liens de la liste changent également lorsqu’un filtre est appliqué à partir d’un autre type de composant [!UICONTROL Search &amp; Promote]. L’utilisation de plusieurs types de composants de filtrage peut optimiser le filtrage.
+Les liens de la liste changent également lorsqu’un filtre est appliqué à partir d’un autre type de [!UICONTROL Search &amp; Promote] composant. L’utilisation de plusieurs types de composants de filtrage peut optimiser le filtrage.
 
 Le composant **[!UICONTROL Chemin de navigation]** permet aux utilisateurs de voir les filtres actuellement actifs pour les résultats de la recherche et l’ordre dans lequel ils ont été appliqués. Ils peuvent cliquer sur les éléments du chemin de navigation pour revenir à cette combinaison de filtres.
 
@@ -124,28 +124,28 @@ Le composant **[!UICONTROL Chemin de navigation]** permet aux utilisateurs de vo
 
 En mode d’édition, vous pouvez configurer les propriétés suivantes pour les chemins de navigation afin de personnaliser l’aspect du composant :
 
-* **[!UICONTROL Délimiteur]**  : définissez le caractère ou la chaîne de caractères à utiliser comme délimiteur entre chaque chemin de navigation. Le champ Délimiteur accepte toute chaîne de caractères en entrée. Le paramètre par défaut est : « > » (sans guillemets)
-* **[!UICONTROL Délimiteur de fin]**  : définissez un caractère ou une chaîne de caractères à afficher à la fin du chemin de navigation. Le champ Délimiteur de fin accepte toute chaîne de caractères en entrée. Le paramètre par défaut est &quot;vide&quot; (c’est-à-dire que rien n’est affiché à la fin de la ligne de chemin de navigation).
+* **[!UICONTROL Délimiteur]** - Définissez le caractère ou la chaîne de caractères à utiliser comme délimiteur entre chaque chemin de navigation. Le champ Délimiteur accepte toute chaîne de caractères en entrée. Le paramètre par défaut est : « > » (sans guillemets)
+* **[!UICONTROL Délimiteur de fin]** - Définissez un caractère ou une chaîne de caractères à afficher à la fin du chemin de navigation. Le champ Délimiteur de fin accepte toute chaîne de caractères en entrée. Le paramètre par défaut est &quot;vide&quot; (c’est-à-dire que rien n’est affiché à la fin de la ligne de chemin de navigation).
 
 ## Ajout de zones de recherche {#adding-search-boxes}
 
-Le composant **[!UICONTROL Recherche]** permet aux clients d’effectuer des recherches de mots-clés. Insérez des composants de recherche dans chaque page où un accès à la recherche est nécessaire. 
+Le **[!UICONTROL Rechercher]** permet aux clients d’effectuer des recherches par mot-clé. Insérez des composants de recherche dans chaque page où un accès à la recherche est nécessaire. 
 
-Configurez les propriétés suivantes en mode **[!UICONTROL Édition]** pour contrôler le comportement d’exécution :
+Configurez les propriétés suivantes dans **[!UICONTROL Modifier]** pour contrôler le comportement d’exécution :
 
-* **[!UICONTROL Chemin d’accès à la page de résultats]**  : chemin d’accès à la page qui affiche les résultats de la recherche.
-* **[!UICONTROL Activer la saisie automatique]**  : sélectionnez cette option pour faire apparaître les mots-clés de recherche suggérés lorsque le client commence à saisir du texte dans la zone de recherche.
+* **[!UICONTROL Chemin de la page de résultats]** - Chemin d’accès à la page qui affiche les résultats de la recherche.
+* **[!UICONTROL Activation de la saisie automatique]** - Sélectionnez cette option pour que les mots-clés de recherche suggérés s’affichent lorsque le client commence à saisir du texte dans la zone de recherche.
 
 ![sandpsearchcomp](assets/sandpsearchcomp.png)
 
 ## Ajout de bannières {#adding-banners}
 
-Le composant **[!UICONTROL Bannières]** affiche des bannières publicitaires en fonction des recherches de Search &amp; Promote du client. La logique du serveur Search&amp;Replace détermine la bannière publicitaire qu’il faut diffuser. Par exemple, une recherche sur un pantalon denim peut déclencher l’affichage d’une bannière associée à des articles de mode. Le filtrage par rayon Homme peut affiner davantage le choix de la bannière.
+Le **[!UICONTROL Bannières]** affiche des bannières publicitaires en fonction des recherches de Search &amp; Promote du client. La logique du serveur Search&amp;Replace détermine la bannière publicitaire qu’il faut diffuser. Par exemple, une recherche sur un pantalon denim peut déclencher l’affichage d’une bannière associée à des articles de mode. Le filtrage par rayon Homme peut affiner davantage le choix de la bannière.
 
-Le composant **[!UICONTROL Bannières]** fournit une propriété configurable nommée **[!UICONTROL Zone de bannière]**. En mode **[!UICONTROL Modifier]**, sélectionnez l’une des valeurs de propriété pour spécifier comment la bannière apparaît. Le service Search&amp;Promote détermine la liste des valeurs parmi lesquelles choisir.
+Le **[!UICONTROL Bannières]** component fournit une propriété configurable nommée **[!UICONTROL Zone de bannière]**. Dans **[!UICONTROL Modifier]** sélectionnez l’une des valeurs de propriété pour spécifier comment la bannière apparaît. Le service Search&amp;Promote détermine la liste des valeurs parmi lesquelles choisir.
 
 ## Exemple de page de recherche Search&amp;Promote {#example-search-promote-search-page}
 
 Ce schéma présente les composants ajoutés à une page pour créer des résultats Search&amp;Promote entièrement fonctionnels dans la page ci-dessous.
 
-![Exemple de ](assets/1328213789109.png) ![ sandppageexample 1328213789109](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![sandppageexample](assets/sandppageexample.png)

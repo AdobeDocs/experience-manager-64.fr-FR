@@ -1,8 +1,8 @@
 ---
 title: Configuration de Connector for IBM Content Manager
-seo-title: Configuration de Connector for IBM Content Manager
+seo-title: Configuring Connector for IBM Content Manager
 description: Configurez le connecteur pour IBM Content Manager pour permettre la communication entre AEM Forms et IBM Content Manager.
-seo-description: Configurez le connecteur pour IBM Content Manager pour permettre la communication entre AEM Forms et IBM Content Manager.
+seo-description: Configure the Connector for IBM Content Manager to enable communication between AEM forms and IBM Content Manager.
 uuid: 3d55169d-93e3-4d4e-b18b-2a3394e1de3b
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 3094b178-3b1a-46b3-8fbd-c20388afa3a7
 exl-id: 8c65531e-f4f0-4cc4-b328-eaefb5662cf1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 96%
+source-wordcount: '277'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Le connecteur pour IBM Content Manager permet la communication entre AEM forms e
 1. (Facultatif) Dans le champ Chaîne de connexion de l’alias, saisissez des arguments de connexion supplémentaires. Ce champ n’est généralement pas complété. Pour plus d’informations, consultez votre documentation IBM.
 1. Cliquez sur Enregistrer.
 
-## Validation des paramètres d’un service  {#validation-of-service-settings}
+## Validation des paramètres d’un service {#validation-of-service-settings}
 
 Si vous saisissez un nom d’utilisateur ou un alias de banque de données incorrect, vous obtiendrez les résultats suivants selon que le service Content Repository Connector for IBM Content Manager est en cours d’exécution ou non :
 

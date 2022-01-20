@@ -35,7 +35,7 @@ Vous pouvez effectuer une recherche selon les options suivantes (prédicats) :
 
 Vous pouvez personnaliser le panneau Filtres et ajouter/supprimer des prédicats de recherche à l’aide des [facettes de recherche](search-facets.md). Pour afficher le panneau Filtres, procédez comme suit :
 
-1. Dans l’interface utilisateur d’Assets, appuyez/cliquez sur ![search_icon](assets/search_icon.png) dans la barre d’outils pour afficher la zone Omni-recherche.
+1. Dans l’interface utilisateur Assets, appuyez/cliquez sur ![search_icon](assets/search_icon.png) dans la barre d’outils pour afficher la zone Omni-recherche.
 1. Saisissez le terme à rechercher et appuyez ensuite sur Entrée. Vous pouvez également appuyer sur la touche Entrée, sans saisir aucun terme à rechercher. Ne saisissez aucun espace avant le terme, sans quoi la recherche ne fonctionnera pas.
 
 1. Appuyez/cliquez sur l’icône de navigation globale. Le panneau Filtres s’affiche.

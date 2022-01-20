@@ -1,19 +1,19 @@
 ---
 title: Journalisation
-seo-title: Journalisation
+seo-title: Logging
 description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
-seo-description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
+seo-description: Learn how to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
 uuid: 8c9e3628-2f2c-445d-9706-5c7725b85fe2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
-feature: Configuration
+feature: Configuring
 exl-id: d94b776d-db06-4f46-ac7f-c3b8e4160b69
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '664'
 ht-degree: 93%
 
 ---

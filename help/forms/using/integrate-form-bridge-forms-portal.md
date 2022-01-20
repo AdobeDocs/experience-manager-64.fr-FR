@@ -1,8 +1,8 @@
 ---
 title: Intégration d’un objet FormBridge à un portail personnalisé pour les formulaires HTML5
-seo-title: Intégration d’un objet FormBridge à un portail personnalisé pour les formulaires HTML5
+seo-title: Integrating Form Bridge with custom portal for HTML5 forms
 description: Vous pouvez utiliser l’API FormBridge pour obtenir ou définir des valeurs de champs de formulaire à partir de la page HTML et envoyer le formulaire.
-seo-description: Vous pouvez utiliser l’API FormBridge pour obtenir ou définir des valeurs de champs de formulaire à partir de la page HTML et envoyer le formulaire.
+seo-description: You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form.
 uuid: 09f2189f-d584-4b84-895e-22833b6b17e3
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,14 +12,14 @@ feature: Mobile Forms
 exl-id: bf4ae163-5d89-48fb-9bc4-182281b28f35
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 84%
+source-wordcount: '393'
+ht-degree: 83%
 
 ---
 
-# Intégration d’un objet FormBridge à un portail personnalisé pour les formulaires HTML5 {#integrating-form-bridge-with-custom-portal-for-html-forms}
+# Intégration d&#39;un objet FormBridge à un portail personnalisé pour les formulaires HTML5 {#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge est une API de « pont logiciel » d’HTML5 qui vous permet d’interagir avec un formulaire. Pour plus d’informations sur la référence à l’API FormBridge, voir [Référence à l’API FormBridge](/help/forms/using/form-bridge-apis.md).
+FormBridge est une API de « pont logiciel » d&#39;HTML5 qui vous permet d’interagir avec un formulaire. Pour obtenir une référence à l’API FormBridge, voir [Référence de l’API FormBridge](/help/forms/using/form-bridge-apis.md).
 
 Vous pouvez utiliser l’API FormBridge pour obtenir ou définir des valeurs de champs de formulaire à partir de la page HTML et envoyer le formulaire. Par exemple, vous pouvez utiliser l’API pour créer une expérience semblable à un assistant.
 
@@ -75,7 +75,7 @@ Une application HTML existante peut tirer profit de l’API FormBridge pour inte
 
    >[!NOTE]
    >
-   >La **ligne 9** contient une référence JSP supplémentaire pour les styles CSS et les fichiers JavaScript pour concevoir la page.
+   >Le **ligne 9**, contient des références JSP supplémentaires pour les styles CSS et les fichiers JavaScript pour la conception de la page.
    >
    >La balise &lt;div id=&quot;rightdiv&quot;> à la **ligne 18** contient le snippet HTML du formulaire XFA.
    La page comprend deux conteneurs : **gauche** et **droit**. Le conteneur de droite contient le formulaire. Le conteneur de gauche possède deux champs de saisie et une partie de la page HTML externe.
@@ -89,7 +89,7 @@ Une application HTML existante peut tirer profit de l’API FormBridge pour inte
 
    Voici un exemple de script que vous pouvez ajouter pour définir les valeurs dans un champ de formulaire.
 
-   Par exemple, si vous souhaitez définir le **NomEmployé** à l’aide des valeurs des champs **Prénom** et **Nom**, appelez la fonction **window.formBridge.setFieldValue**.
+   Par exemple, si vous souhaitez définir la variable **employeeName** utilisation des valeurs des champs **Prénom** et **Nom**, appelez le **window.formBridge.setFieldValue** fonction .
 
    De même, vous pouvez lire la valeur en appelant **window.formBridge.getFieldValue **API.
 

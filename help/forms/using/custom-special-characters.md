@@ -1,18 +1,18 @@
 ---
 title: Caractères spéciaux personnalisés dans Correspondence Management
-seo-title: Caractères spéciaux personnalisés dans Correspondence Management
+seo-title: Custom special characters in Correspondence Management
 description: Découvrez comment ajouter des caractères spéciaux personnalisés dans Correspondence Management.
-seo-description: Découvrez comment ajouter des caractères spéciaux personnalisés dans Correspondence Management.
+seo-description: Learn how to add custom special characters in Correspondence Management.
 uuid: ac4f1353-f1ef-43b7-8e80-aba56a155e3f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1b5e6746-3618-46fe-ba2d-ec76bb79de1d
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: a6206ae1-b71b-4066-b7a0-ce39a60d6dd0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '639'
 ht-degree: 69%
 
 ---
@@ -31,8 +31,8 @@ Vous pouvez par exemple insérer les caractères spéciaux suivants :
 
 Vous pouvez insérer des caractères spéciaux sous forme de lettres :
 
-* Dans l’ [éditeur de texte](/help/forms/using/document-fragments.md#createtext)
-* Dans un module [modifiable et intégré dans une correspondance](/help/forms/using/create-correspondence.md#managecontent)
+* Dans le [éditeur de texte](/help/forms/using/document-fragments.md#createtext)
+* Dans un [module modifiable et intégré dans une correspondance](/help/forms/using/create-correspondence.md#managecontent)
 
 ![specialcaractérissinlinemodule](assets/specialcharactersinlinemodule.png)
 
@@ -43,19 +43,19 @@ L’administrateur peut ajouter la prise en charge de plus de caractères/de car
 Procédez comme suit pour ajouter la prise en charge des caractères spéciaux personnalisés :
 
 1. Accédez à `https://[server]:[port]/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
-1. Dans le dossier des applications, créez un dossier nommé **[!UICONTROL specialcharacters]** avec un chemin/une structure semblables au dossier specialcharacters (situé dans le dossier textEditorConfig sous libs) :
+1. Dans le dossier des applications, créez un dossier nommé **[!UICONTROL specialcharacters]** avec un chemin/une structure similaires au dossier specialcharacters (situé dans le dossier textEditorConfig sous libs) :
 
-   1. Cliquez avec le bouton droit sur le dossier **specialcharacters** à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+   1. Cliquez avec le bouton droit de la souris sur le **specialcharacters** à l’emplacement suivant et sélectionnez **Noeud de recouvrement**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
+      **Chemin :** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
 
       **Emplacement de la superposition :** /apps/
 
-      **Faire correspondre les types de noeud :** coché
+      **Faire correspondre les types de noeud :** Cochée
 
       >[!NOTE]
       >
@@ -77,7 +77,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    | cmConfigurationType | Chaîne | cmTextEditorConfiguration |
    | cssPath | Chaîne | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Cliquez avec le bouton droit sur le dossier **[!UICONTROL specialcharacters]** à l’emplacement suivant et sélectionnez **Créer > Noeud enfant**, puis cliquez sur **Enregistrer tout** :
+1. Cliquez avec le bouton droit de la souris sur le **[!UICONTROL specialcharacters]** à l’emplacement suivant et sélectionnez **Créer > Noeud enfant** puis cliquez sur **Enregistrer tout**:
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
 

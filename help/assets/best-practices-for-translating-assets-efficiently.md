@@ -43,7 +43,7 @@ Vous pouvez également apporter des modifications de configuration à quelques w
 
 1. Activez le workflow *Définir la date de dernière modification*.
 
-   Le workflow *Définir la date de dernière modification* configure la date de dernière modification pour une ressource. Comme vous désactivez ce workflow à l’étape 2, [!DNL Experience Manager Assets] ne peut plus tenir à jour la date de dernière modification des ressources. Par conséquent, activez le workflow *Définir la date de dernière modification* pour vous assurer que les dates de dernière modification des ressources sont à jour. Les ressources dont les dates de dernière modification sont obsolètes peuvent entraîner des erreurs.
+   Le workflow *Définir la date de dernière modification* configure la date de dernière modification pour une ressource. Parce que vous désactivez ce workflow à l&#39;étape 2, [!DNL Experience Manager Assets] ne permet plus de tenir à jour la date de dernière modification des ressources. Par conséquent, activez le workflow *Définir la date de dernière modification* pour vous assurer que les dates de dernière modification des ressources sont à jour. Les ressources dont les dates de dernière modification sont obsolètes peuvent entraîner des erreurs.
 
 1. [Configurez la structure d’intégration de traduction](/help/sites-administering/tc-tic.md) pour arrêter la traduction des fichiers binaires des ressources. Désactivez l’option « Traduire les ressources » dans l’onglet « Ressources » pour arrêter la traduction des fichiers binaires des ressources.
 1. Traduisez les métadonnées/balises des ressources à l’aide des [workflow des ressources multilingues](multilingual-assets.md).

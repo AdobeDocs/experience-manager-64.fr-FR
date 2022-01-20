@@ -1,13 +1,13 @@
 ---
 title: Guide de l’utilisateur pour la gestion dans AEM 6.4
-seo-title: Guide de l’utilisateur pour la gestion dans AEM 6.4
+seo-title: AEM 6.4 Managing User Guide
 description: 'Ce guide explique comment gérer un projet AEM avec succès '
-seo-description: Décrit comment gérer un projet AEM avec succès
+seo-description: Covers how to manage an AEM project successfully
 exl-id: 4fa34d1f-c41e-4b9b-98d3-8c364a60776d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 40%
+source-wordcount: '335'
+ht-degree: 41%
 
 ---
 

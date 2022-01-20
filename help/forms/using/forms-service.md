@@ -1,8 +1,8 @@
 ---
 title: Service Forms
-seo-title: Service Forms
+seo-title: Forms Service
 description: Cet article décrit le service Forms et les tâches relatives aux formulaires que vous pouvez effectuer à l’aide de ce service.
-seo-description: Cet article décrit le service Forms et les tâches relatives aux formulaires que vous pouvez effectuer à l’aide de ce service.
+seo-description: The article describes Forms service and the form-related tasks you can perform using Forms service.
 uuid: 3258d3c2-8755-4815-8c97-b2cfb9a9dfd4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: a9695d10-43ec-40eb-942f-7720abaa0973
 exl-id: a1c7c90f-6b50-4bc1-9972-1d3bdf8887ce
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '685'
 ht-degree: 83%
 
 ---
@@ -34,15 +34,15 @@ Utilisez le service Forms pour effectuer les opérations suivantes :
 
 Utilisez le service Forms pour créer des formulaires PDF pour la capture de données. En général, vous commencez avec un modèle AEM Forms Designer. Utilisez l’opération `renderPDFForm` (lien vers Javadoc) du service Forms pour convertir ce modèle en formulaire PDF.
 
-Le premier paramètre de l’opération `renderPDFForm` est le nom du fichier de modèle (par exemple, `ExpenseClaim.xdp`. Vous pouvez stocker le fichier de modèle dans un système de fichiers local, un référentiel CRX ou à un emplacement HTTP ou FTP. Vous pouvez spécifier l’emplacement du fichier de modèle en définissant la racine du contenu dans le paramètre `PDFFormRenderOptions` de l’opération `renderPDFForm`. Voir la documentation Javadoc pour en savoir plus sur les autres options que vous pouvez spécifier pour le paramètre `PDFFormRenderOptions`.
+Le premier paramètre de l’opération `renderPDFForm` est le nom du fichier de modèle (par exemple, `ExpenseClaim.xdp`. Vous pouvez stocker le fichier de modèle dans un système de fichiers local, un référentiel CRX ou à un emplacement HTTP ou FTP. Vous pouvez spécifier l’emplacement du fichier de modèle en définissant la racine de contenu dans le `PDFFormRenderOptions` du paramètre `renderPDFForm` opération. Voir la documentation Javadoc pour en savoir plus sur les autres options que vous pouvez spécifier pour le paramètre `PDFFormRenderOptions`.
 
-L’opération `renderPDFForm` peut également accepter des données XML. Les données XML sont fusionnées avec le modèle lors de la création d’un formulaire PDF afin que le formulaire PDF généré contienne les données spécifiées. Le deuxième paramètre pour l’opération `renderPDFForm` peut accepter un objet de document (Javadoc) qui contient des données XML.
+L’opération `renderPDFForm` peut également accepter des données XML. Les données XML sont fusionnées avec le modèle lors de la création d’un formulaire de PDF afin que le formulaire de PDF généré contienne les données spécifiées. Le deuxième paramètre pour l’opération `renderPDFForm` peut accepter un objet de document (Javadoc) qui contient des données XML.
 
-## Extraction de données des formulaires PDF  {#extracting-data-from-pdf-forms-nbsp}
+## Extraction de données des formulaires PDF  {#extracting-data-from-pdf-forms-nbsp}
 
 Utilisez l’opération `exportData` (Javadoc) du service Forms pour extraire les données XML d’un formulaire PDF. Cette opération accepte un document comme son premier paramètre. Vous pouvez exporter les données au format de document XDP ou de fichier XML. Si vous exportez des données au format XML, les données exportées suppriment l’enveloppe XDP et renvoient un fichier XML brut. Vous pouvez spécifier cet arrangement à l’aide du second paramètre.
 
-## Importation des données dans les formulaires PDF  {#importing-data-into-pdf-forms}
+## Importation des données dans les formulaires PDF {#importing-data-into-pdf-forms}
 
 Le service Forms vous permet de fusionner un formulaire PDF créé en utilisant AEM Forms Designer ou l’opération `renderPDFForm` avec des données XML. L’opération `importData` (Javadoc) du service Forms accepte le formulaire PDF et les données XML et renvoie un formulaire PDF avec des données XML.
 

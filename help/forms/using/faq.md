@@ -1,8 +1,8 @@
 ---
 title: Questions fréquentes (FAQ) des formulaires HTML5
-seo-title: Questions fréquentes (FAQ) des formulaires HTML5
+seo-title: Frequently asked questions (FAQ) for HTML5 forms
 description: Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts, et les plages des formulaires HTML5.
-seo-description: Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts, et les plages des formulaires HTML5.
+seo-description: Frequently Asked Questions (FAQ) about layout, scripting support, and scope of HTML5 forms.
 uuid: 55d8cc65-ddf1-48bd-8307-06f562ee8c3a
 contentOwner: robhagat
 content-type: reference
@@ -13,7 +13,7 @@ feature: Mobile Forms
 exl-id: b7f0b209-3970-49ad-a1d8-5a053be0d2bc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1875'
 ht-degree: 84%
 
 ---
@@ -88,7 +88,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    Réponse : un sous-formulaire masqué avec une hiérarchie complexe fractionnée sur plusieurs pages génère des problèmes de mise en page. Une façon de contourner ce problème consiste à marquer le sous-formulaire visible au début, puis de le masquer dans un script d’initialisation basé sur une logique ou des données.
 
-1. Pourquoi du texte est-il tronqué ou s’affiche-t-il incorrectement dans HTML5 ?
+1. Pourquoi un texte est-il tronqué ou s’affiche-t-il incorrectement dans HTML5 ?
 
    Réponse : lorsque l’espace attribué à un champ de texte constitué d’une illustration ou d’une légende est insuffisant et ne lui permet pas d’afficher le contenu, le texte apparaît tronqué dans le formulaire pour périphériques mobiles généré. Cette troncature est également visible dans la vue Conception d’AEM Forms Designer. Bien que cette troncature puisse être prise en charge dans les fichiers PDF, ce n’est pas le cas dans les formulaires HTML5. Pour éviter ce problème, assurez-vous de prévoir un espace suffisant pour qu’un champ de texte constitué d’une illustration ou d’une légende puisse s’afficher sans être tronqué dans le mode de conception de AEM Forms Designer.
 
@@ -178,7 +178,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Existe-t-il une convention de dénomination recommandée et des mots-clés réservés à éviter ?
 
-   * Dans AEM Forms Designer, il est recommandé de ne pas commencer le nom d’un objet (tel qu’un sous-formulaire ou un champ de texte) par un trait de soulignement (_). Pour utiliser un trait de soulignement au début du nom, ajoutez un préfixe après le trait de soulignement, *_&lt;prefix>&lt;objectname>. *
+   * Dans AEM Forms Designer, il est recommandé de ne pas commencer le nom d’un objet (tel qu’un sous-formulaire ou un champ de texte) par un trait de soulignement (_). Pour utiliser un trait de soulignement au début du nom, ajoutez un préfixe après le trait de soulignement : *_&lt;prefix>&lt;objectname>. *
    * Toutes les API des formulaires HTML5 API sont des mots-clés réservés. Pour les API/fonctions personnalisées, utilisez un nom différent de celui des [API de formulaires HTML5](/help/forms/using/scripting-support.md).
 
 1. Les formulaires HTML5 prennent-ils en charge les champs flottants ?
@@ -189,8 +189,8 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
    >
    >Le flottement des champs n’est pas activé par défaut. Vous pouvez utiliser Forms Designer pour définir la propriété de flottement des champs.
 
-   1. Ouvrez CRXde lite et accédez au noeud `/content/xfaforms/profiles/default` .
-   1. Ajoutez une propriété `mfDataDependentFloatingField` de type Chaîne et définissez la valeur de la propriété sur `true`**.**
+   1. Ouvrez CRXde lite et accédez au `/content/xfaforms/profiles/default` noeud .
+   1. Ajout d’une propriété `mfDataDependentFloatingField` de type Chaîne et définissez la valeur de la propriété sur `true`**.**
    1. Cliquez sur **Enregistrer tout**. Désormais, les champs flottants sont activés pour les formulaires HTML à l’aide du profil de rendu mis à jour.
 
       >[!NOTE]

@@ -1,8 +1,8 @@
 ---
 title: Fonctionnalité Bibliothèque de fichiers
-seo-title: Fonctionnalité Bibliothèque de fichiers
+seo-title: File Library Feature
 description: La fonctionnalité Bibliothèque de fichiers permet aux visiteurs connectés du site de télécharger, gérer et télécharger des fichiers.
-seo-description: La fonctionnalité Bibliothèque de fichiers permet aux visiteurs connectés du site de télécharger, gérer et télécharger des fichiers.
+seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: 7da94703-8334-4c02-ba2a-55b5cde22e6c
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: cdcae09f-c3cb-471e-863f-b33130e9df0f
 exl-id: c72b246d-442e-4841-810d-1045e83f60f9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 65%
+source-wordcount: '660'
+ht-degree: 66%
 
 ---
 
@@ -26,25 +26,25 @@ La fonctionnalité Bibliothèque de fichiers fournit un espace où les visiteurs
 Cette section de la documentation décrit :
 
 * Ajout de la fonction Bibliothèque de fichiers à un site AEM
-* Paramètres de configuration du composant `File Library`
+* Paramètres de configuration de la variable `File Library` component
 
 ## Ajout d’une bibliothèque de fichiers à une page {#adding-a-file-library-to-a-page}
 
-Pour ajouter un composant `File Library` à une page en mode création, localisez le composant .
+Pour ajouter une `File Library` à une page en mode création, recherchez le composant.
 
 * `Communities / File Library`
 
 et faites-le glisser sur la page.
 
-Pour plus d’informations, voir [Principes de base des composants des communautés](basics.md).
+Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
 
-Lorsque les [bibliothèques côté client requises](essentials-file-library.md#essentials-for-client-side) sont incluses, voici comment le composant `File Library` apparaîtra :
+Lorsque la variable [bibliothèques côté client requises](essentials-file-library.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `File Library` apparaît :
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
 ## Configuration de la bibliothèque de fichiers {#configuring-file-library}
 
-Sélectionnez le composant `File Library` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `File Library` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-431](assets/chlimage_1-431.png) ![chlimage_1-432](assets/chlimage_1-432.png)
 
@@ -65,24 +65,24 @@ Dans l’onglet **[!UICONTROL Commentaires]**, indiquez si et comment les commen
 
 * **[!UICONTROL Éditeur de texte enrichi]** Si cette option est activée, les commentaires peuvent être saisis avec une mise en forme. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Supprimer les]**
-commentairesSi cette option est cochée, les utilisateurs sont autorisés à supprimer leurs propres commentaires. Cette option est cochée par défaut.
+* **[!UICONTROL Supprimer des commentaires]**
+Si cette case est cochée, les utilisateurs sont autorisés à supprimer leurs propres commentaires. Cette option est cochée par défaut.
 
 * **[!UICONTROL Autoriser le balisage]** Si cette option est cochée, une balise peut être ajoutée au fichier. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Espaces de]**
-noms autorisés Si l’option Autoriser le balisage est cochée, les balises disponibles sont limitées aux espaces de noms cochés. Si aucun n’est coché, tous sont autorisés. Par défaut, tous les espaces de noms sont autorisés.
+* **[!UICONTROL Espaces de noms autorisés]**
+Si l’option Autoriser le balisage est cochée, les balises disponibles sont limitées aux espaces de noms cochés. Si aucun n’est coché, tous sont autorisés. Par défaut, tous les espaces de noms sont autorisés.
 
 * **[!UICONTROL Limite de suggestions]** Si l’option Autoriser le balisage est sélectionnée, ce paramètre limite le nombre de balises suggérées à afficher. Si la valeur est -1, il n’existe aucune limite. La valeur par défaut est -1.
 
-* **[!UICONTROL Autoriser le]**
-vote Si cette option est cochée, la possibilité de voter pour un fichier est activée. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser le vote]**
+Si cette case est cochée, la possibilité de voter pour un fichier est activée. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Autoriser l’]**
-action suivante Si cette option est cochée, la fonction suivante est ajoutée aux articles de blog, ce qui permet aux membres d’être  [](notifications.md) informés des nouvelles publications. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser l’exécution]**
+Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [notify](notifications.md) de nouvelles publications. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Autoriser les]**
-réponses à thème Si cette option est cochée, les réponses aux commentaires publiés sont autorisées. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser les réponses à threads]**
+Si cette case est cochée, les réponses aux commentaires publiés sont autorisées. Cette option n’est pas cochée par défaut.
 
 ### Onglet Modération d’utilisateur {#user-moderation-tab}
 
@@ -110,7 +110,7 @@ Dans l’onglet **[!UICONTROL Modération d’utilisateur]**, configurez la mod�
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur la bibliothèque de fichiers](essentials-file-library.md) pour les développeurs.
+Vous trouverez plus d’informations sur la [Notions fondamentales sur la bibliothèque de fichiers](essentials-file-library.md) pour les développeurs.
 
 Pour des informations sur la modération des sujets et des commentaires publiés, reportez-vous à la section [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
 
