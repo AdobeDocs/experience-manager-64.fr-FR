@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: 7387dfe8-0029-4ad0-b319-fc519928318b
 feature: Forms Portal
 exl-id: 4d66ab64-a132-4f2a-89ca-3fbd8dc56ce2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 977ada5fefe476c7cd2fe1470eb024a517a681d2
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1646'
 ht-degree: 74%
 
 ---
@@ -57,99 +57,99 @@ Pour configurer le volet Liste, appuyez sur le composant Search and Lister, puis
 
 La boîte de dialogue **[!UICONTROL Modifier]** comprend plusieurs onglets fournissant des options de configuration décrites dans le tableau ci-dessous. Appuyer **[!UICONTROL OK]** pour enregistrer la configuration, une fois cette opération terminée.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Tabulation</th> 
-   <th>Configuration</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol"><strong>Dossiers des actifs</strong></span></td> 
-   <td>Ajouter un élément</td> 
-   <td>Configure les dossiers dans lesquels des actifs sont téléchargés à l’aide de l’interface utilisateur d’AEM Forms. Par défaut, tous les actifs téléchargés sont répertoriés. Pour en savoir plus sur l’interface utilisateur d’AEM Forms, consultez <a href="/help/forms/using/introduction-managing-forms.md" target="_blank">Présentation de la gestion des formulaires</a>.</td> 
-  </tr> 
-  <tr> 
-   <td><p><span class="uicontrol"><strong>Affichage</strong></span></p> </td> 
-   <td>Texte du titre</td> 
-   <td>Titre du composant Search &amp; Lister. Le titre par défaut est <strong>Forms Portal.</strong></td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Modèle de mise en page</td> 
-   <td>Mise en page des actifs. </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Désactiver la recherche avancée</td> 
-   <td>Lorsque cette option est activée, l’icône de recherche avancée est masquée.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Désactiver la recherche de texte</td> 
-   <td>Lorsque cette option est activée, la barre de recherche en texte intégral est masquée.</td> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol"><strong>Résultat</strong></span></td> 
-   <td>Nombre de résultats par page</td> 
-   <td>Configure le nombre maximal de formulaires à afficher sur une page.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Texte des résultats</td> 
-   <td><p>Configure le texte des résultats (par exemple, 1-12 sur 601 <strong>Résultats</strong>). La valeur par défaut est <strong>Résultats</strong>.</p> <p>Par exemple, si vous spécifiez <strong>Forms </strong>dans ce champ, il y a un total de 601 formulaires, le texte de résultat passe à 1-12 sur 601. <strong>Forms.</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Texte de la page</td> 
-   <td><p>Configure le texte de la page (par exemple, <strong>Page </strong>1 sur 51). La valeur par défaut est <strong>Page</strong>.</p> <p>Par exemple, si vous spécifiez <strong>Formulaire de demande </strong>dans ce champ et il y a 51 pages, le texte de la page se transforme en <strong>Formulaire de demande </strong>1 sur 51.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Texte de</td> 
-   <td><p>Remplace le mot <strong>de</strong> avec le texte spécifié (Page 1) <strong>de </strong>51). La valeur par défaut est <strong>de</strong>.</p> <p>Par exemple, si vous spécifiez <strong>out </strong>dans ce champ, le texte passe à la page 1. <strong>out </strong>51.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol"><strong>Lien de formulaire</strong></span></td> 
-   <td>Type de rendu</td> 
-   <td>Contrôle la liste des formulaires en fonction du type de rendu spécifié. Les options disponibles sont les suivantes : PDF et HTML. Par exemple, si vous sélectionnez uniquement HTML comme type de rendu, les formulaires PDF sont exclus du filtre.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Profil HTML</td> 
-   <td>Configure le profil HTML à utiliser pour le rendu. Tous les profils disponibles sont répertoriés dans la liste déroulante.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>URL d’envoi</td> 
-   <td><p>Configure un servlet vers lequel les données de formulaire sont envoyées.</p> <p><strong>Remarque :</strong> <em>la valeur URL d’envoi d’un formulaire peut être spécifiée à divers emplacements et l’ordre de priorité s’établit comme suit :</em></p> 
-    <ol> 
-     <li><em>La valeur Submit URL intégrée dans le formulaire (dans le bouton d’envoi) a la priorité la plus élevée.</em></li> 
-     <li><em>Dans l’ordre des priorités, la valeur Submit URL mentionnée dans l’interface utilisateur d’AEM Forms arrive en deuxième position.</em></li> 
-     <li><em>La valeur Submit URL mentionnée dans Forms Portal a la priorité la plus faible.</em></li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Info-bulle HTML Render Action</td> 
-   <td>Configure le texte de l’info-bulle qui s’affiche lorsque le pointeur de la souris survole <img height="16" src="assets/aem6forms_panel-html.png" width="13" /> l’icône HTML5.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Info-bulle PDF Render Action</td> 
-   <td>Configure le texte de l’info-bulle qui s’affiche lorsque le pointeur de la souris survole <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> l’icône PDF.</td> 
-  </tr> 
-  <tr> 
-   <td><span class="uicontrol"><strong>Style</strong></span></td> 
-   <td>Type de style</td> 
-   <td>Permet de spécifier <strong>Aucun style, style par défaut</strong>ou <strong>Style personnalisé </strong>pour répertorier les formulaires.</td> 
-  </tr> 
-  <tr> 
-   <td> </td> 
-   <td>Chemin d’accès au style personnalisé</td> 
-   <td>Si vous avez sélectionné l’option Personnalisé dans Type de style, accédez à la feuille CSS personnalisée pour en spécifier le chemin ou sélectionnez Par défaut.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <th>Tabulation</th>
+   <th>Configuration</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td><span class="uicontrol"><strong>Dossiers des actifs</strong></span></td>
+   <td>Ajouter un élément</td>
+   <td>Configure les dossiers dans lesquels des actifs sont téléchargés à l’aide de l’interface utilisateur d’AEM Forms. Par défaut, tous les actifs téléchargés sont répertoriés. Pour en savoir plus sur l’interface utilisateur d’AEM Forms, consultez <a href="/help/forms/using/introduction-managing-forms.md" target="_blank">Présentation de la gestion des formulaires</a>.</td>
+  </tr>
+  <tr>
+   <td><p><span class="uicontrol"><strong>Affichage</strong></span></p> </td>
+   <td>Texte du titre</td>
+   <td>Titre du composant Search &amp; Lister. Le titre par défaut est <strong>Forms Portal.</strong></td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Modèle de mise en page</td>
+   <td>Mise en page des actifs. </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Désactiver la recherche avancée</td>
+   <td>Lorsque cette option est activée, l’icône de recherche avancée est masquée.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Désactiver la recherche de texte</td>
+   <td>Lorsque cette option est activée, la barre de recherche en texte intégral est masquée.</td>
+  </tr>
+  <tr>
+   <td><span class="uicontrol"><strong>Résultat</strong></span></td>
+   <td>Nombre de résultats par page</td>
+   <td>Configure le nombre maximal de formulaires à afficher sur une page.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Texte des résultats</td>
+   <td><p>Configure le texte des résultats (par exemple, 1-12 sur 601 <strong>Résultats</strong>). La valeur par défaut est <strong>Résultats</strong>.</p> <p>Par exemple, si vous spécifiez <strong>Forms </strong>dans ce champ, il y a un total de 601 formulaires, le texte de résultat passe à 1-12 sur 601. <strong>Forms.</strong></p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Texte de la page</td>
+   <td><p>Configure le texte de la page (par exemple, <strong>Page </strong>1 sur 51). La valeur par défaut est <strong>Page</strong>.</p> <p>Par exemple, si vous spécifiez <strong>Formulaire de demande </strong>dans ce champ et il y a 51 pages, le texte de la page se transforme en <strong>Formulaire de demande </strong>1 sur 51.</p> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Texte de</td>
+   <td><p>Remplace le mot <strong>de</strong> avec le texte spécifié (Page 1) <strong>de </strong>51). La valeur par défaut est <strong>de</strong>.</p> <p>Par exemple, si vous spécifiez <strong>out </strong>dans ce champ, le texte passe à la page 1. <strong>out </strong>51.</p> </td>
+  </tr>
+  <tr>
+   <td><span class="uicontrol"><strong>Lien de formulaire</strong></span></td>
+   <td>Type de rendu</td>
+   <td>Contrôle la liste des formulaires en fonction du type de rendu spécifié. Les options disponibles sont les suivantes : PDF et HTML. Par exemple, si vous sélectionnez uniquement HTML comme type de rendu, les formulaires PDF sont exclus du filtre.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Profil HTML</td>
+   <td>Configure le profil HTML à utiliser pour le rendu. Tous les profils disponibles sont répertoriés dans la liste déroulante.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>URL d’envoi</td>
+   <td><p>Configure un servlet vers lequel les données de formulaire sont envoyées.</p> <p><strong>Remarque :</strong> <em>la valeur URL d’envoi d’un formulaire peut être spécifiée à divers emplacements et l’ordre de priorité s’établit comme suit :</em></p>
+    <ol>
+     <li><em>La valeur Submit URL intégrée dans le formulaire (dans le bouton d’envoi) a la priorité la plus élevée.</em></li>
+     <li><em>Dans l’ordre des priorités, la valeur Submit URL mentionnée dans l’interface utilisateur d’AEM Forms arrive en deuxième position.</em></li>
+     <li><em>La valeur Submit URL mentionnée dans Forms Portal a la priorité la plus faible.</em></li>
+    </ol> </td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Info-bulle HTML Render Action</td>
+   <td>Configure le texte de l’info-bulle qui s’affiche lorsque le pointeur de la souris survole <img height="16" src="assets/aem6forms_panel-html.png" width="13" /> l’icône HTML5.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Info-bulle PDF Render Action</td>
+   <td>Configure le texte de l’info-bulle qui s’affiche lorsque le pointeur de la souris survole <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> l’icône PDF.</td>
+  </tr>
+  <tr>
+   <td><span class="uicontrol"><strong>Style</strong></span></td>
+   <td>Type de style</td>
+   <td>Permet de spécifier <strong>Aucun style, style par défaut</strong>ou <strong>Style personnalisé </strong>pour répertorier les formulaires.</td>
+  </tr>
+  <tr>
+   <td> </td>
+   <td>Chemin d’accès au style personnalisé</td>
+   <td>Si vous avez sélectionné l’option Personnalisé dans Type de style, accédez à la feuille CSS personnalisée pour en spécifier le chemin ou sélectionnez Par défaut.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### Volet Recherche {#search-pane}
@@ -242,3 +242,14 @@ Vous pouvez personnaliser une page du portail de formulaires pour donner un aspe
 L’interface utilisateur d’AEM Forms vous permet d’ajouter des métadonnées personnalisées aux formulaires. Les métadonnées personnalisées se révèlent particulièrement utiles pour mettre à la disposition des utilisateurs un environnement permettant de répertorier et de rechercher des formulaires. Pour plus d’informations sur les métadonnées personnalisées, voir [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md).
 
 Forms Portal propose des actions de rendu prêtes à l’emploi. Vous pouvez personnaliser Forms Portal afin d’ajouter d’autres actions. Pour en savoir plus, consultez [Ajout d’une action personnalisée sur des éléments de liste de formulaire.](/help/forms/using/add-custom-action-form-lister.md)
+
+## Articles connexes
+
+* [Activation des composants de Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* [Page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
+* [Affichage de la liste des formulaires sur une page Web à l’aide d’API](/help/forms/using/listing-forms-webpage-using-apis.md)
+* [Utiliser le composant Drafts &amp; Submissions](/help/forms/using/draft-submission-component.md)
+* [Personnalisation du stockage des brouillons et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
+* [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](/help/forms/using/integrate-draft-submission-database.md)
+* [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md)

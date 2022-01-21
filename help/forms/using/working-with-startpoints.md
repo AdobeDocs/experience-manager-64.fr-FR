@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 exl-id: ef9352c7-c164-4cbf-8f18-5b97aa5f56be
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 977ada5fefe476c7cd2fe1470eb024a517a681d2
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 80%
+ht-degree: 74%
 
 ---
 
@@ -24,7 +24,7 @@ Un point de départ appelle un processus créé dans Workbench. Il est associé 
 >
 >Les termes « points de départ », « processus de démarrage » et « formulaire » sont indifféremment utilisés pour désigner ce concept.
 
-Pour lancer un processus à partir de l’application AEM Forms, vous devez disposer d’un point de départ de type **Workspace** dans votre processus. En outre, vous devez sélectionner l’option **[!UICONTROL Visible dans Mobile Workspace]** pour le point de départ.
+Pour lancer un processus à partir de l’application AEM Forms, vous devez disposer d’un point de départ de type **Workspace** dans votre processus. Vous devez également sélectionner la variable **[!UICONTROL Visible dans Mobile Workspace]** pour le point de départ.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
