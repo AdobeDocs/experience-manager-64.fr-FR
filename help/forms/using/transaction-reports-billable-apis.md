@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 exl-id: 18b5c6e2-3b0c-4ec8-9e65-c4105b47be4e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: eeaa70855980ca62574f89e280b46c02c0b65bdc
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1859'
 ht-degree: 10%
 
 ---
@@ -492,7 +492,7 @@ Les étapes Affecter des tâches et des services de document des processus d’A
 
 ## Enregistrement des API facturables en tant que transactions pour le code personnalisé {#recording-billable-apis-as-transactions-for-custom-code}
 
-Les actions telles que l’envoi d’un formulaire de PDF, l’utilisation de l’interface utilisateur de l’agent pour prévisualiser une communication interactive, l’envoi d’un formulaire non standard et les implémentations personnalisées ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API pour enregistrer des actions telles que des transactions. Vous pouvez appeler l’API depuis vos implémentations personnalisées vers [enregistrer une transaction](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
+Les actions telles que l’envoi d’un formulaire de PDF, l’utilisation de l’interface utilisateur de l’agent pour prévisualiser une communication interactive, l’envoi d’un formulaire non standard et les implémentations personnalisées ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API pour enregistrer des actions telles que des transactions. Vous pouvez appeler l’API depuis vos implémentations personnalisées vers [enregistrer une transaction](record-transaction-custom-implementation.md).
 
 ## Articles connexes {#related-articles}
 
