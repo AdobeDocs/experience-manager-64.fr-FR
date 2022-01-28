@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
-source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
+source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '639'
 ht-degree: 75%
 
 ---
@@ -49,7 +49,6 @@ ht-degree: 75%
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
    + [Vidéo ](s7-video.md)
-   + [Ajout de fonctionnalités Dynamic Media Classic à votre page](scene7.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
@@ -65,6 +64,7 @@ ht-degree: 75%
    + [Diffusion d’images optimisées pour un site réactif](responsive-site.md)
    + [Aperçu de ressources Dynamic Media](previewing-assets.md)
    + [Ajout de ressources Dynamic Media aux pages](adding-dynamic-media-assets-to-pages.md)
+   + [Ajout de composants Dynamic Media Classic aux pages](scene7.md)
    + [Incorporation de la visionneuse Dynamic Video ou d’images dans une page web](embed-code.md)
    + [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md)
    + [Utilisation de jeux de règles de transformation d’URL](using-rulesets-to-transform-urls.md)
