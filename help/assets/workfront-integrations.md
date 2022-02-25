@@ -1,9 +1,9 @@
 ---
-title: '[!DNL Experience Manager Assets] intégration avec [!DNL Adobe Workfront]'
+title: '"[!DNL Experience Manager Assets] intégration avec [!DNL Adobe Workfront]"'
 description: Introduction à l’intégration entre [!DNL Assets] et [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
+source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 2%
@@ -52,7 +52,7 @@ Vous trouverez ci-dessous les détails des fonctionnalités disponibles via diff
 | Ressources liées dans Workfront en cas de clic sur Utilisateur direct pour AEM | Les utilisateurs sont redirigés vers AEM pour prévisualiser une ressource liée dans Workfront. | ✓ | ✓ | Personnalisé |
 | Création automatique de dossiers d’AEM liés dans Workfront | Créez automatiquement des dossiers d’AEM liés dans Workfront à l’aide des statuts d’objet. Organisez automatiquement AEM dossiers en fonction des Portfolios, programmes et projets Workfront. | Non | Non | ✓ |
 | Synchronisation des commentaires | Synchronisation automatique des commentaires pour les ressources de [!DNL Workfront] to [!DNL Assets] | Non | ✓ | ✓ |
-| Mappage des métadonnées des ressources Workfront à AEM Assets | L’objet Workfront et les propriétés de formulaire personnalisées peuvent être mappés aux propriétés de métadonnées AEM ressource. Les valeurs seront transmises lors du téléchargement/lien initial. | ✓ | ✓ | ✓ |
+| Mappage des métadonnées des ressources Workfront à AEM Assets | L’objet Workfront et les propriétés de formulaire personnalisées peuvent être mappés à des propriétés de métadonnées de ressource AEM. Les valeurs seront transmises lors du téléchargement/lien initial. | ✓ | ✓ | ✓ |
 | Créer automatiquement le document Forms personnalisé dans Workfront | Joindre des formulaires personnalisés à des documents Workfront, des tâches et des problèmes à l’aide de processus AEM. | Non | Ajoutez manuellement le formulaire personnalisé, puis la synchronisation automatisée fonctionne | ✓ |
 | Mise à jour automatique bidirectionnelle des métadonnées entre AEM Assets et Workfront | Mettre à jour automatiquement les métadonnées entre AEM Assets et Workfront. | Non | ✓ | ✓ |
 | Mappage des métadonnées Workfront aux dossiers AEM Assets | Synchroniser les métadonnées de projet Workfront avec les dossiers d’AEM liés. | Non | Non | ✓ |
