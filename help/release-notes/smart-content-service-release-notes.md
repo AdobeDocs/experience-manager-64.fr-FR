@@ -8,10 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+source-git-commit: 354e3fcd747b7b0490599c3b84b8e58dac39ed05
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 17%
+source-wordcount: '307'
+ht-degree: 20%
 
 ---
 
@@ -32,55 +32,7 @@ Le service de contenu dynamique est optimisé par la plateforme Adobe Sensei, qu
 Le service de contenu dynamique comprend les améliorations clés suivantes :
 
 * Optimisations des algorithmes pour améliorer davantage la précision des modèles et rappeler les valeurs
-* Prise en charge de la réinitialisation de l’entraînement des modèles pour toutes les balises au niveau du client
-* Prise en charge des espaces de noms de balises intelligentes améliorées pour éviter les conflits
-* Nouvelle politique de remplacement des modèles pour éviter toute dégradation due à la reconversion
-* Surveillance au niveau du client pour l’utilisation du service
 * Correctifs de problèmes liés à la mise en grappe et à la connexion, qui améliorent la robustesse du service.
-
-## Problèmes résolus {#fixed-issues}
-
-Les problèmes suivants ont été corrigés dans cette version :
-
-* Les processus de traitement pour les workflows de balisage et de formation se terminent si la connexion au serveur MySQL est impossible. CQ-4242886
-
-* Le score avec biais de précision n’est pas correctement calculé. CQ-4241797
-
-* Calcul incorrect des relations publiques pour le modèle. CQ-4241381
-
-* Les exemples de ressources manquent dans le workflow de formation lors de leur traitement à partir de la file d’attente CQ-4240901
-
-* Améliorations du rappel de précision. CQ-4239895
-
-* Stratégie de remplacement de modèle. CQ-4239886
-
-* Les images de la chemise pour hommes sont marquées avec l&#39;étiquette de la veste pour femmes. CQ-4239650
-
-* Des exemples de formation sont manqués lors du déploiement intermédiaire. CQ-4239483
-
-* La validation d’une tâche de formation doit avoir lieu sur un ensemble de ressources envoyées pour la formation. CQ-4238834
-
-* La création de modèles échoue pour une recherche de données négative même si un minimum de valeurs positives/négatives est présent pour une balise. CQ-4240741
-
-* Entrées trompeuses pour une recherche de nourriture négative dans les logs des formateurs. CQ-4240738
-
-* Problème avec la formation initiale si les balises soumises pour la formation sont des négatifs aléatoires l’une de l’autre. CQ-4240118
-
-* Logs d’improvisation pour surveiller l’utilisation du service par client. CQ-4239781
-
-## Langues {#languages}
-
-Le service de contenu dynamique est disponible pour les paramètres régionaux suivants :
-
-* Anglais
-* Allemand
-* Français
-* Espagnol
-* Italien
-* brésilien
-* Japonais
-* Chinois simplifié
-* Coréen
 
 ## Liens {#links}
 
