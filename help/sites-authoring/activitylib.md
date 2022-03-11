@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
 exl-id: 269eee08-5fca-4621-a56e-93db9361fa64
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: b926143f7b5eb6b40796bf41d1fb94f56c7f77a7
 workflow-type: tm+mt
-source-wordcount: '2005'
-ht-degree: 96%
+source-wordcount: '2002'
+ht-degree: 95%
 
 ---
 
@@ -48,7 +48,6 @@ Les activités sont présentées avec un libellé décrivant le type d’activit
 >* Si l’option **xt_only** est activée sur le client Adobe Target (clientcode) utilisé sur AEM pour se connecter à Adobe Target, vous pouvez créer **uniquement** des activités XT dans AEM.
 >
 >* Si les options **xt_only** **ne sont pas** activées sur le client Adobe Target (clientcode), vous pouvez créer **à la fois** des activités XT et A/B dans AEM.
-
 >
 >**Remarque :** L’option **xt_only** est un paramètre appliqué à un certain client Adobe Target (clientcode) et peut uniquement être modifiée directement dans Adobe Target. Vous ne pouvez pas activer ni désactiver cette option dans AEM.
 
@@ -91,13 +90,13 @@ Ajoutez une activité ou modifiez une activité existante pour concentrer vos ef
 
 >[!NOTE]
 >
->Les nouvelles activités Adobe Target doivent être ***créées*** dans l’éditeur de contenu ciblé et non dans la console **Activités**, car la synchronisation avec Adobe Target échouera.
+>Les nouvelles activités Adobe Target doivent être **créées** dans l’éditeur de contenu ciblé et non dans la console **Activités**, car la synchronisation avec Adobe Target échouera.
 >
 >Vous pouvez toutefois modifier les activités existantes d’Adobe Target dans la console.
 
 Pour ajouter une activité :
 
-1. Cliquez ou appuyez sur une marque pour laquelle vous créez l’activité, puis cliquez ou appuyez sur **Créer** et ensuite sur **Créer une activité**. Si vous modifiez une activité, sélectionnez-la dans l’écran Zone maître et cliquez ou appuyez sur **Modifier l’activité**.
+1. Cliquez ou appuyez sur une marque pour laquelle vous créez l’activité, puis cliquez ou appuyez sur **Créer** et ensuite sur **Créer une activité**. Si vous effectuez une modification, sélectionnez l’activité, puis cliquez ou appuyez sur **Modifier**.
 1. Fournissez les informations suivantes, puis appuyez ou cliquez sur **Suivant** :
 
    * Nom de l’activité.
