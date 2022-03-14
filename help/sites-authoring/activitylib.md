@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
 exl-id: 269eee08-5fca-4621-a56e-93db9361fa64
-source-git-commit: b926143f7b5eb6b40796bf41d1fb94f56c7f77a7
+source-git-commit: 1c9da35f65b6b9edacc3d5529ee80e7be94495d2
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 95%
+source-wordcount: '2001'
+ht-degree: 94%
 
 ---
 
@@ -96,7 +96,7 @@ Ajoutez une activité ou modifiez une activité existante pour concentrer vos ef
 
 Pour ajouter une activité :
 
-1. Cliquez ou appuyez sur une marque pour laquelle vous créez l’activité, puis cliquez ou appuyez sur **Créer** et ensuite sur **Créer une activité**. Si vous effectuez une modification, sélectionnez l’activité, puis cliquez ou appuyez sur **Modifier**.
+1. Cliquez ou appuyez sur la marque pour laquelle vous créez l’activité, puis cliquez ou appuyez sur **Créer** puis **Création d’une activité**. Si vous effectuez une modification, sélectionnez l’activité, puis cliquez ou appuyez sur **Modifier**.
 1. Fournissez les informations suivantes, puis appuyez ou cliquez sur **Suivant** :
 
    * Nom de l’activité.
