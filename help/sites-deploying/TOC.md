@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guide de déploiement d’AEM 6.4
 breadcrumb-title: Guide de déploiement
 user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4, y compris sur le déploiement cloud d’Adobe Managed Services.
 feature: Deploying
 role: Architect
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 93%

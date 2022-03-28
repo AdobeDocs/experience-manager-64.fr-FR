@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guide de l’utilisateur pour le développement dans AEM 6.4
 breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Developing
 role: Developer
-source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 83%
