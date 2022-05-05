@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 exl-id: 8249fd48-38af-4bf7-8dcc-2f63db6750b6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: beb6e3ccc5cbef044f8b91d327c0361c881ccd72
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 98%
@@ -41,7 +41,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Commerce, Scre
 | Consoles | `?` | Aide des raccourcis clavier |
 |  | `/` | Appeler la [recherche](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Choisir l’option de [sélecteur de rail](/help/sites-authoring/basic-handling.md#rail-selector) à afficher |
-|  | ` | Masquer le rail |
+|  | ``` ` ``` | Masquer le rail |
 |  | `e` | Modifier |
 |  | `p` | Propriétés |
 |  | `m` | Déplacer |
