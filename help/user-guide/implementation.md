@@ -6,7 +6,7 @@ seo-description: An overview of how to implement AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: e8434d46-b169-4408-85e7-b619c6f7b877
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 44%
@@ -29,7 +29,7 @@ ht-degree: 44%
 
 ## Cloud Manager pour AEM {#cloud-manager-for-aem}
 
-[Découvrez comment utiliser Cloud Manager avec AEM.](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+[Découvrez comment utiliser Cloud Manager avec AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr)
 
 ## Configuration du Dispatcher {#dispatcher-configuration}
 

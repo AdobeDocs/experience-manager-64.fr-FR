@@ -4,7 +4,7 @@ seo-title: AEM 6.4 Administering User Guide
 description: AEM administrer
 seo-description: AEM administering
 exl-id: 74ffdd0a-681c-498e-a4a4-5ab88fd4f58f
-source-git-commit: 657bb7df01a7b8e03d39c3bda868d87253b81b2a
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 43%
@@ -46,7 +46,7 @@ Ce guide couvre toutes les tâches d’administration AEM.
 * [Guide de l’utilisateur de Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=fr#home)
+* [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)

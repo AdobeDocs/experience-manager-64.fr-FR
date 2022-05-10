@@ -4,7 +4,7 @@ seo-title: AEM 6.4 Mobile User Guide
 description: Ce guide explique comment créer et gérer du contenu pour les applications mobiles.
 seo-description: Describes how to create and manage content for mobile applications.
 exl-id: 89af57da-8bd6-46b7-9462-fcf51687004e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 40%
@@ -46,7 +46,7 @@ Ce guide couvre toutes les tâches d’AEM Mobile, telles que la création et la
 * [Guide de l’utilisateur de Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=fr#home)
+* [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)

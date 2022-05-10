@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: cc47644419f7b7f4f1f00bb848050aa4a98efa09
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1645'
 ht-degree: 62%
 
 ---
@@ -23,7 +23,7 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 | Niveau de prise en charge | Description |
 |:---:|---|
 | ✓ | Pris en charge |
-| * | Prise en charge avec des fonctionnalités de composant additionnel |
+| &#42; | Prise en charge avec des fonctionnalités de composant additionnel |
 | − | Non applicable |
 
 ## Formats d’image pixellisés {#supported-raster-image-formats}
@@ -146,7 +146,7 @@ Les formats de document pris en charge pour les fonctionnalités Dynamic Media s
 | DOC |  |  |  |  |  |
 | DOCX |  |  |  |  |  |
 | ODT |  |  |  |  |  |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (Voir la remarque ci-dessous) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | HTML |  |  |  |  |  |
 | RTF |  |  |  |  |  |
 | TXT |  |  |  |  |  |
@@ -161,6 +161,10 @@ Les formats de document pris en charge pour les fonctionnalités Dynamic Media s
 | QXP |  |  |  |  |  |
 | EPUB |  |  |  |  |  |
 
+>[!NOTE]
+>
+>Pour les PDF sécurisés, seul le téléchargement est pris en charge.
+
 Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 * Pour utiliser Dynamic Media de sorte à générer des rendus dynamiques pour des fichiers PDF, voir [ Adobe Illustrator (AI), Postscript (EPS) et formats de fichier PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
@@ -173,23 +177,23 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 | Format | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniatures | Transcodage FFMPEG |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | * |
-| MIDI | ✓ | ✓ |  | - | * |
-| 3GP | ✓ | ✓ |  | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ |  | - | * |
-| OGA | ✓ | ✓ |  | - | * |
-| OGG | ✓ | ✓ |  | - | * |
-| RA | ✓ | ✓ |  | - | * |
-| WAV | ✓ | ✓ |  | - | * |
-| WMA | ✓ | ✓ |  | - | * |
-| DVI | ✓ | ✓ |  | * | * |
-| FLV | ✓ | ✓ |  | * | * |
-| M4V | ✓ | ✓ |  | * | * |
-| MPEG | ✓ | ✓ |  | * | * |
-| OGV | ✓ | ✓ |  | * | * |
-| MOV | ✓ | ✓ |  | * | * |
-| WMV | ✓ | ✓ |  | * | * |
+| AAC | ✓ | ✓ |  | - | &#42; |
+| MIDI | ✓ | ✓ |  | - | &#42; |
+| 3GP | ✓ | ✓ |  | - | &#42; |
+| MP3 | ✓ | ✓ | ✓ | - | &#42; |
+| MPG | ✓ | ✓ |  | - | &#42; |
+| OGA | ✓ | ✓ |  | - | &#42; |
+| OGG | ✓ | ✓ |  | - | &#42; |
+| RA | ✓ | ✓ |  | - | &#42; |
+| WAV | ✓ | ✓ |  | - | &#42; |
+| WMA | ✓ | ✓ |  | - | &#42; |
+| DVI | ✓ | ✓ |  | &#42; | &#42; |
+| FLV | ✓ | ✓ |  | &#42; | &#42; |
+| M4V | ✓ | ✓ |  | &#42; | &#42; |
+| MPEG | ✓ | ✓ |  | &#42; | &#42; |
+| OGV | ✓ | ✓ |  | &#42; | &#42; |
+| MOV | ✓ | ✓ |  | &#42; | &#42; |
+| WMV | ✓ | ✓ |  | &#42; | &#42; |
 | SWF | ✓ | ✓ |  |  |  |
 
 ## Formats vidéo d’entrée pour le transcodage Dynamic Media {#supported-input-video-formats-for-dynamic-media-transcoding}
