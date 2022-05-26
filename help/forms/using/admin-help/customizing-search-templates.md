@@ -13,7 +13,7 @@ exl-id: 5230222b-53f8-414c-aaa1-848d6e9369e8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -46,9 +46,9 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
 
    * Dans la partie supérieure de l’onglet Critère, sélectionnez un élément de processus ou de tâche.
 
-      **Conseil**: *Si vous avez précédemment sélectionné l’élément Process Name et que vous avez spécifié un processus, toute variable de processus définie dans ce processus peut également être sélectionnée.*
+      **Conseil** : *si vous avez préalablement sélectionné l’élément Nom du processus et que vous avez indiqué un processus, toute variable définie pour ce processus peut également être sélectionnée.*
 
-      **Conseil**: *Si vous sélectionnez l’élément Tâche visible , les utilisateurs pourront supprimer les tâches terminées des résultats de recherche.*
+      **Conseil** : *si vous avez sélectionné l’élément de tâche visible, les utilisateurs seront en mesure de supprimer des tâches terminées des résultats de recherche.*
 
       Les champs relatifs au critère de recherche de l’élément sélectionné s’affichent au bas de l’onglet Critère.
 
@@ -58,9 +58,9 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
       * (Facultatif) Pour autoriser des utilisateurs à modifier la valeur de l’opérande dans Workspace, sélectionnez Autoriser l’utilisateur à modifier l’opérande.
       * (Facultatif) Pour autoriser des utilisateurs à modifier l’opérateur relationnel, sélectionnez Autoriser l’utilisateur à sélectionner un autre opérateur relationnel. Dans la liste qui apparaît, sélectionnez les opérateurs auxquels les utilisateurs pourront faire appel.
 
-      **Conseil**: *Si vous avez sélectionné Nom du processus comme élément, vous pouvez cliquer sur l’icône en regard du champ de l’opérande pour afficher une liste dans laquelle vous pouvez sélectionner un processus en cours d’exécution sur le serveur Forms. Après avoir sélectionné un processus, toute variable définie pour ce processus peut être sélectionnée dans Variables de processus, dans la partie supérieure de l’onglet Critère.*
+      **Conseil** : *si vous avez sélectionné Nom du processus en tant qu’élément, vous pouvez cliquer sur l’icône à côté du champ de l’opérande pour afficher une liste dans laquelle vous pouvez sélectionner un processus en cours exécution sur le serveur Forms. Après avoir sélectionné un processus, toute variable définie pour ce processus peut être sélectionnée dans Variables de processus, dans la partie supérieure de l’onglet Critère.*
 
-      **Conseil**: *Vous pouvez supprimer un élément du modèle de recherche en cliquant sur l’icône Supprimer en regard des critères de recherche de l’élément.*
+      **Conseil** : *vous pouvez supprimer un élément du modèle de recherche en cliquant sur l’icône de suppression en regard du critère de recherche de l’élément.*
 
 
 1. (Facultatif) Pour chaque en-tête de colonne à afficher dans les résultats de recherche, cliquez sur l’onglet Mise en page et procédez comme suit :

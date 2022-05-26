@@ -13,7 +13,7 @@ exl-id: 0bda2e58-9470-48fa-a60b-04a1a32689bb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '73'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -23,6 +23,6 @@ Le service Forms permet de contrôler la résolution des entités externes dans 
 
 **Blocage du traitement des fichiers de données XML contenant des références aux entités externes**
 
-1. Dans Administration Console, cliquez sur **[!UICONTROL Services > Forms]**.
+1. Dans la console d’administration, cliquez sur **[!UICONTROL Services > Forms]**.
 1. Désélectionnez la case Résoudre les entités externes.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.

@@ -12,7 +12,7 @@ exl-id: 89b6c8b4-4872-4bf5-a543-f33a1660636e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -26,13 +26,13 @@ Dans AEM Forms, vous pouvez utiliser le service SendToPrinter pour envoyer un do
 
 * **Imprimante accessible indirectement** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
 
-     Lorsque vous envoyez un document à une imprimante, indiquez l’un des protocoles d’impression suivants : 
+   Lorsque vous envoyez un document à une imprimante, indiquez l’un des protocoles d’impression suivants : 
 
    * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+   * ``**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+   * ``**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIFS**: Le service Output prend en charge le protocole d’impression CIFS (Common Internet File System).
+   * **CIFS** : le service Output prend en charge le protocole d’impression CIFS (Common Internet File System).
 
 ## Utilisation du service SendToPrinter {#using-sendtoprinter-service}
 
@@ -43,12 +43,12 @@ Le tableau ci-dessous répertorie :
 
 | Protocole (système d’accès) | URI de serveur d’impression (PrinterSpec.printServer) | Nom de l’imprimante (PrinterSpec.printerName) | Résultat |
 |--- |--- |--- |--- |
-| SharedPrinter | N’importe lequel | Vide | Exception : L’argument requis sPrinterName ne peut pas être vide. |
+| SharedPrinter | N’importe lequel | Vide | Exception : l’argument requis sPrinterName ne peut pas être vide. |
 | SharedPrinter | N’importe lequel | Invalid (non valide) : | Une exception indique que l’imprimante est introuvable. |
 | SharedPrinter | N’importe lequel | Valide | Tâche d’impression réussie. |
 | LPD | Vide | N’importe lequel | une exception indiquant que l’argument requis sPrintServerUri ne peut pas être vide. |
 | LPD | Invalid (non valide) : | Vide | une exception indiquant que l’argument requis sPrinterName ne peut pas être vide. |
-| LPD | Invalid (non valide) : | Non vide | une exception indiquant que sPrintServerUri est introuvable. |
+| LPD | Invalid (non valide) : | Pas vide | une exception indiquant que sPrintServerUri est introuvable. |
 | LPD | Valide | Invalid (non valide) : | une exception indiquant que l’imprimante est introuvable. |
 | LPD | Valide | Valide | Tâche d’impression réussie. |
 | CUPS | Vide | N’importe lequel | une exception indiquant que l’argument requis sPrintServerUri ne peut pas être vide. |
@@ -63,7 +63,7 @@ Le tableau ci-dessous répertorie :
 
 ## Prise en charge de l’authentification {#authentication-support}
 
-L’authentification est prise en charge uniquement pour l’impression CIFS. Pour vous authentifier, indiquez le nom d’utilisateur/mot de passe/domaine dans PrinterSpec. Vous pouvez chiffrer un mot de passe à l’aide du service Granite CryptoSupport AEM en procédant de la manière suivante :
+L’authentification est prise en charge uniquement pour l’impression CIFS. Pour authentifier, indiquez vos nom d’utilisateur, mot de passe et domaine dans PrinterSpec. Vous pouvez chiffrer un mot de passe à l’aide du service Granite CryptoSupport AEM en procédant de la manière suivante :
 
 1. Accédez à https://&lt;server>:&lt;port>/system/console.
 

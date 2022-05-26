@@ -13,7 +13,7 @@ exl-id: 12ba2a8a-1260-4645-87c4-28f268e9d0ba
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1608'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Le service Forms met en cache les éléments suivants :
 
 * **conceptions de formulaire :** le service Forms met en cache les conceptions de formulaire qu’il récupère du référentiel ou de sources HTTP. Cette mise en cache améliore les performances, car le service Forms récupère la conception de formulaire à partir du cache et non plus à partir du référentiel lors des demandes de rendu ultérieures.
 * **fragments et images :** le service Forms peut mettre en cache les fragments et les images utilisés dans les conceptions de formulaire. Lorsque le service Forms met en cache ces objets, il améliore les performances car les fragments et les images ne sont lus à partir du référentiel qu’à la première demande.
-* **formulaires :** le service Forms met en cache les formulaires qu’il rend. Ce type de mise en cache améliore les performances, car le service Forms ne doit pas résoudre et effectuer le rendu du même formulaire dans les demandes ultérieures.
+* **formulaires :** le service Forms met en cache les formulaires qu’il rend. Ce type de mise en cache améliore les performances, car le service Forms ne doit pas résoudre et effectuer le rendu du même formulaire dans les demandes ultérieures.
 
 Le service Forms stocke le cache à deux emplacements :
 
@@ -53,7 +53,7 @@ Ce mode de mise en cache garantit l’utilisation des ressources les plus récen
 
 **Définition de la mise en cache sans condition**
 
-1. Dans Administration Console, cliquez sur Services > Forms.
+1. Dans la console d’administration, cliquez sur Services > Forms.
 1. Sous Paramètres de contrôle du cache de sortie, sélectionnez Sans condition et cliquez sur Enregistrer.
 
 ### Utilisation du point de contrôle du cache {#use-the-cache-check-point}
@@ -69,14 +69,14 @@ Utilisez ce mode de cache dans des environnements de production hautes performan
 
 **Réinitialisation du point de contrôle du cache**
 
-1. Dans Administration Console, cliquez sur Services > Forms.
+1. Dans la console d’administration, cliquez sur Services > Forms.
 1. Sous Paramètres de contrôle du cache de sortie, cliquez sur Point de contrôle du cache.
 
 **Réinitialisation du contenu du cache**
 
 Vous pouvez vider le contenu du cache à tout moment. Après la réinitialisation du cache, la première demande est plus lente pour chaque formulaire, car le service Forms effectue un rendu complet et crée un nouveau contenu de cache.
 
-1. Dans Administration Console, cliquez sur Services > Forms.
+1. Dans la console d’administration, cliquez sur Services > Forms.
 1. Sous Paramètres de contrôle du cache des formulaires, sélectionnez Réinitialiser le cache.
 
 ## Configuration des paramètres du cache {#configuring-cache-settings}
@@ -93,9 +93,9 @@ Pour accéder à ces paramètres, dans Administration Console, cliquez sur Servi
 
 Les paramètres de la zone **Paramètres du cache global** affectent tous les types de cache. Si vous modifiez l’un de ces paramètres, redémarrez le service Forms pour que ce changement soit appliqué. Pour redémarrer ce service, utilisez Workbench ou consultez la section [Démarrage ou arrêt des services associés aux modules AEM forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) pour obtenir des instructions.
 
-**Taille max. du document cache (Ko) :** Taille maximale, en kilo-octets, d’une conception de formulaire ou d’une autre ressource pouvant être stockée dans un cache en mémoire. Ce paramètre global s’applique à tous les caches mémoire. Si une ressource est supérieure à cette valeur, elle n’est pas mise en cache dans la mémoire. La valeur par défaut est 1024 kilo-octets. Ce paramètre n’a aucune incidence sur le cache disque.
+**Taille max. du document du cache (Ko) :** taille maximale, en kilo-octets, d’une conception de formulaire ou autre ressource pouvant être stockée dans un cache mémoire. Ce paramètre global s’applique à tous les caches mémoire. Si une ressource est supérieure à cette valeur, elle n’est pas mise en cache dans la mémoire. La valeur par défaut est 1024 kilo-octets. Ce paramètre n’a aucune incidence sur le cache disque.
 
-**Cache de rendu de formulaire activé :** Par défaut, cette option est sélectionnée, ce qui signifie que les formulaires rendus sont mis en cache pour une récupération ultérieure. Ce paramètre améliore les performances, car le service Forms ne doit effectuer le rendu d’un formulaire donné qu’une seule fois ; il utilise ensuite la version mise en cache. Cette option est associée à la propriété de mise en cache d’une conception de formulaire. Pour plus d’informations sur la configuration de cette valeur lors de la conception de formulaire, voir Aide de Designer.
+**Mise en cache des rendus de formulaire activée :** cette option est sélectionnée par défaut, ce qui signifie que les formulaires rendus sont mis en cache pour récupération ultérieure. Ce paramètre améliore les performances, car le service Forms ne doit effectuer le rendu d’un formulaire donné qu’une seule fois ; il utilise ensuite la version mise en cache. Cette option est associée à la propriété de mise en cache d’une conception de formulaire. Pour plus d’informations sur la configuration de cette valeur lors de la conception de formulaire, voir Aide de Designer.
 
 ### Mise en cache des conceptions de formulaire {#caching-form-designs}
 
@@ -103,11 +103,11 @@ Lorsque le service Forms reçoit une demande de rendu, il récupère la concepti
 
 Le service Forms met toujours les conceptions de formulaire en cache sur le disque. Si les conceptions de formulaire sont stockées sur le serveur, ces fichiers sont considérés comme le cache disque. Le service Forms met également les conceptions de formulaire en cache dans la mémoire, en fonction du paramètre défini dans la zone **Mise en mémoire cache des modèles**. Si vous modifiez l’un de ces paramètres, redémarrez le service pour que ce changement soit appliqué. Pour redémarrer ce service, utilisez Workbench ou consultez la section [Démarrage ou arrêt des services associés aux modules AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) pour obtenir des instructions.
 
-**Taille du cache de configuration des modèles :** Nombre maximal d’objets de configuration de modèle à conserver en mémoire. La valeur par défaut est 100. Il est recommandé de la définir sur une valeur supérieure ou égale à celle de la Taille du cache des modèles. Ce paramètre n’a aucune incidence sur le cache disque.
+**Taille du cache de configuration des modèles :** nombre maximal d’objets de configuration de modèle à conserver en mémoire. La valeur par défaut est 100. Il est recommandé de la définir sur une valeur supérieure ou égale à celle de la Taille du cache des modèles. Ce paramètre n’a aucune incidence sur le cache disque.
 
-**Taille du cache des modèles :** Nombre maximal d’objets de contenu de modèle à conserver en mémoire. La valeur par défaut est 100. Ce paramètre n’a aucune incidence sur le cache disque.
+**Taille du cache des modèles :** nombre maximal d’objets de contenu de modèle à conserver en mémoire. La valeur par défaut est 100. Ce paramètre n’a aucune incidence sur le cache disque.
 
-**Activé :** Par défaut, cette case est cochée, ce qui signifie que les modèles de formulaire sont mis en mémoire cache. Si cette option n’est pas sélectionnée, les modèles de formulaire sont uniquement mis en cache sur le disque.
+**Activé :** cette case est cochée par défaut, ce qui signifie que les modèles de formulaire sont mis en mémoire cache. Si cette option n’est pas sélectionnée, les modèles de formulaire sont uniquement mis en cache sur le disque.
 
 ### Mise en cache des formulaires rendus {#caching-rendered-forms}
 
@@ -115,9 +115,9 @@ Le service Forms met les formulaires rendus en cache afin de ne pas devoir réso
 
 Ces paramètres se situent dans la zone **Mise en mémoire cache des rendus de formulaire**. Si vous modifiez l’un de ces paramètres, redémarrez le service Forms pour que ce changement soit appliqué. Pour redémarrer ce service, utilisez Workbench ou consultez la section [Démarrage ou arrêt des services associés aux modules AEM forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) pour obtenir des instructions.
 
-**Taille du cache :** Indique le nombre maximal de formulaires rendus pouvant résider dans le cache en mémoire. La valeur par défaut est 100. Ce paramètre n’a aucune incidence sur le cache disque.
+**Taille du cache :** détermine le nombre maximal de formulaires rendus pouvant se trouver dans le cache mémoire. La valeur par défaut est 100. Ce paramètre n’a aucune incidence sur le cache disque.
 
-**Activé :** Par défaut, cette option est sélectionnée, ce qui signifie que les formulaires rendus sont mis en mémoire cache. Si cette option n’est pas sélectionnée, les formulaires rendus sont uniquement mis en cache sur le disque.
+**Activé :** cette case est cochée par défaut, ce qui signifie que les formulaires rendus sont mis en mémoire cache. Si cette option n’est pas sélectionnée, les formulaires rendus sont uniquement mis en cache sur le disque.
 
 ### Mise en cache des fragments et images {#caching-fragments-and-images}
 
@@ -125,15 +125,15 @@ Le service Forms met en cache les fragments et les images utilisés dans les con
 
 Vous pouvez utiliser les paramètres suivants pour contrôler la mise en cache de fragments et d’images sur le disque. Ces paramètres se situent dans la zone **Paramètres du cache des ressources de modèle** :
 
-**Mise en cache des ressources** Sélectionnez l’une des options suivantes dans la liste :
+**Caching de ressources** Sélectionnez l’une des options suivantes dans la liste :
 
-**Activé pour les fragments et les images :** Le service Forms met en cache les fragments et les images. Il s’agit de l’option par défaut.
+**Activé pour les fragments et les images :** le service Forms met en cache les fragments et les images. Il s’agit de l’option par défaut.
 
-**Activé pour les fragments :** Le service Forms met les fragments en cache, mais pas les images.
+**Activé pour les fragments :** le service Forms met en cache les fragments, mais pas les images.
 
-**Désactivé :** Le service Forms ne met pas en cache les fragments ou les images.
+**Désactivé :** le service Forms ne met ni les fragments, ni les images en cache.
 
-**Intervalle de nettoyage (secondes) :** Indique la fréquence à laquelle le service Forms supprime les anciens fichiers de cache non valides. Le service Forms ne supprime pas les fichiers de cache valides. Si vous modifiez l’intervalle de nettoyage, redémarrez le service Forms pour que ce changement soit appliqué. Pour redémarrer ce service, utilisez Workbench ou consultez la section Démarrage ou arrêt des services associés aux modules AEM Forms pour obtenir des instructions. La valeur par défaut est de 600 secondes.
+**Intervalle de nettoyage (en secondes) :** il détermine la fréquence de suppression des anciens fichiers de cache non valides par le service Forms. Le service Forms ne supprime pas les fichiers de cache valides. Si vous modifiez l’intervalle de nettoyage, redémarrez le service Forms pour que ce changement soit appliqué. Pour redémarrer ce service, utilisez Workbench ou consultez la section Démarrage ou arrêt des services associés aux modules AEM Forms pour obtenir des instructions. La valeur par défaut est de 600 secondes.
 
 ## Remarques concernant la mise en grappe pour les caches {#clustering-considerations-for-caches}
 
@@ -141,4 +141,4 @@ Dans un environnement organisé en grappe, chaque nœud gère ses propres caches
 
 L’emplacement du cache doit être identique (même disque et chemin d’accès) pour chaque nœud de la grappe. Ne placez pas le cache à un emplacement de stockage partagé.
 
-Si vous utilisez la page Forms de Administration Console pour modifier les paramètres de mise en cache d’un nœud particulier, les paramètres de mise en cache des autres nœuds sont mis à jour lorsqu’une demande atteint le nœud en question. Ce comportement s’applique également au bouton Réinitialiser le cache. Si vous cliquez sur le bouton Réinitialiser le cache pour un nœud, le cache est immédiatement supprimé de ce nœud. Le cache des autres nœuds est vidé lorsqu’une demande atteint le nœud en question.
+Si vous utilisez la page Forms d’Administration Console pour modifier les paramètres de mise en cache d’un nœud particulier, les paramètres de mise en cache des autres nœuds sont mis à jour lorsqu’une demande atteint le nœud en question. Ce comportement s’applique également au bouton Réinitialiser le cache. Si vous cliquez sur le bouton Réinitialiser le cache pour un nœud, le cache est immédiatement supprimé de ce nœud. Le cache des autres nœuds est vidé lorsqu’une demande atteint le nœud en question.

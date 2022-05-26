@@ -13,7 +13,7 @@ exl-id: a4cee2e6-a56f-4355-8176-b3ed7478a775
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Lorsqu’un auteur de formulaire crée un formulaire adaptatif à l’aide d’u
 
 ## Modification de la stratégie de contenu d’un modèle {#changing-the-content-policy-of-a-template}
 
-Lorsque vous créez un modèle, il est créé sous `/conf` dans le référentiel de contenu. En fonction des dossiers que vous avez créés dans la variable `/conf` répertoire, le chemin d’accès à votre modèle est : `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
+Lorsque vous créez un modèle, il est créé sous `/conf` dans le référentiel de contenu. En fonction des dossiers que vous avez créés dans le répertoire `/conf`, le chemin d’accès à votre modèle est : `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
-Effectuez les étapes suivantes pour afficher les composants dans la barre latérale en fonction de la stratégie de contenu d’un modèle :
+Effectuez les étapes suivantes pour afficher les composants dans la barre latérale en fonction de la stratégie de contenu d’un modèle :
 
 1. Ouvrez CRXDE Lite.
 
@@ -35,17 +35,17 @@ Effectuez les étapes suivantes pour afficher les composants dans la barre laté
 
    Par exemple : `/conf/<your-folder>/`
 
-1. Dans CRXDE, accédez à : `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/`
+1. Dans CRXDE, accédez à : `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/`.
 
    Pour sélectionner un groupe de composants, une nouvelle stratégie de contenu est requise. Pour créer une nouvelle stratégie, copiez-collez la stratégie par défaut et renommez-la.
 
-   Le chemin d’accès à la stratégie de contenu par défaut est : `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
+   Le chemin d’accès à la stratégie de contenu par défaut est : `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`.
 
    Dans le dossier `gridFluidLayout`, copiez-collez la stratégie par défaut et renommez-la. Par exemple, `myPolicy`.
 
    ![Copie des stratégies par défaut](assets/crx-default1.png)
 
-1. Sélectionnez la nouvelle stratégie que vous créez, puis le **components** dans le panneau de droite avec le type `string[]`.
+1. Sélectionnez la nouvelle stratégie que vous créez puis sélectionnez la propriété **composants** dans le panneau de droite avec le type `string[]`.
 
    Lorsque vous sélectionnez et ouvrez la propriété de composants, la boîte de dialogue Modifier les composants s’affiche. Elle vous permet d’ajouter ou de supprimer les groupes de composants en utilisant les boutons **+** et **-**. Vous pouvez ajouter le groupe de composants qui comprend des composants du formulaire que vous souhaitez que les auteurs utilisent.
 
@@ -53,11 +53,11 @@ Effectuez les étapes suivantes pour afficher les composants dans la barre laté
 
    Après avoir ajouté un groupe de composants, cliquez sur **OK** pour mettre à jour la liste, puis cliquez sur **Enregistrer tout** au-dessus de la barre d’adresse de CRXDE et actualisez.
 
-1. Dans le modèle, remplacez la stratégie de contenu par défaut par la nouvelle stratégie que vous avez créée. ( `myPolicy` dans cet exemple.)
+1. Dans le modèle, remplacez la stratégie de contenu par défaut par la nouvelle stratégie que vous avez créée. (`myPolicy` dans cet exemple.)
 
    Pour modifier la stratégie, dans CRXDE, accédez à `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/guideContainer/rootPanel/items`.
 
-   Dans le `cq:policy` propriété, modifier `default` au nouveau nom de la stratégie ( `myPolicy`).
+   Dans la propriété `cq:policy`, modifiez `default` pour le nouveau nom de la stratégie (`myPolicy`).
 
    ![Stratégie de contenu de modèle mise à jour](assets/updated-policy.png)
 

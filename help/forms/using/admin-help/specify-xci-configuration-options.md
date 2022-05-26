@@ -28,6 +28,6 @@ Le service Output vous permet de spécifier un fichier XCI personnalisé à util
 
 Vous pouvez sélectionner des options qui annulent le remplacement des options répertoriées ci-dessus. Le service Output utilisera alors les valeurs spécifiées dans le fichier XCI personnalisé.
 
-1. Dans Administration Console, cliquez sur Services > Output.
+1. Dans la console d’administration, cliquez sur Services > Output.
 1. Cochez ou désélectionnez la case Utiliser les options XCI par défaut du système. Lorsque cette option est sélectionnée, le service Output utilise ses valeurs par défaut pour les paramètres paquets, créateur, producteur et compressObjectStream. Lorsque cette option est désélectionnée, le service Output utilise les valeurs spécifiées dans le fichier XCI personnalisé.
 1. Cliquez sur Enregistrer.

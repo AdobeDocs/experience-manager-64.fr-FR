@@ -13,7 +13,7 @@ exl-id: 5e2960f2-b172-48a7-bba3-4561a5f9c7bc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 72%
+ht-degree: 89%
 
 ---
 
@@ -28,11 +28,11 @@ AEM Forms permet de limiter l’accès à l’éditeur de règles des utilisateu
 ## Spécification des groupes d’utilisateurs qui peuvent accéder à l’éditeur de règles {#specify-user-groups-that-can-access-rule-editor}
 
 1. Connectez-vous à AEM Forms en tant qu’administrateur.
-1. Dans l’instance d’auteur, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![marteau](assets/hammer.png) > Opérations > Console web. La console web s’ouvre dans une nouvelle fenêtre.
+1. Dans l’instance d’auteur, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![marteau](assets/hammer.png) > Opérations > Console web. La console web s’ouvre dans une nouvelle fenêtre.
 
    ![1](assets/1.png)
 
-1. Dans la fenêtre de la console web, recherchez et cliquez **[!UICONTROL Configuration du canal web du formulaire adaptatif et de la communication interactive]**. **[!UICONTROL Configuration du canal web du formulaire adaptatif et de la communication interactive]** s’affiche. Ne modifiez aucune valeur, puis cliquez sur **[!UICONTROL Enregistrer]**.
+1. Dans la fenêtre de la console web, recherchez et cliquez sur **[!UICONTROL Configuration de canal web du formulaire adaptatif et de la communication interactive]**. La boîte de dialogue **[!UICONTROL Configuration de canal web du formulaire adaptatif et de la communication interactive]** sʼaffiche. Ne modifiez aucune valeur, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
    Vous créez ainsi un fichier /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config dans le référentiel CRX.
 
@@ -41,7 +41,7 @@ AEM Forms permet de limiter l’accès à l’éditeur de règles des utilisateu
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup"]`
 
-   Pour autoriser l’accès à plusieurs groupes, spécifiez une liste de valeurs séparées par des virgules :
+   Pour autoriser l’accès à plusieurs groupes, spécifiez une liste de valeurs séparées par des virgules :
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup", "PermittedUserGroup"]`
 

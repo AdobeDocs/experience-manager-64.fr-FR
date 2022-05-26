@@ -13,13 +13,13 @@ exl-id: 5c60d1a6-a4a2-4131-81e6-e39a5ab07dcf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 # Configuration de l’environnement de l’application AEM Forms {#set-up-environment-for-aem-forms-app}
 
-Vous avez besoin du matériel, des logiciels et licences ci-dessous pour générer et déployer l’application AEM Forms :
+Vous avez besoin du matériel, des logiciels et licences ci-dessous pour générer et déployer l’application AEM Forms :
 
 ## Pour les périphériques Windows {#for-windows-devices}
 
@@ -30,7 +30,7 @@ Vous avez besoin du matériel, des logiciels et licences ci-dessous pour génér
 ## Pour les périphériques iOS {#for-ios-devices}
 
 * Ordinateur Apple Mac à processeur Intel avec Mac OS X 10.9.5 ou version supérieure
-* SDK iOS 8.4 ou version ultérieure
+* SDK iOS 8.4 ou version supérieure
 * Version Xcode : Xcode 6.4 pour OS X ou version supérieure
 * Adhésion au programme pour développeurs iOS en entreprise
 * Certificat d’entreprise pour la distribution d’applications iOS en interne
@@ -38,10 +38,10 @@ Vous avez besoin du matériel, des logiciels et licences ci-dessous pour génér
 
 ## Pour périphériques Android {#for-android-devices}
 
-* Android Development Toolkit (lot ADT) peut être téléchargé à partir de [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
+* Android Development Toolkit (lot ADT) peut être téléchargé depuis [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
 * Si l’environnement est configuré sur un système MAC, ADT doit être installé dans le dossier Applications.
-* Si ADT est installé à un autre emplacement sur MAC ou si l’environnement est configuré sur un système Windows, le chemin du SDK ADT doit être mis à jour dans `local.properties` fichier disponible dans `src\android` dossier dans l’archive source extraite `mobileworkspace-src.zip`. Dans ce fichier, pointez la variable `sdk.dir` vers l’emplacement de ADT SDK sur votre bureau.
+* Si l’ADT est installé à un autre emplacement sur MAC, ou si l’environnement est configuré sur un système Windows, le chemin d’accès à ADT SDK doit être mis à jour dans le fichier `local.properties` qui est disponible dans le dossier `src\android` de l’archive source extraite `mobileworkspace-src.zip`. Dans ce fichier, pointez la variable `sdk.dir` vers l’emplacement d’ADT SDK sur votre bureau.
 
 >[!NOTE]
 >
->Le fichier adobe-lc-mobileworkspace-src.zip contient le SDK PhoneGap 5.0. Assurez-vous que le SDK PhoneGap n’est pas préinstallé.
+>Le fichier adobe-lc-mobileworkspace-src.zip contient le PhoneGAP SDK 5.0. Assurez-vous que le PhoneGap SDK n’est pas préinstallé.

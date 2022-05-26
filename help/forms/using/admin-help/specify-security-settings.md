@@ -23,6 +23,6 @@ Le service Output permet de contrôler la résolution des entités externes dans
 
 **Blocage du traitement des fichiers de données XML contenant des références aux entités externes**
 
-1. Dans Administration Console, cliquez sur Services > Output.
+1. Dans la console d’administration, cliquez sur Services > Output.
 1. Désélectionnez la case Résoudre les entités externes.
 1. Cliquez sur Enregistrer.

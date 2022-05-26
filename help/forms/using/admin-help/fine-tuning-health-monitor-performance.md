@@ -13,11 +13,11 @@ exl-id: b2814b0d-e843-4aba-8c74-a3be0a96f726
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
-# Réglage précis des performances d’Health Monitor{#fine-tuning-health-monitor-performance}
+# Réglage précis des performances de Health Monitor{#fine-tuning-health-monitor-performance}
 
 La collecte des statistiques système qui remplissent Health Monitor a une incidence sur les performances de votre environnement AEM forms. Vous pouvez contrôler cette incidence en définissant les options Java répertoriées ci-dessous dans votre serveur d’applications.
 
@@ -66,7 +66,7 @@ La collecte des statistiques système qui remplissent Health Monitor a une incid
 ## Ajout d’options Java à JBoss {#add-java-options-to-jboss}
 
 1. Arrêtez le serveur d’applications JBoss.
-1. Ouvrez le *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez toutes les options Java nécessaires.
+1. Ouvrez la *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez toutes les options Java requises.
 1. Redémarrez le serveur.
 
 ## Ajout d’options Java à WebLogic {#add-java-options-to-weblogic}
@@ -74,9 +74,9 @@ La collecte des statistiques système qui remplissent Health Monitor a une incid
 1. Démarrez WebLogic Administration Console en saisissant https://[nom d’hôte]:[port]/console dans la ligne d’adresse d’un navigateur web.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
-1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
-1. Dans la zone Arguments, ajoutez les arguments souhaités à la fin du contenu actuel. Par exemple, l’ajout de - `Dadobe.healthmonitor.enabled=false` désactive Health Monitor.
-1. Cliquez sur Enregistrer, puis sur Activer les changements.
+1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
+1. Dans la zone Arguments, ajoutez les arguments souhaités à la fin du contenu actuel. Par exemple, ajouter ‑ `Dadobe.healthmonitor.enabled=false` permet de désactiver Health Monitor.
+1. Cliquez sur Save, puis sur Activate Changes.
 1. Redémarrez le serveur géré WebLogic.
 
 ## Ajout d’options Java à WebSphere {#add-java-options-to-websphere}

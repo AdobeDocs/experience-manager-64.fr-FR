@@ -12,7 +12,7 @@ exl-id: 39408af6-439c-4ade-8062-155be9141dfa
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1252'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Une fois le formulaire adaptatif ou le fragment de formulaire adaptatif basé su
 
 >[!NOTE]
 >
->Pour un fragment de formulaire adaptatif, seul l’objet de modèle de données sélectionné au moment de la création et les objets de modèle de données associés apparaissent dans l’onglet Objets de modèle de données.
+>Pour un fragment de formulaire adaptatif, seul l’objet de modèle de données sélectionné au moment de la création et ses objets de modèle de données associés apparaissent dans l’onglet Objets de modèle de données.
 
 ![data-model-objects-tab](assets/data-model-objects-tab.png)
 
@@ -92,7 +92,7 @@ Pour prévisualiser une communication interactive avec des exemples de données 
 
 1. Dans l’instance d’auteur AEM, accédez à **[!UICONTROL Formulaires > Formulaires et documents]**.
 1. Sélectionnez une communication interactive et appuyez sur **[!UICONTROL Aperçu]** dans la barre d’outils pour sélectionner **[!UICONTROL Canal web]**, **[!UICONTROL Canal d’impression]** ou **[!UICONTROL Les deux canaux]** pour prévisualiser la communication interactive.
-1. Dans l’aperçu [*channel*] , assurez-vous que **[!UICONTROL Test de données de modèle de données de formulaire]** est sélectionné et appuyez sur **[!UICONTROL Aperçu]**.
+1. Dans la boîte de dialogue Aperçu [*canal*], assurez-vous d’avoir sélectionné **[!UICONTROL Tester le modèle de données de formulaire]** et appuyez sur **[!UICONTROL Aperçu]**.
 
 La communication interactive s’ouvre avec des exemples de données préremplies.
 
@@ -118,16 +118,16 @@ Boîte de dialogue Modifier les propriétés pour une communication interactive
 
 Lorsqu’un utilisateur envoie un formulaire basé sur un modèle de données de formulaire, vous pouvez configurer le formulaire pour écrire les données envoyées pour un objet de modèle de données dans ses sources de données. Pour réaliser ce cas d’utilisation, AEM Forms fournit une [action d’envoi de modèle de données de formulaire](/help/forms/using/configuring-submit-actions.md), disponible par défaut uniquement pour les formulaires adaptatifs basés sur un modèle de données de formulaire. Elle écrit les données envoyées pour un objet de modèle de données dans sa source de données.
 
-Pour configurer l’action d’envoi de modèle de données de formulaire, ouvrez les propriétés du conteneur de formulaires adaptatifs et sélectionnez **[!UICONTROL Envoyer à l’aide du modèle de données de formulaire]** dans la liste déroulante Action d’envoi sous l’accordéon Envoi . Ensuite, recherchez et sélectionnez un objet de modèle de données dans la liste **[!UICONTROL Nom de l’objet de modèle de données à envoyer]**. Enregistrez les propriétés.
+Pour configurer l’action d’envoi de modèle de données de formulaire, ouvrez les propriétés du conteneur de formulaires adaptatifs et sélectionnez **[!UICONTROL Envoyer à l’aide du modèle de données de formulaire]** dans la liste déroulante Action d’envoi sous l’accordéon Envoi. Ensuite, recherchez et sélectionnez un objet de modèle de données dans la liste **[!UICONTROL Nom de l’objet de modèle de données à envoyer]**. Enregistrez les propriétés.
 
 Lors de l’envoi d’un formulaire, les données de l’objet de modèle de données configuré sont écrites dans la source de données respectives.
 
-![envoi de données](assets/data-submission.png)
+![data-submission](assets/data-submission.png)
 
 Vous pouvez également envoyer des pièces jointes de formulaire à une source de données à l’aide de la propriété d’objet de modèle de données binaire. Procédez comme suit pour envoyer des pièces jointes à une source de données JDBC :
 
 1. Ajoutez un objet de modèle de données qui inclut une propriété binaire dans le modèle de données de formulaire.
-1. Dans le formulaire adaptatif, faites glisser et déposez le **[!UICONTROL Pièce jointe]** du navigateur Composants vers le formulaire adaptatif.
+1. Dans le formulaire adaptatif, faites glisser le composant **[!UICONTROL Pièce jointe]** depuis l’explorateur Composants vers le formulaire adaptatif.
 1. Appuyez pour sélectionner le composant ajouté et appuyez sur ![paramètres-icône](assets/settings_icon.png) pour ouvrir l’explorateur Propriétés du composant.
 1. Dans le champ Référence de liaison, appuyez sur ![foldersearch_18](assets/foldersearch_18.png) et naviguez pour sélectionner la propriété binaire que vous avez ajoutée dans le modèle de données de formulaire. Configurez d’autres propriétés en fonction de vos besoins.
 
@@ -137,10 +137,10 @@ Vous pouvez également envoyer des pièces jointes de formulaire à une source d
 
 ## Appeler des services dans des formulaires adaptatifs à l’aide de règles {#invoke-services}
 
-Dans un formulaire adaptatif basé sur un modèle de données de formulaire, vous pouvez [créer des règles](/help/forms/using/rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire. Le **[!UICONTROL Appeler les services]** dans une règle répertorie tous les services disponibles dans le modèle de données de formulaire et vous permet de sélectionner les champs d’entrée et de sortie pour le service. Vous pouvez également utiliser le type de règle **Définir la valeur** pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
+Dans un formulaire adaptatif basé sur un modèle de données de formulaire, vous pouvez [créer des règles](/help/forms/using/rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire. L’opération **[!UICONTROL Appeler des services]** dans une règle répertorie tous les services disponibles dans le modèle de données de formulaire et vous permet de sélectionner des champs d’entrée et de sortie pour le service. Vous pouvez également utiliser le type de règle **Définir la valeur** pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
 
 Par exemple, la règle suivante appelle un service get qui utilise l’ID d’employé comme entrée et les valeurs renvoyées sont renseignées dans les champs ID, Nom, Prénom et Sexe correspondants du formulaire.
 
 ![invoke-service](assets/invoke-service.png)
 
-En outre, vous pouvez utiliser l’API `guidelib.dataIntegrationUtils.executeOperation` pour écrire un code JavaScript dans l’éditeur de code pour l’éditeur de règles. Pour plus d’informations sur l’API, voir [API pour appeler le service de modèle de données de formulaire](/help/forms/using/invoke-form-data-model-services.md).
+En outre, vous pouvez utiliser l’API `guidelib.dataIntegrationUtils.executeOperation` pour écrire un code JavaScript dans l’éditeur de code pour l’éditeur de règles. Pour plus de détails sur l’API, voir [API pour appeler le service de modèle de données](/help/forms/using/invoke-form-data-model-services.md).

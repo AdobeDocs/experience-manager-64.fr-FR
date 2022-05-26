@@ -13,7 +13,7 @@ exl-id: 6d860fe3-6884-4141-ad3a-5315c514c843
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Spécifiez les paramètres suivants dans l’URL de requête :
   </tr> 
   <tr> 
    <td><code>cutPoints</code> <br /> (facultatif)</td> 
-   <td>Spécifie une liste de propriétés de formulaire séparées par des virgules du formulaire à inclure dans les résultats. Les propriétés par défaut sont les suivantes :<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td> 
+   <td>Spécifie une liste de propriétés de formulaire séparées par des virgules du formulaire à inclure dans les résultats. Les propriétés par défaut sont les suivantes : <br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td> 
   </tr> 
   <tr> 
    <td><code>search</code> <br /> (facultatif)</td> 

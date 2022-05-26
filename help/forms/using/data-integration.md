@@ -13,7 +13,7 @@ exl-id: 8cbd3fb0-3c87-433e-bfd7-0f93216a5de7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ L’intégration de données AEM Forms permet de configurer et de connecter des
 Une fois que vous avez créé un modèle de données de formulaire, vous pouvez l’utiliser dans divers processus de formulaires adaptatifs et de communications interactives :
 
 * Créer des formulaires adaptatifs et des communications interactives basés sur le modèle de données de formulaire
-* Préremplir des formulaires adaptatifs et des communications interactives à partir de sources de données configurées
+* Remplir des formulaires adaptatifs et des communications interactives à partir de sources de données configurées
 * Appeler des services/opérations de source de données à l’aide de règles de formulaire adaptatif
 * Écrire les données de formulaire adaptatif envoyées dans les sources de données
 

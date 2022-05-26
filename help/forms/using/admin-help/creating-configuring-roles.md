@@ -13,7 +13,7 @@ exl-id: 794769f8-57c7-43c1-87dd-952121ced3e4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2526'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -23,73 +23,73 @@ Les pages Web de User Management vous permettent d’associer des utilisateurs e
 
 User Management comporte deux types de rôles :
 
-**Rôles mutables :** Ce type de rôle peut être modifié et supprimé, et les autorisations de rôle peuvent être ajoutées et supprimées de ces types de rôle. Les rôles que vous créez sont des rôles mutables. Vous pouvez ajouter et supprimer des utilisateurs et groupes affectés à des rôles mutables.
+**Rôles modifiables :** ce type de rôle peut être modifié et supprimé et vous pouvez y ajouter des droits et en supprimer. Les rôles que vous créez sont des rôles mutables. Vous pouvez ajouter et supprimer des utilisateurs et groupes affectés à des rôles mutables.
 
-**Rôles non modifiables :** Les rôles par défaut inclus dans User Management sont des rôles non modifiables. Ils ne peuvent être ni modifiés ni supprimés. Toutefois, vous pouvez ajouter ou supprimer des utilisateurs et des groupes affectés à des rôles non modifiables.
+**Rôles non-modifiables :** les rôles par défaut inclus dans User Management sont des rôles non modifiables. Ils ne peuvent être ni modifiés ni supprimés. Toutefois, vous pouvez ajouter ou supprimer des utilisateurs et des groupes affectés à des rôles non modifiables.
 
-Les API d&#39;AEM forms permettent également de créer des rôles modifiables et non modifiables.
+Les API d’AEM forms permettent également de créer des rôles modifiables et non modifiables.
 
 ## Rôles par défaut {#default-roles}
 
 Les rôles par défaut suivants sont inclus dans la base de données Gestion des utilisateurs.
 
-**Utilisateur d’Administration Console :** peuvent accéder à Administration Console.
+**Utilisateur de la console d’administration :** peut accéder à la console d’administration.
 
-**Administrateur de l’application :** Peut utiliser toutes les fonctionnalités de Workbench. Peut utiliser les pages Applications et services de Administration Console pour configurer des propriétés d’exécution de services, des points de fin et la sécurité.
+**Administrateur de l’application :** peut utiliser toutes les fonctionnalités de Workbench. Peut utiliser les pages Applications et services d’Administration Console pour configurer des propriétés d’exécution de services, des points de fin et la sécurité.
 
-**Administrateur d’AEM forms :** peut effectuer toutes les tâches pour tous les services installés.
+**Administrateur d’AEM Forms :** peut effectuer toutes les tâches pour tous les services installés.
 
-**Administrateur de sécurité :** Contrôle les paramètres User Management et gère les utilisateurs et les groupes associés à un domaine User Manager.
+**Administrateur de la sécurité :** contrôle les paramètres User Management et gère les utilisateurs et les groupes associés aux domaines User Manager.
 
-**Utilisateur des services :** peut afficher et appeler n’importe quel service ;
+**Utilisateur des services :** peut afficher et appeler n’importe quel service.
 
-**Super administrateur :** a accès à toutes les fonctionnalités d’administration du système, y compris les services ;
+**Super administrateur :** a accès à toutes les fonctionnalités administratives du système, notamment aux services.
 
-**Trust Administrator :** peut gérer les paramètres d’approbation PKI et les informations d’identification PKI gérés à partir de la page Trust Store Management de la console d’administration.
+**Administrateur de confiance :** peut gérer les paramètres d’approbation PKI et les informations d’identification PKI gérés à partir de la page de Trust Store Management dans la console d’administration.
 
 ### Rôles par défaut supplémentaires {#additional-default-roles}
 
 Les rôles par défaut supplémentaires suivants peuvent également être inclus, selon les composants d’AEM Forms installés.
 
-**Utilisateur de l’application de téléchargement de document :** Peut télécharger des documents à l’aide de Flex Remoting.
+**Utilisateur de l’application de téléchargement de document :** peut télécharger des documents à l’aide de Flex Remoting.
 
-**Administrateur Forms :** peut afficher et modifier les paramètres de la page Forms dans Administration Console.
+**Administrateur Forms :** peut afficher et modifier des paramètres de la page Forms dans la console d’administration.
 
-**AEM forms Contentspace Administrator :** peut afficher et modifier les paramètres de la page Content Services (obsolète) dans Administration Console.
+**Administrateur AEM Forms Contentspace :** peut afficher et modifier des paramètres de la page Content Services (obsolète) dans la console d’administration.
 
-**AEM utilisateur Contentspace de forms :** Peut se connecter aux pages web de Contentspace (obsolète)
+**Utilisateur AEM Forms Contentspace :** peut se connecter aux pages web de Contentspace (obsolète).
 
-**Documentum Connector Administrator :** peut afficher et modifier les paramètres de la page Connector for EMC Documentum dans Administration Console.
+**Administrateur Documentum Connector :** peut afficher et modifier des paramètres de la page Connector for EMC Documentum dans la console d’administration.
 
-**Administrateur du connecteur FileNet d’AEM forms :** peut afficher et modifier les paramètres de la page Connector for IBM FileNet dans Administration Console.
+**Administrateur FileNet Connector d’AEM forms :** peut afficher et modifier les paramètres de la page Connector for IBM FileNet dans la console d’administration.
 
-**Administrateur IBM CM Connector :** peut afficher et modifier les paramètres de la page Connector for IBM Content Manager dans Administration Console.
+**Administrateur AEM Forms IBM CM Connector :** peut afficher et modifier les paramètres de la page Connector for IBM Content Manager dans la console d’administration.
 
-**Administrateur Rights Management :** exécute toutes les tâches requises pour toutes les configurations de serveur sur les pages de Rights Management appropriées ;
+**Administrateur Rights Management :** exécute toutes les tâches requises pour l’ensemble des configurations de serveur dans les pages Rights Management appropriées.
 
-**Utilisateur final du Rights Management :** peut accéder aux pages web des utilisateurs finaux Rights Management ;
+**Utilisateur final Rights Management :** peut accéder aux pages web des utilisateurs finaux Rights Management.
 
-**Rights Management Invite User :** Peut inviter des utilisateurs
+**Utilisateur Rights Management Invite :** peut inviter des utilisateurs.
 
-**Rights Management Gérer les utilisateurs invités et locaux :** peut effectuer les tâches requises pour gérer tous les utilisateurs invités et locaux sur les pages de Rights Management appropriées ;
+**Gérer les utilisateurs invités et locaux sur Rights Management :** peut effectuer les tâches requises pour gérer tous les utilisateurs invités et locaux sur les pages de Rights Management appropriées.
 
-**Administrateur du jeu de stratégies de Rights Management :** exécute toutes les tâches requises pour tous les jeux de stratégies sur les pages de Rights Management appropriées ;
+**Administrateur des jeux de stratégie sur Rights Management :** exécute toutes les tâches requises pour l’ensemble des jeux de stratégies dans les pages Rights Management appropriées.
 
-**Super administrateur Rights Management :** exécute toutes les tâches requises à partir de la page du Rights Management ;
+**Super administrateur Rights Management :** exécute toutes les tâches requises à partir de la page Rights Management.
 
-**Administrateur d’AEM forms Workspace :** peut afficher et modifier les paramètres de la page Workspace dans Administration Console.
+**Administrateur d’espace de travail AEM Forms :** peut afficher et modifier les paramètres de la page Espace de travail dans la console d’administration.
 
 ***Remarque ** : Flex Workspace est obsolète pour la version d’AEM Forms.*
 
-**Utilisateur de Workspace :** peut se connecter à l’application Workspace destinée aux utilisateurs finaux ;
+**Utilisateur Workspace :** peut se connecter à l’application Workspace destinée aux utilisateurs finaux.
 
-**Administrateur Output :** peut afficher et modifier les paramètres de la page Output d’Administration Console.
+**Administrateur Output :** peut afficher et modifier des paramètres de la page Output dans la console d’administration.
 
-**Administrateur PDFG :** peut afficher et modifier les paramètres de la page PDF Generator dans Administration Console.
+**Administrateur PDFG :** peut afficher et modifier des paramètres de la page PDF Generator dans la console d’administration.
 
-**Utilisateur PDFG :** Peut accéder à toutes les fonctionnalités non administratives de PDF Generator
+**Utilisateur PDFG :** peut accéder à toutes les fonctionnalités non administratives de PDF Generator.
 
-**Application web des extensions Acrobat Reader DC :** Peut utiliser l’application web des extensions Acrobat Reader DC
+**Application web des extensions Acrobat Reader DC :** peut utiliser l’application web des extensions Acrobat Reader DC.
 
 >[!NOTE]
 >
@@ -179,165 +179,165 @@ Vous pouvez modifier les droits des rôles que vous avez créés, mais pas ceux 
 
 ### Autorisations d’AEM Forms {#aem-forms-permissions}
 
-**ADD_REMOVE_ENDPOINT_PERM :** Ajout, suppression et modification des points de fin d’un service
+**ADD_REMOVE_ENDPOINTS_PERM :** ajouter, supprimer et modifier des points de fin d’un service.
 
-**Connexion du Admin Console :** Affichage de la console d’administration
+**Connexion à Admin Console :** affichage de la console d’administration.
 
-**Certificate Modify :** Modifier les paramètres d’approbation de tout certificat dans Trust Store
+**Modifier un certificat :** permet de modifier les paramètres d’approbation de tout certificat de Trust Store.
 
-**Certificate Read :** Lire tout certificat dans Trust Store
+**Lire un certificat :** permet de lire tout certificat de Trust Store.
 
-**Certificate Write :** Ajout d’un certificat à Trust Store
+**Écrire un certificat :** permet d’ajouter un certificat à Trust Store.
 
-**Component Add :** Installer un nouveau composant dans le système
+**Ajouter des composants :** permet d’installer un nouveau composant dans le système.
 
-**Suppression de composants :** Suppression de tout composant du système
+**Supprimer des composants :** permet de supprimer tout composant du système.
 
-**Component Read :** Lire tout composant du système
+**Lire des composants :** permet de lire tout composant du système.
 
-**Administrateur Contentspace :** Autorisation pour l’administrateur Contentspace (obsolète)
+**Administrateur Contentspace :** permet d’autoriser l’administrateur Contentspace (obsolète).
 
-**Contentspace Console Login :** Autorisation de connexion à la console Contentspace (obsolète)
+**Connexion à la console Contentspace :** permet d’autoriser la connexion à la console Contentspace (obsolète).
 
-**Contrôle des paramètres principaux :** Gestion des paramètres de la page Paramètres de Core System dans Administration Console
+**Contrôle des paramètres principaux :** permet de gérer les paramètres de la page Paramètres principaux du système dans la console d’administration.
 
-**CREATE_VERSION_PERM :** Création d’une version d’un service
+**CREATE_VERSION_PERM :** permet de créer une nouvelle version du service.
 
-**Credential Modify :** Modification des informations d’identification de signature dans Trust Store
+**Modifier les informations d’identification :** permet de modifier toute information d’identification de signature dans Trust Store.
 
-**Credential Read :** Lire les informations d’identification de signature dans Trust Store
+**Lire les informations d’identification :** permet de lire toute information d’identification de signature dans Trust Store.
 
-**Credential Write :** Ajout d’informations d’identification de signature à Trust Store
+**Écrire des informations d’identification :** permet d’ajouter une information d’identification de signature dans Trust Store.
 
-**CRL Modify :** Modifier toute liste de révocation des certificats (CRL) dans Trust Store
+**Modifier des listes de révocation des certificats :** permet de modifier toute liste de révocation des certificats (CRL, Certificate Revocation List) dans Trust Store.
 
-**CRL Read :** Lire toute liste CRL dans Trust Store
+**Lire des listes de révocation des certificats :** permet de lire toute liste de révocation des certificats de Trust Store.
 
-**CRL Write :** Ajout d’une liste CRL à Trust Store
+**Écrire des listes de révocation des certificats :** permet d’ajouter une liste de révocation des certificats à Trust Store.
 
-**Déléguer :** Définir une ACL sur une ressource
+**Déléguer :** permet de définir une liste de contrôle d’accès (ACL) pour une ressource.
 
-**DELETE_VERSION_PERM :** Suppression d’une version d’un service
+**DELETE_VERSION_PERM :** permet de supprimer une version du service.
 
-**Document Upload :** Téléchargement de documents dans AEM forms
+**Charger des documents :** permet de charger des documents dans AEM Forms.
 
-**Domain Control :** Créer, supprimer ou modifier des paramètres pour tout domaine User Management, y compris ses fournisseurs d’authentification et d’annuaire
+**Contrôler les domaines :** permet de créer, supprimer ou modifier des paramètres pour tout domaine User Management, y compris ses fournisseurs d’authentification et d’annuaire.
 
-**Event Type Edit :** Modification des types d’événement
+**Event Type Edit :** permet de modifier des types d’événements.
 
-**Identity Impersonation Control :** Emprunter l’identité dans User Manager
+**Identity Impersonation Control :** permet d’emprunter une identité dans User Manager.
 
-**INVOKE_PERM :** Appeler toutes les opérations sur un service
+**INVOKE_PERM :** permet d’appeler toutes les opérations d’un service.
 
-**LCDS Data Model Control :** Lecture et déploiement de modèles de données dans Data Services
+**LCDS Data Model Control :** permet de lire et déployer des modèles de données dans Data Services.
 
-**Mise à jour de License Manager :** Mise à jour des informations de licence
+**License Manager Update :** permet de mettre à jour les informations de licence.
 
-**MODIFY_CONFIG_PERM :** Modification de la configuration d’un service
+**MODIFY_CONFIG_PERM :** permet de modifier la configuration d’un service.
 
-**TERM** Modification de la version d’un service
+**TERM :** permet de modifier la version d’un service.
 
-**PDFGAdminPermission :** Administrateur PDFG
+**PDFGAdminPermission :** administrateur PDFG
 
-**PDFGUserPermission :** Utilisateur PDFG
+**PDFGUserPermission :** utilisateur PDFG
 
-**PERM_DCTM_ADMIN :** Administrateur Documentum Connector
+**PERM_DCTM_ADMIN :** administrateur Documentum Connector
 
-**PERM_FILENET_ADMIN :** Administrateur FileNet Connector
+**PERM_FILENET_ADMIN :** administrateur FileNet Connector
 
-**PERM_FORMS_ADMIN :** Administrateur Forms
+**PERM_FORMS_ADMIN :** administrateur Forms
 
-**PERM_IBMCM_ADMIN :** Administrateur IBM CM Connector
+**PERM_IBMCM_ADMIN :** administrateur d’IBM CM Connector
 
-**PERM_OUTPUT_ADMIN :** Administrateur Output
+**PERM_OUTPUT_ADMIN :** administrateur Output
 
-**PERM_READER_EXTENSIONS_WEB_APPLICATION :** Utilisation de l’application web des extensions Acrobat Reader DC
+**PERM_READER_EXTENSIONS_WEB_APPLICATION :** permet d’utiliser l’application web Extensions Acrobat Reader DC.
 
-**PERM_SP_ADMIN :** Gestion des paramètres du connecteur SharePoint
+**PERM_SP_ADMIN :** permet de gérer les paramètres de SharePoint Connector.
 
-**PERM_WORKSPACE_ADMIN :** Gestion des paramètres de Workspace
+**PERM_WORKSPACE_ADMIN :** permet de gérer les paramètres de Workspace.
 
-**PERM_WORKSPACE_USER :** Connectez-vous à l’application Workspace destinée aux utilisateurs finaux.
+**PERM_WORKSPACE_USER :** permet de se connecter à l’application Workspace destinée aux utilisateurs finaux.
 
-**Principal Control :** Gérer les utilisateurs et les groupes pour n’importe quel domaine et gérer les affectations de rôles pour tous les utilisateurs et groupes d’un domaine.
+**Principal Control :** permet de gérer les utilisateurs et groupes de n’importe quel domaine, et de gérer les affectations de rôles pour tous les utilisateurs et groupes de n’importe quel domaine.
 
-**Lecture/Suppression de l’enregistrement de processus :** Liste et récupération des instances d’audit de workflow
+**Process Recording Read/Delete :** permet de répertorier et de récupérer les instances de contrôle des workflows.
 
-**PROCESS_OWNER_PERM :** Affichage des données de tendance et exécution d’actions administratives sur un service créé à partir d’un processus
+**PROCESS_OWNER_PERM :** permet de visualiser les données sur les tendances et d’effectuer des tâches administratives sur un service créé à partir d’un processus.
 
-**Lecture :** Lire le contenu d&#39;une ressource
+**Read :** permet de lire le contenu d’une ressource.
 
-**READ_PERM :** Lecture ou affichage d’un service
+**READ_PERM :** permet de lire ou d’afficher un service.
 
-**Renouveler l’assertion :** Renouveler les assertions dans User Management
+**Renouveler l’assertion :** permet de renouveler les assertions dans User Management.
 
-**Repository Delegate :** Définir une ACL sur une ressource
+**Repository Delegate :** permet de définir une liste de contrôle d’accès (ACL) pour une ressource.
 
-**Repository Read :** Lire le contenu d&#39;une ressource
+**Repository Read :** permet de lire le contenu d’une ressource.
 
-**Repository Traverse :** Inclure une ressource dans une requête de ressources de liste ou lire les métadonnées d’une ressource
+**Repository Traverse :** permet d’inclure une ressource dans une demande de ressources de liste ou de lire les métadonnées d’une ressource.
 
-**Repository Write :** Écriture des métadonnées et du contenu du référentiel
+**Repository Write :** permet d’enregistrer des métadonnées et du contenu de référentiel.
 
-**Rights Management Change Policy Owner :** Modifier le propriétaire de la stratégie
+**Rights Management Change Policy Owner :** permet de modifier le propriétaire de la stratégie.
 
-**Rights Management End User Console Login :** Connexion à l’interface utilisateur de l’utilisateur final du Rights Management
+**Rights Management End User Console Login :** permet de se connecter à l’interface des utilisateurs finaux de Rights Management.
 
-**Configuration de la gestion des Rights Management :** Gestion de la configuration du serveur
+**Rights Management Manage Configuration :** permet de gérer la configuration du serveur.
 
-**Rights Management Gérer les utilisateurs invités et locaux :** Gestion des utilisateurs invités et locaux
+**Rights Management Manage Invited and Local Users :** permet de gérer les utilisateurs invités et locaux.
 
-**Rights Management Gérer les jeux de stratégies :** Gérer toutes les stratégies et tous les documents d’un jeu de stratégies
+**Rights Management Manage Policy Sets :** permet de gérer toutes les stratégies et tous les documents au sein d’un jeu de stratégies.
 
-**Rights Management Policy Set Add Coordinator :** Ajouter, supprimer et modifier des autorisations pour les coordinateurs de jeux de stratégies
+**Rights Management Policy Set Add Coordinator :** permet d’ajouter, de supprimer et de modifier des autorisations pour les coordinateurs de jeux de stratégies.
 
-**Création d’un jeu de stratégies de Rights Management :** Création d’une stratégie pour un jeu de stratégies
+**Rights Management Policy Set Create Policy :** permet de créer une nouvelle stratégie pour un jeu de stratégies.
 
-**Stratégie de suppression du jeu de stratégies de Rights Management :** Suppression d’une stratégie d’un jeu de stratégies
+**Rights Management Policy Set Delete Policy :** permet de supprimer une stratégie à partir d’un jeu de stratégies.
 
-**Stratégie de modification du jeu de stratégies de Rights Management :** Modification d’une stratégie dans un jeu de stratégies
+**Rights Management Policy Set Edit Policy :** permet de modifier une stratégie dans un jeu de stratégies.
 
-**Rights Management Policy Set Manage Document Publisher :** Lorsque vous créez des jeux de stratégies, vous attribuez aux utilisateurs le rôle d’éditeur de document. L’éditeur est l’utilisateur qui protège le document avec une stratégie.
+**Rights Management Policy Set Manage Document Publisher :** lorsque vous créez des jeux de stratégies, vous affectez à des utilisateurs le rôle d’éditeur de document. L’éditeur est l’utilisateur qui protège le document avec une stratégie.
 
-**Rights Management Policy Set Remove Coordinator :** Suppression d’un coordinateur de jeux de stratégies d’un jeu
+**Rights Management Policy Set Remove Coordinator :** permet de supprimer un coordinateur de jeux de stratégies.
 
-**Document de révocation du jeu de stratégies de Rights Management :** Révocation de l’accès aux documents d’un jeu de stratégies
+**Rights Management Policy Set Revoke Document :** permet d’appeler l’accès aux documents d’un jeu de stratégies.
 
-**Stratégie de changement de jeu de stratégies de Rights Management :** Changement de stratégies pour un document
+**Rights Management Policy Set Switch Policy :** permet de changer de stratégie pour un document.
 
-**Document de révocation du jeu de stratégies de Rights Management :** Annulation de la révocation d’un document
+**Rights Management Policy Set Unrevoke Document :** permet d’annuler la révocation d’un document.
 
-**Événement d’affichage du jeu de stratégies de Rights Management :** Affichage des événements de stratégie et de document d’une stratégie ou d’un document dans un jeu de stratégies
+**Rights Management Policy Set View Event :** permet d’afficher des événements de stratégie et de document pour n’importe quel document ou stratégie du jeu de stratégies.
 
-**Événements du serveur de vue Rights Management :** Recherche et affichage de tous les événements de contrôle
+**Rights Management View Server Events :** permet de rechercher et d’afficher tous les événements de contrôle.
 
-**Contrôle de rôle :** Création, suppression et modification des rôles dans User Management
+**Role Control :** permet de créer, supprimer et modifier des rôles dans User Management.
 
-**Service Activate :** Démarrez n’importe quel service, le rendant disponible pour appel
+**Service Activate :** permet de démarrer un service, en le rendant disponible pour des appels.
 
-**Service Add :** Déployez un nouveau service dans le registre des services. Cela inclut l’ajout de nouveaux processus et de variantes de processus.
+**Service Add :** permet de déployer un nouveau service dans le registre des services. Cela inclut l’ajout de nouveaux processus et de variantes de processus.
 
-**Service Deactivate :** Arrêter tout service du système
+**Service Deactivate :** permet d’arrêter tout service du système.
 
-**Service Delete :** Supprimez tout service du système, y compris les processus et les variantes de processus.
+**Service Delete :** permet de supprimer tout service du système, y compris les processus et variantes de processus.
 
-**Service Invoke :** Appeler tout service dans le registre de services disponible au moment de l’exécution
+**Service Invoke :** permet d’appeler tout service dans le registre de services disponible au moment de l’exécution.
 
-**Service Modify :** Modifiez les propriétés de configuration de tout service du système. Cela inclut le verrouillage et le déverrouillage d’un service dans l’IDE, et l’ajout ou la suppression de points de fin au niveau d’un service.
+**Service Modify :** permet de modifier les propriétés de configuration de tout service du système. Cela inclut le verrouillage et le déverrouillage d’un service dans l’IDE, et l’ajout ou la suppression de points de fin au niveau d’un service.
 
-**Service Read :** Lisez tous les services du système. Cela inclut tous les processus et variantes de processus.
+**Service Read :** permet de lire tout service du système. Cela inclut tous les processus et variantes de processus.
 
-**SERVICE_AGENT_PERM :** Afficher des données et interagir avec des instances de processus pour un service créé à partir d’un processus
+**SERVICE_AGENT_PERM :** permet d’afficher des données et d’interagir avec des instances de processus pour un service créé à partir d’un processus.
 
-**SERVICE_MANAGER_PERM :** Exécution de l’équilibrage de charge et d’autres actions administratives sur un service créé à partir d’un processus
+**SERVICE_MANAGER_PERM :** permet d’effectuer des actions d’équilibrage de charge et d’autres actions administratives sur un service créé à partir d’un processus.
 
-**START_STOP_PERM :** Démarrer ou arrêter un service
+**START_STOP_PERM :** permet de démarrer ou d’arrêter un service.
 
-**SUPERVISOR_PERM :** Affichage des données d’instance de processus pour un service créé à partir d’un processus
+**SUPERVISOR_PERM :** permet d’afficher les données d’instance de processus d’un service créé à partir d’un processus.
 
-**Traverse :** Inclure une ressource dans une requête de ressources de liste ou lire les métadonnées d’une ressource
+**Traverse :** permet d’inclure une ressource dans une demande de ressources de liste ou de lire les métadonnées d’une ressource.
 
-**Write :** Écriture des métadonnées et du contenu du référentiel
+**Write :** permet d’enregistrer des métadonnées et du contenu de référentiel.
 
 **Ouverture de fichiers dans Workbench**
 

@@ -12,7 +12,7 @@ exl-id: 6ae70f02-a86d-4514-abc5-1ed08e484852
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1119'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
       >[!NOTE]
       >
-      >Lorsque toutes les instances d’un panneau sont supprimées d’un formulaire adaptatif, pour ajouter une instance du panneau supprimé, utilisez la syntaxe _panelName pour capturer le gestionnaire d’instances du panneau et utilisez l’API addInstance du gestionnaire d’instances pour ajouter l’instance supprimée. Par exemple, _panelName.addInstance(). Elle ajoute une instance du panneau supprimé.
+      >Lorsque toutes les instances d’un panneau sont supprimées d’un formulaire adaptatif, pour ajouter une instance du panneau supprimé, utilisez la syntaxe _panelName pour capturer le gestionnaire d’instances du panneau et l’API addInstance du gestionnaire d’instances afin d’ajouter l’instance supprimée. Par exemple, _panelName.addInstance(). Elle ajoute une instance du panneau supprimé.
 
 
 

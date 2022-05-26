@@ -13,7 +13,7 @@ exl-id: bc750571-08a5-414c-aed5-4e839f6695ae
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '866'
-ht-degree: 78%
+ht-degree: 96%
 
 ---
 
@@ -46,9 +46,9 @@ Les paramètres de cache par défaut d’AEM Forms peuvent ne pas suffire pour o
 >
 >Si vous utilisez le répartiteur AEM pour mettre en cache des formulaires adaptatifs, il met également en cache les formulaires adaptatifs contenant des formulaires avec des données préremplies. Si ces formulaires sont diffusés à partir du cache du répartiteur AEM, il se peut que des données préremplies ou obsolètes soient diffusées aux utilisateurs. Par conséquent, utilisez le répartiteur AEM pour mettre en cache des formulaires adaptatifs qui n’utilisent pas de données pré-renseignées. De plus, un cache de répartiteur n’invalide pas automatiquement les fragments mis en cache. Par conséquent, ne l’utilisez pas pour mettre en cache des fragments de formulaire. Pour de tels formulaires et fragments, utilisez le [Cache de formulaires adaptatifs](/help/forms/using/configure-adaptive-forms-cache.md).
 
-## Paramètres JVM    {#jvm-parameters}
+## Paramètres JVM  {#jvm-parameters}
 
-Pour des performances optimales, il est recommandé d’utiliser la JVM suivante : `init` arguments de configuration `Java heap` et `PermGen`.
+Pour des performances optimales, il est conseillé d’utiliser les arguments `init` JVM suivants pour configurer le `Java heap` et `PermGen`.
 
 ```java
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -59,7 +59,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 >[!NOTE]
 >
->Les paramètres recommandés concernent Windows 2008 R2 8 Core et Oracle HotSpot 1.7 (64 bits) JDK et doivent être augmentés ou réduits selon votre configuration système.
+>Les paramètres recommandés sont ceux de Windows 2008 R2 8 Core et Oracle HotSpot 1.7 (64 bits) JDK et doivent être adaptés en fonction de la configuration de votre système.
 
 ## Utilisation d’un serveur Web {#using-a-web-server}
 
@@ -69,7 +69,7 @@ Par exemple, suivez les étapes ci-dessous pour activer la compression sur Apach
 
 >[!NOTE]
 >
->Les instructions suivantes ne s’appliquent à aucun autre serveur que le serveur web Apache 2.0 32 bits. Pour obtenir des instructions spécifiques à un autre serveur, reportez-vous à la documentation correspondante.
+>Les instructions suivantes ne s’appliquent qu’à Apache Web Server 2.0 32 bits. Pour obtenir des instructions spécifiques à un autre serveur, reportez-vous à la documentation correspondante.
 
 Les étapes suivantes présentent les modifications à effectuer pour activer la compression avec le serveur Web Apache.
 
@@ -81,7 +81,7 @@ Les étapes suivantes présentent les modifications à effectuer pour activer la
 
 Apache peut communiquer avec CRX via le protocole HTTP. Les configurations concernent l’optimisation via HTTP.
 
-1. Supprimez les commentaires des configurations de module suivantes dans `APACHE_HOME/conf/httpd.conf` fichier .
+1. Supprimez les commentaires des configurations de modules suivantes dans le fichier `APACHE_HOME/conf/httpd.conf`.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -91,18 +91,18 @@ Apache peut communiquer avec CRX via le protocole HTTP. Les configurations conce
 
    >[!NOTE]
    >
-   >Pour Linux, la valeur par défaut `APACHE_HOME` is `/etc/httpd/`.
+   >Pour Linux, le répertoire `APACHE_HOME` par défaut est `/etc/httpd/`.
 
 1. Configurez le proxy sur le port 4502 de crx.
 
-   Ajoutez la configuration suivante dans `APACHE_HOME/conf/httpd.conf` fichier de configuration.
+   Ajoutez la configuration suivante dans le fichier de configuration `APACHE_HOME/conf/httpd.conf`.
 
    ```java
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Activez la compression. Ajoutez la configuration suivante dans `APACHE_HOME/conf/httpd.conf` fichier de configuration.
+1. Activez la compression. Ajoutez la configuration suivante au fichier de configuration `APACHE_HOME/conf/httpd.conf`.
 
    **Pour les formulaires HTML5**
 
@@ -138,7 +138,7 @@ Apache peut communiquer avec CRX via le protocole HTTP. Les configurations conce
    </Location>
    ```
 
-   Pour accéder au serveur crx, utilisez `https://[server]:80`où `server` est le nom du serveur sur lequel le serveur Apache est en cours d’exécution.
+   Pour accéder au serveur CRX, utilisez `https://[server]:80`, où `server` est le nom du serveur sur lequel s’exécute le serveur Apache.
 
 ## À l’aide d’un antivirus sur un serveur exécutant AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -148,13 +148,13 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 
 * Répertoire d’installation d’AEM. S’il n’est pas possible d’exclure le répertoire complet, excluez les fichiers suivants :
 
-   * [Répertoire d’installation AEM]\crx-repository\temp
-   * [Répertoire d’installation AEM]\crx-repository\repository
-   * [Répertoire d’installation AEM]\crx-repository\launchpad
+   * [Répertoire d’installation d’AEM]\crx-repository\temp
+   * [Répertoire d’installation d’AEM]\crx-repository\repository
+   * [Répertoire d’installation d’AEM]\crx-repository\launchpad
 
 * Répertoire temporaire du serveur d’applications. L’emplacement par défaut est :
 
-   * (Jboss) [Répertoire d’installation AEM]\jboss\standalone\tmp
+   * (JBoss) [Répertoire d’installation d’AEM]\jboss\standalone\tmp
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (Websphere) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
@@ -172,5 +172,6 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 >[!NOTE]
 >
 >* Si vous utilisez un autre emplacement pour le répertoire de stockage global de documents et le répertoire temporaire, ouvrez l’interface utilisateur d’administration à l’adresse `https://[server]:[port]/adminui)`, accédez à **Accueil > Paramètres > Paramètres de Core System > Configurations de base** pour confirmer l’emplacement utilisé.
-* Si le serveur AEM Forms est lent, même après avoir exclu les répertoires suggérés, excluez également le fichier exécutable Java (java.exe).
+* Si le serveur AEM Forms est lent, même après l’exclusion des répertoires suggérés, excluez également le fichier exécutable Java (java.exe).
+>
 

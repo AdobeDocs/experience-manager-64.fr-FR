@@ -1,7 +1,7 @@
 ---
 title: Démarrage des processus
 seo-title: Starting processes
-description: 'Comment utiliser l’espace de travail AEM Forms LiveCycle : sélectionner des processus, ajouter des notes et des pièces jointes, enregistrer des brouillons et ajouter aux favoris.'
+description: 'Comment utiliser l’espace de travail AEM Forms LiveCycle : sélectionner des processus, ajouter des notes et des pièces jointes, enregistrer des brouillons et ajouter aux favoris.'
 seo-description: How to use LiveCycle AEM Forms workspace--select processes, add notes and attachments, save draft copies, and add to favorites.
 uuid: a61da785-25b4-4482-bd72-02e250d35dc7
 contentOwner: robhagat
@@ -13,7 +13,7 @@ exl-id: bd5a247f-cd4b-41c8-b5f6-8def4f5c93ef
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1343'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -47,9 +47,9 @@ Lorsque vous sélectionnez un processus, les onglets Formulaires et Détails s�
 
 1. Sélectionnez un processus en cliquant sur une tâche. Le formulaire associé au processus s’ouvre dans l’onglet Formulaire.
 
-   Chaque formulaire d’un processus comporte une URL unique. Vous pouvez utiliser l’URL unique pour lancer directement l’espace de travail du HTML avec le processus et le formulaire spécifiques. Le format de l’URL est https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;applicationname>%2F&lt;processname>. Le &lt;applicationname>%2F&lt;processname> La chaîne est toujours encodée en URL. Voici un exemple d’URL : http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. La chaîne ApplicationName%2FPprocessName de l’exemple est en codage URL.
+   Chaque formulaire d’un processus comporte une URL unique. Vous pouvez utiliser l’URL unique pour lancer directement l’espace de travail HTML avec le processus et le formulaire spécifiques. Le format de l’URL est https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName>. La chaîne &lt;ApplicationName>%2F&lt;ProcessName> est toujours encodée en URL. Voici un exemple d’URL : http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. La chaîne ApplicationName%2FProcessName de l’exemple est en codage URL.
 
-1. Remplissez le formulaire selon les instructions fournies. Si nécessaire, cliquez sur **Maximiser** pour augmenter la zone visible du formulaire.
+1. Remplissez le formulaire selon les instructions fournies. Si nécessaire, cliquez sur le bouton **Agrandir** pour augmenter la partie visible du formulaire.
 1. Si l’onglet Pièces jointes est disponible, ajoutez des pièces jointes comme requis.
 1. Si l’onglet Notes est disponible, fournissez des notes si nécessaire.
 1. Exécutez l’une des étapes suivantes :
@@ -82,7 +82,7 @@ Vous pouvez ajouter plusieurs notes, modifier les notes écrites, et les supprim
 1. Ouvrez une tâche et cliquez sur l’onglet **Notes**, si le processus vous le permet.
 1. Saisissez un titre pour la note dans la zone **Titre**, puis saisissez le texte de la note dans la zone **Note**.
 1. Sélectionnez le niveau des **Autorisations** relatives à la note pour les autres utilisateurs participant au processus.
-1. Cliquez sur **OK**. Un fichier texte contenant votre note est attaché au formulaire. Vous pouvez mettre à jour une note en cliquant sur celle-ci et en modifiant directement le texte. Vous pouvez supprimer une note en cliquant sur le bouton **Supprimer** button ![Image d&#39;une corbeille](assets/icondelete.png) à côté de la note.
+1. Cliquez sur **OK**. Un fichier texte contenant votre note est attaché au formulaire. Vous pouvez mettre à jour une note en cliquant sur celle-ci et en modifiant directement le texte. Vous pouvez supprimer une note en cliquant sur le bouton **Supprimer** ![Image d’une corbeille](assets/icondelete.png) à côté de la note.
 
 ### Ajout d’une pièce jointe {#add-an-attachment}
 
@@ -97,7 +97,7 @@ Vous pouvez également ajouter vos commentaires sur la pièce jointe. Vous pouve
 1. Cliquez sur l’onglet **Pièces jointes** et sélectionnez **Pièce jointe**.
 1. Cliquez sur **Parcourir** pour sélectionner le fichier à attacher.
 1. Sélectionnez le niveau des **Autorisations** relatives à la pièce jointe pour les autres utilisateurs participant au processus. Si vous sélectionnez **Lecture**, d’autres utilisateurs peuvent enregistrer le fichier localement. Si vous sélectionnez l’une des autorisations de modification, les autres utilisateurs peuvent également télécharger un nouveau fichier pour remplacer votre pièce jointe.
-1. Cliquez sur **OK**. Le fichier est attaché au formulaire. Vous pouvez supprimer un fichier en cliquant sur le bouton **Supprimer** button ![Image d&#39;une corbeille](assets/icondelete.png) à côté de la pièce jointe.
+1. Cliquez sur **OK**. Le fichier est attaché au formulaire. Vous pouvez supprimer un fichier en cliquant sur le bouton **Supprimer** ![Image d’une corbeille](assets/icondelete.png) à côté de la pièce jointe.
 
 ## Enregistrement des brouillons de formulaires {#saving-draft-copies-of-forms}
 
@@ -113,7 +113,7 @@ Vous pouvez également configurer l’espace de travail afin qu’il enregistre 
 
 ### Enregistrement d’un brouillon {#save-a-draft-copy}
 
-1. Cliquez sur **Enregistrer** dans le coin inférieur gauche d’un onglet. Le formulaire est ajouté à la catégorie Brouillons de votre page Tâches. Toutes les modifications apportées au formulaire sont enregistrées.
+1. Cliquez sur **Enregistrer** dans le coin inférieur gauche de n’importe quel onglet. Le formulaire est ajouté à la catégorie Brouillons de votre page Tâches. Toutes les modifications apportées au formulaire sont enregistrées.
 
 ### Réouverture d’un brouillon {#reopen-a-draft-copy}
 

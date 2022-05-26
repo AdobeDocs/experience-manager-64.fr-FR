@@ -13,7 +13,7 @@ exl-id: 8bb350f2-a160-4943-bd6a-00f87f4e6cbc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1963'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Par exemple, vous souhaitez que tous les auteurs de formulaire disposent de cert
 
 Vous pouvez accéder à l’éditeur de modèles à partir du menu Outils en accédant à **[!UICONTROL Adobe Experience Manager> Outils> Modèles]**. Ici, les modèles sont organisés dans des dossiers activés pour les modèles modifiables. AEM fournit un dossier global pour organiser les modèles. Cependant, il n’est pas activé par défaut. Vous pouvez demander à votre administrateur d’activer le dossier global ou de créer un nouveau dossier pour les modèles. Pour plus d’informations sur la création de dossiers, voir [Dossiers de modèles](/help/sites-developing/page-templates-editable.md).
 
-Une fois que vous avez appuyé pour ouvrir un dossier, vous trouverez un bouton Créer qui permet de créer un modèle pour les formulaires adaptatifs.
+Une fois que vous appuyez pour ouvrir un dossier, vous trouverez un bouton Créer qui permet de créer un nouveau modèle pour les formulaires adaptatifs.
 
 ### Création d’un modèle {#create-template}
 
@@ -55,7 +55,7 @@ Contient les options suivantes :
    * **Activer/désactiver le panneau latéral** : permet d’afficher ou de masquer la barre latérale.
    * **Informations sur la page** : permet de spécifier des informations telles que l’heure de publication, les vignettes, les bibliothèques côté client, la stratégie de page et la bibliothèque côté client de conceptions de pages.
    * **Émulateur** : permet de simuler et de personnaliser l’aspect des différents dispositifs.
-   * **Sélecteur de calques :** Permet de modifier le calque.
+   * **Sélecteur de calque :** permet de modifier le calque.
 
       Vous pouvez choisir le calque **Structure** ou le calque **Contenu initial**. Le calque Structure vous permet d’ajouter et de personnaliser l’en-tête et le pied de page. Le calque Contenu initial vous permet de personnaliser le contenu du formulaire.
 

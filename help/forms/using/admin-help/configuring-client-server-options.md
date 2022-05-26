@@ -14,7 +14,7 @@ exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '10250'
-ht-degree: 85%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 85%
 
 ## Paramètres de configuration du serveur {#server-configuration-settings}
 
-**URL de base :** URL de base de Document Security, contenant le nom et le port du serveur. Les informations ajoutées à cette base créent des URL de connexion. Par exemple, la séquence /edc/Main.do est ajoutée pour accéder aux pages Web. Les utilisateurs externes répondent également aux demandes d’enregistrement qui leur sont adressées au moyen de cette URL.
+**URL de base :** URL de base de Document Security, contenant le nom et le port du serveur. Les informations ajoutées à cette base créent des URL de connexion. Par exemple, la séquence /edc/Main.do est ajoutée pour accéder aux pages Web. Les utilisateurs externes répondent également aux demandes d’enregistrement qui leur sont adressées au moyen de cette URL.
 
 Si vous utilisez IPv6, vous devez saisir l’URL de base sous la forme du nom de machine ou du nom DNS. Si vous utilisez une adresse IP numérique, Acrobat ne parviendra pas à ouvrir les fichiers protégés par une stratégie. Par ailleurs, utilisez une URL HTTP sécurisée (HTTPS) sur votre serveur.
 
@@ -33,42 +33,42 @@ Si vous utilisez IPv6, vous devez saisir l’URL de base sous la forme du nom de
 >
 >l’URL de base est incorporée dans des fichiers protégés par une stratégie. Les applications clientes utilisent l’URL de base pour se reconnecter au serveur. Les fichiers protégés contiennent toujours l’URL de base, même si elle est modifiée par la suite. Si vous modifiez l’URL de base, les informations de configuration doivent être mises à jour pour tous les clients qui se connectent.
 
-**Période d’ouverture hors ligne par défaut :** Durée par défaut pendant laquelle un utilisateur peut utiliser un document protégé hors connexion. Ce paramètre détermine la valeur de départ de la période d’ouverture hors connexion au moment de la création d’une stratégie (voir Création et modification de stratégies). A l’issue de cette période d’ouverture, le destinataire doit resynchroniser le document pour continuer à l’utiliser.
+**Période d’ouverture hors connexion par défaut :** durée par défaut pendant laquelle un utilisateur peut utiliser un document protégé hors connexion. Ce paramètre détermine la valeur de départ de la période d’ouverture hors connexion au moment de la création d’une stratégie (voir Création et modification de stratégies). A l’issue de cette période d’ouverture, le destinataire doit resynchroniser le document pour continuer à l’utiliser.
 
 Pour plus d’informations sur le fonctionnement de la synchronisation et de l’ouverture hors connexion, reportez-vous à la section [Primer on configuring offline lease and synchronization](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html).
 
-**Période de synchronisation hors ligne par défaut :** la durée maximale pendant laquelle un document peut être utilisé hors ligne lorsqu’il est initialement protégé.
+**Période de synchronisation hors connexion par défaut :** durée maximale pendant laquelle un document peut être utilisé hors connexion lors de la mise en place de sa protection.
 
-**Délai d’expiration de la session client :** durée (en minutes) à l’issue de laquelle Document Security se déconnecte si un utilisateur connecté par le biais d’une application cliente n’interagit pas avec Document Security.
+**Délai d’expiration de la session client :** durée (en minutes) à l’issue de laquelle Document Security se déconnecte si un utilisateur connecté par le biais d’une application cliente n’interagit pas avec Document Security.
 
-**Autoriser l’accès des utilisateurs anonymes :** Sélectionnez cette option pour permettre la création de stratégies partagées et personnelles permettant aux utilisateurs anonymes d’ouvrir des documents protégés par une stratégie. (les utilisateurs qui ne possèdent pas de compte peuvent accéder au document, mais ils ne peuvent pas ouvrir de session Document Security ni utiliser d’autres documents protégés par une stratégie).
+**Autoriser l’accès d’utilisateurs anonymes :** sélectionnez cette option pour permettre de créer des stratégies partagées et personnelles autorisant les utilisateurs anonymes à ouvrir des documents protégés par une stratégie. (les utilisateurs qui ne possèdent pas de compte peuvent accéder au document, mais ils ne peuvent pas ouvrir de session Document Security ni utiliser d’autres documents protégés par une stratégie).
 
-**Désactiver l’accès aux clients version 7 :** Indique si les utilisateurs peuvent utiliser Acrobat ou Reader 7.0 pour se connecter au serveur. Lorsque cette option est sélectionnée, les utilisateurs doivent utiliser Acrobat ou Reader 8.0 et versions ultérieures pour exécuter des opérations Document Security sur des documents PDF. Si certaines stratégies exigent l’exécution d’Acrobat ou de Reader 8.0 et versions ultérieures en mode certifié lors de l’ouverture de documents protégés par une stratégie, désactivez l’accès à Acrobat ou Reader 7 (voir Spécification des droits de documents pour les utilisateurs et les groupes).
+**Désactiver l’accès aux clients version 7 :** indique si les utilisateurs peuvent se connecter au serveur via Acrobat ou Reader 7.0. Lorsque cette option est sélectionnée, les utilisateurs doivent utiliser Acrobat ou Reader 8.0 et versions ultérieures pour exécuter des opérations Document Security sur des documents PDF. Si certaines stratégies exigent l’exécution d’Acrobat ou de Reader 8.0 et versions ultérieures en mode certifié lors de l’ouverture de documents protégés par une stratégie, désactivez l’accès à Acrobat ou Reader 7 (voir Spécification des droits de documents pour les utilisateurs et les groupes).
 
-**Autoriser l’accès hors ligne par document** Sélectionnez cette option pour spécifier l’accès hors ligne par document. Si ce paramètre est activé, l’utilisateur aura accès en mode hors connexion uniquement aux documents qu’il a ouverts en ligne au moins une fois.
+**Autoriser l’accès hors connexion par document :** cette option permet de spécifier l’accès hors connexion par document. Si ce paramètre est activé, l’utilisateur aura accès en mode hors connexion uniquement aux documents qu’il a ouverts en ligne au moins une fois.
 
-**Autoriser l’authentification par mot de passe du nom d’utilisateur :** Sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification par nom d’utilisateur/mot de passe lors de la connexion au serveur.
+**Autoriser l’authentification du mot de passe de l’utilisateur :** sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification par nom d’utilisateur/mot de passe lors de la connexion au serveur.
 
-**Autoriser l’authentification Kerberos :** Sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification Kerberos lors de la connexion au serveur.
+**Autoriser l’authentification Kerberos :** sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification Kerberos lors de la connexion au serveur.
 
-**Autoriser l’authentification de certificat client :** Sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification par certificat lors de la connexion au serveur.
+**Autoriser l’authentification de certificat du client :** sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification de certificat lors de la connexion au serveur.
 
-**Autoriser l’authentification étendue** Sélectionnez cette option pour activer l’authentification étendue, puis saisissez l’URL d’entrée de l’authentification étendue.
+**Autoriser une authentification étendue :** sélectionnez cette option pour activer l’authentification étendue, puis saisissez l’URL d’accueil de l’authentification étendue.
 
 Le fait de sélectionner cette option autorise les applications clientes à utiliser l’authentification étendue. L’authentification étendue fournit des processus d’authentification personnalisée et différentes options d’authentification configurées sur le serveur AEM forms. Par exemple, les utilisateurs peuvent désormais utiliser l’authentification SAML au lieu du nom d’utilisateur/mot de passe AEM forms, à partir des clients Acrobat et Reader. Par défaut, l’URL d’accueil contient *localhost* comme nom de serveur. Remplacer le nom du serveur par un nom d’hôte complet. Le nom d’hôte dans l’URL d’acceuil est automatiquement rempli à partir de l’URL de base si l’authentification étendue n’est pas encore activée. Voir [Ajout du fournisseur d’authentification étendue](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
 ***Remarque ** : l’authentification étendue est prise en charge sur Mac OS X doté de la version 11.0.6 d’Adobe Acrobat et ultérieure.*
 
-**Largeur de contrôle de HTML préférée pour l’authentification étendue** Indiquez la largeur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
+**Largeur de la commande HTML préférée pour l’authentification étendue :** indiquez la largeur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
 
-**Hauteur de contrôle des HTMLS préférée pour l’authentification étendue** Indiquez la hauteur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
+**Hauteur de la commande HTML préférée pour l’authentification étendue :** indiquez la hauteur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
 
-***remarque **: Les limites de largeur et de hauteur de cette boîte de dialogue sont les suivantes :*
-Largeur : Minimum = 400, maximum = 900
+***Remarque ** : les limites de la largeur et la hauteur de cette boîte de dialogue sont les suivantes :*
+Largeur : minimum = 400, maximum = 900
 
 Hauteur : minimum = 450 ; maximum = 800
 
-**Activer la mise en cache des informations d’identification client :** Sélectionnez cette option pour permettre aux utilisateurs de mettre en cache leurs informations d’identification (nom d’utilisateur et mot de passe). Lorsque les informations d’identification d’un utilisateur sont mises en cache, il n’a plus à les saisir à chaque fois qu’il ouvre un document ou lorsqu’il clique sur le bouton Actualiser de la page de gestion des stratégies de sécurité dans Adobe Acrobat. Vous pouvez spécifier le nombre de jours à l’issue duquel les utilisateurs doivent à nouveau fournir ces informations. Si le nombre de jours est fixé à 0, les informations sont mises en cache indéfiniment.
+**Activer la mise en cache des informations d’identification du client :** sélectionnez cette option pour permettre aux utilisateurs de mettre en cache leurs informations d’identification (nom d’utilisateur et mot de passe). Lorsque les informations d’identification d’un utilisateur sont mises en cache, il n’a plus à les saisir à chaque fois qu’il ouvre un document ou lorsqu’il clique sur le bouton Actualiser de la page de gestion des stratégies de sécurité dans Adobe Acrobat. Vous pouvez spécifier le nombre de jours à l’issue duquel les utilisateurs doivent à nouveau fournir ces informations. Si le nombre de jours est fixé à 0, les informations sont mises en cache indéfiniment.
 
 ## Configuration des utilisateurs et administrateurs de Document Security {#configuring-document-security-users-and-administrators}
 
@@ -118,7 +118,7 @@ Lorsque l’authentification étendue est activée, une boîte de dialogue d’a
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration.
 1. Cliquez sur Exporter et enregistrez le fichier de configuration sur votre disque.
 1. Ouvrez le fichier dans un éditeur et recherchez le nœud AllowedUrls.
-1. Dans le `AllowedUrls` , ajoutez les lignes suivantes : `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
+1. Dans le nœud `AllowedUrls`, ajoutez les lignes suivantes : `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
 
    ```as3
    <entry key="sso-l" value="/ssoexample/login.jsp"/> 
@@ -126,7 +126,7 @@ Lorsque l’authentification étendue est activée, une boîte de dialogue d’a
    <entry key="sso-o" value="/ssoexample/logout.jsp"/>
    ```
 
-1. Enregistrez le fichier, puis importez le fichier mis à jour à partir de la page Configuration manuelle : Dans Administration Console, cliquez sur Paramètres > User Management > Configuration > Importer et exporter des fichiers de configuration.
+1. Enregistrez le fichier, puis importez le fichier mis à jour à partir de la page Configuration manuelle : dans la Console d’administration, cliquez sur Paramètres > User Management > Configuration > Importer et exporter les fichiers de configuration.
 
 ## Configuration de la sécurité hors connexion {#configuring-offline-security}
 
@@ -182,7 +182,7 @@ Vous devez rouler deux fois les clés principales avant que les clés précéden
 
 1. Dans la page Document Security, cliquez sur Configuration > Gestion des clés.
 1. Cliquez sur Exécuter le roulement des clés maintenant, puis sur OK.
-1. Attendez 10 minutes environ. Le message de journal suivant apparaît dans le journal du serveur : `Done RightsManagement key rollover for`*N* `principals`. Dans ce message, la lettre *N* correspond au nombre d’utilisateurs du système Document Security.
+1. Attendez 10 minutes environ. Le message suivant s’affiche dans le fichier-journal du serveur : `Done RightsManagement key rollover for`*N* `principals`. Dans ce message, la lettre *N* correspond au nombre d’utilisateurs du système Document Security.
 1. Cliquez sur Exécuter le roulement des clés maintenant, puis sur OK.
 1. Attendez 10 minutes environ.
 
@@ -258,7 +258,7 @@ Si vous utilisez une application compatible Document Security qui gère le contr
 Vous pouvez exporter des événements de contrôle vers un fichier dans un but d’archivage.
 
 1. Dans Administration Console, cliquez sur Services > Document Security > Configuration > Gestion des événements.
-1. Modifiez les paramètres de la section Exporter les événements de contrôle selon les besoins. Vous pouvez préciser les points suivants :
+1. Modifiez les paramètres de la section Exporter les événements de contrôle selon les besoins. Vous pouvez préciser:
 
    * L’âge minimum des événements de contrôle à exporter.
    * Le nombre maximum d’événements de contrôle à inclure dans un seul fichier. Le serveur génère un ou plusieurs fichiers en fonction de cette valeur.
@@ -282,95 +282,98 @@ Vous pouvez activer et désactiver le contrôle des événements et spécifier l
 
 **Evénements de document**
 
-**Afficher le document :** un destinataire affiche un document protégé par une stratégie.
+**Afficher le document :** un destinataire affiche un document protégé par une stratégie.
 
-**Fermer le document :** un destinataire ferme un document protégé par une stratégie.
+**Fermer le document :** un destinataire ferme un document protégé par une stratégie.
 
-**Imprimer en basse résolution** un destinataire imprime un document protégé par une stratégie avec l’option de basse résolution spécifiée.
+**Imprimer en basse résolution** : un destinataire imprime un document protégé par une stratégie avec l’option de basse résolution spécifiée.
 
-**Imprimer en haute résolution :** un destinataire imprime un document protégé par une stratégie avec l’option haute résolution spécifiée.
+**Imprimer en haute résolution :** un destinataire imprime un document protégé par une stratégie avec l’option de haute résolution spécifiée.
 
-**Ajouter une annotation au document :** Un destinataire ajoute une annotation à un document de PDF.
+**Ajouter une annotation au document :** un destinataire ajoute une annotation à un document PDF.
 
-**Révoquer le document :** un utilisateur ou un administrateur révoque l’accès à un document protégé par une stratégie.
+**Révoquer le document :** un utilisateur ou un administrateur révoque l’accès à un document protégé par une stratégie.
 
-**Annuler la révocation du document :** un utilisateur ou un administrateur rétablit l’accès à un document protégé par une stratégie.
+**Annuler la révocation du document :** un utilisateur ou un administrateur rétablit l’accès à un document protégé par une stratégie.
 
-**Form Filling :** Un destinataire saisit des informations dans un document PDF qui est un formulaire à remplir.
+**Remplir le formulaire :** un destinataire saisit des informations dans un document PDF qui est un formulaire à remplir.
 
-**Stratégie supprimée :** Un éditeur supprime une stratégie d’un document pour retirer les protections de sécurité.
+**Stratégie supprimée :** un éditeur supprime une stratégie d’un document pour retirer les protections de sécurité.
 
-**Modifier l’URL de révocation du document :** Un appel au niveau de l’API modifie l’URL de révocation spécifiée pour accéder à un nouveau document qui remplace un document révoqué.
+**Modifier l’URL de révocation du document :** un appel au niveau de l’API modifie une URL de révocation spécifiée pour accéder à un nouveau document qui remplace un document révoqué.
 
-**Modifier le document :** un destinataire modifie le contenu d’un document protégé par une stratégie.
+**Modifier le document :** un destinataire modifie le contenu d’un document protégé par une stratégie.
 
-**Signer le document :** un destinataire signe un document.
+**Signer le document :** un destinataire signe un document.
 
-**Sécuriser un nouveau document :** Un utilisateur applique une stratégie pour protéger un document.
+**Sécuriser un nouveau document :** un utilisateur applique une stratégie pour protéger un document.
 
-**Changer de stratégie pour le document :** un utilisateur ou un administrateur change la stratégie jointe à un document.
+**Changer de stratégie pour le document :** un utilisateur ou un administrateur change la stratégie associée à un document.
 
-**Publier le document sous :** Un nouveau document dont le nom de document et la licence sont identiques à un document existant est enregistré sur le serveur et les documents n’ont pas de relation parent-enfant. Cet événement peut être déclenché à l’aide du SDK d’AEM forms.
+**Publier le document en tant que :** un nouveau document dont les propriétés nomdedocument et licence sont identiques à un document existant est enregistré sur le serveur ; les documents n’ont pas de relation parent-enfant. Cet événement peut être déclenché à l’aide du SDK d’AEM forms.
 
-**Itérer le document :** Un nouveau document dont le nom de document et la licence sont identiques à un document existant est enregistré sur le serveur et les documents ont une relation parent-enfant. Cet événement peut être déclenché à l’aide du SDK d’AEM forms.
+**Itérer le document :** un nouveau document dont les propriétés nomdedocument et licence sont identiques à un document existant est enregistré sur le serveur ; les documents ont une relation parent-enfant. Cet événement peut être déclenché à l’aide du SDK d’AEM forms.
 
 **Evénements de stratégie**
 
-**Stratégie créée :** un utilisateur ou un administrateur crée une stratégie.
+**Stratégie créée :** un utilisateur ou un administrateur crée une stratégie.
 
-**Stratégie activée :** un administrateur rend une stratégie disponible.
+**Stratégie activée :** un administrateur rend une stratégie disponible.
 
-**Stratégie modifiée :** un utilisateur ou un administrateur modifie une stratégie.
+**Stratégie modifiée :** un utilisateur ou un administrateur modifie une stratégie.
 
-**Stratégie désactivée :** un administrateur rend une stratégie indisponible.
+**Stratégie désactivée :** un administrateur rend une stratégie indisponible.
 
-**Stratégie supprimée :** un utilisateur ou un administrateur supprime une stratégie.
+**Stratégie supprimée :** un utilisateur ou un administrateur supprime une stratégie.
 
-**Modifier le propriétaire de la stratégie :** Un appel au niveau de l’API modifie le propriétaire de la stratégie.
+**Modifier le propriétaire de la stratégie :** un appel au niveau de l’API modifie le propriétaire de la stratégie.
 
 **Evénements d’utilisateur**
 
-**Utilisateur supprimé :** Un administrateur supprime un compte utilisateur.
+**Utilisateur supprimé :** un administrateur supprime un compte utilisateur.
 
-**Enregistrer un utilisateur invité :** Un utilisateur externe s’enregistre auprès de Document Security.
+**Enregistrer un utilisateur invité :** un utilisateur externe s’enregistre auprès de la Sécurité des documents.
 
-**Connexion réussie :** Tentatives de connexion réussies par les administrateurs ou les utilisateurs.
+**Ouverture de session réussie :** tentatives d’ouverture de session réussies par des administrateurs ou des utilisateurs. 
 
-**Utilisateurs invités :** Document Security invite un utilisateur à s’enregistrer.
+**Utilisateurs invités :** la Sécurité des documents invite un utilisateur à s’enregistrer.
 
-**Utilisateurs activés :** Les utilisateurs externes activent leur compte à l’aide de l’URL contenue dans l’e-mail d’activation, ou un administrateur active un compte.
+**Utilisateurs activés :** des utilisateurs externes activent leur compte à l’aide de l’URL mentionnée dans le courrier électronique d’activation ou un administrateur active un compte.
 
-**Modifier le mot de passe :** Les utilisateurs invités modifient leurs mots de passe ou un administrateur réinitialise un mot de passe pour un utilisateur local.
+**Modifier le mot de passe :** des utilisateurs invités changent leur mot de passe ou un administrateur réinitialise le mot de passe d’un utilisateur local.
 
-**Échec de la connexion :** Échec des tentatives de connexion par les administrateurs ou les utilisateurs.
+**Echec de l’ouverture de session :** échec des tentatives d’ouverture de session par des administrateurs ou des utilisateurs.
 
-**Utilisateurs désactivés :** Un administrateur désactive un compte utilisateur local.
+**Utilisateurs désactivés :** un administrateur supprime un compte utilisateur local.
 
-**Mise à jour du profil :** Les utilisateurs invités changent de nom, de nom d’organisation et de mot de passe.
+**Mise à jour du profil :** des utilisateurs invités modifient leur nom, le nom de leur entreprise et leur mot de passe.
 
-**Compte verrouillé :** Un administrateur verrouille un compte.
+**Compte verrouillé :** Un administrateur verrouille un compte.
 
 **Evénements de jeu de stratégie**
 
-**Jeu de stratégies créé :** Un administrateur ou un coordinateur de jeux de stratégies crée un jeu de stratégies.
+**Jeu 
 
-**Jeu de stratégies supprimé :** un administrateur ou un coordinateur de jeux de stratégies supprime un jeu de stratégies.
+de stratégies créé :** un administrateur ou un coordinateur de jeux de stratégies crée un jeu de stratégies.
 
-**Jeu de stratégies modifié :** un administrateur ou un coordinateur de jeux de stratégies modifie un jeu de stratégies.
+**Jeu de stratégies supprimé :** un administrateur ou un coordinateur de jeux de stratégies supprime un jeu de stratégies.
+
+**Jeu de stratégies modifié :** un administrateur ou un coordinateur de jeux de stratégies modifie un jeu de stratégies.
 
 **Evénements de système**
 
-**Synchronisation des annuaires terminée :** Ces informations ne sont pas disponibles à partir de la page Événements . Les informations actuelles sur la synchronisation des annuaires, notamment l’état de synchronisation actuel et la date de la dernière synchronisation, s’affichent sur la page Gestion des domaines. Pour atteindre la page Gestion des domaines dans Administration Console, cliquez sur Paramètres > Gestion des domaines > Gestion des domaines.
+**Synchronisation 
+des annuaires terminée :** ces informations ne sont pas disponibles à partir de la page Événements. Les informations actuelles sur la synchronisation des annuaires, notamment l’état de synchronisation actuel et la date de la dernière synchronisation, s’affichent sur la page Gestion des domaines. Pour atteindre la page Gestion des domaines dans Administration Console, cliquez sur Paramètres > Gestion des domaines > Gestion des domaines.
 
-**Client Activez l’accès hors ligne :** Un utilisateur a activé l’accès hors ligne aux documents sécurisés sur le serveur sur l’ordinateur de l’utilisateur.
+**Activation d’accès client hors connexion :** un utilisateur a activé l’accès hors connexion à des documents sécurisés par le serveur sur l’ordinateur de l’utilisateur.
 
-**Client synchronisé** L’application cliente doit synchroniser les informations avec le serveur pour permettre un accès hors ligne.
+**Client synchronisé** : l’application cliente doit synchroniser les informations avec le serveur pour autoriser l’accès hors connexion.
 
-**Version incorrecte :** Une version du SDK d’AEM forms incompatible avec le serveur a tenté de se connecter au serveur.
+**Version incohérente :** une version du SDK d’AEM forms incompatible avec le serveur a tenté de se connecter à ce dernier.
 
-**Informations sur la synchronisation des annuaires :** Ces informations ne sont pas disponibles à partir de la page Événements . Les informations actuelles sur la synchronisation des annuaires, notamment l’état de synchronisation actuel et la date de la dernière synchronisation, s’affichent sur la page Gestion des domaines. Pour atteindre la page Gestion des domaines dans Administration Console, cliquez sur Paramètres > Gestion des domaines > Gestion des domaines.
+**Informations sur la synchronisation des annuaires :** ces informations ne sont pas disponibles à partir de la page Événements. Les informations actuelles sur la synchronisation des annuaires, notamment l’état de synchronisation actuel et la date de la dernière synchronisation, s’affichent sur la page Gestion des domaines. Pour atteindre la page Gestion des domaines dans Administration Console, cliquez sur Paramètres > Gestion des domaines > Gestion des domaines.
 
-**Modification de la configuration du serveur :** Modifications apportées à la configuration du serveur soit par le biais des pages web, soit manuellement par l’importation d’un fichier config.xml. Ceci inclut les modifications de l’URL de base, les délais d’expiration des sessions, les ouvertures de session verrouillées, les paramètres d’annuaire, les roulements de clés, les paramètres du serveur SMTP pour l’enregistrement externe, la configuration des filigranes, les options d’affichage, etc.
+**Modification de la configuration du serveur :** modifications apportées à la configuration du serveur soit par l’intermédiaire des pages Web soit par importation manuelle d’un fichier config.xml. Ceci inclut les modifications de l’URL de base, les délais d’expiration des sessions, les ouvertures de session verrouillées, les paramètres d’annuaire, les roulements de clés, les paramètres du serveur SMTP pour l’enregistrement externe, la configuration des filigranes, les options d’affichage, etc.
 
 ## Configuration du suivi de l’utilisation étendue {#configuring-extended-usage-tracking}
 
@@ -397,31 +400,32 @@ Pour afficher les événements suivis vous pouvez utiliser le filtre des événe
 
 ### Paramètres d’affichage {#display-settings}
 
-**Lignes à afficher pour les résultats de la recherche :** Nombre de lignes qui apparaissent sur une page lors des recherches.
+**Lignes à afficher pour les résultats de la recherche :** nombre de lignes qui apparaissent sur une page lors des recherches.
 
 **Personnalisation de la boîte de dialogue d’ouverture de session client**
 
 Ces paramètres contrôlent le texte affiché dans l’invite d’ouverture de session qui apparaît lorsqu’un utilisateur se connecte à Document Security par le biais d’une application cliente.
 
-**Texte de bienvenue :** texte du message de bienvenue, par exemple &quot;Veuillez vous connecter avec votre nom d’utilisateur et votre mot de passe&quot;. Le message de bienvenue doit contenir des informations sur la marche à suivre pour ouvrir une session Document Security et pour contacter un administrateur ou une autre personne chargée du support dans votre entreprise. Par exemple, des utilisateurs externes peuvent être amenés à contacter un administrateur s’ils ont oublié leur mot de passe ou qu’ils ont besoin d’aide pour ouvrir une session ou pour s’enregistrer. Le texte de bienvenue peut contenir un maximum de 512 caractères.
+**Texte de bienvenue :** texte du message de bienvenue, par exemple « Veuillez vous connecter à l’aide de votre nom d’utilisateur et de votre mot de passe. » Le message de bienvenue doit contenir des informations sur la marche à suivre pour ouvrir une session Document Security et pour contacter un administrateur ou une autre personne chargée du support dans votre entreprise. Par exemple, des utilisateurs externes peuvent être amenés à contacter un administrateur s’ils ont oublié leur mot de passe ou qu’ils ont besoin d’aide pour ouvrir une session ou pour s’enregistrer. Le texte de bienvenue peut contenir un maximum de 512 caractères.
 
-**Texte du nom d’utilisateur :** Libellé de texte de la zone de nom d’utilisateur.
+**Texte du nom d’utilisateur :** libellé de texte de la zone de nom d’utilisateur.
 
-**Texte du mot de passe :** Libellé de texte de la zone de mot de passe.
+**Texte du mot de passe :** libellé de texte de la zone du mot de passe.
 
 **Personnalisation de la boîte de dialogue d’authentification de certificat client**
 
 Ces paramètres contrôlent le texte affiché dans la boîte de dialogue d’authentification de certificat.
 
-**Choisir le texte du type d’authentification :** Texte affiché pour demander à un utilisateur de sélectionner un type d’authentification.
+**Choisir 
+le texte du type d’authentification :** texte affiché pour demander à un utilisateur de sélectionner un type d’authentification.
 
-**Choisir le texte du certificat :** Texte affiché pour demander à un utilisateur de sélectionner un type de certificat.
+**Choisir le texte de certificat :** texte affiché pour demander à un utilisateur de sélectionner un type de certificat.
 
-**Texte d’erreur Certificats non disponibles :** Message de 512 caractères maximum à afficher lorsque le certificat sélectionné n’est pas disponible.
+**Texte d’erreur Certificats non disponibles :** message de 512 caractères maximum à afficher lorsque le certificat sélectionné n’est pas disponible.
 
 **Personnalisation de l’affichage du certificat client**
 
-**Afficher uniquement les informations d’identification de confiance :** Lorsque cette option est sélectionnée, l’application cliente ne présente à l’utilisateur que les certificats des émetteurs d’informations d’identification d’AEM forms configurés pour faire confiance (voir Gestion des certificats et des informations d’identification). Lorsque cette option n’est pas sélectionnée, l’utilisateur voit apparaître la liste de tous les certificats présents sur le système de l’utilisateur.
+**Afficher uniquement les informations d’identification de confiance :** lorsque cette option est sélectionnée, l’application cliente ne présente à l’utilisateur que les certificats des émetteurs d’informations d’identification de confiance pour lesquels AEM Forms est configuré (voir Gérer des certificats et des informations d’identification). Lorsque cette option n’est pas sélectionnée, l’utilisateur voit apparaître la liste de tous les certificats présents sur le système de l’utilisateur.
 
 ## Configuration des filigranes dynamiques {#configure-dynamic-watermarks}
 
@@ -544,7 +548,7 @@ Lorsqu’un utilisateur invité est activé, il devient un utilisateur local. La
 Selon les paramètres que vous activez pour les utilisateurs invités, ces derniers peuvent également utiliser les fonctionnalités Document Security suivantes :
 
 * application de stratégies à des documents ;
-* création de stratégies ;
+* Créer des stratégies
 * ajout d’utilisateurs invités à des stratégies.
 
 Document Security génère automatiquement un courrier électronique d’invitation à l’enregistrement lorsque les événements suivants ont lieu, excepté si l’utilisateur figure déjà dans l’annuaire LDAP source ou a déjà été invité à s’enregistrer :
@@ -579,47 +583,47 @@ Vous pouvez limiter la possibilité d’enregistrement dans Document Security à
 
 Les paramètres suivants se trouvent dans la zone Filtre de restriction de message électronique de la page Enregistrement d’utilisateur invité.
 
-**Exclusion :** Saisissez l’adresse électronique d’un utilisateur ou d’un groupe à exclure. Pour exclure plusieurs utilisateurs ou groupes, saisissez chaque adresse électronique sur une nouvelle ligne. Pour exclure tous les utilisateurs appartenant à un domaine précis, saisissez un caractère générique et le nom de domaine. Par exemple, pour exclure tous les utilisateurs du domaine example.com, saisissez &amp;ast;.example.com.
+**Exclusion :** saisissez l’adresse électronique d’un utilisateur ou d’un groupe à exclure. Pour exclure plusieurs utilisateurs ou groupes, saisissez chaque adresse électronique sur une nouvelle ligne. Pour exclure tous les utilisateurs appartenant à un domaine précis, saisissez un caractère générique et le nom de domaine. Par exemple, pour exclure tous les utilisateurs du domaine example.com, saisissez &amp;.example.com.
 
-**Inclusion :** Saisissez l’adresse électronique d’un utilisateur ou d’un groupe à inclure. Pour inclure plusieurs utilisateurs ou groupes, saisissez chaque adresse électronique sur une nouvelle ligne. Pour inclure tous les utilisateurs appartenant à un domaine précis, saisissez un caractère générique et le nom de domaine. Par exemple, pour inclure tous les utilisateurs dans le domaine example.com, saisissez &amp;ast;.example.com.
+**Inclusion :** saisissez l’adresse électronique d’un utilisateur ou d’un groupe à inclure. Pour inclure plusieurs utilisateurs ou groupes, saisissez chaque adresse électronique sur une nouvelle ligne. Pour inclure tous les utilisateurs appartenant à un domaine précis, saisissez un caractère générique et le nom de domaine. Par exemple, pour inclure tous les utilisateurs du domaine example.com, saisissez &amp;.example.com.
 
 ### Paramètres des comptes d’enregistrement et du serveur {#server-and-registration-account-parameters}
 
 Les paramètres suivants se trouvent dans la zone Paramètres généraux de la page Enregistrement d’utilisateur invité.
 
-**SMTP Host :** Nom d’hôte du serveur SMTP. Le serveur SMTP gère les courriers électroniques sortants concernant l’enregistrement et l’activation des comptes d’utilisateurs invités.
+**Hôte SMTP :** le nom d’hôte du serveur SMTP. Le serveur SMTP gère les courriers électroniques sortants concernant l’enregistrement et l’activation des comptes d’utilisateurs invités.
 
 Si votre hôte SMTP vous y invite, saisissez les informations requises dans les zones Nom du compte de serveur SMTP et Mot de passe du compte de serveur SMTP pour vous connecter au serveur SMTP. Certaines entreprises n’exigent pas ces informations. Pour plus d’informations, contactez votre administrateur système.
 
-**Nom de la classe de socket du serveur SMTP :** Nom de classe du socket pour le serveur SMTP. Par exemple, javax.net.ssl.SSLSocketFactory.
+**Nom de la classe de socket du serveur SMTP :** Nom de la classe de socket pour le serveur SMTP. Par exemple, javax.net.ssl.SSLSocketFactory.
 
-**Type de contenu d’email :** Type MIME accepté comme text/plain ou text/html.
+**Type de contenu d’email :** Type MIME accepté comme text/plain ou text/html.
 
-**Encodage des emails :** Format de codage à utiliser lors de l’envoi de messages électroniques. Vous pouvez préciser l’encodage de votre choix, par exemple UTF-8 pour Unicode ou ISO-8859-1 pour Latin. La valeur par défaut est UTF-8.
+**Codage d’email :** format de codage à utiliser pour l’envoi d’un email. Vous pouvez préciser l’encodage de votre choix, par exemple UTF-8 pour Unicode ou ISO-8859-1 pour Latin. La valeur par défaut est UTF-8.
 
-**Rediriger l’adresse électronique :** Lorsque vous spécifiez une adresse électronique pour ce paramètre, toute nouvelle invitation est envoyée à l’adresse fournie. Ce paramètre peut être utile pour l’exécution de tests.
+**Rediriger l’adresse e-mail :** lorsque vous indiquez une adresse e-mail pour ce paramètre, toute nouvelle invitation est envoyée à l’adresse fournie. Ce paramètre peut être utile pour l’exécution de tests.
 
-**Utiliser des domaines locaux :** Sélectionnez le domaine approprié. Dans une nouvelle installation, vérifiez que vous avez créé le domaine en utilisant User Management. S’il s’agit d’une mise à niveau, vous pouvez utiliser le domaine d’utilisateur externe créé lors de la mise à niveau.
+**Utiliser des domaines locaux :** sélectionnez le domaine approprié. Dans une nouvelle installation, vérifiez que vous avez créé le domaine en utilisant User Management. S’il s’agit d’une mise à niveau, vous pouvez utiliser le domaine d’utilisateur externe créé lors de la mise à niveau.
 
-**Utiliser SSL pour le serveur SMTP :** Sélectionnez cette option pour activer SSL pour le serveur SMTP.
+**Utiliser SSL pour le serveur SMTP :** sélectionnez cette option pour activer SSL pour le serveur SMTP.
 
-**Afficher le lien de connexion sur la page d’inscription :** Affiche un lien de connexion sur la page d’enregistrement affichée pour les utilisateurs invités.
+**Afficher le lien de connexion sur la page d’inscription :** affiche un lien de connexion sur la page d’enregistrement affichée pour les utilisateurs invités.
 
 **Pour activer le protocole TLS (Transport Layer Security) pour le serveur SMTP**
 
 1. Ouvrez Administration Console.
 
-   L’emplacement par défaut de la console d’administration est le suivant : `https://<server>:<port>/adminui`.
+   L’emplacement par défaut de la console d’administration est le suivant : `https://<server>:<port>/adminui`.
 
 1. Accédez à Accueil > Services > Document Security > Configuration > Enregistrement d’utilisateur invité.
 1. Dans Enregistrement d’utilisateur invité, spécifiez tous les paramètres de configuration, puis cliquez sur OK.
 
    >[!NOTE]
    >
-   >Si vous utilisez Microsoft Office 365 comme serveur SMTP pour envoyer les invitations à l’enregistrement des utilisateurs, utilisez les paramètres suivants :
+   >Si vous utilisez Microsoft Office 365 comme serveur SMTP afin d’envoyer les invitations d’enregistrement des utilisateurs, utilisez les paramètres suivants :
    >
-   >**SMTP Host :** smtp.office365.com
-   >**Port :** 587
+   >**Hôte SMTP :** smtp.office365.com.
+   >**Port :** 587.
 
 1. Vous devez ensuite mettre à jour le fichier config.xml. Voir [Configuration d’activation du protocole TLS (Transport Layer Security)](configuring-client-server-options.md#configuration-to-enable-smtp-for-transport-layer-security-tls).
 
@@ -635,13 +639,13 @@ Lorsque le destinataire active son compte, il devient un utilisateur local.
 
 Les paramètres suivants se trouvent dans la zone Configuration de message électronique d’invitation de la page Enregistrement d’utilisateur invité.
 
-**De :** Adresse électronique à partir de laquelle le courrier électronique d’invitation est envoyé. Le format par défaut de l’adresse électronique de l’expéditeur est postmaster@[your_installation_domain].com.
+**De :** adresse e-mail à partir de laquelle l’e-mail d’invitation est envoyé. Le format par défaut de l’adresse e-mail d’expédition est postmaster@[[votre_domaine_d’installation]].com.
 
-**Objet :** Objet par défaut du message électronique d’invitation.
+**Objet :** objet par défaut de l’e-mail d’invitation.
 
-**Timeout :** Nombre de jours à l’issue duquel l’invitation à l’enregistrement expire si l’utilisateur externe ne s’inscrit pas. La valeur par défaut est de 30 jours.
+**Délai d’expiration :** nombre de jours à l’issue duquel l’invitation à l’enregistrement expire si l’utilisateur externe ne s’enregistre pas. La valeur par défaut est de 30 jours.
 
-**Message :** Le texte qui apparaît dans le corps du message invitant l’utilisateur à s’enregistrer.
+**Message :** texte qui apparaît dans le corps du message, invitant l’utilisateur à s’enregistrer.
 
 ### Paramètres des courriers électroniques d’activation {#activation-email-settings}
 
@@ -655,13 +659,13 @@ Les paramètres suivants se trouvent dans la zone Configuration du message élec
 >
 >il est également conseillé de configurer un message qui s’affiche dans l’écran d’ouverture de session pour expliquer aux utilisateurs externes comment contacter leur administrateur afin de demander un nouveau mot de passe ou d’autres informations.
 
-**De :** Adresse électronique à partir de laquelle l’adresse électronique d’activation est envoyée. Cette adresse électronique reçoit les avis de non-acheminement envoyés par l’hôte de messagerie des utilisateurs qui s’enregistrent, ainsi que les messages renvoyés par le destinataire suite au courrier électronique d’enregistrement. Le format par défaut de l’adresse électronique de l’expéditeur est postmaster@[your_installation_domain].com.
+**De :** adresse e-mail à partir de laquelle l’e-mail d’activation est envoyé. Cette adresse électronique reçoit les avis de non-acheminement envoyés par l’hôte de messagerie des utilisateurs qui s’enregistrent, ainsi que les messages renvoyés par le destinataire suite au courrier électronique d’enregistrement. Le format par défaut de l’adresse e-mail d’expédition est postmaster@[[votre_domaine_d’installation]].com.
 
-**Objet :** Objet par défaut du message électronique d’activation.
+**Objet :** objet par défaut de l’e-mail d’activation.
 
-**Timeout :** Nombre de jours à l’issue duquel l’invitation à l’activation expire si l’utilisateur n’active pas le compte. La valeur par défaut est de 30 jours.
+**Délai d’expiration :** nombre de jours à l’issue duquel l’invitation à l’activation expire si l’utilisateur externe n’active pas le compte. La valeur par défaut est de 30 jours.
 
-**Message :** Le texte qui apparaît dans le corps du message et qui indique que le compte utilisateur du destinataire doit être activé. Vous pouvez également inclure d’autres informations, comme la marche à suivre pour contacter un administrateur afin d’obtenir un nouveau mot de passe.
+**Message :** texte qui apparaît dans le corps du message pour indiquer que le compte d’utilisateur du destinataire doit être activé. Vous pouvez également inclure d’autres informations, comme la marche à suivre pour contacter un administrateur afin d’obtenir un nouveau mot de passe.
 
 ### Configuration d’un courrier électronique de réinitialisation de mot de passe {#configure-a-password-reset-email}
 
@@ -669,25 +673,25 @@ Si vous devez réinitialiser le mot de passe d’un utilisateur invité, un cour
 
 Les paramètres suivants se trouvent dans la zone Message électronique de réinitialisation de mot de passe de la page Enregistrement d’utilisateur invité.
 
-**De :** Adresse électronique à partir de laquelle le courrier électronique de réinitialisation de mot de passe est envoyé. Le format par défaut de l’adresse électronique de l’expéditeur est postmaster@[your_installation_domain].com.
+**De :** l’adresse électronique à partir de laquelle l’e-mail de réinitialisation du mot de passe est envoyé. Le format par défaut de l’adresse électronique d’expédition est postmaster@[your_installation_domain].com.
 
-**Objet :** Objet par défaut du message électronique de réinitialisation.
+**Objet :** objet par défaut pour l’e-mail de réinitialisation.
 
-**Message :** Le texte qui apparaît dans le corps du message, un message indiquant que le mot de passe utilisateur externe du destinataire est réinitialisé.
+**Message :** le texte qui apparaît dans le corps du message pour indiquer que le mot de passe de l’utilisateur externe du destinataire est réinitialisé.
 
 ## Capacité pour les utilisateurs et les groupes à créer des stratégies {#enable-users-and-groups-to-create-policies}
 
 La page Configuration comprend un lien vers la page Mes stratégies, à partir de laquelle vous identifiez les utilisateurs finaux autorisés à créer des stratégies Mes stratégies, ainsi que les utilisateurs et groupes visibles dans les résultats de recherche. La page Mes stratégies comporte deux onglets :
 
-**Onglet Créer des stratégies :** Utilisez pour configurer les autorisations utilisateur afin de créer des stratégies personnalisées.
+**Onglet Créer des stratégies :** permet de configurer les autorisations des utilisateurs pour créer des stratégies personnalisées.
 
-**Onglet Utilisateurs et groupes visibles :** Utilisez pour contrôler quels utilisateurs et groupes sont visibles dans les résultats de recherche des utilisateurs. Le super-utilisateur ou l’administrateur de jeux de stratégies doit sélectionner et ajouter les domaines créés dans User Management pour l’utilisateur et le groupe visible pour chacun des jeux de stratégies. Cette liste est accessible au coordinateur de jeux de stratégies et permet de restreindre les domaines que ce dernier peut consulter lorsqu’il choisit les utilisateurs à ajouter aux stratégies.
+**Onglet Utilisateurs et groupes visibles :** permet de contrôler quels utilisateurs et groupes sont visibles dans les résultats de recherche des utilisateurs. Le super-utilisateur ou l’administrateur de jeux de stratégies doit sélectionner et ajouter les domaines créés dans User Management pour l’utilisateur et le groupe visible pour chacun des jeux de stratégies. Cette liste est accessible au coordinateur de jeux de stratégies et permet de restreindre les domaines que ce dernier peut consulter lorsqu’il choisit les utilisateurs à ajouter aux stratégies.
 
 Avant d’octroyer aux utilisateurs l’autorisation de créer des stratégies personnalisées, déterminez le niveau d’accès ou de contrôle que vous souhaitez accorder à chaque utilisateur. Déterminez également le niveau d’exposition de vos utilisateurs et groupes lorsqu’ils sont visibles dans les recherches.
 
 ### Désignation des utilisateurs et groupes autorisés à créer des stratégies {#specify-users-and-groups-who-can-create-policies}
 
-En tant qu’administrateur, vous déterminez les utilisateurs et les groupes autorisés à créer des stratégies personnalisées. Cette autorisation peut être configurée au niveau de l’utilisateur et au niveau du groupe. La fonctionnalité de recherche recherche les utilisateurs et les groupes dans la base de données User Management.
+En tant qu’administrateur, vous déterminez les utilisateurs et les groupes autorisés à créer des stratégies personnalisées. Cette autorisation peut être configurée au niveau de l’utilisateur et au niveau du groupe. La fonctionnalité de recherche les utilisateurs et les groupes dans la base de données User Management.
 
 1. Dans Administration Console, cliquez sur Services > Document Security > Configuration > Mes stratégies.
 1. Dans la page Mes stratégies, cliquez sur l’onglet Créer des stratégies, puis sur Ajouter des utilisateurs ou des groupes.
@@ -798,7 +802,7 @@ Si des informations ne sont pas applicables, l’application cliente laisse le c
 
 Plusieurs applications Adobe fournissent des informations de produit dans le cadre de la demande d’accès aux services Document Security, notamment Acrobat, Adobe Reader et les extensions d’Acrobat Reader DC pour Microsoft Office.
 
-**Acrobat et Acrobat Reader**
+**Acrobat et Adobe Reader**
 
 Lorsque Acrobat ou Adobe Reader demande l’accès à un service depuis Document Security, il fournit les informations de produit suivantes :
 
@@ -950,7 +954,7 @@ Par défaut, vous pouvez définir un maximum de cinq éléments dans un filigran
 
 1. Exportez le fichier de configuration de Document Security (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
 1. Ouvrez le fichier de configuration dans un éditeur et recherchez le nœud `ServerSettings`.
-1. Dans le `ServerSettings` , ajoutez les entrées suivantes, puis enregistrez le fichier : `<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`
+1. Dans le nœud `ServerSettings`, ajoutez les entrées suivantes, puis enregistrez le fichier : `<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`.
 
    La première entrée, *taille de fichier maximale* est la taille de fichier maximale (en Ko) autorisée pour un élément de filigrane PDF. La valeur par défaut est 100 Ko.
 
@@ -974,7 +978,7 @@ Les modifications suivantes apportées au fichier config.xml désactivent tous l
 
 1. Exportez le fichier de configuration de Document Security (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
 1. Ouvrez le fichier de configuration dans un éditeur et recherchez le nœud `DisplaySettings`.
-1. Pour désactiver tous les liens externes, dans la variable `DisplaySettings` , ajoutez l’entrée suivante, puis enregistrez le fichier : `<entry key="ExternalLinksAllowed" value="false"/>`
+1. Pour désactiver tous les liens externes, dans le nœud `DisplaySettings`, ajoutez l’entrée suivante, puis enregistrez le fichier : `<entry key="ExternalLinksAllowed" value="false"/>`.
 
    ```as3
    <entry key="ExternalLinksAllowed" value="false"/>
@@ -988,7 +992,7 @@ Les modifications suivantes apportées au fichier config.xml activent la prise e
 
 1. Exportez le fichier de configuration de Document Security (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
 1. Ouvrez le fichier de configuration dans un éditeur et recherchez le nœud `DisplaySettings`.
-1. Recherchez le noeud suivant : `<node name="ExternalUser">`
+1. Localisez le nœud suivant : `<node name="ExternalUser">`
 
    ```as3
    <node name="ExternalUser">
@@ -996,7 +1000,7 @@ Les modifications suivantes apportées au fichier config.xml activent la prise e
 
 1. Définissez la valeur de la clé `SmtpUseTls` du nœud `ExternalUser` sur **true**.
 1. Définissez la valeur de la clé `SmtpUseSsl` du nœud `ExternalUser` sur **false**.
-1. Enregistrez le `config.xml`.
+1. Enregistrez le fichier `config.xml`.
 1. Importez le fichier de configuration (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
 
 ### Désactivation des points de fin SOAP pour les documents Document Security {#disable-soap-endpoints-for-document-security-documents}

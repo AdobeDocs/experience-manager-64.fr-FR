@@ -1,5 +1,5 @@
 ---
-title: Publication et annulation de publication de formulaires et documents
+title: Publier et annuler la publication de formulaires et documents
 seo-title: Publishing and unpublishing forms and documents
 description: Vous pouvez planifier la publication de formulaires et l’annulation de leur publication. Les formulaires publiés sont répliqués sur l’instance de publication.
 seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.

@@ -12,7 +12,7 @@ exl-id: e07adddb-e904-4a80-9b1c-8028b12c0e37
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '446'
-ht-degree: 75%
+ht-degree: 93%
 
 ---
 
@@ -67,12 +67,12 @@ Dans la configuration par défaut des formulaires AEM, si un utilisateur passe p
 
 ## Personnalisation des événements de suivi {#customizing-the-tracking-events}
 
-Vous pouvez modifier la variable `trackEvent`disponible dans `/libs/afanalytics/js/custom.js` pour personnaliser le suivi des événements. Lorsqu’un événement en cours de suivi se produit dans un formulaire adaptatif, la fonction `trackEvent` est appelée. Le `trackEvent` accepte deux paramètres : `eventName`et `variableValueMap`.
+Vous pouvez modifier la fonction `trackEvent` disponible dans le fichier `/libs/afanalytics/js/custom.js` afin de personnaliser le suivi des événements. Lorsqu’un événement en cours de suivi se produit dans un formulaire adaptatif, la fonction `trackEvent` est appelée. La fonction `trackEvent` accepte deux paramètres : `eventName` et `variableValueMap`.
 
 Vous pouvez évaluer la valeur de *eventName *et *variableValueMap* pour modifier le comportement de suivi des événements. Vous pouvez, par exemple, choisir d’envoyer les informations au serveur d’analyse après un certain nombre d’événements d’erreur. Il est également possible d’exécuter l’une des personnalisations suivantes :
 
 * Vous pouvez définir un temps limite avant l’envoi de l’événement.
-* Vous pouvez conserver un état pour décider d’une action, par exemple : *fieldVisit* envoie un événement factice en fonction de l’horodatage du dernier événement.
+* Vous pouvez conserver un état afin de déterminer l’action à entreprendre, par exemple *fieldVisit* diffuse un événement factice en fonction de la date et de l’heure du dernier événement.
 * Vous pouvez utiliser la fonction `pushEvent` pour envoyer l’événement au serveur d’analyse *.*
 
 * Vous pouvez choisir de ne pas diffuser l’événement au serveur d’analyse.
@@ -92,10 +92,10 @@ case 'error':
 
 ## Personnalisation de l’événement panelvisit {#customizing-the-panelvisit-event}
 
-Dans la configuration d’AEM Forms par défaut, toutes les 60 secondes, l’activité de la fenêtre contenant le formulaire adaptatif est vérifiée. Si la fenêtre est principale, une `panelVisit`est déclenché vers Adobe Analytics. Il permet d’assurer que le document ou le formulaire est actif et de calculer la durée de consultation du formulaire ou du document correspondant.
+Dans la configuration d’AEM Forms par défaut, toutes les 60 secondes, l’activité de la fenêtre contenant le formulaire adaptatif est vérifiée. Si la fenêtre est active, un événement `panelVisit` est déclenché dans Adobe Analytics. Il permet d’assurer que le document ou le formulaire est actif et de calculer la durée de consultation du formulaire ou du document correspondant.
 
 >[!NOTE]
 >
 >Le nom d’événement utilisé assurer l’activité et calculer la durée de consultation est « panelVisit ». Cet événement est différent de l’événement Visite de panneau répertorié dans le tableau ci-dessus.
 
-Vous pouvez modifier la fonction scheduleHeartBeatCheck disponible dans la `/libs/afanalytics/js/custom.js` pour modifier ou arrêter cet événement envoyé à Adobe Analytics à intervalles réguliers.
+Vous pouvez modifier la fonction scheduleHeartBeatCheck disponible dans le fichier `/libs/afanalytics/js/custom.js` pour modifier ou arrêter cet événement envoyé à Adobe Analytics à intervalles réguliers.

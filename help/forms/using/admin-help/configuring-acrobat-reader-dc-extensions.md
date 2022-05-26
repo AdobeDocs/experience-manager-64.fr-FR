@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ---
 
-# Configuration des extensions d&#39;Acrobat Reader DC pour la capture de données {#configuring-acrobat-reader-dc-extensions-for-data-capture}
+# Configuration des extensions d’Acrobat Reader DC pour la capture de données {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
 Si les utilisateurs de votre installation AEM forms utilisent la fonctionnalité de capture des données de Content Services (obsolète), nous vous recommandons de créer un rôle avec un accès en lecture seule pour ces utilisateurs.
 

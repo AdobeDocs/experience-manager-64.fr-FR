@@ -51,7 +51,7 @@ Le Jeu de stratégies global est le seul jeu de stratégies par défaut créé l
 Lors de la création d’un jeu de stratégies, cliquez sur le bouton Précédent pour revenir à l’écran précédent, et sur le bouton Enregistrer pour enregistrer votre jeu de stratégies à tout moment.
 
 1. Dans la page Document Security, cliquez sur Stratégies, sur l’onglet Jeux de stratégies, puis sur Nouveau.
-1. Dans la zone Nom, saisissez le nom du jeu de stratégies, indiquez éventuellement une description dans la zone Description, puis cliquez sur Suivant. Le nom ne peut pas contenir de caractère deux-points **:**.
+1. Dans la zone Nom, saisissez le nom du jeu de stratégies, indiquez éventuellement une description dans la zone Description, puis cliquez sur Suivant. Le nom ne peut pas contenir de caractère deux-points **:**.
 
    >[!NOTE]
    >

@@ -1,5 +1,5 @@
 ---
-title: Intégration d’un objet FormBridge à un portail personnalisé pour les formulaires HTML5
+title: Intégration d’un objet Form Bridge à un portail personnalisé pour les formulaires HTML5
 seo-title: Integrating Form Bridge with custom portal for HTML5 forms
 description: Vous pouvez utiliser l’API FormBridge pour obtenir ou définir des valeurs de champs de formulaire à partir de la page HTML et envoyer le formulaire.
 seo-description: You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form.
@@ -13,13 +13,13 @@ exl-id: bf4ae163-5d89-48fb-9bc4-182281b28f35
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 83%
+ht-degree: 97%
 
 ---
 
-# Intégration d&#39;un objet FormBridge à un portail personnalisé pour les formulaires HTML5 {#integrating-form-bridge-with-custom-portal-for-html-forms}
+# Intégration d’un objet Form Bridge à un portail personnalisé pour les formulaires HTML5 {#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge est une API de « pont logiciel » d&#39;HTML5 qui vous permet d’interagir avec un formulaire. Pour obtenir une référence à l’API FormBridge, voir [Référence de l’API FormBridge](/help/forms/using/form-bridge-apis.md).
+FormBridge est une API de « pont logiciel » d’HTML5 qui vous permet d’interagir avec un formulaire. Pour plus d’informations sur la référence à l’API FormBridge, reportez-vous à [Référence à l’API FormBridge](/help/forms/using/form-bridge-apis.md).
 
 Vous pouvez utiliser l’API FormBridge pour obtenir ou définir des valeurs de champs de formulaire à partir de la page HTML et envoyer le formulaire. Par exemple, vous pouvez utiliser l’API pour créer une expérience semblable à un assistant.
 
@@ -29,7 +29,7 @@ Une application HTML existante peut tirer profit de l’API FormBridge pour inte
 
 1. **Choix ou création d’un profil**
 
-   1. Dans l’interface CRX DE, accédez à : `https://[server]:[port]/crx/de`.
+   1. Dans l’interface CRX DE, accédez à : `https://[server]:[port]/crx/de`.
    1. Connectez-vous à l’aide des informations d’identification de l’administrateur.
    1. Créez un profil ou choisissez un profil existant.
 
@@ -75,7 +75,7 @@ Une application HTML existante peut tirer profit de l’API FormBridge pour inte
 
    >[!NOTE]
    >
-   >Le **ligne 9**, contient des références JSP supplémentaires pour les styles CSS et les fichiers JavaScript pour la conception de la page.
+   >La **ligne 9** contient la référence JSP supplémentaire pour permettre aux fichiers CSS et Javascript de concevoir la page.
    >
    >La balise &lt;div id=&quot;rightdiv&quot;> à la **ligne 18** contient le snippet HTML du formulaire XFA.
    La page comprend deux conteneurs : **gauche** et **droit**. Le conteneur de droite contient le formulaire. Le conteneur de gauche possède deux champs de saisie et une partie de la page HTML externe.
@@ -89,7 +89,7 @@ Une application HTML existante peut tirer profit de l’API FormBridge pour inte
 
    Voici un exemple de script que vous pouvez ajouter pour définir les valeurs dans un champ de formulaire.
 
-   Par exemple, si vous souhaitez définir la variable **employeeName** utilisation des valeurs des champs **Prénom** et **Nom**, appelez le **window.formBridge.setFieldValue** fonction .
+   Par exemple, si vous souhaitez définir la valeur **EmployeeName** à l’aide des valeurs des champs **Prénom** et **Nom**, appelez la fonction **window.formBridge.setFieldValue**.
 
    De même, vous pouvez lire la valeur en appelant **window.formBridge.getFieldValue **API.
 

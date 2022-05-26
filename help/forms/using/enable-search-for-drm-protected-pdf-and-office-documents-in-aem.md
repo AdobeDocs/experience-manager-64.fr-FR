@@ -14,35 +14,35 @@ exl-id: dbf97dc1-cf05-4d45-859e-60ff01186e51
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '643'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire et des documents Microsoft Office{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 
-Adobe Experience Manager fournit une interface utilisateur permettant de rechercher différents actifs stockés dans AEM. La recherche native peut effectuer une recherche de texte intégral  la recherche de texte dans divers formats de document couramment utilisés tels que les fichiers texte brut, les documents Microsoft Office et les documents PDF. Vous pouvez également étendre et activer la recherche native afin d’effectuer une recherche de texte intégral sur des documents PDF protégés DRM et Microsoft Office.
+Adobe Experience Manager fournit une interface utilisateur permettant de rechercher différents actifs stockés dans AEM. La recherche native peut effectuer une recherche de texte intégral recherchez du texte dans les formats de document couramment utilisés tels que les fichiers texte brut, les documents Microsoft Office et les fichiers PDF. Vous pouvez également étendre la recherche native de sorte à ce qu’elle effectue une recherche de texte intégral dans des documents PDF protégés DRM et des documents Microsoft Office.
 
 Effectuez les étapes suivantes pour permettre à AEM de rechercher des documents PDF protégés par sécurité documentaire et des documents Microsoft Office :
 
 ## Avant de commencer {#before-you-start}
 
 * Installez et configurez la sécurité documentaire AEM Forms.
-* Ajoutez le package sun.util.calendar à la liste autorisée de la **Configuration du pare-feu de désérialisation.** La configuration est répertoriée à l’adresse `https://[server]:[port]/system/console/configMgr`.
+* Ajoutez le package sun.util.calendar à la liste blanche de la **Configuration du pare-feu de désérialisation.** La configuration est répertoriée à l’adresse `https://[server]:[port]/system/console/configMgr`.
 * Vérifiez que tous les bundles AEM sont en cours d’utilisation. Les lots sont répertoriés à l’adresse `https://[server]:[port]/system/console/bundles`. Si tous les lots ne sont pas actifs, patientez, puis vérifiez leur statut après quelques minutes.
 
 ## Établir une connexion sécurisée dans le flux de production AEM Forms (AEM Forms on JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
 
-Une connexion sécurisée permet  flux d’informations transparent entre AEM Forms on JEE et les services OSGi s’exécutant sur le même serveur. Utilisez l’une des méthodes suivantes pour établir une connexion sécurisée :
+Une connexion sécurisée permet un flux d’informations harmonieux entre AEM Forms sur JEE et les services OSGi s’exécutant sur le même serveur. Utilisez l’une des méthodes suivantes pour établir une connexion sécurisée :
 
 * Configurer le bundle de SDK client AEM Forms avec les informations d’identification d’administrateur d’AEM Forms on JEE
 * Configurer le bundle de SDK client AEM Forms à l’aide de l’authentification mutuelle
 
 ### Configurer le bundle de SDK client AEM Forms avec les informations d’identification d’administrateur d’AEM Forms on JEE {#configure-aem-forms-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
-1. Accédez au gestionnaire de configuration et connectez-vous à AEM en tant qu’administrateur. L’URL par défaut est https://&lt;servername>:&lt;port>/lc/system/console/configMgr.
+1. Accédez au gestionnaire de configuration et connectez-vous à AEM en tant qu’administrateur. L’URL par défaut est https://&lt;Nomserveur>:&lt;port>/lc/system/console/configMgr.
 1. Recherchez et ouvrez le bundle de SDK client AEM Forms. Spécifiez la valeur des propriétés suivantes :
 
-   * **URL du serveur :** spécifiez l’URL HTTP d’AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur AEM Forms on JEE avec le répertoire -Djavax.net.ssl.trustStore=&lt;path of=&quot;&quot; aem=&quot;&quot; forms=&quot;&quot; on=&quot;&quot; jee=&quot;&quot; keystore=&quot;&quot; file=&quot;&quot;> .
+   * **URL du serveur :** spécifiez l’URL HTTP d’AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur AEM Forms sur JEE avec le paramètre -Djavax.net.ssl.trustStore=&lt;chemin dʼaccès du fichier de stockage de clés AEM Forms sur JEE>.
    * **Nom du service** : ajoutez RightsManagementService à la liste des services spécifiés.
    * **Nom d’utilisateur :** indiquez le nom d’utilisateur du compte AEM Forms on JEE à utiliser pour lancer des appels à partir du serveur AEM Forms on JEE. Le compte spécifié doit disposer des autorisations pour appeler Document services sur le serveur AEM Forms on JEE.
    * **Mot de passe** : indiquez le mot de passe du compte AEM Forms on JEE mentionné dans le champ Nom d’utilisateur.
@@ -52,10 +52,10 @@ Une connexion sécurisée permet  flux d’informations transparent entre AEM Fo
 ### Configurer le bundle de SDK client AEM Forms à l’aide de l’authentification mutuelle {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
 1. Activez l’authentification mutuelle pour AEM Forms on JEE. Pour plus d’informations, voir [CAC et authentification mutuelle](https://helpx.adobe.com/fr/livecycle/kb/cac-mutual-authentication.html).
-1. Accédez au gestionnaire de configuration et connectez-vous à AEM en tant qu’administrateur. L’URL par défaut est https://&lt;servername>:&lt;port>/lc/system/console/configMgr.
+1. Accédez au gestionnaire de configuration et connectez-vous à AEM en tant qu’administrateur. L’URL par défaut est https://&lt;Nomserveur>:&lt;port>/lc/system/console/configMgr.
 1. Recherchez et ouvrez le bundle de SDK client AEM Forms. Spécifiez la valeur des propriétés suivantes :
 
-   * **URL du serveur** : spécifiez l’URL HTTPS d’AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur AEM Forms on JEE avec le répertoire -Djavax.net.ssl.trustStore=&lt;path of=&quot;&quot; aem=&quot;&quot; forms=&quot;&quot; on=&quot;&quot; jee=&quot;&quot; keystore=&quot;&quot; file=&quot;&quot;> .
+   * **URL du serveur** : spécifiez l’URL HTTPS d’AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur AEM Forms sur JEE avec le paramètre -Djavax.net.ssl.trustStore=&lt;chemin dʼaccès du fichier de stockage de clés AEM Forms sur JEE>.
    * **Activer SSL bidirectionnel** : activez l’option Activer SSL bidirectionnel.
    * **URL du fichier KeyStore** : indiquez l’URL du fichier de stockage de clés.
    * **URL du fichier TrustStore** : indiquez l’URL du fichier de magasin approuvé.

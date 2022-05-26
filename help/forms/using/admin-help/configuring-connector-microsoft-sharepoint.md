@@ -13,30 +13,30 @@ exl-id: 9bd396a3-5da9-4355-ad76-e7132ac8aed8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 # Configuration de Connector for Microsoft SharePoint {#configuring-connector-for-microsoft-sharepoint}
 
-Le connecteur pour Microsoft SharePoint permet la communication entre AEM forms et Microsoft SharePoint. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
+Le connecteur pour Microsoft SharePoint permet la communication entre AEM forms et Microsoft SharePoint. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 1. Dans Administration Console, cliquez sur Services > Connector for Microsoft SharePoint.
 1. Spécifiez les paramètres suivants pour votre serveur SharePoint :
 
-   **Nom d’hôte du serveur SharePoint :** Numéro de port du nom d’hôte de l’application web sur le serveur SharePoint, au format `[hostname]:[port]`.
+   **Nom d’hôte du serveur SharePoint :** numéro de port du nom d’hôte de l’application web sur le serveur SharePoint, au format `[hostname]:[port]`.
 
-   **Nom d’utilisateur :** Compte utilisateur utilisé pour la connexion au serveur SharePoint.
+   **Nom d’utilisateur :** compte utilisateur servant à la connexion au serveur SharePoint.
 
-   **Mot de passe :** Mot de passe du compte utilisateur utilisé pour la connexion au serveur SharePoint
+   **Mot de passe :** mot de passe du compte utilisateur servant à la connexion au serveur SharePoint.
 
-   **Nom de domaine :** Domaine où se trouve le serveur SharePoint.
+   **Nom de domaine :** domaine où se trouve le serveur SharePoint.
 
 1. Cliquez sur Enregistrer.
 
 ## Service de configuration Microsoft SharePoint {#microsoft-sharepoint-configuration-service}
 
-Le service de configuration Microsoft SharePoint `(MSSharePointConfigService)` vous permet de spécifier les informations d’identification de l’utilisateur d’AEM forms disposant des droits d’emprunt d’identité. Pour plus d’informations sur les droits d’emprunt d’identité, consultez [Configuration du connecteur pour Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html). Suivez les étapes suivantes pour définir les paramètres de `MSSharePointConfigService` :
+Le service de configuration Microsoft SharePoint `(MSSharePointConfigService)` vous permet de spécifier les informations d’identification de l’utilisateur AEM Forms disposant des droits d’emprunt d’identité. Pour plus d’informations sur les droits d’emprunt d’identité, consultez [Configuration du connecteur pour Microsoft SharePoint](https://help.adobe.com/fr/AEMForms/6.1/SharePointConfig/index.html). Suivez les étapes suivantes pour définir les paramètres de `MSSharePointConfigService` :
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
 1. Parcourez la liste des services et cliquez sur `MSSharePointConfigService`.

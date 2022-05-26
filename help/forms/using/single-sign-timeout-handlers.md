@@ -13,21 +13,21 @@ exl-id: eb7afdd3-0901-4dfb-b23c-88c46b5a4fb5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 # Authentification unique et gestionnaires de temporisation {#single-sign-on-and-timeout-handlers}
 
-L’authentification unique est activée sur l’espace de travail AEM Forms. Si un utilisateur s’est connecté à une application AEM Forms telle que Forms Manager ou l’interface utilisateur de PDF Generator et a accès à l’espace de travail AEM Forms au cours de la même session de navigateur, il est alors connecté à l’espace de travail AEM Forms et vice versa.
+L’authentification unique est activée sur l’espace de travail AEM Forms. Si un utilisateur s’est connecté à une application AEM Forms telle que Forms Manager ou l’interface utilisateur de PDF Generator, puis accède à l’espace de travail AEM Forms dans la même session de navigateur, alors il est connecté à l’espace de travail AEM Forms et vice versa.
 
 ## Gestion des délais du serveur dans l’espace de travail AEM Forms {#handling-server-timeout-in-nbsp-aem-forms-workspace}
 
 Le délai d’expiration d’une session utilisateur peut être configuré dans Administration Console.
 
-Pour définir le délai d’expiration, connectez-vous à `https://[server]:[port]/adminui`, accédez à **Paramètres > Gestion utilisateur > Configuration > Configurer les attributs système avancés** et définissez les paramètres souhaités.
+Pour définir le délai d’expiration, connectez-vous à `https://[server]:[port]/adminui`, accédez à **Paramètres > User Management > Configuration > Configurer les attributs système avancés**, puis sélectionnez les paramètres souhaités.
 
-Dans AEM Forms Workspace, le délai d’expiration est géré comme suit :
+Dans l’espace de travail AEM Forms, le délai d’expiration correspond à :
 
 * la durée de disponibilité d’une session utilisateur en réponse à l’appel de commande `initialize` qui initialise la session utilisateur.
 * Une boîte de dialogue contextuelle informe l’utilisateur que la session va expirer, 15 secondes avant qu’elle n’expire
@@ -39,4 +39,4 @@ Dans cette boîte de dialogue contextuelle :
 
 >[!NOTE]
 >
->Si aucune action n’est effectuée, l’utilisateur est automatiquement déconnecté de l’espace de travail AEM Forms trois secondes avant l’expiration de la session.
+>Si l’utilisateur ne réagit pas, il est automatiquement déconnecté de l’espace de travail AEM Forms trois secondes avant expiration de la session.

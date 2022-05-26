@@ -8,13 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ddb33a5-0d62-46f4-8f8c-0f0807a975cb
 feature: Adaptive Forms
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 67bb208a-042b-4fa1-9ab1-23325e0c7e4c
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '2001'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
-
 
 # Préremplissage des champs de formulaires adaptatifs {#prefill-adaptive-form-fields}
 
@@ -80,7 +80,7 @@ Pour les champs liés avec le même bindref ou les champs non liés portant le m
 
 ## Formulaire adaptatif utilisant le modèle de formulaire XFA {#xfa-based-af}
 
-La structure du code XML de préremplissage et du code XML envoyé pour les formulaires adaptatifs basés sur XFA est la suivante :
+La structure du code XML de préremplissage et du code XML envoyé pour les formulaires adaptatifs basés sur XFA se présente comme suit :
 
 * **Structure XML de préremplissage** : le code XML de préremplissage du formulaire adaptatif basé sur XFA doit être conforme au schéma de données du modèle de formulaire XFA. Pour préremplir des champs non liés, placez la structure XML de préremplissage dans la balise `/afData/afBoundData`.
 
@@ -202,7 +202,7 @@ Voici un exemple sans le wrapper `afData/afBoundData` :
 
 ## Formulaire adaptatif sans modèle de formulaire {#adaptive-form-with-no-form-model}
 
-Pour les formulaires adaptatifs sans modèle de formulaire, les données de tous les champs se trouvent sous la propriété `<data>` balise `<afUnboundData> tag`.
+Pour les formulaires adaptatifs sans modèle de formulaire, les données de tous les champs se trouveront sous l’onglet `<data>` de la balise `<afUnboundData> tag`.
 
 Prenez également en compte les points suivants :
 
@@ -345,7 +345,7 @@ Vous pouvez utiliser le service de préremplissage personnalisé pour les scéna
 
 Le service de préremplissage est un service OSGi et fait partie du bundle OSGi. Vous créez le groupe OSGi, vous le chargez et l’installez sur les groupes AEM Forms. Avant de débuter la création du bundle :
 
-* [Téléchargez l’AEM Forms Client SDK](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html)
+* [Téléchargez l’AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
 * [Téléchargement du package standard](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
 * Placez le fichier de données (données de préremplissage) dans le référentiel crx. Vous pouvez placer le fichier à tout emplacement dans le dossier \contents du référentiel crx.
@@ -371,4 +371,3 @@ Pour démarrer le service de préremplissage, chargez le fichier JAR dans la con
 1. Ouvrez le formulaire adaptatif dans l’éditeur de formulaires et ouvrez le panneau des propriétés du conteneur de formulaires.
 1. Dans la console Propriétés, accédez à **[!UICONTROL Conteneur AEM Forms > De base > Service de préremplissage]**.
 1. Sélectionnez le service de préremplissage par défaut et cliquez sur **[!UICONTROL Enregistrer]**. Le service est associé au formulaire.
-

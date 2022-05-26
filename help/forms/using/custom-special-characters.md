@@ -13,7 +13,7 @@ exl-id: a6206ae1-b71b-4066-b7a0-ce39a60d6dd0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -25,48 +25,48 @@ Correspondence Management offre une prise en charge par défaut et intégrée de
 
 Vous pouvez par exemple insérer les caractères spéciaux suivants :
 
-* Symboles de devise tels que €, ¥ et £
-* Symboles mathématiques tels que ∑, √, ∂ et ^
-* Symboles de ponctuation comme ‟ et&quot;
+* Symboles de devise tels que €,￥et £
+* Symboles mathématiques tels que ∑, √, ∂ et ^
+* Les symboles de ponctuation comme « et ».
 
 Vous pouvez insérer des caractères spéciaux sous forme de lettres :
 
-* Dans le [éditeur de texte](/help/forms/using/document-fragments.md#createtext)
-* Dans un [module modifiable et intégré dans une correspondance](/help/forms/using/create-correspondence.md#managecontent)
+* Dans [l’éditeur de texte](/help/forms/using/document-fragments.md#createtext).
+* Dans un [module modifiable et en ligne dans une correspondance](/help/forms/using/create-correspondence.md#managecontent).
 
-![specialcaractérissinlinemodule](assets/specialcharactersinlinemodule.png)
+![caractères_spéciaux_dans_un_module_en_ligne](assets/specialcharactersinlinemodule.png)
 
-L’administrateur peut ajouter la prise en charge de plus de caractères/de caractères spéciaux grâce à la personnalisation. Cet article fournit les instructions vous permettant d’ajouter la prise en charge de caractères spéciaux personnalisés supplémentaires.
+L’administrateur peut ajouter la prise en charge de plus de caractères/de caractères spéciaux grâce à la personnalisation. Cet article fournit les instructions vous permettant d’ajouter la prise en charge de caractères spéciaux personnalisés supplémentaires.
 
 ## Ajouter ou modifier la prise en charge des caractères spéciaux personnalisés dans Correspondence Management {#creatingfolderstructure}
 
 Procédez comme suit pour ajouter la prise en charge des caractères spéciaux personnalisés :
 
 1. Accédez à `https://[server]:[port]/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
-1. Dans le dossier des applications, créez un dossier nommé **[!UICONTROL specialcharacters]** avec un chemin/une structure similaires au dossier specialcharacters (situé dans le dossier textEditorConfig sous libs) :
+1. Dans le dossier des applications, créez un dossier nommé **[!UICONTROL specialcharacters]** dont le chemin d’accès/la structure est similaire au dossier specialcharacters (situé dans le dossier textEditorConfig sous libs) :
 
-   1. Cliquez avec le bouton droit de la souris sur le **specialcharacters** à l’emplacement suivant et sélectionnez **Noeud de recouvrement**:
+   1. Cliquez avec le bouton droit sur le dossier **specialcharacters** au chemin d’accès suivant et sélectionnez **Nœud de recouvrement** :
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin :** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
+      **Chemin d’accès :** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
 
-      **Emplacement de la superposition :** /apps/
+      **Emplacement du recouvrement :** /apps/
 
-      **Faire correspondre les types de noeud :** Cochée
+      **Correspondance des types de nœud :** vérifié.
 
       >[!NOTE]
       >
-      >N’effectuez pas de modifications dans la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
+      >N’apportez aucune modification à la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
       >
       >* Effectuez une mise à niveau sur votre instance
       >* Appliquez un correctif
       >* Configurez un feature pack
 
 
-   1. Cliquez sur **OK**, puis sur **Enregistrer tout**. Le dossier specialcharacters est créé au niveau du chemin d’accès spécifié.
+   1. Cliquez sur **OK**, puis sur **Enregistrer tout**. Le dossier specialcharacters est créé dans le chemin d’accès spécifié.
 
       Après avoir créé le recouvrement, vérifiez les balises de structure de nœud. Chaque nœud créé dans /apps à l’aide du recouvrement doit présenter la même classe et les mêmes propriétés que celles définies dans /libs pour ce nœud. Si une propriété ou une balise est manquante dans la structure de nœud sous l’emplacement /apps, synchronisez ses balises avec le nœud correspondant situé sous /libs.
 
@@ -77,7 +77,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    | cmConfigurationType | Chaîne | cmTextEditorConfiguration |
    | cssPath | Chaîne | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Cliquez avec le bouton droit de la souris sur le **[!UICONTROL specialcharacters]** à l’emplacement suivant et sélectionnez **Créer > Noeud enfant** puis cliquez sur **Enregistrer tout**:
+1. Cliquez avec le bouton droit sur le dossier **[!UICONTROL specialcharacters]** au chemin d’accès suivant et sélectionnez **Créer > Nœud enfant**, puis cliquez sur **Enregistrer tout** :
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
 
@@ -95,7 +95,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>Ajouter un caractère spécial personnalisé</td> 
    <td> 
     <ol> 
-     <li>Ajoutez un noeud enfant sous "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters avec les propriétés obligatoires.</li> 
+     <li>Ajoutez un nœud enfant sous « /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters » avec les propriétés obligatoires.</li> 
      <li>Cliquez sur Enregistrer tout</li> 
      <li>Actualisez la page de l’interface utilisateur Éditeur de texte\Création de correspondance pour afficher les modifications.</li> 
     </ol> </td> 
@@ -114,8 +114,8 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>Masquer un caractère spécial</td> 
    <td> 
     <ol> 
-     <li>Recouvrez le noeud à masquer sous "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters".</li> 
-     <li>Ajoutez la propriété sling:hideResource (booléenne) au noeud (sous apps) à masquer. </li> 
+     <li>Superposez le nœud à masquer sous « /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters ».</li> 
+     <li>Ajoutez la propriété sling:hideResource (booléenne) au nœud à masquer (sous applications). </li> 
      <li>Cliquez sur Enregistrer tout. </li> 
      <li>Actualisez la page de l’interface utilisateur Éditeur de texte\Création de correspondance pour afficher les modifications.<br /> </li> 
     </ol> </td> 
@@ -124,7 +124,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>Masquer plusieurs caractères spéciaux</td> 
    <td> 
     <ol> 
-     <li>Ajoutez la propriété "sling:hideChildren (String ou String[])" à "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li> 
+     <li>Ajoutez la propriété « sling:hideChildren (String or String[]) » sous « /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters ». </li> 
      <li>Ajoutez des noms de nœud (caractères spéciaux à masquer) sous forme de valeurs pour la propriété sling:hideChildren. </li> 
      <li>Cliquez sur Enregistrer tout. </li> 
      <li>Actualisez la page de l’interface utilisateur Éditeur de texte\Création de correspondance pour afficher les modifications.<br /> </li> 
@@ -134,7 +134,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>Classement des caractères spéciaux</td> 
    <td> 
     <ol> 
-     <li>Ajoutez un noeud enfant sous "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters avec les propriétés obligatoires. </li> 
+     <li>Ajoutez un nœud enfant sous « /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters » avec les propriétés obligatoires. </li> 
      <li>Ajoutez la propriété « sling:orderBefore (String) » au nœud enfant qui vient d’être créé. </li> 
      <li>Ajoutez le nom du nœud comme valeur devant laquelle le caractère spécial récemment ajouté doit être affiché. </li> 
      <li>Cliquez sur Enregistrer tout. </li> 

@@ -12,7 +12,7 @@ exl-id: f634a73a-e720-4a38-a459-6ddbe4fdc565
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 85%
+ht-degree: 94%
 
 ---
 
@@ -35,15 +35,15 @@ Ce didacticiel fournit un cadre de bout en bout pour la création d’un formula
 
 La procédure commence par l’apprentissage du cas d’utilisation :
 
-Un site Web propose une gamme de produits pour des clients divers. Les clients parcourent le portail, sélectionnent et commandent les produits. Chaque client crée un compte et fournit des adresses de livraison et de facturation. Une cliente, Sara Rose, cherche à ajouter son adresse de livraison sur le site Web. Le site web fournit un formulaire en ligne pour ajouter et mettre à jour les adresses de livraison.
+Un site Web propose une gamme de produits pour des clients divers. Les clients parcourent le portail, sélectionnent et commandent les produits. Chaque client crée un compte et fournit des adresses de livraison et de facturation. Une cliente, Sara Rose, cherche à ajouter son adresse de livraison sur le site Web. Le site Web fournit un formulaire en ligne pour ajouter et mettre à jour les adresses de livraison.
 
-Le site Web est basé sur Adobe Experience Manager (AEM) et utilise AEM Forms pour la capture et le traitement des données. Le formulaire d’ajout et de mise à jour d’adresse est un formulaire adaptatif. Le site Web stocke les coordonnées du client dans une base de données. Ils utilisent le formulaire d&#39;ajout et de mise à jour des adresses pour récupérer et afficher les adresses disponibles. Il utilise également le formulaire adaptatif pour accepter les adresses mises à jour et les nouvelles adresses.
+Le site Web est basé sur Adobe Experience Manager (AEM) et utilise AEM Forms pour la capture et le traitement des données. Le formulaire d’ajout et de mise à jour d’adresse est un formulaire adaptatif. Le site Web stocke les coordonnées du client dans une base de données. Il utilise le formulaire d’ajout et de mise à jour d’adresse pour récupérer et afficher les adresses disponibles. Il utilise également le formulaire adaptatif pour accepter les adresses mises à jour et les nouvelles adresses.
 
 ### Prérequis {#prerequisite}
 
 * Configurez une instance d’auteur AEM.
 * Installez le [module complémentaire AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) sur une instance de création.
-* Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données MySQL et l’utilisation d’Oracle [Pilote de base de données MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données MySQL et utilisent le [pilote de base de données MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) d’Oracle.
 
 * Configurez une base de données contenant les données client avec les champs affichés ci-dessous. Une base de données n’est pas essentielle pour créer un formulaire adaptatif. Ce didacticiel utilise une base de données pour afficher les fonctionnalités de modèle de données de formulaire et de persistance d’AEM Forms.
 
@@ -95,21 +95,21 @@ Objectifs:
 
 ![09-Style-your-adaptive-form_small](assets/09-Style-your-adaptive-form_small.png)
 
-Les formulaires adaptatifs fournissent des thèmes et une [éditeur](/help/forms/using/themes.md) pour créer des thèmes pour les formulaires adaptatifs. Un thème contient les informations de style pour les composants et les panneaux, et vous pouvez réutiliser un thème dans plusieurs formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème à votre formulaire, le style spécifié se reflète sur des composants correspondants de votre formulaire. Les formulaires adaptatifs prennent également en charge le style en ligne pour les styles spécifiques à un formulaire.
+Les formulaires adaptatifs comportent des thèmes et un [éditeur](/help/forms/using/themes.md) permettant de créer des thèmes pour les formulaires adaptatifs. Un thème contient les informations de style pour les composants et les panneaux, et vous pouvez réutiliser un thème dans plusieurs formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème à votre formulaire, le style spécifié se reflète sur des composants correspondants de votre formulaire. Les formulaires adaptatifs prennent également en charge le style en ligne pour les styles spécifiques à un formulaire.
 
 Objectifs:
 
 * Appliquer un thème prêt à l’emploi à un formulaire adaptatif
 * Créer un thème pour formulaire adaptatif à l’aide de l’éditeur de thème
-* Utilisation des polices web dans un thème personnalisé
+* Utiliser des polices web dans un thème personnalisé
 
 [ ](style-your-adaptive-form.md)
 
 ## Étape 5 : test de votre formulaire adaptatif {#step-test-your-adaptive-form}
 
-![11-test-votre-formulaire adaptatif](assets/11-test-your-adaptive-form.png)
+![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
-Les formulaires adaptatifs font partie intégrante de vos interactions avec les clients. Il est important de tester vos formulaires adaptatifs à chaque modification que vous y apportez. Tester tous les champs d’un formulaire est fastidieux. AEM Forms fournit un SDK (Calvin SDK) pour automatiser les tests de formulaires adaptatifs. Calvin vous permet d’automatiser les tests de vos formulaires adaptatifs dans le navigateur Web.
+Les formulaires adaptatifs font partie intégrante de vos interactions avec les clients. Il est important de tester vos formulaires adaptatifs à chaque modification apportée. Tester tous les champs d’un formulaire est fastidieux. AEM Forms fournit un SDK (Calvin SDK) pour automatiser les tests de formulaires adaptatifs. Calvin vous permet d’automatiser les tests de vos formulaires adaptatifs dans le navigateur Web.
 
 Objectifs:
 

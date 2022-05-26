@@ -1,5 +1,5 @@
 ---
-title: Démarrage rapide de l’API Java du service Application Manager (SOAP)
+title: Didacticiel de mise en route (SOAP) de l’API Java du service Application Manager
 seo-title: Application Manager Service JavaAPI Quick Start(SOAP)
 description: Utilisez le service Application Manager pour déployer et supprimer des applications à l’aide de l’API Java Quick Start.
 seo-description: Use the Application Manager service to deploy and remove applications using the Java API Quick Start.
@@ -14,31 +14,31 @@ exl-id: 1d93a7c2-631a-4cf7-938f-0133536c7e09
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 1%
+ht-degree: 92%
 
 ---
 
-# Démarrage rapide de l’API Java du service Application Manager (SOAP) {#application-manager-service-javaapi-quick-start-soap}
+# Didacticiel de mise en route (SOAP) de l’API Java du service Application Manager {#application-manager-service-javaapi-quick-start-soap}
 
-Java API Quick Start (SOAP) est disponible pour le service Application Manager.
+Le didacticiel de mise en route de lʼAPI Java (SOAP) est disponible pour le service Application Manager.
 
-[Démarrage rapide : Déploiement d’applications à l’aide de l’API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
+[Didacticiel de mise en route : déployer des applications à lʼaide de lʼAPI Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
-[Démarrage rapide : Suppression d’une application à l’aide de l’API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
-
->[!NOTE]
->
->Les API du gestionnaire d’applications ne prennent en charge que les fichiers LCA AEM Forms. Il ne prend pas en charge les fichiers LCA du LiveCycle ES2 et ES4.
-
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
+[Didacticiel de mise en route : supprimer une application à l’aide de l’API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
 
 >[!NOTE]
 >
->Les API Java (SOAP) Quick Start situées dans Programmation avec AEM forms sont basées sur Forms si vous utilisez un autre système d’exploitation, tel qu’Unix, remplacez les chemins spécifiques Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les API Application Manager ne prennent en charge que les fichiers LCA dʼAEM Forms. Elles ne prennent pas en charge les fichiers LCA de LiveCycle ES2 et ES4.
 
-## Démarrage rapide (mode SOAP) : Déploiement d’applications à l’aide de l’API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 
-L’exemple de code Java suivant importe une application basée sur un fichier LCA existant nommé *EncryptDocument.lca*.
+>[!NOTE]
+>
+>Les didacticiels de mise en route de lʼAPI Java (SOAP), situés dans la section Programmation avec AEM Forms, sont basés sur Forms. Si vous utilisez un autre système d’exploitation, tel qu’Unix, remplacez les chemins dʼaccès spécifiques de Windows par ceux pris en charge par votre système d’exploitation. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+
+## Didacticiel de mise en route (mode SOAP) : déployer des applications à l’aide de l’API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+
+L’exemple de code Java suivant permet dʼimporter une application basée sur un fichier LCA existant nommé *EncryptDocument.lca*.
 
 ```as3
  /* 
@@ -138,9 +138,9 @@ L’exemple de code Java suivant importe une application basée sur un fichier L
  
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’une application à l’aide de l’API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Didacticiel de mise en route (mode SOAP) : supprimer une application à l’aide de l’API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-L’exemple de code Java suivant supprime une application nommée *EncryptDocument*.
+L’exemple de code Java suivant permet de supprimer une application nommée *EncryptDocument*.
 
 ```as3
  /* 

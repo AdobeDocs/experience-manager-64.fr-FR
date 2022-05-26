@@ -10,7 +10,7 @@ exl-id: 5af73823-2c32-41b3-9ab8-a7ad9fd9532f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Vous pouvez personnaliser l’apparence et utiliser des métadonnées personnali
 
 Les modèles de notification électronique sont basés sur les [courriers électroniques HTML](https://en.wikipedia.org/wiki/HTML_email). Ces courriers électroniques s’adaptent à différents clients de messagerie et tailles d’écran. De plus, le style de courrier électronique est défini dans le modèle.
 
-L’image suivante affiche une notification électronique personnalisée :
+L’image suivante affiche une notification électronique personnalisée :
 
 ![Notification électronique à l’aide du modèle personnalisé](do-not-localize/customized-email.png)
 

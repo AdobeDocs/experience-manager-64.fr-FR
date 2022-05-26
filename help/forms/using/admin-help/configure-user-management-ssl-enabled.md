@@ -13,13 +13,13 @@ exl-id: 9ed22c75-bce7-4d26-a4cd-a58e41e5068e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Configuration de User Management pour un serveur LDAP compatible SSL {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
-Pour un bon fonctionnement de la synchronisation sur LDAPS, les certificats LDAP délivrés par l’autorité de certification doivent être présents dans l’environnement JRE (Java Runtime Environment) du serveur d’applications. Importez le certificat dans le fichier cacerts JRE du serveur d’applications, qui se trouve généralement dans la variable *[JAVA_HOME]* répertoire /jre/lib/security/cacerts.
+Pour un bon fonctionnement de la synchronisation sur LDAPS, les certificats LDAP délivrés par l’autorité de certification doivent être présents dans l’environnement JRE (Java Runtime Environment) du serveur d’applications. Importez le certificat dans le fichier cacerts de l’environnement JRE du serveur d’applications, fichier se trouvant généralement dans le répertoire *[JAVA_HOME]*/jre/lib/security/cacerts.
 
 1. Activez SSL sur le serveur d’annuaire. Pour plus d’informations, consultez la documentation fournie avec l’annuaire.
 1. Exportez un certificat client depuis le serveur d’annuaire.
@@ -28,7 +28,7 @@ Pour un bon fonctionnement de la synchronisation sur LDAPS, les certificats LDAP
    `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
 1. A l’invite, spécifiez votre mot de passe (pour Java, le mot de passe par défaut est `changeit`). Une fois le certificat importé, un message vous confirme la réussite de l’opération.
-1. Lorsque vous y êtes invité, saisissez `Yes` pour approuver le certificat.
+1. Lorsque vous y êtes invité, saisissez`Yes` pour approuver le certificat.
 1. Activez SSL dans User Management et, lors de la configuration des paramètres d’annuaire, sélectionnez Oui pour l’option SSL puis modifiez la définition du port en conséquence. Le numéro de port par défaut est 636.
 
 >[!NOTE]

@@ -13,7 +13,7 @@ exl-id: e9c823d4-b70d-4c90-a232-56b69208271b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Ce mode de mise en cache garantit l’utilisation des ressources les plus récen
 
 **Définition de la mise en cache sans condition**
 
-1. Dans Administration Console, cliquez sur Services > Output.
+1. Dans la console d’administration, cliquez sur Services > Output.
 1. Sous Paramètres de contrôle du cache de sortie, sélectionnez Sans condition et cliquez sur Enregistrer.
 
 ### Utilisation du point de contrôle du cache {#use-the-cache-check-point}
@@ -68,14 +68,14 @@ Utilisez ce mode de cache dans des environnements de production hautes performan
 
 **Réinitialisation du point de contrôle du cache**
 
-1. Dans Administration Console, cliquez sur Services > Output.
+1. Dans la console d’administration, cliquez sur Services > Output.
 1. Sous Paramètres de contrôle du cache de sortie, cliquez sur Point de contrôle du cache.
 
 ### Réinitialisation du contenu du cache {#reset-the-cache-contents}
 
 Vous pouvez vider le contenu du cache à tout moment. Après la réinitialisation du cache, la première demande est plus lente pour chaque formulaire, car le service Output effectue un rendu complet et crée un nouveau contenu de cache.
 
-1. Dans Administration Console, cliquez sur Services > Output.
+1. Dans la console d’administration, cliquez sur Services > Output.
 1. Sous Paramètres de contrôle du cache de sortie, sélectionnez Réinitialiser le cache.
 
 ## Configuration des paramètres du cache {#configuring-cache-settings}
@@ -92,9 +92,9 @@ Pour accéder à ces paramètres, dans Administration Console, cliquez sur Servi
 
 Les paramètres de la zone **Paramètres du cache global** affectent tous les types de cache. Si vous modifiez l’un de ces paramètres, redémarrez le service Output pour que ce changement soit appliqué. Pour redémarrer ce service, utilisez Workbench ou consultez la section [Démarrage ou arrêt des services associés aux modules AEM forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) pour obtenir des instructions.
 
-**Taille max. du document cache (Ko) :** Taille maximale, en kilo-octets, d’une conception de formulaire ou d’une autre ressource pouvant être stockée dans un cache en mémoire. Ce paramètre global s’applique à tous les caches mémoire. Si une ressource est supérieure à cette valeur, elle n’est pas mise en cache dans la mémoire. La valeur par défaut est 1024 kilo-octets. Ce paramètre n’a aucune incidence sur le cache disque.
+**Taille max. du document du cache (Ko) :** taille maximale, en kilo-octets, d’une conception de formulaire ou autre ressource pouvant être stockée dans un cache mémoire. Ce paramètre global s’applique à tous les caches mémoire. Si une ressource est supérieure à cette valeur, elle n’est pas mise en cache dans la mémoire. La valeur par défaut est 1024 kilo-octets. Ce paramètre n’a aucune incidence sur le cache disque.
 
-**Cache de rendu de formulaire activé :** Par défaut, cette option est sélectionnée, ce qui signifie que les formulaires rendus sont mis en cache pour une récupération ultérieure. Ce paramètre a peu d’incidence sur les performances du service Output, car il ne met pas les documents non interactifs en cache. Cette option n’a aucune incidence lorsque vous utilisez le service Output avec des documents non interactifs rendus sur le client.
+**Mise en cache des rendus de formulaire activée :** cette option est sélectionnée par défaut, ce qui signifie que les formulaires rendus sont mis en cache pour récupération ultérieure. Ce paramètre a peu d’incidence sur les performances du service Output, car il ne met pas les documents non interactifs en cache. Cette option n’a aucune incidence lorsque vous utilisez le service Output avec des documents non interactifs rendus sur le client.
 
 ### Mise en cache des conceptions de formulaire {#caching-form-designs}
 
@@ -102,11 +102,11 @@ Lorsque le service Output reçoit une demande de rendu, il récupère la concept
 
 Le service Output met toujours les conceptions de formulaire en cache sur le disque. Si les conceptions de formulaire sont stockées sur le serveur, ces fichiers sont considérés comme le cache disque. Le service Output met également les conceptions de formulaire en cache dans la mémoire, en fonction du paramètre défini dans la zone **Mise en mémoire cache des modèles**. Si vous modifiez l’un de ces paramètres, redémarrez le service pour que ce changement soit appliqué. Pour redémarrer ce service, utilisez Workbench ou consultez la section [Démarrage ou arrêt des services associés aux modules AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) pour obtenir des instructions.
 
-**Taille du cache de configuration des modèles :** Nombre maximal d’objets de configuration de modèle à conserver en mémoire. La valeur par défaut est 100. Il est recommandé de la définir sur une valeur supérieure ou égale à celle de la Taille du cache des modèles. Ce paramètre n’a aucune incidence sur le cache disque.
+**Taille du cache de configuration des modèles :** nombre maximal d’objets de configuration de modèle à conserver en mémoire. La valeur par défaut est 100. Il est recommandé de la définir sur une valeur supérieure ou égale à celle de la Taille du cache des modèles. Ce paramètre n’a aucune incidence sur le cache disque.
 
-**Taille du cache des modèles :** Nombre maximal d’objets de contenu de modèle à conserver en mémoire. La valeur par défaut est 100. Ce paramètre n’a aucune incidence sur le cache disque.
+**Taille du cache des modèles :** nombre maximal d’objets de contenu de modèle à conserver en mémoire. La valeur par défaut est 100. Ce paramètre n’a aucune incidence sur le cache disque.
 
-**Activé :** Par défaut, cette case est cochée, ce qui signifie que les modèles de formulaire sont mis en mémoire cache. Si cette option n’est pas sélectionnée, les modèles de formulaire sont uniquement mis en cache sur le disque.
+**Activé :** cette case est cochée par défaut, ce qui signifie que les modèles de formulaire sont mis en mémoire cache. Si cette option n’est pas sélectionnée, les modèles de formulaire sont uniquement mis en cache sur le disque.
 
 ### Mise en cache des fragments et images {#caching-fragments-and-images}
 
@@ -114,15 +114,15 @@ Le service Output met en cache les fragments et les images utilisés dans les co
 
 Vous pouvez utiliser les paramètres suivants pour contrôler la mise en cache de fragments et d’images sur le disque. Ces paramètres se situent dans la zone **Paramètres du cache des ressources de modèle** :
 
-**Mise en cache des ressources** Sélectionnez l’une des options suivantes dans la liste :
+**Mise en cache de ressources :** sélectionnez l’une des options suivantes dans la liste :
 
-**Activé pour les fragments et les images :** Le service Output met en cache les fragments et les images. Il s’agit de l’option par défaut.
+**Activée pour les fragments et les images :** le service Output met les fragments et les images en cache. Il s’agit de l’option par défaut.
 
-**Activé pour les fragments :** Le service Output met les fragments en cache, mais pas les images.
+**Activée pour les fragments :** le service Output met les fragments en cache, mais pas les images.
 
-**Désactivé :** Le service Output ne met pas en cache les fragments ou les images.
+**Désactivée :** le service Output ne met ni les fragments, ni les images en cache.
 
-**Intervalle de nettoyage (secondes) :** Indique la fréquence à laquelle le service Output supprime les anciens fichiers cache non valides. Le service ne supprime pas les fichiers cache valides. Si vous modifiez l’intervalle de nettoyage, redémarrez le service Output pour que ce changement soit appliqué. Pour redémarrer ce service, utilisez Workbench ou consultez la section Démarrage ou arrêt des services associés aux modules AEM Forms pour obtenir des instructions.
+**Intervalle de nettoyage (secondes) :** détermine la fréquence de suppression des anciens fichiers cache non valides par le service Output. Le service ne supprime pas les fichiers cache valides. Si vous modifiez l’intervalle de nettoyage, redémarrez le service Output pour que ce changement soit appliqué. Pour redémarrer ce service, utilisez Workbench ou consultez la section Démarrage ou arrêt des services associés aux modules AEM Forms pour obtenir des instructions.
 
 ## Remarques concernant la mise en grappe pour les caches {#clustering-considerations-for-caches}
 

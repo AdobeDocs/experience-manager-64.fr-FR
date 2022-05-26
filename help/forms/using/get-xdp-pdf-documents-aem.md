@@ -13,7 +13,7 @@ exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '667'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Vous pouvez importer vos formulaires depuis votre système de fichiers local ver
 * Formulaires PDF
 * Document (documents PDF aplatis)
 
-Vous pouvez charger les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Vous pouvez charger une ressource de type `Resource`, uniquement avec un formulaire XFA dans une archive ZIP.
+Vous pouvez charger les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Vous pouvez télécharger une ressource de type `Resource`, uniquement avec un formulaire XFA dans une archive ZIP.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Vous pouvez charger les types de ressource pris en charge individuellement ou so
 
 ## Chargement de formulaires {#uploading-forms}
 
-1. Connectez-vous à l’interface utilisateur d’AEM Forms en accédant à `https://[server]:[port]/aem/forms.html`.
+1. Connectez-vous à l’interface utilisateur d’AEM Forms à l’adresse `https://[server]:[port]/aem/forms.html`.
 1. Accédez au dossier vers lequel vous souhaitez transférer le formulaire ou le dossier contenant des formulaires.
 1. Dans la barre d’outils des actions, appuyez sur **Créer > Chargement de fichier**.
 
@@ -85,6 +85,6 @@ La suppression d’un modèle de formulaire altère le formulaire adaptatif ou l
 
 ![Avertissement de formulaire adaptatif désynchronisé après la mise à jour du formulaire DFA associé](assets/dirtyaf.png)
 
-Un indicateur est conservé pour indiquer si un formulaire adaptatif est de type « dirty ». Ces informations sont disponibles sur la page de propriétés du formulaire, avec les métadonnées du formulaire. Uniquement pour les formulaires adaptatifs non conformes, une propriété de métadonnées `Model Refresh` affiche `Recommended` .
+Un indicateur est conservé pour indiquer si un formulaire adaptatif est de type « dirty ». Ces informations sont disponibles sur la page de propriétés du formulaire, avec les métadonnées du formulaire. Pour les formulaires adaptatifs « dirty » uniquement, une propriété de métadonnées `Model Refresh` affiche la valeur `Recommended`.
 
 ![Indication d’un formulaire adaptatif désynchronisé par rapport au modèle XFA](assets/model-refresh.png)

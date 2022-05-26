@@ -1,7 +1,7 @@
 ---
-title: Considérations générales sur la sécurité d’AEM Forms on JEE
+title: Considérations générales sur la sécurité pour AEM Forms sur JEE
 seo-title: General Security Considerations for AEM Forms on JEE
-description: Découvrez comment vous préparer au renforcement de votre environnement AEM Forms on JEE.
+description: Découvrez comment préparer le renforcement de votre environnement AEM Forms sur JEE.
 seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
 uuid: c5f6ffc7-b987-4541-ab60-e97b4ff5b2a4
 content-type: reference
@@ -13,15 +13,15 @@ exl-id: cde40670-ce9d-4b96-92d3-9e56cb15bdce
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 61%
+ht-degree: 99%
 
 ---
 
-# Considérations générales sur la sécurité d’AEM Forms on JEE {#general-security-considerations-for-aem-forms-on-jee}
+# Considérations générales sur la sécurité pour AEM Forms sur JEE {#general-security-considerations-for-aem-forms-on-jee}
 
-Découvrez comment vous préparer au renforcement de votre environnement AEM Forms on JEE.
+Découvrez comment préparer le renforcement de votre environnement AEM Forms sur JEE.
 
-Cet article fournit des informations d’introduction qui vous aideront à préparer le renforcement de votre environnement AEM Forms. Elle inclut des informations prérequises sur la sécurité d’AEM Forms sur JEE, des systèmes d’exploitation, des serveurs d’applications et des bases de données. Consultez ces informations avant de continuer à verrouiller votre environnement.
+Cet article fournit des informations d’introduction qui vous aideront à préparer le renforcement de votre environnement AEM Forms. Elle inclut des informations prérequises sur la sécurité d’AEM Forms sur JEE, des systèmes d’exploitation, des serveurs d’applications et des bases de données. Passez en revue ces informations avant de continuer à verrouiller votre environnement.
 
 ## Informations de sécurité spécifiques aux revendeurs {#vendor-specific-security-information}
 
@@ -31,14 +31,14 @@ Utilisez les liens proposés dans cette section pour accéder à des information
 
 ### Informations sur la sécurité des systèmes d’exploitation {#operating-system-security-information}
 
-Lorsque vous sécurisez votre système d’exploitation, réfléchissez attentivement à la mise en oeuvre des mesures décrites par le fournisseur de votre système d’exploitation, notamment :
+Lorsque vous sécurisez votre système d’exploitation, veillez à implémenter soigneusement les mesures indiquées par le revendeur de votre système d’exploitation, parmi lesquelles :
 
 * définir et contrôler les utilisateurs, les rôles et les droits ;
 * surveiller les journaux et les journaux d’audit ;
 * supprimer les services et les applications inutiles ;
 * sauvegarder les fichiers.
 
-Pour plus d’informations sur la sécurité des systèmes d’exploitation pris en charge par AEM Forms on JEE, voir les ressources du tableau :
+Pour plus de détails sur la sécurité des systèmes d’exploitation pris en charge par AEM Forms sur JEE, consultez les ressources du tableau suivant :
 
 <table> 
  <thead> 
@@ -53,35 +53,35 @@ Pour plus d’informations sur la sécurité des systèmes d’exploitation pris
    <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">Avantages de la sécurité IBM AIX</a></p> </td> 
   </tr> 
   <tr> 
-   <td><p>Microsoft Windows Server® 2012 </p> </td> 
-   <td><p><a href="https://blogs.technet.com/b/secguide/archive/2014/08/13/security-baselines-for-windows-8-1-windows-server-2012-r2-and-internet-explorer-11-final.aspx" target="_blank">Guide de sécurité de Windows Server 2012</a></p> </td> 
+   <td><p>Microsoft Windows Server® 2012 </p> </td> 
+   <td><p><a href="https://blogs.technet.com/b/secguide/archive/2014/08/13/security-baselines-for-windows-8-1-windows-server-2012-r2-and-internet-explorer-11-final.aspx" target="_blank">Guide de sécurité Windows Server 2012</a></p> </td> 
   </tr> 
   <tr> 
-   <td><p>Microsoft Windows Server® 2016 </p> </td> 
-   <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Guide de sécurité de Windows Server 2016</a></p> </td> 
+   <td><p>Microsoft Windows Server® 2016 </p> </td> 
+   <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Guide de sécurité Windows Server 2016</a></p> </td> 
   </tr> 
   <tr> 
    <td><p>Red Hat® Linux® AP ou ES</p> </td> 
-   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Guide de sécurité Linux pour Red Hat Enterprise</a></p> </td> 
+   <td><p><a href="https://access.redhat.com/documentation/fr-fr/red_hat_enterprise_linux/7/pdf/security_guide/red_hat_enterprise_linux-7-security_guide-fr-fr.pdf" target="_blank">Guide de sécurité Linux pour Red Hat Enterprise</a></p> </td> 
   </tr> 
   <tr> 
    <td><p>Sun Solaris 11</p> </td> 
-   <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Directives de sécurité et de renforcement</a></p> </td> 
+   <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Recommandations relatives à la sécurité et au renforcement</a></p> </td> 
   </tr> 
   <tr> 
    <td>Oracle Linux® 7 Update 3</td> 
-   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Guide de sécurité de la version 7</a><br /> </td> 
+   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Guide de sécurité pour la version 7</a><br /> </td> 
   </tr> 
   <tr> 
    <td>CentOS 7<sup> </sup></td> 
-   <td><a href="https://wiki.centos.org/HowTos/OS_Protection" target="_blank">Documentation de protection</a></td> 
+   <td><a href="https://wiki.centos.org/HowTos/OS_Protection" target="_blank">Documentation sur la protection</a></td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Informations sur la sécurité des serveurs d’applications {#application-server-security-information}
 
-Lorsque vous sécurisez votre serveur d’applications, pensez à mettre en oeuvre avec soin les mesures décrites par le fournisseur de votre serveur, notamment :
+Lorsque vous sécurisez votre serveur d’applications, veiller à implémenter soigneusement les mesures indiquées par le revendeur de votre serveur, parmi lesquelles :
 
 * utiliser un nom d’utilisateur administrateur difficilement identifiable ;
 * désactiver les services inutiles ;
@@ -103,7 +103,7 @@ Pour plus de détails sur la sécurité des serveurs d’applications pris en ch
  <tbody>
   <tr> 
    <td><p>Oracle WebLogic®</p> </td> 
-   <td><p>Recherchez Présentation de WebLogic Security à l’adresse <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
+   <td><p>Recherchez « Understanding WebLogic Security » sur <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
   </tr> 
   <tr> 
    <td><p>IBM WebSphere®</p> </td> 
@@ -111,14 +111,14 @@ Pour plus de détails sur la sécurité des serveurs d’applications pris en ch
   </tr> 
   <tr> 
    <td><p>Red Hat® JBoss®</p> </td> 
-   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security+subsystem+configuration">Configuration des sous-systèmes de sécurité</a></p> </td> 
+   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security+subsystem+configuration">Configuration du sous-système de sécurité</a></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Informations sur la sécurité des bases de données {#database-security-information}
 
-Lorsque vous sécurisez votre base de données, pensez à mettre en oeuvre les mesures décrites par le revendeur de votre base de données, notamment les suivantes :
+Lorsque vous sécurisez votre base de données, veillez à implémenter soigneusement les mesures indiquées par le revendeur de votre base de données, parmi lesquelles :
 
 * restreindre les opérations avec des listes de contrôle d’accès (ACL) ;
 * utiliser des ports non standard ;
@@ -136,8 +136,8 @@ Pour plus de détails sur la sécurité des bases de données prises en charge p
  </thead> 
  <tbody>
   <tr> 
-   <td><p>IBM DB2® 11.1</p> </td> 
-   <td><p><a href="https://www-01.ibm.com/software/data/db2/library/">Bibliothèque de la famille de produits DB2</a></p> </td> 
+   <td><p>IBM DB2® 11.1</p> </td> 
+   <td><p><a href="https://www.ibm.com/fr-fr/analytics/db2">Bibliothèque de la famille de produits DB2</a></p> </td> 
   </tr> 
   <tr> 
    <td><p>Microsoft SQL Server 2016</p> </td> 
@@ -185,7 +185,7 @@ Ce tableau décrit les ports par défaut devant être ouverts pendant le process
    <td><p>7001</p> </td> 
   </tr> 
   <tr> 
-   <td><p>SOAP</p> </td> 
+   <td><p>méthode d’objet</p> </td> 
    <td><p>8880</p> </td> 
   </tr> 
   <tr> 
@@ -206,7 +206,7 @@ Ce tableau décrit les ports par défaut devant être ouverts pendant le process
   </tr> 
   <tr> 
    <td><p>LDAP</p> </td> 
-   <td><p>port sur lequel le serveur LDAP fonctionne. Il s’agit généralement du port 389. Toutefois, si vous sélectionnez l’option SSL, le port par défaut est habituellement le port 636. Confirmez auprès de votre administrateur LDAP le port à spécifier.</p> </td> 
+   <td><p>port sur lequel le serveur LDAP fonctionne. Il s’agit généralement du port 389. Toutefois, si vous sélectionnez l’option SSL, le port par défaut est habituellement le port 636. Vérifiez auprès de votre administrateur LDAP le numéro de port à utiliser.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -215,13 +215,13 @@ Ce tableau décrit les ports par défaut devant être ouverts pendant le process
 
 Le serveur d’applications JBoss utilise 8080 en tant que port HTTP par défaut. JBoss possède également des ports 8180, 8280 et 8380 préconfigurés ; ils sont mis en commentaires dans le fichier jboss-service.xml. Si vous possédez sur votre ordinateur une application qui utilise déjà ce port, vous devez modifier celui qui est utilisé par AEM Forms sur JEE comme suit :
 
-1. Ouvrez le fichier suivant pour le modifier :
+1. Ouvrez le fichier suivant pour le modifier :
 
-   Installation sur un seul serveur : [racine JBoss]/standalone/configuration/standalone.xml
+   Installation sur un serveur : [racine JBoss]/standalone/configuration/standalone.xml
 
-   Installations en grappe : [racine JBoss]/domain/configuration/domain.xml
+   Installations de cluster : [racine JBoss]/domain/configuration/domain.xml
 
-1. Modifiez la valeur de **port** dans le **&lt;socket-binding>** vers un numéro de port personnalisé. Par exemple, le code suivant utilise le port 8090 :
+1. Modifiez la valeur de lʼattribut **port** dans la balise **&lt;socket-binding>** vers un numéro de port personnalisé. Dans lʼexemple suivant, le port 8090 est utilisé :
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
@@ -238,20 +238,20 @@ Les informations d’identification stockées par les applications ne sont pas c
 
 ### Contenu sensible pour Rights Management dans la base de données {#sensitive-content-for-rights-management-in-the-database}
 
-AEM Forms on JEE utilise la base de données d’AEM Forms on JEE pour stocker des informations clés sur les documents sensibles et d’autres documents cryptographiques utilisés pour les documents de stratégie. Le fait de sécuriser la base de données contre les intrusions contribue à la protection de ces informations sensibles.
+AEM Forms sur JEE utilise sa base de données pour stocker des informations clés sur des documents sensibles et d’autres données cryptographiques utilisées pour les documents de stratégie. Le fait de sécuriser la base de données contre les intrusions contribue à la protection de ces informations sensibles.
 
-### Mot de passe dans le formulaire de texte en clair {#password-in-clear-text-format-in-adobe-ds-xml}
+### Mot de passe en texte clair {#password-in-clear-text-format-in-adobe-ds-xml}
 
-Le serveur d’applications utilisé pour exécuter AEM Forms sur JEE nécessite sa propre configuration pour accéder à votre base de données via une source de données configurée sur le serveur d’applications. Assurez-vous que votre serveur d’applications n’expose pas le mot de passe de votre base de données en texte clair dans son fichier de configuration de source de données.
+Le serveur d’applications utilisé pour exécuter AEM Forms sur JEE nécessite sa propre configuration pour accéder à votre base de données via une source de données configurée sur le serveur d’applications. Veillez à ce que votre serveur d’applications n’expose pas le mot de passe de votre base de données en texte lisible dans le fichier de configuration de sa source de données.
 
-Le lc_[base]Le fichier .xml ne doit pas contenir de mot de passe au format texte en clair. Consultez le revendeur de votre serveur d’applications pour savoir comment chiffrer ces mots de passe pour votre serveur d’applications.
+Le fichier lc_[database].xml ne doit pas contenir de mot de passe en texte clair. Consultez le revendeur de votre serveur d’applications pour savoir comment chiffrer ces mots de passe pour votre serveur d’applications.
 
 >[!NOTE]
 >
 >Le programme d’installation de la clé en main de Jboss d’AEM Forms sur JEE chiffre le mot de passe de la base de données.
 
-Il est possible que le serveur d’applications IBM WebSphere et qu’Oracle WebLogic Server chiffrent les mots de passe des sources de données par défaut. Vérifiez toutefois avec la documentation de votre serveur d’applications que cela se produit.
+Il est possible que le serveur d’applications IBM WebSphere et qu’Oracle WebLogic Server chiffrent les mots de passe des sources de données par défaut. Vérifiez ce point dans la documentation de votre serveur d’applications.
 
 ### Protection de la clé privée stockée dans Trust Store {#protecting-the-private-key-stored-in-trust-store}
 
-Les clés privées ou les informations d’identification importées dans Trust Store sont stockées dans la base de données d’AEM Forms sur JEE. Prenez les précautions appropriées pour sécuriser la base de données et restreindre l&#39;accès uniquement aux administrateurs désignés.
+Les clés privées ou les informations d’identification importées dans Trust Store sont stockées dans la base de données d’AEM Forms sur JEE. Prenez des mesures de sécurité appropriées pour sécuriser la base de données et limiter l’accès aux seuls administrateurs indiqués.

@@ -13,7 +13,7 @@ exl-id: 88f692de-f88b-4459-97e9-73506bf87525
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1863'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Lorsque l’administrateur du serveur d’applications détermine les paramètre
    * Capacity Increment
    * Statement Cache Size
 
-1. Cliquez sur Enregistrer, puis sur Activer les changements.
+1. Cliquez sur Save, puis sur Activate Changes.
 1. Redémarrez le serveur géré WebLogic.
 
 ### Configuration des paramètres du pool de connexions sur WebLogic pour SQLServer {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
@@ -59,7 +59,7 @@ Lorsque l’administrateur du serveur d’applications détermine les paramètre
    * Augmentation de capacité
    * Statement Cache Size
 
-1. Cliquez sur Enregistrer, puis sur Activer les changements.
+1. Cliquez sur Save, puis sur Activate Changes.
 1. Redémarrez le serveur géré WebLogic.
 
 ### Configuration des paramètres du pool de connexions sur WebLogic pour DB2 {#configure-connection-pool-settings-for-websphere-for-db2}
@@ -87,10 +87,10 @@ Lorsque l’administrateur du serveur d’applications détermine les paramètre
 
 Si vous traitez régulièrement des documents de petite taille, vous pouvez améliorer les performances associées à la vitesse de transfert des documents et à l’espace de stockage. Pour ce faire, implémentez les configurations de produit AEM forms suivantes :
 
-* Augmentation de la taille maximale de la ligne d’entrée (document par défaut) d&#39;AEM forms afin qu’elle soit supérieure à la taille de la plupart des documents.
+* Augmentation de la taille maximale de la ligne d’entrée (document par défaut) d’AEM forms afin qu’elle soit supérieure à la taille de la plupart des documents.
 * Pour le traitement de fichiers plus volumineux, spécification de répertoires de stockage situés sur un système de disque à grande vitesse ou un disque RAM.
 
-La taille maximale de la ligne d’entrée et les répertoires de stockage (répertoire des fichiers temporaires et répertoire de stockage global d&#39;AEM forms) sont configurés dans Administration Console.
+La taille maximale de la ligne d’entrée et les répertoires de stockage (répertoire des fichiers temporaires et répertoire de stockage global d’AEM forms) sont configurés dans Administration Console.
 
 ### Taille du document et taille maximale de la ligne d’entrée {#document-size-and-maximum-inline-size}
 
@@ -102,12 +102,12 @@ Lorsque le contenu du document est en ligne d’entrée (c’est-à-dire qu’il
 
 **Modification de la taille maximale de la ligne d’entrée**
 
-1. Dans Administration Console, cliquez sur Paramètres > Paramètres de Core System > Configurations.
+1. Dans la console d’administration, cliquez sur Paramètres > Paramètres du système principal > Configurations.
 1. Saisissez une valeur dans le champ Taille maximale par défaut de la ligne d’entrée du document, puis cliquez sur OK.
 
    >[!NOTE]
    >
-   >La valeur de la propriété Taille maximale de la ligne d’entrée du document doit être identique pour l’environnement AEM Forms on JEE et le bundle AEM Forms on OSGi inclus dans l’environnement AEM Forms on JEE. Cette étape a mis à jour la valeur uniquement pour l’environnement AEM Forms sur JEE et non pour le lot AEM Forms sur OSGi, y compris l’environnement AEM Forms sur JEE.
+   >La valeur de la propriété de la taille maximale de la ligne d’entrée du document doit être identique pour l’environnement AEM Forms sur JEE et pour le bundle AEM Forms sur OSGi, inclus dans l’environnement AEM Forms sur JEE. Cette étape a mis à jour la valeur uniquement pour l’environnement AEM Forms sur JEE et non pour le lot AEM Forms sur OSGi, y compris l’environnement AEM Forms sur JEE.
 
 1. Redémarrez le serveur d’applications à l’aide de la propriété système suivante :
 
@@ -157,12 +157,12 @@ Cette section décrit les paramètres spécifiques à l’environnement du serve
 
 Si vous exécutez Configuration Manager ou si vous essayez de générer le code de déploiement EJB (Enterprise JavaBeans) à l’aide de l’utilitaire de ligne de commande *ejbdeploy* et qu’une erreur OutOfMemory survient, augmentez la quantité maximale de mémoire allouée à la JVM.
 
-1. Modifiez le script ejbdeploy dans le *[racine du serveur d’applications]* Répertoire /deploytool/itp/ :
+1. Modifiez le script ejbdeploy dans le répertoire *[racine du serveur d’applications]*/deploytool/itp/ :
 
    * (Windows) `ejbdeploy.bat`
    * (Linux et UNIX) `ejbdeploy.sh`
 
-1. Recherchez le `-Xmx256M` et définissez-le sur une valeur supérieure, telle que `-Xmx1024M`.
+1. Recherchez le paramètre `-Xmx256M` et affectez-lui une valeur supérieure, comme `-Xmx1024M`.
 1. Enregistrez le fichier.
 1. Exécutez la commande `ejbdeploy` ou effectuez de nouveau le déploiement à l’aide de Configuration Manager.
 
@@ -175,13 +175,13 @@ L’utilisation du pool de connexions sur la connexion de recherche peut réduir
 ### Configuration de Windows Server pour le pool de connexion {#configure-your-windows-server-for-connection-pooling}
 
 1. Cliquez sur Démarrer > Exécuter pour lancer l’éditeur de registre, puis dans le champ Ouvrir, tapez `regedit` et cliquez sur OK.
-1. Accédez à la clé de registre `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
+1. Accédez à la clé de registre `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`.
 1. Dans le volet droit de l’éditeur de registre, recherchez le nom de valeur TcpTimedWaitDelay. Si ce nom n’apparaît pas, sélectionnez Edition > Nouveau > Valeur DWORD dans la barre de menus pour l’ajouter.
 1. Dans la zone Nom, saisissez `TcpTimedWaitDelay`
 
    >[!NOTE]
    >
-   >Si vous ne voyez pas de curseur clignotant et `New Value #` dans la zone, cliquez avec le bouton droit dans le panneau de droite, sélectionnez Renommer et, dans la zone Nom, saisissez `TcpTimedWaitDelay`*.*
+   >Si vous ne voyez pas un curseur clignotant et `New Value #` dans le champ, effectuez un clic droit dans le panneau de droite, sélectionnez Renommer, puis dans le champ Nom, saisissez `TcpTimedWaitDelay`*.*
 
 1. Répétez l’étape 4 pour les noms de valeur MaxUserPort, MaxHashTableSize et MaxFreeTcbs.
 1. Cliquez deux fois dans le volet de droite pour définir la valeur TcpTimedWaitDelay. Sous Base, sélectionnez Décimale puis entrez `30` dans le champ Valeur.

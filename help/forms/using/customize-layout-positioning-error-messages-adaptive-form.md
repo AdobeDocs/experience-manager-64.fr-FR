@@ -12,7 +12,7 @@ exl-id: a57bd3c4-2d50-4089-8279-1e403e9469bf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -33,8 +33,8 @@ Vous pouvez personnaliser la disposition d’un champ spécifique ou de tous les
 
 Effectuez les étapes suivantes pour appliquer une disposition personnalisée à un champ spécifique :
 
-1. Ouvrez le formulaire en mode **Style**. Pour ouvrir le formulaire en mode Style, dans la barre d’outils de la page, appuyez sur ![liste déroulante canevas](assets/canvas-drop-down.png) > **Style**.
-1. Dans la barre latérale, sous **Objets de formulaire**, sélectionnez le champ et appuyez sur le bouton Modifier ![edit-button](assets/edit-button.png).
+1. Ouvrez le formulaire en mode **Style**. Pour ouvrir le formulaire en mode Style, écrivez dans la barre d’outils de la page ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Dans la barre latérale, sous **Objets de formulaire**, sélectionnez le champ, puis cliquez sur le bouton de modification ![edit-button](assets/edit-button.png).
 1. Sélectionnez l’état du champ que vous souhaitez personnaliser, puis spécifiez le style de cet état.
 
    ![Spécification du style intégré d’un champ](assets/edit-error-state.png)
@@ -55,7 +55,7 @@ Créez un thème à l’aide de l’éditeur de thèmes pour personnaliser la mi
 1. Copiez une disposition de champ du nœud /libs/fd/af/layouts/field (par exemple, defaultFieldLayout) vers le nœud /apps (par exemple, /apps/af-field-layout).
 1. Renommez le nœud copié et le fichier defaultFieldLayout.jsp. Par exemple, errorOnRight.jsp.
 
-1. Modifiez la valeur des propriétés qtip et jcr:description du noeud copié. Par exemple, redéfinissez la valeur des propriétés sur Erreur sur la droite
+1. Modifiez la valeur des propriétés qtip et jcr:description du nœud copié. Par exemple, redéfinissez la valeur des propriétés sur Erreur sur la droite
 
 1. Pour ajouter de nouveaux styles et un nouveau comportement, créez une bibliothèque cliente sous le nœud /etc node.
 

@@ -13,13 +13,13 @@ exl-id: ac56a1db-593e-4996-84ec-c9e6d1256059
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1520'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
 # Activation de l’authentification unique dans AEM forms{#enabling-single-sign-on-in-aem-forms}
 
-AEM forms offre deux façons d’activer l’authentification unique (SSO) : les en-têtes HTTP et SPNEGO.
+AEM Forms offre deux méthodes d’activation de l’authentification unique (SSO) : via les en-têtes HTTP et SPNEGO.
 
 Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires. Elles ne s’affichent pas si l’utilisateur s’est déjà authentifié via le portail de son entreprise.
 
@@ -29,7 +29,7 @@ Si AEM forms n’est pas en mesure d’authentifier un utilisateur à l’aide d
 
 La page Configuration du portail permet d’activer l’authentification unique (SSO) entre les applications et les applications prenant en charge l’acheminement de l’identité via l’en-tête HTTP. Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires. Elles ne s’affichent pas si l’utilisateur s’est déjà authentifié via le portail de son entreprise.
 
-Vous pouvez également activer la fonction SSO via SPNEGO (voir [Activation de la fonction SSO à l’aide de SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego)).
+Vous pouvez également activer la fonction SSO via SPNEGO Voir [Activation de la fonction SSO à l’aide de SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego).
 
 1. Dans Administration Console, cliquez sur Paramètres > User Management > Configuration > Configurer les attributs de portail.
 1. Sélectionnez Oui pour activer l’authentification unique. Si vous sélectionnez Non, les autres paramètres de la page ne sont pas disponibles.
@@ -61,7 +61,7 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP (v
 
 >[!NOTE]
 >
->AEM forms on JEE ne prend pas en charge la configuration de l’authentification unique à l’aide de Kerberos/SPNEGO dans plusieurs environnements d’un domaine enfant .
+>AEM Forms on JEE ne prend pas en charge la configuration de l’authentification unique à l’aide de Kerberos/SPNEGO dans plusieurs environnements d’un domaine enfant .
 
 1. Déterminez le domaine à utiliser pour activer la fonction SSO. Les utilisateurs et le serveur AEM forms doivent appartenir au même domaine Windows ou à un domaine de confiance.
 1. Dans Active Directory, créez un utilisateur représentant le serveur AEM forms (voir [Création d’un compte utilisateur](enabling-single-sign-on-aem.md#create-a-user-account)). Si vous configurez plusieurs domaines pour qu’ils utilisent SPNEGO, vérifiez que les mots de passe de tous les utilisateurs sont différents. Si des mots de passe sont identiques, l’authentification unique de SPNEGO ne fonctionne pas.
@@ -101,7 +101,7 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP (v
 1. Procurez-vous l’utilitaire KtPass. Cet utilitaire sert au mappage d’un SPN sur un DOMAINE. Vous pouvez obtenir l’utilitaire KtPass dans le pack d’outils ou dans le Kit de ressources techniques de Windows Server (Voir [Outils de support de Windows Server 2003 Service Pack 1](https://support.microsoft.com/kb/892777).)
 1. Dans une invite de commande, exécutez `ktpass` à l’aide des arguments suivants :
 
-   `ktpass -princ HTTP/`*hôte* `@`*REALM* `-mapuser`*user*
+   `ktpass -princ HTTP/`*hôte* `-mapuser`*utilisateur* `@`*REALM*
 
    Par exemple, saisissez le texte suivant :
 
@@ -152,19 +152,19 @@ Si l’accès au serveur s’effectue à l’aide du nom de l’ordinateur, par 
 1. Cliquez sur l’icône Intranet local, puis sur Sites.
 1. Cliquez sur Avancé et dans le champ Ajouter ce site Web à la zone, saisissez l’URL du serveur Forms. Par exemple, saisissez `https://lcserver.um.lc.com`
 1. Cliquez plusieurs fois sur OK pour fermer toutes les boîtes de dialogue.
-1. Testez la configuration en accédant à l’URL du serveur AEM forms. Par exemple, dans la zone URL du navigateur, saisissez `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Testez la configuration en accédant à l’URL du serveur AEM forms. Par exemple, dans la zone URL du navigateur, saisissez `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`.
 
 **Configuration de Mozilla Firefox**
 
-1. Dans la zone URL du navigateur, saisissez `about:config`
+1. Dans la zone d’URL du navigateur, saisissez `about:config`.
 
    La boîte de dialogue about:config - Mozilla Firefox s’ouvre.
 
 1. Dans la zone Filtre, saisissez `negotiate`
 1. Dans la liste qui s’affiche, cliquez sur network.negotiate-auth.trusted-uri, puis saisissez l’une des commandes suivantes selon votre environnement :
 
-   `.um.lc.com`- Configure Firefox pour autoriser SPNEGO pour toute URL qui se termine par um.lc.com. Veillez à inclure le point (&quot;.&quot;) au début.
+   `.um.lc.com` : configure Firefox pour autoriser SPNEGO pour toute URL qui se termine par um.lc.com. Veillez à inclure le point (« . ») au début.
 
-   `lcserver.um.lc.com`  : configure Firefox en vue d’autoriser SPNEGO pour un serveur spécifique uniquement. Ne faites pas précéder cette valeur d’un point (« . »).
+   `lcserver.um.lc.com` : configure Firefox en vue d’autoriser SPNEGO pour un serveur spécifique uniquement. Ne faites pas précéder cette valeur d’un point (« . »).
 
 1. Testez la configuration en accédant à l’application. La page d’accueil de l’application cible s’affiche.

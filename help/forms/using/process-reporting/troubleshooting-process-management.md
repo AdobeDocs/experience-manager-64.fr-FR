@@ -1,7 +1,7 @@
 ---
-title: Dépannage des rapports de processus
+title: Dépannage de Process Reporting
 seo-title: Troubleshooting Process Reporting
-description: Résolution des problèmes liés aux rapports de processus d’AEM Forms on JEE
+description: Résolution des problèmes dans AEM Forms on JEE Process Reporting
 seo-description: Troubleshoot issues in AEM Forms on JEE Process Reporting
 page-status-flag: de-activated
 uuid: 1c1cc27c-fbed-4366-bffe-e1581d269a93
@@ -12,15 +12,15 @@ exl-id: 57ddfead-22bb-4a99-925e-11d71fc61669
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '104'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Dépannage des rapports de processus {#troubleshooting-process-reporting}
+# Dépannage de Process Reporting {#troubleshooting-process-reporting}
 
 ## Problèmes rencontrés lors de la création de filtres sur Internet Explorer 9 sous Microsoft Windows 7 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-Si vous créez des filtres pour les rapports prédéfinis, les problèmes suivants se produisent par intermittence sur la variable **Internet Explorer 9** pour **Microsoft Windows 7** environnement :
+Si vous créez des filtres pour les rapports prédéfinis, les problèmes suivants se produisent par intermittence sur la variable **Internet Explorer 9** pour l’environnement **Microsoft Windows 7** :
 
 * La liste déroulante du champ Valeur affiche des identifiants uniques au lieu des valeurs.
 * La commande Calendrier du champ Valeur affiche des caractères japonais.
@@ -29,7 +29,7 @@ Si vous créez des filtres pour les rapports prédéfinis, les problèmes suivan
 
 ### Résolution {#resolution}
 
-Pendant que vous êtes toujours connecté à Process Reporting :
+Pendant que vous êtes toujours connecté à Process Reporting :
 
 1. Videz la mémoire cache du navigateur.
-1. Actualisez l’écran du navigateur.
+1. Actualisez la fenêtre du navigateur.

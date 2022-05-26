@@ -12,7 +12,7 @@ exl-id: 17e8c644-ee17-496c-a781-a295a4796cb9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '9201'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -167,7 +167,7 @@ L’image suivante illustre le processus AEM qui traite la demande de carte de c
 
 #### Démonstration {#see-it-yourself-2}
 
-Vous pouvez accéder à AEM boîte de réception pour le site we.finance à l’adresse https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html. Sur la page, appuyez sur . **[!UICONTROL Se connecter]**, sélectionnez la variable **[!UICONTROL Connexion en tant que représentant]** , connectez-vous à la boîte de réception AEM à l’aide de la case à cocher `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios, et approuvez la demande de carte de crédit. Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour les tâches de flux de travail axées sur les formulaires, voir [Gestion des applications et des tâches Forms dans AEM boîte de réception](/help/forms/using/manage-applications-inbox.md).
+Vous pouvez accéder à AEM boîte de réception pour le site we.finance à l’adresse https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html. Sur la page, appuyez sur . **[!UICONTROL Se connecter]**, sélectionnez la variable **[!UICONTROL Connexion en tant que représentant]** , connectez-vous à la boîte de réception AEM à l’aide de la case à cocher `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios, et approuvez la demande de carte de crédit. Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour les tâches du workflow relatives aux formulaires, voir [Gérer des applications et des tâches Forms dans la boîte de réception AEM](/help/forms/using/manage-applications-inbox.md).
 
 ![inbox-1](assets/inbox-1.png)
 
@@ -272,7 +272,7 @@ Pour générer un rapport d’analyse avec des données sources :
 1. Les données de test sont sélectionnées dans la structure de répertoires de gauche.
 1. Cliquez deux fois sur le fichier sélectionné pour ouvrir son contenu dans le panneau de droite.
 1. Copiez tout le contenu du fichier de données source.
-1. Dans CRXDE, accédez à : `/content/dam/formsanddocuments/we-finance/cc-app/jcr:content/analyticsdatanode/lastsevendays`
+1. Dans CRXDE, accédez à : `/content/dam/formsanddocuments/we-finance/cc-app/jcr:content/analyticsdatanode/lastsevendays`.
 1. Dans le **[!UICONTROL analyticsdata]** champ sous **[!UICONTROL Propriétés]**, collez le contenu copié du fichier de données source.
 
 1. Sélectionner **Demande de carte de crédit** formulaire adaptatif et clic **[!UICONTROL Rapport Analytics]** dans la barre d’outils pour générer le rapport avec les données sources.
@@ -443,7 +443,7 @@ L’image suivante illustre le processus AEM associé à la demande de prêt imm
 
 Vous pouvez accéder à la boîte de réception AEM à l’adresse https://&lt;***hostname***>:&lt;***AuthorPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Connectez-vous à la boîte de réception AEM à l’aide des nom d’utilisateur/mot de passe `grios/password` pour Gloria Rios et `jdoe/jdoe` pour John Doe, et explorez le processus de demande de prêt immobilier.
 
-Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour les tâches de flux de travail axées sur les formulaires, voir [Gestion des applications et des tâches Forms dans AEM boîte de réception](/help/forms/using/manage-applications-inbox.md).
+Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour les tâches du workflow relatives aux formulaires, voir [Gérer des applications et des tâches Forms dans la boîte de réception AEM](/help/forms/using/manage-applications-inbox.md).
 
 ### Sarah reçoit le kit de bienvenue {#sarah-receives-the-welcome-kit}
 
@@ -525,7 +525,7 @@ Pour générer un rapport d’analyse avec des données sources :
 1. Les données de test sont sélectionnées dans la structure de répertoires de gauche.
 1. Cliquez deux fois sur le fichier sélectionné pour ouvrir son contenu dans le panneau de droite.
 1. Copiez tout le contenu du fichier de données source.
-1. Dans CRXDE, accédez à : `/content/dam/formsanddocuments/we-finance/hm-app/jcr:content/analyticsdatanode/lastsevendays`
+1. Dans CRXDE, accédez à : `/content/dam/formsanddocuments/we-finance/hm-app/jcr:content/analyticsdatanode/lastsevendays`.
 1. Dans le champ analyticsdata sous Propriétés, collez le contenu copié du fichier de données source.
 1. Générez à présent le rapport d’analyse pour le formulaire de demande de prêt immobilier. Le rapport contient les données sources.
 
@@ -897,7 +897,7 @@ Maintenant, connectez-vous à **Tableau de bord des assurances automatiques We.F
 
 Sarah reçoit un courrier électronique avec une pièce jointe de We.Finance qui lui rappelle que sa police d’assurance automobile est sur le point d’expirer. La pièce jointe est la version imprimée des détails de renouvellement de sa police d’assurance automobile.
 
-Sarah clique **Renouveler maintenant** et est dirigé vers la version web de sa lettre d’assurance automobile. En plus de cette lettre, Sarah trouve un certain nombre de jours restants pour l’expiration de sa politique. La page fournit à Sarah un aperçu des détails de sa police d’assurance, tels que le numéro de la police, le montant dû et d’autres informations, telles que les offres de remise et les récompenses de fidélité. Sarah clique à nouveau **Renouveler maintenant** au bas de la politique.
+Sarah clique **Renouveler maintenant** et est dirigé vers la version web de sa lettre d’assurance automobile. En plus de cette lettre, Sarah trouve un certain nombre de jours restants pour l’expiration de sa politique. La page fournit à Sarah un aperçu des détails de sa police d’assurance, tels que le numéro de la police, le montant dû et d’autres informations, telles que les offres de remise et les récompenses de fidélité. Sarah clique à nouveau sur **Renouveler maintenant** au bas de la police.
 
 ![auto-assurance-renouvellement-email](assets/auto-insurance-renewal-email.png)
 
@@ -909,9 +909,9 @@ Les sorties web et imprimée de votre lettre d’assurance automobile sont cré�
 
 #### Démonstration  {#see-it-yourself-19}
 
-Vous devriez recevoir un courrier électronique avec un fichier PDF joint. Le PDF est une version imprimée de votre lettre d’assurance automobile. Cliquez sur **Renouveler maintenant** pour accéder à la version web de la stratégie. Vérifiez vos informations personnelles et vos informations de stratégie, puis cliquez sur **Renouveler maintenant**. Il vous amène à un formulaire adaptatif pour paiement.
+Vous devriez recevoir un courrier électronique avec un fichier PDF joint. Le PDF est une version imprimée de votre lettre d’assurance automobile. Cliquez sur **Renouveler maintenant** pour accéder à la version web de la police. Vérifiez vos informations personnelles et vos informations de stratégie, puis cliquez sur **Renouveler maintenant**. Il vous amène à un formulaire adaptatif pour paiement.
 
-Le **Renouveler maintenant** dans le courrier électronique redirige Sarah vers la version web de la stratégie. Vous pouvez consulter l’URL suivante :
+Le bouton **Renouveler maintenant** figurant dans l’e-mail redirige Sarah vers la version web de la police. Vous pouvez consulter l’URL suivante :
 
 https://[publishServer]:[publishPort]/content/document.html?schema=fdm&amp;documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&amp;customerId=900001
 
@@ -919,7 +919,7 @@ Vous pouvez vérifier le résumé détaillé de votre renouvellement d’assuran
 
 ### Sarah ouvre la page de paiement, effectue le paiement et termine le processus {#sarah-opens-the-payment-page-and-makes-the-payment-and-completes-the-process}
 
-Lorsque Sarah clique **Renouveler maintenant** dans la version web de la communication interactive, la page paiements s’ouvre. Sarah vérifie à nouveau son numéro de police et sa date d’expiration avec ses enregistrements. Sur le côté droit de la page, elle vérifie le récapitulatif des paiements de son renouvellement avec une remise de 10 % sur le montant total. Sarah remplit ses informations de carte de crédit et clique sur **Effectuer un paiement**.
+Lorsque Sarah clique **Renouveler maintenant** dans la version web de la communication interactive, la page paiements s’ouvre. Sarah vérifie à nouveau son numéro de police et la date d’expiration dans ses dossiers. Sur le côté droit de la page, elle vérifie le récapitulatif des paiements de son renouvellement avec une réduction de 10 % sur le montant total. Sarah remplit ses informations de carte de crédit et clique sur **Effectuer un paiement**.
 
 ![payment-adaptive-form](assets/payment-adaptive-form.png)
 
@@ -929,7 +929,7 @@ Le bouton Renouveler maintenant redirige Sarah vers la page de paiement. La page
 
 #### Démonstration  {#see-it-yourself-20}
 
-Cliquez sur **Renouveler maintenant** pour accéder à la page de paiement. Renseignez les informations de votre carte de crédit, puis cliquez sur **Effectuez un paiement.** Vous pouvez accéder à la page de paiement dans l’instance de création à l’adresse :
+Cliquez sur **Renouveler maintenant** pour accéder à la page de paiement. Saisissez vos informations de carte de crédit, puis cliquez sur **Effectuer un paiement.** Vous pouvez accéder à la page de paiement dans l’instance de création à l’adresse :
 
 https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&amp;schema=fdm&amp;customerId=900001
 

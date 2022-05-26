@@ -19,7 +19,7 @@ ht-degree: 94%
 
 # Exécution d’AEM Forms en mode de maintenance {#running-aem-forms-in-maintenance-mode}
 
-Le mode de maintenance est utile lorsque vous réalisez des tâches telles que l’application d’un correctif à un DSC, la mise à niveau d&#39;AEM forms ou l’application d’un Service Pack.
+Le mode de maintenance est utile lorsque vous réalisez des tâches telles que l’application d’un correctif à un DSC, la mise à niveau d’AEM forms ou l’application d’un Service Pack.
 
 Evitez d’appeler des processus lorsque le serveur est en mode de maintenance. Voici en effet ce qui se produirait :
 

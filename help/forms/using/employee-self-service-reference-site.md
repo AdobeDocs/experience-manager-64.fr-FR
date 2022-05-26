@@ -11,11 +11,11 @@ exl-id: 7fbdd976-5a70-4af4-b449-7c2d6bcfd915
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 84%
+ht-degree: 87%
 
 ---
 
-# Libre-service dédié aux employés présentation du site de référence {#employee-self-service-reference-site-walkthrough}
+# Libre-service dédié aux employés Présentation du site de référence  {#employee-self-service-reference-site-walkthrough}
 
 ## Prérequis {#prerequisite}
 
@@ -81,7 +81,7 @@ L’action d’envoi dans le questionnaire sur les conflits d’intérêt décle
 
 **Démonstration**
 
-Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et se connecter à l’aide de `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios. Ouvrez la tâche créée pour le questionnaire sur les conflits d’intérêt et approuvez-la.
+Accédez à sur `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et connectez-vous en utilisant comme nom d’utilisateur/mot de passe pour Gloria Rios. `grios/password` Ouvrez la tâche créée pour le questionnaire sur les conflits d’intérêt et approuvez-la.
 
 ## Présentation de la demande de la carte d’entreprise {#corporate-card-application-walkthrough}
 
@@ -130,7 +130,7 @@ Le processus d’envoi dans la demande de carte d’entreprise déclenche un pro
 
 **Démonstration**
 
-Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et se connecter à l’aide de `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios. Ouvrez la tâche créée pour la demande de carte d’entreprise et approuvez-la.
+Accédez à sur `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et connectez-vous en utilisant comme nom d’utilisateur/mot de passe pour Gloria Rios. `grios/password` Ouvrez la tâche créée pour la demande de carte d’entreprise et approuvez-la.
 
 ## Présentation de l’envoi du rapport de dépenses {#expense-report-submission-walkthrough}
 
@@ -180,7 +180,7 @@ Le processus d’envoi dans la demande de rapport de dépenses déclenche un pro
 
 **Démonstration**
 
-Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et se connecter à l’aide de `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios. Ouvrez la tâche créée pour la demande de rapport de dépenses et approuvez-la.
+Accédez à sur `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et connectez-vous en utilisant comme nom d’utilisateur/mot de passe pour Gloria Rios. `grios/password` Ouvrez la tâche créée pour la demande de rapport de dépenses et approuvez-la.
 
 ## Présentation de la demande de congés {#leave-application-walkthrough}
 
@@ -236,4 +236,4 @@ Le processus d’envoi dans la demande de congés déclenche un processus Forms 
 
 **Démonstration**
 
-Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et se connecter à l’aide de `grios/password` comme nom d’utilisateur/mot de passe pour Gloria Rios. Ouvrez la tâche créée pour la demande de congés et approuvez-la.
+Accédez à sur `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` et connectez-vous en utilisant comme nom d’utilisateur/mot de passe pour Gloria Rios. `grios/password` Ouvrez la tâche créée pour la demande de congés et approuvez-la.

@@ -12,7 +12,7 @@ exl-id: 2a842bdc-6dcf-42cc-9a45-57ac15b79eb7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1510'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Lorsqu’un formulaire est prérempli ou envoyé, les données envoyées sont ac
 
 Vous pouvez configurer une action d’envoi dans la section **[!UICONTROL Envoi]** des propriétés du conteneur de formulaire adaptatif, dans la zone latérale.
 
-![Configuration de l’action Envoyer](assets/thank-you-setting.png)
+![Configuration de l’action d’envoi](assets/thank-you-setting.png)
 **Figure :** *Configuration de l’action Envoyer*
 
 Les actions d’envoi par défaut disponibles avec les formulaires adaptatifs sont les suivantes :
@@ -45,11 +45,11 @@ Les actions d’envoi par défaut disponibles avec les formulaires adaptatifs so
 
 >[!NOTE]
 >
->Assurez-vous que la variable [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder exists. Le répertoire est nécessaire pour stocker temporairement des pièces jointes. Si le fichier n’existe pas, créez-le.
+>Vérifiez que le dossier [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM pas. Le répertoire est nécessaire pour stocker temporairement des pièces jointes. Si le fichier n’existe pas, créez-le.
 
 >[!CAUTION]
 >
->Si vous [prefill](/help/forms/using/prepopulate-adaptive-form-fields.md) un modèle de formulaire, un modèle de données de formulaire ou un formulaire adaptatif basé sur un schéma avec une plainte de données XML ou JSON à un schéma (schéma XML, schéma JSON, modèle de formulaire ou modèle de données de formulaire) qui est que les données ne contiennent pas &lt;afdata>, &lt;afbounddata>, et &lt;/afunbounddata> balises, puis les données des champs non liés (les champs non liés sont des champs de formulaire adaptatif sans [bindref](/help/forms/using/prepopulate-adaptive-form-fields.md) ) du formulaire adaptatif est perdu.
+>Si vous [préremplissez](/help/forms/using/prepopulate-adaptive-form-fields.md) un modèle de formulaire, un modèle de données de formulaire ou un formulaire adaptatif basé sur un schéma avec des données XML ou JSON conformes à un schéma (schéma XML, schéma JSON, modèle de formulaire ou modèle de données de formulaire) présentant des données ne contenant pas les balises &lt;afData>, &lt;afBoundData> et &lt;/afUnboundData>, les données des champs illimités (les champs illimités sont les champs de formulaire adaptatif sans la propriété [bindref](/help/forms/using/prepopulate-adaptive-form-fields.md)) du formulaire adaptatif sont perdues.
 
 Vous pouvez entrer une action d’envoi personnalisée pour les formulaires adaptatifs afin de répondre à votre cas d’utilisation. Pour plus d’informations, voir [Création d’une action Envoyer personnalisée pour les formulaires adaptatifs](/help/forms/using/custom-submit-action-form.md).
 
@@ -76,7 +76,7 @@ Utilisez l’action **[!UICONTROL Envoyer vers le point d’entrée REST]** pour
 
 Pour transmettre des données à un serveur interne, indiquez le chemin de la ressource. Les données sont transmises selon le chemin de la ressource. Par exemple : /content/restEndPoint. Pour de telles requêtes de transmission, les informations d’authentification de la requête d’envoi sont utilisées.
 
-Pour transmettre des données à un serveur externe, indiquez une URL. Le format de l’URL est https:// host:port/path_to_rest_end_point. Assurez-vous de configurer le chemin pour que la requête POST soit traitée anonymement.
+Pour transmettre des données à un serveur externe, indiquez une URL. Le format de l’URL est le suivant : https://host:port/path_to_rest_end_point. Assurez-vous de configurer le chemin pour que la requête POST soit traitée anonymement.
 
 ![Mappage pour la transmission des valeurs de champs sous forme de paramètres de page de remerciement](assets/post-enabled-actionconfig.png)
 
@@ -95,7 +95,7 @@ Dans cet exemple, `data` contient les données XML et `att` les données des pi�
 
 ## Envoyer un e-mail {#send-email}
 
-Le **[!UICONTROL Envoyer un courrier électronique]** l’action d’envoi envoie un courrier électronique à un ou plusieurs destinataires lors de l’envoi réussi du formulaire. Le message généré peut contenir des données de formulaire dans un format prédéfini.
+L’action d’envoi **[!UICONTROL Envoyer un e-mail]** envoie un message électronique à un ou plusieurs destinataires lors d’un envoi réussi du formulaire. Le message généré peut contenir des données de formulaire dans un format prédéfini.
 
 >[!NOTE]
 Tous les champs de formulaire doivent avoir des noms d’élément différents, même s’ils sont définis sur des panneaux différents, afin d’inclure les données de formulaire dans un message électronique.
@@ -114,7 +114,7 @@ Pour plus d’informations sur la configuration de l’action d’envoi Processu
 
 ## Envoyer à l’aide du modèle de données de formulaire {#submit-using-form-data-model}
 
-Le **[!UICONTROL Envoyer à l’aide du modèle de données de formulaire]** action d’envoi écrit les données de formulaire adaptatif envoyées pour l’objet de modèle de données spécifié dans un modèle de données de formulaire dans sa source de données. Lors de la configuration de l’action d’envoi, vous pouvez sélectionner un objet de modèle de données dont vous souhaitez écrire les données envoyées dans sa source de données.
+L’action d’envoi **[!UICONTROL Envoyer à l’aide du modèle de données de formulaire]** écrit les données de formulaire adaptatif envoyés pour l’objet de modèle de données spécifié dans un modèle de données de formulaire vers sa source de données. Lors de la configuration de l’action d’envoi, vous pouvez sélectionner un objet de modèle de données dont vous souhaitez écrire les données envoyées dans sa source de données.
 
 En outre, vous pouvez envoyer une pièce jointe de formulaire à l’aide d’un modèle de données de formulaire et d’un document d’enregistrement vers la source de données.
 
@@ -168,4 +168,4 @@ L’auteur peut configurer la bibliothèque personnalisée JavaScript pour chaqu
 
 Dans le cadre de la sécurité AEM et des conseils de renforcement, configurez les pages d’erreur personnalisées telles que 404.jsp et 500.jsp. Ces gestionnaires sont appelés lorsque les erreurs 404 ou 500 s’affichent au moment d’envoyer un formulaire. Les gestionnaires sont également appelés lorsque ces codes d’erreur sont déclenchés sur le nœud de publication.
 
-Pour plus d’informations, voir [Personnalisation des pages affichées par le gestionnaire d’erreurs](/help/sites-developing/customizing-errorhandler-pages.md).
+Pour plus d’informations, voir [Personnaliser les pages affichées par le gestionnaire d’erreurs](/help/sites-developing/customizing-errorhandler-pages.md).

@@ -10,7 +10,7 @@ exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4542'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 
 ## Étapes de processus Forms {#forms-workflow-steps}
 
-Les étapes de processus Forms effectuent des opérations spécifiques à AEM Forms dans un processus AEM. Ces étapes vous permettent de créer rapidement des formulaires adaptatifs à partir de processus basés sur l’utilisation de Forms on OSGi. Ces processus peuvent être utilisés pour développer des processus de révision et d’approbation de base, des processus métier internes et sur le pare-feu. Vous pouvez également utiliser les étapes de processus Forms pour lancer les services de document, les intégrer au processus de signature Adobe Sign et effectuer d’autres opérations AEM Forms. Un [module complémentaire AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) est nécessaire pour utiliser ces étapes dans un processus.
+Les étapes de processus Forms effectuent des opérations spécifiques à AEM Forms dans un processus AEM. Ces étapes vous permettent de créer rapidement des formulaires adaptatifs à partir de processus basés sur l’utilisation de Forms on OSGi. Ces processus peuvent être utilisés pour développer des processus de révision et d’approbation de base, des processus métier internes et sur le pare-feu. Vous pouvez également utiliser les étapes de processus Forms pour lancer les services de document, les intégrer au processus de signature Adobe Sign et effectuer d’autres opérations AEM Forms. Un [module complémentaire AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63_fr) est nécessaire pour utiliser ces étapes dans un processus.
 
 ## Étape Affecter une tâche {#assign-task-step}
 
@@ -40,7 +40,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Gestionnaire de dépassement de délai :** sélectionnez le script à exécuter lorsque l’étape Affecter une tâche dépasse l’échéance. Les scripts placés dans le référentiel CRX à l’emplacement [apps]/fd/dashboard/scripts/timeoutHandler peuvent être sélectionnés. Le chemin spécifié n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser.
 * **Sélectionner l’action et ajouter un commentaire depuis la dernière tâche dans Détails de la tâche :** sélectionnez cette option pour afficher la dernière action qui a été effectuée et le dernier commentaire reçu dans la section Détails de la tâche.
 * **Type :** sélectionnez le type de document à remplir lors du lancement du processus. Vous pouvez sélectionner un formulaire adaptatif, un formulaire adaptatif en lecture seule ou un document PDF non interactif.
-* **Use Adaptive Form :** Spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Vous pouvez utiliser le formulaire adaptatif disponible à un chemin absolu, envoyé en tant que charge utile au workflow, ou disponible à un chemin calculé à l’aide d’une variable. Vous pouvez utiliser une variable de type chaîne pour spécifier le chemin d’accès.
+* **Utiliser le formulaire adaptatif :** spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Vous pouvez utiliser le formulaire adaptatif disponible à un chemin absolu, envoyé en tant que charge utile au workflow, ou disponible à un chemin calculé à l’aide d’une variable. Vous pouvez utiliser une variable de type chaîne pour spécifier le chemin d’accès.
 * **Chemin d’accès du formulaire adaptatif** : indiquez le chemin d’accès du formulaire adaptatif. Le champ est disponible lorsque vous utilisez l’option de formulaire adaptatif ou de formulaire adaptatif en lecture seule dans le champ Type conjointement avec l’option de chemin d’accès absolu dans le champ Utiliser le formulaire adaptatif .
 * **Chemin d’accès du fichier PDF :** indiquez le chemin d’accès d’un document PDF non interactif. Le champ apparaît lorsque vous sélectionnez un document PDF non interactif dans le champ Type. Le chemin d’accès est toujours relatif à la charge. Par exemple, [Répertoire_Charge_utile]/Workflow/PDF/credit-card.pdf. Le chemin n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser. Vous devez activer l’option Document d’enregistrement ou posséder des formulaires adaptatifs basés sur un modèle de formulaire pour utiliser l’option Chemin d’accès du fichier PDF.
 * **Une fois la tâche terminée, effectuer le rendu du formulaire adaptatif en tant que** : lorsqu’une tâche est marquée comme terminée, vous pouvez effectuer le rendu du formulaire adaptatif en tant que formulaire adaptatif en lecture seule ou document PDF. Vous devez activer l’option Document d’enregistrement ou posséder des formulaires adaptatifs basés sur un modèle de formulaire pour effectuer le rendu du formulaire adaptatif en tant que Document d’enregistrement.
@@ -72,7 +72,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Actions par défaut :** les actions Prêt à l’emploi, Envoyer, Enregistrer et Réinitialiser sont disponibles. Par défaut, toutes les actions par défaut sont activées.
 * **Variable d’itinéraire :** nom de la variable d’itinéraire. La variable d’itinéraire capture les actions personnalisées qu’un utilisateur sélectionne dans la boîte de réception AEM.
 * **Itinéraires :** une tâche peut se composer de plusieurs itinéraires. Lorsque cette option est sélectionnée dans la boîte de réception AEM, l’itinéraire renvoie une valeur et les branches du processus en fonction de l’itinéraire sélectionné.
-* **Titre**: Indiquez le titre de l’itinéraire. Il s’affiche dans la boîte de réception AEM.
+* **Titre** : indiquez le titre de l’itinéraire. Il s’affiche dans la boîte de réception AEM.
 * **Icône Corail** : indiquez l’attribut HTML d’une icône corail. La bibliothèque Adobe CoralUI fournit un vaste ensemble d’icônes tactiles. Vous pouvez sélectionner et utiliser une icône pour l’itinéraire. Elle s’affiche avec le titre dans la boîte de réception AEM.
 * **Autoriser la personne désignée à ajouter des commentaires** : sélectionnez cette option pour activer les commentaires pour la tâche. Une personne désignée peut ajouter des commentaires à partir de la boîte de réception AEM au moment de l’envoi de la tâche.
 * **Autoriser la personne désignée à ajouter des pièces jointes à la tâche** : sélectionnez cette option pour activer les pièces jointes pour la tâche. Une personne désignée peut ajouter des pièces jointes à partir de la boîte de réception AEM au moment de l’envoi de la tâche.
@@ -98,15 +98,15 @@ L’étape Envoyer un courrier électronique utilise le service de messagerie Da
 
 **Modèle de courrier électronique HTML** : modèle HTML pour le courrier électronique. Vous pouvez spécifier des variables dans un modèle de courrier électronique. L’étape Envoyer un courrier électronique extrait et affiche toutes les variables incluses dans un modèle pour les entrées.
 
-**Métadonnées du modèle de courrier électronique :** La valeur des variables de modèle de courrier électronique peut être une valeur spécifiée par l’utilisateur, le chemin d’accès d’une ressource sur l’auteur ou le serveur de publication, une image ou une propriété de métadonnées de workflow.
+**Métadonnées du modèle d’e-mail :** la valeur des variables du modèle d’e-mail peut être une valeur spécifiée par l’utilisateur, le chemin d’accès d’un actif sur le serveur de création ou de publication, une image ou une propriété de métadonnées de workflow.
 
 * **Littéral** : utilisez cette option lorsque vous connaissez la valeur exacte à spécifier. Par exemple, [example@example.com](mailto:example@example.com).
 
 * **Métadonnées de processus :** utilisez cette option lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de processus. Après avoir sélectionné cette option, saisissez le nom de la propriété des métadonnées dans la zone de texte vide en dessous de l’option Métadonnées de processus. Par exemple, emailAddress.
-* **URL de la ressource :** Utilisez cette option pour incorporer un lien web d’une communication interactive dans le courrier électronique. Après avoir sélectionné l’option, recherchez et sélectionnez la communication interactive à incorporer. Un actif peut résider sur le serveur de création ou de publication.
+* **URL de la ressource :** utilisez cette option pour inclure un lien web d’une communication interactive à l’e-mail. Après avoir sélectionné cette option, recherchez et sélectionnez la communication interactive à inclure. Un actif peut résider sur le serveur de création ou de publication.
 * **Image :** utilisez cette option pour inclure une image au courrier électronique. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est disponible uniquement pour les balises d’image (&lt;img src=&quot;&amp;ast;&quot; />) disponibles dans le modèle d’email.
 
-**Adresse électronique de l’expéditeur/du destinataire :** Sélectionnez la **Littéral** pour spécifier manuellement une adresse électronique ou sélectionner l’option **Récupération à partir des métadonnées de workflow** pour récupérer l’adresse électronique à partir d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérez à partir des métadonnées de processus.**
+**E-mail du destinataire/expéditeur :** sélectionnez l’option **Littéral** pour spécifier manuellement un e-mail ou sélectionnez l’option **Récupérer à partir des métadonnées de workflow** pour récupérer l’e-mail d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérez à partir des métadonnées de processus.**
 
 **Chemin d’accès de la pièce jointe de fichier :** l’actif disponible à l’emplacement spécifié est joint au courrier électronique. Le chemin d’accès de l’actif peut être lié à la charge utile ou au chemin d’accès absolu. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/
 
@@ -118,7 +118,7 @@ Lorsqu’un formulaire est rempli ou envoyé, vous pouvez conserver un enregistr
 
 L’étape Document d’enregistrement possède les propriétés suivantes :
 
-**Utiliser le formulaire adaptatif**: Spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Vous pouvez utiliser le formulaire adaptatif disponible à un chemin absolu, envoyé en tant que charge utile au workflow, ou disponible à un chemin calculé à l’aide d’une variable. Vous pouvez utiliser une variable de type chaîne pour spécifier le chemin d’accès.
+**Utiliser un formulaire adaptatif** : spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Vous pouvez utiliser le formulaire adaptatif disponible à un chemin absolu, envoyé en tant que charge utile au workflow, ou disponible à un chemin calculé à l’aide d’une variable. Vous pouvez utiliser une variable de type chaîne pour spécifier le chemin d’accès.
 
 **Chemin d’accès du formulaire adaptatif** : indiquez le chemin d’accès du formulaire adaptatif. Le champ est disponible lorsque vous utilisez l’option de formulaire adaptatif ou de formulaire adaptatif en lecture seule dans le champ Type conjointement avec l’option de chemin d’accès absolu dans le champ Utiliser le formulaire adaptatif .
 
@@ -232,7 +232,7 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 * **Script ou service pour sélectionner les signataires :** cette option est disponible uniquement si l’option De manière dynamique est sélectionnée dans le champ Sélectionner les signataires. Vous pouvez spécifier un script ECMAScript ou un service pour sélectionner des signataires et des options de vérification pour un document.
 
 * **Détails du signataire :** cette option est disponible uniquement si l’option Manuellement est sélectionnée dans le champ Sélectionner les signataires. Indiquez l’adresse électronique et choisissez une méthode de vérification facultative. Avant de sélectionner une méthode de vérification en 2 étapes, assurez-vous que l’option de vérification correspondante est activée pour le compte Adobe Sign configuré.
-* **Variable d’état :** l’état de signature d’un document activé par Adobe Sign est stocké dans une variable. Spécifiez le nom de la variable d’état (adobeSignStatus). Une variable d’état d’une instance est disponible dans CRXDE à l’adresse /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData contient l’état d’une variable.
+* **Variable d’état :** l’état de signature d’un document activé par Adobe Sign est stocké dans une variable. Spécifiez le nom de la variable d’état (adobeSignStatus). Une variable de statut d’une instance est disponible dans CRXDE à l’emplacement /etc/workflow/instances/&lt;server>/&lt;date-heure>/&lt;instance de modèle de processus>/workItems/&lt;node>/metaData. Elle contient le statut d’une variable.
 * **Chemin d’accès du document signé :** spécifiez l’emplacement pour conserver les documents signés. Vous pouvez choisir de remplacer le fichier de charge utile ou de placer le document signé à un emplacement dans le répertoire de charge utile.
 
 ## Etapes Services de document {#document-services-steps}
@@ -288,17 +288,17 @@ Exécute le fichier DDX sur la carte spécifiée des documents d’entrée et re
 
 ### Etape Optimiser un PDF {#optimize-pdf-step}
 
-Optimise les fichiers PDF en réduisant leur taille. Le résultat de cette conversion est un fichier PDF qui peut être plus petit que ses versions d’origine. Cette opération permet également de convertir des documents PDF vers la version PDF spécifiée dans les paramètres d’optimisation.
+Optimise les fichiers PDF en réduisant leur taille. Le résultat de cette conversion est un fichier PDF moins volumineux que sa version d’origine. Cette opération permet également de convertir des documents PDF vers la version PDF spécifiée dans les paramètres d’optimisation.
 
-Les paramètres d’optimisation spécifient le mode d’optimisation des fichiers. Voici des exemples de paramètres :
+Les paramètres d’optimisation spécifient le mode d’optimisation des fichiers. Voici des exemples de paramètres :
 
-* Version du PDF de Target
+* Version PDF cible :
 * Ignorer les objets tels que les actions JavaScript et les miniatures de page incorporées
 * Ignorer les données utilisateur telles que les commentaires et les pièces jointes
 * Ignorer les paramètres non valides ou inutilisés
-* Compression de données non compressées ou utilisation d’algorithmes de compression plus efficaces
-* Suppression des polices incorporées
-* Définition des valeurs de transparence
+* Compresser les données non compressées ou utiliser des algorithmes de compression plus efficaces
+* Supprimer les polices incorporées
+* Définir les valeurs de transparence
 
 ### Etape Effectuer un rendu de formulaire PDF {#render-pdf-form-step}
 
@@ -313,4 +313,4 @@ Chiffre, signe et certifie un document. AEM Forms prend en charge le chiffremen
 Envoie un document directement à une imprimante. Cette étape prend en charge les systèmes d’accès aux imprimantes suivants :
 
 * **Imprimante accessible directement** : une imprimante installée sur l’ordinateur utilisé est appelée imprimante accessible directement et l’ordinateur est appelé hôte de l’imprimante. Il peut s’agir d’une imprimante locale directement reliée à l’ordinateur.
-* **Imprimante accessible indirectement** : l’imprimante installée sur un serveur d’impression est accessible depuis d’autres ordinateurs. Les technologies de type CUPS (Common Unix® Printing System) et le protocole LPD (Line Printer Daemon) permettent de se connecter à une imprimante réseau. Pour accéder à une imprimante accessible indirectement, indiquez l’adresse IP ou le nom d’hôte du serveur d’impression. Ainsi, vous pouvez envoyer un document vers un URI LPD lorsqu’un protocole LDP s’exécute sur le réseau. Ce système vous permet d’acheminer le document vers n’importe quelle imprimante connectée au réseau qui exécute un protocole LDP.
+* **Imprimante accessible indirectement** : l’imprimante installée sur un serveur d’impression est accessible depuis d’autres ordinateurs. Les technologies de type CUPS (Common Unix® Printing System) et le protocole LPD (Line Printer Daemon) permettent de se connecter à une imprimante réseau. Pour accéder à une imprimante accessible indirectement, vous devez indiquer l’adresse IP ou le nom d’hôte du serveur d’impression. Ainsi, vous pouvez envoyer un document vers un URI LPD lorsqu’un protocole LDP s’exécute sur le réseau. Ce système vous permet d’acheminer le document vers n’importe quelle imprimante connectée au réseau qui exécute un protocole LDP.

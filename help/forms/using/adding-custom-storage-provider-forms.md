@@ -13,7 +13,7 @@ exl-id: 22f78940-de5f-4e16-b1f8-c3762d81802b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 73%
 
 AEM Forms vous permet d’enregistrer un formulaire sous forme de brouillon. La fonctionnalité de brouillon vous permet de mettre à jour un formulaire de travail en cours, que vous pouvez remplir et envoyer ultérieurement sur n’importe quel périphérique.
 
-Par défaut, AEM Forms stocke les données utilisateur associées au brouillon et à l’envoi d’un formulaire dans la variable `/content/forms/fp` sur l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Par exemple, vous pouvez stocker des données utilisateur dans un magasin de données.
+Par défaut, AEM Forms stocke les données d’utilisateur associées au brouillon et à l’envoi d’un formulaire dans le nœud `/content/forms/fp` de l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Par exemple, vous pouvez stocker des données utilisateur dans un magasin de données.
 
 ## Prérequis  {#prerequisites}
 
-* Activer [Composants de Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
-* Créez un [page Forms Portal](/help/forms/using/creating-form-portal-page.md)
-* Activer [formulaires adaptatifs pour le portail de formulaires](/help/forms/using/draft-submission-component.md)
-* En savoir plus [détails d’implémentation du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Activer [Composants du portail Formulaires](/help/forms/using/enabling-forms-portal-components.md)
+* Créer une [page du portail Formulaires](/help/forms/using/creating-form-portal-page.md)
+* Activer les [formulaires adaptatifs pour le portail Formulaires](/help/forms/using/draft-submission-component.md)
+* En savoir plus sur les [détails d’implémentation du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Service de données de brouillon {#draft-data-service}
 
@@ -184,7 +184,7 @@ public interface SubmitDataService {
 }
 ```
 
-Le portail Forms utilise le concept d’identificateur unique universel (UUID) pour générer un identificateur unique pour chaque brouillon et formulaire envoyé. Vous pouvez également générer un identifiant unique de votre choix. Vous pouvez mettre en oeuvre l’interface FPKeyGeneratorService, remplacer ses méthodes et développer une logique personnalisée afin de générer un identifiant unique personnalisé pour chaque brouillon et formulaire envoyé. En outre, définissez le rang de service de l’implémentation de génération d’ID personnalisé sur une valeur supérieure à 0. Cela garantit que l’implémentation personnalisée est utilisée à la place de l’implémentation par défaut.
+Le portail Forms utilise le concept d’identificateur unique universel (UUID) pour générer un identificateur unique pour chaque brouillon et formulaire envoyé. Vous pouvez également générer un identifiant unique de votre choix. Vous pouvez implémenter l’interface FPKeyGeneratorService, remplacer ses méthodes et développer une logique personnalisée pour générer un identifiant unique personnalisé pour chaque brouillon et formulaire envoyé. En outre, définissez le rang de service de l’implémentation de génération d’ID personnalisé sur une valeur supérieure à 0. Cela garantit que l’implémentation personnalisée est utilisée à la place de l’implémentation par défaut.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -203,7 +203,7 @@ Vous pouvez utiliser l’annotation ci-dessous pour augmenter le classement du s
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Pour utiliser l’annotation ci-dessus, importez les éléments suivants dans votre projet :
+Pour utiliser l’annotation ci-dessus, importez les éléments suivants dans votre projet :
 
 ```
 import org.apache.felix.scr.annotations.Properties;

@@ -13,7 +13,7 @@ exl-id: 7ddd5a4d-2b46-4408-b241-81e16cfead3c
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -45,4 +45,4 @@ Pour plus d’informations sur les balises prises en charge, voir la définition
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.

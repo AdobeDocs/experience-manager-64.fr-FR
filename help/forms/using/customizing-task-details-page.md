@@ -12,7 +12,7 @@ exl-id: de97e6f7-25bf-462b-b67d-0d3fbd86a321
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 61%
+ht-degree: 91%
 
 ---
 
@@ -28,9 +28,9 @@ Vous pouvez ajouter les informations ci-dessous à la page Détails de la tâche
 Pour personnaliser la page Détails de la tâche :
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md) 
-1. Pour afficher d’autres informations, ajoutez les paires clé-valeur correspondantes à la variable `translation.json` fichier à l’emplacement `todo`block > `details`block > `app`block > [ `required`block].
+1. Pour afficher des informations supplémentaires, ajoutez les paires clé-valeur correspondantes au fichier `translation.json` dans le bloc `todo` > bloc `details` > bloc `app` > [bloc `required`].
 
-   Le [ `required`block] fait référence aux blocs disponibles, tels que le bloc de tâche pour les informations sur la tâche, le bloc de processus pour les informations sur le processus et le bloc de tâche en attente pour les informations sur les tâches en attente.
+   Le [ bloc `required` ] fait référence aux blocs disponibles tels que le bloc de tâche pour les informations de tâche, le bloc de processus pour le traitement des informations et le bloc de tâches en attente pour les informations de tâches en attente.
 
    Par exemple, pour ajouter des informations sur la sélection d’itinéraire requise dans la page Détails de la tâche, vous pouvez ajouter la paire clé-valeur suivante dans le bloc de tâche :
 
@@ -80,10 +80,10 @@ Pour personnaliser la page Détails de la tâche :
 
 1. Ouvrez /apps/ws/js/registry.js pour le modifier.
 
-   Rechercher et remplacer `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` avec `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
+   Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` par `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
 
 >[!NOTE]
 >
 >Pour personnaliser la page des détails de la tâche avec les tâches créées dans l’onglet **Démarrer le processus** de l’espace de travail AEM Forms, ajoutez les nouvelles informations à `/apps/ws/js/runtime/templates/startprocess.html`.
 >
->Pour ajouter de nouveaux styles pour les informations ajoutées dans la page de détails, modifiez le fichier CSS à l’aide de la fonction *Modifications de l’interface utilisateur* dans [Personnalisation de Workspace](/help/forms/using/changing-locale-user-interface.md).
+>Pour ajouter de nouveaux styles pour les informations ajoutées dans la page Détails, modifiez le fichier CSS à l’aide de la section *Modifications de l’interface utilisateur* dans [Personnalisation de l’espace de travail](/help/forms/using/changing-locale-user-interface.md).

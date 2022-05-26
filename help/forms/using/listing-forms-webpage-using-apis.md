@@ -8,19 +8,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
-source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+exl-id: e42b7cdf-9a70-4ff6-8283-7bbc3690ca05
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '693'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
-
 
 # Affichage d’une liste des formulaires sur une page Web à l’aide d’API {#listing-forms-on-a-web-page-using-apis}
 
 AEM Forms fournit une API de recherche basée sur REST que les développeurs Web peuvent utiliser pour interroger et récupérer un jeu de formulaires qui répond à leurs critères de recherche. Vous pouvez utiliser des API pour effectuer des recherches dans des formulaires en fonction de divers filtres. L’objet de réponse contient des attributs et propriétés de formulaire, ainsi que des points de fin de rendu.
 
-Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande de GET au serveur à l’adresse `https://[server]:[port]/libs/fd/fm/content/manage.json` avec les paramètres de requête décrits ci-dessous.
+Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requête GET au serveur à l’adresse `https://[server]:[port]/libs/fd/fm/content/manage.json` avec les paramètres de requête décrits ci-dessous.
 
 ## Paramètres de requête {#query-parameters}
 
@@ -45,7 +45,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
    <td><p>Indique les propriétés à récupérer avec les ressources. Vous pouvez utiliser l’astérisque (*) pour récupérer toutes les propriétés simultanément. Utilisez la barre verticale (|) pour indiquer plusieurs propriétés. </p> <p>Par exemple, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Remarque</strong> : </p>
     <ul>
      <li><em>Les propriétés telles que l’ID, le chemin et le nom sont toujours récupérées. </em></li>
-     <li><em>Chaque ressource possède un ensemble de propriétés différent. Les propriétés telles que formUrl, pdfUrl et guideUrl ne dépendent pas de l’attribut cutPoints. Ces propriétés dépendent du type de ressource et sont récupérées en conséquence. </em></li>
+     <li><em>Chaque ressource possède un ensemble de propriétés différent. Les propriétés telles que formUrl, pdfUrl et guideUrl ne dépendent pas de l’attribut cutPoints. Elles dépendent du type de ressource et sont récupérées en conséquence. </em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -67,7 +67,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
   </tr>
   <tr>
    <td>returnCount</td>
-   <td>Indique s’il faut renvoyer ou non les résultats de recherche correspondant aux critères donnés. </td>
+   <td>Indique s’il faut renvoyer ou non les résultats de recherche correspondant aux critères spécifiés. </td>
   </tr>
   <tr>
    <td>statements</td>
@@ -81,7 +81,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
      <li><strong>value</strong> : indique la valeur de la propriété à rechercher.</li>
      <li><strong>operator</strong> : indique l’opérateur à appliquer au cours de la recherche. Les opérateurs ci-dessous sont pris en charge :
       <ul>
-       <li>EQ - Est égal à </li>
+       <li>EQ - Est égal à </li>
        <li>NEQ – Est différent de </li>
        <li>GT – Est supérieur à</li>
        <li>LT – Est inférieur à</li>
@@ -98,7 +98,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
   </tr>
   <tr>
    <td>orderings<br /> </td>
-   <td><p>Indique les critères d’ordre relatifs aux résultats de la recherche. Les critères sont définis au format JSON. Vous pouvez classer les résultats de la recherche selon plusieurs champs. Les résultats sont classés selon l’ordre d’apparition des champs dans la requête.</p> <p>Par exemple,</p> <p>Pour récupérer les résultats de la requête classés par propriété de titre dans l’ordre croissant, ajoutez le paramètre suivant : </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>Indique les critères d’ordre relatifs aux résultats de la recherche. Les critères sont définis au format JSON. Vous pouvez classer les résultats de la recherche selon plusieurs champs. Les résultats sont classés selon l’ordre d’apparition des champs dans la requête.</p> <p>Par exemple,</p> <p>Pour récupérer les résultats de la requête selon la propriété de titre dans l’ordre croissant, ajoutez le paramètre suivant : </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");
@@ -106,16 +106,16 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
      <li><strong>name</strong> : indique le nom de la propriété à utiliser pour classer les résultats de la recherche.</li>
-     <li><strong>criteria</strong> : indique l’ordre des résultats. L’attribut order accepte les valeurs suivantes :
+     <li><strong>criteria</strong> : indique l’ordre des résultats. L’attribut d’ordre accepte les valeurs suivantes :
       <ul>
        <li>ASC – Utilisez l’attribut ASC pour classer les résultats dans l’ordre croissant.<br /> </li>
-       <li>DES - Utilisez DES pour organiser les résultats dans l’ordre décroissant.</li>
+       <li>DES - Utilisez l’attribut DES pour classer les résultats dans l’ordre décroissant.</li>
       </ul> </li>
     </ul> </td>
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Indique si le contenu binaire doit être récupéré ou non. Le <code>includeXdp</code> s’applique aux ressources de type <code>FORM</code>, <code>PDFFORM</code>, et <code>PRINTFORM</code>.</td>
+   <td>Indique si le contenu binaire doit être récupéré ou non. L’attribut <code>includeXdp</code> s’applique aux ressources de type <code>FORM</code>, <code>PDFFORM</code> et <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
@@ -170,11 +170,11 @@ orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 
 ## Articles connexes
 
-* [Activation des composants de Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
-* [Page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
+* [Activer des composants du portail Formulaires](/help/forms/using/enabling-forms-portal-components.md)
+* [Créer une page du portail Formulaires](/help/forms/using/creating-form-portal-page.md)
 * [Affichage de la liste des formulaires sur une page Web à l’aide d’API](/help/forms/using/listing-forms-webpage-using-apis.md)
-* [Utiliser le composant Drafts &amp; Submissions](/help/forms/using/draft-submission-component.md)
-* [Personnalisation du stockage des brouillons et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
+* [Utiliser le composant Brouillons et Envois](/help/forms/using/draft-submission-component.md)
+* [Personnaliser le stockage des brouillons de formulaires et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
 * [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](/help/forms/using/integrate-draft-submission-database.md)
 * [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md)

@@ -12,7 +12,7 @@ exl-id: bbe10952-d6a7-4adc-bab9-388c1ee8e56a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 77%
+ht-degree: 98%
 
 ---
 
@@ -30,11 +30,11 @@ Pour chaque formulaire, les auteurs peuvent configurer une page vers laquelle le
 ![Configuration de la page de redirection](assets/thank-you-setting-1.png)
 **Figure :** *Configuration de la page de redirection*
 
-Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. Pour toutes les actions d’envoi disponibles, `status` et `owner` Les paramètres sont transmis. Outre ces deux paramètres, des paramètres supplémentaires sont transmis pour les actions d’envoi suivantes :
+Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. Les paramètres `status` et `owner` sont transmis pour toutes les actions d’envoi disponibles. Outre ces deux paramètres, des paramètres supplémentaires sont transmis pour les actions d’envoi suivantes :
 
-* **Action Stocker le contenu** (obsolète) : `contentPath`: le chemin d’accès du noeud dans le référentiel où sont stockées les données envoyées est transmis.
+* **Action Stocker le contenu** (obsolète) : `contentPath`--le chemin d’accès du nœud dans le référentiel où sont stockées les données envoyées est transmis.
 
-* **Action du PDF de magasin** (obsolète) : `contentPath`—des données envoyées et du chemin d’accès au noeud qui stocke le fichier du PDF dans le référentiel—est transmis.
+* **Action Stocker le PDF** (obsolète) : `contentPath`--des données envoyées et le chemin d’accès au nœud de stockage du fichier PDF dans le référentiel sont transmis.
 
 * **Flux de travail Envoyer aux formulaires** : les paramètres de sortie renvoyés à partir du flux de travail des formulaires sont transmis.
 

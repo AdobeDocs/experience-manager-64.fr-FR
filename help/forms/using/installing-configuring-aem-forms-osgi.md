@@ -12,7 +12,7 @@ exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1799'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ AEM Forms est une plate-forme d’entreprise performante. La capture de donnée
 
 Le package du module complémentaire AEM Forms est une application déployée sur AEM. Vous n’avez besoin que d’un minimum d’une instance de création AEM et d’une instance de publication AEM pour exécuter les fonctionnalités de capture de données AEM Forms. La topologie suivante est suggérée pour exécuter les fonctionnalités de capture de données AEM Forms. Pour plus d’informations sur la topologie, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![recommandé-topology](assets/recommended-topology.png)
+![recommened-topology](assets/recommended-topology.png)
 
 ## Configuration requise {#system-requirements}
 
@@ -45,12 +45,12 @@ Avant de commencer à installer et configurer la fonctionnalité de capture de d
 * Le matériel et l’infrastructure logicielle sont en place. Pour obtenir une liste détaillée des matériels et logiciels pris en charge, voir [Conditions techniques applicables](/help/sites-deploying/technical-requirements.md).
 
 * Le chemin d’installation de l’instance AEM ne contient aucun espace blanc.
-* Une instance AEM est en cours d’utilisation. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. Vous avez besoin d’au moins deux instances [AEM (une instance de création et une instance de publication) ](/help/sites-deploying/deploy.md) pour exécuter les fonctionnalités de capture de données AEM Forms :
+* Une instance AEM est en cours d’utilisation. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. Vous avez besoin d’au moins deux instances [AEM (une instance de création et une instance de publication)](/help/sites-deploying/deploy.md) pour exécuter les fonctionnalités de capture de données AEM Forms :
 
    * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site Web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
    * **Publication** : instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
 
-* Les besoins en mémoire sont satisfaits. Le module complémentaire AEM Forms  nécessite :
+* Les besoins en mémoire sont satisfaits. Le module complémentaire AEM Forms nécessite :
 
    * 15 Go d’espace temporaire pour les installations Microsoft Windows.
    * 6 Go d’espace temporaire pour les installations Unix.
@@ -95,14 +95,14 @@ Le package du module complémentaire AEM Forms est une application déployée s
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
-   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser la variable **[!UICONTROL Recherche de téléchargements]** pour filtrer les résultats.
-1. Appuyez sur le nom du package correspondant à votre système d’exploitation, puis sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
+1. Appuyez sur le nom applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis appuyez sur **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
-1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
+1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
-   Vous pouvez également télécharger le package à partir du lien direct répertorié dans le [Versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) article.
+   Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Version d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
 
-1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans la variable [AEM-Installation-Directory]/crx-quickstart/logs/error.log et le journal est stable.
+1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier [repertoire-installation-AEM]/crx-quickstart/logs/error.log et que le journal soit stable.
 1. Répétez les étapes 1 à 7 sur toutes les instances de création et de publication.
 
 ## Configurations post-installation {#post-installation-configurations}
@@ -113,12 +113,12 @@ AEM Forms comporte quelques configurations obligatoires et facultatives. Les con
 
 #### Configuration des bibliothèques RSA et BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
-Effectuez les étapes suivantes sur toutes les instances de création et de publication pour déléguer le démarrage des bibliothèques :
+Pour déléguer le démarrage des bibliothèques, procédez comme suit sur toutes les instances dʼauteur et de publication :
 
 1. Arrêtez l’instance AEM sous-jacente.
-1. Ouvrez le [Répertoire d’installation AEM]\crx-quickstart\conf\sling.properties pour modification.
+1. Ouvrez le fichier [répertoire d’installation AEM]\crx-quickstart\conf\sling.properties pour le modifier.
 
-   Si vous avez utilisé [Répertoire d’installation AEM]\crx-quickstart\bin\start.bat pour commencer AEM, puis modifiez le fichier sling.properties situé à l’adresse [AEM_root]\crx-quickstart\.
+   Si vous utilisiez [répertoire d’installation AEM]\crx-quickstart\bin\start.bat pour démarrer AEM, modifiez le fichier sling.properties dans [racine_AEM]\crx-quickstart\.
 
 1. Ajoutez les propriétés suivantes au fichier sling.properties :
 
@@ -127,7 +127,7 @@ Effectuez les étapes suivantes sur toutes les instances de création et de publ
    sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
    ```
 
-1. (AIX uniquement) Ajoutez les propriétés suivantes au fichier sling.properties :
+1. (AIX uniquement) Ajoutez les propriétés suivantes au fichier sling.properties :
 
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
@@ -138,18 +138,18 @@ Effectuez les étapes suivantes sur toutes les instances de création et de publ
 
 #### Configurer l’agent de sérialisation {#configure-the-serialization-agent}
 
-Effectuez les étapes suivantes sur toutes les instances de création et de publication pour ajouter le package à la liste autorisée :
+Pour autoriser le package, procédez comme suit sur toutes les instances dʼauteur et de publication :
 
 1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. L’URL par défaut est `https://[server]:[port]/system/console/configMgr`.
 1. Recherchez et ouvrez la **[!UICONTROL configuration du pare-feu de désérialisation]**.
-1. Ajoutez la variable **[!UICONTROL sun.util.calendar]** vers le module **[!UICONTROL liste autorisée]** champ . Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Ajoutez le package **[!UICONTROL sun.util.calendar]** au champ **[!UICONTROL Placer sur la liste autorisée]**. Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Répétez les étapes 1 à 3 sur toutes les instances de création et de publication.
 
 ### Configurations post-installation facultatives {#optional-post-installation-configurations}
 
 #### La configuration de Dispatcher {#configure-dispatcher}
 
-Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pour AEM. Le répartiteur AEM aide également à protéger le serveur AEM des attaques.  Vous pouvez augmenter la sécurité de votre instance AEM en utilisant le répartiteur conjointement avec un serveur Web de niveau élevé. Si vous utilisez [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), puis effectuez les configurations suivantes pour AEM Forms :
+Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pour AEM. Le répartiteur AEM aide également à protéger le serveur AEM des attaques. Vous pouvez augmenter la sécurité de votre instance AEM en utilisant le répartiteur conjointement avec un serveur Web de niveau élevé. Si vous utilisez [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), effectuez les configurations suivantes pour AEM Forms :
 
 1. Configurez l’accès à AEM Forms:
 
@@ -161,7 +161,7 @@ Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pou
 
 1. Configurez le service de filtrage des référents :
 
-   Connectez-vous à Configuration Manager d’Apache Felix en tant qu’administrateur. L’URL par défaut du gestionnaire de configuration est : `https://[server]:[port_number]/system/console/configMgr`. Dans le menu **[!UICONTROL Configurations]**, sélectionnez l’option **[!UICONTROL Apache Sling Referrer Filter.]** Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **[!UICONTROL Enregistrer]**. Le format de l’entrée est `https://[server]:[port]`.
+   Connectez-vous à Configuration Manager d’Apache Felix en tant qu’administrateur. L’URL par défaut du gestionnaire de configuration est `https://[server]:[port_number]/system/console/configMgr`. Dans le menu **[!UICONTROL Configurations]**, sélectionnez l’option **[!UICONTROL Apache Sling Referrer Filter.]** Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **[!UICONTROL Enregistrer]**. Le format de l’entrée est `https://[server]:[port]`.
 
 #### Configuration du cache {#configure-cache}
 
@@ -170,10 +170,10 @@ La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès
 * Lorsque vous utilisez le cache de formulaires adaptatifs, utilisez le [répartiteur AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) pour mettre en cache les bibliothèques client (CSS et Javascript) d’un formulaire adaptatif. 
 * Lors du développement des composants personnalisés, sur le serveur utilisé pour le développement, gardez le cache de formulaires adaptatifs désactivé.
 
-Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
+Pour configurer la mise en cache des formulaires adaptatifs, procédez comme suit :
 
 1. Accédez à la page de configuration de la console web AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
-1. Cliquez sur la **[!UICONTROL configuration de canal web de communication interactive de formulaire adaptatif]** pour éditer ses valeurs de configuration. Dans la boîte de dialogue Modifier les valeurs de configuration, indiquez le nombre maximal de formulaires ou de documents qu’une instance du serveur AEM Forms peut mettre en cache dans le **[!UICONTROL Nombre de Forms adaptatives]** champ . La valeur par défaut est 100. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur la **[!UICONTROL configuration de canal web de communication interactive de formulaire adaptatif]** pour éditer ses valeurs de configuration. Dans la boîte de dialogue Modifier les valeurs de configuration, spécifiez le nombre maximal de formulaires ou de documents qu’une instance du serveur AEM Forms peut mettre en cache le champ **[!UICONTROL Nombre de formulaires adaptatifs]**. La valeur par défaut est 100. Cliquez sur **[!UICONTROL Enregistrer]**.
 
    >[!NOTE]
    >
@@ -181,7 +181,7 @@ Effectuez les étapes suivantes pour configurer le cache de formulaires adaptati
 
 #### Configuration de la communication SSL pour le modèle de données de formulaire {#configure-ssl-communcation-for-form-data-model}
 
-Vous pouvez activer la communication SSL pour le modèle de données de formulaire. Pour activer la communication SSL pour le modèle de données de formulaire, avant de démarrer une instance AEM Forms, ajoutez des certificats au Trust Store Java de toutes les instances. Vous pouvez exécuter la commande ci-dessous pour ajouter les certificats : &quot;
+Vous pouvez activer la communication SSL pour le modèle de données de formulaire. Pour activer la communication SSL pour le modèle de données de formulaire, avant de démarrer une instance AEM Forms, ajoutez des certificats au Trust Store Java de toutes les instances. Vous pouvez exécuter la commande ci-dessous pour ajouter les certificats :
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 

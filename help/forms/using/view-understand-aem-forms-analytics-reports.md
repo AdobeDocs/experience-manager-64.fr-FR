@@ -12,7 +12,7 @@ exl-id: 0483b6ed-676a-4272-a00e-23d53a979b07
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ Adobe Experience Manager Forms s’intègre à Adobe Analytics, ce qui permet la
 
 ## Configuration de l’analyse {#setting-up-analytics}
 
-La fonctionnalité d’analyse des formulaires AEM est disponible dans le module complémentaire des formulaires AEM. Pour plus d’informations sur l’installation du module complémentaire, voir [Installation et configuration d’AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+La fonctionnalité d’analyse des AEM Forms est disponible dans le module complémentaire des AEM Forms. Pour plus d’informations sur l’installation du module complémentaire, voir [Installation et configuration d’AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
-Outre le module complémentaire, vous devez disposer d’un compte Adobe Analytics. Pour plus d’informations sur la solution, voir [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
+Outre le module complémentaire, vous devez disposer d’un compte Adobe Analytics. Pour plus d’informations sur la solution, voir [Adobe Analytics](https://www.adobe.com/fr/solutions/digital-analytics.html).
 
 Une fois que vous disposez du module complémentaire AEM Forms et d’un compte Adobe Analytics, intégrez le compte Adobe Analytics à AEM Forms et activez le suivi sur vos formulaires ou documents comme décrit à la section [Configuration des analyses et des rapports](/help/forms/using/configure-analytics-forms-documents.md).
 
@@ -58,13 +58,13 @@ Pour afficher les rapports d’analyse, procédez comme suit :
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**A.** Rapport Analytics, commande
+**A.** Commande de rapport d’analyse
 
 AEM Forms affiche des rapports d’analyse pour le formulaire et chaque panneau de celui-ci, comme illustré dans le rapport de synthèse ci-dessous.
 
 ![Rapport de synthèse d’un formulaire adaptatif](assets/analyticsdashboard_callout.png)
 
-**A.** Conversions **B.** Synthèse au niveau du formulaire **C.** Synthèse au niveau du panneau **D.** Navigateurs des visiteurs - filtre **E.** Système d’exploitation des visiteurs - filtre **F.** Langue des visiteurs - filtre
+**A.** Conversions **B.** Synthèse de niveau formulaire **C.** Synthèse de niveau panneau **D.** Navigateurs des visiteurs - filtre **E.** Système d’exploitation des visiteurs - filtre **F.** Langue des visiteurs - filtre
 
 Par défaut, le rapport affiche l’analyse des sept derniers jours. Vous pouvez afficher des récapitulatifs pour les 15 derniers jours, le dernier mois et ainsi de suite, ou bien indiquer une période.
 
@@ -72,7 +72,7 @@ Par défaut, le rapport affiche l’analyse des sept derniers jours. Vous pouvez
 >
 >Les options telles que 7 derniers jours et 15 derniers jours n’incluent pas les données pour le jour où vous générez le rapport d’analyse. Pour inclure les données d’aujourd’hui, vous devez spécifier la plage de dates incluant le jour d’aujourd’hui, puis exécuter le rapport.
 
-![période](assets/date-range.png)
+![date-range](assets/date-range.png)
 
 ## Graphique des conversions pour les formulaires adaptatifs et HTML5 {#conversions-graph-for-adaptive-and-html-forms}
 
@@ -94,7 +94,7 @@ La section de synthèse de niveau formulaire donne des informations sur les perf
 * **Brouillons** : nombre de fois que le formulaire a été enregistré en tant que brouillon. 
 * **Envois** : nombre de fois que le formulaire a été envoyé.
 * **Abandons** : nombre de fois que les utilisateurs ont commencé à remplir le formulaire sans le compléter.
-* **Visiteurs uniques**: Nombre de fois où le formulaire est &quot;rendu par des visiteurs uniques. Pour plus d’informations sur les visiteurs uniques, voir [Visiteurs uniques, visites et comportement des clients](https://www.adobe.com/fr/marketing-cloud/social-media-marketing.html). 
+* **Visiteurs uniques :** nombre de fois que le formulaire est généré par des visiteurs uniques. Pour plus d’informations sur les visiteurs uniques, voir [Visiteurs uniques, visites et comportement des clients](https://helpx.adobe.com/fr/analytics/kb/unique-visitors-visitor-behavior.html). 
 
 ![Rapport d’analyse de synthèse de niveau formulaire développé](assets/analytics-report.png)
 
@@ -104,9 +104,9 @@ La section synthèse de niveau panneau fournit les informations suivantes sur ch
 
 * **Durée moyenne de remplissage** : temps moyen passé au remplissage du panneau, que le formulaire soit soumis ou non
 
-* **Erreurs rencontrées** : nombre moyen d’erreurs rencontrées par les utilisateurs sur des champs d’un panneau. Erreurs rencontrées en divisant le nombre total d’erreurs dans un champ par le nombre de rendus du formulaire.
+* **Erreurs rencontrées** : nombre moyen d’erreurs rencontrées par les utilisateurs sur des champs d’un panneau. La valeur Erreurs rencontrées est calculée en divisant le nombre total d’erreurs rencontrées dans un champ par le nombre de rendus du formulaire.
 
-* **Aide accessible** : nombre moyen de fois qu’un utilisateur a accédé à l’aide contextuelle pour les champs du panneau. L’accès à l’aide est effectué en divisant le nombre total d’accès à l’aide pour un champ par le nombre de rendus du formulaire.
+* **Aide accessible** : nombre moyen de fois qu’un utilisateur a accédé à l’aide contextuelle pour les champs du panneau. La valeur Aide accessible est calculée en divisant le nombre total d’accès à l’aide pour un champ par le nombre de rendus du formulaire.
 
 ### Rapport détaillé de panneau {#detailed-panel-report}
 
@@ -118,7 +118,7 @@ Le rapport détaillé affiche les valeurs de tous les champs du panneau.
 
 Le rapport Panneau se compose de trois onglets :
 
-* **Rapport sur la période** (Par défaut) : Affiche le temps (en secondes) passé à remplir chacun des champs du panneau.
+* **Rapport de temps** (par défaut) : affiche le temps, en nombre de secondes, passé à remplir chacun des champs du panneau.
 * **Rapport d’erreurs** : nombre d’erreurs générées par les utilisateurs qui remplissent les champs
 * **Rapport sur l’aide** : nombre de fois que l’aide d’un champ en particulier a été affiché
 
@@ -134,7 +134,7 @@ Pour filtrer davantage les données d’analyse, vous pouvez cliquer sur une ent
 
 Si vous consultez le rapport Panneau après l’application d’un filtre, les données des rapports sont également affichées selon le filtre appliqué.
 
-  Lorsqu’un filtre est appliqué :
+Lorsqu’un filtre est appliqué :
 
 * Les tableaux de répartition sont à présent en lecture seule, car un seul filtre ne peut être appliqué à la fois.
 * Le tableau du filtre appliqué disparaît.

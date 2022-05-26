@@ -12,7 +12,7 @@ exl-id: ef2ad8e1-5007-4587-97ca-cf21070be9a6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 67%
 
 L’installation et les paramètres par défaut d’AEM Forms permettent la mise à disposition d’un seul espace de travail AEM Forms sur le serveur. Cela dit, vous pouvez être amené à héberger deux instances différentes d’AEM Forms sur un serveur AEM Forms unique. Les deux instances sont accessibles via différentes URL.
 
-Les administrateurs d’AEM Forms personnalisent l’espace de travail afin de créer deux URL différentes et de rendre disponibles deux espaces de travail sur le même serveur. Dans cet article sur la personnalisation, nous supposons que les deux espaces de travail sont accessibles à l’adresse `https://[server]:[port]/lc/ws` et `https://[server]:[port]:/lc/ws2`.
+Les administrateurs d’AEM Forms personnalisent l’espace de travail afin de créer deux URL différentes et de rendre disponibles deux espaces de travail sur le même serveur. Dans cet article sur la personnalisation, nous supposons que les deux espaces de travail sont accessibles aux adresses `https://[server]:[port]/lc/ws` et `https://[server]:[port]:/lc/ws2`.
 
 Procédez comme suit pour configurer l’espace de travail AEM Forms.
 
@@ -29,7 +29,7 @@ Procédez comme suit pour configurer l’espace de travail AEM Forms.
 1. Copiez et collez le nœud ws dans /content. Attribuez au nœud le nom ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**. Dans les propriétés de ce nœud, attribuez à `sling:resourceType` la valeur ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**. 
 
 1. Copiez le dossier ws dans /libs et collez-le dans /apps. Attribuez au dossier le nom ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**. 
-1. Dans `GET.jsp` at `/apps/ws2`, apportez les modifications suivantes au code. Remplacez le code :
+1. Dans `GET.jsp`, sur `/apps/ws2`, effectuez les modifications de code suivantes. Remplacez le code :
 
    ```
    <html lang="en">
@@ -53,7 +53,7 @@ Procédez comme suit pour configurer l’espace de travail AEM Forms.
        <meta http-equiv="refresh" content="0;URL='/lc/apps/ws2/index.html'" />
    ```
 
-1. Dans `registry.js` at `/apps/ws2/js`, modifiez le chemin des modèles pour faire référence aux modèles sur la page `/apps/ws2/js/runtime/templates`. Remplacez le code :
+1. Dans `registry.js`, sur `/apps/ws2/js`, remplacez le chemin des modèles afin de faire référence aux modèles sur `/apps/ws2/js/runtime/templates`. Remplacez le code :
 
    ```css
    "tasklist" : {
@@ -81,16 +81,16 @@ Procédez comme suit pour configurer l’espace de travail AEM Forms.
    }
    ```
 
-1. Dans `userinfo.js` at `/apps/ws2/js/runtime/models` et `/apps/ws2/js/runtime/views`, changer de chaîne `/lc/content/ws` to `lc/content/ws2`.
+1. Dans `userinfo.js`, sur `/apps/ws2/js/runtime/models` et `/apps/ws2/js/runtime/views`, remplacez la chaîne `/lc/content/ws` par `lc/content/ws2`.
 
-1. Dans `/apps/ws2/js/runtime/services/service.js`, modifiez le chemin d’accès dans `getLocalizationData` fonction vers laquelle pointer `/lc/apps/ws2/Locale.html`.
+1. Dans `/apps/ws2/js/runtime/services/service.js`, modifiez le chemin d’accès dans la fonction `getLocalizationData` afin qu’il pointe sur `/lc/apps/ws2/Locale.html`.
 
-1. Pour faire référence à `pdf.html` du nouvel espace de travail, modifiez le chemin d’accès de `pdf.html` in `/apps/ws2/js/runtime/views/forms/pdftaskform.js`.
+1. Pour faire référence à l’élément `pdf.html` du nouvel espace de travail, modifiez le chemin d’accès de `pdf.html` dans `/apps/ws2/js/runtime/views/forms/pdftaskform.js`.
 
-1. Pour faire référence à `pdf.html` du nouvel espace de travail, modifiez les chemins d’accès de `pdf.html` et `WsNextAdapter.swf` in `startprocess.html`, `taskdetails.html`, et `processinstancehistory.html` at `/apps/ws2/js/runtime/templates`.
+1. Pour faire référence à l’élément `pdf.html` du nouvel espace de travail, modifiez les chemins d’accès de `pdf.html` et `WsNextAdapter.swf` dans `startprocess.html`, `taskdetails.html` et `processinstancehistory.html` sur `/apps/ws2/js/runtime/templates`.
 
-1. Copier `/etc/map/ws` et collez-les à l’adresse `/etc/map`. Attribuez le nom ws2 à ce nouveau dossier. Cliquez sur Enregistrer tout.
+1. Copiez le dossier `/etc/map/ws` et collez-le sur `/etc/map`. Attribuez le nom ws2 à ce nouveau dossier. Cliquez sur Enregistrer tout.
 
-1. Dans les propriétés de `ws2`, modifiez la valeur de `sling:redirect` to `content/ws2`.
+1. Dans les propriétés de `ws2`, remplacez la valeur de `sling:redirect` par `content/ws2`.
 
-1. Modifier la valeur de `sling:match` to `^[^/\||]/[^/\||]/ws2$`.
+1. Remplacez la valeur de `sling:match` par `^[^/\||]/[^/\||]/ws2$`.

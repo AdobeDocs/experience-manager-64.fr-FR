@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Gestion des utilisateurs {#user-management}
 
-Le gestionnaire des utilisateurs vous permet également d’activer l’authentification unique (SSO) entre les modules d’AEM forms et les applications protégées par Netegrity SiteMinder, à l’aide du langage SAML (Security Assertion Markup Language). Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d&#39;AEM forms ne sont plus obligatoires et ne s’affichent pas si l’utilisateur est déjà authentifié via le portail d’entreprise.
+Le gestionnaire des utilisateurs vous permet également d’activer l’authentification unique (SSO) entre les modules d’AEM forms et les applications protégées par Netegrity SiteMinder, à l’aide du langage SAML (Security Assertion Markup Language). Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires et ne s’affichent pas si l’utilisateur est déjà authentifié via le portail d’entreprise.
 
 Pour plus d’informations sur l’amélioration des performances de synchronisation de la base de données et de l’annuaire pour DB2, voir [Base de données IBM DB2 : exécution des commandes pour des opérations de maintenance standard](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
@@ -55,4 +55,4 @@ Pour des raisons de sécurité, les utilisateurs disposant de certains types de 
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.

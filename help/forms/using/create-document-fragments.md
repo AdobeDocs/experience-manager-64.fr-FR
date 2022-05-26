@@ -12,7 +12,7 @@ exl-id: 50d93998-6393-4607-b89b-5b97aad530a3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1683'
-ht-degree: 57%
+ht-degree: 97%
 
 ---
 
@@ -22,15 +22,15 @@ Créer des fragments de document pour la communication interactive
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Ce tutoriel est une étape dans la [Créer votre première communication interactive](/help/forms/using/create-your-first-interactive-communication.md) série. Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
+Ce tutoriel fait partie de la série [Création de votre première communication interactive](/help/forms/using/create-your-first-interactive-communication.md). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
 Les fragments de document sont des composants réutilisables d’une correspondance utilisés pour composer une communication interactive. Les fragments de document sont composés des types suivants :
 
-* Texte : un actif de texte est un élément de contenu constitué d’un ou de plusieurs paragraphes de texte. Un paragraphe peut être statique ou dynamique.
-* Liste : la liste est un groupe de fragments de document, y compris du texte, des listes, des conditions et des images.
-* Condition : les conditions vous permettent de définir le contenu à inclure dans la communication interactive en fonction des données reçues du modèle de données de formulaire.
+* Texte : une ressource texte est un élément de contenu comprenant un ou plusieurs paragraphes de texte. Un paragraphe peut être statique ou dynamique.
+* Liste : la liste est un groupe de fragments du document, incluant du texte, des listes, des conditions et des images.
+* Condition : les conditions vous permettent de définir le contenu à inclure dans la communication interactive en fonction des données reçues du formulaire de modèle de données.
 
-Ce tutoriel vous guide tout au long des étapes à suivre pour créer plusieurs fragments de document texte en fonction de l’anatomie fournie dans [Planification de la communication interactive](/help/forms/using/planning-interactive-communications.md) . À la fin de ce didacticiel, vous serez capable de :
+Ce tutoriel vous guide à travers les étapes pour créer plusieurs fragments de document de texte en fonction de la structure fournie à la section [Planifier la communication interactive](/help/forms/using/planning-interactive-communications.md). À la fin de ce didacticiel, vous serez capable de :
 
 * Créer des fragments de document
 * Créer des variables
@@ -45,11 +45,11 @@ Voici la liste des fragments de document créés dans ce didacticiel :
 * [Récapitulatif de facturation](/help/forms/using/create-document-fragments.md#step-create-bill-summary-text-document-fragment)
 * [Récapitulatif des frais](/help/forms/using/create-document-fragments.md#step-create-summary-of-charges-text-document-fragment)
 
-Chaque fragment de document comprend des champs avec du texte statique, des données reçues du modèle de données de formulaire et des données saisies à l’aide de l’interface utilisateur de l’agent. Tous ces champs ont été décrits dans la section [Planification de la communication interactive](/help/forms/using/planning-interactive-communications.md) .
+Chaque fragment de document comprend des champs avec du texte statique, des données reçues du modèle de données de formulaire et des données saisies à l’aide de l’interface utilisateur de l’agent. Tous ces champs ont été décrits dans la section [Planifier la communication interactive](/help/forms/using/planning-interactive-communications.md).
 
 Lors de la création de fragments de document dans ce didacticiel, des variables sont créées pour les champs recevant des données à l’aide de l’interface utilisateur de l’agent.
 
-Utilisation **FDM_Create_First_IC**, comme décrit dans la section [Créer un modèle de données de formulaire](create-form-data-model-tutorial.md) , en tant que modèle de données de formulaire pour créer des fragments de document dans ce tutoriel.
+Utilisez **FDM_Create_First_IC** comme décrit dans la section [Créer un modèle de données de formulaire](create-form-data-model-tutorial.md), comme le modèle de données de formulaire pour créer des fragments de document dans ce tutoriel.
 
 ## Étape 1 : Créer un fragment de document texte contenant des informations de facturation {#step-create-bill-details-text-document-fragment}
 
@@ -64,7 +64,7 @@ Le fragment de document contenant des informations de facturation comprend les c
 
 Exécutez les étapes suivantes pour créer des variables pour les champs avec l’interface utilisateur de l’agent en tant que source de données, créer du texte statique et utiliser des éléments de modèle de données de formulaire dans le fragment de document :
 
-1. Sélectionnez **[!UICONTROL Formulaires]** >**[!UICONTROL Fragments de document]**.
+1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Fragments de document]**.
 
 1. Sélectionnez **Créer** > **Texte**.
 1. Saisissez les informations suivantes :
@@ -100,10 +100,10 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
    ![variable_bill_details_static_text](assets/variable_bill_details_static_text.png)
 
 1. Placez le curseur en regard du champ **N° de facture** et cliquez deux fois sur la variable **InvoiceNumber** de l’onglet **Variables** dans le volet de gauche.
-1. Placez le curseur en regard de l’objet **Période de facturation** et double-cliquez sur le champ **Billperiod** .
-1. Placez le curseur en regard de l’objet **Date de facturation** et double-cliquez sur le champ **Date de facturation** .
+1. Placez le curseur en regard du champ **Période de facturation**, puis double-cliquez sur la variable **Billperiod**.
+1. Placez le curseur en regard du champ **Date de facturation**, puis double-cliquez sur la variable **Bill Date**.
 1. Sélectionnez l’onglet **Objets de modèle de données** dans le volet gauche.
-1. Placez le curseur en regard de l’objet **Votre plan** et double-cliquez sur le champ **client** > **customerplan** .
+1. Placez le curseur en regard du champ **Votre planification**, puis double-cliquez sur la propriété **customer** > **customerplan**.
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
@@ -126,11 +126,11 @@ Le fragment de document contenant des informations personnalisées comprend les 
 
 Exécutez les étapes suivantes pour créer des variables pour les champs avec l’interface utilisateur de l’agent en tant que source de données, créer du texte statique et utiliser des éléments de modèle de données de formulaire dans le fragment de document :
 
-1. Sélectionnez **[!UICONTROL Formulaires]** >**[!UICONTROL Fragments de document]**.
+1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Fragments de document]**.
 1. Sélectionnez **Créer** > **Texte**.
 1. Saisissez les informations suivantes :
 
-   1. Entrée **customer_details_first_ic** comme nom dans la variable **Titre** champ . Le titre se génère automatiquement dans le champ **Nom**.
+   1. Saisissez **customer_details_first_ic** comme nom dans le champ **Titre**. Le titre se génère automatiquement dans le champ **Nom**.
    1. Sélectionnez un **modèle de données de formulaire** dans la section **Modèle de données**.
    1. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire et appuyez sur **Sélectionner**.
    1. Appuyez sur **Suivant**.
@@ -138,7 +138,7 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 1. Sélectionnez l’onglet **Variables** dans le volet gauche, puis appuyez sur **Créer**.
 1. Dans la section **Créer une variable** :
 
-   1. Entrée **Placesupply** comme nom de la variable.
+   1. Saisissez **Placesupply** comme nom de la variable.
    1. Sélectionnez **Chaîne** comme type.
    1. Appuyez sur **Créer**.
 
@@ -148,8 +148,8 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
    * Numberconnections : type de numéro
 
 
-1. Sélectionnez la **Objets de modèle de données** , placez le curseur dans le volet de droite, puis double-cliquez sur le **client** > **name** .
-1. Appuyez sur Entrée pour déplacer le curseur sur la ligne suivante et double-cliquez sur le **client** > **address** .
+1. Sélectionnez l’onglet **Objets de modèle de données**, placez le curseur dans le volet de droite, double-cliquez sur la propriété **client** > **name**.
+1. Cliquez sur Entrée pour déplacer le curseur sur la ligne suivante et double-cliquez sur la propriété **client** > **address**.
 1. Créez du texte statique pour les champs suivants à l’aide du volet de droite :
 
    * Numéro de mobile
@@ -161,20 +161,20 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
-1. Placez le curseur en regard de l’objet **Numéro de mobile** et double-cliquez sur le champ **client** > **mobilenum** .
+1. Placez le curseur en regard du champ **Numéro de mobile** et double-cliquez sur la propriété **client** > **mobilenum**.
 1. Placez le curseur en regard de l’objet **Autre numéro de contact** et double-cliquez sur le champ **client** > **alternatemobilenumber** .
-1. Placez le curseur en regard de l’objet **Numéro de relation** et double-cliquez sur le champ **client** > **Relationship number** .
-1. Sélectionnez la **Variables** , placez le curseur en regard de l’onglet **Lieu de livraison** et double-cliquez sur le champ **Placesupply** .
-1. Placez le curseur en regard de l’objet **Code d’état** et double-cliquez sur le champ **Statecode** .
-1. Placez le curseur en regard de l’objet **Nombre de connexions** et double-cliquez sur le champ **Numberconnections** .
+1. Placez le curseur en regard du champ **Numéro de relation** et double-cliquez sur la propriété **client** > **relationshipnumber**.
+1. Sélectionnez l’onglet **Variables**, placez le curseur en regard du champ **Lieu des prestations** et double-cliquez sur la variable **Placesupply**.
+1. Placez le curseur en regard du champ **Code du pays** et double-cliquez sur la variable **Statecode**.
+1. Placez le curseur en regard du champ **Nombre de connexions** et double-cliquez sur la variable **Numberconnections**.
 
    ![customer_details_df2](assets/customer_details_df2.png)
 
-1. Cliquez sur **Enregistrer** pour créer le fragment de document texte Détails du client.
+1. Cliquez sur **Enregistrer** pour créer un fragment de document texte contenant des informations personnalisées.
 
 ## Étape 3 : Créer le fragment de document texte de récapitulatif de facturation {#step-create-bill-summary-text-document-fragment}
 
-Le fragment de document de résumé de facturation comprend les champs suivants :
+Le fragment de document de récapitulatif de facturation comprend les champs suivants :
 
 | Champ | Source de données |
 |---|---|
@@ -187,11 +187,11 @@ Le fragment de document de résumé de facturation comprend les champs suivants 
 
 Exécutez les étapes suivantes pour créer des variables pour les champs avec l’interface utilisateur de l’agent en tant que source de données, créer du texte statique et utiliser des éléments de modèle de données de formulaire dans le fragment de document :
 
-1. Sélectionnez **[!UICONTROL Formulaires]** >**[!UICONTROL Fragments de document]**.
+1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Fragments de document]**.
 1. Sélectionnez **Créer** > **Texte**.
 1. Saisissez les informations suivantes :
 
-   1. Entrée **bill_summary_first_ic** comme nom dans la variable **Titre** champ . Le titre se génère automatiquement dans le champ **Nom**.
+   1. Saisissez **bill_summary_first_ic** comme nom dans le champ **Titre**. Le titre se génère automatiquement dans le champ **Nom**.
    1. Sélectionnez un **modèle de données de formulaire** dans la section **Modèle de données**.
    1. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire et appuyez sur **Sélectionner**.
    1. Appuyez sur **Suivant**.
@@ -199,8 +199,8 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 1. Sélectionnez l’onglet **Variables** dans le volet gauche, puis appuyez sur **Créer**.
 1. Dans la section **Créer une variable** :
 
-   1. Entrée **Balance précédente** comme nom de la variable.
-   1. Sélectionner **Nombre** comme type.
+   1. Saisissez **Previousbalance** comme nom de la variable.
+   1. Sélectionnez **Numéro** comme type.
    1. Appuyez sur **Créer**.
 
    Répétez les étapes 4 et 5 pour créer les variables suivantes :
@@ -223,20 +223,20 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
    ![bill_summary_static](assets/bill_summary_static.png)
 
-1. Placez le curseur en regard de l’objet **Solde précédent** et double-cliquez sur le champ **Balance précédente** .
-1. Placez le curseur en regard de l’objet **Paiements** et double-cliquez sur le champ **Paiements** .
-1. Placez le curseur en regard de l’objet **Ajustements** et double-cliquez sur le champ **Ajustements** .
-1. Placez le curseur en regard de l’objet **Montant dû** et double-cliquez sur le champ **Amountdue** .
-1. Placez le curseur en regard de l’objet **Date d’échéance** et double-cliquez sur le champ **Duedate** .
-1. Sélectionnez la **Objets de modèle de données** , placez le curseur en regard de l’onglet **Facturation de la période de facturation actuelle** dans le volet de droite, puis double-cliquez sur le **bills** > **usagecharges** .
+1. Placez le curseur en regard du champ **Solde précédent** et double-cliquez sur la variable **Previousbalance**.
+1. Placez le curseur en regard du champ **Paiements** et double-cliquez sur la variable **Payments**.
+1. Placez le curseur en regard du champ **Réglages** et double-cliquez sur la variable **Adjustments**.
+1. Placez le curseur en regard du champ **Montant dû** et double-cliquez sur la variable **Amountdue**.
+1. Placez le curseur en regard du champ **Date d’échéance** et double-cliquez sur la variable **Duedate**.
+1. Sélectionnez l’onglet **Objets de modèle de données**, placez le curseur en regard du champ **Facturation de la période en cours** dans le volet de droite, puis double-cliquez sur la propriété **factures** > **usagecharges**.
 
    ![bill_summary_static_variables](assets/bill_summary_static_variables.png)
 
-1. Cliquez sur **Enregistrer** pour créer le fragment de document texte Détails du client.
+1. Cliquez sur **Enregistrer** pour créer un fragment de document texte contenant des informations personnalisées.
 
 ## Étape 4 : Créer le fragment de document texte de récapitulatif des frais {#step-create-summary-of-charges-text-document-fragment}
 
-Le fragment de document Summary of charges comprend les champs suivants :
+Le fragment de document récapitulatif des frais comprend les champs suivants :
 
 | Champ | Source de données |
 |---|---|
@@ -252,11 +252,11 @@ Le fragment de document Summary of charges comprend les champs suivants :
 
 Exécutez les étapes suivantes pour créer du texte statique et utiliser des éléments de modèle de données de formulaire dans le fragment de document :
 
-1. Sélectionnez **[!UICONTROL Formulaires]** >**[!UICONTROL Fragments de document]**.
+1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Fragments de document]**.
 1. Sélectionnez **Créer** > **Texte**.
 1. Saisissez les informations suivantes :
 
-   1. Entrée **summary_charges_first_ic** comme nom dans la variable **Titre** champ . Le titre se génère automatiquement dans le champ Nom.
+   1. Saisissez **summary_charges_first_ic** comme nom dans le champ **Titre**. Le titre se génère automatiquement dans le champ Nom.
    1. Sélectionnez un **modèle de données de formulaire** dans la section **Modèle de données**.
    1. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire et appuyez sur **Sélectionner**.
    1. Appuyez sur **Suivant**.
@@ -276,19 +276,19 @@ Exécutez les étapes suivantes pour créer du texte statique et utiliser des é
    ![summary_charges_static](assets/summary_charges_static.png)
 
 1. Sélectionnez l’onglet **Objets de modèle de données**.
-1. Placez le curseur en regard de l’objet **Frais d’appel** et double-cliquez sur le champ **bills** > **callcharges** .
-1. Placez le curseur en regard de l’objet **Frais de conférence téléphonique** et double-cliquez sur le champ **bills** > **confcallcharges** .
-1. Placez le curseur en regard de l’objet **Frais de SMS** et double-cliquez sur le champ **bills** > **smscharges** .
-1. Placez le curseur en regard de l’objet **Frais Internet mobiles** et double-cliquez sur le champ **bills** > **internetcharges** .
-1. Placez le curseur en regard de l’objet **Frais d’itinérance nationale** et double-cliquez sur le champ **bills** > **roamingnational** .
-1. Placez le curseur en regard de l’objet **Frais d’itinérance internationale** et double-cliquez sur le champ **bills** > **roamingintnl** .
-1. Placez le curseur en regard de l’objet **Frais de services à valeur ajoutée** et double-cliquez sur le champ **bills** > **zone** .
-1. Placez le curseur en regard de l’objet **Frais totaux** et double-cliquez sur le champ **bills** > **usagecharges** .
-1. Placez le curseur en regard de l’objet **TOTAL À PAYER** et double-cliquez sur le champ **bills** > **usagecharges** .
+1. Placez le curseur en regard du champ **Frais d’appel** et double-cliquez sur la propriété **factures** > **callcharges**.
+1. Placez le curseur en regard du champ **Frais de conférence téléphonique** et double-cliquez sur la propriété **factures** > **confcallcharges**.
+1. Placez le curseur en regard du champ **Frais de SMS** et double-cliquez sur la propriété **factures** > **smscharges**.
+1. Placez le curseur en regard du champ **Frais d’Internet mobile** et double-cliquez sur la propriété **factures** > **internetcharges**.
+1. Placez le curseur en regard du champ **Frais d’itinérance nationale** et double-cliquez sur la propriété **factures** > **roamingnational**.
+1. Placez le curseur en regard du champ **Frais d’itinérance internationale** et double-cliquez sur la propriété **factures** > **roamingintnl**.
+1. Placez le curseur en regard du champ **Services à valeur ajoutée** et double-cliquez sur la propriété **factures** > **vas**.
+1. Placez le curseur en regard du champ **Frais totaux** et double-cliquez sur la propriété **factures** > **usagecharges**.
+1. Placez le curseur en regard du champ **TOTAL À PAYER** et double-cliquez sur la propriété **factures** > **usagecharges**.
 
    ![summary_charges_static_fdm](assets/summary_charges_static_fdm.png)
 
-1. Sélectionnez le texte dans le **Frais de services à valeur ajoutée** ligne et appuyez sur **Créer une règle** pour créer une condition d’après laquelle la ligne est affichée dans la communication interactive :
+1. Sélectionnez le texte dans la ligne **Frais de services à valeur ajoutée** et cliquez sur **Créer une règle** afin de créer une condition basée sur la ligne affichée dans la communication interactive :
 1. La fenêtre contextuelle **Créer une règle** s’affiche :
 
    1. Sélectionnez **Modèles de données et variables** puis **bills** > **callcharges**.
@@ -299,4 +299,4 @@ Exécutez les étapes suivantes pour créer du texte statique et utiliser des é
 
    ![create_rules_caption](assets/create_rules_caption.gif)
 
-1. Cliquez sur **Enregistrer** pour créer le fragment de document texte Résumé des frais.
+1. Cliquez sur **Enregistrer** pour créer un fragment de document texte de récapitulatif des frais.

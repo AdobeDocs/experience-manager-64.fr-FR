@@ -14,7 +14,7 @@ exl-id: 2caf7242-8588-4fc9-9429-40e24416d6eb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 69%
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ Modifier les propriétés de configuration par défaut des communications intera
 
 Les communications interactives incluent les propriétés qui sont configurées automatiquement après l’installation du package du [module complémentaire AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Les auteurs de la communication interactive peuvent modifier ces propriétés de configuration par défaut en utilisant la page de **configuration de la console web d’Adobe Experience Manager**.
 
-Ouvrez le **Configuration de la console web Adobe Experience Manager** à l’aide de l’URL suivante :
+Ouvrez la page de **configuration de la console web d’Adobe Experience Manager** à l’aide de l’adresse suivante :
 
 https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 
@@ -49,14 +49,14 @@ Appuyer **Configuration des fragments de document** sur le **Configuration de la
   </tr> 
   <tr> 
    <td>Data Display Formats</td> 
-   <td>Format d’affichage spécifique aux paramètres régionaux pour les champs, les variables et les éléments de modèle de données de formulaire disponibles lors de la création d’une communication interactive pour les canaux d’impression et web.</td> 
+   <td>Format d’affichage spécifique aux paramètres régionaux pour les champs, variables et éléments de modèle de données de formulaire disponibles lors de la création d’une communication interactive pour les canaux d’impression et web.</td> 
    <td> 
     <ul> 
-     <li>locale = en_US, de_DE, fr_FR et ja_JP</li> 
-     <li>dateFormat = dd-MM-yyy</li> 
+     <li>Paramètre régional = en_US, de_DE, fr_FR et ja_JP</li> 
+     <li>dateFormat = dd-MM-yyyy</li> 
      <li>numberDecimalSeparator = .</li> 
      <li>numberGroupSeparator = ,</li> 
-     <li>numberUseGroupSeparator = true</li> 
+     <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
    <td><p>—</p> </td> 
   </tr> 
@@ -83,7 +83,7 @@ Appuyer **Configuration des fragments de document** sur le **Configuration de la
 
 ## Configuration de la création de correspondance {#create-correspondence-configuration}
 
-Appuyer **Configuration de la création de correspondance** sur le **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration de l’interface utilisateur de l’agent.
+Cliquez sur **Configuration de la création de correspondance** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration de l’interface utilisateur de l’agent.
 
 | Propriété | Description | Valeur par défaut | Valeurs acceptables |
 |---|---|---|---|
@@ -92,7 +92,7 @@ Appuyer **Configuration de la création de correspondance** sur le **Configurati
 
 ## Configuration de canal web du formulaire adaptatif et de la communication interactive {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Appuyer **Configuration du canal web du formulaire adaptatif et de la communication interactive** sur le **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration du canal web Forms adaptatif et communications interactives. Le tableau suivant décrit les propriétés liées aux communications interactives :
+Appuyez sur **Configuration du canal web du formulaire adaptatif et de la communication interactive** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration du canal web du formulaire adaptatif et des communications interactives. Le tableau suivant décrit les propriétés liées aux communications interactives :
 
 | Propriété | Description | Valeur par défaut | Valeurs acceptables |
 |---|---|---|---|
@@ -102,7 +102,7 @@ Appuyer **Configuration du canal web du formulaire adaptatif et de la communicat
 
 ## Configuration des thèmes de canal web du formulaire adaptatif et de la communication interactive {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Appuyer **Configuration du thème du canal web du formulaire adaptatif et de la communication interactive** sur le **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration des thèmes de canal web Forms adaptatif et Communications interactives.
+Appuyez sur **Configuration des thèmes du canal web du formulaire adaptatif et de la communication interactive** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration des thèmes du canal web du formulaire adaptatif et des communications interactives.
 
 <table> 
  <tbody> 

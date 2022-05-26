@@ -12,7 +12,7 @@ exl-id: 43149456-8ff8-4ce1-9c51-1d950f60ff5d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 79%
+ht-degree: 85%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 79%
 
 **- Conditions requises**
 
-**Connaissances préalables**
-Avant d’ajouter AEM Forms Workspace au serveur SharePoint, vous devez avoir accès au serveur SharePoint avec les privilèges appropriés et connaître l’URL d’accès à Workspace. Les étapes ci-dessous supposent que vous connaissez SharePoint Server. Pour en savoir plus sur les composants Webpart de SharePoint Server, consultez Composants Webpart sous Windows SharePoint Services.
+**Connaissances préalables** 
+Avant de pouvoir ajouter AEM Forms Workspace au serveur SharePoint, vous devez avoir accès au serveur SharePoint avec les droits appropriés et vous devez connaître l’URL d’accès à Workspace. Les étapes ci-dessous supposent que vous connaissez SharePoint Server. Pour en savoir plus sur les composants Webpart de SharePoint Server, consultez Composants Webpart sous Windows SharePoint Services.
 
 **Niveau d’utilisateur** Début
 
@@ -54,7 +54,7 @@ Effectuez les étapes suivantes pour intégrer AEM Forms Workspace à un composa
 
    **Figure :** *La zone Composant Webpart de la visionneuse de pages dans le serveur SharePoint de Microsoft Office.*
 
-1. Sur la page Visionneuse de pages, effectuez les tâches suivantes :
+1. Sur la page Visionneuse de pages, effectuez les tâches suivantes :
 
    1. Dans la zone Lien, saisissez l’URL d’AEM Forms Workspace, par exemple https://*[AEM_forms_Server]:*8080/lc/ws où *[AEM_forms_Server]* représente l’adresse IP ou le nom du serveur AEM forms.
    1. Cliquez sur **Aspect** et modifiez la hauteur, la largeur et le titre de sorte que vous puissiez voir l’ensemble de l’interface utilisateur de Workspace. Par exemple, vous pouvez définir une hauteur et une largeur de 6 pouces et 11 pouces respectivement.

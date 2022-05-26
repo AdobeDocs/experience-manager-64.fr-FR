@@ -12,17 +12,17 @@ exl-id: e45f7f79-a5c3-439c-bf6c-7b14590cd3fc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 # Personnalisation des boîtes de dialogue d’erreur {#customizing-error-dialogs}
 
-L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dialogue d’erreur. Effectuez les opérations suivantes : [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) suivi des étapes ci-dessous pour personnaliser les boîtes de dialogue d’erreur.
+L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dialogue d’erreur. Pour personnaliser les boîtes de dialogue d’erreur, réalisez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) suivie de la procédure ci-dessous.
 
 ## Personnalisation du texte {#customizing-text}
 
-1. Dans le `/apps/ws/locales/en-US/translation.json` , modifiez les valeurs de `wserror` aux valeurs personnalisées. Par exemple :
+1. Dans le fichier `/apps/ws/locales/en-US/translation.json`, remplacez les valeurs de `wserror` par les valeurs personnalisées. Par exemple :
 
    ```
    "wserror" : {
@@ -49,7 +49,7 @@ L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dial
 
 ## Personnalisation de CSS {#customizing-css}
 
-1. Vous pouvez mettre à jour la boîte de dialogue, l’en-tête, la zone de contenu, la barre de pied de page, les boutons de la barre de pied de page et d’autres éléments en ajoutant le fragment de code suivant dans la `/apps/ws/css/newStyle.css` fichier :
+1. Vous pouvez mettre à jour des boîtes de dialogue, des en-têtes, des zones de contenu, des barres de pied de page, des boutons de barres de pied de page, et d’autres éléments en ajoutant le fragment de code ci-dessous dans le fichier `/apps/ws/css/newStyle.css` :
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -184,7 +184,7 @@ L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dial
    }
    ```
 
-1. Pour l’étendue du bouton de la barre de pied de page, séparez la variable `.error-dialog` et `.foot-bar` s’étend à partir de la liste composite. Pour effectuer cette modification, ajoutez les éléments suivants dans le fichier newStyle.css :
+1. Pour le span du bouton de la barre de pied de page, séparez les spans des boutons `.error-dialog` et `.foot-bar` de la liste composite. Pour effectuer cette modification, ajoutez les éléments suivants dans le fichier newStyle.css :
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,

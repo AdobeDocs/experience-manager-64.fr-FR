@@ -13,7 +13,7 @@ exl-id: 653daaa4-9e35-40eb-a61e-274109f5f0d2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1227'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -57,7 +57,7 @@ Pour activer SSL, WebSphere doit accéder à un compte d’utilisateur dans le r
 1. Supprimez la coche de la case **L’utilisateur doit changer de mot de passe à la prochaine ouverture de session** et cliquez sur **Créer** puis sur **Fermer**.
 1. Cliquez sur **Utilisateurs**, cliquez avec le bouton droit de la souris sur l’utilisateur que vous venez de créer, puis choisissez **Propriétés**.
 1. Cliquez sur l’onglet **Membre de**, puis sur **Ajouter**.
-1. Dans la zone Entrez les noms des objets à sélectionner, saisissez `Administrators`, cliquez sur Vérifier les noms pour vous assurer que le nom du groupe est correct.
+1. Dans la zone Saisir les noms des objets à sélectionner, saisissez `Administrators`, puis cliquez sur Vérifier les noms pour vous assurer que le nom du groupe est correct.
 1. Cliquez sur **OK**, puis de nouveau sur **OK**.
 1. Sélectionnez **Démarrer > Panneau de configuration > Outils d’administration > Stratégie de sécurité locale > Stratégies locales**.
 1. Cliquez sur Attribution des droits utilisateur, puis cliquez avec le bouton droit de la souris sur Fonctionner en tant que partie du système d’exploitation et sélectionnez Propriétés.
@@ -72,7 +72,7 @@ Pour activer SSL, WebSphere doit accéder à un compte d’utilisateur dans le r
 1. Sous Administrative Security, sélectionnez les **rôles utilisateurs administratifs**.
 1. Cliquez sur Add et effectuez les opérations suivantes :
 
-   1. Type **&amp;ast;** dans la zone de recherche, puis cliquez sur rechercher.
+   1. Saisissez **&amp;ast;** dans la zone de recherche, puis cliquez sur le bouton de recherche.
    1. Cliquez sur le rôle **Administrator**.
    1. Ajoutez l’utilisateur nouvellement créé dans la zone Mapped to role et mappez-le à Administrator.
 
@@ -158,7 +158,7 @@ Le service Generate PDF peut maintenant effectuer des conversions HTML en PDF à
 
 ## Configuration des ports dynamiques {#configuring-dynamic-ports}
 
-IBM WebSphere n’autorise pas les appels multiples à ORB.init () lorsque la Sécurité Globale est activée. Vous pouvez en savoir plus sur la restriction permanente à l’adresse https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704.
+IBM WebSphere n’autorise pas les appels multiples à ORB.init () lorsque la Sécurité Globale est activée. Vous pouvez consulter la restriction permanente à l’adresse https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704.
 
 Effectuez les étapes suivantes pour faire en sorte que le port soit dynamique et pour résoudre le problème :
 
@@ -175,7 +175,7 @@ Effectuez les étapes suivantes pour faire en sorte que le port soit dynamique e
 ## Configurer le fichier sling.properties {#configure-the-sling-properties-file}
 
 1. Ouvrir [aem-forms_root]\crx-repository\launchpad\sling.properties pour modification.
-1. Recherchez la variable `sling.bootdelegation.ibm` et ajoutez `com.ibm.websphere.ssl.*`à son champ de valeur. Le champ mis à jour ressemble à ce qui suit :
+1. Recherchez la propriété `sling.bootdelegation.ibm` et ajoutez `com.ibm.websphere.ssl.*` à son champ de valeur. Le champ mis à jour ressemble à ce qui suit :
 
    ```as3
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*

@@ -13,7 +13,7 @@ exl-id: 86f8d51c-a479-4940-b3c2-4b54a67f7450
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 85%
+ht-degree: 88%
 
 ---
 
@@ -28,4 +28,4 @@ Pour administrer efficacement le processus des formulaires, il est utile que vou
 * Une *opération* est une étape d’un diagramme de processus, représentée dans Workbench par une icône dans le diagramme de processus.
 * Une *tâche* est une action qui a été affectée à un utilisateur. Lorsque la tâche est exécutée et que l’opération l’est également, le service Utilisateur affecte une tâche à un utilisateur.
 
-Pour plus d’informations sur ces termes, voir [Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Pour plus d’informations sur ces termes, voir [Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).

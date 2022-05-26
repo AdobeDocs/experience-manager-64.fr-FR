@@ -46,7 +46,7 @@ Avant de configurer le site de référence, assurez-vous que vous disposez des �
 
 * **AEM essentiels**
 
-   AEM QuickStart, package de module complémentaire AEM Forms et packages de site de référence. Voir [Versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) pour les détails des modules complémentaires et des sites de référence.
+   AEM QuickStart, package de module complémentaire AEM Forms et packages de site de référence. Voir [Versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour les détails des modules complémentaires et des sites de référence.
 
 * **Un service SMTP** Vous pouvez utiliser n’importe quel service SMTP.
 
@@ -63,7 +63,7 @@ Effectuez les étapes suivantes dans l’ordre recommandé pour installer et con
  <tbody> 
   <tr> 
    <th><strong>Étape</strong></th> 
-   <th><strong>Configuration d’</strong></th> 
+   <th><strong>Configuration de</strong></th> 
    <th><strong>Remarques</strong></th> 
   </tr> 
   <tr> 
@@ -372,7 +372,7 @@ Pour tester l’intégration au site de référence, procédez comme suit pour c
 1. Indiquez vos code client, adresse électronique et mot de passe associés à votre compte Target. Sélectionnez le type d’API comme **[!UICONTROL REST]**.
 1. Cliquez sur **[!UICONTROL Se connecter à Adobe Target]**. Une fois le compte Target configuré, cliquez sur **[!UICONTROL OK]**. Vous pouvez voir que la configuration empaquetée comporte une structure Target.
 
-1. Accédez à https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr.
+1. Rendez-vous sur https://&lt;*nom de lʼhôte*>:&lt;*port*>/system/console/configMgr.
 
 1. Cliquez sur **[!UICONTROL AEM Forms Target Configuration]**.
 1. Sélectionnez une structure Target.
@@ -384,7 +384,7 @@ Les cas pratiques de demande de carte de crédit et de demande de prêt immobili
 
 ## Étape suivante {#next-step}
 
-Vous êtes maintenant prêt à explorer le site de référence. Pour en savoir plus sur le processus et les étapes relatifs au site de référence, consultez la section :
+Vous êtes maintenant prêt à explorer le site de référence Pour en savoir plus sur le processus et les étapes relatifs au site de référence, consultez la section :
 
 * [Présentation du site de référence We.Finance](/help/forms/using/finance-reference-site-walkthrough.md)
 * [Présentation du site de référence We.Gov](/help/forms/using/gov-reference-site-walkthrough.md)

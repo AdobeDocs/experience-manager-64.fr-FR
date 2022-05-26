@@ -1,5 +1,5 @@
 ---
-title: '"Base de données SQL Server : réglage précis de la configuration"'
+title: '"Base de données SQL Server : réglage précis de la configuration"'
 seo-title: 'Microsoft SQL Server database: Fine-tuning the configuration'
 description: Découvrez comment vous pouvez affiner la configuration de votre base de données Microsoft SQL Server.
 seo-description: Learn how you can fine tune the configuration of your Microsoft SQL Server database.

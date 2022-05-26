@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Workspace permet aux utilisateurs de démarrer des processus d’entreprise, d’en assurer le suivi et d’y participer.
 
-Dans les pages Workspace de Administration Console, vous pouvez exécuter les tâches suivantes :
+Dans les pages Workspace d’Administration Console, vous pouvez exécuter les tâches suivantes :
 
 * définir le message à afficher dans la page d’accueil de l’interface utilisateur de Workspace ;
 * configurer des modèles de recherche à utiliser dans Workspace pour rechercher des processus et des tâches ;

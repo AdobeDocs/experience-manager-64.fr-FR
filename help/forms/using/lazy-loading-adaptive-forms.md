@@ -12,7 +12,7 @@ exl-id: 92d88888-343c-4edb-9b11-8e876539573a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '964'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -28,8 +28,8 @@ Découvrons d’abord les exigences et les étapes préparatoires avant de confi
 
 Avant de configurer le chargement différé des fragments d’un formulaire adaptatif, il est essentiel de définir des stratégies afin de créer des fragments, d’identifier les valeurs utilisées dans les scripts ou référencées dans d’autres fragments, ou encore de définir des règles de contrôle de la visibilité des champs des fragments chargés.
 
-* **Identification et création de fragments**
-Vous pouvez configurer uniquement les fragments de formulaire adaptatif pour le chargement différé. Un fragment est un segment autonome qui réside en dehors d’un formulaire adaptatif et qui peut être réutilisé dans plusieurs formulaires. Ainsi, la première étape de création d’un chargement différé consiste à identifier les sections logiques d’un formulaire et à les convertir en fragments. Vous pouvez créer un fragment à partir de zéro ou enregistrer un panneau de formulaire existant comme fragment.
+* **Identifier et créer des fragments**
+Vous pouvez configurer les fragments de formulaires adaptatifs uniquement pour le chargement différé. Un fragment est un segment autonome qui réside en dehors d’un formulaire adaptatif et peut être réutilisé dans des formulaires. Ainsi, la première étape de création d’un chargement différé consiste à identifier les sections logiques d’un formulaire et à les convertir en fragments. Vous pouvez créer un fragment à partir de zéro ou enregistrer un panneau de formulaire existant comme fragment.
 
     Pour plus d’informations sur la création de fragments, voir [Fragments de formulaire adaptatif](/help/forms/using/adaptive-form-fragments.md).
 
@@ -48,7 +48,7 @@ Les formulaires incluent certains champs et sections qui ne s’appliquent pas �
 Suivez les étapes ci-après pour activer le chargement différé sur un fragment de formulaire adaptatif :
 
 1. Ouvrez le formulaire adaptatif en mode création contenant le fragment que vous souhaitez activer pour le chargement différé.
-1. Sélectionnez le fragment de formulaire adaptatif et appuyez sur ![cmppr](assets/cmppr.png).
+1. Sélectionnez le fragment de formulaire adaptatif et cliquez sur ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, activez **[!UICONTROL Chargement tardif d’un fragment]** et appuyez sur **Terminé**.
 
    ![Activer le chargement différé du fragment de formulaire adaptatif](assets/lazy-loading-fragment.png)

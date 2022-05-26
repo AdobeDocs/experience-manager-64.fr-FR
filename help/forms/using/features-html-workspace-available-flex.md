@@ -13,13 +13,13 @@ exl-id: 109adc91-2291-4a10-af7b-e93ae8947258
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Fonctions de l’espace de travail AEM Forms non disponibles dans l’espace de travail Flex {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
 
-L’espace de travail AEM Forms va au-delà de l’espace de travail Flex pour offrir des fonctionnalités et des fonctionnalités qui contribuent à améliorer l’intégration commerciale et la productivité des utilisateurs.
+L’espace de travail AEM Forms va plus loin que l’espace de travail basé sur Flex, pour offrir des fonctions et des fonctionnalités permettant d’améliorer l’intégration métier et la productivité de l’utilisateur.
 
 Voici un aperçu rapide de ces fonctionnalités. Pour plus de détails, voir les articles connexes indiqués à la fin de cet article.
 
@@ -37,7 +37,7 @@ Les images ou les avatars des utilisateurs connectés sont désormais affichés 
 
 ## Prise en charge de l’intégration des applications tierces {#support-for-integrating-third-party-applications}
 
-La fonctionnalité d’intégration d’applications tierces peut permettre d’envoyer tous vos flux de travail vers l’espace de travail AEM Forms. Par exemple, vous pouvez effectuer le rendu des modèles de lettre Correspondence Management en tant que tâches dans la fenêtre de l’espace de travail AEM Forms elle-même. Ainsi, vous pouvez terminer la tâche sans quitter l’espace de travail AEM Forms. Voir [Intégration de Correspondence Management dans l’espace de travail AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md) pour obtenir des instructions détaillées.
+La fonctionnalité d’intégration d’applications tierces peut permettre d’envoyer tous vos flux de travail vers l’espace de travail AEM Forms. Par exemple, vous pouvez rendre les modèles de lettre Correspondence Management sous forme de tâches dans la fenêtre même de l’espace de travail AEM Forms. Ainsi, vous pouvez terminer la tâche sans quitter l’espace de travail AEM Forms. Voir [Intégrer Correspondence Management dans l’espace de travail AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md) pour des instructions détaillées.
 
 ## Prise en charge de tâches personnalisées basées sur le périphérique de l’utilisateur final {#support-for-custom-task-rendering-based-on-end-user-s-device}
 

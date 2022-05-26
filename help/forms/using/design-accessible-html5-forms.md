@@ -13,13 +13,13 @@ exl-id: 64d8cf2c-8180-49ce-a725-48cd03476fb8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 88%
+ht-degree: 94%
 
 ---
 
 # Conception de formulaires HTML5 accessibles {#designing-accessible-html-forms}
 
-Les formulaires HTML5 utilisent la norme d’accessibilité ARIA HTML5 pour générer des formulaires HTML accessibles. Ces formulaires prennent en charge la navigation par onglets (sauf Mozilla Firefox) et sont certifiés compatibles avec les lecteurs d’écran les plus courants. Pour générer un formulaire HTML5 avec de bonnes fonctions d’accessibilité, concevez le modèle de formulaire XFA en fonction de certains [directives de conception de base](/help/forms/using/best-practices-for-html5-forms.md). Les directives de conception comprennent la configuration des onglets dans l’ordre approprié et fournissent le contenu du texte vocal pour chaque commande du formulaire. AEM Forms Designer prend en charge les paramètres de ces attributs de contrôle de formulaire pour générer un PDF accessible et un formulaire HTML5.
+Les formulaires HTML5 utilisent la norme d’accessibilité ARIA HTML5 pour générer des formulaires HTML accessibles. Ces formulaires prennent en charge la navigation par onglets (sauf Mozilla Firefox) et sont certifiés compatibles avec les lecteurs d’écran les plus courants. Pour générer un formulaire HTML5 avec de bonnes fonctions d’accessibilité, concevez le modèle de formulaire XFA en fonction de certains [directives de conception de base](/help/forms/using/best-practices-for-html5-forms.md). Les directives de conception comprennent la configuration des onglets dans l’ordre approprié et fournissent le contenu du texte vocal pour chaque commande du formulaire. AEM Forms Designer prend en charge le paramètre de ces attributs de commande du formulaire pour générer un formulaire en version PDF et HTML5 accessible.
 
 *Remarque : la navigation par onglets ne couvre pas les champs protégés tels que les champs de calcul affichant la somme des valeurs. Pour que le logiciel d’écran lise la valeur d’un champ protégé, placez un champ vide en lecture seule au-dessus ou à côté du champ protégé. Attribuez la valeur du champ protégé au nouveau champ en lecture seule. Le lecteur d’écran ou la navigation par onglets peut sélectionner ce champ en lecture seule et traduire ainsi la valeur du champ protégé à l’oral.*
 
@@ -30,6 +30,6 @@ AEM Forms Designer comprend plusieurs options de texte vocal qui peuvent être 
 * Légendes des champs sur le formulaire.
 * Noms des objets, tels qu’indiqués dans l’option Nom de l’onglet Liaison.
 
-![accessibilité](assets/accessibility.png)
+![Accessibilité](assets/accessibility.png)
 
 Lorsque plusieurs options (infobulles, texte de lecteur d’écran et légende, par exemple) sont disponibles sur une commande de formulaire, le lecteur d’écran n’utilise qu’une seule de ces propriétés. L’ordre par défaut est le suivant : texte de lecteur d’écran personnalisé, infobulles, légende et nom. Vous pouvez remplacer cet ordre par défaut à l’aide de l’option **Précédence** du lecteur d’écran dans la palette Accessibilité.

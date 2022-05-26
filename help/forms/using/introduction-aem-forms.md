@@ -114,7 +114,7 @@ Des documents personnalisés tels que des reçus, des kits de bienvenue et des i
 * Prise en charge de la remise de documents par lots ou à la demande via plusieurs canaux, notamment le Web, la messagerie et le papier
 * Pistes d’audit avec historique des modifications
 * Prise en charge des signatures numériques pour garantir l’intégrité du contenu et l’identité du signataire
-* Module complémentaire de sécurité des documents pour AEM Forms comprenant le chiffrement, les stratégies d’utilisation, le suivi et l&#39;audit
+* Module complémentaire de sécurité des documents pour AEM Forms comprenant le chiffrement, les stratégies d’utilisation, le suivi et l’audit
 
 ![](do-not-localize/layout-02.png)
 **Figure :** *Processus de communication personnalisée rationalisée*

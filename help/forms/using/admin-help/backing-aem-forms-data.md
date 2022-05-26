@@ -13,7 +13,7 @@ exl-id: d86cf58f-6595-4f37-977f-09437a7f89f9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -48,13 +48,13 @@ Outre ces vérifications, observez les recommandations ci-dessous relatives au p
 
 * Sauvegardez le répertoire de stockage global de documents en utilisant un système d’exploitation disponible ou un utilitaire de sauvegarde tiers (voir [Emplacement du répertoire de stockage global de documents](/help/forms/using/admin-help/files-back-recover.md#gds-location)).
 * (facultatif) Sauvegardez le répertoire racine de stockage de contenu en utilisant un système d’exploitation disponible ou un utilitaire de sauvegarde tiers (voir [Emplacement racine de stockage de contenu (environnement autonome)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) ou [Emplacement racine de stockage de contenu (environnement organisé en grappes)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment)).
-* Sauvegardez les instances   instances de création et de publication (sauvegarde crx-repository).
+* Sauvegardez les instances d’auteur et de publication (sauvegarde du référentiel crx).
 
    Pour sauvegarder l’environnement de la solution Correspondence Management, effectuez la procédure relative aux instances d’auteur et de publication décrite dans le document [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md).
 
    Considérez les points suivants lors de la sauvegarde des instances d’auteur et de publication :
 
-   * Assurez-vous que  Les instances de création et de publication sont synchronisées pour démarrer en même temps. Bien que vous puissiez continuer à utiliser les instances de création et de publication pendant la sauvegarde, il est recommandé de ne pas publier de ressource pendant la sauvegarde afin d’éviter toute modification non capturée. Patientez jusqu’à ce que la sauvegarde des instances d’auteur et de publication soit terminée avant de publier de nouveaux actifs.
+   * Assurez-vous que les instances d’auteur et de publication sont synchronisées afin de démarrer au même moment. Bien que vous puissiez continuer à utiliser les instances d’auteur et de publication lorsque la sauvegarde est en cours, il est recommandé de ne pas publier de ressource pendant la sauvegarde afin d’éviter des modifications non enregistrées. Patientez jusqu’à ce que la sauvegarde des instances d’auteur et de publication soit terminée avant de publier de nouveaux actifs.
    * La sauvegarde complète de nœud d’auteur inclut la sauvegarde des données de Forms Manager et de l’espace de travail AEM Forms.
    * Les développeurs de Workbench peuvent continuer à travailler sur leurs processus localement. Ils ne doivent pas déployer de nouveaux processus au cours de la phase de sauvegarde.
    * La décision concernant la durée de chaque session de sauvegarde (en mode de sauvegarde restauration) doit être basée sur la durée totale nécessaire pour sauvegarder toutes les données dans AEM forms (base de données, stockage global de données, référentiel AEM et toutes les autres données personnalisées supplémentaires).
@@ -93,7 +93,7 @@ Vous pouvez utiliser Administration Console, la commande LCBackupMode ou l’API
 Vous pouvez utiliser les scripts `LCBackupMode` de l’interface de ligne de commande pour passer AEM Forms en mode de sauvegarde sécurisé.
 
 1. Définissez ADOBE_LIVECYCLE et lancez le serveur d’applications.
-1. Accédez au `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` dossier.
+1. Accédez au dossier `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
 1. Modifiez le script `LCBackupMode.cmd` ou `LCBackupMode.sh` de façon à indiquer les valeurs par défaut correspondant à votre système d’exploitation.
 1. Dans l’invite de commande, exécutez la commande suivante sur une seule ligne :
 
@@ -132,17 +132,17 @@ Pour passer AEM Forms en mode de sauvegarde sécurisée (mode d’instantané) �
 
 Vous pouvez utiliser l’interface de ligne de commande et sortir AEM Forms du mode de sauvegarde sécurisé (mode d’instantané) ou pour mettre un terme à la session du mode de sauvegarde en cours (mode de sauvegarde de restauration). Vous ne pouvez pas utiliser Administration Console pour quitter le mode de sauvegarde restauration. Lorsque le mode de sauvegarde restauration est activé, les commandes Utilitaires de sauvegarde d’Administration Console sont désactivées. Vous devez utiliser l’appel d’API ou la commande LCBackupMode.
 
-1. Accédez au `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` dossier.
+1. Accédez au dossier `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
 1. Modifiez le script `LCBackupMode.cmd` ou `LCBackupMode.sh` de façon à indiquer les valeurs par défaut correspondant à votre système d’exploitation.
 
    >[!NOTE]
    >
-   >Vous devez définir le répertoire JAVA_HOME tel qu’indiqué dans le chapitre correspondant relatif au serveur d’applications, dans le document [Préparation à l’installation d’AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
+   >Vous devez définir le répertoire JAVA_HOME tel qu’indiqué dans le chapitre correspondant relatif au serveur d’applications, dans le document [Préparation à l’installation d’AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_fr)*.*
 
 1. Exécutez la commande suivante sur une même ligne :
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `]`
-   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*nom_hôte* `] [-port=`*numéro_port* `] [-user=`*nom_utilisateur* `] [-password=`*mot_de_passe* `]`
+   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*nom_hôte* `] [-port=`*numéro_port* `] [-user=`*nom_utilisateur* `] [-password=`*mot_de_passe* `]`
 
       Dans les commandes précédentes, les emplacements réservés peuvent être définis comme suit :
 

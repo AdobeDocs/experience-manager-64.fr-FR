@@ -12,7 +12,7 @@ exl-id: a2821338-f31d-4b08-91e6-7f934dc01384
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 90%
 
 ## Assembler {#assembler}
 
-AEM Forms fournit des workflows personnalisés pour appeler les API de service Assembler suivantes :
+AEM Forms fournit des workflows personnalisés pour appeler les API du service Assembler suivantes :
 
 * **invoke** : permet d’appeler des opérations spécifiées dans input DDX sur les entrées fournies.
 * **toPDFA** : permet de convertir un document PDF d’entrée en document PDF/A.
 
 ### Flux de travail Invoke DDX {#invoke-ddx-workflow}
 
-Le **Invoquer DDX** le workflow appelle la variable `Invoke` API du service Assembler, que vous pouvez utiliser pour assembler ou désassembler des documents, ajouter un filigrane à un PDF, etc.
+Le workflow **Appeler DDX** appelle l’API du service Assembler `Invoke`, que vous pouvez utiliser pour assembler ou désassembler des documents, ajouter des filigranes à des PDF, etc.
 
 1. Faites glisser l’étape de flux de travail **[!UICONTROL Invoke DDX]** sous l’onglet Forms Workflow dans Sidekick.
 1. Cliquez deux fois sur l’étape supplémentaire de flux de travail pour modifier le composant.
@@ -45,14 +45,14 @@ Le flux de travail Invoke DDX nécessite les documents d’entrée suivants :
 
 * **Create Map from PayLoad** : si vous activez cette option, les documents sous le dossier de charge sont ajoutés au mappage de document d’entrée pour l’API `invoke` dans Assembler. Le nom du nœud pour chaque document est utilisé comme clé dans la carte.
 
-* **Input Document’s Map**: Spécifie la carte du document d’entrée. Vous pouvez ajouter plusieurs entrées, où chaque entrée spécifie la clé du document dans la carte et la source du document.
+* **Input Document’s Map** : indique la carte de document d’entrée. Vous pouvez ajouter plusieurs entrées, où chaque entrée spécifie la clé du document dans la carte et la source du document.
 
 #### Options d’environnement {#environment-options}
 
 L’onglet Environment Options permet de définir différentes options de traitement pour l’API d’appel.
 
 * *Job Log Level* : indique le niveau de journal pour les journaux de traitement.
-* *Validate Only* : vérifie la validité de input DDX.
+* *Validate Only* : vérifie la validité d’input DDX.
 
 * *Fail On Error* : indique si l’appel au service Assembler peut échouer en cas d’erreur. La valeur par défaut est False.
 
@@ -60,7 +60,7 @@ L’onglet Environment Options permet de définir différentes options de traite
 
 Selon input DDX, l’API d’appel peut produire plusieurs documents de sortie. L’onglet Output documents vous permet de sélectionner le document de sortie à enregistrer.
 
-1. *Enregistrer la sortie dans la charge utile*: Enregistre les documents de sortie sous le dossier de charge utile ou remplace la charge utile si la charge est un fichier .
+1. *Save Output dans Payload* : enregistre les documents de sortie sous le dossier de payload, ou remplace la payload, si celle-ci est un fichier.
 1. *Output Document’s Map* : permet de spécifier explicitement où enregistrer chaque document de sortie en ajoutant une entrée par document de sortie. Chaque entrée spécifie le document et l’emplacement d’enregistrement. Output document peut écraser la charge ou être enregistré dans le dossier de charge. Cette option peut être utile lorsque qu’il y a plusieurs documents de sortie.
 
 1. *Job Log* : indique l’emplacement d’enregistrement du document de journal de tâche, ce qui peut être utile pour le dépannage des échecs.
@@ -90,7 +90,7 @@ L’onglet Conversion Options permet de spécifier des options qui affectent le 
 * *Result Level * : Indique le niveau de journal à utiliser pour les journaux de conversion PDF/A.
 * *Signatures* : indique la façon dont les signatures du document d’entrée doivent être traitées lors de la conversion.
 * *Color Space* : indique l’espace colorimétrique prédéfini à utiliser pour le document de sortie PDF/A.
-* *Vérifier* Conversion : Indique si le document converti PDF/A doit être vérifié pour la conformité PDF/A après la conversion.
+* *Vérifier la conversion* : indique si le document converti en PDF/A doit être vérifié pour assurer la conformité PDF/A après conversion.
 * *Job Log Level* : indique le niveau de journal à utiliser pour les journaux de traitement.
 
 * *Metadata Extension Schema* : indique le chemin du schéma d’extension de métadonnées à utiliser pour les propriétés XMP dans les métadonnées du document PDF.
@@ -133,7 +133,7 @@ Le flux de travail Render PDF Form est une enveloppe de l’API du service Forms
 
 ## Sortie {#output}
 
-Le flux de travail Generate Non Interactive PDF Workflow (Générer un PDF non interactif) est une enveloppe de l’API de service Output `generatePDFOutput`. Il est utilisé pour générer des documents de PDF non interactifs à partir d’un modèle XDP et d’un fichier XML de données.
+Le flux de travail Generate Non Interactive PDF Workflow (Générer un PDF non interactif) est une enveloppe de l’API de service Output `generatePDFOutput`. Il est utilisé pour générer des documents PDF non interactifs à partir de modèles XDP et des fichiers .xml de données.
 
 ### Flux de travail Generate Non Interactive PDF Output   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
@@ -156,6 +156,6 @@ Le flux de travail Generate Non Interactive PDF Workflow (Générer un PDF non i
 * *Content Root* : indique le chemin d’accès au dossier du référentiel dans lequel les fragments et les images utilisés dans le modèle XDP d’entrée sont stockés.
 * *Locale* : indique la langue par défaut du formulaire PDF généré.
 * *Acrobat Version* : indique la version d’Acrobat ciblée pour le formulaire PDF généré.
-* Linearized PDF : indique si le PDF généré doit être optimisé pour l’affichage Web.
+* Linearized PDF : indique si le PDF généré doit être optimisé pour l’affichage Web.
 * *Tagged PDF* : indique si le PDF généré est accessible.
 * *XCI document* : indique le chemin d’accès au fichier XCI.

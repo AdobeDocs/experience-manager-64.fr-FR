@@ -13,7 +13,7 @@ exl-id: ecedde63-abbb-4e69-901e-1e4b7a59f539
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -22,5 +22,5 @@ ht-degree: 87%
 Les données générées lors de l’appel d’un processus de longue durée peuvent occuper un espace considérable, réduisant les performances d’AEM forms et monopolisant un espace disque superflu. Il est recommandé de purger ces données de processus lorsque des enregistrements ne sont plus nécessaires. AEM forms fournit plusieurs outils pour purger ces données :
 
 * Vous pouvez utiliser Administration Console pour effectuer une purge individuelle des enregistrements obsolètes liés à des processus de longue durée ou planifier des purges automatiques régulières (voir [Purge d’enregistrements de la base de données de Job Manager](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database)).
-* Vous pouvez utiliser l’API Java AEM forms et l’API du service Web pour purger automatiquement les données liées à des processus de longue durée (Consultez la section « Purge des données de processus » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).)
-* Utilisez l’outil approprié pour purger les processus basés sur le nom du processus et d’autres paramètres. Pour plus d’informations, voir le fichier Lisez-moi de l’outil de purge de processus, situé dans *[racine aem_forms]*\sdk\misc\Foundation\ProcessPurgeTool\ReadMe.txt.
+* Vous pouvez utiliser l’API Java AEM forms et l’API du service Web pour purger automatiquement les données liées à des processus de longue durée (Consultez la section « Purge des données de processus » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).)
+* Utilisez l’outil approprié pour purger les processus basés sur le nom du processus et d’autres paramètres. Pour plus de détails, consultez le fichier « readme » de l’outil de purge de processus, situé dans *[racine aem_forms]*\sdk\misc\Foundation\ProcessPurgeTool\ReadMe.txt.

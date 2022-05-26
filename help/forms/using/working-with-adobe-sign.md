@@ -14,7 +14,7 @@ exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '3562'
-ht-degree: 75%
+ht-degree: 90%
 
 ---
 
@@ -40,7 +40,7 @@ L’intégration d’Adobe Sign à AEM Forms prend en charge ce qui suit :
 * Processus de signature dynamiques (intégration au processus AEM Forms)
 * Authentification par le biais d’une base de connaissances, un téléphone et des profils de réseaux sociaux
 
-En savoir plus [bonnes pratiques d’utilisation d’Adobe Sign avec les formulaires adaptatifs](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) pour créer de meilleures expériences de signature.
+Découvrez les [Bonnes pratiques d’utilisation d’Adobe Sign avec les formulaires adaptatifs](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) pour créer de meilleures expériences de signature.
 
 ## Prérequis {#prerequisites}
 
@@ -53,7 +53,7 @@ Avant d’utiliser Adobe Sign dans un formulaire adaptatif :
 
 Effectuez les étapes suivantes pour configurer Adobe Sign pour un formulaire adaptatif :
 
-1. [Modifier les propriétés du formulaire adaptatif pour le signe d’Adobe](#enableadobesign)
+1. [Modifier les propriétés du formulaire adaptatif pour Adobe Sign](#enableadobesign)
 1. [Ajouter des champs Adobe Sign à un formulaire adaptatif](#addadobesignfieldstoanadaptiveform)
 1. [Activer Adobe Sign pour un formulaire adaptatif](#enableadobsignforanadaptiveform)
 1. [Sélectionner un service cloud Adobe Sign pour un formulaire adaptatif](#selectadobesigncloudserviceforanadaptiveform)
@@ -67,27 +67,27 @@ Effectuez les étapes suivantes pour configurer Adobe Sign pour un formulaire ad
 
 Configurez les propriétés du formulaire adaptatif pour Adobe Sign pour un formulaire adaptatif existant ou nouveau.
 
-[Création d’un formulaire adaptatif pour Adobe Sign](/help/forms/using/working-with-adobe-sign.md#create-an-adaptive-form-for-adobe-sign) décrit les étapes de création d’un formulaire adaptatif de base. Voir [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md) pour d’autres options disponibles lors de la création d’un formulaire adaptatif.
+[Créer un formulaire adaptatif pour Adobe Sign](/help/forms/using/working-with-adobe-sign.md#create-an-adaptive-form-for-adobe-sign) : cette section décrit les étapes de création d’un formulaire adaptatif de base. Voir [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md) pour d’autres options disponibles lors de la création d’un formulaire adaptatif.
 
 #### Création d’un formulaire adaptatif pour Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
 
 Pour créer un formulaire adaptatif pour Adobe Sign, procédez comme suit :
 
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Appuyez sur **[!UICONTROL Créer]** et sélectionner **[!UICONTROL Formulaire adaptatif]**. Une liste de modèles s’affiche. Sélectionnez le modèle et appuyez sur **[!UICONTROL Suivant]**.
+1. Appuyez sur **[!UICONTROL Créer]** et sélectionner **[!UICONTROL Formulaire adaptatif]**. Une liste de modèles s’affiche. Sélectionnez un modèle, puis appuyez sur **[!UICONTROL Suivant]**.
 1. Dans l’onglet **[!UICONTROL De base]** :
 
-   1. Spécifiez la variable **Nom** et **Titre** pour le formulaire adaptatif.
+   1. Aoutez un **Nom** et un **Titre** au formulaire adaptatif.
    1. Sélectionnez la [conteneur de configuration](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de la configuration d’Adobe Sign avec AEM Forms.
 
       >[!NOTE]
       >
-      >Le **[!UICONTROL Adobe Sign Cloud Service]** la liste déroulante affiche les services cloud configurés dans le conteneur de configuration que vous sélectionnez dans ce champ. Le **[!UICONTROL Adobe Sign Cloud Service]** La liste déroulante est disponible dans la **[!UICONTROL Signature électronique]** de la section des propriétés du formulaire adaptatif lorsque vous sélectionnez la propriété **[!UICONTROL Activer Adobe Sign]** .
+      >La liste déroulante **[!UICONTROL Adobe Sign Cloud Service]** affiche les services cloud configurés dans le conteneur de configuration que vous sélectionnez dans ce champ. La liste déroulante **[!UICONTROL Adobe Sign Cloud Service]** est disponible dans la section **[!UICONTROL Signature électronique]** des propriétés du formulaire adaptatif lorsque vous sélectionnez lʼoption **[!UICONTROL Activer Adobe Sign]**.
 
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, sélectionnez l’une des options suivantes :
 
-   * Sélectionnez la **[!UICONTROL Associer un modèle de formulaire comme modèle de document d’enregistrement]** et sélectionnez un modèle de document d’enregistrement. Si vous utilisez un formulaire adaptatif basé sur un modèle de formulaire, les documents envoyés pour signature affichent uniquement les champs basés sur le modèle de formulaire associé. Il n’affiche pas tous les champs du formulaire adaptatif.
-   * Sélectionnez la **[!UICONTROL Générer un document d’enregistrement]** . Si vous utilisez un formulaire adaptatif activé avec l’option Document d’enregistrement, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
+   * Sélectionnez lʼoption **[!UICONTROL Associer un modèle de formulaire en tant que modèle de document d’enregistrement]**, puis choisissez un modèle de document d’enregistrement. Si vous utilisez un formulaire adaptatif basé sur un modèle de formulaire, les documents envoyés pour signature n’affichent que les champs basés sur le modèle de formulaire associé. Ils n’affichent pas tous les champs du formulaire adaptatif.
+   * Sélectionnez lʼoption **[!UICONTROL Générer un document d’enregistrement]**. Si vous utilisez un formulaire adaptatif avec lʼoption Document d’enregistrement activée, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
 
 1. Appuyez sur **[!UICONTROL Créer.]** Un formulaire adaptatif compatible est créé, qui peut être utilisé pour ajouter des champs Adobe Sign.
 
@@ -96,12 +96,12 @@ Pour créer un formulaire adaptatif pour Adobe Sign, procédez comme suit :
 Effectuez les étapes suivantes pour utiliser Adobe Sign dans un formulaire adaptatif existant :
 
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Sélectionnez le formulaire adaptatif et appuyez sur **[!UICONTROL Propriétés]**.
+1. Sélectionnez le document adaptatif et cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans le **[!UICONTROL De base]** , sélectionnez la variable [conteneur de configuration](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de la configuration d’Adobe Sign avec AEM Forms.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, sélectionnez l’une des options suivantes :
 
-   * Sélectionnez la **[!UICONTROL Associer un modèle de formulaire comme modèle de document d’enregistrement]** et sélectionnez un modèle de document d’enregistrement. Si vous utilisez un formulaire adaptatif basé sur un modèle de formulaire, les documents envoyés pour signature affichent uniquement les champs basés sur le modèle de formulaire associé. Il n’affiche pas tous les champs du formulaire adaptatif.
-   * Sélectionnez la **[!UICONTROL Générer un document d’enregistrement]** . Si vous utilisez un formulaire adaptatif activé avec l’option Document d’enregistrement, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
+   * Sélectionnez lʼoption **[!UICONTROL Associer un modèle de formulaire en tant que modèle de document d’enregistrement]**, puis choisissez un modèle de document d’enregistrement. Si vous utilisez un formulaire adaptatif basé sur un modèle de formulaire, les documents envoyés pour signature n’affichent que les champs basés sur le modèle de formulaire associé. Ils n’affichent pas tous les champs du formulaire adaptatif.
+   * Sélectionnez lʼoption **[!UICONTROL Générer un document d’enregistrement]**. Si vous utilisez un formulaire adaptatif avec lʼoption Document d’enregistrement activée, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
 
 1. Appuyez sur **[!UICONTROL Enregistrer et fermer]**. Le formulaire adaptatif est activé pour Adobe Sign.
 
@@ -111,7 +111,7 @@ Adobe Sign dispose de plusieurs champs pouvant être placés sur un formulaire a
 
 Effectuez les étapes suivantes pour ajouter des champs à un formulaire adaptatif et personnaliser diverses options liées à ces champs :
 
-1. Faites glisser et déposez le composant **Bloc Adobe Sign** de l’explorateur de composants dans le formulaire adaptatif. Le composant Bloc Adobe Sign dispose de tous les champs Adobe Sign pris en charge. Par défaut, il ajoute une **Signature** au formulaire adaptatif.
+1. Faites glisser et déposez le composant **Bloc Adobe Sign** de l’explorateur de composants dans le formulaire adaptatif. Le composant Bloc Adobe Sign dispose de tous les champs Adobe Sign pris en charge. Par défaut, il ajoute un champ **Signature** au formulaire adaptatif.
 
    ![sign-block](assets/sign-block.png)
 
@@ -123,13 +123,13 @@ Effectuez les étapes suivantes pour ajouter des champs à un formulaire adaptat
    >* Utilisez le bloc Adobe Sign seulement pour les formulaires adaptifs qui génèrent automatiquement un document d’enregistrement. Si vous utilisez un fichier XDP personnalisé pour générer un document d’enregistrement ou un formulaire adaptatif basé sur un modèle de formulaire, le bloc Adobe Sign n’est pas requis.
 
 
-1. Sélectionnez la **Bloc Adobe Sign** et appuyez sur **Modifier** ![aem_6_3_edit](assets/aem_6_3_edit.png) icône . Il affiche des options pour ajouter des champs et mettre en forme l’apparence d’un champ.
+1. Sélectionnez le composant **Bloc Adobe Sign** et appuyez sur l’icône ![aem_6_3_edit](assets/aem_6_3_edit.png) **Modifier**. Il affiche des options pour ajouter des champs et mettre en forme l’apparence d’un champ.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** Sélectionnez et ajoutez des champs Adobe Sign. **B.** Développez le bloc Adobe Sign en mode Plein écran.
 
-1. Appuyez sur le bouton **Champ Adobe Sign** ![aem_6_3_adobésité](assets/aem_6_3_adobesign.png) icône . Il affiche des options permettant de sélectionner et d’ajouter des champs Adobe Sign.
+1. Cliquez sur lʼicône ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) **Champ Adobe Sign**. Il affiche des options permettant de sélectionner et d’ajouter des champs Adobe Sign.
 
    Développez l’objet **Type** pour sélectionner un champ Adobe Sign et appuyez sur Terminé . ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour ajouter le champ sélectionné au bloc Adobe Sign. Le champ déroulant **Type** comprend les types de champs Signature, Informations sur le signataire et Données. Intégration d’Adobe Sign aux champs de prise en charge d’AEM Forms répertoriés dans la liste déroulante Type uniquement. Pour plus d’informations sur les champs Adobe Sign, voir la documentation [Adobe Sign](https://helpx.adobe.com/fr/sign/help/field-types.html).
 
@@ -152,7 +152,7 @@ Un document peut également avoir plusieurs signataires. Par exemple, une demand
 
 Effectuez les étapes suivantes pour sélectionner un service cloud et un ordre de signature :
 
-![service cloud](assets/cloud-service.png)
+![cloud-service](assets/cloud-service.png)
 
 1. Dans l’explorateur de contenu, appuyez sur **Conteneur de formulaires**, puis sur l’icône **Configurer** ![configure](assets/configure.png). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs.
 1. Dans l’explorateur de propriétés, développez l’accordéon **Signature électronique** et sélectionnez l’option **Activer Adobe Sign**. Elle active Adobe Sign pour un formulaire adaptatif.
@@ -160,7 +160,7 @@ Effectuez les étapes suivantes pour sélectionner un service cloud et un ordre 
 
    Si la liste du **service cloud Adobe Sign** est vide, suivez l’article [Configurer Adobe Sign avec AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md) pour configurer le service.
 
-   La liste déroulante répertorie les services cloud qui existent dans la variable `global` dossier dans Outils > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. En outre, la liste déroulante répertorie également les services cloud qui existent dans le dossier que vous sélectionnez dans le **[!UICONTROL Conteneur de configuration]** lorsque vous créez un formulaire adaptatif.
+   La liste déroulante répertorie les Cloud Services présents dans le dossier `global` dans Outils > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. La liste déroulante répertorie également les Cloud Services qui existent dans le dossier que vous sélectionnez dans le champ **[!UICONTROL Conteneur de configurations]** lorsque vous créez un formulaire adaptatif.
 
 1. Sélectionnez l’ordre de signature dans la boîte de dialogue **Les signataires peuvent signer**. Les signataires Adobe Sign peuvent signer un formulaire adaptatif de manière **séquentielle** (l’un après l’autre) ou **simultanée** (dans n’importe quel ordre).
 
@@ -176,10 +176,10 @@ Vous ne pouvez avoir qu’un seul signataire ou plusieurs signataires pour un fo
 
 1. Dans l’explorateur de contenu, appuyez sur **Conteneur de formulaires**, puis sur l’icône **Configurer** ![configure](assets/configure.png). Il ouvre l’explorateur de propriétés avec les propriétés du conteneur de formulaires adaptatifs.
 1. Dans l’explorateur de propriétés, développez l’accordéon **Signature électronique** et sélectionnez l’option **Activer Adobe Sign**. Elle active Adobe Sign pour un formulaire adaptatif.
-1. Appuyez sur **Ajouter un signataire** sous **Configuration du signataire.** Il ajoute un signataire au formulaire adaptatif. Vous pouvez ajouter plusieurs signataires Adobe Sign à un formulaire adaptatif.
+1. Appuyez sur **Ajouter un signataire** sous **Configuration du signataire.** Cela ajoute un signataire au formulaire adaptatif. Vous pouvez ajouter plusieurs signataires Adobe Sign à un formulaire adaptatif.
 1. ![phone-details](assets/phone-details.png)
 
-   Cliquez sur le bouton **Modifier** ![aem_6_3_edit](assets/aem_6_3_edit.png) pour spécifier les informations suivantes sur le signataire :
+   Cliquez sur l’icône **Modifier** ![aem_6_3_edit](assets/aem_6_3_edit.png) pour spécifier les informations suivantes concernant le signataire :
 
    * **Titre :** spécifiez un titre pour identifier de manière unique un signataire.
    * **Le signataire et la personne remplissant le formulaire sont-ils les mêmes ? :** Sélectionner **Oui**, si l’utilisateur et le premier signataire sont la même personne. Si l’option est définie sur **Non,** n’utilisez pas le composant d’étape de signature dans le formulaire adaptatif. Si le formulaire contient un composant Étape de signature, le champ est automatiquement défini sur Oui.
@@ -197,7 +197,7 @@ Vous ne pouvez avoir qu’un seul signataire ou plusieurs signataires pour un fo
 
    L’image ci-dessus a deux exemples de blocs Adobe Sign : Personal-Information et Office-details
 
-   Appuyez sur Terminé . ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icône . Le signataire est ajouté et configuré.
+   Appuyez sur l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). Le signataire est ajouté et configuré.
 
 ### Sélectionner Envoyer l’action pour un formulaire adaptatif {#selectsubmitactionforanadaptiveform}
 
@@ -211,23 +211,23 @@ En outre, un formulaire adaptatif Adobe Sign est envoyé uniquement après que t
 
 Votre expérience de signature de formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature. Sur le formulaire publié, les champs Bloc Adobe Sign sont affichés lorsqu’un signataire reçoit le formulaire à signer dans un courrier électronique. Cette expérience est également connue comme expérience de signature hors du formulaire. Vous pouvez également configurer une expérience de signature dans le formulaire pour le premier signataire. Pour les étapes détaillées, voir [Créer une expérience de signature dans le formulaire](/help/forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
 
-## Configuration des signatures cloud pour un formulaire adaptatif {#configure-cloud-signatures-for-an-adaptive-form}
+## Configurer des signatures cloud pour un formulaire adaptatif {#configure-cloud-signatures-for-an-adaptive-form}
 
 Les signatures numériques basées sur le cloud ou les signatures distantes sont une nouvelle génération de signatures numériques qui fonctionnent sur les postes de travail, les appareils mobiles et le web, et qui répondent aux niveaux de conformité et d’assurance les plus élevés pour l’authentification des signataires. Vous pouvez signer un formulaire adaptatif avec des signatures numériques basées sur le cloud.
 
-Après [modification des propriétés d’un formulaire adaptatif pour le signe d’Adobe](#enableadobesign), procédez comme suit pour ajouter un champ de signature cloud à un formulaire adaptatif :
+Une fois la [modification des propriétés de formulaire adaptatif pour Adobe Sign](#enableadobesign) terminée, effectuez les étapes suivantes pour ajouter un champ de signature cloud à un formulaire adaptatif :
 
-1. Faites glisser et déposez le composant **Bloc Adobe Sign** de l’explorateur de composants dans le formulaire adaptatif. Le composant Bloc Adobe Sign dispose de tous les champs Adobe Sign pris en charge. Par défaut, il ajoute une **Signature** au formulaire adaptatif.
+1. Faites glisser et déposez le composant **Bloc Adobe Sign** de l’explorateur de composants dans le formulaire adaptatif. Le composant Bloc Adobe Sign dispose de tous les champs Adobe Sign pris en charge. Par défaut, il ajoute un champ **Signature** au formulaire adaptatif.
 
    ![sign-block](assets/sign-block.png)
 
-1. Sélectionnez la **Bloc Adobe Sign** et appuyez sur **Modifier** ![aem_6_3_edit](assets/aem_6_3_edit.png) icône . Il affiche des options pour ajouter des champs et mettre en forme l’apparence d’un champ.
+1. Sélectionnez le composant **Bloc Adobe Sign** et appuyez sur l’icône ![aem_6_3_edit](assets/aem_6_3_edit.png) **Modifier**. Il affiche des options pour ajouter des champs et mettre en forme l’apparence d’un champ.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** Sélectionnez et ajoutez des champs Adobe Sign. **B.** Développez le bloc Adobe Sign en mode Plein écran.
 
-1. Appuyez sur le bouton **Champ Adobe Sign** ![aem_6_3_adobésité](assets/aem_6_3_adobesign.png) icône . Il affiche des options permettant de sélectionner et d’ajouter des champs Adobe Sign.
+1. Cliquez sur lʼicône ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) **Champ Adobe Sign**. Il affiche des options permettant de sélectionner et d’ajouter des champs Adobe Sign.
 
    Développez l’objet **Type** champ déroulant à sélectionner **Signature numérique** et appuyez sur Terminé . ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour ajouter le champ sélectionné au bloc Adobe Sign.
 
@@ -235,12 +235,12 @@ Après [modification des propriétés d’un formulaire adaptatif pour le signe 
 
    Il est obligatoire de fournir un nom unique pour un champ.
 
-   Appliquez des signatures numériques au formulaire adaptatif à l’aide de :
+   Appliquez des signatures numériques au formulaire adaptatif à l’aide des éléments suivants :
 
    * Signatures cloud : signez avec un [ID numérique](https://helpx.adobe.com/fr/sign/kb/digital-certificate-providers.html) hébergé par un prestataire de confiance.
    * Adobe Acrobat ou Reader : téléchargez et ouvrez le document avec Adobe Acrobat ou Reader pour le signer à l’aide d’une carte à puce, un jeton USB ou un ID numérique basé sur des fichiers.
 
-   Après avoir ajouté le champ de signature cloud au formulaire adaptatif, procédez comme suit pour terminer le processus de configuration :
+   Une fois le champ de signature cloud ajouté au formulaire adaptatif, effectuez les étapes suivantes pour terminer le processus de configuration :
 
    * [Activer Adobe Sign pour un formulaire adaptatif](#enableadobsignforanadaptiveform)
    * [Sélectionner un service cloud Adobe Sign pour un formulaire adaptatif](#selectadobesigncloudserviceforanadaptiveform)
@@ -264,7 +264,7 @@ Utilisez le composant Étape de signature pour fournir une zone pour signer éle
 Effectuez les étapes suivantes pour configurer le composant Étape de signature :
 
 1. Glissez et déposez le composant **Étape de signature** dans le formulaire à partir de l’explorateur de composants.
-1. Sélectionnez le composant d’étape Signature nouvellement ajouté et appuyez sur la touche **Configurer** ![configure](assets/configure.png) icône . Elle ouvre l’explorateur de propriétés et affiche les propriétés Étape de signature. Configurez les propriétés suivantes :
+1. Sélectionnez le composant Étape de signature nouvellement ajouté et cliquez sur l’icône ![configure](assets/configure.png) **Configurer**. Elle ouvre l’explorateur de propriétés et affiche les propriétés Étape de signature. Configurez les propriétés suivantes :
 
    * **Nom d’élément** : spécifiez le nom du composant.
    * **Titre :** indiquez le titre unique du composant.
@@ -279,7 +279,7 @@ Effectuez les étapes suivantes pour configurer le composant Étape de signature
 
    >[!NOTE]
    >
-   >* Lorsque vous faites glisser le composant **[!UICONTROL Étape de signature]** dans le formulaire, l’option **[!UICONTROL Le signataire et la personne remplissant le formulaire ne sont-ils qu’une seule et même personne ?]** est automatiquement définie sur **Oui**. Il est nécessaire pour que le formulaire fonctionne.
+   >* Lorsque vous faites glisser le composant **[!UICONTROL Étape de signature]** dans le formulaire, l’option **[!UICONTROL Le signataire et la personne remplissant le formulaire ne sont-ils qu’une seule et même personne ?]** est automatiquement définie sur **Oui**. Cela est nécessaire pour que le formulaire continue de fonctionner.
    >* Les formulaires adaptatifs activés pour Adobe Sign ne prennent pas en charge l’utilisation du bouton Envoyer sur la section ou le panneau à l’aide du composant Étape de signature. Vous pouvez ajouter une étape de résumé après que l’étape Signature pour l’envoi manuel ou un envoi automatique est déclenchée après l’intervalle défini à l’aide du [service de configuration Adobe Sign](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
 
 
@@ -307,6 +307,6 @@ Maintenant, l’expérience de signature dans le formulaire est prête. Vous pou
 
 **Réponse** : Vous pouvez utiliser simultanément les deux composants dans un formulaire. Voici quelques recommandations relatives à l’utilisation des composants suivants :
 
-**Bloc Adobe Sign :** Vous pouvez utiliser le bloc Adobe Sign pour ajouter des champs Adobe Sign n’importe où dans le formulaire adaptatif. Il permet également d’attribuer des champs spécifiques aux signataires. Lorsqu’un formulaire adaptatif est prévisualisé ou publié, le bloc Adobe Sign n’est pas visible par défaut. Ces blocs sont disponibles uniquement dans le document de signature. Dans le document de signature, seuls les champs affectés à un signataire sont activés. Le bloc Adobe Sign peut être utilisé avec les premiers et futurs signataires.
+**Bloc Adobe Sign :** vous pouvez utiliser le bloc Adobe Sign pour ajouter des champs Adobe Sign n’importe où sur le formulaire adaptatif. Il permet également d’attribuer des champs spécifiques aux signataires. Lorsqu’un formulaire adaptatif est prévisualisé ou publié, le bloc Adobe Sign n’est pas visible par défaut. Ces blocs sont disponibles uniquement dans le document de signature. Dans le document de signature, seuls les champs affectés à un signataire sont activés. Le bloc Adobe Sign peut être utilisé avec les premiers et futurs signataires.
 
 **Composant d’étape de signature :** vous pouvez utiliser le composant d’étape de signature pour créer une expérience de signature dans le formulaire. Il permet uniquement au premier signataire de signer pendant que le formulaire est rempli. Lorsque la section contenant le composant Étape de signature est générée, elle affiche une version PDF à signer du formulaire. Il s’agit généralement de la dernière ou de l’avant-dernière section suivie du composant de résumé d’un formulaire.

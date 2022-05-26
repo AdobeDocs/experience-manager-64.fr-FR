@@ -14,7 +14,7 @@ exl-id: 3eecff45-405f-482f-b0de-acf6557a7813
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1117'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Les documents créés par PDF Generator dans Acrobat 5.0 ou versions ultérieur
 
 Les métadonnées contiennent (sans s’y limiter) des informations qui s’affichent également dans l’onglet Description de la boîte de dialogue Propriétés du document dans Acrobat. Les modifications apportées dans l’onglet Description sont répercutées sur les métadonnées du document. Il est possible d’étendre et de modifier ces dernières à l’aide de produits tiers.
 
-La plateforme XMP (Extensible Metadata Platform, plateforme de métadonnées extensible) offre aux applications Adobe une structure XML commune qui normalise la création, le traitement et l’échange des métadonnées d’un document dans les flux de travail de publication. Vous pouvez enregistrer et importer le code source XML des métadonnées du document au format XMP, ce qui facilite le partage des métadonnées entre différents documents. Pour plus de détails sur les fichiers XMP, consultez le document sur la plate-forme XMP [(Extensible Metadata Platform)](https://www.adobe.com/products/xmp/) et le [centre des développeurs Adobe XMP](https://www.adobe.com/devnet/xmp.html).
+La plateforme XMP (Extensible Metadata Platform, plateforme de métadonnées extensible) offre aux applications Adobe une structure XML commune qui normalise la création, le traitement et l’échange des métadonnées d’un document dans les flux de travail de publication. Vous pouvez enregistrer et importer le code source XML des métadonnées du document au format XMP, ce qui facilite le partage des métadonnées entre différents documents. Pour plus de détails sur les fichiers XMP, consultez le document sur la plate-forme XMP [(Extensible Metadata Platform)](https://www.adobe.com/fr/products/xmp/) et le [centre des développeurs Adobe XMP](https://www.adobe.com/devnet/xmp.html).
 
 Vous pouvez créer des fichiers XMP dans Acrobat.
 
@@ -96,7 +96,7 @@ Si le fichier ZIP contient plusieurs fichiers HTML au niveau le plus bas de son 
 
 ## Exportation d’un fichier PDF dans un autre format de fichier (Windows uniquement) {#export-a-pdf-file-to-another-file-format-windows-only}
 
-Vous pouvez exporter des fichiers PDF dans différents formats de fichiers, comme décrit dans le chapitre consacré au service Generate PDF du [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
+Vous pouvez exporter des fichiers PDF dans différents formats de fichiers, comme décrit dans le chapitre consacré au service Generate PDF du [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > Exporter un PDF.
 1. Cliquez sur Parcourir pour déterminer l’emplacement du fichier PDF à exporter.
@@ -105,7 +105,7 @@ Vous pouvez exporter des fichiers PDF dans différents formats de fichiers, comm
 
    La durée de conversion affichée une fois le fichier converti peut être supérieure à la valeur spécifiée ici. En effet, elle inclut le temps passé à attendre le thread ou le processus, la durée de conversion du fichier et le temps pris par le convertisseur de secours (le cas échéant). time. La valeur du paramètre Spécifier un délai d’expiration ne reflète que le temps de conversion du fichier.
 
-1. (Facultatif) Dans le **Définition d’un profil de contrôle en amont personnalisé** , cliquez sur Parcourir, puis sélectionnez une [profil de contrôle en amont personnalisé](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Les profils de contrôle en amont ne sont utilisés que lors de la conversion de documents au format d’archive du PDF (PDF/A).
+1. (Facultatif) Dans l’option **Spécifier un profil de contrôle en amont personnalisé**, cliquez sur Parcourir et sélectionnez un [profil de contrôle en amont personnalisé](https://helpx.adobe.com/fr/acrobat/using/preflight-profiles-acrobat-pro.html). Les profils de contrôle en amont sont uniquement utilisés lors de la conversion de documents au format d’archivage PDF (PDF/A).
 1. Cliquez sur Exporter. Lorsque la conversion est terminée, un lien renvoyant au fichier exporté s’affiche.
 1. Cliquez sur ce lien pour afficher le fichier converti.
 

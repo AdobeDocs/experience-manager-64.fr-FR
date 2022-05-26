@@ -12,7 +12,7 @@ exl-id: 5822145f-d317-4807-a3f0-1d2aea0a779b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1816'
-ht-degree: 67%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Créer des modèles d’impression et web pour la communication interactive
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Ce tutoriel est une étape dans la [Créer votre première communication interactive](/help/forms/using/create-your-first-interactive-communication.md) série. Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
+Ce tutoriel fait partie de la série [Création de votre première communication interactive](/help/forms/using/create-your-first-interactive-communication.md). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
 Pour créer une communication interactive, vous devez disposer de modèles disponibles sur le serveur AEM pour les canaux d’impression et web.
 
@@ -46,15 +46,15 @@ Créez et gérez un modèle pour le canal d’impression de la communication int
 
 ### Créer un modèle XDP en utilisant Forms Designer {#create-xdp-template-using-forms-designer}
 
-Selon la variable [cas pratique](/help/forms/using/create-your-first-interactive-communication.md) et [anatomie](/help/forms/using/planning-interactive-communications.md), créez les sous-formulaires suivants dans le modèle XDP :
+En fonction du [cas d’utilisation](/help/forms/using/create-your-first-interactive-communication.md) et de la [structure](/help/forms/using/planning-interactive-communications.md), créez les sous-formulaires suivants dans le modèle XDP :
 
 * Informations de facturation : comprend un fragment de document
-* Détails du client : Inclut un fragment de document
-* Récapitulatif de facturation : Inclut un fragment de document
-* Résumé : Inclut un fragment de document (sous-formulaire Frais) et un graphique (sous-formulaire Graphiques)
+* Informations sur le client : comprend un fragment de document
+* Récapitulatif de facturation : comprend un fragment de document
+* Résumé : comprend un fragment de document (sous-formulaire Frais) et un graphique (sous-formulaire Graphiques)
 * Appels détaillés : Inclut un tableau (fragment de mise en page)
-* Payer maintenant : Inclut une image
-* Services à valeur ajoutée : Inclut une image
+* Payer maintenant : comprend une image
+* Services à valeur ajoutée : comprend une image
 
 ![create_print_template](assets/create_print_template.gif)
 
@@ -62,23 +62,23 @@ Ces sous-formulaires sont affichés en tant que zones cibles dans le modèle d�
 
 Exécutez les étapes suivantes pour créer un modèle XDP pour le canal d’impression :
 
-1. Ouvrez Forms Designer, puis sélectionnez **Fichier** > **Nouveau** > **Utiliser un formulaire vierge,** appuyer **Suivant**, puis appuyez sur **Terminer** pour ouvrir le formulaire à des fins de création de modèle.
+1. Ouvrez Forms Designer, sélectionnez **Fichier** > **Nouveau** > **Utiliser un formulaire vierge,** cliquez sur **Suivant**, puis sur **Terminer** pour ouvrir le formulaire afin de créer le modèle.
 
    Assurez-vous que les options **Bibliothèque d’objets** et **Objet** sont sélectionnées dans le menu **Fenêtre**.
 
 1. Faites glisser le composant **Sous-formulaire** de la **bibliothèque d’objets** vers le formulaire.
 1. Sélectionnez le sous-formulaire pour afficher les options correspondantes dans la fenêtre **Objet** dans le volet de droite.
-1. Sélectionnez la **Subform** et sélectionnez **Distribué** de la **Contenu** liste déroulante. Faites glisser l’extrémité gauche du sous-formulaire pour ajuster la longueur.
+1. Sélectionnez l’onglet **Sous-formulaire** et sélectionnez **Distribué** dans la liste déroulante **Contenu**. Faites glisser l’extrémité gauche du sous-formulaire pour ajuster la longueur.
 1. Dans l’onglet **Liaisons** :
 
-   1. Spécifier **BillDetails** dans le **Nom** champ .
+   1. Spécifiez **billdetails** dans le champ **Nom**.
    1. Sélectionnez **Aucune liaison de données** dans la liste déroulante **Liaison de données**.
 
    ![forms_designer_subform](assets/forms_designer_subform.png)
 
-1. De même, sélectionnez le sous-formulaire racine, puis le **Subform** et sélectionnez **Distribué** de la **Contenu** liste déroulante. Dans l’onglet **Liaisons** :
+1. De même, sélectionnez le sous-formulaire racine et l’onglet **Sous-formulaire**, puis sélectionnez **Distribué** dans la liste déroulante **Contenu**. Dans l’onglet **Liaisons** :
 
-   1. Spécifier **TelecaBill** dans le **Nom** champ .
+   1. Spécifiez **TelecaBill** dans le champ **Nom**.
    1. Sélectionnez **Aucune liaison de données** dans la liste déroulante **Liaison de données**.
 
    ![root_subform_print_template](assets/root_subform_print_template.png)
@@ -88,7 +88,7 @@ Exécutez les étapes suivantes pour créer un modèle XDP pour le canal d’imp
    * BillDetails
    * CustomerDetails
    * BillSummary
-   * Résumé : sélectionnez le **Subform** et sélectionnez **Positionné** de la **Contenu** liste déroulante de ce sous-formulaire. Insérez les sous-formulaires suivants dans le sous-formulaire **Résumé**.
+   * Résumé : sélectionnez l’onglet **Sous-formulaire**, puis **Positionné** dans la liste déroulante **Contenu** de ce sous-formulaire. Insérez les sous-formulaires suivants dans le sous-formulaire **Résumé**.
 
       * Frais
       * Graphiques
@@ -98,7 +98,7 @@ Exécutez les étapes suivantes pour créer un modèle XDP pour le canal d’imp
 
    Pour gagner du temps, vous pouvez également copier et coller des sous-formulaires existants pour créer de nouveaux sous-formulaires.
 
-   Pour changer le **Graphiques** Sélectionnez le sous-formulaire situé à droite du sous-formulaire Frais . **Graphiques** dans le volet de gauche, sélectionnez le sous-formulaire **Disposition** et spécifiez une valeur pour **AncreX** champ . La valeur doit être supérieure à la valeur du champ **Largeur** pour le sous-formulaire **Frais**. Sélectionnez le sous-formulaire **Frais** et sélectionnez l’onglet **Mise en page** pour afficher la valeur du champ **Largeur.**
+   Pour déplacer le sous-formulaire **Graphiques** vers la droite du sous-formulaire Frais, sélectionnez le sous-formulaire **Graphiques** dans le volet gauche, puis l’onglet **Disposition** et indiquez une valeur pour le champ **AnchorX**. La valeur doit être supérieure à la valeur du champ **Largeur** pour le sous-formulaire **Frais**. Sélectionnez le sous-formulaire **Frais** et sélectionnez l’onglet **Mise en page** pour afficher la valeur du champ **Largeur.**
 
 1. Faites glisser l’objet **Texte** de la **bibliothèque d’objets** vers le formulaire et saisissez le texte **Composez le XXXX pour vous abonner** dans la zone.
 1. Cliquez avec le bouton droit de la souris sur l’objet texte dans le volet de gauche, sélectionnez **Renommer l’objet** et saisissez le nom de l’objet texte **S’abonner**.
@@ -118,17 +118,17 @@ Une fois que vous avez créé un modèle XDP à l’aide de Forms Designer, vous
 1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Appuyez sur **Créer** > **Chargement de fichier**.
 
-   Naviguez et sélectionnez le **create_first_ic_print_template** template (XDP) et appuyez sur **Ouvrir** pour importer le modèle XDP sur le serveur AEM Forms.
+   Accédez au modèle XDP **create_first_ic_print_template**, sélectionnez-le et cliquez sur **Ouvrir** pour importer le modèle XDP sur le serveur AEM Forms.
 
 ### Créer un modèle XDP pour des fragments de mise en page {#create-xdp-template-for-layout-fragments}
 
 Pour créer un fragment de mise en page pour le canal d’impression de la communication interactive, créez un XDP à l’aide de Forms Designer et chargez-le sur le serveur AEM Forms.
 
-1. Ouvrez Forms Designer, puis sélectionnez **Fichier** > **Nouveau** > **Utiliser un formulaire vierge,** appuyer **Suivant**, puis appuyez sur **Terminer** pour ouvrir le formulaire à des fins de création de modèle.
+1. Ouvrez Forms Designer, sélectionnez **Fichier** > **Nouveau** > **Utiliser un formulaire vierge**, cliquez sur **Suivant**, puis sur **Terminer** pour ouvrir le formulaire afin de créer le modèle.
 
    Assurez-vous que les options **Bibliothèque d’objets** et **Objet** sont sélectionnées dans le menu **Fenêtre**.
 
-1. Faites glisser et déposez le **Tableau** du composant **Bibliothèque d’objets** au formulaire.
+1. Faites glisser le composant **Tableau** de la **bibliothèque d’objets** vers le formulaire.
 1. Dans la boîte de dialogue Insérer un tableau :
 
    1. Spécifiez **5** comme nombre de colonnes.
@@ -140,7 +140,7 @@ Pour créer un fragment de mise en page pour le canal d’impression de la commu
 
    De même, renommez respectivement **Cell2**, **Cell3**, **Cell4** et **Cell5** en **Heure**, **Numéro**, **Durée** et **Frais**.
 
-1. Cliquez sur les champs de texte En-tête dans le **Vue Designer** et renommez-les en **Heure**, **Nombre**, **Durée**, et **Frais**.
+1. Cliquez sur les champs de texte d’en-tête dans l’**affichage Designer** et renommez-les comme suit : **Heure**, **Numéro**, **Durée** et **Frais**.
 
    ![layout_fragment_print](assets/layout_fragment_print.png)
 
@@ -148,7 +148,7 @@ Pour créer un fragment de mise en page pour le canal d’impression de la commu
 
    ![layout_fragment_print_repeat](assets/layout_fragment_print_repeat.png)
 
-1. Faites glisser et déposez le **Champ de texte** du composant **Bibliothèque d’objets** au **Vue Designer**.
+1. Faites glisser le composant **Champ de texte** de la **bibliothèque d’objets** vers l’**affichage Designer**.
 
    ![layout_fragment_print_text_field](assets/layout_fragment_print_text_field.png)
 
@@ -156,7 +156,7 @@ Pour créer un fragment de mise en page pour le canal d’impression de la commu
 
 1. Sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier sur le système de fichiers local :
 
-   1. Accédez à l’emplacement où enregistrer le fichier et indiquez le nom en tant que **table_lf**.
+   1. Accédez à l’emplacement où vous souhaitez enregistrer le fichier et spécifiez le nom **table_lf**.
    1. Sélectionnez **.xdp** dans la liste déroulante **Type**.
    1. Appuyez sur **Enregistrer**.
 
@@ -179,24 +179,24 @@ Exécutez les étapes suivantes pour créer un dossier pour les modèles modifia
 
 1. Appuyer **Outils** ![Outils](assets/tools-icon.svg) > **Explorateur de configuration**.
    * Pour plus d’informations, consultez la documentation relative au [](/help/sites-administering/configurations.md)Navigateur de configuration.
-1. Sur la page du navigateur de configuration, appuyez sur . **Créer**.
-1. Dans le **Créer une configuration** dialog, spécifiez **Create_First_IC_templates** comme titre du dossier, cochez **Modèles modifiables**, puis appuyez sur **Créer**.
+1. Sur la page du navigateur de configuration, cliquez sur **Créer**.
+1. Dans la boîte de dialogue **Créer une configuration**, spécifiez le titre **Create_First_IC_templates** pour le dossier, vérifiez **Modèles modifiables**, puis cliquez sur **Créer**.
 
    ![create_first_ic_web_template](assets/create_first_ic_web_template.png)
 
-   Le **Create_First_IC_templates** est créé et répertorié dans la **Explorateur de configuration** page.
+   Le dossier **Create_First_IC_templates** est créé et répertorié sur la page du **navigateur de configuration**.
 
 ### Créer le modèle {#create-the-template}
 
-Selon la variable [cas pratique](/help/forms/using/create-your-first-interactive-communication.md) et [anatomie](/help/forms/using/planning-interactive-communications.md), créez les panneaux suivants dans le modèle Web :
+En fonction du [cas d’utilisation](/help/forms/using/create-your-first-interactive-communication.md) et de la [structure](/help/forms/using/planning-interactive-communications.md), créez les panneaux suivants dans le modèle web :
 
 * Informations de facturation : comprend un fragment de document
-* Détails du client : Inclut un fragment de document
-* Récapitulatif de facturation : Inclut un fragment de document
-* Résumé des frais : Inclut un fragment de document et un graphique (mise en page à deux colonnes)
-* Appels détaillés : Inclut un tableau
-* Payer maintenant : Inclut une **Payer maintenant** bouton et image
-* Services à valeur ajoutée : Inclut une image et une **S’abonner** bouton .
+* Informations sur le client : comprend un fragment de document
+* Récapitulatif de facturation : comprend un fragment de document
+* Récapitulatif des frais : comprend un fragment de document et un graphique (disposition en deux colonnes)
+* Appels détaillés : comprend un tableau
+* Payer maintenant : comprend un bouton et une image **Payer maintenant**
+* Services à valeur ajoutée : comprend un bouton et une image **S’abonner**.
 
 ![create_web_template](assets/create_web_template.gif)
 
@@ -204,31 +204,31 @@ Toutes les entités telles que des fragments de document, des graphiques, des ta
 
 Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le dossier **Create_First_IC_templates** :
 
-1. Accédez au dossier de modèle approprié en sélectionnant **Outils** > **Modèles** > **Create_First_IC_templates** dossier.
+1. Accédez au dossier de modèle approprié en sélectionnant le dossier **Outils** > **Modèles** > **Create_First_IC_templates**.
 1. Appuyez sur **Créer**.
-1. Sur le **Sélection d’un type de modèle** assistant de configuration, sélectionnez **Communication interactive - Canal web** et appuyez sur **Suivant**.
-1. Sur le **Détails du modèle** assistant de configuration, spécifiez **Create_First_IC_Web_Template** comme titre du modèle. Spécifiez une description facultative et appuyez sur **Créer**.
+1. Dans l’assistant de configuration **Choisir un type de modèle**, sélectionnez **Communication interactive - Canal web** et cliquez sur **Suivant**.
+1. Dans l’assistant de configuration **Détails du modèle**, spécifiez comme titre pour le modèle **Create_First_IC_Web_Template**. Spécifiez une description facultative et appuyez sur **Créer**.
 
-   Un message de confirmation indiquant que la variable **Create_First_IC_Web_Template** s’affiche.
+   Un message de confirmation indiquant que **Create_First_IC_Web_Template** sʼaffiche.
 
 1. Appuyez sur **Ouvrir** pour ouvrir le modèle dans l’éditeur de modèles.
 1. Sélectionnez **Contenu initial** dans la liste déroulante en regard de l’option **Aperçu**.
 
    ![template_editor_initial_content](assets/template_editor_initial_content.png)
 
-1. Appuyer **Panneau racine** puis appuyez sur **+** pour afficher la liste des composants que vous pouvez ajouter au modèle.
+1. Cliquez sur **Panneau racine**, puis sur **+** afin dʼafficher la liste des composants que vous pouvez ajouter au modèle.
 1. Sélectionnez **Panneau** dans la liste pour ajouter un panneau au-dessus du **panneau racine**.
 1. Sélectionnez l’onglet **Contenu** dans le volet gauche. Le nouveau panneau ajouté à l’étape 8 est affiché sous le **panneau racine** dans l’arborescence de contenu.
 
    ![content_tree_root_panel](assets/content_tree_root_panel.png)
 
-1. Sélectionnez le panneau et appuyez sur ![configure_icon](assets/configure_icon.png) (Configuration).
+1. Sélectionnez le tableau et cliquez sur ![configure_icon](assets/configure_icon.png) (Configurer).
 1. Dans le panneau Propriétés :
 
    1. Spécifiez **billdetails** dans le champ Nom.
    1. Spécifiez **Information de facturation** dans le champ Titre.
    1. Sélectionnez **1** dans la liste déroulante **Nombre de colonnes**.
-   1. Appuyer ![done_icon](assets/done_icon.png) pour enregistrer les propriétés.
+   1. Cliquez sur ![icône terminé](assets/done_icon.png) pour enregistrer les propriétés.
 
    Le nom du panneau est mis à jour vers **Information de facturation** dans l’arborescence de contenu.
 
@@ -254,7 +254,7 @@ Une fois que vous avez créé le modèle web, vous devez l’activer pour utilis
 Effectuez les étapes suivantes pour activer le modèle web :
 
 1. Appuyer **Outils** ![Outils](assets/tools-icon.svg) > **Modèles**.
-1. Accédez au **Create_First_IC_Web_Template** modèle, sélectionnez-le, puis appuyez sur **Activer**.
+1. Accédez au modèle **Create_First_IC_Web_Template**, sélectionnez-le, puis cliquez sur **Activer**.
 1. Appuyez de nouveau sur **Activer** pour confirmer.
 
    Le modèle est activé et son statut s’affiche comme Activé. Vous pouvez utiliser ce modèle lors de la création de la communication interactive pour le canal web.
@@ -263,7 +263,7 @@ Effectuez les étapes suivantes pour activer le modèle web :
 
 En fonction du cas d’utilisation, vous devez inclure les boutons **Payer maintenant** et **S’abonner** (composants de formulaires adaptatifs) dans la communication interactive. Pour activer l’utilisation de ces boutons dans la communication interactive, procédez comme suit :
 
-1. Sélectionner **Structure** dans la liste déroulante en regard de la fonction **Aperçu** .
+1. Sélectionnez **Structure** dans la liste déroulante en regard de l’option **Prévisualisation**.
 1. Sélectionnez le panneau racine **Conteneur de documents** en utilisant l’arborescence de contenu et appuyez sur **Stratégie** pour sélectionner les composants qui sont autorisés à être utilisés dans la communication interactive.
 
    ![structure_configure_policy](assets/structure_configure_policy.png)
@@ -272,4 +272,4 @@ En fonction du cas d’utilisation, vous devez inclure les boutons **Payer maint
 
    ![allowed_components_af](assets/allowed_components_af.png)
 
-1. Appuyer ![done_icon](assets/done_icon.png) pour enregistrer les propriétés.
+1. Cliquez sur ![icône terminé](assets/done_icon.png) pour enregistrer les propriétés.

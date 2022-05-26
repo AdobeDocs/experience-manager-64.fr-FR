@@ -13,7 +13,7 @@ exl-id: 616cd550-c3bd-4daf-887d-0470f1b08389
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '201'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Le service Forms vous permet de créer des applications clientes interactives de
 * au format HTML dans une multitude d’environnements de navigation, notamment le rendu compatible XHTML 1.0 ;
 * sous forme de guides de formulaire dans une multitude d’environnements de navigation prenant en charge Adobe Flash Player.
 
-Pour plus d’informations sur le service Forms, voir le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
+Pour plus d’informations sur le service Forms, voir le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 A la page Forms d’Administration Console, vous pouvez configurer le comportement du service Forms. Ces paramètres s’appliquent à tous les appels du service. Tous les paramètres envoyés à l’aide du SDK d’AEM forms remplacent les paramètres définis dans Administration Console ; toutefois, ils s’appliquent uniquement à cet appel.
 

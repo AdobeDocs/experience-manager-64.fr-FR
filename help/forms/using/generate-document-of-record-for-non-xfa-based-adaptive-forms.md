@@ -14,7 +14,7 @@ exl-id: 2e7944e5-976e-49d2-a8d2-76c5868a92a2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2758'
-ht-degree: 72%
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Cet article explique comment vous pouvez générer un document d’enregistremen
 
 >[!NOTE]
 >
->La génération automatique de document d’enregistrement n’est pas prise en charge pour les formulaires adaptatifs basés sur XFA. Cependant, vous pouvez vous servir du fichier XDP utilisé pour créer le formulaire adaptatif comme document d’enregistrement.
+>La génération automatique de document d’enregistrement n’est pas prise en charge pour les formulaires adaptatifs XFA. Cependant, vous pouvez vous servir du fichier XDP utilisé pour créer le formulaire adaptatif comme document d’enregistrement.
 
 ## Types de formulaire adaptatif et leurs documents d’enregistrement {#adaptive-form-types-and-their-documents-of-record}
 
@@ -36,7 +36,7 @@ Lorsque vous créez un formulaire adaptatif, vous pouvez sélectionner un modèl
 
 * [Modèles de formulaire](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p)
 
-   Permet de sélectionner un modèle XFA pour votre formulaire adaptatif. Lorsque vous sélectionnez un modèle XFA, vous pouvez utiliser le fichier XDP associé pour le document d’enregistrement, comme décrit ci-dessus.
+   Permet de sélectionner un modèle XFA pour votre formulaire adaptatif. Lorsque vous sélectionnez un modèle XFA, vous pouvez utiliser le fichier XDP associé pour créer le document d’enregistrement, comme décrit ci-dessus.
 
 * [Schéma XML](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-xml-or-json-schema-p)
 
@@ -53,35 +53,35 @@ Lorsque vous sélectionnez un modèle de formulaire, configurez le document d’
 
 ## Document d’enregistrement automatiquement généré {#automatically-generated-document-of-record}
 
-Un document d’enregistrement permet aux clients de conserver une copie du formulaire envoyé en vue de son impression. Lorsque vous générez automatiquement un document d’enregistrement, chaque fois que vous modifiez votre formulaire, son document d’enregistrement est mis à jour immédiatement. Par exemple, imaginons que vous supprimez le champ concernant l’âge pour les clients qui ont sélectionné les États-Unis comme pays. Lorsque ces clients génèrent un document d’enregistrement, le champ relatif à l’âge ne leur est pas accessible.
+Un document d’enregistrement permet aux clients de conserver une copie du formulaire envoyé en vue de son impression. Lorsque vous générez automatiquement un document d’enregistrement, à chaque fois que vous modifiez votre formulaire, son document d’enregistrement est immédiatement mis à jour. Par exemple, imaginons que vous supprimez le champ concernant l’âge pour les clients qui ont sélectionné les États-Unis comme pays. Lorsque ces clients génèrent un document d’enregistrement, le champ relatif à l’âge ne leur est pas accessible.
 
-Le document d’enregistrement généré automatiquement présente les avantages suivants :
+Voici les avantages apportés par un document d’enregistrement automatiquement généré :
 
 * Il prend en charge la liaison de données.
-* Elle masque automatiquement les champs marqués comme exclus du document d’enregistrement au moment de l’envoi. Aucune opération supplémentaire n’est nécessaire.
-* Cela permet de gagner du temps lors de la conception d’un modèle de document d’enregistrement.
+* Il masque automatiquement les champs marqués comme exclus du document d’enregistrement au moment de l’envoi. Aucune opération supplémentaire n’est nécessaire.
+* Il permet de gagner du temps lors de la conception d’un modèle de document d’enregistrement.
 * Il permet de tester des styles et des aspects différents à l’aide de différents modèles de base et de sélectionner les meilleurs style et aspect pour le document d’enregistrement. L’utilisation de styles est facultative. Si vous ne spécifiez pas de style, les styles du système sont définis comme valeur par défaut.
 * De cette façon, toute modification appliquée au formulaire se répercute immédiatement dans le document d’enregistrement.
 
 ## Composants de génération automatique de document d’enregistrement {#components-to-automatically-generate-a-document-of-record}
 
-Pour générer un document d’enregistrement pour les formulaires adaptatifs, vous avez besoin des composants suivants :
+Pour générer un document d’enregistrement pour les formulaires adaptatifs, il vous faut les éléments suivants :
 
-**Formulaire adaptatif** Formulaire adaptatif pour lequel vous souhaitez générer un document d’enregistrement.
+**Formulaire adaptatif** : un formulaire adaptatif pour lequel vous souhaitez générer un document d’enregistrement.
 
-**Modèle de base (recommandé)** : modèle XFA (fichier XDP) créé dans AEM Designer. Le modèle de base est utilisé pour spécifier les informations de style et de marque pour le modèle de document d’enregistrement.
+**Modèle de base (recommandé)** : modèle XFA (fichier XDP) créé dans AEM Designer. Le modèle de base est utilisé pour spécifier les informations en termes de style et d’identité graphique pour le modèle de document d’enregistrement.
 
-Voir [Modèle de base d’un document d’enregistrement](#base-template-of-a-dor)
+Voir [Modèle de base d’un document d’enregistrement](#base-template-of-a-dor).
 
 >[!NOTE]
 >
->Le modèle de base d’un document d’enregistrement est également appelé métamodèle d’un document d’enregistrement.
+>Le modèle de base d’un document d’enregistrement est également appelé métamodèle de document d’enregistrement.
 
-**Modèle de document d’enregistrement** Modèle XFA (fichier XDP) généré à partir d’un formulaire adaptatif.
+**Modèle de document d’enregistrement** : modèle XFA (fichier XDP) généré à partir d’un formulaire adaptatif.
 
 Voir [Configuration du modèle de document d’enregistrement](#document-of-record-template-configuration).
 
-**Données de formulaire** Informations renseignées par un utilisateur dans le formulaire adaptatif. Il fusionne avec le modèle de document d’enregistrement pour générer le document d’enregistrement.
+**Données de formulaire** : informations renseignées par un utilisateur dans le formulaire adaptatif. Il fusionne avec le modèle de document d’enregistrement pour générer le document d’enregistrement.
 
 ## Mappage des éléments du formulaire adaptatif {#mapping-of-adaptive-form-elements}
 
@@ -94,7 +94,7 @@ Les sections suivantes décrivent l’apparence des éléments du formulaire ada
   <tr> 
    <th>Composant de formulaire adaptatif</th> 
    <th>Composant XFA correspondant</th> 
-   <th>Inclus par défaut dans le modèle de document d’enregistrement ?</th> 
+   <th>Inclus par défaut dans le modèle de document d’enregistrement ?</th> 
    <th>Remarques</th> 
   </tr> 
   <tr> 
@@ -164,7 +164,7 @@ Les sections suivantes décrivent l’apparence des éléments du formulaire ada
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Conditions d’utilisation</td> 
+   <td>Termes et conditions</td> 
    <td> </td> 
    <td>true</td> 
    <td> </td> 
@@ -173,7 +173,7 @@ Les sections suivantes décrivent l’apparence des éléments du formulaire ada
    <td>Pièce jointe</td> 
    <td> </td> 
    <td>false</td> 
-   <td>Non disponible dans le modèle de document d’enregistrement. Disponible uniquement dans le document d’enregistrement par le biais de pièces jointes.</td> 
+   <td>Non disponible dans le modèle de document d’enregistrement. Uniquement disponible dans le document d’enregistrement par les pièces jointes.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -199,7 +199,7 @@ Les sections suivantes décrivent l’apparence des éléments du formulaire ada
 
 | Composant de formulaire adaptatif | Composant XFA correspondant | Remarques |
 |---|---|---|
-| Image | Image | Les composants TextDraw et Image, qu’ils soient liés ou non, apparaissent toujours dans le document d’enregistrement d’un formulaire adaptatif basé sur XSD, sauf si cela est exclu en utilisant les paramètres du document d’enregistrement. |
+| Image | Image | Qu’ils soient liés ou non, les composants TextDraw et Image apparaissent toujours dans le document d’enregistrement relatif à un formulaire adaptatif basé sur XSD, à moins que cela ne soit exclu dans les paramètres de document d’enregistrement. |
 | Texte | Texte |
 
 >[!NOTE]
@@ -212,13 +212,13 @@ Composants tabulaires des formulaires adaptatifs (en-tête, pied de page et lign
 
 ## Modèle de base d’un document d’enregistrement {#base-template-of-a-document-of-record}
 
-Le modèle de base fournit les informations relatives au style et à l’aspect du document d’enregistrement. Vous pouvez ainsi personnaliser l’aspect par défaut du document d’enregistrement généré automatiquement. Imaginons que vous souhaitez ajouter le logo de votre entreprise dans l’en-tête et les informations relatives au droit d’auteur dans le pied de page du document d’enregistrement. Le gabarit du modèle de base est utilisé comme gabarit de modèle de document d’enregistrement. Le gabarit peut comporter des informations telles que l’en-tête, le pied et le numéro de page, que vous pouvez appliquer au document d’enregistrement. Vous pouvez appliquer ces informations au document d’enregistrement à l’aide d’un modèle de base pour la génération automatique de document d’enregistrement. L’utilisation d’un modèle de base permet de modifier les propriétés par défaut des champs.
+Le modèle de base fournit les informations relatives au style et à l’aspect du document d’enregistrement. Vous pouvez ainsi personnaliser l’aspect par défaut du document d’enregistrement généré automatiquement. Imaginons que vous souhaitez ajouter le logo de votre entreprise dans l’en-tête et les informations relatives au droit d’auteur dans le pied de page du document d’enregistrement. Le gabarit du modèle de base est utilisé comme gabarit de modèle de document d’enregistrement. Le gabarit peut comporter des informations telles que l’en-tête, le pied et le numéro de page, que vous pouvez appliquer au document d’enregistrement. Vous pouvez appliquer ces informations au document d’enregistrement à l’aide d’un modèle de base pour générer automatiquement un document d’enregistrement. L’utilisation d’un modèle de base permet de modifier les propriétés par défaut des champs.
 
 Respectez les [conventions relatives aux modèles de base](#base-template-conventions) lorsque vous créez un modèle de base.
 
 ## Conventions relatives aux modèles de base {#base-template-conventions}
 
-Un modèle de base sert à définir l’en-tête, le pied de page, le style et l’aspect d’un document d’enregistrement. L’en-tête et le pied de page peuvent comporter des informations, comme le logo de l’entreprise et la mention de droit d’auteur. Le premier gabarit du modèle de base est copié et utilisé comme gabarit pour le document d’enregistrement, qui contient l’en-tête, le pied de page, le numéro de page ou toute autre information devant apparaître sur toutes les pages du document d’enregistrement. Si vous utilisez un modèle de base non conforme aux conventions du modèle de base, le premier gabarit du modèle de base est toujours utilisé dans le modèle de document d’enregistrement. Il vous est fortement recommandé de créer votre modèle de base en fonction des conventions correspondantes et de l’utiliser pour la génération automatique du document d’enregistrement.
+Un modèle de base sert à définir l’en-tête, le pied de page, le style et l’aspect d’un document d’enregistrement. L’en-tête et le pied de page peuvent comporter des informations, comme le logo de l’entreprise et la mention de droit d’auteur. Le gabarit de page du modèle de base est copié et utilisé comme gabarit de page du document d’enregistrement. Il contient l’en-tête, le pied de page, le numéro de page ainsi que toute autre information devant apparaître sur toutes les pages du document d’enregistrement. Même si vous utilisez un modèle de base non conforme aux conventions relatives aux modèles de base, le gabarit de page du modèle de base est quand même utilisé dans le modèle de document d’enregistrement. Il vous est fortement recommandé de créer votre modèle de base en fonction des conventions correspondantes et de l’utiliser pour la génération automatique du document d’enregistrement.
 
 **Conventions en matière de gabarits de page**
 
@@ -260,9 +260,9 @@ Ne modifiez ou ne supprimez aucun des scripts du modèle de base.
 
 ## Configuration du modèle de document d’enregistrement {#document-of-record-template-configuration}
 
-Configurez le modèle de document d’enregistrement de votre formulaire pour permettre à vos clients de télécharger une copie imprimable du formulaire envoyé. Un fichier XDP sert de modèle de document d’enregistrement. Le téléchargement du document d’enregistrement des clients est formaté selon la disposition spécifiée dans le fichier XDP.
+Configurez le modèle de document d’enregistrement de votre formulaire pour permettre à vos clients de télécharger une copie imprimable du formulaire envoyé. Un fichier XDP fait office de modèle de document d’enregistrement. Le téléchargement des clients du document d’enregistrement est formaté selon la mise en page spécifiée dans le fichier XDP.
 
-Effectuez les étapes suivantes pour configurer un document d’enregistrement pour les formulaires adaptatifs :
+Effectuez les étapes suivantes pour configurer un document d’enregistrement pour les formulaires adaptatifs :
 
 1. Dans l’instance d’auteur AEM, cliquez sur **Formulaires > Formulaires et documents**.
 1. Sélectionnez un formulaire, puis cliquez sur **Afficher les propriétés**.
@@ -272,17 +272,17 @@ Effectuez les étapes suivantes pour configurer un document d’enregistrement p
 
    >[!NOTE]
    >
-   >Sous l’onglet Modèle de formulaire, veillez à sélectionner **Schéma** ou **Aucun** dans la liste déroulante **Choisir parmi**. **[!UICONTROL Le document d’enregistrement n’est pas pris en charge pour les formulaires basés sur XFA ou les formulaires adaptatifs avec le modèle de formulaire comme modèle de formulaire.]**
+   >Sous l’onglet Modèle de formulaire, veillez à sélectionner **Schéma** ou **Aucun** dans la liste déroulante **Choisir parmi**. **[!UICONTROL Les documents d’enregistrement ne sont pas pris en charge dans le cadre de formulaires basés sur XFA ou de formulaires adaptatifs auxquels un modèle de formulaire est appliqué.]**
 
 1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez l’une des options suivantes :
 
-   **Aucun** Sélectionnez cette option si vous ne souhaitez pas configurer de document d’enregistrement pour le formulaire.
+   **Aucun** : utilisez cette option si vous ne souhaitez pas configurer de document d’enregistrement pour le formulaire.
 
-   **Associer le modèle de formulaire comme modèle de document d’enregistrement** Sélectionnez cette option si vous disposez d’un fichier XDP que vous souhaitez utiliser comme modèle pour le document d’enregistrement. Lorsque vous sélectionnez cette option, tous les fichiers XDP disponibles dans le référentiel AEM Forms s’affichent. Sélectionnez le fichier approprié.
+   **Associer un modèle de formulaire comme modèle de document d’enregistrement** : sélectionnez cette option si vous disposez d’un fichier XDP que vous souhaitez utiliser comme modèle pour le document d’enregistrement. Lorsque vous sélectionnez cette option, tous les fichiers XDP disponibles dans le référentiel AEM Forms s’affichent. Sélectionnez le fichier approprié.
 
    Le fichier XDP sélectionné est associé au formulaire adaptatif.
 
-   **Générer un document d’enregistrement** Sélectionnez cette option pour utiliser un fichier XDP comme modèle de base pour définir le style et l’aspect du document d’enregistrement. Lorsque vous sélectionnez cette option, tous les fichiers XDP disponibles dans le référentiel AEM Forms s’affichent. Sélectionnez le fichier approprié.
+   **Générer un document d’enregistrement** : cette option permet d’utiliser un fichier XDP comme modèle de base pour définir le style et l’aspect du document d’enregistrement. Lorsque vous sélectionnez cette option, tous les fichiers XDP disponibles dans le référentiel AEM Forms s’affichent. Sélectionnez le fichier approprié.
 
    **[!UICONTROL Sélectionnez cette option pour utiliser un fichier XDP comme modèle de base pour définir le style et l’aspect du document d’enregistrement. Lorsque vous sélectionnez cette option, tous les fichiers XDP disponibles dans le référentiel AEM Forms s’affichent. Sélectionnez le fichier approprié.]**
 
@@ -293,7 +293,7 @@ Effectuez les étapes suivantes pour configurer un document d’enregistrement p
    >Assurez-vous que le schéma utilisé pour créer le formulaire adaptatif et le schéma (schéma de données) du formulaire XFA sont identiques si :
    >
    >* Votre formulaire adaptatif est basé sur un schéma
-   >* Vous utilisez **Associer le modèle de formulaire comme modèle de document d’enregistrement** option de document d’enregistrement
+   >* Vous utilisez l’option **Associer le modèle de formulaire comme modèle de document d’enregistrement** pour les documents d’enregistrement.
 
 
 1. Cliquez sur **Terminé**.
@@ -304,7 +304,7 @@ Lors de la génération d’un document d’enregistrement, vous pouvez modifier
 
 Pour localiser les informations d’identité graphique que vous saisissez dans l’onglet Document d’enregistrement, vous devez vous assurer que le paramètre régional du navigateur est défini correctement. Pour personnaliser les informations d’identité graphique du document d’enregistrement, procédez comme suit :
 
-1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis appuyez sur ![configure](assets/configure.png).
+1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis appuyez sur ![configurer](assets/configure.png).
 1. Appuyez sur ![dortab](assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
 1. Sélectionnez le modèle par défaut ou un modèle personnalisé pour le rendu du document d’enregistrement. Si vous sélectionnez le modèle par défaut, une vignette d’aperçu du document d’enregistrement apparaît sous la liste déroulante Modèle.
 
@@ -348,7 +348,7 @@ Pour localiser les informations d’identité graphique que vous saisissez dans 
 
 ## Mises en page de tableau et de colonne pour les panneaux d’un document d’enregistrement {#table-and-column-layouts-for-panels-in-document-of-record}
 
-Votre formulaire adaptatif peut être long avec plusieurs champs de formulaire. Vous ne pouvez pas enregistrer un document d’enregistrement en tant que copie exacte du formulaire adaptatif. Vous pouvez maintenant choisir une mise en page de tableau ou de colonne pour enregistrer un ou plusieurs panneaux de formulaires adaptatifs dans le document d’enregistrement PDF.
+Votre formulaire adaptatif peut être long et comporter plusieurs champs. Vous ne pouvez pas enregistrer un document d’enregistrement en tant que copie exacte du formulaire adaptatif. Vous pouvez maintenant choisir une mise en page de tableau ou de colonne pour enregistrer un ou plusieurs panneaux de formulaires adaptatifs dans le document d’enregistrement PDF.
 
 Avant de générer un document d’enregistrement, dans les paramètres d’un panneau, sélectionnez Tableau ou Colonne pour Mise en page du document d’enregistrement pour ce panneau. Les champs du panneau sont organisés en conséquence dans le document d’enregistrement.
 
@@ -362,26 +362,26 @@ Champs dans un panneau rendu dans une mise en page de colonne dans le document d
 
 ## Paramètres d’un document d’enregistrement {#document-of-record-settings}
 
-Les paramètres de document d’enregistrement vous permettent de choisir les options que vous souhaitez inclure dans le document d’enregistrement. Par exemple, une banque accepte les informations suivantes dans un formulaire : nom, âge, numéro de sécurité sociale et numéro de téléphone. Le formulaire génère un numéro de compte bancaire et les informations sur la banque. Vous pouvez choisir de n’afficher que le nom, le numéro de sécurité sociale, le compte bancaire et les informations sur la banque dans le document d’enregistrement.
+Les paramètres du document d’enregistrement vous permettent de choisir les options que vous souhaitez inclure dans celui-ci. Par exemple, une banque accepte les informations suivantes dans un formulaire : nom, âge, numéro de sécurité sociale et numéro de téléphone. Le formulaire génère un numéro de compte bancaire et les informations sur la banque. Vous pouvez choisir de n’afficher que le nom, le numéro de sécurité sociale, le compte bancaire et les informations sur la banque dans le document d’enregistrement.
 
-Les paramètres d’enregistrement d’un composant sont disponibles sous ses propriétés. Pour accéder aux propriétés d’un composant, sélectionnez le composant et cliquez sur ![cmppr](assets/cmppr.png) dans le recouvrement. Les propriétés sont répertoriées dans la barre latérale. Vous y trouvez les paramètres suivants.
+Les paramètres du document d’enregistrement d’un composant sont disponibles dans ses propriétés. Pour accéder aux propriétés d’un composant, sélectionnez le composant et cliquez sur ![cmppr](assets/cmppr.png) dans le recouvrement. Les propriétés sont répertoriées dans la barre latérale. Vous y trouvez les paramètres suivants.
 
 **Paramètres sur le terrain**
 
 * **Exclure du document d’enregistrement :** la définition de cette propriété sur true exclut le champ du document d’enregistrement. Il s’agit d’une propriété pouvant faire l’objet d’un script appelée « `excludeFromDoR` ». Son comportement dépend de la propriété au niveau du formulaire **Exclure des champs du document d’enregistrement (DE) s’il est masqué**.
 
-* **Afficher le panneau sous forme de tableau :** La définition de la propriété affiche le panneau sous forme de tableau dans le document d’enregistrement si le panneau contient moins de 6 champs. Applicable au panneau uniquement.
+* **Afficher le panneau sous forme de tableau :** la définition de cette propriété permet d’afficher le panneau sous forme de tableau dans le document d’enregistrement si le panneau contient moins de 6 champs. Applicable au panneau uniquement.
 * **Exclure le titre du document d’enregistrement :** la définition de la propriété exclut le titre du panneau/tableau du document d’enregistrement. Applicable au panneau et à la table uniquement.
 * **Exclure la description du document d’enregistrement :** la définition de la propriété exclut la description du panneau/tableau du document d’enregistrement. Applicable au panneau et à la table uniquement.
 
 **Paramètres des niveaux de formulaires**
 
 * **Inclure les champs non liés dans le document d’enregistrement :** la définition de la propriété comprend les champs non liés du schéma basé sur le formulaire adaptatif du document d’enregistrement. Par défaut, le paramètre est true.
-* **Exclure des champs du document d’enregistrement (DE) s’il est masqué** : la définition de cette propriété remplace le comportement de la propriété de niveau de champ Exclure du document d’enregistrement lorsque le paramètre est différent de true. Si les champs sont masqués au moment de l’envoi du formulaire, ils seront exclus du document d’enregistrement si la propriété est définie sur true, à condition que la propriété &quot;Exclure du document d’enregistrement&quot; ne soit pas définie.
+* **Exclure des champs du document d’enregistrement (DE) s’il est masqué** : la définition de cette propriété remplace le comportement de la propriété de niveau de champ Exclure du document d’enregistrement lorsque le paramètre est différent de true. Si des champs sont masqués au moment de l’envoi du formulaire, ils seront exclus du document d’enregistrement si la propriété est définie sur True, à condition que la propriété « Exclure du document d’enregistrement » ne soit pas définie.
 
 ## Considérations essentielles lors de l’utilisation de documents d’enregistrement {#key-considerations-when-working-with-document-of-record}
 
-Gardez à l’esprit les considérations et limites suivantes lorsque vous travaillez sur un document d’enregistrement pour les formulaires adaptatifs.
+Gardez à l’esprit les points et restrictions suivants lorsque vous utilisez un document d’enregistrement pour les formulaires adaptatifs.
 
 * Les modèles de document d’enregistrement ne prennent pas en charge le texte enrichi. Par conséquent, tout texte enrichi dans le formulaire adaptatif statique ou dans les informations renseignées par l’utilisateur final est remplacé par du texte brut dans le document d’enregistrement.
 * Les fragments de document contenus dans un formulaire adaptatif n’apparaissent pas dans le document d’enregistrement. Les fragments de formulaire adaptatif sont toutefois pris en charge.

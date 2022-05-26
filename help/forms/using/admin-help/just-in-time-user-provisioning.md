@@ -13,7 +13,7 @@ exl-id: 8c205d1d-d17e-4810-8ef9-a8bdcd9aa1c2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ Voici comment l’authentification traditionnelle fonctionne :
 1. Le fournisseur d’authentification valide les informations d’identification.
 1. Il vérifie ensuite si l’utilisateur existe dans la base de données User Management. L’un des résultats suivants s’affiche :
 
-   **Existe :** Si l’utilisateur est en cours et déverrouillé, User Management renvoie la réussite de l’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
+   **Existe :** si l’utilisateur est en cours et déverrouillé, User Management renvoie un succès d’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
 
-   **N’existe pas :** User Management renvoie l’échec d’authentification.
+   **N’existe pas :** User Management renvoie un échec d’authentification.
 
-   **Non valide :** User Management renvoie l’échec d’authentification.
+   **Non valide :** User Management renvoie un échec d’authentification.
 
 1. L’état indiqué par le fournisseur d’authentification est évalué. Si ce dernier a confirmé l’authentification, l’utilisateur peut alors ouvrir une session. Dans le cas contraire, User Management vérifie auprès du fournisseur d’authentification suivant. (les étapes 2 et 3)
 1. Un échec d’authentification est indiqué lorsqu’aucun fournisseur d’authentification disponible n’a pu valider les informations d’identification de l’utilisateur.
@@ -104,7 +104,7 @@ Supposons qu’un utilisateur essaie de se connecter à AEM Forms et qu’un fou
 
 1. Création d’un objet `UserProvisioningBO` avec les données d’authentification et placement de l’objet dans une carte d’informations d’identification.
 1. Extraction et appel des `UserProvisioningBO` et `IdentityCreator` enregistrés pour le domaine en se basant sur les informations du domaine renvoyées par `AssignmentProvider`.
-1. Appeler `IdentityCreator`. Si une `AuthResponse` positive est renvoyée, extraction de `UserInfo` de la carte d’informations d’identification. Transmission de UserInfo à `AssignmentProvider` pour l’affectation des groupes et des rôles après la création de l’utilisateur.
+1. Appelez `IdentityCreator`. Si une `AuthResponse` positive est renvoyée, extraction de `UserInfo` de la carte d’informations d’identification. Transmission de UserInfo à `AssignmentProvider` pour l’affectation des groupes et des rôles après la création de l’utilisateur.
 1. Si l’utilisateur est correctement créé, renvoi de la tentative de connexion de l’utilisateur comme réussie.
 1. Pour les domaines hybrides, extraction des informations de l’utilisateur des données d’authentification fournies au fournisseur d’authentification. Si l’information est correctement extraite, création de l’utilisateur par la même occasion.
 

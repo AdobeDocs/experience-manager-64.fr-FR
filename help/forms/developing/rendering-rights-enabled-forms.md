@@ -1,7 +1,7 @@
 ---
-title: Rendu de Forms compatible avec les droits
+title: Restituer des formulaires dont les droits sont activés
 seo-title: Rendering Rights-Enabled Forms
-description: Utilisez le service Forms pour effectuer le rendu des formulaires auxquels des droits d’utilisation sont appliqués. Vous pouvez générer des formulaires dont les droits sont activés à l’aide de l’API Java et de l’API Web Service.
+description: Utilisez le service Forms pour restituer des formulaires dotés de droits d’utilisation. Vous pouvez restituer des formulaires dont les droits sont activés à l’aide de l’API Java et de l’API de service web.
 seo-description: Use the Forms service to render forms that have usage rights applied to them. You can render rights-enabled forms using the Java API and Web Service API.
 uuid: ce5e4be6-d9b0-4989-a0e1-a8c3b98aed77
 contentOwner: admin
@@ -15,67 +15,67 @@ exl-id: 0cee94ba-1a72-4021-b606-8fa945312483
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1463'
-ht-degree: 5%
+ht-degree: 99%
 
 ---
 
-# Rendu de Forms compatible avec les droits {#rendering-rights-enabled-forms}
+# Générer des formulaires définis avec des droits {#rendering-rights-enabled-forms}
 
-Le service Forms peut effectuer le rendu des formulaires auxquels des droits d’utilisation sont appliqués. Les droits d’utilisation appartiennent à la fonctionnalité disponible par défaut dans Acrobat mais non dans Adobe Reader, telle que la capacité à ajouter des commentaires à un formulaire ou à remplir des champs de formulaire et enregistrer ce dernier. Les Forms auxquelles des droits d’utilisation sont appliqués sont appelées des formulaires dont les droits sont activés. Un utilisateur qui ouvre un formulaire dont les droits sont activés dans Adobe Reader peut effectuer les opérations activées pour ce formulaire.
+Le service Forms peut restituer des formulaires dotés de droits d’utilisation. Les droits d’utilisation appartiennent à la fonctionnalité disponible par défaut dans Acrobat mais non dans Adobe Reader, telle que la capacité à ajouter des commentaires à un formulaire ou à remplir des champs de formulaire et enregistrer ce dernier. Les formulaires dotés de droits d’utilisation sont appelés des formulaires dont les droits sont activés. Un utilisateur qui ouvre un formulaire dont les droits sont activés dans Adobe Reader peut effectuer les opérations autorisées pour ce formulaire.
 
-Pour appliquer des droits d’utilisation à un formulaire, le service d’extensions Acrobat Reader DC doit faire partie de votre installation d’AEM forms. En outre, vous devez disposer d’informations d’identification valides qui vous permettent d’appliquer des droits d’utilisation aux documents de PDF. En d’autres termes, vous devez configurer correctement le service d’extensions Acrobat Reader DC avant de pouvoir générer un formulaire dont les droits sont activés. (Voir [À propos du service des extensions Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
-
->[!NOTE]
->
->Pour générer un formulaire contenant des droits d’utilisation, vous devez utiliser un fichier XDP comme entrée, et non un fichier PDF. Si vous utilisez un fichier de PDF comme entrée, le formulaire est toujours rendu ; cependant, il ne s’agira pas d’un formulaire dont les droits sont activés.
+Pour appliquer des droits d’utilisation à un formulaire, le service Extensions Acrobat Reader DC doit faire partie de votre installation d’AEM Forms. En outre, vous devez disposer d’informations d’identification valides qui vous permettent d’appliquer des droits d’utilisation aux documents PDF. Car vous devez configurer correctement le service Extensions Acrobat Reader DC avant de pouvoir restituer un formulaire dont les droits sont activés. (Consultez la section [À propos du service Extensions Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service)).
 
 >[!NOTE]
 >
->Vous ne pouvez pas préremplir un formulaire avec des données XML lorsque vous spécifiez les droits d’utilisation suivants : `enableComments`, `enableCommentsOnline`, `enableEmbeddedFiles`ou `enableDigitalSignatures`. (Voir [Préremplissage de Forms avec des dispositions souple](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+>Pour restituer un formulaire doté de droits d’utilisation, vous devez utiliser un fichier XDP comme entrée, et non un fichier PDF. Dans le cas contraire, le formulaire sera toujours rendu, mais il ne s’agira pas d’un formulaire dont les droits sont activés.
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Vous ne pouvez pas préremplir un formulaire avec des données XML lorsque vous spécifiez les droits d’utilisation suivants : `enableComments`, `enableCommentsOnline`, `enableEmbeddedFiles` ou `enableDigitalSignatures`. (Consultez le didacticiel de mise en route [Préremplir des formulaires avec les dispositions souple](/help/forms/developing/prepopulating-forms-flowable-layouts.md)).
+
+>[!NOTE]
+>
+>Pour plus d’informations sur le service Forms, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ## Résumé des étapes {#summary-of-steps}
 
-Pour effectuer le rendu d’un formulaire dont les droits sont activés, effectuez les tâches suivantes :
+Pour restituer un formulaire dont les droits sont activés, procédez comme suit :
 
-1. Inclure les fichiers de projet.
+1. Incluez les fichiers de projet.
 1. Créez un objet API client Forms.
-1. Définissez les options d’exécution des droits d’utilisation.
-1. Générer un formulaire dont les droits sont activés.
-1. Ecrivez le formulaire dont les droits sont activés dans le navigateur web client.
+1. Définir les options d’exécution des droits d’utilisation
+1. Restituer un formulaire dont les droits sont activés
+1. Écrire le formulaire dont les droits sont activés dans le navigateur web du client
 
 **Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-**Création d’un objet API client Forms**
+**Créer un objet de lʼAPI client de Forms**
 
-Avant d’effectuer par programmation une opération d’API client de service Forms, vous devez créer un client de service Forms.
+Avant d’effectuer par programmation une opération de l’API du client de service Forms, vous devez créer un client de service Forms.
 
-**Définition des options d’exécution des droits d’utilisation**
+**Définir les options d’exécution des droits d’utilisation**
 
-Vous devez définir les options d’exécution des droits d’utilisation pour générer un formulaire dont les droits sont activés. Vous devez également spécifier l’alias des informations d’identification utilisées pour appliquer des droits d’utilisation à un formulaire. Après avoir défini la valeur d’alias, vous indiquez chaque droit d’utilisation à appliquer au formulaire.
+Vous devez définir les options d’exécution des droits d’utilisation avant de pouvoir restituer un formulaire dont les droits sont activés. Vous devez également spécifier l’alias des informations d’identification utilisé pour appliquer des droits d’utilisation à un formulaire. Une fois la valeur de l’alias définie, vous pouvez spécifier chaque droit d’utilisation à appliquer au formulaire.
 
-**Rendu d’un formulaire dont les droits sont activés**
+**Restituer un formulaire dont les droits sont activés**
 
-Pour générer un formulaire dont les droits sont activés, vous utilisez la même logique d’application que pour générer un formulaire sans droits d’utilisation. La seule différence est que vous devez vous assurer que les options d’exécution des droits d’utilisation sont incluses dans la logique de votre application.
+Pour restituer un formulaire dont les droits sont activés, vous devez utiliser la même logique d’application que pour restituer un formulaire sans droits d’utilisation. La seule différence est la suivante : vous devez vous assurer que les options d’exécution des droits d’utilisation sont incluses dans votre logique dʼapplication.
 
 >[!NOTE]
 >
->Lors du rendu d’un formulaire dont les droits sont activés à l’aide de l’API du service Web Forms, vous ne pouvez pas joindre de fichiers au formulaire.
+>Lors de la restitution d’un formulaire dont les droits sont activés à l’aide de l’API de service web Forms, vous ne pouvez pas joindre de fichiers au formulaire.
 
-**Écrire le flux de données de formulaire dans le navigateur Web client**
+**Écrire le flux de données de formulaire dans le navigateur web du client**
 
-Lorsque le service Forms génère un formulaire dont les droits sont activés, il renvoie un flux de données de formulaire que vous devez écrire dans le navigateur Web client. Une fois écrit dans le navigateur Web client, le formulaire est visible par l’utilisateur. Un utilisateur qui consulte le formulaire dont les droits sont activés dans Adobe Reader peut effectuer les opérations qui sont activées pour ce formulaire.
+Lorsque le service Forms restitue un formulaire dont les droits sont activés, il renvoie un flux de données de formulaire que vous devez écrire dans le navigateur web du client. Une fois cette opération effectuée, le formulaire est visible par l’utilisateur. Un utilisateur qui consulte le formulaire dont les droits sont activés dans Adobe Reader peut effectuer les opérations autorisées pour ce formulaire.
 
 **Voir également**
 
-[Rendu des formulaires activés pour les droits à l’aide de l’API Java](#render-rights-enabled-forms-using-the-java-api)
+[Restituer des formulaires dont les droits sont activés à l’aide de l’API Java](#render-rights-enabled-forms-using-the-java-api)
 
-[Rendu de formulaires activés pour les droits à l’aide de l’API de service Web](#render-rights-enabled-forms-using-the-web-service-api)
+[Générer des formulaires définis avec des droits à l’aide de l’API de service web](#render-rights-enabled-forms-using-the-web-service-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -83,105 +83,105 @@ Lorsque le service Forms génère un formulaire dont les droits sont activés, i
 
 [Démarrages rapides de l’API Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendu des PDF forms interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Effectuer le rendu de formulaires PDF interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Création d’applications web qui renvoient Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Créer des applications web qui génèrent des formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-### Rendu des formulaires activés pour les droits à l’aide de l’API Java {#render-rights-enabled-forms-using-the-java-api}
+### Restituer des formulaires dont les droits sont activés à l’aide de l’API Java {#render-rights-enabled-forms-using-the-java-api}
 
-Rendre un formulaire dont les droits sont activés à l’aide de l’API Forms (Java) :
+Pour restituer un formulaire dont les droits sont activés à l’aide de l’API Forms (Java), procédez comme suit :
 
-1. Inclure les fichiers de projet
+1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR client, tels que adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers clients JAR, tels qu’adobe-forms-client.jar, dans votre projet Java Classpath.
 
-1. Création d’un objet API client Forms
+1. Créer un objet API Forms client
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory` .
+   * Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
-1. Définition des options d’exécution des droits d’utilisation
+1. Définir des options d’exécution des droits d’utilisation
 
    * Créez un objet `ReaderExtensionSpec` en utilisant son constructeur.
-   * Spécifiez l’alias des informations d’identification en appelant la fonction `ReaderExtensionSpec` de `setReCredentialAlias` et indiquez une valeur string qui représente la valeur d’alias.
-   * Définissez les droits d’utilisation en appelant la méthode correspondante qui appartient à la propriété `ReaderExtensionSpec` . Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous permettent de le faire. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous permettent pas de le définir. Par exemple. pour définir le droit d’utilisation qui permet à l’utilisateur de remplir des champs de formulaire et d’enregistrer le formulaire, appelez la méthode `ReaderExtensionSpec` de `setReFillIn` méthode et transmission `true`.
+   * Spécifiez l’alias des informations d’identification en appelant la méthode `setReCredentialAlias` de lʼobjet `ReaderExtensionSpec` et indiquez une valeur de chaîne qui représente la valeur de l’alias.
+   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Par exemple. Pour définir le droit d’utilisation qui permet à l’utilisateur de remplir des champs de formulaire et d’enregistrer ce dernier, appelez la méthode `setReFillIn` de l’objet `ReaderExtensionSpec` et transmettez `true`.
 
    >[!NOTE]
    >
    >Il n’est pas nécessaire d’appeler la variable `ReaderExtensionSpec` de `setReCredentialPassword`* . Cette méthode n’est pas utilisée par le service Forms. *
 
-1. Rendu d’un formulaire dont les droits sont activés
+1. Générer un formulaire défini avec des droits
 
-   Appeler la variable `FormsServiceClient` de `renderPDFFormWithUsageRights` et transmettez les valeurs suivantes :
+   Appelez la méthode `renderPDFFormWithUsageRights` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-   * Une valeur string qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un `com.adobe.idp.Document` .
-   * A `PDFFormRenderSpec` qui stocke les options d’exécution.
-   * A `ReaderExtensionSpec` qui stocke les options d’exécution des droits d’utilisation.
-   * A `URLSpec` contenant des valeurs URI requises par le service Forms.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez un objet `com.adobe.idp.Document` vide.
+   * Un objet `PDFFormRenderSpec` stockant les options d’exécution.
+   * Un objet `ReaderExtensionSpec` stockant les options d’exécution des droits d’utilisation.
+   * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
 
-   Le `renderPDFFormWithUsageRights` renvoie une `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur Web client.
+   La méthode `renderPDFFormWithUsageRights` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
-1. Écrire le flux de données de formulaire dans le navigateur Web client
+1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un `com.adobe.idp.Document` en appelant le `FormsResult` object ‘s `getOutputContent` .
-   * Obtention du type de contenu de la variable `com.adobe.idp.Document` en appelant son objet `getContentType` .
-   * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant sa propriété `setContentType` et transmettre le type de contenu de la méthode `com.adobe.idp.Document` .
-   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
-   * Créez un `java.io.InputStream` en appelant le `com.adobe.idp.Document` de `getInputStream` .
-   * Créez un tableau d’octets pour le remplir avec le flux de données de formulaire en appelant la fonction `InputStream` de `read` et transmission du tableau d’octets en tant qu’argument.
-   * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets au `write` .
+   * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
+   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `com.adobe.idp.Document`.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
+   * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de lʼobjet `com.adobe.idp.Document`.
+   * Créez un tableau d’octets pour le remplir avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets en tant qu’argument.
+   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 
-[Démarrage rapide (mode SOAP) : Rendu d’un formulaire dont les droits sont activés à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[Démarrage rapide (mode SOAP) : générer un formulaire dont les droits sont activés à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Rendu de formulaires activés pour les droits à l’aide de l’API de service Web {#render-rights-enabled-forms-using-the-web-service-api}
+## Générer des formulaires définis avec des droits à l’aide de l’API de service web {#render-rights-enabled-forms-using-the-web-service-api}
 
-Rendre un formulaire dont les droits sont activés à l’aide de l’API Forms (service Web) :
+Pour générer un formulaire défini avec des droits à l’aide de l’API Forms (service web), procédez comme suit :
 
-1. Inclure les fichiers de projet
+1. Inclure les fichiers du projet
 
-   * Créez des classes proxy Java qui utilisent le WSDL du service Forms.
-   * Incluez les classes proxy Java dans le chemin de classe.
+   * Créez des classes proxy Java qui utilisent le service WSDL de Forms.
+   * Incluez les classes proxy Java dans le chemin d’accès de classe.
 
-1. Création d’un objet API client Forms
+1. Créer un objet API Forms client
 
-   Créez un `FormsService` et définissez les valeurs d’authentification.
+   Créez un objet `FormsService` et définissez les valeurs d’authentification.
 
-1. Définition des options d’exécution des droits d’utilisation
+1. Définir des options d’exécution des droits d’utilisation
 
    * Créez un objet `ReaderExtensionSpec` en utilisant son constructeur.
-   * Spécifiez l’alias des informations d’identification en appelant la fonction `ReaderExtensionSpec` de `setReCredentialAlias` et indiquez une valeur string qui représente la valeur d’alias.
-   * Définissez les droits d’utilisation en appelant la méthode correspondante qui appartient à la propriété `ReaderExtensionSpec` . Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous permettent de le faire. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous permettent pas de le définir. Pour définir le droit d’utilisation qui permet à l’utilisateur de remplir des champs de formulaire et d’enregistrer le formulaire, appelez la méthode `ReaderExtensionSpec` de `setReFillIn` méthode et transmission `true`.
+   * Spécifiez l’alias des informations d’identification en appelant la méthode `setReCredentialAlias` de lʼobjet `ReaderExtensionSpec` et indiquez une valeur de chaîne qui représente la valeur de l’alias.
+   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Pour définir le droit d’utilisation permettant à l’utilisateur de remplir des champs de formulaire et d’enregistrer ce dernier, appelez la méthode `setReFillIn` de l’objet `ReaderExtensionSpec` et transmettez `true`.
 
-1. Rendu d’un formulaire dont les droits sont activés
+1. Générer un formulaire défini avec des droits
 
-   Appeler la variable `FormsService` de `renderPDFFormWithUsageRights` et transmettez les valeurs suivantes :
+   Appelez la méthode `renderPDFFormWithUsageRights` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
-   * Une valeur string qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données avec le formulaire, vous devez transmettre une `BLOB` basé sur une source de données XML vide. Vous ne pouvez pas transmettre une `BLOB` objet nul ; dans le cas contraire, une exception est générée.
-   * A `PDFFormRenderSpec` qui stocke les options d’exécution.
-   * A `ReaderExtensionSpec` qui stocke les options d’exécution des droits d’utilisation.
-   * A `URLSpec` contenant des valeurs URI requises par le service Forms.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner de données avec le formulaire, vous devez transmettre un objet `BLOB` basé sur une source de données XML vide. Vous ne pouvez pas transmettre un objet `BLOB` nul ; dans le cas contraire, une exception est générée.
+   * Un objet `PDFFormRenderSpec` permettant de stocker les options d’exécution.
+   * Un objet `ReaderExtensionSpec` stockant les options d’exécution des droits d’utilisation.
+   * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
 
-   Le `renderPDFFormWithUsageRights` renvoie une `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur Web client.
+   La méthode `renderPDFFormWithUsageRights` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
-1. Écrire le flux de données de formulaire dans le navigateur Web client
+1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un `BLOB` qui contient des données de formulaire en appelant la méthode `FormsResult` de `getOutputContent` .
-   * Obtention du type de contenu de la variable `BLOB` en appelant son objet `getContentType` .
-   * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant sa propriété `setContentType` et transmettre le type de contenu de la méthode `BLOB` .
-   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
-   * Créez un tableau d’octets et renseignez-le en appelant la variable `BLOB` de `getBinaryData` . Cette tâche affecte le contenu de la `FormsResult` vers le tableau d’octets.
-   * Appeler la variable `javax.servlet.http.HttpServletResponse` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets au `write` .
+   * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Obtenez le type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
+   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
+   * Créez un objet `javax.servlet.ServletOutputStream` servant à écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
+   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 
-[Rendu de Forms compatible avec les droits](#rendering-rights-enabled-forms)
+[Générer des formulaires définis avec des droits](#rendering-rights-enabled-forms)
 
-[Appel d’AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Appeler AEM Forms en utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

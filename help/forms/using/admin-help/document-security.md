@@ -14,11 +14,11 @@ exl-id: fa62a521-1a0b-4856-acc6-71c51ad9e527
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# A propos de Document Security {#about-document-security}
+# À propos de Document Security {#about-document-security}
 
 Grâce à Document Security, seuls les utilisateurs autorisés peuvent utiliser vos documents. Document Security vous permet de distribuer en toute sécurité toute information enregistrée sous un format pris en charge. Les formats de fichiers pris en charge sont :
 

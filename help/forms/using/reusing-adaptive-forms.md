@@ -12,7 +12,7 @@ exl-id: 9393fe94-002a-497b-9579-d6ad3bb3973e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
 
    >[!NOTE]
    >
-   >Les actions rapides sont des éléments d’action qui sont affichés sur une vignette lors du pointage de la souris.
+   >Les actions rapides sont les éléments d’action qui s’affichent sur une vignette lorsque vous pointez dessus.
 
 1. Sélectionnez le formulaire adaptatif. Le processus de sélection est différent pour chaque vue.
 
-   Si vous êtes en mode Carte, passez en mode de sélection en cliquant sur la sélection. ![aem6forms_check-circle](assets/aem6forms_check-circle.png) et cliquez sur tous les formulaires adaptatifs à copier.
+   Si le mode d’affichage Vignette est activé, accédez au mode de sélection en cliquant sur l’icône de sélection ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis cliquez sur tous les formulaires adaptatifs à copier.
 
    Si le mode Liste est actif, cochez les cases à cocher de tous les formulaires adaptatifs pour les sélectionner.
 
@@ -46,15 +46,15 @@ Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
    >
    >Tous les éléments sélectionnés doivent être des formulaires adaptatifs, car la fonctionnalité de copier-coller n’est prise en charge que pour ces formulaires, et tous doivent figurer dans le même dossier.
 
-   Après avoir sélectionné les ressources, cliquez sur la copie ![aem6forms_copy](assets/aem6forms_copy.png) icône présente dans la barre d’outils pour copier le formulaire adaptatif sélectionné.
+   Après avoir sélectionné les éléments, cliquez sur l’icône de copie ![aem6forms_copy](assets/aem6forms_copy.png) de la barre d’outils pour copier le formulaire adaptatif sélectionné.
 
 ### Coller un formulaire adaptatif {#paste-an-adaptive-form}
 
-Le fait de cliquer sur l’action de copie ferme automatiquement le mode de sélection et effectue le collage. ![aem6forms_paste](assets/aem6forms_paste.png) visible. Accédez maintenant au chemin du dossier souhaité et cliquez sur coller ![aem6forms_paste](assets/aem6forms_paste.png) pour coller le formulaire adaptatif copié.
+Un clic sur l’action de copie fait automatiquement quitter le mode de sélection et rend visible l’icône de collage ![aem6forms_paste](assets/aem6forms_paste.png). Accédez maintenant au dossier de votre choix et cliquez sur l’icône de collage ![aem6forms_paste](assets/aem6forms_paste.png) pour coller le formulaire adaptatif copié.
 
 Si vous collez le formulaire dans le même dossier ou s’il existe déjà un autre fichier portant le même nom de nœud (avec lequel il est stocké dans le référentiel CRX) dans ce dossier cible, une unité est ajoutée au suffixe (par exemple, myaf devient myaf1 et si myaf1 existe déjà au même emplacement, myaf devient myaf2). Toutes les autres propriétés restent identiques au formulaire adaptatif d’origine.
 
-Après avoir cliqué sur le bouton Coller ![aem6forms_paste](assets/aem6forms_paste.png) , il se masquera à nouveau. Vous ne pouvez effectuer qu’une seule opération de copie à la fois. Pour créer une autre copie d’un même élément, copiez le à nouveau.
+Cliquer sur l’icône de collage ![aem6forms_paste](assets/aem6forms_paste.png) la masque à nouveau. Vous ne pouvez effectuer qu’une seule opération de copie à la fois. Pour créer une autre copie d’un même élément, copiez le à nouveau.
 
 ### Modification du contenu du nouveau formulaire adaptatif {#change-contents-of-new-adaptive-form}
 

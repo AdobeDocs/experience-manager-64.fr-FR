@@ -12,7 +12,7 @@ exl-id: c1bf0a0e-70f7-41dd-8b1a-c114d89a265b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ L’administrateur MDM peut transférer des fichiers .ipa et .apk sur le serve
 
 ## Paramètres de profil affectant l’application AEM Forms {#profile-settings-affecting-the-aem-forms-app-br}
 
-Les paramètres de profil suivants sur votre appareil auront une incidence sur le fonctionnement de l’application AEM Forms sur votre appareil :
+Les paramètres de profil suivants sur votre appareil affecteront le fonctionnement de lʼapplication AEM Forms sur celui-ci :
 
 * **Autiliser l’utilisation de l’appareil photo** dans la section **Fonctionnalité du périphérique**
 

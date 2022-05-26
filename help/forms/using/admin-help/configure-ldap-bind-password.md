@@ -13,7 +13,7 @@ exl-id: eaa2c889-d116-4209-9063-0c0b32dd8849
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 90%
 Pour éviter les risques de sécurité, le champ du mot de passe de liaison n’est pas configuré dans le fichier de configuration (config.xml) exporté. Avant d’importer ce fichier dans un autre système, veillez à configurer ce mot de passe, qui remplace le mot de passe défini dans la base de données. Un mot de passe null ne remplace pas un mot de passe non null existant.
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration.
-1. Pour exporter la configuration en cours dans un fichier, cliquez sur Exporter, puis enregistrez le fichier de configuration à un autre emplacement.
-1. Dans le fichier , recherchez la variable `Domains` > *[Votre nom de domaine]* > `DirectoryConfigs` > `LDAPGroupConfig` noeud . Par exemple :
+1. Pour exporter le paramètre de configuration en cours dans un fichier, cliquez sur Exporter, puis enregistrez le fichier de configuration dans un autre emplacement.
+1. Dans le fichier, recherchez le nœud `Domains` > *[Votre nom de domaine]* > `DirectoryConfigs` > `LDAPGroupConfig`. Par exemple :
 
    ```as3
     <node name="LDAPGroupConfig"> 
@@ -38,7 +38,7 @@ Pour éviter les risques de sécurité, le champ du mot de passe de liaison n’
 
    Saisissez une valeur pour `bindpassword` et enregistrez vos modifications.
 
-1. Dans le fichier , recherchez la variable `Domains` > *[Votre nom de domaine]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` noeud . Par exemple :
+1. Dans le fichier, recherchez le nœud `Domains` > *[Votre nom de domaine]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. Par exemple :
 
    ```as3
     <node name="LDAPUserConfig"> 
@@ -53,5 +53,5 @@ Pour éviter les risques de sécurité, le champ du mot de passe de liaison n’
 
    Saisissez une valeur pour `bindpassword` et enregistrez vos modifications.
 
-1. Pour importer le fichier mis à jour, dans User Management, cliquez sur Configuration > Importer et exporter des fichiers de configuration.
-1. Cliquez sur Parcourir pour rechercher le fichier, sur Importer, puis sur OK.
+1. Pour importer le fichier mis à jour, dans User Management, cliquez sur Configuration > Importer et exporter des fichiers de configuration.
+1. Cliquez sur Parcourir pour trouver le fichier, puis sur Importer et enfin sur OK.

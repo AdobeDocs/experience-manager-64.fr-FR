@@ -13,7 +13,7 @@ exl-id: 8b1bbd85-66ba-4e96-917a-d768d84a417f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 77%
+ht-degree: 86%
 
 ---
 
@@ -31,8 +31,8 @@ Il est possible d’appeler l’application de création de correspondance à pa
 
 * l’URL des données XML extraites à partir de la source de données sélectionnée (à l’aide du paramètre cmDataUrl).
 
-Par exemple, le portail personnalisé prépare l’URL en tant que\
-`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, qui peut être la balise href d’un lien sur le portail.\
+Par exemple, le portail personnalisé prépare l’URL sous la forme\
+`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, qui pourrait être le href dʼun lien sur le portail.\
 Si le nom du modèle de lettre est à portée de main sur le portail, l’URL peut être\
 `https://[server]:[port]/content/cm/createcorrespondence.html?cmLetterName=[letter name]&cmDataUrl=[data URL]`.
 
@@ -128,4 +128,4 @@ L’ordre des paramètres du tableau indique la préférence de paramètres util
  </tbody>
 </table>
 
-Si vous utilisez le protocole http ou cq pour cmDataURL, l’URL de http/cq doit être accessible de manière anonyme.
+Si vous utilisez le protocole http ou cq pour le paramètre cmDataURL, l’URL correspondante doit pouvoir être accessible de manière anonyme.

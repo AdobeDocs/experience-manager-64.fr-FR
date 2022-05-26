@@ -13,7 +13,7 @@ exl-id: 68d881c6-7507-4018-b40e-205604221d0c
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Dans AEM Forms, l’opération de téléchargement est prise en charge pour les 
 
 AEM Forms prend en charge le téléchargement de ces types de ressource de manière individuelle ou dans un dossier contenant un ou plusieurs formulaires pris en charge.
 
-Outre ces ressources, vous pouvez télécharger le `Resource` type de ressource s’il est présent dans un dossier. L’objectif de cette fonctionnalité est de vous permettre de télécharger la ressource à laquelle fait référence un formulaire XFA, ainsi que le formulaire proprement dit.
+Outre ces ressources, vous pouvez télécharger le type `Resource` de ressources s’il est présent dans un dossier. L’objectif de cette fonctionnalité est de vous permettre de télécharger la ressource à laquelle fait référence un formulaire XFA, ainsi que le formulaire proprement dit.
 
 ## Téléchargement d’un ou de plusieurs formulaires {#download-one-or-more-forms}
 
@@ -37,7 +37,7 @@ Outre ces ressources, vous pouvez télécharger le `Resource` type de ressource 
 
 1. Accédez à l’emplacement de la ressource que vous souhaitez télécharger.
 
-1. Sélectionnez la ressource. Cliquez sur le bouton **[!UICONTROL Télécharger]** ![aem6forms_download](assets/aem6forms_download.png) dans la barre d’outils.
+1. Sélectionnez la ressource. Cliquez sur l’icône **[!UICONTROL Télécharger]** ![aem6forms_download](assets/aem6forms_download.png) dans la barre d’outils.
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Outre ces ressources, vous pouvez télécharger le `Resource` type de ressource 
 
    Si vous téléchargez un dossier, les ressources prises en charge dans le dossier sont téléchargées dans la hiérarchie existante.
 
-   Le fichier ZIP est enregistré dans la variable `Downloads` sur votre système.
+   Le fichier ZIP est enregistré dans le dossier `Downloads` sur votre système.
 
 ## Remarques relatives à l’opération de transfert {#related-considerations-for-the-upload-operation}
 

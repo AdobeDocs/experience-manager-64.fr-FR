@@ -13,13 +13,13 @@ exl-id: 88932b5b-2acc-4f21-8ce3-b819a990ad30
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Configuration de l’authentification avec certificat {#configuring-certificate-based-authentication}
 
-En général, User Management effectue l’authentification à l’aide d’un nom d’utilisateur et d’un mot de passe. User Management prend également en charge l’authentification par certificat, qui vous permet d’authentifier des utilisateurs via Acrobat ou automatiquement. Pour plus d’informations sur l’authentification des utilisateurs par programmation, consultez [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
+En général, User Management effectue l’authentification à l’aide d’un nom d’utilisateur et d’un mot de passe. User Management prend également en charge l’authentification par certificat, qui vous permet d’authentifier des utilisateurs via Acrobat ou automatiquement. Pour plus d’informations sur l’authentification des utilisateurs par programmation, consultez [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).
 
 Pour utiliser l’authentification par certificat, importez dans Trust Store un certificat d’une autorité de certification en qui vous avez confiance, puis créez un mappage de certificat.
 
@@ -50,7 +50,7 @@ Lorsque vous testez un certificat, User Management télécharge les contrôles p
 
    Si le contenu de l’attribut dans le certificat est différent du contenu de l’attribut de l’utilisateur dans la base de données de User Management, vous pouvez utiliser une expression régulière Java (regex) pour faire correspondre les deux attributs. Par exemple, si les noms communs des certificats sont du type *Alex Dupont (Authentification)* et *Alex Dupont (Signature)* et si le nom commun dans la base de données de User Management est *Alex Dupont*, vous pouvez utiliser une expression regex pour extraire la partie requise de l’attribut du certificat (en l’occurrence, *Alex Dupont*). L’expression régulière que vous spécifiez doit être conforme à la spécification regex Java.
 
-   Vous pouvez transformer cette expression en spécifiant l’ordre des groupes dans la zone Ordre personnalisé. L’ordre personnalisé est utilisé avec la variable `java.util.regex.Matcher.replaceAll()` . Le comportement observé correspond à celui de cette méthode et la chaîne d’entrée (l’ordre personnalisé) doit être spécifiée en conséquence.
+   Vous pouvez transformer cette expression en spécifiant l’ordre des groupes dans la zone Ordre personnalisé. L’ordre personnalisé s’utilise avec la méthode `java.util.regex.Matcher.replaceAll()`. Le comportement observé correspond à celui de cette méthode et la chaîne d’entrée (l’ordre personnalisé) doit être spécifiée en conséquence.
 
    Pour tester l’expression regex, saisissez une valeur dans la zone Paramètre de test, puis cliquez sur Tester.
 
@@ -66,15 +66,15 @@ Lorsque vous testez un certificat, User Management télécharge les contrôles p
 
    * Pour extraire « Alex Dupont » de « Alex Dupont (Authentification) »
 
-      **Regex :** (.&amp;ast;) \(Authentication\)
+      **Regex :** (.&amp;ast;) \(Authentification\)
 
    * Pour extraire « Alex Dupont » de « Alex (Authentification) Dupont »
 
-      **Regex :** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+      **Regex :** (.&amp;ast;)\(Authentification\) (.&amp;ast;)
 
    * Pour extraire « Dupont Alex » de « Alex (Authentification) Dupont »
 
-      **Regex :** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+      **Regex :** (.&amp;ast;)\(Authentification\) (.&amp;ast;)
 
       Ordre personnalisé : $2 $1 (renvoyer le second groupe concaténé au premier groupe, capturé par un caractère espace)
 

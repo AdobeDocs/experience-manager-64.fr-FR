@@ -13,7 +13,7 @@ exl-id: d7406206-d63a-48da-bb95-e62db0f2c8a5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1253'
-ht-degree: 83%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 83%
 
 Les formulaires adaptatifs font partie intégrante de vos interactions avec les clients. Il est important de tester vos formulaires adaptatifs à chaque modification apportée, comme lors du déploiement d’un nouveau groupe de correctifs ou de la modification d’une règle dans le formulaire. Cependant, les formulaires adaptatifs de test fonctionnel et tous les champs qu’ils contiennent peuvent s’avérer fastidieux.
 
-Calvin vous permet d’automatiser les tests de vos formulaires adaptatifs dans le navigateur Web. Calvin utilise [Hobbes](/help/sites-developing/hobbes.md)L’interface utilisateur de d’ pour exécuter les tests et fournit les outils suivants :
+Calvin vous permet d’automatiser les tests de vos formulaires adaptatifs dans le navigateur Web. Calvin utilise l’interface utilisateur de [Hobbes](/help/sites-developing/hobbes.md) pour exécuter les tests et fournit les outils suivants :
 
 * Une API JavaScript pour créer des tests.
 * Une interface utilisateur pour exécuter des tests.
@@ -88,7 +88,7 @@ En utilisant Calvin, vous pouvez créer des cas de test dans CRXDE et exécuter 
 
 Avant d’utiliser cet article pour créer vos cas de test, vous devez savoir ce qui suit :
 
-* Création de suites de tests et exécution de cas de test à l’aide de [Hobbes](https://docs.adobe.com/docs/fr/aem/6-3/develop/components/hobbes.html)
+* Créer des suites de tests et exécuter des cas de test à l’aide de [Hobbes](https://docs.adobe.com/docs/fr/aem/6-3/develop/components/hobbes.html)
 * [API JavaScript Hobbes](https://docs.adobe.com/docs/fr/aem/6-2/develop/ref/test-api/index.html)
 * [API JavaScript Calvin](https://helpx.adobe.com/fr/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
@@ -96,7 +96,7 @@ Avant d’utiliser cet article pour créer vos cas de test, vous devez savoir ce
 
 L’exemple suivant vous guide dans la création d’une suite de tests pour tester plusieurs formulaires adaptatifs. Vous devez créer un cas de test distinct pour chaque formulaire que vous souhaitez tester. En effectuant des étapes similaires à celles ci-dessous et en modifiant le code JavaScript à l’étape 11, vous pouvez créer votre propre suite de tests pour tester vos formulaires adaptatifs.
 
-1. Accédez au CRXDE Lite dans votre navigateur web : `https://[server]:[port]/crx/de`.
+1. Accédez à CRXDE Lite dans votre navigateur web : `https://[server]:[port]/crx/de`.
 1. Cliquez avec le bouton droit sur le sous-dossier /etc/clientlibs et sélectionnez **[!UICONTROL Créer > Créer un nœud]**. Saisissez un nom (ici afTestRegistration), spécifiez le type de nœud en tant que cq:ClientLibraryFolder, puis cliquez sur **[!UICONTROL OK]**.
 
    Le dossier clientlibs contient l’aspect enregistrement de votre application (JS et Init). Il est recommandé d’enregistrer tous les objets de suites de tests Hobbes spécifiques à un formulaire dans le dossier clientlibs.
@@ -118,7 +118,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
   <tr> 
    <td><p>dependencies</p> </td> 
    <td><p>Chaîne[]</p> </td> 
-   <td><p>granite.testing.hobbes.testrunner, granite.testing.calvin, apps.testframework.all</p> </td> 
+   <td><p>granite.testing.hobbes.testrunner, granite.testing.calvin, apps.testframework.all</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -129,8 +129,8 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
-1. Cliquez avec le bouton droit sur le noeud test (ici **afTestRegistration)** puis cliquez sur **[!UICONTROL Créer > Créer un fichier]**. Nommez le fichier js.txt et cliquez sur **[!UICONTROL OK]**.
-1. Dans le fichier js.txt, ajoutez le texte suivant :
+1. Faites un clic droit sur le nœud de test (ici **afTestRegistration)**, puis cliquez sur **[!UICONTROL Créer > Créer un fichier]**. Nommez le fichier js.txt et cliquez sur **[!UICONTROL OK]**.
+1. Dans le fichier js.txt, ajoutez le texte suivant : 
 
    ```
    #base=.
@@ -138,8 +138,8 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
    ```
 
 1. Cliquez sur **[!UICONTROL Enregistrer tout]** et fermez le fichier js.txt.
-1. Cliquez avec le bouton droit sur le noeud test (ici **afTestRegistration)** et cliquez sur **[!UICONTROL Créer > Créer un fichier]**. Nommez le fichier init.js et cliquez sur **[!UICONTROL OK]**.
-1. Copiez le code suivant dans le fichier init.js et cliquez sur **[!UICONTROL Enregistrer tout]**:
+1. Faites un clic droit sur le nœud de test (ici **afTestRegistration)**, puis cliquez sur **[!UICONTROL Créer > Créer un fichier]**. Nommez le fichier init.js et cliquez sur **[!UICONTROL OK]**.
+1. Copiez le code suivant dans le fichier init.js et cliquez sur **[!UICONTROL Enregistrer tout]** : 
 
    ```
    (function(window, hobs) {
@@ -162,16 +162,16 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
    * Nom : testForm (le nom de votre formulaire)
    * Type : cq:ClientLibraryFolder
 
-1. Ajoutez les propriétés suivantes au noeud nouvellement créé (ici testForm) pour tester un formulaire adaptatif :
+1. Ajoutez les propriétés suivantes au nœud que vous venez de créer (ici testForm) afin de tester un formulaire adaptatif :
 
    | **Propriété** | **Type** | **Valeur** |
    |---|---|---|
-   | categories | Chaîne[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
+   | categories | Chaîne[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
    | dependencies | Chaîne[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
-   >Cet exemple utilise une dépendance sur la bibliothèque cliente granite.testing.calvin.tests pour une meilleure gestion. Cet exemple ajoute également une catégorie de bibliothèque client, « granite.testing.hobbes.tests.testForm » pour réutiliser cette bibliothèque client, si nécessaire.
+   >Cet exemple utilise une dépendance sur le client lib granite.testing.calvin.tests pour une meilleure gestion. Cet exemple ajoute également une catégorie de bibliothèque client, « granite.testing.hobbes.tests.testForm » pour réutiliser cette bibliothèque client, si nécessaire.
 
    ![2_testformproperties](assets/2_testformproperties.png)
 
@@ -271,9 +271,9 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
     }(window, window.hobs));
    ```
 
-   Le cas de test est créé. Procédez à l’exécution du cas de test pour tester les formulaires adaptatifs via Hobbes. Pour connaître les étapes d’exécution des cas de test, voir [Exécution de tests dans le test de votre interface utilisateur à l’aide de tests automatisés](/help/sites-developing/hobbes.md).
+   Le cas de test est créé. Procédez au lancement du test pour tester les formulaires adaptatifs via Hobbes. Pour connaître les étapes d’exécution des cas de test, voir [Exécuter les tests lorsque vous testez votre interface utilisateur à l’aide de tests automatisés](/help/sites-developing/hobbes.md).
 
-Vous pouvez également installer le package dans le fichier joint SampleTestPackage.zip pour obtenir les mêmes résultats qu’avec les étapes expliquées dans Exemple : créer une suite de tests pour un formulaire adaptatif en utilisant Hobbes comme cadre de test.
+Vous pouvez également installer le package dans le fichier joint SampleTestPackage.zip pour obtenir les mêmes résultats qu’avec les étapes expliquées dans Exemple : créer une suite de tests pour un formulaire adaptatif en utilisant Hobbes comme cadre de test.
 
 [Obtenir le fichier](assets/sampletestpackage.zip)
 
@@ -285,7 +285,7 @@ Les suites de tests peuvent être exécutées séparément. Lorsque vous lancez 
 
 Une coche indique un test réussi : ![checkmark](assets/checkmark.png)
 
-Une icône &quot;X&quot; indique un test ayant échoué : ![cross](assets/cross.png)
+Une icône « X » indique un test échoué : ![croix](assets/cross.png)
 
 Pour exécuter une suite de tests :
 
@@ -293,7 +293,7 @@ Pour exécuter une suite de tests :
 
    ![1_tapnameoftestcase](assets/1_tapnameoftestcase.png)
 
-1. Cliquez ou appuyez sur le bouton Exécuter les tests . ![runtestcase](assets/runtestcase.png)
+1. Cliquez ou appuyez sur le bouton Exécuter les tests. ![runtestcase](assets/runtestcase.png)
 
    ![2_clickrun](assets/2_clickrun.png)
 

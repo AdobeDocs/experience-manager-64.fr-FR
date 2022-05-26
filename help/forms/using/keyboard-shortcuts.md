@@ -13,7 +13,7 @@ exl-id: 08cf95bc-3417-48d4-9df2-5bd56797bc5d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -25,18 +25,18 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 | **Action** | **Raccourci sous Windows** | **Raccourci sous Mac OS** |
 |---|---|---|
-| Ouvrez le navigateur Propriétés pour le composant de formulaire adaptatif sélectionné. | Alt + Entrée | Alt + Retour |
+| Ouvrir l’explorateur de propriétés pour le composant de formulaire adaptatif sélectionné | Alt + Entrée | Alt + Retour |
 | Fermer le navigateur Propriétés pour le composant de formulaire adaptatif sélectionné | Ctrl + Alt + W | Commande + Alt + W |
 | Enregistrer les modifications dans la fenêtre Propriétés pour le composant de formulaire adaptatif sélectionné | Ctrl + S | Commande + S |
-| Modifier la règle pour le composant de formulaire adaptatif sélectionné | Ctrl + Alt + Entrée | Commande + Alt + Retour |
+| Modifier la règle pour le composant de formulaire adaptatif sélectionné | Ctrl + Alt + Entrée | Commande + Alt + Retour |
 | Permet de basculer entre le mode Aperçu et le mode actuellement sélectionné (par exemple : Édition, Génération de modèles automatique, etc.). | Ctrl+Maj+M | Ctrl+Maj+M&amp;ast; |
 | Annuler la dernière modification | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Rétablir la dernière modification | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Sélectionner plusieurs composants | Maj + Clic | Maj + Clic |
 | Copier le composant sélectionné | Ctrl+C | Ctrl+C&amp;ast; |
-| Couper un ou plusieurs composants sélectionnés. Le composant coupé ne disparaît pas tant qu’il n’est pas collé à un nouvel emplacement. | Ctrl+X | Ctrl+X&amp;ast; |
-| Coller le(s) composant(s) | Ctrl+V | Ctrl+V |
-| Supprimer un ou plusieurs composants sélectionnés | Ctr + Suppr | Ctrl+Del&amp;ast; |
+| Couper un ou plusieurs composants sélectionnés. Le composant coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement. | Ctrl+X | Ctrl+X&amp;ast; |
+| Coller un ou plusieurs composants | Ctrl+V | Ctrl+V |
+| Supprimer un ou plusieurs composants sélectionnés | Ctr + Suppr | Ctrl+Suppr&amp;ast; |
 | Supprimer un ou plusieurs composants sélectionnés | Ctrl+Retour arrière | Ctrl+Retour arrière&amp;ast; |
 | Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+B | Ctrl+B&amp;ast; |
 | Mettre le texte en italique lors de l’utilisation du composant Éditeur de texte enrichi en mode Aperçu | Ctrl+I | Ctrl+I&amp;ast; |
@@ -44,7 +44,7 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un &quot;&amp;ast;&quot; fonctionnent avec les touches Ctrl et Commande du système d’exploitation Mac.
+>Les raccourcis marqués d’un &#39;&amp;ast;&#39; fonctionnent à la fois avec les touches Ctrl et Commande sous Mac OS.
 
 >[!NOTE]
 >
@@ -52,7 +52,6 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 >
 >* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
 >* MAC OS : Commande + clic sur les composants nécessaires.
-
 >
 
 
@@ -64,32 +63,32 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 | Fermer l’explorateur de propriétés pour le composant sélectionné dans un thème | Ctrl + Alt + W | Commande + Alt + W |
 | Annuler la dernière modification | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Rétablir la dernière modification | Ctrl+Y | Ctrl+Y&amp;ast; |
-| Enregistrer les modifications dans l’explorateur de propriétés pour le composant sélectionné dans un thème | Ctrl + S | Ctrl+S&amp;ast; |
+| Enregistrer les modifications dans l’explorateur de propriétés pour le composant sélectionné dans un thème | Ctrl + S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un &quot;&amp;ast;&quot; fonctionnent avec les touches Ctrl et Commande du système d’exploitation Mac.
+>Les raccourcis marqués d’un &#39;&amp;ast;&#39; fonctionnent à la fois avec les touches Ctrl et Commande sous Mac OS.
 
 ## Explorateur de contenu  {#contentbrowser}
 
 | **Action** | **Raccourci sous Windows** | **Raccourci sous Mac OS** |
 |---|---|---|
-| Développer tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl + A pour sélectionner tous les accordéons, puis flèche droite pour développer | Commande + A pour sélectionner tous les accordéons, puis flèche droite pour développer |
-| Réduire tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl+A pour sélectionner tous les accordéons, puis flèche gauche pour réduire | Commande + A pour sélectionner tous les accordéons, puis flèche gauche pour réduire |
+| Développer tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl + A pour sélectionner tous les accordéons, puis flèche droite pour développer | Commande+A pour sélectionner tous les accordéons, puis flèche droite pour développer |
+| Réduire tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl+A pour sélectionner tous les accordéons, puis flèche gauche pour réduire | Commande+A pour sélectionner tous les accordéons, puis flèche gauche pour réduire |
 | Développer l’accordéon sélectionné dans l’arborescence des objets de formulaire | Flèche vers la droite | Flèche vers la droite |
 | Réduire l’accordéon sélectionné dans l’arborescence des objets de formulaire | Flèche vers la gauche | Flèche vers la gauche |
 | Sélectionner l’élément suivant dans l’arbre des objets de formulaire | Flèche vers le bas | Flèche vers le bas |
 | Sélectionner l’élément précédent dans l’arborescence d’objets de formulaire | Flèche vers le haut | Flèche vers le haut |
 
-[1] Remplace Ctrl + Flèche droite pour Windows et Commande + Flèche droite pour Mac OS.\
-[2] Remplace Ctrl + Flèche gauche pour Windows et Commande + Flèche gauche pour Mac OS.
+[1] Remplace Ctrl + Flèche droite pour Windows et Commande + Flèche droite pour Mac OS.\
+[2] Remplace Ctrl + Flèche gauche pour Windows et Commande + Flèche gauche pour Mac OS.
 
 ## Correspondence Management {#correspondence-management}
 
 Cette section répertorie les différents raccourcis clavier et raccourcis d’accessibilité que vous pouvez utiliser dans l’éditeur de texte de Correspondence Management. Vous pouvez utiliser ces raccourcis lorsque vous effectuez les actions suivantes :
 
-* Création ou modification d’une [Texte](document-fragments.md) ressource
-* Modification d’un module de texte après avoir appuyé sur l’icône Modifier appropriée ( ![edittextmodule](assets/edittextmodule.png)) lorsque [création d’une correspondance](/help/forms/using/create-correspondence.md).
+* Créer ou modifier un actif de [texte](document-fragments.md)
+* Modifiez un module de texte après la sélection de l’icône d’édition appropriée (![edittextmodule](assets/edittextmodule.png)) lors de la [création d’une correspondance](/help/forms/using/create-correspondence.md).
 
 ### Sélection de texte et déplacement du curseur {#text-selection-and-moving-the-cursor-around}
 

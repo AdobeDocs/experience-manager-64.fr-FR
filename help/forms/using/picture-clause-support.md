@@ -14,7 +14,7 @@ exl-id: b63758f1-b375-4c05-bd53-69e0346733c6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ HTML5 forms prend en charge les clauses d’image XFA pour afficher la valeur et
 
 >[!NOTE]
 >
->Mobile Forms ne prend actuellement pas en charge la clause de modification de l’image. En outre, les symboles de clause DateTime et Time Picture ne sont pas pris en charge.
+>Mobile Forms ne prend actuellement pas en charge la clause de modification de l’image. De plus, les symboles des clauses DateTime et Time Picture ne sont pas pris en charge.
 
 ## Symboles de champ date pris en charge {#supported-date-field-symbols}
 
@@ -107,7 +107,7 @@ Le nombre **10000** est formaté sous la forme **10 000** dans les formulaires 
 
 Le nombre 1000000 est formaté sous la forme 1 000 000 dans les formulaires PDF. Toutefois, dans les formulaires HTML, ce nombre n’est pas formaté et conserve la forme 1000000.
 
-Expressions prises en charge pour la clause d’image numérique dans **HTML Forms** sont :
+Expressions prises en charge pour la clause d’image numérique dans les **formulaires HTML** :
 
 * num.integer{}
 * num.decimal{}
@@ -204,7 +204,7 @@ Expressions prises en charge pour la clause d’image numérique dans **HTML For
 
 HTML5 forms prend en charge les expressions de clause d’image de texte suivantes :
 
-* text{symboles de clause d’image de texte}
+* text{text Picture clause symbols}
 
 | **Symbole** | **Interprétation** |
 |---|---|

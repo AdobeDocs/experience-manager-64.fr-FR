@@ -13,7 +13,7 @@ exl-id: d29e1b1e-62df-4b0d-aa64-ad98568cf4a6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1914'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -39,11 +39,11 @@ Si certains utilisateurs de votre entreprise ont des jours non ouvrés différen
 
 1. Choisissez la méthode appropriée d’association du calendrier professionnel à un utilisateur, parmi les deux suivantes :
 
-   **Appartenance à un groupe :** Vous pouvez affecter un calendrier professionnel à un utilisateur en fonction de son appartenance à un groupe. Dans ce cas, chaque utilisateur du groupe utilise le même calendrier professionnel. 
+   **Appartenance à un groupe :** vous pouvez affecter un calendrier professionnel à un utilisateur selon son appartenance à un groupe. Dans ce cas, chaque utilisateur du groupe utilise le même calendrier professionnel. 
 
    Si un utilisateur est membre de deux groupes et si ces groupes sont associés à deux calendriers professionnels différents, AEM Forms utilise le premier calendrier qui s’affiche dans les résultats de recherche. Vous devez alors envisager d’utiliser des clés de calendriers professionnels pour associer les utilisateurs aux calendriers professionnels.
 
-   **Clés de calendrier professionnel :** Vous pouvez attribuer un calendrier professionnel à un utilisateur en fonction d’une clé de calendrier professionnel, qui est un paramètre spécifié dans User Management. Associez ensuite la clé de calendrier professionnel à un calendrier professionnel dans le processus des formulaires. 
+   **Clés de calendrier professionnel :** vous pouvez affecter un calendrier professionnel à un utilisateur en fonction d’une clé de calendrier professionnel, paramètre à définir dans User Management. Associez ensuite la clé de calendrier professionnel à un calendrier professionnel dans le processus des formulaires. 
 
     Les clés de calendrier professionnel sont attribuées à des utilisateurs en fonction du domaine utilisé, tel que le domaine d’entreprise, local ou hybride Pour plus d’informations sur la configuration de domaines, voir [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains). 
 
@@ -53,7 +53,7 @@ Si certains utilisateurs de votre entreprise ont des jours non ouvrés différen
 
 1. Dans le processus des formulaires, définissez un calendrier pour chaque ensemble d’utilisateurs disposant des mêmes jours non ouvrés (voir [Création ou mise à jour d’un calendrier professionnel](configuring-business-calendars.md#create-or-update-a-business-calendar)).
 1. Dans le processus des formulaires, associez les clés de calendrier professionnel ou les appartenances aux groupes pour chaque calendrier (voir [Association d’utilisateurs ou de groupes à un calendrier professionnel](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)).
-1. Dans Workbench, la décision d’utiliser des calendriers professionnels pour les rappels, les échéances et les transmissions appartient au développeur de processus (Voir l’[Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)).
+1. Dans Workbench, la décision d’utiliser des calendriers professionnels pour les rappels, les échéances et les transmissions appartient au développeur de processus (Voir l’[Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr)).
 
    Si le développeur de processus choisit d’utiliser des calendriers professionnels, AEM Forms sélectionne le calendrier professionnel approprié de façon dynamique en fonction du paramétrage de Gestion des utilisateurs et des associations de calendriers professionnels définies dans Administration Console ; en l’absence d’associations, le calendrier par défaut est utilisé.
 
@@ -73,7 +73,7 @@ Si votre organisation comprend différents groupes d’utilisateurs pour lesquel
    Pour modifier un calendrier professionnel existant, sélectionnez-le dans la liste déroulante.
 
 1. Sous Jours non ouvrés par défaut, sélectionnez les jours non ouvrés par défaut de votre choix dans la semaine (week-ends, par exemple).
-1. [Facultatif] Sélectionnez Use Business Hours et spécifiez les heures de début et de fin pour les jours ouvrés.
+1. [Facultatif] Sélectionnez Utiliser les heures ouvrables et définissez les heures de début et de fin d’une journée de travail.
 
    Si vous sélectionnez cette option, un événement qui se produit avant la plage horaire définie est déplacé au début de la plage horaire et un événement qui se produit après est déplacé à l’heure de début du prochain jour ouvré.
 
@@ -81,9 +81,9 @@ Si votre organisation comprend différents groupes d’utilisateurs pour lesquel
 
 1. Dans le calendrier de gauche, cliquez deux fois sur un autre jour non ouvré, comme congés. Vous ne pouvez pas sélectionner de jours sur des périodes antérieures. Les jours non ouvrés sélectionnés apparaissent dans une liste sur la droite et la date s’affiche deux fois sur une seule ligne. Sélectionnez la date sur la gauche pour pouvoir taper le nom ou la description du jour non ouvré.
 
-   Pour supprimer un jour non ouvré de la liste, cliquez sur ![bus_cal_trash](assets/bus_cal_trash.png) à côté de la journée.
+   Pour supprimer un jour non ouvré de la liste, cliquez sur ![bus_cal_trash](assets/bus_cal_trash.png) près du jour concerné.
 
-1. [Facultatif] Si ce calendrier doit être le calendrier par défaut, sélectionnez Calendrier par défaut. Le calendrier par défaut est utilisé lorsqu’il n’existe aucune autre association de calendrier pour des événements utilisateur ou si aucun calendrier professionnel n’est spécifié pour l’événement de temporisation ou le service d’attente. Vous ne pouvez pas supprimer le calendrier par défaut.
+1. [Facultatif] Pour définir ce calendrier comme calendrier par défaut, sélectionnez Calendrier par défaut. Le calendrier par défaut est utilisé lorsqu’il n’existe aucune autre association de calendrier pour des événements utilisateur ou si aucun calendrier professionnel n’est spécifié pour l’événement de temporisation ou le service d’attente. Vous ne pouvez pas supprimer le calendrier par défaut.
 1. La définition des jours non ouvrés terminée, sélectionnez Calendrier activé pour activer le calendrier, puis cliquez sur Enregistrer.
 
    Si vous mettez à jour un calendrier existant, la nouvelle version prend effet immédiatement et est utilisée pour tous les calculs de calendrier professionnel, y compris pour les tâches déjà en cours d’exécution.

@@ -12,7 +12,7 @@ exl-id: c73fd1c5-6f3f-4c62-a8d6-fcd22f02c0ca
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Outre l’approche par défaut mentionnée ci-dessus, une autre mise en œuvre d
 
 ## Configuration des services de brouillons et envois Forms Portal {#configuring-forms-portal-drafts-and-submissions-services}
 
-Dans la configuration de la console Web AEM ( `https://[*host*]:[*port*]/system/console/configMgr`), cliquez pour ouvrir **Configuration des brouillons et des envois du portail Forms** en mode d’édition.
+Dans la configuration de la console web AEM (`https://[*host*]:[*port*]/system/console/configMgr`), cliquez pour ouvrir la **Configuration des brouillons et des envois sur le portail Formulaires** en mode modification.
 
 Indiquez les valeurs des propriétés en fonction de vos besoins comme décrit ci-dessous :
 
@@ -104,8 +104,8 @@ Les données sont publiées directement sur l’instance à distance configurée
 
 Outre la configuration spécifiée ci-dessus, fournissez les informations sur l’instance de traitement à distance configurée.
 
-Dans la configuration de la console Web AEM ( `https://[*host*]:[*port*]/system/console/configMgr`), cliquez pour ouvrir **Service de paramètres d’AEM** en mode d’édition. Dans la boîte de dialogue de service des paramètres AEM DS, renseignez les informations sur l’URL du serveur de traitement, y compris le nom d’utilisateur et le mot de passe.
+Dans la configuration de la console web AEM (`https://[*host*]:[*port*]/system/console/configMgr`), cliquez pour ouvrir le **Service des paramètres AEM DS** en mode modification. Dans la boîte de dialogue de service des paramètres AEM DS, renseignez les informations sur l’URL du serveur de traitement, y compris le nom d’utilisateur et le mot de passe.
 
 >[!NOTE]
 >
->Un exemple de mise en œuvre est également fourni pour le stockage des données utilisateur dans une base de données. Pour comprendre comment configurer des services de données et de métadonnées pour stocker des données utilisateur dans une base de données externe, voir [Exemple d’intégration du composant brouillons et envois à la base de données](/help/forms/using/integrate-draft-submission-database.md).
+>Un exemple de mise en œuvre est également fourni pour le stockage des données utilisateur dans une base de données. Pour comprendre comment configurer les services de données et métadonnées afin de stocker les données utilisateur dans une base de données externe, consultez la section [Exemple d’intégration d’un composant brouillons et envois à la base de données](/help/forms/using/integrate-draft-submission-database.md).

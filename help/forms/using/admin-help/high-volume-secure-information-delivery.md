@@ -14,7 +14,7 @@ exl-id: 78fc7c4a-a634-4628-927a-c9622bdc13fc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,4 +30,4 @@ Dans le cas de la génération mensuelle de factures pour une société de tél�
 
 La création de stratégies abstraites est prise en charge uniquement par le biais du SDK Java de Document Security. Vous pouvez cependant administrer les stratégies que vous créez à partir des stratégies abstraites des pages Web de Document Security. Le comportement des stratégies créées à l’aide de cette méthode est identique à celui des stratégies créées à partir des pages Web de Document Security.
 
-Pour plus d’informations, consultez [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
+Pour plus d’informations, consultez [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).

@@ -13,7 +13,7 @@ exl-id: 759cff3e-960a-4c38-a731-9fff21e739cf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1026'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâc
  <tbody>
   <tr> 
    <td><code> adobe.work-manager.queue-refill-interval</code></td> 
-   <td><p>Spécifie l’intervalle, en millisecondes, utilisé par Work Manager pour vérifier la présence de nouvelles tâches dans sa file d’attente.</p><p>La valeur de cette option est un entier. La valeur par défaut est <code>1000</code> millisecondes (1 seconde). </p><p>Si le volume d’appels asynchrones est faible, vous pouvez l’augmenter. Vous pouvez par exemple passer à une valeur comprise entre 2 000 et 5 000 (2 à 5 secondes). </p><p>Si le volume d’appels asynchrones est élevé, la valeur par défaut doit suffire, mais vous pouvez, si nécessaire, utiliser une valeur plus faible. Réduire cette valeur de façon trop importante (par exemple en dessous de 50, cette valeur entraînant 20 interrogations par seconde) provoque une surcharge substantielle au niveau du système.</p></td> 
+   <td><p>Spécifie l’intervalle, en millisecondes, utilisé par Work Manager pour vérifier la présence de nouvelles tâches dans sa file d’attente.</p><p>La valeur de cette option est un entier. La valeur par défaut est de <code>1000</code> millisecondes (1 seconde). </p><p>Si le volume d’appels asynchrones est faible, vous pouvez l’augmenter. Vous pouvez par exemple passer à une valeur comprise entre 2 000 et 5 000 (2 à 5 secondes). </p><p>Si le volume d’appels asynchrones est élevé, la valeur par défaut doit suffire, mais vous pouvez, si nécessaire, utiliser une valeur plus faible. Réduire cette valeur de façon trop importante (par exemple en dessous de 50, cette valeur entraînant 20 interrogations par seconde) provoque une surcharge substantielle au niveau du système.</p></td> 
   </tr> 
   <tr> 
    <td><code> adobe.workmanager.debug-mode-enabled</code></td> 
@@ -81,7 +81,7 @@ Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâc
 **Ajout d’options Java à JBoss**
 
 1. Arrêtez le serveur d’applications JBoss.
-1. Ouvrez le *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez toutes les options Java requises, au format `-Dproperty=value`.
+1. Ouvrez *[appserver root]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez toutes les options Java requises, au format `-Dproperty=value`.
 1. Redémarrez le serveur.
 
 **Ajout d’options Java à WebLogic**
@@ -89,12 +89,12 @@ Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâc
 1. Démarrez WebLogic Administration Console en saisissant `https://`*[nom d’hôte ]*`:`*[port]* `/console` dans un navigateur web.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
-1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
+1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
 1. Dans la zone Arguments, ajoutez les arguments souhaités à la fin du contenu actuel. Par exemple, pour désactiver Health Monitor, ajoutez :
 
-   `-Dadobe.healthmonitor.enabled=false` désactive Health Monitor.
+   `-Dadobe.healthmonitor.enabled=false` permet de désactiver Health Monitor.
 
-1. Cliquez sur Enregistrer, puis sur Activer les changements.
+1. Cliquez sur Save, puis sur Activate Changes.
 1. Redémarrez le serveur géré WebLogic.
 
 **Ajout d’options Java à WebSphere**

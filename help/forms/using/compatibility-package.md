@@ -14,7 +14,7 @@ exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 81%
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ L’installation du package de compatibilité sur AEM Forms 6.4 vous permet d’
 
 ## Présentation {#overview}
 
-La communication interactive est l’approche par défaut et recommandée pour créer des communications client dans AEM Forms 6.4. Pour continuer à utiliser les lettres d’AEM Forms 6.3 et 6.2, vous devez installer le [package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+La communication interactive est l’approche par défaut et recommandée pour créer des communications client dans AEM Forms 6.4. Pour continuer à utiliser les lettres d’AEM Forms 6.3 et 6.2, vous devez installer le [package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
 
 Le package de compatibilité AEMFD vous permet d’utiliser les actifs suivants d’AEM Forms 6.3 et 6.2 sur AEM Forms 6.4 :
 
@@ -33,13 +33,13 @@ Le package de compatibilité AEMFD vous permet d’utiliser les actifs suivants 
 * Dictionnaires de données
 * Modèles et pages des formulaires adaptatifs obsolètes
 
-Pour plus d’informations, voir [Ressources rendues compatibles avec AEM Forms 6.4 en installant le package de compatibilité](/help/forms/using/compatibility-package.md#assetsmadecompatible).
+Pour plus d’informations, consultez la section [Ressources devenues compatibles avec AEM Forms 6.4 après l’installation du package de compatibilité](/help/forms/using/compatibility-package.md#assetsmadecompatible).
 
 ## Ajout de la prise en charge des actifs AEM Forms 6.3 et 6.2 dans AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Après avoir effectué une mise à niveau, exécutez les opérations suivantes pour installer le package de compatibilité AEMFD et rendre vos actifs compatibles avec la version 6.4 :
 
-Assurez-vous que vous avez [Package de compatibilité AEM](/help/sites-deploying/backward-compatibility.md) pré-installé.
+Assurez-vous que le [package de compatibilité AEM](/help/sites-deploying/backward-compatibility.md) est préinstallé.
 
 1. Installez le [package de compatibilité](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
@@ -48,11 +48,11 @@ Assurez-vous que vous avez [Package de compatibilité AEM](/help/sites-deploying
 1. Une fois les journaux stabilisés, redémarrez le serveur.
 1. Utilisez l’utilitaire de migration pour rendre vos actifs compatibles avec la version 6.4.
 
-   Pour plus d’informations, voir [utilitaire de migration](/help/forms/using/migration-utility.md).
+   Pour plus d’informations, consultez la section [Utilitaire de migration](/help/forms/using/migration-utility.md).
 
 ## Actifs devenus compatibles avec AEM Forms 6.4 après l’installation du package de compatibilité {#assetsmadecompatible}
 
-En installant le package de compatibilité, vous pouvez rendre les actifs et modèles suivants compatibles avec AEM Forms 6.4 :
+En installant le package de compatibilité, vous pouvez rendre les ressources et les modèles suivants compatibles avec AEM Forms 6.4 :
 
 * Actifs de Correspondence Management d’AEM 6.3 et versions antérieures
 

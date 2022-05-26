@@ -12,7 +12,7 @@ exl-id: 3997b034-fa24-4366-b22f-0abf2b6d1e64
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2139'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ Vous pouvez utiliser le service Assembler pour assembler deux documents PDF ou p
 
 L’illustration suivante présente la fusion de trois documents source en un seul document cible.
 
-![Assemblage d’un document de PDF simple à partir de plusieurs documents de PDF](assets/as_document_assembly.png)
+![Assemblage d’un document PDF unique à de documents PDF multiples](assets/as_document_assembly.png)
 **Figure :** *Assemblage d’un document de PDF simple à partir de plusieurs documents de PDF*
 
 L’exemple suivant représente un document DDX utilisé pour assembler ce document. Il spécifie les noms des documents source à utiliser pour produire le document cible, ainsi que le nom de ce document cible :
@@ -43,8 +43,8 @@ L’exemple suivant représente un document DDX utilisé pour assembler ce docum
 </PDF>
 ```
 
-L’assemblage de documents produit un document généré qui contient le contenu suivant et\
-caractéristiques :
+L’assemblage de documents crée des documents finaux qui contiennent le contenu et\
+les caractéristiques suivants :
 
 * L’intégralité ou une partie de chacun des documents source ;
 * L’intégralité ou une partie des signets de chacun des documents source, normalisés pour le document cible assemblé ;
@@ -86,7 +86,7 @@ Lors de l’assemblage d’un document, vous pouvez utiliser la numérotation Ba
 
 L’illustration suivante présente un document PDF contenant un identifiant unique, situé dans l’en-tête du document.
 
-![Un document PDF contenant un identifiant unique situé dans l’en-tête du document.](do-not-localize/as_batesnumber.png)
+![Un document PDF qui contient un identifiant unique qui se trouve dans l’en-tête du document](do-not-localize/as_batesnumber.png)
 **Figure :** *Un document PDF contenant un identifiant unique situé dans l’en-tête du document.*
 
 ### Aplatissement et assemblage de documents {#flatten-and-assemble-documents}
@@ -109,7 +109,7 @@ Vous pouvez assembler des documents XDP de différentes manières, dont quelques
 
 L’illustration suivante présente la fusion de trois documents XDP source en un seul document XDP cible. Le document XDP produit contient les trois documents XDP source, ainsi que les données connexes. Le document cible récupère les attributs de base du document d’origine (premier document XDP source).
 
-![Assemblage d’un document XDP simple à partir de plusieurs documents XDP](assets/as_assembler_xdpassembly.png)
+![Assemblage d’un document XDP unique de plusieurs documents XDP](assets/as_assembler_xdpassembly.png)
 **Figure :** *Assemblage d’un document XDP simple à partir de plusieurs documents XDP*
 
 Voici le document DDX qui produit le résultat illustré ci-dessus.
@@ -159,8 +159,8 @@ Vous pouvez spécifier la valeur de l’attribut resolveAssets dans la balise XD
 
 #### Résolution de toutes les références source dans un document XDP {#resolve-all-source-references-in-an-xdp-document}
 
-Pour résoudre toutes les références dans les documents XDP source, spécifiez l’attribut resolveAssets pour la propriété\
-le document généré à tous, comme dans l’exemple ci-dessous :
+Pour résoudre toutes les références dans les documents XDP sources, spécifiez l’attribut resolveAssets pour le\
+document généré à tous, comme dans l’exemple ci-dessous :
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -172,7 +172,7 @@ le document généré à tous, comme dans l’exemple ci-dessous :
 </DDX
 ```
 
-Vous pouvez également spécifier l’attribut pour tous les documents XDP source indépendamment pour obtenir le même\
+Vous pouvez également spécifier l’attribut pour tous les documents XDP sources séparément afin d’obtenir le même\
 résultat.
 
 ```xml
@@ -224,7 +224,7 @@ Les concepteurs de formulaires utilisent LiveCycle Designer pour créer des frag
 
 L’illustration suivante représente deux formulaires XML (modèles XFA). Le formulaire placé à gauche contient un point d’insertion appelé myInsertionPoint. Celui de droite inclut un fragment appelé myFragment.
 
-![Insérer des fragments de formulaire dans un formulaire XFA](assets/as_assembler_fragment_assy_assembled.png)
+![Insertion des fragments des formulaires à un formulaire XFA](assets/as_assembler_fragment_assy_assembled.png)
 **Figure :** *Insérer des fragments de formulaire dans un formulaire XFA*
 
 Lorsque le service Assembler interprète le document DDX suivant, il crée un formulaire XML contenant un autre formulaire XML. Le sous-formulaire appelé myFragment du document myFragmentSource est inséré au niveau du point d’insertion myInsertionPoint du document myFormSource.
@@ -263,7 +263,7 @@ Vous pouvez utiliser le service Assembler pour désassembler un document PDF. Ce
 
 Dans l’illustration qui suit, les pages 1 à 3 sont extraites du document source, puis insérées dans un nouveau document cible.
 
-![Extraction de pages spécifiques d’un document source](assets/as_intro_page_extraction.png)
+![Extraction de pages spécifiques à partir d’un document source](assets/as_intro_page_extraction.png)
 **Figure :** *Extraction de pages spécifiques d’un document source*
 
 L’exemple qui suit représente un document DDX utilisé pour désassembler ce document.
@@ -276,7 +276,7 @@ L’exemple qui suit représente un document DDX utilisé pour désassembler ce 
 
 ### Division d’un document source en fonction de signets {#divide-a-source-document-based-on-bookmarks}
 
-Dans l’illustration suivante, le document DocA est divisé en plusieurs documents cible. Le signet de niveau 1 d’une page identifie le début d’un nouveau document cible.
+Dans l’illustration suivante, DocA est divisé en plusieurs documents cible. Le signet de premier niveau d’une page identifie le début d’un nouveau document généré.
 
 ![Division d’un document source en fonction de signets en plusieurs documents](assets/as_intro_pdfsfrombookmarks.png)
 **Figure :** *Division d’un document source en fonction de signets en plusieurs documents*
@@ -295,7 +295,7 @@ Vous pouvez utiliser le service Assembler pour déterminer si un document PDF es
 
 ## Obtention d’informations sur un document PDF {#obtain-information-about-a-pdf-document}
 
-Vous pouvez utiliser le service Assembler pour obtenir les informations suivantes concernant un document PDF :
+Vous pouvez utiliser le service Assembler pour obtenir les informations suivantes concernant un document PDF :
 
 * Informations sur le texte.
 
@@ -321,7 +321,7 @@ Vous pouvez utiliser les document DDX qui cause le service Assembler pour appele
 
 **Service des formulaire :** Fussionne un fichier XDP et un fichier de données XML pour produire un document PDF contenant un formulaire interactive rempli.
 
-**Service de sortie :** Convertit un formulaire XML dynamique à un document PDF contenant un formulaire non interactive (aplatissement du formulaire). Le service Assembler aplatit les formulaires XML statiques et les formulaires Acrobat sans appeler le service Output.
+**Service de sortie :** Convertit un formulaire XML dynamique à un document PDF contenant un formulaire non interactive (aplatissement du formulaire). Le service Assembler aplatit des formulaires XML statiques et des formulaires Acrobat sans appeler le service Output.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -336,4 +336,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-L’utilisation du DDX et du service Assembler pour appeler d’autres services LiveCycle peut simplifier le diagramme de procédure. Il peut également réduire l’effort de personnalisation de vos flux de travail. (Voir aussi, [Utilisation des Services de document AEM par programmation](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html))
+L’utilisation du DDX et du service Assembler pour appeler d’autres services LiveCycle peut simplifier le diagramme de procédure. Il peut également réduire l’effort de personnalisation de vos flux de travail. (Voir également, [Utilisation des Services de document AEM par programmation](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html))

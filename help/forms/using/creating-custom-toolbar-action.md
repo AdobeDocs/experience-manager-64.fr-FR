@@ -12,7 +12,7 @@ exl-id: bb0abe28-843a-4195-afd5-5ee7f0a279be
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '496'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -34,22 +34,22 @@ Outre l’ensemble d’actions proposé par défaut, vous pouvez créer des acti
 
 La procédure ci-dessous illustre la création d’une action personnalisée dans la barre d’outils. Elle décrit la création d’un bouton permettant aux utilisateurs finaux de parcourir tous les champs d’un formulaire adaptatif avant d’envoyer un formulaire complété.
 
-1. Toutes les actions par défaut prises en charge par les formulaires adaptatifs sont présentes dans `/libs/fd/af/components/actions` dossier. Dans CRXDE, copiez la variable `fileattachmentlisting` noeud à partir de `/libs/fd/af/components/actions/fileattachmentlisting` to `/apps/customaction`.
+1. Toutes les actions par défaut prises en charge par les formulaires adaptatifs figurent dans le dossier `/libs/fd/af/components/actions`. Dans CRXDE, copiez le nœud `fileattachmentlisting` de `/libs/fd/af/components/actions/fileattachmentlisting` vers `/apps/customaction`.
 
-1. Après avoir copié le noeud dans `apps/customaction` , renommez le noeud en `reviewbeforesubmit`. Modifiez également la variable `jcr:title` et `jcr:description` propriétés du noeud.
+1. Après avoir copié le nœud dans le dossier `apps/customaction`, renommez-le en `reviewbeforesubmit`. Modifiez également les propriétés `jcr:title` et `jcr:description` du nœud.
 
    La propriété `jcr:title` contient le nom de l’action qui s’affiche dans la boîte de dialogue de la barre d’outils. La propriété `jcr:description` contient davantage d’informations qui s’affichent lorsqu’un utilisateur place le pointeur de la souris sur l’action.
 
    ![Hiérarchie des nœuds pour la personnalisation de la barre d’outils](assets/action3.png)
 
-1. Sélectionner `cq:template` noeud dans `reviewbeforesubmit` noeud . Assurez-vous que la valeur de `guideNodeClass` est `guideButton` et changer `jcr:title` en conséquence.
-1. Modifiez la propriété type dans le `cq:Template` noeud . Dans l’exemple proposé, transformez la propriété de type en bouton.
+1. Sélectionnez le nœud `cq:template` dans le nœud `reviewbeforesubmit`. Assurez-vous que la valeur de la propriété `guideNodeClass` est `guideButton` et modifiez la propriété `jcr:title` en conséquence.
+1. Modifiez la propriété de type dans le nœud `cq:Template`. Dans l’exemple proposé, transformez la propriété de type en bouton.
 
    La valeur de type est ajoutée en tant que classe CSS dans le code HTML généré du composant. Les utilisateurs peuvent se servir de cette classe CSS pour appliquer un style à leurs actions. Le style par défaut pour les appareils mobiles et fixes (ordinateurs de bureau) est fourni pour les valeurs de type Bouton, Envoyer, Réinitialiser et Enregistrer.
 
 1. Sélectionnez l’action personnalisée dans la boîte de dialogue de barre d’outils de modification du formulaire adaptatif. Un bouton Révision s’affiche dans la barre d’outils du panneau.
 
-   ![Action personnalisée disponible dans la barre d’outils](assets/custom_action_available_in_toolbar.png) ![Affichage de l’action de barre d’outils personnalisée](assets/action7.png)
+   ![Action personnalisée est disponible dans la barre d’outils](assets/custom_action_available_in_toolbar.png) ![Affichage de l’action de barre d’outils personnalisée](assets/action7.png)
 
 1. Pour fournir des fonctionnalités au bouton Révision, ajoutez du code JavaScript et CSS, ainsi que du code côté serveur, dans le fichier init.jsp situé dans le nœud `reviewbeforesubmit`.
 

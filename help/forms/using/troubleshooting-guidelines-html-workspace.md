@@ -13,7 +13,7 @@ exl-id: 210cb5f2-cc5c-4664-b324-5c6f70f7b593
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -23,30 +23,30 @@ Cet article explique comment déboguer l’espace de travail AEM Forms en activa
 
 ## Impossible d’installer le package de l’espace de travail AEM Forms {#unable-to-install-aem-forms-workspace-package}
 
-Après l’installation du correctif, ouvrez l’espace de travail AEM Forms. Si vous rencontrez l’erreur Aucune ressource trouvée, ouvrez le gestionnaire de modules CRX, puis réinstallez le `adobe-lc-workspace-pkg-<version>.zip` module.
+Après l’installation du correctif, ouvrez l’espace de travail AEM Forms. Si vous rencontrez l’erreur « Aucune ressource trouvée », ouvrez le gestionnaire de packages CRX, puis réinstallez le package `adobe-lc-workspace-pkg-<version>.zip`.
 
-Lors de l’installation du module, si vous rencontrez une erreur `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, procédez comme suit :
+Lors de l’installation du module, si vous rencontrez une erreur `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, procédez comme suit :
 
 1. Connectez-vous à CRX DE Lite. L’URL par défaut est `https://[localhost]:[port]/lc/crx/de/index.jsp`
-1. Supprimez le noeud suivant :
+1. Supprimez le nœud suivant :
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
 1. Accédez au gestionnaire de packages. L’URL par défaut est `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
-1. Recherchez et installez le `adobe-lc-workspace-pkg-[version].zip` module.
+1. Recherchez et installez le package `adobe-lc-workspace-pkg-[version].zip`.
 1. Redémarrez le serveur d’applications.
 
 ## Consignation de l’espace de travail AEM Forms {#aem-forms-workspace-nbsp-logging}
 
 Vous pouvez générer des journaux à différents niveaux pour la résolution optimale des erreurs. Par exemple, dans une application complexe, la journalisation au niveau du composant facilite le débogage et la résolution d’incidents de composants spécifiques.
 
-Dans l’espace de travail AEM Forms :
+Dans l’espace de travail AEM Forms :
 
-* Pour obtenir des informations de journalisation sur un fichier de composant spécifique, ajoutez `/log/<ComponentFile>/<LogLevel>` dans l’URL, puis appuyez sur `Enter`. Toutes les informations de journalisation pour le fichier de composant au niveau spécifié de journal sont imprimées sur la console.
+* Pour obtenir les informations de journalisation sur un fichier de composant spécifique, ajoutez `/log/<ComponentFile>/<LogLevel>` dans l’URL, puis appuyez sur `Enter`. Toutes les informations de journalisation pour le fichier de composant au niveau spécifié de journal sont imprimées sur la console.
 
-* Pour obtenir les informations de journalisation de tous les fichiers de composant, ajoutez `/log/all/trace` dans l’URL, puis appuyez sur `Enter`.
+* Pour obtenir des informations de journalisation tous les fichiers de composant, ajoutez `/log/all/trace` dans l’URL, puis appuyez sur `Enter`.
 
-* Format du journal : `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
+* Format du journal : `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
 >[!NOTE]
 >
@@ -155,11 +155,11 @@ Dans l’espace de travail AEM Forms :
 
 Les scripts et les styles peuvent être débogués dans différents navigateurs.
 
-* **Débogage dans IE**: Pour déboguer l’espace de travail AEM Forms dans IE, voir : [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **Débogage dans IE** : pour déboguer l’espace de travail AEM Forms dans IE, consultez le lien [https://msdn.microsoft.com/fr-fr/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **Débogage dans Chrome**: Pour ouvrir le débogueur dans Chrome, utilisez le raccourci : Ctrl+Maj+I. Pour plus d’informations, voir : [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Débogage dans Chrome** : pour ouvrir le débogueur dans Chrome, utilisez le raccourci clavier Ctrl+Maj+I. Pour plus d’informations, consultez le lien [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
-* **Débogage dans Firefox** : plusieurs modules complémentaires sont disponibles pour déboguer des scripts et des styles dans Firefox. Par exemple, Firebug est l’un de ces utilitaires de débogage ([https://getfirebug.com](https://getfirebug.com)).
+* **Débogage dans Firefox** : plusieurs modules complémentaires sont disponibles pour déboguer des scripts et des styles dans Firefox. Par exemple, Firebug est un utilitaire de débogage de ce type ([https://getfirebug.com](https://getfirebug.com)).
 
 ## FAQ {#faqs}
 

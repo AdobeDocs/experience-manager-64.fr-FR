@@ -1,7 +1,7 @@
 ---
 title: Thèmes de référence
 seo-title: Reference Themes
-description: 'AEM Forms fournit des thèmes de formulaires adaptatifs que vous pouvez obtenir de Distribution logicielle et utiliser pour appliquer un style à un formulaire. '
+description: 'AEM Forms fournit les thèmes de formulaires adaptatifs que vous pouvez obtenir à partir de la Distribution de logiciels et utiliser pour conférer un style à un formulaire. '
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,13 +11,13 @@ exl-id: 6a298571-d6ff-473f-af58-a45a0c7e6175
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 82%
+ht-degree: 99%
 
 ---
 
 # Thèmes de référence {#reference-themes}
 
-Les [thèmes](/help/forms/using/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Outre le thème par défaut, vous pouvez obtenir les thèmes suivants en installant le[Package de module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
+Les [thèmes](/help/forms/using/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. En plus du thème par défaut, vous pouvez obtenir les thèmes suivants en installant le module complémentaire [AEM Forms add-on](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) :
 
 * Beryl
 * Exec
@@ -34,7 +34,7 @@ Chaque thème comporte un style unique et élégant que vous pouvez utiliser pou
 
 Les thèmes inclus dans ce package sont réactifs et le style de ces thèmes est défini pour des affichages mobiles et de bureau. La plupart des navigateurs modernes sur différents périphériques peuvent sans problème rendre des formulaires auxquels est appliqué l’un de ces thèmes.
 
-Pour plus d’informations sur l’installation du package, voir [Utilisation de modules](/help/sites-administering/package-manager.md).
+Pour plus d’informations sur l’installation du module, voir [Comment travailler avec les modules](/help/sites-administering/package-manager.md).
 
 ## Beryl {#beryl}
 
@@ -77,14 +77,14 @@ Le thème Ultramarine utilise des nuances de bleu profond pour mettre en éviden
 
 ## Urbane {#urbane}
 
-Le thème Urbane met l’accent sur l’aspect minimaliste et fonctionnel de votre formulaire. Lorsque vous appliquez le thème Urbane à votre formulaire, vous pouvez voir que les composants sont aplatis. Les panneaux reçoivent des contours fins pour créer un aspect moderne.
+Le thème Urbane met en évidence une apparence minimaliste et fonctionnelle de votre formulaire. Lorsque vous appliquez le thème Urbane à votre formulaire, vous pouvez voir que les composants sont aplatis. Les panneaux reçoivent des contours fins pour créer un aspect moderne.
 ![Thème Urbane](assets/urbane.png)
 
 [Cliquez sur l’image pour l’agrandir](assets/urbane-1.png)
 
 ## U.S. Web Design Standards {#u-s-web-design-standards}
 
-Le thème U.S. Web Design Standards, comme son nom l’indique, utilise des polices de caractères et des styles décrits sur le site Draft U.S. Web Design Standards. La norme Web est utilisée par les organisations fédérales pour créer des contenus Web homogènes sur les sites Web du gouvernement fédéral américain.
+Le thème U.S. Web Design Standards, comme le nom l’indique, utilise les polices et les styles décrits sur le site Draft U.S. Web Design Standards. La norme Web est utilisée par les organisations fédérales pour créer des contenus Web homogènes sur les sites Web du gouvernement fédéral américain.
 ![Thème U.S. Web Design Standards](assets/us-web-standards.png)
 
 [Cliquez sur l’image pour l’agrandir](assets/usgov.png)

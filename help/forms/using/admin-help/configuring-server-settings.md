@@ -13,7 +13,7 @@ exl-id: 7933efeb-618a-4c38-8e5e-593be8ebb00c
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '2625'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ La page Paramètres du serveur donne accès aux différents paramètres du proce
 
 ## Configuration des paramètres de courrier électronique {#configuring-email-settings}
 
-Vous pouvez indiquer un compte de courrier électronique pour le serveur Forms, par l’intermédiaire duquel il envoie des courriers électroniques aux utilisateurs et aux administrateurs et en reçoit de la part de ces mêmes utilisateurs et administrateurs. Ces courriers électroniques sont utilisés pour notifier aux utilisateurs les tâches qu’ils sont tenus d’exécuter, les leur rappeler, les notifier lorsque les tâches arrivées à échéance et notifier à l’administrateur toute erreur de processus survenue.
+Vous pouvez indiquer un compte de courrier électronique pour le serveur AEM Forms, par l’intermédiaire duquel il envoie des courriers électroniques aux utilisateurs et aux administrateurs et en reçoit de la part de ces mêmes utilisateurs et administrateurs. Ces courriers électroniques sont utilisés pour notifier aux utilisateurs les tâches qu’ils sont tenus d’exécuter, les leur rappeler, les notifier lorsque les tâches arrivées à échéance et notifier à l’administrateur toute erreur de processus survenue.
 
 Pour permettre l’envoi de courriers électroniques entre AEM forms et les utilisateurs, vous devez configurer les paramètres de courrier électronique sortant dans la page Paramètres du courrier électronique. Le courrier électronique sortant doit utiliser un serveur SMTP.
 
@@ -57,7 +57,7 @@ Si les processus que vous utilisez sont conçus et implémentés sans avoir à u
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.
 
 Par défaut, les courriers électroniques envoyés par AEM forms contiennent des liens vers Flex Workspace (obsolète pour AEM forms on JEE). Vous pouvez configurer AEM forms pour envoyer des courriers électroniques contenant des liens vers l’espace de travail AEM Forms. Pour en savoir plus sur les avantages de l’espace de travail AEM Forms par rapport à Flex Workspace (obsolète pour AEM forms on JEE), consultez [cet](/help/forms/using/features-html-workspace-available-flex.md) article.
 
@@ -83,7 +83,7 @@ Pour générer des notifications électroniques pour un groupe, spécifiez une a
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.
 
 ### Configuration des rappels pour les utilisateurs ou les groupes {#configure-reminders-for-users-or-groups}
 
@@ -193,17 +193,17 @@ Pour les notifications de tâche uniquement, le processus des formulaires inclut
 >
 >Flex Workspace est obsolète pour la version d’AEM Forms.
 
-Si votre solution est déployée dans un environnement en grappe, remplacez `@@notification-host@@` avec l’adresse de la grappe.
+Si votre solution est déployée dans un environnement organisé en grappes, remplacez `@@notification-host@@` par l’adresse de la grappe.
 
-`<`*PORT* `>` est le numéro de port de l’écouteur HTTP pour le serveur d’applications. Les ports d’écouteur HTTP par défaut pour les serveurs d’applications pris en charge sont les suivants :
+`<`*PORT* `>` correspond au numéro de port d’écouteur HTTP du serveur d’applications. Les ports d’écouteur HTTP par défaut pour les serveurs d’applications pris en charge sont les suivants :
 
 **JBoss :** 8080
 
-**Oracle WebLogic Server :** 7001
+**Oracle WebLogic Server :** 7001
 
-**IBM WebSphere :** 9080
+**IBM WebSphere :** 9080
 
-Pour que ces URL fonctionnent correctement, remplacez `<`*PORT* `>` avec le numéro de port approprié à votre environnement.
+Pour permettre le fonctionnement normal de ces URL, remplacez `<`*PORT* `>` par le numéro de port approprié pour votre environnement.
 
 >[!NOTE]
 >
@@ -211,27 +211,27 @@ Pour que ces URL fonctionnent correctement, remplacez `<`*PORT* `>` avec le num�
 
 ### Sélecteur de variables {#variable-picker}
 
-La liste Sélectionneur de variables fournit des variables utiles que vous pouvez faire glisser vers les champs Objet ou Modèle de notification. Lorsque vous déposez une variable dans les zones Objet ou Modèle de notification, elle se transforme en nom réel de variable de processus des formulaires avec deux symboles @ de chaque côté, par exemple : `@@taskid@@`.
+La liste Sélectionneur de variables fournit des variables utiles que vous pouvez faire glisser vers les champs Objet ou Modèle de notification. Lorsque vous faites glisser une variable dans le champ Objet ou Modèle de notification, elle est remplacée par le nom réel de la variable Workflows des formulaires, encadrée par deux symboles @, par exemple `@@taskid@@`.
 
 Pour les rappels, affectations de tâche et échéances des utilisateurs et des groupes, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
-**description** Contenu de la propriété Description, tel que défini dans l’étape utilisateur (point de départ, opération Assign Task ou opération Assign Multiple Tasks) du processus dans Workbench.
+**Description** Contenu de la propriété Description tel que défini dans l’opération Utilisateur (point de départ, opération d’affectation de tâche ou opération d’affectation de tâches multiples) du processus dans Workbench.
 
-**instructions** Contenu de la propriété Task Instructions, tel que défini dans l’étape utilisateur du processus dans Workbench.
+**Instructions** Contenu de la propriété Instructions de la tâche tel que défini dans l’opération Utilisateur du processus dans Workbench.
 
-**notification-host** Nom d’hôte du serveur d’applications AEM forms .
+**notification-host** Nom d’hôte du serveur d’application AEM Forms.
 
 **process-name** Nom du processus.
 
-**operation-name** Nom de l’étape.
+**operation-name** Nom de l’opération.
 
 **taskid** Identifiant unique de la tâche en cours.
 
-**actions** Génère une liste numérotée d’itinéraires valides (par exemple, Approuver, Rejeter) sur lesquels le destinataire peut cliquer.
+**Actions** Cette option génère une liste numérotée des itinéraires valides (par exemple, Approuver, Refuser) sur lesquels le destinataire peut cliquer.
 
 De plus, pour les rappels, affectations de tâche et échéances de groupe, vous pouvez aussi utiliser les variables suivantes :
 
-**group-name** Nom du groupe auquel l’élément de travail est affecté.
+**group-name** Nom du groupe auquel la tâche est affectée.
 
 >[!NOTE]
 >
@@ -241,9 +241,9 @@ Pour les branches bloquées, vous pouvez utiliser les variables suivantes dans l
 
 **branch-id** Identifiant de branche.
 
-**process-id** Identifiant de l’instance de processus.
+**process-id** Identifiant de l’instance du processus.
 
-**notification-host** Nom d’hôte du serveur d’applications AEM forms .
+**notification-host** Nom d’hôte du serveur d’application AEM Forms.
 
 Pour les opérations bloquées, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
@@ -251,9 +251,9 @@ Pour les opérations bloquées, vous pouvez utiliser les variables suivantes dan
 
 **branch-id** Identifiant de branche.
 
-**process-id** Identifiant de l’instance de processus.
+**process-id** Identifiant de l’instance du processus.
 
-**notification-host** Nom d’hôte du serveur d’applications AEM forms .
+**notification-host** Nom d’hôte du serveur d’application AEM Forms.
 
 ### Utilisation d’une variable dans la zone Objet {#using-a-variable-in-the-subject-box}
 
@@ -271,7 +271,7 @@ Si vous saisissez le texte suivant dans le champ Modèle de notification pour de
 
 `Branch @@branch-id@@ has stalled! You have received this notification from @@notification-host@@.`
 
-L’administrateur reçoit un courrier électronique contenant le contenu suivant si le numéro de branche est 4868 et que le nom du serveur est `ServerXYZ`:
+L’administrateur reçoit un courrier électronique avec le contenu suivant si 4868 est le numéro de la branche et le nom du serveur est `ServerXYZ` :
 
 `Branch 4868 has stalled! You have received this notification from ServerXYZ.`
 

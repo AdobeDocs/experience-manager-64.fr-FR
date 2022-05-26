@@ -13,7 +13,7 @@ exl-id: 6c989701-10c7-466e-b3e5-008a6d377574
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Vous pouvez créer un dossier dans AEM Forms à l’aide de l’une des méthode
 
 1. Connectez-vous à l’interface utilisateur d’AEM Forms à l’adresse `https://<server>:<port>/aem/forms.html`.
 1. Accédez à l’emplacement où vous souhaitez créer un dossier.
-1. Cliquez sur le bouton ![aem6forms_add](assets/aem6forms_add.png) dans la barre d’outils, puis sélectionnez **[!UICONTROL Créer un dossier]**.
+1. Cliquez sur l’icône ![aem6forms_add](assets/aem6forms_add.png) de la barre d’outils, puis sélectionnez **[!UICONTROL Créer un dossier]**.
 
 1. Saisissez les informations suivantes :
 
@@ -53,6 +53,6 @@ Vous pouvez créer un dossier dans AEM Forms à l’aide de l’une des méthode
 ### Modification du titre d’un dossier {#edit-the-folder-title-br}
 
 1. Sélectionnez le dossier dont vous souhaitez modifier le titre.
-1. Cliquez sur Modifier . ![aem6forms_edit](assets/aem6forms_edit.png) dans la barre d’outils.
+1. Cliquez sur lʼicône Modifier ![aem6forms_edit](assets/aem6forms_edit.png) dans la barre d’outils.
 1. Entrez le nouveau titre. Le champ de texte est prérenseigné avec la valeur actuelle du titre du dossier. Vous pouvez remplacer cette valeur.
 1. Cliquez sur **[!UICONTROL Envoyer].**

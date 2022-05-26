@@ -13,7 +13,7 @@ exl-id: f60beaae-4082-4165-8a37-9d9c94e360b2
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '240'
-ht-degree: 68%
+ht-degree: 94%
 
 ---
 
@@ -30,13 +30,13 @@ Cet article explique comment configurer le **service de paramètres AEM DS**. C
 
 Voici les étapes pour configurer les **[!UICONTROL paramètres AEM DS]** :
 
-1. Ouvrez Configuration Manager sur l’instance de publication à l’aide de l’URL :
+1. Ouvrez Configuration Manager sur l’instance de publication à l’aide de l’URL :
 
    *http://localhost:port/system/console/configMgr*.
 
    ![aem_web_configuration_console](assets/aem_web_configuration_console.png)
 
-1. Dans le **[!UICONTROL Configuration de la console web Adobe Experience Manager]** , localisez et cliquez sur le bouton **[!UICONTROL Paramètres AEM DS]** .
+1. Dans la fenêtre **[!UICONTROL Configuration de la console web Adobe Experience Manager]**, recherchez et cliquez sur l’option **[!UICONTROL Paramètres AEM DS]**.
 
    ![ds_settings](assets/ds_settings.png)
 
@@ -46,9 +46,9 @@ Voici les étapes pour configurer les **[!UICONTROL paramètres AEM DS]** :
 
 1. Ajoutez les informations suivantes dans les champs respectifs :
 
-   **[!UICONTROL URL du serveur de traitement]**: Le serveur de traitement est le serveur sur lequel le workflow Forms ou AEM doit être déclenché. Elle peut être identique à l’URL de l’instance d’auteur AEM ou de l’autre URL du serveur (c’est-à-dire http://localhost:port/).
+   **[!UICONTROL URL du serveur de traitement]** : le serveur de traitement est le serveur sur lequel les formulaires ou le workflow AEM doivent être déclenchés. Elle peut être identique à l’URL de l’instance d’auteur AEM ou de l’autre URL du serveur (c’est-à-dire http://localhost:port/).
 
-   **[!UICONTROL Nom d’utilisateur du serveur de traitement]**: Nom d’utilisateur de l’utilisateur du workflow [en fonction de l’URL du serveur utilisée]
+   **[!UICONTROL Nom d’utilisateur du serveur de traitement]** : nom d’utilisateur de l’utilisateur du workflow [basé sur l’URL du serveur utilisé].
 
    **[!UICONTROL Mot de passe du serveur de traitement]** : mot de passe de l’utilisateur du processus
 

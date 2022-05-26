@@ -13,13 +13,13 @@ exl-id: 8c65531e-f4f0-4cc4-b328-eaefb5662cf1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Configuration de Connector for IBM Content Manager{#configuring-connector-for-ibm-content-manager}
 
-Le connecteur pour IBM Content Manager permet la communication entre AEM forms et IBM Content Manager. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
+Le connecteur pour IBM Content Manager permet la communication entre AEM forms et IBM Content Manager. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ## Configuration de la connexion IBM Content Manager {#configure-the-ibm-content-manager-connection}
 

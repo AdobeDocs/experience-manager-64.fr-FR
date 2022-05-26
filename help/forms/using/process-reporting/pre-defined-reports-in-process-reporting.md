@@ -1,7 +1,7 @@
 ---
-title: Rapports prédéfinis dans les rapports de processus
+title: Rapports prédéfinis dans Process Reporting
 seo-title: Pre-defined reports in Process Reporting
-description: Requête pour les données de processus AEM Forms on JEE afin de créer des rapports sur les processus à long terme, la durée du processus et le volume de processus.
+description: Requête pour les données de processus AEM Forms on JEE afin de créer des rapports sur les processus à long terme, leur durée et le volume des workflows
 seo-description: Query for AEM Forms on JEE process data to create reports on long running processes, Process duration, and Workflow volume
 uuid: ba3a1809-270e-4c94-ade4-d2f6af86d860
 content-type: reference
@@ -12,52 +12,52 @@ exl-id: 21f5fb7e-53b3-485d-9b6a-813182f14781
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Rapports prédéfinis dans les rapports de processus {#pre-defined-reports-in-process-reporting}
+# Rapports prédéfinis dans Process Reporting {#pre-defined-reports-in-process-reporting}
 
-La création de rapports de processus AEM Forms est fournie avec les éléments suivants : *d&#39;usine* rapports :
+Process Reporting d’AEM Forms est fourni avec les rapports *prêts à l’emploi* suivants :
 
-* **[Processus à long terme](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: Rapport de tous les processus AEM Forms dont l’exécution a pris plus d’un temps spécifié
+* **[Processus à long terme](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)** : rapport de tous les processus AEM Forms dont l’exécution a pris plus que le temps spécifié.
 
-* **[Graphique de durée du processus](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**: Rapport d’un processus AEM Forms spécifié par la durée
+* **[Graphique de durée du processus](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)** : rapport d’un processus AEM Forms spécifié par la durée.
 
-* **[Volume de workflow](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**: Rapport des instances en cours d’exécution et terminées du processus spécifié par date
+* **[Volume des workflows](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)** : rapport des instances en cours d’exécution et terminées d’un processus spécifié par date.
 
 ## Processus à long terme {#long-running-processes}
 
-Le rapport Long Running Processes affiche les processus AEM Forms dont l’exécution a pris plus d’un temps spécifié.
+Le rapport Processus à long terme affiche les processus AEM Forms dont l’exécution a pris plus que le temps spécifié.
 
-### Pour exécuter un rapport de processus à long terme {#to-execute-a-long-running-process-report-br}
+### Pour exécuter un rapport Processus à long terme {#to-execute-a-long-running-process-report-br}
 
-1. Pour afficher la liste des rapports prédéfinis dans les rapports de processus, sur la page **Rapports de processus** arborescence, cliquez sur **Rapports** noeud .
-1. Cliquez sur le bouton **Processus à long terme** noeud du rapport.
+1. Pour afficher la liste des rapports prédéfinis dans Process Reporting, sur l’arborescence **Process Reporting**, cliquez sur le nœud **Rapports**.
+1. Cliquez sur le nœud du rapport **Processus à long terme**.
 
    ![long_running_node](assets/long_running_node.png)
 
-   Lorsque vous sélectionnez un rapport, la variable **Paramètres des rapports** s’affiche à droite de l’arborescence.
+   Lorsque vous sélectionnez un rapport, le panneau **Paramètres des rapports** s’affiche à droite de l’arborescence.
 
    ![panneau des paramètres de rapport des processus à long terme](assets/report_parameters_panel.png)
 
    Paramètres:
 
-   * **Durée**(*mandatory*) : Spécifiez une durée et une unité de temps. Affichez tous les processus AEM Forms qui ont été exécutés pendant plus de la durée spécifiée.
-   * **Démarré après** (*facultatif*) : Sélectionnez une date. Filtrez le rapport pour afficher les instances de processus démarrées après la date spécifiée.
-   * **Démarré avant** (*facultatif*) : Sélectionnez une date. Filtrez le rapport pour afficher les instances de processus qui ont démarré avant la date spécifiée.
+   * **Durée** (*obligatoire*) : spécifiez une durée et une unité de temps. Affichez tous les processus AEM Forms dont l’exécution a duré plus que la durée spécifiée.
+   * **Démarré après** (*facultatif*) : sélectionnez une date. Filtrez le rapport pour afficher les instances de processus démarrées après la date spécifiée.
+   * **Démarré avant** (*facultatif*) : sélectionnez une date. Filtrez le rapport pour afficher les instances de processus qui ont démarré avant la date spécifiée.
 
-1. Cliquez sur **Aller** pour exécuter le rapport.
+1. Cliquez sur **Lancer** pour exécuter le rapport.
 
-   Le rapport s’affiche dans la variable **Rapport** panneau à droite du panneau **Rapports de processus** fenêtre.
+   Le rapport s’affiche dans le panneau **Rapport** à droite de la fenêtre **Process Reporting**.
 
    ![long_running_processes](assets/long_running_processes.png)
 
-   Utilisez les options situées dans le coin supérieur droit du **Rapport** pour effectuer les opérations suivantes sur le rapport.
+   Utilisez les options situées dans le coin supérieur droit du panneau **Rapport** pour effectuer les opérations suivantes sur le rapport.
 
-   * **Actualiser**: Actualise le rapport avec les dernières données stockées
-   * **Changer la couleur de la légende**: Sélectionner et modifier la couleur de la légende du rapport
-   * **Exportation au format CSV**: Exporter et télécharger les données du rapport dans un fichier séparé par des virgules
+   * **Actualiser** : permet d’actualiser le rapport avec les dernières données stockées.
+   * **Changer la couleur de la légende** : permet de sélectionner et de modifier la couleur de la légende du rapport.
+   * **Exporter au format CSV** : permet d’exporter et de télécharger les données du rapport dans un fichier séparé par des virgules.
 
 ## Rapport Durée du processus {#process-duration-report-br}
 
@@ -65,60 +65,60 @@ Le rapport Durée du processus affiche le nombre d’instances d’un processus 
 
 ### Pour exécuter un rapport Durée du processus {#to-execute-a-process-duration-report-br}
 
-1. Pour afficher les rapports prédéfinis dans les rapports de processus, sur la page **Rapports de processus** arborescence, cliquez sur **Rapports** noeud .
-1. Cliquez sur le bouton **Durée des processus** noeud du rapport.
+1. Pour afficher les rapports prédéfinis dans Process Reporting, sur l’arborescence **Process Reporting**, cliquez sur le nœud **Rapports**.
+1. Cliquez sur le nœud du rapport **Durée des processus**.
 
    ![process_duration_node](assets/process_duration_node.png)
 
-   Lorsque vous sélectionnez un rapport, la variable **Paramètres des rapports** s’affiche à droite de l’arborescence.
+   Lorsque vous sélectionnez un rapport, le panneau **Paramètres des rapports** s’affiche à droite de l’arborescence.
 
    ![panneau des paramètres de rapport des processus à long terme](assets/process_duration_params.png)
 
    Paramètres:
 
-   * **Select Process** (*mandatory*) : Sélectionnez un processus AEM Forms.
+   * **Sélectionner un processus** (*obligatoire*) : sélectionnez un processus AEM Forms.
 
-1. Cliquez sur **Aller** pour exécuter le rapport.
+1. Cliquez sur **Lancer** pour exécuter le rapport.
 
-   Le rapport s’affiche dans la variable **Rapport** à droite de la fenêtre Process Reporting.
+   Le rapport s’affiche dans le panneau **Rapport** à droite de la fenêtre Process Reporting.
 
    ![process_duration_report](assets/process_duration_report.png)
 
-   Utilisez les options situées dans le coin supérieur droit du **Rapport** pour effectuer les opérations suivantes sur le rapport.
+   Utilisez les options situées dans le coin supérieur droit du panneau **Rapport** pour effectuer les opérations suivantes sur le rapport.
 
-   * **Actualiser**: Actualise le rapport avec les dernières données stockées
-   * **Changer la couleur de la légende**: Sélectionner et modifier la couleur de la légende du rapport
-   * **Exportation au format CSV**: Exporter et télécharger les données du rapport dans un fichier séparé par des virgules
+   * **Actualiser** : permet d’actualiser le rapport avec les dernières données stockées.
+   * **Changer la couleur de la légende** : permet de sélectionner et de modifier la couleur de la légende du rapport.
+   * **Exporter au format CSV** : permet d’exporter et de télécharger les données du rapport dans un fichier séparé par des virgules.
 
-## Rapport Volume de workflow {#workflow-volume-report}
+## Rapport Volume des workflows {#workflow-volume-report}
 
-Le rapport Volume de workflow affiche le nombre d’instances en cours d’exécution et terminées d’un processus AEM Forms par jour calendaire.
+Le rapport Volume des workflows affiche le nombre d’instances en cours d’exécution et terminées d’un processus AEM Forms par jour calendaire.
 
-### Pour exécuter un rapport Volume de workflow {#to-execute-a-workflow-volume-report-br}
+### Pour exécuter un rapport Volume des workflows {#to-execute-a-workflow-volume-report-br}
 
-1. Pour afficher les rapports prédéfinis dans les rapports de processus, sur la page **Rapports de processus** arborescence, cliquez sur **Rapports** noeud .
-1. Cliquez sur le bouton **Volume de workflow** noeud du rapport.
+1. Pour afficher les rapports prédéfinis dans Process Reporting, sur la vue arborescente de **Process Reporting**, cliquez sur le nœud **Rapports**.
+1. Cliquez sur le nœud rapport **Volume de workflow**.
 
    ![workflow_volume_node](assets/workflow_volume_node.png)
 
-   Lorsque vous sélectionnez un rapport, la variable **Paramètres des rapports** s’affiche à droite de l’arborescence.
+   Lorsque vous sélectionnez un rapport, le panneau **Paramètres des rapports** s’affiche à droite de l’arborescence.
 
    ![panneau des paramètres de rapport des processus à long terme](assets/workflow_volume_params.png)
 
    Paramètres:
 
-   * **Select Process**(*mandatory*) : Sélectionnez un processus AEM Forms.
-   * **Démarré après** (*facultatif*) : Sélectionnez une date. Filtre le rapport afin d’afficher les instances de processus démarrées après la date spécifiée.
-   * **Démarré avant** (*facultatif*) : Sélectionnez une date. Filtre le rapport pour afficher les instances de processus qui ont démarré avant la date spécifiée.
+   * **Sélectionner un processus** (*obligatoire*) : sélectionnez un processus AEM Forms.
+   * **Démarré après** (*facultatif*) : sélectionnez une date. Filtre le rapport afin d’afficher les instances de processus démarrées après la date spécifiée.
+   * **Démarré avant** (*facultatif*) : sélectionnez une date. Filtre le rapport pour afficher les instances de processus qui ont démarré avant la date spécifiée.
 
 1. Cliquez sur **Aller** pour exécuter le rapport.
 
-   Le rapport s’affiche dans la variable **Rapport** panneau à droite du panneau **Rapports de processus** fenêtre.
+   Le rapport s’affiche dans l’onglet **Rapport** à droite de la fenêtre **Process Reporting**.
 
    ![workflow_volume_report](assets/workflow_volume_report.png)
 
-   Utilisez les options situées dans le coin supérieur droit du **Rapport** pour effectuer les opérations suivantes sur le rapport.
+   Utilisez les options situées dans le coin supérieur droit du panneau **Rapport** pour y effectuer les opérations suivantes.
 
-   * **Actualiser**: Actualise le rapport avec les dernières données stockées
-   * **Changer la couleur de la légende**: Sélectionner et modifier la couleur de la légende du rapport
-   * **Exportation au format CSV**: Exporter et télécharger les données du rapport dans un fichier séparé par des virgules
+   * **Actualiser** : permet d’actualiser le rapport avec les dernières données stockées.
+   * **Changer la couleur de la légende** : permet de sélectionner et de modifier la couleur de la légende du rapport.
+   * **Exporter au format CSV** : permet d’exporter et de télécharger les données du rapport dans un fichier séparé par des virgules.

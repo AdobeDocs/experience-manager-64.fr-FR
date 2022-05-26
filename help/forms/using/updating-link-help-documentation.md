@@ -1,5 +1,5 @@
 ---
-title: Mise à jour du lien vers la documentation
+title: 'Mise à jour du lien vers la documentation '
 seo-title: Updating the link to the documentation
 description: Comment mettre à jour la destination du lien d’aide de l’espace de travail dans l’espace de travail AEM Forms pour renvoyer à votre lien de documentation personnalisé.
 seo-description: How-to update the destination of Workspace Help link in AEM Forms workspace to point to your custom documentation link.
@@ -13,11 +13,11 @@ exl-id: 68fe3f97-ded8-4223-b4b9-02704077e37e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Mise à jour du lien vers la documentation {#updating-the-link-to-the-documentation}
+# Mise à jour du lien vers la documentation  {#updating-the-link-to-the-documentation}
 
 Vous pouvez accéder au contenu de l’aide par défaut pour l’espace de travail AEM Forms en sélectionnant **Aide > Aide de Workspace**. Le chemin pointe vers la documentation en ligne sur le site Web d’Adobe. Cependant, vous pouvez le mettre à jour pour qu’il pointe vers une autre URL.
 
@@ -28,7 +28,7 @@ Tenez compte des cas d’utilisation suivants lorsque vous souhaitez changer l�
 
 Pour mettre à jour l’URL de la documentation en ligne, suivez la [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md), puis les étapes suivantes.
 
-1. Copiez le `userinfo.html` fichier à partir de `/libs/ws/js/runtime/templates` to `/apps/ws/js/runtime/templates`.
+1. Copiez le fichier `userinfo.html` de `/libs/ws/js/runtime/templates` vers `/apps/ws/js/runtime/templates`.
 1. Modification:
 
    ```
@@ -50,4 +50,4 @@ Pour mettre à jour l’URL de la documentation en ligne, suivez la [Procédure 
 1. Procédez comme suit :
 
    1. Ouvrez /apps/ws/js/registry.js pour le modifier.
-   1. Rechercher et remplacer `text!/lc/libs/ws/js/runtime/templates/userinfo.html` avec `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
+   1. Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/userinfo.html` avec `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.

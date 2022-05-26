@@ -48,7 +48,7 @@ A l’intention des administrateurs, un compte de super-administrateur par défa
 
 1. Saisissez l’URL dans votre navigateur :
 
-   URL de Document Security : `https://`*[hôte ]*`:`*[port]* `/edc`
+   URL de sécurité des documents : `https://`*[hôte ]*`:`*[port]* `/edc`
 
    ou URL d’Administration Console : `https://`*[hôte ]*`:`*[port]* `/adminui`
 

@@ -13,13 +13,13 @@ exl-id: 86cc01f0-b6c0-4beb-a203-96dc1989d8f0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Configuration de Connector for EMC Documentum {#configuring-connector-for-emc-documentum}
 
-Le connecteur pour EMC Documentum permet la communication entre AEM forms et EMC Documentum. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
+Le connecteur pour EMC Documentum permet la communication entre AEM forms et EMC Documentum. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 La configuration de Connector for EMC Documentum requiert de configurer la connexion du serveur et les informations d’identification du référentiel.
 
@@ -61,11 +61,11 @@ Si vous saisissez un nom d’utilisateur ou un mot de passe incorrect, vous obti
 
 Vous pouvez configurer le fournisseur de services de référentiel à utiliser avec Documentum. Les appels des services de référentiel sont délégués au fournisseur que vous configurez. Les options suivantes sont disponibles :
 
-**Nom du fournisseur de services de référentiel actuel :** Nom du fournisseur de services de référentiel actuel.
+**Nom du fournisseur de services de référentiel actuel :** nom du fournisseur de services de référentiel actuel.
 
-**Fournisseur de référentiel ECM Documentum :** Transforme le fournisseur de référentiel Documentum en fournisseur pour le référentiel. Cette option est obsolète.
+**Fournisseur de référentiels Documentum ECM (Enterprise Content Management) :** établit le fournisseur de référentiels Documentum comme fournisseur du référentiel. Cette option est obsolète.
 
-**fournisseur de référentiel :** Transforme le fournisseur de référentiel natif en fournisseur pour le référentiel
+**Fournisseur de référentiels :** établit le fournisseur de référentiel natif comme fournisseur du référentiel.
 
 >[!NOTE]
 >

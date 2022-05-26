@@ -12,8 +12,8 @@ discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: ae6b4caa-5bd0-4a09-9ccf-077405ea3868
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 95%
+source-wordcount: '1090'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Ce contenu décrit la façon dont les dossiers de contrôle sont affectés par l
 * Failure (Echecs)
 * Preserve (Conservés)
 
-Un utilisateur ou une application client dépose tout d’abord le fichier ou le dossier dans le dossier input (Entrée) du dossier de contrôle. L’opération de service déplace ensuite ce fichier dans le dossier stage en vue de son traitement. Après l’exécution par le service de l’opération indiquée, l’enregistrement du fichier modifié intervient dans le dossier output du dossier de contrôle. Les fichiers source correctement traités sont déplacés vers le dossier preserve (Conservés). Les fichiers dont le traitement a échoué sont quant à eux déplacés dans le dossier failure (Echecs) du dossier de contrôle. Lorsque la variable `Preserve On Failure` est activé pour le dossier de contrôle, les fichiers source traités en échec sont déplacés vers le dossier preserve. (voir [Configuration des points de fin Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)).
+Un utilisateur ou une application client dépose tout d’abord le fichier ou le dossier dans le dossier input (Entrée) du dossier de contrôle. L’opération de service déplace ensuite ce fichier dans le dossier stage en vue de son traitement. Après l’exécution par le service de l’opération indiquée, l’enregistrement du fichier modifié intervient dans le dossier output du dossier de contrôle. Les fichiers source correctement traités sont déplacés vers le dossier preserve (Conservés). Les fichiers dont le traitement a échoué sont quant à eux déplacés dans le dossier failure (Echecs) du dossier de contrôle. Si l’attribut `Preserve On Failure` est activé pour le dossier de contrôle, les fichiers source dont le traitement a échoué sont déplacés dans le dossier preserve (Conservés). (voir [Configuration des points de fin Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)).
 
 Vous pouvez sauvegarder les dossiers de contrôle en sauvegardant le système de fichiers.
 
@@ -39,7 +39,7 @@ Vous pouvez sauvegarder les dossiers de contrôle en sauvegardant le système de
 
 ## Fonctionnement des dossiers de contrôle {#how-watched-folders-work}
 
-Cette section décrit le processus de manipulation des fichiers du dossier de contrôle. Il est important de bien comprendre ce processus avant de mettre en place un plan de récupération. Dans cet exemple, la variable `Preserve On Failure` est activé pour le dossier de contrôle. Les fichiers sont traités selon leur ordre d’arrivée.
+Cette section décrit le processus de manipulation des fichiers du dossier de contrôle. Il est important de bien comprendre ce processus avant de mettre en place un plan de récupération. Dans l’exemple fourni, l’attribut `Preserve On Failure` est activé pour le dossier de contrôle. Les fichiers sont traités selon leur ordre d’arrivée.
 
 Le tableau suivant décrit la manipulation de cinq exemples de fichier (fichier1, fichier2, fichier3, fichier4 et fichier5) tout au long du processus. Dans ce tableau, l’axe x représente le temps, par exemple Temps 1 ou T1, et l’axe y représente les dossiers au sein de la hiérarchie du dossier de contrôle, par exemple output.
 
@@ -116,7 +116,7 @@ Le texte suivant décrit la manipulation des fichiers à chacun des temps défin
 
 **T2 :** l’opération de service déplace le fichier1 dans la scène dossier stage pour la manipulation.
 
-**T3 :** l’opération de service déplace le fichier2 dans le dossier stage pour la manipulation. Elle place les résultats du fichier1 dans le dossier output et déplace le fichier1 dans le dossier preserve.
+**T3 :** l’opération de service déplace le fichier2 dans la scène dossier stage pour la manipulation. Elle place les résultats du fichier1 dans le dossier output et déplace le fichier1 dans le dossier preserve.
 
 **T4 :** l’opération de service déplace le fichier3 dans le dossier stage pour la manipulation. Elle place les résultats du fichier2 dans le dossier output, et déplace le fichier2 dans le dossier preserve.
 
@@ -155,7 +155,7 @@ Les stratégies suivantes permettent de limiter les pertes de données des dossi
 * Sauvegardez fréquemment les dossiers output et failure (toutes les heures par exemple) pour éviter les pertes de données au niveau des fichiers des dossiers result et failure.
 * Sauvegardez les fichiers du dossier input dans un dossier autre que le dossier de contrôle. Vous assurez ainsi la disponibilité du fichier après la récupération au cas où les fichiers seraient introuvables dans le dossier output ou le dossier failure. Veillez à la cohérence de votre dispositif d’appellation.
 
-   Par exemple, si vous enregistrez la sortie avec `%F.`*extension*, le fichier de sortie porte le même nom que le fichier d’entrée. Cela vous aidera à déterminer les fichiers d’entrée manipulés et ceux qui doivent être soumis à nouveau. Si vous ne voyez qu’un seul fichier fichier1_out dans le dossier result, et non fichier2_out, fichier3_out et fichier4_out, cela signifie que vous devez soumettre fichier2, fichier3 et fichier4 de nouveau.
+   Par exemple, si vous enregistrez la sortie avec l’`%F.`*extension*, le fichier de sortie porte le même nom que le fichier d’entrée. Cela vous aidera à déterminer les fichiers d’entrée manipulés et ceux qui doivent être soumis à nouveau. Si vous ne voyez qu’un seul fichier fichier1_out dans le dossier result, et non fichier2_out, fichier3_out et fichier4_out, cela signifie que vous devez soumettre fichier2, fichier3 et fichier4 de nouveau.
 
 * Si la sauvegarde du dossier de contrôle disponible est plus ancienne que le temps nécessaire au traitement de la tâche, vous devez autoriser le système à créer un nouveau dossier de contrôle et à placer automatiquement les fichiers dans le dossier input.
 * Si la dernière sauvegarde disponible n’est pas suffisamment récente, que l’heure de la sauvegarde est plus récente que l’heure à laquelle vous parvenez en lançant un nouveau traitement des fichiers et que le dossier de contrôle est restauré, cela signifie que le fichier a été manipulé au cours de l’une des phases suivantes :

@@ -12,7 +12,7 @@ exl-id: f80d006b-6970-4448-aa38-3ffec8b08c18
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
    >[!NOTE]
    >
-   >Ce moteur de rendu est le modèle de page de résumé.
+   >Ce rendu est le modèle de page de résumé.
 
    L’exemple de code suivant pour ce rendu est contenu dans :
 
@@ -77,7 +77,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
       * **Chemin d’accès au dossier** : le chemin du dossier dans lequel le nouveau nœud CRX est créé. Définissez le chemin comme **/content**.
       * **Nom de nœud** : affectez la variable d’entrée nodeName à ce champ. Il s’agit d’une chaîne de nom de nœud unique.
-      * **Type de noeud**: Définissez le type comme **nt:unstructured**. La sortie de ce processus est nodePath. Le nodePath est le chemin CRX du nœud que vous venez de créer. Le nodePath serait la dernière sortie du processus de résumé **create PTO**.
+      * **Type de nœud :** définissez le type comme **nt:unstructured**. La sortie de ce processus est nodePath. Le nodePath est le chemin CRX du nœud que vous venez de créer. Le nodePath serait la dernière sortie du processus de résumé **create PTO**.
    1. Transmettez les données de formulaire envoyées (**employeeName**, **employeeID**, **ptoReason** et **totalDays**) comme entrée du nouveau processus **create PTO summary**. Prenez la sortie comme **ptoSummaryNodePath**.
 
 

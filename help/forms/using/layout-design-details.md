@@ -13,7 +13,7 @@ exl-id: 92f90e7f-2869-4201-a927-47de1fc08f5c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1285'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Les modèles de formulaire XFA ou XDP sont ceux de :
 
 * Fragments de mise en page
 
-Les XDP sont conçus dans Adobe Forms Designer. Cet article fournit des détails sur la conception de vos fichiers XDP pour créer des correspondances/communications interactives efficaces, comme où utiliser des champs de formulaire ou des zones cible et quand utiliser des fragments de mise en page.
+Les XDP sont conçus dans Adobe Forms Designer. Cet article fournit des détails sur la manière de concevoir vos XDP pour créer des correspondances/communications interactives efficaces, notamment où utiliser les champs de formulaire ou les zones cibles et quand utiliser les fragments de disposition.
 
 ## Création d’une mise en page pour des lettres ou pour le canal d’impression des communications interactives {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
@@ -62,7 +62,7 @@ Par défaut, tous les champs sont considérés comme pouvant être associés à 
 
 Un champ associable doit :
 
-* être un XFA ; &lt;field> ou &lt;exclgroup>
+* être un &lt;champ> XFA ou &lt;exclGroup>
 * disposer d’une référence de liaison XFA ;
 * s’il s’agit d’un champ &lt;exclGroup>, il doit contenir au moins un champ de bouton radio enfant, faute de quoi son type de valeur ne pourra pas être déterminé.
 
@@ -74,7 +74,7 @@ Un champ associable ne doit pas :
 
 * inclure de suffixe « _int » dans son nom ;
 * avoir une liaison définie comme « aucune » ;
-* être un enfant d’un &lt;exclgroup> element
+* être l’enfant d’un élément &lt;exclGroup>
 
 Dès lors qu’un champ associable répond aux critères décrits ci-dessus, il peut être situé à n’importe quel emplacement et dans n’importe quel niveau d’imbrication de la mise en page. Vous pouvez utiliser les champs associables dans les pages de gabarit.
 

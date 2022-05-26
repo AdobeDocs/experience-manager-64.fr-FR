@@ -160,4 +160,4 @@ Vous pouvez également utiliser des API pour accéder et supprimer des nœuds et
 
 * [Comment accéder au JCR AEM par programmation](/help/sites-developing/access-jcr.md)
 * [Suppression des nœuds et propriétés](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [Guide de référence des API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [Guide de référence des API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)

@@ -13,7 +13,7 @@ exl-id: e7eae36b-39e0-4550-b18b-a1ac1a5c3015
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Vous pouvez définir les colonnes qui s’affichent dans les résultats de reche
 
 Sur la page Suivi, vous pouvez sélectionner un processus et afficher ses détails. Vous pouvez effectuer une recherche portant sur les processus en fonction de divers paramètres pour afficher les détails de la tâche. Vous pouvez également afficher l’onglet Etat pour les processus qui présentent plusieurs utilisateurs recevant des tâches en parallèle où les outils pour la révision de documents sont activés.
 
-**État :** L&#39;état des tâches d&#39;un processus est affiché dans la colonne &quot;Action sélectionnée&quot; lorsque vous cliquez sur une tâche. Toutefois, l’état du processus n’est pas disponible.
+**Statut :** le statut des tâches dans un processus est affiché dans la colonne « Action sélectionnée » lorsque vous cliquez sur une tâche. Toutefois, l’état du processus n’est pas disponible.
 
 1. Sélectionnez l’instance du processus dans la liste des résultats de la recherche, pour afficher les détails des tâches qui font partie de l’instance du processus.
 1. Pour afficher plus d’informations sur une tâche, effectuez une ou plusieurs des actions suivantes :

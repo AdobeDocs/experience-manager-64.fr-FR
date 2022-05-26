@@ -1,7 +1,7 @@
 ---
 title: Enregistrer une transaction pour les implémentations personnalisées
 seo-title: Record a transaction for custom implementations
-description: Utilisez l’API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas comptabilisées comme des transactions.
+description: Utilisez l’API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas automatiquement comptabilisées comme des transactions
 seo-description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 uuid: a22b1a0b-7553-4a17-8fb4-a3bee97b4a98
 contentOwner: khsingh
@@ -12,15 +12,15 @@ exl-id: e97ecb77-96a0-44cf-8da9-1e85cc122011
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '216'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Enregistrer une transaction pour les implémentations personnalisées {#record-a-transaction-for-custom-implementations}
 
-Utilisez l’API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas comptabilisées comme des transactions.
+Utilisez l’API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas automatiquement comptabilisées comme des transactions
 
-Vous pouvez utiliser un code personnalisé pour envoyer un formulaire pour PDF, envoyer aux utilisateurs finaux l’URL d’aperçu de l’interface utilisateur de l’agent pour prévisualiser une communication interactive ou envoyer un formulaire à l’aide de méthodes personnalisées au lieu d’utiliser des méthodes d’envoi fournies avec AEM Forms. Toutes les actions mentionnées précédemment et les implémentations personnalisées des API AEM Forms ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), pour enregistrer des actions telles que des transactions.
+Vous pouvez utiliser un code personnalisé pour envoyer un formulaire PDF, pour envoyer l’URL d’aperçu de l’interface utilisateur de l’agent aux utilisateurs finaux pour prévisualiser une communication interactive ou pour envoyer un formulaire à l’aide de méthodes personnalisées au lieu d’utiliser des méthodes d’envoi fournies avec AEM Forms. Toutes les actions mentionnées précédemment et les implémentations personnalisées des API AEM Forms ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), pour enregistrer des actions telles que les transactions.
 
 Pour enregistrer une transaction, écrivez le [servlet sling standard](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) et appelez le servlet d’un client pour enregistrer une transaction. Vous pouvez appeler le servlet à l’aide d’AJAX ou de toute autre méthode standard.
 
@@ -74,7 +74,7 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 
 ## Exemple de code côté client {#sample-client-side-code}
 
-Vous pouvez utiliser l’exemple de code ci-dessous pour appeler la servlet qui contient la variable `TransactionRecorder`API.
+Vous pouvez utiliser l’exemple de code ci-dessous pour appeler la servlet qui contient l’API `TransactionRecorder`.
 
 ```
 $.ajax({
@@ -93,5 +93,5 @@ $.ajax({
 ## Articles connexes {#related-articles}
 
 * [Présentation des rapports de transaction](/help/forms/using/transaction-reports-overview.md)
-* [Affichage et compréhension des rapports de transaction](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [API facturables des rapports de transaction](/help/forms/using/transaction-reports-billable-apis.md)
+* [Afficher et comprendre des rapports de transaction](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+* [API de rapports de transactions facturables](/help/forms/using/transaction-reports-billable-apis.md)

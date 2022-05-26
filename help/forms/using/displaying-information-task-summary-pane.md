@@ -13,7 +13,7 @@ exl-id: cb9de2d7-04ad-4221-8db7-403464c9888b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 65%
 
 Lorsque vous ouvrez une tâche dans l’espace de travail AEM Forms, le volet Résumé de la tâche peut afficher un résumé de la tâche. Ces informations supplémentaires et pertinentes à propos d’une tâche ajoutent de la valeur pour l’utilisateur final de l’espace de travail AEM Forms.
 
-L’espace de travail AEM Forms vous permet d’afficher une page web de votre choix dans le volet Résumé de la tâche. Un processus peut être créé pour afficher un volet Résumé de la tâche en utilisant Workbench.
+L’espace de travail AEM Forms vous permet d’afficher une page web de votre choix dans le volet Résumé de la tâche. Un processus peut être créé pour afficher un volet Résumé de la tâche en utilisant Workbench.
 
 1. Créez un processus Assign Task (Affecter une tâche) dans Workbench. Pour plus d’informations sur l’opération Assign Task, voir la rubrique Référence de service dans [Aide de Workbench](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 
@@ -32,9 +32,9 @@ L’espace de travail AEM Forms vous permet d’afficher une page web de votre c
 1. Configurez le champ URL du résumé de la tâche. Vous pouvez spécifier une valeur littérale, un contrôleur, une variable ou une expression XPath.
 1. Vous trouverez un exemple d’affichage des informations sur la page du résumé de la tâche ci-dessous.
 
-   * Connectez-vous à l’environnement CRXDE Lite à l’adresse `https://[server]:[port]/lc/crx/de`.
+   * Connectez-vous à l’environnement CRXDE Lite à l’adresse `https://[server]:[port]/lc/crx/de`.
    * `Create a node`**SampleSummary** ` under `/content` with type `nt:unstructured`. In the properties of this node, add `sling:resourceType` of type String and value `SampleSummary`. In the Access Control List of this node, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:read` privileges.`
-   * `Create a folder`**SampleSummary** under `/apps`. Dans la liste de contrôle d’accès de `/apps/SampleSummary`, ajoutez une entrée pour `PERM_WORKSPACE_USER` allow `jcr:readprivileges`.
+   * `Create a folder`**SampleSummary** sous `/apps`. Dans la liste de contrôle d’accès de `/apps/SampleSummary`, ajoutez une entrée pour `PERM_WORKSPACE_USER` autorisant `jcr:readprivileges`.
    * `Create a file `html.esp` at `/apps/SampleSummary`. For example, add the following lines in `html.esp`.`
 
    ```
@@ -50,5 +50,5 @@ L’espace de travail AEM Forms vous permet d’afficher une page web de votre c
    </html>
    ```
 
-   * Définissez la valeur de l’URL de résumé de la tâche sur `/lc/content/SampleSummary.html` à l’étape Affecter une tâche .
-   * Lorsque la tâche associée à cette étape est ouverte dans l’espace de travail AEM Forms, la fonction `html.esp` at `/apps/SampleSummary` est rendu dans le volet de résumé de la tâche.
+   * Définissez la valeur de l’URL du résumé de la tâche comme `/lc/content/SampleSummary.html` à l’étape d’affectation des tâches.
+   * Lorsque la tâche associée à cette étape est ouverte dans l’espace de travail AEM Forms, le `html.esp` dans `/apps/SampleSummary` est rendu dans le volet de résumé de la tâche.

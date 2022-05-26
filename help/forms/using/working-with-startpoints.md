@@ -12,7 +12,7 @@ exl-id: ef9352c7-c164-4cbf-8f18-5b97aa5f56be
 source-git-commit: 977ada5fefe476c7cd2fe1470eb024a517a681d2
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 74%
+ht-degree: 94%
 
 ---
 
@@ -24,16 +24,16 @@ Un point de départ appelle un processus créé dans Workbench. Il est associé 
 >
 >Les termes « points de départ », « processus de démarrage » et « formulaire » sont indifféremment utilisés pour désigner ce concept.
 
-Pour lancer un processus à partir de l’application AEM Forms, vous devez disposer d’un point de départ de type **Workspace** dans votre processus. Vous devez également sélectionner la variable **[!UICONTROL Visible dans Mobile Workspace]** pour le point de départ.
+Pour lancer un processus à partir de l’application AEM Forms, vous devez disposer d’un point de départ de type **Espace de travail** dans votre processus. Vous devez également sélectionner la variable **[!UICONTROL Visible dans Mobile Workspace]** pour le point de départ.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
 **Démarrage d’un processus défini dans Workbench**
 
 1. Pour afficher les points de départ disponibles dans l’application AEM Forms, accédez à l’écran [Accueil](/help/forms/using/home-screen.md).
-1. Sur le **[!UICONTROL Accueil]** par défaut, l’écran **[!UICONTROL Toutes les Forms]** s’affiche.
+1. Sur l’écran d’**[!UICONTROL Accueil]**, la liste **[!UICONTROL Tous les formulaires]** s’affiche par défaut.
 
-   Le point de départ est associé à un formulaire. Appuyez sur le formulaire associé au point de départ dans la liste pour l’ouvrir.
+   Le point de départ est associé à un formulaire. Appuyez sur le formulaire associé au point de départ dans la liste pour l’ouvrir.
 
    Le formulaire associé au point de départ s’ouvre.
 

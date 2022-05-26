@@ -13,7 +13,7 @@ exl-id: 8e3bb77f-b187-42c8-a90e-fe0fee50dc34
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 75%
+ht-degree: 83%
 
 ---
 
@@ -26,21 +26,21 @@ Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de 
 1. À partir d’une invite de commande, accédez au *[racine du serveur d’applications]* répertoire /bin.
 1. Saisissez la commande suivante en remplaçant *nom_serveur* par le nom de WebSphere Application Server :
 
-   * (Windows) `serverStatus.bat`*server_name*
-   * (Linux, UNIX) ./ `serverStatus.sh`*server_name*
+   * (Windows) `serverStatus.bat`*nom_serveur*
+   * (Linux, UNIX) ./ `serverStatus.sh`*nom_serveur*
 
 ## Démarrez WebSphere Application Server {#start-websphere-application-server}
 
 1. À partir d’une invite de commande, accédez au *[racine du serveur d’applications]* répertoire /bin.
 1. Saisissez la commande suivante en remplaçant *nom_serveur* par le nom de WebSphere Application Server :
 
-   * (Windows) `startServer.bat`*server_name*
-   * (Linux, UNIX) ./ `startServer.sh`*server_name*
+   * (Windows) `startServer.bat`*nom_serveur*
+   * (Linux, UNIX) ./ `startServer.sh`*nom_serveur*
 
 ## Arrêt de WebSphere Application Server {#stop-websphere-application-server}
 
 1. À partir d’une invite de commande, accédez au *[racine du serveur d’applications]* répertoire /bin.
 1. Saisissez la commande suivante en remplaçant *nom_serveur* par le nom de WebSphere Application Server :
 
-   * (Windows) `stopServer.bat`*server_name*
-   * (Linux, UNIX) ./ `stopServer.sh`*server_name*
+   * (Windows) `stopServer.bat`*nom_serveur*
+   * (Linux, UNIX) ./ `stopServer.sh`*nom_serveur*

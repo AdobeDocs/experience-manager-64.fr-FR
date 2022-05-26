@@ -11,7 +11,7 @@ exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,20 +19,20 @@ ht-degree: 92%
 
 [Un fragment de formulaire adaptatif](/help/forms/using/adaptive-form-fragments.md) est un groupe de champs ou un panneau contenant un groupe de champs que vous pouvez utiliser lors de la création d’un formulaire. Il vous permet de créer un formulaire facilement et rapidement. Vous pouvez glisser-déposer un fragment de formulaire adaptatif dans un formulaire à l’aide du navigateur de ressources de la barre latérale, et vous pouvez le modifier dans l’éditeur de formulaire.
 
-Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fournis dans le [Package de module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Il inclut les configurations suivantes :
+Pour les auteurs de formulaires adaptatifs, des fragments de référence sont fournis dans le [pack de modules complémentaires AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr). Il inclut les configurations suivantes :
 
 * Adresse
 * Coordonnées
-* Informations de carte de crédit
+* Informations de la carte de crédit
 * Emploi actuel
 * Informations sur les personnes à charge
 * Historique d’emploi
 * Recettes et dépenses
 * Nom
 * Conditions générales
-* Conditions générales avec saisie tactile
+* Conditions générales avec griffonnage
 
-Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Formulaires et documents. Pour installer un package, voir [Utilisation de modules](/help/sites-administering/package-manager.md).
+Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Formulaires et documents. Pour installer un pack, voir [Utilisation de packs](/help/sites-administering/package-manager.md).
 
 ![Tous les fragments répertoriés](assets/ootb-frags.png)
 

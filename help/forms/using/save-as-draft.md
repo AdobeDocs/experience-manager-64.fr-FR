@@ -12,20 +12,20 @@ exl-id: c21cddb3-d12d-4e1b-bd62-cf75946569be
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Enregistrement d’une tâche ou d’un formulaire en tant que brouillon {#saving-a-task-or-form-as-a-draft}
+# Enregistrement d’une tâche ou d’un formulaire en tant que brouillon  {#saving-a-task-or-form-as-a-draft}
 
 L’option Enregistrer en tant que brouillon enregistre un instantané d’une tâche ou d’un formulaire avec les données renseignées dans le formulaire associé. Vous pouvez également créer un brouillon à partir d’un modèle. Les brouillons sont enregistrés sur le périphérique mobile et synchronisées avec le serveur Adobe Experience Manager Forms pour une récupération ultérieure.
 
-Vous pouvez [mettre à jour le formulaire](/help/forms/using/working-with-form.md), [annoter](/help/forms/using/add-attachments.md) avec des photos et des annotations. Au fur et à mesure que vous continuez à mettre à jour un formulaire, il est conseillé de l’enregistrer en tant que brouillon. Si vous décidez d’envoyer ultérieurement un formulaire complété, son enregistrement en tant que brouillon s’avère utile.
+Vous pouvez [mettre à jour le formulaire](/help/forms/using/working-with-form.md), [l’annoter](/help/forms/using/add-attachments.md) avec des photos et des notes par saisie tactile. Au fur et à mesure que vous continuez à mettre à jour un formulaire, il est conseillé de l’enregistrer en tant que brouillon. Si vous décidez d’envoyer ultérieurement un formulaire complété, son enregistrement en tant que brouillon s’avère utile.
 
-Pour activer la fonction Enregistrer en tant que brouillon pour les formulaires enregistrés sur Forms Portal, reportez-vous à la section [Enregistrement d’un formulaire HTML5 en tant que brouillon](/help/forms/using/saving-html5-form-draft.md).\
+Pour activer la fonctionnalité Enregistrer en tant que brouillon pour les formulaires enregistrés sur le portail de formulaires, voir [Enregistrer un formulaire HTML5 en tant que brouillon](/help/forms/using/saving-html5-form-draft.md).\
 Pour configurer l’envoi des formulaires adaptatifs, voir [Composant Drafts &amp; Submission](/help/forms/using/draft-submission-component.md). (Non valide pour les formulaires synchronisés avec le serveur AEM Forms JEE.)
 
-Pour créer un brouillon, ouvrez le formulaire, puis appuyez sur le bouton **Enregistrer en tant que brouillon** ![save-as-draft](assets/save-as-draft.png). Indiquez le nom de l’enregistrement de brouillons et **appuyez sur**. Le brouillon est enregistré dans le dossier Brouillons et synchronisé avec le serveur. Il est enregistré dans le dossier de boîte d’envoi si l’application est hors ligne.
+Pour créer un brouillon, ouvrez le formulaire et appuyez sur **Enregistrer en tant que brouillon** ![save-as-draft](assets/save-as-draft.png). Indiquez le nom de l’enregistrement de brouillons et **appuyez sur**. Le brouillon est enregistré dans le dossier Brouillons et synchronisé avec le serveur. Il est enregistré dans le dossier de boîte d’envoi si l’application est hors ligne.
 
 Si par la suite vous mettez à jour le formulaire correspondant, les modifications sont répercutées immédiatement. Lors de la synchronisation de l’application AEM Forms avec le serveur AEM Forms, le brouillon est téléchargé sur le serveur AEM Forms. De plus, il est déplacé de la boîte d’envoi vers le dossier Tâches ou Brouillons. Une icône de modification s’affiche en regard de celui-ci.
 
@@ -39,9 +39,9 @@ L’option de suppression des brouillons créés à partir d’une tâche n’es
 
 Vous pouvez ignorer les brouillons en mode hors ligne et en ligne. Au rejet des brouillons en mode hors ligne, les brouillons sont supprimés du serveur uniquement lorsque la connexion au serveur est rétablie.
 
-Pour supprimer un brouillon, procédez comme suit :
+Pour supprimer un brouillon, procédez comme suit :
 
 1. Dans l’application AEM Forms, accédez aux **Formulaires.**
 1. Cliquez sur **Brouillons** dans la liste déroulante en regard de Rechercher.
-1. Formulaire avec icône de modification ![edit-draft-app](assets/edit-draft-app.png) indique un brouillon. Appuyez sur les points de suspension horizontaux en regard du brouillon.
+1. Un formulaire avec l’icône de modification ![edit-draft-app](assets/edit-draft-app.png) indique un brouillon. Appuyez sur les points de suspension horizontaux en regard du brouillon.
 1. Dans les options qui s’affichent lorsque vous appuyez sur les points de suspension horizontaux, appuyez sur **Supprimer le brouillon**.

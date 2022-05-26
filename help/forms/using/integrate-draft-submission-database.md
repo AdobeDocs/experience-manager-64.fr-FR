@@ -12,7 +12,7 @@ exl-id: 4d13d69b-1fe6-4fb6-9e3e-3ad0c5ffb829
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1467'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -27,8 +27,8 @@ L’exemple présenté dans ce document est une implémentation de référence d
 >[!NOTE]
 >
 >* Les exemples et les configurations décrits dans ce document correspondent à MySQL 5.6.24 et vous devez les remplacer de manière appropriée selon votre système de base de données. 
->* Vérifiez que vous avez installé la dernière version du package complémentaire AEM Forms. Pour obtenir la liste des packages disponibles, consultez l’article sur les [versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
->* L’exemple de package fonctionne uniquement avec les actions d’envoi Forms adaptatif.
+>* Vérifiez que vous avez installé la dernière version du package complémentaire AEM Forms. Pour obtenir la liste des packages disponibles, consultez l’article sur les [versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
+>* L’exemple de package fonctionne uniquement avec les actions d’envoi de formulaires adaptatifs.
 
 
 ## Installer et configurer l’exemple {#set-up-and-configure-the-sample}
@@ -41,13 +41,13 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
 [Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Accédez à AEM gestionnaire de packages à l’adresse https://[*hôte*]:[*port*]/crx/packmgr/.
+1. Accédez au gestionnaire de modules AEM à l’adresse https://[*host*]:[*port*]/crx/packmgr/.
 1. Cliquez sur **[!UICONTROL Upload Package]** (Télécharger le package).
 
 1. Parcourez l’arborescence pour sélectionner le package **aem-fp-db-integration-sample-pkg-6.1.2.zip** et cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Installer]** en regard du package pour installer le package. 
-1. Accédez à **[!UICONTROL Configuration de la console Web AEM]**
-page à l’adresse https://[*hôte*]:[*port*]/system/console/configMgr
+1. Accédez à la page de **[!UICONTROL configuration de la console web AEM]**
+à l’adresse https://[*host*]:[*port*]/system/console/configMgr.
 1. Cliquez pour ouvrir **[!UICONTROL Forms Portal Draft and Submission Configuration]** (Configuration des brouillons et des envois du portail Forms) en mode d’édition.
 
 1. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :
@@ -83,11 +83,11 @@ page à l’adresse https://[*hôte*]:[*port*]/system/console/configMgr
    * Dans la configuration de la console Web, recherchez et cliquez sur Exemple d’implémentation de service de données du portail de formulaires. Vous pouvez modifier les valeurs de la source de données, et le nom du tableau de données.
    >[!NOTE]
    >
-   >Si vous modifiez les noms de tableau, indiquez-les dans la configuration du portail de formulaires.
+   >Si vous modifiez les noms du tableau, renseignez-les dans la configuration du portail Formulaires.
 
 1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).
 
-1. La connexion à la base de données peut être effectuée via la source de données en pool de la connexion Apache Sling.
+1. La connexion à la base de données peut être effectuée via la source de données mise en pool de la connexion Apache Sling.
 1. Pour la connexion Apache Sling, recherchez le **[!UICONTROL pool de connexions Apache Sling Days Commons]** en mode d’édition dans la configuration de la console Web. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :
 
 <table> 
@@ -106,7 +106,7 @@ page à l’adresse https://[*hôte*]:[*port*]/system/console/configMgr
   </tr> 
   <tr> 
    <td>URI de connexion JDBC<br /> </td> 
-   <td>jdbc:mysql://[<em>hôte</em>]:[<em>port</em>]/[<em>schema_name</em>]</td> 
+   <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td> 
   </tr> 
   <tr> 
    <td>Nom d’utilisateur</td> 
@@ -163,8 +163,7 @@ page à l’adresse https://[*hôte*]:[*port*]/system/console/configMgr
 >
 > * Le pilote JDBC pour MySQL n’est pas fourni avec l’exemple. Assurez-vous de vous l’être procuré et spécifiez les informations requises pour configurer le pool de connexions JDBC. 
 > * Pointez vos instances d’auteur et de publication pour utiliser la même base de données. La valeur du champ URI de la connexion JDBC doit être identique pour toutes les instances d’auteur et de publication.
-
->
+   >
 
 
 1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).
@@ -177,7 +176,7 @@ page à l’adresse https://[*hôte*]:[*port*]/system/console/configMgr
    >
    >Vous n’avez pas besoin de bases de données différentes pour les instances d’auteur et de publication. Utilisez la même base de données sur toutes les instances d’auteur et de publication.
 
-   **Instruction SQL pour le tableau de données**    
+   **Instruction SQL pour le tableau de données**
 
    ```sql
    CREATE TABLE `data` (
@@ -189,7 +188,7 @@ page à l’adresse https://[*hôte*]:[*port*]/system/console/configMgr
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-   **Instruction SQL pour le tableau de métadonnées**    
+   **Instruction SQL pour le tableau de métadonnées**
 
    ```sql
    CREATE TABLE `metadata` ( 
@@ -341,7 +340,7 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
     util.js
    ```
 
-   Dans le code ci-dessus, `util` est le nom du dossier et`util.js` est le nom du fichier dans le dossier `util`. Le `util` folder et `util.js` sont créés lors des étapes suivantes.
+   Dans le code ci-dessus, `util` est le nom du dossier et`util.js` est le nom du fichier dans le dossier `util`. Le dossier `util` et le fichier `util.js` sont créés dans les étapes suivantes.
 
 1. Cliquez avec le bouton droit sur le nœud `cq:ClientLibraryFolder` créé à l’étape 2 et sélectionnez Créer > Créer un dossier. Créez un dossier nommé `util`. Cliquez sur **[!UICONTROL Enregistrer tout]**. Cliquez avec le bouton droit sur le dossier `util` et sélectionnez Créer > Créer un fichier. Créez un fichier nommé `util.js`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
@@ -412,12 +411,12 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
 
    * **[!UICONTROL Option multiple :]** Activé 
 
-1. Accédez à `/libs/fd/af/runtime/clientlibs/guideRuntime`et ajoutez le `fp.validation` à la valeur **embed** .
+1. Accédez à `/libs/fd/af/runtime/clientlibs/guideRuntime` et ajoutez la valeur `fp.validation` à la propriété embed.****
 
-1. Accédez à /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA et ajoutez le `fp.validation` valeur à **embed** .
+1. Accédez à /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA et ajoutez la valeur `fp.validation` à la propriété embed.****
 
    >[!NOTE]
    >
    >Si vous utilisez des bibliothèques client personnalisées au lieu des bibliothèques client guideRuntime et guideRuntimeWithXfa, utilisez le nom de catégorie pour intégrer la bibliothèque client créée dans cette procédure à vos bibliothèques personnalisées chargées lors de l’exécution.
 
-1. Cliquez sur **[!UICONTROL Enregistrer tout.]** Désormais, lorsque le nom de fichier dépasse 150 caractères (extension comprise), un message s’affiche.
+1. Cliquez sur **[!UICONTROL Enregistrer tout.]** Désormais, lorsque le nom de fichier contient plus de 150 caractères (extension comprise), un message s’affiche.

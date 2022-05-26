@@ -12,7 +12,7 @@ exl-id: 272d3ec1-7f92-4f4a-9e98-954136b20b27
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1170'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ Pour interagir avec la structure de formulaires, un widget déclenche certains �
 
 #### API implémentées par un widget {#apis-implemented-by-widget}
 
-La structure de l’apparence appelle certaines fonctions du widget qui sont implémentées dans les widgets personnalisés. Le widget doit implémenter les fonctions suivantes :
+La structure de l’apparence appelle certaines fonctions du widget qui sont implémentées dans les widgets personnalisés. Le widget doit implémenter les fonctions suivantes :
 
 <table> 
  <tbody>
@@ -134,10 +134,10 @@ La structure de l’apparence appelle certaines fonctions du widget qui sont imp
   </tr>
   <tr>
    <td>click:function()</td> 
-   <td>Place l’accent sur le champ et appelle XFA_CLICK_EVENT.</td> 
+   <td>Se concentre sur le champ et appelle XFA_CLICK_EVENT.</td> 
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>représentant l'erreur<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Remarque</strong> : applicable uniquement aux formulaires HTML5.</p> </td> 
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: chaîne </em>représente l’erreur<br /> <em>errorType : chaîne (« avertissement »/« erreur »)</em> </p> <p><strong>Remarque</strong> : applicable uniquement aux formulaires HTML5.</p> </td> 
    <td>Envoie le message d’erreur et le type d’erreur au widget. Le widget affiche l’erreur.</td> 
   </tr>
   <tr>
@@ -252,11 +252,11 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
   </tr>
   <tr>
    <td>states</td> 
-   <td><p>Nombre d’états autorisés. </p> <p>Deux pour les formulaires adaptatifs (activé, désactivé) et trois pour les formulaires HTML5 (activé, désactivé, neutre).</p> </td> 
+   <td><p>Nombre d’états autorisés. </p> <p>Deux pour les formulaires adaptatifs (activé, désactivé) et trois pour des formulaires HTML5 (activé, désactivé, neutre).</p> </td> 
   </tr>
   <tr>
    <td>state</td> 
-   <td><p>État actuel de l’élément.</p> <p>Deux pour les formulaires adaptatifs (activé, désactivé) et trois pour les formulaires HTML5 (activé, désactivé, neutre).</p> </td> 
+   <td><p>État actuel de l’élément.</p> <p>Deux pour les formulaires adaptatifs (activé, désactivé) et trois pour des formulaires HTML5 (activé, désactivé, neutre).</p> </td> 
   </tr>
  </tbody>
 </table>

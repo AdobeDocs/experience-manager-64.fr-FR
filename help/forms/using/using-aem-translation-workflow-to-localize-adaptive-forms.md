@@ -13,7 +13,7 @@ exl-id: 5d0dcf4d-8995-4547-acb1-4917696af95e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Le service de traduction automatique traduit directement le contenu de vos formu
 [Paramètres d’un document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Personnalisez les informations de marque du document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) et assurez-vous que les paramètres régionaux du navigateur correspondent à la langue dans laquelle vous avez localisé le formulaire adaptatif à l’aide de la langue de la machine. Les paramètres régionaux du navigateur permettent de localiser les informations de marque dans le document d’enregistrement.
-1. Pour afficher le document d’enregistrement localisé, appuyez sur Générer l’aperçu. Le PDF de documents d’enregistrement est généré et ouvert dans un nouvel onglet de votre navigateur.
+1. Pour afficher le document d’enregistrement localisé, appuyez sur Générer l’aperçu. Le document d’enregistrement PDF est généré et ouvert dans un nouvel onglet de votre navigateur.
 
 ## Localisation d’un formulaire adaptatif et de son document d’enregistrement à l’aide de la traduction humaine {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

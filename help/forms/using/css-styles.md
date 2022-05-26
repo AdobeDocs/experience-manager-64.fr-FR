@@ -14,7 +14,7 @@ exl-id: 9e381e71-63ff-41ab-a6ec-9f92447b65a0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -26,13 +26,13 @@ Le rendu HTML5 d’un modèle de formulaire XFA comporte plusieurs éléments HT
 >
 >Dans les classes CSS, ne modifiez pas les attributs de position et de taille, tels que la largeur, la hauteur, l’épaisseur de la bordure, le haut, la gauche, la droite, le bas, le remplissage et la marge. Modifier les attributs de position et de taille modifie la disposition du formulaire.
 
-## Classes CSS pour les éléments {#css-classes-nbsp-for-elements-nbsp}
+## Classes CSS pour les éléments  {#css-classes-nbsp-for-elements-nbsp}
 
-Chaque élément contient des classes CSS bien définies. Vous pouvez modifier ces classes pour modifier l’apparence d’un élément. Chaque élément, à l’exception des éléments de champ et de dessin, comporte deux classes CSS –  Type et Nom.
+Chaque élément contient des classes CSS bien définies. Vous pouvez modifier ces classes pour modifier l’apparence d’un élément. Chaque élément, à l’exception des éléments de champ et de dessin, comporte deux classes CSS – Type et Nom.
 
-* Le **type classe** représente le type du champ XFA. Vous pouvez remplacer la classe `type`   pour modifier les styles de tous les éléments d’un type donné.
+* Le **type classe** représente le type du champ XFA. Vous pouvez remplacer la classe `type` pour modifier les styles de tous les éléments d’un type donné.
 
-* Le **nom de classe** correspond au nom du champ XFA. Vous pouvez remplacer la variable `name` pour modifier et appliquer un style personnalisé à un élément.
+* Le **nom de classe** correspond au nom du champ XFA. Vous pouvez remplacer la classe `name` pour modifier un élément et lui appliquer un style personnalisé.
 
 >[!NOTE]
 >
@@ -46,11 +46,11 @@ L’élément de champ contient deux éléments imbriqués : widget et légende
 
 **Elément widget**
 
-L’élément widget contient l’élément de l’interface utilisateur d’interaction avec les utilisateurs. Il comporte trois classes CSS :
+L’élément widget contient l’élément de l’interface utilisateur d’interaction avec les utilisateurs. Il a trois classes CSS :
 
-* **Widget**: Chaque widget a cette classe.
-* **name**: Tous les widgets fournis avec AEM contiennent la classe de nom de widget. Pour les widgets personnalisés, le développeur de widgets fournit la classe de nom Widget.
-* **type**: Chaque widget comporte un élément d’interface utilisateur. Cette classe définit le type de l’élément d’interface utilisateur.
+* **Widget** : chaque widget comporte cette classe.
+* **nom** : tous les widgets fournis avec AEM contiennent la classe de nom widget. Pour les widgets personnalisés, le développeur de widgets fournit la classe de nom Widget.
+* **type** : chaque widget comporte un élément d’interface utilisateur. Cette classe définit le type de l’élément d’interface utilisateur. 
 
 ```xml
 <!--field with caption-->
@@ -238,7 +238,7 @@ Vous pouvez insérer des éléments statiques de dessin comme un texte et des im
 
 ## Style des autres parties du formulaire {#styling-other-parts-of-the-form}
 
-Outre l’aspect des composants de l’interface utilisateur dans le formulaire de HTML, vous pouvez modifier le style des éléments tels que les erreurs en ligne, les avertissements en ligne et les champs contenant des erreurs de validation.
+Outre l’aspect des composants de l’interface utilisateur dans le formulaire HTML, vous pouvez modifier le style des éléments comme les erreurs en ligne, les avertissements en ligne et les champs contenant des erreurs de validation.
 
 `Styling Inline Errors`
 
@@ -250,4 +250,4 @@ Lorsque la validation d’un champ résulte en un avertissement, un avertissemen
 
 `Styling Fields with Validation Errors`
 
-Lorsque la fonction de validation d’un champ échoue, le style du widget change. Ce changement de style est effectué en appliquant une classe CSS **widgetError** sur le composant widget. Pour modifier le style par défaut, remplacez la variable **widgetError** classe .
+Lorsque la fonction de validation d’un champ échoue, le style du widget change. Cette modification du style est effectuée en appliquant une classe CSS **widgetError** au composant widget. Pour modifier le style par défaut, remplacez la classe **widgetError**.

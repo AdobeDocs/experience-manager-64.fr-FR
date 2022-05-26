@@ -13,7 +13,7 @@ exl-id: 82a843c4-5cb2-4f5e-ad4d-cf2e9ea6cdb8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 66%
+ht-degree: 78%
 
 ---
 
@@ -54,10 +54,10 @@ Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec d
 
 ## Format d’envoi de pièce jointe {#attachment-submission-format}
 
-Lorsque les pièces jointes sont activées, le formulaire HTML5 envoie des données multipartie. Les données d’envoi en plusieurs parties comportent deux parties. **dataXml** et **attachments**.
+Lorsque les pièces jointes sont activées, le formulaire HTML5 envoie des données multipartie. Les données multipartie sont envoyées en deux parties : fichier **dataXML** et **pièces jointes**.
 
 >[!NOTE]
 >
->Pour la compatibilité ascendante, si `mfAllowAttachments`est désactivée, les formulaires HTML5 n’envoient pas les données en plusieurs parties. Il envoie des données XML simples dans **application/xml** format.
+>Pour une compatibilité ascendante, si l’option `mfAllowAttachments` est désactivée, les formulaires HTML5 n’envoient pas les données multipartie. Ils envoient seulement le fichier de données XML au format **application/xml**.
 
 Si l’indicateur mfAllowAttachments est activé, le [service proxy du service d’envoi](/help/forms/using/service-proxy.md) traite également les données multipartie avec les données Xml et les pièces jointes.

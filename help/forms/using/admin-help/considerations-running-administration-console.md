@@ -13,7 +13,7 @@ exl-id: 991418fd-5ff8-491e-834e-2324e029e499
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 87%
 
 Il existe plusieurs éléments à prendre en compte lors de l’exécution d’Administration Console :
 
-* Si vous accédez à Administration Console à l’aide de l’URL `https://*[hostname]*:*[port]*/adminui`, le nom d’hôte spécifié ne peut pas contenir de caractères de soulignement. Dans le cas contraire, les liens vers certaines zones de Administration Console risquent de ne pas fonctionner correctement.
+* Si vous accédez à la console d’administration en utilisant l’URL `https://*[hostname]*:*[port]*/adminui`, le nom d’hôte spécifié ne peut pas contenir de caractères de soulignement. Dans le cas contraire, les liens vers certaines zones d’Administration Console risquent de ne pas fonctionner correctement.
 * Si vous exécutez Administration Console dans Windows Explorer sur un système d’exploitation japonais, il se peut que vous rencontriez les problèmes suivants :
 
    * Un clic sur un lien vous renvoie à la page d’ouverture de session au lieu du lien prévu.

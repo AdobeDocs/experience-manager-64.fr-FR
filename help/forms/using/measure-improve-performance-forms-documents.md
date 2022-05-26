@@ -12,7 +12,7 @@ exl-id: 364dd7f3-9009-440e-8aff-28e2dac08fe7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1278'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Pour optimiser le retour sur investissement, les entreprises doivent contrôler 
 
 ## La solution {#the-solution}
 
-AEM Forms s’intègre à [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) solutions - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) et [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - qui peuvent vous aider à surveiller et analyser les performances de vos formulaires et vous permettre d’expérimenter et d’identifier l’expérience qui conduit à un meilleur taux de conversion.
+AEM Forms s’intègre aux solutions [Adobe Marketing Cloud](https://www.adobe.com/fr/marketing-cloud.html), [Adobe Analytics](https://www.adobe.com/fr/marketing-cloud/web-analytics.html) et [Adobe Target](https://business.adobe.com/fr/products/target/adobe-target.html), qui peuvent vous aider à surveiller et à analyser les performances de vos formulaires et vous permettre de tester et d’identifier l’expérience qui conduit à un meilleur taux de conversion.
 
 ## Le processus {#the-workflow}
 
@@ -68,11 +68,11 @@ Pour obtenir des informations détaillées sur les interactions client avec vos 
 1. Configuration du service de configuration d’AEM Forms Analytics dans AEM
 1. Activation de l’analyse du formulaire dans AEM
 
-Pour obtenir des instructions détaillées, voir [Configuration des analyses et des rapports pour les formulaires adaptatifs](/help/forms/using/configure-analytics-forms-documents.md).
+Pour les étapes détaillées, voir [Configurer des analyses et des rapports pour les formulaires adaptatifs](/help/forms/using/configure-analytics-forms-documents.md).
 
 **Configuration de Target**
 
-Pour créer et exécuter des tests A/B pour vos formulaires adaptatifs, configurez Target dans AEM Forms comme décrit dans [Configuration et intégration de Target dans AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+Pour créer et exécuter des tests A/B pour vos formulaires adaptatifs, configurez Target dans AEM Forms comme décrit dans [Configurer et intégrer Target dans AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
 #### Etape 2 : Afficher le rapport d’analyse {#step-view-analytics-report-br}
 
@@ -90,7 +90,7 @@ Regardons de plus près les points de données des formulaires qu’Analytics co
 
 Le rapport d’analyse pour les formulaires adaptatifs capture les indicateurs de performances clés (IPC) suivants au niveau du formulaire :
 
-* **Durée moyenne de remplissage** : temps moyen passé au remplissage du formulaire.
+* **Durée moyenne de remplissage** : temps moyen passé au remplissage du formulaire
 * **Impressions** : nombre de fois que le formulaire s’est affiché dans des résultats de recherche. 
 
 * **Rendus** : nombre de fois que le formulaire a été affiché ou ouvert.

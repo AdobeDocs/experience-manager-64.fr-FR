@@ -12,7 +12,7 @@ exl-id: c8ebd18b-fa24-4264-bd17-f553a2a784d9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2717'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -47,7 +47,7 @@ L’illustration ci-dessous présente le déroulement étape par étape du scén
 
 ![workflow_aem_gov_2](assets/workflow_aem_gov_2.png)
 
-Le scénario met en scène les personnages suivants :
+Le scénario implique les personnages suivants :
 
 * Sarah Rose, le parent adoptif qui demande une allocation familiale
 * Joe, l’enfant adopté
@@ -119,7 +119,7 @@ Le formulaire d’allocation familiale du site We.Gov utilise des formulaires ad
 
 >[!NOTE]
 >
->Le processus à partir d’un courrier électronique fonctionne avec les utilisateurs connectés uniquement. Dans le scénario de site de référence, assurez-vous que l’utilisateur Sarah Rose est ajouté. Les informations de connexion de Sarah sont les suivantes : `srose/password`.
+>Le processus à partir d’un courrier électronique fonctionne avec les utilisateurs connectés uniquement. Dans le scénario de site de référence, assurez-vous que l’utilisateur Sarah Rose est ajouté. Les informations de connexion de Sarah sont `srose/password`.
 
 ![mob1](assets/mob1.png)
 
@@ -220,7 +220,7 @@ Lorsque Sarah remplit et envoie la demande d’allocation familiale, un document
 
 ### Démonstration {#see-it-yourself-2}
 
-Ouvrir la page `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Sur la page, appuyez sur . **[!UICONTROL Se connecter]**, sélectionnez la variable **[!UICONTROL Connexion en tant que représentant]** , connectez-vous à la boîte de réception d’AEM en utilisant grios/password comme nom d’utilisateur/mot de passe pour Gloria Rios. La demande d’allocation familiale s’affiche. Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour les tâches de flux de travail axées sur les formulaires, voir [Gestion des applications et des tâches Forms dans AEM boîte de réception](/help/forms/using/manage-applications-inbox.md).
+Ouvrir la page `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Sur la page, appuyez sur . **[!UICONTROL Se connecter]**, sélectionnez la variable **[!UICONTROL Connexion en tant que représentant]** , connectez-vous à la boîte de réception d’AEM en utilisant grios/password comme nom d’utilisateur/mot de passe pour Gloria Rios. La demande d’allocation familiale s’affiche. Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour les tâches du workflow relatives aux formulaires, voir [Gérer des applications et des tâches Forms dans la boîte de réception AEM](/help/forms/using/manage-applications-inbox.md).
 
 ![La boîte de réception de Gloria dans le site de référence We.Gov](assets/gloria-inbox.png)
 

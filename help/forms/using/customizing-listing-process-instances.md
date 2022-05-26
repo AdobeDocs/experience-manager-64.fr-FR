@@ -12,7 +12,7 @@ exl-id: e7b8206c-bac2-48a6-b353-d06bc73b29f9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -62,20 +62,20 @@ Dans la liste des instances de processus, pour chaque instance de processus, l�
   </tr> 
   <tr> 
    <td>processVariables</td> 
-   <td>Tableau d’objets de variables de processus. Chaque objet de variable de processus contient les paramètres <strong>name</strong> (le nom de la variable de processus), <strong>value</strong> (la valeur de la variable de processus, et<strong> type</strong> (le type de la valeur de processus).</td> 
+   <td>Tableau d’objets de variables de processus. Chaque objet de variable de processus contient les paramètres <strong>name</strong> (le nom de la variable de processus), <strong>value</strong> (la valeur de la variable de processus), et<strong> type</strong> (le type de la valeur de processus).</td> 
   </tr> 
  </tbody> 
 </table>
 
 **Exemple:**
 
-Pour afficher la variable `description` de l’instance de processus dans la carte de l’instance de processus, effectuez les étapes suivantes.
+Pour afficher la propriété `description` de l’instance de processus dans la vignette d’instance de processus, effectuez les étapes suivantes.
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Procédez comme suit :
 
    1. Copiez /libs/ws/js/runtime/templates/processinstance.html dans /apps/ws/js/runtime/templates/, s’il n’existe pas. Cliquez sur **Enregistrer tout**.
-   1. Ajoutez la description du processus div avec class = &#39;processDescription&#39; inprocessinstance.html.
+   1. Ajoutez la description du processus div avec class = ’processDescription’ dans processinstance.html.
 
    ```
    <div class="processDescription" title="<%= description%>"><%= description%></div>
@@ -84,7 +84,7 @@ Pour afficher la variable `description` de l’instance de processus dans la car
 1. Procédez comme suit :
 
    1. Ouvrez /apps/ws/js/registry.js pour le modifier.
-   1. Rechercher et remplacer `text!/lc/libs/ws/js/runtime/templates/processinstance.html`avec `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html.
+   1. Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/processinstance.html` par `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html.
 
 1. Les changements ci-dessus peuvent nécessiter une mise à jour du fichier CSS en ajoutant une entrée dans la feuille de style /apps/ws/css/newStyle.css comme suit :
 

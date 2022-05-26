@@ -13,7 +13,7 @@ exl-id: 5a2bd0ea-2c5e-4e0c-aff1-dba06be6a5b7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '481'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent d
 
 Lorsque vous spécifiez des noms de catégorie, vous devez les créer afin qu’ils s’affichent correctement dans le volet de navigation de Workspace. Par défaut, le volet de navigation gauche a une largeur fixe de 210 pixels, soit environ 24 caractères. Si le nom de catégorie que vous indiquez est trop long pour tenir dans la largeur définie du volet de navigation gauche, ce nom est tronqué. Le nom complet ne s’affiche que si le pointeur de la souris est posé dessus. Evitez d’utiliser des noms de catégorie qui seront tronqués. Les deux exemples suivants illustrent les noms de catégories qui conviennent et ceux qui sont tronqués :
 
-**Nom de catégorie adapté :** Participation et absence
+**Nom de la catégorie qui est adapté :** présence et absence.
 
-**Nom de catégorie tronqué :** Participation et sortie (États-Unis)
+**Nom de la catégorie qui est tronqué :** présence et absence (France).
 
 Dans Workspace, les processus d’une catégorie s’affichent en général sous forme de cartes dans la page Démarrer le processus. En général, l’écran peut afficher six cartes pour une catégorie avant que l’utilisateur ne doive le faire défiler afin de visualiser les autres cartes. Comme le défilement de l’écran rend la recherche d’un processus plus difficile, pensez à limiter chaque catégorie à six processus ou, en fonction de votre résolution, au nombre de processus susceptibles d’être affichés à l’écran sans avoir recours au défilement.
 

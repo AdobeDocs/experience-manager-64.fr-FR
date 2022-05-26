@@ -13,7 +13,7 @@ exl-id: 890e98af-0491-4b59-9a9b-6c245db54f0f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '134'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Le logo de l’entreprise est affiché dans l’angle supérieur gauche de l’e
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur l’accès WebDAV, voir [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Pour plus d’informations sur l’accès à WebDAV, consultez la section [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/fr/crx/current/how_to/webdav_access.html).
 
 1. Reportez-vous à l’image du nouveau logo dans la feuille de style sous /apps/ws/css/newStyle.css en ajoutant le style suivant.
 

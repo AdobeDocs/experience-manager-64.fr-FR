@@ -12,7 +12,7 @@ exl-id: 7b1f60e7-c8fa-43b6-bef4-88b42e7bbc36
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
 
    `/apps/ws/css/newStyle.css`
 
-   Par exemple : Ajoutez un nouveau style appelé `myStyle1`comme illustré ci-dessous et téléchargez le fichier image `myStyleIcon1.png` au `/apps/ws/image`dossier s à l’aide d’un client WebDAV.
+   Par exemple : ajoutez un nouveau style appelé `myStyle1` comme indiqué ci-dessous et chargez le fichier image `myStyleIcon1.png` dans le dossier `/apps/ws/image` à l’aide d’un client WebDAV.
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur l’accès WebDAV, voir [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Pour plus d’informations sur l’accès à WebDAV, voir [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/fr/crx/current/how_to/webdav_access.html).
 
    >[!NOTE]
    >
@@ -50,7 +50,7 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
 
 1. Copiez `/libs/ws/js/runtime/templates/task.html` dans `/apps/ws/js/runtime/templates/task.html`.
 
-1. Si le nom du style CSS est identique au nom de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/task.html`:
+1. Si le nom du style CSS est identique au nom de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/task.html` :
 
    ```
    <%if(routeList == null){%>
@@ -120,7 +120,7 @@ To
 
 1. Copiez `/libs/ws/js/runtime/templates/taskdetails.html` dans `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. Si le nom du style CSS est identique au nom de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/taskdetails.html`:
+1. Si le nom du style CSS est identique au nom de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/taskdetails.html` :
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -168,8 +168,8 @@ To
                <%}%>
    ```
 
-1. Ouvrir `/apps/ws/js/registry.js` pour modifier et rechercher le texte suivant :\
+1. Ouvrez `/apps/ws/js/registry.js` pour le modifier et recherchez le texte suivant :\
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
-1. Remplacez le texte par ce qui suit :\
+1. Remplacez le texte par le texte suivant :\
    `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`

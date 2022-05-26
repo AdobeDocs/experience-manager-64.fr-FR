@@ -12,7 +12,7 @@ exl-id: f855d3f9-cf3c-4883-b82b-d607250c3dae
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -32,17 +32,17 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 1. Accédez à `https://[server]:[port]/system/console/configMgr` sur AEM Forms s’exécutant sur OSGi ou
 
-   `https://[server]:[port]/lc/system/console/configMgr` sur AEM Forms exécuté sur JEE.
+   `https://[server]:[port]/lc/system/console/configMgr` sur AEM Forms s’exécutant sur JEE.
 
 1. Localisez et cliquez sur la boîte de configuration **Service d’authentification Apache Sling** pour l’ouvrir en mode d’édition.
 
-1. Selon que vous exécutez AEM Forms sur OSGi ou JEE, ajoutez ce qui suit dans le **champ** Conditions d’authentification requises : 
+1. Selon que vous exécutez AEM Forms sur OSGi ou JEE, ajoutez ce qui suit dans le **champ** Conditions d’authentification requises : 
 
    *  d’AEM Forms sur JEE
 
       * -/content/xfaforms
       * -/etc/clientlibs
-   * AEM Forms sur OSGi
+   * AEM Forms on OSGi
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
@@ -56,11 +56,11 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 ### Désactiver le mode Protégé {#disable-protected-mode}
 
-Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé par défaut. Laissez-le activé pour les environnements de production. Vous pouvez la désactiver pour un environnement de développement afin de prévisualiser les formulaires HTML5 dans Designer. Pour le désactiver, procédez comme suit :
+Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé par défaut. Laissez-le activé pour les environnements de production. Vous pouvez la désactiver pour un environnement de développement afin de prévisualiser les formulaires HTML5 dans Designer. Procédez comme suit pour le désactiver :
 
 1. Connectez-vous à la console Web AEM en tant qu’administrateur. 
 
-   * L’URL d’AEM Forms sur OSGi est `https://[server]:[port]/system/console/configMgr`
+   * L’URL d’AEM Forms on OSGi est `https://[server]:[port]/system/console/configMgr`
    * L’URL d’AEM Forms on JEE est `https://[server]:[port]/lc/system/console/configMgr`
 
 1. Ouvrez les **[!UICONTROL configurations de Mobile Forms]** à des fins d’édition.
@@ -68,12 +68,12 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
 
 ### Spécification des détails sur le serveur AEM Forms {#provide-details-of-aem-forms-server}
 
-1. Dans Designer, cliquez sur **Tools**> **Options**.
-1. Dans la fenêtre Options, sélectionnez **Options du serveur** , fournissez les informations suivantes, puis cliquez sur **OK**.
+1. Dans Designer, cliquez sur **Tools** > **Options**.
+1. Dans la fenêtre Options, sélectionnez la page **Options du serveur**, fournissez les détails suivants, puis cliquez sur **OK**.
 
-   * **URL de serveur** : URL du serveur de AEM Forms.
+   * **URL de serveur** : URL du serveur d’AEM Forms.
    * **Numéro de port HTTP** : port du serveur AEM. La valeur par défaut est 4502.
-   * **Contexte de l’aperçu du HTML :** Chemin d’accès du profil pour le rendu des formulaires XFA. Les profils par défaut suivants sont utilisés pour prévisualiser le formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
+   * **Contexte d’aperçu HTML :** chemin du profil pour le rendu des formulaires XFA. Les profils par défaut suivants sont utilisés pour afficher l’aperçu du formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
@@ -82,13 +82,13 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
       * `/aem/forms` (AEM Forms on OSGi)
       * `/lc/forms` (AEM Forms on JEE)
 
-   **Remarque :***assurez-vous que le serveur AEM Forms est en cours d’exécution. L’aperçu du HTML se connecte au serveur CRX à* générer *un aperçu.*
+   **Remarque :***assurez-vous que le serveur AEM Forms est en cours d’exécution. L’aperçu HTML se connecte au serveur CRX pour * générer *un aperçu.*
 
    ![Options d’AEM Forms Designer ](assets/server_options.png)
 
    Options d’AEM Forms Designer
 
-1. Pour prévisualiser un HTML, cliquez sur le bouton **Prévisualiser le HTML** .
+1. Pour prévisualiser un formulaire au format HTML, cliquez sur l’onglet **Aperçu HTML**.
 
    >[!NOTE]
    >
@@ -102,7 +102,7 @@ Le [mode Protégé](/help/forms/using/get-xdp-pdf-documents-aem.md) est activé 
 
 Designer vous permet de prévisualiser et de tester un formulaire avec des données XML d’exemple. Il est recommandé de tester fréquemment le formulaire avec des données d’exemple pour vous assurer qu’il est généré correctement.
 
-Si vous ne disposez pas de données d’exemple, Designer peut en fournir ou vous pouvez en créer vous-même (Voir [Génération automatique de données d’exemple pour prévisualiser le formulaire](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) et [Création de données d’exemple pour prévisualiser le formulaire](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Si vous ne disposez pas de données d’exemple, Designer peut en fournir ou vous pouvez en créer vous-même (Voir [Génération automatique de données d’exemple pour prévisualiser le formulaire](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) et [Création de données d’exemple pour prévisualiser le formulaire](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
 L’utilisation d’une source de données d’exemple pour tester votre formulaire est un bon moyen de s’assurer que les données et les champs correspondent et que les sous-formulaires se répètent comme prévu. Vous pouvez créer un formulaire à la disposition équilibrée, où chaque objet a la place nécessaire pour afficher les données fusionnées.
 

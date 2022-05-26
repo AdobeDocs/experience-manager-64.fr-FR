@@ -13,7 +13,7 @@ exl-id: 25a01630-47ec-4823-ad11-9a636697f3dc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Vous pouvez entrer des attributs spécifiques pour effectuer une recherche déta
    * Dans le champ Valeur, entrez une valeur appropriée pour l’attribut que vous avez sélectionné.
 
 1. Pour ajouter une ligne supplémentaire, sélectionnez Plus de filtres. Un autre ensemble de listes Attribut, Filtre et Valeur s’affiche, de même qu’une liste Condition.
-1. Sous Condition, sélectionnez ET ou OU. Répétez les étapes 1 à 3 si nécessaire pour affiner davantage votre recherche.
+1. Sous Condition, sélectionnez ET ou OU. Répétez les étapes 1 à 3 selon les besoins pour limiter davantage votre recherche.
 1. Pour ajouter ou supprimer des lignes, cliquez sur Plus de filtres ou Moins de filtres. Vous pouvez utiliser entre une et quatre lignes.
 1. Cliquez sur Rechercher. La page Instance du processus s’affiche, répertoriant les instances trouvées.
 

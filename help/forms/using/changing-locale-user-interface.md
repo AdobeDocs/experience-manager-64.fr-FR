@@ -13,21 +13,21 @@ exl-id: 9968f399-454b-4cb2-b6af-2c16428ca7b4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '557'
-ht-degree: 56%
+ht-degree: 95%
 
 ---
 
 # Modification des paramètres régionaux de l’interface utilisateur de l’espace de travail AEM Forms {#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-L’espace de travail AEM Forms fournit une prise en charge prête à l’emploi de l’anglais, du français, de l’allemand et du japonais. Il permet également de localiser l’interface utilisateur de l’espace de travail AEM Forms dans n’importe quelle autre langue.
+L’espace de travail AEM Forms fournit une prise en charge immédiate des langues suivantes : anglais, français, allemand et japonais. Cette application permet également de localiser l’interface utilisateur de l’espace de travail AEM Forms dans n’importe quelle autre langue.
 
-Pour localiser l’interface utilisateur de l’espace de travail AEM Forms dans la langue de votre choix :
+Pour localiser l’interface utilisateur de l’espace de travail AEM Forms dans la langue de votre choix, procédez comme suit :
 
 * Localisez le texte de l’espace de travail AEM Forms.
 * Localisez les catégories réduites, les files d’attente et les processus.
 * Localisez le sélecteur de date.
 
-Avant d’effectuer les étapes ci-dessus, veillez à suivre les étapes répertoriées dans [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+Avant d’exécuter les étapes ci-dessus, assurez vous de suivre les étapes indiquées dans la section [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 >[!NOTE]
 >
@@ -35,15 +35,15 @@ Avant d’effectuer les étapes ci-dessus, veillez à suivre les étapes répert
 
 ## Localisation du texte {#localizing-text}
 
-Effectuez les étapes suivantes pour ajouter la prise en charge d’une langue *Nouveau* et le code de paramètres régionaux du navigateur *nw*.
+Exécutez les étapes suivantes pour ajouter la prise en charge d’une *nouvelle* langue et le code de paramètres régionaux du navigateur *nw*.
 
 1. Connectez-vous à CRXDE Lite.
 
-   L’URL par défaut du CRXDE Lite est : `https://[server]:[port]/lc/crx/de/index.jsp`.
+   L’URL par défaut de CRXDE Lite est `https://[server]:[port]/lc/crx/de/index.jsp`.
 
-1. Accédez à l’emplacement `apps/ws/locales` et créer un dossier `nw.`
-1. Copiez le fichier `translation.json`à partir de l’emplacement `/apps/ws/locales/en-US` vers l’emplacement `/apps/ws/locales/nw`.
-1. Accédez à `/apps/ws/locales/nw` et ouvrir `translation.json` pour modification. Effectuez des modifications spécifiques aux paramètres régionaux dans le fichier translation.json.
+1. Naviguez jusqu’à l’emplacement `apps/ws/locales` et créez un dossier `nw.`.
+1. Copiez le fichier `translation.json` de l’emplacement `/apps/ws/locales/en-US` à l’emplacement `/apps/ws/locales/nw`.
+1. Naviguez jusqu’à `/apps/ws/locales/nw` et ouvrez le fichier `translation.json` pour le modifier. Effectuez des modifications spécifiques aux paramètres régionaux dans le fichier translation.json.
 
    Les exemples suivants contiennent le fichier translation.json pour les environnements locaux en anglais et en français de l’espace de travail AEM Forms.
 
@@ -51,7 +51,7 @@ Effectuez les étapes suivantes pour ajouter la prise en charge d’une langue *
 
 ## Localisation des catégories réduites, des files d’attente et des processus {#localizing-collapsed-categories-queues-and-processes}
 
-L’espace de travail AEM Forms utilise des images pour afficher les en-têtes des catégories, des files d’attente et des processus. Vous avez besoin d’un progiciel de développement pour localiser ces en-têtes. Pour plus d’informations sur la création d’un module de développement, voir [Création du code de l’espace de travail AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+L’espace de travail AEM Forms utilise des images pour afficher les en-têtes de catégories, des files d’attente et des processus. Vous avez besoin d’un progiciel de développement pour localiser ces en-têtes. Pour plus d’informations sur la création d’un package de développement, consultez la section [Générer le code de l’espace de travail AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 Dans les étapes suivantes, on considère que les nouveaux fichiers image localisés sont *Categories_nw.png*, *Queue_nw.png* et *Processes_nw.png*. La largeur recommandée des images est de 19 px.
 
@@ -59,7 +59,7 @@ Dans les étapes suivantes, on considère que les nouveaux fichiers image locali
 >
 >Pour trouver le code de paramètres régionaux de la langue du navigateur de votre navigateur. Ouvrez `https://[server]:[port]/lc/libs/ws/Locale.html`.
 
-![collapse_panels_image](assets/collapsing_panels_image.png)
+![collapsing_panels_image](assets/collapsing_panels_image.png)
 
 Effectuez les étapes suivantes pour localiser les images :
 
@@ -80,9 +80,9 @@ Effectuez les étapes suivantes pour localiser les images :
    }
    ```
 
-1. Effectuez toutes les modifications sémantiques répertoriées dans la variable [Personnalisation de Workspace](/help/forms/using/introduction-customizing-html-workspace.md) article.
+1. Effectuez toutes les modifications sémantiques répertoriées dans l’article [Personnaliser lʼespace de travail](/help/forms/using/introduction-customizing-html-workspace.md).
 1. Accédez au *js/runtime/utility* et ouvrez le fichier* usersession.js* pour le modifier.
-1. Recherchez le code figurant dans le bloc de code original et ajoutez la condition *lang !== &#39;nw&#39;* à l’instruction if :
+1. Recherchez le code figurant dans le bloc de code original et ajoutez la condition *lang !== ‘nw’* à l’instruction « if » :
 
    ```
    // Orignal code
@@ -110,18 +110,18 @@ Effectuez les étapes suivantes pour localiser les images :
 
 ## Localisation du sélecteur de date {#localizing-date-picker}
 
-Vous avez besoin d’un package de développement pour localiser l’API *datepicker*. Pour plus d’informations sur la création d’un module de développement, voir [Création du code de l’espace de travail AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
+Vous avez besoin d’un package de développement pour localiser l’API *datepicker*. Pour plus d’informations sur la création d’un package de développement, consultez la section [Générer le code de lʼespace de travail AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 1. Téléchargez et ouvrez le [progiciel d’interface utilisateur jQuery](https://jqueryui.com/download/all/), naviguez jusqu’à *&lt;progiciel d’interface utilisateur jQuery extrait>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copiez le fichier jquery.ui.datepicker-nw.js du nouveau code de paramètres régionaux dans apps/ws/js/libs/jqueryui et apportez les modifications propres aux paramètres locaux dans le fichier.
-1. Accédez à `apps/ws/js` et ouvrez le `jquery.ui.datepicker-nw.js` pour modification.
-1. Dans le fichier main.js , créez un alias pour `jquery.ui.datepicker-nw.js.` Le code permettant de créer un alias pour la variable `jquery.ui.datepicker-nw.js` est :
+1. Naviguez jusqu’à `apps/ws/js` et ouvrez le fichier `jquery.ui.datepicker-nw.js` pour le modifier.
+1. Dans le fichier main.js, créez un alias pour `jquery.ui.datepicker-nw.js.` Le code permettant de créer un alias pour le fichier `jquery.ui.datepicker-nw.js` est :
 
    ```
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
-1. Utiliser un alias `jqueryuidatepickernw` pour inclure la variable `jquery.ui.datepicker-nw.js` dans tous les fichiers qui utilisent datepicker. L’API datepicker est utilisée dans les fichiers suivants :
+1. Utilisez l’alias `jqueryuidatepickernw` pour ajouter le fichier `jquery.ui.datepicker-nw.js` à tous les fichiers utilisant datepicker. L’API datepicker est utilisée dans les fichiers suivants :
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`

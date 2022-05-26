@@ -60,7 +60,7 @@ L’action Courrier électronique permet à un auteur d’envoyer automatiquemen
 
    Vous pouvez également spécifier des espaces réservés aux variables dans les champs. Dans ce cas, les valeurs des champs sont traitées lorsque le formulaire est envoyé par un utilisateur final. Pour plus d’informations, voir [Utilisation des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un courrier électronique](/help/forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
 
-   Cochez la case Inclure les pièces jointes si le formulaire contient des pièces jointes et si vous souhaitez joindre ces fichiers au courrier électronique.
+   Cochez la case Inclure les pièces jointes si le formulaire contient des pièces jointes que vous souhaitez joindre à l’e-mail.
 
    >[!NOTE]
    >

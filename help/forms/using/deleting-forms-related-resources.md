@@ -13,7 +13,7 @@ exl-id: 94a66d83-b359-4be6-b668-4b4ba024b1e7
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Si vous supprimez une ressource de l’instance Auteur, elle est également supp
 
 ## Suppression d’un formulaire {#how-to-delete-a-form}
 
-1. Connectez-vous à l’interface utilisateur d’AEM Forms en accédant à `https://[hostname]:[portport]/aem/forms.html.`
+1. Connectez-vous à l’interface utilisateur d’AEM Forms en accédant à `https://[hostname]:[portport]/aem/forms.html.`.
 1. Recherchez et sélectionnez le formulaire que vous souhaitez supprimer. Cliquez sur Supprimer ![aem6forms_delete2](assets/aem6forms_delete2.png) dans la barre d’outils et confirmez l’opération de suppression.
 
    >[!NOTE]

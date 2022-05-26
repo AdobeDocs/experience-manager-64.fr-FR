@@ -12,7 +12,7 @@ exl-id: bc8c2080-eb67-4bd0-8829-fd6ddbf8d4a9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Lorsque vous démarrez l’application AEM Forms, vous devez d’abord indiquer 
 
 ## Démarrage de l’application {#to-start-the-app}
 
-1. Appuyez sur l’icône de l’application AEM Forms sur votre appareil mobile.
+1. Appuyez sur l’icône de l’application AEM Forms de votre périphérique mobile.
 1. Pour vous connecter à l’application, saisissez un nom d’utilisateur, un mot de passe et l’URL du serveur AEM Forms.
 
    >[!NOTE]

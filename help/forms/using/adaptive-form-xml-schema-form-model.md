@@ -13,7 +13,7 @@ exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -170,13 +170,12 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
 >
 >* la mise en majuscule du premier caractère du nom de l’élément ;
 >* l’insertion d’un espace entre la casse mixte.
-
 >
->Par exemple, si vous ajoutez la variable `userFirstName` élément de schéma, la légende générée dans le formulaire adaptatif est `User First Name`.
+>Par exemple, si vous ajoutez l’élément de schéma `userFirstName`, la légende générée dans le formulaire adaptatif est `User First Name`.
 
 ## Valeurs possibles de limite pour un composant de formulaire adaptatif {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pour limiter les valeurs acceptables pour un composant de formulaire adaptatif :
+Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pour limiter les valeurs possibles pour un composant de formulaire adaptatif :
 
 <table> 
  <tbody> 
@@ -296,11 +295,11 @@ Lorsque vous double-cliquez sur un élément dans l’outil de recherche de cont
 
 ![Champ bindref d’un élément de schéma XML](assets/dblclick.png)
 
-Le bindRef</code> affiche l’association entre un élément de l’arborescence et un élément ou un attribut d’un schéma.
+Le champ bindRef</code> affiche l’association entre un élément de l’arborescence et un élément ou un attribut d’un schéma.
 
 >[!NOTE]
 >
->Les attributs comportent une `@` symbole de leur `bindRef`pour les distinguer des éléments. Par exemple, `/config/projectDetails/@duration`.
+>Les attributs sont dotés du symbole `@` dans la valeur `bindRef` pour les différencier des éléments. Par exemple, `/config/projectDetails/@duration`.
 
 **Pourquoi est-ce que je ne parviens pas à faire glisser des éléments individuels d’un sous-formulaire (structure générée à partir de n’importe quel type complexe) pour les sous-formulaires répétables (les valeurs minOccurs ou maxOccurs sont supérieures à 1) ?**
 

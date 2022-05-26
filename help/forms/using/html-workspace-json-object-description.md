@@ -12,7 +12,7 @@ exl-id: 8c7e1ee2-0f7f-427e-aca2-d4bf523fd7f1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2109'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>classOfTask</td> 
    <td>F</td> 
-   <td>La classe de tâche est « LC8 » lorsque la tâche est lc8 else «  standard ».<br /> </td> 
+   <td>La classe de tâche est « LC8 » lorsque la tâche est lc8 else « standard ».<br /> </td> 
   </tr>
   <tr>
    <td>completeTime<br /> </td> 
@@ -442,7 +442,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>dateRanges<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Contient des objets de tableau des plannings d’absences du bureau d’un utilisateur. Dans chaque objet de planning, le champ startDate contient la date de début du planning et le champ endDate contient la date de fin du planning. Si endDate est nul dans le planning, cela implique que l’utilisateur n’a pas planifié la date de fin du planning d’absence du bureau.<br type="_moz" /> </td> 
+   <td>Contient des objets de tableau des plannings d’absences du bureau d’un utilisateur. Dans chaque objet de planning, le champ startDate contient la date de début du planning et le champ endDate contient la date de fin du planning. Si endDate est null dans le planning, cela implique que l’utilisateur n’a pas planifié la date de fin du planning d’absences du bureau.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td> 
@@ -462,7 +462,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Contient un tableau d’objets pour la désignation d’absence du bureau propre à un processus. Dans chaque objet de désignation spécifique au processus, processName contient le nom du processus, isNotDesignated est true si aucun utilisateur n’est affecté pour le processus correspondant et userDesignated est null si aucun utilisateur n’a affecté d’autres détails de l’utilisateur affecté au processus correspondant.<br type="_moz" /> </td> 
+   <td>Contient un tableau d’objets pour la désignation d’absence du bureau propre à un processus. Dans chaque objet de désignation propre à un processus, processName contient le nom du processus, isNotDesignated est défini sur true si aucun utilisateur n’est affecté au processus correspondant, et userDesignated est défini sur null si aucun utilisateur n’a affecté de détails else de l’utilisateur affecté au processus correspondant.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processus<br type="_moz" /> </td> 
@@ -541,7 +541,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>processVariables<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Tableau d’objets de variables de processus. Chaque objet de variable de processus contient le nom qui est le nom de la variable de processus, la valeur qui est la valeur de la variable de processus et le type qui est le type de variable de processus.<br type="_moz" /> </td> 
+   <td>Tableau d’objets de variables de processus. Chaque objet de variable de processus contient les paramètres Nom (nom de la variable de processus), Valeur (valeur de variable de processus) et Type (type de variable de processus).<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>tasklist<br type="_moz" /> </td> 
@@ -730,7 +730,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>autorisations ;<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Autorisations associées à une pièce jointe. Le champ allowRead sert à l’autorisation de lecture, allowWrite à l’autorisation d’écriture, allowDelete à l’autorisation de suppression.<br type="_moz" /> </td> 
+   <td>Autorisations associées à une pièce jointe. Le champ allowRead représente l’autorisation de lire, allowWrite l’autorisation d’écrire et allowDelete l’autorisation de supprimer.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>size<br type="_moz" /> ; </td> 
@@ -745,7 +745,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>type<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Le type est une pièce jointe pour les fichiers et le type est une note pour les notes.<br type="_moz" /> </td> 
+   <td>Le type est « attachment » pour les fichiers et « note » pour les notes.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>formattedCreationDate<br type="_moz" /> </td> 

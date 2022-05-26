@@ -12,7 +12,7 @@ exl-id: 42d8472d-0eab-4cf9-a7c3-bf2775ee6bec
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Pour plus d’informations sur la description de l’objet JSON, voir [cet](/hel
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Pour afficher des informations supplémentaires pour une tâche, les paires clé-valeur correspondantes doivent être ajoutées dans le bloc de tâche de `translation.json`.
 
-   Par exemple, changer `/apps/ws/locales/en-US/translation.json` pour l’anglais :
+   Par exemple, modifiez le fichier `/apps/ws/locales/en-US/translation.json` pour l’anglais :
 
    ```
    "task" : {
@@ -138,14 +138,14 @@ Pour plus d’informations sur la description de l’objet JSON, voir [cet](/hel
 
 Enfin, vous devez inclure une entrée dans le package de développement pour chaque propriété que vous souhaitez ajouter à la tâche. Pour créer une référence vers Génération du code de l’espace de travail AEM Forms.
 
-1. Copier `task.html`:
+1. Copier :`task.html`
 
    * de: `/libs/ws/js/runtime/templates/`
    * vers: `/apps/ws/js/runtime/templates/`
 
-1. Ajoutez les nouvelles informations à `/apps/ws/js/runtime/templates/task.html`.
+1. Ajoutez les nouvelles informations au fichier `/apps/ws/js/runtime/templates/task.html`.
 
-   Par exemple, ajoutez sous `div class="taskProperties"`:
+   Par exemple, ajoutez sous `div class="taskProperties"` :
 
    ```
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>

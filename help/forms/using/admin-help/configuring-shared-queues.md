@@ -13,13 +13,13 @@ exl-id: 40890db3-240c-4021-967a-b6b3eb1d4b7c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Configuration des files d’attente partagées{#configuring-shared-queues}
 
-Les files d’attente partagées vous permettent de configurer et de gérer efficacement les files d’attente d’utilisateur. Une file d’attente d’utilisateur correspond à l’ensemble des tâches affectées à un utilisateur. Voir [Listes Tâches](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) pour plus d’informations. Vous avez la possibilité d’affecter, de désaffecter et de réaffecter les files d’attente d’utilisateur en fonction des besoins de votre société. Les files d’attente partagées peuvent être gérées de deux manières différentes :
+Les files d’attente partagées vous permettent de configurer et de gérer efficacement les files d’attente d’utilisateur. Une file d’attente d’utilisateur correspond à l’ensemble des tâches affectées à un utilisateur. Voir [Listes Tâches](https://help.adobe.com/fr_FR/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) pour plus d’informations. Vous avez la possibilité d’affecter, de désaffecter et de réaffecter les files d’attente d’utilisateur en fonction des besoins de votre société. Les files d’attente partagées peuvent être gérées de deux manières différentes :
 
 **Gérer l’accès à un utilisateur**
 
@@ -65,7 +65,7 @@ Une fois affectées, ces tâches peuvent être exécutées par l’utilisateur �
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.
 
 ### Accorder l’accès à une file d’attente d’utilisateur sélectionnée {#granting-access-to-a-selected-user-queue}
 

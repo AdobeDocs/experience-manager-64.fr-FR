@@ -13,7 +13,7 @@ exl-id: b5681fe5-69ba-4fc0-95e3-6ffdcdd95382
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Lorsque vous êtes connecté avec le serveur AEM Forms, votre application est s
 
 **Synchronisation manuelle de l’application**
 
-Appuyez sur le bouton Synchroniser . ![sync-app](assets/sync-app.png) dans le coin inférieur droit de l’écran d’accueil.
+Appuyez sur le bouton Synchroniser ![sync-app](assets/sync-app.png) dans le coin inférieur droit de l’écran d’accueil.
 
 **Modification de la fréquence de synchronisation**
 

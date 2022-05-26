@@ -13,10 +13,10 @@ exl-id: ad14ff27-964f-481f-a8ef-052d9cfb7734
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 # Nombre maximal de curseurs ouverts dans une base de données Oracle {#oracle-database-maximum-open-cursors-threshold}
 
-Pour configurer le nombre maximal de curseurs ouverts dans Oracle, il se peut que vous ayez à ajuster la valeur en fonction de votre application. Avec une charge modérée, le nombre moyen de curseurs ouverts était de 2 700. Nous vous conseillons de démarrer avec une limite supérieure de 3 000. Pour plus d’informations, voir [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
+Pour configurer le nombre maximal de curseurs ouverts dans Oracle, il se peut que vous ayez à ajuster la valeur en fonction de votre application. Avec une charge modérée, le nombre moyen de curseurs ouverts était de 2 700. Nous vous conseillons de démarrer avec une limite supérieure de 3 000. Pour plus d’informations, rendez-vous sur [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).

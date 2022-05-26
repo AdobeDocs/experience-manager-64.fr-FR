@@ -12,7 +12,7 @@ exl-id: ce6fa21c-aa83-4c5e-be7f-ad4f6e0811f8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2738'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -40,12 +40,12 @@ Les panneaux de répétition sont des instances d’un panneau qui sont ajoutée
 
    * Pour ajouter une instance du panneau : `panel1.instanceManager.addInstance()`
    * Pour obtenir un index de répétition du panneau : `panel1.instanceIndex`
-   * Pour obtenir le gestionnaire d&#39;instance d&#39;un panneau : `_panel1 or panel1.instanceManager`
+   * Pour obtenir le gestionnaire d’instance d’un panneau : `_panel1 or panel1.instanceManager`
    * Pour supprimer une instance du panneau : `_panel1.removeInstance(panel1.instanceIndex)`
 
 ## Types d’expression {#expression-types}
 
-Dans les formulaires adaptatifs, vous pouvez écrire des expressions pour ajouter des comportements tels que des champs et des panneaux dynamiques d’affichage/masquage. Vous pouvez également écrire des expressions pour ajouter des champs calculés, afficher les champs en lecture seule, ajouter une logique de validation, et bien d’autres fonctionnalités. Les formulaires adaptatifs prennent en charge les expressions suivantes :
+Dans les formulaires adaptatifs, vous pouvez écrire des expressions afin d’ajouter des comportements tels que l’affichage et le masquage dynamique des champs et panneaux. Vous pouvez également écrire des expressions pour ajouter des champs calculés, afficher les champs en lecture seule, ajouter une logique de validation, et bien d’autres fonctionnalités. Les formulaires adaptatifs prennent en charge les expressions suivantes : 
 
 * **[Expressions d’accès](#access-expression-enablement-expression)** : pour activer/désactiver un champ.
 * **[Expressions de calcul](/help/forms/using/adaptive-form-expressions.md#p-calculate-expression-p)** : pour calculer automatiquement la valeur d’un champ.
@@ -72,7 +72,7 @@ Vous pouvez utiliser l’expression d’accès pour activer ou désactiver un ch
 
 ### Expression de calcul {#calculate-expression}
 
-L’expression de calcul est utilisée pour calculer automatiquement la valeur d’un champ à l’aide d’une expression. En règle générale, une telle expression utilise une propriété de valeur d’autres champs. Par exemple, `field2.value + field3.value`. Dès lors que la valeur de `field2` ou `field3` est modifiée, l’expression est redéclenchée et la valeur est recalculée.
+L’expression de calcul est utilisée pour calculer automatiquement la valeur d’un champ à l’aide d’une expression. En règle générale, une telle expression utilise une propriété de valeur d’autres champs. Par exemple, `field2.value + field3.value`. Dès lors que la valeur de `field2`ou `field3`est modifiée, l’expression est redéclenchée et la valeur est recalculée.
 
 **Application pour** : champs
 
@@ -97,7 +97,7 @@ L’expression de clic gère les actions effectuées sur l’événement clic d�
 Le script d’initialisation est déclenché lorsqu’un formulaire adaptatif est initialisé. En fonction du scénario, le script d’initialisation fonctionne d’une des manières suivantes :
 
 * Lorsqu’un formulaire adaptatif est rendu sans préremplissage de données, le script d’initialisation s’exécute après l’initialisation du formulaire.
-* Lorsqu’un formulaire adaptatif est rendu avec un préremplissage de données, le script est exécuté une fois l’opération de préremplissage terminée.
+* Lorsqu’un formulaire adaptatif est rendu sans préremplissage de données, le script est exécuté après l’opération de préremplissage.
 * Lorsqu’une revalidation d’un formulaire adaptatif est déclenchée du côté du serveur, le script d’initialisation est exécuté.
 
 **Application pour :** champs et panneau
@@ -219,7 +219,7 @@ Le format d’affichage peut être utilisé pour afficher les données dans diff
 
 ### GuideBridge - API et événements {#guidebridge-apis-and-events}
 
-GuideBridge se compose d’un ensemble d’API qui peuvent être utilisées en interaction avec les formulaires adaptatifs dans un modèle de mémoire d’un navigateur. Pour en savoir plus sur les API GuideBridge, les méthodes de classe, les événements exposés, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/).
+GuideBridge se compose d’un ensemble d’API qui peuvent être utilisées en interaction avec les formulaires adaptatifs dans un modèle de mémoire d’un navigateur. Pour en savoir plus sur les API Guide Bridge, les méthodes de classe, les événements exposés, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >
@@ -229,7 +229,7 @@ GuideBridge se compose d’un ensemble d’API qui peuvent être utilisées en i
 
 * Pour réinitialiser les champs de formulaire, vous pouvez déclencher l’API `guideBridge.reset()` dans l’expression de clic d’un bouton. De même, il existe une API d’envoi qui peut être appelée expression de clic `guideBridge.submit()`**.**
 
-* Vous pouvez utiliser l’API `setFocus()` pour définir la cible d’action sur différents champs et panneaux (car la cible d’action du panneau est définie sur le premier champ automatiquement). Le paramètre `setFocus()` offre toute une série d’options pour naviguer sur différents panneaux, passer à la traversée précédente/suivante, régler la cible d’action sur un champ en particulier, etc. Par exemple, pour accéder au panneau suivant, utilisez :`guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
+* Vous pouvez utiliser l’API `setFocus()` pour définir la cible d’action sur différents champs et panneaux (car la cible d’action du panneau est définie sur le premier champ automatiquement). Le paramètre `setFocus()` offre toute une série d’options pour naviguer sur différents panneaux, passer à la traversée précédente/suivante, régler la cible d’action sur un champ en particulier, etc. Par exemple, pour accéder au panneau suivant, utilisez : `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
 * Pour valider un formulaire adaptatif ou ses panneaux spécifiques, utilisez `guideBridge.validate(errorList, somExpression).`
 
@@ -265,7 +265,7 @@ Pour utiliser GuideBridge après l’initialisation du formulaire (l’événeme
 
 #### Evénements de GuideBridge {#guidebridge-events}
 
-GuideBridge fournit également certains événements pour les scripts externes de la page d’hébergement. Les scripts externes peuvent écouter ces événements et effectuer diverses opérations. Par exemple, lorsque le nom d’utilisateur d’un formulaire est modifié, le nom affiché dans l’en-tête de la page est également modifié. Pour plus d’informations sur ces événements, voir [Référence de l’API de la bibliothèque JavaScript pour les formulaires adaptatifs](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge fournit également certains événements pour les scripts externes de la page d’hébergement. Les scripts externes peuvent écouter ces événements et effectuer diverses opérations. Par exemple, lorsque le nom d’utilisateur d’un formulaire est modifié, le nom affiché dans l’en-tête de la page est également modifié. Pour plus d’informations sur ces événements, consultez le [guide de référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 Utilisez le code suivant pour enregistrer des gestionnaires :
 
@@ -279,7 +279,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 ### Création de motifs personnalisés pour un champ {#creating-custom-patterns-for-a-field}
 
-Comme mentionné ci-dessus, les formulaires adaptatifs permettent à l’auteur de fournir des modèles destinés aux formats d’affichage ou de validation. En plus d’utiliser des modèles prêts à l’emploi, vous pouvez définir un modèle personnalisé réutilisable pour un composant de format adaptatif. Par exemple, vous pouvez définir un champ de texte ou un champ numérique. Une fois ces modèles définis, vous pouvez les utiliser dans tous les formulaires pour un type de composant spécifique. Par exemple, vous pouvez créer un modèle personnalisé pour un champ de texte et l’utiliser dans les champs de texte de leurs formulaires adaptatifs. Vous pouvez sélectionner le modèle personnalisé en accédant à la section des modèles dans la boîte de dialogue Modifier d’un composant. Pour plus d’informations sur la définition ou le format de modèle, voir [Prise en charge des clauses d’image pour les formulaires HTML5](/help/forms/using/picture-clause-support.md).
+Comme mentionné ci-dessus, les formulaires adaptatifs permettent à l’auteur de fournir des modèles destinés aux formats d’affichage ou de validation. En plus d’utiliser des modèles prêts à l’emploi, vous pouvez définir un modèle personnalisé réutilisable pour un composant de format adaptatif. Par exemple, vous pouvez définir un champ de texte ou un champ numérique. Une fois ces modèles définis, vous pouvez les utiliser dans tous les formulaires pour un type de composant spécifique. Par exemple, vous pouvez créer un modèle personnalisé pour un champ de texte et l’utiliser pour les champs de texte des formulaires adaptatifs. Vous pouvez sélectionner le modèle personnalisé en accédant à la section des modèles dans la boîte de dialogue Modifier d’un composant. Pour plus d’informations sur la définition ou le format de modèle, voir [Prise en charge des clauses d’image pour les formulaires HTML5](/help/forms/using/picture-clause-support.md).
 
 Exécutez les étapes suivantes pour créer un modèle personnalisé destiné à un type de champ spécifique et pour le réutiliser avec d’autres champs du même type :
 

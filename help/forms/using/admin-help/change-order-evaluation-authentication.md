@@ -13,7 +13,7 @@ exl-id: cac16c50-a85d-4e40-a590-8a0a52be893c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 89%
 Si vous avez configuré plusieurs fournisseurs d’authentification, vous pouvez modifier l’ordre dans lequel AEM forms les évalue pour authentification. L’ordre des fournisseurs d’authentification répertoriés dans le fichier config.xml détermine l’ordre d’évaluation de l’authentification.
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration.
-1. Pour exporter la configuration en cours dans un fichier, cliquez sur Exporter, puis enregistrez le fichier de configuration à un autre emplacement.
+1. Pour exporter le paramètre de configuration en cours dans un fichier, cliquez sur Exporter, puis enregistrez le fichier de configuration dans un autre emplacement.
 1. Recherchez le nœud ci-après dans le fichier :
 
    ```as3
@@ -43,7 +43,7 @@ Si vous avez configuré plusieurs fournisseurs d’authentification, vous pouvez
     </node>
    ```
 
-   Dans `<entry key="order" value="3" />`, modifiez la valeur de chaque noeud pour définir l’ordre de l’évaluation de l’authentification.
+   Dans `<entry key="order" value="3" />`, modifiez la valeur de chaque nœud pour définir l’ordre de l’évaluation de l’authentification.
 
-1. Pour importer le fichier mis à jour, dans User Management, cliquez sur Configuration > Importer et exporter des fichiers de configuration.
-1. Cliquez sur Parcourir pour rechercher le fichier, sur Importer, puis sur OK.
+1. Pour importer le fichier mis à jour, dans User Management, cliquez sur Configuration > Importer et exporter des fichiers de configuration.
+1. Cliquez sur Parcourir pour trouver le fichier, puis sur Importer et enfin sur OK.

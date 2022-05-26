@@ -19,7 +19,7 @@ ht-degree: 80%
 
 # Vérification des droits d’utilisation d’un fichier PDF {#review-the-usage-rights-of-a-pdf-file}
 
-Vous pouvez télécharger un fichier PDF dans l’application Web des extensions d&#39;Acrobat Reader DC pour voir s’il contient des extensions Reader, si des droits d’utilisation lui ont été appliqués et quelles sont leurs dates d’expiration.
+Vous pouvez télécharger un fichier PDF dans l’application Web des extensions d’Acrobat Reader DC pour voir s’il contient des extensions Reader, si des droits d’utilisation lui ont été appliqués et quelles sont leurs dates d’expiration.
 
 1. Connectez-vous à l’application web des extensions Acrobat Reader DC à l’adresse http://localhost :*[port]*/ReaderExtensions (où *[port]* est le numéro de port de votre serveur d’applications).
 1. Cliquez sur Parcourir pour télécharger le fichier PDF, puis sur Info. Les informations s’affichent sous le nom de fichier.

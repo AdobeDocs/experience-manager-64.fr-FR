@@ -13,13 +13,13 @@ exl-id: 8787ffa9-9ddc-439d-9934-8913d1ed459e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Configuration des paramètres d’absence du bureau {#configuring-out-of-office-settings}
 
-La fonction d’absence du bureau permet aux utilisateurs ou aux administrateurs de spécifier les périodes pendant lesquelles un utilisateur est absent du bureau et n’est pas en mesure d’exécuter les tâches qui lui ont été affectées par AEM forms. Lorsqu’un utilisateur est absent du bureau, ses tâches sont attribuées à un ou plusieurs autres utilisateurs désignés. Les utilisateurs peuvent modifier leurs paramètres d’absence du bureau dans Workspace ou les administrateurs peuvent modifier les paramètres à la place d’un utilisateur dans le processus des formulaires.
+La fonction d’absence du bureau permet aux utilisateurs ou aux administrateurs de spécifier les périodes pendant lesquelles un utilisateur est absent du bureau et n’est pas en mesure d’exécuter les tâches qui lui ont été affectées par AEM forms. Lorsqu’un utilisateur est absent du bureau, ses tâches sont attribuées à un ou plusieurs autres utilisateurs désignés. Les utilisateurs peuvent modifier leurs paramètres d’absence du bureau dans l’espace de travail ou les administrateurs peuvent également modifier les paramètres à la place d’un utilisateur dans Forms Workflow.
 
 Lors de la création d’un processus, l’utilisateur de Workbench peut spécifier si une tâche peut être redirigée en fonction de paramètres d’absence du bureau.
 

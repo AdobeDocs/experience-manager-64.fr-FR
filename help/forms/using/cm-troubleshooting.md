@@ -1,5 +1,5 @@
 ---
-title: '"Correspondence Management : dépannage"'
+title: '"Correspondence Management : dépannage"'
 seo-title: Correspondence Management Troubleshooting
 description: Dépannage de Correspondence Management
 seo-description: Correspondence Management Troubleshooting
@@ -13,11 +13,11 @@ exl-id: 82a35d81-13d0-435f-875e-6fd0a6d574d5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Correspondence Management : dépannage {#correspondence-management-troubleshooting}
+# Correspondence Management : dépannage {#correspondence-management-troubleshooting}
 
 ## Erreurs lors de l’enregistrement d’une lettre {#errors-when-saving-a-letter}
 
@@ -50,7 +50,7 @@ Lors de la prévisualisation d’une lettre, l’erreur « Erreur lors du charg
 Réinitialisez le cache de lettre sur l’instance de publication en suivant les étapes ci-après, puis réessayez d’afficher la lettre :
 
 1. Accédez à **`https://[server]:[port]/[contextPath]/system/console/configMgr`** et connectez-vous en tant qu’administrateur.
-1. Sélectionner **Configurations de Correspondence Management**.
+1. Sélectionnez **Configurations de Correspondence Management**.
 1. Dans **Configurations de Correspondence Management**, désactivez l’option **Activer le cache de lettre**, puis cliquez sur **Enregistrer**.
-1. Activer **Enable Letter Cache** puis cliquez sur **Enregistrer**.
+1. Activez l’option **Activer le cache de lettre**, puis cliquez sur **Enregistrer**.
 1. Réessayez d’afficher la lettre.

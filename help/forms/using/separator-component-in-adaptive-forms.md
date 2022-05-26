@@ -24,7 +24,7 @@ Vous pouvez utiliser le composant séparateur pour isoler visuellement les panne
 * **Épaisseur :** indique l’épaisseur en pixels du composant séparateur.
 * **Colspan :** spécifie le nombre de colonnes auquel s’applique un composant de séparateur.
 * **Classe CSS :** spécifie la classe CSS personnalisée pour le composant séparateur
-* **Styles en ligne :** avec AEM Forms, vous pouvez désormais appliquer des styles CSS en ligne à chaque composant de formulaire adaptatif et prévisualiser les modifications en temps réel.
+* **Styles en ligne :** avec AEM Forms, vous pouvez désormais appliquer des styles CSS en ligne à chaque composant de formulaire adaptatif et prévisualiser les modifications en temps réel.
 
 Pour définir les propriétés d’un composant séparateur :
 

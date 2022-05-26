@@ -14,7 +14,7 @@ exl-id: 9f0e7284-ac11-406d-8d8c-7682f1d66fff
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 87%
 
 ## À propos des dictionnaires de paramètres régionaux {#about-locale-dictionaries}
 
-La localisation des formulaires adaptatifs repose sur deux types de dictionnaires de paramètres régionaux : 
+La localisation des formulaires adaptatifs repose sur deux types de dictionnaires de paramètres régionaux : 
 
-**Dictionnaire spécifique au formulaire** Contient les chaînes utilisées dans les formulaires adaptatifs. Par exemple, étiquettes, noms de champs, messages d’erreur, descriptions d’aide, etc. Il est géré sous la forme d’un ensemble de fichiers XLIFF pour chaque paramètre régional et vous pouvez y accéder à l’adresse https://`<host>`:`<port>`/libs/cq/i18n/translator.html.
+**Dictionnaire spécifique au formulaire** : il contient des chaînes utilisées dans des formulaires adaptatifs. Par exemple, étiquettes, noms de champs, messages d’erreur, descriptions d’aide, etc. Il est géré sous la forme d’un ensemble de fichiers XLIFF pour chaque paramètre régional et vous pouvez y accéder à l’adresse https://`<host>`:`<port>`/libs/cq/i18n/translator.html.
 
 **Dictionnaires globaux** : la bibliothèque client AEM comporte deux dictionnaires globaux, gérés en tant qu’objets JSON. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, etc. Vous pouvez trouver ces dictionnaires dans CRXDe Lite, à l’adresse /libs/fd/xfaforms/clientlibs/I18N. Ces emplacements contiennent des dossiers distincts pour chaque jeu de paramètres régionaux. Étant donné que les dictionnaires globaux ne sont généralement pas mis à jour fréquemment, conserver des fichiers JavaScript distincts pour chaque jeu de paramètres régionaux permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur. 
 
@@ -44,7 +44,7 @@ Lorsqu’un formulaire adaptatif est rendu, il identifie les paramètres région
 
 Une fois que le paramètre régional est identifié, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique aux formulaires correspondant au paramètre régional requis n’est pas trouvé, il utilise le dictionnaire anglais (en). 
 
-S’il n’existe pas de bibliothèque client pour les paramètres régionaux nécessaires, il cherche une bibliothèque cliente correspondant au code de langue présent dans les paramètres régionaux. Par exemple, si le paramètre régional requis est `en_ZA`  ( (anglais Afrique du sud) et qu’il n’existe pas de bibliothèque client correspondant à `en_ZA`, le formulaire adaptatif utilise la bibliothèque client correspondant à la langue `en` (anglais), si elle existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant au paramètre régional `en`.
+S’il n’existe pas de bibliothèque client pour les paramètres régionaux nécessaires, il cherche une bibliothèque cliente correspondant au code de langue présent dans les paramètres régionaux. Par exemple, si le paramètre régional requis est `en_ZA` (anglais Afrique du sud) et qu’il n’existe pas de bibliothèque client correspondant à `en_ZA`, le formulaire adaptatif utilise la bibliothèque client correspondant à la langue `en` (anglais), si elle existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant au paramètre régional `en`.
 
 ## Ajoutez la localisation pour les paramètres régionaux non pris en charge {#add-localization-support-for-non-supported-locales}
 

@@ -13,7 +13,7 @@ exl-id: f38057d7-b500-448a-8664-a45374d4cfea
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ AEM Forms Digital Signatures peut utiliser les informations d’identification s
 
 1. Sélectionnez l’une de ces options et indiquez le chemin :
 
-   * **Certificat**  : (non requis si vous utilisez SHA1) cliquez sur Parcourir et localisez le chemin d’accès à la clé publique correspondant aux informations d’identification utilisées.
+   * **Certificat** : (non requis si vous utilisez SHA1) cliquez sur Parcourir et localisez le chemin d’accès à la clé publique correspondant aux informations d’identification utilisées.
    * **Certificat SHA1 :** (non requis si vous utilisez un certificat physique) saisissez la valeur SHA1 (empreinte numérique) du fichier de clé publique (.cer) pour les informations d’identification utilisées. Veillez à ce que la valeur SHA1 ne contienne aucun espace.
 
 1. Dans la zone Mot de passe, saisissez le mot de passe requis pour accéder à la clé HSM correspondant aux informations d’emplacement données, puis cliquez sur Enregistrer.
@@ -99,7 +99,7 @@ Réinitialisez les connexions ouvertes à un périphérique HSM après toute int
 
 ## Configuration de la prise en charge HSM à distance {#configure-remote-hsm-support}
 
-AEM forms utilise un mécanisme IPC/RPC basé sur les services Web. Ce mécanisme permet à AEM Forms d’utiliser un HSM installé sur un ordinateur distant. Pour utiliser cette fonctionnalité, installez le service Web sur l’ordinateur distant où HSM est installé. Pour plus d’informations, consultez [Configuration de la prise en charge HSM pour AEM Forms ES à l’aide du JDK Sun sur une plateforme Windows 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html).
+AEM forms utilise un mécanisme IPC/RPC basé sur les services Web. Ce mécanisme permet à AEM Forms d’utiliser un HSM installé sur un ordinateur distant. Pour utiliser cette fonctionnalité, installez le service Web sur l’ordinateur distant où HSM est installé. Pour plus d’informations, consultez [Configuration de la prise en charge HSM pour AEM Forms ES à l’aide du JDK Sun sur une plateforme Windows 64 bits](https://helpx.adobe.com/fr/livecycle/kb/configuring-hsm-support-using-sun.html).
 
 Ce mécanisme ne prend pas en charge la création en ligne de profils HSM ou les vérifications d’état. Toutefois, il existe deux façons de créer des profils HSM et d’effectuer des vérifications d’état :
 

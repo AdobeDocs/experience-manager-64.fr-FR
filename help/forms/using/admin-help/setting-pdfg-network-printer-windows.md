@@ -14,7 +14,7 @@ exl-id: 0b7642c3-d616-44e8-a5d9-3cdd362fedb5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Les utilisateurs qui possèdent le rôle Administrateur de PDFG ou Utilisateur d
 
 1. (Administrateurs de PDFG) Dans Administration Console, cliquez sur Services > PDF Generator > PDFG Network Printer.
 
-   (Utilisateurs de PDFG) Accédez à `http(s)://[host]:[port]/pdfgui` et cliquez sur le lien sous Installation de l’imprimante réseau PDFG.
+   (Utilisateurs PDFG) Accédez à lʼadresse `http(s)://[host]:[port]/pdfgui` et cliquez sur le lien sous Installation de l’imprimante réseau PDFG Network Printer.
 
 1. Sous Installation de l’imprimante réseau PDFG, cliquez sur le lien. Lorsque vous êtes invité à saisir les informations de votre compte utilisateur, indiquez le nom d’utilisateur et le mot de passe utilisés à l’étape 1 pour vous connecter. Un message apparaît, indiquant que l’installation de l’imprimante est terminée.
 

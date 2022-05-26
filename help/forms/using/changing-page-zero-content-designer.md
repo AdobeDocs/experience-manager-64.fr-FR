@@ -16,7 +16,7 @@ ht-degree: 87%
 
 ---
 
-# Modification du contenu de la page zéro avec Designer {#changing-page-zero-content-in-designer}
+# Modifier le contenu de la page zéro dans Designer {#changing-page-zero-content-in-designer}
 
 Le contenu de la page zéro s’affiche par défaut lorsqu’une visionneuse autre qu’Adobe PDF, telle que la visionneuse de PDF par défaut dans Chrome ou Firefox, ne peut pas lire le contenu du formulaire PDF/XFA. Le message par défaut de la page zéro est affiché ci-dessous.
 

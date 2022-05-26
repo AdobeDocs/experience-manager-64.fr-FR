@@ -12,7 +12,7 @@ exl-id: 3269aab9-ac39-4adc-9a6b-9fe9f4276b29
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2140'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -68,13 +68,13 @@ Le menu déroulant pour la ligne propose également l’opération Modifier pour
 >
 >Alors qu’il est possible d’ajouter un nombre quelconque de lignes à un tableau, le nombre maximal de colonnes que vous pouvez ajouter est de six. En outre, vous ne pouvez pas supprimer la ligne d’en-tête du tableau.
 
-### Définition de la largeur d’une colonne pour un tableau {#set-column-width}
+### Définir la largeur d’une colonne pour un tableau {#set-column-width}
 
-Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
+Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
 
-1. Dans le **[!UICONTROL Contenu]** , appuyez sur la touche **[!UICONTROL Tableau]** et appuyez sur Configurer (![Configurer](assets/configure-icon.svg)).
+1. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur la touche **[!UICONTROL Tableau]** et appuyez sur l’icône Configure (![Configurer](assets/configure-icon.svg)).
 
-1. Entrez la liste des valeurs séparées par des virgules dans la variable **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, 2,4,6 comme valeur dans la variable **[!UICONTROL Largeur de colonne]** , la largeur des colonnes est définie sur 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième. 2/12 comme la largeur de la première colonne fait référence à un sixième de la largeur du tableau. De même, 4/12 définit la largeur de la deuxième colonne sur un tiers de celle du tableau et 6/12 définit la largeur de la troisième colonne sur la moitié de celle du tableau.
+1. Saisissez la liste des valeurs séparées par des virgules dans le champ **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, en spécifiant 2, 4, 6 comme valeurs dans le champ **[!UICONTROL Largeur de colonne]**, la largeur des colonnes est définie sur 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième. 2/12 comme largeur de la première colonne fait référence à un sixième de la largeur du tableau. De même, 4/12 définit la largeur de la deuxième colonne sur un tiers de celle du tableau et 6/12 définit la largeur de la troisième colonne sur la moitié de celle du tableau.
 
 ### Ajout d’une description de tableau {#add-table-description}
 

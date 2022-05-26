@@ -12,7 +12,7 @@ exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1207'
-ht-degree: 83%
+ht-degree: 86%
 
 ---
 
@@ -319,7 +319,7 @@ L’exemple ci-dessus définit un enregistrement de client dans lequel chaque cl
 
 ## Préconfiguration des champs dans la définition du schéma JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Vous pouvez utiliser la variable **aem:afProperties** pour préconfigurer le champ de schéma JSON afin de le mapper à un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
+Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le champ de schéma JSON pour mapper vers un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
 
 ```
 {
@@ -341,7 +341,7 @@ Vous pouvez utiliser la variable **aem:afProperties** pour préconfigurer le cha
 
 ## Valeurs possibles de limite pour un composant de formulaire adaptatif {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON pour limiter les valeurs acceptables pour un composant de formulaire adaptatif :
+Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON pour limiter les valeurs possibles pour un composant de formulaire adaptatif :
 
 <table> 
  <tbody> 

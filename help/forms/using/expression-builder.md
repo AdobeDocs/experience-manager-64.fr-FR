@@ -13,7 +13,7 @@ exl-id: cd565ec5-f453-4692-83f8-e1fb06dc28c7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ Avec le Générateur d’expression, vous pouvez créer des expressions ou des c
 
 ## Création d’expressions et de fonctions distantes avec le Générateur d’expression {#creating-expressions-and-remote-functions-with-expression-builder}
 
-Le Générateur d’expression utilise en interne des bibliothèques EL JSP. L’expression est donc conforme à la syntaxe JSPEL. Pour plus d’informations, voir [Exemples d’expressions](#exampleexpressions).
+Comme le Générateur d’expression utilise en interne les bibliothèques EL JSP, l’expression adhère à la syntaxe JSPEL. Pour plus d’informations, voir [Exemples d’expressions](#exampleexpressions).
 
 ![Générateur d’expression](assets/expressionbuilder.png)
 
-### Opérateurs   {#operators}
+### Opérateurs  {#operators}
 
 Les opérateurs pouvant être utilisées dans les expressions sont disponibles dans la barre supérieure du Générateur d’expression.
 
@@ -35,13 +35,13 @@ Les opérateurs pouvant être utilisées dans les expressions sont disponibles d
 
 Vous trouverez ci-dessous quelques exemples d’EL JSP couramment utilisés que vous pouvez utiliser dans votre solution Correspondence Management :
 
-* Pour ajouter deux nombres : ${number1 + number2}
-* Pour concaténer deux chaînes : ${str1} ${str2}
-* Pour comparer deux nombres : ${age &lt; 18}
+* Pour ajouter deux nombres : ${number1 + number2}
+* Pour concaténer deux chaînes : ${str1} ${str2}
+* Pour comparer deux nombres : ${age &lt; 18}
 
 Vous trouverez plus d’informations dans [Spécification de l’EL JSP](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Le gestionnaire d’expression côté client ne prend pas en charge certaines variables et fonctions de la spécification de l’EL JSP, plus précisément :
 
-* Index de collection et clés de mappage (à l’aide de la méthode [] ) ne sont pas prises en charge dans les noms de variable pour les expressions évaluées côté client.
+* Les index de collection et clés de mappage (utilisant la notation []) ne sont pas pris en charge dans les noms de variable pour les expressions évaluées côté client.
 * Voici une liste des types de paramètre ou types de retour de fonctions utilisées dans les expressions :
 
    * java.lang.String
@@ -77,7 +77,7 @@ Les fonctions distantes offrent la possibilité d’utiliser la logique personna
 Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonctions distantes à utiliser dans les expressions. Pour créer un lot personnalisé afin d’exporter vos propres fonctions distantes, effectuez les tâches suivantes. Cet onglet indique comment créer une fonction personnalisée tirant parti de sa chaîne d’entrée.
 
 1. Définissez une interface pour le service OSGi, contenant des méthodes à exporter pour l’utilisation par Expression Manager.
-1. Déclarez les méthodes dans l’interface A et annotez-les avec l’annotation @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignore les méthodes non annotées. L’annotation ServiceMethod présente les attributs facultatifs suivants, qui peuvent également être spécifiés :
+1. Déclarez les méthodes sur l’interface A et annotez-les au moyen de l’annotation @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignore les méthodes non annotées. L’annotation ServiceMethod présente les attributs facultatifs suivants, qui peuvent également être définis :
 
    1. **Enabled** : indique si la méthode est activée. Expression Manager ignore toute méthode désactivée.
    1. **familyId** : indique la famille (groupe) de méthodes. Si cet attribut n’est pas spécifié, Expression Manager présume que la méthode appartient à la famille par défaut. Il n’y a aucun registre de familles (à l’exception de celui par défaut) d’où sont sélectionnées les fonctions. Expression Manager crée le registre de façon dynamique en prenant en compte l’ensemble des ID de famille spécifiés par toutes les fonctions exportées par les différents lots. Assurez-vous que l’ID spécifié ici est raisonnablement lisible étant donné qu’il apparaît également dans l’interface utilisateur de création d’expression.
@@ -95,7 +95,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
    }
    ```
 
-   Les paramètres des méthodes peuvent également être annotés éventuellement à l’aide de l’annotation @ServiceMethodParameter (com.adobe.exm.expeval.ServiceMethodParameter). Cette annotation est uniquement utilisée pour spécifier les noms intelligibles et les descriptions des paramètres de méthode à utiliser dans l’interface utilisateur de création. Assurez-vous que les paramètres et les valeurs renvoyées relatives aux méthodes d’interface correspondent à l’un des types suivants :
+   Les paramètres des méthodes peuvent également être annotés de manière facultative au moyen de l’annotation @ServiceMethodParameter (com.adobe.exm.expeval.ServiceMethodParameter). Cette annotation est uniquement utilisée pour spécifier les noms intelligibles et les descriptions des paramètres de méthode à utiliser dans l’interface utilisateur de création. Assurez-vous que les paramètres et les valeurs renvoyées relatives aux méthodes d’interface correspondent à l’un des types suivants :
 
    * java.lang.String
    * java.lang.Character
@@ -119,7 +119,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
    * java.util.List
 
 
-1. Définissez l’implémentation de l’interface, configurez-la en tant que service OSGI et définissez les propriétés de service suivantes :
+1. Définissez l’implémentation de l’interface, puis configurez-la comme un service OSGi et définissez les propriétés de services suivantes :
 
 ```
 @org.apache.felix.scr.annotations.Properties({

@@ -12,7 +12,7 @@ exl-id: f63478c5-1798-428e-a662-f3db692b27fc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2056'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -84,7 +84,7 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
    * **[!UICONTROL Description]** : description du fragment.
    * **[!UICONTROL Balises]** : métadonnées de balises de fragment.
    * **[!UICONTROL Tracé de destination]** : chemin d’accès au référentiel où le fragment est enregistré. Si vous ne spécifiez pas de chemin, un nœud portant le même nom que celui du fragment est créé en regard du nœud contenant le formulaire adaptatif. Le fragment est enregistré dans ce nœud.
-   * **[!UICONTROL Modèle de formulaire]** : selon le modèle de formulaire pour le formulaire adaptatif, ce champ affiche le **[!UICONTROL schéma XML]**,**[!UICONTROL modèle de formulaire]** ou **[!UICONTROL aucun]**. Ce champ n’est pas modifiable.
+   * **[!UICONTROL Modèle de formulaire]** : selon le modèle de formulaire pour le formulaire adaptatif, ce champ affiche le **[!UICONTROL schéma XML]**,**[!UICONTROL modèle de formulaire]** ou **[!UICONTROL aucun]**. Ce champ n’est pas modifiable.
    * **[!UICONTROL Racine du modèle de fragment]** : s’affiche uniquement dans les formulaires adaptatifs XSD. Il indique la racine pour le modèle du fragment. Vous pouvez choisir **/** ou le type complexe de schéma XSD dans la liste déroulante. Notez que vous pouvez réutiliser le fragment dans un autre formulaire adaptatif que si vous avez sélectionné le type complexe sous forme de fragment racine du modèle.
 
       Si vous choisissez **/** comme racine du modèle de fragment, l’arborescence complète de schéma XSD depuis la racine est visible dans l’onglet de modèle de données de formulaire adaptatif. Pour une racine de modèle de fragment de type complexe, seuls les descendants du type complexe sélectionné sont visibles dans l’onglet du modèle de données de formulaire adaptatif. 

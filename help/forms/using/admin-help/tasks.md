@@ -13,7 +13,7 @@ exl-id: 130ba568-b035-4c80-b47a-e19ed8d8ac25
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -45,19 +45,19 @@ Les résultats de la recherche de tâches sont affichés dans la page Liste de t
 
 Les tâches sont affichées avec les informations suivantes :
 
-**ID de la tâche :** Entier positif attribué par le processus des formulaires lorsque la tâche est instanciée (initiée par un utilisateur). Vous pouvez utiliser cet identificateur pour assurer le suivi de la tâche sur l’ensemble de son cycle de vie. Cliquez sur ID de la tâche pour afficher les informations relatives à l’historique de la tâche ou pour réaffecter la tâche à un autre utilisateur.
+**Identifiant de tâche :** entier positif attribué par Forms Workflow lorsque la tâche est instanciée (démarrée par un utilisateur). Vous pouvez utiliser cet identificateur pour assurer le suivi de la tâche sur l’ensemble de son cycle de vie. Cliquez sur ID de la tâche pour afficher les informations relatives à l’historique de la tâche ou pour réaffecter la tâche à un autre utilisateur.
 
-**État :** Affecté signifie que la tâche est actuellement affectée à l’utilisateur. Non affecté signifie que la tâche a été affectée auparavant à l’utilisateur. L’état peut également être Terminé.
+**Statut :** affecté signifie que la tâche est actuellement affectée à l’utilisateur. Non affecté signifie que la tâche a été affectée auparavant à l’utilisateur. L’état peut également être Terminé.
 
-**Activité :** Affiche le formulaire et le nom d’une opération initiale ou de l’opération de processus qui a généré la tâche.
+**Activité :** indique le formulaire et le nom d’une opération initiale ou l’opération du processus qui a généré la tâche.
 
-**ID du processus :** entier positif attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance un processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
+**Identifiant de processus :** entier positif attribué par Forms Workflow lorsque le processus est instancié (démarré par un utilisateur ou une étape automatisée). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
-**Nom du processus - Version :** Nom du processus, tel que défini dans Workbench.
+**Nom du processus - Version :** nom du processus, tel que défini dans Workbench.
 
-**Application :** Nom de l’application à laquelle appartient le processus, tel que défini dans Workbench.
+**Application :** nom de l’application à laquelle appartient le processus, tel que défini dans Workbench.
 
-**Date de création :** Date et heure de création de la tâche.
+**Date de création :** date et heure auxquelles la tâche a été créée.
 
 ## Affichage de l’historique de la tâche et réaffectation de tâches {#viewing-task-history-and-reassigning-tasks}
 
@@ -65,29 +65,29 @@ La page Historique de la tâche affiche la liste des utilisateurs et des groupes
 
 Pour chaque affectation de tâche, la liste présente les informations suivantes :
 
-**Nom :** Nom de l’utilisateur.
+**Nom :** nom de l’utilisateur.
 
-**État :** Affecté signifie que la tâche est actuellement affectée à l’utilisateur. Non affecté signifie que la tâche a été affectée auparavant à l’utilisateur.
+**Statut :** Affecté signifie que la tâche est actuellement affectée à l’utilisateur. Non affecté signifie que la tâche a été affectée auparavant à l’utilisateur.
 
-**ID de liste de travail :** Identifiant numérique de la file d’attente de l’utilisateur à laquelle appartient la tâche. Un processus peut être partagé par plusieurs utilisateurs.
+**Identifiant de liste de tâches :** identifiant numérique de la file d’attente de l’utilisateur auquel appartient la tâche. Un processus peut être partagé par plusieurs utilisateurs.
 
-**Type :** Indique comment la tâche a été affectée :
+**Type :** indique le mode d’affectation de la tâche :
 
-**Initial :** La tâche a été affectée à l’origine à l’utilisateur.
+**Initial :** la tâche a été affectée initialement à l’utilisateur.
 
-**Transférer :** Le propriétaire de la tâche d’origine a affecté la tâche à un autre utilisateur.
+**Transfert :** le propriétaire d’origine de la tâche a affecté la tâche à un autre utilisateur.
 
-**Rejeter :** Une tâche transférée a été rejetée ou une tâche a été renvoyée à une liste de travail sans avoir été terminée.
+**Rejet :** une tâche transférée a été rejetée ou une tâche a été renvoyée vers une liste de tâches sans avoir été achevée.
 
-**Demander :** L’utilisateur a demandé la tâche dans une liste de tâches partagée.
+**Demande :** l’utilisateur a demandé que la tâche lui soit affectée dans une liste de tâches partagée.
 
-**Réaffectation :** Une durée prédéterminée s’est écoulée (comme définie dans l’action de l’utilisateur dans Workbench) sans interaction de l’utilisateur et la tâche a été affectée à un autre utilisateur.
+**Transmission :** une durée prédéterminée est passée (comme définie dans l’action d’utilisateur dans Workbench) sans interaction de l’utilisateur et la tâche a été affectée à un autre utilisateur.
 
-**Consulter :** Le propriétaire de la tâche a transféré cette tâche à un autre utilisateur pour consultation, qui peut ouvrir le formulaire, enregistrer les données, modifier les pièces jointes et les notes, mais ne peut pas terminer l’étape. L’utilisateur doit renvoyer la tâche au propriétaire qui lui a demandé de la consulter.
+**Consultation :** le propriétaire de la tâche l’a envoyée pour consultation à un autre utilisateur qui peut ouvrir le formulaire, enregistrer les données, modifier les pièces jointes et les notes, mais qui ne peut pas terminer l’étape. L’utilisateur doit renvoyer la tâche au propriétaire qui lui a demandé de la consulter.
 
-**Réaffectation d’administrateur :** La tâche a été réaffectée par un administrateur.
+**Réaffectation admin. :** la tâche a été réaffectée par un administrateur.
 
-**Date d’affectation :** Date et heure auxquelles la tâche a été affectée à l’utilisateur.
+**Date d’affectation :** date et heure auxquelles la tâche a été affectée à l’utilisateur.
 
 ### Affectation d’un nouvel utilisateur à une tâche {#assigning-a-new-user-to-a-task}
 

@@ -14,7 +14,7 @@ exl-id: 2194bbbb-22d9-4422-aefb-9651fd795ca3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3894'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr> 
    <td><code>newtext</code></td> 
    <td>Indique le contenu du champ une fois qu’il a été modifié suite aux actions de l’utilisateur.</td> 
-   <td><p>Le <code>newText</code> ne fonctionne pas correctement pour les cas suivants :</p> 
+   <td><p>La propriété <code>newText</code> ne fonctionne pas correctement dans les cas suivants :</p> 
     <ul> 
      <li>Lorsque vous sélectionnez des textes de remplacement</li> 
      <li>Lorsque vous supprimez, copiez et collez des textes</li> 
@@ -63,7 +63,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr> 
    <td>change</td> 
    <td>Indique la valeur saisie ou collée par un utilisateur dans un champ immédiatement après avoir effectué une opération. </td> 
-   <td><p>La propriété de modification ne fonctionne pas correctement dans les cas suivants :</p> 
+   <td><p>La propriété de modification ne fonctionne pas correctement pour les cas suivants :</p> 
     <ul> 
      <li>Lorsque vous sélectionnez des textes de remplacement</li> 
      <li>Lorsque vous supprimez, copiez et collez des textes</li> 
@@ -425,7 +425,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td> 
   </tr> 
   <tr> 
-   <td>border</td> 
+   <td>bordure</td> 
    <td>L’objet border décrit la bordure entourant un objet.</td> 
    <td>Aucune</td> 
   </tr> 
@@ -507,7 +507,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Renvoie une liste de tous les objets enfants de l’objet actuel.</td> 
    <td> 
     <ul> 
-     <li>Non pris en charge pour xfa.nodes, desc</li> 
+     <li>Non pris en charge pour xfa.nodes, desc.</li> 
      <li>Les nombres de nœuds rapportés pour PDF et HTML sont différents. </li> 
     </ul> </td> 
   </tr> 
@@ -716,7 +716,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   </tr> 
   <tr> 
    <td>ui</td> 
-   <td>L’objet ui renferme la description d’interface utilisateur d’un objet de formulaire.<br /> </td> 
+   <td>L’objet ui renferme la description d’interface utilisateur d’un objet de formulaire.<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -903,7 +903,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td> 
   </tr> 
   <tr> 
-   <td>border</td> 
+   <td>bordure</td> 
    <td>Indique la bordure entourant ce champ.</td> 
    <td>Aucune</td> 
   </tr> 
@@ -1158,12 +1158,12 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
   <tr> 
    <td>pour</td> 
    <td><br type="_moz" /> </td> 
-   <td>pour i = 100 vers 1 <br /> do s = s + i endfor</td> 
+   <td>for i = 100 downto 1 <br /> do s = s + i endfor</td> 
   </tr> 
   <tr> 
    <td>for each</td> 
    <td><br type="_moz" /> </td> 
-   <td>pour chaque i dans (1, 2, 3) <br /> do s = s + i endfor</td> 
+   <td>for each i in (1, 2, 3) <br /> do s = s + i endfor</td> 
   </tr> 
   <tr> 
    <td>déclaration de la fonction</td> 

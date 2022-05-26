@@ -12,7 +12,7 @@ exl-id: 40f6297d-7238-4e56-9fd1-6df3a6362724
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Planifier la structure de votre communication interactive
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
-Ce tutoriel est une étape dans la [Créer votre première communication interactive](/help/forms/using/create-your-first-interactive-communication.md) série. Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
+Ce tutoriel fait partie de la série [Création de votre première communication interactive](/help/forms/using/create-your-first-interactive-communication.md). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
 La première étape de la planification d’une communication interactive consiste à finaliser le contenu de cette dernière. Des experts spécialisés appartenant entre autres aux services juridique, financier, de support ou marketing peuvent vous aider à finaliser le contenu. Une fois le contenu finalisé, vous devez l’analyser pour identifier les différents types de ressources requis pour créer la communication interactive.
 
@@ -34,9 +34,9 @@ Une communication interactive comprend les éléments suivants :
 * Des **données provenant d’un système d’arrière-plan (modèle de données de formulaire)** qui sont spécifiques au client et fusionnées de manière dynamique avec la communication interactive : par exemple, le numéro de police ou l’adresse peuvent être obtenus à l’aide du modèle de données de formulaire.
 * La **mise en page ou les modèles** pour la version d’impression et web de la communication interactive.
 * L’**ordre** dans lequel les différents paragraphes de texte apparaissent dans la communication interactive.
-* **Données saisies par un employé de première ligne (interface utilisateur de l’agent)** qui personnalise la communication avant de l’envoyer. par exemple, la date d’échéance du paiement.
+* Les **données saisies par un employé du front office (Interface utilisateur de l’agent**) qui personnalise la communication avant de l’envoyer. par exemple, la date d’échéance du paiement.
 
-* Des **données conditionnelles** qui sont renseignées en fonction de conditions prédéfinies : Par exemple, la date de génération de la communication interactive.
+* Des **données conditionnelles** qui sont renseignées en fonction de conditions prédéfinies : Par exemple, la date à laquelle la communication interactive est générée.
 * Des **images stockées dans un référentiel**, tels que des logos et des images de signature. Les images comme les logos de l’entreprise sont présentes dans la majorité ou dans toutes les communications interactives.
 * Des **graphiques et tableaux** nécessaires pour simplifier la représentation de données complexes dans une communication interactive
 
@@ -99,7 +99,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
   <tr>
    <td>Récapitulatif de facturation</td> 
    <td><p>Solde précédent</p> <p>Paiements</p> <p>Ajustements</p> <p>Facturation de la période en cours</p> <p>Montant dû</p> <p>Échéance</p> </td> 
-   <td><p>Valeur de la variable <strong>Facturation de la période de facturation actuelle </strong> field</p> <p>Tableau - factures</p> </td> 
+   <td><p>Valeur du champ <strong>Facturation de la période en cours</strong></p> <p>Tableau - factures</p> </td> 
    <td><p>Valeurs des champs suivants :</p> 
     <ul> 
      <li>Solde précédent</li> 
@@ -112,7 +112,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
   </tr>
   <tr>
    <td>Récapitulatif des frais</td> 
-   <td><p>Frais d’appel</p> <p>Frais de conférence téléphonique</p> <p>Frais de SMS </p> <p>Frais d’Internet mobile</p> <p>Frais d’itinérance nationale</p> <p>Frais d’itinérance internationale</p> <p>Frais de services à valeur ajoutée</p> <p>Frais totaux</p> <p>TOTAL À PAYER</p> <p>Condition sur le champ Frais de services à valeur ajoutée</p> </td> 
+   <td><p>Frais d’appel</p> <p>Frais de conférence téléphonique</p> <p>Frais de SMS </p> <p>Frais d’Internet mobile</p> <p>Frais d’itinérance nationale</p> <p>Frais d’itinérance internationale</p> <p>Frais de services à valeur ajoutée</p> <p>Frais totaux</p> <p>TOTAL À PAYER</p> <p>Champ Condition sur les frais de services à valeur ajoutée</p> </td> 
    <td><p>Valeurs des champs suivants :</p> 
     <ul> 
      <li>Frais d’appel</li> 
@@ -123,7 +123,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
      <li>Frais d’itinérance internationale</li> 
      <li>Frais de services à valeur ajoutée</li> 
      <li>Total des frais (champ calculé à partir des frais d’utilisation)</li> 
-     <li>TOTAL À PAYER (champ calculé usagecharges)</li> 
+     <li>MONTANT TOTAL PAYABLE (champ calculé à partir des frais d’utilisation)</li> 
     </ul> <p>Tableau - factures</p> </td> 
    <td>Aucun champ</td> 
    <td>—</td> 

@@ -13,7 +13,7 @@ exl-id: 1ca492e9-9832-4e5d-8020-2690ac4f5505
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Les développeurs et les auteurs de formulaires peuvent écrire des règles, au 
 
 Effectuez les étapes suivantes pour écrire des règles dans l’éditeur de code afin de gérer les événements de réussite et d’erreur.
 
-1. Ouvrez le formulaire adaptatif en mode création, sélectionnez un objet de formulaire, puis appuyez sur ![edit-rules1](assets/edit-rules1.png) pour ouvrir l’éditeur de règles.
+1. Ouvrez le formulaire adaptatif en mode création, sélectionnez n’importe quel objet de formulaire et cliquez sur ![edit-rules1](assets/edit-rules1.png) pour ouvrir l’éditeur de règles.
 1. Sélectionnez **[!UICONTROL Formulaire]** dans l’arborescence des objets de formulaire et appuyez sur **[!UICONTROL Créer]**.
 1. Sélectionnez l’**[!UICONTROL éditeur de code]** dans la liste déroulante de sélection de mode.
 1. Dans l’éditeur de code, appuyez sur **[!UICONTROL Modifier le code]**. Appuyez sur **[!UICONTROL Modifier]** dans la boîte de dialogue de confirmation.

@@ -13,7 +13,7 @@ exl-id: c27eb771-d390-4534-8e67-f1277550e760
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -34,15 +34,15 @@ Les formulaires HTML5 sont conformes à la section 508 concernant l’accessibi
 
 ### JAWS {#jaws}
 
-Toutes les combinaisons de touches et tous les raccourcis par défaut fonctionnent pour les formulaires HTML5. Pour plus d’informations sur l’utilisation de JAWS, voir [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
+Toutes les combinaisons de touches et tous les raccourcis par défaut fonctionnent pour les formulaires HTML5. Pour plus d’informations sur l’utilisation de JAWS, consultez le site [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
 
 ### Voix off {#voiceover}
 
-HTML5 prend en charge toutes les combinaisons de touches et tous les mouvements par défaut de la voix off. Pour plus d’informations sur la configuration et l’utilisation de VoiceOver, voir [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
+HTML5 prend en charge toutes les combinaisons de touches et tous les mouvements par défaut de la voix off. Pour plus d’informations sur la configuration et l’utilisation de VoiceOver, consultez le site [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
 
 ## Problèmes connus {#known-issues}
 
-* **(Internet Explorer 9 uniquement)** Dans les formulaires HTML5, les pages sont chargées à la demande (dynamiquement). Le chargement des pages à la demande provoque des problèmes dans le fonctionnement des lecteurs d’écran. Lorsque le focus du lecteur d’écran se trouve sur le dernier champ de la page et que l’utilisateur appuie sur la touche de tabulation, au lieu de se concentrer sur le premier champ de la page suivante, le lecteur d’écran retourne au premier champ de la première page du formulaire.
+* **(Internet Explorer 9 uniquement)** : dans les formulaires HTML5, les pages sont chargées à la demande (dynamiquement). Le chargement des pages à la demande provoque des problèmes dans le fonctionnement des lecteurs d’écran. Lorsque le point de focalisation du lecteur d’écran est sur le dernier champ de la page et que l’utilisateur appuie sur la touche de tabulation, au lieu de passer au premier champ de la page suivante, le lecteur d’écran retourne au premier champ de la première page du formulaire.
 * **(Internet Explorer 9 uniquement)** La commande Sélecteur de date dans les formulaires HTML5 n’est pas totalement accessible avec le clavier. Dans le contrôle du Sélecteur de date, si vous appuyez sur les touches Haut/Bas plusieurs fois, le contrôle Sélecteur de date se ferme et le point de focalisation passe au prochain/dernier champ.
 
 * VoiceOver ne peut pas détecter les touches de flèches sur le widget de date sur Safari iPad.

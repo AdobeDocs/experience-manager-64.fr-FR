@@ -13,7 +13,7 @@ exl-id: 407db3cf-8add-486b-8cf5-daeecc18bf30
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '2142'
-ht-degree: 89%
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Les fichiers d’application et de données à sauvegarder sont décrits en dét
 Considérez les points suivants concernant la sauvegarde et la récupération :
 
 * La base de données doit être sauvegardée avant le stockage global de document et le référentiel AEM.
-* Si vous devez mettre les noeuds en grappe dans un environnement organisé en grappe pour la sauvegarde, assurez-vous que les noeuds secondaires sont fermés avant le noeud Principal. Dans le cas contraire, une incohérence peut survenir dans la grappe ou le serveur. En outre, le noeud Principal doit être rendu actif avant tout noeud secondaire.
+* Si vous avez besoin de faire descendre les nœuds dans un environnement organisé en grappes pour la sauvegarde, assurez-vous que les nœuds secondaires sont fermés avant le nœud principal. Dans le cas contraire, une incohérence peut survenir dans la grappe ou le serveur. En outre, le nœud principal doit être rendu actif avant tout nœud secondaire.
 * Pour l’opération de restauration d’une grappe, le serveur d’applications doit être arrêté pour chaque nœud de la grappe.
 
 ## Répertoire de stockage global de documents {#global-document-storage-directory}
@@ -92,7 +92,7 @@ Pour sauvegarder la base de données en temps réel, vous devez utiliser le mode
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -105,7 +105,7 @@ Configurez votre base de données DB2 pour qu’elle s’exécute en mode de con
 IBM propose une suite d’outils et des systèmes d’aide permettant aux administrateurs de base de données de gérer leurs sauvegardes et récupérations :
 
 * Accélérateur de journaux d’archives IBM DB2
-* IBM DB2 Data Archive Expert (voir [IBM DB2 Data Archive Expert User’s Guide and Reference](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true)).
+* Expert en archivage de données IBM DB2 (Voir [Guide de référence et guide de l’utilisateur expert de l’archive de données IBM DB2](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true).)
 
 DB2 possède des capacités intégrées permettant de sauvegarder une base de données vers Tivoli Storage Manager. A l’aide de Tivoli Storage Manager, les sauvegardes DB2 peuvent être stockées sur d’autres supports et disques durs locaux.
 
@@ -130,11 +130,11 @@ SQL Server propose également deux outils de sauvegarde et de récupération :
 * SQL Server Management Studio (interface utilisateur graphique)
 * T-SQL (ligne de commande)
 
-Pour plus d’informations, voir [Sauvegarde et restauration](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Pour plus d’informations, voir [Sauvegarder et restaurer](https://msdn.microsoft.com/fr-fr/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
-Utilisez MySQLAdmin ou modifiez les fichiers INI dans Windows pour configurer votre base de données MySQL pour qu’elle s’exécute en mode de consignation binaire (Voir [Connexion binaire MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)). Un outil de sauvegarde à chaud pour MySQL est également disponible à partir du logiciel InnoBase (Voir [Sauvegarde à chaud avec Innobase](https://www.innodb.com/hot-backup/features.md)).
+Utilisez MySQLAdmin ou modifiez les fichiers INI dans Windows pour configurer votre base de données MySQL pour qu’elle s’exécute en mode de consignation binaire (Voir [Connexion binaire MySQL](https://dev.mysql.com/doc/refman/5.1/fr/binary-log.html)). Un outil de sauvegarde à chaud pour MySQL est également disponible à partir du logiciel InnoBase (Voir [Sauvegarde à chaud avec Innobase](https://www.innodb.com/hot-backup/features.md)).
 
 >[!NOTE]
 >
@@ -142,9 +142,9 @@ Utilisez MySQLAdmin ou modifiez les fichiers INI dans Windows pour configurer vo
 >
 >`binlog_format=mixed log-bin=logname`
 
-Vous pouvez utiliser l’utilitaire mysqldump pour effectuer la sauvegarde intégrale de la base de données. Les sauvegardes intégrales sont nécessaires, mais ne sont pas toujours pratiques. Elles génèrent des fichiers de sauvegarde volumineux et leur exécution prend du temps. Pour effectuer une sauvegarde incrémentielle, assurez-vous que vous démarrez le serveur avec le paramètre - `log-bin` , comme décrit dans la section précédente. A chaque fois que le serveur MySQL redémarre, il cesse d’écrire dans le journal binaire courant, en crée un nouveau, qui devient dès lors le nouveau journal binaire courant. Vous pouvez forcer un sélecteur manuellement à l’aide de l’option `FLUSH LOGS SQL` . Après la première sauvegarde intégrale, les sauvegardes incrémentielles suivantes sont effectuées en utilisant l’utilitaire mysqladmin avec la commande `flush-logs`, qui crée le fichier journal suivant.
+Vous pouvez utiliser l’utilitaire mysqldump pour effectuer la sauvegarde intégrale de la base de données. Les sauvegardes intégrales sont nécessaires, mais ne sont pas toujours pratiques. Elles génèrent des fichiers de sauvegarde volumineux et leur exécution prend du temps. Pour exécuter une sauvegarde incrémentielle, veillez à démarrer le serveur avec l’option `log-bin`, comme décrit dans la section précédente. A chaque fois que le serveur MySQL redémarre, il cesse d’écrire dans le journal binaire courant, en crée un nouveau, qui devient dès lors le nouveau journal binaire courant. Vous pouvez forcer un basculement manuel avec la commande `FLUSH LOGS SQL`. Après la première sauvegarde intégrale, les sauvegardes incrémentielles suivantes sont effectuées en utilisant l’utilitaire mysqladmin avec la commande `flush-logs`, qui crée le fichier journal suivant.
 
-Voir [Résumé de la stratégie de sauvegarde](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
+Voir [Résumé de la stratégie de sauvegarde](https://dev.mysql.com/doc/refman/5.5/fr/backup-strategy-summary.html).
 
 ```as3
 binlog_format=mixed 

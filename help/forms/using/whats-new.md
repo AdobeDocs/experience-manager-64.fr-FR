@@ -12,7 +12,7 @@ exl-id: 21b8ed83-9c0c-41ee-9fbb-56ccebaee132
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2002'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -22,7 +22,7 @@ Résumé des nouvelles fonctionnalités et améliorations de la version 6.4 d’
 
 AEM Forms comporte plusieurs nouvelles fonctionnalités et améliorations qui optimisent la création, la gestion et les expériences utilisateur avec des formulaires adaptatifs et des communications interactives.
 
-Lisez ci-après la présentation rapide des nouvelles fonctionnalités et améliorations. Consultez la documentation pour de plus amples informations. Vous pouvez également consulter les [notes de mise à jour](/help/release-notes/forms.md) d’AEM 6.4 Forms. Pour consulter la documentation complète d’AEM 6.4 Forms, rendez-vous sur la page [Guide d’AEM 6.4 Forms](/help/forms/home.md).
+Lisez ci-après la présentation rapide des nouvelles fonctionnalités et améliorations. Consultez la documentation pour de plus amples informations. Vous pouvez également consulter les [notes de mise à jour](/help/release-notes/forms.md) d’AEM 6.4 Forms. Pour consulter la documentation complète d’AEM 6.4 Forms, rendez-vous sur [Guide d’AEM 6.4 Forms](/help/forms/home.md).
 
 ## Communications interactives {#interactive-communications}
 
@@ -83,7 +83,7 @@ La communication interactive prend en charge les graphiques dans le canal d’im
 
 ![chart-2](assets/chart-2.png) ![chart](assets/chart.png)
 
-Pour plus d’informations, voir [Utilisation de graphiques dans les communications interactives](/help/forms/using/chart-component-interactive-communications.md).
+Pour en savoir plus, consultez la rubrique [Utiliser des graphiques dans les communications interactives](/help/forms/using/chart-component-interactive-communications.md).
 
 ### Des connecteurs de données prêts à l’emploi pour pré-remplir des documents {#out-of-the-box-data-connectors-to-prefill-documents}
 
@@ -199,7 +199,7 @@ Document Security vous permet de distribuer en toute sécurité toute informatio
 
 ## Plateformes prises en charge {#supported-platforms}
 
-AEM Forms peut être installé à l’aide de n’importe quelle combinaison de systèmes d’exploitation, serveurs d’applications, bases de données, pilotes de base de données, JDK, serveurs LDAP et serveurs de messagerie électronique pris en charge. Voici les principales modifications apportées aux plateformes prises en charge :
+AEM Forms peut être installé à l’aide de n’importe quelle combinaison de systèmes d’exploitation, serveurs d’applications, bases de données, pilotes de base de données, JDK, serveurs LDAP et serveurs de messagerie électronique pris en charge. Les principales modifications en matière de plateformes prises en charge sont les suivantes :
 
 <table> 
  <tbody> 

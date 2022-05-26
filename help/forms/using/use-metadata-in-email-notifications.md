@@ -1,5 +1,5 @@
 ---
-title: 'Utilisation des métadonnées dans une notification électronique '
+title: 'Utilisation de métadonnées dans une notification électronique '
 seo-title: Use metadata in an email notification
 description: Utilisation des métadonnées pour renseigner les informations dans une notification électronique de processus de formulaires
 seo-description: Use metadata to populate information in a forms workflow email notification
@@ -10,11 +10,11 @@ exl-id: 248c5adf-23e9-463f-9f29-869ae2426c22
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '902'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
-# Utilisation des métadonnées dans une notification électronique  {#use-metadata-in-an-email-notification}
+# Utilisation de métadonnées dans une notification électronique  {#use-metadata-in-an-email-notification}
 
 Utilisation des métadonnées pour renseigner les informations dans une notification électronique de processus de formulaires
 
@@ -24,7 +24,7 @@ Vous pouvez utiliser des métadonnées dans un modèle de courrier électronique
 
 ![default-email-template](assets/default-email-template.png)
 
-Les métadonnées sont stockées dans des paires clé-valeur. Vous pouvez spécifier la clé dans le modèle de courrier électronique et la clé est remplacée par une valeur au moment de l’exécution (lorsqu’une notification électronique est générée). Par exemple, dans l’exemple de code ci-dessous, la clé est « $ {workitem_title}  ». Elle est remplacée par la valeur « Demande-Prêt » à l’exécution.
+Les métadonnées sont stockées dans des paires clé-valeur. Vous pouvez spécifier la clé dans le modèle de courrier électronique et la clé est remplacée par une valeur au moment de l’exécution (lorsqu’une notification électronique est générée). Par exemple, dans l’exemple de code ci-dessous, la clé est « $ {workitem_title} ». Elle est remplacée par la valeur « Demande-Prêt » à l’exécution.
 
 ```xml
 subject=Task Assigned - ${workitem_title}
@@ -141,18 +141,18 @@ Une application AEM Forms fournit plusieurs variables de métadonnées (paires c
   </tr> 
   <tr> 
    <td>host_prefix</td> 
-   <td>URL du serveur d’auteur. Par exemple, https://10.41.42.66:4502<br /> </td> 
+   <td>URL du serveur d’auteur. Par exemple, https://10.41.42.66:4502<br />. </td> 
   </tr> 
   <tr> 
    <td>publish_prefix</td> 
-   <td>URL du serveur de publication. Par exemple, https://10.41.42.66:4503</td> 
+   <td>URL du serveur de publication. Par exemple, https://10.41.42.66:4503.</td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Utilisation des métadonnées personnalisées dans une notification électronique {#using-custom-metadata-in-an-email-notification}
 
-Vous pouvez également utiliser des métadonnées personnalisées dans une notification électronique. Les métadonnée personnalisées contiennent des informations en plus des métadonnées générées par le système ; par exemple, les informations de stratégie récupérées à partir d’une base de données. Vous pouvez utiliser un lot ECMAScript ou OSGi pour ajouter des métadonnées personnalisées dans le référentiel crx :
+Vous pouvez également utiliser des métadonnées personnalisées dans une notification électronique. Les métadonnée personnalisées contiennent des informations en plus des métadonnées générées par le système ; par exemple, les informations de stratégie récupérées à partir d’une base de données. Vous pouvez utiliser une offre groupée ECMAScript ou OSGi pour ajouter des métadonnées personnalisées dans le référentiel crx :
 
 ### Utilisation de ECMAScript pour ajouter des métadonnées personnalisées  {#use-ecmascript-to-add-custom-metadata}
 
@@ -184,7 +184,7 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
 
 1. (Facultatif) Spécifiez le titre du script :
 
-   Si vous ne spécifiez pas le titre, le champ Métadonnées personnalisées affiche le chemin complet du fichier ECMAScript. Effectuez les étapes suivantes pour spécifier un titre significatif pour le script :
+   Si vous ne spécifiez pas le titre, le champ Métadonnées personnalisées affiche le chemin complet du fichier ECMAScript. Pour définir un titre significatif pour le script, procédez comme suit :
 
    1. Développez le nœud du script, cliquez avec le bouton droit de la souris sur **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
    1. Saisissez mix:title dans la boîte de dialogue Modifier les mixins et cliquez sur **+**.
@@ -199,7 +199,7 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
 
 Vous pouvez utiliser l’interface Java WorkitemUserMetadataService pour ajouter des métadonnées personnalisées aux modèles de courrier électronique. Vous pouvez créer un bundle OSGi qui utilise l’interface Java WorkitemUserMetadataService et le déployer sur le serveur AEM Forms. Il rend les métadonnées disponibles pour la sélection à l’étape Affecter une tâche.
 
-Pour créer un bundle OSGi avec une interface Java, ajoutez les fichiers .jar [SDK client AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) et [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
+Pour créer un bundle OSGi avec une interface Java, ajoutez les fichiers .jar [SDK client AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) et [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
 
 1. Ouvrez l’IDE Eclipse. Accédez à Fichier > Nouveau projet.
 

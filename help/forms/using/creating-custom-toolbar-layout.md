@@ -12,7 +12,7 @@ exl-id: 1b273437-8d71-4224-bdcd-0ae522ae8913
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 82%
+ht-degree: 96%
 
 ---
 
@@ -29,19 +29,19 @@ La mise en page de barre d’outils dépend fortement du traitement côté clien
 
 Les formulaires adaptatifs fournissent un ensemble de mises en page prêtes à l’emploi :
 
-![Dispositions de barre d’outils prêtes à l’emploi ](assets/toolbar1.png)
+![Mises en page de barre d’outils prêtes à l’emploi ](assets/toolbar1.png)
 **Figure :** *Dispositions de barre d’outils prêtes à l’emploi*
 
 Vous pouvez en outre créer une mise en page de barre d’outils personnalisée.
 
 La procédure suivante décrit les étapes pour créer une barre d’outils personnalisée qui affiche trois actions dans la barre d’outils et d’autres actions dans une liste déroulante de la barre d’outils.
 
-Le module de contenu joint contient le code complet décrit ci-dessous. Après avoir installé le module de contenu, ouvrez `/content/forms/af/CustomLayoutDemo.html` pour afficher la démonstration de mise en page de barre d’outils personnalisée.
+Le module de contenu joint contient le code complet décrit ci-dessous. Une fois le module de contenu installé, ouvrez `/content/forms/af/CustomLayoutDemo.html` pour afficher la démonstration de la mise en page de la barre d’outils personnalisée.
 
 CustomToolbarLayoutDemo.zip
 
 [Obtenir le fichier](assets/customtoolbarlayoutdemo.zip)
-Démonstration de la mise en page de barre d’outils personnalisée
+Démonstration de la mise en page de la barre d’outils personnalisée
 
 ## Création d’une mise en page de barre d’outils personnalisée {#layout-1}
 
@@ -53,15 +53,15 @@ Démonstration de la mise en page de barre d’outils personnalisée
 
    `/libs/fd/af/layouts/toolbar`
 
-   Par exemple, copiez la variable `mobileFixedToolbarLayout` du noeud `/libs/fd/af/layouts/toolbar` vers le dossier `/apps/customlayout/toolbar` dossier.
+   Par exemple, copiez le nœud `mobileFixedToolbarLayout` du dossier `/libs/fd/af/layouts/toolbar` vers le dossier `/apps/customlayout/toolbar`.
 
-   Copiez également le fichier toolbarCommon.jsp dans le dossier `/apps/customlayout/toolbar` dossier.
+   Copiez également le fichier toolbarCommon.jsp dans le dossier `/apps/customlayout/toolbar`.
 
    >[!NOTE]
    >
    >Le dossier que vous créez pour stocker les mises en page personnalisées peut être créé avec le dossier `apps`.
 
-1. Renommez le noeud copié, `mobileFixedToolbarLayout`, à `customToolbarLayout.`
+1. Renommez le nœud copié, de `mobileFixedToolbarLayout` à `customToolbarLayout.`.
 
    Fournissez également une description appropriée pour le nœud. Par exemple, remplacez le jcr:description du nœud par **Mise en page personnalisée pour la barre d’outils.**
 
@@ -71,7 +71,7 @@ Démonstration de la mise en page de barre d’outils personnalisée
 
    Nœud avec description appropriée
 
-   Votre nouvelle mise en page de barre d’outils personnalisée s’affiche dans la configuration de la boîte de dialogue **Barre d’outils du formulaire adaptatif**.  
+   Votre nouvelle mise en page de barre d’outils personnalisée s’affiche dans la configuration de la boîte de dialogue **Barre d’outils du formulaire adaptatif**. 
 
    ![Liste des mises en page de barre d’outils](assets/toolbar4.png)
 
@@ -83,13 +83,13 @@ Démonstration de la mise en page de barre d’outils personnalisée
 
 1. Sélectionnez cette mise en page de barre d’outils personnalisée, puis cliquez sur OK.
 
-   Ajoutez clientlib (javascript et css) dans le `/etc/customlayout` et incluez la référence de la bibliothèque cliente dans la variable `customToolbarLayout.jsp`.
+   Ajoutez clientlib (JavaScript et css) dans le nœud `/etc/customlayout` et incluez la référence de clientlib dans le `customToolbarLayout.jsp`.
 
    ![Chemin d’accès au fichier customToolbarLayout.css](assets/toolbar_3.png)
 
    Chemin d’accès au fichier customToolbarLayout.css
 
-   Échantillon `customToolbarLayout.jsp`:
+   Échantillon `customToolbarLayout.jsp` :
 
    ```php
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -107,7 +107,7 @@ Démonstration de la mise en page de barre d’outils personnalisée
    >
    >Ajoutez la classe guidetoolbar pour la mise en page. Le style prêt à l’emploi de la barre d’outils est défini conformément à la classe guidetoolbar.
 
-   Échantillon `toolBarCommon.jsp`:
+   Échantillon `toolBarCommon.jsp` :
 
    ```php
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
@@ -228,5 +228,5 @@ Démonstration de la mise en page de barre d’outils personnalisée
 >
 >La description mise à jour à l’étape précédente est affichée dans la liste déroulante Mise en forme.
 
-![Vue de bureau de la barre d’outils de disposition personnalisée](assets/toolbar_1.png)
+![Vue de bureau de la barre d’outils avec mise en page personnalisée](assets/toolbar_1.png)
 **Figure :** *Vue de bureau de la barre d’outils de disposition personnalisée*

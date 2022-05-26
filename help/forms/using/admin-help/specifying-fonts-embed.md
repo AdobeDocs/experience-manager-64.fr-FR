@@ -13,7 +13,7 @@ exl-id: 0bde7192-9d21-40b4-9164-314c9a30153b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Vous pouvez spécifier les polices qui sont toujours ou jamais incorporées dans
 >
 >si vous avez défini un fichier XCI personnalisé pour Forms, l’option d’incorporation de polices dans le fichier XCI remplace ces paramètres (voir [Configuration des emplacements pour Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)).
 
-1. Dans Administration Console, cliquez sur **[!UICONTROL Services > Forms]**.
-1. Sous **[!UICONTROL Paramètres d’incorporation de polices]**, dans la variable **[!UICONTROL Toujours incorporer les polices]** saisissez les noms des polices à incorporer aux formulaires, séparés par des virgules. Les polices spécifiées ne sont incorporées au formulaire généré que si elles sont effectivement utilisées dans le formulaire. Ce paramètre est ignoré si l’option d’incorporation des polices a été activée dans le fichier XCI transmis au service car, dans ce cas, toutes les polices utilisées dans le PDF sont systématiquement incorporées.
-1. Dans le **[!UICONTROL Ne jamais incorporer de polices]** saisissez les noms des polices à ne pas incorporer aux formulaires, séparés par des virgules. Les polices spécifiées ne sont pas incorporées au PDF, même si elles sont utilisées dans le PDF généré. Ce paramètre est ignoré si l’option d’incorporation des polices a été désactivée dans le fichier XCI transmis au service car, dans ce cas, aucune des polices utilisées dans le PDF n’est incorporée.
+1. Dans la console d’administration, cliquez sur **[!UICONTROL Services > Forms]**.
+1. Sous **[!UICONTROL Paramètres d’incorporation des polices]**, dans le champ **[!UICONTROL Toujours incorporer les polices]**, saisissez les noms des polices à incorporer aux formulaires (en les séparant par des virgules). Les polices spécifiées ne sont incorporées au formulaire généré que si elles sont effectivement utilisées dans le formulaire. Ce paramètre est ignoré si l’option d’incorporation des polices a été activée dans le fichier XCI transmis au service car, dans ce cas, toutes les polices utilisées dans le PDF sont systématiquement incorporées.
+1. Dans le champ **[!UICONTROL Ne jamais incorporer les polices]**, saisissez les noms des polices à ne pas incorporer avec les formulaires (en les séparant par des virgules). Les polices spécifiées ne sont pas incorporées au PDF, même si elles sont utilisées dans le PDF généré. Ce paramètre est ignoré si l’option d’incorporation des polices a été désactivée dans le fichier XCI transmis au service car, dans ce cas, aucune des polices utilisées dans le PDF n’est incorporée.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
