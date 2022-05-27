@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '646'
 ht-degree: 75%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 75%
    + [Profils vidéo Dynamic Media](video-profiles.md)
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
+   + [Imagerie dynamique avec rapport des pixels côté client](client-side-dpr.md)
    + [Vidéo ](s7-video.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
@@ -167,6 +168,6 @@ ht-degree: 75%
    + [Instructions d’entraînement sur le service de contenu dynamique](smart-tags-training-guidelines.md)
    + [Rendus vidéo](video-renditions.md)
 + Intégration à d’autres solutions {#integrations}
-   + [Intégrations avec [!DNL Adobe Workfront]](workfront-integrations.md)
-   + [Installer [!DNL enhanced connector] pour [!DNL Workfront]](workfront-connector-install.md)
-   + [Configurer [!DNL enhanced connector] pour [!DNL Workfront]](workfront-connector-configure.md)
+   + [Intégrations à  [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Installer le [!DNL enhanced connector] pour [!DNL Workfront]](workfront-connector-install.md)
+   + [Configurer le [!DNL enhanced connector] pour [!DNL Workfront]](workfront-connector-configure.md)
