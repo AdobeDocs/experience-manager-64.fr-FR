@@ -9,7 +9,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
 feature: Image Presets
 role: Admin,User
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: 78e187855845046071bc7f22cd7d491d48568336
 workflow-type: tm+mt
 source-wordcount: '3835'
 ht-degree: 79%
@@ -192,7 +192,6 @@ Le dimensionnement des miniatures est défini au format suivant : **width:height
 >* La taille des miniatures pour les fichiers EPS est configurée à l’étape **[!UICONTROL Miniatures EPS]**, dans l’onglet **[!UICONTROL Arguments]****[!UICONTROL sous Miniatures]**.
 >
 >* La taille des miniatures pour les vidéos est configurée à l’étape **[!UICONTROL Miniatures FFmpeg]**, dans l’onglet **[!UICONTROL Processus]** sous **[!UICONTROL Arguments]**.
-
 >
 
 
@@ -287,7 +286,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 
 * **[!UICONTROL Format]** (**[!UICONTROL De base]** (onglet) - Sélectionner **[!UICONTROL JPEG]** ou un autre format qui répond à vos besoins. Tous les navigateurs Web prennent en charge le format d’image du JPEG ; il offre un bon équilibre entre les petites tailles de fichiers et la qualité d’image. Toutefois, les images au format JPEG utilisent un modèle de compression avec perte qui peut introduire des artefacts d’image indésirables si le paramètre de compression est trop faible. C’est pourquoi Adobe recommande de définir la qualité de compression sur 75. Ce paramètre offre un bon équilibre entre la qualité d’image et la taille de fichier réduite.
 * **[!UICONTROL Activer l’accentuation simple]** - Ne sélectionnez pas **[!UICONTROL Activer l’accentuation simple]** (Ce filtre d’accentuation offre moins de contrôle que les paramètres Masquage flou).
-* **[!UICONTROL Accentuation : Mode Rééchantillonnage]** - Sélectionner **[!UICONTROL Bicubique]**.
+* **[!UICONTROL Accentuation : Mode Rééchantillonnage]** - Sélectionner **[!UICONTROL Sharp2]**.
 
 #### Options de l’onglet De base {#basic-tab-options}
 
