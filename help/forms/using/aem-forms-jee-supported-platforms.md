@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 393f665774a482e953e2594404ab22f7ce0bb259
+source-git-commit: 727dddccd7b7cdff29a00ef6f0f2e82f14e5c851
 workflow-type: tm+mt
-source-wordcount: '3316'
+source-wordcount: '3331'
 ht-degree: 96%
 
 ---
@@ -195,13 +195,18 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
   </tr> 
   <tr> 
    <td>MySQL</td> 
-   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.30-bin.jar (version 5.1.30)</p> </td> 
+   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar (version 5.1.44)</p> </td> 
    <td><p>Fourni avec l’installation d’AEM Forms on JEE</p> </td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server<br /> </td> 
-   <td><p>Pilote Microsoft® SQL Server JDBC 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>Pilote JDBC Microsoft® SQL Server 6.2.1.0 (obsolète) <br /> </p> <p>sqljdbc6.jar</p> </td> 
    <td><p>Fourni avec l’installation d’AEM Forms on JEE.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Microsoft SQL Server<br /> </td> 
+   <td><p>Pilote Microsoft® SQL Server JDBC 6.2.2.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>À télécharger depuis le site Web de Microsoft.</p> </td> 
   </tr> 
   <tr> 
    <td>Oracle</td> 
