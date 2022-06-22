@@ -4,9 +4,9 @@ description: Découvrez les différentes tâches de gestion et de modification d
 contentOwner: AG
 feature: Asset Management,Search,Renditions,Collaboration
 role: User
-mini-toc-levels: 3
+mini-toc-levels: 4
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 7c786e1326c8c65f00d799fed3207e4f0da04fa7
+source-git-commit: 3d1ec43235fab1b5657dcb42037f7f3184a63d62
 workflow-type: tm+mt
 source-wordcount: '10139'
 ht-degree: 63%

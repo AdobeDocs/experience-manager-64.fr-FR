@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: de466dda2dcafd4c7ba002e91133e975e07b392e
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '163'
 ht-degree: 3%
 
 ---
@@ -34,9 +34,11 @@ Lorsque vous créez une visionneuse à 360° ou une visionneuse d’images, ou q
 | **Visionneuse d’images** - Nombre de ressources en double par ensemble | Aucun doublon | 100 | 20 |
 | **Visionneuse d’images** - Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
 | **Visionneuse à 360°** - Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
-| **PDF** - Nombre maximal de pages qu’un PDF doit prendre en compte pour l’extraction |  | 5000 (pour les nouveaux chargements) | 100 |
 
+<!-- NO PDF UPLOAD OPTION IN AEMaaCS | **PDF** - Maximum number of pages for a PDF to be considered for extraction |  | 5000 (for new uploads) | 100 | -->
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
+
+
 
 <!-- ## Unsupported web browser and operating system combinations for Dynamic Media Viewers
 
