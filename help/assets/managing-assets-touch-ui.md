@@ -2,11 +2,11 @@
 title: Gestion des ressources numériques à l’aide de [!DNL Experience Manager] Ressources
 description: Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez effectuer à l’aide de l’interface utilisateur optimisée pour les écrans tactiles de [!DNL Experience Manager] Ressources
 contentOwner: AG
-mini-toc-levels: 1
 feature: Asset Management,Search,Renditions,Collaboration
 role: User
+mini-toc-levels: 3
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 7c786e1326c8c65f00d799fed3207e4f0da04fa7
 workflow-type: tm+mt
 source-wordcount: '10139'
 ht-degree: 63%
