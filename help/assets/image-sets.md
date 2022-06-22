@@ -12,10 +12,10 @@ discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
 feature: Image Sets
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 81%
+source-wordcount: '2166'
+ht-degree: 77%
 
 ---
 
@@ -36,6 +36,15 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 >[!NOTE]
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](managing-assets-touch-ui.md).
+
+Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
+
+| Ressource - Type de limite | Bonne pratique | Limite implémentée | Modifications apportées à la limite du 31 décembre 2022 |
+| --- | --- | --- | --- |
+| **Visionneuse d’images** - Nombre de ressources en double par ensemble | Aucun doublon | 100 | 20 |
+| **Visionneuse d’images** - Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
+
+Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
 ## Démarrage rapide : Visionneuses d’images {#quick-start-image-sets}
 
@@ -110,7 +119,6 @@ Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’i
 >
 >* D’une prise de vue en noir, en marron et en vert de la même veste.
 >* Une miniature de couleur noire, marron et verte.
-
 >
 
 
@@ -129,6 +137,15 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 >[!NOTE]
 >
 >Les visionneuses d’images ne sont pas prises en charge pour les ressources comportant `,` (virgule) dans le nom du fichier.
+
+Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
+
+| Ressource - Type de limite | Bonne pratique | Limite implémentée | Modifications apportées à la limite du 31 décembre 2022 |
+| --- | --- | --- | --- |
+| **Visionneuse d’images** - Nombre de ressources en double par ensemble | Aucun doublon | 100 | 20 |
+| **Visionneuse d’images** - Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
+
+Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
 **Pour créer une visionneuse d’images**:
 

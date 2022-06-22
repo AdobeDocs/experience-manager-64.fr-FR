@@ -8,10 +8,10 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
-source-wordcount: '1843'
-ht-degree: 67%
+source-wordcount: '1923'
+ht-degree: 65%
 
 ---
 
@@ -29,7 +29,15 @@ Les visionneuses à 360° sont désignées par une bannière contenant le mot **
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](managing-assets-touch-ui.md).
 
-## Démarrage rapide : Visionneuse à 360°  {#quick-start-spin-sets}
+Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
+
+| Type de limite | Bonne pratique | Limite implémentée |
+| --- | --- | --- |
+| Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
+
+Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
+
+## Démarrage rapide : Visionneuse à 360° {#quick-start-spin-sets}
 
 Pour démarrer rapidement, procédez comme suit :
 
@@ -106,6 +114,14 @@ L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a un
 >Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources et sont disponibles uniquement en mode Dynamic Media - Scene7.
 >
 >Voir « Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360° » dans [Configuration de Dynamic Media – mode Scene7](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+
+Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
+
+| Type de limite | Bonne pratique | Limite implémentée |
+| --- | --- | --- |
+| Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
+
+Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
 **Pour créer des visionneuses à 360° :**
 
