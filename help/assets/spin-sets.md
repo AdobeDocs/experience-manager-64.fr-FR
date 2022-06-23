@@ -8,7 +8,7 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 65%
@@ -31,7 +31,7 @@ Les visionneuses à 360° sont désignées par une bannière contenant le mot **
 
 Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
-| Type de limite | Bonne pratique | Limite implémentée |
+| Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
 | Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
 
@@ -117,7 +117,7 @@ L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a un
 
 Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
-| Type de limite | Bonne pratique | Limite implémentée |
+| Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
 | Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
 

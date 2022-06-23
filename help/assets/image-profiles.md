@@ -12,9 +12,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 8d049122fd2a5b39274d0fdcb268dcf660fbc40f
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2729'
 ht-degree: 91%
 
 ---
@@ -36,9 +36,9 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 Lorsque vous implémentez le recadrage intelligent sur les images, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
-| Type de limite | Bonne pratique | Limite implémentée |
-| --- | --- | --- |
-| Nombre de recadrages intelligents par image | 5 | 100 |
+| Type de limite | Bonne pratique | Limite imposée | Modification de la limite le 31 décembre 2022 |
+| --- | --- | --- | --- |
+| Nombre de recadrages intelligents par image | 5 | 100 | 20 |
 
 Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
