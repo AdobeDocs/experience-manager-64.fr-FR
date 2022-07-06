@@ -7,10 +7,10 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0da4d864af8982b7faced50035f6bed376d8cd01
 workflow-type: tm+mt
-source-wordcount: '4542'
-ht-degree: 96%
+source-wordcount: '4637'
+ht-degree: 95%
 
 ---
 
@@ -221,6 +221,9 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 * **Configuration cloud Adobe Sign** : sélectionnez une configuration cloud Adobe Sign. Si vous n’avez pas configuré Adobe Sign pour AEM Forms, voir [Intégrer Adobe Sign à AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Document à signer :** vous pouvez sélectionner un document à partir d’un emplacement relatif à la charge utile, utiliser la charge utile en tant que document ou spécifier le chemin d’accès absolu du document.
+* **Input Attachment Path :** Sélectionnez une pièce jointe. Ces pièces jointes sont incluses dans le document de signature. Vous pouvez conserver les pièces jointes à un emplacement lié à une charge utile ou spécifier un chemin d’accès absolu aux pièces jointes.
+
+   Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par exemple), tous les fichiers directement disponibles dans le dossier sont joints au document d’enregistrement. Si des fichiers sont disponibles dans les dossiers directement disponibles dans le chemin d’accès de la pièce jointe spécifiée, les fichiers sont inclus dans Signing Document en tant que pièces jointes. Les dossiers présents dans les dossiers directement disponibles sont ignorés.
 * **Jours avant l’échéance :** un document est marqué comme dû (délai expiré) lorsqu’il n’y a plus aucune activité sur la tâche pour le nombre de jours spécifié dans le champ **Jours avant l’échéance.** Le nombre de jours est calculé à partir du jour de l’affectation du document à un utilisateur pour signature.
 
 * **Fréquence des messages de rappel :** vous pouvez envoyer un message de rappel à intervalle quotidien ou hebdomadaire. La semaine est calculée à compter du jour de l’affectation du document à un utilisateur pour signature.
