@@ -7,7 +7,7 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: 0da4d864af8982b7faced50035f6bed376d8cd01
+source-git-commit: dba3b09035e6ffafd1681b370e3a10a76564bf65
 workflow-type: tm+mt
 source-wordcount: '4637'
 ht-degree: 95%
@@ -124,7 +124,7 @@ L’étape Document d’enregistrement possède les propriétés suivantes :
 
 **Chemin d’accès des données d’entrée :** chemin d’accès des données d’entrée pour le formulaire adaptatif. Vous pouvez conserver les données à un emplacement lié à une charge utile ou spécifier un chemin d’accès absolu des données. Les données d’entrée sont fusionnées avec le formulaire adaptatif pour créer un document d’enregistrement.
 
-**Chemin d’accès de la pièce jointe d’entrée :** chemin d’accès des pièces jointes. Ces pièces jointes sont incluses dans le document d’enregistrement. Vous pouvez conserver les pièces jointes à un emplacement lié à une charge utile ou spécifier un chemin d’accès absolu aux pièces jointes.
+**Input Attachment Path :** Input Attachment Path : Chemin des pièces jointes. Ces pièces jointes sont incluses dans le document d’enregistrement. Vous pouvez conserver les pièces jointes à un emplacement lié à une charge utile ou spécifier un chemin d’accès absolu aux pièces jointes.
 
 Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par exemple), tous les fichiers directement disponibles dans le dossier sont joints au document d’enregistrement. Si des fichiers sont présents dans les dossiers directement disponibles dans le chemin d’accès de la pièce jointe spécifiée, les fichiers sont inclus dans le document d’enregistrement en tant que pièces jointes. Les dossiers présents dans les dossiers directement disponibles sont ignorés.
 
