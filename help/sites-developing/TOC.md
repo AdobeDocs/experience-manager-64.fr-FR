@@ -10,8 +10,8 @@ feature: Developing
 role: Developer
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 83%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -118,7 +118,7 @@ ht-degree: 83%
       + [Intégration de SPA et d’Adobe Experience Platform Launch](spa-launch.md)
       + [SPA et rendu côté serveur](spa-ssr.md)
       + [Documents de référence SPA](spa-reference-materials.md)
-   + API HTTP [ ](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html)
+   + [API HTTP](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html)
    + [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html)
    + [Fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/experience-fragments.html)
    + [Présentation des fragments de contenu et des services de contenu dans AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
@@ -135,9 +135,9 @@ ht-degree: 83%
    + [Utilisation de l’outil VLT](ht-vlttool.md)
    + [Utilisation de l’outil de serveur proxy](ht-proxy-server.md)
    + [Extension AEM Brackets](aem-brackets.md)
-   + [AEM Developer Tools for Eclipse](aem-eclipse.md)
+   + [Developer Tools d’AEM pour Eclipse](aem-eclipse.md)
    + [Outil AEM Repo](aem-repo-tool.md)
-+ Personnalisation{#personlization}
++ Personnalisation {#personlization}
    + [ContextHub](contexthub.md)
    + [Guide de référence pour l’API JavaScript ContextHub](contexthub-api.md)
    + [Extension de ContextHub](ch-extend.md)
@@ -170,7 +170,7 @@ ht-degree: 83%
       + [Personnalisation de la structure Adobe Analytics](extending-analytics-framework.md)
       + [Implémentation de l’appellation des pages côté serveur pour Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
-      + [Configurations du service cloud](extending-cloud-config.md)
+      + [Configuration de Cloud Services](extending-cloud-config.md)
       + [Création d’un service cloud personnalisé](extending-cloud-config-custom-cloud.md)
    + [Création d’extensions personnalisées](extending-campaign-extensions.md)
    + Forms{#extending-forms}

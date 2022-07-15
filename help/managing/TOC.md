@@ -9,15 +9,15 @@ feature: Deploying
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Guide de l’utilisateur pour la gestion dans AEM 6.4 {#managing}
 
-+ [Gestion du guide de l’utilisateur](home.md)
++ [Guide de l’utilisateur pour la gestion](home.md)
 + Gestion : liste de contrôle des meilleures pratiques {#managing-best-practices-checklist}
    + [Gestion des projets : liste de contrôle des meilleures pratiques](best-practices.md)
    + [La liste de contrôle](best-practices-checklist.md)

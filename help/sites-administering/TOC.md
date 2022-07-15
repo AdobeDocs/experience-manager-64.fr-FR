@@ -10,8 +10,8 @@ feature: Administering
 role: Admin
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -95,8 +95,8 @@ ht-degree: 94%
    + [Prise en charge du chiffrement des propriétés de configuration](encryption-support-for-configuration-properties.md)
    + [Traitement des demandes RGPD pour AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Filtre de disposition du contenu](content-disposition-filter.md)
-+ Personnalisation {#personalization}
-   + [Personnalisation](personalization.md)
++ Personnalisation  {#personalization}
+   + [Personnalisation ](personalization.md)
    + [Configuration de ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
    + [Campagnes](campaigns.md)
@@ -133,7 +133,7 @@ ht-degree: 94%
    + [Notification de fin de prise en charge de la visionneuse Flash](flash-viewers-eol.md)
    + [Intégration à Adobe Creative Cloud](https://docs.adobe.com/content/help/fr-FR/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [Flux de produit](product-feed.md)
-   + [Intégration à Adobe Dynamic Tag Management](dtm.md)
+   + [Intégration à la gestion dynamique des balises](dtm.md)
    + [Souscription à Adobe Analytics et Adobe Target](opt-in.md)
    + [Portails et portlets AEM](aem-as-portal.md)
    + [Intégration à Dynamic Media Classic](scene7.md)
