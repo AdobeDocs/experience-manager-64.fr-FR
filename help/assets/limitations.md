@@ -8,9 +8,9 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: 0269ff24-582b-40f8-95e3-3ff4ac3a792f
-source-git-commit: efe93bcf60e0b71fded10ccb77da38c789e08ef9
+source-git-commit: 24c554a68a8ed711eb79167386d29bfa1beea1c2
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '283'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ Lorsque vous créez une visionneuse à 360° ou une visionneuse d’images, ou q
 
 ## Combinaisons de navigateur web et de système d’exploitation non prises en charge pour les visionneuses Dynamic Media {#unsupported-browser-os}
 
-Les visionneuses Dynamic Media ne prennent pas en charge les combinaisons de navigateur web et de système d’exploitation suivantes.
+Les visionneuses Dynamic Media ne prennent pas en charge les combinaisons de navigateur web et de système d’exploitation suivantes :
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
@@ -51,3 +51,26 @@ Les visionneuses Dynamic Media ne prennent pas en charge les combinaisons de nav
 * Mavericks Safari 7 + OS X 10.9
 * Safari 8 + iOS 8.4
 * Safari 8 + OS X 10.10 Yosemite
+
+## Fin de la prise en charge de TLS 1.0 et 1.1 {#tls}
+
+<!-- CQDOC-19433 -->
+
+À compter du 30 septembre 2022, les visionneuses Dynamic Media Adobe ne prendront plus en charge les éléments suivants :
+
+* TLS (Transport Layer Security) 1.0 et 1.1
+* Les chiffrements faibles suivants dans TLS 1.2 :
+   * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+   * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+   * `TLS_RSA_WITH_AES_256_GCM_SHA384`
+   * `TLS_RSA_WITH_AES_256_CBC_SHA256`
+   * `TLS_RSA_WITH_AES_256_CBC_SHA`
+   * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+   * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+   * `TLS_RSA_WITH_AES_128_GCM_SHA256`
+   * `TLS_RSA_WITH_AES_128_CBC_SHA256`
+   * `TLS_RSA_WITH_AES_128_CBC_SHA`
+   * `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+   * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+   * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+   * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
