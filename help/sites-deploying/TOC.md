@@ -10,8 +10,8 @@ feature: Deploying
 role: Architect
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '370'
+ht-degree: 93%
 
 ---
 

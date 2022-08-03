@@ -10,8 +10,8 @@ feature: Developing
 role: Developer
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '886'
+ht-degree: 83%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 0%
    + [Tester votre IU](hobbes.md)
    + [Composants pour les fragments de contenu](components-content-fragments.md)
    + [Obtention d’informations sur la page au format JSON](pageinfo.md)
-   + Internationalisation  {#internationalization}
+   + Internationalisation{#internationalization}
       + [Internationalisation de composants](i18n.md)
       + [Internationalisation des chaînes d’interface utilisateur](i18n-dev.md)
       + [Utilisation du traducteur pour gérer les dictionnaires](i18n-translator.md)
