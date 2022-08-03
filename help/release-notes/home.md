@@ -6,8 +6,8 @@ seo-description: The AEM Release Notes cover important information about the lat
 exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
 source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
