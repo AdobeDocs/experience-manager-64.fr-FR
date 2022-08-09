@@ -12,16 +12,16 @@ discoiquuid: d4636434-98a6-4cf7-bb92-4338da17c893
 legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: 89b8e8a7-103b-472e-8c29-3b6e5b7273b1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 28bfeff17c8f753f4f0d3f23a0e3843f159060cc
 workflow-type: tm+mt
-source-wordcount: '3414'
-ht-degree: 67%
+source-wordcount: '3406'
+ht-degree: 68%
 
 ---
 
 # Configuration des magasins de nœuds et des entrepôts de données dans AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 Dans Adobe Experience Manager (AEM), les données binaires peuvent être stockées indépendamment des nœuds de contenu. Les données binaires sont stockées dans un entrepôt de données alors que les nœuds de contenu sont stockés dans un magasin de nœuds.
 
@@ -125,7 +125,7 @@ Reportez-vous aux sections ci-dessous pour plus d’informations sur les différ
 >
 >Pour activer les entrepôts de données personnalisés, vous devez vérifier que `customBlobStore` est défini sur `true` dans le fichier de configuration de magasin de nœuds respectif ([magasin de nœuds de segment](/help/sites-deploying/data-store-config.md#segment-node-store) ou [magasin de nœuds de document](/help/sites-deploying/data-store-config.md#document-node-store)).
 
-### Entrepôt de données basé sur les fichiers {#file-data-store}
+### Banque de données Fichier {#file-data-store}
 
 Il s’agit de l’implémentation de [FileDataStore ](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/core/data/FileDataStore.html) présent dans Jackrabbit 2, qui offre une méthode pour stocker les données binaires comme tout autre fichier sur le système de fichiers. Elle utilise la variable `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID.
 
@@ -213,7 +213,7 @@ Si vous devez effectuer une mise à niveau vers une nouvelle version du connecte
 Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 
 * accessKey : Clé d’accès AWS.
-* secretKey : clé d’accès secrète AWS. **Remarque :** Vous pouvez également : [Rôles IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) peut être utilisé pour l’authentification. Si vous utilisez des rôles IAM, vous n’avez plus besoin de spécifier la variable `accessKey` et `secretKey`.
+* secretKey : clé d’accès secrète AWS. **Remarque :** Lorsque la variable `accessKey` ou `secretKey` n’est pas spécifié, alors la variable [Rôle IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) est utilisée pour l’authentification.
 * s3Bucket: Nom du compartiment.
 * s3Region : La région du seau.
 * path: Chemin d’accès de l’entrepôt de données. La valeur par défaut est **&lt;aem install=&quot;&quot; folder=&quot;&quot;>/repository/datastore**
