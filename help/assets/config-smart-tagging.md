@@ -5,16 +5,23 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: bd65633e85226659df99da1d3834fa18a89de11e
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 49%
+source-wordcount: '1304'
+ht-degree: 46%
 
 ---
 
 # Configuration du balisage des ressources à l’aide du service de contenu dynamique {#configure-asset-tagging-using-the-smart-content-service}
 
 Vous pouvez intégrer des [!DNL Adobe Experience Manager] avec le service de contenu dynamique utilisant [!DNL Adobe Developer Console]. Utilisez cette configuration pour accéder au service de contenu dynamique à partir de [!DNL Experience Manager].
+
+>[!NOTE]
+>
+>* Les services de contenu dynamique ne sont plus disponibles pour les nouvelles [!DNL Experience Manager Assets] Clients On-Premise. Les clients On-Premise existants, pour lesquels cette fonctionnalité est déjà activée, peuvent continuer à utiliser les services de contenu dynamique.
+>* Smart Content Services est disponible pour les [!DNL Experience Manager Assets] Clients Managed Services, pour lesquels cette fonctionnalité est déjà activée.
+>* Nouveau [!DNL Experience Manager Assets] Les clients Managed Services peuvent suivre les instructions mentionnées dans cet article pour configurer les services de contenu dynamique.
+
 
 L’article détaille les tâches essentielles suivantes qui sont requises pour configurer le service de contenu dynamique. À l’arrière-plan, la variable [!DNL Experience Manager] le serveur authentifie vos informations d’identification de service auprès de la fonction [!DNL Adobe Developer Console] passerelle avant de transférer votre demande vers le service de contenu dynamique.
 
@@ -28,7 +35,7 @@ L’article détaille les tâches essentielles suivantes qui sont requises pour 
 
 1. Éventuellement, [activation du balisage automatique lors du chargement de ressources](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Avant d’utiliser le service de contenu dynamique, assurez-vous des points suivants pour créer une intégration sur [!DNL Adobe Developer Console]:
 
@@ -50,7 +57,14 @@ Un certificat public vous permet d’authentifier votre profil sur [!DNL Adobe D
 
 1. Dans la boîte de dialogue **[!UICONTROL Service de contenu dynamique AEM]**, utilisez les valeurs suivantes :
 
-   **[!UICONTROL URL du service]**: `https://mc.adobe.io/marketingcloud/smartcontent`
+   **[!UICONTROL URL du service]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
+
+   Par exemple, `https://smartcontent.adobe.io/apac`. Vous pouvez indiquer `na`, `emea`, ou `apac` comme les régions où votre instance de création de Experience Manager est hébergée.
+
+   >[!NOTE]
+   >
+   >Si le service géré Experience Manager est mis en service avant le 1er septembre 2022, utilisez l’URL de service suivante :
+   >`https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Serveur d’autorisation]**: `https://ims-na1.adobelogin.com`
 
@@ -90,11 +104,11 @@ Une fois qu’un certificat a expiré, il n’est plus approuvé. Vous ne pouvez
 
 1. Pour télécharger un certificat public, cliquez sur **[!UICONTROL Télécharger le certificat public pour l’intégration Oauth]**.
 
-1. Accédez à [https://console.adobe.io](https://console.adobe.io) et accédez aux services de contenu intelligent existants sur la page **[!UICONTROL Intégrations]**. Téléchargez le nouveau certificat. Pour plus d’informations, voir les instructions de la section [Création de l’intégration Adobe Developer Console](#create-adobe-i-o-integration).
+1. Accédez à [https://console.adobe.io](https://console.adobe.io) et accédez aux services de contenu intelligent existants sur la page **[!UICONTROL Intégrations]**. Téléchargez le nouveau certificat. Pour plus d’informations, voir les instructions de la section [Création de l’intégration de la console Adobe Developer](#create-adobe-i-o-integration).
 
-## Création de l’intégration Adobe Developer Console {#create-adobe-i-o-integration}
+## Création de l’intégration de la console Adobe Developer {#create-adobe-i-o-integration}
 
-Pour utiliser les API de service de contenu dynamique, créez une intégration dans Adobe Developer Console afin d’obtenir [!UICONTROL Clé API] (généré dans [!UICONTROL ID CLIENT] champ de l’intégration d’Adobe Developer Console), [!UICONTROL ID DE COMPTE TECHNIQUE], [!UICONTROL ID D’ORGANISATION], et [!UICONTROL SECRET CLIENT] pour [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager].
+Pour utiliser les API de service de contenu dynamique, créez une intégration dans la console Adobe Developer afin d’obtenir [!UICONTROL Clé API] (généré dans [!UICONTROL ID CLIENT] champ de l’intégration de la console Adobe Developer), [!UICONTROL ID DE COMPTE TECHNIQUE], [!UICONTROL ID D’ORGANISATION], et [!UICONTROL SECRET CLIENT] pour [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager].
 
 1. Accédez à l’URL [https://console.adobe.io](https://console.adobe.io/) dans un navigateur. Sélectionnez le compte approprié et vérifiez que le rôle d’organisation associé est administrateur système.
 
@@ -114,11 +128,11 @@ Pour utiliser les API de service de contenu dynamique, créez une intégration d
 
    ![Dans l’onglet Overview (Aperçu), vous pouvez consulter les informations fournies pour l’intégration.](assets/integration_details.png)
 
-   *Figure : Détails de l’intégration dans Adobe Developer Console*
+   *Figure : Détails de l’intégration dans la console Adobe Developer*
 
 ## Configuration du service de contenu dynamique {#configure-smart-content-service}
 
-Pour configurer l’intégration, utilisez les valeurs de [!UICONTROL ID DE COMPTE TECHNIQUE], [!UICONTROL ID D’ORGANISATION], [!UICONTROL SECRET CLIENT], et [!UICONTROL ID CLIENT] des champs de l’intégration d’Adobe Developer Console. La création d’une configuration de cloud de balises intelligentes permet d’authentifier les requêtes d’API provenant de [!DNL Experience Manager] déploiement.
+Pour configurer l’intégration, utilisez les valeurs de [!UICONTROL ID DE COMPTE TECHNIQUE], [!UICONTROL ID D’ORGANISATION], [!UICONTROL SECRET CLIENT], et [!UICONTROL ID CLIENT] à partir de l’intégration de la console Adobe Developer. La création d’une configuration de cloud de balises intelligentes permet d’authentifier les requêtes d’API provenant de [!DNL Experience Manager] déploiement.
 
 1. Dans [!DNL Experience Manager], accédez à **[!UICONTROL Outils > Cloud Service > Cloud Services hérités]** pour ouvrir le [!UICONTROL Cloud Services] console.
 
@@ -126,7 +140,7 @@ Pour configurer l’intégration, utilisez les valeurs de [!UICONTROL ID DE COMP
 
 1. Dans la boîte de dialogue **[!UICONTROL Service de contenu dynamique AEM]**, utilisez les valeurs préremplies pour les champs **[!UICONTROL URL de service]** et **[!UICONTROL Serveur d’autorisation]**.
 
-1. Pour les champs [!UICONTROL Clé Api], [!UICONTROL Identifiant du compte technique], [!UICONTROL ID d’organisation], et [!UICONTROL Secret du client], copiez et utilisez les valeurs suivantes générées dans [Intégration d’Adobe Developer Console](#create-adobe-i-o-integration).
+1. Pour les champs [!UICONTROL Clé Api], [!UICONTROL Identifiant du compte technique], [!UICONTROL ID d’organisation], et [!UICONTROL Secret du client], copiez et utilisez les valeurs suivantes générées dans [Intégration de la console Adobe Developer](#create-adobe-i-o-integration).
 
    | [!UICONTROL Paramètres du service de balisage intelligent des ressources] | [!DNL Adobe Developer Console] champs d&#39;intégration |
    |--- |--- |
