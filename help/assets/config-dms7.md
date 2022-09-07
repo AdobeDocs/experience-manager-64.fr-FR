@@ -8,10 +8,10 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
+source-git-commit: 4fdb290ddd7493a7ddbe399ebb76189718cff989
 workflow-type: tm+mt
-source-wordcount: '5589'
-ht-degree: 56%
+source-wordcount: '5614'
+ht-degree: 55%
 
 ---
 
@@ -23,9 +23,9 @@ Si vous utilisez Adobe Experience Manager configuré pour différents environnem
 
 Le schéma d’architecture suivant décrit le fonctionnement de Dynamic Media – mode Scene7.
 
-Avec la nouvelle architecture, Experience Manager est responsable des ressources principales et des synchronisations avec Dynamic Media pour le traitement et la publication des ressources :
+Avec la nouvelle architecture, Experience Manager est responsable des ressources Principales et des synchronisations avec Dynamic Media pour le traitement et la publication des ressources :
 
-1. Lorsque la ressource principale est téléchargée vers Experience Manager, elle est répliquée vers Dynamic Media. À ce stade, Dynamic Media gère l’intégralité du traitement des ressources et de la génération du rendu, comme le codage vidéo et les variantes dynamiques d’une image.
+1. Lorsque la ressource Principale est téléchargée vers Experience Manager, elle est répliquée vers Dynamic Media. À ce stade, Dynamic Media gère l’intégralité du traitement des ressources et de la génération du rendu, comme le codage vidéo et les variantes dynamiques d’une image.
 1. Une fois les rendus générés, Experience Manager peut accéder en toute sécurité aux rendus Dynamic Media distants et les prévisualiser (aucune donnée binaire n’est renvoyée à l’instance de Experience Manager).
 1. Une fois que le contenu est prêt à être publié et approuvé, il déclenche l’envoi du contenu par le service Dynamic Media vers les serveurs de diffusion et la mise en cache du contenu sur le réseau de diffusion de contenu.
 
@@ -33,13 +33,13 @@ Avec la nouvelle architecture, Experience Manager est responsable des ressources
 
 ## Activation de Dynamic Media en mode Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Par défaut, ce module complémentaire est désactivé. ](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) Pour tirer parti des fonctionnalités de Dynamic Media, vous devez l’activer.
+[Par défaut, ce module complémentaire est désactivé. ](https://www.adobe.com/marketing-cloud/enterprise-content-management/dynamic-media.html) Pour tirer parti des fonctionnalités de Dynamic Media, vous devez l’activer.
 
 >[!WARNING]
 >
 >Dynamic Media : le mode Scene7 est pour la variable *Instance de création de Experience Manager uniquement*. Par conséquent, configurez `runmode=dynamicmedia_scene7`sur l’instance d’auteur du Experience Manager, *not* l’instance de publication du Experience Manager.
 
-Pour activer Dynamic Media, vous devez lancer le Experience Manager de démarrage à l’aide du `dynamicmedia_scene7` le mode d’exécution à partir de la ligne de commande en saisissant ce qui suit dans une fenêtre de terminal (l’exemple de port utilisé est 4502) :
+Pour activer Dynamic Media, vous devez démarrer Experience Manager à l’aide du `dynamicmedia_scene7` le mode d’exécution à partir de la ligne de commande en saisissant ce qui suit dans une fenêtre de terminal (l’exemple de port utilisé est 4502) :
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
@@ -89,7 +89,11 @@ Modifiez le mot de passe avant de configurer les Cloud Services Dynamic Media. U
 
 1. Si la connexion est établie, vous pouvez également définir les éléments suivants :
 
-   * **[!UICONTROL Société]** : nom du compte Dynamic Media. Il est possible de disposer de plusieurs comptes Dynamic Media pour différentes sous-marques, divisions ou différents environnements d’évaluation/de production.
+   * **[!UICONTROL Société]** : nom du compte Dynamic Media.
+
+      >[!IMPORTANT]
+      >
+      >Une seule configuration Dynamic Media en Cloud Services est prise en charge sur une instance de Experience Manager ; n’ajoutez pas plusieurs configurations. Plusieurs configurations Dynamic Media sur une instance de Experience Manager sont _not_ pris en charge ou recommandé par Adobe.<!-- CQDOC-19579 and CQDOC-19612 -->
    * **[!UICONTROL Chemin d’accès au dossier racine de l’entreprise]**
    * **[!UICONTROL Publication des ressources]** : l’option **[!UICONTROL Immédiatement]** signifie que lorsque les ressources sont téléchargées, le système les assimile et fournit instantanément l’URL/le code intégré. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources. L’option **[!UICONTROL Lors de l’activation]** signifie que vous devez publier explicitement la ressource avant qu’un lien URL/code intégré ne soit fourni.
    * **[!UICONTROL Serveur d’aperçu sécurisé]** : permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. En d’autres termes, une fois les rendus générés, Experience Manager peut accéder en toute sécurité aux rendus Dynamic Media distants et les prévisualiser (aucune donnée binaire n’est renvoyée à l’instance de Experience Manager).
@@ -161,7 +165,7 @@ L’écran Image Server permet de définir les paramètres par défaut pour la d
 
 Pour ouvrir la [!UICONTROL Paramètres généraux de l’application] page, dans la barre de navigation globale de Dynamic Media Classic, appuyez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
 
-**[!UICONTROL Serveurs]** : au moment de la mise en service du compte, Dynamic Media fournit automatiquement les serveurs attribués à votre entreprise. Ces serveurs sont utilisés pour créer des chaînes URL pour votre site web et vos applications. Ces appels d’URL sont spécifiques à votre compte. Ne modifiez aucun nom de serveur, sauf si le support Experience Manager vous a demandé de le faire.
+**[!UICONTROL Serveurs]** : au moment de la mise en service du compte, Dynamic Media fournit automatiquement les serveurs attribués à votre entreprise. Ces serveurs sont utilisés pour construire des chaînes d’URL pour votre site Web et vos applications. Ces appels d’URL sont spécifiques à votre compte. Ne modifiez aucun nom de serveur, sauf si le support Experience Manager vous a demandé de le faire.
 
 **[!UICONTROL Écraser les images]** : Dynamic Media ne permet pas que deux fichiers portent le même nom. L’identifiant de l’URL de chaque élément (le nom de fichier sans l’extension) doit être unique. Ces options spécifient la manière dont les ressources de remplacement sont chargées : elles peuvent remplacer l’original ou devenir un doublon. Les ressources en double sont renommées en ajoutant « -1 » (par exemple, chaise.tif devient chaise-1.tif). Ces options affectent les ressources chargées dans un dossier autre que celui d’origine ou les ressources dont l’extension est différente de celle du fichier d’origine (telle que JPG, TIF ou PNG).
 
@@ -172,7 +176,7 @@ Pour ouvrir la [!UICONTROL Paramètres généraux de l’application] page, dans
 >Pour maintenir la cohérence avec Experience Manager, sélectionnez **[!UICONTROL Remplacer dans le dossier actuel, même nom/même extension de fichier de base]**.
 
 * **[!UICONTROL Remplacer dans un dossier, même nom/même extension de fichier de base]** - Nécessite que l’image de remplacement ait la même extension que l’image d’origine (par exemple, `chair.jpg` remplace `chair.jpg` et non `chair.tif`). Vous pouvez néanmoins télécharger l’image de remplacement dans un dossier différent de celui de l’image d’origine. L’image mise à jour se trouve dans le nouveau dossier ; le fichier d’origine n’est plus disponible à l’emplacement d’origine..
-* **[!UICONTROL Écraser dans un dossier, même nom de fichier, extension indépendante]** : cette option est la règle de remplacement la plus inclusive. Elle vous permet de charger une image de remplacement dans un dossier autre que celui de l’image d’origine, de charger un fichier dont l’extension est différente de celle du fichier d’origine et de remplacer le fichier d’origine. Si le fichier d’origine se trouve dans un dossier différent, l’image de remplacement est enregistrée dans le nouveau dossier où elle a été chargée.
+* **[!UICONTROL Écraser dans un dossier, même nom de fichier, extension indépendante]** : cette option est la règle de remplacement la plus inclusive. Elle vous permet de charger une image de remplacement dans un dossier autre que celui de l’image d’origine, de charger un fichier avec une extension de nom de fichier différente et de remplacer le fichier original. Si le fichier d’origine se trouve dans un dossier différent, l’image de remplacement est enregistrée dans le nouveau dossier où elle a été chargée.
 
 **[!UICONTROL Profils de couleurs par défaut]** : voir [Configuration de la gestion des couleurs](#configuring-color-management) pour plus d’informations.
 
@@ -233,7 +237,7 @@ Voir la section [Chargement des ressources](managing-assets-touch-ui.md#uploadin
 1. Sur le côté droit de la page CRXDE Lite, dans la partie inférieure :
 
    * Cliquez deux fois sur le champ **[!UICONTROL enabled]**. Par défaut, tous les types MIME des ressources sont activés (définis sur **[!UICONTROL true]**), ce qui signifie que les ressources sont synchronisées avec Dynamic Media pour traitement. Si vous voulez exclure ce type MIME de ressource du traitement, définissez ce paramètre sur **[!UICONTROL false]**.
-   * Cliquez deux fois sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Voir [Types MIME pris en charge](assets-formats.md#supported-mime-types) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
+   * Cliquez deux fois sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Voir [Types Mime pris en charge](assets-formats.md#supported-mime-types) pour une liste de valeurs de paramètre de traitement autorisées que vous pouvez utiliser pour un type MIME donné.
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -244,7 +248,7 @@ Voir la section [Chargement des ressources](managing-assets-touch-ui.md#uploadin
 
 #### Ajout de types MIME personnalisés pour les formats non pris en charge {#adding-custom-mime-types-for-unsupported-formats}
 
-Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris en charge dans Experience Manager Assets. Pour vous assurer que tout nouveau noeud ajouté en CRXDE Lite n’est pas supprimé par Experience Manager, déplacez le type MIME avant **[!UICONTROL image_]** et sa valeur activée est définie sur **[!UICONTROL false]**.
+Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris en charge dans Experience Manager Assets. Pour vous assurer que tout nouveau noeud ajouté dans CRXDE Lite n’est pas supprimé par Experience Manager, déplacez le type MIME avant **[!UICONTROL image_]** et sa valeur activée est définie sur **[!UICONTROL false]**.
 
 **Pour ajouter des types MIME personnalisés pour des formats non pris en charge:**
 
@@ -290,7 +294,7 @@ Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris e
 
 1. Avec le type MIME `image_vnd.dwg` sélectionné toujours dans l’arborescence, dans la variable **[!UICONTROL Propriétés]** , dans le **[!UICONTROL enabled]** , sous **[!UICONTROL Valeur]** en-tête de colonne, double-cliquez sur la valeur pour ouvrir la variable **[!UICONTROL Valeur]** liste déroulante.
 
-1. Tapez `false` dans le champ (ou sélectionnez `false` dans la liste déroulante).
+1. Tapez `false` dans le champ (ou sélectionnez `false` dans la liste déroulante).
 
    ![False value](assets/2019-08-02_16_60_30.png)
 
@@ -327,7 +331,7 @@ Deux éléments sont disponibles pour la définition, **[!UICONTROL Correspondan
 
    >[!NOTE]
    >
-   >Les champs de formulaire désactivés ne permettent pas de confirmer que vos expressions régulières sont correctes. Vous verrez les résultats de l’expression régulière que vous créez pour chaque élément après la ligne de résultat. L’expression régulière est visible en entier en bas de la page.
+   >Les champs de formulaire désactivés ne permettent pas de confirmer que vos expressions régulières sont correctes. Vous voyez les résultats de l’expression régulière que vous créez pour chaque élément après la ligne Résultat. L’expression régulière est visible en entier en bas de la page.
 
 1. Développez chaque élément selon vos besoins et indiquez les conventions de nommage que vous souhaitez utiliser.
 1. Si nécessaire, effectuez l’une des opérations suivantes :
