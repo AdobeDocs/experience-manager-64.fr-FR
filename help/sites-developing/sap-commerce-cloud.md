@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 exl-id: fa5b9b61-7dba-42e0-8fbd-4a96617569d8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 84%
+source-wordcount: '2310'
+ht-degree: 83%
 
 ---
 
@@ -40,7 +40,7 @@ Un certain nombre de composants d’AEM prêts à l’emploi sont fournis pour u
 * Panier
 * Passage en caisse
 
-Pour rechercher, le crochet d’intégration fourni vous permet d’utiliser la recherche AEM, la recherche du système eCommerce, une recherche tiers (comme Search&amp;Promote) ou une combinaison de ces éléments.
+Pour la recherche, un crochet d’intégration est fourni qui vous permet d’utiliser la recherche AEM, la recherche du système eCommerce, une recherche tierce ou une combinaison de celle-ci.
 
 ## Sélection du moteur eCommerce {#ecommerce-engine-selection}
 
@@ -566,7 +566,7 @@ Un système frontal AEM peut être placé devant une mise en œuvre hybris exist
 
       * Créez un utilisateur hybris avec un mot de passe aléatoire au niveau cryptographique.
       * Stockez le nom d’utilisateur hybris dans l’annuaire d’utilisateurs de l’utilisateur AEM.
-   * Voir: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
+   * Voir la section: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
 
 * hybris -> AEM
@@ -577,7 +577,7 @@ Un système frontal AEM peut être placé devant une mise en œuvre hybris exist
       * En cas de réussite, créez un utilisateur dans AEM avec le même mot de passe (la valeur salt spécifique à AEM engendre un hachage spécifique à AEM).
    * L’algorithme ci-dessus est mise en œuvre dans un `AuthenticationInfoPostProcessor` Sling.
 
-      * Voir: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
+      * Voir la section: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
 
 
 ### Personnalisation du processus d’importation {#customizing-the-import-process}

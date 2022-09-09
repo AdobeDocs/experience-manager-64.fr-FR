@@ -10,10 +10,10 @@ topic-tags: repo_restructuring
 discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Upgrading
 exl-id: d0cdb15d-196a-44e3-bd98-91588b6979ab
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 81%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +36,6 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
 * [Structure de page](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#page-scaffolding)
 * [Grille réactive LESS](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#responsive-grid-less)
 * [Conceptions de modèle statique](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#static-template-designs)
-* [Bibliothèques clientes d’intégration Adobe Search and Promote](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#adobe-search-and-promote-integration-client-libraries)
 * [Bibliothèques clientes d’intégration Adobe Target](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#adobe-target-integration-client-libraries)
 * [Bibliothèques clientes WCM Foundation](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#wcm-foundation-client-libraries)
 
@@ -376,38 +375,38 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
  </tbody>
 </table>
 
-### Bibliothèques clientes d’intégration Adobe Search and Promote {#adobe-search-and-promote-integration-client-libraries}
+<!-- Search&Promote was end of life September 1, 2022. ### Adobe Search and Promote Integration Client Libraries {#adobe-search-and-promote-integration-client-libraries}
 
 <table> 
  <tbody>
   <tr>
-   <td><strong>Emplacement précédent</strong></td> 
+   <td><strong>Previous location</strong></td> 
    <td><p><code>/etc/clientlibs/foundation/searchpromote</code></p> </td> 
   </tr>
   <tr>
-   <td><strong>Nouveaux emplacements</strong></td> 
+   <td><strong>New location(s)</strong></td> 
    <td><code>/libs/cq/searchpromote/clientlibs/searchpromote</code></td> 
   </tr>
   <tr>
-   <td><strong>Conseil de restructuration</strong></td> 
-   <td><p>Toute utilisation personnalisée de ces bibliothèques clientes doit référencer la bibliothèque cliente par catégorie, et non par le chemin.</p> 
+   <td><strong>Restructuring guidance</strong></td> 
+   <td><p>Any custom use of these Client Libraries should reference the Client Library by category, and not by path.</p> 
     <ol> 
-     <li>Toute référence à la bibliothèque cliente par chemin d’accès à l’emplacement précédent doit être mise à jour pour utiliser l’<a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">infrastructure de référencement des bibliothèques clientes AEM</a>.</li> 
-     <li>Si l’infrastructure de référencement des bibliothèques clientes AEM ne peut pas être utilisée, le chemin absolu des bibliothèques clientes peut être référencé via la servlet proxy des bibliothèques clientes AEM :</li> 
+     <li>Any references to the Client Library by path at the Previous Location should be updated to use <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM's Client Library referencing framework</a>.</li> 
+     <li>If AEM's Client Library referencing framework cannot be used, the absolute path of the Client Libraries can be referenced via AEM's Client Library Proxy servlet:</li> 
     </ol> 
     <ul> 
      <li><code>/etc.clientlibs/cq/searchpromote/clientlibs/searchpromotei.js</code></li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td><strong>Remarques</strong></td> 
-   <td><p>La modification de ces bibliothèques clientes n’a jamais été prise en charge.</p> <p>Pour obtenir les catégories des bibliothèques clientes, accédez à chaque nœud cq:ClientLIbraryFolder via CRXDELite et inspectez la propriété des catégories :</p> 
+   <td><strong>Notes</strong></td> 
+   <td><p>Editing of these Client Libraries was never supported.</p> <p>To obtain the Client Library categories, visit each cq:ClientLIbraryFolder node via CRXDELite and inspect the categories property:</p> 
     <ul> 
      <li><code>/libs/cq/searchpromote/clientlibs/searchpromote</code></li> 
     </ul> </td> 
   </tr>
  </tbody>
-</table>
+</table> -->
 
 ### Bibliothèques clientes d’intégration Adobe Target {#adobe-target-integration-client-libraries}
 

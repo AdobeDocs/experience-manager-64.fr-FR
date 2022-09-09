@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: d8ee3b57-633a-425e-bf36-646f0e0bad52
 exl-id: 3faf9d09-8899-4916-b768-8ff39900b959
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 83%
+source-wordcount: '1862'
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,7 @@ Un certain nombre de composants d’AEM prêts à l’emploi sont fournis pour u
 * Passage en caisse
 * Rechercher
 
-Pour la recherche, un hook d’intégration permet d’utiliser la recherche AEM, une recherche tierce (comme Search &amp; Promote) ou une combinaison de ceux-ci.
+Pour la recherche, un crochet d’intégration est fourni qui vous permet d’utiliser la recherche AEM, une recherche tierce ou une combinaison de celle-ci.
 
 ## Sélection du moteur eCommerce {#ecommerce-engine-selection}
 

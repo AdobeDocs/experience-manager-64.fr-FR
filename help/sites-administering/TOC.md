@@ -8,7 +8,7 @@ breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
 feature: Administering
 role: Admin
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 7eaa338be262d953abc045ab88432507021734ca
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -132,8 +132,7 @@ ht-degree: 0%
    + [Intégration à Adobe Campaign Standard](campaignstandard.md)
    + [Notification de fin de prise en charge de la visionneuse Flash](flash-viewers-eol.md)
    + [Intégration à Adobe Creative Cloud](https://docs.adobe.com/content/help/fr-FR/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
-   + [Flux de produit](product-feed.md)
-   + [Intégration à la gestion dynamique des balises](dtm.md)
+   + [Intégration à Adobe Dynamic Tag Management](dtm.md)
    + [Souscription à Adobe Analytics et Adobe Target](opt-in.md)
    + [Portails et portlets AEM](aem-as-portal.md)
    + [Intégration à Dynamic Media Classic](scene7.md)
@@ -150,7 +149,6 @@ ht-degree: 0%
    + [Configuration manuelle de l’intégration à Adobe Target](target-configuring.md)
    + [Conditions préalables à l’intégration à Adobe Target](target-requirements.md)
    + [Adobe Classifications](adobeanalytics-classifications.md)
-   + [Intégration à Adobe Search&amp;Promote](search-and-promote.md)
    + [Intégration de solutions](integration.md)
    + [Intégration de fragments d’expérience dans Adobe Target](experience-fragments-target.md)
 + Bonnes pratiques {#bestpractices}

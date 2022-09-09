@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: e2295f71-ea3a-483c-9d7b-29acd151845d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '890'
 ht-degree: 61%
 
 ---
@@ -23,12 +23,12 @@ Avec Adobe Experience Manager, vous pouvez intégrer facilement les produits Ado
 * Adobe Target donne aux marketeurs la possibilité d’adapter continuellement leur contenu en ligne à leurs clients de manière à accroître le taux de conversion.
 * Adobe Dynamic Media Classic automatise la gestion des médias, simplifie la publication web et améliore les expériences web, le tout dans un environnement hébergé.
 * Adobe Dynamic Tag Management offre aux marketeurs des outils intuitifs grâce auxquels ils peuvent gérer facilement et rapidement un nombre illimité de balises Adobe et de tierces parties.
-* Adobe Search&amp;Promote permet aux marketeurs de contrôler et d’optimiser les résultats de la recherche sur leurs sites.
+<!-- Search&Promote was end of life September 1, 2022. * Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites. -->
 * Adobe Campaign vous permet de gérer le contenu de livraison de courrier électronique directement dans Adobe Experience Manager.
 
 En outre, vous pouvez intégrer Adobe Experience Manager à la [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) et [services tiers](/help/sites-administering/third-party-services.md).
 
-## Intégration à Adobe Analytics {#integrating-with-adobe-analytics}
+## Intégration à Adobe Analytics  {#integrating-with-adobe-analytics}
 
 [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) est la solution de pointe du secteur qui fournit aux spécialistes du marketing numérique un emplacement unique où mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne sur plusieurs canaux marketing. Il fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies numériques et des initiatives marketing. Avec Adobe Analytics, les marketeurs peuvent rapidement identifier les chemins d’accès les plus rentables sur un site web, segmenter le trafic afin de repérer les visiteurs web ayant le plus de valeur, déterminer où se rendent les visiteurs quand ils quittent leur site et identifier les mesures clés de réussite pour les campagnes de marketing en ligne. Adobe Analytics fait partie de la suite d’applications d’optimisation des activités en ligne Adobe Marketing Cloud.
 
@@ -81,19 +81,19 @@ Pour plus d’informations sur l’intégration d’Adobe Experience Manager à 
 
 [Adobe Dynamic Tag Management offre aux marketeurs des outils intuitifs grâce auxquels ils peuvent gérer facilement et rapidement un nombre illimité de balises Adobe et de tierces parties. ](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) Vous pouvez optimiser pratiquement n’importe quel élément en ligne, avec une plus grande maîtrise et plus de souplesse, tout en dépendant moins des ressources informatiques.
 
-[Intégration de la gestion dynamique des balises Adobe](/help/sites-administering/dtm.md) avec Adobe Experience Manager afin que vous puissiez utiliser les propriétés web de Dynamic Tag Management pour effectuer le suivi des sites Adobe Experience Manager.
+[Intégration d’Adobe Dynamic Tag Management](/help/sites-administering/dtm.md) avec Adobe Experience Manager afin que vous puissiez utiliser vos propriétés web Dynamic Tag Management pour effectuer le suivi des sites Adobe Experience Manager.
 
 ## Intégration à Adobe Audience Manager {#integrating-with-adobe-audience-manager}
 
 L’intégration d’Audience Manager a été supprimée dans Adobe Experience Manager 6.3.
 
-## Intégration à Search&amp;Promote {#integrating-with-search-promote}
+<!-- Search&Promote was end of life September 1, 2022. ## Integrating with Search&Promote {#integrating-with-search-promote} -->
 
-Avec Adobe Search&amp;Promote, les marketeurs peuvent optimiser la manière dont les utilisateurs parcourent, recherchent, comparent et sélectionnent des produits et du contenu sur les sites web et mobiles. Les entreprises peuvent facilement promouvoir des éléments prioritaires en fonction des objectifs de l’entreprise et de l’intention du visiteur, ainsi qu’automatiser l’activité de marchandisage et de promotion au moyen de déclencheurs ou de mesures basés sur des indicateurs de performance clés.
+<!-- Search&Promote was end of life September 1, 2022. Adobe Search&Promote enables marketers to optimize how visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, as well as automate merchandising and promotions activity by way of KPI-based triggers or metrics. -->
 
-Adobe Search&amp;Promote est une application hébergée, évolutive et fiable de recherche de sites, extensible jusqu’à plusieurs millions de pages ou de produits, pour les entreprises en ligne au trafic de visite important allant de la vente au détail aux sites d’informations. Cet outil offre une maîtrise inégalée aux marketeurs et une pertinence corroborée par des mesures.
+<!-- Search&Promote was end of life September 1, 2022. Adobe Search&Promote is a reliable and scalable hosted site search application, capable of scaling to millions of pages or products, for heavily visited online businesses ranging from retail to news sites. It offers unprecedented levels of marketer control and metrics-based relevance. -->
 
-Pour plus d’informations sur l’intégration d’Adobe Experience Manager et de Search &amp; Promote, voir [Intégration à Adobe Search &amp; Promote](/help/sites-administering/search-and-promote.md).
+<!-- Search&Promote was end of life September 1, 2022. For information about integrating Adobe Experience Manager and Search&Promote, see [Integrating with Adobe Search&Promote](/help/sites-administering/search-and-promote.md). -->
 
 ## Intégration à Adobe Campaign {#integrating-with-adobe-campaign}
 

@@ -1,7 +1,7 @@
 ---
 title: eCommerce
 seo-title: eCommerce
-description: 'AEM eCommerce aide les spécialistes du marketing à offrir des expériences d’achat personnalisées sur le web, les appareils mobiles et les médias sociaux. '
+description: AEM eCommerce aide les spécialistes du marketing à offrir des expériences d’achat personnalisées sur le web, les appareils mobiles et les médias sociaux.
 seo-description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
 uuid: 14af7a3a-7211-4a56-aeef-1603128d5d8a
 contentOwner: Guillaume Carlino
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
 feature: Commerce Integration Framework
 exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 79%
+source-wordcount: '756'
+ht-degree: 78%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe propose deux versions de la structure d’intégration de Commerce :
 | Évolutivité | - Peut prendre en charge jusqu’à quelques millions de produits (selon le cas d’utilisation) <br> - Mise en cache sur Dispatcher | - Aucune limitation de volume <br>- Mise en cache sur Dispatcher ou CDN |
 | Modèle de données normalisé | Non | Oui, schéma GraphQL Magento |
 | Disponibilité | Oui :<br> - Commerce Cloud SAP (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4) <br>- Commerce Cloud Salesforce (Connecteur Open Source pour prendre en charge AEM 6.4) | Oui via open source via GitHub. <br> Magento Commerce (prend en charge Magento 2.3.2 (par défaut) et compatible avec Magento 2.3.1). |
-| Quand utiliser la personnalisation | Cas d’utilisation limités : Dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés | Solution conseillée dans la plupart des cas d’utilisation |
+| Quand l’utiliser | Cas d’utilisation limités : Dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés | Solution conseillée dans la plupart des cas d’utilisation |
 
 Conjointement avec la gestion d’informations sur les produits, eCommerce gère les activités d’un site web de vente de produits dans une boutique en ligne :
 
@@ -90,7 +90,7 @@ AEM eCommerce fournit ce qui suit :
 
    * Recherche AEM
    * Recherche du système de commerce électronique
-   * Recherche tierce (Search&amp;Promote par exemple)
+   * recherche tierce
    * Ou une combinaison de ces trois fonctions
 
    ![chlimage_1-151](assets/chlimage_1-151.png)

@@ -4,14 +4,14 @@ product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.4 Classic UI
-breadcrumb-title: Guide de création de l’interface utilisateur classique
+breadcrumb-title: Guide de création dans l’interface utilisateur classique
 user-guide-description: Ce guide couvre les concepts de création dans AEM dans l’interface utilisateur classique.
 feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 79%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,6 @@ ht-degree: 79%
    + [Utilisation des balises](classic-feature-tags.md)
    + [Génération de modèles automatique](classic-feature-scaffolding.md)
    + [Configuration de composants en mode de conception](classic-page-author-design-mode.md)
-   + [Ajout de fonctionnalités Search&amp;Promote à une page](classic-feature-search-promote.md)
    + [Composants](classic-page-author-default-components.md)
 + Workflows {#workflows}
    + [Participation aux workflows](classic-workflows-participating.md)
@@ -61,7 +60,7 @@ ht-degree: 79%
    + [Création de lancements](classic-launches-creating.md)
    + [Modification de lancements](classic-launches-editing.md)
    + [Conversion de lancements](classic-launches-promoting.md)
-+ Personnalisation {#personalization}
++ Personnalisation  {#personalization}
    + [Compréhension de la segmentation](classic-personalization-campaigns-segmentation.md)
    + [Gestion de campagnes](classic-personalization-campaigns.md)
    + [Teasers et stratégies](classic-personalization-campaigns-teasers-strategy.md)

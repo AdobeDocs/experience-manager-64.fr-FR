@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 2a9be3b7-b325-4d74-a5bc-8d24db491920
 exl-id: 04adbbc9-9e4c-4c64-aab1-20b17bd75bb5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '1455'
+source-wordcount: '1443'
 ht-degree: 54%
 
 ---
@@ -42,7 +42,7 @@ Suivez la procédure ci-dessous pour mapper des variables de composant CQ avec d
 
    ![aa-13](assets/aa-13.png)
 
-   Il existe différents groupes de composants par défaut : **Général**, **Commerce**, **Communities**, **Search&amp;Promote** et **Autre**. Votre instance AEM peut être configurée de manière à afficher différents groupes et composants.
+   Il existe plusieurs groupes de composants par défaut : **Général**, **Commerce**, **Communautés**, et **Autre**. Votre instance AEM peut être configurée de manière à afficher différents groupes et composants.
 
 1. Pour mapper des variables Adobe Analytics avec des variables définies dans le composant, faites glisser un **Variable Analytics** de l’outil de recherche de contenu sur un champ du composant de suivi. Par exemple, faites glisser `Page Name (pageName)` to `pagedata.title`.
 
@@ -122,10 +122,6 @@ La liste peut être manipulée comme suit :
    >[!NOTE]
    >
    >Un seul bouton de filtre peut être actif à la fois.
-
-   >[!NOTE]
-   >
-   >Les variables Search &amp; Promote appartiennent également à la section Conversion .
 
    1. La liste comporte également une fonctionnalité de recherche, qui filtre les éléments en fonction du texte saisi dans le champ de recherche.
    1. Si une option de filtre est activée lors de la recherche des éléments de la liste, les résultats affichés sont également filtrés en fonction du bouton actif.
