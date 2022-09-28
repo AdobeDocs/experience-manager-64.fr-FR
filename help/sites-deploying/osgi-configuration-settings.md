@@ -1,7 +1,7 @@
 ---
 title: Paramètres de configuration OSGi
 seo-title: OSGi Configuration Settings
-description: 'Cet article décrit les paramètres de configuration OSGi (répertoriés en fonction du lot) pertinents pour la mise en œuvre des projets. La liste sert de point de référence et n’est pas exhaustive. '
+description: Cet article décrit les paramètres de configuration OSGi (répertoriés en fonction du lot) pertinents pour la mise en œuvre des projets. La liste sert de point de référence et n’est pas exhaustive.
 seo-description: This article details the OSGi configuration settings (listed according to bundle) that are relevant to project implementation. The list acts as a guideline and it is not exhaustive.
 uuid: 817de76e-7ba6-4502-94f5-09046b878cfb
 contentOwner: User
@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: 1242b301d82402c28a9c070fad024b823f8cef45
+source-git-commit: b2888dd2d523488b416550d5826f8cf077a25e32
 workflow-type: tm+mt
-source-wordcount: '3529'
-ht-degree: 64%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Paramètres de configuration OSGi{#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique de l’AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
+L’[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
 
-OSGi « *fournit les primitives normalisées qui permettent de construire des applications à partir de petits composants, réutilisables et collaboratifs. Ces composants peuvent être créés dans une application et déployés*&quot;.
+OSGi « *fournit les primitives normalisées qui permettent de construire des applications à partir de petits composants, réutilisables et collaboratifs. Ces composants peuvent être créés dans une application et déployés* ».
 
-Cela permet une gestion conviviale des lots , car ils peuvent être arrêtés, installés et démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (voir [Spécifications OSGi](https://www.osgi.org/Specifications/HomePage)) se trouve dans l’un des lots. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces lot ; voir [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et les pratiques recommandées.
+Cela permet une gestion plus conviviale des lots car ils peuvent être arrêtés, installés et démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (consultez [Spécification OSGi](https://www.osgi.org/Specifications/HomePage)) est contenu dans l’un des différents lots. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces lot ; voir [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et les pratiques recommandées.
 
 Les paramètres de configuration OSGi suivants (répertoriés selon le lot) sont pertinents à la réalisation du projet. Les paramètres répertoriés ne doivent pas tous être ajustés, certains sont mentionnés pour vous aider à comprendre comment fonctionne AEM.
 
@@ -59,8 +59,6 @@ Les paramètres de configuration OSGi suivants (répertoriés selon le lot) sont
 * Le **Mot de passe administrateur** doit être modifié après l’installation afin de garantir que la variable [sécurité](/help/sites-administering/security-checklist.md) de votre instance.
 
 * D’autres modifications ne doivent pas être nécessaires et faites attention car elles peuvent affecter l’accès au référentiel.
-
-**Service de messagerie Wiki** Configurez les paramètres de courrier électronique pour les courriers électroniques envoyés par un wiki.
 
 **Console de gestion OSGi Apache Felix** Configuration :
 
@@ -443,10 +441,6 @@ Permet de contrôler l’analyseur HTML pour le module de réécriture CQ.
 **Pool de connexions JDBC Day Commons** Configurez l&#39;accès à une base de données externe utilisée comme source de contenu.
 
 Comme c’est une configuration d’usine, plusieurs instances peuvent être configurées.
-
-**Service Sessions DPS Media Adobe CQ** Gérez les sessions DPS à utiliser avec les publications.
-
-Vous pouvez notamment définir `dps.session.service.url.name` : la valeur par défaut est définie sur [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
 **Réécriture CDN** La communication entre AEM et un réseau de diffusion de contenu doit être assurée de sorte que les ressources/fichiers binaires soient diffusés à l’utilisateur final de manière sécurisée. Cela implique deux opérations :
 
