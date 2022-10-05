@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: 5e6376f84b69022aec078d9f2f9163aaa8a0a37c
+source-git-commit: b06865e213fd20ed328104642eda812d4dfe43ed
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3461'
+ht-degree: 64%
 
 ---
 
@@ -284,7 +284,7 @@ Lors de la création d’une configuration, n’apportez pas de modifications à
 
 >[!CAUTION]
 >
->Lorsque vous changez le paramètre sur **Minify (Réduire)** ou **Gzip**, vous devez également supprimer le contenu de `/var/clientlibs`. Il s’agit d’une version mise en cache des clientlibs, qui sera recréée lors de la prochaine demande. 
+>Lors de la modification du paramètre pour **Minify** ou **Gzip** vous devrez également supprimer le contenu du cache clientlibs. Consultez cette section [Article de la base de connaissances](https://helpx.adobe.com/ca/experience-manager/kb/How-to-force-a-recompilation-of-all-Sling-scripts-jsps-java-sightly-on-AEM-6-4.html) pour plus d’informations.
 
 >[!NOTE]
 >
