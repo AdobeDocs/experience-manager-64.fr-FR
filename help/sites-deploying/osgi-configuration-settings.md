@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: b06865e213fd20ed328104642eda812d4dfe43ed
+source-git-commit: 904c7acc63dac5c92a5d1754380d075727e6a28a
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3460'
 ht-degree: 64%
 
 ---
@@ -24,7 +24,7 @@ L’[OSGi](https://www.osgi.org/) est un élément fondamental de la pile techno
 
 OSGi « *fournit les primitives normalisées qui permettent de construire des applications à partir de petits composants, réutilisables et collaboratifs. Ces composants peuvent être créés dans une application et déployés* ».
 
-Cela permet une gestion plus conviviale des lots car ils peuvent être arrêtés, installés et démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (consultez [Spécification OSGi](https://www.osgi.org/Specifications/HomePage)) est contenu dans l’un des différents lots. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces lot ; voir [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et les pratiques recommandées.
+Cela permet une gestion plus conviviale des lots car ils peuvent être arrêtés, installés et démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (consultez [Spécification OSGi](https://docs.osgi.org/specification/)) est contenu dans l’un des différents lots. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces lot ; voir [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et les pratiques recommandées.
 
 Les paramètres de configuration OSGi suivants (répertoriés selon le lot) sont pertinents à la réalisation du projet. Les paramètres répertoriés ne doivent pas tous être ajustés, certains sont mentionnés pour vous aider à comprendre comment fonctionne AEM.
 

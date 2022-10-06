@@ -3,17 +3,11 @@ title: Bonnes pratiques pour les tests de performance
 seo-title: Best Practices for Performance Testing
 description: Cet article présente les stratégies et méthodologies globales utilisées pour les tests de performance ainsi que certains des outils disponibles pour faciliter le processus.
 seo-description: This article outlines the overall strategies and methodologies used for performance testing as well as some of the tools that are available to assist in the process.
-uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-content-type: reference
-topic-tags: best-practices
-discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: 8d0863be-108d-49d8-8243-ea5e404ed64c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '1893'
-ht-degree: 92%
+source-wordcount: '1892'
+ht-degree: 99%
 
 ---
 
@@ -55,18 +49,18 @@ De nombreux outils de test de performance sont proposés sur le marché. Lors de
 
 #### Outils de test {#testing-tools}
 
-* L’outil **Tough Day** d’Adobe peut être utilisé pour générer une charge sur des instances AEM et collecter des données de performance. L’équipe AEM d’ingénierie d’Adobe utilise en fait l’outil pour effectuer des tests de charge du produit AEM lui-même. Les scripts exécutés dans Tough Day sont configurés via des fichiers de propriétés et des fichiers XML JMX. Pour plus d’informations, voir la [documentation Tough Day](/help/sites-developing/tough-day.md).
+* L’outil **Tough Day** d’Adobe peut être utilisé pour générer une charge sur des instances AEM et collecter des données de performance. L’équipe d’ingénierie AEM d’Adobe utilise actuellement l’outil pour effectuer des tests de charge sur le produit AEM lui-même. Les scripts exécutés dans Tough Day sont configurés via des fichiers de propriétés et des fichiers XML JMX. Pour plus d’informations, voir la [documentation Tough Day](/help/sites-developing/tough-day.md).
 
 * AEM fournit des outils prêts à l’emploi pour identifier rapidement les requêtes, demandes et messages d’erreur problématiques. Pour plus d’informations, voir la section [Outils de diagnostic](/help/sites-administering/operations-dashboard.md#diagnosis-tools) de la documentation Tableau de bord des opérations.
-* Apache propose un produit appelé **JMeter** pouvant être utilisé pour les tests de performance et de charge ainsi que pour le comportement fonctionnel. Il s’agit d’un logiciel open source et gratuit, mais dont le jeu de fonctionnalités est plus restreint que les produits destinées aux entreprises et dont la courbe d’apprentissage est plus rapide. JMeter se trouve sur le site web d’Apache à l’adresse [https://jmeter.apache.org/](https://jmeter.apache.org/)
+* Apache propose un produit appelé **JMeter** pouvant être utilisé pour les tests de performance et de charge ainsi que pour le comportement fonctionnel. Il s’agit d’un logiciel open source et gratuit, mais dont le jeu de fonctionnalités est plus restreint que les produits destinées aux entreprises et dont la courbe d’apprentissage est plus rapide. JMeter est disponible sur le site Web d’Apache à l’adresse [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load Runner** est un produit de test de charge de niveau entreprise. Une version d’évaluation gratuite est disponible. Vous trouverez plus d’informations à l’adresse [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
+* **Load Runner** est un produit de test de charge de qualité professionnelle. Une version d’évaluation gratuite est disponible. Vous trouverez plus d’informations à l’adresse [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview).
 
-* Des outils de test de charge dans le cloud comme [Neustar](https://www.neustar.biz/services/web-performance/load-testing) peuvent également être utilisés.
+* Des outils de test de charge dans le cloud comme [Neustar](https://www.neustar.biz/services/Web-performance/load-testing) peuvent également être utilisés.
 * Pour tester des sites web mobiles ou réactifs, un jeu d’outils distinct doit être utilisé. Ils fonctionnent en limitant la bande passante réseau et en simulant des connexions mobiles plus lentes telles que 3G ou EDGE. Les outils les plus utilisés sont les suivants : 
 
-   * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** : fournit une interface utilisateur facile à utiliser et fonctionne à un niveau relativement bas sur la pile de mise en réseau. Prend en charge OS X et iOS.[](https://nshipster.com/network-link-conditioner/)
-   * [**Charles**](https://www.charlesproxy.com/) : application proxy de débogage web qui, outre plusieurs autres utilisations, offre une fonction de limitation du réseau. Prend en charge Windows, OS X et Linux. [](https://www.charlesproxy.com/)
+   * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** : fournit une interface utilisateur facile à utiliser et fonctionne à un niveau relativement bas sur la pile de mise en réseau. Prend en charge OS X et iOS. [](https://nshipster.com/network-link-conditioner/)
+   * [**Charles**](https://www.charlesproxy.com/) : application proxy de débogage Web qui, outre plusieurs autres utilisations, offre une fonction de limitation du réseau. Prend en charge Windows, OS X et Linux. [](https://www.charlesproxy.com/)
 
 #### Outils d’optimisation {#optimization-tools}
 
@@ -76,25 +70,25 @@ La documentation [Surveillance des performances](/help/sites-deploying/monitorin
 
 **Mode Développeur de l’IU tactile**
 
-L’une des nouvelles fonctionnalités de l’interface utilisateur tactile d’AEM 6 est le mode Développeur. Tout comme les auteurs peuvent basculer entre les modes de modification et de prévisualisation, les développeurs peuvent passer en mode Développeur dans l’interface utilisateur de création pour voir le temps de rendu de chacun des composants sur la page et identifier les traces de pile de toutes les erreurs. Pour plus d’informations sur le mode Développeur, voir cette [présentation de CQ Gems](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+L’une des nouvelles fonctionnalités de l’interface utilisateur tactile d’AEM 6 est le mode Développeur. Tout comme les auteurs peuvent basculer entre les modes de modification et de prévisualisation, les développeurs peuvent passer en mode Développeur dans l’interface utilisateur de création pour voir le temps de rendu de chacun des composants sur la page et identifier les traces de pile de toutes les erreurs. Pour plus d’informations sur le mode Développeur, voir cette [présentation de CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Utilisation de rlog.jar pour lire les journaux de demandes**
 
-Pour une analyse plus complète des journaux de demandes d’un système AEM, vous pouvez utiliser `rlog.jar` pour rechercher et trier les fichiers `request.log` générés par AEM. Ce fichier jar est inclus avec une installation AEM dans la variable `/crx-quickstart/opt/helpers` dossier. Pour plus d’informations sur l’outil rlog et le journal des demandes en général, voir la documentation [Surveillance et gestion](/help/sites-deploying/monitoring-and-maintaining.md).
+Pour une analyse plus complète des journaux de demandes d’un système AEM, vous pouvez utiliser `rlog.jar` pour rechercher et trier les fichiers `request.log` générés par AEM. Ce fichier jar est inclus avec une installation AEM dans le dossier `/crx-quickstart/opt/helpers`. Pour plus d’informations sur l’outil rlog et le journal des demandes en général, voir la documentation [Surveillance et gestion](/help/sites-deploying/monitoring-and-maintaining.md).
 
 **Outil Explain Query**
 
 L’[outil Explain Query](/help/sites-administering/operations-dashboard.md#explain-query) des outils ACS AEM peut servir à afficher les index utilisés lors de l’exécution d’une requête. Cela peut être très utile lors de l’optimisation de requêtes à exécution lente.
 
-**Outils PageSpeed&#x200B;&#x200B;** 
+**Outils PageSpeed** 
 
-Les outils PageSpeed &#x200B;&#x200B;de Google proposent une analyse de site pour garantir le respect des bonnes pratiques en matière de performances de page, ainsi qu’un plug-in pouvant être installé avec le dispatcher sur une instance Apache pour des optimisations supplémentaires. Pour plus d’informations, voir le [site web des outils PageSpeed](https://developers.google.com/speed/pagespeed/).
+Les outils PageSpeed de Google proposent une analyse de site pour garantir le respect des bonnes pratiques en matière de performances de page, ainsi qu’un plug-in pouvant être installé avec le Dispatcher sur une instance Apache pour des optimisations supplémentaires. Pour plus d’informations, consultez [site Web des outils PageSpeed](https://developers.google.com/speed/pagespeed/).
 
 ## Environnement de création {#author-environment}
 
 ### Exécution de tests {#performing-tests}
 
-Pour réaliser des tests de performance dans l’environnement de création, il est nécessaire de simuler l’expérience des auteurs de production. Cela signifie que les installations d’auteur doivent contenir tous les composants, les lots OSGi, la personnalisation de l’interface utilisateur, les index personnalisés et tous les autres ajouts que vous avez mis en place pour les instances d’auteur de production.
+Pour réaliser des tests de performance dans l’environnement de création, il est nécessaire de simuler l’expérience des auteurs de production. Cela signifie que les installations d’auteur doivent contenir tous les composants, les lots OSGi, la personnalisation de l’interface utilisateur, les index personnalisés et tous les autres ajouts que vous avez mis en place pour les instances d’auteur d’exploitation.
 
 De nombreuses structures d’automatisation disponibles sont conçues pour les tests de performance et de charge. Des scripts personnalisés peuvent être enregistrés dans ces outils, puis exécutés pour simuler un nombre maximal d’auteurs effectuant simultanément des activités similaires de création et d’activation de contenu. Il est recommandé d’utiliser l’outil Tough Day pour simuler des activités telles que le téléchargement de milliers de ressources ou l’activation d’un grand nombre de pages.
 
@@ -104,13 +98,13 @@ Pour les types d’environnements dont les exigences de chargement de ressources
 
 Sur les systèmes dotés de serveurs principaux MongoDB, AEM fournit plusieurs MBeans [JMX](/help/sites-administering/jmx-console.md) qu’il faut surveiller lors des tests de charge ou de performance :
 
-* MBean **Consolidated Cache Statistics**. Il est accessible directement depuis :
+* MBean **Consolidated Cache Statistics**. Il est accessible directement depuis :
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-Pour le cache nommé **Document-Diff**, le taux d’accès doit être dépassé. `.90`. Si le taux d’accès chute en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. L’assistance pour les produits Adobe peut vous recommander des paramètres optimaux pour votre environnement.
+Pour le cache nommé **Document-Diff**, le taux d’accès doit être supérieur à `.90`. Si le taux d’accès chute en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. L’assistance pour les produits Adobe peut vous recommander des paramètres optimaux pour votre environnement.
 
-* Mbean **Oak Repository Statistics**. Il est accessible directement depuis :
+* Mbean **Oak Repository Statistics**. Il est accessible directement depuis :
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
@@ -122,7 +116,7 @@ La section **ObservationQueueMaxLength** affiche le nombre d’événements de l
 
 La partie la plus importante d’un déploiement qui doit être soumise à des tests de charge est l’environnement de publication ou de dispatcher de l’utilisateur final.
 
-Il est possible d’utiliser des outils tiers de test automatisés pour tester les performances du site web. Ces outils vous permettent d’enregistrer le parcours de navigation que les utilisateurs suivent sur le site et d’exécuter plusieurs de ces sessions en même temps pour simuler la charge type d’un site web de production.
+Il est possible d’utiliser des outils tiers de test automatisés pour tester les performances du site web. Ces outils vous permettent d’enregistrer le parcours de navigation que les utilisateurs suivent sur le site et d’exécuter plusieurs de ces sessions en même temps pour simuler la charge type d’un site Web d’exploitation.
 
 La plupart des sites web de production intègrent des optimisations telles que la mise en cache des dispatchers et la mise en place d’un réseau de diffusion de contenu. Lors du test, vous devez vous assurer que ces optimisations sont également disponibles pour l’environnement de test. Outre la surveillance des temps de réponse pour les utilisateurs finaux, vous devez également surveiller les mesures du système sur les serveurs de publication et les dispatchers pour vous assurer que le système n’est pas limité par des ressources matérielles.
 

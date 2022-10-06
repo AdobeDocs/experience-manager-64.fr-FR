@@ -10,9 +10,9 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-source-git-commit: 119023a24d5f21fd003439992fe5a520f48b6861
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1895'
 ht-degree: 50%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 50%
 
 ## Qu’est-ce que Tough Day 2 ? {#what-is-tough-day}
 
-Tough Day 2 est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. [Cet enregistrement](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) est une présentation de l’application.
+Tough Day 2 est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. [Cet enregistrement](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) est une présentation de l’application.
 
 ## Procédure d’exécution de Tough Day 2 {#how-to-run-tough-day}
 
@@ -129,8 +129,8 @@ Voici la liste des paramètres pertinents :
 | `--protocol=<Val>` | Protocole utilisé pour l’hôte. | http | http ou https |
 | `--host=<Val>` | Nom d’hôte ou adresse IP qui sera ciblé. |  |  |
 | `--port=<Val>` | Port de l’hôte. | 4502 |  |
-| `--user=<Val>` | Nom d’utilisateur de l’instance. | admin |  |
-| `--password=<Val>` | Mot de passe de l’utilisateur donné. | admin |  |
+| `--user=<Val>` | Nom d’utilisateur de l’instance. | administrateur |  |
+| `--password=<Val>` | Mot de passe de l’utilisateur donné. | administrateur |  |
 | `--duration=<Val>` | Durée des tests. Peut être exprimé par (**s**)econds, (**m**)inutes, (**h**)ours et (**d**)ays. | 1d |  |
 | `--timeout=<Val>` | Durée pendant laquelle un test s’exécute avant d’être interrompu et marqué comme ayant échoué. Exprimé en secondes. | 180 |  |
 | `--suite=<Val>` | La valeur peut être une ou une liste (séparée par des virgules) de suites de tests prédéfinies. | toughday |  |

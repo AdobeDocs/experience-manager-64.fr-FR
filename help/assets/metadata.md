@@ -1,14 +1,14 @@
 ---
 title: Gestion des métadonnées des ressources numériques dans  [!DNL Adobe Experience Manager].
-description: En savoir plus sur les types de métadonnées et comment [!DNL Adobe Experience Manager Assets] permet de gérer les métadonnées des ressources afin de les classer et de les organiser plus facilement. [!DNL Experience Manager] permet d’organiser et de traiter automatiquement les ressources en fonction de leurs métadonnées.
+description: Découvrez les types de métadonnées et comment  [!DNL Adobe Experience Manager Assets]  aide à gérer les métadonnées afin que les ressources permettent une catégorisation et une organisation plus simples des ressources. [!DNL Experience Manager]  permet d’organiser et de traiter automatiquement les ressources en fonction de leurs métadonnées.
 contentOwner: AG
 feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 97%
+source-wordcount: '1410'
+ht-degree: 99%
 
 ---
 
@@ -98,7 +98,7 @@ Le format de fichier d’image échangeable (Exif) est le plus utilisé dans la 
 
 Le fait que ce format ne soit pas pris en charge par quelques formats de fichiers image très appréciés comme BMP, GIF ou PNG constitue une limite majeure.
 
-Les champs de métadonnées définis par Exif sont généralement de nature technique et d’une utilité limitée pour la gestion descriptive des métadonnées. D’où l’intérêt de [!DNL Experience Manager Assets] pour mapper les propriétés Exif dans des [schémas de métadonnées courants](metadata-schemas.md)[ et dans XMP](xmp-writeback.md).
+Les champs de métadonnées définis par Exif sont généralement de nature technique et d’une utilité limitée pour la gestion descriptive des métadonnées. Ainsi, [!DNL Experience Manager Assets] permet de mapper les propriétés Exif dans des [schémas de métadonnées courants](metadata-schemas.md)[ et dans XMP](xmp-writeback.md).
 
 ### Autres métadonnées {#other-metadata}
 
@@ -157,7 +157,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 ### Métadonnées spécifiques à l’impression {#print-specific-metadata}
 
 * PDF et PDF/X – Adobe PDF et applications tierces.
-* PRISM – [Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)](http://www.prismstandard.org/specifications/).
+* PRISM – [Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)](https://idealliance.org/specifications/prism-metadata/).
 * XMP – [!DNL Extensible Metadata Platform].
 * `xmpPG` – Métadonnées XMP pour le texte paginé.
 

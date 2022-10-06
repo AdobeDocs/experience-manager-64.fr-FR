@@ -1,7 +1,7 @@
 ---
 title: Configuration d’AEM Mobile
 seo-title: AEM Mobile SetUp
-description: 'Consultez cette page pour configurer AEM Mobile et permettre ainsi à l’utilisateur de créer et de gérer le contenu dans AEM. Cette page fournit des informations sur l’intégration de l’instance AEM avec le ou les comptes et projets AEM Mobile On-demand Services basés sur le cloud. '
+description: Consultez cette page pour configurer AEM Mobile et permettre ainsi à l’utilisateur de créer et de gérer le contenu dans AEM. Cette page fournit des informations sur l’intégration de l’instance AEM avec le ou les comptes et projets AEM Mobile On-demand Services basés sur le cloud.
 seo-description: Follow this page for setting up AEM Mobile and thus allowing the user to create and manage the content within AEM. This page provides information on integrating the AEM instance with the cloud-based AEM Mobile On-Demand Services account and project(s).
 uuid: 03bf5b56-7750-4f76-b079-43761367655a
 contentOwner: User
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: 393cf504-917e-4bf6-9a8b-b7a5bd862c65
 exl-id: 8f608465-7d0d-48d2-8105-ee2d4ceb727a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '943'
 ht-degree: 4%
 
 ---
@@ -35,9 +35,9 @@ Suivez ces étapes pour configurer AEM Mobile et permettre ainsi à l’utilisat
 
 Pour commencer à configurer AEM Mobile, vous devez :
 
-* **Demande d’une clé API**: Pour accéder à l&#39;API On-Demand Services, vous devez demander une clé API. Pour demander la clé d’API, renseignez la variable [PDF form](https://helpx.adobe.com/digital-publishing-solution/help/integrating-dps.html). Envoyez le formulaire complété à l’assistance aux développeurs Adobe : [wwds@adobe.com](mailto:wwds@adobe.com)
+* **Demande d’une clé API**: Pour accéder à l&#39;API On-Demand Services, vous devez demander une clé API. Pour demander la clé d’API, renseignez la variable [PDF form](https://helpx.adobe.com/digital-publishing-solution/help/integrating-dps.html). Envoyez le formulaire complété au support Adobe Developer : [wwds@adobe.com](mailto:wwds@adobe.com)
 
-* **Génération de l’ID de périphérique et du jeton de périphérique**: Une fois que vous avez reçu votre clé API, vous pouvez générer l’identifiant de l’appareil et le jeton de l’appareil. Accédez à [https://aex.aemmobile.adobe.com](https://aex.aemmobile.adobe.com/) et procédez comme suit :
+* **Génération de l’ID de périphérique et du jeton de périphérique**: Une fois que vous avez reçu votre clé API, vous pouvez générer l’identifiant de l’appareil et le jeton de l’appareil. Accédez à aex.aemmobile.adobe.com et procédez comme suit :
 
    * Fournir la clé API
    * Connectez-vous à un projet Adobe ID que vous avez ajouté à un projet AEM Mobile avec les autorisations suivantes (voir les étapes ci-dessous pour créer un projet).

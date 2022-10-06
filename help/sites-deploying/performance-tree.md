@@ -1,7 +1,7 @@
 ---
 title: Arborescence de la performance
 seo-title: Performance Tree
-description: 'Découvrez les étapes qui doivent être suivies pour résoudre les problèmes de performances dans AEM. '
+description: Découvrez les étapes qui doivent être suivies pour résoudre les problèmes de performances dans AEM.
 seo-description: Learn about the steps that need to be taken in order to troubleshoot performance issues in AEM.
 uuid: ab0624f7-6b39-4255-89e0-54c74b54cd98
 contentOwner: User
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: dfc6a660-e6b3-4395-a555-f4cf8f3fed91
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -229,7 +229,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr> 
    <td><strong>Étape 31</strong></td> 
    <td>Utilisation du CDN devant le dispatcher</td> 
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Utilisation de Dispatcher avec un CDN </a><br /> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Utilisation de Dispatcher avec un CDN</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Étape 32</strong></td> 
@@ -241,7 +241,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
    <td>Activation de la mise en cache potentielle des demandes</td> 
    <td> 
     <ol> 
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html">Configuration générale du dispatcher</a></li> 
+     <li><a href="https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html">Configuration générale du dispatcher</a></li> 
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Configuration du cache du dispatcher</a></li> 
     </ol> <p>Amélioration du ratio de cache ; activation de la mise en cache potentielle des demandes (meilleures pratiques de dispatcher)</p> <p>En outre, tenez compte des paramètres ci-dessous afin d’optimiser vos configurations de mise en cache<br /> </p> 
     <ol> 
@@ -273,7 +273,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr> 
    <td><strong>Étapes 37 et 38</strong></td> 
    <td>Chargement différé</td> 
-   <td><a href="https://docs.adobe.com/ddc/fr/gems/aem-web-performance.html ">Voir la session sur la performance web d’AEM.</a><br /> </td> 
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">Voir la session sur la performance web d’AEM.</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Étape 39</strong></td> 
@@ -293,7 +293,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr> 
    <td><strong>Étape 49</strong></td> 
    <td>Réduction de la taille de la charge utile</td> 
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Activez Gzip</a> et<a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html"> réduisez la taille de l’image</a>.<br /> </td> 
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Activez Gzip</a> et<a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html"> réduisez la taille de l’image</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Étapes 42 et 43</strong></td> 
@@ -325,7 +325,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr> 
    <td><strong>Étapes 50 et 51</strong></td> 
    <td>Blocage du code JS</td> 
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">https://docs.adobe.com/ddc/en/gems/aem-web-performance.html</a></td> 
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">Performances web AEM</a></td> 
   </tr> 
  </tbody> 
 </table>

@@ -1,7 +1,7 @@
 ---
 title: Recommandations d’interfaces utilisateur aux clients
 seo-title: User Interface Recommendations for Customers
-description: 'Liste de recommandations relatives aux interfaces utilisateur classiques et aux interfaces utilisateur optimisées pour les écrans tactiles. '
+description: Liste de recommandations relatives aux interfaces utilisateur classiques et aux interfaces utilisateur optimisées pour les écrans tactiles.
 seo-description: A list of recommendations related to the classic and touch-optimized user interfaces.
 uuid: c661fb10-4dbc-4f8b-93be-3e77af1ad095
 contentOwner: User
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 42bf42cb-0c6c-4390-8170-2c540c4d3ed3
 exl-id: 1e5172d9-47a3-4d73-b749-166e201f4eef
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 92%
+source-wordcount: '777'
+ht-degree: 93%
 
 ---
 
@@ -125,5 +125,4 @@ Pour des informations détaillées de développement :
 
 * [Personnalisation de la création de la page dans l’IU optimisée pour les écrans tactiles](/help/sites-developing/customizing-page-authoring-touch.md) (inclut un exemple de code).
 
-* [Séance AEM sur la personnalisation de l’IU optimisée pour les écrans tactiles](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 * [Documentation sur l’interface utilisateur Granite](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).

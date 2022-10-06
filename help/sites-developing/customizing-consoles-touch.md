@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 exl-id: 31bced35-4845-40d1-9bfd-5c75d54e1a83
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 78%
+source-wordcount: '678'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les cons
 
 * Recouvrements
 
-   Les superpositions sont basées sur des définitions de noeud et vous permettent de superposer la fonctionnalité standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
+   Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir la fonctionnalité standard (dans `/libs`) avec votre propre fonctionnalité personnalisée (dans `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
 
 Ils peuvent être utilisés de différentes manières pour étendre les consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
 
@@ -42,9 +42,8 @@ Ils peuvent être utilisés de différentes manières pour étendre les consoles
 >* Utilisation et création de [bibliothèques clientes](/help/sites-developing/clientlibs.md).
 >* Utilisation et création d’[incrustations](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
-
 >
->Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) – [Personnalisation de l’interface utilisateur pour AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+>Ce thème est également abordé dans la session [AEM Gems – Personnalisation de l’interface utilisateur pour AEM 6.0](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-user-interface-customization-for-aem6.html).
 
 >[!CAUTION]
 >
@@ -54,16 +53,16 @@ Ils peuvent être utilisés de différentes manières pour étendre les consoles
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
+>1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
 >
->1. Apportez les modifications désirées dans `/apps`
+>1. Apportez les modifications désirées dans `/apps`.
 
 >
 
 
 Par exemple, les emplacements suivants dans la variable `/libs` peut être superposée :
 
-* Consoles (toutes les consoles basées sur les pages de l’IU Granite), par exemple :
+* Consoles (toutes les consoles basées sur les pages de l’IU Granite), par exemple :
 
    * `/libs/wcm/core/content`
 
@@ -94,7 +93,7 @@ Par exemple, les emplacements suivants dans la variable `/libs` peut être super
 -->
 >[!NOTE]
 >
->Voir l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour d’autres conseils et outils.
+>Consultez l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour découvrir d’autres conseils et outils.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -193,13 +192,13 @@ Vous pouvez personnaliser le mode par défaut (colonnes, carte ou liste) pour un
 
    La première entrée est la valeur par défaut.
 
-   Les noeuds disponibles correspondent aux options d’affichage disponibles :
+   Les nœuds disponibles correspondent aux options d’affichage disponibles :
 
    * `column`
    * `card`
    * `list`
 
-1. Par exemple, dans un recouvrement du mode Liste :
+1. Par exemple, dans un recouvrement de liste :
 
    `/apps/wcm/core/content/sites/jcr:content/views/list`
 
@@ -207,7 +206,7 @@ Vous pouvez personnaliser le mode par défaut (colonnes, carte ou liste) pour un
 
    * **Nom** : `sling:orderBefore`
    * **Type** : `String`
-   * **Valeur**: `column`
+   * **Valeur** : `column`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -291,7 +290,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   À l’aide des propriétés sur ce noeud, vous pouvez définir la variable `groups` autorisé à effectuer l’action spécifique ; par exemple, `administrators`
+   En utilisant des propriétés sur ce nœud, vous pouvez définir les `groups` autorisés à effectuer l’action spécifique ; par exemple, les `administrators`.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -364,7 +363,7 @@ You can restrict access to a navigation option using ACLs:
 
 >[!NOTE]
 >
->Cette fonctionnalité est optimisée pour les colonnes de champs de texte ; pour d’autres types de données, il est possible de superposer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Cette fonction est optimisée pour les champs de colonnes de texte ; pour les autres types de données, il est possible de remplacer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` dans `/apps`.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -380,18 +379,18 @@ Pour personnaliser les colonnes en mode Liste :
 
 1. Recouvrez la liste des colonnes disponibles.
 
-   * Sur le noeud :
+   * Sur le nœud :
 
       `/apps/wcm/core/content/common/availablecolumns`
 
    * Ajoutez des colonnes ou supprimez des colonnes existantes.
-   Voir [Utilisation des recouvrements (et la fusion de ressources Sling) pour plus d’informations.](/help/sites-developing/overlays.md)
+   Consultez [Utilisation des recouvrements (et fusion de ressources Sling) pour plus d’informations.](/help/sites-developing/overlays.md)
 
-1. Si vous le souhaitez :
+1. Facultatif :
 
-   * Si vous souhaitez ajouter des données supplémentaires, vous devez écrire une ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` avec un
+   * Si vous souhaitez connecter des données supplémentaires, vous devez écrire un ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` avec une
 
-      `pageInfoProviderType` property.
+      `pageInfoProviderType`.
    Par exemple, voir la classe/le lot (tiré de GitHub) ci-dessous.
 
 1. Vous pouvez maintenant sélectionner la colonne dans le configurateur de colonnes du mode Liste.

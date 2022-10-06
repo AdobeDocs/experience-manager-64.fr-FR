@@ -3,19 +3,11 @@ title: API Query Builder
 seo-title: Query Builder API
 description: La fonctionnalité du Query Builder Asset Share est exposée via une API Java et une API REST.
 seo-description: The functionality of the Asset Share Query Builder is exposed through a Java API and a REST API.
-uuid: 6928c3e9-96a1-44ad-9785-350d95f1869a
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: platform
-content-type: reference
-discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
-pagetitle: Query Builder API
-tagskeywords: querybuilder
 exl-id: ff305c6d-c11e-4e1c-b262-4802b4f54592
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 91%
+source-wordcount: '2312'
+ht-degree: 90%
 
 ---
 
@@ -37,11 +29,11 @@ L’API REST permet d’accéder exactement aux mêmes fonctionnalités via HTTP
 
 ## Session Gem {#gem-session}
 
-[AEM Gems](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-index.html) est une série de sessions techniques approfondies sur Adobe Experience Manager dispensées par des experts Adobe. Cette session consacrée à Query Builder s’avère très utile pour se familiariser avec l’outil.
+[AEM Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) est une série de sessions techniques approfondies sur Adobe Experience Manager dispensées par des experts Adobe. Cette session consacrée à Query Builder s’avère très utile pour se familiariser avec l’outil.
 
 >[!NOTE]
 >
->Voir la session AEM Gem [Formulaires de recherche simplifiés avec AEM Query Builder](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) pour une présentation détaillée de query builder.
+>Voir la session AEM Gem [Formulaires de recherche simplifiés avec AEM Query Builder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) pour une présentation détaillée de query builder.
 
 ## Exemples de requêtes {#sample-queries}
 
