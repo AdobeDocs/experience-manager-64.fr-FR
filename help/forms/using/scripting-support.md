@@ -11,10 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: 2194bbbb-22d9-4422-aefb-9651fd795ca3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: aa70ce1b05353e0d6f234c59df673486c8fa5082
 workflow-type: tm+mt
 source-wordcount: '3894'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -1353,4 +1353,4 @@ Les événements XFA côté client suivants sont pris en charge :
 
 >[!NOTE]
 >
->Les formulaires HTML5 sont rendus côté client (navigateur). Il est recommandé d’utiliser des scripts **validate** et **calculate** côté client au lieu des scripts côté serveur.
+>Les formulaires HTML5 sont rendus côté client (navigateur). Il est recommandé d’utiliser côté client **valider** et **calculate** au lieu des scripts côté serveur.
