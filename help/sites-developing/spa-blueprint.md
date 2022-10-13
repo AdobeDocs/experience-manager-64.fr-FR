@@ -9,10 +9,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: b46f0325ddbf68b65270c8e741e06469c584ae4d
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 91%
+source-wordcount: '2090'
+ht-degree: 92%
 
 ---
 
@@ -109,7 +109,7 @@ Module npm : [@adobe/aem-response-editable-components](https://www.npmjs.com/pa
 
 #### Angular {#angular}
 
-module npm : bientôt disponible
+Module npm : [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Services et composants principaux {#main-services-and-components}
 
@@ -168,8 +168,6 @@ Le composant Grille réactive doit être fourni prémappé à son homologue AEM,
 * `gridClassNames:` noms de classes fournis pour la grille réactive
 * `columnClassNames:` noms de classes fournis pour la colonne réactive
 
-Voir aussi la ressource npm [@adobe/aem-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
-
 #### Espace réservé de la grille réactive {#placeholder-of-the-reponsive-grid}
 
 Le composant SPA est mappé sur un conteneur graphique, tel que Grille réactive, et doit ajouter un espace réservé enfant virtuel lorsque la création du contenu est en cours. Lorsque le contenu de l’application sur une seule page est créé par l’éditeur de page, il est incorporé dans ce dernier à l’aide d’un iFrame et l’attribut `data-cq-editor` est ajouté au nœud de document de ce contenu. Lorsque l’attribut `data-cq-editor` est présent, le conteneur doit inclure un HTMLElement pour représenter la zone avec laquelle l’auteur interagit lors de l’insertion d’un nouveau composant dans la page.
@@ -186,7 +184,6 @@ Par exemple :
 >
 >* `"new section"` : indique que l’élément en cours est l’espace réservé du conteneur.
 >* `"aem-Grid-newComponent"` : normalise le composant pour la création de dispositions.
-
 >
 
 
