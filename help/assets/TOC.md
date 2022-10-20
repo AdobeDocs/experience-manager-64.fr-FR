@@ -8,8 +8,8 @@ breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '649'
+ht-degree: 78%
 
 ---
 
@@ -48,17 +48,17 @@ ht-degree: 0%
    + [Profils vidéo Dynamic Media](video-profiles.md)
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
-   + [Imagerie dynamique avec rapport des pixels côté client](client-side-dpr.md)
-   + [Vidéo ](s7-video.md)
+   + [Imagerie dynamique avec rapport pixel d’appareil côté client](client-side-dpr.md)
+   + [Vidéo](s7-video.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
-   + [Limites de Dynamic Media](limitations.md)
+   + [Limites de Dynamic Media](limitations.md)
    + [Visionneuses d’images](image-sets.md)
    + [Visionneuses de médias mixtes](mixed-media-sets.md)
    + [Visionneuses à 360°](spin-sets.md)
    + [Images panoramiques](panoramic-images.md)
-   + [Vidéo ](video.md)
+   + [Vidéo](video.md)
    + [Images interactives](interactive-images.md)
    + [Vidéos interactives](interactive-videos.md)
    + [Bannières de carrousel](carousel-banners.md)
@@ -93,7 +93,7 @@ ht-degree: 0%
    + [Balises intelligentes améliorées](enhanced-smart-tags.md)
    + [Profils de traitement des métadonnées, des images et des vidéos](processing-profiles.md)
    + [Métadonnées en cascade](cascading-metadata.md)
-   + [Création et configuration de pages Éditeur de ressources](assets-finder-editor.md)
+   + [Créer et configurer des pages Éditeur de ressources](assets-finder-editor.md)
    + [Guide de dimensionnement des ressources](assets-sizing-guide.md)
    + [Référence des schémas de métadonnées](meta-ref.md)
    + [Bonnes pratiques relatives à la traduction efficace des ressources](best-practices-for-translating-assets-efficiently.md)
@@ -112,7 +112,7 @@ ht-degree: 0%
    + [Gestion des droits numériques dans AEM Assets](drm.md)
    + [Utilisation du module de démonstration pour les statistiques sur les ressources](touch-ui-using-demo-package-for-asset-insights.md)
    + [Bonnes pratiques de déchargement dans Assets](assets-offloading-best-practices.md)
-   + [Meilleures pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md)
+   + [Bonnes pratiques relatives aux formats de fichier des ressources](assets-file-format-best-practices.md)
    + [Bonnes pratiques en matière de surveillance des ressources](assets-monitoring-best-practices.md)
    + [Prise en charge de Camera Raw](camera-raw.md)
    + [Détection du type MIME des ressources à l’aide d’Apache Tika](detect-asset-mime-type-with-tika.md)
@@ -120,14 +120,14 @@ ht-degree: 0%
    + [Prise en charge des métadonnées IPTC](iptc-support.md)
    + [Schémas de métadonnées](metadata-schemas.md)
    + [Fonction multiclient pour les collections, les fragments de code et les modèles de fragments de code](multi-tenancy.md)
-   + [Application d’un filigrane  ](watermarking.md)
+   + [Application d’un filigrane](watermarking.md)
    + [Importation et exportation de métadonnées en masse](metadata-import-export.md)
    + [Modèles de ressources](asset-templates.md)
    + [Bonnes pratiques de partage de dossiers entre AEM et Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
    + [Gestion des balises intelligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Publication de ressources sur Brand Portal](brand-portal-publish-assets.md)
    + [Publication de collections sur Brand Portal](brand-portal-publish-collection.md)
    + [Publication de dossiers sur Brand Portal](brand-portal-publish-folder.md)
@@ -163,7 +163,7 @@ ht-degree: 0%
    + [Utilisation du dispositif de suivi de page et du code intégré sur les pages web](touch-ui-using-page-tracker.md)
    + [Gestion de ressources composites](managing-linked-subassets.md)
    + [Ressources liées](related-assets.md)
-   + [Assets Insights](touch-ui-asset-insights.md)
+   + [Assets Insights](touch-ui-asset-insights.md)
    + [Recherche de ressources vidéo](search-video-assets.md)
    + [Partage de dossiers privés](private-folder.md)
    + [Instructions d’entraînement sur le service de contenu dynamique](smart-tags-training-guidelines.md)

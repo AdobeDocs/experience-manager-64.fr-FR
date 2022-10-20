@@ -5,24 +5,24 @@ solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guide de déploiement d’AEM 6.4
 breadcrumb-title: Guide de déploiement
-user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4, y compris sur le déploiement cloud d’Adobe Managed Services.
+user-guide-description: Découvrez-en plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.4, y compris sur le déploiement cloud d’Adobe Managed Services.
 feature: Deploying
 role: Architect
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '370'
+ht-degree: 92%
 
 ---
 
 
-# Guide de l’utilisateur pour le déploiement d’AEM 6.4 {#deploying}
+# Guide de l’utilisateur pour le déploiement d’AEM 6.4 {#deploying}
 
 + [Guide de l’utilisateur du déploiement](home.md)
-+ Présentation de la plateforme AEM {#introduction}
++ Introduction à la plateforme AEM {#introduction}
    + [Introduction à la plateforme AEM](platform.md)
    + [Exigences techniques](technical-requirements.md)
-   + [Éléments de stockage dans AEM 6.4](storage-elements-in-aem-6.md)
+   + [Éléments de stockage dans AEM 6.4](storage-elements-in-aem-6.md)
    + [AEM avec MongoDB](aem-with-mongodb.md)
 + Déploiement d’AEM {#deploying}
    + [Déploiement et maintenance](deploy.md)
@@ -30,7 +30,7 @@ ht-degree: 0%
    + [Installation du serveur d’applications](application-server-install.md)
    + [Installation autonome personnalisée](custom-standalone-install.md)
    + [Début et arrêt d’AEM à partir de la ligne de commande](command-line-start-and-stop.md)
-   + [Configuration des magasins de nœuds et des entrepôts de données dans AEM 6](data-store-config.md)
+   + [Configuration Noeuds et entrepôts de données dans AEM 6](data-store-config.md)
    + [Nettoyage de révision](revision-cleanup.md)
    + [Exécution d’AEM avec TarMK Cold Standby](tarmk-cold-standby.md)
    + [Prise en charge RDBMS dans AEM 6.4](rdbms-support-in-aem.md)
@@ -46,7 +46,7 @@ ht-degree: 0%
    + [Configuration d’OSGi](configuring-osgi.md)
    + [Paramètres de configuration OSGi](osgi-configuration-settings.md)
    + [Modes d’exécution](configure-runmodes.md)
-   + [Console web](web-console.md)
+   + [Console Web](web-console.md)
    + [Réplication](replication.md)
    + [Réplication à l’aide du SSL mutuel](mssl-replication.md)
    + [Résolution des problèmes liés à la réplication](troubleshoot-rep.md)
@@ -89,7 +89,7 @@ ht-degree: 0%
    + [Restructuration des référentiels Dynamic Media dans AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Restructuration des référentiels de Forms dans AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Restructuration des référentiels e-Commerce dans AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
-   + [Restructuration des référentiels pour AEM Communities dans la version 6.4](communities-repository-restructuring-in-aem-6-4.md)
+   + [Restructuration des référentiels pour AEM Communities dans la version 6.4](communities-repository-restructuring-in-aem-6-4.md)
 + eCommerce {#ecommerce}
    + [Aperçu du commerce électronique](ecommerce.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)

@@ -3,20 +3,20 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.4
+user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.4
 breadcrumb-title: Guide de création
 user-guide-description: Découvrez les principaux concepts de création de contenu dans AEM.
 feature: Authoring
 role: User
 source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '285'
+ht-degree: 87%
 
 ---
 
 
-# Guide de l’utilisateur pour la création dans AEM 6.4 {#authoring}
+# Guide de l’utilisateur pour la création dans AEM 6.4 {#authoring}
 
 + [Guide de l’utilisateur de création - Aperçu](home.md)
 + Tâches, outils et concepts essentiels pour la création AEM {#essentials}
@@ -53,8 +53,8 @@ ht-degree: 0%
    + [Outil de comparaison des pages](page-diff.md)
    + [Console des composants](default-components-console.md)
    + [Mise en page réactive](responsive-layout.md)
-   + [Content Insight ](content-insights.md)
-   + [Création d’un contenu accessible (conformité WCAG 2.0)](creating-accessible-content.md)
+   + [Content Insight](content-insights.md)
+   + [Création d’un contenu accessible (conformité au WCAG 2.0)](creating-accessible-content.md)
    + [Génération de modèles automatique](scaffolding.md)
    + [Configuration de composants en mode de conception](default-components-designmode.md)
    + [Composants de base](default-components-foundation.md)
@@ -75,7 +75,7 @@ ht-degree: 0%
    + [Participation aux workflows](workflows-participating.md)
    + [Utilisation des workflows de projet](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/projects/projects-with-workflows.html)
 + Performances de la page {#page-performance}
-   + [Content Insight ](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
+   + [Content Insight](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [Analyse des performances de page](ci-analyze.md)
    + [Affichage des données d’analyse de page](pa-using.md)
 + Personnalisation  {#personalization}
@@ -90,7 +90,7 @@ ht-degree: 0%
    + [Compréhension de la segmentation](segmentation-overview.md)
 + AEM et Adobe Campaign {#aem-adobe-campaign}
    + [Utilisation d’Adobe Campaign](adobe-campaign.md)
-   + [Utilisation d’Adobe Campaign Classic et d’Adobe Campaign Standard](campaign.md)
-   + [Ciblage d’un élément de campagne Adobe Campaign](target-adobe-campaign.md)
-   + [Création de formulaires Adobe Campaign dans AEM](adobe-campaign-forms.md)
-   + [Composants d’Adobe Campaign](adobe-campaign-components.md)
+   + [Utilisation d’Adobe Campaign Classic et d’Adobe Campaign Standard](campaign.md)
+   + [Ciblage d’un élément de campagne Adobe Campaign](target-adobe-campaign.md)
+   + [Création de formulaires Adobe Campaign dans AEM](adobe-campaign-forms.md)
+   + [Composants d’Adobe Campaign](adobe-campaign-components.md)

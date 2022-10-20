@@ -3,20 +3,20 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guide de l’utilisateur pour le développement dans AEM 6.4
+user-guide-title: Guide de l’utilisateur pour le développement d’AEM 6.4
 breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Developing
 role: Developer
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '886'
+ht-degree: 84%
 
 ---
 
 
-# Guide de l’utilisateur pour le développement dans AEM 6.4 {#developing}
+# Guide de l’utilisateur pour le développement d’AEM 6.4 {#developing}
 
 + [Présentation du guide de l’utilisateur du développement](home.md)
 + Présentation pour les développeurs{#introduction}
@@ -24,7 +24,7 @@ ht-degree: 0%
    + [Concepts de base d’AEM](the-basics.md)
    + [Structure de l’interface utilisateur tactile d’AEM](touch-ui-structure.md)
    + [Concepts de l’interface utilisateur (IU) tactile d’AEM](touch-ui-concepts.md)
-   + [Développement sur AEM – Conseils et meilleures pratiques](dev-guidelines-bestpractices.md)
+   + [Développement sur AEM – Conseils et bonnes pratiques](dev-guidelines-bestpractices.md)
    + [Utilisation de bibliothèques côté client](clientlibs.md)
    + [Développement et outil de comparaison des pages](pagediff.md)
    + [Limites de l’éditeur](editor-limitations.md)
@@ -41,7 +41,7 @@ ht-degree: 0%
    + [Bibliothèques de balises](taglib.md)
    + Modèles{#templates}
       + [Modèles](templates.md)
-      + [Modèles de pages – Modifiables ](page-templates-editable.md)
+      + [Modèles de page  - Modifiable ](page-templates-editable.md)
       + [Modèles de page - Statiques](page-templates-static.md)
       + [Modèles de fragment de contenu](content-fragment-templates.md)
       + [Rendu de modèle adaptatif](templates-adaptive-rendering.md)
@@ -50,12 +50,12 @@ ht-degree: 0%
    + [Conventions de dénomination](naming-conventions.md)
    + [Création d’un composant de champ d’IU Granite](granite-ui-component.md)
    + Query Builder{#query-builder}
-      + [Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder](implementing-custom-predicate-evaluator.md)
+      + [Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder](implementing-custom-predicate-evaluator.md)
       + [Référence des prédicats de Query Builder](querybuilder-predicate-reference.md)
       + [API Query Builder](querybuilder-api.md)
    + Balisage{#tagging}
       + [Balisage](tags.md)
-      + [Cadre de balisage AEM](framework.md)
+      + [Framework de balisage AEM](framework.md)
       + [Création du balisage dans une application AEM](building.md)
    + [Personnalisation des pages affichées par le gestionnaire d’erreurs](customizing-errorhandler-pages.md)
    + [Types de nœuds personnalisés](custom-nodetypes.md)
@@ -71,12 +71,12 @@ ht-degree: 0%
    + eCommerce{#ecommerce}
       + [eCommerce](ecommerce.md)
       + [Développement (générique)](generic.md)
-      + [Développement avec SAP Commerce Cloud](sap-commerce-cloud.md)
+      + [Développement avec Commerce Cloud SAP](sap-commerce-cloud.md)
 + Composants{#components}
    + [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
    + [Système de style](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/style-system.html)
    + [Aperçu des composants](components.md)
-   + [Composants AEM - Notions de base](components-basics.md)
+   + [Composants AEM – Notions de base](components-basics.md)
    + [Développement de composants AEM](developing-components.md)
    + [Développement de composants AEM – Échantillons de code](developing-components-samples.md)
    + [Exportateur JSON pour Content Services](json-exporter.md)
@@ -130,21 +130,21 @@ ht-degree: 0%
    + [Développement dans CRXDE Lite](developing-with-crxde-lite.md)
    + [Gestion des packages à l’aide de Maven](vlt-mavenplugin.md)
    + [Développement de projets AEM à l’aide d’Eclipse](howto-projects-eclipse.md)
-   + [Création de projets AEM à l’aide d’Apache Maven](ht-projects-maven.md)
-   + [Développement de projets AEM à l’aide de IntelliJ IDEA](ht-intellij.md)
+   + [Création de projets AEM à l’aide d’Apache Maven](ht-projects-maven.md)
+   + [Développement de projets AEM à l’aide d’IntelliJ IDEA](ht-intellij.md)
    + [Utilisation de l’outil VLT](ht-vlttool.md)
    + [Utilisation de l’outil de serveur proxy](ht-proxy-server.md)
-   + [Extension AEM Brackets](aem-brackets.md)
+   + [Extension AEM Brackets](aem-brackets.md)
    + [Developer Tools d’AEM pour Eclipse](aem-eclipse.md)
-   + [Outil AEM Repo](aem-repo-tool.md)
-+ Personnalisation {#personlization}
+   + [Outil AEM Repo](aem-repo-tool.md)
++ Personnalisation{#personlization}
    + [ContextHub](contexthub.md)
    + [Guide de référence pour l’API JavaScript ContextHub](contexthub-api.md)
    + [Extension de ContextHub](ch-extend.md)
    + [Ajout de ContextHub à des pages et accès à des magasins](ch-adding.md)
    + [Exemples de magasins candidats ContextHub](ch-samplestores.md)
    + [Exemples de types de module d’IU ContextHub](ch-samplemodules.md)
-   + [Diagnostic ContextHub](ch-diagnostics.md)
+   + [Diagnostics ContextHub](ch-diagnostics.md)
    + [Développement de composants pour du contenu ciblé](target.md)
    + ClientContext{#client-context}
       + [Présentation détaillée de ClientContext](client-context.md)
@@ -166,8 +166,8 @@ ht-degree: 0%
    + [Extension du Multi Site Manager](extending-msm.md)
    + Suivi et analyses{#extending-analytics}
       + [Extension du suivi des événements](extending-analytics.md)
-      + [Ajout d’un suivi Adobe Analytics aux composants](extending-analytics-components.md)
-      + [Personnalisation de la structure Adobe Analytics](extending-analytics-framework.md)
+      + [Ajout d’un suivi Adobe Analytics aux composants](extending-analytics-components.md)
+      + [Personnalisation du framework Adobe Analytics](extending-analytics-framework.md)
       + [Implémentation de l’appellation des pages côté serveur pour Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
       + [Configuration de Cloud Services](extending-cloud-config.md)
@@ -185,9 +185,9 @@ ht-degree: 0%
       + [Élaboration de rapports](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/dev-reports.html)
 + Tests{#testing}
    + [Planification](planning.md)
-   + [Quels environnements de test sont nécessaires ?](test-environments.md)
+   + [Quels environnements de test sont nécessaires ?](test-environments.md)
    + [Définition de cas de test](test-cases.md)
-   + [Test - quand et avec qui ?](when-who.md)
+   + [Les tests - Quand et avec qui ?](when-who.md)
    + [Élaboration d’un plan de tests](test-plan.md)
    + [Suivi des résultats et formulation de commentaires](results-and-feedback.md)
    + [Outils de test et de suivi](tools.md)
@@ -195,7 +195,7 @@ ht-degree: 0%
    + [La prochaine version…](the-next-release.md)
    + [Listes de contrôle](checklists.md)
    + [Tough Day](tough-day.md)
-   + [Test de votre interface utilisateur](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/hobbes.html)
+   + [Tester votre IU](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/hobbes.html)
 + Bonnes pratiques{#bestpractices}
    + [Présentation des bonnes pratiques](best-practices.md)
    + [AEM Conseils de développement et bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/dev-guidelines-bestpractices.html?lang=fr)

@@ -1,27 +1,27 @@
 ---
-title: Notes de mise à jour d’Adobe Experience Manager 6.4
+title: Notes de mise à jour d’Adobe Experience Manager 6.4
 seo-title: AEM 6.4 Release Notes
 description: Les notes de mise à jour d’AEM comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.
 seo-description: The AEM Release Notes cover important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues.
 exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
 source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '373'
+ht-degree: 100%
 
 ---
 
-# Notes de mise à jour d’Adobe Experience Manager 6.4
+# Notes de mise à jour d’Adobe Experience Manager 6.4
 
 Les notes de mise à jour d’AEM comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.
 
-## Articles AEM clés
+## Articles AEM essentiels
 
-* [Initiez-vous à AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=fr)
+* [Prise en main d’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=fr)
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/fr/experience-manager/documentation-updates.html)
 * [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
 
-## Guides de l’utilisateur d’AEM 6.4
+## Guides de l’utilisateur d’AEM 6.4
 
 | Guide de l’utilisateur | Description |
 |--- |---|
@@ -49,8 +49,8 @@ Les notes de mise à jour d’AEM comportent des informations importantes sur la
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=fr#home)
 * [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)
 
-## Copyright, licences et clauses de non-responsabilité {#copyright-licenses-and-disclaimers}
+## Droits d’auteur, licences et clauses de non-responsabilité {#copyright-licenses-and-disclaimers}
 
-Pour plus d’informations, voir [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html)
+Pour plus d’informations, consultez [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html).
 
-Avis de licences tierces : [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
+Avis de licences de tiers : [http://www.adobe.com/fr/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)

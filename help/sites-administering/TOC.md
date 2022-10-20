@@ -3,25 +3,25 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: admin-user
-user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.4
+user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.4
 breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
 feature: Administering
 role: Admin
 source-git-commit: 7eaa338be262d953abc045ab88432507021734ca
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '641'
+ht-degree: 94%
 
 ---
 
 
-# Guide de l’utilisateur pour l’administration dans AEM 6.4 {#administering}
+# Guide de l’utilisateur pour l’administration dans AEM 6.4 {#administering}
 
 + [Guide de l’utilisateur d’administration - Aperçu](home.md)
 + Fonctionnalités des sites {#introduction}
    + [Administration de sites web](msm-and-translation.md)
-   + [Réutilisation de contenu : Multi Site Manager et Live Copy](msm.md)
+   + [Réutilisation de contenu : Multi-Site Manager et Live Copy](msm.md)
    + [Console Aperçu de Live Copy](msm-livecopy-overview.md)
    + [Configuration de la synchronisation des Live Copies](msm-sync.md)
    + [Création et synchronisation de Live Copies](msm-livecopy.md)
@@ -36,14 +36,14 @@ ht-degree: 0%
    + [Configuration de la structure d’intégration de traduction](tc-tic.md)
    + [Assistant Copie de la langue](tc-wizard.md)
    + [Amélioration des traductions](tc-enhancements.md)
-   + [Bonnes pratiques de traduction](tc-bp.md)
+   + [Bonnes pratiques en matière de traduction](tc-bp.md)
    + [Configurations et l’explorateur de configurations](configurations.md)
    + [FAQ sur AEM](aem-faqs.md)
 + Opérations {#operations}
    + [Tableaux de bord](dashboards.md)
    + [Tableau de bord des opérations](operations-dashboard.md)
    + [Sauvegarde et restauration](backup-and-restore.md)
-   + [Nettoyage de la mémoire d’entrepôt de données](data-store-garbage-collection.md)
+   + [Nettoyage de la mémoire du magasin de données](data-store-garbage-collection.md)
    + [Contrôle des ressources de serveur à l’aide de la console JMX](jmx-console.md)
    + [Utilisation des journaux](troubleshooting.md)
    + [Configuration de l’éditeur de texte enrichi](rich-text-editor.md)
@@ -51,7 +51,7 @@ ht-degree: 0%
    + [Éditeur en bloc](bulk-editor.md)
    + [Configuration des notifications électroniques](notification.md)
    + [Configuration de l’éditeur de texte enrichi pour produire des sites accessibles](rte-accessible-content.md)
-   + [Vérificateur de lien](external-link-checker.md)
+   + [Vérificateur de lien externe](external-link-checker.md)
    + [Résolution des incidents liés à AEM](troubleshoot.md)
    + [Maintenance du journal d’audit dans AEM 6](operations-audit-log.md)
    + [Éditeur](enable-classic-ui-editor.md)
@@ -65,7 +65,7 @@ ht-degree: 0%
    + [Consoles Outils ](tools-consoles.md)
    + [Création de rapports](reporting.md)
    + [Administration d’instances de workflow](workflows-administering.md)
-   + [Configuration du conteneur et du mode de mises en page](configuring-responsive-layout.md)
+   + [Configuration du conteneur et du mode de disposition](configuring-responsive-layout.md)
    + [Activation de l’accès à l’IU classique](enable-classic-ui.md)
    + [Démarrage d’un workflow](workflows-starting.md)
    + [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
@@ -76,7 +76,7 @@ ht-degree: 0%
    + [Liste de contrôle de sécurité](security-checklist.md)
    + [10 plus grands risques OWASP](owasp-top10.md)
    + [Exécution d’AEM en mode Prêt pour la production](production-ready.md)
-   + [Identity Management](identity-management.md)
+   + [Identity Management](identity-management.md)
    + [Authentification Adobe IMS et prise en charge de l’Admin Console pour AEM Managed Services](ims-config-and-admin-console.md)
    + [Création d’un groupe d’utilisateurs fermé](cug.md)
    + [Réduction des problèmes de sérialisation dans AEM](mitigating-serialization-issues.md)
@@ -88,7 +88,7 @@ ht-degree: 0%
    + [Gestionnaire d’authentification SAML 2.0](saml-2-0-authenticationhandler.md)
    + [Groupes d’utilisateurs fermés dans AEM](closed-user-groups.md)
    + [Opérations Granite - Administration des utilisateurs et des groupes](granite-user-group-admin.md)
-   + [Activation de CRXDE Lite dans AEM](enabling-crxde-lite.md)
+   + [Activation de CRXDE Lite dans AEM](enabling-crxde-lite.md)
    + [Configuration de LDAP avec AEM 6](ldap-config.md)
    + [Configuration du mot de passe d’administrateur sur l’installation](security-configure-admin-password.md)
    + [Utilisateurs de services dans AEM](security-service-users.md)
@@ -102,8 +102,8 @@ ht-degree: 0%
    + [Campagnes](campaigns.md)
    + [Configuration de la segmentation avec ContextHub](segmentation.md)
    + [Configuration de la segmentation](campaign-segmentation.md)
-   + [Extension et configuration de l’importateur de conception pour les pages d’entrée](extending-the-design-importer-for-landingpages.md)
-   + [Intégration des pages d’entrée à Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
+   + [Extension et configuration de l’importateur de conception pour les pages de destination](extending-the-design-importer-for-landingpages.md)
+   + [Intégration des pages de destination à Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
 + eCommerce {#ecommerce}
    + [eCommerce](ecommerce.md)
    + [Concepts](concepts.md)
@@ -118,34 +118,34 @@ ht-degree: 0%
    + [Intégration à Adobe Target](target.md)
    + [Intégration à Livefyre](livefyre.md)
    + [Intégration à Adobe Analytics](adobeanalytics.md)
-   + [Connexion à Adobe Analytics et création de structures](adobeanalytics-connect.md)
-   + [Configuration du suivi des liens Adobe Analytics](adobeanalytics-link.md)
-   + [Mappage des données de composant aux propriétés Adobe Analytics](adobeanalytics-mapping.md)
-   + [Configuration du suivi vidéo pour Adobe Analytics](adobeanalytics-video.md)
+   + [Connexion à Adobe Analytics et création de frameworks](adobeanalytics-connect.md)
+   + [Configuration du suivi des liens Adobe Analytics](adobeanalytics-link.md)
+   + [Mappage des données de composant aux propriétés Adobe Analytics](adobeanalytics-mapping.md)
+   + [Configuration du suivi vidéo pour Adobe Analytics](adobeanalytics-video.md)
    + [FAQ sur la diffusion de contenu HTTP/2](scene7-http2faq.md)
-   + [Résolution des incidents liés à votre intégration Adobe Campaign](troubleshooting-campaignintegration.md)
+   + [Résolution des incidents liés à votre intégration Adobe Campaign](troubleshooting-campaignintegration.md)
    + [Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector](sharepoint-connector-licenses.md)
-   + [SharePoint Connector](sharepoint-connector.md)
+   + [SharePoint Connector](sharepoint-connector.md)
    + [FAQ sur la fin de prise en charge de la visionneuse DHTML](dhtml-viewer-endoflifefaqs.md)
    + [Intégration à Adobe Campaign Classic](campaignonpremise.md)
    + [Articles associés de la communauté](related-community-articles.md)
-   + [Intégration à Adobe Campaign Standard](campaignstandard.md)
+   + [Intégration à Adobe Campaign Standard](campaignstandard.md)
    + [Notification de fin de prise en charge de la visionneuse Flash](flash-viewers-eol.md)
    + [Intégration à Adobe Creative Cloud](https://docs.adobe.com/content/help/fr-FR/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
-   + [Intégration à Adobe Dynamic Tag Management](dtm.md)
+   + [Intégration à Adobe Dynamic Tag Management](dtm.md)
    + [Souscription à Adobe Analytics et Adobe Target](opt-in.md)
    + [Portails et portlets AEM](aem-as-portal.md)
-   + [Intégration à Dynamic Media Classic](scene7.md)
+   + [Intégration à Dynamic Media Classic](scene7.md)
    + [Recettes AEM Livefyre](aem-livefyre-recipes.md)
    + [Résolution des problèmes d’intégration](troubleshooting-integration-issues.md)
    + [Intégration à BrightEdge Content Optimizer](brightedge.md)
-   + [Meilleures pratiques des modèles de courrier électronique](best-practices-for-email-templates.md)
-   + [Catalog Producer](catalog-producer.md)
+   + [Bonnes pratiques relatives aux modèles d’e-mail](best-practices-for-email-templates.md)
+   + [Catalog Producer](catalog-producer.md)
    + [Intégration à Silverpop Engage](silverpop.md)
-   + [Intégration à Adobe Campaign](campaign.md)
+   + [Intégration à Adobe Campaign ](campaign.md)
    + [Intégration à ExactTarget](exacttarget.md)
    + [Analytics avec des fournisseurs externes](external-providers.md)
-   + [Intégration à Adobe Marketing Cloud](marketing-cloud.md)
+   + [Intégration à Adobe Marketing Cloud](marketing-cloud.md)
    + [Configuration manuelle de l’intégration à Adobe Target](target-configuring.md)
    + [Conditions préalables à l’intégration à Adobe Target](target-requirements.md)
    + [Adobe Classifications](adobeanalytics-classifications.md)

@@ -9,8 +9,8 @@ feature: Mobile
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '331'
+ht-degree: 29%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 + [Guide de l’utilisateur mobile - Aperçu](home.md)
 + Présentation d’AEM Mobile {#introduction}
-   + [Prise en main d’AEM Mobile](getting-started-aem-mobile.md)
+   + [Prise en main d’AEM Mobile](getting-started-aem-mobile.md)
    + [AEM Mobile On-Demand](getting-started-aem-mobile-on-demand.md)
    + [Applications mobiles](mobile-apps.md)
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
