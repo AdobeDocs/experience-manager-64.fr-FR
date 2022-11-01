@@ -1,17 +1,17 @@
 ---
 title: Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de workflow basées sur l’utilisation d’AEM Forms
 seo-title: Dynamically select a user or group for AEM Forms-centric workflow steps
-description: 'Découvrez comment sélectionner un utilisateur ou un groupe pour un processus AEM Forms au moment de l’exécution. '
+description: Découvrez comment sélectionner un utilisateur ou un groupe pour un processus AEM Forms au moment de l’exécution.
 seo-description: Learn how to select a user or group for an AEM Forms workflow at the runtime.
 uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: c63e6e5c-c4c9-45b8-8401-87ee37a30c97
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ Découvrez comment sélectionner un utilisateur ou un groupe pour un processus A
 
 Dans les grandes entreprises, il existe des exigences pour sélectionner de manière dynamique les utilisateurs d’un processus, par exemple, la sélection d’un agent de terrain pour servir un client en fonction de la proximité de l’agent avec le client. Dans ce cas, l’agent est sélectionné de manière dynamique.
 
-Attribuez une tâche et les étapes Adobe Sign des [workflows centrés sur les formulaires sur OSGi](/help/forms/using/aem-forms-workflow.md) fournissent des options pour sélectionner de manière dynamique un utilisateur. Vous pouvez utiliser des bundles ECMAScript ou OSGi pour sélectionner de manière dynamique une personne désignée pour l’étape Affecter une tâche ou pour sélectionner des signataires pour l’étape Signer un document.
+Étapes Affecter une tâche et Acrobat Sign de [Workflows basés sur l’utilisation de Forms sur OSGi](/help/forms/using/aem-forms-workflow.md) fournissent des options pour sélectionner dynamiquement un utilisateur. Vous pouvez utiliser des bundles ECMAScript ou OSGi pour sélectionner de manière dynamique une personne désignée pour l’étape Affecter une tâche ou pour sélectionner des signataires pour l’étape Signer un document.
 
 ## Utilisation de ECMAScript pour sélectionner de manière dynamique un utilisateur ou un groupe {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
@@ -73,11 +73,11 @@ var path = workflowData.getPayload().toString();
 }
 ```
 
-L’exemple ECMAScript suivant sélectionne de manière dynamique une personne désignée pour l’étape Adobe Sign. Avant d’utiliser le script ci-dessous, assurez-vous que les informations utilisateur (adresses électroniques et numéros de téléphone) mentionnées dans le script sont correctes. Dans le cas contraire, le processus associé peut échouer.
+L’exemple ECMAScript suivant sélectionne de manière dynamique une personne désignée pour l’étape Acrobat Sign. Avant d’utiliser le script ci-dessous, assurez-vous que les informations utilisateur (adresses électroniques et numéros de téléphone) mentionnées dans le script sont correctes. Dans le cas contraire, le processus associé peut échouer.
 
 >[!NOTE]
 >
->Lors de l’utilisation de ECMAScript pour Adobe Sign, le script doit se trouver dans le référentiel crx à l’adresse /apps/fd/workflow/scripts/adobesign/ et doit disposer d’une fonction appelée getAdobeSignRecipients pour renvoyer une liste des utilisateurs.
+>Lors de l’utilisation d’ECMAScript pour Acrobat Sign, le script doit se trouver dans le référentiel crx-repository à l’adresse /apps/fd/workflow/scripts/adobésité/ et doit avoir une fonction nommée getAdobeSignRecipients pour renvoyer une liste des utilisateurs.
 
 ```
 function getAdobeSignRecipients() {
@@ -116,7 +116,7 @@ function getAdobeSignRecipients() {
 
 ## Utilisation de l’interface Java pour sélectionner de manière dynamique un utilisateur ou un groupe {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Vous pouvez utiliser l’interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/fr/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour choisir de manière dynamique un utilisateur ou un groupe pour les étapes Adobe Sign et Affecter une tâche. Vous pouvez créer un bundle OSGi qui utilise l’interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) et la déploie sur le serveur AEM Forms. Cela rend disponible à la sélection l’option dans les composants Affecter une tâche et Adobe Sign du processus AEM.
+Vous pouvez utiliser la variable [RecipientInfoSpecifier](https://helpx.adobe.com/fr/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interface Java permettant de sélectionner de manière dynamique un utilisateur ou un groupe pour les étapes Acrobat Sign et Assign Task. Vous pouvez créer un bundle OSGi qui utilise l’interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) et la déploie sur le serveur AEM Forms. Elle rend l’option disponible pour la sélection dans les composants Assign Task et Acrobat Sign du processus AEM.
 
 Vous avez besoin des fichiers jar [AEM Forms Client SDK](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) et [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) pour compiler l’exemple de code répertorié ci-dessous. Ajoutez ces fichiers jar en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
 
@@ -232,11 +232,11 @@ Vous avez besoin des fichiers jar [AEM Forms Client SDK](https://helpx.adobe.com
 
 1. Chargez le bundle sur un serveur AEM Forms. Vous pouvez utiliser AEM Package Manager pour importer le bundle sur le serveur AEM Forms.
 
-Une fois le bundle importé, l’option de sélection de l’interface Java pour sélectionner de manière dynamique un utilisateur ou un groupe devient disponible pour les étapes Adobe Sign et Affecter une tâche.
+Une fois le lot importé, l’option permettant de choisir l’interface Java pour sélectionner dynamiquement un utilisateur ou un groupe devient disponible dans pour les étapes Acrobat Sign et Assign Task.
 
 ### Exemples de code Java pour sélectionner de manière dynamique un utilisateur ou un groupe {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
-L’exemple de code suivant sélectionne de manière dynamique une personne désignée pour l’étape Adobe Sign. Vous pouvez utiliser ce code dans un bundle OSGi. Avant d’utiliser le code répertorié ci-dessous, assurez-vous que les informations utilisateur (adresses électroniques et numéros de téléphone) mentionnées dans le code sont correctes. Si les informations utilisateur mentionnées dans le code sont incorrectes, le processus associé peut échouer.
+L’exemple de code suivant sélectionne de manière dynamique une personne désignée pour l’étape Acrobat Sign. Vous pouvez utiliser ce code dans un bundle OSGi. Avant d’utiliser le code répertorié ci-dessous, assurez-vous que les informations utilisateur (adresses électroniques et numéros de téléphone) mentionnées dans le code sont correctes. Si les informations utilisateur mentionnées dans le code sont incorrectes, le processus associé peut échouer.
 
 ```java
 /*************************************************************************

@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '2911'
-ht-degree: 48%
+ht-degree: 44%
 
 ---
 
@@ -29,16 +29,16 @@ Les sites de référence vous permettent d’explorer et de voir en action les p
 * Intégration des données permettant de se connecter à des sources de données disparates afin de préremplir et d’envoyer des données de formulaire par le biais d’un modèle de données de formulaire.
 * Processus des formulaires pour automatiser les processus d’entreprise.
 * Fonctionnalités de traitement et de gestion des données utilisateur.
-* Intégration avec Adobe Sign garantissant une signature et un envoi sécurisé des formulaires adaptatifs.
+* Intégration à Acrobat Sign pour signer et envoyer en toute sécurité des formulaires adaptatifs.
 * Intégration avec Adobe Target pour fournir des recommandations ciblées et effectuer les tests A/B, pour augmenter le retour sur investissement d’un formulaire.
 * Intégration à Adobe Analytics pour mesurer les performances d’un formulaire ou d’une campagne et prendre des décisions éclairées.
 * Amélioration de l’expérience de remplissage des formulaires.
 
 Les sites de référence offrent des ressources réutilisables que vous pouvez utiliser comme modèles pour créer vos propres ressources.
 
-* Intégration avec Adobe Sign garantissant une signature et un envoi sécurisé des formulaires adaptatifs.
+* Intégration à Acrobat Sign pour signer et envoyer en toute sécurité des formulaires adaptatifs.
 
-* Intégration avec Adobe Sign garantissant une signature et un envoi sécurisé des formulaires adaptatifs.
+* Intégration à Acrobat Sign pour signer et envoyer en toute sécurité des formulaires adaptatifs.
 
 ## Conditions préalables et étapes et de la configuration des sites de référence {#prerequisites-and-steps-to-set-up-reference-sites}
 
@@ -50,9 +50,9 @@ Avant de configurer le site de référence, assurez-vous que vous disposez des �
 
 * **Un service SMTP** Vous pouvez utiliser n’importe quel service SMTP.
 
-* **Compte de développeur Adobe Sign et application API Adobe Sign**
+* **Compte de développeur Acrobat Sign et application API Acrobat Sign**
 
-   Pour utiliser les fonctionnalités de signature numérique, un compte de développeur Adobe Sign est requis. Voir [Adobe Sign](https://acrobat.adobe.com/fr/fr/why-adobe/developer-form.html).
+   Pour utiliser les fonctionnalités de signature numérique, un compte de développeur Acrobat Sign est requis. Voir [Acrobat Sign](https://acrobat.adobe.com/fr/fr/why-adobe/developer-form.html).
 
 * Une instance en cours d’exécution de Microsoft Dynamics 365 à intégrer à AEM Forms. Pour exécuter le site de référence, vous importez les exemples de données dans l’instance Microsoft Dynamics afin de préremplir la communication interactive utilisée dans le site de référence.
 * Une instance en cours d’exécution d’AEM 6.4 avec le module complémentaire Forms. Pour plus d’informations, reportez-vous à la section [Installation et configuration d’AEM Forms](installing-configuring-aem-forms-osgi.md).
@@ -74,7 +74,7 @@ Effectuez les étapes suivantes dans l’ordre recommandé pour installer et con
   <tr> 
    <td><a href="#ssl">Configurer SSL</a></td> 
    <td>Auteur et publication<br /> </td> 
-   <td>Activez HTTP via SSL pour sécuriser les communications avec Adobe Sign.</td> 
+   <td>Activez HTTP over SSL pour les communications sécurisées avec Acrobat Sign.</td> 
   </tr> 
   <tr> 
    <td><p><a href="#externalizer">Configuration de Day CQ Link Externalizer (Externalisateur du lien vers Day CQ)</a></p> </td> 
@@ -112,12 +112,12 @@ Effectuez les étapes suivantes dans l’ordre recommandé pour installer et con
    <td>Configurez le service cloud OAuth dans AEM Forms pour activer la communication entre AEM Forms et Microsoft Dynamics. </td> 
   </tr> 
   <tr> 
-   <td><a href="#scheduler">Configurer le planificateur Adobe Sign</a></td> 
+   <td><a href="#scheduler">Configuration du planificateur Acrobat Sign</a></td> 
    <td>Auteur et publication<br /> </td> 
    <td>Modifiez la configuration du planificateur pour vérifier l’état toutes les deux minutes.</td> 
   </tr> 
   <tr> 
-   <td><a href="#sign-service">Configurer le service cloud Adobe Sign de site de référence</a></td> 
+   <td><a href="#sign-service">Configuration du Cloud Service Acrobat Sign du site de référence</a></td> 
    <td>Auteur et publication<br /> </td> 
    <td>Une configuration qui comprend des packages de sites de référence et qui doit être reconfigurée avec des informations d’identification valides.</td> 
   </tr> 
@@ -144,7 +144,7 @@ Installez et déployez AEM Forms comme décrit dans la section [Installation et 
 
 ## Configurer SSL {#ssl}
 
-La configuration SSL est requise pour communiquer avec les serveurs Adobe Sign. Pour obtenir des instructions détaillées, voir [Activation de HTTP Over SSL](/help/sites-administering/ssl-by-default.md).
+La configuration SSL est requise pour communiquer avec les serveurs Acrobat Sign. Pour obtenir des instructions détaillées, voir [Activation de HTTP Over SSL](/help/sites-administering/ssl-by-default.md).
 
 >[!CAUTION]
 >
@@ -266,7 +266,7 @@ Pour importer les enregistrements de client et de police d’assurance :
 Configurez le service cloud OAuth dans AEM Forms pour activer la communication entre AEM Forms et Microsoft Dynamics. Effectuez les étapes suivantes pour configurer le Cloud Service OAuth sur les instances de création et de publication d’AEM :
 
 1. Sur AEM instance d’auteur, accédez à **[!UICONTROL Outils > Cloud Services > Sources de données > globales]**. Appuyer **[!UICONTROL Intégration de Refsite Dynamics]** icône et appuyez sur **[!UICONTROL Propriétés]**.
-1. Accédez au compte Microsoft Azure Active Directory. Ajoutez l’URL de configuration du service cloud copiée dans le paramètre **[!UICONTROL URL de réponse]** pour votre application enregistrée. enregistrez la configuration.
+1. Accédez au compte Microsoft Azure Active Directory. Ajoutez l’URL de configuration du service cloud copiée dans le paramètre **[!UICONTROL URL de réponse]** pour votre application enregistrée. Enregistrez la configuration.
 1. Dans l’onglet Paramètres d’authentification, spécifiez **[!UICONTROL Racine du service]**, **[!UICONTROL ID client]**, **[!UICONTROL Secret du client]**, et **[!UICONTROL URL de ressource]** pour votre instance Microsoft Dynamics. Cliquez sur **[!UICONTROL Connexion à OAuth]** qui redirige vers la page de connexion de Microsoft Dynamics.
 1. Entrez vos informations de connexion. Une fois connecté, vous êtes redirigé vers la page de configuration du service cloud AEM Forms. Cliquez sur **[!UICONTROL Enregistrer et fermer]**. La configuration du service cloud est enregistrée.
 1. Accédez à **[!UICONTROL Forms > Intégrations de données > We.Finance]**. Sélectionnez Assurance automobile (Dynamics) et cliquez sur Modifier. Les entités Microsoft Dynamics sont répertoriées sous l’onglet Sources de données . Patientez jusqu’à ce que toutes les entités soient récupérées à partir de Microsoft Dynamics et répertoriées sous l’onglet Sources de données .
@@ -274,33 +274,33 @@ Configurez le service cloud OAuth dans AEM Forms pour activer la communication e
 1. Dans la section de demande d’entrée, indiquez la valeur de l’ID de client comme &quot;900001&quot;, puis cliquez sur **[!UICONTROL Test]**. La section Sortie affiche les enregistrements récupérés de Microsoft Dynamics pour l’ID de client 900001.
 1. Répétez les étapes 1 à 6 sur l’instance de publication.
 
-## Configurer le planificateur Adobe Sign {#scheduler}
+## Configuration du planificateur Acrobat Sign {#scheduler}
 
 Effectuez les étapes suivantes sur les instances d’auteur et de publication :
 
 1. Accédez à AEM console de configuration Web à l’adresse `https://[server]:[host]/system/console/configMgr`.
-1. Rechercher et appuyer sur **[!UICONTROL Service de configuration Adobe Sign]** pour l’ouvrir en vue de la configuration.
+1. Rechercher et appuyer sur **[!UICONTROL Service de configuration Acrobat Sign]** pour l’ouvrir en vue de la configuration.
 1. Configurer **[!UICONTROL Expression du planificateur de mise à jour d’état]** as **0 0/2 &amp;ast; &amp;ast; &amp;ast; ?**.
 
    >[!NOTE]
    >
-   >La configuration du planificateur ci-dessus vérifie l’état du service Adobe Sign toutes les deux minutes.
+   >La configuration du planificateur ci-dessus vérifie l’état du service Acrobat Sign toutes les deux minutes.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
-## Configurer le service cloud Adobe Sign de site de référence {#sign-service}
+## Configuration du service cloud Acrobat Sign du site de référence {#sign-service}
 
 Effectuez les étapes suivantes sur les instances d’auteur et de publication :
 
-1. Accédez à **[!UICONTROL Outils > Cloud Services > Adobe Sign > global]**. Sélectionner **[!UICONTROL AEM Forms Reference Site Sign]** et appuyez sur **[!UICONTROL Propriétés]**.
+1. Accédez à **[!UICONTROL Outils > Cloud Services > Acrobat Sign > global]**. Sélectionner **[!UICONTROL AEM Forms Reference Site Sign]** et appuyez sur **[!UICONTROL Propriétés]**.
 
    >[!CAUTION]
    >
-   >Assurez-vous que le fichier https://[hôte]:[ssl_port]/mnt/overlay/adobesign/cloudservices/adobesign/properties.html L’URL est ajoutée à la liste des URL de redirection de la configuration OAuth de l’application API Adobe Sign.
+   >Assurez-vous que le fichier https://[hôte]:[ssl_port]/mnt/overlay/adobesign/cloudservices/adobesign/properties.html L’URL est ajoutée à la liste des URL de redirection de la configuration OAuth de l’application API Acrobat Sign.
 
-1. Indiquez l’ID client et le secret de la configuration OAuth d’application Adobe Sign.
-1. (Facultatif) Sélectionnez le **[!UICONTROL Activation d’Adobe Sign pour les pièces jointes également]** et appuyez sur **[!UICONTROL Connexion à Adobe Sign]**. Cela permet d’ajouter les fichiers joints à un formulaire adaptatif au document Adobe Sign envoyé à des fins de signature.
-1. Appuyer **[!UICONTROL Connexion à Adobe Sign]** et connectez-vous avec vos informations d’identification Adobe Sign.
+1. Indiquez l’identifiant du client et le secret de la configuration OAuth de l’application Acrobat Sign.
+1. (Facultatif) Sélectionnez le **[!UICONTROL Activation d’Acrobat Sign pour les pièces jointes également]** et appuyez sur **[!UICONTROL Connexion à Acrobat Sign]**. Il ajoute les fichiers joints à un formulaire adaptatif au document Acrobat Sign correspondant envoyé pour signature.
+1. Appuyer **[!UICONTROL Connexion à Acrobat Sign]** et connectez-vous avec vos informations d’identification Acrobat Sign.
 
 ## Configurer le service de configuration commun aux formulaires {#anonymous}
 

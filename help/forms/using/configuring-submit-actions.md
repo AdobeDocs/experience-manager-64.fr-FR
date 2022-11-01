@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
 feature: Adaptive Forms
 exl-id: 2a842bdc-6dcf-42cc-9a45-57ac15b79eb7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 93%
@@ -22,7 +22,7 @@ ht-degree: 93%
 
 Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bouton Envoyer d’un formulaire adaptatif. Vous pouvez configurer l’action d’envoi sur le formulaire adaptatif. Les formulaires adaptatifs fournissent quelques actions d’envoi prêtes à l’emploi. Vous pouvez copier et étendre les actions d’envoi par défaut afin de créer votre propre action. Cependant, en fonction des exigences, vous pouvez rédiger et enregistrer votre propre action d’envoi afin de traiter les données du formulaire envoyé.
 
-Lorsqu’un formulaire est prérempli ou envoyé, les données envoyées sont acheminées par AEM pour le traitement des données vers des formats intermédiaires. Les données ne sont pas enregistrées sur une instance d’AEM, sauf si le formulaire adaptatif utilise Adobe Sign, vérifiez, le brouillon ou l’envoi du portail de formulaires ou AEM processus.
+Lorsqu’un formulaire est prérempli ou envoyé, les données envoyées sont acheminées par AEM pour le traitement des données vers des formats intermédiaires. Les données ne sont pas enregistrées sur une instance d’AEM, sauf si le formulaire adaptatif utilise Acrobat Sign, vérifiez, le brouillon ou l’envoi du portail de formulaires ou AEM processus.
 
 Vous pouvez configurer une action d’envoi dans la section **[!UICONTROL Envoi]** des propriétés du conteneur de formulaire adaptatif, dans la zone latérale.
 

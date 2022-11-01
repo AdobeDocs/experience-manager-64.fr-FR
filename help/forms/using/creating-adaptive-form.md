@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 feature: Adaptive Forms
 exl-id: 4b6d3533-cd1f-4944-b580-49fd90fcf87a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '2017'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -154,7 +154,7 @@ En outre, vous pouvez utiliser l’éditeur de modèle pour créer vos propres m
 
 >[!NOTE]
 >
->Lorsque vous ouvrez un formulaire adaptatif créé à l’aide du modèle avancé pour l’édition, un message d’erreur s’affiche. Le modèle avancé comporte un composant Étape de signature et Adobe Sign est activé pour ce dernier par défaut. Créez et sélectionnez une [configuration de cloud Adobe Sign](/help/forms/using/adobe-sign-integration-adaptive-forms.md) et [configurez un signataire](/help/forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) pour résoudre l’erreur.
+>Lorsque vous ouvrez un formulaire adaptatif créé à l’aide du modèle avancé pour l’édition, un message d’erreur s’affiche. Le modèle avancé comporte un composant Étape de signature et Acrobat Sign est activé par défaut pour celui-ci. Créez et sélectionnez un [Configuration cloud Acrobat Sign](/help/forms/using/adobe-sign-integration-adaptive-forms.md) et [configuration d’un signataire](/help/forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) pour résoudre l’erreur.
 
 ## Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model}
 

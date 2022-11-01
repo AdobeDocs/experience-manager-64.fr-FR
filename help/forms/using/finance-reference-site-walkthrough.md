@@ -1,7 +1,7 @@
 ---
 title: Présentation du site de référence We.Finance
 seo-title: We.Finance reference site walkthrough
-description: 'Explorez le site de référence We.Finance et découvrez comment il a été mis en place. We.Finance est un exemple d’implémentation pour présenter les principales fonctions et fonctionnalités d’AEM Forms. '
+description: Explorez le site de référence We.Finance et découvrez comment il a été mis en place. We.Finance est un exemple d’implémentation pour présenter les principales fonctions et fonctionnalités d’AEM Forms.
 seo-description: Explore the We.Finance reference site and understand how it has been implemented. We.Finance is a sample implementation to showcase key features and functionalities of AEM Forms.
 uuid: cbcedba4-6151-475d-b6c2-9859e0382768
 content-type: reference
@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 exl-id: 17e8c644-ee17-496c-a781-a295a4796cb9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '9201'
 ht-degree: 66%
@@ -18,7 +18,7 @@ ht-degree: 66%
 
 # Présentation du site de référence We.Finance {#we-finance-reference-site-walkthrough}
 
-## Prérequis {#pre-requisites}
+## Conditions préalables {#pre-requisites}
 
 Installez les sites de référence comme décrit dans [Installation et configuration des sites de référence d’AEM Forms](/help/forms/using/setup-reference-sites.md).
 
@@ -116,7 +116,7 @@ Consultez également la documentation suivante pour plus d’informations sur le
 * [Éditeur de règles](/help/forms/using/rule-editor.md)
 * [Thèmes](/help/forms/using/themes.md)
 * [Intégration de données ](/help/forms/using/data-integration.md)
-* [Utilisation d’Adobe Sign dans les formulaires adaptatifs](/help/forms/using/working-with-adobe-sign.md)
+* [Utilisation d’Acrobat Sign dans les formulaires adaptatifs](/help/forms/using/working-with-adobe-sign.md)
 * [Processus basé sur l’utilisation de Forms sur OSGi](/help/forms/using/aem-forms-workflow.md)
 
 ### Démonstration {#a-see-it-yourself}
@@ -159,7 +159,7 @@ We.Finance reçoit la demande de carte de crédit envoyée par Sarah. Une tâche
 
 Lorsque Sarah remplit et envoie la demande de carte de crédit, un processus de formulaire se déclenche et une tâche est créée dans la boîte de réception AEM de Gloria.
 
-AEM Forms sur OSGi fournit des processus centrés sur des formulaires qui vous permettent de générer des processus basés sur des formulaires adaptatifs. Ces processus peuvent être utilisés pour la révision et l’approbation, les flux de processus d’entreprise, le démarrage de Documents Services, l’intégration du processus de signature Adobe Sign, etc. Pour plus d’informations, voir [Processus orientés formulaire sur OSGi](/help/forms/using/aem-forms-workflow.md).
+AEM Forms sur OSGi fournit des processus centrés sur des formulaires qui vous permettent de générer des processus basés sur des formulaires adaptatifs. Ces processus peuvent être utilisés pour la révision et l’approbation, les flux de processus d’entreprise, pour démarrer les services de document, pour intégrer le processus de signature Acrobat Sign, etc. Pour plus d’informations, voir [Processus orientés formulaire sur OSGi](/help/forms/using/aem-forms-workflow.md).
 
 L’image suivante illustre le processus AEM qui traite la demande de carte de crédit et génère une sortie PDF à partir de la demande.
 
@@ -404,7 +404,7 @@ Consultez également la documentation suivante pour plus d’informations sur le
 * [Éditeur de règles](/help/forms/using/rule-editor.md)
 * [Thèmes](/help/forms/using/themes.md)
 * [Intégration de données ](/help/forms/using/data-integration.md)
-* [Utilisation d’Adobe Sign dans les formulaires adaptatifs](/help/forms/using/working-with-adobe-sign.md)
+* [Utilisation d’Acrobat Sign dans les formulaires adaptatifs](/help/forms/using/working-with-adobe-sign.md)
 * [Processus basé sur l’utilisation de Forms sur OSGi](/help/forms/using/aem-forms-workflow.md)
 
 #### Démonstration {#see-it-yourself-6}
@@ -433,7 +433,7 @@ La tâche est réassignée à Gloria. Elle examine la copie de la carte d’iden
 
 Lorsque Sarah remplit et envoie la demande de prêt, un processus de formulaire se déclenche et une tâche est créée dans la boîte de réception AEM de Gloria. Lorsque Gloria examine la demande et demande des informations supplémentaires, la tâche est assignée à John Doe. Lorsque John Doe joint la copie de la carte d’identité et envoie à nouveau la demande, elle est assignée à Gloria. Ce cas de figure est défini dans le processus AEM associé à la demande de prêt immobilier.
 
-AEM Forms sur OSGi fournit des processus centrés sur des formulaires qui vous permettent de générer des processus basés sur des formulaires adaptatifs. Ces processus peuvent être utilisés pour la révision et l’approbation, les flux de processus d’entreprise, le démarrage de Documents Services, l’intégration du processus de signature Adobe Sign, etc. Pour plus d’informations, voir [Processus orientés formulaire sur OSGi](/help/forms/using/aem-forms-workflow.md).
+AEM Forms sur OSGi fournit des processus centrés sur des formulaires qui vous permettent de générer des processus basés sur des formulaires adaptatifs. Ces processus peuvent être utilisés pour la révision et l’approbation, les flux de processus d’entreprise, pour démarrer les services de document, pour intégrer le processus de signature Acrobat Sign, etc. Pour plus d’informations, voir [Processus orientés formulaire sur OSGi](/help/forms/using/aem-forms-workflow.md).
 
 L’image suivante illustre le processus AEM associé à la demande de prêt immobilier.
 
@@ -718,7 +718,7 @@ Consultez également la documentation suivante pour plus d’informations sur le
 * [Éditeur de règles](/help/forms/using/rule-editor.md)
 * [Thèmes](/help/forms/using/themes.md)
 * [Intégration de données ](/help/forms/using/data-integration.md)
-* [Utilisation d’Adobe Sign dans les formulaires adaptatifs](/help/forms/using/working-with-adobe-sign.md)
+* [Utilisation d’Acrobat Sign dans les formulaires adaptatifs](/help/forms/using/working-with-adobe-sign.md)
 * [Processus basé sur l’utilisation de Forms sur OSGi](/help/forms/using/aem-forms-workflow.md)
 
 #### Démonstration {#see-it-yourself-12}
@@ -881,7 +881,7 @@ Les deux stratégies utilisent la même communication interactive. Les sections 
 Le site de référence fournit également une communication interactive qui utilise Microsoft Dynamics comme source de données pour le modèle de données de formulaire. Effectuez les étapes suivantes pour configurer la communication interactive pour la présentation de l’assurance automobile :
 
 1. Connectez-vous à https://[author]:[port]/crx/de en tant qu’administrateur.
-1. Ouvrez le `/apps/we-finance/components/ccrui/ccrui.jsp`fichier .
+1. Ouvrez le fichier `/apps/we-finance/components/ccrui/ccrui.jsp`
 1. Définissez la valeur de `FormFieldRequestParameter`to `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Appuyez sur **Enregistrer tout**. Le site de référence est configuré pour utiliser la communication interactive qui utilise MS Dynamics comme source de données.
 

@@ -9,10 +9,10 @@ topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 role: Admin
 exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1799'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Installez et configurez des formulaires adaptatifs, des formulaires PDF et des f
 
 AEM Forms fournit un ensemble de formulaires permettant d’obtenir des données de l’utilisateur final : formulaires adaptatifs, formulaires HTML5 et formulaires PDF. Ce logiciel fournit également des outils pour répertorier tous les formulaires disponibles sur une page Web, analyser l’utilisation des formulaires et cibler les utilisateurs en fonction de leur profil. Ces fonctionnalités sont incluses dans le package du module complémentaire AEM Forms. Le package du module complémentaire est déployé sur une instance de création ou de publication d’AEM.
 
-**Formulaires adaptatifs :** ces formulaires changent d’apparence en fonction de la taille de l’écran de l’appareil, sont engageants et par nature interactifs. Les formulaires adaptatifs peuvent également s’intégrer à Adobe Analytics, Adobe Sign et Adobe Target. Ils vous ont permis de fournir aux utilisateurs des formulaires personnalisés et des expériences axées sur les processus en fonction de leur démographie et d’autres fonctionnalités. Vous pouvez également intégrer des formulaires adaptatifs à Adobe Sign.
+**Formulaires adaptatifs :** ces formulaires changent d’apparence en fonction de la taille de l’écran de l’appareil, sont engageants et par nature interactifs. Adaptive Forms peut également s’intégrer à Adobe Analytics, Acrobat Sign et Adobe Target. Ils vous ont permis de fournir aux utilisateurs des formulaires personnalisés et des expériences axées sur les processus en fonction de leur démographie et d’autres fonctionnalités. Vous pouvez également intégrer des formulaires adaptatifs à Acrobat Sign.
 
 **Les formulaires PDF** conviennent à l’impression parfaitement nette et à la capture d’informations numériques dans un document PDF. Dans l’avatar numérique, vous pouvez utiliser Adobe Acrobat ou Acrobat Reader pour remplir ces formulaires. Vous pouvez héberger ces formulaires sur votre site Web ou utiliser le portail de formulaires pour répertorier ces formulaires sur un site AEM. Vous pouvez également envoyer ces formulaires en pièces jointes par email à d’autres destinataires. Ces formulaires sont les mieux adaptés aux environnements de bureau.
 
@@ -107,7 +107,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
 
 ## Configurations post-installation {#post-installation-configurations}
 
-AEM Forms comporte quelques configurations obligatoires et facultatives. Les configurations obligatoires incluent la configuration des bibliothèques BouncyCastle et de l’agent de sérialisation. Les configurations facultatives incluent la configuration du répartiteur, du portail de formulaires, d’Adobe Sign, d’Adobe Analytics et d’Adobe Target.
+AEM Forms comporte quelques configurations obligatoires et facultatives. Les configurations obligatoires incluent la configuration des bibliothèques BouncyCastle et de l’agent de sérialisation. Les configurations facultatives incluent la configuration du Dispatcher, du portail Forms, d’Acrobat Sign, d’Adobe Analytics et d’Adobe Target.
 
 ### Configurations post-installation obligatoires {#mandatory-post-installation-configurations}
 
@@ -185,13 +185,13 @@ Vous pouvez activer la communication SSL pour le modèle de données de formulai
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 
-#### Configuration d’Adobe Sign {#configure-adobe-sign}
+#### Configuration d’Acrobat Sign {#configure-adobe-sign}
 
-Adobe Sign autorise les processus de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
+Acrobat Sign active les processus de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
 
-Dans un scénario Adobe Sign et de formulaires adaptatifs standard, un utilisateur remplit un formulaire adaptatif pour effectuer une demande de service. Par exemple, un formulaire de demande de carte de paiement et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, le formulaire est envoyé au prestataire de services qui décidera des actions à entreprise. Le prestataire de services passe en revue la demande et utilise Adobe Sign pour marquer la demande approuvée. Pour activer les processus de signature électronique similaires, vous pouvez intégrer Adobe Sign à AEM Forms.
+Dans un scénario Acrobat Sign et de formulaires adaptatifs type, un utilisateur remplit un formulaire adaptatif pour demander un service. Par exemple, un formulaire de demande de carte bancaire et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, le formulaire est envoyé au prestataire de services qui décidera des actions à entreprise. Le fournisseur de services examine la demande et utilise Acrobat Sign pour marquer la demande approuvée. Pour activer des processus de signature électronique similaires, vous pouvez intégrer Acrobat Sign à AEM Forms.
 
-Pour utiliser Adobe Sign avec AEM Forms, [intégrez Adobe Sign à AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+Pour utiliser Acrobat Sign avec AEM Forms, [Intégration d’Acrobat Sign à AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 #### Configuration d’Adobe Analytics {#configure-adobe-analytics}
 

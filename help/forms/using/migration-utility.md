@@ -12,7 +12,7 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 96%
@@ -135,7 +135,7 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
 
       * Chemin d’accès source : /etc/cloudservices/recaptcha
       * Chemin d’accès cible : /conf/global/settings/cloudconfigs/recaptcha
-   * Adobe Sign
+   * Acrobat Sign
 
       * Chemin d’accès source : /etc/cloudservices/echosign
       * Chemin d’accès cible : /conf/global/settings/cloudconfigs/echosign

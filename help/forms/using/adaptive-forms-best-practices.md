@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '4108'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -185,9 +185,9 @@ Les formulaires adaptatifs requièrent des actions Envoyer pour traiter les donn
 * Vous pouvez créer une action d’envoi personnalisée si les actions d’envoi par défaut ne remplissent pas votre cas d’utilisation. Pour plus d’informations, voir [Création d’une action Envoyer personnalisée pour les formulaires adaptatifs](/help/forms/using/custom-submit-action-form.md).
 * Incluez des validations côté serveur pour empêcher l’envoi de données non valides.
 
-Vous pouvez tirer parti de l’expérience multi-signature d’Adobe Sign dans les formulaires adaptatifs. Tenez compte des points suivants lors de la configuration d’Adobe Sign dans les formulaires adaptatifs. Pour plus d’informations, voir [Utiliser Adobe Sign dans un formulaire adaptatif](/help/forms/using/working-with-adobe-sign.md).
+Vous pouvez tirer parti de l’expérience multi-signes d’Acrobat Sign dans les formulaires adaptatifs. Tenez compte des points suivants lors de la configuration d’Acrobat Sign dans les formulaires adaptatifs. Pour plus d’informations, voir [Utilisation d’Acrobat Sign dans un formulaire adaptatif](/help/forms/using/working-with-adobe-sign.md).
 
-* Le formulaire adaptatif comprenant Adobe Sign est envoyé uniquement après que tous les signataires ont signé le formulaire. Les formulaires affichent l’état En attente de signature jusqu’à ce que le formulaire soit signé par tous les signataires.
+* Le formulaire adaptatif activé par Acrobat Sign n’est envoyé qu’une fois que tous les signataires ont signé le formulaire. Les formulaires affichent l’état En attente de signature jusqu’à ce que le formulaire soit signé par tous les signataires.
 * Vous pouvez configurer une expérience de signature intégrée ou rediriger les signataires vers une page de signature lors de l’envoi.
 * Configurez l’expérience de signature séquentielle ou parallèle, le cas échéant.
 

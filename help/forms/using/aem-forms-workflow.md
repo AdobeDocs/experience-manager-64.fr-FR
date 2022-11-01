@@ -1,20 +1,20 @@
 ---
 title: Processus basé sur l’utilisation de Forms sur OSGi
-seo-title: Rapidly build adaptive forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
-description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement la révision et les approbations, pour démarrer Documents Services (par exemple, pour convertir un document PDF dans un autre format), pour intégrer le processus de signature Adobe Sign et bien plus encore.
-seo-description: Use AEM Forms Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
+seo-title: Rapidly build adaptive forms-based processes, automate document services operations, and use Acrobat Sign with AEM workflows
+description: Utiliser un processus AEM Forms pour automatiser et créer rapidement des révisions et des approbations pour les services de document de début (par exemple, pour convertir un document de PDF dans un autre format), intégrez le processus de signature Acrobat Sign, etc.
+seo-description: Use AEM Forms Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Acrobat Sign signature workflow, and more.
 uuid: 46be7ec6-d5cc-498a-9484-e66a29527064
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+exl-id: fa39a4e8-ae22-4356-8935-44fdf1f4f609
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '2866'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
-
 
 # Processus basé sur l’utilisation de Forms sur OSGi {#forms-centric-workflow-on-osgi}
 
@@ -26,13 +26,13 @@ Avec les processus de révision et d’approbation pour les publics internes et 
 
 ## Présentation du processus basé sur l’utilisation de Forms sur OSGi {#introduction-to-forms-centric-workflow-on-osgi}
 
-Vous pouvez utiliser des processus AEM pour créer rapidement des processus basés sur des formulaires adaptatifs. Ces processus peuvent être utilisés pour la révision et l’approbation, les flux de processus d’entreprise, le démarrage de Documents Services, l’intégration du processus de signature Adobe Sign et des opérations similaires : par exemple, le traitement de l’application de cartes de crédit, les processus d’approbation de congés des employés et l’enregistrement d’un formulaire en tant que document PDF. De plus, ces processus peuvent être utilisés dans une entreprise ou sur le pare-feu réseau.
+Vous pouvez utiliser des processus AEM pour créer rapidement des processus basés sur des formulaires adaptatifs. Ces processus peuvent être utilisés pour la révision et l’approbation, les flux de processus d’entreprise, pour démarrer les services de document, pour intégrer le processus de signature Acrobat Sign et d’autres opérations similaires. par exemple, le traitement de l’application de cartes de crédit, les processus d’approbation de congés des employés et l’enregistrement d’un formulaire en tant que document PDF. De plus, ces processus peuvent être utilisés dans une entreprise ou sur le pare-feu réseau.
 
 Avec le processus basé sur l’utilisation de Forms sur OSGi, vous pouvez rapidement créer et déployer des processus pour différentes tâches sur la pile OSGi, sans avoir à installer la fonctionnalité Process Management complète sur la pile JEE. Le développement et la gestion des processus utilisent les fonctionnalités de boîte de messagerie AEM et AEM Workflow habituelles. Les processus forment la base de l’automatisation des processus réels d’entreprise, qui s’étendent sur plusieurs systèmes logiciels, réseaux, services et même organisations.
 
-Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou un processus défini par programmation lorsque les utilisateurs envoient un formulaire ou une lettre [Correspondence Management](/help/forms/using/cm-overview.md). Avec des fonctionnalités AEM Workflow améliorées, AEM Forms offre deux fonctionnalités distinctes mais similaires. Dans le cadre de votre stratégie de déploiement, vous devez décider laquelle vous convient le mieux. Voir [comparaison](/help/forms/using/capabilities-osgi-jee-workflows.md) des processus Forms AEM sur OSGi et Process Management sur JEE. De plus, pour la topologie de déploiement, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou un processus défini par programmation lorsque les utilisateurs envoient un formulaire ou une lettre [Correspondence Management](/help/forms/using/cm-overview.md). Avec des fonctionnalités AEM Workflow améliorées, AEM Forms offre deux fonctionnalités distinctes mais similaires. Dans le cadre de votre stratégie de déploiement, vous devez décider laquelle vous convient le mieux. Référez-vous à la [comparaison](/help/forms/using/capabilities-osgi-jee-workflows.md) des workflows centrés sur les formulaires AEM sur OSGi et de la gestion des processus sur JEE. De plus, pour la topologie de déploiement, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de messagerie AEM](/help/sites-authoring/inbox.md) et fournit des composants supplémentaires (étapes) pour que l’éditeur du processus AEM ajoute la prise en charge des processus AEM basés sur l’utilisation d’AEM Forms. La boîte de messagerie AEM étendue dispose de fonctionnalités similaires à celles de l’[espace de travail AEM Forms](/help/forms/using/introduction-html-workspace.md). Avec la gestion des processus basés sur les utilisateurs (approbation, révision, etc.), vous pouvez utiliser des processus AEM pour automatiser les opérations liées à [Document Services](/help/sites-developing/workflows-step-ref.md) (par exemple, la génération de PDF) et à la signature de documents (Adobe Sign) par voie électronique.
+Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de messagerie AEM](/help/sites-authoring/inbox.md) et fournit des composants supplémentaires (étapes) pour que l’éditeur du processus AEM ajoute la prise en charge des processus AEM basés sur l’utilisation d’AEM Forms. La boîte de messagerie AEM étendue dispose de fonctionnalités similaires à celles de l’[espace de travail AEM Forms](/help/forms/using/introduction-html-workspace.md). Outre la gestion des workflows pour intervenants humains (approbation, révision, etc.), vous pouvez utiliser des workflows AEM pour automatiser [Services de document](/help/sites-developing/workflows-step-ref.md)les opérations liées (par exemple, Générer un PDF) et la signature électronique de documents (Acrobat Sign).
 
 Le diagramme suivant illustre le processus complet de création, d’exécution et contrôle d’un processus basé sur l’utilisation de Forms sur OSGi.
 
@@ -43,7 +43,7 @@ Le diagramme suivant illustre le processus complet de création, d’exécution 
 * Un processus est une représentation d’un processus réel d’entreprise. Conservez votre processus réel d’entreprise et répertoriez les participants du processus d’entreprise qui sont prêts. Par ailleurs, préparez les éléments associés (formulaires adaptatifs, documents PDF, etc.) avant de créer un processus.
 * Un processus peut se composer de plusieurs étapes. Ces étapes sont répertoriées dans la boîte de réception AEM et facilitent la progression de rapport du processus. Divisez votre processus d’entreprise en étapes logiques.
 * Vous pouvez configurer l’étape de tâche affectée des processus AEM pour envoyer des notifications électroniques aux utilisateurs ou aux personnes désignées. Ainsi, [autorisez les notifications électroniques](#configure-email-service).
-* Un processus peut également utiliser Adobe Sign pour les signatures numériques. Si vous envisagez d’utiliser Adobe Sign dans un processus, [ configure Adobe Sign pour AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md) avant de l’utiliser dans un processus.
+* Un workflow peut également utiliser Acrobat Sign pour les signatures numériques. Si vous prévoyez d’utiliser Acrobat Sign dans un workflow, la variable [configuration d’Acrobat Sign pour AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md) avant de l’utiliser dans un workflow.
 
 ## Créer un modèle de processus {#create-a-workflow-model}
 
@@ -57,11 +57,11 @@ AEM fournit une interface utilisateur intuitive pour créer un modèle de proces
 
 ### Création d’un modèle pour un processus d’approbation et de révision {#create-a-model-for-an-approval-and-review-workflow}
 
-Le processus d’approbation et de révision est destiné aux tâches qui nécessitent une intervention humaine pour une prise de décisions. L’exemple suivant crée un modèle de processus pour une demande de prêt immobilier à remplir par un conseiller bancaire. Une fois remplie, la demande est envoyée pour approbation. Par la suite, la demande approuvée est envoyée au demandeur pour les signatures électroniques à l’aide d’Adobe Sign.
+Le processus d’approbation et de révision est destiné aux tâches qui nécessitent une intervention humaine pour une prise de décisions. L’exemple suivant crée un modèle de processus pour une demande de prêt immobilier à remplir par un conseiller bancaire. Une fois remplie, la demande est envoyée pour approbation. Par la suite, la demande approuvée est envoyée au demandeur pour signature électronique à l’aide d’Acrobat Sign.
 
 L’exemple est disponible en tant que module joint ci-dessous. Importez et installez l’exemple à l’aide du gestionnaire de modules. Vous pouvez également effectuer les opérations suivantes afin de créer manuellement le modèle de processus de la demande :
 
-Cet exemple crée un modèle de processus pour une demande de prêt immobilier à remplir par un conseiller bancaire. Une fois remplie, la demande est envoyée pour approbation. Par la suite, la demande approuvée est envoyée au client pour les signatures électroniques à l’aide d’Adobe Sign. Vous pouvez importer et installer l’exemple à l’aide du gestionnaire de modules.
+Cet exemple crée un modèle de processus pour une demande de prêt immobilier à remplir par un conseiller bancaire. Une fois remplie, la demande est envoyée pour approbation. Par la suite, la demande approuvée est envoyée au client pour signature électronique à l’aide d’Acrobat Sign. Vous pouvez importer et installer l’exemple à l’aide du gestionnaire de modules.
 
 [Obtenir le fichier](assets/example-mortgage-loan-application.zip)
 
@@ -188,7 +188,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
   </tr> 
   <tr> 
    <td>Chemin d’accès du document d’enregistrement</td> 
-   <td>Spécifiez le chemin d’accès du fichier Document d’enregistrement dans le référentiel crx. Le chemin est relatif à l’emplacement de la charge utile du formulaire adaptatif. Intégrez toujours le nom complet du fichier, y compris son extension, le cas échéant. Par exemple, [charge utile] /DOR/creditcard.pdf.</td> 
+   <td>Spécifiez le chemin d’accès du fichier Document d’enregistrement dans le référentiel crx. Le chemin est relatif à l’emplacement de la charge utile du formulaire adaptatif. Intégrez toujours le nom complet du fichier, y compris son extension, le cas échéant. Par exemple, [charge utile]/DOR/creditcard.pdf.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -197,21 +197,21 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
 
 Vous pouvez lancer ou de déclencher un processus basé sur l’utilisation de Forms en :
 
-* [Envoi d’une demande depuis la boîte de réception AEM](#inbox)
+* [Envoyer une demande depuis la boîte de réception AEM](#inbox)
 * [Envoyant une demande depuis l’application AEM Forms](#afa)
 
 * [Envoi d’un formulaire adaptatif](#af)
 * [Utilisant le dossier de contrôle](#watched)
 
-* [Envoi d’une communication interactive ou d’une lettre](#letter)
+* [Envoyer une communication interactive ou une lettre](#letter)
 
-### Envoi d’une demande depuis la boîte de réception AEM {#inbox}
+### Envoyer une demande depuis la boîte de réception AEM {#inbox}
 
 La demande de processus que vous avez créée est disponible en tant qu’application dans la boîte de réception. Les utilisateurs qui sont membres du groupe d’utilisateurs de processus peuvent renseigner et envoyer la demande qui déclenche le processus associé. Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour envoyer des demandes et gérer des tâches, voir [Gestion des applications et des tâches Forms dans la boîte de réception AEM](/help/forms/using/manage-applications-inbox.md).
 
 ### Envoyant une demande depuis l’application AEM Forms {#afa}
 
-L’application AEM Forms se synchronise avec un serveur AEM Forms et vous permet de modifier les données de formulaire, les tâches, les demandes de processus et les informations enregistrées (brouillons/modèles) dans votre compte. Pour plus d’informations, voir [application AEM Forms](/help/forms/using/aem-forms-app.md) et les articles connexes.
+L’application AEM Forms se synchronise avec un serveur AEM Forms et vous permet de modifier les données de formulaire, les tâches, les demandes de processus et les informations enregistrées (brouillons/modèles) dans votre compte. Pour plus d’informations, consultez [Application AEM Forms](/help/forms/using/aem-forms-app.md) et les articles connexes.
 
 ### Envoi d’un formulaire adaptatif {#af}
 
@@ -242,7 +242,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
   </tr> 
   <tr> 
    <td><span class="uicontrol">Traiter les fichiers avec</span></td> 
-   <td>Sélectionnez la <span class="uicontrol">Workflow </span>. </td> 
+   <td>Sélectionnez l’option <span class="uicontrol">Workflow</span>.  </td> 
   </tr> 
   <tr> 
    <td><span class="uicontrol">Modèle de processus</span></td> 
@@ -265,7 +265,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
 
 ### Envoi d’une communication interactive ou d’une lettre {#letter}
 
-Vous pouvez associer et exécuter un processus Forms sur OSGi lors de l’envoi d’une communication interactive ou d’une lettre. Dans Correspondence Management, les workflows sont utilisés pour le post-traitement des communications interactives et des lettres. par exemple, l’envoi de courriers électroniques, l’impression, la télécopie ou l’archivage des lettres finales. Pour les étapes détaillées, voir [Post-traitement des communications interactives et des lettres](/help/forms/using/submit-letter-topostprocess.md).
+Vous pouvez associer et exécuter un workflow basé sur l’utilisation de Forms sur OSGi lors de l’envoi d’une communication interactive ou d’une lettre. Dans le système de gestion de contenu, les workflows sont utilisés pour le post-traitement de communications interactives et de lettres. par exemple, l’envoi de courriers électroniques, l’impression, la télécopie ou l’archivage des lettres finales. Pour les étapes détaillées, voir [Post-traitement des communications interactives et des lettres](/help/forms/using/submit-letter-topostprocess.md).
 
 ## Autres configurations {#additional-configurations}
 

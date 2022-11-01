@@ -10,10 +10,10 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 exl-id: 1afef311-c1e6-48ec-ae23-dbd553a99ac6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1413'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Lorsque vous sélectionnez un formulaire et que vous le publiez, ses éléments 
 Vos formulaires adaptatifs peuvent utiliser certains paramètres, configurations et personnalisations qui ne sont pas publiés automatiquement. Il est recommandé de publier ou d’activer ces ressources avant de publier un formulaire adaptatif.
 
 * Modèles de formulaires adaptatifs modifiables
-* Configurations du service Cloud pour les modèles Adobe Sign, Typekit, reCAPTCHA et Form Data
+* Configurations de Cloud Service pour Acrobat Sign, Typekit, reCAPTCHA et les modèles de données de formulaire
 * Les autres configurations de services Cloud ne sont activées que si l’utilisateur dispose de droits d’administrateur.
 * Personnalisations. Elles comprennent notamment :
 

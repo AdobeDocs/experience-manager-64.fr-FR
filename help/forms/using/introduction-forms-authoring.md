@@ -1,5 +1,5 @@
 ---
-title: 'Présentation de la création de formulaires adaptatifs '
+title: Présentation de la création de formulaires adaptatifs
 seo-title: Introduction to authoring adaptive forms
 description: AEM Forms fournit une interface à la fois conviviale et puissante permettant de créer des formulaires adaptatifs. Les nombreux composants et outils proposés vous permettent de créer des formulaires.
 seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
@@ -10,10 +10,10 @@ topic-tags: introduction, author
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
 feature: Adaptive Forms
 exl-id: 62f1ddd3-9fc2-49dd-b588-0c3520e1cdd2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '3045'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -109,8 +109,8 @@ La barre latérale comprend les explorateurs suivants :
    <th><strong>Fonctionnalité</strong></th> 
   </tr> 
   <tr> 
-   <td>Bloc Adobe Sign</td> 
-   <td>Ajoute un bloc de texte avec des espaces réservés pour que les champs soient remplis lors de la signature à l’aide d’Adobe Sign.</td> 
+   <td>Bloc Acrobat Sign</td> 
+   <td>Ajoute un bloc de texte contenant des espaces réservés pour le remplissage des champs lors de la signature à l’aide d’Acrobat Sign.</td> 
   </tr> 
   <tr> 
    <td>Bouton</td> 
@@ -154,7 +154,7 @@ La barre latérale comprend les explorateurs suivants :
   </tr> 
   <tr> 
    <td>Pièce jointe</td> 
-   <td><p>Ajoute un bouton qui permet aux utilisateurs de rechercher et de joindre des documents annexes au formulaire.</p> <p><strong>Remarque :</strong> le composant Pièce jointe prend en charge un ensemble prédéfini de formats de fichiers dans des formulaires adaptatifs activés pour Adobe Sign. Pour plus d’informations, voir <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Formats de fichiers pris en charge</a>.</p> </td> 
+   <td><p>Ajoute un bouton qui permet aux utilisateurs de rechercher et de joindre des documents annexes au formulaire.</p> <p><strong>Remarque : </strong>Le composant Pièce jointe prend en charge un ensemble prédéfini de formats de fichier dans les formulaires adaptatifs activés pour Acrobat Sign. Pour plus d’informations, voir <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Formats de fichiers pris en charge</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Liste des pièces jointes</td> 

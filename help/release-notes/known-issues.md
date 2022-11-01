@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: 7f80933dfe8439bbd57ef85ece96399f7ec39f64
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 49%
+ht-degree: 48%
 
 ---
 
@@ -97,12 +97,12 @@ Si vous utilisez Microsoft Edge comme navigateur :
 
 * **Console** - Le lien Nom d’utilisateur ou Mot de passe oublié redirige vers la page de connexion au lieu du formulaire de récupération de mot de passe correspondant (CQ-4237682).
 
-## Formulaires {#forms}
+## Forms {#forms}
 
 ### Installation et déploiement
 
 * (AEM Forms JEE uniquement) En cas d’amorçage d’un serveur d’applications JBoss en cours d’exécution, le gestionnaire de configuration renvoie un appel EJB et des erreurs d’échec de l’amorçage. Vous pouvez toutefois les ignorer. (Réf. CQ-4229793)
-* Au démarrage d’AEM Forms, la variable `SAX Security Manager could not be setup` s’affiche. (CQ-4297403)
+* Au démarrage d’AEM Forms, l’avertissement `SAX Security Manager could not be setup` s’affiche. (CQ-4297403)
 
 ### Communications interactives
 
@@ -133,9 +133,9 @@ Si vous utilisez Microsoft Edge comme navigateur :
 
 (CQ-4238462)
 
-### Intégration d’Adobe Sign
+### Intégration d’Acrobat Sign
 
-* Le planificateur d’Adobe Sign cesse de fonctionner par moments, ce qui empêche les formulaires en attente de signature de passer à la soumission. Pour résoudre le problème, redémarrez l’événement **Prise en charge du planificateur Apache Sling** à partir de la console web d’AEM à l’adresse https://[*server*]:[*port*]/system/console/bundles.
+* Le planificateur Acrobat Sign cesse de fonctionner par intermittence. Par conséquent, les formulaires en attente de signature ne passent pas à l’envoi. Pour résoudre le problème, redémarrez l’événement **Prise en charge du planificateur Apache Sling** à partir de la console web d’AEM à l’adresse https://[*server*]:[*port*]/system/console/bundles.
 
 ### Création de formulaires adaptatifs
 
