@@ -4,7 +4,7 @@ seo-title: Variations - Authoring Fragment Content
 description: Les variations permettent de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon l’objectif recherché (si nécessaire).
 seo-description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
 uuid: affccda0-be5f-47d2-85b6-8701b77ac932
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
@@ -12,14 +12,14 @@ discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
 feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 97%
 
 ---
 
-# Variations – création de contenu de fragment {#variations-authoring-fragment-content}
+# Variations – créer du contenu de fragment {#variations-authoring-fragment-content}
 
 >[!CAUTION]
 >
@@ -196,11 +196,10 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
 >
 >D’autres langues sont disponibles en tant que modules de modèle de langues sur le portail Distribution logicielle :
 >
->* [Français (fr) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Allemand (de) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Italien (it) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Espagnol (es) de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-
+>* [Français (fr) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Allemand (de) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italien (it) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Espagnol (es) de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -373,7 +372,7 @@ Lors de la modification d’une variation, vous pouvez accéder à l’action de
 
 3. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert  (ajouté à la variation) ;
+   * le contenu ajouté figure en vert (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
 
    ![cfm-6420-27](assets/cfm-6420-27.png)

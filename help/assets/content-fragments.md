@@ -4,7 +4,7 @@ seo-title: Working with Content Fragments
 description: Découvrez comment les fragments de contenu vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages.
 seo-description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
 uuid: aa5acda2-4c20-4fe7-929d-6c065b252cf2
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
 feature: Content Fragments
 role: User
-source-git-commit: 5d523aa135e02b7d06241188c3b4a1d4502f4204
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 98%
@@ -67,7 +67,7 @@ Les fragments de contenu vous permettent de :
 
 Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses expériences sur de multiples canaux.
 
-## Fragments de contenu et Content Services    {#content-fragments-and-content-services}
+## Fragments de contenu et services de contenu {#content-fragments-and-content-services}
 
 AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web.
 
@@ -89,7 +89,6 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 >
 >* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
-
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 >

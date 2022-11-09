@@ -4,7 +4,7 @@ seo-title: Managing Content Fragments
 description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
 seo-description: Content Fragments are stored as Assets, so are primarily managed from the Assets console.
 uuid: 0659cf03-b4e8-4b8b-bec7-0082f980115a
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
@@ -12,14 +12,14 @@ discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
 feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 98%
 
 ---
 
-# Gestion des fragments de contenu {#managing-content-fragments}
+# Gérer des fragments de contenu {#managing-content-fragments}
 
 >[!CAUTION]
 >
@@ -31,7 +31,7 @@ Les fragments de contenu sont stockés en tant que **[!UICONTROL Ressources]**, 
 >
 >Les fragments de contenu sont ensuite utilisés avec les pages de création ; voir [Création de page avec des fragments de contenu](/help/sites-authoring/content-fragments.md).
 
-## Création de fragments de contenu  {#creating-content-fragments}
+## Créer des fragments de contenu {#creating-content-fragments}
 
 ### Création d’un modèle de contenu {#creating-a-content-model}
 
@@ -253,7 +253,6 @@ Outre les options standard, la [Chronologie](managing-assets-touch-ui.md#timelin
 >* Une fonctionnalité standard pour toutes les ressources
 >* Réalisés dans la chronologie
 >* Liés à la ressource de fragment
-
 >
 >Les annotations (pour les fragments de contenu) sont :
 >

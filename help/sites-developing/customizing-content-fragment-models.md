@@ -5,13 +5,13 @@ description: Les modèles de fragment de contenu peuvent être personnalisés et
 seo-description: Content Fragment Models can be customized and extended.
 page-status-flag: de-activated
 uuid: 5bcfb5d8-37d4-4a0e-882d-bc8a1bac6ba7
-contentOwner: aheimoz
+contentOwner: AEM Docs
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 3%
+ht-degree: 13%
 
 ---
 
@@ -44,7 +44,7 @@ Un utilisateur peut [créer un modèle de fragment de contenu ;](/help/assets/co
 >
 >Vous ne devez ***rien*** modifier dans le chemin `/libs`.
 >
->En effet, le contenu de `/libs` est remplacé la prochaine fois que vous mettez à niveau votre instance (et peut l’être lorsque vous appliquez un correctif ou un Feature Pack).
+>Cela est dû au fait que le contenu de `/libs` sera écrasé la prochaine fois que vous mettrez à niveau votre instance (et éventuellement lors de l’application d’un correctif logiciel ou d’un pack de fonctionnalités).
 
 ## Structure d’un modèle {#structure-of-a-model}
 
@@ -83,12 +83,12 @@ L&#39;assistant va créer une entrée avec cette structure :
 
 Le **Éditeur de modèle de fragment de contenu** comporte deux parties :
 
-* Panneau de prévisualisation, ou d’affichage, sur le côté gauche, dans lequel vous pouvez déposer des éléments. Cela :
+* Panneau de prévisualisation, ou d’affichage, sur le côté gauche, dans lequel vous pouvez déposer des éléments. Celui-ci :
 
    * Affiche un aperçu de la variable **Type de données** qui est instancié.
    * Autorise l’ordre dans l’éditeur de modèles.
 
-* Le **Types de données**/**Propriétés** dans le panneau situé à droite. Cela :
+* Le **Types de données**/**Propriétés** dans le panneau situé à droite. Celui-ci :
 
    * Affiche une liste des types de données qui peuvent être déplacés et instanciés.
    * Pour l’éditeur de modèle d’usine, la liste se trouve à l’adresse suivante :
@@ -105,7 +105,7 @@ Le **Éditeur de modèle de fragment de contenu** comporte deux parties :
 >
 >Vous ne devez ***rien*** modifier dans le chemin `/libs`.
 >
->En effet, le contenu de `/libs` est remplacé la prochaine fois que vous mettez à niveau votre instance (et peut l’être lorsque vous appliquez un correctif ou un Feature Pack).
+>Cela est dû au fait que le contenu de `/libs` sera écrasé la prochaine fois que vous mettrez à niveau votre instance (et éventuellement lors de l’application d’un correctif logiciel ou d’un pack de fonctionnalités).
 
 <!-- Please uncomment when files are used
 The properties on the right side define a form that is submitted directly into JCR under `/conf`; see the path in the example [Structure of a Model](/help/sites-developing/customizing-content-fragment-models.md#structure-of-a-model).

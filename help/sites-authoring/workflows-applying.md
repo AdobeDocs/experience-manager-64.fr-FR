@@ -4,13 +4,13 @@ seo-title: Applying Workflows to Pages
 description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
 seo-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
 uuid: 8a1d16f8-69fc-4e3a-b72a-b799ea381024
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
 exl-id: 05c52802-adfd-4b5f-a273-d6a261a00659
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 100%
@@ -106,10 +106,9 @@ Vous pouvez spécifier les détails du workflow :
    * **Titre de module**
 
       * Vous pouvez spécifier un titre pour le module, pour faciliter son identification.
-
    >[!NOTE]
    >
-   >L’option **Conserver le module de workflow** est disponible lorsque le workflow a été configuré pour la prise en charge multi-ressource et que plusieurs ressources ont été sélectionnées.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
+   >L’option **Conserver le module de workflow** est disponible lorsque le workflow a été configuré pour la [prise en charge multi-ressource](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) et que plusieurs ressources ont été sélectionnées.
 
    Une fois que vous avez terminé, cliquez sur **Suivant** pour continuer.
 
@@ -124,9 +123,9 @@ Vous pouvez spécifier les détails du workflow :
 
          Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection selon les critères suivants :
 
-         * Inclure seulement les enfants immédiats.
-         * Inclure seulement les pages modifiées.
-         * Inclure seulement les pages déjà publiées.
+         * Inclure seulement les enfants immédiats
+         * Inclure seulement les pages modifiées
+         * Inclure seulement les pages déjà publiées
 
          Tous les enfants spécifiés seront ajoutés à la liste de ressources auquel le workflow s’appliquera.
 

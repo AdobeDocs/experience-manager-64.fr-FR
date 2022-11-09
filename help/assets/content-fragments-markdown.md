@@ -4,7 +4,7 @@ seo-title: Markdown
 description: Lors du processus de création, l’éditeur de fragments de contenu utilise la syntaxe markdown pour vous permettre d’écrire aisément du contenu.
 seo-description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
 uuid: 12b185a5-3d87-4d7c-8d09-8cc2726009a8
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
@@ -12,14 +12,14 @@ discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
 feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 97%
 
 ---
 
-# Texte (Markdown) {#markdown}
+# Markdown {#markdown}
 
 >[!CAUTION]
 >
@@ -141,7 +141,7 @@ Vous pouvez utiliser des blocs de citations imbriqués. Par exemple :
 
 Vous pouvez créer des listes ordonnées et non ordonnées.
 
-Pour créer une liste non ordonnée, insérez le symbole &amp;ast; avant les éléments de la liste. Par exemple :
+Pour créer une liste non ordonnée, insérez le symbole * avant les éléments de la liste. Par exemple :
 
     `* item in list`
 
@@ -177,7 +177,7 @@ Vous pouvez mettre du texte en gras comme suit :
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Pour désigner une plage de code, entourez-la de guillemets obliques (&amp;grave;). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
+Pour désigner une plage de code, entourez-la de guillemets obliques (&grave;). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
 
 Par exemple :
 
