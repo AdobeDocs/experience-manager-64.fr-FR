@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 role: Admin
 exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2764'
 ht-degree: 6%
 
 ---
@@ -88,16 +88,16 @@ Pour configurer les fonctionnalités d’Analytics for Communities, il est néce
 
 ## Suite de rapports Adobe Analytics pour les rapports vidéo {#adobe-analytics-report-suite-for-video-reporting}
 
-Utilisation des [Gestionnaire de suites de rapports](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html), les suites de rapports Analytics peuvent être configurées de sorte qu’un site de communauté puisse être activé afin de fournir des rapports pour les fonctionnalités de communauté.
+Utilisation des [Gestionnaire de suites de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html), les suites de rapports Analytics peuvent être configurées de sorte qu’un site de communauté puisse être activé afin de fournir des rapports pour les fonctionnalités de communauté.
 
-En vous connectant à [Adobe Marketing Cloud](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) avec [Nom de la société et nom d’utilisateur](analytics.md#prerequisites), il est possible de configurer une nouvelle suite de rapports ou une suite de rapports existante pour que :
+En vous connectant à [Adobe Marketing Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) avec [Nom de la société et nom d’utilisateur](analytics.md#prerequisites), il est possible de configurer une nouvelle suite de rapports ou une suite de rapports existante pour que :
 
-* [11 variables de conversion](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (evars)
+* [11 variables de conversion](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (evars)
 
    * **`evar1`** through **`evar11`** enabled
    * Peut réutiliser (renommer) des eVars existantes ou en créer de nouvelles à utiliser pour les fonctionnalités de communauté
 
-* [7 Événements de succès](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) (events)
+* [7 Événements de succès](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) (events)
 
    * **`event1`** through **`event7`** enabled
    * Type **`Counter`**
@@ -106,7 +106,7 @@ En vous connectant à [Adobe Marketing Cloud](https://docs.adobe.com/content/hel
    * Peut réutiliser (renommer) des événements existants ou en créer de nouveaux à utiliser pour les fonctionnalités de communauté
 
 
-* [Gestion des vidéos](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
+* [Gestion des vidéos](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
    * Console Rapports vidéo
 
@@ -128,7 +128,6 @@ Si vous utilisez un **suite de rapports existante**, il peut être nécessaire d
 >
 >* **`evar1`** à **`evar11`**
 >* **`event1`** à **`event7`**
-
 >
 >**Avant que le site de la communauté ne soit publié,** il est important de restaurer le mappage préexistant en déplaçant les variables AEM automatiquement mappées aux variables Analytics lorsque Analytics a été activé pour un site de communauté.
 >
@@ -198,7 +197,7 @@ La création initiale d’une nouvelle configuration Analytics entraîne l’aff
 
 ![chlimage_1-267](assets/chlimage_1-267.png)
 
-* **[!UICONTROL Société]**
+* **[!UICONTROL Entreprise]**
 
    Société associée au compte Adobe Analytics
 
@@ -206,7 +205,7 @@ La création initiale d’une nouvelle configuration Analytics entraîne l’aff
 
    Nom d’utilisateur de connexion de l’utilisateur autorisé à gérer le compte Analytics.
 
-* **[!UICONTROL Mot de passe]**
+* **[!UICONTROL Password]**
 
    Mot de passe de connexion de l’utilisateur autorisé
 
@@ -241,7 +240,7 @@ Pour enregistrer les paramètres :
       * Tester un autre centre de données
       * Contacter le représentant de votre compte
 
-* **[!UICONTROL Cliquez sur OK]**
+* Sélectionnez **[!UICONTROL OK]**
 
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
@@ -392,8 +391,8 @@ Voici un exemple de mappages par défaut après avoir suivi les [tutoriel de pri
 |  | Type de ressource d’activation | Titre du site | Type de fonction | Titre du groupe | Chemin d’accès du groupe | Type UGC | Titre UGC | Utilisateur (membre) | Chemin d’accès UGC | Chemin du site |
 |------------------------|------------------------|-----------|--------------|------------|-----------|---------|----------|--------------|---------|----------|
 |  | **eVar1** | **eVar2** | **eVar3** | **eVar4** | **eVar5** | **eVar6** | **eVar7** | **eVar8** | **eVar9** | **eVar10** |
-| event1Resource Play | (une) | - | - | - | - | - | - | - | (i) | - |
-| event2SCFView | (une) | (b) | (c) | (d) | (e) | (f) | (g) | (h) | (i) | (j) |
+| event1Resource Play | (a) | - | - | - | - | - | - | - | (i) | - |
+| event2SCFView | (a) | (b) | (c) | (d) | (e) | (f) | (g) | (h) | (i) | (j) |
 | event3SCFCreate (Post) | - | (b) | (c) | (d) | (e) | (f) | (g) | (h) | (i) | (j) |
 | event4SCFFollow | - | (b) | (c) | (d) | (e) | (f) | (g) | (h) | (i) | (j) |
 | event5SCFVoteUp | - | (b) | (c) | (d) | (e) | (f) | (g) | (h) | (i) | (j) |
@@ -456,7 +455,6 @@ Voir les sections :
 >
 >* **`evar1`** à **`evar11`**
 >* **`event1`** à **`event7`**
-
 >
 >**Avant que le site de la communauté ne soit publié,** il est important de restaurer le mappage préexistant et de déplacer les variables d’AEM Communities qui étaient automatiquement mappées (lorsque Analytics a été activé pour le site de la communauté) vers d’autres variables Analytics. Ce remappage doit être cohérent dans tous les composants de Communities.
 >
@@ -545,10 +543,10 @@ Le sujet du forum est actuellement le seul exemple de cette personnalisation :
 
 ## Gestion des données utilisateur dans Analytics {#manage-user-data-in-analytics}
 
-Adobe Analytics fournit des API qui vous permettent d’accéder, d’exporter et de supprimer des données utilisateur. Pour plus d’informations, voir [Soumettre des demandes d’accès et de suppression](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+Adobe Analytics fournit des API qui vous permettent d’accéder, d’exporter et de supprimer des données utilisateur. Pour plus d’informations, voir [Soumettre des demandes d’accès et de suppression](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 ## Ressources {#resources}
 
-* Adobe Marketing Cloud : [Aide et référence d’Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
+* Adobe Marketing Cloud : [Aide et référence d’Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html)
 * AEM : [Intégration à Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
 * AEM : [Analytics avec des fournisseurs externes](../../help/sites-administering/external-providers.md)

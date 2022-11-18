@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 exl-id: 79d2dbfb-5e44-4a96-ab9b-ba5d93fc3aae
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ Vous pouvez également fournir un fichier image à utiliser comme miniature de l
 Il existe des onglets supplémentaires (et facultatifs) pour créer le service cloud et intégrer le module SDK Mobile Services Adobe dans votre application.
 
 * Build : Cliquez sur Gérer les configurations et configurez ici votre service de génération build build.phonegap.com. Ensuite, dans la liste déroulante, vous pourrez sélectionner le nouveau service cloud PhoneGap Build.
-* Analytics : Cliquez sur Gérer les configurations et configurez vos [SDK Adobe Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) service cloud. Ensuite, dans la liste déroulante, vous pourrez sélectionner le service mobile nouvellement créé à intégrer à votre application mobile.
+* Analytics : Cliquez sur Gérer les configurations et configurez vos [SDK Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) service cloud. Ensuite, dans la liste déroulante, vous pourrez sélectionner le service mobile nouvellement créé à intégrer à votre application mobile.
 
 ## Utilisation des modèles d’application {#using-app-templates}
 
@@ -65,7 +65,7 @@ Renseignez les détails de votre nouvelle application si nécessaire, y compris 
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
-## Étapes suivantes {#the-next-steps}
+## Les étapes suivantes {#the-next-steps}
 
 Consultez les ressources suivantes pour en savoir plus sur les autres rôles de création :
 

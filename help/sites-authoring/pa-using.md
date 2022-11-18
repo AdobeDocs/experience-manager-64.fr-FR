@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 6509c0ce-fc3a-4248-8dc7-db10602c30d6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 93%
+source-wordcount: '439'
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Chaque colonne indique une valeur pour la période de création de rapports actu
 
 Sélectionnez la période de création de rapports pour laquelle les données d’analyse s’affichent sur la console Sites :
 
-* Données  Données
+* Données des 30 derniers jours
 * Données des 90 derniers jours
 * Données de cette année
 
@@ -69,13 +69,13 @@ Les membres du groupe d’utilisateurs administrateurs d’analyse peuvent confi
 
 1. Sélectionnez les mesures à présenter aux auteurs dans la console Sites, puis cliquez sur **Ajouter**.
 
-   Les colonnes affichées sont obtenues à partir d’Adobe Analytics.
+   Les colonnes affichées sont obtenues à partir d’Adobe Analytics.
 
    ![aa-16](assets/aa-16.png)
 
 ### Ouverture de Content Insights à partir de la console Sites {#opening-content-insights-from-sites}
 
-Ouvrir [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour en savoir plus sur l’efficacité des pages.
+Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour continuer à évaluer en détail l’efficacité des pages.
 
 1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez voir Content Insight.
 1. Sur la barre d’outils, cliquez sur l’icône Analyses et recommandations.
@@ -86,6 +86,6 @@ Ouvrir [Content Insight](/help/sites-authoring/content-insights.md) à partir de
 
 >[!CAUTION]
 >
->En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
+>En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->Le [Module externe ActivityMap fourni par Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) doit maintenant être utilisé.
+>Le [plug-in ActivityMap fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=fr) doit désormais être utilisé.

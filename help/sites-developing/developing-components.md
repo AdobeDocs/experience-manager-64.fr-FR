@@ -4,9 +4,9 @@ seo-title: Developing AEM Components
 description: Les composants AEM servent à stocker, mettre en forme et générer le rendu du contenu diffusé dans vos pages Web.
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3477'
+source-wordcount: '3475'
 ht-degree: 99%
 
 ---
@@ -427,7 +427,7 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 >[!NOTE]
 >
->La création automatique d’instances de composant est désormais facile à configurer dans l’interface utilisateur lors de l’utilisation de [composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et de modèles modifiables. Consultez [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) pour plus d’informations sur la définition des composants automatiquement associés à des types de média donnés.
+>La création automatique d’instances de composant est désormais facile à configurer dans l’interface utilisateur lors de l’utilisation de [composants de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et de modèles modifiables. Consultez [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) pour plus d’informations sur la définition des composants automatiquement associés à des types de média donnés.
 
 ## Utilisation de l’extension AEM Brackets {#using-the-aem-brackets-extension}
 

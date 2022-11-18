@@ -10,10 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: ce9a1c1f-a37b-4765-b87e-5b2359312cfe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 98%
+source-wordcount: '536'
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ L’interface de modèle doit être correctement annotée afin de définir les m
 
 ## Exemple {#example}
 
-Les composants principaux prennent en charge l’exportation JSON depuis la version[ 1.1.0 des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et peuvent être utilisés comme référence.
+Les composants principaux prennent en charge l’exportation JSON depuis la version[ 1.1.0 des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et peuvent être utilisés comme référence.
 
 Pour obtenir un exemple, consultez la mise en œuvre du modèle Sling sur le composant principal de l’image et son interface annotée.
 
@@ -93,9 +93,9 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 Pour plus d’informations, voir :
 
-* [Rubrique Fragments de contenu du guide de l’utilisateur Assets](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* la [rubrique Fragments de contenu du guide de l’utilisateur Assets](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js).
 
 * [Modèles de fragment de contenu](/help/assets/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-authoring/content-fragments.md)
-* [Exportateur JSON pour Content Services](/help/sites-developing/json-exporter.md)
-* [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Exportateur JSON pour Content Services](/help/sites-developing/json-exporter.md)
+* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://helpx.adobe.com/fr/experience-manager/core-components/using/content-fragment-component.html)

@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 exl-id: e09d2d59-41f0-4cf2-bcf3-ec3dbc3b8474
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 5%
+source-wordcount: '643'
+ht-degree: 7%
 
 ---
 
@@ -49,7 +49,7 @@ Ce module intègre les principales fonctionnalités de traitement du secteur Liv
 * Intégrez en toute transparence votre catalogue de produits existant dans Livefyre afin de stimuler l’engagement et la conversion des utilisateurs sur vos sites et de proposer des expériences de contenu créé par l’utilisateur Shoppable.
 * Modifiez ou supprimez des éléments dans votre catalogue de produits Commerce AEM et mettez automatiquement à jour les modifications dans Livefyre.
 
-Pour obtenir de l’aide sur l’installation, voir [Intégration à Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html).
+Pour obtenir de l’aide sur l’installation, voir [Intégration à Livefyre](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html?lang=fr).
 
 ### Informations supplémentaires sur la version {#additional-release-information}
 
@@ -62,7 +62,7 @@ En raison des mises à jour affectant l’agrégation du contenu des comptes uti
 #### Nouvelle fonctionnalité ou amélioration {#new-feature-or-improvement}
 
 * Ajout de la possibilité de rechercher du contenu créé par l’utilisateur avant de configurer des comptes de réseaux sociaux de demande de droits dans Livefyre. Vous devez configurer des comptes de réseaux sociaux pour demander des droits ou remplacer la demande de droits si vous possédez le contenu.
-* Instagram et Twitter [Workflow de demande de droits UGC](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) a été mis à jour pour se conformer aux dernières API.
+* Instagram et Twitter [Workflow de demande de droits UGC](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html) a été mis à jour pour se conformer aux dernières API.
 * L’état des droits et les actions appropriées s’affichent désormais dans l’écran de demande de droits.
 
 #### Correctifs {#bug-fixes}

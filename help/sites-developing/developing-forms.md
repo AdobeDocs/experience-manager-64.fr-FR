@@ -10,14 +10,14 @@ topic-tags: components
 content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 exl-id: 6d52babc-9477-4528-9c25-35cb729f5d78
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 79%
+source-wordcount: '1941'
+ht-degree: 92%
 
 ---
 
-# Développement de formulaires (IU classique){#developing-forms-classic-ui}
+# Développement de formulaires (IU classique){#developing-forms-classic-ui}
 
 La structure de base d’un formulaire est la suivante :
 
@@ -25,21 +25,21 @@ La structure de base d’un formulaire est la suivante :
 * Éléments du formulaire
 * Fin du formulaire
 
-Toutes ces opérations sont réalisées avec une série de valeurs par défaut. [Composants de formulaire](/help/sites-authoring/default-components.md), disponible dans une installation d’AEM standard.
+Toutes ces actions sont effectuées avec une série de [composants de formulaire](/help/sites-authoring/default-components.md) par défaut, disponibles dans une installation AEM standard.
 
 Outre le [développement de nouveaux composants](/help/sites-developing/developing-components-samples.md) utilisables sur vos formulaires, vous pouvez :
 
-* [Précharger des valeurs dans votre formulaire](#preloading-form-values)
-* [Précharger plusieurs valeurs dans (certains) champs](#preloading-form-fields-with-multiple-values)
-* [Développer de nouvelles actions](#developing-your-own-form-actions)
-* [Développer de nouvelles contraintes](#developing-your-own-form-constraints)
-* [Afficher ou masquer des champs de formulaire spécifiques](#showing-and-hiding-form-components)
+* [précharger des valeurs dans votre formulaire ;](#preloading-form-values)
+* [précharger plusieurs valeurs dans (certains) champs ;](#preloading-form-fields-with-multiple-values)
+* [développer de nouvelles actions ;](#developing-your-own-form-actions)
+* [développer de nouvelles contraintes ;](#developing-your-own-form-constraints)
+* [afficher ou masquer des champs de formulaire spécifiques.](#showing-and-hiding-form-components)
 
-[Utilisation de scripts](#developing-scripts-for-use-with-forms) pour étendre les fonctionnalités lorsque cela s’avère nécessaire.
+[Utilisation de scripts](#developing-scripts-for-use-with-forms) pour étendre les fonctionnalités lorsque cela s’avère nécessaire
 
 >[!NOTE]
 >
->Ce document porte sur le développement de formulaires à l’aide des [composants Foundation](/help/sites-authoring/default-components-foundation.md) dans l’IU classique. Adobe recommande de tirer parti des nouveaux [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et des [conditions de masquage](/help/sites-developing/hide-conditions.md) pour le développement de formulaires dans l’interface utilisateur tactile.
+>Ce document porte sur le développement de formulaires à l’aide des [composants Foundation](/help/sites-authoring/default-components-foundation.md) dans l’IU classique. Adobe recommande de tirer parti des nouveaux [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et des [conditions de masquage](/help/sites-developing/hide-conditions.md) pour le développement de formulaires dans l’interface utilisateur tactile.
 
 ## Préchargement de valeurs de formulaire {#preloading-form-values}
 
@@ -51,7 +51,7 @@ Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœ
 
 >[!NOTE]
 >
->Une [action de formulaire](#developing-your-own-form-actions) peut également définir la ressource à partir de laquelle les valeurs initiales doivent être chargées . Pour ce faire, utilisez `FormsHelper#setFormLoadResource` inside `init.jsp`.
+>Une [action de formulaire](#developing-your-own-form-actions) peut également définir la ressource à partir de laquelle les valeurs initiales doivent être chargées . Pour ce faire, `FormsHelper#setFormLoadResource` est utilisé dans `init.jsp`.
 >
 >Le formulaire est rempli à partir du chemin d’accès défini dans le composant de début de formulaire par l’auteur, et ce, uniquement si cette action n’est pas définie.
 
@@ -71,13 +71,13 @@ Le **Chemin de chargement des éléments** peut être utilisé pour accéder à 
 
    par exemple, `/etc/designs/<myDesign>/formlistvalues`
 
-1. Ajoutez une nouvelle propriété (par exemple, `myList`) de type chaîne à plusieurs valeurs ( `String[]`) pour contenir la liste des éléments déroulants. Le contenu peut être également importé à l’aide d’un script (script JSP ou curl dans un script shell).
+1. Ajoutez une nouvelle propriété (`myList`, par exemple) de type chaîne à plusieurs valeurs (`String[]`) pour contenir la liste des éléments. Le contenu peut être également importé à l’aide d’un script (script JSP ou curl dans un script shell).
 
 1. Utilisez le chemin complet dans le champ **Chemin de chargement des éléments** :
 
    par exemple, `/etc/designs/geometrixx/formlistvalues/myList`
 
-Notez que si les valeurs de la variable `String[]` sont au format suivant :
+Notez que si les valeurs de `String[]` sont formatées comme suit :
 
 * `AL=Alabama`
 * `AK=Alaska`
@@ -104,9 +104,9 @@ et dans la liste **Type d’action** du composant **Formulaire** :
 
 Cette section vous explique comment développer votre propre action de formulaire à inclure dans cette liste.
 
-Vous pouvez ajouter votre propre action sous `/apps` comme suit :
+Vous pouvez ajouter votre propre action sous `/apps` en procédant comme suit :
 
-1. Créer un nœud de type `sling:Folder`. Renseignez un nom qui indique l’action à implémenter.
+1. Créez un nœud de type `sling:Folder`. Renseignez un nom qui indique l’action à implémenter.
 
    Par exemple :
 
@@ -114,12 +114,12 @@ Vous pouvez ajouter votre propre action sous `/apps` comme suit :
 
 1. Sur ce nœud, définissez les propriétés suivantes, puis cliquez sur **Enregistrer tout** pour conserver vos modifications :
 
-   * `sling:resourceType` - défini comme `foundation/components/form/action`
-   * `componentGroup` - Définissez comme `.hidden`
-   * Si vous le souhaitez :
+   * `sling:resourceType` - Défini comme `foundation/components/form/action`
+   * `componentGroup` : Définissez cette propriété sur `.hidden`.
+   * Facultatif :
 
       * `jcr:title` : indiquez un titre de votre choix ; il sera affiché dans la liste de sélection déroulante. S’il n’est pas défini, c’est le nom du nœud qui est affiché.
-      * `jcr:description` - saisissez une description de votre choix.
+      * `jcr:description` : indiquez la description de votre choix.
 
 1. Dans le dossier, créez un nœud de boîte de dialogue :
 
@@ -138,37 +138,37 @@ Vous pouvez ajouter votre propre action sous `/apps` comme suit :
       Le nom du script est `forward.<extension`>, par exemple `forward.jsp`
 
       Ce script peut définir un chemin d’accès. La requête actuelle est ensuite transmise au chemin d’accès spécifié.
-   L’appel nécessaire est `FormsHelper#setForwardPath` (2 variantes). Un cas de figure classique consiste à effectuer une validation, ou logique, pour trouver le chemin cible, puis à effectuer un transfert vers ce chemin, laissant au servlet POST Sling par défaut le soin de procéder au stockage proprement dit dans JCR.
+   L’appel nécessaire est `FormsHelper#setForwardPath` (2 variantes). Un cas de figure classique consiste à effectuer une validation, ou appliquer une logique, pour trouver le chemin cible, puis à effectuer un transfert vers ce chemin, laissant au servlet POST Sling par défaut le soin de procéder au stockage proprement dit dans JCR.
 
-   Un autre servlet peut également procéder au traitement. Dans ce cas, l’action de formulaire et le fichier `forward.jsp` font simplement office de code de collage. Par exemple, l’action Courrier à l’adresse `/libs/foundation/components/form/actions/mail`, qui transfère les détails vers `<currentpath>.mail.html`où se trouve une servlet de messagerie.
+   Un autre servlet peut également procéder au traitement. Dans ce cas, l’action de formulaire et le fichier `forward.jsp` font simplement office de code de collage. Il peut s’agir, par exemple, de l’action mail à l’adresse `/libs/foundation/components/form/actions/mail`, qui transfère les détails à `<currentpath>.mail.html` où réside un servlet de messagerie.
 
    De ce fait :
 
-   * Un fichier `post.POST.jsp` est utile pour les petites opérations qui sont entièrement effectuées par l’action proprement dite.
+   * un fichier `post.POST.jsp` est utile pour les petites opérations qui sont entièrement effectuées par l’action proprement dite.
    * Le fichier `forward.jsp`, en revanche, est utile lorsque la délégation seule est requise.
 
    L’ordre d’exécution des scripts est le suivant :
 
-   * Lors du rendu du formulaire ( `GET`) :
+   * Lors du rendu du formulaire (`GET`) :
 
       1. `init.jsp`
-      1. pour toutes les contraintes du champ : `clientvalidation.jsp`
-      1. validationRT du formulaire : `clientvalidation.jsp`
-      1. Le formulaire est chargé via la ressource de chargement si elle est définie
-      1. `addfields.jsp` pendant le rendu `<form></form>`
-   * lors de la gestion d’un formulaire `POST`:
+      1. pour toutes les contraintes du champ : `clientvalidation.jsp`
+      1. validationRT du formulaire : `clientvalidation.jsp`
+      1. le formulaire est chargé via la ressource de chargement si elle est définie
+      1. `addfields.jsp` pendant le rendu de `<form></form>`
+   * lors de la gestion d’un formulaire `POST` :
 
       1. `init.jsp`
-      1. pour toutes les contraintes du champ : `servervalidation.jsp`
-      1. validationRT du formulaire : `servervalidation.jsp`
+      1. pour toutes les contraintes du champ : `servervalidation.jsp`
+      1. validationRT du formulaire : `servervalidation.jsp`
       1. `forward.jsp`
-      1. Si un chemin de transfert a été défini, (`FormsHelper.setForwardPath`), transférez la requête, puis appelez `cleanup.jsp`
-      1. Si aucun chemin de transfert n’a été défini, appelez `post.POST.jsp` (se termine ici, aucun fichier `cleanup.jsp` n’est appelé)
+      1. si un chemin de transfert a été défini, (`FormsHelper.setForwardPath`), transférez la requête, puis appelez `cleanup.jsp`
+      1. si aucun chemin de transfert n’a été défini, appelez `post.POST.jsp` (se termine ici, aucun fichier `cleanup.jsp` n’est appelé)
 
 
 
 
-1. De nouveau dans le dossier, vous pouvez éventuellement ajouter l’un des éléments suivants :
+1. De nouveau, dans le dossier, vous pouvez éventuellement ajouter l’un des éléments suivants :
 
    1. Un script pour ajouter des champs.
 
@@ -180,7 +180,7 @@ Vous pouvez ajouter votre propre action sous `/apps` comme suit :
 
       Le nom du script est `init.<extension>`, par exemple : `init.jsp`
 
-      Ce script est appelé lorsque le formulaire est rendu. Il peut être utilisé pour initialiser des caractéristiques d’action. &quot;
+      Ce script est appelé lorsque le formulaire est rendu. Il peut être utilisé pour initialiser des caractéristiques d’action. ``
 
    1. Un script de nettoyage.
 
@@ -205,9 +205,9 @@ Les contraintes peuvent être imposées à deux niveaux :
 
 #### Contraintes pour les différents champs {#constraints-for-individual-fields}
 
-Vous pouvez ajouter vos propres contraintes pour un champ spécifique (sous `/apps`) comme suit :
+Vous pouvez ajouter vos propres contraintes pour un champ spécifique (sous `/apps`), en procédant comme suit :
 
-1. Créer un nœud de type `sling:Folder`. Renseignez un nom qui indique la contrainte à implémenter.
+1. Créez un nœud de type `sling:Folder`. Renseignez un nom qui indique la contrainte à implémenter.
 
    Par exemple :
 
@@ -215,9 +215,9 @@ Vous pouvez ajouter vos propres contraintes pour un champ spécifique (sous `/ap
 
 1. Sur ce nœud, définissez les propriétés suivantes, puis cliquez sur **Enregistrer tout** pour conserver vos modifications :
 
-   * `sling:resourceType` - défini sur `foundation/components/form/constraint`
+   * `sling:resourceType` - Défini sur `foundation/components/form/constraint`
    * `constraintMessage` : message personnalisé qui s’affiche si le champ n’est pas valide, suivant la contrainte, lorsque le formulaire est envoyé
-   * Si vous le souhaitez :
+   * Facultatif :
 
       * `jcr:title` : indiquez le titre de votre choix ; il sera affiché dans la liste de sélection. S’il n’est pas défini, c’est le nom du nœud qui est affiché.
       * `hint` : informations supplémentaires à l’intention de l’utilisateur, concernant la façon d’utiliser le champ
@@ -244,14 +244,14 @@ Vous pouvez ajouter vos propres contraintes pour un champ spécifique (sous `/ap
 
 #### Contraintes globales du formulaire {#form-global-constraints}
 
-La validation globale du formulaire est spécifiée en configurant un type de ressource dans le composant de début de formulaire ( `validationRT`). Par exemple :
+La validation globale du formulaire est spécifiée en configurant un type de ressource dans le composant de début de formulaire (`validationRT`). Par exemple :
 
 `apps/myProject/components/form/validation`
 
 Vous pouvez ensuite définir :
 
-* a `clientvalidation.jsp` - injecté après les scripts de validation client du champ
-* et un `servervalidation.jsp` : également appelé après les validations individuelles du serveur de champs sur un `POST`.
+* un `clientvalidation.jsp`, injecté après les scripts de validation de client du champ
+* et un `servervalidation.jsp`, également appelé après les validations des différents champs lors d’un `POST`.
 
 ### Affichage et masquage de composants de formulaire {#showing-and-hiding-form-components}
 
@@ -259,7 +259,7 @@ Vous pouvez configurer votre formulaire de manière à afficher ou masquer des c
 
 Changer la visibilité d’un champ de formulaire est utile lorsque le champ est requis uniquement dans certaines conditions. Par exemple, sur un formulaire de commentaires une question demande aux clients s’ils souhaitent recevoir les informations sur les produits par courrier électronique. Lorsque « oui » est sélectionné, un champ de texte s’affiche pour permettre au client de saisir son adresse de courrier électronique.
 
-Utilisez la boîte de dialogue **Modifier Afficher / Masquer les règles** pour spécifier dans quelles conditions un composant de formulaire est affiché ou masqué.
+Utilisez la boîte de dialogue **Modifier les règles Afficher / Masquer** pour spécifier dans quelles conditions un composant de formulaire est affiché ou masqué.
 
 ![showhideeditor](assets/showhideeditor.png)
 
@@ -268,13 +268,13 @@ Utilisez les champs en haut de la boîte de dialogue pour spécifier les informa
 * Si vous spécifiez les conditions d’affichage ou de masquage du composant.
 * Si une ou toutes les conditions doivent être vraies pour afficher ou masquer le composant.
 
-Une ou plusieurs conditions s’affichent sous ces champs. Une condition compare la valeur d’un autre composant de formulaire (sur le même formulaire) à une valeur. Si la valeur réelle dans le champ remplit la condition, cette dernière est évaluée comme étant vraie. Les conditions incluent les informations suivantes :
+Une ou plusieurs conditions s’affichent sous ces champs. Une condition compare la valeur d’un autre composant de formulaire (sur le même formulaire) à une valeur. Si la valeur réelle dans le champ remplit la condition, cette dernière est évaluée comme étant vraie. Les conditions comprennent les informations suivantes :
 
 * Le titre du champ de formulaire testé.
 * Un opérateur.
 * Une valeur à laquelle la valeur du champ est comparée.
 
-Par exemple, un composant Groupe de cases d’option avec le titre `Receive email notifications?`* * contient `Yes` et `No` boutons radio. Un composant de champ de texte avec le titre de `Email Address` utilise la condition suivante afin qu’elle soit visible si `Yes` est sélectionné :
+Par exemple, un composant Groupe de cases d’option avec le titre `Receive email notifications?`* * contient des boutons radio `Yes` et `No`. Un composant de champ de texte avec le titre `Email Address` utilise la condition suivante selon laquelle il est visible lorsque l’option `Yes` est sélectionnée :
 
 ![showhidecondition](assets/showhidecondition.png)
 
@@ -318,9 +318,9 @@ Dans JavaScript, les conditions utilisent la valeur de la propriété Nom de l�
 
 #### Gestion de références de composant interrompues {#handling-broken-component-references}
 
-Les conditions Afficher / Masquer utilisent la valeur de la propriété Nom de l’élément pour faire référence aux autres composants dans le formulaire. La configuration Afficher/Masquer n’est pas valide lorsque l’une des conditions fait référence à un composant qui est supprimé ou dont la propriété Nom de l’élément a été modifiée. Dans ce cas, vous devez mettre à jour manuellement les conditions, sans quoi une erreur se produira au chargement du formulaire.
+Les conditions Afficher / Masquer utilisent la valeur de la propriété Nom de l’élément pour faire référence aux autres composants dans le formulaire. La configuration Afficher / Masquer n’est pas valide lorsque l’une des conditions fait référence à un composant qui est supprimé ou dont la propriété Nom de l’élément a été modifiée. Dans ce cas, vous devez mettre à jour manuellement les conditions, sans quoi une erreur se produira au chargement du formulaire.
 
-Lorsque la configuration Afficher/Masquer n’est pas valide, elle n’est fournie que sous forme de code JavaScript. Modifiez le code pour résoudre les problèmes. Le code utilise la propriété Nom de l’élément utilisée initialement pour faire référence aux composants.
+Lorsque la configuration Afficher / Masquer n’est pas valide, elle est uniquement fournie sous la forme de code JavaScript. Modifiez le code pour résoudre les problèmes. Le code utilise la propriété Nom de l’élément utilisée initialement pour faire référence aux composants.
 
 ### Développement de scripts à utiliser avec des formulaires {#developing-scripts-for-use-with-forms}
 
@@ -331,4 +331,4 @@ Vous pouvez utiliser ceci pour des actions telles que l’appel d’un service a
 * Définissez le type de ressource de validation.
 * Insérez un script pour la validation :
 
-   * Dans le fichier JSP, appelez le service web et créez un objet `com.day.cq.wcm.foundation.forms.ValidationInfo` contenant vos messages d&#39;erreur. S&#39;il existe des erreurs, les données du formulaire ne sont pas publiées.
+   * Dans le fichier JSP, appelez le service Web et créez un objet `com.day.cq.wcm.foundation.forms.ValidationInfo` contenant vos messages d’erreur. S’il existe des erreurs, les données du formulaire ne sont pas publiées.

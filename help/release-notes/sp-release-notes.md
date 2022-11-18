@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '21547'
+source-wordcount: '21517'
 ht-degree: 29%
 
 ---
@@ -424,7 +424,7 @@ Voici quelques-uns des points forts d’AEM 6.4.6.0 :
 * Impossible d’exécuter le plan directeur de catalogue à partir de la console Sites. NPR-29829 : correctif pour CQ-4271461
 * La ressource utilisée dans le produit n’affiche aucune référence au produit dans la section &quot;Références&quot; de la ressource, et le chemin de la ressource n’est pas mis à jour si la ressource est déplacée. NPR-30542 : correctif pour CQ-4270247
 
-**Plate-forme**
+**Plateforme**
 
 * AEM Default Mail Sender ne peut pas envoyer de courrier à un serveur SMTP distant via TLS v1.2. NPR-30476 : Correctif pour GRANITE-26605
 
@@ -604,7 +604,7 @@ Voici quelques-uns des points forts d’AEM 6.4.5.0 :
 
 * Les rapports de communauté AEM ne s’affichent pas dans AEM instance d’auteur. Correctif pour CQ-4266294
 
-**Plate-forme**
+**Plateforme**
 
 * Cross-site scripting (XSS) dans le gestionnaire de packages lors de l’installation d’un package. NPR-29734, NPR-29713, NPR-29630 : Correctif pour GRANITE-26161, GRANITE-
 * Plusieurs scripts intersites stockés et reflétés (XSS) dans CRXDE Lite. NPR-29634 : correctif pour GRANITE-26049
@@ -852,7 +852,7 @@ Voici quelques-uns des points forts d’AEM 6.4.4.0 :
 * L’intégration d’Adobe Stock ne fonctionne pas si la version 6.4.4 est appliquée à la version 6.4.3. Correctif pour CQ-4266009
 * Le lien vers le modèle CF est manquant même après l’application du correctif SP3. Correctif pour CQ-4259029
 
-**Plate-forme**
+**Plateforme**
 
 * (IU classique) Le bouton Modifier n’est pas disponible dans le composant Rapport de base après la mise à niveau vers la version 6.4.2. NPR-28560 : Correctif pour CQ-4262825
 * Lorsque vous utilisez une requête combinant property.operation=like et property.depth, elle se retrouve dans InvalidQueryException. NPR-28570 : correctif pour CQ-4262652
@@ -1009,7 +1009,7 @@ Un lot reste à l’état installé après l’installation du package de gestio
 * Améliorations de la différence de variation des fragments de contenu pour AEM 6.4. NPR-27866 : FP pour CQ-4248839
 * Fonctionnalité activée dans la configuration OSGI **Indicateur de fonction de retrait AEM workflow**. L’action de retrait doit arrêter l’instance de workflow après avoir défini l’indicateur . NPR-26451 : correctif pour CQ-4259090
 
-**Plate-forme**
+**Plateforme**
 
 * Amélioration de l’extraction de facettes de Query Builder grâce à l’API Oak pour la version 6.4. NPR-26674 : FP pour CQ-4230337
 
@@ -1102,7 +1102,7 @@ Voici quelques-uns des points forts d’AEM 6.4.3.0 :
 
 * Dynamic Media n’utilise pas le proxy configuré pour certains types de ressources. NPR-10727; Correctif pour CQ-4244871
 
-**Plate-forme**
+**Plateforme**
 
 * Problèmes de performances avec org.apache.sling.i18n. NPR-26812 : correctif pour SLING-7543
 * Impossible d’afficher les propriétés du noeud lorsque le fichier XML d’entrée est formaté et déployé. NPR-26198 : correctif pour CQ-4250448
@@ -1291,7 +1291,7 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 * Ajout de la prise en charge de MongoDB Enterprise 3.6.
 * L’éditeur de page Sites prend en charge la modification et la composition dans le contexte avec des composants côté client créés dans React ou dans Angular, en association avec <a href="../sites-developing/spa-walkthrough.md">AEM SDK JS de l’éditeur SPA</a>.
 * Améliorations des fragments de contenu : ajout de la fonctionnalité d’annotation dans les champs de texte et de comparaison côte à côte des versions.
-* Ajout [intégration avec Adobe Stock](/help/assets/aem-assets-adobe-stock.md) afin que les utilisateurs puissent rechercher, prévisualiser, enregistrer et acquérir sous licence des ressources Adobe Stock directement à partir de l’interface utilisateur d’AEM. Pour plus d’informations, voir [Utilisation de ressources Adobe Stock avec AEM Assets](https://docs.adobe.com/content/help/fr/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
+* Ajout [intégration avec Adobe Stock](/help/assets/aem-assets-adobe-stock.md) afin que les utilisateurs puissent rechercher, prévisualiser, enregistrer et acquérir sous licence des ressources Adobe Stock directement à partir de l’interface utilisateur d’AEM. Pour plus d’informations, voir [Utilisation de ressources Adobe Stock avec AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr).
 * Ressources ajoute la prise en charge des schémas conditionnels dynamiques et la possibilité de définir un schéma de métadonnées pour les dossiers de ressources.
 * Ajout d’une configuration dans chaque composant pour activer/désactiver la fonctionnalité de création/mise à jour de miniatures de dossiers.
 * Améliorations de l’éditeur d’image lors de la création de pages.
@@ -1338,7 +1338,7 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 * L’heure d’activation/de désactivation est stockée dans crx/de, mais ne récupère pas la même chose dans la console de l’interface utilisateur des propriétés de page. NPR-25154 : correctif pour CQ-4243431
 * Styles Le système rompt les valeurs de propriétés initiales de la boîte de dialogue. NPR-25648 : correctif pour CQ-4250073
 * Lors de la définition d’une propriété cq:tagName dans un noeud cq:htmlTag , le nom de la balise n’est pas pris en compte si le composant est inclus via JSP. NPR-24154 : correctif pour CQ-4244120
-* Pour les composants parsys imbriqués, la première conception satisfaisante (avec le chemin le moins imbriqué) est toujours appliquée à partir de plusieurs composants disponibles. Pour plus d’informations, voir [Résolution du chemin de conception](https://docs.adobe.com/content/help/fr/experience-manager-64/developing/platform/templates/page-templates-static.html). NPR-24973 : correctif pour CQ-4246276
+* Pour les composants parsys imbriqués, la première conception satisfaisante (avec le chemin le moins imbriqué) est toujours appliquée à partir de plusieurs composants disponibles. Pour plus d’informations, voir [Résolution du chemin de conception](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/templates/page-templates-static.html). NPR-24973 : correctif pour CQ-4246276
 * Lorsque vous collez du texte dans un composant d’éditeur de texte enrichi, une boîte de dialogue contextuelle s’affiche, mais son rendu n’est pas correct. NPR-24895 : correctif pour CQ-4245901
 * (RTE) Problèmes de performances avec indicateur de champ obligatoire. NPR-24894 : correctif pour CQ-4241895
 * (Composant Page) L’ajout d’un composant à Parsys est rogné de la droite et la largeur de l’image de l’appareil s’affiche. NPR-25536 : correctif pour CQ-4238224
@@ -1372,7 +1372,7 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 * Le moteur Target (mbox.js, at.js) n’utilise pas d’URL mal formées et utilise des URL contenant deux-points qui peuvent rencontrer des problèmes avec certains déploiements. NPR-25339 : correctif pour CQ-4237854
 * (Launch) LibraryDownloadProcess stocke une valeur libraryUri incorrecte. NPR-25330 : correctif pour CQ-4250006
 
-**Plate-forme**
+**Plateforme**
 
 * Boucle de réindexation | NPE lors de l’exécution de BinaryTextExtraction lors de la mise à niveau statique de 6.3 à 6.4. Correctif pour Granite - 21677
 * Remplacement transfrontalier du chemin marqué interne /libs/cq/cloudserviceconfigs/templates/configpage/jcr:content - Problème lors de l’exécution du détecteur de motifs. NPR-25036 : correctif pour CQ-4248597
@@ -1553,7 +1553,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.2.0 sont les suivants :
 * Ajout de la possibilité pour l’utilisateur d’utiliser le même fichier WSDL pour plusieurs services.
 * Suppression du modèle d’horodatage non pris en charge dans la liste déroulante du sélecteur de données.
 * Ajout de la prise en charge de la sous-couche xfaf et pdf dans OSGI.
-* Ajout de la prise en charge de l’utilisation de la variable [fonctionnalité de rapports sur les transactions](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) aux déploiements on-premise.
+* Ajout de la prise en charge de l’utilisation de la variable [fonctionnalité de rapports sur les transactions](https://experienceleague.adobe.com/docs/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) aux déploiements on-premise.
 * Ajout du code pour ne pas afficher la variable enfant dans l’éditeur de règles de condition.
 
 **Package de modules complémentaires Forms**
@@ -1656,17 +1656,17 @@ Les principaux points forts d&#39;AEM Forms 6.4.2.0 sont les suivants :
 
 **Ressources**
 
-* Ajout [intégration avec Adobe Stock](/help/assets/aem-assets-adobe-stock.md) afin que les utilisateurs puissent rechercher, prévisualiser, enregistrer et acquérir sous licence des ressources Adobe Stock directement à partir de l’interface utilisateur d’AEM. Pour plus d’informations, voir [Utilisation de ressources Adobe Stock avec des ressources AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779 : correctif pour CQ-30857
+* Ajout [intégration avec Adobe Stock](/help/assets/aem-assets-adobe-stock.md) afin que les utilisateurs puissent rechercher, prévisualiser, enregistrer et acquérir sous licence des ressources Adobe Stock directement à partir de l’interface utilisateur d’AEM. Pour plus d’informations, voir [Utilisation de ressources Adobe Stock avec des ressources AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779 : correctif pour CQ-30857
 * Ajout de la prise en charge des schémas conditionnels dynamiques. Pour plus d’informations, voir [Métadonnées en cascade](/help/assets/cascading-metadata.md). NPR-25189 : correctif pour CQ-4237413
 * Activation de l’option &quot;Téléchargement de ressource&quot; sur les fragments de contenu. Pour plus d’informations, voir [Rapports de ressources](/help/assets/asset-reports.md). NPR-25186 : correctif pour CQ-4237410
 * Possibilité de définir un schéma de métadonnées pour les dossiers de ressources. Pour plus d’informations, voir [Schéma de métadonnées de dossier](/help/assets/folder-metadata-schema.md) et se référer à ses [Paramètres de configuration](#configuration-settings-required-for-npr) post installation d’AEM 6.4.2.0. NPR-21268 : correctif pour CQ-4221574
 
 **Sites**
 
-* Permet de modifier un fragment de contenu sans autorisation de suppression. Pour plus d’informations, voir [Personnalisation et extension de fragments de contenu](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793 : correctif pour CQ-4248750
-* Ajout de la fonctionnalité d’annotation des fragments de contenu. Pour plus d’informations, voir [Variations-création de fragments](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188 : correctif pour CQ-4235336
-* Contrôle de version : Comparaison des fragments de contenu côte à côte Pour plus d’informations, voir [Gestion des fragments de contenu](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187 : correctif pour CQ-4237412
-* Améliorations apportées à l’éditeur d’image vers AEM 6.4.2.0. Pour plus d’informations, voir [Éditeur d’image](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24467
+* Permet de modifier un fragment de contenu sans autorisation de suppression. Pour plus d’informations, voir [Personnalisation et extension de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793 : correctif pour CQ-4248750
+* Ajout de la fonctionnalité d’annotation des fragments de contenu. Pour plus d’informations, voir [Variations-création de fragments](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188 : correctif pour CQ-4235336
+* Contrôle de version : Comparaison des fragments de contenu côte à côte Pour plus d’informations, voir [Gestion des fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187 : correctif pour CQ-4237412
+* Améliorations apportées à l’éditeur d’image vers AEM 6.4.2.0. Pour plus d’informations, voir [Éditeur d’image](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24467
 
 **Lots OSGI et packages de contenu inclus**
 
@@ -1762,7 +1762,7 @@ AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractér
 * Boucle infinie lors du chargement de contenu ciblé sur des pages sans extension de HTML. NPR-23522 : correctif pour CQ-4223600
 * L’activation échoue pour une page avec des références de configuration Dynamic Tag Management héritées. NPR-23485 : correctif pour CQ-4242751
 
-**Plate-forme**
+**Plateforme**
 
 * (IU classique) (IU tactile) Le sélecteur de balises ne s’affiche pas et renvoie une exception lors de la recherche de balises via un prédicat de balises dans le schéma de recherche de ressources. NPR-23049 : correctif pour CQ-4239371
 * (IU classique) Les composants utilisant xtype=tags renvoient la valeur null et ne peuvent pas être sélectionnés à partir de la liste de balises eth. NPR-23050 : correctif pour CQ-4239937
@@ -1900,7 +1900,7 @@ AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractér
 
 **DAM - Balises intelligentes**
 
-* Introduit [Balises intelligentes améliorées](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
+* Introduit [Balises intelligentes améliorées](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
 
 **Formulaires**
 
@@ -1908,7 +1908,7 @@ Les correctifs d’AEM Forms sont fournis par le biais de packages de modules co
 
 Les principaux aspects pour AEM Forms sont les suivants :
 
-* AEM Forms introduit [fonctionnalité de rapports sur les transactions](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) pour effectuer le suivi et conserver le nombre de transactions telles que les formulaires envoyés, les documents traités et les documents rendus sur votre déploiement AEM Forms. Il fournit des informations sur l’utilisation des produits et aide les utilisateurs professionnels à comprendre les volumes de traitement numérique.
+* AEM Forms introduit [fonctionnalité de rapports sur les transactions](https://experienceleague.adobe.com/docs/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) pour effectuer le suivi et conserver le nombre de transactions telles que les formulaires envoyés, les documents traités et les documents rendus sur votre déploiement AEM Forms. Il fournit des informations sur l’utilisation des produits et aide les utilisateurs professionnels à comprendre les volumes de traitement numérique.
 * Activation de la prise en charge de PDF/UA pour les formulaires XML.
 * Ajout de allowProxy = true pour Clientlib. **aemfd.ccm.channel.contentpage**
 * Mise à jour du code afin de rendre la recherche avancée de titre comme contient plutôt que comme égal.
@@ -2066,12 +2066,12 @@ Les principaux aspects pour AEM Forms sont les suivants :
 
 **Ressources**
 
-* Ajout de la fonctionnalité Balises intelligentes améliorées. Pour plus d’informations, voir [Balises intelligentes améliorées](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951 : correctif pour CQ-4234883
+* Ajout de la fonctionnalité Balises intelligentes améliorées. Pour plus d’informations, voir [Balises intelligentes améliorées](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951 : correctif pour CQ-4234883
 * Ajout de références AEM Assets dans InDesign. Pour plus d’informations, voir [Références AEM Assets en InDesign](/help/assets/managing-linked-subassets.md). NPR-23386
 
 **Sites**
 
-* Améliorations de l’éditeur d’image (création de page). Pour plus d’informations, voir [Éditeur d’image](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24267 : correctif pour CQ-4245502
+* Améliorations de l’éditeur d’image (création de page). Pour plus d’informations, voir [Éditeur d’image](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24267 : correctif pour CQ-4245502
 
 **Lots OSGI et packages de contenu inclus**
 
@@ -2172,7 +2172,7 @@ qui copiera les nouveaux paramètres prédéfinis de visionneuse à l’emplacem
 
 1. Vérifiez que vous avez installé le Service Pack AEM.
 1. Téléchargez le module complémentaire de formulaires correspondant répertorié à l’adresse [Versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour votre système d’exploitation.
-1. Installez le module complémentaire Forms comme décrit dans la section [Installation des packages de modules complémentaires AEM forms](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. Installez le module complémentaire Forms comme décrit dans la section [Installation des packages de modules complémentaires AEM forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### Installation du programme d’installation d’AEM Forms JEE {#install-aem-forms-jee-installer}
 
@@ -2227,7 +2227,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées ou dés
 | Zone | Fonctionnalité | Remplacement | Version  |
 |---|---|---|---|
 | Ressources | Gestion de l’action de balise pour les sous-ressources | Aucun remplacement. | AEM 6.4.2.0 |
-| Intégration des Ressources et d’Adobe Creative Cloud | [Le partage de dossiers AEM vers Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) a été introduit dans AEM 6.2 afin de permettre aux créatifs d’accéder aux ressources depuis AEM. Adobe Asset Link, une nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers. Bien que la fonctionnalité soit incluse dans AEM, les clients sont (il est vivement conseillé d’utiliser le remplacement). | Adobe d’Asset Link ou de l’appli de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
+| Intégration des Ressources et d’Adobe Creative Cloud | [Le partage de dossiers AEM vers Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) a été introduit dans AEM 6.2 afin de permettre aux créatifs d’accéder aux ressources depuis AEM. Adobe Asset Link, une nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers. Bien que la fonctionnalité soit incluse dans AEM, les clients sont (il est vivement conseillé d’utiliser le remplacement). | Adobe d’Asset Link ou de l’appli de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ### Problèmes connus {#known-issues}
 
@@ -2273,4 +2273,4 @@ Seuls les clients peuvent accéder à ces sites. Si vous devez y accéder en tan
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/).
 * Mises à jour de produit, correctifs et packages pour des fonctionnalités supplémentaires dans la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Service clientèle via l’Admin Console](https://adminconsole.adobe.com/). Pour plus d’informations, consultez la section [Nouvelle expérience du service clientèle Adobe](https://docs.adobe.com/content/help/fr-FR/customer-one/using/home.html).
+* [Service clientèle via l’Admin Console](https://adminconsole.adobe.com/). Pour plus d’informations, consultez la section [Nouvelle expérience du service clientèle Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=fr).

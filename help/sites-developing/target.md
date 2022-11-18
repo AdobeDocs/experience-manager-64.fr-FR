@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3350bb2d-78a7-45e2-9816-0277a40d3986
 exl-id: f55a774e-db41-465e-843c-a876a4f14997
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 71%
+source-wordcount: '1201'
+ht-degree: 87%
 
 ---
 
@@ -45,7 +45,7 @@ Ajoutez les deux blocs de code suivants à la section &lt;head> de votre page :
 <cq:include script="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp"/>
 ```
 
-Ce code ajoute les objets d’analyse JavaScript requis et charge les bibliothèques de service cloud associées au site web. Pour le service Target, les bibliothèques sont chargées via `/libs/cq/analytics/components/testandtarget/headlibs.jsp`
+Ce code ajoute les objets d’analyse JavaScript requis et charge les bibliothèques de service cloud associées au site web. Pour le service Target, les bibliothèques sont chargées via `/libs/cq/analytics/components/testandtarget/headlibs.jsp`.
 
 Le jeu de bibliothèques chargé dépend du type de bibliothèque cliente cible (mbox.js ou at.js) utilisé dans la configuration de Target :
 
@@ -79,7 +79,7 @@ Le jeu de bibliothèques chargé dépend du type de bibliothèque cliente cible 
 
 >[!NOTE]
 >
->Uniquement la version de `at.js` fourni avec le produit est pris en charge. La version de `at.js` est fourni avec le produit en examinant la `at.js` fichier à l’emplacement `/etc/clientlibs/foundation/testandtarget/atjs/source/at.js`.
+>Seule la version de `at.js` fournie avec le produit est prise en charge. La version de `at.js` est fourni avec le produit en examinant la `at.js` fichier à l’emplacement `/etc/clientlibs/foundation/testandtarget/atjs/source/at.js`.
 
 **Pour le type at.js personnalisé**
 
@@ -89,7 +89,7 @@ Le jeu de bibliothèques chargé dépend du type de bibliothèque cliente cible 
  <script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/atjs-integration.js"></script>
 ```
 
-La fonctionnalité Target côté client est gérée par le `CQ_Analytics.TestTarget` . Par conséquent, la page contient du code init comme dans l’exemple suivant :
+La fonctionnalité Target côté client est gérée par l’objet `CQ_Analytics.TestTarget`. Par conséquent, la page contient du code init comme dans l’exemple suivant :
 
 ```
 <script type="text/javascript">
@@ -123,7 +123,7 @@ La fonctionnalité Target côté client est gérée par le `CQ_Analytics.TestTar
  </div>
 ```
 
-Le JSP ajoute les objets JavaScript d’analyse requis et les références aux bibliothèques JavaScript côté client. Le `testandtarget.js` contient le fichier `mbox.js` fonctions. Le HTML généré par le script est similaire à l’exemple suivant :
+Le JSP ajoute les objets JavaScript d’analyse requis et les références aux bibliothèques JavaScript côté client. Le `testandtarget.js` contient le fichier `mbox.js` fonctions. Le HTML généré par le script est similaire à l’exemple suivant :
 
 ```xml
 <script type="text/javascript">
@@ -140,7 +140,7 @@ Le JSP ajoute les objets JavaScript d’analyse requis et les références aux b
 <script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/init.js"></script>
 ```
 
-#### Section du corps (démarrage) {#the-body-section-start}
+#### Section de corps (début) {#the-body-section-start}
 
 Ajoutez le code suivant immédiatement après la balise `<body>` pour ajouter les fonctions ClientContext à la page :
 
@@ -148,7 +148,7 @@ Ajoutez le code suivant immédiatement après la balise `<body>` pour ajouter le
 <cq:include path="clientcontext" resourceType="cq/personalization/components/clientcontext"/>
 ```
 
-#### Section du corps (fin) {#the-body-section-end}
+#### Section de corps (fin) {#the-body-section-end}
 
 Ajoutez le code suivant juste avant le `</body>` balise de fin :
 
@@ -156,7 +156,7 @@ Ajoutez le code suivant juste avant le `</body>` balise de fin :
 <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
 ```
 
-Le script JSP de ce composant génère des appels vers l’API JavaScript Target et met en oeuvre d’autres configurations requises. Le HTML généré par le script est similaire à l’exemple suivant :
+Le script JSP de ce composant génère des appels vers l’API JavaScript Target et met en œuvre d’autres configurations requises. Le HTML généré par le script est similaire à l’exemple suivant :
 
 ```xml
 <div class="servicecomponents cloudservices">
@@ -196,13 +196,13 @@ Le script JSP de ce composant génère des appels vers l’API JavaScript Target
 
 Le fichier mbox.js par défaut utilisé pour créer les mbox se trouve à l’adresse `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`. Pour utiliser un fichier mbox.js client, ajoutez-le à la configuration cloud de Target. Pour ajouter le fichier, la variable `mbox.js` doit être disponible sur le système de fichiers.
 
-Par exemple, si vous souhaitez utiliser la variable [Service Marketing Cloud ID](https://docs.adobe.com/content/help/en/id-service/using/home.html) vous devez télécharger mbox.js afin qu’il contienne la valeur correcte pour la variable `imsOrgID` qui est basée sur votre client. Cette variable est requise pour l’intégration au service Marketing Cloud ID. Pour plus d’informations, voir [Adobe Analytics comme source de création de rapports pour Adobe Target](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) et [Avant l’implémentation](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html).
+Par exemple, si vous souhaitez utiliser le [service Marketing Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html), vous devez télécharger le fichier mbox.js afin qu’il contienne la valeur appropriée pour la variable `imsOrgID` qui est basée sur votre client. Cette variable est requise pour l’intégration au service Marketing Cloud ID. Pour plus d’informations, consultez les sections [Adobe Analytics comme source de création de rapports pour Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) et [Avant l’implémentation](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html).
 
 >[!NOTE]
 >
->Si une mbox personnalisée est définie dans une configuration Target, tous les utilisateurs doivent posséder un accès en lecture à **/etc/cloudservices** sur les serveurs de publication. Sans cet accès, le chargement de fichiers mbox.js sur un site web de publication générera une erreur 404.
+>Si une mbox personnalisée est définie dans une configuration Target, vous devez posséder un accès en lecture à **/etc/cloudservices** sur les serveurs de publication. Sans cet accès, le chargement de fichiers mbox.js sur un site web de publication générera une erreur 404.
 
-1. Accédez à CQ **Outils** et sélectionnez **Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Accédez à la page **Outils** de CQ et sélectionnez ensuite **Services cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. Dans l’arborescence, sélectionnez Adobe Target et, dans la liste des configurations, double-cliquez sur votre configuration Target.
 1. Sur la page de configuration, cliquez sur Modifier.
 1. Pour la propriété Fichier mbox.js personnalisé, cliquez sur Parcourir et sélectionnez ensuite le fichier.
@@ -232,7 +232,7 @@ Par exemple, pour désactiver le ciblage pour les composants de titre des pages 
 >
 >Si vous n’utilisez pas DTM, vous envoyez la confirmation de commande à Adobe Target.
 
-Pour effectuer le suivi des performances de votre site web, envoyez les informations d’achat à Adobe Target depuis votre page de confirmation de commande (voir [Création d’une mbox orderConfirmPage](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) dans la documentation d’Adobe Target). Adobe Target identifie les données de mbox comme des données de confirmation de commande lorsque le nom de votre mbox est `orderConfirmPage` et utilise les noms de paramètres spécifiques suivants :
+Pour effectuer le suivi des performances de votre site web, envoyez les informations d’achat à Adobe Target depuis votre page de confirmation de commande (voir [Création d’une mbox orderConfirmPage](https://experienceleague.adobe.com/docs/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) dans la documentation d’Adobe Target). Adobe Target identifie les données de mbox comme des données de confirmation de commande lorsque le nom de votre mbox est `orderConfirmPage` et utilise les noms de paramètres spécifiques suivants :
 
 * productPurchasedId : liste des ID qui identifient les produits achetés.
 * orderId : ID de la commande.
@@ -249,7 +249,7 @@ Le code sur la page HTML rendue qui crée la mbox est semblable à celui illustr
 </script>
 ```
 
-Les valeurs de chaque paramètre sont différentes pour chaque commande. Par conséquent, vous avez besoin d’un composant qui génère le code en fonction des propriétés de l’achat. La [structure d’intégration eCommerce](/help/sites-administering/ecommerce.md) de CQ vous permet de réaliser une intégration dans votre catalogue de produits, et d’implémenter un panier d’achat et une page de passage en caisse.
+Les valeurs de chaque paramètre sont différentes pour chaque commande. Par conséquent, vous avez besoin d’un composant qui génère le code en fonction des propriétés de l’achat. Le [framework d’intégration eCommerce](/help/sites-administering/ecommerce.md) de CQ vous permet de réaliser une intégration dans votre catalogue de produits, et d’implémenter un panier d’achat et une page de passage en caisse.
 
 L’exemple Geometrixx Outdoors affiche la page de confirmation suivante lorsqu’un visiteur achète des produits :
 
@@ -316,7 +316,7 @@ Lorsque le composant est inclus dans la page de passage en caisse de l’exemple
 
 ## Présentation du composant Target {#understanding-the-target-component}
 
-Le composant Target permet aux auteurs de créer des mbox dynamiques à partir de composants de contenu CQ (voir [Ciblage de contenu](/help/sites-authoring/content-targeting-touch.md)). Le composant cible se trouve dans /libs/cq/personalization/components/target.
+Le composant Target permet aux auteurs de créer des mbox dynamiques à partir de composants de contenu CQ (voir [Ciblage de contenu](/help/sites-authoring/content-targeting-touch.md)). Le composant Target se trouve à l’emplacement suivant : /libs/cq/personalization/components/target.
 
 Le script target.jsp accède aux propriétés de la page pour déterminer le moteur de ciblage à utiliser pour le composant, puis exécute le script approprié :
 
@@ -333,9 +333,9 @@ Le script target.jsp accède aux propriétés de la page pour déterminer le mot
 
 Lorsque le ciblage du contenu est réalisé par Adobe Target, le script engine_tnt.jsp crée des mbox incluant le contenu de l’expérience ciblée :
 
-* Ajoute un `div` avec la classe de `mboxDefault`, comme requis par l’API Adobe Target.
+* Ajout d’un élément `div` avec la classe `mboxDefault`, comme l’exige l’API Adobe Target
 
-* Ajout du contenu de la mbox (le contenu de l’expérience ciblée) dans l’élément `div`.
+* Ajout du contenu de la mbox (le contenu de l’expérience ciblée) dans l’élément `div`
 
 Le JavaScript qui crée la mbox est inséré après l’élément div `mboxDefault` :
 

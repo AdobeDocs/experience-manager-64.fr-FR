@@ -8,9 +8,9 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.4
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3721'
 ht-degree: 97%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 97%
 
 + [Guide d’AEM Forms 6.4](home.md)
 + Notes de mise à jour {#release-notes-new-features}
-   + [Notes de mise à jour](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
+   + [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/forms.html)
    + [Résumé des nouvelles fonctionnalités](using/whats-new.md)
-   + [Fonctionnalités obsolètes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)
+   + [Fonctionnalités obsolètes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)
 + Prise en main {#getting-started}
    + [Présentation d’AEM Forms](using/introduction-aem-forms.md)
    + [Présentation de la création de formulaires adaptatifs](using/introduction-forms-authoring.md)
@@ -573,8 +573,8 @@ ht-degree: 97%
    + [Requêtes ad hoc dans Process Reporting](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Dépannage de Process Reporting](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Guides de référence pour les développeurs {#developer-reference}
-   + [Principes de développement de base](https://docs.adobe.com/content/help/fr/experience-manager-64/developing/home.html)
-   + [HTML Template Language](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
+   + [Principes de développement de base](https://experienceleague.adobe.com/docs/experience-manager-64/developing/home.html)
+   + [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
    + [Module externe AEM permettant de déboguer les formulaires adaptatifs](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Référence API Java pour AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-4/forms/javadocs/index.html)
    + [Référence d’API Java d’AEM Forms on JEE](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)

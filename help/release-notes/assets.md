@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1641'
 ht-degree: 60%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 60%
 
 Les fonctionnalités, points forts et améliorations clés d’AEM 6.4 Assets sont abordés dans ces notes de mise à jour. Pour plus d’informations, suivez les liens proposés.
 
-## Adobe Asset Link {#adobe-asset-link}
+## Adobe Asset Link {#adobe-asset-link}
 
 Adobe Asset Link dans Creative Cloud abonnement Entreprise simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le cadre du processus de création de contenu. Il s’agit d’une nouvelle fonctionnalité native en Creative Cloud pour les entreprises, qui permet de se connecter à AEM Assets directement à partir d’Adobe Photoshop, d’Adobe Illustrator ou d’Adobe InDesign, sans quitter ces outils.
 
@@ -92,7 +92,7 @@ La version 6.4 d’AEM offre d’importantes améliorations au niveau du reporti
 * Nouveaux rapports prêts à l’emploi le plus souvent demandés par les clients, tels que Utilisation du disque, Fichiers, Partages de lien, Publier sur Brand Portal et Entraînement des balises intelligentes.
 * Nouvelle interface utilisateur de création et de gestion des rapports dotée d’options de granularité fine, avec la possibilité d’accéder aux rapports archivés et de voir l’état d’exécution des rapports (réussite, échoué, en file d’attente, etc.).
 
-## Brand Portal {#brand-portal}
+## Brand Portal {#brand-portal}
 
 * **Mise à niveau de la plate-forme 6.3** : Brand Portal mis à niveau d’AEM 6.0 à 6.3 avec de nouvelles fonctionnalités et améliorations des performances.
 * **Publication en parallèle** : jusqu’à réplications peuvent se produire entre AEM Assets et Brand Portal (contre une auparavant), ce qui améliore considérablement les performances de publication.
@@ -105,7 +105,7 @@ La version 6.4 d’AEM offre d’importantes améliorations au niveau du reporti
 
 ## Application de bureau AEM {#aem-desktop-app}
 
-L’appli de bureau AEM a été mise à jour vers la version 1.8, qui est compatible avec AEM 6.4. La liste complète des modifications apportées à l’appli de bureau Adobe est fournie dans un dossier dédié. [Notes de mise à jour de l’appli de bureau AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/release-notes.html) document.\
+L’appli de bureau AEM a été mise à jour vers la version 1.8, qui est compatible avec AEM 6.4. La liste complète des modifications apportées à l’appli de bureau Adobe est fournie dans un dossier dédié. [Notes de mise à jour de l’appli de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=fr) document.\
 Voici une liste des principales caractéristiques de l’appli de bureau AEM depuis AEM 6.3 :
 
 * Possibilité de télécharger des dossiers hiérarchiques en arrière-plan.
@@ -117,8 +117,8 @@ Voici une liste des principales caractéristiques de l’appli de bureau AEM dep
 
 Pour accéder plus facilement à la documentation et aux meilleures pratiques, la documentation suivante est disponible :
 
-* [Guide de l’utilisateur](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html), destiné aux utilisateurs finaux utilisant l’application.
-* [Guide d’installation](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/install-upgrade.html), destiné aux administrateurs configurant l’appli de bureau AEM et AEM pour qu’ils travaillent ensemble
+* [Guide de l’utilisateur](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr), destiné aux utilisateurs finaux utilisant l’application.
+* [Guide d’installation](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/install-upgrade.html), destiné aux administrateurs configurant l’appli de bureau AEM et AEM pour qu’ils travaillent ensemble
 
 ## Stockage à plusieurs niveaux {#tiered-storage}
 

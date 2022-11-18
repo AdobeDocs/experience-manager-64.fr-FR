@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 0e2e95fa-9e27-4edc-b57b-82cefe8d4088
 exl-id: 9b973d03-fd0a-4c22-8045-7dddc024e553
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '5355'
-ht-degree: 95%
+source-wordcount: '5349'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. Le mode Ciblage et
 * Simulez l’expérience utilisateur.
 * Pour une personnalisation plus importante, configurez le composant cible.
 
-Vous pouvez utiliser AEM ou Adobe Target comme moteur de ciblage (pour utiliser Adobe Target, vous devez disposer d’un compte Adobe Target valide). Si vous utilisez Adobe Target, vous devez commencer par configurer l’intégration. Voir [instructions pour l’intégration à Adobe Target](/help/sites-administering/target.md).
+Vous pouvez utiliser AEM ou Adobe Target comme moteur de ciblage (pour utiliser Adobe Target, vous devez disposer d’un compte Adobe Target valide). Si vous utilisez Adobe Target, vous devez commencer par configurer l’intégration. Reportez-vous à [Instructions pour l’intégration à Adobe Target](/help/sites-administering/target.md).
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
@@ -273,7 +273,7 @@ En mode d’édition, le composant cible comporte une icône Cible.
 
 ![](do-not-localize/chlimage_1-1.png)
 
-Lorsque vous faites glisser des composants dans le composant cible, ils sont des composants ciblés.
+Lorsque vous faites glisser des composants dans le composant cible, ils deviennent des composants ciblés.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -459,13 +459,13 @@ Les mesures de succès ci-dessous sont disponibles (pour la publication uniqueme
    <td><strong>Conversion</strong></td> 
    <td><p>Pourcentage de visiteurs ayant cliqué sur n’importe quelle partie de l’expérience testée. Une conversion peut être comptabilisée une fois par visiteur ou chaque fois qu’un visiteur effectue une conversion. La mesure de conversion est définie sur l’une des options suivantes : :</p> 
     <ul> 
-     <li><strong>Affichage d’une page</strong> - Vous pouvez définir la page que l’audience a consultée en sélectionnant : <strong>L’URL est</strong> puis en définissant l’URL ou plusieurs URL, ou en sélectionnant <strong>L’URL contient</strong> puis en ajoutant un chemin ou un mot-clé.</li> 
+     <li><strong>A affiché une page</strong> : vous pouvez définir la page que l’audience a consultée en sélectionnant l’option <strong>L’URL est</strong>, puis en indiquant la ou les URL, ou en sélectionnant <strong>L’URL contient</strong> et en ajoutant un chemin d’accès ou un mot-clé.</li> 
      <li><strong>A affiché une mbox</strong> : vous pouvez définir la mbox que l’audience a consultée en saisissant le nom de la mbox. Vous pouvez saisir plusieurs mbox en cliquant sur <strong>Ajouter une mbox</strong>.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><strong>Recettes</strong></td> 
-   <td><p>Recettes générées par la visite. Vous pouvez choisir parmi les mesures de recettes suivantes :</p> 
+   <td><p>Recettes générées par la visite. Vous pouvez choisir parmi les mesures de recettes répertoriées :</p> 
     <ul> 
      <li>Recettes par visiteur (RPV)</li> 
      <li>Valeur de commande moyenne (AOV)</li> 
@@ -497,7 +497,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
   </tr> 
   <tr> 
    <td><strong>Incrémenter le décompte et laisser l’utilisateur dans l’activité</strong></td> 
-   <td>Indiquez comment le nombre est incrémenté : 
+   <td>Indiquez comment le nombre est incrémenté : 
     <ul> 
      <li>Une fois par participant</li> 
      <li>À chaque impression (actualisations de page exclues)</li> 
@@ -506,7 +506,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
   </tr> 
   <tr> 
    <td><strong>Incrémenter le décompte, libérer l’utilisateur et autoriser le retour</strong></td> 
-   <td>Sélectionnez l’expérience que voit le visiteur s’il entre à nouveau dans l’activité : 
+   <td>Sélectionnez l’expérience que voit le visiteur s’il entre à nouveau dans l’activité : 
     <ul> 
      <li>Même expérience</li> 
      <li>Expérience aléatoire</li> 
@@ -515,7 +515,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
   </tr> 
   <tr> 
    <td><strong>Incrémenter la comptabilisation, libérer l’utilisateur et bloquer le retour</strong></td> 
-   <td>Déterminez ce que l’utilisateur voit au lieu du contenu de l’activité : 
+   <td>Déterminez ce que l’utilisateur voit au lieu du contenu de l’activité : 
     <ul> 
      <li>Même expérience, sans suivi</li> 
      <li>Contenu par défaut ou contenu d’une autre activité</li> 
@@ -524,7 +524,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
  </tbody> 
 </table>
 
-Pour plus d’informations sur les mesures de succès, voir [Documentation d’Adobe Target](https://docs.adobe.com/content/help/fr-FR/target/using/activities/success-metrics/success-metrics.html).
+Pour plus d’informations sur les mesures de succès, voir [Documentation d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr).
 
 ### Paramètres de configuration (ciblage d’AEM) {#configuring-settings-aem-targeting}
 
@@ -557,19 +557,19 @@ Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target 
    * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, appuyez ou cliquez sur l’icône de calendrier, sélectionnez une date, puis spécifiez l’heure de fin de l’activité.
 
 1. Pour spécifier la priorité de l’activité, utilisez le curseur pour choisir **Faible**, **Normale** ou **Élevée**.
-1. Si vous avez configuré Adobe Analytics avec votre compte Adobe Target, le menu déroulant de la **source de création de rapports** s’affiche. Sélectionnez **Adobe Target** ou **Adobe Analytics** en tant que source.
+1. Si vous avez configuré Adobe Analytics avec votre compte Adobe Target, le menu déroulant de la **source de création de rapports** s’affiche. Sélectionnez **Adobe Target** ou **Adobe Analytics** en tant que source.
 
    Si vous avez sélectionné **Adobe Analytics**, sélectionnez la société et une suite de rapports. Si vous sélectionnez **Adobe Target**, aucune action n’est nécessaire.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
-1. Dans la zone **Mesure d’objectif**, sous **Mon objectif principal**, sélectionnez la mesure de succès dont vous souhaitez effectuer le suivi (Conversion, Chiffre d’affaires, Engagement) et saisissez la manière dont cette mesure est évaluée (ou l’action entreprise par l’audience pour indiquer qu’un objectif a été atteint). Consultez la définition des mesures d’objectif dans le tableau précédent et la [documentation d’Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) sur les mesures de succès.
+1. Dans la zone **Mesure d’objectif**, sous **Mon objectif principal**, sélectionnez la mesure de succès dont vous souhaitez effectuer le suivi (Conversion, Chiffre d’affaires, Engagement) et saisissez la manière dont cette mesure est évaluée (ou l’action entreprise par l’audience pour indiquer qu’un objectif a été atteint). Consultez la définition des mesures d’objectif dans le tableau précédent et la [documentation d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) sur les mesures de succès.
 
    Vous pouvez renommer l’objectif en cliquant sur le bouton de sélection dans le coin supérieur droit et en sélectionnant **Renommer**.
 
    Si vous devez supprimer tous les champs, cliquez sur le bouton de sélection dans le coin supérieur droit et sélectionnez **Effacer tous les champs**.
 
-   Toutes les mesures comportent également des paramètres avancés que vous pouvez définir. Sélectionnez **Paramètres avancés** pour y accéder. Reportez-vous à la définition de la comptabilisation des mesures de succès dans le tableau précédent et à la [Documentation d’Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
+   Toutes les mesures comportent également des paramètres avancés que vous pouvez définir. Sélectionnez **Paramètres avancés** pour y accéder. Reportez-vous à la définition de la comptabilisation des mesures de succès dans le tableau précédent et à la [Documentation d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    Un objectif au moins doit être défini.
@@ -660,7 +660,7 @@ Vous pouvez personnaliser le composant cible en accédant aux options du composa
   </tr> 
   <tr> 
    <td><strong>Moteur</strong></td> 
-   <td>Sélectionner entre <strong>Règles côté client (sans suivi), Adobe Target, ContextHub, </strong>et<strong> Adobe Campaign </strong>selon le moteur que vous souhaitez utiliser.</td> 
+   <td>Choisissez entre <strong>Règles côté client (sans suivi), Adobe Target, ContextHub </strong>et<strong> Adobe Campaign </strong>en fonction du moteur que vous souhaitez utiliser.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -677,11 +677,11 @@ Si vous sélectionnez Adobe Target comme moteur :
   </tr> 
   <tr> 
    <td><strong>Ciblage précis</strong></td> 
-   <td><p>L’activation du ciblage précis indique au composant d’attendre les données de contexte du client ou les données ContextHub pour être disponible avant l’envoi de la demande à Adobe Target. Cela peut accroître le temps de chargement. Pour la création, le ciblage précis est toujours activé.</p> <p>Si vous cochez la case <strong>Ciblage précis</strong>, la mbox commence par effectuer une opération <code>mboxDefine</code>, puis une opération <code>mboxUpdate</code> dans une demande Ajax une fois que les données sont disponibles.</p> <p>Si vous ne sélectionnez pas l’option <strong>Ciblage précis</strong> , la mbox effectue une <code>mboxCreate</code> entraînant immédiatement une requête synchrone (dans ce cas, toutes les données contextuelles ne sont pas encore disponibles).</p> <p><strong>Remarque :</strong> L’activation ou la désactivation du ciblage précis sur un composant spécifique n’a aucune incidence sur les paramètres définis globalement. Vous pouvez toujours remplacer les paramètres globaux en sélectionnant Ciblage précis dans le composant.</p> </td> 
+   <td><p>L’activation du ciblage précis indique au composant d’attendre les données de contexte du client ou les données ContextHub pour être disponible avant l’envoi de la demande à Adobe Target. Cela peut accroître le temps de chargement. Pour la création, le ciblage précis est toujours activé.</p> <p>Si vous cochez la case <strong>Ciblage précis</strong>, la mbox commence par effectuer une opération <code>mboxDefine</code>, puis une opération <code>mboxUpdate</code> dans une demande Ajax une fois que les données sont disponibles.</p> <p>Si vous ne cochez pas la case <strong>Ciblage précis</strong>, la mbox effectue une opération <code>mboxCreate</code> entraînant immédiatement une demande synchrone (dans ce cas, les données de contexte ne sont pas toutes encore disponibles).</p> <p><strong>Remarque :</strong> L’activation ou la désactivation du ciblage précis sur un composant spécifique n’a aucune incidence sur les paramètres définis globalement. Vous pouvez toujours remplacer les paramètres globaux en sélectionnant Ciblage précis dans le composant.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Inclure les segments résolus</strong></td> 
-   <td><p>Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans l’infrastructure sont inclus.</p> <p>Cela ne fonctionne avec l’API XML que lorsque vous synchronisez des segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif.</p> </td> 
+   <td><p>Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans le framework sont inclus.</p> <p>Cela ne fonctionne avec l’API XML que lorsque vous synchronisez des segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Paramètres contextuels hérités</strong></td> 
@@ -689,11 +689,11 @@ Si vous sélectionnez Adobe Target comme moteur :
   </tr> 
   <tr> 
    <td><strong>Paramètres de contexte</strong></td> 
-   <td>Cliquez ou appuyez sur <strong>Ajouter un champ</strong> pour configurer des paramètres contextuels supplémentaires (comme ceux disponibles dans l’infrastructure Target). Les paramètres de contexte ajoutés au composant ne concernent <i>que</i> le composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres de contexte directement dans l’infrastructure.</td> 
+   <td>Cliquez ou appuyez sur <strong>Ajouter un champ</strong> pour configurer des paramètres de contexte supplémentaires (comme ceux disponibles dans le framework d’Adobe Target). Les paramètres de contexte ajoutés au composant ne concernent <i>que</i> ce composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres de contexte directement dans le framework.</td> 
   </tr> 
   <tr> 
    <td><strong>Paramètres statiques</strong></td> 
-   <td>Cliquez ou appuyez sur <strong>Ajouter un champ</strong> pour configurer des paramètres statiques supplémentaires (comme ceux disponibles dans l’infrastructure Target). Les paramètres statiques ajoutés au composant s’appliquent <i>only</i> au composant et non à un autre composant, comme ce serait le cas si vous ajoutiez des paramètres statiques directement à la structure. Les paramètres statiques ne proviennent pas du contexte (contexte du client de ContextHub).</td> 
+   <td>Cliquez ou appuyez sur <strong>Ajouter un champ</strong> pour configurer des paramètres statiques supplémentaires (comme ceux disponibles dans le framework Adobe Target). Les paramètres statiques ajoutés au composant concernent <i>uniquement</i> ce composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres statiques directement à le framework. Les paramètres statiques ne proviennent pas du contexte (contexte du client de ContextHub).</td> 
   </tr> 
  </tbody> 
 </table>
@@ -717,12 +717,12 @@ Si vous sélectionnez ClientContext (côté client) comme moteur :
     <ul> 
      <li><strong>Première</strong> : expérience la plus élevée dans la liste organisée dans la campagne.</li> 
      <li><strong>Aléatoire</strong> : n’importe quelle expérience est utilisée.</li> 
-     <li><strong>Score Clickstream</strong>: Les balises et les accès aux balises associés qui sont suivis dans le contexte client sont utilisés. Les taux de fréquence d’accès aux balises définis sur la page de teaser sont comparés.</li> 
+     <li><strong>Score Clickstream</strong> : les résultats des balises et des balises associées suivis dans le contexte du client sont utilisés. Les taux de fréquence d’accès aux balises définis sur la page de teaser sont comparés.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Vous sélectionnez **Adobe Campaign** comme moteur si vous intégrez AEM à Adobe Campaign. Pour plus d’informations, reportez-vous à la section [Intégration d’AEM à Adobe Campaign](/help/sites-administering/campaign.md).
+Vous sélectionnez **Adobe Campaign** comme moteur si vous intégrez AEM à Adobe Campaign. Pour plus d’informations, consultez [Intégration d’AEM à Adobe Campaign ](/help/sites-administering/campaign.md).
 
 Sélectionnez **ContextHub** comme moteur si vous utilisez le ciblage ContextHub. Reportez-vous à la section [Configuration de ContextHub.](/help/sites-administering/contexthub-config.md)

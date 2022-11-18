@@ -1,28 +1,28 @@
 ---
 title: Outils de modernisation d’AEM
 seo-title: AEM Modernization Tools
-description: Les outils de modernisation d’AEM vous aident à convertir vos fonctionnalités d’AEM héritées en technologies de pointe
+description: Les outils de modernisation d’AEM vous aident à convertir vos fonctionnalités d’AEM héritées pour qu’elles tirent parti des dernières technologies.
 seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: cfa9fcd0-8d57-4352-9646-12a4fcf5f695
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 84%
+source-wordcount: '87'
+ht-degree: 100%
 
 ---
 
 # Outils de modernisation d’AEM {#modernization-tools}
 
-[Les outils de modernisation d’AEM permettent de convertir facilement :](http://opensource.adobe.com/aem-modernize-tools/)
+[Les outils de modernisation d’AEM permettent de convertir facilement les éléments suivants :](http://opensource.adobe.com/aem-modernize-tools/)
 
-* [](page-templates-static.md)[Les modèles statiques en modèles modifiables](page-templates-editable.md)
-* [](page-templates-static.md)[Les configurations de la conception en stratégies](page-templates-editable.md)
-* [](/help/sites-authoring/default-components-foundation.md)des composants de base en composants principaux ;[](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [](website.md)[L’interface utilisateur classique en interface utilisateur tactile](touch-ui-concepts.md)
+* Les [modèles statiques](page-templates-static.md) en [modèles modifiables](page-templates-editable.md)
+* Les [configurations de conception](page-templates-static.md) en [stratégies](page-templates-editable.md)
+* Les [composants de base](/help/sites-authoring/default-components-foundation.md) en [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
+* L’[interface utilisateur classique](website.md) en [interface utilisateur optimisée pour les écrans tactiles](touch-ui-concepts.md)
 
-Pour plus d’informations sur l’utilisation de ces outils, [voir leur documentation](http://opensource.adobe.com/aem-modernize-tools/).
+Pour plus d’informations sur l’utilisation de ces outils, [consultez leur documentation](http://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >
