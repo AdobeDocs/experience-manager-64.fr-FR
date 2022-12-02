@@ -1,5 +1,5 @@
 ---
-title: 'Utilisation de métadonnées dans une notification électronique '
+title: Utilisation de métadonnées dans une notification électronique
 seo-title: Use metadata in an email notification
 description: Utilisation des métadonnées pour renseigner les informations dans une notification électronique de processus de formulaires
 seo-description: Use metadata to populate information in a forms workflow email notification
@@ -156,7 +156,7 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
 
 ### Utilisation de ECMAScript pour ajouter des métadonnées personnalisées  {#use-ecmascript-to-add-custom-metadata}
 
-[ECMAScript](htthttps://fr.wikipedia.org/wiki/ECMAScript) est un langage de script. Il est utilisé pour les scripts et les applications serveur côté client. Procédez comme suit pour utiliser ECMAScript afin d’ajouter des métadonnées personnalisées pour un modèle de courrier électronique :
+[ECMAScript](https://fr.wikipedia.org/wiki/ECMAScript) est un langage de script. Il est utilisé pour les scripts et les applications serveur côté client. Procédez comme suit pour utiliser ECMAScript afin d’ajouter des métadonnées personnalisées pour un modèle de courrier électronique :
 
 1. Connectez-vous à CRX DE à l’aide d’un compte administratif. L’URL est `https://[server]:[port]/crx/de/index.jsp`
 

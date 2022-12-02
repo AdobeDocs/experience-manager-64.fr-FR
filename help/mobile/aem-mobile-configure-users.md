@@ -76,7 +76,7 @@ Les membres du groupe app-admins peuvent créer du contenu d’application avec 
 1. Ajoutez les groupes suivants à votre nouveau groupe app-admins :
 
    * content-authors
-   * workflow-users
+   * utilisateurs de workflow
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 

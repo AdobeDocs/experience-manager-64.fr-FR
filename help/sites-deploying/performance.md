@@ -1,7 +1,7 @@
 ---
 title: Performance et évolutivité
 seo-title: Performance & Scalability
-description: 'Ce document technique aborde les façons dont l’évolutivité a été intégrée à AEM avec des indicateurs de performance et des fonctions de reprise sur sinistre.  '
+description: Ce document technique aborde les façons dont l’évolutivité a été intégrée à AEM avec des indicateurs de performance et des fonctions de reprise sur sinistre.
 seo-description: This white paper discusses the ways scalability has been built into AEM along with performance indicators and disaster recovery features.
 uuid: 709ed651-534d-4b80-8f9b-ac99669f6f61
 contentOwner: User
@@ -23,6 +23,6 @@ ht-degree: 100%
 
 Ce document technique aborde les façons dont l’évolutivité a été intégrée à AEM avec des indicateurs de performance pertinents et d’excellentes fonctions de reprise sur sinistre.
 
-Une plate-forme flexible et évolutive favorisant l’agilité technique, une haute performance et de bonnes fonctions de reprise sur sinistre.
+Une plateforme flexible et évolutive favorisant l’agilité technique, une haute performance et de bonnes fonctions de reprise sur sinistre.
 
 [Obtenir le fichier](assets/aem_scalability_whitepaperfinal-06122015je.pdf)

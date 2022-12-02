@@ -40,7 +40,7 @@ Effectuez les étapes suivantes pour configurer les journaux côté serveur :
    >
    >Pour générer des journaux dans le répertoire de formulaires HTML5, ajoutez ../logs/ avant le nom de fichier.
 
-1. Modifiez **Logger** en **HTMLFormsPerfLogger.****Cliquez sur Enregistrer**.
+1. Modifiez **Logger** en **HTMLFormsPerfLogger.** Cliquez sur **Enregistrer**.
 
 ## Configuration de la journalisation du client {#configuring-client-logging}
 

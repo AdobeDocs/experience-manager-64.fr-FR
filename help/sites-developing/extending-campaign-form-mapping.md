@@ -13,7 +13,7 @@ exl-id: 3270a279-13ef-4bbf-aafe-539df388c652
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ Ce document vous explique comment créer des mappages de formulaire personnalis�
 Les éléments suivants doivent être installés :
 
 * Adobe Experience Manager
-* Adobe Campaign Classic
+* Adobe Campaign Classic
 
-Voir [Intégration d’AEM à Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) pour plus d’informations.
+Pour plus d’informations, consultez [Intégration d’AEM à Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
 
 ## Création de mappages de formulaires personnalisés {#creating-custom-form-mappings-2}
 
@@ -45,7 +45,7 @@ Pour créer des mappages de formulaire personnalisés, vous devez suivre ces ét
 
 ### Création du tableau personnalisé dans Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
 
-Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exemple, nous utilisons la définition suivante pour créer un tableau d’événements :
+Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exemple, nous allons utiliser la définition suivante pour créer un tableau d’événements :
 
 ```xml
 <element autopk="true" label="Event" labelSingular="Event" name="event">
@@ -64,7 +64,7 @@ Dans Adobe Campaign, appuyez/cliquez sur **Ajouter** pour créer une extension 
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Maintenant, utilisez les champs de la **event** pour étendre le tableau **seed** table :
+Utilisez à présent les champs du tableau d’**événement** pour étendre le tableau **source** :
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -111,7 +111,7 @@ Dans CRXDE Lite, accédez au nœud **jcr:content** (de la page) et définissez 
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-Dans la configuration du formulaire, veillez à cocher la case Create if not existing (Créer s’il n’existe pas).
+Dans la configuration du formulaire, veillez à cocher la case « Créer s’il n’existe pas ».
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 

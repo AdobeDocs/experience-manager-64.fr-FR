@@ -1,5 +1,5 @@
 ---
-title: '''Didacticiel : création d’un formulaire adaptatif'''
+title: 'Didacticiel : création d’un formulaire adaptatif'
 seo-title: Create an adaptive form
 description: Apprenez à créer, mettre en page et prévisualiser un formulaire adaptatif. Apprenez également à configurer les actions d’envoi.
 seo-description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.

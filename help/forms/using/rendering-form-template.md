@@ -13,7 +13,7 @@ exl-id: ccdb2045-9339-4f39-acb5-85999c4667b9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '535'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 78%
 
 ## Point de fin du rendu {#render-endpoint}
 
-Les formulaires HTML5 ont la notion de **Profils** qui sont exposées en tant que points de fin REST pour activer le rendu mobile des modèles de formulaire. Ces profils sont associés à **Rendu de profil**. Il s’agit de pages JSP chargées de générer la représentation par HTML du formulaire en appelant le service Forms OSGi. Le chemin d’accès JCR du nœud de profil détermine l’URL du point de fin du rendu. Le point de fin du rendu par défaut du formulaire pointant vers le profil « par défaut» ressemble à :
+Les formulaires HTML5 intègrent la notion de **Profils**, lesquels sont exposés en tant que points d’entrée REST pour activer le rendu sur périphériques mobile des modèles de formulaire. Ces profils sont associés à des **rendus de profil**. Ce sont des pages JSP chargées de générer la représentation HTML du formulaire en appelant le service Forms OSGi. Le chemin d’accès JCR du nœud de profil détermine l’URL du point de fin du rendu. Le point de fin du rendu par défaut du formulaire pointant vers le profil « par défaut» ressemble à :
 
-https://&lt;*hôte*>:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*chemin du dossier contenant le formulaire xdp*>&amp;template=&lt;*nom du xdp*>
+https://&lt;*host*>:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*path of the folder containg form xdp*>&amp;template=&lt;*name of the xdp*>
 
 Par exemple, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
@@ -31,7 +31,7 @@ Pour un profil personnalisé, le point de fin change en conséquence. Par exempl
 
 `http://localhost:4502/content/xfaforms/profiles/hrforms.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
-Si votre modèle réside dans le référentiel AEM d’une application appelée FormSubmission, l’URL est :
+Si votre modèle réside dans le référentiel AEM d’une application appelée FormSubmission, l’URI est :
 
 ```
 http://localhost:4502/content/xfaforms/profiles/default.html?
@@ -68,18 +68,18 @@ Les paramètres de requête pris en charge lors du rendu d’un formulaire au fo
 
 | Paramètre | Description |
 |---|---|
-| dataRef | Ce paramètre indique le **chemin d’accès absolu** du fichier de données fusionné avec le modèle. Ce paramètre peut être une URL vers un service REST renvoyant les données au format xml. |
+| dataRef | Ce paramètre indique le **chemin d’accès absolu** du fichier de données fusionné avec le modèle. Ce paramètre peut être une adresse URL d’accès à un service REST renvoyant les données au format XML. |
 | data | Ce paramètre spécifie les octets de données codés au format UTF-8 qui sont fusionnés avec le modèle. Si ce paramètre est spécifié, le formulaire HTML5 ignore le paramètre dataRef. |
 
 ### Passage du paramètre de rendu {#passing-the-render-parameter}
 
 Les formulaires HTML5 prennent en charge trois méthodes pour transmettre des paramètres de rendu. Vous pouvez transmettre des paramètres par le biais de l’URL, des paires de valeur de clé, et du nœud de profil. Dans le paramètre de rendu, la paire de valeur de clé a la priorité la plus élevée, suivie du nœud de profil. Le paramètre de requête d’URL a la priorité la plus faible.
 
-* **Paramètres de requête URL** : Vous pouvez spécifier les paramètres de rendu dans l’URL. Dans les paramètres de requête d’URL, les paramètres sont visibles par l’utilisateur final. Par exemple, l’URL d’envoi suivante contient le paramètre de modèle dans l’URL : `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`
+* **Paramètres de requête URL** : Vous pouvez spécifier les paramètres de rendu dans l’URL. Dans les paramètres de requête d’URL, les paramètres sont visibles par l’utilisateur final. Par exemple, l’URL d’envoi suivante contient le paramètre de modèle dans l’URL : `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`.
 
 * **Paramètres de demande SetAttribute** : Vous pouvez spécifier les paramètres de rendu sous la forme d’une paire de valeurs de clé. Dans les paramètres de demande SetAttribute, les paramètres ne sont pas visibles par l’utilisateur final. Vous pouvez transférer une requête depuis un autre JSP vers le JSP de rendu de profil HTML5 et utiliser *setAttribute* sur l’objet de la requête pour transmettre tous les paramètres de rendu. Cette méthode a la priorité la plus élevée.
 
-* **Paramètres de requête du noeud de profil :** Vous pouvez spécifier les paramètres de rendu en tant que propriétés de noeud d’un noeud de profil. Dans les paramètres de requête de nœud de profil, les paramètres ne sont pas visibles par l’utilisateur. Le nœud de profil est le nœud où la requête est envoyée. Pour spécifier des paramètres en tant que propriétés de nœud, utilisez CRXDE lite.
+* **Paramètres de demande de nœud de profil :** vous pouvez spécifier les paramètres de rendu en tant que propriétés de nœud d’un nœud de profil. Dans les paramètres de requête de nœud de profil, les paramètres ne sont pas visibles par l’utilisateur. Le nœud de profil est le nœud où la requête est envoyée. Pour spécifier des paramètres en tant que propriétés de nœud, utilisez CRXDE lite.
 
 ### Paramètres d’envoi {#submit-parameters}
 

@@ -1,7 +1,7 @@
 ---
 title: Réutilisation de formulaires adaptatifs
 seo-title: Reusing adaptive forms
-description: 'Vous pouvez réutiliser un formulaire adaptatif existant afin d’en créer de nouveaux. '
+description: Vous pouvez réutiliser un formulaire adaptatif existant afin d’en créer de nouveaux.
 seo-description: You can reuse an existing adaptive form to create new adaptive forms.
 uuid: f1d0fb70-e255-4dd9-8e6d-fd65eaf2e81a
 products: SG_EXPERIENCEMANAGER/6.4/FORMS

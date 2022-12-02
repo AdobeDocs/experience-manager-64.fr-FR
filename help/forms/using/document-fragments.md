@@ -18,7 +18,7 @@ ht-degree: 100%
 
 # Fragments de document {#document-fragments}
 
-Dans une correspondance, les fragments de document sont des parties ou composants réutilisables avec lesquels vous pouvez composer des lettres ou des communications interactives. Les fragments de document sont des types suivants :
+Dans une correspondance, les fragments de document sont des parties ou composants réutilisables avec lesquels vous pouvez composer des lettres ou des communications interactives. Les fragments de document sont composés des types suivants :
 
 * **Texte** : Un actif de texte est un élément de contenu comprenant un ou plusieurs paragraphes de texte. Un paragraphe peut être statique ou dynamique.
 

@@ -1,7 +1,7 @@
 ---
 title: Composants
 seo-title: Components
-description: 'AEM est fourni avec tout un éventail de composants prêts à l’emploi qui procurent des fonctionnalités complètes aux créateurs de sites web. '
+description: AEM est fourni avec tout un éventail de composants prêts à l’emploi qui procurent des fonctionnalités complètes aux créateurs de sites web.
 seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors.
 page-status-flag: de-activated
 uuid: 02720edd-853c-4893-bf28-0e7b018029ea
@@ -14,7 +14,7 @@ exl-id: d552cbcc-8f71-48a3-9685-eba1ab8805c3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -30,15 +30,15 @@ Adobe Experience Manager (AEM) est fourni avec divers composants prêts à l�
 
 ## Composants – Principaux domaines {#components-major-areas}
 
-Vous trouverez, aux pages suivantes, des liens rapides vers certains des principaux domaines de gestion du contenu (des liens vers d’autres domaines sont disponibles sur la page d’aperçu ci-dessus) :
+Vous trouverez dans les pages suivantes des liens rapides vers certains des principaux domaines de gestion du contenu (des liens vers d’autres domaines sont disponibles sur la page d’aperçu ci-dessus) :
 
-* [Composants pour la création de page](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
+* [Composants pour la création de pages](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Les composants utilisés pour créer un contenu de page standard sont principalement contenus dans les groupes . **Général**, **Colonnes** et **Forms**.
+   Les composants utilisés pour créer du contenu de page standard se trouvent principalement dans les groupes **Général**, **Colonnes** et **Formulaires**.
 
 * [eCommerce](/help/sites-administering/ecommerce.md)
 
-   La fonctionnalité eCommerce d’AEM comprend également un éventail de composants, contenus dans la variable **Commerce** groupe. L’utilisation réelle peut dépendre du moteur de commerce utilisé.
+   La fonctionnalité eCommerce d’AEM comprend également un éventail de composants, contenus dans le groupe **Commerce**. L’utilisation réelle peut dépendre du moteur de commerce utilisé.
 
 ## Utilisation du mode de conception pour configurer des composants {#using-design-mode-to-configure-components}
 

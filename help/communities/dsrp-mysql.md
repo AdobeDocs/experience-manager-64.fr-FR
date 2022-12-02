@@ -93,7 +93,7 @@ Lorsque MySQL Workbench est lancé pour la première fois, sauf s’il est déj�
    * Méthode de connexion : `Standard (TCP/IP)`
    * Nom d’hôte: `127.0.0.1`
    * Nom d’utilisateur: `root`
-   * Mot de passe: `no password by default`
+   * Password: `no password by default`
    * Schéma par défaut : `leave blank`
 
 1. Sélectionner `Test Connection` pour vérifier la connexion au service MySQL en cours d’exécution
@@ -194,7 +194,7 @@ Lorsque MySQL s’exécute sur un serveur différent de l’AEM, le nom d’hôt
 
       Ou saisissez le nom d’utilisateur configuré pour le serveur MySQL, si ce n’est &quot;root&quot;
 
-   * **[!UICONTROL Mot de passe]**:
+   * **[!UICONTROL Password]**:
 
       Effacez ce champ si aucun mot de passe n’est défini pour MySQL,
 

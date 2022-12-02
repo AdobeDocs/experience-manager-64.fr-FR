@@ -63,7 +63,7 @@ La commande keytool se situe généralement dans le répertoire Java jre/bin et 
     </ul></td> 
   </tr> 
   <tr> 
-   <td><p>-approuvé</p></td> 
+   <td><p>-file</p></td> 
    <td><p>Emplacement et nom du fichier de certificat.</p></td> 
    <td><code> ads-ca.cer</code></td> 
   </tr> 

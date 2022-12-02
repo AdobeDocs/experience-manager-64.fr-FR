@@ -13,13 +13,13 @@ exl-id: ccb792f7-e837-4790-818f-e2c446328e71
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Test d’une mise en page en responsive design dans We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Toutes les pages We.Retail utilisent le composant Conteneur de mises en page pour implémenter la conception réactive. Le conteneur offre un système de paragraphe qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. Le composant est utilisé conjointement avec la fonction **Disposition** dans l’éditeur de page, qui vous permet de créer et de modifier votre mise en page réactive en fonction de l’appareil.
+Toutes les pages We.Retail utilisent le composant Conteneur de mises en page pour implémenter le responsive design. Le conteneur offre un système de paragraphe qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. Le composant est utilisé en mode **Mise en page** de l’éditeur de page, ce qui permet de créer et de modifier une mise en page en mode responsive design, selon les caractéristiques de l’appareil.
 
 ## Test {#trying-it-out}
 
@@ -47,4 +47,4 @@ Toutes les pages We.Retail utilisent le composant Conteneur de mises en page pou
 
 ## Informations supplémentaires {#further-information}
 
-Voir à ce sujet le document de création. [Mise en page réactive](/help/sites-authoring/responsive-layout.md) ou le document administrateur [Configuration du conteneur de mises en page et du mode Mise en page](/help/sites-administering/configuring-responsive-layout.md) pour obtenir des informations techniques complètes.
+Pour plus d’informations, reportez-vous au document relatif à la création [Mise en page en responsive design](/help/sites-authoring/responsive-layout.md) ou au document administrateur [Configuration du conteneur de mise en pages et du mode Mise en page](/help/sites-administering/configuring-responsive-layout.md) pour obtenir des détails techniques complets.

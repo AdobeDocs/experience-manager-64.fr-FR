@@ -1,7 +1,7 @@
 ---
 title: Résolution des problèmes liés à l’application AEM Forms
 seo-title: Troubleshoot AEM Forms app
-description: 'Découvrez les problèmes courants qui se produisent avec l’application AEM Forms, ainsi que la manière de les résoudre. '
+description: Découvrez les problèmes courants qui se produisent avec l’application AEM Forms, ainsi que la manière de les résoudre.
 seo-description: Learn about common issues with AEM Forms app and how to troubleshoot them.
 uuid: a5cc3065-0ebf-48c0-a8fe-f1061632ca90
 content-type: reference

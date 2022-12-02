@@ -1,11 +1,12 @@
 ---
 title: Utilisation de l’imagerie dynamique avec rapport des pixels côté client
-description: Découvrez comment utiliser le rapport de pixels d’appareil côté client avec l’imagerie dynamique dans Adobe Experience Manager as a Cloud Service avec Dynamic Media.
+description: Découvrez comment utiliser le rapport de pixels d’appareil côté client avec l’imagerie dynamique dans Adobe Experience Manager as a Cloud Service avec Dynamic Media.
 role: Admin,User
-source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
+exl-id: 3c19a02f-9d97-4ed4-92ea-0b5861267219
+source-git-commit: 176e974bf99d9f70a5c1d075ee83eea9e9173221
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 La solution d’imagerie dynamique actuelle utilise des chaînes d’agent utilisateur pour déterminer le type d’appareil utilisé (ordinateur de bureau, tablette, mobile, etc.).
 
-Les fonctionnalités de détection de périphérique - RGPD basées sur des chaînes d’agent utilisateur - sont souvent inexactes, en particulier pour les périphériques Apple. En outre, chaque fois qu’un nouvel appareil est lancé, il doit être validé.
+Les fonctionnalités de détection de périphérique (RGPD basées sur des chaînes d’agent utilisateur) sont souvent inexactes, en particulier pour les périphériques Apple. En outre, chaque fois qu’un nouvel appareil est lancé, il doit être validé.
 
 Le RGPD côté client vous donne des valeurs et fonctionne entièrement exacts pour n’importe quel appareil, qu’il s’agisse d’Apple ou de tout autre nouvel appareil qui a été lancé.
 
@@ -21,15 +22,15 @@ Le RGPD côté client vous donne des valeurs et fonctionne entièrement exacts p
 
 **Applications rendues côté serveur**
 
-1. Chargement de l’init du service worker (`srvinit.js`) en incluant le script suivant dans la section d’en-tête de votre page de HTML :
+1. Chargement de l’init du service worker (`srvinit.js`) en incluant le script suivant dans la section d’en-tête de votre page de HTML :
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   Adobe recommande de charger ce script. _before_ tout autre script de sorte que le service worker commence immédiatement l’initialisation.
+   Adobe recommande de charger ce script _avant_ tout autre script, de sorte que le service worker commence immédiatement l’initialisation.
 
-1. Insérez le code de balise d’image DPR suivant en haut de la section body de votre page de HTML :
+1. Insérez le code de balise d’image DPR suivant en haut de la section corps de votre page de HTML :
 
    ```html
    <img src="aem_dm_dpr_1x.jpg" style="width:1px;height:1px;display:none"
@@ -40,11 +41,11 @@ Le RGPD côté client vous donne des valeurs et fonctionne entièrement exacts p
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   Il est obligatoire d’inclure ce code de balise d’image RGPD. _before_ toutes les images statiques dans votre page de HTML.
+   Il est obligatoire d’inclure ce code de balise d’image RGPD _avant_ toutes les images statiques dans votre page de HTML.
 
 **Applications rendues côté client**
 
-1. Insérez les scripts DPR suivants dans la section d’en-tête de votre page de HTML :
+1. Insérez les scripts DPR suivants dans la section d’en-tête de votre page de HTML :
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
@@ -53,8 +54,8 @@ Le RGPD côté client vous donne des valeurs et fonctionne entièrement exacts p
 
    Vous pouvez combiner les deux scripts DPR en un seul afin d’éviter plusieurs requêtes réseau.
 
-   Adobe recommande de charger ces scripts _before_ tout autre script dans la page de HTML.
-Adobe recommande également de Bootstrap de votre application sous la balise de HTML diff plutôt qu’un élément de corps. La raison en est la suivante : `dprImageInjection.js` injecte dynamiquement la balise d’image dans la partie supérieure de la section body de la page de HTML.
+   Adobe recommande de charger ces scripts _avant_ tout autre script dans la page de HTML.
+Adobe recommande également le Bootstrap de votre application sous la balise de HTML diff plutôt qu’un élément de corps. La raison en est la suivante : `dprImageInjection.js` injecte dynamiquement la balise d’image dans la partie supérieure de la section corps de la page HTML.
 
 ## Téléchargement des fichiers JavaScript {#client-side-dpr-script}
 
@@ -69,3 +70,4 @@ Les fichiers JavaScript suivants sont fournis à titre de référence uniquement
 >[!MORELIKETHIS]
 >
 >* [Imagerie dynamique](/help/assets/imaging-faq.md)
+

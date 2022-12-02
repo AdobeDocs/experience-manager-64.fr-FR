@@ -11,7 +11,7 @@ role: User
 source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 46%
+ht-degree: 52%
 
 ---
 
@@ -43,7 +43,7 @@ Pour télécharger des ressources à utiliser avec la visionneuse d’images pan
 
 Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM, vous devez synchroniser les paramètres prédéfinis de la visionneuse d’images panoramiques avec les métadonnées spécifiques à Dynamic Media Classic et Dynamic Media Classic afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans le JCR. Pour ce faire, configurez Dynamic Media Classic de la manière suivante :
 
-1. [Connexion à votre application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) pour chaque compte d’entreprise.
+1. [Connexion à votre application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=fr#system-requirements-dmc-app) pour chaque compte d’entreprise.
 
 1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images]**.
 1. Sur le **[!UICONTROL Publication sur le serveur d’images]** , depuis la page **[!UICONTROL Contexte de publication]** menu déroulant près du haut, sélectionnez **[!UICONTROL Serveur d’images]**.
@@ -51,7 +51,7 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM
 1. Sur la même **[!UICONTROL Publication sur le serveur d’images]** , recherchez l’en-tête **[!UICONTROL Attributs de requête]**.
 1. Sous , **[!UICONTROL Attributs de requête]** titre, localiser **[!UICONTROL Limite de taille de l’image de réponse]**. Ensuite, dans la variable **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]** , augmentez la taille d’image maximale autorisée pour les images panoramiques.
 
-   Dynamic Media Classic est limitée à 25 000 000 pixels. La taille maximale autorisée pour les images avec un rapport d’aspect de 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
+   Dynamic Media Classic est limité à 25 000 000 pixels. La taille maximale autorisée pour les images avec un rapport d’aspect de 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
 
    >[!NOTE]
    >
@@ -76,7 +76,7 @@ Si vous déposez une image dans la variable **[!UICONTROL Média panoramique]** 
 
 * Pour un *Verrouillage non valide* sur la ressource ou *Erreur d’analyse* affiché sur la page, cochez **[!UICONTROL Mode d’obscurcissement de requête]** et **[!UICONTROL Mode de verrouillage de requête]** pour vous assurer qu’elles sont désactivées.
 * Pour une erreur de canevas entaché, configurez une **[!UICONTROL Chemin d’accès au fichier de définition de jeu de règles et Invalider le CTN]** pour les requêtes précédentes de la ressource image.
-* Si la qualité d’image devient très faible après une demande d’image dont la taille dépasse la limite prise en charge, vérifiez que le paramètre **[!UICONTROL Attributs d’encodage JPEG > Qualité]** n’est pas vide. Un paramètre standard pour la variable **[!UICONTROL Qualité]** est `95`. Vous trouverez le paramètre dans la variable **[!UICONTROL Publication sur le serveur d’images]** page. Pour accéder à la page, voir [Configuration de Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
+* Si la qualité d’image devient très faible après une demande d’image dont la taille dépasse la limite prise en charge, vérifiez que le paramètre **[!UICONTROL Attributs d’encodage JPEG > Qualité]** n’est pas vide. `95` est un paramètre standard pour le champ **[!UICONTROL Qualité]**. Vous trouverez le paramètre dans la variable **[!UICONTROL Publication sur le serveur d’images]** page. Pour accéder à la page, voir [Configuration de Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
 
 ## Aperçu des images panoramiques {#previewing-panoramic-images}
 
@@ -84,4 +84,4 @@ Voir [Aperçu des ressources](previewing-assets.md).
 
 ## Publication des images panoramiques {#publishing-panoramic-images}
 
-Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
+Consultez également le section [Publication de ressources](publishing-dynamicmedia-assets.md).

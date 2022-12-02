@@ -25,7 +25,7 @@ La fonctionnalité de recherche d’Adobe Experience Manager Assets est amélior
 [!DNL Experience Manager] Assets vous permet de trier les ressources de dossier sur la base des champs suivants :
 
 * Paramètres régionaux
-* État
+* Statut
 * Type
 * Taille
 * Évaluation
@@ -58,7 +58,7 @@ La fonctionnalité de recherche d’Adobe Experience Manager Assets est amélior
 Vous pouvez trier les résultats de la recherche en fonction des champs suivants :
 
 * Titre
-* État
+* Statut
 * Type
 * Taille
 * Date de modification

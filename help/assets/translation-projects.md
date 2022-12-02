@@ -8,7 +8,7 @@ exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
 source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
 source-wordcount: '1939'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Vous utilisez le processus Créer et traduire afin de générer des copies de la
 * Créer un projet de traduction
 * Ajouter à un projet de traduction existant
 
-### Créer uniquement la structure {#create-structure-only}
+### Création de la structure uniquement {#create-structure-only}
 
 Utilisez l’option **Créer uniquement la structure** pour créer une hiérarchie de dossiers cible au niveau de la racine de la langue cible semblable à celle du dossier source au sein de la racine de la langue source. Dans ce cas, les fichiers source sont copiés dans le dossier de destination. Cependant, aucun projet de traduction n’est généré.
 
@@ -114,11 +114,11 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-1. Pour afficher l’état de la tâche de traduction, cliquez sur les points de suspension en bas de la mosaïque **[!UICONTROL Tâche de traduction.]**
+1. Pour afficher le statut de la tâche de traduction, cliquez sur les points de suspension en bas de la mosaïque **[!UICONTROL Tâche de traduction]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-   Pour plus d’informations sur les états des tâches, voir [Surveillance de l’état d’une tâche de traduction](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
+   Pour plus d’informations sur les statuts des tâches, consultez la section [Surveillance du statut d’une tâche de traduction](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
 1. Accédez à l’interface utilisateur d’Assets et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 
@@ -128,7 +128,7 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
    >
    >Cette fonctionnalité est disponible à la fois pour les ressources et les dossiers. Lorsqu’une ressource est sélectionnée au lieu d’un dossier, la hiérarchie de dossiers complète jusqu’à la langue racine est copiée afin de créer une copie de langue pour la ressource.
 
-### Ajouter à un projet de traduction existant {#add-to-existing-translation-project}
+### Ajout à un projet de traduction existant {#add-to-existing-translation-project}
 
 Si vous utilisez cette option, le workflow de traduction s’exécute pour les ressources que vous ajoutez au dossier source après l’exécution d’un précédent workflow de traduction. Seules les nouvelles ressources ajoutées sont copiées dans le dossier cible contenant les ressources précédemment traduites. Aucun projet de traduction n’est créé dans ce cas.
 
@@ -190,9 +190,9 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-   Pour plus d’informations, voir [Surveillance de l’état d’une tâche de traduction](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
+   Pour plus d’informations, consultez la section [Surveillance du statut d’une tâche de traduction](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Une fois la traduction terminée, l’état devient Prêt pour la révision. Accédez à l’interface utilisateur d’Assets et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
+1. Une fois la traduction terminée, le statut devient Prêt pour la révision. Accédez à l’interface utilisateur d’Assets et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 
 ## Mise à jour des copies de langue {#update-language-copies}
 
@@ -203,7 +203,7 @@ Exécutez ce processus pour traduire un ensemble de ressources supplémentaire e
 
 ### Créer un projet de traduction {#create-a-new-translation-project-1}
 
-Si vous utilisez cette option, un projet de traduction est créé pour l’ensemble de ressources pour lequel vous souhaitez mettre à jour une copie de langue.
+Si vous utilisez cette option, un projet de traduction est créé pour l’ensemble de ressources pour lequel vous voulez mettre à jour une copie de langue.
 
 1. Dans l’interface utilisateur d’Assets, sélectionnez le dossier source auquel vous avez ajouté une ressource.
 1. Ouvrez le volet **[!UICONTROL Références]**, puis cliquez/appuyez sur **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]** pour afficher la liste des copies de langue.
@@ -236,7 +236,7 @@ Si vous utilisez cette option, un projet de traduction est créé pour l’ensem
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Pour commencer la traduction des ressources, cliquez sur la flèche au niveau de la mosaïque **[!UICONTROL Tâche de traduction]** et sélectionnez **[!UICONTROL Démarrer]** dans la liste.
+1. Pour commencer la traduction des ressources, cliquez sur la flèche au niveau de la mosaïque **[!UICONTROL Tâche de traduction]** et sélectionnez **[!UICONTROL Démarrer]** dans la liste.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
@@ -248,7 +248,7 @@ Si vous utilisez cette option, un projet de traduction est créé pour l’ensem
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-   Pour plus d’informations sur les états des tâches, voir [Surveillance de l’état d’une tâche de traduction](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
+   Pour plus d’informations sur les statuts des tâches, consultez la section [Surveillance du statut d’une tâche de traduction](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
 1. Accédez à l’interface utilisateur d’Assets et ouvrez la page Propriétés de chacune des ressources traduites afin d’afficher les métadonnées traduites.
 

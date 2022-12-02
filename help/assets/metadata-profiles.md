@@ -8,7 +8,7 @@ exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
 source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 58%
+ht-degree: 63%
 
 ---
 
@@ -29,7 +29,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
    Modifiez les propriétés suivantes pour le composant **[!UICONTROL Description]** :
 
-   * **[!UICONTROL Libellé du champ]**: Nom d’affichage de la propriété de métadonnées. Il est uniquement disponible à titre de référence.
+   * **[!UICONTROL Libellé du champ]** : nom sous lequel s’affiche la propriété des métadonnées. Il est uniquement disponible à titre de référence.
    * **[!UICONTROL Associer à la propriété]**: La valeur de cette propriété fournit le chemin/nom relatif au noeud de ressource où elle est enregistrée dans le référentiel. La valeur doit toujours commencer par `./` car cela indique que le chemin d’accès se trouve sous le noeud de la ressource.
 
    ![chlimage_1-482](assets/chlimage_1-482.png)
@@ -48,12 +48,12 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
 | Composant | Propriétés |
 |---|---|
-| [!UICONTROL En-tête de section] | Libellé du champ, <br> Description |
-| [!UICONTROL Une seule ligne de texte] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Texte à plusieurs valeurs] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Nombre] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Date] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Balises standard] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut, <br> Description |
+| [!UICONTROL En-tête de section] | Libellé de champ, Description <br> |
+| [!UICONTROL Une seule ligne de texte] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
+| [!UICONTROL Texte à plusieurs valeurs] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
+| [!UICONTROL Nombre] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
+| [!UICONTROL Date] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
+| [!UICONTROL Balises standard] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut, <br> Description |
 
 ![chlimage_1-484](assets/chlimage_1-484.png)
 
@@ -140,7 +140,7 @@ Lorsque vous supprimez un profil de métadonnées d’un dossier, tout sous-doss
 
 Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du menu **[!UICONTROL Outils]** ou, si vous êtes dans le dossier, à partir de **[!UICONTROL Propriétés]**. Cette section décrit comment supprimer des profils de métadonnées des dossiers des deux manières.
 
-### Suppression de profils de métadonnées d’un dossier via l’interface utilisateur Profils {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+### Suppression de profils de métadonnées d’un dossier via l’interface utilisateur de Profil {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 Pour supprimer un profil de métadonnées d’un dossier via l’interface utilisateur Profils , procédez comme suit :
 

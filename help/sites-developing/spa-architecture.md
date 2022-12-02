@@ -37,7 +37,7 @@ Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://experie
 
 Le développement d’applications sur une seule page sur AEM suppose que le développeur front-end respecte les bonnes pratiques standard lors de la création d’une SPA. Si le développeur front-end respecte ces bonnes pratiques générales, ainsi que certains principes spécifiques à AEM, sa SPA sera fonctionnelle avec [AEM et ses fonctionnalités de création de contenu](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
-* **[Portabilité**](/help/sites-developing/spa-architecture.md#portability) : comme pour tout composant, les composants créés doivent être aussi portables que possible. Le SPA doit être créé avec des composants portables et réutilisables, en évitant les chemins statiques qui font référence à la structure de contenu.
+* **[Portabilité](/help/sites-developing/spa-architecture.md#portability) :** comme pour tout composant, les composants créés doivent être aussi portables que possible. Le SPA doit être créé avec des composants portables et réutilisables, en évitant les chemins statiques qui font référence à la structure de contenu.
 * **[AEM détermine la structure du site](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - Le développeur front-end crée des composants et possède leur structure interne, mais s’appuie sur AEM pour définir la structure de contenu du site.
 * **[Rendu dynamique](/help/sites-developing/spa-architecture.md#dynamic-rendering) -** Tout le rendu doit être dynamique.
 * **[Routage dynamique](#dynamic-routing) -** Le SPA est responsable du routage et AEM l’écoute et récupère les données du composant en fonction de celui-ci. Tout routage devrait également être dynamique.

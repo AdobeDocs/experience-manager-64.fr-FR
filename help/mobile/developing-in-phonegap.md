@@ -32,7 +32,7 @@ Les ressources suivantes vous aideront à prendre en main AEM Mobile à l’aide
 
 * [Développement d’applications mobiles dans AEM](/help/mobile/developing-mobile-applications.md)
 * [Mobile avec synchronisation de contenu](/help/mobile/phonegap-contentsync.md)
-* [Modèles de page](/help/mobile/phonegap-apps-arch-page-templates.md)
+* [Modèles de page ](/help/mobile/phonegap-apps-arch-page-templates.md)
 
 * [AEM Mobile Content Services : Présentation](/help/mobile/develop-content-as-a-service.md)
 

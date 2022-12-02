@@ -60,7 +60,7 @@ Si vous exécutez OpenOffice, Microsoft Word ou Microsoft PowerPoint sous Window
 
 1. Ajoutez des comptes d’utilisateur (voir [Création d’un compte utilisateur](enabling-multi-threaded-file-conversions.md#add-a-user-account)).
 1. Vous allez maintenant apporter des modifications au fichier /etc/sudoers. L’autorisation par défaut pour ce fichier est 440. Redéfinissez l’autorisation en écriture pour ce fichier.
-1. Ajoutez des entrées pour les utilisateurs supplémentaires (autres que l’administrateur exécutant le serveur Forms ) dans le fichier /etc/sudoers. Par exemple, si vous exécutez AEM Forms en utilisant le nom d’utilisateur « Icadm » et un serveur appelé « myhost » et que vous souhaitez incarner les utilisateurs user1 et user2, ajoutez les entrées suivantes dans le fichier /etc/sudoers :
+1. Ajoutez des entrées pour les utilisateurs supplémentaires (autres que l’administrateur exécutant le serveur Forms ) dans le fichier /etc/sudoers. Par exemple, si vous exécutez AEM Forms en utilisant le nom d’utilisateur « Icadm » et un serveur appelé « myhost » et que vous souhaitez incarner les utilisateurs user1 et user2, ajoutez les entrées suivantes dans le fichier /etc/sudoers :
 
    ```as3
     lcadm myhost=(user1) NOPASSWD: ALL 

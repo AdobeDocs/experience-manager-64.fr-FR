@@ -29,7 +29,7 @@ La page qui comprend la variable `Search`fournit un emplacement où lancer une r
 
 La fonction de recherche peut être utilisée avec n’importe quelle autre fonction permettant aux visiteurs et aux membres du site d’afficher du contenu.
 
-## Rechercher {#search-features}
+## Recherche {#search-features}
 
 ### Ajout du composant Rechercher à une page {#add-search-to-a-page}
 

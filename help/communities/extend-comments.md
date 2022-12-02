@@ -1,7 +1,7 @@
 ---
 title: Extension du composant Commentaires
 seo-title: Extend Comments Component
-description: Étendre le composant Commentaires afin de modifier son aspect ou son comportement pour des utilisations spécifiques
+description: Étendre le composant Commentaires afin de modifier son apparence ou son comportement pour des utilisations spécifiques
 seo-description: Extend the Comments component to alter its appearance or behavior for specific uses
 uuid: 6f439097-b1d0-4e7d-afcf-01d8f43aa866
 contentOwner: Guillaume Carlino

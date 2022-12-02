@@ -66,7 +66,7 @@ Par exemple, l’image suivante montre la console Sites des communautés princip
 
 ![chlimage_1-448](assets/chlimage_1-448.png)
 
-## Création du site {#site-creation}
+## Création de site {#site-creation}
 
 La console de création de site fournit une approche détaillée pour assembler les fonctionnalités du site en fonction d’une [modèle de site communautaire](sites.md) et .
 
@@ -390,7 +390,7 @@ Lorsque vous placez le pointeur de la souris sur un site ou que vous touchez une
 
 ![chlimage_1-460](assets/chlimage_1-460.png)
 
-Le contenu d’un site peut être créé avec les mêmes outils que tout autre site web AEM. To open the site for authoring, select the `Open Site` iconm that appears on hovering the site with mouse. The site will open in a new tab such that the Communities Sites console remains accessible.
+Le contenu d’un site peut être créé avec les mêmes outils que tout autre site web AEM. Pour ouvrir le site à des fins de création, sélectionnez l’option `Open Site` icône qui s’affiche lorsque vous survolez le site avec la souris. Le site s’ouvre dans un nouvel onglet afin que la console Sites des communautés reste accessible.
 
 ![chlimage_1-461](assets/chlimage_1-461.png)
 
@@ -474,7 +474,7 @@ Le panneau CONCEPTION permet d’appliquer un nouveau thème :
 
 Le panneau PARAMÈTRES permet d’accéder à la plupart des paramètres sous les sous-panneaux de l’ Étape 3 de la création d’un site de communauté :
 
-* [Gestion des utilisateurs](#user-management)
+* [User Management](#user-management)
 * [Balises](#tagging)
 * [Modération](#moderation)
 * [Rôles des membres](#roles)
@@ -512,7 +512,7 @@ Après la publication d’un site de communauté, il est nécessaire de publier 
 Sélectionnez l’icône d’exportation, lorsque vous placez le pointeur de la souris sur le site, pour créer un module du site de la communauté qui est stocké dans . [gestionnaire de modules](../../help/sites-administering/package-manager.md) et téléchargés.\
 Notez que le contenu généré par l’utilisateur n’est pas inclus dans le module du site.
 
-## Deleting the Site {#deleting-the-site}
+## Suppression du site {#deleting-the-site}
 
 ![deleteicon-1](assets/deleteicon-1.png)
 
@@ -538,6 +538,7 @@ Pour plus d’informations, voir [Gestion des utilisateurs et des groupes d’ut
 >If [Autoriser la connexion aux réseaux sociaux : Facebook](#user-management) est activé, une fois le groupe d’utilisateurs
 >
 >* community-*&lt;site-name>*-*&lt;uid>*-members
+>
 est créé, l’objet appliqué [Service cloud facebook](social-login.md#createafacebookcloudservice) doit être configuré pour ajouter des utilisateurs à ce groupe.
 
 ## Configuration d’une erreur d’authentification {#configure-for-authentication-error}

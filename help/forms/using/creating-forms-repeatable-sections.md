@@ -1,7 +1,7 @@
 ---
 title: Création de formulaires avec des sections répétables
 seo-title: Creating forms with repeatable sections
-description: 'Les sections répétables sont des panneaux qui peuvent être dynamiquement ajoutés ou supprimés dans un formulaire.  '
+description: Les sections répétables sont des panneaux qui peuvent être dynamiquement ajoutés ou supprimés dans un formulaire.
 seo-description: Repeatable sections are panels that can be dynamically added or removed to a form.
 uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.4/FORMS

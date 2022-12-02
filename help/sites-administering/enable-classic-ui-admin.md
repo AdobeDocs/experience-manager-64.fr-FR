@@ -13,7 +13,7 @@ exl-id: f3c03562-aaeb-4d43-aee1-d92d661ee329
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '227'
-ht-degree: 70%
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ Par défaut, la possibilité de basculer vers l’IU classique via les consoles 
 
 ![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
-Chaque console disposant d’une version d’interface utilisateur classique dans `/libs/cq/core/content/nav` peut être réactivé individuellement de sorte que la variable **IU classique** s’affiche une fois de plus sur l’icône de la console lorsqu’elle est pointée.
+Chaque console qui possède une version d’IU classique dans `/libs/cq/core/content/nav` peut être réactivée individuellement afin que l’option **IU classique** s’affiche à nouveau lors du survol du curseur sur l’icône de la console.
 
 Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
@@ -39,10 +39,10 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    `/libs/cq/core/content/nav/sites`
 
-1. Créez une superposition à l’aide de la fonction **Noeud de recouvrement** option; par exemple :
+1. Créez un recouvrement à l’aide de l’option **Nœud de recouvrement** ; par exemple :
 
-   * **Chemin**: `/apps/cq/core/content/nav/sites`
-   * **Emplacement du recouvrement**: `/apps/`
+   * **Chemin** : `/apps/cq/core/content/nav/sites`
+   * **Emplacement du recouvrement** : `/apps/`
    * **Faire correspondre les types de nœuds** : actif (cochez la case)
 
 1. Ajoutez la propriété booléenne suivante au nœud recouvert :

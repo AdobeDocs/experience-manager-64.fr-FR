@@ -1,6 +1,6 @@
 ---
 title: Guide de dimensionnement des ressources
-description: 'Bonnes pratiques pour déterminer des mesures efficaces pour estimer l’infrastructure et les ressources nécessaires au déploiement [!DNL Experience Manager] Ressources. '
+description: Bonnes pratiques pour déterminer des mesures efficaces pour estimer l’infrastructure et les ressources nécessaires au déploiement [!DNL Experience Manager] Ressources.
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,7 +11,7 @@ exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
 source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
 source-wordcount: '1840'
-ht-degree: 78%
+ht-degree: 82%
 
 ---
 
@@ -38,7 +38,7 @@ Compte tenu de ces facteurs, vous avez besoin d’une méthodologie permettant d
 1. Si vous prévoyez d’utiliser des sous-ressources, générez-les pour les types de fichiers appropriés. Voir la documentation en ligne sur la génération de pages de sous-ressources à partir de fichiers InDesign ou PNG/PDF provenant de calques d’Illustrator.
 1. Comparez la taille des images, rendus et sous-ressources de sortie avec les images d’origine. Cette comparaison permet de générer un facteur de croissance attendu lorsque le système est chargé. Par exemple, si vous générez des rendus et des sous-ressources d’une taille combinée de 3 Go après le traitement de 1 Go de ressources, le facteur de croissance des rendus est de 3.
 1. Déterminez la durée maximale pendant laquelle les versions des ressources doivent être conservées dans le système.
-1. Déterminez la fréquence à laquelle les ressources existantes sont modifiées dans le système. If [!DNL Experience Manager] est utilisé comme hub de collaboration dans les workflows créatifs, le nombre de modifications est élevé. Si seules les ressources terminées sont chargées dans le système, ce nombre est beaucoup plus bas.
+1. Déterminez la fréquence à laquelle les ressources existantes sont modifiées dans le système. Si [!DNL Experience Manager] est utilisé comme centre de collaboration dans les workflow de création, le nombre de modifications est élevé. Si seules les ressources terminées sont chargées dans le système, ce nombre est beaucoup plus bas.
 1. Déterminez le nombre de ressources chargées dans le système chaque mois. Si vous avez le moindre doute, vérifiez le nombre de ressources actuellement disponibles et divisez ce nombre par l’âge de la ressource la plus ancienne afin de calculer un nombre approximatif.
 
 La réalisation des étapes 1 à 9 vous aide à déterminer ce qui suit :
@@ -51,9 +51,9 @@ La réalisation des étapes 1 à 9 vous aide à déterminer ce qui suit :
 * Nombre de nouvelles ressources chargées chaque mois
 * Nombre d’années de croissance pour lesquelles allouer de l’espace
 
-Vous pouvez indiquer ces chiffres dans la feuille de calcul Dimensionnement du réseau afin de déterminer l’espace total requis pour la banque de données. Il s’agit également d’un outil utile permettant de déterminer l’impact de la maintenance de versions de ressources ou de la modification de ressources dans [!DNL Experience Manager] sur la croissance du disque.
+Vous pouvez indiquer ces chiffres dans la feuille de calcul Dimensionnement du réseau afin de déterminer l’espace total requis pour le magasin de données. C’est également un outil utile pour déterminer l’impact de la conservation des versions des ressources ou de la modification des ressources dans [!DNL Experience Manager] sur la croissance du disque.
 
-Les exemples de données renseignés dans l’outil montrent à quel point il est important de réaliser les étapes mentionnées. Si vous dimensionnez la banque de données uniquement en fonction des images brutes à charger (1 To), vous avez peut-être sous-estimé la taille du référentiel d’un facteur de 15.
+Les exemples de données renseignés dans l’outil montrent à quel point il est important de réaliser les étapes mentionnées. Si vous dimensionnez le magasin de données uniquement en fonction des images brutes à charger (1 To), vous avez peut-être sous-estimé la taille du référentiel d’un facteur de 15.
 
 [Obtenir le fichier](assets/disk_sizing_tool.xlsx)
 
@@ -63,7 +63,7 @@ Pour les banques de données volumineuses, vous pouvez mettre en oeuvre une banq
 
 #### Cas d’utilisation {#use-cases}
 
-La banque de données peut être partagée entre une instance d’auteur principale et de secours afin de réduire le temps nécessaire à la mise à jour de l’instance de secours avec les modifications apportées à l’instance principale. Adobe recommande de partager la banque de données entre une instance d’auteur principale et des instances d’auteur de déchargement afin de réduire les surcharges lors du déchargement du workflow. Vous pouvez également partager la banque de données entre les instances d’auteur et de publication afin de réduire le trafic lors de la réplication.
+Le magasin de données peut être partagé entre une instance d’auteur principale et de secours afin de réduire le temps nécessaire à la mise à jour de l’instance de secours avec les modifications apportées à l’instance principale. Adobe recommande de partager la banque de données entre une instance d’auteur principale et des instances d’auteur de déchargement afin de réduire les surcharges lors du déchargement du workflow. Vous pouvez également partager la banque de données entre les instances d’auteur et de publication afin de réduire le trafic lors de la réplication.
 
 #### Inconvénients {#drawbacks}
 
@@ -79,11 +79,11 @@ La mise en œuvre du service AWS S3 pour les banques de données partagées es
 
 Les banques de données partagées augmentent également la complexité des opérations, telles que le nettoyage de la mémoire. Normalement, le nettoyage de la mémoire pour une banque de données autonome peut être lancé d’un seul clic. Cependant, les banques de données partagées requièrent des opérations de balayage des repères sur chaque membre utilisant la banque de données, en plus de l’exécution du nettoyage réel sur un seul nœud.
 
-Pour les opérations AWS, la mise en œuvre d’un emplacement central unique (via S3) plutôt que la création d’une matrice RAID de volumes EBS peut considérablement limiter la complexité et les risques opérationnels du système.
+Pour les opérations AWS, la mise en œuvre d’un emplacement central unique (via  S3) plutôt que la création d’une matrice RAID de volumes EBS peut considérablement limiter la complexité et les risques opérationnels du système.
 
 #### Problèmes de performances {#performance-concerns}
 
-Une banque de données partagée nécessite que les fichiers binaires soient stockés sur un lecteur monté sur le réseau partagé entre toutes les instances. Comme ces fichiers binaires sont accessibles sur un réseau, les performances du système sont affectées. Vous pouvez partiellement atténuer cet impact en utilisant une connexion réseau rapide à une matrice rapide de disques. Toutefois, il s’agit d’une proposition coûteuse. Dans le cas des opérations AWS, tous les disques sont distants et nécessitent une connectivité réseau. Les volumes éphémères perdent des données lorsque l’instance démarre ou s’arrête.
+Un magasin de données partagé nécessite que les fichiers binaires soient stockés sur un lecteur monté sur le réseau partagé entre toutes les instances. Comme ces fichiers binaires sont accessibles sur un réseau, les performances du système sont affectées. Vous pouvez partiellement atténuer cet impact en utilisant une connexion réseau rapide à une matrice rapide de disques. Toutefois, il s’agit d’une proposition coûteuse. Dans le cas des opérations AWS, tous les disques sont distants et nécessitent une connectivité réseau. Les volumes éphémères perdent des données lorsque l’instance démarre ou s’arrête.
 
 #### Latence {#latency}
 
@@ -100,13 +100,13 @@ Il est difficile d’obtenir des chiffres de dimensionnement précis pour un mag
 
 Comme les fichiers binaires sont stockés dans la banque de données, chaque fichier binaire occupe de l’espace. La plupart des référentiels ont une taille inférieure à 100 Go. Cependant, vous pouvez rencontrer des référentiels de plus grande taille pouvant atteindre 1 To. En outre, pour effectuer le compactage hors ligne, vous avez besoin de suffisamment d’espace libre sur le volume pour réécrire le référentiel compacté en plus de la version précompactée. En règle générale, il convient d’avoir un disque faisant 1,5 fois la taille attendue pour le référentiel.
 
-Pour le référentiel, utilisez des SSD ou des disques avec un niveau d’IOPS supérieur à 3 000. Pour éviter que les IOPS n’introduisent des goulets d’étranglement en termes de performances, surveillez les niveaux d’attente des E/S du processeur pour détecter les premiers signes de problèmes.
+Pour le référentiel, utilisez des disques SSD ou des disques dont le niveau IOPS est supérieur à 3000. Pour éviter que les IOPS n’introduisent des goulets d’étranglement en termes de performances, surveillez les niveaux d’attente des E/S du processeur pour détecter les premiers signes de problèmes.
 
 [Obtenir le fichier](assets/aem_environment_sizingtool.xlsx)
 
 ## Réseau {#network}
 
-[!DNL Assets] comporte plusieurs cas d’utilisation qui rendent la performance du réseau plus importante que sur la plupart de nos projets [!DNL Experience Manager] Un client peut disposer d’un serveur rapide, mais si la connexion réseau n’est pas assez puissante pour soutenir la charge des utilisateurs qui chargent et téléchargent des ressources à partir du système, il semblera toujours lent. Il existe une bonne méthodologie pour déterminer le point d’étranglement dans la connexion réseau d’un utilisateur à [!DNL Experience Manager] at [[!DNL Experience Manager]  Considérations sur les ressources pour l’expérience utilisateur, le dimensionnement des instances, l’évaluation des workflows et la topologie de réseau](assets-network-considerations.md).
+[!DNL Assets] comporte plusieurs cas d’utilisation qui rendent la performance du réseau plus importante que sur la plupart de nos projets [!DNL Experience Manager]. Un client peut disposer d’un serveur rapide, mais si la connexion réseau n’est pas assez puissante pour soutenir la charge des utilisateurs qui chargent et téléchargent des ressources à partir du système, il semblera toujours lent. Il existe une bonne méthodologie pour déterminer le point d’étranglement dans la connexion réseau d’un utilisateur à [!DNL Experience Manager] at [[!DNL Experience Manager]  Considérations sur les ressources pour l’expérience utilisateur, le dimensionnement des instances, l’évaluation des workflows et la topologie de réseau](assets-network-considerations.md).
 
 ## WebDAV {#webdav}
 
@@ -124,13 +124,13 @@ Lors de l’analyse du temps moyen d’enregistrement des fichiers sur WebDAV, i
 
 Pour plus d’informations, voir [Dépannage [!DNL Experience Manager] application de bureau](https://helpx.adobe.com/fr/experience-manager/kb/troubleshooting-companion-app.html).
 
-## Restrictions {#limitations}
+## Limites {#limitations}
 
 Lorsque vous dimensionnez une mise en œuvre, il est important de garder à l’esprit les restrictions du système. Si la mise en œuvre proposée dépasse ces restrictions, utilisez des stratégies créatives, telles que le partitionnement des ressources entre plusieurs mises en œuvre d’Assets.
 
 La taille des fichiers n’est pas le seul facteur qui contribue aux problèmes de mémoire insuffisante. Cela dépend également des dimensions de l’image. Vous pouvez éviter les problèmes d’insuffisance de mémoire en fournissant une taille de tas supérieure lorsque vous démarrez AEM.
 
-En outre, vous pouvez modifier la propriété de taille de seuil de la variable `com.day.cq.dam.commons.handler.StandardImageHandler` dans Configuration Manager pour utiliser un fichier temporaire intermédiaire supérieur à zéro.
+En outre, vous pouvez modifier la propriété de taille de seuil du composant `com.day.cq.dam.commons.handler.StandardImageHandler` dans Configuration Manager pour utiliser un fichier temporaire intermédiaire supérieur à zéro.
 
 ## Nombre maximal de ressources {#maximum-number-of-assets}
 

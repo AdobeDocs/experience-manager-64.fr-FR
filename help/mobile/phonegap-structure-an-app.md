@@ -57,6 +57,6 @@ Chaque application AEM Mobile contient un répertoire qui héberge les fichiers 
 
 Dans ce répertoire, vous trouverez également un certain nombre de [Hooks Cordova](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide) qui peuvent être utilisés pour installer des modules externes, placer des fichiers de ressources à des emplacements spécifiques à leur plateforme, ainsi que d’autres actions qui doivent être exécutées dans le cadre de la génération. Remarque : au lieu de télécharger chaque module externe dans le cadre de la génération, vous pouvez suivre le modèle de l’application Kitchen Sink et [inclure le code source du module externe](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins) avec le reste de votre projet d’application.
 
-## Étapes suivantes {#the-next-steps}
+## Les étapes suivantes {#the-next-steps}
 
 Une fois que vous en savez plus sur la structure de l’application, reportez-vous à la section [Création et modification d’applications à l’aide de la console d’applications](/help/mobile/phonegap-apps-console.md).

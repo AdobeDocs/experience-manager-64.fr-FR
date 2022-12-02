@@ -1,7 +1,7 @@
 ---
 title: Enregistrer les formulaires sous forme de modèles
 seo-title: Save forms as templates
-description: 'Apprenez à créer des modèles à partir de formulaires contenant des données souvent requises. '
+description: Apprenez à créer des modèles à partir de formulaires contenant des données souvent requises.
 seo-description: Learn how to create templates from forms with data required repeatedly.
 uuid: 090c6271-4061-4adc-a063-9df4953b47ce
 contentOwner: khsingh

@@ -15,7 +15,7 @@ role: User
 source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '4247'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -27,7 +27,7 @@ Voici une bannière publicitaire avec une fenêtre contextuelle d’aperçu rapi
 
 ![chlimage_1-368](assets/chlimage_1-368.png)
 
-Voir les images interactives en action sur la page web ci-dessus en visitant la page :
+Consultez les images interactives en action sur la page web ci-dessus en visitant la page :
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=fr)
 
@@ -53,7 +53,7 @@ Le tutoriel permet d’illustrer les étapes d’intégration d’images interac
 
    Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/sites-administering/concepts.md).
 
-1. **(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives**. Personnalisez l’image utilisée pour représenter des zones réactives. Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse d’images interactives si vous envisagez plutôt d’utiliser le paramètre prédéfini de visionneuse d’images interactives prêt à l’emploi `Shoppable_Banner`.
+1. **(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives**. Personnalisez l’image utilisée pour représenter des zones réactives. Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse d’images interactives si vous envisagez plutôt d’utiliser le paramètre prédéfini de visionneuse d’images interactive prêt à l’emploi `Shoppable_Banner`.
 
 
    Voir [(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives](managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -82,7 +82,6 @@ Le tutoriel permet d’illustrer les étapes d’intégration d’images interac
 >
 >* Vous souhaitez ajouter de l’interactivité à votre image en déclenchant des aperçus rapides.
 >* Votre mise en œuvre d’AEM n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Path, Hybris ou Intershop. Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/sites-administering/concepts.md).
-
 >
 >Si votre mise en œuvre d’AEM utilise eCommerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
 
@@ -159,7 +158,7 @@ Consultez les exemples suivants d’URL d’aperçu rapide et les variables de z
 
 **Exemple**
 
-Vous pouvez appliquer la même approche utilisée dans les trois exemples ci-dessus à la page web de démonstration:
+Vous pouvez appliquer la même approche utilisée dans les trois exemples ci-dessus à la page web de démonstration :
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
@@ -218,7 +217,7 @@ Une fois le paramètre prédéfini de visionneuse enregistré, il est automatiqu
 
 Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l’étape suivante [Ajout de zones réactives à une bannière d’image](#adding-hotspots-to-an-image-banner).
 
-**Pour charger une bannière d’image**:
+**Pour charger une bannière d’image** :
 
 1. Chargez les bannières d’images que vous souhaitez rendre interactives.
 
@@ -325,7 +324,7 @@ Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web
 Voir [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md). Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.\
 Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages.](adding-dynamic-media-assets-to-pages.md)
 
-**Pour prévisualiser des images interactives**:
+**Pour prévisualiser des images interactives** :
 
 1. En mode Ressources, accédez à une image interactive existante que vous avez créée et appuyez pour la prévisualiser.
 1. Près du coin supérieur gauche de la page Aperçu, dans la **[!UICONTROL Contenu]** liste déroulante, appuyez sur **[!UICONTROL Visionneuses]**.
@@ -364,7 +363,7 @@ Notez que l’image des trois hommes est une balise `IMG` statique :
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-L’intégration revient simplement à supprimer la balise `IMG` et à la remplacer par le code intégré copié à partir d’AEM Assets. Vous pouvez voir le résultat dans l’URL suivante qui affiche l’image interactive Shoppable sur la page avec trois zones réactives en cercle :
+L’intégration revient simplement à supprimer la balise `IMG` et à la remplacer par le code intégré copié à partir d’AEM Assets. Vous pouvez voir le résultat dans l’URL suivante qui montre l’image interactive shoppable sur la page avec trois zones réactives en cercle :
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=fr)
 

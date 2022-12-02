@@ -881,7 +881,7 @@ Les deux stratégies utilisent la même communication interactive. Les sections 
 Le site de référence fournit également une communication interactive qui utilise Microsoft Dynamics comme source de données pour le modèle de données de formulaire. Effectuez les étapes suivantes pour configurer la communication interactive pour la présentation de l’assurance automobile :
 
 1. Connectez-vous à https://[author]:[port]/crx/de en tant qu’administrateur.
-1. Ouvrez le fichier `/apps/we-finance/components/ccrui/ccrui.jsp`
+1. Ouvrez le fichier `/apps/we-finance/components/ccrui/ccrui.jsp`.
 1. Définissez la valeur de `FormFieldRequestParameter`to `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Appuyez sur **Enregistrer tout**. Le site de référence est configuré pour utiliser la communication interactive qui utilise MS Dynamics comme source de données.
 

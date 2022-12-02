@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Utilisation de tâches{#working-with-tasks}
 
-Les tâches représentent des éléments de travail à effectuer sur le contenu. Lorsqu’une tâche vous est assignée, elle apparaît dans Workflow Inbox. Une valeur de tâche est indiquée dans la colonne Type pour les éléments de tâche.
+Les tâches représentent des éléments de travail à effectuer sur le contenu. Lorsqu’une tâche vous est assignée, elle apparaît dans la Boîte de réception de Workflow. Une valeur de tâche est indiquée dans la colonne Type pour les éléments de tâche.
 
 Les tâches sont également utilisées dans les projets pour déterminer le niveau de réalisation des tâches en cours, y compris des tâches de workflow.
 
@@ -49,7 +49,7 @@ Outre le suivi de l’avancée du projet, vous pouvez également afficher plus d
 
 #### Liste de tâches {#task-list}
 
-Cliquez sur les points de suspension (...) dans la mosaïque Tâches pour afficher la liste des tâches liées au projet. Les tâches sont divisées par workflow parent. Les détails de la tâche s’affichent avec les métadonnées, comme la date d’échéance, le cessionnaire, la priorité et l’état.
+Cliquez sur les points de suspension (...) dans la mosaïque Tâches pour afficher la liste des tâches liées au projet. Les tâches sont divisées par workflow parent. Les détails de la tâche s’affichent avec les métadonnées, comme la date d’échéance, la personne désignée, la priorité et le statut.
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -69,7 +69,7 @@ Dans les détails de la tâche, vous pouvez modifier ou ajouter des commentaires
 
 Vous pouvez ajouter de nouvelles tâches aux projets. Ces tâches apparaissent alors dans la mosaïque Tâches et vous pouvez les utiliser dans la boîte de réception des notifications.
 
-Pour ajouter une tâche :
+Pour ajouter une tâche, procédez comme suit :
 
 1. Dans le projet, accédez à la mosaïque **Tâches** et appuyez/cliquez sur l’icône +. La fenêtre **Ajouter une tâche** s’affiche.
 1. Entrez les informations relatives à la tâche. Le titre de la tâche et le groupe auquel elle est affectée sont obligatoires. Les informations complémentaires (par exemple, le chemin d’accès au contenu, la description, la priorité de la tâche et la date d’échéance) sont facultatives. En outre, vous pouvez utiliser l’onglet **Avancé** pour saisir le nom de la tâche, qui est utilisé pour nommer l’URL.

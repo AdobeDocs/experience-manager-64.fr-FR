@@ -8,11 +8,11 @@ exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
 source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 66%
+ht-degree: 74%
 
 ---
 
-# Assets Insights {#asset-insights}
+# Assets Insights {#asset-insights}
 
 Découvrez comment la fonction Statistiques sur les ressources vous permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des ressources utilisées dans des sites web tiers, des campagnes marketing et des solutions de création d’Adobe.
 
@@ -22,7 +22,7 @@ La fonction Statistiques sur les ressources capture les détails de l’activit�
 
 Pour que la fonction Statistiques sur les ressources capture les statistiques d’utilisation des ressources à partir d’un site web, vous devez inclure le code intégré de la ressource dans le code du site web.
 
-Pour afficher les statistiques d’utilisation des ressources, commencez par configurer la fonction afin qu’elle récupère les données de rapports d’[!DNL Adobe Analytics]. Pour plus d’informations, consultez la section [Configuration des statistiques sur les ressources](touch-ui-configuring-asset-insights.md). Pour utiliser cette fonctionnalité dans une installation on-premise, achetez [!DNL Adobe Analytics] licence séparément. Clients sur [!DNL Managed Services] recevoir [!DNL Analytics] licence groupée avec [!DNL Experience Manager]. Voir [Description du produit Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Pour afficher les statistiques d’utilisation des ressources, commencez par configurer la fonction afin qu’elle récupère les données de rapports d’[!DNL Adobe Analytics]. Pour plus d’informations, consultez [Configuration d’Assets Insights](touch-ui-configuring-asset-insights.md). Pour utiliser cette fonctionnalité dans une installation on-premise, achetez le licence [!DNL Adobe Analytics] séparément. Les clients [!DNL Managed Services] reçoivent une licence [!DNL Analytics] groupée avec [!DNL Experience Manager]. Consultez [Description du produit Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -44,8 +44,8 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
    * **[!UICONTROL Ressource]** : nombre de fois où la ressource faisait partie d’une collection ou d’une ressource composite
    * **[!UICONTROL Web et mobile]** : nombre de fois où la ressource faisait partie de sites web et d’applications
-   * **[!UICONTROL Social]** : nombre de fois où la ressource a été utilisée dans des solutions, comme Adobe Social et Adobe Campaign
-   * **[!UICONTROL Email]** : nombre de fois où la ressource a été utilisée dans des campagnes par email
+   * **[!UICONTROL Social]** : nombre de fois où la ressource a été utilisée dans des solutions, comme Adobe Social et Adobe Campaign
+   * **[!UICONTROL E-mail]** : nombre de fois où la ressource a été utilisée dans des campagnes par e-mail
 
    ![usage_statistics](assets/usage_statistics.png)
 
@@ -61,7 +61,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
    >
    >Contrairement aux données de la section solutions , la section Statistiques de performances affiche les données les plus récentes.
 
-1. Pour obtenir le code intégré de la ressource que vous incluez sur les sites web afin d’obtenir les données de performances, cliquez sur **[!UICONTROL Obtenir le code intégré]** au-dessous de la vignette de la ressource. Pour plus d’informations sur la manière d’inclure votre code intégré dans des pages web tierces, voir [Utilisation du dispositif de suivi de page et du code intégré dans les pages web](touch-ui-using-page-tracker.md).
+1. Pour obtenir le code intégré de la ressource que vous incluez sur les sites Web afin d’obtenir les données de performances, cliquez sur **[!UICONTROL Obtenir le code intégré]** au-dessous de la miniature de la ressource. Pour plus d’informations sur la manière d’inclure votre code intégré dans des pages web tierces, voir [Utilisation du dispositif de suivi de page et du code intégré dans les pages web](touch-ui-using-page-tracker.md).
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
@@ -75,7 +75,7 @@ Vous pouvez afficher les scores de toutes les ressources d’un dossier simultan
 
 ## Planification d’une tâche en arrière-plan {#scheduling-background-job}
 
-Assets Insights récupère les données d’utilisation des ressources des suites de rapports Adobe Analytics de manière périodique. Par défaut, Assets Insights exécute une tâche en arrière-plan toutes les 24 heures à 02h00 pour récupérer les données. Cependant, vous pouvez modifier la fréquence et l’heure en configurant le service de **[!UICONTROL tâche de synchronisation de rapport de performances de ressource Adobe CQ DAM]** via la console web.
+La fonction Assets Insights extrait les données d’utilisation des ressources à partir de suites de rapports Adobe Analytics de manière périodique. Par défaut, la fonction Assets Insights exécute une tâche en arrière-plan toutes les 24 heures, à 2 heures du matin, pour récupérer les données. Cependant, vous pouvez modifier la fréquence et l’heure en configurant le service de **[!UICONTROL tâche de synchronisation de rapport de performances de ressource de gestion des ressources numériques Adobe CQ]** via la console Web.
 
 1. Appuyez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Opérations > Console web]**.
 1. Ouvrez la configuration de service **[!UICONTROL Tâche de synchronisation des rapports sur les performances des ressources de la gestion des actifs numériques Adobe CQ]**.

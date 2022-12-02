@@ -51,7 +51,7 @@ Dans l’environnement de création, pour accéder à la console Membres afin de
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
-### Rechercher {#search-features}
+### Recherche {#search-features}
 
 Sélectionnez l’icône du panneau latéral sur le côté gauche de la `Members` pour ouvrir le panneau latéral de recherche.
 
@@ -92,7 +92,7 @@ Par défaut, l’ID est défini sur la valeur de l’adresse électronique requi
 *required*) Adresse électronique du membre.
 Le membre peut modifier son adresse email lors de la mise à jour de son profil. Si l&#39;identifiant est l&#39;adresse email par défaut, l&#39;identifiant sera *not* change lorsque l’adresse électronique est modifiée.
 
-* **[!UICONTROL Mot de passe]**
+* **[!UICONTROL Password]**
 (
 *required*) Mot de passe de connexion.
 
@@ -114,7 +114,7 @@ Le membre peut modifier son adresse email lors de la mise à jour de son profil.
 
 Dans les paramètres du compte, un administrateur de communauté peut
 
-* **[!UICONTROL État]**
+* **[!UICONTROL Statut]**
    * Interdit\
       Un membre ne parvient pas à se connecter, ce qui l’empêche d’afficher des pages ou de participer à des activités nécessitant une connexion. Ils peuvent encore visiter anonymement un site communautaire ouvert.
 

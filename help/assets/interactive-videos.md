@@ -13,7 +13,7 @@ role: User
 source-git-commit: af8a4d73d530c9438ff63a1b200be2d6e97c232c
 workflow-type: tm+mt
 source-wordcount: '5972'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -35,7 +35,7 @@ Pour visionner une vidéo interactive pouvant faire l’objet d’un achat en ac
 
 <!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
-![Image d’une vidéo interactive pouvant faire l’objet d’un achat](assets/chlimage_1-126.png) *Capture d’images vidéo à partir d’une vidéo interactive Shoppable.*
+![Image d’une vidéo interactive pouvant faire l’objet d’un achat](assets/chlimage_1-126.png) *Capture d’images vidéo à partir d’une vidéo interactive shoppable.*
 
 >[!NOTE]
 >
@@ -45,18 +45,18 @@ Pour visionner une vidéo interactive pouvant faire l’objet d’un achat en ac
 
 Lire la présentation en cours [création de vidéos interactives](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA). (7 minutes 30 secondes) Bien que la présentation vidéo porte la marque Assets on Demand, les principes et les étapes s’appliquent toujours à la vidéo interactive dans Adobe Experience Manager Assets.
 
-## Webinaire « Succès des clients Adobe »  {#adobe-customer-success-webinar}
+## Webinaire « Succès client Adobe »  {#adobe-customer-success-webinar}
 
-Le webinaire &quot;Utilisation de la vidéo interactive, du partage de liens et du partage YouTube dans Experience Manager Assets&quot; explique comment utiliser la vidéo interactive et d’autres fonctionnalités pour lier des événements pilotés par la conversion à votre contenu marketing vidéo.
+Le webinaire « Utilisation de la vidéo interactive, du partage de liens et du partage sur YouTube » dans Experience Manager Assets explique comment utiliser la vidéo interactive et d’autres fonctionnalités pour lier des événements qui dépendent de la conversion dans votre contenu marketing vidéo.
 
 >[!NOTE]
-[Utilisation de la vidéo interactive, du partage de liens et du partage YouTube dans Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+[Utilisation de la vidéo interactive, du partage de liens et du partage YouTube dans Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## Démarrage rapide : vidéos interactives {#quick-start-interactive-videos}
 
 La description du workflow étape par étape qui suit est conçue pour vous aider à démarrer et à utiliser rapidement les vidéos interactives dans Dynamic Media.
 
-Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel reposant sur cette page web de démonstration de démarrage qui n’est *pas encore* interactive:
+Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel reposant sur cette page web de démonstration de démarrage qui n’est *pas encore* interactive :
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=fr)
 
@@ -73,7 +73,7 @@ Lorsque vous avez terminé le tutoriel dans la dernière section Exemple, la pag
    *Cette étape n’est nécessaire que si toutes les conditions suivantes sont vraies*:
 
    * Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
-   * Votre mise en oeuvre de Experience Manager fonctionne *not* utilisez un framework d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir de n’importe quelle solution de commerce électronique, telle qu’IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Voir [Concepts d’eCommerce dans Experience Manager Assets](/help/sites-administering/concepts.md).
+   * Votre mise en œuvre d’Experience Manager *n’utilise pas* de framework d’intégration e-commerce pour extraire des données de produit dans Experience Manager à partir d’une solution de e-commerce telle qu’IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Consultez la section [Concepts d’eCommerce dans Experience Manager Assets](/help/sites-administering/concepts.md).
 
 1. **(Facultatif) Création d’un paramètre prédéfini de visionneuse de vidéos interactives** : personnalisez l’aspect et le comportement des différents composants qui constituent la visionneuse, comme la barre vidéo et les miniatures interactives.
 
@@ -86,11 +86,11 @@ Voir [Création d’un paramètre prédéfini de visionneuse](managing-viewer-pr
 
 1. **Ajout d’interactivité à votre vidéo** : ajoutez un ou plusieurs segments temporels à la vidéo. Ensuite, associez les vignettes dans ces segments temporels. Affectez chaque miniature d’image à une action telle qu’un lien hypertexte, un aperçu rapide ou un fragment d’expérience.
 
-   (La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.)
+   (La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.)
 
    Terminez en publiant les ressources vidéo interactives. La publication crée le code intégré ou l’URL que vous copiez et appliquez à la fin dans la page d’entrée de votre site web. Voir [Ajout d’interactivité à votre vidéo](#adding-interactivity-to-your-video).
 
-   Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
+   Consultez également le section [Publication de ressources](publishing-dynamicmedia-assets.md).
 
 1. **Ajout d’une vidéo interactive à votre site web ou à votre site web en Experience Manager**
 
@@ -105,8 +105,9 @@ Voir [Création d’un paramètre prédéfini de visionneuse](managing-viewer-pr
 >[!NOTE]
 Cette tâche n’est nécessaire que si les conditions ci-dessous sont vraies :
 * Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
-* Votre mise en oeuvre de Experience Manager fonctionne *not* utilisez un framework d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir de n’importe quelle solution de commerce électronique, telle qu’IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Voir [Concepts d’eCommerce dans Experience Manager Assets](/help/sites-administering/concepts.md).
-Si votre mise en œuvre d’Experience Manager utilise l’e-commerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
+* Votre mise en œuvre d’Experience Manager *n’utilise pas* de framework d’intégration e-commerce pour extraire des données de produit dans Experience Manager à partir d’une solution de e-commerce telle qu’IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Consultez la section [Concepts d’eCommerce dans Experience Manager Assets](/help/sites-administering/concepts.md).
+>
+Si votre mise en œuvre d’Experience Manager utilise l’e-commerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
 
 Commencez par identifier les variables dynamiques utilisées par votre mise en œuvre existante d’aperçu rapide pour faire correspondre les miniatures de produits à l’aperçu rapide des produits correspondants lors du processus de création de vidéo interactive.
 
@@ -135,7 +136,7 @@ Normalement, il n’est pas nécessaire d’utiliser des outils de débogage sp�
 
 Lorsque la surveillance de réseau est activée dans le navigateur, déclenchez l’aperçu rapide sur la page.
 
-Vous trouvez maintenant l’URL Ajax d’aperçu rapide dans le journal réseau. Copiez l’URL enregistrée pour l’analyse ultérieure. En règle générale, lorsque vous déclenchez l’aperçu rapide, de nombreuses requêtes sont envoyées au serveur. En règle générale, l’URL Ajax d’aperçu rapide est l’une des premières dans la liste. Elle possède une partie de chaîne de requête complexe ou un chemin d’accès, et son type de réponse MIME est `text/html`, `text/xml` ou `text/javascript`.
+Vous trouvez maintenant l’URL Ajax d’aperçu rapide dans le journal réseau. Copiez l’URL enregistrée pour l’analyse ultérieure. Généralement, lorsque vous déclenchez l’aperçu rapide, plusieurs requêtes sont envoyées au serveur. En règle générale, l’URL Ajax d’aperçu rapide est l’une des premières dans la liste. Elle possède une partie de chaîne de requête complexe ou un chemin d’accès, et son type de réponse MIME est `text/html`, `text/xml` ou `text/javascript`.
 
 Au cours de ce processus, il est important de parcourir différentes zones de votre site web, avec différentes catégories et types de produits. C’est pourquoi les URL d’aperçu rapide peuvent avoir des parties communes pour une catégorie de site web donnée, mais ne changent que si vous visitez une autre zone du site web.
 
@@ -215,7 +216,7 @@ Une fois que vous avez activé l’aperçu rapide de tous les produits disponibl
 * datafeed/glassware-233916550.json
 * datafeed/glassware-233916597.json
 
-En examinant les appels au serveur, vous voyez que les informations spécifiques au produit ne sont présentes que dans le chemin de requête. Vous notez également que la chaîne de requête n’est pas du tout utilisée et que deux types de données distincts sont impliqués :
+Lorsque vous observez ces appels de serveur, vous pouvez constater que les informations spécifiques au produit ne sont présentes que dans le chemin de la requête. Vous notez également que la chaîne de requête n’est pas du tout utilisée et que deux types de données distincts sont impliqués :
 
 * Le premier type concerne les bougies, les coussins, les meubles et la verrerie. Vous pouvez l’appeler « catégorie de produits ».
 * Le second type est un code de produit, comme 233916597. Vous pouvez considérer qu’il s’agit de la « SKU du produit ».
@@ -240,7 +241,7 @@ Vous avez la possibilité de créer votre propre paramètre prédéfini de visio
 
 Un paramètre prédéfini de visionneuse de vidéo interactive restitue correctement la vidéo et tous les segments de la chronologie que vous avez ajoutés. Il utilise également un exemple d’aperçu rapide par défaut lorsque vous cliquez sur une miniature de produit dans **[!UICONTROL Aperçu]** afin que vous puissiez tester son interactivité avant de publier.
 
-Une fois le paramètre prédéfini de la visionneuse enregistré, son état est automatiquement définit sur **[!UICONTROL On]**(Activé) dans la page Paramètres prédéfinis de la visionneuse. Cet état signifie qu’il est visible dans le composant Dynamic Media et chaque fois que vous prévisualisez une vidéo avec ce paramètre prédéfini. **** Veillez à également publier manuellement votre nouveau paramètre prédéfini de visionneuse.
+Une fois le paramètre prédéfini de la visionneuse enregistré, son état est automatiquement définit sur **[!UICONTROL Activé]** dans la page Paramètres prédéfinis de la visionneuse. Cet état signifie qu’il est visible dans le composant Dynamic Media et chaque fois que vous prévisualisez une vidéo avec ce paramètre prédéfini. **** Veillez à également publier manuellement votre nouveau paramètre prédéfini de visionneuse.
 
 Pour créer votre propre paramètre prédéfini de visionneuse de vidéos interactives, reportez-vous à la section [Création d’un paramètre prédéfini de visionneuse](managing-viewer-presets.md#creating-a-new-viewer-preset).
 
@@ -288,7 +289,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
 
    * Appuyez sur le bouton **[!UICONTROL Play]** pour pouvoir lire la vidéo. Lorsqu’un produit, un service ou un détail particulier que vous souhaitez mettre en évidence est affiché, appuyez sur **[!UICONTROL Ajouter un segment]** dans la barre d’outils. Répétez cette opération jusqu’à ce que vous ayez atteint la fin de la vidéo.
 
-      Pour chaque segment à ajouter, affectez-lui une ou plusieurs images miniatures, puis liez ces miniatures aux pages produit d’aperçu rapide pour que les clients puissent acheter ou aux pages web pour plus d’informations.
+      Pour chaque segment à ajouter, vous pouvez affecter une ou plusieurs images miniatures, puis lier ces miniatures à des pages de produit d’aperçu rapide pour que les clients procèdent à leurs achats ou accèdent à des pages web pour plus d’informations.
 
    * Appuyez sur le bouton **[!UICONTROL Play]** pour pouvoir lire la vidéo. Lorsqu’un produit, un service ou un détail particulier que vous souhaitez mettre en évidence est affiché, appuyez sur **[!UICONTROL Pause]** dans la barre d’outils. Appuyez sur **[!UICONTROL Ajouter le segment]**.
 
@@ -407,7 +408,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
     <tbody> 
       <tr> 
       <td>Pour associer l’image miniature sélectionnée à un aperçu rapide</td> 
-      <td><p>Sous Type d’action, appuyez sur <strong>Aperçu rapide</strong>.</p> <p>Si vous êtes un client Experience Manager Sites ou AEM eCommerce :</p> 
+      <td><p>Sous Type d’action, appuyez sur <strong>Aperçu rapide</strong>.</p> <p>Si vous êtes un client Experience Manager Sites ou AEM eCommerce :</p> 
        <ul> 
        <li>Notez que le champ de texte Valeur de SKU est prérenseigné avec le SKU (unité de gestion des stocks) du produit sélectionné, qui est un identifiant unique pour chaque produit ou service distinct que vous proposez. Le champ est renseigné automatiquement lorsque l’image est associée à un produit dans Experience Manager Commerce.</li> 
        <li>Si la SKU prérenseignée est incorrecte, appuyez ou cliquez sur l’icône Sélecteur de produit (loupe) pour afficher la page Sélectionner un produit. Appuyez ou cliquez sur le produit à utiliser, puis appuyez sur la coche dans le coin supérieur droit de la page pour revenir à l’éditeur de vidéo interactive.</li> 
@@ -434,14 +435,14 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
       </ul> 
        <ul> 
        <li>Indiquez la largeur et la hauteur du fragment d’expérience tel qu’il apparaît dans la vidéo.</li>
-       </ul><strong>Remarque</strong> : Les outils de partage sur les médias sociaux ne sont pas pris en charge dans la vidéo interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.</p></tr>&lt; 
+       </ul><strong>Remarque</strong> : les outils de partage sur les médias sociaux ne sont pas pris en charge dans la vidéo interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.</p></tr>&lt; 
       <tr> 
       <td>Pour modifier une action déjà attribuée à une image miniature</td> 
       <td>Dans un segment de chronologie, appuyez sur une image miniature qui comporte un lien de chaîne à droite de son libellé de texte. Le lien de chaîne indique qu’une action lui est attribuée. Appuyez sur le bouton <strong>Actions</strong> pour que vous puissiez apporter vos modifications.</td> 
       </tr> 
       <tr> 
       <td>Pour modifier le libellé de texte d’une image miniature</td> 
-      <td><p>Par défaut, le libellé de texte utilise le champ de métadonnées <code>Title</code> de l’image miniature. En l’absence de <code>Title</code>, le nom de fichier de l’image miniature est utilisé à la place, mais sans l’extension.</p> <p>Pour modifier le libellé de texte d’une vignette, sous l’onglet <strong>Actions</strong>, directement sous la ressource image qui s’affiche, entrez le texte de votre choix. Voir la capture d’écran ci-dessous.</p> <p>Le nouveau libellé n’est utilisé que par la visionneuse vidéo proprement dite et le texte des vignettes affiché dans le segment de la chronologie. La modification du libellé n’affecte pas le champ Titre des métadonnées de la miniature ni son nom de fichier.</p> </td> 
+      <td><p>Par défaut, le libellé de texte utilise le champ de métadonnées <code>Title</code> de l’image miniature. En l’absence de <code>Title</code>, le nom de fichier de l’image miniature est utilisé à la place, mais sans l’extension.</p> <p>Pour modifier le libellé de texte d’une vignette, sous l’onglet <strong>Actions</strong>, directement sous la ressource image qui s’affiche, entrez le texte de votre choix. Consultez la capture d’écran ci-dessous.</p> <p>Le nouveau libellé n’est utilisé que par la visionneuse vidéo proprement dite et le texte des vignettes affiché dans le segment de la chronologie. La modification du libellé n’affecte pas le champ Titre des métadonnées de la miniature ni son nom de fichier.</p> </td> 
       </tr> 
       <tr> 
       <td>Si vous souhaitez annuler une modification que vous avez effectuée,</td> 
@@ -463,7 +464,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
 
    * **[!UICONTROL Fusionner le segment]** : vous pouvez combiner deux segments adjacents (avec ou sans les miniatures de produit qui leur sont affectées) dans un seul segment.
 
-      Dans la chronologie, appuyez sur les segments contigus que vous souhaitez fusionner en un seul. Il n’existe aucune poignée de déplacement ovale bleue sur les deux segments sélectionnés dans la capture d’écran ci-dessous.
+      Dans la chronologie, appuyez sur les segments contigus que vous souhaitez fusionner en un seul. Il n’y a pas de poignées de déplacement ovales de couleur bleue sur les deux segments sélectionnés dans la capture d’écran ci-dessous.
 
       Appuyez sur **[!UICONTROL Fusionner le segment]** dans la barre d’outils.
    ![chlimage_1-134](assets/chlimage_1-134.png)
@@ -586,9 +587,9 @@ L’implémentation d’aperçus rapides existante représente normalement une c
 
 Ces appels peuvent ne pas représenter des appels d’API publiques indépendants qui peuvent être appelés par la logique de la page web depuis une étape arbitraire. À la place, il s’agit d’un appel chaîné où chaque étape suivante est masquée dans la dernière phase (rappel) de l’étape précédente.
 
-Alors que la vidéo interactive remplace l’étape 1, et partiellement l’étape 2, lorsqu’un utilisateur clique sur une vignette dans la vidéo interactive, cette interaction de l’utilisateur est gérée par la visionneuse. La visionneuse renvoie un événement à la page web qui contient toutes les données des miniatures ajoutées précédemment dans Experience Manager.
+Alors que la vidéo interactive remplace l’étape 1, et partiellement l’étape 2, lorsqu’un utilisateur clique sur une vignette dans la vidéo interactive, cette interaction de l’utilisateur est gérée par la visionneuse. La visionneuse renvoie un événement à la page web qui contient toutes les données des miniatures ajoutées précédemment dans Experience Manager.
 
-Dans un tel gestionnaire d’événements, le code frontal effectue les opérations suivantes :
+Dans ce type de gestionnaire d’événements, le code en front-end effectue les opérations suivantes :
 
 * Il écoute un événement émis par la vidéo interactive.
 * Il crée une URL d’aperçu rapide basée sur les données de la miniature.

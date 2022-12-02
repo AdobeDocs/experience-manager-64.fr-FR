@@ -22,7 +22,7 @@ Résumé des nouvelles fonctionnalités et améliorations de la version 6.4 d’
 
 AEM Forms comporte plusieurs nouvelles fonctionnalités et améliorations qui optimisent la création, la gestion et les expériences utilisateur avec des formulaires adaptatifs et des communications interactives.
 
-Lisez ci-après la présentation rapide des nouvelles fonctionnalités et améliorations. Consultez la documentation pour de plus amples informations. Vous pouvez également consulter les [notes de mise à jour](/help/release-notes/forms.md) d’AEM 6.4 Forms. Pour consulter la documentation complète d’AEM 6.4 Forms, rendez-vous sur [Guide d’AEM 6.4 Forms](/help/forms/home.md).
+Lisez ci-après la présentation rapide des nouvelles fonctionnalités et améliorations. Consultez la documentation pour de plus amples informations. Vous pouvez également consulter les [notes de mise à jour](/help/release-notes/forms.md) d’AEM 6.4 Forms. Pour consulter la documentation complète d’AEM 6.4 Forms, rendez-vous sur la page [Guide d’AEM 6.4 Forms](/help/forms/home.md).
 
 ## Communications interactives {#interactive-communications}
 
@@ -102,7 +102,7 @@ Vous pouvez maintenant utiliser des éléments et des règles FDM dans des fragm
 * Valider la valeur d’un élément/d’une variable
 * Exécuter des fonctions pour calculer la valeur d’une expression mathématique
 
-Pour en savoir plus, voir:
+Pour en savoir plus, voir :
 
 * [Textes dans les communications interactives](/help/forms/using/texts-interactive-communications.md)
 * [Conditions dans les communications interactives](/help/forms/using/conditions-interactive-communications.md)
@@ -188,7 +188,7 @@ Voici les améliorations apportées à l’application AEM Forms :
 * Les formulaires adaptatifs avec fragments à chargement différé sont pris en charge dans l’application AEM Forms.
 * Les formulaires adaptatifs avec modèle de données de formulaire sont pris en charge dans l’application AEM Forms.
 
-## Document Security {#document-security}
+## Document Security {#document-security}
 
 ![aem-forms-document-security-](assets/aem-forms-document-security-.png)
 
@@ -238,15 +238,15 @@ AEM Forms peut être installé à l’aide de n’importe quelle combinaison de
    <td>Bases de données</td> 
    <td> 
     <ul> 
-     <li>Microsoft SQL Server 2016</li> 
+     <li>Microsoft SQL Server 2016</li> 
      <li>MySQL 5.7.19 et versions ultérieures</li> 
      <li>IBM DB2 11.1</li> 
      <li>Architecture Oracle Multitenant</li> 
     </ul> </td> 
    <td> 
     <ul> 
-     <li>Microsoft SQL Server 2012<br /> </li> 
-     <li>Microsoft SQL Server 2014</li> 
+     <li>Microsoft SQL Server 2012<br /> </li> 
+     <li>Microsoft SQL Server 2014</li> 
      <li>MySQL 5.5</li> 
      <li>IBM DB2 10.5<br /> </li> 
     </ul> </td> 

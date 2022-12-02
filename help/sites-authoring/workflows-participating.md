@@ -13,7 +13,7 @@ exl-id: 7b645497-ddbf-403c-9e78-5e845f6bda50
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -73,9 +73,9 @@ Pour cette action, vous pouvez indiquer :
 
 Vous pouvez terminer une étape de participant à partir des éléments suivants :
 
-* [la boîte de réception](#completing-a-participant-step-inbox)
-* [l’éditeur de page](#completing-a-participant-step-page-editor)
-* [Chronologie](#completing-a-participant-step-timeline)
+* [La boîte de réception](#completing-a-participant-step-inbox)
+* [L’éditeur de page](#completing-a-participant-step-page-editor)
+* [La chronologie](#completing-a-participant-step-timeline)
 * l’[ouverture d’un élément de workflow pour en afficher les détails](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Réalisation d’une étape de participant – Boîte de réception {#completing-a-participant-step-inbox}
@@ -132,9 +132,9 @@ Pour cette action, vous pouvez indiquer :
 
 Vous pouvez déléguer une étape de participant à partir de :
 
-* [la boîte de réception](#delegating-a-participant-step-inbox)
-* [l’éditeur de page](#delegating-a-participant-step-page-editor)
-* [Chronologie](#delegating-a-participant-step-timeline)
+* [La boîte de réception](#delegating-a-participant-step-inbox)
+* [L’éditeur de page](#delegating-a-participant-step-page-editor)
+* [La chronologie](#delegating-a-participant-step-timeline)
 * l’[ouverture d’un élément de workflow pour en afficher les détails](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Délégation d’une étape de participant – Boîte de réception {#delegating-a-participant-step-inbox}
@@ -182,9 +182,9 @@ Pour cette action, vous pouvez indiquer :
 
 Vous pouvez revenir d’une étape de participant en arrière à partir de :
 
-* [la boîte de réception](#performing-step-back-on-a-participant-step-inbox)
-* [l’éditeur de page](#performing-step-back-on-a-participant-step-page-editor)
-* [Chronologie](#performing-step-back-on-a-participant-step-timeline)
+* [la boîte de réception ;](#performing-step-back-on-a-participant-step-inbox)
+* [L’éditeur de page](#performing-step-back-on-a-participant-step-page-editor)
+* [La chronologie](#performing-step-back-on-a-participant-step-timeline)
 * l’[ouverture d’un élément de workflow pour en afficher les détails](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Revenir d’une étape de participant en arrière – Boîte de réception {#performing-step-back-on-a-participant-step-inbox}
@@ -220,7 +220,7 @@ Vous pouvez également utiliser la chronologie pour revenir à une étape préc�
 
    ![wf-70](assets/wf-70.png)
 
-1. Sélectionnez **Restaurer** pour confirmer l’action.
+1. Sélectionnez **Restaurer** pour confirmer l’action.
 
 ### Ouverture d’un élément de workflow pour afficher les détails (et réaliser des actions) {#opening-a-workflow-item-to-view-details-and-take-actions}
 
@@ -246,8 +246,8 @@ Les détails de workflow s’affichent dans des onglets, et les actions appropri
 
 Vous pouvez ouvrir les détails de l’élément de travail à partir de :
 
-* [la boîte de réception](#performing-step-back-on-a-participant-step-inbox)
-* [l’éditeur de page](#performing-step-back-on-a-participant-step-page-editor)
+* [la boîte de réception ;](#performing-step-back-on-a-participant-step-inbox)
+* [l’éditeur de page ;](#performing-step-back-on-a-participant-step-page-editor)
 
 #### Ouverture des détails de workflow – Boîte de réception {#opening-workflow-details-inbox}
 
@@ -270,7 +270,7 @@ Pour ouvrir un élément de workflow et en afficher les détails :
 1. Si nécessaire, choisissez l’action appropriée, saisissez les informations et confirmez avec **OK** (ou **Annuler**).
 1. Utilisez **Enregistrer** ou **Annuler** pour quitter.
 
-### Affichage de la charge utile de workflow (plusieurs ressources) {#viewing-the-workflow-payload-multiple-resources}
+### Affichage du payload de workflow (plusieurs ressources) {#viewing-the-workflow-payload-multiple-resources}
 
 Vous pouvez afficher les détails de la charge utile associée à l’instance de workflow. Au départ, les ressources du module sont affichées, puis vous pouvez faire un zoom avant pour afficher les pages individuelles.
 
@@ -284,4 +284,4 @@ Pour afficher la charge utile et les ressources de l’instance de workflow :
 
    ![wf-78](assets/wf-78.png)
 
-1. Les liens peuvent être utilisés pour ouvrir les pages individuelles.
+1. Les liens peuvent être utilisés pour ouvrir individuellement les pages.

@@ -54,7 +54,6 @@ Pour en savoir plus sur **Content Services**, voir [Présentation de Content Ser
 >
 >* [Modèles](/help/sites-developing/templates.md)
 >* [Composants](/help/sites-developing/components.md)
-
 >
 
 

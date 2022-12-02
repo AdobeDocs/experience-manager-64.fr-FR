@@ -13,7 +13,7 @@ exl-id: 3da30cb4-39b2-4495-9e8b-93567b73b644
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
@@ -32,13 +32,13 @@ Dans le cadre de cet exercice, toutes les pages sont basées sur un modèle simp
 
 1. Dans le volet d’exploration du CRXDE Lite
 
-   * select `/apps/an-scf-sandbox/templates`
+   * sélectionnez `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Créer > Créer un modèle]**
 
 1. Dans la boîte de dialogue Créer un modèle, entrez les valeurs ci-dessous et cliquez ensuite sur **[!UICONTROL Suivant]** :
 
-   * Libellé: `playpage`
-   * Titre: `An SCF Sandbox Play Template`
+   * Libellé : `playpage`
+   * Titre : `An SCF Sandbox Play Template`
    * Description: `An SCF Sandbox template for play pages`
    * Type de ressource: `an-scf-sandbox/components/playpage`
    * Classement : &lt;leave as=&quot;&quot; default=&quot;&quot;>
@@ -87,14 +87,14 @@ Dans le cadre de cet exercice, toutes les pages sont basées sur un modèle simp
 
 Créez le *component* qui définit le contenu et effectue le rendu de toutes les pages créées en fonction de la variable [modèle playpage](#createthepagetemplate).
 
-1. Dans CRXDE Lite, cliquez avec le bouton droit de la souris **`/apps/an-scf-sandbox/components`** et cliquez sur **[!UICONTROL Créer > Composant]**.
+1. Dans CRXDE Lite, cliquez avec le bouton droit sur **`/apps/an-scf-sandbox/components`**, puis cliquez sur **[!UICONTROL Créer > Composant]**.
 1. En définissant le nom du noeud (libellé) sur *playpage*, le chemin d’accès au composant est
 
    `/apps/an-scf-sandbox/components/playpage`
 
    qui correspond au type de ressource du modèle de page de lecture (éventuellement moins l’initial) **`/apps/`** partie du chemin).
 
-   Dans le **[!UICONTROL Créer un composant]** Dans la boîte de dialogue, saisissez les valeurs de propriété suivantes :
+   Dans la boîte de dialogue **[!UICONTROL Créer un composant]**, saisissez les valeurs de propriété suivantes :
 
    * Libellé : **playpage**
    * Titre : **Un composant SCF Sandbox Play**

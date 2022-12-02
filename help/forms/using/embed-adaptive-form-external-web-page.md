@@ -12,7 +12,7 @@ exl-id: 84a46197-9933-4b94-a8e3-e7baf9c644b1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 66%
+ht-degree: 87%
 
 ---
 
@@ -27,13 +27,13 @@ Vous pouvez [Incorporer le formulaire adaptatif dans AEM Sites](/help/forms/usin
 Effectuez les étapes suivantes avant d’inclure un formulaire adaptatif dans un site Web externe : :
 
 * Publiez le formulaire adaptatif sur une instance de publication AEM.
-* Créez ou identifiez une page Web sur votre site Web pour héberger le formulaire adaptatif. Assurez-vous que la page web peut [lecture de fichiers jQuery à partir d’un CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) ou contient une copie locale de jQuery incorporée. jQuery est nécessaire pour effectuer le rendu d’un formulaire adaptatif.
+* Créez ou identifiez une page Web sur votre site Web pour héberger le formulaire adaptatif. Assurez-vous que la page web peut [lire les fichiers jQuery à partir d’un réseau CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) ou dispose d’une copie locale du fichier jQuery incorporé. jQuery est nécessaire pour effectuer le rendu d’un formulaire adaptatif.
 * Lorsque le serveur AEM et la page Web se trouvent dans des domaines différents, procédez comme indiqué dans la section ci-dessous [pour permettre à AEM Forms de diffuser des formulaires adaptatifs sur un site interdomaines](#cross-domain-sites).
 * [Configuration du proxy inverse](#reveseproxy) pour activer la communication entre la page externe et le serveur AEM Forms.
 
 ## Incorporation d’un formulaire adaptatif {#embed-adaptive-form}
 
-Vous pouvez incorporer un formulaire adaptatif en insérant quelques lignes de code JavaScript dans la page web. L’API dans le code envoie une requête HTTP au serveur AEM pour les ressources de formulaire adaptatif et injecte le formulaire adaptatif dans le conteneur de formulaire spécifié. Voici un exemple de code pour incorporer un formulaire adaptatif à une page externe. N’utilisez pas le code tel qu’il se trouve dans un environnement de production. Personnalisez le code pour l’adapter à votre site web, comme avec un iFrame pour les sites web qui utilisent leur propre version de jQuery. L’utilisation d’iFrame permet d’éviter les conflits dans les versions jQuery :
+Vous pouvez incorporer un formulaire adaptatif en insérant quelques lignes de code JavaScript dans la page web. L’API dans le code envoie une requête HTTP au serveur AEM pour les ressources de formulaire adaptatif et injecte le formulaire adaptatif dans le conteneur de formulaire spécifié. Voici un exemple de code pour incorporer un formulaire adaptatif à une page externe. N’utilisez pas le code tel qu’il se trouve dans un environnement de production. Personnalisez le code pour l’adapter à votre site web, comme avec un iFrame pour les sites web qui utilisent leur propre version de jQuery. L’utilisation d’iFrame permet d’éviter les conflits dans les versions jQuery :
 
 
 1. Incorporez le code suivant à une page web de votre site web :
@@ -99,10 +99,10 @@ Vous pouvez incorporer un formulaire adaptatif en insérant quelques lignes de c
 
 1. Dans le code incorporé :
 
-   * Modifier la valeur de la variable `options.path` avec le chemin d’accès à l’URL de publication du formulaire adaptatif. Si le serveur AEM s’exécute sur un chemin de contexte, assurez-vous que l’URL inclut ce chemin. Par exemple, le code et le formulaire adaptatif ci-dessus résident sur le même serveur AEM Forms, l’exemple utilise donc le chemin de contexte du formulaire adaptatif /content/forms/af/locbasic.html.
+   * Remplacez la valeur de la variable `options.path` par le chemin d’accès de l’URL de publication du formulaire adaptatif. Si le serveur AEM s’exécute sur un chemin de contexte, assurez-vous que l’URL inclut ce chemin. Par exemple, le code et le formulaire adaptatif ci-dessus résident sur le même serveur AEM Forms, l’exemple utilise donc le chemin de contexte du formulaire adaptatif /content/forms/af/locbasic.html.
    * Remplacez `options.dataRef` par les attributs à transmettre avec l’URL. Vous pouvez utiliser la variable dataref pour [pré-remplir un formulaire adaptatif](/help/forms/using/prepopulate-adaptive-form-fields.md).
    * Remplacez `options.themePath` par le chemin d’accès à un thème différent de celui configuré dans le formulaire adaptatif. Vous pouvez également spécifier le chemin d’accès au thème à l’aide de l’attribut de requête.
-   * `CSS_Selector` est le sélecteur CSS du conteneur de formulaire dans lequel le formulaire adaptatif est incorporé. Par exemple, la classe css .customafsection est le sélecteur CSS de l’exemple ci-dessus.
+   * `CSS_Selector` est le sélecteur CSS du conteneur de formulaire dans lequel le formulaire adaptatif est incorporé. Par exemple, la classe CSS .customafsection est le sélecteur CSS dans l’exemple ci-dessus.
 
 Le formulaire adaptatif est incorporé dans la page Web. Vous pouvez observer ce qui suit dans le formulaire adaptatif incorporé :
 
@@ -117,7 +117,7 @@ Le formulaire adaptatif est incorporé dans la page Web. Vous pouvez observer ce
 
 La page Web externe qui incorpore le formulaire adaptatif envoie les requêtes au serveur AEM, qui se trouve généralement derrière le pare-feu dans un réseau privé. Pour garantir que les requêtes sont dirigées de manière sécurisée vers le serveur AEM, il est recommandé de configurer un serveur de proxy inverse.
 
-Examinons un exemple de la manière dont vous pouvez configurer un serveur de proxy inverse Apache 2.4 sans répartiteur. Dans cet exemple, vous allez héberger le serveur AEM avec `/forms` chemin et mappage du contexte `/forms` pour le proxy inverse. Cela garantit que toute demande de `/forms` sur le serveur Apache sont dirigés vers l’instance AEM. Cette topologie permet de réduire le nombre de règles au niveau de la couche du Dispatcher, car toutes les requêtes affectées du préfixe `/forms` routage vers le serveur AEM.
+Examinons un exemple de la manière dont vous pouvez configurer un serveur de proxy inverse Apache 2.4 sans répartiteur. Dans cet exemple, vous allez héberger le serveur AEM avec le chemin de contexte `/forms` et mapper `/forms` pour le proxy inverse. Cela garantit que toute requête pour `/forms` sur le serveur Apache est redirigée vers une instance AEM. Cette topologie permet de réduire le nombre de règles au niveau de la couche du Dispatcher, car toute requête précédée de `/forms` dirige vers le serveur AEM.
 
 1. Ouvrez le fichier de configuration `httpd.conf` et supprimez les commentaires des lignes de code suivantes. Vous pouvez également ajouter ces lignes de code dans le fichier.
 
@@ -126,16 +126,16 @@ Examinons un exemple de la manière dont vous pouvez configurer un serveur de pr
     LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
-1. Configurez des règles de proxy en ajoutant les lignes de code suivantes dans la variable `httpd-proxy.conf` fichier de configuration.
+1. Configurez les règles de proxy en ajoutant les lignes de code suivantes dans le fichier de configuration `httpd-proxy.conf`.
 
    ```
    ProxyPass /forms https://[AEM_Instance]/forms 
     ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   Remplacer `[AEM_Instance]` avec l’URL de publication du serveur AEM dans les règles.
+   Remplacez `[AEM_Instance]` par l’URL de publication du serveur AEM dans les règles.
 
-Si vous ne montez pas le serveur AEM sur un chemin de contexte, les règles de proxy de la couche Apache seront les suivantes :
+Si vous ne montez pas le serveur AEM sur un chemin de contexte, les règles de proxy au niveau de la couche Apache sont les suivantes :
 
 ```java
 ProxyPass /content https://<AEM_Instance>/content
@@ -152,7 +152,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Si vous configurez une autre topologie, veillez à ajouter les URL d’envoi, de préremplissage et autres à la liste autorisée au niveau de la couche du Dispatcher.
+>Si vous configurez une autre topologie, assurez-vous de placer les URL d’envoi, de pré-remplissage et autres sur la liste autorisée au niveau de la couche du Dispatcher.
 
 ## Bonnes pratiques {#best-practices}
 
@@ -162,10 +162,10 @@ Lorsque vous incorporez un formulaire adaptatif dans une page Web, prenez en com
 * Assurez-vous que le conteneur du formulaire dans la page Web utilise toute la largeur de la fenêtre. Cela permet aux règles CSS configurées pour les appareils mobiles de fonctionner sans aucune modification. Si le conteneur de formulaire ne prend pas toute la largeur de la fenêtre, vous devez écrire un CSS personnalisé pour que le formulaire s’adapte aux différents appareils mobiles.
 * Utilisation  [getData](https://helpx.adobe.com/fr/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API pour obtenir la représentation XML ou JSON des données de formulaire dans le client.
 * Utilisation [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API pour décharger le formulaire adaptatif du DOM HTML.
-* Configurez l’en-tête access-control-origin lors de l’envoi de la réponse du serveur AEM.
+* Configurez l’en-tête access-control-origin lors de l’envoi de la réponse à partir du serveur AEM.
 
 ## Activer AEM Forms pour diffuser des formulaires adaptatifs vers un site interdomaines  {#cross-domain-sites}
 
-1. Sur AEM instance de publication, accédez à AEM Web Console Configuration Manager à l’adresse `http://[server]:[port]/system/console/configMgr`.
+1. Sur l’instance de publication AEM, accédez au gestionnaire de la console web AEM à l’adresse `http://[server]:[port]/system/console/configMgr`.
 1. Recherchez et ouvrez le **Référent Apache Sling** Configuration des filtres.
 1. Dans le champ **Hôtes autorisés**, spécifiez le domaine dans lequel la page Web se trouve. Cette opération permet à l’hôte de créer des requêtes POST vers le serveur AEM. Vous pouvez également utiliser l’expression régulière pour spécifier une série de domaines d’application externes.

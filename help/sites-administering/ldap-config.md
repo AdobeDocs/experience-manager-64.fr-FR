@@ -246,7 +246,7 @@ Les certificats auto-signés peuvent être utilisés lors de la configuration d�
 
 1. Assurez-vous qu’une bibliothèque SSL est installée et fonctionne. Cette procédure prend OpenSSL comme exemple.
 
-1. Créez un fichier de configuration OpenSSL personnalisée (cnf). Vous pouvez l’effectuer en copiant le fichier de configuration **openssl.cnf ** par défaut et en le personnalisant. Sur les systèmes UNIX, ce fichier se trouve généralement dans `/usr/lib/ssl/openssl.cnf`.
+1. Créez un fichier de configuration OpenSSL personnalisée (cnf). Vous pouvez l’effectuer en copiant le fichier de configuration **openssl.cnf** par défaut et en le personnalisant. Sur les systèmes UNIX, ce fichier se trouve généralement dans `/usr/lib/ssl/openssl.cnf`.
 
 1. Créez la clé racine CA en exécutant la commande ci-dessous sur un terminal :
 

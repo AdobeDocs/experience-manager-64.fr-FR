@@ -114,7 +114,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Pris en charge</p> </td> 
   </tr> 
   <tr> 
-   <td><p>MongoDB Enterprise 3.4 </p> </td> 
+   <td><p>MongoDB Enterprise 3.4</p> </td> 
    <td><p>Référentiel Microkernel</p> </td> 
    <td><p>Pris en charge</p> </td> 
   </tr> 
@@ -463,11 +463,11 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td> 
   </tr> 
   <tr> 
-   <td>Microsoft® Office 2016</td> 
+   <td>Microsoft® Office 2016</td> 
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td> 
   </tr> 
   <tr> 
-   <td>Microsoft® Office 2013</td> 
+   <td>Microsoft® Office 2013</td> 
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td> 
   </tr> 
   <tr> 
@@ -475,27 +475,27 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
    <td>WP, WPD</td> 
   </tr> 
   <tr> 
-   <td>Microsoft® Office Visio 2013</td> 
+   <td>Microsoft® Office Visio 2013</td> 
    <td>VSD, VSDX</td> 
   </tr> 
   <tr> 
-   <td>Microsoft® Office Visio 2016</td> 
+   <td>Microsoft® Office Visio 2016</td> 
    <td>VSD, VSDX</td> 
   </tr> 
   <tr> 
-   <td>Microsoft® Publisher 2013</td> 
+   <td>Microsoft® Publisher 2013</td> 
    <td>PUB</td> 
   </tr> 
   <tr> 
-   <td>Microsoft® Publisher 2016</td> 
+   <td>Microsoft® Publisher 2016</td> 
    <td>PUB</td> 
   </tr> 
   <tr> 
-   <td>Microsoft® Project 2013</td> 
+   <td>Microsoft® Project 2013</td> 
    <td>MPP</td> 
   </tr> 
   <tr> 
-   <td>Microsoft® Project 2016</td> 
+   <td>Microsoft® Project 2016</td> 
    <td>MPP</td> 
   </tr> 
   <tr> 
@@ -515,7 +515,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 >
 >En outre :
 >
->* PDF Generator requiert la version 32 bits de [Acrobat 2017 Classic track version 17.011.30078 ou ultérieure](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) pour effectuer la conversion.
+>* PDF Generator nécessite la version 32 bits d’[Acrobat 2017 Suivi classique version 17.011.30078 ou ultérieure](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) pour effectuer la conversion.
 >* PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion.
 >* PDF Generator ne prend pas en charge Microsoft Office 365.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows, Linux et Solaris.

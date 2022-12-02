@@ -1,5 +1,5 @@
 ---
-title: Compatibilité descendante dans AEM 6.4
+title: Compatibilité descendante dans AEM 6.4
 seo-title: Backward Compatibility in AEM 6.4
 description: Découvrez comment faire en sorte que vos applications et configurations restent compatibles avec AEM 6.4
 seo-description: Learn how to keep your apps and configurations compatible with AEM 6.4
@@ -18,7 +18,7 @@ ht-degree: 76%
 
 ---
 
-# Compatibilité descendante dans AEM 6.4{#backward-compatibility-in-aem}
+# Compatibilité descendante dans AEM 6.4{#backward-compatibility-in-aem}
 
 ## Présentation {#overview}
 

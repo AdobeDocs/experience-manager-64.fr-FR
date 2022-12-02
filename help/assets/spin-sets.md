@@ -11,7 +11,7 @@ role: User
 source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
 source-wordcount: '1923'
-ht-degree: 65%
+ht-degree: 71%
 
 ---
 
@@ -29,15 +29,15 @@ Les visionneuses à 360° sont désignées par une bannière contenant le mot **
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](managing-assets-touch-ui.md).
 
-Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
+Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
 | Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
-| Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
+| Nombre maximal de lignes/colonnes par visionneuse 2D | 12 à 18 images par visionneuse | 1000 |
 
-Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
+Consultez également la section [Limites de Dynamic Media](/help/assets/limitations.md).
 
-## Démarrage rapide : Visionneuse à 360° {#quick-start-spin-sets}
+## Démarrage rapide : visionneuses à 360° {#quick-start-spin-sets}
 
 Pour démarrer rapidement, procédez comme suit :
 
@@ -55,7 +55,7 @@ Pour démarrer rapidement, procédez comme suit :
    >
    >Vous pouvez également créer des visionneuses à 360° automatiquement via [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
    >
-   >*Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources et ne sont disponibles que dans le mode Dynamic Media - Scene7 .*.
+   >*Les ensembles par lot sont créés par le système IPS (Image Exploitation System) dans le cadre de l’ingestion des ressources et sont disponibles uniquement dans Dynamic Media en mode Scene7*.
 
 1. Configurez des [paramètres prédéfinis de visionneuse à 360°](managing-viewer-presets.md), selon les besoins.
 
@@ -111,15 +111,15 @@ L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a un
 >
 >Vous pouvez également créer des visionneuses à 360° automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 >
->Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources et sont disponibles uniquement en mode Dynamic Media - Scene7.
+>Les ensembles par lot sont créés par le système IPS (Image Exploitation System) dans le cadre de l’ingestion des ressources et sont disponibles uniquement dans Dynamic Media en mode Scene7.
 >
 >Voir « Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360° » dans [Configuration de Dynamic Media – mode Scene7](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
-Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
+Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
 | Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
-| Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
+| Nombre maximal de lignes/colonnes par visionneuse 2D | 12 à 18 images par visionneuse | 1000 |
 
 Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
@@ -221,4 +221,4 @@ Voir aussi [Aperçu des ressources](previewing-assets.md).
 
 ## Publication d’une visionneuse à 360° {#publishing-spin-sets}
 
-Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
+Consultez également le section [Publication de ressources](publishing-dynamicmedia-assets.md).

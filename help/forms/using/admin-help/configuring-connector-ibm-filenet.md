@@ -13,13 +13,13 @@ exl-id: 3a3d59c2-6811-4513-8384-aa77fdc38686
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Configuration de Connector for IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-Le connecteur pour IBM FileNet permet la communication entre AEM forms et IBM FileNet. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
+Le connecteur pour IBM FileNet permet la communication entre AEM forms et IBM FileNet. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
@@ -80,11 +80,11 @@ Vous pouvez configurer le fournisseur de services de référentiel à utiliser a
 
 Les options suivantes sont disponibles :
 
-**Nom du fournisseur de référentiel actuel :** Nom du fournisseur de services de référentiel actuel.
+**Nom du fournisseur de référentiels actuel :** le nom du fournisseur de référentiels actuel.
 
-**Fournisseur de référentiel IBM FileNet :** Transforme le fournisseur de référentiel FileNet en fournisseur pour le référentiel. Cette option est obsolète.
+**Fournisseur de référentiels IBM FileNet :** fait du fournisseur de référentiels FileNet le fournisseur du référentiel. Cette option est obsolète.
 
-**fournisseur de référentiel :** Transforme le fournisseur de référentiel natif en fournisseur pour le référentiel
+**fournisseur de référentiels :** fait du fournisseur de référentiels natif le fournisseur du référentiel.
 
 >[!NOTE]
 >

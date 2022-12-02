@@ -12,7 +12,7 @@ role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Utilisez la fonctionnalité de code réactif lorsque vous souhaitez partager le 
 
 Cette fonction a un sens si votre site web se trouve sur un composant WCM tiers. Cependant, si votre site web se trouve sur AEM à la place, un serveur d’images hors site effectue le rendu de l’image et le communique à la page web.
 
-Voir aussi [Incorporation de la visionneuse de vidéos dans une page web.](embed-code.md)
+Consultez également la section [Incorporation de la visionneuse de vidéos dans une page web.](embed-code.md)
 
 Voir aussi [Liaison d’URL à une application web.](linking-urls-to-yourwebapplication.md)
 
@@ -40,7 +40,7 @@ Voir aussi [Liaison d’URL à une application web.](linking-urls-to-yourwebappl
    >
    >La ressource sélectionnée *et* le paramètre d’image prédéfini ou le paramètre de visionneuse prédéfini sélectionné doivent être publiés pour que le bouton **[!UICONTROL URL]** ou **[!UICONTROL RESS]** soit disponible.
    >
-   >Dynamic Media - Le mode hybride requiert la publication de paramètres d’image prédéfinis ; Dynamic Media : le mode Scene7 publie automatiquement les paramètres d’image prédéfinis.
+   >Le mode hybride de Dynamic Media nécessite de publier des paramètres prédéfinis d’image ; le mode Scene7 de Dynamic Media publie automatiquement les paramètres prédéfinis d’image.
 
 1. Appuyez sur **[!UICONTROL RESS]**.
 

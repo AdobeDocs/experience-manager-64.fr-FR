@@ -38,7 +38,7 @@ Un modèle sert de fondement pour une page.
 
 Pour créer une page, le modèle doit être copié (arborescence de noeuds) **/apps/&lt;myapp>/templates/&lt;mytemplate>**) à la position correspondante dans l’arborescence du site : c’est ce qui se passe si une page est créée à l’aide de la variable **Sites web** .
 
-Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling: resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
+Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling:resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
 
 ## Structure d’un modèle {#structure-of-a-template}
 
@@ -62,7 +62,6 @@ Ce noeud contient *un jcr:content (cq:PageContent)* Noeud servant de base au noe
 >
 >* [Modèles](/help/sites-developing/templates.md)
 >* [Composants](/help/sites-developing/components.md)
-
 >
 
 

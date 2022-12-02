@@ -13,7 +13,7 @@ exl-id: f29868e3-d05c-4898-94d1-0c77ab6b72eb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ AEM vous permet de générer des objets graphiques incorporant du texte extrait 
 
 Pour ce faire, vous pouvez également charger et utiliser vos propres polices.
 
-Actuellement, toutes les implémentations de la plate-forme Java prennent en charge les polices [TrueType](https://en.wikipedia.org/wiki/Truetype).
+Actuellement, toutes les implémentations de la plateforme Java prennent en charge les polices [TrueType](https://fr.wikipedia.org/wiki/TrueType).
 
-1. Ouvrez CRXDE Lite et accédez au dossier de l’application de projet :
+1. Ouvrez CRXDE Lite et accédez au dossier de votre application de projet :
 
    `/apps/<your-project>/`
 
-1. Sous `/apps/<your-project>/` créez un noeud :
+1. Sous `/apps/<your-project>/`, créez un nœud :
 
    * **Nom** : `fonts`
    * **Type** : `sling:Folder`
@@ -42,9 +42,9 @@ Actuellement, toutes les implémentations de la plate-forme Java prennent en cha
    >
    >Les fichiers de polices du référentiel doivent comporter le suffixe `*.ttf` ou `*.TTF`.
 
-1. Mettez à jour la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Ajoutez le chemin d’accès à votre dossier de polices. c’est-à-dire `/apps/<your-project>/fonts`.
+1. Mettez à jour la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Ajoutez le chemin d’accès à votre dossier de polices, à savoir `/apps/<your-project>/fonts`.
 
-1. Revenez à CRXDE Lite. Vous devriez maintenant voir une `.fontlist` dans votre dossier contenant le nom des polices importées.
+1. Revenez à CRXDE Lite. Vous devez alors voir un nœud `.fontlist` dabs votre dossier contenant le nom des polices importées.
 
    Ces polices sont désormais prêtes à être déployées dans l’API Java.
 

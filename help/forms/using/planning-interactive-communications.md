@@ -1,5 +1,5 @@
 ---
-title: '"Didacticiel : Planifier la communication interactive"'
+title: "Didacticiel\_: Planifier la communication interactive"
 seo-title: Plan your Interactive Communication
 description: Planifier la structure de votre communication interactive
 seo-description: Plan the anatomy for your Interactive Communication

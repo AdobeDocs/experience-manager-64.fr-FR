@@ -10,7 +10,7 @@ exl-id: 76110cf4-0fd8-4203-b256-c0818a1b64d2
 source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '1527'
-ht-degree: 55%
+ht-degree: 69%
 
 ---
 
@@ -22,33 +22,33 @@ Consultez cette page pour obtenir des réponses à certains problèmes AEM de d�
 
 ### Comment configurer une distribution sans fichier binaire ? {#how-do-i-configure-binary-less-distribution}
 
-La distribution sans fichier binaire est prise en charge pour les déploiements dans un entrepôt de données partagé et implique des agents qui exploitent le créateur de modules de l’exportateur de modules de distribution basé sur le coffre-fort (PID d’usine : `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`).
+La distribution sans fichier binaire est prise en charge pour les déploiements dans un magasin de données partagé et implique des agents qui exploitent le créateur de modules de l’exportateur de modules de distribution basé sur le coffre-fort (PID d’usine : `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`).
 
 Le mode sans fichier binaire étant activé, les modules de contenu distribués contiennent des références à des fichiers binaires plutôt que des fichiers binaires réels.
 
 ### Comment activer la distribution sans fichier binaire ? {#how-do-i-enable-binary-less-distribution}
 
 Pour activer la distribution sans fichier binaire, déployez un entrepôt de grands objets binaires partagé.\
-Vérifiez les `useBinaryReferences` dans la configuration OSGI avec le PID d’usine ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* que votre agent utilise.
+Vérifiez la propriété `useBinaryReferences` dans la configuration OSGI avec le PID d’usine (`org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* utilisé par votre agent.
 
 ### Comment personnaliser les messages d’erreur en parcourant l’arborescence des pages dans la console AEM Sites ? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
 
 Vérifiez le panneau Réseau (du navigateur Chrome), qui contient une configuration personnelle (JavaScript n’a pas été compressé).
 
-Afficher la variable `Initiator` pour déterminer l’initiateur d’une requête. Elle indique les fichiers et les numéros de ligne correspondant aux appels AJAX effectués. Ensuite, vous pouvez suivre la fonction de gestion des erreurs et modifier le message d’erreur selon vos besoins.
+Pour déterminer l’initiateur d’une demande, consultez la colonne `Initiator`. Elle indique les fichiers et les numéros de ligne correspondant aux appels AJAX effectués. Ensuite, vous pouvez suivre la fonction de gestion des erreurs et modifier le message d’erreur selon vos besoins.
 
 ### Comment activer les autorisations tout en créant une copie de langue pour les créateurs de contenu dans AEM ? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
-Pour créer une fonction de copie de langue, les auteurs de contenu doivent disposer d’autorisations à l’adresse `/content/projects` emplacement.
+Pour utiliser la fonctionnalité Créer une copie de langue, les créateurs de contenu doivent disposer d’autorisations pour l’emplacement `/content/projects`.
 
-Si les auteurs doivent également gérer des projets, la solution consiste à ajouter l’auteur à `project-administrators` groupe.
+Si les créateurs doivent également gérer des projets, la solution consiste à ajouter le créateur au groupe des `project-administrators`.
 
 ### Comment modifier le format lors de la création d’une copie de langue pour un projet ? {#how-to-change-the-format-while-creating-language-copy-for-a-project}
 
 Avant de créer un projet de traduction, créez une racine de langue et une copie de langue dans la racine.
 
 Par exemple,\
-Créez une racine de langue à l’adresse `/content/geometrixx` avec le nom `fr_LU` (et titre en français (Luxembourg)). Ensuite, créez une copie de langue de la page à partir du panneau Références et accédez à `Create structure only` dans `Create & Translate`. Enfin, créez un projet de traduction, puis ajoutez la copie de langue à la tâche de traduction.
+Créez une racine de langue à l’adresse `/content/geometrixx` avec le nom `fr_LU` (et titre en français (Luxembourg)). Ensuite, créez une copie de langue de la page à partir du panneau Références et accédez à l’option `Create structure only` dans `Create & Translate`. Enfin, créez un projet de traduction, puis ajoutez la copie de langue à la tâche de traduction.
 
 Pour plus d’informations, reportez-vous aux ressources supplémentaires ci-dessous :
 
@@ -57,7 +57,7 @@ Pour plus d’informations, reportez-vous aux ressources supplémentaires ci-des
 
 ### Comment auditer les fonctionnalités d’AEM telles que les tentatives de connexion et ACL ou les modifications d’autorisation ? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
-AEM permet de consigner les modifications administratives pour améliorer les audits et la résolution des problèmes. Par défaut, les informations sont consignées dans la variable `error.log` fichier . Pour faciliter la surveillance, il est recommandé de les rediriger vers un fichier journal distinct.\
+AEM permet de consigner les modifications administratives pour améliorer les audits et la résolution des problèmes. Par défaut, les informations sont consignées dans le fichier `error.log`. Pour faciliter la surveillance, il est recommandé de les rediriger vers un fichier journal distinct.\
 Pour rediriger la sortie vers un fichier journal distinct, consultez [Comment auditer les opérations de gestion des utilisateurs dans AEM](/help/sites-administering/audit-user-management-operations.md).
 
 ### Comment activer SSL par défaut ? {#how-to-enable-ssl-by-default}
@@ -68,15 +68,15 @@ Pour activer SSL par défaut, voir [SSL par défaut](/help/sites-administering/s
 
 ### Quelle est l’architecture recommandée lors de l’utilisation des services de contenu d’AEM depuis une application mobile, idéalement React Native ? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
-Les services de contenu sont basés sur les modèles Sling et les développeurs d’AEM doivent fournir un graphique de modèle Sling pour chaque composant exporté.
+Les services de contenu reposent sur les modèles Sling. Les développeurs AEM doivent fournir un pojo de modèle Sling pour chaque composant qui est exporté.
 
 Pour comprendre comment consommer des services de contenu d’AEM depuis une application React, consultez le tutoriel [Prise en main des services de contenu AEM](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/content-services-tutorial-use.html).
 
-En outre, si les développeurs souhaitent exporter une arborescence de composants, ils peuvent également mettre en oeuvre la variable `ComponentExporter` et `ContainerExporter` mais aussi utiliser la fonction `ModelFactory` pour effectuer une itération sur les composants enfants et renvoyer leur représentation de modèle. Consultez les ressources ci-dessous :
+De plus, si les développeurs souhaitent exporter un arbre de composants, ils peuvent aussi implémenter les interfaces `ComponentExporter` et `ContainerExporter`, et utiliser `ModelFactory` pour itérer sur les composants enfants et renvoyer leur représentation de modèle. Consultez les ressources ci-dessous :
 
 [1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
-[2] [Apache Sling : Modèles Sling](https://sling.apache.org/documentation/bundles/models.html)
+[2] [Apache Sling :: Sling Models](https://sling.apache.org/documentation/bundles/models.html)
 
 ### Comment désactiver la fenêtre contextuelle d’enquête d’AEM 6.4 ? {#how-to-disable-aem-survey-pop-up}
 
@@ -90,7 +90,7 @@ Voir [Comprendre les raisons de la mise à niveau AEM](https://helpx.adobe.com/e
 
 Le filtre PorterStem applique l’algorithme de test Porter pour l’anglais. Les résultats sont similaires à l’utilisation de l’événement Snowball Porter avec la méthode *language=&quot;English&quot;* argument . Mais ce radical est codé directement en Java et n’est pas basé sur Snowball. Il n’accepte pas la liste des mots protégés et n’est approprié que pour le texte en anglais.
 
-Oak expose un ensemble d’éléments de configuration de l’analyseur Lucene-fournit à utiliser dans AEM. Pour savoir comment utiliser les filtres, reportez-vous à la section **Analyseurs Apache Oak** in [Guide de mise en oeuvre de recherche simple](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html).
+Oak expose un ensemble d’éléments de configuration de l’analyseur Lucene-fournit à utiliser dans AEM. Pour savoir comment utiliser les filtres, reportez-vous à la section **Analyseurs Apache Oak** in [Guide de mise en oeuvre de recherche simple](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr).
 
 ### Comment effectuer une réindexation complète ? {#how-to-perform-a-full-re-indexing}
 
@@ -102,7 +102,7 @@ Reportez-vous à la section [Bonnes pratiques relatives aux requêtes et à l’
 
 Vous devez modifier la propriété de configuration par défaut du processeur JS du Gestionnaire de bibliothèques de HTMLS Adobe Granite en ***min:gcc***. Pour importer le module de conception avec succès, il est recommandé d’inclure des bibliothèques tierces préminifiées dans nos bibliothèques côté client.
 
-## Ressources {#assets}
+## Assets {#assets}
 
 ### Pourquoi le workflow des ressources se répète-t-il lors du chargement de fichiers MP4 (par exemple, par glisser-déposer) ? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
 
@@ -137,7 +137,7 @@ Pour configurer Assets Insights pour le Experience Manager déployé via Adobe A
 
 ### Comment personnaliser les consoles d’administration ? {#how-to-customize-admin-consoles}
 
-AEM fournit divers mécanismes pour vous permettre de personnaliser les consoles et les fonctionnalités de création de page de votre instance de création.
+AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles et la fonctionnalité de création de pages de votre instance de création.
 Pour savoir comment créer une console personnalisée et personnaliser une vue par défaut pour une console, reportez-vous à la section [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
 
 ### Quelle est la différence entre les composants basés sur CoralUI 2 et CoralUI 3 ? {#what-is-the-difference-between-coralui-and-coralui-based-components}
@@ -150,7 +150,7 @@ Pour en savoir plus, reportez-vous à la section [Guide de migration vers CoralU
 
 Pour en savoir plus sur l’amplification/le classement des recherches et les informations supplémentaires sur l’implémentation, reportez-vous à la section [Guide de mise en oeuvre de la recherche simple.](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html)
 
-La mise en œuvre de recherche simple est le matériel du Summit Lab AEM Search Demystified 2017.
+La mise en œuvre de recherche simple est le thème du Summit Lab AEM Search Demystified 2017.
 
 ### Si un client achète uniquement la licence Sites dans AEM, a-t-il toujours accès à Assets ? {#if-a-customer-buys-only-sites-license-in-aem-do-they-still-have-access-to-assets}
 
@@ -158,9 +158,9 @@ Non, le client ne peut pas accéder aux ressources (ou à tout autre élément q
 
 Pour en savoir plus sur AEM logiciel On-premise et Adobe Managed Services, reportez-vous aux ressources suivantes :
 
-* [Logiciel Adobe Experience Manager On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+* [Logiciel Adobe Experience Manager On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html)
 
-* [Adobe Experience Manager Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+* [Adobe Experience Manager Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 
 ### Comment un client peut-il étendre les propriétés par défaut d’une page ou d’une ressource ? {#how-to-extend-default-properties-page-or-asset}
 

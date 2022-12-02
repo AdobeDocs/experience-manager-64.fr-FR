@@ -12,7 +12,7 @@ discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 exl-id: 8ad5ce3e-c5dd-48d7-8812-43172eda36cc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '994'
 ht-degree: 39%
 
 ---
@@ -176,7 +176,7 @@ Sous , **[!UICONTROL Types de ressources]** , spécifiez le type de ressource pe
 
 * **[!UICONTROL Type de ressource système de commentaires]**
 
-   Accédez au resourceType d’une extension `comments`(système de commentaires) dans /apps. Laissez vide, sauf si le modèle de page [inclut dynamiquement](scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). En savoir plus en lisant les [{{include} helper](handlebars-helpers.md#include).
+   Accédez au resourceType d’une extension `comments`(système de commentaires) dans /apps. Laissez vide, sauf si le modèle de page [inclut dynamiquement](scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). En savoir plus en lisant les [{{include}} assistance](handlebars-helpers.md#include).
 
 ## Expérience des visiteurs {#site-visitor-experience}
 

@@ -12,7 +12,7 @@ exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
 source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
 source-wordcount: '1514'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ Le service de contenu dynamique est un service cloud hébergé sur [!DNL Adobe I
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
-* Intégration 
+* Intégration
 * Passage en revue des ressources et des balises (définition de la taxonomie)
 * Entraînement du service de contenu dynamique
 * Balisage automatique
@@ -45,14 +45,14 @@ En résumé, voici les principales étapes pour utiliser le service de contenu d
 
 ## Prérequis {#prerequisites}
 
-Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respecter les conditions suivantes pour créer une intégration sur [!DNL Adobe I/O]:
+Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respecter les conditions suivantes pour créer une intégration sur [!DNL Adobe I/O] :
 
 * L’organisation doit disposer d’un compte Adobe ID pourvu de droits d’administrateur.
 * Le service de contenu dynamique est activé pour votre organisation.
 
-## Intégration  {#onboarding}
+## Intégration {#onboarding}
 
-Le service de contenu dynamique est disponible à l’achat sous la forme d’un module complémentaire pour [!DNL Experience Manager] . Une fois l’achat effectué, un courrier électronique est envoyé à l’administrateur de votre entreprise avec un lien vers [!DNL Adobe I/O].
+Le service de contenu dynamique est disponible à l’achat sous forme de module complémentaire pour [!DNL Experience Manager]. Une fois que vous l’avez acheté, un e-mail est envoyé à l’administrateur de votre entreprise avec un lien vers [!DNL Adobe I/O].
 
 L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à [!DNL Experience Manager] . Pour intégrer le service à [!DNL Experience Manager] Ressources, voir [Configuration des balises intelligentes](config-smart-tagging.md).
 
@@ -89,11 +89,11 @@ Vous pouvez entraîner le service de contenu dynamique périodiquement ou en fon
 
 ### Entraînement périodique {#periodic-training}
 
-Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne périodiquement sur les ressources et les balises associées au sein d’un dossier. Ouvrez la page des propriétés de votre dossier de ressources, puis sélectionnez **[!UICONTROL Activation des balises intelligentes]** sous le **[!UICONTROL Détails]** et enregistrez les modifications.
+Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne périodiquement sur les ressources et les balises associées au sein d’un dossier. Ouvrez la page de propriétés du dossier de ressources, sélectionnez **[!UICONTROL Activer les balises intelligentes]** sous l’onglet **[!UICONTROL Détails]** et enregistrez les modifications.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Une fois cette option sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un workflow d’entraînement pour entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
+Lorsque cette option est sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un workflow d’entraînement afin d’entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
 
 ### Entraînement à la demande {#on-demand-training}
 
@@ -101,14 +101,14 @@ Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est 
 
 1. Appuyez/cliquez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Processus > Modèles]**.
 1. Dans la page **[!UICONTROL Modèles de processus]**, sélectionnez le processus **[!UICONTROL Entraînement des balises dynamiques]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
-1. Dans la boîte de dialogue **[!UICONTROL Exécuter le processus]**, localisez le dossier de charge utile qui comprend les ressources balisées pour entraîner le service.
+1. Dans la boîte de dialogue **[!UICONTROL Exécuter le workflow]**, localisez le dossier de payload qui comprend les ressources balisées pour entraîner le service.
 1. Indiquez le titre du workflow et ajoutez un commentaire. Ensuite, appuyez/cliquez sur **[!UICONTROL Exécuter]**. Les ressources et les balises sont soumises à l’entraînement.
 
    ![workflow_dialog](assets/workflow_dialog.png)
 
 >[!NOTE]
 >
->Une fois que les ressources d’un dossier sont traitées pour formation, seules les ressources modifiées sont traitées au cours des cycles de formation suivants.
+>Une fois que les ressources figurant dans un dossier sont traitées pour l’entraînement, seules les ressources modifiées sont traitées au cours des cycles d’entraînement suivants.
 
 ### Affichage des rapports d’entraînement {#viewing-training-reports}
 
@@ -139,16 +139,16 @@ Vous pouvez exécuter le workflow de balisage périodiquement ou au besoin.
 
 ### Balisage périodique {#periodic-tagging}
 
-Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Ouvrez la page des propriétés de votre dossier de ressources, puis sélectionnez **[!UICONTROL Activation des balises intelligentes]** sous le **[!UICONTROL Détails]** et enregistrez les modifications.
+Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Ouvrez la page de propriétés du dossier de ressources, sélectionnez **[!UICONTROL Activer les balises intelligentes]** sous l’onglet **[!UICONTROL Détails]** et enregistrez les modifications.
 
-Une fois cette option sélectionnée pour un dossier, le service de contenu dynamique balise automatiquement les ressources qu’il contient. Par défaut, le workflow de balisage s’exécute tous les jours à 00h00.
+Lorsque cette option est sélectionnée pour un dossier, le service de contenu dynamique balise automatiquement les ressources au sein du dossier. Par défaut, le workflow de balisage s’exécute chaque jour à minuit.
 
 ### Balisage à la demande {#on-demand-tagging}
 
 Vous pouvez déclencher le workflow de balisage à partir des emplacements suivants pour baliser instantanément vos ressources :
 
 * Console de processus
-* Chronologie
+* La chronologie
 
 >[!NOTE]
 >

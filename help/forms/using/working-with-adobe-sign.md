@@ -42,7 +42,7 @@ L’intégration d’Acrobat Sign avec AEM Forms prend en charge :
 
 En savoir plus [bonnes pratiques d’utilisation d’Acrobat Sign avec les formulaires adaptatifs](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) pour créer de meilleures expériences de signature.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Avant d’utiliser Acrobat Sign dans un formulaire adaptatif :
 

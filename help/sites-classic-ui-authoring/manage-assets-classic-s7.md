@@ -1,7 +1,7 @@
 ---
-title: Ajout de fonctionnalités Dynamic Media Classic à votre page
+title: L’ajout de fonctionnalités Dynamic Media Classic à votre page
 seo-title: Adding Dynamic Media Classic features to your page
-description: Adobe Dynamic Media Classic est une solution hébergée qui permet de gérer, d’améliorer, de publier et de diffuser des ressources multimédias enrichies sur le Web, les appareils mobiles, les e-mails et les appareils d’impression connectés à Internet.
+description: Adobe Dynamic Media Classic est une solution hébergée pour la gestion, l’amélioration, la publication et la diffusion de contenus multimédias enrichis sur le web, sur les appareils mobiles, par e-mail, sur les appareils connectés à Internet et par impression.
 seo-description: Adobe Dynamic Media Classic is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
 uuid: 66b9c150-c482-4a41-9772-fa39c135802c
 contentOwner: Alva Ware-Bevacqui
@@ -13,19 +13,19 @@ exl-id: 93921d23-a2bf-43b6-b002-58a7482b22b0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3347'
-ht-degree: 32%
+ht-degree: 52%
 
 ---
 
-# Ajout de fonctionnalités Dynamic Media Classic à votre page{#adding-scene-features-to-your-page}
+# L’ajout de fonctionnalités Dynamic Media Classic à votre page{#adding-scene-features-to-your-page}
 
-Adobe Dynamic Media Classic est une solution hébergée qui permet de gérer, d’améliorer, de publier et de diffuser des ressources multimédias enrichies sur le Web, les appareils mobiles, les e-mails et les appareils d’impression connectés à Internet.
+Adobe Dynamic Media Classic est une solution hébergée pour la gestion, l’amélioration, la publication et la diffusion de contenus multimédias enrichis sur le web, sur les appareils mobiles, par e-mail, sur les appareils connectés à Internet et par impression.
 
 Vous pouvez afficher AEM ressources publiées dans Dynamic Media Classic dans différentes visionneuses :
 
 * Zoom
 * Fenêtre déroulante
-* Vidéo 
+* Vidéo
 * Modèle d’image
 * Image
 
@@ -37,7 +37,7 @@ Voir aussi [Ajout de zones cliquables](/help/assets/image-maps.md).
 
 Pour plus d’informations sur l’utilisation des composants vidéo avec AEM, voir :
 
-* [Vidéo ](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
+* [Vidéo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Vous pouvez publier des ressources numériques dans Dynamic Media Classic à par
 >
 >AEM publie dans Dynamic Media Classic de manière asynchrone. Après avoir cliqué sur **[!UICONTROL Publier]**, la publication de votre ressource sur Dynamic Media Classic peut prendre plusieurs secondes.
 
-### Publication depuis la console Ressources {#publishing-from-the-assets-console}
+### Publication depuis la console Assets {#publishing-from-the-assets-console}
 
 Pour publier sur Dynamic Media Classic à partir de la console Ressources si les ressources se trouvent dans un dossier cible Dynamic Media Classic :
 
@@ -79,9 +79,9 @@ Vous pouvez publier manuellement une ressource tant qu’elle se trouve dans le 
 
 1. Dans AEM, cliquez sur **[!UICONTROL Eléments numériques]** pour accéder au Digital Asset Manager.
 
-1. Double-cliquez pour ouvrir un élément.
+1. Double-cliquez pour ouvrir une ressource.
 
-1. Dans le volet des détails de la ressource, sélectionnez **[!UICONTROL Publication sur Dynamic Media Classic]**.
+1. Dans le volet des détails de la ressource, sélectionnez **[!UICONTROL Publier sur Dynamic Media Classic]**.
 
    ![screen_shot_2012-02-22at34828pm](assets/screen_shot_2012-02-22at34828pm.png)
 
@@ -112,8 +112,8 @@ Pour ce faire, configurez la configuration du cloud pour la page sur laquelle la
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
-1. Sur la page web, ajoutez un composant Dynamic Media Classic (Scene7) à l’emplacement souhaité sur la page.
-1. Depuis l’outil de recherche de contenu, faites glisser un élément numérique vers le composant. Vous voyez un lien vers **[!UICONTROL Vérification de l’état de publication Dynamic Media Classic]**.
+1. Sur la page web, ajoutez un composant Dynamic Media Classic (Scene7) à l’emplacement souhaité sur la page.
+1. Depuis l’outil de recherche de contenu, faites glisser une ressource numérique vers le composant. Vous voyez un lien vers **[!UICONTROL Vérification de l’état de publication Dynamic Media Classic]**.
 
    >[!NOTE]
    >
@@ -135,13 +135,13 @@ Les composants Dynamic Media Classic suivants sont disponibles dans AEM :
 * Fenêtre déroulante (Zoom)
 * Modèle d’image
 * Image
-* Vidéo 
+* Vidéo
 
 >[!NOTE]
 >
 >Ces composants ne sont pas disponibles par défaut et doivent être sélectionnés dans **[!UICONTROL Conception]** avant d’utiliser .
 
-Une fois qu’elles sont disponibles dans **[!UICONTROL Conception]** , vous pouvez ajouter les composants à votre page comme tout autre composant AEM. Les ressources qui n’ont pas encore été publiées sur Dynamic Media Classic le sont sur Dynamic Media Classic si elles se trouvent dans un dossier synchronisé, sur une page ou avec une configuration cloud Dynamic Media Classic.
+Une fois qu’elles sont disponibles dans **[!UICONTROL Conception]** , vous pouvez ajouter les composants à votre page comme tout autre composant AEM. Les ressources qui n’ont pas encore été publiées sur Dynamic Media Classic le seront si elles se trouvent dans un dossier synchronisé, sur une page ou avec une configuration cloud Dynamic Media Classic.
 
 ### Avis de fin de vie des visionneuses par Flash {#flash-viewers-end-of-life-notice}
 
@@ -149,7 +149,7 @@ Une fois qu’elles sont disponibles dans **[!UICONTROL Conception]** , vous pou
 
 ### Ajout d’un composant Dynamic Media Classic à une page {#adding-a-scene-component-to-a-page}
 
-L’ajout d’un composant Dynamic Media Classic à une page est identique à l’ajout d’un composant à n’importe quelle page. Les composants Dynamic Media Classic sont décrits en détail dans les sections suivantes.
+L’ajout d’un composant Dynamic Media Classic à une page est identique à l’ajout d’un composant à n’importe quelle page. Les composants Dynamic Media Classic sont décrits en détail dans les sections suivantes.
 
 **Pour ajouter un composant/une visionneuse Dynamic Media Classic à une page dans l’IU classique**:
 
@@ -184,11 +184,11 @@ Une conception réactive signifie que les éléments s’adaptent selon l’empl
 
 1. Confirmez que les visionneuses se redimensionnent de manière réactive et que toutes les interactions sont optimisées pour les ordinateurs de bureau, les tablettes et les appareils mobiles.
 
-### Paramètres communs à tous les composants Dynamic Media Classic {#settings-common-to-all-scene-components}
+### Paramètres communs à tous les composants Dynamic Media Classic {#settings-common-to-all-scene-components}
 
-Bien que les options de configuration varient, les éléments suivants sont communs à tous les composants Dynamic Media Classic :
+Bien que les options de configuration varient, les paramètres suivants sont communs à tous les composants Dynamic Media Classic :
 
-* **[!UICONTROL Référence du fichier]** : accédez à un fichier que vous souhaitez référencer. La référence au fichier affiche l’URL de la ressource et pas nécessairement l’URL Dynamic Media Classic complète, y compris les commandes et paramètres d’URL. Vous ne pouvez pas ajouter de commandes d’URL et de paramètres Dynamic Media Classic dans ce champ. Ils doivent être ajoutés par l’intermédiaire de la fonctionnalité correspondante du composant.
+* **[!UICONTROL Référence du fichier]** : accédez à un fichier que vous souhaitez référencer. La référence du fichier affiche l’URL de la ressource, et pas nécessairement l’ensemble de l’URL Dynamic Media Classic, avec les commandes et paramètres d’URL. Vous ne pouvez pas ajouter de commandes et de paramètres d’URL Dynamic Media Classic dans ce champ. Ils doivent être ajoutés par l’intermédiaire de la fonctionnalité correspondante du composant.
 * **[!UICONTROL Largeur]** : permet de définir la largeur.
 * **[!UICONTROL Hauteur]** : permet de définir la hauteur.
 
@@ -198,53 +198,53 @@ Vous définissez ces options de configuration en double-cliquant sur un composan
 
 ### Zoom {#zoom}
 
-Le composant Zoom HTML5 affiche une image plus grande lorsque vous appuyez sur le bouton +.
+Le composant Zoom HTML5 affiche une image plus grande lorsque vous appuyez sur le bouton +.
 
-L’élément comporte des outils de zoom dans sa partie inférieure. Cliquez sur **[!UICONTROL +]** pour agrandir. Cliquez sur **[!UICONTROL -]** pour réduire. Cliquer **[!UICONTROL x]** ou la flèche de réinitialisation du zoom rétablit la taille d’origine de l’image importée. Cliquez sur les flèches en diagonale pour passer en mode plein écran. Cliquez sur **[!UICONTROL Modifier]** pour configurer le composant. Avec ce composant, vous pouvez configurer [paramètres communs à tous les composants Dynamic Media Classic](#settings-common-to-all-scene-components).
+L’élément comporte des outils de zoom dans sa partie inférieure. Cliquez sur **[!UICONTROL +]** pour agrandir. Cliquez sur **[!UICONTROL -]** pour réduire. Cliquer **[!UICONTROL x]** ou la flèche de réinitialisation du zoom rétablit la taille d’origine de l’image importée. Cliquez sur les flèches en diagonale pour passer en mode plein écran. Cliquez sur **[!UICONTROL Modifier]** pour configurer le composant. Avec ce composant, vous pouvez configurer les [paramètres communs à tous les composants Dynamic Media Classic](#settings-common-to-all-scene-components).
 
 ![](do-not-localize/chlimage_1-5.png)
 
 ### Fenêtre déroulante {#flyout}
 
-Dans le composant Fenêtre déroulante HTML5, l’élément s’affiche sous la forme d’un écran partagé : à gauche se trouve l’élément à la taille spécifiée, à droite la partie sur laquelle le zoom a été effectué. Cliquez sur **[!UICONTROL Modifier]** pour configurer le composant. Avec ce composant, vous pouvez configurer [paramètres communs à tous les composants Dynamic Media Classic](/help/sites-administering/scene7.md#settingscommontoalldynamicmediaclassiccomponents).
+Dans le composant Fenêtre déroulante HTML5, l’élément s’affiche sous la forme d’un écran partagé : à gauche se trouve l’élément à la taille spécifiée, à droite la partie sur laquelle le zoom a été effectué. Cliquez sur **[!UICONTROL Modifier]** pour configurer le composant. Avec ce composant, vous pouvez configurer les [paramètres communs à tous les composants Dynamic Media Classic](/help/sites-administering/scene7.md#settingscommontoalldynamicmediaclassiccomponents).
 
 >[!NOTE]
 >
 >Si le composant Fenêtre déroulante utilise une taille personnalisée, cette taille personnalisée est utilisée et la configuration réactive du composant est désactivée.
 >
->Si votre composant Fenêtre déroulante utilise la taille par défaut, comme défini dans la variable [!UICONTROL Conception] , la taille par défaut est utilisée et le composant s’étire pour s’adapter à la taille de mise en page avec la configuration réactive du composant activée. Sachez toutefois qu’il existe une limitation de la configuration réactive du composant. Lorsque vous utilisez le composant Fenêtre déroulante avec la configuration réactive, vous ne devez pas l’utiliser avec l’étirement de pleine page. Dans le cas contraire, la fenêtre déroulante peut s’étendre au-delà de la bordure droite de la page.
+>Si votre composant Fenêtre déroulante utilise la taille par défaut, comme défini dans la variable [!UICONTROL Conception] , la taille par défaut est utilisée et le composant s’étire pour s’adapter à la taille de mise en page avec la configuration réactive du composant activée. Néanmoins, gardez à l’esprit qu’il existe une limite à la configuration réactive du composant. Lorsque vous utilisez le composant Fenêtre déroulante avec la configuration réactive, vous ne devez pas l’utiliser avec l’étirement de pleine page. Sinon, la fenêtre déroulante peut s’étendre au-delà de la bordure droite de la page.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
 ### Image {#image}
 
-Le composant Image Dynamic Media Classic vous permet d’ajouter des fonctionnalités Dynamic Media Classic à vos images, telles que des modificateurs Dynamic Media Classic, des paramètres d’image ou de visionneuse prédéfinis et l’accentuation. Le composant d’image Dynamic Media Classic est similaire aux autres composants d’image d’AEM avec des fonctionnalités spéciales de Dynamic Media Classic. Dans cet exemple, l’image a le modificateur URL Dynamic Media Classic, `&op_invert=1` appliquée.
+Le composant Image Dynamic Media Classic vous permet d’ajouter des fonctionnalités Dynamic Media Classic à vos images, telles que les modificateurs Dynamic Media Classic, les paramètres d’image ou de visionneuse prédéfinis et l’accentuation. Le composant d’image Dynamic Media Classic est similaire aux autres composants d’image d’AEM avec des fonctionnalités spéciales de Dynamic Media Classic. Dans cet exemple, le modificateur URL Dynamic Media Classic, `&op_invert=1` est appliqué à l’image.
 
 ![](do-not-localize/chlimage_1-6.png)
 
-**[!UICONTROL Titre, texte de remplacement]** - Dans le [!UICONTROL Avancé] ajoutez un titre à l’image et un texte de remplacement pour les utilisateurs pour lesquels les graphiques sont désactivés.
+**[!UICONTROL Titre, Texte secondaire]** : dans l’onglet [!UICONTROL Avancé], ajoutez un titre à l’image et un texte de remplacement destiné aux utilisateurs dont les graphiques sont désactivés.
 
-**[!UICONTROL URL, Ouvrir dans]** - Vous pouvez définir une ressource à partir de pour ouvrir un lien. Définissez la variable **[!UICONTROL URL]** et **[!UICONTROL Ouvrir dans]** pour indiquer si vous souhaitez l’ouvrir dans la même fenêtre ou dans une nouvelle fenêtre.
+**[!UICONTROL URL, Ouvrir dans]** : vous pouvez définir une ressource pour ouvrir un lien. Définissez l’**[!UICONTROL URL]**, puis dans **[!UICONTROL Ouvrir dans]**, indiquez si vous souhaitez que la ressource s’ouvre dans la même fenêtre ou dans une nouvelle.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-**[!UICONTROL Paramètre prédéfini de la visionneuse]** - Sélectionnez un paramètre prédéfini de visionneuse existant dans le menu déroulant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md). Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
+**[!UICONTROL Paramètre prédéfini de la visionneuse]** : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Consultez [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md). Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
 **[!UICONTROL Configuration Dynamic Media Classic]** - Sélectionnez la configuration Dynamic Media Classic à utiliser pour récupérer les paramètres d’image prédéfinis principaux à partir de Scene7 Publishing System.
 
-**[!UICONTROL Paramètre d’image prédéfini]** - Sélectionnez un paramètre d’image prédéfini existant dans le menu déroulant. Si le paramètre d’image prédéfini que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir [Gestion des paramètres d’image prédéfinis](/help/assets/managing-image-presets.md). Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
+**[!UICONTROL Paramètre prédéfini d’image]** : sélectionnez un paramètre prédéfini d’image existant. Si le paramètre d’image prédéfini que vous recherchez n’est pas visible, vous devrez le rendre visible. Consultez [Gestion des paramètres d’image prédéfinis](/help/assets/managing-image-presets.md). Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
-**[!UICONTROL Format de sortie]** - Sélectionnez le format de sortie de l’image, par exemple jpeg. Selon le format de sortie que vous sélectionnez, vous pouvez ajouter des options de configuration supplémentaires. Voir [Gestion des paramètres d’image prédéfinis](/help/assets/managing-image-presets.md).
+**[!UICONTROL Format de sortie]** - Sélectionnez le format de sortie de l’image, par exemple jpeg. Selon le format de sortie que vous sélectionnez, vous pouvez ajouter des options de configuration supplémentaires. Consultez [Gestion des paramètres d’image prédéfinis](/help/assets/managing-image-presets.md).
 
 **[!UICONTROL Accentuation]** - Sélectionnez le mode d’accentuation de l’image. L’accentuation est expliquée en détail en [*Bonnes pratiques relatives à la qualité des images Adobe Dynamic Media Classic et à l’accentuation*](/help/assets/assets/sharpening_images.pdf).
 
-**[!UICONTROL Modificateurs d’URL]** - Vous pouvez modifier les effets d’image en fournissant des commandes d’image Dynamic Media Classic supplémentaires. Elles sont décrites dans la section [Gestion des paramètres d’image prédéfinis](/help/assets/managing-image-presets.md) et le [Référence de commande](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Modificateurs d’URL]** : vous pouvez modifier les effets d’image en fournissant des commandes d’image Dynamic Media Classic supplémentaires. Elles sont décrites dans la section [Gestion des paramètres d’image prédéfinis](/help/assets/managing-image-presets.md) et le [Référence de commande](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=fr).
 
-**[!UICONTROL Points d’arrêt]** - Si votre site web est réactif, vous souhaitez ajuster les points d’arrêt. Les points d’arrêt doivent être séparés par des virgules `,`.
+**[!UICONTROL Points d’arrêt]** : si votre site web est réactif, vous pouvez modifier les points d’arrêt. Les points d’arrêt doivent être séparés par des virgules `,`.
 
 ### Modèle d’image {#image-template}
 
-[Modèles d’image Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) sont du contenu Photoshop superposé importé dans Dynamic Media Classic, où le contenu et les propriétés ont été paramétrés pour la variabilité. Le **[!UICONTROL Modèle d’image]** permet d’importer des images et de modifier dynamiquement le texte dans AEM. En outre, vous pouvez configurer le composant **[!UICONTROL Modèle d’image]** afin d’utiliser des valeurs provenant de ClientContext de sorte que chaque utilisateur voit l’image d’une manière personnalisée.
+Les [Modèles d’image Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=fr#template-basics) sont du contenu Photoshop superposé importé dans Dynamic Media Classic, où le contenu et les propriétés ont été paramétrés pour leur permettre d’être variables. Le **[!UICONTROL Modèle d’image]** permet d’importer des images et de modifier dynamiquement le texte dans AEM. En outre, vous pouvez configurer le composant **[!UICONTROL Modèle d’image]** afin d’utiliser des valeurs provenant de ClientContext de sorte que chaque utilisateur voit l’image d’une manière personnalisée.
 
 Cliquez sur **[!UICONTROL Modifier]** pour configurer le composant. Vous pouvez configurer [paramètres communs à tous les composants Dynamic Media Classic](/help/sites-administering/scene7.md#settingscommontoalldynamicmediaclassicscomponents) ainsi que d’autres paramètres décrits dans cette section.
 
@@ -254,7 +254,7 @@ Cliquez sur **[!UICONTROL Modifier]** pour configurer le composant. Vous pouve
 
 >[!NOTE]
 >
->Les commandes et paramètres d’URL Dynamic Media Classic ne peuvent pas être ajoutés directement à l’URL de référence du fichier. Ils ne peuvent être définis que dans l’interface utilisateur du composant, dans le panneau **[!UICONTROL Paramètre]**.
+>Les commandes et paramètres d’URL Dynamic Media Classic ne peuvent pas être ajoutés directement à l’URL de référence du fichier. Ils ne peuvent être définis que dans l’interface utilisateur du composant, dans le panneau **[!UICONTROL Paramètre]**.
 
 **[!UICONTROL Titre, texte de remplacement]** Dans le [!UICONTROL Modèle d’image Dynamic Media Classic] ajoutez un titre à l’image et un texte de remplacement pour les utilisateurs pour lesquels les graphiques sont désactivés.
 
@@ -272,7 +272,7 @@ Pour une modification dynamique du texte, saisissez le nouveau texte dans les ch
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-Le texte de l’image change. Vous pouvez réinitialiser le texte sur la valeur d’origine en cliquant sur **[!UICONTROL Réinitialiser]** en regard du champ.
+Le texte de l’image change. Vous pouvez réinitialiser le texte à sa valeur d’origine en cliquant sur **[!UICONTROL Réinitialiser]** en regard du champ.
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -282,7 +282,7 @@ Pour lier un champ à une valeur de contexte client, cliquez sur **[!UICONTROL S
 
 ![chlimage_1-88](assets/chlimage_1-88.png)
 
-Le texte reflète le nom de l’utilisateur actuellement connecté. Vous pouvez réinitialiser le texte sur la valeur d’origine en cliquant sur **[!UICONTROL Réinitialiser]** en regard du champ.
+Le texte reflète le nom de l’utilisateur actuellement connecté. Vous pouvez réinitialiser le texte à sa valeur d’origine en cliquant sur **[!UICONTROL Réinitialiser]** en regard du champ.
 
 ![chlimage_1-89](assets/chlimage_1-89.png)
 
@@ -299,11 +299,11 @@ Le texte reflète le nom de l’utilisateur actuellement connecté. Vous pouvez 
 
 ### Composant vidéo {#video-component}
 
-Dynamic Media Classic **[!UICONTROL Vidéo]** (disponible dans la section Dynamic Media Classic du sidekick) utilise la détection de l’appareil et de la bande passante pour diffuser la vidéo appropriée à chaque écran. Ce composant est un lecteur vidéo HTML5. Il s’agit d’une visionneuse unique pouvant être utilisée sur plusieurs canaux.
+Le composant **[!UICONTROL Vidéo]** de Dynamic Media Classic (disponible depuis la section Dynamic Media Classic du sidekick) utilise la détection d’appareil et de bande passante pour diffuser la vidéo adéquate à chaque écran. Ce composant est un lecteur vidéo HTML5. Il s’agit d’une visionneuse unique pouvant être utilisée sur plusieurs canaux.
 
-Il peut être utilisé pour des ensembles de vidéos adaptables, une vidéo MP4 unique ou une vidéo F4V unique.
+Il peut être utilisé pour des visionneuses de vidéos adaptatives, une vidéo MP4 unique ou une vidéo F4V unique.
 
-Voir [Vidéo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) pour plus d’informations sur le fonctionnement des vidéos avec l’intégration de Dynamic Media Classic. En outre, voir comment [la valeur **Vidéo Dynamic Media Classic** compare le composant à la base ; **video** component](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
+Pour plus d’informations sur le fonctionnement des vidéos avec l’intégration de Dynamic Media Classic, regardez [Vidéo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md). En outre, voir comment [la valeur **Vidéo Dynamic Media Classic** compare le composant à la base ; **video** component](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
 
 ![chlimage_1-91](assets/chlimage_1-91.png)
 
@@ -311,28 +311,28 @@ Voir [Vidéo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md
 
 La gestion des actifs numériques et la gestion de contenu web d’Adobe indiquent si une vidéo maître est téléchargée. Elles n’affichent pas les éléments proxy suivants :
 
-* Rendus codés Dynamic Media Classic
-* Visionneuses de vidéos adaptatives Dynamic Media Classic
+* Rendus codés Dynamic Media Classic
+* Visionneuses de vidéos adaptatives Dynamic Media Classic
 
-Lors de l’utilisation d’une visionneuse de vidéos adaptative avec le composant vidéo Dynamic Media Classic, vous devez redimensionner le composant pour l’adapter aux dimensions de la vidéo.
+Lors de l’utilisation d’une visionneuse de vidéos adaptatives avec le composant vidéo Dynamic Media Classic, vous devez redimensionner le composant pour l’adapter aux dimensions de la vidéo.
 
-## Explorateur de contenu Dynamic Media Classic {#scene-content-browser}
+## Navigateur de contenu Dynamic Media Classic {#scene-content-browser}
 
-L’explorateur de contenu Dynamic Media Classic vous permet d’afficher le contenu de Dynamic Media Classic directement dans AEM. Pour accéder à l’explorateur de contenu, dans l’outil de recherche de contenu, sélectionnez **[!UICONTROL Dynamic Media Classic]** dans l’interface utilisateur optimisée pour les écrans tactiles ou la fonction **[!UICONTROL S7]** dans l’interface utilisateur classique. La fonctionnalité est identique pour les deux interfaces utilisateur.
+L’explorateur de contenu Dynamic Media Classic vous permet d’afficher le contenu de Dynamic Media Classic directement dans AEM. Pour accéder au navigateur de contenu, dans l’outil de recherche de contenu, sélectionnez **[!UICONTROL Dynamic Media Classic]** dans l’interface utilisateur optimisée pour les écrans tactiles, ou l’icône **[!UICONTROL S7]** dans l’interface utilisateur classique. Cette fonctionnalité est identique pour les deux interfaces utilisateur.
 
-Si vous disposez de plusieurs configurations, AEM affiche la [configuration par défaut](/help/sites-administering/scene7.md#configuring-a-default-configuration). Vous pouvez sélectionner différentes configurations directement dans l’explorateur de contenu Dynamic Media Classic du menu déroulant.
+Si vous disposez de plusieurs configurations, AEM affiche la [configuration par défaut](/help/sites-administering/scene7.md#configuring-a-default-configuration). Vous pouvez sélectionner différentes configurations directement dans le navigateur de contenu Dynamic Media Classic depuis le menu déroulant.
 
 >[!NOTE]
 >
 >* Les ressources situées dans le dossier ad hoc n’apparaissent pas dans l’explorateur de contenu Dynamic Media Classic.
->* When [L’aperçu sécurisé est activé](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), les ressources publiées et non publiées sur Dynamic Media Classic n’apparaissent pas dans le navigateur de contenu de Dynamic Media Classic.
+>* Lorsque l’[aperçu sécurisé est activé](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), les ressources publiées et non publiées sur Dynamic Media Classic apparaissent dans le navigateur de contenu de Dynamic Media Classic.
 >* Si vous ne voyez pas **[!UICONTROL Dynamic Media Classic]** ou le **[!UICONTROL S7]** comme option dans l’explorateur de contenu, vous devez [configurer Dynamic Media Classic pour qu’il fonctionne avec AEM](/help/sites-administering/scene7.md).
 >
->* Pour la vidéo, le navigateur de contenu Dynamic Media Classic prend en charge :
+>* Pour la vidéo, le navigateur de contenu Dynamic Media Classic prend en charge les éléments suivants :
 >
->* Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
->* La vidéo MP4 unique
->* Vidéo F4V simple
+>* Les visionneuses de vidéos adaptatives : il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
+>* Vidéo MP4 unique
+>* Vidéo F4V unique
 
 
 ### Parcours du contenu dans l’interface utilisateur classique {#browsing-content-in-the-classic-ui}
@@ -351,10 +351,9 @@ Par défaut, les éléments sont affichés par nom de fichier. Vous pouvez égal
 >
 >Pour la vidéo, le navigateur de contenu Dynamic Media Classic de la gestion de contenu web prend en charge :
 >
->* Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
->* La vidéo MP4 unique
->* Vidéo F4V simple
-
+>* Les visionneuses de vidéos adaptatives : il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
+>* Vidéo MP4 unique
+>* Vidéo F4V unique
 >
 
 
@@ -392,9 +391,8 @@ Par défaut, AEM recherche le dossier sélectionné et tous les sous-dossiers.
 
 >[!NOTE]
 >
->* Lors de la recherche de vidéos, vous recherchez un seul rendu. Les résultats renvoient le rendu d’origine (uniquement &amp;ast;.mp4) et le rendu codé.
+>* Lors de la recherche de vidéos, vous recherchez un seul rendu. Les résultats retournent le rendu d’origine (uniquement en &amp;ast;.mp4) et le rendu codé.
 >* Lors de la recherche d’une visionneuse de vidéos adaptative, vous effectuez une recherche dans le dossier et tous les sous-dossiers, mais uniquement si vous avez ajouté un mot-clé à la recherche. Si vous n’avez pas ajouté de mot-clé, AEM ne recherche pas les sous-dossiers.
-
 >
 
 

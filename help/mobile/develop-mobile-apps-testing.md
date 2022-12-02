@@ -13,7 +13,7 @@ exl-id: 2a70f322-2540-471e-8a8e-6d48889cf94a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1025'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -70,7 +70,7 @@ Un large éventail d’outils est disponible pour tester les applications mobile
 * SeleniumGrid redirige les tests entre les noeuds pour les tests parallèles.
 * L’IDE Selenium permet de réduire l’écriture de cas de test.
 
-Pour plus d’informations, voir [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Pour plus d’informations, consultez [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **Testdroid**
 

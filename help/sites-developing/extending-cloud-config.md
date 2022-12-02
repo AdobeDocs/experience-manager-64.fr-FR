@@ -1,5 +1,5 @@
 ---
-title: Configuration de Cloud Services
+title: Configurations du service cloud
 description: Vous pouvez étendre les instances existantes pour créer vos propres configurations.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -8,8 +8,8 @@ content-type: reference
 exl-id: d2b8503e-8ac1-4617-ad76-b05d1e80a6b6
 source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '564'
+ht-degree: 100%
 
 ---
 
@@ -27,8 +27,8 @@ Les principes suivis dans le développement des configurations sont basés sur l
 * Les configurations (par exemple les propriétés/paragraphes) sont héritées du ou des parents.
 * Référencées à partir du(des) nœud(s) analytique(s) par chemin.
 * Facilement extensibles.
-* Dispose de la flexibilité nécessaire pour traiter des configurations plus complexes, telles que [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Prise en charge des dépendances (par ex. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) les modules externes nécessitent un [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
+* Permet de répondre à des configurations plus complexes, telles [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
+* Prise en charge des dépendances (par ex., les modules externes [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) nécessitent une configuration [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)).
 
 ## Structure {#structure}
 
@@ -38,9 +38,9 @@ Le chemin de base des configurations est :
 
 Pour chaque type de configuration, un modèle et un composant sont fournis. Ainsi, une fois personnalisés, les modèles de configuration peuvent répondre à la plupart des besoins.
 
-Pour fournir une configuration à un nouveau service, vous devez :
+Afin de proposer une configuration pour un nouveau service, vous devez :
 
-* création d’une page de service dans
+* créer une page de service dans
 
    `/etc/cloudservices`
 
@@ -53,7 +53,7 @@ Le modèle et le composant doivent hériter du `sling:resourceSuperType` du mod�
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-ou composant de base respectivement
+ou respectivement du composant de base
 
 `cq/cloudserviceconfigs/components/configpage`
 
@@ -104,9 +104,9 @@ Après avoir configuré votre modèle et votre composant, vous pouvez ajouter vo
 
 `/etc/cloudservices/<service-name>`
 
-### Modèles de contenu {#content-model}
+### Modèle de contenu {#content-model}
 
-Le modèle de contenu est stocké en tant que `cq:Page` Sous :
+Le modèle de contenu est stocké sous la forme `cq:Page` sous :
 
 `/etc/cloudservices/<service-name>(/*)`
 
@@ -117,7 +117,7 @@ Le modèle de contenu est stocké en tant que `cq:Page` Sous :
 /etc/cloudservices/service-name/config/inherited-config
 ```
 
-Les configurations sont stockées sous le sous-noeud . `jcr:content`.
+Les configurations sont stockées sous le sous-nœud `jcr:content`.
 
 * Les propriétés fixes, définies dans une boîte de dialogue, doivent être stockées directement sur le `jcr:node`.
 * Les éléments dynamiques (utilisant `parsys` ou `iparsys`) se servent d’un sous-nœud pour stocker les données du composant.
@@ -133,11 +133,11 @@ propertyname
 
 ### API {#api}
 
-Pour la documentation de référence sur l’API, voir [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Pour la documentation de référence sur l’API, voir [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/Webservicesupport/package-summary.html).
 
 ### Intégration d’AEM {#aem-integration}
 
-Les services disponibles sont répertoriés dans la section **Cloud Services** de l’onglet **Propriétés de la page** boîte de dialogue (de toute page qui hérite de `foundation/components/page` ou `wcm/mobile/components/page`).
+Les services disponibles sont répertoriés dans l’onglet **Services cloud** de la boîte de dialogue **Propriétés de la page** (de toute page héritant de `foundation/components/page` ou `wcm/mobile/components/page`).
 
 L’onglet contient également :
 
@@ -148,7 +148,7 @@ L’onglet contient également :
 
 Lorsque vous stockez des informations d’identification d’utilisateur pour le service, tous les mots de passe doivent être chiffrés.
 
-Pour cela, il faut ajouter un champ de formulaire masqué. Ce champ doit avoir l’annotation `@Encrypted` dans le nom de la propriété ; c’est-à-dire pour la variable `password` champ le nom serait écrit comme suit :
+Pour cela, il faut ajouter un champ de formulaire masqué. L’annotation `@Encrypted` doit être présente dans le nom de propriété de ce champ, par exemple, pour le champ `password`, le nom de la propriété serait écrit comme suit :
 
 `password@Encrypted`
 
@@ -160,7 +160,7 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
 
 >[!NOTE]
 >
->Par défaut, la variable `EcryptionPostProcessor` uniquement les cryptage `POST` demandes envoyées à `/etc/cloudservices`.
+>Par défaut, `EcryptionPostProcessor` chiffre uniquement les requêtes `POST` effectuées sur `/etc/cloudservices`.
 
 #### Propriétés supplémentaires pour les nœuds jcr:content de page de service {#additional-properties-for-service-page-jcr-content-nodes}
 
@@ -172,7 +172,7 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
   </tr> 
   <tr> 
    <td>componentReference</td> 
-   <td>Chemin d’accès de référence à un composant à inclure automatiquement dans la page.<br /> Ceci est utilisé pour des fonctionnalités supplémentaires et des inclusions JS.<br /> Cela inclut le composant sur la page où<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> est inclus (normalement avant la variable <code>body</code> ).<br /> Dans le cas de Google Analytics et Target, nous utilisons ceci pour insérer des fonctionnalités supplémentaires, telles que des appels JavaScript, afin de suivre le comportement des visiteurs.</td> 
+   <td>Chemin d’accès de référence à un composant à inclure automatiquement dans la page.<br /> Ceci est utilisé pour des fonctionnalités supplémentaires et des inclusions JS.<br /> Cela inclut le composant sur la page où<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> est inclus (normalement avant la variable <code>body</code>).<br /> Dans le cas de Google Analytics et Target, nous utilisons ceci pour insérer des fonctionnalités supplémentaires, telles que des appels JavaScript, afin de suivre le comportement des visiteurs.</td> 
   </tr> 
   <tr> 
    <td>description</td> 
@@ -188,7 +188,7 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
   </tr> 
   <tr> 
    <td>selectableChildren</td> 
-   <td>Filtre pour l’affichage des configurations dans la boîte de dialogue des propriétés de page.</td> 
+   <td>Filtre permettant d’afficher les configurations dans la boîte de dialogue des propriétés de la page.</td> 
   </tr> 
   <tr> 
    <td>serviceUrl</td> 
@@ -204,7 +204,7 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
   </tr> 
   <tr> 
    <td>visible</td> 
-   <td>Visibilité dans la boîte de dialogue des propriétés de page ; visible par défaut (facultatif)</td> 
+   <td>Visibilité dans la boîte de dialogue des propriétés de page ; visible par défaut (facultatif)</td> 
   </tr> 
  </tbody> 
 </table>
@@ -214,10 +214,10 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
 Ces services sont fournis par défaut :
 
 * [Extraits de module de tracking](/help/sites-administering/external-providers.md) (Google, WebTrends, etc.)
-* [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
+* [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 * [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 
 >[!NOTE]
 >
->Voir aussi [Création d’un service cloud personnalisé](/help/sites-developing/extending-cloud-config-custom-cloud.md).
+>Consultez également [Création d’un service cloud personnalisé](/help/sites-developing/extending-cloud-config-custom-cloud.md).

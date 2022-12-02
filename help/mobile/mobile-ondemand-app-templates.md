@@ -153,7 +153,7 @@ Une fois que le composant a déjà été inclus dans une page AEM, ainsi que que
 >
 >Voir [Bonnes pratiques pour le développement de modèles et de composants](/help/mobile/best-practices-aem-mobile.md) dans AEM Mobile.
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 * [Utilisation des propriétés de contenu pour exporter du contenu](/help/mobile/on-demand-content-properties-exporting.md)
 * [Mobile avec synchronisation de contenu](/help/mobile/mobile-ondemand-contentsync.md)

@@ -1,7 +1,7 @@
 ---
 title: Conversion de lancements
 seo-title: Promoting Launches
-description: 'Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier. '
+description: Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier.
 seo-description: You need to promote launch pages to move the content back into the source (production) before publishing.
 uuid: 56483f8f-d66e-4677-a7bd-3b1425625b2b
 contentOwner: Chris Bohnert
@@ -46,7 +46,6 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 >
 >* [Conversion d’un lancement imbriqué](#promoting-a-nested-launch) lorsqu’il existe plusieurs lancements dans la structure.
 >* [Lancements – Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour en savoir plus sur la conversion et la publication automatiques.
-
 >
 
 
@@ -101,11 +100,11 @@ Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement
 
 ## Promotion d’un lancement imbriqué {#promoting-a-nested-launch}
 
-Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages source, y compris la source racine (production).
+Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages source, y compris la source racine (en exploitation).
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
-1. Comme avec la [création d’un lancement imbriqué](/help/sites-authoring/launches-creating.md#creating-a-nested-launch), recherchez et sélectionnez le lancement en question dans la console de **lancements** ou le rail de **références**.
+1. Comme pour la [création d’un lancement imbriqué](/help/sites-authoring/launches-creating.md#creating-a-nested-launch), recherchez et sélectionnez le lancement en question dans la console de **lancements** ou le rail de **références**.
 1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.
 
 1. Saisissez les informations demandées :
@@ -114,7 +113,8 @@ Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages so
 
       Vous pouvez convertir des ressources en n’importe quelle source.
 
-   * **Domaine** Ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Dans le second cas, vous pouvez choisir d’inclure/exclure des sous-pages. La configuration par défaut consiste à convertir uniquement les changements de page pour la page active :
+   * **Portée**
+Ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Dans le second cas, vous pouvez choisir d’inclure/exclure des sous-pages. La configuration par défaut consiste à convertir uniquement les changements de page pour la page active :
 
       * **Convertir le lancement complet**
       * **Promouvoir les pages modifiées**

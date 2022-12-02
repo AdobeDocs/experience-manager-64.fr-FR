@@ -164,7 +164,7 @@ Le service Forms renvoie les valeurs suivantes pour indiquer s’il a terminé l
 
 >[!NOTE]
 >
->Les calculs et validations doivent être générés et remis à l’utilisateur. (Voir [Calcul des données de formulaire](/help/forms/developing/calculating-form-data.md#calculating-form-data).)
+>Les calculs et validations doivent être générés et remis à l’utilisateur. (Voir [Calcul des données de formulaire](/help/forms/developing/calculating-form-data.md#calculating-form-data). 
 
 **Déterminer si l’envoi du formulaire contient des pièces jointes**
 

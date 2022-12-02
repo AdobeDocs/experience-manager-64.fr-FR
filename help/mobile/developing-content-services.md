@@ -8,13 +8,13 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e900d93e-f7cd-4a0d-a866-7fc6c7882797
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 11%
 
 ---
-
 
 # Content Services{#content-services}
 
@@ -38,7 +38,7 @@ Content Services peut diffuser le contenu sous la forme de ressources, de HTML e
 
 >[!CAUTION]
 >
->**Prérequis:**
+>**Conditions préalables:**
 >
 >Avant de commencer à utiliser Content Services, assurez-vous d’activer l’indicateur Content Services. Pour activer la création et la gestion des modèles dans votre application, vous devez activer les modèles de données dans le navigateur de configuration.
 >
@@ -52,4 +52,3 @@ Une fois que vous avez défini l’indicateur Content Services et activé les mo
 
 * Modèles dans le référentiel
 * Rendu et diffusion
-

@@ -1,6 +1,6 @@
 ---
 title: Référence des schémas de métadonnées
-description: 'Découvrez les conventions standard permettant de décrire les métadonnées des ressources, y compris Dublin Core, IPTC et d’autres schémas de métadonnées. '
+description: Découvrez les conventions standard permettant de décrire les métadonnées des ressources, y compris Dublin Core, IPTC et d’autres schémas de métadonnées.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 La référence ci-après contient des informations sur un schéma de métadonnées spécifique (dans l’ordre alphabétique) ainsi qu’une liste de propriétés et de leur définition.
 
-## Dublin Core {#dublin-core}
+## Dublin Core {#dublin-core}
 
 La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour décrire les ressources afin de faciliter leur recherche. Dans [!DNL Experience Manager] Assets, Dublin Core décrit les ressources numériques, notamment les vidéos, le son, les images et les documents.
 

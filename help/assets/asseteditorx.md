@@ -1,6 +1,6 @@
 ---
-title: Étendre l’Éditeur de ressources
-description: Découvrez comment étendre les fonctionnalités de l’Éditeur de ressources en utilisant des composants personnalisés.
+title: Extension de l’éditeur de ressources
+description: Découvrez comment étendre les fonctionnalités de l’éditeur de ressources en utilisant des composants personnalisés.
 contentOwner: AG
 feature: Developer Tools
 role: User,Admin
@@ -8,11 +8,11 @@ exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
 source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
-# Étendre l’Éditeur de ressources {#extending-asset-editor}
+# Extension de l’éditeur de ressources {#extending-asset-editor}
 
 L’Éditeur de ressources est la page qui s’ouvre lorsque l’utilisateur clique sur une ressource trouvée par le biais du partage de ressources, ce qui lui permet de modifier certains aspects de la ressource, tels que les métadonnées, la miniature, le titre et les balises.
 
@@ -30,9 +30,9 @@ Les exemples de pages suivants sont inclus dans Geometrixx :
 
 ### Configuration de clientlib {#configuring-clientlib}
 
-[!DNL Experience Manager Assets] Les composants utilisent une extension de la bibliothèque cliente de modification de la gestion du contenu web. Les clientlibs sont généralement chargés dans `init.jsp`.
+Les composants d’[!DNL Experience Manager Assets] utilisent une extension du clientlib de modification de la gestion du contenu Web. Les clientlibs sont généralement chargés dans `init.jsp`.
 
-Par rapport au chargement du clientlib par défaut (au cœur d’`init.jsp`), un modèle doit répondre aux exigences suivantes :[!DNL Assets]
+Par rapport au chargement du clientlib par défaut (dans le `init.jsp` du cœur), un modèle [!DNL Assets] doit répondre aux exigences suivantes :
 
 * Le modèle doit inclure le clientlib `cq.dam.edit` (au lieu de `cq.wcm.edit`).
 
@@ -42,17 +42,17 @@ Dans la plupart des cas, la copie de l’exemple existant de `init.jsp` (`/apps/
 
 ### Configuration des actions JS {#configuring-js-actions}
 
-Certains [!DNL Assets] Les composants requièrent des fonctions JS définies dans `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
+Certains composants d’[!DNL Assets] nécessitent des fonctions JS définies dans `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-L’exemple charge cette source JavaScript dans `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+Cet exemple charge cette source JavaScript dans `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Feuilles de style supplémentaires {#additional-style-sheets}
 
-Certains [!DNL Assets] Les composants utilisent la variable [!DNL Experience Manager] bibliothèque de widgets. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
+Certains composants [!DNL Assets] utilisent la bibliothèque de widgets. [!DNL Experience Manager] Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">

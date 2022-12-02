@@ -44,8 +44,8 @@ Les emplacements de référentiel par défaut où la charge utile, les brouillon
  <tbody> 
   <tr> 
    <td> </td> 
-   <td>AEM 6.4 Forms</td> 
-   <td>AEM 6.3 Forms</td> 
+   <td>AEM 6.4 Forms</td> 
+   <td>AEM 6.3 Forms</td> 
   </tr> 
   <tr> 
    <td><strong>Instance <br /> de flux de travail</strong></td> 

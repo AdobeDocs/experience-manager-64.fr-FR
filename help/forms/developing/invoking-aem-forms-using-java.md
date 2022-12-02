@@ -62,7 +62,7 @@ Pour appeler un service AEM Forms par programmation à l’aide de l’API Java
 
 >[!NOTE]
 >
->(Clé en main uniquement) Démarrez le serveur AEM Forms à l’aide de la commande `standalone.bat -b <Server IP> -c lc_turnkey.xml` pour spécifier une adresse IP de serveur pour EJB..
+>(Clé en main uniquement) Démarrez le serveur AEM Forms à l’aide de la commande `standalone.bat -b <Server IP> -c lc_turnkey.xml` pour spécifier une adresse IP de serveur pour EJB. 
 
 * Le serveur d’applications J2EE sur lequel AEM Forms est déployé.
 

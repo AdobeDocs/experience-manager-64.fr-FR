@@ -13,7 +13,7 @@ exl-id: 83e73a5d-c6fa-426a-8476-78769ae7a8c1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1447'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ La segmentation est un élément clé de la création d’une campagne. Voir [Ge
 
 En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies requis pour votre contenu ciblé.
 
-Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la variable [Personnalisation](/help/sites-authoring/personalization.md) du site Web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
+Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Personnalisation](/help/sites-authoring/personalization.md) du site web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
 AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs. Il vous permet également de vérifier les résultats de vos définitions de segment.
 
@@ -47,7 +47,7 @@ L’**éditeur de segment** vous permet de modifier facilement un segment. Pour 
 
 Avec l’explorateur de composants, vous pouvez ajouter des conteneurs **ET** et **OU** pour définir la logique de segment, puis ajouter des composants supplémentaires pour comparer les propriétés et les valeurs ou référencer des scripts et d’autres segments afin de définir les critères de sélection (voir la rubrique [Création d’un nouveau segment](#creating-a-new-segment)) pour définir le scénario exact de sélection du segment.
 
-Lorsque l’intégralité de l’instruction est vraie, alors le segment a été résolu. Si plusieurs segments sont applicables, le facteur **Amplifier** est également utilisé. Voir [Création d’un segment](#creating-a-new-segment)[ pour plus d’informations sur le facteur Amplifier.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Lorsque l’intégralité de l’instruction est vraie, alors le segment a été résolu. Si plusieurs segments sont applicables, le facteur **Amplifier** est également utilisé. Consultez la section [Création d’un segment](#creating-a-new-segment) pour plus d’informations sur le [facteur Amplifier](/help/sites-administering/campaign-segmentation.md#boost-factor).
 
 >[!CAUTION]
 >
@@ -128,13 +128,13 @@ Les références suivantes sont disponibles clé en main pour établir un lien d
 
 ## Création d’un segment {#creating-a-new-segment}
 
-Pour définir votre nouveau segment :
+Pour définir votre nouveau segment, procédez comme suit :
 
 1. Après avoir [accédé aux segments](/help/sites-administering/segmentation.md#accessing-segments), appuyez ou cliquez sur le bouton Créer et sélectionnez **Créer un segment ContextHub**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. Dans la section **Nouveau segment ContextHub**, tapez un titre pour le segment, ainsi qu’une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
+1. Dans la section **Nouveau segment ContextHub**, entrez un titre pour le segment, ainsi qu’une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -168,7 +168,7 @@ OU
 
 Femme et entre 30 et 59 ans
 
-Commencez par placer un composant de conteneur OU dans le conteneur ET par défaut. Dans le conteneur OU, vous ajoutez deux conteneurs ET ; dans ces deux conteneurs, vous pouvez ajouter la propriété ou les composants de référence.
+Commencez par placer un composant de conteneur OU dans le conteneur ET par défaut. Dans le conteneur OU, ajoutez deux conteneurs ET puis, dans ces deux conteneurs, vous pouvez ajouter les composants de propriété ou de référence.
 
 ![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145am.png)
 
@@ -263,4 +263,4 @@ Si vous avez configuré une activité et une expérience à l’aide du segment 
 
 ## Utilisation de votre segment {#using-your-segment}
 
-Les segments sont utilisés afin d’orienter le contenu réel affiché pour une audience cible spécifique. Voir [Gestion des audiences](/help/sites-authoring/managing-audiences.md) pour plus d’informations sur les audiences et les segments et [Création de contenu ciblé](/help/sites-authoring/content-targeting-touch.md) pour plus d’informations sur l’utilisation des audiences et des segments afin de cibler du contenu.
+Les segments sont utilisés afin d’orienter le contenu réel affiché pour une audience cible spécifique. Consultez la section [Gestion des audiences](/help/sites-authoring/managing-audiences.md) pour plus d’informations sur les audiences et les segments et [Création de contenu ciblé](/help/sites-authoring/content-targeting-touch.md) pour plus d’informations sur l’utilisation des audiences et des segments afin de cibler du contenu.

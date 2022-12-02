@@ -1,5 +1,5 @@
 ---
-title: Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector
+title: Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector
 seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
 description: Découvrez les licences, les notices de copyright et les clauses de non-responsabilité de SharePoint Connector.
 seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
@@ -13,11 +13,11 @@ exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
 Cette section répertorie l’ensemble des licences, des notices de copyright et des clauses de non-responsabilité qui doivent être présentées explicitement avec Day JCR Connector for Microsoft SharePoint.
 
@@ -27,40 +27,40 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les
 
 | Bibliothèque | Type de licence |
 |---|---|
-| annogen | [Apache ](#apache) |
-| axiom-api | [Apache ](#apache) |
-| axiom-dom | [Apache ](#apache) |
-| axiom-impl | [Apache ](#apache) |
-| axis2-adb | [Apache ](#apache) |
-| axis2-kernel | [Apache ](#apache) |
-| Backport-util-concurrent | Domaine public |
-| commons-codec | [Apache ](#apache) |
-| commons-collections | [Apache ](#apache) |
-| commons-fileupload | [Apache ](#apache) |
-| commons-httpclient | [Apache ](#apache) |
-| commons-io | [Apache ](#apache) |
-| commons-lang | [Apache ](#apache) |
-| simultané | [Contextuel](#concurrent) (Domaine public) |
-| geronimo-activation_1.1_spec | [Apache ](#apache) |
-| geronimo-stax-api_1.0_spec | [Apache ](#apache) |
-| httpcore | [Apache ](#apache) |
-| jackrabbit-jcr2spi | [Apache ](#apache) |
-| jackrabbit-jcr-commons | [Apache ](#apache) |
-| jackrabbit-spi-commons | [Apache ](#apache) |
-| jackrabbit-spi | [Apache ](#apache) |
+| annogen | [Apache](#apache) |
+| axiom-api | [Apache](#apache) |
+| axiom-dom | [Apache](#apache) |
+| axiom-impl | [Apache](#apache) |
+| axis2-adb | [Apache](#apache) |
+| axis2-kernel | [Apache](#apache) |
+| Backport-util-concurrent | Public domain |
+| commons-codec | [Apache](#apache) |
+| commons-collections | [Apache](#apache) |
+| commons-fileupload | [Apache](#apache) |
+| commons-httpclient | [Apache](#apache) |
+| commons-io | [Apache](#apache) |
+| commons-lang | [Apache](#apache) |
+| Concurrent | [Concurrent](#concurrent) (Domaine public) |
+| geronimo-activation_1.1_spec | [Apache](#apache) |
+| geronimo-stax-api_1.0_spec | [Apache](#apache) |
+| httpcore | [Apache](#apache) |
+| jackrabbit-jcr2spi | [Apache](#apache) |
+| jackrabbit-jcr-commons | [Apache](#apache) |
+| jackrabbit-spi-commons | [Apache](#apache) |
+| jackrabbit-spi | [Apache](#apache) |
 | jaxen | BSD |
-| log4j | [Apache ](#apache) |
-| lucene-core | [Apache ](#apache) |
-| nuthi | [Apache ](#apache) |
+| log4j | [Apache](#apache) |
+| lucene-core | [Apache](#apache) |
+| neethi | [Apache](#apache) |
 | slf4j-api | [SLF4J.ORG](#slf-j-org) |
 | slf4j-jdk14 | [SLF4J.ORG](#slf-j-org) |
-| stax-api | [Apache ](#apache) |
-| wsdl4j | [Apache ](#apache) |
-| wstx-asl | [Apache ](#apache) |
-| xalan | [Apache ](#apache) |
-| xbean | [Apache ](#apache) |
+| stax-api | [Apache](#apache) |
+| wsdl4j | [Apache](#apache) |
+| wstx-asl | [Apache](#apache) |
+| xalan | [Apache](#apache) |
+| xbean | [Apache](#apache) |
 | xml-apis | [Apache](#apache) (contient des portions couvertes par les licences de domaine public et de logiciels W3C) |
-| XmlSchema | [Apache ](#apache) |
+| XmlSchema | [Apache](#apache) |
 
 ## Présentation des bibliothèques CRX tierces {#overview-of-crx-rd-party-libraries}
 
@@ -81,27 +81,27 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans CRX
   </tr> 
   <tr> 
    <td>commons-codec-1.3.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>commons-collections-3.1.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>commons-httpclient-3.0.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>commons-logging-1.0</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>concurrent-1.3.4.jar</td> 
-   <td><a href="#concurrent">Contextuel</a></td> 
+   <td><a href="#concurrent">Concurrent</a></td> 
   </tr> 
   <tr> 
    <td>derby-10.1.2.1.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>hsqldb-1.8.0.4.jar</td> 
@@ -109,7 +109,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans CRX
   </tr> 
   <tr> 
    <td>jaxen-1.1-beta-6.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>jcr-1.0.jar</td> 
@@ -121,11 +121,11 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans CRX
   </tr> 
   <tr> 
    <td>log4j-1.2.8.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>lucene-1.4.3.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>pdfbox-0.7.2.jar</td> 
@@ -133,11 +133,11 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans CRX
   </tr> 
   <tr> 
    <td>poi-2.5.1-day.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>poi-scratchpad-20041101.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>slf4j-log4j12-1.0.jar</td> 
@@ -145,11 +145,11 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans CRX
   </tr> 
   <tr> 
    <td>xercesImpl-2.6.2.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>xmlParserAPIs-2.0.2.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
  </tbody> 
 </table>
@@ -170,19 +170,19 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
   </tr> 
   <tr> 
    <td>ant-1.6.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>geronimo-spec-j2ee-connector-1.0-M1.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>jasper-compiler-4.1.30-cqse.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>jasper-runtime-4.1.30-cqse.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>jdom-1.0.jar</td> 
@@ -190,7 +190,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
   </tr> 
   <tr> 
    <td>log4j-1.2.8.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td>portlet-api-1.0.jar</td> 
@@ -202,7 +202,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
   </tr> 
   <tr> 
    <td>xml-apis-2.0.2.jar</td> 
-   <td><a href="#apache">Apache </a></td> 
+   <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
    <td><br /> </td> 
@@ -219,7 +219,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
  </tbody> 
 </table>
 
-## Apache  {#apache}
+## Apache {#apache}
 
 ```xml
                                 Apache License

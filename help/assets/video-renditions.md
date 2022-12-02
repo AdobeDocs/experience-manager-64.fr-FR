@@ -8,13 +8,13 @@ exl-id: 9fc93034-e83a-42b5-901d-7867b4a850a8
 source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Rendus vidéo {#video-renditions}
 
-Adobe Experience Manager Assets génère des rendus vidéo pour les ressources vidéo de différents formats, notamment OGG, FLV, etc.
+Adobe Experience Manager Assets génère des rendus vidéo pour les ressources vidéo de différents formats, dont OGG, FLV, etc.
 
 Le composant AEM Assets prend en charge les rendus statiques et dynamiques (rendus avec codage DM) pour les ressources multimédias.
 
@@ -32,7 +32,7 @@ La liste des rendus vidéo s’affiche dans le panneau **[!UICONTROL Rendus.]**
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-Pour configurer le serveur proxy des rendus codés en MD, [configurez les services cloud Dynamic Media](config-dynamic.md).
+Pour configurer le serveur proxy des rendus codés DM, [configurez les services cloud Dynamic Media.](config-dynamic.md)
 
 Pour générer des rendus vidéo avec les paramètres souhaités, [créez un profil vidéo correspondant](video-profiles.md).
 

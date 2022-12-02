@@ -12,7 +12,7 @@ discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: 66045e67-4d33-4c0c-81d7-d4287ed68ccc
 source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1514'
 ht-degree: 9%
 
 ---
@@ -183,7 +183,7 @@ Un assistant pour renvoyer du contenu en fonction d’une condition d’égalit�
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Une assistance par bloc qui teste la valeur actuelle de [Mode WCM](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) dans une liste de modes séparés par des chaînes.
+Une assistance par bloc qui teste la valeur actuelle de [Mode WCM](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) dans une liste de modes séparés par des chaînes.
 
 ### Paramètres {#parameters-4}
 
@@ -457,7 +457,7 @@ REMARQUE : cela peut renvoyer une chaîne vide
 * Le contexte peut être une chaîne, un nombre, une valeur booléenne ou un objet de données JSON.
 * Il est possible de transmettre un objet imbriqué dans le contexte actuel en tant que contexte, par exemple `this.url` ou `this.id` (voir les exemples suivants d’aides simples et par blocs).
 
-* Les assistants de bloc sont des fonctions qui peuvent être appelées à partir de n’importe quel emplacement du modèle. Ils peuvent appeler un bloc du modèle zéro ou plusieurs fois avec un contexte différent à chaque fois. Ils contiennent un contexte entre {{#*name*}} et {{/*name*}}.
+* Les assistants de bloc sont des fonctions qui peuvent être appelées à partir de n’importe quel emplacement du modèle. Ils peuvent appeler un bloc du modèle zéro ou plusieurs fois avec un contexte différent à chaque fois. Ils contiennent un contexte entre {{#*name*}} and {{/*name*}}.
 
 * Handlebars fournit un paramètre final aux assistants nommés &quot;options&quot;. L’objet spécial &quot;options&quot; inclut
 

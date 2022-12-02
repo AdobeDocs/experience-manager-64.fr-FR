@@ -1,5 +1,5 @@
 ---
-title: Conventions de dénomination
+title: Conventions de nommage
 seo-title: Naming Conventions
 description: Tirets dans le nom de module Java
 seo-description: Hyphens in Java Package Name
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ---
 
-# Conventions de dénomination {#naming-conventions}
+# Conventions de nommage {#naming-conventions}
 
 ## Tirets dans le nom de module Java {#hyphens-in-java-package-name}
 

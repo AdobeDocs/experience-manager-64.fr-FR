@@ -1423,7 +1423,7 @@ Avec les paramètres par défaut, le composant ressemble à celui-ci :
 
 ### Groupe de cases d’option {#radio-group}
 
-Un groupe de cases d&#39;option fournit une liste composée d&#39;une ou de plusieurs cases d&#39;option (une seule case peut être sélectionnée à un moment donné).
+Un groupe de cases d’option fournit une liste composée d’une ou de plusieurs cases d’option (une seule case peut être sélectionnée à un moment donné).
 
 Spécifiez le nom de l’élément avec un titre et une description. À l’aide des boutons + et -, ajoutez ou supprimez des éléments, placez-les à l’aide des touches Haut et Bas et spécifiez une valeur par défaut, le cas échéant :
 

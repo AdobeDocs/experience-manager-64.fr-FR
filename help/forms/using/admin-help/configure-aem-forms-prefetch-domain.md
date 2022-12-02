@@ -1,7 +1,7 @@
 ---
 title: Configurer AEM Forms pour la prélecture des informations de domaine
 seo-title: Configure AEM forms to prefetchdomain information
-description: 'Configurez AEM Forms pour prérécupérer les informations de domaine si vous rencontrez un délai de réponse plus lent en raison de groupes imbriqués profondément ou si vous êtes membre de nombreux groupes. '
+description: Configurez AEM Forms pour prérécupérer les informations de domaine si vous rencontrez un délai de réponse plus lent en raison de groupes imbriqués profondément ou si vous êtes membre de nombreux groupes.
 seo-description: Configure AEM forms to prefetch domain information if you experience a slower response time due to deeply nested groups or if you are a member of many groups.
 uuid: 53c8995e-3f9d-42e8-9f75-cee7debe6ce1
 contentOwner: admin

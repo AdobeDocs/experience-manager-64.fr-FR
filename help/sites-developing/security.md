@@ -7,7 +7,7 @@ exl-id: 22c48f8c-38df-4c9b-88cf-67f6ae46e7e1
 source-git-commit: 70d86d2a8c9654a52a2d2c4a000cc101c54a4552
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 76%
+ht-degree: 86%
 
 ---
 
@@ -35,7 +35,7 @@ Il est important que vous adaptiez cette configuration à vos besoins en matièr
 >
 >Il est vivement conseillé de toujours accéder à l’API de protection XSS en utilisant l’interface [XSSAPI fournie par AEM](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
-En outre, un pare-feu d’application Web, tel que [mod_security pour Apache](https://www.modsecurity.org), peut fournir un contrôle centralisé fiable sur la sécurité de l’environnement de déploiement, ainsi qu’une protection contre les attaques XSS qui n’étaient pas détectées précédemment.
+En outre, un pare-feu d’application web, tel que le [mod_security pour Apache](https://www.modsecurity.org), peut fournir un contrôle centralisé fiable sur la sécurité de l’environnement de déploiement, ainsi qu’une protection contre les attaques XSS qui n’étaient pas détectées précédemment.
 
 ## Accès aux informations de service cloud {#access-to-cloud-service-information}
 
@@ -51,10 +51,10 @@ Le module webservicesupport enregistre des statistiques et des informations de c
 
 Avec les autorisations par défaut :
 
-* Environnement de création : `read` pour `contributors`
+* Environnement de création : `read` pour `contributors`
 
-* Environnement de publication : `read` pour `everyone`
+* Environnement de publication : `read` pour `everyone`
 
-## Protection contre les attaques par falsification de requête intersite {#protect-against-cross-site-request-forgery-attacks}
+## Protection contre les attaques CRSF {#protect-against-cross-site-request-forgery-attacks}
 
 Pour plus d’informations sur les mécanismes de sécurité utilisés par AEM pour atténuer les attaques CSRF, voir la section [Filtre de référent Sling](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) de la liste de contrôle de sécurité et de la section [Documentation du framework de protection CSRF](/help/sites-developing/csrf-protection.md).

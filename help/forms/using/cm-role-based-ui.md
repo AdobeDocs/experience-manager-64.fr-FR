@@ -40,9 +40,9 @@ Pour plus d’informations sur les groupes, les autorisations, les listes de con
 
 1. Pour accéder à la sécurité AEM WCM, effectuez l’une des opérations suivantes :
 
-   1. Dans l’écran de bienvenue ou à différents emplacements d’AEM, cliquez sur l’icône de sécurité :
+   1. Dans l’écran d’accueil ou à différents emplacements d’AEM, cliquez sur l’icône de sécurité :
 
-   1. Accédez directement à `https://[server]:[port]/useradmin`. Assurez-vous de vous connecter à AEM en tant qu’administrateur.
+   1. Accédez directement à `https://[server]:[port]/useradmin`. Assurez-vous de vous connecter à AEM avec des droits d’administration.
 
       ![]()
    L’arborescence de gauche répertorie tous les utilisateurs et groupes actuellement dans le système. Vous pouvez sélectionner les colonnes que vous souhaitez afficher, trier le contenu des colonnes et même modifier l’ordre dans lequel les colonnes sont affichées en faisant glisser l’en-tête de colonne vers la nouvelle position souhaitée.

@@ -1,5 +1,5 @@
 ---
-title: 'À propos de Document Security '
+title: À propos de Document Security
 seo-title: About document security
 description: Découvrez comment vous pouvez facilement créer, stocker et appliquer des paramètres de confidentialité prédéfinis et répartir vos informations en toute sécurité à l’aide de Document Security.
 seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.

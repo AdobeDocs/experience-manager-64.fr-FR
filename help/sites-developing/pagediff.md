@@ -13,7 +13,7 @@ exl-id: 365e944d-d8a3-4f4e-8925-88629845232f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 73%
+ht-degree: 79%
 
 ---
 
@@ -57,7 +57,7 @@ Une tâche de nettoyage s’exécute automatiquement pour nettoyer ce contenu te
 
 ## Limitations de développeur {#developer-limitations}
 
-Auparavant, dans l’interface utilisateur classique, une attention particulière devait être accordée au développement pour faciliter AEM différences (comme l’utilisation de `cq:text` bibliothèque de balises ou intégration personnalisée `DiffService` Service OSGi dans les composants). Cela n’est plus nécessaire pour la nouvelle fonction de comparaison (diff), puisque cela s’effectue du côté client via la comparaison DOM.
+Auparavant, dans l’IU classique, il fallait prêter une attention particulière sur le plan du développement pour permettre la comparaison AEM (par exemple pour l’utilisation de la bibliothèque de balises `cq:text` ou pour l’intégration personnalisée du service OSGi `DiffService` dans des composants). Cela n’est plus nécessaire pour la nouvelle fonction de comparaison (diff), puisque cela s’effectue du côté client via la comparaison DOM.
 
 Cependant, il subsiste un certain nombre de restrictions qui doivent être prises en compte par le développeur.
 

@@ -28,7 +28,7 @@ L’intégration de données AEM Forms permet de configurer des sources de donn
 * Profil utilisateur AEM
 * Services web RESTful
 * Services web SOAP
-* Services OData
+* Services OData 
 
 L’intégration de données prend en charge l’authentification OAuth2.0, de base ou par clé API par défaut, et permet de mettre en œuvre une authentification personnalisée pour accéder aux services web. Alors que les services RESTful, SOAP et OData sont configurés dans les services cloud AEM, JDBC pour les bases de données relationnelles et Connector pour le profil utilisateur AEM sont configurés dans la console Web AEM.
 

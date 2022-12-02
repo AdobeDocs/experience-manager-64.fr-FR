@@ -16,7 +16,7 @@ ht-degree: 96%
 
 En savoir plus sur Lightbox dans [!DNL Experience Manager] Ressources.
 
-Lightbox est un type spécial de collection fournissant un accès aisé aux ressources. Vous pouvez accéder rapidement à Lightbox pour ajouter ou supprimer des ressources. Il sert de galerie d’images personnelle.
+Lightbox est un type spécial de collection fournissant un accès facile aux ressources. Vous pouvez accéder rapidement à Lightbox pour ajouter ou supprimer des ressources. Il sert de galerie d’images personnelle.
 
 Si vous êtes utilisateur Adobe Experience Manager Assets, Lightbox est créé automatiquement la première fois que vous vous connectez à l’application. Il est exclusif à votre connexion. Les autres utilisateurs ne peuvent pas accéder à votre Lightbox.
 

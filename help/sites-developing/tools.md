@@ -13,7 +13,7 @@ exl-id: 9387cdb4-f8de-4229-90d1-59218ac17561
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 AEM fournit les éléments suivants :
 
-* [Une structure pour tester l’interface utilisateur des composants](/help/sites-developing/hobbes.md).
+* [Un framework pour tester l’interface utilisateur des composants](/help/sites-developing/hobbes.md).
 * [Un mécanisme pour tester et déboguer les composants](/help/sites-developing/developer-mode.md).
 
 Les deux outils suivants sont des outils de test Open Source :
@@ -32,7 +32,7 @@ Les deux outils suivants sont des outils de test Open Source :
 
 Selenium est utilisé pour le test de fonctions dans un navigateur avec un seul utilisateur par activité. Il enregistre les étapes de test (clics) sous la forme de tableaux HTML ou de classes Java.
 
-Pour plus d’informations, voir [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Pour plus d’informations, consultez [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 

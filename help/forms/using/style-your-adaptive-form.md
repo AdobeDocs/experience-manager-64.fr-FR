@@ -1,7 +1,7 @@
 ---
-title: 'Application d’un style à votre formulaire adaptatif '
+title: Application d’un style à votre formulaire adaptatif
 seo-title: Style your adaptive form
-description: 'Apprenez à créer un thème personnalisé, à appliquer un style à des composants individuels et à utiliser les polices web dans un thème. '
+description: Apprenez à créer un thème personnalisé, à appliquer un style à des composants individuels et à utiliser les polices web dans un thème.
 seo-description: Learn to create a custom theme, style individual components, and use web fonts in a theme
 page-status-flag: de-activated
 uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
@@ -445,7 +445,7 @@ Adobe Typekit est un service de polices web d’Adobe. Vous pouvez configurer et
 
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit s’appelle désormais Adobe Fonts et est fourni avec Creative Cloud et d’autres abonnements. [En savoir plus](https://fonts.adobe.com/).
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit s’appelle désormais Adobe Fonts et est fourni avec Creative Cloud et d’autres abonnements. [En savoir plus](https://fonts.adobe.com/)
 
 1. Créez un [Adobe Typekit](https://typekit.com/) créer un kit, ajouter la police Myriad Pro au kit, publier le kit et obtenir l’identifiant du kit. Il est nécessaire d’utiliser les polices Adobe Typekit (polices web) dans un formulaire adaptatif.
 1. Dans le serveur AEM Forms, accédez à ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Outils** ![marteau](assets/hammer.png) > **Déploiement** > **Cloud Services**. Sur la page Cloud Services, accédez à **Services tiers** > **Typekit**, puis cliquez sur **Configurer** Maintenant sous Typekit. Si une configuration est déjà disponible, cliquez sur le bouton + pour créer une nouvelle instance.

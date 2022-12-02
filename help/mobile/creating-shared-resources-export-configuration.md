@@ -46,7 +46,6 @@ La configuration de synchronisation de contenu se trouve à l’adresse **&lt;dp
 >* installation de l’exemple de contenu
 >* exécution de l’instance AEM
 >* aucun contexte personnalisé configuré ou port différent
-
 >
 
 

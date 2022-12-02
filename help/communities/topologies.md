@@ -108,6 +108,6 @@ Si vous choisissez [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) pour la p
 
    Fondamentalement, le contenu du site est stocké dans un magasin de noeuds. Pour Assets, un entrepôt de données peut être configuré pour stocker des données binaires. Pour Communities, un magasin commun doit être configuré pour sélectionner la SRP.
 
-* [Éléments de stockage dans AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Éléments de stockage dans AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
    Décrit les deux implémentations de stockage de noeud : Tar et MongoDB.

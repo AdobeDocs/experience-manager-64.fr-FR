@@ -50,7 +50,7 @@ Si l’environnement de publication est une ferme d’éditeurs, il est nécessa
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
-* **[!UICONTROL Télécharger l’image]**
+* **[!UICONTROL Charger l’image]**
 
    (*Obligatoire*) Une image de badge d’une taille recommandée de 32 x 32 pixels à 72 ppp au format JPEG ou PNG.
 

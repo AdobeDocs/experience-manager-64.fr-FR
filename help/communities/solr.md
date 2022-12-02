@@ -24,7 +24,7 @@ ht-degree: 3%
 
 Un [Apache Solr](https://lucene.apache.org/solr/) l’installation peut être partagée entre les [magasin de noeuds](../../help/sites-deploying/data-store-config.md) (Oak) et [magasin commun](working-with-srp.md) (SRP) en utilisant différentes collections.
 
-If both the Oak and SRP collections are used intensively, a second Solr may be installed for performance reasons.
+Si les collections Oak et SRP sont utilisées de manière intensive, un second Solr peut être installé pour des raisons de performances.
 
 Pour les environnements de production, [Mode SolrCloud](#solrcloud-mode) offre de meilleures performances par rapport au mode autonome (une seule configuration Solr locale).
 
@@ -86,7 +86,7 @@ Référence:\
 [https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Utilisation:\
-./bin/solr create \\
+ /bin/solr create \\
 -c *mycollection-name*\\
 -d *config-dir* \\
 -n *myconfig-name* \\
@@ -116,18 +116,18 @@ MLS pour les communautés d’AEM est disponible en tant que MLS standard ou MLS
 
 Le MLS standard comprend des améliorations pour la recherche de contenu dans les langues suivantes :
 
-* English: improved stemmer for attempting to match word derivations
+* Anglais : Amélioration du moteur de recherche pour tenter de faire correspondre les dérivations de mots
 * Japonais : amélioration de la segmentation en jetons japonais pour les caractères demi-largeur
 
 Le MLS avancé comprend des améliorations pour la recherche de contenu dans les langues suivantes :
 
 * Anglais : briquet remplacé par un lemmatizer
 * Allemand : added décomposator
-* French: added elision handling
+* Français : ajout de la gestion des élations ;
 * Chinois (simplifié) : ajout d’un jeton plus intelligent
 * Diverses langues : ajout d’un moteur de recherche, d’une liste de mots vides et d’un normaliseur.
 
-In all, the following 33 languages are supported in Advanced MLS.
+Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 
 | Arabe | Allemand | Norvégien |
 |---|---|---|
@@ -176,9 +176,9 @@ Les fichiers MLS standard sont stockés dans le référentiel AEM.
    * Sélectionner `view` pour lancer le téléchargement
    * Assurez-vous que les fichiers sont enregistrés avec les noms et le codage appropriés (UTF8).
 
-1. Follow the installation instructions for either standalone or SolrCloud mode
+1. Suivez les instructions d’installation pour le mode autonome ou SolrCloud .
 
-#### SolrCloud Mode - Standard MLS {#solrcloud-mode-standard-mls}
+#### Mode SolrCloud - MLS standard {#solrcloud-mode-standard-mls}
 
 1. Installation et configuration de Solr en mode SolrCloud
 1. Préparez une nouvelle configuration :
@@ -187,8 +187,8 @@ Les fichiers MLS standard sont stockés dans le référentiel AEM.
 
    1. Copiez le contenu du répertoire de configuration Solr existant dans *new-config-dir*
 
-      * For Solr4: copy *solr-install-dir*/example/solr/collection1/conf/&amp;ast;
-      * For Solr5: copy *solr-install-dir*/server/solr/configsets/data_driven_schema_configs/&amp;ast;
+      * Pour Solr4 : copy *solr-install-dir*/example/solr/collection1/conf/&amp;ast;
+      * Pour Solr5 : copy *solr-install-dir*/server/solr/configsets/data_led_schema_configs/&amp;ast;
    1. Copiez le téléchargé **schema.xml** et **solrconfig.xml** to *new-config-dir* pour remplacer des fichiers existants
 
 
@@ -203,8 +203,8 @@ Les fichiers MLS standard sont stockés dans le référentiel AEM.
 1. Installation de Solr en mode autonome
 1. Si vous exécutez Solr5, créez une collection1 (semblable à Solr4) :
 
-   * ./bin/solr start
-   * ./bin/solr create_core -c collection1 -d sample_techproducts_configs
+   *  /bin/solr start
+   *  /bin/solr create_core -c collection1 -d sample_techproducts_configs
 
 1. Sauvegarde **schema.xml** et **solrconfig.xml** dans le répertoire de configuration Solr, par exemple :
 
@@ -218,21 +218,21 @@ Les fichiers MLS standard sont stockés dans le référentiel AEM.
 
 ### Installation de MLS avancés {#installing-advanced-mls}
 
-Pour que la collection SRP (MSRP ou DSRP) prenne en charge les MLS avancés, de nouveaux modules externes Solr sont requis en plus d’un schéma personnalisé et d’une configuration Solr. Tous les éléments requis sont compressés dans un fichier ZIP téléchargeable. In addition, an install script is included for use when Solr is deployed in standalone mode.
+Pour que la collection SRP (MSRP ou DSRP) prenne en charge les MLS avancés, de nouveaux modules externes Solr sont requis en plus d’un schéma personnalisé et d’une configuration Solr. Tous les éléments requis sont compressés dans un fichier ZIP téléchargeable. En outre, un script d’installation est inclus pour une utilisation lorsque Solr est déployé en mode autonome.
 
 Pour obtenir le package MLS avancé, voir [AEM MLS avancés](deploy-communities.md#aem-advanced-mls) dans la section deploy de la documentation.
 
 Pour commencer à installer SolrCloud ou le mode autonome, procédez comme suit :
 
 * Téléchargez l’archive zip AEM-SOLR-MLS sur le serveur hébergeant Solr.
-* Unpack the archive
+* Décompresser l’archive
 
 #### Mode SolrCloud - MLS avancé {#solrcloud-mode-advanced-mls}
 
-Installation instructions - note the few differences for Solr4 and Solr5:
+Instructions d’installation - Notez les quelques différences pour Solr4 et Solr5 :
 
 1. Installation et configuration de Solr en mode SolrCloud
-1. Extract the contents of the Advanced MLS package to disk. The contents should include:
+1. Extrayez le contenu du package MLS avancé sur le disque. Le contenu doit inclure :
 
    * **schema.xml**
    * **solrconfig.xml**
@@ -290,8 +290,8 @@ Une fois que le contenu du package a été extrait sur le serveur hébergeant le
 * Installation de Solr en mode autonome
 * Si vous exécutez Solr5, créez une collection1 (semblable à Solr4) :
 
-   * ./bin/solr start
-   * ./bin/solr create_core -c collection1 -d sample_techproducts_configs
+   *  /bin/solr start
+   *  /bin/solr create_core -c collection1 -d sample_techproducts_configs
 
 * Exécutez le script d’installation : Installer [-v 4|5] [-d solrhome] [-c collectionpath]
 où :
@@ -322,13 +322,13 @@ où :
 
 **Remarque** :
 
-* The install script will back-up schema.xml and solrconfig.xml before installing new versions by appending &quot;.orig&quot;
+* Le script d’installation sauvegarde schema.xml et solrconfig.xml avant d’installer de nouvelles versions en ajoutant &quot;.orig&quot;.
 
-### About solrconfig.xml {#about-solrconfig-xml}
+### A propos de solrconfig.xml {#about-solrconfig-xml}
 
 Le **solrconfig.xml** contrôle l’intervalle de validation automatique et la visibilité de la recherche. Il nécessite des tests et des réglages.
 
-&lt;autoCommit>: By default, the AutoCommit interval, which is a hard commit to stable storage, is set to 15 seconds. La visibilité de la recherche utilise par défaut l’index de pré-validation.
+&lt;autocommit>: Par défaut, l’intervalle AutoCommit, qui est une validation hard vers un stockage stable, est défini sur 15 secondes. La visibilité de la recherche utilise par défaut l’index de pré-validation.
 
 Pour modifier la recherche afin d’utiliser un index mis à jour pour refléter les modifications dues à la validation, modifiez le contenu &lt;opensearcher> sur true.
 

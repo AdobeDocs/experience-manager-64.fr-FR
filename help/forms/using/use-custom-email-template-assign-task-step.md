@@ -1,7 +1,7 @@
 ---
 title: Utilisation des modèles de courrier électronique personnalisés dans une étape Affecter une tâche
 seo-title: Use custom email templates in an Assign Task step
-description: 'Modèles de courrier électronique personnalisés pour les notifications électroniques de processus de formulaires '
+description: Modèles de courrier électronique personnalisés pour les notifications électroniques de processus de formulaires
 seo-description: Custom email templates for forms workflow email notifications
 uuid: bc2af94d-d4ad-417e-b3d2-bcfffc1b306d
 topic-tags: publish

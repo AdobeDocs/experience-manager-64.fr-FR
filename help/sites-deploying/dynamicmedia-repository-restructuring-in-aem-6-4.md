@@ -13,7 +13,7 @@ exl-id: 1323ee60-c80c-4eed-b3e5-aa0f0c07e6ee
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 68%
+ht-degree: 89%
 
 ---
 
@@ -24,14 +24,14 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
 **Avant de procéder à la mise à niveau vers la version 6.5**
 
 * [Configurations personnalisées du codage vidéo adaptatif](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#custom-adaptive-video-encoding-configurations)
-* [Configuration du cloud Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
-* [Configuration du service cloud Dynamic Media (version hybride DM)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
-* [Dynamic Media - Configuration du service cloud YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
+* [Configuration du cloud Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
+* [Configuration du service cloud Dynamic Media (version hybride de DM)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
+* [Dynamic Media - Configuration du service cloud YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
 * [Divers](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
 
 ## Avant de procéder à la mise à niveau vers la version 6.5 {#prior-to-upgrade}
 
-### Configurations personnalisées du codage de vidéo adaptative  {#custom-adaptive-video-encoding-configurations}
+### Configurations personnalisées du codage vidéo adaptatif  {#custom-adaptive-video-encoding-configurations}
 
 <table> 
  <tbody>
@@ -44,7 +44,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
    <td><code>/conf/global/settings/dam/dm/presets/video/jcr:content</code></td> 
   </tr>
   <tr>
-   <td><strong>Conseil de restructuration</strong></td> 
+   <td><strong>Conseils de restructuration</strong></td> 
    <td><p>Vous pouvez exécuter le script de migration suivant pour migrer vers le nouvel emplacement :</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Vous pouvez également modifier la configuration dans l’interface utilisateur d’AEM. Les modifications seront enregistrées au nouvel emplacement.</p> </td> 
   </tr>
   <tr>
@@ -54,7 +54,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
  </tbody>
 </table>
 
-### Configuration du cloud Dynamic Media (DMS7) {#dynamic-media-dms-cloud-configuration}
+### Configuration du cloud Dynamic Media (DMS7) {#dynamic-media-dms-cloud-configuration}
 
 <table> 
  <tbody>
@@ -67,21 +67,21 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
    <td><code>/conf/global/settings/cloudservices/dmscene7</code></td> 
   </tr>
   <tr>
-   <td><strong>Conseil de restructuration</strong></td> 
+   <td><strong>Conseils de restructuration</strong></td> 
    <td><p>Le client peut exécuter un script de migration à cet emplacement :<br /> </p> 
     <ul> 
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
-     <li>Redémarrez le lot OSGi Dynamic Media.</li> 
+     <li>Redémarrez le lot OSGi Dynamic Media.</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td><strong>Remarques</strong></td> 
-   <td>N/A</td> 
+   <td>S/O</td> 
   </tr>
  </tbody>
 </table>
 
-### Configuration du Cloud Service Dynamic Media (hybride DM) {#cloudserviceconfiguration}
+### Configuration du service cloud Dynamic Media (version hybride de DM) {#cloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -94,7 +94,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
    <td><code>/conf/global/settings/dam/dm/cloudservices/dynamicmediaservices</code></td> 
   </tr>
   <tr>
-   <td><strong>Conseil de restructuration</strong></td> 
+   <td><strong>Conseils de restructuration</strong></td> 
    <td><p>Vous pouvez exécuter le script de migration suivant pour vous aligner sur le modèle le plus récent :</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td> 
   </tr>
   <tr>
@@ -104,7 +104,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
  </tbody>
 </table>
 
-### Dynamic Media - Configuration du Cloud Service YouTube  {#youtubecloudserviceconfiguration}
+### Dynamic Media - Configuration du service cloud YouTube  {#youtubecloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -117,8 +117,8 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
    <td><code>/libs/settings/dam/dm/youtube</code></td> 
   </tr>
   <tr>
-   <td><strong>Conseil de restructuration</strong></td> 
-   <td><p>1. Annulez la publication de toutes les vidéos de YouTube<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle interface utilisateur tactile (à partir de <code>/conf</code>), y compris la copie de tous les canaux de l’ancien emplacement ;<br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une nouvelle configuration YouTube TouchUI, plusieurs URL YouTube seront répertoriées sous Propriétés, car les chaînes recréées seront publiées à nouveau si l’occasion se présente. Cela signifie que des URL inutiles seront répertoriées sous Propriétés.</p> </td> 
+   <td><strong>Conseils de restructuration</strong></td> 
+   <td><p>1. Annulez la publication de toutes les vidéos de YouTube.<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle TouchUI (à partir de <code>/conf</code>), y compris en copiant toutes les chaînes de l’ancien emplacement.<br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une nouvelle configuration YouTube TouchUI, plusieurs URL YouTube seront répertoriées sous Propriétés, car les chaînes recréées seront publiées à nouveau si l’occasion se présente. Cela signifie que des URL inutiles seront répertoriées sous Propriétés.</p> </td> 
   </tr>
   <tr>
    <td><strong>Remarques</strong></td> 
@@ -140,12 +140,12 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
    <td><code>/conf/global/settings/dam/dm/presets/macro</code></td> 
   </tr>
   <tr>
-   <td><strong>Conseil de restructuration</strong></td> 
+   <td><strong>Conseils de restructuration</strong></td> 
    <td><p>Le client peut exécuter le script de migration ci-dessous.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Vous pouvez également modifier la configuration dans l’interface utilisateur d’AEM. Les modifications seront enregistrées au nouvel emplacement.</p> </td> 
   </tr>
   <tr>
    <td><strong>Remarques</strong></td> 
-   <td>N/A</td> 
+   <td>S/O</td> 
   </tr>
  </tbody>
 </table>
@@ -161,12 +161,12 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
    <td><code>/libs/settings/dam/dm/analytics</code></td> 
   </tr>
   <tr>
-   <td><strong>Conseil de restructuration</strong></td> 
+   <td><strong>Conseils de restructuration</strong></td> 
    <td><p>Le client peut exécuter le script de migration ci-dessous.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> </td> 
   </tr>
   <tr>
    <td><strong>Remarques</strong></td> 
-   <td>N/A</td> 
+   <td>S/O</td> 
   </tr>
  </tbody>
 </table>

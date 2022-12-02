@@ -1,5 +1,5 @@
 ---
-title: Multi-location pour les collections, les fragments et les modèles de fragments de code
+title: Fonction multiclient pour les collections, les fragments de code et les modèles de fragments de code
 description: Segmentez du contenu dans le référentiel CRX en fonction de l’organisation du client afin d’empêcher tout accès non autorisé.
 contentOwner: AG
 feature: Collections
@@ -8,11 +8,11 @@ exl-id: d00a671a-6707-4941-868d-fa13510b7b60
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 34%
+ht-degree: 43%
 
 ---
 
-# Multi-location pour les collections, les fragments et les modèles de fragments de code {#multi-tenancy-for-collections-snippets-and-snippet-templates}
+# Fonction multiclient pour les collections, les fragments de code et les modèles de fragments de code {#multi-tenancy-for-collections-snippets-and-snippet-templates}
 
 La fonction multiclient permet de séparer du contenu dans CRX en fonction du préfixe et de l’identifiant d’organisation, de sorte à protéger le contenu contre tout accès non autorisé par les utilisateurs d’autres organisations.
 
@@ -28,7 +28,7 @@ La fonctionnalité multi-location vous permet de segmenter les types de ressourc
 
 * Collections
 * Collections publiques
-* Catalogues (y compris l’assistant Ajouter/Sélectionner une page)
+* Catalogues (notamment l’assistant Ajouter/Sélectionner une page)
 * Modèles
 * Modèles de fragments de code
 * Lightbox

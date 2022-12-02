@@ -12,13 +12,13 @@ exl-id: aabfd05d-581b-4205-8e61-5667d5713cb1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Présentation des Services de document AEM {#overview-of-aem-document-services}
 
-Les Services de document AEM sont un ensemble de services OSGi permettant de créer, d’assembler et de sécuriser des documents PDF. Document Services contient les services suivants :
+Les Services de document AEM sont un ensemble de services OSGi permettant de créer, d’assembler et de sécuriser des documents PDF. Les services suivants sont disponibles dans les Services de document :
 
 ## Service Output {#output-service}
 
@@ -43,7 +43,7 @@ Les quatre opérations du service Output mentionnées ci-dessous sont disponible
 * **generatePrintedOutput** : fusionne une conception de formulaire avec des données pour générer un document à envoyer à une imprimante laser ou une imprimante d’étiquettes réseau.
 
 * **generatePDFOutputBatch** : Fusionne en un seul appel plusieurs modèles avec plusieurs enregistrements de données pour générer un lot de fichiers PDF. Il existe également une option pour générer un fichier PDF unique en combinant tous les fichiers PDF
-* **generatePrintedOutputBatch**: Fusionne plusieurs modèles avec plusieurs enregistrements de données en un seul appel pour générer un lot de documents d’impression (PS,PCL,ZPL,DPL,IPL,TPCL). Il existe également une option pour générer un document d’impression unique.
+* **generatePrintedOutputBatch** : fusionne en un seul appel plusieurs modèles avec plusieurs enregistrements de données pour générer un lot de documents d’impression (PS, PCL, ZPL, DPL, IPL, TPCL). Il existe également une option pour générer un document d’impression unique.
 
 ## Incohérence affectant le service assembleur {#assembler-service}
 
@@ -74,14 +74,14 @@ Vous pouvez utiliser DDX pour étendre les documents PDF dans le cadre de l’as
 
 * ajout ou suppression de filigranes ou d’arrière-plans sur les pages sélectionnées ; 
 * insertion ou suppression d’en-têtes et de pieds de page sur les pages sélectionnées ; 
-* suppression de la structure et des capacités de navigation dans un package PDF ou un portfolio PDF (le résultat est un fichier PDF unique) ;
-* renumérotation des intitulés de page (ces derniers sont généralement utilisés pour la numérotation des pages) ;
-* importation de métadonnées à partir d’un autre document source ; 
-* ajout ou suppression de pièces jointes, de signets, de liens, de commentaires et de tout élément JavaScript ; 
-* définition des caractéristiques d’affichage initiales et optimisation de l’affichage sur le Web ; 
-* définition de droits pour les PDF chiffrés ; 
-* rotation de pages ou rotation et déplacement du contenu des pages ; 
-* modification de la taille des pages sélectionnées ; 
+* suppression de la structure et des capacités de navigation dans un package PDF ou un portfolio PDF ; (le résultat est un fichier PDF unique) ;
+* renumérotation des intitulés de page ; (ces derniers sont généralement utilisés pour la numérotation des pages) ;
+* importation de métadonnées à partir d’un autre document source ;
+* ajout ou suppression de pièces jointes, de signets, de liens, de commentaires et de tout élément JavaScript ;
+* définition des caractéristiques d’affichage initiales et optimisation de l’affichage sur le Web ;
+* définition de droits pour les PDF chiffrés ;
+* rotation de pages ou rotation et déplacement du contenu des pages ;
+* modification de la taille des pages sélectionnées ;
 * fusion des données avec un PDF basé sur XFA.
 
 Vous pouvez utiliser une simple mise en correspondance des entrées pour indiquer l’emplacement des documents source et cible. Il est également possible d’utiliser les types d’URL suivants pour les données externes :
@@ -131,4 +131,4 @@ Le service Doc Assurance ne peut pas être utilisé immédiatement. Pour config
 
 ## Service SendToPrinter {#send-to-printer-service}
 
-Le service SendToPrinter fournit une API pour envoyer des documents vers l’imprimante spécifiée pour l’impression.
+Le service Send To Printer fournit une API pour envoyer des documents à imprimer vers l’imprimante spécifiée.

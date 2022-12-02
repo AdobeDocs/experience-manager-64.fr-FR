@@ -1,7 +1,7 @@
 ---
 title: Mosaïque Gestion de l’application
 seo-title: Manage App Tile
-description: 'Consultez cette page pour en savoir plus sur la mosaïque Gérer l’application du tableau de bord de l’application qui permet de modifier les détails de l’application. '
+description: Consultez cette page pour en savoir plus sur la mosaïque Gérer l’application du tableau de bord de l’application qui permet de modifier les détails de l’application.
 seo-description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application.
 uuid: bde75ecd-8694-427c-9b16-2c4ab2fd4d8b
 contentOwner: User
@@ -154,7 +154,7 @@ Le **Authentification** Cet onglet vous permet de sélectionner un client OAuth 
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 Une fois que vous avez appris à gérer la mosaïque d’application dans le tableau de bord de l’application, reportez-vous aux ressources suivantes pour d’autres rôles de création :
 

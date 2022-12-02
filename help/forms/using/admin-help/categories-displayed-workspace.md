@@ -1,5 +1,5 @@
 ---
-title: 'Gestion des catégories affichées dans Workspace '
+title: Gestion des catégories affichées dans Workspace
 seo-title: Managing the categories displayed in Workspace
 description: Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent dans les catégories du volet de navigation gauche. Découvrez comment gérer ces catégories affichées dans l’espace de travail.
 seo-description: In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. Learn how you can manage these categories displayed in Workspace.

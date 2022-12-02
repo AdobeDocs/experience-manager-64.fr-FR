@@ -13,13 +13,13 @@ exl-id: 5bb5f984-f741-4185-acb0-ffcf7e116875
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2124'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
 # Environnement et outils de création{#authoring-the-environment-and-tools}
 
-L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. : Les outils fournis sont accessibles dans plusieurs consoles et éditeurs de page.
+L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. Les outils fournis sont accessibles dans plusieurs consoles et éditeurs de page.
 
 ## Gestion de votre site {#managing-your-site}
 
@@ -138,8 +138,8 @@ Dans la barre d’outils supérieure de l’explorateur de ressources, vous pouv
 
 * Nom
 * Chemin
-* Type de ressource (images, manuscrits, documents, vidéos, pages, paragraphes ou produits)
-* Caractéristiques des ressources telles que l’orientation (portrait, paysage, carré) et le style (couleur, monochrome, niveaux de gris)
+* type de ressource (images, manuscrits, documents, vidéos, pages, paragraphes ou produits) ;
+* caractéristiques de ressources, telles que l’orientation (Portrait, Paysage, Carré) et le style (Couleur, Monochrome, Niveaux de gris).
 
    * Disponible uniquement pour certains types de ressources
 
@@ -230,10 +230,10 @@ Sélectionnez le type de référence approprié pour en savoir plus. Dans certai
 * [Références aux pages de produit](/help/sites-administering/generic.md#showing-product-references) (depuis la console Commerce – Produits)
 * [Lancements](/help/sites-authoring/launches.md)
 * [Live Copies](/help/sites-administering/msm.md) affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
-* [Blueprint](/help/sites-administering/msm-best-practices.md)
+* [Plan directeur](/help/sites-administering/msm-best-practices.md)
 * [Copies de langue](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel)
 
-Par exemple, vous pouvez corriger une référence rompue dans un composant Référence :
+Par exemple, vous pouvez corriger une référence rompue dans un composant Référence :
 
 ![chlimage_1-292](assets/chlimage_1-292.png)
 
@@ -270,7 +270,7 @@ Le cas échéant, le menu **Informations sur la page** propose également les op
 * [Convertir le lancement](/help/sites-authoring/launches-promoting.md) si la page correspond à un lancement.
 * [Modifier le modèle](/help/sites-authoring/templates.md) si la page est basée sur une [modèle modifiable](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [Ouvrir dans l’interface utilisateur classique](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si cette option a été [activé par un administrateur](/help/sites-administering/enable-classic-ui-editor.md)
+* [Ouvrez dans l’IU classique](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si cette option a été [activée par un administrateur](/help/sites-administering/enable-classic-ui-editor.md).
 
 Le menu **Informations sur la page** peut en outre donner accès à des analyses et recommandations, le cas échéant.
 
@@ -287,7 +287,7 @@ Lors de la modification d’une page, plusieurs modes permettent d’effectuer d
 * [Conception](/help/sites-authoring/default-components-designmode.md) : permet d’activer/désactiver les composants à utiliser sur une page et de configurer la conception du composant (si la page est basée sur un [modèle statique](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
 * [Ciblage](/help/sites-authoring/content-targeting-touch.md) : optimise la pertinence du contenu grâce au ciblage et aux mesures à l’échelle de tous les canaux.
-* [Activity Map](/help/sites-authoring/pa-using.md) : affiche les données d’analyse de la page.
+* [Activity Map](/help/sites-authoring/pa-using.md) : affiche les données d’analyse de la page.
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) : permet d’afficher le statut d’une page à un moment donné.
 * [Statut de la Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
@@ -305,7 +305,6 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* L’accès à certains modes implique que vous disposiez des droits ou autorisations appropriés.
 >* Le mode Développeur n’est pas accessible sur les appareils mobiles en raison de restrictions d’espace.
 >* Utilisez le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Disposition**, etc.).
-
 >
 
 
@@ -325,7 +324,7 @@ Si vous cliquez sur le bouton **Ouvrir la boîte de dialogue de sélection** dan
 
 ![](do-not-localize/screen_shot_2018-03-22at154427.png)
 
-### Chemin  Navigateur {#path-browser}
+### Explorateur de chemins d’accès {#path-browser}
 
 L’explorateur de chemins d’accès est organisé de la même façon que le [mode Colonnes](/help/sites-authoring/basic-handling.md#column-view) de la console Sites afin de permettre une sélection plus détaillée des ressources.
 

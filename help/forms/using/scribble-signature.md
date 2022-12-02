@@ -1,7 +1,7 @@
 ---
 title: Utilisation de la signature tactile dans les formulaires HTML5
 seo-title: Using Scribble Signature in HTML5 forms
-description: 'Les formulaires HTML5 sont de plus en plus utilisés sur les périphériques tactiles, qui prennent tous en charge les signatures. La signature des documents sur les périphériques mobiles devient une méthode acceptée de signature des formulaires. '
+description: Les formulaires HTML5 sont de plus en plus utilisés sur les périphériques tactiles, qui prennent tous en charge les signatures. La signature des documents sur les périphériques mobiles devient une méthode acceptée de signature des formulaires.
 seo-description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices.
 uuid: afac2d37-ef0d-428b-aed7-64a00d62792d
 contentOwner: robhagat
@@ -14,7 +14,7 @@ exl-id: 8b6b151d-2422-4261-9edb-66efe3d33f8b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '658'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -31,20 +31,20 @@ Les formulaires HTML5 sont de plus en plus utilisés sur les périphériques tac
 
    >[!NOTE]
    >
-   >Les Dimensions du champ sélectionné dans Forms Designer sont répercutées lors du rendu du champ. Toutefois, la dimension de la zone de signature rendue est calculée en fonction des proportions du champ et non des dimensions spécifiées dans Forms Designer.
+   >Les dimensions du champ sélectionné dans Forms Designer sont reflétées quand le champ est rendu. Toutefois, la dimension de la zone de signature rendue est calculée en fonction des proportions du champ et non des dimensions spécifiées dans Forms Designer.
 
 1. Configurez le champ de signature tactile.
 
    Par défaut, le champ de signature tactile marque les informations de géolocalisation comme étant obligatoires au cours du processus de signature sur iPad (elles sont facultatives pour les autres périphériques). Ce comportement par défaut peut être remplacé en modifiant la valeur de la propriété `geoLocMandatoryOnIpad`. Cette propriété est exposée en tant qu’extras dans le champ de signature tactile. Les étapes permettant de modifier ce champ sont les suivantes :
 
    1. Dans le formulaire, sélectionnez le champ de signature tactile.
-   1. Sélectionnez la **Source XML** .
+   1. Sélectionnez l’onglet **Source XML**.
 
       >[!NOTE]
       >
-      >Pour ouvrir le panneau Source XML, cliquez sur **Affichage** >  **Source XML**.
+      >Pour ouvrir l’onglet Source XML, cliquez sur **Affichage** > **Source XML**.
 
-   1. Recherchez la variable `<ui>` dans la balise `<field>` et modifiez le code source pour qu’il ressemble à ce qui suit :
+   1. Recherchez la balise `<ui>` dans la balise `<field>` et modifiez le code source pour qu’il ressemble à l’exemple suivant :
 
       ```xml
       <extras name="x-scribble-add-on">
@@ -83,7 +83,7 @@ Pour les iPad, ce paramètre peut être modifié en remplaçant la valeur du par
 
 ### Effacement d’une signature {#clearing-a-signature}
 
-Lors de l’utilisation de cette fonction, un utilisateur peut cliquer sur le bouton **Gomme** pour effacer le champ et recommencer. Si des informations de géolocalisation ont été ajoutées, elles sont également effacées.
+Lorsque vous utilisez cette fonctionnalité, un utilisateur peut cliquer sur l’icône **Gomme** pour effacer le champ et recommencer. Si des informations de géolocalisation ont été ajoutées, elles sont également effacées.
 
 ### Enregistrement d’une signature {#saving-a-signature}
 

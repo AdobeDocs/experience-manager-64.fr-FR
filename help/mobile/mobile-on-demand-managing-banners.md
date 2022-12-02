@@ -36,7 +36,6 @@ Les bannières représentent des liens promotionnels typiquement graphiques.
 >* [Observations relatives à la conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
 >* [Création de bannières](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
-
 >
 
 
@@ -129,7 +128,7 @@ Workflow général de suppression d’une bannière :
 1. Cliquez sur **Supprimer**.
 1. Votre bannière est maintenant supprimée de la liste.
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 Pour en savoir plus sur la gestion des bannières, voir
 

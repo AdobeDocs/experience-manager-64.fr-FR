@@ -1,7 +1,7 @@
 ---
 title: Développement du contenu des environnements de test
 seo-title: Develop Sandbox Content
-description: 'Développement de contenu '
+description: Développement de contenu
 seo-description: Develop content
 uuid: ca046cf8-f6cd-41a1-97c8-74a86fbe9cd2
 contentOwner: User

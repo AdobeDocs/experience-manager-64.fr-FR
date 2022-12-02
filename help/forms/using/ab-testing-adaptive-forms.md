@@ -49,7 +49,7 @@ Pour intégrer un serveur Target en cours d’exécution avec AEM Forms, procéd
 1. Cliquez sur **Créer**. La boîte de dialogue Modifier le composant s’ouvre.
 1. Spécifiez les détails du compte Target, tels que le code client, l’adresse et le mot de passe.
 1. Sélectionnez **Rest** dans la liste déroulante Type d’API.
-1. Cliquez sur **Se connecter à Adobe Target** pour lancer la connexion à Target. Si la connexion est établie, le message Connexion réussie s’affiche. Cliquez sur **OK** dans le message et **OK** dans la boîte de dialogue. Le compte Target est configuré.
+1. Cliquez sur **Se connecter à Adobe Target** pour lancer la connexion à Target. Si la connexion est réussie, le message Connexion réussie s’affiche. Cliquez sur **OK** dans le message et **OK** dans la boîte de dialogue. Le compte Target est configuré.
 1. Créez une structure Target, comme décrit à la section [Ajout d’une structure](/help/sites-administering/target.md).
 1. Rendez-vous sur https://&lt;*nom de lʼhôte*>:&lt;*port*>/system/console/configMgr.
 1. Cliquez sur **AEM Forms Target Configuration**.

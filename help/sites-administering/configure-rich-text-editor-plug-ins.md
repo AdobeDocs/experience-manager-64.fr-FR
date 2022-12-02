@@ -1,12 +1,12 @@
 ---
 title: Configuration des modules externes d’éditeur de texte enrichi
-description: Découvrez comment configurer les modules externes de l’éditeur de texte enrichi Adobe Experience Manager pour activer des fonctionnalités individuelles.
+description: Apprenez à configurer les modules externes d’éditeur de texte enrichi d’Adobe Experience Manager afin d’activer différentes fonctionnalités.
 contentOwner: AG
 exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
 source-git-commit: 9d1d6357c79e864e1fef89f713534dd074cf20ab
 workflow-type: tm+mt
 source-wordcount: '4210'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features afin d’activer ou de désactiver une ou plusieurs fonctions de l’éditeur de texte enrichi. Cet article décrit comment configurer spécifiquement les modules externes d’éditeur de texte enrichi.
 
-Pour plus d’informations sur les autres configurations d’éditeur de texte enrichi, voir [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md).
+Pour plus d’informations sur les autres configurations d’éditeur de texte enrichi, consultez [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md).
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ Pour configurer l’éditeur de texte enrichi afin qu’il affiche les icônes r
 1. Accédez au nœud `rtePlugins/edit`. Voir [Activation d’un module externe](#activateplugin) si le nœud n’existe pas.
 1. Créez la propriété `features` sur le nœud `edit` et ajoutez une ou plusieurs des fonctions. Enregistrez toutes les modifications.
 
-### Configuration du comportement de l’icône Coller (Ctrl + V) et du raccourci {#configure-paste-icon-shortcut}
+### Configuration du comportement de l’icône et du raccourci Coller (Ctrl + V) {#configure-paste-icon-shortcut}
 
 Vous pouvez préconfigurer le comportement de l’icône **[!UICONTROL Coller (Ctrl + V)]** en procédant comme suit. Cette configuration définit également le comportement du raccourci clavier Ctrl + V que les auteurs utilisent pour coller du contenu.
 
@@ -179,18 +179,18 @@ Pour configurer les formats autorisés afin de coller du texte dans AEM à parti
    >
    >Si le format n’est pas défini explicitement, la valeur par défaut true est utilisée et le format est admis.
 
-1. D’autres formats peuvent également être définis à l’aide de différentes propriétés ou de différents noeuds, également appliqués au `htmlPasteRules` noeud . Enregistrez toutes les modifications.
+1. D’autres formats peuvent également être définis à l’aide de différentes propriétés ou de différents nœuds, également appliqués au nœud `htmlPasteRules`. Enregistrez toutes les modifications.
 
 Vous pouvez utiliser les propriétés suivantes pour `htmlPasteRules`.
 
 | Propriété | Type | Description |
 |---|---|---|
 | `allowBlockTags` | Chaîne | Définit la liste des balises block autorisées. Voici quelques balises block possibles : <ul> <li>Titres (h1, h2, h3)</li> <li>Paragraphes (p)</li> <li>Listes (ol, ul)</li> <li>Tableaux (table)</li> </ul> |
-| `fallbackBlockTag` | Chaîne | Définit la balise block utilisée pour tout bloc contenant une balise block ne figurant pas dans `allowBlockTags`. `p` suffit dans la plupart des cas. |
-| table | nt:unstructured | Définit le comportement lors du collage de tableaux. Ce nœud doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des tableaux. Si allow est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment le contenu du tableau collé est géré. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul> <li>`remove`: supprime le contenu du tableau.</li> <li>`paragraph`: transforme les cellules de tableau en paragraphes.</li> </ul> |
-| list | nt:unstructured | Définit le comportement lors du collage de listes. Doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des listes. Si `allow` est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment gérer le contenu d’une liste collée. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul><li> `remove`: supprime le contenu de la liste.</li> <li>`paragraph`: transforme les éléments de la liste en paragraphes.</li> </ul> |
+| `fallbackBlockTag` | Chaîne | Définit la balise block utilisée pour tout bloc contenant une balise block ne figurant pas dans `allowBlockTags`. `p` est suffisant dans la plupart des cas. |
+| table | nt:unstructured | Définit le comportement lors du collage de tableaux. Ce nœud doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des tableaux. Si « allow » est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment le contenu du tableau collé est géré. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul> <li>`remove` : supprime le contenu du tableau.</li> <li>`paragraph` : transforme les cellules de tableau en paragraphes.</li> </ul> |
+| list | nt:unstructured | Définit le comportement lors du collage de listes. Doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des listes. Si `allow` est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment gérer le contenu d’une liste collée. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul><li> `remove` : supprime le contenu de la liste.</li> <li>`paragraph` : transforme les éléments de la liste en paragraphes.</li> </ul> |
 
-Exemple de valeur valide `htmlPasteRules` est ci-dessous.
+Voici un exemple de structure `htmlPasteRules` valide.
 
 ```xml
 "htmlPasteRules": {
@@ -222,11 +222,11 @@ Lorsque le module externe Styles est activé pour la première fois, aucun style
 * Spécifiez l’emplacement de la ou des feuilles de style.
 * Spécifiez les différents styles qui peuvent être sélectionnés dans la liste déroulante Style.
 
-Pour les configurations ultérieures, par exemple pour ajouter d’autres styles, suivez uniquement les instructions pour référencer une nouvelle feuille de style et spécifier les styles supplémentaires.
+Pour les configurations ultérieures, suivez les instructions pour faire référence à une nouvelle feuille de style et spécifier les styles supplémentaires.
 
 >[!NOTE]
 >
->Vous pouvez définir des styles pour [tableau ou cellule de tableau](/help/sites-administering/configure-rich-text-editor-plug-ins.md#table-styles). Ces configurations nécessitent des procédures distinctes.
+>Vous pouvez définir des styles pour les [tableaux ou les cellules de tableau](/help/sites-administering/configure-rich-text-editor-plug-ins.md#table-styles). Ces configurations nécessitent des procédures distinctes.
 
 ### Activation de la liste du sélecteur de liste déroulante Style {#style-selector-list}
 
@@ -337,6 +337,7 @@ Si le module externe n’est pas configuré davantage, les formats par défaut s
 * En-tête 1 ( `<h1>`)
 * En-tête 2 ( `<h2>`)
 * En-tête 3 ( `<h3>`)
+>
 
 
 >[!CAUTION]
@@ -543,15 +544,15 @@ Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe 
 Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de texte enrichi utilise les dictionnaires de chaque langue appropriée. Ils sont sélectionnés en fonction de la langue du site web, d’après la propriété language de la sous-arborescence ou à partir de la langue de l’adresse URL, par exemple. Pour la branche `/en/`, la vérification est effectuée pour l’anglais ; pour la branche `/de/`, pour l’allemand.
 
 >[!NOTE]
-Le message `Spell checking failed` s’affiche si une vérification est effectuée pour une langue non installée. Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
+Le message `Spell checking failed` s’affiche si le système tente d’effectuer une vérification pour une langue non installée. Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
 
-Une installation d’AEM standard inclut les dictionnaires pour l’anglais américain (`en_us`) et anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
+Une installation d’AEM standard inclut les dictionnaires pour l’anglais américain (`en_us`) et l’anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, suivez les étapes suivantes.
 
 1. Accédez à la page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
-1. Effectuez l’une des opérations suivantes pour trouver un dictionnaire de votre choix de langue :
+1. Effectuez l’une des opérations suivantes pour trouver un dictionnaire de votre choix de langue :
 
-   * Recherchez le dictionnaire de votre choix de langue. Sur la page du dictionnaire, recherchez le lien vers la source originale ou la page Web de l’auteur. Recherchez les fichiers de dictionnaire pour v2.x sur une telle page.
+   * Recherchez le dictionnaire de votre choix de langue. Sur la page du dictionnaire, localisez le lien vers la source originale ou la page Web de l’auteur. Localisez les fichiers de dictionnaire pour v2.x sur une telle page.
    * Recherchez des fichiers de dictionnaire v2.x à l’adresse [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
 1. Téléchargez l’archive avec les définitions d’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
@@ -563,8 +564,8 @@ Une installation d’AEM standard inclut les dictionnaires pour l’anglais amé
 1. Chargez les fichiers .aff et.dic dans le référentiel à l’emplacement `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte. Pour exécuter le vérificateur orthographique, cliquez sur [!UICONTROL Vérificateur orthographique] dans la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et met en surbrillance les mots mal orthographiés.
-Si vous incorporez une modification suggérée par le vérificateur orthographique, l’état des changements de texte et des mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
+Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte. Pour exécuter le vérificateur orthographique, cliquez sur le [!UICONTROL Vérificateur orthographique] de la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et souligne les mots mal orthographiés.
+Si vous incorporez des modifications que le vérificateur orthographique suggère, le statut du texte change et les mots mal orthographiés ne sont plus mis en surbrillance. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
 
 ## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undo-history}
 
@@ -670,7 +671,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
       * **Nom** `cssExternal`
       * **Type** `String`
       * **Valeur** Nom de la classe CSS (non précédé d’un point « . » ; par exemple, `cssClass` au lieu de `.cssClass`)
-   * Tableau valide **protocol**. Les protocoles pris en charge sont les suivants : `http://`, `https://`, `file://`, et `mailto:`.
+   * Tableau des **protocoles** valides. Les protocoles pris en charge sont les suivants : `http://`, `https://`, `file://` et `mailto:`.
 
       * **Nom** `protocols`
       * **Type** `String[]`

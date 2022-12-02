@@ -13,7 +13,7 @@ exl-id: 269eee08-5fca-4621-a56e-93db9361fa64
 source-git-commit: 1c9da35f65b6b9edacc3d5529ee80e7be94495d2
 workflow-type: tm+mt
 source-wordcount: '2001'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -96,7 +96,7 @@ Ajoutez une activité ou modifiez une activité existante pour concentrer vos ef
 
 Pour ajouter une activité :
 
-1. Cliquez ou appuyez sur la marque pour laquelle vous créez l’activité, puis cliquez ou appuyez sur **Créer** puis **Création d’une activité**. Si vous effectuez une modification, sélectionnez l’activité, puis cliquez ou appuyez sur **Modifier**.
+1. Cliquez ou appuyez sur une marque pour laquelle vous créez l’activité, puis cliquez ou appuyez sur **Créer** et ensuite sur **Créer une activité**. Si vous effectuez une modification, sélectionnez l’activité, puis cliquez ou appuyez sur **Modifier**.
 1. Fournissez les informations suivantes, puis appuyez ou cliquez sur **Suivant** :
 
    * Nom de l’activité.
@@ -108,7 +108,7 @@ Pour ajouter une activité :
 1. Ajoutez une ou plusieurs expériences à l’activité. Cliquez ou appuyez sur **Ajouter une expérience**.
 1. Si vous utilisez le ciblage AEM ou le ciblage d’expérience Adobe Target :
 
-   1. Cliquez ou appuyez sur **Sélectionner l’audience **et sélectionnez le segment ciblé par votre expérience.
+   1. Cliquez ou appuyez sur **Sélectionner l’audience** et sélectionnez le segment ciblé par votre expérience.
    1. Appuyez ou cliquez sur **Ajouter une expérience**, saisissez un nom, puis appuyez ou cliquez sur **OK**.
    1. Appuyez ou cliquez sur **Suivant**.
 
@@ -226,7 +226,7 @@ Pour éviter des problèmes de synchronisation, donnez toujours des noms uniques
 
 >[!NOTE]
 >
->Lorsque vous créez une campagne dans Adobe Target, elle affecte une propriété appelée `thirdPartyId t`Pour chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, `thirdPartyId` n’est pas supprimé. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Ainsi, les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
+>Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId t` à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, `thirdPartyId` n’est pas supprimé. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Ainsi, les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
 >
 >Si vous utilisez le même nom dans le même type de campagne, vous remplacerez la campagne existante.
 >

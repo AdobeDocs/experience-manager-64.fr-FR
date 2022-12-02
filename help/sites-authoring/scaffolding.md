@@ -13,7 +13,7 @@ exl-id: 20197226-09d5-4ac6-b4cb-0793576a56cf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -25,4 +25,4 @@ En mode Génération de modèles automatique, vous pouvez créer un formulaire (
 
 >[!NOTE]
 >
->Bien qu’il existe un modèle automatique [mode](/help/sites-authoring/author-environment-tools.md#page-modes) disponible, la maintenance et la création de modèles automatiques, ainsi que la création de pages à partir de modèles automatiques, sont effectuées dans l’IU classique. Pour plus d’informations, voir [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) dans la documentation de création de l’IU classique.
+>Bien qu’il existe un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) Scaffolding, la maintenance et la création de modèles automatiques, ainsi que la création de nouvelles pages à partir de modèles automatiques, sont effectuées dans l’IU classique. Pour plus d’informations, consultez la section [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) dans la documentation de création de l’IU classique.

@@ -1,7 +1,7 @@
 ---
 title: Configurer le cache de formulaires adaptatifs
 seo-title: Configure adaptive forms cache
-description: 'Le cache de formulaires adaptatifs est spécialement conçu pour les formulaires et documents adaptatifs. Il met en cache des formulaires et documents adaptatifs en vue de réduire le temps nécessaire pour effectuer le rendu d’un formulaire ou d’un document adaptatif sur le client. '
+description: Le cache de formulaires adaptatifs est spécialement conçu pour les formulaires et documents adaptatifs. Il met en cache des formulaires et documents adaptatifs en vue de réduire le temps nécessaire pour effectuer le rendu d’un formulaire ou d’un document adaptatif sur le client.
 seo-description: The adaptive forms cache is designed specifically for adaptive forms and documents. It caches adaptive forms and adaptive documents with the objective of reducing the time required to render an adaptive form or document on the client.
 uuid: 3bd4e405-1eab-4e02-95cd-eb6ac25d18e3
 content-type: reference
@@ -13,7 +13,7 @@ exl-id: 6a610e9d-beec-486d-b1d2-78b5fec44c52
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -31,11 +31,11 @@ Un cache est un mécanisme qui permet de raccourcir les temps d’accès aux don
 
 ## Configurer le cache {#configure-the-cache}
 
-Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
+Pour configurer la mise en cache des formulaires adaptatifs, procédez comme suit :
 
 1. Accédez à la page de configuration de la console web AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
 1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration.
-1. Dans la boîte de dialogue Modifier les valeurs de configuration, indiquez le nombre maximal de formulaires ou de documents qu’une instance du serveur AEM Forms peut mettre en cache dans le **Nombre de Forms adaptatives** champ . La valeur par défaut est 100.
+1. Dans la boîte de dialogue Modifier les valeurs de configuration, spécifiez le nombre maximal de formulaires ou de documents qu’une instance du serveur AEM Forms peut mettre en cache le champ **Nombre de formulaires adaptatifs**. La valeur par défaut est 100.
 
    >[!NOTE]
    >

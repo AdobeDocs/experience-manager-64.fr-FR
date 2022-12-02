@@ -1,7 +1,7 @@
 ---
 title: 'Tutoriel NE PAS PUBLIER : Appliquer des règles aux champs de formulaire adaptatif"'
 seo-title: Apply rules to adaptive form fields
-description: 'Créez des règles pour ajouter de l’interactivité, une logique d’entreprise et des validations intelligentes à un formulaire adaptatif. '
+description: Créez des règles pour ajouter de l’interactivité, une logique d’entreprise et des validations intelligentes à un formulaire adaptatif.
 seo-description: Create rules to add interactivity, business logic, and smart validations to an adaptive form.
 page-status-flag: de-activated
 uuid: 60f142aa-81ca-4333-8614-85a01e23e917

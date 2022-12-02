@@ -13,7 +13,7 @@ exl-id: dc24edaf-ca1d-4a6b-a2dc-86677267e18d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -81,11 +81,11 @@ Utilisez le rapport Recommandations d’optimisation pour les moteurs de recherc
 
 ![chlimage_1-252](assets/chlimage_1-252.png)
 
-L’état de la recommandations d’optimisation pour les moteurs de recherche indique quand la tâche est créée mais pas encore terminée.
+Le statut de la recommandation d’optimisation pour les moteurs de recherche indique quand la tâche est créée mais pas encore terminée.
 
 ![chlimage_1-253](assets/chlimage_1-253.png)
 
-Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. Pour plus d’informations sur les tâches, voir [Utilisation de tâches](/help/sites-authoring/task-content.md).
+Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. Pour plus d’informations sur les tâches, consultez [Utilisation de tâches](/help/sites-authoring/task-content.md).
 
 Utilisez la procédure suivante afin de créer une tâche pour une recommandation d’optimisation pour les moteurs de recherche.
 

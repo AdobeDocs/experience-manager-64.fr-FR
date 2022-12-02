@@ -13,7 +13,7 @@ exl-id: 65e534ec-7f73-4333-b225-7adf082f66d5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,6 @@ Un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) spécial
 >
 >* [Annotation de ressources](/help/assets/managing-assets-touch-ui.md#annotating)
 >* [Annotation de ressources vidéo](/help/assets/managing-video-assets.md#annotating-video-assets)
-
 >
 
 
@@ -86,7 +85,7 @@ Le mode Annoter permet de créer, de modifier, de déplacer ou de supprimer des 
    * Entrez le texte de l’annotation.
    * Créez une esquisse (traits et formes) pour mettre en surbrillance une zone du composant.
 
-      Le curseur prend la forme d’un trait croisé lors de la création d’une esquisse. Vous pouvez tracer plusieurs lignes distinctes. La ligne d’esquisse reflète la couleur de l’annotation et peut être une flèche, un cercle ou un ovale.
+      Le curseur prend la forme d’une croix lorsque vous créez une esquisse. Vous pouvez tracer plusieurs lignes distinctes. La ligne d’esquisse reflète la couleur de l’annotation et peut être une flèche, un cercle ou un ovale.
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Choisissez/changez la couleur :

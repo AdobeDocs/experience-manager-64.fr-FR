@@ -1,5 +1,5 @@
 ---
-title: 'Console Rapports '
+title: Console Rapports
 seo-title: Reports Console
 description: Découvrez comment accéder aux rapports
 seo-description: Learn how to access reports

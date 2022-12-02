@@ -1,5 +1,5 @@
 ---
-title: Intégration à Adobe Analytics
+title: Intégration à Adobe Analytics
 seo-title: Integrating with Adobe Analytics
 description: Découvrez comment intégrer AEM à Adobe Analytics.
 seo-description: Learn how to integrate AEM with Adobe Analytics.
@@ -17,9 +17,9 @@ ht-degree: 94%
 
 ---
 
-# Intégration à Adobe Analytics{#integrating-with-adobe-analytics}
+# Intégration à Adobe Analytics{#integrating-with-adobe-analytics}
 
-L’intégration d’Adobe Analytics et d’AEM vous permet de suivre votre activité de pages web :
+L’intégration d’Adobe Analytics et d’AEM vous permet de suivre votre activité de pages Web :
 
 * Une configuration Adobe Analytics permet à AEM de s’authentifier avec Adobe Analytics.
 * Une structure identifie les données envoyées à votre suite de rapports Adobe Analytics.
@@ -33,10 +33,10 @@ Les données incluent la page et les données sur l’utilisateur, par exemple 
 
 Les pages suivantes vous aident à configurer l’intégration :
 
-* [Connexion à Adobe Analytics et création de structures](/help/sites-administering/adobeanalytics-connect.md)
-* [Configuration du suivi des liens Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
-* [Mappage des données de composant aux propriétés Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
-* [Configuration du suivi vidéo pour Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
+* [Connexion à Adobe Analytics et création de frameworks](/help/sites-administering/adobeanalytics-connect.md)
+* [Configuration du suivi des liens Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
+* [Mappage des données de composant aux propriétés Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
+* [Configuration du suivi vidéo pour Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 
 Vous pouvez également utiliser l’[assistant de souscription](/help/sites-administering/opt-in.md) pour exécuter facilement l’intégration.
 

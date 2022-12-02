@@ -104,7 +104,7 @@ Sur les systèmes dotés de serveurs principaux MongoDB, AEM fournit plusieurs M
 
 Pour le cache nommé **Document-Diff**, le taux d’accès doit être supérieur à `.90`. Si le taux d’accès chute en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. L’assistance pour les produits Adobe peut vous recommander des paramètres optimaux pour votre environnement.
 
-* Mbean **Oak Repository Statistics**. Il est accessible directement depuis :
+* MBean **Oak Repository Statistics**. Il est accessible directement depuis :
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
@@ -131,7 +131,7 @@ Après avoir exécuté des tests de performance sur l’instance de création, t
 * Vous pouvez consulter le [journal Performances des demandes](/help/sites-administering/operations-dashboard.md#request-performance) dans le tableau de bord des opérations. Vous pouvez utiliser cet outil pour identifier les demandes de page lentes.
 * Analysez les requêtes à exécution lente avec l’outil [Performances des requêtes](/help/sites-administering/operations-dashboard.md#query-performance).
 
-* Recherchez, dans le journal des erreurs, les erreurs ou les avertissements. Pour plus d’informations, voir [Journalisation](/help/sites-deploying/configure-logging.md).
+* Recherchez, dans le journal des erreurs, les erreurs ou les avertissements. Pour plus d’informations, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md)
 * Surveillez les ressources matérielles du système telles que l’utilisation de la mémoire et du processeur, les E/S de disque ou les E/S réseau. Ces ressources sont souvent la cause de la détérioration des performances.
 * Optimisez l’architecture des pages et la façon dont elles sont adressées afin de minimiser l’utilisation des paramètres d’URL pour permettre un niveau maximal de mise en cache.
 * Lisez la documentation [Optimisation des performances](/help/sites-deploying/configuring-performance.md) et [Conseils pour le réglage des performances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).

@@ -14,7 +14,7 @@ exl-id: a8005a0a-b90e-465c-8521-780d21d72e55
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Cette page doit être lue avec la [page Mobile pour les auteurs](/help/sites-aut
 
 ## Développement de sites web pour mobiles {#developing-web-sites-for-mobile}
 
-Développez des composants et des modèles de page optimisés pour un affichage sur des appareils mobiles. Développez des pages qui utilisent une disposition réactive qui s’adapte à différents formats d’écran, ou développez des pages qui sont optimisées pour une taille d’écran spécifique. Utilisez les émulateurs de périphérique qui AEM fournissent ou créent vos propres émulateurs pour la création et la prévisualisation WSYWIG :
+Développez des composants et des modèles de page optimisés pour un affichage sur des appareils mobiles. Développez des pages qui utilisent une disposition réactive qui s’adapte à différents formats d’écran, ou développez des pages qui sont optimisées pour une taille d’écran spécifique. Utilisez les émulateurs de périphérique fournis par AEM ou créez vos propres émulateurs pour la prévisualisation et la création WYSIWYG :
 
 * [Création de filtres de groupe d’appareils](/help/sites-developing/groupfilters.md)
 * [Responsive Design pour les pages web](/help/sites-developing/responsive.md)

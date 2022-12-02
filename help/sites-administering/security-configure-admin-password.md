@@ -13,7 +13,7 @@ exl-id: 6dd289ee-13fd-46be-82cd-aa69852397c9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -67,4 +67,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Si vous utilisez simplement la variable `-nointeractive` sans le paramètre `-Dadmin.password.file` système, AEM utilisera le mot de passe administrateur par défaut sans vous demander de le modifier, répliquant essentiellement le comportement des versions antérieures. Ce mode non interactif peut être utilisé pour les installations automatisées via l’option de ligne de commande dans un script d’installation.
+>Si vous utilisez simplement le paramètre `-nointeractive` sans la propriété système `-Dadmin.password.file`, AEM utilise le mot de passe administrateur par défaut sans vous demander de le modifier, répliquant essentiellement le comportement des versions antérieures. Ce mode non interactif peut être utilisé pour les installations automatisées via l’option de ligne de commande dans un script d’installation.

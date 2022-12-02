@@ -348,7 +348,7 @@ Pour modifier la structure du site, accédez à la **[!UICONTROL Communautés, S
 
 Sélectionnez le panneau STRUCTURE pour ajouter un catalogue ou modifier un catalogue existant :
 
-* **Titre**: `Ski Catalog`
+* **Titre** : `Ski Catalog`
 
 * **URL**: `catalog`
 

@@ -13,7 +13,7 @@ exl-id: 19ec5c00-eae5-4e7f-9dc5-c7a88b06fd2a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 80%
+ht-degree: 82%
 
 ---
 
@@ -40,24 +40,24 @@ Voir la documentation suivante pour une description détaillée des amélioratio
 ### Développement de composants et de modèles {#component-amp-template-development}
 
 * Projet Archetype 13+, voir [Github pour les notes de mise à jour](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases).
-* HTL version 1.3.1, voir [Github pour les notes de mise à jour](https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.3.1).
-* Core Components 2.0.4+, voir [Github pour les notes de mise à jour](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
+* HTL version 1.3.1 : consultez la section [Github pour les notes de mise à jour](https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.3.1).
+* Core Components 2.0.4+ : consultez la section [Github pour les notes de mise à jour](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 * Système de style
 
    * Ajout d’un tout nouveau concept pour affecter des classes CSS aux composants et pour permettre aux utilisateurs de l’éditeur de pages de faire leur sélection parmi un sous-ensemble de styles dans l’interface utilisateur
    * Ajout de la possibilité de définir le nom de l’élément HTML rendu autour du composant (par exemple, &lt;main> et &lt;aside>)
 
-* Système de grille pour le conteneur de mises en page, voir [Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid) .
+* Système de grille pour le conteneur de dispositions : consultez la section [Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
 * Éditeur de modèles et stratégies
 
    * Les stratégies prennent maintenant en charge les configurations de système de style par composant, par conteneur et par modèle.
    * Prise en charge améliorée de la définition de la mise en page dans les modèles au niveau des composants modifiables
 
-* Site de référence We.Retail 3.0, voir [Github pour les notes de mise à jour](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
+* Pour le site de référence We.Retail 3.0, accédez à la question [Github pour les notes de mise à jour](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
 
 >[!CAUTION]
 >
->AEM inclut la version 1.12.4 de la bibliothèque jQuery afin de fournir une compatibilité maximale avec le code personnalisé existant. Adobe a procédé à des modifications de façon à résoudre les problèmes de sécurité connus.
+>AEM comprend la version 1.12.4 de la bibliothèque jQuery pour fournir une compatibilité maximale avec le code personnalisé existant. Adobe a procédé à des modifications de façon à résoudre les problèmes de sécurité connus.
 
 ### Fragments de contenu et éditeur {#content-fragments-amp-editor}
 

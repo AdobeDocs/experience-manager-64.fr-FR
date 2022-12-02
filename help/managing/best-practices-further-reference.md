@@ -1,5 +1,5 @@
 ---
-title: La liste de contrôle – Référence supplémentaire
+title: La Liste de contrôle – Référence supplémentaire
 seo-title: The Checklist - Further Reference
 description: 'Découvrez d’autres détails qui précisent et/ou enrichissent les documents et les principes couverts dans la section Gestion des projets : liste de contrôle des meilleures pratiques.'
 seo-description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 ---
 
-# La liste de contrôle – Référence supplémentaire{#the-checklist-further-reference}
+# La Liste de contrôle – Référence supplémentaire{#the-checklist-further-reference}
 
 Cette page fournit d’autres détails qui précisent et/ou enrichissent les documents et les principes couverts dans la section [Gestion des projets : liste de contrôle des meilleures pratiques](/help/managing/best-practices.md).
 
@@ -37,7 +37,7 @@ Tenez compte des fonctions d’AEM que vous utiliserez et de l’impact sur votr
 * [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr)
 * [Assets](/help/assets/assets.md)
 * [Balises](/help/sites-administering/tags.md)
-* [Gestion de sites multiples·et traduction](/help/sites-administering/msm-and-translation.md)
+* [Gestion de sites multiples et traduction](/help/sites-administering/msm-and-translation.md)
 * [Forms](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
 * [Livefyre](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/c-getting-started.html)
@@ -233,7 +233,7 @@ Cette section peut être lue en parallèle de la section [Optimisation des perfo
 
 #### Temps de réponse pour les pages individuelles {#response-times-for-individual-pages}
 
-Le temps que met votre site web pour répondre aux requêtes des visiteurs constitue l’un des problèmes majeurs.
+L’un des problèmes majeurs est le temps que met votre site web pour répondre aux requêtes des visiteurs.
 
 Bien que cette valeur varie pour chaque demande, une valeur cible moyenne peut être définie. Une fois que cette valeur se révèle à la fois réalisable et gérable, elle peut être utilisée pour surveiller les performances du site web et indiquer le développement d’éventuels problèmes.
 
@@ -250,7 +250,7 @@ Les temps de réponse que vous ciblerez seront différents sur les environnement
 
 * **Environnement de publication**
 
-   Cet environnement intègre le contenu que vous mettez à la disposition de vos utilisateurs :
+   Cet environnement intègre le contenu que vous mettez à la disposition de vos utilisateurs:
 
    * La vitesse reste essentielle, mais il est souvent plus lent qu’un environnement de création.
    * Des mécanismes supplémentaires d’amélioration des performances sont souvent appliqués :

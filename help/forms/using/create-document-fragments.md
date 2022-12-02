@@ -1,5 +1,5 @@
 ---
-title: '"Didacticiel : Créer des fragments de document"'
+title: "Didacticiel\_: Créer des fragments de document"
 seo-title: Create document fragments for Interactive Communication
 description: Créer des fragments de document pour la communication interactive
 seo-description: Create document fragments for Interactive Communication

@@ -1,7 +1,7 @@
 ---
 title: Réplication à l’aide du SSL mutuel
 seo-title: Replicating Using Mutual SSL
-description: 'Découvrez comment configurer AEM de sorte qu’un agent de réplication sur instance d’auteur utilise le SSL mutuel (MSSL) pour pouvoir se connecter à l’instance de publication. En utilisant le MSSL, l’agent de réplication et le service HTTP sur l’instance de publication utilisent des certificats pour s’authentifier. '
+description: Découvrez comment configurer AEM de sorte qu’un agent de réplication sur instance d’auteur utilise le SSL mutuel (MSSL) pour pouvoir se connecter à l’instance de publication. En utilisant le MSSL, l’agent de réplication et le service HTTP sur l’instance de publication utilisent des certificats pour s’authentifier.
 seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
 uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
@@ -14,7 +14,7 @@ exl-id: 8eba690a-797a-4ba9-b178-11f8c011239f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -42,12 +42,12 @@ Vous devez déterminer quel compte d’utilisateur exécute la réplication. Lor
 Vous avez besoin d’une clé privée et d’un certificat public pour les instances d’auteur et de publication :
 
 * Les clés privées doivent être au format pkcs#12 ou JKS. 
-* Les certificats doivent être contenus au format pkcs#12 ou JKS. En outre, le certificat contenu dans le format « CER » peut également être ajouté à Granite Truststore.
+* Les certificats doivent être au format pkcs#12 ou JKS. En outre, le certificat contenu dans le format « CER » peut également être ajouté à Granite Truststore.
 * Les certificats peuvent être auto-signés ou signés par une autorité de certification reconnue.
 
 ### Format JKS {#jks-format}
 
-Générez une clé privée et un certificat au format JKS. La clé privée est stockée dans un fichier KeyStore, et le certificat est stocké dans un fichier TrustStore. Utilisez l’utilitaire [Java`keytool` ](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) pour les créer.
+Générez une clé privée et un certificat au format JKS. La clé privée est stockée dans un fichier KeyStore, et le certificat est stocké dans un fichier TrustStore. Utilisez l’utilitaire [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) pour les créer.
 
 Effectuez les étapes suivantes en utilisant l’utilitaire Java `keytool` pour créer la clé privée et les informations d’identification :
 
@@ -69,7 +69,7 @@ Utilisez la procédure suivante pour créer une clé privée et un certificat au
 
    | Option | Création | Publication |
    |---|---|---|
-   | -alias | Auteur  | publish |
+   | -alias | auteur  | publish |
    | -keystore | author.keystore | publish.keystore |
 
 1. Pour exporter le certificat, saisissez la commande suivante à l’aide des valeurs d’option dans le tableau ci-dessous :
@@ -80,7 +80,7 @@ Utilisez la procédure suivante pour créer une clé privée et un certificat au
 
    | Option | Création | Publication |
    |---|---|---|
-   | -alias | Auteur  | publier |
+   | -alias | auteur  | publier |
    | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
@@ -120,7 +120,7 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    | Option | Création | Publication |
    |---|---|---|
    | -signkey | author.key | publish.key |
-   | -dans | author_request.csr | publish_request.csr |
+   | -in | author_request.csr | publish_request.csr |
    | -out | author.cer | publish.cer |
 
 1. Pour ajouter la clé privée et le certificat signé à un fichier pkcs#12, saisissez la commande suivante à l’aide des valeurs d’option du tableau ci-dessous :
@@ -133,8 +133,8 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
-   | -dans | author.cer | publish.cer |
-   | -name | Auteur  | publier |
+   | -in | author.cer | publish.cer |
+   | -name | auteur  | publier |
 
 ## Installation de la clé privée et du TrustStore sur l’auteur {#install-the-private-key-and-truststore-on-author}
 
@@ -215,12 +215,12 @@ Configurez les propriétés du service HTTP basé sur Apache Felix Jetty sur l�
 
 Le tableau suivant répertorie les propriétés OSGi que vous devez configurer si vous utilisez la console web. 
 
-| Nom de la propriété sur la console web | Nom de propriété OSGi | Valeur |
+| Nom de propriété dans la console web | Nom de propriété OSGi | Valeur |
 |---|---|---|
-| Activer HTTPS | org.apache.felix.https.enable | true |
-| Activer HTTPS pour utiliser le KeyStore Granite | org.apache.felix.https.use.granite.keystore | true |
+| Activer le HTTPS | org.apache.felix.https.enable | true |
+| Activer le HTTPS pour utiliser le KeyStore Granite | org.apache.felix.https.use.granite.keystore | true |
 | Port HTTPS | org.osgi.service.http.port.secure | 8443 (ou tout autre port souhaité) |
-| Certificat client | org.apache.felix.https.clientcertificate | &quot;Certificat client recherché&quot; |
+| Certificat client | org.apache.felix.https.clientcertificate | « Certificat client recherché » |
 
 ## Configuration de l’agent de réplication sur l’auteur {#configure-the-replication-agent-on-author}
 

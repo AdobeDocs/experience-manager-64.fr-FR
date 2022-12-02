@@ -1,5 +1,5 @@
 ---
-title: 'Configuration des délais d’expiration à utiliser avec les extensions d’Acrobat Reader DC '
+title: Configuration des délais d’expiration à utiliser avec les extensions d’Acrobat Reader DC
 seo-title: Setting timeout values for use with Acrobat Reader DC extensions
 description: Découvrez comment définir des délais d’expiration à utiliser avec les extensions d’Acrobat Reader DC.
 seo-description: Learn how to set timeout values for use with Acrobat Reader DC extensions.

@@ -1,7 +1,7 @@
 ---
 title: Structure de l’apparence des formulaires adaptatifs et HTML5
 seo-title: Appearance framework for adaptive and HTML5 forms
-description: 'Mobile Forms génère des modèles de formulaire comme les formulaires HTML5. Ces formulaires utilisent les fichiers jQuery, Backbone.js et Underscore.js pour l’apparence et l’activation des scripts. '
+description: Mobile Forms génère des modèles de formulaire comme les formulaires HTML5. Ces formulaires utilisent les fichiers jQuery, Backbone.js et Underscore.js pour l’apparence et l’activation des scripts.
 seo-description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting.
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference

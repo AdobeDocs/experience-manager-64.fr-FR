@@ -132,7 +132,7 @@ L’image suivante montre la variable **Gestion des collections** dans AEM Mobil
 >
 >Voir **[Gestion des collections](/help/mobile/mobile-on-demand-managing-collections.md)** pour créer, supprimer ou mettre à jour les collections.
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 Une fois que vous connaissez le tableau de bord de l’application, consultez les ressources suivantes pour créer une application mobile :
 

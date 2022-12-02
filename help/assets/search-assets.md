@@ -26,7 +26,7 @@ Vous pouvez effectuer une recherche selon les options suivantes (prédicats) :
 * Taille de fichier
 * Nom du champ
 * Dernière modification
-* État
+* Statut
 * Orientation
 * Style
 * Statistiques
@@ -86,7 +86,7 @@ Utilisez le prédicat **État** pour rechercher des ressources en fonction de di
 
 Par exemple, si vous surveillez la publication des ressources, vous pouvez utiliser l’option appropriée pour rechercher les ressources qui sont publiées.
 
-Publier sur ![](assets/publish.png)
+![publish](assets/publish.png)
 
 Si vous surveillez l’état de révision des ressources, utilisez l’option appropriée pour trouver les ressources qui sont approuvées ou en attente d’approbation.
 

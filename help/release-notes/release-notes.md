@@ -26,7 +26,7 @@ ht-degree: 84%
 | Version | 6.4 |
 | Type | Version majeure |
 | Date de disponibilité générale | 4 avril 2018 |
-| Mises à jour recommandées | Consultez les [versions et mises à jour d’AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) |
+| Mises à jour recommandées | Consultez les [versions et mises à jour d’AEM](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html) |
 
 ### Pour information {#trivia}
 
@@ -67,7 +67,7 @@ Pour en savoir plus sur ces fonctions, voir la [documentation sur la création.]
 
 >[!CAUTION]
 >
->Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique. AEM 6.4 inclut l’interface utilisateur classique, et les clients effectuant une mise à niveau à partir de versions antérieures peuvent continuer à l’utiliser en l’état. Notez que l’interface utilisateur classique reste complètement prise en charge alors qu’elle est en passe de devenir obsolète. [En savoir plus](/help/sites-deploying/ui-recommendations.md).
+>Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique. AEM 6.4 comprend l’interface utilisateur classique, et les clients effectuant une mise à niveau à partir de versions antérieures peuvent continuer à l’utiliser en l’état. Notez que l’interface utilisateur classique reste complètement prise en charge alors qu’elle est en passe de devenir obsolète. [En savoir plus](/help/sites-deploying/ui-recommendations.md).
 
 #### Référentiel de contenu {#content-repository}
 
@@ -343,7 +343,7 @@ Reportez-vous à la [documentation de mise à niveau](/help/sites-deploying/upgr
 
 ## Plateformes prises en charge {#supported-platforms}
 
-Vous trouverez une matrice complète des plateformes prises en charge, y compris leur niveau de prise en charge, sur la page des [exigences techniques d’AEM 6.4](/help/sites-deploying/technical-requirements.md).
+Vous trouverez une matrice complète des plateformes prises en charge, y compris leur niveau de prise en charge, sur la page des [exigences techniques d’AEM 6.4](/help/sites-deploying/technical-requirements.md) 
 
 >[!NOTE]
 >

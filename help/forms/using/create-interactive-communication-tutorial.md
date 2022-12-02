@@ -1,5 +1,5 @@
 ---
-title: '"Didacticiel : Créer une communication interactive "'
+title: "Didacticiel\_: Créer une communication interactive "
 seo-title: Create an Interactive Communication for Print and Web
 description: Créer une communication interactive en utilisant tous les blocs de construction
 seo-description: Create an Interactive Communication using all building blocks

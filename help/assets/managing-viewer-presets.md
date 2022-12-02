@@ -16,7 +16,7 @@ role: Admin,User
 source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
 source-wordcount: '4220'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -24,12 +24,12 @@ ht-degree: 76%
 
 Un paramètre prédéfini de visionneuse Dynamic Media est un ensemble de paramètres qui déterminent la manière dont les utilisateurs voient les ressources multimédias enrichies sur leurs écrans d’ordinateur et appareils mobiles. Si vous êtes administrateur, vous pouvez créer des paramètres de visionneuse prédéfinis. Les paramètres sont disponibles pour un tableau d’options de configuration de la visionneuse. Vous pouvez, par exemple, modifier la taille d’affichage ou le comportement du zoom de la visionneuse.
 
-Pour plus d’informations sur la création et la personnalisation de vos propres paramètres prédéfinis de visionneuse HTML5, voir Adobe Dynamic Media *Documentation de l’API du SDK de la visionneuse HTML5*. Le kit SDK est disponible sur le serveur de publication IS intégré au kit SDK lui-même. Chaque version de la bibliothèque possède sa propre documentation SDK incluse.
+Pour obtenir des instructions sur la création et la personnalisation de vos propres paramètres prédéfinis de visionneuse HTML5, consultez la *Documentation sur l’API du SDK de la visionneuse HTML5*. Le kit SDK est disponible sur le serveur de publication IS intégré au kit SDK lui-même. Chaque version de la bibliothèque possède sa propre documentation SDK incluse.
 
-Chemin: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
-Par exemple, SDK 3.10 : [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
+Chemin : `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
+Par exemple, le SDK 3.10 : [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Voir aussi [Guide de référence des visionneuses Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
+Consultez également le [Guide de référence des visionneuses Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=fr).
 
 Cette section décrit comment créer, modifier et gérer les paramètres prédéfinis de visionneuse. Vous pouvez appliquer des paramètres prédéfinis de visionneuse à une image lorsque vous la prévisualisez. Reportez-vous à la section [Application de paramètres de visionneuse prédéfinis](viewer-presets.md).
 
@@ -55,7 +55,7 @@ Vous pouvez ajouter, modifier, supprimer, publier, annuler la publication et pr�
 
 ## Prise en charge de la visionneuse pour les pages web en responsive design {#viewer-support-for-responsive-designed-web-pages}
 
-Chaque page web a des besoins différents. Vous aurez parfois besoin d’une page web proposant un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez peut-être besoin d’intégrer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura peut-être une mise en page statique. Ou, il se peut que *responsive* et s’affichent différemment sur différents appareils ou pour différentes tailles de fenêtre de navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies HTML5 fournies avec Dynamic Media sont compatibles à la fois avec les pages web statiques et réactives.
+Chaque page web a des besoins différents. Vous aurez parfois besoin d’une page web proposant un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez peut-être besoin d’intégrer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura peut-être une mise en page statique. Ou, il se peut que *responsive* et s’affichent différemment sur différents appareils ou pour différentes tailles de fenêtre de navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies HTML5 fournies avec Dynamic Media sont compatibles à la fois avec les pages web statiques et réactives.
 
 Voir [Bibliothèque d’images réactives](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=fr) dans l’*aide de l’API de diffusion d’image* afin d’en savoir plus sur l’intégration des visionneuses réactives sur vos pages web.
 
@@ -103,7 +103,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
 
 Le tableau suivant identifie tous les paramètres prédéfinis de visionneuse prêts à l’emploi fournis avec Dynamic Media.
 
-Voir aussi [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+Consultez aussi les [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 Pour en savoir plus sur les versions de navigateur web et de système d’exploitation compatibles avec les visionneuses, consultez les notes de mise à jour des visionneuses.
 
@@ -123,7 +123,7 @@ Voir *Notes de mise à jour des visionneuses* dans la table des matières du [Gu
 | Carousel_Dotted_light | Ensemble_carrousel | html5_carouselviewer_dotted_light.css |
 | Carousel_Numeric_dark | Ensemble_carrousel | html5_carouselviewer_numeric_dark.css |
 | Carousel_Numeric_light | Ensemble_carrousel | html5_carouselviewer_numeric_light.css |
-| Flyout | Zoom_fenêtre déroulante | html5_flyoutviewer.css |
+| Fenêtre déroulante | Zoom_fenêtre déroulante | html5_flyoutviewer.css |
 | ImageSet_dark | Visionneuse d’images | html5_zoomviewer_dark.css |
 | ImageSet_light | Visionneuse d’images | html5_zoomviewer_light.css |
 | InlineMixedMedia_dark | Supports_variés | html5_inlinemixedmediaviewer_dark.css |
@@ -138,8 +138,8 @@ Voir *Notes de mise à jour des visionneuses* dans la table des matières du [Gu
 | Shoppable_Video_light | Vidéo_interactive | html5_interactivevideovewer_light.css  |
 | SpinSet_dark | Visionneuse_à_360° | html5_spinviewer_dark.css |
 | SpinSet_light | Visionneuse_à_360° | html5_spinviewer_light.css |
-| Vidéo (inclut la prise en charge du sous-titrage) | Vidéo  | html5_videoviewer.css |
-| Video_social (inclut la prise en charge du sous-titrage et des médias sociaux) | Vidéo  | html5_videoviewersocial.css |
+| Vidéo (inclut la prise en charge du sous-titrage) | Vidéo | html5_videoviewer.css |
+| Video_social (inclut la prise en charge du sous-titrage et des médias sociaux) | Vidéo | html5_videoviewersocial.css |
 | Zoom_dark | Zoom | html5_basiczoomviewer_dark.css |
 | Zoom_light | Zoom | html5_basiczoomviewer_light.css |
 | ZoomVertical_dark | Zoom_vertical | html5_zoomverticalviewer_dark.css |
@@ -254,7 +254,7 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
 **À propos des modes d’affichage des miniatures dans le panneau**
 
-Lorsque vous créez ou modifiez un paramètre prédéfini de visionneuse de vidéos interactives, vous avez le choix entre **[!UICONTROL Mode d’affichage]** à utiliser lorsque vous sélectionnez `InteractiveSwatches` de la **[!UICONTROL Composant sélectionné]** menu déroulant sous le **[!UICONTROL Comportement]** . Le mode d’affichage que vous choisissez affecte la façon dont les miniatures s’affichent pendant la lecture de la vidéo. Vous pouvez choisir l’une des options suivantes : `segment`le mode d’affichage (par défaut) ou un `continuous`mode d’affichage.
+Lorsque vous créez ou modifiez un paramètre prédéfini de visionneuse de vidéos interactives, vous avez le choix entre **[!UICONTROL Mode d’affichage]** à utiliser lorsque vous sélectionnez `InteractiveSwatches` de la **[!UICONTROL Composant sélectionné]** menu déroulant sous le **[!UICONTROL Comportement]** . Le mode d’affichage que vous choisissez affecte la façon dont les miniatures s’affichent pendant la lecture de la vidéo. Vous pouvez sélectionner le mode d’affichage `segment` (par défaut) ou le mode d’affichage `continuous`.
 
 | Mode d’affichage | Description |
 |---|---|
@@ -365,7 +365,7 @@ Vous pouvez supprimer les paramètres prédéfinis de visionneuse que vous avez 
 
 ## Application d’un paramètre prédéfini de visionneuse Dynamic Media à une ressource {#applying-a-viewer-preset-to-an-asset}
 
-Si vous avez déjà publié la ressource et la visionneuse sélectionnée, l’**[!UICONTROL URL]** et les boutons d’**[!UICONTROL intégration]** s’affichent une fois que vous avez sélectionné un paramètre prédéfini de visionneuse.
+Si vous avez déjà publié la ressource et la visionneuse sélectionnée, les boutons **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** s’affichent une fois que vous avez sélectionné un paramètre prédéfini de visionneuse.
 
 **Pour appliquer un paramètre prédéfini de visionneuse Dynamic Media à une ressource**:
 
@@ -381,6 +381,6 @@ Si vous avez déjà publié la ressource et la visionneuse sélectionnée, l’*
 
 ## Diffusion de ressources avec des paramètres prédéfinis de visionneuse Dynamic Media {#delivering-assets-with-viewer-presets}
 
-Pour obtenir l’URL d’un paramètre prédéfini de visionneuse, voir [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md). Voir aussi [Incorporation de la visionneuse de vidéos dans une page web](embed-code.md).
+Pour obtenir l’URL d’un paramètre prédéfini de visionneuse, voir [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md). Consultez également la section [Incorporation de la visionneuse de vidéos dans une page web](embed-code.md).
 
 Si vous utilisez AEM pour la gestion de contenu web, vous pouvez ajouter des ressources en utilisant des paramètres de visionneuse prédéfinis directement sur la page. Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](adding-dynamic-media-assets-to-pages.md).

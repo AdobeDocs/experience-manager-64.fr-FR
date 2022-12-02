@@ -20,7 +20,7 @@ ht-degree: 69%
 
 # Configuration des polices de remplacement {#configuring-fallback-fonts}
 
-Cette section explique comment configurer manuellement le fichier FontManagerResources.properties pour associer les polices par défaut d&#39;AEM forms à des polices de remplacement (ou de substitution), qui seront utilisées si les polices par défaut ne sont pas disponibles sur le serveur. Ce fichier de propriétés se trouve dans le fichier adobe-fontmanager.jar.
+Cette section explique comment configurer manuellement le fichier FontManagerResources.properties pour associer les polices par défaut d’AEM forms à des polices de remplacement (ou de substitution), qui seront utilisées si les polices par défaut ne sont pas disponibles sur le serveur. Ce fichier de propriétés se trouve dans le fichier adobe-fontmanager.jar.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Cette section explique comment configurer manuellement le fichier FontManagerRes
 1. Recherchez le fichier FontManagerResources.properties et ouvrez-le dans un éditeur de texte.
 1. Modifiez les emplacements et les noms des polices dans les sections Generic et Fallback de manière appropriée et enregistrez le fichier.
 
-   Les entrées de police du fichier FontManagerResources.properties sont relatives à la variable *[racine aem-forms]* répertoire /fonts. Si vous spécifiez des polices autres que les polices par défaut d&#39;AEM forms, vous devez les installer dans cette arborescence (dans un répertoire existant ou créé à cet effet).
+   Les entrées de police du fichier FontManagerResources.properties sont relatives à la variable *[racine aem-forms]* répertoire /fonts. Si vous spécifiez des polices autres que les polices par défaut d’AEM forms, vous devez les installer dans cette arborescence (dans un répertoire existant ou créé à cet effet).
 
    >[!NOTE]
    >

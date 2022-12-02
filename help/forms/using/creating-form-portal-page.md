@@ -170,7 +170,7 @@ Pour configurer l’attribut de date :
 1. Cliquez sur le composant, puis sur ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
 1. Indiquez les informations suivantes :
 
-   * **[!UICONTROL Type]** : la seule option disponible est **[!UICONTROL Date de la dernière modification]**..
+   * **[!UICONTROL Type]** : la seule option disponible est **[!UICONTROL Date de la dernière modification]**. 
    * **[!UICONTROL Texte]** : libellé ou légende pour l’attribut de date. La valeur par défaut est **[!UICONTROL Date de la dernière modification]**.
    * **[!UICONTROL Libellé de date de début :]** Libellé ou légende du champ Date de début.
    * **[!UICONTROL Libellé de date de fin :]** Libellé ou légende du champ de date de fin.
@@ -203,7 +203,7 @@ Pour configurer l’attribut de propriétés, procédez comme suit :
 
    Par exemple, si vous souhaitez afficher les formulaires dont le titre contient le mot « voyage », sélectionnez Masquer à côté de la propriété de titre. Spécifiez également « Voyage » dans la zone de texte Valeur de filtre par défaut.
 
-1. Appuyez sur **[!UICONTROL OK]**.
+1. Appuyez sur **[!UICONTROL OK]** 
 
 #### Prédicat de balises {#tags-predicate}
 

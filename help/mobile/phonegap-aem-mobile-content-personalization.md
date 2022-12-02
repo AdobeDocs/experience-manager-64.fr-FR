@@ -1,7 +1,7 @@
 ---
 title: Personnalisation du contenu AEM Mobile
 seo-title: AEM Mobile content personalization
-description: 'Consultez cette page pour en savoir plus sur la fonctionnalité de personnalisation de contenu AEM Mobile qui permet aux auteurs d’AEM de personnaliser le contenu des applications mobiles en exploitant Adobe Target. '
+description: Consultez cette page pour en savoir plus sur la fonctionnalité de personnalisation de contenu AEM Mobile qui permet aux auteurs d’AEM de personnaliser le contenu des applications mobiles en exploitant Adobe Target.
 seo-description: Follow this page to learn about AEM Mobile content personalization feature that allows AEM authors to personalize mobile app content by leveraging Adobe Target.
 uuid: 9078edd1-8399-485f-8a63-a07e766f7ef9
 contentOwner: User
@@ -9,13 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c9c818dc-c5c4-4a96-94fe-9dc9fe75705b
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+exl-id: 8b7a9edc-b7b1-4b31-9a6f-7f79aea7a960
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '2673'
 ht-degree: 3%
 
 ---
-
 
 # Personnalisation du contenu AEM Mobile{#aem-mobile-content-personalization}
 
@@ -121,7 +121,7 @@ AEM développeurs qui créent des applications mobiles doivent continuer à suiv
 
 ### Gestionnaires de synchronisation de contenu Adobe Target {#adobe-target-contentsync-handlers}
 
-La diffusion du contenu sur le périphérique de l’utilisateur est générée par le rendu des offres créées par les auteurs de contenu AEM. Pour gérer le rendu des offres cibles, il existe un nouveau gestionnaire de synchronisation de contenu qui traitera les offres. En utilisant l’application de référence hybride comme exemple, le module de contenu en (anglais) contient ContentSyncConfig avec un [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) gestionnaire. L’étape suivante est cruciale pour le rendu des offres sur l’appareil. Le gestionnaire mobileappoffers possède une propriété path qui identifie le chemin d’accès à l’activité de personnalisation à utiliser pour l’application.
+La diffusion du contenu sur le périphérique de l’utilisateur est générée en effectuant le rendu des offres créées par les auteurs de contenu AEM. Pour gérer le rendu des offres cibles, il existe un nouveau gestionnaire de synchronisation de contenu qui traitera les offres. En utilisant l’application de référence hybride comme exemple, le module de contenu en (anglais) contient ContentSyncConfig avec un [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) gestionnaire. L’étape suivante est cruciale pour le rendu des offres sur l’appareil. Le gestionnaire mobileappoffers possède une propriété path qui identifie le chemin d’accès à l’activité de personnalisation à utiliser pour l’application.
 
 Par exemple, si une activité se trouve à l’adresse */content/campaigns/hybridref* copiez ce chemin et collez-le en tant que valeur dans la propriété *path* de la propriété mobileappoffers handler.
 
@@ -279,7 +279,7 @@ Pour faciliter le rendu du contenu spécifiquement pour les applications mobiles
 
 Pour chaque mbox, un attribut de **cq-targeting** est ajouté pour permettre aux développeurs d’applications d’écrire du code personnalisé à consommer et à utiliser selon leurs besoins. Le [Application de référence hybride AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) contient un exemple de directive d’Angular qui utilise l’attribut cq-targeting . Le concept de remplacement du contenu, quand et comment, dépend largement du développeur d’applications mobiles. Un SDK Mobile est fourni via AEM /etc/clientlibs/mobileapps/js/mobileapps.js qui fournit une API pour appeler le service de ciblage d’Adobe. Il appartient au développeur de l’application de spécifier le moment où cet appel doit être effectué en fonction de la conception de son application.
 
-## Et après ? {#what-s-next}
+## Prochaines étapes? {#what-s-next}
 
 1. [Expérimenter le développement d’une application AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
 1. [Gérer le contenu d’une application mobile](/help/mobile/phonegap-manage-app-content.md)

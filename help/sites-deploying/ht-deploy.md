@@ -14,7 +14,7 @@ exl-id: 98f7a6b1-8b16-410c-872c-4af7bc4bcc64
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 82%
 
 Les rubriques suivantes décrivent comment effectuer certaines tâches de déploiement dans AEM :
 
-* [Comment utiliser la visionneuse de journaux](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
-* [Comment purger les workflows et le journal d’audit](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
+* [Comment utiliser la visionneuse de journaux](https://helpx.adobe.com/fr/experience-manager/kb/logsviewer.html)
+* [Comment purger les workflows et le journal d’audit](https://helpx.adobe.com/fr/experience-manager/kb/howtopurgewf.html)
 
-* [Conseils de réglage de la performance](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+* [Conseils de réglage de la performance](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html)
 * [Comment supprimer des fonctions de l’écran de bienvenue](/help/sites-developing/customizing-the-welcome-console.md)
-* [Comment désactiver la fonction de suivi de l’emplacement](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
+* [Comment désactiver la fonction de suivi de l’emplacement](https://helpx.adobe.com/fr/experience-manager/kb/turn-off-geolocation.html)

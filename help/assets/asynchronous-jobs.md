@@ -8,7 +8,7 @@ exl-id: 0abdfe87-d932-41dd-b1e6-9f5fa5b924fe
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 18%
 
 Pour réduire l&#39;impact négatif sur les performances, [!DNL Adobe Experience Manger Assets] traite de manière asynchrone certaines opérations de ressources longues et gourmandes en ressources. Le traitement asynchrone implique de mettre plusieurs tâches en file d’attente et de les exécuter en série selon la disponibilité des ressources système. Ces opérations incluent :
 
-* Suppression de nombreuses ressources.
+* Suppression de nombreuses ressources 
 * Déplacement de nombreuses ressources ou de ressources avec de nombreuses références.
 * Exportation et importation de métadonnées de ressources en bloc.
 
@@ -38,7 +38,7 @@ Lorsque [!DNL Assets] traite une opération de manière asynchrone, vous recevez
 
    Pour vérifier la progression d’une opération, voir la section **[!UICONTROL État]** colonne . Selon la progression, l’un des états suivants s’affiche :
 
-   * **[!UICONTROL Actif]** : l’opération est en cours de traitement..
+   * **[!UICONTROL Actif]** : l’opération est en cours de traitement. 
    * **[!UICONTROL Succès]**: L’opération est terminée.
    * **[!UICONTROL Échec]** ou **[!UICONTROL Erreur]**: L’opération n’a pas pu être traitée.
    * **[!UICONTROL Planifié]**: L’opération est planifiée à une date ultérieure.
@@ -92,6 +92,6 @@ Si le nombre de ressources, dossiers ou références à déplacer dépasse le no
 
 >[!MORELIKETHIS]
 >
->* [Configuration du courrier électronique dans Experience Manager](/help/sites-administering/notification.md).
+>* [Configuration des e-mails dans Experience Manager](/help/sites-administering/notification.md).
 >* [Importation et exportation des métadonnées de ressources par lot](/help/assets/metadata-import-export.md).
 

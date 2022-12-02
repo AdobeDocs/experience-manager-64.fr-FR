@@ -112,7 +112,7 @@ La console Lancements fournit un aperçu de vos lancements et permet d’appliqu
 
 * Ou directement avec [.http://localhost:4502/libs/launches/content/launches.html](http://localhost:4502/libs/launches/content/launches.html)
 
-## Lancements dans les références (console de sites) {#launches-in-references-sites-console}
+## Lancements dans les références (console Sites) {#launches-in-references-sites-console}
 
 1. Dans la console **Sites**, accédez à la source des lancements.
 1. Ouvrez le rail **Références** et sélectionnez la page source.

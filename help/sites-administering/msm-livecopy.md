@@ -119,7 +119,7 @@ Pour créer une Live Copy :
    >
    >Le chemin de destination ne peut pas être dans le chemin source.
 
-1. Enter:
+1. Enter :
 
    * Le **Titre** de la page.
    * Le **Nom** utilisé dans l’URL.
@@ -202,7 +202,7 @@ Pour afficher les propriétés :
 
    >[!NOTE]
    >
-   >Pour plus de détails, consultez également l’article [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html) (Message d’état de la Live Copy - À jour/Vert/Synchronisé) de la base de connaissances.
+   >Pour plus de détails, consultez également l’article [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/fr/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html) (Message d’état de la Live Copy - À jour/Vert/Synchronisé) de la base de connaissances.
 
 ### Affichage des Live Copies d’une page de plan directeur {#seeing-the-live-copies-of-a-blueprint-page}
 
@@ -333,7 +333,7 @@ Vous pouvez suspendre l’héritage de Live Copy d’une page Live Copy afin de 
 
 >[!NOTE]
 >
->Vous pouvez également [désolidariser une Live Copy](#detaching-a-live-copy) de son plan directeur pour supprimer toutes les connexions. L’action Désolidariser est définitive et irréversible.
+>Vous pouvez également [désolidariser une Live Copy](#detaching-a-live-copy) de son plan directeur pour supprimer toutes les connexions. L’action Désolidariser est définitive et irréversible.
 
 >[!NOTE]
 >

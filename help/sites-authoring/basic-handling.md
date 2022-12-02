@@ -13,7 +13,7 @@ exl-id: 9abef452-b435-4419-895c-083cae6cd7d2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2753'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -21,11 +21,10 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->* Cette page donne un aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il utilise la console **Sites** comme base.
+>* Cette page donne un aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il s’appuie sur la console **Sites**.
 >
 >* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et des fonctionnalités supplémentaires peuvent être disponibles dans certaines consoles. Vous trouverez des informations spécifiques plus détaillées sur les consoles individuelles et leurs fonctions sur d’autres pages.
 >* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-authoring/keyboard-shortcuts.md) et de la [modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
-
 >
 
 
@@ -88,14 +87,14 @@ Les options disponibles dans ces panneaux sont décrites ci-dessous.
   </tr>
   <tr>
    <td>Ressources<br /> </td> 
-   <td>Ces consoles permettent d’importer et de <a href="/help/assets/assets.md">gérer des ressources numériques</a> telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site web exécuté sur la même instance d’AEM. </td> 
+   <td>Ces consoles permettent d’importer et de <a href="/help/assets/assets.md">gérer des ressources numériques</a> telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site Web exécuté sur la même instance d’AEM. </td> 
   </tr>
   <tr>
    <td>Communities</td> 
    <td>Cette console permet de créer et de gérer des <a href="/help/communities/sites-console.md">sites de communauté</a> pour l’<a href="/help/communities/overview.md#engagement-community">engagement</a> et l’<a href="/help/communities/overview.md#enablement-community">activation</a>.</td> 
   </tr>
   <tr>
-   <td>Commerce</td> 
+   <td>Commerce </td> 
    <td>Vous permet de gérer les produits, les catalogues de produits et les commandes liés à vos sites de <a href="/help/sites-administering/ecommerce.md">commerce</a>.</td> 
   </tr>
   <tr>
@@ -103,7 +102,7 @@ Les options disponibles dans ces panneaux sont décrites ci-dessous.
    <td>Un <a href="/help/sites-authoring/experience-fragments.md">fragment d’expérience</a> est une expérience autonome qui peut être réutilisée sur l’ensemble des canaux et présentant des variations, vous évitant ainsi de devoir copier et coller à plusieurs reprises des expériences ou des parties d’expériences.</td> 
   </tr>
   <tr>
-   <td>Formulaires</td> 
+   <td>Forms</td> 
    <td>Cette console permet de créer, de gérer et de traiter vos <a href="/help/forms/using/introduction-aem-forms.md">formulaires et documents</a>&gt;.</td> 
   </tr>
   <tr>
@@ -147,7 +146,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![](do-not-localize/screen_shot_2018-03-23at103547.png)
 
-* [Solutions Marketing Cloud](https://www.adobe.com/marketing-cloud.html)
+* [Solutions Marketing Cloud](https://www.adobe.com/fr/marketing-cloud.html)
 
    ![](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -177,7 +176,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![chlimage_1-358](assets/chlimage_1-358.png)
 
-   Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site web.
+   Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site Web.
 
    Il vous suffit de cliquer sur le texte du chemin de navigation pour afficher une liste déroulante répertoriant les niveaux hiérarchiques de l’élément actuellement sélectionné. Cliquez sur une entrée pour accéder à cet emplacement.
 
@@ -187,7 +186,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Cet élément est disponible en mode Liste uniquement. Voir [mode liste](#list-view) pour plus d’informations.
+   Cet élément est disponible en mode Liste uniquement. Pour plus d’informations, consultez [Mode Liste](#list-view).
 
 * Bouton **Créer**
 
@@ -232,7 +231,7 @@ Plusieurs ressources d’aide sont disponibles :
    Dans la console **Outils**, vous pouvez également accéder aux **ressources** externes :
 
    * **Documentation**
-Affichez la documentation de web Experience Management.
+Affichez la documentation de Web Experience Management.
 
    * **Ressources pour les développeurs**
 Ressources et téléchargements pour les développeurs.
@@ -246,7 +245,7 @@ Ressources et téléchargements pour les développeurs.
    >* [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
 
-## Barre d’outils d’actions {#actions-toolbar}
+## Barre d’outils Actions {#actions-toolbar}
 
 Lorsque vous sélectionnez une ressource (une page ou une ressource, par exemple), diverses actions sont indiquées par des icônes, avec un texte explicatif dans la barre d’outils. Ces actions dépendent de différents éléments :
 
@@ -317,13 +316,13 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
    <td>Mode Carte<br /> </td> 
    <td>
     <ul> 
-     <li>Bureau :<br /> Pointez dessus, puis utilisez l’action rapide en forme de coche.</li> 
+     <li>Ordinateur de bureau :<br /> pointez, puis utilisez l’action rapide</li> 
      <li>Appareil mobile :<br /> maintenez la carte enfoncée</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li>Bureau :<br /> Cliquez sur la carte</li> 
-     <li>Appareil mobile :<br /> Appuyez sur la carte.</li> 
+     <li>Ordinateur de bureau :<br /> cliquez sur la carte</li> 
+     <li>Appareil mobile :<br /> appuyez sur la carte</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -408,7 +407,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
    * Le titre de la page.
    * Des dates importantes (telles que la date de la dernière modification ou publication).
    * Si la page est verrouillée, masquée ou fait partie d’une Live Copy.
-   * Le cas échéant, le moment auquel vous devez effectuer une action dans le cadre d’un worfklow.
+   * Le cas échéant, le moment auquel vous devez effectuer une action dans le cadre d’un workflow.
 
       * Les repères qui indiquent les actions requises peuvent être liés à des entrées de votre [boîte de réception](/help/sites-authoring/inbox.md).
 
@@ -442,7 +441,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 
    * **Nom** : nom de la page ; cela peut s’avérer utile dans un environnement de création multilingue, dans la mesure où il fait partie de l’URL de la page et où il ne change pas, quelle que soit la langue.
    * **Modifié** : date de la dernière modification et nom de l’utilisateur responsable de la modification.
-   * **Publié** : état de la publication.
+   * **Publié** : statut de la publication.
    * **Modèle** : modèle sur lequel la page est basée.
    * **Analyse de la page**
    * **Visiteurs uniques**
@@ -524,7 +523,7 @@ La colonne Chronologie permet d’effectuer les actions suivantes :
 * Certaines consoles possèdent des fonctionnalités supplémentaires. Par exemple, dans la console Sites, vous pouvez :
 
    * [enregistrer une version](/help/sites-authoring/working-with-page-versions.md) ;.
-   * [Démarrer un worfklow](/help/sites-authoring/workflows-applying.md).
+   * [Démarrer un workflow](/help/sites-authoring/workflows-applying.md).
 
 Ces fonctionnalités sont accessibles par le biais du chevron en regard du champ **Commentaires**.
 

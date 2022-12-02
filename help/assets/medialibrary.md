@@ -1,6 +1,6 @@
 ---
-title: Utilisation de Media Library pour la gestion de base des ressources numériques
-description: '"[!DNL Experience Manager Assets] et Media Library pour la gestion des ressources."'
+title: Utilisation de Media Library pour la gestion de base des ressources numériques
+description: "[!DNL Experience Manager Assets] et Media Library pour la gestion des ressources."
 contentOwner: AG
 feature: Asset Management
 role: Architect,Leader
@@ -8,7 +8,7 @@ exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
 source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Define what is not included
 
 -->
 
-# Utilisation de Media Library pour la gestion de base des ressources {#manage-assets-using-media-library}
+# Utilisation de Media Library pour la gestion de base des ressources {#manage-assets-using-media-library}
 
 La plateforme [!DNL Adobe Experience Manager] offre différentes fonctionnalités de gestion des ressources. Media Library permet aux utilisateurs de charger un petit nombre de ressources dans le référentiel, de les rechercher et de les utiliser dans les pages web et de réaliser des tâches de gestion simples des ressources.
 
@@ -71,7 +71,7 @@ Pour utiliser la fonctionnalité Media Library, vous pouvez utiliser l’interfa
 * Ajouter des ressources aux pages [!DNL Sites] via l’outil de recherche de contenu.
 * Utilisation [!DNL Content Fragments].
 * Utilisation des API HTTP REST et GraphQL pour les [!DNL Content Fragments] et les ressources multimédias référencées, sous licence Sites.
-* Intégration de Marketing Cloud.
+* Intégration d’Experience Cloud.
 * Personnalisez et étendez l’interface utilisateur de gestion des ressources.
 * Accédez à Query Builder (API) pour étendre la fonctionnalité de recherche.
 * Créez des balises statiques.
@@ -86,7 +86,7 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 
 >[!IMPORTANT]
 >
->De nombreux cas d’utilisation avancés de la gestion des actifs numériques sont remplis par [!DNL Experience Manager Assets]. La licence Media Library vous permet de ne répondre qu’aux cas d’utilisation répertoriés à l’aide de Media Library. Si un cas pratique n’est pas répertorié, ne l’utilisez pas avec la licence Media Library. Si vous avez des questions, contactez le service clientèle d’Adobe.
+>De nombreux cas d’utilisation avancés de la gestion des actifs numériques sont remplis par [!DNL Experience Manager Assets]. La licence Media Library vous permet de ne répondre qu’aux cas d’utilisation répertoriés à l’aide de Media Library. Si un cas pratique n’est pas répertorié, ne l’utilisez pas avec la licence Media Library. Si vous avez des questions, contactez l’Assistance clientèle d’Adobe.
 
 Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL Asset], de sélecteur [!DNL Asset], de balisage en masse, des workflows de modification des ressources ou l’interface utilisateur standard [!DNL Adobe Experience Manager] pour accéder à Media Library sans licence [!DNL Assets].
 
@@ -94,5 +94,5 @@ Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL As
 
 >[!MORELIKETHIS]
 >
->* [Fonctionnalités de gestion des actifs numériques dans [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-64/assets/home.html?lang=fr)
+>* [Fonctionnalités de gestion des ressources numériques dans  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-64/assets/home.html?lang=fr)
 

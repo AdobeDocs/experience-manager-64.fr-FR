@@ -1,7 +1,7 @@
 ---
-title: 'Suppression d’un domaine '
+title: Suppression d’un domaine
 seo-title: Delete a domain
-description: 'Découvrez comment utiliser la page Gestion des domaines pour supprimer un domaine ou pour désigner un domaine comme obsolète. '
+description: Découvrez comment utiliser la page Gestion des domaines pour supprimer un domaine ou pour désigner un domaine comme obsolète.
 seo-description: Learn how to use the Domain Management page to delete a domain or to mark an existing domain as obsolete.
 uuid: 0d1f9835-3e28-41d3-a3b1-e36d95384328
 contentOwner: admin

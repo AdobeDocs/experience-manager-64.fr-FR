@@ -81,7 +81,7 @@ Si la configuration est correcte, la sortie doit se présenter comme suit :
 19.05.2017 15:44:10.405 *INFO* [0:0:0:0:0:0:0:1 [1495197850401] POST /home/users/3/35XVpVtLRx4a5J9gKrVG.rw.userprops.html HTTP/1.1] com.adobe.granite.security.user.internal.audit.AuditAuthorizableAction Password for User 'john' was changed
 ```
 
-## IU classique
+## Interface utilisateur classique
 
 Dans l’IU classique, les informations sur les opérations de création, lecture, mise à jour et suppression enregistrées dans le journal d’audit concernant l’ajout et la suppression d’utilisateurs sont limitées à l’ID de l’utilisateur affecté et à la date de modification.
 

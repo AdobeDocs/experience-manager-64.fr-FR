@@ -1,7 +1,7 @@
 ---
 title: eCommerce
 seo-title: eCommerce
-description: AEM eCommerce aide les spécialistes du marketing à offrir des expériences d’achat personnalisées sur le web, les appareils mobiles et les médias sociaux.
+description: AEM eCommerce aide les spécialistes du marketing à offrir des expériences d’achat personnalisées sur le web, les appareils mobiles et les médias sociaux.
 seo-description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
 uuid: 14af7a3a-7211-4a56-aeef-1603128d5d8a
 contentOwner: Guillaume Carlino
@@ -14,7 +14,7 @@ exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
 source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 78%
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 78%
 * [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 * [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 
-Adobe propose deux versions de la structure d’intégration de Commerce :
+Adobe propose deux versions de framework d’intégration de Commerce :
 
 |  | CIF sur site | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -36,8 +36,8 @@ Adobe propose deux versions de la structure d’intégration de Commerce :
 | Catalogue de produits | - Importateur de produits, éditeur, mise en cache dans AEM <br>- Catalogues réguliers avec des pages AEM ou proxy | - Pas d’importation de produit <br>- Modèles génériques <br>- Données à la demande via le connecteur |
 | Évolutivité | - Peut prendre en charge jusqu’à quelques millions de produits (selon le cas d’utilisation) <br> - Mise en cache sur Dispatcher | - Aucune limitation de volume <br>- Mise en cache sur Dispatcher ou CDN |
 | Modèle de données normalisé | Non | Oui, schéma GraphQL Magento |
-| Disponibilité | Oui :<br> - Commerce Cloud SAP (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4) <br>- Commerce Cloud Salesforce (Connecteur Open Source pour prendre en charge AEM 6.4) | Oui via open source via GitHub. <br> Magento Commerce (prend en charge Magento 2.3.2 (par défaut) et compatible avec Magento 2.3.1). |
-| Quand l’utiliser | Cas d’utilisation limités : Dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés | Solution conseillée dans la plupart des cas d’utilisation |
+| Disponibilité | Oui :<br> - Commerce Cloud SAP (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4) <br>- Commerce Cloud Salesforce (connecteur open-source pour prendre en charge AEM 6.4) | Oui, en open source via GitHub. <br> Magento Commerce (prend en charge Magento 2.3.2 (par défaut) et compatible avec Magento 2.3.1). |
+| Quand l’utiliser | Cas d’utilisation limités : dans le cas de scénarios dans lesquels de petits catalogues statiques doivent être importés | Solution conseillée dans la plupart des cas d’utilisation |
 
 Conjointement avec la gestion d’informations sur les produits, eCommerce gère les activités d’un site web de vente de produits dans une boutique en ligne :
 
@@ -59,19 +59,19 @@ La mise en œuvre d’eCommerce permet d’accéder en temps réel à des inform
 * Intégrité des informations sur le produit
 * Tarifs
 * Inventaire de gestion des stocks
-* Variantes de l’état d’un panier
+* Variations du statut d’un panier
 
 >[!NOTE]
 >
->Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement d’eCommerce](/help/sites-deploying/ecommerce.md).
+>Pour utiliser le framework d’intégration avec les prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, reportez-vous à [Déploiement d’e-commerce](/help/sites-deploying/ecommerce.md).
 >
->Pour plus d’informations sur l’extension des fonctionnalités d’eCommerce, voir [Développement du commerce électronique](/help/sites-developing/ecommerce.md).
+>Pour plus d’informations sur les possibilités d’extension d’eCommerce, consultez [Développement du e-commerce](/help/sites-developing/ecommerce.md).
 
 ## Principales fonctionnalités {#main-features}
 
 AEM eCommerce fournit ce qui suit :
 
-* Un certain nombre de **Composants AEM d’usine** pour illustrer ce qui peut être réalisé pour votre projet :
+* Différents **composants AEM prêts à l’emploi** illustrent ce qu’il est possible d’obtenir pour votre projet :
 
    * Affichage des produits
    * Panier
@@ -95,11 +95,11 @@ AEM eCommerce fournit ce qui suit :
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-* Utilise l’AEM de la fonction **présenter votre contenu sur plusieurs canaux ;**, que ce soit la fenêtre complète du navigateur ou l’appareil mobile. Ainsi, vous proposez votre contenu au format nécessaire pour vos visiteurs.
+* Utilise les capacités d’AEM de **présenter du contenu sur plusieurs canaux**, qu’il s’agisse d’une fenêtre de navigateur ou d’un appareil mobile. Ainsi, vous proposez votre contenu au format adapté pour vos visiteurs.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-* La possibilité de **développer votre propre mise en œuvre de l’intégration en fonction de la [structure d’AEM eCommerce](#the-framework)**.
+* La possibilité de **développer votre propre mise en œuvre de l’intégration en fonction du [framework d’AEM eCommerce](#the-framework)**.
 
    Les deux mises en œuvre actuellement disponibles reposent sur la même base et complètent l’API générale (la structure). La mise en œuvre d’une nouvelle intégration implique seulement de mettre en œuvre les fonctionnalités dont votre intégration a besoin. Les composants frontaux peuvent être utilisés par les nouvelles mises en œuvre puisqu’ils utilisent des interfaces (et sont donc indépendants de la mise en œuvre).
 
@@ -130,8 +130,8 @@ La section [Concepts](/help/sites-administering/concepts.md) couvre la structure
 
 * La structure d’intégration fournit l’API, une série de composants illustrant les fonctionnalités et différentes extensions pour fournir des exemples de méthodes de connexion.
 * La structure fournit la structure de base nécessaire à la mise en œuvre d’un projet.
-* La structure est extensible.
-* La structure ne fournit pas de site prêt à l’emploi. Un certain travail de développement reste nécessaire pour adapter la structure à vos spécifications.
+* Le framework est extensible.
+* Le framework ne fournit pas de site prêt à l’emploi. Un certain travail de développement reste nécessaire pour adapter le framework à vos spécifications.
 
 ### Pourquoi ? {#why}
 

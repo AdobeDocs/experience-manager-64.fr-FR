@@ -51,7 +51,7 @@ Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœ
 
 >[!NOTE]
 >
->Une [action de formulaire](#developing-your-own-form-actions) peut également définir la ressource à partir de laquelle les valeurs initiales doivent être chargées . Pour ce faire, `FormsHelper#setFormLoadResource` est utilisé dans `init.jsp`.
+>Une [action de formulaire](#developing-your-own-form-actions) peut également définir la ressource à partir de laquelle les valeurs initiales doivent être chargées. Pour ce faire, `FormsHelper#setFormLoadResource` est utilisé dans `init.jsp`.
 >
 >Le formulaire est rempli à partir du chemin d’accès défini dans le composant de début de formulaire par l’auteur, et ce, uniquement si cette action n’est pas définie.
 

@@ -36,7 +36,6 @@ Les collections représentent une *compartiment* remplie avec du contenu tel que
 >* [Observations relatives à la conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
 >* [Gestion des collections](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
-
 >
 
 
@@ -141,7 +140,7 @@ Les collections sont essentiellement une catégorie de contenu associé : Ils ra
 
 ![chlimage_1-2](assets/chlimage_1-2.gif)
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 Pour en savoir plus sur la gestion des collections, voir
 

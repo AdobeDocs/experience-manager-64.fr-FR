@@ -13,7 +13,7 @@ exl-id: 9e93b28b-627d-4676-82a6-d719de4d152a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ Pour rechercher et filtrer vos ressources :
 
    ![screen_shot_2018-03-23at101619](assets/screen_shot_2018-03-23at101619.png)
 
-1. Vous pouvez également ajouter des termes de recherche:
+1. Vous pouvez également ajouter des termes de recherche :
 
    ![screen_shot_2018-03-23at101710](assets/screen_shot_2018-03-23at101710.png)
 

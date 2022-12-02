@@ -58,7 +58,7 @@ Uniquement lorsqu’il est connecté en tant qu’administrateur ou en tant que 
 
 >[!NOTE]
 >
->Le contenu généré par l’utilisateur de l’environnement de publication n’est visible sur l’auteur que si la SRP choisie met en oeuvre un magasin commun. Par exemple, par défaut, le stockage est JSRP, ce qui n’est pas un magasin courant pour la création et la publication. Voir [Stockage de contenu communautaire](working-with-srp.md).
+>Le contenu généré par l’utilisateur de l’environnement de publication n’est visible sur l’auteur que si la SRP choisie met en oeuvre un magasin commun. Par exemple, par défaut, le stockage est JSRP, ce qui n’est pas un magasin courant pour la création et la publication. Consultez la section [Stockage de contenu de la communauté](working-with-srp.md).
 
 ![modération-consoleauthor](assets/moderationconsoleauthor.png)
 
@@ -127,7 +127,7 @@ Cependant, si vous cochez **Question** et **En attente**, vous verrez uniquement
 
 Lorsque le rail de filtrage est ouvert, l’icône Rechercher permet de basculer entre le panneau latéral et le panneau fermé. Toutefois, pour fermer le rail de filtrage et afficher uniquement le contenu généré par l’utilisateur, cliquez sur l’icône Rechercher et sélectionnez l’option Contenu uniquement .
 
-#### Content Path (Chemin d’accès au contenu) {#content-path}
+#### Chemin d’accès au contenu {#content-path}
 
 Le chemin d’accès au contenu limite le contenu généré par l’utilisateur de référence affiché aux publications placées dans le référentiel de contenu spécifié.
 
@@ -193,7 +193,7 @@ Le résultat est un nouveau filtre sélectionnable pour `Voting`sous le `Content
 
 Lorsque ce filtre est sélectionné, le contenu du tableau de bord affiche le contenu généré par l’utilisateur correspondant à l’un des types de ressources renseignés.
 
-#### État {#status}
+#### Statut {#status}
 
 État limite le contenu généré par l’utilisateur référencé aux publications dont l’état sélectionné peut être En attente, Approuvé, Refusé ou Fermé, ainsi que Version préliminaire ou Planifié pour les articles de blog et Réponse ou Non aux questions Q&amp;R. Si aucun paramètre n’est sélectionné, tous sont affichés.
 

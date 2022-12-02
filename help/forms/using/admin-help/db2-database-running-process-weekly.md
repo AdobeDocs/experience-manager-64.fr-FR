@@ -1,6 +1,6 @@
 ---
-title: '"Base de données DB2 : exécution d’un processus hebdomadaire"'
-seo-title: 'DB2 database: Running a process weekly'
+title: "Base de données DB2\_: exécution d’un processus hebdomadaire"
+seo-title: "DB2 database: Running a process weekly"
 description: Découvrez comment vous pouvez améliorer la performance de votre base de données AEM Forms DB2.
 seo-description: See how you can improve the performance of your AEM forms DB2 database.
 uuid: 36070087-c250-41df-a841-aa922e777697

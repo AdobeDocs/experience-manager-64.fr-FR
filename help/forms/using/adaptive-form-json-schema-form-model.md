@@ -1,7 +1,7 @@
 ---
 title: Création de formulaires adaptatifs à l’aide d’un schéma JSON
 seo-title: Creating adaptive forms using JSON Schema
-description: 'Les formulaires adaptatifs peuvent utiliser un schéma JSON en tant que modèle de formulaire, ce qui vous permet d’exploiter les modèles JSON existants pour créer des formulaires adaptatifs. '
+description: Les formulaires adaptatifs peuvent utiliser un schéma JSON en tant que modèle de formulaire, ce qui vous permet d’exploiter les modèles JSON existants pour créer des formulaires adaptatifs.
 seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
 uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop

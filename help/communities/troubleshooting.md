@@ -49,7 +49,7 @@ Le problème est que la chaîne de format pour com.day.cq.commons.date.RelativeT
 
 Par conséquent, tout code utilisant l’API RelativeTimeFormat() doit être modifié.
 
-* Origine: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
+* De: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * Pour :`final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
 L’échec est différent sur l’auteur et la publication. Sur l’auteur, il échoue silencieusement et n’affiche simplement pas les sujets du forum. Une fois la publication effectuée, l’erreur est renvoyée sur la page.

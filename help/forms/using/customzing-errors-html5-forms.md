@@ -12,7 +12,7 @@ exl-id: e8a53976-e9bd-459d-92f5-88527c72428b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 83%
 
 Dans les formulaires HTML5, hors de la zone, les messages d’erreur et les avertissements ont une position et un aspect fixes (police et couleur), l’erreur est affichée uniquement pour un champ sélectionné, et une seule erreur s’affiche.
 
-L’article décrit les étapes de personnalisation des messages d’erreur de HTML5 forms pour,
+L’article fournit les étapes pour personnaliser les messages d’erreur des formulaires HTML5 afin de
 
 * changer l’aspect et la position des messages d’erreur. Vous pouvez faire qu’une erreur apparaisse en haut, en bas, et sur le côté droit de chaque champ.
 * afficher les messages d’erreur pour plusieurs champs à tout moment spécifié. 
@@ -38,8 +38,8 @@ Après avoir extrait le package, ouvrez le dossier CustomErrorManager-1.0-SNAPSH
 
 Pour personnaliser la position d’un message d’erreur, ajoutez une balise &lt;div> à chaque champ d’erreur et d’avertissement, positionnez la balise &lt;div> à gauche ou à droite, puis appliquez les styles CSS à la balise &lt;div>. Pour obtenir des instructions détaillées, consultez la procédure ci-dessous :
 
-1. Accédez au `CustomErrorManager-1.0-SNAPSHOT`et ouvrez le dossier `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` dossier.
-1. Ouvrez le `customErrorManager.js` pour modification. Le `markError` accepte les paramètres suivants :
+1. Accédez au dossier `CustomErrorManager-1.0-SNAPSHOT` et ouvrez le dossier `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
+1. Ouvrez le fichier `customErrorManager.js` pour le modifier. La fonction `markError` du fichier accepte les paramètres suivants :
 
    |  |  |
    |---|---|
@@ -120,9 +120,9 @@ Utilisez le package ci-joint pour afficher simultanément les messages d’erreu
 
 ## Rendre le formulaire avec le nouveau profil.  {#render-the-form-with-the-new-profile-nbsp}
 
-Les formulaires HTML5 prêts à l’emploi utilisent un profil par défaut : https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
+D’emblée, les formulaires HTML5 utilisent un profil par défaut : https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>.
 
-Pour afficher un formulaire avec les messages d’erreur personnalisés, effectuez le rendu du formulaire avec le profil d’erreur : https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
+Pour afficher un formulaire avec les messages d’erreur personnalisés, effectuez le rendu du formulaire avec le profil d’erreur : https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>.
 
 >[!NOTE]
 >

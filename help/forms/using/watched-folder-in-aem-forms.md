@@ -75,9 +75,9 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 
    * auteur 
 
-   * publish
+   * publication
 
-   * auteur, publier
+   * auteur, publication
 
    * publication, auteur
    >[!NOTE]

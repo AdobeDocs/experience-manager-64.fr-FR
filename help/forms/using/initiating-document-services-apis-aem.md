@@ -1,5 +1,5 @@
 ---
-title: 'Lancement des API de Services de document à partir d’un flux de travail AEM '
+title: Lancement des API de Services de document à partir d’un flux de travail AEM
 seo-title: Initiate Document Services APIs from AEM Workflow
 description: Découvrez comment appeler AEM Document Services sur DDX ou des entrées fournies. Voir également Conversion d’un PDF en PDF/A
 seo-description: Learn how to invoke AEM Document services on DDX or supplied inputs. Also see hwo to convert PDF to PDF/A

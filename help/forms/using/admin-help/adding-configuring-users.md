@@ -1,5 +1,5 @@
 ---
-title: 'Ajout et configuration d’utilisateurs '
+title: Ajout et configuration d’utilisateurs
 seo-title: Adding and configuring users
 description: Les paramètres User Management dans la console d’administration vous permettent de créer ou supprimer des utilisateurs et de configurer d’autres paramètres utilisateur.
 seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.

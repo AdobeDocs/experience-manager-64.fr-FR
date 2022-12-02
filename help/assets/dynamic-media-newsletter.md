@@ -1,6 +1,6 @@
 ---
-title: Archive de la newsletter Dynamic Media
-description: 'La newsletter Dynamic Media archivée par Experience League était une newsletter mensuelle. Il a été conçu pour vous aider à vous familiariser avec Dynamic Media et Dynamic Media Classic afin que vous puissiez en tirer immédiatement parti. Les newsletters archivées contiennent de précieuses ressources d’acquisition de connaissances qui étaient disponibles dans cette newsletter ponctuelle qui est maintenant abandonnée. Les newsletters archivées comprennent des vidéos pratiques et des présentations de solutions. Il existe également des présentations des principales fonctionnalités telles que les paramètres prédéfinis d’image, les paramètres prédéfinis de visionneuse et les profils vidéo.  '
+title: Archive de la newsletter Dynamic Media
+description: La newsletter Dynamic Media archivée par Experience League était une newsletter mensuelle. Elle était conçue pour vous aider à vous familiariser avec Dynamic Media et Dynamic Media Classic afin d’en tirer parti immédiatement. Les newsletters archivées contiennent de précieuses ressources d’acquisition de connaissances qui étaient disponibles dans cette newsletter ponctuelle qui est maintenant abandonnée. Elles comprennent des vidéos pratiques et des présentations de solutions. Elles comprennent également des présentations des principales fonctionnalités telles que les paramètres prédéfinis d’image, les paramètres prédéfinis de visionneuse et les profils vidéo.
 keywords: dynamic media;newsletter;mises à jour de produit;conseils et astuces;événements;succès client;blog;blogs;images;vidéos;fonctionnalités;fonctionnalités
 solution: Experience Manager, Dynamic Media Classic
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
@@ -9,7 +9,7 @@ role: Admin,User
 source-git-commit: 673e92ce3228b1a5c9951c254cc672645ff204f1
 workflow-type: tm+mt
 source-wordcount: '1076'
-ht-degree: 89%
+ht-degree: 94%
 
 ---
 

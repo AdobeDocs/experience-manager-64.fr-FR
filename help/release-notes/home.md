@@ -52,4 +52,4 @@ Les notes de mise à jour d’AEM comportent des informations importantes sur la
 
 Pour plus d’informations, consultez [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html).
 
-Avis de licences de tiers : [http://www.adobe.com/fr/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
+Avis de licences de tiers : [https://www.adobe.com/fr/products/eula/third_party.html](https://www.adobe.com/fr/products/eula/third_party.html)

@@ -1,5 +1,5 @@
 ---
-title: 'Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)  '
+title: Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)
 seo-title: Invalidating your CDN cached content
 description: L’annulation de la validité du contenu CDN en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
 seo-description: Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media, instead of waiting for the cache to expire.
@@ -15,7 +15,7 @@ role: Admin,User,Developer
 source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -27,9 +27,9 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic](https://helpx.a
 
 **Pour annuler la validité du contenu CDN mis en cache, procédez comme suit :** 
 
-1. Connectez-vous à votre application de bureau Dynamic Media Classic.
+1. Connectez-vous à l’application de bureau Dynamic Media Classic.
 
-   [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)
+   [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=fr#system-requirements-dmc-app)
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 

@@ -1,5 +1,5 @@
 ---
-title: AEM Forms
+title: AEM Forms
 seo-title: AEM Forms
 description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.3 Forms.
 seo-description: Release notes specific to Adobe Experience Manager 6.3 Forms.
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ---
 
-# AEM Forms {#aem-forms}
+# AEM Forms {#aem-forms}
 
 Cette section présente les principales caractéristiques d’AEM 6.4 Forms. Une description détaillée de toutes les nouvelles fonctionnalités est disponible dans le [Résumé des nouvelles fonctionnalités et améliorations d’AEM 6.4 Forms](/help/forms/using/whats-new.md).
 

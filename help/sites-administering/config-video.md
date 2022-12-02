@@ -13,7 +13,7 @@ exl-id: 46d0765d-fb77-4332-8fbb-5bd2abcd6806
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 35%
+ht-degree: 65%
 
 ---
 
@@ -25,7 +25,7 @@ Pour qu’un transcodage correct se produise, votre administrateur doit [Install
 
 >[!CAUTION]
 >
->Ce composant ne doit plus fonctionner d’usine sans une personnalisation étendue au niveau du projet.
+>Ce composant n’est plus censé fonctionner sans nécessiter une personnalisation détaillée au niveau du projet.
 
 ## Configuration des profils vidéo {#configure-video-profiles}
 
@@ -35,7 +35,7 @@ Vous pouvez définir des profils vidéo à utiliser pour les éléments HTML5. L
 
 Vous pouvez également configurer la conception des composants vidéo et des paramètres pour [!UICONTROL Lecture], [!UICONTROL Flash], et [!UICONTROL Avancé].
 
-## Installation de FFmpeg et configuration des AEM {#install-ffmpeg}
+## Installation de FFmpeg et configuration d’AEM {#install-ffmpeg}
 
 Le composant vidéo repose sur le produit Open Source tiers FFmpeg pour le transcodage correct des vidéos qui peuvent être téléchargées à partir de [https://ffmpeg.org/](https://ffmpeg.org/). Après avoir installé FFmpeg, vous devez configurer AEM pour pouvoir utiliser un codec audio et des options d’exécution spécifiques.
 
@@ -45,7 +45,7 @@ Le composant vidéo repose sur le produit Open Source tiers FFmpeg pour le trans
 
    1. Téléchargez le fichier binaire compilé en tant que `ffmpeg.zip`
    1. Décompressez-le dans un dossier.
-   1. Définition de la variable d’environnement système `PATH` to `<*your-ffmpeg-locatio*n>\bin`
+   1. Définissez la variable d’environnement système `PATH` à `<*your-ffmpeg-locatio*n>\bin`
    1. Redémarrez AEM.
 
 * **Sur Mac OS X :**
@@ -69,8 +69,8 @@ Le composant vidéo repose sur le produit Open Source tiers FFmpeg pour le trans
 
 **Pour configurer AEM**:
 
-1. Ouvrir [!UICONTROL CRXDE Lite] dans votre navigateur web. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
-1. Sélectionnez la `/libs/settings/dam/video/format_aac/jcr:content` et assurez-vous que les propriétés du noeud sont les suivantes :
+1. Ouvrez [!UICONTROL CRXDE Lite] dans un navigateur Web. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+1. Sélectionnez le nœud `/libs/settings/dam/video/format_aac/jcr:content` et vérifiez que les propriétés du nœud sont les suivantes :
 
    * audioCodec :
 
@@ -84,7 +84,7 @@ Le composant vidéo repose sur le produit Open Source tiers FFmpeg pour le trans
        -flags +loop -me_method umh -g 250 -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -bf 16 -b_strategy 1 -i_qfactor 0.71 -cmp chroma -subq 8 -me_range 16 -coder 1 -sc_threshold 40 -b-pyramid normal -wpredp 2 -mixed-refs 1 -8x8dct 1 -fast-pskip 1 -keyint_min 25 -refs 4 -trellis 1 -direct-pred 3 -partitions i8x8,i4x4,p8x8,b8x8
       ```
 
-1. Pour personnaliser la configuration, créez une superposition dans `/apps/settings/` et déplacez la même structure sous `/conf/global/settings/` noeud . Il ne peut pas être modifié dans `/libs` noeud . Par exemple, pour recouvrir le chemin `/libs/settings/dam/video/fullhd-bp`, créez-le à l’adresse `/conf/global/settings/dam/video/fullhd-bp`.
+1. Pour personnaliser la configuration, créez une superposition dans `/apps/settings/` et déplacez la même structure sous le nœud `/conf/global/settings/`. Elle ne peut pas être modifiée dans le nœud `/libs`. Par exemple, pour recouvrir le chemin `/libs/settings/dam/video/fullhd-bp`, créez-le à l’adresse `/conf/global/settings/dam/video/fullhd-bp`.
 
    >[!NOTE]
    >
@@ -94,4 +94,4 @@ Le composant vidéo repose sur le produit Open Source tiers FFmpeg pour le trans
 
 >[!NOTE]
 >
->Les modèles de workflow prêts à l’emploi ne sont pas conservés lors de la mise à niveau de votre instance AEM. Adobe recommande de copier les modèles de workflow prêts à l’emploi avant de les modifier. Par exemple, copiez le modèle Ressources de mise à jour de gestion des actifs numériques prêt à l’emploi avant de modifier l’étape Transcodage FFmpeg dans le modèle Ressources de mise à jour de gestion des actifs numériques pour sélectionner les noms de profil vidéo qui existaient avant la mise à niveau. Vous pouvez ensuite superposer le `/apps` pour permettre AEM récupérer les modifications personnalisées dans le modèle OOTB.
+>Les modèles de workflow prêts à l’emploi ne sont pas conservés lors de la mise à niveau de votre instance AEM. Adobe recommande de copier les modèles de workflow prêts à l’emploi avant de les modifier. Par exemple, copiez le modèle de Ressource de mise à jour de la gestion des ressources numériques prêt à l’emploi avant de modifier l’étape de transcodage FFmpeg dans le modèle de Ressource de mise à jour de la gestion des ressources numériques afin de choisir des noms de vidéo-profil qui existaient avant la mise à niveau. Ensuite, vous pouvez remplacer le nœud `/apps` pour permettre à AEM de récupérer les modifications personnalisées apportées au modèle prêt à l’emploi.

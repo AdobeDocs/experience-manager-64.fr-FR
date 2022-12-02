@@ -14,7 +14,7 @@ exl-id: 01cfc774-8ae1-48c0-a7e3-5836c4b39bff
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -118,4 +118,4 @@ créer un ou plusieurs utilisateurs avec le chemin d’accès = /home/users/comm
 
 ## Dispatcher {#dispatcher}
 
-Lorsque le déploiement inclut [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), pour que les fonctions d’activation fonctionnent correctement, la variable `clientheader`et `filter`Les sections doivent être modifiées. Voir [Configuration de Dispatcher pour Communities](dispatcher.md#enablement).
+Lorsque le déploiement inclut [AEM Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html), pour que les fonctions d’activation fonctionnent correctement, la variable `clientheader`et `filter`Les sections doivent être modifiées. Voir [Configuration de Dispatcher pour Communities](dispatcher.md#enablement).

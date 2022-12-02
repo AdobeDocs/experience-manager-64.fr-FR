@@ -13,17 +13,17 @@ exl-id: e8f83d21-b55e-4415-a581-8df1b71a84b1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Administration de sites web{#website-administration}
 
-Les outils d’administration suivants sont disponibles pour gérer les sites et les pages web :
+Les outils d’administration suivants sont disponibles pour gérer les sites et les pages web :
 
-* Multi Site Manager (MSM) vous permet d’utiliser le même contenu de site à plusieurs emplacements, tout en autorisant des variations :
+* Multi Site Manager (MSM) vous permet d’utiliser le même contenu de site à plusieurs endroits différents, tout en autorisant des variations :
 
-   * [Réutilisation de contenu : Multi Site Manager et Live Copy](/help/sites-administering/msm.md)
+   * [Réutilisation de contenu : Multi-Site Manager et Live Copy](/help/sites-administering/msm.md)
 
 * La traduction vous permet d’automatiser la traduction du contenu des pages, des ressources et du contenu créé par l’utilisateur pour créer et tenir à jour des sites web multilingues :
 
@@ -53,7 +53,6 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >
 >* [MSM](/help/sites-administering/msm.md) gère le déploiement du contenu traduit d’un plan directeur (par exemple, un gabarit mondial) des Live Copies (par exemple, les sites locaux), dans les limites d’une langue.
 >* Les fonctionnalités d’intégration de [traduction](/help/sites-administering/translation.md) d’AEM, combinées aux services de gestion de traduction tiers, gèrent les langues et le contenu de traduction dans ces différentes langues.
-
 >
 >Pour les cas d’utilisation plus avancés, MSM peut également être utilisé dans les gabarits de langue.
 
@@ -61,7 +60,7 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >
 >Dans tous les cas, il est recommandé de lire les bonnes pratiques suivantes :
 >
->* [Bonnes pratiques liées à MSM](/help/sites-administering/msm-best-practices.md); en particulier :
+>* [Bonnes pratiques liées à MSM](/help/sites-administering/msm-best-practices.md) ; en particulier :
    >
    >   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
    >   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)

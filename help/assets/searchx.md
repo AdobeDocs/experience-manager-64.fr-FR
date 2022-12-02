@@ -8,7 +8,7 @@ exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
 source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
 source-wordcount: '820'
-ht-degree: 81%
+ht-degree: 87%
 
 ---
 
@@ -22,7 +22,7 @@ Vous pouvez également ajouter d’autres onglets au [!DNL Experience Manager] P
 
 >[!CAUTION]
 >
->À partir de [!DNL Experience Manager] 6.4, l’interface utilisateur classique est obsolète. Pour consulter l’annonce correspondante, voir [Fonctionnalités obsolètes et supprimées](../release-notes/deprecated-removed-features.md). Vous êtes invité à utiliser l’IU tactile. Pour les personnalisations, voir [Facettes de recherche](search-facets.md).
+>L’IU classique est obsolète depuis la version 6.4 d’[!DNL Experience Manager]. Pour consulter l’annonce correspondante, voir [Fonctionnalités obsolètes et supprimées](../release-notes/deprecated-removed-features.md). Vous êtes invité à utiliser l’IU tactile. Pour les personnalisations, voir [Facettes de recherche](search-facets.md).
 
 ## Remplacement {#overlaying}
 
@@ -49,7 +49,7 @@ Vous pouvez ajouter d’autres onglets de recherche en les configurant dans le [
 
 [!DNL Experience Manager] Assets est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-En plus d’utiliser des prédicats préexistants, [!DNL Experience Manager] les développeurs peuvent également créer leurs propres prédicats à l’aide de la variable [API Query Builder](/help/sites-developing/querybuilder-api.md).
+En plus d’utiliser des prédicats préexistants, l’équipe de développement [!DNL Experience Manager] peut créer ses propres prédicats à l’aide de l’[API Query Builder](/help/sites-developing/querybuilder-api.md).
 
 La création de prédicats personnalisés nécessite des connaissances de base sur la [structure des widgets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -257,36 +257,36 @@ Pour créer un prédicat de groupe, procédez comme suit :
 
 Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigurés.
 
-### FulltextPredicate   {#fulltextpredicate}
+### FulltextPredicate {#fulltextpredicate}
 
 | Propriété | Type | Description |
 |---|---|---|
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `fulltext` |
-| searchCallback | Fonction | Rappel pour déclencher une recherche sur l’événement `keyup`. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `fulltext`. |
+| searchCallback | Fonction | Rappel pour déclencher une recherche sur l’événement `keyup` La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch`. |
 
 ### PropertyPredicate {#propertypredicate}
 
 | Propriété | Type | Description |
 |---|---|---|
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `property` |
-| propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:title` |
-| defaultValue | Chaîne | Valeur par défaut préremplie. |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `property`. |
+| propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:title`. |
+| defaultValue | Chaîne | Valeur par défaut préremplie  |
 
 ### PathPredicate {#pathpredicate}
 
 | Propriété | Type | Description |
 |---|---|---|
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `path` |
-| rootPath | Chaîne | Chemin racine du prédicat. La valeur par défaut est `/content/dam` |
-| pathFieldPredicateName | Chaîne | La valeur par défaut est `folder` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `path`. |
+| rootPath | Chaîne | Chemin racine du prédicat. La valeur par défaut est `/content/dam`. |
+| pathFieldPredicateName | Chaîne | La valeur par défaut est `folder`. |
 | showFlatOption | Booléen | Indicateur pour afficher la case à cocher `search in subfolders`. La valeur par défaut est « true ». |
 
 ### DatePredicate {#datepredicate}
 
 | Propriété | Type | Description |
 |---|---|---|
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
-| propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:content/jcr:lastModified` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange`. |
+| propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:content/jcr:lastModified`. |
 | defaultValue | Chaîne | Valeur par défaut préremplie |
 
 ### OptionsPredicate {#optionspredicate}
@@ -294,15 +294,15 @@ Les prédicats suivants sont disponibles en tant que widgets ExtJS préconfigur�
 | Propriété | Type | Description |
 |---|---|---|
 | titre | Chaîne | Ajoute un titre supérieur supplémentaire |
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
-| propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:content/metadata/cq:tags` |
-| collapse | Chaîne | Réduire par niveau. La valeur par défaut est `level1` |
+| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange`. |
+| propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:content/metadata/cq:tags`. |
+| collapse | Chaîne | Réduire par niveau. La valeur par défaut est `level1`. |
 | triggerSearch | Booléen | Indicateur de déclenchement de la recherche lors de la vérification. Par défaut : « false » |
-| searchCallback | Fonction | Rappel pour déclencher la recherche. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
+| searchCallback | Fonction | Rappel pour déclencher la recherche. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch`. |
 | searchTimeoutTime | Nombre | Délai d’expiration avant le déclenchement de searchCallback. Valeur par défaut : 800 ms |
 
 ## Personnalisation des résultats de la recherche {#customizing-search-results}
 
 La présentation des résultats de la recherche sur une page de partage des ressources est régie par la loupe sélectionnée. [!DNL Experience Manager] Assets est fourni avec un ensemble de loupes prédéfinies qui peuvent être utilisées pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-En plus d&#39;utiliser des lentilles préexistantes, [!DNL Experience Manager] les développeurs peuvent également créer leurs propres loupes.
+En plus d’utiliser des loupes préexistantes, l’équipe de développement [!DNL Experience Manager] peut créer ses propres loupes.

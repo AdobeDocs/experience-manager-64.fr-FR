@@ -25,7 +25,7 @@ Dans un scénario Acrobat Sign et de formulaires adaptatifs type, un utilisateur
 
 Pour utiliser Acrobat Sign avec AEM Forms, configurez Acrobat Sign dans AEM Cloud Services :
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Pour intégrer Acrobat Sign à AEM Forms, vous devez disposer des éléments suivants :
 

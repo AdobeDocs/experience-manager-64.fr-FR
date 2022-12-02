@@ -33,7 +33,7 @@ Un membre peut suivre un flux d’activité en suivant un autre individu ou un a
 
 A *fil d&#39;actualités* est une fusion des flux d’activité suivis par un membre dans un seul flux.
 
-A [graphique social](essentials-socialgraph.md) capture les relations suivantes d’un membre à un autre.
+A [graphique social](essentials-socialgraph.md) capture les relations suivantes d’un membre par rapport à un autre.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 

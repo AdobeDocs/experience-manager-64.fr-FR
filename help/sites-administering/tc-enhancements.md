@@ -13,7 +13,7 @@ exl-id: 57a77cec-e228-4ec7-8502-e6e23baddd92
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Cette page présente les améliorations et les perfectionnements incrémentiels 
 
 ## Automatisation des projets de traduction {#translation-project-automation}
 
-Des options pour améliorer la productivité des projets de traduction ont été ajoutées, comme la promotion et la suppression automatiques des lancements de traduction, et la planification de l’exécution récurrente d’un projet de traduction.
+Des options pour améliorer la productivité des projets de traduction ont été ajoutées, telles que la promotion et la suppression automatiques des lancements de traduction, et la planification de l’exécution périodique d’un projet de traduction.
 
 1. Dans votre projet de traduction, cliquez ou appuyez sur les points de suspension en bas de la mosaïque **Résumé de traduction**.
 
@@ -33,11 +33,11 @@ Des options pour améliorer la productivité des projets de traduction ont été
 
    ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
-1. Vous pouvez éventuellement sélectionner si, après réception du contenu traduit, les lancements de traduction doivent être automatiquement promus et supprimés.
+1. Vous pouvez éventuellement choisir si, après réception du contenu traduit, les lancements de traduction doivent être automatiquement promus et supprimés.
 
    ![screen_shot_2018-04-19at224033](assets/screen_shot_2018-04-19at224033.jpg)
 
-1. Pour sélectionner l’exécution périodique d’un projet de traduction, sélectionnez la fréquence avec la liste déroulante sous **Répéter la traduction**. L’exécution récurrente de projets crée et exécute automatiquement des tâches de traduction aux intervalles spécifiés.
+1. Pour sélectionner l’exécution périodique d’un projet de traduction, sélectionnez la fréquence avec la liste déroulante sous **Répéter la traduction**. L’exécution périodique de projet crée et exécute automatiquement les tâches de traduction selon les intervalles spécifiés.
 
    ![screen_shot_2018-04-19at223820](assets/screen_shot_2018-04-19at223820.jpg)
 
@@ -45,7 +45,7 @@ Des options pour améliorer la productivité des projets de traduction ont été
 
 Il est possible de configurer plusieurs langues cibles dans un projet de traduction, afin de réduire le nombre total de projets de traduction créés.
 
-1. Dans votre projet de traduction, cliquez ou appuyez sur les points de suspension au bas de la mosaïque **Résumé de traduction**.
+1. Dans votre projet de traduction, cliquez ou appuyez sur les points de suspension en bas de la mosaïque **Résumé de traduction**.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -65,11 +65,11 @@ Il est possible de configurer plusieurs langues cibles dans un projet de traduct
 
 Les modifications manuelles du contenu traduit peuvent être synchronisées avec le système de gestion de traduction (TMS) pour entraîner sa mémoire de traduction.
 
-1. Dans la console Sites , après avoir mis à jour le contenu textuel d’une page traduite, sélectionnez **Mettre à jour la mémoire de traduction**.
+1. Dans la console Sites, après la mise à jour de contenu textuel sur une page traduite, sélectionnez **Mettre à jour la mémoire de traduction**.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction à synchroniser avec la mémoire de traduction, puis sélectionnez **Mettre à jour la mémoire**.
+1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction qui doivent être synchronisées avec la mémoire de traduction et sélectionnez **Mettre à jour la mémoire**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
@@ -89,7 +89,6 @@ Les racines de langues peuvent désormais être regroupées sous des nœuds, par
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
-
 >
 >Cette copie de la langue `es` n’est pas détectée, car elle se trouve à deux niveaux (americas/central-america) du nœud `en`.
 
@@ -99,7 +98,7 @@ Les racines de langues peuvent désormais être regroupées sous des nœuds, par
 
 ## Créations de rapports d’état de traduction {#translation-status-reporting}
 
-Une propriété peut désormais être sélectionnée dans le mode Liste de Sites. Cette propriété indique si une page a été traduite, si elle est en cours de traduction ou si elle n’a pas encore été traduite. Pour l’afficher :
+Une propriété peut désormais être sélectionnée dans le mode Liste de Sites. Cette propriété indique si une page a été traduite, si elle est en cours de traduction ou si elle n’a pas encore été traduite. Pour l’afficher, procédez comme suit :
 
 1. Dans Sites, passez en **mode Liste.**
 
@@ -113,6 +112,6 @@ Une propriété peut désormais être sélectionnée dans le mode Liste de Sites
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 
-Vous voyez désormais une colonne **Traduit** qui indique l’état de traduction des pages.
+Vous voyez désormais une colonne **Traduit** qui indique le statut de traduction des pages.
 
 ![screen_shot_2018-04-23at133821](assets/screen_shot_2018-04-23at133821.jpg)

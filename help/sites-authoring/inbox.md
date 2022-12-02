@@ -13,7 +13,7 @@ exl-id: 9037f21c-5392-4322-af0d-7e220c810954
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '888'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,10 +45,9 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 >Pour plus d’informations sur les types d’éléments, voir aussi :
 >
 >* [Projets](/help/sites-authoring/touch-ui-managing-projects.md)
->* [Projets – Utilisation des tâches](/help/sites-authoring/task-content.md)
+>* [Projets – Utilisation des Tâches](/help/sites-authoring/task-content.md)
 >* [Workflows](/help/sites-authoring/workflows.md)
 >* [Formulaires](/help/forms/home.md)
-
 >
 
 
@@ -60,7 +59,7 @@ Dans les deux consoles, le nombre actuel d’éléments présents dans votre bo�
 
 >[!NOTE]
 >
->Certaines opérations sont également répertoriées en [mode Carte de la ressource appropriée](/help/sites-authoring/basic-handling.md#card-view).
+>Certaines opérations sont également répertoriées dans le [mode Carte de la ressource appropriée](/help/sites-authoring/basic-handling.md#card-view).
 
 ## Tâches administratives prêtes à l’emploi  {#out-of-the-box-administrative-tasks}
 
@@ -69,7 +68,7 @@ AEM est fourni avec quatre tâches prêtes à l’emploi attribuées au groupe d
 * [Configurer Analytics et Targeting](/help/sites-administering/opt-in.md)
 * [Appliquer la liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md)
 * Autoriser la collecte de statistiques d’utilisation agrégées
-* [Configurer HTTPS](/help/sites-administering/ssl-by-default.md)
+* [Configurer le HTTPS](/help/sites-administering/ssl-by-default.md)
 
 ## Ouverture de la boîte de réception {#opening-the-inbox}
 
@@ -142,7 +141,7 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
 
    Les actions disponibles varient selon l’élément et incluent les opérations suivantes :
 
-   * **Terminer** l’action; par exemple, une tâche ou un élément de workflow.
+   * **Terminer** l’action ; par exemple une tâche ou un élément de workflow.
    * **Réaffecter**/**Déléguer** un élément.
    * **Ouvrir** un élément ; selon le type d’élément, cette action permet d’effectuer les opérations suivantes :
 
@@ -150,7 +149,7 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
       * Ouvrir un tableau de bord ou un assistant pour effectuer d’autres actions.
       * Ouvrir la documentation associée.
    * **Revenir** à une étape précédente.
-   * Afficher la charge utile pour un workflow.
+   * Afficher le payload pour un workflow.
    * Créer un projet à partir de l’élément.
 
    >[!NOTE]
@@ -193,7 +192,7 @@ Vous pouvez créer des tâches directement à partir de la boîte de réception�
       * **Description**
       * **Priorité de la tâche**
       * **Date de début**
-      * **Échéance**
+      * **Date d’échéance**
 
    ![wf-86](assets/wf-86.png)
 
@@ -226,7 +225,7 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-authoring/pro
       * **Titre**
       * **Description**
       * **Date de début**
-      * **Échéance**
+      * **Date d’échéance**
       * **Utilisateur** et rôle
    * **Avancé**
 
@@ -247,7 +246,7 @@ Vous pouvez filtrer les éléments répertoriés :
 
    ![wf-88](assets/wf-88.png)
 
-1. Vous pouvez filtrer les éléments répertoriés en fonction d’une série de critères, pouvant pour la plupart être affinés, par exemple :
+1. Vous pouvez filtrer les éléments répertoriés en fonction d’une série de critères qui peuvent pour la plupart être affinés, par exemple :
 
    ![wf-89](assets/wf-89.png)
 

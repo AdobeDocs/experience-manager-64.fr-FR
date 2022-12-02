@@ -579,7 +579,7 @@ Pour appliquer un thème à une communication interactive :
 
    Vous pouvez modifier les propriétés de votre formulaire dans la barre latérale.
 
-1. Dans la barre latérale, sous **[!UICONTROL Réglages de base]**, sélectionnez votre thème dans le menu déroulant **[!UICONTROL Thème]** et cliquez sur **[!UICONTROL Terminé]** ![bouton de coche](assets/check-button.png)..
+1. Dans la barre latérale, sous **[!UICONTROL Réglages de base]**, sélectionnez votre thème dans le menu déroulant **[!UICONTROL Thème]** et cliquez sur **[!UICONTROL Terminé]** ![bouton de coche](assets/check-button.png). 
 
 ### Modifier le thème d’un formulaire au moment de l’exécution {#change-theme-of-a-form-at-runtime}
 

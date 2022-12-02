@@ -1,7 +1,7 @@
 ---
 title: Propriétés et noeuds de contenu
 seo-title: Content Properties and Nodes
-description: 'Consultez cette page pour en savoir plus sur les propriétés de contenu et les noeuds.  '
+description: Consultez cette page pour en savoir plus sur les propriétés de contenu et les noeuds.
 seo-description: Follow this page to learn about content properties and nodes.
 uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
 contentOwner: User
@@ -36,8 +36,8 @@ Les tableaux suivants décrivent les propriétés et les noeuds du contenu.
 | dps-id | Chaîne |  | affectée par AEM Mobile et stockée par AEM une fois chargée dans AEM Mobile ou importée depuis AEM Mobile |
 | dps-resourceType | Chaîne | dps:Article | dps:Bannière | dps:Collection | propriété de type d’entité |
 | dps-version | Chaîne |  | version de l’entité AEM Mobile (également contenue dans aemm-id complet) |
-| dps-lastSynced | Date  |  | date de la dernière synchronisation/importation d’AEM Mobile dans AEM |
-| dps-lastUploaded | Date  |  | date du dernier téléchargement d’AEM vers AEM Mobile |
+| dps-lastSynced | Plage |  | date de la dernière synchronisation/importation d’AEM Mobile dans AEM |
+| dps-lastUploaded | Plage |  | date du dernier téléchargement d’AEM vers AEM Mobile |
 | dps-lastUploadedBy | Chaîne : userid |  | ID de l’utilisateur qui a effectué la dernière requête de chargement d’AEM vers AEM Mobile |
 
 ## Propriétés des métadonnées principales {#core-metadata-properties}
@@ -105,7 +105,7 @@ Les tableaux suivants décrivent les propriétés et les noeuds du contenu.
 
 | Nom du nœud | Type | Valeurs attendues par défaut | Description |
 |---|---|---|---|
-| s.o. |  |  |  |
+| S/O |  |  |  |
 
 #### Collections {#collections-1}
 

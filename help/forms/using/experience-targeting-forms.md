@@ -1,7 +1,7 @@
 ---
 title: Création d’expériences ciblées dans AEM Forms
 seo-title: Create targeted experiences in AEM Forms
-description: 'L’utilisation de Target dans AEM Forms permet de créer des expériences personnalisées pour les clients ciblés. '
+description: L’utilisation de Target dans AEM Forms permet de créer des expériences personnalisées pour les clients ciblés.
 seo-description: Use Target in AEM Forms to create customized experiences for targeted customers.
 uuid: 174b6054-8fe3-4ab2-8afd-435e5dff9044
 content-type: reference

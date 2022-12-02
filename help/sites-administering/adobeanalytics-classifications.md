@@ -1,5 +1,5 @@
 ---
-title: Adobe Classifications
+title: Classifications Adobe
 seo-title: Adobe Classifications
 description: Découvrez Adobe Classifications.
 seo-description: Learn about Adobe Classifications.
@@ -13,13 +13,13 @@ exl-id: 25e58c68-5c67-4894-9a54-1717d90d7831
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 71%
+ht-degree: 99%
 
 ---
 
-# Adobe des classifications{#adobe-classifications}
+# Classifications Adobe{#adobe-classifications}
 
-Adobe Classifications exporte les données de classification vers [Adobe Analytics](/help/sites-administering/adobeanalytics.md) selon un calendrier précis. L’exportateur est une implémentation de **com.adobe.cq.scheduled.exporter.Exporter**.
+Adobe Classifications exporte les données de classification dans [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de façon planifiée. L’exportateur est une implémentation de **com.adobe.cq.scheduled.exporter.Exporter**.
 
 Pour configurer cela :
 
@@ -40,7 +40,7 @@ Pour configurer cela :
    | Remplacer en cas de conflit | Sélectionnez **Oui** pour remplacer toute collision de données. Par défaut, cette option est définie sur **Non**. |
    | Suppression traitée | Si elle est définie sur **Oui**, supprime les nœuds traités après leur exportation. La valeur par défaut est **Faux**. |
    | Description de la tâche d’exportation | Saisissez une description pour la tâche d’Adobe Classifications. |
-   | Message de notification | Saisissez une adresse électronique pour la notification Classifications d’Adobe. |
+   | Message de notification | Saisissez une adresse e-mail qui recevra la notification d’Adobe Classifications. |
    | Suite de rapports | Saisissez la suite de rapports pour laquelle exécuter la tâche d’importation. |
    | Ensemble de données | Saisissez l’ID de relation de l’ensemble de données pour lequel exécuter la tâche d’importation. |
    | Transformateur | Dans le menu déroulant, sélectionnez une mise en œuvre de transformateur. |
@@ -51,13 +51,13 @@ Pour configurer cela :
 
 ## Modification de la taille des pages {#modifying-page-size}
 
-Les enregistrements sont traités par pages. Par défaut, Adobe Classifications crée des pages d’une taille de page de 1 000.
+Les enregistrements sont traités par pages. Par défaut, Adobe Classifications crée des pages avec une taille de page de 1 000.
 
-Une page peut avoir une taille maximale de 25 000 par définition dans les classifications d’Adobe et peut être modifiée à partir de la console Felix. Pendant l’exportation, Adobe Classifications verrouille le noeud source pour empêcher les modifications simultanées. Le nœud est déverrouillé après l’exportation, en cas d’erreur, ou lorsque la session est fermée.
+Une page peut présenter une taille maximale de 25 000, par définition dans Adobe Classifications, et peut être modifiée à partir de la console Felix. Pendant l’exportation, Adobe Classifications verrouille le nœud source pour empêcher les modifications simultanées. Le nœud est déverrouillé après l’exportation, en cas d’erreur, ou lorsque la session est fermée.
 
 Pour modifier la taille de page :
 
-1. Accédez à la console OSGI à l’adresse **https://&lt;host>:&lt;port>/system/console/configMgr** et sélectionnez **Adobe AEM l’exportateur de classifications**.
+1. Accédez à la console OSGi sur **https://&lt;hôte>:&lt;port>/system/console/configMgr** et sélectionnez **Adobe AEM Classifications Exporter**.
 
    ![aa-26](assets/aa-26.png)
 
@@ -69,15 +69,15 @@ Pour modifier la taille de page :
 >
 >Auparavant, Adobe Classifications était appelé exportateur SAINT.
 
-Un exportateur peut utiliser un transformateur pour transformer les données d’exportation vers un format spécifique. Pour les classifications d’Adobe, une sous-interface `SAINTTransformer<String[]>` La mise en oeuvre de l’interface de Transformer a été fournie. Cette interface permet de limiter le type de données à `String[]` qui est utilisé par l’API SAINT et pour disposer d’une interface de marquage afin de trouver ces services à sélectionner.
+Un exportateur peut utiliser un transformateur pour transformer les données d’exportation vers un format spécifique. Pour Adobe Classifications, une sous-interface `SAINTTransformer<String[]>` mettant en œuvre l’interface de transformateur est fournie. Cette interface est utilisée pour limiter le type de données à `String[]`, qui est utilisé par l’API SAINT et pour disposer d’une interface de marquage permettant de rechercher ces services à sélectionner.
 
-Dans l’implémentation par défaut SAINTDefaultTransformer, les ressources enfants de la source de l’exportateur sont traitées comme des enregistrements avec des noms de propriété comme clés et des valeurs de propriété comme valeurs. La colonne **Clé** est automatiquement ajoutée en tant que première colonne ; sa valeur est le nom du nœud. Les propriétés d’espace de noms (contenant :) ne sont pas prises en compte.
+Dans la mise en œuvre par défaut SAINTDefaultTransformer, les ressources enfants de la source de l’exportateur sont traitées comme des enregistrements avec des noms de propriétés comme clés, et des valeurs de propriétés comme valeurs. La colonne **Clé** est automatiquement ajoutée en tant que première colonne ; sa valeur est le nom du nœud. Les propriétés d’espace de noms (contenant :) ne sont pas prises en compte.
 
 *Structure de nœud :*
 
 * id-classification `nt:unstructured`
 
-   * 1)`nt:unstructured`
+   * 1 `nt:unstructured`
 
       * Product = My Product Name (chaîne)
       * Price = 120.90 (chaîne)
@@ -87,9 +87,9 @@ Dans l’implémentation par défaut SAINTDefaultTransformer, les ressources enf
 
 **En-tête et enregistrement SAINT :**
 
-| **Clé** | **Produit** | **Prix** | **Taille** | **Couleur** | **Color^Code** |
+| **Clé** | **Produit** | **Prix** | **Taille** | **Couleur** | **Code Couleur** |
 |---|---|---|---|---|---|
-| 1 | Mon nom de produit | 120,90 | M | black | 101 |
+| 1 | Mon nom de produit | 120,90 | M | noir | 101 |
 
 Les propriétés sont par exemple les suivantes :
 

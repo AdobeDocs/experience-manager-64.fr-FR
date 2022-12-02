@@ -1,5 +1,5 @@
 ---
-title: Marketing par messagerie électronique
+title: Marketing par e-mail
 seo-title: E-mail Marketing
 description: Le marketing par messagerie électronique (les newsletters, par exemple) constitue une partie importante de toute campagne de marketing, car il vous sert à pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
 seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
@@ -13,20 +13,20 @@ exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
 source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1726'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
-# Marketing par messagerie électronique{#e-mail-marketing}
+# Marketing par e-mail{#e-mail-marketing}
 
 >[!NOTE]
 >
 >Adobe ne prévoit pas d&#39;améliorer davantage les emails ouverts/rebonds envoyés par le service SMTP AEM.\
->La recommandation consiste à [tirer parti d’Adobe Campaign et de son intégration AEM](/help/sites-administering/campaign.md).
+>Nous vous recommandons d’[exploiter Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
 
 Le marketing par messagerie électronique (les newsletters, par exemple) constitue une partie importante de toute campagne de marketing, car il vous sert à pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
 
-Une fois créées, vous pouvez envoyer les newsletters à des groupes spécifiques d’utilisateurs immédiatement ou à un autre moment planifié (à l’aide d’un worfklow). En outre, les utilisateurs peuvent s’abonner aux newsletters dans le format de leur choix.
+Une fois créées, vous pouvez envoyer les newsletters à des groupes spécifiques d’utilisateurs immédiatement ou à un autre moment planifié (à l’aide d’un workflow). En outre, les utilisateurs peuvent s’abonner aux newsletters dans le format de leur choix.
 
 Par ailleurs, AEM vous permet d’administrer la fonctionnalité de newsletter, y compris la gestion des sujets, l’archivage des newsletters et l’affichage des statistiques qui concernent ces dernières.
 
@@ -38,8 +38,8 @@ Ce document décrit les notions fondamentales de la création de newsletters dan
 
 * [Création d’une page d’entrée efficace pour une newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
 * [Gestion des abonnements](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
-* [Publication d’un message électronique sur des services de messagerie](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
-* [Suivi des messages rejetés](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
+* [Publication d’un e-mail sur des services de messagerie](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
+* [Suivi des e-mails rejetés](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ Ce document décrit les notions fondamentales de la création de newsletters dan
       Liste par défaut qui doit recevoir la newsletter.
    Ces segments pourront être mis à jour ultérieurement à partir de la boîte de dialogue **Propriétés...**
 
-1. Cliquez sur **OK** pour enregistrer. 
+1. Cliquez sur **OK** pour enregistrer.
 
 ## Ajout de contenu à des newsletters {#adding-content-to-newsletters}
 
@@ -145,7 +145,7 @@ Personnalisation d’une newsletter et simulation de son aperçu :
 
 >[!NOTE]
 >
->Avant d’envoyer des newsletters, vérifiez la configuration OSGi pour Day CQ Link Externalizer à l’adresse `http://localhost:4502/system/console/configMgr`.
+>Avant d’envoyer des newsletters, vérifiez la configuration OSGi pour l’Externaliseur de lien Day CQ à l’adresse `http://localhost:4502/system/console/configMgr`.
 >
 >Par défaut, la valeur du paramètre est `localhost:4502` et l’opération ne peut pas être menée à bien en cas de modification du port d’exécution de l’instance.
 
@@ -226,7 +226,7 @@ Vous pouvez envoyer une newsletter à partir de la newsletter ou à partir de la
 
 >[!NOTE]
 >
->Avant d’envoyer des newsletters, vérifiez la configuration OSGi pour Day CQ Link Externalizer à l’adresse `http://localhost:4502/system/console/configMgr`.
+>Avant d’envoyer des newsletters, vérifiez la configuration OSGi pour l’Externaliseur de lien Day CQ à l’adresse `http://localhost:4502/system/console/configMgr`.
 >
 >Par défaut, la valeur du paramètre est `localhost:4502` et l’opération ne peut pas être menée à bien en cas de modification du port d’exécution de l’instance.
 
@@ -270,7 +270,7 @@ Envoi d’une newsletter à partir d’une liste :
    >
    >Avant l’envoi, assurez-vous d’avoir personnalisé l’objet de la newsletter et l’adresse électronique de l’expéditeur en [personnalisant ses paramètres](#customizing-newsletter-settings). Il n’est pas possible de tester une newsletter si vous l’envoyez à partir de la liste. Vous pouvez effectuer un [test envoi](#flight-testing-newsletters) si vous l’envoyez à partir de la newsletter.
 
-1. Cochez la case en regard de la liste des pistes auxquelles vous souhaitez envoyer la newsletter.
+1. Cochez la case en regard de la liste des prospects auxquels vous souhaitez envoyer la newsletter.
 
 1. Dans le menu **Outils**, sélectionnez **Envoyer la newsletter**. La fenêtre **Envoyer la newsletter** s’ouvre.
 

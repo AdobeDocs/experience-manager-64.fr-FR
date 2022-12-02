@@ -1,7 +1,7 @@
 ---
 title: Recommandations relatives aux formulaires HTML5
 seo-title: Best practices for HTML5 forms
-description: 'Modifiez vos formulaires HTML5 basés sur XFA pour optimiser les performances. '
+description: Modifiez vos formulaires HTML5 basés sur XFA pour optimiser les performances.
 seo-description: Learn how to tune your XFA-based HTML5 Forms for best performance.
 uuid: 739700c7-4f88-4b53-9453-1be6d5bc8432
 contentOwner: khsingh

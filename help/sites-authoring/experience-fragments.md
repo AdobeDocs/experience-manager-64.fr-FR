@@ -13,13 +13,13 @@ exl-id: 8906b3ab-cb08-4b3e-8796-334e36b1e491
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1309'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
 # Fragments d’expérience{#experience-fragments}
 
-Un fragment d’expérience est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages. Il peut contenir n’importe quel composant.
+Un fragment d’expérience est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages. Ils peuvent contenir n’importe quel composant.
 
 Un fragment d’expérience :
 
@@ -35,7 +35,7 @@ Un fragment d’expérience :
 Vous pouvez utiliser des fragments d’expérience :
 
 * Si un auteur souhaite réutiliser des parties (un fragment d’une expérience) d’une page, il doit copier et coller ce fragment. La création et la gestion de ces expériences de copier/coller sont chronophages et sources d’erreurs pour l’utilisateur. Les fragments d’expérience rendent inutiles les opérations de copier/coller.
-* Pour gérer le scénario d’utilisation CMS sans interface. Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système/point de contact tiers utilise cette expérience, puis la diffuse à l’utilisateur final.
+* Pour prendre en charge le scénario d’utilisation de CMS découplé. Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système/point de contact tiers utilise cette expérience, puis la diffuse à l’utilisateur final.
 
 >[!NOTE]
 >
@@ -53,9 +53,9 @@ Les fragments d’expérience doivent être utilisés dans les cas suivants :
 
    * Expériences qui seront réutilisées avec un contenu identique ou similaire
 
-* Lorsque vous utilisez AEM en tant que plate-forme de diffusion de contenu à des tiers.
+* Lorsque vous utilisez AEM en tant que plateforme de diffusion de contenu à des tiers.
 
-   * Toute solution qui souhaite utiliser AEM comme plate-forme de diffusion de contenu
+   * Toute solution qui souhaite utiliser AEM comme plateforme de diffusion de contenu
    * Intégration de contenu dans des points de contact tiers
 
 * Si l’une de vos expériences se décline en plusieurs variations ou rendus.
@@ -156,7 +156,7 @@ Pour créer un fragment d’expérience :
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. Accédez au dossier requis et sélectionnez **[!UICONTROL Créer]**.
+1. accédez au dossier requis et sélectionnez ensuite **[!UICONTROL Créer]** ;
 
 1. Sélectionnez **[!UICONTROL Fragment d’expérience]** pour ouvrir l’assistant **[!UICONTROL Créer un fragment d’expérience]**.
 
@@ -173,7 +173,7 @@ Pour créer un fragment d’expérience :
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 
-   Un message s’affiche. Sélectionnez :
+   Un message s’affiche. Sélectionner:
 
    * **[!UICONTROL Terminé]** pour revenir à la console
    * **[!UICONTROL Ouvrir]** pour ouvrir l’éditeur de fragments
@@ -235,7 +235,7 @@ Vous pouvez désormais utiliser le fragment d’expérience lors de la création
 
 1. Ajoutez le fragment d’expérience proprement dit à l’instance de composant. Pour ce faire, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Faites glisser le fragment requis sur le composant depuis l’Explorateur de ressources
+   * Faites glisser le fragment requis depuis l’Explorateur de ressources sur le composant.
    * Sélectionnez **[!UICONTROL Configurer]** dans la barre d’outils du composant et indiquez le fragment à utiliser. Confirmez en cliquant sur **Terminé** (icône représentant une coche).
 
    ![xf-authoring-10](assets/xf-authoring-10.png)
@@ -248,7 +248,7 @@ Vous pouvez désormais utiliser le fragment d’expérience lors de la création
 
 Vous pouvez sélectionner un ou plusieurs composants pour créer un bloc de création à recycler dans votre fragment :
 
-### Création d’un bloc {#creating-a-building-block}
+### Création d’un bloc de création {#creating-a-building-block}
 
 Pour créer un bloc de ce type, procédez comme suit :
 
@@ -286,7 +286,7 @@ Le bloc de création est visible dans l’onglet **[!UICONTROL Blocs de créatio
 
 Vous pouvez faire glisser votre bloc de création vers le système de paragraphes de n’importe quel fragment, comme avec n’importe quel composant.
 
-## Rendu HTML brut {#the-plain-html-rendition}
+## Rendu HTML brut {#the-plain-html-rendition}
 
 Le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut.
 
@@ -312,4 +312,4 @@ Par exemple :
 
 Par défaut, les fragments d’expérience sont fournis au format HTML. Ils peuvent être utilisés à la fois par AEM et les canaux tiers.
 
-Pour l’exportation vers Adobe Target, le HTML est utilisé. Pour obtenir des informations complètes, voir [Intégration de Target aux ](/help/sites-administering/experience-fragments-target.md)Fragments d’expérience.
+Pour l’exportation vers Adobe Target, le HTML est utilisé. Pour obtenir des informations complètes, consultez [Intégration de Target aux fragments d’expérience](/help/sites-administering/experience-fragments-target.md).

@@ -13,7 +13,7 @@ exl-id: 99efe308-bf8a-41ad-8203-b57fce20820c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1008'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -123,7 +123,7 @@ Notez que les magasins candidats personnalisés peuvent définir des fonctions s
 
 ### Génération d’événements ContextHub {#contexthub-eventing}
 
-ContextHub comprend une structure d’événements qui vous permet de répondre automatiquement aux événements du magasin. Chaque objet du magasin contient un objet [`ContextHub.Utils.Eventing`](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) disponible sous la forme d’une propriété [`eventing`](/help/sites-developing/contexthub-api.md#eventing) du magasin. Utilisez la fonction [`on`](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) ou [`once`](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) pour lier une fonction JavaScript à un événement de magasin.
+ContextHub comprend un framework d’événements qui vous permet de répondre automatiquement aux événements du magasin. Chaque objet du magasin contient un objet [`ContextHub.Utils.Eventing`](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) disponible sous la forme d’une propriété [`eventing`](/help/sites-developing/contexthub-api.md#eventing) du magasin. Utilisez la fonction [`on`](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) ou [`once`](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) pour lier une fonction JavaScript à un événement de magasin.
 
 ## Utilisation de ContextHub pour manipuler des cookies {#using-context-hub-to-manipulate-cookies}
 
@@ -177,11 +177,11 @@ Les règles utilisées pour résoudre ces segments sont résumées comme suit :
 
 Configurez le service OSGi ContextHub d’Adobe Granite (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) pour consigner des messages de débogage détaillés qui s’avèrent utiles dans le cadre du développement.
 
-Pour configurer le service, vous pouvez utiliser la variable [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou utilisez un [Noeud JCR dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
+Pour configurer le service, vous pouvez utiliser la [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un [nœud JCR du référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
 
 * Console web : pour consigner des messages de débogage, sélectionnez la propriété Debug.
 * Nœud JCR : pour consigner des messages de débogage, définissez la propriété booléenne `com.adobe.granite.contexthub.debug` sur `true`.
 
 ## Affichage d’un aperçu de la structure ContextHub {#see-an-overview-of-the-contexthub-framework}
 
-ContextHub fournit une [page de diagnostics](/help/sites-developing/ch-diagnostics.md) qui affiche un aperçu de sa structure.
+ContextHub fournit une [page de diagnostics](/help/sites-developing/ch-diagnostics.md) qui affiche un aperçu de son framework.

@@ -1,7 +1,7 @@
 ---
 title: API pour travailler avec des formulaires envoyés sur le portail de formulaires
 seo-title: APIs to work with submitted forms on forms portal
-description: 'AEM Forms fournit des API que vous pouvez utiliser pour interroger et agir sur des données de formulaire envoyées sur le portail de formulaires. '
+description: AEM Forms fournit des API que vous pouvez utiliser pour interroger et agir sur des données de formulaire envoyées sur le portail de formulaires.
 seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference

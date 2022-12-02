@@ -9,7 +9,7 @@ exl-id: cadfc569-5725-4012-9f73-864243ba7743
 source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
 source-wordcount: '2326'
-ht-degree: 82%
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ Vous pouvez créer une collection avec des références statiques, par exemple, 
    >
    >Experience Manager Assets vous permet de créer des tâches de révision pour une collection de la même façon que vous créez des tâches de révision pour un dossier de ressources.
 
-   Pour ajouter des ressources à la collection, accédez à l’interface utilisateur Assets. Pour plus d’informations, voir [Ajout de ressources à une collection](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection).
+   Pour ajouter des ressources à la collection, accédez à l’interface utilisateur Assets. Pour plus d’informations, consultez la section [Ajout de ressources à une collection](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection).
 
 ### Création de collections à l’aide de la zone de dépôt {#create-collections-using-dropzone}
 
@@ -84,7 +84,7 @@ Vous pouvez faire glisser des ressources de l’interface utilisateur Assets jus
 
 Une collection dynamique utilise des critères de recherche pour rassembler les ressources de manière dynamique. Vous pouvez créer une collection dynamique en utilisant uniquement des fichiers ou en utilisant des fichiers et des dossiers.
 
-Pour créer une collection dynamique, procédez comme suit :
+Pour créer une collection dynamique, procédez comme suit :
 
 1. Accédez à l’interface utilisateur d’Assets et appuyez/cliquez sur l’icône de recherche.
 
@@ -101,11 +101,11 @@ Pour créer une collection dynamique, procédez comme suit :
 
    >[!NOTE]
    >
-   >Si vous sélectionnez **[!UICONTROL Public]**, la collection dynamique est disponible pour toutes les personnes possédant le rôle de propriétaire une fois que vous l’avez créée. Si vous désactivez la case à cocher **[!UICONTROL Public]**, le groupe Utilisateurs DAM n’est plus associé à la collection dynamique.
+   >Si vous sélectionnez **[!UICONTROL Public]**, la collection dynamique est disponible pour chaque personne possédant le rôle de propriétaire une fois que vous la créez. Si vous désactivez la case à cocher **[!UICONTROL Public]**, le groupe Utilisateurs DAM n’est plus associé à la collection dynamique.
 
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer]** pour créer la collection dynamique, puis fermez le message afin de terminer le processus.
 
-   La nouvelle collection dynamique est également ajoutée à la liste **[!UICONTROL Recherches enregistrées.]**
+   La nouvelle collection dynamique est également ajoutée à la liste **[!UICONTROL Recherches enregistrées]**.
 
    ![collection_listing](assets/collection_listing.png)
 
@@ -121,7 +121,7 @@ Vous pouvez ajouter des ressources à une collection qui comporte une liste de r
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-   Vous pouvez également faire glisser la ressource vers le **[!UICONTROL Déposer dans la collection]** de l’interface. Ajoutez les ressources lorsque le libellé de la région devient **[!UICONTROL Déposer pour ajouter]**.
+   Vous pouvez également faire glisser la ressource sur la zone **[!UICONTROL Déposer dans la collection]** dans l’interface. Ajoutez les ressources lorsque le libellé de la zone devient **[!UICONTROL Déposer pour ajouter]**.
 
 1. Sur la page **[!UICONTROL Ajouter à la collection]**, sélectionnez la collection à laquelle vous souhaitez ajouter la ressource.
 
@@ -165,7 +165,7 @@ Les métadonnées de collection incluent les données sur la collection, notamme
 1. Sur la page **[!UICONTROL Métadonnées de collection]**, affichez les métadonnées de collection à partir des onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]**.
 1. Modifiez les métadonnées suivant les besoins, puis appuyez/cliquez sur l’icône **[!UICONTROL Enregistrer et fermer]** de la barre d’outils pour enregistrer les modifications.
 
-### Modification en masse des métadonnées de plusieurs collections {#editing-collection-metadata-in-bulk}
+### Modification en bloc des métadonnées de plusieurs collections {#editing-collection-metadata-in-bulk}
 
 Vous pouvez modifier simultanément les métadonnées de plusieurs collections. Cette fonctionnalité vous aide à répliquer rapidement des métadonnées communes dans plusieurs collections.
 
@@ -181,23 +181,23 @@ Vous pouvez modifier simultanément les métadonnées de plusieurs collections. 
 
 
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer et fermer]** dans la barre d’outils, puis fermez la boîte de dialogue de confirmation pour terminer le processus.
-1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Appuyez/cliquez sur **[!UICONTROL Envoyer]**.
+1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes, sélectionnez le **[!UICONTROL mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Appuyez/cliquez sur **[!UICONTROL Envoyer]**.
 
    >[!NOTE]
    >
-   >Les métadonnées que vous ajoutez pour les collections sélectionnées remplacent les métadonnées précédentes de ces collections. Utilisez la variable [!UICONTROL Mode d’ajout] pour ajouter de nouvelles valeurs aux métadonnées existantes dans les champs pouvant contenir plusieurs valeurs. Les champs à valeur unique sont toujours remplacés. Toutes les balises que vous ajoutez dans le champ [!UICONTROL Balises] sont ajoutées à la liste existante des balises dans les métadonnées.
+   >Les métadonnées que vous ajoutez pour les collections sélectionnées remplacent les métadonnées précédentes de ces collections. Utilisez le [!UICONTROL Mode d’ajout] pour ajouter de nouvelles valeurs aux métadonnées existantes dans les champs pouvant contenir plusieurs valeurs. Les champs à valeur unique sont toujours remplacés. Toutes les balises que vous ajoutez dans le champ [!UICONTROL Balises] sont ajoutées à la liste existante des balises dans les métadonnées.
 
-Pour personnaliser la page [!UICONTROL Propriétés] de métadonnées, notamment ajouter, modifier et supprimer des propriétés de métadonnées, utilisez l’éditeur de schéma.
+Pour personnaliser la page [!UICONTROL Propriétés] des métadonnées, et notamment ajouter, modifier et supprimer des propriétés de métadonnées, utilisez l’éditeur de schéma.
 
 >[!TIP]
 >
->La méthode de modification en masse fonctionne pour les ressources disponibles dans une collection. Pour les ressources disponibles dans plusieurs dossiers ou correspondant à un critère commun, il est possible de mettre à jour les métadonnées en masse après avoir recherché ces ressources.
+>Les méthodes de modification en bloc fonctionnent pour les ressources disponibles dans une collection. Pour les ressources disponibles dans plusieurs dossiers ou correspondant à un critère commun, il est possible de mettre à jour les métadonnées en masse après avoir recherché ces ressources.
 
 ## Recherche de collections {#searching-collections}
 
 Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez une recherche avec des mots-clés dans la zone Omni-recherche, [!DNL Experience Manager] Les ressources recherchent les noms de collection, les métadonnées et les balises ajoutées aux collections.
 
-Si vous recherchez des collections à partir du niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. Les ressources ou dossiers à l’intérieur des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), tous les fichiers, dossiers et collections appropriés sont renvoyés.
+Si vous recherchez des collections à partir du niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. Les ressources ou dossiers à l’intérieur des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), toutes les ressources, dossiers et collections appropriés sont renvoyés.
 
 ## Recherche dans les collections {#searching-within-collections}
 
@@ -210,7 +210,7 @@ Dans une collection, la recherche est limitée aux ressources (ainsi qu’à leu
 Vous pouvez modifier les paramètres d’une collection, tels que le titre et la description, ou ajouter des membres à une collection.
 
 1. Sélectionnez une collection et appuyez/cliquez sur l’icône **[!UICONTROL Paramètres]** dans la barre d’outils. Vous pouvez également utiliser l’action rapide **[!UICONTROL Paramètres]** à partir de la miniature de la collection.
-1. Modifiez les paramètres de la collection dans le **[!UICONTROL Paramètres de la collection]** page. Par exemple, modifiez le titre, les descriptions, les membres et les autorisations de la collection, comme décrit dans la section [Ajout de collections](#creating-a-collection).
+1. Modifiez les paramètres de collection sur la page **[!UICONTROL Paramètres de la collection]**. Par exemple, modifiez le titre, les descriptions, les membres et les autorisations de la collection comme décrit dans la section [Ajout de collections](#creating-a-collection).
 
 1. Pour enregistrer les modifications, appuyez/cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -222,7 +222,7 @@ Vous pouvez modifier les paramètres d’une collection, tels que le titre et la
 
    >[!NOTE]
    >
-   >Vous pouvez également supprimer des collections dynamiques par [suppression de recherches enregistrées](#deleting-saved-searches).
+   >Vous pouvez également supprimer les collections dynamiques en [supprimant les recherches enregistrées](#deleting-saved-searches).
 
 ## Téléchargement d’une collection {#downloading-a-collection}
 
@@ -304,6 +304,6 @@ Vous pouvez exécuter un workflow pour les ressources d’une collection. Si la 
 
 >[!MORELIKETHIS]
 >
->* [Configuration des notifications par courrier électronique Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
+>* [Configuration des notifications par e-mail d’Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
 >* [Création d’une tâche de révision pour les collections](bulk-approval.md)
 

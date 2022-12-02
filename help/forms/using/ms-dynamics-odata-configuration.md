@@ -63,7 +63,7 @@ Procédez comme suit pour définir l’URL de réponse de l’application Micros
 
    ![azure_directory](assets/azure_directory.png)
 
-1. enregistrez la configuration.
+1. Enregistrez la configuration.
 
 ## Configuration de Microsoft Dynamics pour IFD {#configure-microsoft-dynamics-for-ifd}
 

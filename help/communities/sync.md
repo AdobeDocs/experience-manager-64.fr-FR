@@ -14,7 +14,7 @@ exl-id: 3a8e8fef-9aef-4b9d-8b0b-e76aa2962b61
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2500'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -86,22 +86,22 @@ Pour le contenu généré par l’utilisateur, les données saisies sur une inst
 
 Par défaut, la synchronisation des utilisateurs est **désactivée**. Activer la synchronisation des utilisateurs implique de modifier les configurations OSGi *existantes.* Aucune configuration nouvelle ne doit être ajoutée suite à l’activation de la synchronisation des utilisateurs.
 
-La synchronisation des utilisateurs repose sur l’environnement de création pour gérer les distributions de données utilisateur, même si les données utilisateur ne sont pas créées en mode de création.
+La synchronisation des utilisateurs repose sur l’environnement de création pour gérer les distributions de données utilisateur, même si les données utilisateur ne sont pas créées en mode de création .
 
-**Prérequis**
+**Conditions préalables**
 
 1. Si les utilisateurs et les groupes d’utilisateurs ont déjà été créés sur un éditeur, il est recommandé de [synchroniser manuellement](../../help/sites-administering/sync.md#manually-syncing-users-and-user-groups) les données utilisateur sur tous les éditeurs avant de configurer et d’activer la synchronisation des utilisateurs.
 
    Une fois la synchronisation des utilisateurs activée, seuls les utilisateurs et les groupes nouvellement créés sont synchronisés .
 
-1. Vérifiez que le code le plus récent a été installé :
+1. Assurez-vous que la dernière version du code a été installée :
 
-   * [Mise à jour de la plateforme AEM](https://helpx.adobe.com/fr/experience-manager/kb/aem62-available-hotfixes.html)
-   * [Mises à jour d’AEM Communities](deploy-communities.md#latestfeaturepack)
+   * [Mises à jour de la plateforme AEM](https://helpx.adobe.com/fr/experience-manager/kb/aem62-available-hotfixes.html)
+   * [Mises à jour d’AEM Communities](deploy-communities.md#latestfeaturepack)
 
 Les paramétrages suivants sont nécessaires pour permettre la synchronisation des utilisateurs sur AEM Communities. Assurez-vous que ces configurations sont correctes pour empêcher l’échec de la distribution de contenu sling.
 
-### Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
+### Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
 
 Cette configuration récupère le contenu à synchroniser dans les éditeurs. La configuration se trouve sur l’instance d’auteur . L’auteur doit effectuer le suivi de tous les éditeurs présents et où synchroniser toutes les informations.
 
@@ -125,7 +125,7 @@ Sur l’instance d’auteur AEM :
 
    * Sélectionnez la configuration existante à ouvrir pour modification (icône représentant un crayon).
    * Vérifiez le nom : **`socialpubsync`.**
-   * Sélectionnez la **[!UICONTROL Activé]** .
+   * Cochez la case **[!UICONTROL Activé]**.
    * Sélectionner **[!UICONTROL Utilisation de files d’attente multiples]**.
    * Spécifier **[!UICONTROL Points de fin de l’exportateur]** et **[!UICONTROL Points de terminaison de l’importateur]** (vous pouvez ajouter d’autres points de fin d’exportateur et d’importateur).
 
@@ -203,7 +203,7 @@ Sur chaque instance de publication AEM :
 1. Sélectionnez la configuration existante à ouvrir pour modification (icône représentant un crayon).
 
    Vérifier **[!UICONTROL nom de l’agent]**: `socialpubsync` \-reverse&amp;ast;&amp;ast;.
-1. Sélectionnez la **[!UICONTROL Activé]** .
+1. Cochez la case **[!UICONTROL Activé]**.
 1. Spécifier **rep`:members`** as `description` pour propertyName dans **[!UICONTROL noms des propriétés look]** et enregistrez.
 
    ![diff-obs](assets/diff-obs.png)
@@ -272,7 +272,7 @@ Sur chaque instance de publication AEM :
 
    social/relationships
 
-   activités
+   activities
 
 1. Définissez le niveau du journal **`ignorablenodes`** sur:
 
@@ -306,11 +306,11 @@ Sur chaque instance de publication :
 1. Arrêtez l’une des instances de publication ayant un identifiant Sling correspondant.
 1. Dans le `crx-quickstart/launchpad/felix` , recherchez et supprimez le fichier nommé _sling.id.file.
 
-   *par exemple, sur un système Linux :*
+   *par exemple, sur un système Linux :*
 
    `rm -i $(find . -type f -name sling.id.file)`
 
-   *par exemple, sur un système Windows :*
+   *par exemple, sur un système Windows :*
 
    `use windows explorer and search for _sling.id.file_`
 
@@ -319,7 +319,7 @@ Sur chaque instance de publication :
 
 Répétez ces étapes jusqu’à ce que toutes les instances de publication aient un identifiant Sling unique.
 
-### Fabrique Vault Package Builder {#vault-package-builder-factory}
+### Fabrique de générateur de modules vault {#vault-package-builder-factory}
 
 Pour que les mises à jour soient correctement synchronisées, il est nécessaire de modifier le créateur de modules Vault pour la synchronisation des utilisateurs.\
 Dans `/home/users`, un `/rep:cache` est créé. Il s’agit d’un cache qui permet de trouver que si nous effectuons une requête sur le nom principal d’un noeud, ce cache peut être utilisé directement.

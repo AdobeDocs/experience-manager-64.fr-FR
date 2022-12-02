@@ -13,30 +13,30 @@ exl-id: 123ef72b-f09b-47eb-9b5a-e0deb38799df
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 61%
+ht-degree: 81%
 
 ---
 
 # Externalisation d’URL{#externalizing-urls}
 
-Dans AEM, la variable **Externalizer** est un service OSGI qui vous permet de transformer par programmation un chemin d’accès aux ressources (par exemple, `/path/to/my/page`) dans une URL externe et absolue (par exemple, `https://www.mycompany.com/path/to/my/page`) en ajoutant un préfixe au chemin d’accès avec un DNS préconfiguré.
+Dans AEM, **Externalizer** est un service OSGI qui vous permet de transformer, par programmation, un chemin d’accès aux ressources (`/path/to/my/page`) en une URL externe et absolue (`https://www.mycompany.com/path/to/my/page`, par exemple) en faisant précéder le chemin d’accès d’un DNS préconfiguré.
 
 Une instance ne peut pas connaître son URL visible en externe si elle s’exécute derrière une couche web et il arrive qu’un lien doive être créé en dehors d’une étendue de demande. Dès lors, ce service fournit un emplacement centralisé pour configurer ces URL externes et les générer.
 
-Cette page explique comment configurer le service **Externalizer** et l’utiliser. Pour plus d’informations, reportez-vous aux [JavaDocs](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+Cette page explique comment configurer le service **Externalizer** et l’utiliser. Pour plus d’informations, reportez-vous aux [JavaDocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configuration du service Externalizer {#configuring-the-externalizer-service}
 
-Le **Externalizer** vous permet de définir de manière centralisée plusieurs domaines qui peuvent être utilisés pour préfixer par programmation les chemins d’accès aux ressources. Chaque domaine est identifié par un nom unique utilisé pour faire référence au domaine par programmation.
+Le service **Externalizer** vous permet de définir, de manière centralisée, plusieurs domaines pouvant être utilisés pour préfixer des chemins d’accès aux ressources par programmation. Chaque domaine est identifié par un nom unique utilisé pour faire référence au domaine par programmation.
 
 Pour définir un mappage de domaine pour le service **Externalizer**, procédez comme suit :
 
 1. Accédez au gestionnaire de configuration via **Outils**, puis **Console web** ou saisissez `https://<host>:<port>/system/console/configMgr.`
-1. Cliquez sur **Day CQ Link Externalizer** pour ouvrir la boîte de dialogue de configuration.
+1. Cliquez sur l’**Externaliseur de lien Day CQ** pour ouvrir la boîte de dialogue de configuration.
 
    >[!NOTE]
    >
-   >Le lien direct vers la configuration est `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
+   >Le lien direct vers la configuration est `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`.
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
@@ -45,9 +45,9 @@ Pour définir un mappage de domaine pour le service **Externalizer**, procédez 
    `<unique-name> [scheme://]server[:port][/contextpath]`, où:
 
    * **scheme** est généralement http ou https, mais peut également être ftp, etc.; utilisez https pour imposer des liens https si nécessaire ; ce protocole est utilisé si le code client ne remplace pas le schéma lors de la demande d’externalisation d’une URL.
-   * **server** est le nom d’hôte (il peut s’agir d’un nom de domaine ou d’une adresse ip).
-   * **port** (facultatif) est le numéro de port.
-   * **contextpath** (facultatif) n’est défini que si AEM est installé en tant qu’application web sous un autre chemin de contexte.
+   * **Server** est le nom d’hôte (il peut s’agir d’un nom de domaine ou d’une adresse IP).
+   * **Port** (facultatif) est le numéro de port.
+   * **contextpath** (facultatif) est défini uniquement si AEM est installé en tant qu’application Web sous un autre chemin d’accès au contexte.
 
    Par exemple : `production https://my.production.instance`
 
@@ -65,7 +65,7 @@ Pour définir un mappage de domaine pour le service **Externalizer**, procédez 
 
 >[!NOTE]
 >
->Adobe vous recommande de [ajouter la configuration au référentiel ;](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
+>Adobe vous recommande d’[ajouter la configuration au référentiel](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
 
 ## Utilisation du service Externalizer {#using-the-externalizer-service}
 

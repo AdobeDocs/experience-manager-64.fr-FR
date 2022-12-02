@@ -223,7 +223,7 @@ Sélectionnez l’icône d’exportation pour créer un package du site de la co
 >
 >Par exemple, pour utiliser le port 6103 : `http://localhost:6103/bin/receive?sling:authRequestLogin=1`
 >
->1. **[!UICONTROL Cliquez sur OK]**
+>1. Sélectionnez **[!UICONTROL OK]**
 >1. (Facultatif) Sélectionnez `Clear` ou `Force Retry` pour réinitialiser la file d’attente de réplication
 
 

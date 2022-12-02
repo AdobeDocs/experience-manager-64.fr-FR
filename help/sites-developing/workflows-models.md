@@ -13,7 +13,7 @@ exl-id: d9c9db5f-9788-460f-ac09-88dd3c911edd
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2447'
-ht-degree: 72%
+ht-degree: 90%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 72%
 
 >[!CAUTION]
 >
->Pour utiliser l’interface utilisateur classique, consultez la [documentation AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites-developing/workflows-models.html).
+>Pour utiliser l’interface utilisateur classique, consultez la [documentation AEM 6.3](https://helpx.adobe.com/fr/experience-manager/6-3/sites-developing/workflows-models.html).
 
-Vous créez un [modèle de workflow](/help/sites-developing/workflows.md#model) pour définir les étapes exécutées lorsqu’un utilisateur lance le workflow. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le processus est transitoire ou s’il utilise plusieurs ressources.
+Vous créez un [modèle de workflow](/help/sites-developing/workflows.md#model) pour définir les étapes exécutées lorsqu’un utilisateur lance le workflow. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le workflow est transitoire ou s’il utilise plusieurs ressources.
 
 Lorsqu’un utilisateur lance un workflow, une instance est démarrée ; il s’agit du modèle d’exécution correspondant, créé lorsque vous [synchronisez](#sync-your-workflow-generate-a-runtime-model) vos modifications.
 
@@ -31,11 +31,11 @@ Lorsqu’un utilisateur lance un workflow, une instance est démarrée ; il s�
 
 La première fois que vous créez un modèle de workflow, il se compose des éléments suivants :
 
-* Les étapes, **[!UICONTROL Début du flux]** et **[!UICONTROL Fin de flux]**.
+* Les étapes **[!UICONTROL Début de flux]** et **[!UICONTROL Fin de flux]**.
 
    Ces étapes représentent le début et la fin du workflow. Ces étapes sont obligatoires et ne peuvent pas être modifiées ou supprimées.
 
-* Exemple **Participant** étape nommée **Étape 1**.
+* Un exemple d’étape **Participant**, dont le nom est **Étape 1**.
 
    Cette étape est configurée pour affecter un élément de travail à l’initiateur de workflow. Vous pouvez modifier ou supprimer cette étape et y ajouter d’autres étapes suivant les besoins.
 
@@ -47,7 +47,7 @@ Pour créer un workflow avec l’éditeur, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Créer]**, puis **[!UICONTROL Créer un modèle]**.
 1. Le **[!UICONTROL Ajouter un modèle de processus]** s’affiche. Saisissez le **[!UICONTROL Titre]** et le **[!UICONTROL Nom]** (facultatif) avant de sélectionner **[!UICONTROL Terminé]**.
-1. Le nouveau modèle est répertorié dans la section **[!UICONTROL Modèles de processus]** console.
+1. Le nouveau modèle est répertorié dans la console **[!UICONTROL Modèles de workflow]**.
 1. Sélectionnez votre nouveau workflow, puis utilisez [**[!UICONTROL Modifier ]**pour l’ouvrir à des fins de configuration](#editing-a-workflow) :
 
    ![wf-01](assets/wf-01.png)
@@ -91,21 +91,21 @@ Certaines étapes s’accompagnent de champs obligatoires et/ou d’une validati
 Lorsque vous ouvrez un [modèle par défaut et/ou hérité](/help/sites-developing/workflows.md#workflow-types) en vue de le modifier :
 
 * Le **[!UICONTROL Étapes]** n’est pas disponible (côté gauche).
-* Une action **[!UICONTROL Modifier]** est disponible dans la barre d’outils (côté droit).
+* une action **[!UICONTROL Modifier]** est disponible dans la barre d’outils (côté droit).
 * Au départ, le modèle et ses propriétés sont présentés en mode lecture seule comme suit :
 
-   * Les workflows par défaut se trouvent dans `/libs`
+   * Les workflow par défaut sont situés dans `/libs`.
    * Les workflows hérités se trouvent dans `/etc`
 
 Lorsque vous sélectionnez **[!UICONTROL Modifier]** :
 
-* Copiez le workflow dans `/conf`
+* une copie du workflow est réalisée dans `/conf` ;
 * effectuez la **[!UICONTROL Étapes]** navigateur disponible
-* Il est possible d’effectuer des modifications.
+* vous pourrez effectuer des modifications.
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Emplacements des modèles de workflow](/help/sites-developing/workflows-best-practices.md#locations-workflow-models).
+>Pour plus d’informations, consultez la section [Emplacements des modèles de workflow](/help/sites-developing/workflows-best-practices.md#locations-workflow-models).
 
 ![wf-22](assets/wf-22.png)
 
@@ -128,7 +128,7 @@ Lorsque vous modifiez un modèle, les étapes disponibles s’affichent dans les
 
    * **[!UICONTROL Filtrer]** des étapes spécifiques.
    * Utiliser le menu déroulant pour limiter la sélection à un groupe d’étapes bien défini.
-   * Sélectionnez l’icône Afficher la description . ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) pour afficher plus de détails sur l’étape appropriée.
+   * Sélectionnez l’icône Afficher la description ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) pour afficher des informations plus détaillées sur l’étape appropriée.
 
    ![wf-02](assets/wf-02.png)
 
@@ -146,7 +146,7 @@ Lorsque vous modifiez un modèle, les étapes disponibles s’affichent dans les
 
    Vous pouvez également copier, couper, coller, regrouper ou supprimer des étapes existantes, comme avec l’[éditeur de page](/help/sites-authoring/editing-content.md).
 
-   Les étapes de fractionnement peuvent également être réduites/développées à l’aide de l’option de barre d’outils : ![wf-collapse-expand-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png)
+   Les étapes de division peuvent également être réduites/développées à l’aide de l’option de barre d’outils : ![wf-collapseexpand-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png).
 
 1. Confirmez les modifications à l’aide de l’option **[!UICONTROL Synchronisation]** (barre d’outils de l’éditeur) afin de générer le modèle d’exécution.
 
@@ -165,7 +165,7 @@ Vous pouvez **Configurer** et personnaliser le comportement d’une étape de wo
    >
    >Pour plus d’informations sur les principaux composants d’étape qui sont installés avec AEM, voir [Référence des étapes du workflow](/help/sites-developing/workflows-step-ref.md).
 
-1. Configurez les **[!UICONTROL propriétés des étapes]** suivant vos besoins ; les propriétés disponibles dépendent du type d’étape. Plusieurs onglets peuvent également être disponibles. Par exemple, la valeur par défaut **[!UICONTROL Étape du participant]**, présente dans un nouveau workflow sous la forme `Step 1`:
+1. Configurez les **[!UICONTROL propriétés des étapes]** suivant vos besoins ; les propriétés disponibles dépendent du type d’étape. Plusieurs onglets peuvent également être disponibles. Par exemple, l’étape **[!UICONTROL Étape de participant]** par défaut présent dans un nouveau workflow sous la forme `Step 1` :
 
    ![wf-11](assets/wf-11.png)
 
@@ -190,29 +190,29 @@ Vous pouvez créer un modèle de workflow [Transitoire](/help/sites-developing/w
 
 >[!NOTE]
 >
->Lorsque vous exécutez un workflow en mode [transitoire](/help/sites-developing/workflows.md#transient-workflows), AEM ne stocke aucun historique de workflow. Par conséquent, [Chronologie](/help/sites-authoring/basic-handling.md#timeline) n’affiche aucune information relative au workflow. [](/help/sites-authoring/basic-handling.md#timeline)
+>Lorsque vous exécutez un workflow en mode [transitoire](/help/sites-developing/workflows.md#transient-workflows), AEM ne stocke aucun historique de workflow. Par conséquent, la [Chronologie](/help/sites-authoring/basic-handling.md#timeline) n’affiche aucune information relative au workflow. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ### Mise à disposition des modèles de workflow dans l’interface utilisateur tactile {#make-workflow-models-available-in-touchui}
 
-Si un modèle de processus est présent dans l’interface utilisateur classique, mais qu’il manque dans le menu contextuel de sélection dans la variable **[!UICONTROL Chronologie]** rail de l’interface utilisateur tactile, puis suivez la configuration pour la rendre disponible. Les étapes suivantes illustrent l’utilisation du modèle de workflow appelé **[!UICONTROL Demande d’activation]**.
+Si un modèle de workflow présent dans l’interface utilisateur classique est absent du menu contextuel de sélection dans le rail **[!UICONTROL Chronologie]** de l’interface utilisateur tactile, effectuez la configuration pour la rendre disponible. Les étapes suivantes illustrent l’utilisation du modèle de workflow appelé **[!UICONTROL Demande d’activation]**.
 
-1. Vérifiez que le modèle n’est pas disponible dans l’interface utilisateur tactile. Accès à une ressource à l’aide de `/assets.html/content/dam` chemin d’accès. Sélectionnez une ressource. Ouvrez **[!UICONTROL Chronologie]** dans le rail gauche. Cliquez sur **[!UICONTROL Démarrer le processus]** et confirmez que la variable **[!UICONTROL Demande d’activation]** n’est pas présent dans la liste déroulante.
+1. Vérifiez que le modèle n’est pas disponible dans l’interface utilisateur tactile. Accédez à une ressource à l’aide du chemin `/assets.html/content/dam`. Sélectionnez une ressource. Ouvrez **[!UICONTROL Chronologie]** dans le rail gauche. Cliquez sur **[!UICONTROL Démarrer le workflow]** et confirmez que le modèle **[!UICONTROL Demande d’activation]** n’est pas présent dans la liste contextuelle.
 
-1. Navigation **[!UICONTROL Outils > Général > Balisage]**. Sélectionnez **[!UICONTROL Workflow]**.
+1. Accédez à **[!UICONTROL Outils > Général > Balisage]**. Sélectionnez **[!UICONTROL Workflow]**.
 
-1. Sélectionner **[!UICONTROL Créer > Créer une balise]**. Définir **[!UICONTROL Titre]** as `DAM` et **[!UICONTROL Nom]** as `dam`. Sélectionnez **[!UICONTROL Envoyer]**.
+1. Sélectionnez **[!UICONTROL Créer > Créer une balise]**. Définissez le **[!UICONTROL titre]** comme `DAM` et le **[!UICONTROL nom]** comme `dam`. Sélectionnez **[!UICONTROL Envoyer]**.
    ![Créer une balise dans le modèle de workflow](assets/workflow_create_tag.png)
 
-1. Accédez à **[!UICONTROL Outils > Workflows > Modèles]**. Sélectionner **[!UICONTROL Demande d’activation]**, puis sélectionnez **[!UICONTROL Modifier]**.
+1. Accédez à **[!UICONTROL Outils > Workflows > Modèles]**. Sélectionnez **[!UICONTROL Demande d’activation]**, puis **[!UICONTROL Modifier]**.
 
 1. Sélectionner **[!UICONTROL Modifier]** , puis ouvrez **[!UICONTROL Propriétés du modèle de workflow]**. Accédez au **[!UICONTROL De base]** .
 
-1. Ajouter `Workflow : DAM` to **[!UICONTROL Balises]** champ . Confirmez la sélection en cochant (coche).
+1. Ajoutez `Workflow : DAM` dans le champ **[!UICONTROL Balises]**. Confirmez la sélection en activant la case à cocher.
 
-1. Confirmez l’ajout de la balise avec **[!UICONTROL Enregistrer et fermer]**.
+1. Confirmez l’ajout de la balise en sélectionnant **[!UICONTROL Enregistrer et fermer]**.
    ![Modifier les propriétés de page du modèle](assets/workflow_model_edit_activation1.png)
 
-1. Procédez comme suit : **[!UICONTROL Synchronisation]**. Le workflow est désormais disponible dans l’interface utilisateur tactile.
+1. Terminez la procédure en sélectionnant **[!UICONTROL Synchronisation]**. Le workflow est désormais disponible dans l’interface utilisateur tactile.
 
 ### Configuration d’un workflow pour la prise en charge multi-ressource {#configuring-a-workflow-for-multi-resource-support}
 
@@ -256,14 +256,14 @@ Pour définir des **[!UICONTROL Phases]** pour votre workflow, procédez comme s
 
    Une phase peut être affectée à plusieurs étapes. Par exemple :
 
-   | **Étape** | **Évaluation** |
+   | **Étape** | **Phase** |
    |---|---|
-   | Étape 1 | Créer |
-   | Étape 2 | Créer |
+   | Étape 1 | Création |
+   | Étape 2 | Création |
    | Étape 3 | Révision |
    | Étape 4 | Approuver |
    | Étape 5 | Approuver |
-   | Étape 6 | Terminé |
+   | Étape 6 | Terminer |
 
 1. Confirmez les modifications à l’aide de l’option **[!UICONTROL Synchronisation]** (barre d’outils de l’éditeur) afin de générer le modèle d’exécution.
 
@@ -274,7 +274,7 @@ Pour définir des **[!UICONTROL Phases]** pour votre workflow, procédez comme s
 1. Créez un module à l’aide du [Gestionnaire de modules](/help/sites-administering/package-manager.md#package-manager) :
 
    1. Accédez au gestionnaire de modules au moyen de la commande **[!UICONTROL Outils]**, **[!UICONTROL Déploiement]**, **[!UICONTROL Packages]**.
-   1. Cliquez sur **[!UICONTROL Créer un package]**.
+   1. Cliquez sur **[!UICONTROL Créer un module]**.
    1. Indiquez le **[!UICONTROL Nom du package]**, ainsi que d’autres détails suivant les besoins.
    1. Cliquez sur **[!UICONTROL OK]**.
 
@@ -308,7 +308,7 @@ Pour configurer le workflow afin qu’il soit utilisé avec votre formulaire, pr
 1. Créez une page, puis ouvrez-la à des fins d’édition.
 1. Ajoutez un composant **[!UICONTROL Formulaire]** à la page.
 1. Configurez le composant **[!UICONTROL Début du formulaire]** qui s’est affiché dans la page.
-1. Utilisation **[!UICONTROL Démarrer le processus]** pour sélectionner le workflow souhaité parmi ceux disponibles :
+1. Utilisez **[!UICONTROL Démarrer le workflow]** pour sélectionner le workflow de votre choix parmi ceux qui sont disponibles :
 
    ![wf-12](assets/wf-12.png)
 
@@ -320,19 +320,19 @@ Lorsque vous testez un workflow, il est conseillé d’utiliser divers types de 
 
 Vous pouvez, par exemple, tester votre nouveau workflow comme suit :
 
-1. [Démarrer votre modèle de workflow](/help/sites-administering/workflows-starting.md) à partir de la console.
-1. Définissez la **[!UICONTROL Charge utile]** et confirmez-la.
+1. [Démarrez votre modèle de workflow](/help/sites-administering/workflows-starting.md) à partir de la console.
+1. Définissez le **[!UICONTROL payload]** et confirmez-le.
 
 1. Prenez les mesures nécessaires au bon déroulement du workflow.
 1. Surveillez les fichiers journaux pendant l’exécution du workflow.
 
-Vous pouvez également configurer AEM pour qu’il affiche des messages **[!UICONTROL DEBUG]** dans les fichiers journaux. Voir [Journalisation](/help/sites-deploying/configure-logging.md) pour plus d’informations et une fois le développement terminé, définissez la variable **[!UICONTROL Niveau de journal]** Retour à **[!UICONTROL Infos]**.
+Vous pouvez également configurer AEM pour qu’il affiche des messages **[!UICONTROL DEBUG]** dans les fichiers journaux. Pour plus d’informations, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md). Une fois le développement terminé, redéfinissez le **[!UICONTROL Niveau de journal]** sur **[!UICONTROL Infos]**.
 
 ## Exemples {#examples}
 
 ### Exemple : création d’un workflow (simple) pour accepter ou rejeter une demande de publication {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
 
-Pour illustrer certaines des possibilités de création d&#39;un workflow, l&#39;exemple suivant crée une variante de la `Publish Example` workflow.
+Pour illustrer certaines des possibilités de création d’un workflow, l’exemple suivant crée une variante du workflow `Publish Example`.
 
 1. [Créez un modèle de workflow](#creating-a-new-workflow).
 
@@ -342,21 +342,21 @@ Pour illustrer certaines des possibilités de création d&#39;un workflow, l&#39
    * `Step 1`
    * **[!UICONTROL Fin de flux]**
 
-1. Supprimer `Step 1` (car il s’agit du mauvais type d’étape pour cet exemple) :
+1. Supprimez `Step 1` (car ce type d’étape n’est pas correct pour cet exemple) :
 
-   * Cliquez sur l’étape et sélectionnez **[!UICONTROL Supprimer]** dans la barre d’outils du composant. Confirmez l’action.
+   * Cliquez sur l’étape et sélectionnez ensuite **[!UICONTROL Supprimer]** dans la barre d’outils du composant. Confirmez l’action.
 
 1. Dans la **[!UICONTROL Workflow]** sélection de l’explorateur d’étapes, faites glisser un **[!UICONTROL Étape du participant]** sur le workflow et positionnez-le entre **[!UICONTROL Début du flux]** et **[!UICONTROL Fin de flux*]*.
 1. Pour ouvrir la boîte de dialogue des propriétés :
 
-   * Cliquez sur l’étape du participant et sélectionnez **[!UICONTROL Configurer]** dans la barre d’outils du composant.
+   * Cliquez sur l’étape de participant et sélectionnez ensuite **[!UICONTROL Configurer]** dans la barre d’outils du composant.
    * Double-cliquez sur l’étape de participant.
 
-1. Dans le **[!UICONTROL Courant]** entrée d’onglet `Validate Content` pour les deux **[!UICONTROL Titre]** et **[!UICONTROL Description]**.
+1. Dans l’onglet **[!UICONTROL Commun]**, saisissez `Validate Content` pour le **[!UICONTROL Titre]** et la **[!UICONTROL Description]**.
 1. Ouvrez l’onglet **[!UICONTROL Utilisateur/Groupe]** :
 
    * Activez **[!UICONTROL Avertir l’utilisateur par courrier électronique]**.
-   * Sélectionner `Administrator` ( `admin`) pour la variable **[!UICONTROL Utilisateur/Groupe]** champ .
+   * Sélectionnez `Administrator` (`admin`) pour le champ **[!UICONTROL Utilisateur/Groupe]**.
 
    >[!NOTE]
    >
@@ -364,11 +364,11 @@ Pour illustrer certaines des possibilités de création d&#39;un workflow, l&#39
 
 1. Appuyez sur la coche pour confirmer les mises à jour.
 
-   Vous revenez à la présentation du modèle de workflow, où l’étape du participant a été renommée `Validate Content`.
+   Vous revenez alors à l’aperçu du modèle de workflow. L’étape de participant y a été renommée `Validate Content`.
 
-1. Faites glisser un **[!UICONTROL Ou fractionner]** sur le workflow et positionnez-le entre `Validate Content` et **[!UICONTROL Fin de flux]**.
+1. Faites glisser une **[!UICONTROL Division OU]** sur le workflow et positionnez-la entre `Validate Content` et **[!UICONTROL Fin de flux]**.
 1. Ouvrez la **[!UICONTROL Division OU]** en vue de la configuration.
-1. Configurer :
+1. Configurez les éléments suivants :
 
    * **[!UICONTROL Courant]**: select **[!UICONTROL 2 branches]**
    * **[!UICONTROL Branche 1]** : sélectionnez **[!UICONTROL Itinéraire par défaut]**.
@@ -377,14 +377,14 @@ Pour illustrer certaines des possibilités de création d&#39;un workflow, l&#39
 1. Confirmez les mises à jour apportées à la **[!UICONTROL Division OU]**.
 1. Faites glisser une **[!UICONTROL Étape de participant]** sur la branche de gauche, ouvrez les propriétés, spécifiez les valeurs suivantes, puis confirmez les modifications :
 
-   * **[!UICONTROL Titre]**: `Reject Publish Request`
+   * **[!UICONTROL Titre]** : `Reject Publish Request`
    * **[!UICONTROL Utilisateur/Groupe]** : par exemple, `projects-administrators`
-   * **[!UICONTROL Notifier l’utilisateur par courrier électronique]**: Activez cette option pour que l’utilisateur soit averti par e-mail.
+   * **[!UICONTROL Avertir l’utilisateur par e-mail]** : activez cette option pour que l’utilisateur soit averti par e-mail.
 
 1. Faites glisser une **[!UICONTROL Étape du processus]** sur la branche de droite, ouvrez les propriétés, spécifiez les valeurs suivantes, puis confirmez les modifications :
 
-   * **[!UICONTROL Titre]**: `Publish Page as Requested`
-   * **[!UICONTROL Processus]**: select `Activate Page`. Ce processus publie la page sélectionnée sur les instances de l’éditeur.
+   * **[!UICONTROL Titre]** : `Publish Page as Requested`
+   * **[!UICONTROL Processus]** : sélectionnez `Activate Page`. Ce processus publie la page sélectionnée sur les instances de l’éditeur.
 
 1. Cliquez sur **[!UICONTROL Synchronisation]** (barre d’outils de l’éditeur) afin de générer le modèle d’exécution.
 
@@ -410,13 +410,13 @@ Pour définir une règle OU :
 
    >[!NOTE]
    >
-   >Les scripts doivent avoir une [function `check()`](#function-check) qui renvoie une valeur booléenne.
+   >Les scripts doivent comporter une [fonction `check()`](#function-check) qui renvoie une valeur booléenne.
 
 1. Modifiez le workflow et ajoutez la **[!UICONTROL Division OU]** au modèle.
 1. Modifiez les propriétés de la **[!UICONTROL Branche 1]** de la **[!UICONTROL Division OU]** :
 
-   * Définissez-le comme **[!UICONTROL Itinéraire par défaut]** en définissant la variable **[!UICONTROL Valeur]** to `true`.
-   * As **[!UICONTROL Règle]**, définissez le chemin d’accès au script. Par exemple :
+   * Définissez-la comme **[!UICONTROL Itinéraire par défaut]** en configurant la **[!UICONTROL Valeur]** sur `true`.
+   * Dans **[!UICONTROL Règle]**, définissez le chemin d’accès au script. Par exemple :
 
       `/apps/myapp/workflow/scripts/myscript1.ecma`
    >[!NOTE]
@@ -425,11 +425,11 @@ Pour définir une règle OU :
 
 1. Modifiez les propriétés de la **[!UICONTROL Branche 2]** de la **[!UICONTROL Division OU]**.
 
-   * As **[!UICONTROL Règle]**, définissez le chemin d’accès à l’autre script. Par exemple :
+   * En tant que **[!UICONTROL Règle]**, définissez le chemin d’accès à l’autre script. Par exemple :
 
       `/apps/myapp/workflow/scripts/myscript2.ecma`
 
-1. Définissez les propriétés des différentes étapes de chaque branche. Assurez-vous que la variable **[!UICONTROL Utilisateur/Groupe]** est définie.
+1. Définissez les propriétés des différentes étapes de chaque branche. Assurez-vous que la valeur **[!UICONTROL Utilisateur/Groupe]** est définie.
 1. Cliquez sur **Synchronisation** (barre d’outils de l’éditeur) pour conserver vos modifications dans le modèle d’exécution.
 
    Pour plus d’informations, voir [Synchronisation de votre workflow](#sync-your-workflow-generate-a-runtime-model).
@@ -440,7 +440,7 @@ Pour définir une règle OU :
 >
 >Voir [Utilisation d’ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
 
-L’exemple de script suivant renvoie `true` si le noeud est un `JCR_PATH` situé sous `/content/we-retail/us/en`:
+L’exemple de script suivant renvoie la valeur `true` si le nœud est un `JCR_PATH` situé sous `/content/we-retail/us/en` :
 
 ```
 function check() {
@@ -463,4 +463,4 @@ function check() {
 
 Vous pouvez personnaliser n’importe lequel des workflows personnalisés. Pour bénéficier d’un comportement personnalisé, superposez les détails du workflow approprié.
 
-Par exemple, **[!UICONTROL Demande d’activation]**. Ce workflow est utilisé pour publier des pages dans **[!UICONTROL Sites]**. Il se déclenche automatiquement lorsqu’un auteur de contenu ne dispose pas des droits de réplication appropriés. Voir [Personnalisation de la création de page - Personnalisation du processus de demande d’activation](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow) pour plus de détails.
+Par exemple, **[!UICONTROL Demande d’activation]**. Ce workflow est utilisé pour publier des pages dans **[!UICONTROL Sites]**. Il se déclenche automatiquement lorsqu’un auteur de contenu ne dispose pas des droits de réplication appropriés. Pour plus d’informations, consultez la section [Personnalisation de la création de pages – Personnalisation du workflow de Demande d’activation](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow).

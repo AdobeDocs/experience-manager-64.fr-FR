@@ -13,7 +13,7 @@ exl-id: 3f55a02c-2733-4f69-8112-7c6c4c98938c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '558'
-ht-degree: 48%
+ht-degree: 52%
 
 ---
 
@@ -29,7 +29,7 @@ Cette page documente les `Social Tag Cloud` paramètres de la boîte de dialogue
 
 Pour plus d’informations pour le développeur, reportez-vous à la section [Notions fondamentales sur les balises](tag.md). 
 
-Voir [Administration des balises](../../help/sites-administering/tags.md) pour plus d’informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
+Consultez la section [Administration des balises](../../help/sites-administering/tags.md) pour savoir comment créer et gérer des balises et déterminer à quel contenu elles ont été appliquées.
 
 ## Ajout d’un composant Nuage de balises sociales {#adding-a-social-tag-cloud}
 

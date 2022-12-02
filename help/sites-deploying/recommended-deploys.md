@@ -13,7 +13,7 @@ exl-id: aa4ec854-e32b-4136-a6d4-a42deb2afb18
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1791'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->Cette page se rapporte aux topologies recommandées pour AEM. Pour plus d’informations sur les fonctionnalités de mise en cluster et sur leur configuration, reportez-vous[ à la documentation sur les API Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html). 
+>Cette page se rapporte aux topologies recommandées pour AEM. Pour plus d’informations sur les fonctionnalités de mise en cluster et sur leur configuration, reportez-vous à la [documentation sur les API Discovery Apache Sling](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html). 
 
 Les micronoyaux fonctionnent comme des gestionnaires de persistance dans AEM 6.4. Le choix d’un micronoyau adapté à vos besoins dépend de l’objectif de votre instance et du type de déploiement que vous envisagez.
 
@@ -60,7 +60,7 @@ Les avantages :
 
 * Simplicité 
 * Maintenabilité
-* Performances
+* Performance
 * Basculement
 
 Les inconvénients :
@@ -71,11 +71,11 @@ Les inconvénients :
 
 >[!NOTE]
 >
->Pour plus d’informations sur la configuration d’AEM avec TarMK Cold Standby, reportez-vous[ à cet](/help/sites-deploying/tarmk-cold-standby.md) article.
+>Pour plus d’informations sur la configuration d’AEM avec TarMK Cold Standby, reportez-vous [cet](/help/sites-deploying/tarmk-cold-standby.md) article.
 
 >[!NOTE]
 >
->Le déploiement du mécanisme Cold Standby dans cet exemple de TarMK exige que les instances principales et de secours disposent de licences distinctes, en raison de la réplication constante vers le serveur de basculement. Pour plus d’informations sur les licences, consultez la section [Adobe Conditions générales de licence](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html).
+>Le déploiement du mécanisme Cold Standby dans cet exemple de TarMK exige que les instances principales et de secours disposent de licences distinctes, en raison de la réplication constante vers le serveur de basculement. Pour plus d’informations sur les licences, veuillez consulter les [conditions générales de licence d’Adobe](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html).
 
 ### La ferme TarMK {#tarmk-farm}
 
@@ -83,7 +83,7 @@ Plusieurs instances Oak s’exécutent chacun avec une instance TarMK. Les réf�
 
 En plus de la synchronisation des référentiels, le serveur de l’auteur publie le même contenu à chaque membre de la ferme. Pour plus d’informations, voir [Réplication](/help/sites-deploying/replication.md).
 
-Pour AEM Communities, le contenu généré par l’utilisateur (CGU) n’est jamais été répliqué. Pour toutes questions concernant la prise en charge du contenu généré par l’utilisateur dans une ferme TarMK, reportez-vous à la section [Remarques relatives à AEM Communities](#considerations-for-aem-communities).
+Pour AEM Communities, le contenu généré par l’utilisateur (CGU) n’est jamais été répliqué. Pour toutes questions concernant la prise en charge du contenu créé par l’utilisateur dans une ferme TarMK, reportez-vous à la section [Remarques relatives à AEM Communities](#considerations-for-aem-communities).
 
 **Il s’agit du déploiement par défaut pour les environnements de publication.**
 
@@ -112,9 +112,9 @@ Les inconvénients :
 
 ### Le cluster Oak avec basculement MongoMK via plusieurs data centers {#oak-cluster-with-mongomk-failover-across-multiple-datacenters}
 
-Cette approche implique que plusieurs instances Oak accèdent à un ensemble de réplications MongoDB défini sur plusieurs data centers, créant ainsi un cluster actif-actif pour l’environnement de création AEM. Avec plusieurs data centers, la réplication MongoDB fournit le même niveau élevé de disponibilité et de redondance, mais inclut désormais la capacité de gérer une éventuelle panne de courant du data center.
+Cette approche implique que plusieurs instances Oak accèdent à un ensemble de réplications MongoDB défini sur plusieurs data centers, créant ainsi un cluster actif-actif pour l’environnement de création AEM. Avec plusieurs centres de données, la réplication MongoDB fournit le même niveau élevé de disponibilité et de redondance, mais inclut désormais la capacité de gérer une éventuelle panne de courant du centre de données.
 
-![oakclustermongofailover2datacenter](assets/oakclustermongofailover2datacenters.png)
+![oakclustermongofailover2datacenters](assets/oakclustermongofailover2datacenters.png)
 
 Les avantages :
 
@@ -123,11 +123,11 @@ Les avantages :
 
 >[!NOTE]
 >
->Dans le diagramme ci-dessus, AEM serveur 3 et AEM serveur 4 sont présentés avec un état inactif en supposant une latence réseau entre les serveurs d’accès entre les serveurs d’accès de l’instance de base de données 2 et le noeud Principal MongoDB du centre de données 1 qui est supérieure à la configuration requise documentée. [here](/help/sites-deploying/aem-with-mongodb.md#checklists). Si la latence maximum est compatible avec les exigences, par exemple en utilisant les zones de disponibilité, les serveurs AEM dans le data center 2 peuvent être actifs également, créant un cluster AEM actif-actif dans plusieurs data centers.
+>Dans le diagramme ci-dessus, les serveurs AEM 3 et AEM 4 sont présentés avec un statut inactif, ce qui suppose une latence réseau entre les serveurs AEM du centre de données 2 et le nœud primaire MongoDB du centre de données 1 qui est supérieure à l’exigence décrite [ici](/help/sites-deploying/aem-with-mongodb.md#checklists). Si la latence maximum est compatible avec les exigences, par exemple en utilisant les zones de disponibilité, les serveurs AEM dans le centre données 2 peuvent être actifs également, créant un cluster AEM actif-actif dans plusieurs centres de données.
 
 >[!NOTE]
 >
->Pour plus d’informations sur les concepts architecturaux de MongoDB décrits dans cette section, voir [Réplication MongoDB](https://docs.mongodb.org/manual/replication/).
+>Pour plus d’informations sur les concepts architecturaux de MongoDB décrits dans cet article, consultez la section [Réplication MongoDB](https://docs.mongodb.org/manual/replication/).
 
 ## Quel micronoyau utiliser ? {#microkernels-which-one-to-use}
 
@@ -144,9 +144,9 @@ La raison principale pour choisir la persistance MongoMK plutôt que TarMK est s
 Il est pratiquement impossible de prévoir quel sera le modèle exact de concurrence après le lancement du nouveau site. Par conséquent, Adobe vous recommande de tenir compte des critères suivants lorsque vous considérez d’utiliser MongoMK et au moins deux nœuds actifs d’auteur :
 
 1. Nombre d’utilisateurs nommés connectés au cours de la journée : des milliers ou plus.
-1. Nombre d’utilisateurs simultanés : par centaines ou plus.
+1. Nombre d’utilisateurs simultanés : des centaines ou plus.
 1. Volume d’assimilation de ressources par jour : des centaines de milliers, voire plus.
-1. Volume de modifications de pages par jour : des centaines de milliers (y compris les mises à jour automatisées via le gestionnaire multi-site ou des assimilations de flux d’actualité, par exemple).
+1. Volume de modifications de pages par jour : des centaines de milliers (y compris les mises à jour automatisées via le Multi-site Manager ou des assimilations de flux d’actualité, par exemple).
 1. Volume de recherches par jour : des dizaines de milliers, voire plus.
 
 >[!NOTE]
@@ -168,13 +168,13 @@ Si vous ne pensez pas rencontrer les conditions ci-dessus lors des dix-huit prem
 
 Il n’est pas recommandé de déployer MongoMK pour les instances de publication. Le niveau de publication du déploiement est presque toujours déployé en tant que ferme ou instances de plublication exécutant TarMK, synchronisées en répliquant le contenu des instances d’auteur. Cette architecture de « non partage », adaptée aux instances de publication, permet au déploiement du niveau de publication d’évoluer horizontalement d’une manière linéaire. La topologie de ferme permet également d’appliquer toute mise à jour ou mise à niveau vers des instances de publication au fur et à mesure, de sorte que les modifications au niveau de la publication ne nécessitent pas de temps d’interruption.
 
-Ceci ne s’applique pas à AEM Communities, qui utilise les clusters MongoMK sur le niveau de publication lorsqu’il y a plus d’un éditeur. Si vous choisissez JSRP (voir [Stockage du de contenu de la communauté](/help/communities/working-with-srp.md)), un cluster MongoMK est approprié, comme le serait tout cluster côté publication, quel que soit le MK sélectionné, comme MongoDB ou RDB.
+Ceci ne s’applique pas à AEM Communities, qui utilise les clusters MongoMK sur le niveau de publication lorsqu’il y a plus d’un éditeur. Si vous choisissez JSRP (consultez la section [Stockage du de contenu de la communauté](/help/communities/working-with-srp.md)), un cluster MongoMK est approprié, comme le serait tout cluster côté publication, quel que soit le MK sélectionné, comme MongoDB ou RDB.
 
 ### Conditions préalables et recommandations de déploiement d’AEM avec MongoMK {#prerequisites-and-recommendations-when-deploying-aem-with-mongomk}
 
 Certaines conditions préalables et des recommandations sont disponibles si vous envisagez un déploiement MongoMK pour AEM :
 
-**Conditions préalables obligatoires pour les déploiements MongoDB :**
+**Conditions préalables obligatoires pour les déploiements de MongoDB :**
 
 1. L’architecture et le dimensionnement du déploiement de MongoDB doivent faire partie de l’exécution du projet avec l’aide des architectes d’Adobe Consulting ou de MongoDB, familiarisés avec AEM ;
 1. L’expertise de MongoDB doit être représenté au sein de l’équipe partenaire ou du service client en vue d’assurer le maintien d’un environnement MongoDB nouveau ou existant ;
@@ -182,10 +182,10 @@ Certaines conditions préalables et des recommandations sont disponibles si vous
 1. Les architectures et infrastructures d’ensemble d’AEM et de MongoDB doivent être correctement configurées et validées par un architecte Adobe AEM ; 
 1. Vous devez passer en revue le modèle de prise en charge des déploiements AEM qui incluent MongoDB.
 
-**Recommandations strictes pour les déploiements MongoDB :**
+**Recommandations essentielles pour les déploiements de MongoDB :**
 
 * Consultez l’article sur MongoDB pour [Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager) ;
-* Passez en revue la liste de contrôle de production [MongoDB](https://docs.mongodb.org/manual/administration/production-checklist/) ;
+* Passez en revue la liste de contrôle d’exploitation [MongoDB](https://docs.mongodb.org/manual/administration/production-checklist/) ;
 * Participez à une formation en ligne sur MongoDB [ici](https://university.mongodb.com/).
 
 >[!NOTE]
@@ -198,7 +198,7 @@ Pour les sites qui prévoient de déployer [AEM Communities](/help/communities/
 
 En utilisant un [entrepôt commun](/help/communities/working-with-srp.md), le contenu généré par l’utilisateur n’a plus besoin d’être répliqué entre les instances d’auteur et de publication pour obtenir une vue cohérente d’ensemble.
 
-Vous trouverez ci-dessous un ensemble de matrices décisionnelles pour vous aider à choisir le meilleur type de persistence pour votre déploiement :
+Vous trouverez ci-dessous un ensemble de matrices décisionnelles pour vous aider à choisir le meilleur type de persistance pour votre déploiement :
 
 #### Choix du type de déploiement pour les instances d’auteur {#choosing-the-deployment-type-for-author-instances}
 

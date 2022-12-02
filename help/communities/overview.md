@@ -44,7 +44,7 @@ Le [assistant de création de site](sites-console.md):
    * Facultatif [groupes communautaires](#communitygroups) fonctionnalité
 * Utilise les paramètres à configurer :
    * Modération
-   * La connexion
+   * Connexion
    * Traduction
 * Fournit les fonctionnalités essentielles :
    * Responsive design : Utilisations [Thèmes de Bootstrap twitter](https://getbootstrap.com)
@@ -169,12 +169,12 @@ Une communauté d’engagement est un site communautaire axé sur l’interactio
 
 Les caractéristiques d’une communauté d’engagement peuvent être les suivantes :
 
-* La connexion
+* Connexion
 * Message
 * Forums
 * Commentaires
 * Révisions
-* Evaluations
+* Évaluations
 * Vote
 * Blogs
 * Groupes

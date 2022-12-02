@@ -33,7 +33,6 @@ La création d’une application AEM Mobile On-demand Services est différente d
 >
 >* [Utilisation des plug-ins Cordova dans AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
 >* [Utilisation de modules externes activés pour Cordova spécifiques à AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
-
 >
 
 

@@ -382,6 +382,6 @@ Une fois que la variable **Notifications push** s’affiche dans votre tableau d
 >
 >Pushwoosh et Amazon SNS ne seront pas pris en charge après la version 6.4 et seront disponibles sous forme de module complémentaire à partir du partage de package.
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 Une fois que vous avez compris les détails des notifications push pour votre application, reportez-vous à la section [Personnalisation du contenu AEM Mobile](/help/mobile/phonegap-aem-mobile-content-personalization.md).

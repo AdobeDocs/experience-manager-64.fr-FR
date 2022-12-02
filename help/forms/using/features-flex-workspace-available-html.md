@@ -13,13 +13,13 @@ exl-id: d3125110-1098-413b-ba09-50c182797d27
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Fonctions de l’espace de travail Flex non disponibles dans l’espace de travail AEM Forms {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
-L’espace de travail AEM Forms est le nouvel espace de travail. Les caractéristiques suivantes de l’espace de travail basé sur Flex ne sont pas disponibles dans l’espace de travail AEM Forms.
+L’espace de travail AEM Forms est tout nouveau. Les caractéristiques suivantes de l’espace de travail basé sur Flex ne sont pas disponibles dans l’espace de travail AEM Forms.
 
 * La page d’accueil n’est pas disponible. Vous pouvez définir les pages Démarrer le processus, Tâches, Suivi et Favoris comme première page à afficher lorsque vous vous connectez à l’espace de travail.
 * Les messages et notifications des événements système ne s’affichent pas dans l’espace de travail AEM Forms. Tous les paramètres correspondant aux messages (tels que Durée d’affichage de la notification de message) ne sont pas non plus applicables à l’espace de travail AEM Forms.

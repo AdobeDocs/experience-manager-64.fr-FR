@@ -14,7 +14,7 @@ exl-id: 375e202c-21d4-41f1-a2d5-592ac95c8f25
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ Cela peut servir à évaluer l’ampleur des tâches de développement nécessai
 
 ## Méthode de configuration {#how-to-set-up}
 
-L’outil de détection des motifs est publié séparément sous forme de [module](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l&#39;aide du [Gestionnaire de modules](https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/package-manager.html).
+L’outil de détection des motifs est publié séparément sous forme de [module](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l’aide du [Gestionnaire de modules](https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 ## Utilisation {#how-to-use}
 
@@ -41,7 +41,7 @@ L’outil de détection des motifs est publié séparément sous forme de [modul
 >
 >* augmenter le taux de détection
 >* éviter les ralentissements sur les instances critiques de l’entreprise\
-   >en même temps, il est recommandé de l’exécuter **dans des environnements d’évaluation** qui sont aussi proches que possible des environnements de production sur le plan des applications utilisateur, du contenu et des configurations.
+   >en même temps, il est recommandé de l’exécuter **dans des environnements d’évaluation** qui sont aussi proches que possible des environnements d’exploitation sur le plan des applications utilisateur, du contenu et des configurations.
 
 
 Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’outil de détection des motifs :
@@ -49,11 +49,11 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
 * **Via la console Felix Inventory :**
 
 1. Accédez à la console web d’AEM en accédant à : https://<i></i>serveraddress:serverport/system/console/configMgr
-1. Sélectionnez **État – Outil de détection des motifs**, comme illustré ci-dessous :
+1. Sélectionnez **Statut – Outil de détection des motifs**, comme illustré ci-dessous :
 
-   ![capture d’écran-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
+   ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
-* **Via une interface JSON standard ou une interface en mode texte réactive**
+* **Via une interface JSON standard ou une interface réactive en mode texte**
 
 * **Via une interface de lignes JSON réactive**, qui génère un document JSON distinct dans chaque ligne.
 
@@ -210,7 +210,7 @@ Avec le résultat suivant :
 
 >[!NOTE]
 >
->La méthode recommandée consiste à enregistrer toute la sortie à partir de curl dans le fichier, puis de la traiter via `jq` ou `grep` pour effectuer un filtrage sur le type d’informations.
+>La méthode recommandée consiste à enregistrer toute la sortie à partir du curl dans le fichier, puis de la traiter via `jq` ou `grep` pour effectuer un filtrage sur le type d’informations.
 
 ## Domaine de détection {#scope}
 

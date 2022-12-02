@@ -1,6 +1,6 @@
 ---
 title: Activation des statistiques sur les ressources via DTM
-description: Découvrez comment utiliser Adobe Dynamic Tag Management (DTM) pour activer Assets Insights.
+description: Découvrez comment utiliser la gestion dynamique des balises d’Adobe pour activer Assets Insights.
 contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
@@ -8,19 +8,19 @@ exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
 source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 33%
+ht-degree: 61%
 
 ---
 
 # Activation des statistiques sur les ressources via DTM {#enabling-asset-insights-through-dtm}
 
-La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics. Vous pouvez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser Assets Insights ou utiliser la gestion dynamique des balises pour insérer des balises Assets Insights. Les statistiques sont uniquement prises en charge et fournies pour les images.
+La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics. Vous pouvez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser Assets Insights ou la gestion dynamique des balises pour insérer des balises Assets Insights. Insights n’est pris en charge et fourni que pour les images.
 
 >[!CAUTION]
 >
->Adobe DTM est obsolète au profit de [!DNL Adobe Experience Platform] et atteindra bientôt [fin de vie](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande de [use [!DNL Adobe Experience Platform] pour les informations sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>La gestion dynamique des balises d’Adobe est obsolète et remplacée par [!DNL Adobe Experience Platform]. Elle atteindra bientôt sa [fin de vie](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande d’[utiliser  [!DNL Adobe Experience Platform]  pour Assets Insights](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=fr).
 
-Effectuez les étapes suivantes pour activer Assets Insights via DTM :
+Effectuez ces étapes pour activer Assets Insights grâce à la gestion dynamique des balises:
 
 1. Appuyez/cliquez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configuration des statistiques]**.
 1. [Configurer [!DNL Experience Manager] instance avec le Cloud Service DTM](../sites-administering/dtm.md)
@@ -49,18 +49,18 @@ Effectuez les étapes suivantes pour activer Assets Insights via DTM :
    >[!NOTE]
    >
    >* `AppMeasurement.js` a été supprimé. Il devrait être disponible via l’outil de gestion dynamique des balises Adobe Analytics.
-   >* L’appel à `assetAnalytics.dispatcher.init()` est supprimé. Le système s’attend à ce que la fonction soit appelée une fois le chargement de l’outil de gestion dynamique des balises Adobe Analytics terminé.
+   >* L’appel à `assetAnalytics.dispatcher.init()` est supprimé. La fonction devrait être appelée une fois le chargement de l’outil de gestion dynamique des balises Adobe Analytics terminé.
    >* Selon l’emplacement d’hébergement du dispositif de suivi de la page de statistiques sur les ressources (par exemple AEM, CDN, etc.), l’origine de la source du script peut nécessiter des modifications.
    >* Pour le dispositif de suivi de page hébergé AEM, la source doit pointer vers une instance de publication à l’aide du nom d’hôte de l’instance de Dispatcher.
 
 
-1. Ouvrez [https://dtm.adobe.com](https://dtm.adobe.com). Cliquez sur Aperçu dans la propriété web et cliquez sur Ajouter un outil ou ouvrez un outil Adobe Analytics existant. Lors de la création de l’outil, vous pouvez définir la méthode de configuration sur Automatique.
+1. Ouvrez [https://dtm.adobe.com](https://dtm.adobe.com). Cliquez sur Aperçu dans la propriété web et cliquez sur Ajouter un outil, ou ouvrez un outil Adobe Analytics existant. Pendant la création de l’outil, vous pouvez définir la méthode de configuration sur Automatique.
 
    ![chlimage_1-196](assets/chlimage_1-196.png)
 
-   Sélectionnez des suites de rapports de production/intermédiaires, selon les besoins.
+   Sélectionnez des suites de rapports d’exploitation ou intermédiaires, selon vos besoins.
 
-1. Développer **[!UICONTROL Gestion des bibliothèques]**, et assurez-vous que **[!UICONTROL Charger la bibliothèque à l’emplacement]** est défini sur **[!UICONTROL Haut de page]**.
+1. Développez **[!UICONTROL Gestion de la bibliothèque]** et assurez-vous que l’option **[!UICONTROL Charger la bibliothèque sur]** est définie sur **[!UICONTROL Haut de la page]**.
 
    ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -107,12 +107,12 @@ Effectuez les étapes suivantes pour activer Assets Insights via DTM :
    ```
 
    * La règle de chargement de page dans la gestion dynamique des balises inclut uniquement le code pagetracker.js . Tous les champs `assetAnalytics` sont considérés comme des remplacements des valeurs par défaut. Ils ne sont pas requis par défaut.
-   * Les appels de code `assetAnalytics.dispatcher.init()` après avoir vérifié que `_satellite.getToolsByType('sc')[0].getS()` est initialisé et `assetAnalytics,dispatcher.init` est disponible. Par conséquent, vous pouvez ignorer son ajout à l’étape 11.
-   * Comme indiqué dans les commentaires dans le code de suivi de la page de statistiques (**[!UICONTROL Outils > Ressources > Dispositif de suivi de la page de statistiques]**), lorsque le dispositif de suivi de page ne crée pas une `AppMeasurement` , les trois premiers arguments (RSID, Serveur de suivi et Espace de noms du visiteur) ne sont pas pertinents. Des chaînes vides sont transmises à la place pour mettre ceci en évidence.
+   * Le code appelle `assetAnalytics.dispatcher.init()` après s’être assuré que `_satellite.getToolsByType('sc')[0].getS()` est initialisé et que `assetAnalytics,dispatcher.init` est disponible. Par conséquent, vous pouvez ignorer son ajout à l’étape 11.
+   * Comme indiqué dans les commentaires dans le code du dispositif de suivi de la page Insights (**[!UICONTROL Outils > Ressources > Dispositif de suivi de la page Insights]**), lorsque le dispositif de suivi de la page ne crée pas d’objet `AppMeasurement`, les trois premiers arguments (RSID, Serveur de suivi et Espace de noms du visiteur) ne sont pas pertinents. Des chaînes vides sont transmises à la place pour mettre ceci en évidence.
 
-      Les arguments restants correspondent à ce qui est configuré sur la page Configuration des statistiques (**[!UICONTROL Outils > Ressources > Configuration des statistiques]**).
+      Les arguments restants correspondent à ce qui est configuré sur la page Configuration des statistiques (**[!UICONTROL Outils > Ressources > Configuration d’Insights]**).
 
    * L’objet AppMeasurement est récupéré en interrogeant `satelliteLib` pour tous les moteurs SiteCatalyst disponibles. Si plusieurs balises sont configurées, modifiez l’index du sélecteur de tableau de manière appropriée. Les entrées du tableau sont triées en fonction des outils SiteCatalyst disponibles dans l’interface de gestion dynamique des balises.
 
-1. Enregistrez et fermez la fenêtre Éditeur de code, puis enregistrez les modifications dans la configuration de l’outil.
-1. Dans le **[!UICONTROL Approbations]** , validez les deux validations en attente. La balise DTM est prête à être insérée sur votre page web. Pour plus d’informations sur l’insertion de balises DTM dans des pages web, reportez-vous à la page archivée à propos de [intégration de DTM dans les modèles de page personnalisés](https://web.archive.org/web/20180816221834/https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template).
+1. Enregistrez et fermez la fenêtre Éditeur de code, puis enregistrez les modifications dans la configuration Outil.
+1. Dans l’onglet **[!UICONTROL Approbations]**, validez les deux approbations en attente. La balise DTM est prête à être insérée sur votre page web. Pour plus d’informations sur l’insertion de balises DTM dans des pages web, reportez-vous à la page archivée à propos de [intégration de DTM dans les modèles de page personnalisés](https://web.archive.org/web/20180816221834/https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template).

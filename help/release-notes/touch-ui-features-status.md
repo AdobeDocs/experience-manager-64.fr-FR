@@ -1,5 +1,5 @@
 ---
-title: État des fonctionnalités de l’IU tactile
+title: Statut des fonctionnalités de l’IU tactile
 seo-title: Touch UI Feature Status
 description: Notes de mise à jour spécifiques à l’IU tactile d’Adobe Experience Manager 6.3.
 seo-description: Release notes specific to Adobe Experience Manager 6.3 Touch UI.
@@ -13,11 +13,11 @@ exl-id: e1422581-143b-4fce-976e-e5aa3360e2d0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 64%
+ht-degree: 90%
 
 ---
 
-# État des fonctionnalités de l’IU tactile {#touch-ui-feature-status}
+# Statut des fonctionnalités de l’IU tactile {#touch-ui-feature-status}
 
 >[!CAUTION]
 >
@@ -27,7 +27,7 @@ Depuis la version 6.0, AEM est doté d’une nouvelle interface appelée IU opti
 
 Bien que la plupart des fonctionnalités soient déjà présentes dans l’interface utilisateur optimisée pour les écrans tactiles, il en reste certaines à intégrer, qui le seront dans les prochaines mises à jour.
 
-La liste suivante présente l’état actuel des fonctionnalités mises en oeuvre dans AEM 6.4.
+La liste ci-dessous indique le statut actuel des fonctionnalités implémentées dans AEM 6.4.
 
 Pour des recommandations destinées aux clients qui effectuent une mise à niveau vers AEM 6.4, reportez-vous à la section [Recommendations de l’interface utilisateur pour les clients](/help/sites-deploying/ui-recommendations.md) pour plus d’informations.
 
@@ -44,45 +44,45 @@ Pour des recommandations destinées aux clients qui effectuent une mise à nivea
 ## Légende {#legend}
 
 * **Complète :** la fonctionnalité est entièrement disponible dans l’IU optimisée pour les écrans tactiles.
-* **Principalement**: Cette fonctionnalité est principalement disponible dans l’IU tactile.
+* **Principalement** : la fonctionnalité est principalement disponible dans l’IU optimisée pour les écrans tactiles.
 * **Absente :** la fonctionnalité n’est pas disponible dans l’IU optimisée pour les écrans tactiles. L’IU classique doit être utilisée pour exécuter cette action.
 * **Remplacée :** la fonctionnalité a été remplacée par une nouvelle implémentation qui fonctionne différemment.
 * **Supprimée :** la fonctionnalité n’existe plus dans l’IU optimisée pour les écrans tactiles et elle ne sera pas remplacée.
 
-## État des fonctionnalités : Administration de sites {#feature-status-sites-admin}
+## Statut des fonctionnalités : administration de sites {#feature-status-sites-admin}
 
-Il s’agit d’une liste des fonctionnalités de l’interface utilisateur classique de l’administrateur de site ( `/siteadmin`) a et l’état dans l’interface utilisateur tactile ( `/sites.html`).
+Vous trouverez ci-dessous la liste des fonctionnalités de l’Administration de sites de l’IU classique (`/siteadmin`) et leur statut dans l’IU optimisée pour les écrans tactiles ( `/sites.html`).
 
 <table> 
  <tbody>
   <tr>
    <td><strong>Fonctionnalité<br /> </strong></td> 
-   <td><strong>État<br /> </strong></td> 
+   <td><strong>Statut<br /> </strong></td> 
    <td><strong>Commentaire</strong></td> 
   </tr>
   <tr>
    <td>Navigation dans l’arborescence du site</td> 
-   <td>Terminé<br /> </td> 
-   <td>AEM 6.4 a introduit une <a href="/help/sites-authoring/basic-handling.md#content-tree">arborescence de contenu</a>.</td> 
+   <td>Complète<br /> </td> 
+   <td>AEM 6.4 a introduit un <a href="/help/sites-authoring/basic-handling.md#content-tree">aperçu d’arborescence de contenu</a>.</td> 
   </tr>
   <tr>
-   <td>Démarrer le processus</td> 
-   <td>Terminé<br /> </td> 
+   <td>Démarrer le workflow</td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Créer une page</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Créer un site</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Créer un lancement</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
@@ -92,92 +92,92 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
   </tr>
   <tr>
    <td>Créer un dossier</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Afficher l’état de publication</td> 
+   <td>Afficher le statut de publication</td> 
    <td>Principalement</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Rechercher</td> 
-   <td>Terminé<br /> </td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Copier/coller une page (duplication)</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Déplacer une page</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Publier une page</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Publier une page sans droits de réplication</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Publier ultérieurement</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Publier l’arborescence</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Annuler la publication de page(s)</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Annuler la publication de page(s) sans droits de réplication</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Annuler la publication ultérieurement</td> 
-   <td>Terminé<br /> </td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Supprimer</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Verrouiller/déverrouiller</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Afficher/modifier les propriétés</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Définir les autorisations sur les pages</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Historique des versions</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Restaurer la version</td> 
-   <td>Terminé<br /> </td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -192,12 +192,12 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
   </tr>
   <tr>
    <td>Actions Live Copy (déploiement)</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Afficher les copies de langue</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
@@ -218,20 +218,20 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
  </tbody>
 </table>
 
-## État des fonctionnalités : éditeur de page {#feature-status-page-editor}
+## Statut des fonctionnalités : éditeur de page {#feature-status-page-editor}
 
-Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU classique ( `/cf#`) a et l’état dans la fonction tactile ( `/editor.html`).
+Vous trouverez ci-dessous la liste des fonctionnalités de l’éditeur de page de l’interface utilisateur classique (`/cf#`) et leur statut dans l’IU optimisée pour les écrans tactiles ( `/editor.html`).
 
 <table> 
  <tbody>
   <tr>
    <td><strong>Fonctionnalité</strong></td> 
-   <td><strong>État</strong></td> 
+   <td><strong>Statut</strong></td> 
    <td><strong>Commentaire</strong></td> 
   </tr>
   <tr>
    <td>Modifier les pages web</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
@@ -241,12 +241,12 @@ Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU
   </tr>
   <tr>
    <td>Modifier le contenu importé via Design Importer <br /> </td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Modifier les courriers électroniques</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
@@ -256,47 +256,47 @@ Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU
   </tr>
   <tr>
    <td>Modifier les formulaires</td> 
-   <td>Terminé<br /> </td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Modifier les offres</td> 
-   <td>Terminé<br /> </td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Modifier les modèles de processus<br /> </td> 
+   <td>Modifier les modèles de workflows<br /> </td> 
    <td>Terminé</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>ode : Modifier et prévisualiser</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Aperçu réactif<br /> </td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Mode : Modifier la conception</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Mode : Scaffolding</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Mode : État des Live Copy<br /> </td> 
-   <td>Terminé</td> 
+   <td>Mode : Statut des Live Copy<br /> </td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Ajouter des annotations</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
@@ -321,7 +321,7 @@ Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU
   </tr>
   <tr>
    <td>Verrouiller/déverrouiller la page</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
@@ -331,23 +331,23 @@ Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU
   </tr>
   <tr>
    <td>Annuler la publication de la page</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Copier la page</td> 
+   <td>Copie de la page</td> 
    <td>Supprimé<br /> </td> 
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page">copier les pages</a>.<br /> </td> 
+   <td>Utilisez l’Administration de sites pour <a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page">copier les pages</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Déplacer la page</td> 
    <td>Supprimé</td> 
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">déplacer les pages</a>.<br /> </td> 
+   <td>Utilisez l’Administration de sites pour <a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">déplacer les pages</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Supprimer la page</td> 
    <td>Supprimé</td> 
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/managing-pages.md#deleting-a-page">supprimer les pages</a>.<br /> </td> 
+   <td>Utilisez l’Administration de sites pour <a href="/help/sites-authoring/managing-pages.md#deleting-a-page">supprimer les pages</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Afficher les références</td> 
@@ -357,36 +357,36 @@ Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU
   <tr>
    <td>Journal d’audit</td> 
    <td>Supprimé</td> 
-   <td>Utilisez Administration de sites et <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">ouvrez le rail d’activité</a>.<br /> </td> 
+   <td>Utilisez l’Administration de sites et <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">ouvrez le rail d’activité</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Créer la version</td> 
    <td>Supprimé</td> 
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">créer de nouvelles versions</a>.<br /> </td> 
+   <td>Utilisez l’Administration de sites pour <a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">créer de nouvelles versions</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Restaurer la version</td> 
    <td>Supprimé</td> 
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">restaurer des versions </a>.</td> 
+   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">restaurer des versions</a>.</td> 
   </tr>
   <tr>
    <td>Passer d’un lancement à un autre</td> 
    <td>Supprimé</td> 
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/launches-promoting.md">basculer entre les lancements</a>.<br /> </td> 
+   <td>Utilisez l’Administration de sites pour <a href="/help/sites-authoring/launches-promoting.md">basculer entre les lancements</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Traduire la page</td> 
    <td>Supprimé</td> 
-   <td>Utilisez Administration de sites pour <a href="/help/sites-administering/tc-manage.md">ajouter une page aux projets de traduction</a>.<br /> </td> 
+   <td>Utilisez l’Administration de sites pour <a href="/help/sites-administering/tc-manage.md">ajouter une page aux projets de traduction</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Timewarp (choisissez la date/l’heure et parcourez le site tel qu’il était avant) <br /> </td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Définir les autorisations</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
@@ -396,17 +396,17 @@ Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU
   </tr>
   <tr>
    <td>Outil de recherche de contenu pour les différents types de médias<br /> </td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Liste des composants</td> 
-   <td>Terminé<br /> </td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Copier et coller des composants <br /> </td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
@@ -416,7 +416,7 @@ Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU
   </tr>
   <tr>
    <td>Annuler/rétablir</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
@@ -426,172 +426,172 @@ Il s’agit d’une liste des fonctionnalités de l’éditeur de page de l’IU
   </tr>
   <tr>
    <td>Avec la création automatique de composants, faites glisser le contenu directement dans l’espace réservé parsys<br /> </td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
  </tbody>
 </table>
 
-## État des fonctionnalités : éditeurs de texte, d’image et de tableau {#feature-status-text-table-and-image-editors}
+## Statut des fonctionnalités : éditeurs de texte, d’image et de tableau {#feature-status-text-table-and-image-editors}
 
-Il s’agit d’une liste des fonctionnalités de l’IU classique Texte, Tableau et Éditeur d’image et de l’état de l’IU tactile.
+Vous trouverez ci-dessous la liste des fonctionnalités des éditeurs de texte, d’image et de tableau de l’interface utilisateur classique et leur statut dans l’IU optimisée pour les écrans tactiles.
 
 <table> 
  <tbody>
   <tr>
    <td><strong>Fonctionnalité</strong></td> 
-   <td><strong>État </strong></td> 
+   <td><strong>Statut </strong></td> 
    <td><strong>Commentaire<br /> </strong></td> 
   </tr>
   <tr>
    <td>Éditeur de texte enrichi</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td>Utilisable sur place, dans une boîte de dialogue et en plein écran.</td> 
   </tr>
   <tr>
    <td>Activation/désactivation des modules externes de l’éditeur de texte enrichi</td> 
-   <td>Terminé<br /> </td> 
-   <td>Cette opération peut être effectuée à l’aide de la méthode <a href="/help/sites-authoring/templates.md">Éditeur de modèles</a>.</td> 
+   <td>Complète<br /> </td> 
+   <td>Cette opération peut être effectuée à l’aide de l’<a href="/help/sites-authoring/templates.md">Éditeur de modèles</a>.</td> 
   </tr>
   <tr>
    <td>Utilisation de l’éditeur de texte enrichi pour le texte brut</td> 
-   <td>Terminé<br /> </td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Module externe de l’éditeur de texte enrichi : Liens et ancre</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Table de caractères</td> 
-   <td>Terminé</td> 
+   <td>Module externe de l’éditeur de texte enrichi : table de caractères</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Copier/coller</td> 
-   <td>Terminé</td> 
+   <td>Module externe de l’éditeur de texte enrichi : copier/coller</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Coller à partir de Microsoft Word<br /> </td> 
+   <td>Module externe de l’éditeur de texte enrichi : coller à partir de Microsoft Word<br /> </td> 
    <td>Terminé</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Module externe de l’éditeur de texte enrichi : Chercher et Remplacer</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Formats de texte (gras, ...)</td> 
-   <td>Terminé<br /> </td> 
+   <td>Module externe de l’éditeur de texte enrichi : formats de texte (gras, ...)</td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Module externe de l’éditeur de texte enrichi : Sub &amp; Subscription</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Justifier</td> 
-   <td>Terminé<br /> </td> 
+   <td>Module externe de l’éditeur de texte enrichi : justifier</td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Listes (puce/nombres)</td> 
-   <td>Terminé</td> 
+   <td>Module externe de l’éditeur de texte enrichi : listes (puce/nombres)</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Format de paragraphe</td> 
-   <td>Terminé<br /> </td> 
+   <td>Module externe de l’éditeur de texte enrichi : format de paragraphe</td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Styles de texte</td> 
-   <td>Terminé</td> 
+   <td>Module externe de l’éditeur de texte enrichi : styles de texte</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Éditeur de source (Modifier le HTML)<br /> </td> 
+   <td>Module externe de l’éditeur de texte enrichi : Éditeur de source (Modifier le HTML)<br /> </td> 
    <td>Terminé<br /> </td> 
    <td>Disponible uniquement dans la boîte de dialogue et en plein écran.<br /> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Vérificateur orthographique</td> 
-   <td>Terminé</td> 
+   <td>Module externe de l’éditeur de texte enrichi : vérificateur orthographique</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Tableau (éditeur de tableau incorporé)</td> 
-   <td>Terminé</td> 
+   <td>Module externe de l’éditeur de texte enrichi : tableau (éditeur de tableau incorporé)</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Annuler/rétablir<br /> </td> 
-   <td>Terminé</td> 
+   <td>Module externe de l’éditeur de texte enrichi : annuler/rétablir<br /> </td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe de l’éditeur de texte enrichi : Autorisation des images en ligne</td> 
-   <td>Terminé</td> 
+   <td>Module externe de l’éditeur de texte enrichi : autorisation des images en ligne</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Éditeur de tableau</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td>Utilisable sur place, dans une boîte de dialogue et en plein écran.<br /> </td> 
   </tr>
   <tr>
    <td>Glisser-déposer une image dans une cellule de tableau<br /> </td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td>Utilisable en ligne</td> 
   </tr>
   <tr>
    <td>Éditeur d’image<br /> </td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td>Utilisable sur place, dans une boîte de dialogue et en plein écran.<br /> </td> 
   </tr>
   <tr>
    <td>Activation/désactivation des modules externes IPE</td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td>Il existe désormais une interface utilisateur dans <a href="/help/sites-authoring/templates.md">Éditeur de modèles</a>.</td> 
   </tr>
   <tr>
-   <td>Module externe IPE : Recadrer</td> 
-   <td>Terminé</td> 
+   <td>Module externe IPE : recadrer</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe IPE : Retourner</td> 
-   <td>Terminé<br /> </td> 
+   <td>Module externe IPE : retourner</td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe IPE : Annuler/rétablir</td> 
-   <td>Terminé<br /> </td> 
+   <td>Module externe IPE : annuler/rétablir</td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe IPE : Zone cliquable</td> 
-   <td>Terminé</td> 
+   <td>Module externe IPE : zone cliquable</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe IPE : Rotation</td> 
-   <td>Terminé</td> 
+   <td>Module externe IPE : rotation</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Module externe IPE : Zoom</td> 
-   <td>Terminé<br /> </td> 
+   <td>Module externe IPE : zoom</td> 
+   <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
  </tbody>
 </table>
 
-## État des fonctionnalités : outils {#feature-status-tools}
+## Statut des fonctionnalités : outils {#feature-status-tools}
 
 La liste ci-dessous répertorie divers outils proposés dans l’IU classique et indique leur état dans l’IU optimisée pour les écrans tactiles.
 
@@ -599,7 +599,7 @@ La liste ci-dessous répertorie divers outils proposés dans l’IU classique et
  <tbody>
   <tr>
    <td><strong>Fonctionnalité<br /> </strong></td> 
-   <td><strong>État<br /> </strong></td> 
+   <td><strong>Statut<br /> </strong></td> 
    <td><strong>Commentaire</strong></td> 
   </tr>
   <tr>
@@ -609,27 +609,27 @@ La liste ci-dessous répertorie divers outils proposés dans l’IU classique et
   </tr>
   <tr>
    <td>Boîte de réception des workflows<br /> </td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Configuration de modèle de workflow vers page (<code>/etc/workflow/wcm/templates.html</code>)</td> 
+   <td>Configuration de modèle de workflow en page (<code>/etc/workflow/wcm/templates.html</code>)</td> 
    <td>Absente<br /> </td> 
    <td>Utiliser l’IU classique.</td> 
   </tr>
   <tr>
    <td>Interface utilisateur d’administration du balisage<br /> </td> 
-   <td>Terminé</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>MSM/Centre de contrôle des plans directeurs</td> 
-   <td>Terminé</td> 
+   <td>Centre de contrôle des plans directeurs / MSM</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Interface utilisateur de Blueprint Manager</td> 
-   <td>Terminé</td> 
+   <td>Interface utilisateur du gestionnaire de plans directeurs</td> 
+   <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
@@ -639,7 +639,7 @@ La liste ci-dessous répertorie divers outils proposés dans l’IU classique et
   </tr>
   <tr>
    <td>Interface utilisateur des utilisateurs, groupes et autorisations<br /> </td> 
-   <td>Principalement terminé<br /> </td> 
+   <td>Principalement complète<br /> </td> 
    <td>Pour la modification avancée d’autorisations, utilisez l’interface utilisateur classique.<br /> </td> 
   </tr>
   <tr>

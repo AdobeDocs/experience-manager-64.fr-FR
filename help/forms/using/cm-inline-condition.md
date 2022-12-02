@@ -1,7 +1,7 @@
 ---
 title: Condition intégrée et répétition dans les communications interactives et les lettres
 seo-title: Inline condition and repeat in Interactive Communications and letters
-description: 'La condition intégrée et la répétition dans les communications interactives et les lettres permettent de créer des communications hautement contextuelles et parfaitement structurées. '
+description: La condition intégrée et la répétition dans les communications interactives et les lettres permettent de créer des communications hautement contextuelles et parfaitement structurées.
 seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
 uuid: 16e38929-f81b-4582-9daf-6c756a4390e9
 content-type: reference

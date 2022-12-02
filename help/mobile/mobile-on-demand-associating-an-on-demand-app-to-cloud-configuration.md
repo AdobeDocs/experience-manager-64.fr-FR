@@ -74,7 +74,7 @@ Les étapes suivantes décrivent la configuration d’un lien vers la configurat
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 Une fois que vous avez configuré la configuration cloud pour votre application, reportez-vous aux ressources suivantes pour gérer le contenu :
 

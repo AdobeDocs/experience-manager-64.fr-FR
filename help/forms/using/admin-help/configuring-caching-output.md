@@ -1,5 +1,5 @@
 ---
-title: 'Configuration du cache pour Output '
+title: Configuration du cache pour Output
 seo-title: Configuring caching for Output
 description: Le service Output met en cache les conceptions de formulaire, les fragments et les images. Découvrez comment configurer la mise en cache pour la sortie.
 seo-description: The Output service caches the form designs, fragments and images. Learn how to configure the caching for output.

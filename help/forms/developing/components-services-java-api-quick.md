@@ -1,5 +1,5 @@
 ---
-title: 'Démarrage rapide API Java (SOAP) pour les composants et services '
+title: Démarrage rapide API Java (SOAP) pour les composants et services
 seo-title: Components and Services Java APIQuick Start(SOAP)
 description: Utilisez l’API Java Components and Services Quick Start pour déployer un composant, définir le contexte d’exécution d’un service, désactiver la sécurité des services, démarrer un service, modifier les valeurs de configuration du service et supprimer des composants.
 seo-description: Use the Components and Services Java API Quick Start to deploy a component, set the execution context of a service, disable service security, start a service, modify service configuration values, and remove components.

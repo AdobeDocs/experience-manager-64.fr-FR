@@ -2264,7 +2264,7 @@ Liste des packages de contenu inclus dans AEM 6.4.8.0
 
 * [Notes de mise à jour d’AEM 6.4](../release-notes/release-notes.md)
 * [Page de produits AEM ](https://www.adobe.com/solutions/web-experience-management.html)
-* [Documentation d’AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64.html?lang=fr)
+* [Documentation d’AEM 6.4](https://helpx.adobe.com/fr/support/experience-manager/6-4.html)
 * Abonnement aux [mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 ### Sites restreints {#restricted-sites-new}

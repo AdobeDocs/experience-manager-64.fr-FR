@@ -15,7 +15,7 @@ role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1272'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’ima
 
 Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étapes ci-dessous ne vous présentent qu’une seule méthode.
 
-**Obtention de l’URL d’une ressource**:
+**Obtention de l’URL d’une ressource** :
 
 1. Accédez à la ressource *publiée* dont vous souhaitez copier l’URL du paramètre d’image ou de visionneuse prédéfini, puis appuyez sur la ressource pour l’ouvrir.
 
@@ -102,7 +102,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 * XML
 * ZIP
 
-**Obtention de l’URL d’une ressource statique**:
+**Obtention de l’URL d’une ressource statique** :
 
 1. Accédez à la ressource statique *publiée* dont vous souhaitez copier l’URL et appuyez ensuite dessus pour l’ouvrir.
 
@@ -181,7 +181,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    | Protocole de diffusion vidéo que vous utilisez | Sélecteur de protocole à utiliser |
    |---|---|
-   | HTTP <br> Si vous utilisez HTTP (diffusion vidéo non sécurisée), veillez à remplacer https par http dans la valeur URL du service vidéo que vous avez copiée précédemment. | `public/` |
+   | HTTP   <br> Si vous utilisez le HTTP (diffusion vidéo non sécurisée), assurez-vous de remplacer « https » par « http » dans la valeur d’URL du service vidéo que vous avez copiée précédemment. | `public/` |
    | HTTPS | `public-ssl/` |
 
 1. Copiez le chemin complet de la ressource vidéo dans AEM, tel qu’il est traité par Dynamic Media. Vous aurez besoin de ce chemin d’accès à la ressource vidéo copié dans ces étapes.
@@ -202,7 +202,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media   {#using-http-to-deliver-your-dynamic-media-assets}
+## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 

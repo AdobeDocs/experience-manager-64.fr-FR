@@ -1,5 +1,5 @@
 ---
-title: 'Types de certificats utilisés par les extensions d’Acrobat Reader DC '
+title: Types de certificats utilisés par les extensions d’Acrobat Reader DC
 seo-title: Certificate types used by Acrobat Reader DC extensions
 description: Découvrez les types de certificats utilisés par les extensions Acrobat Reader DC.
 seo-description: Learn about the certificate types used by Acrobat Reader DC extensions.

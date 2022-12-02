@@ -1,6 +1,6 @@
 ---
 title: Rapports sur l’utilisation et le partage de vos ressources numériques.
-description: Des rapports sur vos ressources dans [!DNL Adobe Experience Manager Assets] vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
+description: Des rapports sur vos ressources dans  [!DNL Adobe Experience Manager Assets]  vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 feature: Asset Reports,Asset Management
 role: User,Admin
@@ -8,7 +8,7 @@ exl-id: 6f03ee04-d2e2-47e6-892b-50fad3043a28
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1061'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -28,10 +28,10 @@ Si un rapport est généré, vous êtes averti par un courrier électronique (fa
 
 Pour générer des rapports, assurez-vous que :
 
-* Activer [!UICONTROL Enregistreur d’événements DAM Day CQ] service à partir de **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
+* Activez le service [!UICONTROL Enregistreur d’événement de gestion des ressources numériques Day CQ] à partir de **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**.
 * Sélectionnez les activités ou les événements sur lesquels vous souhaitez créer des rapports. Par exemple, pour générer un rapport sur les ressources téléchargées, sélectionnez [!UICONTROL Ressource téléchargée (TÉLÉCHARGÉE)].
 
-![Activation de la création de rapports de ressources dans la console web](assets/reports-config-day-cq-dam-event-recorder.png)
+![Activation de la création de rapports de ressources dans la console Web](assets/reports-config-day-cq-dam-event-recorder.png)
 
 ## Génération de rapports {#generate-reports}
 

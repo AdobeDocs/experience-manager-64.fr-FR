@@ -1,5 +1,5 @@
 ---
-title: 'Texte d’espace réservé dans AEM Forms '
+title: Texte d’espace réservé dans AEM Forms
 seo-title: Placeholder text in AEM Forms
 description: Le texte d’espace réservé est destiné à aider l’utilisateur à saisir des données lorsque la valeur de la commande est vide. Il peut s’agir d’un exemple de valeur ou une brève description du format attendu.
 seo-description: Placeholder text is intended to aid the user with data entry when the control has no value. It could be a sample value or a brief description of the expected format.

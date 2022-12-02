@@ -13,7 +13,7 @@ exl-id: c63e44e7-cc89-4fa0-8ba4-460d682df601
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1538'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Elles :
 * ne doivent pas être considérées comme une couverture exhaustive ;
 * fournissent des liens vers une documentation détaillée.
 
-Pour obtenir des détails complets sur la création à l’aide d’AEM, voir :
+Pour obtenir des détails complets sur la création dans AEM, consultez :
 
 * [Premières étapes pour les auteurs](/help/sites-authoring/first-steps.md)
 * [Utilisation de l’environnement de création](/help/sites-authoring/author-environment-tools.md)
@@ -293,7 +293,7 @@ Un [accès rapide aux références](/help/sites-authoring/author-environment-too
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Appuyez ou cliquez sur la flèche Haut en bas à droite de la colonne Frise chronologique pour afficher d’autres boutons, y compris **Enregistrer comme version**.
+1. Appuyez ou cliquez sur la flèche Haut en bas à droite de la colonne Chronologie pour afficher d’autres boutons, y compris **Enregistrer comme version**.
 
    ![screen_shot_2018-03-21at161507](assets/screen_shot_2018-03-21at161507.png)
 

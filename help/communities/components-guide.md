@@ -13,7 +13,7 @@ exl-id: 8cdd7b94-b247-4598-bb0f-36c5ec1319ec
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1187'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -46,7 +46,7 @@ Sur l’auteur, pour passer en mode d’édition, insérez l’une des options s
 
    [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
-* IU classique:
+* Interface utilisateur classique :
 
    [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 

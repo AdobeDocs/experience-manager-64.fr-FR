@@ -13,7 +13,7 @@ exl-id: 4817d150-9bfe-4cb9-8f06-6ff4eaaa6f55
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Les *informations d’identification* contiennent les informations de clé priv�
 
 * Les extensions d’Acrobat Reader DC utilisent des informations d’identification pour activer les droits Adobe Reader des documents PDF (voir [Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)).
 * Vous pouvez configurer Rights Management pour afficher les informations d’identification à utiliser dans Acrobat émanant uniquement des émetteurs autorisés (voir [Configuration des paramètres d’affichage de Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)). Le nom commun ou CN (pour Common Name) doit figurer dans le certificat.
-* Le service Signature a accès aux certificats et aux informations d’identification. Pour plus d’informations sur le service Signature, voir le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
+* Le service Signature a accès aux certificats et aux informations d’identification. Pour plus d’informations sur le service Signature, voir le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 **Génération d’une paire de clés**
 
@@ -35,9 +35,9 @@ AEM forms ne propose pas d’option permettant de générer une paire de clés. 
 
 [https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html](https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html)
 
-[https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
+[https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/fr-fr/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
 
-Les types de signature suivants sont pris en charge et peuvent être importés dans AEM Forms :
+Les types de signature suivants sont pris en charge et peuvent être importés dans AEM Forms :
 
 * Signature XML
 * XMLTimeStampToken

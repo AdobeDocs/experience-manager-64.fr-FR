@@ -1,5 +1,5 @@
 ---
-title: '"Didacticiel : Créer des modèles"'
+title: "Didacticiel\_: Créer des modèles"
 seo-title: Create Print and Web templates for Interactive Communication
 description: Créer des modèles d’impression et web pour la communication interactive
 seo-description: Create Print and Web templates for Interactive Communication

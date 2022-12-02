@@ -62,7 +62,7 @@ La suppression du fichier JSP créé automatiquement est due au fait que le fich
    * Sélectionnez **[!UICONTROL Suivant]**
    * Sélectionnez **[!UICONTROL Suivant]**
    * Sélectionnez **[!UICONTROL Suivant]**
-   * **[!UICONTROL Cliquez sur OK]**
+   * Sélectionnez **[!UICONTROL OK]**
 
 
 1. Développez le noeud que vous venez de créer : `/apps/custom/components/comments`
@@ -88,11 +88,11 @@ La suppression du fichier JSP créé automatiquement est due au fait que le fich
       * **Titre**: *Commentaire Alt*
       * **Description**: *Autre style de commentaire*
       * **Super Type**: *social/commons/components/hbs/comments/comment*
-      * **Groupe**: `*.hidden*`
+      * **Groupe** : `*.hidden*`
    * Sélectionnez **[!UICONTROL Suivant]**
    * Sélectionnez **[!UICONTROL Suivant]**
    * Sélectionnez **[!UICONTROL Suivant]**
-   * **[!UICONTROL Cliquez sur OK]**
+   * Sélectionnez **[!UICONTROL OK]**
 
 
 1. Développez le noeud que vous venez de créer : `/apps/custom/components/comments/comment`
@@ -116,7 +116,7 @@ Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 
    * Modifiez la valeur de la variable `data-scf-component` attribute (~line 20) :
 
-      * Origine `social/commons/components/hbs/comments`
+      * De `social/commons/components/hbs/comments`
       * To `/apps/custom/components/comments`
    * Modifiez pour inclure le composant de commentaire personnalisé (~line 75) :
 
@@ -133,7 +133,7 @@ Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 
    * Modifier la valeur de l’attribut data-scf-component (~ ligne 19)
 
-      * Origine `social/commons/components/hbs/comments/comment`
+      * De `social/commons/components/hbs/comments/comment`
       * À `/apps/custom/components/comments/comment`
 
 * Sélectionner `/apps/custom` node

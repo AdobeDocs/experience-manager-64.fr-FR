@@ -13,7 +13,7 @@ exl-id: 1e5172d9-47a3-4d73-b749-166e201f4eef
 source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -25,17 +25,20 @@ Ce document vise à guider les clients dans leur choix d’interface utilisateur
 
 Termes à retenir : 
 
-* **IU (ou IU standard)** Interface utilisateur moderne, introduite avec la version 5.6.0 en tant qu’aperçu de la technologie, puis développée avec les versions suivantes. Elle est basée sur l’expérience utilisateur unifiée pour Adobe Experience Cloud, connue précédemment sous le nom d’interface utilisateur tactile.
+* **IU (ou IU standard)** Interface utilisateur moderne, introduite avec la version 5.6.0 en tant qu’aperçu technologique, puis développée avec les versions suivantes. Elle est basée sur l’expérience utilisateur unifiée pour Adobe Experience Cloud, connue précédemment sous le nom d’interface utilisateur tactile.
 
-* **IU classique** Interface utilisateur basée sur la technologie ExtJS introduite avec CQ 5.1 en 2008.
+* **IU classique**
+Interface utilisateur basée sur la technologie ExtJS introduite avec CQ 5.1 en 2008.
 
-* **L’administrateur du site** Fonctionnalités de gestion de la hiérarchie du site (déplacer, activer, gérer les références) et de création de nouvelles pages.
+* **Administration du site** Fonctionnalités de gestion de la hiérarchie du site (déplacer, activer, gérer les références) et de création de nouvelles pages.
 
-* **Création de pages** Fonctionnalités de modification du contenu d’une page.
+* **Création de pages** Fonctionnalités d’ajout de contenu et de modification du contenu d’une page.
 
-* **Administrateur DAM/Assets** Fonctionnalités de gestion des ressources numériques (y compris les images, les vidéos, les documents et les téléchargements).
+* **Administration de gestion des ressources numériques / de ressources**
+Fonctionnalités de gestion des ressources numériques (y compris les images, les vidéos, les documents et les téléchargements).
 
-* **ContextHub** Fonctionnalités de regroupement des informations sur le visiteur en vue de les utiliser pour différents objectifs. Fournit une interface utilisateur pour simuler des personnes qui visitent le site. Depuis AEM 6.2, ContextHub a remplacé la technologie précédente, ClientContext.
+* **ContextHub**
+Fonctionnalités de regroupement des informations sur le visiteur en vue de les utiliser pour différents objectifs. Fournit une interface utilisateur pour simuler des personnes qui visitent le site. Depuis AEM 6.2, ContextHub a remplacé la technologie précédente, ClientContext.
 
 ## Général {#general}
 
@@ -70,7 +73,7 @@ Voici une liste de recommandations de la gestion du produit pour Adobe Experien
      <li>Configurez l’action « Modifier la page » pour ouvrir l’éditeur de page de l’IU classique. Voir <a href="#selecting-your-ui">Choix de l’interface utilisateur</a>.</li> 
     </ol> <p>Ensuite, lors d’une seconde phase :</p> 
     <ol> 
-     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser la variable <a href="/help/sites-developing/modernization-tools.md">Outils de modernisation d’AEM</a> pour mettre à jour les composants.</li> 
+     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser les <a href="/help/sites-developing/modernization-tools.md">Outils de modernisation AEM</a> pour mettre à jour les composants.</li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -82,7 +85,7 @@ Voici une liste de recommandations de la gestion du produit pour Adobe Experien
      <li>Configurez l’action « Modifier la page » pour ouvrir l’éditeur de page de l’IU classique. Voir <a href="#selecting-your-ui">Choix de l’interface utilisateur</a>.</li> 
     </ol> <p>Ensuite, lors d’une seconde phase :</p> 
     <ol> 
-     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser la variable <a href="/help/sites-developing/modernization-tools.md">Outils de modernisation d’AEM</a> pour mettre à jour les composants.</li> 
+     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser les <a href="/help/sites-developing/modernization-tools.md">Outils de modernisation AEM</a> pour mettre à jour les composants.</li> 
      <li>Configurez ContextHub (le remplacement de ClientContext) et mettez à jour les modèles de pages pour utiliser ContextHub. Notez que le ContextHub a un mode de compatibilité qui permet de transférer les entrepôts ClientContext personnalisés.</li> 
     </ol> </td> 
   </tr> 
@@ -95,17 +98,17 @@ Voici une liste de recommandations de la gestion du produit pour Adobe Experien
 
 ## FAQ {#faq}
 
-Voir l’article de la base de connaissances, [FAQ sur la création dans l’interface utilisateur tactile](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html) pour en savoir plus, notamment sur la planification du déclassement de l’IU classique.
+Voir l’article de la base de connaissances, [FAQ sur la création dans l’interface utilisateur tactile](https://helpx.adobe.com/fr/experience-manager/kb/index/touchui_faq.html) pour en savoir plus, notamment sur la planification du déclassement de l’IU classique.
 
 ## Choix de l’interface utilisateur {#selecting-your-ui}
 
-Voir [Choix de l’interface utilisateur](/help/sites-authoring/select-ui.md) pour plus d’informations sur la configuration de votre système.
+Consultez la section [Choix de l’interface utilisateur](/help/sites-authoring/select-ui.md) pour plus d’informations sur la configuration de votre système.
 
 ## État de l’interface utilisateur optimisée pour les écrans tactiles {#touch-optimized-ui-status}
 
 Pour plus d’informations sur les améliorations apportées à l’interface utilisateur optimisée pour les écrans tactiles dans AEM 6.3 voir la section [Nouveautés](/help/release-notes/release-notes.md#what-s-new) dans les notes de mise à jour.
 
-Pour une présentation complète, voir la page [État des fonctionnalités de l’interface utilisateur optimisée pour les écrans tactiles](/help/release-notes/touch-ui-features-status.md)
+Pour découvrir une présentation complète, consultez la page [Statut des fonctionnalités de l’interface utilisateur optimisée pour les écrans tactiles](/help/release-notes/touch-ui-features-status.md).
 
 ## Ressources d’aide {#resources-to-help}
 
@@ -125,4 +128,4 @@ Pour des informations détaillées de développement :
 
 * [Personnalisation de la création de la page dans l’IU optimisée pour les écrans tactiles](/help/sites-developing/customizing-page-authoring-touch.md) (inclut un exemple de code).
 
-* [Documentation sur l’interface utilisateur Granite](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).
+* [Documentation sur l’interface utilisateur Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).

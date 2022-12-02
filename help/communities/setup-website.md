@@ -92,7 +92,7 @@ Le répertoire /etc/designs contient les images, les scripts et les feuilles de 
 
 1. Dans le volet de l’explorateur, sélectionnez la variable **[!UICONTROL Conceptions]** puis cliquez sur **[!UICONTROL Nouveau > Nouvelle page]**.
 
-   Enter:
+   Enter :
 
    * Titre : **Un environnement de test SCF**
    * Nom : **an-scf-sandbox**

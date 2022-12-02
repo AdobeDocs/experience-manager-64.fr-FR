@@ -45,7 +45,7 @@ Lorsque vous créez un formulaire adaptatif, vous pouvez sélectionner un modèl
    * Associer un modèle XFA pour créer un document d’enregistrement. Assurez-vous que ce modèle XFA associé utilise le même schéma XML que votre formulaire adaptatif.
    * Générer automatiquement un document d’enregistrement
 
-* Aucune
+* Aucun
 
    Permet de créer un formulaire adaptatif sans modèle de formulaire. Le document d’enregistrement est généré automatiquement pour votre formulaire adaptatif.
 

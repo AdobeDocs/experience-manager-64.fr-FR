@@ -14,7 +14,7 @@ exl-id: 357d5f23-3e75-44e3-905f-4efe960858bf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 63%
+ht-degree: 68%
 
 ---
 
@@ -40,17 +40,18 @@ AEM est livré avec divers mécanismes vous permettant de gérer le référentie
 
    Il est utilisé dans le cadre de la surveillance et de la maintenance de votre référentiel.
 
-    Il vous permet d’intervenir et de supprimer les anciennes versions d’un nœud ou d’une hiérarchie de nœuds, en fonction des paramètres suivants :
+   Il vous permet d’intervenir et de supprimer les anciennes versions d’un nœud ou d’une hiérarchie de nœuds, en fonction des paramètres suivants :
 
    * Le nombre maximal de versions à conserver dans le référentiel.
 
       Une fois ce nombre dépassé, la version la plus ancienne est supprimée.
 
-   * L’âge maximal des versions conservées dans le référentiel. 
+   * L’âge maximal des versions conservées dans le référentiel.
+ 
 
-       Lorsque l’âge d’une version dépasse cette valeur, elle est purgée du référentiel. 
+      Lorsque l’âge d’une version dépasse cette valeur, elle est purgée du référentiel. 
 
-* la valeur [Tâche de maintenance de purge de version](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Par conséquent, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
+* La [tâche de maintenance Purge de version](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Ainsi, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
 
 >[!CAUTION]
 >
@@ -60,7 +61,7 @@ AEM est livré avec divers mécanismes vous permettant de gérer le référentie
 
 En plus de la purge explicite via l’outil de purge, le gestionnaire de version peut être configuré pour purger d’anciennes versions lorsque de nouvelles versions sont créées.
 
-Pour installer le gestionnaire de version, créez une configuration pour :
+Pour installer le gestionnaire de versions, créez une configuration pour :
 
 `PID com.day.cq.wcm.core.impl.VersionManagerImpl`
 
@@ -104,11 +105,11 @@ Les options suivantes sont disponibles :
 
 ### Combinaison d’options de conservation {#combining-retention-options}
 
-Les options définissant la manière dont les versions doivent être conservées ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), peut être combiné selon vos besoins.
+Les options qui définissent la manière dont les versions doivent être conservées (`maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) peuvent être combinées en fonction de vos besoins.
 
 Par exemple, en définissant le nombre maximum de versions à conserver ET la version la plus ancienne à conserver :
 
-* paramètre :
+* Configuration :
 
    * `maxNumberVersions` = 7
    * `maxAgeDays` = 30
@@ -124,7 +125,7 @@ Par exemple, en définissant le nombre maximum de versions à conserver ET la ve
 
 Par exemple, en définissant les nombres maximum ET minimum de versions à conserver ET la version la plus ancienne à conserver :
 
-* paramètre :
+* Configuration :
 
    * `maxNumberVersions` = 3
    * `maxAgeDays` = 30

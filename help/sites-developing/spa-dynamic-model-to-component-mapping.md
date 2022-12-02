@@ -13,18 +13,18 @@ exl-id: 2bbbfbaa-b0a1-4f8a-9445-51325d80e368
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
 # Mappage du modèle dynamique avec les composants pour les SPA{#dynamic-model-to-component-mapping-for-spas}
 
-Ce document décrit le fonctionnement du mappage du modèle dynamique avec les composants dans le SDK JavaScript SPA pour AEM.
+Ce document décrit le fonctionnement du mappage du modèle dynamique avec les composants dans le SDK de SPA JavaScript pour AEM.
 
 >[!NOTE]
 >La fonction Éditeur d’application sur une seule page (SPA) requiert AEM Service Pack 2 ou version ultérieure.
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 ## Module ComponentMapping {#componentmapping-module}
 
@@ -34,14 +34,14 @@ Chaque élément présent dans le modèle contient un champ `:type` qui expose u
 
 Pour plus d’informations sur l’analyse des modèles et l’accès des composants front-end au modèle, consultez le document [Plan directeur d’applications sur une seule page (SPA)](/help/sites-developing/spa-blueprint.md).
 
-Voir aussi le package npm : [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
+Consultez également le package npm : [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping).
 
 ## SPA pilotée par un modèle {#model-driven-single-page-application}
 
 Les SPA qui utilisent le SDK JavaScript SPA pour AEM sont pilotées par des modèles :
 
 1. Les composants front-end s’enregistrent eux-mêmes dans le [magasin de mappage de composants](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
-1. Ensuite, le [conteneur](/help/sites-developing/spa-blueprint.md#container), qui a reçu un modèle du [fournisseur de modèles](/help/sites-developing/spa-blueprint.md#the-model-provider), effectue une itération sur son contenu de modèle ( `:items`).
+1. Ensuite, le [conteneur](/help/sites-developing/spa-blueprint.md#container), qui a reçu un modèle du [fournisseur de modèles](/help/sites-developing/spa-blueprint.md#the-model-provider), effectue une itération sur son contenu de modèle (`:items`).
 
 1. Dans le cas d’une page, ses enfants (`:children`) obtiennent d’abord une classe de composants du [mappage des composants](/help/sites-developing/spa-blueprint.md#componentmapping), puis l’instancient.
 

@@ -8,7 +8,7 @@ exl-id: 8e065137-3599-48af-a040-6923b7b5e1d9
 source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 60%
+ht-degree: 71%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 60%
 
 Adobe Experience Manager (AEM) Assets vous permet d’automatiser les workflows de traduction des ressources (y compris les fichiers binaires, les métadonnées et les balises) pour générer des ressources dans d’autres langues à utiliser dans des projets multilingues.
 
-Pour automatiser les processus de traduction, vous intégrez des fournisseurs de services de traduction à [!DNL Experience Manager] et créer des projets pour traduire des ressources dans plusieurs langues. [!DNL Experience Manager] prend en charge les workflows de traduction humaine et automatique.
+Pour automatiser les workflows de traduction, vous intégrez des fournisseurs de services de traduction à [!DNL Experience Manager] et créez des projets pour traduire les ressources dans plusieurs langues. [!DNL Experience Manager] prend en charge les workflows de traduction humaine et automatique.
 
 Traduction humaine : les ressources traduites sont renvoyées et importées dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, les ressources sont automatiquement envoyées entre [!DNL Experience Manager] et le fournisseur de traduction.
 

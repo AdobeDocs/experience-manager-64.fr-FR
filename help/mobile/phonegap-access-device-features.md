@@ -33,6 +33,6 @@ Le code source de chacun de ces composants de l’API d’appareil est : [dispon
 
 Pour plus d’informations sur l’utilisation de chaque API, je vous recommande de jeter un coup d’oeil au [Documentation du module externe Cordova](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html).
 
-## Étapes suivantes {#the-next-steps}
+## Les étapes suivantes {#the-next-steps}
 
 Voir [Suivi des performances de l’application avec Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md).

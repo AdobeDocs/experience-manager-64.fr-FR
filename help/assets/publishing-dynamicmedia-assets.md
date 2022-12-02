@@ -1,6 +1,6 @@
 ---
 title: Publication de ressources Dynamic Media
-description: Comment publier des ressources Dynamic Media, y compris la diffusion HTTP/2 de ces ressources.
+description: Découvrez comment publier des ressources Dynamic Media y compris la diffusion HTTP/2 de ces ressources.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
@@ -11,7 +11,7 @@ role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -31,13 +31,12 @@ Si vous envisagez de publier des ressources vidéo immédiatement après les avo
 
 Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
-Voir aussi [Incorporation de la visionneuse de vidéos dans une page web.](embed-code.md)
+Consultez également la section [Incorporation de la visionneuse de vidéos dans une page web.](embed-code.md)
 
 >[!NOTE]
 >
 >* Pour utiliser l’URL, les ressources doivent être publiées. Si les ressources ne sont pas publiées, la copie et le collage de l’URL ne fonctionnent pas dans un navigateur web.
 >* Les paramètres d’image prédéfinis et les paramètres de visionneuse prédéfinis doivent être activés et publiés pour une diffusion en direct.
-
 >
 
 

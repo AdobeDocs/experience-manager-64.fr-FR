@@ -1,7 +1,7 @@
 ---
 title: Exemples de magasins candidats ContextHub
 seo-title: Sample ContextHub Store Candidates
-description: ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions
+description: ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions.
 seo-description: ContextHub provides several sample store candidates that you can use in your solutions
 uuid: feccd813-6077-4e87-a96e-d451114e5527
 contentOwner: User
@@ -13,7 +13,7 @@ exl-id: 776ceb9f-f835-4dbb-9100-f456a36b6dcd
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -111,7 +111,7 @@ Le magasin utilise une arborescence de données similaire à l’exemple suivant
 
 >[!NOTE]
 >
->Une stratégie de sécurité introduite dans Chrome 50.x requiert que tous les appels liés à la géolocalisation soient effectués via une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, http est utilisé afin de respecter la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
+>Une stratégie de sécurité introduite dans Chrome 50.x requiert que tous les appels liés à la géolocalisation soient effectués via une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, le http est utilisé afin de respecter la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
 
 ## Exemple de magasin candidat contexthub.surferinfo {#contexthub-surferinfo-sample-store-candidate}
 

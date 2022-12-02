@@ -13,7 +13,7 @@ exl-id: e57b7a69-6e25-4066-ad7a-917969cebbe8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '764'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -36,12 +36,11 @@ Les workflows d’entreprise que votre organisation a établis peuvent être rep
 
 >[!NOTE]
 >
->Pour plus d’informations, voir :
+>Pour plus d’informations, consultez :
 >
->* Application et participation aux workflows : [Utilisation des workflows](/help/sites-authoring/workflows.md).
+>* Demande de workflow et participation à des workflows : [Utilisation des workflows](/help/sites-authoring/workflows.md).
 >* Création de modèles de workflows et extension de la fonctionnalité de workflow : [Développement et extension des workflows](/help/sites-developing/workflows.md).
 >* Amélioration des performances des workflows qui utilisent des ressources de serveur significatives : [Traitement de workflows simultanés](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
-
 >
 
 
@@ -50,7 +49,7 @@ Les workflows d’entreprise que votre organisation a établis peuvent être rep
 Les [modèles de workflows](/help/sites-developing/workflows.md#model) dans AEM sont la représentation et la mise en œuvre de processus d’entreprise :
 
 * ils agissent généralement sur les pages ou les ressources pour obtenir un résultat spécifique.
-* Ces pages et/ou ressources sont appelées charge utile de workflow.
+* Ces pages et ressources sont appelées payload de workflow.
 * Les modèles de workflows se composent d’une série d’étapes exécutant une tâche spécifique.
 * La charge utile est transmise d’une étape à l’autre à mesure que le workflow progresse.
 
@@ -58,13 +57,13 @@ Lorsqu’un modèle de workflow est démarré (exécuté), une instance de workf
 
 >[!CAUTION]
 >
->Les étapes exécutées sont celles définies par le modèle de workflow *au moment où l’instance est générée*. Voir [Développement de workflows](/help/sites-developing/workflows.md#model) pour plus de détails.
+>Les étapes exécutées sont celles définies par le modèle de workflow *au moment où l’instance est générée*. Consultez la section [Développement de workflows](/help/sites-developing/workflows.md#model) pour plus de détails.
 
-Les instances de workflow passent par le cycle de vie suivant :
+Les instances de workflows progressent selon le cycle de vie suivant :
 
 1. Le modèle de workflow est lancé et une instance de workflow est créée et exécutée.
 
-   1. La charge utile de l’instance de workflow est identifiée lorsque le modèle est démarré.
+   1. Le payload de l’instance de workflow est identifié lorsque le modèle est démarré.
    1. Concrètement, l’instance est une copie du modèle (au moment de la création).
    1. Les auteurs, les administrateurs ou les services AEM peuvent démarrer des modèles de workflows.
 
@@ -86,7 +85,7 @@ Un utilisateur ou un service exécute les étapes de workflow, selon le type d�
 
 >[!NOTE]
 >
->Si une erreur se produit, la mise en œuvre du service/de l’étape doit gérer le comportement pour un scénario d’erreur. Le moteur de workflow lui-même relance la tâche, puis consigne une erreur et arrête l’’instance.
+>Si une erreur se produit, la mise en œuvre du service/de l’étape doit gérer le comportement pour un scénario d’erreur. Le moteur de workflow lui-même relance la tâche, puis consigne une erreur et arrête l’instance.
 
 ## Statut et actions de workflow {#workflow-status-and-actions}
 
@@ -101,10 +100,10 @@ Les workflows peuvent présenter l’un des statuts suivants :
 
 >[!NOTE]
 >
->Lorsque l’exécution d’une étape de processus génère des erreurs, l’étape s’affiche dans la boîte de réception de l’administrateur et l’état du workflow est **EN COURS**.
+>Lorsque l’exécution d’une étape de processus se traduit par des erreurs, l’étape apparaît dans la boîte de réception de l’administrateur et le statut du workflow est **EN COURS**.
 
 En fonction du statut actuel, vous pouvez effectuer des actions sur les instances de workflows en cours d’exécution lorsque vous devez intervenir dans la progression normale d’une instance de workflow :
 
 * **Suspendre** : arrête provisoirement l’exécution du workflow. Cette suspension est utile dans les cas exceptionnels où vous ne souhaitez pas que le workflow se poursuive (par exemple, pour des raisons de maintenance). Suspendre un workflow redéfinit son statut sur SUSPENDU.
-* **Reprendre**: Redémarre un workflow suspendu au même endroit d’exécution que celui où il a été suspendu, avec la même configuration.
-* **Arrêter**: Met fin à l’exécution du workflow et définit l’état sur **ABORDÉ**. Une instance de workflow abandonnée ne peut pas être redémarrée.
+* **Reprendre** : redémarre un workflow suspendu à partir du point d’exécution auquel il a été suspendu, en utilisant la même configuration.
+* **Arrêter** : arrête l’exécution du workflow et redéfinit son statut sur **ABANDON**. Une instance de workflow abandonnée ne peut pas être redémarrée.

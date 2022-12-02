@@ -14,7 +14,7 @@ exl-id: b8cbc429-b0c3-4f6e-a15f-4aef54733c8e
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1108'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -79,7 +79,7 @@ Pour créer une intégration de traduction qui intègre un connecteur de service
 * Sélectionnez **[!UICONTROL Outils]**.
 * Sélectionner **[!UICONTROL Opérations]**
 * Sélectionner **[!UICONTROL Cloud]**
-* Sélectionner **[!UICONTROL Cloud Services]**
+* Sélectionnez **[!UICONTROL Services cloud]**
 * Faites défiler jusqu’à **[!UICONTROL Intégration de traduction]**
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
@@ -123,10 +123,10 @@ Sélectionnez une catégorie qui décrit le contenu en cours de traduction. La v
 `General.`
 
    * **[!UICONTROL Sélectionnez Un Paramètre Régional...]**
-(Facultatif) Si vous sélectionnez un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue s’affichent dans une conversation globale. Par convention, choisissez la langue de votre choix. [langue de base](sites-console.md#translation) pour le site web. Choix `No Common Store` désactive la traduction globale. Par défaut, la traduction globale est désactivée.
+(Facultatif) Si vous sélectionnez un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue s’affichent dans une conversation globale. Par convention, choisissez la langue locale comme [langue de base](sites-console.md#translation) pour le site web. Choix `No Common Store` désactive la traduction globale. Par défaut, la traduction internationale est désactivée.
 
 * **[!UICONTROL Ressources]** tab : peut laisser comme valeurs par défaut
-* **[!UICONTROL Cliquez sur OK]**
+* Sélectionnez **[!UICONTROL OK]**
 
 #### Activation {#activation}
 

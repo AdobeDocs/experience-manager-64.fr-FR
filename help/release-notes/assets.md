@@ -34,7 +34,7 @@ AEM 6.4 introduit la fonctionnalité Balises intelligentes améliorées basée s
 * Le service de contenu dynamique apprend la taxonomie métier du client et l’utilise pour baliser automatiquement les ressources numériques avec les balises pertinentes pour le client en plus des balises génériques. Il améliore considérablement la visibilité des ressources et réduit le délai de mise sur le marché.
 * Adobe Sensei alimente le service de contenu dynamique, ce qui vous permet d’entraîner l’algorithme de reconnaissance d’image sur votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur les ressources similaires.
 
-Pour utiliser les balises intelligentes améliorées d’AEM Assets, installez le [dernier Service Pack d’AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
+Pour utiliser les balises intelligentes améliorées d’AEM Assets, installez le [dernier Service Pack d’AEM 6.4](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
 
 ## Recherche de traduction dynamique (avec la technologie Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 

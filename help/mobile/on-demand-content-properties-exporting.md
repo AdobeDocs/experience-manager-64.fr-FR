@@ -65,7 +65,7 @@ Le tableau suivant affiche **Propriétés et noeuds de l’application**.
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
-   <td>Date </td>
+   <td>Plage</td>
    <td>Date du dernier chargement des ressources partagées depuis AEM vers AEM Mobile.</td>
   </tr>
   <tr>

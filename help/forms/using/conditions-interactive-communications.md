@@ -1,7 +1,7 @@
 ---
 title: Conditions dans les communications interactives
 seo-title: Conditions in Interactive Communications
-description: 'Création et modification de fragments de condition à utiliser dans Communications interactives - Condition est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont des fragments de texte, de liste et de mise en page.  '
+description: Création et modification de fragments de condition à utiliser dans Communications interactives - Condition est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont des fragments de texte, de liste et de mise en page.
 seo-description: Creating and editing conditions to be used in Interactive Communications
 uuid: 93d69398-aead-4e23-8db3-b3e890477113
 topic-tags: interactive-communications

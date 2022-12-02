@@ -23,7 +23,7 @@ ht-degree: 98%
 >
 >Certaines fonctionnalités de fragment de contenu nécessitent l’application de la fonction [AEM 6.4 Service Pack 2 (6.4.2.0) ou version ultérieure](/help/release-notes/sp-release-notes.md).
 
-Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments.md).
+Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments.md).
 
 Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
 
@@ -35,7 +35,6 @@ En même temps que l’outil d’exportation JSON mis à jour, les fragments de
 >
 >* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
-
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 
@@ -90,7 +89,7 @@ Grâce aux fragments de contenu :
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur les autres fonctionnalités d’édition, voir aussi :
+   >Pour plus d’informations sur les autres fonctionnalités d’édition, consultez aussi :
    >
    >* [Mise en page réactive](/help/sites-authoring/responsive-layout.md)
    >* [Modification du contenu de la page](/help/sites-authoring/editing-content.md)
@@ -134,7 +133,7 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
 
 * **[!UICONTROL Gérer les en-têtes comme leurs propres paragraphes]**
 
-## Connexion rapide à l’éditeur de fragment   {#quick-connection-to-fragment-editor}
+## Connexion rapide à l’éditeur de fragment {#quick-connection-to-fragment-editor}
 
 Vous pouvez ouvrir la source du fragment à modifier (la ressource) à l’aide de l’icône **[!UICONTROL Modifier]** située dans la barre d’outils du composant. Vous pourrez ainsi [modifier et gérer le fragment de contenu](/help/assets/content-fragments.md).
 
@@ -175,7 +174,6 @@ Dans le cas du contenu intermédiaire, plusieurs possibilités vous sont offerte
 >* Les composants intermédiaires occupent une position absolue dans la séquence de composants du flux de fragments. Cette position ne varie pas, même en cas de modification du contenu des paragraphes dans le fragment.\
    >  Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
 >* À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché (bien qu’il soit toujours présent en interne).
-
 >
 
 

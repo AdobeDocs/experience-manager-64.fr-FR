@@ -13,7 +13,7 @@ exl-id: 9a3857fd-4f62-4293-950b-75626e4dcf50
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 82%
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ Avec AEM, vous pouvez intégrer clé en main les produits non Adobe suivants :
 * Extrait de code Analytics générique
 * Microsoft Translator ou autres fournisseurs de traduction par machine
 * Pushwoosh Connection - Notifications push pour applications
-* Salesforce - Logiciel de gestion de la relation client (CRM)
+* Salesforce - Logiciel de CRM et de ventes
 * Silverpop Engage - Automatisation du marketing, courrier électronique, appareils mobiles et réseaux sociaux
 * Twitter - Réseaux sociaux
 * YouTube - Partage de vidéos
@@ -59,9 +59,9 @@ Pour plus d’informations sur l’intégration de votre site AEM et d’ExactTa
 
 ## Intégration à Facebook et Twitter {#integrating-with-facebook-and-twitter}
 
-Facebook et Twitter sont des services de réseau social populaires. L’intégration d’AEM à Facebook et Twitter permet aux entreprises de fournir une option de connexion à Facebook ou Twitter sur les propriétés numériques détenues, puis de personnaliser l’expérience utilisateur en fonction des informations de profil. Les spécialistes du marketing peuvent également combiner des données de profil avec des données provenant de sources supplémentaires (par exemple, un système de gestion de la relation client ou un profil de site web) pour créer une vue unifiée du client.
+Facebook et Twitter sont des services de réseaux sociaux populaires. L’intégration d’AEM à Facebook et Twitter permet aux entreprises de fournir une option de connexion à Facebook ou à Twitter au niveau de leurs propriétés numériques, puis de personnaliser l’expérience utilisateur en fonction des informations de profil. Les spécialistes du marketing peuvent également combiner des données de profil avec des données provenant de sources supplémentaires (par exemple, un système de gestion de la relation client ou un profil de site web) pour créer une vue unifiée du client.
 
-Voir [Connexion au réseau social](/help/communities/social-login.md) pour plus d’informations.
+Consultez la section [Connexion sociale](/help/communities/social-login.md) pour plus d’informations.
 
 ## Intégration à d’autres fournisseurs {#integrating-with-other-providers}
 

@@ -122,7 +122,7 @@ L’ordre des paramètres du tableau indique la préférence de paramètres util
   </tr>
   <tr>
    <td>Aléatoire</td> 
-   <td>Horodatage</td> 
+   <td>Timestamp</td> 
    <td>Pour résoudre les problèmes de mise en cache du navigateur.</td> 
   </tr>
  </tbody>

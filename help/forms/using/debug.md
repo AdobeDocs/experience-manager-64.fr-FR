@@ -1,7 +1,7 @@
 ---
 title: Débogage des formulaires HTML5
 seo-title: Debugging HTML5 forms
-description: 'Ce document présente la marche à suivre pour résoudre divers problèmes bien connus. '
+description: Ce document présente la marche à suivre pour résoudre divers problèmes bien connus.
 seo-description: The document list steps to troubleshoot various known issues.
 uuid: df1835aa-6033-4ecb-97c8-4c3b7b96b943
 contentOwner: robhagat

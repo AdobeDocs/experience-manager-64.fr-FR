@@ -9,13 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 377548fa-987a-4a59-84a3-067a3541b6b2
-source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
+exl-id: 9d6ede9e-7df4-407e-8f2f-67bda86f0f94
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 10%
 
 ---
-
 
 # Suivi des performances de l’application avec Adobe Mobile Analytics{#track-app-performance-with-adobe-mobile-analytics}
 
@@ -108,7 +108,7 @@ Cliquez sur le bouton &quot;Télécharger la configuration de l’application Ad
 
 Maintenant que l’application mobile a accès au fichier ADBMobileConfig.json, elle dispose des connaissances nécessaires pour communiquer à Adobe Analytics et commencer à créer des rapports sur les valeurs de mesures importantes qui vont contribuer à la réussite de vos applications.
 
-## Et après ? {#what-s-next}
+## Prochaines étapes? {#what-s-next}
 
 1. [Expérimenter le développement d’une application AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
 1. [Gérer le contenu d’une application mobile](/help/mobile/phonegap-manage-app-content.md)

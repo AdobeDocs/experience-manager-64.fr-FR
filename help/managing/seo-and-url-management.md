@@ -1,5 +1,5 @@
 ---
-title: Meilleures pratiques d’optimisation pour les moteurs de recherche et de gestion des URL
+title: Bonnes pratiques d’optimisation pour les moteurs de recherche et de gestion des URL
 seo-title: SEO and URL Management Best Practices
 description: Découvrez les meilleures pratiques relatives à l’optimisation pour les moteurs de recherche, ainsi que des recommandations pour les suivre lors d’une mise en œuvre AEM.
 seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
@@ -17,11 +17,11 @@ ht-degree: 99%
 
 ---
 
-# Meilleures pratiques d’optimisation pour les moteurs de recherche et de gestion des URL{#seo-and-url-management-best-practices}
+# Bonnes pratiques d’optimisation pour les moteurs de recherche et de gestion des URL{#seo-and-url-management-best-practices}
 
 L’optimisation pour les moteurs de recherche est devenue une préoccupation essentielle pour de nombreux spécialistes du marketing. En conséquence, les questions d’optimisation pour les moteurs de recherche doivent être traitées pour de nombreux projets AEM.
 
-Le présent document commence par décrire certaines [bonnes pratiques relatives à l’optimisation pour les moteurs de recherche](#seo-best-practices) et explique comment les suivre lors d’une mise en œuvre d’AEM Il approfondit ensuite certaines des [étapes de mise en œuvre plus complexes](#aem-configurations) abordées dans la première section.
+Le présent document commence par décrire certaines [bonnes pratiques relatives à l’optimisation pour les moteurs de recherche](#seo-best-practices) et explique comment les suivre lors d’une mise en œuvre d’AEM. Il approfondit ensuite certaines des [étapes de mise en œuvre plus complexes](#aem-configurations) abordées dans la première section.
 
 ## Bonnes pratiques relatives à l’optimisation pour les moteurs de recherche {#seo-best-practices}
 
@@ -223,7 +223,7 @@ Tout en permettant aux utilisateurs finaux d’interagir avec le nom de la page 
 
 Dans une installation AEM standard :
 
-* pour la configuration OSGi :
+* pour la configuration OSGi:
 
    **Apache Sling Resource Resolver Factory**
 
@@ -235,7 +235,7 @@ Dans une installation AEM standard :
 
    (`resource.resolver.map.location`)
 
-* a pour défaut la valeur:
+* par défaut :
 
    `/etc/map`
 
@@ -392,7 +392,7 @@ Veillez à consulter la section Ressources supplémentaires qui suit pour obteni
 
 ## Ressources supplémentaires {#additional-resources}
 
-Pour plus d’informations, voir les ressources supplémentaires suivantes :
+Pour plus d’informations, consultez les ressources supplémentaires suivantes :
 
 * [Mappage de ressource](/help/sites-deploying/resource-mapping.md)
 * [https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url](https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url)

@@ -61,7 +61,7 @@ Vous trouverez ci-dessous des liens vers des informations essentielles pour les 
 * [Message](essentials-messaging.md)
 * [Éditeur de texte enrichi](rte.md)
 * [Notation et badges](configure-scoring.md)
-* [Rechercher](search-implementation.md)
+* [Recherche](search-implementation.md)
 * [Graphique des réseaux sociaux](essentials-socialgraph.md)
 * [Fournisseur de ressources de stockage](srp-and-ugc.md) `(SRP)`
 

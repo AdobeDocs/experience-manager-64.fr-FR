@@ -1,7 +1,7 @@
 ---
 title: Composants d’AEM Communities
 seo-title: Communities Components
-description: 'Ajout de fonctionnalités de communauté à n’importe quel site AEM '
+description: Ajout de fonctionnalités de communauté à n’importe quel site AEM
 seo-description: Adding community features to any AEM site
 uuid: 676abcda-3021-498d-a6eb-b60004315349
 contentOwner: Chris Bohnert
@@ -66,13 +66,13 @@ Voir aussi le rapport interactif [Guide des composants de communauté](component
 | Message | [Message](configure-messaging.md) |
 | Liste des messages | [Message](configure-messaging.md) |
 | Q&amp;R | [Questions et réponses](working-with-qna.md) |
-| Recherche rapide | [Rechercher](search.md) |
+| Recherche rapide | [Recherche](search.md) |
 | Évaluation | [Évaluation](rating.md) |
 | Questions connexes | [Questions et réponses](working-with-qna.md) |
 | Révisions | [Révisions](reviews.md) |
 | Résumé des révisions (affichage) | [Révisions](reviews.md) |
-| Rechercher | [Rechercher](search.md) |
-| Résultat de la recherche | [Rechercher](search.md) |
+| Recherche | [Recherche](search.md) |
+| Résultat de la recherche | [Recherche](search.md) |
 | Nuage de balises sociales | [Nuage de balises sociales](tagcloud.md) |
 | Vote | [Vote](voting.md) |
 

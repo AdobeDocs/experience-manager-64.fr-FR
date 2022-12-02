@@ -51,7 +51,7 @@ Maintenant, il y a une [modèle de page](initial-app.md#createthepagetemplate), 
 
    Dans le **[!UICONTROL Créer une page]** , saisissez ce qui suit :
 
-   * Titre: `SCF Sandbox Site`
+   * Titre : `SCF Sandbox Site`
    * Nom : `an-scf-sandbox`
    * Sélectionner **[!UICONTROL Modèle SCF Sandbox Play]**
    * Cliquez sur **[!UICONTROL Créer]**
@@ -60,14 +60,14 @@ Maintenant, il y a une [modèle de page](initial-app.md#createthepagetemplate), 
 
 1. Dans le volet de l&#39;explorateur, sélectionnez la page que vous venez de créer, `/Websites/SCF Sandbox Site`, puis cliquez sur **[!UICONTROL Nouveau > Nouvelle page]**:
 
-   * Titre: `SCF Sandbox`
+   * Titre : `SCF Sandbox`
    * Nom : `en`
    * Sélectionner **Modèle SCF Sandbox Play**
    * Cliquez sur **Créer**
 
 1. Dans le volet de l&#39;explorateur, sélectionnez la page que vous venez de créer, `/Websites/SCF Sandbox Site/SCF Sandbox`, puis cliquez sur **[!UICONTROL Nouveau > Nouvelle page]**
 
-   * Titre: `SCF Play`
+   * Titre : `SCF Play`
    * Nom : `play`
    * Sélectionner **[!UICONTROL Modèle SCF Sandbox Play]**
    * Cliquez sur **[!UICONTROL Créer]**

@@ -13,7 +13,7 @@ exl-id: 2df7c08f-db17-4666-ba39-e81cc2e656d7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1075'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Vous pouvez créer une version de votre ressource depuis :
 * le [rail de la frise chronologique](#creating-a-new-version-timeline)
 * l’option [Créer](#creating-a-new-version-create-with-a-selected-resource) (lorsqu’une ressource est sélectionnée).
 
-### Création d’une version – Frise chronologique {#creating-a-new-version-timeline}
+### Création d’une version – Chronologie {#creating-a-new-version-timeline}
 
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -55,7 +55,7 @@ Vous pouvez créer une version de votre ressource depuis :
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Sélectionnez l’option **Créer** dans la barre d’outils.
-1. Une boîte de dialogue s’ouvre. Vous pouvez saisir un **libellé** et un **commentaire** si nécessaire:
+1. Une boîte de dialogue s’ouvre. Vous pouvez saisir un **libellé** et un **commentaire** si nécessaire :
 
    ![screen_shot_2012-02-15at105050am](assets/screen_shot_2012-02-15at105050am.png)
 
@@ -78,7 +78,6 @@ Une fois une version créée, vous pouvez y revenir si nécessaire.
 >* Restaurez la première version, soit 1.0.
 >* Recréez des versions.
 >* Les libellés et les noms de nœud générés sont à présent 1.0.0, 1.0.1, 1.0.2, etc.
-
 >
 
 
@@ -166,4 +165,4 @@ Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutef
 
 >[!CAUTION]
 >
->Timewarp est un outil conçu pour aider les auteurs à comprendre et à créer leur contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.
+>Timewarp est un outil conçu pour aider les auteurs à comprendre et à créer du contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.

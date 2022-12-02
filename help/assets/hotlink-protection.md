@@ -15,13 +15,13 @@ role: Admin,User
 source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 69%
+ht-degree: 81%
 
 ---
 
 # Activation de la protection de lien dynamique dans Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
-On parle de lien dynamique lorsqu’un site web tiers utilise du code HTML pour afficher une image de votre site web. Il utilise votre bande passante chaque fois que l’image est demandée, car le navigateur du visiteur y accède directement depuis votre serveur. Hotlink *protection* est une méthode permettant d’empêcher d’autres sites web d’accéder directement à des images, des CSS ou du code JavaScript sur vos pages web. Ce type de protection contribue à réduire l’utilisation inutile de bande passante sous votre compte Dynamic Media.
+On parle de lien dynamique lorsqu’un site web tiers utilise du code HTML pour afficher une image de votre site web. Il utilise votre bande passante chaque fois que l’image est demandée, car le navigateur du visiteur y accède directement depuis votre serveur. La *protection* de lien dynamique est une méthode qui empêche d’autres sites web d’établir un lien direct vers des images ou du contenu CSS ou javascript figurant sur vos pages web. Ce type de protection contribue à réduire l’utilisation inutile de bande passante sous votre compte Dynamic Media.
 
 [Service clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=fr#support) Vous pouvez configurer un filtre de référent au niveau du réseau de diffusion de contenu afin que le contenu Dynamic Media ne soit diffusé que sur les sites web figurant sur votre liste de sites web autorisés pour le domaine.
 

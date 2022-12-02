@@ -1,7 +1,7 @@
 ---
 title: Package de compatibilité
 seo-title: Compatibility Package
-description: 'L’installation du package de compatibilité sur AEM Forms 6.4 vous permet d’utiliser les actifs de Correspondence Management d’AEM Forms 6.3 et les modèles et pages de formulaires adaptatifs obsolètes '
+description: L’installation du package de compatibilité sur AEM Forms 6.4 vous permet d’utiliser les actifs de Correspondence Management d’AEM Forms 6.3 et les modèles et pages de formulaires adaptatifs obsolètes
 seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.3 and deprecated adaptive forms templates and pages
 uuid: e50b1ff9-c357-422a-8da8-a791ff805317
 contentOwner: gtalwar

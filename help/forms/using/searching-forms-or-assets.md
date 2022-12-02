@@ -65,7 +65,7 @@ Sélectionnez l’une des options suivantes afin d’effectuer des recherches da
 | Il y a un mois | Recherche parmi toutes les ressources qui ont été modifiées au cours du dernier mois. |
 | Il y a un an | Recherche parmi toutes les ressources qui ont été modifiées au cours de l’année écoulée. |
 
-### Etat de la ressource {#asset-status}
+### Statut de la ressource {#asset-status}
 
 Vous pouvez rechercher des ressources en utilisant l’un des états suivants :
 

@@ -1,7 +1,7 @@
 ---
 title: Création d’apparences personnalisées pour les champs de formulaire adaptatif
 seo-title: Create custom appearances for adaptive form fields
-description: 'Personnalisation de l’apparence des composants prêts à l’emploi dans les formulaires adaptatifs. '
+description: Personnalisation de l’apparence des composants prêts à l’emploi dans les formulaires adaptatifs.
 seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
 uuid: 1f2d2ac4-44e1-45f9-a6a0-eb95931b0633
 content-type: reference

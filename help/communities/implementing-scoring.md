@@ -428,7 +428,6 @@ par exemple : https://&lt;server>:&lt;port>/home/users/community/riley/profile.s
 >
 >* Peut faire référence à une instance d’auteur si la variable [Service Tunnel](users.md#tunnel-service) est activé
 >* Peut être un nom obscur et aléatoire - voir [Liste de contrôle de sécurité](../../help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) à propos de l’ID autorisable
-
 >
 
 
@@ -474,7 +473,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 | POST | Un membre crée un événement de calendrier |
 | AJOUTER | commentaires d’un membre sur un événement de calendrier |
 | UPDATE | l’événement ou le commentaire de calendrier du membre est modifié. |
-| DELETE | l’événement ou le commentaire de calendrier du membre est supprimé. |
+| SUPPRIMER | l’événement ou le commentaire de calendrier du membre est supprimé. |
 
 **[Composant Commentaires](comments.md)**
 SocialEvent `topic`= com/adobe/cq/social/comment
@@ -484,7 +483,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | POST | Un membre crée un commentaire |
 | AJOUTER | réponses du membre au commentaire |
 | UPDATE | le commentaire du membre est modifié. |
-| DELETE | le commentaire du membre est supprimé. |
+| SUPPRIMER | le commentaire du membre est supprimé. |
 
 **[Composant Bibliothèque de fichiers](file-library.md)**
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
@@ -494,7 +493,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 | POST | crée un dossier |
 | ATTACH | Le membre charge un fichier |
 | UPDATE | met à jour un dossier ou un fichier |
-| DELETE | supprime un dossier ou un fichier |
+| SUPPRIMER | supprime un dossier ou un fichier |
 
 **[Composant du forum](forum.md)**
 SocialEvent `topic`= com/adobe/cq/social/forum
@@ -504,7 +503,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 | POST | thème de forum de création de membre |
 | AJOUTER | réponses des membres au sujet du forum |
 | UPDATE | Le sujet ou la réponse du forum du membre est modifié |
-| DELETE | La rubrique ou la réponse du forum du membre est supprimée |
+| SUPPRIMER | La rubrique ou la réponse du forum du membre est supprimée |
 
 **[Composant Journal](blog-feature.md)**
 SocialEvent `topic`= com/adobe/cq/social/journal
@@ -514,7 +513,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | POST | Un membre crée un article de blog. |
 | AJOUTER | commentaires d&#39;un membre sur un article de blog |
 | UPDATE | article ou commentaire de blog du membre modifié |
-| DELETE | article ou commentaire de blog du membre supprimé |
+| SUPPRIMER | article ou commentaire de blog du membre supprimé |
 
 **[Composant Q&amp;R](working-with-qna.md)**
 SocialEvent `topic` = com/adobe/cq/social/qna
@@ -526,7 +525,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | UPDATE | Q&amp;R du membre : une question ou une réponse est modifiée |
 | SELECT | la réponse du membre est sélectionnée. |
 | UNSELECT | la réponse du membre est désélectionnée. |
-| DELETE | Q&amp;R du membre : une question ou une réponse est supprimée |
+| SUPPRIMER | Q&amp;R du membre : une question ou une réponse est supprimée |
 
 **[Composant Révisions](reviews.md)**
 SocialEvent `topic`= com/adobe/cq/social/review
@@ -535,7 +534,7 @@ SocialEvent `topic`= com/adobe/cq/social/review
 |---|---|
 | POST | création de la révision par le membre |
 | UPDATE | la révision du membre est modifiée. |
-| DELETE | la révision du membre est supprimée. |
+| SUPPRIMER | la révision du membre est supprimée. |
 
 **[Composant d’évaluation](rating.md)**
 SocialEvent `topic`= com/adobe/cq/social/tally/rating
@@ -609,7 +608,7 @@ Il est possible d’essayer rapidement la notation et la notation à l’aide de
    * Enter `/etc/community/badging/rules/forums-badging`
    * Sélectionner `+`
    * Entrée `/etc/community/badging/rules/comments-badging`
-   * **[!UICONTROL Cliquez sur OK]**
+   * Sélectionnez **[!UICONTROL OK]**
 
 * Ajoutez la propriété scoringRules :
 
@@ -620,7 +619,7 @@ Il est possible d’essayer rapidement la notation et la notation à l’aide de
    * Entrée `/etc/community/scoring/rules/forums-scoring`
    * Sélectionner `+`
    * Entrée `/etc/community/scoring/rules/comments-scoring`
-   * **[!UICONTROL Cliquez sur OK]**
+   * Sélectionnez **[!UICONTROL OK]**
 
 * Sélectionnez **[!UICONTROL Enregistrer tout]**
 
@@ -637,7 +636,7 @@ Vérifiez ensuite que les composants de forum et de commentaires permettent l’
 
    * **Nom** : `allowBadges`
    * **Type** : `Boolean`
-   * **Valeur**: `true`
+   * **Valeur** : `true`
 
 ![chlimage_1-371](assets/chlimage_1-371.png)
 

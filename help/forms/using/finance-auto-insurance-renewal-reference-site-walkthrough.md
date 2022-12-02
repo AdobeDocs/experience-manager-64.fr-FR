@@ -17,7 +17,7 @@ ht-degree: 92%
 
 # Présentation du site de référence de renouvellement de l’assurance automobile We.Finance {#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
-## Prérequis {#pre-requisites}
+## Conditions préalables {#pre-requisites}
 
 Configurez le site de référence comme décrit dans la section [Installation et configuration du site de référence Forms AEM 6.4](/help/forms/using/setup-reference-sites.md).
 

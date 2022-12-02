@@ -11,21 +11,21 @@ exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
 source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
 source-wordcount: '1574'
-ht-degree: 68%
+ht-degree: 79%
 
 ---
 
 # Modèles de ressources {#asset-templates}
 
-Les modèles de ressources sont une classe spéciale de ressources qui facilite la réorientation rapide de contenu visuellement riche pour les médias numériques et imprimés. Un modèle de ressource comprend deux parties : une section de message fixe et une section modifiable.
+Les modèles de ressources correspondent à une catégorie spéciale de ressources qui permet de réutiliser rapidement des contenus riches pour les médias papier et numériques. Un modèle de ressource comprend deux parties : une section de message fixe et une section modifiable.
 
-La section fixe peut comprendre du contenu propriétaire, comme le logo d’une marque ou des informations sur les droits d’auteur, pour lequel la modification n’est pas activée. La section modifiable peut contenir du contenu visuel et textuel dans des champs qui peuvent être modifiés pour personnaliser les messages.
+La section fixe peut comprendre du contenu propriétaire, comme le logo d’une marque ou des informations sur les droits d’auteur, pour lequel la modification n’est pas activée. La section modifiable peut contenir du contenu visuel et textuel dans des champs qui peuvent être modifiés afin de personnaliser le message.
 
 Parce qu’ils permettent de réaliser des modifications limitées tout en garantissant une harmonie d’ensemble, les modèles de ressources sont des blocs de création parfaits pour adapter et diffuser rapidement votre contenu. La réutilisation de contenu permet de réduire les coûts de gestion des canaux papier et numériques. Cela garantit en outre une expérience globale cohérente, quel que soit le canal de diffusion.
 
-En tant que marketeur, vous pouvez stocker et gérer des modèles dans [!DNL Experience Manager] Ressources et utiliser un seul modèle de base pour créer facilement plusieurs expériences d’impression personnalisées. Vous pouvez créer différents types de documents marketing, par exemple, des brochures, des prospectus, des cartes postales, des cartes de visite, etc. pour transmettre de façon claire votre message marketing à vos clients. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Vous pouvez surtout diffuser des expériences à la fois numériques et papier simultanément en toute simplicité et offrir ainsi aux utilisateurs une expérience intégrée cohérente.
+En tant que marketeur, vous pouvez stocker et gérer des modèles dans [!DNL Experience Manager] Ressources et utiliser un seul modèle de base pour créer facilement plusieurs expériences d’impression personnalisées. Vous pouvez créer différents types de dérivés marketing, par exemple, des brochures, des prospectus, des cartes postales, des cartes de visite, etc. pour transmettre de façon claire votre message marketing à vos clients. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Vous pouvez surtout diffuser des expériences à la fois numériques et papier simultanément en toute simplicité et offrir ainsi aux utilisateurs une expérience intégrée cohérente.
 
-Si les modèles de ressources sont pour la plupart des fichiers InDesign, il n’est pas nécessaire de maîtriser InDesign pour réaliser des documents de qualité. Vous n’avez pas besoin de mapper les champs de votre modèle InDesign avec vos champs produit comme cela est nécessaire lors de la création de catalogues. Vous pouvez éditer les modèles en mode WYSIWYG directement depuis l&#39;interface web. Toutefois, pour que l’InDesign traite vos modifications, vous devez d’abord configurer [!DNL Experience Manager] Ressources à intégrer au serveur InDesign.
+Si les modèles de ressources sont pour la plupart des fichiers InDesign, il n’est pas nécessaire de maîtriser InDesign pour réaliser des documents de qualité. Vous n’avez pas besoin de mapper les champs de votre modèle InDesign avec vos champs produit comme cela est nécessaire lors de la création de catalogues. Vous pouvez modifier les modèles en mode WYSIWYG directement depuis l’interface Web. Toutefois, pour que l’InDesign traite vos modifications, vous devez d’abord configurer [!DNL Experience Manager] Ressources à intégrer au serveur InDesign.
 
 La possibilité de modifier les modèles InDesign depuis l’interface web contribue à une meilleure collaboration entre les équipes marketing et créatives tout en réduisant le délai de diffusion des actions de promotion locales.
 
@@ -37,7 +37,7 @@ Avec les modèles de ressources, vous pouvez :
 * Prévisualiser les modifications du modèle
 * Fusionner plusieurs fichiers de modèle pour créer un document multipage
 
-Lorsque vous choisissez un modèle pour votre document, [!DNL Assets] crée une copie du modèle que vous pouvez modifier. Le modèle original est préservé, ce qui garantit que votre signalétique reste intacte et peut être réutilisée pour renforcer la cohérence de la marque.
+Lorsque vous choisissez un modèle pour vos dérivés, [!DNL Assets] crée une copie du modèle qui peut être modifiée. Le modèle original est préservé, ce qui garantit que votre signalétique reste intacte et peut être réutilisée pour renforcer la cohérence de la marque.
 
 Vous pouvez exporter le fichier mis à jour dans le dossier parent aux formats suivants :
 
@@ -82,9 +82,9 @@ Imaginons que vous voulez créer des contenus numériques papier, comme des broc
 
 ## Modification d’un document {#editing-a-collateral}
 
-Vous pouvez modifier un document immédiatement après sa création. Vous pouvez aussi choisir de l’ouvrir depuis la page Modèles ou la page des détails du fichier.
+Vous pouvez modifier un dérivé immédiatement après sa création. Vous pouvez aussi choisir de l’ouvrir depuis la page Modèles ou la page des détails du fichier.
 
-1. Pour ouvrir un document pour le modifier, procédez de l’une des façons suivantes :
+1. Pour ouvrir un dérivé pour le modifier, procédez de l’une des façons suivantes :
 
    * Ouvrez le document marketing (une brochure ici) créé à l’étape 7 de la section [Création d’un document](asset-templates.md#creating-a-collateral).
    * Depuis la page Modèles, accédez au dossier où vous avez placé le document créé, puis cliquez/appuyez sur l’option d’édition rapide depuis la miniature d’un document.
@@ -97,7 +97,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    Vous pouvez utiliser l’éditeur de texte pour modifier le texte à afficher dans le champ de texte. Vous pouvez modifier la taille, le style, la couleur et le type de police au niveau de la balise.
 
-   À l’aide de l’outil de recherche de ressources, vous pouvez parcourir ou rechercher des images dans [!DNL Assets] et remplacez les images modifiables dans le modèle par les images de votre choix.
+   À l’aide de l’outil de recherche de ressources, vous pouvez rechercher des images dans [!DNL Assets] et remplacer les images modifiables du modèle par d’autres que vous aurez choisies.
 
    ![chlimage_1-314](assets/chlimage_1-314.png)
 
@@ -127,7 +127,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-319](assets/chlimage_1-319.png)
 
-   Vous pouvez également rechercher des images à l’aide de mots-clés, de balises ou selon leur état de publication. Vous pouvez parcourir le [!DNL Assets] et accédez à l’emplacement de l’image souhaitée.
+   Vous pouvez également rechercher des images à l’aide de mots-clés, de balises ou selon leur statut de publication. Vous pouvez parcourir le référentiel d’[!DNL Assets] et accéder à l’emplacement de l’image souhaitée.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -143,26 +143,26 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    >[!NOTE]
    >
-   >Les icônes Aperçu et Terminé sont activées uniquement lorsqu’il ne manque aucune icône aux champs d’image modifiables dans le document. S’il manque des icônes dans votre document, c’est parce que [!DNL Experience Manager] ne parvient pas à résoudre les images dans le modèle d’InDesign. En général, [!DNL Experience Manager] ne peut pas résoudre les images dans les cas suivants :
+   >Les icônes Aperçu et Terminé sont activées uniquement lorsqu’il ne manque aucune icône aux champs d’image modifiables dans le document. S’il manque des icônes dans votre document, c’est parce que [!DNL Experience Manager] ne parvient pas à résoudre les images dans le modèle d’InDesign. Généralement, [!DNL Experience Manager] ne peut pas résoudre les images dans les cas suivants :
    >
    >* Les images ne sont pas incorporées dans le modèle d’InDesign sous-jacent.
-   >* Les images ne sont pas liées depuis le système de fichiers local.
+   >* Les images ne sont pas liées depuis le système de fichiers local
 
    >
-   >Pour activer [!DNL Experience Manager] pour résoudre des images, procédez comme suit :
+   >Pour permettre à [!DNL Experience Manager] de résoudre les images, procédez de la façon suivante :
    >
    >* Incorporez les images lorsque vous créez les modèles InDesign (reportez-vous à la section [À propos des liens et des objets graphiques incorporés](https://helpx.adobe.com/fr/indesign/using/graphics-links.html)).
    >* Mont [!DNL Experience Manager] à votre système de fichiers local, puis mappez les icônes manquantes avec les [!DNL Experience Manager] ressources.
 
    >
-   >Pour plus d’informations sur l’utilisation des documents InDesign, voir [Bonnes pratiques relatives à l’utilisation de documents d’InDesign dans [!DNL Experience Manager]](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Pour plus d’informations sur l’utilisation des documents InDesign, voir [Bonnes pratiques relatives à l’utilisation de documents d’InDesign dans [!DNL Experience Manager]](https://helpx.adobe.com/fr/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Pour générer un rendu PDF pour la brochure, sélectionnez l’option Acrobat dans la boîte de dialogue, puis cliquez sur **[!UICONTROL Continuer]**.
 1. Le document est créé dans le dossier où vous avez commencé. Pour afficher les rendus, ouvrez le document et choisissez **[!UICONTROL Rendus]** dans la liste de navigation globale.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
 
-1. Cliquez/appuyez sur le rendu du PDF dans la liste des rendus pour télécharger le fichier du PDF. Ouvrez le fichier PDF pour réviser le document.
+1. Cliquez/appuyez sur le rendu du PDF dans la liste des rendus pour télécharger le fichier du PDF. Ouvrez le fichier PDF pour réviser le dérivé.
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
@@ -187,7 +187,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-328](assets/chlimage_1-328.png)
 
-   Vous pouvez parcourir le [!DNL Assets] référentiel ou collections, puis accédez à l’emplacement des modèles souhaités et sélectionnez-les pour la fusion.
+   Vous pouvez parcourir le référentiel ou les collections d’[!DNL Assets], puis accéder à l’emplacement des modèles souhaités et les sélectionner pour les fusionner.
 
    ![chlimage_1-329](assets/chlimage_1-329.png)
 
@@ -196,11 +196,11 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
    ![chlimage_1-330](assets/chlimage_1-330.png)
 
 1. Cliquez ou appuyez sur **[!UICONTROL Suivant]** dans la barre d’outils.
-1. Dans le **[!UICONTROL Aperçu et réorganisation]** réorganisez les modèles si nécessaire et prévisualisez la sélection des modèles à fusionner. Cliquez/appuyez ensuite sur **[!UICONTROL Suivant]** dans la barre d’outils.
+1. Dans l’écran **[!UICONTROL Aperçu et réorganisation]**, réorganisez les modèles si nécessaire et prévisualisez la sélection de modèles à fusionner. Cliquez/appuyez ensuite sur **[!UICONTROL Suivant]** dans la barre d’outils.
 
    ![chlimage_1-331](assets/chlimage_1-331.png)
 
-1. Dans l’écran Configurer le modèle, indiquez un nom pour le document. Vous pouvez également spécifier les balises que vous considérez appropriées. Pour exporter le résultat au format PDF, sélectionnez l’option **[!UICONTROL Acrobat (.PDF)]**. Par défaut, le document est exporté aux formats JPG et InDesign. Pour modifier la miniature du document multipage, cliquez/appuyez sur **[!UICONTROL Modifier la miniature]**.
+1. Dans l’écran Configurer le modèle, entrez un nom pour le dérivé. Vous pouvez également spécifier les balises que vous considérez appropriées. Pour exporter le résultat au format PDF, sélectionnez l’option **[!UICONTROL Acrobat (.PDF)]**. Par défaut, le document est exporté aux formats JPG et InDesign. Pour modifier la miniature du document multipage, cliquez/appuyez sur **[!UICONTROL Modifier la miniature]**.
 
    ![chlimage_1-332](assets/chlimage_1-332.png)
 
@@ -208,4 +208,4 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas modifier ultérieurement un document fusionné ni l’utiliser pour créer d’autres documents.
+   >Vous ne pouvez pas modifier ultérieurement un dérivé fusionné ni l’utiliser pour créer d’autres dérivés.

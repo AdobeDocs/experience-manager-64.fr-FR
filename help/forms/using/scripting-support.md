@@ -1220,7 +1220,7 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
 
 1. **Fonctions logiques**
 
-   1. Choose()
+   1. Choisissez()
    1. If()
    1. Oneof()
    1. Within()

@@ -13,7 +13,7 @@ exl-id: 26d1dea8-c225-4ef3-8429-bab585341c70
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3045'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ La barre d’outils vous donne accès à de nombreuses options. La disponibilit�
 
    ![](do-not-localize/screen_shot_2018-03-22at111638.png)
 
-### Notification d’état {#status-notification}
+### Notification de statut {#status-notification}
 
 Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-authoring/workflows.md), ces informations s’affichent dans une barre de notification située en haut de l’écran lorsque vous la modifiez.
 
@@ -105,9 +105,9 @@ Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-authoring/
 
 La notification indique le workflow exécuté sur la page. Si l’utilisateur prend part à l’étape actuelle du workflow, des options [affectant l’état du workflow](/help/sites-authoring/workflows-participating.md) et permettant d’obtenir plus d’informations sur le workflow sont également disponibles, à savoir :
 
-* **Terminer** - Ouvre la fenêtre **Terminer l’élément de travail** dialog
+* **Terminer** : ouvre la boîte de dialogue **Terminer l’élément de travail**.
 
-* **Déléguer** - Ouvre la fenêtre **Terminer l’élément de travail** dialog
+* **Déléguer** : ouvre la boîte de dialogue **Terminer l’élément de travail**.
 
 * **Afficher les détails** : ouvre la fenêtre **Détails** du workflow
 
@@ -139,7 +139,7 @@ Vous pouvez ajouter un nouveau composant à l’aide de l’[explorateur de comp
 1. Ouvrez l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser).
 1. Faites glisser le composant jusqu’à la [position requise](#component-placeholder).
 
-1. [Modifiez](#edit-configure-copy-cut-delete-paste) le composant.
+1. [Modifiez le composant.](#edit-configure-copy-cut-delete-paste)
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser 
 
 Vous pouvez également ajouter un nouveau composant à la page en faisant glisser un élément depuis l’[explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
 
-Ceci est valide pour les types de ressources suivants (certains dépendent du système de pages/paragraphes) :
+Cette procédure est valide pour les types de ressources suivants (certains dépendent du système de pages/paragraphes) :
 
 <table> 
  <tbody>
@@ -189,8 +189,8 @@ Ceci est valide pour les types de ressources suivants (certains dépendent du sy
    <td>Produit</td> 
   </tr>
   <tr>
-   <td>Vidéo </td> 
-   <td>Flash</td> 
+   <td>Vidéo</td> 
+   <td>Modèle </td> 
   </tr>
   <tr>
    <td>Fragment de contenu</td> 
@@ -350,7 +350,7 @@ Pour certains types de composants, vous pouvez faire glisser et déposer des él
 | Image | Image |
 | Document | Télécharger |
 | Produit | Produit |
-| Vidéo  | Flash |
+| Vidéo | Modèle  |
 | Fragment de contenu | Fragment de contenu |
 
 ## Modifier (contenu) – Mode Plein écran {#edit-content-full-screen-mode}
@@ -359,7 +359,7 @@ Pour tous les composants, vous pouvez accéder au mode Plein écran (ou le quitt
 
 ![](do-not-localize/chlimage_1-20.png)
 
-Par exemple, le composant **textuel** :
+Par exemple, le composant **Texte** :
 
 ![screen_shot_2018-03-22at121616](assets/screen_shot_2018-03-22at121616.png)
 
@@ -382,7 +382,7 @@ Pour déplacer un composant de paragraphe :
 >
 >Vous pouvez également utiliser la technique du [couper/coller](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) pour déplacer un composant.
 
-## Modification de la mise en page du composant {#edit-component-layout}
+## Modification de la disposition du composant {#edit-component-layout}
 
 Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Disposition](/help/sites-authoring/responsive-layout.md) pour ajuster un composant, vous pouvez sélectionner l’action **Disposition** pour un composant afin d’en modifier la mise en page. Cela vous évite de devoir quitter le mode Modifier, ce qui se traduit par un gain de temps.
 
@@ -410,23 +410,23 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
 
 >[!NOTE]
 >
->L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant, puis cliquez sur un autre composant, la barre d’outils d’édition standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné, les poignées de redimensionnement et la barre d’outils de l’émulateur disparaissent.
+>L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la disposition d’un composant, puis cliquez sur un autre composant, la barre d’outils d’édition standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné, tandis que les poignées de redimensionnement et la barre d’outils de l’émulateur disparaissent.
 >
->Si vous devez modifier la mise en page globale de la page et affecter ainsi plusieurs composants, basculez vers le [mode de mise en page](/help/sites-authoring/responsive-layout.md).
+>Si vous devez modifier la disposition globale de la page et affecter ainsi plusieurs composants, basculez vers le [mode Disposition](/help/sites-authoring/responsive-layout.md).
 
 ## Composants hérités {#inherited-components}
 
-Les composants hérités peuvent être le produit de divers scénarios, notamment :
+Les composants hérités peuvent être le produit de divers scénarios :
 
 * [Gestion de plusieurs sites](/help/sites-administering/msm.md)
-* [Lancements](/help/sites-authoring/launches.md) (quand basé sur une Live Copy).
-* Des composants spécifiques ; par exemple, le système de paragraphes hérité dans Geometrixx.
+* [Lancements](/help/sites-authoring/launches.md) (quand basés sur une Live Copy)
+* Des composants spécifiques ; par exemple, le système de paragraphes hérité dans Geometrixx
 
 Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, cette option est disponible depuis :
 
 * **Live Copy**
 
-   La barre d’outils du composant, si celui-ci est situé sur une page qui fait partie d’une Live Copy ou d’un lancement (basé sur une Live Copy). Par exemple :
+   La barre d’outils du composant, si celui-ci est situé sur une page qui fait partie d’une Live Copy ou d’un lancement (basé sur une Live Copy). Par exemple :
 
    ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
 
@@ -438,7 +438,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, c
 
    ![](do-not-localize/screen_shot_2018-03-22at134417.png)
 
-   L’action de déploiement est également disponible dans le plan directeur ou la source Live Copy :
+   L’action de déploiement est également disponible dans le plan directeur ou la source de Live Copy :
 
    ![](do-not-localize/screen_shot_2018-03-22at134516.png)
 
@@ -452,11 +452,11 @@ Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, c
 
 Si la page est basée sur un [modèle modifiable](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez facilement basculer vers l’[éditeur de modèles](/help/sites-authoring/templates.md#editing-templates-template-authors) en sélectionnant **Éditer le modèle** dans le menu [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information).
 
-Si la page est basée sur une [modèle statique](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez passer à [Mode de conception](/help/sites-authoring/default-components-designmode.md) en utilisant la variable [sélecteur de mode page](/help/sites-authoring/author-environment-tools.md#page-modes) sur la barre d’outils pour activer/désactiver les composants à utiliser sur la page.
+Si la page est basée sur un [modèle statique](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez basculer vers le [mode de création](/help/sites-authoring/default-components-designmode.md) à l’aide du [sélecteur du mode de page](/help/sites-authoring/author-environment-tools.md#page-modes) de la barre d’outils afin d’activer ou de désactiver les composants à utiliser sur la page.
 
 Vous pouvez déterminer facilement le modèle sur lequel la page est basée en sélectionnant cette dernière en mode [Colonnes](/help/sites-authoring/basic-handling.md#column-view) ou [Liste](/help/sites-authoring/basic-handling.md#list-view).
 
-## État de Live Copy {#live-copy-status}
+## Statut de la Live Copy {#live-copy-status}
 
 Le [mode de page État de Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) donne un aperçu rapide de l’état de la live copy et des composants qui sont ou non hérités.
 
@@ -484,7 +484,6 @@ Deux options sont disponibles pour prévisualiser une page :
 >* Les liens dans le contenu sont visibles, mais inaccessibles en mode Édition.
 >* Si vous souhaitez naviguer à l’aide des liens, utilisez l’une des options d’aperçu.
 >* Utilisez le [raccourci clavier](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` pour basculer entre le mode Aperçu et le dernier mode sélectionné.
-
 >
 
 
@@ -508,7 +507,7 @@ Lors de la création, le mode Aperçu est accessible par l’intermédiaire de l
 
 L’option **Afficher comme publié(e)** est disponible dans le menu [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information). La page s’affiche sur un nouvel onglet, actualise le contenu et affiche la page telle qu’elle se présentera dans l’environnement de publication.
 
-## Verrouillage d’une page    {#locking-a-page}
+## Verrouillage d’une page  {#locking-a-page}
 
 AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cela s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
 
@@ -558,13 +557,13 @@ Les icônes suivantes permettent d’annuler ou de rétablir une opération. Cel
 
 >[!NOTE]
 >
->Le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` est également disponible pour annuler les actions de modification de page.
+>Le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` est également disponible pour annuler les actions d’édition de la page.
 >
->Raccourci clavier `Ctrl-Y` est également disponible pour rétablir les actions d’édition de page.
+>Le raccourci clavier `Ctrl-Y` est également disponible pour annuler les actions d’édition de la page.
 
 >[!NOTE]
 >
->Voir [Annulation et rétablissement des modifications de page : la théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
+>Consultez [Annulation et rétablissement des modifications de page : la théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
 
 ## Annulation et rétablissement des modifications de page : la théorie {#undoing-and-redoing-page-edits-the-theory}
 
@@ -585,7 +584,6 @@ Les commandes Annuler et Rétablir fonctionnent de la même manière que dans le
 >* Rétablir des opérations pour autant qu’aucune modification de page n’ait été effectuée depuis la dernière utilisation de la commande Annuler.
 >* Annuler jusqu’à 20 opérations de modification (paramètre par défaut).
 >* Vous pouvez également utiliser les [raccourcis clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) pour annuler et rétablir des opérations.
-
 >
 
 

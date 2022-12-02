@@ -32,7 +32,7 @@ Cela inclut l’utilisation de ressources, de contenu de site, de contenu CaS (e
 
 Content Services fournit trois types principaux de contenu :
 
-1. **Ressources**
+1. **Assets**
 1. **Contenu HTML compressé (HTML/CSS/JS)**
 1. **Contenu indépendant des canaux**
 

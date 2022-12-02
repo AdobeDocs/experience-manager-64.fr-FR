@@ -1,5 +1,5 @@
 ---
-title: 'Balisage des ressources d’activation '
+title: Balisage des ressources d’activation
 seo-title: Tagging Enablement Resources
 description: Le balisage des ressources d’activation permet de filtrer les ressources et les parcours de formation lorsque les membres parcourent les catalogues.
 seo-description: Tagging of enablement resources allows for filtering of resources and learning paths as members browse catalogs

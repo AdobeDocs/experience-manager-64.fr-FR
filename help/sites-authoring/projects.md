@@ -13,7 +13,7 @@ exl-id: 70a70f56-1d33-4d8a-984a-a3e6f8deedeb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1374'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -62,8 +62,8 @@ Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles
 * Liens
 * Informations sur le projet
 * Équipe
-* Pages d’entrée
-* Courriels
+* Pages de destinations
+* E-mails
 * Workflows
 * Lancements
 * Tâches
@@ -138,7 +138,7 @@ Vous pouvez ajouter et supprimer des membres de l’équipe. De plus, vous pouve
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-### Pages d’entrée {#landing-pages}
+### Pages de destinations {#landing-pages}
 
 La mosaïque **Pages d’entrée** vous permet de demander une nouvelle page d’entrée.
 
@@ -146,9 +146,9 @@ La mosaïque **Pages d’entrée** vous permet de demander une nouvelle page d�
 
 Ce workflow est décrit à la section [Création d’un workflow de page d’entrée](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow).
 
-### Courriels {#emails}
+### E-mails {#emails}
 
-La mosaïque **Courriels** permet de gérer les demandes de courrier électronique. Elle lance le workflow de demande de courrier électronique.
+La mosaïque **Courriels** permet de gérer les demandes de courrier électronique. Elle lance le workflow de demande d’e-mail.
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
@@ -192,9 +192,9 @@ En fonction du modèle sélectionné, plusieurs options s’offrent à vous, not
 Différents rôles utilisateur sont définis dans un modèle de projet et utilisés pour deux principales raisons :
 
 1. Autorisations. Les rôles utilisateur peuvent faire partie de l’une des trois catégories répertoriées : Observateur, Éditeur, Propriétaire. Par exemple, un photographe ou un rédacteur aura les mêmes privilèges qu’un éditeur. Les autorisations déterminent ce que les utilisateurs peuvent faire avec le contenu d’un projet.
-1. Workflows. Les workflows déterminent l’utilisateur associé à telles ou telles tâches d’un projet. Les tâches peuvent être associées à un rôle de projet. Par exemple, une tâche peut être attribuée à des photographes, de sorte que tous les membres de l’équipe disposant du rôle Photographe se la voient attribuer.
+1. Workflows. Les workflows déterminent les tâches affectées à un projet. Les tâches peuvent être associées à un rôle de projet. Par exemple, une tâche peut être attribuée à des photographes, de sorte que tous les membres de l’équipe disposant du rôle Photographe se la voient attribuer.
 
-Pour vous permettre de gérer les autorisations de sécurité et de contrôle, tous les projets prennent en charge les rôles par défaut suivants :
+Pour vous permettre de gérer les autorisations de sécurité et de contrôle, tous les projets prennent en charge les rôles par défaut suivants:
 
 <table> 
  <tbody> 

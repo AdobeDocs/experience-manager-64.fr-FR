@@ -13,7 +13,7 @@ exl-id: 7f2fcebb-1769-481a-b4df-b891053b08b6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '696'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -158,6 +158,6 @@ Vous pouvez définir des points d’arrêt n’importe où dans votre source. Lo
 >
 >Pour afficher les valeurs des variables, dans la méthode actuelle, pointez avec la souris.
 
-## Étapes suivantes {#the-next-steps}
+## Les étapes suivantes {#the-next-steps}
 
 Une fois que vous avez appris à propos du développement d’applications avec l’interface de ligne de commande de PhoneGap, voir [Accès aux fonctionnalités du périphérique](/help/mobile/phonegap-access-device-features.md).

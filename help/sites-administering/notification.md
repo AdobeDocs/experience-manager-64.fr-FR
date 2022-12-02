@@ -1,5 +1,5 @@
 ---
-title: Configuration des notifications électroniques
+title: Configuration des notifications par e-mail
 seo-title: Configuring Email Notification
 description: Découvrez comment configurer les notifications électroniques dans AEM.
 seo-description: Learn how to configure Email Notification in AEM.
@@ -13,11 +13,11 @@ exl-id: ea12035c-09b6-4197-ab23-c27fe71e7432
 source-git-commit: 3a206c2fa8c18876b6e1481e2feb86857b5219c4
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
-# Configuration des notifications électroniques{#configuring-email-notification}
+# Configuration des notifications par e-mail{#configuring-email-notification}
 
 AEM envoie des notifications aux utilisateurs qui :
 
@@ -29,51 +29,51 @@ AEM envoie des notifications aux utilisateurs qui :
 Conditions préalables :
 
 * L’utilisateur doit disposer d’une adresse électronique valide définie dans son profil.
-* Le **Service de messagerie Day CQ** doit être correctement configuré.
+* Le **Service de messagerie Day CQ** doit être correctement configuré.
 
 Lorsque l’utilisateur est averti, il reçoit un courrier électronique dans la langue définie dans son profil. Chaque langue possède son propre modèle, qui peut être personnalisé. De nouveaux modèles de courrier électronique peuvent être ajoutés pour de nouvelles langues.
 
 >[!NOTE]
 >
->Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
+>Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
 ## Configuration du service de messagerie {#configuring-the-mail-service}
 
-Pour qu’AEM puisse envoyer des courriers électroniques, le **service de messagerie Day CQ** doit être correctement configuré. Vous pouvez afficher la configuration dans la console Web. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
+Pour qu’AEM puisse envoyer des courriers électroniques, le **service de messagerie Day CQ** doit être correctement configuré. Vous pouvez afficher la configuration dans la console Web. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
 Les contraintes suivantes s’appliquent :
 
-* Le **port de serveur SMTP** doit être le port 25 ou supérieur.
+* Le **port de serveur SMTP** doit être le port 25 ou un port supérieur.
 
-* Le **Nom d’hôte du serveur SMTP** ne doit pas être vide.
+* Le **nom d’hôte de serveur SMTP** ne doit pas être vide.
 * L’**adresse « De »** ne doit pas être vide.
 
-Pour résoudre plus facilement un problème avec le **service de messagerie Day CQ**, vous pouvez examiner les journaux du service :
+Pour résoudre plus facilement un problème avec le **service de messagerie Day CQ**, vous pouvez examiner les journaux du service :
 
 `com.day.cq.mailer.DefaultMailService`
 
-La configuration ressemble à ce qui suit dans la console Web :
+La configuration ressemble à ce qui suit dans la console web :
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
-## Configuration du canal de notification électronique {#configuring-the-email-notification-channel}
+## Configuration du canal de notification par e-mail {#configuring-the-email-notification-channel}
 
-Lorsque vous vous abonnez à des notifications d’événement de page ou de forum, l’adresse électronique De est définie sur `no-reply@acme.com` par défaut. Vous pouvez modifier cette valeur en configurant le service **Notification par courrier électronique** dans la console Web.
+Lorsque vous vous abonnez à des notifications d’événement de page ou de forum, l’adresse électronique De est définie sur `no-reply@acme.com` par défaut. Vous pouvez modifier cette valeur en configurant le service **Notification par e-mail** dans la console web.
 
-Pour configurer l’adresse électronique De, ajoutez un nœud `sling:OsgiConfig` au référentiel. Procédez comme suit pour ajouter le nœud directement avec CRXDE Lite :
+Pour configurer l’adresse électronique De, ajoutez un nœud `sling:OsgiConfig` au référentiel. Procédez comme suit pour ajouter le nœud directement avec CRXDE Lite :
 
-1. Dans CRXDE Lite, ajoutez un dossier nommé `config` sous votre dossier d’application.
-1. Dans le dossier de configuration, ajoutez un noeud nommé :
+1. Dans CRXDE Lite, ajoutez un dossier nommé `config` sous votre dossier d’application.
+1. Dans le dossier de configuration, ajoutez un nœud nommé :
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` de type `sling:OsgiConfig`
 
-1. Ajouter un `String` au noeud nommé `email.from`. Pour la valeur, indiquez l’adresse électronique que vous souhaitez utiliser.
+1. Ajoutez une propriété `String` au nœud nommé `email.from`. Pour la valeur, indiquez l’adresse électronique que vous souhaitez utiliser.
 
 1. Cliquez sur **Enregistrer tout**.
 
 Utilisez la procédure suivante pour définir le nœud dans vos dossiers sources de module de contenu :
 
-1. Dans votre `jcr_root/apps/*app_name*/config folder`, créez un fichier nommé `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
+1. Dans votre `jcr_root/apps/*app_name*/config folder`, créez un fichier nommé `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`.
 
 1. Ajoutez le fichier XML suivant pour représenter le nœud :
 
@@ -115,11 +115,11 @@ footer=\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### Personnalisation des modèles de courrier électronique pour la notification de page {#customizing-email-templates-for-page-notification}
+#### Personnalisation des modèles d’e-mail pour la notification de page {#customizing-email-templates-for-page-notification}
 
-Pour personnaliser le modèle de courrier électronique en anglais en vue de la notification de page :
+Pour personnaliser le modèle d’e-mail en anglais en vue de la notification de page :
 
-1. Dans CRXDE, ouvrez le fichier :
+1. Dans CRXDE, ouvrez le fichier :
 
    `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
@@ -142,9 +142,9 @@ Le modèle doit avoir le format suivant :
 * `${userFullName}`, le nom complet de l’utilisateur ayant déclenché l’événement.
 
 * `${userId}`, l’ID de l’utilisateur ayant déclenché l’événement.
-* `${modifications}`, décrit le type de l’événement de page et le chemin de page au format suivant :
+* `${modifications}`, le type de l’événement de page et le chemin de page au format suivant :
 
-   &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
+   &lt;page event type> => &lt;page path>
 
    Par exemple :
 
@@ -173,11 +173,11 @@ footer=\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### Personnalisation des modèles de courrier électronique pour les notifications de forum {#customizing-email-templates-for-forum-notification}
+#### Personnalisation des modèles d’e-mail pour les notifications de forum {#customizing-email-templates-for-forum-notification}
 
-Pour personnaliser le modèle de courrier électronique en anglais en vue de la notification de forum :
+Pour personnaliser le modèle d’e-mail en anglais en vue de la notification de forum :
 
-1. Dans CRXDE, ouvrez le fichier :
+1. Dans CRXDE, ouvrez le fichier :
 
    `/etc/notification/email/default/com.day.cq.collab.forum/en.txt`
 
@@ -193,9 +193,9 @@ Le modèle doit avoir le format suivant :
  footer=<text_4>
 ```
 
-Où `<text_x>` peut être un mélange de texte statique et de variables de chaîne dynamiques.
+`<text_x>` pouvant combiner du texte statique et des variables de chaînes dynamiques.
 
-Les variables suivantes peuvent être utilisées dans le modèle de courrier électronique pour les notifications de forum :
+Les variables suivantes peuvent être utilisées dans le modèle d’e-mail pour les notifications de forum :
 
 * `${time}`, la date et l’heure de l’événement.
 
@@ -230,9 +230,9 @@ This is an automatically generated message. Please do not reply.
 
 #### Personnalisation des modèles de courrier électronique pour la notification de workflow {#customizing-email-templates-for-workflow-notification}
 
-Pour personnaliser le modèle de courrier électronique en anglais en vue de la notification d’événement de workflow :
+Pour personnaliser le modèle d’e-mail en anglais en vue de la notification d’événement de workflow :
 
-1. Dans CRXDE, ouvrez le fichier :
+1. Dans CRXDE, ouvrez le fichier :
 
    `/libs/settings/workflow/notification/email/default/en.txt`
 
@@ -250,18 +250,18 @@ subject=<text_1>
 
 >[!NOTE]
 >
->Où `<text_x>` peut être un mélange de texte statique et de variables de chaîne dynamiques. Chaque ligne d’une `<text_x>` doit se terminer par une barre oblique inverse ( `\`), sauf pour la dernière instance, lorsque l’absence de la barre oblique inverse indique la fin de la variable `<text_x>` variable string .
+>`<text_x>` pouvant combiner du texte statique et des variables de chaînes dynamiques. Chaque ligne d’un élément `<text_x>` doit se terminer par une barre oblique inverse (`\`), à l’exception de la dernière instance, lorsque l’absence de la barre oblique inverse indique la fin de la variable de chaîne `<text_x>`.
 >
->Vous trouverez plus d’informations sur le format des modèles dans la méthode [javadocs of the Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
+>Vous trouverez plus d’informations sur le format des modèles dans les [javadocs de la méthode Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
 
-La méthode `${payload.path.open}` affiche le chemin d’accès à la charge utile de l’élément de travail. Par exemple, pour une page dans Sites , puis `payload.path.open` serait similaire à `/bin/wcmcommand?cmd=open&path=…`.; sans le nom du serveur, c’est pourquoi le modèle ajoute `${host.prefix}`.
+La méthode `${payload.path.open}` révèle le chemin d’accès au payload de l’élément de travail. Par exemple, pour une page dans Sites, `payload.path.open` serait similaire à `/bin/wcmcommand?cmd=open&path=…`.Sans le nom de serveur, raison pour laquelle le modèle fait précéder ceci de `${host.prefix}`.
 
-Les variables suivantes peuvent être utilisées dans le modèle de courrier électronique :
+Les variables suivantes peuvent être utilisées dans le modèle d’e-mail :
 
 * `${event.EventType}`, type de l’événement
 * `${event.TimeStamp}`, date et heure de l’événement
 * `${event.User}`, utilisateur ayant déclenché l’événement
-* `${initiator.home}`, chemin d’accès au noeud de l’initiateur
+* `${initiator.home}`, chemin d’accès au nœud de l’initiateur
 
 * `${initiator.name}`, nom de l’initiateur
 
@@ -272,36 +272,36 @@ Les variables suivantes peuvent être utilisées dans le modèle de courrier él
 * `${participant.email}`, adresse électronique du participant
 * `${participant.name}`, nom du participant
 * `${participant.familyName}`, nom de famille du participant
-* `${participant.id}`, id du participant
-* `${participant.language}`, la langue du participant
-* `${instance.id}`, ID de workflow
-* `${instance.state}`, état du workflow
+* `${participant.id}`, ID du participant
+* `${participant.language}`, langue du participant
+* `${instance.id}`, ID du workflow
+* `${instance.state}`, statut du workflow
 * `${model.title}`, titre du modèle de workflow
 * `${model.id}`, ID du modèle de workflow
 
 * `${model.version}`, version du modèle de workflow
-* `${payload.data}`, la charge utile
+* `${payload.data}`, payload
 
 * `${payload.type}`, type de payload
-* `${payload.path}`, chemin d’accès de la payload
+* `${payload.path}`, chemin d’accès au payload
 * `${host.prefix}`, préfixe hôte, par exemple, http://localhost:4502
 
 ### Ajout d’un modèle de courrier électronique pour une nouvelle langue {#adding-an-email-template-for-a-new-language}
 
 Pour ajouter un modèle pour une nouvelle langue :
 
-1. Dans CRXDE, ajoutez un fichier `<language-code>.txt` ci-dessous :
+1. Dans CRXDE, ajoutez un fichier `<language-code>.txt` ci-dessous :
 
-   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : pour les notifications de page
-   * `/etc/notification/email/default/com.day.cq.collab.forum` : pour les notifications de forum
-   * `/libs/settings/workflow/notification/email/default` : pour les notifications de workflow
+   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : pour les notifications de page
+   * `/etc/notification/email/default/com.day.cq.collab.forum` : pour les notifications de forum
+   * `/libs/settings/workflow/notification/email/default` : pour les notifications de workflow
 
 1. Adaptez le fichier à la langue.
 1. Enregistrez les modifications.
 
 >[!NOTE]
 >
->Le `<language-code>` utilisé comme nom de fichier pour le modèle de courrier électronique doit être un code de langue en minuscules de deux lettres reconnu par AEM. Pour les codes de langue, AEM s’appuie sur la norme ISO-639-1.
+>Le `<language-code>` utilisé comme nom de fichier du modèle d’e-mail doit être un code de langue à deux lettres en minuscules reconnu par AEM. Pour les codes de langue, AEM s’appuie sur la norme ISO-639-1.
 
 ## Configuration des notifications électroniques d’AEM Assets {#assetsconfig}
 

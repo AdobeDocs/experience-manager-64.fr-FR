@@ -1,7 +1,7 @@
 ---
 title: Exemples de code
 seo-title: Code Samples
-description: L’équipe Adobe Consulting Services a établi une série d’exemples de code AEM.
+description: L’équipe Adobe Consulting Services a établi une série d’exemples de code AEM
 seo-description: The Adobe Consulting Services Team has generated a series of AEM code samples
 uuid: 16f23fa6-5a3c-4697-87de-86db37b3ec1b
 contentOwner: User
@@ -13,15 +13,15 @@ exl-id: 20f3c5d6-0f70-4b66-9e43-be1709dc8eb6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 70%
+ht-degree: 92%
 
 ---
 
 # Exemples de code{#code-samples}
 
-L’équipe Adobe Consulting Services a établi une série d’exemples de code AEM. Ces exemples sont des fragments de code bien commentés destinés à aider les développeurs AEM à comprendre les principaux éléments constitutifs d’AEM. Les exemples sont disponibles ici : [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
+L’équipe Adobe Consulting Services a établi une série d’exemples de code AEM. Ces exemples sont des fragments de code bien commentés destinés à aider les développeurs AEM à comprendre les principaux éléments constitutifs d’AEM. Les exemples sont disponibles à l’adresse suivante : [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-Tutoriel en plusieurs parties conçu pour les développeurs qui découvrent AEM des sujets fondamentaux tels que la configuration de projet, les composants principaux, les modèles modifiables, les bibliothèques clientes et le développement de composants : [Prise en main d’AEM Sites - Tutoriel WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+Tutoriel en plusieurs parties conçu pour les développeurs qui découvrent AEM et traitant de thèmes tels que la configuration de projets, les composants principaux, les modèles modifiables, les bibliothèques clientes et le développement de composants : [Prise en main d’AEM Sites – Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
 
 L’équipe Adobe AEM Community crée des articles de procédure à l’intention des développeurs. Ces articles peuvent être consultés [ici](https://helpx.adobe.com/fr/experience-manager/topics/how-to.html).
 

@@ -15,7 +15,7 @@ role: User
 source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
 source-wordcount: '2146'
-ht-degree: 78%
+ht-degree: 82%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 78%
 
 Les visionneuses d’images offrent aux utilisateurs une expérience de visionnage intégrée en leur permettant d’afficher différentes vues d’un élément en cliquant sur une miniature. Les visionneuses d’images permettent de présenter différentes vues d’un élément. Elles offrent des outils de zoom afin d’examiner les images de plus près.
 
-Les visionneuses d’images sont désignées par une bannière comportant le mot **[!UICONTROL VISIONNEUSE D’IMAGES]**. En outre, si la visionneuse d’images est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
+Les visionneuses d’images sont désignées par une bannière comportant le mot **[!UICONTROL VISIONNEUSE D’IMAGES]**. En outre, si la visionneuse d’images est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
 
 ![chlimage_1-339](assets/chlimage_1-339.png)
 
@@ -37,12 +37,12 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](managing-assets-touch-ui.md).
 
-Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
+Lorsque vous créez un ensemble d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
 
 | Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
 | Nombre de ressources en double par ensemble | Aucun doublon | 20 |
-| Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
+| Nombre maximal d’images par ensemble | 5 à 10 images par ensemble | 1000 |
 
 Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
@@ -52,7 +52,7 @@ Pour démarrer rapidement :
 
 1. [Chargez les Principales images pour plusieurs vues.](#uploading-assets-in-image-sets)
 
-   Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande pour obtenir un détail de zoom optimal. Dynamic Media peut générer des images faisant jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
+   Commencez par charger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande pour obtenir un détail de zoom optimal. Dynamic Media peut générer des images faisant jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
 
    AEM Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
@@ -62,7 +62,7 @@ Pour démarrer rapidement :
 
    Pour créer une visionneuse d’images dans Assets, appuyez sur **[!UICONTROL Créer > Visionneuses d’images]**. Ajoutez ensuite des images et appuyez sur **[!UICONTROL Enregistrer]**.
 
-   Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+   Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis de visionneuses par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
    **Important** — Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources et sont disponibles uniquement en mode Dynamic Media - Scene7.
 
@@ -95,11 +95,11 @@ Pour démarrer rapidement :
 
 Pour modifier des visionneuses d’images, voir [Modification de visionneuses d’images.](#editing-image-sets) Vous pouvez en outre afficher et modifier les [propriétés de la visionneuse d’images](managing-assets-touch-ui.md#editing-properties).
 
-Si vous rencontrez des problèmes lors de la création des visionneuses, reportez-vous à Images et visionneuses dans la section [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md#images-and-sets).
+Si vous rencontrez des problèmes lors de la création des visionneuses, reportez-vous à Images et visionneuses dans la section [Dépannage de Dynamic Media en Mode Scene7](troubleshoot-dms7.md#images-and-sets).
 
 ## Chargement de ressources dans les visionneuses d’images {#uploading-assets-in-image-sets}
 
-Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande. Les visionneuses d’images prennent en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+Commencez par charger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande. Les visionneuses d’images prennent en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
 Vous pouvez charger des images pour les visionneuses d’images comme vous le feriez pour [charger une autre ressource dans AEM Assets](managing-assets-touch-ui.md#uploading-assets).
 
@@ -128,9 +128,9 @@ Vous pouvez créer des visionneuses d’images par le biais de l’interface uti
 
 >[!NOTE]
 >
->Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis de visionneuses par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
-**Important :** Les ensembles par lot sont créés par le système IPS (Image Production System) dans le cadre de l’ingestion des ressources et sont disponibles uniquement dans le mode Scene7 de Dynamic Media.
+**Important :** les ensembles par lot sont créés par le système IPS (Image Exploitation System) dans le cadre de l’ingestion des ressources et sont disponibles uniquement dans Dynamic Media en mode Scene7.
 
 Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources après les avoir ajoutées.
 
@@ -138,14 +138,14 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 >
 >Les visionneuses d’images ne sont pas prises en charge pour les ressources comportant `,` (virgule) dans le nom du fichier.
 
-Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
+Lorsque vous créez un ensemble d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
 
 | Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
 | Nombre de ressources en double par ensemble | Aucun doublon | 20 |
-| Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
+| Nombre maximal d’images par ensemble | 5 à 10 images par ensemble | 1000 |
 
-Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
+Consultez également la section [Limites de Dynamic Media](/help/assets/limitations.md).
 
 **Pour créer une visionneuse d’images**:
 
@@ -259,4 +259,4 @@ Voir aussi [Aperçu des ressources](previewing-assets.md).
 
 ## Publication de visionneuses d’images {#publishing-image-sets}
 
-Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
+Consultez également le section [Publication de ressources](publishing-dynamicmedia-assets.md).

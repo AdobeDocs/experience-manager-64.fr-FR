@@ -161,7 +161,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
-         ( `sling:resourceType = social/forum/components/hbs/forum`)
+         (`sling:resourceType = social/forum/components/hbs/forum`)
    * Ajouter une propriété pour afficher les badges
 
       * `allowBadges = true`
@@ -193,7 +193,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
 
       * `/content/community-components/en/forum/jcr:content/content/forum`
 
-         ( `sling:resourceType = social/forum/components/hbs/forum`)
+         (`sling:resourceType = social/forum/components/hbs/forum`)
    * Ajouter une propriété pour afficher les badges
 
       * `allowBadges = true`
@@ -222,7 +222,6 @@ Un utilisateur ayant obtenu deux badges en bronze et se voyant attribuer un badg
    >  /etc/community/scoring/rules/site2/forums-scoring
 >
 >* création d’images de badge uniques pour différents sites AEM
-
 >
 
 

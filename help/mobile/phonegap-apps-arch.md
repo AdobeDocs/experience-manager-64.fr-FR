@@ -1,7 +1,7 @@
 ---
 title: Anatomie d’une application
 seo-title: The Anatomy of an App
-description: 'Cette page fournit une description des composants de page que vous créez pour votre application, basée sur le composant /libs/mobileapps/components/angular/ng-page (CRXDE Lite sur un serveur local). '
+description: Cette page fournit une description des composants de page que vous créez pour votre application, basée sur le composant /libs/mobileapps/components/angular/ng-page (CRXDE Lite sur un serveur local).
 seo-description: This page provides description of the page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component (CRXDE Lite on a local server).
 uuid: 4c1a74c1-85af-4a79-b723-e9fbfc661d35
 contentOwner: User
@@ -417,6 +417,6 @@ Si cette payload est un téléchargement de l’application entière, ce manifes
 
 Toutefois, si cette payload est une mise à jour partielle, `package-update.json` contient uniquement les fichiers inclus dans cette payload spécifique.
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 Une fois que vous avez appris l’anatomie d’une application, reportez-vous à la section [Applications sur une seule page](/help/mobile/phonegap-single-page-applications.md).

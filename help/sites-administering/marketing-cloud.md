@@ -79,7 +79,7 @@ Pour plus d’informations sur l’intégration d’Adobe Experience Manager à 
 
 ## Intégration à Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-[Adobe Dynamic Tag Management](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) offre aux marketeurs des outils intuitifs grâce auxquels ils peuvent gérer facilement et rapidement un nombre illimité de balises Adobe et de tierces parties. Vous pouvez optimiser pratiquement n’importe quel élément en ligne, avec une plus grande maîtrise et plus de souplesse, tout en dépendant moins des ressources informatiques.
+[Adobe Dynamic Tag Management](https://www.adobe.com/fr/solutions/digital-marketing/dynamic-tag-management.html) offre aux marketeurs des outils intuitifs grâce auxquels ils peuvent gérer facilement et rapidement un nombre illimité de balises Adobe et de tierces parties. Vous pouvez optimiser pratiquement n’importe quel élément en ligne, avec une plus grande maîtrise et plus de souplesse, tout en dépendant moins des ressources informatiques.
 
 [Intégration d’Adobe Dynamic Tag Management](/help/sites-administering/dtm.md) avec Adobe Experience Manager afin que vous puissiez utiliser vos propriétés web Dynamic Tag Management pour effectuer le suivi des sites Adobe Experience Manager.
 
@@ -95,9 +95,9 @@ L’intégration d’Audience Manager a été supprimée dans Adobe Experience M
 
 <!-- Search&Promote was end of life September 1, 2022. For information about integrating Adobe Experience Manager and Search&Promote, see [Integrating with Adobe Search&Promote](/help/sites-administering/search-and-promote.md). -->
 
-## Intégration à Adobe Campaign  {#integrating-with-adobe-campaign}
+## Intégration à Adobe Campaign {#integrating-with-adobe-campaign}
 
-[Adobe Campaign](https://www.adobe.com/solutions/campaign-management.html) vous permet de gérer le contenu de diffusion par e-mail directement dans Adobe Experience Manager.
+[Adobe Campaign](https://www.adobe.com/fr/solutions/campaign-management.html) vous permet de gérer le contenu de diffusion par e-mail directement dans Adobe Experience Manager.
 
 Pour plus d’informations sur l’intégration d’Adobe Experience Manager à Adobe Campaign, voir [Intégration à Adobe Campaign](/help/sites-administering/campaignstandard.md).
 

@@ -13,7 +13,7 @@ exl-id: 8f716a59-1116-4855-baeb-3997de71b55f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1135'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -95,7 +95,6 @@ Notez que la page Calendrier est la page d’accueil, car le modèle de site de 
 >
 >* [Composants Communities](author-communities.md) (pour les auteurs)
 >* [Principes fondamentaux des composants, fonctions et fonctionnalités](essentials.md) (pour les développeurs)
-
 >
 
 

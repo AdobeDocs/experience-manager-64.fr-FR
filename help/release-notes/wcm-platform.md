@@ -13,7 +13,7 @@ exl-id: 6f131247-d35e-4298-958f-35b94ff08c58
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
 
@@ -40,7 +40,6 @@ ht-degree: 81%
 >[!CAUTION]
 >
 >* La nouvelle version d’Oak Segment Tar présente depuis AEM 6.3 nécessite une migration de référentiel. Cette étape est obligatoire si vous effectuez une mise à niveau à partir d’une ancienne version de TarMK ou si vous souhaitez remplacer le nouveau Segment Tar par un autre type de persistance. Pour en savoir plus sur les avantages du nouveau Segment Tar, voir [FAQ sur la migration vers Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
-
 >
 
 
@@ -70,8 +69,7 @@ ht-degree: 81%
 
 >[!CAUTION]
 >
->* Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique. AEM 6.4 inclut l’interface utilisateur classique, et les clients effectuant une mise à niveau à partir de versions antérieures peuvent continuer à l’utiliser en l’état. Notez que l’interface utilisateur classique reste entièrement prise en charge tout en étant obsolète. [En savoir plus](/help/sites-deploying/ui-recommendations.md).
-
+>* Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique. AEM 6.4 comprend l’interface utilisateur classique, et les clients effectuant une mise à niveau à partir de versions antérieures peuvent continuer à l’utiliser en l’état. Notez que l’interface utilisateur classique reste entièrement prise en charge tout en étant obsolète. [En savoir plus](/help/sites-deploying/ui-recommendations.md).
 >
 
 

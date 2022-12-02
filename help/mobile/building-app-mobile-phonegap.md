@@ -1,7 +1,7 @@
 ---
 title: Création d’applications mobiles
 seo-title: Building Mobile Applications
-description: 'Cette page contient un article détaillé complet sur la création d’une application mobile à l’aide du code disponible sur GitHub. Vous trouverez ici la création de votre application pour l’installer sur un appareil ou un simulateur à des fins de test ou de publication dans des boutiques d’applications. Vous pouvez créer des applications localement à l’aide de l’interface de ligne de commande PhoneGap ou dans le cloud à l’aide de PhoneGap Build. '
+description: Cette page contient un article détaillé complet sur la création d’une application mobile à l’aide du code disponible sur GitHub. Vous trouverez ici la création de votre application pour l’installer sur un appareil ou un simulateur à des fins de test ou de publication dans des boutiques d’applications. Vous pouvez créer des applications localement à l’aide de l’interface de ligne de commande PhoneGap ou dans le cloud à l’aide de PhoneGap Build.
 seo-description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
 uuid: 1ff6fe1a-24cc-4973-a2cd-8d356bc649b0
 contentOwner: User
@@ -170,6 +170,6 @@ Envoyez vos ressources d’application en PhoneGap Build pour la compilation pou
    >
    >Les comptes en PhoneGap Build libre sont autorisés dans une application privée. Les versions PhoneGap échouent si vous créez une application privée supplémentaire.
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 L’étape suivante après le processus de création consiste à en apprendre davantage sur la variable [Structure d’une application](/help/mobile/phonegap-structure-an-app.md).

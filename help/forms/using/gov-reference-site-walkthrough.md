@@ -1,7 +1,7 @@
 ---
 title: Présentation du site de référence We.Gov
 seo-title: We.Gov reference site walkthrough
-description: 'Découvrez la présentation du site de référence We.Gov pour comprendre comment AEM Forms aide les administrations à gérer des informations personnelles. '
+description: Découvrez la présentation du site de référence We.Gov pour comprendre comment AEM Forms aide les administrations à gérer des informations personnelles.
 seo-description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments manage individual information.
 uuid: 348f9067-28b5-47ed-8e83-0dbadeff0854
 content-type: reference

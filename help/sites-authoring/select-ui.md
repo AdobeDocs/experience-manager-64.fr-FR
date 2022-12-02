@@ -13,7 +13,7 @@ exl-id: 415efbe0-95f5-4c9e-ac33-c4a384a8271e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '907'
-ht-degree: 68%
+ht-degree: 84%
 
 ---
 
@@ -25,7 +25,7 @@ Dans l’environnement de création, vous pouvez effectuer les opérations suiva
 
 * [Création](/help/sites-authoring/author.md) (y compris la [création de pages](/help/sites-authoring/author-environment-tools.md), la [gestion de ressources](/help/assets/home.md) et les [communautés](/help/communities/author-communities.md))
 
-* [Administration](/help/sites-administering/home.md) des tâches nécessaires pour générer et gérer le contenu sur votre site web
+* [Administration](/help/sites-administering/home.md) des tâches nécessaires pour générer et gérer le contenu sur votre site Web
 
 Deux interfaces utilisateur graphiques sont à votre disposition, accessibles dans n’importe quel navigateur moderne :
 
@@ -43,7 +43,7 @@ Deux interfaces utilisateur graphiques sont à votre disposition, accessibles da
 
    ![screen_shot_2018-03-23at115505](assets/screen_shot_2018-03-23at115505.png)
 
-1. IU classique
+1. Interface utilisateur classique
 
    * Il s’agit de l’ancienne interface utilisateur, disponible dans AEM depuis de nombreuses années.
    * Elle est principalement verte.
@@ -58,7 +58,7 @@ Bien que l’IU tactile soit désormais l’IU standard et [parité des fonction
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’état de parité des fonctionnalités avec l’IU classique, voir le document [Parité des fonctionnalités de l’IU tactile](../release-notes/touch-ui-features-status.md).
+>Pour plus d’informations sur le statut de parité des fonctionnalités avec l’IU classique, consultez le document [Parité des fonctionnalités de l’IU tactile](../release-notes/touch-ui-features-status.md).
 
 Vous pouvez choisir quelle IU utiliser à divers emplacements :
 
@@ -74,13 +74,13 @@ Vous pouvez choisir quelle IU utiliser à divers emplacements :
 >
 >Plusieurs options de basculement vers l’interface utilisateur classique ne sont pas immédiatement disponibles. Elles doivent être configurées spécifiquement pour votre instance.
 >
->Voir [Activation de l’accès à l’interface utilisateur classique](/help/sites-administering/enable-classic-ui.md) pour plus d’informations.
+>Pour plus d’informations, reportez-vous à la section [Activation de l’accès à l’IU classique](/help/sites-administering/enable-classic-ui.md).
 
 >[!NOTE]
 >
 >Les instances mises à niveau à partir d’une version précédente conservent l’IU classique pour la création de pages.
 >
->Après la mise à niveau, la création de pages ne passe pas automatiquement à l’interface utilisateur tactile, mais vous pouvez la configurer à l’aide de l’option [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) de **Service WCM Author UI Mode** ( `AuthoringUIMode` ). Voir [IU par défaut en fonction de l’éditeur](#ui-overrides-for-the-editor).
+>Après la mise à niveau, la création de pages ne bascule pas automatiquement vers l’IU tactile. Vous pouvez cependant configurer ce basculement à l’aide de la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du **service Mode d’IU de création de la gestion de contenu web** (service `AuthoringUIMode`). Consultez la section [IU par défaut en fonction de l’éditeur](#ui-overrides-for-the-editor).
 
 ## Configuration de l’IU par défaut pour votre instance {#configuring-the-default-ui-for-your-instance}
 
@@ -105,9 +105,9 @@ Ainsi, si l’IU tactile est activée sur un ordinateur de bureau, les utilisate
    >Cette option de basculement vers l’interface utilisateur classique n’est pas immédiatement disponible. Elle doit être configurée spécifiquement pour votre instance.
    >
    >
-   >Voir [Activation de l’accès à l’interface utilisateur classique](/help/sites-administering/enable-classic-ui.md) pour plus d’informations.
+   >Pour plus d’informations, reportez-vous à la section [Activation de l’accès à l’IU classique](/help/sites-administering/enable-classic-ui.md).
 
-   Si cette option est activée, lorsque vous faites passer le pointeur de la souris sur une console appropriée, une icône s’affiche (symbole d’un moniteur). En appuyant/cliquant sur cette dernière, vous accédez à l’emplacement correspondant dans l’IU classique.
+   Si cette option est activée, lorsque vous faites passer le pointeur de la souris sur une console appropriée, une icône s’affiche (symbole d’écran). En appuyant ou cliquant sur cette dernière, vous accédez à l’emplacement correspondant dans l’IU classique.
 
    Par exemple, les liens de **Sites** à **siteadmin** :
 
@@ -115,7 +115,7 @@ Ainsi, si l’IU tactile est activée sur un ordinateur de bureau, les utilisate
 
 * **URL**
 
-   L’IU classique est accessible à l’aide de l’URL de l’écran de bienvenue à l’adresse `welcome.html`. Par exemple :
+   Pour accéder à l’IU classique, utilisez l’URL de l’écran d’accueil à l’adresse `welcome.html`. Par exemple :
 
    `http://localhost:4502/welcome.html`
 
@@ -132,7 +132,7 @@ Ainsi, si l’IU tactile est activée sur un ordinateur de bureau, les utilisate
 >
 >Cette option de basculement vers l’interface utilisateur classique n’est pas immédiatement disponible. Elle doit être configurée spécifiquement pour votre instance.
 >
->Voir [Activation de l’accès à l’interface utilisateur classique](/help/sites-administering/enable-classic-ui.md) pour plus d’informations.
+>Pour plus d’informations, reportez-vous à la section [Activation de l’accès à l’IU classique](/help/sites-administering/enable-classic-ui.md).
 
 Si cette option est activée, l’option **Ouvrir l’IU classique** est disponible dans la boîte de dialogue **Informations sur la page** :
 
@@ -144,23 +144,23 @@ Les paramètres définis par un utilisateur ou un administrateur du système peu
 
 * Lors de la création de pages :
 
-   * L’utilisation de l’éditeur classique est forcée lors de l’accès à la page à l’aide de `cf#` dans l’URL. Par exemple :
+   * le recours à l’éditeur classique est forcé lors de l’accès à la page à l’aide de `cf#` dans l’URL. Par exemple :
 
       `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * L’utilisation de l’éditeur tactile est forcée lors de l’utilisation de `/editor.html` dans l’URL ou lors de l’utilisation d’un appareil tactile. Par exemple :
+   * Le recours à l’éditeur tactile est forcé lors de l’utilisation de `/editor.html` dans l’URL ou lors de l’utilisation d’un appareil tactile. Par exemple :
 
       `http://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Tout recours forcé à un certain éditeur est temporaire et valide uniquement pour la session en cours.
 
-   * Un jeu de cookies est défini selon qu’il est tactile ou non ( `editor.html`) ou classique ( `cf#`) est utilisée.
+   * Un jeu de cookies est défini selon qu’il s’agit de l’éditeur tactile (`editor.html`) ou classique (`cf#`).
 
-* Lors de l’ouverture de pages par `siteadmin`, des contrôles seront effectués pour vérifier l’existence des éléments suivants :
+* Lors de l’ouverture de pages en tant que `siteadmin`, plusieurs contrôles ont lieu :
 
-   * présence du cookie ;
-   * préférence utilisateur ;
-   * en l’absence de tels paramètres, l’IU définie par défaut dans la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du service **WCM Authoring UI Mode** (service `AuthoringUIMode`) est utilisée.
+   * Présence du cookie
+   * Préférence utilisateur
+   * En l’absence de tels paramètres, l’IU définie par défaut dans la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du service **Mode d’IU de création de la gestion de contenu web** (service `AuthoringUIMode`) est utilisée.
 
 >[!NOTE]
 >

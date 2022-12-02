@@ -8,7 +8,7 @@ exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
 source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 77%
+ht-degree: 81%
 
 ---
 
@@ -58,7 +58,7 @@ Vous pouvez ajouter vos propres espaces de noms à AEM. Tout comme il existe des
 
 ## Conseils et restrictions {#best-practices-limitations}
 
-* Les mises à jour des métadonnées par le biais de l’interface utilisateur tactile modifient les propriétés des métadonnées dans la variable `dc` espace de noms. Toute mise à jour effectuée via l’API HTTP modifie les propriétés de métadonnées dans la variable `jcr` espace de noms. Voir [mise à jour des métadonnées à l’aide de l’API HTTP](/help/assets/mac-api-assets.md#update-asset-metadata).
+* Les mises à jour des métadonnées par le biais de l’interface utilisateur tactile modifient les propriétés des métadonnées dans la variable `dc` espace de noms. Toute mise à jour effectuée via l’API HTTP modifie les propriétés de métadonnées dans l’espace de noms `jcr`. Consultez la section [mise à jour des métadonnées à l’aide de l’API HTTP](/help/assets/mac-api-assets.md#update-asset-metadata).
 
 >[!MORELIKETHIS]
 >

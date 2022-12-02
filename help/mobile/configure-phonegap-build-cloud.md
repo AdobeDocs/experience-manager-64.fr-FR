@@ -1,5 +1,5 @@
 ---
-title: 'Configurer le service cloud Adobe PhoneGap Build '
+title: Configurer le service cloud Adobe PhoneGap Build
 seo-title: Configure your Adobe PhoneGap Build Cloud Service
 description: Consultez cette page pour configurer les services cloud et créer votre application avec PhoneGap Build.
 seo-description: Follow this page for configuring the cloud services and building your application with PhoneGap build.

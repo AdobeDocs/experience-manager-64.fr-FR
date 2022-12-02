@@ -11,7 +11,7 @@ exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
 source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
 source-wordcount: '1374'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -41,7 +41,7 @@ Un concept important concernant l’utilisation des profils dans [!DNL Experienc
 
 >[!NOTE]
 >
->S’applique à *Dynamic Media - mode Scene7* uniquement dans [!DNL Experience Manager] 6.4.7.0 ou version ultérieure.
+>S’applique à *Dynamic Media en mode Scene7* uniquement dans  6.4.7.0 ou une version ultérieure.[!DNL Experience Manager]
 
 Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de traitement existant que vous avez modifié ultérieurement.
 
@@ -103,7 +103,7 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
    ![Composant Transfert par lots Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Sur le **[!UICONTROL Transfert par lots vers les propriétés Scene7-Step]** , définissez les options suivantes :
+1. Dans la boîte de dialogue **[!UICONTROL Chargement par lots vers Scene7 – Propriétés des étapes]**, définissez les éléments suivants :
    * Dans les zones de texte **[!UICONTROL Titre]** et **[!UICONTROL Description]**, saisissez un titre et une description pour la tâche, le cas échéant.
    * Sélectionnez **[!UICONTROL Avance du gestionnaire]** si votre gestionnaire doit passer à l’étape suivante.
    * Dans le champ **[!UICONTROL Délai d’expiration]**, saisissez le délai d’expiration du processus externe (en secondes).

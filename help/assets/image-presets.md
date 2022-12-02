@@ -1,7 +1,7 @@
 ---
 title: Application de paramètres d’image prédéfinis Dynamic Media
 seo-title: Applying Dynamic Media image presets
-description: Découvrez comment appliquer des paramètres d’image prédéfinis Dynamic Media
+description: Découvrez comment appliquer des paramètres prédéfinis d’image Dynamic Media
 seo-description: Learn how to apply image presets in Dynamic Media
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
@@ -23,9 +23,9 @@ ht-degree: 91%
 
 Les préréglages d’image permettent aux ressources de fournir dynamiquement des images de différentes tailles, dans différents formats ou avec d’autres propriétés d’image qui sont générées dynamiquement. Vous pouvez choisir un paramètre prédéfini lorsque vous exportez des images, ce qui modifie également le format des images selon les spécifications définies par l&#39;administrateur.
 
-Vous pouvez en outre sélectionner un paramètre d’image prédéfini qui est réactif (désigné par le bouton **[!UICONTROL RESS]** une fois que vous l’avez sélectionné).
+Vous pouvez en outre sélectionner un paramètre prédéfini d’image réactif (signalé par le bouton **[!UICONTROL RESS]** une fois que vous l’avez sélectionné).
 
-Cette section décrit comment utiliser les paramètres d’image prédéfinis. [Les administrateurs peuvent créer et configurer des paramètres d’image prédéfinis](managing-image-presets.md).
+Cette section décrit comment utiliser les paramètres d’image prédéfinis. [L’administration peut créer et configurer des paramètres prédéfinis d’image](managing-image-presets.md).
 
 >[!NOTE]
 >

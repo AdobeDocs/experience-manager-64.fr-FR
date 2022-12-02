@@ -1,5 +1,5 @@
 ---
-title: Conventions de dénomination pour le test des ressources
+title: Conventions de nommage pour le test des ressources
 seo-title: Naming conventions for assets
 description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination de Java Content Repository. Toutefois, Adobe Experience Manager impose d’autres conventions pour le nom des nœuds de ressource.
 seo-description: Nodes in the repository are subject to naming conventions of the Java Content Repository. However, Adobe Experience Manager imposes further conventions for the name of asset nodes.
@@ -13,15 +13,15 @@ exl-id: 3dc38c37-f2a0-44f5-90f6-fee8c6f84ff4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Conventions de dénomination des ressources test{#naming-conventions-for-assets-testing}
+# Conventions de nommage pour le test des ressources{#naming-conventions-for-assets-testing}
 
 Les nœuds dans le référentiel sont soumis aux conventions de dénomination de [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Toutefois, Adobe Experience Manager impose d’autres conventions pour le nom des nœuds de ressource.
 
-## IU classique {#classic-ui}
+## Interface utilisateur classique {#classic-ui}
 
 L’IU classique applique des restrictions plus strictes :
 

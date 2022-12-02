@@ -1,7 +1,7 @@
 ---
 title: Fonctionnalité Contenu proposé
 seo-title: Featured Content Feature
-description: 'La fonctionnalité Contenu mis en page permet aux visiteurs connectés du site de mettre en surbrillance le contenu. '
+description: La fonctionnalité Contenu mis en page permet aux visiteurs connectés du site de mettre en surbrillance le contenu.
 seo-description: The Featured Content feature lets signed-in site visitors highlight content
 uuid: 7a2ff570-01bb-46fb-8d66-3b47e2efa72e
 contentOwner: msm-service

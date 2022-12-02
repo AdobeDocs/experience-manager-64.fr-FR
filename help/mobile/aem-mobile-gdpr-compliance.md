@@ -1,7 +1,7 @@
 ---
 title: AEM Mobile – Préparation pour le RGPD
 seo-title: AEM Mobile - GDPR Readiness
-description: '"AEM Mobile – Préparation pour le RGPD"'
+description: "AEM\_Mobile\_–\_Préparation pour le RGPD"
 seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
@@ -10,7 +10,7 @@ exl-id: 2b73e843-690b-4cf3-9b8f-936b70c84406
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 85%
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité ; comme le RGPD, le CCPA, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, comme le RGPD, le CCPA, etc.
 
 ## Prise en charge du RGPD par AEM Mobile {#aem-mobile-gdpr-support}
 

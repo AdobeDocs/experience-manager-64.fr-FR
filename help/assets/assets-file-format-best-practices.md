@@ -1,5 +1,5 @@
 ---
-title: Meilleures pratiques relatives au format de fichier des ressources
+title: Bonnes pratiques relatives au format de fichier des ressources
 description: Bonnes pratiques relatives à la prise en charge des fichiers dans [!DNL Experience Manager] Ressources.
 contentOwner: AG
 feature: Asset Management,Developer Tools
@@ -8,15 +8,15 @@ exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
 source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
-# Meilleures pratiques relatives au format de fichier des ressources {#assets-file-format-best-practices}
+# Bonnes pratiques relatives aux formats de fichier des ressources {#assets-file-format-best-practices}
 
 [!DNL Experience Manager Assets] prend en charge de nombreuses bibliothèques de formats de fichiers propriétaires et tierces pour gérer les divers besoins des utilisateurs en matière de prise en charge des fichiers. Les bibliothèques Adobe prises en charge comprennent Adobe Camera Raw, Gibson, Adobe PDF Rasterizer et Adobe InDesign Server. En outre, [!DNL Assets] prend en charge les bibliothèques tierces, notamment ImageMagick, TwelveMonkeys, etc.
 
-Pour les formats de fichiers pris en charge, voir [Formats pris en charge par AEM Assets](assets-formats.md).
+Pour les formats de fichiers pris en charge, consultez [Formats pris en charge par AEM Assets](assets-formats.md).
 
 ## Bibliothèque Adobe Camera Raw {#adobe-camera-raw-library}
 
@@ -41,7 +41,7 @@ Les miniatures et les aperçus générés à l’aide de l’interpréteur de PD
 
 ## Serveur Adobe InDesign {#adobe-indesign-cc-server}
 
-Adobe vous recommande d’utiliser le serveur Adobe InDesign pour extraire des rendus spécifiques à Adobe InDesign, tels que IDML et HTML. Pour plus d’informations, voir [Ajouter [!DNL Experience Manager] ressources en tant que références dans Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+Adobe vous recommande d’utiliser le serveur Adobe InDesign pour extraire des rendus spécifiques à Adobe InDesign, tels que IDML et HTML. Pour plus d’informations, consultez [ [!DNL Experience Manager] Ajout de ressources comme références dans Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 
@@ -70,8 +70,8 @@ La bibliothèque de transcodage d’imagerie (ITL) prend en charge les types MIM
 * PNG (8 et 16 bits)
 * GIF
 * BMP
-* TIFF/TIFF compressé (hormis pour les images Tiff et PTiff 32 bits).
+* TIFF/TIFF compressé (hormis pour les images Tiff et PTiff 32 bits)
 * ICO
 * ICN
 
-Pour plus d’informations, voir [Bibliothèque de transcodage d’imagerie](imaging-transcoding-library.md).
+Pour plus d’informations, consultez [Bibliothèque de transcodage d’imagerie](imaging-transcoding-library.md).

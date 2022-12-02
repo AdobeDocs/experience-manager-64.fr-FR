@@ -12,20 +12,20 @@ exl-id: 5f925f47-3123-4a27-aea1-0a1c1fba7bb6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Personnalisation des tableaux de suivi{#customize-tracking-tables}
 
-L’onglet de suivi de l’espace de travail AEM Forms est utilisé pour afficher les détails des instances de processus dans lesquelles l’utilisateur connecté est impliqué. Afin de visualiser les tableaux de suivi, vous devez d’abord sélectionner le nom d’un processus dans le volet gauche pour afficher la liste de ses instances dans le volet central. Sélectionnez une instance de processus pour afficher un tableau des tâches générées par cette instance dans le volet droit. Par défaut, les colonnes du tableau affichent les attributs de tâche suivants (l’attribut correspondant dans le modèle de tâche est indiqué entre parenthèses) :
+L’onglet de suivi dans l’espace de travail AEM Forms est utilisé pour afficher les détails des instances de processus dans lesquelles l’utilisateur connecté est impliqué. Afin de visualiser les tableaux de suivi, vous devez d’abord sélectionner le nom d’un processus dans le volet gauche pour afficher la liste de ses instances dans le volet central. Sélectionnez une instance de processus pour afficher un tableau des tâches générées par cette instance dans le volet droit. Par défaut, les colonnes du tableau affichent les attributs de tâche suivants (l’attribut correspondant dans le modèle de tâche est indiqué entre parenthèses) :
 
 * ID ( `taskId`)
 * Nom ( `stepName`)
 * Instructions ( `instructions`)
 * Action sélectionnée ( `selectedRoute`)
-* Heure de création ( `createTime`)
-* Heure de fin ( `completeTime`)
+* Heure de création (`createTime`)
+* Heure de fin (`completeTime`)
 * Propriétaire ( `currentAssignment.queueOwner`)
 
 Les attributs restants dans le modèle de tâche disponibles à l’affichage dans le tableau de la tâche sont les suivants :
@@ -115,7 +115,7 @@ Les attributs restants dans le modèle de tâche disponibles à l’affichage da
  </tbody> 
 </table>
 
-Pour les personnalisations suivantes dans le tableau de la tâche, vous devez effectuer des modifications sémantiques dans le code source. Voir [Présentation de la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour savoir comment effectuer des modifications sémantiques à l’aide du SDK de workspace et créer un module minifié à partir de la source modifiée.
+Pour les personnalisations suivantes dans le tableau de la tâche, vous devez effectuer des modifications sémantiques dans le code source. Reportez-vous à la section [Introduction à la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour savoir comment effectuer des modifications sémantiques à l’aide du SDK de l’espace de travail et créer un package minimisé à partir de la source modifiée.
 
 ## Modification des colonnes du tableau et de leur tri {#changing-table-columns-and-their-order}
 
@@ -157,7 +157,7 @@ Pour les personnalisations suivantes dans le tableau de la tâche, vous devez ef
 
 Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tête de la colonne :
 
-1. Enregistrement d’un gestionnaire de clics pour `.fixedTaskTableHeader th` dans le fichier `js/runtime/views/processinstancehistory.js`.
+1. Enregistrez un gestionnaire de clic pour `.fixedTaskTableHeader th` dans le fichier `js/runtime/views/processinstancehistory.js`.
 
    ```as3
    events: {
@@ -167,7 +167,7 @@ Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tê
    }
    ```
 
-   Dans le gestionnaire, appelez la méthode `onTaskTableHeaderClick` fonction de `js/runtime/util/history.js`.
+   Dans le gestionnaire, appelez la fonction `onTaskTableHeaderClick` de `js/runtime/util/history.js`.
 
    ```as3
    onTaskTableHeaderClick: function (event) {
@@ -175,7 +175,7 @@ Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tê
    }
    ```
 
-1. Exposez la variable `TaskTableHeaderClick` dans `js/runtime/util/history.js`.
+1. Exposez la méthode `TaskTableHeaderClick` dans `js/runtime/util/history.js`.
 
    La méthode recherche l’attribut de tâche dans l’événement de clic, trie la liste des tâches en fonction de cet attribut, et rend le tableau de la tâche avec la liste des tâches triée.
 

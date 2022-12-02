@@ -51,7 +51,7 @@ Processus général de publication/annulation de la publication d’un article :
 
 ![chlimage_1-9](assets/chlimage_1-9.gif)
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 Une fois que vous avez appris à créer et publier du contenu, reportez-vous à la section
 

@@ -1,7 +1,7 @@
 ---
 title: Page Test
 seo-title: Test page
-description: 'null'
+description: null
 seo-description: null
 page-status-flag: never-activated
 uuid: 2fddf5ce-df5d-4d66-bd80-7d27732c5e0c

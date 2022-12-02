@@ -13,17 +13,17 @@ exl-id: 6adcc1a4-eb0f-4410-8219-dbd7e6bbe469
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '201'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Restructuration des référentiels e-Commerce dans AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications de référentiel ayant un impact sur la solution AEM e-Commerce. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
+Comme indiqué dans la page parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution de e-Commerce d’AEM. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
 
 ## Avec la mise à niveau vers la version 6.4 {#with-upgrade}
 
-### Données sur les produits, commandes, collections, classifications, méthodes d’expédition et modes de paiement {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
+### Données sur les produits, les commandes, les collections, les classifications, les méthodes d’expédition et les modes de paiement {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
 
 <table> 
  <tbody>

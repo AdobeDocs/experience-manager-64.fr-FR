@@ -13,7 +13,7 @@ exl-id: fb96ed26-b5b6-4afc-a820-3ef45a9f3abd
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Vous pouvez, par exemple, placer le serveur proxy entre deux applications qui co
 
 ## Démarrage de l’outil de serveur proxy {#starting-the-proxy-server-tool}
 
-L’outil se trouve dans le dossier /opt/helpers de votre installation AEM. Pour le lancer, saisissez :
+Cet outil se trouve dans le dossier /opt/helpers de votre installation AEM. Pour le lancer, saisissez :
 
 ```xml
 java -jar proxy.jar <host> <remoteport> <localport> [options]
@@ -116,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C signifie que cette entrée provient du client (il s’agit d’une demande de page web).
 * 0 correspond au nombre de connexions (le nombre de connexions commence à 0).
 * # 00000 correspond au décalage dans le flux de bits. Comme il s’agit de la première entrée, le décalage est de 0.
-* [GET &lt;?>] est le contenu de la requête, dans l’exemple un des en-têtes HTTP (url).
+* [GET &lt;?>] correspond au contenu de la demande. Dans cet exemple, il s’agit de l’un des en-têtes HTTP (url).
 
 Lorsqu’une connexion se ferme, les informations suivantes sont consignées :
 
@@ -149,7 +149,7 @@ Si AEM est exécuté sur localhost:4303, démarrez le serveur proxy comme suit 
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-Vous pouvez accéder au serveur ( ) sans le serveur proxy, mais si vous y accédez via , le serveur proxy consigne la communication. Ouvrez un navigateur et accédez à une page créée avec le modèle ci-dessus. Ensuite, consultez le fichier journal.
+Vous pouvez accéder au serveur () sans serveur proxy, mais si vous y accédez par le biais de , le serveur proxy enregistre la communication. Ouvrez un navigateur et accédez à une page créée avec le modèle ci-dessus. Ensuite, consultez le fichier journal.
 
 >[!NOTE]
 >

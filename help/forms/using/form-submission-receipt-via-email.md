@@ -66,7 +66,7 @@ L’action Courrier électronique permet à un auteur d’envoyer automatiquemen
    >
    >Si vous sélectionnez **Action PDF par courrier électronique**, vous devez sélectionner l’option Inclure les pièces jointes.
 
-1. Pour enregistrer les modifications, cliquez sur **OK.**
+1. Pour enregistrer les modifications, cliquez sur **OK**.
 
 ### Utilisation des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un courrier électronique {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 

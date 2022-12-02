@@ -13,7 +13,7 @@ exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
 source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
 source-wordcount: '2180'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -96,7 +96,7 @@ AEM 6.4 Communities GA inclut le package Communities. Pour en savoir plus sur le
 
 À compter de la version 6.3 d’AEM, les mises à jour apportées aux communautés sont fournies dans le cadre d’AEM Cumulative Fix Packs et Service Packs.
 
-Pour connaître les dernières mises à jour d’AEM 6.4, veillez à vérifier [Packs de correctifs cumulatifs et Service Packs Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
+Pour connaître les dernières mises à jour d’AEM 6.4, veillez à vérifier [Packs de correctifs cumulatifs et Service Packs Adobe Experience Manager 6.4](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
 
 ### Historique des versions {#version-history}
 
@@ -336,7 +336,7 @@ Pour copier les documents clés de l’auteur vers toutes les autres instances, 
 
 * Accédez à l’instance d’AEM, généralement une instance d’auteur, qui contient le matériel clé à copier.
 
-   * Recherchez la variable `com.adobe.granite.crypto.file` lot dans le système de fichiers local
+   * Localisez le lot `com.adobe.granite.crypto.file` dans le système de fichiers local
 
       Par exemple,
 
@@ -381,9 +381,9 @@ Avec le matériel clé stocké dans le référentiel, la manière de répliquer 
 Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * accédez à [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
-* select `/etc/key`
+* sélectionnez `/etc/key`
 * open `Replication` tab
-* select `Replicate`
+* sélectionnez `Replicate`
 
 * [actualiser le lot Crypto Granite](#refresh-the-granite-crypto-bundle)
 
@@ -431,8 +431,8 @@ En particulier, veillez à utiliser le nom de serveur correct, et non `localhost
 
 Si vous utilisez un Dispatcher, voir :
 
-* AEM [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) documentation
-* [Installation de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
+* AEM [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html) documentation
+* [Installation de Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-install.html)
 * [Configuration de Dispatcher pour Communities](dispatcher.md)
 * [Problèmes connus](troubleshooting.md#dispatcher-refetch-fails)
 

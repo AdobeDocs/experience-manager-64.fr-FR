@@ -1,5 +1,5 @@
 ---
-title: Prise en main d’AEM Mobile
+title: Prise en main d’AEM Mobile
 seo-title: Getting Started with AEM Mobile
 description: Cette page sert de page d’entrée à AEM Mobile. Consultez cette page comme point de départ pour en savoir plus sur les trois différentes façons de créer des applications.
 seo-description: This page serves as a landing page for AEM Mobile. Follow this page as a starting point to learn about the three different ways for creating apps.
@@ -17,7 +17,7 @@ ht-degree: 14%
 
 ---
 
-# Prise en main d’AEM Mobile{#getting-started-with-aem-mobile}
+# Prise en main d’AEM Mobile{#getting-started-with-aem-mobile}
 
 >[!NOTE]
 >

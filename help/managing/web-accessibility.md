@@ -38,11 +38,11 @@ Les pages et la section suivantes fournissent des informations et des consignes�
 
    Instructions relatives à la manière dont les administrateurs peuvent configurer des AEM pour produire du contenu accessible.
 
-* [Création de contenu accessible (conformité WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
+* [Création d’un contenu accessible (conformité WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
 
    Les règles WCAG 2.0 fournissent une liste de critères de réussite pour les niveaux de conformité A et AA. Cette page décrit les critères de réussite couverts par AEM, ainsi que la manière de les satisfaire lors de la génération du contenu.
 
-* [Guide rapide relatif à WCAG 2.0](/help/managing/qg-wcag.md)
+* [Guide rapide relatif à WCAG 2.0](/help/managing/qg-wcag.md)
 
    Informations d’arrière-plan sur WCAG 2.0.
 

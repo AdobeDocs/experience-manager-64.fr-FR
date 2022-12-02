@@ -14,7 +14,7 @@ exl-id: 316903a8-22cf-45e6-a9f3-ac1d75beddec
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ La procédure ci-dessous utilise l’interface utilisateur classique pour créer
 1. Ajoutez une nouvelle page enfant représentant la version de langue du site :
 
    1. Sélectionnez Nouveau > Nouvelle page.
-   1. Dans la boîte de dialogue, spécifiez le titre et le nom. Le nom doit être au format de `<language-code>` ou `<language-code>_<country-code>`, par exemple en, en_US, en_us, en_GB, en_gb.
+   1. Dans la boîte de dialogue, spécifiez le titre et le nom. Le nom doit être au format `<language-code>` ou `<language-code>_<country-code>`, par exemple, en_US, en_us, en_GB, en_gb.
 
       * Le code langue pris en charge est un code à deux lettres en minuscules, défini par la norme ISO-639-1.
       * Le code pays pris en charge est un code à deux lettres en minuscules ou en majuscules, défini par la norme ISO-3166.
@@ -51,10 +51,10 @@ La procédure ci-dessous utilise l’interface utilisateur classique pour créer
 
    | Type de copie de langue | Description |
    |---|---|
-   | auto | Utilise le comportement des pages parentes |
-   | ignore | Ne crée pas de copie de cette page et de ses enfants |
-   | `<language>+` (Français+, par exemple) | Copie la page et tous ses enfants de cette langue |
-   | `<language>` (Français, par exemple) | Copie uniquement la page à partir de cette langue |
+   | auto | Utilise le comportement des pages parentes. |
+   | ignore | Ne crée pas de copie de cette page et de ses enfants. |
+   | `<language>+` (Français+, par exemple) | Copie la page et tous ses enfants de cette langue. |
+   | `<language>` (Français, par exemple) | Copie uniquement la page à partir de cette langue. |
 
 1. Cliquez sur OK pour fermer la boîte de dialogue.
 1. Dans la boîte de dialogue suivante, cliquez sur Oui pour confirmer la copie.

@@ -160,7 +160,7 @@ en accédant à la
 
 * **[!UICONTROL Mot de passe]**: *(facultatif)*
 
-* **[!UICONTROL Cliquez sur OK]**
+* Sélectionnez **[!UICONTROL OK]**
 
 ### Ajuster le protocole pour le nouvel importateur d’interrogations {#adjust-protocol-for-new-polling-importer}
 

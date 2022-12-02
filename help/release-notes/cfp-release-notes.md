@@ -93,7 +93,7 @@ Adobe Experience Manager 6.4.8.4 fournit des correctifs pour les problèmes suiv
 
 * (JEE uniquement) Vulnérabilités de sécurité critiques (CVE-2021-44228 et CVE-2021-45046) signalées pour Apache Log4j2.
 
-Pour plus d’informations sur les mises à jour de sécurité, consultez la [page des bulletins de sécurité d’Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
+Pour plus d’informations sur les mises à jour de sécurité, consultez la [page des bulletins de sécurité d’Experience Manager](https://helpx.adobe.com/fr/security/products/experience-manager.html).
 
 ## Correctifs et Feature Packs inclus dans les packs de correctifs cumulés précédents {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
@@ -587,7 +587,7 @@ Liste des packages de contenu inclus dans AEM 6.4.8.4
 
 * [Notes de mise à jour d’AEM 6.4](../release-notes/release-notes.md)
 * [Page de produits AEM ](https://www.adobe.com/solutions/web-experience-management.html)
-* [Documentation d’AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64.html?lang=fr)
+* [Documentation d’AEM 6.4](https://helpx.adobe.com/fr/support/experience-manager/6-4.html)
 * Abonnement aux [mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 ## Sites restreints {#restricted-sites-new}

@@ -1,7 +1,7 @@
 ---
 title: Créer des tableaux complexes accessibles dans des formulaires HTML5
 seo-title: Create accessible complex tables in HTML5 forms
-description: 'Découvrez comment créer des tableaux accessibles dans des formulaires HTML5. '
+description: Découvrez comment créer des tableaux accessibles dans des formulaires HTML5.
 seo-description: Learn how to create accessible tables in HTML5 forms.
 uuid: e52562d2-4dc3-4359-9dbb-c18614921808
 content-type: reference

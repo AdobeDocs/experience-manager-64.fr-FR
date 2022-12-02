@@ -1,5 +1,5 @@
 ---
-title: 'Synchronisation d’annuaires '
+title: Synchronisation d’annuaires
 seo-title: Synchronizing directories
 description: Découvrez comment synchroniser la base de données User Management avec des modifications apportées aux serveurs d’annuaire sources à l’aide de la synchronisation manuelle ou planifiée.
 seo-description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.

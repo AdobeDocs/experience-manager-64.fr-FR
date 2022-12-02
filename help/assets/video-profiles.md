@@ -1,6 +1,6 @@
 ---
 title: Profils vidéo Dynamic Media
-description: 'Dynamic Media est fourni avec un profil de codage vidéo adaptatif prédéfini. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage vidéo possible. '
+description: Dynamic Media est fourni avec un profil de codage vidéo adaptatif prédéfini. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage vidéo possible.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
@@ -11,7 +11,7 @@ role: Admin,User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3068'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 
@@ -57,7 +57,7 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
    <td><strong>Débit vidéo (kbit/s)</strong></td> 
    <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td> 
    <td><strong>Codec audio</strong></td> 
-   <td><strong>Débit audio (kbit/s)</strong></td> 
+   <td><strong>Débit audio  (kbit/s)</strong></td> 
   </tr> 
   <tr> 
    <td><p>MP4 H.264 (mp4)</p> </td> 
@@ -119,7 +119,7 @@ Consultez également la section [Bonnes pratiques en matière de codage vidéo](
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](config-dms7.md#configuring-asset-processing).
 
-Une fois le profil vidéo créé, vous l’appliquez à un ou plusieurs dossiers.
+Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossiers.
 
 **Création d’un profil de codage vidéo Dynamic Media pour la diffusion en continu adaptative**:
 
@@ -160,8 +160,8 @@ Si vous choisissez de ne pas utiliser l’option **[!UICONTROL Coder pour la dif
 
 En fonction du mode que vous exécutez, les codecs de format vidéo pris en charge sont les suivants :
 
-* Mode Dynamic Media-Scene7 : H.264 (.mp4)
-* Mode Dynamic Media-hybride : H.264 (.mp4), WebM
+* Dynamic Media en mode Scene7 : H.264 (.mp4)
+* Dynamic Media en mode hybride : H.264 (.mp4), WebM
 
 Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu adaptative](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
@@ -169,7 +169,7 @@ Consultez également la section [Bonnes pratiques en matière de codage vidéo](
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](config-dms7.md#configuring-asset-processing).
 
-Une fois le profil vidéo créé, vous l’appliquez à un ou plusieurs dossiers.
+Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossiers.
 
 **Pour créer un profil de codage vidéo Dynamic Media en vue de la diffusion en continu progressive :**
 
@@ -364,7 +364,7 @@ Vous pouvez supprimer un profil vidéo d’un dossier à partir du menu **[!UICO
 ### Suppression de profils vidéo Dynamic Media des dossiers à l’aide de l’interface utilisateur Profils {#removing-video-profiles-from-folders-via-profiles-user-interface}
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils vidéo]**.
-1. Sélectionnez le profil vidéo à supprimer d’un ou plusieurs dossiers.
+1. Sélectionnez le profil vidéo à supprimer d’un ou de plusieurs dossiers.
 1. Appuyer **[!UICONTROL Supprimer le profil du ou des dossiers]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil, puis appuyez sur **[!UICONTROL Supprimer]**.
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil vidéo n’est plus appliqué à un dossier.

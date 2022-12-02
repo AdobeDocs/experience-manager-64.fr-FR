@@ -16,7 +16,7 @@ ht-degree: 99%
 
 [!DNL Adobe Experience Manager Assets] conserve les métadonnées de chaque fichier. Cela permet d’obtenir une catégorisation et une organisation plus simples des ressources, ainsi que d’aider les personnes qui recherchent une ressource spécifique. Grâce à la possibilité d’extraire les métadonnées à partir des fichiers chargés sur [!DNL Experience Manager Assets], la gestion des métadonnées s’intègre aux workflows créatifs. La possibilité de conserver et de gérer les métadonnées de vos fichiers permet aussi d’organiser et de traiter automatiquement les fichiers en fonction de leurs métadonnées.
 
-* [Métadonnées XMP](xmp.md).
+* [Métadonnées XMP](xmp.md) 
 * [Modification ou ajout de métadonnées](meta-edit.md).
 * [Référence des schémas de métadonnées](meta-ref.md).
 
@@ -98,7 +98,7 @@ Le format de fichier d’image échangeable (Exif) est le plus utilisé dans la 
 
 Le fait que ce format ne soit pas pris en charge par quelques formats de fichiers image très appréciés comme BMP, GIF ou PNG constitue une limite majeure.
 
-Les champs de métadonnées définis par Exif sont généralement de nature technique et d’une utilité limitée pour la gestion descriptive des métadonnées. Ainsi, [!DNL Experience Manager Assets] permet de mapper les propriétés Exif dans des [schémas de métadonnées courants](metadata-schemas.md)[ et dans XMP](xmp-writeback.md).
+Les champs de métadonnées définis par Exif sont généralement de nature technique et d’une utilité limitée pour la gestion descriptive des métadonnées. Ainsi, [!DNL Experience Manager Assets] permet de mapper les propriétés Exif dans des [schémas de métadonnées courants](metadata-schemas.md) et dans [XMP](xmp-writeback.md).
 
 ### Autres métadonnées {#other-metadata}
 

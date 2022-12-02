@@ -13,13 +13,13 @@ exl-id: a2d6524e-3f5b-4d1e-af64-61ff95889657
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Restructuration des référentiels de Forms dans AEM 6.4{#forms-repository-restructuring-in-aem}
 
-Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications de référentiel ayant un impact sur la solution AEM Forms. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
+Comme indiqué dans la page parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution AEM Forms. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
 
 **Avec la mise à niveau vers la version 6.4**
 
@@ -39,56 +39,56 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
 | **Emplacement précédent** | `/etc/clientlibs/fd/fp` |
 |---|---|
 | **Nouveaux emplacements** | `/libs/fd/fp/components` |
-| **Conseil de restructuration** | Toute référence explicite dans le code personnalisé à l’emplacement hérité doit être mise à jour vers le nouvel emplacement. |
+| **Conseils de restructuration** | Toute référence explicite dans le code personnalisé à l’emplacement existant doit être mise à jour vers le nouvel emplacement. |
 | **Remarques** | Ces bibliothèques clientes ne doivent pas être modifiées ou étendues. |
 
 | **Emplacement précédent** | `/etc/clientlibs/fd/rte` |
 |---|---|
 | **Nouveaux emplacements** | `/libs/fd/rte` |
-| **Conseil de restructuration** | Pour les ressources des bibliothèques clientes pouvant être référencées par des chemins absolus, vous devez utiliser des chemins plus récents dans les nouvelles ressources. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | Pour les ressources des bibliothèques clientes pouvant être référencées par des chemins absolus, vous devez utiliser des chemins plus récents dans les nouvelles ressources. |
+| **Remarques** | S/O |
 
 | **Emplacement précédent** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **Nouveaux emplacements** | `/libs/fd/af/authoring/clientlibs` |
-| **Conseil de restructuration** | Pour les ressources des bibliothèques clientes pouvant être référencées par des chemins absolus, vous devez utiliser des chemins plus récents dans les nouvelles ressources. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | Pour les ressources des bibliothèques clientes pouvant être référencées par des chemins absolus, vous devez utiliser des chemins plus récents dans les nouvelles ressources. |
+| **Remarques** | S/O |
 
 | **Emplacement précédent** | `/etc/clientlibs/fd/xfaforms` |
 |---|---|
 | **Nouveaux emplacements** | `/libs/fd/xfaforms/clientlibs/` |
-| **Conseil de restructuration** | Pour les ressources des bibliothèques clientes pouvant être référencées par des chemins absolus, vous devez utiliser des chemins plus récents dans les nouvelles ressources. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | Pour les ressources des bibliothèques clientes pouvant être référencées par des chemins absolus, vous devez utiliser des chemins plus récents dans les nouvelles ressources. |
+| **Remarques** | S/O |
 
 | **Emplacement précédent** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **Nouveaux emplacements** | `/libs/fd/af/runtime/clientlibs` |
-| **Conseil de restructuration** | Pour les ressources des bibliothèques clientes pouvant être référencées par des chemins absolus, vous devez utiliser des chemins plus récents dans les nouvelles ressources. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | Pour les ressources des bibliothèques clientes pouvant être référencées par des chemins absolus, vous devez utiliser des chemins plus récents dans les nouvelles ressources. |
+| **Remarques** | S/O |
 
 | **Emplacement précédent** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **Nouveaux emplacements** | `/libs/fd/af/runtime/clientlibs` |
-| **Conseil de restructuration** | Pour les ressources des bibliothèques clientes pouvant être référencées par des chemins absolus, vous devez utiliser des chemins plus récents dans les nouvelles ressources. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | Pour les ressources des bibliothèques clientes pouvant être référencées par des chemins absolus, vous devez utiliser des chemins plus récents dans les nouvelles ressources. |
+| **Remarques** | S/O |
 
 | **Emplacement précédent** | `/etc/clientlibs/fd/expeditor` |
 |---|---|
 | **Nouveaux emplacements** | `/libs/fd/expeditor/clientlibs` |
-| **Conseil de restructuration** | Pour les ressources des bibliothèques clientes pouvant être référencées par des chemins absolus, vous devez utiliser des chemins plus récents dans les nouvelles ressources. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | Pour les ressources des bibliothèques clientes pouvant être référencées par des chemins absolus, vous devez utiliser des chemins plus récents dans les nouvelles ressources. |
+| **Remarques** | S/O |
 
 | **Emplacement précédent** | `/etc/clientlibs/fd/fmaddon` |
 |---|---|
 | **Nouveaux emplacements** | `/libs/fd/fmaddon` |
-| **Conseil de restructuration** | La modification de ces clientlibs n’a jamais été recommandée ou prise en charge. Si des modifications ont été apportées à ces clientlibs, vous devez les restaurer pour utiliser le code fourni par AEM. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | La modification de ces clientlibs n’a jamais été recommandée ou prise en charge. Si des modifications ont été apportées à ces clientlibs, vous devez les restaurer pour utiliser le code fourni par AEM. |
+| **Remarques** | S/O |
 
 | **Emplacement précédent** | `/etc/aep` |
 |---|---|
 | **Nouveaux emplacements** | `/var/fd/content/annotations` |
-| **Conseil de restructuration** | La modification de ces clientlibs n’a jamais été recommandée ou prise en charge. Si des modifications ont été apportées à ces clientlibs, vous devez les restaurer pour utiliser le code fourni par AEM. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | La modification de ces clientlibs n’a jamais été recommandée ou prise en charge. Si des modifications ont été apportées à ces clientlibs, vous devez les restaurer pour utiliser le code fourni par AEM. |
+| **Remarques** | S/O |
 
 ## Avant de procéder à la mise à niveau vers la version 6.5 {#prior-to-upgrade}
 
@@ -97,35 +97,35 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
 | **Emplacement précédent** | `/etc/cloudservices/echosign` |
 |---|---|
 | **Nouveaux emplacements** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **Conseil de restructuration** | L’utilitaire [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) doit être déclenché depuis l’interface utilisateur de migration Forms. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | L’utilitaire [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) doit être déclenché depuis l’interface utilisateur de migration Forms. |
+| **Remarques** | S/O |
 
 ### Configurations du service cloud Recaptcha {#recaptcha-cloud-service-configurations}
 
 | **Emplacement précédent** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **Nouveaux emplacements** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **Conseil de restructuration** | L’utilitaire [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) doit être déclenché depuis l’interface utilisateur de migration Forms. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | L’utilitaire [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) doit être déclenché depuis l’interface utilisateur de migration Forms. |
+| **Remarques** | S/O |
 
 ### Configurations du service cloud Typekit {#typekit-cloud-service-configurations}
 
 | **Emplacement précédent** | `/etc/cloudservices/typekit` |
 |---|---|
 | **Nouveaux emplacements** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **Conseil de restructuration** | L’utilitaire [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) doit être déclenché depuis l’interface utilisateur de migration Forms. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | L’utilitaire [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) doit être déclenché depuis l’interface utilisateur de migration Forms. |
+| **Remarques** | S/O |
 
 ### Divers {#misc-1}
 
 | **Emplacement précédent** | `/etc/cloudservices/fdm` |
 |---|---|
 | **Nouveaux emplacements** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **Conseil de restructuration** | L’utilitaire [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) doit être déclenché depuis l’interface utilisateur de migration Forms. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | L’utilitaire [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) doit être déclenché depuis l’interface utilisateur de migration Forms. |
+| **Remarques** | S/O |
 
 | **Emplacement précédent** | `/etc/designs/fd/fp` |
 |---|---|
 | **Nouveaux emplacements** | `/libs/fd/fp` |
-| **Conseil de restructuration** | Toutes les références aux modèles /etc doivent être mises à jour pour pointer vers leurs `/libs` leurs homologues. |
-| **Remarques** | N/A |
+| **Conseils de restructuration** | Toute référence aux modèles /etc doit être éventuellement mise à jour pour pointer vers leurs équivalents `/libs`. |
+| **Remarques** | S/O |

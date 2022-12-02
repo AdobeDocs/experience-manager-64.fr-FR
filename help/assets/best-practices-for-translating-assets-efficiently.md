@@ -1,6 +1,6 @@
 ---
 title: Meilleures pratiques pour une traduction efficace des ressources
-description: Meilleures pratiques pour une gestion efficace des ressources afin de synchroniser les diverses versions traduites et de rationaliser les workflows de traduction.
+description: Bonnes pratiques pour une gestion efficace des ressources afin de synchroniser les diverses versions traduites et de rationaliser les workflows de traduction.
 contentOwner: AG
 feature: Translation
 role: User,Admin
@@ -8,13 +8,13 @@ exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
 source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 89%
+ht-degree: 94%
 
 ---
 
-# Bonnes pratiques pour traduire les ressources efficacement {#best-practices-for-translating-assets-efficiently}
+# Bonnes pratiques relatives à la traduction des ressources efficace {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager Assets prend en charge les workflows multilingues pour traduire les fichiers binaires, les métadonnées et les balises des ressources numériques en plusieurs langues et pour gérer les ressources traduites. Pour plus d’informations, voir [Ressources multilingues](multilingual-assets.md).
+Adobe Experience Manager Assets prend en charge les workflows multilingues pour traduire les fichiers binaires, les métadonnées et les balises des ressources numériques en plusieurs langues et pour gérer les ressources traduites. Pour plus d’informations, consultez [Ressources multilingues](multilingual-assets.md).
 
 Pour une gestion efficace des ressources et pour garantir la synchronisation des différentes versions traduites, créez des [copies de langue](preparing-assets-for-translation.md) des ressources avant d’exécuter les workflows de traduction.
 
@@ -30,8 +30,8 @@ Vous pouvez également apporter des modifications de configuration à quelques w
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * [Configurer l’entrepôt de données basé sur les fichiers](/help/sites-deploying/data-store-config.md)
-   * [Configurer l’entrepôt de données Amazon S3](/help/sites-deploying/data-store-config.md)
+   * [Configurer le magasin de données basé sur les fichiers](/help/sites-deploying/data-store-config.md)
+   * [Configurer le magasin de données Amazon S3](/help/sites-deploying/data-store-config.md)
 
 1. Désactivez le workflow [Écriture différée des métadonnées de gestion des actifs numériques](/help/sites-administering/workflow-offloader.md#disable-offloading).
 
@@ -43,7 +43,7 @@ Vous pouvez également apporter des modifications de configuration à quelques w
 
 1. Activez le workflow *Définir la date de dernière modification*.
 
-   Le workflow *Définir la date de dernière modification* configure la date de dernière modification pour une ressource. Parce que vous désactivez ce workflow à l&#39;étape 2, [!DNL Experience Manager Assets] ne permet plus de tenir à jour la date de dernière modification des ressources. Par conséquent, activez le workflow *Définir la date de dernière modification* pour vous assurer que les dates de dernière modification des ressources sont à jour. Les ressources dont les dates de dernière modification sont obsolètes peuvent entraîner des erreurs.
+   Le workflow *Définir la date de dernière modification* configure la date de dernière modification pour une ressource. Comme vous désactivez ce workflow à l’étape 2, [!DNL Experience Manager Assets] n’est plus en mesure de maintenir à jour la date de dernière modification des ressources. Par conséquent, activez le workflow *Définir la date de dernière modification* pour vous assurer que les dates de dernière modification des ressources sont à jour. Les ressources dont les dates de dernière modification sont obsolètes peuvent entraîner des erreurs.
 
 1. [Configurez la structure d’intégration de traduction](/help/sites-administering/tc-tic.md) pour arrêter la traduction des fichiers binaires des ressources. Désactivez l’option « Traduire les ressources » dans l’onglet « Ressources » pour arrêter la traduction des fichiers binaires des ressources.
 1. Traduisez les métadonnées/balises des ressources à l’aide des [workflow des ressources multilingues](multilingual-assets.md).

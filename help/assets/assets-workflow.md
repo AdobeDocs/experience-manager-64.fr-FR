@@ -8,7 +8,7 @@ exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
 source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
 source-wordcount: '1032'
-ht-degree: 27%
+ht-degree: 76%
 
 ---
 
@@ -18,21 +18,21 @@ ht-degree: 27%
 
 ## Présentation des workflows {#understand-workflows}
 
-Pour le traitement des ressources, [!DNL Experience Manager] utilise des workflows. Les workflows permettent d’automatiser la logique commerciale ou les activités. Les étapes granulaires permettant d’accomplir des tâches spécifiques sont fournies par défaut et les développeurs peuvent créer leurs propres étapes personnalisées. Ces étapes peuvent être combinées dans un ordre logique pour créer des workflows. Par exemple, un workflow peut automatiquement appliquer un filigrane sur les images téléchargées en fonction d’un critère spécifique, comme les métadonnées incorporées dans l’image, le dossier dans lequel elle est téléchargée, la résolution de l’image, etc. Un autre exemple est un workflow configuré pour filigrane des images de cette manière et répondant simultanément à plusieurs besoins de gestion des ressources, tels que l’ajout de métadonnées, la création de rendus, l’ajout de balises intelligentes pour la découverte de ressources, la publication dans une banque de données, la définition d’autorisations d’accès utilisateur, etc.
+Pour le traitement des ressources, [!DNL Experience Manager] utilise des workflows. Les workflows permettent d’automatiser la logique commerciale ou les activités. Chaque étape permettant d’accomplir des tâches spécifiques sont fournies par défaut et les développeurs peuvent créer leurs propres étapes personnalisées. Ces étapes peuvent être combinées dans un ordre logique pour créer des workflows. Par exemple, un workflow peut automatiquement appliquer un filigrane sur les images téléchargées en fonction d’un critère spécifique, comme les métadonnées incorporées dans l’image, le dossier dans lequel elle est téléchargée, la résolution de l’image, etc. Un autre exemple est un workflow configuré pour filigrane des images de cette manière et répondant simultanément à plusieurs besoins de gestion des ressources, tels que l’ajout de métadonnées, la création de rendus, l’ajout de balises intelligentes pour la découverte de ressources, la publication dans une banque de données, la définition d’autorisations d’accès utilisateur, etc.
 
 ## Workflows par défaut disponibles dans Experience Manager {#default-workflows}
 
-Par défaut, toutes les ressources chargées sont traitées à l’aide de [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] workflow. Le workflow s’exécute pour chaque ressource chargée et exécute les tâches de gestion des ressources de base telles que la génération de rendu, l’écriture différée des métadonnées, l’extraction de page, l’extraction de médias et le transcodage.
+Par défaut, toutes les ressources chargées sont traitées à l’aide du workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques]. Le workflow s’exécute pour chaque ressource chargée et exécute les tâches de gestion des ressources de base telles que la génération de rendu, l’écriture différée des métadonnées, l’extraction de page, l’extraction de médias et le transcodage.
 
-Pour consulter les différents modèles de workflow disponibles par défaut, voir [!UICONTROL Outils > Processus > Modèles] in [!DNL Experience Manager].
+Pour consulter les différents modèles de workflow disponibles par défaut, consultez [!UICONTROL Outils > Processus > Modèles] dans [!DNL Experience Manager].
 
-![Certains workflows par défaut](assets/aem-default-workflows.png)
+![Quelques workflows par défaut](assets/aem-default-workflows.png)
 
 *Figure : Certains des workflows par défaut disponibles dans [!DNL Experience Manager].*
 
 ## Application de workflows à des ressources {#applying-workflows-to-assets}
 
-L’application de workflow aux ressources numériques est identique à l’application de workflow aux pages d’un site web. Pour obtenir un guide complet sur la création et l’utilisation des workflows, voir [démarrer des workflows](/help/sites-authoring/workflows-participating.md).
+L’application de workflow aux ressources numériques est identique à l’application de workflow aux pages d’un site Web. Pour obtenir des informations complètes sur la création et l’utilisation de processus, reportez-vous à la section [démarrer des workflows](/help/sites-authoring/workflows-participating.md).
 
 Utilisez les workflows dans les ressources numériques pour activer les ressources ou créer des filigranes. La plupart des workflow destinés aux ressources sont automatiquement activés, comme le workflow permettant de créer automatiquement un rendu après la modification d’une image.
 
@@ -46,17 +46,17 @@ Utilisez les workflows dans les ressources numériques pour activer les ressourc
 TBD: Add animated GIF for these steps instead of all these screenshots.
 -->
 
-Pour appliquer un workflow à une ressource, procédez comme suit :
+Pour appliquer un workflow à une ressource, procédez comme suit :
 
-1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez démarrer un workflow, puis cliquez sur la ressource pour ouvrir la page Ressource.
+1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez commencer un workflow et cliquez sur la ressource pour afficher la page de ressource.
 
-1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez démarrer un workflow, puis cliquez sur la ressource pour ouvrir la page Ressource. Sélectionner **[!UICONTROL Chronologie]** dans le menu pour afficher la chronologie.
+1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez commencer un workflow et cliquez sur la ressource pour afficher la page de ressource. Sélectionnez **[!UICONTROL Chronologie]** dans le menu pour afficher la chronologie.
 
    ![chronologie-2](assets/timeline-2.png)
 
-1. Cliquez sur **[!UICONTROL Actions]** dans la partie inférieure pour ouvrir la liste des actions disponibles pour la ressource.
+1. Cliquez sur **[!UICONTROL Actions]** dans la partie inférieure pour afficher la liste des actions disponibles pour la ressource.
 
-1. Cliquez sur **[!UICONTROL Démarrer le processus]** dans la liste.
+1. Cliquez sur **[!UICONTROL Démarrer le workflow]** dans la liste.
 
 1. Dans le **[!UICONTROL Démarrer le processus]** , sélectionnez un modèle de workflow dans la liste.
 
@@ -72,11 +72,11 @@ Pour appliquer un workflow à une ressource, procédez comme suit :
 
 ## Application d’un workflow à plusieurs ressources {#applying-a-workflow-to-multiple-assets}
 
-1. Dans la console Ressources, accédez à l’emplacement des ressources pour lesquelles vous souhaitez démarrer un workflow, puis sélectionnez les ressources. Sélectionner **[!UICONTROL Chronologie]** dans le menu pour afficher la chronologie.
+1. Dans la console Ressources, accédez à l’emplacement des ressources pour lesquelles vous souhaitez démarrer un workflow, puis sélectionnez les ressources. Sélectionnez **[!UICONTROL Chronologie]** dans le menu pour afficher la chronologie.
 
    ![chlimage_1-136](assets/chlimage_1-136.png)
 
-1. Cliquez sur le bouton **[!UICONTROL Actions]** en bas.
+1. Cliquez sur **[!UICONTROL Actions]** située dans la partie inférieure.
 
 1. Cliquez sur **[!UICONTROL Démarrer le processus]**. Dans la section **[!UICONTROL Démarrer le processus]**, sélectionnez un modèle de workflow dans la liste.
 
@@ -96,17 +96,17 @@ Pour plus d’informations sur l’application d’un workflow à une collection
 
 ## Démarrage automatique d’un workflow pour traiter les ressources de manière conditionnelle {#auto-execute-workflow-on-some-assets}
 
-Les administrateurs peuvent configurer le workflow pour exécuter et traiter automatiquement les ressources en fonction de conditions prédéfinies. Cette fonctionnalité est utile pour les utilisateurs et les spécialistes du marketing du secteur, par exemple pour créer un workflow personnalisé sur des dossiers spécifiques. Disons que toutes les ressources de la séance photo d’une agence peuvent être filigrane ou que toutes les ressources téléchargées par un programme de travail indépendant peuvent être traitées pour créer des rendus spécifiques.
+Les administrateurs peuvent configurer un workflow pour exécuter et traiter automatiquement les ressources en fonction de conditions prédéfinies. Cette fonctionnalité est utile pour les utilisateurs et les spécialistes du marketing du secteur, par exemple pour créer un workflow personnalisé sur des dossiers spécifiques. Disons que toutes les ressources de la séance photo d’une agence peuvent recevoir un filigrane ou que toutes les ressources téléchargées par un programme de travail indépendant peuvent être traitées pour créer des rendus spécifiques.
 
-Pour un modèle de workflow, les utilisateurs peuvent créer un lanceur de workflow qui l’exécute. Un lanceur de workflow surveille les modifications du référentiel de contenu et exécute le workflow lorsque les conditions prédéfinies sont remplies. Les administrateurs peuvent donner accès aux marketeurs pour créer les workflows et configurer le lanceur. Les utilisateurs peuvent modifier la valeur par défaut. [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] pour ajouter les étapes supplémentaires requises pour traiter des ressources spécifiques. Le workflow s’exécute sur toutes les ressources nouvellement chargées. Utilisez l’une des méthodes suivantes pour limiter l’exécution des étapes supplémentaires sur des ressources spécifiques :
+Pour chaque modèle de workflow, les utilisateurs peuvent créer un lanceur de workflow qui l’exécute. Un lanceur de workflow surveille les modifications du référentiel de contenu et exécute le workflow lorsque les conditions prédéfinies sont remplies. Les administrateurs peuvent donner accès aux marketeurs pour leur permettre de créer les workflows et de configurer le lanceur. Les utilisateurs peuvent modifier le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] par défaut pour ajouter les étapes supplémentaires requises pour traiter des ressources spécifiques. Le workflow s’exécute sur toutes les ressources nouvellement chargées. Utilisez l’une des méthodes suivantes pour limiter l’exécution des étapes supplémentaires sur des ressources spécifiques :
 
-* Effectuez une copie de la fonction [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] et modifiez-la pour l’exécuter sur une hiérarchie de dossiers spécifique. Cette approche est utile pour quelques dossiers.
-* Les étapes de traitement supplémentaires peuvent être ajoutées à l’aide d’une [Division OU](/help/sites-developing/workflows-step-ref.md#or-split) s’applique de manière conditionnelle au plus grand nombre de dossiers requis.
+* Effectuez une copie du workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] et modifiez-la pour l’exécuter sur une hiérarchie de dossiers spécifique. Cette approche est utile pour quelques dossiers.
+* Les étapes de traitement supplémentaires peuvent être ajoutées à l’aide d’une [Division OU](/help/sites-developing/workflows-step-ref.md#or-split) qui s’applique de manière conditionnelle au plus grand nombre de dossiers requis.
 
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
 * Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage suite à une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
-* Par défaut, [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] workflow comprend quelques étapes pour créer des miniatures et des rendus web. Si des rendus par défaut sont supprimés du workflow, l’interface utilisateur de [!DNL Assets] ne s’affiche pas correctement.
+* Par défaut, le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] comprend quelques étapes pour créer des miniatures et des rendus Web. Si des rendus par défaut sont supprimés du workflow, l’interface utilisateur d’[!DNL Assets] ne s’affiche pas correctement.
 
 >[!MORELIKETHIS]
 >

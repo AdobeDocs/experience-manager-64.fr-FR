@@ -1,7 +1,7 @@
 ---
 title: Installation autonome personnalisée
 seo-title: Custom Standalone Install
-description: 'Découvrez les options disponibles lors de l’installation d’une instance AEM autonome. '
+description: Découvrez les options disponibles lors de l’installation d’une instance AEM autonome.
 seo-description: Learn about the options available when installing a standalone AEM instance.
 uuid: e1cb45c4-3b2b-4951-8f67-213072e825b3
 contentOwner: Tyler Rushton
@@ -9,13 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: c9e51008-6009-49a2-9c74-1c610cef2e7f
-source-git-commit: b7e5c42009acb5044d1112e66b8e65b528355736
+exl-id: 0933f733-50bf-48ae-a5da-be5dc9335253
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '1509'
-ht-degree: 77%
+ht-degree: 94%
 
 ---
-
 
 # Installation autonome personnalisée{#custom-standalone-install}
 
@@ -23,13 +23,13 @@ Cette section décrit les options disponibles lors de l’installation d’une i
 
 ## Modification du numéro de port en renommant le fichier {#changing-the-port-number-by-renaming-the-file}
 
-Le port par défaut pour AEM est 4502. Si ce port n’est pas disponible ou est déjà utilisé, Quickstart se configure automatiquement pour utiliser le premier numéro de port disponible comme suit : 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<random>`.
+Le port par défaut pour AEM est 4502. Si ce port n’est pas disponible ou est en cours d’utilisation, le démarrage rapide se configure automatiquement afin d’utiliser le premier numéro de port disponible comme suit : 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<random>`.
 
-Vous pouvez également définir le numéro de port en renommant le fichier jar de démarrage rapide, de sorte que le nom du fichier inclut le numéro de port ; par exemple, `cq5-publish-p4503.jar` ou `cq5-author-p6754.jar`.
+Vous pouvez également définir le numéro de port en renommant le fichier jar de démarrage rapide afin que le nom de fichier inclue le numéro de port ; par exemple, `cq5-publish-p4503.jar` ou `cq5-author-p6754.jar`.
 
 Les différentes règles suivantes s’appliquent lorsque vous renommez le fichier jar de démarrage rapide :
 
-* Lorsque vous renommez le fichier, il doit commencer par `cq;` as in `cq5-publish-p4503.jar`.
+* Lorsque vous renommez le fichier, il doit commencer par `cq;`, par exemple `cq5-publish-p4503.jar`.
 
 * Nous vous recommandons d’ajouter *systématiquement* un préfixe au numéro de port sous la forme suivante : « -p », par exemple cq5-publish-p4503.jar ou cq5-author-p6754.jar.
 
@@ -41,13 +41,12 @@ Les différentes règles suivantes s’appliquent lorsque vous renommez le fichi
 >* ces chiffres doivent figurer après un tiret
 >* si le nom du fichier comporte d’autres chiffres, alors le numéro du port doit comporter le préfixe `-p`
 >* le préfixe « cq5 » au début du nom du fichier est ignoré
-
 >
 
 
 >[!NOTE]
 >
->Vous pouvez également modifier le numéro de port à l’aide du `-port` dans la commande start.
+>Vous pouvez également modifier le numéro de port à l’aide de l’option `-port` dans la commande de démarrage.
 
 ## Modes d’exécution {#run-modes}
 
@@ -71,7 +70,7 @@ Cette méthode est tout particulièrement intéressante dans plusieurs cas d’e
 
 >[!NOTE]
 >
->Voir aussi [Comment installer automatiquement les packages CRX au démarrage du serveur](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) pour obtenir des exemples.
+>Pour des exemples, consultez également [Comment installer des modules CRX automatiquement au démarrage du serveur](https://helpx.adobe.com/fr/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html).
 
 ## Installation et démarrage d’Adobe Experience Manager en tant que service Windows {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
@@ -84,14 +83,14 @@ Cette méthode est tout particulièrement intéressante dans plusieurs cas d’e
 Pour installer et démarrer AEM en tant que service Windows :
 
 1. Ouvrez le fichier crx-quickstart\opt\helpers\instsrv.bat dans un éditeur de texte.
-1. Si vous configurez un serveur Windows 64 bits, remplacez toutes les instances de prunsrv par l’une des commandes suivantes, en fonction de votre système d’exploitation :
+1. Si vous configurez un serveur Windows 64 bits, remplacez toutes les instances de prunsrv par l’une des commandes suivantes, en fonction du système d’exploitation :
 
    * prunsrv_amd64 
    * prunsrv_ia64 
 
-   Cette commande appelle le script approprié qui démarre le démon du service Windows en Java 64 bits au lieu de Java 32 bits.
+   Cette commande appelle le script approprié qui lance le service de démon Windows en Java 64 bits au lieu de 32 bits.
 
-1. Pour empêcher le processus de se diviser en plusieurs processus, augmentez la taille maximale du tas ainsi que les paramètres JVM PermGen. Recherchez la variable `set jvm_options` et définissez la valeur comme suit :
+1. Pour empêcher le processus de se diviser en plusieurs processus, augmentez la taille maximale du tas ainsi que les paramètres JVM PermGen. Localisez la commande `set jvm_options` et définissez la valeur comme suit :
 
    `set jvm_options=-XX:MaxPermSize=256M;-Xmx1792m`
 
@@ -121,7 +120,7 @@ Pour installer et démarrer AEM en tant que service Windows :
 
 >[!NOTE]
 >
->Lors de l’installation d’AEM en tant que service, vous devez fournir le chemin d’accès absolu au répertoire des journaux dans `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` à partir de Configuration Manager.
+>Lorsque vous installez AEM en tant que service, vous devez indiquer le chemin absolu pour le répertoire des journaux dans `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` à partir du gestionnaire de la configuration.
 
 Pour désinstaller le service, cliquez sur **Arrêter** dans le panneau de commande **Services** ou dans la ligne de commande, accédez au dossier et saisissez `instsrv.bat -uninstall cq5`. Le service est supprimé de la liste du panneau de commande **Services** ou de la liste de la ligne de commande lorsque vous saisissez `net start`.
 
@@ -140,7 +139,7 @@ Si vous souhaitez modifier l’emplacement du dossier temporaire (par exemple, s
 
 ## Autres options disponibles à partir du fichier de démarrage rapide {#further-options-available-from-the-quickstart-file}
 
-D’autres options et conventions de changement de nom sont décrites dans le fichier d’aide de Quickstart, disponible via l’option -help. Pour accéder à l’aide, tapez :
+D’autres options et conventions de renommage sont décrites dans le fichier d’aide du démarrage rapide, disponibles par l’intermédiaire de l’option- help. Pour accéder à l’aide, tapez :
 
 * `java -jar cq5-<version>.jar -help`
 
@@ -281,17 +280,17 @@ Vous pouvez utiliser les liens suivants afin de vérifier que l’installation f
 
 * `http://localhost:8080/crx/de`
 
-   Console du CRXDE Lite.
+   Console du CRXDE Lite.
 
 * `http://localhost:8080/system/console`
 
-   Console web.
+   Console Web.
 
 ## Actions après l’installation {#actions-after-installation}
 
 Bien qu’il existe de nombreuses possibilités pour configurer la gestion de contenu web d’AEM, certaines actions doivent être entreprises ou, au moins, vérifiées immédiatement après l’installation :
 
-* Consultez la [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) pour les tâches requises afin de garantir la sécurité de votre système.
+* Consultez la [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) pour obtenir les tâches requises permettant de garantir que votre système reste sécurisé.
 * Vérifiez la liste des utilisateurs et groupes par défaut qui sont installés avec la gestion de contenu web d’AEM. Vérifiez si vous souhaitez entreprendre des actions sur d’autres comptes - voir [Sécurité et administration des utilisateurs](/help/sites-administering/security.md) pour plus d’informations.
 
 ## Accès à CRXDE Lite et à la console Web {#accessing-crxde-lite-and-the-web-console}
@@ -303,7 +302,7 @@ Une fois que vous avez démarré la gestion de contenu web d’AEM, vous pouvez 
 
 ### Accès à CRXDE Lite {#accessing-crxde-lite}
 
-Pour ouvrir CRXDE Lite, vous pouvez sélectionner **CRXDE Lite** dans l’écran de bienvenue ou utilisez votre navigateur pour accéder à
+Pour ouvrir CRXDE Lite, vous pouvez sélectionner **CRXDE Lite** dans l’écran de bienvenue ou utiliser le navigateur pour accéder à
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
@@ -316,7 +315,7 @@ Par exemple :\
 
 ### Accès à la console Web {#accessing-the-web-console}
 
-Pour accéder à la console web Adobe CQ, vous pouvez sélectionner **Console OSGi** dans l’écran de bienvenue ou utilisez votre navigateur pour accéder à
+Pour accéder à la console Web Adobe CQ, vous pouvez sélectionner **Console OSGi** depuis l’écran de bienvenue ou utiliser le navigateur pour accéder à
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/system/console

@@ -8,11 +8,11 @@ exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
 source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
-# Utilisation des ressources [!DNL Adobe Stock] dans [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
+# Utiliser des ressources de [!DNL Adobe Stock] dans [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
 Les entreprises peuvent intégrer leur formule d’abonnement pour entreprise [!DNL Adobe Stock] dans [!DNL Experience Manager Assets] pour s’assurer que les ressources sous licence sont mises à la disposition de leurs projets de création et marketing, tout en bénéficiant des puissantes fonctionnalités de gestion de ressources d’[!DNL Experience Manager].
 
@@ -20,7 +20,7 @@ Le service [!DNL Adobe Stock] permet aux créateurs et aux entreprises d’accé
 
 ## Prérequis {#prerequisites}
 
-Pour que l’intégration soit possible, l’[abonnement Adobe Stock entreprise](https://stockenterprise.adobe.com/) est requis et  6.4 (Service Pack 2 minimum) doit être déployé. [!DNL Experience Manager] Pour [!DNL Experience Manager] 6.4 Informations détaillées sur le Service Pack, voir ces [notes de mise à jour](/help/release-notes/sp-release-notes.md).
+Pour que l’intégration soit possible, l’[abonnement Adobe Stock entreprise](https://stockenterprise.adobe.com/fr/home.html) est requis et  6.4 (Service Pack 2 minimum) doit être déployé. [!DNL Experience Manager] Pour [!DNL Experience Manager] 6.4 Informations détaillées sur le Service Pack, voir ces [notes de mise à jour](/help/release-notes/sp-release-notes.md).
 
 ## Intégration d’[!DNL Experience Manager] et [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -45,7 +45,7 @@ Pour permettre à [!DNL Experience Manager] et [!DNL Adobe Stock] de communiquer
 
 ### Création d’une configuration [!DNL Adobe Stock] dans [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}
 
-1. Dans le [!DNL Experience Manager] interface utilisateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. Dans l’interface utilisateur d’[!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Cliquez sur **[!UICONTROL Créer]** pour créer une configuration et l’associer à votre configuration IMS existante. Sélectionnez `PROD` comme paramètre d’environnement.
 1. Ne modifiez pas l’emplacement défini dans le champ **[!UICONTROL Chemin d’accès aux ressources sous licence]**. Ne modifiez pas l’emplacement où vous souhaitez stocker les ressources [!DNL Adobe Stock].
 1. Pour terminer la procédure de création, ajoutez toutes les propriétés requises. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
@@ -65,7 +65,7 @@ Une fois qu’une ressource [!DNL Adobe Stock] est sous licence dans [!DNL Exper
 
 *Figure : Rechercher [!DNL Adobe Stock] ressources et filtrez les résultats de vos [!DNL Experience Manager] .*
 
-**A.**[!DNL Adobe Stock] Rechercher les ressources semblables à celles dont l’ID est fourni. **B.** Rechercher les ressources correspondant à la forme ou à l’orientation que vous avez sélectionnée. **C.** Recherche d’un autre type de ressource pris en charge **D.** Ouvrir ou réduire le volet Filtres **E.** Licence et enregistrement de la ressource sélectionnée dans [!DNL Experience Manager] **F.** Enregistrez la ressource dans [!DNL Experience Manager] avec filigrane **G.** Exploration des ressources sur [!DNL Adobe Stock] site web similaire à la ressource sélectionnée **H.** Afficher les ressources sélectionnées sur [!DNL Adobe Stock] site web **I.** Nombre de ressources sélectionnées à partir des résultats de recherche **J.** Basculer entre le mode Carte et le mode Liste
+**A.** Rechercher des ressources semblables à celles dont l’ID d’[!DNL Adobe Stock] est fourni. **B.** Rechercher des ressources correspondant à la forme ou à l’orientation que vous avez sélectionnée. **C.** Rechercher un ou plusieurs types de ressource pris en charge. **D.** Ouvrir ou réduire le volet Filtres. **E.** Obtenir la licence et enregistrer la ressource sélectionnée dans [!DNL Experience Manager]. **F.** Enregistrer la ressource dans [!DNL Experience Manager] avec filigrane. **G.** Explorer des ressources semblables à la ressource sélectionnée sur le site web d’[!DNL Adobe Stock]. **H.** Afficher des ressources sélectionnées sur le site web d’[!DNL Adobe Stock]. **I.** Nombre de ressources sélectionnées à partir des résultats de la recherche. **J.** Basculer entre les affichages Carte et Liste.
 
 ### Recherche de ressources {#find-assets}
 
@@ -123,7 +123,7 @@ Les utilisateurs peuvent afficher les propriétés de toutes les ressources, ave
 
 >[!MORELIKETHIS]
 >
->* [Tutoriel vidéo sur l’utilisation de [!DNL Adobe Stock] ressources avec [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr)
->* [[!DNL Adobe Stock] aide pour les plans d’entreprise](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
+>* [Tutoriel vidéo sur l’utilisation de ressources  [!DNL Adobe Stock]  avec  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr)
+>* Aide sur la formule Entreprise d’[[!DNL Adobe Stock] ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
 >* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/fr/stock/faq.html)
 

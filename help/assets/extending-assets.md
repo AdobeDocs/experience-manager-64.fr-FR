@@ -8,15 +8,15 @@ exl-id: 0291690b-874a-483d-901f-f02cb6d8ab28
 source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 # Personnalisation et extension de ressources {#customizing-and-extending-assets}
 
-Asset Editor est le point d’accès Principal que les utilisateurs d’un site web Enterprise Manager d’Adobe vont utiliser pour rechercher, afficher et manipuler les ressources numériques de votre référentiel.
+L’Éditeur de ressources est le point d’accès principal que les utilisateurs d’un site Web Adobe Enterprise Manager utiliseront pour rechercher, afficher et manipuler les ressources numériques dans votre référentiel.
 
-En tant que [!DNL Experience Manager] développeur, vous pouvez personnaliser et étendre l’Éditeur de ressources de différentes manières, en présentant aux utilisateurs une interface et un ensemble de fonctionnalités spécifiquement personnalisés.
+En tant que développeur [!DNL Experience Manager], vous pouvez personnaliser et étendre l’Éditeur de ressources de multiples façons pour proposer aux utilisateurs une interface et un ensemble de fonctionnalités adaptés spécialement à leurs besoins.
 
 Les aspects suivants de la fonctionnalité peuvent être adaptés ou développés :
 
@@ -29,7 +29,7 @@ Les aspects suivants de la fonctionnalité peuvent être adaptés ou développé
 
 ## Personnalisation de l’apparence et du comportement {#customizing-the-look-and-feel}
 
-Les aspects suivants de l’apparence de l’Éditeur de ressources sont personnalisables :
+Les aspects suivants de l’aspect et du comportement de l’Éditeur de ressources sont personnalisables :
 
 * Logo : vous pouvez ajouter le logo de votre entreprise à l’interface.
 * Couleurs et polices : vous pouvez changer les couleurs et polices de l’interface.
@@ -37,6 +37,6 @@ Les aspects suivants de l’apparence de l’Éditeur de ressources sont personn
 
 ## Personnalisation des rendus {#customizing-renditions}
 
-Dans [!DNL Experience Manager Assets] terminologie : un rendu est le formulaire dans lequel une ressource est présentée. En général, une ressource particulière peut posséder plusieurs rendus. Par exemple, une image en couleur peut avoir un rendu dans sa taille d’origine, une autre à un format réduit et une autre à la fois dans un format réduit et un format converti en niveaux de gris.
+Dans la terminologie d’[!DNL Experience Manager Assets], un rendu est la forme dans laquelle une ressource est présentée. En général, une ressource particulière peut posséder plusieurs rendus. Par exemple, une image en couleur peut avoir un rendu dans sa taille d’origine, une autre à un format réduit et une autre à la fois dans un format réduit et un format converti en niveaux de gris.
 
 Les rendus dans lesquels une ressource particulière est disponible peuvent être personnalisés, et de nouveaux rendus peuvent être créés.

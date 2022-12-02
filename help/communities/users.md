@@ -14,7 +14,7 @@ exl-id: 54109f64-eb30-47cc-bf7a-756843d2da02
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2168'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -78,7 +78,7 @@ Pour gérer les utilisateurs et les groupes d’utilisateurs enregistrés dans l
 | Communauté &lt;*nom du site*> Gestionnaire de sites | Le gestionnaire de contenu du site de la communauté peut effectuer des AEM classiques de création, de création de contenu et de modification de pages pour un site de la communauté. |
 | Chefs d’activation de la communauté | Le groupe Chefs d’activation de la communauté se compose d’utilisateurs pouvant être affectés à la gestion du groupe Gestionnaires d’activation d’un site de la communauté. |
 | Communauté &lt;*nom du site* > Gestionnaire de sites | Le groupe Chefs d’activation du site de la communauté est constitué d’utilisateurs chargés de gérer l’activation d’un site de la communauté. [ressources](resources.md). |
-| Aucune | Un visiteur anonyme du site ne peut pas accéder à l’environnement de création. |
+| Aucun | Un visiteur anonyme du site ne peut pas accéder à l’environnement de création. |
 
 ### Administrateurs système {#system-administrators}
 
@@ -117,7 +117,7 @@ Dans l’environnement de publication, en fonction de la variable [paramètres](
 | Communauté &lt;*nom du site*> &lt;*nom du groupe*> Membres | Un membre d’un groupe communautaire est un membre de la communauté qui a rejoint un groupe communautaire ouvert ou qui a été invité à un groupe communautaire fermé. Ils disposent des capacités d’un membre pour ce groupe de la communauté dans le site. |
 | Communauté &lt;*nom du site*> Administrateurs de groupes | Un administrateur de groupe de sites de communauté est un membre de communauté de confiance qui est chargé de créer et de gérer des sous-communautés (groupes) au sein d’un site de communauté. Il comprend la possibilité de fournir une modération contextuelle. |
 | *Groupe de sécurité des membres privilégiés* | Groupe d’utilisateurs créé et géré manuellement dans le but de limiter la création de contenu. Voir [Groupe de membres privilégiés](#privileged-members-group). |
-| Aucune | Un visiteur anonyme, qui découvre le site, peut afficher et rechercher des sites communautaires qui autorisent un accès anonyme. Pour participer et publier du contenu, l’utilisateur doit s’enregistrer (s’il y a lieu) et devenir membre de la communauté. |
+| Aucun | Un visiteur anonyme, qui découvre le site, peut afficher et rechercher des sites communautaires qui autorisent un accès anonyme. Pour participer et publier du contenu, l’utilisateur doit s’enregistrer (s’il y a lieu) et devenir membre de la communauté. |
 
 ### Affectation de membres aux rôles du groupe de publication {#assigning-members-to-publish-group-roles}
 
@@ -246,7 +246,7 @@ Voici quelques détails de configuration spécifiques aux membres de la communau
    * Définissez les propriétés suivantes :
 
       * **[!UICONTROL Abonnement automatique des utilisateurs]**: `community-<site name>-<uid>-members`
-      * **[!UICONTROL Préfixe de chemin d’accès utilisateur]**: `/community`
+      * **[!UICONTROL Préfixe du chemin d’accès de l’utilisateur]**: `/community`
       * **[!UICONTROL Préfixe de chemin d’accès au groupe]**: `/community`
 
 4. [Module de connexion externe](../../help/sites-administering/ldap-config.md#the-external-login-module)

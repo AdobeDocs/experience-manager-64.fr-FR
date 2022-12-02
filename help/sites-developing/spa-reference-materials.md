@@ -13,20 +13,20 @@ exl-id: d4f7f94c-11f2-47c7-84ad-115aa5f2a06e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '161'
-ht-degree: 80%
+ht-degree: 92%
 
 ---
 
 # Documents de référence SPA {#spa-reference-materials}
 
-## Références de l’API JavaScript SPA{#spa-javascript-api-references}
+## Références de l’API JavaScript de SPA{#spa-javascript-api-references}
 
-Vous trouverez ci-dessous les références d’API JavaScript disponibles des modules NPM pour le framework SDK de l’éditeur de SPA AEM.
+Vous trouverez ci-dessous les références de l’API JavaScript disponibles des modules NPM pour le framework de SDK de l’éditeur de SPA d’AEM.
 
 >[!NOTE]
 >La fonction Éditeur d’application sur une seule page (SPA) nécessite [AEM 6.4 Service Pack 2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html) ou plus récent.
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 * [Mappage de composant](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Gestionnaire de modèle de page](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)

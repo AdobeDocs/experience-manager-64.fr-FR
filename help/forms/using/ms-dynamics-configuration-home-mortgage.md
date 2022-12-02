@@ -62,7 +62,7 @@ Avant de commencer à installer et configurer Dynamics 365, vérifiez que vous 
 
 1. Pour créer une entité personnalisée pour stocker l’enregistrement de demandeur pour une demande de prêt immobilier, importez le package de solution AEMFormsFSIRefsite_1_0.zip sur votre instance Microsoft® Dynamics :
 
-   1. Téléchargez le package à partir de :
+   1. Téléchargez le module  à partir de la:
 
       `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
@@ -70,7 +70,7 @@ Avant de commencer à installer et configurer Dynamics 365, vérifiez que vous 
 
 1. Pour configurer les coordonnées de l’utilisateur utilisées dans le site de référence, importez le package Sarah Rose Contact.CSV dans votre instance Microsoft® Dynamics :
 
-   1. Téléchargez le package à partir de :
+   1. Téléchargez le module  à partir de la:
 
       `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 

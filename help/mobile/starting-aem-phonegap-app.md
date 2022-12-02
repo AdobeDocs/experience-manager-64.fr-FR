@@ -9,13 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 2ecf05ed-4e56-4e0b-89cf-5161741f9001
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+exl-id: 8e9a8739-76cd-4507-9c6c-86a5ad486618
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 14%
 
 ---
-
 
 # Démarrage AEM PhoneGap {#starting-aem-phonegap}
 
@@ -53,7 +53,7 @@ Une fois que vous avez une bonne compréhension des deux étapes ci-dessus, acc�
 1. [Anatomie d’une application AEM Mobile](/help/mobile/phonegap-apps-arch.md)
 1. [Votre application existante est-elle prête pour AEM Mobile ?](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-## Étapes suivantes {#the-next-steps}
+## Les étapes suivantes {#the-next-steps}
 
 1. [Expérimenter le développement d’une application AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
 1. [Gérer le contenu d’une application mobile](/help/mobile/phonegap-manage-app-content.md)

@@ -13,7 +13,7 @@ exl-id: f620e85e-8c77-41a3-a238-9b93c819909d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '481'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -100,7 +100,7 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
    Cette option active les raccourcis clavier. Ils sont activés par défaut, mais il est possible de les désactiver, par exemple si un utilisateur a certaines exigences d’accessibilité.
 
-* **Utilisez une expérience de création de contenu classique**
+* **Utilisez une expérience de création de contenu classique**.
 
    Cette option permet la création de pages basée sur l’[IU classique](/help/sites-classic-ui-authoring/home.md). Par défaut, l’IU standard est utilisée.
 

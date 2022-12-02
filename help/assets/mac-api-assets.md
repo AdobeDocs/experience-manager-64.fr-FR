@@ -8,7 +8,7 @@ exl-id: 3d7d078c-5046-489a-a8e0-258acaea7191
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 87%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne 
 
 >[!CAUTION]
 >
->[L’API HTTP met à jour les propriétés des métadonnées](#update-asset-metadata) dans le `jcr` espace de noms. Toutefois, l’interface utilisateur du Experience Manager met à jour les propriétés de métadonnées dans la variable `dc` espace de noms.
+>[L’API HTTP met à jour les propriétés des métadonnées](#update-asset-metadata) dans l’espace de noms `jcr`. Toutefois, l’interface utilisateur d’Experience Manager met à jour les propriétés de métadonnées dans l’espace de noms `dc`.
 
 ## Modèle de données {#data-model}
 
@@ -56,7 +56,7 @@ Les dossiers **Liens** présentent trois liens :
 
 ### Assets {#assets}
 
-En Experience Manager, une ressource contient les éléments suivants :
+Dans Experience Manager, une ressource contient les éléments suivants :
 
 * Propriétés et métadonnées de la ressource.
 * Plusieurs rendus tels que le rendu d’origine (qui est la ressource chargée initialement), une miniature et divers autres rendus. Les rendus supplémentaires peuvent être des images de tailles différentes, différents codages vidéo ou des pages extraites de fichiers PDF ou Adobe InDesign.
@@ -72,8 +72,8 @@ L’API Assets HTTP offre les fonctionnalités suivantes :
 
 * [Récupérer une liste de dossiers](#retrieve-a-folder-listing)
 * [Créer un dossier](#create-a-folder)
-* [Créer une ressource](#create-an-asset).
-* [Mettre à jour le fichier binaire d’une ressource](#update-asset-binary).
+* [Créer une ressource](#create-an-asset)
+* [Mettre à jour le fichier binaire d’une ressource](#update-asset-binary)
 * [Mettre à jour les métadonnées d’une ressource](#update-asset-metadata)
 * [Créer un rendu de ressource](#create-an-asset-rendition)
 * [Mettre à jour un rendu de ressource](#update-an-asset-rendition)
@@ -86,11 +86,11 @@ L’API Assets HTTP offre les fonctionnalités suivantes :
 >
 >Pour faciliter la lecture, la notation cURL complète n’est pas utilisée dans les exemples suivants. En fait, la notation est liée à [Resty](https://github.com/micha/resty) qui est un wrapper de script pour `cURL`.
 
-**Prérequis**
+**Conditions préalables**
 
 * Accédez à l’adresse `https://[aem_server]:[port]/system/console/configMgr`.
-* Accédez à **[!UICONTROL Adobe du filtre CSRF Granite]**.
-* Assurez-vous que la propriété **[!UICONTROL Méthodes de filtre]** inclut : `POST`, `PUT`, `DELETE`.
+* Accédez au **[!UICONTROL Filtre CSRF Adobe Granite]**.
+* Assurez-vous que la propriété **[!UICONTROL Méthodes de filtrage]** inclut : `POST`, `PUT`, `DELETE`.
 
 ## Récupérer une liste de dossiers {#retrieve-a-folder-listing}
 
@@ -128,9 +128,9 @@ Un appel d’API échoue avec un code de réponse `500` si le nœud parent du ch
 
 ## Créer une ressource  {#create-an-asset}
 
-Placez le fichier fourni à l’emplacement indiqué pour créer une ressource dans le référentiel DAM. Si une `*` est fourni à la place d’un nom de noeud, le servlet utilise le nom du paramètre ou le nom du fichier comme nom de noeud.
+Placez le fichier fourni à l’emplacement indiqué pour créer une ressource dans le référentiel de gestion des ressources numériques. Si un astérisque `*` est indiqué au lieu d’un nom de nœud, le servlet utilise le nom du paramètre ou du fichier comme nom de nœud.
 
-**Paramètres**: Les paramètres sont les suivants : `name` pour le nom de la ressource et `file` pour la référence au fichier.
+**Paramètres** : les paramètres sont `name` pour le nom de la ressource et `file` pour la référence au fichier.
 
 **Requête**
 
@@ -139,14 +139,14 @@ Placez le fichier fourni à l’emplacement indiqué pour créer une ressource d
 
 **Codes de réponse** : les codes de réponse sont les suivants :
 
-* 201 - CRÉÉ - si la ressource a été créée avec succès.
-* 409 - CONFLIT - si Asset existe déjà.
+* 201 – CRÉÉ – Si la ressource a été créée avec succès.
+* 409 – CONFLIT – Si une ressource existe déjà.
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
 * 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
 
 ## Mettre à jour un fichier binaire de ressource {#update-asset-binary}
 
-Met à jour le binaire d’une ressource (rendu portant le nom original). Une mise à jour déclenche l’exécution du workflow de traitement des ressources par défaut, s’il est configuré.
+Met à jour un fichier binaire de ressource (rendu avec le nom d’origine). La mise à jour déclenche l’exécution du workflow de traitement des ressources par défaut, s’il est configuré.
 
 **Requête** : `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
@@ -170,9 +170,9 @@ Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez 
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
 * 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
 
-### Mise à jour des métadonnées de synchronisation entre `dc` et `jcr` namespace {#sync-metadata-between-namespaces}
+### Mise à jour des métadonnées de synchronisation entre l’espace de noms `dc` et `jcr` {#sync-metadata-between-namespaces}
 
-La méthode API met à jour les propriétés de métadonnées dans la variable `jcr` espace de noms. Les mises à jour effectuées à l’aide de l’interface utilisateur tactile modifient les propriétés de métadonnées dans la variable `dc` espace de noms. Pour synchroniser les valeurs des métadonnées entre `dc` et `jcr` , vous pouvez créer un workflow et configurer Experience Manager pour exécuter le workflow lors de la modification des ressources. Utilisez un script ECMA pour synchroniser les propriétés de métadonnées requises. L’exemple de script suivant synchronise la chaîne de titre entre `dc:title` et `jcr:title`.
+La méthode API met à jour les propriétés de métadonnées dans l’espace de noms `jcr`. Les mises à jour effectuées à l’aide de l’interface utilisateur tactile modifient les propriétés de métadonnées dans la variable `dc` espace de noms. Pour synchroniser les valeurs des métadonnées entre l’espace de noms `dc` et `jcr`, vous pouvez créer un workflow et configurer Experience Manager pour exécuter le workflow lors de la modification des ressources. Utilisez un script ECMA pour synchroniser les propriétés de métadonnées requises. L’exemple de script suivant synchronise la chaîne de titre entre `dc:title` et `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();

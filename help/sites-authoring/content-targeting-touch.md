@@ -291,7 +291,7 @@ Si vous voulez modifier le contenu ciblé, vous devez pour cela cliquer ou appuy
    >S’il est défini par l’administrateur, vous pouvez avoir besoin de définir explicitement l’emplacement.
    >
    >Les administrateurs peuvent déterminer si la définition de cette configuration est nécessaire en consultant **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
-   >Pour obliger les utilisateurs à saisir un emplacement, cochez la case **Forcer à indiquer l’emplacement**.
+   Pour obliger les utilisateurs à saisir un emplacement, cochez la case **Forcer à indiquer l’emplacement**.
 
 1. Sélectionnez l’expérience pour laquelle vous souhaitez créer l’offre.
 1. Création de l’offre :
@@ -572,19 +572,19 @@ Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target 
    Toutes les mesures comportent également des paramètres avancés que vous pouvez définir. Sélectionnez **Paramètres avancés** pour y accéder. Reportez-vous à la définition de la comptabilisation des mesures de succès dans le tableau précédent et à la [Documentation d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
-   >Un objectif au moins doit être défini.
+   Un objectif au moins doit être défini.
 
    ![chlimage_1-85](assets/chlimage_1-85.png)
 
    >[!NOTE]
-   >S’il manque des informations dans votre mesure, la mesure est entourée d’une ligne rouge.
+   S’il manque des informations dans votre mesure, la mesure est entourée d’une ligne rouge.
 
 1. Cliquez sur **Ajouter une nouvelle mesure** pour configurer d’autres mesures de succès.
 
    ![chlimage_1-86](assets/chlimage_1-86.png)
 
    >[!NOTE]
-   >Vous pouvez supprimer d’autres objectifs en cliquant ou en appuyant sur le bouton de sélection et cliquant ou en appuyant sur **Supprimer**. AEM exige qu’au moins un objectif soit défini.
+   Vous pouvez supprimer d’autres objectifs en cliquant ou en appuyant sur le bouton de sélection et cliquant ou en appuyant sur **Supprimer**. AEM exige qu’au moins un objectif soit défini.
 
 1. Si vous souhaitez mieux contrôler la méthode de comptabilisation des mesures de succès, cliquez ou appuyez sur **Paramètres avancés** pour y accéder.
 1. Cliquez sur **Enregistrer**.
@@ -606,7 +606,7 @@ Les critères ci-dessous déterminent le contenu qui s’affiche lors de la simu
 Si un contenu inattendu s’affiche dans la page lorsque vous chargez un profil, vérifiez la configuration de chaque élément de cette liste.
 
 >[!NOTE]
->Si vous utilisez des tests A/B, lors de la simulation, les expériences s’affichent en fonction du pourcentage de trafic. Cette action est gérée par Adobe Target, ce qui peut entraîner des résultats inattendus pour les créateurs. (L’activité _créateur est synchronisée avec les paramètres spécifiques qui permettent une réévaluation lors de la simulation.) Les créateurs peuvent avoir besoin d’actualiser pour afficher les autres expériences en fonction des paramètres de trafic.
+Si vous utilisez des tests A/B, lors de la simulation, les expériences s’affichent en fonction du pourcentage de trafic. Cette action est gérée par Adobe Target, ce qui peut entraîner des résultats inattendus pour les créateurs. (L’activité _créateur est synchronisée avec les paramètres spécifiques qui permettent une réévaluation lors de la simulation.) Les créateurs peuvent avoir besoin d’actualiser pour afficher les autres expériences en fonction des paramètres de trafic.
 
 Pour simuler l’expérience du visiteur, utilisez les outils suivants :
 
@@ -699,7 +699,7 @@ Si vous sélectionnez Adobe Target comme moteur :
 </table>
 
 >[!NOTE]
->Lorsque vous sélectionnez un composant et que vous définissez son ciblage, AEM remplace également le composant et y insère un composant Adobe Target. (Le composant Adobe Target est utilisé non seulement lorsque vous l’ajoutez manuellement à la page, mais également lorsque vous ciblez un composant existant.)
+Lorsque vous sélectionnez un composant et que vous définissez son ciblage, AEM remplace également le composant et y insère un composant Adobe Target. (Le composant Adobe Target est utilisé non seulement lorsque vous l’ajoutez manuellement à la page, mais également lorsque vous ciblez un composant existant.)
 
 Si vous sélectionnez ClientContext (côté client) comme moteur :
 

@@ -13,13 +13,13 @@ exl-id: 997040d4-cf8f-4240-8423-a98d562aae02
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 # Choix de l’interface utilisateur{#selecting-your-ui}
 
-Comme l’IU tactile remplace l’IU classique, l’utilisateur ou l’administrateur de l’instance AEM doit prendre une principale décision de continuer à utiliser l’IU classique. L’IU classique n’étant plus gérée, il n’est plus possible pour l’utilisateur de création de simplement passer de l’IU classique à l’IU équivalente dans l’IU tactile.
+L’interface utilisateur activée pour les écrans tactiles remplace l’IU classique, il appartient donc à l’utilisateur ou à l’administrateur de l’instance AEM de choisir explicitement s’il faut continuer à utiliser cette dernière. Étant donné que l’IU classique n’est plus gérée, il n’est plus possible pour l’auteur de basculer simplement de l’IU classique vers son équivalent dans l’IU activée pour les écrans tactiles.
 
 Pour offrir davantage de confort à ces utilisateurs, l’IU destinée aux écrans tactiles permet de basculer vers l’IU classique lorsque cela s’avère nécessaire. Pour plus d’informations, voir [Choix de l’interface utilisateur](/help/sites-authoring/select-ui.md) dans la documentation de création standard.
 
@@ -27,7 +27,7 @@ Pour offrir davantage de confort à ces utilisateurs, l’IU destinée aux écra
 >
 >Les instances mises à niveau à partir d’une version précédente conservent l’IU classique pour la création de pages.
 >
->Après la mise à niveau, la création de pages ne passe pas automatiquement à l’interface utilisateur tactile, mais vous pouvez la configurer à l’aide de l’option [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) de **Service WCM Author UI Mode** ( `AuthoringUIMode` ). Voir [IU par défaut en fonction de l’éditeur](#uioverridesfortheeditor).
+>Après la mise à niveau, la création de pages ne bascule pas automatiquement vers l’IU tactile. Vous pouvez cependant configurer ce basculement à l’aide de la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du **service Mode d’IU de création de la gestion de contenu web** (service `AuthoringUIMode`). Consultez la section [IU par défaut en fonction de l’éditeur](#uioverridesfortheeditor).
 
 ## Configuration de l’IU par défaut pour votre instance {#configuring-the-default-ui-for-your-instance}
 

@@ -9,7 +9,7 @@ user-guide-description: Créez, gérez, diffusez et optimisez des ressources num
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 78%
+ht-degree: 83%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 78%
 # Guide d’Assets {#assets}
 
 + [Guide d’utilisation d’Assets](home.md)
-+ [Notes de mise à jour d’AEM 6.4 Assets](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
-+ [À propos de DAM](assets.md)
++ [Notes de mise à jour d’AEM 6.4 Assets](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html?lang=fr)
++ [À propos de la gestion des ressources numériques](assets.md)
 + [Améliorations de l’expérience utilisateur](ux-improvements.md)
-+ [Bonnes pratiques relatives aux ressources](best-practices-for-assets.md)
++ [Bonnes pratiques pour les ressources](best-practices-for-assets.md)
 + Utilisation d’AEM Assets {#using}
    + [Expérience sur la page d’accueil d’AEM Assets](assets-home-page.md)
    + [Recherche de ressources dans AEM](search-assets.md)
@@ -36,7 +36,7 @@ ht-degree: 78%
    + [Archive de newsletter sur Dynamic Media par Experience League](dynamic-media-newsletter.md)
    + [Configuration de Dynamic Media](administering-dynamic-media.md)
    + [Utilisation de Dynamic Media](dynamic-media.md)
-   + [Configuration de Dynamic Media - Mode Scene7](config-dms7.md)
+   + [Configuration de Dynamic Media en mode Scene7](config-dms7.md)
    + [Configuration de Dynamic Media – mode hybride](config-dynamic.md)
    + [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
    + [Gestion des ressources Dynamic Media](managing-assets.md)
@@ -48,7 +48,7 @@ ht-degree: 78%
    + [Profils vidéo Dynamic Media](video-profiles.md)
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
-   + [Imagerie dynamique avec rapport pixel d’appareil côté client](client-side-dpr.md)
+   + [Imagerie dynamique avec rapport pixels d’appareil côté client](client-side-dpr.md)
    + [Vidéo](s7-video.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
@@ -74,7 +74,7 @@ ht-degree: 78%
    + [Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)  ](invalidate-cdn-cached-content.md)
    + [Installation du Feature Pack 18912 pour la migration des ressources en masse](bulk-ingest-migrate.md)
    + [Utilisation des sélecteurs](working-with-selectors.md)
-+ Étendre les ressources {#extending}
++ Extension d’Assets {#extending}
    + [Personnalisation et extension de ressources](extending-assets.md)
    + [Traitement des ressources à l’aide des workflows et des gestionnaires de médias](media-handlers.md)
    + [Extension de la recherche de ressources](searchx.md)
@@ -83,7 +83,7 @@ ht-degree: 78%
    + [Extension de l’Éditeur de ressources](asseteditorx.md)
    + [API HTTP Assets](mac-api-assets.md)
    + [Développement d’un proxy Assets](proxy.md)
-+ Administration des ressources {#administer}
++ Administration d’Assets {#administer}
    + [Formats pris en charge par Assets](assets-formats.md)
    + [Facettes de recherche](search-facets.md)
    + [Gestion des métadonnées des ressources](metadata.md)
@@ -93,7 +93,7 @@ ht-degree: 78%
    + [Balises intelligentes améliorées](enhanced-smart-tags.md)
    + [Profils de traitement des métadonnées, des images et des vidéos](processing-profiles.md)
    + [Métadonnées en cascade](cascading-metadata.md)
-   + [Créer et configurer des pages Éditeur de ressources](assets-finder-editor.md)
+   + [Création et configuration de pages Éditeur de ressources personnalisées](assets-finder-editor.md)
    + [Guide de dimensionnement des ressources](assets-sizing-guide.md)
    + [Référence des schémas de métadonnées](meta-ref.md)
    + [Bonnes pratiques relatives à la traduction efficace des ressources](best-practices-for-translating-assets-efficiently.md)
@@ -106,17 +106,17 @@ ht-degree: 78%
    + [Utilisation de PDF Rasterizer](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de chargement des ressources](configuring-asset-upload-restrictions.md)
    + [Bonnes pratiques d’intégration d’AEM et de Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Configurer Adobe Asset Link](configure-asset-link.md)
+   + [Configuration d’Adobe Asset Link](configure-asset-link.md)
    + [Intégration d’AEM Assets à un serveur InDesign](indesign.md)
    + [Profils de métadonnées](metadata-profiles.md)
    + [Gestion des droits numériques dans AEM Assets](drm.md)
    + [Utilisation du module de démonstration pour les statistiques sur les ressources](touch-ui-using-demo-package-for-asset-insights.md)
    + [Bonnes pratiques de déchargement dans Assets](assets-offloading-best-practices.md)
-   + [Bonnes pratiques relatives aux formats de fichier des ressources](assets-file-format-best-practices.md)
+   + [Bonnes pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md)
    + [Bonnes pratiques en matière de surveillance des ressources](assets-monitoring-best-practices.md)
    + [Prise en charge de Camera Raw](camera-raw.md)
    + [Détection du type MIME des ressources à l’aide d’Apache Tika](detect-asset-mime-type-with-tika.md)
-   + [Bibliothèque ITL](imaging-transcoding-library.md)
+   + [Bibliothèque de transcodage d’imagerie](imaging-transcoding-library.md)
    + [Prise en charge des métadonnées IPTC](iptc-support.md)
    + [Schémas de métadonnées](metadata-schemas.md)
    + [Fonction multiclient pour les collections, les fragments de code et les modèles de fragments de code](multi-tenancy.md)
@@ -126,7 +126,7 @@ ht-degree: 78%
    + [Bonnes pratiques de partage de dossiers entre AEM et Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
    + [Gestion des balises intelligentes](managing-smart-tags.md)
-+ Brand Portal {#brandportal}
++ Brand Portal {#brandportal}
    + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Publication de ressources sur Brand Portal](brand-portal-publish-assets.md)
    + [Publication de collections sur Brand Portal](brand-portal-publish-collection.md)
@@ -140,7 +140,7 @@ ht-degree: 78%
    + [Métadonnées – propriétés des fragments](content-fragments-metadata.md)
    + [Fragments de contenu – considérations sur la suppression](content-fragments-delete.md)
    + [Fragments de contenu - Markdown](content-fragments-markdown.md)
-   + [Création de projets de traduction pour les fragments de contenu](creating-translation-projects-for-content-fragments.md)
+   + [Création de projets de traduction pour des fragments de contenu](creating-translation-projects-for-content-fragments.md)
 + Gestion des ressources {#managing}
    + [Gestion des ressources à l’aide de l’interface utilisateur optimisée pour les écrans tactiles](managing-assets-touch-ui.md)
    + [Gestion de plusieurs ressources et collections](managing-multiple-assets.md)

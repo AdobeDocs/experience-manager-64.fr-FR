@@ -8,13 +8,13 @@ exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
 source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 66%
+ht-degree: 77%
 
 ---
 
 # Intégration des ressources avec Flux d’activités {#integrating-assets-with-activity-stream}
 
-Les utilisateurs d’Adobe Experience Manager Assets effectuent de nombreuses opérations, telles que la création, le chargement et la suppression de ressources. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement de [!DNL Experience Manager] et comment configurer [!DNL Experience Manager] afin d’enregistrer des événements spécifiques.
+Les utilisateurs d’Adobe Experience Manager Assets effectuent de nombreuses opérations, telles que la création, le chargement et la suppression de ressources. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes les actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement d’[!DNL Experience Manager] ainsi que la procédure de configuration d’[!DNL Experience Manager] pour enregistrer des événements spécifiques.
 
 ## Performances et comportement par défaut {#performance-considerations-and-default-behavior}
 
@@ -48,7 +48,7 @@ Le [Console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 
 1. Cliquez sur **[!UICONTROL Configuration]**.
 
-1. Double-cliquez sur **[!UICONTROL Enregistreur d’événements de la gestion des actifs numériques Day CQ]**. 
+1. Double-cliquez sur **[!UICONTROL Enregistreur d’événements de la gestion des ressources numériques Day CQ]**. 
 
 1. Cochez **[!UICONTROL Activer ce service]**.
 

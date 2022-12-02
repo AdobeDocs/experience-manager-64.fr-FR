@@ -14,7 +14,7 @@ exl-id: 1c72093e-82c8-49ad-bd3c-d61904aaab28
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
 
 1. Arrêtez JBoss.
 
-1. À présent, migrez le référentiel à l’aide de l’outil de migration crx2oak :
+1. À présent, migrez le référentiel à l’aide de l’outil de migration crx2oak:
 
    ```shell
    java -jar crx2oak.jar crx-quickstart/repository/ crx-quickstart/oak-repository
@@ -56,7 +56,7 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
 
 1. Supprimez les propriétés requises du fichier sling.properties en procédant comme suit :
 
-   1. Ouvrez le fichier situé à l’adresse `crx-quickstart/launchpad/sling.properties`
+   1. Ouvrez le fichier situé à l’emplacement `crx-quickstart/launchpad/sling.properties`.
    1. Supprimez les propriétés suivantes et enregistrez le fichier :
 
       1. `sling.installer.dir`
@@ -70,9 +70,9 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
 
 1. Supprimez les fichiers et dossiers qui ne sont plus nécessaires. Vous devez précisément supprimer les éléments suivants :
 
-   * Le **dossier launchpad/startup**. Vous pouvez le supprimer en exécutant la commande suivante dans le terminal :`rm -rf crx-quickstart/launchpad/startup`
-   * Le **fichier base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * Le **Fichier BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * Le **dossier launchpad/startup**. Vous pouvez le supprimer en exécutant la commande suivante dans le terminal : `rm -rf crx-quickstart/launchpad/startup`
+   * Le fichier **base.jar** : `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * Le fichier **BootstrapCommandFile_timestamp.txt** : `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. Copiez le segmentstore (magasin de segments) nouvellement migré à son emplacement approprié :
 
@@ -121,7 +121,7 @@ Tous les exemples de cette procédure utilisent JBoss comme serveur d’applicat
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. Une fois le contenu extrait, accédez au dossier **WEB-INF** et modifiez le fichier `web.xml` afin de modifier les modes d’exécution. Pour trouver l’emplacement où ils sont définis dans le fichier XML, recherchez la chaîne `sling.run.modes`. Une fois que vous l’avez trouvée, définissez les modes d’exécution sur la ligne de code suivante qui, par défaut, est définie sur author :
+1. Une fois le contenu extrait, accédez au dossier **WEB-INF** et modifiez le fichier afin de modifier les modes d’exécution. `web.xml` Pour trouver l’emplacement où ils sont définis dans le fichier XML, recherchez la chaîne `sling.run.modes`. Une fois que vous l’avez trouvée, définissez les modes d’exécution sur la ligne de code suivante qui, par défaut, est définie sur author :
 
    ```shell
    <param-value >author</param-value>

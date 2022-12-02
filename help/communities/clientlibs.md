@@ -79,7 +79,7 @@ Pour ajouter une bibliothèque cliente à un site de la communauté à l’aide 
       * Sélectionner `+` pour entrer une nouvelle bibliothèque cliente
 
          * Répétez l’opération pour ajouter d’autres bibliothèques clientes.
-      * **[!UICONTROL Cliquez sur OK]**
+      * Sélectionnez **[!UICONTROL OK]**
    * Sélectionnez **[!UICONTROL Enregistrer tout]**
 
 

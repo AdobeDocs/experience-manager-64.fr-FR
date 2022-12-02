@@ -77,7 +77,7 @@ Cliquez sur la suppression de la ressource.
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
-## Étapes suivantes {#the-next-steps}
+## Les étapes suivantes {#the-next-steps}
 
 Consultez les ressources suivantes pour en savoir plus sur les autres rôles de création :
 

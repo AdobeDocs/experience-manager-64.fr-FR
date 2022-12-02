@@ -13,7 +13,7 @@ exl-id: 865f524d-6b54-43c8-9b28-86a766e010a1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Concernant les applications sur une seule page (SPA) dans AEM, c’est l’appli
 >
 >La fonction Éditeur d’application sur une seule page (SPA) requiert AEM Service Pack 2 ou version ultérieure.
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 ## Routage du projet {#project-routing}
 
@@ -45,7 +45,7 @@ Lorsque l’option `ModelRouter` est activée, les fonctions de l’API d’hist
 
 >[!NOTE]
 >
->Actuellement, l’exemple de projet React de We.Retail Journal illustre l’approche automatisée, tandis que le projet Angular illustre l’approche manuelle. Une approche semi-automatisée serait également un cas d’utilisation valide.
+>Actuellement, l’exemple de projet React de We.Retail Journal illustre l’approche automatisée, tandis que le projet Angular illustre l’approche manuelle. Une approche semi-automatisée serait également un cas d’utilisation valide.
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ Lorsque l’option `ModelRouter` est activée, les fonctions de l’API d’hist
 
 ## Contrat de routage {#routing-contract}
 
-L’implémentation actuelle repose sur l’hypothèse que le projet SPA utilise l’API d’historique HTML5 pour le routage vers les différentes pages de l’application.
+L’implémentation actuelle repose sur l’hypothèse que le projet de SPA utilise l’API d’historique HTML5 pour le routage vers les différentes pages de l’application.
 
 ### Configuration {#configuration}
 

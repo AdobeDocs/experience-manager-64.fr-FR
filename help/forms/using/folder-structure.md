@@ -13,7 +13,7 @@ exl-id: 192c436d-a507-4883-bd68-a6863a6664e0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -27,14 +27,14 @@ Les composants de l’espace de travail AEM Forms reposent sur une architecture 
 
 Les actifs de tous les composants sont placés dans la structure de dossiers décrite ci-dessous. Pour accéder aux ressources, connectez-vous à CRXDE Lite et accédez à `/libs/ws/js/runtime/`.
 
-**models** Contient des modèles Backbone.
+**modèles** contient des modèles Backbone.
 
-**views** Contient les vues Backbone.
+**vues** contient les vues Backbone.
 
-**templates** Contient uniquement les modèles de HTML pour les composants.
+**modèles** contient uniquement les modèles HTML pour les composants.
 
-**routes** Contient des itinéraires universels. Le dossier Templates figurant dans routes contient le code HTML et les références aux composants.
+**itinéraires** contient les itinéraires universels. Le dossier Templates figurant dans routes contient le code HTML et les références aux composants.
 
-**services** Contient l’interface de service pour appeler les API du serveur Adobe Experience Manager sur le point de terminaison REST.
+**services** contient l’interface de service permettant d’appeler les API du serveur Adobe Experience Manager au point d’entrée REST.
 
-**util** Contient des utilitaires génériques utilisables par plusieurs composants.
+**util** contient des utilitaires génériques utilisables par plusieurs composants.

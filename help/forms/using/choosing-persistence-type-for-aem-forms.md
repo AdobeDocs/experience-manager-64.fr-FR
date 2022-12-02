@@ -1,7 +1,7 @@
 ---
 title: Choix d’un type de persistance pour l’installation d’AEM Forms
 seo-title: Choosing a persistence type for an AEM Forms installation
-description: 'Choisissez un type de persistance avec soin. Il vous aide à créer un environnement AEM Forms efficace et évolutif. '
+description: Choisissez un type de persistance avec soin. Il vous aide à créer un environnement AEM Forms efficace et évolutif.
 seo-description: Choose a persistence type wisely. It helps you build an efficient and scale able AEM Forms environment.
 uuid: 1c692502-5039-4757-9358-1772772b3904
 content-type: reference
@@ -14,7 +14,7 @@ exl-id: ef486673-30fe-410a-83cf-c55be6064ce4
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 93%
 
 Choisissez un type de persistance avec soin. Il vous aide à créer un environnement AEM Forms efficace et évolutif.
 
-La persistance est la méthode de stockage du contenu sur les stockages physiques. Elle définit le mécanisme réel de structure et de stockage des données. Les MicroKernals agissent comme des gestionnaires de persistance dans AEM Forms. AEM Forms prend en charge la persistance (MicroKernals) de type TarMK, MongoMK et RDBMK. Vous pouvez sélectionner un type de persistance pour AEM Forms selon l’objectif et le type de déploiement (serveur unique, batterie ou grappe) d’une instance d’AEM Forms.
+La persistance est la méthode de stockage du contenu sur les stockages physiques. Elle définit le mécanisme réel de structure et de stockage des données. Les MicroKernels agissent comme des gestionnaires de persistance dans AEM Forms. AEM Forms prend en charge la persistance (MicroKernals) de type TarMK, MongoMK et RDBMK. Vous pouvez sélectionner un type de persistance pour AEM Forms selon l’objectif et le type de déploiement (serveur unique, batterie ou grappe) d’une instance d’AEM Forms.
 
 >[!NOTE]
 >
 >LiveCycle ES4 SP1 utilise le format de persistance TarPM pour stocker du contenu.
 
-Le tableau suivant répertorie tous les types de persistance pris en charge, ainsi que divers paramètres, pour vous aider à choisir un type de persistance pour votre environnement :
+Le tableau suivant répertorie tous les types de persistance pris en charge avec divers paramètres afin de vous aider à choisir un type de persistance pour votre environnement :
 
 <table> 
  <tbody>

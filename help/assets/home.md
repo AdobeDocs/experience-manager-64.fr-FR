@@ -8,7 +8,7 @@ exl-id: 72b5e053-9307-4333-84e5-d4cc2b6bdecc
 source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 34%
+ht-degree: 66%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 34%
 
 Ce guide couvre tous les [!DNL Experience Manager] Tâches relatives aux ressources, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 
-## Articles essentiels relatifs à [!DNL Experience Manager] 
+## Articles essentiels relatifs à [!DNL Experience Manager]
 
 * [[!DNL Experience Manager] Notes de mise à jour de la version 6.4](/help/release-notes/home.md)
 * [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=fr)
@@ -31,15 +31,15 @@ Ce guide couvre tous les [!DNL Experience Manager] Tâches relatives aux ressour
 | [Guide de l’utilisateur de Communities](/help/communities/home.md) | Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales. |
 | [Guide d’administration](/help/sites-administering/home.md) | Comprendre comment administrer [!DNL Experience Manager] |
 | [Guide de création](/help/sites-authoring/home.md) | Ce guide explique les concepts de création dans [!DNL Experience Manager] . |
-| [Guide de création de l’interface utilisateur classique](/help/sites-classic-ui-authoring/home.md) | Ce guide explique les concepts de création dans [!DNL Experience Manager]  dans l’interface utilisateur classique. |
-| [Guide de l’utilisateur de Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Découvrez la solution de signalétique digitale pour publier des expériences numériques dynamiques et interactives. |
+| [Guide de création dans l’interface utilisateur classique](/help/sites-classic-ui-authoring/home.md) | Ce guide explique les concepts de création dans [!DNL Experience Manager]  dans l’interface utilisateur classique. |
+| [Guide de l’utilisateur de Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr) | Découvrez la solution de signalétique numérique pour publier des expériences numériques dynamiques et interactives. |
 | [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide présente les principes de base de [!DNL Experience Manager] . |
 | [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer votre [!DNL Experience Manager]  instance. |
-| [Gestion du guide de l’utilisateur](/help/managing/home.md) | Ce guide décrit comment gérer une [!DNL Experience Manager]  projet réussi. |
-| [Guide de l’utilisateur mobile](/help/mobile/home.md) | Ce guide explique comment créer et gérer du contenu pour les applications mobiles. |
-| [[!DNL Experience Manager]  Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Ce guide explique comment partager du contenu généré par l’utilisateur avec Livefyre. |
+| [Guide de l’utilisateur pour la gestion](/help/managing/home.md) | Ce guide décrit comment gérer une [!DNL Experience Manager]  projet réussi. |
+| [Guide de l’utilisateur Mobile](/help/mobile/home.md) | Ce guide explique comment créer et gérer du contenu pour les applications mobiles. |
+| [[!DNL Experience Manager]  Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=fr) | Ce guide explique comment partager du contenu généré par l’utilisateur avec Livefyre. |
 
-## Clé [!DNL Experience Manager]  ressources
+## Ressources essentielles pour [!DNL Experience Manager]
 
 * [[!DNL Experience Manager]  tutoriels](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html?lang=fr)
 * [Guide de l’utilisateur de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
@@ -48,4 +48,4 @@ Ce guide couvre tous les [!DNL Experience Manager] Tâches relatives aux ressour
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=fr#recommended/solutions/experience-manager)
-* Forum de la communauté [[!DNL Experience Manager] ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+* [[!DNL Experience Manager]  Forum de la communauté](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)

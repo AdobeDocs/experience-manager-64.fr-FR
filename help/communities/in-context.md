@@ -67,7 +67,7 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
 * Connectez-vous en tant qu’Aaron McDonald (aaron.mcdonald@mailinator.com)
 
    * Sélectionner un forum
-   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus
+   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus.
    * Saisissez le commentaire correspondant à la fonction Publier la réponse .
 
       Je change la mienne une fois par semaine et je les reçois de mai à octobre.
@@ -78,7 +78,7 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
 * Connectez-vous en tant qu’Andrew Schaeffer (andrew.schaeffer@trashymail.com)
 
    * Sélectionner un forum
-   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus
+   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus.
    * Saisissez le commentaire correspondant à la fonction Publier la réponse .
 
       Je vends du nectar et des mangeoires - visitez https://my.viral.url/

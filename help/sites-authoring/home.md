@@ -26,7 +26,7 @@ Ce guide explique les concepts de création dans AEM.
 
 | Guide de l’utilisateur | Description |
 |--- |---|
-| [Notes de mise à jour](/help/release-notes/home.md) | Elles comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.. |
+| [Notes de mise à jour](/help/release-notes/home.md) | Elles comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus. |
 | [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment créer, gérer, diffuser et optimiser des ressources numériques. |
 | [Guide de l’utilisateur de Forms](/help/forms/home.md) | Ce guide explique comment créer, gérer, publier et mettre à jour des formulaires numériques. |
 | [Guide de l’utilisateur de Communities](/help/communities/home.md) | Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales. |
@@ -45,7 +45,7 @@ Ce guide explique les concepts de création dans AEM.
 * [Guide de l’utilisateur de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
 * [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 * [Guide de l’utilisateur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr?lang=en))
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr?lang=en) 
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=fr#home)
 * [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)

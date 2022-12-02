@@ -1,5 +1,5 @@
 ---
-title: 'Différences de caractéristiques entre formulaires HTML5 et formulaires PDF '
+title: Différences de caractéristiques entre formulaires HTML5 et formulaires PDF
 seo-title: Feature differentiation between HTML5 forms and PDF forms
 description: Caractéristiques prises en charge dans les formulaires HTML5 et les formulaires PDF
 seo-description: Feature supported in HTML5 forms and PDF forms

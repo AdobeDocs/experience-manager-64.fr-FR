@@ -121,7 +121,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 >[!NOTE]
 >
->La plupart de ces actions sont [standard pour Assets](managing-assets-touch-ui.md) et/ou l’[application de bureau ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr).
+>La plupart de ces actions sont [standard pour Assets](managing-assets-touch-ui.md) et/ou l’[application de bureau ](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## Ouverture de l’éditeur de fragments {#opening-the-fragment-editor}
 

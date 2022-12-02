@@ -28,4 +28,4 @@ Vous pouvez envoyer des fichiers à traiter à PDF Generator de trois façons di
 
 * Les administrateurs peuvent accéder aux pages PDFG dans Administration Console (voir [Conversion de fichiers à l’aide de PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)).
 * Les utilisateurs peuvent accéder aux pages des utilisateurs finaux de PDFG en se connectant à `http(s)://[server]:[port]/pdfgui`. De là, ils peuvent accéder aux pages Imprimante réseau PDFG, Créer un PDF, HTML en PDF, Export PDF et Optimize PDF.
-* Vous pouvez configurer les points de fin de ce service (Voir la section <!--Fix broken link Managing Endpoints and --> [Recommandations relatives au service Generate PDF](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).)
+* Vous pouvez configurer les points de fin de ce service (Voir <!--Fix broken link Managing Endpoints and --> [Recommandations relatives au service Generate PDF](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).)

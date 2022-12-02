@@ -1,5 +1,5 @@
 ---
-title: Suivi des messages rejetés
+title: Suivi des e-mails rejetés
 seo-title: Tracking Bounced Emails
 description: Lorsque vous envoyez une newsletter à de nombreux utilisateurs, la liste de diffusion comporte généralement plusieurs adresses électroniques non valides. Les newsletters envoyées à ces adresses sont rejetées. AEM est en mesure de gérer ces rebonds et d’arrêter l’envoi de newsletters vers ces adresses après le dépassement du compteur de rebonds.
 seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
@@ -13,17 +13,17 @@ exl-id: 3be35bb8-3485-42a6-8195-c3e95d097856
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Suivi des messages rejetés{#tracking-bounced-emails}
+# Suivi des e-mails rejetés{#tracking-bounced-emails}
 
 >[!NOTE]
 >
->Adobe ne prévoit pas d&#39;améliorer davantage le suivi des emails ouverts/rebonds envoyés par AEM service SMTP.
+>Adobe ne prévoit pas de continuer à améliorer le suivi des e-mails ouverts et des rebonds envoyés par le service SMTP AEM.
 >
->La recommandation consiste à [tirer parti d’Adobe Campaign et de son intégration AEM](/help/sites-administering/campaign.md).
+>Nous vous recommandons d’[exploiter Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
 
 Lorsque vous envoyez une newsletter à de nombreux utilisateurs, la liste de diffusion comporte généralement plusieurs adresses électroniques non valides. Les newsletters envoyées à ces adresses sont rejetées. AEM est en mesure de gérer ces rebonds et d’arrêter l’envoi de newsletters vers ces adresses après le dépassement du compteur de rebonds. Par défaut, le taux de rebonds est défini sur 3, mais cette valeur est configurable.
 
@@ -45,15 +45,15 @@ Pour configurer Feed Importer en vue du suivi des messages rejetés, procédez c
 
    Les informations suivantes sont nécessaires pour toutes les configurations dans l’URL de sondage :
 
-   `username`: Nom d’utilisateur à utiliser pour la connexion
+   `username` : nom d’utilisateur à utiliser pour la connexion.
 
-   `password`: Mot de passe à utiliser pour la connexion
+   `password` : mot de passe à utiliser pour la connexion.
 
    En fonction du protocole, vous pouvez, en outre, configurer certains paramètres.
 
    **Propriétés de la configuration POP3** :
 
-   `pop3.leave.on.server`: Permet d’indiquer si des messages doivent être laissés ou non sur le serveur. Définissez la valeur sur « true » pour laisser les messages sur le serveur et sur « false » dans le cas contraire. La valeur par défaut est « true ».
+   `pop3.leave.on.server` : permet d’indiquer si des messages doivent être laissés ou non sur le serveur. Définissez la valeur sur « true » pour laisser les messages sur le serveur et sur « false » dans le cas contraire. La valeur par défaut est « true ».
 
    **Exemples POP3** :
 
@@ -65,9 +65,9 @@ Pour configurer Feed Importer en vue du suivi des messages rejetés, procédez c
 
    Permet de définir des indicateurs pour la recherche.
 
-   `imap.flag.SEEN`:Définissez false pour le message nouveau/invisible, true pour les messages déjà lus.
+   `imap.flag.SEEN` :« false » pour les nouveaux messages ou les messages non consultés ; « true » pour les messages déjà lus
 
-   Voir [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) pour obtenir la liste complète des indicateurs.
+   Pour consulter la liste complète des indicateurs, reportez-vous à la page [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html).
 
    **Exemples IMAP** :
 
@@ -76,7 +76,7 @@ Pour configurer Feed Importer en vue du suivi des messages rejetés, procédez c
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true | Utilisation du protocole IMAP sur SSL pour se connecter à GMail sur le port 993 avec les identifiants user/secret. Seuls les messages déjà lus sont récupérés. |
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true&amp;imap.flag.SEEN=false | Utilisation du protocole IMAP sur SSL pour se connecter à GMail sur le port 993 avec les identifiants user/secret. Seuls les nouveaux messages OU les messages déjà lus sont récupérés. |
 
-1. enregistrez la configuration.
+1. Enregistrez la configuration.
 
 ## Configuration du composant Service de newsletter {#configuring-the-newsletter-service-component}
 
@@ -84,7 +84,7 @@ Après avoir configuré Feed Importer, vous devez configurer l’adresse de l’
 
 Pour configurer le service de newsletter, procédez comme suit :
 
-1. Dans la console OSGi à l’adresse `<host>:<port>/system/console/configMgr` et accédez à **Newsletter MCM**.
+1. Entrez dans la console OSGi `<host>:<port>/system/console/configMgr` et accédez à **Newsletter MCM**.
 
 1. Configurez le service et enregistrez les modifications une fois cette opération terminée.
 

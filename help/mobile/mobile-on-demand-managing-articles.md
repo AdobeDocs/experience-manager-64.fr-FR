@@ -36,7 +36,6 @@ Les articles représentent le texte fondé sur l’art pour véhiculer l’infor
 >* [Observations relatives à la conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
 >* [Gestion des articles](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
-
 >
 
 
@@ -132,7 +131,7 @@ Workflow général de suppression d’un article :
 
 ![chlimage_1-5](assets/chlimage_1-5.gif)
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 Pour en savoir plus sur la gestion des articles, voir
 

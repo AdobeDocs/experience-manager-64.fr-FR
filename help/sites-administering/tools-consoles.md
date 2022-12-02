@@ -1,5 +1,5 @@
 ---
-title: 'Consoles Outils '
+title: Consoles Outils
 description: Découvrez les différentes consoles d’outils dans Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 ---
 
-# Consoles Outils {#tools-consoles}
+# Consoles Outils{#tools-consoles}
 
 Les consoles **Outils** permettent d’accéder à différents outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. Pour le moment, il existe deux versions de la console **Outils** selon l’interface utilisateur que vous utilisez :
 
@@ -40,7 +40,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td><a href="/help/sites-developing/client-context.md">ClientContext</a> représente une collection de données utilisateur assemblées dynamiquement. Les configurations de cloud par défaut et marketing sont définies ici.<br /> </td> 
   </tr> 
   <tr> 
-   <td>Configuration de Cloud Services<br /> </td> 
+   <td>Configuration des services cloud<br /> </td> 
    <td> </td> 
    <td>Contient les configurations liées à l’<a href="/help/sites-administering/marketing-cloud.md">intégration à Adobe Marketing Cloud</a>.</td> 
   </tr> 
@@ -152,7 +152,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   <tr> 
    <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentation</a></td> 
    <td> </td> 
-   <td>Les intérêts et objectifs des visiteurs qui se rendent sur un site sont variés. La compréhension de ces objectifs et la satisfaction de ces attentes constituent un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en caractérisant les détails d’un visiteur.<br /> </td> 
+   <td>Les intérêts et objectifs des visiteurs qui se rendent sur un site sont variés. La compréhension de ces objectifs et la satisfaction de ces attentes constituent un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en profilant le visiteur :<br /> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
@@ -273,7 +273,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-developing/developing-with-crxde-lite.md">CRXDE Lite</a></td> 
+   <td><a href="/help/sites-developing/developing-with-crxde-lite.md">CRXDE Lite</a></td> 
    <td>Développez des applications avec un IDE Web.</td> 
   </tr> 
   <tr> 

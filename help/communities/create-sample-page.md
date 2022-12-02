@@ -44,7 +44,7 @@ Dans la navigation globale sur une instance d’auteur, sélectionnez **[!UICONT
 
    * `Name`: Modèle de page unique
    * `Description`: Un modèle constitué d’une fonction Page unique.
-   * select `Enabled`
+   * sélectionnez `Enabled`
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 

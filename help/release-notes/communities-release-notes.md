@@ -21,7 +21,7 @@ ht-degree: 85%
 
 Cette section contient des informations sur les améliorations apportées à AEM Communities depuis la version 6.3. Pour plus de détails sur les nouvelles fonctions, voir [Nouveautés d’AEM 6.4 Communities](/help/communities/whats-new-aem-communities.md).
 
-Pour obtenir la version la plus récente, consultez la section [Déploiement de Communities de la documentation.](/help/communities/deploy-communities.md#latest-releases)
+Pour obtenir la version la plus récente, consultez la section [Déploiement de communautés](/help/communities/deploy-communities.md#latest-releases) de la documentation.
 
 ## Principales améliorations {#main-improvements}
 

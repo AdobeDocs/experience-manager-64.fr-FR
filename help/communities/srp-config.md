@@ -1,5 +1,5 @@
 ---
-title: Stockage   Configuration
+title: Stockage  Configuration
 seo-title: Storage Configuration
 description: Accès à la console de configuration de stockage
 seo-description: How to access the Storage Configuration Console
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 ---
 
-# Stockage   Configuration {#storage-configuration}
+# Stockage  Configuration {#storage-configuration}
 
 La configuration du stockage est le moyen d’identifier le stockage choisi pour le contenu de la communauté, également appelé contenu généré par l’utilisateur (UGC).
 

@@ -13,7 +13,7 @@ exl-id: 9f447a54-4512-41ab-b8d3-327e751eda58
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -68,7 +68,7 @@ Téléchargez une ressource. Si une ressource vidéo, téléchargez une image pe
 
 * **[!UICONTROL Paramètres sociaux]**
 Laissez les paramètres par défaut pour expérimenter l’évaluation et les commentaires des ressources d’activation par les apprenants.
-* **[!UICONTROL Échéance]**
+* **[!UICONTROL Date d’échéance]**
 
    *(Facultatif)* Une date à laquelle l’affectation doit être terminée peut être sélectionnée.
 * **[!UICONTROL Auteur de la ressource]**

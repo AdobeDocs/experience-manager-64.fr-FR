@@ -1,5 +1,5 @@
 ---
-title: Mise à niveau vers AEM 6.4
+title: Mise à niveau vers AEM 6.4
 seo-title: Upgrading to AEM 6.4
 description: Découvrez les principes de base de la mise à niveau d’une installation d’AEM vers la version AEM 6.4.
 seo-description: Learn about the basics of upgrading an older AEM installation to AEM 6.4.
@@ -15,25 +15,25 @@ exl-id: 791da16c-bf2c-47a9-86a4-0a601a1b017e
 source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '700'
-ht-degree: 71%
+ht-degree: 93%
 
 ---
 
-# Mise à niveau vers AEM 6.4{#upgrading-to-aem}
+# Mise à niveau vers AEM 6.4{#upgrading-to-aem}
 
-Dans cette section, nous présentons la mise à niveau d’une installation AEM vers AEM 6.4 :
+Dans cette section, nous présentons la mise à niveau d’une installation AEM vers AEM 6.4 :
 
 * [Planification de la mise à niveau](/help/sites-deploying/upgrade-planning.md)
 * [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](/help/sites-deploying/pattern-detector.md)
-* [Compatibilité descendante dans AEM 6.4](/help/sites-deploying/backward-compatibility.md)
+* [Compatibilité descendante dans AEM 6.4](/help/sites-deploying/backward-compatibility.md)
 * [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md)
 * [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
 * [Exécution d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md)
-* [Vérifications et dépannage après une mise à niveau ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+* [Vérifications et dépannage après une mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
 * [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)
 * [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md)
-* [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md)
+* [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md)
 
 Pour une référence conviviale aux instances d’AEM incluses dans ces procédures, les termes suivants sont utilisés tout au long de ces articles :
 
@@ -50,7 +50,7 @@ Voici quelques changements majeurs mis en œuvre avec les dernières versions d�
 
 AEM 6.0 a introduit le nouveau référentiel Jackrabbit Oak. Les gestionnaires de persistence ont été remplacés par les [micronoyaux](/help/sites-deploying/recommended-deploys.md). À partir de la version 6.1, CRX2 n’est plus pris en charge. L’outil de migration crx2oak doit être exécuté pour migrer les référentiels CRX2 à partir des instances 5.6.1. Pour plus d’informations, voir [Utilisation de l’outil de migration CRX2OAK](/help/sites-deploying/using-crx2oak.md). 
 
-Si vous souhaitez utiliser Assets Insights et que vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, les ressources doivent être migrées et leurs identifiants doivent être générés via un bean JMX. Lors de nos tests internes, 125 000 ressources ont été migrées en 1 heure dans un environnement TarMK, mais les résultats peuvent varier. 
+Si vous utilisez Assets Insights et que vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, les ressources doivent être migrées et doivent posséder des ID générés via un bean JMX. Lors de nos tests internes, 125 000 ressources ont été migrées en 1 heure dans un environnement TarMK, mais les résultats peuvent varier. 
 
 AEM 6.3 a introduit un nouveau format pour la variable `SegmentNodeStore`, qui est la base de l’implémentation de TarMK. Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.3, une migration du référentiel est nécessaire dans le cadre de la mise à niveau, ce qui implique des interruptions du système.
 
@@ -82,10 +82,10 @@ La mise à niveau d’AEM consiste en plusieurs étapes et peut parfois se déro
 
 ## Flux de mise à niveau avec améliorations de la mise à niveau 6.4 {#upgrade-overview-1}
 
-Le diagramme ci-dessous illustre le flux recommandé pour la méthode de mise à niveau. Notez la référence aux nouvelles fonctionnalités que nous avons ajoutées. La mise à niveau doit commencer avec le détecteur de motifs (voir [Évaluation de la complexité de la mise à niveau à l’aide du détecteur de motifs](/help/sites-deploying/pattern-detector.md)) qui vous permet de choisir le chemin que vous souhaitez prendre pour des raisons de compatibilité avec AEM 6.4 en fonction des modèles du rapport généré.
+Le diagramme ci-dessous illustre le flux recommandé pour la méthode de mise à niveau. Notez la référence aux nouvelles fonctionnalités que nous avons ajoutées. La mise à niveau doit commencer par l’outil de détection des motifs (voir [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](/help/sites-deploying/pattern-detector.md)) qui vous permet de déterminer la voie à emprunter pour la compatibilité avec AEM 6.4 sur la base des modèles du rapport généré.
 
-Dans la version 6.4, nous avons mis l’accent sur la compatibilité descendante de toutes les nouvelles fonctionnalités. Cependant, lorsque des problèmes de compatibilité descendante se produisent, le mode de compatibilité vous permet de différer temporairement le développement pour que votre code personnalisé reste compatible avec la version 6.4. Cette approche vous permet d’éviter les efforts de développement immédiatement après la mise à niveau (voir [Compatibilité descendante dans AEM 6.4](/help/sites-deploying/backward-compatibility.md)).
+Dans la version 6.4, nous avons mis un point d’honneur à ce que toutes les fonctionnalités soient rétrocompatibles. Cependant, si vous constatez des problèmes de rétrocompatibilité, le mode de compatibilité vous permet de différer temporairement le développement, de sorte que votre code personnalisé reste compatible avec la version 6.4. Cette approche vous dispense des activités de développement immédiatement après la mise à niveau (voir [Compatibilité descendante dans AEM 6.4](/help/sites-deploying/backward-compatibility.md)).
 
-Enfin, dans votre cycle de développement 6.4, les fonctionnalités introduites sous Mises à niveau possibles (voir [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)) vous aider à suivre les bonnes pratiques pour rendre les futures mises à niveau encore plus efficaces et transparentes.
+Enfin, dans le cadre de votre cycle de développement 6.4, les fonctionnalités ajoutées sous Mises à niveau possibles (voir [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)) vous aident à suivre les bonnes pratiques afin de rendre les prochaines mises à niveau encore plus simples et transparentes.
 
 ![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)

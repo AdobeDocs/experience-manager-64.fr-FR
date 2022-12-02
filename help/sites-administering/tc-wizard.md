@@ -14,7 +14,7 @@ exl-id: a3ac6b7e-8a18-4432-9e56-1f9bd7cf0548
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ L’assistant Copie de la langue est une expérience guidée pour créer et gér
 
 >[!NOTE]
 >
->L’utilisateur doit être membre du groupe project-administrators pour créer la copie de langue d’un site.
+>L’utilisateur doit être membre du groupe des administrateurs de projet pour créer la copie de langue d’un site.
 
 Pour accéder à cet assistant :
 
@@ -40,7 +40,7 @@ Pour accéder à cet assistant :
 
    ![chlimage_1-50](assets/chlimage_1-50.jpeg)
 
-1. Le **Suivant** permet d’accéder au **Configurer** de l’assistant. Ici, vous pouvez ajouter/supprimer des langues et sélectionner une méthode de traduction.
+1. Le bouton **Suivant** vous mène à l’étape **Configurer** de l’assistant. Ici, vous pouvez ajouter/supprimer des langues et sélectionner une méthode de traduction.
 
    ![chlimage_1-51](assets/chlimage_1-51.jpeg)
 
@@ -48,7 +48,7 @@ Pour accéder à cet assistant :
    >
    >Par défaut, il n’y a qu’un seul paramètre de traduction. Pour pouvoir sélectionner d’autres paramètres, vous devez d’abord configurer les configurations cloud. Voir [Configuration de la structure d’intégration de traduction](/help/sites-administering/tc-tic.md).
 
-1. Le **Suivant** permet d’accéder au **Traduire** de l’assistant. Vous pouvez ici choisir entre créer uniquement la structure, créer un nouveau projet de traduction ou ajouter à un projet de traduction existant.
+1. Le bouton **Suivant** vous mène à l’étape **Traduire** de l’assistant. Vous pouvez ici choisir entre créer uniquement la structure, créer un nouveau projet de traduction ou ajouter à un projet de traduction existant.
 
    >[!NOTE]
    >

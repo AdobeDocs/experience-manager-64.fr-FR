@@ -1,7 +1,7 @@
 ---
 title: Présentation détaillée de ClientContext
 seo-title: Client Context in Detail
-description: ClientContext représente un ensemble de données utilisateur assemblées de manière dynamique.
+description: ClientContext représente un ensemble de données utilisateur assemblées de manière dynamique
 seo-description: The Client Context represents a dynamically assembled collection of user data
 uuid: 31cfcfd0-14f3-4777-ae85-45eb352756d0
 contentOwner: msm-service
@@ -14,7 +14,7 @@ exl-id: fb613a57-d064-45eb-be15-c4f7e06bb0ee
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2977'
-ht-degree: 83%
+ht-degree: 96%
 
 ---
 
@@ -34,20 +34,20 @@ ClientContext se compose essentiellement des éléments suivants :
 
 Pour créer un magasin de sessions autonome et l’ajouter à ClientContext ou pour créer un magasin de sessions lié à un composant Magasin de contexte, AEM installe plusieurs composants Magasin de contexte que vous pouvez utiliser immédiatement. Vous pouvez vous en servir comme base pour vos composants.
 
-Pour plus d’informations sur l’ouverture de ClientContext, la configuration des informations affichées et la simulation de l’expérience utilisateur, voir [ClientContext](/help/sites-administering/client-context.md).
+Pour plus d’informations sur l’ouverture de contexte client, la configuration des informations affichées et la simulation de l’expérience utilisateur, consultez [Contexte client](/help/sites-administering/client-context.md).
 
 ## Magasins de sessions {#session-stores}
 
 ClientContext comprend divers magasins de sessions contenant des données utilisateur. Les données de magasin proviennent des sources suivantes :
 
-* Navigateur web du client.
-* Serveur (voir [Magasin JSONP](/help/sites-administering/client-context.md) pour le stockage des informations issues de sources tierces)
+* Le navigateur Web du client
+* Le serveur (consultez [Magasin JSONP](/help/sites-administering/client-context.md) pour le stockage des informations issues de sources tierces)
 
 La structure ClientContext fournit une [API JavaScript](/help/sites-developing/ccjsapi.md) que vous pouvez utiliser pour interagir avec les magasins de sessions, pour lire et écrire des données utilisateur, ou encore pour écouter les événements de magasin et y réagir. Vous pouvez également créer des magasins de sessions pour les données utilisateur que vous utilisez pour le ciblage de contenu ou à d’autres fins.
 
 Les données de magasin de session restent sur le client. ClientContext ne les réécrit pas sur le serveur. Pour envoyer des données au serveur, utilisez un formulaire ou développez du code JavaScript personnalisé.
 
-Chaque magasin de sessions est un ensemble de paires propriété-valeur. Le magasin de sessions représente un ensemble de données (de n’importe quel type), dont la signification conceptuelle peut être déterminée par le concepteur et/ou le développeur. L’exemple de code JavaScript suivant définit un objet qui représente les données de profil que le magasin de sessions peut contenir :
+Chaque magasin de sessions est un ensemble de paires de type propriété-valeur. Le magasin de sessions représente un ensemble de données (de n’importe quel type), dont la signification conceptuelle peut être déterminée par le concepteur et/ou le développeur. L’exemple de code JavaScript suivant définit un objet qui représente les données de profil que le magasin de sessions peut contenir :
 
 ```
 {
@@ -84,7 +84,7 @@ Pour obtenir une description des composants Magasin de contexte (ContextStore) i
 
 >[!NOTE]
 >
->« Données de page » ne figure plus dans ClientContext sous la forme d’un composant par défaut. Au besoin, vous pouvez l’ajouter en modifiant ClientContext, en ajoutant le composant **Propriétés de la boutique générique**, puis en le configurant de manière à définir **Boutique** en tant que `pagedata`.
+>« Données de page » ne figure plus dans le contexte client sous la forme d’un composant par défaut. Au besoin, vous pouvez l’ajouter en modifiant le contexte client, en ajoutant le composant **Propriétés de la boutique générique**, puis en le configurant de manière à définir **Boutique** en tant que `pagedata`.
 
 ### Diffusion de contenu ciblée {#targeted-content-delivery}
 
@@ -94,7 +94,7 @@ Des informations de profil sont également utilisées pour diffuser du [contenu 
 
 ## Ajout de ClientContext à une page {#adding-client-context-to-a-page}
 
-Insérez le composant ClientContext dans le corps de vos pages web pour l’activer. Le chemin d’accès au noeud du composant ClientContext est `/libs/cq/personalization/components/clientcontext`. Pour inclure le composant, ajoutez le code suivant au fichier JSP de votre composant de page situé juste en dessous de l’élément `body` de la page :
+Insérez le composant ClientContext dans le corps de vos pages web pour l’activer. Le chemin d’accès du nœud de composant de contexte client est `/libs/cq/personalization/components/clientcontext`. Pour inclure le composant, ajoutez le code suivant au fichier JSP de votre composant de page situé juste en dessous de l’élément `body` de la page :
 
 ```java
 <cq:include path="clientcontext" resourceType="cq/personalization/components/clientcontext"/>
@@ -127,7 +127,7 @@ Créez un magasin de sessions pour les données que vous devez ajouter à Client
 
 1. Créez un dossier de bibliothèque cliente dont la valeur de propriété `categories` est définie sur `personalization.stores.kernel`. ClientContext charge automatiquement les bibliothèques clientes de cette catégorie.
 
-1. Configurez le dossier de bibliothèque cliente pour qu’il dépende du dossier `personalization.core.kernel`. La bibliothèque cliente `personalization.core.kernel` fournit l’API JavaScript ClientContext.
+1. Configurez le dossier de bibliothèque cliente pour qu’il dépende du dossier `personalization.core.kernel`. La bibliothèque cliente `personalization.core.kernel` fournit l’API JavaScript de contexte client.
 
 1. Ajoutez le code JavaScript qui crée et initialise le magasin de sessions.
 
@@ -141,10 +141,10 @@ Lorsque vous insérez le code JavaScript dans la bibliothèque cliente personali
 
 Les magasins de sessions sont soit créés et accessibles au cours d’une session du navigateur, soit conservés dans les cookies ou l’espace de stockage du navigateur. L’API JavaScript ClientContext définit plusieurs classes qui représentent les deux types de magasins de données :
 
-* [`CQ_Analytics.SessionStore`](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore): Ces objets résident uniquement dans le DOM de la page. Les données sont créées et conservées pendant la durée de vie de la page.
+* [`CQ_Analytics.SessionStore`](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) : ces objets résident uniquement dans l’élément DOM de la page. Les données sont créées et conservées pendant la durée de vie de la page.
 * [`CQ_Analytics.PerstistedSessionStore`](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore) : ces objets résident dans l’élément DOM de la page et sont conservés dans les cookies ou l’espace de stockage du navigateur. Les données sont disponibles sur les différentes pages et entre les sessions utilisateur.
 
-L’API fournit également des extensions de ces classes spécialisées pour le stockage de données JSON ou de données JSONP :
+L’API fournit également des extensions de ces classes qui sont spécialisées pour le stockage des données JSON ou JSONP :
 
 * Objets de session uniquement : [`CQ_Analytics.JSONStore`](/help/sites-developing/ccjsapi.md#cq-analytics-jsonstore) et [`CQ-Analytics.JSONPStore`](/help/sites-developing/ccjsapi.md#cq-analytics-jsonpstore).
 
@@ -152,7 +152,7 @@ L’API fournit également des extensions de ces classes spécialisées pour le 
 
 #### Création de l’objet de magasin de sessions {#creating-the-session-store-object}
 
-Le code JavaScript de votre dossier de bibliothèque cliente crée et initialise le magasin de sessions. Le magasin de sessions doit alors être enregistré à l’aide du gestionnaire du magasin de contexte. L’exemple suivant crée et enregistre une [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) .
+Le code JavaScript de votre dossier de bibliothèque cliente crée et initialise le magasin de sessions. Le magasin de sessions doit alors être enregistré à l’aide du gestionnaire du magasin de contexte. L’exemple suivant crée et enregistre un objet [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore).
 
 ```
 //Create the session store
@@ -168,7 +168,7 @@ if (CQ_Analytics.ClientContextMgr){
 }
 ```
 
-Pour stocker des données JSON, l’exemple suivant crée et enregistre une [CQ_Analytics.JSONStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) .
+Pour stocker des données JSON, l’exemple suivant crée et enregistre un objet [CQ_Analytics.JSONStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore).
 
 ```
 if (!CQ_Analytics.myJSONStore) {
@@ -197,25 +197,26 @@ AEM fournit les composants de magasin de contexte genericstore et genericstorepr
 
    * `@param {String} store`
 
-      Le magasin à rendre
+      
+Magasin dont le rendu doit être effectué.
 
    * `@param {String} divId`
 
-      Identifiant de la balise div dans laquelle le magasin doit être rendu.
+      Identifiant du div dans lequel le rendu du magasin doit être effectué.
 
 >[!NOTE]
 >
->Tous les composants ClientContext sont des extensions des composants genericstore ou genericstoreproperties. Plusieurs exemples sont installés dans la variable `/libs/cq/personalization/components/contextstores` dossier.
+>Tous les composants de contexte client sont des extensions des composants Boutique générique ou Propriétés de la boutique générique. Plusieurs exemples sont installés dans le dossier `/libs/cq/personalization/components/contextstores`.
 
 #### Configuration de l’aspect dans le sidekick {#configuring-the-appearance-in-sidekick}
 
-Lorsque vous modifiez ClientContext, les composants du magasin de contexte s’affichent dans le sidekick. Comme c’est le cas avec tous les composants, les propriétés `componentGroup` et `jcr:title` du composant ClientContext déterminent son groupe et son nom.
+Lorsque vous modifiez ClientContext, les composants du magasin de contexte s’affichent dans le sidekick. Comme c’est le cas avec tous les composants, les propriétés `componentGroup` et `jcr:title` du composant contexte client déterminent son groupe et son nom.
 
-Tous les composants qui ont une `componentGroup` valeur de propriété de `Client Context` s’affichent dans le sidekick par défaut. Si vous utilisez une autre valeur pour la propriété `componentGroup`, vous devez ajouter manuellement le composant au sidekick à l’aide du mode Création.
+Tous les composants dont la valeur de propriété `componentGroup` est définie sur `Client Context` sont affichés, par défaut, dans le sidekick. Si vous utilisez une autre valeur pour la propriété `componentGroup`, vous devez ajouter manuellement le composant au sidekick à l’aide du mode Création.
 
 #### Instance du composant de magasin de contexte {#context-store-component-instances}
 
-Lorsque vous ajoutez un composant de magasin de contexte à ClientContext, un noeud qui représente l’instance du composant est créé ci-dessous. `/etc/clientcontext/default/content/jcr:content/stores`. Ce nœud contient les valeurs de propriété qui sont configurées à l’aide de la boîte de dialogue de modification du composant.
+Lorsque vous ajoutez un composant de magasin de contexte de contexte client, un nœud représentant l’instance du composant est créé sous `/etc/clientcontext/default/content/jcr:content/stores`. Ce nœud contient les valeurs de propriété qui sont configurées à l’aide de la boîte de dialogue de modification du composant.
 
 Lorsque ClientContext est initialisé, ces nœuds sont traités.
 
@@ -225,7 +226,7 @@ Ajoutez un fichier init.js.jsp à votre composant afin de générer le code Java
 
 Le code JavaScript généré est ajouté à la page lorsque ClientContext est initialisé au chargement de la page sur les instances de création et de publication. Ce fichier JSP est exécuté avant le chargement et le rendu de l’instance du composant de magasin de contexte.
 
-Le code doit définir le type MIME du fichier sur `text/javascript`ou n’est pas exécuté.
+Le code doit définir le type MIME du fichier sur `text/javascript`, sans quoi il ne sera pas exécuté.
 
 >[!CAUTION]
 >
@@ -294,7 +295,7 @@ Le dossier de bibliothèque cliente personalization.ui (/etc/clientlibs/foundati
 </div>
 ```
 
-Le `/libs/cq/personalization/components/contextstores/profiledata` le composant magasin de contexte utilise cette structure pour afficher les données du magasin de sessions profile. La classe `cq-cc-thumbnail` place la miniature. Le `cq-cc-store-property-level*x*` formate les données alphanumériques :
+Le composant de magasin de contexte `/libs/cq/personalization/components/contextstores/profiledata` utilise cette structure pour afficher des données issues du magasin de sessions profile. La classe `cq-cc-thumbnail` place la miniature. Les classes `cq-cc-store-property-level*x*` mettent en forme les données alphanumériques :
 
 * Les niveaux level0, level1 et level2 sont distribués verticalement et utilisent une police blanche.
 * level3, et tout niveau supplémentaire, sont distribués horizontalement et utilisent une police blanche avec un arrière-plan plus foncé.
@@ -305,7 +306,7 @@ Le `/libs/cq/personalization/components/contextstores/profiledata` le composant 
 
 Pour effectuer le rendu des données de magasin à l’aide d’un composant genericstore, vous devez :
 
-* Ajoutez la balise personalization:storeRendererTag au script JSP du composant pour identifier le nom du magasin de sessions.
+* Ajouter la balise personalization:storeRendererTag au script JSP du composant pour identifier le nom du magasin de sessions.
 * Implémenter une méthode de rendu sur la classe du magasin de sessions.
 
 #### Identification du magasin de sessions genericstore {#identifying-the-genericstore-session-store}
@@ -328,11 +329,12 @@ Votre magasin de sessions aura ensuite besoin d’une méthode de rendu qui sera
 
 * `@param {String} store`
 
-   Le magasin à rendre
+   
+Magasin dont le rendu doit être effectué.
 
 * `@param {String} divId`
 
-   Identifiant de la balise div dans laquelle le magasin doit être rendu.
+   Identifiant du div dans lequel le rendu du magasin doit être effectué.
 
 ## Interaction avec les magasins de sessions {#interacting-with-session-stores}
 
@@ -359,7 +361,7 @@ function getName(){
 
 Les magasins de sessions déclenchent des événements. Ainsi, il est possible d’ajouter des écouteurs et de déclencher des événements sur la base de ces derniers.
 
-Les magasins de sessions sont construits sur la variable `Observable` modèle. Elles s’étendent [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) qui fournit la variable [`addListener`](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope) .
+Les magasins de sessions s’articulent autour du motif `Observable`. Ils étendent la propriété [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) qui fournit la méthode [`addListener`](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope).
 
 L’exemple suivant ajoute un écouteur à l’événement `update` du magasin de sessions `profile`.
 
@@ -393,7 +395,7 @@ Utilisez la variable [`CQ_Analytics.ClientContextUtils`](/help/sites-developing/
 >
 >Si vous dépendez d’un autre magasin, vous devez tenir compte du cas où le magasin n’est jamais enregistré.
 
-L’exemple suivant utilise l’événement `onStoreRegistered` du magasin de sessions `profile`. Lorsque le magasin de sessions est enregistré, un écouteur est ajouté à l’événement `update` correspondant. Lorsque le magasin est mis à jour, le contenu de la variable `<div class="welcome">` sur la page est mis à jour avec le nom de la variable `profile` magasin.
+L’exemple suivant utilise l’événement `onStoreRegistered` du magasin de sessions `profile`. Lorsque le magasin de sessions est enregistré, un écouteur est ajouté à l’événement `update` correspondant. Lorsque le magasin est mis à jour, le contenu de l’élément `<div class="welcome">` sur la page est mis à jour avec le nom issu du magasin `profile`.
 
 ```
 //listen for the store registration
@@ -425,7 +427,7 @@ function getName(){
 
 Pour empêcher qu’une propriété d’un `PersistedSessionStore` soit conservée (c’est-à-dire, pour l’exclure du cookie `sessionpersistence`), ajoutez la propriété à la liste des propriétés non persistantes du magasin de sessions persistant.
 
-Voir la section [`CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)`](/help/sites-developing/ccjsapi.md#setnonpersisted-name)
+Consultez [`CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)`](/help/sites-developing/ccjsapi.md#setnonpersisted-name).
 
 ```
 CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) {
@@ -497,14 +499,14 @@ Dans cet exemple, vous créez un composant Magasin de contexte qui récupère de
 Créez une application CQ et ajoutez le composant geoloc.
 
 1. Ouvrez CRXDE Lite dans votre navigateur web ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
-1. Cliquez avec le bouton droit de la souris sur le `/apps` puis cliquez sur Créer > Créer un dossier. Indiquez le nom `myapp`, puis cliquez sur OK.
-1. De même, sous `myapp`, créez un dossier nommé `contextstores`. &quot;
-1. Cliquez avec le bouton droit de la souris sur le `/apps/myapp/contextstores` puis cliquez sur Créer > Créer un composant. Indiquez les valeurs de propriété ci-dessous, puis cliquez sur Suivant :
+1. Cliquez avec le bouton droit de la souris sur le dossier `/apps`, puis cliquez sur Créer > Créer un dossier. Indiquez le nom `myapp`, puis cliquez sur OK.
+1. De même, sous `myapp`, créez un dossier nommé `contextstores`. ``
+1. Cliquez avec le bouton droit de la souris sur le dossier `/apps/myapp/contextstores`, puis sélectionnez Créer > Créer un composant. Indiquez les valeurs de propriété ci-dessous, puis cliquez sur Suivant :
 
    * Libellé : **geoloc**
    * Titre : **Magasin de localisation**
-   * Super Type : **`cq/personalization/components/contextstores/genericstoreproperties`**
-   * Groupe : **ClientContext**
+   * Super Type : **`cq/personalization/components/contextstores/genericstoreproperties`**
+   * Groupe : **ClientContext**
 
 1. Dans la boîte de dialogue Créer un composant, cliquez sur Suivant sur chaque page jusqu’à ce que le bouton OK soit activé, puis cliquez à nouveau sur OK.
 1. Cliquez sur Enregistrer tout.
@@ -513,26 +515,26 @@ Créez une application CQ et ajoutez le composant geoloc.
 
 Une boîte de dialogue de modification est requise pour le composant Magasin de contexte. La boîte de dialogue de modification contient un message statique qui indique qu’il n’y a aucune propriété à configurer.
 
-1. Cliquez avec le bouton droit de la souris sur le `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` et cliquez sur Copier.
-1. Cliquez avec le bouton droit de la souris sur le `/apps/myapp/contextstores/geoloc` puis cliquez sur coller.
-1. Supprimez tous les noeuds enfants sous le noeud /apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items :
+1. Cliquez avec le bouton droit sur le nœud `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` et cliquez sur Copier.
+1. Cliquez avec le bouton droit de la souris sur le nœud `/apps/myapp/contextstores/geoloc`, puis sélectionnez Coller.
+1. Supprimez tous les nœuds enfants sous le nœud /apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items :
 
    * store
    * properties
    * thumbnail
 
-1. Cliquez avec le bouton droit de la souris sur le `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` et cliquez sur Créer > Créer un noeud. Indiquez les valeurs de propriété ci-dessous, puis cliquez sur OK :
+1. Cliquez avec le bouton droit sur le nœud `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` et cliquez sur Créer > Créer un nœud. Indiquez les valeurs de propriété ci-dessous, puis cliquez sur OK :
 
    * Nom : **static**
    * Type : **cq:Widget**
 
-1. Ajoutez les propriétés suivantes au nœud  :
+1. Ajoutez les propriétés suivantes au nœud :
 
    | Nom | Type | Valeur |
    |---|---|---|
    | cls | Chaîne | x-form-fieldset-description |
    | text | Chaîne | Le composant geoloc ne nécessite aucune configuration. |
-   | xtype | Chaîne | static |
+   | xtype | Chaîne | statique |
 
 1. Cliquez sur Enregistrer tout.
 
@@ -568,7 +570,7 @@ Ajoutez le code au fichier JSP du composant geoloc pour effectuer le rendu des d
 
 ![chlimage_1-224](assets/chlimage_1-224.png)
 
-1. Dans CRXDE Lite, ouvrez le `/apps/myapp/contextstores/geoloc/geoloc.jsp` fichier .
+1. Dans CRXDE Lite, ouvrez le fichier `/apps/myapp/contextstores/geoloc/geoloc.jsp`.
 1. Ajoutez le code HTML suivant sous le code stub :
 
    ```xml
@@ -602,7 +604,7 @@ Ajoutez le code au fichier JSP du composant geoloc pour effectuer le rendu des d
 Ajoutez le composant Location Store à ClientContext afin qu’il soit initialisé lors du chargement de la page.
 
 1. Ouvrez la page d’accueil de Geometrixx Outdoors sur l’instance de création ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html)).
-1. Cliquez sur Ctrl-Alt-c (Windows) ou Ctrl-option-c (Mac) pour ouvrir ClientContext.
+1. Appuyez sur Ctrl+Alt+C (Windows) ou Ctrl+Option+C (Mac) pour ouvrir le contexte client.
 1. Cliquez sur l’icône de modification dans la partie supérieure de ClientContext pour ouvrir Client Context Designer.
 
    ![](do-not-localize/chlimage_1-11.png)
@@ -613,8 +615,8 @@ Ajoutez le composant Location Store à ClientContext afin qu’il soit initialis
 
 Ouvrez la page d’accueil de Geometrixx Outdoors en mode d’édition, puis ouvrez ClientContext pour afficher les données du composant Location Store.
 
-1. Ouvrez la page anglaise du site Geometrixx Outdoors. ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html))
-1. Pour ouvrir ClientContext, appuyez sur Ctrl-Alt-c (Windows) ou Ctrl-option-c (Mac).
+1. Ouvrez la page anglaise du site Geometrixx Outdoors. ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html))
+1. Pour ouvrir le contexte client, appuyez sur Ctrl+Alt+C (Windows) ou Ctrl+Option+C (Mac).
 
 ## Création d’un ClientContext personnalisé {#creating-a-customized-client-context}
 
@@ -622,19 +624,20 @@ Pour créer un deuxième ClientContext, vous devez dupliquer la branche :
 
 `/etc/clientcontext/default`
 
-* Le sous-dossier :
+* Le sous-dossier :
 
    `/content`
 
-   contiendra le contenu du contexte client personnalisé.
+   Contiendra le contenu du contexte client personnalisé.
 
-* Le dossier :
+* Le dossier :
 
    `/contextstores`
 
-   vous permet de définir différentes configurations pour les magasins de contexte.
+   Vous permet de définir des configurations différentes pour les magasins de contexte.
 
 Pour utiliser votre contexte client personnalisé, modifiez la propriété\
 `path`\
-dans le style de conception du composant ClientContext, comme inclus dans le modèle de page. Par exemple, comme emplacement standard de :\
+dans le style de conception du composant ClientContext, comme inclus dans le modèle de page. Par exemple, comme emplacement standard de :
+\
 `/libs/cq/personalization/components/clientcontext/design_dialog/items/path`

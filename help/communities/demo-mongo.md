@@ -147,11 +147,11 @@ Si AEM était en cours d’exécution avant le démarrage de MongoDB, les instan
 
 Suivez les instructions de la page de documentation principale : [MSRP - Magasin commun MongoDB](msrp.md)
 
-## Test {#test}
+## Testez {#test}
 
 Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l’instance de publication et affichez-le sur l’instance d’auteur, ainsi que le contenu créé par l’utilisateur dans MongoDB et Solr :
 
-1. Sur l’instance de publication, accédez au [Guide des composants de communauté](http://localhost:4503/content/community-components/en/comments.html) et sélectionnez le composant Commentaires .
+1. Sur l’instance de publication, accédez à la [Guide des composants de communauté](http://localhost:4503/content/community-components/en/comments.html) et sélectionnez le composant Commentaires .
 1. Connectez-vous pour publier un commentaire :
 1. Saisissez du texte dans la zone de saisie de texte de commentaire, puis cliquez sur **[!UICONTROL Post]**
 

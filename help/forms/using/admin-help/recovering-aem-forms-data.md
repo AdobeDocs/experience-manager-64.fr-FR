@@ -13,11 +13,11 @@ exl-id: 8469b063-ea22-4706-ad02-1477d5f9d6c5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1157'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Récupération des données AEM forms {#recovering-the-aem-forms-data}
+# Récupération des données AEM Forms {#recovering-the-aem-forms-data}
 
 Cette section décrit les étapes nécessaires à la récupération des données AEM forms. Voir également [Remarques spécifiques à la sauvegarde et la récupération](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
 
@@ -37,7 +37,7 @@ AEM Forms doit pouvoir récupérer de manière fiable après les échecs suivant
 
 Si vous utilisez le mode de sauvegarde restauration, vous restez en mode de sauvegarde après la récupération. Si vous vous trouvez en mode de sauvegarde instantané, vous ne restez pas en mode de sauvegarde après la récupération.
 
-Lorsque vous effectuez une restauration à partir d’une sauvegarde sur un nouveau système, les configurations suivantes peuvent être différentes. Les éléments suivants n’affectent pas les récupérations réussies de l’application AEM Forms :
+Lorsque vous effectuez une restauration à partir d’une sauvegarde sur un nouveau système, les configurations suivantes peuvent être différentes. Les éléments suivants n’affectent pas les récupérations réussies de l’application AEM Forms :
 
 * Adresse IP
 * Configuration du système physique (UC, disque et mémoire)
@@ -69,15 +69,15 @@ Si un nœud unique d’une grappe multinœud a échoué et si les nœuds restant
    >
    >si le répertoire /restore existe déjà, sauvegardez-le, puis supprimez-le avant de renommer le répertoire /backup qui contient les dernières données.
 
-   * (JBoss) Renommer `[appserver root]/server/[server]/svcnative/DocumentStorage/backup` à :
+   * (JBoss) Renommer `[appserver root]/server/[server]/svcnative/DocumentStorage/backup` en :
 
       `[appserver root]/server/[server]/svcnative/DocumentStorage/restore`.
 
-   * (WebLogic) Renommer `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/backup` à :
+   * (WebLogic) Renommer `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/backup` en :
 
       `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/restore`.
 
-   * (WebSphere) Renommer `[appserver root]/installedApps/adobe/[server]/DocumentStorage/backup` à :
+   * (WebSphere) Renommer `[appserver root]/installedApps/adobe/[server]/DocumentStorage/backup` en :
 
       `[appserver root]/installedApps/adobe/[server]/DocumentStorage/restore`.
 
@@ -99,7 +99,7 @@ Si un nœud unique d’une grappe multinœud a échoué et si les nœuds restant
 
    * **Autonome**
 
-      *Restaurez les instances d’auteur et de publication* : si une catastrophe se produit, vous pouvez restaurer le référentiel à l’état de la dernière sauvegarde en effectuant les étapes décrites dans le document [Sauvegarde et de restauration.](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)
+      *Restaurez les instances d’auteur et de publication* : si une catastrophe se produit, vous pouvez restaurer le référentiel à l’état de la dernière sauvegarde en effectuant les étapes décrites dans le document [Sauvegarde et de restauration.](https://docs.adobe.com/docs/fr/crx/current/administering/backup_and_restore.html)
 
       La restauration complète du nœud d’auteur vérifie également la restauration des données Forms Manager et AEM Forms Workspace.
 
@@ -108,11 +108,11 @@ Si un nœud unique d’une grappe multinœud a échoué et si les nœuds restant
       Pour la restauration dans un environnement organisé en grappes, consultez la section [Stratégie de sauvegarde et de restauration dans un environnement organisé en grappes](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Supprimez tous les fichiers temporaires AEM forms créés dans le répertoire java.io.temp ou dans le répertoire temporaire Adobe.
-1. Démarrage AEM formulaires (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. Démarrez AEM Forms (voir [Démarrer et arrêter des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Modification de l’emplacement du stockage global de documents durant la récupération {#changing-the-gds-location-during-recovery}
 
-Si votre répertoire de stockage global de documents est restauré à un emplacement différent de son emplacement d’origine, exécutez le script LCSetGDS pour définir le répertoire de stockage global de documents sur le nouvel emplacement. Le script se trouve dans la variable `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline` dossier. Le script prend deux paramètres, `defaultGDS` et `newGDS`. Voir le fichier `ReadMe.txt` dans le même dossier pour obtenir des instructions sur la façon d’exécuter le script.
+Si votre répertoire de stockage global de documents est restauré à un emplacement différent de son emplacement d’origine, exécutez le script LCSetGDS pour définir le répertoire de stockage global de documents sur le nouvel emplacement. Le script se trouve dans le dossier `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline`. Le script utilise deux paramètres, `defaultGDS` et `newGDS`. Voir le fichier `ReadMe.txt` dans le même dossier pour obtenir des instructions sur la façon d’exécuter le script.
 
 >[!NOTE]
 >

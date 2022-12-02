@@ -14,7 +14,7 @@ exl-id: 0be6d031-f8b8-458b-a910-ff05d2b1a155
 source-git-commit: b921cf3a1739b031eea5c319953d20a024515544
 workflow-type: tm+mt
 source-wordcount: '2830'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ Pour une instance sécurisée, il est obligatoire d’activer la couche de trans
 
 >[!NOTE]
 >
->Pour plus d’informations, voir la section [Activation de HTTP Over SSL](/help/sites-administering/ssl-by-default.md).
+>Pour plus d’informations, consultez la section [Activation d’HTTP Over SSL](/help/sites-administering/ssl-by-default.md).
 
 ### Installation des correctifs de sécurité {#install-security-hotfixes}
 
@@ -50,17 +50,17 @@ Assurez-vous d’avoir installé les derniers [correctifs de sécurité fournis 
 
 ### Modification des mots de passe par défaut pour les comptes administrateur d’AEM et de la console OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe recommande vivement, après l’installation, de modifier le mot de passe pour les privilégiés. [**AEM** `admin` comptes](#changing-the-aem-admin-password) (sur toutes les instances).
+Adobe recommande vivement, après l’installation, de modifier le mot de passe pour les comptes dotés d’autorisations [**AEM** `admin`comptes](#changing-the-aem-admin-password) (sur toutes les instances).
 
 Ces comptes sont les suivants :
 
-* L&#39;AEM `admin` account
+* Le compte `admin` AEM
 
-   Une fois que vous avez modifié le mot de passe du compte administrateur AEM, vous devez utiliser le nouveau mot de passe lors de l’accès à CRX.
+   Une fois que vous avez modifié le mot de passe du compte d’administration d’AEM, vous devez utiliser le nouveau mot de passe lors de l’accès à CRX.
 
-* Le `admin` mot de passe de la console web OSGi
+* Le mot de passe `admin` de la console web OSGi
 
-   Cette modification sera également appliquée au compte administrateur utilisé pour accéder à la console web. Vous devrez donc utiliser le même mot de passe lors de l’accès à ce compte.
+   Cette modification sera également appliquée au compte d’administration utilisé pour accéder à la console web. Vous devez donc utiliser le même mot de passe lorsque vous y accédez.
 
 Ces deux comptes utilisent des informations d’identification distinctes. Il est essentiel d’utiliser des mots de passe sécurisés distincts pour un déploiement sécurisé.
 
@@ -68,15 +68,15 @@ Ces deux comptes utilisent des informations d’identification distinctes. Il es
 
 Le mot de passe du compte administrateur d’AEM peut être modifié par le biais de la console [Opérations Granite – Users](/help/sites-administering/granite-user-group-admin.md).
 
-Vous pouvez y modifier la variable `admin` compte et [modification du mot de passe](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user).
+Vous pouvez modifier le compte `admin` et [modifier le mot de passe](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user).
 
 >[!NOTE]
 >
 >La modification du compte administrateur modifie également le compte de la console web OSGi. Après avoir modifié le compte administrateur, vous devez remplacer le compte OSGi par une autre valeur.
 
-#### Importance la modification du mot de passe de la console web OSGi {#importance-of-changing-the-osgi-web-console-password}
+#### Importance de la modification du mot de passe de la console web OSGi {#importance-of-changing-the-osgi-web-console-password}
 
-À part l’AEM `admin` Si vous ne modifiez pas le mot de passe par défaut du mot de passe de la console web OSGi, les événements suivants peuvent se produire :
+En plus du compte `admin` d’AEM, si vous ne modifiez pas le mot de passe par défaut du mot de passe de la console web OSGi, cela peut entraîner :
 
 * l’affichage du serveur avec un mot de passe par défaut au démarrage et à l’arrêt (opération qui peut prendre quelques minutes sur les serveurs importants) ;
 * l’exposition du serveur lorsque le référentiel est en panne/redémarre un lot (et qu’OSGI est en cours d’exécution).
@@ -85,14 +85,14 @@ Pour plus d’informations sur la modification du mot de passe de la console web
 
 #### Modification du mot de passe administrateur de la console web OSGi {#changing-the-osgi-web-console-admin-password}
 
-Vous devez également modifier le mot de passe utilisé pour accéder à la console web. Pour ce faire, configurez les propriétés suivantes de la variable [Console de gestion OSGi Apache Felix](/help/sites-deploying/osgi-configuration-settings.md):
+Vous devez également modifier le mot de passe utilisé pour accéder à la console web. À cet effet, configurez les propriétés de la [console de gestion OSGi Apache Felix](/help/sites-deploying/osgi-configuration-settings.md) suivantes :
 
-**Nom d’utilisateur** et **mot de passe**, les informations d’identification pour accéder à la console de gestion web Apache Felix.\
+**Nom d’utilisateur** et **Mot de passe**, les informations d’identification pour accéder à la console de gestion web Apache Felix.\
 Le mot de passe doit être modifié après l’installation initiale pour garantir la sécurité de votre instance. 
 
 Pour ce faire :
 
-1. Accédez à la console web à l’adresse `<server>:<port>/system/console/configMgr`.
+1. Accédez à la console web sur `<server>:<port>/system/console/configMgr`.
 1. Accédez à** Console de gestion Apache Felix OSGi** et modifiez les **nom d’utilisateur** et **password**.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
@@ -105,11 +105,11 @@ Adobe recommande de définir des pages de gestionnaire d’erreur personnalisé,
 
 >[!NOTE]
 >
->Pour plus d’informations, voir l’article de la base de connaissances [Comment créer des scripts ou des gestionnaires d’erreur personnalisés](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html).
+>Pour plus d’informations, consultez l’article de la base de connaissances [Comment créer des scripts ou des gestionnaires d’erreur personnalisés](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html).
 
 ### Liste de contrôle de sécurité de Dispatcher {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe recommande vivement de compléter la [liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=fr#getting-started).
+AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe recommande vivement de compléter la [liste de contrôle de sécurité de Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/security-checklist.html).
 
 >[!CAUTION]
 >
@@ -125,7 +125,7 @@ Pour les aspects liés à la sécurité, les deux doivent être modifiés de man
 
 * L’**utilisateur du transfert** ne doit pas être administrateur. Au lieu de cela, configurez un utilisateur sur le système de publication, qui ne dispose de droits d’accès que sur les parties pertinentes du système de publication et utilise ces informations d’identification pour le transfert.
 
-   Vous pouvez partir de l’utilisateur de réception de la réplication en lot et configurer les droits d’accès de cet utilisateur afin qu’ils correspondent à votre situation
+   Vous pouvez partir de l’utilisateur de réception de la réplication en lot et configurer les droits d’accès de cet utilisateur afin qu’ils correspondent à votre situation.
 
 * L’**utilisateur de la réplication** ou l’**ID utilisateur de l’agent** ne doit pas être non plus un administrateur, mais un utilisateur qui ne peut afficher que le contenu qui est censé être répliqué. L’utilisateur de la réplication permet de collecter le contenu à répliquer sur le système de création avant de l’envoyer au système de publication.
 
@@ -159,9 +159,9 @@ Ce lot OSGi doit être désinstallé sur les systèmes de création et de public
 
 ### Protection contre les attaques CSRF {#protect-against-cross-site-request-forgery}
 
-#### Infrastructure de protection CSRF {#the-csrf-protection-framework}
+#### Le Framework de protection CSRF {#the-csrf-protection-framework}
 
-AEM 6.1 est fourni avec un mécanisme qui offre une protection contre les attaques par usurpation des demandes intersites, appelé « **Infrastructure de protection CSRF Framework** ». Pour plus d’informations sur l’utilisation, consulter la [documentation](/help/sites-developing/csrf-protection.md).
+AEM 6.1 est fourni avec un mécanisme qui offre une protection contre les attaques par usurpation des demandes intersites, appelé « **Infrastructure de protection CSRF Framework** ». Pour plus d’informations sur son utilisation, consultez la [documentation](/help/sites-developing/csrf-protection.md).
 
 #### Filtre de référents Sling {#the-sling-referrer-filter}
 
@@ -171,24 +171,24 @@ Le service de filtre de référent est un service OSGi qui permet de configurer�
 
 * les méthodes HTTP à filtrer ;
 * si un en-tête de référent vide est permis ;
-* et une liste des serveurs à autoriser en plus de l’hôte du serveur.
+* et une liste des serveurs autorisés, en plus de l’hôte de serveur.
 
-   Par défaut, toutes les variantes de localhost et les noms d’hôte actuels auxquels le serveur est lié figurent dans la liste.
+   Par défaut, toutes les variantes de localhost et les noms d’hôtes actuels auxquels le serveur est lié figurent sur la liste.
 
-Pour configurer le service de filtrage de référent :
+Pour configurer le service de filtrage de référent, procédez comme suit :
 
-1. Ouvrez la console Apache Felix (**Configurations**) à :
+1. Ouvrez la console Apache Felix (**Configurations**) sur :
 
    `https://<server>:<port_number>/system/console/configMgr`
 
-1. Se connecter en tant que `admin`.
+1. Connectez-vous en tant qu’`admin`.
 1. Dans le menu **Configurations**, sélectionnez :
 
    `Apache Sling Referrer Filter`
 
-1. Dans le `Allow Hosts` , saisissez tous les hôtes autorisés en tant que référent. Chaque entrée doit se trouver dans le formulaire.
+1. Dans le champ `Allow Hosts`, saisissez tous les hôtes autorisés comme référents. Chaque entrée doit se trouver dans le formulaire.
 
-   &lt;protocol>:/&lt;server>:&lt;port>
+   &lt;protocol>://&lt;server>:&lt;port>
 
    Par exemple :
 
@@ -196,13 +196,13 @@ Pour configurer le service de filtrage de référent :
    * Si vous souhaitez également autoriser les demandes https, vous devez saisir une seconde ligne.
    * Si vous autorisez tous les ports de ce serveur, vous pouvez utiliser `0` comme numéro de port.
 
-1. Vérifiez les `Allow Empty` , si vous souhaitez autoriser les en-têtes de référent vides/manquants.
+1. Contrôlez le champ `Allow Empty` si vous souhaitez autoriser les en-têtes de référent vides ou manquants.
 
    >[!CAUTION]
    >
    >Il est recommandé de fournir un référent lors de l’utilisation des outils de ligne de commande, comme `cURL` au lieu d’autoriser une valeur vide, car cela peut exposer votre système à des attaques CSRF.
 
-1. Modifiez les méthodes que ce filtre doit utiliser pour les contrôles avec la variable `Filter Methods` champ .
+1. Modifiez les méthodes que ce filtre doit utiliser pour les contrôles avec le champ `Filter Methods`.
 
 1. Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
@@ -216,33 +216,33 @@ Certains paramètres OSGI sont définis par défaut de manière à faciliter le 
 
 Pour chacun des services ci-dessous, les paramètres spécifiés doivent être modifiés :
 
-* [Gestionnaire de bibliothèque HTML Adobe Granite](/help/sites-deploying/osgi-configuration-settings.md):
+* [Gestionnaire de bibliothèque HTML Adobe Granite](/help/sites-deploying/osgi-configuration-settings.md) :
 
    * Activez l’option **Réduire** (pour supprimer retours chariot et les espaces).
    * Activez l’option **Gzip** (pour permettre de compresser les fichiers et d’y accéder dans une demande).
    * Désactivez l’option **Déboguer**.
    * Désactivez l’option **Synchronisation**.
 
-* [Filtre de débogage WCM Day CQ](/help/sites-deploying/osgi-configuration-settings.md) :
+* [Filtre de débogage de la gestion de contenu web Day CQ](/help/sites-deploying/osgi-configuration-settings.md) :
 
    * Désactivez l’option **Activer**.
 
 * [Filtre WCM Day CQ](/help/sites-deploying/osgi-configuration-settings.md) :
 
-   * Lors de la publication uniquement, définissez **Mode WCM** sur Désactivé.
+   * Lors de la publication uniquement, définissez le **Mode de gestion de contenu web** sur Désactivé.
 
-* [Gestionnaire de scripts Sling Java Apache](/help/sites-deploying/osgi-configuration-settings.md):
+* [Gestionnaire de scripts Sling Java Apache](/help/sites-deploying/osgi-configuration-settings.md) :
 
-   * Désactivez l’option **Générer les informations de débogage**
+   * Désactivez l’option **Générer les informations de débogage**.
 
-* [Gestionnaire de scripts Apache Sling JSP](/help/sites-deploying/osgi-configuration-settings.md):
+* [Gestionnaire de scripts JSP Apache Sling](/help/sites-deploying/osgi-configuration-settings.md) :
 
-   * Désactivez **Generate Debug Info (Générer les informations de débogage)**
-   * Désactivez **Mapped Content (Contenu mappé)**
+   * Désactivez l’option **Générer les informations de débogage**.
+   * Désactivez l’option **Contenu mappé**.
 
 Pour plus d’informations, voir [Paramètres de configuration d’OSGi](/help/sites-deploying/osgi-configuration-settings.md).
 
-Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
+Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
 ## Autres ressources à lire {#further-readings}
 
@@ -257,13 +257,13 @@ Une attaque par déni de service (DoS) est une tentative de rendre une ressource
 
 * Lors de la demande d’une page de contenu avec un nombre illimité d’adresses URL, l’adresse URL peut inclure un nom en ligne, certains sélecteurs, une extension et un suffixe, qui peuvent tous être modifiés.
 
-   Par exemple : `.../en.html` peut également être demandé en tant que :
+   Par exemple, `.../en.html` peut également être demandé comme suit :
 
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
 
-   Toutes les variantes possibles (par exemple, renvoi d’une réponse `200`, configurée pour être mise en cache) seront mises en cache par Dispatcher, ce qui entraîne la saturation du système de fichiers et l’indisponibilité du service pour d’autres demandes.
+   Toutes les variantes possibles (par exemple, renvoi d’une réponse `200`, configurée pour être mise en cache) seront mises en cache par le Dispatcher, ce qui entraîne la saturation du système de fichiers et l’indisponibilité du service pour d’autres demandes.
 
 De nombreux points de configuration permettent de prévenir ce type d’attaque. Nous n’abordons que ceux liés directement à AEM.
 
@@ -286,22 +286,22 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 
    Dans votre application, vous devez :
 
-   * Contrôler les sélecteurs dans votre application afin de ne proposer *que* les sélecteurs explicites nécessaires et de renvoyer un message `404` pour tous les autres.
+   * contrôler les sélecteurs dans votre application afin de ne proposer *que* les sélecteurs explicites nécessaires et de renvoyer un message `404` pour tous les autres ;
    * Empêcher la sortie d’un nombre illimité de nœuds de contenu.
 
 1. Contrôlez la configuration des outils de rendu par défaut, ce qui peut poser un problème.
 
    * Notamment, l’outil de rendu JSON, qui peut traverser l’arborescence sur plusieurs des niveaux.
 
-      Par exemple, la requête :
+      Par exemple, la requête :
 
       `http://localhost:4502/.json`
 
-      peut vider l’ensemble du référentiel dans une représentation JSON. Cela entraînerait des problèmes importants au niveau du serveur. Ainsi, Sling définit une limite de nombre maximal de résultats. Pour limiter la profondeur du rendu JSON, vous pouvez définir la valeur de :
+      pourrait vider l’ensemble du référentiel d’une représentation JSON. Cela entraînerait des problèmes importants au niveau du serveur. Ainsi, Sling définit une limite de nombre maximal de résultats. Pour limiter la profondeur du rendu JSON, vous pouvez définir la valeur sur :
 
-      **Résultats JSON max** ( `json.maximumresults`)
+      **Résultats JSON max** (`json.maximumresults`)
 
-      dans la configuration de la variable [Servlet de GET Apache Sling](/help/sites-deploying/osgi-configuration-settings.md). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `1000`.
+      dans la configuration du [Servlet GET Apache Sling](/help/sites-deploying/osgi-configuration-settings.md). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est de `1000`.
 
    * À titre de mesure préventive, désactivez les autres outils de rendu par défaut (HTML, texte brut, XML). Là encore, en configurant le [servlet Sling GET d’Apache](/help/sites-deploying/osgi-configuration-settings.md).
    >[!CAUTION]
@@ -318,13 +318,13 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 >
 >Cette réduction ne doit être effectuée que sur les environnements AEM qui n’utilisent pas Forms.
 
-Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Les sélecteurs de formulaire peuvent être détectés par la présence de la variable **&amp;ast;.form.&amp;ast;** dans les requêtes.
+Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Les sélecteurs de formulaire peuvent être détectés par la présence de la chaîne **&amp;ast;.form.&amp;ast;** dans les requêtes.
 
-Pour atténuer ce problème, veuillez procéder comme suit :
+Pour atténuer ce problème, procédez comme suit :
 
-1. Accédez à la console web en pointant votre navigateur vers *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Accédez à la console web en faisant pointer votre navigateur sur *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*.
 
-1. Recherchez **Day CQ WCM Form Chooser Servlet**
+1. Recherchez le **Servlet de sélection de formulaires de gestion de contenu web Day CQ**.
 1. Après avoir cliqué sur l’entrée, désactivez la **Recherche avancée requise** dans la fenêtre suivante.
 
 1. Cliquez sur **Enregistrer**.
@@ -373,11 +373,11 @@ Aucune configuration ne doit être effectuée pour l’activer, car il s’agit 
 
 Même si cela n’est pas recommandé, vous pouvez la désactiver au cas où vous auriez besoin de l’ancienne mise en œuvre pour des raisons de rétrocompatibilité avec vos applications existantes. À cet effet, vous devez effectuer les opérations suivantes :
 
-1. Accédez à la console web et supprimez l’entrée** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** de la propriété . **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
+1. Accédez à la console web et supprimez l’entrée **org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** de la propriété **requiredServicePids** dans **Apache Jackrabbit Oak SecurityProvider**.
 
-   Vous pouvez également trouver Oak Security Provider en cherchant le PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** dans les configurations OSGi.
+   Vous pouvez également trouver Oak Security Provider en cherchant le PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** dans les configurations OSGi.
 
-1. Supprimez la configuration OSGi **Apache Jackrabbit Oak Random Authorizable Node Name** dans la console web.
+1. Supprimez la configuration OSGi **Apache Jackrabbit Oak Random Authorizable Node Name** dans la console web.
 
    Pour faciliter la recherche, notez que le PID pour cette configuration est **org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName**.
 
@@ -389,7 +389,7 @@ Même si cela n’est pas recommandé, vous pouvez la désactiver au cas où vou
 
 Pour empêcher le détournement de clic, il est conseillé de configurer le serveur web afin que l’en-tête HTTP `X-FRAME-OPTIONS` soit défini sur `SAMEORIGIN`.
 
-Pour plus [d’informations sur le détournement de clic, voir le site OWASP](https://www.owasp.org/index.php/Clickjacking).
+Pour plus [d’informations sur le détournement de clic, consultez le site de l’OWASP](https://www.owasp.org/index.php/Clickjacking).
 
 ### Veillez à répliquer correctement les clés de chiffrement lorsque cela est nécessaire {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
@@ -433,21 +433,21 @@ Plus spécifiquement, vous devez effectuer les opérations suivantes :
 >
 >`-Dcom.adobe.granite.crypto.file.disable=true`
 
-#### Réplication des clés pour AEM 6.2 et versions antérieures {#replicating-keys-for-aem-and-older-versions}
+#### Réplication des clés pour AEM 6.2 et les versions antérieures {#replicating-keys-for-aem-and-older-versions}
 
-Dans AEM 6.2 et les versions antérieures, les clés sont stockées dans le référentiel sous le `/etc/key` noeud .
+Dans AEM 6.2 et les versions antérieures, les clés sont stockées dans le référentiel, sous le nœud `/etc/key`.
 
 La méthode recommandée pour répliquer en toute sécurité les clés sur toutes les instances est de ne répliquer que ce nœud. Vous pouvez répliquer les nœuds de façon sélective à l’aide de CRXDE Lite :
 
 1. Ouvrez le CRXDE Lite en accédant à *https://&lt;serrveraddress>:4502/crx/de/index.jsp*
-1. Sélectionnez la `/etc/key` noeud .
+1. Sélectionnez le nœud `/etc/key`.
 1. Cliquez sur l’onglet **Réplication**.
 1. Appuyez sur le bouton **Réplication**.
 
 ### Test de pénétration {#perform-a-penetration-test}
 
-Adobe recommande vivement d’effectuer un test de pénétration de l’infrastructure AEM avant la mise en production.
+Adobe recommande vivement d’effectuer un test de pénétration de l’infrastructure AEM avant la mise en exploitation.
 
-### Meilleures pratiques de développement {#development-best-practices}
+### Bonnes pratiques de développement {#development-best-practices}
 
 Il est essentiel que les nouveaux développements respectent les [meilleures pratiques de sécurité](/help/sites-developing/security.md) afin de vous assurer de la sécurité de votre environnement AEM.

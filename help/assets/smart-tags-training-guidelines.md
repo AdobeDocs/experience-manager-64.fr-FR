@@ -11,7 +11,7 @@ exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
 source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
 source-wordcount: '455'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ Pour pouvoir baliser efficacement vos images de marque, le service de contenu dy
 
 Pour un résultat optimal, les images de votre corpus d’entraînement doivent respecter les instructions suivantes :
 
-**Quantité et taille :** Minimum **30 images par balise**. Minimum 500 pixels sur le côté le plus long.
+**Quantité et taille :****minimum 30 images par balise**. Minimum 500 pixels sur le côté le plus long.
 
 **Cohérence** : les images associées à une même balise doivent être visuellement similaires.
 
@@ -47,13 +47,13 @@ Par exemple, pour la balise *chaussure-décontractée*, la seconde image n’est
 
 ![Images d’illustration donnant un exemple d’instructions d’entraînement](assets/do-not-localize/completeness.png)
 
-## Restrictions {#limitations}
+## Limites {#limitations}
 
 Les balises intelligentes améliorées sont basées sur des modèles d’apprentissage d’images de marque et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle du service de contenu dynamique présente les limites suivantes :
 
 * Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises coupe droite ou ajustée.
 * Impossibilité d’identifier des balises basées sur des motifs/éléments minuscules d’une image. Par exemple, des logos sur des T-shirts.
-* Le balisage est pris en charge dans les paramètres régionaux qui [!DNL Experience Manager] est prise en charge dans . Pour obtenir la liste des langues, voir [Notes de mise à jour du service de contenu dynamique](/help/release-notes/smart-content-service-release-notes.md).
+* Le balisage est pris en charge dans les paramètres régionaux gérés par [!DNL Experience Manager]. Pour obtenir la liste des langues, consultez [Notes de mise à jour du service de contenu dynamique](/help/release-notes/smart-content-service-release-notes.md).
 
 Pour rechercher des ressources avec des balises intelligentes (standard ou améliorées), utilisez la recherche de texte intégral d’Assets. Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 

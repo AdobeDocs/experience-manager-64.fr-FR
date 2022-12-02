@@ -56,7 +56,7 @@ Pour toutes les instances de création et de publication AEM 6.3 :
 1. Connexion avec droits d’administrateur et configuration [ASRP](asrp.md).
 1. Pour rendre visible le contenu créé par l’utilisateur existant, procédez comme suit :
 
-   i. Accédez à la console web. L’URL par défaut est 
+   i. Accédez à la console web. L’URL par défaut est
    `https://localhost:4502/system/console/configMgr`.
 
    ii. Localiser **[!UICONTROL Utilitaires AEM Communities]** et sélectionnez pour développer le panneau de configuration.

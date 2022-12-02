@@ -13,7 +13,7 @@ exl-id: 04a832d5-1ab5-4db3-b185-57fba21eb839
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '707'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,17 +28,17 @@ Quand un processus bloque, l’exécution de toutes les opérations suivantes es
 
 Pour chaque élément bloqué, la liste présente les informations suivantes :
 
-**Nom de l’opération ou nom de la branche :** Nom de l’opération ou de la branche.
+**Nom de l’opération ou nom de la branche :** le nom de l’opération ou de la branche.
 
-**État :** Toujours BLOQUÉ pour les éléments bloqués.
+**Statut :** toujours BLOQUÉ pour les éléments bloqués.
 
-**Erreur :** Brève description du problème.
+**Erreur :** brève description du problème.
 
-**ID du processus :** entier positif attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance un processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
+**Identifiant du processus :** nombre entier positif affecté par Forms Workflow lorsque le processus est instancié (s’il est démarré par un utilisateur ou une étape automatisée). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
-**Nom du processus - Version :** Nom du processus affecté dans Workbench.
+**Nom du processus - Version :** nom du processus affecté dans Workbench.
 
-**Date bloquée :** date et heure auxquelles l’opération ou la branche a bloqué.
+**Date du blocage :** date et heure auxquelles l’opération ou la branche ont été bloquées.
 
 Vous pouvez exécuter les tâches suivantes dans la page Opérations bloquées ou Branches bloquées :
 

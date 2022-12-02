@@ -13,7 +13,7 @@ exl-id: f39910cf-1875-43fc-bfb5-259b9d8f135d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '88'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 Les liaisons Sling constituent un moyen inapproprié d’accéder à un service dans 90 % des cas. À la place, il faut utiliser les annotations *@Reference* ou *@Inject*.
 
-## Éviter Thread.interrupt dans le code Java {#avoid-thread-interrupt-in-java-code}
+## Éviter d’insérer Thread.interrupt dans le code Java {#avoid-thread-interrupt-in-java-code}
 
 *Thread.interrupt* est dangereux car il peut fermer des fichiers, y compris des fichiers Lucene et des fichiers cache persistants, s’il est appelé au mauvais moment.
 

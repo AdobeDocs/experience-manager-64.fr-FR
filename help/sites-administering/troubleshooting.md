@@ -13,7 +13,7 @@ exl-id: 201e2b57-17c0-4454-9b0e-026e2c95ac63
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ CRX enregistre des journaux détaillés. Après avoir décompressé et démarré
 * crx-quickstart/server/logs
 * crx-quickstart/logs
 
-## Activation du niveau de journalisation DEBUG {#activating-the-debug-log-level}
+## Activation du niveau de journalisation DÉBOGUER {#activating-the-debug-log-level}
 
-Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DEBUG ne sont pas consignés.
+Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DÉBOGUER ne sont pas consignés.
 
 Pour activer le niveau de journalisation DEBUG, utilisez l’explorateur CRX afin de définir
 
@@ -37,7 +37,7 @@ Pour activer le niveau de journalisation DEBUG, utilisez l’explorateur CRX afi
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
 ```
 
-la propriété à corriger. Ne laissez pas le journal au niveau de débogage DEBUG plus longtemps que nécessaire, car cela génère un grand nombre de journaux.
+la propriété à corriger. Ne laissez pas le journal au niveau DÉBOGUER plus longtemps que nécessaire, car cela génère un grand nombre de journaux.
 
 Une ligne dans le fichier de débogage commence généralement par DEBUG, puis fournit le niveau de journalisation, l’action d’installation et le message du journal. Par exemple :
 
@@ -55,7 +55,7 @@ Les niveaux de journalisation sont les suivants :
 
 ## Option d’informations détaillées utilisée pour la résolution des incidents {#verbose-option-used-for-troubleshooting}
 
-Lorsque vous démarrez CRX, vous pouvez ajouter l’option -v (verbose) à la ligne de commande, comme dans : &quot;
+Lorsque vous démarrez CRX, vous pouvez ajouter l’option -v (verbose) à la ligne de commande : &quot;
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 

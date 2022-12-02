@@ -13,7 +13,7 @@ role: Admin,User,Developer
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
@@ -33,7 +33,7 @@ Si vous administrez des médias dynamiques, les rubriques suivantes peuvent vous
 * [Configuration du mode Dynamic Media hybride](config-dynamic.md) - Utilisez cette configuration si vous êtes déjà un client Dynamic Media effectuant une mise à niveau AEM.
 * [Gestion des paramètres d’image prédéfinis](managing-image-presets.md)
 * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
-* [Résolution des problèmes liés à Dynamic Media - Mode Scene7](troubleshoot-dms7.md)
+* [Résolution des problèmes liés à Dynamic Media en mode Scene7](troubleshoot-dms7.md)
 
 Voir aussi les rubriques suivantes :
 

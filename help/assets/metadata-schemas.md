@@ -1,6 +1,6 @@
 ---
 title: Schémas de métadonnées
-description: 'Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.  '
+description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
@@ -8,7 +8,7 @@ exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
 source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
 source-wordcount: '2524'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -47,8 +47,8 @@ Pour afficher la liste des formulaires/modèles, reportez-vous à la section [!D
 |  | <ul><li> [!UICONTROL l’application ;]</li></ul> | Formulaire de schéma pour les ressources avec le type MIME &quot;application&quot;, par exemple application/ pdf, application/ zip, etc. <br>[!UICONTROL pdf]: Formulaire de schéma pour les ressources avec le sous-type pdf. |
 |  | <ul><li>[!UICONTROL vidéo]</li></ul> | Formulaire de schéma pour les ressources avec le type MIME &quot;video&quot;, par exemple video/avi, video/mp4, etc. |
 | [!UICONTROL collection] |  | Formulaire de schéma pour les collections |
-| [!UICONTROL contentfragment] |  | Formulaire de schéma pour les fragments de contenu. |
-| [!UICONTROL forms] |  | Ce formulaire de schéma se rapporte à [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL contentfragment] |  | Formulaire de schéma pour les fragments de contenu |
+| [!UICONTROL formulaires] |  | Ce formulaire de schéma est associé aux [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
 >

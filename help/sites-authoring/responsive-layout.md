@@ -13,7 +13,7 @@ exl-id: 788bb439-fb8a-4ab9-b367-cea6a17c0c43
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1785'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ En fonction de votre projet, le conteneur de mises en page peut être utilisé e
 
 >[!NOTE]
 >
->L’utilisation des mécanismes ci-dessus est activée par une configuration du modèle. Voir [Configuration d’une mise en page réactive](/help/sites-administering/configuring-responsive-layout.md) pour plus d’informations.
+>L’utilisation des mécanismes ci-dessus est activée par une configuration du modèle. Pour plus d’informations, consultez la section [Configuration d’une mise en page réactive](/help/sites-administering/configuring-responsive-layout.md).
 
 ## Définitions de mise en page, émulation d’appareil et points d’arrêt {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -115,7 +115,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
    ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
 
-   * **Sélectionner un périphérique** : permet de sélectionner un appareil spécifique à émuler dans une liste (pour plus d’informations, voir l’étape suivante).
+   * **Sélectionner un appareil** : permet de sélectionner un appareil spécifique à émuler dans une liste (pour plus d’informations, voir l’étape suivante).
 
    ![](do-not-localize/screen_shot_2018-03-23at084743.png)
 
@@ -228,7 +228,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
    * **Flotter sur une nouvelle ligne**
 
-      Le composant est déplacé vers une nouvelle ligne, selon l’espace disponible dans la grille.
+      Le composant est déplacé vers une nouvelle ligne selon l’espace disponible dans la grille.
 
    * **Masquer le composant**
 

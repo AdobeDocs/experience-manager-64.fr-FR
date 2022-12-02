@@ -1,7 +1,7 @@
 ---
 title: Créer un formulaire adaptatif à l’aide d’un jeu de formulaires adaptatifs
 seo-title: Create an adaptive form using a set of adaptive forms
-description: 'Avec AEM Forms, regroupez les formulaires adaptatifs pour générer un seul grand formulaire adaptatif et explorez ses fonctionnalités. '
+description: Avec AEM Forms, regroupez les formulaires adaptatifs pour générer un seul grand formulaire adaptatif et explorez ses fonctionnalités.
 seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
 uuid: 1423038b-8261-455b-b4ff-7be7222448c9
 products: SG_EXPERIENCEMANAGER/6.4/FORMS

@@ -13,7 +13,7 @@ exl-id: 9b8c3d1c-a9b1-4dde-9044-46c8f2b22c22
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -39,7 +39,7 @@ Le `categories`La valeur de propriété donnée à cette bibliothèque cliente e
 Dans le **[!UICONTROL Propriétés]** pour le nouvel onglet `clientlibs` , saisissez le **`categories`** property:
 
 * Nom :**[!UICONTROL catégories]**
-* Type : **[!UICONTROL Chaîne]**
+* Type :**[!UICONTROL chaîne]**
 * Valeur : **[!UICONTROL apps.an-scf-sandbox]**
 * Cliquez sur **[!UICONTROL Ajouter]**
 * Cliquez sur **[!UICONTROL Enregistrer tout]**
@@ -165,7 +165,7 @@ Pour créer un package :
 
 
 * De **[!UICONTROL CRXDE Lite]**, cliquez sur le bouton [Icône Package](http://localhost:4502/crx/packmgr/)
-* Cliquez sur **[!UICONTROL Créer un package]**
+* Cliquez sur **[!UICONTROL Créer un module]**
 
    * Nom du module: `an-scf-sandbox-minimal-pkg`
    * Version: `0.1`
@@ -188,6 +188,6 @@ Pour créer un package :
    * Cliquez sur **[!UICONTROL Enregistrer]**
 
 
-* Cliquez sur **[!UICONTROL Build]**
+* Cliquez sur **[!UICONTROL Concevoir]**
 
 Maintenant, vous pouvez sélectionner **[!UICONTROL Télécharger]** pour l’enregistrer sur le disque et **[!UICONTROL Télécharger le module]** ailleurs, puis sélectionnez **[!UICONTROL Plus > Répliquer]** afin de pousser l’environnement de test vers une instance de publication localhost pour développer le domaine de votre environnement de test.

@@ -1,7 +1,7 @@
 ---
 title: Création de noeuds
 seo-title: Create Nodes
-description: 'Recouvrir le système de commentaires '
+description: Recouvrir le système de commentaires
 seo-description: Overlay the comments system
 uuid: 802ae28b-9989-4c2c-b466-ab76a724efd3
 contentOwner: User
@@ -13,7 +13,7 @@ exl-id: fc044a4e-0037-405f-8c26-b388c6a98733
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 11%
+ht-degree: 15%
 
 ---
 
@@ -51,8 +51,8 @@ Certains noeuds du chemin d’accès sont des dossiers et d’autres sont des co
    * **[!UICONTROL Créer > Créer un composant...]**
       * Saisissez le libellé : `comments`
       * Saisissez le titre : `Comments`
-      * Saisissez la description : `List of comments without showing avatars`
-      * Super Type : `social/commons/components/comments`
+      * Saisir une description: `List of comments without showing avatars`
+      * Super Type : `social/commons/components/comments`
       * Entrez Groupe : `Communities`
       * Cliquez sur **[!UICONTROL Suivant]** Jusqu’à **[!UICONTROL OK]**
 1. Sélectionner `comments` node
@@ -61,8 +61,8 @@ Certains noeuds du chemin d’accès sont des dossiers et d’autres sont des co
 
       * Saisissez le libellé : `comment`
       * Saisissez le titre : `Comment`
-      * Saisissez la description : `A comment instance without avatars`
-      * Super Type : `social/commons/components/comments/comment`
+      * Saisir une description: `A comment instance without avatars`
+      * Super Type : `social/commons/components/comments/comment`
       * Entrez Groupe : `.hidden`
       * Cliquez sur **[!UICONTROL Suivant]** Jusqu’à **[!UICONTROL OK]**
    * Sélectionnez **[!UICONTROL Enregistrer tout]**
@@ -70,7 +70,7 @@ Certains noeuds du chemin d’accès sont des dossiers et d’autres sont des co
    * Sélectionner un noeud `/apps/social/commons/components/hbs/comments/comments.jsp`
    * Sélectionnez **[!UICONTROL Supprimer]**
 1. Supprimez le fichier comment.jsp par défaut.
-   * select node `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
+   * sélectionnez le nœud `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
    * Sélectionnez **[!UICONTROL Supprimer]**
    * Sélectionnez **[!UICONTROL Enregistrer tout]**
 
@@ -80,7 +80,6 @@ Certains noeuds du chemin d’accès sont des dossiers et d’autres sont des co
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
-
 >
 
 

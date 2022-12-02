@@ -13,7 +13,7 @@ exl-id: e407c643-5753-447e-ad4e-deb7b9eb2b55
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Lorsque vous ajoutez un domaine, spécifiez s’il convient d’activer le verro
 
 Utilisez les paramètres de la page Gestion des domaines pour spécifier le nombre maximum d’échecs d’authentification et la durée de verrouillage des comptes. Ces paramètres s’appliquent à tous les domaines dans lesquels le verrouillage des comptes est activé.
 
-1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Gestion des utilisateurs > Gestion des domaines]**.
+1. Dans la console dʼadministration, cliquez sur **[!UICONTROL Paramètres > Gestion des utilisateurs > Gestion des domaines]**.
 1. Dans la zone Echecs d’authentification consécutifs max., indiquez le nombre de tentatives consécutives dont dispose un utilisateur pour ouvrir une session avant que son compte ne soit verrouillé. La valeur par défaut est 20.
 1. Dans la zone Déverrouiller le compte après (minutes), indiquez la durée de verrouillage du compte utilisateur en minutes. A l’issue de ce délai, l’utilisateur peut tenter d’ouvrir une autre session. La valeur par défaut est 30.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.

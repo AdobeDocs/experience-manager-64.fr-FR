@@ -25,7 +25,7 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 | Types MIME | [!UICONTROL Images], [!UICONTROL Documents], [!UICONTROL Multimédia], [!UICONTROL Archives]ou Autre. |
 | [!UICONTROL Dernière modification] | Heure, Jour, Semaine, Mois ou Année. |
 | [!UICONTROL Taille de fichier] | Petit, Moyen ou Grand. |
-| [!UICONTROL État de publication] | Publiée ou Publication annulée. |
+| [!UICONTROL Statut de publication] | Publiée ou Publication annulée. |
 | [!UICONTROL État d’approbation] | Accepté ou Rejeté. |
 | [!UICONTROL Orientation] | Horizontal, Vertical ou Carré. |
 | [!UICONTROL Style] | Couleur ou Noir et blanc |
@@ -35,7 +35,7 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 | Codec vidéo | x264.Value est stocké uniquement dans les métadonnées des rendus vidéo. |
 | Débit vidéo | Spécifié en tant que valeur minimale et maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Codec audio | Libvorbis, Lame Mp3, AAC Encoding.Value est stocké uniquement dans les métadonnées des rendus vidéo. |
-| Débit audio | Spécifié en tant que valeur minimale et maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
+| Débit audio  | Spécifié en tant que valeur minimale et maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 
 1. Dans la page **[!UICONTROL Experience Manager]**, appuyez sur **[!UICONTROL Ressources]** dans le rail gauche.
 
