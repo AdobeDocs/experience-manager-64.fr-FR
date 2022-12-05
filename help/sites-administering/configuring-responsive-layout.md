@@ -117,7 +117,7 @@ Ils peuvent être définis à l’aide de CRXDE Lite ou de code XML.
 >
 >* ajouter des points d’arrêt aux modèles ;
 >* ajouter les mêmes points d’arrêt aux pages existantes.\
-   >  Comme l’héritage est en cours d’opération, vous pouvez le limiter à la page racine de votre contenu.
+>  Comme l’héritage est en cours d’opération, vous pouvez le limiter à la page racine de votre contenu.
 >
 
 

@@ -311,8 +311,7 @@ Balise HTML permettant d’inclure le composant « lien graphique » dans le f
 >
 >par un `css .hasbackground { background-image: pathtoimage }` lié
 
-### Formulaire de piste
- {#lead-form}
+### Formulaire de piste {#lead-form}
 
 Le formulaire de piste est utilisé pour collecter des informations sur le profil d’un visiteur/prospect. Ces informations pourront être stockées et exploitées ultérieurement pour mener une campagne marketing efficace. Il s’agit généralement du titre, du nom, de l’adresse électronique, de la date de naissance, de l’adresse, du centre d’intérêt, etc. Il fait partie du groupe « Formulaire de prospect CTA ».
 

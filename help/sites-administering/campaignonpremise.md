@@ -206,7 +206,7 @@ Le contenu créé à partir de l’instance de création AEM est d’abord envoy
 >[!NOTE]
 >
 >Si vous ne souhaitez pas utiliser l’adresse URL de réplication, mais utiliser à la place l’adresse URL visible par le public, vous pouvez définir l’**adresse URL publique** dans le paramètre de configuration suivant dans OSGi (**Logo AEM** > icône **Outils** > **Opérations** > **Console web** > **OSGi Configuration** > **Intégration AEM Campaign – Configuration**) :
-**Adresse URL publique :** com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
+>**Adresse URL publique :** com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
 
 Cette étape est également nécessaire pour répliquer certaines configurations d’instance de création dans l’instance de publication.
 
@@ -217,7 +217,7 @@ Pour configurer la réplication entre les instances AEM :
    ![chlimage_1-138](assets/chlimage_1-138.png)
 
    >[!NOTE]
-   Évitez d’utiliser l’hôte local localhost (il s’agit d’une copie locale d’AEM) lors de la configuration de votre intégration avec Adobe Campaign, à moins que les instances de publication et de création se trouvent toutes deux sur le même ordinateur.
+   >Évitez d’utiliser l’hôte local localhost (il s’agit d’une copie locale d’AEM) lors de la configuration de votre intégration avec Adobe Campaign, à moins que les instances de publication et de création se trouvent toutes deux sur le même ordinateur.
 
 1. Appuyez ou cliquez sur **Modifier**, puis sélectionnez **Transférer**.
 1. Configurez l’URI en remplaçant **localhost** par l’adresse IP ou l’adresse de l’instance de publication AEM.
@@ -245,16 +245,15 @@ Avant que vous puissiez utiliser AEM et Adobe Campaign ensemble, vous devez éta
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
    >[!NOTE]
-   Après avoir [créé et publié votre e-mail](/help/sites-authoring/campaign.md), vous devez republier la configuration sur votre instance de publication.
+   >Après avoir [créé et publié votre e-mail](/help/sites-authoring/campaign.md), vous devez republier la configuration sur votre instance de publication.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
 >[!NOTE]
-Si la connexion échoue, vérifiez les éléments suivants :
-* Vous pouvez rencontrer un problème de certificat lorsque vous utilisez une connexion sécurisée sur une instance Adobe Campaign (https). Vous devez ajouter le certificat de l’instance Adobe Campaign au fichier **cacerts** du JDK de votre instance AEM.
-* Une zone de sécurité doit être configurée pour l’[opérateur aemserver](#connecting-aem-to-adobe-campaign) dans Adobe Campaign. De plus, dans le fichier **serverConf.xml**, l’attribut **allowUserPassword** de la zone de sécurité doit être défini sur **true** pour autoriser la connexion d’AEM à Adobe Campaign en mode nom de connexion/mot de passe.
->
-Voir également [Résolution des incidents liés à votre intégration AEM/Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md).
+>Si la connexion échoue, vérifiez les éléments suivants :
+>* Vous pouvez rencontrer un problème de certificat lorsque vous utilisez une connexion sécurisée sur une instance Adobe Campaign (https). Vous devez ajouter le certificat de l’instance Adobe Campaign au fichier **cacerts** du JDK de votre instance AEM.
+>* Une zone de sécurité doit être configurée pour l’[opérateur aemserver](#connecting-aem-to-adobe-campaign) dans Adobe Campaign. De plus, dans le fichier **serverConf.xml**, l’attribut **allowUserPassword** de la zone de sécurité doit être défini sur **true** pour autoriser la connexion d’AEM à Adobe Campaign en mode nom de connexion/mot de passe.
+>Voir également [Résolution des incidents liés à votre intégration AEM/Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md).
 
 ### Configuration de l’externaliseur {#configuring-the-externalizer}
 
@@ -285,7 +284,7 @@ Une liste par défaut est fournie, mais peut être modifiée. Vous pouvez égale
 Pour ajouter un champ de personnalisation à ceux déjà disponibles, vous devez étendre le schéma **nms:seedMember** d’Adobe Campaign, comme suit :
 
 >[!CAUTION]
-Le champ à ajouter doit déjà avoir été ajouté par le biais d’une extension de schéma de destinataire (**nms:recipient**). Pour plus d’informations, consultez le guide de [configuration](https://docs.campaign.adobe.com/doc/AC6.1/en/CFG_Editing_schemas_Editing_schemas.html).
+>Le champ à ajouter doit déjà avoir été ajouté par le biais d’une extension de schéma de destinataire (**nms:recipient**). Pour plus d’informations, consultez le guide de [configuration](https://docs.campaign.adobe.com/doc/AC6.1/en/CFG_Editing_schemas_Editing_schemas.html).
 
 1. Sélectionnez **Administration** > **Configuration** > **Schémas de données** dans la navigation d’Adobe Campaign.
 1. Sélectionnez **Nouveau**.
@@ -372,6 +371,6 @@ Pour désactiver un bloc de personnalisation parmi les blocs disponibles :
 Vous pouvez également insérer des données d’extension cible pour la personnalisation. Les données d’extension cible (également appelées « données cibles ») sont issues de l’enrichissement ou de l’ajout de données dans une requête dans un processus de campagne, par exemple. Pour plus d’informations, consultez les sections [Création de requêtes](https://docs.campaign.adobe.com/doc/AC/en/PTF_Creating_queries_About_queries_in_Campaign.html) et [Enrichissement des données](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Enriching_data.html).
 
 >[!NOTE]
-Les données dans la cible ne sont disponibles que si le contenu AEM est synchronisé avec une diffusion Adobe Campaign. Consultez [Synchronisation du contenu créé dans AEM avec une diffusion à partir d’Adobe Campaign](/help/sites-authoring/campaign.md#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).
+>Les données dans la cible ne sont disponibles que si le contenu AEM est synchronisé avec une diffusion Adobe Campaign. Consultez [Synchronisation du contenu créé dans AEM avec une diffusion à partir d’Adobe Campaign](/help/sites-authoring/campaign.md#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
