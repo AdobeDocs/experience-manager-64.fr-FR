@@ -22,7 +22,7 @@ ht-degree: 97%
 + Notes de mise à jour {#release-notes-new-features}
    + [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/forms.html)
    + [Résumé des nouvelles fonctionnalités](using/whats-new.md)
-   + [Fonctionnalités obsolètes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)
+   + [Fonctionnalités obsolètes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=fr)
 + Prise en main {#getting-started}
    + [Présentation d’AEM Forms](using/introduction-aem-forms.md)
    + [Présentation de la création de formulaires adaptatifs](using/introduction-forms-authoring.md)
