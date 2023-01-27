@@ -8,10 +8,10 @@ breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Developing
 role: Developer
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: dbebe8ceaa629d04cee279e21a15594c54f0ba26
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 96%
+source-wordcount: '869'
+ht-degree: 98%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 96%
    + [Sans affichage et hybride avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html?lang=fr) 
    + Applications sur une seule page{#spas}
-      + [Introduction et présentation des applications sur une seule page (SPA)](spa-walkthrough.md)
+      + [Introduction et présentation des applications monopage (SPA)](spa-walkthrough.md)
       + [Tutoriel sur SPA WKND](spa-wknd.md)
       + [Prise en main des SPA dans AEM avec React](spa-getting-started-react.md)
       + [Prise en main des SPA dans AEM avec Angular](spa-getting-started-angular.md)
@@ -121,7 +121,6 @@ ht-degree: 96%
    + [API HTTP](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html?lang=fr)
    + [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html)
    + [Fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/experience-fragments.html)
-   + [Présentation des fragments de contenu et des services de contenu dans AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Outils de développement{#devtools}
    + [Outils de développement](dev-tools.md)
    + [Outils de modernisation d’AEM](modernization-tools.md)
@@ -222,3 +221,8 @@ ht-degree: 96%
    + [Responsive Design pour les pages web](responsive.md)
    + [Création de sites adaptés aux appareils mobiles](mobile.md)
    + [Émulateurs](emulators.md)
+
+<!--
+Deleted link to broken helpx video:
+    + [Understanding Content Fragments and Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
+-->
