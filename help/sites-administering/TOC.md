@@ -8,9 +8,9 @@ breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
 feature: Administering
 role: Admin
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: 9dcaf2538e5f968b25ce4f643ac307eff295d07d
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '633'
 ht-degree: 98%
 
 ---
@@ -53,11 +53,11 @@ ht-degree: 98%
    + [Configuration de l’éditeur de texte enrichi pour produire des sites accessibles](rte-accessible-content.md)
    + [Vérificateur de lien](external-link-checker.md)
    + [Résolution des incidents liés à AEM](troubleshoot.md)
-   + [Maintenance du journal d’audit dans AEM 6](operations-audit-log.md)
+   + [Maintenance du journal d’audit dans AEM 6](operations-audit-log.md)
    + [Éditeur](enable-classic-ui-editor.md)
    + [Gestion de l’accès aux workflows](workflows-managing.md)
-   + [Utilisation de cURL avec AEM](curl.md)
-   + [Configuration de la commande Annuler pour la modification des pages](config-undo.md)
+   + [Utiliser cURL avec AEM](curl.md)
+   + [Configurer la commande Annuler pour modifier des pages](config-undo.md)
    + [Outil de serveur proxy (proxy.jar)](proxy-jar.md)
    + [Configuration des applications AEM](config-apps.md)
    + [Administration des workflows](workflows.md)
@@ -66,7 +66,7 @@ ht-degree: 98%
    + [Création de rapports](reporting.md)
    + [Administration d’instances de workflow](workflows-administering.md)
    + [Configuration du conteneur et du mode de mises en page](configuring-responsive-layout.md)
-   + [Activation de l’accès à l’IU classique](enable-classic-ui.md)
+   + [Activer l’accès à l’IU classique](enable-classic-ui.md)
    + [Démarrage d’un workflow](workflows-starting.md)
    + [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
    + [Consoles d’administration](enable-classic-ui-admin.md)
@@ -116,7 +116,6 @@ ht-degree: 98%
    + [Intégration à des services tiers](third-party-services.md)
    + [Intégration à Salesforce](salesforce.md)
    + [Intégration à Adobe Target](target.md)
-   + [Intégration à Livefyre](livefyre.md)
    + [Intégration à Adobe Analytics](adobeanalytics.md)
    + [Connexion à Adobe Analytics et création de frameworks](adobeanalytics-connect.md)
    + [Configuration du suivi des liens Adobe Analytics](adobeanalytics-link.md)
@@ -136,7 +135,6 @@ ht-degree: 98%
    + [Souscription à Adobe Analytics et Adobe Target](opt-in.md)
    + [Portails et portlets AEM](aem-as-portal.md)
    + [Intégration à Dynamic Media Classic](scene7.md)
-   + [Recettes AEM Livefyre](aem-livefyre-recipes.md)
    + [Résolution des problèmes d’intégration](troubleshooting-integration-issues.md)
    + [Intégration à BrightEdge Content Optimizer](brightedge.md)
    + [Bonnes pratiques relatives aux modèles d’e-mail](best-practices-for-email-templates.md)
