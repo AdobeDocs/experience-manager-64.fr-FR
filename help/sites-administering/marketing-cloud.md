@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: e2295f71-ea3a-483c-9d7b-29acd151845d
-source-git-commit: 904c7acc63dac5c92a5d1754380d075727e6a28a
+source-git-commit: 8220795bbf0c92ead3bb68dd6f8bbb48cc9ca2cd
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 81%
+source-wordcount: '862'
+ht-degree: 82%
 
 ---
 
@@ -100,11 +100,3 @@ L’intégration d’Audience Manager a été supprimée dans Adobe Experience M
 [Adobe Campaign](https://www.adobe.com/fr/solutions/campaign-management.html) vous permet de gérer le contenu de diffusion par e-mail directement dans Adobe Experience Manager.
 
 Pour plus d’informations sur l’intégration d’Adobe Experience Manager à Adobe Campaign, voir [Intégration à Adobe Campaign](/help/sites-administering/campaignstandard.md).
-
-## Intégration à Livefyre {#integrating-with-livefyre}
-
-En savoir plus sur Adobe Experience Manager et Livefyre :
-
-* [Prise en main de Livefyre](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/c-getting-started.html)
-
-* [Livefyre et Adobe Experience Manager](/help/sites-administering/livefyre.md)
