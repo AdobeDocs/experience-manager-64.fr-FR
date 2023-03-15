@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 exl-id: 89e45231-885a-4d35-839b-2b50239503ad
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: 199ee2b38cbffc2b97e0fd3c25d828a7e5718bf3
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 81%
+source-wordcount: '1771'
+ht-degree: 80%
 
 ---
 
@@ -63,9 +63,9 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 
 >[!NOTE]
 >
->Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Il est ainsi possible d’obtenir des modèles de cycle de vie de développement de systèmes (SDLC) types, avec différentes versions d’une application unique, déployée dans différents environnements. Pour plus d’informations, consultez le document [CI/CD pour les applications Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
+>Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Il est ainsi possible d’obtenir des modèles de cycle de vie de développement de systèmes (SDLC) types, avec différentes versions d’une application unique, déployée dans différents environnements. Voir le document [CI/CD pour les applications du créateur d’applications de projet](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) pour plus d’informations.
 >
->Un espace de travail distinct n’est pas nécessaire pour chaque instance (auteur, publication), sauf s’il existe des différences dans l’implémentation de l’environnement d’exécution (runtime) par type d’instance.
+>Un espace de travail distinct n’est pas nécessaire pour chaque instance (création, publication), sauf s’il existe des différences dans l’implémentation de l’environnement d’exécution (runtime) par type d’instance.
 
 ## Configuration du moteur de rendu de contenu distant {#remote-content-renderer-configuration}
 
@@ -190,7 +190,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 La configuration du gestionnaire par défaut doit être établie comme décrit dans la section [Configuration du moteur de rendu de contenu distant](#remote-content-renderer-configuration).
 
-###  Utilisation du moteur de rendu de contenu distant {#usage}
+### Utilisation du moteur de rendu de contenu distant {#usage}
 
 Pour qu’un servlet récupère et renvoie du contenu pouvant être injecté dans la page :
 
