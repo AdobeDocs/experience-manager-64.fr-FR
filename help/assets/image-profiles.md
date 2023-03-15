@@ -1,8 +1,8 @@
 ---
 title: Profils d’image Dynamic Media
-seo-title: Dynamic Media image profiles
-description: Créez des profils d’image qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillonnage intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’images,
-seo-description: Create image profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
+seo-title: Dynamic Media Image Profiles
+description: Créez des profils d’image qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’image.
+seo-description: Create Image Profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -12,10 +12,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 0abf095e352215cf6f83a409b34975bf8c5b0239
+source-git-commit: c413f31498cdccf8ceea4afc225c570a40ba1819
 workflow-type: tm+mt
-source-wordcount: '2893'
-ht-degree: 89%
+source-wordcount: '2888'
+ht-degree: 82%
 
 ---
 
@@ -40,29 +40,32 @@ Lorsque vous implémentez le recadrage intelligent sur les images, Adobe recomma
 | --- | --- | --- |
 | Nombre de recadrages intelligents par image | 5 | 100 |
 
-Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
+Consultez également la section [limites de Dynamic Media](/help/assets/limitations.md).
 
 <!-- CQDOC-16069 for paragraph directly below -->
 
-Les coordonnées de recadrage intelligent dépendent des proportions de l’image (L/H). En d’autres termes, pour les différents paramètres de recadrage intelligent d’un profil d’image, si le rapport d’aspect est identique pour les dimensions ajoutées au profil d’image, ce même rapport d’aspect est envoyé à Dynamic media. De ce fait, Adobe vous recommande d’utiliser la même zone de recadrage. Vous avez ainsi la garantie qu’il n’y a aucune incidence sur les différentes dimensions utilisées dans le profil d’image.
+Les coordonnées de recadrage intelligent dépendent des proportions de l’image (L/H). En d’autres termes, pour chaque paramètre de recadrage intelligent d’un profil d’image, si le rapport d’aspect est le même pour les dimensions ajoutées dans le profil d’image, le même rapport d’aspect est envoyé à Dynamic Media. Par conséquent, Adobe vous recommande d’utiliser la même zone de recadrage. Vous avez ainsi la garantie qu’il n’y a aucune incidence sur les différentes dimensions utilisées dans le profil d’image.
 
-Gardez à l’esprit que chaque génération de recadrage intelligent créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut ralentir le taux d’ingestion des ressources. Cet ajout peut également augmenter la charge des systèmes. Étant donné que le recadrage intelligent s’applique aux dossiers, Adobe vous recommande de l’utiliser *uniquement* pour les dossiers où cela est nécessaire.
+Chaque génération de recadrage intelligent créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut ralentir le taux d’ingestion des ressources. Cet ajout peut également augmenter la charge des systèmes. Étant donné que le recadrage intelligent s’applique aux dossiers, Adobe vous recommande de l’utiliser *uniquement* pour les dossiers où cela est nécessaire.
 
 **Instructions pour définir le recadrage intelligent dans un profil d’image**
 Pour contrôler l’utilisation du recadrage intelligent et optimiser le temps de traitement et le stockage des recadrages, Adobe recommande les instructions et conseils suivants :
 
-* Évitez de créer des profils de recadrage intelligent en double ayant les mêmes valeurs de largeur et de hauteur.
-* Nommez les recadrages intelligents en fonction des dimensions de recadrage, et non de l’utilisation finale. Cela permet d’optimiser les doublons lorsqu’une seule dimension est utilisée sur plusieurs pages.
+* Les ressources d’image pour lesquelles un recadrage intelligent leur sera appliqué doivent faire au moins 50 x 50 pixels ou plus. &lt;!-- CQDOC-20087>
+* Un profil d’image contenant des dimensions de recadrage intelligent en double n’est pas autorisé. &lt;!-- CQDOC-20087>
+* Les profils d’image dont les options de recadrage intelligent sont définies en double ne sont pas autorisés. &lt;!-- CQDOC-20087>
 * Créez des profils d’image au niveau de la page ou du type de ressource pour des dossiers et sous-dossiers spécifiques au lieu d’un profil de recadrage intelligent commun appliqué à tous les dossiers ou à toutes les ressources.
-* Un profil Image que vous appliquez aux sous-dossiers remplace un profil Image appliqué au dossier.
-* Idéalement, faites 10 à 15 recadrages intelligents par image afin d’optimiser les rapports d’écran et le temps de traitement.
+* Un profil d’image que vous appliquez aux sous-dossiers remplace un profil d’image appliqué au dossier.
+* Idéalement, effectuez 10 à 15 recadrages intelligents par image afin d’optimiser les proportions et le temps de traitement.
+<!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.-->
 
 Vous avez le choix entre deux options de recadrage d’image. Vous pouvez également choisir d’automatiser la création de nuanciers de couleurs et d’images ou de conserver le contenu de recadrage dans toutes les résolutions cibles.
 
 >[!IMPORTANT]
 >
 >• Adobe vous recommande d’examiner tous les recadrages et tous les échantillons générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
-・ Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
+• Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
 
 <table> 
  <tbody> 
@@ -91,7 +94,7 @@ Vous avez le choix entre deux options de recadrage d’image. Vous pouvez égale
   <tr> 
    <td>Échantillon de couleurs et d’images</td> 
    <td>Générez en masse un échantillon pour chaque image.</td> 
-   <td><p><strong>Remarque</strong> : L’échantillon intelligent n’est pas pris en charge par Dynamic Media Classic.</p> <p>Localisez et générez automatiquement des échantillons de haute qualité à partir d’images de produits qui affichent la couleur ou la texture.</p> <p>Pour utiliser l’échantillon de couleurs et d’images, sélectionnez <strong>Recadrage intelligent</strong> dans la liste déroulante des Options de recadrage, puis à droite d’Échantillon de couleurs et d’images, activez la fonction. Saisissez une valeur en pixels dans les zones de texte Largeur et Hauteur.</p> <p>Alors que tous les recadrages d’images sont disponibles à partir du rail de rendu, les échantillons ne sont utilisés que par le biais de la fonction Copier l’URL. Notez que vous devez utiliser votre propre composant d’affichage pour effectuer le rendu de l’échantillon sur votre site. (Les bannières de carrousel sont une exception. Dynamic Media fournit le composant d’affichage pour l’échantillon utilisé dans les bannières de carrousel.)</p> <p><strong>Utilisation d’échantillons d’images</strong></p> <p>L’URL des échantillons d’images est simple. Elle suit ce format :</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>Où <code>:Swatch</code> est ajouté à la demande de ressource.</p> <p><strong>Utilisation des échantillons de couleurs</strong></p> <p>Pour utiliser les échantillons de couleurs, vous effectuez une demande <code>req=userdata</code> de la façon suivante :</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Par exemple, voici une ressource d’échantillon dans Dynamic Media Classic :</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>et voici l’URL <code>req=userdata</code> correspondant à la ressource d’échantillon :</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La réponse <code>req=userdata</code> se présente comme suit :</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>Remarque</strong> : L’échantillon intelligent n’est pas pris en charge par Dynamic Media Classic.</p> <p>Localisez et générez automatiquement des échantillons de haute qualité à partir d’images de produits qui affichent la couleur ou la texture.</p> <p>Pour utiliser l’échantillon de couleurs et d’images, sélectionnez <strong>Recadrage intelligent</strong> dans la liste déroulante des Options de recadrage, puis à droite d’Échantillon de couleurs et d’images, activez la fonction. Saisissez une valeur en pixels dans les zones de texte Largeur et Hauteur.</p> <p>Alors que tous les recadrages d’images sont disponibles à partir du rail de rendu, les échantillons ne sont utilisés que par le biais de la fonction Copier l’URL. Vous devez utiliser votre propre composant d’affichage pour effectuer le rendu de l’échantillon sur votre site. (Les bannières de carrousel constituent une exception à cette règle. Dynamic Media fournit le composant d’affichage pour l’échantillon utilisé dans les bannières de carrousel.)</p> <p><strong>Utilisation d’échantillons d’images</strong></p> <p>L’URL des échantillons d’images est simple :</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>Où <code>:Swatch</code> est ajouté à la demande de ressource.</p> <p><strong>Utilisation des échantillons de couleurs</strong></p> <p>Pour utiliser les échantillons de couleurs, vous effectuez une demande <code>req=userdata</code> de la façon suivante :</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Par exemple, voici une ressource d’échantillon dans Dynamic Media Classic :</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>et voici l’URL <code>req=userdata</code> correspondant à la ressource d’échantillon :</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La réponse <code>req=userdata</code> se présente comme suit :</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -100,7 +103,7 @@ Vous avez le choix entre deux options de recadrage d’image. Vous pouvez égale
 
 ## Accentuation {#unsharp-mask}
 
-Vous utilisez **Accentuation** pour affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, son rayon (mesuré en pixels) et un seuil de contraste qui sera ignoré. Cet effet utilise les mêmes options que le filtre Accentuation d’Adobe Photoshop.
+Vous utilisez **Accentuation** pour affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre Accentuation d’Adobe Photoshop.
 
 >[!NOTE]
 L’accentuation n’est appliquée qu’aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. En d’autres termes, les rendus de plus grande taille dans le fichier PTIFF ne sont pas affectés par le masquage flou, tandis que les rendus de plus petite taille, tels que les miniatures, sont modifiés (et affichent le masque flou).
@@ -130,17 +133,17 @@ L’option **Accentuation** propose les options de filtre suivantes :
 
 L’accentuation est décrite dans [Accentuation des images](/help/assets/assets/sharpening_images.pdf).
 
-## Création de profils d’image Dynamic Media {#creating-image-profiles}
+## Création de profils d’image Dynamic Media {#creating-image-profiles}
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](config-dms7.md#configuring-asset-processing).
 
-**Pour créer des profils d’image Dynamic Media**:
+**Pour créer des profils d’image Dynamic Media**:
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
-1. Appuyez sur **[!UICONTROL Créer]** pour ajouter un nouveau profil d’image.
+1. Appuyer **[!UICONTROL Créer]** pour ajouter un profil d’image.
 1. Saisissez un nom de profil et les valeurs pour une accentuation, un recadrage et un échantillon.
 
-   Il est parfois utile d’utiliser un nom de profil spécifique à sa finalité prévue. Par exemple, si vous souhaitez créer un profil qui génère des échantillons uniquement (en d’autres termes, le recadrage intelligent est désactivé, et l’échantillon de couleurs et d’images est activé), vous pouvez utiliser le nom de profil « Échantillons intelligents ».
+   Il est parfois utile d’utiliser un nom de profil spécifique à sa finalité prévue. Par exemple, si vous souhaitez créer un profil qui génère des échantillons uniquement (où le recadrage intelligent est désactivé et l’option Nuance et nuance d’image est activée), vous pouvez utiliser le nom de profil &quot;Nuances d’échantillons intelligentes&quot;.
 
    Voir aussi [Options de recadrage intelligent et d’échantillonnage intelligent](#crop-options) et [Accentuation](#unsharp-mask).
 
@@ -148,10 +151,10 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**. Le profil nouvellement créé apparaît dans la liste des profils disponibles.
 
-## Modification ou suppression de profils d’image Dynamic Media {#editing-or-deleting-image-profiles}
+## Modification ou suppression de profils d’image Dynamic Media {#editing-or-deleting-image-profiles}
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image]**.
-1. Sélectionnez le profil de l’image que vous souhaitez modifier ou supprimer. Pour le modifier, sélectionnez **[!UICONTROL Modifier le profil de traitement d’image]**. Pour le supprimer, sélectionnez **[!UICONTROL Supprimer le ou les profils de traitement des images]**.
+1. Sélectionnez le profil d’image à modifier ou à supprimer. Pour le modifier, sélectionnez **[!UICONTROL Modifier le profil de traitement d’image]**. Pour le supprimer, sélectionnez **[!UICONTROL Supprimer le ou les profils de traitement des images]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -159,13 +162,13 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
 ## Application d’un profil d’image Dynamic Media aux dossiers {#applying-an-image-profile-to-folders}
 
-Lorsque vous affectez un profil d’image à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil d’image à un dossier. Nous vous conseillons donc de choisir avec la plus grande attention la structure du dossier dans lequel vous transférez, stockez, utilisez et archivez des ressources.
+Lorsque vous affectez un Profil Image à un dossier, tous les sous-dossiers héritent automatiquement du profil de son dossier parent. Ce workflow signifie que vous ne pouvez affecter qu’un seul profil d’image à un dossier. Ainsi, réfléchissez soigneusement à la structure de dossiers de l’emplacement où vous téléchargez, stockez, utilisez et archivez les ressources.
 
 Si vous avez affecté un profil d’image différent à un dossier, le nouveau profil remplace le précédent. Les ressources du dossier précédent restent inchangées. Le nouveau profil sera appliqué aux ressources ajoutées ultérieurement au dossier.
 
-Les dossiers auxquels un profil est attribué sont indiqués dans l’interface utilisateur grâce au nom du profil qui apparaît sur la carte.
+Les dossiers auxquels un profil est affecté sont indiqués dans l’interface utilisateur par le nom du profil qui apparaît dans la carte.
 
-Lorsque vous appliquez un recadrage intelligent à un profil d’image, vous devez redéclencher le [workflow de ressources de mise à jour de gestion des actifs numériques](assets-workflow.md) si vous souhaitez générer des recadrages pour les ressources existantes dans votre référentiel.
+Lorsque vous ajoutez un recadrage intelligent à un profil d’image existant, vous devez redéclencher la variable [Workflow Ressources de mise à jour de gestion des actifs numériques](assets-workflow.md) si vous souhaitez générer des recadrages pour les ressources existantes dans votre référentiel de ressources.
 
 Vous pouvez appliquer des profils d’image à des dossiers spécifiques, ou de façon globale à toutes les ressources.
 
@@ -194,7 +197,7 @@ Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profi
 
 ### Application globale d’un profil d’image Dynamic Media {#applying-an-image-profile-globally}
 
-En plus d’appliquer un profil à un dossier, vous pouvez en appliquer un de façon globale, de sorte que tout contenu chargé dans AEM Assets soit traité par ce profil, indifféremment du dossier.
+Outre l’application d’un profil à un dossier, vous pouvez en appliquer un de manière globale afin que le profil sélectionné soit appliqué à tout contenu chargé dans AEM Assets dans un dossier.
 
 **Pour appliquer globalement un profil d’image Dynamic Media** :
 
@@ -219,16 +222,15 @@ Vous pouvez réaligner ou redimensionner manuellement la fenêtre de recadrage i
 
 Une fois que vous avez modifié et enregistré un recadrage intelligent, la modification se propage partout où vous utilisez le recadrage pour ces images spécifiques.
 
-Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des recadrages supplémentaires, le cas échéant.
+Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des recadrages supplémentaires, si nécessaire.
 
 Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
 **Pour modifier le recadrage intelligent ou l’échantillon intelligent d’une seule image** :
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**, puis au dossier auquel est appliqué un profil d’image de recadrage intelligent ou d’échantillon intelligent.
-
-1. Appuyez sur le dossier pour ouvrir son contenu.
-1. Appuyez sur l’image dont vous voulez ajuster le recadrage intelligent ou l’échantillon intelligent.
+1. Ouvrez son contenu en appuyant sur le dossier .
+1. Appuyez sur l’image avec le recadrage intelligent ou l’échantillon intelligent à ajuster.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Recadrage intelligent]**.
 
 1. Procédez de l’une des manières suivantes :
@@ -242,11 +244,11 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 
 ## Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-Après avoir appliqué un profil d’image (contenant un recadrage intelligent) sur un dossier, un recadrage est appliqué à toutes les images de ce dossier. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
+Après l’application d’un profil d’image (contenant un recadrage intelligent) sur un dossier, un recadrage est appliqué à toutes les images de ce dossier. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
 
-Une fois que vous avez modifié et enregistré un recadrage intelligent, la modification se propage partout où vous utilisez le recadrage pour ces images spécifiques.
+Une fois que vous avez modifié et enregistré un recadrage intelligent, le changement est propagé partout où vous utilisez le recadrage des images spécifiques.
 
-Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des recadrages supplémentaires, le cas échéant.
+Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des recadrages supplémentaires, si nécessaire.
 
 **Pour modifier le recadrage intelligent ou l’échantillon intelligent de plusieurs images** :
 
@@ -291,7 +293,7 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**. Ensuite, appuyez sur **[!UICONTROL Fermer]** pour revenir au dossier des ressources.
 
-## Suppression d’un profil d’image d’un dossier {#removing-an-image-profile-from-folders}
+## Suppression d’un profil d’image dans des dossiers {#removing-an-image-profile-from-folders}
 
 Lorsque vous supprimez un profil d’image d’un dossier, tout sous-dossier hérite automatiquement de la suppression du profil de son dossier parent. Cependant, le traitement des fichiers qui s’est produit dans les dossiers reste intact.
 
