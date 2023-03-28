@@ -8,7 +8,7 @@ exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
 source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 81%
+ht-degree: 69%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 81%
 
 XMP (Extensible Metadata Platform) est la norme de métadonnées utilisée par [!DNL Experience Manager] Ressources pour la gestion des métadonnées. XMP offre un format standard pour la création, le traitement et l’échange de métadonnées pour une multitude d’applications.
 
-En plus d’un codage de métadonnées universel qui peut être incorporé dans tous les formats de fichier, XMP fournit un [modèle de contenu](xmp.md#xmp-core-concepts) riche et est [pris en charge par Adobe](xmp.md#advantages-of-xmp) et d’autres sociétés. Ainsi, les utilisateurs XMP, en association avec Assets, disposent d’une plate-forme puissante sur laquelle s’appuyer.[!DNL Experience Manager]
+En plus d’un codage de métadonnées universel qui peut être incorporé dans tous les formats de fichier, XMP fournit un [modèle de contenu](xmp.md#xmp-core-concepts) riche et est [pris en charge par Adobe](xmp.md#advantages-of-xmp) et d’autres sociétés. Ainsi, les utilisateurs XMP, en association avec Assets, disposent d’une plateforme puissante sur laquelle s’appuyer.[!DNL Experience Manager]
 
 La [spécification XMP](https://www.adobe.com/devnet/xmp.html) est disponible auprès d’Adobe.
 
@@ -24,13 +24,13 @@ La [spécification XMP](https://www.adobe.com/devnet/xmp.html) est disponible au
 
 [!DNL Experience Manager] Assets prend en charge de manière native le XMP : la plateforme de métadonnées extensible pilotée par Adobe. XMP est une norme destinée au traitement et au stockage de métadonnées normalisées et propriétaires dans les ressources numériques. La norme XMP est conçue pour être la norme commune permettant à plusieurs applications de fonctionner efficacement avec les métadonnées.
 
-Les professionnels de la production, par exemple, utilisent la prise en charge XMP intégrée dans les applications d’Adobe pour transmettre des informations sur plusieurs formats de fichiers. Le [!DNL Experience Manager] Le référentiel de ressources extrait les métadonnées XMP et les utilise pour gérer le cycle de vie du contenu et offre la possibilité de créer des workflows d’automatisation.
+Les spécialistes de la production, par exemple, utilisent la prise en charge XMP intégrée dans les applications d’Adobe pour transmettre des informations sur plusieurs formats de fichiers. Le [!DNL Experience Manager] Le référentiel de ressources extrait les métadonnées XMP et les utilise pour gérer le cycle de vie du contenu et offre la possibilité de créer des workflows d’automatisation.
 
 XMP normalise la façon dont les métadonnées sont définies, créées et traitées en fournissant un modèle de données, un modèle de stockage et des schémas. Tous ces concepts sont abordés dans cette section.
 
 Toutes les métadonnées héritées d’EXIF, d’ID3 ou de Microsoft Office sont automatiquement converties au format XMP, qui peut être étendu pour prendre en charge le schéma de métadonnées spécifiques au client comme les catalogues de produits.
 
-Les métadonnées de XMP se composent d’un ensemble de propriétés. Ces propriétés sont toujours associées à une propriété\
+Dans la norme XMP, les métadonnées sont constituées d’un ensemble de propriétés. Ces propriétés sont toujours associées à une propriété\
 une entité particulière appelée ressource ; en d’autres termes, les propriétés portent sur la ressource. Dans le cas de XMP, il s’agit toujours de la ressource.
 
 ### Adobe {#adobe}
@@ -43,14 +43,14 @@ XMP définit un modèle de [métadonnées](https://fr.wikipedia.org/wiki/Métado
 
 XMP est le plus souvent sérialisé et stocké à l’aide d’un sous-ensemble du [W3C](https://fr.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://fr.wikipedia.org/wiki/Resource_Description_Framework) (RDF), exprimé à son tour en format [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language).
 
-## Avantages du mode XMP {#advantages-of-xmp}
+## Avantages de la norme XMP {#advantages-of-xmp}
 
 La norme XMP présente les avantages suivants par rapport aux autres normes de codage et schémas :
 
 * Les métadonnées basées sur la norme XMP sont très puissantes et précises.
 * La norme XMP permet de définir plusieurs valeurs pour une propriété.
-* XMP possède un encodage normalisé, ce qui vous permet d’échanger facilement des métadonnées.
-* Le format XMP est extensible. Vous pouvez ajouter d’autres informations à vos ressources.
+* XMP dispose d’un encodage normalisé, ce qui vous permet d’échanger facilement des métadonnées.
+* Le format XMP est extensible. Vous pouvez ajouter des informations supplémentaires à vos ressources.
 
 ### Extensibles {#extensible}
 
@@ -58,9 +58,9 @@ La norme XMP a été conçue pour être extensible, ce qui vous permet d’ajout
 
 >[!NOTE]
 >
->En règle générale, XMP ne permet pas l’incorporation des types de données binaires. Pour gérer des données binaires dans XMP, comme des images miniatures, celles-ci doivent être codées dans un format XML tel que Base64.
+>XMP ne permet généralement pas l’incorporation des types de données binaires. Pour transporter des données binaires dans XMP, par exemple des images miniatures, elles doivent être codées dans un format XML tel que Base64.
 
-## Notions fondamentales relatives à XMP {#xmp-core-concepts}
+## Concepts de base de XMP {#xmp-core-concepts}
 
 Les sections ci-après décrivent les notions fondamentales relatives à XMP, notamment les espaces de noms et les schémas, les propriétés et les valeurs, ainsi que les variantes linguistiques.
 
@@ -77,11 +77,11 @@ XMP peut inclure des propriétés de l’un ou de plusieurs des schémas.
 
 Par exemple, un sous-ensemble classique utilisé par de nombreuses applications Adobe peut comprendre les éléments suivants :
 
-* Schéma Dublin Core : dc:title, dc:creator, dc:subject, dc:format, dc:rights
-* Schéma de base XMP : xmp:CreateDate, xmp:CreatorTool, xmp:ModifyDate, xmp:metadataDate
-* Schéma de gestion des droits XMP : xmpRights:WebStatement, xmpRights:Marked
-* Schéma de gestion des médias XMP : xmpMM:DocumentID
+* Schéma Dublin core : dc:title, dc:creator, dc:subject, dc:format, dc:rights
+* Schéma de base XMP : xmp:CreateDate, xmp:CreatorTool, xmp:ModifyDate, xmp:metadataDate
+* Schéma de gestion des droits XMP : xmpRights:WebStatement, xmpRights:Marked
+* Schéma de gestion des médias XMP : xmpMM:DocumentID
 
-### Variantes linguistiques {#language-alternatives}
+### Alternatives linguistiques {#language-alternatives}
 
-XMP vous offre la possibilité d’ajouter une propriété **xml:lang** aux propriétés de texte pour spécifier la langue du texte.
+XMP vous offre la possibilité d’ajouter une **xml:lang** pour spécifier la langue du texte.
