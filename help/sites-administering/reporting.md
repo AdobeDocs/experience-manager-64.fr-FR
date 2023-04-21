@@ -13,7 +13,7 @@ exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
 source-git-commit: 5dd282cc91721a3d53bdf29d5fbb978a52c3704e
 workflow-type: tm+mt
 source-wordcount: '2862'
-ht-degree: 97%
+ht-degree: 70%
 
 ---
 
@@ -40,7 +40,7 @@ De nouvelles instances d’un rapport peuvent également être créées à parti
 
 >[!NOTE]
 >
->Outre les rapports AEM standard disponibles clé en main, vous pouvez [développer vos propres rapports (entièrement nouveaux)](/help/sites-developing/dev-reports.md).
+>Outre les rapports d’AEM standard prêts à l’emploi, vous pouvez [développer vos propres rapports (totalement nouveaux) ;](/help/sites-developing/dev-reports.md).
 
 ## Principes de base de la personnalisation des rapports {#the-basics-of-report-customization}
 
@@ -58,28 +58,28 @@ Divers formats de rapport sont disponibles. Les rapports suivants utilisent tous
 >
 >
 >* Le rapport [Contrôle de l’intégrité](#health-check) utilise des champs de sélection pour spécifier les données sur lesquelles vous souhaitez générer des rapports.
->* Le rapport [Utilisation du disque](#disk-usage) utilise des liens permettant d’explorer la structure du référentiel.
->* Le [rapport de workflow](/help/sites-administering/reporting.md#workflow-report) offre un aperçu des workflows exécutés sur votre instance.
+>* [Utilisation du disque](#disk-usage) utilise des liens pour parcourir la structure du référentiel.
+>* [Rapport Workflow](/help/sites-administering/reporting.md#workflow-report) donne un aperçu des workflows exécutés sur votre instance.
 >
->Les procédures suivantes concernant la configuration de colonne ne sont donc pas appropriées. Voir la description des différents rapports pour en connaître les détails.
+>Les procédures suivantes concernant la configuration de colonne ne sont donc pas appropriées. Consultez les descriptions des rapports individuels pour plus de détails.
 
 ### Sélection et positionnement des colonnes de données {#selecting-and-positioning-the-data-columns}
 
-Vous pouvez ajouter des colonnes, les repositionner ou les supprimer à partir de n’importe lequel des rapports, standard ou personnalisés.
+Vous pouvez ajouter, repositionner ou supprimer des colonnes de n’importe quel rapport, standard ou personnalisé.
 
-L’onglet **Composants** du sidekick (disponible sur la page de rapport) répertorie toutes les catégories de données qui peuvent être sélectionnées en tant que colonnes.
+Le **Composants** l’onglet du sidekick (disponible sur la page du rapport) répertorie toutes les catégories de données qui peuvent être sélectionnées en tant que colonnes.
 
-Pour modifier la sélection de données :
+Pour modifier la sélection des données :
 
 * Pour ajouter une nouvelle colonne, faites glisser le composant requis à partir du sidekick et déposez-le dans la position souhaitée.
 
-   * Une coche verte indique quand la position est valide et une paire de flèches indique son emplacement exact.
-   * Un symbole d’interdiction rouge indique quand la position n’est pas valide.
+   * une coche verte indique quand la position est valide et une paire de flèches indique exactement où elle sera placée.
+   * un symbole rouge indiquant quand la position n’est pas valide
 
-* Pour déplacer une colonne, cliquez sur l’en-tête, puis faites-le glisser vers la nouvelle position.
-* Pour supprimer une colonne, cliquez sur le titre de la colonne, faites-le glisser et déposez-le sur la zone d’en-tête de rapport (un signe moins rouge indique que la position est valide). Relâchez le bouton de la souris, et la boîte de dialogue Supprimer le(s) composant(s) vous demande de confirmer que vous souhaitez vraiment supprimer la colonne.
+* pour déplacer une colonne, cliquez sur l’en-tête, maintenez la touche enfoncée et faites-la glisser vers la nouvelle position.
+* pour supprimer une colonne, cliquez sur le titre de la colonne, maintenez la souris enfoncée et faites-la glisser dans la zone d’en-tête du rapport (un signe moins rouge indique que la position n’est pas valide). relâchez le bouton de la souris et la boîte de dialogue Supprimer le(s) composant(s) vous demandera de confirmer que vous souhaitez vraiment supprimer la colonne.
 
-### Menu déroulant de colonne {#column-drop-down-menu}
+### Menu déroulant Colonne {#column-drop-down-menu}
 
 Chaque colonne du rapport comprend un menu déroulant. Ce menu apparaît lorsque le curseur de la souris se trouve au-dessus de la cellule du titre de colonne.
 
@@ -91,12 +91,12 @@ Les options disponibles dans le menu dépendent de la configuration de la colonn
 
 ### Tri des données {#sorting-the-data}
 
-Les données peuvent être triées selon une colonne en procédant comme suit, au choix :
+Les données peuvent être triées selon une colonne spécifique en :
 
 * Cliquez sur l’en-tête de colonne voulu. Le tri bascule entre ordre croissant et décroissant, indiqué par une flèche immédiatement à côté du texte de titre.
-* Utilisez le [menu déroulant de la colonne](#column-drop-down-menu) pour sélectionner spécifiquement **Trier par ordre croissant** ou **Trier par ordre décroissant**. De même, cette option est indiquée par une flèche immédiatement en regard du texte du titre.
+* utilisez la méthode [menu déroulant de la colonne](#column-drop-down-menu) pour sélectionner spécifiquement l’une des **Tri croissant** ou **Tri décroissant**; une fois de plus, une flèche située juste à côté du texte du titre indique que
 
-### Groupes et graphique des données actuelles {#groups-and-the-current-data-chart}
+### Groupes et graphique des données actives {#groups-and-the-current-data-chart}
 
 Sur les colonnes appropriées, vous pouvez sélectionner **Groupe par cette colonne** dans le [menu déroulant de la colonne](#column-drop-down-menu). Ceci a pour effet de regrouper les données selon chaque valeur distincte dans cette colonne. Vous pouvez sélectionner plusieurs colonnes à regrouper. Cette option est grisée lorsque les données de la colonne ne sont pas appropriées : chaque entrée est distincte et unique et aucun groupe ne peut donc être formé. Par exemple, la colonne ID de l’utilisateur du rapport d’utilisateur.
 
@@ -108,11 +108,11 @@ Placez le pointeur de la souris au-dessus du diagramme circulaire pour afficher 
 
 ### Filtres et agrégats {#filters-and-aggregates}
 
-Sur les colonnes appropriées, vous pouvez également configurer des **Paramètres du filtre** et/ou des **Agrégats** dans le [menu déroulant de la colonne](#column-drop-down-menu).
+Sur les colonnes appropriées, vous pouvez également configurer **Paramètres de filtre** et/ou **Agrégats** de la [menu déroulant de la colonne](#column-drop-down-menu).
 
 #### Filtres {#filters}
 
-Les paramètres de filtre vous permettent de spécifier les critères des entrées à afficher. Les opérateurs disponibles sont :
+Les paramètres de filtre vous permettent de spécifier les critères des entrées à afficher. Les opérateurs disponibles sont les suivants :
 
 * `contains`
 * `equals`
@@ -122,10 +122,10 @@ Les paramètres de filtre vous permettent de spécifier les critères des entré
 Pour définir un filtre :
 
 1. Sélectionnez l’opérateur de votre choix dans la liste déroulante.
-1. Saisissez le texte sur lequel filtrer.
+1. Saisissez le texte à filtrer.
 1. Cliquez sur **Appliquer**.
 
-Pour désactiver le filtre :
+Pour désactiver le filtre :
 
 1. Supprimez le texte du filtre.
 1. Cliquez sur **Appliquer**.
@@ -140,20 +140,20 @@ Vous pouvez également sélectionner une méthode d’agrégation (elle peut var
 
 Cette option est uniquement disponible lorsque la [Colonne générique](#generic-column) a été utilisée dans le [Rapport de l’utilisateur](#user-report).
 
-### Données historiques {#historic-data}
+### Données d&#39;historique {#historic-data}
 
-Un graphique des changements survenant dans vos données au fil du temps est visible dans les **Données historiques**. Ce graphique est dérivé des instantanés réalisés à intervalles réguliers.
+Un graphique des changements survenant dans vos données au fil du temps est visible dans les **Données historiques**. Il est dérivé des instantanés réalisés à intervalles réguliers.
 
-Les données sont :
+Les données sont les suivantes :
 
-* Collectées par, le cas échéant, la première colonne triée, sinon la première colonne (non regroupée)
-* Regroupées par la colonne appropriée
+* Collecté par, si disponible, la première colonne triée, sinon la première colonne (non regroupée)
+* Regroupés par la colonne appropriée
 
 Le rapport peut être généré :
 
-1. Définissez l’option **Groupement** sur la colonne requise.
-1. **Modifiez** la configuration pour définir la fréquence à laquelle les instantanés doivent être pris, par exemple toutes les heures ou tous les jours.
-1. Cliquez sur **Terminer** pour achever la définition et commencer la collecte des instantanés.
+1. Définir **Regroupement** sur la colonne requise.
+1. **Modifier** la configuration pour définir la fréquence à laquelle les instantanés doivent être créés ; horaire ou quotidien.
+1. **Terminer...** la définition pour lancer la collecte des instantanés.
 
    Le bouton curseur rouge/vert situé en haut à gauche indique à quel moment les instantanés sont collectés.
 
@@ -180,13 +180,13 @@ Faites vos choix selon vos besoins, puis cliquez sur **Aller** pour les applique
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
-Lorsque des instantanés sont en cours de collecte, vous pouvez :
+Lorsque des instantanés sont collectés, vous pouvez :
 
-* Utiliser de nouveau l’option **Terminer** pour réinitialiser la collecte.
+* Utilisation **Terminer...** pour réinitialiser la collection.
 
-   **Terminer** « gèle » la structure du rapport (à savoir, les colonnes affectées au rapport et groupées, triées, filtrées, etc.) et lance la création des instantanés.
+   **Terminer** « gèle » la structure du rapport (à savoir, les colonnes affectées au rapport et groupées, triées, filtrées, etc.) et commence à créer des instantanés.
 
-* Ouvrez la boîte de dialogue **Modifier** pour sélectionner **Aucun instantané de données** afin de terminer la collecte à la date requise.
+* Ouvrez le **Modifier** boîte de dialogue de sélection **Aucun instantané de données** pour mettre fin à la collection jusqu’à ce que nécessaire.
 
    **Modifier** active ou désactive uniquement la création des instantanés. Si la création d’instantanés est réactivée, elle utilise le statut du rapport lorsque celui-ci a été la terminé la dernière fois pour créer d’autres instantanés.
 
@@ -203,22 +203,22 @@ Lorsque des instantanés sont en cours de collecte, vous pouvez :
 
 #### Limites d’affichage {#display-limits}
 
-Le rapport de données historiques peut aussi changer légèrement d’aspect en raison des limites qui peuvent être définies, selon le nombre de résultats pour la période sélectionnée.
+Le rapport des données historiques peut également légèrement changer d’aspect en raison des limites qui peuvent être définies, en fonction du nombre de résultats pour la période sélectionnée.
 
 Chaque ligne horizontale est une série (et correspond à une entrée dans la légende du graphique), et chaque colonne verticale de points représente les instantanés agrégés.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
-Pour que le graphique reste propre sur des périodes plus longues, vous pouvez définir des limites. Pour les rapports standard, ces limites sont les suivantes :
+Pour que le graphique reste propre sur des périodes plus longues, vous pouvez définir des limites. Pour les rapports standard, ces éléments sont les suivants :
 
 * série horizontale - La valeur maximale par défaut comme la valeur système sont `9`.
 
 * instantanés agrégés verticaux - La valeur par défaut est `35` (par série horizontale).
 
-Ainsi, lorsque les limites (appropriées) sont dépassées :
+Ainsi, lorsque les limites (appropriées) sont dépassées :
 
-* les points ne sont pas affichés
-* la légende du graphique des données historiques peut afficher un nombre d’entrées différent de celui du graphique des données actuelles
+* les points ne s’affichent pas.
+* la légende du graphique de données historique peut afficher un nombre d’entrées différent de celui du graphique de données actuel.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -230,7 +230,7 @@ Les rapports personnalisés peuvent également afficher la valeur **Total** pour
 
 ### Modifier (rapport) {#edit-report}
 
-Le bouton **Modifier** ouvre la boîte de dialogue **Modifier le rapport**.
+Le **Modifier** ouvre le bouton **Modifier le rapport** Boîte de dialogue.
 
 Il s’agit d’un emplacement où la période de collecte des instantanés pour les [Données historiques](#historic-data) est définie, mais d’autres paramètres peuvent également être définis :
 
@@ -279,15 +279,15 @@ Choisir d’actualiser manuellement les données signifie que :
 
    Par exemple, si vous modifiez le mécanisme de tri d’une colonne, les données ne sont pas affichées.
 
-1. Si vous souhaitez réafficher les données du rapport, vous devez cliquer sur **Charger les données** pour recharger les données.
+1. Si vous souhaitez que les données du rapport s’affichent à nouveau, vous devez cliquer sur **Chargement de données** pour recharger les données.
 
 ### Terminer (rapport) {#finish-report}
 
-Lorsque vous avez **terminé** le rapport :
+Lorsque vous **Terminer** le rapport :
 
 * La définition de rapport *à partir de ce moment* est utilisée pour créer les instantanés (vous pouvez ensuite continuer à travailler sur une définition de rapport, car elle est alors séparée des instantanés).
-* Tous les instantanés existants sont supprimés.
-* De nouveaux instantanés sont collectés pour les [Données historiques](#historic-data).
+* Tous les instantanés existants seront supprimés.
+* De nouveaux instantanés sont collectés pour la variable [Données historiques](#historic-data).
 
 Avec cette boîte de dialogue, vous pouvez définir ou mettre à jour votre propre titre et votre propre description du rapport.
 
@@ -304,12 +304,12 @@ Les [colonnes d’informations](#selecting-and-positioning-the-data-columns) sur
 * Création
 * Chemin de composant
 * Type de composant
-* Dernière modification
+* Date de dernière modification
 * Page
 
-Signifient que vous pouvez voir, par exemple :
+Signifie que vous pouvez voir, par exemple :
 
-* Quels composants sont utilisés et où ils le sont.
+* Quels composants sont utilisés où.
 
    Utile, par exemple, lors des tests.
 
@@ -317,8 +317,8 @@ Signifient que vous pouvez voir, par exemple :
 
    Ceci peut être intéressant si certaines pages (des « pages lourdes ») rencontrent des problèmes de performances.
 
-* Identifiez les parties du site faisant l’objet de modifications fréquentes ou moins fréquentes.
-* Découvrez comment le contenu de page se développe au fil du temps.
+* Identifiez les parties du site avec des modifications fréquentes/moins fréquentes.
+* Découvrez comment le contenu des pages se développe au fil du temps.
 
 Tous les composants sont inclus, ceux standard produit comme ceux spécifiques aux projets. Avec la boîte de dialogue **Modifier**, l’utilisateur peut également définir un **Chemin racine** qui définit le point de départ du rapport. Tous les composants sous cette racine sont pris en compte pour le rapport.
 
@@ -328,8 +328,8 @@ Tous les composants sont inclus, ceux standard produit comme ceux spécifiques a
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_diskusage"
->title="Rapport Utilisation du disque"
->abstract="En tant qu’entrée du calculateur CTT, les utilisateurs peuvent estimer la taille du référentiel AEM en exécutant le rapport Utilisation du disque sous &quot;http://HOST:PORT/etc/reports/diskusage.html&#39;&quot;. Les utilisateurs peuvent également estimer la taille des chemins de référentiel spécifiques à l’aide du paramètre &quot;path&quot;, tel que : &#39;http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam&#39;."
+>title="Rapport d&#39;utilisation du disque"
+>abstract="En tant qu&#39;entrée du calculateur CTT, les utilisateurs et peuvent estimer la taille du référentiel AEM en exécutant le rapport d&#39;utilisation du disque sous « http://HOST:PORT/etc/reports/diskusage.html ». Les utilisateurs peuvent également estimer la taille des chemins d&#39;accès de référentiel spécifiques à l&#39;aide du paramètre « chemin d&#39;accès », tel que : « http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam »."
 
 Le rapport d’utilisation du disque affiche des informations sur les données stockées dans votre référentiel.
 
@@ -389,13 +389,13 @@ Les [colonnes d’informations](#selecting-and-positioning-the-data-columns) sur
 * Type
 * Utilisateur
 
-Signifie que vous pouvez surveiller :
+Vous pouvez contrôler les éléments suivants :
 
-* Les dernières modifications
-* Les auteurs qui travaillent sur des pages spécifiques
-* Les pages n’ayant pas été modifiées récemment et donc susceptibles de nécessiter une intervention
-* Les pages les plus/moins fréquemment modifiées
-* Les utilisateurs les plus/moins actifs
+* Les dernières modifications.
+* Auteurs travaillant sur des pages spécifiques.
+* Les pages qui n’ont pas été modifiées récemment peuvent donc nécessiter une action.
+* Pages les plus/moins fréquemment modifiées.
+* La plupart/le moins principal des utilisateurs.
 
 Le rapport d’activité de la page récupère toutes ses informations dans le journal d’audit. Par défaut, le chemin d’accès racine est configuré sur le journal d’audit dans `/var/audit/com.day.cq.wcm.core.page`.
 
@@ -412,11 +412,11 @@ Ce rapport fournit des informations sur le contenu généré par l’utilisateur
 * Page
 * Référent
 * Type
-* Utilisateur formulaire
+* Utilisateur Identifiant
 
-Vous permettent :
+Permet d’effectuer les opérations suivantes :
 
-* De voir quelles pages reçoivent le plus de commentaires
+* déterminer les pages qui reçoivent le plus de commentaires ;
 * Obtenez un aperçu de l’ensemble des commentaires que des visiteurs du site laissent, avec éventuellement les problèmes associés.
 * Évaluez si le nouveau contenu suscite des commentaires en surveillant les commentaires laissés sur une page.
 
@@ -426,12 +426,12 @@ Vous permettent :
 
 Ce rapport fournit des informations sur tous les utilisateurs qui ont enregistré un compte ou un profil. Ceci peut comprendre les auteurs de votre organisation et les visiteurs externes.
 
-[Colonnes d’informations](#selecting-and-positioning-the-data-columns) (le cas échéant) sur :
+[Colonnes d’informations](#selecting-and-positioning-the-data-columns) (le cas échéant) à propos de :
 
-* Âge
+* Age
 * Pays
 * Domaine
-* Adresse électronique
+* Courrier électronique
 * Nom de famille
 * Sexe
 * [Générique](#generic-column)
@@ -440,23 +440,23 @@ Ce rapport fournit des informations sur tous les utilisateurs qui ont enregistr�
 * Intérêt
 * Langue
 * Hasch Code NTLM
-* ID utilisateur
+* ID de l&#39;utilisateur
 
-Vous permettent :
+Permet d’effectuer les opérations suivantes :
 
-* Connaître la répartition démographique de vos utilisateurs.
-* Créer des rapports sur les champs personnalisés que vous avez ajoutés aux profils.
+* Voir la répartition démographique de vos utilisateurs.
+* Créer un rapport sur les champs personnalisés que vous avez ajoutés aux profils.
 
 ![reportusercanned](assets/reportusercanned.png)
 
-#### Colonne Générique {#generic-column}
+#### Colonne générique {#generic-column}
 
-La colonne **Générique** est disponible dans le rapport de l’utilisateur afin que vous puissiez accéder à des informations personnalisées, généralement via les [profils utilisateur](/help/sites-administering/identity-management.md#profiles-and-user-accounts). Par exemple, la [couleur préférée comme détaillé sous Ajout de champs à la définition du profil](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition).
+Le **Générique** est disponible dans le rapport d’utilisateur afin que vous puissiez accéder à des informations personnalisées, généralement à partir de la variable [profils utilisateur](/help/sites-administering/identity-management.md#profiles-and-user-accounts); par exemple, [Couleur préférée comme décrit dans la section Ajout de champs à la définition de profil](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition).
 
-La boîte de dialogue Colonne générique s’affiche :
+La boîte de dialogue Colonne générique s’ouvre lorsque vous :
 
-* Quand vous faites glisser le composant Générique du sidekick vers le rapport.
-* Quand vous sélectionnez Propriétés de colonne pour une colonne Générique existante.
+* Faites glisser le composant Générique du sidekick vers le rapport.
+* Sélectionnez Propriétés de colonne pour une colonne Générique existante.
 
 ![reportusrgenericcolm](assets/reportusrgenericcolm.png)
 
@@ -490,7 +490,7 @@ Dans l’onglet **Étendu**, vous pouvez également définir les agrégats et le
 
 ### Rapport d’instance de workflow {#workflow-instance-report}
 
-Ce rapport offre un aperçu précis et fournit des informations sur chaque instance de workflow, à la fois en cours d’exécution et terminé.
+Vous obtenez ainsi une vue d’ensemble concise, fournissant des informations sur les instances individuelles des workflows, en cours d’exécution et terminés.
 
 Les [colonnes d’informations](#selecting-and-positioning-the-data-columns) sur les éléments suivants :
 
@@ -502,9 +502,9 @@ Les [colonnes d’informations](#selecting-and-positioning-the-data-columns) sur
 * Démarré
 * Statut
 
-Signifie que vous pouvez :
+Vous pouvez ainsi :
 
-* Surveiller la durée moyenne des workflows. Si cela se produit régulièrement, il se peut que le workflow connaisse des problèmes.
+* Surveiller la durée moyenne des workflows ; si cela se produit régulièrement, cela peut mettre en évidence des problèmes avec le workflow.
 
 ![reportworkflowintance](assets/reportworkflowintance.png)
 
@@ -520,9 +520,9 @@ Une fois que vous avez configuré les rapports selon vos besoins, vous pouvez le
 
 >[!CAUTION]
 >
->Si vous souhaitez des **Données historiques** pour l’environnement de publication, **terminez** le rapport dans l’environnement de création avant d’activer la page.
+>Si vous voulez **Données historiques** pour l’environnement de publication, puis **Terminer** le rapport sur l’environnement de création avant l’activation de la page.
 
-Le rapport approprié est alors accessible sous
+Le rapport approprié sera alors accessible sous
 
 `/etc/reports`
 
@@ -540,14 +540,14 @@ Puisqu’aucune configuration de rapport n’est autorisée dans l’environneme
 >
 >L’accès à ces rapports pouvant poser un problème de sécurité, nous vous recommandons de configurer le Dispatcher afin que `/etc/reports` ne soit pas accessible aux visiteurs externes. Consultez la [Liste de contrôle de sécurité](security-checklist.md) pour plus de détails.
 
-## Autorisations requises pour exécuter des rapports {#permissions-needed-for-running-reports}
+## Autorisations nécessaires pour l’exécution des rapports {#permissions-needed-for-running-reports}
 
-Les autorisations requises varient en fonction de l’action :
+Les autorisations nécessaires dépendent de l’action :
 
-* Les données de rapport sont en gros collectées à l’aide des autorisations de l’utilisateur actuel.
-* Les données historiques sont collectées à l’aide des autorisations de l’utilisateur qui a terminé le rapport.
+* Les données des rapports sont essentiellement collectées à l’aide des privilèges de l’utilisateur actuel.
+* Les données historiques sont collectées à l’aide des privilèges de l’utilisateur qui a terminé le rapport.
 
-Dans une installation AEM standard, les autorisations suivantes sont prédéfinies pour les rapports :
+Dans une installation AEM standard, les autorisations suivantes sont prédéfinies pour les rapports :
 
 * **Rapport de l’utilisateur**
 
