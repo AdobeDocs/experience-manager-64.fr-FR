@@ -1,7 +1,7 @@
 ---
-title: Définition du message du jour
+title: Configuration du message du jour
 seo-title: Setting the message of the day
-description: Le message du jour vous permet de définir un message à afficher dans la page d’accueil de l’interface utilisateur de Workspace.
+description: Le message du jour vous permet de définir un message à afficher sur la page d’accueil de l’interface utilisateur de Workspace.
 seo-description: The message of the day let you set a message to be displayed on the Welcome page in the Workspace user interface.
 uuid: 9c664438-6fc0-498e-bb3f-4c6bcb9414a7
 contentOwner: admin
@@ -13,36 +13,36 @@ exl-id: 7ddd5a4d-2b46-4408-b241-81e16cfead3c
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 100%
+ht-degree: 27%
 
 ---
 
-# Définition du message du jour {#setting-the-message-of-the-day}
+# Configuration du message du jour {#setting-the-message-of-the-day}
 
-Vous pouvez définir un message à afficher dans la page d’accueil de l’interface utilisateur de Workspace.
+Vous pouvez définir un message à afficher sur la page d’accueil de l’interface utilisateur de Workspace.
 
-Vous pouvez utiliser, si nécessaire, les balises HTML prises en charge par Adobe Flash® Player pour mettre en forme le texte :
+Si nécessaire, vous pouvez utiliser les balises de HTML prises en charge par Adobe Flash® Player pour mettre en forme l’aspect du texte :
 
 * &lt;a> Balise d’ancrage
 * &lt;b> Balise de caractères gras
-* &lt;br> Balise de saut de ligne
-* &lt;font> Balise de police de caractères
+* &lt;br> Balise de saut
+* &lt;font> Balise de police
 * &lt;img> Balise d’image
-* &lt;i> Balise de caractères italiques
+* &lt;i> Balise italique
 * &lt;li> Balise d’élément de liste
 * &lt;p> Balise de paragraphe
 * &lt;span> Balise span
-* &lt;textformat> Balise de format de texte
+* &lt;textformat> Balise de format texte
 * &lt;u> Balise de soulignement
 
 Pour plus d’informations sur les balises prises en charge, voir la définition de la propriété `htmlText` de la classe TextField dans le document [Flex Language Reference](https://flex.apache.org/).
 
 ## Définition du message du jour {#set-the-message-of-the-day}
 
-1. Dans Administration Console, cliquez sur Services > Workspace > Message du jour.
-1. Dans le champ Message du jour, indiquez le texte à afficher dans la page d’accueil.
+1. Dans Administration Console, cliquez sur Services > Workspace > Message du jour.
+1. Dans la zone Message du jour, indiquez le texte à afficher sur l’écran de bienvenue.
 1. Cliquez sur Enregistrer.
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM Forms.
+>L’espace de travail Flex est obsolète pour la version d’AEM Forms.

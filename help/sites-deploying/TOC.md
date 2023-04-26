@@ -11,7 +11,7 @@ role: Architect
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
    + [Début et arrêt d’AEM à partir de la ligne de commande](command-line-start-and-stop.md)
    + [Configuration des magasins de nœuds et des entrepôts de données dans AEM 6](data-store-config.md)
    + [Nettoyage de révision](revision-cleanup.md)
-   + [Exécution d’AEM avec TarMK Cold Standby](tarmk-cold-standby.md)
+   + [Exécuter AEM avec TarMK Cold Standby](tarmk-cold-standby.md)
    + [Prise en charge RDBMS dans AEM 6.4](rdbms-support-in-aem.md)
    + [Requêtes et indexation Oak](queries-and-indexing.md)
    + [Indexation par l’intermédiaire du fichier Jar d’Oak-run](indexing-via-the-oak-run-jar.md)
@@ -62,16 +62,16 @@ ht-degree: 100%
    + [Optimisation des performances](configuring-performance.md)
    + [Guide de performances des ressources](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=fr)
    + [Articles sur la procédure de configuration](ht-deploy.md)
-   + [Suppression des sites Geometrixx](removing-the-geometrixx-sites.md)
+   + [Suppression des sites de Geometrixx](removing-the-geometrixx-sites.md)
    + [Configuration de la console web](configuring-web-console.md)
-+ Mise à niveau vers AEM 6.4 {#upgrading}
-   + [Mise à niveau vers AEM 6.4](upgrade.md)
++ Mettre à niveau vers AEM 6.4 {#upgrading}
+   + [Mettre à niveau vers AEM 6.4](upgrade.md)
    + [Planification de la mise à niveau](upgrade-planning.md)
    + [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](pattern-detector.md)
-   + [Compatibilité descendante dans AEM 6.4](backward-compatibility.md)
+   + [Compatibilité ascendante dans AEM 6.4](backward-compatibility.md)
    + [Procédure de mise à niveau](upgrade-procedure.md)
    + [Utilisation de la réindexation hors ligne pour réduire les temps d’arrêt pendant une mise à niveau](upgrade-offline-reindexing.md)
-   + [Exécution d’une mise à niveau statique](in-place-upgrade.md)
+   + [Effectuer une mise à niveau statique](in-place-upgrade.md)
    + [Migration différée du contenu](lazy-content-migration.md)
    + [Utilisation de l’outil de migration CRX2Oak](using-crx2oak.md)
    + [Tâches de maintenance avant la mise à niveau](pre-upgrade-maintenance-tasks.md)
@@ -89,11 +89,11 @@ ht-degree: 100%
    + [Restructuration des référentiels Dynamic Media dans AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Restructuration des référentiels de Forms dans AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Restructuration des référentiels e-Commerce dans AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
-   + [Restructuration des référentiels pour AEM Communities dans la version 6.4](communities-repository-restructuring-in-aem-6-4.md)
+   + [Restructurer les référentiels pour AEM Communities dans la version 6.4](communities-repository-restructuring-in-aem-6-4.md)
 + eCommerce {#ecommerce}
    + [Aperçu de eCommerce](ecommerce.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+   + [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Bonnes pratiques {#practices}
    + [Bonnes pratiques de déploiement](best-practices.md)

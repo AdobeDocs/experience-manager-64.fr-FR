@@ -9,13 +9,13 @@ exl-id: e2295f71-ea3a-483c-9d7b-29acd151845d
 source-git-commit: 8220795bbf0c92ead3bb68dd6f8bbb48cc9ca2cd
 workflow-type: tm+mt
 source-wordcount: '862'
-ht-degree: 82%
+ht-degree: 59%
 
 ---
 
 # Intégration à Adobe Marketing Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-[Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.html) inclut des produits puissants d’analyse web et d’optimisation des sites web qui proposent des données et des statistiques exploitables en temps réel pour mener à bien vos initiatives en ligne. Il constitue une plateforme ouverte et intégrée pour l’optimisation des entreprises en ligne. Le cloud comprend des applications intégrées pour collecter et donner libre cours à la puissance des données client en vue d’optimiser les efforts d’acquisition, de conversion et de rétention des clients, ainsi que la création et la diffusion du contenu.
+[Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.html) inclut des produits puissants d’analyse web et d’optimisation des sites web qui proposent des données et des statistiques exploitables en temps réel pour mener à bien vos initiatives en ligne. Il constitue une plateforme ouverte et intégrée pour l’optimisation des entreprises en ligne. Le cloud est constitué d’applications intégrées permettant de collecter et de libérer la puissance des informations sur les clients afin d’optimiser les efforts d’acquisition, de conversion et de rétention des clients, ainsi que la création et la distribution de contenu.
 
 Avec Adobe Experience Manager, vous pouvez intégrer facilement les produits Adobe Marketing Cloud suivants :
 
@@ -30,18 +30,18 @@ En outre, vous pouvez intégrer Adobe Experience Manager à la [Creative Cloud](
 
 ## Intégration à Adobe Analytics {#integrating-with-adobe-analytics}
 
-[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) est la solution leader du secteur qui fournit aux marketeurs un emplacement pour mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne à travers plusieurs canaux marketing. Il fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies numériques et des initiatives marketing. Avec Adobe Analytics, les marketeurs peuvent rapidement identifier les chemins d’accès les plus rentables sur un site web, segmenter le trafic afin de repérer les visiteurs web ayant le plus de valeur, déterminer où se rendent les visiteurs quand ils quittent leur site et identifier les mesures clés de réussite pour les campagnes de marketing en ligne. Adobe Analytics fait partie de la suite d’applications d’optimisation des activités en ligne Adobe Marketing Cloud.
+[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) est la solution leader du secteur qui fournit aux marketeurs un emplacement pour mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne à travers plusieurs canaux marketing. Il fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies numériques et des initiatives marketing. Adobe Analytics permet aux marketeurs d’identifier rapidement les chemins les plus rentables d’un site web, de segmenter le trafic pour repérer les visiteurs web à forte valeur ajoutée, de déterminer où les visiteurs quittent le site et d’identifier les mesures de succès critiques pour les campagnes marketing en ligne.
 
-Vous pouvez utiliser Adobe Analytics pour analyser les données de vos sites.
+Vous pouvez utiliser Adobe Analytics pour analyser les données de vos sites.
 
 L’intégration à Adobe Analytics vous permet d’effectuer les opérations suivantes :
 
 * Activer le suivi des utilisateurs d’Adobe Analytics
-* Mettre en correspondance les modes d’exécution (par exemple, création et publication) avec différentes suites de rapports
-* Envoyer les variables de contexte client en tant que variables de conversion ou propriétés de trafic
-* Utiliser les mises en correspondance de variables prédéfinis
-* Configurer simultanément des sections complètes de site
-* Suivre les événements personnalisés
+* Mappez vos modes d’exécution (par exemple, création, publication) à différentes suites de rapports.
+* Envoyez les variables ClientContext en tant que variables de conversion ou propriétés de trafic.
+* Utilisez des mappages de variables prédéfinis.
+* Configurez toutes les sections du site à la fois.
+* Suivi des événements personnalisés.
 
 Pour plus d’informations sur l’intégration d’Adobe Experience Manager à Analytics, voir [Intégration à Adobe Analytics](/help/sites-administering/adobeanalytics.md).
 
@@ -51,7 +51,7 @@ Vous pouvez également utiliser l’[assistant d’accord préalable](/help/site
 
 [Adobe Target](https://www.omniture.com/en/products/conversion/test-and-target) est utilisé par les spécialistes marketing pour concevoir et exécuter des tests en ligne, créer des segments ciblés à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne.
 
-Les besoins des cyberconsommateurs sont aujourd’hui en constante évolution et ils attendent des très nombreux sites et sources de contenus qu’ils leur offrent des contenus pertinents, voire personnalisés. Pour séduire ce public, il est essentiel que les marketeurs identifient rapidement les offres et les contenus pertinents et attrayants pour leurs publics. Forts de ce savoir, les marketeurs ont besoin de pouvoir faire évoluer en permanence leurs sites et de cibler le contenu adapté aux différents publics.
+Les besoins des cyberconsommateurs sont aujourd’hui en constante évolution et ils attendent des très nombreux sites et sources de contenus qu’ils leur offrent des contenus pertinents, voire personnalisés. Pour séduire ce public, il est essentiel que les marketeurs identifient rapidement les offres et les contenus pertinents et attrayants pour leurs publics. Forts de ces connaissances, les marketeurs ont besoin de la capacité d’évoluer continuellement leurs sites et de cibler le contenu approprié vers différentes audiences.
 
 [Intégration à Adobe Target](/help/sites-administering/target.md) explique comment intégrer votre site à Adobe Target.
 
@@ -59,13 +59,13 @@ Vous pouvez également utiliser l’[assistant d’accord préalable](/help/site
 
 ## Souscription à Analytics et Target {#opting-in-to-analytics-and-target}
 
-Adobe Experience Manager propose une procédure d’opt-in simple pour l’intégration à Adobe Analytics et Adobe Target. Lorsque vous vous connectez en tant qu’administrateur et accédez à la console Projets, un assistant de souscription apparaît.
+Adobe Experience Manager propose une procédure d’opt-in simple pour l’intégration à Adobe Analytics et Adobe Target. Lorsque vous vous connectez en tant qu’administrateur et que vous accédez à la console Projets, un assistant de souscription s’affiche.
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Souscrivez à l’intégration avec Analytics et/ou Target afin de permettre l’utilisation de leurs fonctionnalités de suivi et d’analyse des pages, ainsi que des fonctionnalités de personnalisation. Lorsque vous souscrivez, vous devez fournir vos informations de compte utilisateur et spécifier les pages suivies.
+Souscrivez à l’intégration avec Analytics et/ou Target afin de permettre l’utilisation de leurs fonctionnalités de suivi et d’analyse des pages, ainsi que des fonctionnalités de personnalisation. Lorsque vous souscrivez, vous devez fournir les informations de votre compte utilisateur et spécifier les pages qui font l’objet d’un suivi.
 
-Pour plus d’informations, voir [Souscription à Adobe Analytics et Target.](/help/sites-administering/opt-in.md)
+Pour plus d’informations, voir [Souscription à Adobe Analytics et Adobe Target.](/help/sites-administering/opt-in.md)
 
 ## Intégration à Dynamic Media Classic {#integrating-with-scene}
 
@@ -83,7 +83,7 @@ Pour plus d’informations sur l’intégration d’Adobe Experience Manager à 
 
 [Intégration d’Adobe Dynamic Tag Management](/help/sites-administering/dtm.md) avec Adobe Experience Manager afin que vous puissiez utiliser vos propriétés web Dynamic Tag Management pour effectuer le suivi des sites Adobe Experience Manager.
 
-## Intégration à Adobe Audience Manager {#integrating-with-adobe-audience-manager}
+## Intégration à Adobe Audience Manager {#integrating-with-adobe-audience-manager}
 
 L’intégration d’Audience Manager a été supprimée dans Adobe Experience Manager 6.3.
 

@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 9dcaf2538e5f968b25ce4f643ac307eff295d07d
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 98%
+ht-degree: 93%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 98%
    + [Administration de la solution eCommerce générique](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+   + [Commerce Cloud Salesforce](https://github.com/adobe/commerce-salesforce)
    + [AEM Commerce – Préparation pour le RGPD](gdpr-compliance-commerce.md)
 + Intégration {#integration}
    + [Intégration à des services tiers](third-party-services.md)
@@ -148,7 +148,7 @@ ht-degree: 98%
    + [Conditions préalables à l’intégration à Adobe Target](target-requirements.md)
    + [Classifications Adobe](adobeanalytics-classifications.md)
    + [Intégration de solutions](integration.md)
-   + [Intégration de fragments d’expérience dans Adobe Target](experience-fragments-target.md)
+   + [Intégration de Target avec les fragments d’expérience](experience-fragments-target.md)
 + Bonnes pratiques {#bestpractices}
    + [Bonnes pratiques](administer-best-practices.md)
    + [Bonnes pratiques de traduction](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/tc-bp.html?lang=fr)
@@ -157,7 +157,7 @@ ht-degree: 98%
    + [Traitement des demandes RGPD pour AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/handling-gdpr-requests-for-aem-platform.html?lang=fr)
    + [AEM Commerce – Préparation pour le RGPD](https://experienceleague.adobe.com/docs/experience-manager-64/administering/ecommerce/gdpr-compliance-commerce.html)
 + Gestion de contenu {#contentmanagement}
-   + [Utilisation des modules](package-manager.md)
+   + [Utilisation de modules](package-manager.md)
    + [Déchargeur de workflow de ressources](workflow-offloader.md)
    + [Administration des balises](tags.md)
    + [Exportateur de page](page-exporter.md)
