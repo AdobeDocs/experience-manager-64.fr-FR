@@ -11,14 +11,18 @@ discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 exl-id: 39ed07ec-54a6-4387-8435-e891726c411c
 feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 92%
+source-wordcount: '725'
+ht-degree: 64%
 
 ---
 
 # Modèles de fragment de contenu {#content-fragment-models}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!CAUTION]
 >
@@ -32,9 +36,9 @@ Les modèles de fragment de contenu définissent la structure du contenu pour vo
 >
 >Si vous n’activez pas **[!UICONTROL Modèles de fragment de contenu]**, la variable **[!UICONTROL Créer]** ne sera pas disponible pour la création de modèles.
 
-Pour activer les modèles de fragment de contenu, vous devez :
+Pour activer les modèles de fragment de contenu, vous devez :
 
-* activer l’utilisation des modèles de fragment de contenu dans Configuration Manager ;
+* Activation de l’utilisation de modèles de fragment de contenu dans Configuration Manager
 * appliquer la configuration à votre dossier de ressources.
 
 ### Activation des modèles de fragment de contenu dans Configuration Manager   {#enable-content-fragment-models-in-configuration-manager}
@@ -42,7 +46,7 @@ Pour activer les modèles de fragment de contenu, vous devez :
 Pour [créer un nouveau modèle de fragment de contenu](#creating-a-content-fragment-model), vous **devez** d’abord activer ces modèles à l’aide du gestionnaire de configuration :
 
 1. Accédez à **[!UICONTROL Outils]**, **[!UICONTROL Général]**, puis ouvrez l’**[!UICONTROL explorateur de configurations]**.
-   * Pour plus d’informations, consultez la documentation relative au [](/help/sites-administering/configurations.md)Navigateur de configuration.
+   * Pour plus d’informations, consultez la [documentation relative au Navigateur de configurations](/help/sites-administering/configurations.md).
 1. Sélectionnez l’emplacement approprié pour votre site web.
 1. Utilisez le bouton **[!UICONTROL Créer]** pour ouvrir la boîte de dialogue.
 
@@ -62,8 +66,8 @@ Pour utiliser d’autres configurations (c’est-à-dire à l’exclusion de la 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
 1. Accédez à **[!UICONTROL Outils]**, **[!UICONTROL Ressources]**, puis ouvrez les **[!UICONTROL modèles de fragment de contenu]**.
-1. Accédez au fichier adapté votre [configuration](#enable-content-fragment-models).
-1. Utilisez le bouton **[!UICONTROL Créer]** pour ouvrir l’assistant.
+1. Accédez au dossier approprié à votre [configuration](#enable-content-fragment-models).
+1. Utilisation **[!UICONTROL Créer]** pour ouvrir l’assistant.
 
    >[!CAUTION]
    >
@@ -73,11 +77,11 @@ Pour utiliser d’autres configurations (c’est-à-dire à l’exclusion de la 
 
    ![cfm-6420-10](assets/cfm-6420-10.png)
 
-1. Utilisez le bouton **[!UICONTROL Créer]** pour enregistrer le modèle vide. Un message indique que l’action a réussi. Vous pouvez alors sélectionner **[!UICONTROL Ouvrir]** pour publier immédiatement le modèle ou **[!UICONTROL Terminé]** pour revenir à la console.
+1. Utilisation **[!UICONTROL Créer]** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **[!UICONTROL Ouvrir]** pour modifier immédiatement le modèle ; ou **[!UICONTROL Terminé]** pour revenir à la console.
 
 ## Définition de votre modèle de fragment de contenu {#defining-your-content-fragment-model}
 
-Le modèle de fragment de contenu définit la structure des fragments de contenu qui en résultent. À l’aide de l’éditeur de modèles, vous pouvez ajouter et configurer les champs obligatoires :
+Le modèle de fragment de contenu définit efficacement la structure des fragments de contenu obtenus. À l’aide de l’éditeur de modèles, vous pouvez ajouter et configurer les champs requis :
 
 >[!CAUTION]
 >
@@ -86,9 +90,9 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 1. Accédez à **[!UICONTROL Outils]**, **[!UICONTROL Ressources]**, puis ouvrez les **[!UICONTROL modèles de fragment de contenu]**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
-1. Ouvrez le modèle requis pour l’**[!UICONTROL édition]**. Utilisez l’action rapide ou sélectionnez le modèle puis l’action dans la barre d’outils.
+1. Ouvrez le modèle requis pour **[!UICONTROL Modifier]**; utilisez l’action rapide ou sélectionnez le modèle, puis l’action dans la barre d’outils.
 
-   Une fois ouvert, l’éditeur de modèles affiche :
+   Une fois ouvert, l’éditeur de modèles affiche :
 
    * à gauche : les champs déjà définis
    * à droite : les **[!UICONTROL types de données]** disponibles pour la création des champs (et les **[!UICONTROL propriétés]** à utiliser une fois les champs créés).
@@ -111,7 +115,7 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 
 1. **Pour supprimer un champ**
 
-   Sélectionnez le champ, puis cliquez/appuyez sur l’icône représentant une corbeille. Vous serez alors invité à confirmer l’opération.
+   Sélectionnez le champ requis, puis cliquez/appuyez sur l’icône corbeille. Vous serez alors invité à confirmer l’opération.
 
    ![cf-32](assets/cf-32.png)
 
@@ -125,22 +129,22 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 >
 >La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
 
-Pour supprimer un modèle de fragment de contenu :
+Pour supprimer un modèle de fragment de contenu :
 
 1. Accédez à **[!UICONTROL Outils]**, **[!UICONTROL Ressources]**, puis ouvrez les **[!UICONTROL modèles de fragment de contenu]**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
-1. Sélectionnez votre modèle, puis utilisez l’option **[!UICONTROL de suppression]** de la barre d’outils.
+1. Sélectionnez votre modèle, puis **[!UICONTROL Supprimer]** dans la barre d’outils.
 
    >[!NOTE]
    >
-   >Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
+   >Si le modèle est référencé, un avertissement s’affiche. Agissez de manière appropriée.
 
 ## Publication d’un modèle de fragment de contenu {#publishing-a-content-fragment-model}
 
 Les modèles de fragment de contenu doivent être publiés avant ou pendant la publication des fragments de contenu dépendants.
 
-Pour publier un modèle de fragment de contenu :
+Pour publier un modèle de fragment de contenu :
 
 1. Accédez à **[!UICONTROL Outils]**, **[!UICONTROL Ressources]**, puis ouvrez les **[!UICONTROL modèles de fragment de contenu]**.
 

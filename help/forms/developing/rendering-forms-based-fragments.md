@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: 49c4af9a-5797-468c-b3ad-f3140d445ff2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 100%
+source-wordcount: '2231'
+ht-degree: 94%
 
 ---
 
 # Générer des formulaires reposant sur des fragments {#rendering-forms-based-on-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Générer des formulaires reposant sur des fragments {#rendering-forms-based-on-fragments-inner}
 
@@ -29,7 +33,7 @@ L’utilisation de fragments simplifie et accélère la création et la gestion 
 
 Un fragment peut inclure plusieurs sous-formulaires qui sont placés dans un jeu de sous-formulaires de choix. Les jeux de sous-formulaires de choix contrôlent l’affichage des sous-formulaires en fonction du flux de données d’une connexion aux données. Vous vous servez d’instructions conditionnelles pour déterminer le sous-formulaire du jeu devant s’afficher dans le formulaire obtenu. Par exemple, chaque sous-formulaire faisant partie d’un jeu peut comprendre des informations relatives à un emplacement géographique particulier et le sous-formulaire affiché peut être déterminé d’après l’emplacement de lʼutilisateur.
 
-Un *fragment de script* contient des valeurs ou des fonctions JavaScript réutilisables stockées séparément des objets, tels qu’un analyseur de dates ou un appel de services web. Les fragments de ce type comprennent un seul objet de script figurant comme enfant de variables dans la palette Hiérarchie. Ils ne peuvent pas être créés à partir de scripts correspondant à des propriétés d’autres objets, tels que les scripts d’événements (validate, calculate ou initialize, par exemple).
+Un *fragment de script* contient des valeurs ou des fonctions JavaScript réutilisables stockées séparément des objets, tels qu’un analyseur de dates ou un appel de services web. Ces fragments incluent un seul objet de script qui s’affiche en tant qu’enfant de variables dans la palette Hiérarchie. Les fragments ne peuvent pas être créés à partir de scripts qui sont des propriétés d’autres objets, tels que des scripts d’événement tels que validate, calculate ou initialize.
 
 L’utilisation de fragments présente les avantages suivants :
 
@@ -37,7 +41,7 @@ L’utilisation de fragments présente les avantages suivants :
 * **Mises à jour globales** : l’utilisation de fragments vous permet d’effectuer des changements globaux dans plusieurs formulaires en une opération et en modifiant un seul fichier. Vous pouvez modifier le contenu, les objets de script, les liaisons de données, la disposition ou les styles d’un fragment : tous les formulaires XDP référençant ce fragment reflèteront ces changements.
 * Par exemple, vous pouvez retrouver dans de nombreux formulaires un élément commun tel qu’un bloc d’adresse comprenant un objet de liste déroulante de pays. Si vous mettez à jour les valeurs de cet objet de liste déroulante, vous devez ouvrir un grand nombre de formulaires afin d’y apporter les modifications voulues. En revanche, si vous placez le bloc d’adresse dans un fragment, il vous suffit d’ouvrir un fichier de fragment pour y apporter les modifications voulues.
 * Pour mettre à jour un fragment dans un formulaire PDF, vous devez réenregistrer le formulaire dans Designer.
-* **Création de formulaires partagée** : lʼutilisation de fragments permet de partager la création de formulaires entre plusieurs ressources. Les développeurs de formulaires familiarisés avec l’utilisation de scripts ou d’autres fonctions avancées de Designer peuvent développer et partager des fragments tirant avantage des fonctions de script et des propriétés dynamiques. Les concepteurs de formulaires peuvent ensuite se servir de ces fragments pour définir la disposition de leurs conceptions de formulaire et s’assurer que toutes les parties de formulaires créés par plusieurs personnes revêtent un aspect, une présentation et des fonctionnalités homogènes.
+* **Création de formulaires partagée** : lʼutilisation de fragments permet de partager la création de formulaires entre plusieurs ressources. Les développeurs de formulaires maîtrisant les fonctions de script ou d’autres fonctions avancées de Designer peuvent développer et partager des fragments tirant parti des fonctions de script et des propriétés dynamiques. Les concepteurs de formulaires peuvent utiliser ces fragments pour mettre en page des conceptions de formulaire et s’assurer que toutes les parties d’un formulaire ont une apparence et une fonctionnalité cohérentes sur plusieurs formulaires conçus par plusieurs personnes.
 
 ### Assembler une conception de formulaire à l’aide de fragments {#assembling-a-form-design-assembled-using-fragments}
 

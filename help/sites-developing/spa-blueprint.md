@@ -9,14 +9,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
-source-git-commit: b46f0325ddbf68b65270c8e741e06469c584ae4d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2090'
-ht-degree: 98%
+source-wordcount: '2126'
+ht-degree: 95%
 
 ---
 
 # Plan directeur d’applications sur une seule page (SPA){#spa-blueprint}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Pour permettre à l’auteur d’utiliser l’éditeur de SPA AEM en vue de modifier le contenu d’une application d’une seule page (SPA), cette dernière doit satisfaire certaines exigences, qui sont décrites dans ce document.
 
@@ -32,7 +36,7 @@ Ce document décrit le contrat général que tout framework de SPA devrait respe
 
 >[!NOTE]
 >
->Les exigences suivantes sont indépendantes de la structure. Si ces exigences sont satisfaites, un calque spécifique à l’infrastructure, constitué de modules, de composants et de services, peut être fourni.
+>Les exigences suivantes sont indépendantes du framework. Si ces conditions sont remplies, une couche spécifique à la structure composée de modules, composants et services peut être fournie.
 >
 >**Ces exigences sont déjà respectées pour les frameworks React et Angular dans AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous voulez mettre en œuvre un autre framework à utiliser avec AEM.
 
@@ -48,7 +52,7 @@ La bibliothèque `PageModelManager` est fournie sous la forme d’un package NPM
 
 Au nom de l’application sur une seule page, il extrait la récupération et la gestion de la structure JSON qui représente la structure de contenu proprement dite. Il assure également la synchronisation avec l’application sur une seule page, en lui faisant savoir à quel moment un nouveau rendu de ses composants doit être effectué.
 
-Voir le module NPM [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+Voir le package NPM [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 Lors de l’initialisation de `PageModelManager`, la bibliothèque commence par charger le modèle racine fourni de l’application (par l’intermédiaire d’un paramètre, d’une méta-propriété ou de l’URL active). Si la bibliothèque identifie que le modèle de la page active ne fait pas partie du modèle racine, elle le récupère et l’inclut comme modèle d’une page enfant.
 

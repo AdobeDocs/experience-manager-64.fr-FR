@@ -1,5 +1,5 @@
 ---
-title: Fonction Forum
+title: Fonctionnalité du forum
 seo-title: Forum Feature
 description: Ajout et configuration de la fonction de forum
 seo-description: How to add and configure the forum feature
@@ -10,18 +10,22 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3495f983-d71e-4704-be4e-8a42a63f72db
 exl-id: fa6f28b4-3217-4b6a-b223-506da0ecca9e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 58%
+source-wordcount: '1082'
+ht-degree: 2%
 
 ---
 
-# Fonction Forum {#forum-feature}
+# Fonctionnalité du forum {#forum-feature}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#introduction}
 
-La fonction Forum offre un espace aux visiteurs connectés (membres de la communauté) dans l’environnement de publication pour leur permettre de :
+La fonction de forum fournit une zone pour les visiteurs connectés du site (membres de la communauté) dans l’environnement de publication afin que :
 
 * Création de rubriques
 * Affichage des rubriques et réponse
@@ -30,7 +34,7 @@ La fonction Forum offre un espace aux visiteurs connectés (membres de la commun
 * Aider à modérer le contenu du forum
 * Déplacement des sujets de forum d’une page vers une autre
 
-Cette section de la documentation décrit :
+Cette section de la documentation décrit
 
 * Ajout de la fonction Forum à un site AEM
 * Paramètres de configuration de la variable `Forum`component
@@ -55,33 +59,39 @@ Sélectionnez le `Forum` pour accéder au composant et le sélectionner. `Config
 
 ![chlimage_1-61](assets/chlimage_1-61.png) ![chlimage_1-62](assets/chlimage_1-62.png)
 
-### Onglet Settings {#settings-tab}
+### Onglet Paramètres {#settings-tab}
 
-Sous l’onglet **[!UICONTROL Paramètres]**, spécifiez les paramètres des sujets et des réponses :
+Sous , **[!UICONTROL Paramètres]** , spécifiez les paramètres des sujets et réponses :
 
-* **[!UICONTROL Sujets par page]** Définit le nombre de sujets/articles affichés par page. La valeur par défaut est 10.
+* **[!UICONTROL Sujets par page]**
+Définit le nombre de rubriques/publications affichées par page. La valeur par défaut est 10.
 
-* **[!UICONTROL Modéré]** Si cette option est cochée, les sujets et les commentaires doivent être approuvés avant d’être visibles sur un site de publication. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Modéré]**
+Si cette case est cochée, la publication des sujets et des commentaires doit être approuvée avant d’apparaître sur un site de publication. La case par défaut est décochée.
 
-* **[!UICONTROL Fermé]** Si cette option est cochée, le forum est fermé et n’accepte aucun nouveau sujet ou commentaire. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Fermé]**
+Si cette case est cochée, le forum est fermé pour de nouveaux sujets et commentaires. La case par défaut est décochée.
 
-* **[!UICONTROL Éditeur de texte enrichi]** Si cette option est cochée, les sujets et les commentaires peuvent être saisis avec une mise en forme. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Éditeur de texte enrichi]**
+Si cette case est cochée, les sujets et les commentaires peuvent être saisis avec une annotation. La case par défaut est décochée.
 
-* **[!UICONTROL Autoriser le balisage]** Si cette option est cochée, les membres ont le droit d’ajouter des libellés de balise à leur article (voir l’onglet **[!UICONTROL Champ de balise]**). Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser le balisage]**
+Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leur publication (voir **[!UICONTROL Champ de balise]** ). La case par défaut est décochée.
 
-* **[!UICONTROL Autoriser les chargements de fichiers]** Si cette option est cochée, des fichiers joints peuvent être ajoutés à un sujet ou à un commentaire. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser les chargements de fichiers]**
+Si cette case est cochée, vous pouvez ajouter des pièces jointes à la rubrique ou au commentaire. La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser l’exécution]**
-Si cette case est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [notify](notifications.md) de nouvelles publications. Cette option n’est pas cochée par défaut.
+Si cette case est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [notify](notifications.md) de nouvelles publications. La case par défaut est décochée.
 
 * **[!UICONTROL Permettre la mise en page]**
-Si cette case est cochée, les sujets de forum peuvent être placés en haut de la liste des sujets. Cette option n’est pas cochée par défaut.
+Si cette case est cochée, les sujets de forum peuvent être placés en haut de la liste des sujets. La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser le contenu proposé]**
-si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](featured.md). Cette option n’est pas cochée par défaut.
+si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](featured.md). La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser les abonnements aux emails]**
-Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([abonnement](subscriptions.md)). Nécessite `Allow Following` à vérifier et [email configuré](email.md). Cette option n’est pas cochée par défaut.
+Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([abonnement](subscriptions.md)). Nécessite `Allow Following` à vérifier et [email configuré](email.md). La case par défaut est décochée.
 
 * **[!UICONTROL Taille de fichier maximale]**
 Pertinent uniquement si 
@@ -92,18 +102,22 @@ Pertinent uniquement si
 `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
 * **[!UICONTROL Taille max. du fichier image joint]**
-À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
+À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Nombre maximal d’octets qu’un fichier image chargé peut contenir. La valeur par défaut est 2097152 (2 Mo).
 
-* **[!UICONTROL Autoriser les réponses à thème]** Si cette option est cochée, les réponses aux commentaires sont publiées pour le sujet. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser les réponses à threads]**
+Si cette case est cochée, les réponses aux commentaires sont publiées sur le sujet. La case par défaut est décochée.
 
-* **[!UICONTROL Autoriser les utilisateurs à supprimer les commentaires et sujets]** Si cette option est cochée, les membres ont le droit de supprimer les commentaires et les sujets qu’ils ont publiés. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autorisation des utilisateurs à supprimer des commentaires et des sujets]**
+Si cette case est cochée, autorisez les membres à supprimer les commentaires et les sujets qu’ils ont publiés. La case par défaut est décochée.
 
-* **[!UICONTROL Autoriser le vote]** Si cette option est cochée, la fonction de vote est ajoutée à un sujet. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Autoriser le vote]**
+Si cette case est cochée, la fonction de vote est ajoutée à un sujet. La case par défaut est décochée.
 
-* **[!UICONTROL Afficher le fil d’Ariane]** Si cette option est cochée, le fil d’Ariane s’affiche dans les pages de sujet. Cette option est cochée par défaut.
+* **[!UICONTROL Afficher le chemin de navigation]**
+Si cette case est cochée, les chemins de navigation s’affichent sur les pages de rubrique. La valeur par défaut est cochée.
 
 * **[!UICONTROL Badges d’affichage]**
-Si cette case est cochée, affichez les droits gagnés et attribués. [badges](implementing-scoring.md) avec l&#39;entrée de blog d&#39;un membre. Cette option n’est pas cochée par défaut.
+Si cette case est cochée, affichez les droits gagnés et attribués. [badges](implementing-scoring.md) avec l&#39;entrée de blog d&#39;un membre. La case par défaut est décochée.
 
 >[!NOTE]
 >
@@ -111,40 +125,49 @@ Si cette case est cochée, affichez les droits gagnés et attribués. [badges](i
 
 ### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-Sous , **[!UICONTROL Modération d’utilisateur]** , indiquez comment les sujets et réponses publiés (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
+Sous , **[!UICONTROL Modération d’utilisateur]** , indiquez comment les sujets et réponses publiés (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-* **[!UICONTROL Refuser les publications]** Si cette option est cochée, les membres modérateurs autorisés ont le droit de refuser des articles et, par conséquent, d’empêcher leur publication sur le forum public. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Refuser des publications]**
+Si cette case est cochée, les modérateurs membres approuvés sont autorisés à refuser des publications et à empêcher que la publication ne s’affiche sur le forum public. La case par défaut est décochée.
 
-* **[!UICONTROL Fermer/rouvrir les sujets]** Si cette option est cochée, les membres modérateurs autorisés ont le droit de fermer un sujet pour empêcher la publication d’autres modifications et de commentaires, puis de le rouvrir. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Fermer/rouvrir les rubriques]**
+Si cette case est cochée, les membres modérateurs autorisés peuvent fermer une rubrique pour ajouter d’autres modifications et commentaires et rouvrir une rubrique. La case par défaut est décochée.
 
 * **[!UICONTROL Déplacer les rubriques]**
-Si cette case est cochée, les modérateurs côté publication peuvent déplacer des rubriques. Cette option est cochée par défaut.
+Si cette case est cochée, les modérateurs côté publication peuvent déplacer des rubriques. La valeur par défaut est cochée.
 
-* **[!UICONTROL Marquer les publications]** Si cette option est cochée, les membres ont le droit de marquer les sujets ou commentaires d’autres membres comme étant inappropriés. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Marquer les publications]**
+Si cette case est cochée, les membres ont le droit de marquer les sujets ou commentaires d’autres personnes comme étant inappropriés. La case par défaut est décochée.
 
-* **[!UICONTROL Marquer la liste de motifs]** Si cette option est cochée, les membres ont le droit de sélectionner dans une liste déroulante la ou les raisons pour lesquelles ils ont marqué un sujet ou un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Marquer la liste de motifs]**
+Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué un sujet ou un commentaire comme étant inapproprié. La case par défaut est décochée.
 
-* **[!UICONTROL Motif de la marque personnalisée]** Si cette option est cochée, les membres ont le droit de préciser la raison pour laquelle ils ont marqué un sujet ou un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Motif de l’indicateur personnalisé]**
+Si cette case est cochée, autorisez les membres à indiquer leur propre motif de signalement d’un sujet ou d’un commentaire comme étant inapproprié. La case par défaut est décochée.
 
-* **[!UICONTROL Seuil de modération]** Saisissez le nombre de fois qu’un sujet ou un commentaire doit être marqué par les membres avant que les modérateurs n’en soient informés. La valeur par défaut est 1 (une fois).
+* **[!UICONTROL Seuil de modération]**
+Saisissez le nombre de fois qu’un sujet ou un commentaire doit être marqué par les membres avant que les modérateurs ne soient informés. La valeur par défaut est 1 (une fois).
 
-* **[!UICONTROL Limite de marquage]** Saisissez le nombre de fois qu’un sujet ou un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
+* **[!UICONTROL Limite de marquage]**
+Saisissez le nombre de fois qu’un sujet ou un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. S’il est défini sur -1, le sujet ou le commentaire marqué n’est jamais masqué à la vue du public. Sinon, ce nombre doit être supérieur ou égal au seuil de modération. La valeur par défaut est 5.
 
 ### Onglet Champ de balise {#tag-field-tab}
 
-Dans l’onglet **[!UICONTROL Champ de balise]**, les balises qui peuvent être appliquées, si l’option est activée dans l’onglet **[!UICONTROL Paramètres]**, sont limitées selon les espaces de noms sélectionnés.
+Sous , **[!UICONTROL Champ de balise]** , les balises qui peuvent être appliquées, le cas échéant, sous l’onglet **[!UICONTROL Paramètres]** sont limités en fonction des espaces de noms sélectionnés.
 
 * **[!UICONTROL Espaces de noms autorisés]**
-Pertinent si `Allow Tagging` est coché sous **[!UICONTROL Paramètres]** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+Pertinent si `Allow Tagging` est coché sous **[!UICONTROL Paramètres]** . Les balises qui peuvent être appliquées sont limitées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
-* **[!UICONTROL Limite de suggestions]** Entrez le nombre de balises à afficher comme suggestion destinée au membre qui publie sur le forum. La valeur par défaut est 
+* **[!UICONTROL Limite de suggestion]**
+Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur par défaut est 
 **-** 1 (aucune limite).
 
 ### Onglet Traduction {#translation-tab}
 
-Sous l’onglet **[!UICONTROL Traduction]**, si la traduction est activée pour le site de la communauté, elle peut être définie de sorte à traduire le sujet entier ou certaines publications en particulier.
+Sous , **[!UICONTROL Traduction]** , si la traduction est activée pour le site de la communauté, elle peut être définie pour traduire l’intégralité de la rubrique ou les publications sélectionnées.
 
-* **[!UICONTROL Tout traduire]** Si cette option est cochée, le fil d’Ariane du forum est traduit dans la langue par défaut de l’utilisateur. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Tout traduire]**
+Si cette case est cochée, le fil du forum est traduit dans la langue préférée de l’utilisateur. La case par défaut est décochée.
 
 ### Onglet Paramètres de tri {#sort-settings-tab}
 
@@ -164,10 +187,10 @@ Menu déroulant pour sélectionner l’un des
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur la fonction Forum](essentials-forum.md) pour les développeurs.
+Vous trouverez plus d’informations sur la [Notions fondamentales sur le forum](essentials-forum.md) pour les développeurs.
 
-Pour des informations sur la modération des sujets et des commentaires publiés, reportez-vous à la section [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
+Pour la modération des sujets et des commentaires publiés, voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-Pour baliser les sujets et les commentaires publiés, voir [Balisage de contenu généré par l’utilisateur](tag-ugc.md).
+Pour baliser des sujets et des commentaires publiés, voir [Balisage du contenu généré par l’utilisateur](tag-ugc.md).
 
-Pour des informations sur la traduction des sujets et des commentaires, voir [Traduction de contenu généré par les utilisateurs](translate-ugc.md).
+Pour la traduction des sujets et des commentaires publiés, voir [Traduction de contenu généré par l’utilisateur](translate-ugc.md).

@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: bef38e7a-92db-4226-a4ea-8facce573456
 exl-id: b132216a-c9b4-4f8f-97e6-738a5a9632d1
-source-git-commit: db64b7d5ac9044c4b2fee6ae4adbe9aab1cf4c7d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 100%
+source-wordcount: '920'
+ht-degree: 96%
 
 ---
 
 # Afficher et comprendre les rapports de transaction {#viewing-and-understanding-transaction-reports}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Utilisez les rapports de transaction pour prendre une décision éclairée sur l’utilisation du produit et rééquilibrer les investissements en matériel et en logiciels.
 
@@ -24,7 +28,7 @@ Les rapports de transaction vous permettent de capturer et de suivre le nombre d
 
 ## Configurer des rapports de transaction  {#setting-up-transaction-reports}
 
-La fonction Rapports de transaction est disponible dans le cadre du module complémentaire d’AEM Forms. Pour plus d’informations sur l’installation du module complémentaire sur toutes les instances de création et de publication, voir [Installer et configurer AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html). Une fois que vous avez installé le module complémentaire AEM Forms, procédez comme suit :
+La fonction Rapports de transaction est disponible dans le cadre du package complémentaire d’AEM Forms. Pour plus d’informations sur l’installation du package complémentaire sur toutes les instances de création et de publication, voir [Installer et configurer AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html). Une fois que vous avez installé le package complémentaire AEM Forms, procédez comme suit :
 
 * Activer la réplication inverse sur toutes les instances de publication
 * Activer les rapports de transactions

@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 66%
+source-wordcount: '1413'
+ht-degree: 57%
 
 ---
 
 # Gestion des ressources composites avec des sous-ressources {#managing-compound-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Adobe Experience Manager Assets peut déterminer si un fichier chargé contient des références à des ressources qui existent déjà dans le référentiel. Cette fonctionnalité est disponible uniquement pour les types de formats pris en charge. Si le fichier chargé contient des références à des ressources [!DNL Experience Manager], un lien bidirectionnel est créé entre les ressources chargées et celles référencées.
 
@@ -27,7 +31,7 @@ Les références sont résolues sur la base du chemin d’accès, du document et
 Vous pouvez référencer [!DNL Experience Manager] ressources dans un fichier Adobe Illustrator.
 
 1. Utilisez l’[[!DNL Experience Manager] application de bureau ](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html) pour monter le référentiel Assets en tant que lecteur sur votre ordinateur local. [!DNL Experience Manager] Dans le lecteur monté, accédez à l’emplacement de la ressource à référencer.
-1. Faites glisser la ressource du volume monté jusqu’au fichier Illustrator.
+1. Faites glisser la ressource du lecteur monté vers le fichier Illustrator.
 1. Enregistrez le fichier Illustrator sur le lecteur monté ou [chargez-le](managing-assets-touch-ui.md#uploading-assets) dans le référentiel [!DNL Experience Manager]
 1. Une fois le workflow terminé, accédez à la page des détails de la ressource. Les références aux [!DNL Experience Manager] les ressources sont répertoriées sous **[!UICONTROL Dépendances]** dans le **[!UICONTROL Références]** colonne .
 
@@ -49,7 +53,7 @@ Les ressources référencées existent déjà dans [!DNL Experience Manager] Res
 
 >[!NOTE]
 >
->Si le serveur InDesign est soumis à un proxy, l’aperçu des fichiers InDesign est intégré à leurs métadonnées XMP. Dans ce cas, l’extraction de miniature n’est pas explicitement requise. Toutefois, si le serveur InDesign n’est pas soumis à un proxy, les miniatures doivent être explicitement extraites pour les fichiers InDesign.
+>Si le serveur d’InDesign est en proxy, l’aperçu des fichiers d’InDesign est incorporé dans leurs métadonnées XMP. Dans ce cas, l’extraction de miniature n’est pas explicitement requise. Cependant, si le serveur d’InDesign n’est pas en proxy, les miniatures doivent être explicitement extraites pour les fichiers d’InDesign.
 
 Lorsqu’un fichier INDD est chargé, les références sont récupérées en interrogeant des ressources présentant les propriétés `xmpMM:InstanceID` et `xmpMM:DocumentID` dans le référentiel.
 
@@ -60,9 +64,9 @@ Cette procédure est similaire à [Ajout de ressources en tant que références 
 ### Création de références dans les ressources en exportant un fichier ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Suivez la procédure décrite à la section [Création de modèles de processus](/help/sites-developing/workflows-models.md) pour créer un nouveau workflow.
-1. Utilisez la variable [Fonctionnalité de module d’Adobe InDesign](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) pour exporter le document. Adobe InDesign peut exporter un document et les actifs liés sous la forme d’un package. Dans ce cas, le dossier exporté contient une `Links` qui contient des sous-ressources dans le fichier d’InDesign. Le dossier `Links` est présent dans le même dossier que le fichier INDD.
+1. Utilisez la variable [Fonctionnalité de module d’Adobe InDesign](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) pour exporter le document. Adobe InDesign peut exporter un document et les ressources liées sous la forme d’un package. Dans ce cas, le dossier exporté contient une `Links` qui contient des sous-ressources dans le fichier d’InDesign. Le dossier `Links` est présent dans le même dossier que le fichier INDD.
 1. Créez un fichier ZIP et chargez-le dans le référentiel [!DNL Experience Manager].
-1. Commencez le workflow de désarchivage.
+1. Démarrez le workflow de désarchivage.
 1. Une fois le workflow terminé, les références contenues dans le dossier Liens sont automatiquement référencées en tant que sous-ressources. Pour afficher la liste des ressources référencées, accédez à la page des détails de la ressource InDesign et fermez le [rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## Adobe Photoshop : Ajout de ressources en tant que références {#refps}
@@ -81,7 +85,7 @@ Cette procédure est similaire à [Ajout de ressources en tant que références 
 
 >[!NOTE]
 >
->Les ressources contenues dans des ressources composites peuvent également être référencées par ID de document et ID d’instance. Cette fonctionnalité est disponible avec les versions d’Adobe Illustrator et d’Adobe Photoshop uniquement. Pour les autres, le référencement s’effectue sur la base du chemin d’accès relatif des ressources liées dans la ressource composite principale, comme dans les versions précédentes d’AEM.
+>Les ressources contenues dans des ressources composites peuvent également être référencées par ID de document et ID d’instance. Cette fonctionnalité est disponible avec les versions d’Adobe Illustrator et d’Adobe Photoshop uniquement. Pour d’autres, le référencement est effectué sur la base du chemin relatif des ressources liées dans la ressource composite principale, comme dans les versions précédentes d’AEM.
 
 ## Création de sous-ressources {#generate-subassets}
 
@@ -115,7 +119,7 @@ Vous pouvez afficher un fichier de plusieurs pages, tel que PDF, INDD, PPT, PPTX
 
 ![Affichage et consultation des pages d’une ressource multipage](assets/view_multipage_asset_fmr.gif)
 
-S’agissant d’InDesign, vous pouvez extraire des pages à l’aide du serveur InDesign. Si les aperçus des pages sont enregistrés lors de la création du fichier InDesign, le serveur InDesign n’est pas nécessaire pour l’extraction des pages.
+Pour InDesign, vous pouvez extraire des pages à l’aide du serveur InDesign. Si les aperçus des pages sont enregistrés lors de la création du fichier d’InDesign, l’InDesign Server n’est pas nécessaire pour l’extraction de la page.
 
 Les options suivantes sont disponibles dans la barre d’outils, dans le rail de gauche, ainsi que dans les commandes de la visionneuse de page :
 

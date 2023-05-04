@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: b5d20819-3a3f-4b9e-99a3-e7ae5ae28baf
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 9%
+source-wordcount: '506'
+ht-degree: 6%
 
 ---
 
 # Sites Communities {#communities-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Cette section s’adresse à ceux qui gèrent AEM Communities et se familiarisent avec les fonctionnalités d’AEM Communities.
 
@@ -26,9 +30,9 @@ Cette section s’adresse à ceux qui gèrent AEM Communities et se familiarisen
 
 Pour une présentation et des tutoriels de prise en main, rendez-vous sur :
 
-* [Présentation d’AEM Communities](overview.md)
+* [Présentation d’AEM Communities](overview.md)
 * [Prise en main d’AEM Communities](getting-started.md)
-* [Prise en main d’AEM Communities pour l’activation](getting-started-enablement.md)
+* [Prise en main d’AEM Communities pour l’activation](getting-started-enablement.md)
 
 ## Rubriques d’administration et de configuration {#administration-and-configuration-topics}
 
@@ -78,7 +82,7 @@ L’une des principales fonctionnalités d’AEM Communities est la génération
 * [Abonnements](subscriptions.md): possibilité pour les membres d’interagir avec la communauté à l’aide de courriers électroniques externes
 * [Messagerie](messaging.md): possibilité pour les membres d’interagir avec la communauté à l’aide de messages internes
 
-### Fonctionnalités d’activation {#enablement-features}
+### Fonctions d’activation {#enablement-features}
 
 * [Configuration de l’activation](enablement.md): informations nécessaires pour configurer correctement les fonctions d’activation
 * [Configuration d’Analytics](analytics.md): informations nécessaires pour activer les fonctionnalités Adobe Analytics for Communities
@@ -98,7 +102,7 @@ Il est important d’installer la dernière version de Communities sur la platef
 
 Consultez la page de déploiement pour obtenir d’autres informations spécifiques à Communities, telles que [Mise à niveau](upgrade.md), [Dispatcher](dispatcher.md) et [Réplication](deploy-communities.md#replication-agents-on-author).
 
-## Documentation sur les communautés associée {#related-communities-documentation}
+## Documentation sur les communautés connexes {#related-communities-documentation}
 
 * Visite [Déploiement de communautés](deploy-communities.md) pour en savoir plus sur les déploiements recommandés.
 

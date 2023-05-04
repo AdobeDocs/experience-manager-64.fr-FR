@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: 2d0154b3-4cd7-439a-869d-cb116f60b69d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 4%
+source-wordcount: '980'
+ht-degree: 5%
 
 ---
 
 # Consoles de gestion des membres et des groupes {#members-groups-management-consoles}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
@@ -108,7 +112,7 @@ Le membre peut modifier son adresse email lors de la mise à jour de son profil.
 (
 *facultatif*) Effectuez une sélection parmi les groupes de membres existants pour ajouter le membre à ce groupe.
 
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ### GÉNÉRAL - Paramètres du compte {#general-account-settings}
 
@@ -196,7 +200,7 @@ Les champs requis pour créer un groupe de membres côté publication sont les s
 (
 *facultatif*) Sélectionnez les membres côté publication à inclure en tant que membres initiaux du groupe.
 
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ## Administrateurs autorisés {#authorized-administrators}
 

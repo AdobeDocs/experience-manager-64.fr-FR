@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
 role: Admin
 exl-id: 1dfb55c2-41cb-445f-9bf8-f12ab6b8e9d8
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 5%
+source-wordcount: '1127'
+ht-degree: 4%
 
 ---
 
 # Configuration MySQL pour les fonctionnalités d’activation {#mysql-configuration-for-enablement-features}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 MySQL est une base de données relationnelle principalement utilisée pour le suivi SCORM et les données de création de rapports pour les ressources d’activation. Il comprend des tableaux pour d’autres fonctionnalités telles que le suivi de la mise en pause/reprise vidéo.
 
@@ -79,11 +83,11 @@ Lorsque MySQL Workbench est lancé pour la première fois, sauf s’il est déj�
 
 1. Sélectionnez l’icône &quot;+&quot; à droite de `MySQL Connections`.
 1. Dans la boîte de dialogue `Setup New Connection`, saisissez les valeurs appropriées à votre plateforme à des fins de démonstration, avec l’instance d’AEM de création et MySQL sur le même serveur :
-   * Nom de la connexion: `Enablement`
+   * Nom de la connexion : `Enablement`
    * Méthode de connexion : `Standard (TCP/IP)`
-   * Nom d’hôte: `127.0.0.1`
-   * Nom d’utilisateur: `root`
-   * Password: `no password by default`
+   * Nom d’hôte : `127.0.0.1`
+   * Nom d’utilisateur : `root`.
+   * Mot de passe : `no password by default`.
    * Schéma par défaut : `leave blank`
 1. Sélectionner `Test Connection` pour vérifier la connexion au service MySQL en cours d’exécution
 
@@ -201,7 +205,7 @@ Lorsque MySQL s’exécute sur un serveur différent de l’AEM, le nom d’hôt
    * **[!UICONTROL Nom d’utilisateur]**: Racine ou saisissez le nom d’utilisateur configuré pour le serveur MySQL, si ce n’est &quot;root&quot;
    * **[!UICONTROL Mot de passe]**: Effacez ce champ si aucun mot de passe n’est défini pour MySQL. Sinon, saisissez le mot de passe configuré pour le nom d’utilisateur MySQL.
    * **[!UICONTROL Nom de la source de données]**: Nom saisi pour la variable [Connexion MySQL](#new-connection-settings), par exemple, &quot;activation&quot;
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ## Configurer le score {#configure-scorm}
 
@@ -229,8 +233,8 @@ Lorsque MySQL s’exécute sur un serveur différent de l’AEM, le nom d’hôt
 * Concernant le paramètre suivant :
    * **[!UICONTROL Mot de passe de l’utilisateur Scorm]**: NE PAS MODIFIER
 
-      usage interne uniquement. Il s’agit pour un utilisateur du service spécial utilisé par AEM Communities pour communiquer avec le moteur de score.
-* Sélectionnez **[!UICONTROL Enregistrer]**
+      Pour une utilisation interne uniquement. Il s’agit pour un utilisateur du service spécial utilisé par AEM Communities pour communiquer avec le moteur de score.
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ### Adobe du filtre CSRF Granite {#adobe-granite-csrf-filter}
 
@@ -245,4 +249,4 @@ Pour que les cours d’activation fonctionnent correctement dans tous les naviga
    ![chlimage_1-338](assets/chlimage_1-338.png)
 * Sélectionnez la `[+]` pour ajouter un agent utilisateur sécurisé
 * Enter `Mozilla/*`
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.

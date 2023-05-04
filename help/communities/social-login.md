@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 role: Admin
 exl-id: 85dcae2f-0773-4867-a24c-056bd2f5585e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2820'
+source-wordcount: '2856'
 ht-degree: 2%
 
 ---
 
 # Connexion aux réseaux sociaux avec Facebook et Twitter {#social-login-with-facebook-and-twitter}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 La connexion à Social permet de proposer à un visiteur du site l’option de connexion à l’aide de son compte Facebook ou Twitter. Par conséquent, inclure les données Facebook ou Twitter autorisées dans leur profil de membre AEM.
 
@@ -110,7 +114,7 @@ Le [Adobe de l’application OAuth Granite et du fournisseur](#adobe-granite-oau
 1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**. Sélectionnez votre contexte et modifiez les propriétés. Activez les configurations cloud si elles ne sont pas encore activées.
 
    ![config-properties](assets/config-propertiespng.png)
-   * Pour plus d’informations, consultez la documentation relative au [](/help/sites-administering/configurations.md)Navigateur de configuration.
+   * Pour plus d’informations, consultez la [documentation relative au Navigateur de configurations](/help/sites-administering/configurations.md).
 
 1. Créez/modifiez la configuration du service cloud Facebook.
 
@@ -186,7 +190,7 @@ Si des modifications sont nécessaires, sur chaque instance de publication AEM :
       * name
       * first_name
       * last_name
-      * lien
+      * link
       * paramètres régionaux
       * picture
       * timezone
@@ -215,10 +219,10 @@ Une application Twitter configurée est requise pour activer la connexion social
 
 Suivez les dernières instructions pour créer une application Twitter à l’adresse [https://apps.twitter.com](https://apps.twitter.com/).
 
-En général :
+En général :
 
 1. Saisissez un *Nom* qui identifiera votre application Twitter aux utilisateurs de votre site web.
-1. Saisissez une *description.*
+1. Saisissez un *Description.*
 1. Pour *site web* - saisissez https://&lt;server>/.
 1. Pour *URL de callback* - saisissez https://&lt;server>/.
 
@@ -259,7 +263,7 @@ Le [Adobe de l’application OAuth Granite et du fournisseur](#adobe-granite-oau
 1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**. Sélectionnez votre contexte et modifiez les propriétés. Activez les configurations cloud si elles ne sont pas encore activées.
 
    ![twitterconfigpropng](assets/twitterconfigproppng.png)
-   * Pour plus d’informations, consultez la documentation relative au [](/help/sites-administering/configurations.md)Navigateur de configuration.
+   * Pour plus d’informations, consultez la [documentation relative au Navigateur de configurations](/help/sites-administering/configurations.md).
 
 1. Créez/modifiez la configuration du service cloud Twitter.
 
@@ -371,7 +375,7 @@ Pour activer le gestionnaire d’authentification lors de la publication, ouvrez
 Par exemple, http://localhost:4503/system/console/configMgr
 * Localiser `Adobe Granite OAuth Authentication Handler`
 * Sélectionnez cette option pour ouvrir la configuration à modifier.
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ![chlimage_1-489](assets/chlimage_1-489.png)
 

@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 exl-id: bdf91013-2136-464a-a637-a3047144ec98
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1262'
 ht-degree: 3%
 
 ---
 
 # Expérience du site publié {#experience-the-published-site}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 
 **[⇐ Créer et attribuer des ressources d’activation](resource.md)**
@@ -223,7 +227,7 @@ Notez qu’il est probablement trop tôt pour afficher les données d’Adobe An
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
 
-### Console Rapports  {#reports-console}
+### Console Rapports {#reports-console}
 
 La console Rapports permet de générer des rapports sur les
 

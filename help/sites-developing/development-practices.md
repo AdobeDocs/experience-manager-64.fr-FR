@@ -1,7 +1,7 @@
 ---
-title: Meilleures pratiques en matière de développement
+title: Meilleures pratiques de développement
 seo-title: Development Practices
-description: Meilleures pratiques de développement dans AEM
+description: Bonnes pratiques pour le développement sur AEM
 seo-description: Best practices for developing on AEM
 uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
 contentOwner: User
@@ -10,31 +10,35 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 exl-id: 32fb6479-ae53-4bb3-8827-db15d7f5705e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 100%
+source-wordcount: '665'
+ht-degree: 78%
 
 ---
 
-# Meilleures pratiques en matière de développement{#development-practices}
+# Meilleures pratiques de développement{#development-practices}
 
-## Travailler selon une « définition de fini » (DoD) {#work-according-to-a-definition-of-done}
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Chaque équipe possède une définition différente du concept de « fini » ; c’est ce que l’on désigne en anglais sous le nom de « Definition of Done » (DoD). Cependant, il est essentiel d’en établir une et de s’assurer qu’une story répond aux critères définis avant d’être acceptée.
+## Travail selon une définition de Terminé {#work-according-to-a-definition-of-done}
 
-Voici un aperçu des critères généralement définis par les équipes :
+Chaque équipe a une définition différente de ce que signifie &quot;fait&quot;, mais il est important d’en avoir une et de s’assurer qu’une histoire répond aux critères définis avant d’être acceptée.
 
-* Code examiné pour le formatage
-* Ajout de commentaires/JavaDoc
-* Respect des niveaux de couverture des tests requis
-* Réussite des tests unitaires et d’intégration
-* Validation dans l’environnement QA
-* Mise en œuvre de la localisation
+Voici quelques critères généralement spécifiés par les équipes :
 
-En l’absence de DoD bien définie, il est facile de se retrouver dans une situation dans laquelle de nombreuses choses sont faites à moitié, mais où rien n’est réellement terminé.
+* Code révisé pour la mise en forme
+* Comments/Javadoc ajouté
+* Respecte les niveaux de couverture de test requis
+* Effectue les tests d’unité et d’intégration
+* Validé dans l’environnement d’assurance qualité
+* Localisation implémentée
 
-### Définition et respect des conventions de codage et de formatage {#define-and-adhere-to-coding-and-formatting-conventions}
+Sans un DoD bien défini, il est facile de se retrouver dans une situation où beaucoup de choses sont à moitié faites et où rien n&#39;est vraiment complet.
+
+### Définition et conformité aux conventions de codage et de formatage {#define-and-adhere-to-coding-and-formatting-conventions}
 
 Les espaces blancs et les niveaux d’indentation sont des éléments qui peuvent paraître secondaires. Cependant, disposer d’un code bien formaté améliore considérablement la lisibilité et la facilité de maintenance. Les conventions doivent être examinées et adoptées en équipe, puis appliquées dans le code.
 
@@ -44,9 +48,9 @@ Le temps nécessaire pour tester une implémentation de projet augmente à mesur
 
 Les développeurs doivent recourir au développement piloté par les tests (TDD), en écrivant les tests unitaires défaillants avant le code de production qui répondra à leurs besoins. Le contrôle qualité doit créer un ensemble automatisé de tests d’acceptation pour s’assurer que le système fonctionne comme prévu à un niveau élevé.
 
-Il existe des structures personnalisées, comme Jackalope et Prosper, pour faciliter la simulation d’API JCR afin de garantir la productivité des développeurs lors de la création de tests unitaires.
+Il existe des frameworks personnalisées, comme Jackalope et Prosper, pour faciliter la simulation d’API JCR afin de garantir la productivité des développeurs lors de la création de tests unitaires.
 
-### Un système toujours prêt pour la démo {#stay-demo-ready}
+### Rester prêt pour la démonstration {#stay-demo-ready}
 
 Le système doit être disponible à des fins de démonstration à la fin de chaque itération. En maintenant le système dans cet état, l’équipe se trouvera toujours à une itération de la mise en production. Cela permettra, en outre, de maintenir la dette technique à un niveau gérable.
 
@@ -56,9 +60,9 @@ La mise en œuvre d’un environnement d’intégration continue vous permet d�
 
 ### Assurer un cycle de développement rapide tout en conservant des temps de génération courts {#keep-the-development-cycle-fast-by-keeping-build-times-low}
 
-Si l’exécution de tests unitaires demande trop de temps, les développeurs éviteront de les exécuter et ils perdront leur intérêt. Si la création et le déploiement de code demandent beaucoup de temps, ses opérations seront exécutées moins souvent. Veiller à ce que la génération ne demande pas trop temps doit être une priorité, de sorte que le temps consacré à la couverture de test et à l’infrastructure CI constitue toujours un facteur de productivité accrue pour l’équipe.
+Si l’exécution de tests unitaires demande trop de temps, les développeurs éviteront de les exécuter et ils perdront leur intérêt. Si la création et le déploiement de code demandent beaucoup de temps, ses opérations seront exécutées moins souvent. Veiller à ce que la génération ne demande pas trop de temps doit être une priorité, de sorte que le temps consacré à la couverture de test et à l’infrastructure CI constitue toujours un facteur de productivité accrue pour l’équipe.
 
-### Optimiser Sonar et d’autres outils d’analyse de code statique, et agir sur leurs rapports {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
+### Optimiser Sonar et d’autres outils d’analyse de code statique, et agir en fonction de leurs rapports {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
 Les outils d’analyse de code peuvent se révéler très utiles, mais à la seule condition que leurs rapports débouchent sur une action de la part de l’équipe de développement. Si l’analyse fournie par ces outils n’est pas optimisée, les recommandations formulées ne seront pas pertinentes et leur intérêt sera moindre.
 
@@ -68,4 +72,4 @@ Les boy-scouts ont une règle : « Laissons (ce monde) dans un meilleur état 
 
 ### Éviter la mise en œuvre de fonctionnalités YAGNI {#avoid-implementing-yagni-features}
 
-Les fonctionnalités YAGNI (qui est acronyme anglais de « You Aren’t Gonna Need It », qui peut se traduire par « Vous n’en aurez pas besoin ») sont des éléments qui sont implémentés en prévision de leur utilité future, bien qu’ils ne soient pas nécessaires actuellement. Idéalement, il convient d’implémenter l’élément le plus simple qui fonctionnera aujourd’hui et procéder à un réusinage de code (refactoring) continu pour s’assurer que l’architecture du système évolue avec les exigences au fil du temps. Cela permet de se concentrer sur ce qui importe vraiment, et d’éviter la surcharge de code et de fonctionnalités.
+Les fonctionnalités YAGNI (« You Aren’t Gonna Need It », soit « Vous n’en aurez pas besoin ») sont des éléments qui sont implémentés en prévision de leur utilité future, bien qu’ils ne soient pas nécessaires actuellement. Idéalement, il convient d’implémenter l’élément le plus simple qui fonctionnera aujourd’hui et procéder à un réusinage de code (refactoring) continu pour s’assurer que l’architecture du système évolue avec les exigences au fil du temps. Cela permet de se concentrer sur ce qui importe vraiment, et d’éviter la surcharge de code et de fonctionnalités.

@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 role: Developer
 exl-id: 902fc62b-262e-4eb4-b580-dbfbf4344fa6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1908'
-ht-degree: 99%
+source-wordcount: '1944'
+ht-degree: 97%
 
 ---
 
 # Assembler des documents à l’aide de la numérotation Bates {#assembling-documents-using-bates-numbering}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez assembler des documents PDF qui contiennent des identifiants de page uniques à l’aide de la numérotation Bates. La *numérotation Bates* est une méthode d’application d’identifiants uniques à un lot de documents associés. Chaque page du document (ou ensemble de documents) se voit attribuer un numéro Bates qui identifie la page de manière unique. Par exemple, des documents d’entreprise contenant une nomenclature et liés à la production d’un assemblage peuvent contenir un identifiant. Un numéro Bates contient une valeur numérique incrémentée séquentiellement et optionnellement un préfixe et un suffixe. La chaîne préfixe+numérique+suffixe est appelée *modèle bates*.
 

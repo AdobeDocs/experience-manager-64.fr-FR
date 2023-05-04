@@ -7,14 +7,18 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 7d2cf3d6-0dd3-4ce2-be9e-5d8b65a9edab
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 99%
+source-wordcount: '1377'
+ht-degree: 97%
 
 ---
 
 # Utilisation de la réindexation hors ligne pour réduire les temps d’arrêt pendant une mise à niveau {#offline-reindexing-to-reduce-downtime-during-upgrades}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#introduction}
 
@@ -178,7 +182,7 @@ Il est recommandé de cloner le système d’exploitation et de créer l’index
 
 ### Préparation d’un runbook et exécution de tests {#prepare-a-runbook-and-trial-run}
 
-Il est recommandé de préparer un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) et d’effectuer quelques tests avant d’exécuter la mise à niveau en exploitation.
+Il est recommandé de préparer un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=fr#building-the-upgrade-and-rollback-runbook) et d’effectuer quelques tests avant d’exécuter la mise à niveau en exploitation.
 
 ### Mode Traversée de documents avec l’indexation hors ligne {#doc-traversal-mode-with-offline-indexing}
 

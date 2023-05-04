@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 role: Developer
 exl-id: ee8f5f16-218a-41eb-be42-fda4537b2b4e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 100%
+source-wordcount: '464'
+ht-degree: 93%
 
 ---
 
 # Démarrage rapide de l’API Java (SOAP) LiveCycleProcess {#livecycleprocess-java-api-soap-quick-start}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le démarrage rapide de l’API Java (SOAP) est disponible pour les processus. Une *instance de processus* est une occurrence d’un processus spécifique qui a été lancé par une méthode d’invocation telle que l’API d’invocation ou depuis Workspace.
 

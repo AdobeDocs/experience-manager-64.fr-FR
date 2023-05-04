@@ -10,20 +10,24 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 exl-id: 55aa015e-e0e4-411e-8e28-75006ae3090b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 12%
+source-wordcount: '305'
+ht-degree: 6%
 
 ---
 
 # Notions fondamentales sur les graphiques sociaux {#social-graph-essentials}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 La possibilité pour un membre de la communauté de suivre [activités](essentials-activities.md) et à suivre est établi par le biais de deux composants :
 
 Le `follow`doit être associé à une autre ressource. Cette association est déjà établie pour les membres de communautés existants et les fonctionnalités d’une [site communautaire](overview.md#communitiessites).
 
-Le `following`component liste les membres qui suivent le membre actuel ou qui sont suivis par le membre actuel. Ce graphique social des relations entre les membres est inclus dans le profil d’utilisateur établi pour un site de communauté.
+Le `following`component liste les membres qui suivent le membre actuel ou qui sont suivis par le membre actuel. Ce graphique social des relations entre les membres est inclus dans le profil utilisateur établi pour un site communautaire.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
@@ -56,12 +60,12 @@ Le `following`component liste les membres qui suivent le membre actuel ou qui so
    <td>Voir <a href="socialgraph.md">Utilisation de Social Graph</a></td> 
   </tr>
   <tr>
-   <td><strong> facultatif<br /> property</strong></td> 
+   <td><strong> propriété <br /> facultative</strong></td> 
    <td>
     <ul> 
-     <li>Nom: <strong><code>outgoing</code></strong></li> 
+     <li>Nom : <strong><code>outgoing</code></strong></li> 
      <li>Type : booléen</li> 
-     <li>Valeur : <br /> 
+     <li>Valeur:<br /> 
       <ul> 
        <li><i>true </i>- le <code>following</code> liste les membres qui sont actuellement membres du membre connecté. <code>follows</code></li> 
        <li><i>false </i>- le <code>following</code> Le composant liste les membres qui <code>follow </code>le membre actuellement connecté</li> 

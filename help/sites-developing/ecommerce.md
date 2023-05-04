@@ -1,7 +1,7 @@
 ---
 title: eCommerce
 seo-title: eCommerce
-description: La structure d’intégration comprend une couche d’intégration avec une API
+description: La structure d’intégration comprend une couche d’intégration avec une API.
 seo-description: The integration framework includes an integration layer with an API
 uuid: 39a13c2f-4478-4030-8fe4-03f5b271d04f
 contentOwner: Guillaume Carlino
@@ -10,19 +10,23 @@ content-type: reference
 topic-tags: platform
 discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
 exl-id: a5f36d26-1be4-4e06-9237-3943e903d850
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 72%
+source-wordcount: '211'
+ht-degree: 45%
 
 ---
 
 # eCommerce{#ecommerce}
 
-La structure d’intégration comprend une couche d’intégration avec une API. Cela vous permet de :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-* connecter un système eCommerce et d’extraire les données produit vers AEM ;
-* créer des composants AEM afin de disposer de fonctionnalités de commerce indépendantes du moteur eCommerce spécifique.
+La structure d’intégration comprend une couche d’intégration avec une API. Vous pouvez ainsi :
+
+* connecter un système eCommerce et extraire des données de produit dans AEM
+* créer des composants AEM pour les fonctionnalités commerciales, indépendamment du moteur eCommerce spécifique ;
 
 Pour en savoir plus, voir :
 
@@ -35,13 +39,13 @@ Pour en savoir plus, voir :
 
 >[!NOTE]
 >
->Pour utiliser le framework d’intégration avec les prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, reportez-vous à [Déploiement d’e-commerce](/help/sites-deploying/ecommerce.md).
+>Pour utiliser le framework d’intégration avec les prestataires eCommerce externes, vous devez tout d’abord installer les packages nécessaires. Pour plus d’informations, reportez-vous à [Déploiement d’e-commerce](/help/sites-deploying/ecommerce.md).
 >
 >Pour plus d’informations sur les concepts et l’administration des implémentations eCommerce, consultez [Administration d’eCommerce](/help/sites-administering/ecommerce.md).
 
-## Documentation d’API {#api-documentation}
+## Documentation API {#api-documentation}
 
-L’API eCommerce est fournie par les modules :
+L’API eCommerce est fournie par les modules :
 
 `com.adobe.cq.commerce.*`
 

@@ -5,14 +5,18 @@ uuid: e709871b-c04c-43bb-a7d0-45e89fbd3d44
 content-type: reference
 discoiquuid: 83bace08-1d4f-4192-a634-c7c4879963d8
 exl-id: ce5300ce-03f4-4e7b-bc5b-01a9968ebe06
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 76%
+source-wordcount: '580'
+ht-degree: 69%
 
 ---
 
 # Programme d’installation du correctif JEE AEM Forms {#aem-forms-jee-patch-installer}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -28,7 +32,7 @@ Le programme d’installation du correctif JEE AEM 6.4 Forms comprend tous les 
 
 ## Installation et configuration du correctif {#installing-and-configuring-the-patch}
 
-1. Effectuez une sauvegarde du dossier de déploiement &lt;*AEM_forms_root*>/. Il est nécessaire si vous décidez de désinstaller le Quick Fix.
+1. Effectuez une sauvegarde du dossier de déploiement &lt;*AEM_forms_root*>/. Cela est nécessaire si vous décidez de désinstaller le Quick Fix.
 1. Arrêtez le serveur d’applications.
 1. Extrayez le fichier d’archive du programme d’installation de correctif sur votre disque dur.
 1. Dans le répertoire, dont le nom dépend du système d’exploitation que vous utilisez :
@@ -36,12 +40,13 @@ Le programme d’installation du correctif JEE AEM 6.4 Forms comprend tous les 
    * **Windows**
 
 
-Accédez au répertoire approprié sur le support d’installation ou dans le dossier de votre disque dur dans lequel vous avez copié le programme d’installation, puis double-cliquez sur le 
-`aemforms64_cfp_install.exe` approuvé.
+Accédez au répertoire approprié sur le support ou dossier d’installation de votre disque dur dans lequel le programme d’installation a été copié, puis cliquez deux fois sur le fichier 
+`aemforms64_cfp_install.exe`.
 
       * (Windows 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
-   * **Linux, Solaris, AIX** Accédez au répertoire approprié, puis, à partir d’une invite de commande, saisissez 
+   * **Linux, Solaris, AIX**
+Accédez au répertoire approprié, puis, à l’invite de commande, saisissez 
 `./aem64_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
@@ -51,9 +56,9 @@ Accédez au répertoire approprié sur le support d’installation ou dans le do
          ```
          AIX/Disk1/InstData/VM
          ```
-   Un assistant s’ouvre alors et vous guide tout au long de l’installation.
+   Vous lancez ainsi un assistant d’installation qui vous guide tout au long de l’installation.
 
-1. Dans le panneau Introduction, cliquez sur **[!UICONTROL Suivant]**.
+1. Dans l’écran d’introduction, cliquez sur **[!UICONTROL Suivant]**.
 1. Dans l’écran Choisir le répertoire d’installation, vérifiez que l’emplacement par défaut affiché correspond à votre installation ou cliquez sur **[!UICONTROL Parcourir]** pour sélectionner le dossier dans lequel AEM Forms est actuellement installé, puis cliquez sur **[!UICONTROL Suivant]**.
 
 1. Lisez le résumé du correctif Quick Fix, puis cliquez sur **[!UICONTROL Suivant]**.
@@ -75,7 +80,7 @@ Accédez au répertoire approprié sur le support d’installation ou dans le do
 
    * [Installation et déploiement d’AEM Forms pour JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_64_fr)
    * [Installation et déploiement d’AEM Forms pour WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_fr)
-   * [Installation et déploiement d’AEM Forms pour WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_fr)
+   * [Installation et déploiement d’AEM forms pour WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_fr)
 
 1. (JBoss uniquement) Après avoir installé le correctif et configuré le serveur, supprimez les répertoires tmp et work du serveur d’applications JBoss.
 

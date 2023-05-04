@@ -10,20 +10,24 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 4868daad-0f3e-48cb-9b20-08dee270e74e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 100%
+source-wordcount: '878'
+ht-degree: 80%
 
 ---
 
-# Gestionnaire d’authentification SAML 2.0{#saml-authentication-handler}
+# Gestionnaire d’authentification SAML 2.0 {#saml-authentication-handler}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 AEM est livré avec un gestionnaire d’authentification [SAML](http://saml.xml.org/saml-specifications). Ce gestionnaire fournit la prise en charge du protocole de requête d’authentification [SAML](http://saml.xml.org/saml-specifications) 2.0 (profil Web-SSO) à l’aide de la liaison `HTTP POST`.
 
-Il prend en charge :
+Il prend en charge :
 
-* la signature et le chiffrement des messages ;
+* signature et cryptage des messages
 * la création automatique d’utilisateurs ;
 * la synchronisation des groupes avec les groupes existants dans AEM.
 * Authentification initiée par le fournisseur et le fournisseur d’identité
@@ -34,18 +38,18 @@ Ce gestionnaire stocke le message de réponse SAML chiffré dans le nœud utilis
 >
 >Consultez [une démonstration de l’intégration d’AEM et de SAML](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html).
 >
->Pour lire un article de la communauté de bout en bout, cliquez sur [Intégration de SAML avec Adobe Experience Manager](https://helpx.adobe.com/fr/experience-manager/using/aem63_saml.html).
+>Pour lire un article de la communauté de bout en bout, cliquez sur : [Intégration de SAML à Adobe Experience Manager](https://helpx.adobe.com/fr/experience-manager/using/aem63_saml.html).
 
-## Configuration du gestionnaire d’authentification SAML 2.0 {#configuring-the-saml-authentication-handler}
+## Configurer le gestionnaire d’authentification SAML 2.0 {#configuring-the-saml-authentication-handler}
 
 La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder à la configuration de gestionnaire d’authentification [SAML](http://saml.xml.org/saml-specifications) 2.0 appelée **Gestionnaire d’authentification SAML 2.0 Adobe Granite**. Les propriétés suivantes peuvent être définies.
 
 >[!NOTE]
 >
->Le gestionnaire d’authentification SAML 2.0 est désactivé par défaut. Vous devez définir au moins une des propriétés suivantes pour activer le gestionnaire :
+>Le gestionnaire d’authentification SAML 2.0 est désactivé par défaut. Pour activer le gestionnaire, vous devez définir au moins l’une des propriétés suivantes :
 >
 >* L’URL de publication du fournisseur d’identité.
->* L’ID d’entité du fournisseur.
+>* Identifiant d’entité du fournisseur de services.
 >
 
 
@@ -57,7 +61,7 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 
 **Classements des services** Valeur de classement de service de structure OSGi pour indiquer l’ordre dans lequel appeler ce service. Il s’agit d’un nombre entier, et les valeurs les plus élevées indiquent une priorité plus élevée.
 
-**Alias de certificat IDP** L’alias du certificat IdP dans le TrustStore global. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé. Voir le chapitre Ajout du certificat IdP au TrustStore AEM ci-dessous sur la façon de le configurer.
+**Alias de certificat IDP** L’alias du certificat IdP dans le TrustStore global. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé. Consultez le chapitre &quot;Ajout du certificat IdP à l’AEM TrustStore&quot; ci-dessous sur la manière de le configurer.
 
 **URL du fournisseur d’identité** URL de l’IDP où la requête d’authentification SAML doit être envoyée. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé.
 
@@ -92,14 +96,14 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 
 **Appartenance à un groupe** Nom du saml:Attribute contenant une liste de groupes CRX auxquels cet utilisateur doit être ajouté.
 
-## Ajout du certificat IdP au TrustStore AEM {#add-the-idp-certificate-to-the-aem-truststore}
+## Ajoutez le certificat IdP au TrustStore AEM {#add-the-idp-certificate-to-the-aem-truststore}
 
-Les assertions SAML sont signées et peuvent éventuellement être chiffrées. Pour que cela fonctionne, vous devez fournir au moins le certificat public de l’IdP dans le référentiel. Pour ce faire, vous devez :
+Les assertions SAML sont signées et peuvent éventuellement être chiffrées. Pour que cela fonctionne, vous devez fournir au moins le certificat public de l’IdP dans le référentiel. Pour ce faire, vous devez :
 
 1. Accédez à *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*.
 1. Appuyez sur **[!UICONTROL Créer un lien TrustStore]**.
-1. Saisissez le mot de passe du TrustStore et appuyez sur **[!UICONTROL Enregistrer]**.
-1. Cliquez sur **[!UICONTROL Gérer TrustStore]**.
+1. Saisissez le mot de passe du TrustStore, puis appuyez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur **[!UICONTROL Gestion de TrustStore]**.
 1. Téléchargez le certificat IdP.
 1. Notez l’alias du certificat. L’alias est **[!UICONTROL admin#1436172864930]** dans l’exemple ci-dessous.
 
@@ -120,19 +124,19 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 >Les étapes suivantes ne sont nécessaires que si le gestionnaire doit pouvoir signer ou déchiffrer des messages.
 
 1. Téléchargez le fichier de clé privée en cliquant sur **Sélectionner le fichier de clé privée**. La clé doit être au format PKCS#8 avec le codage DER.
-1. Téléchargez le fichier de certificat en cliquant sur **Sélectionner les fichiers de la chaîne de certificats**.
-1. Attribuez un alias, comme illustré ci-dessous :
+1. Téléchargez le fichier de certificat en cliquant sur **Sélectionner les fichiers de chaîne de certificats**.
+1. Attribuez un alias, comme illustré ci-dessous :
 
    ![chlimage_1-373](assets/chlimage_1-373.png)
 
-## Configuration d’un enregistreur pour SAML {#configure-a-logger-for-saml}
+## Configuration d’un journal pour SAML {#configure-a-logger-for-saml}
 
 Vous pouvez configurer un enregistreur afin de déboguer tous les problèmes pouvant résulter d’une mauvaise configuration de SAML. Vous pouvez le faire en procédant comme suit :
 
 1. Accédez à la console web à l’adresse *http://localhost:4502/system/console/configMgr*.
 1. Recherchez et cliquez sur l’entrée nommée **Configuration de l’enregistreur de connexion Sling Apache** et cliquez dessus.
-1. Créez un enregistreur avec la configuration suivante :
+1. Créez un journal avec la configuration suivante :
 
-   * **Niveau de consignation :** débogage
-   * **Fichier journal :** logs/saml.log
-   * **Enregistreur :** com.adobe.granite.auth.saml
+   * **Niveau de journal :** Déboguer
+   * **Fichier journal :** logs/saml.log
+   * **Enregistreur :** com.adobe.granite.auth.saml

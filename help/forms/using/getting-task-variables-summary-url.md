@@ -1,7 +1,7 @@
 ---
-title: Obtention de variables de tâche dans l’URL de résumé
+title: Obtention des variables de tâche dans l’URL de résumé
 seo-title: Getting Task Variables in Summary URL
-description: Comment réutiliser les informations d’une tâche et générer une URL de résumé pour résumer ou décrire une tâche.
+description: Comment réutiliser les informations sur une tâche et générer une URL de résumé pour résumer ou décrire une tâche.
 seo-description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
 uuid: 9eab3a6a-a99a-40ae-b483-33ec7d21c5b6
 content-type: reference
@@ -9,27 +9,31 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 exl-id: f80d006b-6970-4448-aa38-3ffec8b08c18
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 91%
+source-wordcount: '468'
+ht-degree: 36%
 
 ---
 
-# Obtention de variables de tâche dans l’URL de résumé {#getting-task-variables-in-summary-url}
+# Obtention des variables de tâche dans l’URL de résumé {#getting-task-variables-in-summary-url}
 
-La page Résumé affiche des informations liées aux tâches. Cet article décrit comment vous pouvez réutiliser les informations liées aux tâches dans la page Résumé.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Dans cet exemple d’orchestration, un employé envoie un formulaire de demande de permission. Le formulaire d’application passe ensuite au responsable de l’employé pour approbation.
+La page Résumé affiche des informations liées aux tâches. Cet article décrit comment réutiliser les informations liées aux tâches dans la page de résumé.
 
-1. Créez un exemple de rendu HTML (html.esp) pour resourseType **Employees/PtoApplication**.
+Dans cet exemple d’orchestration, un employé envoie un formulaire de demande de permission. Le formulaire de demande est ensuite transmis au responsable de l’employé pour approbation.
 
-   Le rendu suppose que les propriétés suivantes sont définies sur le nœud :
+1. Création d’un exemple de moteur de rendu de HTML (html.esp) pour resourceType **Employees/PtoApplication**.
+
+   Le rendu suppose que les propriétés suivantes soient définies sur le noeud :
 
    * ename
    * empid
    * reason
-   * duration
+   * durée
 
    >[!NOTE]
    >
@@ -58,33 +62,33 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
    </html>
    ```
 
-1. Modifiez l’orchestration pour extraire les quatre propriétés à partir des données de formulaire envoyées. Créez ensuite un nœud dans CRX de type **Employees/PtoApplication**, avec les propriétés renseignées.
+1. Modifiez l’orchestration pour extraire les quatre propriétés à partir des données de formulaire envoyées. Ensuite, créez un noeud dans CRX de type **Employees/PtoApplication**, avec les propriétés renseignées.
 
-   1. Créez un processus **create PTO summary** et utilisez-le comme sous-processus avant la tâche **Affecter une tâche** dans votre orchestration.
+   1. Création d’un processus **create PTO summary** et l’utiliser comme sous-processus avant la **Assign Task** dans votre orchestration.
    1. Définissez **employeeName**, **employeeID**, **ptoReason**, **totalDays** et **nodeName** comme variables d’entrée dans votre nouveau processus. Ces variables seront transmises en tant que données de formulaire envoyées.
 
       Définissez également une variable de sortie **ptoNodePath **qui sera utilisée lors de la définition de l’URL de résumé.
 
    1. Dans le **create PTO summary** processus, utilisez la méthode **valeur définie** pour définir les détails d’entrée dans un **nodeProperty **(**nodeProps**).
 
-      Les clés de ce mappage doivent être identiques à celles définies dans votre rendu HTML à l’étape précédente.
+      Les clés de ce mappage doivent être identiques à celles définies dans votre moteur de rendu de HTML à l’étape précédente.
 
-      Ajoutez aussi une clé **sling:resourceType** avec la valeur **Employees/PtoApplication** dans le mappage.
+      Ajoutez également une **sling:resourceType** clé avec valeur **Employees/PtoApplication** sur la carte.
 
-   1. Utilisez le sous-processus **storeContent** du service **ContentRepositoryConnector** dans le processus **create PTO summary**. Ce sous-processus crée un nœud CRX.
+   1. Utilisez le sous-processus **storeContent** du service **ContentRepositoryConnector** dans le processus **create PTO summary**. Ce sous-processus crée un noeud CRX.
 
-      Il prend trois variables d’entrée :
+      Il prend trois variables d’entrée :
 
-      * **Chemin d’accès au dossier** : le chemin du dossier dans lequel le nouveau nœud CRX est créé. Définissez le chemin comme **/content**.
+      * **Chemin d’accès au dossier** : le chemin du dossier dans lequel le nouveau nœud CRX est créé. Définissez le chemin en tant que **/content**.
       * **Nom de nœud** : affectez la variable d’entrée nodeName à ce champ. Il s’agit d’une chaîne de nom de nœud unique.
-      * **Type de nœud :** définissez le type comme **nt:unstructured**. La sortie de ce processus est nodePath. Le nodePath est le chemin CRX du nœud que vous venez de créer. Le nodePath serait la dernière sortie du processus de résumé **create PTO**.
-   1. Transmettez les données de formulaire envoyées (**employeeName**, **employeeID**, **ptoReason** et **totalDays**) comme entrée du nouveau processus **create PTO summary**. Prenez la sortie comme **ptoSummaryNodePath**.
+      * **Type de nœud :** définissez le type comme **nt:unstructured**. La sortie de ce processus est nodePath. Le nodePath est le chemin CRX du nœud que vous venez de créer. Le nodePath serait la sortie finale de la variable **create PTO** processus de résumé.
+   1. Transmettre les données de formulaire envoyées (**employeeName**, **employeeID**, **ptoReason**, et **totalDays**) comme entrée du nouveau processus. **create PTO summary**. Prendre la sortie comme **ptoSummaryNodePath**.
 
 
-1. Définissez l’URL de résumé comme expression XPath contenant les détails du serveur avec **ptoSummaryNodePath**.
+1. Définissez l’URL de résumé en tant qu’expression XPath contenant les détails du serveur, ainsi que **ptoSummaryNodePath**.
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-Dans l’espace de travail AEM Forms, lorsque vous ouvrez une tâche, l’URL de résumé accède au nœud CRX et le rendu HTML affiche le résumé.
+Dans l’espace de travail AEM Forms, lorsque vous ouvrez une tâche, l’URL de résumé accède au noeud CRX et le moteur de rendu de HTML affiche le résumé.
 
-Il est possible de modifier la mise en page du résumé sans modifier le processus. Le rendu HTML affiche le résumé correctement.
+Il est possible de modifier la mise en page du résumé sans modifier le processus. Le moteur de rendu de HTML affiche le résumé de manière appropriée.

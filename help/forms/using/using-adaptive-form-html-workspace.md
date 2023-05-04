@@ -1,7 +1,7 @@
 ---
-title: Utilisation d’un formulaire adaptatif dans Workspace HTML
+title: Utiliser un formulaire adaptatif dans l’espace de travail HTML
 seo-title: Using an adaptive form in HTML Workspace
-description: Utilisation d’un formulaire adaptatif dans Workspace HTML
+description: Utiliser un formulaire adaptatif dans l’espace de travail HTML
 seo-description: Using an adaptive form in HTML Workspace
 uuid: 1ebe81ae-5c0b-4c07-8cd1-86efdf8415be
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2f514072-81d9-48de-8369-cca94a330f1d
 exl-id: 88fa9c80-4eae-4663-a6c8-abbf1921444e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 98%
+source-wordcount: '713'
+ht-degree: 56%
 
 ---
 
-# Utilisation d’un formulaire adaptatif dans Workspace HTML {#using-an-adaptive-form-in-html-workspace}
+# Utiliser un formulaire adaptatif dans l’espace de travail HTML {#using-an-adaptive-form-in-html-workspace}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 AEM Forms sur JEE offre la possibilité d’utiliser un formulaire adaptatif dans l’espace de travail HTML.
 
@@ -24,19 +28,19 @@ Comme il est possible de sélectionner un XDP pendant la conception du processus
 
 ## Expérience de conception de processus {#process-design-experience}
 
-Effectuez les opérations suivantes pour activer l’utilisation des formulaires adaptatifs dans la conception du processus :
+Pour activer l’utilisation des formulaires adaptatifs dans la conception de processus, procédez comme suit :
 
-* Dans Assign Task et Point de départ, vous pouvez rechercher une ressource de formulaire adaptatif dans le référentiel CRX lorsque vous affectez une ressource de formulaire à une tâche.
-* Dans Assign Task ou dans la feuille de propriétés Workbench du Point de départ, vous pouvez masquer la barre d’outils supérieure/globale d’un formulaire adaptatif.
-* Vous pouvez utiliser les nouveaux profils d’action pour les actions de rendu et d’envoi des formulaires adaptatifs.
+* Dans Assign Task et Point de départ, vous pouvez accéder à un actif de formulaire adaptatif dans le référentiel CRX lors de l’affectation d’un actif de formulaire à une tâche.
+* Dans la feuille de propriétés Assign Task/Start Point Workbench, vous pouvez masquer la barre d’outils supérieure/globale d’un formulaire adaptatif.
+* Vous pouvez utiliser de nouveaux profils d’action pour les actions de rendu et d’envoi dans les formulaires adaptatifs.
 
-### Exportation et importation d’applications LiveCycle {#livecycle-application-export-and-import}
+### Exportation et importation d’applications par LiveCycle {#livecycle-application-export-and-import}
 
-Les formulaires adaptatifs étant situés dans le référentiel AEM, l’exportation d’applications LiveCycle contient uniquement les références des formulaires adaptatifs utilisés. Par conséquent, l’exportation et l’importation de l’application LiveCycle est un processus en deux étapes. L’application LiveCycle comprend des définitions de processus, etc. Un module distinct contenant les formulaires adaptatifs est exporté au format ZIP à partir d’AEM. Lors de l’importation, l’application LiveCycle est importée par Workbench et les formulaires adaptatifs sont importés par AEM.
+Comme les formulaires adaptatifs se trouvent dans le référentiel AEM, l’exportation d’applications de LiveCycle contient uniquement les références des formulaires adaptatifs utilisés. Par conséquent, l’exportation et l’importation de l’application LiveCycle est un processus en deux étapes. L’application de LiveCycle comprend des définitions de processus, etc. Un package distinct contenant des formulaires adaptatifs est exporté en tant que fichier ZIP à partir d’AEM. Lors de l’importation, l’application de LiveCycle est importée via Workbench et les formulaires adaptatifs sont importés via AEM.
 
-## Expérience utilisateur de formulaire adaptatif dans Workspace HTML {#user-experience-of-adaptive-form-in-html-workspace}
+## Expérience utilisateur du formulaire adaptatif dans HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
 
-Workspace HTML fournit quelques fonctions spécifiques aux formulaires adaptatifs en plus des fonctions disponibles pour les formulaires mobiles. L’utilisateur peut ajouter des pièces jointes, enregistrer, signer, envoyer et parcourir les formulaires adaptatifs dans Workspace HTML en ouvrant une tâche ou un point de départ. Voici les caractéristiques :
+HTML Workspace fournit des contrôles spécifiques aux formulaires adaptatifs en plus des contrôles disponibles pour les formulaires mobiles. Un utilisateur peut ajouter des pièces jointes, enregistrer, signer, envoyer et parcourir les formulaires adaptatifs dans HTML Workspace lorsque l’utilisateur ouvre une tâche ou un point de départ. Voici les spécificités :
 
 1. Pour **joindre des fichiers **, utilisez Pièces jointes de tâche, comme ce fut le cas dans Mobile Forms. Le bouton Tout type de fichier de pièce jointe du formulaire adaptatif est masqué.
 
@@ -48,7 +52,7 @@ Workspace HTML fournit quelques fonctions spécifiques aux formulaires adaptatif
 
 1. **Contrôles de navigation de l’espace de travail pour les formulaires adaptatifs** : les boutons Suivant/Précédent sont disponibles ainsi que les boutons Enregistrer, Envoyer et Acheminer l’action pour un formulaire adaptatif dans l’espace de travail HTML. Cliquez sur les boutons Suivant/Précédent pour parcourir les panneaux des formulaires adaptatifs dans Workspace HTML. Les boutons Suivant/Précédent offrent une navigation approfondie et sont similaires aux commandes de navigation de la vue mobile des formulaires adaptatifs.
 
-1. **eSign et le composant Résumé du formulaire adaptatif** : le composant Résumé n’est pas opérationnel dans l’espace de travail HTML. En d’autres termes, si un formulaire adaptatif possède un composant Résumé, il n’est pas visible dans l’espace de travail. Au lieu de cliquer sur Envoi automatique dans le composant Esign, l’utilisateur de l’espace de travail clique sur Envoyer ou sur une action d’itinéraire dans Workspace HTML. Une fois le document signé, il s’affiche en tant que document signé aplati. Cliquez sur **Envoyer** ou sur une action d’itinéraire pour fermer/terminer la tâche ou sur Point de départ.
+1. **eSign et le composant Résumé du formulaire adaptatif** : le composant Résumé n’est pas opérationnel dans l’espace de travail HTML. En d’autres termes, si un formulaire adaptatif comporte un composant Résumé, il n’est pas visible dans l’espace de travail. Au lieu de l’envoi automatique dans le composant Esign, l’utilisateur de l’espace de travail clique sur Envoyer ou sur une action d’itinéraire dans HTML Workspace. Une fois le document signé, il est visible sous la forme d’un document signé aplati. Cliquez sur **Envoyer** ou une action d’itinéraire pour fermer/terminer la tâche ou le point de départ.
 
    Le document signé est récupéré à partir du serveur de services eSign et le fichier XML de données est transféré vers l’étape suivante du processus.
 
@@ -75,6 +79,6 @@ Workspace HTML fournit quelques fonctions spécifiques aux formulaires adaptatif
 
    >[!NOTE]
    >
-   >Pour en savoir plus sur la création d’un formulaire adaptatif, consultez la section [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md).
+   >Pour plus d’informations sur la création d’un formulaire adaptatif, voir [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md).
    >
    >Pour plus dʼinformations sur la création de processus, consultez la section [Créer et gérer des processus](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).

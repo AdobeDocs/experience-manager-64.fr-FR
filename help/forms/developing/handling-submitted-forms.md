@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 9d32c815-b66e-459e-bf36-c0d2e1ed707a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2890'
-ht-degree: 99%
+source-wordcount: '2926'
+ht-degree: 98%
 
 ---
 
 # Gérer des formulaires envoyés {#handling-submitted-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les applications web permettant à l’utilisateur de remplir des formulaires interactifs nécessitent que les données soient renvoyées au serveur. Le service Forms vous permet de récupérer les données que l’utilisateur a saisies dans un formulaire interactif. Une fois les données récupérées, vous pouvez les traiter pour répondre aux besoins de votre entreprise. Par exemple, vous pouvez stocker les données dans une base de données, les envoyer à une autre application ou à un autre service, les fusionner dans une conception de formulaire, les afficher dans un navigateur web, etc.
 

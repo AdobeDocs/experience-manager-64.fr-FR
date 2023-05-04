@@ -12,16 +12,20 @@ topic-tags: operations
 discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 role: Developer
 exl-id: fa543e13-f920-4b77-9762-36f115261e8c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 100%
+source-wordcount: '1681'
+ht-degree: 96%
 
 ---
 
 # Assembler des documents PDF chiffrés {#assembling-encrypted-pdf-documents}
 
-Vous pouvez chiffrer un document PDF avec un mot de passe en utilisant le service Assembler. Après le chiffrement d’un document PDF avec un mot de passe, l’utilisateur doit spécifier un mot de passe pour l’afficher dans Adobe Reader ou Acrobat. Pour chiffrer un document PDF avec un mot de passe, le document DDX doit contenir les valeurs d’élément de chiffrement requises.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Vous pouvez chiffrer un document PDF avec un mot de passe en utilisant le service Assembler. Après le chiffrement d’un document PDF avec un mot de passe, l’utilisateur doit spécifier un mot de passe pour l’afficher dans Adobe Reader ou Acrobat. Pour chiffrer un document de PDF avec un mot de passe, le document DDX doit contenir les valeurs d’élément de chiffrement requises pour chiffrer un document de PDF.
 
 Dans le cadre de cette discussion, supposons que le document DDX suivant soit utilisé.
 

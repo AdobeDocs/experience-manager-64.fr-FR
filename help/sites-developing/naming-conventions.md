@@ -10,36 +10,40 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 741043c7-2ebb-455d-8163-a246b874a7b3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 100%
+source-wordcount: '337'
+ht-degree: 45%
 
 ---
 
 # Conventions de dénomination{#naming-conventions}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Les nœuds dans le référentiel sont soumis aux conventions de dénomination de [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Toutefois, AEM impose d’autres conventions pour le nom des nœuds de page.
 
 ## Conventions de dénomination pour les pages {#naming-conventions-for-pages}
 
-Ces conventions sont mises en place à différents niveaux :
+Ces conventions de dénomination sont mises en oeuvre à différents niveaux :
 
-* JcrUtil : implémentation AEM des [utilitaires JCR](#jcr-utilities).
-* PageManager : le [Gestionnaire de pages](#page-manager) fournit des méthodes pour les opérations au niveau de la page.
-* En fonction de l’IU utilisée :
+* JcrUtil : la mise en oeuvre AEM de la [Utilitaires JCR](#jcr-utilities).
+* PageManager : la valeur [Gestionnaire de pages](#page-manager) fournit des méthodes pour les opérations au niveau de la page.
+* Selon l’interface utilisateur utilisée :
 
    * [IU tactile standard](#standard-ui)
    * [Interface utilisateur classique](#classic-ui)
 
 ### Utilitaires JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) est l’implémentation AEM des utilitaires JCR. Les mappages de caractères contrôlés et les validations suivantes se révèlent particulièrement intéressants dans le cadre de la validation des noms :
+[JcrUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) est l’implémentation AEM des utilitaires JCR. Les mappages de caractères qu’il contrôle et les validations suivantes présentent un intérêt particulier pour la validation des noms :
 
 * `isValidName`
 
    * Vérifie si le nom n’est pas vide et contient uniquement des caractères valides.
-   * Peut être utilisé pour vérifier la validité d’un nom proposé.
+   * Peut être utilisé pour vérifier si un nom proposé est valide.
 
 * `createValidName`
 
@@ -52,26 +56,26 @@ Ces conventions sont mises en place à différents niveaux :
 
 ### Interface utilisateur standard {#standard-ui}
 
-L’interface utilisateur tactile standard :
+L’IU tactile standard :
 
-* Valide le nom en fonction des restrictions imposées par PageManager dans l’une des situations suivantes :
+* Valide le nom en fonction des restrictions imposées par PageManager lorsque :
 
-   * Un titre de page est fourni pour la conversion dans le nom de nœud.
-   * Un nom de nœud explicite est fourni.
+   * un titre de page est fourni pour la conversion dans le nom de noeud.
+   * un nom de noeud explicite est fourni.
 
 ### Interface utilisateur classique {#classic-ui}
 
-L’IU classique applique des restrictions plus strictes :
+L’IU classique impose des restrictions plus strictes :
 
-* Valide le nom dans le cas d’un nom de nœud explicite dans l’une des situations suivantes :
+* Valide le nom lorsqu’un nom de noeud explicite se présente dans l’une des situations suivantes :
 
-   * Un titre de page est fourni pour la conversion dans le nom de nœud.
-   * Un nom de nœud explicite est fourni.
+   * un titre de page est fourni pour la conversion dans le nom de noeud.
+   * un nom de noeud explicite est fourni.
 
 * Caractères valides (seuls ces caractères sont effectivement valides lorsqu’une page est créée dans l’IU classique, même si `PageManagerImpl` autorise des caractères supplémentaires) :
 
-   * « a » à « z »
-   * « A » à « Z »
-   * « 0 » à « 9 »
+   * &#39;a&#39; à &#39;z&#39;
+   * &quot;A&quot; à &quot;Z&quot;
+   * &#39;0&#39; à &#39;9&#39;
    * _ (trait de soulignement)
    * `-` (tiret/moins)

@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 exl-id: 4805db0f-18d2-4bbc-a4d6-eaafa7a4c152
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 8%
+source-wordcount: '142'
+ht-degree: 9%
 
 ---
 
 # Notions fondamentales sur le contenu proposé {#featured-content-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Cette page fournit les informations essentielles pour utiliser le contenu présenté.
 

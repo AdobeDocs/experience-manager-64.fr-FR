@@ -1,7 +1,7 @@
 ---
-title: Configuration du mot de passe d’administrateur sur l’installation
+title: Configurer le mot de passe d’administrateur sur l’installation
 seo-title: Configure the Admin Password on Installation
-description: Découvrez comment modifier le mot de passe d’administrateur sur l’installation AEM.
+description: Découvrez comment modifier le mot de passe administrateur lors de l’installation d’AEM.
 seo-description: Learn how to change the Admin Password on AEM Installation.
 uuid: 06da9890-ed63-4fb6-88d5-fd0e16bc4ceb
 contentOwner: User
@@ -10,46 +10,50 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 00806e6e-3578-4caa-bafa-064f200a871f
 exl-id: 6dd289ee-13fd-46be-82cd-aa69852397c9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 96%
+source-wordcount: '342'
+ht-degree: 33%
 
 ---
 
-# Configuration du mot de passe d’administrateur sur l’installation{#configure-the-admin-password-on-installation}
-
-## Présentation {#overview}
-
-Depuis la version 6.3, AEM permet de définir le mot de passe d’administrateur à l’aide de la ligne de commande lors de l’installation d’une nouvelle instance.
-
-Avec les versions antérieures d’AEM, le mot de passe du compte administrateur, ainsi que le mot de passe pour d’autres consoles, devaient être modifiés après l’installation.
-
-Cette fonction ajoute la capacité à définir un nouveau mot de passe d’administrateur pour le référentiel et le moteur de servlets pendant l’installation d’une instance AEM, éliminant ainsi la nécessité de le créer manuellement par la suite.
+# Configurer le mot de passe d’administrateur sur l’installation{#configure-the-admin-password-on-installation}
 
 >[!CAUTION]
 >
->Notez que la fonction ne couvre pas la console Felix, dont le mot de passe doit être modifié manuellement. Pour plus d’informations, voir la section [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-## Comment puis-je l’utiliser ? {#how-do-i-use-it}
+## Présentation {#overview}
 
-Cette fonction se déclenche automatiquement si vous choisissez d’installer AEM via la ligne de commande, au lieu de double-cliquer sur le fichier JAR à partir d’un explorateur de système de fichiers.
+Depuis la version 6.3, AEM permet de définir le mot de passe administrateur à l’aide de la ligne de commande lors de l’installation d’une nouvelle instance.
 
-La syntaxe générale pour exécuter une instance AEM à partir de la ligne de commande est la suivante :
+Avec les versions précédentes d’AEM, le mot de passe du compte administrateur, ainsi que le mot de passe de diverses autres consoles, devaient être modifiés après l’installation.
+
+Cette fonctionnalité ajoute la possibilité de définir un nouveau mot de passe administrateur pour le référentiel et le moteur de servlet lors de l’installation d’une instance AEM, éliminant ainsi la nécessité de le faire manuellement par la suite.
+
+>[!CAUTION]
+>
+>Notez que la fonction ne couvre pas la console Felix, dont le mot de passe doit être modifié manuellement. Pour plus d’informations, voir [Section Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
+
+## Comment Puis-Je L’Utiliser ? {#how-do-i-use-it}
+
+Cette fonctionnalité se déclenche automatiquement si vous choisissez d&#39;installer AEM via la ligne de commande, au lieu de double-cliquer sur le fichier JAR depuis un explorateur de système de fichiers.
+
+La syntaxe générale pour exécuter une instance AEM à partir de la ligne de commande est la suivante :
 
 ```shell
 java -jar aem6.3.jar
 ```
 
-Lors de l’exécution de l’instance à partir de la ligne de commande, vous avez la possibilité de modifier le mot de passe administrateur au cours du processus d’installation :
+Lors de l’exécution de l’instance à partir de la ligne de commande, vous aurez la possibilité de modifier le mot de passe administrateur lors du processus d’installation :
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
 >[!NOTE]
 >
->L’invite pour modifier le mot de passe administrateur s’affiche uniquement lors de l’installation d’une nouvelle instance AEM.
+>L’invite de modification du mot de passe administrateur s’affiche uniquement lors de l’installation d’une nouvelle instance AEM.
 
-## À l’aide de l’indicateur -nointeractive {#using-the-nointeractive-flag}
+## Utilisation de l’indicateur -nointeractive {#using-the-nointeractive-flag}
 
 Vous pouvez également choisir de spécifier le mot de passe dans un fichier de propriétés. Pour ce faire, utilisez la méthode `-nointeractive` l’indicateur associé au `-Dadmin.password.file` propriété système.
 

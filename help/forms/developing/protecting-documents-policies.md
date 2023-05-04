@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
 exl-id: 88065c4d-8ca9-4dfb-8663-ac8772e5e556
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '15500'
-ht-degree: 100%
+source-wordcount: '15536'
+ht-degree: 99%
 
 ---
 
 # Protéger des documents à lʼaide de stratégies {#protecting-documents-with-policies}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 **À propos du service Document Security**
 
@@ -67,7 +71,7 @@ Les stratégies vous permettent d’effectuer les tâches suivantes :
 
 ### Créer une stratégie à l’aide de services web {#creating-a-policy-using-web-services}
 
-Lors de la création d’une stratégie à l’aide de l’API de service web, référencez un fichier XML Portable Document Rights Language (PDRL) existant qui décrit la stratégie. Les autorisations de stratégie et le mandant sont définis dans le document PDRL. Le document XML suivant est un exemple de document PDRL.
+Lors de la création d’une stratégie à l’aide de l’API de service web, référencez un fichier XML Portable Document Rights Language (PDRL) existant qui décrit la stratégie. Les autorisations de stratégie et le principal sont définis dans le document PDRL. Le document XML suivant est un exemple de document PDRL.
 
 ```as3
  <?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
@@ -133,7 +137,7 @@ Lors de la création d’une stratégie à l’aide de l’API de service web, r
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -199,7 +203,7 @@ Lors de la spécification de l’option `NoEncryption`, vous ne pouvez pas défi
 
 **Créer un jeu de stratégies**
 
-Une entrée de stratégie associe des entités, qui sont des groupes et des utilisateurs, ainsi que des autorisations à une stratégie. Une stratégie doit comporter au moins une entrée de stratégie. Supposons, par exemple, que vous effectuez les tâches suivantes :
+Une entrée de stratégie associe des principaux, qui sont des groupes et des utilisateurs, ainsi que des autorisations à une stratégie. Une stratégie doit comporter au moins une entrée de stratégie. Supposons, par exemple, que vous effectuez les tâches suivantes :
 
 * Créez et enregistrez une entrée de stratégie qui permet à un groupe d’afficher uniquement un document en ligne et interdit aux destinataires de le copier.
 * Associez l’entrée de stratégie à la stratégie.
@@ -239,8 +243,8 @@ Créez une stratégie à l’aide de l’API Document Security (Java) :
    * Créez une entrée de stratégie en appelant la méthode statique `createPolicyEntry` de l’objet `InfomodelObjectFactory`. Cette méthode renvoie un objet `PolicyEntry`.
    * Spécifiez les autorisations de la stratégie en appelant la méthode statique `createPermission` de l’objet `InfomodelObjectFactory`. Transmettez un membre de données statique qui appartient à l’interface `Permission` qui représente l’autorisation. Cette méthode renvoie un objet `Permission`. Par exemple, pour ajouter l’autorisation qui permet aux utilisateurs de copier des données d’un document PDF protégé par une stratégie, transmettez `Permission.COPY`. (Répétez cette étape pour chaque autorisation à ajouter).
    * Ajoutez l’autorisation à l’entrée de stratégie en appelant la méthode `addPermission` de l’objet `PolicyEntry` et en transmettant l’objet `Permission`. (Répétez cette étape pour chaque objet `Permission` que vous avez créé).
-   * Créez l’entité de stratégie en appelant la méthode statique `createSpecialPrincipal` de l’objet `InfomodelObjectFactory`. Transmettez un membre de données qui appartient à l’objet `InfomodelObjectFactory` qui représente l’entité. Cette méthode renvoie un objet `Principal`. Par exemple, pour ajouter l’éditeur du document en tant qu’entité principale, transmettez `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
-   * Ajoutez l’entité de sécurité à l’entrée de stratégie en appelant la méthode `setPrincipal` de l’objet `PolicyEntry` et en transmettant l’objet `Principal`.
+   * Créez le principal de stratégie en appelant la méthode statique `createSpecialPrincipal` de l’objet `InfomodelObjectFactory`. Transmettez un membre de données qui appartient à l’objet `InfomodelObjectFactory` qui représente le principal. Cette méthode renvoie un objet `Principal`. Par exemple, pour ajouter l’éditeur du document en tant qu’entité principale, transmettez `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
+   * Ajoutez le principal à l’entrée de stratégie en appelant la méthode `setPrincipal` de l’objet `PolicyEntry` et en transmettant l’objet `Principal`.
    * Ajoutez l’entrée de stratégie à la stratégie en appelant la méthode `addPolicyEntry` de l’objet `Policy` et en transmettant l’objet `PolicyEntry`.
 
 1. Enregistrez la stratégie.
@@ -332,7 +336,7 @@ Pour modifier les attributs de stratégie à l’aide d’un service web (par ex
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Forms, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -457,7 +461,7 @@ Vous pouvez supprimer une stratégie existante à l’aide de l’API Java Docum
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -556,7 +560,7 @@ Vous pouvez contrôler l’utilisation d’un document protégé par une straté
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -720,7 +724,7 @@ Vous pouvez supprimer une stratégie d’un document protégé par une stratégi
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-4}
 
@@ -859,7 +863,7 @@ La possibilité de révoquer l’accès à un document offre une sécurité supp
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-5}
 
@@ -1001,7 +1005,7 @@ Vous pouvez rétablir l’accès à un document PDF révoqué, ce qui rend toute
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-6}
 
@@ -1129,7 +1133,7 @@ Vous ne pouvez pas effectuer cette tâche si vous posséder LiveCycle version 8
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-7}
 
@@ -1268,7 +1272,7 @@ Les filigranes permettent d’assurer la sécurité d’un document en lʼidenti
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-8}
 
@@ -1489,7 +1493,7 @@ Lorsque vous modifiez un filigrane, la modification a une incidence sur les docu
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-9}
 
@@ -1633,7 +1637,7 @@ Vous pouvez rechercher des événements spécifiques à l’aide de l’API Java
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Rights Management, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Rights Management, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-10}
 
@@ -1957,7 +1961,7 @@ Vous pouvez surveiller l’utilisation d’un document Word protégé par une st
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-11}
 
@@ -2113,7 +2117,7 @@ Vous pouvez supprimer une stratégie d’un document Word protégé par une stra
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-12}
 

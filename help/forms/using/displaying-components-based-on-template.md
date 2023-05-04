@@ -1,7 +1,7 @@
 ---
-title: Affichage des composants en fonction du modèle utilisé
+title: Afficher les composants en fonction du modèle utilisé
 seo-title: Displaying components based on the template used
-description: Lorsque vous créez un formulaire, découvrez comment vous pouvez activer les composants dans la barre latérale en fonction du modèle sélectionné.
+description: Lorsque vous créez un formulaire, découvrez comment activer les composants dans la barre latérale en fonction du modèle sélectionné.
 seo-description: When you create a form, learn how you can enable components in the sidebar based on the template selected.
 uuid: 4e87f400-fb45-413d-9be8-72edbe99f210
 contentOwner: sashanka
@@ -10,16 +10,20 @@ topic-tags: customization
 content-type: reference
 discoiquuid: 940e45b4-dbf1-4207-bd4a-cf677d645fb4
 exl-id: a4cee2e6-a56f-4355-8176-b3ed7478a775
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 100%
+source-wordcount: '388'
+ht-degree: 59%
 
 ---
 
 # Affichage des composants en fonction du modèle utilisé {#displaying-components-based-on-the-template-used}
 
-Lorsqu’un auteur de formulaire crée un formulaire adaptatif à l’aide d’un [modèle](/help/forms/using/template-editor.md), il peut consulter et utiliser des composants spécifiques en fonction de la stratégie de modèle. Vous pouvez spécifier une stratégie de contenu de modèle qui vous permet de sélectionner un groupe de composants visible par l’auteur de formulaire lors de la création de formulaires.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Lorsqu’un auteur de formulaire crée un formulaire adaptatif à l’aide d’un [modèle](/help/forms/using/template-editor.md), l’auteur du formulaire peut afficher et utiliser des composants spécifiques en fonction de la stratégie de modèle. Vous pouvez spécifier une stratégie de contenu de modèle qui vous permet de choisir un groupe de composants visible par l’auteur du formulaire au moment de la création du formulaire.
 
 ## Modification de la stratégie de contenu d’un modèle {#changing-the-content-policy-of-a-template}
 
@@ -37,7 +41,7 @@ Effectuez les étapes suivantes pour afficher les composants dans la barre laté
 
 1. Dans CRXDE, accédez à : `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/`.
 
-   Pour sélectionner un groupe de composants, une nouvelle stratégie de contenu est requise. Pour créer une nouvelle stratégie, copiez-collez la stratégie par défaut et renommez-la.
+   Pour sélectionner un groupe de composants, une nouvelle stratégie de contenu est requise. Pour créer une nouvelle stratégie, copiez-collez la stratégie par défaut, puis renommez-la.
 
    Le chemin d’accès à la stratégie de contenu par défaut est : `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`.
 
@@ -47,7 +51,7 @@ Effectuez les étapes suivantes pour afficher les composants dans la barre laté
 
 1. Sélectionnez la nouvelle stratégie que vous créez puis sélectionnez la propriété **composants** dans le panneau de droite avec le type `string[]`.
 
-   Lorsque vous sélectionnez et ouvrez la propriété de composants, la boîte de dialogue Modifier les composants s’affiche. Elle vous permet d’ajouter ou de supprimer les groupes de composants en utilisant les boutons **+** et **-**. Vous pouvez ajouter le groupe de composants qui comprend des composants du formulaire que vous souhaitez que les auteurs utilisent.
+   Lorsque vous sélectionnez et ouvrez la propriété de composants, la boîte de dialogue Modifier les composants s’affiche. La boîte de dialogue Modifier les composants vous permet d’ajouter ou de supprimer des groupes de composants à l’aide du **+** et **-** des boutons. Vous pouvez ajouter le groupe de composants qui comprend des composants du formulaire que vous souhaitez que les auteurs utilisent.
 
    ![Ajouter ou supprimer des composants dans la stratégie](assets/add-components-list1.png)
 

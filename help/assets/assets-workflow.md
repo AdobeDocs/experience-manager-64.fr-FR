@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Workflow,Renditions
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 76%
+source-wordcount: '1068'
+ht-degree: 72%
 
 ---
 
 # Traitement des ressources numériques {#process-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 [!DNL Adobe Experience Manager Assets] vous permet de travailler sur vos ressources numériques de différentes manières pour permettre un traitement des ressources robuste. Vous pouvez utiliser les méthodes de traitement disponibles ou étendre les méthodes pour assurer la fin des processus d’entreprise de bout en bout à l’aide d’ , d’audits et de conformité, de découverte et de distribution de vos ressources numériques, ainsi que d’une intégrité de base. Vous pouvez effectuer toutes ces opérations tout en respectant l’échelle et la personnalisation requises.
 
@@ -34,7 +38,7 @@ Pour consulter les différents modèles de workflow disponibles par défaut, con
 
 L’application de workflow aux ressources numériques est identique à l’application de workflow aux pages d’un site Web. Pour obtenir des informations complètes sur la création et l’utilisation de processus, reportez-vous à la section [démarrer des workflows](/help/sites-authoring/workflows-participating.md).
 
-Utilisez les workflows dans les ressources numériques pour activer les ressources ou créer des filigranes. La plupart des workflow destinés aux ressources sont automatiquement activés, comme le workflow permettant de créer automatiquement un rendu après la modification d’une image.
+Utilisez les workflows dans les ressources numériques pour activer les ressources ou créer des filigranes. La plupart des workflows des ressources sont automatiquement activés. Par exemple, le workflow qui crée automatiquement un rendu après la modification d’une image est automatiquement activé.
 
 >[!NOTE]
 >

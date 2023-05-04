@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: components, testing
 discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
 exl-id: 16b4088d-13b4-47b9-b89d-0c4a13676f12
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 100%
+source-wordcount: '739'
+ht-degree: 76%
 
 ---
 
 # Tester votre IU{#testing-your-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 AEM fournit un framework pour l’automatisation des tests pour votre IU AEM. Grâce au framework, vous développez et exécutez des tests d’IU directement dans un navigateur web. Ce framework fournit des API Javascript dédiés à la création de tests.
 
@@ -29,7 +33,7 @@ Le framework de test AEM utilise Hobbes.js, une bibliothèque de tests développ
 
 ## Structure des tests {#structure-of-tests}
 
-Lors de l’utilisation de tests automatisés dans AEM, il est important de comprendre les termes suivants :
+Lors de l’utilisation de tests automatisés dans AEM, il est important de comprendre les termes suivants :
 
 |  |  |
 |---|---|
@@ -41,21 +45,21 @@ Lors de l’utilisation de tests automatisés dans AEM, il est important de comp
 
 ### Affichage de suites de tests {#viewing-test-suites}
 
-Ouvrez la console de test pour voir les suites de tests enregistrées. Le panneau Tests contient une liste de suites de tests et leurs cas de test.
+Ouvrez la console de test pour voir les suites de tests enregistrées. Le panneau Tests contient une liste des suites de tests et de leurs cas de test.
 
-Accédez à la console Outils via **Navigation globale -> Outils > Opérations -> Tests**.
+Accédez à la console Outils via **Navigation globale -> Outils > Opérations -> Test**.
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
-Lors de l’ouverture de la console, les suites de tests sont répertoriées à gauche avec une option permettant de les exécuter en séquence. La partie à droite affichée avec un arrière-plan à damier est un espace réservé pour afficher le contenu de la page lors de l’exécution des tests.
+Lors de l’ouverture de la console, les suites de tests sont répertoriées à gauche avec une option permettant de les exécuter en séquence. L’espace à droite affiché avec un arrière-plan en damier est un espace réservé permettant d’afficher le contenu de la page pendant l’exécution des tests.
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-### Exécution distincte d’une suite de tests {#running-a-single-test-suite}
+### Exécution d’une seule suite de tests {#running-a-single-test-suite}
 
 Les suites de tests peuvent être exécutées séparément. Lorsque vous lancez une suite de tests, la page change au fur et à mesure que les cas de tests et leurs actions sont exécutés et une fois que les résultats apparaissent à la fin du test. Les icônes indiquent les résultats.
 
-Une coche indique un test réussi :
+Une icône de coche indique qu’un test a réussi :
 
 ![](do-not-localize/chlimage_1-5.png)
 
@@ -63,13 +67,13 @@ Une icône « X » indique l’échec d’un test :
 
 ![](do-not-localize/chlimage_1-6.png)
 
-Pour exécuter une suite de tests :
+Pour exécuter une suite de tests :
 
-1. Dans le panneau Tests, cliquez ou entrez sur le nom du cas de test que vous souhaitez exécuter pour développer les détails des actions.
+1. Dans le panneau Tests, cliquez ou appuyez sur le nom du cas de test que vous souhaitez exécuter pour développer les détails des actions.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
-1. Cliquez ou appuyez sur le bouton **Exécuter le test**.
+1. Cliquez ou appuyez sur **Exécuter le test** bouton .
 
    ![](do-not-localize/chlimage_1-7.png)
 
@@ -77,13 +81,13 @@ Pour exécuter une suite de tests :
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Passez en revue les résultats du cas de test en cliquant ou en appuyant sur la description pour ouvrir le panneau **Résultat**. Appuyez ou cliquez sur le nom de votre cas de test dans le panneau **Résultat** pour afficher tous les détails.
+1. Passez en revue les résultats du cas de test en cliquant ou en appuyant sur la description pour ouvrir le panneau **Résultat**. Appuyez ou cliquez sur le nom de votre cas de test dans la **Résultat** affiche tous les détails.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
 ### Exécution de plusieurs tests {#running-multiple-tests}
 
-Les suites de tests s’exécutent séquentiellement dans l’ordre dans lequel elles sont visibles dans la console. Vous pouvez développer un test pour voir les résultats détaillés.
+Les suites de tests s’exécutent séquentiellement dans l’ordre dans lequel elles sont visibles dans la console. Vous pouvez approfondir l’analyse d’un test pour afficher les résultats détaillés.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -99,7 +103,7 @@ Les suites de tests s’exécutent séquentiellement dans l’ordre dans lequel 
 
 La procédure suivante vous guide tout au long de la création et de l’exécution d’une suite de tests sur le [contenu We.Retail](/help/sites-developing/we-retail.md). Toutefois, vous pouvez facilement modifier le test pour utiliser une autre page web.
 
-Pour plus d’informations sur la création de vos propres suites de tests, reportez-vous à la documentation de l’API [Hobbes.js](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html).
+Pour plus d’informations sur la création de vos propres suites de tests, reportez-vous à la documentation de l’API [Hobbes.js](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html).
 
 1. Ouvrez CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
 1. Cliquez avec le bouton droit de la souris sur le dossier `/etc/clientlibs`, puis cliquez sur **Créer > Créer un dossier**. Entrez `myTests` comme nom et cliquez sur **OK**.

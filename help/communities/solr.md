@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 role: Admin
 exl-id: b506018d-67dc-4e47-a3d8-83ae288b5d7e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1617'
 ht-degree: 3%
 
 ---
 
 # Configuration Solr pour SRP {#solr-configuration-for-srp}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Solr pour AEM Platform {#solr-for-aem-platform}
 
@@ -86,7 +90,7 @@ Référence:\
 [https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Utilisation:\
- /bin/solr create \\
+./bin/solr create \\
 -c *mycollection-name*\\
 -d *config-dir* \\
 -n *myconfig-name* \\
@@ -139,7 +143,7 @@ Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 | Néerlandais | Italien | Slovène |
 | Anglais | Japonais | Espagnol |
 | Estonien | Coréen | Suédois |
-| Finnois | Letton | Thaï |
+| Finnois | Lette | Thaïlandais |
 | Français | Lituanien | Turc |
 
 #### Comparaison d’AEM 6.1 Solr search, Standard MLS et Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
@@ -203,8 +207,8 @@ Les fichiers MLS standard sont stockés dans le référentiel AEM.
 1. Installation de Solr en mode autonome
 1. Si vous exécutez Solr5, créez une collection1 (semblable à Solr4) :
 
-   *  /bin/solr start
-   *  /bin/solr create_core -c collection1 -d sample_techproducts_configs
+   * ./bin/solr start
+   * ./bin/solr create_core -c collection1 -d sample_techproducts_configs
 
 1. Sauvegarde **schema.xml** et **solrconfig.xml** dans le répertoire de configuration Solr, par exemple :
 
@@ -290,8 +294,8 @@ Une fois que le contenu du package a été extrait sur le serveur hébergeant le
 * Installation de Solr en mode autonome
 * Si vous exécutez Solr5, créez une collection1 (semblable à Solr4) :
 
-   *  /bin/solr start
-   *  /bin/solr create_core -c collection1 -d sample_techproducts_configs
+   * ./bin/solr start
+   * ./bin/solr create_core -c collection1 -d sample_techproducts_configs
 
 * Exécutez le script d’installation : Installer [-v 4|5] [-d solrhome] [-c collectionpath]
 où :

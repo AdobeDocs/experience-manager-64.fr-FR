@@ -1,7 +1,7 @@
 ---
 title: Connexion à des bases de données SQL
 seo-title: Connecting to SQL Databases
-description: Accédez à une base de données SQL externe, de sorte que vos applications AEM puissent interagir avec les données.
+description: Accédez à une base de données SQL externe pour que vos applications AEM puissent interagir avec les données.
 seo-description: Access an external SQL database to so that your AEM applications can interact with the data
 uuid: 0af0ed08-9487-4c37-87ce-049c9b4c1ea2
 contentOwner: Guillaume Carlino
@@ -10,37 +10,41 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 7f10451d-3acb-4298-82f3-07897f66e407
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 100%
+source-wordcount: '984'
+ht-degree: 56%
 
 ---
 
 # Connexion à des bases de données SQL{#connecting-to-sql-databases}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Accédez à une base de données SQL externe, de sorte que vos applications CQ puissent interagir avec les données :
 
-1. [Créez ou procurez-vous un lot OSGi qui exporte le package de pilotes JDBC](#bundling-the-jdbc-database-driver).
-1. [Configurez un fournisseur de pool de sources de données JDBC](#configuring-the-jdbc-connection-pool-service).
-1. [Procurez-vous un objet de source de données et créez la connexion dans votre code](#connecting-to-the-database).
+1. [Création ou obtention d’un lot OSGi qui exporte le package de pilote JDBC](#bundling-the-jdbc-database-driver).
+1. [Configuration d’un fournisseur de pool de sources de données JDBC](#configuring-the-jdbc-connection-pool-service).
+1. [Obtenez un objet de source de données et créez la connexion dans votre code.](#connecting-to-the-database).
 
 ## Regroupement du pilote de base de données JDBC {#bundling-the-jdbc-database-driver}
 
-Certains fournisseurs de base de données proposent des pilotes JDBC dans un lot OSGi ; [MySQL](https://www.mysql.com/downloads/connector/j/), par exemple. Si le pilote JDBC correspondant à votre base de données n’est pas disponible sous la forme d’un lot OSGi, procurez-vous le fichier JAR du pilote et enveloppez-le dans un lot OSGi. Le lot doit exporter les modules nécessaires pour interagir avec le serveur de base de données. Il doit également importer les modules auxquels il fait référence.
+Certains fournisseurs de base de données proposent des pilotes JDBC dans un lot OSGi ; [MySQL](https://www.mysql.com/downloads/connector/j/), par exemple. Si le pilote JDBC correspondant à votre base de données n’est pas disponible sous la forme d’un lot OSGi, procurez-vous le fichier JAR du pilote et enveloppez-le dans un lot OSGi. Le lot doit exporter les packages nécessaires pour interagir avec le serveur de base de données. Il doit également importer les packages auxquels il fait référence.
 
-L’exemple suivant utilise le [module externe Bundle pour Maven](https://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html) pour envelopper le pilote HSQLDB dans un lot OSGi. Le POM indique au module externe d’incorporer le fichier hsqldb.jar qui est identifié en tant que dépendance. Tous les packages org.hsqldb sont exportés.
+L’exemple suivant utilise la méthode [Module externe Bundle pour Maven](https://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html) pour encapsuler le pilote HSQLDB dans un lot OSGi. Le POM demande au module externe d’incorporer le fichier hsqldb.jar identifié comme une dépendance. Tous les packages org.hsqldb sont exportés.
 
-Le module externe détermine automatiquement les packages à importer et les répertorie dans le fichier MANIFEST.MF du lot. Si l’un des packages n’est pas disponible sur le serveur CQ, le lot ne démarre pas lors de l’installation. Deux solutions sont possibles :
+Le module externe détermine automatiquement les modules à importer et les répertorie dans le fichier MANIFEST.MF du lot. Si l’un des packages n’est pas disponible sur le serveur CQ, le lot ne démarre pas lors de l’installation. Deux solutions possibles sont les suivantes :
 
-* Indiquer dans le POM que les packages sont facultatifs. Utilisez cette solution lorsque la connexion JDBC n’a pas véritablement besoin des membres du package. Utilisez l’élément Import-Package pour indiquer les packages facultatifs, comme dans l’exemple suivant :
+* Indiquez dans le POM que les packages sont facultatifs. Utilisez cette solution lorsque la connexion JDBC ne nécessite pas réellement les membres du package. Utilisez l’élément Import-Package pour indiquer les packages facultatifs comme dans l’exemple suivant :
 
    `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
-* Envelopper les fichiers JAR contenant les packages dans un lot OSGi qui exporte les packages, puis déployer le lot. Utilisez cette solution lorsque les membres du package sont nécessaires pendant l’exécution du code.
+* Encapsulez les fichiers JAR contenant les modules dans un lot OSGi qui exporte les modules et déployez le lot. Utilisez cette solution lorsque les membres du module sont requis pendant l’exécution du code.
 
-Une connaissance du code source vous permet de déterminer la solution à utiliser. Vous pouvez également essayer l’une des solutions et réaliser des tests pour la valider.
+La connaissance du code source vous permet de décider quelle solution utiliser. Vous pouvez également essayer l’une des solutions et effectuer des tests pour valider la solution.
 
-### POM qui compile le fichier hsqldb.jar {#pom-that-bundles-hsqldb-jar}
+### POM qui regroupe hsqldb.jar {#pom-that-bundles-hsqldb-jar}
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" 
@@ -84,7 +88,7 @@ Une connaissance du code source vous permet de déterminer la solution à utilis
 </project>
 ```
 
-Les liens suivants ouvrent les pages de téléchargement pour certaines solutions de base de données courantes :
+Les liens suivants ouvrent les pages de téléchargement de certains produits de base de données populaires :
 
 * [Serveur SQL Microsoft](https://www.microsoft.com/fr-fr/download/details.aspx?displaylang=en&amp;id=11774)
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
@@ -94,11 +98,11 @@ Les liens suivants ouvrent les pages de téléchargement pour certaines solution
 
 Ajoutez une configuration pour le service Pool de connexions JDBC qui utilise le pilote JDBC pour créer des objets de source de données. Votre code d’application utilise ce service pour obtenir l’objet et se connecter à la base de données.
 
-Le Pool de connexions JDBC (`com.day.commons.datasource.jdbcpool.JdbcPoolService`) est un service d’usine. Si vous avez besoin de connexions qui utilisent d’autres propriétés (un accès en lecture seule ou en lecture/écriture, par exemple), créez plusieurs configurations.
+Le Pool de connexions JDBC (`com.day.commons.datasource.jdbcpool.JdbcPoolService`) est un service d’usine. Si vous avez besoin de connexions qui utilisent des propriétés différentes, par exemple un accès en lecture seule ou en lecture/écriture, créez plusieurs configurations.
 
-Lorsque vous utilisez CQ, plusieurs méthodes de gestion des paramètres de configuration sont disponibles pour ces services ; pour en savoir plus, voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md).
+Lorsque vous utilisez CQ, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. see [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus d’informations.
 
-Les propriétés suivantes sont disponibles pour configurer un service de connexion mis en pool. Les noms de propriété sont répertoriés à mesure qu’ils sont affichés dans la console web. Le nom correspondant à un nœud `sling:OsgiConfig` apparaît entre parenthèses. Des exemples de valeurs sont affichés pour un serveur HSQLDB et une base de données dont le pseudonyme est `mydb` :
+Les propriétés suivantes sont disponibles pour configurer un service de connexion en pool. Les noms des propriétés sont répertoriés tels qu’ils apparaissent dans la console web. Le nom correspondant à un nœud `sling:OsgiConfig` apparaît entre parenthèses. Des exemples de valeurs sont affichés pour un serveur HSQLDB et une base de données dont le pseudonyme est `mydb` :
 
 * Classe de pilotes JDBC (`jdbc.driver.class`) : classe Java à utiliser pour implémenter l’interface java.sql.Driver ; `org.hsqldb.jdbc.JDBCDriver`, par exemple. Le type de données est `String`.
 
@@ -129,7 +133,7 @@ Le Pool de connexions JDBC est un service d’usine. Par conséquent, si vous ut
 
 Dans votre code Java, utilisez le service DataSourcePool pour obtenir un objet `javax.sql.DataSource` pour la configuration que vous avez créée. Le service DataSourcePool fournit la méthode `getDataSource` qui renvoie un objet `DataSource` pour un nom de source de données spécifique. Comme argument de méthode, utilisez la valeur de la propriété Nom de la source de données (ou `datasource.name`) que vous avez spécifiée pour la configuration du service Pool de connexions JDBC.
 
-L’exemple de code JSP suivant obtient une instance de la source de données hsqldbds, exécute une requête SQL simple et affiche le nombre de résultats renvoyés.
+L’exemple de code JSP suivant récupère une instance de la source de données hsqldbds, exécute une requête SQL simple et affiche le nombre de résultats renvoyés.
 
 #### JSP qui effectue une recherche de base de données {#jsp-that-performs-a-database-lookup}
 
@@ -169,8 +173,8 @@ L’exemple de code JSP suivant obtient une instance de la source de données hs
 
 >[!NOTE]
 >
->Si la méthode getDataSource renvoie une exception en raison d’une source de données introuvable, assurez-vous que la configuration du service Pool de connexions est correcte. Vérifiez les noms des propriétés, les valeurs et les types de données.
+>Si la méthode getDataSource renvoie une exception car la source de données est introuvable, assurez-vous que la configuration du service Pool de connexions est correcte. Vérifiez les noms de propriété, les valeurs et les types de données.
 
 >[!NOTE]
 >
->Pour savoir comment injecter un service DataSourcePool dans un lot OSGi, voir [Injection d’un service DataSourcePool dans un lot OSGi Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk).
+>Pour savoir comment injecter un pool de sources de données dans un lot OSGi, voir [Injection d’un service DataSourcePool dans un lot OSGi Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk).

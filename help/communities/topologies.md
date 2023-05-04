@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 exl-id: 0bdb3063-7333-487b-947f-3fe29c6a6eef
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '585'
 ht-degree: 7%
 
 ---
 
 # Topologies recommandées pour Communities {#recommended-topologies-for-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Depuis AEM Communities 6.1, une approche unique a été adoptée pour gérer le contenu généré par les utilisateurs (UGC) envoyé par les visiteurs du site (membres) à partir de l’environnement de publication.
 

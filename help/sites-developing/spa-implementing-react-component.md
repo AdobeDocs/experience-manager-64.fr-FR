@@ -10,16 +10,20 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 exl-id: da0e076b-afb7-4ebe-8e5e-48c00750e453
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 97%
+source-wordcount: '594'
+ht-degree: 88%
 
 ---
 
-# Mise en œuvre d’un composant React pour SPA{#implementing-a-react-component-for-spa}
+# Mise en œuvre d’un composant React pour SPA {#implementing-a-react-component-for-spa}
 
-Les applications sur une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs souhaitent pouvoir créer des sites à l’aide de structures SPA et les auteurs souhaitent modifier facilement du contenu dans AEM pour un site créé à l’aide de structures SPA.
 
 La fonction de création d’application sur une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente un exemple d’adaptation d’un composant React simple et existant pour le faire fonctionner avec l’éditeur de SPA d’AEM.
 

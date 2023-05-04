@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 7317fd2f-9756-4231-b343-ea808ea159ec
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2653'
 ht-degree: 2%
 
 ---
 
 # Création et modification d’applications à l’aide de la console Applications{#creating-and-editing-apps-using-the-apps-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -241,10 +245,10 @@ Le contenu de la page d’accueil se compose des outils de navigation suivants :
 
 La page Engrenage permet aux utilisateurs d’accéder aux pages de produits. Un composant de liste de menus permet d’accéder aux pages enfants de la page d’engrenage. Les pages enfants sont des catégories de produits que le site web propose.
 
-* Saison
+* Saison 
 * Vêtements
 * Sexe
-* Activité
+* Activity
 
 Chaque page de catégorie utilise la même structure de contenu que la page d’engrenage. Le carrousel permet d’accéder aux pages enfants qui sont des sous-catégories de produits. Les pages de sous-catégorie contiennent des listes de produits qui fournissent des liens vers les pages de produits.
 

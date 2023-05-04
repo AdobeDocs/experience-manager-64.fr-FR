@@ -12,14 +12,18 @@ discoiquuid: 96cf7c92-af98-417f-ab60-b368e3846ef8
 exl-id: 0123fb44-9f38-4d9e-9dce-7c9cfd4260e1
 feature: Content Fragments,Metadata
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 88%
+source-wordcount: '148'
+ht-degree: 56%
 
 ---
 
-# Métadonnées – propriétés des fragments {#metadata-fragment-properties}
+# Métadonnées - Propriétés des fragments {#metadata-fragment-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!CAUTION]
 >
@@ -29,15 +33,15 @@ ht-degree: 88%
 
 Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu :
 
-1. Dans la console **[!UICONTROL Ressources]**, naviguez jusqu’à l’emplacement de votre fragment de contenu.
-1. Vous pouvez :
+1. Dans le **[!UICONTROL Ressources]** accédez à l’emplacement du fragment de contenu dans la console.
+1. Soit :
 
    * Sélectionnez [Afficher les propriétés pour ouvrir les boîtes de dialogue](managing-assets-touch-ui.md#editing-properties). Une fois la collection ouverte pour consultation, vous pouvez également la modifier.
    * Ouvrez[ le fragment de contenu à modifier](content-fragments-managing.md#opening-the-fragment-editor), puis sélectionnez **[!UICONTROL Métadonnées]** dans le panneau latéral.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
-1. L’onglet **[!UICONTROL De base]** fournit des options que vous pouvez afficher ou modifier :
+1. Le **[!UICONTROL De base]** fournit des options que vous pouvez afficher ou modifier :
 
    * Une miniature, pour laquelle vous pouvez **charger une image**
    * **Titre**

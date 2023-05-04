@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 exl-id: 3da30cb4-39b2-4495-9e8b-93567b73b644
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 14%
+source-wordcount: '644'
+ht-degree: 7%
 
 ---
 
 # Application Sandbox initiale {#initial-sandbox-application}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Dans cette section, vous allez créer les éléments suivants :
 
@@ -26,16 +30,16 @@ Dans cette section, vous allez créer les éléments suivants :
 
 ## Création d’un modèle de contenu {#create-the-content-template}
 
-Un modèle définit le contenu par défaut d’une nouvelle page. Les sites web complexes peuvent utiliser plusieurs modèles pour créer différents types de pages. De plus, l’ensemble de modèles peut devenir un plan directeur utilisé pour déployer les modifications apportées à un cluster de serveurs.
+Un modèle définit le contenu par défaut d’une nouvelle page. Les sites web complexes peuvent utiliser plusieurs modèles pour créer les différents types de pages du site. De plus, l’ensemble de modèles peut devenir un plan directeur utilisé pour déployer les modifications apportées à un cluster de serveurs.
 
-Dans le cadre de cet exercice, toutes les pages sont basées sur un modèle simple.
+Dans cet exercice, toutes les pages sont basées sur un modèle simple.
 
 1. Dans le volet d’exploration du CRXDE Lite
 
    * sélectionnez `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Créer > Créer un modèle]**
 
-1. Dans la boîte de dialogue Créer un modèle, entrez les valeurs ci-dessous et cliquez ensuite sur **[!UICONTROL Suivant]** :
+1. Dans la boîte de dialogue Créer un modèle, saisissez les valeurs suivantes, puis cliquez sur **[!UICONTROL Suivant]**:
 
    * Libellé : `playpage`
    * Titre : `An SCF Sandbox Play Template`

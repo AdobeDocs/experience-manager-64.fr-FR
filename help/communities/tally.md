@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 exl-id: f04ec253-08b8-4ee2-9873-4a51549daeba
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 0%
+source-wordcount: '341'
+ht-degree: 2%
 
 ---
 
 # Tally Essentials {#tally-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Tally est une classe abstraite qui fournit une méthode standard de collecte des commentaires des membres sur la manière dont ils évaluent des produits et services spécifiques. Les commentaires anonymes ne sont pas pris en charge. Le visiteur du site doit s’inscrire et se connecter pour participer et se connecter afin de modifier ses commentaires. L’obligation de se connecter facilite la modération et améliore la valeur des commentaires en empêchant plusieurs publications.
 

@@ -5,27 +5,31 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: bd65633e85226659df99da1d3834fa18a89de11e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 79%
+source-wordcount: '1340'
+ht-degree: 78%
 
 ---
 
 # Configuration du balisage des ressources à l’aide du service de contenu dynamique {#configure-asset-tagging-using-the-smart-content-service}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Vous pouvez intégrer des [!DNL Adobe Experience Manager] avec le service de contenu dynamique utilisant [!DNL Adobe Developer Console]. Utilisez cette configuration pour accéder au service de contenu dynamique à partir de [!DNL Experience Manager].
 
 >[!NOTE]
 >
->* Les services de contenu dynamique ne sont plus disponibles pour les nouvelles [!DNL Experience Manager Assets] Clients On-Premise. Les clients On-Premise existants, pour lesquels cette fonctionnalité est déjà activée, peuvent continuer à utiliser les services de contenu dynamique.
->* Smart Content Services est disponible pour les [!DNL Experience Manager Assets] Clients Managed Services, pour lesquels cette fonctionnalité est déjà activée.
->* Nouveau [!DNL Experience Manager Assets] Les clients Managed Services peuvent suivre les instructions mentionnées dans cet article pour configurer les services de contenu dynamique.
+>* Les services de contenu intelligent ne sont plus disponibles pour les nouveaux clients On-Premise [!DNL Experience Manager Assets]. Les clients On-Premise existants, pour lesquels cette fonctionnalité est déjà activée, peuvent continuer à utiliser les services de contenu intelligent.
+>* Les services de contenu intelligent sont disponibles pour les clients Managed Services [!DNL Experience Manager Assets], pour lesquels cette fonctionnalité est déjà activée.
+>* Les nouveaux clients Managed Services [!DNL Experience Manager Assets] peuvent suivre les instructions mentionnées dans cet article pour configurer les services de contenu intelligent.
 
 
-L’article détaille les tâches essentielles suivantes qui sont requises pour configurer le service de contenu dynamique. À l’arrière-plan, la variable [!DNL Experience Manager] le serveur authentifie vos informations d’identification de service auprès de la fonction [!DNL Adobe Developer Console] passerelle avant de transférer votre demande vers le service de contenu dynamique.
+L’article détaille les tâches clés suivantes, requises pour configurer le service de contenu dynamique. À l’arrière-plan, la variable [!DNL Experience Manager] le serveur authentifie vos informations d’identification de service auprès de la fonction [!DNL Adobe Developer Console] passerelle avant de transférer votre demande vers le service de contenu dynamique.
 
-1. [Création d’une configuration de service de contenu dynamique dans pour générer une clé publique. ](#obtain-public-certificate)[!DNL Experience Manager] [Obtenez un certificat public](#obtain-public-certificate) pour l’intégration d’OAuth.
+1. [Création d’un service de contenu dynamique](#obtain-public-certificate) configuration dans [!DNL Experience Manager] pour générer une clé publique. [Obtenez un certificat public](#obtain-public-certificate) pour l’intégration d’OAuth.
 
 1. [Créez une intégration dans Adobe Developer Console](#create-adobe-i-o-integration) et chargez la clé publique générée.
 
@@ -41,7 +45,7 @@ Avant d’utiliser le service de contenu dynamique, assurez-vous des points suiv
 
 * L’organisation doit disposer d’un compte Adobe ID pourvu de droits d’administrateur.
 
-* Le de contenu dynamique est activé pour votre organisation.
+* Le service de contenu dynamique est activé pour votre organisation.
 
 Pour activer les balises intelligentes améliorées, en plus de ce qui précède, installez également la dernière version [Service Pack Experience Manager](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
 
@@ -59,11 +63,11 @@ Un certificat public vous permet d’authentifier votre profil sur [!DNL Adobe D
 
    **[!UICONTROL URL du service]** : `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   Par exemple, `https://smartcontent.adobe.io/apac`. Vous pouvez indiquer `na`, `emea`, ou `apac` comme les régions où votre instance de création de Experience Manager est hébergée.
+   Par exemple, `https://smartcontent.adobe.io/apac`. Vous pouvez indiquer `na`, `emea`, ou `apac` comme les régions où votre instance d’auteur Experience Manager est hébergée.
 
    >[!NOTE]
    >
-   >Si le service géré Experience Manager est mis en service avant le 1er septembre 2022, utilisez l’URL de service suivante :
+   >Si le service géré Experience Manager est mis en service avant le 1er septembre 2022, utilisez l’URL de service suivante :
    >`https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Serveur d’autorisation]** : `https://ims-na1.adobelogin.com`
@@ -92,7 +96,7 @@ Lorsque le certificat expire, il n’est plus approuvé. Vous ne pouvez pas reno
 
 1. Connectez-vous en tant qu’administrateur à votre déploiement [!DNL Experience Manager]. Cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**.
 
-1. Recherchez et cliquez sur l’utilisateur **[!UICONTROL dam-update-service]**. Cliquez sur l’onglet **[!UICONTROL KeyStore]**.
+1. Recherchez et cliquez sur l’utilisateur **[!UICONTROL dam-update-service]**. Cliquez sur **[!UICONTROL Keystore]** .
 
 1. Supprimez le fichier de stockage de clés **[!UICONTROL similaritysearch]** existant avec le certificat arrivé à expiration. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
@@ -104,7 +108,7 @@ Lorsque le certificat expire, il n’est plus approuvé. Vous ne pouvez pas reno
 
 1. Pour télécharger un certificat public, cliquez sur **[!UICONTROL Télécharger le certificat public pour l’intégration OAuth]**.
 
-1. Accédez à [https://console.adobe.io](https://console.adobe.io) et accédez aux services de contenu intelligent existants sur la page **[!UICONTROL Intégrations]**. Téléchargez le nouveau certificat. Pour plus d’informations, consultez les instructions contenues dans [Création d’une intégration dans Adobe Developer Console](#create-adobe-i-o-integration).
+1. Accès [https://console.adobe.io](https://console.adobe.io) et accédez aux services de contenu dynamique existants sur la page **[!UICONTROL Intégrations]** page. Téléchargez le nouveau certificat. Pour plus d’informations, consultez les instructions contenues dans [Création d’une intégration dans Adobe Developer Console](#create-adobe-i-o-integration).
 
 ## Création de l’intégration de la console Adobe Developer {#create-adobe-i-o-integration}
 
@@ -136,7 +140,7 @@ Pour configurer l’intégration, utilisez les valeurs d’[!UICONTROL ID DE COM
 
 1. [!DNL Experience Manager]Accédez à **[!UICONTROL Outils > Services cloud > Services cloud hérités]** pour ouvrir la console [!UICONTROL Services cloud].
 
-1. Sous **[!UICONTROL Ressources – Balises intelligentes]**, ouvrez la configuration créée ci-dessus. Sur la page de paramètres du service, cliquez sur **[!UICONTROL Modifier]**.
+1. Sous , **[!UICONTROL Balises intelligentes des ressources]**, ouvrez la configuration créée ci-dessus. Sur la page des paramètres du service, cliquez sur **[!UICONTROL Modifier]**.
 
 1. Dans la boîte de dialogue **[!UICONTROL Service de contenu dynamique AEM]**, utilisez les valeurs préremplies pour les champs **[!UICONTROL URL de service]** et **[!UICONTROL Serveur d’autorisation]**.
 

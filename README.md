@@ -1,17 +1,12 @@
 ---
-source-git-commit: 787f33c60cbe2affdea0af732289d2663ad97bfb
+source-git-commit: 89ad0c9a050076678ce8a801d9f9af4ea508bd39
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '84'
-ht-degree: 69%
+source-wordcount: '68'
+ht-degree: 50%
 
 ---
-# Documentation de Adobe Experience Manager 6.4
+# Documentation d’Adobe Experience Manager 6.4
 
-Il s’agit du référentiel de la documentation Adobe Experience Manager 6.4. Cette documentation porte sur l’installation, l’administration, la création d’utilisation et la personnalisation des AEM.
+Il s’agit du référentiel relatif à la documentation d’Adobe Experience Manager 6.4. Cette documentation porte sur l’installation, l’administration, la création d’utilisation et la personnalisation d’AEM.
 
-Vos contributions à la documentation sont les bienvenues. Veuillez consulter les ressources suivantes :
-
-* [contributing.md](contributing.md) Pour obtenir un aperçu de la contribution à la documentation.
-* [guidelines.md](guidelines.md) Pour obtenir une vue d’ensemble de ce qui est attendu dans les contributions et comment composer vos contributions à la documentation.
-* [code-of-conduct.md](code-of-conduct.md) Pour une présentation des normes de comportement attendues à mesure que vous participez à ce projet de documentation.
+AEM 6.4 a atteint la fin de la prise en charge étendue. Par conséquent, cette documentation n’est plus mise à jour et ce référentiel a été archivé. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).

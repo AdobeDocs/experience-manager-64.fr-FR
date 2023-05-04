@@ -1,7 +1,7 @@
 ---
-title: Définition des paramètres de protection
+title: Spécifier des paramètres de sécurité
 seo-title: Specify security settings
-description: Découvrez comment spécifier des paramètres de sécurité.
+description: Découvrez comment définir les paramètres de sécurité.
 seo-description: Learn how to specify security settings.
 uuid: c86ba195-010d-40d6-9f9d-4cb4c364d104
 contentOwner: admin
@@ -10,19 +10,23 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3c017f9a-aa7f-4d12-ba8b-9fd92c029157
 exl-id: 3cc39a24-dbdf-4a4c-9c96-4d39d8cff20d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 100%
+source-wordcount: '109'
+ht-degree: 26%
 
 ---
 
-# Définition des paramètres de protection {#specify-security-settings}
+# Spécifier des paramètres de sécurité {#specify-security-settings}
 
-Le service Output permet de contrôler la résolution des entités externes dans les entrées XML. Par défaut, elles sont résolues, mais vous pouvez modifier ce comportement pour une meilleure protection du système AEM Forms.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-**Blocage du traitement des fichiers de données XML contenant des références aux entités externes**
+Output vous permet de contrôler la résolution des entités externes dans les entrées XML. Par défaut, ils sont résolus, mais vous pouvez modifier ce comportement pour accroître la sécurité de votre système AEM forms.
 
-1. Dans la console d’administration, cliquez sur Services > Output.
+**Empêcher le traitement des fichiers de données XML contenant des références à des entités externes**
+
+1. Dans Administration Console, cliquez sur Services > Output.
 1. Désélectionnez la case Résoudre les entités externes.
 1. Cliquez sur Enregistrer.

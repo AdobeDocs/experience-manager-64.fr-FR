@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Search,Adobe Stock
 role: User,Admin
 exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 93%
+source-wordcount: '1150'
+ht-degree: 88%
 
 ---
 
 # Utiliser des ressources de [!DNL Adobe Stock] dans [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les entreprises peuvent intégrer leur formule d’abonnement pour entreprise [!DNL Adobe Stock] dans [!DNL Experience Manager Assets] pour s’assurer que les ressources sous licence sont mises à la disposition de leurs projets de création et marketing, tout en bénéficiant des puissantes fonctionnalités de gestion de ressources d’[!DNL Experience Manager].
 
@@ -20,7 +24,7 @@ Le service [!DNL Adobe Stock] permet aux créateurs et aux entreprises d’accé
 
 ## Prérequis {#prerequisites}
 
-Pour que l’intégration soit possible, l’[abonnement Adobe Stock entreprise](https://stockenterprise.adobe.com/fr/home.html) est requis et  6.4 (Service Pack 2 minimum) doit être déployé. [!DNL Experience Manager] Pour [!DNL Experience Manager] 6.4 Informations détaillées sur le Service Pack, voir ces [notes de mise à jour](/help/release-notes/sp-release-notes.md).
+L’intégration requiert une [Formule Adobe Stock Entreprise](https://stockenterprise.adobe.com/fr/home.html) et [!DNL Experience Manager] 6.4 avec au moins le Service Pack 2 déployé. Pour [!DNL Experience Manager] 6.4 Informations détaillées sur le Service Pack, voir ces [notes de mise à jour](/help/release-notes/sp-release-notes.md).
 
 ## Intégration d’[!DNL Experience Manager] et [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -33,8 +37,8 @@ Pour permettre à [!DNL Experience Manager] et [!DNL Adobe Stock] de communiquer
 ### Création d’une configuration IMS {#create-an-ims-configuration}
 
 1. Dans l’interface utilisateur [!DNL Experience Manager], naviguez jusqu’à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**. Cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Solution cloud]** > **[!UICONTROL Adobe Stock]**.
-1. Réutilisez un certificat existant ou sélectionnez **[!UICONTROL Créer un certificat]**.
-1. Cliquez sur **[!UICONTROL Créer un certificat]**. Une fois le certificat créé, téléchargez la clé publique. Cliquez sur **[!UICONTROL Suivant]**. Laissez ouvert l’écran [!UICONTROL Configuration du compte technique Adobe IMS] pour obtenir rapidement les valeurs nécessaires.
+1. Réutilisez un certificat existant ou sélectionnez **[!UICONTROL Création d’un certificat]**.
+1. Cliquez sur **[!UICONTROL Créer un certificat]**. Une fois créée, téléchargez la clé publique. Cliquez sur **[!UICONTROL Suivant]**. Laissez ouvert l’écran [!UICONTROL Configuration du compte technique Adobe IMS] pour obtenir rapidement les valeurs nécessaires.
 1. Accédez à [Adobe Developer Console](https://console.adobe.io). Assurez-vous que votre compte dispose des autorisations d’administrateur pour l’entreprise pour laquelle l’intégration est requise.
 1. Cliquez sur **[!UICONTROL Créer un projet]**, puis sur **[!UICONTROL Ajouter l’API]**. Sélectionnez **[!UICONTROL Adobe Stock]** dans la liste des API disponibles. Sélectionnez [!UICONTROL OAUTH 2.0 Web].
 1. Fournissez les valeurs **[!UICONTROL URI de redirection par défaut]** et **[!UICONTROL Modèle d’URI de redirection]**. Cliquez sur **[!UICONTROL Save configured API]** (Enregistrer l’API configurée). Copiez l’identifiant et le secret générés.
@@ -48,7 +52,7 @@ Pour permettre à [!DNL Experience Manager] et [!DNL Adobe Stock] de communiquer
 1. Dans l’interface utilisateur d’[!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Cliquez sur **[!UICONTROL Créer]** pour créer une configuration et l’associer à votre configuration IMS existante. Sélectionnez `PROD` comme paramètre d’environnement.
 1. Ne modifiez pas l’emplacement défini dans le champ **[!UICONTROL Chemin d’accès aux ressources sous licence]**. Ne modifiez pas l’emplacement où vous souhaitez stocker les ressources [!DNL Adobe Stock].
-1. Pour terminer la procédure de création, ajoutez toutes les propriétés requises. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+1. Terminez la création en ajoutant toutes les propriétés requises. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 1. Ajoutez les utilisateurs ou groupes [!DNL Experience Manager] qui peuvent acquérir les ressources sous licence.
 
 >[!NOTE]

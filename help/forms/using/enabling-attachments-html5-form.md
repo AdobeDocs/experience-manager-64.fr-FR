@@ -1,7 +1,7 @@
 ---
-title: Activation des pièces jointes à un formulaire HTML5
+title: Activer les pièces jointes pour un formulaire HTML5
 seo-title: Enabling attachments for an HTML5 form
-description: Par défaut, la prise en charge de pièces jointes des formulaires HTML5 est désactivée.
+description: Par défaut, la prise en charge des pièces jointes pour les formulaires HTML5 est désactivée.
 seo-description: By default, the attachment support for HTML5 forms is disabled.
 uuid: 2c62ac3e-4b27-46c7-a61d-a805fb5d26fb
 content-type: reference
@@ -10,33 +10,37 @@ topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: Mobile Forms
 exl-id: 82a843c4-5cb2-4f5e-ad4d-cf2e9ea6cdb8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 78%
+source-wordcount: '355'
+ht-degree: 54%
 
 ---
 
-# Activation des pièces jointes à un formulaire HTML5 {#enabling-attachments-for-an-html-form}
+# Activer les pièces jointes pour un formulaire HTML5 {#enabling-attachments-for-an-html-form}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec des formulaires HTML5. Par défaut, la prise en charge des pièces jointes est désactivée. Pour activer la prise en charge des pièces jointes :
 
-1. Créez un [profil personnalisé](/help/forms/using/custom-profile.md) avec la propriété de chaîne à choix multiple `mfAttachmentOptions`.
+1. Créez un [profil personnalisé](/help/forms/using/custom-profile.md) avec propriété de chaîne à sélection multiple `mfAttachmentOptions`.
 1. Dans le profil personnalisé, spécifiez les propriétés. `fileSizeLimit`, `multiSelect`, et `buttonTex`pour configurer les options du widget de pièce jointe. Au besoin, vous pouvez également spécifier d’autres propriétés personnalisées.
 
 1. Dans le profil personnalisé, utilisez les configurations suivantes :
 
-   * **multiSelect**-> vrai ou faux (vrai par défaut)
+   * **multiSelect** -> true ou false (true par défaut)
    * **fileSizeLimit** -> value_in_mb (5, par exemple) (2 Mo par défaut)
    * **buttonText** -> Texte de bouton pour la fenêtre contextuelle (&quot;Joindre&quot; par défaut)
    * **accept** -> types de fichiers à accepter (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; par défaut)
 
    >[!NOTE]
    >
-   >Microsoft Internet Explorer 9 permet aux utilisateurs de joindre un fichier plus volumineux que la limite spécifiée. Il s’agit d’un problème connu.
+   >Dans Microsoft Internet Explorer 9, les utilisateurs peuvent joindre des fichiers supérieurs à la limite spécifiée. C&#39;est un problème connu.
 
 1. Utilisez [l’éditeur de métadonnées](/help/forms/using/manage-form-metadata.md) pour sélectionner le profil personnalisé que vous avez créé ci-dessus pour les formulaires HTML5.
-1. Générez votre modèle de formulaire avec un profil personnalisé et l’icône de pièces jointes apparaît sur la barre d’outils Formulaires.
+1. Effectuez le rendu de votre modèle de formulaire avec un profil personnalisé et l’icône de pièces jointes apparaît dans la barre d’outils de formulaires.
 
    >[!NOTE]
    >

@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 exl-id: 4e5c63af-78f1-4005-8dc1-2b30cb0b6c5a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 7%
+source-wordcount: '289'
+ht-degree: 5%
 
 ---
 
 # Tutoriels {#tutorials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Voici des exemples pour vous aider à apprendre et à travailler avec AEM Communities 6.1 [structure de composants sociaux (SCF)](scf.md).
 
@@ -25,7 +29,7 @@ Voici des exemples pour vous aider à apprendre et à travailler avec AEM Commun
 
 Voir aussi [Personnalisation côté client SCF](client-customize.md).
 
-* [Guide de composants de communauté](components-guide.md)
+* [Guide des composants de communauté](components-guide.md)
 
 * [Composant des commentaires de superposition](overlay-comments.md)
 

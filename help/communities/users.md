@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 54109f64-eb30-47cc-bf7a-756843d2da02
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2168'
-ht-degree: 2%
+source-wordcount: '2204'
+ht-degree: 1%
 
 ---
 
 # Gestion des utilisateurs et des groupes d’utilisateurs {#managing-users-and-user-groups}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
@@ -73,7 +77,7 @@ Pour gérer les utilisateurs et les groupes d’utilisateurs enregistrés dans l
 
 | Si Membre du groupe... | Rôle Principal |
 |---|---|
-| administrators | Le groupe administrateurs comprend les administrateurs système qui disposent de toutes les fonctionnalités d’un administrateur de la communauté ainsi que de la possibilité de gérer le groupe Administrateurs de la communauté. |
+| administrateurs | Le groupe administrateurs comprend les administrateurs système qui disposent de toutes les fonctionnalités d’un administrateur de la communauté ainsi que de la possibilité de gérer le groupe Administrateurs de la communauté. |
 | Administrateurs de la communauté | Le groupe Administrateurs de la communauté devient automatiquement membre de tous les sites de la communauté et de tous les groupes de la communauté créés sur le site. Le groupe Administrateurs est un membre initial du groupe Administrateurs de la communauté. Dans l’environnement de création, les administrateurs de communauté peuvent créer des sites de communauté, gérer des sites, gérer les membres (ils peuvent interdire des membres de la communauté) et modérer le contenu. |
 | Communauté &lt;*nom du site*> Gestionnaire de sites | Le gestionnaire de contenu du site de la communauté peut effectuer des AEM classiques de création, de création de contenu et de modification de pages pour un site de la communauté. |
 | Chefs d’activation de la communauté | Le groupe Chefs d’activation de la communauté se compose d’utilisateurs pouvant être affectés à la gestion du groupe Gestionnaires d’activation d’un site de la communauté. |
@@ -201,7 +205,7 @@ Uniquement les utilisateurs qui sont membres du `Community Enablement Managers` 
 
 Pour créer un utilisateur auquel le rôle peut être attribué `Community Site Enablement Manager`, utilisez la console de sécurité de l’IU classique pour spécifier le chemin d’accès :
 
-Sur une instance d’auteur :
+Sur une instance d’auteur :
 
 1. Connecté avec les privilèges d’administrateur, accédez à la console de sécurité de l’interface utilisateur classique.
 Par exemple : [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
@@ -217,7 +221,7 @@ Par exemple : [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
 
-Dans le volet de gauche :
+Dans le volet de gauche :
 
 1. Effacez la zone de recherche et sélectionnez **[!UICONTROL Masquer les utilisateurs]**
 2. Localisez et faites glisser `community-enablementmanagers` au **[!UICONTROL Groupes]** onglet du nouvel utilisateur affiché dans le volet de droite

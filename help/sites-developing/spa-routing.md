@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: 865f524d-6b54-43c8-9b28-86a766e010a1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 97%
+source-wordcount: '536'
+ht-degree: 89%
 
 ---
 
-# Routage du modèle de SPA{#spa-model-routing}
+# Routage du modèle de SPA {#spa-model-routing}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 
@@ -59,7 +63,7 @@ L’implémentation actuelle repose sur l’hypothèse que le projet de SPA util
 
 `ModelRouter` prend en charge le concept de routage de modèle en écoutant les appels `pushState` et `replaceState` pour récupérer au préalable les fragments de modèle. En interne, il déclenche le chargement de `PageModelManager` pour charger le modèle correspondant à une URL donnée, et lance un `cq-pagemodel-route-changed` que d’autres modules peuvent écouter.
 
-Par défaut, ce comportement est automatiquement activé. Pour le désactiver, l’application sur une seule page doit effectuer le rendu de la propriété meta suivante :
+Par défaut, ce comportement est activé automatiquement. Pour la désactiver, le SPA doit effectuer le rendu de la propriété meta suivante :
 
 ```
 <meta property="cq:pagemodel_router" content="disable"\>

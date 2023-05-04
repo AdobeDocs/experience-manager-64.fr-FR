@@ -5,24 +5,28 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: User,Admin
 exl-id: 6f03ee04-d2e2-47e6-892b-50fad3043a28
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 93%
+source-wordcount: '1097'
+ht-degree: 83%
 
 ---
 
 # Rapports de ressources {#asset-reports}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
 
 Utilisez les informations figurant dans les rapports de manière à obtenir des mesures de succès essentielles pour évaluer l’adoption d’[!DNL Assets] au sein de votre entreprise et par les clients.
 
-Le framework de création de rapports [!DNL Assets] exploite des tâches [!DNL Sling] de façon à traiter de manière asynchrone les demandes de rapports en respectant l’ordre. Il est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports permet de générer des rapports de manière plus efficace et rapide.
+Le framework de création de rapports [!DNL Assets] exploite des tâches [!DNL Sling] de façon à traiter de manière asynchrone les demandes de rapports en respectant l’ordre. Il est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports augmente l’efficacité et la vitesse de génération des rapports.
 
-L’interface de gestion de rapports est intuitive et inclut des options et des commandes précises pour accéder aux rapports archivés, ainsi qu’afficher les états d’exécution des rapports (réussite, échec et en file d’attente).
+L’interface de gestion des rapports est intuitive et contient des options et des contrôles précis pour accéder aux rapports archivés et afficher les états d’exécution des rapports (succès, échec et mise en file d’attente).
 
-Si un rapport est généré, vous êtes averti par un courrier électronique (facultatif) et une notification dans la boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
+Lorsqu’un rapport est généré, vous êtes averti par un email (facultatif) et une notification de boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
 
 ## Prérequis {#prerequisite-for-reporting}
 
@@ -64,7 +68,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    >[!NOTE]
    >
-   >Le [!UICONTROL Télécharger] Le rapport affiche uniquement les détails des ressources sélectionnées individuellement et téléchargées ou téléchargées à l’aide de l’action rapide. Cependant, il n’inclut pas les détails des ressources qui se trouvaient dans un dossier téléchargé.
+   >Le [!UICONTROL Télécharger] Le rapport affiche uniquement les détails des ressources sélectionnées individuellement et téléchargées ou téléchargées à l’aide de l’action rapide. Toutefois, il n’inclut pas les détails des ressources qui se trouvaient dans un dossier téléchargé.
 
 1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier dans le référentiel CRX où le rapport est stocké. Par défaut, le chemin du dossier est `/content/dam`. Vous pouvez spécifier un autre chemin.
 
@@ -115,7 +119,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
 ## Ajout de colonnes personnalisées  {#add-custom-columns}
 
-Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour afficher davantage de données en fonction de vos besoins :
+Vous pouvez ajouter des colonnes personnalisées aux rapports suivants afin d’afficher plus de données selon vos besoins :
 
 * Chargement
 * Téléchargement

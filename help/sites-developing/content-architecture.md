@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
 exl-id: 9fff10fb-4b65-459a-a7a7-6ee9c0c26bf5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 100%
+source-wordcount: '468'
+ht-degree: 68%
 
 ---
 
 # Architecture de contenu{#content-architecture}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Suivez le modèle de David {#follow-david-s-model}
 
@@ -26,18 +30,18 @@ Le modèle de David a été élaboré par David Nuescheler il y a quelques ann�
 * D’abord les données, ensuite la structure. OK.
 * Prenez le contrôle de la hiérarchie de contenu, ne la laissez pas vous diriger.
 * Les espaces de travail sont destinés à `clone()`, `merge()` et `update()`.
-* Méfiez-vous des SNS (Same Name Siblings).
+* Attention aux frères et soeurs du même nom.
 * Les références sont considérées comme dangereuses.
-* Les fichiers sont des fichiers, et rien d’autre.
+* Les fichiers sont des fichiers.
 * Les identifiants, c’est le mal.
 
 Pour consulter le modèle de David, accédez au wiki Jackrabbit à l’adresse [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### Tout est contenu {#everything-is-content}
 
-Vous devez tout stocker dans le référentiel plutôt que dans des sources de données tierces, telles que des bases de données. Cela s’applique aussi bien au contenu généré qu’aux données binaires comme les images, le code, les configurations, etc. Il nous est ainsi possible d’utiliser un seul ensemble d’API pour gérer tout le contenu, ainsi que pour gérer la promotion de ce contenu par le biais de la réplication. Nous disposons également d’une source unique de sauvegarde, de journalisation, etc.
+Tout doit être stocké dans le référentiel plutôt que de dépendre de sources de données tierces distinctes, telles que des bases de données. Cela s’applique au contenu créé, aux données binaires telles que les images, le code, les configurations, etc. Cela nous permet d’utiliser un seul ensemble d’API pour gérer tout le contenu et gérer la promotion de ce contenu par le biais de la réplication. Nous obtenons également une source unique de sauvegarde, de journalisation, etc.
 
-### Utilisez le principe de conception « Le modèle de contenu d’abord » {#use-the-content-model-first-design-principle}
+### Utiliser le principe de conception &quot;d’abord le modèle de contenu&quot; {#use-the-content-model-first-design-principle}
 
 Lors de la mise au point d’une fonctionnalité, commencez toujours par concevoir la structure du contenu JCR, puis tâchez de lire et d’écrire votre contenu à l’aide des servlets Sling par défaut. Vous pouvez ainsi vous assurer que votre implémentation fonctionne bien avec des mécanismes de contrôle d’accès standard. Cela vous évite également de générer des servlets de type CRUD inutiles.
 
@@ -53,16 +57,16 @@ Les types de nœud fonctionnent à un niveau inférieur du calque d’infrastruc
 
 Le respect des conventions de nommage ajoute de l’homogénéité à votre codebase en réduisant le taux d’incidence des défauts et en augmentant la vitesse des développeurs qui travaillent sur le système. Adobe respecte les conventions suivantes dans le cadre du développement d’AEM :
 
-* Noms des nœuds
+* Noms des noeuds
 
-   * Tout en minuscules
+   * Toutes les minuscules
    * Séparation des mots à l’aide de tirets
 
-* Noms des propriétés
+* Noms de propriété
 
-   * Casse mixte, en commençant par une minuscule
+   * casse Camel, commençant par une lettre minuscule
 
 * Composants (JSP/HTML)
 
-   * Tout en minuscules
+   * Toutes les minuscules
    * Séparation des mots à l’aide de tirets

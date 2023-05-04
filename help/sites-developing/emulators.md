@@ -11,20 +11,24 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 2abbceaa-928e-47d8-81c9-ba5bc24f27e2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 100%
+source-wordcount: '667'
+ht-degree: 69%
 
 ---
 
 # Émulateurs{#emulators}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 >[!NOTE]
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) permet aux auteurs d’afficher une page dans un émulateur qui simule l’environnement dans lequel un utilisateur final consulte la page, comme un appareil mobile ou un client de messagerie électronique.
+Adobe Experience Manager (AEM) permet aux auteurs d’afficher une page dans un émulateur qui simule l’environnement dans lequel un utilisateur final consulte la page, par exemple sur un appareil mobile ou dans un client de messagerie.
 
 Le framework de l’émulateur AEM :
 
@@ -34,22 +38,22 @@ Le framework de l’émulateur AEM :
 
 >[!CAUTION]
 >
->Cette fonction est uniquement prise en charge dans l’IU classique.
+>Cette fonctionnalité est prise en charge uniquement dans l’interface utilisateur classique.
 
 ## Caractéristiques des émulateurs {#emulators-characteristics}
 
-Un émulateur :
+Un émulateur :
 
-* repose sur ExtJS ;
-* fonctionne sur le DOM de la page ;
-* a une apparence définie via CSS ;
-* prend en charge les modules externes (par exemple, le module externe de rotation sur des appareils mobiles) ;
-* est uniquement actif sur l’auteur ;
+* est basé sur ExtJS ;
+* Fonctionne sur le DOM de la page.
+* Son aspect est réglé au moyen de CSS.
+* Prend en charge les modules externes (par exemple, le module externe de rotation de l’appareil mobile).
+* est principal seulement sur l’auteur ;
 * possède son composant de base à l’adresse `/libs/wcm/emulator/components/base`.
 
-### Transformation du contenu par l’émulateur {#how-the-emulator-transforms-the-content}
+### Comment l’émulateur transforme le contenu {#how-the-emulator-transforms-the-content}
 
-L’émulateur fonctionne en encapsulant les contenus du corps HTML dans des balises div d’émulateurs. Par exemple, le code HTML qui suit :
+L’émulateur fonctionne en encapsulant le contenu du corps du HTML dans des DIV de l’émulateur. Par exemple, le code HTML qui suit :
 
 ```xml
 <body>
@@ -101,13 +105,13 @@ De cette manière, l’aspect complet de l’émulateur peut être contrôlé à
 
 >[!NOTE]
 >
->Il est recommandé que le projet HTML encapsule le contenu du corps dans une seule balise div, comme dans l’exemple ci-dessus. Si le contenu du corps contient plusieurs balises, les résultats peuvent être imprévisibles.
+>Il est recommandé que le HTML du projet encapsule le contenu du corps dans une seule balise div, comme dans l’exemple ci-dessus. Si le contenu du corps contient plusieurs balises, des résultats imprévisibles peuvent s’afficher.
 
 ### Émulateurs mobiles {#mobile-emulators}
 
-Les émulateurs mobiles existants :
+Les émulateurs mobiles existants :
 
-* se trouvent sous /libs/wcm/mobile/components/emulators ;
+* Sont sous /libs/wcm/mobile/components/emulators.
 * sont disponibles par le biais de la servlet JSON à l’adresse :
 
    http://localhost:4502/bin/wcm/mobile/emulators.json
@@ -133,7 +137,7 @@ Lorsque le composant de page s’appuie sur le composant de page mobile (`/libs/
 
 #### Création d’un émulateur mobile personnalisé {#creating-a-custom-mobile-emulator}
 
-Pour créer un émulateur mobile personnalisé :
+Pour créer un émulateur mobile personnalisé :
 
 1. En-dessous de `/apps/myapp/components/emulators`, créez le composant ; `myemulator` (type de nœud : `cq:Component`).
 

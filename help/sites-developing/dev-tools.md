@@ -1,7 +1,7 @@
 ---
 title: Outils de développement
 seo-title: Development Tools
-description: Pour développer vos applications JCR, Apache Sling ou AEM, plusieurs jeux d’outils sont disponibles.
+description: Pour développer vos applications JCR, Apache Sling ou AEM, plusieurs ensembles d’outils sont disponibles.
 seo-description: To develop your JCR, Apache Sling or AEM applications, a number of tool sets are available
 uuid: 1bee3a52-5d76-4b0c-a222-a02e12ff3a43
 contentOwner: msm-service
@@ -10,20 +10,24 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 exl-id: 3c18feab-97a6-49f2-96be-7e7458199f5d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 100%
+source-wordcount: '428'
+ht-degree: 69%
 
 ---
 
 # Outils de développement{#development-tools}
 
-Pour développer vos applications JCR, Apache Sling ou AEM, les jeux d’outils suivants sont disponibles :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Pour développer vos applications JCR, Apache Sling ou AEM, les ensembles d’outils suivants sont disponibles :
 
 * Un jeu composé de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) et WebDAV. CRXDE Lite est incorporé dans CRX/AEM et permet d’effectuer des tâches de développement standard dans le navigateur. Avec CRXDE Lite, vous pouvez créer et modifier des fichiers (par exemple, dotés des extensions .jsp et .java), des dossiers, des modèles, des composants, des boîtes de dialogue, des nœuds, des propriétés et des lots lors de la connexion et de l’intégration à SVN.
 
-   CRXDE Lite est recommandé lorsque vous ne disposez pas d’un accès direct au serveur CRX/AEM, lorsque vous développez une application en étendant ou modifiant les composants prêts à l’emploi et les lots Java ou lorsque vous n’avez pas besoin d’un débogueur dédié, d’un achèvement de code et d’une mise en surbrillance de la syntaxe.
+   CRXDE Lite est recommandé lorsque vous n’avez pas d’accès direct au serveur CRX/AEM, lorsque vous développez une application en étendant ou modifiant les composants prêts à l’emploi et les bundles Java ou lorsque vous n’avez pas besoin d’un débogueur dédié, de la complétion de code et de la mise en surbrillance de la syntaxe.
 
 * Un jeu composé d’un environnement de développement intégré (IDE) (par exemple : [Eclipse](/help/sites-developing/howto-projects-eclipse.md) ou [IntelliJ](/help/sites-developing/ht-intellij.md)), d’un outil de génération (par exemple : [Apache Maven](/help/sites-developing/ht-projects-maven.md)), de FileVault développé par Adobe pour mapper un référentiel à un système de fichiers, d’un système de contrôle de versions (par exemple : Subversion), d’un système de suivi des bogues (par exemple : Jira), d’un système central de gestion des dépendances (par exemple : Apache Archiva) et d’un système d’automatisation de la génération (par exemple : Apache Continuum).
 
@@ -31,15 +35,15 @@ Pour développer vos applications JCR, Apache Sling ou AEM, les jeux d’outils
 
 ## Extensions pour les environnements de développement intégrés {#extensions-for-integrated-development-environments}
 
-Adobe a sorti les extensions suivantes :
+Adobe a publié les extensions suivantes :
 
 * [Extension AEM Eclipse](/help/sites-developing/aem-eclipse.md)
 * [Extension AEM Brackets](/help/sites-developing/aem-brackets.md)
-* [Extension AEM IntelliJ (de Headwire)](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf)
+* [AEM Extension IntelliJ](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf) (via Headwire)
 
 ### Autres outils {#other-tools}
 
-AEM est livré avec d’autres outils qui facilitent le développement :
+AEM des navires dotés d&#39;autres outils qui facilitent le développement :
 
 * [Éditeur de boîtes de dialogue](/help/sites-developing/dialog-editor.md)
 * [Utilisation du traducteur pour gérer les dictionnaires](/help/sites-developing/i18n-translator.md)

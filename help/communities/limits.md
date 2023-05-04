@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 role: Admin
 exl-id: fc7ce4d0-2051-4a67-a0d6-baf615e09ca4
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 2%
+source-wordcount: '470'
+ht-degree: 3%
 
 ---
 
 # Limites des contributions des membres {#member-contribution-limits}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
@@ -55,7 +59,7 @@ Pour atteindre cette configuration OSGi :
 
    Si cette case est cochée, définissez automatiquement des limites de contribution pour les utilisateurs lorsqu’ils s’enregistrent en tant que membres de la communauté. Cela se reflète dans le profil du membre de la communauté et peut être activé/désactivé dans la variable [console membres](members.md). Les nouveaux membres disposant d’une adresse électronique provenant d’une liste autorisée de domaines ne sont jamais contraints.
 
-   Cette option n’est pas cochée par défaut.
+   La case par défaut est décochée.
 
 * **[!UICONTROL Limite UGC]**
 

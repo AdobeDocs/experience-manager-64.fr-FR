@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
 exl-id: 864e6b0d-178b-4b91-85d3-34b90e999ee3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 100%
+source-wordcount: '1144'
+ht-degree: 94%
 
 ---
 
 # Messages d’erreur de validation standard des formulaires adaptatifs {#standard-validation-error-messages}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les formulaires adaptatifs valident les entrées que vous fournissez dans les champs en fonction de critères de validation prédéfinis. Les critères de validation font référence aux valeurs d’entrée acceptables pour les champs d’un formulaire adaptatif. Vous pouvez définir les critères de validation en fonction de la source de données que vous utilisez avec le formulaire adaptatif. Par exemple, si vous utilisez des services web RESTful comme source de données, vous pouvez définir les critères de validation dans un fichier de définition Swagger.
 
@@ -80,7 +84,7 @@ Avant d’ajouter un gestionnaire personnalisé, vous devez configurer le formul
 
 ### Ajouter un gestionnaire d’erreur personnalisé lors de l’envoi du formulaire adaptatif {#add-custom-error-handler-af-submission}
 
-AEM Forms fournit des gestionnaires de réussite et d’erreur prêts à l’emploi pour les envois de formulaires. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises en tant que paramètres au gestionnaire approprié pour exécuter la fonction.
+AEM Forms fournit des gestionnaires de réussite et d’erreur prêts à l’emploi pour les envois de formulaire. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises en tant que paramètres au gestionnaire approprié pour exécuter la fonction.
 
 Exécutez les étapes suivantes pour ajouter un gestionnaire d’erreurs personnalisé lors de l’envoi du formulaire adaptatif :
 

@@ -10,20 +10,24 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 29e0bdfa-1d49-47d9-a332-04da062d3d3f
 exl-id: 26d912e1-d8ee-44fc-8c82-ccc66551ddc1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 36%
+source-wordcount: '325'
+ht-degree: 21%
 
 ---
 
 # Utilisation de l’éditeur de texte enrichi pour créer du contenu {#using-the-rich-text-editor-to-author-content}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 L’éditeur de texte enrichi (RTE) est un élément de base de la création de texte dans AEM pages. De nombreux composants tels que Texte, Texte et Image et Tableau sont basés sur l’éditeur de texte enrichi.
 
 >[!NOTE]
 >
->La copie de listes imbriquées dans l’éditeur de texte enrichi ne fonctionne pas comme prévu. Lorsque vous copiez des listes imbriquées à partir de Microsoft Word, vous devez supprimer manuellement les listes après le collage de texte dans l’éditeur de texte enrichi.
+>La copie de listes imbriquées dans l’éditeur de texte enrichi ne fonctionne pas comme prévu. Lors de la copie de listes imbriquées à partir de Microsoft Word, vous devez nettoyer manuellement les listes après avoir collé le texte dans l’éditeur de texte enrichi.
 
 ## Modification statique {#in-place-editing}
 
@@ -31,7 +35,7 @@ Si vous sélectionnez un composant textuel en cliquant ou en appuyant une seule 
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Appuyez/cliquez de nouveau ou sélectionnez initialement le composant avec un double appui/clic lent pour ouvrir la modification statique, qui possède sa propre barre d’outils. Vous pouvez alors modifier le contenu et apporter des modifications de base à la mise en forme :
+Appuyez/cliquez de nouveau ou sélectionnez initialement le composant avec un double appui/clic lent pour ouvrir la modification statique, qui possède sa propre barre d’outils. Vous pouvez y modifier le contenu et apporter des modifications de base à la mise en forme.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

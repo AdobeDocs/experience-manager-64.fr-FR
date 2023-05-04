@@ -11,18 +11,22 @@ content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 4ecb6e10-1d6b-4065-917f-e86215687e29
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 98%
+source-wordcount: '999'
+ht-degree: 80%
 
 ---
 
 # Modèles{#templates}
 
-Les modèles sont utilisés à divers endroits dans AEM :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-* Lors de la [création d’une page, vous devez sélectionner un modèle](#templates-pages). C’est la base pour créer la page. Le modèle définit la structure de la page créée, le contenu initial et les [composants](/help/sites-authoring/default-components.md) qui peuvent être utilisés (propriétés de conception).
+Les modèles sont utilisés à divers endroits dans AEM :
+
+* When [création d’une page pour laquelle vous devez sélectionner un modèle](#templates-pages); il sera utilisé comme base pour la nouvelle page. Le modèle définit la structure de la page créée, tout contenu initial et le [components](/help/sites-authoring/default-components.md) qui peut être utilisé (propriétés de conception).
 
 * Lorsque vous [créez un fragment de contenu, vous devez également sélectionner un modèle](#templates-content-fragments). Ce modèle définit la structure, les éléments initiaux et les variations.
 
@@ -35,7 +39,7 @@ Les modèles suivants sont décrits en détail :
 
 ## Modèles - Pages {#templates-pages}
 
-AEM propose désormais deux types de modèles de base pour la création de pages :
+AEM propose désormais deux types de modèles de base pour la création de pages :
 
 >[!NOTE]
 >
@@ -45,15 +49,15 @@ AEM propose désormais deux types de modèles de base pour la création de page
 
 Les modèles modifiables sont désormais considérés comme des bonnes pratiques pour le développement avec AEM.
 
-Avantages des modèles modifiables :
+Les avantages des modèles modifiables :
 
-* Peuvent être [créés](/help/sites-authoring/templates.md#creating-a-new-template-template-author) et [modifiés](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) par vos auteurs.
+* Peut être [created](/help/sites-authoring/templates.md#creating-a-new-template-template-author) et [modifié](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) par vos auteurs.
 
-* Sont proposés pour vous permettre de définir ce qui suit pour toutes les pages créées avec le modèle :
+* Ont été introduites pour vous permettre de définir les éléments suivants pour toutes les pages créées avec le modèle :
 
    * la structure
    * le contenu initial
-   * les stratégies de contenu
+   * stratégies de contenu
 
 * Une fois la nouvelle page créée, une connexion dynamique est maintenue entre la page et le modèle. Cela signifie que les modifications apportées à la structure du modèle sont répercutées sur les pages créées avec ce modèle (les modifications apportées au contenu initial ne le sont pas).
 * Utilisent des stratégies de contenu (modifiés à partir de l’éditeur de modèles) pour conserver les propriétés de conception (n’utilise pas le mode Conception dans l’éditeur de page).
@@ -68,11 +72,11 @@ Avantages des modèles modifiables :
 
 Modèles statiques :
 
-* Doivent être définis et configurés par vos développeurs.
+* Doit être défini et configuré par vos développeurs.
 * Il s’agissait du système de création de modèles d’AEM d’origine, disponible dans de nombreuses versions.
-* Un modèle statique est une hiérarchie de nœuds qui a la même structure que la page à créer, mais sans contenu réel.
-* Sont copiés pour créer la nouvelle page, aucune connexion dynamique n’existe après cela.
-* Utilisez le [mode Conception](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
+* Un modèle statique est une hiérarchie de noeuds ayant la même structure que la page à créer, mais sans contenu réel.
+* sont copiés pour créer la page ; aucune connexion dynamique n’existe par la suite.
+* Utilisations [Mode de conception](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
 * Sont stockés sous `/apps`.
 * Consultez les [Modèles statiques](/help/sites-developing/page-templates-static.md) pour plus d’informations.
 

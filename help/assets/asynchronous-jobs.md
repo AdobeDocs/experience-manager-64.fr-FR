@@ -5,18 +5,22 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: 0abdfe87-d932-41dd-b1e6-9f5fa5b924fe
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 19%
+source-wordcount: '664'
+ht-degree: 16%
 
 ---
 
 # Opérations asynchrones {#asynchronous-operations}
 
-Pour réduire l&#39;impact négatif sur les performances, [!DNL Adobe Experience Manger Assets] traite de manière asynchrone certaines opérations de ressources longues et gourmandes en ressources. Le traitement asynchrone implique de mettre plusieurs tâches en file d’attente et de les exécuter en série selon la disponibilité des ressources système. Ces opérations incluent :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-* Suppression de nombreuses ressources 
+Pour réduire l&#39;impact négatif sur les performances, [!DNL Adobe Experience Manger Assets] traite de manière asynchrone certaines opérations de ressources longues et gourmandes en ressources. Le traitement asynchrone implique de mettre plusieurs tâches en file d’attente et de les exécuter en série selon la disponibilité des ressources système. Ces opérations comprennent :
+
+* Suppression de nombreuses ressources.
 * Déplacement de nombreuses ressources ou de ressources avec de nombreuses références.
 * Exportation et importation de métadonnées de ressources en bloc.
 
@@ -36,9 +40,9 @@ Lorsque [!DNL Assets] traite une opération de manière asynchrone, vous recevez
 
    ![État et détails des opérations asynchrones](assets/job_status.png)
 
-   Pour vérifier la progression d’une opération, voir la section **[!UICONTROL État]** colonne . Selon la progression, l’un des états suivants s’affiche :
+   Pour vérifier la progression d’une opération, voir la section **[!UICONTROL État]** colonne . Selon la progression, l’un des statuts suivants s’affiche :
 
-   * **[!UICONTROL Actif]** : l’opération est en cours de traitement. 
+   * **[!UICONTROL Principal]**: L’opération est en cours de traitement.
    * **[!UICONTROL Succès]**: L’opération est terminée.
    * **[!UICONTROL Échec]** ou **[!UICONTROL Erreur]**: L’opération n’a pas pu être traitée.
    * **[!UICONTROL Planifié]**: L’opération est planifiée à une date ultérieure.

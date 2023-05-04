@@ -10,20 +10,24 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 88ee8573-58c4-42cd-8e36-2ea4a0d654e4
 exl-id: e03cf05c-2469-4883-ae7b-9d7e6660b71f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 29%
+source-wordcount: '971'
+ht-degree: 3%
 
 ---
 
 # Fonction de messagerie {#messaging-feature}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Outre les interactions publiques qui se produisent dans les forums et les commentaires, la fonction de messagerie d’AEM Communities permet aux membres de la communauté d’interagir de manière plus privée.
 
 Cette fonctionnalité peut être incluse lors d’une [site communautaire](overview.md#communitiessites) est créée.
 
-La fonction de messagerie permet :
+Les fonctionnalités de messagerie permettent d’effectuer les opérations suivantes :
 
 * Envoyer un message à un ou plusieurs membres de la communauté
 * Envoyer un message à un groupe de membres de la communauté
@@ -64,7 +68,7 @@ Une fois l’héritage annulé, il sera possible de sélectionner la variable `c
 
 ![chlimage_1-397](assets/chlimage_1-397.png)
 
-#### Onglet Simple {#basic-tab}
+#### Onglet De base {#basic-tab}
 
 ![chlimage_1-398](assets/chlimage_1-398.png)
 
@@ -72,13 +76,16 @@ Une fois l’héritage annulé, il sera possible de sélectionner la variable `c
 (*Obligatoire*) Définissez cette variable sur la valeur de la propriété . `serviceSelector.name` de la [Service des opérations de messagerie AEM Communities](messaging.md#messaging-operations-service).
 
 * **[!UICONTROL Composer la page]**
-(*Obligatoire*) La page à ouvrir lorsqu’un membre clique sur le bouton `Reply` bouton . La page cible devrait contenir le formulaire **[!UICONTROL Composer le message.]**
+(*Obligatoire*) La page à ouvrir lorsqu’un membre clique sur le bouton `Reply` bouton . La page cible doit contenir le **[!UICONTROL Composer le message]** formulaire.
 
-* **[!UICONTROL Répondre/Afficher en tant que ressource]** Si vous cochez cette case, les URL de réponse et d’affichage font référence à une ressource. Dans le cas contraire, les données sont transmises sous forme de paramètres de requête dans l’URL. 
+* **[!UICONTROL Réponse/Afficher comme ressource]**
+Si cette case est cochée, l’URL de réponse et l’URL de vue font référence à une ressource ; dans le cas contraire, les données sont transmises en tant que paramètres de requête dans l’URL.
 
-* **[!UICONTROL Formulaire d’affichage du profil]** Formulaire de profil à utiliser pour afficher le profil de l’expéditeur.
+* **[!UICONTROL Formulaire d’affichage de profil]**
+Formulaire de profil à utiliser pour afficher le profil des expéditeurs.
 
-* **[!UICONTROL Dossier Corbeille]** Si vous cochez cette case, ce composant Liste des messages affiche uniquement les messages marqués comme supprimés (corbeille).
+* **[!UICONTROL Dossier de la corbeille]**
+Si cette case est cochée, ce composant Liste de messages affiche uniquement les messages marqués comme supprimés (corbeille).
 
 * **[!UICONTROL Chemins du dossier]**
 (*Obligatoire*) en référençant les valeurs définies pour `inbox.path.name` et `sentitems.path.name` dans le [Service des opérations de messagerie AEM Communities](messaging.md#messaging-operations-service). Lors de la configuration d’une `Inbox`, ajoutez une entrée à l’aide de la valeur de `inbox.path.name`. Lors de la configuration d’une `Outbox`, ajoutez une entrée à l’aide de la valeur de `sentitems.path.name`. Lors de la configuration de pour `Trash`, ajoutez deux entrées avec les deux valeurs.
@@ -103,9 +110,11 @@ Si cette case est cochée, une
 Si cette case est cochée, s’affiche. 
 **`Reply`**, **`Reply All`**, **`Forward`** et **`Delete`** des boutons permettant de renvoyer ou de supprimer un message. La fonction de suppression est-elle dupliquée si **`Delete Button`** est également cochée.
 
-* **[!UICONTROL Messages par page]** Le nombre spécifié est le nombre maximal de messages affichés par page dans le modèle de pagination. Si aucun chiffre n’est spécifié (si vous laissez le champ vide), tous les messages s’affichent sans pagination.
+* **[!UICONTROL Messages par page]**
+Le nombre spécifié est le nombre maximal de messages affichés par page dans un modèle de pagination. Si aucun nombre n’est spécifié (laissez le champ vide), tous les messages sont affichés et il n’y a pas de pagination.
 
-* **[!UICONTROL Modèles d’horodatage]** Indiquez des modèles d’horodatage pour une ou plusieurs langues. Des valeurs sont fournies par défaut pour en, de, fr, it, es, ja, zh_CN et ko_KR.
+* **[!UICONTROL Modèles d’horodatage]**
+Fournir des modèles d’horodatage pour une ou plusieurs langues. La valeur par défaut est en, de, fr, it, es, ja, zh_CN, ko_KR.
 
 * **[!UICONTROL Afficher l’utilisateur]**
 Choisissez l’une 
@@ -129,19 +138,23 @@ Une fois l’héritage annulé, il sera possible de sélectionner la variable `c
 
 ![chlimage_1-401](assets/chlimage_1-401.png)
 
-#### Onglet Simple {#basic-tab-1}
+#### Onglet De base {#basic-tab-1}
 
 ![chlimage_1-402](assets/chlimage_1-402.png)
 
-* **[!UICONTROL URL de redirection]** Saisissez l’URL de la page affichée une fois le message envoyé. Par exemple, 
+* **[!UICONTROL URL de redirection]**
+Saisissez l&#39;URL de la page affichée après l&#39;envoi du message. Par exemple, 
 `../messaging.html`.
 
-* **[!UICONTROL Annuler l’URL]** Saisissez l’URL de la page affichée si l’expéditeur annule le message. Par exemple, 
+* **[!UICONTROL Annuler l’URL]**
+Saisissez l&#39;URL de la page affichée si l&#39;expéditeur annule le message. Par exemple, 
 `../messaging.html`.
 
-* **[!UICONTROL Longueur maximale de l’objet du message]** Nombre maximal de caractères autorisé dans le champ Objet. Par exemple, 500. La valeur par défaut n’est pas limitée.
+* **[!UICONTROL Longueur maximale de l’objet du message]**
+Nombre maximal de caractères autorisés dans le champ Objet. Par exemple, 500. La valeur par défaut n’est pas limitée.
 
-* **[!UICONTROL Longueur maximale du corps du message]** Nombre maximal de caractères autorisé dans le champ Contenu. Par exemple, 10000. La valeur par défaut n’est pas limitée.
+* **[!UICONTROL Longueur maximale du corps du message]**
+Nombre maximal de caractères autorisés dans le champ Contenu . Par exemple, 10 000. La valeur par défaut n’est pas limitée.
 
 * **[!UICONTROL Sélecteur de service]**
 (*Obligatoire*) Définissez cette variable sur la valeur de la propriété . **`serviceSelector.name`** de la [Service des opérations de messagerie AEM Communities](messaging.md#messaging-operations-service).
@@ -152,7 +165,7 @@ Une fois l’héritage annulé, il sera possible de sélectionner la variable `c
 
 * **[!UICONTROL Afficher le champ d’objet]**
 Si cette case est cochée, le 
-`Subject` et activer l’ajout d’un objet au message. Cette option n’est pas cochée par défaut.
+`Subject` et activer l’ajout d’un objet au message. La valeur par défaut n’est pas cochée.
 
 * **[!UICONTROL Libellé du sujet]**
 Saisissez le texte à afficher en regard de l’option 
@@ -160,20 +173,22 @@ Saisissez le texte à afficher en regard de l’option
 
 * **[!UICONTROL Afficher le champ de fichier joint]**
 Si cette case est cochée, le 
-`Attachment` et activer l’ajout de pièces jointes au message. Cette option n’est pas cochée par défaut.
+`Attachment` et activer l’ajout de pièces jointes au message. La valeur par défaut n’est pas cochée.
 
 * **[!UICONTROL Joindre l’étiquette du fichier]**
 Saisissez le texte à afficher en regard de l’option 
-`Attachment` champ . La valeur par défaut est **`Attach File`**.
+`Attachment` field. La valeur par défaut est **`Attach File`**.
 
 * **[!UICONTROL Afficher le champ de contenu]**
 Si cette case est cochée, le 
-`Content` et activer l’ajout d’un corps de message. Cette option n’est pas cochée par défaut.
+`Content` et activer l’ajout d’un corps de message. La valeur par défaut n’est pas cochée.
 
 * **[!UICONTROL Libellé de contenu]**
 Saisissez le texte à afficher en regard de l’option 
-`Content` champ . La valeur par défaut est **`Body`**.
+`Content` field. La valeur par défaut est **`Body`**.
 
-* **[!UICONTROL Avec l’éditeur de texte enrichi]** Si vous cochez cette case, une zone de texte personnalisée Contenu est utilisée avec son propre éditeur de texte enrichi. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Avec l’éditeur de texte enrichi]**
+Si cette case est cochée, elle indique l’utilisation d’une zone de texte de contenu personnalisée avec son propre éditeur de texte enrichi. La valeur par défaut n’est pas cochée.
 
-* **[!UICONTROL Modèles d’horodatage]** Indiquez des modèles d’horodatage pour une ou plusieurs langues. Des valeurs sont fournies par défaut pour en, de, fr, it, es, ja, zh_CN et ko_KR.
+* **[!UICONTROL Modèles d’horodatage]**
+Fournir des modèles d’horodatage pour une ou plusieurs langues. La valeur par défaut est en, de, fr, it, es, ja, zh_CN, ko_KR.

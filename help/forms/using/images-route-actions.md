@@ -1,7 +1,7 @@
 ---
-title: Personnalisation des images utilisées dans les actions d’itinéraire
+title: Personnaliser les images utilisées dans les actions d’itinéraire
 seo-title: Customize images used in route actions
-description: Comment personnaliser les images utilisées dans les actions d’itinéraire dans l’espace de travail LiveCycle AEM Forms.
+description: Comment personnaliser les images utilisées dans les actions d’itinéraire dans l’espace de travail AEM Forms LiveCycle.
 seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
@@ -9,20 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 exl-id: 7b1f60e7-c8fa-43b6-bef4-88b42e7bbc36
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 100%
+source-wordcount: '344'
+ht-degree: 69%
 
 ---
 
-# Personnalisation des images utilisées dans les actions d’itinéraire {#customize-images-used-in-route-actions}
+# Personnaliser les images utilisées dans les actions d’itinéraire {#customize-images-used-in-route-actions}
 
-Pour personnaliser les images utilisées dans les actions d’itinéraire, suivez les étapes décrites dans [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md), puis la procédure décrite dans cet article.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Pour personnaliser les images utilisées dans les actions d’itinéraire, suivez la procédure décrite à la section [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md) suivi des étapes décrites dans cet article.
 
 ## Images pour les actions d’itinéraire {#images-for-route-actions}
 
-1. Ajoutez les styles définissant les images dans le CSS à l’emplacement suivant pour les nouvelles actions d’itinéraire :
+1. Ajoutez les styles définissant les images dans le CSS à l’emplacement suivant pour les nouvelles actions d’itinéraire :
 
    `/apps/ws/css/newStyle.css`
 
@@ -34,7 +38,7 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
 
    >[!NOTE]
    >
-   >Utilisez le même nom de style que celui de l’action d’itinéraire.
+   >Préférez l’utilisation du nom du style pour qu’il soit identique au nom de l’action d’itinéraire.
 
    ```css
    .myStyle1{
@@ -44,9 +48,9 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
        }
    ```
 
-## Menu déroulant de l’action de tâche Liste de tâches {#task-list-task-action-popup}
+## Fenêtre contextuelle d’action de tâche Liste de tâches {#task-list-task-action-popup}
 
-1. Créez un menu déroulant d’actions de liste de tâches, voir [Création du code de l’espace de travail AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Vous devez utiliser le paquet de développement.
+1. Créez un menu déroulant d’actions de liste de tâches, voir [Création du code de l’espace de travail AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Vous devez utiliser le package de développement.
 
 1. Copiez `/libs/ws/js/runtime/templates/task.html` dans `/apps/ws/js/runtime/templates/task.html`.
 

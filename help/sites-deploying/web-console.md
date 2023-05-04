@@ -1,7 +1,7 @@
 ---
 title: Console web
 seo-title: Web Console
-description: Apprenez à utiliser le console web d’AEM.
+description: Découvrez comment utiliser la console web d’AEM.
 seo-description: Learn how to use the AEM web console.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
 contentOwner: Guillaume Carlino
@@ -11,50 +11,54 @@ topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
 exl-id: a8a3267d-2af5-4cca-b76d-66de62d93f69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 75%
+source-wordcount: '754'
+ht-degree: 58%
 
 ---
 
 # Console web{#web-console}
 
-Le console web d’AEM est basée sur la [Console de gestion web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix est une initiative communautaire pour mettre en œuvre le plateforme de service OSGi R4 qui comprend la structure et les services standards OSGi.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+La console Web d’AEM est basée sur la variable [Console de gestion Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix est un effort de la communauté pour mettre en oeuvre la plateforme de service OSGi R4, qui inclut la structure OSGi et les services standard.
 
 >[!NOTE]
 >
->Sur la console web, toutes les descriptions qui mentionnent les paramètres par défaut sont relatives aux paramètres Sling par défaut.
+>Dans la console Web, toutes les descriptions qui mentionnent les paramètres par défaut sont liées aux valeurs par défaut de Sling.
 >
 >AEM ayant ses propres paramètres par défaut, ces derniers peuvent être différents de ceux répertoriés dans la console. 
 
-Le console web offre une sélection d’onglets pour le maintien les lots OSGi dont les suivants :
+La console web propose une sélection d’onglets pour la maintenance des lots OSGi, notamment :
 
-* [Configuration :](#configuration) utilisé pour configurer les lots OSGi, il s’agit donc du mécanisme sous-jacent pour configurer les paramètres du système AEM
-* [Lots](#bundles) : utilisé pour installer les lots
-* [Composants](#components) : utilisé pour contrôler l’état des composants requis pour AEM
+* [Configuration](#configuration): utilisé pour configurer les lots OSGi et est donc le mécanisme sous-jacent pour configurer les paramètres système AEM
+* [Lots](#bundles): utilisé pour installer des lots
+* [Composants](#components): utilisé pour contrôler l’état des composants requis pour AEM
 
-Toutes les modifications apportées sont immédiatement appliquées au système en cours d’exécution. Le redémarrage n’est pas requis.
+Toutes les modifications apportées sont immédiatement appliquées au système en cours d’exécution. Aucun redémarrage n’est requis.
 
-La console est accessible à partir de `../system/console`; par exemple :
+Cette console est accessible à partir de `../system/console` ; par exemple :
 
 `http://localhost:4502/system/console/components`
 
 ## Configuration {#configuration}
 
-L’onglet **Configuration** est utilisé pour configurer les lots OSGi. Il s’agit donc du mécanisme sous-jacent pour configurer les paramètres du système AEM.
+Le **Configuration** est utilisé pour configurer les lots OSGi. Il s’agit donc du mécanisme sous-jacent pour configurer les paramètres système d’AEM.
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Configuration OSGi avec la console web](/help/sites-deploying/configuring-osgi.md).
+>Voir [Configuration OSGi à l’aide de la console web](/help/sites-deploying/configuring-osgi.md) pour plus de détails.
 
 L’onglet **Configuration** est accessible soit via :
 
-* Le menu déroulant :
+* Le menu déroulant :
 
    **OSGi >**
 
-* L’URL ; par exemple :
+* L’URL ; par exemple :
 
    `http://localhost:4502/system/console/configMgr`
 
@@ -64,12 +68,14 @@ Une liste des configurations s’affiche :
 
 Il existe deux types de configurations disponibles à partir des listes déroulantes de cet écran :
 
-* **Configurations** Vous permet de mettre à jour les configurations existantes. Elles ont une identité permanente (PID) et peuvent être :
+* **Configurations**
+Vous permet de mettre à jour les configurations existantes. Ils possèdent une identité persistante (PID) et peuvent être :
 
-   * standard et intégrales pa rapport à AEM ; elles sont nécessaires, car si on les supprime, leurs valeurs sont renvoyées aux paramètres par défaut.
-   * des instances créées à partir des configurations d’usine ; ces instances sont créées par l’utilisateur. Leur suppression entraîne la suppression de l’instance. 
+   * la norme et l&#39;intégralité de l&#39;AEM; si elles sont supprimées, les valeurs retournent aux paramètres par défaut.
+   * les instances créées à partir des configurations d’usine ; ces instances sont créées par l’utilisateur, la suppression supprime l’instance.
 
-* **Configurations d’usine** Vous permet de créer une instance de l’objet de la fonctionnalité requise. 
+* **Configurations d’usine**
+Vous permet de créer une instance de l’objet de la fonctionnalité requise. 
 
    Elles se verront attribuer une identité permanente, puis seront répertoriées dans les configurations de la liste déroulante.
 
@@ -87,29 +93,29 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
 * **Réinitialiser**
 
-   Réinitialisez les paramètres affichés à l’écran pour les derniers enregistrés.
+   Réinitialise les paramètres affichés sur l’écran pour revenir à ceux enregistrés en dernier.
 
 * **Supprimer**
 
-   Supprimez la configuration actuelle. S’il s’agit d’une configuration standard, les paramètres sont renvoyés aux paramètres par défaut. Si elle a été créée à partir d’une configuration d’usine, l’instance spécifiée est supprimée.
+   Supprime la configuration actuelle. Si elles sont standard, les paramètres sont renvoyés aux paramètres par défaut. Si elle est créée à partir d’une configuration d’usine, l’instance spécifique est supprimée.
 
-* **Délier**
+* **Dissocier**
 
-   Déliez la configuration actuelle du lot.
+   Dissocie la configuration actuelle du lot.
 
 * **Annuler**
 
-   Annuler les modifications en cours.
+   Annule toutes les modifications actuelles.
 
 ## Lots {#bundles}
 
-Le **Lots** tab est le mécanisme d’installation des lots OSGi requis pour AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
+L’onglet **Lots** correspond au mécanisme permettant d’installer les lots OSGi requis par AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
 
-* Le menu déroulant :
+* Le menu déroulant :
 
    **OSGi >**
 
-* L’URL ; par exemple :
+* L’URL ; par exemple :
 
    `http://localhost:4502/system/console/bundles`
 
@@ -117,25 +123,25 @@ Une liste de lots s’affiche :
 
 ![screen_shot_2012-02-15at44740pm](assets/screen_shot_2012-02-15at44740pm.png)
 
-En utilisant cet onglet vous pouvez :
+En utilisant cet onglet vous pouvez réaliser les opérations suivantes :
 
-* **Installation ou mise à jour**
+* **Installer ou mettre à jour**
 
-   Vous pouvez **Parcourir** pour trouver le fichier contenant votre lot et spécifier s’il doit **Début** immédiatement et à quel moment **Niveau de départ**.
+   Vous pouvez utiliser l’option **Parcourir** pour trouver le fichier contenant votre lot et spécifier s’il doit **commencer** immédiatement et à quel **niveau de départ**.
 
 * **Recharger**
 
    Actualise la liste affichée.
 
-* **Actualisation des modules**
+* **Actualiser les packages**
 
-   Cela vérifiera les références de tous les packages et les actualisera si nécessaire.
+   Cela permettra de vérifier les références de tous les packages et de les actualiser au besoin.
 
    Par exemple, après une mise à jour, l’ancienne et la nouvelle version peuvent toujours être exécutées en raison de références antérieures. Cette option permettra de vérifier et de déplacer toutes les références vers la nouvelle version, ce qui permettra d’arrêter l’ancienne version.
 
-* **Début**
+* **Démarrer**
 
-   Commence un lot en fonction du niveau de départ spécifié.
+   Lance un lot en fonction du niveau initial spécifié.
 
 * **Arrêter**
 
@@ -143,25 +149,25 @@ En utilisant cet onglet vous pouvez :
 
 * **Désinstaller**
 
-   Désinstalle le lot du système.
+   Permet de désinstaller le lot du système.
 
-* **voir l’état**
+* **Afficher le statut**
 
-   La liste spécifie l’état actuel du lot ; Cliquez sur le nom d’un lot spécifique avec des informations supplémentaires.
+   La liste indique le statut actuel du lot ; en cliquant sur le nom d’un lot spécifique, vous obtenez des informations supplémentaires.
 
 >[!NOTE]
 >
->Après la **mise à jour**, il est recommandé d’**actualiser les modules**.
+>Après **Mettre à jour** il est recommandé d’effectuer une **Actualisation des modules**.
 
 ## Composants {#components}
 
-Le **Composants** vous permet d’activer et/ou de désactiver les différents composants. Il est accessible soit par :
+L’onglet **Composants** vous permet d’activer et de désactiver divers composants. Il est accessible par les éléments suivants :
 
-* Le menu déroulant :
+* Le menu déroulant :
 
    **Principal >**
 
-* L’URL ; par exemple :
+* L’URL ; par exemple :
 
    `http://localhost:4502/system/console/components`
 
@@ -169,12 +175,12 @@ Une liste de composants s’affiche. Plusieurs icônes sont disponibles pour vou
 
 ![screen_shot_2012-02-15at52144pm](assets/screen_shot_2012-02-15at52144pm.png)
 
-En cliquant sur le nom d’un composant spécifique, vous obtenez plus d’informations sur son état. Cela vous permet également d’activer, de désactiver ou de recharger le composant.
+Cliquer sur le nom d’un composant spécifique affiche des informations supplémentaires sur son état. Vous pouvez également activer, désactiver ou recharger le composant.
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
 >[!NOTE]
 >
->L’activation ou la désactivation d’un composant n’est effective qu’une fois qu’AEM/CRX est redémarré.
+>L’activation ou la désactivation d’un composant ne s’applique que jusqu’au redémarrage d’AEM/CRX.
 >
->L’état de démarrage est défini dans le descripteur du composant, qui est généré lors du développement et stocké dans le lot lors de la création du lot. 
+>L’état de départ est défini dans le descripteur de composant, qui est généré pendant le développement et stocké dans le lot au moment de la création du lot.

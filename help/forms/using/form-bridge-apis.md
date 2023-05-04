@@ -1,7 +1,7 @@
 ---
-title: API Form Bridge pour les formulaires HTML5
+title: API FormBridge pour les formulaires HTML5
 seo-title: Form Bridge APIs for HTML5 forms
-description: Les applications externes utilisent l’API FormBridge pour se connecter au formulaire pour périphériques mobiles XFA. L’API distribue un événement FormBridgeInitialized sur la fenêtre parent.
+description: Les applications externes utilisent l’API FormBridge pour se connecter au formulaire XFA Mobile. L’API distribue un événement FormBridgeInitialized sur la fenêtre parente.
 seo-description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
 uuid: 0db22649-522b-4857-9ffd-826c52381d15
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: ad669f3b-2bda-4c41-8032-cf25a192ce12
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 95%
+source-wordcount: '975'
+ht-degree: 82%
 
 ---
 
-# API Form Bridge pour les formulaires HTML5 {#form-bridge-apis-for-html-forms}
+# API FormBridge pour les formulaires HTML5 {#form-bridge-apis-for-html-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez utiliser l’API Form Bridge pour ouvrir un canal de communication entre les formulaires HTML5 XFA et vos applications. L’API Form Bridge fournit une API de **connexion** pour créer la connexion.
 
@@ -43,7 +47,7 @@ window.addEventListener("FormBridgeInitialized",
 
 **getBridgeVersion()**
 
-Renvoie le numéro de version de la bibliothèque de script.
+Renvoie le numéro de version de la bibliothèque de script
 
 * **Input** : aucune
 * **Output** : numéro de version de la bibliothèque de script.
@@ -63,8 +67,8 @@ Renvoie le numéro de version de la bibliothèque de script.
    * **handler** : fonction à exécuter après la connexion de Form Bridge
    * **contexte**: Objet auquel le contexte (ceci) de la fonction *handler* est défini.
 
-* **Output** : aucune
-* **Error** : aucune
+* **Sortie**: Aucun
+* **Erreur**: Aucun
 
 **getDataXML(options)** : renvoie les données actuelles du formulaire au format XML.
 
@@ -73,15 +77,15 @@ Renvoie le numéro de version de la bibliothèque de script.
    * **options :** objet JavaScript contenant les propriétés suivantes :
 
       * **Error**: Error Handler Function
-      * **success** : fonction du gestionnaire de réussite. Cette fonction transmet un objet contenant du code XML à la propriété *data*.
-      * **context** : objet pour lequel le contexte (valeur « this ») de la fonction *success* est défini.
+      * **success** : fonction du gestionnaire de réussite. Cette fonction transmet un objet contenant du code XML dans *data* .
+      * **contexte**: Objet auquel le contexte (ceci) de la propriété *success* est définie
       * **validationChecker** : fonction à appeler pour vérifier les erreurs de validation reçues du serveur. La fonction de validation transmet un tableau de chaînes d’erreur.
       * **formState** : état JSON du formulaire XFA pour lequel les données XML doivent être renvoyées. Si cette fonction n’est pas spécifiée, elle renvoie les données XML du formulaire actuellement généré.
 
 * **Output :** aucune
 * **Error :** aucune
 
-**registerConfig(configName, config)** : enregistre les configurations propres à l’utilisateur/au portail avec FormBridge. Ces configurations remplacent les configurations par défaut. Les configurations prises en charge sont spécifiées dans la section config.
+**registerConfig(configName, config)** : enregistre les configurations propres à l’utilisateur/au portail avec FormBridge. Ces configurations remplacent les configurations par défaut. Les configurations prises en charge sont spécifiées dans la section config .
 
 * **Entrée:**
 
@@ -148,8 +152,8 @@ Renvoie le numéro de version de la bibliothèque de script.
 **hideSubmitButtons()** : masque tous les boutons d’envoi dans le formulaire.
 
 * **Input** : aucune
-* **Output** : aucune
-* **Error** : renvoie l’exception si l’état du formulaire n’est pas initialisé
+* **Sortie**: Aucun
+* **Erreur**: Renvoie une exception si l’état du formulaire n’est pas initialisé
 
 **getFormState()** : renvoie le JSON représentant l’état du formulaire.
 
@@ -158,13 +162,13 @@ Renvoie le numéro de version de la bibliothèque de script.
 
 * **Error :** aucune
 
-**restoreFormState(options)** : restaure l’état du formulaire à partir de l’état JSON fourni dans l’objet options. L’état est appliqué et les gestionnaires de réussite ou d’erreur sont appelés après que l’opération soit terminée
+**restoreFormState(options)** : restaure l’état du formulaire à partir de l’état JSON fourni dans l’objet options. L’état est appliqué et les gestionnaires de succès ou d’erreur sont appelés une fois l’opération terminée.
 
 * **Entrée:**
 
    * **Options :** objet JavaScript contenant les propriétés suivantes :
 
-      * **Erreur**: Fonction de gestionnaire d’erreurs
+      * **Error**: Error Handler Function
       * **success** : fonction du gestionnaire de réussite
       * **context** : objet pour lequel le contexte (valeur « this ») de la fonction *success* est défini.
       * **formState** : état JSON du formulaire. Le formulaire est restauré à l’état JSON.

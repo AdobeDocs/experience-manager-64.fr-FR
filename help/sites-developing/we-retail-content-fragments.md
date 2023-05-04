@@ -10,18 +10,22 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 exl-id: d93bec03-c651-4329-b220-4ac1ea189de1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 100%
+source-wordcount: '488'
+ht-degree: 82%
 
 ---
 
 # Test des fragments de contenu dans We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Les fragments de contenu vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux). **We.Retail** (disponible en tant qu’instance prête à l’emploi d’AEM) fournit le fragment **Arctic Surfing in Lofoten** comme échantillon de base. On peut en tirer les enseignements suivants :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-* Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). 
+Les fragments de contenu vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux). **We.Retail** (disponible en tant qu’instance prête à l’emploi d’AEM) fournit le fragment **Arctic Surfing in Lofoten** comme échantillon de base. Cela illustre que :
+
+* Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux).
 
    * Consultez la section [Emplacement des ressources de Fragment de contenu dans We.Retail](#where-to-find-content-fragments-in-we-retail).
 
@@ -37,7 +41,7 @@ Pour consulter la documentation complète traitant de la création, de la gestio
 >
 >Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)** représentent deux fonctions distinctes d’AEM :
 >
->* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
+>* **Fragments de contenu** sont du contenu éditorial, principalement du texte et des images associées. Il s’agit de contenu pur, sans conception ni mise en page.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
@@ -58,7 +62,7 @@ Vous pouvez sélectionner et modifier le fragment **Arctic Surfing in Lofoten**�
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Vous pouvez [modifier et gérer](/help/assets/content-fragments.md) votre fragment à l’aide des onglets (panneau de gauche) :
+Ici, vous pouvez [modification et gestion](/help/assets/content-fragments.md) votre fragment à l’aide des onglets (panneau de gauche) :
 
 ![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png)
 
@@ -69,9 +73,9 @@ Vous pouvez [modifier et gérer](/help/assets/content-fragments.md) votre fragme
 
 ![cf-46](assets/cf-46.png)
 
-## Où les fragments de contenu sont-ils utilisés dans We.Retail ? {#where-content-fragments-are-used-in-we-retail}
+## Emplacement d’utilisation des fragments de contenu dans We.Retail {#where-content-fragments-are-used-in-we-retail}
 
-Pour illustrer la [création de pages avec un fragment de contenu](/help/sites-authoring/content-fragments.md), plusieurs échantillons de page sont proposés, par exemple, à l’emplacement suivant :
+Illustration [création de page avec un fragment de contenu](/help/sites-authoring/content-fragments.md) plusieurs exemples de pages sont proposés sous, par exemple :
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 

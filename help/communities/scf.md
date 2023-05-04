@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 9264c888-a583-40eb-9178-273146f8a12b
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 1%
+source-wordcount: '1524'
+ht-degree: 2%
 
 ---
 
 # Structure des composants sociaux {#social-component-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 La structure de composants sociaux (SCF) simplifie le processus de configuration, de personnalisation et d’extension des composants Communities côté serveur et côté client.
 
@@ -164,7 +168,7 @@ Seuls quelques-uns des composants AEM Communities peuvent être inclus dynamique
 * [Commentaires](essentials-comments.md)
 * [Évaluation](rating-basics.md)
 * [Révisions](reviews-basics.md)
-* [Vote](essentials-voting.md)
+* [Votant](essentials-voting.md)
 
 Le [Guide des composants de communauté](components-guide.md) permet d’empêcher l’ajout à des composants inclusibles.
 

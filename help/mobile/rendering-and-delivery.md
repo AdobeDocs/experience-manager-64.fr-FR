@@ -9,14 +9,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 exl-id: d826375d-0ce6-49fc-b264-bac39882983d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '609'
 ht-degree: 11%
 
 ---
 
 # Rendu et diffusion{#rendering-and-delivery}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -101,14 +105,14 @@ Le tableau suivant affiche les propriétés des configurations d’exportation :
    <td>excludeProperties</td>
    <td>Chaîne[]</td>
    <td>exclude</td>
-   <td>Noms des propriétés</td>
+   <td>Noms de propriété</td>
    <td>exclure des propriétés spécifiées de l’exportation JSON</td>
   </tr>
   <tr>
    <td>includeProperties</td>
    <td>Chaîne[]</td>
    <td>inclure tout</td>
-   <td>Noms des propriétés</td>
+   <td>Noms de propriété</td>
    <td><p>if excludePropertyPrefixes set<br /> cela inclut les propriétés spécifiées même si le préfixe correspondant a été exclu,</p> <p>else (exclure les propriétés ignorées) n’incluent que ces propriétés</p> </td>
   </tr>
   <tr>

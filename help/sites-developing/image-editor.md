@@ -10,20 +10,24 @@ content-type: reference
 topic-tags: components
 discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 exl-id: 843c67d6-dda1-448f-a992-19574066e1c3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 94%
+source-wordcount: '341'
+ht-degree: 91%
 
 ---
 
 # Éditeur d’image{#image-editor}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 L’éditeur d’image est un élément essentiel d’AEM qui peut être exploité par des composants pour faciliter la manipulation des images par les auteurs de contenu.
 
 >[!CAUTION]
 >
->Pour utiliser les fonctionnalités de l’éditeur d’image décrites dans cet article, [Feature Pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) doit être installé.
+>Pour pouvoir utiliser les fonctionnalités de l’éditeur d’image décrites dans cet article, vous devez installer le [pack de fonctionnalités 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267).
 
 ## Unités relatives pour la zone cliquable {#relative-units-for-image-map}
 

@@ -1,7 +1,7 @@
 ---
 title: Modèles dans le référentiel
 seo-title: Models in Repository
-description: 'null'
+description: null
 seo-description: null
 uuid: 54f81180-4178-4e33-a6f0-e9e6ea50798e
 contentOwner: User
@@ -9,15 +9,19 @@ content-type: reference
 discoiquuid: ae1a72f4-d8c1-4c75-ba2c-7322f3743b17
 noindex: true
 redirecttarget: /content/help/en/experience-manager/6-4/mobile/using/administer-mobile-apps
-source-git-commit: 5fe3d533e51a0536064b22e9549578bb5ba754a4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 2%
+source-wordcount: '1364'
+ht-degree: 3%
 
 ---
 
 
 # Modèles dans le référentiel{#models-in-repository}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >

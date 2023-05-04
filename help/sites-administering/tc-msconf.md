@@ -11,16 +11,20 @@ content-type: reference
 discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
 feature: Language Copy
 exl-id: 6387fd5d-d8de-4ea8-b1e6-3274b53d4f41
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 100%
+source-wordcount: '640'
+ht-degree: 64%
 
 ---
 
 # Connexion à Microsoft Translator{#connecting-to-microsoft-translator}
 
-Créez une configuration pour que le service cloud Microsoft Translator utilise votre compte Microsoft Traduction pour traduire le contenu des pages ou des communautés, ou des ressources AEM.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Créez une configuration pour le service cloud Microsoft Translator afin d’utiliser votre compte de traduction Microsoft pour traduire AEM contenu de page, le contenu de la communauté ou les ressources.
 
 | Propriété | Description |
 |---|---|
@@ -33,40 +37,40 @@ Après avoir créé la configuration, vous devez [l’activer](/help/sites-admin
 
 La procédure suivante utilise l’interface utilisateur optimisée pour les écrans tactiles afin de créer une configuration Microsoft Translator.
 
-1. Sur le rail, cliquez ou appuyez sur Outils > Services cloud.
-1. Dans la zone Microsoft Translator, cliquez ou appuyez sur Afficher les configurations.
-1. Cliquez sur le lien + en regard de Configurations disponibles.
+1. Sur le rail, cliquez ou appuyez sur Outils > Cloud Services.
+1. Dans la zone Microsoft Translator, cliquez ou appuyez sur Afficher les configurations.
+1. Cliquez sur le lien + en regard de Configurations disponibles.
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
-1. Indiquez un titre pour votre configuration. Le titre identifie la configuration dans la console Services cloud, ainsi que dans les listes déroulantes de propriétés de la page. Le nom par défaut est dérivé du titre. Éventuellement, saisissez un nom à utiliser pour le nœud du référentiel qui stocke la configuration. Vous devez utiliser la valeur par défaut de la propriété de la configuration parente qui est le chemin du nœud de référentiel.
+1. Indiquez un titre pour votre configuration. Le titre identifie la configuration dans la console Services cloud, ainsi que dans les listes déroulantes de propriétés de la page. Le nom par défaut est dérivé du titre. Éventuellement, saisissez un nom à utiliser pour le nœud du référentiel qui stocke la configuration. Vous devez utiliser la valeur par défaut de la propriété Parent Configuration qui est le chemin d’accès du noeud du référentiel.
 1. Cliquez sur Créer.
-1. Dans la boîte de dialogue qui s’affiche, saisissez les valeurs des propriétés et cliquez sur OK.
+1. Dans la boîte de dialogue qui s’affiche, saisissez les valeurs des propriétés, puis cliquez sur OK.
 
-## Exemples de configurations du service cloud Microsoft Translator {#sample-microsoft-translator-cloud-service-configurations}
+## Exemples de configurations de Cloud Service du traducteur Microsoft {#sample-microsoft-translator-cloud-service-configurations}
 
 Les configurations suivantes du service cloud Microsoft Translator sont installées avec les exemples de Geometrixx. Certains exemples de configurations utilisent un compte d’évaluation de Microsoft Traduction qui permet de traduire gratuitement un maximum de 2 000 000 caractères par mois.
 
 ### Licence d’évaluation de Microsoft Translator {#microsoft-translator-trial-license}
 
-La configuration Licence d’évaluation de Microsoft Translator est un exemple de configuration installé avec le module d’exemple Geometrixx Outdoors. Cette configuration utilise un compte Microsoft Translator titulaire d’un abonnement gratuit qui permet de traduire 2 000 000 de caractères par mois.
+La configuration Licence d’évaluation de Microsoft Translator est un exemple de configuration installé avec le package d’exemple Geometrixx Outdoors. Cette configuration utilise un compte Microsoft Translator titulaire d’un abonnement gratuit qui permet de traduire 2 000 000 de caractères par mois.
 
-### Licence d’évaluation de Microsoft Translator – Geometrixx-outdoors {#microsoft-translator-trial-license-geometrixx-outdoors}
+### Licence d’évaluation du traducteur Microsoft - Geometrixx-dehors {#microsoft-translator-trial-license-geometrixx-outdoors}
 
 La configuration Licence d’évaluation de Microsoft Translator – Geometrixx-outdoors est un exemple de configuration qui est installé avec Geometrixx Outdoors. Cette configuration utilise le même compte Microsoft Translator gratuit que la configuration Licence d’évaluation de Microsoft Translator. Le compte dispose d’un abonnement gratuit qui permet de traduire 2 000 000 de caractères par mois.
 
-Cette configuration de Microsoft Translator est optimisée pour l’utilisation avec le type de contenu de l’exemple de site Geometrixx Outdoors.
+Cette configuration du traducteur Microsoft est optimisée pour une utilisation avec le type de contenu de l’exemple de site de Geometrixx Outdoors.
 
 ### Mise à niveau de la configuration de licence d’évaluation de Microsoft Translator {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 Les pages de configuration Microsoft Translator fournissent un lien pratique vers le site web Microsoft pour obtenir un abonnement de compte qui est adapté aux systèmes d’exploitation.
 
-1. Sur le rail, cliquez ou appuyez sur Outils > Opérations > Cloud > Services cloud.
-1. Dans la zone Microsoft Translator, cliquez ou appuyez sur Afficher les configurations, puis cliquez ou appuyez sur Licence d’évaluation de Microsoft Translator (configuration Microsoft Traduction).
+1. Sur le rail, cliquez ou appuyez sur Outils > Opérations > Cloud > Cloud Services.
+1. Dans la zone Microsoft Translator, cliquez ou appuyez sur Afficher les configurations, puis cliquez ou appuyez sur Licence d’évaluation de Microsoft Translator (Configuration de traduction Microsoft).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
-1. Sur la page de configuration, cliquez sur Mettre à niveau l’abonnement. Utilisez la page web de Microsoft qui s’ouvre pour configurer votre compte.
+1. Sur la page de configuration, cliquez sur Mettre à niveau l’abonnement. Utilisez la page Web Microsoft qui s’ouvre pour configurer votre compte.
 
    ![chlimage_1-384](assets/chlimage_1-384.png)
 
@@ -74,8 +78,8 @@ Les pages de configuration Microsoft Translator fournissent un lien pratique ve
 
 Les pages de configuration de Microsoft Translator fournissent un lien pratique vers le site web Microsoft pour personnaliser votre moteur Microsoft Translator. ([https://hub.microsofttranslator.com](https://hub.microsofttranslator.com/))
 
-1. Sur le rail, cliquez ou appuyez sur Outils > Opérations > Cloud > Services cloud.
-1. Dans la zone Microsoft Translator, cliquez ou appuyez sur Afficher les configurations, puis cliquez ou appuyez sur la configuration que vous souhaitez personnaliser.
+1. Sur le rail, cliquez ou appuyez sur Outils > Opérations > Cloud > Cloud Services.
+1. Dans la zone Microsoft Translator, cliquez ou appuyez sur Afficher les configurations, puis cliquez ou appuyez sur la configuration que vous souhaitez personnaliser.
 1. Sur la page de configuration, cliquez sur Personnaliser le traducteur. Utilisez la page web de Microsoft qui s’ouvre pour personnaliser votre service.
 
 ## Activation des configurations du service de traducteur {#activating-the-translator-service-configurations}

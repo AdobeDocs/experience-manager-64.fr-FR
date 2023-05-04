@@ -7,18 +7,22 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 exl-id: 7a9d6e97-2592-43cb-b5ab-4238409bd7f3
-source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 66%
+source-wordcount: '78'
+ht-degree: 53%
 
 ---
 
 # Fin de prise en charge de la visionneuse DHTML {#dhtml-viewer-end-of-life-}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Depuis le 31 janvier 2014, la plateforme de la visionneuse DHTML n’est officiellement plus prise en charge.
 
-Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) pour connaître les dernières visionneuses prises en charge.
+Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=fr) pour connaître les dernières visionneuses prises en charge.
 
 <!-- **What is the change?**
 

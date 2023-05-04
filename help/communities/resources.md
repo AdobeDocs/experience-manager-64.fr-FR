@@ -1,5 +1,5 @@
 ---
-title: 'Console Ressources d’activation '
+title: Console Ressources d’activation
 seo-title: Enablement Resources Console
 description: Dans la console Ressources, les responsables de l’activation créent, gèrent et assignent des ressources aux membres d’un site de la communauté d’activation.
 seo-description: The Resources console is where Enablement Managers create, manage, and assign resources to members of an enablement community site
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 role: Admin
 exl-id: 67d80ec9-64c9-43a5-8cb1-9da819471797
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2957'
+source-wordcount: '2993'
 ht-degree: 6%
 
 ---
 
-# Console Ressources d’activation  {#enablement-resources-console}
+# Console Ressources d’activation {#enablement-resources-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Pour AEM Communities, la console Ressources est l’emplacement où [Chefs d’activation](users.md) créer, gérer et affecter des ressources aux membres d’un site de communauté d’activation.
 
@@ -89,7 +93,7 @@ Une fois qu’un site de communauté spécifique est sélectionné, toutes les r
 
 ![chlimage_1-164](assets/chlimage_1-164.png)
 
-#### Rechercher {#search-features}
+#### Recherche {#search-features}
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -146,7 +150,7 @@ Lorsque la ressource fait partie d’un cours, un parcours d’apprentissage, le
 
 * **[!UICONTROL Afficher dans le catalogue]**
 
-   Lorsque cette option est désactivée, la ressource d’activation n’apparaît dans aucun catalogue. Si cette case est cochée, la ressource d’activation s’affiche dans tous les catalogues, sauf si [pré-filtré](catalog-developer-essentials.md#pre-filters) ou les filtres membres de l’interface utilisateur. Cette option n’est pas cochée par défaut.
+   Lorsque cette option est désactivée, la ressource d’activation n’apparaît dans aucun catalogue. Si cette case est cochée, la ressource d’activation s’affiche dans tous les catalogues, sauf si [pré-filtré](catalog-developer-essentials.md#pre-filters) ou les filtres membres de l’interface utilisateur. La case par défaut est décochée.
 
 * **[!UICONTROL Description]**
 
@@ -252,17 +256,17 @@ Sélectionnez dans la bibliothèque de ressources. La sélection est limitée à
 
    * **[!UICONTROL Autoriser les commentaires]**
 
-      Si cette case est cochée, les membres sont autorisés à commenter la ressource. Cette option est cochée par défaut.
+      Si cette case est cochée, les membres sont autorisés à commenter la ressource. La valeur par défaut est cochée.
 
    * **[!UICONTROL Autoriser les évaluations]**
 
-      Si cette case est cochée, les membres sont autorisés à évaluer la ressource. Cette option est cochée par défaut.
+      Si cette case est cochée, les membres sont autorisés à évaluer la ressource. La valeur par défaut est cochée.
 
    * **[!UICONTROL Autoriser l&#39;accès anonyme]**
 
-      Si cette case est cochée, les visiteurs anonymes du site sont autorisés à afficher la ressource dans un catalogue lorsque le site de la communauté autorise également l’accès anonyme. Cette option n’est pas cochée par défaut.
+      Si cette case est cochée, les visiteurs anonymes du site sont autorisés à afficher la ressource dans un catalogue lorsque le site de la communauté autorise également l’accès anonyme. La case par défaut est décochée.
 
-* **[!UICONTROL Échéance]**
+* **[!UICONTROL Date d’échéance]**
 
    *(Facultatif)* Une date à laquelle l’affectation doit être terminée peut être sélectionnée.
 
@@ -282,7 +286,7 @@ Sélectionnez dans la bibliothèque de ressources. La sélection est limitée à
 * **[!UICONTROL Ajouter des entités]**
 Utilisez le menu déroulant pour effectuer une sélection dans [members](#members-group) - les utilisateurs et les groupes d’utilisateurs (répertoriés en gras) - qui doivent être inscrits en tant qu’apprenants. Lorsque les membres se connectent au site de la communauté, les ressources d’activation (et les parcours d’apprentissage) dans lesquels ils sont inscrits apparaissent sur leur [Affectations](functions.md#assignments-function) page.
 
-* Sélectionnez **[!UICONTROL Créer]**.
+* select **[!UICONTROL Créer]**
 
 ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -333,7 +337,7 @@ Pour les ressources d’activation incluses dans un parcours d’apprentissage, 
 
 * **[!UICONTROL Afficher dans le catalogue]**
 
-   Lorsque cette option est désactivée, le chemin d’apprentissage n’apparaît dans aucun catalogue. Si cette case est cochée, le chemin d’apprentissage s’affiche dans tous les catalogues, sauf si [pré-filtré](catalog-developer-essentials.md#pre-filters) ou les filtres membres de l’interface utilisateur. L’affichage du parcours d’apprentissage dans un catalogue permet indirectement d’accéder en LECTURE à toutes ses ressources contenues. Cette option n’est pas cochée par défaut.
+   Lorsque cette option est désactivée, le chemin d’apprentissage n’apparaît dans aucun catalogue. Si cette case est cochée, le chemin d’apprentissage s’affiche dans tous les catalogues, sauf si [pré-filtré](catalog-developer-essentials.md#pre-filters) ou les filtres membres de l’interface utilisateur. L’affichage du parcours d’apprentissage dans un catalogue permet indirectement d’accéder en LECTURE à toutes ses ressources contenues. La case par défaut est décochée.
 
 * **[!UICONTROL Description]**
 
@@ -415,7 +419,7 @@ Pour la ressource d&#39;activation sélectionnée, il est possible de :
 * Modification des propriétés
 * Supprimer
 * Publication
-* Annuler la publication
+* Dépublier
 
 Pour charger une nouvelle version de la ressource d’activation, il est recommandé de créer une nouvelle ressource, puis de désinscrire les membres de l’ancienne version et de les inscrire à la nouvelle version.
 
@@ -445,7 +449,7 @@ Avant que les apprenants puissent voir une ressource d’activation affectée, e
 
 Même si la boîte de dialogue indique que l’action est mise en file d’attente, elle est souvent publiée immédiatement.
 
-### Annuler la publication {#unpublish}
+### Dépublier {#unpublish}
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
@@ -461,13 +465,13 @@ Pour tous les parcours d’apprentissage, il est possible d’afficher un rappor
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
 
-Ce rapport est spécifique à la ressource d’activation actuelle ou au parcours de formation. La profondeur de création de rapports dépend de si [Adobe Analytics](analytics.md) est sous licence et activé pour le site de la communauté. Le [Chronologie](#timeline), [Engagement des visionneuses](#viewer-engagement), et [Engagement par appareil](#engagement-by-device) Les rapports sont importés à partir d’Adobe Analytics en fonction de la variable [intervalle d’interrogation](analytics.md#report-importer).
+Ce rapport est spécifique à la ressource d’activation actuelle ou au parcours de formation. La profondeur des rapports fournie dépend de si oui ou non [Adobe Analytics](analytics.md) est sous licence et activé pour le site de la communauté. Le [Chronologie](#timeline), [Engagement des visionneuses](#viewer-engagement), et [Engagement par appareil](#engagement-by-device) Les rapports sont importés à partir d’Adobe Analytics en fonction de la variable [intervalle d’interrogation](analytics.md#report-importer).
 
 Pour toutes les ressources d’activation, qu’Adobe Analytics soit activé ou non, il existe des rapports sur [État du cessionnaire](#assignee-status) et [Évaluations](#ratings) ainsi que d’une [Résumé du rapport](#report-summary) table.
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
-#### Chronologie {#timeline}
+#### La chronologie {#timeline}
 
 Le rapport Chronologie Analytics indique le moment où des événements se produisent au fil du temps pour cette ressource d’activation :
 
@@ -479,7 +483,7 @@ Le rapport Chronologie Analytics indique le moment où des événements se produ
 
    Une lecture se produit lorsque alLearning interagit avec la ressource, par exemple en lisant une vidéo ou en ouvrant un PDF.
 
-* **Evaluations**
+* **Évaluations**
 
    Une évaluation est lorsqu’un apprenant affecte une évaluation par étoiles à une ressource.
 
@@ -517,7 +521,7 @@ Le rapport État du cessionnaire, basé sur le nombre d’apprenants, décrit le
 * **En cours**
 * **Terminé**
 
-#### Evaluations {#ratings}
+#### Évaluations {#ratings}
 
 Le rapport Évaluations est basé sur le nombre d’apprenants qui ont évalué la ressource d’activation, indiquant le nombre de chaque évaluation par étoiles suivie d’un résumé du nombre total d’évaluations et de la note moyenne.
 

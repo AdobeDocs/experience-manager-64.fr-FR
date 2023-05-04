@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 role: Admin
 exl-id: 1de1ffc6-63f8-4316-a2fa-5095d407c265
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '759'
 ht-degree: 4%
 
 ---
 
 # Configuration MySQL pour DSRP {#mysql-configuration-for-dsrp}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 MySQL est une base de données relationnelle qui peut être utilisée pour stocker le contenu généré par l’utilisateur.
 
@@ -89,11 +93,11 @@ Lorsque MySQL Workbench est lancé pour la première fois, sauf s’il est déj�
 
    À des fins de démonstration, avec l’instance d’AEM de création et MySQL sur le même serveur :
 
-   * Nom de la connexion: `Communities`
+   * Nom de la connexion : `Communities`
    * Méthode de connexion : `Standard (TCP/IP)`
-   * Nom d’hôte: `127.0.0.1`
-   * Nom d’utilisateur: `root`
-   * Password: `no password by default`
+   * Nom d’hôte : `127.0.0.1`
+   * Nom d’utilisateur : `root`.
+   * Mot de passe : `no password by default`.
    * Schéma par défaut : `leave blank`
 
 1. Sélectionner `Test Connection` pour vérifier la connexion au service MySQL en cours d’exécution
@@ -201,4 +205,4 @@ Lorsque MySQL s’exécute sur un serveur différent de l’AEM, le nom d’hôt
       sinon, saisissez le mot de passe configuré pour le nom d’utilisateur MySQL.
    * **[!UICONTROL Nom de la source de données]**: nom saisi pour la variable [Connexion MySQL](#new-connection-settings), par exemple, &quot;communautés&quot;
 
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.

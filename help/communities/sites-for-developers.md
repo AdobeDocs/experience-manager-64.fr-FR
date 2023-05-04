@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 2b26d937-4ebf-4a67-9715-a21c8fc45e1e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 1%
+source-wordcount: '646'
+ht-degree: 2%
 
 ---
 
 # Principes élémentaires du site de la communauté {#community-site-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Modèle de site personnalisé {#custom-site-template}
 
@@ -39,7 +43,7 @@ Pour ce faire, procédez comme suit :
 /**apps**/social/console/components/hbs/sitepage/**&lt;*template-name*>**.hbs
 
 **Propriété**: page-template\
-**Type** : String\
+**Type**: Chaîne\
 **Valeur**: &lt;*template-name*> (aucune extension)
 
 **Noeud de configuration**:

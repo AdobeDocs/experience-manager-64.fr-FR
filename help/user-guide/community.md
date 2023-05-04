@@ -6,16 +6,20 @@ seo-description: The AEM Community
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: 537f6fe5-011b-4d4a-ac71-71708fd72b85
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 85%
 
 ---
 
 # Communauté AEM {#the-aem-community}
 
-## En quoi consiste AEM Community ? {#what-is}
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+## Qu’est-ce que la communauté AEM ? {#what-is}
 
 La Communauté AEM compte des milliers de membres à travers le monde. Elle rassemble des utilisateurs qui font leurs premiers pas sur Experience Manager comme des développeurs et administrateurs avertis.  Nous nous tenons à votre disposition pour toute question sur les fonctionnalités d’AEM et sur le développement. Nous organisons des sessions régulières avec des experts internes et externes, et nous vous présentons des exemples, des articles et des didacticiels.
 

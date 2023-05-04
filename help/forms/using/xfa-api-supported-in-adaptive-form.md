@@ -1,7 +1,7 @@
 ---
 title: Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP
 seo-title: XFA support in XDP-based adaptive forms
-description: Répertorie les événements XFA pris en charge, les propriétés, les scripts et la validation dans les formulaires adaptatifs.
+description: Répertorie les événements XFA, les propriétés, les scripts et la validation pris en charge dans les formulaires adaptatifs.
 seo-description: Lists supported XFA events, properties, scripts, and validation in adaptive forms.
 uuid: 2f976de3-2cdf-4bbb-acd1-048a498930f0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -9,14 +9,18 @@ topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
 feature: Adaptive Forms
 exl-id: 86596819-8108-409e-af14-4634e8a1959d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 100%
+source-wordcount: '719'
+ht-degree: 77%
 
 ---
 
 # Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP {#xfa-support-in-xdp-based-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#introduction}
 
@@ -26,15 +30,15 @@ Les formulaires adaptatifs prennent en charge différents événements XFA, prop
 * Capture des valeurs par défaut et des propriétés comportementales pour les champs du fichier XDP.
 * Exécution de scripts de validation définis dans le fichier XDP.
 
-Lorsqu’un formulaire adaptatif est créé à partir d’un fichier XDP, les propriétés, les événements et les validations sont automatiquement renseignés sur l’interface utilisateur de création de formulaire. Toutefois, les concepteurs de formulaires peuvent remplacer certains de ces éléments pour créer une autre expérience.
+Lorsqu’un formulaire adaptatif est créé à partir d’un fichier XDP, les propriétés, les événements et les validations sont automatiquement renseignés dans l’interface utilisateur de création de formulaire. Toutefois, les concepteurs de formulaires peuvent remplacer certains de ces éléments pour créer une autre expérience.
 
-Cet article répertorie les événements XFA, les propriétés et les validations pris en charge dans les formulaires adaptatifs et explique comment les remplacer dans ces formulaires. 
+Cet article répertorie les événements, propriétés et validations XFA pris en charge honorés dans les formulaires adaptatifs et explique comment les remplacer dans les formulaires adaptatifs.
 
 ## Éléments XFA pris en charge et leur mappage dans les formulaires adaptatifs  {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### Champs {#fields}
 
-Lorsqu’un formulaire adaptatif est créé à l’aide d’un fichier XDP, vous pouvez faire glisser et déposer un champ XFA dans le formulaire adaptatif. Le tableau suivant répertorie la façon dont les champs XFA sont associés à des champs de formulaire adaptatif. 
+Lorsqu’un formulaire adaptatif est créé à l’aide d’un fichier XDP, vous pouvez faire glisser un champ XFA sur le formulaire adaptatif. Le tableau suivant répertorie la façon dont les champs XFA sont mappés aux champs de formulaire adaptatif.
 
 <table> 
  <tbody>
@@ -76,7 +80,7 @@ Lorsqu’un formulaire adaptatif est créé à l’aide d’un fichier XDP, vous
   </tr>
   <tr>
    <td><p>Champ Mot de passe </p> </td> 
-   <td><p>Zone de mot de passe</p> </td> 
+   <td><p>Champ de mot de passe</p> </td> 
   </tr>
   <tr>
    <td><p>Image</p> </td> 
@@ -103,7 +107,7 @@ Lorsqu’un formulaire adaptatif est créé à l’aide d’un fichier XDP, vous
 
 ### Propriétés {#properties}
 
-Le tableau suivant capture la manière dont divers scripts XFA définis dans les fichiers XDP se comportent dans les formulaires adaptatifs. 
+Le tableau suivant capture la manière dont divers scripts XFA définis dans les fichiers XDP se comportent dans les formulaires adaptatifs.
 
 <table> 
  <tbody>
@@ -266,4 +270,4 @@ Le tableau suivant capture la manière dont les validations XFA sont associées 
 
 >[!NOTE]
 >
->Vous ne pouvez pas remplacer la propriété obligatoire pour le groupe bouton radio et case à cocher du formulaire adaptatif qui est lié aux boutons de vérification XFA.
+>Vous ne pouvez pas remplacer la propriété obligatoire pour les boutons radio de formulaire adaptatif et les groupes de cases à cocher liés aux boutons de contrôle XFA.

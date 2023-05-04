@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Developer Tools
 role: Developer
 exl-id: 0291690b-874a-483d-901f-f02cb6d8ab28
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 100%
+source-wordcount: '293'
+ht-degree: 45%
 
 ---
 
 # Personnalisation et extension de ressources {#customizing-and-extending-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 L’Éditeur de ressources est le point d’accès principal que les utilisateurs d’un site Web Adobe Enterprise Manager utiliseront pour rechercher, afficher et manipuler les ressources numériques dans votre référentiel.
 
@@ -22,21 +26,21 @@ Les aspects suivants de la fonctionnalité peuvent être adaptés ou développé
 
 * [Extension de l’Éditeur de ressources](asseteditorx.md)
 * [Extension de la recherche de ressources](searchx.md)
-* [Traitement des ressources à l’aide des gestionnaires de médias et des workflows](media-handlers.md)
-* [Intégration des ressources avec Flux d’activités](extending-activity-stream.md)
-* [Développement d’un proxy Assets](proxy.md)
-* [Meilleures pratiques de configuration d’ImageMagick](best-practices-for-imagemagick.md)
+* [Traitement des ressources à l’aide des workflows et des gestionnaires de médias](media-handlers.md)
+* [Intégration de ressources à un flux d’activités](extending-activity-stream.md)
+* [Développement de proxy Assets](proxy.md)
+* [Bonnes pratiques pour la configuration d’ImageMagick](best-practices-for-imagemagick.md)
 
-## Personnalisation de l’apparence et du comportement {#customizing-the-look-and-feel}
+## Personnalisation de l’apparence et du ressenti {#customizing-the-look-and-feel}
 
 Les aspects suivants de l’aspect et du comportement de l’Éditeur de ressources sont personnalisables :
 
-* Logo : vous pouvez ajouter le logo de votre entreprise à l’interface.
-* Couleurs et polices : vous pouvez changer les couleurs et polices de l’interface.
-* Code HTML : pour une personnalisation plus approfondie, vous pouvez modifier le code HTML sous-jacent qui définit les interfaces.
+* Logo : Vous pouvez ajouter le logo de votre propre organisation à l’interface.
+* Couleurs et polices : Vous pouvez modifier les couleurs et les polices utilisées dans l’interface.
+* Code HTML : Pour une personnalisation plus approfondie, vous pouvez modifier le code de HTML sous-jacent qui définit les interfaces.
 
 ## Personnalisation des rendus {#customizing-renditions}
 
-Dans la terminologie d’[!DNL Experience Manager Assets], un rendu est la forme dans laquelle une ressource est présentée. En général, une ressource particulière peut posséder plusieurs rendus. Par exemple, une image en couleur peut avoir un rendu dans sa taille d’origine, une autre à un format réduit et une autre à la fois dans un format réduit et un format converti en niveaux de gris.
+Dans la terminologie d’[!DNL Experience Manager Assets], un rendu est la forme dans laquelle une ressource est présentée. En règle générale, une ressource particulière peut comporter plusieurs rendus. Par exemple, une image en couleur peut avoir un rendu dans sa taille d’origine, un autre dans sa taille réduite et un autre dans sa taille réduite et converti en niveaux de gris.
 
-Les rendus dans lesquels une ressource particulière est disponible peuvent être personnalisés, et de nouveaux rendus peuvent être créés.
+Les rendus qu’une ressource particulière est disponible dans peuvent être personnalisés et de nouveaux rendus créés.

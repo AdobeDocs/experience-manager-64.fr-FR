@@ -1,7 +1,7 @@
 ---
 title: Lancements
 seo-title: Launches
-description: Créez un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future. Lors de la création d’un lancement, vous devez spécifier un titre et la page source.
+description: Créez un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future. Lorsque vous créez un lancement, vous spécifiez un titre et la page source.
 seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: b1952b6c-fc44-4e39-80ba-9380a6c66b8c
 contentOwner: AEM Docs
@@ -10,18 +10,22 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
 exl-id: e1e5dc83-2f9c-4c8d-a031-5ded3f1316a1
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 100%
+source-wordcount: '219'
+ht-degree: 45%
 
 ---
 
 # Lancements{#launches}
 
-La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Le lancement vous permet de préparer des modifications en vue d’une publication future (tout en conservant vos pages actives). Une fois vos modifications apportées aux pages de lancement, vous devez les convertir de nouveau en pages source, puis activer ces dernières (au niveau supérieur). L’opération de conversion duplique le contenu de lancement sur les pages source et peut être appliquée manuellement ou automatiquement (selon les champs définis lors de la création et de la modification du lancement).
+Les lancements vous permettent de développer efficacement du contenu pour une version ultérieure.
+
+Un lancement est créé pour vous permettre de préparer les modifications pour une publication ultérieure (tout en conservant vos pages actives). Après avoir modifié et mis à jour vos pages de lancement, vous les reconvertissez à la source, puis activez les pages source (de niveau supérieur). La promotion duplique le contenu du lancement sur les pages source et peut être effectué manuellement ou automatiquement (en fonction des champs définis lors de la création et de la modification du lancement).
 
 >[!NOTE]
 >

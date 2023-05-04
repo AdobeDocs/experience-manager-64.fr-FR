@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
 exl-id: 010d019b-a6ec-4a69-96c1-41b82a2a1839
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 97%
+source-wordcount: '1055'
+ht-degree: 94%
 
 ---
 
 # Rapports personnalisés dans Process Reporting {#custom-reports-in-process-reporting}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez utiliser l’interface REST de QueryBuilder ou créer un service OSGi à l’aide de l’API QueryBuilder pour créer un rapport personnalisé.
 
@@ -31,7 +35,7 @@ Avant d’ajouter un rapport personnalisé, procédez comme suit :
 
 ## Utiliser l’interface REST de QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-L’interface REST de CRX QueryBuilder offre la fonctionnalité QueryBuilder de partage de ressources via une API Java et une API REST. Familiarisez -vous avec lʼ[interface REST de CRX QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) avant d’effectuer les étapes suivantes :
+L’interface REST de CRX QueryBuilder offre la fonctionnalité QueryBuilder de partage de ressources via une API Java et une API REST. Familiarisez -vous avec lʼ[interface REST de CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) avant d’effectuer les étapes suivantes :
 
 1. Accédez à l’URL `https://[server]:[port]/lc/bin/querybuilder.json`
 
@@ -49,7 +53,7 @@ L’interface REST de CRX QueryBuilder offre la fonctionnalité QueryBuilder de
 
 ## Créer un service à l’aide de l’API Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-Avant de créer un service à l’aide de l’API Query Builder, vous devez [créer et déployer un bundle CQ OSGI](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) et [utiliser l’API Query Builder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
+Avant de créer un service à l’aide de l’API Query Builder, vous devez [créer et déployer un bundle CQ OSGI](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) et [utiliser l’API Query Builder](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
 1. Créez un service OSGi avec des annotations appropriées. Pour accéder à QueryBuilder, utilisez le code suivant :
 
@@ -632,7 +636,7 @@ response.setCharacterEncoding("utf-8");
 
 ## Intégrer l’interface utilisateur des rapports dans l’interface utilisateur Process Reporting existante  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-Les conditions préalables à la création d’une interface utilisateur distincte pour l’affichage des résultats sont les suivantes : [Notions de base de Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Créer un nœud CRX](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) et fournir les [droits d’accès](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control) adéquats.
+Les conditions préalables à la création d’une interface utilisateur distincte pour l’affichage des résultats sont les suivantes : [Notions de base de Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Créer un nœud CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr#Creating%20a%20Node) et fournir les [droits d’accès](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr#Access%20Control) adéquats.
 
 1. Créez une interface utilisateur distincte, comme décrit dans [Création d’une interface utilisateur distincte](#creating-a-separate-ui-nbsp) .
 1. Créez un nœud enfant `nt:unstructured` au niveau du nœud `/content/process-reporting-runtime/custom-reports` pour chaque rapport enfichable.

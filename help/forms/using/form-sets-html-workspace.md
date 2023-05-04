@@ -1,7 +1,7 @@
 ---
-title: Utilisation des jeux de formulaires dans l’espace de travail AEM Forms
+title: Utiliser des jeux de formulaires dans l’espace de travail AEM Forms
 seo-title: Working with Formsets in AEM Forms workspace
-description: Un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés comme un ensemble unique de formulaires aux utilisateurs finaux. Découvrez comment utiliser des jeux de formulaires dans l’espace de travail AEM Forms.
+description: Un jeu de formulaires est un ensemble de formulaires HTML5 regroupés et présentés aux utilisateurs finaux sous la forme d’un jeu unique de formulaires. Découvrez comment utiliser des jeux de formulaires dans l’espace de travail AEM Forms.
 seo-description: A formset is a collection of HTML5 forms grouped and presented as a single set of forms to end users. Learn how you can work with formsets in AEM Forms workspace.
 uuid: 77f81465-bd60-4aee-8507-585fe08adb78
 contentOwner: vishgupt
@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c1793e2e-413c-4b6f-b96b-09e011f06263
 exl-id: 4e39f6dd-b7a3-4c6c-be1f-66b9a5743352
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 100%
+source-wordcount: '382'
+ht-degree: 57%
 
 ---
 
-# Utilisation des jeux de formulaires dans l’espace de travail AEM Forms {#working-with-formsets-in-aem-forms-workspace}
+# Utiliser des jeux de formulaires dans l’espace de travail AEM Forms {#working-with-formsets-in-aem-forms-workspace}
 
-Un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés comme un ensemble unique de formulaires aux utilisateurs finaux. Lorsque les utilisateurs finaux commencent à compléter un jeu de formulaires, ils passent facilement d’un formulaire à l’autre. Le jeu de formulaires peut ensuite être envoyé en un simple clic. Pour plus d’informations sur les jeux de formulaires et la manière de les configurer, consultez [Jeux de formulaires dans AEM Forms](/help/forms/using/formset-in-aem-forms.md).
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-L’espace de travail AEM Forms prend en charge les jeux de formulaires. Avec les jeux de formulaires, plusieurs formulaires associés à un service ou processus peuvent être regroupés pour automatiser un processus d’entreprise et présentés aux utilisateurs finaux. Dans ce cas, les utilisateurs peuvent remplir le jeu entier comme un seul et il n’est pas nécessaire de classer, envoyer et suivre des processus ou des formulaires individuels.
+Un jeu de formulaires est un ensemble de formulaires HTML5 regroupés et présentés aux utilisateurs finaux sous la forme d’un jeu unique de formulaires. Lorsque les utilisateurs finaux commencent à remplir un jeu de formulaires, ils passent facilement d’un formulaire à un autre. Le jeu de formulaires peut ensuite être envoyé en un seul clic. Pour plus d’informations sur les jeux de formulaires et la manière de les configurer, consultez [Jeux de formulaires dans AEM Forms](/help/forms/using/formset-in-aem-forms.md).
+
+L’espace de travail AEM Forms prend en charge les jeux de formulaires. Avec les jeux de formulaires, plusieurs formulaires associés à un service ou à un processus peuvent être regroupés afin d’automatiser un processus d’entreprise et présentés aux utilisateurs finaux. Dans ce cas, les utilisateurs peuvent remplir l’ensemble comme un seul et même ensemble et il n’est pas nécessaire de générer, d’envoyer et de suivre des formulaires ou processus individuels.
 
 ## Comment joindre un jeu de formulaires au point de départ dans l’application d’espace de travail AEM Forms {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
 

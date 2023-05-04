@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 exl-id: 1e0a7cab-39b9-4c90-810c-c93fb76c3869
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 6%
+source-wordcount: '394'
+ht-degree: 7%
 
 ---
 
 # Notions fondamentales sur le catalogue {#catalog-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Cette page fournit les informations essentielles pour utiliser la fonctionnalité de catalogue des sites de la communauté d’activation.
 

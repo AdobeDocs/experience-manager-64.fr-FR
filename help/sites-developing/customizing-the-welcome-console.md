@@ -1,7 +1,7 @@
 ---
-title: Personnalisation de la console de bienvenue (IU classique)
+title: Personnaliser la console de bienvenue (IU classique)
 seo-title: Customizing the Welcome Console (Classic UI)
-description: La console de bienvenue propose une liste de liens vers les différentes consoles et fonctionnalités au sein d’AEM.
+description: La console Bienvenue fournit une liste de liens vers les différentes consoles et fonctionnalités d’AEM
 seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
 uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
@@ -10,41 +10,45 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 exl-id: 11b791f6-b14f-4f50-a64a-27a9501adeb7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 100%
+source-wordcount: '500'
+ht-degree: 48%
 
 ---
 
-# Personnalisation de la console de bienvenue (IU classique){#customizing-the-welcome-console-classic-ui}
+# Personnaliser la console de bienvenue (IU classique){#customizing-the-welcome-console-classic-ui}
 
 >[!CAUTION]
 >
->Cette page traite de l’interface utilisateur classique.
->
->Pour plus d’informations sur l’IU tactile standard, voir [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-La console de bienvenue propose une liste de liens vers les différentes consoles et fonctionnalités au sein d’AEM.
+>[!CAUTION]
+>
+>Cette page traite de l’IU classique.
+>
+>Voir [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md) pour plus d’informations sur l’IU tactile standard.
+
+La console de bienvenue fournit une liste de liens vers les différentes consoles et fonctionnalités d’AEM.
 
 ![cq_welcomescreen](assets/cq_welcomescreen.png)
 
-Il est possible de configurer les liens qui sont visibles. Cela peut être défini pour des utilisateurs et/ou des groupes spécifiques. Les mesures à prendre dépendent du type de cible (qui est lié à la partie de la console dans laquelle il se situe) :
+Il est possible de configurer les liens visibles. Cela peut être défini pour des utilisateurs et/ou des groupes spécifiques. Les actions à entreprendre dépendent du type de cible (qui correspond à la section de la console dans laquelle ils se trouvent) :
 
-* [Consoles principales](#links-in-main-console-left-pane) : liens de la console principale (volet de gauche)
-* [Ressources, documentation et ressources, fonctionnalités](#links-in-sidebar-right-pane) : liens de la barre latérale (volet de droite)
+* [Consoles principales](#links-in-main-console-left-pane) - Liens dans la console principale (volet de gauche)
+* [Ressources, documentation et référence, fonctionnalités](#links-in-sidebar-right-pane) - Liens dans la barre latérale (volet de droite)
 
-## Liens de la console principale (volet de gauche) {#links-in-main-console-left-pane}
+## Liens dans la console principale (volet de gauche) {#links-in-main-console-left-pane}
 
-Liste des consoles principales d’AEM.
+Cette section répertorie les principales consoles d’AEM.
 
 ![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
-### Définir si les liens de la console principale sont visibles ou non {#configuring-whether-main-console-links-are-visible}
+### Configuration de la visibilité des liens de la console principale {#configuring-whether-main-console-links-are-visible}
 
-Les autorisations au niveau du nœud déterminent si les liens sont visibles ou non. Les nœuds en question sont les suivants :
+Les autorisations de niveau noeud déterminent si le lien peut être affiché ou non. Les nœuds en question sont les suivants :
 
-* **Sites Web :** `/libs/wcm/core/content/siteadmin`
+* **Sites web :** `/libs/wcm/core/content/siteadmin`
 
 * **Ressources numériques :** `/libs/wcm/core/content/damadmin`
 
@@ -66,9 +70,9 @@ Par exemple :
 
    `/libs/wcm/core/content/misc`
 
-Pour plus d’informations sur la définition des autorisations souhaitées, consultez la section [Sécurité](/help/sites-administering/security.md).
+Voir [Section de sécurité](/help/sites-administering/security.md) pour plus d’informations sur la définition des autorisations souhaitées.
 
-### Liens de la barre latérale (volet de droite) {#links-in-sidebar-right-pane}
+### Liens dans la barre latérale (volet de droite) {#links-in-sidebar-right-pane}
 
 ![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
@@ -133,11 +137,11 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
    <td><code>/libs/cq/core/content/welcome/features/crxde</code></td> 
   </tr> 
   <tr> 
-   <td> Modules</td> 
+   <td> Packages</td> 
    <td><code>/libs/cq/core/content/welcome/features/packages</code></td> 
   </tr> 
   <tr> 
-   <td> Partage de modules</td> 
+   <td> Partage de packages</td> 
    <td><code>/libs/cq/core/content/welcome/features/share</code></td> 
   </tr> 
   <tr> 
@@ -159,9 +163,9 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
  </tbody> 
 </table>
 
-#### Définir si les liens de la barre latérale sont visibles ou non {#configuring-whether-sidebar-links-are-visible}
+#### Configuration de la visibilité des liens de la barre latérale {#configuring-whether-sidebar-links-are-visible}
 
-Il est possible de masquer un lien pour des utilisateurs ou des groupes spécifiques en supprimant l’accès aux nœuds qui le représentent.
+Il est possible de masquer un lien d’utilisateurs ou de groupes spécifiques en supprimant l’accès en lecture aux noeuds qui représentent le lien.
 
 * Ressources : supprimez l’accès à :
 
@@ -181,11 +185,11 @@ Par exemple :
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* Pour supprimer le lien vers **Modules**, supprimez l’accès en lecture à partir de
+* Pour supprimer le lien vers **Packages**, supprimez l’accès en lecture à partir de
 
    `/libs/cq/core/content/welcome/features/packages`
 
-Pour plus d’informations sur la définition des autorisations souhaitées, consultez la section [Sécurité](/help/sites-administering/security.md).
+Voir [Section de sécurité](/help/sites-administering/security.md) pour plus d’informations sur la définition des autorisations souhaitées.
 
 ### Mécanisme de sélection de liens {#link-selection-mechanism}
 
@@ -205,7 +209,7 @@ Si un utilisateur ou un groupe ne possède pas l’autorisation de lecture sur u
 
 ### Ajout d’un élément personnalisé {#adding-a-custom-item}
 
-Vous pouvez utiliser le [mécanisme de sélection de liens](#link-selection-mechanism) pour ajouter votre propre élément personnalisé à la liste des liens.
+Le [mécanisme de sélection de lien](#link-selection-mechanism) peut être utilisé pour ajouter votre propre élément personnalisé à la liste des liens.
 
 Ajoutez votre élément personnalisé à la liste en ajoutant le mixin `cq:Console` à votre widget ou ressource. Pour ce faire, vous devez définir la propriété suivante :
 

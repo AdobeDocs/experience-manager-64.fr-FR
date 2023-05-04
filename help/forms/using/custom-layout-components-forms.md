@@ -1,7 +1,7 @@
 ---
 title: Création de composants de disposition personnalisés pour les formulaires adaptatifs
 seo-title: Creating custom layout components for adaptive forms
-description: Procédure pour créer des composants de disposition personnalisés pour les formulaires adaptatifs.
+description: Procédure de création de composants de disposition personnalisés pour les formulaires adaptatifs.
 seo-description: Procedure to create custom layout components for adaptive forms.
 uuid: 09a0cacc-d693-46dc-90a3-254d1878a68a
 content-type: reference
@@ -9,22 +9,26 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 102718cb-592a-4a5c-89a6-ad4d56f3d547
 exl-id: ea21b47f-25fc-48cb-a5dc-d0433146b40d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 100%
+source-wordcount: '305'
+ht-degree: 64%
 
 ---
 
 # Création de composants de disposition personnalisés pour les formulaires adaptatifs {#creating-custom-layout-components-for-adaptive-forms}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Prérequis {#prerequisite}
 
-Connaissance des dispositions qui vous permet de créer et utiliser une disposition personnalisée. Voir [Modification de la disposition du panneau](/help/forms/using/layout-capabilities-adaptive-forms.md).
+Connaissance des mises en page qui vous permet de créer/utiliser une mise en page personnalisée. Voir [Modification de la disposition du panneau](/help/forms/using/layout-capabilities-adaptive-forms.md).
 
 ## Composant de disposition de panneau de formulaire adaptatif {#adaptive-form-panel-layout-component}
 
-Le composant Disposition de panneau de formulaire adaptatif contrôle la disposition des composants d’un formulaire adaptatif dans un panneau par rapport à l’interface utilisateur.
+Le composant Disposition de panneau de formulaire adaptatif contrôle la disposition des composants de formulaire adaptatif dans un panneau par rapport à l’interface utilisateur.
 
 ## Création d’une disposition de panneau personnalisée {#creating-a-custom-panel-layout}
 
@@ -198,7 +202,7 @@ Le composant Disposition de panneau de formulaire adaptatif contrôle la disposi
    </div>
    ```
 
-1. Ouvrez un formulaire adaptative en mode création. La disposition de panneau que vous avez définie est ajoutée à la liste pour la configuration des dispositions de panneau.
+1. Ouvrez un formulaire adaptatif en mode Création. La disposition de panneau que vous avez définie est ajoutée à la liste pour la configuration des dispositions de panneau.
 
    ![La disposition de panneau personnalisée s’affiche dans la liste de dispositions de panneau](assets/auth-layt.png) ![Capture d’écran d’un formulaire adaptatif avec disposition de panneau personnalisée](assets/s1.png) ![Capture d’écran montrant la fonctionnalité de basculement de la disposition personnalisée](assets/s2.png)
 

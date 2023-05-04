@@ -2,14 +2,18 @@
 title: Configurations et l’explorateur de configurations
 description: Description des configurations AEM et de leur gestion des paramètres d’espace de travail dans AEM.
 exl-id: c7e0c8d4-a0e9-4e98-b356-dad9e31ac3fb
-source-git-commit: 657bb7df01a7b8e03d39c3bda868d87253b81b2a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 100%
+source-wordcount: '1532'
+ht-degree: 98%
 
 ---
 
 # Configurations et l’explorateur de configurations {#configuration-browser}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les configurations AEM permettent de gérer les paramètres dans AEM et servent d’espaces de travail.
 

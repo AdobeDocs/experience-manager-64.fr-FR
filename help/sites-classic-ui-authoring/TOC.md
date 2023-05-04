@@ -8,7 +8,8 @@ breadcrumb-title: Guide de création dans l’interface utilisateur classique
 user-guide-description: Ce guide recouvre les concepts de création dans AEM dans l’interface utilisateur classique.
 feature: Authoring
 role: User
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 96%

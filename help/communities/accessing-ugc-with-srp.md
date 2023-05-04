@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ee786a5c-b985-4d78-9063-6c79ae5e13e6
 exl-id: 3a16a771-e1c5-4ae4-9fc6-17a47064db54
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 0%
+source-wordcount: '379'
+ht-degree: 2%
 
 ---
 
 # Accès au contenu généré par l’utilisateur avec SRP {#accessing-ugc-with-srp}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## À propos de SRP {#about-srp}
 

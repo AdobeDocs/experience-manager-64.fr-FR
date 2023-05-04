@@ -10,20 +10,24 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6aa88583-5d34-4f77-a932-d47d84785eca
 exl-id: 31926737-1a06-4fb9-b851-665095954875
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 100%
+source-wordcount: '510'
+ht-degree: 66%
 
 ---
 
 # Diagnostics ContextHub {#contexthub-diagnostics}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ContextHub fournit une page de diagnostics qui affiche un aperçu de sa structure. Pour ouvrir la page, accédez à la page `contexthub.diagnostics.html` de votre instance de création AEM par exemple :
 
 `http://<host>:<port>/conf/<tenant>/settings/cloudsettings/default/contexthub.diagnostics.html`
 
-La page de diagnostic de ContextHub présente des informations sur les magasins et les modules d’IU qui ont été créés, les dossiers de bibliothèque cliente chargés et les liens vers des pages utiles.
+La page Diagnostics ContextHub fournit des informations sur les magasins et les modules d’IU créés, les dossiers de bibliothèques clientes chargés et les liens vers des pages utiles.
 
 >[!NOTE]
 >
@@ -35,29 +39,29 @@ La page de diagnostic de ContextHub présente des informations sur les magasins 
 
 ## Magasins {#stores}
 
-La section Magasins répertorie tous les magasins ContextHub qui ont été configurés. Chaque élément de la liste comprend les informations suivantes :
+La section Magasins répertorie tous les magasins ContextHub qui ont été configurés. Chaque élément de la liste comprend les informations suivantes :
 
 * **Title :** [type de magasin](/help/sites-developing/ch-samplestores.md) sur lequel le magasin est basé.
-* **path :** chemin d’accès au nœud du référentiel contenant la configuration.
-* **resourceType :** chemin du nœud du référentiel où le type de magasin est défini.
-* **clientlibs :** catégories des bibliothèques clientes chargées qui implémentent le type de magasin.
+* **path:** Le chemin d’accès au noeud du référentiel qui contient la configuration.
+* **resourceType:** Chemin d’accès du noeud du référentiel où le type de magasin est défini.
+* **clientlibs :** Les catégories des bibliothèques clientes chargées qui implémentent le type de magasin.
 
 ## Modules {#modules}
 
-La section Modules répertorie tous les modules d’IU ContextHub qui ont été configurés. Chaque élément de la liste comprend les informations suivantes :
+La section Modules répertorie tous les modules d’IU ContextHub qui ont été configurés. Chaque élément de la liste comprend les informations suivantes :
 
 * **Title :** [type de module d’IU](/help/sites-developing/ch-samplemodules.md) sur lequel le module d’IU est basé.
-* **path :** chemin d’accès au nœud du référentiel contenant la configuration.
-* **resourceType :** chemin du nœud du référentiel où le type de module d’IU est défini.
-* **clientlibs :** catégories des bibliothèques clientes chargées qui implémentent le type de module d’IU.
+* **path:** Le chemin d’accès au noeud du référentiel qui contient la configuration.
+* **resourceType:** Chemin d’accès du noeud du référentiel où le type de module d’IU est défini.
+* **clientlibs :** Les catégories des bibliothèques clientes chargées qui implémentent le type de module d’IU.
 
 ## Clientlibs {#clientlibs}
 
-La section Clientlibs répertorie tous les dossiers de bibliothèque cliente chargés par ContextHub. Les bibliothèques clientes sont catégorisées :
+La section Clientlibs répertorie tous les dossiers de bibliothèque cliente chargés par ContextHub. Les bibliothèques clientes sont classées :
 
 * **kernel.js :** bibliothèques clientes qui implémentent le framework ContextHub, le moteur de segment et les types de stockage.
 * **ui.js :** bibliothèques clientes qui implémentent les types de modules d’IU et l’IU ContextHub.
-* **style.css :** fichiers CSS chargés à partir des bibliothèques clientes.
+* **style.css :** Fichiers CSS chargés à partir des bibliothèques clientes.
 
 ## URL {#urls}
 

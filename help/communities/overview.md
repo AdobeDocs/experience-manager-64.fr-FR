@@ -1,5 +1,5 @@
 ---
-title: Présentation d’AEM Communities
+title: Présentation d’AEM Communities
 seo-title: AEM Communities Overview
 description: Présentation des fonctionnalités et de la configuration d’AEM Communities
 seo-description: An overview of AEM Communities features and setup
@@ -10,16 +10,20 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 exl-id: 3a8b21f8-75da-4867-9a8a-80fddf7946ed
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 5%
+source-wordcount: '1432'
+ht-degree: 2%
 
 ---
 
-# Présentation d’AEM Communities {#aem-communities-overview}
+# Présentation d’AEM Communities {#aem-communities-overview}
 
-Adobe Experience Manager (AEM) Communities permet de créer rapidement un site de communauté local doté de performances et d’une gestion de sites améliorées, et qui encourage les visiteurs à devenir membres de la communauté.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Adobe Experience Manager (AEM) Communities permet de créer rapidement un site de communauté on-premise qui améliore les performances, améliore la gestion du site et encourage la conversion des visiteurs du site en membres de la communauté de grande valeur.
 
 <!--
 Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
@@ -33,7 +37,7 @@ En outre, AEM Communities permet la modération par les membres de confiance dan
 
 Les fonctionnalités de communauté peuvent être démontrées à l’aide de la fonction [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponible publiquement sur GitHub.com ou avec la nouvelle implémentation de référence We.Retail.
 
-## Sites communautaires {#community-sites}
+## Sites de la communauté {#community-sites}
 
 Un site communautaire est un site AEM créé à l’aide d’un assistant simple qui génère un site web avec de nombreuses fonctionnalités courantes pré-câblées dans le site.
 
@@ -76,14 +80,14 @@ Pour en savoir plus sur la persistance du contenu de la communauté et les dépl
 
 Dans l’environnement de création, la console de navigation globale permet d’accéder au [Console des communautés](consoles.md), qui contient :
 
-* La console [Sites](sites-console.md)
+* [Sites](sites-console.md) console
 
    * Création de site
    * Modification du site
    * Gestion de site
    * [Groupes communautaires](groups.md) console
 
-* [Console Modération](moderation.md)
+* [Modération](moderation.md) console
 
    * Interface utilisateur de modération en bloc commune pour les environnements de création et de publication
    * Nouveaux critères de filtrage
@@ -175,7 +179,7 @@ Les caractéristiques d’une communauté d’engagement peuvent être les suiva
 * Commentaires
 * Révisions
 * Évaluations
-* Vote
+* Votant
 * Blogs
 * Groupes
 * Calendriers

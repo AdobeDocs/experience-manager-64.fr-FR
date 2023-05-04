@@ -1,7 +1,7 @@
 ---
 title: Indexation du fichier Oak-run.jar – Scénarios d’utilisation
 seo-title: Oak-run.jar Indexing Use Cases
-description: Découvrez les différents scénarios d’utilisation pour procéder à l’indexation à l’aide de l’outil Oak-run.
+description: Découvrez les différents cas d’utilisation de l’indexation à l’aide de l’outil exécuté par Oak.
 seo-description: Learn about the various user cases for performing indexing with the Oak-run tool.
 uuid: 3c50080d-1e0d-4886-8d37-269f06881eb4
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,29 +10,33 @@ topic-tags: deploying
 discoiquuid: 084075b8-826d-4f27-9342-35f33368f24f
 noindex: true
 exl-id: 62f1d3e6-b0d2-4d64-b62e-91836b573e8c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 100%
+source-wordcount: '1411'
+ht-degree: 58%
 
 ---
 
 # Indexation du fichier Oak-run.jar – Scénarios d’utilisation{#oak-run-jar-indexing-use-cases}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Oak-run prend en charge tous les scénarios d’indexation sur la ligne de commande, sans qu’il faille orchestrer l’exécution de ces scénarios par le biais de la console JMX d’AEM.
 
 Les principaux avantages liés à l’utilisation de la commande d’index oak-run.jar pour la gestion des index Oak sont les suivants :
 
 1. La commande d’index Oak-run fournit un nouveau jeu d’outils d’indexation pour AEM 6.4.
-1. Oak-run réduit la durée de réindexation, ce qui a un effet bénéfique sur les délais de réindexation des référentiels de grande taille.
-1. Oak-run réduit la consommation des ressources au cours de la réindexation dans AEM, ce qui se traduit par de meilleures performances globales du système.
-1. Oak-run fournit une réindexation hors-bande. Cette méthode prend en charge les situations dans lesquelles un environnement de production doit être disponible. Aucune maintenance ou période d’indisponibilité normalement requise pour la réindexation n’est tolérée.
+1. Oak-run réduit la durée de réindexation, ce qui réduit les temps de réindexation sur les référentiels plus volumineux.
+1. Oak-run réduit la consommation de ressources lors de la réindexation dans AEM, ce qui se traduit par de meilleures performances globales du système.
+1. Oak-run fournit une réindexation hors-bande, ce qui prend en charge les situations où la production doit être disponible et ne peut pas tolérer de maintenance ou de temps d’arrêt autrement requis pour la réindexation.
 
-Les sections suivantes fournissent des échantillons de commande. La commande d’index oak-run prend en charge toutes les configurations NodeStore et BlobStore. Les exemples fournis ci-dessous concernent les configurations avec FileDataStore et SegmentNodeStore.
+Les sections ci-dessous fournissent des exemples de commandes. La commande d’index oak-run prend en charge toutes les configurations NodeStore et BlobStore. Les exemples fournis ci-dessous concernent les configurations avec FileDataStore et SegmentNodeStore.
 
-## Cas d’utilisation 1 – Contrôle de cohérence de l’index {#usercase1indexconsistencycheck}
+## Cas d’utilisation 1 - Contrôle de cohérence de l’index {#usercase1indexconsistencycheck}
 
-Il s’agit d’un cas d’utilisation lié à l’altération d’index. Dans certains cas, il s’avérait impossible de déterminer les index qui étaient altérés. C’est pourquoi Adobe a développé des outils qui :
+Il s’agit d’un cas d’utilisation lié à la corruption d’index. Dans certains cas, il n’était pas possible de déterminer les index corrompus. Par conséquent, Adobe a fourni des outils qui :
 
 1. Cette méthode effectue des contrôles de cohérence sur tous les index et génère un rapport sur les index valides et non valides.
 1. Les fonctionnalités peuvent être utilisées même si AEM n’est pas accessible.
@@ -44,7 +48,7 @@ La recherche d’index altérés peut être effectuée au moyen de l’opératio
 java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstore/ --index-consistency-check
 ```
 
-Cette opération génère un rapport dans le fichier `indexing-result/index-consistency-check-report.txt`. Vous trouverez, ci-dessous, un exemple de rapport :
+Cette opération génère un rapport dans le fichier `indexing-result/index-consistency-check-report.txt`. Voir ci-dessous un exemple de rapport :
 
 ```
 Valid indexes :
@@ -70,11 +74,11 @@ Valid indexes :
 
 ### Avantages {#uc1benefits}
 
-Cet outil peut à présent être utilisé par le service d’assistance et l’administrateur système pour déterminer rapidement les index qui sont altérés, puis les réindexer.
+Cet outil peut désormais être utilisé par l’assistance et l’administrateur système pour déterminer rapidement les index corrompus, puis les réindexer.
 
-## Cas d’utilisation 2 – Statistiques sur les index {#usecase2indexstatistics}
+## Cas d’utilisation 2 - Statistiques des index {#usecase2indexstatistics}
 
-Pour diagnostiquer certains des cas relatifs aux performances des requêtes, Adobe nécessitait généralement une définition d’index existante ; des statistiques sur les requêtes provenant de la configuration du client. Jusqu’à présent, ces informations étaient disséminées sur plusieurs ressources. Pour faciliter le dépannage, Adobe a créé des outils qui :
+Pour diagnostiquer certains cas concernant l’Adobe des performances des requêtes, une définition d’index existante était souvent requise, les statistiques relatives aux index issues de la configuration du client. Jusqu&#39;à présent, ces informations ont été réparties sur plusieurs ressources. Pour faciliter le dépannage, Adobe a créé des outils qui :
 
 1. vident toute la définition d’index présente sur le système dans un seul fichier JSON ;
 
@@ -100,19 +104,19 @@ java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstor
 
 Les rapports sont générés dans `indexing-result/index-info.txt` et dans `indexing-result/index-definitions.json`
 
-Les mêmes informations sont, en outre, disponibles via la console web et font partie du fichier zip de vidage de la configuration. Elles sont accessibles à l’emplacement suivant :
+En outre, les mêmes détails sont fournis par le biais de la console web et feraient partie du fichier zip de vidage de configuration. Ils sont accessibles à l’emplacement suivant :
 
 `https://serverhost:serverport/system/console/status-oak-index-defn`
 
 ### Avantages {#uc2benefits}
 
-Cet outil permet de collecter rapidement toutes les informations requises concernant les problèmes d’indexation ou de requête, et de réduire le temps consacré à l’extraction de ces informations.
+Cet outil permet de collecter rapidement tous les détails requis relatifs aux problèmes d’indexation ou de requête et de réduire le temps consacré à l’extraction de ces informations.
 
-## Cas d’utilisation 3 – Réindexation {#usecase3reindexing}
+## Cas d’utilisation 3 - Réindexation {#usecase3reindexing}
 
-En fonction des [scénarios](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing), une réindexation doit être effectuée dans certains cas. Actuellement, la réindexation s’effectue en définissant l’indicateur `reindex` sur `true` dans le nœud de définition d’index via CRXDE ou via l’interface utilisateur du Gestionnaire d’index. Une fois cet indicateur défini, la réindexation s’opère de façon asynchrone.
+En fonction des [scénarios](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing), une réindexation doit être effectuée dans certains cas. Actuellement, la réindexation s’effectue en définissant l’indicateur `reindex` sur `true` dans le nœud de définition d’index via CRXDE ou via l’interface utilisateur du Gestionnaire d’index. Une fois l’indicateur défini, la réindexation est effectuée de manière asynchrone.
 
-Quelques observations concernant la réindexation :
+Certains points à noter concernant la réindexation :
 
 * La réindexation s’avère beaucoup plus lente sur les configurations `DocumentNodeStore` que sur les configurations `SegmentNodeStore` dans lesquelles tout le contenu est local.
 
@@ -120,9 +124,9 @@ Quelques observations concernant la réindexation :
 * La réindexation implique la traversée de l’ensemble du référentiel, ce qui peut faire peser une charge importante sur la configuration AEM et, partant, avoir une incidence sur l’expérience utilisateur.
 * Dans le cas d’une installation `DocumentNodeStore` dans laquelle la réindexation peut prendre un temps considérable, si la connexion à la base de données Mongo échoue en plein milieu de l’opération, l’indexation doit être relancée depuis le début.
 
-* Dans certains cas, la réindexation peut prendre un certain temps en raison de l’extraction de texte. Cela concerne tout particulièrement les configurations comprenant un grand nombre de fichiers PDF, où le temps consacré à l’extraction de texte peut avoir une incidence sur la durée d’indexation.
+* Dans certains cas, la réindexation peut prendre du temps en raison de l’extraction de texte. Cela est principalement spécifique aux configurations comportant de nombreux fichiers de PDF, où le temps passé sur l’extraction de texte peut avoir une incidence sur le temps d’indexation.
 
-Pour répondre à ces objectifs, les outils d’index oak-run prennent en charge différents modes de réindexation qui peuvent être utilisés suivant les besoins. La commande d’index oak-run offre les avantages suivants :
+Pour atteindre ces objectifs, l’outil d’index oak-run prend en charge différents modes de réindexation qui peuvent être utilisés selon les besoins. La commande d’index oak-run offre les avantages suivants :
 
 * **Réindexation hors-bande** : la réindexation oak-run peut être effectuée séparément d’une configuration AEM en cours d’exécution, ce qui réduit l’impact sur l’instance AEM en cours d’utilisation.
 
@@ -140,9 +144,9 @@ Pour les installations `DocumentNodeStore`, la réindexation peut être effectu�
 java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-write --fds-path=/path/to/datastore mongodb://server:port/aem
 ```
 
-Cela présente les avantages suivants :
+Les avantages suivants sont proposés :
 
-* Incidence minimale sur les instances AEM en cours d’exécution. La plupart des lectures peuvent être effectuées à partir de serveurs secondaires et les activités de traversée requises pour la réindexation n’ont pas de répercussions négatives sur les caches AEM en cours d’exécution.
+* Impact minimal sur l’exécution des instances AEM. La plupart des lectures peuvent être effectuées à partir de serveurs secondaires et les activités de traversée requises pour la réindexation n’ont pas de répercussions négatives sur les caches AEM en cours d’exécution.
 * Les utilisateurs peuvent également fournir un fichier JSON d’un nouvel index ou d’un index mis à jour par le biais de l’option `--index-definitions-file`.
 
 ### Réindexation – SegmentNodeStore {#reindexsegmentnodestore}
@@ -155,9 +159,9 @@ Suivez la méthode habituelle où la réindexation est effectuée en définissan
 
 #### Réindexation en ligne – SegmentNodeStore – L’instance AEM est en cours d’exécution. {#onlinereindexsegmentnodestoretheaeminstanceisrunning}
 
-Dans le cas des installations `SegmentNodeStore`, un seul processus peut accéder à des fichiers de segment en mode lecture/écriture. C’est la raison pour laquelle d’autres tâches manuelles doivent être effectuées avec certaines opérations de l’indexation oak-run.
+Dans le cas des installations `SegmentNodeStore`, un seul processus peut accéder à des fichiers de segment en mode lecture/écriture. Pour cette raison, certaines opérations dans l’indexation exécutée par Oak nécessitent des étapes manuelles supplémentaires.
 
-Ces tâches sont notamment les suivantes :
+Cela impliquerait les éléments suivants :
 
 1. Texte de l’étape
 1. Connectez `oak-run` au même référentiel que celui utilisé par AEM en mode lecture seule et procédez à l’indexation. Voici un exemple de commande à exécuter pour réaliser cette opération :
@@ -168,25 +172,25 @@ Ces tâches sont notamment les suivantes :
 
 1. Pour terminer, importez les fichiers d’index créés au moyen de l’opération `IndexerMBean#importIndex` à partir de l’emplacement où oak-run a enregistré les fichiers d’indexation après avoir exécuté la commande ci-dessus.
 
-Dans ce cas, il n’est pas nécessaire d’arrêter le serveur AEM, ni de provisionner une nouvelle instance. Cependant, comme l’indexation implique la traversée de l’ensemble du référentiel, cela augmentera la charge d’E/S sur l’installation, ce qui aura des répercussions négatives sur les performances d’exécution.
+Dans ce scénario, il n’est pas nécessaire d’arrêter le serveur AEM ni de configurer une nouvelle instance. Cependant, comme l’indexation implique la traversée de l’ensemble du référentiel, elle augmenterait la charge d’E/S sur l’installation, ce qui aurait un impact négatif sur les performances d’exécution.
 
-#### Réindexation en ligne – SegmentNodeStore – L’instance AEM est arrêtée {#onlinereindexsegmentnodestoreaeminstanceisdown}
+#### Réindexation en ligne - SegmentNodeStore - L’instance AEM est arrêtée {#onlinereindexsegmentnodestoreaeminstanceisdown}
 
-Pour les installations `SegmentNodeStore`, la réindexation peut être effectuée au moyen d’une seule commande oak-run. Cependant, l’instance AEM doit être arrêtée.
+Pour les installations `SegmentNodeStore`, la réindexation peut être effectuée au moyen d’une seule commande oak-run. Toutefois, l’instance AEM doit être arrêtée.
 
-Vous pouvez déclencher la réindexation à l’aide de la commande suivante :
+Vous pouvez déclencher la réindexation à l’aide de la commande suivante :
 
 ```shell
 java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-write --fds-path=/path/to/datastore  /path/to/segmentstore/ 
 ```
 
-À la différence de la méthode décrite ci-dessus, la création du point de contrôle et l’importation de l’index sont, dans ce cas, effectuées automatiquement. L’inconvénient est qu’AEM doit être arrêté pendant le processus.
+La différence entre cette approche et celle expliquée ci-dessus est que la création de points de contrôle et l’importation d’index sont effectués automatiquement. L&#39;inconvénient, c&#39;est que AEM doit être en panne pendant le processus.
 
-#### Réindexation hors-bande – SegmentNodeStore {#outofbandreindexsegmentnodestore}
+#### Réindexation hors bande - SegmentNodeStore {#outofbandreindexsegmentnodestore}
 
-Dans ce scénario, vous pouvez effectuer la réindexation sur une configuration clonée afin de réduire l’impact sur l’instance AEM en cours d’exécution :
+Dans ce cas pratique, vous pouvez effectuer une réindexation sur une configuration clonée afin de minimiser l’impact sur l’instance AEM en cours d’exécution :
 
-1. Créez le point de contrôle au moyen d’une opération JMX. Pour ce faire, vous pouvez accéder à la [Console JMX](/help/sites-administering/jmx-console.md) et rechercher `CheckpointManager`. Cliquez ensuite sur l’opération **createCheckpoint(long p1)** avec une valeur d’expiration élevée, en secondes (par exemple, **2592000**).
+1. Créez un point de contrôle via une opération JMX. Pour ce faire, vous pouvez accéder à la [Console JMX](/help/sites-administering/jmx-console.md) et rechercher `CheckpointManager`. Cliquez ensuite sur l’opération **createCheckpoint(long p1)** avec une valeur d’expiration élevée, en secondes (par exemple, **2592000**).
 1. Copiez le dossier `crx-quickstart` sur un nouvel ordinateur.
 1. Effectuez la réindexation via la commande d’index oak-run.
 
@@ -198,13 +202,13 @@ Dans ce scénario d’utilisation, on part du principe que l’entrepôt de donn
 
 ## Cas d’utilisation 4 – Mise à jour des définitions d’index {#usecase4updatingindexdefinitions}
 
-Actuellement, vous pouvez envoyer des modifications de définition d’index via le module [ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html). Cela permet d’envoyer les définitions d’index via le module de contenu, ce qui exigera, par la suite, que la réindexation soit effectuée en définissant l’indicateur `reindex` sur `true`.
+Actuellement, vous pouvez envoyer des modifications de définition d’index via le package [ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html). Cela permet d’envoyer les définitions d’index via le package de contenu, ce qui exigera, par la suite, que la réindexation soit effectuée en définissant l’indicateur `reindex` sur `true`.
 
-Cela donne de bons résultats avec les plus petites installations pour lesquelles la réindexation est de courte durée. Cependant, pour les référentiels très volumineux, la réindexation prendra beaucoup plus de temps. Dans ce cas, il est désormais possible d’utiliser l’outil d’indexation oak-run.
+Cela fonctionne bien pour les installations plus petites où la réindexation ne prend pas beaucoup de temps. Toutefois, pour les référentiels très volumineux, la réindexation sera effectuée dans un laps de temps considérablement plus long. Dans ce cas, nous pouvons désormais utiliser l’outil d’index oak-run.
 
-Oak-run permet à présent de fournir des définitions d’index au format JSON et de créer l’index en mode hors-bande dans lequel aucune modification n’est effectuée sur une instance dynamique.
+Oak-run prend désormais en charge la fourniture de définitions d’index au format JSON et la création d’index en mode hors bande où aucune modification n’est effectuée sur une instance en direct.
 
-Le processus dont vous devez tenir compte pour ce scénario d’utilisation est le suivant :
+Le processus à prendre en compte pour ce cas pratique est le suivant :
 
 1. Un développeur met à jour les définitions d’index sur une instance locale, puis génère un fichier JSON de définition d’index au moyen de l’option `--index-definitions`.
 

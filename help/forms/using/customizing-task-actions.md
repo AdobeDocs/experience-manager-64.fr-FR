@@ -1,7 +1,7 @@
 ---
-title: Personnalisation des actions de tâche
+title: Personnaliser les actions de tâche
 seo-title: Customizing Task Actions
-description: Vous pouvez personnaliser l’aspect des actions de tâche, utiliser uniquement des images pour les actions, et personnaliser les images utilisées dans des actions d’acheminement.
+description: Vous pouvez personnaliser l’aspect des actions de tâche, utiliser uniquement des images pour les actions et personnaliser les images utilisées dans les actions d’itinéraire.
 seo-description: You can customize appearance of the task actions, use only images for actions, and customize the images used in route actions.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 exl-id: 3534864b-3d1c-42ca-96a0-5becbfbc8ce6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 94%
+source-wordcount: '329'
+ht-degree: 68%
 
 ---
 
-# Personnalisation des actions de tâche {#customizing-task-actions}
+# Personnaliser les actions de tâche {#customizing-task-actions}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 L’espace de travail AEM Forms permet aux utilisateurs de personnaliser les actions de tâche. Avant de personnaliser les actions de tâche, vous devez suivre les étapes indiquées dans [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
@@ -110,7 +114,7 @@ Pour personnaliser le style de texte, ajoutez le fragment de code suivant dans l
 
 ## Personnalisation des images {#customizing-images}
 
-Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichier `/apps/ws/css/newStyle.css`. Le fragment de code suivant personnalise l’image pour l’action *lock* :
+Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichier `/apps/ws/css/newStyle.css`. Le fragment de code suivant personnalise l’image pour la variable *lock* action :
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -120,7 +124,7 @@ Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichi
 
 >[!NOTE]
 >
->ajoutez des styles distincts pour afficher des images différentes ou des images de résolutions différentes pour les actions Liste de tâches et Détails de la tâche. Par exemple, pour modifier l’action « lock » :
+>ajoutez des styles distincts pour afficher des images différentes ou des images de résolutions différentes pour les actions Liste de tâches et Détails de la tâche. Par exemple, pour modifier l’action &quot;lock&quot; :
 
 ```css
 #taskarea .taskActionsPopUp .lock{
@@ -131,13 +135,13 @@ Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichi
 }
 ```
 
-## Affichage des images pour des actions uniquement {#showing-only-images-for-actions}
+## Affichage des images uniquement pour les actions {#showing-only-images-for-actions}
 
 Pour afficher uniquement des images pour des actions, personnalisez les images utilisées dans les actions d’acheminement. Pour plus d’informations, voir [Images pour les actions d’itinéraire](/help/forms/using/images-route-actions.md).
 
 ### Menu contextuel de l’action de tâche Liste de tâches {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Vous avez besoin du paquet de développement pour personnaliser les éléments du menu contextuel de l’action de tâche Liste de tâches de l’espace de travail AEM Forms. Pour plus d’informations sur la création d’un programme de développement, voir [Générer du code de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code).
+1. Vous avez besoin du package de développement pour personnaliser les éléments du menu contextuel de l’action de tâche Liste de tâches de l’espace de travail AEM Forms. Pour plus d’informations sur la création d’un package de développement, voir [Générer du code de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 1. Copiez /libs/ws/js/runtime/templates/task.html dans `/apps/ws/js/runtime/templates/task.html`pour remplacer le fragment de code suivant :
 
@@ -359,7 +363,7 @@ Effectuez les étapes suivantes pour personnaliser le menu contextuel des action
 ```
 
 * Ouvrez le fichier /apps/ws/js/registry.js pour le modifier.
-* Recherchez le texte suivant : `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
+* Recherchez le texte suivant : `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * Remplacez le texte localisé par le texte suivant : `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
 
 [**Contacter le support technique**](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -8,15 +8,19 @@ uuid: 5bcfb5d8-37d4-4a0e-882d-bc8a1bac6ba7
 contentOwner: AEM Docs
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '622'
 ht-degree: 13%
 
 ---
 
 
 # NE PAS PUBLIER, MAIS NE PAS DELETE La Personnalisation Des Modèles De Fragment De Contenu{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 L’éditeur de modèle de fragment de contenu est un assistant basé sur `Formbuilder`, hérité de :
 
@@ -83,12 +87,12 @@ L&#39;assistant va créer une entrée avec cette structure :
 
 Le **Éditeur de modèle de fragment de contenu** comporte deux parties :
 
-* Panneau de prévisualisation, ou d’affichage, sur le côté gauche, dans lequel vous pouvez déposer des éléments. Celui-ci :
+* Panneau de prévisualisation, ou d’affichage, sur le côté gauche, dans lequel vous pouvez déposer des éléments. Cela :
 
    * Affiche un aperçu de la variable **Type de données** qui est instancié.
    * Autorise l’ordre dans l’éditeur de modèles.
 
-* Le **Types de données**/**Propriétés** dans le panneau situé à droite. Celui-ci :
+* Le **Types de données**/**Propriétés** dans le panneau situé à droite. Cela :
 
    * Affiche une liste des types de données qui peuvent être déplacés et instanciés.
    * Pour l’éditeur de modèle d’usine, la liste se trouve à l’adresse suivante :
@@ -119,5 +123,5 @@ Lorsqu’un type de données est instancié, des entrées de HTML sont créées 
 
 * **Description** ( `fieldDescription`) : description du composant dans le fragment de contenu.
 
-* Autres.
+* et autres.
 

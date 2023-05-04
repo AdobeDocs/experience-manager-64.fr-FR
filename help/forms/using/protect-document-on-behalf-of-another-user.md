@@ -8,34 +8,38 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
 feature: Document Security
 exl-id: 76f25e65-1bc3-4801-998c-40ff533393e2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 93%
+source-wordcount: '419'
+ht-degree: 22%
 
 ---
 
 # Protection d’un document au nom d’un autre utilisateur {#protect-a-document-on-behalf-of-another-user}
 
-AEM Forms Document Security Java SDK fournit des API permettant à un compte d’utilisateur de protéger un document au nom d’un autre utilisateur sans avoir les autorisations nécessaires pour modifier le document. Vous pouvez utiliser l’API dans un processus de flux ou par programmation en tant que service de document. Les nouvelles API sont les suivantes :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Le SDK Java d’AEM Forms Document Security fournit des API pour permettre à un compte d’utilisateur de protéger un document au nom d’un autre utilisateur sans avoir les autorisations de modifier le document. Vous pouvez utiliser les API dans un processus de workflow ou par programmation en tant que service de document. Les nouvelles API sont les suivantes :
 
 * **ProtectDocument :** utilisez l’API ProtectDocument pour appliquer une stratégie à un document au nom
 
-   d’un autre compte utilisateur. Les autorisations du compte utilisateur utilisé pour appliquer la stratégie restent limitées à la protection du document. Elles ne permettent pas d’ouvrir et d’afficher le document. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
+   d’un autre compte utilisateur. Les autorisations du compte utilisateur utilisé pour appliquer la stratégie restent limitées à la protection du document. Il n’obtient pas les droits d’ouverture et d’affichage du document. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, booléen bExactMatchForNames)
 
-* **createLicense** Utilisez l’API CreateLicense pour créer une licence pour une stratégie au nom d’un autre compte utilisateur. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
-* **protectDocumentWithCoverPage** Utilisez l’API ProtectDocumentWithCoverPage pour appliquer une stratégie et ajouter une page de garde à un document au nom d’un autre utilisateur. Les autorisations du compte utilisateur utilisé pour appliquer la stratégie restent limitées à la protection du document. Elles ne permettent pas d’ouvrir et d’afficher le document. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
+* **createLicenseUse** API CreateLicense pour créer une licence pour une stratégie au nom d’un autre compte utilisateur. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
+* **protectDocumentWithCoverPageUse** l’API ProtectDocumentWithCoverPage pour appliquer une stratégie et ajouter une page de garde à un document au nom d’un autre utilisateur. Les autorisations du compte utilisateur utilisé pour appliquer la stratégie restent limitées à la protection du document. Il n’a pas les droits d’ouvrir et d’afficher le document. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
 
 ## Utilisation des API pour protéger un document au nom d’un autre utilisateur {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
 
-Procédez comme suit pour protéger un document au nom d’un autre utilisateur et sans obtenir les autorisations nécessaires pour modifier le document :
+Effectuez les étapes suivantes pour protéger un document au nom d’un autre utilisateur et sans obtenir les autorisations nécessaires pour le modifier :
 
-1. Création d’un jeu de stratégies. Par exemple, JeuStratégies1.
+1. Créez un jeu de stratégies Par exemple, JeuStratégies1.
 1. Créez une stratégie dans le jeu de stratégies nouvellement créé. Par exemple, Stratégie1 dans JeuStratégies1.
-1. Créez un utilisateur avec le rôle Utilisateur final de Rights Management. Par exemple, Utilisateur1. Fournissez les autorisations pour afficher les documents protégés à l’aide de Stratégie1 pour l’utilisateur nouvellement créé.
-1. Créez un rôle. Par exemple, Rôle1. Fournissez l’autorisation Service Invoke au nouveau rôle créé. Créez un utilisateur avec le rôle nouvellement créé. Par exemple, Utilisateur2.Vous pouvez utiliser Utilisateur2 ou un administrateur pour créer une connexion SDK et appeler le service protectDocument.
+1. Créez un utilisateur avec le rôle Utilisateur final du Rights Management. Par exemple, User1. Fournissez les autorisations pour afficher les documents protégés à l’aide de Stratégie1 pour l’utilisateur nouvellement créé.
+1. Créer un rôle. Par exemple, Rôle1. Octroyez l’autorisation d’appel de service au rôle nouvellement créé. Créez un utilisateur avec le rôle nouvellement créé. Par exemple, User2.Vous pouvez utiliser User2 ou un administrateur pour créer une connexion SDK et appeler le service protectDocument.
 
-   Maintenant, vous pouvez exécuter l’exemple de code suivant pour protéger un document sans fournir d’autorisations permettant de modifier le document à l’utilisateur protégeant le document :
+   Vous pouvez désormais exécuter l’exemple de code suivant pour protéger un document sans fournir les autorisations nécessaires pour modifier le document à l’utilisateur qui le protège :
 
    ```java
    import java.io.File;

@@ -1,7 +1,7 @@
 ---
-title: Mappage des données de composant aux propriétés Adobe Analytics
+title: Mapper des données de composant à des propriétés Adobe Analytics
 seo-title: Mapping Component Data with Adobe Analytics Properties
-description: Découvrez comment mapper des données de composant à des propriétés SiteCatalyst.
+description: Découvrez comment mapper les données de composant avec les propriétés de SiteCatalyst.
 seo-description: Learn how to map component data with SiteCatalyst properties.
 uuid: accdb0e8-957c-4617-9a8d-eccc24ac436e
 contentOwner: User
@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 2a9be3b7-b325-4d74-a5bc-8d24db491920
 exl-id: 04adbbc9-9e4c-4c64-aab1-20b17bd75bb5
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 93%
+source-wordcount: '1479'
+ht-degree: 64%
 
 ---
 
-# Mappage des données de composant aux propriétés Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
+# Mapper des données de composant à des propriétés Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Ajoutez à la structure des composants qui rassemblent les données à envoyer à Adobe Analytics. Les composants conçus pour collecter des données d’analyse stockent les données dans la **variable CQ** appropriée. Lorsque vous ajoutez ce type de composant à un framework, celle-ci affiche la liste des variables CQ afin que vous puissiez associer chacune d’elles à la **variable Analytics** appropriée.
 
@@ -34,7 +38,7 @@ Vous pouvez associer plusieurs variables Analytics à une même **variable CQ**
 Les données mappées sont envoyées vers Adobe Analytics lorsque la page se charge et que les conditions ci-dessous sont remplies :
 
 * La page est associée à la structure.
-* La page utilise les composants ajoutés à la structure.
+* La page utilise les composants qui sont ajoutés à la structure.
 
 Appliquez la procédure ci-dessous pour mapper des variables de composants CQ à des propriétés de rapport Adobe Analytics.
 
@@ -42,7 +46,7 @@ Appliquez la procédure ci-dessous pour mapper des variables de composants CQ �
 
    ![aa-13](assets/aa-13.png)
 
-   Il existe plusieurs groupes de composants par défaut : **Général**, **Commerce**, **Communautés**, et **Autre**. Votre instance AEM peut être configurée de manière à afficher différents groupes et composants.
+   Il existe différents groupes de composants par défaut : **Général**, **Commerce**, **Communities**, et **Autre**. Votre instance AEM peut être configurée de manière à afficher différents groupes et composants.
 
 1. Pour mapper des variables Adobe Analytics à des variables définies dans le composant, faites glisser une **variable Analytics** de l’outil de recherche de contenu vers un champ du composant de suivi. Par exemple, faites glisser `Page Name (pageName)` vers `pagedata.title`.
 
@@ -72,7 +76,7 @@ Appliquez la procédure ci-dessous pour mapper des variables de composants CQ �
 
 AEM utilise une convention pour nommer les variables liées à des produits et à des événements censés être mappés à des propriétés liées à des produits Adobe Analytics :
 
-| Variable CQ | Variable Analytics | Description |
+| Variable CQ | Variable Analytics | Description |
 |---|---|---|
 | `product.category` | `product.categor`y (variable de conversion) | Catégorie de produits. |
 | `product.sku` | `product.sku` (variable de conversion) | SKU du produit. |
@@ -110,23 +114,23 @@ L’élément `cf#` est nécessaire pour mapper des variables Analytics aux vari
 
 En fonction de la vue sélectionnée pour le framework, l’outil de recherche de contenu est renseigné par des variables Analytics (dans la vue AEM) ou des variables CQ (dans la vue Analytics).
 
-La liste peut être manipulée comme suit :
+La liste peut être manipulée comme suit :
 
-1. Lorsque vous accédez à la **vue AEM**, la liste peut être filtrée en fonction du type de variable sélectionné à l’aide des trois boutons de filtre :
+1. Dans **AEM vue**, la liste peut être filtrée en fonction du type de variable sélectionné à l’aide des trois boutons de filtrage :
 
    * Si *aucun bouton* n’est sélectionné, la liste complète s’affiche.
-   * Si vous sélectionnez le **** bouton Trafic, seules les variables appartenant à la section Trafic sont répertoriées dans la liste.
+   * Si la variable **Trafic** est sélectionné, la liste affiche uniquement les variables appartenant à la section Trafic .
    * Si vous sélectionnez le bouton **Conversion**, seules les variables appartenant à la section Conversion sont répertoriées dans la liste.
-   * Si vous sélectionnez le bouton **Événements**, seules les variables appartenant à la section Événements sont répertoriées dans la liste.
+   * Si la variable **Événements** est sélectionné, la liste affiche uniquement les variables appartenant à la section Événements .
 
    >[!NOTE]
    >
    >Un seul bouton de filtre peut être actif à la fois.
 
-   1. La liste comporte également une fonctionnalité de recherche, qui filtre les éléments en fonction du texte saisi dans le champ de recherche.
-   1. Si une option de filtre est activée lors de la recherche des éléments de la liste, les résultats affichés sont également filtrés en fonction du bouton actif.
-   1. La liste peut être rechargée à tout moment à l’aide du bouton de flèches tourbillonnantes.
-   1. Si vous sélectionnez plusieurs RSID dans la structure, toutes les variables de la liste s’affichent à l’aide de toutes les étiquettes utilisées dans les RSID sélectionnés.
+   1. La liste comporte également une fonction de recherche qui filtre les éléments en fonction du texte saisi dans le champ de recherche.
+   1. Si une option de filtrage est activée lors de la recherche d&#39;éléments dans la liste, les résultats affichés seront également filtrés en fonction du bouton principal.
+   1. La liste peut être rechargée à tout moment à l’aide des flèches rapides.
+   1. Si plusieurs RSID sont sélectionnés dans la structure, toutes les variables de la liste s’affichent à l’aide de toutes les étiquettes utilisées dans les RSID sélectionnés.
 
 
 1. Dans la vue Adobe Analytics, l’outil de recherche de contenu répertorie toutes les variables CQ appartenant aux composants de suivi que vous faites glisser dans la vue CQ.
@@ -150,25 +154,25 @@ La liste peut être manipulée comme suit :
 
 ![aa-23](assets/aa-23.png)
 
-En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propriétés suivantes :
+En prenant comme exemple l’image ci-dessus, la variable **AEM vue** possède les propriétés suivantes :
 
-1. Voici la vue par défaut à l’ouverture de la structure.
+1. Il s’agit de la vue par défaut à l’ouverture de la structure.
 1. Sur la gauche de l’écran : l’outil de recherche de contenu (cf#) est renseigné par des variables Adobe Analytics en fonction des RSID sélectionnés.
 1. En-têtes d’onglets (**vue AEM** et **vue Analytics**) : à utiliser pour basculer entre les vues.
 
 1. **Vue AEM** :
 
-   1. Si la structure contient des composants hérités du parent, ils sont répertoriés à cet endroit, avec les variables mappées aux composants.
+   1. Si la structure comporte des composants hérités de son parent, ils sont répertoriés ici, ainsi que les variables mappées aux composants.
 
       1. Les composants hérités sont verrouillés.
-      1. Pour déverrouiller un composant hérité, il suffit de double-cliquer sur le cadenas en regard du nom du composant.
-      1. Pour inverser l’héritage, vous devez supprimer le composant déverrouillé. Il retrouve alors son statut verrouillé.
-   1. **Faites glisser des composants ici pour les inclure dans la structure d’analyse** : vous pouvez faire glisser et déposer les composants du Sidekick à cet emplacement.
-   1. Vous pouvez trouver tous les composants actuellement inclus dans la structure d’analyse :
+      1. Pour déverrouiller un composant hérité, double-cliquez sur le cadenas en regard du nom du composant.
+      1. Pour rétablir l’héritage, vous devez supprimer le composant déverrouillé. après quoi il retrouvera son état verrouillé.
+   1. **Faites glisser des composants ici pour les inclure dans la structure d’analyse.**: Vous pouvez faire glisser les composants depuis le sidekick et les déposer ici.
+   1. Vous trouverez tous les composants actuellement inclus dans la structure d’analyse :
 
-      1. Pour ajouter un composant, faites-le glisser à partir de l’onglet Composants du sidekick.
+      1. Pour ajouter un composant, faites-le glisser depuis l’onglet Composants du sidekick.
       1. Pour supprimer un composant et tous ses mappages, sélectionnez Supprimer dans le menu contextuel correspondant, puis acceptez la suppression dans la boîte de dialogue de confirmation.
-      1. Gardez à l’esprit qu’un composant peut être supprimé uniquement dans la structure dans laquelle il a été créé et qu’il ne peut pas être supprimé de structures enfants au sens habituel (il peut uniquement être remplacé).
+      1. Gardez à l’esprit qu’un composant ne peut être supprimé que de la structure dans laquelle il a été créé et ne peut pas être supprimé des structures enfants au sens traditionnel du terme (elles ne peuvent être remplacées que).
 
 
 ### Vue Analytics {#analytics-view}
@@ -176,15 +180,15 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 ![aa-24](assets/aa-24.png)
 
 1. Cette vue est accessible en cliquant sur l’onglet **vue Analytics** du framework.
-1. Sur la gauche de l’écran : outil de recherche de contenu (cf#) renseigné par des variables CQ en fonction des composants déplacés sur la structure dans la vue CQ.
+1. Côté gauche : Outil de recherche de contenu (cf#) renseigné par des variables CQ en fonction des composants déplacés sur la structure dans la vue CQ.
 1. En-têtes d’onglets (**vue AEM** et **vue Analytics**) : à utiliser pour basculer entre les vues.
 
-1. Les trois tableaux (Trafic, Conversion, Événement) répertorient toutes les variables Adobe Analytics disponibles des RSID sélectionnés. Les mappages affichés ici doivent être identiques à ceux de la vue AEM :
+1. Les trois tableaux (Trafic, Conversion, Événement) répertorient toutes les variables Adobe Analytics disponibles des RSID sélectionnés. Les mappages affichés ici doivent être identiques à ceux de la vue AEM :
 
    * **Trafic** :
 
       * Variable de trafic (`prop1`) mappée à une variable CQ (`eventdata.downloadLink`)
-      * Lorsque le composant comporte un cadenas en regard de son nom, cela signifie qu’il est hérité d’une structure parente et ne peut donc pas être modifié.
+      * Lorsque le composant est associé à un cadenas, cela signifie qu’il est hérité d’une structure parente et ne peut donc pas être modifié.
    * **Conversion** :
 
       * Variable de conversion (`eVar1`) mappée à une variable CQ (`pagedata.title`)
@@ -197,7 +201,7 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 
 >[!NOTE]
 >
->La colonne Variable CQ de chaque tableau peut également être renseignée en ligne en double-cliquant dans le champ et en ajoutant du texte. Ces champs acceptent la saisie de code JavaScript.
+>La colonne Variable CQ de chaque tableau peut également être renseignée en ligne en double-cliquant dans le champ et en ajoutant du texte. Ces champs acceptent JavaScript comme entrée.
 >
 >* Par exemple, en regard de `prop3` vous pouvez ajouter
 >* `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\

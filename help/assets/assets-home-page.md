@@ -5,20 +5,24 @@ contentOwner: AG
 feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 77%
+source-wordcount: '593'
+ht-degree: 47%
 
 ---
 
 # Expérience de page d’accueil d’[!DNL Adobe Experience Manager Assets] {#aem-assets-home-page-experience}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Personnalisez la page d’accueil d’[!DNL Experience Manager Assets] afin d’enrichir l’expérience de l’écran de bienvenue, avec notamment un instantané des activités récentes concernant les ressources.
 
 Le [!DNL Adobe Experience Manager Assets] La page d’accueil offre une expérience d’écran de bienvenue riche et personnalisée, qui inclut un instantané des activités récentes, telles que les ressources récemment affichées ou chargées.
 
-La page d’accueil d’Assets est désactivée par défaut. Pour l’activer, procédez comme suit :
+La page d’accueil des ressources est désactivée par défaut. Pour l’activer, procédez comme suit :
 
 1. Pour accéder à [!DNL Experience Manager] Configuration Manager, cliquez sur **[!UICONTROL Outils > Opération > Console web]**.
 1. Ouvrez le service **Enregistreur d’événement de gestion des ressources numériques Day CQ**.
@@ -47,20 +51,20 @@ Après avoir activé la page d’accueil des ressources, accédez à l’interfa
 
 Appuyez/cliquez sur le bouton **[!UICONTROL Cliquez ici pour configurer le lien de votre expérience]** pour ajouter votre nom d’utilisateur, votre image d’arrière-plan et votre image de profil.
 
-La page d’accueil des ressources inclut les sections suivantes :
+La page d’accueil des ressources comprend les sections suivantes :
 
-* Section Bienvenue
+* Section d’accueil
 * Section Widget
 
-**Section Bienvenue**
+**Section d’accueil**
 
-Si votre profil existe, la section Bienvenue affiche pour vous un message de bienvenue. Elle affiche également votre image de profil et une image de bienvenue (si celle-ci est déjà configurée).
+Si votre profil existe, la section Bienvenue vous affiche un message de bienvenue. Elle affiche également votre image de profil et une image de bienvenue (si celle-ci est déjà configurée).
 
 Si votre profil est incomplet, la section Bienvenue affiche un message de bienvenue générique et un espace réservé pour votre image de profil.
 
 **Section Widget**
 
-Cette section s’affiche sous la section Bienvenue et contient des widgets prêts à l’emploi dans les sections suivantes :
+Cette section apparaît sous la section Bienvenue et affiche des widgets prêts à l’emploi sous les sections suivantes :
 
 * Activité
 * Récent
@@ -72,9 +76,9 @@ Cette section s’affiche sous la section Bienvenue et contient des widgets prê
 
 **Discover**: Le **Nouveau** Le widget situé sous cette section affiche les ressources et les rendus récemment chargés dans le [!DNL Assets] instance.
 
-Pour permettre la purge des données d’activité d’utilisateur, activez le **service de purge d’événement de gestion des ressources numériques** dans le gestionnaire de configuration. Une fois que vous avez activé ce service, les activités de l’utilisateur connecté dépassant le nombre spécifié sont supprimées par le système.
+Pour permettre la purge des données d’activité d’utilisateur, activez le **service de purge d’événement de gestion des ressources numériques** dans le gestionnaire de configuration. Une fois ce service activé, les activités de l’utilisateur connecté dépassant un nombre spécifié sont supprimées par le système.
 
-L’écran de bienvenue fournit des outils d’aide à la navigation, comme des icônes sur la barre d’outils afin d’accéder aux dossiers, aux collections et aux catalogues.
+L’écran de bienvenue fournit des aides à la navigation simples, par exemple des icônes dans la barre d’outils pour accéder aux dossiers, aux collections et aux catalogues.
 
 >[!NOTE]
 >
@@ -82,8 +86,8 @@ L’écran de bienvenue fournit des outils d’aide à la navigation, comme des 
 
 >[!CAUTION]
 >
->Les activités de collecte, de filtrage et de purge effectuées par l’utilisateur, requises pour la page d’accueil des ressources, génèrent une charge qui peut affecter les performances. Par conséquent, les administrateurs doivent configurer la page d’accueil de manière efficace pour les utilisateurs cibles.
+>La capture, le filtrage et la purge des activités utilisateur requises pour la page d’accueil des ressources imposent une surcharge de performances. Par conséquent, les administrateurs doivent configurer efficacement la page d’accueil pour les utilisateurs cibles.
 >
->Adobe recommande que les administrateurs et les utilisateurs qui effectuent des opérations en masse évitent d’utiliser la fonction de la page d’accueil des ressources pour empêcher l’augmentation des activités de l’utilisateur.  De plus, les administrateurs peuvent exclure les activités d’enregistrement de certains utilisateurs en configurant l’**Enregistreur d’événement de gestion des ressources numériques Day CQ** à partir du gestionnaire de configuration.
+>Adobe recommande aux administrateurs et aux utilisateurs qui effectuent des opérations en bloc d’éviter d’utiliser la fonction Page d’accueil des ressources pour éviter d’augmenter les activités des utilisateurs. De plus, les administrateurs peuvent exclure les activités d’enregistrement de certains utilisateurs en configurant l’**Enregistreur d’événement de gestion des ressources numériques Day CQ** à partir du gestionnaire de configuration.
 >
 >Si vous utilisez la fonction, Adobe recommande de planifier la fréquence de purge par rapport à la charge du serveur.

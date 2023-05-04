@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 81%
+source-wordcount: '505'
+ht-degree: 77%
 
 ---
 
 # Démarrage rapide API Java (SOAP) pour les composants et services (SOAP) {#components-and-services-java-apiquick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Démarrage rapide API Java (SOAP) est disponible pour les composants et services.
 

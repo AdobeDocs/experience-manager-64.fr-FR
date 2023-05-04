@@ -10,20 +10,24 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
 exl-id: 365e944d-d8a3-4f4e-8925-88629845232f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 79%
+source-wordcount: '515'
+ht-degree: 46%
 
 ---
 
 # Développement et outil de comparaison des pages{#developing-and-page-diff}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Présentation des fonctionnalités {#feature-overview}
 
-La création de contenu est un processus itératif. Pour être efficace lorsque vous créez du contenu, vous devez pouvoir voir ce qui a changé d’une version à l’autre. Afficher les versions en alternance est une méthode inefficace avec un fort risque d’erreur. Un auteur souhaite afficher, côte à côte, deux versions d’une page afin de les comparer en mettant les différences en évidence.
+La création de contenu est un processus itératif. Pour être efficace lorsque vous créez du contenu, vous devez pouvoir voir ce qui a changé d’une version à l’autre. L’affichage d’une version de page, puis de l’autre, est inefficace et susceptible d’erreur. Un auteur souhaite pouvoir comparer la page active à une version précédente en même temps que les différences mises en évidence.
 
-L’outil de comparaison des pages permet à un utilisateur de comparer la page active aux lancements, aux versions précédentes, etc. Pour plus d’informations sur cette fonctionnalité utilisateur, voir [Outil de comparaison des pages](/help/sites-authoring/page-diff.md).
+L’outil de comparaison des pages permet à l’utilisateur de comparer la page active aux lancements, aux versions précédentes, etc. Pour plus d’informations sur cette fonction utilisateur, voir [Outil de comparaison des pages](/help/sites-authoring/page-diff.md).
 
 ## Détails de l’opération {#operation-details}
 
@@ -55,11 +59,11 @@ Ce contenu est créé par un utilisateur de service avec des autorisations limit
 
 Une tâche de nettoyage s’exécute automatiquement pour nettoyer ce contenu temporaire.
 
-## Limitations de développeur {#developer-limitations}
+## Limites des développeurs {#developer-limitations}
 
-Auparavant, dans l’IU classique, il fallait prêter une attention particulière sur le plan du développement pour permettre la comparaison AEM (par exemple pour l’utilisation de la bibliothèque de balises `cq:text` ou pour l’intégration personnalisée du service OSGi `DiffService` dans des composants). Cela n’est plus nécessaire pour la nouvelle fonction de comparaison (diff), puisque cela s’effectue du côté client via la comparaison DOM.
+Auparavant, dans l’IU classique, il fallait prêter une attention particulière sur le plan du développement pour permettre la comparaison AEM (par exemple pour l’utilisation de la bibliothèque de balises `cq:text` ou pour l’intégration personnalisée du service OSGi `DiffService` dans des composants). Cela n’est plus nécessaire pour la nouvelle fonction de comparaison, car la comparaison côté client se fait par le biais de la comparaison DOM.
 
-Cependant, il subsiste un certain nombre de restrictions qui doivent être prises en compte par le développeur.
+Cependant, le développeur doit tenir compte de certaines limites.
 
 * Cette fonctionnalité utilise des classes CSS qui ne sont pas placées dans un espace de noms sur le produit AEM. Si d’autres classes CSS personnalisées ou des classes CSS tierces portant le même nom sont incluses sur la page, l’affichage de la comparaison peut s’en trouver affecté.
 
@@ -70,8 +74,8 @@ Cependant, il subsiste un certain nombre de restrictions qui doivent être prise
    * `cq-component-moved`
    * `cq-component-changed`
 
-* Étant donné que la comparaison s’effectue du côté client et s’exécute au chargement de la page, les réglages apportés au DOM après l’exécution de ce service de comparaison ne sont pas pris en compte. Cela peut avoir une incidence sur éléments suivants :
+* Étant donné que la comparaison est côté client et s’exécute au chargement de la page, les ajustements apportés au DOM après l’exécution du service de comparaison côté client ne seront pas pris en compte. Cela peut affecter
 
-   * Composants qui utilisent AJAX pour intégrer du contenu
+   * Composants qui utilisent AJAX pour inclure du contenu
    * Applications sur une seule page
-   * Composants basés sur JavaScript qui manipulent le DOM lors d’une interaction de l’utilisateur
+   * Composants JavaScript qui manipulent le DOM lors de l’interaction de l’utilisateur.

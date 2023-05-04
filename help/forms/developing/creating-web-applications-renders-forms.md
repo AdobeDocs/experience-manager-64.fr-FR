@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: f77796ff-f5c9-455f-8616-fa590db7fdbe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 98%
+source-wordcount: '1907'
+ht-degree: 97%
 
 ---
 
 # Créer des applications web qui génèrent des formulaires {#creating-web-applications-thatrenders-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Créer des applications web qui génèrent des formulaires {#creating-web-applications-that-renders-forms}
 

@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 exl-id: f8cd2866-6e4d-47e6-b9aa-c2190b0b1b7b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
 
 # Création D’Un Environnement De Test SCF {#create-an-scf-sandbox}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 
 À partir de AEM 6.1 Communities, le moyen le plus simple de créer rapidement un environnement de test est de créer un site de communauté. Voir [Prise en main d’AEM Communities](getting-started.md).

@@ -1,7 +1,7 @@
 ---
 title: AEM Developer Tools for Eclipse
 seo-title: AEM Developer Tools for Eclipse
-description: AEM Outils de développement pour Eclipse
+description: AEM Developer Tools for Eclipse
 seo-description: null
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
@@ -10,14 +10,18 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 exl-id: 9cdd09f6-bfc2-48c3-af40-a54f98833a38
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 99%
+source-wordcount: '844'
+ht-degree: 84%
 
 ---
 
-# AEM Outils de développement pour Eclipse{#aem-developer-tools-for-eclipse}
+# AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ![](do-not-localize/chlimage_1-9.png)
 
@@ -44,7 +48,7 @@ Avant d’utiliser AEM Developer Tools, vous devez :
 
 >[!NOTE]
 >
->Sous macOS, vous devez cliquer avec le bouton droit de la souris sur **Eclipse.app**, puis sélectionner **Voir le contenu du paquet** pour trouver le fichier `eclipse.ini`**.**
+>Sous macOS, vous devez cliquer avec le bouton droit de la souris sur **Eclipse.app**, puis sélectionner **Voir le contenu du package** pour trouver le fichier `eclipse.ini`**.**
 
 ## Installation de AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -54,18 +58,18 @@ Une fois les [conditions préalables](#requirements) ci-dessus réunies, vous po
 
 1. Copiez le **Lien d’installation**.
 
-   Notez que vous pouvez également télécharger un fichier d’archives au lieu d’utiliser le lien d’installation. Cela permet une installation hors ligne, mais sans recevoir les notifications de mise à jour automatique.
+   Notez que vous pouvez également télécharger un fichier d’archives au lieu d’utiliser le lien d’installation. Cela permet l’installation hors ligne, mais les notifications de mise à jour automatique ne sont pas prises en compte de cette manière.
 
-1. Dans Eclipse, ouvrez le menu **Help** (Aide).
-1. Cliquez sur **Install New Software** (Installer un nouveau logiciel).
+1. Dans Eclipse, ouvrez le **Aide** .
+1. Cliquez sur **Installer le nouveau logiciel**.
 1. Cliquez sur **Add...** (Ajouter).
-1. Dans **Name** (Nom), tapez AEM Developer Tools.
+1. Dans **Nom** saisissez AEM Outils de développement.
 1. Dans **Location** (Emplacement), copiez l’URL d’installation.
 1. Cliquez sur **OK**.
-1. Cochez les deux modules externes **AEM** et **Sling**.
+1. Cochez les deux **AEM** et **Sling** modules externes.
 1. Cliquez sur **Next** (Suivant).
 1. Cliquez sur **Suivant**.
-1. Acceptez les contrats de licence et cliquez sur **Finish** (Terminer).
+1. Acceptez les contrats de licence et cliquez sur **Terminer**.
 1. Cliquez sur **Yes** pour redémarrer Eclipse.
 
 ## Importation de projets existants {#how-to-import-existing-projects}
@@ -84,7 +88,7 @@ AEM Developer Tools for Eclipse est proposé avec une Perspective offrant un con
 
 AEM Developer Tools for Eclipse est fourni avec un exemple de projet multi-module qui vous aide à vous familiariser rapidement avec une configuration de projet dans Eclipse, et sert également de guide de bonnes pratiques pour plusieurs fonctionnalités AEM. [En savoir plus sur l’archétype du projet](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
-Suivez les étapes ci-après pour créer l’exemple de projet :
+Pour créer l’exemple de projet, procédez comme suit :
 
 1. Dans le menu **Fichier** > **Nouveau** > **Projet**, accédez à la section **AEM** et sélectionnez **Exemple de projet multi-module AEM**.
 
@@ -129,13 +133,13 @@ Suivez les étapes ci-après pour créer l’exemple de projet :
 Pour résoudre des dépendances et une définition de projet non valides, procédez comme suit :
 
 1. Sélectionnez tous les projets créés.
-1. Faites un clic-droit. Dans le menu **Maven**, sélectionnez **Update Projects** (Mettre à jour les projets).
+1. Faites un clic-droit. Dans le menu **Maven** select **Mettre à jour les projets**.
 1. Cochez **Force Updates of Snapshot/Releases** (Forcer les mises à jour d’instantané/de versions).
 1. Cliquez sur **OK**. Eclipse essaie de télécharger les dépendances demandées.
 
-### Activation de l’auto-remplissage de la bibliothèque de balises dans les fichiers JSP {#enabling-tag-library-autocompletion-in-jsp-files}
+### Activation de la saisie semi-automatique de la bibliothèque de balises dans les fichiers JSP {#enabling-tag-library-autocompletion-in-jsp-files}
 
-L’auto-remplissage de la bibliothèque de balises est prête à l’emploi, étant donné que les dépendances appropriées sont ajoutées au projet. Un problème a été recensé lors de l’utilisation de AEM Uber Jar qui n’ajoute pas les fichiers tld et TagExtraInfo nécessaires.
+L’auto-remplissage de la bibliothèque de balises est prête à l’emploi, étant donné que les dépendances appropriées sont ajoutées au projet. Il existe un problème connu lors de l’utilisation de l’AEM Uber Jar, qui n’inclut pas les fichiers tld et TagExtraInfo nécessaires.
 
 Pour contourner ce problème, assurez-vous que l’artefact org.apache.sling.scripting.jsp.taglib est présent dans le chemin de classe avant le fichier AEM Uber Jar. Pour les projets Maven, placez la dépendance suivante dans le fichier pom.xml avant le fichier Uber Jar.
 

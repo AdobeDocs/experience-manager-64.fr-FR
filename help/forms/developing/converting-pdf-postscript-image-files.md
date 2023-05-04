@@ -11,18 +11,22 @@ topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 role: Developer
 exl-id: 4afed537-1694-4187-8968-608f49116c2e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2795'
-ht-degree: 100%
+source-wordcount: '2831'
+ht-degree: 97%
 
 ---
 
 # Convertir des PDF en fichiers Postscript et dʼimage {#converting-pdf-to-postscript-andimage-files}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 **À propos du service Convert PDF**
 
-Le service Convert PDF convertit des documents PDF en PostScript et en de nombreux formats d’image (JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document PDF en PostScript est utile pour les impressions sans assistance reposant sur un serveur exécutées sur n’importe quelle imprimante PostScript. La conversion d’un document PDF en fichier TIFF comportant plusieurs pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents PDF.
+Le service Convert PDF convertit des documents PDF en PostScript et en de nombreux formats d’image (JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document de PDF en PostScript est utile pour l’impression sans assistance basée sur le serveur sur n’importe quelle imprimante PostScript. La conversion d’un document de PDF en fichier de TIFF multi-pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents de PDF.
 
 Le service Convert PDF vous permet dʼeffectuer les tâches suivantes :
 
@@ -39,7 +43,7 @@ Cette rubrique décrit lʼutilisation de l’API Convert PDF Service (Java et se
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Convert PDF, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Convert PDF, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -215,7 +219,7 @@ Lors de la conversion d’un document PDF en image, le service Convert PDF crée
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Convert PDF, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Convert PDF, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 

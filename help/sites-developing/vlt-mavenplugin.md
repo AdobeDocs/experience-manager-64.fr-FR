@@ -2,14 +2,18 @@
 title: Plug-in Maven Content Package d’Adobe
 description: Utilisation du plug-in Maven Content Package pour déployer des applications AEM
 exl-id: 106a677b-7c89-4fbc-bb96-eaa3dfa71b58
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 94%
+source-wordcount: '193'
+ht-degree: 81%
 
 ---
 
 # Plug-in Maven Content Package d’Adobe {#adobe-content-package-maven-plugin}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le plug-in Maven Content Package d’Adobe permet d’intégrer les tâches de déploiement et de gestion de modules dans vos projets Maven.
 

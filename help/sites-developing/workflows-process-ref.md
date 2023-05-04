@@ -10,41 +10,45 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 exl-id: c828302c-54ad-4171-89d1-f77f4d836277
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 100%
+source-wordcount: '1175'
+ht-degree: 50%
 
 ---
 
 # Référence sur les processus de workflow{#workflow-process-reference}
 
-AEM propose plusieurs étapes de processus qui peuvent être utilisées pour créer des modèles de workflow. Des étapes de processus personnalisées peuvent également être ajoutées pour les tâches qui ne sont pas couvertes par les étapes intégrées (voir [Création de modèles de workflow](/help/sites-developing/workflows-models.md)).
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+AEM fournit plusieurs étapes de processus qui peuvent être utilisées pour créer des modèles de workflow. Des étapes de processus personnalisées peuvent également être ajoutées pour les tâches qui ne sont pas couvertes par les étapes intégrées (voir [Création de modèles de processus](/help/sites-developing/workflows-models.md)).
 
 ## Caractéristiques du processus {#process-characteristics}
 
-Les caractéristiques suivantes sont décrites pour chaque étape du processus.
+Pour chaque étape du processus, les caractéristiques suivantes sont décrites.
 
-### Classe Java ou chemin d’accès ECMA {#java-class-or-ecma-path}
+### Classe Java ou chemin ECMA {#java-class-or-ecma-path}
 
-Les étapes du processus sont définies soit par une classe Java soit par un ECMAScript.
+Les étapes du processus sont définies par une classe Java ou un ECMAScript.
 
-* Dans le cas des processus de classe Java, un nom de classe complet est fourni.
+* Pour les processus de classe Java, le nom de classe complet est fourni.
 * Pour les processus ECMAScript, le chemin d’accès au script est fourni.
 
 ### Payload {#payload}
 
-La charge utile est l’entité sur laquelle opère une instance de workflow. Elle est sélectionnée de manière implicite par le contexte dans lequel une instance de workflow est lancée.
+La charge utile est l’entité sur laquelle agit une instance de workflow. La payload est sélectionnée implicitement par le contexte dans lequel une instance de workflow est démarrée.
 
 Par exemple, si un workflow est appliqué à une page AEM *P*, *P* passe d’une étape à l’autre à mesure que le workflow est exécuté ; chaque étape pouvant éventuellement agir sur *P* dans une certaine mesure.
 
-Dans le cas le plus courant, la charge utile est un nœud JCR du référentiel (une ressource ou une page AEM, par exemple). Une charge utile Nœud JCR est transmise sous la forme d’une chaîne qui est soit un chemin d’accès JCR, soit un identifiant JCR (UUID). Dans certains cas, la charge utile peut être une propriété JCR (transmise en tant que chemin d’accès JCR), une URL, un objet binaire ou un objet Java générique. Les différentes étapes du processus qui agissent effectivement sur la charge utile attendent généralement une charge utile d’un certain type ou se comportent différemment selon le type de charge. Le type de charge utile attendu, le cas échéant, est décrit pour chaque processus présenté ci-dessous.
+Dans le cas le plus courant, la charge utile est un noeud JCR dans le référentiel (par exemple, une page AEM ou une ressource). Un payload de noeud JCR est transmis sous la forme d’une chaîne correspondant à un chemin JCR ou à un identifiant JCR (UUID). Dans certains cas, la charge utile peut être une propriété JCR (transmise comme un chemin JCR), une URL, un objet binaire ou un objet Java générique. Les étapes de processus individuelles qui agissent effectivement sur la payload s’attendent généralement à une payload d’un certain type, ou agissent différemment selon le type de payload. Pour chaque processus décrit ci-dessous, le type de charge utile attendu, le cas échéant, est décrit.
 
 ### Arguments {#arguments}
 
-Certains processus de workflow acceptent les arguments spécifiés par l’administrateur lors de la configuration de l’étape de workflow.
+Certains processus de workflow acceptent les arguments que l’administrateur spécifie lors de la configuration de l’étape du processus.
 
-Les arguments sont saisis sous la forme d’une chaîne unique dans la propriété **Arguments du processus** du volet **Propriétés** de l’éditeur de workflow. Pour chaque processus décrit ci-dessous, le format de la chaîne d’arguments est décrit dans une grammaire EBNF simple. Par exemple, le code suivant indique que la chaîne d’arguments se compose d’une ou de plusieurs paires séparées par des virgules, chacune d’elles étant constituée d’un nom (qui est une chaîne) et d’une valeur séparés par un double signe deux-points :
+Les arguments sont saisis sous la forme d’une seule chaîne dans la variable **Arguments de processus** dans la propriété **Propriétés** du volet de l’éditeur de workflow. Pour chaque processus décrit ci-dessous, le format de la chaîne d’argument est décrit dans une grammaire EBNF simple. Par exemple, le code suivant indique que la chaîne d’arguments se compose d’une ou de plusieurs paires séparées par des virgules, chacune d’elles étant constituée d’un nom (qui est une chaîne) et d’une valeur séparés par un double signe deux-points :
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -55,7 +59,7 @@ Les arguments sont saisis sous la forme d’une chaîne unique dans la propriét
 
 ### Expiration {#timeout}
 
-Une fois ce délai d’expiration dépassé, l’étape de workflow n’est plus opérationnelle. Certains processus de workflow respectent le délai d’expiration, tandis que d’autres l’ignorent.
+Après cette période d’expiration, l’étape du workflow n’est plus opérationnelle. Certains processus de workflow respectent le délai d’expiration, tandis que d’autres ne l’appliquent pas et sont ignorés.
 
 ### Autorisations {#permissions}
 
@@ -69,15 +73,15 @@ La session transmise à `WorkflowProcess` est gérée par l’utilisateur pour l
 
 Si cet ensemble d’autorisations s’avère insuffisant pour votre implémentation de `WorkflowProcess`, elle doit utiliser une session avec les autorisations requises.
 
-La méthode recommandée consiste à employer un utilisateur de service créé avec le sous-ensemble minimum d’autorisations requises.
+La méthode recommandée consiste à utiliser un utilisateur de service créé avec le sous-ensemble d’autorisations requis nécessaire, mais minimal.
 
 >[!CAUTION]
 >
->Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, la mise à jour de votre implémentation peut s’avérer nécessaire.
+>Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, vous devrez peut-être mettre à jour votre mise en oeuvre.
 >
 >Dans les versions précédentes, la session administrateur était transmise aux implémentations de `WorkflowProcess` et pouvait alors bénéficier d’un accès complet au référentiel, sans devoir définir de listes de contrôle d’accès (ACL) spécifiques.
 >
->Les autorisations sont désormais définies comme ci-dessus ([Autorisations](#permissions)). Il en va de même pour la méthode recommandée pour la mise à jour de votre implémentation.
+>Les autorisations sont désormais définies comme ci-dessus ([Autorisations](#permissions)). Comme est la méthode recommandée pour mettre à jour votre mise en oeuvre.
 >
 >Une solution à court terme peut également être appliquée à des fins de rétrocompatibilité, lorsque le code ne peut pas être modifié :
 >
@@ -87,16 +91,16 @@ La méthode recommandée consiste à employer un utilisateur de service créé a
 >
 >Vous revenez alors au comportement précédent qui fournissait une session administrateur à l’implémentation de `WorkflowProcess`, et vous disposez à nouveau d’un accès illimité à l’intégralité du référentiel.
 
-## Processus de contrôle du workflow {#workflow-control-processes}
+## Processus de contrôle des workflows {#workflow-control-processes}
 
-Les processus suivants n’exécutent aucune action sur le contenu. Ils servent à contrôler le comportement du workflow proprement dit.
+Les processus suivants n’effectuent aucune action sur le contenu. Ils servent à contrôler le comportement du workflow proprement dit.
 
 ### AbsoluteTimeAutoAdvancer (Avance automatique temps absolu écoulé) {#absolutetimeautoadvancer-absolute-time-auto-advancer}
 
 Le processus `AbsoluteTimeAutoAdvancer` (Avance automatique temps absolu écoulé) se comporte de la même manière que l’**AutoAdvancer**, si ce n’est qu’il arrive à expiration à une date et une heure données, plutôt qu’après une durée définie.
 
 * **Classe Java** : `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
-* **Payload** : aucun.
+* **Payload** : aucune.
 * **Arguments** : aucun.
 * **Délai d’expiration** : le processus arrive à expiration lorsque la date et l’heure définies sont atteintes.
 
@@ -106,7 +110,7 @@ Le processus `AutoAdvancer` fait passer automatiquement le workflow à l’étap
 
 * **Classe Java** : `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
-* **Payload** : aucun.
+* **Payload** : aucune.
 * **Arguments** : aucun.
 * **Délai d’expiration** : le processus arrive à expiration après une durée définie.
 
@@ -136,8 +140,8 @@ Par exemple :
 
 * Extrayez les métadonnées de la ressource.
 * Créez trois miniatures des trois tailles spécifiées.
-* Créez une image JPEG à partir de la ressource, en supposant que la ressource d’origine n’est ni au format GIF ni au format PNG (auquel cas aucune image JPEG n’est créée).
-* Définissez la date de la dernière modification de la ressource.
+* Créez une image de JPEG à partir de la ressource, en supposant que la ressource n’est à l’origine ni un GIF ni un fichier PNG (auquel cas aucun JPEG n’est créé).
+* Définissez la date de dernière modification sur la ressource.
 
 ```shell
 com.day.cq.dam.core.process.ExtractMetadataProcess,
@@ -158,7 +162,7 @@ Les processus suivants exécutent des tâches simples ou servent simplement d’
 
 ### delete {#delete}
 
-L’élément situé à l’emplacement indiqué est supprimé.
+L’élément du chemin d’accès donné est supprimé.
 
 * **Chemin ECMAScript** : `/libs/workflow/scripts/delete.ecma`
 
@@ -168,7 +172,7 @@ L’élément situé à l’emplacement indiqué est supprimé.
 
 ### noop {#noop}
 
-Il s’agit d’un processus nul. Il n’effectue aucune opération, mais consigne un message de débogage.
+Il s’agit du processus nul. Il n’effectue aucune opération, mais consigne un message de débogage.
 
 * **Chemin ECMAScript** : `/libs/workflow/scripts/noop.ecma`
 
@@ -188,7 +192,7 @@ Il s’agit d’un processus nul qui renvoie `false` sur la méthode `check()`.
 
 ### sample {#sample}
 
-Il s’agit d’un exemple de processus ECMAScript.
+Voici un exemple de processus ECMAScript.
 
 * **Chemin ECMAScript** : `/libs/workflow/scripts/sample.ecma`
 
@@ -198,7 +202,7 @@ Il s’agit d’un exemple de processus ECMAScript.
 
 ### urlcaller {#urlcaller}
 
-Il s’agit d’un processus de workflow simple qui appelle l’URL indiquée. En règle générale, l’URL est une référence à un JSP (ou à un autre servlet équivalent) qui effectue une tâche simple. Ce processus doit uniquement être utilisé pendant les phases de développement et de démonstration, mais pas dans un environnement de production. Les arguments définissent l’URL, le nom de connexion et le mot de passe.
+Il s’agit d’un processus de workflow simple qui appelle l’URL donnée. En règle générale, l’URL est une référence à un JSP (ou à un autre servlet équivalent) qui effectue une tâche simple. Ce processus ne doit être utilisé que pendant le développement et les démonstrations et non dans un environnement de production. Les arguments spécifient l’URL, le login et le mot de passe.
 
 * **Chemin ECMAScript** : `/libs/workflow/scripts/urlcaller.ecma`
 
@@ -223,10 +227,10 @@ Verrouille la charge utile du workflow.
 * **Classe Java :** `com.day.cq.workflow.impl.process.LockProcess`
 
 * **Payload** : JCR_PATH et JCR_UUID
-* **Arguments** : aucun
-* **Délai d’expiration** : ignoré.
+* **Arguments :** Aucun
+* **Timeout :** Ignoré
 
-L’étape n’a aucun effet dans les cas suivants :
+L’étape n’a aucun effet dans les cas suivants :
 
 * Le payload est déjà verrouillé.
 * Le nœud de payload ne comporte pas de contenu enfant jcr:content.
@@ -238,21 +242,21 @@ Déverrouille la charge utile du workflow.
 * **Classe Java :** `com.day.cq.workflow.impl.process.UnlockProcess`
 
 * **Payload** : JCR_PATH et JCR_UUID
-* **Arguments** : aucun
-* **Délai d’expiration** : ignoré.
+* **Arguments :** Aucun
+* **Timeout :** Ignoré
 
-L’étape n’a aucun effet dans les cas suivants :
+L’étape n’a aucun effet dans les cas suivants :
 
 * Le payload est déjà déverrouillé.
 * Le nœud de payload ne comporte pas de contenu enfant jcr:content.
 
-## Processus de création de versions {#versioning-processes}
+## Processus de contrôle de version {#versioning-processes}
 
-Le processus suivant effectue une tâche relative à la version.
+Le processus suivant effectue une tâche liée aux versions.
 
 ### CreateVersionProcess {#createversionprocess}
 
-Crée une version de la charge utile du workflow (page AEM ou ressource DAM).
+Crée une nouvelle version de la charge utile de workflow (AEM page ou ressource DAM).
 
 * **Classe Java** : `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 

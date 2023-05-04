@@ -10,64 +10,68 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 exl-id: 9c588691-0649-4d59-ab97-ebadfcd1252c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 91%
+source-wordcount: '598'
+ht-degree: 47%
 
 ---
 
 # Gestion de l’accès aux workflows{#managing-access-to-workflows}
 
-Configurez les listes de contrôle d’accès en fonction des comptes utilisateur pour permettre (ou non) de lancer des workflows et d’y participer.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-## Autorisations utilisateur exigées pour les workflows {#required-user-permissions-for-workflows}
+Configurez les listes de contrôle d’accès en fonction des comptes d’utilisateurs pour autoriser (ou désactiver) le démarrage et la participation aux workflows.
 
-Il est possible d’agir sur les workflows dans les cas suivants :
+## Autorisations utilisateur requises pour les workflows {#required-user-permissions-for-workflows}
 
-* vous travaillez avec l’ `admin` account
-* le compte a été attribué au groupe par défaut. `workflow-users`:
+Des actions sur les workflows peuvent être entreprises dans les cas suivants :
 
-   * Ce groupe contient toutes les autorisations nécessaires pour que les utilisateurs agissent sur les workflows.
-   * Lorsque le compte appartient à ce groupe, il n’a accès qu’aux workflows dont il est à l’origine.
+* Vous utilisez le compte `admin`.
+* Le compte a été affecté au groupe par défaut `workflow-users` :
 
-* le compte a été attribué au groupe par défaut. `workflow-administrators`:
+   * ce groupe contient tous les privilèges nécessaires pour que vos utilisateurs puissent exécuter des actions de workflow.
+   * lorsque le compte se trouve dans ce groupe, il n’a accès qu’aux workflows qu’il a initiés.
 
-   * Ce groupe contient toutes les autorisations nécessaires pour que vos utilisateurs privilégiés surveillent et gèrent les workflows.
-   * Lorsque le compte appartient à ce groupe, il a accès à tous les workflows.
+* Le compte a été affecté au groupe par défaut `workflow-administrators` :
+
+   * ce groupe détient tous les privilèges nécessaires pour que vos utilisateurs privilégiés puissent surveiller et administrer les workflows.
+   * lorsque le compte se trouve dans ce groupe, il a accès à tous les workflows.
 
 >[!NOTE]
 >
->Il s’agit des conditions requises minimales. Pour effectuer des actions spécifiques, votre compte doit également correspondre au participant affecté ou à un membre du groupe affecté pour prendre des mesures spécifiques.
+>Il s’agit des conditions requises minimales. Votre compte doit également être le participant affecté ou un membre du groupe affecté pour prendre des mesures spécifiques.
 
 ## Configuration de l’accès aux workflows {#configuring-access-to-workflows}
 
-Les modèles de workflows héritent d’une liste de contrôle d’accès par défaut pour contrôler les interactions possibles des utilisateurs avec les workflows. Pour personnaliser l’accès utilisateur d’un workflow, modifiez la liste de contrôle d’accès dans le référentiel du dossier contenant le nœud de modèles de workflows :
+Les modèles de workflows héritent d’une liste de contrôle d’accès par défaut pour contrôler les interactions possibles des utilisateurs avec les workflows. Pour personnaliser l’accès des utilisateurs à un workflow, modifiez la liste de contrôle d’accès (ACL) dans le référentiel du dossier contenant le noeud de modèle de workflow :
 
 * [Appliquez une liste de contrôle d’accès pour le modèle spécifique de workflow sous /var/workflow/models.](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models)
-* [Créez un sous-dossier dans /var/workflow/models et appliquez-y la liste de contrôle d’accès.](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that)
+* [Créez un sous-dossier dans /var/workflow/models et appliquez-lui la liste de contrôle d’accès.](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that)
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’utilisation de CRXDE Lite pour configurer des listes de contrôle d’accès, voir [Gestion des droits d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Pour plus d’informations sur l’utilisation de CRXDE Lite pour configurer des listes de contrôle d’accès, voir [Gestion des droits d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-### Appliquez une liste de contrôle d’accès pour le modèle spécifique de workflow sous /var/workflow/models. {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
+### Appliquer une liste de contrôle d’accès pour le modèle spécifique de workflow sous /var/workflow/models {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-Si le modèle de workflow est stocké dans `/var/workflow/models` vous pouvez ensuite affecter une liste de contrôle d’accès spécifique, correspondant uniquement à ce workflow, au dossier :
+Si le modèle de workflow est stocké dans le dossier `/var/workflow/models`, vous pouvez affecter une liste de contrôle d’accès spécifique et ne se rapportant qu’à ce workflow, dans le dossier :
 
-1. Ouvrez CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
-1. Dans l’arborescence des nœuds, sélectionnez le nœud correspondant au dossier des modèles de workflow :
+1. Ouvrez le CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Dans l’arborescence de noeuds, sélectionnez le noeud du dossier des modèles de workflow :
 
    `/var/workflow/models`
 
 1. Cliquez sur l’onglet **Contrôle d’accès**.
-1. Dans le tableau **Stratégies de contrôle d’accès locales** (**Liste de contrôle d’accès**), cliquez sur l’icône « + » pour **ajouter une entrée**.
-1. Dans la boîte de dialogue **Ajouter une nouvelle entrée**, ajoutez une nouvelle entrée de contrôle d’accès avec les propriétés suivantes :
+1. Dans le **Stratégies de contrôle d’accès locales** (**Liste de contrôle d’accès**), cliquez sur l’icône plus pour **Ajouter une entrée**.
+1. Dans le **Ajouter une nouvelle entrée** Ajoutez une nouvelle boîte de dialogue ACE avec les propriétés suivantes :
 
-   * **Principal**: `content-authors`
+   * **Principal** : `content-authors`
    * **Type** : `Deny`
-   * **Privilèges**: `jcr:read`
-   * **Rep:glob** : référence au workflow spécifique
+   * **Autorisations** : `jcr:read`
+   * **rep:glob** : référence au workflow spécifique
 
    ![wf-108](assets/wf-108.png)
 
@@ -79,31 +83,31 @@ Si le modèle de workflow est stocké dans `/var/workflow/models` vous pouvez en
 
    Le workflow `prototype-wfm-01` n’est plus disponible pour les membres du groupe `content-authors`.
 
-### Créez un sous-dossier dans /var/workflow/models et appliquez-y la liste de contrôle d’accès. {#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that}
+### Créez un sous-dossier dans /var/workflow/models et appliquez-lui la liste de contrôle d’accès. {#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that}
 
-Votre [équipe de développement peut créer des workflow dans un sous-dossier](/help/sites-developing/workflows-models.md#creating-a-new-workflow) de
+Votre [l’équipe de développement peut créer les workflows dans un sous-dossier.](/help/sites-developing/workflows-models.md#creating-a-new-workflow) de
 
 `/var/workflow/models`
 
-Comparable aux workflows DAM stockés sous
+comparable aux workflows de gestion des ressources numériques stockés sous
 
 `/var/workflow/models/dam/`
 
 Vous pouvez alors ajouter une liste de contrôle d’accès dans le dossier proprement dit.
 
-1. Ouvrez CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
-1. Dans l’arborescence de nœuds, sélectionnez le nœud correspondant au dossier individuel dans le dossier Modèles de workflows. Par exemple :
+1. Ouvrez le CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Dans l’arborescence de noeuds, sélectionnez le noeud du dossier individuel dans le dossier des modèles de workflow ; par exemple :
 
    `/var/workflow/models/prototypes`
 
 1. Cliquez sur l’onglet **Contrôle d’accès**.
-1. Dans le tableau **Stratégie de contrôle d’accès applicable**, cliquez sur l’icône « + » pour **ajouter** une entrée.
-1. Dans le tableau **Stratégies de contrôle d’accès locales** (**Liste de contrôle d’accès**), cliquez sur l’icône « + » pour **ajouter une entrée**.
-1. Dans la boîte de dialogue **Ajouter une nouvelle entrée**, ajoutez une nouvelle entrée de contrôle d’accès avec les propriétés suivantes :
+1. Dans le tableau **Stratégie de contrôle d’accès applicable**, cliquez sur l’icône « + » pour **ajouter** une entrée.
+1. Dans le **Stratégies de contrôle d’accès locales** (**Liste de contrôle d’accès**), cliquez sur l’icône plus pour **Ajouter une entrée**.
+1. Dans le **Ajouter une nouvelle entrée** Ajoutez une nouvelle boîte de dialogue ACE avec les propriétés suivantes :
 
-   * **Principal**: `content-authors`
+   * **Principal** : `content-authors`
    * **Type** : `Deny`
-   * **Privilèges**: `jcr:read`
+   * **Autorisations** : `jcr:read`
 
    >[!NOTE]
    >

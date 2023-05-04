@@ -9,14 +9,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 exl-id: 22fa0b08-075e-4648-a990-2f89d12d7b25
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2722'
 ht-degree: 1%
 
 ---
 
 # Anatomie d’une application{#the-anatomy-of-an-app}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -36,7 +40,7 @@ Les composants de page que vous créez pour votre application sont basés sur le
 * template.jsp
 * angular-module-list.js.jsp
 * header.jsp
-* footer.jsp 
+* footer.jsp
 * js_clientlibs.jsp
 * css_clientlibs.jsp
 

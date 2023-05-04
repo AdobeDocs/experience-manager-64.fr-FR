@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 4f4c73eb-281e-4dfb-9cb0-2341d5ee94ae
 exl-id: d065e737-dbda-4c78-a987-b1891c6c4ec6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 11%
+source-wordcount: '144'
+ht-degree: 6%
 
 ---
 
 # Prise en main d’AEM Communities {#getting-started-with-aem-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 AEM Communities permet aux entreprises de créer des expériences communautaires dédiées à partir d’une bibliothèque de modèles de site. Vous pouvez intégrer des forums, des groupes, des blogs, du partage de fichiers, des calendriers, des flux d’activité et des profils d’utilisateur étendus dans votre site web afin d’encourager les interactions entre les prospects, les clients et les entreprises.
 

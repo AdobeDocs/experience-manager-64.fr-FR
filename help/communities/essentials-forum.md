@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
 exl-id: 6562a440-887e-4a48-a14e-64dc36c70793
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 2%
+source-wordcount: '289'
+ht-degree: 4%
 
 ---
 
 # Notions fondamentales sur le forum {#forum-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Cette page fournit les informations essentielles pour utiliser la fonction de forum.
 

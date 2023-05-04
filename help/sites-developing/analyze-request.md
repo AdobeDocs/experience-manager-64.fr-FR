@@ -1,7 +1,7 @@
 ---
 title: Script d’analyse des requêtes
 seo-title: Request Analysis Script
-description: Le script d’analyse des requêtes facilite l’analyse des fichiers access.log et génère un rapport lisible pour vos activités de traitement ultérieures.
+description: Le script d’analyse des requêtes est conçu pour faciliter l’analyse des fichiers access.log et produire un rapport lisible en vue d’un traitement ultérieur.
 seo-description: The request analysis script is made to ease the analysis of the access.log files producing a readable report for later processing
 uuid: 24eff3c6-5748-46f3-a30c-4a3a6427ce1d
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 1b5e0ccf-4157-45e3-8caf-1d6739d7d9d2
 exl-id: 8582bbca-c11a-4880-88ba-da22e0301dba
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 76%
 
 ---
 
 # Script d’analyse des requêtes{#request-analysis-script}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Télécharger {#download}
 

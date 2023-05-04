@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Collaboration
 role: User,Admin
 exl-id: 7e2adfcc-410d-4574-8f7e-39aceecfdd4b
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 29%
+source-wordcount: '1114'
+ht-degree: 22%
 
 ---
 
 # [!DNL Experience Manager] to [!DNL Creative Cloud] Bonnes pratiques relatives au partage de dossiers {#aem-to-creative-cloud-folder-sharing-best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!CAUTION]
 >
@@ -23,7 +27,7 @@ Adobe Experience Manager peut être configuré pour permettre aux utilisateurs d
 Ce type d’intégration peut être utilisé dans les deux cas d’utilisation, en particulier lorsque vous travaillez avec des utilisateurs qui n’ont pas d’accès direct à Experience Manager Assets :
 
 * Partage d’un ensemble de ressources spécifiques de Experience Manager Assets avec des utilisateurs de fichiers de Creative Cloud (par exemple, un résumé créatif et un ensemble de ressources approuvées pour le travail de conception d’une nouvelle activité marketing)
-* Réception de nouveaux fichiers d’utilisateurs Creative Cloud.
+* Réception de nouveaux fichiers de la part d’utilisateurs Creative Cloud.
 
 >[!NOTE]
 >
@@ -46,25 +50,25 @@ L’intégration comprend les éléments suivants :
 
 ## Caractéristiques et limites {#characteristics-and-limitations}
 
-* **Diffusion unidirectionnelle des modifications :** Les modifications de fichier sont propagées dans une seule direction à partir du système (ressources du Experience Manager ou du Creative Cloud), où la ressource a été créée à l’origine (téléchargée). L’intégration ne fournit pas de synchronisation entièrement automatisée et bidirectionnelle entre les deux systèmes.
+* **Diffusion unidirectionnelle des modifications :** Les modifications de fichier sont propagées dans une seule direction à partir du système (ressources du Experience Manager ou du Creative Cloud), où la ressource a été créée à l’origine (téléchargée). L’intégration ne fournit pas de synchronisation bidirectionnelle entièrement automatisée entre les deux systèmes.
 
 * **Contrôle de version :**
 
    * Experience Manager ne crée les versions d’une ressource que si le fichier provient de Experience Manager et y est mis à jour.
-   * Creative Cloud Assets fournit sa propre [fonctionnalité de création de versions](https://helpx.adobe.com/fr/creative-cloud/help/versioning-faq.html), qui vise les mises à jour de travail en cours (en général, les mises à jour sont conservées 10 jours).
+   * Creative Cloud Assets fournit sa propre [fonction de contrôle de version](https://helpx.adobe.com/fr/creative-cloud/help/versioning-faq.html) qui est ciblé sur les mises à jour de travail en cours (en gros, stocke les mises à jour pendant 10 jours) ;
 
 * **Limites d’espace :** la taille et le volume des fichiers échangés sont limités par le [quota spécifique de Creative Cloud Assets](https://helpx.adobe.com/fr/creative-cloud/kb/file-storage-quota.html) pour les créatifs (en fonction du niveau d’abonnement) et la taille du fichier ne peut pas excéder 5 Go. L’espace est en outre limité par le quota de ressources que l’organisation possède dans le service principal d’Adobe Marketing Cloud Assets.
 
 * **Exigences d’espace :** Les fichiers des dossiers partagés doivent également être stockés physiquement dans Experience Manager, puis dans un compte de Creative Cloud, avec une copie mise en cache dans le service principal Ressources de Marketing Cloud.
 * **Réseau et bande passante :** les fichiers des dossiers partagés et toutes les mises à jour doivent être transmis entre les systèmes via le réseau. Vous devez vous assurer que seuls les fichiers et les mises à niveau appropriées sont partagés.
-* **Type de dossier** : le partage d’un dossier de ressources de type `sling:OrderedFolder` n’est pas pris en charge. Si vous souhaitez partager un dossier, lors de sa création dans Experience Manager Assets, ne sélectionnez pas l’option Ordre .
+* **Type de dossier**: Partage d’un dossier de ressources de type `sling:OrderedFolder`, n’est pas pris en charge. Si vous souhaitez partager un dossier, lors de sa création dans Experience Manager Assets, ne sélectionnez pas l’option Ordre .
 
 ## Bonnes pratiques {#best-practices}
 
 Les bonnes pratiques pour utiliser le partage de dossiers entre Experience Manager et Creative Cloud sont les suivantes :
 
 * **Considérations relatives au volume :** Le partage de dossiers de Experience Manager et de Creative Cloud doit être utilisé pour partager un plus petit nombre de fichiers, par exemple, pertinents pour une campagne ou une activité spécifique. Pour partager des jeux de ressources plus volumineux, comme toutes les ressources approuvées dans l’entreprise, utilisez d’autres méthodes de distribution (par exemple, Experience Manager Assets Brand Portal) ou l’appli de bureau Experience Manager.
-* **Évitez de partager des hiérarchies profondes :** Le partage fonctionne de manière récursive et n’autorise pas l’annulation sélective du partage. En règle générale, seuls les dossiers sans sous-dossiers, ou ayant une hiérarchie très simple, comme 1 niveau de sous-dossiers, doivent être considérés pour le partage.
+* **Évitez de partager des hiérarchies profondes :** Le partage fonctionne de manière récursive et n’autorise pas l’annulation sélective du partage. En règle générale, seuls les dossiers sans sous-dossiers, ou avec une hiérarchie très superficielle, comme 1 niveau de sous-dossier, doivent être pris en compte pour le partage.
 * **Séparez les dossiers pour un partage unidirectionnel :** Des dossiers distincts doivent être utilisés pour partager des ressources finales de Experience Manager Assets vers des fichiers de Creative Cloud et pour partager des ressources prêtes pour les créatifs à partir de fichiers de Creative Cloud vers [!DNL Assets]. Associé à une bonne convention d’affectation des noms pour ces dossiers, il crée un environnement de travail plus facile à comprendre pour les utilisateurs Experience Manager Assets et les utilisateurs Creative Cloud.
 * **Évitez d’inclure du travail en cours dans le dossier partagé :** le dossier partagé ne doit pas être utilisé pour le travail en cours. Utilisez un dossier séparé dans Creative Cloud Files pour mener à bien les tâches qui nécessitent des modifications de fichier fréquentes.
 * **Démarrez une nouvelle tâche en dehors du dossier partagé :** Les nouvelles conceptions (fichiers créatifs) doivent être démarrées dans le dossier de travaux en cours distinct dans les fichiers Creative Cloud. Lorsqu’elles sont prêtes à être partagées avec les utilisateurs de Experience Manager Assets, elles doivent être déplacées ou enregistrées dans le dossier partagé.

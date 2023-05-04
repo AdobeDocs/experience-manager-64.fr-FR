@@ -1,7 +1,7 @@
 ---
-title: Affichage des informations du système
+title: Afficher les informations du système
 seo-title: View system information
-description: Découvrez comment vous pouvez afficher les graphiques de contrôle des ressources et les informations sur le serveur exécutant AEM Forms.
+description: Découvrez comment afficher des graphiques de surveillance des ressources et des informations sur le serveur qui exécute AEM forms.
 seo-description: Learn how you can view resource monitoring charts and information about the server that is running AEM forms.
 uuid: 983c1cc7-a8b3-48b2-a4c8-7b28a2e32537
 contentOwner: admin
@@ -10,32 +10,36 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 exl-id: e4542335-fcee-4506-965a-5bfe79f4b29a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 100%
+source-wordcount: '576'
+ht-degree: 65%
 
 ---
 
-# Affichage des informations du système {#view-system-information}
+# Afficher les informations du système {#view-system-information}
 
-L’onglet Système affiche des graphiques de contrôle des ressources ainsi que des informations sur le serveur exécutant AEM Forms. Pour accéder à ces informations, cliquez sur Health Monitor dans l’angle supérieur droit de la page. Si vous exécutez AEM Forms dans un environnement en grappe, les informations affichées concernent le nœud sélectionné dans la liste des serveurs.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Pour enregistrer les informations du système actuel en tant que fichier de propriétés, cliquez sur Enregistrer.
+L’onglet Système affiche des graphiques de surveillance des ressources et des informations sur le serveur qui exécute AEM forms. Pour accéder à ces informations, dans Administration Console, cliquez sur Health Monitor dans le coin supérieur droit de la page. Si vous exécutez AEM forms dans un environnement organisé en grappes, les informations affichées concernent le noeud sélectionné dans la liste Serveur .
 
-Le volet droit de l’onglet Système affiche une représentation graphique des éléments suivants :
+Pour enregistrer les informations système actuelles en tant que fichier de propriétés, cliquez sur Enregistrer.
 
-* dénombrement des tâches et travaux ;
-* utilisation du tas et du tas validé ;
-* utilisation du non-tas et du non-tas validé.
+Le volet de droite de l’onglet Système affiche des représentations graphiques des informations suivantes :
 
-Déplacez le curseur pour obtenir les valeurs d’un moment particulier.
+* Éléments de tâche et de travail
+* Utilisation du tas et du tas validé
+* Utilisation de non-tas et de non-tas validés
+
+Vous pouvez faire glisser le pointeur le long de la chronologie pour obtenir des valeurs pour un moment donné.
 
 >[!NOTE]
 >
->les données graphiques, les valeurs d’information sur le serveur et l’heure de l’horloge sont mises à jour toutes les dix minutes. L’information n’est pas affichée en temps réel.
+>Les données graphiques, les valeurs des informations sur le serveur et l’heure de l’horloge sont mises à jour toutes les 10 minutes. Les informations ne sont pas affichées en temps réel.
 
-Le volet gauche de l’onglet Système affiche des renseignements relatifs au serveur et au nœud :
+Le volet gauche de l’onglet Système affiche les informations suivantes sur le serveur ou le noeud :
 
 **Machine virtuelle :** version de la machine virtuelle Java (JVM) sur le serveur.
 

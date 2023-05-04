@@ -12,14 +12,18 @@ discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 54a4a053-ca44-451a-9a31-f1c1e8cb7002
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2869'
+source-wordcount: '2905'
 ht-degree: 3%
 
 ---
 
 # Notation et badges des communautés {#communities-scoring-and-badges}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
@@ -398,7 +402,7 @@ Cette version comprend deux règles de badge qui correspondent à la variable [F
 
 Toute modification ou tout ajout apporté aux règles de badge ou aux images effectuées dans l’environnement de création doit être installé lors de la publication.
 
-## Affectation et révocation de badges {#assign-and-revoke-badges}
+## Attribution et révocation des badges {#assign-and-revoke-badges}
 
 Des badges peuvent être attribués aux membres à l’aide de la fonction [console membres](members.md#badges-tab) ou par programmation à l’aide des commandes cURL.
 
@@ -472,7 +476,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 |---|---|
 | POST | Un membre crée un événement de calendrier |
 | AJOUTER | commentaires d’un membre sur un événement de calendrier |
-| UPDATE | l’événement ou le commentaire de calendrier du membre est modifié. |
+| MISE À JOUR | l’événement ou le commentaire de calendrier du membre est modifié. |
 | SUPPRIMER | l’événement ou le commentaire de calendrier du membre est supprimé. |
 
 **[Composant Commentaires](comments.md)**
@@ -482,7 +486,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 |---|---|
 | POST | Un membre crée un commentaire |
 | AJOUTER | réponses du membre au commentaire |
-| UPDATE | le commentaire du membre est modifié. |
+| MISE À JOUR | le commentaire du membre est modifié. |
 | SUPPRIMER | le commentaire du membre est supprimé. |
 
 **[Composant Bibliothèque de fichiers](file-library.md)**
@@ -492,7 +496,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 |---|---|
 | POST | crée un dossier |
 | ATTACH | Le membre charge un fichier |
-| UPDATE | met à jour un dossier ou un fichier |
+| MISE À JOUR | met à jour un dossier ou un fichier |
 | SUPPRIMER | supprime un dossier ou un fichier |
 
 **[Composant du forum](forum.md)**
@@ -502,7 +506,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 |---|---|
 | POST | thème de forum de création de membre |
 | AJOUTER | réponses des membres au sujet du forum |
-| UPDATE | Le sujet ou la réponse du forum du membre est modifié |
+| MISE À JOUR | Le sujet ou la réponse du forum du membre est modifié |
 | SUPPRIMER | La rubrique ou la réponse du forum du membre est supprimée |
 
 **[Composant Journal](blog-feature.md)**
@@ -512,7 +516,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 |---|---|
 | POST | Un membre crée un article de blog. |
 | AJOUTER | commentaires d&#39;un membre sur un article de blog |
-| UPDATE | article ou commentaire de blog du membre modifié |
+| MISE À JOUR | article ou commentaire de blog du membre modifié |
 | SUPPRIMER | article ou commentaire de blog du membre supprimé |
 
 **[Composant Q&amp;R](working-with-qna.md)**
@@ -522,7 +526,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 |---|---|
 | POST | crée une question Q&amp;R |
 | AJOUTER | crée une réponse Q&amp;R |
-| UPDATE | Q&amp;R du membre : une question ou une réponse est modifiée |
+| MISE À JOUR | Q&amp;R du membre : une question ou une réponse est modifiée |
 | SELECT | la réponse du membre est sélectionnée. |
 | UNSELECT | la réponse du membre est désélectionnée. |
 | SUPPRIMER | Q&amp;R du membre : une question ou une réponse est supprimée |
@@ -533,7 +537,7 @@ SocialEvent `topic`= com/adobe/cq/social/review
 | **Verbe** | **Description** |
 |---|---|
 | POST | création de la révision par le membre |
-| UPDATE | la révision du membre est modifiée. |
+| MISE À JOUR | la révision du membre est modifiée. |
 | SUPPRIMER | la révision du membre est supprimée. |
 
 **[Composant d’évaluation](rating.md)**
@@ -607,7 +611,7 @@ Il est possible d’essayer rapidement la notation et la notation à l’aide de
    * Sélectionnez **[!UICONTROL Ajouter]**
    * Enter `/etc/community/badging/rules/forums-badging`
    * Sélectionner `+`
-   * Entrée `/etc/community/badging/rules/comments-badging`
+   * Enter `/etc/community/badging/rules/comments-badging`
    * Sélectionnez **[!UICONTROL OK]**
 
 * Ajoutez la propriété scoringRules :
@@ -616,9 +620,9 @@ Il est possible d’essayer rapidement la notation et la notation à l’aide de
    * **Type** : `String`
    * Sélectionner **[!UICONTROL Multi]**
    * Sélectionnez **[!UICONTROL Ajouter]**
-   * Entrée `/etc/community/scoring/rules/forums-scoring`
+   * Enter `/etc/community/scoring/rules/forums-scoring`
    * Sélectionner `+`
-   * Entrée `/etc/community/scoring/rules/comments-scoring`
+   * Enter `/etc/community/scoring/rules/comments-scoring`
    * Sélectionnez **[!UICONTROL OK]**
 
 * Sélectionnez **[!UICONTROL Enregistrer tout]**

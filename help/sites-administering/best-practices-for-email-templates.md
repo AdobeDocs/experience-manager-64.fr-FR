@@ -6,20 +6,24 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices, integration
 exl-id: a72c0f77-458f-4ea0-b8ca-59e71fef2c5d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 96%
+source-wordcount: '1089'
+ht-degree: 81%
 
 ---
 
 # Bonnes pratiques relatives aux modèles d’e-mail{#best-practices-for-email-templates}
 
-Ce document décrit certaines des meilleures pratiques concernant la conception de courrier électronique, qui aboutissent à la création d’un modèle de campagne par courrier électronique bien développé.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-La campagne de démonstration disponible dans AEM observe toutes ces meilleures pratiques. La manière dont les meilleures pratiques sont mises en œuvre dans la campagne de démonstration est décrite pour chaque bonne pratique.
+Ce document décrit certaines des bonnes pratiques concernant la conception d’emails, ce qui se traduit par un modèle de campagne email bien développé.
 
-Utilisez ces meilleures pratiques pour créer votre propre newsletter.
+La campagne de démonstration disponible dans AEM observe toutes ces meilleures pratiques. La manière dont les bonnes pratiques sont mises en oeuvre dans la campagne de démonstration est décrite pour chaque bonne pratique.
+
+Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
 
 >[!NOTE]
 >
@@ -36,7 +40,7 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
 >
 >Lors de la création d’un modèle de courrier pour Adobe Campaign, vous devez inclure la propriété **acMapping** avec la valeur **mapRecipient** dans le nœud **jcr:content** du modèle ou vous ne pourrez pas sélectionner le modèle Adobe Campaign dans **Propriétés de la page** au sein d’AEM (le champ est désactivé).
 
-## Composant de modèle/page {#template-page-component}
+## Composant Modèle/page {#template-page-component}
 
 ***/libs/mcm/campaign/components/campaign_newsletterpage***
 
@@ -68,7 +72,7 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
   </tr> 
   <tr> 
    <td>Les styles CSS intégrés sont un meilleur choix que l’insertion de tous les styles CSS au début.</td> 
-   <td><p>Pour mieux démontrer la structure HTML sous-jacente et utiliser la possibilité de personnaliser la structure de newsletter, seules certaines définitions CSS ont été intégrées.</p> <p>Les styles de base et les variations de modèle ont été extraits dans un bloc de style dans l’élément &lt;head&gt; de la page. À l’envoi final de la newsletter, ces définitions CSS doivent être intégrées dans la structure HTML. Un mécanisme d’intégration automatique est prévu, mais n’est actuellement pas disponible.</p> </td> 
+   <td><p>Pour mieux démontrer la structure HTML sous-jacente et utiliser la possibilité de personnaliser la structure de newsletter, seules certaines définitions CSS ont été intégrées.</p> <p>Les styles de base et les variations de modèle ont été extraits dans un bloc de style dans l’élément &lt;head&gt; de la page. À l’envoi final de la newsletter, ces définitions CSS doivent être intégrées dans la structure HTML. Un mécanisme d’insertion automatique est prévu, mais actuellement pas disponible.</p> </td> 
   </tr> 
   <tr> 
    <td>Restez simple avec votre CSS. Évitez les déclarations de style composées, les formes courtes de code, les propriétés de mise en page CSS, les sélecteurs complexes et les pseudo-éléments.</td> 
@@ -121,13 +125,13 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
 | Ne vous préoccupez pas de JavaScript ou de Flash. Il est rare que ces technologies soient prises en charge par les clients de messagerie. | Ni JavaScript ni Flash ne sont utilisés dans le modèle de newsletter. |
 | Ajoutez une version en texte brut pour l’envoi multipartie. | Un nouveau widget a été intégré aux propriétés de page pour extraire facilement une version en texte brut à partir du contenu de page. Ceci peut être utilisé comme point de départ pour la version en texte brut finale. |
 
-## Modèles et exemples de newsletter de campagne {#campaign-newsletter-templates-and-examples}
+## Modèles et exemples de newsletter Campaign {#campaign-newsletter-templates-and-examples}
 
 AEM est fourni avec des modèles et des composants clé en main vous permettant de créer des newsletters de campagne. Vous pouvez utiliser ces modèles et composants pour créer vos newsletters personnalisées.
 
 ### Modèles {#templates}
 
-Pour offrir une base solide et élargir la variété de possibilités de flux de contenu, trois types de modèle légèrement différents sont disponibles clé en main. Vous pouvez facilement utiliser ces modèles pour créer une newsletter personnalisée.
+Pour offrir une base solide et élargir la variété de possibilités de flux de contenu, trois types de modèle légèrement différents sont disponibles clé en main. Vous pouvez facilement les utiliser pour créer une newsletter personnalisée.
 
 Tous comportent une section **en-tête**, **bas de page** et **corps**. Dans le corps, chaque modèle diffère en termes de **conception des colonnes** (1, 2 ou 3 colonnes).
 
@@ -135,7 +139,7 @@ Tous comportent une section **en-tête**, **bas de page** et **corps**. Dans le 
 
 ### Composants {#components}
 
-[Sept composants sont actuellement disponibles dans les modèles de campagne](/help/sites-authoring/adobe-campaign-components.md). Tous ces composants sont basés sur le langage de balisage **HTL** d’Adobe.
+[Sept composants sont actuellement disponibles dans les modèles de campagne](/help/sites-authoring/adobe-campaign-components.md). Ces composants sont tous basés sur le langage de balisage d’Adobe. **HTL**.
 
 | **Nom du composant** | **Chemin du composant** |
 |---|---|
@@ -149,6 +153,6 @@ Tous comportent une section **en-tête**, **bas de page** et **corps**. Dans le 
 
 >[!NOTE]
 >
->Ces composants sont optimisés pour le contenu de courrier électronique. En d’autres termes, ils respectent les meilleures pratiques décrites dans ce document. L’utilisation d’autres composants clé en main va généralement à l’encontre de ces règles.
+>Ces composants sont optimisés pour le contenu de courrier électronique. En d’autres termes, ils respectent les meilleures pratiques décrites dans ce document. L’utilisation d’autres composants prêts à l’emploi enfreint généralement ces règles.
 
-Ces composants sont décrits en détail dans [Composants Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md).
+Ces composants sont décrits en détail à la section [Composants Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md).

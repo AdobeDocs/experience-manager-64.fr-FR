@@ -1,7 +1,7 @@
 ---
 title: Bonnes pratiques relatives à MSM
 seo-title: MSM Best Practices
-description: Découvrez les meilleures pratiques compilées par les équipes d’ingénierie et de recherche d’Adobe pour vous aider à maîtriser le Multi Site Manager (MSM) AEM.
+description: Découvrez les bonnes pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour vous aider à prendre en main AEM Multi Site Manager.
 seo-description: Find best practices compiled by Adobe engineering and consulting teams to help get up and running with the AEM Multi Site Manager.
 uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
@@ -11,18 +11,22 @@ content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 feature: Multi Site Manager
 exl-id: f23a1c62-0191-4b5b-90be-d66d51e38f83
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 98%
+source-wordcount: '1558'
+ht-degree: 71%
 
 ---
 
-# Bonnes pratiques MSM{#msm-best-practices}
+# Bonnes pratiques relatives à MSM{#msm-best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Général {#general}
 
-MSM est une structure configurable pour automatiser le déploiement de contenu. Les mises en œuvre impliquent souvent des parties importantes d’un site web, ainsi que plusieurs organisations et zones géographiques. Il est donc vivement recommandé de planifier les mises en œuvre MSM avec autant d’attention que lorsque vous planifiez votre site web :
+MSM est une structure configurable pour automatiser le déploiement de contenu. Les mises en œuvre impliquent souvent des parties importantes d’un site web, ainsi que plusieurs organisations et zones géographiques. Il est donc vivement recommandé de planifier les mises en oeuvre MSM avec autant de soin que vous planifiez votre site web :
 
 * **Planifiez la structure et les flux de contenu** avec soin avant de commencer la mise en œuvre.
 * **Personnalisez autant que nécessaire, mais le moins possible.** Bien que MSM prenne en charge un haut degré de personnalisation (par exemple, les configurations de déploiement), les bonnes pratiques recommandent de favoriser la performance, la fiabilité et l’amélioration de votre site web en réduisant généralement au minimum la personnalisation.
@@ -35,16 +39,16 @@ MSM est une structure configurable pour automatiser le déploiement de contenu. 
 >
 >Des informations supplémentaires sur l’utilisation de MSM sont disponibles dans les articles de la base de connaissances :
 >
->* [FAQ relative à MSM](https://helpx.adobe.com/fr/experience-manager/kb/index/msm_faq.html)
->* [Résolution des incidents liés à MSM](https://helpx.adobe.com/fr/experience-manager/kb/troubleshooting-aem-msm-issues.html)
+>* [FAQ sur MSM](https://helpx.adobe.com/experience-manager/kb/index/msm_faq.html)
+>* [Résolution des problèmes liés à MSM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-msm-issues.html)
 >
 
 
 >[!NOTE]
 >
->Vous pouvez également utiliser le [composant Référence](/help/sites-authoring/default-components-foundation.md#reference) pour réutiliser une seule page ou un paragraphe. Gardez cependant à l’esprit que :
+>Vous pouvez également utiliser le [composant Référence](/help/sites-authoring/default-components-foundation.md#reference) pour réutiliser une seule page ou un paragraphe. Gardez toutefois à l’esprit :
 >
->* MSM est plus souple et permet un contrôle à granularité fine sur la nature du contenu synchronisé et le moment de synchronisation.
+>* MSM est plus flexible et permet un contrôle précis du contenu synchronisé et du moment où il est synchronisé.
 >* Il est désormais recommandé d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) plutôt que les composants de base.
 >
 
@@ -53,15 +57,15 @@ MSM est une structure configurable pour automatiser le déploiement de contenu. 
 
 N’oubliez pas qu’une Live Copy peut être créée avec des [pages ordinaires](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) ou une [configuration de plan directeur](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Les deux cas d’utilisation sont valides.
 
-Les avantages de l’utilisation d’une configuration de plan directeur sont qu’elle :
+Les avantages supplémentaires liés à l’utilisation d’une configuration de plan directeur sont les suivants :
 
 * Permet à l’auteur d’utiliser l’option **Déploiement** sur un plan directeur afin de pousser (explicitement) les modifications vers les Live Copies qui héritent de ce plan directeur.
 * Permet à l’auteur d’utiliser **Créer un site**. L’utilisateur peut ainsi sélectionner facilement les langues et configurer la structure de la Live Copy.
-* définit une configuration de déploiement par défaut pour les Live Copies partageant une relation avec le plan directeur.
+* Définissez une configuration de déploiement par défaut pour les Live Copies ayant une relation avec le plan directeur.
 
-Dans le cas où aucune configuration de plan directeur n’est référencée, les déploiements peuvent uniquement être lancés à partir des Live Copies elles-mêmes, en extrayant essentiellement le contenu de la source.
+Si aucune configuration de plan directeur n’est référencée, les déploiements ne peuvent être lancés qu’à partir des Live Copies elles-mêmes, extrayant essentiellement le contenu de la source.
 
-Lors de la création d’un site avec une Live Copy, il est pratique de créer des configurations de plan directeur pour garantir la disponibilité du jeu complet de fonctions MSM.
+Lors de la création d’un site avec Live Copy, il est préférable de créer des configurations de plan directeur pour assurer la disponibilité de l’ensemble de fonctionnalités MSM complet.
 
 >[!NOTE]
 >
@@ -69,14 +73,14 @@ Lors de la création d’un site avec une Live Copy, il est pratique de créer d
 
 ## Composants et synchronisation de conteneur {#components-and-container-synchronization}
 
-En général, la règle de déploiement dans MSM concernant la synchronisation des composants est la suivante :
+En général, la règle de déploiement dans MSM concernant la synchronisation des composants est la suivante :
 
 * Les composants sont déployés en synchronisant toutes les ressources contenues dans le plan directeur.
-* Les conteneurs synchronisent uniquement la ressource actuelle.
+* Les conteneurs ne synchronisent que la ressource active.
 
-Cela signifie que les composants sont traités comme un agrégat et, dans un déploiement, le composant lui-même et tous ses enfants sont remplacés par ceux des plans directeurs. Cela signifie que si une ressource est ajoutée à un composant en local, elle sera perdue au profit du contenu du plan directeur lors du déploiement.
+Cela signifie que les composants sont traités comme un agrégat et, dans un déploiement, le composant lui-même et tous ses enfants sont remplacés par ceux des plans directeurs. Cela signifie que si une ressource est ajoutée localement à un tel composant, elle sera perdue par rapport au contenu du plan directeur lors du déploiement.
 
-Pour prendre en charge l’imbrication des composants de façon à ce que les composants ajoutés localement soient conservés dans un déploiement, le composant doit être déclaré en tant que conteneur. Par exemple, le système de paragraphe (parsys) par défaut est déclaré en tant que conteneur afin qu’il puisse prendre en charge le contenu ajouté en local.
+Pour prendre en charge l’imbrication des composants de façon à ce que les composants ajoutés localement soient conservés dans un déploiement, le composant doit être déclaré en tant que conteneur. Par exemple, le parsys par défaut est déclaré en tant que conteneur afin de prendre en charge le contenu ajouté localement.
 
 >[!NOTE]
 >
@@ -84,7 +88,7 @@ Pour prendre en charge l’imbrication des composants de façon à ce que les co
 
 ## Créer un site {#create-site}
 
-Notez qu’AEM propose deux méthodes principales pour créer des Live Copies :
+Notez qu’AEM propose deux méthodes principales pour créer des Live Copies :
 
 * Lors de la [création d’une Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
@@ -110,11 +114,11 @@ Voici quelques points à garder à l’esprit lors de la création d’un site 
 
 MSM peut aider à la création de sites web multilingues de deux façons :
 
-* Lors de la création de gabarits de langue
+* Lors de la création de gabarits de langue.
 
-   * Bien que MSM lui-même **ne fournisse pas la traduction de contenu**, il peut être intégré à des connecteurs de traduction tiers qui proposent ce service. Veuillez noter que :
+   * Bien que MSM lui-même **ne fournisse pas la traduction de contenu**, il peut être intégré à des connecteurs de traduction tiers qui proposent ce service. Veuillez noter que :
 
-      * MSM vous permet d’annuler l’héritage au niveau des pages et/ou des composants. Cela évite de remplacer le contenu traduit (dans une Live Copy, avec le contenu pas encore traduit d’un plan directeur) lors du déploiement suivant.
+      * MSM vous permet d’annuler l’héritage au niveau des pages et/ou des composants. Cela permet d’éviter le remplacement du contenu traduit (d’une Live Copy, avec du contenu non encore traduit d’un plan directeur) lors du déploiement suivant.
       * Certains connecteurs de traduction tiers automatisent cette gestion des héritages MSM.
 
          Contactez votre prestataire de services de traduction pour plus d’informations.
@@ -123,7 +127,7 @@ MSM peut aider à la création de sites web multilingues de deux façons :
 
 * Lors du déploiement de contenu de gabarits de langue
 
-   * Par exemple, du gabarit de langue française vers des sites spécifiques aux pays, par exemple, France/Français, Canada/Français, Suisse/Français.
+   * Par exemple, du gabarit de langue française à des sites spécifiques à un pays, tels que la France/le français, le Canada/le français, la Suisse/le français.
 
 Pour plus d’informations, consultez les sections [Traduction du contenu des sites multilingues](/help/sites-administering/translation.md) et [Bonnes pratiques de traduction](/help/sites-administering/tc-bp.md).
 
@@ -137,7 +141,7 @@ Les modifications apportées à la structure du contenu dans un plan directeur/u
 
 * Le **déplacement** de pages dans un plan directeur **n’entraîne pas** le déplacement des pages correspondantes dans des Live Copies après déploiement avec la configuration de déploiement standard :
 
-   * La raison de ce comportement est que le déplacement d’une page comprend implicitement une suppression de page. Cela peut provoquer un comportement inattendu lors de la publication, la suppression des pages sur l’instance de création désactivant automatiquement le contenu correspondant sur l’instance de publication. Cela peut également avoir des répercussions sur les éléments associés, comme les liens, les signets, etc.
+   * La raison de ce comportement est que le déplacement d’une page comprend implicitement une suppression de page. Cela peut entraîner un comportement inattendu lors de la publication, car la suppression de pages sur l’auteur désactive automatiquement le contenu correspondant lors de la publication. Cela peut également avoir des répercussions sur les éléments associés, comme les liens, les signets, etc.
    * L’héritage de contenu dans les pages de Live Copy respectives est mis à jour pour refléter le nouvel emplacement de leurs sources dans le plan directeur.
    * Pour réaliser complètement un déplacement de page d’un plan directeur vers des Live Copies, prenez en compte les bonnes pratiques suivantes :
 
@@ -169,7 +173,7 @@ Les modifications apportées à la structure du contenu dans un plan directeur/u
 
 ## Personnalisation des déploiements {#customizing-rollouts}
 
-Les configurations de déploiement MSM sont fortement personnalisables. Vous devez savoir que l’automatisation des déploiements peut avoir des conséquences importantes. Il est recommandé de planifier avec une *grande* attention par exemple les opérations suivantes :
+Les configurations de déploiement MSM sont fortement personnalisables. Vous devez savoir que l’automatisation des déploiements peut avoir des conséquences importantes. Il est recommandé de planifier *very* soigneusement avant, par exemple :
 
 * L’automatisation des déploiements, par exemple, avec les [déclencheurs onModify](#onmodify)
 * La personnalisation des [propriétés/types de nœuds](#node-types-properties)
@@ -182,12 +186,12 @@ Lorsque vous utilisez le [déclencheur de déploiement](/help/sites-administerin
 
 * L’automatisation des déploiements avec des déclencheurs `onModify` peut avoir un impact négatif sur les performances de création, car ils déclenchent des déploiements après *chaque* modification de page.
 
-* Le résultat du déploiement peut différer du résultat attendu pour les raisons suivantes :
+* Le résultat du déploiement peut différer de celui attendu :
 
    * Vous ne pouvez pas spécifier l’ordre des événements de modification résultants.
-   * L’architecture basée sur les événements ne peut pas garantir la séquence des événements transmise au gestionnaire de déploiements.
+   * L’architecture basée sur des événements ne peut pas garantir la séquence des événements transmis au Gestionnaire de déploiement.
 
-* L’utilisation d’une telle configuration de déploiement est susceptible d’entraîner des conflits de validation en cas de mises à jour simultanées de la même ressource.
+* L’utilisation d’une telle configuration de déploiement peut entraîner des conflits de validation si des mises à jour simultanées de la même ressource se produisent.
 
 Par conséquent, il est recommandé d’utiliser *uniquement* les déclencheurs `onModify` si les avantages du lancement de déploiement automatique l’emportent sur les problèmes de performance potentiels.
 
@@ -195,11 +199,11 @@ Par conséquent, il est recommandé d’utiliser *uniquement* les déclencheurs 
 
 N’oubliez pas les points suivants :
 
-* En plus de personnaliser les actions de déploiement, MSM vous permet de personnaliser les propriétés des nœuds qui sont déployés. La [configuration OSGi MSM vous permet d’exclure des types de nœuds](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) de la copie de la source vers la Live Copy.
+* En plus de personnaliser les actions de déploiement, MSM vous permet de personnaliser les propriétés des nœuds qui sont déployés. Le [La configuration OSGi MSM vous permet d’exclure les types de noeuds](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) de la copie de la source vers la Live Copy.
 
 ## Informations supplémentaires {#further-information}
 
-La présente section et les pages suivantes abordent les questions connexes :
+Ces pages et les suivantes abordent les questions connexes :
 
 * [Création et synchronisation de Live Copies](/help/sites-administering/msm-livecopy.md)
 * [Console Aperçu de Live Copy](/help/sites-administering/msm-livecopy-overview.md)

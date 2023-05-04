@@ -8,16 +8,20 @@ content-type: reference
 exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
 feature: Video Profiles,Video
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3068'
-ht-degree: 75%
+source-wordcount: '3104'
+ht-degree: 61%
 
 ---
 
 # Profils vidéo Dynamic Media {#video-profiles}
 
-Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Lorsque vous codez vos vidéos originales à l’aide du profil de codage vidéo adaptatif, au cours de la lecture, le lecteur vidéo ajuste automatiquement la qualité du flux vidéo en fonction de la vitesse de la connexion Internet de vos clients. Ce processus est appelé diffusion en continu adaptative.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Lorsque vous codez vos vidéos originales à l’aide du profil de codage vidéo adaptatif, au cours de la lecture, le lecteur vidéo ajuste automatiquement la qualité du flux vidéo en fonction de la vitesse de connexion Internet de vos clients. Ce processus est appelé diffusion en continu adaptative.
 
 Voici d’autres facteurs qui déterminent la qualité des vidéos :
 
@@ -94,15 +98,15 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
 
 ## Création d’un profil de codage vidéo Dynamic Media pour la diffusion en continu adaptative {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif (groupe de paramètres de chargement vidéo pour MP4 H.264) qui est optimisé pour la visualisation. Vous pouvez utiliser ce profil lorsque vous chargez vos vidéos.
+Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif (groupe de paramètres de chargement vidéo pour MP4 H.264) qui est optimisé pour la meilleure expérience de visionnage. Vous pouvez utiliser ce profil lorsque vous chargez des vidéos.
 
 Cependant, si ce profil prédéfini ne répond pas à vos besoins, vous pouvez choisir de créer votre propre profil de codage de vidéo adaptative. Lorsque vous utilisez le paramètre **[!UICONTROL Coder pour la diffusion en continu adaptative]**-*une bonne pratique*- tous les paramètres prédéfinis de codage que vous ajoutez au profil sont validés afin de vous assurer que toutes les vidéos ont les mêmes proportions. En outre, les vidéos codées sont traitées comme un ensemble à débit multiple pour la diffusion en continu.
 
-Lors de la création du profil de codage vidéo, vous pouvez remarquer que la plupart des options sont préremplies avec les paramètres par défaut recommandés. Si vous sélectionnez une valeur autre que celle par défaut recommandée, vous risquez d’obtenir une qualité vidéo médiocre pendant la lecture et de rencontrer d’autres problèmes de performances.
+Lorsque vous créez le profil de codage vidéo, vous remarquerez que la plupart des options de codage sont préremplies avec les paramètres par défaut recommandés pour vous aider. Cependant, si vous sélectionnez une valeur autre que la valeur par défaut recommandée, sachez que la qualité vidéo risque d’être médiocre pendant la lecture et que d’autres problèmes de performances peuvent se produire.
 
-Pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les valeurs suivantes sont donc validées pour s’assurer qu’elles sont identiques dans chaque paramètre prédéfini, rendant ainsi possible la diffusion en continu adaptative :
+Ainsi, pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les valeurs suivantes sont validées pour s’assurer qu’elles sont identiques pour chaque paramètre prédéfini de codage dans le profil, rendant ainsi possible la diffusion en continu adaptative :
 
-* Codec de format vidéo - MP4 H.264 (.mp4)
+* Codec du format vidéo - MP4 H.264 (.mp4)
 * Codec audio
 * Débit audio
 * Conserver les proportions
@@ -111,7 +115,7 @@ Pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les
 * Profil H264
 * Taux d’échantillonnage audio
 
-Si les valeurs ne sont pas identiques, vous pouvez continuer à créer le profil tel quel. Sachez toutefois que la diffusion en continu adaptative ne sera pas possible. Les utilisateurs vivront à la place une expérience de diffusion en continu à un seul débit. Il est recommandé de modifier les paramètres de codage afin d’utiliser les mêmes valeurs dans chaque paramètre prédéfini de codage du profil. (Notez que l’éditeur de profil vidéo/paramètre prédéfini doit appliquer la parité des paramètres de codage vidéo adaptatif si **[!UICONTROL Coder pour la diffusion en continu adaptative]** est activé.)
+Si les valeurs ne sont pas les mêmes, vous pouvez continuer à créer le profil tel quel. Sachez toutefois que la diffusion en continu adaptative ne sera pas possible. Au lieu de cela, les utilisateurs expérimenteront la diffusion en continu à débit unique. Il est recommandé de modifier les paramètres de codage pour utiliser les mêmes valeurs dans les paramètres prédéfinis individuels de codage du profil. (Notez que l’éditeur de profil vidéo/paramètre prédéfini doit appliquer la parité des paramètres de codage vidéo adaptatif si **[!UICONTROL Coder pour la diffusion en continu adaptative]** est activé.)
 
 Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu progressive](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -127,8 +131,8 @@ Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossi
 1. Appuyez sur **[!UICONTROL Créer]** pour ajouter un nouveau profil vidéo.
 
 1. Saisissez un nom et une description pour le profil.
-1. Vérifiez que la case **[!UICONTROL Coder pour la diffusion en continu adaptative]** est cochée (par défaut).
-1. Appuyez sur **[!UICONTROL Ajouter une préconfiguration de codage vidéo]**.
+1. Assurez-vous que **[!UICONTROL Coder pour la diffusion en continu adaptative]** est cochée (par défaut).
+1. Appuyer **[!UICONTROL Ajouter un paramètre prédéfini de codage vidéo]**.
 1. Définissez les options audio et vidéo dans l’onglet **[!UICONTROL De base.]**
 
    Appuyez sur l’icône d’information en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
@@ -139,7 +143,7 @@ Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossi
    Utilisez l’une des méthodes suivantes :
 
    * Dans le champ **[!UICONTROL Largeur]**, saisissez **[!UICONTROL auto]**. Dans le champ **[!UICONTROL Hauteur]**, saisissez une valeur en pixels.
-   * Pour visualiser plus facilement la taille de la vidéo, appuyez sur la **[!UICONTROL Informations]** (i) à droite de **[!UICONTROL Hauteur]** pour ouvrir le **[!UICONTROL Calcul de la taille]** page. Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions vidéo (représentées par la zone bleue) souhaitées. Appuyez sur **[!UICONTROL X]** dans le coin supérieur droit lorsque vous avez terminé.
+   * Pour visualiser plus facilement la taille de la vidéo, appuyez sur la **[!UICONTROL Informations]** (i) à droite de **[!UICONTROL Hauteur]** pour ouvrir le **[!UICONTROL Calcul de la taille]** page. Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions vidéo (représentées par la zone bleue) souhaitées. Appuyer **[!UICONTROL X]** dans le coin supérieur droit lorsque vous avez terminé.
 
 1. (Facultatif) Appuyez sur l’onglet **[!UICONTROL Avancé]** et assurez-vous que la case **[!UICONTROL Utiliser les valeurs par défaut]** est cochée (recommandé). Vous pouvez également modifier les paramètres vidéo et audio avancés.
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer le paramètre prédéfini.
@@ -148,9 +152,9 @@ Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossi
    * Répétez les étapes 5 à 10 pour créer d’autres paramètres de codage prédéfinis. (La diffusion vidéo adaptative en continu nécessite plusieurs paramètres prédéfinis vidéo.)
    * Dans le coin supérieur droit de la page, appuyez à nouveau sur **[!UICONTROL Enregistrer]** pour enregistrer le profil.
 
-## Contrôle de la progression d’une tâche de codage {#monitoring-the-progress-of-an-encoding-job}
+## Surveillance de la progression d’une tâche de codage {#monitoring-the-progress-of-an-encoding-job}
 
-Un indicateur (ou barre) de progression s’affiche afin que vous puissiez surveiller visuellement la progression d’une tâche de codage vidéo.
+Un indicateur de traitement (ou barre de progression) s’affiche pour vous permettre de surveiller visuellement la progression d’une tâche de codage vidéo.
 
 Vous pouvez également consulter le fichier `error.log` pour contrôler la progression d’une tâche de codage, voir si le codage est terminé ou afficher les erreurs d’une tâche. Le fichier `error.log` se trouve dans le dossier `logs` où vous avez installé votre instance d’AEM.
 
@@ -177,13 +181,13 @@ Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossi
 1. Appuyez sur **[!UICONTROL Créer]** pour ajouter un nouveau profil vidéo.
 1. Saisissez un nom et une description pour le profil.
 1. Effacez la variable **[!UICONTROL Coder pour la diffusion en continu adaptative]** .
-1. Appuyez sur **[!UICONTROL Ajouter une préconfiguration de codage vidéo]**.
+1. Appuyer **[!UICONTROL Ajouter un paramètre prédéfini de codage vidéo]**.
 1. Définissez les options audio et vidéo dans l’onglet **[!UICONTROL De base.]**
 
    Appuyez sur le bouton **[!UICONTROL Informations]** en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
 
 1. (Facultatif) Sous **Taille de la vidéo** titre, décocher **[!UICONTROL Conserver les proportions]**.
-1. Dans le **[!UICONTROL Largeur]** champ, entrer **[!UICONTROL auto]**; à droite du **[!UICONTROL Hauteur]** , appuyez sur le champ **[!UICONTROL Informations]** icône . Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions de votre choix pour la vidéo (encadré bleu). Appuyez sur **[!UICONTROL X]** lorsque vous avez terminé.
+1. Dans le **[!UICONTROL Largeur]** champ, entrer **[!UICONTROL auto]**; à droite du **[!UICONTROL Hauteur]** , appuyez sur le champ **[!UICONTROL Informations]** icône . Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions de votre choix pour la vidéo (encadré bleu). Appuyer **[!UICONTROL X]** lorsque vous avez terminé.
 1. (Facultatif) Effectuez l’une des opérations suivantes :
 
    * Appuyez sur l’onglet **[!UICONTROL Avancé]** et assurez-vous que la case **[!UICONTROL Utiliser les valeurs par défaut]** est cochée (recommandé).
@@ -199,9 +203,9 @@ Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossi
 
 ## Utilisation de paramètres de codage vidéo personnalisés {#using-custom-added-video-encoding-parameters}
 
-Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de paramètres de codage vidéo avancés qui ne figurent pas dans l’interface utilisateur lors de la création ou de la modification d’un profil vidéo dans AEM. Vous pouvez personnaliser l’ajout d’un ou de plusieurs paramètres avancés, tels que **[!UICONTROL minBitrate]** et **[!UICONTROL maxBitrate]**: vers votre profil existant.
+Vous pouvez modifier un profil de codage vidéo existant afin de tirer parti des paramètres de codage vidéo avancés qui ne figurent pas dans l’interface utilisateur lors de la création ou de la modification d’un profil vidéo dans AEM. Vous pouvez personnaliser l’ajout d’un ou de plusieurs paramètres avancés, tels que **[!UICONTROL minBitrate]** et **[!UICONTROL maxBitrate]**: vers votre profil existant.
 
-**Pour utiliser des paramètres de codage vidéo personnalisés, procédez comme suit** :
+**Pour utiliser des paramètres de codage vidéo personnalisés**:
 
 1. Appuyez sur le logo AEM, puis accédez à **[!UICONTROL Outils > Général > CRXDE Lite]**.
 1. Dans la **[!UICONTROL CRXDE Lite]** , dans la **[!UICONTROL Explorateur]** sur la gauche, accédez à ce qui suit :
@@ -228,7 +232,7 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de par
     </tr> 
     <tr> 
     <td><code>keyframe</code></td> 
-    <td>Nombre cible d’images entre les images clés. Calculez cette valeur pour générer une image clé toutes les 2 à 10 secondes. Par exemple, à 30 images par seconde, l’intervalle d’images clé doit être compris entre 60 et 300.<br /> <br /> Les intervalles d’images clé moindres améliorent le comportement de recherche de flux et de changement de flux pour les codages vidéo adaptatifs et peuvent également améliorer la qualité des vidéos avec beaucoup de mouvement. Cependant, puisque les images clés augmentent la taille du fichier, un intervalle d’images clés moindre entraîne généralement une qualité de vidéo globalement moins bonne à un débit donné.</td> 
+    <td>Nombre cible d’images entre les images clés. Calculez cette valeur pour générer une image clé toutes les 2 à 10 secondes. Par exemple, à 30 images par seconde, l’intervalle d’images clé doit être compris entre 60 et 300.<br /> <br /> Les intervalles d’images clé moindres améliorent le comportement de recherche de flux et de changement de flux pour les codages vidéo adaptatifs et peuvent également améliorer la qualité des vidéos avec beaucoup de mouvement. Cependant, puisque les images clés augmentent la taille du fichier, un intervalle d’images clés moindre entraîne généralement une qualité de vidéo globalement moins bonne à un débit donné.</td> 
     <td><code>String</code></td> 
     <td><p>Numéro positif.</p> <p>La valeur par défaut est 300.</p> <p>La valeur recommandée pour HLS (HTTP Live Streaming) est comprise entre 60 et 90.</p> </td> 
     </tr> 
@@ -258,16 +262,16 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de par
 1. Dans le coin inférieur droit de la page, appuyez sur **[!UICONTROL Ajouter]**.
 1. Utilisez l’une des méthodes suivantes :
 
-   * Répétez les étapes 3 et 4 pour ajouter un autre paramètre à votre profil de codage vidéo.
+   * Répétez les étapes 3 et 4 pour ajouter un autre paramètre à votre profil de codage vidéo.
    * Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Enregistrer tout]**.
 
 1. Dans le coin supérieur gauche de la **[!UICONTROL CRXDE Lite]** , appuyez sur **[!UICONTROL Retour à la maison]** pour revenir à AEM.
 
 ### Modification d’un profil de codage vidéo Dynamic Media {#editing-a-video-encoding-profile}
 
-Vous pouvez modifier les profils de codage vidéo que vous avez créés pour ajouter, modifier ou supprimer des paramètres vidéo prédéfinis dans ces profils.
+Vous pouvez modifier n’importe quel profil de codage vidéo que vous avez créé pour ajouter, modifier ou supprimer des paramètres vidéo prédéfinis dans ce profil.
 
-Par défaut, vous ne pouvez pas modifier le profil **[!UICONTROL Codage vidéo adaptatif]** prédéfini prêt à l’emploi fourni avec Dynamic Media. Vous pouvez aussi facilement copier le profil et l’enregistrer sous un nouveau nom. Vous pouvez ensuite modifier les paramètres prédéfinis souhaités dans le profil copié.
+Par défaut, vous ne pouvez pas modifier le profil **[!UICONTROL Codage vidéo adaptatif]** prédéfini prêt à l’emploi fourni avec Dynamic Media. Vous pouvez aussi facilement copier le profil et l’enregistrer sous un nouveau nom. Vous pouvez ensuite modifier les paramètres prédéfinis de votre choix dans le profil copié.
 
 Consultez également la section [Bonnes pratiques en matière de codage vidéo](video.md#best-practices-for-encoding-videos).
 
@@ -313,7 +317,7 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
 ## Application d’un profil vidéo Dynamic Media à des dossiers {#applying-a-video-profile-to-folders}
 
-Lorsque vous affectez un profil vidéo à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil vidéo à un dossier. Nous vous conseillons donc de choisir avec la plus grande attention la structure du dossier dans lequel vous transférez, stockez, utilisez et archivez des ressources.
+Lorsque vous affectez un profil vidéo à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil vidéo à un dossier. Par conséquent, réfléchissez attentivement à la structure de dossiers dans laquelle vous chargez, stockez, utilisez et archivez des ressources.
 
 Si vous avez affecté un profil vidéo différent à un dossier, le nouveau profil remplace le précédent. Les ressources du dossier précédent restent inchangées. Le nouveau profil sera appliqué aux ressources ajoutées ultérieurement au dossier.
 

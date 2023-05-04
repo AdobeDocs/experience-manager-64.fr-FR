@@ -5,23 +5,27 @@ contentOwner: AG
 feature: Asset Management,Metadata,Collections
 role: User
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 77%
+source-wordcount: '469'
+ht-degree: 57%
 
 ---
 
 # Gestion de plusieurs ressources et collections {#managing-multiple-assets-and-collections}
 
-Découvrez comment modifier les métadonnées de plusieurs ressources et collections simultanément pour propager rapidement les modifications courantes des métadonnées.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Découvrez comment modifier simultanément les métadonnées de plusieurs ressources et collections afin de propager rapidement les modifications de métadonnées courantes.
 
 Adobe Enterprise Manager Assets vous permet de modifier les métadonnées de plusieurs ressources simultanément afin que vous puissiez rapidement propager les modifications de métadonnées communes en masse aux ressources. Vous pouvez également modifier en bloc les métadonnées de plusieurs collections.
 
-Utilisez la page des propriétés pour effectuer des modifications de métadonnées sur plusieurs ressources ou collections :
+Utilisez la page Propriétés pour effectuer des modifications de métadonnées sur plusieurs ressources ou collections :
 
-* Remplacer les propriétés de métadonnées par une valeur commune
-* Ajouter ou modifier des balises
+* Modification des propriétés de métadonnées en une valeur commune
+* Ajout ou modification de balises
 
 Pour personnaliser la page des propriétés de métadonnées, notamment ajouter, modifier et supprimer des propriétés de métadonnées, utilisez l’éditeur de schéma.
 
@@ -31,7 +35,7 @@ Pour personnaliser la page des propriétés de métadonnées, notamment ajouter,
 
 ## Modification des propriétés de métadonnées de plusieurs ressources {#editing-metadata-properties-of-multiple-assets}
 
-1. Dans l’interface utilisateur Ressources, accédez à l’emplacement des ressources à modifier.
+1. Dans l’interface utilisateur Assets, accédez à l’emplacement des ressources à modifier.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]** pour ouvrir la page Propriétés des ressources sélectionnées.
 1. Modifiez les propriétés de métadonnées des ressources sélectionnées dans les différents onglets.

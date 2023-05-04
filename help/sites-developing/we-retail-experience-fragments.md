@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
 exl-id: cdde702e-34b7-4f5d-93db-d9a4b1a94d09
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 100%
+source-wordcount: '271'
+ht-degree: 83%
 
 ---
 
 # Test des fragments d’expériences dans We.Retail{#trying-out-experience-fragments-in-we-retail}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Test des fragments d’expériences dans We.Retail
 
@@ -31,7 +35,7 @@ Ils prennent en charge des scénarios de gestion de contenu (CMS) découplés, p
 >
 >Les **[fragments de contenu](/help/sites-developing/we-retail-content-fragments.md)** et les **fragments d’expérience** représentent deux fonctions distinctes d’AEM :
 >
->* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
+>* **Fragments de contenu** sont du contenu éditorial, principalement du texte et des images associées. Il s’agit de contenu pur, sans conception ni mise en page.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.

@@ -1,18 +1,22 @@
 ---
 title: Publication de collections sur Brand Portal
-description: Découvrez comment publier et annuler la publication de collections dans Brand Portal.
+description: Découvrez comment publier des collections et en annuler la publication sur Brand Portal.
 contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: c2c6759e-f763-405e-9e45-5a90b9d32df2
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 60%
+source-wordcount: '359'
+ht-degree: 44%
 
 ---
 
 # Publication de collections sur Brand Portal {#publish-collections-to-brand-portal}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 En tant qu’administrateur d’Adobe Experience Manager Assets, vous pouvez publier des collections sur le [!DNL Experience Manager Assets Brand Portal] pour votre organisation. Cependant, vous devez d’abord intégrer  Assets à Brand Portal. Pour plus d’informations, voir [Configuration de ressources avec Brand Portal](configure-aem-assets-with-brand-portal.md).
 
@@ -26,12 +30,12 @@ Si vous apportez des modifications ultérieures à la collection d’origine dan
 
 ## Publication d’une collection dans Brand Portal {#publish-a-collection-to-brand-portal}
 
-1. Dans l’interface utilisateur d’Assets, appuyez/cliquez sur le [!DNL Experience Manager] logo. Ensuite, accédez à **[!UICONTROL Assets > Collections]** depuis la page **[!UICONTROL Navigation]**.
+1. Dans l’interface utilisateur d’Assets, appuyez/cliquez sur le [!DNL Experience Manager] logo. Ensuite, accédez à **[!UICONTROL Ressources > Collections]** de la **[!UICONTROL Navigation]** page.
 2. Dans la console Collections, sélectionnez la collection que vous souhaitez publier dans Brand Portal.
 
    ![select_collection](assets/select_collection.png)
 
-3. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Publier sur Brand Portal]**.
+3. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Publication sur Brand Portal]**.
 
    ![publish_to_bp_icon](assets/publish_to_bp_icon.png)
 
@@ -41,9 +45,9 @@ Si vous apportez des modifications ultérieures à la collection d’origine dan
 
    ![publish_collection](assets/published_collection.png)
 
-## Annulation de la publication de collections {#unpublish-collections}
+## Dépublication de collections {#unpublish-collections}
 
-Vous pouvez annuler la publication de collections que vous publiez depuis  Assets dans Brand Portal. Une fois la publication de la collection d’origine annulée, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
+Vous pouvez dépublier les collections que vous publiez depuis  Assets dans Brand Portal. Une fois la collection d’origine dépubliée, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
 
 1. Dans la console Collections de votre [!DNL Assets] et sélectionnez la collection dont vous souhaitez annuler la publication.
 

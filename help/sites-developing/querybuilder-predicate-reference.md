@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 2bcc2be9-1e8a-44b5-add2-370b9ff80de8
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 98%
+source-wordcount: '2346'
+ht-degree: 75%
 
 ---
 
-# Référence des prédicats de Query Builder{#query-builder-predicate-reference}
+# Référence des prédicats de Query Builder{#query-builder-predicate-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Général {#general}
 
@@ -83,7 +87,7 @@ Peut être utilisé avec n’importe quelle valeur pour rechercher des fragments
 
 ### dateComparison {#datecomparison}
 
-Compare deux propriétés JCR DATE entre elles. Permet d’établir des comparaisons de type « est égale à », « est différente de », « est supérieure à » ou encore « est supérieure ou égale à ».
+Compare deux propriétés JCR DATE l’une à l’autre. Peuvent tester s’ils sont égaux, inégaux, supérieurs ou supérieurs ou égaux.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche.
 
@@ -103,12 +107,12 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d�
 
 ### daterange {#daterange}
 
-Fait correspondre les propriétés JCR DATE par rapport à un intervalle de date/heure. Cette méthode utilise la norme ISO8601.\
-format des dates et heures ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) et permet également des représentations partielles, comme `YYYY-MM-DD`. L’horodatage peut également être fourni sous la forme d’un nombre de millisecondes écoulées depuis 1970 dans le fuseau horaire UTC (format d’heure UNIX).
+Correspond aux propriétés JCR DATE par rapport à un intervalle de date/heure. Cette méthode utilise la norme ISO8601.\
+format des dates et heures ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) et permet également des représentations partielles, comme `YYYY-MM-DD`. Vous pouvez également fournir l’horodatage sous la forme du nombre de millisecondes écoulées depuis 1970 dans le fuseau horaire UTC, le format d’heure unique.
 
 Vous pouvez rechercher tout ce qui se trouve entre deux horodatages, un élément plus récent ou plus ancien qu’une date donnée, et également choisir entre des intervalles inclusifs et ouverts.
 
-Prend en charge l’extraction de facettes. Fournit les buckets « aujourd’hui », « cette semaine » ou « ce mois-ci », « les 3 derniers mois », « cette année », « l’année dernière » et « avant l’année dernière ».
+Prend en charge l’extraction de facettes. Fournit des intervalles &quot;aujourd’hui&quot;, &quot;cette semaine&quot;, &quot;ce mois-ci&quot;, &quot;les 3 derniers mois&quot;, &quot;cette année&quot;, &quot;l’année dernière&quot; et &quot;avant l’année dernière&quot;.
 
 Ne prend pas en charge le filtrage.
 
@@ -140,7 +144,7 @@ Ne prend pas en charge le filtrage.
 
 ### excludepaths {#excludepaths}
 
-Exclut des nœuds du résultat lorsque leur chemin d’accès correspond à une expression régulière.
+Exclut les noeuds du résultat où leur chemin correspond à une expression régulière.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche.
 
@@ -154,7 +158,7 @@ Ne prend pas en charge l’extraction de facettes.
 
 ### fulltext {#fulltext}
 
-Recherches de termes dans l’index en texte intégral.
+Recherche des termes dans l’index de texte intégral.
 
 Ne prend pas en charge le filtrage.
 
@@ -199,7 +203,7 @@ group.2_group.type=dam:Asset
 
 Dans ce cas, le terme « **Management** » est recherché dans des pages sous `/content/geometrixx/en` ou dans des ressources sous `/content/dam/geometrixx`.
 
-Il s’agit conceptuellement de `fulltext AND ( (path AND type) OR (path AND type) )`. Pour des jointures OR de ce type, de bons index sont requis pour garantir les performances.
+Il s’agit conceptuellement de `fulltext AND ( (path AND type) OR (path AND type) )`. Gardez à l’esprit que de telles jointures OU nécessitent des index performants.
 
 #### Propriétés {#properties-6}
 
@@ -233,11 +237,11 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d�
 
 ### language {#language}
 
-Recherche des pages CQ dans une langue spécifique. Ce prédicat examine la propriété language de la page et le chemin d’accès de la page qui inclut souvent la langue ou le paramètre régional dans une structure de site de niveau supérieur.
+Recherche les pages CQ dans une langue spécifique. Cela tient compte de la propriété de langue de la page et du chemin de page qui inclut souvent la langue ou le paramètre régional dans une structure de site de niveau supérieur.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche.
 
-Prend en charge l’extraction de facettes. Des buckets sont fournis pour chaque code de langue.
+Prend en charge l’extraction de facettes. Fournit des buckets pour chaque code de langue unique.
 
 #### Propriétés {#properties-8}
 
@@ -247,11 +251,11 @@ Prend en charge l’extraction de facettes. Des buckets sont fournis pour chaque
 
 ### mainasset {#mainasset}
 
-Vérifie si un nœud est une ressource DAM principale et non une sous-ressource. Il s’agit, en fait, de tout nœud qui ne se trouve pas à l’intérieur d’un nœud « subassets ». Notez que ce prédicat ne recherche pas le type de nœud `dam:Asset`. Pour utiliser ce prédicat, définissez simplement « `mainasset=true` » ou « `mainasset=false` » ; il n’y a pas d’autres propriétés.
+Vérifie si un noeud est une ressource principale DAM et non une sous-ressource. Il s’agit essentiellement de chaque noeud qui ne se trouve pas à l’intérieur d’un noeud &quot;subassets&quot;. Notez que ce prédicat ne recherche pas le type de nœud `dam:Asset`. Pour utiliser ce prédicat, définissez simplement « `mainasset=true` » ou « `mainasset=false` » ; il n’y a pas d’autres propriétés.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche.
 
-Prend en charge l’extraction de facettes. Fournit 2 buckets pour les ressources principales et les sous-ressources.
+Prend en charge l’extraction de facettes. Fournit 2 compartiments pour les sous-ressources principales et secondaires.
 
 #### Propriétés {#properties-9}
 
@@ -261,7 +265,7 @@ Prend en charge l’extraction de facettes. Fournit 2 buckets pour les ressourc
 
 ### memberOf {#memberof}
 
-Recherche les éléments qui sont membres d’une [collection de ressources Sling](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) spécifique.
+Recherche les éléments qui sont membres d’un [collecte de ressources sling](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche. Ne prend pas en charge l’extraction de facettes.
 
@@ -273,9 +277,9 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d�
 
 ### nodename {#nodename}
 
-Correspond aux noms de nœuds JCR.
+Correspond aux noms de noeud JCR.
 
-Prend en charge l’extraction de facettes. Fournit des buckets pour chaque nom de nœud (nom de fichier).
+Prend en charge l’extraction de facettes. Fournit des buckets pour chaque nom de noeud unique (nom de fichier).
 
 #### Propriétés {#properties-11}
 
@@ -285,7 +289,7 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque nom 
 
 ### notexpired {#notexpired}
 
-Fait correspondre des éléments en vérifiant si une propriété JCR DATE est supérieure ou égale à l’heure actuelle du serveur. Ce prédicat peut être utilisé pour effectuer une vérification sur une propriété date de type « `expiresAt` » et se limiter uniquement à celles qui n’ont pas encore expiré (`notexpired=true`) ou qui ont déjà expiré (`notexpired=false`).
+Correspond aux éléments en vérifiant si une propriété JCR DATE est supérieure ou égale à l’heure actuelle du serveur. Ce prédicat peut être utilisé pour effectuer une vérification sur une propriété date de type « `expiresAt` » et se limiter uniquement à celles qui n’ont pas encore expiré (`notexpired=true`) ou qui ont déjà expiré (`notexpired=false`).
 
 Ne prend pas en charge le filtrage.
 
@@ -303,7 +307,7 @@ Prend en charge l’extraction de facettes de la même manière que le prédicat
 
 ### orderby {#orderby}
 
-Permet de trier les résultats. Si un classement basé sur plusieurs propriétés est requis, ce prédicat doit être ajouté plusieurs fois à l’aide du préfixe numérique, tel que `1_orderby=first`, `2_oderby=second`.
+Permet de trier le résultat. Si un classement basé sur plusieurs propriétés est requis, ce prédicat doit être ajouté plusieurs fois à l’aide du préfixe numérique, tel que `1_orderby=first`, `2_oderby=second`.
 
 #### Propriétés {#properties-13}
 
@@ -321,7 +325,7 @@ Permet de trier les résultats. Si un classement basé sur plusieurs propriété
 
 ### path {#path}
 
-Effectue une recherche à un emplacement donné.
+Recherche dans un chemin donné.
 
 Ne prend pas en charge l’extraction de facettes.
 
@@ -345,7 +349,7 @@ Ne prend pas en charge l’extraction de facettes.
 
 ### property {#property}
 
-Correspond aux propriétés JCR et à leur valeurs.
+Correspond aux propriétés JCR et à leurs valeurs.
 
 Prend en charge l’extraction de facettes. Fournit des buckets pour chaque valeur de propriété dans les résultats.
 
@@ -377,9 +381,9 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque vale
 
 ### rangeproperty {#rangeproperty}
 
-Fait correspondre une propriété JCR par rapport à un intervalle de temps. Ce prédicat s’applique à des propriétés de type linéaire telles que `LONG`, `DOUBLE` et `DECIMAL`. Pour `DATE`, reportez-vous au prédicat daterange qui présente une entrée de format de date optimisée.
+Correspond à une propriété JCR par rapport à un intervalle. Ce prédicat s’applique à des propriétés de type linéaire telles que `LONG`, `DOUBLE` et `DECIMAL`. Pour `DATE`, reportez-vous au prédicat daterange qui présente une entrée de format de date optimisée.
 
-Vous pouvez définir une limite inférieure et une limite supérieure ou seulement l’une des deux. L’opération (par exemple, « inférieur à » ou « inférieur ou égal à ») peut également être spécifiée séparément pour la limite inférieure et la limite supérieure.
+Vous pouvez définir une limite inférieure et une limite supérieure ou seulement l’une d’elles. L’opération (par ex. &quot;inférieur à&quot; ou &quot;inférieur ou égal à&quot;) peut également être spécifié pour les limites inférieure et supérieure individuellement.
 
 Ne prend pas en charge l’extraction de facettes.
 
@@ -479,7 +483,7 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
 ### savedquery {#savedquery}
 
-Inclut tous les prédicats d’une requête Query Builder persistante dans la requête actuelle sous la forme d’un prédicat de sous-groupe.
+Inclut tous les prédicats d’une requête Query Builder persistante dans la requête actuelle en tant que prédicat de sous-groupe.
 
 Notez que ce prédicat n’exécute pas une requête supplémentaire, mais étend la requête en cours.
 
@@ -493,7 +497,7 @@ Ne prend pas en charge l’extraction de facettes pour les prédicats de la requ
 
    Chemin d’accès à la requête enregistrée (propriété String ou nœud `nt:file`)
 
-### similaire {#similar}
+### similar {#similar}
 
 Recherche par analogie à l’aide du `rep:similar()` du Xpath JCR.
 
@@ -510,7 +514,7 @@ Chemin d’accès relatif à un nœud descendant ou
 
 ### tag {#tag}
 
-Recherche du contenu identifié avec une ou plusieurs balises, en spécifiant les chemins d’accès aux titres de balise.
+Recherche du contenu balisé avec une ou plusieurs balises, en spécifiant les chemins d’accès au titre de la balise.
 
 Prend en charge l’extraction de facettes. Fournit des compartiments pour chaque balise, en utilisant le chemin d’accès vers le titre de balise active.
 
@@ -530,7 +534,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 ### tagid {#tagid}
 
-Recherche du contenu identifié avec une ou plusieurs balises, en spécifiant des ID de balise.
+Recherche du contenu balisé avec une ou plusieurs balises, en spécifiant des ID de balise.
 
 Prend en charge l’extraction de facettes. Fournit des compartiments pour chaque balise, en utilisant l’ID de balise en cours.
 
@@ -550,7 +554,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 ### tagsearch {#tagsearch}
 
-Recherche du contenu identifié avec une ou plusieurs balises, en spécifiant des mots-clés. Ce prédicat recherche d’abord les balises dont les titres contiennent ces mots-clés, puis limite les résultats aux seuls éléments balisés de la sorte.
+Recherche du contenu balisé avec une ou plusieurs balises, en spécifiant des mots-clés. Cela lancera d’abord une recherche de balises contenant ces mots-clés dans leur titre, puis limitera le résultat aux seuls éléments balisés avec ces mots-clés.
 
 Ne prend pas en charge l’extraction de facettes.
 
@@ -574,9 +578,9 @@ Ne prend pas en charge l’extraction de facettes.
 
 ### type {#type}
 
-Limite les résultats à un type de nœud JCR spécifique, aussi bien un type de nœud primaire qu’un type de mixin. Cela permet également de rechercher des sous-types de ce type de nœud. Pour plus d’efficacité, notez que les index de recherche de référentiel doivent couvrir les types de nœud.
+Limite les résultats à un type de noeud JCR spécifique, à la fois à un type de noeud Principal ou à un type de mixin. Cela permet également de trouver des sous-types de ce type de noeud. Pour plus d’efficacité, notez que les index de recherche de référentiel doivent couvrir les types de nœud.
 
-Prend en charge l’extraction de facettes. Fournit des buckets pour chaque type de valeur dans les résultats.
+Prend en charge l’extraction de facettes. Fournit des buckets pour chaque type unique dans les résultats.
 
 #### Propriétés {#Properties-2}
 

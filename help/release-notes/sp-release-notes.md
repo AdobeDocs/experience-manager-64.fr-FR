@@ -9,31 +9,35 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '21517'
-ht-degree: 29%
+source-wordcount: '21553'
+ht-degree: 24%
 
 ---
 
 # Notes de mise à jour du pack de services d’AEM 6.4 {#aem-service-pack-release-notes}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Informations sur la version {#release-information}
 
-| Produits | **Adobe Experience Manager (AEM) 6.4** |
+| Produits | **Adobe Experience Manager (AEM) 6.4** |
 |---|---|
 | Version | 6.4.8.0 |
-| Type | Version du Service Pack |
+| Type | Mise à jour du pack de services |
 | Date | 5 mars 2020 |
 | URL de téléchargement | AEM 6.4.8.0 sur [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
-## Fonctionnalités présentes dans AEM 6.4.8.0 {#what-s-included-in-aem}
+## Éléments inclus dans AEM 6.4.8.0 {#what-s-included-in-aem}
 
 AEM 6.4.8.0 est une mise à jour importante qui inclut de nouvelles fonctionnalités, des améliorations et des performances demandées par les clients clés, une stabilité et des améliorations de sécurité, publiée depuis la mise à disposition d’AEM 6.4 dans **Avril 2018.**
 
 Il est également cumulatif, ce qui signifie que la version 6.4.8.0 inclut tous les Service Packs AEM 6.4 publiés avant.
 
-Les principaux points forts de cette version du Service Pack incluent les éléments suivants :
+Voici quelques points forts de cette version de Service Pack :
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.8.20.
 
@@ -146,7 +150,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 >[!NOTE]
 >
->Le Service Pack AEM n’inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct. En outre, un programme d’installation cumulatif est publié, qui inclut des correctifs pour AEM Forms sous JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
+>AEM Service Pack n’inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un package complémentaire Forms distinct. En outre, un programme d’installation cumulatif est publié, qui inclut des correctifs pour AEM Forms sous JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
 
 * Designer : Si l’option de balisage est activée, la bordure du sous-formulaire disparaît dans la sortie de PDF générée (NPR-32546, NPR-32322).
 
@@ -164,7 +168,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Analytics n’affiche pas les résultats appropriés lors de l’envoi ou de l’abandon de formulaires sur une page Sites (NPR-31359).
 
-### Correctifs et packs de fonctionnalités inclus dans les packs de service précédents {#hotfixes-and-feature-packs-included-in-previous-service-packs}
+### Correctifs et Feature Packs inclus dans les Service Packs précédents {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
 #### AEM 6.4.7.0 {#experience-manager-6470}
 
@@ -308,7 +312,7 @@ Si vous utilisez le module `com.day.cq.dam.handler.standard.msoffice` dans votre
 
 * Le chemin d’accès au fragment d’expérience de destination n’est pas mis à jour lors de la promotion d’une page de lancement (NPR-30830).
 
-##### Communautés {#communities-6470}
+##### Communities {#communities-6470}
 
 * La fonctionnalité de messagerie électronique ne fonctionne pas correctement dans certains cas, même si la messagerie électronique est activée dans les paramètres de notification, le système renvoie une exception dans NotificationsActivityStreamProvider (NPR-31521).
 * Impossible de créer de nouveaux membres, un écran vide s’affiche sur l’écran Créer un membre dans AEM instance d’auteur (NPR-30951).
@@ -320,7 +324,7 @@ Si vous utilisez le module `com.day.cq.dam.handler.standard.msoffice` dans votre
 
 >[!NOTE]
 >
->Le Service Pack AEM n’inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct. En outre, un programme d’installation cumulatif est publié, qui inclut des correctifs pour AEM Forms sous JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
+>AEM Service Pack n’inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un package complémentaire Forms distinct. En outre, un programme d’installation cumulatif est publié, qui inclut des correctifs pour AEM Forms sous JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
 
 **Package de modules complémentaires Forms**
 
@@ -376,12 +380,12 @@ Voici quelques-uns des points forts d’AEM 6.4.6.0 :
 * Le workflow de gestion des actifs numériques se bloque lors de la création de ressources MP4 pour AEM. NPR-30031 : correctif pour CQ-4271352
 * Problème de connectivité d’Adobe Smart Tag via Datapower. NPR-30026 : correctif pour CQ-4269457
 * Le PDF est introuvable à l’aide d’OmniSearch. NPR-30046 : correctif pour GRANITE-26290
-* Les chemins d’accès aux ressources dans les URL et les métadonnées des dossiers générés par l’API ACP ne sont pas codés dans les URL.  GRANITE-26198 : correctif pour CQ-4271814
+* Les chemins d’accès aux ressources dans les URL et les métadonnées des dossiers générés par l’API ACP ne sont pas codés en URL.  GRANITE-26198 : Correctif pour CQ-4271814
 * La fonctionnalité Créer une tâche de révision ne fonctionne pas en raison d’une charge utile non définie. NPR-30469 : Correctif CQ-4274263
 * La possibilité de basculer du mode Carte au mode Liste et vice versa disparaît après une recherche Omni dans le sélecteur de ressources. NPR-29852 : correctif pour CQ-4269369
 * (IU tactile) Lors de l’assistant de gestion de publication, les ressources sont ajoutées à la file d’attente de réplication après l’ajout des pages, ce qui entraîne l’affichage de certaines ressources au bout de quelques secondes. NPR-29985 : correctif pour CQ-4270724
-* Le tri des requêtes par pertinence renvoie des documents InDesign ainsi que des modèles InDesign. Correctif pour CQ-4273864
-* Si l’utilisateur dispose d’un ID de courrier électronique en majuscules, il n’est pas possible d’archiver les fichiers qui ont été précédemment extraits. Correctif pour CQ-4276575
+* Le tri des requêtes de recherche par pertinence renvoie des documents d’InDesign avec des modèles d’InDesign. Correctif pour CQ-4273864
+* Si l’utilisateur dispose d’un ID de courrier électronique en majuscules, il n’est pas possible d’archiver les ressources qui ont déjà été extraites. Correctif pour CQ-4276575
 * Configuration des Cloud Services Dynamic Media dans `DMHybrid` entraîne la création de plusieurs suites de rapports vides dans Analytics, sans identifiant de suite de rapports stocké sur AEM, ce qui entraîne la duplication des suites de rapports. Correctif pour CQ-4276855
 * La boîte de dialogue d’avertissement n’apparaît pas lors de la promotion dans la page &quot;Balise gérée&quot;. Correctif pour CQ-4252851
 * Lors de l’utilisation du carrousel pour la gestion des balises, le bouton de navigation ne fonctionne pas. Correctif pour CQ-4275499
@@ -397,10 +401,10 @@ Voici quelques-uns des points forts d’AEM 6.4.6.0 :
 * (IE11) Lorsque vous collez du contenu de HTML dans un composant Éditeur de texte enrichi avec defaultPasteMode = texte brut, le HTML est collé avec la mise en forme. Par conséquent, defaultPasteMode n’a aucun effet. NPR-30045 : correctif pour GRANITE-26094
 * (IU classique) Lorsque la page d’administration du site est rechargée, tous les éléments de liste déroulante du menu &quot;Nouveau&quot; sont désactivés. NPR-29980 : correctif pour CQ-4272044
 * Impossible d’ajouter des styles au texte ou de modifier les styles existants créés sur le contenu. NPR-29712 : correctif pour CQ-4266249
-* (IU classique) Ressources sans dc : La valeur de titre est répertoriée sans titre dans le navigateur de la boîte de dialogue du champ de chemin d’accès. NPR-30166 : demande de rétroportage pour CQ-88858
+* (IU classique) Ressources sans dc : La valeur de titre est répertoriée sans titre dans le navigateur de la boîte de dialogue du champ de chemin d’accès. NPR-30166 : Demande de rétroportage pour CQ-88858
 * Le cq : l’écouteur ne fonctionne pas avec les composants imbriqués, même après l’ajout du composant parsys. NPR-30422 : correctif pour CQ-4274863
 * Erreur ContextHub durant l’intégration d’AEM et de Campaign. NPR-30625 : correctif pour CQ-4250790
-* La valeur du paramètre de requête resourceType est copiée dans la valeur d’un attribut de balise HTML encapsulé dans des guillemets doubles. NPR-29832 : correctif pour CQ-4255365
+* La valeur du paramètre de requête resourceType est copiée dans la valeur d’un attribut de balise de HTML encapsulé entre guillemets doubles. NPR-29832 : correctif pour CQ-4255365
 * Une actualisation de page est nécessaire une fois les composants copiés et collés d’une page vers une autre. NPR-29982 : correctif pour CQ-4256019
 * La publication/annulation de la publication d’un alias de page n’est pas prise en charge et doit être supprimée. NPR-30062 : correctif pour CQ-4271249
 * Avertissement ResourceResolver non fermé dans ExperienceFragmentsReplicationListener entraînant des problèmes de stabilité au fil du temps, forçant à redémarrer les instances AEM. NPR-30416 : correctif pour CQ-4257521
@@ -426,7 +430,7 @@ Voici quelques-uns des points forts d’AEM 6.4.6.0 :
 
 **Plateforme**
 
-* AEM Default Mail Sender ne peut pas envoyer de courrier à un serveur SMTP distant via TLS v1.2. NPR-30476 : Correctif pour GRANITE-26605
+* AEM l’expéditeur de courrier par défaut ne peut pas envoyer de courrier à un serveur SMTP distant via TLS v1.2. NPR-30476 : Correctif pour GRANITE-26605
 
 **Communities**
 
@@ -444,11 +448,11 @@ Voici quelques-uns des points forts d’AEM 6.4.6.0 :
 
 **Intégration**
 
-* Le contenu personnalisé ne s’affiche pas correctement sur l’instance de publication tant que l’instance n’a pas été redémarrée. NPR-30421 : correctif pour CQ-4273706
+* Le contenu personnalisé ne s’affiche pas correctement sur l’instance de publication tant que l’instance n’est pas redémarrée. NPR-30421 : correctif pour CQ-4273706
 
 **Projets**
 
-* Les valeurs dam:folderThumbnailPaths ne sont pas actualisées et n’affichent pas les anciennes miniatures, même après la suppression des fichiers dans le dossier. NPR-30424 : correctif pour CQ-4273667
+* dam: Les valeurs folderThumbnailPaths ne sont pas actualisées et n’affichent pas les anciennes miniatures même après la suppression des ressources dans le dossier. NPR-30424 : correctif pour CQ-4273667
 
 **UI-Consoles**
 
@@ -462,7 +466,7 @@ Voici quelques-uns des points forts d’AEM 6.4.6.0 :
 
 >[!NOTE]
 >
->Le Service Pack AEM n’inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct. En outre, un programme d’installation cumulatif est publié, qui inclut des correctifs pour AEM Forms sous JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
+>AEM Service Pack n’inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un package complémentaire Forms distinct. En outre, un programme d’installation cumulatif est publié, qui inclut des correctifs pour AEM Forms sous JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
 
 **Package de modules complémentaires Forms**
 
@@ -522,9 +526,9 @@ Voici quelques-uns des points forts d’AEM 6.4.5.0 :
 * Ajout du délai d’expiration du socket et du délai de connexion dans les agents de réplication Brand Portal.
 * Améliorations de l’omni-recherche : Augmentation de la limite de pagination du résultat de recherche à 100 pages.
 * Désactivé `AssetDownloadServlet` Composant OSGi par défaut sur AEM instances de publication. Pour plus d’informations, voir [Téléchargement de ressources à partir d’AEM](/help/assets/download-assets-from-aem.md).
-* Activation de la prise en charge du Gestionnaire de sites multiples pour les ressources. Pour plus d’informations, consultez [Réutilisation des ressources à l’aide du gestionnaire de sites multiples pour  Assets](/help/assets/reuse-assets-using-msm.md).
+* Activation de la prise en charge de Multi Site Manager pour Assets. Pour plus d’informations, consultez [Réutilisation des ressources à l’aide du gestionnaire de sites multiples pour  Assets](/help/assets/reuse-assets-using-msm.md).
 
-**Ressources**
+**Assets**
 
 * Les ressources dont le nom de fichier contient une apostrophe ne sont pas synchronisées avec Dynamic Media. NPR-29538 : correctif pour CQ-4270592
 * Mise à jour de l’interface de gestion des ressources numériques DMGateway pour la prise en charge multipartie S3. NPR-29740 : correctif pour CQ-4226303
@@ -554,8 +558,8 @@ Voici quelques-uns des points forts d’AEM 6.4.5.0 :
 * Les mises à jour de métadonnées ne sont pas transmises à IPS si le champ de métadonnées est mis à jour dans AEM. NPR-28961 : correctif pour CQ-4255393
 * VersioningTimelineEventProvider doit fournir la version racine avec le commentaire de version. Correctif pour GRANITE-26063
 * L’ingestion de données entraîne l’exécution de code du côté serveur. Correctif pour CQ-4270246
-* Activation de la prise en charge du Gestionnaire de sites multiples pour les ressources. Correctif pour CQ-4271453, CQ-4268621, CQ-4257491
-* L’interface AEM doit afficher une entrée supplémentaire pour la version actuelle de la ressource dans la chronologie, affichant le dernier commentaire d’arrivée à partir d’Adobe Asset Link. Correctif pour CQ-4262864
+* Activation de la prise en charge de Multi Site Manager pour Assets. Correctif pour CQ-4271453, CQ-4268621, CQ-4257491
+* AEM interface doit afficher une entrée supplémentaire pour la version actuelle de la ressource dans l’historique de la chronologie, affichant le dernier commentaire d’archivage d’Adobe Asset Link. Correctif pour CQ-4262864
 * L’exemple de vidéo ne se charge pas lors de la création ou de la modification d’un visionneuse de supports variés. Correctif pour CQ-4244889
 * La désactivation des autorisations de suppression de contenu côté AEM empêche l’utilisateur de publier du contenu sur Brand Portal. Correctif pour CQ-4270426
 * Problèmes liés à la limite de requête avec les rapports de ressources après la mise à niveau vers AEM 6.4.3. NPR-28588 : Correctif pour CQ-4262022, CQ-4260697
@@ -569,18 +573,18 @@ Voici quelques-uns des points forts d’AEM 6.4.5.0 :
 * (Éditeur de modèles) Régression de stratégie de style en mode structure. NPR-28981 : correctif pour CQ-4264400
 * Les Live Copies imbriquées affichent des entrées en double lors du déploiement. NPR-29300 : correctif pour CQ-4268664
 * La publication d’une Live Copy d’une Live Copy contenant un composant Importateur de conception échoue avec l’échec de la récupération des références pour la page sélectionnée. NPR-28944 : correctif pour CQ-4265014
-* CoralUI, lorsqu’il est utilisé avec Multifield, stocke le paramètre fileReferenceParameter au niveau du composant et non au niveau de plusieurs champs. NPR-29536 : correctif pour CQ-4266129
+* CoralUI, lorsqu’il est utilisé avec Multifield, stocke le paramètre fileReferenceParameter au niveau du composant plutôt qu’au niveau de plusieurs champs. NPR-29536 : correctif pour CQ-4266129
 * La référence de conception n’est pas répliquée lors de la publication après l’annulation de l’héritage sur l’importateur de conception. NPR-29648, NPR-29721 : correctif pour CQ-4269270, CQ-4271087
 * Le champ de chemin dans l’éditeur de texte enrichi s’ouvre au chemin racine, quel que soit le chemin spécifié pour la recherche. NPR-29483 : correctif pour CQ-4268997
 * (IE11) Copiez Coller le contenu du HTML dans un composant d’éditeur de texte enrichi avec defaultPasteMode = texte brut ne colle pas le contenu en tant que texte brut. NPR-29432, NPR-29171 : Correctif pour GRANITE-24941
 * La vérification orthographique de l’éditeur de texte enrichi ne fonctionne plus dans d’autres langues. NPR-29506 : correctif pour CQ-4264990
 * Cross-site scripting (XSS) sur la page Campaign. NPR-29614 : correctif pour CQ-4269322
-* La réduction de l’éditeur de texte enrichi à partir du mode plein écran en mode modification de la source entraîne une perte de contenu. NPR-29574 : correctif pour CQ-4260584
+* La réduction de l’éditeur de texte enrichi à partir du mode plein écran en mode d’édition de la source entraîne une perte de contenu. NPR-29574 : correctif pour CQ-4260584
 * (IU classique) Il n’est pas toujours possible d’accéder au dernier onglet lorsqu’il existe un grand nombre de balises. NPR-29544 : correctif pour CQ-4264548
 * (IU classique) Le menu de navigation du Admin Console disparaît et la page ne se charge pas complètement. NPR-29571 : correctif pour CQ-4264585
 * Une alerte d’erreur est générée lors de l’ajout de composants à la page WCM lorsque la minification est activée sur l’instance. NPR-29396 : correctif pour CQ-4266196
 * Problème lié à l’héritage des noeuds Système de style du parent. NPR-29296 : correctif pour CQ-4266041
-* La page restaurée avec la distorsion du temps doit faire référence à l’image correcte au moment du contrôle de version.  NPR-29431 : correctif pour CQ-4262638
+* La page restaurée avec Timewarp doit faire référence à l’image correcte au moment du contrôle de version.  NPR-29431 : correctif pour CQ-4262638
 * Page vierge contenant des erreurs Javascript dans l’éditeur après l’installation de la dernière version d’instantané 6.4.5. NPR-29475 : correctif pour CQ-4266196
 * Lors de l’ajout d’un composant à un parsys, la propriété de liste de composants de conception n’est pas respectée et est résolue sur un nom de noeud de modèle différent avec une structure parsys similaire. NPR-29509 : correctif pour CQ-4269044
 * La zone cq:dropTargets couvre l’ensemble du composant au lieu de la taille de l’image, rendant le ciblage difficile avec les composants incorporés. NPR-29738 : correctif pour CQ-4268912
@@ -594,11 +598,11 @@ Voici quelques-uns des points forts d’AEM 6.4.5.0 :
 **Réplication**
 
 * Vulnérabilité de divulgation des informations sensibles dans le composant Agent de réplication. NPR-29612, NPR-24951 : Correctif pour GRANITE-25070
-* Les données fournies par l’utilisateur ne sont pas ignorées lors de la sortie dans le composant cq/Replication/components/agent, ce qui entraîne une vulnérabilité Cross-site scripting (XSS) par stockage. Correctif pour CQ-4266263
+* Les données fournies par l’utilisateur ne sont pas ignorées lors de la sortie dans le composant cq/replication/components/agent , ce qui entraîne une vulnérabilité de script intersite (XSS) stockée. Correctif pour CQ-4266263
 
 **Fragments d’expérience**
 
-* Impossible d’exporter les fragments d’expérience vers la cible lorsque une image dynamique est utilisée. Correctif pour CQ-4269606
+* Impossible d’exporter les fragments d’expérience vers la cible lorsque l’image dynamique est utilisée. Correctif pour CQ-4269606
 
 **Social - Création de rapports**
 
@@ -618,11 +622,11 @@ Voici quelques-uns des points forts d’AEM 6.4.5.0 :
 
 * La configuration de l’enregistreur de journalisation Apache Sling ne filtre pas le script injecté.  NPR-29775 : correctif pour GRANITE-26051
 
-**Communautés**
+**Communities**
 
 * Les groupes supprimés sur l’instance de création doivent être supprimés des instances de publication. NPR-28933 : correctif pour CQ-4264645
 * Le secret de l’application doit être protégé par un champ de mot de passe, et non affiché en texte brut pour les outils de connexion sociale. NPR-29728 : correctif pour CQ-4270480
-* Les visiteurs et les membres, sans privilèges de modérateur, peuvent voir les publications non approuvées/en attente en collant l’URL. NPR-29726 : correctif pour CQ-4271124, CQ-4271441
+* Les visiteurs et les membres, sans privilèges de modérateur, peuvent voir les publications non approuvées/en attente en collant l’URL. NPR-29726 : Correctif pour CQ-4271124, CQ-4271441
 * Un temps de réponse élevé allant jusqu’à 40 à 50 secondes est observé lors de la connexion de l’utilisateur à la Communauté. NPR-29678 : correctif pour CQ-4269444
 
 **Traduction**
@@ -667,8 +671,8 @@ Voici quelques-uns des points forts d’AEM 6.4.5.0 :
 
 **Gestion de contenu web - MSM**
 
-* La suppression d’un nœud enfant dans la Live Copy doit détacher les informations liveRelationship. Correctif pour CQ-4270395
-* La mise à niveau vers AEM 6.4.3 fait que le déploiement de Multi-Site Manager prend du temps. Correctif pour CQ-4271410
+* La suppression d’un noeud enfant dans la Live Copy doit désolidariser la LiveRelationship. Correctif pour CQ-4270395
+* La mise à niveau vers AEM version 6.4.3 fait que le déploiement de Multi-Site Manager prend beaucoup de temps. Correctif pour CQ-4271410
 
 **Vulnérabilité**
 
@@ -680,7 +684,7 @@ Voici quelques-uns des points forts d’AEM 6.4.5.0 :
 
 **Formulaires**
 
-Les principaux points forts d&#39;AEM Forms 6.4.5.0 sont les suivants :
+Les principaux points forts d’AEM 6.4.5.0 forms sont les suivants :
 
 **Package de modules complémentaires Forms**
 
@@ -690,7 +694,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.5.0 sont les suivants :
 
 **Forms - Intégration du serveur principal**
 
-* Activation de la prise en charge d’Active Directory Federation Services (ADFS) v3.0 pour l’intégration sur site de Microsoft Dynamics. NPR-30003, NPR-29484 : correctif pour CQ-4270586
+* Activation de la prise en charge de Principale Directory Federation Services (ADFS) v3.0 pour l’intégration sur site de Microsoft Dynamics. NPR-30003, NPR-29484 : correctif pour CQ-4270586
 * Le service de préremplissage échoue en raison d’un délai d’exécution prolongé du module d’intégration des données AEM Forms. NPR-28997 : correctif pour CQ-4265988
 * La demande de service Web SOAP est incorrecte dans AEM Forms. NPR-29013 : correctif pour CQ-4265443
 * Aucun message d’erreur ne s’affiche lors du test du service SOAP en cas de valeur de date incorrecte. Correctif pour CQ-4265445
@@ -731,9 +735,9 @@ Les principaux points forts d&#39;AEM Forms 6.4.5.0 sont les suivants :
 
 **Pack de fonctionnalités inclus**
 
-**Ressources**
+**Assets**
 
-* Activation de la prise en charge du Gestionnaire de sites multiples pour les ressources. Pour plus d’informations, consultez [Réutilisation des ressources à l’aide du gestionnaire de sites multiples pour  Assets](/help/assets/reuse-assets-using-msm.md). NPR-26450 : correctif pour CQ-4259922
+* Activation de la prise en charge de Multi Site Manager pour Assets. Pour plus d’informations, consultez [Réutilisation des ressources à l’aide du gestionnaire de sites multiples pour  Assets](/help/assets/reuse-assets-using-msm.md). NPR-26450 : correctif pour CQ-4259922
 
 **Lots OSGI et packages de contenu inclus**
 
@@ -767,7 +771,7 @@ Voici quelques-uns des points forts d’AEM 6.4.4.0 :
 * Ajout d’une vérification afin d’ignorer les valeurs vides pour les champs multiples d’entrée numérique dans les clientlibs du fragment de contenu.
 * Activation de la prise en charge de l’API Microsoft Translator Text v3.
 
-**Ressources**
+**Assets**
 
 * Migration de l’intégration ACP-Stock vers AEM 6.4.4.0 NPR-27632
 * La publication ultérieure d’un dossier de ressources vide avec des sous-dossiers entraîne la disparition des sous-dossiers. NPR-27558 : correctif pour CQ-4254701
@@ -791,7 +795,7 @@ Voici quelques-uns des points forts d’AEM 6.4.4.0 :
 * LiveRelationshipManagerImpl renvoie des exceptions lorsque cq:master est vide ou non valide. NPR-28590 : correctif pour CQ-4263115
 * Le workflow &quot;Demande de suppression&quot; prêt à l’emploi ne supprime pas correctement les pages. NPR-28668 : correctif pour CQ-4263195
 * L’interface utilisateur État de la relation n’affiche pas les valeurs d’année ou d’horodatage appropriées pour les champs coral-datepicker associés. NPR-28666 : correctif pour CQ-4263661
-* Cross-site scripting (XSS) dans SuggestionHandler pour la version 6.4. NPR-28693 : correctif pour CQ-4253821
+* Cross-site scripting (XSS) dans SuggestionHandler pour 6.4. NPR-28693 : Correctif pour CQ-4253821
 * Déplacer le dossier de siteadmin se termine en mémoire insuffisante et rend AEM indisponible. NPR-28346 : correctif pour CQ-4261398
 * Les configurations de déploiement LiveCopy MSM sont perdues après la mise à jour. NPR-28311 : correctif pour CQ-4258705
 * Impossible de faire défiler au-delà de 40 configurations de plan directeur. NPR-27640 : correctif pour CQ-4239166
@@ -871,7 +875,7 @@ Voici quelques-uns des points forts d’AEM 6.4.4.0 :
 
 * Améliorations de l’utilisation et parité des fonctionnalités avec Assets pour les fragments de contenu. Correctif pour CQ-4253883
 
-**Communautés**
+**Communities**
 
 * Mettez à niveau les bibliothèques d’amorçage vulnérables vers la version 3.4 et de l’éditeur de texte vers la version 4.5.11. NPR-28490 : Correctif pour CQ-4257511
 * L&#39;annulation des modes de modification ne rétablit pas la pièce jointe supprimée. NPR-27902 : correctif pour CQ-4255150
@@ -881,7 +885,7 @@ Voici quelques-uns des points forts d’AEM 6.4.4.0 :
 * Une erreur est générée lors de la recherche de caractères spéciaux tels que ( , +, ? dans la recherche rapide. NPR-28213 : correctif pour CQ-4260969
 * Créez un groupe &quot;administrateurs spécifiques à la communauté&quot; pour que les utilisateurs puissent modifier et créer le site de la communauté approprié. NPR-27731
 * Ajout d’une logique pour que l’événement clavier ouvre la vidéo. NPR-27726 : correctif pour CQ-4254026
-* Activation de la navigation au clavier pour les composants d’activation d’AEM Communities lors de la publication. NPR-27728 : correctif pour CQ-4254028
+* Activation de la navigation au clavier pour les composants d’activation d’AEM Communities sur Publier. NPR-27728 : correctif pour CQ-4254028
 * Ajout d’un libellé aria pour le bouton d’affichage sous forme de liste ou de cartes. NPR-27727 : correctif pour CQ-4254027
 * Gestion des sessions de résolveur de ressources ouvertes dans Social - Communities. NPR-27721 : correctif pour CQ-4258714
 
@@ -896,7 +900,7 @@ Voici quelques-uns des points forts d’AEM 6.4.4.0 :
 **Social**
 
 * Le commentaire publié sur la page suivante est surligné en jaune chaque fois qu’un nouveau commentaire est publié. Correctif pour CQ-4261359
-* Impossible de supprimer les commentaires dans le contenu créé par l’utilisateur à l’aide de l’API. NPR-28075 : correctif pour CQ-4261135
+* Impossible de supprimer les commentaires dans le contenu généré par l’utilisateur à l’aide de l’API. NPR-28075 : correctif pour CQ-4261135
 * AbstractNotificationOperationService provoque ClassCastException. Correctif pour CQ-4260456
 * Supprimez la référence au cloud SCORM (Shareable Content Object Reference Model) dans le lecteur. Correctif pour CQ-4260779
 
@@ -936,7 +940,7 @@ Voici quelques-uns des points forts d’AEM 6.4.4.0 :
 
 **Formulaires**
 
-Les principaux points forts d&#39;AEM Forms 6.4.4.0 sont les suivants :
+Les principaux points forts d’AEM 6.4.4.0 forms sont les suivants :
 
 * Ajout de la prise en charge de l’enregistrement des API Document Security pour la signature et la certification en tant que transactions.
 
@@ -955,7 +959,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.4.0 sont les suivants :
 * Le formulaire adaptatif n’utilise pas l’éditeur de texte enrichi, mais charge ses bibliothèques.  NPR-27759 : correctif pour CQ-4259193
 * La redirection vers l’URL ne fonctionne pas pour les formulaires adaptatifs incorporés dans une page AEM Sites. NPR-27620 : correctif pour CQ-4239287
 * Impossible de définir la valeur entre les champs des fragments chargés en différé d’un formulaire adaptatif. NPR-28320 : correctif pour CQ-4262345
-* Le formulaire adaptatif n’utilise pas l’éditeur de texte enrichi, mais charge ses bibliothèques.  NPR-28001 : correctif pour CQ-4259703, CQ-4259193
+* Le formulaire adaptatif n’utilise pas l’éditeur de texte enrichi, mais charge ses bibliothèques.  NPR-28001 : Correctif pour CQ-4259703, CQ-4259193
 * La signature tactile ne fonctionne pas pour l’application AEM Forms s’exécutant sur Apple iOS 12.1. NPR-28497 : Correctif pour CQ-4261765
 * Problèmes de création d’action Envoyer avec &quot;Forms Workflow&quot; Classic dans la version 6.4. Correctif pour CQ-4252740
 * Suppression des blocs de gestion des erreurs et du stockage tmp. NPR-28806 : correctif pour CQ-4264441
@@ -993,7 +997,7 @@ Un lot reste à l’état installé après l’installation du package de gestio
 
 **Forms - Designer**
 
-* Certaines images de JPEG dans un modèle XDP ne s’affichent pas correctement.  NPR-26702 : correctif pour LC-3917457
+* Certaines images de JPEG dans un modèle XDP ne s’affichent pas correctement.  NPR-26702 : Correctif pour LC-3917457
 
 **Forms - Workflow**
 
@@ -1043,7 +1047,7 @@ Voici quelques-uns des points forts d’AEM 6.4.3.0 :
 * Amélioration de la gestion des éléments d’espace réservé (mode Carte et mode Liste) lors de la sélection.
 * Ajout de la prise en charge de l’authentification Adobe IMS et du Admin Console pour Managed Services.
 
-**Ressources**
+**Assets**
 
 * Le workflow Ressources de mise à jour de gestion des actifs numériques n’extrait pas de références à partir de fichiers INDD si l’option Découple IDS est activée. NPR-26243; Correctif pour CQ-4250933
 * Le message de réussite ne s’affiche pas lorsque des ressources sont publiées avec l’éditeur en bloc de ressources. NPR-26252; Correctif pour CQ-4251688.
@@ -1069,7 +1073,7 @@ Voici quelques-uns des points forts d’AEM 6.4.3.0 :
 * Lorsqu’un caractère spécial est ajouté à la fenêtre de l’éditeur de texte enrichi, la fenêtre fait défiler la fenêtre vers le haut. NPR-26435 : correctif pour CQ-4249869
 * Questions de caching ou de non caching de segment.js dans le contexte du client. NPR-26622 : correctif pour CQ-4253486
 * Lorsqu’une règle enfant est activée de l’instance de création vers l’instance de publication, l’instance de publication cesse de fonctionner. NPR-26601 : correctif pour CQ-4253588
-* En cas de combinaison de l’éditeur de texte enrichi avec plusieurs champs, l’erreur « Uncaught TypeError: fieldAPI.getName is not a function at foundation.js » se produit. NPR-27146 : correctif pour CQ-4253155
+* Lorsque l’éditeur de texte enrichi est associé à plusieurs champs, le TypeError non intercepté : fieldAPI.getName n’est pas une fonction lorsque l’erreur foundation.js se produit. NPR-27146 : correctif pour CQ-4253155
 * L’intégration Salesforce ne peut pas utiliser la configuration du proxy. NPR-27244 : correctif pour CQ-4245300
 * Lorsque vous planifiez l’activation d’une page à l’aide de l’option Gérer la publication pour une date ultérieure et que vous passez en mode Liste, l’icône de calendrier est absente. NPR-26974 : correctif pour CQ-4239206
 * Les utilisateurs ne peuvent pas modifier les autorisations de groupe d’utilisateurs fermé dans les propriétés de la page. NPR-27138 : Correctif pour CQ-4256089 Impossible de modifier les balises par balisage. NPR-26957 : correctif pour CQ-4254858
@@ -1079,7 +1083,7 @@ Voici quelques-uns des points forts d’AEM 6.4.3.0 :
 * Lorsqu’une page est déplacée vers un nouvel emplacement sans la renommer, l’historique des versions de la page est perdu. NPR-26706 : correctif pour CQ-4254025
 * Les URL de l’éditeur d’administration des fragments d’expérience n’autorisent pas les superpositions. NPR-26319 : correctif pour CQ-4252156
 * Lorsqu’une page est créée avec un modèle contenant un fragment d’expérience vide et publiée, la page ne s’ouvre pas et une erreur DefaultSlingScript se produit. NPR-26305 : correctif pour CQ-4252460
-* Lorsque data-sly-use est utilisé avec des classes portant le même nom, un code non conforme est généré. NPR-27282 : correctif pour Sling-7581
+* Lorsque data-sly-use est utilisé avec des classes portant le même nom, un code non conforme est généré. NPR-27282 : Correctif pour Sling-7581
 * Après l’installation du SP de mise à niveau, les sites ont une configuration de déploiement de plan directeur vide. NPR-27609 : correctif pour CQ-4257078
 
 **DAM - Brand Portal**
@@ -1130,9 +1134,9 @@ Voici quelques-uns des points forts d’AEM 6.4.3.0 :
 
 * Le journal d’audit reste ouvert avec de principales sessions qui continuent à augmenter constamment avec ~750 chaque jour. NPR-27062 : correctif pour CQ-4241350
 
-**Communautés**
+**Communities**
 
-* Les publications et les réponses du forum sont ajoutées au haut de la deuxième page et, une fois actualisées, la publication se déplace à l’emplacement correct en haut de la première page. NPR-27342 : correctif pour CQ-4247338
+* Les publications et réponses du forum sont ajoutées en haut de la deuxième page. Lorsqu’elles sont actualisées, la publication se déplace à l’emplacement approprié en haut de la première page. NPR-27342 : correctif pour CQ-4247338
 * Les liens vers toutes les ressources déplacent le chemin d’accès au contexte (/aempublish) après le défilement. NPR-26982 : correctif pour CQ-4254345
 * Les groupes ajoutés ne sont pas visibles dans la liste déroulante Chefs de communauté, Modérateurs de communauté et Membre privilégié lors de la modification d’un site publié. NPR-27190 : correctif pour CQ-4258574
 * Seuls 10 groupes sont répertoriés dans la page des ressources d’activation, même si la pagination est activée pour la liste des groupes. NPR-26934 : correctif pour CQ-4252985
@@ -1161,7 +1165,7 @@ Voici quelques-uns des points forts d’AEM 6.4.3.0 :
 * Toutes les balises affectées ne peuvent pas être supprimées d’un article de blog. NPR-26851 : correctif pour CQ-4253359
 * Les relations avec le contenu créé par l’utilisateur ne sont pas supprimées lors de la suppression du contenu créé par l’utilisateur. NPR-27630 : correctif pour CQ-4258706
 * Le lien pour les réponses ne fonctionne pas lors d’un clic sur la ligne sur les réponses du forum. NPR-27623 : correctif pour CQ-4256138
-* La limite des abonnements utilisateur est limitée à 1000. NPR-27614 : correctif pour CQ-4254689
+* La limite d’abonnement de l’utilisateur est limitée à 1 000. NPR-27614 : correctif pour CQ-4254689
 * La modification d’un site et des rôles dans les paramètres de rôle renvoie une exception de pointeur nul. NPR-27377; Correctif pour CQ-4255909
 
 **Traduction**
@@ -1197,7 +1201,7 @@ Voici quelques-uns des points forts d’AEM 6.4.3.0 :
 
 **Formulaires**
 
-Les principaux points forts d&#39;AEM Forms 6.4.3.0 sont les suivants :
+Les principaux points forts d’AEM 6.4.3.0 forms sont les suivants :
 
 * Activation de la prise en charge d’un tableau/d’une liste d’objets avec la substitution d’entité dynamique.
 * Activation de la conformité FIPS pour le workflow étendu Reader dans Digital Signature, Reader Extensions, CryptoProvider et TrustStore.
@@ -1307,7 +1311,7 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 * Mise à jour de GCC vers la dernière version.
 * Déplacez SAML vers une nouvelle synchronisation IDP externe.
 
-**Ressources**
+**Assets**
 
 * La génération de sous-ressources pour le fichier pptx ne contient aucune image ni miniature. NPR-24286 : correctif pour CQ-4217986
 * migrateAllAssets - Ajoutez la prise en charge du traitement par lots et améliorez la méthode d’AEM qui ajoute l’UUID aux anciennes ressources. NPR-24861 : correctif pour CQ-4242863 et CQ-4247874
@@ -1334,7 +1338,7 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 * La requête du fichier datasource.jsp sur AEM 6.2 diffère d’AEM 6.4. NPR-24968 : Correctif pour CQ-4244235
 * (IU classique) Impossible d’ajouter des balises aux pages. NPR-25255, NPR-25612 : correctif pour CQ-4249615
 * Spécifications du langage de modèle de HTML 1.4 - Fonctionnalités rétroportées à AEM 6.4.2.0 NPR-24585
-* Héritage incorrect sur le composant local après la copie d’une page Live Copy. NPR-25920 : correctif pour CQ-4236737, CQ-4248957
+* Héritage incorrect sur le composant local après la copie d’une page Live Copy. NPR-25920 : Correctif pour CQ-4236737, CQ-4248957
 * L’heure d’activation/de désactivation est stockée dans crx/de, mais ne récupère pas la même chose dans la console de l’interface utilisateur des propriétés de page. NPR-25154 : correctif pour CQ-4243431
 * Styles Le système rompt les valeurs de propriétés initiales de la boîte de dialogue. NPR-25648 : correctif pour CQ-4250073
 * Lors de la définition d’une propriété cq:tagName dans un noeud cq:htmlTag , le nom de la balise n’est pas pris en compte si le composant est inclus via JSP. NPR-24154 : correctif pour CQ-4244120
@@ -1345,17 +1349,17 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 * L’éditeur de texte enrichi envoie des données non rognées et ajoute des espaces supplémentaires. NPR-25312 : correctif pour CQ-4249006
 * Lors de l’ouverture du composant en mode intégré, les modules externes chargés précédemment ne sont pas visibles la seconde fois. NPR-24610 : correctif pour CQ-4236850
 * Le chargement d’un fichier XF dans la vue de l’éditeur par copier/coller ne charge pas automatiquement la variation principale. NPR-24841 : correctif pour CQ-4248037
-* Une structure de HTML incorrecte dans siteadmin / damadmin rompt IE11. NPR-24686 : correctif pour CQ-4246363, CQ-4248402
+* Une structure de HTML incorrecte dans siteadmin / damadmin rompt IE11. NPR-24686 : Correctif pour CQ-4246363, CQ-4248402
 * (Assistant Gestion de publication) Le calendrier de la date d’activation à l’étape Options ne s’ouvre pas après certaines actions à l’étape Portée . NPR-25681 : correctif pour CQ-4250205
 * L’UI classique ne permet pas de modifier le CUG pour des raisons d’obsolescence. NPR-25075 : correctif pour 4241823
 * Option de création non disponible pour créer des fragments d’expérience. NPR-26053 : correctif pour CQ-4249923
 * La variation XF est activée deux fois par conséquent, générant des identifiants en double pour le même élément. NPR-24179 : correctif pour CQ-4245093
-* Le tableau Foundation est vulnérable au cross-site scripting par stockage. NPR-25185 : correctif pour CQ-4240760
+* La table Foundation est vulnérable aux scripts intersites stockés. NPR-25185 : correctif pour CQ-4240760
 * Erreur &quot;Valeur de sélecteur de récursivité non valide&quot; lors de la migration d’un composant d’AEM 6.2.1.13 vers AEM 6.4. NPR-24146
 
 **Gestion de contenu Web - Éditeur de page**
 
-* L’empilement de plusieurs parsys en raison de requêtes longues (plus de 6) provoque un ralentissement d’AEM. Correctif pour CQ-4240247
+* Plusieurs paramètres empilés en raison de requêtes longues (plus de 6) rendent AEM léthargique. Correctif pour CQ-4240247
 * Erreur JS lors de l’ajout de cq:tagName vide dans le noeud cq:htmlTag . Correctif pour CQ-4251852
 * Mettez à jour EditableActions en fonction de la relocalisation columnClassNames . Correctif pour CQ-4250781
 * Exposez les chemins des ressources et des modèles à l’aide d’une seule propriété et d’un seul attribut. Correctif pour CQ-4251255
@@ -1382,7 +1386,7 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 * Rétroportage proactif pour les correctifs granite.platform.login afin d’améliorer l’accessibilité. NPR-25176 : Correctif pour Granite 21746 et Granite-21309
 * (AEM 6.4) Erreur lors de la recréation du package et de sa réinstallation. NPR-25173 : correctif pour CQ-4247939
 * Suppression de la valeur par défaut MERGE_PRESERVE aclHandling. NPR-24593 : correctif pour Granite-21889
-* Le type de contenu n’est pas proposé et est absent de la réponse après l’application de deux fois de ContentDispositionFilter. NPR-24175 : correctif pour Sling-7525
+* Le type de contenu n’est pas proposé et est absent de la réponse après l’application de deux fois de ContentDispositionFilter. NPR-24175 : Correctif pour Sling-7525
 * État du gestionnaire de modules incorrect après la mise à niveau vers AEM branche 6.4. NPR-24551 : correctif pour Granite-21750
 * Instance AMS - Analyse des logs d’erreur. Correctif pour CQ-4249567
 
@@ -1395,12 +1399,12 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 
 * (Ciblage) Erreur du composant Texte lors du ciblage. Correctif pour CQ-4233343
 
-**Communautés**
+**Communities**
 
 * (Bibliothèque de fichiers) Le téléchargement de ressources avec des espaces vides entraîne des problèmes de format. NPR-24260 : correctif pour CQ-4245159
-* Correctifs de plusieurs problèmes affectant Adobe Social. NPR-24247 : correctif pour CQ-4245054, CQ-4245120, CQ-4245296
+* Correctifs de plusieurs problèmes Adobe Social. NPR-24247 : correctif pour CQ-4245054, CQ-4245120, CQ-4245296
 * Le défilement infini pour la console des membres et des groupes échoue au cas où la publication de l’auteur s’exécute sur différents chemins de contexte. NPR-24437 : correctif pour CQ-4246013
-* La publication ne retourne pas à l’état sans réponse même en supprimant de l’état répondu et le score ne diminue pas. NPR-24419 : correctif pour CQ-4245797, CQ-4245932
+* La publication ne retourne pas à l’état sans réponse même en supprimant de l’état répondu et le score ne diminue pas. NPR-24419 : Correctif pour CQ-4245797, CQ-4245932
 * Les événements ajoutés à l’aide de la fonctionnalité Calendrier dans les communautés génèrent des valeurs incorrectes. NPR-24883 : correctif pour CQ-4244056
 * (Forum des communautés) Problèmes liés au comportement de clic de pagination et de chargement de page. NPR-24880 : correctif pour CQ-4246109
 * (Chrome) Les conversions du fuseau horaire échouent sur les événements de communauté. NPR-24881 : correctif pour CQ-4247115
@@ -1421,20 +1425,20 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 * (Forum Q&amp;R) Impossible d’accéder à la page précédente lors de l’ouverture d’un lien direct vers un commentaire. NPR-26069 : correctif pour CQ-4251699
 * Le chargement d’une image dans Créer un groupe ne fonctionne pas sur mobile. NPR-26172 : correctif pour CQ-4251703
 * (Messagerie) Lors de l’utilisation de DSRP, le nom du destinataire du message est toujours affiché comme &quot;Inconnu&quot;. NPR-26056 : correctif pour CQ-4251397
-* Le libellé de statut d’achèvement de la ressource Scorm d’activation apparaît vide dans l’interface utilisateur. NPR-26034 : correctif pour CQ-4249994
+* Le libellé d’état d’achèvement de la ressource Scorm d’activation apparaît vide dans l’interface utilisateur. NPR-26034 : correctif pour CQ-4249994
 * Lors de la création d’un groupe de communautés, un groupe de communautés en double est créé sur un cluster mongoMK principal/principal. NPR-26032 : correctif pour CQ-4245884
 * (Auteur) L’assistant de création de groupe prend trop de temps pour charger/créer un groupe dans l’assistant. NPR-26031 : correctif pour CQ-4244966
 * Le parsys disparaît lors de l’ajout d’une instruction d’inclusion dans le script hbs. NPR-25908 : correctif pour CQ-4250489
 * Si l’option « Autoriser les privilégiés » est arrivée, les membres privilégiés ne devraient pouvoir composer que pour les utilisateurs qui sont membres de la communauté. NPR-25877 : correctif pour CQ-4248450
 * Liens profonds bloqués pour activation. NPR-25966 : correctif pour CQ-4251478
-* La pagination du forum n’est pas mise à jour dynamiquement lors de la suppression des réponses. NPR-25970 : correctif pour CQ-4248975, CQ-4252843
+* La pagination du forum n’est pas mise à jour dynamiquement lors de la suppression des réponses. NPR-25970 : Correctif pour CQ-4248975, CQ-4252843
 * Le défilement et la mise en surbrillance automatiques ne fonctionnent pas sur les événements de calendrier et de fichier en cas de commentaires imbriqués. NPR-25958 : correctif pour CQ-4251471
 * (DSRP) Les performances des liens directs/profonds se dégradent avec une grande quantité de contenu généré par l’utilisateur. NPR-25957 : correctif pour CQ-4251470
 * Impossible de modifier les propriétés des membres autorisés et des membres privilégiés. NPR-26014 : correctif pour CQ-4244592
 * Tout marquer comme lu réinitialise les compteurs de notification pour toutes les pages de la communauté. NPR-25931 : correctif pour CQ-4248612
 * Échec de la modification des services informatiques pour DSRP. NPR-25929 : correctif pour CQ-4251382
 * Échec des e-mails en raison de NPE lors de la création de modèles d’email. NPR-26039 : correctif pour CQ-4250962
-* Problèmes de thread du forum lors de l’incorporation d’images avec une résolution très élevée. NPR-26037 : correctif pour CQ-4244453, CQ-4253099
+* Problèmes de thread du forum lors de l’incorporation d’images avec une résolution très élevée. NPR-26037 : Correctif pour CQ-4244453, CQ-4253099
 * L’heure affiche les commutateurs lorsque le fuseau horaire du serveur diffère du fuseau horaire de l’utilisateur. NPR-26036 : correctif pour CQ-4248751
 * Le fait de joindre deux fois un fichier portant le même nom à une publication de forum entraîne une erreur du serveur. NPR-24172 : correctif pour CQ-4244367
 * Correctifs de performances de backport : pagination de groupe sur l’auteur et la publication, recherche de groupe sur l’auteur, Eviter la sérialisation des réponses pour le journal, le calendrier et l’idéation et chargement différé pour obtenir le bouton d’adhésion à un groupe (inviter/annuler l’invitation) pour chaque groupe lors de l’affichage de la page de liste de groupes. NPR-24538 : correctif pour CQ-4246515
@@ -1538,8 +1542,8 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 
 **Granite**
 
-* Le fait de taper dans le lot SymbolicName entraîne la duplication du lot. Correctif pour Granite-22155
-* CUGConfiguration peut ne pas sélectionner CugExclude. Correctif pour Granite-21109
+* Le fait de taper dans le lot SymbolicName entraîne la duplication du lot. Correctif pour Granite - 22155
+* CUGConfiguration peut ne pas sélectionner CugExclude. Correctif pour Granite - 21109
 * Le redémarrage d’Adobe Granite Workflow Core exécute à nouveau les étapes du workflow à partir du milieu, ce qui crée des workflows inutiles. NPR-25057 : correctif pour Granite-22218
 * JcrResourceBundle ne prend pas correctement en charge plusieurs noms de base. NPR-25245 : correctif pour Granite-22317
 * Lors de l’installation des packages de contenu, les listes de contrôle d’accès sont regroupées par entité de sécurité, ce qui entraîne la rupture du modèle d’autorisation. NPR-24583 : correctif pour Granite-21591
@@ -1547,7 +1551,7 @@ Voici quelques-uns des points forts d’AEM 6.4.2.0 :
 
 **Formulaires**
 
-Les principaux points forts d&#39;AEM Forms 6.4.2.0 sont les suivants :
+Les principaux points forts d’AEM 6.4.2.0 forms sont les suivants :
 
 * Ajout d’une nouvelle propriété pour que les files d’attente soient mises à jour sans actualiser le navigateur.
 * Ajout de la possibilité pour l’utilisateur d’utiliser le même fichier WSDL pour plusieurs services.
@@ -1573,7 +1577,7 @@ Les principaux points forts d&#39;AEM Forms 6.4.2.0 sont les suivants :
 * Lorsqu’un appel à un service Web est effectué avec un formulaire HTML5 ouvert dans le client, il échoue et un message d’erreur est renvoyé. NPR-26048 : correctif pour CQ-4244716
 * Problème lors de l&#39;appel du service dans AEM&#39;application Windows 6.3. NPR-26468 : Correctif pour CQ-4252341
 
-**Forms mobile**
+**Mobile Forms**
 
 * (Jeu de formulaires) Problème de validation des champs SSN et Mobile lors de la prévisualisation. NPR-24458 : correctif pour CQ-4244983
 * Les données ne s’affichent pas avec le préremplissage des champs multilignes dans l’aperçu de HTML. NPR-24549 : correctif pour CQ-4244212
@@ -1654,9 +1658,9 @@ Les principaux points forts d&#39;AEM Forms 6.4.2.0 sont les suivants :
 
 **Pack de fonctionnalités inclus**
 
-**Ressources**
+**Assets**
 
-* Ajout [intégration avec Adobe Stock](/help/assets/aem-assets-adobe-stock.md) afin que les utilisateurs puissent rechercher, prévisualiser, enregistrer et acquérir sous licence des ressources Adobe Stock directement à partir de l’interface utilisateur d’AEM. Pour plus d’informations, voir [Utilisation de ressources Adobe Stock avec des ressources AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779 : correctif pour CQ-30857
+* Ajout [intégration avec Adobe Stock](/help/assets/aem-assets-adobe-stock.md) afin que les utilisateurs puissent rechercher, prévisualiser, enregistrer et acquérir sous licence des ressources Adobe Stock directement à partir de l’interface utilisateur d’AEM. Pour plus d’informations, voir [Utilisation de ressources Adobe Stock avec des ressources AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr). NPR-15779 : correctif pour CQ-30857
 * Ajout de la prise en charge des schémas conditionnels dynamiques. Pour plus d’informations, voir [Métadonnées en cascade](/help/assets/cascading-metadata.md). NPR-25189 : correctif pour CQ-4237413
 * Activation de l’option &quot;Téléchargement de ressource&quot; sur les fragments de contenu. Pour plus d’informations, voir [Rapports de ressources](/help/assets/asset-reports.md). NPR-25186 : correctif pour CQ-4237410
 * Possibilité de définir un schéma de métadonnées pour les dossiers de ressources. Pour plus d’informations, voir [Schéma de métadonnées de dossier](/help/assets/folder-metadata-schema.md) et se référer à ses [Paramètres de configuration](#configuration-settings-required-for-npr) post installation d’AEM 6.4.2.0. NPR-21268 : correctif pour CQ-4221574
@@ -1682,7 +1686,7 @@ Liste des packages de contenu inclus dans AEM 6.4.2.0
 
 AEM 6.4.1.0 est une mise à jour importante qui comporte des améliorations et correctifs pour les performances, la stabilité, la sécurité et les bogues signalés par les clients depuis le lancement d’AEM 6.4 en avril 2018.
 
-AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractéristiques du Service Pack 1 :
+AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici quelques points forts du Service Pack :
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.8.3.
 * Ajout de balises intelligentes améliorées.
@@ -1702,7 +1706,7 @@ AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractér
 * Rétroportage proactif pour les correctifs de platform.clientlibs.
 * Prévention de l’exécution automatique des scripts lorsqu’il n’y a aucune entrée au type de données explicite (résout CVE-2015-9251).
 
-**Ressources**
+**Assets**
 
 * La valeur de la liste déroulante en cascade s’affiche vide lors de la réouverture de la page des propriétés de la ressource. NPR-23042 : correctif pour CQ-4238761
 * Les liens partagés sur la page mylinkshare et les liens vers la page ne sont pas disponibles pour l’utilisateur non-administrateur NPR-23044 : Correctif pour CQ-4239004
@@ -1748,10 +1752,10 @@ AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractér
 
 **Intégration**
 
-* Résolveur de ressources non fermé dans com.day.cq.analytics.sitecatalyst. NPR-22340 : correctif pour CQ-4236515
+* ResourceResolver non fermé dans com.day.cq.analytics.sitecatalyst. NPR-22340 : correctif pour CQ-4236515
 * TargetContentImpl ralentit AEM pendant les requêtes longues. NPR-22359 : correctif pour CQ-4236907
 * Le moteur Target (mbox.js, at.js) n’utilise pas d’URL mal formées et utilise des URL contenant deux-points qui peuvent rencontrer des problèmes avec certains déploiements. NPR-22434 : correctif pour CQ-4237854
-* En mode Target, les auteurs peuvent modifier un composant hérité du plan directeur sans annuler l’héritage. NPR-22865 : correctif pour CQ-4237907
+* En mode Cible, les auteurs peuvent modifier un composant hérité du plan directeur sans annuler l’héritage. NPR-22865 : correctif pour CQ-4237907
 * (Personnalisation) Les icônes sont déformées lors du passage en mode Carte. NPR-23373, NPR-23374 : correctif pour CQ-4240018, CQ-4240019
 * (Personnalisation) Audience Console n’affiche pas les types nt:folder. NPR-23375 : correctif pour CQ-4242293
 * Lorsqu’un composant est ciblé sur une instance de publication, le scintillement apparaît pour illustrer l’expérience par défaut avant l’expérience ciblée. NPR-23415 : correctif pour CQ-4242038
@@ -1784,7 +1788,7 @@ AEM 6.4.1.0 peut être installé sur AEM 6.4 GA. Voici les principales caractér
 * Open Project KPI : dégradation des performances à mesure que d’autres projets sont créés. NPR-23840 : correctif pour CQ-4238392
 * Le lanceur de workflow ne peut pas accepter la valeur TypeHint de la chaîne. NPR-23863 : correctif pour CQ-4238356
 
-**Communautés**
+**Communities**
 
 * Vulnérabilités de sécurité dans la version 1.0 de Handlebars. NPR-23636 : correctif pour CQ-4243055
 * L’autorisation en bloc des messages marqués ne fonctionne pas. NPR-23867 : correctif pour CQ-4243962
@@ -1983,7 +1987,7 @@ Les principaux aspects pour AEM Forms sont les suivants :
 * L’entrée pour les formulaires enregistrés et envoyés est renseignée dans crx/de malgré la configuration de base de données fournie dans la configuration des brouillons et des envois de Forms Portal. Correctif pour CQ-4240726
 * (Search &amp; Lister) La valeur fixe du titre de la recherche avancée doit fonctionner comme contenir plutôt que comme égale. Correctif pour CQ-4245499
 
-**Forms mobile**
+**Mobile Forms**
 
 * Le champ de date chevauche dans Mobile Forms. Correctif pour CQ-4242256
 * L’envoi de formulaire pour Mobile Forms doit être consigné en tant que transaction à l’aide du service d’enregistrement de transaction. Correctif pour CQ-4246166
@@ -2059,12 +2063,12 @@ Les principaux aspects pour AEM Forms sont les suivants :
 
 **Forms Designer**
 
-* Ajout de la prise en charge de PDF/UA aux formulaires XML générés via Designer et Output Service. NPR-23022
-* Les hyperliens en ligne définis dans le Concepteur ne sont pas balisés et ne contiennent pas de texte de remplacement lors de l’enregistrement au format PDF depuis le Concepteur. NPR-23023
+* Ajoutez la prise en charge de PDF/UA aux formulaires XML générés via Designer et Output Service. NPR-23022
+* les liens hypertexte intégrés définis dans Designer ne sont pas balisés ni ne comportent de texte de remplacement lors de l’enregistrement en tant que PDF à partir de Designer. NPR-23023
 
 **Pack de fonctionnalités inclus**
 
-**Ressources**
+**Assets**
 
 * Ajout de la fonctionnalité Balises intelligentes améliorées. Pour plus d’informations, voir [Balises intelligentes améliorées](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951 : correctif pour CQ-4234883
 * Ajout de références AEM Assets dans InDesign. Pour plus d’informations, voir [Références AEM Assets en InDesign](/help/assets/managing-linked-subassets.md). NPR-23386
@@ -2087,7 +2091,7 @@ Liste des packages de contenu inclus dans AEM 6.4.1.0
 
 ### Installation de la version 6.4.8.0 {#install}
 
-#### Conditions requises {#setup-requirements}
+#### Configuration requise {#setup-requirements}
 
 <!--
 
@@ -2101,21 +2105,21 @@ Liste des packages de contenu inclus dans AEM 6.4.1.0
 
 >[!CAUTION]
 >
->Utilisateurs ayant installé Feature Packs sur AEM 6.4 : les Feature Packs en option fournis par Adobe ont des dépendances sur la version et le Service Pack. Si vous avez installé un Feature Pack, contactez l’équipe d’assistance clientèle d’AEM pour valider la compatibilité de ces Feature Packs avec ce Service Pack pour AEM 6.4.
+>Pour les clients dont les Feature Packs sont installés sur AEM 6.4. Les Feature Packs facultatifs fournis par Adobe ont des dépendances sur la version publiée et le Service Pack. Si vous avez installé un Feature Pack, contactez l’équipe d’assistance AEM pour valider la compatibilité de ces Feature Packs avec ce Service Pack pour AEM 6.4.
 
 * AEM 6.4.8.0 nécessite AEM 6.4. Pour plus d’informations, reportez-vous à la section [documentation de mise à niveau](../sites-deploying/upgrade.md).
 * Le téléchargement du Service Pack est disponible sur [Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) pour téléchargement.
-* Lors d’un déploiement avec MongoDB et plusieurs instances, installez AEM 6.4.8.0 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.
-* Avant d’installer le pack de service, veillez à disposer d’un instantané ou d’une nouvelle sauvegarde de votre instance AEM.
-* Redémarrez l’instance avant l’installation. Cela est nécessaire uniquement lorsque l’instance reste en mode de mise à jour (ce qui est le cas lorsque l’instance vient d’être mise à jour depuis une version antérieure). Toutefois, cela est généralement recommandé si l’instance s’est exécutée pendant longtemps.
+* Sur un déploiement avec MongoDB et plusieurs instances, installez AEM 6.4.8.0 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.
+* Avant d’installer le Service Pack, veillez à disposer d’un instantané ou d’une nouvelle sauvegarde de votre instance AEM.
+* Redémarrez l’instance avant l’installation. Bien que cela ne soit nécessaire que lorsque l’instance est toujours en mode de mise à jour (et c’est le cas lorsque l’instance vient d’être mise à jour à partir d’une version antérieure), il est généralement recommandé que l’instance s’exécute pendant une plus longue période.
 
 >[!NOTE]
 >
->Adobe recommande de ne pas supprimer ni désinstaller le package AEM 6.4.8.0.
+>Adobe ne recommande pas de supprimer ou de désinstaller le package AEM 6.4.8.0.
 
 ### Installation du Service Pack via Package Manager {#install-the-service-pack-via-package-share}
 
-Accomplissez les étapes suivantes pour installer le Service Pack sur une instance 6.4 existante :
+Effectuez les étapes suivantes pour installer le Service Pack sur une instance AEM 6.4 existante :
 
 1. Téléchargez le module à partir de Distribution logicielle.
 
@@ -2123,15 +2127,15 @@ Accomplissez les étapes suivantes pour installer le Service Pack sur une insta
 
 >[!NOTE]
 >
->**La boîte de dialogue sur l’interface utilisateur de Package Manager se ferme parfois de manière impromptue lors de l’installation de la version 6.4.8.0**
+>**La boîte de dialogue de l’interface utilisateur de Package Manager se ferme parfois de manière impromptue lors de l’installation de la version 6.4.8.0**
 >
->Il est donc recommandé d’attendre que les journaux d’erreurs se stabilisent avant d’accéder à l’instance. L’utilisateur doit attendre les journaux spécifiques liés à la désinstallation du lot de mise à jour avant de s’assurer que les installations sont réussies. Cela se produit généralement sur Safari, mais peut se produire par intermittence sur n’importe quel navigateur.
+>Par conséquent, il est recommandé d’attendre que les journaux d’erreurs se stabilisent avant d’accéder à l’instance. L’utilisateur doit attendre les journaux spécifiques liés à la désinstallation du lot de mise à jour avant de s’assurer que les installations sont réussies. Cela se produit généralement sur Safari, mais peut se produire par intermittence sur n’importe quel navigateur.
 
 ### Installation automatique {#auto-installation}
 
-Il existe deux manières d’installer automatiquement AEM 6.4.8.0 dans une instance en cours d’exécution :
+Il existe deux manières d’installer automatiquement AEM 6.4.8.0 dans une instance en cours d’exécution :
 
-A. Placez le package dans le dossier ..*/crx-quickstart/install* pendant que le serveur est en cours d’exécution. Le package est automatiquement installé.
+A. Placez le package dans ..*/crx-quickstart/install* pendant l’exécution du serveur. Le package est automatiquement installé.
 
 B. Utilisez la variable [API HTTP à partir de Package Manager](/help/sites-administering/package-manager.md) - Assurez-vous que vous utilisez `cmd=install&recursive=true` - pour que le package imbriqué soit installé.
 
@@ -2158,29 +2162,29 @@ Pour déterminer la plateforme certifiée pour exécuter cette version d’AEM S
 
 qui copiera les nouveaux paramètres prédéfinis de visionneuse à l’emplacement /conf.
 
-### Installation du module complémentaire AEM Forms {#install-aem-forms-add-on-package}
+### Installation AEM package de module complémentaire Forms {#install-aem-forms-add-on-package}
 
-#### Installation du module complémentaire AEM Forms {#installaemformsaddon}
-
->[!NOTE]
->
->Passez cette étape si vous n’utilisez pas AEM Forms. Les correctifs dans AEM Forms sont fournis dans un module complémentaire distinct.
+#### Installation AEM module complémentaire Forms {#installaemformsaddon}
 
 >[!NOTE]
 >
->AEM 6.4.8.0 inclut une nouvelle version du [package de compatibilité d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr). Si vous utilisez une ancienne version du package de compatibilité AEM Forms et que vous mettez à jour vers AEM 6.4.8.0, installez la dernière version du package de compatibilité AEM Forms après l’installation du package de module complémentaire Forms.
+>Ignorez si vous n’utilisez pas AEM Forms. Les correctifs dans AEM Forms sont fournis par le biais d’un module complémentaire distinct.
 
-1. Vérifiez que vous avez installé le Service Pack AEM.
+>[!NOTE]
+>
+>AEM 6.4.8.0 comprend une nouvelle version de [Package de compatibilité AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr). Si vous utilisez une ancienne version du package de compatibilité AEM Forms et que vous mettez à jour vers AEM 6.4.8.0, installez la dernière version du package de compatibilité AEM Forms après l’installation du package de module complémentaire Forms.
+
+1. Vérifiez que vous avez installé le Service Pack AEM.
 1. Téléchargez le module complémentaire de formulaires correspondant répertorié à l’adresse [Versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour votre système d’exploitation.
 1. Installez le module complémentaire Forms comme décrit dans la section [Installation des packages de modules complémentaires AEM forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
-### Installation du programme d’installation d’AEM Forms JEE {#install-aem-forms-jee-installer}
+### Installation du programme d’installation d’AEM Forms JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
 >Passez cette étape si vous n’utilisez pas AEM Forms sous JEE. Les correctifs dans AEM Forms JEE sont fournis dans un programme d’installation distinct.
 
-Pour plus d’informations sur l’installation du programme d’installation cumulatif pour AEM Forms JEE et la configuration post-déploiement, voir [AEM Forms JEE Patch Installer 0015](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
+Pour plus d’informations sur l’installation du programme d’installation cumulatif pour AEM Forms JEE et la configuration après le déploiement, voir [Programme d’installation du correctif AEM Forms JEE 0015](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
 
 #### Paramètres de configuration requis pour NPR-21268 {#configuration-settings-required-for-npr}
 
@@ -2224,10 +2228,10 @@ Pour utiliser Uber Jar dans un projet Maven, reportez-vous à l’article [Comme
 
 Cette section répertorie les fonctionnalités qui ont été supprimées ou désignées comme obsolètes dans AEM 6.4.
 
-| Zone | Fonctionnalité | Remplacement | Version  |
+| Domaine | Fonctionnalité | Remplacement | Version  |
 |---|---|---|---|
-| Ressources | Gestion de l’action de balise pour les sous-ressources | Aucun remplacement. | AEM 6.4.2.0 |
-| Intégration des Ressources et d’Adobe Creative Cloud | [Le partage de dossiers AEM vers Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) a été introduit dans AEM 6.2 afin de permettre aux créatifs d’accéder aux ressources depuis AEM. Adobe Asset Link, une nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers. Bien que la fonctionnalité soit incluse dans AEM, les clients sont (il est vivement conseillé d’utiliser le remplacement). | Adobe d’Asset Link ou de l’appli de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
+| Ressources | Gestion de l’action de balise pour les sous-ressources | Aucun remplacement | AEM 6.4.2.0 |
+| Intégration d’Assets et de Adobe Creative Cloud | [Le partage de dossiers AEM vers Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) a été introduit dans AEM 6.2 afin de permettre aux créatifs d’accéder aux ressources depuis AEM. Adobe Asset Link, une nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apporte pas d’autres améliorations à la fonctionnalité de partage de dossiers. Bien que la fonctionnalité soit incluse dans AEM, les clients sont (il est vivement conseillé d’utiliser le remplacement). | Adobe d’Asset Link ou de l’appli de bureau. Pour plus d’informations, voir [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) article. | AEM 6.4.4.0 |
 
 ### Problèmes connus {#known-issues}
 
@@ -2267,9 +2271,9 @@ Liste des packages de contenu inclus dans AEM 6.4.8.0
 * [Documentation d’AEM 6.4](https://helpx.adobe.com/fr/support/experience-manager/6-4.html)
 * Abonnement aux [mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
-### Sites restreints {#restricted-sites-new}
+### Sites à accès limité {#restricted-sites-new}
 
-Seuls les clients peuvent accéder à ces sites. Si vous devez y accéder en tant que client, contactez votre gestionnaire de compte Adobe.
+Ces sites sont réservés aux clients. Si vous êtes client et avez besoin d’un accès, contactez votre gestionnaire de compte d’Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/).
 * Mises à jour de produit, correctifs et packages pour des fonctionnalités supplémentaires dans la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).

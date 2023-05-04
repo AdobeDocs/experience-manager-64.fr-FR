@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
 exl-id: 0af2e992-6670-4e31-9d26-ab74c5b9df8e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 99%
+source-wordcount: '1752'
+ht-degree: 96%
 
 ---
 
 # Prise en main de Process Reporting {#getting-started-with-process-reporting}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Process Reporting permet aux utilisateurs d’AEM Forms de demander des renseignements à propos des processus AEM Forms actuellement définis dans le cadre de la mise en œuvre d’AEM Forms. Toutefois, Process Reporting n’accède pas directement aux données à partir du référentiel AEM Forms. Les données sont d’abord publiées dans le référentiel Process Reporting selon un calendrier (*par les services ProcessDataPublisher et ProcessDataStorage*). Les rapports et requêtes de Process Reporting sont ensuite générés à partir des données Process Reporting publiées dans le référentiel. Process Reporting est installé dans le cadre du module Forms Workflow.
 
@@ -52,7 +56,7 @@ Effectuez les étapes suivantes pour modifier le calendrier de publication :
 >
 >Si vous réalisez la mise en œuvre d’AEM Forms sur un cluster, effectuez les étapes suivantes sur chaque nœud du cluster.
 
-#### JBoss Application Server  {#jboss-application-server}
+#### JBoss Application Server {#jboss-application-server}
 
 1. Arrêtez l’instance du serveur AEM Forms.
    * (Pour Windows) Ouvrez le fichier `[*JBoss root*]/bin/run.conf.bat` dans un éditeur.
@@ -92,9 +96,9 @@ Effectuez les étapes suivantes pour modifier le calendrier de publication :
 1. Arrêtez l’instance du serveur AEM Forms.
 1. Connectez-vous à la console d’administration WebLogic. L’adresse par défaut de la console d’administration WebLogic `https://[hostname]:[port]/console`.
 
-1. Sous Change Center, cliquez sur **Lock &amp; Edit**.
+1. Sous Centre des modifications, cliquez sur **Verrouiller et modifier**.
 
-1. Sous Domain Structure, cliquez sur **Environment** > **Servers** et, dans le volet de droite, cliquez sur le nom du serveur géré.
+1. Sous Domain Structure, cliquez sur **Environnement** >  **Serveurs** et, dans le volet de droite, cliquez sur le nom du serveur géré.
 
 1. Dans l’écran suivant, cliquez sur les onglets **Configuration** > **Server Start**.
 

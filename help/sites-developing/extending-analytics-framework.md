@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: 7e465a56-ca26-481e-9b3e-b438ef7fbff0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1618'
-ht-degree: 100%
+source-wordcount: '1654'
+ht-degree: 89%
 
 ---
 
 # Personnalisation du framework Adobe Analytics{#customizing-the-adobe-analytics-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le framework Adobe Analytics détermine les informations suivies avec Adobe Analytics. Afin de personnaliser le framework par défaut, utilisez javascript pour ajouter un tracking personnalisé, intégrer les modules externes Adobe Analytics et modifier les paramètres généraux dans le framework utilisé pour le tracking.
 
@@ -27,7 +31,7 @@ Lorsqu’une page est associée à un framework Adobe Analytics et qu’elle co
 
 Le javascript dans la page crée un objet `s_gi` (que la bibliothèque Adobe Analytics s_code.js définit) et attribue des valeurs à ses propriétés. Le nom de l’instance d’objet est `s`. Les exemples de code présentés dans cette section font référence à cette variable `s` à plusieurs reprises.
 
-L’exemple de code suivant est similaire au code d’un fichier analytics.sitecatalyst.js :
+L’exemple de code suivant est similaire au code d’un fichier analytics.sitecatalyst.js :
 
 ```
 var s_account = "my_sitecatalyst_account";
@@ -59,7 +63,7 @@ s.doPlugins=s_doPlugins;
 */
 ```
 
-Lorsque vous utilisez un code javascript personnalisé pour personnaliser le framework, vous modifiez le contenu de ce fichier.
+Lorsque vous utilisez du code JavaScript personnalisé pour personnaliser la structure, vous modifiez le contenu de ce fichier.
 
 ## Configuration des propriétés Adobe Analytics {#configuring-adobe-analytics-properties}
 
@@ -99,11 +103,11 @@ Utilisez la procédure suivante pour ajouter des variables à la liste :
 
 1. Dans la colonne de droite, entrez une valeur pour la variable, par exemple `CONSTANT`.
 
-1. Pour supprimer une variable, cliquez sur le bouton (-) à côté de la variable.
+1. Pour supprimer une variable, cliquez sur le bouton (-) en regard de la variable.
 
 >[!NOTE]
 >
->Lorsque vous entrez des variables et des valeurs, assurez-vous qu’elles sont correctement mises en forme et orthographiées, sinon les **appels ne seront pas envoyés** avec la paire valeur/variable correcte. Les variables et les valeurs mal orthographiées peuvent même empêcher les appels de se produire.
+>Lorsque vous entrez des variables et des valeurs, assurez-vous qu’elles sont correctement mises en forme et orthographiées, sinon les **appels ne seront pas envoyés** avec la paire valeur/variable correcte. Les variables et valeurs mal orthographiées peuvent même empêcher les appels de se produire.
 >
 >Adressez-vous à un représentant Adobe Analytics pour vous assurer que ces variables sont correctement définies.
 
@@ -196,9 +200,9 @@ Par conséquent, votre javascript doit définir `s.usePlugins` sur `true` pour q
 >
 >Ne modifiez pas le fichier /libs/cq/analytics/components/sitecatalyst/config.js.jsp. Certaines tâches de mise à niveau ou de maintenance d’AEM peuvent réinstaller le fichier d’origine, en supprimant vos modifications.
 
-1. Dans CRXDE Lite, créez la structure de dossier /apps/cq/analytics/components :
+1. Dans CRXDE Lite, créez la structure de dossiers /apps/cq/analytics/components :
 
-   1. Sélectionnez le dossier /apps et cliquez sur Créer > Créer un dossier.
+   1. Cliquez avec le bouton droit sur le dossier /apps et cliquez sur Créer > Créer un dossier.
    1. Indiquez `cq` comme nom de dossier, puis cliquez sur OK.
    1. De même, créez les dossiers `analytics` et `components`.
 
@@ -276,12 +280,12 @@ Suivez la procédure ci-après pour créer le dossier de bibliothèque cliente d
 
    * Type : cq:ClientLibraryFolder
 
-1. Sélectionnez le dossier de bibliothèque cliente que vous venez de créer et utilisez la barre de propriétés en bas à droite pour ajouter la propriété suivante :
+1. Sélectionnez le dossier de bibliothèques clientes que vous venez de créer et utilisez la barre de propriétés située en bas à droite pour ajouter la propriété suivante :
 
-   * Nom : categories
+   * Nom : categories
    * Type : chaîne
-   * Valeur : sitecatalyst.plugins
-   * Multi : sélectionné
+   * Valeur : sitecatalyst.plugins
+   * Multi : selected
 
    Cliquez sur OK dans la fenêtre Modifier pour confirmer la valeur de la propriété.
 
@@ -292,8 +296,8 @@ Suivez la procédure ci-après pour créer le dossier de bibliothèque cliente d
 Procédez comme suit pour obtenir le code du module externe, stocker le code dans le référentiel AEM et l’ajouter dans votre dossier de bibliothèque cliente.
 
 1. Connectez-vous à [sc.omniture.com](https://sc.omniture.com) en utilisant votre compte Adobe Analytics.
-1. Sur la page d’accueil, accédez à Help (Aide) > Help Home (Aide Accueil).
-1. Dans la table des matières sur le côté gauche, cliquez sur Implementation Plug-ins (Modules externes d’implémentation).
+1. Sur la page d’entrée, accédez à Aide > Page d’accueil de l’aide.
+1. Dans la table des matières du côté gauche, cliquez sur Modules externes d’implémentation.
 1. Cliquez sur le lien vers le module externe que vous souhaitez ajouter. Quand la page s’ouvre, recherchez le code source javascript pour le module externe, puis sélectionnez-le et copiez-le. 
 
 1. Cliquez avec le bouton droit sur le dossier de votre bibliothèque cliente, puis cliquez sur Créer > Créer un fichier. Pour le nom de fichier, tapez le nom du module externe que vous intégrez, suivi du suffixe .js, puis cliquez sur OK. Par exemple, si vous intégrez le module externe getQueryParam, nommez le fichier getQueryParam.js.
@@ -308,6 +312,6 @@ Procédez comme suit pour obtenir le code du module externe, stocker le code dan
 
 >[!NOTE]
 >
->Lors de l’utilisation de modules externes, assurez-vous d’intégrer des modules externes de support. À défaut, le module externe javascript ne reconnaîtra pas les appels qu’il passe aux fonctions du module externe de support. Par exemple, le module externe getPreviousValue () requiert le module externe split() pour fonctionner correctement.
+>Lors de l’utilisation de modules externes, assurez-vous d’intégrer des modules externes de support. À défaut, le module externe javascript ne reconnaîtra pas les appels qu’il passe aux fonctions du module externe de support. Par exemple, le module externe getPreviousValue() nécessite que le module externe split() fonctionne correctement.
 >  
 >Le nom du module externe de support doit également être ajouté au fichier **js.txt**.

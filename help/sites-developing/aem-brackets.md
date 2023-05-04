@@ -10,14 +10,18 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 5924d38b-243e-4a81-85b6-9ff89ae4c811
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 100%
+source-wordcount: '960'
+ht-degree: 70%
 
 ---
 
 # Extension AEM Brackets{#aem-brackets-extension}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## du commerce électronique {#overview}
 
@@ -27,47 +31,47 @@ L’extension AEM Brackets offre un workflow fluide pour modifier les composant
 
 ### Fonctions {#features}
 
-Les principales fonctionnalités de l’extension AEM Brackets sont les suivantes :
+Les principales fonctionnalités de l’extension AEM Brackets sont les suivantes :
 
 * La synchronisation automatisée des fichiers modifiés avec l’instance de développement AEM
 * La synchronisation bidirectionnelle manuelle des fichiers et des dossiers
-* La synchronisation complète des modules de contenu du projet
+* La synchronisation complète des packages de contenu du projet
 * Le remplissage du code HTL pour les expressions et les instructions de bloc `data-sly-*`
 
-En outre, Brackets propose de nombreuses fonctionnalités utiles pour les développeurs de front-end AEM :
+En outre, Brackets s’accompagne de nombreuses fonctionnalités utiles pour les développeurs de polices AEM :
 
-* Prise en charge des fichiers Photoshop pour extraire les informations d’un fichier PSD, comme des calques, des mesures, des couleurs, des polices, du texte, etc.
-* Conseils relatifs au code du fichier PSD pour réutiliser facilement cette information extraite dans le code.
+* Prise en charge des fichiers Photoshop pour extraire des informations d’un fichier de PSD, comme des calques, des mesures, des couleurs, des polices, du texte, etc.
+* Conseils sur le code du PSD, pour réutiliser facilement ces informations extraites dans le code.
 * Prise en charge de préprocesseurs CSS, comme LESS et SCSS.
-* Et des centaines d’extensions supplémentaires qui répondent à des besoins plus précis.
+* Et des centaines d’extensions supplémentaires qui répondent à des besoins plus spécifiques.
 
 ## Installation {#installation}
 
 ### Brackets {#brackets}
 
-L’extension AEM Brackets prend en charge les versions 1.0 ou ultérieures.
+L’extension AEM Brackets prend en charge Brackets version 1.0 ou ultérieure.
 
 Téléchargez la dernière version de Brackets sur [Brackets.io](https://brackets.io/).
 
 ### L’extension {#the-extension}
 
-Pour installer l’extension, procédez comme suit :
+Pour installer l’extension, procédez comme suit :
 
 1. Ouvrez Brackets. Dans le menu **Fichier**, sélectionnez **Extension Manager...**
-1. Entrez **AEM** dans la barre de recherche et recherchez l’**extension AEM Brackets**.
+1. Entrée **AEM** dans la barre de recherche et recherchez **Extension AEM Brackets**.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
 1. Cliquez sur **Installer**.
-1. Fermez la boîte de dialogue et Extension Manager, une fois l’installation terminée.
+1. Fermez la boîte de dialogue et l’Extension Manager une fois l’installation terminée.
 
 ## Prise en main {#getting-started}
 
-### Le projet de modules de contenu {#the-content-package-project}
+### Le projet Content-Package {#the-content-package-project}
 
-Une fois l’extension installée, vous pouvez commencer à développer des composants AEM en ouvrant un dossier de modules de contenu à partir de votre système de fichiers avec Brackets.
+Une fois l’extension installée, vous pouvez commencer à développer AEM composants en ouvrant un dossier content-package à partir de votre système de fichiers avec Brackets.
 
-Le projet doit contenir au moins :
+Le projet doit contenir au moins :
 
 1. un dossier `jcr_root` (par exemple, `myproject/jcr_root`) ;
 
@@ -77,7 +81,7 @@ Dans le menu **Fichier** de Brackets, choisissez **Ouvrir le dossier...** et cho
 
 >[!NOTE]
 >
->Si votre projet n’a pas de module de contenu, vous pouvez essayer d’appliquer l’[exemple HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Sur GitHub, cliquez sur **Télécharger le fichier ZIP**, extrayez les fichiers localement et, comme indiqué ci-dessus, ouvrez le dossier `jcr_root` dans Brackets. Suivez ensuite les étapes ci-dessous pour configurer les **paramètres du projet** et enfin téléchargez le module entier vers votre instance de développement AEM en **exportant le module de contenu** comme indiqué plus bas dans la section Synchronisation complète des modules de contenu du projet.
+>Si votre projet n’a pas de package de contenu, vous pouvez essayer d’appliquer l’[exemple HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Sur GitHub, cliquez sur **Télécharger le fichier ZIP**, extrayez les fichiers localement et, comme indiqué ci-dessus, ouvrez le dossier `jcr_root` dans Brackets. Suivez ensuite les étapes ci-dessous pour configurer les **paramètres du projet** et enfin téléchargez le package entier vers votre instance de développement AEM en **exportant le package de contenu** comme indiqué plus bas dans la section Synchronisation complète des packages de contenu du projet.
 >
 >Après ces étapes, vous devriez être en mesure d’accéder à l’URL `/content/todo.html` sur votre instance de développement AEM, d’apporter des modifications au code dans Brackets et de voir comment, après une actualisation dans le navigateur Web, les modifications ont été immédiatement synchronisées avec le serveur AEM.
 
@@ -100,7 +104,7 @@ L’extension AEM Brackets fournit les types de synchronisation de contenu suiv
 
 ### Synchronisation automatisée des fichiers modifiés {#automated-synchronization-of-changed-files}
 
-Ne synchronise que les changements de Brackets vers l’instance d’AEM, mais jamais l’inverse.
+Cela synchronise uniquement les modifications de Brackets vers l’instance AEM, mais jamais l’inverse.
 
 ### Synchronisation bidirectionnelle manuelle {#manual-bidirectional-synchronization}
 
@@ -112,22 +116,22 @@ Dans l’Explorateur de projet, ouvrez le menu contextuel en cliquant avec le bo
 >
 >Si l’entrée sélectionnée se situe en dehors du dossier `jcr_root`, les entrées du menu contextuel **Exporter vers le serveur** et **Importer depuis le serveur** sont désactivées.
 
-### Synchronisation complète des modules de contenu {#full-content-package-synchronization}
+### Synchronisation complète des packages de contenu {#full-content-package-synchronization}
 
-Dans le menu **AEM**, les options **Exporter le module de contenu** ou **Importer le module de contenu** permettent de synchroniser l’ensemble du projet avec le serveur.
+Dans le menu **AEM**, les options **Exporter le package de contenu** ou **Importer le package de contenu** permettent de synchroniser l’ensemble du projet avec le serveur.
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
-### État de la synchronisation {#synchronization-status}
+### État de synchronisation {#synchronization-status}
 
-L’extension AEM Brackets comporte une icône de notification dans la barre d’outils à droite de la fenêtre Brackets, qui indique l’état de la dernière synchronisation :
+L’extension AEM Brackets comporte une icône de notification dans la barre d’outils située à droite de la fenêtre Brackets, qui indique l’état de la dernière synchronisation :
 
-* vert - tous les fichiers ont été synchronisés avec succès
-* bleu - une opération de synchronisation est en cours
-* jaune - certains fichiers n’ont pas été synchronisés
-* rouge - aucun des fichiers n’a été synchronisé
+* vert : tous les fichiers ont été synchronisés avec succès
+* blue : une opération de synchronisation est en cours
+* jaune : certains fichiers n’ont pas été synchronisés
+* rouge : aucun des fichiers n’a été synchronisé
 
-En cliquant sur l’icône de notification, vous ouvrez la boîte de dialogue du rapport d’état de la synchronisation qui répertorie tous les états de chaque fichier synchronisé.
+Cliquez sur l’icône de notification pour ouvrir la boîte de dialogue Rapport d’état de synchronisation qui répertorie tous les états de chaque fichier synchronisé.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 

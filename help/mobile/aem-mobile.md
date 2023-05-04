@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: administering-on-demand-services-app
 discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 exl-id: cb0898f5-900d-4562-a976-49beff8addd5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 8%
+source-wordcount: '330'
+ht-degree: 10%
 
 ---
 
 # AEM Mobile On-Demand {#aem-mobile-on-demand}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >

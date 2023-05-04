@@ -1,7 +1,7 @@
 ---
 title: Dépannage des index Oak
 seo-title: Troubleshooting Oak Indexes
-description: Découvrez comment détecter et corriger une réindexation lente.
+description: Comment détecter et corriger une réindexation lente.
 seo-description: How to detect and fix slow re-indexing.
 uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
@@ -10,22 +10,26 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 194c0835-e9b5-4968-a5f0-2ed3bf6793fd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1476'
-ht-degree: 100%
+source-wordcount: '1512'
+ht-degree: 54%
 
 ---
 
 # Dépannage des index Oak{#troubleshooting-oak-indexes}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Réindexation lente  {#slow-re-indexing}
 
-Le processus de réindexation interne à AEM collecte les données du référentiel et les stocke dans les index Oak pour prendre en charge les requêtes de contenu de haute performance. Dans des cas exceptionnels, ce processus peut être lent, voire bloqué. Cette page servira de guide de dépannage pour vous aider à identifier si l’indexation est lente, rechercher la cause et résoudre le problème. 
+AEM processus de réindexation interne collecte les données du référentiel et les stocke dans les index Oak afin de prendre en charge l’interrogation performante du contenu. Dans des circonstances exceptionnelles, le processus peut être lent, voire bloqué. Cette page sert de guide de dépannage pour aider à identifier si l’indexation est lente, trouver la cause et résoudre le problème.
 
-Il est important de faire la distinction entre la réindexation qui prend beaucoup de temps de manière inopportune et la réindexation qui prend un certain temps, car elle indexe de grandes quantités de contenu. Par exemple, le temps nécessaire pour indexer le contenu augmente en fonction de la quantité de contenu. Par conséquent, la réindexation des grands référentiels de production va prendre plus de temps que celle des petits référentiels de développement.
+Il est important de faire la distinction entre la réindexation qui prend un temps incorrectement long et la réindexation qui prend un long temps parce qu’elle indexe de grandes quantités de contenu. Par exemple, le temps nécessaire pour indexer le contenu est mis à l’échelle avec la quantité de contenu, de sorte que les référentiels de production volumineux prennent plus de temps à réindexer que les petits référentiels de développement.
 
-Voir [Meilleures pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md) pour obtenir des informations supplémentaires indiquant quand et comment réindexer le contenu. 
+Voir [Bonnes pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md) pour plus d’informations sur quand et comment réindexer le contenu.
 
 ## Détection initiale {#initial-detection}
 
@@ -39,16 +43,16 @@ L’indexation lente de la détection initiale nécessite de parcourir les MBean
 
 1. Pour un MBean, si la valeur temporelle (**Done** ou **LastIndexedTime**) date de plus de 45 minutes, alors la tâche d’indexation a échoué ou prend trop de temps. Cela rend les index asynchrones obsolètes.
 
-## L’indexation est interrompue après une fermeture forcée {#indexing-is-paused-after-a-forced-shutdown}
+## L’indexation est suspendue après un arrêt forcé {#indexing-is-paused-after-a-forced-shutdown}
 
-Une fermeture forcée entraîne l’arrêt de l’indexation asynchrone par AEM pendant jusqu’à 30 minutes après le redémarrage et nécessite généralement 15 minutes supplémentaires pour terminer le premier passage de réindexation, pour un total d’environ 45 minutes (revenant à la durée [de détection initiale ](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection)de 45 minutes). Si vous pensez que l’indexation est mise en pause après une fermeture forcée :
+Un arrêt forcé entraîne AEM suspension de l’indexation asynchrone pendant jusqu’à 30 minutes après le redémarrage. En règle générale, 15 minutes supplémentaires sont nécessaires pour terminer le premier passage de réindexation, pour un total d’environ 45 minutes (en revenant au délai [Détection initiale](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection) période de 45 minutes). Dans le cas où vous pensez que l’indexation est suspendue après un arrêt forcé :
 
-1. Tout d’abord, déterminez si une instance AEM a été arrêtée de manière forcée (le processus AEM a été interrompu de manière brutale ou une coupure de courant s’est produite), puis redémarrée. 
+1. Tout d’abord, déterminez si l’instance AEM a été arrêtée de manière forcée (le processus AEM a été tué par la force, ou une panne de courant s’est produite) et ensuite redémarrée.
 
    * [La journalisation AEM](/help/sites-deploying/configure-logging.md) peut être consultée à cet effet.
 
-1. Si la fermeture forcée se produit, au redémarrage, AEM suspend automatiquement la réindexation pendant 30 minutes. 
-1. Attendez environ 45 minutes pour qu’AEM reprenne les opérations d’indexation asynchrones normales. 
+1. Si l’arrêt forcé s’est produit, au redémarrage, AEM arrête automatiquement la réindexation pendant 30 minutes au maximum.
+1. Patientez environ 45 minutes pour que AEM reprenne les opérations d’indexation asynchrones normales.
 
 ## Pool de threads surchargé {#thread-pool-overloaded}
 
@@ -56,59 +60,59 @@ Une fermeture forcée entraîne l’arrêt de l’indexation asynchrone par AEM 
 >
 >Pour AEM 6.1, assurez-vous que le [CFP 11 AEM 6.1](https://helpx.adobe.com/fr/experience-manager/release-notes-aem-6-1-cumulative-fix-pack.html) est installé.
 
-Dans des cas exceptionnels, le pool de threads utilisé pour gérer l’indexation asynchrone risque d’être surchargé. Pour isoler le processus d’indexation, un pool de threads peut être configuré afin d’éviter qu’une autre tâche AEM interfère avec la capacité d’indexation du contenu en temps voulu d’Oak. Pour ce faire, vous devez :
+Dans des circonstances exceptionnelles, le pool de threads utilisé pour gérer l’indexation asynchrone peut devenir surchargé. Pour isoler le processus d’indexation, un pool de threads peut être configuré afin d’éviter qu’une autre tâche AEM interfère avec la capacité d’indexation du contenu en temps voulu d’Oak. Pour ce faire, vous devez :
 
-1. Définir un pool de nouveaux threads isolés que le planificateur Apache Sling peut utiliser pour l’indexation asynchrone :
+1. Définissez un nouveau pool de threads isolé à utiliser par le planificateur Apache Sling pour l’indexation asynchrone :
 
    * Sur l’instance affectée, accédez à la console web AEM OSGi > Configuration > Planificateur Apache Sling ou rendez-vous sur https://&lt;hôte>:&lt;port>/system/console/configMgr (par exemple, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)).
-   * Ajoutez une entrée au champ « Allowed Thread Pools » (Pools de threads autorisés), avec la valeur « oak ».
-   * Cliquez sur Enregistrer en bas à droite pour enregistrer les modifications. 
+   * Ajoutez une entrée au champ &quot;Pools de threads autorisés&quot; avec la valeur &quot;oak&quot;.
+   * Cliquez sur Enregistrer en bas à droite pour enregistrer les modifications.
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
 1. Vérifiez que le nouveau pool de threads du planificateur Apache Sling est enregistré et s’affiche dans la console web Statut du planificateur Apache Sling. 
 
    * Accédez à la console web AEM OSGi > Statut > Planificateur Sling ou rendez-vous sur https://&lt;hôte>:&lt;port>/system/console/status-slingscheduler (par exemple, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler)).
-   * Vérifiez que les entrées suivantes du pool existent :
+   * Vérifiez que les entrées de pool suivantes existent :
 
       * ApacheSlingoak
       * ApacheSlingdefault
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
-## La file d’attente d’observation est pleine {#observation-queue-is-full}
+## La file d&#39;attente d&#39;observation est pleine {#observation-queue-is-full}
 
-Si un trop grand nombre de modifications et de validations sont effectuées sur le référentiel en peu de temps, l’indexation peuvent être retardées à cause d’une file d’attente d’osbervation pleine. Tout d’abord, déterminez si la file d’attente est pleine :
+Si trop de modifications et de validations sont effectuées dans le référentiel dans un délai court, l’indexation peut être retardée en raison d’une file d’attente d’observation complète. Tout d’abord, déterminez si la file d’attente d’observation est pleine :
 
 1. Accédez à la console web et cliquez sur l’onglet JMX ou rendez-vous sur https://&lt;hôte>:&lt;port>/system/console/jmx (par exemple, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
 1. Ouvrez le MBean Statistiques de référentiel Oak et déterminez si une valeur `ObservationQueueMaxLength` est supérieure à 10 000. 
 
    * Lors de l’exécution d’opérations normales, cette valeur maximale doit toujours finalement se réduire à zéro (surtout dans la section `per second`). Vérifiez donc que la mesure en secondes de `ObservationQueueMaxLength` est de 0.
-   * Si les valeurs sont de 10 000 ou plus et augmentent progressivement, cela signifie qu’au moins une file d’attente (probablement plusieurs) ne peut pas être traitée aussi rapidement pendant que de nouvelles modifications (commits) ont lieu.
-   * Chaque file d’attente d’observation est limitée (10 000 par défaut), et si la file d’attente atteint cette limite, son traitement se détériore.
+   * Si les valeurs sont supérieures ou égales à 10 000 et augmentent de manière régulière, cela indique qu’au moins une file d’attente (peut-être plus) ne peut pas être traitée aussi rapidement que de nouvelles modifications (validations) se produisent.
+   * Chaque file d’attente d’observation a une limite (10 000 par défaut) et si la file d’attente atteint cette limite, son traitement se dégrade.
    * Lorsque vous utilisez MongoMK, comme la longueur des files d’attente augmente beaucoup, la performance du cache Oak interne se détériore. Cette corrélation peut être vue dans un `missRate` augmenté pour le cache `DocChildren` dans le MBean de statistiques `Consolidated Cache`.
 
-1. Pour éviter de dépasser les limites acceptables des files d’attente d’observation, il est recommandé de procéder comme suit :
+1. Pour éviter de dépasser les limites acceptables des files d’attente d’observation, il est recommandé de :
 
-   * Diminuer le débit constant des validations. De courts pics de validations sont acceptables, mais le rythme constant doit être réduit. 
+   * Réduisez le taux constant de validations. De courts pics de validations sont acceptables, mais le taux constant doit être réduit.
    * Augmentez la taille de `DiffCache` tel que décrit dans [Conseils de réglages de performance > Réglage du stockage Mongo > Taille du cache des documents](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html#main-pars_text_3).
 
-## Identification d’un processus de réindexation bloqué et résolution du problème {#identifying-and-remediating-a-stuck-re-indexing-process}
+## Identification et correction d’un processus de réindexation bloqué {#identifying-and-remediating-a-stuck-re-indexing-process}
 
-La réindexation peut être considérée comme « totalement bloquée » dans deux conditions :
+La réindexation peut être considérée comme &quot;complètement bloquée&quot; dans deux conditions :
 
-* La réindexation est très lente, au point où aucune progression significative n’est signalée dans les fichiers journaux concernant le nombre de nœuds transmis. 
+* La réindexation est très lente, au point où aucune progression significative n’est signalée dans les fichiers journaux concernant le nombre de noeuds parcourus.
 
-   * Par exemple, s’il n’y a aucun message pendant une heure, ou si la progression est tellement lente qu’elle prend une semaine ou plus à se terminer. 
+   * Par exemple, s’il n’y a aucun message sur une heure ou si la progression est si lente qu’il faudra une semaine ou plus pour finir.
 
-* La réindexation est bloquée dans une boucle sans fin si des exceptions répétées apparaissent dans les fichiers journaux (par exemple, `OutOfMemoryException`) dans le thread d’indexation. La répétition des mêmes exceptions dans le journal indique qu’Oak tente d’indexer le même élément à plusieurs reprises, mais échoue sur le même problème. 
+* La réindexation est bloquée dans une boucle sans fin si des exceptions répétées apparaissent dans les fichiers journaux (par exemple, `OutOfMemoryException`) dans le thread d’indexation. La répétition des mêmes exceptions dans le journal indique qu’Oak tente d’indexer la même chose à plusieurs reprises, mais échoue sur le même problème.
 
-Pour identifier et résoudre un processus de réindexation bloqué, procédez comme suit :
+Pour identifier et corriger un processus de réindexation bloqué, procédez comme suit :
 
-1. Pour identifier la cause d’une indexation bloquée, les informations suivantes doivent être collectées :
+1. Pour identifier la cause de l’indexation bloquée, les informations suivantes doivent être collectées :
 
-   * Collectez 5 minutes de vidage des threads, un vidage de thread toutes les 2 secondes. 
-   * [Définissez le niveau DEBUG et les journaux pour les appenders](/help/sites-deploying/configure-logging.md).
+   * Collectez 5 minutes de thread dump, un thread dump toutes les 2 secondes.
+   * [Définition du niveau DEBUG et des journaux pour les appenders](/help/sites-deploying/configure-logging.md).
 
       * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
       * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
@@ -138,15 +142,15 @@ La réindexation peut également être annulée (arrêtée avant qu’elle ne so
 * La réindexation des index Lucene et Lucene Property peut être abandonnée car ils sont naturellement asynchrones. 
 * La réindexation des index de propriété Oak ne peut être interrompue si la réindexation a été initiée via `PropertyIndexAsyncReindexMBean`.
 
-Pour abandonner la réindexation, procédez comme suit :
+Pour annuler la réindexation en toute sécurité, procédez comme suit :
 
-1. Identifiez le MBean IndexStats qui contrôle la piste de réindexation qui doit être désactivée. 
+1. Identifiez le MBean IndexStats qui contrôle la piste de réindexation qui doit être arrêtée.
 
    * Accédez au MBean IndexStats approprié via la console JMX en accédant à la console web OSGi AEM > Principal > JMX ou à https://&lt;hôte>:&lt;port>/system/console/jmx (par exemple, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
    * Ouvrez le MBean IndexStats basé sur la piste de réindexation que vous souhaitez arrêter (`async`, `async-reindex` ou `fulltext-async`).
 
       * Pour identifier la piste appropriée et donc l’instance MBean IndexStats, regardez la propriété « async » des index Oak. La propriété « async » contient le nom de piste : `async`, `async-reindex` ou `fulltext-async`.
-      * La piste est également disponible en accédant au gestionnaire d’index d’AEM dans la colonne « Async ». Pour accéder au gestionnaire d’index, rendez-vous sur Opération > Diagnostic > Gestionnaire d’index.
+      * La piste est également disponible en accédant à AEM Gestionnaire d’index dans la colonne &quot;Async&quot;. Pour accéder au gestionnaire d’index, accédez à Opérations > Diagnostic > Gestionnaire d’index.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
@@ -156,16 +160,16 @@ Pour abandonner la réindexation, procédez comme suit :
    * Lors de la réindexation d’un index **existant**, définissez la propriété sur false.
 
       * `/oak:index/someExistingIndex@reindex=false`
-   * Pour un **nouvel** index, vous pouvez également :
+   * Ou sinon, pour un **new** index, soit :
 
-      * Définir la propriété du type sur désactivée
+      * Définissez la propriété type sur disabled
 
          * `/oak:index/someNewIndex@type=disabled`
-      * ou supprimer la définition d’index entièrement
+      * ou supprimer entièrement la définition d’index
 
-   Lorsque cela est fait, validez les modifications dans le référentiel.
+   Validez les modifications apportées au référentiel une fois l’opération terminée.
 
-1. Enfin, reprenez l’indexation asynchrone sur la piste d’indexation abandonnée. 
+1. Enfin, reprenez l’indexation asynchrone sur la piste d’indexation abandonnée.
 
    * Dans le MBean `IndexStats` qui a envoyé la commande `abortAndPause()` à l’étape 2, invoquez la commande `resume()`.
 

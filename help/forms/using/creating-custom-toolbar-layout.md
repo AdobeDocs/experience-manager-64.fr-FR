@@ -1,7 +1,7 @@
 ---
 title: Création d’une mise en page de barre d’outils personnalisée
 seo-title: Creating custom toolbar layout
-description: Vous pouvez spécifier une mise en page de barre d’outils pour le formulaire. La mise en page de barre d’outils définit les commandes et la disposition de la barre d’outils dans le formulaire.
+description: Vous pouvez spécifier une mise en page de barre d’outils pour le formulaire. La mise en page de barre d’outils définit les commandes et la mise en page de la barre d’outils du formulaire.
 seo-description: You can specify a toolbar layout for the form. The toolbar layout defines the commands and the layout of the toolbar on the form.
 uuid: da60342c-f802-4264-9da4-c333df9359c2
 content-type: reference
@@ -9,43 +9,47 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: c69bb229-d680-4a55-9b2d-cd5ad0f83a9e
 exl-id: 1b273437-8d71-4224-bdcd-0ae522ae8913
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 96%
+source-wordcount: '563'
+ht-degree: 49%
 
 ---
 
 # Création d’une mise en page de barre d’outils personnalisée {#creating-custom-toolbar-layout}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Dispositions de barre d’outils {#layout}
 
-Lorsque vous créez un formulaire adaptatif, vous pouvez spécifier une mise en page de barre d’outils pour celui-ci. La mise en page de barre d’outils définit les commandes et la disposition de la barre d’outils dans le formulaire.
+Lorsque vous créez un formulaire adaptatif, vous pouvez spécifier une mise en page de barre d’outils pour le formulaire. La mise en page de barre d’outils définit les commandes et la mise en page de la barre d’outils du formulaire.
 
-La mise en page de barre d’outils dépend fortement du traitement côté client piloté par du code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe. Pour résoudre ce problème, AEM fournit des dossiers de bibliothèques côté client qui permettent de stocker le code côté client dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page web finale pour charger le code correct. Pour plus d’informations, voir [Fonctionnement des bibliothèques côté client dans AEM.](/help/sites-developing/clientlibs.md)
+La mise en page de barre d’outils repose principalement sur le traitement côté client piloté par du code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe. Pour résoudre ce problème, AEM fournit des dossiers de bibliothèques côté client qui permettent de stocker le code côté client dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page web finale pour charger le code correct. Pour plus d’informations, voir [Fonctionnement des bibliothèques côté client dans AEM.](/help/sites-developing/clientlibs.md)
 
 ![Exemple de mise en page de la barre d’outils](assets/default_toolbar_layout.png)
 **Figure :** *Exemple de mise en page de la barre d’outils*
 
-Les formulaires adaptatifs fournissent un ensemble de mises en page prêtes à l’emploi :
+Les formulaires adaptatifs fournissent un ensemble de dispositions prêtes à l’emploi :
 
 ![Mises en page de barre d’outils prêtes à l’emploi ](assets/toolbar1.png)
 **Figure :** *Dispositions de barre d’outils prêtes à l’emploi*
 
-Vous pouvez en outre créer une mise en page de barre d’outils personnalisée.
+En outre, vous pouvez créer une mise en page de barre d’outils personnalisée.
 
-La procédure suivante décrit les étapes pour créer une barre d’outils personnalisée qui affiche trois actions dans la barre d’outils et d’autres actions dans une liste déroulante de la barre d’outils.
+La procédure suivante décrit les étapes de création d’une barre d’outils personnalisée qui affiche trois actions dans la barre d’outils et les autres actions dans une liste déroulante de la barre d’outils.
 
-Le module de contenu joint contient le code complet décrit ci-dessous. Une fois le module de contenu installé, ouvrez `/content/forms/af/CustomLayoutDemo.html` pour afficher la démonstration de la mise en page de la barre d’outils personnalisée.
+Le package de contenu joint contient le code complet décrit ci-dessous. Une fois le package de contenu installé, ouvrez `/content/forms/af/CustomLayoutDemo.html` pour afficher la démonstration de la mise en page de la barre d’outils personnalisée.
 
 CustomToolbarLayoutDemo.zip
 
 [Obtenir le fichier](assets/customtoolbarlayoutdemo.zip)
 Démonstration de la mise en page de la barre d’outils personnalisée
 
-## Création d’une mise en page de barre d’outils personnalisée {#layout-1}
+## Pour créer une disposition de barre d’outils personnalisée {#layout-1}
 
-1. Créez un dossier pour stocker vos mises en page de barre d’outils. Par exemple :
+1. Créez un dossier pour conserver vos mises en page de barre d’outils personnalisées. Par exemple :
 
    `/apps/customlayout/toolbar`.
 
@@ -63,7 +67,7 @@ Démonstration de la mise en page de la barre d’outils personnalisée
 
 1. Renommez le nœud copié, de `mobileFixedToolbarLayout` à `customToolbarLayout.`.
 
-   Fournissez également une description appropriée pour le nœud. Par exemple, remplacez le jcr:description du nœud par **Mise en page personnalisée pour la barre d’outils.**
+   Fournissez également une description appropriée du noeud. Par exemple, remplacez jcr:description du noeud par **Disposition personnalisée pour la barre d’outils**.
 
    La propriété `guideComponentType` du nœud détermine le type de mise en page. Dans le cas présent, le type de mise en page est toolbar. Il apparaît par conséquent dans la liste déroulante de sélection des mises en page de barre d’outils.
 
@@ -79,7 +83,7 @@ Démonstration de la mise en page de la barre d’outils personnalisée
 
    >[!NOTE]
    >
-   >La description mise à jour à l’étape précédente est affichée dans la liste déroulante Mise en forme.
+   >La description mise à jour à l’étape précédente s’affiche dans la liste déroulante Disposition .
 
 1. Sélectionnez cette mise en page de barre d’outils personnalisée, puis cliquez sur OK.
 
@@ -105,7 +109,7 @@ Démonstration de la mise en page de la barre d’outils personnalisée
 
    >[!NOTE]
    >
-   >Ajoutez la classe guidetoolbar pour la mise en page. Le style prêt à l’emploi de la barre d’outils est défini conformément à la classe guidetoolbar.
+   >Ajoutez la classe guidetoolbar pour la mise en page. Le style prêt à l’emploi de la barre d’outils est défini par rapport à la classe guidetoolbar.
 
    Échantillon `toolBarCommon.jsp` :
 
@@ -164,7 +168,7 @@ Démonstration de la mise en page de la barre d’outils personnalisée
    </c:forEach>
    ```
 
-   Feuille CSS présente dans le nœud clientlib :
+   CSS présent dans le noeud clientlib :
 
    ```css
    .mobilecustomToolbar .dropdown {
@@ -226,7 +230,7 @@ Démonstration de la mise en page de la barre d’outils personnalisée
 
 >[!NOTE]
 >
->La description mise à jour à l’étape précédente est affichée dans la liste déroulante Mise en forme.
+>La description mise à jour à l’étape précédente s’affiche dans la liste déroulante Disposition .
 
 ![Vue de bureau de la barre d’outils avec mise en page personnalisée](assets/toolbar_1.png)
 **Figure :** *Vue de bureau de la barre d’outils de disposition personnalisée*

@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 exl-id: 6d2226da-f691-4e8b-9494-a25e1c3d4b85
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '579'
 ht-degree: 3%
 
 ---
 
 # Configuration de la structure de site web {#setup-website-structure}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Pour configurer votre site web, les instructions ci-dessous décrivent les dossiers à créer aux emplacements suivants :
 

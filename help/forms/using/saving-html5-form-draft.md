@@ -1,7 +1,7 @@
 ---
-title: Enregistrement d’un formulaire HTML5 en tant que brouillon
+title: Enregistrer un formulaire HTML5 en tant que brouillon
 seo-title: Saving an HTML5 form as a draft
-description: Enregistrez un formulaire HTML5 comme brouillon et reprenez le remplissage du formulaire ultérieurement.
+description: Enregistrez un formulaire HTML5 en tant que brouillon et reprenez le remplissage du formulaire ultérieurement.
 seo-description: Save an HTML5 form as a draft and resume filling the form at a later stage.
 uuid: 70cd5f6f-f125-470c-8cee-ee14d2127713
 content-type: reference
@@ -10,20 +10,24 @@ topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: Mobile Forms
 exl-id: 8e4ffda9-ea92-4abc-8746-5d1852e4599b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 100%
+source-wordcount: '336'
+ht-degree: 63%
 
 ---
 
-# Enregistrement d’un formulaire HTML5 en tant que brouillon {#saving-an-html-form-as-a-draft}
+# Enregistrer un formulaire HTML5 en tant que brouillon {#saving-an-html-form-as-a-draft}
 
-Vous pouvez enregistrer un formulaire HTML5 comme brouillon et reprendre le remplissage du formulaire ultérieurement. Le portail des formulaires permet à tout utilisateur d’enregistrer et de restaurer un formulaire HTML5. Pour activer la fonctionnalité d’enregistrement en tant que brouillon, ajoutez les configurations suivantes au nœud de profil :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Vous pouvez enregistrer un formulaire HTML5 comme brouillon et reprendre le remplissage du formulaire ultérieurement. Forms Portal permet à tout utilisateur d’enregistrer et de restaurer un formulaire HTML5. Pour activer la fonctionnalité d’enregistrement en tant que brouillon, ajoutez les configurations suivantes au nœud de profil :
 
 ## Profil personnalisé permettant d’activer la fonctionnalité Enregistrer en tant que brouillon {#custom-profile-to-allow-save-as-draft-feature}
 
-En standard, AEM Forms fournit un profil **Enregistrer en tant que brouillon**. Vous pouvez générer un formulaire avec le profil Enregistrer en tant que brouillon pour activer la fonctionnalité de brouillon pour un formulaire HTML5. Vous pouvez spécifier le profil de rendu HTML pour un formulaire dans le [Gestionnaire de formulaires](/help/forms/using/introduction-managing-forms.md).
+En standard, AEM Forms fournit un profil **Enregistrer en tant que brouillon**. Vous pouvez générer un formulaire avec le profil Enregistrer en tant que brouillon pour activer la fonctionnalité de brouillon pour un formulaire HTML5. Vous pouvez spécifier un profil de rendu de HTML pour un formulaire dans [Forms Manager](/help/forms/using/introduction-managing-forms.md).
 
 Pour activer la fonctionnalité Enregistrer en tant que brouillon et l’appliquer à votre [profil personnalisé](/help/forms/using/custom-profile.md) existant, ajoutez les configurations suivantes à votre nœud de profil :
 
@@ -45,14 +49,14 @@ Pour activer la fonctionnalité Enregistrer en tant que brouillon et l’appliqu
    <td>mfAllowAttachments</td> 
    <td>Chaîne</td> 
    <td>true</td> 
-   <td><p>Autorise le chargement de pièces jointes</p> <p>avec ce profil.</p> </td> 
+   <td><p>Permet le chargement de pièces jointes.</p> <p>avec ce profil.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Stockage et liste des brouillons {#drafts-storage-and-listing}
 
-Après l’activation de la fonctionnalité Enregistrer en tant que brouillon pour un formulaire, lorsque le formulaire est enregistré, il est répertorié dans le [composant Drafts and Submissions](/help/forms/using/draft-submission-component.md). Vous pouvez extraire le formulaire enregistré et commencer son remplissage depuis le composant Drafts and Submissions.
+Après l’activation de la fonctionnalité Enregistrer en tant que brouillon pour un formulaire, lorsque le formulaire est enregistré, il est répertorié dans le [composant Drafts and Submissions](/help/forms/using/draft-submission-component.md). Vous pouvez récupérer et commencer à remplir le formulaire enregistré à partir du composant Drafts and Submissions .
 
 Pour activer les listes de formulaires du composant Brouillons et Envois, ajoutez la propriété suivante au nœud de profil :
 

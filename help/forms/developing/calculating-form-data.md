@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 476b1c78-8332-4a79-93dc-a615ec58abbe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 100%
+source-wordcount: '1889'
+ht-degree: 98%
 
 ---
 
 # Calcul de données de formulaire {#calculating-form-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le service Forms peut calculer les valeurs qu’un utilisateur saisit dans un formulaire et afficher les résultats. Pour calculer les données d’un formulaire, deux tâches sont nécessaires. Commencez par créer un script de conception de formulaire qui calcule les données du formulaire. Une conception de formulaire prend en charge trois types de scripts. Un type de script s’exécute sur le client, un autre sur le serveur et le troisième à la fois sur le serveur et sur le client. Le type de script décrit ici s’exécute sur le serveur. Les calculs côté serveur sont pris en charge pour les transformations HTML, PDF et Form Guide (obsolète).
 

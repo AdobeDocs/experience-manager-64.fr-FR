@@ -1,7 +1,7 @@
 ---
-title: Personnalisation des consoles
+title: Personnaliser les consoles
 seo-title: Customizing the Consoles
-description: AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles de votre instance de création.
+description: AEM fournit divers mécanismes pour vous permettre de personnaliser les consoles de votre instance de création.
 seo-description: AEM provides various mechanisms to enable you to customize the consoles of your authoring instance
 uuid: f10cea87-ef8a-468e-94ca-89a1017dcf44
 contentOwner: User
@@ -10,20 +10,24 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 exl-id: 31bced35-4845-40d1-9bfd-5c75d54e1a83
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 97%
+source-wordcount: '714'
+ht-degree: 49%
 
 ---
 
-# Personnalisation des consoles{#customizing-the-consoles}
+# Personnaliser les consoles{#customizing-the-consoles}
 
 >[!CAUTION]
 >
->Ce document décrit comment personnaliser les consoles de l’IU moderne et compatible avec les écrans tactiles, et ne s’applique pas à l’IU classique.
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles (et la [fonctionnalité de création de pages](/help/sites-developing/customizing-page-authoring-touch.md)) de votre instance de création.
+>[!CAUTION]
+>
+>Ce document décrit comment personnaliser des consoles dans l’IU tactile moderne et ne s’applique pas à l’IU classique.
+
+AEM fournit divers mécanismes pour vous permettre de personnaliser les consoles (et les [fonctionnalité de création de pages](/help/sites-developing/customizing-page-authoring-touch.md)) de votre instance de création.
 
 * Clientlibs
 
@@ -31,17 +35,17 @@ AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les cons
 
 * Recouvrements
 
-   Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir la fonctionnalité standard (dans `/libs`) avec votre propre fonctionnalité personnalisée (dans `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
+   Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir la fonctionnalité standard (dans `/libs`) avec votre propre fonctionnalité personnalisée (dans `/apps`). Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car Sling Resource Merger permet l’héritage.
 
-Ils peuvent être utilisés de différentes manières pour étendre les consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
+Elles peuvent être utilisées de différentes manières pour étendre vos consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
 
 >[!NOTE]
 >
 >Pour plus d’informations, voir :
 >
->* Utilisation et création de [bibliothèques clientes](/help/sites-developing/clientlibs.md).
->* Utilisation et création d’[incrustations](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* Utilisation et création [clientlibs](/help/sites-developing/clientlibs.md).
+>* Utilisation et création [superpositions](/help/sites-developing/overlays.md).
+>* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 >
 >Ce thème est également abordé dans la session [AEM Gems – Personnalisation de l’interface utilisateur pour AEM 6.0](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-user-interface-customization-for-aem6.html).
 
@@ -182,11 +186,11 @@ You can find the code of this page on GitHub
         * `srcPath` = `cq/core/content/nav`
 -->
 
-## Personnalisation du mode par défaut pour une console {#customizing-the-default-view-for-a-console}
+## Personnalisation de l’affichage par défaut d’une console {#customizing-the-default-view-for-a-console}
 
-Vous pouvez personnaliser le mode par défaut (colonnes, carte ou liste) pour une console :
+Vous pouvez personnaliser la vue par défaut (colonne, carte, liste) d’une console :
 
-1. Vous pouvez réorganiser les modes en recouvrant l’entrée requise à partir de l’emplacement suivant :
+1. Vous pouvez réorganiser les vues en recouvrant l’entrée requise depuis l’emplacement suivant :
 
    `/libs/wcm/core/content/sites/jcr:content/views`
 
@@ -256,9 +260,9 @@ You can find the code of this page on GitHub
           `/apps/<yourProject>/admin/ext/launches/content/jcr:content/body/rail`
 -->
 
-## Ajout d’une action à la barre d’outils {#add-new-action-to-the-toolbar}
+## Ajouter une nouvelle action à la barre d’outils {#add-new-action-to-the-toolbar}
 
-1. Vous pouvez créer vos propres composants et inclure les bibliothèques clientes correspondantes pour des actions personnalisées. Par exemple, une action **Promouvoir sur Twitter** à l’emplacement :
+1. Vous pouvez créer vos propres composants et inclure les bibliothèques clientes correspondantes pour les actions personnalisées. Par exemple, un **Convertir en Twitter** Action à l’adresse :
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -270,11 +274,11 @@ You can find the code of this page on GitHub
 
    `content/jcr:content/body/content/header/items/selection/items/twitter`
 
-## Limitation d’une action de la barre d’outils à un groupe spécifique {#restrict-a-toolbar-action-to-a-specific-group}
+## Limitation d’une action de barre d’outils à un groupe spécifique {#restrict-a-toolbar-action-to-a-specific-group}
 
-1. Vous pouvez utiliser une condition de rendu personnalisé pour recouvrir l’action standard et imposer des conditions spécifiques qui doivent être remplies avant le rendu.
+1. Vous pouvez utiliser une condition de rendu personnalisée pour superposer l’action standard et imposer des conditions spécifiques qui doivent être remplies avant son rendu.
 
-   Par exemple, créez un composant pour contrôler les conditions de rendu selon le groupe :
+   Par exemple, créez un composant pour contrôler les conditions de rendu en fonction du groupe :
 
    `/apps/myapp/components/renderconditions/group`
 
@@ -359,7 +363,7 @@ You can restrict access to a navigation option using ACLs:
     * `communities`
 -->
 
-## Personnalisation des colonnes en mode Liste {#customizing-columns-in-the-list-view}
+## Personnalisation des colonnes dans la vue Liste {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
@@ -375,7 +379,7 @@ You can find the code of this page on GitHub
 * Download the project as [a ZIP file](https://github.com/Adobe-Marketing-Cloud/aem-sites-extension-listview-columns/archive/master.zip)
 -->
 
-Pour personnaliser les colonnes en mode Liste :
+Pour personnaliser les colonnes en mode Liste :
 
 1. Recouvrez la liste des colonnes disponibles.
 
@@ -391,12 +395,12 @@ Pour personnaliser les colonnes en mode Liste :
    * Si vous souhaitez connecter des données supplémentaires, vous devez écrire un ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` avec une
 
       `pageInfoProviderType`.
-   Par exemple, voir la classe/le lot (tiré de GitHub) ci-dessous.
+   Par exemple, consultez la classe/le lot joint (à partir de GitHub) ci-dessous.
 
-1. Vous pouvez maintenant sélectionner la colonne dans le configurateur de colonnes du mode Liste.
+1. Vous pouvez désormais sélectionner la colonne dans le paramétrateur de colonnes du mode Liste.
 
 ## Filtrage des ressources {#filtering-resources}
 
-Lorsqu’une console est utilisée, un cas d’utilisation fréquent est la nécessité pour l’utilisateur de choisir des ressources (par exemple, des pages, des composants, des ressources, etc.). Cela peut prendre la forme d’une liste dans laquelle l’auteur doit sélectionner un élément.
+Lors de l’utilisation d’une console, un cas d’utilisation courant se présente lorsque l’utilisateur doit effectuer un choix parmi des ressources (pages, composants, ressources, etc.). Cela peut prendre la forme d’une liste, par exemple à partir de laquelle l’auteur doit choisir un élément.
 
-Pour que la liste garde une taille raisonnable et reste pertinente par rapport au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Voir [cet article](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) pour en savoir plus.
+Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en oeuvre sous la forme d’un prédicat personnalisé. Voir [cet article](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) pour plus d’informations.

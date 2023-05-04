@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 2ae7ea8d-fc58-4647-bc83-915d9f4b7dd8
 exl-id: 9a8a95c3-d39f-408b-9ec3-b722e9ab22c9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 11%
+source-wordcount: '307'
+ht-degree: 12%
 
 ---
 
 # Mobile On-Demand{#mobile-on-demand}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -43,7 +47,7 @@ Un auteur AEM est responsable des tâches suivantes lors de la création d’une
 
 * [Tableau de bord des applications AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [Actions de création et de configuration d’application](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
-* [Configuration du cloud](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
+* [Configuration du cloud.](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [Gestion du contenu](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
 Pour en savoir plus sur **Content Services**, voir [Présentation de Content Services](/help/mobile/develop-content-as-a-service.md) pour commencer.

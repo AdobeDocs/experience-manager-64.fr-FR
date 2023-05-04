@@ -10,35 +10,39 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 exl-id: 34e4edd5-9e67-44ed-8c4c-bcdd3e161a35
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2831'
-ht-degree: 90%
+source-wordcount: '2867'
+ht-degree: 42%
 
 ---
 
 # Consignes de dimensionnement du matériel {#hardware-sizing-guidelines}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Ces consignes de dimensionnement procurent une estimation des ressources matérielles requises pour déployer un projet AEM. Les estimations de dimensionnement dépendent de l’architecture du projet, de la complexité de la solution, du trafic estimé et des exigences du projet. Ce guide vous aide à déterminer les besoins matériels pour une solution spécifique ou à trouver une estimation supérieure et inférieure pour les exigences matérielles.
 
 Les facteurs de base à prendre en compte sont (dans cet ordre) :
 
-* **Vitesse du réseau**
+* **Vitesse réseau**
 
-   * Latence du réseau
+   * Latence réseau
    * Bande passante disponible
 
 * **Vitesse de calcul**
 
    * Efficacité de la mise en cache
    * Trafic attendu
-   * Complexité des modèles, des applications et des composants
+   * Complexité des modèles, applications et composants
    * Auteurs simultanés
-   * Complexité de l’opération de création (modification de contenu simple, déploiement MSM, etc.)
+   * Complexité de l’opération de création (édition de contenu simple, déploiement MSM, etc.)
 
-* **Performance d’E/S**
+* **Performances des E/S**
 
-   * Performance et efficacité du stockage des fichiers ou de la base de données
+   * Performances et efficacité du stockage du fichier ou de la base de données
 
 * **Disque dur**
 
@@ -47,16 +51,16 @@ Les facteurs de base à prendre en compte sont (dans cet ordre) :
 * **Mémoire**
 
    * Taille du site web (nombre d’objets de contenu, de pages et d’utilisateurs)
-   * Nombre d’utilisateurs/de sessions qui sont actifs en même temps
+   * Nombre d’utilisateurs/sessions principaux en même temps
 
 ## Architecture {#architecture}
 
-Une configuration AEM type se compose d’un environnement de création et de publication. Ces environnements ont différentes exigences en ce qui concerne la taille du matériel sous-jacent et la configuration système. Vous trouverez des considérations sur ces deux environnements dans les sections [Environnement de création](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) et [Environnement de publication](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations).
+Une configuration d’AEM standard consiste en un environnement de création et de publication. Ces environnements ont des exigences différentes en ce qui concerne la taille matérielle et la configuration système sous-jacentes. Vous trouverez des considérations sur ces deux environnements dans les sections [Environnement de création](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) et [Environnement de publication](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations).
 
 Dans une configuration de projet type, vous disposez de plusieurs environnements sur lesquels définir les phases du projet :
 
 * **Environnement de développement**
-Pour le développement de nouvelles fonctions ou pour apporter des modifications importantes. La meilleure pratique consiste à travailler dans un environnement de développement par développeur (généralement des installations locales sur leurs systèmes personnels).
+Pour le développement de nouvelles fonctions ou pour apporter des modifications importantes. La meilleure pratique consiste à travailler avec un environnement de développement par développeur (généralement des installations locales sur leurs systèmes personnels).
 
 * **Environnement de test de création**
 Pour vérifier les modifications. Le nombre d’environnements de test varie selon les exigences du projet (qui nécessite, par exemple, un environnement distinct pour l’assurance qualité, le test de l’intégration ou le test d’acceptation utilisateur).
@@ -70,42 +74,42 @@ Pour que les auteurs modifient le contenu.
 * **Environnement d’exploitation de publication**
 Pour servir du contenu publié.
 
-En outre, les environnements peuvent varier, d’un système à un serveur exécutant AEM et un serveur d’application, à un ensemble d’instances organisées en grappes multiserveur et multiprocesseur hautement évoluées. Nous vous recommandons d’utiliser un ordinateur distinct pour chaque système de production et de ne pas exécuter d’autres applications sur ces ordinateurs.
+En outre, les environnements peuvent varier, allant d’un système à serveur unique exécutant AEM et un serveur d’applications, à un ensemble d’instances en grappe multi-serveur et multi-processeur à très grande échelle. Nous vous recommandons d’utiliser un ordinateur distinct pour chaque système de production et de ne pas exécuter d’autres applications sur ces ordinateurs.
 
-## Remarques génériques concernant le dimensionnement du matériel {#generic-hardware-sizing-considerations}
+## Considérations génériques sur le dimensionnement du matériel {#generic-hardware-sizing-considerations}
 
-Les sections suivantes fournissent des instructions pour calculer les configurations matérielles requises, en prenant en compte plusieurs points. Pour les systèmes de grande taille, nous suggérons que vous réalisiez un simple jeu de tests d’évaluation des performances en interne sur une configuration de référence.
+Les sections ci-dessous fournissent des conseils sur la manière de calculer les exigences matérielles, en tenant compte de diverses considérations. Pour les systèmes de grande taille, nous suggérons que vous réalisiez un simple jeu de tests d’évaluation des performances en interne sur une configuration de référence.
 
 L’optimisation des performances est une tâche fondamentale qui doit être effectuée avant que toute évaluation des performances ne puisse être réalisée pour un projet spécifique. Veillez à suivre les conseils fournis dans la [documentation d’optimisation des performances](/help/sites-deploying/configuring-performance.md) avant de procéder aux tests d’évaluation des performances et d’utiliser leurs résultats pour les calculs de dimensionnement du matériel.
 
-Les exigences de dimensionnement du matériel pour les cas d’utilisation plus complexes doivent reposer sur une estimation détaillée des performances du projet. Les cas d’utilisation plus complexes qui nécessitent des ressources matérielles exceptionnelles présentent une combinaison des caractéristiques suivantes :
+Les exigences de dimensionnement du matériel pour les cas d’utilisation avancés doivent être basées sur une évaluation détaillée des performances du projet. Les caractéristiques des cas d’utilisation avancés nécessitant des ressources matérielles exceptionnelles incluent les combinaisons suivantes :
 
 * Un payload ou un débit de contenu élevé
-* usage intensif de code personnalisé, de workflows personnalisés ou de bibliothèques de logiciels tiers ;
-* intégration à des systèmes externes non pris en charge.
+* utilisation étendue de code personnalisé, de workflows personnalisés ou de bibliothèques de logiciels tierces
+* intégration à des systèmes externes non pris en charge
 
-### Disque dur/espace disque {#disk-space-hard-drive}
+### Espace disque/disque dur {#disk-space-hard-drive}
 
-L’espace disque requis dépend largement du volume et du type de votre application web. Les calculs doivent prendre en compte les éléments suivants :
+L’espace disque requis dépend largement du volume et du type de votre application web. Les calculs doivent prendre en compte :
 
-* le nombre et la taille des pages, des ressources et des autres entités stockées dans un référentiel, telles que les workflows, les profils, etc. ;
-* la fréquence attendue de modifications du contenu et donc de la création de versions de contenu ;
-* le volume de rendus de ressources de gestion des actifs numériques qui seront générés ;
-* la croissance générale du contenu au fil du temps.
+* la quantité et la taille des pages, des ressources et d’autres entités stockées dans le référentiel telles que les workflows, les profils, etc.
+* la fréquence estimée des changements de contenu et, par conséquent, la création de versions de contenu ;
+* le volume de rendus de ressources DAM qui seront générés ;
+* la croissance globale du contenu au fil du temps ;
 
-L’espace disque est continuellement surveillé en ligne, hors ligne et lors du nettoyage des révisions. Si l’espace disque passe en dessous d’une certaine valeur, le processus est annulé. La valeur critique correspond à 25 % de l’encombrement sur le disque du référentiel ; elle n’est pas configurable. Il est recommandé de dimensionner le disque de sorte qu’il soit au moins deux ou trois fois plus large que la taille du référentiel, y compris sa croissance estimée.
+L’espace disque est surveillé en permanence pendant le nettoyage des révisions en ligne et hors ligne. Si l’espace disque disponible tombe en dessous d’une valeur critique, le processus sera annulé. La valeur critique est de 25 % de l’empreinte disque actuelle du référentiel et elle n’est pas configurable. Il est recommandé de dimensionner le disque de sorte qu’il soit au moins deux ou trois fois plus large que la taille du référentiel, y compris sa croissance estimée.
 
-Envisagez une configuration de baies redondantes composée de disques indépendants (RAID, par exemple RAID10) pour la redondance des données.
+Envisagez une configuration de tableaux redondants de disques indépendants (RAID, par exemple RAID10) pour la redondance des données.
 
 >[!NOTE]
 >
->Le répertoire temporaire d’une instance de production doit disposer d’au moins 6 Go d’espace disponible.
+>Le répertoire temporaire d’une instance de production doit contenir au moins 6 Go d’espace disponible.
 
 ### Virtualisation {#virtualization}
 
-AEM s’exécute correctement dans les environnements virtualisés, mais certains facteurs tels que l’unité centrale ou les E/S peuvent ne pas correspondre directement au matériel physique. Nous vous recommandons de sélectionner une vitesse d’E/S accrue (en général), car il s’agit d’un facteur déterminant dans la plupart des cas. L’évaluation des performances de votre environnement est nécessaire pour obtenir une idée précise des ressources requises.
+AEM fonctionne bien dans les environnements virtualisés, mais certains facteurs tels que le processeur ou les E/S ne peuvent pas être directement liés au matériel physique. Il est recommandé de choisir une vitesse d’E/S plus élevée (en général), car c’est un facteur essentiel dans la plupart des cas. L’évaluation comparative de votre environnement est nécessaire pour obtenir une compréhension précise des ressources requises.
 
-### Mise en parallèle d’instances AEM {#parallelization-of-aem-instances}
+### Mise en parallèle des instances AEM {#parallelization-of-aem-instances}
 
 #### Prévention de défaillance {#fail-safeness}
 
@@ -113,16 +117,16 @@ Un site web doté de la prévention de défaillance est déployé sur au moins d
 
 #### Évolutivité des ressources système {#system-resources-scalability}
 
-Lorsque tous les systèmes sont en cours d’exécution, une performance de calcul accrue est disponible. Cette performance supplémentaire n’est pas nécessairement linéaire par rapport au nombre de nœuds de grappes, car les relations dépendent lourdement de l’environnement technique. Consultez la [documentation relative aux cluster](/help/sites-deploying/recommended-deploys.md) pour plus d’informations.
+Pendant que tous les systèmes sont en cours d’exécution, une performance de calcul accrue est disponible. Cette performance supplémentaire n’est pas nécessairement linéaire par rapport au nombre de nœuds de grappes, car les relations dépendent lourdement de l’environnement technique. Consultez la [documentation relative aux cluster](/help/sites-deploying/recommended-deploys.md) pour plus d’informations.
 
-L’estimation du nombre de nœuds de grappes nécessaires dépend des exigences de base, ainsi que des cas d’utilisation spécifiques du projet web en question :
+L’estimation du nombre de noeuds de grappe nécessaires repose sur les exigences de base et les cas d’utilisation spécifiques du projet web spécifique :
 
-* Du point de vue de la prévention de défaillance, il est nécessaire de déterminer, pour tous les environnements, l’importance de la défaillance et le temps de compensation de la défaillance en fonction du temps nécessaire pour qu’un nœud de grappes se rétablisse.
+* Du point de vue de la sécurité des défaillances, il est nécessaire de déterminer, pour tous les environnements, l’importance de l’échec et le temps de compensation de l’échec en fonction du temps nécessaire à la récupération d’un noeud de grappe.
 * En ce qui concerne l’évolutivité, le nombre d’opérations d’écriture est fondamentalement le facteur le plus important. Consultez la section [Auteurs travaillant en parallèle](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) pour l’environnement de création et [Collaboration sociale](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations) pour l’environnement de publication. L’équilibrage de charge peut être établi pour les opérations qui accèdent au système uniquement afin de traiter les opérations de lecture. Consultez la section [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/user-guide.html) pour plus d’informations.
 
 ## Calculs spécifiques à l’environnement de création {#author-environment-specific-calculations}
 
-Adobe a développé plusieurs tests d’évaluation des performances pour des instances de création autonomes.
+À des fins d’évaluation des performances, Adobe a développé des tests d’évaluation des performances pour les instances d’auteur autonomes.
 
 * **Test d’évaluation 1**
 
@@ -134,7 +138,7 @@ Adobe a développé plusieurs tests d’évaluation des performances pour des in
 
 * **Test d’évaluation 2**
 
-   Calculez le débit maximal lorsque le profil de chargement comporte un mélange de création de page (10 %), de modification d’une page existante (80 %) et de création, puis de modification successive d’une page (10 %). La complexité des pages reste la même que dans le profil du test d’évaluation des performances 1. La modification de base de la page est effectuée en ajoutant une image et en modifiant le contenu textuel. Là encore, l’exercice a été effectué sur une charge de base de 300 pages de même complexité, tel que défini dans le test d’évaluation des performances 1.
+   Calculez le débit maximal lorsque le profil de chargement comporte un mélange de création de page (10 %), de modification d’une page existante (80 %) et de création, puis de modification successive d’une page (10 %). La complexité des pages reste la même que dans le profil du test de référence 1. La modification de base de la page s’effectue en ajoutant une image et en modifiant le contenu texte. Là encore, l’exercice a été effectué sur une charge de base de 300 pages de la même complexité que celle définie dans le test de référence 1.
 
    * **Résultat**
 
@@ -142,9 +146,9 @@ Adobe a développé plusieurs tests d’évaluation des performances pour des in
 
 >[!NOTE]
 >
->Le débit ne fait pas la distinction entre les types de transactions au sein d’un profil de charge. La méthode utilisée pour mesurer le débit s’assure qu’une proportion fixe de chaque type de transaction est incluse dans la charge de travail.
+>Le débit ne fait pas la distinction entre les types de transaction dans un profil de charge. L’approche utilisée pour mesurer le débit permet de s’assurer qu’une proportion fixe de chaque type de transaction est incluse dans la charge de travail.
 
-Les deux tests ci-dessus indiquent que le débit varie en fonction du type d’opération. Utilisez les activités dans votre environnement comme base pour dimensionner votre système. Vous obtenez un meilleur débit avec des actions moins intensives, telles que la modification (qui est également plus courante).
+Les deux tests ci-dessus montrent clairement que le débit varie en fonction du type d&#39;opération. Utilisez les activités de votre environnement comme base pour dimensionner votre système. Vous obtiendrez un meilleur débit avec des actions moins intensives telles que la modification (qui est également plus courante).
 
 ### Mise en cache {#caching}
 
@@ -152,9 +156,9 @@ Dans l’environnement de création, l’efficacité de la mise en cache est en 
 
 ### Auteurs travaillant en parallèle {#authors-working-in-parallel}
 
-Dans l’environnement de création, le nombre d’auteurs qui travaillent en parallèle et la charge que leurs interactions ajoutent au système constituent les principaux facteurs de limitation. Par conséquent, nous vous recommandons de dimensionner votre système en fonction du débit partagé des données.
+Dans l’environnement de création, le nombre d’auteurs qui travaillent en parallèle et la charge que leurs interactions ajoutent au système constituent les principaux facteurs de limitation. Par conséquent, nous vous recommandons de mettre votre système à l’échelle en fonction du débit partagé des données.
 
-Pour de tels scénarios, Adobe a effectué des tests d’évaluation des performances sur une grappe à deux nœuds sans partage d’instances de création.
+Pour de tels scénarios, Adobe exécute des tests de référence sur un cluster à deux noeuds sans partage d’instances d’auteur.
 
 * **Test d’évaluation des performances 1a**
 
@@ -166,7 +170,7 @@ Pour de tels scénarios, Adobe a effectué des tests d’évaluation des perform
 
 * **Test d’évaluation des performances 2b**
 
-   Avec une principale grappe sans partage de 2 instances d’auteur, calculez le débit maximal lorsque le profil de chargement comporte un mélange de création de pages (10 %), de modification de pages existantes (80 %) et de création et de modification d’une page l’une après l’autre (10 %). La complexité de la page reste la même que dans le profil du test d’évaluation des performances 1. La modification de base de la page est effectuée en ajoutant une image et en modifiant le contenu textuel. Là encore, l’exercice a été effectué sur une charge de base de 300 pages de même complexité, tel que défini dans le test d’évaluation des performances 1.
+   Avec une principale grappe sans partage de 2 instances d’auteur, calculez le débit maximal lorsque le profil de chargement comporte un mélange de création de pages (10 %), de modification de pages existantes (80 %) et de création et de modification d’une page l’une après l’autre (10 %). La complexité de la page reste la même que dans le profil du test de référence 1. La modification de base de la page s’effectue en ajoutant une image et en modifiant le contenu texte. Encore une fois, l’exercice a été effectué sur une charge de base de 300 pages de complexité identique à celle définie dans le test de référence 1.
 
    * **Résultat**
 
@@ -174,40 +178,40 @@ Pour de tels scénarios, Adobe a effectué des tests d’évaluation des perform
 
 >[!NOTE]
 >
->Le débit ne fait pas la distinction entre les types de transactions au sein d’un profil de charge. La méthode utilisée pour mesurer le débit s’assure qu’une proportion fixe de chaque type de transaction est incluse dans la charge de travail.
+>Le débit ne fait pas la distinction entre les types de transaction dans un profil de charge. L’approche utilisée pour mesurer le débit permet de s’assurer qu’une proportion fixe de chaque type de transaction est incluse dans la charge de travail.
 
-Les deux tests ci-dessus indiquent clairement qu’AEM se dimensionne correctement pour les auteurs qui exécutent des opérations de modification de base avec AEM. En général, AEM est plus efficace pour dimensionner les opérations de lecture.
+Les deux tests ci-dessus montrent clairement que AEM s’adapte bien aux auteurs qui effectuent des opérations de modification de base avec AEM. En général, AEM est plus efficace pour dimensionner les opérations de lecture.
 
-Sur un site web type, la plus grande partie de la création se produit pendant la phase de projet. Une fois le site web activé, le nombre d’auteurs travaillant en parallèle baisse généralement vers une moyenne inférieure (en mode opérationnel).
+Sur un site web type, la plupart des opérations de création se produisent pendant la phase du projet. Une fois le site web lancé, le nombre d’auteurs travaillant en parallèle atteint généralement une moyenne inférieure (mode opérationnel).
 
 Vous pouvez calculer le nombre d’ordinateurs (ou unités centrales) requis pour l’environnement de création comme suit :
 
 `n = numberOfParallelAuthors / 30`
 
-Cette formule peut servir d’orientation générale pour dimensionner les unités centrales lorsque les auteurs effectuent des opérations de base avec AEM. Elle part du principe que le système et l’application sont optimisés. Toutefois, la formule ne convient pas pour les fonctions avancées telles que MSM ou Assets (voir les sections ci-dessous).
+Cette formule peut servir de ligne directrice générale pour la mise à l’échelle des processeurs lorsque les auteurs effectuent des opérations de base avec AEM. Cela suppose que le système et l’application soient optimisés. Toutefois, la formule ne contiendra pas la valeur true pour les fonctionnalités avancées telles que MSM ou Assets (voir les sections ci-dessous).
 
 Consultez également les commentaires supplémentaires dans la section [Mise en parallèle](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) et [Optimisation des performances](/help/sites-deploying/configuring-performance.md).
 
-### Recommandations matérielles {#hardware-recommendations}
+### Recommendations matériel {#hardware-recommendations}
 
-En règle générale, vous pouvez utiliser pour votre environnement de création le même matériel que celui recommandé pour votre environnement de publication. Le trafic de votre site web est normalement nettement inférieur sur les systèmes de création, mais l’efficacité du cache est également inférieure. Toutefois, le facteur fondamental est ici le nombre d’auteurs travaillant en parallèle, ainsi que le type des actions réalisées sur le système. En général, le clustering AEM (de l’environnement de création) est plus efficace pour dimensionner les opérations de lecture ; en d’autres termes, un cluster AEM se dimensionne correctement avec les auteurs qui effectuent des opérations de modification de base.
+En règle générale, vous pouvez utiliser le même matériel pour votre environnement de création que celui recommandé pour votre environnement de publication. En règle générale, le trafic sur le site web est beaucoup plus faible sur les systèmes de création, mais l’efficacité du cache est également plus faible. Cependant, le facteur fondamental ici est le nombre d’auteurs travaillant en parallèle, ainsi que le type d’actions effectuées sur le système. En général, le clustering AEM (de l’environnement de création) est plus efficace pour dimensionner les opérations de lecture ; en d’autres termes, un cluster AEM se dimensionne correctement avec les auteurs qui effectuent des opérations de modification de base.
 
 Adobe a effectué les tests d’évaluation des performances à l’aide du système d’exploitation Red Hat 5.5, exécuté sur une plateforme matérielle Hewlett-Packard ProLiant DL380 G5 avec la configuration suivante :
 
 * Deux unités centrales Intel Xeon Quad Core X5450 à 3 GHz
 * 8 Go de RAM
-* Gigabit Ethernet Broadcom NetXtreme II BCM5708
-* Contrôleur RAID HP Smart Array, avec une mémoire cache de 256 Mo
-* Deux disques SAS à 10 000 tr/min de 146 Go configurés en tant que jeu d’agrégats par bandes RAID0
-* Le score d’évaluation des performances de la spécification CINT2006 est de 110.
+* Broadcom NetXtreme II BCM5708 gigabit Ethernet
+* Contrôleur RAID HP Smart Array, cache de 256 Mo
+* Deux disques SAS à 10 000 tr/min de 146 Go configurés en tant qu’ensemble à bandes RAID0
+* Le score de référence de taux SPEC CINT2006 est de 110
 
-Les instances AEM fonctionnaient avec une taille de tas minimale de 256 Mo et une taille maximale de 1 024 Mo.
+AEM instances s’exécutaient avec une taille de tas minimale de 256 M, une taille de tas maximale de 1 024 M.
 
 ## Calculs spécifiques à l’environnement de publication {#publish-environment-specific-calculations}
 
-### Efficacité de la mise en mémoire cache et trafic {#caching-efficiency-and-traffic}
+### Efficacité de la mise en cache et trafic {#caching-efficiency-and-traffic}
 
-L’efficacité de la mise en mémoire cache est cruciale pour la vitesse du site web. Le tableau suivant indique le nombre de pages pouvant être gérées par seconde par un système AEM optimisé à l’aide d’un proxy inverse, tel que le Dispatcher :
+L’efficacité du cache est essentielle à la vitesse du site web. Le tableau suivant indique le nombre de pages qu’un système AEM optimisé peut gérer par seconde à l’aide d’un proxy inverse, comme Dispatcher :
 
 | Ratio de cache | Pages/s (pic) | Millions de pages/jour (moyenne) |
 |---|---|---|
@@ -220,13 +224,13 @@ L’efficacité de la mise en mémoire cache est cruciale pour la vitesse du sit
 
 >[!CAUTION]
 >
->Clause de non-responsabilité : les chiffres sont basés sur une configuration matérielle par défaut et peuvent varier en fonction du matériel utilisé.
+>Clause de non-responsabilité : Les nombres dépendent d’une configuration matérielle par défaut et peuvent varier en fonction du matériel utilisé.
 
-Le rapport de cache est le pourcentage de pages que le Dispatcher peut renvoyer sans devoir accéder à AEM. 100 % indique que le Dispatcher répond à toutes les requêtes, 0 % signifie qu’AEM calcule chaque page.
+Le ratio de cache est le pourcentage de pages que le Dispatcher peut renvoyer sans avoir à accéder à AEM. 100 % indique que le Dispatcher répond à toutes les requêtes, 0 % signifie que AEM calcule chaque page.
 
 ### Complexité des modèles et des applications {#complexity-of-templates-and-applications}
 
-Si vous utilisez des modèles complexes, AEM aura besoin de plus de temps pour effectuer le rendu d’une page. Les pages extraites du cache ne sont pas affectées, mais la taille de la page est toujours pertinente en ce qui concerne le délai de réponse global. Le rendu d’une page complexe peut aisément prendre dix fois plus longtemps que le rendu d’une seule page.
+Si vous utilisez des modèles complexes, AEM plus de temps sera nécessaire pour effectuer le rendu d’une page. Les pages extraites du cache ne sont pas affectées par cette situation, mais la taille de la page reste pertinente en ce qui concerne le temps de réponse global. Le rendu d’une page complexe peut facilement prendre dix fois plus de temps que le rendu d’une page simple.
 
 ### Formule {#formula}
 
@@ -290,46 +294,46 @@ Si vous possédez un site web plus complexe, vous avez également besoin de serv
 >
 >&amp;ast; Réservez suffisamment de RAM pour votre système d’exploitation en plus de la mémoire requise pour votre JVM.
 
-## Autres calculs spécifiques aux cas d’utilisation {#additional-use-case-specific-calculations}
+## Autres calculs spécifiques à un cas d’utilisation {#additional-use-case-specific-calculations}
 
-En plus du calcul pour une application web par défaut, il est possible que vous deviez tenir compte de facteurs spécifiques pour les cas d’utilisation suivants. Les valeurs calculées doivent être ajoutées au calcul par défaut.
+Outre le calcul d’une application web par défaut, vous devrez peut-être prendre en compte des facteurs spécifiques pour les cas d’utilisation suivants. Les valeurs calculées doivent être ajoutées au calcul par défaut.
 
 ### Considérations spécifiques aux ressources {#assets-specific-considerations}
 
-Le traitement étendu des ressources numériques nécessite des ressources matérielles optimisées. Les facteurs les plus pertinents sont la taille des images et le débit maximal des images traitées.
+Le traitement étendu des ressources numériques nécessite des ressources matérielles optimisées, les facteurs les plus pertinents sont la taille de l’image et le débit maximal des images traitées.
 
-Allouez au moins 16 Go de segment de mémoire et configurez le workflow Ressource de mise à jour de gestion des ressources numériques pour qu’il utilise le [module Camera Raw](/help/assets/camera-raw.md) pour l’intégration des images au format RAW.
+Allouez au moins 16 Go de segment de mémoire et configurez le workflow Ressource de mise à jour de gestion des ressources numériques pour qu’il utilise le [package Camera Raw](/help/assets/camera-raw.md) pour l’ingestion des images au format RAW.
 
 >[!NOTE]
 >
->Un débit d’images plus élevé signifie que les ressources de calcul doivent pouvoir suivre la cadence des E/S du système et vice versa. Par exemple, si des workflows sont lancés en important des images, le téléchargement de nombreuses images via WebDAV peut entraîner un journal des workflows en souffrance.
+>Un débit d’images plus élevé signifie que les ressources informatiques doivent pouvoir suivre le rythme des E/S système et vice versa. Par exemple, si les workflows sont lancés par l&#39;import d&#39;images, le téléchargement de nombreuses images via WebDAV peut entraîner un retard de workflows.
 >
 >L’utilisation de disques distincts pour TarPM, le magasin de données et l’index de recherche peut aider à optimiser le comportement d’E/S du système (il est toutefois généralement préférable de conserver l’index de recherche localement).
 
 >[!NOTE]
 >
->Voir aussi le [guide de performance des ressources](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-sizing-guide.html).
+>Voir aussi [Guide des performances des ressources](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-sizing-guide.html).
 
-### Gestionnaire multisite {#multi-site-manager}
+### Multi-site Manager {#multi-site-manager}
 
-La consommation de ressources lors de l’utilisation du gestionnaire multisite AEM dans un environnement de création dépend en grande partie des cas d’utilisation spécifiques. Les facteurs de base sont les suivants :
+La consommation des ressources lors de l’utilisation d’AEM MSM dans un environnement de création dépend fortement des cas d’utilisation spécifiques. Les facteurs de base sont les suivants :
 
-* Le nombre de Live Copies
-* La fréquence des déploiements
-* La taille de l’arborescence de contenu à déployer
-* La fonctionnalité de connexion des actions de déploiement
+* Nombre de Live Copies
+* Périodicité des déploiements
+* Taille de l’arborescence de contenu à déployer
+* Fonctionnalité connectée des actions de déploiement
 
-Le test du cas d’utilisation prévu avec un extrait de contenu représentatif peut vous aider à améliorer votre compréhension de la consommation des ressources. Si vous extrapolez les résultats avec la fréquence prévue, vous pouvez évaluer les ressources supplémentaires requises pour AEM MSM.
+Le test du cas d’utilisation prévu avec un extrait de contenu représentatif peut vous aider à mieux comprendre la consommation de ressources. Si vous extrapolez les résultats avec la fréquence prévue, vous pouvez évaluer les ressources supplémentaires requises pour AEM MSM.
 
-Tenez compte également du fait que les auteurs travaillant en parallèle subiront des effets secondaires au niveau des performances si les cas d’utilisation AEM MSM consomment davantage de ressources que prévu.
+Veuillez également tenir compte du fait que les auteurs travaillant en parallèle percevront des effets secondaires sur les performances si AEM cas d’utilisation MSM consomment plus de ressources que prévu.
 
-### Considérations de dimensionnement pour AEM Communities {#aem-communities-sizing-considerations}
+### Considérations relatives au dimensionnement d’AEM Communities {#aem-communities-sizing-considerations}
 
 Les sites AEM qui incluent des fonctions AEM Communities connaissent un haut niveau d’interaction des visiteurs du site (membres) dans l’environnement de publication.
 
-Les considérations de dimensionnement pour un site de communauté dépendent de l’interaction anticipée des membres de la communauté et de l’importance de disposer de performances optimales pour le contenu des pages.
+Les considérations de dimensionnement d’un site de communauté dépendent de l’interaction anticipée des membres de la communauté et de l’importance accrue des performances optimales du contenu de la page.
 
-Le contenu généré par les utilisateurs et soumis par les membres est stocké séparément du contenu des pages. Alors que la plateforme AEM utilise un magasin de nœuds qui réplique le contenu du site de l’instance de création vers l’instance de publication, AEM Communities utilise un magasin simple et commun pour le contenu généré par les utilisateurs qui n’est jamais répliqué.
+Les membres envoyés du contenu généré par l’utilisateur sont stockés séparément du contenu de la page. Alors que la plateforme AEM utilise un magasin de nœuds qui réplique le contenu du site de l’instance de création vers l’instance de publication, AEM Communities utilise un magasin simple et commun pour le contenu généré par les utilisateurs qui n’est jamais répliqué.
 
 Pour le magasin du contenu généré par les utilisateurs, il est nécessaire de sélectionner un fournisseur de ressources de stockage qui influence le déploiement sélectionné.\
 Voir

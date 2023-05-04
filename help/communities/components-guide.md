@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 exl-id: 8cdd7b94-b247-4598-bb0f-36c5ec1319ec
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1223'
 ht-degree: 4%
 
 ---
 
 # Guide de composants de communauté {#community-components-guide}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le guide des composants de la communauté est un outil de développement interactif pour la [structure de composants sociaux (SCF)](scf.md). Il fournit une liste des composants AEM Communities disponibles ou des fonctionnalités plus complexes composées de plusieurs composants.
 
@@ -114,7 +118,7 @@ Sous , **Modèles** tab :
 
    * Le texte affiché est : &quot;Ce composant est inclus dynamiquement.&quot;
 
-   Cette option n’est pas cochée par défaut.
+   La case par défaut est décochée.
 
 ### Interactions de publication {#publish-interactions}
 
@@ -158,7 +162,7 @@ En utilisant le composant de commentaires comme exemple, sur l’instance d’au
 
    Par exemple, `/content/community-components/en/comments/jcr:content`
 
-1. Ajouter une propriété
+1. Ajout d’une propriété
 
    * **Nom** `scg:showIde`
    * **Type** `String`

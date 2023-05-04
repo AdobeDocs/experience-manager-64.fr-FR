@@ -1,7 +1,7 @@
 ---
-title: Extraction de chaînes pour la traduction
+title: Extraire des chaînes pour la traduction
 seo-title: Extracting Strings for Translating
-description: Utilisez xgettext-maven-plugin pour extraire de votre code source les chaînes qui doivent être traduites.
+description: Utilisez xgettext-maven-plugin pour extraire du code source des chaînes qui doivent être traduites.
 seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
 uuid: 2c586ecb-8494-4f8f-b31a-1ed73644d611
 contentOwner: Guillaume Carlino
@@ -10,24 +10,28 @@ content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 50c2479b-72b6-42fa-8e48-45c8e9596161
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 100%
+source-wordcount: '512'
+ht-degree: 57%
 
 ---
 
-# Extraction de chaînes pour la traduction{#extracting-strings-for-translating}
+# Extraire des chaînes pour la traduction{#extracting-strings-for-translating}
 
-Utilisez xgettext-maven-plugin pour extraire de votre code source les chaînes qui doivent être traduites. Le module externe Maven extrait les chaînes dans un fichier XLIFF que vous envoyez en traduction. Les chaînes sont extraites aux emplacements suivants :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-* Fichiers sources Java.
-* Fichiers sources JavaScript
-* Représentations XML de ressources SVN (nœuds JCR)
+Utilisez xgettext-maven-plugin pour extraire du code source les chaînes qui doivent être traduites. Le module externe Maven extrait les chaînes dans un fichier XLIFF que vous envoyez pour traduction. Les chaînes sont extraites à partir des emplacements suivants :
+
+* Fichiers source Java
+* Fichiers source JavaScript
+* Représentations XML des ressources SVN (noeuds JCR)
 
 ## Configuration de l’extraction de chaînes {#configuring-string-extraction}
 
-Configurez la manière dont l’outil xgettext-maven-plugin extrait des chaînes pour votre projet.
+Configurez la manière dont l’outil xgettext-maven-plugin extrait les chaînes pour votre projet.
 
 ```xml
 /filter { }
@@ -48,21 +52,21 @@ Configurez la manière dont l’outil xgettext-maven-plugin extrait des chaînes
 | Section | Description |
 |---|---|
 | /filter | Identifie les fichiers qui sont analysés. |
-| /parsers/vaultxml | Configure l’analyse des fichiers Vault. Identifie les nœuds JCR contenant des indices de localisation et des chaînes externalisées. Identifie également les nœuds JCR à ignorer. |
+| /parsers/vaultxml | Configure l’analyse des fichiers Vault. Identifie les noeuds JCR qui contiennent des chaînes externalisées et des indices de localisation. Identifie également les noeuds JCR à ignorer. |
 | /parsers/javascript | Identifie les fonctions JavaScript qui externalisent les chaînes. Il n’est pas nécessaire de modifier cette section. |
 | /parsers/regexp | Configure l’analyse de fichiers de modèle ExtJS, Java et JSP. Il n’est pas nécessaire de modifier cette section. |
 | /potentials | Formule de détection des chaînes à internationaliser. |
 
 ### Identification des fichiers à analyser {#identifying-the-files-to-parse}
 
-La section /filter du fichier i18n.any identifie les fichiers analysés par l’outil xgettext-maven-plugin. Ajoutez plusieurs règles d’inclusion et d’exclusion qui identifient les fichiers qui sont analysés et ignorés, respectivement. Vous devez inclure tous les fichiers, puis exclure ceux que vous ne souhaitez pas analyser. En règle générale, vous excluez les types de fichiers qui n’appartiennent pas à l’interface utilisateur ou ceux qui définissent l’interface utilisateur, mais qui ne sont pas traduits. Les règles d’inclusion et d’exclusion présentent le format suivant :
+La section /filter du fichier i18n.any identifie les fichiers analysés par l’outil xgettext-maven-plugin. Ajoutez plusieurs règles d’inclusion et d’exclusion qui identifient les fichiers qui sont analysés et ignorés, respectivement. Vous devez inclure tous les fichiers, puis exclure ceux que vous ne souhaitez pas analyser. En règle générale, vous excluez les types de fichiers qui ne contribuent pas à l’interface utilisateur ou les fichiers qui définissent l’interface utilisateur mais ne sont pas traduits. Les règles d’inclusion et d’exclusion ont le format suivant :
 
 ```
 { /include "pattern" }
 { /exclude "pattern" }
 ```
 
-La partie « pattern » d’une règle est utilisée pour faire correspondre les noms des fichiers à inclure ou à exclure. Le préfixe de motif indique si vous effectuez une correspondance avec un nœud JCR (sa représentation dans Vault) ou le système de fichiers.
+La partie &quot;pattern&quot; d’une règle est utilisée pour faire correspondre les noms des fichiers à inclure ou à exclure. Le préfixe de modèle indique si vous faites correspondre un noeud JCR (sa représentation dans Vault) ou le système de fichiers.
 
 | Préfixe | Effet |
 |---|---|
@@ -101,13 +105,13 @@ Lorsqu’il est utilisé dans un motif, le caractère / indique un sous-répert
 
 ### Extraction des chaînes  {#extracting-the-strings}
 
-Aucun POM :
+aucun POM :
 
 ```shell
 mvn -N com.adobe.granite.maven:xgettext-maven-plugin:1.2.2:extract  -Dxgettext.verbose=true -Dxgettext.target=out -Dxgettext.rules=i18n.any -Dxgettext.root=.
 ```
 
-Avec un POM : ajoutez ceci au POM :
+Avec POM : Ajoutez ceci au POM :
 
 ```xml
 <build>

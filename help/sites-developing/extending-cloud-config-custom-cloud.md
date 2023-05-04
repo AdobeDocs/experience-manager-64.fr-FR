@@ -1,7 +1,7 @@
 ---
-title: Création d’un service cloud personnalisé
+title: Créer un service cloud personnalisé
 seo-title: Creating a Custom Cloud Service
-description: L’ensemble de services cloud par défaut peut être étendu à l’aide de types de service cloud personnalisés.
+description: Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud Service personnalisés.
 seo-description: The default set of Cloud Services can be extended with custom Cloud Service types
 uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
@@ -10,20 +10,24 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 exl-id: dc3e5d4d-ff8b-4394-9bfc-aceee6f269a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 100%
+source-wordcount: '454'
+ht-degree: 72%
 
 ---
 
-# Création d’un service cloud personnalisé{#creating-a-custom-cloud-service}
+# Créer un service cloud personnalisé{#creating-a-custom-cloud-service}
 
-L’ensemble de services cloud par défaut peut être étendu à l’aide de types de service cloud personnalisés. Cela vous permet d’injecter un balisage personnalisé dans la page de manière structurée. Cela s’avérera particulièrement utile pour les fournisseurs de données analytiques tiers, tels que Google Analytics, Chartbeat, etc. Les pages enfants héritent des Services cloud des pages parents, avec la possibilité d’annuler l’héritage à n’importe quel niveau.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Le jeu de Cloud Services par défaut peut être étendu avec des types de Cloud Service personnalisés. Vous pouvez ainsi injecter des balises personnalisées dans la page de manière structurée. Cela s’avérera particulièrement utile pour les fournisseurs de données analytiques tiers, tels que Google Analytics, Chartbeat, etc. Les pages enfants héritent des Services cloud des pages parents, avec la possibilité d’annuler l’héritage à n’importe quel niveau.
 
 >[!NOTE]
 >
->Google Analytics est utilisé comme exemple dans ce guide détaillé de création d’un service cloud. Il se peut que certains éléments ne soient pas applicables à votre scénario d’utilisation.
+>Ce guide détaillé de création d’un Cloud Service est un exemple d’utilisation de Google Analytics. Tout peut ne pas s’appliquer à votre cas d’utilisation.
 
 1. Dans CRXDE Lite, créez un nœud sous `/apps` :
 
@@ -124,8 +128,8 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
    * **Propriétés** :
 
       * **Nom** : `fieldLabel`
-      * **Type** : String
-      * **Valeur** : ID de compte
+      * **Type**: Chaîne
+      * **Valeur**: Identifiant de compte
 
       * **Nom** : `fieldDescription`
       * **Type** : `String`
@@ -215,5 +219,5 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
    Sélectionnez **Google Analytics Configuration**, puis cliquez sur **Créer**.
 
 1. Saisissez un **ID de compte** ; par exemple, `AA-11111111-1`. Cliquez sur **OK**.
-1. Accédez à une page et ajoutez la nouvelle configuration dans les propriétés de la page, sous l’onglet **Services cloud.**
-1. Le balisage personnalisé est ajouté à la page.
+1. Accédez à une page et ajoutez la configuration nouvellement créée dans les propriétés de page, sous la propriété **Cloud Services** .
+1. Les balises personnalisées sont ajoutées à la page.

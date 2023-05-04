@@ -1,7 +1,7 @@
 ---
 title: Rendu des formulaires au niveau du client
 seo-title: Rendering Forms at the Client
-description: Optimisez la diffusion du contenu PDF et améliorez la capacité du service Forms à gérer la charge du réseau en utilisant la fonctionnalité de rendu côté client d’Acrobat ou d’Adobe Reader. 
+description: Optimisez la diffusion du contenu PDF et améliorez la capacité du service Forms à gérer la charge du réseau en utilisant la fonctionnalité de rendu côté client d’Acrobat ou d’Adobe Reader..
 seo-description: Optimize the delivery of PDF content and improve the Forms service’s ability to handle network load by using the client-side rendering capability of Acrobat or Adobe Reader.
 uuid: 09bcc23d-28b0-473a-87f1-bc17e87620f4
 contentOwner: admin
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 role: Developer
 exl-id: 641452e6-bf7e-4af4-a4f9-6e5627db9fca
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1684'
-ht-degree: 100%
+source-wordcount: '1720'
+ht-degree: 98%
 
 ---
 
 # Rendu des formulaires au niveau du client {#rendering-forms-at-the-client}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Rendu des formulaires au niveau du client {#rendering-forms-at-the-client-inner}
 

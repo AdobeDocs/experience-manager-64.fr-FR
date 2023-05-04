@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 role: Developer
 exl-id: 883b33c8-50b1-4df2-a762-02be67ce24f1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 100%
+source-wordcount: '2185'
+ht-degree: 98%
 
 ---
 
 # Créer de façon dynamique des documents DDX {#dynamically-creating-ddx-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez créer dynamiquement un document DDX qui peut être utilisé pour effectuer une opération Assembler. La création dynamique d’un document DDX vous permet d’utiliser dans le document DDX des valeurs obtenues lors de l’exécution. Pour créer un document DDX de façon dynamique, utilisez des classes appartenant au langage de programmation que vous utilisez. Par exemple, si vous développez votre application cliente à l’aide de Java, utilisez des classes appartenant au package `org.w3c.dom.*`. De même, si vous utilisez Microsoft .NET, utilisez des classes appartenant à l’espace de noms `System.Xml`.
 

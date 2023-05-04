@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: e006c32b-edff-40f2-8c0a-228008dcf03a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '9110'
+source-wordcount: '9146'
 ht-degree: 99%
 
 ---
 
 # Utilisation du référentiel AEM Forms {#working-with-aem-forms-repository}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 **À propos du service Repository**
 
@@ -86,7 +90,7 @@ Les fichiers héritent des listes de contrôle d’accès (ACL) des dossiers et 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -218,7 +222,7 @@ Vous pouvez écrire des ressources par programmation à l’aide de l’API Jav
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -371,7 +375,7 @@ La liste des ressources fonctionne par relation : les ressources sont membres d
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Repository, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -488,7 +492,7 @@ Vous pouvez lire les ressources par programmation à l’aide de l’API Java du
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, consultez la section [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Repository, consultez la section [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -598,7 +602,7 @@ Vous pouvez mettre à jour les ressources par programmation à l’aide de l’A
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Repository, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-4}
 
@@ -727,7 +731,7 @@ Ensuite, vous appelez la méthode `searchProperties` de lʼobjet `ResourceReposi
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Repository, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-5}
 
@@ -867,7 +871,7 @@ Vous pouvez spécifier par programmation les relations entre les ressources à l
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-6}
 
@@ -1006,7 +1010,7 @@ Vous pouvez contrôler l’accès aux ressources par programmation à l’aide d
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-7}
 
@@ -1158,7 +1162,7 @@ Une opération de suppression n’est pas compatible avec les transactions dans 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-8}
 

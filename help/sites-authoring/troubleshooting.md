@@ -1,7 +1,7 @@
 ---
 title: Résolution des problèmes d’AEM lors de la création
 seo-title: Troubleshooting AEM when Authoring
-description: Problèmes pouvant survenir lors de l’utilisation d’AEM
+description: Problèmes que vous pouvez rencontrer lors de l’utilisation d’AEM
 seo-description: Some issues that you might encounter when using AEM
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
@@ -10,38 +10,42 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: b0890070-c9e8-4ce4-9149-00c8c38298ce
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 55%
 
 ---
 
 # Résolution des problèmes d’AEM lors de la création{#troubleshooting-aem-when-authoring}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 La section suivante traite de certains problèmes susceptibles d’être rencontrés lorsque vous utilisez AEM, ainsi que des suggestions pour résoudre ces problèmes.
 
 >[!NOTE]
 >
->Si vous rencontrez des problèmes, il est également intéressant de consulter les [problèmes connus](/help/release-notes/known-issues.md) relatifs à votre instance (packs de version et service packs).
+>Si vous rencontrez des problèmes, il est également intéressant de consulter les [problèmes connus](/help/release-notes/known-issues.md) relatifs à votre instance (packs de version et pack de services).
 
 >[!NOTE]
 >
->Les utilisateurs disposant de privilèges administrateur désireux de résoudre les problèmes affectant AEM peuvent utiliser les méthodes de dépannage décrites à la section [Dépannage d’AEM (pour les administrateurs)](/help/sites-administering/troubleshoot.md). Si vous ne possédez pas les privilèges d’accès suffisants, contactez votre administrateur système au sujet du dépannage d’AEM.
+>Les utilisateurs disposant de droits d’administrateur et souhaitant résoudre les problèmes liés à AEM peuvent utiliser les méthodes de dépannage décrites dans la section [AEM de dépannage (pour les administrateurs)](/help/sites-administering/troubleshoot.md). Si vous ne disposez pas des privilèges suffisants, contactez votre administrateur système pour connaître les AEM de dépannage.
 
 ## Ancienne version de la page toujours visible sur le site de publication {#old-page-version-still-on-published-site}
 
 * **Problème** :
 
-   * Vous avez modifié une page et l’avez répliquée sur le site de publication, mais l’*ancienne* version de la page est toujours visible sur le site de publication.
+   * Vous avez apporté des modifications à une page et répliqué la page sur le site de publication, mais l’événement *old* La version de la page est toujours affichée sur le site de publication.
 
 * **Raison** :
 
-   * Les raisons peuvent être multiples, mais sont généralement liées à la mémoire cache (de votre navigateur local ou du dispatcher), bien qu’il s’agisse parfois d’un problème de la file d’attente de réplication.
+   * Cela peut avoir plusieurs causes, le plus souvent le cache (votre navigateur local ou Dispatcher), bien que cela puisse parfois poser un problème avec la file d’attente de réplication.
 
 * **Solutions** :
 
-   * Plusieurs solutions sont possibles :
+   * Il existe différentes possibilités :
    * Vérifiez que la page a bien été répliquée. Vérifiez le statut de la page et, si nécessaire, le statut de la file d’attente de réplication.
    * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
    * Ajoutez `?` à la fin de l’URL de la page. Par exemple :

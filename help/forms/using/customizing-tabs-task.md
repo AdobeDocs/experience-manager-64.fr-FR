@@ -1,7 +1,7 @@
 ---
 title: Personnalisation des onglets d’une tâche
 seo-title: Customizing tabs for a task
-description: Comment personnaliser les noms des onglets des tâches dans l’espace de travail LiveCycle AEM Forms.
+description: Comment personnaliser les noms des onglets de vos tâches, dans l’espace de travail AEM Forms LiveCycle.
 seo-description: How-to customize the names of the tabs for your tasks, in LiveCycle AEM Forms workspace.
 uuid: 77eabb63-f8ea-4ec0-8a41-b51c65cdecc0
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ac0a281f-f589-4a70-9bc7-1a23e054b02f
 exl-id: 42671435-e0f0-41db-af83-182b01742954
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 100%
+source-wordcount: '137'
+ht-degree: 68%
 
 ---
 
 # Personnalisation des onglets d’une tâche {#customizing-tabs-for-a-task}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez personnaliser les noms des onglets pour le `Start Process`composant dans l’affichage `Start Process` Uber et le `Task Details` composant `ToDo` de l’affichage Uber.
 

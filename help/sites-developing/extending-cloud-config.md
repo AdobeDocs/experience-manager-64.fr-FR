@@ -6,33 +6,37 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: d2b8503e-8ac1-4617-ad76-b05d1e80a6b6
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 100%
+source-wordcount: '600'
+ht-degree: 67%
 
 ---
 
-# Configuration de Cloud Services{#cloud-service-configurations}
+# Configurations du service cloud{#cloud-service-configurations}
 
-Les configurations apportent la logique et la structure de stockage des configurations de service.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Les configurations sont conçues pour fournir la logique et la structure de stockage des configurations de service.
 
 Vous pouvez étendre les instances existantes pour créer vos propres configurations.
 
 ## Concepts {#concepts}
 
-Les principes suivis dans le développement des configurations sont basés sur les concepts ci-après :
+Les principes utilisés dans le développement des configurations ont été basés sur les concepts suivants :
 
 * Les services/adaptateurs sont utilisés pour récupérer la ou les configurations.
-* Les configurations (par exemple les propriétés/paragraphes) sont héritées du ou des parents.
-* Référencées à partir du(des) nœud(s) analytique(s) par chemin.
-* Facilement extensibles.
+* Les configurations (propriétés/paragraphes, par exemple) sont héritées du ou des parents.
+* Référencé à partir du ou des noeuds d’analyse par chemin d’accès.
+* Facilement extensible.
 * Permet de répondre à des configurations plus complexes, telles [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
 * Prise en charge des dépendances (par ex., les modules externes [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) nécessitent une configuration [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)).
 
 ## Structure {#structure}
 
-Le chemin de base des configurations est :
+Le chemin de base des configurations est :
 
 `/etc/cloudservices`.
 
@@ -44,10 +48,10 @@ Afin de proposer une configuration pour un nouveau service, vous devez :
 
    `/etc/cloudservices`
 
-* sous :
+* sous :
 
-   * un modèle de configuration
-   * un composant de configuration
+   * un modèle de configuration ;
+   * un composant de configuration ;
 
 Le modèle et le composant doivent hériter du `sling:resourceSuperType` du modèle de base :
 
@@ -63,7 +67,7 @@ Le fournisseur de services doit également fournir la page de service :
 
 ### Modèle {#template}
 
-Votre modèle étendra le modèle de base :
+Votre modèle étend le modèle de base :
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -90,7 +94,7 @@ sling:resourceType = cq/analytics/components/generictrackerpage
 
 ### Composants {#components}
 
-Votre composant devrait étendre le composant de base :
+Votre composant doit étendre le composant de base :
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -133,20 +137,20 @@ propertyname
 
 ### API {#api}
 
-Pour la documentation de référence sur l’API, voir [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/Webservicesupport/package-summary.html).
+Pour consulter la documentation de référence sur l’API, voir [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/Webservicesupport/package-summary.html).
 
 ### Intégration d’AEM {#aem-integration}
 
 Les services disponibles sont répertoriés dans l’onglet **Services cloud** de la boîte de dialogue **Propriétés de la page** (de toute page héritant de `foundation/components/page` ou `wcm/mobile/components/page`).
 
-L’onglet contient également :
+L’onglet fournit également :
 
-* un lien vers l’emplacement où vous pouvez activer le service
-* le choix d’une configuration (sous-nœud du service) à partir d’un champ de chemin
+* lien vers l’emplacement où vous pouvez activer le service.
+* choisir une configuration (sous-noeud du service) à partir d’un champ de chemin d’accès ;
 
 #### Chiffrement de mot de passe {#password-encryption}
 
-Lorsque vous stockez des informations d’identification d’utilisateur pour le service, tous les mots de passe doivent être chiffrés.
+Lors du stockage des informations d’identification d’utilisateur pour le service, tous les mots de passe doivent être chiffrés.
 
 Pour cela, il faut ajouter un champ de formulaire masqué. L’annotation `@Encrypted` doit être présente dans le nom de propriété de ce champ, par exemple, pour le champ `password`, le nom de la propriété serait écrit comme suit :
 
@@ -211,9 +215,9 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
 
 ### Cas d’utilisation {#use-cases}
 
-Ces services sont fournis par défaut :
+Ces services sont fournis par défaut :
 
-* [Extraits de module de tracking](/help/sites-administering/external-providers.md) (Google, WebTrends, etc.)
+* [Fragments de code de suivi](/help/sites-administering/external-providers.md) (Google, WebTrends, etc.)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 * [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)

@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
 exl-id: 61d63c89-26e8-4a50-b6a3-1bcf1a1b4c54
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 100%
+source-wordcount: '593'
+ht-degree: 95%
 
 ---
 
 # Rendu de Forms {#rendering-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 **À propos du service Forms**
 

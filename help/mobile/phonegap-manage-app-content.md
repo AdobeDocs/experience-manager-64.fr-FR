@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 5c8971ab-b07c-4131-b4cb-f34c52425014
 exl-id: 8000014c-98c1-4de4-9f0d-b7fdc1a37cd6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 8%
+source-wordcount: '743'
+ht-degree: 5%
 
 ---
 
 # Création et gestion de contenu d’application{#creating-and-managing-app-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -43,7 +47,7 @@ Enfin, les administrateurs publient stratégiquement le contenu de l’applicati
 
 Ici, le contenu peut être créé, modifié et supprimé dans AEM Mobile de la même manière que dans AEM Sites.
 
-Le **Mosaïque Gestion du contenu de la page** affiche le nombre de pages de contenu géré et la date de dernière modification pour une charge utile particulière. Vous pouvez voir le détail du contenu pour créer, copier, déplacer, supprimer et mettre à jour des pages en cliquant sur chaque enregistrement de la mosaïque.
+Le **Mosaïque Gestion du contenu de la page** affiche le nombre de pages de contenu géré et la date de dernière modification pour une charge utile particulière. Vous pouvez analyser le contenu pour créer, copier, déplacer, supprimer et mettre à jour des pages en cliquant sur chaque enregistrement de la mosaïque.
 
 Une fois que le contenu a été mis à jour, les administrateurs peuvent publier une payload de mise à jour de contenu en direct (OTA) pour les clients via le **Gestion de la mosaïque Modules de contenu .**
 
@@ -95,8 +99,8 @@ Lorsque vous êtes prêt à diffuser du nouveau contenu aux utilisateurs de votr
 
 Une fois que vous avez appris à propos de la création et de la gestion du contenu de l’application dans le tableau de bord de l’application, consultez les ressources suivantes pour d’autres rôles de création :
 
-* [Mosaïque Gestion de l’application](/help/mobile/phonegap-app-details-tile.md)
-* [Modification de métadonnées d’application](/help/mobile/phonegap-editmetadata.md)
+* [Mosaïque Gérer l’application](/help/mobile/phonegap-app-details-tile.md)
+* [Modification des métadonnées d’application](/help/mobile/phonegap-editmetadata.md)
 * [Définitions des applications](/help/mobile/phonegap-app-definitions.md)
 * [Création d’une application à l’aide de l’assistant Créer une application](/help/mobile/phonegap-create-new-app.md)
 * [Importation d’une application hybride existante](/help/mobile/phonegap-adding-content-to-imported-app.md)

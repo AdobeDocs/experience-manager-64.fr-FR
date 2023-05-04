@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 2dbe18c1-8d79-4685-911b-3c6fe87d7e2c
 exl-id: 6ec7f037-3582-49ce-9297-6acd01283949
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 100%
+source-wordcount: '175'
+ht-degree: 84%
 
 ---
 
 # Tutoriel sur la SPA WKND{#spa-wknd-tutorial}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Découvrez le développement d’applications d’une seule page (SPA) grâce à ce tutoriel en plusieurs parties. Vous serez guidé tout au long de la mise en œuvre de la configuration du projet, du mappage des composants, des outils de développement front-end et du routage d’applications pour mettre en œuvre vos propres SPA.
 

@@ -5,22 +5,26 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 74%
+source-wordcount: '829'
+ht-degree: 42%
 
 ---
 
 # Assets Insights {#asset-insights}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Découvrez comment la fonction Statistiques sur les ressources vous permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des ressources utilisées dans des sites web tiers, des campagnes marketing et des solutions de création d’Adobe.
 
 La fonction Statistiques sur les ressources vous permet de suivre les évaluations des utilisateurs et les statistiques d’utilisation des ressources utilisées dans les sites web tiers, les campagnes marketing et les solutions de création de l’Adobe afin d’obtenir des informations sur leurs performances et leur popularité.
 
-La fonction Statistiques sur les ressources capture les détails de l’activité des utilisateurs, comme le nombre de fois qu’une ressource est évaluée et cliquée, ainsi que le nombre d’impressions (nombre de fois où la ressource est chargée sur le site web). Elle attribue des scores aux ressources en fonction de ces statistiques. Vous pouvez utiliser les scores et les statistiques de performances pour sélectionner les ressources populaires à inclure dans les catalogues, les campagnes de marketing et ainsi de suite. Vous pouvez même formuler des stratégies de renouvellement de licence et d’archivage en fonction de ces statistiques.
+La fonction Statistiques sur les ressources capture les détails de l’activité des utilisateurs, tels que le nombre de fois où une ressource est évaluée, a fait l’objet d’un clic et les impressions (nombre de fois où la ressource est chargée sur le site web). Il attribue des scores aux ressources en fonction de ces statistiques. Vous pouvez utiliser les scores et les statistiques de performances pour sélectionner les ressources populaires à inclure dans les catalogues, les campagnes marketing, etc. Vous pouvez même formuler des stratégies d’archivage et de renouvellement de licence pour les ressources en fonction de ces statistiques.
 
-Pour que la fonction Statistiques sur les ressources capture les statistiques d’utilisation des ressources à partir d’un site web, vous devez inclure le code intégré de la ressource dans le code du site web.
+Pour que la fonction Statistiques sur les ressources capture les statistiques d’utilisation des ressources d’un site web, vous devez inclure le code incorporé de la ressource dans le code du site web.
 
 Pour afficher les statistiques d’utilisation des ressources, commencez par configurer la fonction afin qu’elle récupère les données de rapports d’[!DNL Adobe Analytics]. Pour plus d’informations, consultez [Configuration d’Assets Insights](touch-ui-configuring-asset-insights.md). Pour utiliser cette fonctionnalité dans une installation on-premise, achetez le licence [!DNL Adobe Analytics] séparément. Les clients [!DNL Managed Services] reçoivent une licence [!DNL Analytics] groupée avec [!DNL Experience Manager]. Consultez [Description du produit Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
@@ -32,13 +36,13 @@ Pour afficher les statistiques d’utilisation des ressources, commencez par con
 
 Vous pouvez afficher les scores de statistiques sur les ressources à partir de la page des métadonnées.
 
-1. Depuis l’interface utilisateur (IU) Assets, sélectionnez la ressource, puis appuyez/cliquez sur l’icône **[!UICONTROL Propriétés]** dans la barre d’outils.
-1. Sur la page Propriétés, appuyez/cliquez sur l’onglet **[!UICONTROL Statistiques]**.
-1. Consultez les détails d’utilisation de la ressource dans l’onglet **[!UICONTROL Statistiques]**. La section **[!UICONTROL Score]** indique les scores totaux d’utilisation et de performances d’une ressource.
+1. Dans l’interface utilisateur d’Assets, sélectionnez la ressource, puis appuyez/cliquez sur le bouton **[!UICONTROL Propriétés]** dans la barre d’outils.
+1. Sur la page Propriétés, appuyez/cliquez sur le **[!UICONTROL Insights]** .
+1. Consultez les détails d’utilisation de la ressource dans l’onglet **[!UICONTROL Statistiques]**. Le **[!UICONTROL Score]** décrit les scores totaux d’utilisation et de performances d’une ressource .
 
    Le score d’utilisation indique le nombre de fois que la ressource est utilisée dans diverses solutions.
 
-   Le score **[!UICONTROL Impressions]** correspond au nombre de fois que la ressource est chargée sur le site web. Le nombre affiché sous **[!UICONTROL Clics]** représente le nombre de fois que la ressource est cliquée.
+   Le **[!UICONTROL Impressions]** score correspond au nombre de fois où la ressource est chargée sur le site web. Le nombre affiché sous **[!UICONTROL Clics]** correspond au nombre de clics sur la ressource.
 
 1. Passez en revue la section **[!UICONTROL Statistiques d’utilisation]** pour savoir de quelles entités la ressource faisait partie et dans quelles solutions de création elle a récemment été utilisée. Plus l’utilisation est élevée, plus la ressource a de chances d’être populaire auprès des utilisateurs. Les données d’utilisation s’affichent sous les sections suivantes :
 
@@ -69,9 +73,9 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
 Vous pouvez afficher les scores de toutes les ressources d’un dossier simultanément à l’aide du **[!UICONTROL mode Statistiques]**.
 
-1. Dans l’IU Assets, accédez au dossier contenant les ressources dont vous souhaitez consulter les statistiques.
-1. Appuyez/cliquez sur l’icône Mise en page de la barre d’outils, puis sélectionnez **[!UICONTROL Mode Statistiques]**.
-1. La page affiche les scores d’utilisation pour les ressources. Comparez les évaluations des différentes ressources et tirez-en des conclusions.
+1. Dans l’interface utilisateur d’Assets, accédez au dossier contenant les ressources pour lesquelles vous souhaitez afficher des informations.
+1. Appuyez/cliquez sur l’icône Mise en page de la barre d’outils, puis choisissez **[!UICONTROL Vue Statistiques]**.
+1. La page affiche les scores d’utilisation des ressources. Comparez les évaluations des différentes ressources et tirez-en des conclusions.
 
 ## Planification d’une tâche en arrière-plan {#scheduling-background-job}
 
@@ -82,4 +86,4 @@ La fonction Assets Insights extrait les données d’utilisation des ressources
 
    ![chlimage_1-304](assets/chlimage_1-304.png)
 
-1. Spécifiez la fréquence du planificateur et l’heure de début désirées pour la tâche dans l’expression de planificateur de propriété. Enregistrez les modifications.
+1. Spécifiez la fréquence du planificateur et l’heure de début de la tâche dans l’expression du planificateur de propriété. Enregistrez les modifications.

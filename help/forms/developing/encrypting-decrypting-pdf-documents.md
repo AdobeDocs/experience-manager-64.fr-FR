@@ -11,18 +11,22 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: 670d9680-6125-4a48-82ef-78f1630d780f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '8175'
-ht-degree: 100%
+source-wordcount: '8211'
+ht-degree: 97%
 
 ---
 
 # Chiffrer et déchiffrer des documents PDF {#encrypting-and-decrypting-pdf-documents}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 **À propos du service Encryption**
 
-Le service Encryption vous donne la possibilité de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Un utilisateur autorisé peut déchiffrer le document pour accéder à son contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Adobe Acrobat. De même, si un document PDF est chiffré avec un certificat, l’utilisateur doit déchiffrer le document PDF avec la clé publique correspondant au certificat (clé privée) qui a été utilisé pour chiffrer le document PDF.
+Le service Encryption vous donne la possibilité de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Un utilisateur autorisé peut déchiffrer le document pour accéder au contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Adobe Acrobat. De même, si un document de PDF est chiffré avec un certificat, l’utilisateur doit déchiffrer le document de PDF avec la clé publique correspondant au certificat (clé privée) utilisé pour chiffrer le document de PDF.
 
 Vous pouvez accomplir les tâches suivantes à l’aide du service Encryption :
 
@@ -47,7 +51,7 @@ Si vous chiffrez un document PDF avec un mot de passe, les utilisateurs devront 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -243,7 +247,7 @@ Le chiffrement par certificat vous permet de chiffrer le document pour des desti
 
 L’une des clés fait office de clé privée pour l’utilisateur. Il est important que seul l’utilisateur ait accès à cette clé. L’autre clé est la clé publique de l’utilisateur, qui peut être partagée avec d’autres utilisateurs.
 
-Un certificat de clé publique contient la clé publique d’un utilisateur et ses données d’identification. Le format X.509 est utilisé pour le stockage de certificats. Les certificats sont généralement émis et signés numériquement par une autorité de certification, qui est une entité reconnue qui garantit la validité du certificat. Les certificats comportent une date d’expiration ; au-delà de cette date, ils ne sont plus valides. En outre, les listes de révocation des certificats (CRL) fournissent des informations sur les certificats révoqués avant leur date d’expiration. Les listes CRL sont modifiées régulièrement par des autorités de certification. Vous pouvez également récupérer l’état de révocation d’un certificat par l’intermédiaire du protocole OCSP (Online Certificate Status Protocol, protocole d’état de certificat en ligne) sur le réseau.
+Un certificat de clé publique contient la clé publique d’un utilisateur et ses données d’identification. Le format X.509 est utilisé pour le stockage des certificats. Les certificats sont généralement émis et signés numériquement par une autorité de certification, qui est une entité reconnue qui fournit une mesure de confiance dans la validité du certificat. Les certificats comportent une date d’expiration ; au-delà de cette date, ils ne sont plus valides. En outre, les listes de révocation des certificats (CRL) fournissent des informations sur les certificats révoqués avant leur date d’expiration. Les listes CRL sont publiées régulièrement par les autorités de certification. L’état de révocation d’un certificat peut également être récupéré via le protocole OCSP (Online Certificate Status Protocol) sur le réseau.
 
 >[!NOTE]
 >
@@ -255,7 +259,7 @@ Un certificat de clé publique contient la clé publique d’un utilisateur et s
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -467,7 +471,7 @@ Vous pouvez supprimer le chiffrement avec certificat d’un document PDF afin qu
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Encryption, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -628,7 +632,7 @@ Supprimez le chiffrement avec mot de passe d’un document PDF et permettez ains
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Forms, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -775,7 +779,7 @@ Un document PDF chiffré par mot de passe ou par certificat doit être déverrou
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Encryption, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-4}
 
@@ -953,7 +957,7 @@ Un document PDF peut être protégé par les types de chiffrement suivants :
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-5}
 

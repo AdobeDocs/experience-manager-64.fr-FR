@@ -1,7 +1,7 @@
 ---
-title: Configuration des emplacements pour Forms
+title: Configurer les emplacements pour Forms
 seo-title: Configuring locations for Forms
-description: Découvrez comment configurer l’emplacement pour Forms.
+description: Découvrez comment configurer l’emplacement de Forms.
 seo-description: Learn how to configure location for Forms.
 uuid: ba35888b-492c-4678-890b-160b53e7d659
 contentOwner: admin
@@ -10,42 +10,46 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 283ef073-b71d-4b48-882f-15f05581c1de
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 100%
+source-wordcount: '840'
+ht-degree: 44%
 
 ---
 
-# Configuration des emplacements pour Forms {#configuring-locations-for-forms}
+# Configurer les emplacements pour Forms {#configuring-locations-for-forms}
 
-Vous pouvez indiquer les emplacements URL, URI et fichier des attributs, tels que la racine Web, l’emplacement des formulaires à récupérer et le fichier PDF initial utilisé dans les transformations PDFForm et l’emplacement du cache.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-1. Dans la console d’administration, cliquez sur Services > Forms.
-1. Sous Emplacements, définissez les options appropriées. Les options sont décrites ci-dessous.
+Vous pouvez spécifier les emplacements URL, URI et fichier des attributs, tels que la racine web, l’emplacement des formulaires à récupérer, le fichier du PDF de contrôle utilisé dans les transformations PDFForm et l’emplacement du cache.
+
+1. Dans Administration Console, cliquez sur Services > Forms.
+1. Sous Emplacements, spécifiez les options appropriées. Les options sont décrites ci-dessous.
 1. Cliquez sur Enregistrer.
 
 ## Paramètres des emplacements {#locations-settings}
 
-**URL de base :** URL de base où se trouvent les ressources de formulaires telles que les images et les scripts. Cette valeur est nécessaire pour les transformations HTML incluant des références HREF à des dépendances externes, telles que des images ou des scripts. Un tel script est xfasubset.js, requis pour que les formulaires HTML exécutent les fonctions intelligentes XFA. Cette valeur doit être l’équivalent HTTP de l’URI racine du contenu.
+**URL de base :** URL de base où se trouvent les ressources de formulaires telles que les images et les scripts. Cette valeur est requise pour les transformations de HTML qui incluent des références HREF à des dépendances externes, telles que des images ou des scripts. xfasubset.js est l’un de ces scripts, nécessaire pour que les formulaires de HTML puissent effectuer des opérations d’intelligence XFA. Cette valeur doit être l’équivalent HTTP de l’URI racine du contenu.
 
 >[!NOTE]
 >
->l’URL de base ne prend en charge que les protocoles HTTP ou référentiels. Elle ne prend pas en charge les protocoles tels que file:///. Si vous devez accéder à une ressource telle qu’une feuille de style en cascade personnalisée ou un URI de signature numérique, utilisez la valeur du paramètre API appropriée pour spécifier l’emplacement absolu.
+>L’URL de base ne prend en charge que les protocoles HTTP ou de référentiel. Il ne prend pas en charge les protocoles tels que file:///. Si vous devez accéder à une ressource telle qu’un CSS personnalisé ou un URI de signature numérique, utilisez la valeur de paramètre d’API appropriée pour spécifier l’emplacement absolu.
 
-Quand le chemin d’accès d’une dépendance est absolu, la valeur de l’URL de base est ignorée. Sinon, le chemin d’accès de la dépendance est combiné avec l’URL de base.
+Lorsqu’un chemin de dépendance est absolu, la valeur de l’URL de base est ignorée. Dans le cas contraire, le chemin d’accès à la dépendance est combiné à l’URL de base.
 
 La valeur par défaut est une chaîne vide.
 
-L’exemple suivant pointe vers le même contenu (en utilisant l’URI racine du contenu et l’URL de base) :
+L’exemple suivant pointe vers le même contenu (à l’aide de l’URI racine du contenu et de l’URL de base) :
 
 `(ContentRootURI)/subdir/image1.jpg`
 
 `(BaseURL)/subdir/image1.jpg`
 
-**URI racine web FS :** URL de l’application web de Forms. Vous pouvez laisser ce champ vide si l’application Web de Forms et l’application cliente sont déployées sur le même serveur d’applications ; l’URL racine Web de l’API de Forms est utilisée.
+**URI racine web FS :** URL de l’application web de Forms. Vous pouvez laisser cette zone vide si l’application web Forms et l’application cliente sont déployées sur le même serveur d’applications. L’URL racine Web de l’API Forms sera utilisée.
 
-Si l’application Web de Forms et l’application cliente ne sont pas déployées sur le même serveur d’applications, vous devez indiquer l’URL de l’application Web de Forms dans ce champ, comme indiqué dans l’exemple qui suit :
+Si l’application web Forms et l’application cliente ne sont pas déployées sur le même serveur d’applications, indiquez l’URL de l’application web Forms dans cette zone, comme indiqué dans l’exemple suivant :
 
 `https://<host name>:<port>/FormServer`
 
@@ -57,7 +61,7 @@ La valeur par défaut est une chaîne vide.
 
 La valeur par défaut est une chaîne vide.
 
-**URI racine du contenu :** URI ou emplacement absolu pour la récupération des formulaires. Cette valeur est combinée avec le paramètre sFormQuery, indiqué via l’API, pour construire l’URL absolue vers le formulaire à récupérer. Cette valeur peut faire référence à un répertoire ou à un emplacement Web accessible par HTTP.
+**URI racine du contenu :** URI ou emplacement absolu pour la récupération des formulaires. Cette valeur est combinée avec le paramètre sFormQuery, indiqué via l’API, pour construire l’URL absolue vers le formulaire à récupérer. Cette valeur peut référencer un répertoire ou un emplacement web accessible via HTTP.
 
 La valeur par défaut est une chaîne vide.
 
@@ -65,9 +69,9 @@ La valeur par défaut est une chaîne vide.
 
 La valeur par défaut est `com/adobe/formServer/PA/pa.xci`.
 
-**URI de mappage de polices :** emplacement relatif ou absolu du fichier de mappage de polices. Si la valeur est relative, il est supposé que ce fichier réside dans le fichier EAR déployable d’AEM forms.
+**URI de mappage de polices :** emplacement relatif ou absolu du fichier de mappage de polices. Pour une valeur relative, il est supposé que ce fichier réside dans le fichier EAR AEM déployable.
 
-Le fichier de mappage de polices est utilisé pour créer des mappages de polices personnalisés pour les transformations HTML dans Forms, ce qui permet d’indiquer la police qui sera remplacée lorsqu’une police n’est pas disponible sur l’ordinateur du client.
+Le fichier de mappage des polices est utilisé pour créer des mappages de polices personnalisés pour les transformations de HTML dans les formulaires. Vous pouvez ainsi spécifier la police qui sera remplacée lorsqu’une police n’est pas disponible sur l’ordinateur du client.
 
 La valeur par défaut est `com/adobe/formServer/client-font-map.properties`.
 
@@ -75,11 +79,11 @@ L’exemple suivant présente une entrée dans le fichier de mappage de polices�
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Fichier PDF initial :** fichier PDF initial utilisé dans une transformation PDFForm pour un envoi optimisé. Le fichier PDF initial indique un fichier PDF personnalisé (qui ne contient que des ressources de flux XFA, d’image et de police) qui est ajouté à la conception et aux données du formulaire. Le formulaire est rendu par Acrobat (version 7 ou ultérieure) et s’applique à la transformation PDFForm.
+**Fichier PDF initial :** fichier PDF initial utilisé dans une transformation PDFForm pour un envoi optimisé. Le fichier du PDF de départ spécifie un fichier de PDF personnalisé (contenant uniquement des ressources de flux XFA, d’image et de police) qui est ajouté à la conception de formulaire et aux données. Le formulaire est rendu par Acrobat 7 ou une version ultérieure et s’applique à la transformation PDFForm.
 
 La valeur par défaut est une chaîne vide.
 
-**Emplacement du cache :** détermine l’emplacement du cache disque de Forms. Lorsque ce paramètre est modifié, toutes les informations concernant le cache de l’emplacement courant sont réinitialisées et un nouveau cache est créé dans le nouveau répertoire. Sélectionnez l’une des options suivantes :
+**Emplacement du cache :** détermine l’emplacement du cache disque de Forms. Lorsque vous modifiez ce paramètre, toutes les informations de cache existantes de l’emplacement actuel sont réinitialisées et un nouveau cache est créé au nouvel emplacement. Sélectionnez l’une des options suivantes :
 
 **Emplacement par défaut :** il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
 
@@ -91,4 +95,4 @@ La valeur par défaut est une chaîne vide.
 
 >[!NOTE]
 >
->si vous utilisez un utilitaire de nettoyage des répertoires temporaires, sachez que si la suppression de ces répertoires n’affecte pas les fonctionnalités, elle réduit considérablement les performances pendant une courte période, jusqu’à ce que le nouveau cache soit reconstitué. Pour éviter ce problème, ne supprimez pas ces répertoires lorsque vous videz le répertoire temporaire d’AEM forms.
+>Si vous utilisez un utilitaire de nettoyage des répertoires temporaires, sachez que si la suppression de ces répertoires n’affecte pas les fonctionnalités, elle peut affecter considérablement les performances pendant une courte période jusqu’à la création du nouveau cache. Pour éviter ce problème, ne supprimez pas ces répertoires lors de l’effacement du répertoire temporaire d’AEM forms.

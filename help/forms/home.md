@@ -1,17 +1,21 @@
 ---
-title: Guide de Forms Adobe Experience Manager 6.4
+title: Guide d’Adobe Experience Manager Forms 6.4
 seo-title: AEM 6.4 Forms Guide
 description: Ce guide couvre toutes les tâches d’AEM Forms, notamment la création, la gestion, la publication et la mise à jour des formulaires numériques.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e25a3b24-c460-49a9-a62c-c9ed1f1128e3
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 99%
+source-wordcount: '358'
+ht-degree: 91%
 
 ---
 
-# Guide de Forms Adobe Experience Manager 6.4
+# Guide d’Adobe Experience Manager Forms 6.4
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Ce guide couvre toutes les tâches d’AEM Forms, notamment la création, la gestion, la publication et la mise à jour des formulaires numériques.
 

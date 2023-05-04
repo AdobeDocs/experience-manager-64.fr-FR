@@ -1,7 +1,7 @@
 ---
 title: Configuration de la synchronisation des Live Copies
 seo-title: Configuring Live Copy Synchronization
-description: Découvrez comment configurer la synchronisation de Live Copies.
+description: Découvrez comment configurer la synchronisation de Live Copy.
 seo-description: Learn about configuring Live Copy Synchronization.
 uuid: a14fab89-fd1c-4fec-a9e0-9f6511f764a6
 contentOwner: msm-service
@@ -11,19 +11,23 @@ content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 feature: Multi Site Manager
 exl-id: 42b92993-abde-4ae4-8f0d-44166a3ea22e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2695'
-ht-degree: 99%
+source-wordcount: '2731'
+ht-degree: 62%
 
 ---
 
-# Configuration de la synchronisation des Live Copies{#configuring-live-copy-synchronization}
+# Configuration de la synchronisation des Live Copies {#configuring-live-copy-synchronization}
 
-Procédez comme suit pour contrôler la façon dont les Live Copies sont synchronisées avec leur contenu source.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-* Déterminez si des configurations de déploiement existantes répondent à vos besoins ou si vous devez en créer d’autres.
-* Spécifiez les configurations du déploiement à utiliser avec les Live Copies.
+Effectuez les tâches suivantes pour contrôler le mode et le moment de synchronisation des Live Copies avec leur contenu source.
+
+* Déterminez si les configurations de déploiement existantes répondent à vos besoins ou si vous devez en créer une ou plusieurs.
+* Spécifiez les configurations de déploiement à utiliser pour vos Live Copies.
 
 ## Configurations du déploiement installées et personnalisées {#installed-and-custom-rollout-configurations}
 
@@ -35,7 +39,7 @@ Cette section contient des informations sur les configurations du déploiement i
 
 ### Déclencheurs de déploiement {#rollout-triggers}
 
-Chaque configuration du déploiement utilise un déclencheur qui entraîne la survenue du déploiement. Il peut s’agir de l’un des déclencheurs suivants :
+Chaque configuration du déploiement utilise un déclencheur qui entraîne la survenue du déploiement. Les configurations de déploiement peuvent utiliser l’un des déclencheurs suivants :
 
 * **En cas de déploiement** : la commande **Déploiement** est utilisée dans la page Plan directeur ou la commande **Synchroniser** est utilisée dans la page Live Copy.
 
@@ -51,7 +55,7 @@ Chaque configuration du déploiement utilise un déclencheur qui entraîne la su
 
 ### Configurations de déploiement installées {#installed-rollout-configurations}
 
-Le tableau ci-dessous répertorie les configurations de déploiement installées avec AEM. Le tableau contient les actions de déclenchement et de synchronisation de chaque configuration du déploiement. Si les actions de configuration du déploiement installées ne répondent pas à vos exigences, vous pouvez [créer une autre configuration du déploiement](#creating-a-rollout-configuration).
+Le tableau ci-dessous répertorie les configurations de déploiement installées avec AEM. Le tableau contient les actions de déclenchement et de synchronisation de chaque configuration du déploiement. Si les actions de configuration de déploiement installées ne répondent pas à vos besoins, vous pouvez [créer une configuration de déploiement ;](#creating-a-rollout-configuration).
 
 <table> 
  <tbody> 
@@ -65,29 +69,29 @@ Le tableau ci-dessous répertorie les configurations de déploiement installées
    <td>Configuration de déploiement standard</td> 
    <td>Configuration du déploiement standard qui permet de démarrer le processus de déploiement à partir d’un déclencheur de déploiement et d’actions d’exécutions : créer, mettre à jour, supprimer le contenu et trier les nœuds enfants.</td> 
    <td>En cas de déploiement</td> 
-   <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td> 
+   <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referenceUpdate<br /> productUpdate<br /> orderChildren</td> 
   </tr> 
   <tr> 
    <td>Activer au moment de l’activation du plan directeur</td> 
-   <td>Publie la Live Copy lorsque la source est publiée.</td> 
+   <td>Publie la Live Copy lorsque la source est publiée.</td> 
    <td>En cas d’activation</td> 
    <td>targetActivate</td> 
   </tr> 
   <tr> 
    <td>Désactiver au moment de la désactivation du plan directeur</td> 
-   <td>Désactive la Live Copy lorsque la source est désactivée.</td> 
+   <td>Désactive la Live Copy lorsque la source est désactivée.</td> 
    <td>En cas de désactivation</td> 
    <td>targetDeactivate<br /> </td> 
   </tr> 
   <tr> 
    <td>Pousser au moment de la modification</td> 
-   <td><p>Envoie le contenu de la Live Copy lorsque la source est modifiée.</p> <p>Utilisez cette configuration du déploiement avec parcimonie, car elle utilise le déclencheur En cas de modification.</p> </td> 
+   <td><p>Envoie le contenu à la Live Copy lorsque la source est modifiée.</p> <p>Utilisez cette configuration de déploiement avec parcimonie, car elle utilise le déclencheur En cas de modification .</p> </td> 
    <td>En cas de modification</td> 
-   <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> </td> 
+   <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referenceUpdate<br /> orderChildren<br /> </td> 
   </tr> 
   <tr> 
    <td>Envoyer au moment de la modification (superficielle)</td> 
-   <td><p>Envoie le contenu vers la Live Copy lorsque la page Plan directeur est modifiée, sans mettre à jour des références (par exemple, pour les copies réduites).</p> <p>Utilisez cette configuration du déploiement avec parcimonie, car elle utilise le déclencheur En cas de modification.</p> </td> 
+   <td><p>Envoie le contenu à la Live Copy lorsque la page de plan directeur est modifiée, sans mettre à jour les références (par exemple, pour les copies superficielles).</p> <p>Utilisez cette configuration de déploiement avec parcimonie, car elle utilise le déclencheur En cas de modification .</p> </td> 
    <td>En cas de modification</td> 
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> orderChildren</td> 
   </tr> 
@@ -95,29 +99,29 @@ Le tableau ci-dessous répertorie les configurations de déploiement installées
    <td>Convertir le lancement</td> 
    <td>Configuration de déploiement standard pour la promotion des pages de lancement.</td> 
    <td>En cas de déploiement</td> 
-   <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> markLiveRelationship</td> 
+   <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referenceUpdate<br /> orderChildren<br /> markLiveRelationship</td> 
   </tr> 
   <tr> 
-   <td>Configuration du déploiement du contenu des pages du catalogue</td> 
+   <td>Configuration du déploiement du contenu de la page du catalogue</td> 
    <td>Applique des modèles de pages depuis le plan directeur d’un catalogue.</td> 
    <td>En cas de déploiement</td> 
-   <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productCreateUpdate<br /> orderChildren</td> 
+   <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referenceUpdate<br /> productCreateUpdate<br /> orderChildren</td> 
   </tr> 
   <tr> 
    <td>Configuration du déploiement des mises à jour des pages du catalogue</td> 
-   <td>Applique des propriétés cibles à partir du plan directeur d’un catalogue. Doit être exécuté après la configuration du déploiement du contenu des pages du catalogue.</td> 
+   <td>Applique des propriétés cibles à partir du plan directeur d’un catalogue. Doit s’exécuter après la configuration de déploiement du contenu de la page de catalogue.</td> 
    <td>En cas de déploiement</td> 
    <td>catalogRolloutHooks</td> 
   </tr> 
   <tr> 
    <td>Configuration du déploiement des publications DPS</td> 
-   <td>Configuration du déploiement des publications DPS qui permet de lancer le processus de déploiement avec le déclencheur de déploiement, tout en excluant les propriétés de liaison de FolioProducer sur le déploiement initial.</td> 
+   <td>Configuration du déploiement de publication DPS qui permet de lancer le processus de déploiement sur le déclencheur de déploiement tout en excluant les propriétés de liaison FolioProducer sur le déploiement initial</td> 
    <td>En cas de déploiement</td> 
-   <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> dpsMetadataFilter</td> 
+   <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referenceUpdate<br /> orderChildren<br /> dpsMetadataFilter</td> 
   </tr> 
   <tr> 
-   <td>Configuration du déploiement du catalogue (5.6.0) hérité</td> 
-   <td>Obsolète. Utilisez l’API Catalog Generator au lieu de MSM pour les déploiements de catalogues.</td> 
+   <td>Configuration de déploiement du catalogue héritée (5.6.0)</td> 
+   <td>Obsolète. Utilisez l’API Catalog Generator au lieu de MSM pour les déploiements de catalogue.</td> 
    <td>En cas de déploiement</td> 
    <td>editProperties</td> 
   </tr> 
@@ -152,51 +156,51 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr> 
   <tr> 
    <td>editProperties</td> 
-   <td><p>Modifie les propriétés de la Live Copy. La propriété editMap détermine les propriétés modifiées et leur valeur. La valeur de la propriété editMap doit utiliser le format suivant :</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>Les éléments <code>current_value</code> et <code>new_value</code> sont des expressions régulières. <br /> </p> <p>Prenons l’exemple de la valeur suivante pour la propriété editMap :</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Cette valeur modifie les propriétés des nœuds de la Live Copy comme suit :</p> 
+   <td><p>Modifie les propriétés de la Live Copy. La propriété editMap détermine les propriétés qui sont modifiées et leur valeur. La valeur de la propriété editMap doit utiliser le format suivant :</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>Les éléments <code>current_value</code> et <code>new_value</code> sont des expressions régulières. <br /> </p> <p>Prenons l’exemple de la valeur suivante pour la propriété editMap :</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Cette valeur modifie les propriétés des nœuds de la Live Copy comme suit :</p> 
     <ul> 
      <li>Les propriétés <code>sling:resourceType</code> qui sont définies sur <code>contentpage</code> ou sur <code>homepage</code> sont configurées sur <code>mobilecontentpage.</code></li> 
      <li>Les propriétés <code>cq:template</code> qui sont définies sur <code>contentpage</code> sont configurées sur <code>mobilecontentpage.</code></li> 
     </ul> </td> 
-   <td><p> </p> <p>editMap : (chaîne) identifie la propriété, la valeur actuelle et la nouvelle valeur. Pour plus d’informations, consultez la description.<br /> </p> </td> 
+   <td><p> </p> <p>editMap : (Chaîne) Identifie la propriété, la valeur actuelle et la nouvelle valeur. Voir la description pour plus d’informations.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>notify</td> 
-   <td>Envoie un événement de page que la page a déployé. Pour être averti, un utilisateur doit d’abord s’abonner aux événements de déploiement.</td> 
+   <td>Envoie un événement de page que la page a été déployée. Pour être averti, un utilisateur doit d’abord s’abonner aux événements de déploiement.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>orderChildren</td> 
-   <td>Sur la Live Copy, les enfants (nœuds) sont classés suivant l’ordre du plan directeur<br />. </td> 
+   <td>Sur la Live Copy, il classe les enfants (noeuds) en fonction de l’ordre du plan directeur.<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>referencesUpdate</td> 
-   <td><p>Dans la Live Copy, cette action de synchronisation met à jour les références, comme les liens « J’aime ».<br /> Elle recherche des chemins d’accès dans les pages Live Copy, qui pointent vers une ressource dans le plan directeur. Ensuite, elle met à jour le chemin d’accès pour qu’il pointe vers la ressource associée dans la Live Copy (au lieu du plan directeur). Les références qui comportent des cibles en dehors du plan directeur ne sont pas modifiées.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service d’action de mise à jour des références MSM CQ</a> pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. </p> </td> 
+   <td><p>Sur la Live Copy, cette action de synchronisation met à jour les références telles que les liens J’aime.<br /> Il recherche les chemins d’accès dans les pages Live Copy qui pointent vers une ressource dans le plan directeur. Ensuite, elle met à jour le chemin d’accès pour qu’il pointe vers la ressource associée dans la Live Copy (au lieu du plan directeur). Les références qui comportent des cibles en dehors du plan directeur ne sont pas modifiées.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service d’action de mise à jour des références MSM CQ</a> pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. </p> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>targetVersion</td> 
-   <td><p>Crée une version de la Live Copy.</p> <p>Cette action doit être la seule action de synchronisation incluse dans une configuration du déploiement.</p> </td> 
+   <td><p>Crée une version de la Live Copy.</p> <p>Cette action doit être la seule action de synchronisation incluse dans une configuration du déploiement.</p> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>targetActivate</td> 
-   <td><p>Active la Live Copy.</p> <p>Cette action doit être la seule action de synchronisation incluse dans une configuration du déploiement.</p> </td> 
+   <td><p>Active la Live Copy.</p> <p>Cette action doit être la seule action de synchronisation incluse dans une configuration du déploiement.</p> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>targetDeactivate</td> 
-   <td><p>Désactive la Live Copy.</p> <p>Cette action doit être la seule action de synchronisation incluse dans une configuration du déploiement.</p> </td> 
+   <td><p>Désactive la Live Copy.</p> <p>Cette action doit être la seule action de synchronisation incluse dans une configuration du déploiement.</p> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>workflow</td> 
-   <td><p>Lance le workflow défini par la propriété cible (pour les pages uniquement) et utilise la Live Copy comme charge utile.</p> <p>Le chemin d’accès à la cible est le chemin d’accès du nœud du modèle.</p> </td> 
-   <td>target : (chaîne) chemin d’accès au modèle de workflow.<br /> </td> 
+   <td><p>Démarre le workflow défini par la propriété cible (pour les pages uniquement) et utilise la Live Copy comme charge utile.</p> <p>Le chemin d’accès à la cible est le chemin d’accès du nœud du modèle.</p> </td> 
+   <td>target : (Chaîne) Chemin d’accès au modèle de processus.<br /> </td> 
   </tr> 
   <tr> 
    <td>mandatory</td> 
-   <td><p>Définit l’autorisation de différentes listes de contrôle d’accès dans la page Live Copy en lecture seule pour un groupe d’utilisateurs spécifique. Les listes de contrôle d’accès ci-dessous sont configurées :</p> 
+   <td><p>Définit l’autorisation de plusieurs listes de contrôle d’accès sur la page Live Copy sur lecture seule pour un groupe d’utilisateurs spécifique. Les listes ACL suivantes sont configurées :</p> 
     <ul> 
      <li>ActionSet.ACTION_NAME_REMOVE</li> 
      <li>ActionSet.ACTION_NAME_SET_PROPERTY</li> 
@@ -206,7 +210,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr> 
   <tr> 
    <td>mandatoryContent</td> 
-   <td><p>Définit l’autorisation de différentes listes de contrôle d’accès dans la page Live Copy en lecture seule pour un groupe d’utilisateurs spécifique. Les listes de contrôle d’accès ci-dessous sont configurées :</p> 
+   <td><p>Définit l’autorisation de plusieurs listes de contrôle d’accès sur la page Live Copy sur lecture seule pour un groupe d’utilisateurs spécifique. Les listes ACL suivantes sont configurées :</p> 
     <ul> 
      <li>ActionSet.ACTION_NAME_SET_PROPERTY</li> 
      <li>ActionSet.ACTION_NAME_ACL_MODIFY</li> 
@@ -215,7 +219,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr> 
   <tr> 
    <td>mandatoryStructure</td> 
-   <td>Définit l’autorisation de la liste de contrôle d’accès ActionSet.ACTION_NAME_REMOVE dans la page Live Copy en lecture seule pour un groupe d’utilisateurs spécifique. Utilisez cette action uniquement pour des pages.</td> 
+   <td>Définit l’autorisation de la liste de contrôle d’accès ActionSet.ACTION_NAME_REMOVE sur la page Live Copy sur lecture seule pour un groupe d’utilisateurs spécifique. Utilisez cette action uniquement pour des pages.</td> 
    <td>cible : (chaîne) identifiant du groupe pour lequel vous définissez des autorisations. </td> 
   </tr> 
   <tr> 
@@ -225,44 +229,44 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr> 
   <tr> 
    <td>PageMoveAction</td> 
-   <td><p>L’action PageMoveAction s’applique lorsqu’une page a été déplacée dans le plan directeur.</p> <p>L’action copie plutôt qu’elle ne déplace la page Live Copy (associée) de l’emplacement précédant le déplacement vers l’emplacement suivant le déplacement.</p> <p>L’action PageMoveAction ne modifie pas la page Live Copy à l’emplacement précédant le déplacement. Par conséquent, pour les actions RolloutConfigurations consécutives, son état est LiveRelationhip sans plan directeur.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service d’action de déplacement de page MSM CQ</a> pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. </p> <p>Cette action doit être la seule action de synchronisation incluse dans une configuration du déploiement.</p> </td> 
-   <td><p>prop_referenceUpdate : (booléen) définissez cette action sur true pour mettre à jour les références. La valeur par défaut est true.</p> <p> </p> </td> 
+   <td><p>L’action PageMoveAction s’applique lorsqu’une page a été déplacée dans le plan directeur.</p> <p>L’action copie plutôt que de déplacer la page Live Copy (associée) de l’emplacement précédant le déplacement vers l’emplacement suivant.</p> <p>L’action PageMoveAction ne modifie pas la page Live Copy à l’emplacement précédant le déplacement. Par conséquent, pour les configurations de déploiement consécutives, il a l’état d’une relation en direct sans plan directeur.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service d’action de déplacement de page MSM CQ</a> pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. </p> <p>Cette action doit être la seule action de synchronisation incluse dans une configuration du déploiement.</p> </td> 
+   <td><p>prop_referenceUpdate : (Booléen) Définissez cette variable sur true pour mettre à jour les références. La valeur par défaut est true.</p> <p> </p> </td> 
   </tr> 
   <tr> 
    <td>productCreateUpdate</td> 
-   <td>Crée ou met à jour des ressources de produit dans un catalogue. Cette action est conçue pour être utilisée dans l’une des situations suivantes : 
+   <td>Crée ou met à jour des ressources de produit dans un catalogue. Cette action est destinée à être utilisée dans l’une des situations suivantes : 
     <ul> 
-     <li>Génération ou déploiement d’un catalogue (ou d’une partie d’un catalogue).</li> 
+     <li>Génération ou déploiement d’un catalogue (ou d’une section de catalogue)</li> 
      <li>Un utilisateur restaure l’héritage de synchronisation pour un composant de produit.</li> 
     </ul> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>markLiveRelationship</td> 
-   <td>Indique qu’il existe une relation en direct pour le contenu créé au lancement.</td> 
+   <td>Indique qu’il existe une relation dynamique pour le contenu créé par le lancement.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>catalogRolloutHooks</td> 
-   <td>Exécute des hooks de déploiement spécifiques à la génération d’un catalogue. Appelle les méthodes executePageRolloutHooks et executeProductRolloutHooks de CatalogGenerator.<br /> Voir com.adobe.cq.commerce.pim.api.CatalogGenerator dans les documents Java d’AEM.</td> 
+   <td>Exécute des hooks de déploiement spécifiques à la génération du catalogue. Appelle les méthodes executePageRolloutHooks et executeProductRolloutHooks de CatalogGenerator.<br /> Voir com.adobe.cq.commerce.pim.api.CatalogGenerator dans les Javadocs d’AEM.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>productUpdate</td> 
-   <td>Met à jour des pages de produit dans une Live Copy d’un catalogue de produits.</td> 
+   <td>Met à jour les pages de produits dans une Live Copy d’un catalogue de produits</td> 
    <td> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Création d’une configuration du déploiement {#creating-a-rollout-configuration}
+### Création d’une configuration de déploiement {#creating-a-rollout-configuration}
 
-Vous pouvez [créer une configuration du déploiement](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) lorsque les configurations de déploiement installées ne respectent pas les exigences de votre application :
+Vous pouvez [créer une configuration de déploiement ;](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) lorsque les configurations de déploiement installées ne répondent pas aux exigences de votre application :
 
-* [Créez une configuration du déploiement](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
-* [Ajoutez des actions de synchronisation à la configuration de déploiement](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
+* [Création de la configuration de déploiement](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
+* [Ajout d’actions de synchronisation à la configuration de déploiement](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
 
-La nouvelle configuration de déploiement est alors disponible lorsque vous définissez des configurations du déploiement dans un plan directeur ou une page Live Copy.
+La nouvelle configuration de déploiement est alors disponible pour vous lors de la définition des configurations de déploiement sur une page de plan directeur ou de Live Copy.
 
 ### Exclusion des propriétés et des types de nœuds de la synchronisation {#excluding-properties-and-node-types-from-synchronization}
 
@@ -270,7 +274,7 @@ Vous pouvez configurer différents services OSGi qui prennent en charge les act
 
 Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
-Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles vous pouvez spécifier les nœuds à exclure. Le tableau contient le nom des services à configurer à l’aide de la console web et le PID pour la configuration à l’aide d’un nœud de référentiel.
+Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles vous pouvez spécifier les nœuds à exclure. Le tableau fournit les noms des services à configurer à l’aide de la console web et du PID pour la configuration à l’aide d’un noeud de référentiel.
 
 | Action de synchronisation | Nom de service dans la console web | PID de service |
 |---|---|---|
@@ -278,7 +282,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles
 | contentDelete | Action de suppression de contenu MSM CQ | com.day.cq.wcm.msm.impl.actions.ContentDeleteActionFactory |
 | contentUpdate | Action de mise à jour de contenu MSM CQ | com.day.cq.wcm.msm.impl.actions.ContentUpdateActionFactory |
 | PageMoveAction | Action de déplacement de page MSM CQ | com.day.cq.wcm.msm.impl.actions.PageMoveActionFactory |
-| referenceUpdate | Action de mise à jour de références MSM CQ | com.day.cq.wcm.msm.impl.actions.ReferencesUpdateActionFactory |
+| referencesUpdate | Action de mise à jour de références MSM CQ | com.day.cq.wcm.msm.impl.actions.ReferencesUpdateActionFactory |
 
 Le tableau ci-dessous décrit les propriétés que vous pouvez configurer :
 
@@ -309,7 +313,7 @@ Le tableau ci-dessous décrit les propriétés que vous pouvez configurer :
 
 >[!NOTE]
 >
->Dans l’interface utilisateur classique, l’icône de verrou qui s’affiche dans la boîte de dialogue Propriétés de page pour les pages Live Copy ne reflète pas la configuration de la propriété Propriétés de page exclues. L’icône de verrou s’affiche même pour les propriétés exclues de l’action de synchronisation.
+>Dans l’interface utilisateur classique, l’icône de verrou qui s’affiche dans la boîte de dialogue Propriétés de page pour les pages Live Copy ne reflète pas la configuration de la propriété Propriétés de page exclues. L’icône de verrouillage s’affiche même pour les propriétés qui sont exclues de l’action de synchronisation.
 
 >[!NOTE]
 >
@@ -317,9 +321,9 @@ Le tableau ci-dessous décrit les propriétés que vous pouvez configurer :
 
 #### CQ MSM Content Update Action – Exclusions {#cq-msm-content-update-action-exclusions}
 
-Différents types de nœuds et propriétés sont exclus par défaut. Ils sont définis dans la configuration OSGi du service **CQ MSM Content Update Action** sous **Propriétés de page exclues**.
+Plusieurs propriétés et types de noeud sont exclus par défaut. Ils sont définis dans la configuration OSGi de **Action de mise à jour du contenu CQ MSM**, sous **Propriétés de page exclues**.
 
-Par défaut, les propriétés correspondant aux expressions régulières ci-dessous sont exclues (c’est-à-dire non mises à jour) lors du déploiement :
+Par défaut, les propriétés correspondant aux expressions régulières suivantes sont exclues (c’est-à-dire non mises à jour) au moment du déploiement :
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 
@@ -335,7 +339,7 @@ Vous pouvez configurer différents services OSGi qui prennent en charge les act
 
 Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
-Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles vous pouvez spécifier la mise à jour des références. Le tableau contient le nom des services à configurer à l’aide de la console web et le PID pour la configuration à l’aide d’un nœud de référentiel.
+Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles vous pouvez spécifier la mise à jour des références. Le tableau fournit les noms des services à configurer à l’aide de la console web et du PID pour la configuration à l’aide d’un noeud de référentiel.
 
 <table> 
  <tbody> 
@@ -356,24 +360,24 @@ Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles
 
 ## Spécification des configurations de déploiement à utiliser {#specifying-the-rollout-configurations-to-use}
 
-MSM permet de spécifier des groupes de configurations de déploiement généralement utilisées et, si nécessaire, de les remplacer pour des Live Copies spécifiques. MSM fournit différents emplacements pour la spécification des configurations de déploiement à utiliser. L’emplacement détermine si la configuration s’applique à une Live Copy spécifique.
+MSM permet de spécifier des groupes de configurations de déploiement généralement utilisées et, si nécessaire, de les remplacer pour des Live Copies spécifiques. MSM fournit différents emplacements pour la spécification des configurations de déploiement à utiliser. L’emplacement détermine si la configuration s’applique à une Live Copy spécifique.
 
-La liste ci-après des emplacements où vous pouvez spécifier les configurations de déploiement à utiliser décrit comment MSM détermine les configurations de déploiement à utiliser pour une Live Copy :
+La liste suivante d’emplacements où vous pouvez spécifier les configurations de déploiement à utiliser décrit comment MSM détermine les configurations de déploiement à utiliser pour une Live Copy :
 
 * **[Propriétés des pages Live Copy](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page) :** lorsqu’une page Live Copy est configurée pour utiliser une ou plusieurs configurations de déploiement, MSM utilise ces configurations de déploiement.
 * **[Propriétés des pages de plan directeur](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page) :** lorsqu’une Live Copy est basée sur un plan directeur et que la page Live Copy n’est pas configurée avec une configuration de déploiement, la configuration du déploiement associée à la page source du plan directeur est utilisée.
 * **Propriétés des pages parentes Live Copy** : lorsque ni la page Live Copy ni la page source du plan directeur ne sont configurées avec une configuration de déploiement, c’est la configuration du déploiement qui s’applique à la page parente de la page Live Copy qui est utilisée.
 * **[Valeurs système par défaut](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration) :** lorsque la configuration du déploiement de la page parente de la Live Copy ne peut pas être déterminée, c’est la configuration du déploiement des valeurs système par défaut qui est utilisée.
 
-Par exemple, un plan directeur utilise le site de référence We.Retail comme contenu source. Un site est créé à partir du plan directeur. Chaque élément de la liste ci-dessous décrit un scénario d’utilisation distinct des configurations de déploiement :
+Par exemple, un plan directeur utilise le site de référence We.Retail comme contenu source. Un site est créé à partir du plan directeur. Chaque élément de la liste suivante décrit un scénario différent concernant l’utilisation des configurations de déploiement :
 
-* Aucune des pages de plan directeur ou des pages Live Copy n’est configurée pour utiliser une configuration du déploiement. MSM utilise la configuration du déploiement système par défaut pour toutes les pages Live Copy.
-* La page principale du site de référence We.Retail est configurée avec plusieurs configurations de déploiement. MSM utilise ces configurations de déploiement pour toutes les pages Live Copy.
-* La page principale du site de référence We.Retail est configurée avec plusieurs configurations de déploiement et la page principale du site Live Copy est configurée avec un autre ensemble de configurations de déploiement. MSM utilise les configurations de déploiement configurées sur la page principale du site Live Copy.
+* Aucune des pages de plan directeur ou des pages Live Copy n’est configurée pour utiliser une configuration du déploiement. MSM utilise la configuration de déploiement par défaut du système pour toutes les pages Live Copy.
+* La page principale du site de référence We.Retail est configurée avec plusieurs configurations de déploiement. MSM utilise ces configurations de déploiement pour toutes les pages Live Copy.
+* La page principale du site de référence We.Retail est configurée avec plusieurs configurations de déploiement et la page principale du site Live Copy est configurée avec un autre ensemble de configurations de déploiement. MSM utilise les configurations de déploiement configurées sur la page racine du site Live Copy.
 
 ### Définition des configurations de déploiement pour une page Live Copy {#setting-the-rollout-configurations-for-a-live-copy-page}
 
-Configurez une page Live Copy avec des configurations du déploiement à utiliser lorsque la page source est déployée. Les pages enfants héritent de la configuration par défaut. Lorsque vous configurez la configuration du déploiement à utiliser, vous remplacez la configuration qui a été héritée pas la page Live Copy de son parent.
+Configurez une page Live Copy avec des configurations du déploiement à utiliser lorsque la page source est déployée. Les pages enfants héritent de la configuration par défaut. Lorsque vous configurez la configuration de déploiement à utiliser, vous remplacez la configuration héritée par la page Live Copy de son parent.
 
 Vous pouvez également configurer les configurations du déploiement d’une page Live Copy lorsque vous créez la [Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page).
 
@@ -388,7 +392,7 @@ Vous pouvez également configurer les configurations du déploiement d’une pag
 
 1. Si nécessaire, ajustez l’indicateur **Héritage de Live Copy**. Si cette option est activée, la configuration de Live Copy est effective sur tous les enfants.
 
-1. Désélectionnez la propriété **Hériter de la configuration de déploiement du parent**, puis sélectionnez une ou plusieurs configurations de déploiement dans la liste.
+1. Effacez la variable **Hériter de la configuration de déploiement du parent** , puis sélectionnez une ou plusieurs configurations de déploiement dans la liste.
 
    Les configurations de déploiement sélectionnées s’affichent sous la liste déroulante.
 
@@ -400,7 +404,7 @@ Vous pouvez également configurer les configurations du déploiement d’une pag
 
 Configurez une page de plan directeur avec les configurations de déploiement à utiliser lorsque la page de plan directeur est déployée.
 
-Notez que les pages enfants de la page de plan directeur héritent de la configuration. Lorsque vous configurez la configuration du déploiement à utiliser, il se peut que vous remplaciez la configuration dont la page hérite de son parent.
+Notez que les pages enfants de la page de plan directeur héritent de la configuration. Lorsque vous configurez la configuration de déploiement à utiliser, vous pouvez remplacer la configuration que la page hérite de son parent.
 
 1. Utilisez la console **Sites** pour sélectionner la page racine du plan directeur.
 1. Sélectionnez **Propriétés** dans la barre d’outils.
@@ -410,7 +414,7 @@ Notez que les pages enfants de la page de plan directeur héritent de la configu
 
 ### Définition de la configuration du déploiement système par défaut {#setting-the-system-default-rollout-configuration}
 
-Spécifiez une configuration du déploiement à utiliser comme valeur système par défaut. Pour spécifier la valeur par défaut, configurez le service OSGi :
+Spécifiez une configuration du déploiement à utiliser comme valeur système par défaut. Pour spécifier la valeur par défaut, configurez le service OSGi :
 
 * **Gestionnaire de relations en direct de gestion de contenu web Day CQ**
 Le PID du service est 

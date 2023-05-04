@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 exl-id: d86411b9-6ed1-4091-bf5c-d46b4e518da4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 0%
+source-wordcount: '150'
+ht-degree: 6%
 
 ---
 
 # Utilisation de Maven pour Communities {#using-maven-for-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
@@ -54,6 +58,10 @@ Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts 
 
 <!--
 # Using Maven for Communities {#using-maven-for-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 
 ## Overview {#overview}
 

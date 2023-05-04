@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 49584fb4-8c3a-4d73-acd6-0879a67f6093
 role: Developer
 exl-id: ea6a05ff-d8d8-4a4f-b1aa-e09670e40ba7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 100%
+source-wordcount: '740'
+ht-degree: 96%
 
 ---
 
 # Désassembler un document PDF à l’aide de l’API de service web {#disassemble-a-pdf-document-usingthe-web-service-api}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Pour désassembler un document PDF à l’aide de l’API du service Assembler (service web), procédez comme suit :
 

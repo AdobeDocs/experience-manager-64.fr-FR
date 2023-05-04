@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 role: Developer
 exl-id: fdbf9942-7e4d-4b76-971f-d26d89c4c4cf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '269'
+ht-degree: 89%
 
 ---
 
 # Démarrage rapide de l’API Java du service XMP Utilities (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les démarrages rapides suivants sont disponibles pour le service XMP Utilities.
 

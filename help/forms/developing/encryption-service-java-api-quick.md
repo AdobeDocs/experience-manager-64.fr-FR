@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 role: Developer
 exl-id: 3f287fb1-b1bb-4494-ad66-5addcc6ef2a8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 93%
+source-wordcount: '517'
+ht-degree: 88%
 
 ---
 
 # Démarrage rapide (SOAP) de l’API Java du service Encryption  {#encryption-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 [Démarrage rapide (mode SOAP) : chiffrement d’un document PDF à l’aide de l’API Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 

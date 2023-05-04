@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Metadata,Developer Tools,Asset Management
 role: Admin,Architect
 exl-id: 6c9e53e9-5e54-4816-9431-41e796340d1e
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 29%
+source-wordcount: '230'
+ht-degree: 28%
 
 ---
 
 # Utilisez Apache Tika pour détecter le type MIME des ressources numériques {#detecting-mime-type-of-assets-using-apache-tika}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 En règle générale, Adobe Experience Manager Assets détecte le type MIME des ressources que vous chargez à partir de leur extension de fichier. Si vous utilisez Apache Tika pour charger des ressources, [!DNL Experience Manager] Les ressources détectent leur type MIME à partir du flux de contenu pendant l’opération de chargement au lieu de l’extension de fichier.
 

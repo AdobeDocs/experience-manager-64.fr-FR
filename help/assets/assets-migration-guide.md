@@ -5,16 +5,20 @@ contentOwner: AG
 feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1772'
-ht-degree: 64%
+source-wordcount: '1808'
+ht-degree: 33%
 
 ---
 
 # Guide de migration des ressources {#assets-migration-guide}
 
-Lors de la migration des ressources dans AEM, il existe plusieurs étapes à prendre en compte. L’extraction de ressources et de métadonnées en dehors de leur page d’accueil actuelle ne fait pas partie du cadre de ce document, car il varie considérablement d’une mise en oeuvre à l’autre. Au lieu de cela, ce document décrit comment importer ces ressources dans AEM, appliquer leurs métadonnées, générer des rendus et activer ou publier les ressources.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Lors de la migration des ressources vers AEM, plusieurs étapes sont à prendre en compte. L’extraction de ressources et de métadonnées en dehors de leur page d’accueil actuelle ne fait pas partie du cadre de ce document, car il varie considérablement d’une mise en oeuvre à l’autre. Au lieu de cela, ce document décrit comment importer ces ressources dans AEM, appliquer leurs métadonnées, générer des rendus et activer ou publier les ressources.
 
 ## Prérequis {#prerequisites}
 
@@ -26,15 +30,15 @@ Avant d’exécuter l’une des étapes décrites ci-dessous, passez en revue et
 >
 >* ACS [!DNL Experience Manager] Tools Tag Maker
 >* ACS [!DNL Experience Manager] Outils Importateur de ressources CSV
->* Bulk Workflow Manager d’ACS Commons
->* Fast Action Manager d’ACS Commons
->* Synthetic Workflow
+>* Gestionnaire de processus en bloc ACS Commons
+>* ACS Commons Fast Action Manager
+>* Processus syntaxique
 >
 >Ces logiciels sont Open Source et couverts par la [Licence Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Pour poser une question ou signaler un problème, consultez les sections respectives [ [!DNL Experience Manager] Problèmes GitHub pour les outils ACS ](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) et [ [!DNL Experience Manager] ACS Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
 ## Migrer vers [!DNL Experience Manager] {#migrate-to-aem}
 
-La migration des ressources vers [!DNL Experience Manager] se déroule en plusieurs étapes et doit être considérée comme un processus échelonné. Les phases de la migration sont les suivantes :
+La migration des ressources vers [!DNL Experience Manager] se déroule en plusieurs étapes et doit être considérée comme un processus échelonné. Les phases de migration sont les suivantes :
 
 1. Désactivation des workflows.
 1. Chargement des balises.
@@ -55,9 +59,9 @@ Vous avez peut-être déjà mis en place une taxonomie de balises que vous appli
 
 ### Assimilation des ressources {#ingest-assets}
 
-Les performances et la stabilité sont des préoccupations importantes lors de l’intégration des ressources dans le système. Lors du chargement de nombreuses données dans Experience Manager, assurez-vous que le système fonctionne correctement. Cela a réduit le temps nécessaire à l’ajout des données et permet d’éviter de surcharger le système. Cela permet d’éviter les blocages du système, en particulier dans les systèmes déjà en production.
+Les performances et la stabilité sont des préoccupations importantes lors de l’ingestion de ressources dans le système. Lors du chargement de nombreuses données dans Experience Manager, assurez-vous que le système fonctionne correctement. Cela a réduit le temps nécessaire à l’ajout des données et permet d’éviter de surcharger le système. Cela permet d’éviter les blocages du système, en particulier dans les systèmes déjà en production.
 
-Il existe deux approches pour charger les ressources dans le système : une approche basée sur le push utilisant le protocole HTTP ou une approche basée sur l’extraction utilisant les API JCR.
+Le chargement des ressources dans le système peut se faire de deux façons : une approche basée sur les notifications push utilisant HTTP ou une approche basée sur les tirages utilisant les API JCR.
 
 #### Pousser via HTTP {#push-through-http}
 
@@ -65,10 +69,10 @@ L’équipe Managed Services d’Adobe utilise un outil appelé Glutton pour ch
 
 L’utilisation de l’approche Push à l’aide du protocole HTTPS présente deux inconvénients :
 
-1. Transmettez les ressources via HTTP au serveur. Cette transmission nécessite beaucoup de temps et crée une surcharge, ce qui rallonge le temps nécessaire pour effectuer la migration.
-1. Si vous disposez de balises et de métadonnées personnalisées devant être appliquées aux ressources, cette approche nécessite un deuxième processus personnalisé que vous devez exécuter pour appliquer ces métadonnées aux ressources une fois qu’elles ont été importées.
+1. Transmettez les ressources via HTTP au serveur. Cela nécessite pas mal de temps et est chronophage, ce qui rallonge le temps nécessaire à la migration.
+1. Si des balises et des métadonnées personnalisées doivent être appliquées aux ressources, cette approche nécessite un deuxième processus personnalisé que vous devez exécuter pour appliquer ces métadonnées aux ressources après leur importation.
 
-L’autre approche de l’intégration des ressources consiste à extraire les ressources du système de fichiers local. Toutefois, si vous ne parvenez pas à obtenir un lecteur externe ou un partage réseau monté sur le serveur pour effectuer une approche par extraction, la publication des ressources en utilisant HTTP est la meilleure option.
+L’autre méthode d’ingestion de ressources consiste à extraire des ressources du système de fichiers local. Cependant, si vous ne pouvez pas obtenir un lecteur externe ou un partage réseau monté sur le serveur pour effectuer une approche basée sur l’extraction, la publication des ressources sur HTTP est la meilleure option.
 
 #### Extraction à partir du système de fichiers local {#pull-from-the-local-file-system}
 
@@ -82,18 +86,18 @@ Après avoir chargé les ressources dans le système, vous devez les traiter via
 
 Après avoir configuré le workflow en fonction de vos besoins, vous disposez de deux options pour l’exécuter :
 
-1. L’approche la plus simple consiste à utiliser l’outil [Bulk Workflow Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Cet outil permet d’exécuter une requête et de traiter les résultats de la requête via un workflow. Il existe également des options permettant de définir la taille des lots.
+1. L’approche la plus simple consiste à utiliser l’outil [Bulk Workflow Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Cet outil permet d&#39;exécuter une requête et de traiter les résultats de la requête via un workflow. Il existe également des options pour définir les tailles de lots.
 1. Vous pouvez utiliser l’outil [Fast Action Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) en association avec [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Bien que cette approche soit beaucoup plus impliquée, elle vous permet de supprimer la surcharge du moteur de processus [!DNL Experience Manager], tout en optimisant l’utilisation des ressources du serveur. De plus, Fast Action Manager améliore les performances en surveillant de manière dynamique les ressources du serveur et en réduisant la charge placée sur le système. Des exemples de scripts ont été fournis sur la page de fonctionnalités d’ACS Commons.
 
 ### Activation des ressources {#activate-assets}
 
-Pour les déploiements disposant d’un niveau de publication, vous devez activer les ressources dans la ferme de serveurs de publication. Bien qu’Adobe recommande d’exécuter plusieurs instances de publication, il est plus efficace de répliquer toutes les ressources sur une seule instance de publication, puis de cloner cette instance. Lorsque vous activez un grand nombre de ressources, après le déclenchement d’une activation d’arborescence, vous devrez peut-être intervenir. En effet, lors du déclenchement des activations, les éléments sont ajoutés à la file d’attente des tâches et des événements Sling. Une fois que la taille de cette file d’attente commence à dépasser environ 40 000 éléments, le traitement ralentit considérablement. Lorsque la taille de cette file d’attente dépasse 100 000 éléments, la stabilité du système commence à souffrir.
+Pour les déploiements comportant un niveau de publication, vous devez activer les ressources vers la ferme de publication. Bien qu’Adobe recommande d’exécuter plusieurs instances de publication, il est plus efficace de répliquer toutes les ressources sur une seule instance de publication, puis de cloner cette instance. Lors de l’activation d’un grand nombre de ressources, après le déclenchement d’une activation d’arborescence, vous devrez peut-être intervenir. En effet, lors du déclenchement des activations, les éléments sont ajoutés à la file d’attente des tâches et des événements Sling. Une fois que la taille de cette file d’attente commence à dépasser environ 40 000 éléments, le traitement ralentit considérablement. Une fois que la taille de cette file d’attente dépasse 100 000 éléments, la stabilité du système commence à en pâtir.
 
-Pour contourner ce problème, vous pouvez utiliser l’outil [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) pour gérer la réplication des ressources. Il fonctionne sans utiliser les files d’attente Sling, réduisant les surcharges, tout en régulant la charge de travail pour éviter que le serveur ne soit surchargé. Un exemple d’utilisation de cet outil pour gérer la réplication est présenté sur la page de documentation de FAM.
+Pour contourner ce problème, vous pouvez utiliser la variable [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) pour gérer la réplication des ressources. Cela fonctionne sans utiliser les files d’attente Sling, réduisant la surcharge, tout en réduisant la charge de travail pour empêcher le serveur d’être surchargé. Un exemple d’utilisation de FAM pour gérer la réplication est présenté sur la page de documentation de la fonctionnalité.
 
 D’autres options permettant de transférer des ressources vers la batterie de serveurs de publication incluent l’utilisation de [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) ou [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), qui sont fournis en tant qu’outils dans le cadre de Jackrabbit. Une autre option consiste à utiliser un outil open-source pour votre infrastructure [!DNL Experience Manager], à savoir [Grabbit](https://github.com/TWCable/grabbit), qui se targue d’être plus rapide que vlt.
 
-Pour toutes ces approches, notez que les ressources de l’instance de création ne s’affichent pas comme ayant été activées. Pour marquer ces ressources avec l’état d’activation correct, vous devez également exécuter un script les marquant comme activées.
+Pour toutes ces approches, notez que les ressources de l’instance de création ne s’affichent pas comme ayant été activées. Pour gérer le marquage de ces ressources avec l’état d’activation correct, vous devez également exécuter un script pour les marquer comme activées.
 
 >[!NOTE]
 >
@@ -101,15 +105,15 @@ Pour toutes ces approches, notez que les ressources de l’instance de création
 
 ### Clonage de la publication {#clone-publish}
 
-Une fois les ressources activées, vous pouvez cloner votre instance de publication afin de créer autant de copies que nécessaire pour le déploiement. Le clonage d’un serveur est relativement simple, mais il existe quelques étapes importantes à retenir. Pour cloner la publication :
+Une fois les ressources activées, vous pouvez cloner votre instance de publication pour créer autant de copies que nécessaire pour le déploiement. Le clonage d’un serveur est relativement simple, mais il y a quelques étapes importantes à retenir. Pour cloner la publication :
 
 1. Sauvegardez l’instance source et la banque de données.
-1. Restaurez la sauvegarde de l’instance et de la banque de données à l’emplacement cible. Les étapes suivantes se rapportent toutes à cette nouvelle instance.
+1. Restaurez la sauvegarde de l’instance et de la banque de données à l’emplacement cible. Les étapes suivantes font toutes référence à cette nouvelle instance.
 1. Recherchez un système de fichiers sous `crx-quickstart/launchpad/felix` pour `sling.id`. Supprimez ce fichier.
 1. Sous le chemin d’accès racine du magasin de données, recherchez et supprimez les fichiers `repository-XXX`.
 1. Modifiez `crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` et `crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config` pour qu’ils pointent sur l’emplacement du magasin de données sur le nouvel environnement.
 1. Démarrez l’environnement.
-1. Mettez à jour la configuration de tous les agents de réplication sur le ou les auteurs afin de pointer vers les instances de publication ou les agents de vidage du Dispatcher corrects sur la nouvelle instance. Cela permet de pointer vers les Dispatchers appropriés du nouvel environnement.
+1. Mettez à jour la configuration de tous les agents de réplication sur le ou les auteurs pour qu’ils pointent vers les instances de publication ou les agents de vidage du dispatcher corrects sur la nouvelle instance afin qu’ils pointent vers les dispatchers appropriés pour le nouvel environnement.
 
 ### Activation des workflows {#enable-workflows}
 
@@ -119,7 +123,7 @@ Une fois la migration terminée, les lanceurs des workflows Ressources de mise �
 
 Bien que ce ne soit pas aussi courant, il est parfois nécessaire de migrer de grandes quantités de données à partir d’une seule [!DNL Experience Manager] à une autre instance ; par exemple, lorsque vous effectuez une [!DNL Experience Manager] effectuez une mise à niveau, mettez à niveau votre matériel ou migrez vers un nouveau centre de données, par exemple avec une migration AMS.
 
-Dans ce cas, les ressources sont déjà renseignées avec les métadonnées et les rendus déjà générés. Il ne vous reste plus qu’à vous concentrer sur le déplacement des ressources d’une instance à une autre. Lors de la migration entre [!DNL Experience Manager] vous effectuez les étapes suivantes :
+Dans ce cas, vos ressources sont déjà renseignées avec des métadonnées et des rendus sont déjà générés. Vous pouvez simplement vous concentrer sur le déplacement de ressources d’une instance à une autre. Lors de la migration entre [!DNL Experience Manager] vous effectuez les étapes suivantes :
 
 1. Désactiver les workflows : Puisque vous migrez des rendus avec nos ressources, vous souhaitez désactiver les lanceurs de workflow pour les ressources de mise à jour de gestion des actifs numériques.
 
@@ -128,7 +132,7 @@ Dans ce cas, les ressources sont déjà renseignées avec les métadonnées et l
 1. Migration des ressources : Il existe deux outils recommandés pour déplacer des ressources d’une [!DNL Experience Manager] à une autre instance :
 
    * **Vault Remote Copy** ou `vlt rcp`, vous permet d’utiliser vlt sur un réseau. Vous pouvez indiquer des répertoires source et de destination pour que vlt télécharge toutes les données du référentiel d’une instance et les charge dans l’autre. Vlt rcp est documenté à l’adresse [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **Grabbit** est un outil de synchronisation de contenu open-source développé par Time Warner Cable dans le cadre de la mise en œuvre d’[!DNL Experience Manager]. Comme il utilise des flux de données continus, en comparaison avec vlt rcp, sa latence est inférieure et il annonce une vitesse de deux à dix fois plus rapide que vlt rcp. Grabbit prend également en charge la synchronisation du contenu delta uniquement, ce qui lui permet de synchroniser les modifications après l’achèvement d’une passe de migration initiale.
+   * **Grabbit** est un outil de synchronisation de contenu open-source développé par Time Warner Cable dans le cadre de la mise en œuvre d’[!DNL Experience Manager]. Comme il utilise des flux de données continus, en comparaison avec vlt rcp, sa latence est inférieure et il annonce une vitesse de deux à dix fois plus rapide que vlt rcp. Grabbit prend également en charge la synchronisation du contenu delta uniquement, ce qui lui permet de synchroniser les modifications une fois la migration initiale terminée.
 
 1. Activation des ressources : Suivez les instructions de la rubrique [activation des ressources](#activate-assets) documenté pour la migration initiale vers AEM.
 

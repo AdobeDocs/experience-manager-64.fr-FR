@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 exl-id: 2bbbfbaa-b0a1-4f8a-9445-51325d80e368
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 96%
+source-wordcount: '393'
+ht-degree: 89%
 
 ---
 
 # Mappage du modèle dynamique avec les composants pour les SPA{#dynamic-model-to-component-mapping-for-spas}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Ce document décrit le fonctionnement du mappage du modèle dynamique avec les composants dans le SDK de SPA JavaScript pour AEM.
 

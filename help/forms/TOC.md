@@ -8,7 +8,8 @@ user-guide-title: Guide d’Adobe Experience Manager Forms 6.4
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '3721'
 ht-degree: 94%
@@ -443,13 +444,13 @@ ht-degree: 94%
    + Gestion des services {#manage-services}
       + [Configuration des paramètres du service](/help/forms/using/admin-help/configure-service-settings.md)
       + [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md)
-   + Gestion des points de fin {#manage-endpoints}
-      + [Ajout, activation, modification ou suppression de points de fin](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
-      + [Configuration des points de fin de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md)
-      + [Configuration des points de fin Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
+   + Gestion des points d’entrée {#manage-endpoints}
+      + [Ajout, activation, modification ou suppression de points d’entrée](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
+      + [Configuration des points d’entrée de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md)
+      + [Configuration des points d’entrée Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Configuration des points d’entrée des dossiers de contrôle](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
-      + [Configuration des points de fin Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
-      + [Types de points de fin](/help/forms/using/admin-help/types-endpoints.md)
+      + [Configuration des points d’entrée Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
+      + [Types de points d’entrée](/help/forms/using/admin-help/types-endpoints.md)
    + Configuration des extensions d’Acrobat Reader DC {#configure-acrobat-reader-dc-extensions}
       + [Types de certificats utilisés par les extensions d’Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
       + [Identification des certificats valables et des certificats expirés dans les documents PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)

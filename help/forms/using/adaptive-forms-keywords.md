@@ -9,16 +9,20 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms
 exl-id: 45578c86-6ec8-4f9c-92d9-e2f28f989fd3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 100%
+source-wordcount: '244'
+ht-degree: 27%
 
 ---
 
 # Mots-clés de formulaires adaptatifs {#adaptive-forms-keywords}
 
-Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants réservés ayant une signification spéciale pour les formulaires adaptatifs. Vous ne pouvez pas utiliser ces mots-clés comme identifiants dans vos formulaires adaptatifs. Le tableau suivant répertorie tous les mots-clés qui utilisent les identifiants réservés pour les formulaires adaptatifs.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants réservés ayant une signification spéciale pour les formulaires adaptatifs. Vous ne pouvez pas utiliser ces mots-clés comme identifiants dans vos formulaires adaptatifs. Le tableau suivant répertorie tous les mots-clés qui sont des identifiants réservés pour les formulaires adaptatifs.
 
 <table> 
  <tbody>
@@ -50,7 +54,7 @@ Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants ré
   <tr>
    <td><p>resetData</p> </td> 
    <td><p>runPendingExpressions</p> </td> 
-   <td><p>repeatable</p> </td> 
+   <td><p>répétable</p> </td> 
   </tr>
   <tr>
    <td><p>calcExp</p> </td> 
@@ -65,7 +69,7 @@ Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants ré
   <tr>
    <td><p>valueCommitScript</p> </td> 
    <td><p>autoSaveStart</p> </td> 
-   <td><p>visit</p> </td> 
+   <td><p>visite</p> </td> 
   </tr>
   <tr>
    <td><p>validateExp</p> </td> 
@@ -75,7 +79,7 @@ Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants ré
   <tr>
    <td><p>placeholderText</p> </td> 
    <td><p>autoSaveStartExpression</p> </td> 
-   <td><p>children</p> </td> 
+   <td><p>enfants</p> </td> 
   </tr>
   <tr>
    <td><p>value</p> </td> 
@@ -133,7 +137,7 @@ Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants ré
    <td><p>index</p> </td> 
   </tr>
   <tr>
-   <td><p>height</p> </td> 
+   <td><p>hauteur</p> </td> 
    <td><p>showComment</p> </td> 
    <td><p>visible</p> </td> 
   </tr>

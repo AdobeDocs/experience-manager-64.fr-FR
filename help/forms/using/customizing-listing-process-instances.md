@@ -1,7 +1,7 @@
 ---
-title: Personnalisation de la liste des instances de processus
+title: Personnaliser la liste des instances de processus
 seo-title: Customizing the listing of process instances
-description: Comment personnaliser les propriétés affichées dans une instance de processus de l’espace de travail AEM Forms.
+description: Comment personnaliser les propriétés affichées dans l’instance de processus dans l’espace de travail AEM Forms.
 seo-description: How-to customize the properties displayed in process instance in AEM Forms workspace.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
@@ -9,16 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 exl-id: e7b8206c-bac2-48a6-b353-d06bc73b29f9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 100%
+source-wordcount: '320'
+ht-degree: 65%
 
 ---
 
-# Personnalisation de la liste des instances de processus {#customizing-the-listing-of-process-instances}
+# Personnaliser la liste des instances de processus {#customizing-the-listing-of-process-instances}
 
-La liste des instances de processus est affichée dans l’onglet Suivi de l’espace de travail AEM Forms.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+La liste des instances de processus s’affiche dans l’onglet Tracking de l’espace de travail AEM Forms.
 
 Dans la liste des instances de processus, pour chaque instance de processus, l’espace de travail AEM Forms indique certaines propriétés de cette instance. Les propriétés suivantes sont disponibles pour chaque instance de processus. Ces propriétés sont stockées en tant qu’attributs dans le modèle du composant de l’instance de processus et peuvent être utilisées dans sa vue et son modèle.
 
@@ -33,7 +37,7 @@ Dans la liste des instances de processus, pour chaque instance de processus, l�
    <td>Description de l’instance de processus.</td> 
   </tr> 
   <tr> 
-   <td>initiator</td> 
+   <td>initiateur</td> 
    <td>Nom de l’initiateur de l’instance de processus.</td> 
   </tr> 
   <tr> 
@@ -42,15 +46,15 @@ Dans la liste des instances de processus, pour chaque instance de processus, l�
   </tr> 
   <tr> 
    <td>processCompleteTime</td> 
-   <td>Horodatage indiquant quand le processus s’est achevé.</td> 
+   <td>Horodatage indiquant la fin du processus.</td> 
   </tr> 
   <tr> 
    <td>processInstanceId</td> 
-   <td>Identifiant de l’instance de processus.</td> 
+   <td>ID de l’instance de processus.</td> 
   </tr> 
   <tr> 
    <td>processInstanceStatus</td> 
-   <td>0 = Initié<br /> 1 = En cours d’exécution<br /> 2 = Terminé<br /> 3 = En cours d’achèvement<br /> 4 = Interrompu<br /> 5 = En cours d’interruption<br /> 6 = Suspendu<br /> 7 = En cours de suspension<br /> 8 = En cours d’annulation de suspension</td> 
+   <td>0 = Lancé<br /> 1 = En cours<br /> 2 = Terminé<br /> 3 = Fin<br /> 4 = Interrompu<br /> 5 = Arrêt<br /> 6 = Suspendu<br /> 7 = Suspendre<br /> 8 = Sans suspension</td> 
   </tr> 
   <tr> 
    <td>processName</td> 
@@ -58,7 +62,7 @@ Dans la liste des instances de processus, pour chaque instance de processus, l�
   </tr> 
   <tr> 
    <td>processStartTime</td> 
-   <td>Horodatage indiquant quand le processus a commencé.</td> 
+   <td>Horodatage du début du processus.</td> 
   </tr> 
   <tr> 
    <td>processVariables</td> 

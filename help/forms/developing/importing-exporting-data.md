@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: e9d10d35-6a8d-497d-83f7-67ee6c22baed
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2764'
-ht-degree: 100%
+source-wordcount: '2800'
+ht-degree: 98%
 
 ---
 
 # Importer et exporter des données {#importing-and-exporting-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## À propos du service d’intégration des données de formulaire {#about-the-form-data-integration-service}
 
@@ -29,8 +33,8 @@ Le service d’intégration des données de formulaire peut importer des donnée
 
 Les données de formulaire peuvent exister dans l’un des formats suivants en fonction du type de formulaire de PDF :
 
-* Un fichier XFDF, qui constitue une version XML du format de données de formulaire Acrobat.
-* Un fichier XDP, qui correspond à un fichier XML contenant des définitions de champ de formulaire. Ce fichier peut également inclure des données de champ de formulaire, ainsi qu’un fichier PDF incorporé. Un fichier XDP généré par Designer n’est utilisable que s’il incorpore un document PDF codé en base 64.
+* Un fichier XFDF, qui est une version XML du format de données de formulaire Acrobat.
+* Un fichier XDP, qui correspond à un fichier XML contenant des définitions de champ de formulaire. Il peut également contenir des données de champ de formulaire et un fichier de PDF incorporé. Un fichier XDP généré par Designer n’est utilisable que s’il incorpore un document PDF codé en base 64.
 
 Vous pouvez accomplir ces tâches à l’aide du service d’intégration des données de formulaire :
 
@@ -84,7 +88,7 @@ Pour importer des valeurs de données dans ce formulaire, vous devez disposer d�
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service d’intégration des données de formulaire, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service d’intégration des données de formulaire, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -261,7 +265,7 @@ Vous pouvez exporter des données de formulaire à partir d’un formulaire PDF 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service d’intégration des données de formulaire, consultez la section [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service d’intégration des données de formulaire, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 

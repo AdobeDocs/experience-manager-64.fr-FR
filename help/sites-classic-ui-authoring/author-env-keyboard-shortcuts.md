@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 exl-id: f98302cf-159b-488b-aa62-8739ad32460c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 100%
+source-wordcount: '150'
+ht-degree: 74%
 
 ---
 
 # Raccourcis clavier pour les consoles{#keyboard-shortcuts-for-consoles}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à l’utilisation de consoles et d’autres à la [modification de pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
@@ -27,7 +31,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 >
 >* Windows : maintenez la touche **Ctrl** enfoncée tout en **cliquant** sur les composants requis.
 >
->* Mac : maintenez la touche **Cmd** enfoncée tout en **cliquant** sur les composants requis.
+>* Mac : **Cmd**+**click** sur les composants requis.
 >
 
 

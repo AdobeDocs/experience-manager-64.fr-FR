@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 role: Developer
 exl-id: 130b5669-4533-4e88-9a64-bbbd7c68a5ca
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 100%
+source-wordcount: '530'
+ht-degree: 94%
 
 ---
 
 # Démarrage rapide (SOAP) de l’API Java User Manager {#user-manager-java-api-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le démarrage rapide de l’API Java (SOAP) est disponible pour l’API User Manager.
 
@@ -383,7 +387,7 @@ L’exemple de code suivant permet de trouver un utilisateur local et le groupe 
 
 ## Démarrage rapide (mode SOAP) : gérer des rôles et des autorisations à l’aide de l’API Java {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-L’exemple de code suivant permet d’affecter le rôle Utilisateur des services à une entité, dʼimprimer les rôles dont dispose l’entité et de supprimer par la suite le rôle de l’entité. Ce démarrage rapide appelle deux services : DirectoryManager et AuthorizationManager.(Consultez la section [Gérer les rôles et les autorisations](/help/forms/developing/users.md#managing-roles-and-permissions)).
+L’exemple de code suivant permet d’affecter le rôle Utilisateur des services à un principal, dʼimprimer les rôles dont dispose le principal et de supprimer par la suite le rôle du principal. Ce démarrage rapide appelle deux services : DirectoryManager et AuthorizationManager.(Consultez la section [Gérer les rôles et les autorisations](/help/forms/developing/users.md#managing-roles-and-permissions)).
 
 ```as3
  /* 

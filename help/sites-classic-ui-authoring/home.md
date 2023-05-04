@@ -4,14 +4,18 @@ seo-title: AEM 6.4 Classic UI Authoring User Guide
 description: Ce guide recouvre les concepts de création dans AEM dans l’interface utilisateur classique.
 seo-description: Covers the concepts of authoring in AEM in the classic UI.
 exl-id: 56522aaf-9a8d-48b8-b748-3b57d5e9c8ef
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 99%
+source-wordcount: '354'
+ht-degree: 91%
 
 ---
 
 # Guide de l’utilisateur pour l’IU classique de création dans AEM 6.4
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Ce guide recouvre les concepts de création dans AEM dans l’interface utilisateur classique.
 
@@ -26,7 +30,7 @@ Ce guide recouvre les concepts de création dans AEM dans l’interface utilisat
 
 | Guide de l’utilisateur | Description |
 |--- |---|
-| [Notes de mise à jour](/help/release-notes/home.md) | Elles comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.. |
+| [Notes de mise à jour](/help/release-notes/home.md) | Elles comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus. |
 | [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment créer, gérer, diffuser et optimiser des ressources numériques. |
 | [Guide de l’utilisateur de Forms](/help/forms/home.md) | Ce guide explique comment créer, gérer, publier et mettre à jour des formulaires numériques. |
 | [Guide de l’utilisateur de Communities](/help/communities/home.md) | Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales. |

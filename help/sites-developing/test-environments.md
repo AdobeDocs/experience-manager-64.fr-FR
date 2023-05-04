@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: db528b9b-3407-462d-8254-20b3cc2c3ccf
 exl-id: c3c7c007-4814-4bd1-987e-534df4575a4a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 100%
+source-wordcount: '216'
+ht-degree: 80%
 
 ---
 
 # Quels environnements de test sont nécessaires ?{#which-test-environments-will-be-needed}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Pour définir les configurations à tester, tenez compte des points suivants :
 
@@ -35,7 +39,7 @@ Vous devez également déterminer les instances dont vous aurez besoin et leur e
 
 Elle devrait être testée conjointement au Dispatcher.
 
-Enfin, le matériel doit être pris en compte : tous les tests de performance doivent être effectués sur un système aussi proche que possible de la configuration de l’environnement actif final. Pour cette raison, nous vous recommandons également de diviser le lancement du projet de la façon suivante :
+Enfin, le matériel doit être pris en compte : tous les tests de performance doivent être effectués sur un système aussi proche que possible de la configuration de l’environnement actif final. Pour cette raison, il est également recommandé de diviser le lancement du projet en :
 
 **Prélancement** - Disponibilité réduite ; ce qui laisse du temps pour les tests de performance, le réglage et l’optimisation dans des conditions réalistes au sein de l’environnement d’exploitation.
 

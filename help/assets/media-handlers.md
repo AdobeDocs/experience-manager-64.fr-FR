@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Workflow,Renditions
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: bc27dee618ee57dc188c7f35a1af4d1dba80cf1b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2225'
-ht-degree: 54%
+source-wordcount: '2261'
+ht-degree: 46%
 
 ---
 
 # Traitement des ressources à l’aide des workflows et des gestionnaires de médias {#processing-assets-using-media-handlers-and-workflows}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Adobe Experience Manager Assets fournit un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Un workflow définit une tâche type de gestion et de traitement des ressources, puis délègue les tâches spécifiques aux gestionnaires de médias, par exemple la génération de miniatures ou l’extraction de métadonnées.
 
@@ -47,12 +51,12 @@ Les gestionnaires de médias suivants sont disponibles dans Experience Manager A
 | [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | Solution de secours au cas où aucun autre gestionnaire n’aurait été trouvé pour extraire des données d’une ressource |
 
-Tous les gestionnaires effectuent les tâches suivantes :
+Tous les gestionnaires effectuent les tâches suivantes :
 
-* extraction de toutes les métadonnées disponibles dans la ressource.
+* extraction de toutes les métadonnées disponibles de la ressource.
 * création d’une miniature à partir de la ressource.
 
-Il est possible d’afficher les gestionnaires de médias actifs :
+Il est possible d’afficher les gestionnaires de médias principaux :
 
 1. Dans votre navigateur, accédez à la page suivante : `http://localhost:4502/system/console/components`.
 1. Cliquez sur le lien `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
@@ -72,9 +76,9 @@ L’exemple suivant montre comment améliorer la variable **[!UICONTROL Synchron
 
 ### Désactivation/activation d’un gestionnaire de médias {#disabling-enabling-a-media-handler}
 
-Les gestionnaires de médias peuvent être désactivés ou activés par le biais de la console de gestion web Apache Felix. Lorsque le gestionnaire de médias est désactivé, ses tâches ne sont pas réalisées sur les ressources.
+Les gestionnaires de médias peuvent être désactivés ou activés via la console de gestion web Apache Felix. Lorsque le gestionnaire de médias est désactivé, ses tâches ne sont pas effectuées sur les ressources.
 
-Pour activer/désactiver un gestionnaire de médias :
+Pour activer/désactiver un gestionnaire de médias :
 
 1. Dans votre navigateur, accédez à la page suivante : `https://<host>:<port>/system/console/components`.
 1. Cliquez sur **[!UICONTROL Désactiver]** en regard du nom du gestionnaire de médias. Par exemple : `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
@@ -108,7 +112,7 @@ L’interface et les classes sont les suivantes :
 * Classe `com.day.cq.dam.core.AbstractSubAssetHandler` :
    * Cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes, ainsi que la fonctionnalité commune d’extraction de sous-ressources.
    * La meilleure façon de démarrer une implémentation est d’hériter d’une implémentation abstraite fournie qui prend en charge l’essentiel du traitement et qui fournit un comportement raisonnable par défaut : à savoir la classe com.day.cq.dam.core.AbstractAssetHandler.
-   * Cette classe fournit déjà un descripteur de service abstrait. Donc, si vous héritez de cette classe et que vous utilisez le plug-in maven-sling-plugin, assurez-vous que vous avez défini l’indicateur inherit sur true.
+   * Cette classe fournit déjà un descripteur de service abstrait. Ainsi, si vous héritez de cette classe et que vous utilisez le plug-in maven-sling-plugin, assurez-vous que vous avez défini l’indicateur inherit sur true.
 
 Les méthodes suivantes doivent être implémentées :
 
@@ -126,7 +130,7 @@ L’interface et les classes sont les suivantes :
 * `com.day.cq.dam.core.AbstractAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes, ainsi que la fonctionnalité commune d’extraction de sous-ressources.
 
-#### Exemple : créer un gestionnaire de texte spécifique {#example-create-a-specific-text-handler}
+#### Exemple : création d’un gestionnaire de texte spécifique {#example-create-a-specific-text-handler}
 
 Dans cette section, vous allez créer un gestionnaire de texte spécifique qui génère des miniatures avec un filigrane.
 
@@ -143,8 +147,8 @@ Après avoir exécuté la procédure suivante, lorsque vous téléchargez un fic
    1. Vérifiez les **[!UICONTROL Création d’un projet simple]** et le **[!UICONTROL Utilisation des emplacements de Workspace par défaut]** , puis cliquez sur **[!UICONTROL Suivant]**.
    1. Définissez le projet Maven avec les valeurs suivantes :
 
-      * Id de groupe : com.day.cq5.myhandler
-      * Id d’artefact : myBundle
+      * ID de groupe : com.day.cq5.myhandler
+      * Id De L’Artifact : myBundle
       * Nom : Mon lot de Experience Manager
       * Description : Ceci est mon lot de Experience Manager
    1. Cliquez sur **[!UICONTROL Terminer]**.
@@ -157,11 +161,11 @@ Après avoir exécuté la procédure suivante, lorsque vous téléchargez un fic
 
       * Niveau de conformité du compilateur
       * Compatibilité des fichiers .class générés
-      * Compatibilité source
+      * Compatibilité des sources
    1. Cliquez sur **[!UICONTROL OK]**. Dans la boîte de dialogue, cliquez sur Oui.
 
 
-1. Remplacez le code du fichier pom.xml par le code suivant :
+1. Remplacez le code du fichier pom.xml par le code suivant :
 
    ```xml
    <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
@@ -280,13 +284,13 @@ Après avoir exécuté la procédure suivante, lorsque vous téléchargez un fic
 
 1. Créer le package `com.day.cq5.myhandler` qui contient les classes Java™ sous `myBundle/src/main/java`:
 
-   1. Sous myBundle, cliquez avec le bouton droit sur `src/main/java`, sélectionnez Nouveau, puis Module.
+   1. Sous myBundle, cliquez avec le bouton droit sur `src/main/java`, sélectionnez Nouveau, puis Package.
    1. Appelez-le `com.day.cq5.myhandler`, puis cliquez sur Terminer.
 
 1. Création de la classe Java™ `MyHandler`:
 
    1. Dans Eclipse, sous `myBundle/src/main/java`, cliquez avec le bouton droit de la souris sur le `com.day.cq5.myhandler` module, sélectionnez Nouveau, puis Classe.
-   1. Dans la boîte de dialogue, nommez la classe Java™ MyHandler et cliquez sur Terminer. Eclipse crée le fichier MyHandler.java et l’ouvre.
+   1. Dans la boîte de dialogue, nommez la classe Java™ MyHandler et cliquez sur Terminer. Eclipse crée et ouvre le fichier MyHandler.java.
    1. Dans `MyHandler.java`, remplacez le code existant par le suivant, puis enregistrez les modifications :
 
    ```java
@@ -461,7 +465,7 @@ Le processus `CommandLineProcess` effectue les opérations suivantes par ordre d
 * Exécute la commande définie par les arguments de l’étape. La commande est exécutée dans le répertoire temporaire avec les autorisations de l’utilisateur exécutant Experience Manager.
 * Renvoie le résultat dans le dossier de rendu du serveur de Experience Manager.
 * Supprime le répertoire temporaire.
-* Crée des miniatures basées sur ces rendus, si spécifié. Le nombre et les dimensions des miniatures sont définis par les arguments de l’étape.
+* Crée des miniatures en fonction de ces rendus, le cas échéant. Le nombre et les dimensions des miniatures sont définis par les arguments de l’étape.
 
 ### Exemple utilisant ImageMagick {#an-example-using-imagemagick}
 
@@ -469,7 +473,7 @@ L’exemple suivant montre comment configurer l’étape de processus de ligne d
 
 Pour effectuer cette étape de processus, utilisez ImageMagick. Installez ImageMagick sur le disque hébergeant le serveur Experience Manager :
 
-1. Installation d’ImageMagick. Voir [Documentation d’ImageMagick](https://www.imagemagick.org/script/download.php) pour plus d’informations.
+1. Installez ImageMagick. Voir [Documentation d’ImageMagick](https://www.imagemagick.org/script/download.php) pour plus d’informations.
 1. Configurez l’outil pour pouvoir exécuter `convert` sur la ligne de commande.
 1. Pour vérifier si cet outil est installé correctement, exécutez la commande `convert -h` sur la ligne de commande.
 

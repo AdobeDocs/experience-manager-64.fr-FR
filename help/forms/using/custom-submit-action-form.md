@@ -1,7 +1,7 @@
 ---
-title: Création d’une action Envoyer personnalisée pour les formulaires adaptatifs
+title: Créer une action Envoyer personnalisée pour les formulaires adaptatifs
 seo-title: Writing custom Submit action for adaptive forms
-description: AEM Forms permettent de créer une action Envoyer personnalisée pour les formulaires adaptatifs. Cet article décrit la procédure à suivre pour ajouter une action Envoyer personnalisée pour les formulaires adaptatifs.
+description: AEM Forms permettent de créer une action Envoyer personnalisée pour les formulaires adaptatifs. Cet article décrit la procédure à suivre pour ajouter une action Envoyer personnalisée pour les formulaires adaptatifs.
 seo-description: AEM Forms lets you create custom Submit action for Adaptive forms. This article describes the procedure to add custom Submit action for Adaptive forms.
 uuid: c98947b1-21db-47d0-8f94-2ab668a477fc
 content-type: reference
@@ -9,20 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 607b2242-d81c-4e7a-9e56-e6dabffccbb6
 exl-id: 199ebb63-8fbc-43c4-8c4d-421bf02454ed
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 100%
+source-wordcount: '1663'
+ht-degree: 74%
 
 ---
 
-# Création d’une action Envoyer personnalisée pour les formulaires adaptatifs {#writing-custom-submit-action-for-adaptive-forms}
+# Créer une action Envoyer personnalisée pour les formulaires adaptatifs {#writing-custom-submit-action-for-adaptive-forms}
 
-Les formulaires adaptatifs requièrent des actions Envoyer pour traiter les données spécifiées par l’utilisateur. Une action Envoyer détermine la tâche effectuée sur les données envoyées à lʼaide dʼun formulaire adaptatif. Adobe Experience Manager (AEM) contient des [actions Envoyer prêtes à l’emploi](/help/forms/using/configuring-submit-actions.md) qui montrent les tâches personnalisées que vous pouvez effectuer à l’aide des données envoyées par l’utilisateur. Vous pouvez par exemple effectuer des tâches comme envoyer un courrier électronique ou stocker les données.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Les formulaires adaptatifs nécessitent des actions Envoyer pour traiter les données spécifiées par l’utilisateur. Une action Envoyer détermine la tâche effectuée sur les données envoyées à lʼaide dʼun formulaire adaptatif. Adobe Experience Manager (AEM) contient des [actions Envoyer prêtes à l’emploi](/help/forms/using/configuring-submit-actions.md) qui montrent les tâches personnalisées que vous pouvez effectuer à l’aide des données envoyées par l’utilisateur. Vous pouvez par exemple effectuer des tâches comme envoyer un courrier électronique ou stocker les données.
 
 ## Processus d’une action Envoyer {#workflow-for-a-submit-action}
 
-Le diagramme de flux présente le workflow d’une action Envoyer qui est déclenchée lorsque vous cliquez sur le bouton **[!UICONTROL Envoyer]** d’un formulaire adaptatif. Les fichiers du composant Pièce jointe sont téléchargés sur le serveur, et les données de formulaire sont mises à jour avec les URL des fichiers téléchargés. Sur le client, les données sont stockées au format JSON. Le client envoie une requête Ajax à une servlet interne qui transforme les données spécifiées et les renvoie au format XML. Le client assemble ces données avec des champs d’action. Il envoie les données à la servlet finale (servlet Guide Submit) par lʼintermédiaire dʼune action Envoyer le formulaire. La servlet transfère ensuite le contrôle à l’action Envoyer. L’action Envoyer peut transférer la requête vers une ressource sling différente ou rediriger le navigateur vers une autre URL.
+Le diagramme de flux présente le workflow d’une action Envoyer qui est déclenchée lorsque vous cliquez sur le bouton **[!UICONTROL Envoyer]** d’un formulaire adaptatif. Les fichiers du composant Pièce jointe sont chargés sur le serveur et les données de formulaire sont mises à jour avec les URL des fichiers chargés. Au sein du client, les données sont stockées au format JSON. Le client envoie une requête Ajax à une servlet interne qui masse les données que vous avez spécifiées et les renvoie au format XML. Le client assemble ces données avec des champs d’action. Il envoie les données à la servlet finale (servlet Guide Submit) par lʼintermédiaire dʼune action Envoyer le formulaire. La servlet transfère ensuite le contrôle à l’action Envoyer. L’action Envoyer peut transférer la requête vers une ressource sling différente ou rediriger le navigateur vers une autre URL.
 
 ![Organigramme décrivant le flux de l’action Envoyer](assets/diagram1.png)
 
@@ -78,11 +82,11 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 Après avoir exécuté l’action requise, la servlet Submit transfère la requête vers le chemin de transfert. Une action utilise l’API setForwardPath pour définir le chemin de transfert dans la servlet Guide Submit.
 
-Si l’action ne fournit pas de chemin de transfert, la servlet Submit redirige le navigateur à l’aide de l’URL de redirection. L’auteur configure l’URL de redirection à l’aide de la configuration de la page Merci dans la boîte de dialogue Modifier le formulaire adaptatif. Vous pouvez également configurer l’URL de redirection par le biais de l’action Envoyer ou de l’API setRedirectUrl de la servlet Guide Submit. Les paramètres de requête envoyés à l’URL de redirection peuvent aussi être configurés à l’aide de l’API setRedirectParameters de la servlet Guide Submit.
+Si l’action ne fournit pas de chemin de transfert, la servlet Submit redirige le navigateur à l’aide de l’URL de redirection. L’auteur configure l’URL de redirection à l’aide de la configuration de la page de remerciement dans la boîte de dialogue Modifier le formulaire adaptatif. Vous pouvez également configurer l’URL de redirection par le biais de l’action Envoyer ou de l’API setRedirectUrl de la servlet Guide Submit. Vous pouvez également configurer les paramètres de requête envoyés à l’URL de redirection à l’aide de l’API setRedirectParameters de la servlet Guide Submit.
 
 >[!NOTE]
 >
->Un auteur fournit l’URL de redirection (à l’aide de la configuration de la page Merci). Les [actions Envoyer prêtes à l’emploi](/help/forms/using/configuring-submit-actions.md) utilisent l’URL de redirection pour rediriger le navigateur à partir de la ressource référencée par le chemin de transfert.
+>Un auteur fournit l’URL de redirection (à l’aide de la configuration de page de remerciement). Les [actions Envoyer prêtes à l’emploi](/help/forms/using/configuring-submit-actions.md) utilisent l’URL de redirection pour rediriger le navigateur à partir de la ressource référencée par le chemin de transfert.
 >
 >Vous pouvez écrire une action Envoyer personnalisée qui transfère une demande vers une ressource ou une servlet. Adobe recommande que le script qui effectue la gestion des ressources pour le chemin de transfert redirige la requête vers l’URL de redirection au terme du traitement.
 
@@ -90,8 +94,8 @@ Si l’action ne fournit pas de chemin de transfert, la servlet Submit redirige 
 
 Une action Envoyer est un sling:Folder qui contient les éléments suivants :
 
-* **addfields.jsp** : ce script fournit les champs d’action qui sont ajoutés au fichier HTML lors du rendu. Utilisez ce script pour ajouter les paramètres d’entrée masqués requis lors de l’envoi au script post.POST.jsp.
-* **dialog.xml** : ce script est similaire à la boîte de dialogue Composant CQ. Il fournit des informations de configuration que l’auteur personnalise. Les champs s’affichent sous l’onglet « Actions Envoyer » de la boîte de dialogue Modifier le formulaire adaptatif lorsque vous sélectionnez l’action Envoyer.
+* **addfields.jsp**: Ce script fournit les champs d’action ajoutés au fichier de HTML lors du rendu. Utilisez ce script pour ajouter les paramètres d’entrée masqués requis lors de l’envoi dans le script post.POST.jsp.
+* **dialog.xml**: Ce script est similaire à la boîte de dialogue Composant CQ. Il fournit des informations de configuration que l’auteur personnalise. Les champs s’affichent sous l’onglet « Actions Envoyer » de la boîte de dialogue Modifier le formulaire adaptatif lorsque vous sélectionnez l’action Envoyer.
 * **post.POST.jsp** : la servlet Submit appelle ce script avec les données envoyées et les autres données des sections précédentes. Toute mention relative à l’exécution d’une action dans cette page implique l’exécution du script post.POST.jsp. Pour enregistrer l’action Envoyer avec les formulaires adaptatifs à afficher dans la boîte de dialogue Modifier le formulaire adaptatif, ajoutez les propriétés suivantes au sling:Folder:.
 
    * **guideComponentType** de type chaîne et valeur **fd/af/components/guidesubmittype**
@@ -100,9 +104,9 @@ Une action Envoyer est un sling:Folder qui contient les éléments suivants :
 
 ## Création d’une action Envoyer personnalisée {#creating-a-custom-submit-action}
 
-Pour créer une action Envoyer personnalisée qui enregistre les données dans le référentiel CRX et envoie ensuite un courrier électronique, suivez la procédure ci-après. Le formulaire adaptatif contient l’action Envoyer Stocker le contenu (obsolète) prête à l’emploi qui permet d’enregistrer les données dans le référentiel CRX. En outre, CQ fournit une API de [messagerie](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) qui peut être utilisée pour envoyer des e-mails. Avant d’utiliser l’API de messagerie, [configurez](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?#Configuring the Mail Service) le service de messagerie Day CQ via la console système. Vous pouvez réutiliser l’action Stocker le contenu (obsolète) pour stocker les données dans le référentiel. L’action Stocker le contenu (obsolète) se trouve à l’emplacement /libs/fd/af/components/guidesubmittype/store dans le référentiel CRX.
+Effectuez les étapes suivantes pour créer une action Envoyer personnalisée qui enregistre les données dans le référentiel CRX, puis vous envoie un courrier électronique. Le formulaire adaptatif contient l’action Envoyer Stocker le contenu (obsolète) prête à l’emploi qui permet d’enregistrer les données dans le référentiel CRX. En outre, CQ fournit une API de [messagerie](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) qui peut être utilisée pour envoyer des e-mails. Avant d’utiliser l’API de messagerie, [configurez](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?#Configuring the Mail Service) le service de messagerie Day CQ via la console système. Vous pouvez réutiliser l’action Stocker le contenu (obsolète) pour stocker les données dans le référentiel. L’action Stocker le contenu (obsolète) se trouve à l’emplacement /libs/fd/af/components/guidesubmittype/store dans le référentiel CRX.
 
-1. Connectez-vous à CRXDE Lite en accédant à https://&lt;server>:&lt;port>/crx/de/index.jsp. Créez un nœud avec la propriété sling:Folder et le nom store_and_mail dans le dossier /apps/custom_submit_action. Créez le dossier custom_submit_action, le cas échéant.
+1. Connectez-vous à CRXDE Lite en accédant à https://&lt;server>:&lt;port>/crx/de/index.jsp. Créez un noeud avec la propriété sling:Folder et le nom store_and_mail dans le dossier /apps/custom_submit_action . Créez le dossier custom_submit_action s’il n’existe pas déjà.
 
    ![Capture d’écran décrivant la création d’un nœud avec la propriété sling:Folder](assets/step1.png)
 
@@ -114,23 +118,23 @@ Pour créer une action Envoyer personnalisée qui enregistre les données dans l
 
 1. **Fournissez des champs de configuration pour demander à l’auteur la configuration des e-mails.**
 
-   Le formulaire adaptatif contient également une action Courrier électronique qui permet d’envoyer des messages électroniques aux utilisateurs. Personnalisez cette action selon vos besoins. Accédez à /libs/fd/af/components/guidesubmittype/email/dialog. Copiez les nœuds dans le nœud cq:dialog au nœud cq:dialog de votre action Envoyer (/apps/custom_submit_action/store_and_email/dialog).
+   Le formulaire adaptatif fournit également une action Courrier électronique qui envoie des courriers électroniques aux utilisateurs. Personnalisez cette action en fonction de vos besoins. Accédez à /libs/fd/af/components/guidesubmittype/email/dialog. Copiez les nœuds dans le nœud cq:dialog au nœud cq:dialog de votre action Envoyer (/apps/custom_submit_action/store_and_email/dialog).
 
    ![Personnalisation de l’action d’e-mail](assets/step3.png)
 
-1. **Rendez l’action accessible dans la boîte de dialogue Modifier le formulaire adaptatif.**
+1. **Rendez l’action disponible dans la boîte de dialogue Modifier le formulaire adaptatif .**
 
-   Ajoutez les propriétés suivantes au nœud store_and_email :
+   Ajoutez les propriétés suivantes dans le noeud store_and_email :
 
    * **guideComponentType** de type **chaîne** et valeur **fd/af/components/guidesubmittype**
    * **guideDataModel** de type **chaîne** et valeur **xfa, xsd, de base**.
    * **jcr:description** de type **chaîne** et de valeur **Store and Email Action**
 
-1. Ouvrez un formulaire adaptatif. Cliquez sur le bouton **Modifier** en regard de **Démarrer** pour ouvrir la boîte de dialogue **Modifier** du conteneur de formulaires adaptatifs. La nouvelle action s’affiche sous l’onglet **Actions Envoyer**. La sélection de l’action **Store and Email** affiche la configuration ajoutée au nœud dialog.
+1. Ouvrez un formulaire adaptatif. Cliquez sur le bouton **Modifier** bouton en regard de **Début** pour ouvrir le **Modifier** de la boîte de dialogue du conteneur de formulaires adaptatifs. La nouvelle action s’affiche sous l’onglet **Actions Envoyer**. La sélection de l’action **Store and Email** affiche la configuration ajoutée au nœud dialog.
 
    ![Boîte de dialogue de configuration de l’action Envoyer](assets/store_and_email_submit_action_dialog.jpg)
 
-1. **Utilisez l’action pour effectuer une tâche.**
+1. **Utilisez l’action pour terminer une tâche.**
 
    Ajoutez le script post.POST.jsp à votre action. (/apps/custom_submit_action/store_and_mail/).
 
@@ -138,7 +142,7 @@ Pour créer une action Envoyer personnalisée qui enregistre les données dans l
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
-   Pour envoyer l’e-mail, le code lit l’adresse électronique du destinataire à partir de la configuration. Pour récupérer la valeur de configuration dans le script de l’action, lisez les propriétés de la ressource actuelle à l’aide du code ci-après. Vous pouvez également lire les autres fichiers de configuration.
+   Pour envoyer l’e-mail, le code lit l’adresse électronique du destinataire à partir de la configuration. Pour récupérer la valeur de configuration dans le script de l’action, lisez les propriétés de la ressource en cours à l’aide du code suivant. De même, vous pouvez lire les autres fichiers de configuration.
 
    `ValueMap properties = ResourceUtil.getValueMap(resource);`
 

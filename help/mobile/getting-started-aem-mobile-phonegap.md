@@ -1,7 +1,7 @@
 ---
 title: AEM Adobe PhoneGap
 seo-title: AEM Adobe PhoneGap
-description: AEM s’intègre dans PhoneGap pour vous aider à créer aisément des applications à l’aide de pages AEM. Consultez cette page pour commencer à utiliser Adobe PhoneGap Enterprise.
+description: AEM s’intègre à PhoneGap afin que vous puissiez facilement créer des applications à l’aide de pages AEM. Consultez cette page pour commencer à utiliser Adobe PhoneGap Enterprise.
 seo-description: AEM integrates with PhoneGap so that you can easily create apps using AEM pages. Follow this page to get started with Adobe PhoneGap Enterprise.
 uuid: bdd90cda-2489-4763-a90a-9c409d6e68ae
 contentOwner: User
@@ -10,20 +10,24 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: fbcdea8a-72e9-431b-9c32-dc02d4cdb9c8
 exl-id: 308ce52d-4792-4f13-8dc0-bb1d8326536b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 13%
+source-wordcount: '524'
+ht-degree: 6%
 
 ---
 
 # AEM Adobe PhoneGap{#aem-adobe-phonegap}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 >[!NOTE]
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-AEM s’intègre dans PhoneGap pour vous aider à créer aisément des applications à l’aide de pages AEM. PhoneGap permet à l’utilisateur de créer des applications utilitaires qui permettent à l’utilisateur de travailler avec le contenu. La synchronisation du contenu vous permet de créer des archives de pages versionnées à intégrer dans des applications.
+AEM s’intègre à PhoneGap afin que vous puissiez facilement créer des applications à l’aide de pages AEM. PhoneGap permet à l’utilisateur de créer des applications utilitaires qui permettent à l’utilisateur de travailler avec le contenu. La synchronisation de contenu vous permet de créer des archives versionnées de pages pour le regroupement avec des applications.
 
 En règle générale, un ***Administrateur AEM*** est chargé d’ajouter une nouvelle application au catalogue AEM Mobile, soit en créant une nouvelle application à l’aide de l’assistant de création, soit en important une application existante.
 

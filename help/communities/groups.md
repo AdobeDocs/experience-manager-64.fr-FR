@@ -12,14 +12,18 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 2%
+source-wordcount: '1664'
+ht-degree: 3%
 
 ---
 
 # Console des groupes communautaires {#community-groups-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 La console Groupes permet d’accéder à la création de groupes de communautés lorsqu’un site de communauté [structure de modèle](sites-console.md#step1) inclut la variable [fonction groups](functions.md#groups-function).
 
@@ -154,7 +158,7 @@ Le paramètre d’appartenance permet de sélectionner l’une des trois méthod
 
    s’il est sélectionné, le groupe de la communauté est un groupe secret. Les membres de la communauté doivent être invités explicitement. Les membres invités sont saisis dans la zone de recherche. Les membres peuvent être ajoutés ultérieurement à l’aide de la variable [Consoles Membres et Groupes](members.md) l’environnement de création. La valeur par défaut n’est pas sélectionnée.
 
-#### Miniature {#thumbnail}
+#### VIGNETTE {#thumbnail}
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 

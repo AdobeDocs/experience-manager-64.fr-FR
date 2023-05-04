@@ -1,7 +1,7 @@
 ---
 title: Présentation de la publication de formulaires sur un portail
 seo-title: Introduction to publishing forms on a portal
-description: AEM Forms fournit des composants que vous pouvez utiliser pour créer votre portail de formulaires. Cet article présente les composants de portail de formulaires disponibles.
+description: AEM Forms fournit des composants que vous pouvez utiliser pour créer votre portail de formulaires. Cet article vous présente les composants Forms Portal disponibles.
 seo-description: AEM Forms provides with components that you can use to build your forms portal. This articles introduces you to the available forms portal components.
 uuid: 96aa4fe2-a111-4675-a33c-7dee8b82cbc2
 content-type: reference
@@ -9,29 +9,33 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 44871fe1-ddc9-492c-8784-5df3ca392f9b
 exl-id: a91e23e8-339d-4090-9872-2e066ab66590
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 98%
+source-wordcount: '1091'
+ht-degree: 63%
 
 ---
 
 # Présentation de la publication de formulaires sur un portail {#introduction-to-publishing-forms-on-a-portal}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Présentation des composants du portail AEM Forms {#aem-forms-portal-components-overview}
 
-Dans les scénarios typiques de déploiement de portail basés sur l’utilisation de formulaires, le développement des formulaires et le développement du portail sont deux activités bien distinctes. Tandis que les créateurs de formulaires créent des formulaires et les stockent dans un référentiel, les développeurs Web créent une application Web permettant de répertorier les formulaires et de gérer leurs envois. Les formulaires sont copiés sur la plateforme Web car il n’existe aucune communication entre le référentiel des formulaires et l’application Web.
+Dans un scénario de déploiement de portail basé sur l’utilisation de formulaires standard, le développement de formulaires et le développement de portail sont deux activités distinctes. Lorsque les concepteurs de formulaires créent et stockent des formulaires dans un référentiel, les développeurs Web créent une application Web pour répertorier les formulaires et gérer l’envoi de formulaires. Forms est copié sur la plateforme web, car il n’existe aucune communication entre le référentiel de formulaires et l’application web.
 
-Ces scénarios entraînent généralement des problèmes de gestion et des retards de production. Par exemple, lorsqu’une nouvelle version d’un formulaire est disponible dans le référentiel, vous devez remplacer le formulaire sur la plateforme Web, modifier l’application Web, puis déployer à nouveau le formulaire sur le site public. Le redéploiement de l’application Web risque d’entraîner un temps d’arrêt au niveau du serveur. En règle générale, les temps d’arrêt de serveur sont dus à une activité planifiée et, par conséquent, les modifications ne peuvent pas être transférées au site public instantanément.
+De tels scénarios entraînent souvent des problèmes de gestion et des retards de production. Par exemple, si une version plus récente d’un formulaire est disponible dans le référentiel, vous devez remplacer le formulaire sur la plateforme web, modifier l’application web et redéployer le formulaire sur le site public. Le redéploiement de l’application web peut entraîner un temps d’arrêt du serveur. En règle générale, le temps d’arrêt du serveur est une activité planifiée et les modifications ne peuvent donc pas être transmises instantanément au site public.
 
 AEM Forms fournit des composants de portail qui réduisent les surcharges de gestion et les délais de production. Les composants permettent aux développeurs Web de créer et de personnaliser un portail de formulaires sur les sites Web créés à l’aide d’Adobe Experience Manager (AEM).
 
 ![Portail AEM Forms](assets/aem-forms-portal.png)
 
-Les composants de portail de formulaires vous permettent d’ajouter les fonctionnalités suivantes :
+Les composants de Forms Portal vous permettent d’ajouter les fonctionnalités suivantes :
 
 * Créez une liste de formulaires dans des mises en page personnalisées. Mises en page de vues Liste, Carte et Panneau prêtes à l’emploi. Vous pouvez créer vos propres mises en page personnalisées.
-* Possibilité d’afficher les métadonnées et les actions personnalisées lorsque vous les répertoriez.
+* Permet d’afficher des métadonnées personnalisées ainsi que des actions personnalisées lors de leur mise en liste.
 * Créez des listes de formulaires publiés par l’interface utilisateur d’AEM Forms sur l’instance de publication où sont utilisés les composants du portail Formulaires.
 * Possibilité pour les utilisateurs finaux d’afficher les formulaires aux formats HTML et PDF.
 * Utilisation d’un profil HTML personnalisé pour le rendu des formulaires.
@@ -39,7 +43,7 @@ Les composants de portail de formulaires vous permettent d’ajouter les fonctio
 * Envoi de données de formulaire vers une servlet.
 * Utilisation de feuilles CSS pour la personnalisation de l’apparence du portail.
 * Création de liens vers des formulaires.
-* Création d’une liste de brouillons et d’envois associés au formulaire adaptatif créé par l’utilisateur final.
+* Répertorie les brouillons et les envois liés au formulaire adaptatif créé par l’utilisateur final.
 
 ## Composants disponibles du portail AEM Forms {#available-aem-forms-portal-components}
 
@@ -47,15 +51,15 @@ AEM Forms fournit les composants de portail suivants prêts à l’emploi, regro
 
 ### Search &amp; Lister {#search-amp-lister}
 
-Le composant Search &amp; Lister (Recherche et énumérateur) permet de répertorier les formulaires du référentiel de formulaires sur la page de portail et propose des options de configuration pour répertorier les formulaires selon des critères spécifiés. Il permet également de spécifier des critères de recherche pour permettre aux utilisateurs du portail d’effectuer des recherches dans la liste des formulaires.
+Le composant Search &amp; Lister vous permet de répertorier les formulaires du référentiel de formulaires sur votre page de portail et fournit des options de configuration pour répertorier les formulaires selon des critères spécifiés. Il permet également de spécifier des critères de recherche pour permettre aux utilisateurs et utilisatrices du portail d’effectuer des recherches dans la liste des formulaires.
 
 ### Brouillons et soumissions {#drafts-amp-submissions}
 
-Alors que le composant Search &amp; Lister affiche les formulaires rendus publics par l’auteur de formulaires, le composant Drafts &amp; Submissions (Brouillon et envoi) affiche les formulaires enregistrés sous forme de brouillons en vue de leur achèvement ultérieur et les formulaires envoyés. Ce composant offre un environnement personnalisé à tout utilisateur connecté.
+Tandis que le composant Search &amp; Lister affiche les formulaires rendus publics par l’auteur Forms, le composant Drafts &amp; Submissions (Brouillons et envois) affiche les formulaires enregistrés en tant que brouillons en vue de les compléter ultérieurement et les formulaires envoyés. Ce composant fournit une expérience personnalisée à tout utilisateur connecté.
 
 ### Lien {#link}
 
-Le composant Link (Lien) vous permet de créer un lien vers un formulaire depuis n’importe quel emplacement de la page. Cela peut être le cas, par exemple, si vous proposez un programme de formation et que vous voulez que vos utilisateurs envoient un formulaire pour s’inscrire à la formation. Vous avez indiqué les détails du programme sur votre site Web. Sous les détails, vous souhaitez fournir un lien vers le formulaire d’inscription. Le composant Link vous permet de créer ce lien.
+Le composant Lien vous permet de créer un lien vers un formulaire n’importe où sur la page. Supposons que vous proposiez un programme de formation et que vous souhaitiez que vos utilisateurs envoient un formulaire pour s’inscrire à la formation. Sur votre site web, vous avez publié les détails du programme. Vous trouverez ci-dessous les détails du formulaire d&#39;inscription. Le composant Lien peut vous aider à créer ce lien.
 
 ## Workflow du portail Formulaires {#forms-portal-workflow}
 
@@ -83,7 +87,7 @@ Le Portail Formulaires vous permet de répertorier les formulaires du référent
 * [Affichage de la liste des formulaires sur une page Web à l’aide d’API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utiliser le composant Brouillons et Envois](/help/forms/using/draft-submission-component.md)
 * [Personnaliser le stockage des brouillons de formulaires et des formulaires envoyés](/help/forms/using/draft-submission-component.md#customizing-the-storage)
-* [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html)
+* [Exemple d’intégration d’un composant brouillons et envois à une base de données](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html)
 
 * [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md)

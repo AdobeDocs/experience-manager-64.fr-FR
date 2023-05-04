@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: aff8b79f-dd4e-486e-9d59-5d09dfe34f27
 exl-id: 5b16c775-3bd0-4a55-ba9e-f326224e8bae
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1767'
 ht-degree: 4%
 
 ---
 
 # Création d’un site de communauté pour activation {#author-a-new-community-site-for-enablement}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Créer un site de communauté {#create-community-site}
 
@@ -96,7 +100,7 @@ Assurez-vous que la plupart des cases à cocher ne sont pas cochées pour [Gesti
 
 ![chlimage_1-285](assets/chlimage_1-285.png)
 
-#### Balisage {#tagging}
+#### BALISAGE {#tagging}
 
 Les balises qui peuvent être appliquées au contenu de la communauté sont contrôlées en sélectionnant AEM espaces de noms précédemment définis via la variable [Console Balisage](../../help/sites-administering/tags.md#tagging-console) (par exemple, [Espace de noms du tutoriel](enablement-setup.md#create-tutorial-tags)).
 
@@ -210,7 +214,7 @@ Pour supprimer le site de la communauté, cliquez sur l’icône Supprimer le si
 
 ![activer les iteactions](assets/enablesiteactions.png)
 
-#### Sélectionnez Publier {#select-publish}
+#### Sélectionnez Publier . {#select-publish}
 
 Sélectionnez l’icône mondiale pour publier le site de la communauté.
 
@@ -245,7 +249,7 @@ Dans cet exemple, le groupe `Community Ski Class` est ajouté en tant que membre
 * Entrée `quinn` dans la zone de recherche
 * Sélectionner **[!UICONTROL Quinn Harper]** (contact de ressource d’activation)
 
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ![chlimage_1-295](assets/chlimage_1-295.png)
 
@@ -353,7 +357,7 @@ Sélectionnez le panneau STRUCTURE pour ajouter un catalogue ou modifier un cata
 * **URL**: `catalog`
 
 * **Sélectionner tous les espaces de noms**: laissez comme valeur par défaut.
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ![chlimage_1-299](assets/chlimage_1-299.png)
 

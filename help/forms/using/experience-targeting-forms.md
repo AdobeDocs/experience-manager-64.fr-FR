@@ -1,7 +1,7 @@
 ---
 title: Création d’expériences ciblées dans AEM Forms
 seo-title: Create targeted experiences in AEM Forms
-description: L’utilisation de Target dans AEM Forms permet de créer des expériences personnalisées pour les clients ciblés.
+description: Utilisez Target dans AEM Forms pour créer des expériences personnalisées pour les clients ciblés.
 seo-description: Use Target in AEM Forms to create customized experiences for targeted customers.
 uuid: 174b6054-8fe3-4ab2-8afd-435e5dff9044
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: 6cf54a08-d429-4a58-8429-a1cb784448d1
 exl-id: 5a10ffea-2c69-4902-9754-399bd2e125f1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 100%
+source-wordcount: '874'
+ht-degree: 84%
 
 ---
 
 # Création d’expériences ciblées dans AEM Forms {#create-targeted-experiences-in-aem-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Intégrer Adobe Target à AEM Forms {#integrate-adobe-target-with-aem-forms}
 
@@ -45,7 +49,7 @@ Votre identité visuelle est désormais répertoriée dans la page Activités.
 
    Lorsque vous créez une activité, vous spécifiez ses détails, cible et paramètres.
 
-   La section Détails inclut un nom, un moteur de ciblage et un objectif. Lorsque vous sélectionnez Adobe Target comme moteur de ciblage, l’option de configuration cloud de Target est activée. Sélectionnez la configuration cloud de Target, le type d’activité, puis indiquez l’objectif de l’activité et appuyez sur **Suivant**. La communication interactive ne prend en charge que le type d’activité de ciblage d’expérience.
+   La section Détails comprend le nom, le moteur de ciblage et l’objectif. Lorsque vous sélectionnez Adobe Target comme moteur de ciblage, l’option de configuration cloud de Target est activée. Sélectionnez la configuration cloud de Target, le type d’activité, puis indiquez l’objectif de l’activité et appuyez sur **Suivant**. La communication interactive ne prend en charge que le type d’activité de ciblage d’expérience.
 
    La section Cible vous permet d’ajouter une expérience de public et de la nommer. Cliquez sur **Ajouter une expérience** pour activer les options **Sélectionner un public** et **Nommer l’expérience**. Appuyez sur **Sélectionner un public** pour voir une liste de publics et leur source. Choisissez un public dans la liste Nom du public. Appuyez sur **Ajouter une expérience** pour nommer l’expérience, puis sur **Suivant**.
 
@@ -97,15 +101,15 @@ Votre identité visuelle est désormais répertoriée dans la page Activités.
 
 1. Sélectionnez un public dans le menu **Publics** et appuyez sur l’image à cibler. Un menu s’affiche. Dans le menu, appuyez sur **Cible**. Appuyez sur l’image, puis sur **Configurer**. Dans la fenêtre des propriétés, sélectionnez l’image à afficher pour le public sélectionné. Répétez l’étape pour toutes les audiences. Le ciblage d’expérience est activé pour l’image dans la communication interactive ou le formulaire adaptatif.
 
-## Vérifier si l’activité créée est synchronisée avec le serveur cible {#check-if-the-created-activity-syncs-with-the-target-server}
+## Vérifiez si l’activité créée se synchronise avec le serveur Target. {#check-if-the-created-activity-syncs-with-the-target-server}
 
-Une activité utilisée pour le ciblage est synchronisée avec le serveur cible. Pour vérifier si votre activité est synchronisée avec le serveur cible, vérifiez l’état de votre activité dans votre page de marque.
+Une activité utilisée pour le ciblage se synchronise avec le serveur Target. Pour vérifier si votre activité est synchronisée avec le serveur cible, vérifiez l’état de votre activité dans votre page de marque.
 
 Assurez-vous que l’état de l’activité est Synchronisé.
 
-## Valider le comportement Cible {#validate-target-behavior}
+## Validation du comportement de Target {#validate-target-behavior}
 
-Pour valider le comportement Cible :
+Validation du comportement de Target
 
 * Utiliser le ciblage avec `wcmmode preview` en mode création
 * Utiliser le ciblage avec `wcmmode preview` et `wcmmode disabled` en mode de publication
@@ -116,4 +120,4 @@ Pour contrôler le ciblage pour les composants image sur votre formulaire, publi
 
 ## Problèmes en cours {#open-issues}
 
-Expression de visibilité, la définition de la cible d’action échoue pour les images ciblées dans les formulaires adaptatifs.
+Expression de visibilité, la définition de la cible d’action échoue pour les images ciblées sur les formulaires adaptatifs.

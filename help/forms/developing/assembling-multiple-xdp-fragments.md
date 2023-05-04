@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 0ed1f69d-c212-4d47-a572-ae030f2983fc
 role: Developer
 exl-id: be9db93d-97e1-4d4e-8d07-1c58a4a1a44c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 100%
+source-wordcount: '1923'
+ht-degree: 98%
 
 ---
 
 # Assembler plusieurs fragments XDP {#assembling-multiple-xdp-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez assembler plusieurs fragments XDP en un seul document XDP. Prenons l’exemple des fragments XDP où chaque fichier XDP contient un ou plusieurs sous-formulaires utilisés pour créer un formulaire d’intégrité. L’illustration suivante montre le mode Plan (représente le fichier tuc018_template_flowed.xdp utilisé dans le démarrage rapide *Assembler plusieurs fragments XDP*) :
 

@@ -12,16 +12,20 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 exl-id: e076349d-8b1a-487f-b982-9440d7de13b9
 feature: Configuration
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 98%
+source-wordcount: '1308'
+ht-degree: 89%
 
 ---
 
 # Liaison d’URL à une application web {#linking-urls-to-your-web-application}
 
-Vos applications et sites web accèdent aux services Dynamic Media par l’intermédiaire d’appels d’URL. Une fois que vous avez publié une ressource, Dynamic Media active une chaîne d’URL qui fait référence à la ressource. Vous pouvez coller ces URL dans un navigateur web à des fins de test.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Vos applications et sites web accèdent aux services Dynamic Media par l’intermédiaire d’appels d’URL. Après la publication d’une ressource, Dynamic Media active une chaîne d’URL qui référence la ressource. Vous pouvez coller ces URL dans un navigateur Web à des fins de test.
 
 Vous ne pouvez lier à des URL que si vous *n’utilisez pas* AEM pour la gestion de contenu web. La liaison, à la différence de l’intégration, est utilisée lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre contextuelle ou modale. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page.](adding-dynamic-media-assets-to-pages.md)
 
@@ -29,7 +33,7 @@ Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depu
 
 >[!NOTE]
 >
->Les chaînes URL ne sont disponibles que pour les rendus dynamiques de ressources. Elles ne sont actuellement pas disponibles pour les ressources statiques qui se trouvent dans DAM et non sur le serveur de média dynamique. Le bouton URL ne s&#39;affiche pas pour les rendus statiques.
+>Les chaînes URL ne sont disponibles que pour les rendus dynamiques de ressources. Ils ne sont actuellement pas disponibles pour les ressources statiques qui résident dans la gestion des ressources numériques et non dans le serveur Dynamic Media. Le bouton URL n’apparaît pas pour les rendus statiques.
 
 Voir aussi [Incorporation de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
 
@@ -41,7 +45,7 @@ Voir aussi [Chargement de ressources.](managing-assets-touch-ui.md#uploading-ass
 
 ## Obtention d’une URL pour une ressource  {#obtaining-a-url-for-an-asset}
 
-Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’image prédéfini ou un paramètre prédéfini de la visionneuse. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
+Vous pouvez obtenir une chaîne d’URL générée par un paramètre prédéfini d’image ou de visionneuse. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
 
 >[!NOTE]
 >
@@ -53,7 +57,7 @@ Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’ima
 >
 >Voir [Publication de paramètres d’image prédéfinis](managing-image-presets.md#publishing-image-presets).
 
-Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étapes ci-dessous ne vous présentent qu’une seule méthode.
+Il existe plusieurs manières d’obtenir une chaîne d’URL. Toutefois, les étapes ci-dessous ne vous montrent qu’une seule méthode que vous pouvez utiliser.
 
 **Obtention de l’URL d’une ressource** :
 
@@ -91,7 +95,7 @@ Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étape
 
 ## Obtention d’une URL pour une ressource statique {#obtaining-a-url-for-a-static-asset}
 
-Dynamic Media prend en charge le déploiement de ressources statiques, qui sont des ressources supplémentaires au-delà des images et de la vidéo. Les formats de ressources statiques pris en charge pour la diffusion comprennent les formats suivants :
+Dynamic Media prend en charge la diffusion de ressources statiques, qui sont des ressources supplémentaires au-delà des images et de la vidéo. Les formats de ressources statiques pris en charge pour la diffusion comprennent les formats suivants :
 
 * GIF animé
 * Fichiers audio
@@ -128,7 +132,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis cliquez sur **[!UICONTROL Afficher les configurations]**.
 1. Sous **[!UICONTROL Configurations disponibles]**, appuyez sur le nom de la configuration qui vous intéresse.
 
-1. Sur la page **[!UICONTROL Paramètres de cloud Dynamic Media]**, sous **[!UICONTROL URL du service vidéo]**, copiez le chemin URL complet. Vous aurez besoin de l’URL copiée dans les étapes suivantes.
+1. Sur la page **[!UICONTROL Paramètres de cloud Dynamic Media]**, sous **[!UICONTROL URL du service vidéo]**, copiez le chemin URL complet. Vous aurez besoin du chemin d’URL copié plus loin dans les étapes.
 
    Par exemple, le chemin URL est similaire au suivant :
 
@@ -149,7 +153,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    (Le chemin ci-dessus est donné à titre d’illustration uniquement ; il ne s’agit pas de celui que vous allez copier.)
 
-1. Organisez les informations copiées dans l’ordre suivant pour former un chemin URL complet :
+1. Organisez les informations copiées dans l’ordre suivant pour former un chemin d’URL complet :
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
@@ -177,14 +181,14 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
       Par exemple, si l’ID d’enregistrement est `87654321|demoCo`, le nom du client est `demoCo`.
 
 
-1. En fonction du protocole de diffusion vidéo que vous utilisez, copiez le sélecteur de protocole correspondant. Vous aurez besoin du sélecteur de protocole copié plus tard au cours de ces étapes.
+1. En fonction du protocole de diffusion vidéo que vous utilisez, copiez le sélecteur de protocole correspondant. Vous aurez besoin du sélecteur de protocole copié plus loin dans ces étapes.
 
    | Protocole de diffusion vidéo que vous utilisez | Sélecteur de protocole à utiliser |
    |---|---|
    | HTTP   <br> Si vous utilisez le HTTP (diffusion vidéo non sécurisée), assurez-vous de remplacer « https » par « http » dans la valeur d’URL du service vidéo que vous avez copiée précédemment. | `public/` |
    | HTTPS | `public-ssl/` |
 
-1. Copiez le chemin complet de la ressource vidéo dans AEM, tel qu’il est traité par Dynamic Media. Vous aurez besoin de ce chemin d’accès à la ressource vidéo copié dans ces étapes.
+1. Copiez le chemin complet de la ressource vidéo dans AEM, tel qu’il est traité par Dynamic Media. Vous aurez besoin de ce chemin d’accès à la ressource vidéo copié plus loin dans ces étapes.
 
    Par exemple :
 
@@ -204,6 +208,6 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
 ## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
+HTTP/2 est le nouveau protocole Web mis à jour qui améliore la communication entre les navigateurs et les serveurs. Il permet un transfert plus rapide des informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
 Voir [Diffusion du contenu sur HTTP2](http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.

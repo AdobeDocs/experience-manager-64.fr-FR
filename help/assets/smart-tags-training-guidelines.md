@@ -1,5 +1,5 @@
 ---
-title: Instructions d’entraînement sur le service de contenu dynamique
+title: Instructions de formation du service de contenu dynamique
 description: Formation du service AI pour appliquer des balises intelligentes aux ressources
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
@@ -8,26 +8,30 @@ discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
 feature: Tagging,Metadata,Smart Tags
 role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 92%
+source-wordcount: '491'
+ht-degree: 68%
 
 ---
 
-# Instructions d’entraînement sur le service de contenu dynamique {#smart-content-service-training-guidelines}
+# Instructions de formation du service de contenu dynamique {#smart-content-service-training-guidelines}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Pour pouvoir baliser efficacement vos images de marque, le service de contenu dynamique exige que les images d’entraînement respectent certaines instructions.
 
 ## Instructions d’entraînement {#guidelines-for-training}
 
-Pour un résultat optimal, les images de votre corpus d’entraînement doivent respecter les instructions suivantes :
+Pour de meilleurs résultats, les images de votre jeu d’entraînement doivent respecter les instructions suivantes :
 
 **Quantité et taille :****minimum 30 images par balise**. Minimum 500 pixels sur le côté le plus long.
 
 **Cohérence** : les images associées à une même balise doivent être visuellement similaires.
 
-Par exemple, il n’est pas conseillé de baliser toutes ces images *ma-fête* (pour l’entraînement), car elles ne sont pas visuellement similaires.
+Par exemple, il n’est pas recommandé de baliser toutes ces images en tant que *my-party* (pour la formation), car ils ne sont pas visuellement similaires.
 
 ![Images d’illustration donnant un exemple d’instructions d’entraînement](assets/do-not-localize/coherence.png)
 
@@ -49,13 +53,13 @@ Par exemple, pour la balise *chaussure-décontractée*, la seconde image n’est
 
 ## Limites {#limitations}
 
-Les balises intelligentes améliorées sont basées sur des modèles d’apprentissage d’images de marque et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle du service de contenu dynamique présente les limites suivantes :
+Les balises intelligentes améliorées sont basées sur des modèles d’apprentissage d’images de marque et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle du service de contenu dynamique présente les limites suivantes :
 
 * Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises coupe droite ou ajustée.
-* Impossibilité d’identifier des balises basées sur des motifs/éléments minuscules d’une image. Par exemple, des logos sur des T-shirts.
+* Impossible d’identifier les balises en fonction de petits motifs/parties d’une image. Par exemple, des logos sur des T-shirts.
 * Le balisage est pris en charge dans les paramètres régionaux gérés par [!DNL Experience Manager]. Pour obtenir la liste des langues, consultez [Notes de mise à jour du service de contenu dynamique](/help/release-notes/smart-content-service-release-notes.md).
 
-Pour rechercher des ressources avec des balises intelligentes (standard ou améliorées), utilisez la recherche de texte intégral d’Assets. Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
+Pour rechercher des ressources avec des balises intelligentes (standard ou améliorées), utilisez la recherche omni-ressource (recherche de texte intégral). Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 
 >[!NOTE]
 >

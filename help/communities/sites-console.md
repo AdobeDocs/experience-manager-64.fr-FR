@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 role: Admin
 exl-id: f1408709-5402-4f55-bd37-9943fe828af0
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3227'
-ht-degree: 5%
+source-wordcount: '3263'
+ht-degree: 4%
 
 ---
 
 # Console Sites Communities {#communities-sites-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 La console Sites de Communities permet d’accéder aux éléments suivants :
 
@@ -146,7 +150,7 @@ Sélectionnez **[!UICONTROL Suivant]**.
 Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonctionnalités à configurer avant de passer à la dernière étape pour créer le site.
 
 * [GESTION DES UTILISATEURS](#user-management)
-* [Balisage](#tagging)
+* [BALISAGE](#tagging)
 * [RÔLES](#roles)
 * [MODÉRATION](#moderation)
 * [ANALYTICS](#analytics)
@@ -181,7 +185,7 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonction
 
    Si cette option n’est pas cochée, le site de la communauté est *restricted* et les visiteurs du site doivent être affectés au groupe des membres du site de la communauté, faire une demande ou recevoir une invitation par courrier électronique. Si cette option n’est pas cochée, l’accès anonyme ne doit pas être autorisé.
 
-   Décochez une *private* site de la communauté. Cette option est cochée par défaut.
+   Décochez une *private* site de la communauté. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser l&#39;accès anonyme]**
 
@@ -189,7 +193,7 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonction
 
    Si cette option n’est pas cochée, seuls les membres connectés peuvent accéder au site.
 
-   Décochez une *private* site de la communauté. Cette option est cochée par défaut.
+   Décochez une *private* site de la communauté. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser les messages]**
 
@@ -197,7 +201,7 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonction
 
    Si cette option n’est pas cochée, la messagerie n’est pas configurée pour la communauté.
 
-   Cette option n’est pas cochée par défaut.
+   La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser les connexions sociales : Facebook]**
 
@@ -205,7 +209,7 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonction
 
    Si cette option n’est pas cochée, aucune connexion Facebook n’est présentée.
 
-   Laissez la case décochée pour un événement *private* site de la communauté. Cette option n’est pas cochée par défaut.
+   Laissez la case décochée pour un événement *private* site de la communauté. La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser les connexions sociales : Twitter]**
 
@@ -213,7 +217,7 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonction
 
    Si cette option n’est pas cochée, aucune connexion Twitter n’est présentée.
 
-   Laissez la case décochée pour un événement *private* site de la communauté. Cette option n’est pas cochée par défaut.
+   Laissez la case décochée pour un événement *private* site de la communauté. La case par défaut est décochée.
 
 >[!NOTE]
 >
@@ -221,7 +225,7 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonction
 >
 >Bien que des exemples de configurations Facebook et Twitter puissent exister et être sélectionnables, pour un [environnement de production](../../help/sites-administering/production-ready.md), il est nécessaire de créer des applications Facebook et Twitter personnalisées. Voir [Connexion aux réseaux sociaux avec Facebook et Twitter](social-login.md).
 
-#### Balisage {#tagging}
+#### BALISAGE {#tagging}
 
 ![chlimage_1-450](assets/chlimage_1-450.png)
 
@@ -259,7 +263,7 @@ Le paramètre global de modération du contenu généré par l’utilisateur est
 
 * **[!UICONTROL Le contenu est prémodéré]**
 
-   Si cette case est cochée, le contenu de la communauté publié n’apparaîtra pas tant qu’il n’aura pas été approuvé par un modérateur. Cette option n’est pas cochée par défaut. Pour plus d’informations, voir [Modération de contenu de la communauté](moderate-ugc.md#premoderation).
+   Si cette case est cochée, le contenu de la communauté publié n’apparaîtra pas tant qu’il n’aura pas été approuvé par un modérateur. La case par défaut est décochée. Pour plus d’informations, voir [Modération de contenu de la communauté](moderate-ugc.md#premoderation).
 
 * **[!UICONTROL Seuil de marquage avant que le contenu ne soit masqué]**
 
@@ -273,7 +277,7 @@ Le paramètre global de modération du contenu généré par l’utilisateur est
 
    Disponible uniquement lorsque Adobe Analytics a été [configuré](analytics.md) pour les fonctionnalités de Communities.
 
-   Cette option n’est pas cochée par défaut. Lorsque cette case est cochée, un menu de sélection supplémentaire s’affiche :
+   La case par défaut est décochée. Lorsque cette case est cochée, un menu de sélection supplémentaire s’affiche :
 
 ![chlimage_1-454](assets/chlimage_1-454.png)
 
@@ -562,7 +566,7 @@ Pour rediriger correctement, une fois qu’un site a été configuré et envoyé
 
    `/content/sites/engage/en/signin:/content/sites/engage/en`
 
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ![chlimage_1-468](assets/chlimage_1-468.png)
 

@@ -10,14 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 868a3d5d-d505-4ce5-8776-5bbe68a30ccb
 exl-id: 4b663228-9cb6-45c0-99dd-8dd7fc2aa4a6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 49%
+source-wordcount: '562'
+ht-degree: 3%
 
 ---
 
 # Groupes communautaires {#community-groups}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 La fonctionnalité de groupes de communautés permet à une sous-communauté d’être créée dynamiquement dans un site de communauté par des utilisateurs autorisés (membres de la communauté et auteurs) à partir des environnements de publication et de création.
 
@@ -25,9 +29,9 @@ Cette fonctionnalité est présente lorsque la variable [fonction groups](functi
 
 A [modèle de groupe de communautés](tools-groups.md) fournit la conception de la page de groupe de communautés lorsqu’un groupe de communautés est créé dynamiquement.
 
-Un ou plusieurs modèles de groupe sont sélectionnés pour la fonction de groupes lorsque la fonction est ajoutée à la structure d’un site de communauté ou à un modèle de site de communauté. Cette liste de modèles de groupe est présentée au membre ou à l’auteur qui crée dynamiquement un nouveau groupe sur le site de la communauté.
+Un ou plusieurs modèles de groupe sont sélectionnés pour la fonction de groupes lorsque la fonction est ajoutée à la structure d’un site de communauté ou à un modèle de site de communauté. Cette liste de modèles de groupe est présentée au membre ou à l’auteur qui crée dynamiquement un groupe à partir du site de la communauté.
 
-## Création d’un nouveau groupe {#creating-a-new-group}
+## Création d’un groupe {#creating-a-new-group}
 
 La possibilité de créer un groupe de communautés dépend de l’existence d’un site de communauté qui inclut la fonction de groupes, comme celui créé à partir de la fonction ` [Reference Site Template](sites.md)`.
 
@@ -37,19 +41,23 @@ Il s’agit de la page qui se charge lors de la publication lorsque la variable 
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
-Lorsque vous sélectionnez l’icône **[!UICONTROL Nouveau groupe]**, une boîte de dialogue de modification s’ouvre.
+Lorsque vous sélectionnez la variable **[!UICONTROL Nouveau groupe]** , une boîte de dialogue de modification s’ouvre.
 
-Dans l’onglet **[!UICONTROL Paramètres]**, spécifiez les fonctionnalités de base du groupe :
+Sous , **[!UICONTROL Paramètres]** , vous fournissez les fonctions de base du groupe :
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-* **[!UICONTROL Nom de groupe]** Le titre du groupe à afficher sur le site de la communauté.
+* **[!UICONTROL Nom du groupe]**
+Titre du groupe à afficher sur le site de la communauté.
 
-* **[!UICONTROL Description]** Une description du groupe à afficher sur le site de la communauté.
+* **[!UICONTROL Description]**
+Description du groupe à afficher sur le site de la communauté.
 
-* **[!UICONTROL Invitation]** Une liste de membres à inviter au groupe. La recherche par saisie anticipée suggère des membres de la communauté à inviter.
+* **[!UICONTROL Invitation]**
+Liste des membres à inviter à rejoindre le groupe. La recherche par type fournira des suggestions aux membres de la communauté à inviter.
 
-* **[!UICONTROL Nom de l’URL de groupe]** Le nom de la page de groupe qui est intégré à l’URL.
+* **[!UICONTROL Nom de l’URL du groupe]**
+Nom de la page de groupe qui devient une partie de l’URL.
 
 * **[!UICONTROL Ouvrir le groupe]**
 Sélection 
@@ -63,13 +71,13 @@ Sous , **[!UICONTROL Modèle]** tab permet de sélectionner dans la liste des mo
 
 ![chlimage_1-238](assets/chlimage_1-238.png)
 
-L’onglet **[!UICONTROL Image]** permet de transférer une image à afficher pour le groupe sur la page Groupes du site de la communauté. La feuille de style par défaut dimensionne l’image à 170 x 90 pixels.
+Sous , **[!UICONTROL Image]** L’onglet permet de télécharger une image à afficher pour le groupe sur la page Groupes du site de la communauté. La feuille de style par défaut dimensionne l’image à 170 x 90 pixels.
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-Lorsque le bouton **[!UICONTROL Créer un groupe]** est sélectionné, les pages du groupe sont créées selon le modèle sélectionné, un groupe d’utilisateurs est créé pour l’abonnement et la page Groupes est mise à jour pour afficher la nouvelle sous-communauté.
+En sélectionnant la variable **[!UICONTROL Créer un groupe]** , les pages du groupe sont créées en fonction du modèle choisi, et un groupe d’utilisateurs est créé pour l’appartenance et la page Groupes est mise à jour afin d’afficher la nouvelle sous-communauté.
 
-Par exemple, la page Groupes comportant une nouvelle sous-communauté nommée « Groupe d’orientation », pour laquelle une miniature a été transférée, a l’apparence suivante (l’utilisateur étant encore connecté en tant qu’administrateur de groupe de communautés) :
+Par exemple, la page Groupes avec une nouvelle sous-communauté intitulée &quot;Groupe d’orientation&quot;, pour laquelle une miniature d’image a été téléchargée, s’affiche comme suit (toujours connecté en tant qu’administrateur de groupe de communautés) :
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -77,7 +85,7 @@ En sélectionnant le `Focus Group` Le lien ouvre la page Groupe d’orientation 
 
 ![chlimage_1-241](assets/chlimage_1-241.png)
 
-## Composant Liste des membres de groupes de communautés {#community-group-member-list-component}
+## Composant de liste de membres de groupe de communautés {#community-group-member-list-component}
 
 Le `Community Group Member List` est destiné aux développeurs de modèles de groupe.
 

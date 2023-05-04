@@ -10,14 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
-source-git-commit: 5dd282cc91721a3d53bdf29d5fbb978a52c3704e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2862'
-ht-degree: 70%
+source-wordcount: '2898'
+ht-degree: 69%
 
 ---
 
 # Création de rapports {#reporting}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Pour vous aider à analyser et surveiller l’état de votre instance, AEM propose une sélection de rapports par défaut, qui peuvent être configurés en fonction de vos besoins :
 

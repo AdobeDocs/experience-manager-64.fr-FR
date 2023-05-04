@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 exl-id: 2bc70cd6-1ea6-4594-9b42-ab3d3000a0c5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 100%
+source-wordcount: '228'
+ht-degree: 70%
 
 ---
 
 # Affichage de l’avatar de l’utilisateur {#displaying-the-user-avatar}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droit de l’espace de travail AEM Forms. Les avatars de rapports directs dans la hiérarchie de l’entreprise sont affichés également dans la vue du gestionnaire. Vous pouvez configurer l’espace de travail AEM Forms pour choisir les images de l’utilisateur dans la base de données, par exemple le serveur LDAP.
 
@@ -26,7 +30,7 @@ L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droi
 >le rapport d’aspect des images de l’utilisateur est de 1:1.
 
 1. Créez un DSC, à l’aide des détails mentionnés dans l’étape suivante. Pour plus d’informations, voir la section « Développement des composants d’AEM Forms » dans le guide [Programmer avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).
-1. Dans le DSC, définissez une nouvelle SPI qui expose les méthodes getCurrentUserImageUrl et getUserImageUrl afin d’obtenir l’URL d’image d’un utilisateur d’AEM Forms. Voici un exemple de fragment de code Java™ :
+1. Dans le DSC, définissez une nouvelle SPI qui expose les méthodes getCurrentUserImageUrl et getUserImageUrl afin d’obtenir l’URL d’image d’un utilisateur d’AEM Forms. Voici un exemple de fragment de code Java™ :
 
    ```as3
    public class DemoUserImageURLProviderService { 
@@ -41,9 +45,9 @@ L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droi
    }
    ```
 
-1. Créez un fichier component.xml. Assurez-vous que spec-id est comme dans le fragment de code ci-dessous.
+1. Créez un fichier component.xml. Assurez-vous que spec-id est comme illustré dans le fragment de code ci-dessous.
 
-   Le fragment de code suivant est un exemple. Personnalisez-le pour l’adapter à vos besoins spécifiques.
+   Le fragment de code suivant est un exemple. Personnalisez-la selon vos besoins.
 
    ```as3
    <component xmlns="https://adobe.com/idp/dsc/component/document"> 

@@ -1,7 +1,7 @@
 ---
 title: Gérer les images de signature d’agent
 seo-title: Manage agent signature images
-description: Après la création d’un modèle de lettre, vous pouvez l’utiliser pour créer une correspondance dans AEM Forms en gérant les données, le contenu et les pièces jointes.
+description: Après avoir créé un modèle de lettre, vous pouvez l’utiliser pour créer de la correspondance dans AEM Forms en gérant les données, le contenu et les pièces jointes.
 seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
 uuid: 720dd075-9059-4311-ad52-70e2f7c76c58
 content-type: reference
@@ -10,20 +10,24 @@ topic-tags: correspondence-management
 discoiquuid: 7313c108-39fa-4cf4-8955-2d54be41d476
 feature: Correspondence Management
 exl-id: 4e261228-14a4-4983-97ac-6ca476bee126
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 100%
+source-wordcount: '726'
+ht-degree: 70%
 
 ---
 
 # Gérer les images de signature d’agent {#manage-agent-signature-images}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Présentation {#overview}
 
 Dans Correspondence Management, vous pouvez utiliser une image pour rendre la signature de l’agent dans les lettres. Après avoir configuré l’image de signature de l’agent, lorsque vous créez une lettre, vous pouvez rendre l’image de signature d’agent dans la lettre comme signature de l’agent expéditeur.
 
-Le DDE agentSignatureImage est un DDE calculé qui représente l’image de la signature de l’agent. L’expression de ce DDE calculé utilise une nouvelle fonction personnalisée qui est exposée par le bloc de création Expression Manager. Cette fonction personnalisée prend agentID et agentFolder comme paramètres d’entrée et récupère le contenu d’image en se basant sur ces paramètres. Le dictionnaire de données du système SystemContext donne aux lettres de Correspondence Management accès aux informations dans le contexte du système actuel. Le contexte du système contient des informations sur l’utilisateur actuellement connecté, ainsi que sur les paramètres de configuration actifs.
+Le DDE agentSignatureImage est un DDE calculé qui représente l’image de signature de l’agent. L’expression de ce DDE calculé utilise une nouvelle fonction personnalisée exposée par le bloc de création Expression Manager. Cette fonction personnalisée prend agentID et agentFolder comme paramètres d’entrée et récupère le contenu de l’image en fonction de ces paramètres. Le dictionnaire de données du système SystemContext donne aux lettres de Correspondence Management accès aux informations dans le contexte du système actuel. Le contexte du système contient des informations sur l’utilisateur actuellement connecté, ainsi que sur les paramètres de configuration actifs.
 
 Vous pouvez ajouter des images sous le dossier cmuserroot. Dans [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md), à l’aide de la propriété Racine de l’utilisateur de CM, vous pouvez changer le dossier d’où l’image de la signature de l’agent est récupérée.
 
@@ -45,13 +49,13 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
       >[!NOTE]
       >
-      >cmUserRoot correspond à l’emplacement par défaut où AEM recherche l’image de la signature de l’agent. Vous pouvez cependant le modifier en éditant la propriété Racine de l’utilisateur de CM dans les [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md).
+      >cmUserRoot est l’emplacement par défaut où AEM recherche l’image de signature de l’agent. Vous pouvez cependant le modifier en éditant la propriété Racine de l’utilisateur de CM dans les [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md).
 
 1. Dans l’explorateur de contenu, accédez au dossier cmUserRoot et ajoutez-y l’image de la signature de l’agent.
 
    1. Accédez à `https://[server]:[port]/crx/explorer/index.jsp`. Connectez-vous en tant qu’administrateur, si nécessaire.
-   1. Cliquez sur **Explorateur de contenu**. L’explorateur de contenu s’ouvre dans une nouvelle fenêtre.
-   1. Dans l’explorateur de contenu, accédez au dossier cmUserRoot et sélectionnez-le. Cliquez avec le bouton droit sur le dossier **cmUserRoot** et sélectionnez **Nouveau nœud**.
+   1. Cliquez sur **Explorateur de contenu**. L’Explorateur de contenu s’ouvre dans une nouvelle fenêtre.
+   1. Dans Content Explorer, accédez au dossier cmUserRoot et sélectionnez-le. Cliquez avec le bouton droit de la souris sur le **cmUserRoot** et sélectionnez **Nouveau noeud**.
 
       ![Nouveau nœud de cmUserRoot](assets/2_cmuserroot_newnode.png)
 
@@ -71,12 +75,12 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
       ![propriété jcr:content](assets/3_jcrcontentntresource.png)
 
-      Parmi les sous-propriétés de jcr:content se trouve jcr:data en grisé. Double-cliquez sur jcr:data. La propriété devient modifiable et le bouton Choisir un fichier apparaît dans l’entrée. Cliquez sur **Choisir un fichier** et sélectionnez le fichier image que vous souhaitez utiliser comme logo. Le fichier image n’a pas besoin d’extension.
+      Parmi les sous-propriétés de jcr:content se trouve jcr:data, qui est grisé. Double-cliquez sur jcr:data. La propriété devient modifiable et le bouton Choisir un fichier apparaît dans l’entrée. Cliquez sur **Choisir un fichier** et sélectionnez le fichier image que vous souhaitez utiliser comme logo. Le fichier image n’a pas besoin d’extension.
 
       ![Données JCR](assets/5_jcrdata.png)
    Cliquez sur **Enregistrer tout**.
 
-1. Assurez-vous que le XDP/la mise en page que vous utilisez dans la lettre a un champ d’image en bas à gauche (ou tout autre emplacement de votre choix dans la mise en page où vous souhaitez rendre la signature) afin de rendre l’image de signature.
+1. Assurez-vous que le XDP\la mise en page que vous utilisez dans la lettre comporte un champ d’image en bas à gauche (ou à un autre emplacement approprié dans la mise en page où vous souhaitez rendre la signature) pour effectuer le rendu de l’image de signature.
 1. Lors de la création de la correspondance, sous l’onglet Données, sélectionnez un champ d’image pour l’image de la signature en procédant comme suit :
 
    1. Sélectionnez Système dans le menu contextuel Type de liaison dans le volet de droite.

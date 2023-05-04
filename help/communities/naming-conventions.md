@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5271feb9-70c6-4c82-8ac7-34a63d80e3aa
 exl-id: f5a63642-9f2c-436f-bd40-4459545a0ddf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 3%
+source-wordcount: '166'
+ht-degree: 7%
 
 ---
 
 # Conventions de nommage {#naming-conventions}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Tirets dans le nom de module Java {#hyphens-in-java-package-name}
 

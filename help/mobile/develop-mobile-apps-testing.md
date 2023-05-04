@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: 2a70f322-2540-471e-8a8e-6d48889cf94a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1061'
 ht-degree: 3%
 
 ---
 
 # Test des applications mobiles{#testing-mobile-apps}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >

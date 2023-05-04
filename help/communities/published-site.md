@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 4dc54701-68b9-49dd-a212-b0b53330c1c0
 exl-id: 8f716a59-1116-4855-baeb-3997de71b55f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1171'
 ht-degree: 3%
 
 ---
 
 # Expérience du site publié {#experience-the-published-site}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Accéder au nouveau site lors de la publication {#browse-to-new-site-on-publish}
 
@@ -121,8 +125,8 @@ Les groupes peuvent également être créés dans l’environnement de création
 Création d’un groupe de référence :
 
 1. Sélectionner **[!UICONTROL Nouveau groupe]**
-1. **[!UICONTROL Onglet Settings]**
-   * Nom du groupe: `Sports`
+1. **[!UICONTROL Onglet Paramètres]**
+   * Nom de groupe: `Sports`
    * Description: `A parent group for various sporting groups`
    * Nom de l’URL de groupe: `sports`
    * select `Open Group` (autoriser tout membre de la communauté à y participer en y rejoignant)

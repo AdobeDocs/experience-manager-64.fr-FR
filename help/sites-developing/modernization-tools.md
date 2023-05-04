@@ -6,14 +6,18 @@ seo-description: AEM Modernization Tools help you easily convert your legacy AEM
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: cfa9fcd0-8d57-4352-9646-12a4fcf5f695
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 100%
+source-wordcount: '123'
+ht-degree: 77%
 
 ---
 
 # Outils de modernisation d’AEM {#modernization-tools}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 [Les outils de modernisation d’AEM permettent de convertir facilement les éléments suivants :](http://opensource.adobe.com/aem-modernize-tools/)
 

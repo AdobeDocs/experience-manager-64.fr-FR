@@ -10,14 +10,18 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 274b3a33-3267-41ee-bdcd-351787152570
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 63%
+source-wordcount: '678'
+ht-degree: 61%
 
 ---
 
 # Comment développer des projets AEM à l’aide d’IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
@@ -129,7 +133,15 @@ Vous pouvez également ajouter ces options au script de démarrage dans `crx-qui
 ```shell
 # ...
 
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
+
 # default JVM options
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 if [ -z "$CQ_JVM_OPTS" ]; then
  CQ_JVM_OPTS='-server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true'
 fi
@@ -137,6 +149,10 @@ fi
 CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y"
 
 # ...
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 ```
 
 #### Démarrage du débogage {#start-debugging}

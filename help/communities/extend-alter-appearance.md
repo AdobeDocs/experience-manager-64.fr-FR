@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 70be208d-185b-4b27-8e01-74e62f656344
 exl-id: 358b70b8-8122-4eda-baa7-d9a58d6901f9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 2%
+source-wordcount: '304'
+ht-degree: 4%
 
 ---
 
 # Modification de l’aspect (HBS) {#alter-the-appearance-hbs}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Maintenant que les composants du système de commentaires personnalisé dans le répertoire de l’application (/apps) sont en place, avec un resourceSuperType référençant le système de commentaires par défaut et le modèle/affichage personnalisé enregistré, il est possible de modifier l’implémentation.
 

@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: cd080122-7ae5-4e6e-a8f6-b95dfbb0b511
 exl-id: ad66445b-0c83-48d0-880f-14ab2dce3716
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 12%
+source-wordcount: '410'
+ht-degree: 7%
 
 ---
 
 # Administration de contenu pour Adobe PhoneGap Enterprise avec AEM {#administering-content-for-adobe-phonegap-enterprise-with-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -33,10 +37,10 @@ Pour créer votre application AEM Mobile, reportez-vous à la section [Création
 
 Pour configurer votre environnement et commencer à utiliser le centre de contrôle,
 
-1. [Configurer vos utilisateurs et vos groupes](/help/mobile/configure-users-groups.md)
-1. [Définir le filtrage de référent de sorte à autoriser un référent vide ](/help/mobile/setting-referrer-filter-empty.md)
-1. [Configurer le service cloud Adobe PhoneGap Build ](/help/mobile/configure-phonegap-build-cloud.md)
-1. [Configurer le service cloud Adobe Analytics ](/help/mobile/configure-adobe-mobile-cloud-service.md)
+1. [Configuration des utilisateurs et des groupes](/help/mobile/configure-users-groups.md)
+1. [Définissez le filtre de référent pour autoriser le vide.](/help/mobile/setting-referrer-filter-empty.md)
+1. [Configuration de votre Cloud Service Adobe PhoneGap Build](/help/mobile/configure-phonegap-build-cloud.md)
+1. [Configuration de votre service Adobe Analytics Cloud](/help/mobile/configure-adobe-mobile-cloud-service.md)
 
 Pour en savoir plus sur Content Services, voir [Administration de Content Services](/help/mobile/developing-content-services.md).
 

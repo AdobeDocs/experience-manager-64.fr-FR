@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 role: Developer
 exl-id: 982223c2-aa4a-4013-8136-0155a99f5eff
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 94%
+source-wordcount: '1160'
+ht-degree: 92%
 
 ---
 
 # Démarrage rapide de l’API Java du service Document Security (SOAP) {#document-security-service-javaapi-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le démarrage rapide de l’API Java (SOAP) est disponible pour le service Rights Management :
 

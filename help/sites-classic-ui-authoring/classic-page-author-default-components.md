@@ -11,16 +11,20 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 exl-id: d552cbcc-8f71-48a3-9685-eba1ab8805c3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 100%
+source-wordcount: '253'
+ht-degree: 65%
 
 ---
 
 # Composants{#components}
 
-Adobe Experience Manager (AEM) est fourni avec divers composants prêts à l’emploi qui procurent des fonctionnalités complètes aux créateurs de sites web. Ils sont disponibles lors de la [modification d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) et sont regroupés par domaine fonctionnel principal (c’est-à-dire par groupe de composants) afin de faciliter le filtrage.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Adobe Experience Manager (AEM) est fourni avec divers composants prêts à l’emploi qui procurent des fonctionnalités complètes aux créateurs de sites web. Elles sont disponibles lorsque [modification d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) et sont regroupées par domaine fonctionnel principal (c’est-à-dire par groupe de composants) afin de faciliter le filtrage.
 
 >[!CAUTION]
 >
@@ -42,4 +46,4 @@ Vous trouverez dans les pages suivantes des liens rapides vers certains des prin
 
 ## Utilisation du mode de conception pour configurer des composants {#using-design-mode-to-configure-components}
 
-Outre les composants auxquels les créateurs peuvent accéder par le biais du sidekick dans une installation standard, d’autres sont également disponibles. Vous pouvez utiliser le [mode de conception](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) pour activer/désactiver ces composants et modifier les paramètres de composants spécifiques.
+Outre les composants auxquels les auteurs peuvent accéder via le sidekick dans une installation standard, divers autres composants sont également disponibles. Vous pouvez utiliser le [mode de conception](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) pour activer/désactiver ces composants et modifier les paramètres de composants spécifiques.

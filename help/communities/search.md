@@ -1,5 +1,5 @@
 ---
-title: Fonction de recherche
+title: Fonctionnalité de recherche
 seo-title: Search Feature
 description: Ajout et configuration de la recherche sur un site Communities
 seo-description: Adding and configuring Search to a Communities site
@@ -10,16 +10,20 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 exl-id: 15d8bd59-397e-4bd3-b0a2-b6893c015798
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 29%
+source-wordcount: '489'
+ht-degree: 4%
 
 ---
 
-# Fonction de recherche {#search-feature}
+# Fonctionnalité de recherche {#search-feature}
 
-La fonction de recherche fonctionne avec d’autres fonctions, comme les forums, et permet de rechercher du contenu.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+La fonction de recherche fonctionne avec différentes autres fonctionnalités, telles que les forums, pour permettre de rechercher du contenu.
 
 Lors de l’ajout de la possibilité de rechercher des publications saisies par des membres de la communauté, appelées contenu généré par l’utilisateur (UGC), deux composants sont disponibles : [ `Search`](#search-features) et [ `Search Results`](#search-results).
 
@@ -27,11 +31,11 @@ La page qui comprend la variable `Search Results` prend en charge la recherche e
 
 La page qui comprend la variable `Search`fournit un emplacement où lancer une recherche avec les résultats apparaissant sur la `Search Results` page.
 
-La fonction de recherche peut être utilisée avec n’importe quelle autre fonction permettant aux visiteurs et aux membres du site d’afficher du contenu.
+La fonction de recherche peut être utilisée avec toute autre fonction qui permet aux visiteurs et aux membres du site d’afficher du contenu.
 
 ## Recherche {#search-features}
 
-### Ajout du composant Rechercher à une page {#add-search-to-a-page}
+### Ajouter la recherche à une page {#add-search-to-a-page}
 
 Pour ajouter une `Search` sur une page en mode création, utilisez l’explorateur de composants pour accéder à `Communities / Search` et faites-le glisser sur la page. Utilisation de `Search` nécessite une deuxième page pour la variable `Search Results.`
 
@@ -41,7 +45,7 @@ Lorsque la bibliothèque côté client requise, `cq.social.hbs.search`, est incl
 
 ![chlimage_1-373](assets/chlimage_1-373.png)
 
-### Configuration du composant Rechercher {#configure-the-added-search}
+### Configuration de la recherche ajoutée {#configure-the-added-search}
 
 Sélectionnez le `Search` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
@@ -51,23 +55,24 @@ Sous , **[!UICONTROL Paramètres de recherche]** , indiquez comment les chemins 
 
 ![chlimage_1-375](assets/chlimage_1-375.png)
 
-* **[!UICONTROL Chemins de recherche]** Lorsque vous ajoutez des chemins de recherche à l’aide du bouton Ajouter un élément, la recherche de contenu est limitée. Par exemple, pour limiter la recherche à un forum spécifique, sélectionnez un composant de forum placé dans une page :
+* **[!UICONTROL Chemins de recherche]**
+En ajoutant des chemins de recherche à l’aide du bouton Ajouter un élément , la recherche de contenu est limitée. Par exemple, pour limiter la recherche à un forum spécifique, sélectionnez un composant de forum placé dans une page :
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Page de résultats]**
 Les résultats s’affichent sur une page distincte spécifiée à l’aide du navigateur pour sélectionner une page contenant le 
-`Search Results` component.
+`Search Results` composant.
 
 ## Résultats de la recherche {#search-results}
 
-### Ajout du composant Résultats de la recherche à une page {#add-search-results-to-a-page}
+### Ajout de résultats de recherche à une page {#add-search-results-to-a-page}
 
 Pour ajouter une `Search Results` sur une page en mode création, utilisez l’explorateur de composants pour accéder à
 
 * `Communities / Search Results`
 
-et faites-le glisser sur la page. Contrairement au composant Rechercher, la deuxième page n’est pas nécessaire, car les résultats s’affichent sur la même page.
+et faites-le glisser sur la page. Contrairement au composant Rechercher, aucune deuxième page n’est nécessaire, car les résultats s’affichent sur la même page.
 
 Si vous utilisez Rechercher ailleurs dans le site web, cette page avec `Search Results` peut être configuré pour être `Result Page` pour toutes les instances de `Search`.
 
@@ -77,7 +82,7 @@ Lorsque la bibliothèque côté client requise, `cq.social.hbs.search`, est incl
 
 ![chlimage_1-376](assets/chlimage_1-376.png)
 
-### Configuration du composant Résultats de la recherche ajouté {#configure-the-added-search-result}
+### Configuration du résultat de recherche ajouté {#configure-the-added-search-result}
 
 Sélectionnez le `Search Results` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
@@ -90,7 +95,8 @@ Sous , **[!UICONTROL Paramètres des résultats de recherche]** , il est possibl
 * **[!UICONTROL Résultats de la recherche par page]**
 Définissez le nombre de rubriques/publications affichées par page. La valeur par défaut est 10.
 
-* **[!UICONTROL Chemins de recherche]** Lorsque vous ajoutez des chemins de recherche à l’aide du bouton Ajouter un élément, la recherche de contenu est limitée.
+* **[!UICONTROL Chemins de recherche]**
+En ajoutant des chemins de recherche à l’aide du bouton Ajouter un élément , la recherche de contenu est limitée.
 
 ## Informations supplémentaires {#additional-information}
 

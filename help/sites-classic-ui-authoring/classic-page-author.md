@@ -1,7 +1,7 @@
 ---
 title: Création de pages
 seo-title: Authoring Pages
-description: 'La création avec AEM offre deux vues d’ensemble. (1) Premières étapes pour les auteurs : introduction pour les nouveaux auteurs et (2) Guide rapide pour la création de pages : guide rapide (de haut niveau) sur les principales actions.'
+description: 'La création avec AEM offre deux vues d’ensemble. (1) Premières étapes pour les auteurs : une introduction pour les nouveaux auteurs et (2) le Guide rapide pour la création de pages : un guide rapide sur les principales actions (dans les grandes lignes).'
 seo-description: There are two overviews to authoring with AEM. (1) First Steps for Authors - an introduction for new authors, and (2) Quick Guide to Authoring Pages - a quick guide (high-level) to the main actions.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
@@ -10,26 +10,30 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: be2465a5-8875-4c9c-bd0d-32631b0fe294
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 86%
+source-wordcount: '334'
+ht-degree: 85%
 
 ---
 
 # Création de pages{#authoring-pages}
 
-Vous trouverez ci-dessous un aperçu de la création avec AEM :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+La section suivante fournit un aperçu de la création avec AEM :
 
 * [Premières étapes pour les auteurs](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) : présentation à l’intention des nouveaux auteurs
 
 >[!NOTE]
 >
->Cette section couvre les tâches impliquées dans la création d’une page de contenu.<!-- There are many additional features closely related to page authoring, these are covered under [Site and Page Features](/sites-classic-ui-authoring/classic-feature.md). -->
+>Cette section couvre les tâches impliquées dans la création d’une page de contenu. <!-- There are many additional features closely related to page authoring, these are covered under [Site and Page Features](/sites-classic-ui-authoring/classic-feature.md). -->
 
-## Aperçu rapide des fonctions utilisées pour la création de pages {#quick-overview-of-features-used-for-authoring-pages}
+## Présentation rapide des fonctionnalités utilisées pour la création de pages {#quick-overview-of-features-used-for-authoring-pages}
 
-Afin de vous aider à créer vos pages, l’environnement de création met à votre disposition plusieurs fonctions, notamment :
+Pour vous aider lors de la création de pages, l’environnement de création propose des fonctionnalités telles que :
 
 * **Glisser-déplacer**
 Il est possible de déplacer des composants (texte, image, etc.) et des ressources numériques (images, par exemple) sur la page en les faisant simplement glisser jusqu’à l’emplacement voulu.
@@ -40,11 +44,14 @@ Une fois un élément positionné sur la page, vous pouvez ouvrir une boîte de 
 * **Édition statique**
 Vous pouvez modifier les composants Texte et Image directement sur la page web sans ouvrir de boîte de dialogue ni procéder à un enregistrement explicite.
 
-* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)** Fenêtre d’inspection flottante qui s’ouvre sur la page à modifier. Depuis cette fenêtre, vous pouvez faire glisser des composants sur la page et procéder à des opérations spécifiques à la page.
+* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
+Fenêtre d’inspection flottante qui s’ouvre sur la page à modifier. Depuis cette fenêtre, vous pouvez faire glisser des composants sur la page et procéder à des opérations spécifiques à la page.
 
-* **[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)** Sur le côté gauche de chaque page à créer, l’outil de recherche de contenu fournit un accès rapide à diverses ressources, y compris des ressources numériques (autres images, éléments Flash et documents, par exemple), d’autres pages et des paragraphes. Ces éléments peuvent être déplacés sur la page, par exemple pour positionner les ressources ou créer des liens vers d’autres pages.
+* **[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
+Sur le côté gauche de chaque page à créer, l’outil de recherche de contenu fournit un accès rapide à diverses ressources, y compris des ressources numériques (autres images, éléments Flash et documents, par exemple), d’autres pages et des paragraphes. Ces éléments peuvent être déplacés sur la page, par exemple pour positionner les ressources ou créer des liens vers d’autres pages.
 
-* **Menu contextuel** Cliquez avec le bouton droit sur la plupart des éléments à l’écran (par exemple, des paragraphes sur la page) pour afficher un menu contextuel avec les options appropriées.
+* **Menu contextuel**
+Cliquez avec le bouton droit sur la plupart des éléments à l’écran (par exemple, des paragraphes sur la page) pour afficher un menu contextuel avec les options appropriées.
 
 * **Recherche en cours de frappe**
 Dans certains cas (par exemple, lors de la sélection d’un chemin d’accès dans les boîtes de dialogue de modification), la recherche de contenu dans l’interface d’AEM présente des correspondances dynamiques en cours de saisie de la requête.

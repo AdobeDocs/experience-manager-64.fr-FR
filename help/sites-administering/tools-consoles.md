@@ -6,16 +6,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 7566e1bc-8571-4b3c-b420-4324026bd4dd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 94%
+source-wordcount: '911'
+ht-degree: 26%
 
 ---
 
 # Consoles Outils{#tools-consoles}
 
-Les consoles **Outils** permettent d’accéder à différents outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. Pour le moment, il existe deux versions de la console **Outils** selon l’interface utilisateur que vous utilisez :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Les consoles **Outils** permettent d’accéder à différents outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. Il existe actuellement deux versions du **Outils** console en fonction de l’interface utilisateur que vous utilisez :
 
 * [Outils – IU classique](#tools-classic-ui)
 * [Outils – IU optimisée pour les écrans tactiles](#tools-touch-optimized-ui)
@@ -30,79 +34,79 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <th>Objectif</th> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/msm.md">MSM Control Center</a></td> 
+   <td><a href="/help/sites-administering/msm.md">Centre de contrôle MSM</a></td> 
    <td> </td> 
-   <td>Point centralisé pour gérer plusieurs sites.</td> 
+   <td>Point centralisé pour la gestion de vos multiples sites.</td> 
   </tr> 
   <tr> 
-   <td>Configurations de ClientContext<br /> </td> 
+   <td>Configurations du contexte client<br /> </td> 
    <td> </td> 
-   <td><a href="/help/sites-developing/client-context.md">ClientContext</a> représente une collection de données utilisateur assemblées dynamiquement. Les configurations de cloud par défaut et marketing sont définies ici.<br /> </td> 
+   <td>Le <a href="/help/sites-developing/client-context.md">ClientContext</a> représente une collection de données utilisateur assemblées dynamiquement. Les configurations cloud par défaut et marketing sont conservées ici.<br /> </td> 
   </tr> 
   <tr> 
    <td>Configuration des services cloud<br /> </td> 
    <td> </td> 
-   <td>Contient les configurations liées à l’<a href="/help/sites-administering/marketing-cloud.md">intégration à Adobe Marketing Cloud</a>.</td> 
+   <td>Contient les configurations liées à <a href="/help/sites-administering/marketing-cloud.md">Intégration à Adobe Marketing Cloud</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">Commerce</a></td> 
    <td> </td> 
-   <td>Permet d’accéder aux importateurs et aux différentes données de produit.</td> 
+   <td>Permet d’accéder aux importateurs et à diverses données de produit.</td> 
   </tr> 
   <tr> 
-   <td>Gestion des actifs numériques : gestion des droits numériques<br /> </td> 
+   <td>DAM - Digital Rights Management<br /> </td> 
    <td> </td> 
    <td>Permet d’accéder aux informations sur les droits numériques et aux licences.</td> 
   </tr> 
   <tr> 
-   <td>Gestion des actifs numériques : outil de vérification d’état<br /> </td> 
+   <td>DAM - Contrôle d’intégrité<br /> </td> 
    <td> </td> 
-   <td>Comparaisons <code>/var/dam</code> et <code>/content/dam</code> et vérifie<br /> incohérences. Les fichiers/dossiers répertoriés peuvent alors être synchronisés ou supprimés. Les types de nœuds pour la comparaison de dossiers peuvent être configurés dans la console web.</td> 
+   <td>Comparaisons <code>/var/dam</code> et <code>/content/dam</code> et vérifie<br /> incohérences. Tous les fichiers/dossiers répertoriés peuvent ensuite être synchronisés ou supprimés. Les types de noeuds pour la comparaison de dossiers peuvent être configurés dans la console web.</td> 
   </tr> 
   <tr> 
-   <td>Gestion des actifs numériques : Adobe InDesign<br /> </td> 
+   <td>DAM - Indesign Adobe<br /> </td> 
    <td> </td> 
-   <td>Scripts à utiliser conjointement à Adobe InDesign.</td> 
+   <td>Scripts à utiliser avec Adobe Indesign.</td> 
   </tr> 
   <tr> 
-   <td>Gestion des actifs numériques : profils vidéo<br /> </td> 
+   <td>DAM - Profils vidéo<br /> </td> 
    <td> </td> 
-   <td>Profils configurables pour les transcodages FFMPEG.</td> 
+   <td>Profils configurables pour les transcodages ffmpeg.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">Tableaux de bord</a></td> 
    <td> </td> 
-   <td>Vous donne la possibilité de créer des tableaux de bord de rapports, ce qui permet de définir des pages qui affichent des données consolidées de façon personnalisée.</td> 
+   <td>Permet de créer des tableaux de bord de rapports ; ils offrent un moyen personnalisable de définir des pages qui affichent des données consolidées.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-developing/designer.md">Conceptions</a></td> 
    <td> </td> 
-   <td>Contient la liste des conceptions définies, dont les images et les fichiers CSS à utiliser.</td> 
+   <td>Contient la liste des conceptions définies, y compris les graphiques et les fichiers CSS à utiliser.</td> 
   </tr> 
   <tr> 
    <td>Documentation personnalisée</td> 
    <td> </td> 
-   <td>Utilisée lors de l’extension de la documentation et de l’aide en ligne.</td> 
+   <td>Utilisé lors de l’extension de la documentation et de l’aide en ligne.</td> 
   </tr> 
   <tr> 
-   <td>Envoi de formulaires</td> 
+   <td>Envois de formulaire</td> 
    <td> </td> 
-   <td>Contient la liste des envois de formulaires reçus.</td> 
+   <td>Contient la liste des envois de formulaire reçus.</td> 
   </tr> 
   <tr> 
-   <td>Importateurs – <a href="/help/sites-administering/bulk-editor.md">Éditeur en bloc</a></td> 
+   <td>Importateurs - <a href="/help/sites-administering/bulk-editor.md">Éditeur en bloc</a></td> 
    <td> </td> 
    <td>Permet de rechercher des éléments et de les modifier en bloc. Vous pouvez également exporter et importer du contenu (en bloc) dans le référentiel.</td> 
   </tr>
   <tr> 
-   <td>Importateurs – Importateur de flux</td> 
+   <td>Importateur - Importateur de flux</td> 
    <td> </td> 
-   <td><p>L’importateur de flux est une structure qui permet d’importer, dans votre référentiel, du contenu provenant de sources externes, de façon répétée. Il consiste à interroger une ressource distante selon un intervalle spécifié, à l’analyser et à créer des nœuds dans le référentiel qui représentent le contenu de la ressource distante.</p> </td> 
+   <td><p>L’importateur de flux est une structure permettant d’importer à plusieurs reprises du contenu provenant de sources externes dans votre référentiel. L’idée de l’importateur de flux est d’interroger une ressource distante à un intervalle spécifié, de l’analyser et de créer des noeuds dans le référentiel de contenu qui représentent le contenu de la ressource distante.</p> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/external-link-checker.md">Vérificateur de lien externe</a></td> 
    <td> </td> 
-   <td>Analyse toutes les pages de contenu de l’instance AEM et vérifie les liens externes. Une liste des liens valides et non valides s’affiche.</td> 
+   <td>Analyse toutes les pages de contenu de votre instance AEM et vérifie les liens externes. Une liste des liens valides et non valides s’affiche.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/mobile.md">Mobile</a></td> 
@@ -112,7 +116,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   <tr> 
    <td><a href="/help/sites-administering/msm.md">MSM</a></td> 
    <td> </td> 
-   <td>Gère le contenu multilingue et multinational, ce qui permet d’équilibrer le branding avec le contenu localisé.</td> 
+   <td>Gère le contenu multilingue et multinational, ce qui vous permet d’équilibrer le branding centralisé avec le contenu localisé.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/notification.md">Notification</a></td> 
@@ -120,74 +124,74 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Modèles de notification.</td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/package-manager.md">Modules</a></td> 
+   <td><a href="/help/sites-administering/package-manager.md">Packages</a></td> 
    <td> </td> 
-   <td>Autre lien vers le gestionnaire de modules, qui affiche les modules chargés pour la gestion de contenu web AEM. Similaire aux informations affichées dans le gestionnaire de modules de CRX.</td> 
+   <td>Autre lien vers le gestionnaire de packages, qui affiche les packages chargés pour la gestion de contenu web AEM. Similaire aux informations affichées dans le gestionnaire de modules de CRX.</td> 
   </tr> 
   <tr> 
-   <td>Réplication – <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">Agents de réplication</a></td> 
+   <td>Réplication - <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">Agents de réplication</a></td> 
    <td> </td> 
-   <td>Servent à répliquer des données de l’environnement de création vers l’environnement de publication lorsque vous publiez des pages ou, en cas de réplication inverse, à transmettre les commentaires des utilisateurs de l’environnement de publication vers l’environnement de création.</td> 
+   <td>Utilisé pour répliquer les données de l’auteur à publier lors de la publication de pages ou avec la réplication inverse pour renvoyer les commentaires des utilisateurs de l’environnement de publication à l’auteur.</td> 
   </tr> 
   <tr> 
-   <td>Importateurs – <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">Activer l’arborescence</a></td> 
+   <td>Importateurs - <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">Activer l’arborescence</a></td> 
    <td> </td> 
-   <td>Vous pouvez activer les différentes pages à partir de l’onglet Sites web. Après avoir saisi, ou mis à jour, un nombre élevé de pages de contenu (toutes résidant sous la même page racine), il peut s’avérer plus simple d’activer toute l’arborescence en une seule opération. Vous pouvez également effectuer une Exécution d’essai afin d’émuler une activation et de mettre en surbrillance les pages à activer.</td> 
+   <td>Dans l’onglet Sites web , vous pouvez activer les pages individuelles. Lorsque vous avez saisi, ou mis à jour, un nombre considérable de pages de contenu (toutes résidant sous la même page racine), il peut s’avérer plus facile d’activer l’arborescence entière en une seule action. Vous pouvez également exécuter une exécution d’essai pour émuler une activation et mettre en surbrillance les pages qui seront activées.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/reporting.md">Rapports</a></td> 
    <td> </td> 
-   <td>AEM fournit divers rapports personnalisés et permet de créer des rapports personnalisés et/ou d’élaborer le vôtre.</td> 
+   <td>AEM fournit toute une gamme de rapports personnalisés, vous permet de créer des rapports personnalisés et/ou de développer vos propres rapports.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/scaffolding.md">Génération de modèles automatique de page par défaut</a></td> 
    <td> </td> 
-   <td>En mode Génération de modèles automatique, vous pouvez créer un formulaire (que l’on désigne sous le nom de modèle automatique) dont les champs représentent la structure souhaitée pour vos pages, puis l’utiliser afin de créer aisément des pages sur la base de cette structure.</td> 
+   <td>Avec la génération de modèles automatique, vous pouvez créer un formulaire (un modèle automatique) avec des champs qui reflètent la structure souhaitée pour vos pages, puis utiliser ce formulaire pour créer facilement des pages en fonction de cette structure.</td> 
   </tr> 
   <tr> 
    <td>Sécurité - <a href="/help/sites-administering/notification.md">Configuration en libre-service </a> </td> 
    <td> </td> 
-   <td>Permet de configurer les messages électroniques que les utilisateurs reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et pour confirmer qu’un mot de passe a été réinitialisé.</td> 
+   <td>Permet de configurer les courriers électroniques que les utilisateurs reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et de confirmer qu’un mot de passe a été réinitialisé.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentation</a></td> 
    <td> </td> 
-   <td>Les intérêts et objectifs des visiteurs qui se rendent sur un site sont variés. La compréhension de ces objectifs et la satisfaction de ces attentes constituent un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en profilant le visiteur :<br /> </td> 
+   <td>Les visiteurs du site ont des intérêts et des objectifs différents lorsqu’ils se rendent sur un site. Comprendre ces objectifs et répondre aux attentes est un facteur de réussite important pour le marketing en ligne. La segmentation permet d’y parvenir en analysant et en profilant le visiteur ou la visiteuse.<br /> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>Configuration SRP par défaut. Voir <a href="/help/communities/srp-config.md">Console Configuration de stockage</a>.</td> 
+   <td>Configuration SRP par défaut. Voir <a href="/help/communities/srp-config.md">Configuration de stockage</a> console.</td> 
   </tr> 
   <tr> 
    <td>taskmanagement</td> 
    <td> </td> 
-   <td>Aucune fonctionnalité active n’est liée à cette entrée.</td> 
+   <td>Aucune principale fonctionnalité liée à cette entrée.</td> 
   </tr> 
   <tr> 
    <td>clients</td> 
    <td> </td> 
-   <td>Aucune fonctionnalité active n’est liée à cette entrée.</td> 
+   <td>Aucune principale fonctionnalité liée à cette entrée.</td> 
   </tr> 
   <tr> 
-   <td>Contrôle de version – <a href="/help/sites-deploying/version-purging.md">Purger les versions</a></td> 
+   <td>Contrôle de version - <a href="/help/sites-deploying/version-purging.md">Purge des versions</a></td> 
    <td> </td> 
-   <td>Permet de purger les versions de page, au besoin.</td> 
+   <td>Permet de purger les versions de page selon les besoins.</td> 
   </tr> 
   <tr> 
    <td>Référentiels virtuels</td> 
    <td> </td> 
-   <td>Vous pouvez configurer un référentiel virtuel à l’aide de la fonctionnalité de montage d’espace de travail afin que les applications de contenu compatibles JCR puissent accéder de façon simplifiée à l’infrastructure de contenu JCR basée sur CRX ainsi qu’aux connecteurs JCR.</td> 
+   <td>Vous pouvez configurer un référentiel virtuel à l’aide de la fonction de montage de l’espace de travail pour fournir aux applications de contenu compatibles JCR un accès simplifié à l’infrastructure de contenu JCR basée sur CRX et les connecteurs JCR.</td> 
   </tr> 
   <tr> 
-   <td>mots-clés</td> 
+   <td>watchwords</td> 
    <td> </td> 
-   <td>Obsolète. Voir <a href="/help/communities/moderate-ugc.md#watchwords">Modération du contenu d’une communauté</a></td> 
+   <td>Obsolète. Voir <a href="/help/communities/moderate-ugc.md#watchwords">Modération de contenu de la communauté</a></td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">Workflow</a></td> 
    <td> </td> 
-   <td>Les workflows contrôlent une série d’actions dans des pages ou des ressources numériques prenant en charge tout processus éditorial.</td> 
+   <td>Les workflows contrôlent une série d’actions sur des pages ou des ressources numériques qui prennent en charge tout processus éditorial.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -238,7 +242,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-authoring/tags.md">Gestion des balises</a></td> 
+   <td><a href="/help/sites-authoring/tags.md">Gestion des tags</a></td> 
    <td>Organiser vos balises et leurs espaces de noms.</td> 
   </tr> 
   <tr> 
@@ -278,12 +282,12 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/package-manager.md">Modules</a></td> 
+   <td><a href="/help/sites-administering/package-manager.md">Packages</a></td> 
    <td>Regroupez et partagez des applications.</td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/package-manager.md#package-share">Partage de modules</a></td> 
+   <td><a href="/help/sites-administering/package-manager.md#package-share">Partage de packages</a></td> 
    <td>Téléchargez des applications depuis Adobe et la communauté.<br /> </td> 
   </tr> 
   <tr> 
@@ -341,4 +345,4 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
 
 >[!NOTE]
 >
->Certaines des options ci-dessus conduisent réellement vers l’interface utilisateur classique.
+>Certaines des options ci-dessus sont liées à l’IU classique.

@@ -1,7 +1,7 @@
 ---
 title: Introduction à l’interface utilisateur de création d’une communication interactive
 seo-title: An introduction to the various user interface elements you can use to author Interactive Communication
-description: Introduction aux différents éléments de l’interface utilisateur permettant de créer une communication interactive
+description: Présentation des différents éléments de l’interface utilisateur que vous pouvez utiliser pour créer une communication interactive
 seo-description: An introduction to the various user interface elements you can use to author Interactive Communication
 uuid: 4e301b9a-76a1-4beb-9d67-dbd0a3bdd2e4
 content-type: reference
@@ -10,16 +10,20 @@ topic-tags: interactive-communications
 discoiquuid: 565bfb42-6099-49f4-83ba-b1f0c129aab7
 feature: Interactive Communication
 exl-id: 1537490b-71b3-4ab3-b8d1-d85eac88d857
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 89%
+source-wordcount: '1321'
+ht-degree: 62%
 
 ---
 
 # Introduction à l’interface utilisateur de création d’une communication interactive {#introduction-to-interactive-communication-authoring-ui}
 
-Introduction aux différents éléments de l’interface utilisateur permettant de créer une communication interactive
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Présentation des différents éléments de l’interface utilisateur que vous pouvez utiliser pour créer une communication interactive
 
 L’interface utilisateur de création d’une [Communication interactive](/help/forms/using/interactive-communications-overview.md) est intuitive et fournit les éléments suivants pour la création de canaux d’impression et web de la communication interactive :
 
@@ -42,7 +46,7 @@ Lorsque vous [créez une communication interactive ou en modifiez une existante]
 
 ![Barre latérale](assets/sidebar-comps.png)
 
-[Cliquez sur l’image pour l’agrandir](assets/sidebar-comps-1.png)
+[Cliquez pour agrandir](assets/sidebar-comps-1.png)
 
 **A.** Explorateur de canaux **B.** Explorateur de contenu **C.** Explorateur de propriétés **D.** Explorateur de ressources **E.** Explorateur de composants **F.** Explorateur des sources de données - Modèle de données **G.** Explorateur des sources de données - Contenu Principal
 
@@ -50,11 +54,11 @@ La barre latérale contient les éléments suivants :
 
 * **Explorateur de canaux**
 
-   L’explorateur de canaux vous permet de basculer entre les canaux d’impression et les canaux Web de la communication interactive. En fonction du canal que vous avez sélectionné dans l’explorateur de canaux, les navigateurs, tels que Contenu et Composants, affichent les options.
+   Le navigateur Canal vous permet de basculer entre les canaux d’impression et web de la communication interactive. En fonction du canal sélectionné dans l’explorateur de canaux, les navigateurs, tels que Contenu et Composants, affichent les options.
 
 * **Explorateur de contenu**
 
-   Dans l’explorateur de contenu, vous pouvez voir la hiérarchie des objets du document pour le canal sélectionné. L’auteur peut accéder au composant spécifique en appuyant sur cet élément dans l’arborescence de l’objet de document. L’auteur peut alors rechercher des objets dans le canal web et les réorganiser depuis l’arborescence.
+   Dans l’explorateur de contenu, vous pouvez voir la hiérarchie des objets du document pour le canal sélectionné. L’auteur peut accéder à un composant spécifique en appuyant sur cet élément dans l’arborescence de l’objet de document. L’auteur peut rechercher des objets dans le canal web et les réorganiser à partir de cette arborescence.
 
 * **Explorateur de propriétés**
 
@@ -72,13 +76,13 @@ La barre latérale contient les éléments suivants :
 
 | **Composant** | **Canal d’impression** | **Canal web** | **Fonctionnalité** |
 |---|---|---|---|
-| Graphique | ✓ | ✓ | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles extraites d’un élément de collection du modèle de données de formulaire. |
+| Graphique | ✓ | ✓ | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles récupérées à partir d’un élément de collecte de modèle de données de formulaire. |
 | Fragment de document | ✓ | ✓ | Vous permet d’ajouter un composant réutilisable, du texte, une liste ou une condition à une communication interactive. Le composant réutilisable que vous ajoutez à une communication interactive peut être basé sur modèle de données de formulaire ou sans modèle de données de formulaire. |
-| Image | ✓ | ✓ | Permet d’insérer une image. |
-| Panneau | - | ✓ | Le composant Panneau est un espace réservé pour regrouper d’autres composants et contrôle la disposition d’un groupe de composants dans une communication interactive. Un composant de panneau vous permet également de permettre la répétition d’un groupe de composants pour l’utilisateur final, par exemple dans plusieurs entrées requises pour remplir les informations d’identification. Il est également recommandé d’utiliser un panneau pour chaque onglet d’une communication interactive dotée de plusieurs onglets. |
+| Image | ✓ | ✓ | Vous permet d’insérer une image. |
+| Panneau | - | ✓ | Le composant Panneau est un espace réservé permettant de regrouper d’autres composants et contrôle la disposition d’un groupe de composants dans une communication interactive. Un composant de panneau vous permet également de rendre un groupe de composants répétables pour l’utilisateur final, par exemple dans plusieurs entrées requises pour remplir des informations d’identification pédagogiques. Il est également recommandé d’utiliser un panneau pour chaque onglet d’une communication interactive dotée de plusieurs onglets. |
 | Tableau | &amp;ast; | ✓ | Ajoute un tableau qui permet de classer les données par lignes et par colonnes. |
 | Zone cible | &amp;ast;&amp;ast; | ✓ | Insère une zone cible dans un canal web pour organiser les composants spécifiques au canal web. |
-| Texte | - | ✓ | Ajoute le texte au canal web d’une communication interactive. Le texte peut utiliser des objets de modèle de données de formulaire pour rendre le contenu dynamique. |
+| Texte | - | ✓ | Ajoute du texte au canal web d’une communication interactive. Le texte peut utiliser des objets de modèle de données de formulaire pour rendre le contenu dynamique. |
 
 &amp;ast; Utilisez des fragments de mise en page dans le canal d’impression pour ajouter des tableaux.
 
@@ -88,12 +92,12 @@ La barre latérale contient les éléments suivants :
 
    L’ explorateur de sources de données affiche les sources de données disponibles dans le modèle de données de formulaire que vous avez sélectionné lors de la création de la communication interactive.
 
-### Points clés pour l’utilisation de composants {#key-points-for-working-with-components}
+### Points clés de l’utilisation des composants {#key-points-for-working-with-components}
 
-Les points clés lorsque vous utilisez des composants de communication interactive sont les suivants :
+Les points clés lors de l’utilisation des composants de communication interactive sont les suivants :
 
 * Chaque composant est associé à des propriétés qui contrôlent son apparence et ses fonctionnalités. Pour configurer les propriétés d’un composant, appuyez sur celui-ci et sélectionnez ![cmppr](assets/cmppr.png) pour ouvrir les propriétés du composant dans l’explorateur de propriétés.
-* Un composant est identifié par son nom d’élément. Lorsque vous cliquez sur ![cmppr](assets/cmppr.png), vous pouvez changer le nom du composant en modifiant la valeur du champ Nom de l’élément dans l’explorateur de propriétés. Vous pouvez saisir uniquement des lettres, des chiffres, des traits d’union (-) et des traits de soulignement (_) dans le champ Nom de l’élément. D’autres caractères spéciaux ne sont pas autorisés et le nom de l’élément doit commencer par une lettre.
+* Un composant est identifié par son nom d’élément. Lorsque vous cliquez sur ![cmppr](assets/cmppr.png), vous pouvez changer le nom du composant en modifiant la valeur du champ Nom de l’élément dans l’explorateur de propriétés. Le champ Nom de l’élément accepte uniquement les lettres, les chiffres, les tirets (-) et les traits de soulignement (_). Les autres caractères spéciaux ne sont pas autorisés et le nom de l’élément doit commencer par une lettre.
 * Vous pouvez modifier la propriété de titre d’un composant de communication interactive en ligne dans l’éditeur sans ouvrir l’explorateur de propriétés tant que le titre est visible sur la communication interactive. Pour ce faire :
 
    1. Appuyez pour sélectionner un composant qui a une propriété Titre et dont la propriété Masquer le titre est désactivée.
@@ -104,7 +108,7 @@ Les points clés lorsque vous utilisez des composants de communication interacti
 
 ![](do-not-localize/toolbar.png)
 
-Lorsque vous sélectionnez un composant, une barre d’outils s’affiche, vous permettant de l’utiliser. Vous avez la possibilité de couper, coller, déplacer et spécifier les propriétés des composants. Vous avez le choix entre :
+Lorsque vous sélectionnez un composant, une barre d’outils s’affiche pour vous permettre de l’utiliser. Vous avez la possibilité de couper, coller, déplacer et spécifier les propriétés des composants. Vous avez le choix entre :
 
 A. **Configurer** : lorsque vous appuyez sur **Configurer**, les propriétés du composant sont visibles dans la barre latérale.
 
@@ -127,11 +131,11 @@ I. **Parent** : permet de sélectionner le parent d’un composant.
 J. **Plus**: Fournit d’autres options pour utiliser le composant sélectionné.
 
 * Afficher l’expression SOM (pour les panneaux uniquement)
-* Regrouper les objets dans le panneau (pour les panneaux uniquement)
+* Associer des objets dans le panneau (pour les panneaux uniquement)
 * Modifier le fragment (pour les fragments uniquement)
-* Enregistrer un panneau en tant que fragment (pour les panneaux uniquement)
+* Enregistrement d’un panneau en tant que fragment (pour les panneaux uniquement)
 * Ajouter un panneau enfant (pour les panneaux uniquement)
-* Ajouter une barre d’outils de panneau (pour les panneaux uniquement)
+* Barre d’outils Ajouter un panneau (pour les panneaux uniquement)
 * Remplacer (pas pour les panneaux)
 
 ## Barre d’outils Page {#page-toolbar}
@@ -144,7 +148,7 @@ La barre d’outils de la page, située en haut de l’écran, propose des optio
 * Modifier : permet de sélectionner d’autres modes comme : Modifier, Style, Développeur et Conception.
 
    * Modifier : modifie les propriétés de la communication interactive et de ses composants. Exemple : l’ajout d’un composant, le dépôt d’une image et l’indication des champs obligatoires.
-   * Style : définit l’aspect des composants de votre communication interactive. Par exemple, en mode Style, vous pouvez sélectionner un panneau et définir sa couleur d’arrière-plan.
+   * Style : Vous permet de mettre en forme l’aspect des composants de votre communication interactive. Par exemple, en mode Style, vous pouvez sélectionner un panneau et définir sa couleur d’arrière-plan.
    * Développeur : permet à un développeur de :
 
       * Découvrir en quoi consiste la communication interactive.

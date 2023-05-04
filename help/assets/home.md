@@ -5,14 +5,18 @@ user-guide-title: Guide d’Assets
 feature: Asset Management
 role: User,Architect,Admin
 exl-id: 72b5e053-9307-4333-84e5-d4cc2b6bdecc
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 66%
+source-wordcount: '336'
+ht-degree: 61%
 
 ---
 
 # Guide d’Assets
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Ce guide couvre tous les [!DNL Experience Manager] Tâches relatives aux ressources, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 

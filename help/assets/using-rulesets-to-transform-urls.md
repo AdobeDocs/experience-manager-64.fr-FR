@@ -8,16 +8,20 @@ content-type: reference
 exl-id: f0cd3a75-03ed-40a9-b336-8a782f3cfe69
 feature: Rulesets
 role: Admin,User,Developer
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 98%
+source-wordcount: '798'
+ht-degree: 84%
 
 ---
 
 # Utilisation d’ensembles de règles pour transformer des URL {#using-rulesets-to-transform-urls}
 
-Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques. Chaque règle définit au moins une condition et une action. Une règle évalue si les données XML remplissent les conditions et, si tel est le cas, déclenche les actions appropriées. Les exemples d’ensembles de règles comprennent les éléments suivants :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques. Chaque règle définit au moins une condition et une action. Une règle évalue si les données XML remplissent les conditions et, si tel est le cas, déclenche les actions appropriées. Voici quelques exemples d’ensembles de règles :
 
 * Ajout d’un suffixe de type MIME. De nombreux services et sites web ont besoin de suffixes d’image, comme l’ajout de `.jpg` à une URL.
 * Création d’un chemin de dossier vers l’URL pour le SEO (Search Engine Optimization, ou optimisation du moteur de recherche).
@@ -28,7 +32,7 @@ Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transfor
 
    Consultez [Comment Adobe Dynamic Media Classic prend en charge le SEO](/help/assets/assets/s7_seo.pdf).
 
-* Définition de la mise en page du contenu pour déclencher le téléchargement.
+* Définition de la disposition du contenu pour déclencher un téléchargement.
 * Simplifiez le service d’images pour la création de modèles d’URL pour la personnalisation. Par exemple, transformez `rgb{XX,YY,ZZ}` en `\redXX\greenYY\blueZZ` qui est conforme RTF.
 
 * Effectuez la demande de certains caractères à coder tels que `$`, `{` et `}`, et certains caractères à décoder vers ImageServer. Par exemple, Facebook ne fonctionne pas bien avec les URL contenant des caractères spéciaux.
@@ -60,27 +64,27 @@ Consultez également la section [Utilisation de « ressource » au lieu d’un
 
 **Pour déployer des ensembles de règles XML, procédez comme suit :**
 
-1. Connectez-vous à l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+1. Connectez-vous à l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#sign-in-dmc-app).
 
    Vos informations d’identification et votre connexion ont été fournies par Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
 1. Téléchargez votre fichier d’ensemble de règles en procédant comme suit :
 
-   * Sur la barre de Navigation générale, cliquez sur **[!UICONTROL Charger]**.
+   * Dans la barre de navigation globale, cliquez sur **[!UICONTROL Télécharger]**.
    * Sur la page **[!UICONTROL Charger]**, près du coin supérieur gauche, cliquez sur **[!UICONTROL Parcourir]**.
    * Dans la boîte de dialogue **[!UICONTROL Ouvrir]**, naviguez jusqu’à votre fichier d’ensemble de règles (XML).
    * Sélectionnez le fichier, puis cliquez sur **[!UICONTROL Ouvrir]**.
    * Sur le côté droit de la page **[!UICONTROL Charger]**, sélectionnez un dossier de destination pour le fichier d’ensemble de règles.
-   * Près du bas de la page, assurez-vous que l’option **[!UICONTROL Publier après le chargement]** est cochée.
-   * Dans le coin inférieur droit de la page, cliquez sur **[!UICONTROL Soumettre le chargement]**.
+   * Près du bas de la page, assurez-vous que **[!UICONTROL Publier après le téléchargement]** est cochée.
+   * Dans le coin inférieur droit de la page, cliquez sur **[!UICONTROL Envoyer le téléchargement]**.
    * Sur la barre de Navigation générale, cliquez sur **[!UICONTROL Tâches]** afin de vérifier le statut de la tâche de chargement. Lorsque la colonne **[!UICONTROL État]** sur la page de la **[!UICONTROL Tâche]** indique Chargement terminé, passez aux étapes suivantes.
 
 1. Sur la barre de navigation située en haut de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images]**.
 1. Sur la page du **[!UICONTROL Publication du serveur d’images]**, sous le groupe **[!UICONTROL Gestion de catalogue]**, localisez le **[!UICONTROL Chemin d’accès au fichier des définitions d’ensembles de règles]**, puis cliquez sur **[!UICONTROL Sélectionner]**.
 1. Sur la page **[!UICONTROL Sélectionner le fichier de définition de l’ensemble de règles (XML)]**, accédez à votre fichier d’ensemble de règles, puis dans le coin inférieur droit de la page, cliquez sur **[!UICONTROL Sélectionner]**.
 1. Dans le coin inférieur droit de la page Configuration, cliquez sur **[!UICONTROL Fermer]**.
-1. Exécutez une tâche de Publication de serveur d’images.
+1. Exécutez une tâche de publication Image Server.
 
    Les conditions d’ensemble de règles sont appliquées aux demandes aux serveurs d’images Dynamic Media en ligne.
 
-   Si vous apportez des modifications au fichier d’ensemble de règles, celles-ci sont immédiatement appliquées lorsque vous rechargez et publiez à nouveau le fichier d’ensemble de règles mis à jour.
+   Si vous apportez des modifications au fichier d’ensemble de règles, elles sont immédiatement appliquées lorsque vous chargez à nouveau et publiez à nouveau le fichier d’ensemble de règles mis à jour.

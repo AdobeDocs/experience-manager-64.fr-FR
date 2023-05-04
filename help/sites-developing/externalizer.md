@@ -1,7 +1,7 @@
 ---
 title: Externalisation d’URL
 seo-title: Externalizing URLs
-description: Externalizer est un service OSGI qui vous permet de transformer, par programmation, un chemin d’accès aux ressources en une URL externe et absolue.
+description: Externalizer est un service OSGI qui vous permet de transformer, par programmation, un chemin d’accès à une ressource en URL absolue externe.
 seo-description: The Externalizer is an OSGI service that allows you to programmatically transform a resource path into an external and absolute URL
 uuid: ea887096-1a48-4bdb-bc5c-e4fe719e5632
 contentOwner: Guillaume Carlino
@@ -10,26 +10,30 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 53342acb-c1a5-443d-8727-cb27cc9d6845
 exl-id: 123ef72b-f09b-47eb-9b5a-e0deb38799df
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 81%
+source-wordcount: '546'
+ht-degree: 41%
 
 ---
 
 # Externalisation d’URL{#externalizing-urls}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Dans AEM, **Externalizer** est un service OSGI qui vous permet de transformer, par programmation, un chemin d’accès aux ressources (`/path/to/my/page`) en une URL externe et absolue (`https://www.mycompany.com/path/to/my/page`, par exemple) en faisant précéder le chemin d’accès d’un DNS préconfiguré.
 
-Une instance ne peut pas connaître son URL visible en externe si elle s’exécute derrière une couche web et il arrive qu’un lien doive être créé en dehors d’une étendue de demande. Dès lors, ce service fournit un emplacement centralisé pour configurer ces URL externes et les générer.
+Comme une instance ne peut pas connaître son URL visible en externe si elle s’exécute derrière une couche web, et qu’il arrive qu’un lien doive être créé en dehors de la portée de la requête, ce service fournit un emplacement central pour configurer ces URL externes et les créer.
 
-Cette page explique comment configurer le service **Externalizer** et l’utiliser. Pour plus d’informations, reportez-vous aux [JavaDocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+Cette page explique comment configurer la variable **Externalizer** et comment l’utiliser. Pour plus d’informations, reportez-vous à la section [Javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configuration du service Externalizer {#configuring-the-externalizer-service}
 
-Le service **Externalizer** vous permet de définir, de manière centralisée, plusieurs domaines pouvant être utilisés pour préfixer des chemins d’accès aux ressources par programmation. Chaque domaine est identifié par un nom unique utilisé pour faire référence au domaine par programmation.
+Le service **Externalizer** vous permet de définir, de manière centralisée, plusieurs domaines pouvant être utilisés pour préfixer des chemins d’accès aux ressources par programmation. Chaque domaine est identifié par un nom unique utilisé pour référencer le domaine par programmation.
 
-Pour définir un mappage de domaine pour le service **Externalizer**, procédez comme suit :
+Pour définir un mappage de domaine pour la variable **Externalizer** service :
 
 1. Accédez au gestionnaire de configuration via **Outils**, puis **Console web** ou saisissez `https://<host>:<port>/system/console/configMgr.`
 1. Cliquez sur l’**Externaliseur de lien Day CQ** pour ouvrir la boîte de dialogue de configuration.
@@ -44,7 +48,7 @@ Pour définir un mappage de domaine pour le service **Externalizer**, procédez 
 
    `<unique-name> [scheme://]server[:port][/contextpath]`, où:
 
-   * **scheme** est généralement http ou https, mais peut également être ftp, etc.; utilisez https pour imposer des liens https si nécessaire ; ce protocole est utilisé si le code client ne remplace pas le schéma lors de la demande d’externalisation d’une URL.
+   * **scheme** est généralement http ou https, mais peut également être ftp, etc.; utilisez https pour appliquer les liens https, le cas échéant ; il sera utilisé si le code client ne remplace pas le schéma lors de la demande d’externalisation d’une URL.
    * **Server** est le nom d’hôte (il peut s’agir d’un nom de domaine ou d’une adresse IP).
    * **Port** (facultatif) est le numéro de port.
    * **contextpath** (facultatif) est défini uniquement si AEM est installé en tant qu’application Web sous un autre chemin d’accès au contexte.
@@ -59,7 +63,7 @@ Pour définir un mappage de domaine pour le service **Externalizer**, procédez 
 
    >[!NOTE]
    >
-   >Une configuration personnalisée vous permet d’ajouter une nouvelle catégorie, telle que « production », « staging », voire des systèmes non AEM externes, tels que « my-internal-webservice ». Elle s’avère utile pour éviter le codage en dur de telles URL en différents points du codebase d’un projet.
+   >Une configuration personnalisée vous permet d’ajouter une nouvelle catégorie, telle que &quot;production&quot;, &quot;staging&quot; ou même des systèmes non AEM externes tels que &quot;my-internal-webservice&quot;. Elle s’avère utile pour éviter de coder en dur de telles URL à différents endroits dans le code base d’un projet.
 
 1. Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
@@ -69,7 +73,7 @@ Pour définir un mappage de domaine pour le service **Externalizer**, procédez 
 
 ## Utilisation du service Externalizer {#using-the-externalizer-service}
 
-Cette section illustre quelques exemples d’utilisation du service **Externalizer**.
+Cette section présente quelques exemples de la manière dont la fonction **Externalizer** peut être utilisé.
 
 **Pour obtenir le service Externalizer dans un JSP :**
 

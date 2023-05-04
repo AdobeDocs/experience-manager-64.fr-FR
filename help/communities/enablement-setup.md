@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 exl-id: 92c95cb5-fdbf-4200-89a8-10c768e4bc25
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '896'
 ht-degree: 3%
 
 ---
 
 # Configuration initiale pour l’activation {#initial-setup-for-enablement}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Démarrage des instances de création et de publication {#start-author-and-publish-instances}
 
@@ -166,7 +170,7 @@ Un quatrième utilisateur est créé dans l’environnement de création et se v
    * riley
    * sidney
 
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ### Propriétés Community Ski Class {#community-ski-class-properties}
 
@@ -213,6 +217,6 @@ Faites défiler jusqu’à `Add User to Groups`:
    * Sélectionner `Community Administrators`
    * Sélectionner `Community Enablement Managers`
 
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ![chlimage_1-419](assets/chlimage_1-419.png)

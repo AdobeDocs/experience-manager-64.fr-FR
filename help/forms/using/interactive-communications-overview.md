@@ -9,14 +9,18 @@ topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 386fc8b2-c92d-4731-8445-1bb6af54fd98
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 96%
+source-wordcount: '542'
+ht-degree: 55%
 
 ---
 
 # Présentation des communications interactives {#interactive-communications-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Cet article comprend une présentation, des exemples de cas d’utilisation, un processus de création et les différences entre les communications interactives et les lettres.
 
@@ -26,16 +30,16 @@ Les communications interactives centralisent et gèrent la création, l’assemb
 
 ## Fonctionnalités essentielles {#key-capabilities}
 
-Voici les fonctionnalités principales des communications interactives :
+Voici les principales fonctionnalités des communications interactives :
 
-* Intégration en standard avec modèle de données de formulaire pour permettre un accès facile et rapide aux bases de données back end et à d’autres systèmes CRM tels que MS® Dynamics
-* Interface de création intégrée pour les canaux d’impression et web avec fonction de génération automatique du canal web à partir du canal d’impression
-* Graphiques de présentation de l’information dans des formats visuels facilement compréhensibles sur papier et sur le Web
-* Éditeur de règles de support de fragments de document et modèle de données de formulaire
+* Intégration prête à l’emploi avec le modèle de données de formulaire pour permettre un accès facile et simplifié aux bases de données principales et à d’autres systèmes CRM, tels que MS® Dynamics
+* Interface de création intégrée pour les canaux d’impression et web avec possibilité de générer automatiquement un canal web à partir du canal d’impression
+* Graphiques pour présenter des informations dans des formats visuels facilement compréhensibles sur papier et sur le web
+* Les fragments de document prennent en charge l’éditeur de règles et le modèle de données de formulaire.
 * L’interface utilisateur de l’agent affiche un aperçu web et un aperçu avant impression de la communication interactive.
 * Glisser-déposer les composants pour construire rapidement les canaux web et d’impression
 
-## Exemples de cas d’utilisation {#sample-use-case}
+## Exemple de cas d’utilisation {#sample-use-case}
 
 Le [Kit de bienvenue pour un client détenteur d’une carte de crédit](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) un exemple de cas d’utilisation présente les fonctionnalités d’une communication interactive.
 
@@ -52,7 +56,7 @@ Pour créer une communication interactive, préparez les [blocs de construction]
 1. Spécifiez le [modèle de données de formulaire](/help/forms/using/data-integration.md), le service de préremplissage et les [modèles des canaux d’impression et web](/help/forms/using/web-channel-print-channel.md). Vous pouvez choisir de générer le canal web à partir du canal d’impression.
 
 1. Via [l’interface glisser-déposer](/help/forms/using/introduction-interactive-communication-authoring.md), ajoutez des fragments de document, des images, des composants des canaux d’impression et web de la communication interactive selon les besoins.
-1. Configurez les propriétés suivantes des composants insérés :
+1. Configurez les propriétés des composants insérés, par exemple :
 
    1. Images
    1. [Tableaux](/help/forms/using/create-interactive-communication.md#tables) (y compris les fragments de mise en page).
@@ -60,11 +64,11 @@ Pour créer une communication interactive, préparez les [blocs de construction]
    1. [Fragments de document](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. Prévisualisez les canaux web et d’impression et, si nécessaire, modifiez la communication interactive.
-1. L’agent utilise l’interface utilisateur de l’agent pour [préparer la communication interactive](/help/forms/using/prepare-send-interactive-communication.md) en vue de son envoi au destinataire/en post-traitement.
+1. L’agent utilise l’interface utilisateur de l’agent pour [préparer la communication interactive](/help/forms/using/prepare-send-interactive-communication.md) pour l’envoyer au destinataire/post-traitement.
 
 ### Blocs de création {#buildingblocks}
 
-Les blocs de construction requis pour la création d’une communication interactive sont les suivants :
+Vous trouverez ci-dessous les blocs de création nécessaires à la création d’une communication interactive :
 
 * [Modèle de données de formulaire](/help/forms/using/data-integration.md)
 * [Modèles de canaux web et d’impression](/help/forms/using/web-channel-print-channel.md)
@@ -86,10 +90,10 @@ La communication interactive est l’approche par défaut et recommandée pour c
   <tr>
    <td>Sortie</td> 
    <td>Impression et web</td> 
-   <td>Imprimer</td> 
+   <td>Impression</td> 
   </tr>
   <tr>
-   <td>Schéma</td> 
+   <td>Schema</td> 
    <td>Modèle de données de formulaire </td> 
    <td>Dictionnaire de données </td> 
   </tr>
@@ -102,38 +106,38 @@ La communication interactive est l’approche par défaut et recommandée pour c
    <td>Éditeur de règles</td> 
    <td>
     <ul> 
-     <li>Éditeur de règles de support de texte et de conditions pour la création de conditions en ligne</li> 
-     <li>L’éditeur de communication interactive prend en charge l’application des règles sur les composants du canal web</li> 
+     <li>Éditeur de règles de prise en charge de texte et de condition pour la création de conditions intégrées</li> 
+     <li>L’éditeur de communication interactive prend en charge l’application de règles sur les composants du canal web.</li> 
     </ul> </td> 
-   <td>Aucune interface utilisateur pour la création d’une expression conditionnelle</td> 
+   <td>Pas d’interface utilisateur pour la création d’expression conditionnelle</td> 
   </tr>
   <tr>
    <td>Création</td> 
-   <td>Interface glisser-déposer pour la construction des canaux web et d’impression</td> 
+   <td>Interface glisser-déposer pour la création de canaux d’impression et web</td> 
    <td>Aucun mécanisme de glisser-déposer </td> 
   </tr>
   <tr>
    <td>Graphiques</td> 
-   <td>Graphiques pris en charge dans les canaux web et d’impression</td> 
+   <td>Graphiques pris en charge dans les canaux papier et web</td> 
    <td>Pas de prise en charge</td> 
   </tr>
   <tr>
    <td>Thèmes</td> 
-   <td>Utilise des thèmes pour définir l’aspect du canal web</td> 
+   <td>Utilisation de thèmes pour définir le style du canal web</td> 
    <td>Ne prend pas en charge les thèmes</td> 
   </tr>
   <tr>
-   <td>Contrôle et création de version</td> 
+   <td>Audit et création de versions</td> 
    <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
-   <td>Brouillons et gestion d’une instance</td> 
+   <td>Brouillons et gestion des instances</td> 
    <td>Pas de prise en charge</td> 
    <td>Pris en charge</td> 
   </tr>
   <tr>
-   <td>le traitement par lot ;</td> 
+   <td>Traitement par lots</td> 
    <td>Pris en charge </td> 
    <td>Pris en charge</td> 
   </tr>

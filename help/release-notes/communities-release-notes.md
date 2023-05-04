@@ -1,5 +1,5 @@
 ---
-title: Notes de mise à jour d’AEM Communities
+title: Notes de mise à jour d’AEM Communities
 seo-title: AEM Communities
 description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.4 Communities.
 seo-description: Release notes specific to Adobe Experience Manager 6.4 Communities.
@@ -10,67 +10,71 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
 exl-id: 3a341e72-01c5-4c63-8942-6320e5b08440
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 85%
+source-wordcount: '353'
+ht-degree: 9%
 
 ---
 
-# AEM Communities Notes de mise à jour {#aem-communities-release-notes}
+# Notes de mise à jour d’AEM Communities {#aem-communities-release-notes}
 
-Cette section contient des informations sur les améliorations apportées à AEM Communities depuis la version 6.3. Pour plus de détails sur les nouvelles fonctions, voir [Nouveautés d’AEM 6.4 Communities](/help/communities/whats-new-aem-communities.md).
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Cette section fournit des informations sur les améliorations apportées à AEM Communities depuis la version 6.3. Pour en savoir plus sur les nouvelles fonctionnalités, voir [Nouveautés d’AEM 6.4 Communities](/help/communities/whats-new-aem-communities.md).
 
 Pour obtenir la version la plus récente, consultez la section [Déploiement de communautés](/help/communities/deploy-communities.md#latest-releases) de la documentation.
 
 ## Principales améliorations {#main-improvements}
 
-Sites de communautés :
+Sites de la communauté:
 
 * Les administrateurs de communauté peuvent désormais :
 
-   * supprimer définitivement des sites de la communauté ;
-   * sélectionner un dossier configuration tenant compte du contexte pour les sites de la communauté.
+   * Supprimer définitivement des sites de la communauté
+   * Sélectionnez un dossier de configuration contextuelle pour les sites de la communauté.
 
-Groupes de communautés :
+Groupes communautaires:
 
 * Les administrateurs de communauté peuvent désormais :
 
-   * supprimer définitivement des groupes de la communauté ;
-   * créer des groupes de communauté en plusieurs langues ;
-   * ajouter un catalogue et des affectations d’activation dans les groupes de la communauté.
+   * Suppression définitive des groupes de communautés
+   * Création de groupes de communautés dans plusieurs langues
+   * Ajout d’un catalogue d’activation et d’affectations dans les groupes de la communauté
 
-* Les responsables d’activation peuvent désormais :
+* Les responsables d’activation peuvent désormais
 
-   * créer et affecter des ressources et des parcours de formation au sein des groupes d’une communauté.
+   * Créer et affecter des ressources et des parcours d’apprentissage dans les groupes communautaires
 
-Bibliothèque de fichiers :
+Bibliothèque de fichiers:
 
-* La bibliothèque de fichiers a été améliorée pour les membres de communauté, avec, par exemple, l’ordre de tri, le balisage, etc.
+* Les membres de la communauté ont désormais plusieurs améliorations apportées à la bibliothèque de fichiers, par exemple les commandes de tri, le balisage, etc.
 
 Notifications:
 
-* Les membres de communauté reçoivent désormais des notifications lors de l’approbation des contributions ayant fait l’objet d’un processus de modération.
+* Les membres de la communauté reçoivent désormais des notifications lors de l’approbation des contributions qui ont fait l’objet d’un processus de modération.
 
-Modération :
+Modération:
 
-* Filtre de détection du contenu indésirable automatisé
-* Les modérateurs de communautés disposent de filtres de modération supplémentaires (par exemple, questions ayant reçu une réponse/sans réponse)
-* Les modérateurs des communautés peuvent mettre en signet et lier la modération à des filtres prédéfinis (par exemple, tous les messages en attente d’approbation)
+* Filtre de détection automatisée des messages indésirables
+* Les modérateurs de communauté disposent de filtres de modération supplémentaires (par exemple, questions sans réponse/réponses).
+* Les modérateurs de la communauté peuvent mettre en signet et lier la modération à des filtres prédéfinis (par exemple, toutes les publications en attente d’approbation).
 
-Compatibilité d’ensemble avec les modifications de base apportées à AEM 6.4.
+Compatibilité globale avec les changements fondamentaux dans AEM 6.4.
 
 Remarque : toutes ces fonctionnalités sont également disponibles pour AEM 6.3. Veuillez consulter les notes de mise à jour d’AEM Communities pour [6.3](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html).
 
 ## Problèmes connus {#known-issues}
 
-* **Modération :** impossible de supprimer une publication parente en une seule opération de suppression à partir de l’interface utilisateur de modération en masse (CQ-4236797).
+* **Modération** - Impossible de supprimer la publication parente en tant qu’opération de suppression unique dans l’interface utilisateur de modération en bloc (CQ-4236797)
 * **Console** - Le lien Nom d’utilisateur ou Mot de passe oublié redirige vers la page de connexion au lieu du formulaire de récupération de mot de passe correspondant (CQ-4237682).
 
-## Fonctionnalités mises en avant {#select-features}
+## Sélectionner des fonctionnalités {#select-features}
 
-L’évaluation des experts (*reposant sur Sensei*) est utilisée pour permettre la ludification, qui est une façon efficace d’encourager et de récompenser un comportement bénéfique au sein de la communauté. Elle peut également être utilisée dans le but d’identifier des experts à des fins de recommandation ou de marketing.
+Note d’expert (*Optimisé par Sensei*) - est utilisé pour activer la gamification, qui est un moyen efficace d’encourager et de récompenser un comportement communautaire précieux. Il peut également être utilisé pour identifier des experts à des fins de recommandation ou de marketing.
 
-## Démonstrations {#demonstrations}
+## Manifestations {#demonstrations}
 
-Toutes ces fonctionnalités peuvent faire l’objet d’une démonstration à l’aide d’[AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponible publiquement sur GitHub.com lors de l’utilisation du scénario de démonstration d’AEM Communities et aussi dans la nouvelle implémentation de référence We.Retail.
+Toutes ces fonctionnalités peuvent être illustrées à l’aide de la fonction [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponible publiquement sur GitHub.com lors de l’utilisation du scénario de démonstration AEM Communities et également dans la nouvelle implémentation de référence We.Retail.

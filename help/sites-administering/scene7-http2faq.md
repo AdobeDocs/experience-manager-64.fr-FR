@@ -6,14 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 2da4c0b3-119e-436e-9f03-f794283e9a37
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 90%
+source-wordcount: '820'
+ht-degree: 73%
 
 ---
 
 # FAQ sur la diffusion de contenu HTTP/2{#http-delivery-of-content-faq}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Adobe se réjouit d’annoncer la disponibilité de la diffusion de contenu HTTP/2. Lors de l’utilisation de HTTP/2, vous remarquerez une amélioration générale des performances.
 
@@ -21,7 +25,7 @@ Adobe se réjouit d’annoncer la disponibilité de la diffusion de contenu HTTP
 
 Le HTTP/2 améliore la communication entre les navigateurs et les serveurs, en accélérant le transfert d’informations tout en réduisant la puissance de traitement nécessaire.
 
-Le site web ci-dessous décrit simplement HTTP/2 et les avantages qu’il procure :
+Le site web suivant décrit HTTP/2 et ses avantages de manière simple et rapide :
 
 [https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
 
@@ -29,18 +33,18 @@ Le site web ci-dessous décrit simplement HTTP/2 et les avantages qu’il procur
 
 L’amélioration des performances varie considérablement en fonction de facteurs tels que le code de votre site web, la façon dont vous utilisez Dynamic Media, l’appareil, l’écran et l’emplacement du client, etc.
 
-Les tests d’Adobe ont donné les résultats suivants :
+Les tests effectués par l’Adobe lui-même ont donné les résultats suivants :
 
-* Pour les images, le temps de réponse s’est amélioré de 7 % à 28 % selon l’appareil et le navigateur. Les gains de performance les plus notables ont été enregistrés sur les appareils iOS.
-* Pour les visionneuses, les performances en matière de temps de chargement ont augmenté de 15 %.
+* Pour les images, le temps de réponse s’est amélioré de 7 % à 28 % selon l’appareil et le navigateur. Les gains de performances les plus notables ont été enregistrés sur les appareils iOS.
+* Pour les visionneuses, les performances de chargement ont été améliorées à 15 %.
 
-La démonstration suivante illustre la différence entre le chargement HTTP/1 et le chargement HTTP/2 :
+La démonstration suivante illustre la différence entre le chargement HTTP/1 et HTTP/2 :
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
 ## Puis-je passer à HTTP/2 ? {#am-i-eligible-to-switch-over-to-http}
 
-Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
+Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
 
 * Utilisez le protocole HTTPS sécurisé pour vos demandes de médias riches.
 * Utilisez le CDN de lots Adobe (réseau de diffusion de contenu) dans le cadre de votre licence Dynamic Media Classic.
@@ -56,16 +60,16 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
    * Nom, adresse électronique et numéro de téléphone du contact principal.
    * Tous les domaines pour lesquels activer HTTP/2. C’est-à-dire, `images.company.com` ou `mycompany.scene7.com`.
 
-      Pour trouver vos domaines, connectez-vous à votre compte au moyen de l’option [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app). Appuyez ensuite sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]**
+      Pour trouver vos domaines, connectez-vous à votre compte au moyen de l’option [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=fr#system-requirements-dmc-app). Appuyez ensuite sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]**
    Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**.
 
    * Vérifiez que vous utilisez le protocole sécurisé HTTPS pour les demandes de médias riches.
-   * Vérifiez que vous utilisez le CDN par le biais d’Adobe et non le CDN géré avec une relation directe.
+   * Vérifiez que vous utilisez le réseau de diffusion de contenu par Adobe et que vous n’êtes pas géré avec une relation directe.
    * Assurez-vous d’utiliser un domaine dédié. C’est-à-dire `images.company.com` ou `mycompany.scene7.com`, et non d’un domaine Dynamic Media tel que `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Pour trouver vos domaines, connectez-vous à votre compte au moyen de l’option [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app). Appuyez ensuite sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]** Si vous utilisez actuellement un domaine Dynamic Media générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
+      Pour trouver vos domaines, connectez-vous à votre compte au moyen de l’option [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=fr#system-requirements-dmc-app). Appuyez ensuite sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]** Si vous utilisez actuellement un domaine Dynamic Media générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
    1. L’assistance technique vous ajoute à la liste d’attente des clients HTTP/2 par ordre chronologique d’envoi des demandes.
-   1. Lorsque Adobe est prêt à traiter votre demande, le support vous contacte pour coordonner la transition et définir une date cible.
+   1. Lorsque Adobe est prêt à traiter votre demande, le support vous contactera pour coordonner la transition et définir une date cible.
    1. Vous recevez une notification à l’issue du processus et pouvez vérifier que la transition vers HTTP/2 a abouti.
 
 
@@ -80,7 +84,7 @@ Les demandes sont traitées dans l’ordre dans lequel elles sont reçues par le
 
 ## Quels risques présente la transition vers HTTP/2 ? {#what-are-the-risks-with-moving-to-http}
 
-La transition vers HTTP/2 efface le cache au niveau du CDN, car elle implique la définition d’une nouvelle configuration de CDN.
+La transition vers HTTP/2 efface votre cache sur le réseau de diffusion de contenu, car elle implique de passer à une nouvelle configuration du réseau de diffusion de contenu.
 
 Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. C’est pour cette raison qu’Adobe prévoit de ne gérer que quelques transitions à la fois afin d’offrir des performances acceptables lors de l’extraction des demandes de notre site d’origine.
 

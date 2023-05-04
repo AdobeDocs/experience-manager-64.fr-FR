@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 8fb70ca4-86fc-477d-9773-35b84d5e85a8
 exl-id: 8937c928-1dde-4282-b93d-30752a33ce72
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 2%
+source-wordcount: '3029'
+ht-degree: 1%
 
 ---
 
 # Mobile avec synchronisation de contenu{#mobile-with-content-sync}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -244,7 +248,7 @@ La console est accessible à l’adresse :
 
 `http://localhost:4502/libs/cq/contentsync/content/console.html`
 
-Elle se présente comme suit :
+Il se présente comme suit :
 
 ![chlimage_1-50](assets/chlimage_1-50.png)
 

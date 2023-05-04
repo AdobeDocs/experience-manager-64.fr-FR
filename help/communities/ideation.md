@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
 exl-id: 7fb68293-c6e3-4793-b433-205bcfc23e20
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 6%
+source-wordcount: '142'
+ht-degree: 8%
 
 ---
 
 # Notions fondamentales relatives aux idées {#ideation-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Cette page fournit les informations essentielles pour travailler avec la fonction d’idéation, qui est similaire à un forum, mais qui permet d’enregistrer en tant que brouillon et d’avoir un aspect plus collaboratif.
 

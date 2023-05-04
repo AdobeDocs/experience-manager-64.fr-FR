@@ -10,18 +10,22 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 exl-id: bb022f6b-938b-4421-8860-4c22aecf5b85
-source-git-commit: 8cc85728be93d58e3aaee69c96f59ee98d5484a1
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 93%
+source-wordcount: '275'
+ht-degree: 74%
 
 ---
 
 # Filtre de disposition du contenu {#content-disposition-filter}
 
-Le filtre de disposition du contenu est une fonctionnalité de sécurité permettant de lutter contre les attaques XSS sur des fichiers SVG.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Une fois installé, le filtre bloque l’accès à toutes les ressources. Par exemple, il vous a été impossible d’afficher un PDF en ligne. Cette section explique comment configurer ce filtre en fonction de vos besoins.
+Le filtre de disposition de contenu est une fonctionnalité de sécurité contre les attaques XSS sur les fichiers de SVG.
+
+Une fois installé, le filtre bloque l’accès à toutes les ressources. Par exemple, il vous a été impossible d’afficher un PDF en ligne. Cette section décrit comment configurer le filtre selon vos besoins.
 
 ## Configuration du filtre de disposition du contenu {#configure-content-disposition-filter}
 

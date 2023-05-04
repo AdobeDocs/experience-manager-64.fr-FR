@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 8cd6480f-cb4f-40dd-a444-8ba463b78604
 exl-id: 8b1ff508-83e1-4b70-9210-e3efb049af95
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 2%
+source-wordcount: '1334'
+ht-degree: 3%
 
 ---
 
 # Configuration du Cloud Service Adobe Target {#configuring-adobe-target-cloud-service}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -89,7 +93,7 @@ De retour au tableau de bord mobile, la mosaïque Gérer les Cloud Services cont
 
 ## Gestionnaires de synchronisation de contenu de Target {#target-content-sync-handlers}
 
-La diffusion du contenu sur le périphérique de l’utilisateur est générée par le rendu des offres créées par les auteurs de contenu AEM. Pour gérer le rendu des offres cibles, il existe un nouveau gestionnaire de synchronisation de contenu qui traitera les offres. En utilisant l’application de référence hybride comme exemple, le module de contenu en (anglais) contient ContentSyncConfig avec un [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) gestionnaire. L’étape suivante est cruciale pour le rendu des offres sur l’appareil. Le gestionnaire mobileappoffers possède une propriété path qui identifie le chemin d’accès à l’activité de personnalisation à utiliser pour l’application.
+La diffusion du contenu sur le périphérique de l’utilisateur est générée en effectuant le rendu des offres créées par les auteurs de contenu AEM. Pour gérer le rendu des offres cibles, il existe un nouveau gestionnaire de synchronisation de contenu qui traitera les offres. En utilisant l’application de référence hybride comme exemple, le module de contenu en (anglais) contient ContentSyncConfig avec un [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) gestionnaire. L’étape suivante est cruciale pour le rendu des offres sur l’appareil. Le gestionnaire mobileappoffers possède une propriété path qui identifie le chemin d’accès à l’activité de personnalisation à utiliser pour l’application.
 
 Par exemple, si une activité se trouve à l’adresse */content/campaigns/hybridref* copiez ce chemin et collez-le en tant que valeur dans la propriété *path* de la propriété mobileappoffers handler.
 

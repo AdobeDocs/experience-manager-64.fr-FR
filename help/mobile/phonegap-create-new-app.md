@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 exl-id: 79d2dbfb-5e44-4a96-ab9b-ba5d93fc3aae
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '674'
 ht-degree: 5%
 
 ---
 
 # Création d’une application AEM Mobile à l’aide de l’assistant de création{#creating-a-new-aem-mobile-app-using-create-wizard}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -69,8 +73,8 @@ Renseignez les détails de votre nouvelle application si nécessaire, y compris 
 
 Consultez les ressources suivantes pour en savoir plus sur les autres rôles de création :
 
-* [Mosaïque Gestion de l’application](/help/mobile/phonegap-app-details-tile.md)
-* [Modification de métadonnées d’application](/help/mobile/phonegap-editmetadata.md)
+* [Mosaïque Gérer l’application](/help/mobile/phonegap-app-details-tile.md)
+* [Modification des métadonnées d’application](/help/mobile/phonegap-editmetadata.md)
 * [Définitions des applications](/help/mobile/phonegap-app-definitions.md)
 * [Importation d’une application hybride existante](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)

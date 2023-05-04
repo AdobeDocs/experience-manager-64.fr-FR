@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 role: Developer
 exl-id: d10cbb97-1cec-4b1b-9104-48063e75a2cd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1674'
-ht-degree: 100%
+source-wordcount: '1710'
+ht-degree: 98%
 
 ---
 
 # Restituer des formulaires HTML à l’aide de fichiers CSS personnalisés {#rendering-html-forms-using-custom-css-files}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le service Forms génère les formulaires HTML en réponse à la demande HTTP d’un navigateur web. Lors du rendu d’un formulaire HTML, le service Forms peut référencer un fichier CSS personnalisé. Vous pouvez créer un fichier CSS personnalisé pour répondre aux besoins de votre entreprise et référencer ce fichier CSS lors de l’utilisation du service Forms pour le rendu des formulaires HTML.
 

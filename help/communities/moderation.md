@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
 role: Admin
 exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1883'
 ht-degree: 5%
 
 ---
 
 # Console de modération {#moderation-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Dans AEM Communities, en bloc [modération du contenu de la communauté](moderate-ugc.md) est possible à partir des environnements de création et de publication par les administrateurs et les modérateurs de la communauté (membres de la communauté approuvés affectés en tant que modérateurs).
 

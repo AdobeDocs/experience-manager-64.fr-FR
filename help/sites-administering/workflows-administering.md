@@ -1,7 +1,7 @@
 ---
 title: Administration d’instances de workflow
 seo-title: Administering Workflow Instances
-description: Découvrez comment administrer des instances de workflows.
+description: Découvrez comment administrer des instances de workflow.
 seo-description: Lear how to administer Workflow Instances.
 uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
 contentOwner: User
@@ -10,14 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 70d4117b-5e49-46e4-a0b8-f56cf985536e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 100%
+source-wordcount: '854'
+ht-degree: 83%
 
 ---
 
 # Administration d’instances de workflow{#administering-workflow-instances}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 La console de workflows fournit plusieurs outils permettant d’administrer les instances de workflow pour vérifier qu’elles s’exécutent comme prévu.
 
@@ -27,11 +31,11 @@ La console de workflows fournit plusieurs outils permettant d’administrer les 
 
 Différentes consoles sont à votre disposition pour administrer les workflows. Utilisez la [navigation globale](/help/sites-authoring/basic-handling.md#global-navigation) pour ouvrir le panneau **Outils**, puis sélectionnez **Workflows** :
 
-* **Modèles** : gérez les définitions de workflows.
+* **Modèles**: Gestion des définitions de workflow
 * **Instances** : affichez et gérez l’exécution des instances de workflow.
-* **Lanceurs** : gérez le lancement des workflows.
-* **Archiver** : affichez l’historique des workflows correctement terminés.
-* **Échecs** : affichez l’historique des workflows terminés avec des erreurs.
+* **Lanceurs**: Gérer le lancement des workflows
+* **Archiver**: Afficher l’historique des workflows qui se sont terminés avec succès
+* **Échecs**: Afficher l’historique des workflows qui se sont terminés avec des erreurs
 
 ## Suivi du statut des instances de workflow {#monitoring-the-status-of-workflow-instances}
 
@@ -64,9 +68,9 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
    >[!NOTE]
    >
-   >Le statut d’abandon est considéré comme un arrêt réussi, car il se produit suite à une action de l’utilisateur. Par exemple :
+   >L’état d’abandon est considéré comme une interruption réussie, car il se produit suite à une action de l’utilisateur ; par exemple :
    >
-   >* Utilisation de l’action **Terminer**
+   >* l’utilisation de la fonction **Arrêter** action
    >* Lorsqu’une page, qui est soumise à un workflow, est supprimée (de force), le workflow est arrêté.
 
 
@@ -93,7 +97,7 @@ Pour examiner les échecs, puis reprendre ou arrêter le workflow par la suite, 
 
 1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
 1. Sélectionnez **Échecs** pour afficher la liste des instances de workflow qui ne se sont pas terminées avec succès.
-1. Sélectionnez un élément spécifique, puis l’action appropriée :
+1. Sélectionnez un élément spécifique, puis l’action appropriée :
 
    ![wf-47](assets/wf-47.png)
 
@@ -103,7 +107,7 @@ Réduire le nombre d’instances de workflow améliore les performances du moteu
 
 Configurez la **configuration de la purge du workflow Adobe Granite** pour purger les instances de workflow en fonction de leur âge et de leur statut. Vous pouvez également purger les instances de workflow de tous les modèles ou d’un modèle spécifique.
 
-Vous pouvez également créer plusieurs configurations du service pour purger les instances de workflow qui répondent à différents critères. Par exemple, créez une configuration qui purge les instances d’un modèle de workflow particulier lorsqu’elles s’exécutent beaucoup plus longtemps que prévu. Créez une autre configuration qui purge tous les workflows terminés après un certain nombre de jours pour réduire la taille du référentiel.
+Vous pouvez également créer plusieurs configurations du service pour purger les instances de workflow qui répondent à différents critères. Par exemple, créez une configuration qui purge les instances d’un modèle de workflow particulier lorsqu’elles s’exécutent beaucoup plus longtemps que prévu. Créez une autre configuration qui purge tous les workflows terminés après un certain nombre de jours afin de minimiser la taille du référentiel.
 
 Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [ajouter une configuration OSGi au référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Le tableau suivant décrit les propriétés dont vous avez besoin pour l’une ou l’autre de ces méthodes.
 
@@ -120,7 +124,7 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
 <table> 
  <tbody> 
   <tr> 
-   <th>Nom de propriété (console Web)</th> 
+   <th>Nom de la propriété (console web)</th> 
    <th>Nom de propriété OSGi</th> 
    <th>Description</th> 
   </tr> 
@@ -130,9 +134,9 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
    <td>Nom explicite de la purge planifiée.</td> 
   </tr> 
   <tr> 
-   <td>État du workflow</td> 
+   <td>État du processus</td> 
    <td>scheduledpurge.workflowStatus</td> 
-   <td><p>Statut des instances de workflow à purger. Les valeurs suivantes sont valides :</p> 
+   <td><p>Statut des instances de workflow à purger. Les valeurs suivantes sont valides :</p> 
     <ul> 
      <li>TERMINÉ : les instances de workflow terminées sont purgées.</li> 
      <li>EN COURS : les instances de workflow en cours d’exécution sont purgées.</li> 
@@ -144,7 +148,7 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
    <td><p>ID des modèles de workflows à purger. L’ID est le chemin d’accès au nœud de modèle, par exemple :<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Pour purger les instances de tous les modèles de workflows, ne spécifiez aucune valeur.</p> <p>Pour spécifier plusieurs modèles, cliquez sur le bouton + dans la console web. </p> </td> 
   </tr> 
   <tr> 
-   <td>Âge de workflow</td> 
+   <td>Âge du workflow</td> 
    <td>scheduledpurge.daysold</td> 
    <td>L’âge des instances de workflow à purger, exprimé en jours.</td> 
   </tr> 
@@ -161,6 +165,6 @@ Vous pouvez définir la taille maximale de la boîte de réception en configuran
 >
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
-| Nom de propriété (console Web) | Nom de propriété OSGi |
+| Nom de la propriété (console web) | Nom de propriété OSGi |
 |---|---|
 | Taille de requête de boîte de réception maximale | granite.workflow.inboxQuerySize |

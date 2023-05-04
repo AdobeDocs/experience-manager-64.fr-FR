@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: e32fc619-6226-48c6-bbd7-1910963d1036
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '861'
 ht-degree: 2%
 
 ---
 
 # Configuration de MongoDB pour la démonstration {#how-to-setup-mongodb-for-demo}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#introduction}
 
@@ -44,7 +48,7 @@ Ce paramétrage est adapté aux *hors production* des environnements tels que po
 
       * Linux
       * Mac 10.8
-      * Windows 7
+      * Windows 7
    * Choix de la version :
 
       * Utilisez au minimum la version 2.6.
@@ -147,7 +151,7 @@ Si AEM était en cours d’exécution avant le démarrage de MongoDB, les instan
 
 Suivez les instructions de la page de documentation principale : [MSRP - Magasin commun MongoDB](msrp.md)
 
-## Testez {#test}
+## Tester {#test}
 
 Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l’instance de publication et affichez-le sur l’instance d’auteur, ainsi que le contenu créé par l’utilisateur dans MongoDB et Solr :
 

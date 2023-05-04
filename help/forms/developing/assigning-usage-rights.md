@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: c7805d8a-eb6a-4908-9662-936920ffa67a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3912'
-ht-degree: 100%
+source-wordcount: '3948'
+ht-degree: 98%
 
 ---
 
 # Attribution des droits d’utilisation {#assigning-usage-rights}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## À propos du service Extensions Acrobat Reader DC {#about-the-acrobat-reader-dc-extensions-service}
 
@@ -36,7 +40,7 @@ Vous pouvez accomplir ces tâches à l’aide du service Extensions Acrobat Read
 
 ## Appliquer des droits d’utilisation aux documents PDF {#applying-usage-rights-to-pdf-documents}
 
-Vous pouvez appliquer des droits d’utilisation aux documents PDF à l’aide de l’API client Java Extensions Reader et Web Service. Les droits d’utilisation appartiennent à la fonctionnalité disponible par défaut dans Acrobat mais non dans Adobe Reader, telle que la capacité à ajouter des commentaires à un formulaire ou à remplir des champs de formulaire et enregistrer ce dernier. Les documents PDF dotés de droits d’utilisation sont appelés des documents dont les droits sont activés. Un utilisateur qui ouvre un document dont les droits sont activés dans Adobe Reader peut effectuer les opérations autorisées pour ce document spécifique.
+Vous pouvez appliquer des droits d’utilisation aux documents PDF à l’aide de l’API client Java Extensions Reader et Web Service. Les droits d’utilisation appartiennent à la fonctionnalité disponible par défaut dans Acrobat mais non dans Adobe Reader, telle que la capacité à ajouter des commentaires à un formulaire ou à remplir des champs de formulaire et enregistrer ce dernier. Les documents de PDF auxquels des droits d’utilisation sont appliqués sont appelés des documents dont les droits sont activés. Un utilisateur qui ouvre un document dont les droits sont activés dans Adobe Reader peut effectuer des opérations qui sont activées pour ce document spécifique.
 
 >[!NOTE]
 >
@@ -44,7 +48,7 @@ Vous pouvez appliquer des droits d’utilisation aux documents PDF à l’aide d
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -223,7 +227,7 @@ Vous pouvez supprimer des droits d’utilisation d’un document défini avec de
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -362,7 +366,7 @@ Vous pouvez récupérer des informations sur les informations d’identification
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 

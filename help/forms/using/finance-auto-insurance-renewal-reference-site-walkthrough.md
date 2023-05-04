@@ -8,16 +8,20 @@ contentOwner: dekalra
 topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 exl-id: db416cbc-27a7-4a2c-b4b3-43e8963faf22
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 92%
+source-wordcount: '818'
+ht-degree: 75%
 
 ---
 
 # Présentation du site de référence de renouvellement de l’assurance automobile We.Finance {#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
-## Conditions préalables {#pre-requisites}
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+## Prérequis {#pre-requisites}
 
 Configurez le site de référence comme décrit dans la section [Installation et configuration du site de référence Forms AEM 6.4](/help/forms/using/setup-reference-sites.md).
 
@@ -29,16 +33,16 @@ Lisez la présentation détaillée du cas d’utilisation de l’assurance auto
 
 **La présentation commence par le cas d’utilisation :**
 
-Sarah Rose est déjà cliente chez We.Finance et a acheté une police d’assurance automobile. Elle doit renouveler sa police d’assurance aujourd’hui. Gloria Rios, courtier d’assurance chez We.Finance, envoie un rappel à Sarah concernant le renouvellement de sa police. Sarah suit les instructions figurant dans le courrier électronique et effectue la procédure.
+Sarah Rose est déjà cliente chez We.Finance et a acheté une police d’assurance automobile. Elle doit renouveler sa police d’assurance aujourd’hui. Gloria Rios, agent d’assurance, We.Finance envoie un rappel à Sarah au sujet du renouvellement de sa police. Sarah suit les instructions fournies dans le courrier électronique et termine avec succès le processus.
 
 ## Présentation de la demande d’assurance automobile {#auto-insurance-application-walkthrough}
 
 Le scénario de l’application à une assurance automobile chez We.Finance est une narration visuelle pour l’utilisateur et met deux personnes en scène :
 
-* Sarah Rose, une cliente chez We.Finance
-* Gloria Rios, courtier d’assurance chez We.Finance
+* Sarah Rose, une cliente de We.Finance
+* Gloria Rios, agent d’assurance, We.Finance
 
-### Gloria envoie une notification de renouvellement de police d’assurance à partir de We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
+### Gloria envoie une communication de renouvellement de police d’assurance à partir de We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
 Gloria se connecte à l’instance AEM, clique sur **Renouvellement de l’assurance automobile**, puis sur **Ouvrir l’interface utilisateur de l’agent.** Le clic préremplit le document d’assurance avec les détails de la police de Sarah Rose. Gloria clique sur **Envoyer** et un message « Envoi en cours » apparaît à l’écran, puis quelques secondes plus tard le message « Envoyé » s’affiche.
 
@@ -64,11 +68,11 @@ Sarah clique sur **Renouveler maintenant** et est redirigée vers la version web
 
 Les versions web et imprimées de votre lettre d’assurance automobile sont créées à l’aide des fonctionnalités multicanales des communications interactives.
 
-Le bouton Renouveler maintenant dans le courrier électronique est lié à la demande de renouvellement d’assurance automobile qui se présente sous forme de communication interactive sur une instance de publication.
+Le bouton Renouveler maintenant de l’email est lié à la demande Renouvellement d’assurance automobile, qui est une communication interactive sur une instance de publication.
 
 #### Démonstration {#see-it-yourself-1}
 
-Vous devriez recevoir un courrier électronique avec un fichier PDF joint. Le fichier PDF est une version imprimée de votre lettre d’assurance automobile. Cliquez sur **Renouveler maintenant** pour accéder à la version web de la police. Vérifiez vos informations personnelles et les détails de la police, puis cliquez sur **Renouveler maintenant** pour être redirigé vers une autre communication interactive.
+Vous avez dû recevoir un email avec un PDF joint. Le fichier PDF est une version imprimée de votre lettre d’assurance automobile. Cliquez sur **Renouveler maintenant** pour accéder à la version web de la police. Vérifiez vos informations personnelles et les détails de la police, puis cliquez sur **Renouveler maintenant** pour être redirigé vers une autre communication interactive.
 
 Le bouton **Renouveler maintenant** figurant dans l’e-mail redirige Sarah vers la version web de la police. Vous pouvez consulter l’URL suivante :
 
@@ -98,7 +102,7 @@ Sarah remplit ses informations de carte de crédit et clique sur **Effectuer un 
 
 #### Fonctionnement {#how-it-works-2}
 
-Lorsque Sarah remplit les informations de carte de crédit et clique sur le bouton Envoyer, son paiement de carte de crédit est traité et un message de remerciement configuré dans le formulaire adaptatif s’affiche à l’écran.
+Lorsque Sarah remplit les détails de la carte de crédit et clique sur Envoyer, son paiement de carte de crédit est traité et un message de remerciement configuré dans le formulaire adaptatif s’affiche à l’écran.
 
 #### Démonstration {#see-it-yourself-3}
 

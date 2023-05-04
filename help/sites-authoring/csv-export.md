@@ -1,7 +1,7 @@
 ---
 title: Exporter au format CSV
 seo-title: Export to CSV
-description: Exportez les informations relatives à vos pages vers un fichier CSV situé sur votre système local
+description: Exporter des informations sur vos pages dans un fichier CSV sur votre système local
 seo-description: Export information about your pages to a CSV file on your local system
 uuid: aa03adac-bbfb-4566-a153-25fe6f6843dd
 contentOwner: Chris Bohnert
@@ -10,16 +10,20 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
 exl-id: 52eb9c2f-ce29-4622-8726-802ac40246d4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 80%
+source-wordcount: '226'
+ht-degree: 54%
 
 ---
 
 # Exporter au format CSV{#export-to-csv}
 
-**Créer une exportation CSV** vous permet d’exporter les informations relatives à vos pages vers un fichier CSV situé sur votre système local.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+**Créer une exportation CSV** vous permet d’exporter des informations sur vos pages vers un fichier CSV situé sur votre système local.
 
 * Le fichier téléchargé est nommé `export.csv`.
 * Le contenu dépend des propriétés que vous sélectionnez.
@@ -66,5 +70,5 @@ Pour créer une exportation CSV :
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 
-1. Sélectionnez les propriétés requises à exporter.
+1. Sélectionnez les propriétés à exporter.
 1. Sélectionnez **Créer**.

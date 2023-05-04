@@ -4,14 +4,18 @@ seo-title: AEM 6.4 Deploying User Guide
 description: Ce guide couvre toutes les tâches de déploiement d’AEM, telles que l’installation et le déploiement d’AEM.
 seo-description: Covers all AEM Deploying tasks, such as installing and deploying AEM.
 exl-id: ff85787a-1203-4620-bf14-1b09893c3be8
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 99%
+source-wordcount: '348'
+ht-degree: 91%
 
 ---
 
 # Guide de l’utilisateur pour le déploiement d’AEM 6.4
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Ce guide couvre toutes les tâches de déploiement d’AEM, telles que l’installation et le déploiement d’AEM.
 

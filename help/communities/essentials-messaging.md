@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
 exl-id: c6ad3c2b-8776-4ec4-99da-ab73ecc61153
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 5%
+source-wordcount: '423'
+ht-degree: 4%
 
 ---
 
 # Notions fondamentales sur la messagerie {#messaging-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Cette page documente les détails de l’utilisation du composant Messagerie pour inclure une fonction de messagerie sur un site web.
 
@@ -132,7 +136,7 @@ Pour tester l’exemple de script côté serveur, vous aurez besoin d’un envir
    * **[!UICONTROL Nom symbolique]**: com.engage.media.social.messaging.MessagingNotification
    * **[!UICONTROL Nom]**: Notification de message du tutoriel de prise en main
    * **[!UICONTROL Description]**: un exemple de service pour envoyer une notification électronique aux utilisateurs lorsqu’ils reçoivent un message ;
-   * **[!UICONTROL Module]**: `com.engage.media.social.messaging.notification`
+   * **[!UICONTROL Package]**: `com.engage.media.social.messaging.notification`
 
 1. Accédez à `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`.
 
@@ -142,7 +146,7 @@ Pour tester l’exemple de script côté serveur, vous aurez besoin d’un envir
 
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**
 1. Accédez à `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` et ajoutez toutes les instructions d’importation comme indiqué dans la variable `MessageEventHandler.java` code.
-1. Créez le lot
+1. Création du lot
 1. Assurez-vous que `Day CQ Mail Service`Le service OSGi est configuré.
 1. Connectez-vous en tant qu’utilisateur de démonstration et envoyez un courrier électronique à un autre
 1. Le destinataire doit recevoir un email concernant un nouveau message

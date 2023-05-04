@@ -5,18 +5,22 @@ contentOwner: AG
 feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1410'
-ht-degree: 99%
+source-wordcount: '1446'
+ht-degree: 94%
 
 ---
 
 # Gestion des métadonnées des ressources numériques {#managing-metadata-for-digital-assets}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 [!DNL Adobe Experience Manager Assets] conserve les métadonnées de chaque fichier. Cela permet d’obtenir une catégorisation et une organisation plus simples des ressources, ainsi que d’aider les personnes qui recherchent une ressource spécifique. Grâce à la possibilité d’extraire les métadonnées à partir des fichiers chargés sur [!DNL Experience Manager Assets], la gestion des métadonnées s’intègre aux workflows créatifs. La possibilité de conserver et de gérer les métadonnées de vos fichiers permet aussi d’organiser et de traiter automatiquement les fichiers en fonction de leurs métadonnées.
 
-* [Métadonnées XMP](xmp.md) 
+* [Métadonnées XMP](xmp.md).
 * [Modification ou ajout de métadonnées](meta-edit.md).
 * [Référence des schémas de métadonnées](meta-ref.md).
 
@@ -78,19 +82,19 @@ Il existe différentes manières d’incorporer des métadonnées dans des fichi
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) est une norme ouverte utilisée par [!DNL Experience Manager Assets] pour la gestion des métadonnées. La norme permet le codage universel des métadonnées en l’incorporant dans tous les formats de fichier. Adobe et d’autres entreprises prennent en charge la norme XMP, car elle offre un modèle de contenu enrichi. Les utilisateurs de XMP standard et de [!DNL Experience Manager Assets] disposent d’une plate-forme puissante sur laquelle s’appuyer. Pour plus d’informations, voir la section [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) est une norme ouverte utilisée par [!DNL Experience Manager Assets] pour la gestion des métadonnées. La norme permet le codage universel des métadonnées en l’incorporant dans tous les formats de fichier. Adobe et d’autres entreprises prennent en charge la norme XMP, car elle offre un modèle de contenu enrichi. Si vous utilisez la norme XMP et [!DNL Experience Manager Assets], vous disposez d’une plateforme puissante sur laquelle vous appuyer. Pour plus d’informations, voir la section [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
-Les données stockées dans ces balises ID3 s’affichent lors de la lecture d’un fichier audio numérique sur un ordinateur ou un lecteur MP3 portable.
+Les données stockées dans ces balises ID3 s’affichent lorsque vous lisez un fichier audio numérique sur votre ordinateur ou un lecteur MP3 portable.
 
-Les balises ID3 sont destinées au format de fichier MP3. Informations supplémentaires sur les formats :
+Les balises ID3 sont conçues pour le format de fichier MP3. Informations supplémentaires sur les formats :
 
 * Les balises ID3 fonctionnent dans les fichiers MP3 et mp3PRO.
 * Le format WAV ne contient pas de balises.
 * Le format WMA possède des balises propriétaires qui n’autorisent pas l’implémentation Open Source.
 * Le format Ogg Vorbis utilise des commentaires Xiph incorporés dans le conteneur Ogg.
-* Le format AAC utilise un format de balisage propriétaire.
+* AAC utilise un format de balisage propriétaire.
 
 ### Exif {#exif}
 

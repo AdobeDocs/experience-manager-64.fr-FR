@@ -1,5 +1,5 @@
 ---
-title: Configurer le service cloud Adobe PhoneGap Build
+title: Configuration de votre Cloud Service Adobe PhoneGap Build
 seo-title: Configure your Adobe PhoneGap Build Cloud Service
 description: Consultez cette page pour configurer les services cloud et créer votre application avec PhoneGap Build.
 seo-description: Follow this page for configuring the cloud services and building your application with PhoneGap build.
@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 3c84f4ec-d89b-4ad4-802e-ee3e2d49d916
 exl-id: 87e64e2b-cced-45bc-9de8-477169c857b2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 18%
+source-wordcount: '712'
+ht-degree: 5%
 
 ---
 
-# Configurer le service cloud Adobe PhoneGap Build  {#configure-your-adobe-phonegap-build-cloud-service}
+# Configuration de votre Cloud Service Adobe PhoneGap Build {#configure-your-adobe-phonegap-build-cloud-service}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -31,9 +35,9 @@ Vous pouvez pousser une version distante vers [https://build.phonegap.com](https
 
 ![Mosaïque PhoneGap Build](assets/chlimage_1-60.png)
 
-## Configuration du service cloud {#configuring-the-cloud-service}
+## Configuration du Cloud Service {#configuring-the-cloud-service}
 
-Pour exploiter pleinement PhoneGap Build, vous devez configurer le service cloud PhoneGap Build d’AEM à l’aide de vos informations de compte PhoneGap Build.
+Pour tirer parti du PhoneGap Build, vous devez configurer le Cloud Service PhoneGap Build d’AEM avec les informations de votre compte PhoneGap Build.
 
 Si vous ne possédez pas encore de compte, accédez à [https://build.phonegap.com](https://build.phonegap.com) et inscrivez-vous ! Si vous disposez d’un abonnement Adobe Creative Cloud, vous pouvez prendre en charge jusqu’à 25 applications privées (applications non open source).
 
@@ -63,7 +67,7 @@ Pour configurer les services cloud pour votre application, procédez comme suit 
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
-### Développement d’une application avec PhoneGap Build {#building-your-application-with-phonegap-build}
+### Création de votre application avec PhoneGap Build {#building-your-application-with-phonegap-build}
 
 Une fois que vous avez configuré les services cloud, vous pouvez créer votre application avec **PhoneGap Build** mosaïque. Cliquez sur dans le coin supérieur droit pour choisir parmi les options **Créer à distance** ou **Source de téléchargement** options.
 
@@ -73,7 +77,7 @@ Pour appeler une version distante avec Adobe PhoneGap Build, cliquez sur **Crée
 
 >[!NOTE]
 >
->Si la compilation échoue pour une raison quelconque (l’icône iOS rouge ci-dessous indique que la plateforme a échoué), vous pouvez survoler l’icône à l’aide du pointeur pour voir le message d’erreur. Vous pouvez également cliquer sur le point triple &quot;...&quot;. au bas de la mosaïque pour accéder directement à https://build.phonegap.com (vous devez vous authentifier) et regarder et gérer votre version directement.
+>Si la version échoue pour une raison quelconque (l’icône rouge iOS ci-dessous indique que la plateforme a échoué), vous pouvez pointer sur l’icône pour obtenir le message d’erreur. Vous pouvez également cliquer sur le point triple &quot;...&quot;. au bas de la mosaïque pour accéder directement à https://build.phonegap.com (vous devez vous authentifier) et regarder et gérer votre version directement.
 
 ### Création de votre application avec l’interface de ligne de commande PhoneGap {#building-your-application-with-phonegap-cli}
 
@@ -83,8 +87,8 @@ Compilez l’application PhoneGap sur votre ordinateur à l’aide de l’interf
 
 Pour tirer parti de l’interface de ligne de commande de PhoneGap, vous devez configurer votre environnement local afin d’inclure :
 
-1. Le SDK spécifique à la plateforme (iOS, Android, WindowsPhone, etc.) et,
-1. La ligne de commande de PhoneGap
+1. SDK Platform (iOS, Android, Windows Phone, etc.) et,
+1. Interface de ligne de commande de PhoneGap
 
 Vous pouvez en lire plus [here](https://docs.phonegap.com/references/phonegap-cli/).
 
@@ -100,7 +104,7 @@ phonegap run ios (or android, ...)
 >
 >add —emulate à la fin de cette ligne si vous ne souhaitez pas l’exécuter sur votre appareil connecté.
 
-Une fois que vous avez vérifié que les éléments ci-dessus fonctionnent, utilisez la variable **PhoneGap Build** Mosaïque pour **Source de téléchargement**. Enregistrez et décompressez le fichier ZIP sur le système local. Une fois cette opération effectuée :
+Une fois que vous avez vérifié que les éléments ci-dessus fonctionnent, utilisez la variable **PhoneGap Build** Mosaïque pour **Source de téléchargement**. Enregistrez le fichier et décompressez-le sur votre système local. Une fois cette opération effectuée :
 
 * accéder à ce fichier enregistré (dossier) ;
 * run &#39;phonegap run ios&#39; (ou android, etc.)

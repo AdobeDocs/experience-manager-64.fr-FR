@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: a91fd37e-5975-4572-a4b3-c7e8993d5f88
 exl-id: 6a7de639-9c87-4e7c-b431-e48c9cdc7982
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 90%
+source-wordcount: '260'
+ht-degree: 72%
 
 ---
 
 # Configuration de l’environnement du compte{#configuring-your-account-environment}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
@@ -28,7 +32,7 @@ boutons **Copier**, **Couper**, **Coller**, **Supprimer** utilisables avec les c
 
    * Afficher lorsque cela s’avère nécessaire (paramètre par défaut)
    * Toujours afficher
-   * Garder masqué
+   * Conserver les éléments masqués
 
 * **Se faire passer pour**
 La fonction [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) permet à un utilisateur de travailler au nom d’un autre.
@@ -44,7 +48,7 @@ Sélectionnez :
 
 ## Paramètres du compte {#account-settings}
 
-L’icône utilisateur vous donne accès à diverses options :
+L’icône de l’utilisateur permet d’accéder aux différentes options suivantes :
 
 * Se déconnecter
 * [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user)
@@ -55,7 +59,7 @@ L’icône utilisateur vous donne accès à diverses options :
 
 ## Préférences utilisateur {#user-preferences}
 
-Chaque utilisateur peut définir certaines propriétés à son intention. Cette option est disponible à partir de la boîte de dialogue **Préférences** dans le coin supérieur droit des consoles.
+Chaque utilisateur peut définir certaines propriétés pour lui-même. Cette option est disponible à partir de la boîte de dialogue **Préférences** dans le coin supérieur droit des consoles.
 
 ![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 

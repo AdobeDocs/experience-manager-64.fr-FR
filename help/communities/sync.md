@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
 role: Admin
 exl-id: 3a8e8fef-9aef-4b9d-8b0b-e76aa2962b61
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2500'
-ht-degree: 14%
+source-wordcount: '2536'
+ht-degree: 11%
 
 ---
 
 # Synchronisation des utilisateurs des communautés {#communities-user-synchronization}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#introduction}
 
@@ -54,7 +58,7 @@ Pour obtenir des instructions détaillées, détaillées sur la manière d’act
 
 * **Package de distribution**: contient les informations de distribution pour Sling. Il s’agit d’informations sur l’endroit où le contenu doit être distribué et le moment où il a été distribué en dernier.
 
-## Ce qui se produit si… {#what-happens-when}
+## Que se passe-t-il lorsque ... {#what-happens-when}
 
 ### Publier le site à partir de la console Sites des communautés {#publish-site-from-communities-sites-console}
 
@@ -64,7 +68,7 @@ Lorsqu’un site communautaire est publié à partir de la variable [Console Sit
 
 Par conception, les utilisateurs et les profils créés dans l’environnement de publication (par exemple par auto-inscription, connexion sociale, authentification LDAP) n’apparaissent pas dans l’environnement de création.
 
-Lorsque la topologie est une [batterie de publication](topologies.md) et la synchronisation des utilisateurs a été correctement configurée, la variable *user* et *profil utilisateur* est synchronisé dans la ferme de publication à l’aide de la distribution Sling.
+Lorsque la topologie consiste en une [batterie de publication](topologies.md) et que la synchronisation des utilisateurs a été correctement configurée, l’*utilisateur* et le *profil utilisateur* sont synchronisés dans la batterie de publication à l’aide de la distribution Sling.
 
 ### Un nouveau groupe de communautés est créé lors de la publication. {#new-community-group-is-created-on-publish}
 
@@ -72,9 +76,9 @@ Bien qu’elle soit lancée à partir d’une instance de publication, la créat
 
 Dans le cadre du processus, les nouvelles pages du site sont répliquées vers toutes les instances de publication. Le groupe d’utilisateurs de la communauté créé dynamiquement et ses membres sont Sling distribués à toutes les instances de publication.
 
-### Les utilisateurs ou les groupes d’utilisateurs sont créés à l’aide de la console Sécurité. {#users-or-user-groups-are-created-using-security-console}
+### La création d’utilisateurs ou de groupes d’utilisateurs s’effectue dans la console de sécurité {#users-or-user-groups-are-created-using-security-console}
 
-Par défaut, les données utilisateur créées dans l’environnement de publication ne sont pas visibles dans l’environnement de création, et vice versa.
+Par conception, les données utilisateur créées dans l’environnement de publication n’apparaissent pas dans l’environnement de création et vice versa.
 
 Lorsque la console [Administration et sécurité des utilisateurs](../../help/sites-administering/security.md) est utilisée pour ajouter de nouveaux utilisateurs dans l’environnement de publication, la synchronisation des utilisateurs synchronise les nouveaux utilisateurs et leur appartenance à un groupe sur d’autres instances de publication, si nécessaire. La synchronisation des utilisateurs synchronise également les groupes d’utilisateurs créés via la console de sécurité.
 
@@ -84,7 +88,7 @@ Pour le contenu généré par l’utilisateur, les données saisies sur une inst
 
 ## Bonnes pratiques {#bestpractices}
 
-Par défaut, la synchronisation des utilisateurs est **désactivée**. Activer la synchronisation des utilisateurs implique de modifier les configurations OSGi *existantes.* Aucune configuration nouvelle ne doit être ajoutée suite à l’activation de la synchronisation des utilisateurs.
+Par défaut, la synchronisation des utilisateurs est **disabled**. L’activation de la synchronisation des utilisateurs implique de modifier *existant* Configurations OSGi. Aucune nouvelle configuration ne doit être ajoutée suite à l’activation de la synchronisation des utilisateurs.
 
 La synchronisation des utilisateurs repose sur l’environnement de création pour gérer les distributions de données utilisateur, même si les données utilisateur ne sont pas créées en mode de création .
 
@@ -132,7 +136,7 @@ Sur l’instance d’auteur AEM :
       Ces points de terminaison définissent l’emplacement d’où vous souhaitez obtenir le contenu et l’emplacement où vous souhaitez pousser le contenu. L’auteur récupère le contenu à partir du point de terminaison de l’exportateur spécifié et envoie le contenu aux éditeurs (autres que l’éditeur à partir duquel il a récupéré le contenu).
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Distribution Adobe Granite - Fournisseur secret du transport de mot de passe chiffré {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Distribution Granite des Adobes - Fournisseur secret de transport de mot de passe chiffré {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Il permet à l’auteur d’identifier l’utilisateur autorisé, comme ayant l’autorisation de synchroniser les données utilisateur de l’auteur à la publication.
 
@@ -257,7 +261,7 @@ Sur chaque instance de publication AEM :
 
    `nt` : non structuré
 
-   `nt` :resource
+   `nt` :ressource
 
    rep:ACL
 
@@ -268,15 +272,15 @@ Sur chaque instance de publication AEM :
    Les types de noeuds spécifiés dans cette propriété se synchronisent et les informations de notification (blogs et configurations suivis) sont synchronisées entre les différents éditeurs.
 1. Ajoutez tous les dossiers à synchroniser dans **[!UICONTROL DistributedFolders]**. Par exemple,
 
-   segments/scoring
+   segments/notation
 
-   social/relationships
+   social/relations
 
    activities
 
 1. Définissez le niveau du journal **`ignorablenodes`** sur:
 
-   .tokens
+   .jetons
 
    system
 
@@ -284,7 +288,7 @@ Sur chaque instance de publication AEM :
 
    ![user-sync-listner](assets/user-sync-listner.png)
 
-### Identifiant Sling unique. {#unique-sling-id}
+### Identifiant Sling unique {#unique-sling-id}
 
 AEM instance d’auteur utilise l’identifiant Sling pour identifier à partir de quel endroit les données arrivent et vers quels éditeurs elle doit (ou ne doit pas) renvoyer le module.
 
@@ -319,7 +323,7 @@ Sur chaque instance de publication :
 
 Répétez ces étapes jusqu’à ce que toutes les instances de publication aient un identifiant Sling unique.
 
-### Fabrique de générateur de modules vault {#vault-package-builder-factory}
+### Fabrique de générateur de module vault {#vault-package-builder-factory}
 
 Pour que les mises à jour soient correctement synchronisées, il est nécessaire de modifier le créateur de modules Vault pour la synchronisation des utilisateurs.\
 Dans `/home/users`, un `/rep:cache` est créé. Il s’agit d’un cache qui permet de trouver que si nous effectuons une requête sur le nom principal d’un noeud, ce cache peut être utilisé directement.

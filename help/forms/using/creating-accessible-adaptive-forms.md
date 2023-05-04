@@ -1,7 +1,7 @@
 ---
-title: Création de formulaires adaptatifs accessibles
+title: Créer des formulaires adaptatifs accessibles
 seo-title: Creating accessible adaptive forms
-description: AEM Forms propose les outils nécessaires pour créer des formulaires adaptatifs accessibles et répondre aux normes d’accessibilité.
+description: AEM Forms vous fournit des outils, ainsi que la création de formulaires adaptatifs accessibles, et vous aide à vous conformer aux normes d’accessibilité.
 seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
 uuid: eceb3282-0b90-4e0a-8b89-137d27029747
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -9,22 +9,26 @@ topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
 feature: Adaptive Forms
 exl-id: adad26fa-b27a-4bd7-806c-4ddfbaae7a37
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 99%
+source-wordcount: '939'
+ht-degree: 35%
 
 ---
 
-# Création de formulaires adaptatifs accessibles {#creating-accessible-adaptive-forms}
+# Créer des formulaires adaptatifs accessibles {#creating-accessible-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#introduction}
 
-Un formulaire accessible est un formulaire utilisable par tout le monde, y compris par les utilisateurs souffrant de handicaps. Adobe Experience Manager (AEM) s’accompagne de nombreuses fonctions et fonctionnalités qui simplifient l’utilisation des formulaires adaptatifs pour cette catégorie d’utilisateurs. Cette solution aide également les auteurs à créer des formulaires adaptatifs accessibles.
+Un formulaire accessible est un formulaire utilisable par tout le monde, y compris par les utilisateurs souffrant de handicaps. Adobe Experience Manager (AEM) comprend un certain nombre de fonctions et de fonctionnalités qui améliorent la convivialité des formulaires adaptatifs pour les utilisateurs avec des fonctionnalités différentes. Cette solution aide également les auteurs à créer des formulaires adaptatifs accessibles.
 
-L’intégration d’options d’accessibilité dans des formulaires adaptatifs ne permet pas seulement d’élargir l’audience. Il s’agit en effet d’une exigence lors de la diffusion de documents dans des régions où le respect des normes d’accessibilité constitue une obligation. AEM Forms aide les développeurs à se conformer à ces normes d’accessibilité.
+L’intégration de l’accessibilité dans les formulaires adaptatifs permet non seulement le plus large public possible de contenu, mais elle est également requise lors de la fourniture de documents dans des zones géographiques où la conformité aux normes d’accessibilité est obligatoire. AEM Forms aide les développeurs à se conformer à ces normes d’accessibilité.
 
-Lors de la création d’un formulaire adaptatif, l’auteur doit tenir compte des points suivants pour créer un formulaire adaptatif accessible :
+Lors de la création d’un formulaire adaptatif, l’auteur doit tenir compte des points suivants pour créer un formulaire adaptatif accessible :
 
 * Fournissez des libellés appropriés pour les commandes de formulaire
 * Fournissez des équivalents textuels pour les images
@@ -33,11 +37,11 @@ Lors de la création d’un formulaire adaptatif, l’auteur doit tenir compte d
 
 ## Fournissez des libellés appropriés pour les commandes de formulaire {#provide-proper-labels-for-form-controls}
 
-Le libellé ou le titre d’un composant de formulaire identifie ce qu’il représente. Par exemple, le texte « Prénom » indique à l’utilisateur qu’il doit saisir son prénom dans une zone de texte. Pour être accessible sur des lecteurs d’écran, le libellé est associé, par programmation, à un composant de formulaire. La commande de formulaire peut également être assortie d’informations d’accessibilité supplémentaires.
+Le libellé ou le titre d’un composant de formulaire identifie ce qu’il représente. Par exemple, le texte &quot;Prénom&quot; indique aux utilisateurs qu’ils doivent saisir leur prénom dans un champ de texte. Pour être accessible par les lecteurs d’écran, le libellé est associé par programmation à un composant de formulaire. La commande de formulaire peut également être configurée avec des informations d’accessibilité supplémentaires.
 
-Le libellé perçu par les lecteurs d’écran ne doit pas nécessairement être identique à la légende visuelle. Dans certains cas, vous pouvez être plus précis quant au rôle exact de la commande. Pour chaque objet de champ d’un formulaire, les options d’accessibilité permettent de spécifier ce que le lecteur d’écran annonce pour identifier le champ de formulaire.
+Le libellé qui est perçu par les lecteurs d’écran ne doit pas nécessairement être le même que la légende visuelle. Dans certains cas, vous souhaiterez peut-être être plus précis sur l’objectif du contrôle. Pour chaque objet de champ d’un formulaire, les options d’accessibilité permettent de spécifier ce que le lecteur d’écran annonce pour identifier le champ de formulaire spécifique.
 
-Pour utiliser l’option d’accessibilité, procédez comme suit :
+Pour utiliser l’option Accessibilité, procédez comme suit :
 
 1. Sélectionnez un composant et appuyez sur ](assets/cmppr.png)cmppr![.
 1. Cliquez sur **Accessibilité** dans la barre latérale pour sélectionner l’option d’accessibilité de votre choix.
@@ -46,7 +50,7 @@ Pour utiliser l’option d’accessibilité, procédez comme suit :
 
 ![Options d’accessibilité dans des composants de formulaire](assets/accessibility-options.png)
 
-**Texte personnalisé** : les auteurs de formulaires indiquent le contenu dans la zone de texte Personnalisé de l’option d’accessibilité. La technologie d’assistance, dont tirent parti les lecteurs d’écran, utilise ce texte personnalisé. L’utilisation du paramètre Titre constitue la meilleure option dans la majorité des cas. N’envisagez la création d’un texte personnalisé pour lecteur d’écran que lorsque l’utilisation du titre ou d’une brève description s’avère impossible.
+**Texte personnalisé** : les auteurs de formulaires indiquent le contenu dans la zone de texte Personnalisé de l’option d’accessibilité. La technologie d’assistance, dont tirent parti les lecteurs d’écran, utilise ce texte personnalisé. L’utilisation du paramètre Titre est la meilleure option dans la plupart des scénarios. N’envisagez la création d’un texte de Reader d’écran personnalisé que lorsque l’utilisation du titre ou d’une brève description n’est pas possible.
 
 **Description brève** : pour la majorité des composants, une description brève s’affiche lors de l’exécution lorsque l’utilisateur place le pointeur de la souris sur un composant. Vous pouvez définir cette option dans le champ approprié, sous l’option du contenu d’aide.
 
@@ -62,13 +66,13 @@ Pour utiliser l’option d’accessibilité, procédez comme suit :
 
 >[!NOTE]
 >
->Pour les formulaires adaptatifs basés sur XFA, l’option d’accessibilité est héritée des options d’accessibilité définies dans le fichier XDP. Les info-bulles du fichier XDP sont associées au champ Brève description et Légende correspond à Titre. Les autres options fonctionnent normalement.
+>Pour les formulaires adaptatifs basés sur XFA, l’option d’accessibilité est héritée des options d’accessibilité définies dans le fichier XDP. Les info-bulles du fichier XDP sont mappées sur la description courte et la légende sur le titre. Les autres options fonctionnent normalement.
 
 ## Fournissez des équivalents textuels pour les images {#provide-text-equivalents-for-images}
 
-Pour certains utilisateurs, les images permettent une compréhension plus facile. Cependant, lorsqu’un lecteur d’écran est utilisé, les images réduisent l’accessibilité du formulaire. Si vous optez pour l’utilisation d’images, veuillez fournir des descriptions textuelles pour l’ensemble des images.
+Les images peuvent aider à améliorer la compréhension pour certains utilisateurs. Toutefois, pour les utilisateurs utilisant des lecteurs d’écran, les images réduisent l’accessibilité de votre formulaire. Si vous choisissez d’utiliser des images, fournissez des descriptions textuelles pour toutes les images.
 
-Assurez-vous que le texte décrit l’objet et son rôle dans le formulaire. Un lecteur d’écran lit ce texte alternatif lorsqu’il rencontre une image. Un texte alternatif doit toujours être spécifié pour une image.
+Assurez-vous que le texte décrit l’objet et son objectif dans le formulaire. Un lecteur d’écran lit ce texte alternatif lorsqu’il rencontre une image. Un texte alternatif doit toujours être spécifié pour une image.
 
 Sélectionnez un composant d’image et appuyez sur ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, indiquez le texte alternatif d’une image.
 
@@ -76,17 +80,17 @@ Sélectionnez un composant d’image et appuyez sur ![cmppr](assets/cmppr.png). 
 
 ## Fournissez un contraste des couleurs suffisant {#provide-sufficient-color-contrast}
 
-Dans le cadre des fonctions d’accessibilité, il convient de tenir compte de quelques points supplémentaires concernant l’utilisation des couleurs. Les auteurs de formulaires peuvent utiliser des couleurs pour améliorer l’apparence des formulaires, en mettant en surbrillance différents composants. Cependant, une utilisation inappropriée des couleurs peut rendre le formulaire difficile à lire, voire totalement illisible, pour des personnes souffrant de certains handicaps.
+La conception de l’accessibilité implique la prise en compte d’instructions supplémentaires pour l’utilisation des couleurs. Les auteurs de formulaires peuvent utiliser des couleurs pour améliorer l’aspect des formulaires en mettant en surbrillance différents composants de formulaire. Cependant, une utilisation incorrecte des couleurs peut rendre un formulaire difficile ou impossible à lire pour les personnes ayant des capacités différentes.
 
 Les utilisateurs ayant une déficience visuelle s’appuient sur le contraste prononcé entre le texte et l’arrière-plan pour lire du contenu numérique. En l’absence de contraste suffisant, la lecture d’un formulaire peut s’avérer difficile, voire impossible, pour certains utilisateurs.
 
-Il est conseillé d’utiliser la police et les couleurs d’arrière-plan par défaut, à savoir : contenu noir sur fond blanc. Si vous modifiez les couleurs par défaut, optez pour une couleur de premier plan foncée sur un arrière-plan clair, ou inversement.
+Il est recommandé d’utiliser la police et les couleurs d’arrière-plan par défaut, c’est-à-dire le contenu en noir sur fond blanc. Si vous modifiez les couleurs par défaut, choisissez une couleur de premier plan foncée sur un arrière-plan clair, ou inversement.
 
-Pour plus d’informations sur la modification du contraste de couleur et du thème des formulaires adaptatifs, reportez-vous à [Création de thèmes personnalisés pour les formulaires adaptatifs](/help/forms/using/creating-custom-adaptive-form-themes.md).
+Voir [Création de thèmes personnalisés pour les formulaires adaptatifs](/help/forms/using/creating-custom-adaptive-form-themes.md), pour plus d’informations sur la modification du contraste de couleur et du thème pour les formulaires adaptatifs.
 
 ## Assurez-vous que les commandes de formulaire sont accessibles au clavier {#ensure-that-form-controls-are-keyboard-accessible}
 
-Un formulaire accessible peut être rempli complètement en utilisant uniquement le clavier ou un périphérique de saisie équivalent. Certains utilisateurs ayant une mobilité réduite ou une déficience visuelle sont parfois contraints de n’utiliser que le clavier. De plus, de nombreux utilisateurs préfèrent saisir leurs données au moyen du clavier plutôt que de la souris. En proposant différents modes de saisie des données, vous créez également des formulaires qui répondent aux préférences de l’ensemble des utilisateurs.
+Un formulaire accessible peut être entièrement rempli à l’aide du clavier ou d’un appareil de saisie équivalent. Les utilisateurs ayant une mobilité réduite ou une déficience visuelle peuvent n’avoir d’autre choix que d’utiliser le clavier. De plus, de nombreux utilisateurs qui peuvent utiliser une souris préfèrent saisir leur clavier. En proposant les différentes méthodes de saisie, vous pouvez non seulement créer des formulaires accessibles, mais également des formulaires mieux adaptés aux préférences de tous les utilisateurs.
 
 Les raccourcis clavier suivants sont disponibles dans AEM Forms.
 
@@ -95,6 +99,6 @@ Les raccourcis clavier suivants sont disponibles dans AEM Forms.
 | Déplacer le curseur vers l’avant dans un formulaire | Tabulation |
 | Déplacer le curseur vers l’arrière dans un formulaire | Maj+Tabulation |
 | Accéder au panneau suivant | Alt+Flèche Droite |
-| Revenir au panneau précédent | Alt+Flèche Gauche |
-| Réinitialiser les données saisies dans un formulaire | Alt+R |
+| Accéder au panneau précédent | Alt+Flèche Gauche |
+| Réinitialiser les données renseignées dans un formulaire | Alt+R |
 | Envoyer un formulaire | Alt+S | configuring-watched-folder-endpoints.md |

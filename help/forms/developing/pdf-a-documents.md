@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 role: Developer
 exl-id: fbf6c225-5351-4589-97d3-9faf9c5939bc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2358'
-ht-degree: 100%
+source-wordcount: '2394'
+ht-degree: 98%
 
 ---
 
 # Utiliser des documents PDF/A {#working-with-pdf-a-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 **À propos du service DocConverter**
 
@@ -41,7 +45,7 @@ Bien que PDF/A soit le standard d’archivage des documents PDF, il n’est pas 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service DocConverter, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service DocConverter, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -206,7 +210,7 @@ Vous pouvez utiliser le service DocConverter pour déterminer si un document PDF
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service DocConverter, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service DocConverter, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 

@@ -1,7 +1,7 @@
 ---
 title: Présentation de la création de formulaires adaptatifs
 seo-title: Introduction to authoring adaptive forms
-description: AEM Forms fournit une interface à la fois conviviale et puissante permettant de créer des formulaires adaptatifs. Les nombreux composants et outils proposés vous permettent de créer des formulaires.
+description: AEM Forms fournit une interface conviviale mais puissante pour la création de formulaires adaptatifs. Les nombreux composants et outils proposés vous permettent de créer des formulaires.
 seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
 uuid: 07ff8e79-daf7-4608-9171-91854619cc0b
 content-type: reference
@@ -10,24 +10,28 @@ topic-tags: introduction, author
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
 feature: Adaptive Forms
 exl-id: 62f1ddd3-9fc2-49dd-b588-0c3520e1cdd2
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3045'
-ht-degree: 95%
+source-wordcount: '3081'
+ht-degree: 56%
 
 ---
 
 # Présentation de la création de formulaires adaptatifs  {#introduction-to-authoring-adaptive-forms}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Présentation {#overview}
 
-Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit une interface utilisateur intuitive et des composants prêts à l’emploi pour la création et l’utilisation de formulaires adaptatifs. Vous pouvez choisir de créer un formulaire adaptatif basé sur un modèle de formulaire ou un schéma ou sans modèle de formulaire. Il est important de choisir avec soin le modèle de formulaire qui convient non seulement à vos besoins, mais qui étend également vos investissements et vos ressources d’infrastructure existantes. Vous pouvez choisir parmi les options suivantes pour créer un formulaire adaptatif :
+Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit une interface utilisateur intuitive et des composants prêts à l’emploi pour la création et l’utilisation de formulaires adaptatifs. Vous pouvez choisir de créer un formulaire adaptatif basé sur un modèle ou un schéma de formulaire ou sans modèle de formulaire. Il est important de choisir avec soin le modèle de formulaire qui convient non seulement à vos besoins, mais qui étend également vos investissements et vos ressources d’infrastructure existantes. Vous pouvez choisir parmi les options suivantes pour créer un formulaire adaptatif :
 
 * **Utilisation d’un modèle de données de formulaire**
    L’[intégration de données](/help/forms/using/data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates dans un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
 
 * **Utilisation d’un modèle de formulaire XDP**
-Il s’agit d’un modèle de formulaire idéal si vous investissez dans des formulaires XFA ou XDP. Il fournit une méthode directe de conversion des formulaires de type XFA en formulaires adaptatifs. Toutes les règles XFA existantes sont conservées dans les formulaires adaptatifs associés. Les formulaires adaptatifs qui en résultent prennent en charge les éléments XFA, tels que les validations, les événements, les propriétés et les motifs.
+Il s’agit d’un modèle de formulaire idéal si vous investissez dans des formulaires XFA ou XDP. Il fournit un moyen direct de convertir vos formulaires basés sur XFA en formulaires adaptatifs. Toutes les règles XFA existantes sont conservées dans les formulaires adaptatifs associés. Les formulaires adaptatifs obtenus prennent en charge les éléments XFA, tels que les validations, les événements, les propriétés et les modèles.
 
 * **Utilisation d’une définition de schéma XML (XSD) ou d’un schéma JSON**
 Les schémas XML et JSON représentent la structure dans laquelle les données sont produites ou consommées par le système principal de votre entreprise. Vous pouvez associer le schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma peuvent être utilisés dans l’onglet Objets du modèle de données de l’explorateur de contenu lors de la création de formulaires adaptatifs.
@@ -36,17 +40,17 @@ Les schémas XML et JSON représentent la structure dans laquelle les données s
 
 Les formulaires adaptatifs créés avec cette option n’utilisent aucun modèle de formulaire. Les données XML générées à partir de ce type de formulaire présentent une structure plate avec des champs et des valeurs correspondantes.
 
-Pour en savoir plus sur la création d’un formulaire adaptatif, consultez [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md).
+Pour plus d’informations sur la création d’un formulaire adaptatif, voir [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md).
 
-## Interface de création de formulaires adaptatifs {#adaptive-form-authoring-ui}
+## Interface utilisateur de création de formulaires adaptatifs {#adaptive-form-authoring-ui}
 
-L’interface utilisateur optimisée pour les écrans tactiles permet de créer des formulaires adaptatifs de manière intuitive et offre les avantages suivants :
+L’interface utilisateur optimisée pour les écrans tactiles pour la création de formulaires adaptatifs est intuitive et fournit les éléments suivants :
 
 * Fonctionnalité glisser-déposer
 * Composants standard de formulaire
 * Référentiel intégré de ressources
 
-Lorsque vous créez ou modifiez un formulaire adaptatif, vous utilisez les éléments suivants de l’interface utilisateur :
+Lorsque vous créez un formulaire adaptatif ou en modifiez un existant, vous utilisez les éléments suivants de l’interface utilisateur :
 
 * [Barre latérale](#sidebar)
 * [Barre d’outils Page](#page-toolbar)
@@ -68,7 +72,7 @@ La barre latérale vous permet de
 * Ajouter des composants dans le formulaire.
 
    ![Barre latérale](assets/sidebar-comps-2.png)
-   [Cliquez sur l’image pour l’agrandir](assets/sidebar-comps-2.png)
+   [Cliquez pour agrandir](assets/sidebar-comps-2.png)
 
 **A.** Explorateur de contenu **B.** Explorateur de propriétés **C.** Explorateur de ressources **D.** Explorateur de composants
 
@@ -86,7 +90,7 @@ La barre latérale comprend les explorateurs suivants :
 
       Permet d’afficher la hiérarchie du modèle de formulaire.
 
-      Il vous permet de faire glisser des éléments du modèle de formulaire sur le formulaire adaptatif. Les éléments ajoutés sont automatiquement convertis en composants de formulaire, tout en conservant leurs propriétés d’origine. Vous pouvez voir les objets de modèle de données lorsque votre formulaire utilise un schéma XML, un schéma JSON ou un modèle XDP.
+      Il vous permet de faire glisser des éléments du modèle de formulaire sur le formulaire adaptatif. Les éléments ajoutés sont automatiquement convertis en composants de formulaire tout en conservant leurs propriétés d’origine. Vous pouvez voir des objets de modèle de données lorsque votre formulaire utilise un schéma XML, un schéma JSON ou un modèle XDP.
 
 * **Explorateur de propriétés**
 
@@ -114,7 +118,7 @@ La barre latérale comprend les explorateurs suivants :
   </tr> 
   <tr> 
    <td>Bouton</td> 
-   <td>Ajoute un bouton que vous pouvez configurer afin d’effectuer des actions telles que Enregistrer, Réinitialiser, Passer au suivant, Revenir au précédent, etc..</td> 
+   <td>Ajoute un bouton que vous pouvez configurer pour exécuter des actions telles que Enregistrer, Réinitialiser, Passer au suivant, Passer au précédent, etc.</td> 
   </tr> 
   <tr> 
    <td>Captcha</td> 
@@ -122,27 +126,27 @@ La barre latérale comprend les explorateurs suivants :
   </tr> 
   <tr> 
    <td>Graphique</td> 
-   <td>Ajoute un diagramme que vous pouvez utiliser dans des formulaires et des documents adaptatifs pour la représentation visuelle des données bidimensionnelles dans les panneaux et les lignes de tableau répétables.</td> 
+   <td>Ajoute un graphique que vous pouvez utiliser dans les formulaires et documents adaptatifs pour la représentation visuelle des données bidimensionnelles dans les panneaux et les lignes de tableau répétables.</td> 
   </tr> 
   <tr> 
    <td>Case à cocher</td> 
-   <td>Ajoute une case à cocher..</td> 
+   <td>Ajoute une case à cocher.</td> 
   </tr> 
   <tr> 
    <td>Champ de saisie de date</td> 
-   <td>Le composant de champ de saisie de date permet aux utilisateurs de saisir dans trois zones séparées le jour, le mois et l’année. Vous pouvez personnaliser l’apparence du composant et modifier le format de date. Ainsi, la date peut être saisie au format MM/JJ/AAAA ou JJ/MM/AAAA.</td> 
+   <td>Utilisez le composant Champ de saisie de date dans votre formulaire pour permettre aux clients de remplir séparément dans trois cases le jour, le mois et l’année. Vous pouvez personnaliser l’aspect du composant et modifier le format de date. Par exemple, vous pouvez laisser vos clients saisir des dates au format MM/JJ/AAAA ou JJ/MM/AAAA.</td> 
   </tr> 
   <tr> 
    <td>Sélecteur de date</td> 
-   <td>Ajoute un champ de calendrier pour sélectionner une date..</td> 
+   <td>Ajoute un champ de calendrier pour sélectionner une date.</td> 
   </tr> 
   <tr> 
    <td>Fragment de document</td> 
-   <td>Ajoute des composants réutilisables d’une correspondance.</td> 
+   <td>Permet d’ajouter des composants réutilisables d’une correspondance.</td> 
   </tr> 
   <tr> 
    <td>Groupe de fragments de document</td> 
-   <td>Ajoute le groupe de fragments de document associés que vous pouvez utiliser dans un modèle de lettre en tant que même unité.</td> 
+   <td>Vous permet d’ajouter un groupe de fragments de document associés que vous pouvez utiliser dans un modèle de lettre en tant qu’unité unique.</td> 
   </tr> 
   <tr> 
    <td>Liste déroulante</td> 
@@ -150,15 +154,15 @@ La barre latérale comprend les explorateurs suivants :
   </tr> 
   <tr> 
    <td>E-mail</td> 
-   <td><p>Ajoute un champ pour capturer une adresse électronique. Le composant Courrier électronique, par défaut, valide les adresses électroniques à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td> 
+   <td><p>Ajoute un champ pour capturer l’adresse électronique. Par défaut, le composant Email valide les adresses email à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td> 
   </tr> 
   <tr> 
    <td>Pièce jointe</td> 
-   <td><p>Ajoute un bouton qui permet aux utilisateurs de rechercher et de joindre des documents annexes au formulaire.</p> <p><strong>Remarque : </strong>Le composant Pièce jointe prend en charge un ensemble prédéfini de formats de fichier dans les formulaires adaptatifs activés pour Acrobat Sign. Pour plus d’informations, voir <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Formats de fichiers pris en charge</a>.</p> </td> 
+   <td><p>Ajoute un bouton qui permet aux utilisateurs et utilisatrices de rechercher et de joindre des documents annexes au formulaire.</p> <p><strong>Remarque : </strong>Le composant Pièce jointe prend en charge un ensemble prédéfini de formats de fichier dans les formulaires adaptatifs activés pour Acrobat Sign. Pour plus d’informations, voir <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Formats de fichiers pris en charge</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Liste des pièces jointes</td> 
-   <td>Ajoute un champ qui répertorie toutes les pièces jointes téléchargées à l’aide du composant Pièce jointe.</td> 
+   <td>Ajoute un champ qui répertorie toutes les pièces jointes téléchargées à l’aide du composant Pièce jointe .</td> 
   </tr> 
   <tr> 
    <td>Pied de page<br /> </td> 
@@ -170,7 +174,7 @@ La barre latérale comprend les explorateurs suivants :
   </tr> 
   <tr> 
    <td>Image</td> 
-   <td>Permet d’insérer une image.</td> 
+   <td>Vous permet d’insérer une image.</td> 
   </tr> 
   <tr> 
    <td>Choix d’image</td> 
@@ -178,7 +182,7 @@ La barre latérale comprend les explorateurs suivants :
   </tr> 
   <tr> 
    <td>Bouton Suivant</td> 
-   <td>Ajoute un bouton pour accéder au panneau suivant dans un formulaire.</td> 
+   <td>Ajoute un bouton permettant d’accéder au panneau suivant d’un formulaire.</td> 
   </tr> 
   <tr> 
    <td>Zone numérique</td> 
@@ -190,31 +194,31 @@ La barre latérale comprend les explorateurs suivants :
   </tr> 
   <tr> 
    <td>Panneau</td> 
-   <td><p>Ajoute un panneau ou un sous-panneau..</p> <p>Vous pouvez également ajouter un composant de panneau à partir de la barre d’outils du panneau parent à l’aide du bouton <span class="uicontrol">Add Child Panel</span> (Ajouter un panneau enfant). De même, vous pouvez ajouter une barre d’outils spécifique au panneau à l’aide du bouton <span class="uicontrol">Ajouter une barre d’outils de panneau</span>. Vous pouvez configurer la position de la barre d’outils du panneau à l’aide de la boîte de dialogue Modifier le panneau.</p> </td> 
+   <td><p>Ajoute un panneau ou un sous-panneau.</p> <p>Vous pouvez également ajouter un composant de panneau à partir de la barre d’outils du panneau parent à l’aide du bouton <span class="uicontrol">Add Child Panel</span> (Ajouter un panneau enfant). De même, vous pouvez ajouter une barre d’outils spécifique au panneau à l’aide du bouton <span class="uicontrol">Ajouter une barre d’outils de panneau</span>. Vous pouvez configurer la position de la barre d’outils du panneau à l’aide de la boîte de dialogue Modifier le panneau.</p> </td> 
   </tr> 
   <tr> 
    <td>Zone de mot de passe</td> 
-   <td>Ajoute un champ destiné à la saisie d’un mot de passe..</td> 
+   <td>Ajoute un champ destiné à la saisie d’un mot de passe.</td> 
   </tr> 
   <tr> 
    <td>Bouton Précédent</td> 
    <td>Ajoute un bouton permettant de revenir à la page ou au panneau précédents.</td> 
   </tr> 
   <tr> 
-   <td>Bouton radio</td> 
-   <td>Ajoute des cases d’option..</td> 
+   <td>Bouton Radio</td> 
+   <td>Ajoute des boutons radio.</td> 
   </tr> 
   <tr> 
    <td>Bouton Réinitialiser</td> 
-   <td>Ajoute un bouton permettant de réinitialiser des champs de formulaire..</td> 
+   <td>Ajoute un bouton pour réinitialiser les champs de formulaire.</td> 
   </tr> 
   <tr> 
    <td>Bouton Enregistrer</td> 
-   <td>Ajoute un bouton pour enregistrer les données de formulaire.</td> 
+   <td>Ajoute un bouton permettant d’enregistrer les données de formulaire.</td> 
   </tr> 
   <tr> 
    <td>Signature tactile</td> 
-   <td>Ajoute un champ destiné à la saisie de signatures tactiles..</td> 
+   <td>Ajoute un champ destiné à la saisie de signatures tactiles.</td> 
   </tr> 
   <tr> 
    <td>Séparateur</td> 
@@ -222,7 +226,7 @@ La barre latérale comprend les explorateurs suivants :
   </tr> 
   <tr> 
    <td>Étape de signature</td> 
-   <td>Affiche les informations fournies dans le formulaire et les champs de signature pour que l’utilisateur puisse vérifier et signer le formulaire.</td> 
+   <td>Affiche les informations fournies dans le formulaire et les champs de signature permettant à l’utilisateur de vérifier et de signer le formulaire.</td> 
   </tr> 
   <tr> 
    <td>Texte</td> 
@@ -230,7 +234,7 @@ La barre latérale comprend les explorateurs suivants :
   </tr> 
   <tr> 
    <td>Bouton Envoyer</td> 
-   <td>Ajoute un bouton d’envoi permettant d’envoyer le formulaire à l’action d’envoi configurée.</td> 
+   <td>Ajoute un bouton Envoyer pour envoyer le formulaire à l’action d’envoi configurée.</td> 
   </tr> 
   <tr> 
    <td>Étape de résumé</td> 
@@ -238,7 +242,7 @@ La barre latérale comprend les explorateurs suivants :
   </tr> 
   <tr> 
    <td>Basculer</td> 
-   <td>Ajoute un bouton bascule qui exécute une opération de bascule ou active/désactive une action. Vous ne pouvez pas ajouter plus de deux options dans le composant Basculer. Un bouton ne peut avoir que deux valeurs : Activé ou Désactivé, obligatoire ne s’applique pas. Au moins une valeur est enregistrée, quelle que soit la saisie utilisateur. <br /> </td> 
+   <td>Ajoute un commutateur qui exécute une action de basculement ou d’activation/désactivation. Vous ne pouvez pas ajouter plus de deux options dans le composant Basculer. Un bouton ne peut avoir que deux valeurs : Activé ou Désactivé, obligatoire ne s’applique pas. Au moins une valeur est enregistrée, quelle que soit la saisie utilisateur. <br /> </td> 
   </tr> 
   <tr> 
    <td>Tableau</td> 
@@ -251,7 +255,7 @@ La barre latérale comprend les explorateurs suivants :
      <li>Le type International est validé par <code>^[+][0-9]{0,14}$</code>.</li> 
      <li>Le type USPhoneNumber est validé par <code>{'+1 ('999') '999-9999}</code>.</li> 
      <li>Le type UKPhoneNumber est validé par <code>text{'+'99 999 999 9999}</code>.</li> 
-     <li>Le type Custom ne fournit pas de modèle de validation par défaut. Il prend la valeur du dernier type de numéro de téléphone sélectionné. Vous pouvez également spécifier votre propre motif de validation personnalisé.</li> 
+     <li>Type Personnalisé ne fournit pas de modèle de validation par défaut. Il prend la valeur du dernier type de numéro de téléphone sélectionné. Vous pouvez également spécifier votre propre modèle de validation personnalisé.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -260,7 +264,7 @@ La barre latérale comprend les explorateurs suivants :
   </tr> 
   <tr> 
    <td>Zone de texte </td> 
-   <td><p>Ajoute une zone de texte dans laquelle un utilisateur peut spécifier les informations nécessaires.. </p> <p>Par défaut, le composant de zone de texte accepte uniquement du texte brut. Vous pouvez activer un composant de zone de texte afin de permettre la prise en charge du texte brut. Un composant de texte compatible avec le texte brut permet d’ajouter des en-têtes, de modifier les styles de caractère (gras, italique, souligné), de créer les listes ordonnées et non ordonnées, de modifier l’arrière-plan et la couleur du texte et d’ajouter des hyperliens. Pour activer le texte enrichi pour une zone de texte, activez l’option <strong>Autoriser le texte enrichi</strong> dans les propriétés du composant.</p> </td> 
+   <td><p>Ajoute une zone de texte dans laquelle un utilisateur peut spécifier les informations requises. </p> <p>Par défaut, le composant Zone de texte accepte uniquement du texte brut. Vous pouvez activer un composant de zone de texte afin de permettre la prise en charge du texte brut. Un composant de texte enrichi fournit des options permettant d’ajouter des en-têtes, de modifier les styles de caractères (gras, italique, soulignement des caractères), de créer des listes ordonnées et non ordonnées, de modifier l’arrière-plan du texte et la couleur du texte, ainsi que d’ajouter des liens hypertexte. Pour activer le texte enrichi pour une zone de texte, activez l’option <strong>Autoriser le texte enrichi</strong> dans les propriétés du composant.</p> </td> 
   </tr> 
   <tr> 
    <td>Titre</td> 
@@ -275,10 +279,10 @@ La barre latérale comprend les explorateurs suivants :
 
 #### Bonnes pratiques pour l’utilisation des composants {#best-practices}
 
-Les meilleures pratiques et les points clés suivants sont à prendre en compte lors de l’utilisation de composants de formulaire adaptatifs :
+Voici quelques bonnes pratiques et points clés à retenir lorsque vous utilisez des composants de formulaire adaptatif :
 
 * Chaque composant est associé à des propriétés qui contrôlent son apparence et ses fonctionnalités. Pour configurer les propriétés d’un composant, appuyez sur celui-ci et sélectionnez ![cmppr](assets/cmppr.png) pour ouvrir les propriétés du composant dans l’explorateur de propriétés.
-* Un composant est identifié par son nom d’élément. Lorsque vous appuyez sur ![cmppr](assets/cmppr.png), vous pouvez changer le nom du composant en modifiant la valeur du champ **[!UICONTROL Nom de l’élément]** dans l’explorateur de propriétés. Vous pouvez saisir uniquement des lettres, des chiffres, des traits d’union (-) et des traits de soulignement (_) dans le champ Nom de l’élément. D’autres caractères spéciaux ne sont pas autorisés et le nom de l’élément doit commencer par une lettre.
+* Un composant est identifié par son nom d’élément. Lorsque vous appuyez sur ![cmppr](assets/cmppr.png), vous pouvez changer le nom du composant en modifiant la valeur du champ **[!UICONTROL Nom de l’élément]** dans l’explorateur de propriétés. Le champ Nom de l’élément accepte uniquement les lettres, les chiffres, les tirets (-) et les traits de soulignement (_). Les autres caractères spéciaux ne sont pas autorisés et le nom de l’élément doit commencer par une lettre.
 
 * Vous pouvez modifier la propriété de titre d’un composant de formulaire adaptatif en ligne dans l’éditeur de formulaire sans ouvrir le navigateur de propriétés tant que le titre est visible sur le formulaire. Pour ce faire :
 
@@ -288,20 +292,20 @@ Les meilleures pratiques et les points clés suivants sont à prendre en compte 
 
 * Certains composants de formulaire adaptatifs, tels que Courrier électronique et Téléphone, incluent des modèles de validation prêts à l’emploi. Toutefois, vous pouvez spécifier une validation personnalisée en mettant à jour le champ **[!UICONTROL Modèle de validation]** sous l’accordéon Modèles dans les propriétés du composant. Voir les descriptions des composants dans le tableau ci-dessus pour plus d’informations sur les validations par défaut.
 
-* Les champs de formulaires adaptatifs, tels que Zone numérique et Adresse électronique, peuvent être configurés de façon à inclure des types spécifiques d’entrée HTML5. Lorsque ces champs sont actifs sur les appareils mobiles et les tablettes, le clavier affiche un alphabet, des chiffres et des caractères spécifiques qui sont généralement utilisés pour saisir des informations dans les champs. Cela permet aux utilisateurs de saisir les informations rapidement sans avoir à basculer entre les jeux de caractères sur le clavier. Pour activer une entrée spécifique pour un composant, cochez la case **[!UICONTROL Utiliser un numéro de type HTML]** dans ses propriétés de composant.
+* Les champs de formulaires adaptatifs, tels que la zone numérique et le courrier électronique, peuvent être configurés pour inclure des types d’entrée HTML5 spécialisés. Lorsque ces champs sont actifs sur les appareils mobiles et les tablettes, le clavier affiche un alphabet, des chiffres et des caractères spécifiques qui sont généralement utilisés pour saisir des informations dans les champs. Cela permet aux utilisateurs de saisir les informations rapidement sans avoir à basculer entre les jeux de caractères sur le clavier. Pour activer une entrée spécifique pour un composant, cochez la case **[!UICONTROL Utiliser un numéro de type HTML]** dans ses propriétés de composant.
 
 * Vous pouvez activer un composant de zone de texte afin de permettre la prise en charge du texte brut. Pour activer le texte enrichi pour une zone de texte, activez la case à cocher **[!UICONTROL Autoriser le texte enrichi]** dans les propriétés du composant.
 
-* Vous pouvez activer les composants Zone de texte, Adresse électronique et Téléphone pour remplir automatiquement les champs tels que le nom, l’adresse, la carte de crédit, le téléphone et l’adresse électronique à partir des informations stockées dans les paramètres de remplissage automatique du navigateur. Pour activer cette fonctionnalité, sélectionnez **[!UICONTROL Activer le remplissage automatique]** dans les propriétés du composant et sélectionnez un **[!UICONTROL attribut de remplissage automatique]**. Lorsqu’un utilisateur remplit un formulaire adaptatif, les valeurs sont suggérées à partir du profil de remplissage automatique dans le navigateur ou en fonction des valeurs précédemment renseignées par l’utilisateur. Notez que le remplissage automatique fonctionne si les paramètres de remplissage automatique dans le navigateur de l’utilisateur sont activés.
+* Vous pouvez activer les composants Zone de texte, Adresse électronique et Téléphone pour remplir automatiquement les champs tels que le nom, l’adresse, la carte de crédit, le téléphone et l’adresse électronique à partir des informations stockées dans les paramètres de remplissage automatique du navigateur. Pour activer cette fonctionnalité, sélectionnez **[!UICONTROL Activer le remplissage automatique]** dans les propriétés du composant et sélectionnez un **[!UICONTROL attribut de remplissage automatique]**. Lorsqu’un utilisateur remplit un formulaire adaptatif, les valeurs sont proposées à partir du profil de remplissage automatique dans le navigateur ou en fonction des valeurs précédemment renseignées par l’utilisateur. Notez que le remplissage automatique fonctionne si les paramètres de remplissage automatique dans le navigateur de l’utilisateur sont activés.
 
 * Spécifiez des valeurs pour les éléments Bouton radio et Case à cocher au format `{value}={text}` dans les propriétés du composant.
-* Le composant de pièce jointe, par défaut, permet à un utilisateur de joindre un seul fichier. Toutefois, vous pouvez configurer les propriétés du composant pour prendre en charge plusieurs pièces jointes. En outre, si un utilisateur joint plusieurs fichiers avec le même nom de fichier, les pièces jointes peuvent provoquer des problèmes. Par conséquent, il est recommandé d’associer un identificateur unique pour chaque pièce jointe envoyée à l’envoi du formulaire. Pour ce faire :
+* Par défaut, le composant Pièce jointe permet à un utilisateur de joindre un seul fichier. Cependant, vous pouvez configurer les propriétés du composant pour prendre en charge plusieurs pièces jointes. En outre, si un utilisateur joint plusieurs fichiers avec le même nom de fichier, les pièces jointes peuvent entraîner des problèmes. Par conséquent, il est recommandé d’associer un identifiant unique pour chaque pièce jointe envoyée lors de l’envoi du formulaire. Pour ce faire :
 
    1. Sur votre serveur AEM Forms, accédez à **[!UICONTROL Adobe Experience Manager > Outils > Opérations > Console Web]**.
    1. Recherchez **[!UICONTROL Service de configuration de formulaires adaptatifs]** et appuyez dessus.
    1. Dans la boîte de dialogue Service de configuration de formulaires adaptatifs, activez l’option **[!UICONTROL Rendre les noms de fichier uniques]**. Par défaut, elle est désactivée.
 
-* Pour permettre aux utilisateurs de joindre un fichier PDF à l’aide du navigateur Safari, veillez à ajouter **[!UICONTROL application/pdf]** à la propriété Types de fichiers pris en charge du composant Pièce jointe. Les formulaires adaptatifs créés avec la version précédente d’AEM Forms peuvent contenir **[!UICONTROL .pdf]** au lieu de **[!UICONTROL application/pdf]** dans la propriété Types de fichiers pris en charge.
+* Pour permettre aux utilisateurs de joindre un PDF à l’aide du navigateur Safari, assurez-vous que **[!UICONTROL application/pdf]** est ajouté à la propriété Types de fichiers pris en charge du composant Pièce jointe . Les formulaires adaptatifs créés avec la version précédente d’AEM Forms peuvent contenir **[!UICONTROL .pdf]** au lieu de **[!UICONTROL application/pdf]** dans la propriété Types de fichiers pris en charge.
 
 Pour connaître les bonnes pratiques concernant les formulaires adaptatifs, voir [Bonnes pratiques pour l’utilisation des formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md).
 
@@ -311,7 +315,7 @@ Pour connaître les bonnes pratiques concernant les formulaires adaptatifs, voir
 
 ### Barre d’outils Page {#page-toolbar}
 
-La barre d’outils de la page, située en haut de l’écran, propose des options permettant d’afficher un aperçu du formulaire, d’en modifier les propriétés, puis d’en modifier la disposition. Vous pouvez prévisualiser le formulaire lors de son écriture et apporter des modifications en conséquence. Dans la barre d’outils de la page, vous voyez :
+La barre d’outils de la page supérieure propose des options permettant de prévisualiser le formulaire, de modifier ses propriétés et de modifier sa mise en page. Vous pouvez prévisualiser le formulaire lors de sa création et apporter des modifications en conséquence. Dans la barre d’outils de la page, vous voyez :
 
 * **[!UICONTROL Activer/désactiver le panneau latéral]** ![toggle-side-panel](assets/toggle-side-panel.png) : affiche ou masque la barre latérale.
 
@@ -319,13 +323,13 @@ La barre d’outils de la page, située en haut de l’écran, propose des optio
 
 * **[!UICONTROL Émulateur]** ![ruler](assets/ruler.png) : simule l’aspect de votre formulaire pour différentes tailles d’affichage, selon les tablettes et les téléphones, par exemple.
 
-* **[!UICONTROL Modifier]** : Sélectionne d’autres modes comme **Modifier, Style, Développeur** et **Conception**.
+* **[!UICONTROL Modifier]**: Permet de sélectionner d’autres modes, tels que : **Modifier, Style, Développeur,** et **Conception**.
 
    * **[!UICONTROL Modifier]** : permet de modifier les propriétés du formulaire et de ses composants. Exemple : l’ajout d’un composant, le dépôt d’une image et l’indication des champs obligatoires.
    * **[!UICONTROL Style]** : définit l’aspect des composants de votre formulaire. Par exemple, en mode Style, vous pouvez sélectionner un panneau et définir sa couleur d’arrière-plan.
    * **[!UICONTROL Développeur]** : permet à un développeur de :
 
-      * Découvrir la composition des formulaires.
+      * Découvrez les formulaires composés.
       * Déboguer en temps réel afin de mieux résoudre les problèmes.
    * **[!UICONTROL Conception]**: Permet d’activer ou de désactiver des composants personnalisés ou des composants prêts à l’emploi qui ne sont pas répertoriés dans la barre latérale.
 
@@ -338,7 +342,7 @@ La barre d’outils de la page, située en haut de l’écran, propose des optio
 
 Lorsque vous sélectionnez un composant, une barre d’outils s’affiche, vous permettant de l’utiliser. Vous avez la possibilité de couper, coller, déplacer et spécifier les propriétés des composants. Vous avez le choix entre :
 
-A. **[!UICONTROL Configurer]** : lorsque vous appuyez sur **[!UICONTROL Configurer]**, les propriétés du composant sont visibles dans la barre latérale. La configuration de ces propriétés permet de personnaliser la saisie de données. Vous pouvez changer le nom de l’élément du composant et indiquer le texte d’étiquette du champ Titre du composant. Le nom d’élément permet de capturer des valeurs que les utilisateurs saisissent à l’aide du composant. Dans les propriétés du composant, vous indiquez le comportement du composant et gérez l’entrée de l’utilisateur. Configurez les propriétés de la barre latérale pour capturer les données utilisateur et les utiliser ultérieurement. Les propriétés du conteneur de formulaires adaptatifs permettent de spécifier des bibliothèques clients, des mises en page, des thèmes, des documents d’enregistrement, des paramètres d’enregistrement, des paramètres d’envoi et des paramètres de métadonnées.
+A. **[!UICONTROL Configurer]** : lorsque vous appuyez sur **[!UICONTROL Configurer]**, les propriétés du composant sont visibles dans la barre latérale. La configuration de ces propriétés vous permet de personnaliser l’expérience de capture de données. Vous pouvez modifier le nom de l’élément du composant, spécifier le texte du libellé dans le champ Titre du composant. Le nom de l’élément vous permet de capturer les valeurs saisies par les utilisateurs à l’aide du composant. Dans les propriétés du composant, vous spécifiez le comportement du composant et gérez les entrées utilisateur. Configurez les propriétés dans la barre latérale pour capturer les données utilisateur et les utiliser pour un traitement ultérieur. Les propriétés du conteneur de formulaires adaptatifs permettent de spécifier des bibliothèques clients, des mises en page, des thèmes, des documents d’enregistrement, des paramètres d’enregistrement, des paramètres d’envoi et des paramètres de métadonnées.
 
 B. **[!UICONTROL Copier]** : permet de copier un composant et le coller ailleurs dans le formulaire. Lorsque vous collez un composant, ce dernier obtient un nouveau nom d’élément mais conserve les propriétés du composant copié.
 
@@ -354,7 +358,7 @@ G. **[!UICONTROL Éditeur de règles]** : permet d’ouvrir l’éditeur de rè
 
 H. **Groupe** : permet de sélectionner plusieurs composants permettant de couper, copier ou coller plusieurs composants ensemble.
 
-I. **[!UICONTROL Parent]** : permet de sélectionner le parent d’un composant. Par exemple, un champ de texte se trouve dans une sous-section, qui réside elle-même dans une section. La section réside dans le panneau racine de guide et le conteneur du formulaire adaptatif est le parent d’un panneau racine de guide. Pour chaque composant s’affichent toutes les options avec la hiérarchie triée de bas en haut.
+I. **[!UICONTROL Parent]** : permet de sélectionner le parent d’un composant. Par exemple, un champ de texte se trouve dans une sous-section, qui réside dans une section. La section se trouve dans le panneau racine du guide et le conteneur du formulaire adaptatif est le parent d’un panneau racine de guide. Pour chaque composant s’affichent toutes les options avec la hiérarchie triée de bas en haut.
 
 Par exemple, si vous tapez **[!UICONTROL Parent]** pour une zone de texte, vous pouvez voir les éléments suivants :
 
@@ -363,17 +367,17 @@ Par exemple, si vous tapez **[!UICONTROL Parent]** pour une zone de texte, vous
 * guideRootPanel
 * Conteneur de formulaires adaptatifs
 
-J.**Autres** : Fournit des options permettant d’utiliser le composant sélectionné.
+J. **Autres**: Fournit d’autres options pour utiliser le composant sélectionné.
 
 * Afficher l’expression SOM
-* Enregistrer un panneau en tant que fragment (pour les panneaux uniquement)
+* Enregistrement d’un panneau en tant que fragment (pour les panneaux uniquement)
 * Ajouter un panneau enfant (pour les panneaux uniquement)
-* Ajouter une barre d’outils de panneau (pour les panneaux uniquement)
+* Barre d’outils Ajouter un panneau (pour les panneaux uniquement)
 * Remplacer (pas pour les panneaux)
 
 ### Page de formulaires adaptatifs {#af-page}
 
-La page de formulaires adaptatifs est le formulaire proprement dit. Elle est identique à toute autre page de gestion de contenu Web modélisée en tant que composant de gestion de contenu Web `cq:Page`. L’illustration suivante présente la structure de contenu d’un formulaire adaptatif standard.
+La page de formulaire adaptatif est le formulaire réel. Elle est identique à toute autre page de gestion de contenu Web modélisée en tant que composant de gestion de contenu Web `cq:Page`. L’illustration suivante présente la structure de contenu d’un formulaire adaptatif standard.
 
 ![Structure de contenu d’une page de gestion de contenu Web de formulaires adaptatifs](assets/afstructure.png)
 
@@ -381,12 +385,12 @@ La structure de contenu contient généralement les composants principaux ci-des
 
 * **[!UICONTROL guideContainer]** : racine d’un formulaire adaptatif, indiquée sous la forme **Début du formulaire adaptatif** dans l’interface utilisateur du formulaire. Dans ce composant, vous pouvez spécifier les éléments suivants :
 
-   * *Mise en page du formulaire adaptatif pour mobiles* : définit l’apparence du formulaire sur les appareils mobiles.
-   * *Page de remerciement* : définit la page vers laquelle l’utilisateur est redirigé après l’envoi du formulaire.
-   * *Action d’envoi* : définit la manière dont le formulaire est traité sur le serveur lorsque l’utilisateur l’envoie.
-   * *Style* : indique le chemin d’accès au fichier CSS utilisé pour personnaliser l’apparence du formulaire.
+   * *Disposition mobile du formulaire adaptatif*: Définit l’aspect du formulaire sur les périphériques mobiles.
+   * *Page de remerciement*: Définit la page vers laquelle l’utilisateur est redirigé après l’envoi du formulaire.
+   * *Action Envoyer*: Définit le mode de traitement du formulaire sur le serveur une fois que l’utilisateur l’a envoyé.
+   * *Style*: Spécifie le chemin d’accès au fichier CSS utilisé pour personnaliser l’aspect du formulaire.
 
-* **[!UICONTROL rootPanel]**: Panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le nœud d’éléments. Une mise en page peut être associée à chaque panneau qui comprend le panneau racine. La mise en page du panneau détermine la disposition du formulaire. Par exemple, dans la disposition Accordéon*, *ses éléments sont disposés sous la forme d’étapes Accordéon .
+* **[!UICONTROL rootPanel]**: Panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le noeud éléments . Une disposition peut être associée à chaque panneau, y compris le panneau racine. La disposition du panneau détermine la disposition du formulaire. Par exemple, dans la disposition Accordéon*, *ses éléments sont disposés sous la forme d’étapes Accordéon .
 
 * **[!UICONTROL barre d’outils]**: Un conteneur de formulaires adaptatifs est associé à une barre d’outils globale, qui est globale dans le formulaire. Cette barre d’outils peut être ajoutée à l’aide de l’action **Ajouter une barre d’outils** de la barre d’édition, ce qui permet aux auteurs d’ajouter des actions telles que Envoyer, Enregistrer, réinitialiser, etc.
 

@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 exl-id: f3926a15-4378-464f-968f-661745af117c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 100%
+source-wordcount: '1299'
+ht-degree: 68%
 
 ---
 
 # Ajout d’un suivi Adobe Analytics aux composants{#adding-adobe-analytics-tracking-to-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Inclusion du module Adobe Analytics dans un composant de page {#including-the-adobe-analytics-module-in-a-page-component}
 
@@ -110,9 +114,9 @@ $CQ(function(){
 </div>
 ```
 
-Tous les exemples de sites, tels qu’AEM Geometrixx Outdoors, incluent ce code.
+Ce code est inclus pour tous les exemples AEM sites tels que les Geometrixx Outdoors.
 
-### L’événement sitecatalystAfterCollect {#the-sitecatalystaftercollect-event}
+### Événement sitecatalystAfterCollect {#the-sitecatalystaftercollect-event}
 
 Le script `cloudservices` déclenche l’événement `sitecatalystAfterCollect` :
 
@@ -120,7 +124,7 @@ Le script `cloudservices` déclenche l’événement `sitecatalystAfterCollect`�
 $CQ(document).trigger("sitecatalystAfterCollect");
 ```
 
-Cet événement est déclenché pour indiquer que le suivi de page est terminé. Si vous effectuez des opérations de suivi supplémentaires sur cette page, vous devez écouter cet événement au lieu de l’événement de chargement de document ou de document prêt. L’utilisation de l’événement `sitecatalystAfterCollect` permet d’éviter les collisions ou tout autre comportement imprévisible.
+Cet événement est déclenché pour indiquer que le suivi des pages a été terminé. Si vous effectuez d’autres opérations de suivi sur cette page, vous devez écouter cet événement au lieu de l’événement de chargement de document ou de document prêt. L’utilisation de l’événement `sitecatalystAfterCollect` permet d’éviter les collisions ou tout autre comportement imprévisible.
 
 >[!NOTE]
 >
@@ -141,8 +145,8 @@ Les composants peuvent interagir avec le framework Adobe Analytics lorsqu’ils
 
 Le code dans le composant JSP ajoute le code JavaScript à la page pour déclencher le suivi et définir les données qui font l’objet d’un suivi. Le nom de l’événement et les noms des données utilisés dans le code JavaScript doivent être identiques aux valeurs correspondantes des propriétés de nœud `analytics`.
 
-* Utilisez l’attribut data-tracking pour suivre les données d’événement lors du chargement d’une page. (Voir [Suivi d’événements personnalisés lors du chargement d’une page](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
-* Utilisez la fonction CQ_Analytics.record pour suivre les données d’événement lorsque les utilisateurs interagissent avec les fonctions de page. (Voir [Suivi d’événements personnalisés après le chargement d’une page](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
+* Utilisez l’attribut data-tracking pour suivre les données d’événement lors du chargement d’une page. (Voir [Suivi des événements personnalisés au chargement de la page](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
+* Utilisez la fonction CQ_Analytics.record pour suivre les données d’événement lorsque les utilisateurs interagissent avec les fonctions de page. (Voir [Suivi des événements personnalisés après le chargement de la page](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
 
 Lorsque vous utilisez ces méthodes de suivi des données, le module d’intégration de Adobe Analytics effectue automatiquement les appels auprès de Adobe Analytics pour enregistrer les événements et les données.
 
@@ -150,61 +154,61 @@ Lorsque vous utilisez ces méthodes de suivi des données, le module d’intégr
 
 Étendez le composant topnav de base afin que Adobe Analytics suive les clics sur les liens de navigation en haut de la page. Lorsqu’un lien de navigation fait l’objet d’un clic, Adobe Analytics enregistre le lien sur lequel l’utilisateur a cliqué, ainsi que la page sur laquelle il a cliqué.
 
-Les procédures suivantes nécessitent que vous ayez déjà effectué les tâches suivantes :
+Les procédures suivantes nécessitent que vous ayez déjà effectué les tâches suivantes :
 
-* Création d’une application CQ
+* Création d’une application CQ.
 * Création d’une configuration Adobe Analytics et d’un framework Adobe Analytics
 
 #### Copie du composant topnav {#copy-the-topnav-component}
 
-Copiez le composant topnav sur votre application CQ. La procédure requiert que votre application soit installée dans CRXDE Lite.
+Copiez le composant topnav dans votre application CQ. La procédure nécessite que votre application soit configurée en CRXDE Lite.
 
 1. Cliquez avec le bouton droit sur le nœud `/libs/foundation/components/topnav` et cliquez sur Copier.
-1. Cliquez avec le bouton droit sur le dossier Components sous votre dossier d’application et cliquez sur Coller.
+1. Cliquez avec le bouton droit sur le dossier Components sous votre dossier d’application, puis cliquez sur Paste.
 1. Cliquez sur Enregistrer tout.
 
 #### Intégration de topnav au framework Adobe Analytics {#integrating-topnav-with-the-adobe-analytics-framework}
 
 Configurez le composant topnav et modifiez le fichier JSP pour définir les événements et les données de suivi.
 
-1. Cliquez avec le bouton droit sur le nœud topnav et cliquez sur Créer > Créer un nœud. Spécifiez les valeurs suivantes pour les propriétés, puis cliquez sur OK :
+1. Cliquez avec le bouton droit sur le noeud topnav et cliquez sur Créer > Créer un noeud. Spécifiez les valeurs de propriété suivantes, puis cliquez sur OK :
 
    * Nom : `analytics`
    * Type : `nt:unstructured`
 
-1. Ajoutez la propriété suivante au nœud analytics pour nommer l’événement de suivi :
+1. Ajoutez la propriété suivante au noeud analytics pour nommer l’événement de suivi :
 
-   * Nom : cq:trackevents
+   * Nom : cq:trackevents
    * Type : chaîne
-   * Valeur : topnavClick
+   * Valeur : topnavClick
 
-1. Ajoutez la propriété suivante au nœud analytics pour nommer les variables de données :
+1. Ajoutez la propriété suivante au noeud analytics pour nommer les variables de données :
 
-   * Nom : cq:trackvars
+   * Nom : cq:trackvars
    * Type : chaîne
-   * Valeur : topnavTarget,topnavLocation
+   * Valeur : topnavTarget,topnavLocation
 
-1. Ajoutez la propriété suivante au nœud analytics pour nommer le composant pour le sidekick :
+1. Ajoutez la propriété suivante au noeud analytics pour nommer le composant pour le sidekick :
 
-   * Nom : cq:componentName
+   * Nom : cq:componentName
    * Type : chaîne
-   * Valeur : topnav (suivi)
+   * Valeur : topnav (suivi)
 
-1. Ajoutez la propriété suivante au nœud analytics pour nommer le groupe de composants pour le sidekick :
+1. Ajoutez la propriété suivante au noeud analytics pour nommer le groupe de composants pour le sidekick :
 
-   * Nom : cq:componentGroup
+   * Nom : cq:componentGroup
    * Type : chaîne
-   * Valeur : General
+   * Valeur : Général
 
 1. Cliquez sur Enregistrer tout.
-1. Ouvrez le fichier topnav.jsp.
-1. Dans l’élément a, ajoutez l’attribut suivant :
+1. Ouvrez le fichier topnav.jsp .
+1. Dans l’élément a, ajoutez l’attribut suivant :
 
    ```xml
    onclick = "tracknav('<%= child.getPath() %>.html')" 
    ```
 
-1. Au bas de la page, ajoutez le code JavaScript suivant :
+1. Au bas de la page, ajoutez le code JavaScript suivant :
 
    ```xml
    <script type="text/javascript">
@@ -225,7 +229,7 @@ Configurez le composant topnav et modifiez le fichier JSP pour définir les év�
 
 1. Cliquez sur Enregistrer tout.
 
-Le contenu du fichier topnav.jsp devrait se présenter comme suit :
+Le contenu du fichier topnav.jsp doit se présenter comme suit :
 
 ```xml
 <%@page session="false"%><%--
@@ -296,16 +300,16 @@ Le contenu du fichier topnav.jsp devrait se présenter comme suit :
 Ajoutez au sidekick des composants permettant le suivi en utilisant Adobe Analytics afin de pouvoir les inclure dans votre framework.
 
 1. Ouvrez votre framework Adobe Analytics à partir de votre configuration Adobe Analytics. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
-1. Dans le sidekick, cliquez sur le bouton Créer.
+1. Dans le sidekick, cliquez sur le bouton Conception .
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Dans la zone Configuration du suivi des liens, cliquez sur Configurer l’héritage.
+1. Dans la zone Configuration du suivi des liens , cliquez sur Configurer l’héritage.
 
    ![chlimage_1](assets/chlimage_1.png)
 
-1. Dans la liste Composants autorisés, sélectionnez topnav (suivi) dans la section Général, puis cliquez sur OK.
-1. Développez le sidekick pour passer en mode d’édition. Le composant est désormais disponible dans le groupe Général.
+1. Dans la liste Composants autorisés , sélectionnez topnav (suivi) dans la section Général , puis cliquez sur OK.
+1. Développez le sidekick pour passer en mode d’édition. Le composant est désormais disponible dans le groupe Général .
 
 #### Ajout du composant topnav à votre structure {#adding-the-topnav-component-to-your-framework}
 
@@ -364,7 +368,7 @@ Le nœud `analytics` du composant doit exposer les noms des variables à l’aid
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-Le module eCommerce fournit plusieurs composants qui génèrent des données de variable s.products. Par exemple, le composant submitorder ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) génère un code JavaScript qui est similaire à l’exemple suivant :
+Le module eCommerce fournit plusieurs composants qui génèrent des données de variable s.products. Par exemple, le composant submitorder ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) génère un code JavaScript similaire à l’exemple suivant :
 
 ```
 <script type="text/javascript">
@@ -440,6 +444,6 @@ Le module eCommerce fournit plusieurs composants qui génèrent des données de 
 
 #### Limitation de la taille des appels de suivi {#limiting-the-size-of-tracking-calls}
 
-En règle générale, les navigateurs web limitent la taille des requêtes GET. Le produit CQ et les valeurs de SKU étant des chemins de référentiel, les tableaux de produits comportant plusieurs valeurs peuvent dépasser la taille maximale de requête. Par conséquent, vos composants doivent limiter le nombre d’éléments dans le tableau `product` de chaque `CQ_Analytics.record function`. Créez plusieurs fonctions si le nombre d’éléments que vous devez suivre peut dépasser cette limite.
+En règle générale, les navigateurs Web limitent la taille des demandes de GET. Étant donné que les valeurs de produit et de SKU CQ sont des chemins de référentiel, les tableaux de produits qui incluent plusieurs valeurs peuvent dépasser la limite de taille de requête. Par conséquent, vos composants doivent limiter le nombre d’éléments dans le tableau `product` de chaque `CQ_Analytics.record function`. Créez plusieurs fonctions si le nombre d’éléments que vous devez suivre peut dépasser cette limite.
 
 Par exemple, le composant submitorder d’eCommerce limite à quatre le nombre d’éléments `product` dans un appel. Lorsque le panier contient plus de quatre produits, il génère plusieurs fonctions `CQ_Analytics.record`.

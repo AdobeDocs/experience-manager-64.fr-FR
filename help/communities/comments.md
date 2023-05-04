@@ -10,27 +10,31 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 exl-id: 8ad5ce3e-c5dd-48d7-8812-43172eda36cc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 39%
+source-wordcount: '1030'
+ht-degree: 7%
 
 ---
 
 # Utilisation des commentaires {#using-comments}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Présentation {#introduction}
 
-La fonction Commentaires permet aux visiteurs connectés (membres) d’échanger leurs opinions et leurs connaissances concernant le contenu du site. Cette fonction est souvent déjà présente dans d’autres fonctions, mais peut être ajoutée à n’importe quel site web.
+La fonction de commentaires permet aux visiteurs (membres) connectés de partager leurs opinions et leurs connaissances sur le contenu du site. Cette fonctionnalité est souvent déjà présente dans d’autres fonctionnalités, mais peut être ajoutée à n’importe quel site web.
 
-Cette section de la documentation décrit :
+Cette section de la documentation décrit
 
 * Ajouter `Comments`vers une page
 * Paramètres de configuration de la variable `Comments`component
 
 >[!NOTE]
 >
->La publication anonyme d’un commentaire n’est pas possible. Les visiteurs du site doivent s’inscrire (devenir membres) et se connecter pour participer.
+>La publication anonyme d’un commentaire n’est pas prise en charge. Les visiteurs du site doivent s’inscrire (devenir membres) et se connecter pour participer.
 
 ## Ajout de commentaires à une page {#adding-comments-to-a-page}
 
@@ -38,7 +42,7 @@ Pour ajouter une `Comments`sur une page en mode création, utilisez l’explorat
 
 * `Communities / Comments`
 
-et faites glisser le composant sur une page, par exemple à un endroit relatif à la fonction pour que les utilisateurs puissent commenter, ou simplement au bas de la page.
+et faites-le glisser sur la page, par exemple à une position relative à la fonction pour que les utilisateurs puissent commenter, ou simplement au bas de la page.
 
 Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
 
@@ -48,7 +52,7 @@ Lorsque la variable [bibliothèques côté client requises](essentials-comments.
 
 >[!NOTE]
 >
->Un seul `Comments`peut exister sur une page. Sachez que de nombreuses fonctions d’AEM Communities incluent déjà des commentaires. C’est le cas des blogs, des calendriers, des forums, des Q&amp;R et des révisions.
+>Un seul `Comments`peut exister sur une page. Notez que plusieurs fonctionnalités de Communities incluent déjà des commentaires, tels qu’un blog, un calendrier, un forum, une note de service et des commentaires.
 
 ## Configuration des commentaires {#configuring-comments}
 
@@ -58,11 +62,11 @@ Sélectionnez le `Comments` pour accéder au composant et le sélectionner. `Con
 
 ### Onglet Commentaires {#comments-tab}
 
-Sous l’onglet **[!UICONTROL Commentaires]**, indiquez la façon dont les commentaires seront entrés par les visiteurs.
+Sous , **[!UICONTROL Commentaires]** , indiquez la manière dont les commentaires sont saisis par les visiteurs.
 
 * **[!UICONTROL Autoriser les réponses]**
 
-   Si cette case est cochée, les membres ont la possibilité de répondre aux commentaires existants. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres ont la possibilité de répondre aux commentaires existants. La case par défaut est décochée.
 
 * **[!UICONTROL Commentaires par page]**
 
@@ -70,15 +74,15 @@ Sous l’onglet **[!UICONTROL Commentaires]**, indiquez la façon dont les comme
 
 * **[!UICONTROL Autoriser les transferts de fichiers]**
 
-   Si cette case est cochée, l’option permettant de télécharger un fichier s’affiche avec la zone de saisie de texte. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, l’option permettant de télécharger un fichier s’affiche avec la zone de saisie de texte. La case par défaut est décochée.
 
 * **[!UICONTROL Taille maximale du fichier]**
 
-   À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Cette valeur limite la taille du fichier chargé. La limite par défaut est de 10 Mo.
+   À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Cette valeur limite la taille du fichier téléchargé. La limite par défaut est de 10 Mo.
 
 * **[!UICONTROL Longueur de message max.]**
 
-   Nombre maximal de caractères pouvant être saisis dans la zone de texte. La valeur par défaut est de 4 096 caractères.
+   Nombre maximal de caractères pouvant être saisis dans la zone de texte. La valeur par défaut est de 4 096 caractères.
 
 * **[!UICONTROL Types de fichier autorisés]**
 
@@ -86,51 +90,51 @@ Sous l’onglet **[!UICONTROL Commentaires]**, indiquez la façon dont les comme
 
 * **[!UICONTROL Éditeur de texte enrichi]**
 
-   Si cette case est cochée, les commentaires peuvent être saisis avec une annotation. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les commentaires peuvent être saisis avec une annotation. La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser le vote]**
 
-   Si cette case est cochée, l’option permettant de voter vers le haut ou vers le bas s’affiche avec la zone de saisie de texte. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, l’option permettant de voter vers le haut ou vers le bas s’affiche avec la zone de saisie de texte. La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser abonnement]**
 
-   Si cette option est cochée, les membres ont le droit de suivre les commentaires. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les membres ont le droit de suivre les commentaires. La case par défaut est décochée.
 
 * **[!UICONTROL Afficher les badges]**
 
-   Si cette case est cochée, les badges mérités et attribués doivent s’afficher. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les badges mérités et attribués doivent s’afficher. La case par défaut est décochée.
 
 ### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-Sous , **[!UICONTROL Modération d’utilisateur]** , indiquez comment les commentaires publiés sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
+Sous , **[!UICONTROL Modération d’utilisateur]** , indiquez comment les commentaires publiés sont gérés. Pour plus d’informations, voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
 * **[!UICONTROL Prémodération]**
 
-   Si cette case est cochée, les commentaires doivent être approuvés avant d’apparaître sur un site de publication. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les commentaires doivent être approuvés avant d’apparaître sur un site de publication. La case par défaut est décochée.
 
 * **[!UICONTROL Supprimer les commentaires]**
 
-   Si cette case est cochée, le membre qui a publié le commentaire peut le supprimer. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, le membre qui a publié le commentaire peut le supprimer. La case par défaut est décochée.
 
 * **[!UICONTROL Refuser les commentaires]**
 
-   Si cette case est cochée, autorisez les modérateurs à refuser les commentaires. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les modérateurs à refuser les commentaires. La case par défaut est décochée.
 
 * **[!UICONTROL Fermer/rouvrir les commentaires]**
 
-   Si cette case est cochée, les modérateurs peuvent fermer et rouvrir les commentaires. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les modérateurs peuvent fermer et rouvrir les commentaires. La case par défaut est décochée.
 
 * **[!UICONTROL Marquer les commentaires]**
 
-   Si cette case est cochée, les membres ont le droit de signaler les commentaires comme inappropriés. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres ont le droit de signaler les commentaires comme inappropriés. La case par défaut est décochée.
 
 * **[!UICONTROL Marquer la liste de motifs]**
 
-   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué un commentaire comme étant inapproprié. La case par défaut est décochée.
 
 * **[!UICONTROL Motif de la marque personnalisée]**
 
-   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler un commentaire comme inapproprié. La case par défaut est décochée.
 
 * **[!UICONTROL Seuil de modération]**
 
@@ -138,7 +142,7 @@ Sous , **[!UICONTROL Modération d’utilisateur]** , indiquez comment les comme
 
 * **[!UICONTROL Limite de marquage]**
 
-   Saisissez le nombre de fois qu’un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au **[!UICONTROL seuil de modération]**. La valeur par défaut est 5.
+   Saisissez le nombre de fois qu’un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Ce nombre doit être supérieur ou égal à **[!UICONTROL Seuil de modération]**. La valeur par défaut est 5.
 
 ### Onglet Paramètres de tri {#sort-settings-tab}
 
@@ -154,7 +158,7 @@ Sous , **[!UICONTROL Paramètres de tri]** , indiquez comment les commentaires p
 
 ### Modification d’un type de commentaire personnalisé {#changing-to-a-custom-comment-type}
 
-En modifiant le type de ressource de commentaire, le système de commentaires ne génère plus une instance d’un commentaire avec les paramètres par défaut, mais plutôt un commentaire personnalisé (étendu) par les développeurs.
+En modifiant le type de ressource de commentaire, le système de commentaires ne génère plus une instance d’un commentaire à l’aide de la valeur par défaut, mais une instance qui a été personnalisée (étendue) par les développeurs.
 
 Une fois les types de ressources personnalisés connus, saisissez [Mode de conception](../../help/sites-authoring/default-components-designmode.md) et double-cliquez sur le `Comments` pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
 
@@ -178,15 +182,15 @@ Sous , **[!UICONTROL Types de ressources]** , spécifiez le type de ressource pe
 
    Accédez au resourceType d’une extension `comments`(système de commentaires) dans /apps. Laissez vide, sauf si le modèle de page [inclut dynamiquement](scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). En savoir plus en lisant les [{{include}} assistance](handlebars-helpers.md#include).
 
-## Expérience des visiteurs {#site-visitor-experience}
+## Expérience du visiteur du site {#site-visitor-experience}
 
 ### Modérateurs et administrateurs {#moderators-and-administrators}
 
-Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut se charger d’activités de modération autorisées par la configuration du composant, peu importe qui a créé le commentaire.
+Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut exécuter les tâches de modération autorisées par la configuration du composant, indépendamment de la personne ayant créé le commentaire.
 
 ### Membres {#members}
 
-Lorsque le visiteur est connecté, selon la configuration, il peut :
+Lorsque le visiteur du site est connecté, selon la configuration, il peut :
 
 * Publier un nouveau commentaire
 * Modifier son propre commentaire
@@ -195,7 +199,7 @@ Lorsque le visiteur est connecté, selon la configuration, il peut :
 
 ### Anonyme {#anonymous}
 
-Les visiteurs non connectés peuvent lire les commentaires et les traduire lorsque cela est possible. Toutefois, ils ne sont pas autorisés à ajouter un commentaire, ni à marquer les commentaires d’autres membres.
+Les visiteurs qui ne sont pas connectés ne peuvent lire que les commentaires publiés, les traduire s’ils sont pris en charge, mais ne peuvent pas ajouter de commentaire ni marquer les commentaires d’autres personnes.
 
 ## Informations supplémentaires {#additional-information}
 
@@ -203,4 +207,4 @@ Vous trouverez plus d’informations sur la [Notions fondamentales sur les comme
 
 Pour la modération des commentaires publiés, voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-Pour des informations sur la traduction des commentaires publiés, voir [Traduction de contenu généré par les utilisateurs](translate-ugc.md).
+Pour la traduction des commentaires publiés, voir [Traduction de contenu généré par l’utilisateur](translate-ugc.md).

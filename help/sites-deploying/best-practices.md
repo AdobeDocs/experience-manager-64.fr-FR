@@ -1,7 +1,7 @@
 ---
-title: Bonnes pratiques de déploiement
+title: Meilleures pratiques de déploiement
 seo-title: Deploying Best Practices
-description: Meilleures pratiques de déploiement et de maintenance.
+description: Bonnes pratiques en matière de déploiement et de maintenance.
 seo-description: Deploying and maintaining best practices.
 uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
@@ -10,16 +10,20 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 0c8fefb5-6fa0-4fab-a890-9f5ae7508459
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 100%
+source-wordcount: '466'
+ht-degree: 86%
 
 ---
 
-# Bonnes pratiques de déploiement{#deploying-best-practices}
+# Meilleures pratiques de déploiement{#deploying-best-practices}
 
-Les meilleures pratiques de déploiement expliquent comment déployer ou maintenir AEM de la façon la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Les meilleures pratiques de déploiement expliquent comment déployer ou maintenir AEM de la façon la plus efficace possible. Cette liste croissante de sujets englobe un large éventail de domaines dans AEM.
 
 Les recommandations et meilleures pratiques de déploiement et de maintenance sont documentées pour les aspects suivants :
 
@@ -34,7 +38,7 @@ Pour les bonnes pratiques d’administration, de développement ou de création,
 * [Bonnes pratiques de développement](/help/sites-developing/best-practices.md)
 * [Bonnes pratiques de création](/help/sites-authoring/best-practices.md)
 
-Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
+Les documents spécifiques sont décrits et associés dans les tables qui suivent.
 
 ## OAK {#oak}
 
@@ -70,7 +74,7 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
  </tbody>
 </table>
 
-## Communautés {#communities}
+## Communities {#communities}
 
 AEM Communities simplifie la création et la gestion des communautés sur site. Les bonnes pratiques pour AEM Communities sont présentées ici :
 
@@ -88,14 +92,14 @@ AEM dispose actuellement de deux interfaces utilisateur : l’IU classique et l
 
 ## Performances {#performance}
 
-Les meilleures pratiques relatives à la performance sont répertoriées ici :
+Les bonnes pratiques relatives aux performances sont répertoriées ici :
 
 <table> 
  <tbody>
   <tr>
    <td>Bonnes pratiques pour l’assurance qualité</td> 
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Bonnes pratiques pour l’assurance qualité</a></td> 
-   <td>Un aperçu normalisé des problèmes liés à la définition d’un concept de test, en particulier pour les tests de performance sur votre environnement de <em>publication</em>. Elle s’adresse principalement aux ingénieurs en assurance qualité, aux chefs de projet et aux administrateurs système.</td> 
+   <td>Un aperçu normalisé des problèmes liés à la définition d’un concept de test, en particulier pour les tests de performance sur votre environnement de <em>publication</em>. Cela s’adresse principalement aux ingénieur(e)s en assurance qualité, aux chefs de projet et aux administrateurs et administratrices système.</td> 
   </tr>
   <tr>
    <td>Utilisation de Dispatcher avec un CDN</td> 
@@ -105,7 +109,7 @@ Les meilleures pratiques relatives à la performance sont répertoriées ici :
   <tr>
    <td>Optimisation des performances</td> 
    <td><a href="/help/sites-deploying/configuring-performance.md">Optimisation des performances</a></td> 
-   <td>L’un des problèmes majeurs est le temps que met votre site web pour répondre aux requêtes des visiteurs.</td> 
+   <td>L’un des problèmes majeurs est le temps que met votre site web pour répondre aux requêtes des visiteurs et visiteuses.</td> 
   </tr>
   <tr>
    <td>Test de performance</td> 

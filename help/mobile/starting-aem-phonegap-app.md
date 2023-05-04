@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 2ecf05ed-4e56-4e0b-89cf-5161741f9001
 exl-id: 8e9a8739-76cd-4507-9c6c-86a5ad486618
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 14%
+source-wordcount: '443'
+ht-degree: 7%
 
 ---
 
 # Démarrage AEM PhoneGap {#starting-aem-phonegap}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -55,9 +59,9 @@ Une fois que vous avez une bonne compréhension des deux étapes ci-dessus, acc�
 
 ## Les étapes suivantes {#the-next-steps}
 
-1. [Expérimenter le développement d’une application AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
-1. [Gérer le contenu d’une application mobile](/help/mobile/phonegap-manage-app-content.md)
-1. [Développer une application mobile](/help/mobile/building-app-mobile-phonegap.md)
-1. [Suivre les performances d’une application avec Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
-1. [Offrir une expérience personnalisée dans une application mobile grâce à Adobe Target](/help/mobile/phonegap-aem-mobile-content-personalization.md)
-1. [Diffuser des messages importants à l’intention des utilisateurs](/help/mobile/phonegap-push-notifications.md)
+1. [Démarrer l’expérience de l’application AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
+1. [Gérer le contenu de mon application](/help/mobile/phonegap-manage-app-content.md)
+1. [Créer mon application](/help/mobile/building-app-mobile-phonegap.md)
+1. [Suivi des performances de mon application avec Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
+1. [Proposer une expérience d’application personnalisée avec Adobe Target](/help/mobile/phonegap-aem-mobile-content-personalization.md)
+1. [Envoyer des messages importants à mes utilisateurs](/help/mobile/phonegap-push-notifications.md)

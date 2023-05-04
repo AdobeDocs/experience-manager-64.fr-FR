@@ -1,7 +1,7 @@
 ---
 title: Création de fenêtres contextuelles personnalisées à l’aide d’aperçus rapides
 seo-title: Using Quickviews to create custom pop-ups
-description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé pour l’afficher dans les fenêtres contextuelles.
+description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher le contenu personnalisé pour l’afficher dans les fenêtres contextuelles.
 seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
@@ -12,18 +12,22 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
 feature: Configuration
 role: Admin,User,Developer
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 97%
+source-wordcount: '1046'
+ht-degree: 64%
 
 ---
 
 # Création de fenêtres contextuelles personnalisées à l’aide d’aperçus rapides {#using-quickviews-to-create-custom-pop-ups}
 
-L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. Selon la visionneuse que vous utilisez, cette fonctionnalité permet aux utilisateurs de cliquer sur une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Les aperçus rapides sont pris en charge par les visionneuses suivantes dans Dynamic Media :
+L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. Selon la visionneuse que vous utilisez, cette fonctionnalité permet aux utilisateurs de cliquer sur une zone réactive, une miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
+
+Les aperçus rapides sont pris en charge par les visionneuses suivantes dans Dynamic Media :
 
 * Images interactives (zones réactives cliquables)
 * Vidéo interactive (miniatures cliquables pendant la lecture vidéo)
@@ -35,7 +39,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
 1. Créez un aperçu rapide pour une ressource téléchargée.
 
-   En général, vous créez un aperçu rapide durant l’édition d’une ressource exploitable avec la visionneuse en cours.
+   En règle générale, vous créez un aperçu rapide au moment où vous modifiez une ressource pour l’utiliser avec la visionneuse que vous utilisez.
 
    <table> 
     <tbody> 
@@ -53,12 +57,12 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
     </tr> 
     <tr> 
     <td>Bannières de carrousel</td> 
-    <td><a href="/help/assets/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Ajout de zones réactives ou de zones cliquables à une bannière</a>.<br /> </td> 
+    <td><a href="/help/assets/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Ajout de zones réactives ou cliquables à une bannière</a>.<br /> </td> 
     </tr> 
     </tbody> 
    </table>
 
-1. Obtenez le code d’intégration de visionneuse afin d’intégrer la visionneuse à votre site web.
+1. Procurez-vous le code intégré de la visionneuse pour intégrer la visionneuse à votre site web.
 
    <table> 
     <tbody> 
@@ -113,7 +117,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
 1. Vous devez maintenant configurer le gestionnaire `quickViewActivate`.
 
-   Le gestionnaire quickViewActivate contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code d’intégration fournit une correspondance pour la variable SKU définie dans l’aperçu rapide, ainsi qu’un exemple d’appel de fonction loadQuickView.
+   Le gestionnaire quickViewActivate contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code incorporé fournit un mappage pour la variable SKU définie dans l’aperçu rapide, ainsi qu’un exemple d’appel de fonction loadQuickView .
 
    **Correspondance de variables** Mappez les variables utilisables dans votre page web avec la valeur de SKU et les variables génériques dans l’aperçu rapide :
 
@@ -130,13 +134,13 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Appel de fonction** Le gestionnaire nécessite également un appel de fonction pour que l’aperçu rapide fonctionne. La fonction est supposée être accessible par votre page hôte. Le code d’intégration fournit un exemple d’appel de fonction :
+   **Appel de fonction** Le gestionnaire nécessite également un appel de fonction pour que l’aperçu rapide fonctionne. La fonction est supposée être accessible par la page hôte. Le code incorporé fournit un exemple d’appel de fonction :
 
    `loadQuickView(sku)`
 
    L’exemple d’appel de fonction suppose que la fonction `loadQuickView()` existe et qu’elle est accessible.
 
-   Pour en savoir plus sur la méthode quickViewActivate, consultez les ressources suivantes :
+   Pour en savoir plus sur la méthode quickViewActivate, voir :
 
    * Visionneuse d’images interactive – [Rappels d’événement](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html?lang=fr)
    * Visionneuse de vidéos interactive – [Rappels d’événement](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html?lang=fr)
@@ -144,11 +148,11 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
 1. Procédez comme suit :
 
-   * Décommentez la section setHandlers du code d’intégration.
+   * Supprimez les commentaires de la section setHandlers du code incorporé.
    * Mappez toutes les variables supplémentaires contenues dans l’aperçu rapide.
 
       * Mettez à jour l’appel `loadQuickView(sku,*var1*,*var2*)` si vous ajoutez des variables supplémentaires.
-   * Créez une fonction loadQuickView() simple sur la page, à l’extérieur de la visionneuse.
+   * Créez une fonction loadQuickView () simple sur la page, en dehors de la visionneuse.
 
       Par exemple, le code suivant écrit la valeur de SKU dans la console du navigateur :
 
@@ -179,7 +183,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
 1. Placez la balise `DIV` de la fenêtre contextuelle dans le corps de la page HTML.
 
-   L’un des éléments est défini avec un ID qui est mis à jour avec la valeur de SKU lorsque l’utilisateur appelle un aperçu rapide. L’exemple comprend également un bouton unique pour masquer à nouveau la fenêtre contextuelle une fois qu’elle devient visible.
+   L’un des éléments est défini avec un ID qui est mis à jour avec la valeur sku lorsque l’utilisateur appelle un aperçu rapide. L’exemple comprend également un bouton unique pour masquer à nouveau la fenêtre contextuelle une fois qu’elle devient visible.
 
    ```xml
    <div id="quickview_div" >
@@ -190,7 +194,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
    </div>
    ```
 
-1. Ajoutez une fonction pour mettre à jour la valeur SKU dans la fenêtre contextuelle ; activez la visibilité de cette dernière en remplaçant la fonction simple créée à l’étape 5 par ce qui suit :
+1. Ajoutez une fonction pour mettre à jour la valeur de SKU dans la fenêtre contextuelle ; rendez la fenêtre contextuelle visible en remplaçant la fonction simple créée à l’étape 5. avec ce qui suit :
 
    ```xml
    <script type="text/javascript">
@@ -206,7 +210,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    Certaines visionneuses, comme la visionneuse de vidéos interactives, prennent en charge l’affichage en mode plein écran. Toutefois, l’utilisation de la fenêtre contextuelle comme décrit dans les étapes précédentes provoque l’affichage de celle-ci derrière la visionneuse en mode plein écran.
 
-   Pour que la fenêtre contextuelle puisse s’afficher dans les modes standard et plein écran, vous devez la joindre au conteneur de la visionneuse. Pour ce faire, vous pouvez utiliser une deuxième méthode de gestionnaire, `initComplete`.
+   Pour afficher la fenêtre contextuelle en mode standard et plein écran, vous joignez la fenêtre contextuelle au conteneur de la visionneuse. Pour ce faire, vous pouvez utiliser une deuxième méthode de gestionnaire, `initComplete`.
 
    Le gestionnaire `initComplete` est appelé après l’initialisation de la visionneuse.
 
@@ -231,14 +235,14 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
    }
    ```
 
-   Dans le code ci-dessus, nous avons effectué ce qui suit :
+   Dans le code ci-dessus, nous avons effectué les opérations suivantes :
 
    * Identification de notre fenêtre contextuelle personnalisée.
-   * Suppression de celle-ci du DOM.
+   * Suppression de la bibliothèque du modèle DOM.
    * Identification du conteneur de la visionneuse.
-   * Association de la fenêtre contextuelle au conteneur de la visionneuse.
+   * Ajout de la fenêtre contextuelle au conteneur de la visionneuse.
 
-1. Votre code complet de setHandlers doit maintenant ressembler à ceci (la visionneuse de vidéo interactive a été utilisée) :
+1. L’intégralité du code setHandlers doit maintenant ressembler à ce qui suit (la visionneuse de vidéo interactive a été utilisée) :
 
    ```xml
    s7interactivevideoviewer.setHandlers({

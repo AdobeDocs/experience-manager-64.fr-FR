@@ -1,6 +1,6 @@
 ---
 title: Limites de Dynamic Media
-description: Découvrez les bonnes pratiques et les limites appliquées lorsque vous créez une visionneuse d’images ou à 360° ou chargez un PDF. Découvrez également les combinaisons de navigateur web et de système d’exploitation non prises en charge pour Dynamic Media.
+description: Découvrez les bonnes pratiques et les limites appliquées lorsque vous créez une visionneuse d’images ou à 360° ou chargez un PDF. Découvrez également les combinaisons de navigateur web et de système d’exploitation non prises en charge par Dynamic Media.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
@@ -8,21 +8,25 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: 0269ff24-582b-40f8-95e3-3ff4ac3a792f
-source-git-commit: 0abf095e352215cf6f83a409b34975bf8c5b0239
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 80%
+source-wordcount: '271'
+ht-degree: 84%
 
 ---
 
 # Limites de Dynamic Media
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les sections suivantes décrivent les limites dans Dynamic Media.
 
 Cette rubrique comprend les sections suivantes :
 
 * [Bonnes pratiques et limites appliquées par Dynamic Media sur les types de ressources](#best-practice-enforced-limits)
-* [Combinaisons de navigateur web et de système d’exploitation non prises en charge pour Dynamic Media](#unsupported-browser-os)
+* [Combinaisons de navigateur web et de système d’exploitation non prises en charge par Dynamic Media](#unsupported-browser-os)
 
 ## Bonnes pratiques et limites appliquées par Dynamic Media sur les types de ressources {#best-practice-enforced-limits}
 
@@ -38,7 +42,7 @@ Lorsque vous créez une visionneuse à 360° ou une visionneuse d’images, ou q
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
-## Combinaisons de navigateur web et de système d’exploitation non prises en charge pour Dynamic Media {#unsupported-browser-os}
+## Combinaisons de navigateur web et de système d’exploitation non prises en charge par Dynamic Media {#unsupported-browser-os}
 
 Dynamic Media ne prend pas en charge les combinaisons de navigateur web et de système d’exploitation suivantes :
 

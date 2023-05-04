@@ -1,5 +1,5 @@
 ---
-title: Mise à niveau vers les communautés AEM 6.4
+title: Mise à niveau vers AEM 6.4 Communities
 seo-title: Upgrading to AEM 6.4 Communities
 description: Mise à niveau d’une version antérieure vers AEM 6.4 Communities
 seo-description: How to upgrade from an earlier version to AEM 6.4 Communities
@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
-source-git-commit: 0f82e82cf6e09a2734893a98d67ed1a84b1fec5e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 4%
+source-wordcount: '700'
+ht-degree: 3%
 
 ---
 
-# Mise à niveau vers les communautés AEM 6.4 {#upgrading-to-aem-communities}
+# Mise à niveau vers AEM 6.4 Communities {#upgrading-to-aem-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Selon la topologie et les fonctionnalités de chaque site, les actions suivantes peuvent être nécessaires lors de la mise à niveau vers AEM Communities 6.4 ou de l’installation du dernier Feature Pack.
 
@@ -37,7 +41,7 @@ Lors de l’installation d’un nouveau Feature Pack Communities sur un déploie
 
 ### Activation 2.0 {#enablement}
 
-Depuis la version 6.3 d’AEM, les fonctionnalités d’activation ne stockent plus les informations de création de rapports dans MySQL. La dépendance MySQL est présente uniquement pour le suivi du contenu SCORM.
+Depuis la version 6.3 d’AEM, les fonctionnalités d’activation ne stockent plus les informations de création de rapports dans MySQL. La dépendance MySQL n’existe que pour le suivi du contenu SCORM.
 
 Veuillez contacter [service clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) pour obtenir de l’aide sur la migration de contenu à partir d’Activation 1.0.
 

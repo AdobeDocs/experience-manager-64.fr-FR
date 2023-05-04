@@ -1,7 +1,7 @@
 ---
 title: Bonnes pratiques
 seo-title: Best Practices
-description: Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
+description: Les bonnes pratiques de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de sujets englobe un large éventail de domaines dans AEM.
 seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
@@ -9,19 +9,23 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 88%
+source-wordcount: '315'
+ht-degree: 42%
 
 ---
 
 
 # Bonnes pratiques{#best-practices}
 
-Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Une documentation sur les meilleures pratiques est disponible pour les aspects suivants :
+Les bonnes pratiques de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de sujets englobe un large éventail de domaines dans AEM.
+
+La documentation relative aux bonnes pratiques est disponible dans les domaines suivants :
 
 * [Assets](#assets)
 * [Sites](#sites)
@@ -33,11 +37,11 @@ Pour connaître les bonnes pratiques en matière d’administration, de déploie
 * [Bonnes pratiques de développement](/help/sites-developing/best-practices.md)
 * [Bonnes pratiques de déploiement](/help/sites-deploying/best-practices.md)
 
-Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
+Les documents spécifiques sont décrits et associés dans les tables qui suivent.
 
-## Ressources {#assets}
+## Assets {#assets}
 
-Les meilleures pratiques concernant les ressources, y compris les fonctionnalités Dynamic Media et l’intégration de Scene 7, sont décrites dans les rubriques suivantes :
+Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Dynamic Media et l’intégration de Scene 7, sont décrites dans les rubriques suivantes :
 
 <table> 
  <tbody>
@@ -49,10 +53,10 @@ Les meilleures pratiques concernant les ressources, y compris les fonctionnalit�
   <tr>
    <td>Codage vidéo</td> 
    <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Bonnes pratiques en matière de codage</a></td> 
-   <td>Décrit les meilleures pratiques concernant le codage de fichiers vidéo source.</td> 
+   <td>Décrit les conseils sur les bonnes pratiques concernant le codage des fichiers vidéo sources.</td> 
   </tr>
   <tr>
-   <td>Imagerie dynamique</td> 
+   <td>Dynamic Imaging</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Bonnes pratiques relatives à Dynamic Imaging</a></td> 
    <td><p>Décrit comment accentuer une image pour obtenir de meilleurs résultats et la meilleure manière d’optimiser la qualité de vos images si vous utilisez la fonctionnalité Dynamic Media ou effectuez une intégration avec Dynamic Media. </p> </td> 
   </tr>
@@ -66,7 +70,7 @@ Les meilleures pratiques concernant les ressources, y compris les fonctionnalit�
 
 ## Sites {#sites}
 
-Les meilleures pratiques en termes de création et de gestion du contenu de votre site web sont les suivantes :
+La gestion et la création du contenu de votre site web comportent les bonnes pratiques suivantes :
 
 Création : [Environnement et outils de création](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fournit un aperçu sur la création de pages.
 

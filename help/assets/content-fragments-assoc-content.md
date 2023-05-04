@@ -12,14 +12,18 @@ discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 exl-id: af4f25d4-a784-47fe-bca4-75c8d373f7d2
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 94%
+source-wordcount: '265'
+ht-degree: 56%
 
 ---
 
 # Contenu associé {#associated-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!CAUTION]
 >
@@ -31,9 +35,9 @@ Le contenu associé fournit la connexion afin que les ressources puissent (éven
 
 >[!NOTE]
 >
->Différentes méthodes permettent d’ajouter des [ressources visuelles (des images, par exemple)](content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
+>Plusieurs méthodes d’ajout [ressources visuelles (images, par exemple)](content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
-Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](managing-collections-touch-ui.md#adding-assets-to-a-collection). Une fois l’ajout effectué, vous pouvez réaliser les étapes suivantes :
+Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](managing-collections-touch-ui.md#adding-assets-to-a-collection). Une fois cette opération terminée, vous pouvez :
 
 1. Ouvrez votre fragment et sélectionnez ensuite **[!UICONTROL Contenu associé]** dans le panneau latéral.
 
@@ -46,15 +50,15 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
    ![cfm-6420-04](assets/cfm-6420-04.png)
 
-1. Confirmez (en cochant). La collection sera répertoriée comme associée.
+1. Confirmez (avec la coche). La collection sera répertoriée comme associée.
 
    ![cfm-6420-05](assets/cfm-6420-05.png)
 
 ## Modification du contenu associé {#editing-associated-content}
 
-Une fois que vous avez associé une collection, vous pouvez effectuer les opérations suivantes :
+Une fois que vous avez associé une collection, vous pouvez :
 
 * **Supprimer** l’association.
 * **Ajouter des ressources** à la collection.
-* Sélectionner une ressource en vue d’effectuer d’autres opérations.
-* Modifier la ressource.
+* Sélectionnez une ressource pour effectuer d’autres actions.
+* Modifiez la ressource.

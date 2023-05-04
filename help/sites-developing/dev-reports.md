@@ -1,7 +1,7 @@
 ---
-title: Élaboration de rapports
+title: Élaborer des rapports
 seo-title: Developing Reports
-description: AEM propose une sélection de rapports standard basés sur une structure de création de rapports.
+description: AEM fournit une sélection de rapports standard basés sur une structure de création de rapports.
 seo-description: AEM provides a selection of standard reports based on a reporting framework
 uuid: 1b406d15-bd77-4531-84c0-377dbff5cab2
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 837c79af-a50f-40bb-b60d-205e1cac3f39
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5238'
-ht-degree: 98%
+source-wordcount: '5274'
+ht-degree: 71%
 
 ---
 
-# Élaboration de rapports{#developing-reports}
+# Élaborer des rapports{#developing-reports}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 CQ propose une sélection de [rapports standard](/help/sites-administering/reporting.md), basés majoritairement sur un framework de création de rapports.
 
@@ -80,25 +84,25 @@ Pour les rapports standard fournis avec AEM :
 
 Le framework de reporting fonctionne sur les principes suivants :
 
-* Elle repose entièrement sur les jeux de résultats renvoyés par une requête exécutée par CQ5 QueryBuilder.
-* Le jeu de résultats définit les données affichées dans le rapport. Chaque ligne du jeu de résultats correspond à une ligne dans la vue tabulaire du rapport.
+* Elle est entièrement basée sur les ensembles de résultats renvoyés par une requête exécutée par CQ5 QueryBuilder.
+* Le jeu de résultats définit les données affichées dans le rapport. Chaque ligne du jeu de résultats correspond à une ligne de la vue tabulaire du rapport.
 * Les opérations pouvant être exécutées sur le jeu de résultats ressemblent aux concepts SGBDR ; il s’agit principalement du *regroupement* et de l’*agrégation*.
 
 * La plupart des opérations de récupération et de traitement des données s’effectuent du côté serveur.
-* Le client est seulement responsable de l’affichage des données prétraitées. Seules des tâches de traitement mineures (créer des liens dans le contenu de la cellule, par exemple) sont exécutées du côté client.
+* Le client est seul responsable de l’affichage des données prétraitées. Seules les tâches de traitement mineures (par exemple, la création de liens dans le contenu des cellules) sont exécutées côté client.
 
-La structure de rapports (illustrée par la structure d’un rapport standard) utilise les blocs de création suivants, alimentés par la file d’attente de traitement :
+La structure de création de rapports (illustrée par la structure d’un rapport standard) utilise les blocs de création suivants, alimentés par la file d’attente de traitement :
 
 ![chlimage_1-248](assets/chlimage_1-248.png)
 
-### Page de rapport {#report-page}
+### Page du rapport {#report-page}
 
-La page de rapport :
+La page du rapport :
 
-* est une page CQ5 standard ;
-* est basée sur le [modèle CQ5 standard, configuré pour le rapport](#report-template).
+* Est une page CQ5 standard.
+* Est basé sur un [modèle CQ5 standard, configuré pour le rapport](#report-template).
 
-### Base de rapport {#report-base}
+### Base du rapport {#report-base}
 
 Le [composant `reportbase`](#report-base-component) constitue la base de tout rapport, dans la mesure où il :
 
@@ -113,20 +117,20 @@ Le [composant `reportbase`](#report-base-component) constitue la base de tout ra
 Chaque colonne est une instance du [composant `columnbase`](#column-base-component) qui :
 
 * est un paragraphe, utilisé par le système de paragraphes (parsys) (`reportbase`) du rapport correspondant ;
-* définit le lien vers le [jeu de résultats sous-jacent](#the-query-and-data-retrieval) ; en d’autres termes, il définit les données spécifiques référencées dans ce jeu de résultats, ainsi que la façon dont elles sont traitées ;
-* contient des définitions supplémentaires ; telles que les agrégats et filtres disponibles, ainsi que toute valeur par défaut.
+* Définit le lien vers la variable [jeu de résultats sous-jacent](#the-query-and-data-retrieval); c’est-à-dire qu’il définit les données spécifiques référencées dans ce jeu de résultats et la manière dont il est traité.
+* contient des définitions supplémentaires ; tels que les agrégats et filtres disponibles, ainsi que toute valeur par défaut.
 
 ### Requête et récupération de données {#the-query-and-data-retrieval}
 
-La requête :
+La requête :
 
 * est définie comme faisant partie du composant [`reportbase`](#report-base) ;
-* est basée sur [CQ QueryBuilder](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html) ;
-* récupère les données utilisées comme base du rapport. Chaque ligne du jeu de résultats (tableau) est associée à un nœud, tel qu’il est renvoyé par la requête. Des informations spécifiques pour les [différentes colonnes](#column-base-component) sont ensuite extraites de ce jeu de données.
+* Est basé sur la variable [CQ QueryBuilder](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html).
+* Récupère les données utilisées comme base du rapport. Chaque ligne du jeu de résultats (tableau) est liée à un noeud tel qu’il est renvoyé par la requête. Des informations spécifiques pour les [différentes colonnes](#column-base-component) sont ensuite extraites de ce jeu de données.
 
-* se compose généralement des éléments suivants :
+* Se compose généralement des éléments suivants :
 
-   * Un chemin d’accès racine.
+   * Chemin d’accès racine.
 
       Ce chemin spécifie la sous-arborescence du référentiel dans lequel la recherche doit être effectuée.
 
@@ -136,13 +140,13 @@ La requête :
 
       Ils sont imposés pour générer le jeu de résultats (initial) ; il s’agit, par exemple, de restrictions concernant le type de nœud ou des contraintes de propriété.
 
-**Ce qu’il faut retenir ici, c’est que chaque nœud unique renvoyé dans le jeu de résultats de la requête est utilisé pour générer une seule ligne sur le rapport (relation 1:1).**
+**Le point clé ici est que chaque noeud unique renvoyé dans le jeu de résultats de la requête est utilisé pour générer une seule ligne sur le rapport (relation 1:1, par conséquent).**
 
-Le développeur doit s’assurer que la requête définie pour un rapport renvoie un ensemble de nœuds approprié pour ce rapport. Cependant, le nœud proprement dit ne doit pas nécessairement contenir toutes les informations requises. Elles peuvent également être déduites des nœuds parents et/ou enfants. Par exemple, la requête utilisée pour le [Rapport utilisateur](/help/sites-administering/reporting.md#user-report) sélectionne des nœuds en fonction de leur type (dans ce cas : `rep:user`). Toutefois, la plupart des colonnes de ce rapport ne prélèvent pas directement leurs données de ces nœuds, mais des nœuds enfants `profile`.
+Le développeur doit s’assurer que la requête définie pour un rapport renvoie un jeu de noeuds approprié pour ce rapport. Cependant, le noeud lui-même ne doit pas contenir toutes les informations requises, elles peuvent également être dérivées des noeuds parents et/ou enfants. Par exemple, la requête utilisée pour le [Rapport utilisateur](/help/sites-administering/reporting.md#user-report) sélectionne des nœuds en fonction de leur type (dans ce cas : `rep:user`). Toutefois, la plupart des colonnes de ce rapport ne prélèvent pas directement leurs données de ces nœuds, mais des nœuds enfants `profile`.
 
 ### File d’attente de traitement {#processing-queue}
 
-La [requête](#the-query-and-data-retrieval) renvoie un jeu de résultats de données à afficher sous la forme de lignes dans le rapport. Chaque ligne du jeu de résultats est traitée (côté serveur), en [plusieurs phases](#phases-of-the-processing-queue), avant d’être transférée vers le client en vue d’un affichage dans le rapport.
+Le [query](#the-query-and-data-retrieval) renvoie un jeu de résultats de données à afficher sous forme de lignes sur le rapport. Chaque ligne du jeu de résultats est traitée (côté serveur), en [plusieurs phases](#phases-of-the-processing-queue), avant d’être transférée vers le client en vue d’un affichage dans le rapport.
 
 Cela permet d’effectuer les opérations suivantes :
 
@@ -154,8 +158,8 @@ Cela permet d’effectuer les opérations suivantes :
 
    Par exemple, des chemins d’accès peuvent être mappés sur un titre (comme dans le contenu plus lisible de la propriété *jcr:title* correspondante).
 
-* Appliquer des filtres à différents points.
-* Créer des valeurs composées, si nécessaire.
+* Application de filtres à différents points.
+* Créer des valeurs composites, si nécessaire.
 
    Par exemple, dans le cas d’un texte présenté à l’utilisateur, une valeur à utiliser pour le tri et une URL supplémentaire utilisée (du côté client) pour créer un lien.
 
@@ -173,21 +177,21 @@ Emplacement des étapes détaillées et des éléments :
 
    Les extracteurs de valeurs sont sélectionnés automatiquement en fonction du [type de colonne](#column-specific-definitions). Ils sont utilisés pour lire les valeurs extraites de la requête JCR sous-jacente et pour créer un jeu de résultats à partir de celles-ci ; un traitement plus approfondi peut ensuite être appliqué. Pour le type `diff`, par exemple, l’extracteur de valeurs lit deux propriétés et calcule la valeur unique qui est ensuite ajoutée au jeu de résultats. Les extracteurs de valeurs ne peuvent pas être configurés.
 
-1. Un [filtrage initial](#column-specific-definitions) (phase *raw*) est appliqué à ce jeu de résultats initial qui contient des données brutes.
+1. à ce jeu de résultats initial, contenant des données brutes, [filtrage initial](#column-specific-definitions) (*raw* ) est appliquée.
 
-1. Les valeurs font l’objet d’un [prétraitement](#processing-queue) ; tel qu’il est défini pour la phase *apply*.
+1. Les valeurs sont [prétraité](#processing-queue); comme défini pour la variable *apply* phase.
 
-1. Un [filtrage](#column-specific-definitions) (affecté à la phase *preprocessed*) est exécuté sur les valeurs prétraitées.
+1. [Filtrage](#column-specific-definitions) (affectée à la variable *prétraité* phase) est exécutée sur les valeurs prétraitées.
 
-1. Les valeurs sont résolues ; selon le [programme de résolution défini](#processing-queue).
-1. Un [filtrage](#column-specific-definitions) (affecté à la phase *resolved*) est exécuté sur les valeurs résolues.
+1. Les valeurs sont résolues ; selon la variable [résolveur défini](#processing-queue).
+1. [Filtrage](#column-specific-definitions) (affectée à la variable *resolved* phase) est exécutée sur les valeurs résolues.
 
-1. Les données sont [groupées et agrégées](#column-specific-definitions).
-1. Les données de tableau sont résolues par le biais d’une conversion en liste (basée sur des chaînes).
+1. Les données sont [regroupés et agrégés](#column-specific-definitions).
+1. Les données de tableau sont résolues en les convertissant en liste (chaîne).
 
    Il s’agit d’une étape implicite qui convertit un résultat à plusieurs valeurs dans une liste qui peut être affichée ; cela s’avère nécessaire pour les valeurs de cellule (non agrégées) qui sont basées sur des propriétés JCR à plusieurs valeurs.
 
-1. Les valeurs font l’objet d’un nouveau [prétraitement](#processing-queue) ; tel qu’il est défini pour la phase *afterApply*.
+1. Les valeurs sont à nouveau [prétraité](#processing-queue); comme défini pour la variable *afterApply* phase.
 
 1. Les données sont triées.
 1. Les données traitées sont transférées au client.
@@ -198,16 +202,16 @@ Emplacement des étapes détaillées et des éléments :
 >
 >D’autres éléments de la file d’attente de traitement sont définis sur les composants `columnbase`.
 
-## Création et configuration du rapport {#report-construction-and-configuration}
+## Conception et configuration des rapports {#report-construction-and-configuration}
 
-Voici ce dont vous avez besoin pour créer et configurer un rapport :
+Les éléments suivants sont nécessaires pour construire et configurer un rapport :
 
-* Un [emplacement pour la définition des composants de votre rapport](#location-of-report-components)
+* a [emplacement de la définition des composants de votre rapport](#location-of-report-components)
 * Un [composant `reportbase` ](#report-base-component)
 * Un ou plusieurs [composants `columnbase`](#column-base-component)
-* Un [composant de page](#page-component)
-* Une [conception de rapports](#report-design)
-* Un [modèle de rapport](#report-template)
+* a [composant de page](#page-component)
+* a [conception de rapports](#report-design)
+* a [modèle de rapport](#report-template)
 
 ### Emplacement des composants de rapport {#location-of-report-components}
 
@@ -240,17 +244,17 @@ N:apps
 
 Une page de rapport doit utiliser le `sling:resourceType` `/libs/cq/reporting/components/reportpage`.
 
-Un composant de page personnalisé n’est normalement pas nécessaire (dans la plupart des cas).
+Un composant de page personnalisé ne doit pas être nécessaire (dans la plupart des cas).
 
-## Composant de rapport de base {#report-base-component}
+## Composant de base de rapports {#report-base-component}
 
 Chaque type de rapport nécessite un composant de conteneur provenant de `/libs/cq/reporting/components/reportbase`.
 
-Ce composant fait office de conteneur pour le rapport dans son ensemble et fournit des informations pour les éléments suivants :
+Ce composant agit comme un conteneur pour le rapport dans son ensemble et fournit des informations pour les éléments suivants :
 
-* La [définition de la requête](#query-definition).
-* Une [boîte de dialogue (facultative)](#configuration-dialog) pour configurer le rapport.
-* Tous les [graphiques](#chart-definitions) intégrés dans le rapport.
+* Le [définition de requête](#query-definition).
+* Un [(facultatif) boîte de dialogue](#configuration-dialog) pour configurer le rapport.
+* Quelconque [Graphiques](#chart-definitions) intégré dans le rapport.
 
 ```
 N:<reportname> [cq:Component]
@@ -260,7 +264,7 @@ N:<reportname> [cq:Component]
     N:queryBuilder
 ```
 
-### Définition de la requête {#query-definition}
+### Définition de requête {#query-definition}
 
 ```xml
 N:queryBuilder
@@ -354,8 +358,8 @@ N:charting
 Graphique en secteurs. Généré uniquement à partir des données actuelles.
 
       * `lineseries`
-Série de lignes (points reliés représentant les instantanés). Graphique généré uniquement à partir des données historiques.
-   * Des propriétés supplémentaires sont disponibles en fonction du type de graphique :
+Série de lignes (points reliés représentant les instantanés). Généré à partir de données historiques uniquement.
+   * D’autres propriétés sont disponibles, selon le type de graphique :
 
       * pour le type de graphique `pie` :
 
@@ -393,7 +397,7 @@ Valeur par défaut : `9` (il s’agit également du maximum autorisé)
 
 ### Boîte de dialogue de configuration {#configuration-dialog}
 
-Une boîte de dialogue de configuration peut être associée à chaque rapport, ce qui permet à l’utilisateur de spécifier différents paramètres. Cette boîte de dialogue est accessible au moyen du bouton **Modifier** lorsque la page du rapport est ouverte.
+Chaque rapport peut comporter une boîte de dialogue de configuration, qui permet à l’utilisateur de spécifier différents paramètres pour le rapport. Cette boîte de dialogue est accessible au moyen du bouton **Modifier** lorsque la page du rapport est ouverte.
 
 Il s’agit d’une [boîte de dialogue](/help/sites-developing/components-basics.md#dialogs) CQ standard qui peut être configurée comme telle (pour plus d’informations, voir [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)).
 
@@ -466,9 +470,9 @@ Plusieurs composants préconfigurés sont fournis ; ils peuvent être référen
 >
 >Les composants référencés doivent être inclus à l’aide du suffixe `.infinity.json` (voir l’exemple ci-dessus).
 
-### Chemin racine {#root-path}
+### Chemin d’accès racine {#root-path}
 
-Un chemin d’accès racine peut également être défini pour le rapport :
+En outre, un chemin racine peut être défini pour le rapport :
 
 * **`rootPath`**
 
@@ -476,20 +480,20 @@ Un chemin d’accès racine peut également être défini pour le rapport :
 
     Il peut être spécifié par :
 
-   * le [modèle de rapport](#report-template) (soit comme valeur fixe, soit comme valeur par défaut pour la boîte de dialogue de configuration),
-   * l’utilisateur (à l’aide de ce paramètre).
+   * la valeur [modèle de rapport](#report-template) (valeur fixe ou valeur par défaut de la boîte de dialogue de configuration).
+   * l’utilisateur (à l’aide de ce paramètre)
 
 ## Composant de base de colonne {#column-base-component}
 
 Chaque type de colonne nécessite un composant provenant de `/libs/cq/reporting/components/columnbase`.
 
-Un composant de colonne définit une combinaison des éléments suivants :
+Un composant de colonne définit une combinaison des éléments suivants :
 
-* Configuration de la [requête spécifique à la colonne](#column-specific-query).
-* [Programmes de résolution et prétraitement](#resolvers-and-preprocessing).
+* Le [Requête spécifique à la colonne](#column-specific-query) configuration.
+* Le [Résolveurs et prétraitement](#resolvers-and-preprocessing).
 * [Définitions spécifiques à la colonne](#column-specific-definitions) (telles que des filtres et des agrégats ; nœud enfant `definitions`).
 * [Valeurs par défaut de colonne](#column-default-values).
-* [Filtre client](#client-filter) pour extraire les informations à afficher à partir des données renvoyées par le serveur.
+* Le [Filtre client](#client-filter) pour extraire les informations à afficher à partir des données retournées par le serveur.
 * En outre, un composant de colonne doit fournir une instance appropriée de `cq:editConfig`. pour définir les [événements et actions](#events-and-actions) requis.
 * Configuration de [colonnes génériques](#generic-columns).
 
@@ -565,11 +569,11 @@ Dans la plupart des cas, seul `property` est utilisé.
 
 ### Filtre client {#client-filter}
 
-Le filtre client extrait les informations à afficher, à partir des données renvoyées par le serveur.
+Le filtre client extrait les informations à afficher, des données retournées par le serveur.
 
 >[!NOTE]
 >
->Ce filtre est exécuté côté client, une fois que le traitement entier côté serveur a été appliqué.
+>Ce filtre est exécuté côté client, après l’application de l’ensemble du traitement côté serveur.
 
 ```xml
 N:definitions
@@ -582,7 +586,7 @@ Le `clientFilter` est défini comme une fonction JavaScript qui :
 * en tant qu’entrée, reçoit un seul paramètre ; les données renvoyées par le serveur (et donc entièrement prétraitées) ;
 * en tant que sortie, renvoie la valeur filtrée (traitée) ; les données extraites ou déduites des informations saisies.
 
-L’exemple suivant extrait le chemin de page correspondant d’un chemin de composant :
+L’exemple suivant extrait le chemin de page correspondant d’un chemin de composant :
 
 ```
 function(v) {
@@ -594,7 +598,7 @@ function(v) {
 }
 ```
 
-### Programmes de résolution et prétraitement {#resolvers-and-preprocessing}
+### Résolveurs et prétraitement {#resolvers-and-preprocessing}
 
 La [file d’attente de traitement](#processing-queue) définit les différents programmes de résolution et configure le prétraitement :
 
@@ -688,9 +692,9 @@ N:definitions
 
       Application après le prétraitement ([étape 9 dans l’organigramme de la file d’attente de traitement](#processing-queue)).
 
-#### Programmes de résolution {#resolvers}
+#### Résolveurs {#resolvers}
 
-Les programmes de résolution sont utilisés pour extraire les informations requises. Voici quelques exemples de programmes de résolution :
+Les programmes de résolution sont utilisés pour extraire les informations requises. Voici quelques exemples des différents programmes de résolution :
 
 **Const**
 
@@ -782,7 +786,7 @@ N:definitions
                 P:format          // data type formatter
 ```
 
-#### Prétraitement : motifs de recherche et de remplacement {#preprocessing-find-and-replace-patterns}
+#### Prétraitement - Modèles de recherche et de remplacement {#preprocessing-find-and-replace-patterns}
 
 Pour le prétraitement, vous pouvez spécifier un `pattern` (défini en tant qu’[expression régulière](https://fr.wikipedia.org/wiki/Regular_expression) ou regex) qui est localisé, puis remplacé par le motif `replace` :
 
@@ -816,7 +820,7 @@ Un exemple de remplacement peut être décomposé comme suit :
 
    * `/content/geometrixx/en/services`
 
-#### Prétraitement : formateurs de type de données {#preprocessing-data-type-formatters}
+#### Prétraitement - Formats des types de données {#preprocessing-data-type-formatters}
 
 Ces formateurs convertissent une valeur numérique en chaîne relative.
 
@@ -895,7 +899,7 @@ N:definitions
       Utilisé pour des valeurs qui utilisent différentes valeurs (provenant de différentes propriétés) à des fins de tri et d’affichage.
    En outre, l’une des options ci-dessus peut être définie comme valeur multiple ; par exemple, `string[]` définit un tableau de chaînes.
 
-   L’extracteur de valeurs est sélectionné par le type de colonne. Si l’extracteur de valeurs est disponible pour un type de colonne, il est utilisé. Dans le cas contraire, l’extracteur de valeurs par défaut est utilisé.
+   L’extracteur de valeurs est sélectionné par le type de colonne. Si un extracteur de valeurs est disponible pour un type de colonne, il est utilisé. Dans le cas contraire, l’extracteur de valeur par défaut est utilisé.
 
     Un type peut (éventuellement) prendre un paramètre. Par exemple, `timeslot:year` extrait l’année d’un champ de date. Types avec leurs paramètres :
 
@@ -1006,7 +1010,7 @@ N:defaults
 
 ### Événements et actions {#events-and-actions}
 
-La configuration de modification définit les événements nécessaires pour que les écouteurs effectuent une détection, ainsi que les actions à appliquer après que ces événements se sont produits. Pour obtenir des informations générales, consultez [Présentation du développement de composants](/help/sites-developing/components.md).
+Modifier la configuration définit les événements nécessaires que les écouteurs doivent détecter et les actions à appliquer après ces événements. Pour obtenir des informations générales, consultez [Présentation du développement de composants](/help/sites-developing/components.md).
 
 Les valeurs suivantes doivent être définies afin que toutes les actions requises soient traitées :
 
@@ -1026,9 +1030,9 @@ N:cq:editConfig [cq:EditConfig]
 
 ### Colonnes génériques {#generic-columns}
 
-Les colonnes génériques constituent une extension dans laquelle (la plupart) des définitions de colonne sont stockées sur l’instance du nœud de colonne (plutôt que du nœud de composant).
+Les colonnes génériques sont une extension où (la plupart) des définitions de colonne sont stockées sur l’instance du noeud de colonne (plutôt que sur le noeud de composant).
 
-Elles utilisent une boîte de dialogue (standard), que vous personnalisez, pour chaque composant générique. Cette boîte de dialogue permet à l’utilisateur du rapport de définir les propriétés d’une colonne générique sur la page du rapport (à l’aide de l’option de menu **Propriétés de colonne**).
+Ils utilisent une boîte de dialogue (standard) que vous personnalisez pour chaque composant générique. Cette boîte de dialogue permet à l’utilisateur du rapport de définir les propriétés de colonne d’une colonne générique sur la page du rapport (à l’aide de l’option de menu ). **Propriétés des colonnes...**).
 
 Exemple : la colonne **Générique** du **Rapport utilisateur** ; voir `/libs/cq/reporting/components/userreport/genericcol`.
 
@@ -1072,9 +1076,9 @@ Pour rendre une colonne générique, procédez comme suit :
 
 ## Conception de rapports {#report-design}
 
-La conception définit les types de colonne disponibles pour créer un rapport. Elle définit également le système de paragraphes auquel les colonnes sont ajoutées.
+La conception définit les types de colonnes disponibles pour la création d’un rapport. Il définit également le système de paragraphes auquel les colonnes sont ajoutées.
 
-Il est vivement conseillé de créer une conception pour chaque rapport. Cela garantit une parfaite flexibilité. Consultez aussi [Définition de votre nouveau rapport](#defining-your-new-report).
+Il est vivement recommandé de créer une conception individuelle pour chaque rapport. Cela garantit une flexibilité totale. Consultez aussi [Définition de votre nouveau rapport](#defining-your-new-report).
 
 Les composants de création de rapports par défaut sont conservés sous `/etc/designs/reports`.
 
@@ -1094,7 +1098,7 @@ Les propriétés de conception requises sont enregistrées sur `jcr:content/repo
 
    Propriété avec la valeur `cq/reporting/components/repparsys`.
 
-Voici un exemple de fragment de conception (extrait de la conception du rapport de composants) :
+Voici un exemple de fragment de code de conception (extrait de la conception du rapport de composant) :
 
 ```xml
 <!-- ... -->
@@ -1114,17 +1118,17 @@ Voici un exemple de fragment de conception (extrait de la conception du rapport 
 <!-- ... -->
 ```
 
-Il n’est pas nécessaire de spécifier des conceptions pour chaque colonne. Les colonnes disponibles peuvent être définies en mode de conception.
+Il n’est pas nécessaire de spécifier des conceptions pour des colonnes individuelles. Les colonnes disponibles peuvent être définies en mode de conception.
 
 >[!NOTE]
 >
->Il est conseillé de n’apporter aucune modification aux conceptions de rapport standard. De cette manière, vous ne perdrez aucune modification lors de la mise à niveau ou de l’installation de correctifs logiciels.
+>Il est recommandé de ne pas apporter de modifications aux conceptions de rapport standard. Cela permet de ne pas perdre de modifications lors de la mise à niveau ou de l’installation de correctifs.
 >
 >Veuillez copier le rapport et sa conception si vous souhaitez personnaliser un rapport standard.
 
 >[!NOTE]
 >
->Des colonnes par défaut peuvent être créées automatiquement à la création d’un rapport. Elles sont spécifiées dans le modèle.
+>Les colonnes par défaut peuvent être créées automatiquement lors de la création d&#39;un rapport. Elles sont spécifiées dans le modèle.
 
 ## Modèle de rapport {#report-template}
 
@@ -1137,7 +1141,7 @@ Le modèle doit :
 * indiquer la conception à utiliser ;
 * créer un nœud enfant `report` qui référence le composant de conteneur (`reportbase`) au moyen de la propriété `sling:resourceType`.
 
-Voici un exemple de fragment de modèle (extrait du modèle de rapport de composants) :
+Voici un exemple de fragment de code de modèle (extrait du modèle de rapport de composant) :
 
 ```xml
 <!-- ... -->
@@ -1152,7 +1156,7 @@ Voici un exemple de fragment de modèle (extrait du modèle de rapport de compos
 <!-- .. -->
 ```
 
-Voici un exemple de fragment de modèle qui présente la définition du chemin d’accès racine (extrait du modèle de rapport utilisateur) :
+Voici un exemple de fragment de code de modèle, indiquant la définition du chemin racine (extrait du modèle de rapport utilisateur) :
 
 ```xml
 <!-- ... -->
@@ -1191,14 +1195,14 @@ N:apps
                 N:<reportname> [sling:Folder]
 ```
 
-## Création de votre propre rapport : exemple {#creating-your-own-report-an-example}
+## Création De Votre Propre Rapport - Exemple {#creating-your-own-report-an-example}
 
 ### Définition de votre nouveau rapport {#defining-your-new-report}
 
-Pour définir un nouveau rapport, vous devez créer et configurer les éléments suivants :
+Pour définir un nouveau rapport, vous devez créer et configurer les éléments suivants :
 
 1. La racine de vos composants de rapport.
-1. Le composant de base du rapport.
+1. Composant de base de rapports.
 1. Un ou plusieurs composants de base de colonne.
 1. La conception du rapport.
 1. La racine de votre modèle de rapport.
@@ -1374,13 +1378,13 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
 
 ### Création d’une instance de votre nouveau rapport {#creating-an-instance-of-your-new-report}
 
-Il est désormais possible de créer une instance de votre nouveau rapport :
+Vous pouvez maintenant créer une instance de votre nouveau rapport :
 
 1. Ouvrez la console **Outils**.
 
-1. Sélectionnez **Rapports** dans le volet de gauche.
-1. Sélectionnez ensuite **Nouveau** dans la barre d’outils. Définissez un **Titre** et un **Nom**, sélectionnez votre nouveau type de rapport (le **Modèle de rapport OSGi**) dans la liste des modèles, puis cliquez sur **Créer**.
-1. Votre nouvelle instance de rapport apparaît dans la liste. Double-cliquez sur cette instance pour l’ouvrir.
+1. Sélectionner **Rapports** dans le volet de gauche.
+1. Alors **Nouveau...** dans la barre d’outils. Définition d’une **Titre** et **Nom**, sélectionnez votre nouveau type de rapport (le **Modèle de rapport OSGi**) dans la liste des modèles, puis cliquez sur **Créer**.
+1. Votre nouvelle instance de rapport apparaît dans la liste. Double-cliquez dessus pour l’ouvrir.
 1. Faites glisser un composant (pour cet exemple, **Bundle** dans le groupe **Rapport OSGi**) depuis le sidekick pour créer la première colonne et [commencez la définition du rapport](/help/sites-administering/reporting.md#the-basics-of-report-customization).
 
    >[!NOTE]
@@ -1395,22 +1399,22 @@ Il est désormais possible de créer une instance de votre nouveau rapport :
    > P:groupable [Boolean] = true
    >```
 
-## Configuration des services de structure de rapport {#configuring-the-report-framework-services}
+## Configuration des services de structure de rapports {#configuring-the-report-framework-services}
 
-Cette section décrit les options de configuration avancées pour les services OSGi qui implémentent la structure de rapport.
+Cette section décrit les options de configuration avancées pour les services OSGi qui implémentent la structure de rapports.
 
 Il est possible de les consulter à l’aide du menu Configuration de la console Web (disponible, par exemple, à l’adresse `http://localhost:4502/system/console/configMgr`). Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
-### Service de base (Configuration des rapports de Day CQ) {#basic-service-day-cq-reporting-configuration}
+### Service de base (configuration des rapports Day CQ) {#basic-service-day-cq-reporting-configuration}
 
-* **Fuseau horaire** définit le fuseau horaire pour lequel les données historiques sont créées. Cela permet d’assurer que le graphique historique affiche les mêmes données pour chaque utilisateur dans le monde entier.
-* **Paramètres régionaux** définit les paramètres régionaux à utiliser avec l’option **Fuseau horaire** pour les données historiques. Les paramètres régionaux sont utilisés pour déterminer certains paramètres du calendrier spécifiques à la région (par exemple, si le premier jour de la semaine est le dimanche ou le lundi).
+* **Fuseau horaire** définit le fuseau horaire pour lequel les données historiques sont créées. Cela permet de s’assurer que le graphique historique affiche les mêmes données pour chaque utilisateur dans le monde entier.
+* **Paramètres régionaux** définit les paramètres régionaux à utiliser conjointement avec la variable **Fuseau horaire** pour les données historiques. Les paramètres régionaux sont utilisés pour déterminer certains paramètres du calendrier spécifiques aux paramètres régionaux (par exemple, si le premier jour d’une semaine est dimanche ou lundi).
 
-* **Chemin d’accès aux instantanés** définit le chemin d’accès racine où sont stockés les instantanés des graphiques historiques.
-* **Chemin d’accès aux rapports** définit le chemin d’accès à l’emplacement de stockage des rapports. Cette option est utilisée par le service d’instantané pour déterminer les rapports pour lesquels des instantanés doivent être pris.
-* **Instantanés quotidiens** définit l’heure à laquelle sont exécutés les instantanés quotidiens. L’heure est indiquée dans le fuseau horaire local du serveur.
-* **Instantanés chaque heure** définit la minute de chaque heure pour la réalisation des instantanés horaires.
-* **Lignes (max)** définit le nombre maximum de lignes qui sont stockées pour chaque instantané. Cette valeur doit être définie de manière raisonnable ; si elle est trop élevée, cela affectera la taille du référentiel, si elle est trop basse, les données risquent d’être imprécises en raison du mode de traitement des données historiques.
+* **Chemin de l’instantané** définit le chemin racine où sont stockés les instantanés des graphiques historiques.
+* **Chemin d’accès aux rapports** définit le chemin d’accès à l’emplacement des rapports. Il est utilisé par le service d’instantané pour déterminer les rapports pour lesquels prendre des instantanés.
+* **Instantanés quotidiens** définit l’heure de chaque jour où des instantanés quotidiens sont réalisés. L’heure spécifiée se trouve dans le fuseau horaire local du serveur.
+* **Instantanés horaires** définit la minute de chaque heure à laquelle des instantanés horaires sont réalisés.
+* **Lignes (max)** définit le nombre maximal de lignes stockées pour chaque instantané. Cette valeur doit être choisie raisonnablement; s’il est trop élevé, cela aura une incidence sur la taille du référentiel. s’il est trop faible, les données peuvent ne pas être exactes en raison de la façon dont les données historiques sont traitées.
 * **Fausses données** : si cette option est activée, de fausses données historiques peuvent être créées à l’aide du sélecteur `fakedata`. Si elle est désactivée, l’utilisation du sélecteur `fakedata` générera une exception.
 
    Les données étant fausses, elles doivent *uniquement* être utilisées à des fins de test et de débogage.
@@ -1425,15 +1429,15 @@ Il est possible de les consulter à l’aide du menu Configuration de la console
 
 * **Imposer l’utilisateur d’instantanés** : si cette option est activée, tous les instantanés sont effectués avec l’utilisateur spécifié sous *Utilisateur d’instantanés*. Mal gérée, cette option peut présenter de sérieux risques sur la sécurité.
 
-### Paramètres du cache (Cache de rapports Day CQ) {#cache-settings-day-cq-reporting-cache}
+### Paramètres du cache (cache de création de rapports Day CQ) {#cache-settings-day-cq-reporting-cache}
 
-* **Activer** vous permet d’activer ou de désactiver la mise en cache des données du rapport. Si vous activez le cache du rapport, les données du rapport sont conservées en mémoire pendant plusieurs requêtes. Cela peut améliorer les performances, mais aussi se traduire par une consommation de mémoire plus importante voire, dans des situations extrêmes, des problèmes de mémoire insuffisante.
-* **TTL** définit la période (en secondes) pendant laquelle les données du rapport sont mises en cache. Une valeur élevée améliore les performances, mais peut également renvoyer des données inexactes si elles subissent des modifications au cours de cette période.
-* **Entrées max** définit le nombre maximum de rapports pouvant être mis en cache à un moment donné.
+* **Activer** vous permet d’activer ou de désactiver la mise en cache des données de rapport. L’activation du cache du rapport permet de conserver les données du rapport en mémoire pendant plusieurs requêtes. Cela peut améliorer les performances, mais peut entraîner une consommation de mémoire plus élevée et, dans des circonstances extrêmes, entraîner des problèmes de mémoire insuffisante.
+* **TTL** définit la durée (en secondes) pendant laquelle les données du rapport sont mises en cache. Un nombre plus élevé améliore les performances, mais peut également renvoyer des données inexactes si les données changent au cours de la période.
+* **Entrées maximales** définit le nombre maximal de rapports à mettre en cache à la fois.
 
 >[!NOTE]
 >
->Les données de rapport peuvent être différentes pour chaque utilisateur et chaque langue. Par conséquent, les données de rapport sont mises en cache par rapport, utilisateur et langue. Cela signifie qu’une valeur **Entrées max** de `2` met en cache des données pour :
+>Les données du rapport peuvent être différentes pour chaque utilisateur et langue. Par conséquent, les données du rapport sont mises en cache par rapport, utilisateur et langue. Cela signifie qu’une valeur **Entrées max** de `2` met en cache des données pour :
 >
 >* un seul rapport pour deux utilisateurs avec des paramètres linguistiques différents ou
 >* un seul utilisateur et deux rapports.

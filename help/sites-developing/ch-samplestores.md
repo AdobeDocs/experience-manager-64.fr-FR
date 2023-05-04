@@ -10,20 +10,24 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 7f813b59-d904-49b6-994c-be3badf74464
 exl-id: 776ceb9f-f835-4dbb-9100-f456a36b6dcd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 100%
+source-wordcount: '509'
+ht-degree: 78%
 
 ---
 
 # Exemples de magasins candidats ContextHub{#sample-contexthub-store-candidates}
 
-ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions. Les informations suivantes sont fournies pour chaque exemple :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-* L’emplacement du code source pour pouvoir l’ouvrir à des fins de formation.
-* La configuration des magasins créés à partir des magasins candidats.
-* La structure des données de magasin pour pouvoir y accéder.
+ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions. Les informations suivantes sont fournies pour chaque échantillon :
+
+* Où trouver le code source afin de pouvoir l’ouvrir à des fins d’apprentissage.
+* Comment configurer les magasins que vous créez à partir des magasins candidats.
+* Structuration des données de magasin afin que vous puissiez y accéder.
 
 >[!WARNING]
 >
@@ -57,7 +61,7 @@ Lorsque vous créez un magasin aem.segmentation, vous n’avez pas besoin de fou
 
 ## Exemple de magasin candidat contexthub.geolocation {#contexthub-geolocation-sample-store-candidate}
 
-Le magasin candidat de modèles contexthub.geolocation utilise Google Maps pour obtenir et stocker des informations sur l’emplacement du client.
+L’exemple de magasin candidat contexthub.geolocation utilise Google Maps pour obtenir et stocker des informations sur l’emplacement du client.
 
 ### Emplacement du code source {#source-location-geolocation}
 
@@ -327,7 +331,7 @@ Le magasin candidat contexthub.datetime étend [`ContextHub.Store.PersistedJSONP
 
 ### Configuration {#configuration-profile}
 
-La configuration par défaut suivante est utilisée. Vous ne devriez pas changer cette configuration.
+La configuration par défaut suivante est utilisée. Vous ne devez pas modifier cette configuration.
 
 ```xml
 {

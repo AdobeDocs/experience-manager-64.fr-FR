@@ -1,7 +1,7 @@
 ---
-title: Configuration d’une page pour la modification en bloc des propriétés de page
+title: Configurer votre page pour la modification en bloc des propriétés de page
 seo-title: Configuring your Page for Bulk Editing of Page Properties
-description: La modification des propriétés de page vous permet de modifier les propriétés de plusieurs pages à la fois
+description: La modification en masse des propriétés de page permet de modifier les propriétés de plusieurs pages à la fois.
 seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
 uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
 contentOwner: User
@@ -10,18 +10,22 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 0aefe8c0-662e-4177-a369-feab174fa510
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 100%
+source-wordcount: '450'
+ht-degree: 66%
 
 ---
 
-# Configuration d’une page pour la modification en bloc des propriétés de page {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configurer votre page pour la modification en bloc des propriétés de page {#configuring-your-page-for-bulk-editing-of-page-properties}
 
-La [modification des propriétés de page](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) vous permet de modifier les propriétés de plusieurs pages à la fois.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-En raison de la possibilité de valeurs différentes, les propriétés de page ne sont, par défaut, pas activées pour la modification en masse. Elles doivent être explicitement autorisées (activées). Lorsque vous définissez les propriétés de page disponibles pour la modification en masse, vous devez prendre en compte certaines répercussions, par exemple :
+[Modification en masse des propriétés de page](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) permet de modifier les propriétés de plusieurs pages à la fois.
+
+En raison de la possibilité de valeurs différentes, les propriétés de page ne sont, par défaut, pas activées pour la modification en masse. Elles doivent être explicitement autorisées (activées). Lors de la définition des propriétés de page à mettre à disposition pour la modification en masse, vous devez tenir compte de certaines implications, telles que :
 
 * Certains champs sont généralement uniques, par exemple un titre de page. Vous devez décider s’il est utile d’activer ces champs pour la modification en masse, lorsqu’une valeur sera appliquée.
 * Certains champs peuvent posséder plusieurs valeurs, ce qui nécessite une représentation significative lors du rendu.
@@ -30,11 +34,11 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 
 >[!CAUTION]
 >
->La modification en masse des propriétés de la page est :
+>La modification en masse des propriétés de page est la suivante :
 >
->* Indisponible dans l’IU classique.
->* Indisponible pour les pages d’une live copy.
->* Uniquement disponible pour les pages ayant le même type de ressource.
+>* Non disponible dans l’IU classique.
+>* Non disponible pour les pages d’une Live Copy.
+>* Uniquement disponible pour les pages avec le même type de ressource.
 >
 
 
@@ -46,7 +50,7 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 
 >[!NOTE]
 >
->Certains champs peuvent posséder plusieurs valeurs, ce qui nécessite une représentation significative lors du rendu. Pour cette raison, vous devez activer uniquement les types de champs suivants :
+>Certains champs peuvent posséder plusieurs valeurs, ce qui nécessite une représentation significative lors du rendu. Pour cette raison, vous devez uniquement activer les types de champ suivants :
 >
 >* `/libs/granite/ui/components/foundation/form/textfield`
 >* `/libs/granite/ui/components/foundation/form/textarea`
@@ -57,15 +61,15 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 >
 
 
-Les champs sont activés sur le composant de page (et *non* sur le modèle) :
+Les champs sont activés sur le composant de page (*not* sur le modèle) :
 
-1. En utilisant CRXDE Lite (ou une méthode équivalente), ouvrez votre composant de page.
+1. À l’aide de CRXDE Lite (ou d’une méthode équivalente), ouvrez votre composant de page.
 
    Par exemple : `/apps/core/wcm/components/page/v1/page`
 
    >[!NOTE]
    >
-   >Cet exemple suppose que les composants de base ont été installés sur l’instance, ce qui est le cas si l’instance est exécutée avec un exemple de contenu We.Retail. Pour plus d’informations, voir la [documentation relative aux composants de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+   >Cet exemple suppose que les composants de base ont été installés sur l’instance, ce qui est le cas si l’instance est exécutée avec un exemple de contenu We.Retail. Voir [Documentation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) pour plus d’informations.
 
 1. Accédez au champ requis dans la définition de `cq:dialog`.
 1. Définissez la propriété suivante sur le nœud de champ :

@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 6%
+source-wordcount: '2216'
+ht-degree: 5%
 
 ---
 
 # Déploiement de Communities {#deploying-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Prérequis {#prerequisites}
 
@@ -264,7 +268,7 @@ Pour toutes les autres instances de publication (secondaires) dans une ferme de 
 * Recherchez la variable `AEM Communities Publisher Configuration`
 * Sélectionner l’icône de modification
 * Décochez la case **[!UICONTROL Éditeur Principal]** box
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ### Agents de réplication sur l’auteur {#replication-agents-on-author}
 
@@ -322,7 +326,7 @@ Pour activer le service tunnel :
 * Recherchez la variable `AEM Communities Publish Tunnel Service`
 * Sélectionner l’icône de modification
 * Vérifiez les **[!UICONTROL enable]** box
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -436,9 +440,9 @@ Si vous utilisez un Dispatcher, voir :
 * [Configuration de Dispatcher pour Communities](dispatcher.md)
 * [Problèmes connus](troubleshooting.md#dispatcher-refetch-fails)
 
-## Documentation sur les communautés associée {#related-communities-documentation}
+## Documentation sur les communautés connexes {#related-communities-documentation}
 
-* Reportez-vous à la section [Administration des sites de communauté](administer-landing.md) pour en savoir plus sur la création d’un site de communauté, la configuration de modèles de sites de communauté, la modération du contenu de communauté, la gestion des membres et la configuration de la messagerie.
+* Visite [Administration des sites des communautés](administer-landing.md) pour en savoir plus sur la création d’un site communautaire, la configuration des modèles de site communautaire, la modération du contenu communautaire, la gestion des membres et la configuration de la messagerie.
 
 * Visite [Développement de communautés](communities.md) pour en savoir plus sur la structure de composants sociaux (SCF) et la personnalisation des composants et fonctionnalités des communautés.
 

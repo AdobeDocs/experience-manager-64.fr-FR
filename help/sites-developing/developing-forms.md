@@ -1,7 +1,7 @@
 ---
-title: Développement de formulaires (IU classique)
+title: Développer des formulaires (IU classique)
 seo-title: Developing Forms (Classic UI)
-description: Découvrez comment développer des formulaires.
+description: Découvrez comment développer des formulaires
 seo-description: Learn how to develop forms
 uuid: 124e63ba-8d87-4173-aa35-7809b39811d7
 contentOwner: Guillaume Carlino
@@ -10,20 +10,24 @@ topic-tags: components
 content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 exl-id: 6d52babc-9477-4528-9c25-35cb729f5d78
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 92%
+source-wordcount: '1977'
+ht-degree: 57%
 
 ---
 
-# Développement de formulaires (IU classique){#developing-forms-classic-ui}
+# Développer des formulaires (IU classique){#developing-forms-classic-ui}
 
-La structure de base d’un formulaire est la suivante :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-* Début du formulaire
-* Éléments du formulaire
-* Fin du formulaire
+La structure de base d’un formulaire est la suivante :
+
+* Démarrage de formulaire
+* Eléments de formulaire
+* Fin de formulaire
 
 Toutes ces actions sont effectuées avec une série de [composants de formulaire](/help/sites-authoring/default-components.md) par défaut, disponibles dans une installation AEM standard.
 
@@ -39,13 +43,13 @@ Outre le [développement de nouveaux composants](/help/sites-developing/developi
 
 >[!NOTE]
 >
->Ce document porte sur le développement de formulaires à l’aide des [composants Foundation](/help/sites-authoring/default-components-foundation.md) dans l’IU classique. Adobe recommande de tirer parti des nouveaux [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et des [conditions de masquage](/help/sites-developing/hide-conditions.md) pour le développement de formulaires dans l’interface utilisateur tactile.
+>Ce document se concentre sur le développement de formulaires à l’aide de la fonction [Composants de base](/help/sites-authoring/default-components-foundation.md) dans l’IU classique. Adobe recommande d’utiliser la nouvelle [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [Masquer les conditions](/help/sites-developing/hide-conditions.md) pour le développement de formulaires dans l’interface utilisateur tactile.
 
-## Préchargement de valeurs de formulaire {#preloading-form-values}
+## Préchargement des valeurs de formulaire {#preloading-form-values}
 
-Le composant de début de formulaire fournit un champ pour le **Chemin de chargement**, un chemin d’accès facultatif qui pointe vers un nœud du répertoire.
+Le composant de début de formulaire fournit un champ pour le **Chemin de chargement**, un chemin facultatif qui pointe vers un noeud du référentiel.
 
-Le chemin de chargement est le chemin d’accès à des propriétés de nœud qui est utilisé pour charger des valeurs prédéfinies dans plusieurs champs du formulaire.
+Le Chemin de chargement est le chemin d’accès aux propriétés de noeud qui est utilisé pour charger des valeurs prédéfinies dans plusieurs champs du formulaire.
 
 Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœud dans le référentiel. Lorsque ce nœud comporte des propriétés qui correspondent aux noms des champs, les champs adéquats du formulaire sont préchargés avec la valeur de ces propriétés. S’il n’existe aucune correspondance, le champ contient la valeur par défaut.
 
@@ -53,19 +57,19 @@ Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœ
 >
 >Une [action de formulaire](#developing-your-own-form-actions) peut également définir la ressource à partir de laquelle les valeurs initiales doivent être chargées. Pour ce faire, `FormsHelper#setFormLoadResource` est utilisé dans `init.jsp`.
 >
->Le formulaire est rempli à partir du chemin d’accès défini dans le composant de début de formulaire par l’auteur, et ce, uniquement si cette action n’est pas définie.
+>Ce n’est que si ce n’est pas le cas que le formulaire sera renseigné à partir du chemin d’accès défini dans le composant de début du formulaire par l’auteur.
 
 ## Préchargement de champs de formulaire avec plusieurs valeurs {#preloading-form-fields-with-multiple-values}
 
-Le **Chemin de chargement des éléments** peut également être défini pour divers champs de formulaire ; il s’agit, une fois encore, d’un chemin d’accès facultatif pointant vers un nœud du référentiel.
+Plusieurs champs de formulaire ont également la propriété **Chemin de chargement des éléments**, à nouveau un chemin facultatif qui pointe vers un noeud du référentiel.
 
 Le **Chemin de chargement des éléments** est le chemin d’accès aux propriétés de nœud qui est utilisé pour charger des valeurs prédéfinies dans ce champ spécifique du formulaire ; par exemple, une [liste déroulante](/help/sites-authoring/default-components-foundation.md#dropdown-list), un [groupe de cases à cocher](/help/sites-authoring/default-components-foundation.md#checkbox-group) ou un [groupe de cases d’option](/help/sites-authoring/default-components-foundation.md#radio-group).
 
-### Exemple – Préchargement de plusieurs valeurs dans liste déroulante {#example-preloading-a-dropdown-list-with-multiple-values}
+### Exemple : préchargement d’une liste déroulante avec plusieurs valeurs {#example-preloading-a-dropdown-list-with-multiple-values}
 
-Une liste déroulante peut être configurée avec votre plage de valeurs en vue de leur sélection.
+Une liste déroulante peut être configurée avec votre plage de valeurs à sélectionner.
 
-Le **Chemin de chargement des éléments** peut être utilisé pour accéder à une liste à partir d’un dossier du référentiel et précharger les valeurs dans le champ :
+Le **Chemin de chargement des éléments** peut être utilisé pour accéder à une liste à partir d’un dossier du référentiel et les précharger dans le champ :
 
 1. Créez un dossier sling ( `sling:Folder`)
 
@@ -73,7 +77,7 @@ Le **Chemin de chargement des éléments** peut être utilisé pour accéder à 
 
 1. Ajoutez une nouvelle propriété (`myList`, par exemple) de type chaîne à plusieurs valeurs (`String[]`) pour contenir la liste des éléments. Le contenu peut être également importé à l’aide d’un script (script JSP ou curl dans un script shell).
 
-1. Utilisez le chemin complet dans le champ **Chemin de chargement des éléments** :
+1. Utilisez le chemin d’accès complet dans la variable **Chemin de chargement des éléments** field :
 
    par exemple, `/etc/designs/geometrixx/formlistvalues/myList`
 
@@ -88,13 +92,13 @@ AEM génère la liste sous la forme suivante :
 * `<option value="AL">Alabama</option>`
 * `<option value="AK">Alaska</option>`
 
-Cette fonction peut, par exemple, être utilisée à bon escient dans un environnement multilingue.
+Cette fonctionnalité peut, par exemple, être utilisée dans un paramètre multilingue.
 
 ### Développement de vos propres actions de formulaire {#developing-your-own-form-actions}
 
-Un formulaire requiert une action. Une action définit l’opération qui est effectuée lorsque le formulaire est envoyé avec les données utilisateur.
+Un formulaire requiert une action. Une action définit l’opération exécutée lorsque le formulaire est envoyé avec les données utilisateur.
 
-Un ensemble d’actions est fourni avec une installation AEM standard. Ces actions sont disponibles sous :
+Une série d’actions est fournie avec une installation d’AEM standard ; vous pouvez les voir sous :
 
 `/libs/foundation/components/form/actions`
 
@@ -121,11 +125,11 @@ Vous pouvez ajouter votre propre action sous `/apps` en procédant comme suit :
       * `jcr:title` : indiquez un titre de votre choix ; il sera affiché dans la liste de sélection déroulante. S’il n’est pas défini, c’est le nom du nœud qui est affiché.
       * `jcr:description` : indiquez la description de votre choix.
 
-1. Dans le dossier, créez un nœud de boîte de dialogue :
+1. Dans le dossier , créez un noeud de boîte de dialogue :
 
-   1. Ajoutez des champs afin que l’auteur puisse modifier la boîte de dialogue des formulaires une fois l’action choisie.
+   1. Ajoutez des champs afin que l’auteur puisse modifier la boîte de dialogue des formulaires une fois l’action sélectionnée.
 
-1. Dans le dossier, vous pouvez effectuer l’une des opérations suivantes :
+1. Dans le dossier , créez :
 
    1. Créer un script de publication.
 
@@ -188,22 +192,22 @@ Vous pouvez ajouter votre propre action sous `/apps` en procédant comme suit :
 
       Ce script peut être utilisé pour effectuer le nettoyage.
 
-1. Utilisez le composant **Forms** dans un système de paragraphes (parsys). Le liste déroulante **Type d’action** contient désormais votre nouvelle action.
+1. Utilisez la variable **Forms** dans un parsys. Le **Type d’action** comprend désormais votre nouvelle action.
 
    >[!NOTE]
    >
-   >Pour afficher les actions par défaut qui font partie du produit :
+   >Pour afficher les actions par défaut qui font partie du produit :
    >
    >`/libs/foundation/components/form/actions`
 
 ### Développement de vos propres contraintes de formulaire {#developing-your-own-form-constraints}
 
-Les contraintes peuvent être imposées à deux niveaux :
+Les contraintes peuvent être imposées à deux niveaux :
 
-* Pour des [champs individuels (appliquez la procédure suivante)](#constraints-for-individual-fields)
-* En tant que [validation globale du formulaire](#form-global-constraints)
+* Pour [champs individuels (voir la procédure suivante)](#constraints-for-individual-fields)
+* As [validation globale de formulaire](#form-global-constraints)
 
-#### Contraintes pour les différents champs {#constraints-for-individual-fields}
+#### Contraintes pour les champs individuels {#constraints-for-individual-fields}
 
 Vous pouvez ajouter vos propres contraintes pour un champ spécifique (sous `/apps`), en procédant comme suit :
 
@@ -234,11 +238,11 @@ Vous pouvez ajouter vos propres contraintes pour un champ spécifique (sous `/ap
 
       Le nom du script est `servervalidation.<extension>`, par exemple : `servervalidation.jsp`
 
-      Il est appelé lorsque le formulaire est envoyé. Il peut être utilisé pour valider le champ sur le serveur une fois qu’il a été envoyé.
+      Il est appelé lorsque le formulaire est envoyé. Il peut être utilisé pour valider le champ sur le serveur après son envoi.
 
 >[!NOTE]
 >
->Des exemples de contraintes sont visibles à l’emplacement suivant :
+>Vous trouverez des exemples de contraintes sous :
 >
 >`/libs/foundation/components/form/constraints`
 
@@ -253,26 +257,26 @@ Vous pouvez ensuite définir :
 * un `clientvalidation.jsp`, injecté après les scripts de validation de client du champ
 * et un `servervalidation.jsp`, également appelé après les validations des différents champs lors d’un `POST`.
 
-### Affichage et masquage de composants de formulaire {#showing-and-hiding-form-components}
+### Affichage et masquage des composants de formulaire {#showing-and-hiding-form-components}
 
-Vous pouvez configurer votre formulaire de manière à afficher ou masquer des composants de formulaire en fonction de la valeur d’autres champs du formulaire.
+Vous pouvez configurer votre formulaire pour afficher ou masquer les composants de formulaire en fonction de la valeur d’autres champs du formulaire.
 
-Changer la visibilité d’un champ de formulaire est utile lorsque le champ est requis uniquement dans certaines conditions. Par exemple, sur un formulaire de commentaires une question demande aux clients s’ils souhaitent recevoir les informations sur les produits par courrier électronique. Lorsque « oui » est sélectionné, un champ de texte s’affiche pour permettre au client de saisir son adresse de courrier électronique.
+La modification de la visibilité d’un champ de formulaire est utile lorsque le champ n’est nécessaire que dans des conditions spécifiques. Par exemple, sur un formulaire de commentaire, une question demande aux clients s’ils souhaitent que des informations sur les produits leur soient envoyées par courrier électronique. Lorsque vous sélectionnez oui, un champ de texte s’affiche pour permettre au client de saisir son adresse électronique.
 
 Utilisez la boîte de dialogue **Modifier les règles Afficher / Masquer** pour spécifier dans quelles conditions un composant de formulaire est affiché ou masqué.
 
 ![showhideeditor](assets/showhideeditor.png)
 
-Utilisez les champs en haut de la boîte de dialogue pour spécifier les informations suivantes :
+Utilisez les champs situés en haut de la boîte de dialogue pour spécifier les informations suivantes :
 
-* Si vous spécifiez les conditions d’affichage ou de masquage du composant.
-* Si une ou toutes les conditions doivent être vraies pour afficher ou masquer le composant.
+* Indique si vous spécifiez des conditions pour masquer ou afficher le composant.
+* Si toutes les conditions doivent être vraies pour afficher ou masquer le composant.
 
 Une ou plusieurs conditions s’affichent sous ces champs. Une condition compare la valeur d’un autre composant de formulaire (sur le même formulaire) à une valeur. Si la valeur réelle dans le champ remplit la condition, cette dernière est évaluée comme étant vraie. Les conditions comprennent les informations suivantes :
 
-* Le titre du champ de formulaire testé.
+* Titre du champ de formulaire testé.
 * Un opérateur.
-* Une valeur à laquelle la valeur du champ est comparée.
+* Une valeur par rapport à avec la valeur du champ est comparée.
 
 Par exemple, un composant Groupe de cases d’option avec le titre `Receive email notifications?`* * contient des boutons radio `Yes` et `No`. Un composant de champ de texte avec le titre `Email Address` utilise la condition suivante selon laquelle il est visible lorsque l’option `Yes` est sélectionnée :
 
@@ -286,15 +290,15 @@ Dans JavaScript, les conditions utilisent la valeur de la propriété Nom de l�
 
 1. Modifiez le composant de formulaire spécifique.
 
-1. Sélectionnez **Afficher/masquer** pour ouvrir la boîte de dialogue **Modifier Afficher / Masquer les règles** :
+1. Sélectionner **Afficher/masquer** pour ouvrir le **Modifier Afficher / Masquer les règles** dialog :
 
-   * Dans la première liste déroulante, sélectionnez **Afficher** ou **Masquer** pour spécifier si vos conditions déterminent si le composant doit être affiché ou masqué.
-   * Dans la liste déroulante située à la fin de la ligne supérieure, sélectionnez :
+   * Dans la première liste déroulante, sélectionnez l’une des options suivantes : **Afficher** ou **Masquer** pour indiquer si vos conditions déterminent si le composant doit être affiché ou masqué.
+   * Dans la liste déroulante située à la fin de la ligne supérieure, sélectionnez :
 
-      * **toutes** si toutes les conditions doivent être vraies pour afficher ou masquer le composant.
-      * **n’importe quelle(s)** si uniquement une ou plusieurs conditions doivent être vraies pour afficher ou masquer le composant.
-   * Dans la ligne de condition (une est présentée par défaut), sélectionnez un composant et un opérateur, puis spécifiez une valeur.
-   * Si nécessaire, ajoutez d’autres conditions en cliquant sur **Ajouter une condition**.
+      * **all** : si toutes les conditions doivent être vraies pour afficher ou masquer le composant.
+      * **any** - si une ou plusieurs conditions doivent être vraies pour afficher ou masquer le composant
+   * Dans la ligne de condition (une valeur est présentée par défaut), sélectionnez un composant, un opérateur, puis spécifiez une valeur.
+   * Ajoutez d’autres conditions si nécessaire en cliquant sur **Ajouter une condition**.
 
    Par exemple :
 
@@ -302,7 +306,7 @@ Dans JavaScript, les conditions utilisent la valeur de la propriété Nom de l�
 
 1. Cliquez sur **OK** pour enregistrer la définition.
 
-1. Une fois votre définition enregistrée, un lien **Modifier les règles** s’affiche en regard de l’option **Afficher/masquer** dans les propriétés du composant de formulaire. Cliquez sur ce lien pour ouvrir la boîte de dialogue **Modifier Afficher / Masquer les règles** afin d’effectuer des modifications.
+1. Après avoir enregistré votre définition, une **Modifier des règles** s’affiche en regard du lien **Afficher/masquer** dans les propriétés du composant de formulaire. Cliquez sur ce lien pour ouvrir la **Modifier Afficher / Masquer les règles** pour apporter des modifications.
 
    Cliquez sur **OK** pour enregistrer toutes les modifications.
 
@@ -313,10 +317,10 @@ Dans JavaScript, les conditions utilisent la valeur de la propriété Nom de l�
    >Les effets de l’affichage ou du masquage des définitions peuvent être consultés et testés :
    >
    >* dans le mode **Aperçu** de l’environnement de création (une page doit être rechargée la première fois que vous basculez vers ce mode) ;
-   >* dans l’environnement de publication.
+   >* dans l’environnement de publication
 
 
-#### Gestion de références de composant interrompues {#handling-broken-component-references}
+#### Gestion des références de composants rompues {#handling-broken-component-references}
 
 Les conditions Afficher / Masquer utilisent la valeur de la propriété Nom de l’élément pour faire référence aux autres composants dans le formulaire. La configuration Afficher / Masquer n’est pas valide lorsque l’une des conditions fait référence à un composant qui est supprimé ou dont la propriété Nom de l’élément a été modifiée. Dans ce cas, vous devez mettre à jour manuellement les conditions, sans quoi une erreur se produira au chargement du formulaire.
 

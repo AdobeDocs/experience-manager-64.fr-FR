@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 role: Developer
 exl-id: fa9d0720-f4bf-4933-ae63-c24bb835cc60
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 100%
+source-wordcount: '2118'
+ht-degree: 98%
 
 ---
 
 # Déterminer la compatibilité des documents avec le format PDF/A {#determining-whether-documents-are-pdf-a-compliant}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez déterminer si un document PDF est compatible avec le format PDF/A à l’aide du service Assembler. Un document PDF/A existe en tant que format d’archivage, prévu pour la conservation sur le long terme du contenu d’un document. Les polices sont incorporées dans le document et le fichier est décompressé. Par conséquent, un document PDF/A est généralement plus volumineux qu’un document PDF standard. De plus, un document PDF/A ne contient aucune donnée audio et vidéo.
 

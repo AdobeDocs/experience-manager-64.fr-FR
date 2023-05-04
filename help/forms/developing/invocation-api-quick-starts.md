@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 role: Developer
 exl-id: dcfc1c9f-fedd-4e00-9b09-19268620fc6d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 100%
+source-wordcount: '1271'
+ht-degree: 97%
 
 ---
 
 # Démarrages rapides de l’API d’appel {#invocation-api-quick-starts}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les didacticiels de démarrage rapide suivants sont disponibles pour appeler par programmation les services AEM Forms :
 

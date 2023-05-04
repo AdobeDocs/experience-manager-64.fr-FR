@@ -1,7 +1,7 @@
 ---
-title: Suppression des sites Geometrixx
+title: Suppression des sites de Geometrixx
 seo-title: Removing the Geometrixx Sites
-description: Découvrez comment supprimer l’échantillon de contenu Geometrixx.
+description: Découvrez comment supprimer l’exemple de contenu de Geometrixx.
 seo-description: Learn how to remove the sample Geometrixx content.
 uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
@@ -9,18 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
 exl-id: 495031fb-b559-4071-abc4-93d238ce136d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 100%
+source-wordcount: '168'
+ht-degree: 38%
 
 ---
 
-# Suppression des sites Geometrixx{#removing-the-geometrixx-sites}
+# Suppression des sites de Geometrixx{#removing-the-geometrixx-sites}
 
-AEM s’accompagne d’un ensemble de sites web Geometrixx donnés à titre d’exemple. Vous pouvez supprimer cet échantillon de contenu à l’aide du **gestionnaire de modules**.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Les différents modules liés à geometrixx sont les suivants :
+AEM s’accompagne d’un ensemble de sites web Geometrixx donnés à titre d’exemple. Vous pouvez supprimer cet exemple de contenu via la fonction **Gestionnaire de modules**.
+
+Les packages individuels liés à geometrixx sont les suivants :
 
 * `cq-geometrixx-outdoors-ugc-pkg-*<version>*.zip`
 * `cq-geometrixx-pkg-*<version>*.zip`
@@ -32,13 +36,13 @@ Les différents modules liés à geometrixx sont les suivants :
 * `cq-geometrixx-commons-pkg-*<version>*.zip`
 * `cq-geometrixx-media-pkg-*<version>*.zip`
 
-Pour supprimer un module, il vous suffit de cliquer sur **Désinstaller** sur celui-ci.
+Pour supprimer un module individuel, cliquez simplement sur **Désinstaller** sur ce paquet.
 
-Un super module est également disponible :
+Il existe également un super package :
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Ce super module contient l’ensemble des modules mentionnés ci-dessus. Pour supprimer, en une fois, l’ensemble du contenu relatif à geometrixx, cliquez sur **Désinstaller** sur ce module. Le super module passe alors dans le statut désinstallé et tous les modules qui le composent disparaissent de la vue du gestionnaire de modules.
+Ce package comprend tous les packages individuels ci-dessus. Pour supprimer tout le contenu associé à geometrixx à la fois, cliquez sur **Désinstaller** sur ce paquet. Le super package passe alors dans le statut désinstallé et tous les packages qui le composent disparaissent de la vue du gestionnaire de packages.
 
 Vous disposez à présent d’une instance AEM « vide », sans aucun site de démonstration.
 

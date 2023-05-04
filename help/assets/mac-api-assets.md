@@ -5,23 +5,27 @@ contentOwner: AG
 feature: APIs,Assets HTTP API,Developer Tools
 role: Developer
 exl-id: 3d7d078c-5046-489a-a8e0-258acaea7191
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 99%
+source-wordcount: '1588'
+ht-degree: 94%
 
 ---
 
 # API HTTP Assets {#assets-http-api}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 L’API HTTP Assets permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources numériques, notamment les métadonnées, les rendus et les commentaires, ainsi que sur des contenus structurés grâce à des fragments de contenu [!DNL Experience Manager]. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST.
 
-Pour accéder à l’API, procédez comme suit :
+Pour accéder à l’API :
 
 1. Ouvrez le document du service API à l’adresse `https://[hostname]:[port]/api.json`.
 1. Suivez le lien du service Assets pointant vers `https://[hostname]:[server]/api/assets.json`.
 
-La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers PDF. Vous pouvez faire appel au code de réponse pour d’autres analyses ou actions.
+La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers de PDF. Reposez sur le code de réponse pour une analyse ou des actions plus approfondies.
 
 Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] ni par le biais de l’API HTTP. L’API renvoie un message d’erreur 404 si l’[!UICONTROL heure d’activation] se situe dans le futur ou si l’[!UICONTROL heure de désactivation] se situe dans le passé.
 
@@ -31,11 +35,11 @@ Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne 
 
 ## Modèle de données {#data-model}
 
-L’API HTTP Assets présente deux éléments principaux : des dossiers et des ressources (pour les ressources standard).
+L’API HTTP Assets expose deux éléments principaux, les dossiers et les ressources (pour les ressources standard).
 
 ### Dossiers {#folders}
 
-Les dossiers sont comparables aux répertoires des systèmes de fichiers traditionnels. Ils font office de conteneurs pour d’autres dossiers ou ressources. Les dossiers se composent des éléments suivants :
+Les dossiers sont comparables aux répertoires des systèmes de fichiers traditionnels. Il s’agit de conteneurs pour d’autres dossiers ou assertions. Les dossiers se composent des éléments suivants :
 
 **Entités** : les entités d’un dossier sont ses éléments enfants qui peuvent, à leur tour, être des dossiers et des ressources.
 

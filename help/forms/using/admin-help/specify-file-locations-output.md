@@ -1,7 +1,7 @@
 ---
-title: Définition des emplacements de fichiers pour Output
+title: Définir les emplacements de fichiers pour Output
 seo-title: Specify file locations for Output
-description: Découvrez comment indiquer les emplacements de fichier pour Output.
+description: Découvrez comment spécifier des emplacements de fichiers pour Output.
 seo-description: Learn how to specify file locations for Output.
 uuid: 3287274f-85b5-4811-8abb-d347a9b80947
 contentOwner: admin
@@ -10,24 +10,28 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
 exl-id: 5b8f04dd-6781-4126-8bb2-5d8b7a2f19c8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '350'
+ht-degree: 55%
 
 ---
 
-# Définition des emplacements de fichiers pour Output {#specify-file-locations-for-output}
+# Définir les emplacements de fichiers pour Output {#specify-file-locations-for-output}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez spécifier les emplacements dans lesquels Output recherche certains types de fichiers requis.
 
-1. Dans la console d’administration, cliquez sur Services > Output.
-1. Sous Emplacements, définissez les options appropriées.
+1. Dans Administration Console, cliquez sur Services > Output.
+1. Sous Emplacements, spécifiez les options appropriées.
 1. Cliquez sur Enregistrer.
 
 ## Paramètres des emplacements {#locations-settings}
 
-**URI racine du contenu :** URI ou emplacement absolu du répertoire de récupération des formulaires. Cette valeur est combinée avec le paramètre sForm, indiqué via l’API, pour construire l’URL absolue vers le formulaire à récupérer. Cette valeur peut faire référence à un répertoire ou à un emplacement Web accessible par HTTP.
+**URI racine du contenu :** URI ou emplacement absolu du répertoire de récupération des formulaires. Cette valeur est combinée avec le paramètre sForm, indiqué via l’API, pour construire l’URL absolue vers le formulaire à récupérer. Cette valeur peut référencer un répertoire ou un emplacement web accessible via HTTP.
 
 La valeur par défaut est une chaîne vide.
 
@@ -35,7 +39,7 @@ La valeur par défaut est une chaîne vide.
 
 La valeur par défaut est `com/adobe/formServer/PA/pa_output.xci`.
 
-**Emplacement du cache :** détermine l’emplacement du cache disque d’Output. Lorsque ce paramètre est modifié, toutes les informations concernant le cache de l’emplacement courant sont réinitialisées et un nouveau cache est créé dans le nouveau répertoire. Sélectionnez l’une des options suivantes :
+**Emplacement du cache :** détermine l’emplacement du cache disque d’Output. Lorsque vous modifiez ce paramètre, toutes les informations de cache existantes de l’emplacement actuel sont réinitialisées et un nouveau cache est créé au nouvel emplacement. Sélectionnez l’une des options suivantes :
 
 **Emplacement par défaut :** il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
 
@@ -47,4 +51,4 @@ La valeur par défaut est `com/adobe/formServer/PA/pa_output.xci`.
 
 >[!NOTE]
 >
->Si vous utilisez un utilitaire de nettoyage des répertoires temporaires, sachez que si la suppression de ces répertoires n’affecte pas les fonctionnalités, elle réduit considérablement les performances pendant une courte période, jusqu’à ce que le nouveau cache soit reconstitué. Pour éviter ce problème, ne supprimez pas ces répertoires lorsque vous videz le répertoire temporaire d’AEM forms.
+>Si vous utilisez un utilitaire de nettoyage des répertoires temporaires, sachez que si la suppression de ces répertoires n’affecte pas les fonctionnalités, elle peut affecter considérablement les performances pendant une courte période, jusqu’à la création du nouveau cache. Pour éviter ce problème, ne supprimez pas ces répertoires lors de l’effacement du répertoire temporaire d’AEM forms.

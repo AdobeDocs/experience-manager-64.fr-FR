@@ -1,7 +1,7 @@
 ---
-title: Utilisation d’expressions SOM dans des formulaires adaptatifs
+title: Utiliser des expressions SOM dans des formulaires adaptatifs
 seo-title: Using SOM expressions in adaptive forms
-description: Découvrez comment extraire les expressions SOM d’un panneau de formulaire adaptatif.
+description: Découvrez comment extraire les expressions SOM d’un panneau d’un formulaire adaptatif.
 seo-description: Learn how to extract SOM expressions of a panel of an adaptive form.
 uuid: 4bc80e2a-3563-48a3-996d-021b701bc2ee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -9,18 +9,22 @@ topic-tags: develop
 discoiquuid: 7dff7ef2-80d1-434a-b9b0-ac6654736602
 feature: Adaptive Forms
 exl-id: e4680ede-6a02-4b8b-8a6f-9599a05da8e7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 98%
+source-wordcount: '363'
+ht-degree: 53%
 
 ---
 
-# Utilisation d’expressions SOM dans des formulaires adaptatifs {#using-som-expressions-in-adaptive-forms}
+# Utiliser des expressions SOM dans des formulaires adaptatifs {#using-som-expressions-in-adaptive-forms}
 
-Les formulaires adaptatif sont modélisés comme des pages AEM, représentées par des structures de contenu JCR dans le référentiel AEM. L’élément clé de la structure de contenu est le nœud du guideContainer. Sous le guideContainer, il existe un rootPanel pouvant contenir un panneau et des champs imbriqués.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Vous pouvez utiliser un modèle d’objet de script (SOM) pour référencer des valeurs, des propriétés et des méthodes dans un modèle d’objet de document (DOM) particulier. Un DOM organise les objets et les propriétés de mémoire dans une arborescence. Une expression SOM référence des champs ou des éléments de dessin et des panneaux.
+Les formulaires adaptatifs sont modélisés comme AEM Page qui est représenté comme structure de contenu JCR dans AEM référentiel. L’élément clé de la structure de contenu est le noeud guideContainer . Sous le guideContainer, il existe un rootPanel qui peut contenir un panneau et des champs imbriqués.
+
+Vous pouvez utiliser un modèle d’objet de script (SOM) pour référencer des valeurs, des propriétés et des méthodes dans un modèle d’objet de document (DOM) particulier. Un DOM organise les objets et les propriétés de mémoire dans une hiérarchie d’arborescence. Une expression SOM référence des champs/éléments de dessin et des panneaux.
 
 L’image suivante illustre une structure de nœud d’un formulaire adaptatif traduite lorsque vous ajoutez des composants à un formulaire. Par exemple, vous pouvez ajouter un panneau au panneau racine et un bouton radio au panneau transformé en DOM à l’exécution. L’expression SOM du champ de bouton radio du formulaire adaptatif est spécifiée comme `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
 
@@ -30,7 +34,7 @@ Une expression SOM pour tout élément dans un formulaire adaptatif est précéd
 
 ![Arborescence DOM à deux boutons radio](assets/hierarchy_radio_button.png)
 
-L’expression SOM change lorsque vous modifiez la position des boutons radio dans le formulaire adaptatif. Dans le mode création, vous pouvez afficher l’expression SOM d’un champ ou d’un élément dans AEM Forms à l’aide de l’option Visualiser l’expression SOM. L’option apparaît dans le panneau et lorsque vous cliquez avec le bouton droit sur le champ ou sur l’élément.
+L’expression SOM change lorsque vous modifiez la position des boutons radio dans le formulaire adaptatif. En mode création, vous pouvez afficher l’expression SOM d’un champ ou d’un élément dans AEM Forms à l’aide de l’option Afficher l’expression SOM . L’option apparaît dans le panneau et lorsque vous cliquez avec le bouton droit sur le champ ou sur l’élément.
 
 ![Extraction des expressions SOM dans un formulaire adaptatif](assets/som-expressions.png)
 

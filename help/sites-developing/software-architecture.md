@@ -1,7 +1,7 @@
 ---
 title: Architecture logicielle
 seo-title: Software Architecture
-description: Meilleures pratiques pour la conception de votre logiciel
+description: Bonnes pratiques pour la conception de vos logiciels
 seo-description: Best practices for architecting your software
 uuid: a557f6ca-c3f1-486e-a45e-6e1f986fab41
 contentOwner: User
@@ -10,16 +10,20 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 exl-id: 4c5896a4-d3f4-4278-9af3-538ab10cd210
-source-git-commit: b7d1a2435e33d4fdd1d030d81ff1ca1b65700fa6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 100%
+source-wordcount: '650'
+ht-degree: 86%
 
 ---
 
 # Architecture logicielle{#software-architecture}
 
-## Prise en compte des mises à niveau lors de la conception {#design-for-upgrades}
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+## Conception pour les mises à niveau {#design-for-upgrades}
 
 Lors de l’extension de comportements prêts à l’emploi, il convient de garder à l’esprit les mises à niveau. Appliquez toujours des personnalisations dans le répertoire /apps et superposez-les au-dessus des nœuds correspondants dans le répertoire /libs ou utilisez sling:resourceSuperType pour étendre le comportement standard. Bien que quelques modifications puissent s’avérer nécessaires pour la prise en charge d’une nouvelle version d’AEM, cette dernière ne devrait normalement pas écraser vos personnalisations si cette pratique est observée.
 
@@ -33,15 +37,15 @@ Définir les composants qui peuvent être inclus dans chaque système de paragra
 
 ### Développement d’une architecture SOLID {#develop-a-solid-architecture}
 
-SOLID est un acronyme qui décrit cinq principes architecturaux qu’il convient de respecter :
+SOLID est un acronyme qui décrit cinq principes architecturaux qui doivent être respectés :
 
 * **S** ingle Responsibility Principle (Principe de responsabilité unique) - Chaque module, classe, méthode ne doit servir qu’à une seule chose.
 * **O** pen/Closed Principle (Principe ouvert/fermé) - Les modules doivent être ouverts pour être étendus et fermés pour être modifiés.
 * **L** iskov Substitution Principle (Principe de substitution de Liskov) - Les types doivent pouvoir être remplacés par leurs sous-types.
 * **I** nterface Segregation Principle (Principe de ségrégation des interfaces) - Aucun client ne devrait être forcé de dépendre de méthodes qu’il n’utilise pas.
-* **D** ependency Inversion Principle (Principe d’inversion des dépendances) - Le modules de haut niveau ne doivent pas dépendre de modules de bas niveau. Les deux doivent dépendre d’abstractions. Les abstractions ne doivent pas dépendre des détails. Les détails doivent dépendre des abstractions.
+* **D** ependency Inversion Principle (Principe d’inversion des dépendances) - Le modules de haut niveau ne doivent pas dépendre de modules de bas niveau. Les deux doivent dépendre d&#39;abstractions. Les abstractions ne doivent pas dépendre des détails. Les détails doivent dépendre d’abstractions.
 
-Vous devez vous efforcer de respecter ces cinq principes pour élaborer un système offrant une stricte séparation des préoccupations.
+S&#39;efforcer de respecter ces cinq principes devrait aboutir à un système qui se distingue strictement des préoccupations.
 
 >[!TIP]
 >

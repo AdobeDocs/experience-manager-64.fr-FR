@@ -1,7 +1,7 @@
 ---
-title: Minimisation des fichiers JavaScript
+title: Minimiser les fichiers JavaScript
 seo-title: Minification of the JavaScript files
-description: Instructions permettant de générer du code minimisé après des personnalisations de l’espace de travail AEM Forms pour optimiser les fichiers JS pour le Web.
+description: Instructions de génération du code minimisé après les personnalisations de l’espace de travail AEM Forms afin d’optimiser les fichiers JS pour le web.
 seo-description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
@@ -10,24 +10,28 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 exl-id: 8394151e-e9cf-4f68-97a3-ba1d1dd6a2d2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 100%
+source-wordcount: '219'
+ht-degree: 50%
 
 ---
 
-# Minimisation des fichiers JavaScript {#minification-of-the-javascript-files}
+# Minimiser les fichiers JavaScript {#minification-of-the-javascript-files}
 
-La minimisation supprime du code source les caractères redondants, comme les espaces blancs, les nouvelles lignes et les commentaires. Cela améliore les performances en réduisant la taille du code. La minimisation n’a aucun impact sur la fonctionnalité et réduit la lisibilité du code.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Pour générer un code minimisé pour les modifications sémantiques, effectuez les étapes suivantes.
+La minimisation supprime du code source les caractères redondants, comme les espaces blancs, les nouvelles lignes et les commentaires. Cela améliore les performances en réduisant la taille du code. Bien que la minimisation n’ait aucune incidence sur les fonctionnalités, elle réduit la lisibilité du code.
+
+Pour générer du code minimisé pour les modifications sémantiques, procédez comme suit.
 
 1. Copiez `client-html/src/main/webapp/js` de src-package dans filesystem.
 
    >[!NOTE]
    >
-   >Voir [Introduction à la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour plus d’informations sur les paquets.
+   >Voir [Introduction à la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour plus d’informations sur les packages.
 
 1. Mettez à jour les chemins dans `main.js` sous client-html/src/main/webapp/js, pour added/updated models/views.
 
@@ -59,18 +63,18 @@ Pour générer un code minimisé pour les modifications sémantiques, effectuez 
                service="service"/>
    ```
 
-1. Dans client-html/src/main/webapp/js/minifier, exécutez la commande :
+1. Sur client-html/src/main/webapp/js/minifier, exécutez la commande :
 
    ```shell
    mvn clean install
    ```
 
-   Elle génère un dossier minified-files, sous client-html/src/main/webapp/js avec main.js et registre.js minifiés.
+   Il génère un dossier minified-files, sous client-html/src/main/webapp/js avec main.js minifié et registry.js.
 
 >[!NOTE]
 >
->la minimisation fonctionne uniquement sur les JVM 64 bits.
+>La minimisation fonctionne uniquement sur JVM 64 bits.
 
 >[!NOTE]
 >
->la minimisation a des effets sur la mise à niveau.
+>Si vous réduisez, la mise à niveau est affectée.

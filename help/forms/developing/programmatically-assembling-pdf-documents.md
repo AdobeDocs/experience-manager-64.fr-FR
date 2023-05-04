@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 role: Developer
 exl-id: be09271b-3004-4866-b43b-fb03c91305ec
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2110'
-ht-degree: 100%
+source-wordcount: '2146'
+ht-degree: 98%
 
 ---
 
 # Assembler les documents PDF par programmation {#programmatically-assembling-pdf-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez utiliser l’API du service Assembler pour assembler plusieurs documents PDF en un seul document PDF. L’illustration suivante présente trois documents PDF fusionnés en un seul document PDF.
 

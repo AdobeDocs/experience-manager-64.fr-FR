@@ -1,5 +1,5 @@
 ---
-title: Importation et gestion des applications
+title: Importer et gérer des applications
 seo-title: Import and manage applications
 description: Découvrez comment importer et gérer des applications.
 seo-description: Learn how to import and manage applications.
@@ -10,107 +10,111 @@ geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archiv
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
 exl-id: 81a48c01-8052-47b1-be39-e126c37c7f0f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 98%
+source-wordcount: '856'
+ht-degree: 3%
 
 ---
 
-# Importation et gestion des applications{#import-and-manage-applications}
+# Importer et gérer des applications{#import-and-manage-applications}
 
-Dans AEM forms, une *application* est un conteneur destiné à stocker des actifs nécessaires à la mise en œuvre d’une solution AEM forms. Ces actifs peuvent être des conceptions de formulaires, des fragments de formulaires, des images, des processus, des fichiers DDX, des guides de formulaires, des pages HTML et des fichiers SWF. Durant la phase de développement d’un projet, les utilisateurs de Workbench peuvent déployer des applications directement à partir de l’affichage Applications dans Workbench. Une fois déployées, ces applications s’affichent dans Administration Console, dans l’onglet Applications de la page Gestion des applications.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Lorsqu’une application est terminée et prête à être déployée sur un serveur de production, l’utilisateur de Workbench crée un package de l’application sous forme de *fichier d’application AEM forms* (.lca). Un administrateur se sert ensuite d’Administration Console pour importer et déployer ce fichier d’application, à l’aide de l’onglet Applications de la page Gestion des applications.
+Dans AEM formulaires, une *application* est un conteneur destiné à stocker les ressources requises pour la mise en oeuvre d’une solution d’AEM forms. Les conceptions de formulaire, les fragments de formulaire, les images, les processus, les fichiers DDX, les guides de formulaire, les pages de HTML et les fichiers de SWF sont des exemples de ressources. Pendant la phase de développement d’un projet, les utilisateurs de Workbench peuvent déployer des applications directement à partir de la vue Applications de Workbench. Une fois déployées, ces applications s’affichent dans Administration Console, dans l’onglet Applications de la page Gestion des applications.
 
-Vous pouvez également utiliser l’onglet Archives de la page Gestion des applications pour importer les fichiers LCA créés à l’aide de Workbench 8.x.
+Lorsqu’une application est terminée et prête à être déployée sur un serveur de production, l’utilisateur de Workbench la regroupe en une *AEM fichier d’application de formulaires* (.lca). Ensuite, un administrateur utilise Administration Console pour importer et déployer le fichier de l’application, à l’aide de l’onglet Applications de la page Gestion des applications.
+
+Vous pouvez également utiliser l’onglet Archives de la page Gestion des applications pour importer les fichiers LCA créés à l’aide de Workbench 8.x.
 
 >[!NOTE]
 >
->la compatibilité des fichiers LCA issus d’une version ultérieure n’est pas nécessairement ascendante ; il s’agit là d’un problème connu. Bien qu’il soit possible d’afficher et d’importer des fichiers LCA d’une version ultérieure d’AEM forms (par exemple, d’une version non définitive), cette opération n’est pas prise en charge et peut entraîner un comportement aberrant.
+>Il existe un problème connu selon lequel les fichiers LCA d’une version ultérieure ne sont pas nécessairement rétrocompatibles. Bien qu’il soit possible d’afficher et d’importer des fichiers LCA à partir d’une version ultérieure d’AEM forms (par exemple, une version d’aperçu), cette opération n’est pas prise en charge et peut entraîner un comportement aberrant.
 
-Importez et gérez les applications créées avec Workbench dans l’onglet Applications. Les administrateurs d’applications peuvent également exporter la configuration d’exécution pour une application. L’exportation de la configuration d’exécution évite d’avoir à reconfigurer manuellement les paramètres dans l’environnement de production avant d’exécuter les applications déployées. Le fichier de configuration d’exécution contient les éléments suivants :
+Utilisez l’onglet Applications pour importer et gérer les applications créées dans Workbench. Les administrateurs d’applications peuvent également exporter la configuration d’exécution d’une application. L’exportation de la configuration d’exécution élimine la nécessité de reconfigurer manuellement les paramètres dans l’environnement de production avant de démarrer les applications déployées. Le fichier de configuration d’exécution contient :
 
-* les paramètres de configuration du service ;
-* les paramètres de configuration du pool ;
-* les paramètres de configuration du point de fin ;
-* les paramètres de sécurité.
+* paramètres de configuration du service
+* paramètres de configuration du pool
+* paramètres de configuration des points d’entrée
+* profils de sécurité
 
 ## Importation d’une application ou d’une archive {#import-an-application-or-archive}
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
 1. Cliquez sur Importer.
-1. Cliquez sur Parcourir et sélectionnez le fichier LCA à importer, puis cliquez sur Aperçu. Les informations relatives à l’application s’affichent dans la page Aperçu de l’application.
-1. (Facultatif) Pour afficher une liste des actifs contenus dans l’application, cliquez sur Afficher les éléments.
-1. (Facultatif) Pour déployer les actifs au moment de l’exécution, sélectionnez Déployer les éléments à l’exécution à la fin de l’importation. Si vous ne sélectionnez pas cette option, vous pourrez déployer les actifs ultérieurement.
-1. Cliquez sur Importer. L’application s’affiche dans l’onglet Applications.
-1. Connectez-vous au référentiel CRX avec vos informations d’identification d’administrateur.
-1. Accédez à content/dam/lcapplications.
+1. Cliquez sur Parcourir et sélectionnez le fichier .lca à importer, puis cliquez sur Aperçu. La page Aperçu de l’application affiche des informations sur l’application.
+1. (Facultatif) Pour afficher la liste des actifs contenus dans l’application, cliquez sur Afficher les actifs.
+1. (Facultatif) Pour déployer les actifs au moment de l’exécution, sélectionnez Déployer les actifs au moment de l’exécution lorsque l’importation est terminée. Si vous ne sélectionnez pas cette option, vous pouvez déployer les ressources ultérieurement.
+1. Cliquez sur Importer. L’application apparaît dans l’onglet Applications .
+1. Connectez-vous au référentiel CRX avec les informations d’identification de l’administrateur.
+1. Accédez à content/dam/lcapplications
 
    >[!NOTE]
    >
-   >les applications importées s’affichent dans le nœud lcapplications.
+   >Les applications importées s&#39;affichent dans le noeud lcapplications .
 
 1. Cliquez sur l’une des applications importées.
 
-   L’onglet Propriétés sur le côté droit affiche les propriétés du nœud CRX sélectionné.
+   L’onglet Propriétés à droite affiche les propriétés du noeud CRX sélectionné.
 
-   La propriété **syncState** indique l’état de synchronisation des données entre le serveur AEM forms et le référentiel CRX. Dès que le processus d’importation commence, cet état est défini sur 0 (zéro). Cet état indique que les données ne sont pas synchronisées actuellement. Lorsque les données sont synchronisées, l’état est défini sur 1.
+   Le **syncState** indique l’état de synchronisation des données entre AEM serveur forms et le référentiel CRX. Dès que le processus d’importation commence, cet état est défini sur 0 (zéro). Cet état indique que les données ne sont actuellement pas synchronisées. Lorsque les données sont synchronisées, l’état est défini sur 1.
 
 ## Déploiement d’une application {#deploy-an-application}
 
-Vous pouvez déployer des applications importées par vous-même, ou des applications que des utilisateurs de Workbench ont importées à partir de Workbench.
+Vous pouvez déployer des applications que vous avez importées ou que des utilisateurs de Workbench ont importées depuis Workbench.
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
-1. Cochez la case correspondant à l’application à déployer puis cliquez sur Déployer.
-1. Cliquez sur OK dans la boîte de dialogue de confirmation.
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
+1. Cochez la case en regard de l’application à déployer et cliquez sur Déployer.
+1. Cliquez sur OK dans la boîte de dialogue de confirmation qui s’affiche.
 
 ## Annulation du déploiement d’une application {#undeploy-an-application}
 
-Vous pouvez annuler le déploiement des applications au moment de l’exécution.
+Vous pouvez annuler le déploiement des applications à partir du runtime.
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
-1. Cochez la case correspondant à l’application dont vous souhaitez annuler le déploiement puis cliquez sur Annuler le déploiement.
-1. Cliquez sur OK dans la boîte de dialogue de confirmation.
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
+1. Cochez la case en regard de l’application dont vous souhaitez annuler le déploiement, puis cliquez sur Annuler le déploiement.
+1. Cliquez sur OK dans la boîte de dialogue de confirmation qui s’affiche.
 
 ## Suppression d’une application du serveur {#remove-an-application-from-the-server}
 
 Annulez le déploiement de l’application avant de la supprimer du serveur.
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
-1. Cochez la case correspondant à l’application à supprimer puis cliquez sur Supprimer.
-1. Cliquez sur OK dans la boîte de dialogue de confirmation.
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
+1. Cochez la case en regard de l’application à supprimer, puis cliquez sur Supprimer.
+1. Cliquez sur OK dans la boîte de dialogue de confirmation qui s’affiche.
 
 ## Importation de la configuration d’exécution d’une application {#import-an-application-s-runtime-configuration}
 
-Si un administrateur d’applications a exporté la configuration d’exécution pour une application, vous pouvez l’importer dans l’application déployée. Vous pouvez l’importer à l’aide d’Administration Console ou via le déploiement LCA par scripts.
+Si un administrateur d’applications a exporté la configuration d’exécution pour une application, vous pouvez l’importer dans l’application déployée. Vous pouvez l’importer à l’aide de la console d’administration ou via un déploiement LCA par script.
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
 1. Cliquez sur le nom de l’application.
-1. Cliquez sur Importer configuration d’exécution.
-1. Cliquez sur Parcourir et sélectionnez le fichier XML qui contient la configuration d’exécution.
+1. Cliquez sur Importer la configuration d’exécution.
+1. Cliquez sur Parcourir et sélectionnez le fichier XML contenant la configuration d’exécution.
 1. Cliquez sur Importer.
 
 ## Exportation de la configuration d’exécution d’une application {#export-an-application-s-runtime-configuration}
 
-Vous pouvez exporter les informations de configuration d’exécution des applications déployées.
+Vous pouvez exporter les informations de configuration d’exécution pour les applications déployées.
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
 1. Cliquez sur le nom de l’application.
-1. Cliquez sur Exporter configuration d’exécution et enregistrez le fichier de configuration (XML) généré.
+1. Cliquez sur Exporter la configuration d’exécution et enregistrez le fichier de configuration (XML) généré.
 
-## Déploiement par scripts d’applications AEM forms {#scripted-deployment-of-aem-forms-applications}
+## Déploiement par script des applications AEM forms {#scripted-deployment-of-aem-forms-applications}
 
-Vous pouvez également utiliser un outil de déploiement par scripts pour déployer des fichiers d’application, y compris un fichier settings.xml qui spécifie les paramètres suivants :
+Vous pouvez également utiliser un outil de déploiement par script pour déployer les fichiers d’application, y compris un fichier settings.xml spécifiant les paramètres suivants :
 
-* les paramètres de configuration du service ;
-* les paramètres de configuration du pool ;
-* les paramètres de configuration du point de fin ;
-* les paramètres de sécurité.
+* paramètres de configuration du service
+* paramètres de configuration du pool
+* paramètres de configuration des points d’entrée
+* profils de sécurité
 
-Le déploiement par script vous évite d’avoir à reconfigurer manuellement les paramètres dans l’environnement de production avant d’exécuter les applications déployées.
+Le déploiement par script élimine la nécessité de reconfigurer manuellement les paramètres dans l’environnement de production avant de démarrer les applications déployées.
 
-1. À partir d’une invite de commande, accédez à *[racine aem-forms]*/sdk/misc/Foundation/ArchiveManagement.
-1. Pour des instructions plus détaillées, lisez le fichier ReadMe.txt.
-1. Modifiez manuellement les fichiers scriptedDeploy.bat et sample-files/settings.xml, tel qu’indiqué dans le fichier ReadMe.txt.
-1. Exécutez le fichier scriptedDeploy.bat. Cette action déploie le fichier d’archives AEM forms avec les paramètres de remplacement.
+1. A l’invite de commande, accédez à *[aem-forms root]*/sdk/misc/Foundation/ArchiveManagement.
+1. Consultez le fichier ReadMe.txt pour obtenir des instructions plus détaillées.
+1. Modifiez manuellement les fichiers scriptedDeploy.bat et sample-files/sample.xml comme décrit dans le fichier readme.txt.
+1. Exécutez le fichier scriptedDeploy.bat . Cette action déploie le fichier d’archive d’AEM forms avec les paramètres de remplacement.

@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 exl-id: 9b8c3d1c-a9b1-4dde-9044-46c8f2b22c22
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '735'
 ht-degree: 9%
 
 ---
 
 # Ajout de bibliothèques clientes {#add-clientlibs}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Ajout d’un dossier ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
@@ -38,7 +42,7 @@ Le `categories`La valeur de propriété donnée à cette bibliothèque cliente e
 
 Dans le **[!UICONTROL Propriétés]** pour le nouvel onglet `clientlibs` , saisissez le **`categories`** property:
 
-* Nom :**[!UICONTROL catégories]**
+* Nom : **[!UICONTROL categories]**
 * Type :**[!UICONTROL chaîne]**
 * Valeur : **[!UICONTROL apps.an-scf-sandbox]**
 * Cliquez sur **[!UICONTROL Ajouter]**
@@ -165,7 +169,7 @@ Pour créer un package :
 
 
 * De **[!UICONTROL CRXDE Lite]**, cliquez sur le bouton [Icône Package](http://localhost:4502/crx/packmgr/)
-* Cliquez sur **[!UICONTROL Créer un module]**
+* Cliquez sur **[!UICONTROL Créer un package]**
 
    * Nom du module: `an-scf-sandbox-minimal-pkg`
    * Version: `0.1`

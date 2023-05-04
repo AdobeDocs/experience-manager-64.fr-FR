@@ -8,14 +8,18 @@ content-type: reference
 exl-id: 7cd62a2f-f7c9-40b1-bcd4-5853dadabf1b
 feature: Viewer Presets
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 92%
+source-wordcount: '260'
+ht-degree: 83%
 
 ---
 
 # Application des paramètres prédéfinis de la visionneuse Dynamic Media {#applying-viewer-presets}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Un paramètre prédéfini de visionneuse est un ensemble de paramètres qui déterminent la manière dont les utilisateurs voient les ressources multimédia enrichies sur leurs écrans d’ordinateur et appareils mobiles. Vous pouvez appliquer à une ressource n’importe quel paramètre prédéfini de visionneuse créé par votre administrateur.
 

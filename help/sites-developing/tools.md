@@ -1,7 +1,7 @@
 ---
 title: Outils de test et de suivi
 seo-title: Testing and Tracking Tools
-description: AEM propose une structure pour tester l’interface utilisateur des composants, ainsi qu’un mécanisme destiné au test et au débogage des composants.
+description: AEM fournit une structure pour le test de l’interface utilisateur des composants et un mécanisme pour le test et le débogage des composants.
 seo-description: AEM provides a framework for testing component UI and a mechanism for testing and debugging components
 uuid: 29c43202-0a4e-41ba-9176-92fa77c627d5
 contentOwner: Guillaume Carlino
@@ -10,57 +10,61 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
 exl-id: 9387cdb4-f8de-4229-90d1-59218ac17561
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 96%
+source-wordcount: '327'
+ht-degree: 14%
 
 ---
 
 # Outils de test et de suivi{#testing-and-tracking-tools}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Tests {#testing}
 
-AEM fournit les éléments suivants :
+AEM fournit :
 
 * [Un framework pour tester l’interface utilisateur des composants](/help/sites-developing/hobbes.md).
-* [Un mécanisme pour tester et déboguer les composants](/help/sites-developing/developer-mode.md).
+* [un mécanisme de test et de débogage des composants ;](/help/sites-developing/developer-mode.md).
 
-Les deux outils suivants sont des outils de test Open Source :
+Voici deux outils de test Open Source :
 
 **Selenium**
 
-Selenium est utilisé pour le test de fonctions dans un navigateur avec un seul utilisateur par activité. Il enregistre les étapes de test (clics) sous la forme de tableaux HTML ou de classes Java.
+Selenium est utilisé pour le test des fonctions dans un navigateur avec un utilisateur par activité. Il enregistre les étapes de test (clics) sous la forme de tables de HTML ou de classes Java.
 
 Pour plus d’informations, consultez [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 
-JMeter est utilisé pour effectuer le suivi des demandes. Il peut être utilisé dans le cadre de tests fonctionnels, de tests des performances et de tests de contrainte.
+JMeter est utilisé pour effectuer le suivi des demandes et peut être utilisé pour les tests fonctionnels, de performance et de stress.
 
 Pour plus d’informations, voir [http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/).
 
-Il existe également une foule d’outils propriétaires conçus pour automatiser les tests et gérer les plans de test.
+Il existe également de nombreux outils propriétaires pour automatiser les tests et gérer les plans de test.
 
-## Suivi {#tracking}
+## Tracking {#tracking}
 
-Les outils suivants sont faciles à obtenir. Il subsiste toutefois un problème fondamental dans tous les cas, à savoir : la disponibilité des données pour l’ensemble des membres de l’équipe du projet, tant le partenaire que le client.
+Les outils suivants sont facilement disponibles. Cependant, un problème clé dans tous les cas est la disponibilité des données pour tous les membres de l’équipe du projet - partenaire et client.
 
 **Bugzilla**
 
 Système de suivi des bogues qui peut être configuré selon vos besoins.
 
-**Tableurs**
+**Feuilles de calcul**
 
-Bien qu’il ne s’agisse pas à proprement parler d’un outil de suivi des bogues, le tableur est souvent utilisé à mauvais escient, dans la mesure où il est facile à prendre en main et où la plupart des utilisateurs connaissent ses fonctionnalités.
+Bien qu’il ne s’agisse pas spécifiquement d’un outil de suivi des bogues, les feuilles de calcul sont souvent utilisées à mauvais escient à cette fin, car elles sont faciles à comprendre et la plupart des utilisateurs connaissent leurs fonctionnalités.
 
-Veuillez tenir compte des points suivants si vous utilisez un tableur à des fins de suivi :
+Si elles sont utilisées pour le suivi, alors :
 
-* Les feuilles de calcul doivent rester simples.
-* Le nombre de feuilles de calcul doit être limité au minimum.
-* Les feuilles de calcul doivent être mises à jour régulièrement.
-* Une seule copie principale doit être conservée et son emplacement doit être connu de tous.
-* Elles doivent être accessibles à tous les membres du projet.
-* Si la sécurité est importante (ce qui est généralement le cas au sein des grandes entreprises) et qu’un accès commun n’est pas possible, les copies peuvent être distribuées pour autant que tout le monde a conscience qu’il s’agit de copies et qu’elles ne peuvent pas être mises à jour.
+* ils devraient être simples.
+* le nombre de feuilles de calcul individuelles doit être limité au minimum.
+* ils doivent être mis à jour régulièrement.
+* une seule copie originale doit être conservée et tout le monde doit savoir où se trouve la copie originale.
+* ils doivent être accessibles à tous les membres du projet.
+* si la sécurité est un problème (qui se produit souvent dans les grandes entreprises) et qu’un accès commun n’est pas possible, les copies peuvent être distribuées tant que tout le monde comprend qu’il s’agit de copies et qu’elles ne peuvent pas être mises à jour.
 
 Pour rappel, il existe de nombreux outils propriétaires pour effectuer le suivi des bogues et des fonctionnalités demandées.

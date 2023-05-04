@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Developer Tools
 role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 97%
+source-wordcount: '727'
+ht-degree: 76%
 
 ---
 
 # Extension de l’éditeur de ressources {#extending-asset-editor}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 L’Éditeur de ressources est la page qui s’ouvre lorsque l’utilisateur clique sur une ressource trouvée par le biais du partage de ressources, ce qui lui permet de modifier certains aspects de la ressource, tels que les métadonnées, la miniature, le titre et les balises.
 
@@ -52,7 +56,7 @@ Cet exemple charge cette source JavaScript dans `head.jsp` (`/apps/geometrixx/co
 
 ### Feuilles de style supplémentaires {#additional-style-sheets}
 
-Certains composants [!DNL Assets] utilisent la bibliothèque de widgets. [!DNL Experience Manager] Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
+Certains composants [!DNL Assets] utilisent la bibliothèque de widgets. [!DNL Experience Manager] Pour un rendu correct dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise en requiert une de plus.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -64,7 +68,7 @@ Les exemples de composants de page nécessitent que tous les sélecteurs commenc
 
 ### FormChooser : réglages pour les ressources chargées par la suite. {#formchooser-adjustments-for-eventually-loaded-resources}
 
-L’Éditeur de ressources utilise le sélecteur de formulaire, qui permet de modifier les ressources sur la même page de formulaire. Pour cela, il suffit d’ajouter un sélecteur de formulaire et le chemin du formulaire vers l’URL de la ressource.
+L’Éditeur de ressources utilise le sélecteur de formulaire, qui permet de modifier des ressources (dans ce cas des ressources) sur la même page de formulaire en ajoutant simplement un sélecteur de formulaire et le chemin d’accès du formulaire à l’URL de la ressource.
 
 Par exemple :
 
@@ -208,16 +212,16 @@ Vous pouvez modifier les espaces de noms disponibles [sous forme de métadonnée
 
 Les métadonnées actuellement disponibles sont définies dans`/libs/dam/options/metadata` :
 
-* Le premier niveau à l’intérieur de ce répertoire contient des espaces de noms.
-* Les éléments à l’intérieur de chaque espace de noms représentent une métadonnée, par exemple les résultats dans un élément local.
-* Les métadonnées contiennent des informations sur le type et les options à valeurs multiples.
+* Le premier niveau de ce répertoire contient les espaces de noms.
+* Les éléments à l’intérieur de chaque espace de noms représentent une métadonnée, par exemple les résultats d’un élément de partie locale.
+* Le contenu des métadonnées contient les informations relatives au type et aux options à plusieurs valeurs.
 
 Les options peuvent être remplacées dans`/apps/dam/options/metadata` :
 
 1. Copiez le répertoire de `/libs` vers `/apps`.
 
-1. Supprimez, modifiez ou ajoutez des éléments.
+1. Supprimer, modifier ou ajouter des éléments.
 
 >[!NOTE]
 >
->Si vous ajoutez de nouveaux espaces de noms, ils doivent être enregistrés dans votre référentiel/CRX. Sinon, l’envoi du formulaire de métadonnées provoquera une erreur.
+>Si vous ajoutez de nouveaux espaces de noms, ils doivent être enregistrés dans votre référentiel/CRX. Sinon, l’envoi du formulaire de métadonnées entraînera une erreur.

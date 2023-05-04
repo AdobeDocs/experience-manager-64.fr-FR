@@ -9,14 +9,18 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Smart Services
 role: User
-source-git-commit: 50d6ca4d7ead2b132f185590554d00c518fab996
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3519'
-ht-degree: 100%
+source-wordcount: '3555'
+ht-degree: 98%
 
 ---
 
 # Imagerie dynamique {#smart-imaging}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Qu’est-ce que l’imagerie dynamique ?  {#what-is-smart-imaging}
 
@@ -218,7 +222,7 @@ Si l’imagerie dynamique est déjà activée en WebP, mais que vous souhaitez d
       * PNG vers AVIF avec perte ou WebP avec perte
    * Tous les domaines à activer pour l’imagerie intelligente (c’est-à-dire `images.company.com` ou `mycompany.scene7.com`).
 
-      Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise.
+      Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise.
 
       Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
 
@@ -228,7 +232,7 @@ Si l’imagerie dynamique est déjà activée en WebP, mais que vous souhaitez d
 
    * Vérifiez que vous utilisez un domaine dédié, tel que `images.company.com` ou `mycompany.scene7.com`, et non un domaine générique, tel que `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`.
 
-      Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise.
+      Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise.
 
       Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
 
@@ -271,7 +275,7 @@ Au cours de la transition initiale, les images non mises en cache accèdent dire
    * Sous macOS, sélectionnez **[!UICONTROL désactiver le cache]** dans l’onglet **[!UICONTROL Réseau]** du volet de développement.
 
 1. Vérifiez que le type de contenu est converti au format approprié. L’écran ci-dessous illustre la conversion dynamique d’une image PNG au format WebP sur Chrome. Si l’AVIF est activé pour votre domaine, vous pouvez également vous attendre à voir AVIF dans le type de contenu.
-1. Répétez ce test sur d’autres navigateurs et avec différentes conditions d’utilisation.
+1. Répétez ce test sur différents navigateurs et conditions utilisateur.
 
 >[!NOTE]
 >

@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 exl-id: 27aa405d-2388-4f91-85d0-1a8709e0d5d0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 10%
+source-wordcount: '366'
+ht-degree: 11%
 
 ---
 
 # Utilisation des propriétés de contenu pour exporter du contenu{#using-content-properties-to-export-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -65,7 +69,7 @@ Le tableau suivant affiche **Propriétés et noeuds de l’application**.
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
-   <td>Plage</td>
+   <td>Date</td>
    <td>Date du dernier chargement des ressources partagées depuis AEM vers AEM Mobile.</td>
   </tr>
   <tr>
@@ -80,7 +84,7 @@ Le tableau suivant affiche **Propriétés et noeuds de l’application**.
   </tr>
   <tr>
    <td>sling:resourceType</td>
-   <td>Chaîne:Chemin</td>
+   <td>Chaîne:Chemin d’accès</td>
    <td><p>Chemin d’accès à cq:Component qui est ou étend <i>mobileapps/core/components/instance.</i></p> <p>Cela permet d’assurer la présence et le rendu dans le catalogue d’applications.</p> </td>
   </tr>
  </tbody>

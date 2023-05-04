@@ -1,7 +1,7 @@
 ---
 title: Résolution des problèmes liés à l’application AEM Forms
 seo-title: Troubleshoot AEM Forms app
-description: Découvrez les problèmes courants qui se produisent avec l’application AEM Forms, ainsi que la manière de les résoudre.
+description: Découvrez les problèmes courants liés à l’application AEM Forms et comment les résoudre.
 seo-description: Learn about common issues with AEM Forms app and how to troubleshoot them.
 uuid: a5cc3065-0ebf-48c0-a8fe-f1061632ca90
 content-type: reference
@@ -9,18 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 exl-id: 1e772376-d25a-4471-bf7c-5a8a8cdeb543
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '716'
+ht-degree: 70%
 
 ---
 
 # Résolution des problèmes liés à l’application AEM Forms {#troubleshoot-aem-forms-app}
 
-Cet article décrit les messages d’erreur qui peuvent s’afficher pendant la création de l’application AEM Forms et les étapes pour les résoudre.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Les sections de cet article incluent :
+Cet article décrit les messages d’erreur qui peuvent s’afficher lors de la création de l’application AEM Forms et les étapes à suivre pour les résoudre.
+
+Les sections de cet article incluent :
 
 * [Perte des pièces jointes pour les utilisateurs iOS](/help/forms/using/issues-aem-forms-app.md#attachment-loss-for-ios-users)
 * [Les brouillons de formulaires HTML5 envoyés par les utilisateurs de l’espace de travail ne sont pas visibles sur le portail](/help/forms/using/issues-aem-forms-app.md#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal)
@@ -31,7 +35,7 @@ Les sections de cet article incluent :
 
 ## Perte des pièces jointes pour les utilisateurs iOS {#attachment-loss-for-ios-users}
 
-L’application AEM Forms pour iOS configurée pour se synchroniser avec AEM Forms sur OSGi ne prend en charge que les pièces jointes au niveau du champ. Toutes les pièces jointes doivent avoir des noms uniques. Si plusieurs pièces jointes ont un nom identique, une seule pièce jointe est conservée et toutes les autres portant le même nom sont perdues. Suivez les étapes ci-après pour empêcher les utilisateurs des périphériques iOS de subir une perte de données :
+L’application AEM Forms pour iOS configurée pour se synchroniser avec AEM Forms sur OSGi prend uniquement en charge les pièces jointes au niveau du champ. Toutes les pièces jointes doivent porter des noms uniques. Si plusieurs pièces jointes ont un nom identique, une seule pièce jointe est conservée et toutes les autres portant le même nom sont perdues. Suivez les étapes ci-après pour empêcher les utilisateurs des périphériques iOS de subir une perte de données :
 
 1. Sur le serveur connecté, accédez à **Adobe Experience Manager > Outils > Opérations > Console web**.
 1. Recherchez et cliquez sur **[!UICONTROL configuration du canal web des formulaires adaptatifs et de la communication interactive]**.
@@ -41,7 +45,7 @@ L’application AEM Forms pour iOS configurée pour se synchroniser avec AEM For
 
 1. Cliquez sur **Enregistrer**.
 
-## Les brouillons de formulaires HTML5 envoyés par les utilisateurs de l’espace de travail ne sont pas visibles sur le portail {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
+## Les brouillons de formulaires HTML5 envoyés par les utilisateurs et utilisatrices de l’espace de travail ne sont pas visibles sur le portail. {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
 Pour les formulaires HTML5 activés dans l’application AEM Forms, avec le profil de rendu HTML **Enregistrer sous version préliminaire**, les versions préliminaires enregistrées ne sont pas visibles pour les utilisateurs de l’espace de travail. Pour afficher les versions préliminaires enregistrées des formulaires HTML5 envoyés par les utilisateurs de l’espace de travail sur le portail, procédez comme suit :
 
@@ -50,7 +54,7 @@ Pour les formulaires HTML5 activés dans l’application AEM Forms, avec le prof
    URL : `https://<server>:<port>/lc/crx/de/index.jsp`
 
 1. Dans le chemin d’accès racine CRXDE, dans Liste de contrôle d’accès, sous Contrôle d’accès, cliquez sur **+**.
-1. Dans la boîte de dialogue **Ajouter une nouvelle entrée**, cliquez sur le bouton de recherche de groupe du champ Entité principale.
+1. Dans le **Ajouter une nouvelle entrée** , cliquez sur le bouton de recherche de groupe dans le champ Principal .
 1. Dans le champ Nom de la boîte de dialogue Sélectionner une entité principale, saisissez `PERM_WORKSPACE_USER`, puis cliquez sur **Rechercher**.
 1. Sélectionnez le groupe `PERM_WORKSPACE_USER` dans la boîte de dialogue Entité principale et cliquez sur **OK**.
 1. Dans la boîte de dialogue Ajouter une entrée, le groupe `PERM_WORKSPACE_USER` est sélectionné dans le champ Entité principale.
@@ -59,7 +63,7 @@ Pour les formulaires HTML5 activés dans l’application AEM Forms, avec le prof
 
 1. Cliquez sur **OK**.
 
-## Les formulaires HTML5 (non mis en cache) ne parviennent pas à se charger dans l’application AEM Forms {#html-forms-not-cached-fail-to-load-in-aem-forms-app}
+## Les formulaires HTML5 (non mis en cache) ne parviennent pas à se charger dans l’application AEM Forms. {#html-forms-not-cached-fail-to-load-in-aem-forms-app}
 
 Lorsque l’application AEM Forms est connectée à une ancienne version du serveur AEM Forms, le chargement des formulaires HTML5 non mis en cache échoue dans l’application AEM Forms.
 
@@ -74,17 +78,17 @@ Exécutez les étapes suivantes afin de résoudre ce problème :
 1. Dans le champ **Ajouter une nouvelle ressource**, entrez : /etc.clientlibs/fd/xfaforms/I18N/en_US.js et cliquez sur **Ajouter**.
 1. Cliquez sur **Enregistrer**.
 
-## AEM Forms ne se synchronise pas sous Windows {#aem-forms-do-not-sync-on-windows}
+## AEM Forms ne se synchronise pas sous Windows. {#aem-forms-do-not-sync-on-windows}
 
-Dans l’application AEM Forms sous Windows, un formulaire n’est pas synchronisé au serveur connecté si le chemin d’accès du formulaire ou de l’une de ses ressources comporte au moins 256 caractères.
+Dans l’application AEM Forms sous Windows, un formulaire ne se synchronise pas avec le serveur connecté si le chemin du formulaire ou de l’une de ses ressources contient plus ou moins 256 caractères.
 
-Modifiez le chemin d’accès du formulaire et de ses ressources pour réduire le nombre de caractères à moins de 256.
+Modifiez le chemin d’accès au formulaire et à ses ressources afin de réduire le nombre de caractères à moins de 256 caractères.
 
-## Version de Gradle non prise en charge {#unsupported-version-of-gradle}
+## Version de Gradle non prise en charge. {#unsupported-version-of-gradle}
 
 **Message d’erreur :** le projet utilise une version de Gradle non prise en charge.
 
-Le message d’erreur s’affiche lorsque vous créez l’application AEM Forms dans Android Studio. Le problème se produit en raison d’une version non prise en charge de Gradle prise en charge sur le système.
+Le message d’erreur s’affiche lorsque vous créez l’application AEM Forms dans Android Studio. Le problème se produit en raison de la version de Gradle non prise en charge sur le système.
 
 **Résolution :** cliquez sur **Corriger le wrapper Gradle et importer le projet à nouveau** pour résoudre le problème.
 

@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 exl-id: 04520447-6ea8-4190-8dc3-46bb23f74c0c
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 98%
+source-wordcount: '778'
+ht-degree: 94%
 
 ---
 
 # Composant de page SPA{#spa-page-component}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Dans une SPA, le composant de page ne fournit pas les éléments HTML de ses composants enfants, mais à la place délègue cette tâche au framework SPA. Ce document explique comment cela rend le composant de page SPA unique.
 
@@ -44,7 +48,7 @@ N’oubliez pas de limiter l’inclusion de la catégorie `cq.authoring.pagemode
 
 ## Type de données de communication {#communication-data-type}
 
-Le type de données de communication est défini sur un élément HTML dans le composant de page AEM à l’aide de l’attribut `data-cq-datatype`. Lorsque le type de données de communication est défini sur JSON, les requêtes GET atteignent les points de terminaison du modèle Sling d’un composant. À la suite d’une mise à jour dans l’éditeur de page, la représentation JSON du composant mis à jour est envoyée à la bibliothèque modèle de page. Celle-ci informe ensuite l’application sur une seule page des mises à jour.
+Le type de données de communication est défini sur un élément HTML dans le composant de page AEM à l’aide de l’attribut `data-cq-datatype`. Lorsque le type de données de communication est défini sur JSON, les requêtes GET atteignent les points d’entrée du modèle Sling d’un composant. À la suite d’une mise à jour dans l’éditeur de page, la représentation JSON du composant mis à jour est envoyée à la bibliothèque modèle de page. Celle-ci informe ensuite l’application sur une seule page des mises à jour.
 
 **Composant de page SPA –`body.html`**
 

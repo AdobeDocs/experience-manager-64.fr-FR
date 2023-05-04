@@ -1,25 +1,29 @@
 ---
 title: Configuration des formulaires de recherche
-description: Découvrez comment configurer des formulaires de recherche.
+description: Découvrez comment configurer Search Forms.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 exl-id: b1f17bcd-1e91-43f0-85e1-963ff5fe3717
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2044'
-ht-degree: 98%
+source-wordcount: '2080'
+ht-degree: 89%
 
 ---
 
 # Configuration des formulaires de recherche{#configuring-search-forms}
 
-Utilisez des **formulaires de recherche** pour personnaliser la sélection des prédicats de recherche utilisés dans les panneaux de recherche disponibles dans différents panneaux ou consoles AEM de l’environnement de création. La personnalisation de ces panneaux permet d’adapter la fonctionnalité de recherche à vos besoins.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Utilisez des **formulaires de recherche** pour personnaliser la sélection des prédicats de recherche utilisés dans les panneaux de recherche disponibles dans différents panneaux ou consoles AEM de l’environnement de création. La personnalisation de ces panneaux rend la fonctionnalité de recherche polyvalente selon vos besoins spécifiques.
 
 Une [plage de prédicats](#predicates-and-their-settings) prête à l’emploi est disponible. Vous pouvez ajouter plusieurs prédicats, dont (entre autres) le prédicat Propriété pour rechercher des ressources correspondant à une propriété unique que vous avez spécifiée ou le prédicat Options pour rechercher des ressources correspondant à une ou plusieurs valeurs que vous spécifiez pour une propriété donnée.
 
-Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-forms) utilisés dans différentes consoles et l’explorateur des ressources (lors de la modification des pages). Les [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) sont accessibles en sélectionnant :
+Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-forms) utilisés dans différentes consoles et l’explorateur des ressources (lors de la modification des pages). Le [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) est accessible via :
 
 * **Outils**
 
@@ -27,7 +31,7 @@ Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-f
 
       * **Formulaires de recherche**
 
-Lorsque vous accédez à cette console pour la première fois, vous pouvez constater que toutes les configurations comportent un symbole de cadenas. Cela signifie que la configuration appropriée est la configuration par défaut (prête à l’emploi) et qu’elle ne peut pas être supprimée. Une fois que vous avez personnalisé la configuration, le cadenas disparaît sauf si vous [supprimez la configuration personnalisée](#deleting-a-configuration-to-reinstate-the-default), auquel cas la valeur par défaut (et le symbole de cadenas) est rétablie.
+Lorsque vous accédez à cette console pour la première fois, vous pouvez constater que toutes les configurations comportent un symbole de cadenas. Cela signifie que la configuration appropriée est la configuration par défaut (prête à l’emploi) et qu’elle ne peut pas être supprimée. Une fois la configuration personnalisée, le verrou disparaît, sauf si vous [supprimer votre configuration personnalisée](#deleting-a-configuration-to-reinstate-the-default), auquel cas la valeur par défaut (et l’indicateur de cadenas) est rétablie.
 
 ![chlimage_1-374](assets/chlimage_1-374.png)
 
@@ -398,11 +402,11 @@ Libellés des cases à cocher Publication et Live Copy pour le prédicat spéci
 
 ### Création et ouverture d’une configuration personnalisée {#creating-opening-a-customized-configuration}
 
-1. Sélectionnez **Outils** > **Opérations** > **Formulaires de recherche**.
+1. Accédez à **Outils**, **Opérations**, **Rechercher dans Forms**.
 
 1. Sélectionnez la configuration que vous souhaitez personnaliser.
-1. Utilisez l’icône **Modifier** pour ouvrir la configuration pour la mise à jour.
-1. S’il s’agit d’une nouvelle personnalisation, vous allez probablement [ajouter de nouveaux champs de prédicat et définir les paramètres](#add-edit-a-predicate-field-and-define-field-settings) requis. S’il s’agit d’une personnalisation existante, vous pouvez sélectionner un champ existant et [mettre à jour les paramètres](#add-edit-a-predicate-field-and-define-field-settings).
+1. Utilisez la variable **Modifier** pour ouvrir la configuration à mettre à jour.
+1. S’il s’agit d’une nouvelle personnalisation, vous allez probablement [ajouter de nouveaux champs de prédicat et définir les paramètres](#add-edit-a-predicate-field-and-define-field-settings) requis. Si une personnalisation existante est existante, vous pouvez sélectionner un champ existant et [mettre à jour les paramètres](#add-edit-a-predicate-field-and-define-field-settings).
 1. Sélectionnez **Terminé** pour enregistrer la configuration.
 
    >[!NOTE]
@@ -415,9 +419,9 @@ Libellés des cases à cocher Publication et Live Copy pour le prédicat spéci
 
 ### Ajout et modification d’un champ de prédicat et définition des paramètres de champ {#add-edit-a-predicate-field-and-define-field-settings}
 
-Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
+Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
 
-1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
+1. [Ouvrir la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Si vous souhaitez ajouter un nouveau champ, ouvrez l’onglet **Sélectionner le prédicat** et faites glisser le prédicat souhaité vers l’emplacement souhaité. Par exemple, le **prédicat de période** :
 
    ![chlimage_1-375](assets/chlimage_1-375.png)
@@ -451,8 +455,8 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 ### Suppression d’un champ de prédicat {#deleting-a-predicate-field}
 
-1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
-1. Sélectionnez le champ de prédicat (à droite), ouvrez l’onglet **Paramètres**, puis sélectionnez l’icône **Supprimer** (dans le coin inférieur gauche).
+1. [Ouvrir la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
+1. Sélectionnez le champ de prédicat (à droite), ouvrez le **Paramètres** , puis sélectionnez la variable **Supprimer** (en bas à gauche).
 
    ![](do-not-localize/chlimage_1-32.png)
 
@@ -466,7 +470,7 @@ Une fois que vous avez personnalisé une configuration, cette option remplace le
 
 >[!NOTE]
 >
->Vous ne pouvez pas supprimer les configurations par défaut.
+>Vous ne pouvez supprimer aucune des configurations par défaut.
 
 Les configurations personnalisées doivent être supprimées à partir de la console :
 
@@ -508,10 +512,10 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
 1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administration de sites**.
 
-   Ensuite, cliquez/appuyez sur l’icône **Modifier des formulaires de recherche**.
+   Ensuite, cliquez/appuyez sur le bouton **Modifier les formulaires de recherche** icône .
 
-1. En fonction de la configuration, ajoutez des **options** ou une **propriété d’options** à la configuration.
-1. Mettez à jour les champs, en particulier :
+1. Selon la configuration, ajoutez une **Options** ou **Propriété Options** à la configuration.
+1. Mettez à jour les champs, notamment :
 
    * **Nom de la propriété**
 

@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Search,Metadata
 role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '585'
 ht-degree: 21%
 
 ---
 
 # Recherche de ressources dans [!DNL Experience Manager] {#search-assets-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Découvrez comment rechercher les ressources souhaitées dans[!DNL Experience Manager]à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 

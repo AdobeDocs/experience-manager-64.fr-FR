@@ -8,14 +8,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 32%
+source-wordcount: '341'
+ht-degree: 27%
 
 ---
 
 # Notes de mise à jour de Smart Content Service {#smart-content-service-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Présentation du service de contenu dynamique et des problèmes connus relatifs à ce service.
 
@@ -25,7 +29,7 @@ Le service de contenu dynamique utilise votre taxonomie métier d’AEM Assets p
 
 Vous devez former le service de contenu dynamique à un ensemble organisé de ressources et de balises AEM afin de reconnaître votre taxonomie métier. Une fois formé, le service peut appliquer ces balises sur un ensemble similaire de ressources.
 
-Le service de contenu dynamique est optimisé par la plateforme Adobe Sensei, qui vous permet d’entraîner l’algorithme de reconnaissance d’images à votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur les ressources similaires.
+Le service de contenu dynamique est optimisé par la plateforme Adobe Sensei, qui vous permet d’entraîner l’algorithme de reconnaissance d’images à votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer des balises pertinentes sur des ressources similaires.
 
 ## Principales améliorations {#key-improvements}
 
@@ -41,7 +45,7 @@ Le service de contenu dynamique comprend les améliorations clés suivantes :
 
 ## Assistance technique et accès au produit (sites à accès limité) {#product-access-and-support-restricted-sites}
 
-Ces sites sont réservés aux clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
+Ces sites sont réservés aux clients. Si vous êtes client ou cliente et avez besoin d’un accès, contactez votre gestionnaire de compte Adobe.
 
 * [Accès aux produits](https://login.experiencecloud.adobe.com/exc-content/login.html)
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/).

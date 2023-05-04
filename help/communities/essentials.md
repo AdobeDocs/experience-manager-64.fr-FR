@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: bde29d3a-8bc8-4c30-b764-a2fa1ac34069
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '245'
 ht-degree: 19%
 
 ---
 
 # Notions fondamentales sur les composants, les fonctions et les fonctionnalités {#component-function-and-feature-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les fonctionnalités AEM Communities exigent que les visiteurs du site deviennent membres et se connectent au [site communautaire](overview.md#communitiessites) avant de pouvoir publier du contenu. Ainsi, [modèles de site de communauté](sites.md), à partir de laquelle un site communautaire est [created](sites-console.md), sont conçues pour inclure une fonction de connexion, ainsi que des profils utilisateur, des messages, des recherches, de la modération et des traductions.
 
@@ -33,7 +37,7 @@ Vous trouverez ci-dessous des liens vers des informations essentielles pour les 
 
    * [Aimer](essentials-liking.md)
    * [Évaluation](rating-basics.md)
-   * [Vote](essentials-voting.md)
+   * [Votant](essentials-voting.md)
    * *Sondage (n’est plus disponible)*
 
 ## Composants avec fonctions {#components-with-functions}
@@ -55,7 +59,7 @@ Vous trouverez ci-dessous des liens vers des informations essentielles pour les 
 ## Fonctions {#features}
 
 * [Bibliothèques clientes](clientlibs.md)
-* [Sites communautaires](sites-for-developers.md)
+* [Sites de la communauté](sites-for-developers.md)
 * [Événements OSGi des composants](events.md)
 * [Chargement partiel des composants](sideloading.md)
 * [Message](essentials-messaging.md)

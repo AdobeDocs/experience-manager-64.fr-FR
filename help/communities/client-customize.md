@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: 3e005993-d96b-4c7c-83b3-37f733218c3d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 0%
+source-wordcount: '1298'
+ht-degree: 1%
 
 ---
 
 # Personnalisation côté client {#client-side-customization}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 | **[⇐ Notions fondamentales sur les fonctionnalités](essentials.md)** | **[⇒ de personnalisation côté serveur](server-customize.md)** |
 |---|---|
@@ -65,7 +69,7 @@ Pour lier un composant, l’intégralité du script du composant doit être incl
 
    résout la propriété id du contexte.
 
-* `data-scf-component`=&quot;*&lt;resourceType>*
+* `data-scf-component`=&quot;*&lt;resourcetype>*
 
 Par exemple, de `/apps/weretail/components/hbs/rating/rating.hbs`:
 

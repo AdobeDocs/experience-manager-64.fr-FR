@@ -12,14 +12,18 @@ discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 role: Admin
 exl-id: 0a0222e7-ca30-4603-94ad-582005b2de11
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '859'
 ht-degree: 5%
 
 ---
 
 # Configuration du courrier électronique {#configuring-email}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 AEM Communities utilise le courrier électronique pour
 
@@ -115,7 +119,7 @@ Pour les abonnements Communities, il est possible d’activer ou de désactiver 
 
 * **[!UICONTROL Nom]** : *(obligatoire)* `subscriptions-email`. Ne Pas Modifier.
 
-* **[!UICONTROL Créer une publication à partir d’un courrier électronique de réponse]**: Si cette case est cochée, le destinataire de l’email d’abonnement peut publier du contenu en envoyant une réponse. Cette option est cochée par défaut.
+* **[!UICONTROL Créer une publication à partir d’un courrier électronique de réponse]**: Si cette case est cochée, le destinataire de l’email d’abonnement peut publier du contenu en envoyant une réponse. La valeur par défaut est cochée.
 * **[!UICONTROL Ajout d’un ID suivi à l’en-tête]**: La valeur par défaut est `Reply-To`.
 
 * **[!UICONTROL Longueur maximale de l’objet]**: Si l’identifiant de suivi est ajouté à l’objet, il s’agit de la longueur maximale de l’objet, à l’exception de l’identifiant suivi, après lequel il sera rogné. Notez que cette valeur doit être aussi petite que possible pour éviter que les informations d’ID trackées ne soient perdues. La valeur par défaut est 200.
@@ -127,7 +131,7 @@ Pour les abonnements Communities, il est possible d’activer ou de désactiver 
 
 * **[!UICONTROL Préfixe d’ID de suivi dans le corps du message]**: Si l’identifiant de suivi est ajouté au corps du message, ce préfixe sera utilisé. La valeur par défaut est `Please do not remove this:`.
 
-* **[!UICONTROL Email en tant que HTML]**: Si cette case est cochée, le type de contenu de l’email est défini comme `"text/html;charset=utf-8"`. Cette option est cochée par défaut.
+* **[!UICONTROL Email en tant que HTML]**: Si cette case est cochée, le type de contenu de l’email est défini comme `"text/html;charset=utf-8"`. La valeur par défaut est cochée.
 
 * **[!UICONTROL Nom d’utilisateur par défaut]**: Ce nom ne sera utilisé pour aucun nom d’utilisateur. La valeur par défaut est `no-reply@example.com`.
 

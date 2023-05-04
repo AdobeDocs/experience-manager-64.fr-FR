@@ -1,5 +1,5 @@
 ---
-title: Utilisation de l’API sendToPrinter
+title: Utiliser l’API sendToPrinter
 seo-title: Using the sendToPrinter API
 description: Utilisation du service sendToPrinter pour envoyer un document vers l’imprimante.
 seo-description: Using the sendToPrinter service to send a document to printer.
@@ -9,18 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 exl-id: 89b6c8b4-4872-4bf5-a543-f33a1660636e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 55%
 
 ---
 
-# Utilisation de l’API sendToPrinter {#using-the-sendtoprinter-api}
+# Utiliser l’API sendToPrinter {#using-the-sendtoprinter-api}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
-Dans AEM Forms, vous pouvez utiliser le service SendToPrinter pour envoyer un document vers l’imprimante. Le service SendToPrinter prend en charge les systèmes d’accès aux imprimantes suivants :
+Dans AEM Forms, vous pouvez utiliser le service SendToPrinter pour envoyer un document vers l’imprimante. Le service SendToPrinter prend en charge les mécanismes d’accès aux imprimantes suivants :
 
 * **Imprimante accessible directement** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
 
@@ -36,29 +40,29 @@ Dans AEM Forms, vous pouvez utiliser le service SendToPrinter pour envoyer un do
 
 ## Utilisation du service SendToPrinter {#using-sendtoprinter-service}
 
-Le tableau ci-dessous répertorie :
+Le tableau ci-dessous répertorie :
 
-* les informations sur le printerName ou le printServer à utiliser pour les différents protocoles ;
-* la valeur ou l’exception qu’une imprimante renvoie pour différentes combinaisons de serveur d’imprimante URI et de Nom de l’imprimante.
+* Informations sur printerName ou printServer à utiliser pour différents protocoles.
+* valeur ou exception qu’une imprimante renvoie pour différentes combinaisons de serveur d’imprimante URI et de nom de l’imprimante.
 
-| Protocole (système d’accès) | URI de serveur d’impression (PrinterSpec.printServer) | Nom de l’imprimante (PrinterSpec.printerName) | Résultat |
+| Protocole (mécanisme d’accès) | URI du serveur d’impression (PrinterSpec.printServer) | Nom de l’imprimante (PrinterSpec.printerName) | Résultat |
 |--- |--- |--- |--- |
 | SharedPrinter | N’importe lequel | Vide | Exception : l’argument requis sPrinterName ne peut pas être vide. |
-| SharedPrinter | N’importe lequel | Invalid (non valide) : | Une exception indique que l’imprimante est introuvable. |
+| SharedPrinter | N’importe lequel | Non valide | Une exception indique que l’imprimante est introuvable. |
 | SharedPrinter | N’importe lequel | Valide | Tâche d’impression réussie. |
 | LPD | Vide | N’importe lequel | une exception indiquant que l’argument requis sPrintServerUri ne peut pas être vide. |
-| LPD | Invalid (non valide) : | Vide | une exception indiquant que l’argument requis sPrinterName ne peut pas être vide. |
-| LPD | Invalid (non valide) : | Pas vide | une exception indiquant que sPrintServerUri est introuvable. |
-| LPD | Valide | Invalid (non valide) : | une exception indiquant que l’imprimante est introuvable. |
+| LPD | Non valide | Vide | une exception indiquant que l’argument requis sPrinterName ne peut pas être vide. |
+| LPD | Non valide | Pas vide | une exception indiquant que sPrintServerUri est introuvable. |
+| LPD | Valide | Non valide | une exception indiquant que l’imprimante est introuvable. |
 | LPD | Valide | Valide | Tâche d’impression réussie. |
 | CUPS | Vide | N’importe lequel | une exception indiquant que l’argument requis sPrintServerUri ne peut pas être vide. |
-| CUPS | Invalid (non valide) : | N’importe lequel | une exception indiquant que l’imprimante est introuvable. |
+| CUPS | Non valide | N’importe lequel | une exception indiquant que l’imprimante est introuvable. |
 | CUPS | Valide | N’importe lequel | Tâche d’impression réussie. |
 | DirectIP | Vide | N’importe lequel | une exception indiquant que l’argument requis sPrintServerUri ne peut pas être vide. |
-| DirectIP | Invalid (non valide) : | N’importe lequel | une exception indiquant que l’imprimante est introuvable. |
+| DirectIP | Non valide | N’importe lequel | une exception indiquant que l’imprimante est introuvable. |
 | DirectIP | Valide | N’importe lequel | Tâche d’impression réussie. |
 | CIFS | Valide | Vide | Tâche d’impression réussie. |
-| CIFS | Invalid (non valide) : | N’importe lequel | une erreur inconnue lors de l’impression par CIFS. |
+| CIFS | Non valide | N’importe lequel | une erreur inconnue lors de l’impression via CIFS. |
 | CIFS | Vide | N’importe lequel | une exception indiquant que l’argument requis sPrintServerUri ne peut pas être vide. |
 
 ## Prise en charge de l’authentification {#authentication-support}

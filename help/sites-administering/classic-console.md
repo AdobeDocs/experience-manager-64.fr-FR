@@ -1,7 +1,7 @@
 ---
 title: Console Balisage de l’interface utilisateur (IU) classique
 seo-title: Classic UI Tagging Console
-description: Découvrez la console Balisage de l’interface utilisateur classique.
+description: Découvrez la console de balisage de l’interface utilisateur classique.
 seo-description: Learn about the Classic UI Tagging Console.
 uuid: c3080c82-0b34-4922-a263-1674a9522649
 contentOwner: Chiradeep Majumdar
@@ -10,38 +10,42 @@ topic-tags: content
 content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
 exl-id: 0c989965-c6cc-4ec7-a90f-6c52e8362485
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 95%
+source-wordcount: '915'
+ht-degree: 47%
 
 ---
 
 # Console Balisage de l’interface utilisateur (IU) classique{#classic-ui-tagging-console}
 
-Cette section est réservée à la console Balisage de l’interface utilisateur classique.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-La console Balisage de l’interface utilisateur optimisée pour les écrans tactiles se trouve [ici](/help/sites-administering/tags.md#tagging-console).
+Cette section concerne la console de balisage de l’interface utilisateur classique.
 
-Pour accéder à la console Balisage de l’interface utilisateur classique :
+La console de balisage de l’interface utilisateur optimisée pour les écrans tactiles est [here](/help/sites-administering/tags.md#tagging-console).
+
+Pour accéder à la console Balisage de l’interface utilisateur classique :
 
 * en mode de création
-* Connectez-vous avec des droits d’administrateur.
+* connexion avec droits d’administrateur
 * Accédez à la console
 
    par exemple, [http://localhost:4502/tagging](http://localhost:4502/tagging)
 
 ![managing_tags_usingthetagasationconsole-1](assets/managing_tags_usingthetagasministrationconsole-1.png)
 
-## Créations de balises et d’espaces de noms {#creating-tags-and-namespaces}
+## Création de balises et d’espaces de noms {#creating-tags-and-namespaces}
 
-1. En fonction du niveau de départ, vous pouvez créer une balise ou un espace de noms à l’aide de l’option **Nouveau** :
+1. Selon le niveau à partir duquel vous commencez, vous pouvez créer une balise ou un espace de noms à l’aide de **Nouveau**:
 
-   Si vous sélectionnez **Balises**, vous pouvez créer un espace de noms :
+   Si vous sélectionnez **Balises** vous pouvez créer un espace de noms :
 
    ![creating_tags_andnamespaces-1](assets/creating_tags_andnamespaces-1.png)
 
-   Si vous sélectionnez un espace de noms (**Demo**, par exemple), vous pouvez y créer une balise :
+   Si vous sélectionnez un espace de noms (par exemple **Démonstration**) vous pouvez créer une balise dans cet espace de noms :
 
    ![creating_tags_andnamespace_innewnamespace](assets/creating_tags_andnamespacesinnewnamespace.png)
 
@@ -66,14 +70,14 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
       (*Facultatif*) Description de la balise.
 
-   * Sélectionnez **Créer**.
+   * select **Créer**
 
 
-## Modification de balises {#editing-tags}
+## Modification des balises {#editing-tags}
 
 1. Dans le volet de droite, sélectionnez la balise à modifier.
 1. Cliquez sur **Modifier**.
-1. Vous pouvez modifier le **Titre** et la **Description**.
+1. Vous pouvez modifier la variable **Titre** et le **Description**.
 1. Cliquez sur **Enregistrer** pour fermer la boîte de dialogue.
 
 ## Suppression des balises {#deleting-tags}
@@ -82,33 +86,33 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 1. Cliquez sur **Supprimer**.
 1. Cliquez sur **Oui** pour fermer la boîte de dialogue.
 
-   La balise ne doit plus figurer dans la liste.
+   La balise ne doit plus être répertoriée.
 
-## Activation et désactivation de balises {#activating-and-deactivating-tags}
+## Activation et désactivation des balises {#activating-and-deactivating-tags}
 
-1. Dans le volet de droite, sélectionnez l’espace de noms ou la balise à activer (publication) ou à désactiver (annulation de la publication).
-1. Cliquez sur **Activer** ou **Désactiver**, suivant les besoins.
+1. Dans le volet de droite, sélectionnez l’espace de noms ou la balise que vous souhaitez activer (publier) ou désactiver (annuler la publication).
+1. Cliquez sur **Activer** ou **Désactiver** selon les besoins.
 
-## Liste : indiquant où les balises sont référencées {#list-showing-where-tags-are-referenced}
+## Liste : indiquant l’emplacement de référence des balises {#list-showing-where-tags-are-referenced}
 
-L’option **Liste** ouvre une nouvelle fenêtre qui présente les chemins d’accès de toutes les pages utilisant la balise mise en surbrillance :
+**Liste** ouvre une nouvelle fenêtre affichant les chemins de toutes les pages à l’aide de la balise mise en surbrillance :
 
 ![list_show_wheretagsarereferounded](assets/list_showing_wheretagsarereferenced.png)
 
 ## Déplacement des balises {#moving-tags}
 
-Pour aider les administrateurs et les développeurs de balises à nettoyer la taxonomie ou à renommer un ID de balise, il est possible de déplacer une balise vers un nouvel emplacement :
+Pour aider les administrateurs et les développeurs de balises à nettoyer la taxonomie ou à renommer un ID de balise, il est possible de déplacer une balise vers un nouvel emplacement :
 
-1. Ouvrez la console **Tagging**.
-1. Sélectionnez le tag et cliquez sur **Déplacer...** dans la barre d’outils supérieure (ou dans le menu contextuel).
-1. Dans la boîte de dialogue **Déplacer le tag**, définissez :
+1. Ouvrez le **Balisage** console.
+1. Sélectionnez la balise et cliquez sur **Déplacer..** dans la barre d’outils supérieure (ou dans le menu contextuel).
+1. Dans le **Déplacer la balise** dialog, définissez :
 
-   * **vers**, le nœud de destination.
-   * **Renommer en**, le nouveau nom du nœud.
+   * **to**, le noeud de destination.
+   * **Renommer en**, le nouveau nom du noeud.
 
 1. Cliquez sur **Déplacer**.
 
-La boîte de dialogue **Déplacer le tag** se présente comme suit :
+Le **Déplacer la balise** dialog se présente comme suit :
 
 ![move_tag](assets/move_tag.png)
 
@@ -116,30 +120,30 @@ La boîte de dialogue **Déplacer le tag** se présente comme suit :
 >
 >Les créateurs ne doivent pas déplacer les balises ou renommer l’ID de balise. Lorsque cela est nécessaire, les créateurs doivent seulement [modifier le titre des balises](#editing-tags).
 
-## Fusion des balises {#merging-tags}
+## Fusion de balises {#merging-tags}
 
-Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B, et la balise A n’est plus disponible pour les auteurs.
+Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B et la balise A n’est plus disponible pour les auteurs.
 
-Pour fusionner un tag dans un autre :
+Pour fusionner une balise dans une autre balise :
 
-1. Ouvrez la console **Tagging**.
-1. Sélectionnez le tag et cliquez sur **Fusionner...** dans la barre d’outils supérieure (ou dans le menu contextuel).
-1. Dans la boîte de dialogue **Fusionner le tag**, définissez :
+1. Ouvrez le **Balisage** console.
+1. Sélectionnez la balise et cliquez sur **Fusionner..** dans la barre d’outils supérieure (ou dans le menu contextuel).
+1. Dans le **Fusionner la balise** dialog, définissez :
 
-   * **en**, le nœud de destination.
+   * **into**, le noeud de destination.
 
-1. Cliquez sur **Fusionner**.
+1. Cliquez sur **Fusion**.
 
 La boîte de dialogue **Fusionner la balise** se présente de la manière suivante :
 
 ![mergetag](assets/mergetag.png)
 
-## Compte d’utilisation des balises {#counting-usage-of-tags}
+## Comptage de l’utilisation des balises {#counting-usage-of-tags}
 
-Pour afficher le nombre d’utilisations d’un tag :
+Pour savoir combien de fois une balise est utilisée :
 
-1. Ouvrez la console **Tagging**.
-1. Cliquez sur **Compteur d’utilisations** dans la barre d’outils supérieure : la colonne Décompte affiche le résultat.
+1. Ouvrez le **Balisage** console.
+1. Cliquez sur **Utilisation des nombres** dans la barre d’outils supérieure : la colonne Nombre affiche le résultat.
 
 ## Gestion des balises dans différentes langues {#managing-tags-in-different-languages}
 
@@ -151,15 +155,15 @@ La procédure ci-dessous indique comment traduire le `title` de la balise **Anim
 
 1. Accédez à la console **Balisage**.
 1. Modifiez la balise **Animals** située sous **Balises** > **Images de photothèque**.
-1. Ajoutez les traductions dans les langues suivantes :
+1. Ajoutez les traductions dans les langues suivantes :
 
-   * **Anglais** : Animals
-   * **Allemand** : Tiere
-   * **Français** : Animaux
+   * **Anglais**: Animals
+   * **Allemand**: Tiere
+   * **Français**: Animaux
 
 1. Enregistrez les modifications.
 
-La boîte de dialogue se présente comme suit :
+La boîte de dialogue se présente comme suit :
 
 ![edit_tag](assets/edit_tag.png)
 
@@ -182,7 +186,7 @@ Par défaut, les `titles` des balises dans les propriétés de page sont affich�
 
 Par défaut, la boîte de dialogue Propriétés de page affiche le `titles` des balises en fonction de la langue de la page.
 
-En général, la langue de la balise est celle de la page si elle est disponible. Lorsque le [widget](/help/sites-developing/building.md#tagging-on-the-client-side) balise est utilisé dans d’autres cas (formulaires ou boîtes de dialogue, par exemple), la langue da la balise dépend du contexte.
+En général, la langue de la balise est celle de la page si elle est disponible. Lorsque la variable [widget de balise](/help/sites-developing/building.md#tagging-on-the-client-side) est utilisé dans d’autres cas (dans les formulaires ou les boîtes de dialogue, par exemple), la langue de la balise dépend du contexte.
 
 >[!NOTE]
 >

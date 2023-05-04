@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Developer Tools,Renditions
 role: Developer,Admin
 exl-id: 7d78fba9-16df-44e0-aae6-83f65e8d2bbd
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 97%
+source-wordcount: '757'
+ht-degree: 78%
 
 ---
 
 # Utilisation de PDF Rasterizer {#using-pdf-rasterizer}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Lorsque vous téléchargez des fichiers PDF ou AI de grande taille et riches en contenu vers [!DNL Adobe Experience Manager Assets], la bibliothèque par défaut risque de ne pas générer une sortie exacte. La bibliothèque Adobe PDF Rasterizer peut générer une sortie plus fiable et plus précise par rapport à la sortie d’une bibliothèque par défaut. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour les scénarios suivants :
 
@@ -22,9 +26,9 @@ Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit�
 * Fichiers d’IA et PDF avec des miniatures qui ne sont pas générées par défaut
 * Fichiers d’AI contenant des couleurs PMS (Pantone Matching System)
 
-Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d’une plus grande qualité par rapport à la sortie native et fournissent donc une expérience d’affichage homogène sur tous les périphériques. La bibliothèque PDF Rasterizer d’Adobe ne prend en charge aucune conversion d’espace colorimétrique. Elle génère toujours une sortie RVB indépendamment de l’espace colorimétrique du fichier source.
+Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont de meilleure qualité par rapport à la sortie prête à l’emploi et offrent donc une expérience d’affichage cohérente sur tous les appareils. La bibliothèque Adobe PDF Rasterizer ne prend en charge aucune conversion d’espace colorimétrique. Il est toujours envoyé à RGB, quel que soit l’espace colorimétrique du fichier source.
 
-1. Installez le module PDF Rasterizer sur votre déploiement [!DNL Adobe Experience Manager] à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip).
+1. Installez le package PDF Rasterizer sur votre déploiement [!DNL Adobe Experience Manager] à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip).
 
    >[!NOTE]
    >
@@ -51,11 +55,11 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
 
    * Types MIME : `application/pdf` ou `application/postscript`
    * Commandes : `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
-   * Ajoutez les tailles des miniatures : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
+   * Ajouter des tailles de miniature : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
 
    Voici des arguments de ligne de commande de la commande `PDFRasterizer` :
 
-   * `-d` : indicateur pour activer le rendu lissé du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’ajout de ce paramètre ralentit l’exécution de la commande et augmente la taille des images.
+   * `-d` : indicateur pour activer le rendu lissé du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’inclusion de ce paramètre entraîne une exécution lente de la commande et une augmentation de la taille des images.
 
    * `-s` : dimension maximale de l’image (hauteur ou largeur). Elle est convertie en ppp pour chaque page. Si les pages sont de tailles différentes, chacune peut être redimensionnée selon une échelle différente. La valeur par défaut est la taille réelle de la page.
 
@@ -86,7 +90,7 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
 
    Voici des arguments de ligne de commande de la commande `PDFRasterizer` :
 
-   * `-d` : indicateur pour activer le rendu lissé du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’ajout de ce paramètre ralentit l’exécution de la commande et augmente la taille des images.
+   * `-d` : indicateur pour activer le rendu lissé du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’inclusion de ce paramètre entraîne une exécution lente de la commande et une augmentation de la taille des images.
 
    * `-s` : dimension maximale de l’image (hauteur ou largeur). Elle est convertie en ppp pour chaque page. Si les pages sont de tailles différentes, chacune peut être redimensionnée selon une échelle différente. La valeur par défaut est la taille réelle de la page.
 

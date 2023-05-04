@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 exl-id: 48809969-5d14-41bb-bc6d-5857e679ceba
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 11%
+source-wordcount: '657'
+ht-degree: 12%
 
 ---
 
 # Création des composants {#create-the-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 L’exemple d’extension de composants utilise le système de commentaires, qui est en fait composé de deux composants.
 
@@ -117,11 +121,11 @@ Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
    * Modifiez la valeur de la variable `data-scf-component` attribute (~line 20) :
 
       * De `social/commons/components/hbs/comments`
-      * To `/apps/custom/components/comments`
+      * À `/apps/custom/components/comments`
    * Modifiez pour inclure le composant de commentaire personnalisé (~line 75) :
 
       * Remplacer `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
-      * Par `{{include this resourceType='/apps/custom/components/comments/comment'}}`
+      * Avec `{{include this resourceType='/apps/custom/components/comments/comment'}}`
 
 
 * Copier `comment.hbs`

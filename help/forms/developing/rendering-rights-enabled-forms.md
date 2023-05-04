@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 0cee94ba-1a72-4021-b606-8fa945312483
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 99%
+source-wordcount: '1499'
+ht-degree: 97%
 
 ---
 
 # Générer des formulaires définis avec des droits {#rendering-rights-enabled-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le service Forms peut restituer des formulaires dotés de droits d’utilisation. Les droits d’utilisation appartiennent à la fonctionnalité disponible par défaut dans Acrobat mais non dans Adobe Reader, telle que la capacité à ajouter des commentaires à un formulaire ou à remplir des champs de formulaire et enregistrer ce dernier. Les formulaires dotés de droits d’utilisation sont appelés des formulaires dont les droits sont activés. Un utilisateur qui ouvre un formulaire dont les droits sont activés dans Adobe Reader peut effectuer les opérations autorisées pour ce formulaire.
 

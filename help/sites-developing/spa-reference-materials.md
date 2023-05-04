@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: c3a81baa-98b0-40b4-bd34-f39e8491acca
 exl-id: d4f7f94c-11f2-47c7-84ad-115aa5f2a06e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 92%
+source-wordcount: '197'
+ht-degree: 79%
 
 ---
 
 # Documents de référence SPA {#spa-reference-materials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Références de l’API JavaScript de SPA{#spa-javascript-api-references}
 

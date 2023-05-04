@@ -10,22 +10,26 @@ discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 exl-id: bb97b649-a50d-49c8-97aa-18c32f18d527
 feature: Components
 role: User
-source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2809'
-ht-degree: 64%
+source-wordcount: '2845'
+ht-degree: 50%
 
 ---
 
 # Ajout de ressources Dynamic Media aux pages {#adding-dynamic-media-assets-to-pages}
 
-Pour ajouter la fonctionnalité Dynamic Media aux ressources que vous utilisez sur vos sites web, vous pouvez ajouter la fonction **Dynamic Media** ou **Média interactif** du composant directement sur la page. Pour ce faire, vous devez activer le mode Mise en page et activer les composants Dynamic Media. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media et Interactive Media sont dynamiques : ils détectent si vous ajoutez une image ou une vidéo et les options disponibles changent en conséquence.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Pour ajouter la fonctionnalité Dynamic Media aux ressources que vous utilisez sur vos sites web, vous pouvez ajouter la fonction **Dynamic Media** ou **Média interactif** du composant directement sur la page. Pour ce faire, vous devez activer le mode Mise en page et activer les composants Dynamic Media. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media et Interactive Media sont intelligents : ils savent si vous ajoutez une image ou une vidéo et les options disponibles changent en conséquence.
 
 Vous ajoutez directement des ressources Dynamic Media à la page si vous utilisez AEM comme système de gestion de contenu web. Si vous faites appel à un tiers pour votre gestion de contenu web, [liez](linking-urls-to-yourwebapplication.md) ou [incorporez](embed-code.md) vos ressources. Pour un site Web tiers réactif, reportez-vous à la section [Diffusion d’images optimisées sur un site réactif](responsive-site.md).
 
 >[!NOTE]
 >
->Vous devez publier les ressources avant de les ajouter aux pages d’AEM. Voir [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md).
+>Vous devez publier les ressources avant de les ajouter aux pages dans AEM. Voir [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md).
 
 ## Ajout d’un composant Dynamic Media à une page {#adding-a-dynamic-media-component-to-a-page}
 
@@ -112,8 +116,8 @@ Le composant Média dynamique est dynamique ; il propose des options différent
 >
 >Si vous ajoutez le composant Média dynamique et si l’option **[!UICONTROL Paramètres de média dynamique]** est vide ou s’il est impossible d’ajouter correctement une ressource, vérifiez les points suivants :
 >
->* Vous avez [activé Dynamic Media](config-dynamic.md). Par défaut, Dynamic Media est désactivé.
->* L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne possèdent pas de fichier pyramid tiff.
+>* Vous avez [enabled Dynamic Media](config-dynamic.md). Par défaut, Dynamic Media est désactivé.
+>* L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne comportent pas de fichier pyramid tiff.
 >
 
 
@@ -121,7 +125,7 @@ Le composant Média dynamique est dynamique ; il propose des options différent
 
 Le composant Média dynamique permet d’ajouter des images dynamiques, notamment des visionneuses d’images, à 360 ° et de supports variés. Vous pouvez effectuer un zoom avant et arrière, faire pivoter une image dans une visionneuse à 360° ou sélectionner une image dans un autre type de visionneuse.
 
-Vous pouvez également configurer directement dans le composant les paramètres prédéfinis de la visionneuse ou de l’image ou le format de l’image. Pour rendre une image réactive, vous pouvez définir les points d’arrêt ou appliquer un paramètre prédéfini d’image réactive.
+Vous pouvez également configurer directement dans le composant les paramètres prédéfinis de la visionneuse ou de l’image ou le format de l’image. Pour rendre une image réactive, vous pouvez définir les points d’arrêt ou appliquer un paramètre d’image prédéfini réactif.
 
 Vous devez modifier les paramètres Dynamic Media suivants en cliquant sur le bouton **[!UICONTROL Modifier]** dans le composant, puis **[!UICONTROL Paramètres Dynamic Media]**.
 
@@ -132,14 +136,14 @@ Vous devez modifier les paramètres Dynamic Media suivants en cliquant sur le bo
 >Par défaut, le composant d’image Dynamic Media est adaptatif. Si vous souhaitez lui donner une taille fixe, définissez-la dans le composant du **[!UICONTROL Avancé]** avec l’onglet **[!UICONTROL Largeur]** et **[!UICONTROL Hauteur]** paramètres.
 
 * **[!UICONTROL Paramètre prédéfini de la visionneuse]**
-Sélectionnez un paramètre prédéfini de visionneuse existant dans le menu déroulant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
-Il s’agit de la seule option disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés. Les paramètres prédéfinis de visionneuse sont également dynamiques : seuls les paramètres pertinents s’affichent.
+Sélectionnez un paramètre prédéfini de visionneuse existant dans le menu déroulant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse si vous utilisez un paramètre d’image prédéfini et vice versa.
+Il s’agit de la seule option disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés. Les paramètres de visionneuse prédéfinis affichés sont également intelligents ; seuls les paramètres de visionneuse prédéfinis pertinents s’affichent.
 
 * **[!UICONTROL Modificateurs de visionneuse]**
 Les modificateurs de visionneuse prennent la forme d’une paire nom=valeur avec un délimiteur &amp; et permettent de modifier les visionneuses comme indiqué dans le Guide de référence des visionneuses. Un exemple de modificateur de visionneuse est posterimage=img.jpg&amp;caption=text.vtt,1 qui définit une image différente pour la miniature de la vidéo et associe un fichier de sous-titre/sous-titre à la vidéo.
 
 * **[!UICONTROL Paramètre d’image prédéfini]**
-Sélectionnez un paramètre d’image prédéfini existant dans le menu déroulant. Si le paramètre d’image prédéfini que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
+Sélectionnez un paramètre d’image prédéfini existant dans le menu déroulant. Si le paramètre d’image prédéfini que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse si vous utilisez un paramètre d’image prédéfini et vice versa.
 Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
 
 * **[!UICONTROL Modificateurs d’image]**
@@ -232,9 +236,9 @@ Saisissez une valeur en pixels si vous souhaitez que la taille de l’image de r
 
 ### Composant Interactive Media {#interactive-media-component}
 
-Le composant Interactive Media est destiné aux ressources présentant des éléments interactifs tels que des zones réactives ou des zones cliquables. Si vous disposez d’une image interactive, d’une vidéo interactive ou d’une bannière de carrousel, utilisez le composant Interactive Media.
+Le composant Interactive Media est destiné aux ressources qui comportent de l’interactivité sur ces zones réactives ou zones cliquables. Si vous disposez d’une image interactive, d’une vidéo interactive ou d’une bannière de carrousel, utilisez le composant Interactive Media.
 
-Le composant Interactive Media est dynamique. Il propose différentes options selon que vous ajoutez une image ou une vidéo. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille d’écran. Toutes les visionneuses sont des visionneuses HTML5.
+Le composant Interactive Media est dynamique. Il propose différentes options selon que vous ajoutez une image ou une vidéo. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille de l’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
 >[!NOTE]
 >
@@ -258,22 +262,22 @@ Si vous souhaitez que la taille de la vidéo soit fixe, saisissez une valeur en 
 Vous pouvez modifier les paramètres **[!UICONTROL Ajouter au panier]** ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
 * **[!UICONTROL Afficher la ressource de produit]**
-Par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Désactivez la case pour ne pas afficher la ressource de produit.
+Par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Décochez la case pour ne pas afficher la ressource de produit.
 
 * **[!UICONTROL Afficher le prix du produit]**
-Par défaut, cette valeur est sélectionnée. Le prix du produit affiche le prix de l’élément tel qu’il est défini dans le module Commerce. Désactivez la case pour ne pas afficher le prix du produit.
+Par défaut, cette valeur est sélectionnée. Le prix du produit affiche le prix de l’article tel que défini dans le module Commerce. Décochez la case pour ne pas afficher le prix du produit.
 
 * **[!UICONTROL Afficher le formulaire de produit]**
-Par défaut, cette valeur n’est pas sélectionnée. Le formulaire de produit contient toutes les variantes de produit, telles que la taille et la couleur. Désactivez la case pour ne pas afficher les variantes de produit.
+Par défaut, cette valeur n’est pas sélectionnée. Le formulaire de produit comprend toutes les variantes de produit, telles que la taille et la couleur. Décochez la case pour ne pas afficher les variantes de produit.
 
 ### Composant Média panoramique {#panoramic-media-component}
 
-Le composant de média panoramique est destiné aux ressources qui sont des images panoramiques sphériques. Ces images fournissent une expérience d’affichage à 360° d’une pièce, d’une propriété, d’un lieu ou d’un paysage. Pour qu’une image soit un panorama sphérique, elle doit posséder l’une ou l’autre des propriétés suivantes, ou les deux :
+Le composant Média panoramique est destiné aux ressources qui sont des images panoramiques sphériques. Ces images offrent une expérience d’affichage de 3 60° d’une pièce, d’une propriété, d’un emplacement ou d’un paysage. Pour qu’une image soit considérée comme un panorama sphérique, elle doit posséder l’une des caractéristiques suivantes, OU les deux :
 
-* Un rapport d’aspect de 2:1.
-* Balisée avec les mots-clés « équirectangulaire » ou (« sphérique » + « panorama ») ou (« sphérique » + « panoramique »). Voir [Utilisation des balises](/help/sites-authoring/tags.md).
+* Un format de 2:1.
+* Avec les mots-clés &quot;équirectangulaire&quot; ou (&quot;sphérique&quot; + &quot;panorama&quot;) ou (&quot;sphérique&quot; + &quot;panoramique&quot;). Voir [Utilisation des balises](/help/sites-authoring/tags.md).
 
-Les critères de rapport d’aspect et de mots-clés s’appliquent tous deux aux ressources panoramiques pour la page des détails des ressources et le composant WCM « médias panoramiques ».
+Les critères de format et de mot-clé s’appliquent aux ressources panoramiques pour la page de détails des ressources et le composant de gestion de contenu web « Médias panoramiques ».
 
 ![panoramic-media-viewer-preset](assets/panoramic-media-viewer-preset.png)
 
@@ -282,11 +286,11 @@ Vous pouvez modifier le paramètre suivant en appuyant sur **[!UICONTROL Modifie
 * **[!UICONTROL Paramètre prédéfini de la visionneuse]**
 Sélectionnez une visionneuse existante dans le menu déroulant Paramètre prédéfini de la visionneuse .
 
-Si le paramètre prédéfini de la visionneuse que vous recherchez n’est pas visible, vérifiez qu’il est publié. Vous devez publier les paramètres prédéfinis de la visionneuse avant que vous puissiez les utiliser. Consultez [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md).
+Si le paramètre prédéfini de la visionneuse que vous recherchez n’est pas visible, vérifiez qu’il est publié. Vous devez publier les paramètres prédéfinis de visionneuse avant de pouvoir les utiliser. Consultez [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md).
 
 ### Utilisation du HTTP/2 pour la diffusion de ressources Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 est le nouveau protocole web mis à jour qui améliore le mode de communication entre les navigateurs et les serveurs. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
+HTTP/2 est le nouveau protocole Web mis à jour qui améliore la communication entre les navigateurs et les serveurs. Il permet un transfert plus rapide des informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
 Voir [Diffusion du contenu sur HTTP2](http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
 

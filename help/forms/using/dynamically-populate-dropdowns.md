@@ -1,7 +1,7 @@
 ---
 title: Remplissage dynamique des listes déroulantes
 seo-title: Dynamically populating drop-down lists
-description: Procédure pour remplir de façon dynamique des listes déroulantes en fonction d’une certaine logique
+description: Procédure pour remplir de manière dynamique des listes déroulantes en fonction d’une certaine logique
 seo-description: Procedure to dynamically populate drop-down lists based on some logic
 uuid: b58a184f-6c96-47ff-8a2e-829c93b63324
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
 exl-id: 3a32f578-23b1-4c76-bd85-dd3d812c6c28
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '368'
+ht-degree: 46%
 
 ---
 
 # Remplissage dynamique des listes déroulantes  {#dynamically-populating-drop-down-lists}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Prérequis {#prerequisites}
 
@@ -31,10 +35,10 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
 1. Créez un projet avec les modules suivants :
 
-   * Le lot contenant la logique pour remplir la liste déroulante, en l’occurrence une servlet.
-   * Le contenu, qui incorpore le fichier .jar et possède une ressource de liste déroulante. La servlet pointe vers cette ressource.
+   * Groupe contenant la logique pour remplir la liste déroulante, qui dans ce cas est une servlet.
+   * Le contenu, qui incorpore le fichier .jar et dispose d’une ressource déroulante. Le servlet pointe vers cette ressource.
 
-1. Créez une servlet basée sur le paramètre de requête Pays, qui renvoie un tableau contenant les noms des états du pays.
+1. Créez un servlet basé sur le paramètre de requête Pays, qui renvoie un tableau contenant les noms des états du pays.
 
    ```java
    @Component(metatype = false)
@@ -149,10 +153,10 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
    ![Création d’un nœud de liste déroulante](assets/dropdown-node.png)
 
-1. Empaquetez le nœud de contenu et incorporez le fichier .jar à un emplacement spécifique (par exemple /apps/myfolder/demo/install/). Déployez le même fichier sur le serveur.
-1. Créez un formulaire adaptatif et ajoutez deux listes déroulantes, Pays et Etat, à ce dernier. La liste Pays peut contenir les noms des pays. La liste Etat peut remplir de manière dynamique les noms des états pour le pays sélectionné dans la première liste.
+1. Regroupez le noeud de contenu et incorporez le fichier .jar à un emplacement spécifique (par exemple /apps/myfolder/demo/install/). Déployez le même fichier sur le serveur.
+1. Créez un formulaire adaptatif et ajoutez-y deux listes déroulantes, Pays et Etat. La liste Pays peut inclure les noms des pays. La liste Etat peut remplir de manière dynamique les noms des états du pays sélectionné dans la première liste.
 
-   Ajoutez les noms des pays à afficher dans la liste Pays. Dans la liste Etat, ajoutez un script pour la remplir selon le nom du pays de la liste Pays.
+   Ajoutez les noms des pays à afficher dans la liste Pays. Dans la liste Etat, ajoutez un script pour la remplir en fonction du nom du pays dans la liste Pays.
 
    ![Ajout de noms de pays](assets/country-dropdown.png) ![Ajout d’un script pour renseigner les noms d’état](assets/state-dropdown.png) ![Listes déroulantes Pays et États ensemble ](assets/2dropdowns.png)
 

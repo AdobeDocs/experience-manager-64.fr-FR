@@ -10,22 +10,26 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ccaebb4c-cc1c-4ee7-b080-99667f348427
 exl-id: e62b7c0d-5004-4672-9fdc-566ece2785c9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 32%
+source-wordcount: '495'
+ht-degree: 3%
 
 ---
 
 # Fonctionnalité Flux d’activités {#activity-streams-feature}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Présentation {#introduction}
 
 Les activités d’un membre de la communauté connecté, comme la publication sur un forum ou un blog, sont regroupées dans un flux qui peut être filtré et affiché de différentes manières via la configuration de la fonction `Activity Streams` composant.
 
-La possibilité de suivi ajoute une autre vue des activités lorsque des membres de la communauté suivent des publications d’intérêt ou suivent les activités d’autres membres de la communauté.
+La possibilité de suivre ajoute une autre vue des activités lorsque les membres de la communauté suivent des messages d’intérêt ou suivent les activités d’autres membres de la communauté.
 
-Cette section de la documentation décrit :
+Cette section de la documentation décrit
 
 * Ajout du composant Flux d’activités à un site AEM
 * Paramètres de configuration du composant Flux d’activités
@@ -36,7 +40,7 @@ Si vous souhaitez ajouter une `Activity Streams` sur une page en mode création,
 
 * `Communities / Activity Streams`
 
-et faites-le glisser sur la page où des flux d’activités doivent apparaître.
+et faites-le glisser sur la page où les flux d’activités doivent apparaître.
 
 Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
 
@@ -44,24 +48,26 @@ Lorsque la variable [bibliothèques côté client requises](essentials-activitie
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-## Configuration du composant Flux d’activités {#configuring-activity-streams}
+## Configuration des flux d’activités {#configuring-activity-streams}
 
 Sélectionnez le `Activity Streams` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-Dans l’onglet **[!UICONTROL Activités de l’utilisateur]**, spécifiez les activités à afficher :
+Sous , **[!UICONTROL Activités utilisateurs]** , définissez les activités à afficher :
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
 * **[!UICONTROL Nombre max. d’activités]**
 Le nombre d’activités à afficher
-* **[!UICONTROL Chemin d’accès aux ressources de flux]** Laissez ce champ vide pour qu’il adopte par défaut le site ou le groupe de la communauté. Le chemin d’accès aux ressources de flux identifie la source des activités. Par défaut, ce champ est vide.
-* **[!UICONTROL Afficher la vue Activités de l’utilisateur]** Si cette option est cochée, la page des activités inclut un onglet qui filtre les activités en fonction des activités générées au sein de la communauté par le membre actuel. Cette option est cochée par défaut.
+* **[!UICONTROL Chemin de la ressource de diffusion]**
+Laissez ce champ vide par défaut pour le site de la communauté ou le groupe de la communauté. Le chemin d’accès à la ressource de flux identifie la source des activités. La valeur par défaut est vide.
+* **[!UICONTROL Afficher la vue des activités utilisateur]**
+si cette case est cochée, la page activités comprend un onglet qui filtre les activités en fonction de celles générées au sein de la communauté par le membre actuel. La valeur par défaut est cochée.
 * **[!UICONTROL Afficher la vue Toutes les activités]**
-Si cette case est cochée, la page des activités comporte un onglet qui inclut toutes les activités générées au sein de la communauté auxquelles le membre actuel a accès. Cette option est cochée par défaut.
+Si cette case est cochée, la page des activités comporte un onglet qui inclut toutes les activités générées au sein de la communauté auxquelles le membre actuel a accès. La valeur par défaut est cochée.
 * **[!UICONTROL Afficher la vue suivante]**
-Si cette case est cochée, la page Activités comprend un onglet qui filtre les activités en fonction de celles que le membre actuel suit. Cette option est cochée par défaut.
+Si cette case est cochée, la page Activités comprend un onglet qui filtre les activités en fonction de celles que le membre actuel suit. La valeur par défaut est cochée.
 
 ## Vue suivante {#following-view}
 
@@ -84,4 +90,4 @@ Le **Suivez** s’affiche :
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur les flux d’activités](essentials-activities.md) du développeur.
+Vous trouverez plus d’informations sur la [Notions fondamentales sur les flux d’activités](essentials-activities.md) pour les développeurs.

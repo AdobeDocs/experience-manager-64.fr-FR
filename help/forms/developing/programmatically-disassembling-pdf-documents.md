@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 role: Developer
 exl-id: 3f757392-96a0-4f20-91d0-7fbccb1bf171
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 100%
+source-wordcount: '1783'
+ht-degree: 98%
 
 ---
 
 # Désassembler des documents PDF par programme {#programmatically-disassembling-pdf-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez désassembler un document PDF en le transmettant au service Assembler. Cette tâche est particulièrement utile lorsque le document PDF d’origine a été créé à partir de plusieurs documents séparés, par exemple un ensemble de rapports. Dans l’illustration suivante, DocA est divisé en plusieurs documents générés, où le premier signet de niveau 1 d’une page identifie le début d’un nouveau document généré.
 

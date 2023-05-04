@@ -10,16 +10,20 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: aeacddc5-a128-40cd-a4c3-07fa173f90c4
 exl-id: 6b8b19ae-eb3b-46d5-ab44-18c43d11aa61
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 27%
+source-wordcount: '137'
+ht-degree: 7%
 
 ---
 
 # Fonctionnalité Affectations {#assignments-feature}
 
-Les composants Affectations d’activation et [Catalogue d’activation](catalog.md) figurant dans le groupe Communautés du navigateur de composants sont des composants d’une [communauté d’activation](overview.md#enablement-community).
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Affectations d’activation et [Catalogue d’activation](catalog.md) les composants figurant dans le groupe Communities de l’explorateur de composants sont des composants d’une [communauté d&#39;activation](overview.md#enablement-community).
 
 Le composant Affectations d’activation permet au membre de la communauté actuellement connecté (apprenant) d’accéder aux [ressources d&#39;activation](resources.md).
 

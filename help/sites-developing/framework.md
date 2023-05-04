@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 feature: Tagging
 exl-id: bae592db-dc36-409f-b841-0582c464c3f6
-source-git-commit: 381e760d1634dec6c6cdb933fd4da6b4652e6ff7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 66%
+source-wordcount: '1800'
+ht-degree: 65%
 
 ---
 
 # Framework de balisage AEM{#aem-tagging-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Pour baliser le contenu et exploiter l’infrastructure de balisage AEM :
 
@@ -32,7 +36,7 @@ La déclaration d’une balise est capturée dans le référentiel dans un nœud
 
 Une balise peut être un mot simple (par exemple, `fruit`) ou représentent une taxonomie hiérarchique (par exemple, `fruit/apple`, c&#39;est-à-dire les fruits en général et la pomme plus spécifique).
 
-Les balises sont identifiées par un identifiant unique.
+Les balises sont identifiées par un ID de balise unique.
 
 Une balise contient des métadonnées facultatives telles qu’un titre, des titres localisés et une description. Le titre doit être affiché dans les interfaces utilisateur au lieu du `TagID`, le cas échéant.
 
@@ -78,7 +82,7 @@ Une balise conteneur est un nœud de type `cq:Tag` contenant le nombre et le typ
 
 En outre, les balises conteneur (ou super-balises) d’une taxonomie servent de sous-résumé de toutes les sous-balises. Par exemple, du contenu balisé avec `fruit/apple` est considéré comme balisé avec `fruit` ainsi que . Cela signifie que la recherche de contenu simplement balisé avec `fruit` trouverait également le contenu balisé avec `fruit/apple`.
 
-### Résolution d’ID de balise {#resolving-tagids}
+### Résolution d’identifiant de balise {#resolving-tagids}
 
 Si l’ID de balise contient deux points `:`, le deux-points sépare l’espace de noms de la balise ou de la sous-taxonomie, qui sont ensuite séparés par des barres obliques normales. `/`. En l’absence de signe deux-points dans l’ID de balise, l’espace de noms par défaut est impliqué.
 

@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 863ee5e3-daa7-4f7d-8897-291d367cf29d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 4%
+source-wordcount: '299'
+ht-degree: 5%
 
 ---
 
 # Notions fondamentales sur les balises {#tag-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Lorsque les composants AEM Communities sont configurés avec le balisage activé, les membres de la communauté peuvent baliser le contenu qu’ils publient dans l’environnement de publication.
 

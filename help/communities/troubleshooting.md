@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 1%
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
 # Résolution des problèmes {#troubleshooting}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Cette section contient des préoccupations courantes et des problèmes connus.
 
@@ -50,7 +54,7 @@ Le problème est que la chaîne de format pour com.day.cq.commons.date.RelativeT
 Par conséquent, tout code utilisant l’API RelativeTimeFormat() doit être modifié.
 
 * De: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
-* Pour :`final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
+* À: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
 L’échec est différent sur l’auteur et la publication. Sur l’auteur, il échoue silencieusement et n’affiche simplement pas les sujets du forum. Une fois la publication effectuée, l’erreur est renvoyée sur la page.
 

@@ -1,25 +1,29 @@
 ---
 title: Utilisation de profils de métadonnées pour appliquer des métadonnées par défaut à toutes les ressources d’un dossier
-description: Découvrez les profils de métadonnées pour les ressources. Apprenez à créer un profil de métadonnées et à l’appliquer aux ressources d’un dossier.
+description: Connaître les profils de métadonnées des ressources. Découvrez comment créer un profil de métadonnées et l’appliquer aux ressources de dossier.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 63%
+source-wordcount: '1262'
+ht-degree: 56%
 
 ---
 
 # Profils de métadonnées {#metadata-profiles}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Un profil de métadonnées vous permet d’appliquer des métadonnées par défaut aux ressources d’un dossier. Créez un profil de métadonnées et appliquez-le à un dossier. Toute ressource que vous chargez par la suite dans le dossier hérite des métadonnées par défaut que vous avez configurées dans le profil de métadonnées.
 
 ## Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
 
 1. Appuyez ou cliquez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**, puis appuyez sur **[!UICONTROL Créer]**.
-1. Saisissez un titre pour le profil de métadonnées, par exemple, Exemple de métadonnées, puis cliquez sur **[!UICONTROL Envoyer]**. Le **[!UICONTROL Modifier le formulaire]** pour le profil de métadonnées s’affiche.
+1. Saisissez un titre pour le profil de métadonnées, par exemple Exemples de métadonnées, puis cliquez sur **[!UICONTROL Envoyer]**. Le **[!UICONTROL Modifier le formulaire]** pour le profil de métadonnées s’affiche.
 
    ![chlimage_1-480](assets/chlimage_1-480.png)
 
@@ -84,7 +88,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
 ## Application d’un profil de métadonnées à des dossiers {#applying-a-metadata-profile-to-folders}
 
-Lorsque vous affectez un profil de métadonnées à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil de métadonnées à un dossier. Nous vous conseillons donc de choisir avec la plus grande attention la structure du dossier dans lequel vous transférez, stockez, utilisez et archivez des ressources.
+Lorsque vous affectez un profil de métadonnées à un dossier, tous les sous-dossiers héritent automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil de métadonnées à un dossier. Ainsi, réfléchissez soigneusement à la structure de dossiers de l’emplacement où vous chargez, stockez, utilisez et archivez les ressources.
 
 Si vous avez affecté un profil de métadonnées différent à un dossier, le nouveau profil remplace le précédent. Les ressources du dossier précédent restent inchangées. Le nouveau profil est appliqué aux ressources ajoutées ultérieurement au dossier.
 
@@ -114,7 +118,7 @@ Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profi
 1. Dans le rail de gauche, appuyez sur **[!UICONTROL Ressources]**, puis accédez au dossier auquel vous souhaitez appliquer un profil de métadonnées.
 1. Dans le dossier, appuyez sur la coche pour le sélectionner, puis sur **[!UICONTROL Propriétés]**.
 
-1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]**, sélectionnez le profil dans le menu déroulant, puis cliquez sur **[!UICONTROL Enregistrer]**.
+1. Sélectionnez la **[!UICONTROL Profils de métadonnées]** et sélectionnez le profil dans le menu déroulant, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
    ![chlimage_1-491](assets/chlimage_1-491.png)
 

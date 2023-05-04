@@ -11,30 +11,34 @@ content-type: reference
 discoiquuid: 4c4a7bc4-3fb1-44c1-823f-d789790f5e06
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: abbbf606-aff2-44b4-b16e-ceb54997115f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 100%
+source-wordcount: '838'
+ht-degree: 72%
 
 ---
 
 # Création de filtres de groupe d’appareils{#creating-device-group-filters}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 >[!NOTE]
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Créez un filtre de groupe d’appareils pour définir un ensemble d’exigences en termes de caractéristiques d’appareil. Créez autant de filtres que nécessaire pour cibler les groupes de caractéristiques d’appareils nécessaires.
+Créez un filtre de groupe d’appareils pour définir un ensemble d’exigences en termes de caractéristiques d’appareil. Créez autant de filtres que nécessaire pour cibler les groupes de fonctionnalités d’appareil nécessaires.
 
 Concevez vos filtres de sorte à pouvoir utiliser des combinaisons pour définir des groupes de caractéristiques. Généralement, certaines caractéristiques sont communes à différents groupes d’appareils. Par conséquent, vous pouvez utiliser certains filtres avec plusieurs définitions de groupe d’appareils.
 
-Après avoir créé un filtre, vous pouvez l’utiliser dans la [configuration du groupe](/help/sites-developing/mobile.md#creating-a-device-group).
+Après avoir créé un filtre, vous pouvez l’utiliser dans la variable [configuration du groupe.](/help/sites-developing/mobile.md#creating-a-device-group)
 
-## La classe Java de filtre {#the-filter-java-class}
+## Classe Java de filtrage {#the-filter-java-class}
 
-Un filtre de groupe d’appareils est un composant OSGi qui implémente l’interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Une fois déployée, la classe d’implémentation fournit un service de filtrage disponible pour les configurations de groupes d’appareils.
+Un filtre de groupe d’appareils est un composant OSGi qui implémente l’interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Lorsqu’elle est déployée, la classe d’implémentation fournit un service de filtrage disponible pour les configurations de groupe d’appareils.
 
-La solution décrite dans cet article utilise le module externe Apache Felix Maven SCR pour faciliter le développement du composant et du service. Par conséquent, l’exemple de classe Java utilise les annotations `@Component` et `@Service`. La classe comporte la structure suivante :
+La solution décrite dans cet article utilise le module externe Apache Felix Maven SCR pour faciliter le développement du composant et du service. Par conséquent, l’exemple de classe Java utilise les annotations `@Component` et `@Service`. La classe possède la structure suivante :
 
 ```java
 package com.adobe.example.myapp;
@@ -66,15 +70,15 @@ public class myDeviceGroupFilter implements DeviceGroupFilter {
 }
 ```
 
-Vous devez fournir le code pour les méthodes suivantes :
+Vous devez fournir du code pour les méthodes suivantes :
 
-* getDescription : renvoie la description du filtre. La description apparaît dans la boîte de dialogue de configuration du groupe d’appareils.
-* getTitle : renvoie le nom du filtre. Le nom apparaît lors de la sélection des filtres pour le groupe d’appareils.
-* matches : détermine si l’appareil possède les caractéristiques demandées.
+* getDescription: Renvoie la description du filtre. La description apparaît dans la boîte de dialogue de configuration du groupe d’appareils.
+* getTitle: Renvoie le nom du filtre. Le nom apparaît lors de la sélection des filtres pour le groupe d’appareils.
+* correspond à : Détermine si l’appareil dispose des fonctionnalités requises.
 
 ### Saisie du nom et de la description du filtre {#providing-the-filter-name-and-description}
 
-Les méthodes `getTitle` et `getDescription` renvoient respectivement le nom et la description du filtre. Le code suivant illustre la mise en œuvre la plus simple :
+Les méthodes `getTitle` et `getDescription` renvoient respectivement le nom et la description du filtre. Le code suivant illustre la mise en oeuvre la plus simple :
 
 ```java
 public String getDescription() {
@@ -86,14 +90,14 @@ public String getTitle() {
 }
 ```
 
-Le codage en dur du nom et du texte descriptif est suffisant pour les environnements de création unilingues. Pensez à externaliser les chaînes dans le cas d’une utilisation multilingue ou à activer le changement de chaîne sans recompiler le code source.
+Le codage en dur du nom et du texte descriptif est suffisant pour les environnements de création unilingues. Envisagez d’externaliser les chaînes pour une utilisation multilingue ou de permettre la modification des chaînes sans recompiler le code source.
 
-### Évaluation par rapport aux critères de filtrage {#evaluating-against-filter-criteria}
+### Évaluation par rapport aux critères de filtre {#evaluating-against-filter-criteria}
 
 La fonction `matches` renvoie la valeur `true` si les caractéristiques de l’appareil satisfont à tous les critères de filtre. Évaluez les informations fournies dans les arguments de méthode pour déterminer si l’appareil appartient au groupe. Les valeurs suivantes sont fournies en tant qu’arguments : 
 
 * Un objet DeviceGroup
-* Le nom de l’agent utilisateur
+* Nom de l’agent utilisateur
 * Un objet Map qui contient les caractéristiques de l’appareil. Les clés Map sont les noms des caractéristiques WURFL™ et les valeurs sont les valeurs correspondantes issues de la base de données WURFL™.
 
 L’interface [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contient un sous-ensemble des noms des caractéristiques WURFL™ dans les champs statiques. Utilisez ces constantes de champ en tant que clés lors de la récupération de valeurs à partir du mappage des caractéristiques de l’appareil.
@@ -105,13 +109,13 @@ boolean cssSupport = true;
 cssSupport = NumberUtils.toInt(capabilities.get(DeviceSpecsConstants.DSPEC_XHTML_SUPPORT_LEVEL)) > 1;
 ```
 
-Le module `org.apache.commons.lang.math` fournit la classe `NumberUtils`.
+Le package `org.apache.commons.lang.math` fournit la classe `NumberUtils`.
 
 >[!NOTE]
 >
 >Assurez-vous que la base de données WURFL™ déployée sur AEM inclut les caractéristiques que vous utilisez comme critères de filtre. (Voir [Détection d’appareils](/help/sites-developing/mobile.md#server-side-device-detection).)
 
-### Exemple de filtre pour la taille de l’écran {#example-filter-for-screen-size}
+### Exemple De Filtre Pour La Taille D’Écran {#example-filter-for-screen-size}
 
 L’exemple d’implémentation de DeviceGroupFilter suivant détermine si la taille physique de l’appareil répond aux exigences minimales. Ce filtre est destiné à ajouter un niveau de granularité au groupe d’appareils tactiles. La taille des boutons dans l’interface utilisateur de l’application doit être identique quelle que soit la taille de l’écran physique. La taille des autres éléments, tels que le texte, peut varier. Le filtre permet la sélection dynamique d’un CSS particulier qui contrôle la taille des éléments de l’interface utilisateur.
 
@@ -172,15 +176,15 @@ Les valeurs de chaîne renvoyées par les méthodes getTitle et getDescription s
 
 ![filterdescription](assets/filterdescription.png)
 
-### Le fichier Maven POM {#the-maven-pom-file}
+### Fichier POM Maven {#the-maven-pom-file}
 
 Le code POM suivant est utile si vous utilisez Maven pour créer vos applications. Le POM fait référence à plusieurs dépendances et modules externes requis.
 
-**Modules externes :**
+**Modules externes:**
 
-* Module externe Apache Maven Compiler : compile les classes Java à partir du code source.
-* Module externe Apache Felix Maven Bundle : crée le bundle et le manifeste
-* Module externe Apache Felix Maven SCR : crée le fichier descripteur de composant et configure l’en-tête du manifeste du composant de service.
+* Module externe de compilateur Apache Maven : Permet de compiler des classes Java à partir du code source.
+* Module externe Apache Felix Maven Bundle : Crée le lot et le manifeste
+* Module externe Apache Felix Maven SCR : Crée le fichier de descripteur de composant et configure l’en-tête de manifeste du composant de service.
 
 **Dépendances :**
 
@@ -190,7 +194,7 @@ Le code POM suivant est utile si vous utilisez Maven pour créer vos application
 
 Les interfaces DeviceGroup et DeviceGroupFilter sont incluses dans le lot de l’API Day Communique 5 WCM Mobile. Les annotations Felix sont incluses dans le bundle Apache Felix Declarative Services. Vous pouvez obtenir ce fichier JAR à partir du référentiel Adobe public.
 
-Au moment de la création, la version 5.5.2 est la version du lot de l’API WCM Mobile qui figure dans la dernière version d’AEM. Utilisez la console web Adobe ([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)) pour vous assurer que la version du bundle est déployée dans votre environnement.
+Au moment de la création, la version 5.5.2 est la version du lot de l’API WCM Mobile qui figure dans la dernière version d’AEM. Utiliser la console web Adobe ([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)) pour vous assurer qu’il s’agit de la version du lot déployée dans votre environnement.
 
 **POM :**(votre code POM utilisera un autre groupId et une autre version.) 
 
@@ -257,4 +261,4 @@ Au moment de la création, la version 5.5.2 est la version du lot de l’API WC
 </project>
 ```
 
-Ajoutez le profil que la section [Obtention du plugin Maven pour les modules de contenu](/help/sites-developing/vlt-mavenplugin.md) fournit à votre fichier de paramètres maven pour utiliser le référentiel Adobe public.
+Ajoutez le profil que la section [Obtention du plug-in Maven pour les packages de contenu](/help/sites-developing/vlt-mavenplugin.md) fournit à votre fichier de paramètres maven pour utiliser le référentiel Adobe public.

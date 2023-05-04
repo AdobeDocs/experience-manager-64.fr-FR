@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 role: Admin
 exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2764'
-ht-degree: 6%
+source-wordcount: '2800'
+ht-degree: 5%
 
 ---
 
 # Configuration d’Analytics pour les fonctionnalités des communautés {#analytics-configuration-for-communities-features}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
@@ -102,11 +106,11 @@ En vous connectant à [Adobe Marketing Cloud](https://experienceleague.adobe.com
    * **`event1`** through **`event7`** enabled
    * Type **`Counter`**
 
-      * not **`Counter (no subrelations)`**
+      * sauf **`Counter (no subrelations)`**
    * Peut réutiliser (renommer) des événements existants ou en créer de nouveaux à utiliser pour les fonctionnalités de communauté
 
 
-* [Gestion des vidéos](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+* [Gestion des vidéos](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr)
 
    * Console Rapports vidéo
 
@@ -339,8 +343,20 @@ Pour que le suivi et l’importation Analytics fonctionnent correctement pour un
 
 ```xml
 # present in default sitepage.hbs
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # only one scf-js-site-title class should be included
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # this example sets it to be hidden as it serves no visual purpose
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 <div
     class="navbar-brand scf-js-site-title"
     href="{{siteUrl}}.html"

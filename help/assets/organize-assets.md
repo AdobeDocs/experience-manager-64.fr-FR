@@ -5,16 +5,20 @@ contentOwner: AG
 feature: Asset Management,Search
 role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 82%
+source-wordcount: '839'
+ht-degree: 78%
 
 ---
 
 # Organisez vos ressources numériques {#organize-digital-assets}
 
-L’ensemble des ressources numériques, des métadonnées et du contenu des documents Microsoft Office et PDF sont extraits et rendus utilisables dans une requête. Les recherches permettent un filtrage élaboré des ressources et respectent entièrement les autorisations. Les métadonnées sont traitées en détail dans la section Métadonnées de la gestion des ressources numériques.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+L’ensemble des ressources numériques, des métadonnées et du contenu des documents Microsoft Office et PDF sont extraits et rendus utilisables dans une requête. La recherche permet un filtrage sophistiqué des ressources et respecte entièrement les autorisations appropriées. Les métadonnées sont traitées en détail dans la section Métadonnées de la gestion des ressources numériques.
 
 [!DNL Experience Manager] Assets prend en charge plusieurs manières d’organiser le contenu. Vous pouvez l’organiser de façon hiérarchique à l’aide de dossiers ou de manière ad hoc et non classée à l’aide de balises. Vous pouvez modifier les balises dans l’éditeur de ressources de gestion des ressources numériques où les sous-ressources, rendus et métadonnées sont affichés.
 
@@ -36,7 +40,7 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
    * **Dossiers reposant sur une date** : contiennent des ressources numériques en fonction d’une date de création ou d’une date de dernière modification.
 
 * Créez un répertoire de dossiers qui n’est pas susceptible de changer afin que les processus de personnalisation ou d’autonomisation puissent continuer à fonctionner. Par exemple, les profils de traitement affectés continuent à fonctionner.
-* Si une ressource est déjà publiée, vous devez utiliser [!DNL Experience Manager] pour la déplacer vers un autre dossier et la republier à partir du nouvel emplacement. L’emplacement de la ressource publiée d’origine est toujours disponible avec la ressource republiée. Toutefois, la version d’origine de la ressource publiée est *« perdue »* pour [!DNL Experience Manager] et sa publication ne peut pas être annulée. Il est donc recommandé d’annuler d’abord la publication d’une ressource avant de la déplacer vers un autre dossier.
+* Si une ressource est déjà publiée, vous devez utiliser [!DNL Experience Manager] pour la déplacer vers un autre dossier et la republier à partir du nouvel emplacement. L’emplacement de la ressource publiée d’origine est toujours disponible avec la ressource republiée. Toutefois, la version d’origine de la ressource publiée est *« perdue »* pour [!DNL Experience Manager] et elle ne peut pas être dépubliée. Il est donc recommandé de dépublier une ressource avant de la déplacer vers un autre dossier.
 
 ## Organisation de ressources à l’aide de balises {#use-tags-to-organize-assets}
 

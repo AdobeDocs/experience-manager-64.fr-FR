@@ -1,6 +1,6 @@
 ---
 title: Gestion des ressources vidéo
-description: Découvrez comment télécharger, prévisualiser, annoter et publier les ressources vidéo.
+description: Découvrez comment charger, prévisualiser, annoter et publier des ressources vidéo.
 uuid: 56a8c221-409f-4605-97b1-a054dd2abfab
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -8,23 +8,27 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: Asset Management,Video
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 55%
+source-wordcount: '823'
+ht-degree: 41%
 
 ---
 
 # Gestion des ressources vidéo  {#managing-video-assets}
 
-Découvrez comment gérer et modifier les ressources vidéo dans Adobe Experience Manager Assets. De plus, si vous possédez une licence d’utilisation Dynamic Media, reportez-vous à la [documentation vidéo sur Dynamic Media](video.md).
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Découvrez comment gérer et modifier les ressources vidéo dans Adobe Experience Manager Assets. En outre, si vous possédez une licence pour utiliser Dynamic Media, reportez-vous à la section [Documentation vidéo Dynamic Media](video.md).
 
 ## Chargement et prévisualisation des ressources vidéo {#uploading-and-previewing-video-assets}
 
 [!DNL Experience Manager] Les ressources génèrent des aperçus pour les ressources vidéo avec l’extension MP4. Si le format du contenu n’est pas MP4, installez le pack FFmpeg pour générer l’aperçu. FFmpeg crée des rendus vidéo du type OGG et MP4. Vous pouvez prévisualiser ces rendus dans la [!DNL Experience Manager] Interface utilisateur des ressources.
 
 1. Dans le ou les sous-dossiers Ressources numériques, accédez à l’emplacement où vous souhaitez ajouter des ressources numériques.
-1. Pour télécharger le contenu, cliquez ou appuyez sur **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Fichiers]**. Vous pouvez également le faire glisser directement jusqu’à la zone des ressources. Pour plus d’informations sur l’opération de téléchargement, voir [Téléchargement des ressources](managing-assets-touch-ui.md#uploading-assets).
+1. Pour charger la ressource, cliquez ou appuyez sur **[!UICONTROL Créer]** dans la barre d’outils, puis choisissez **[!UICONTROL Fichiers]**. Vous pouvez également la déposer directement dans la zone Ressources. Pour plus d’informations sur l’opération de téléchargement, voir [Téléchargement des ressources](managing-assets-touch-ui.md#uploading-assets).
 1. Pour prévisualiser une vidéo en mode Carte, appuyez sur le bouton **[!UICONTROL Lire]** du contenu vidéo.
 
    ![chlimage_1-201](assets/chlimage_1-201.png)
@@ -67,7 +71,7 @@ Pour configurer une limite de taille de fichier supérieure, procédez comme sui
 1. Sur le **[!UICONTROL Lots de la console web Adobe Experience Manager]** , sous **[!UICONTROL Nom]** de la colonne du tableau, recherchez et appuyez sur **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
 1. Dans le **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** , définissez les secondes pour les deux **[!UICONTROL Délai d’expiration par défaut]** et **[!UICONTROL Délai d’expiration maximal]** champs à `18000` (cinq heures).
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
-1. Dans AEM, appuyez sur **[!UICONTROL Outils > Processus > Modèles]**.
+1. Dans AEM, appuyez sur **[!UICONTROL Outils > Processus > Modèles]**.
 1. Sur le **[!UICONTROL Modèles de processus]** page, sélectionnez **[!UICONTROL Vidéo de codage Dynamic Media]**, puis appuyez sur **[!UICONTROL Modifier]**.
 1. Sur le **[!UICONTROL Workflow]** , appuyez deux fois sur la **[!UICONTROL Processus du service vidéo Dynamic Media]** composant.
 1. Dans la boîte de dialogue **[!UICONTROL Propriétés des étapes]**, sous l’onglet **[!UICONTROL Commun]**, développez **[!UICONTROL Paramètres avancés]**.
@@ -82,15 +86,15 @@ Une fois vos ressources vidéo publiées, vous pouvez les inclure dans une page 
 
 1. Dans la console Ressources, appuyez sur **[!UICONTROL Modifier]** sur la carte de la ressource pour afficher la page des détails de la ressource.
 1. Appuyez sur le bouton **[!UICONTROL Aperçu]** pour lire la vidéo.
-1. Pour annoter la vidéo, appuyez sur la **[!UICONTROL Annoter]** bouton . Une annotation est ajoutée à un moment spécifique de la vidéo.
+1. Pour annoter la vidéo, appuyez sur la **[!UICONTROL Annoter]** bouton . Une annotation est ajoutée à un moment donné (image) de la vidéo.
 
-   Lorsque vous annotez, vous pouvez dessiner sur le canevas et inclure un commentaire avec le dessin. Les commentaires sont automatiquement enregistrés dans les ressources AEM.
+   Lors de l’annotation, vous pouvez dessiner sur la zone de travail et inclure un commentaire avec le dessin. Les commentaires sont automatiquement enregistrés dans Adobe Experience Manager Assets.
 
    ![chlimage_1-204](assets/chlimage_1-204.png)
 
    Pour quitter l’assistant d’annotation, appuyez sur **[!UICONTROL Fermer]**.
 
-1. Pour passer à un point spécifique de la vidéo, spécifiez la durée en secondes dans le champ de texte, puis cliquez sur **[!UICONTROL Saut]**. Par exemple, pour sauter les  premières secondes de la vidéo, saisissez `20`20 dans le champ texte.
+1. Pour passer à un point spécifique de la vidéo, spécifiez la durée en secondes dans le champ de texte, puis cliquez sur **[!UICONTROL Saut]**. Par exemple, pour sauter les 20 premières secondes de la vidéo, saisissez `20` dans le champ de texte.
 
    ![chlimage_1-205](assets/chlimage_1-205.png)
 

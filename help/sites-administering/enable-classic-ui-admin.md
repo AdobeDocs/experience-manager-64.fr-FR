@@ -1,7 +1,7 @@
 ---
-title: Consoles d’administration
+title: Admin Consoles
 seo-title: Admin Consoles
-description: Comment utiliser les consoles d’administration disponibles dans AEM.
+description: Découvrez comment utiliser les Admin Console disponibles dans AEM.
 seo-description: Lear how to use the Admin Consoles available in AEM.
 uuid: 701dc57c-f7b4-421e-a847-577ae2585e80
 contentOwner: Chris Bohnert
@@ -10,16 +10,20 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 98ba3093-1edb-4891-abbe-47cf6e4f1feb
 exl-id: f3c03562-aaeb-4d43-aee1-d92d661ee329
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 92%
+source-wordcount: '263'
+ht-degree: 46%
 
 ---
 
-# Consoles d’administration{#admin-consoles}
+# Admin Consoles{#admin-consoles}
 
-Par défaut, la possibilité de basculer vers l’IU classique via les consoles d’administration a été désactivée. Par conséquent, les icônes contextuelles qui s’affichaient lors du survol du curseur sur certaines icônes de la console, et qui permettaient d’accéder à l’IU classique, ne sont plus affichées.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Par défaut, la possibilité de basculer vers l’IU classique via les consoles d’administration a été désactivée. Par conséquent, les icônes contextuelles qui s’affichaient lorsque vous survoliez certaines icônes de console, permettant d’accéder à l’IU classique, ne s’affichent plus.
 
 ![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
@@ -35,7 +39,7 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    [ `http://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](http://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
-1. Sélectionnez le nœud correspondant à la console pour laquelle vous souhaitez réactiver l’IU classique. Dans notre exemple, nous allons recréer l’IU classique pour la console Sites.
+1. Sélectionnez le nœud correspondant à la console pour laquelle vous souhaitez réactiver l’IU classique. Dans notre exemple, nous réactiverons l’IU classique pour la console Sites.
 
    `/libs/cq/core/content/nav/sites`
 
@@ -43,14 +47,14 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    * **Chemin** : `/apps/cq/core/content/nav/sites`
    * **Emplacement du recouvrement** : `/apps/`
-   * **Faire correspondre les types de nœuds** : actif (cochez la case)
+   * **Faire correspondre les types de noeud**: principal (cochez la case)
 
 1. Ajoutez la propriété booléenne suivante au nœud recouvert :
 
    `enableDesktopOnly = {Boolean}true`
 
-1. L’option **IU classique** est toujours disponible en tant qu’option d’élément contextuel dans la console d’administration.
+1. Le **IU classique** est à nouveau disponible sous la forme d’une option contextuelle dans la console d’administration.
 
    ![screen_shot_2018-03-23at111924](assets/screen_shot_2018-03-23at111924.png)
 
-Répétez ces étapes pour chaque console pour laquelle vous souhaitez réactiver l’accès à la version d’IU classique.
+Répétez ces étapes pour chaque console pour laquelle vous souhaitez réactiver l’accès à la version de l’interface utilisateur classique.

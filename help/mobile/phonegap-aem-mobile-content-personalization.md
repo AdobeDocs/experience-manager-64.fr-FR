@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c9c818dc-c5c4-4a96-94fe-9dc9fe75705b
 exl-id: 8b7a9edc-b7b1-4b31-9a6f-7f79aea7a960
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2673'
-ht-degree: 3%
+source-wordcount: '2709'
+ht-degree: 2%
 
 ---
 
 # Personnalisation du contenu AEM Mobile{#aem-mobile-content-personalization}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -121,7 +125,7 @@ AEM développeurs qui créent des applications mobiles doivent continuer à suiv
 
 ### Gestionnaires de synchronisation de contenu Adobe Target {#adobe-target-contentsync-handlers}
 
-La diffusion du contenu sur le périphérique de l’utilisateur est générée en effectuant le rendu des offres créées par les auteurs de contenu AEM. Pour gérer le rendu des offres cibles, il existe un nouveau gestionnaire de synchronisation de contenu qui traitera les offres. En utilisant l’application de référence hybride comme exemple, le module de contenu en (anglais) contient ContentSyncConfig avec un [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) gestionnaire. L’étape suivante est cruciale pour le rendu des offres sur l’appareil. Le gestionnaire mobileappoffers possède une propriété path qui identifie le chemin d’accès à l’activité de personnalisation à utiliser pour l’application.
+La diffusion du contenu sur le périphérique de l’utilisateur est générée par le rendu des offres créées par les auteurs de contenu AEM. Pour gérer le rendu des offres cibles, il existe un nouveau gestionnaire de synchronisation de contenu qui traitera les offres. En utilisant l’application de référence hybride comme exemple, le module de contenu en (anglais) contient ContentSyncConfig avec un [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) gestionnaire. L’étape suivante est cruciale pour le rendu des offres sur l’appareil. Le gestionnaire mobileappoffers possède une propriété path qui identifie le chemin d’accès à l’activité de personnalisation à utiliser pour l’application.
 
 Par exemple, si une activité se trouve à l’adresse */content/campaigns/hybridref* copiez ce chemin et collez-le en tant que valeur dans la propriété *path* de la propriété mobileappoffers handler.
 
@@ -281,9 +285,9 @@ Pour chaque mbox, un attribut de **cq-targeting** est ajouté pour permettre aux
 
 ## Prochaines étapes? {#what-s-next}
 
-1. [Expérimenter le développement d’une application AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
-1. [Gérer le contenu d’une application mobile](/help/mobile/phonegap-manage-app-content.md)
-1. [Développer une application mobile](/help/mobile/building-app-mobile-phonegap.md)
-1. [Suivre les performances d’une application avec Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
-1. [Offrir une expérience personnalisée dans une application mobile grâce à Adobe Target](/help/mobile/phonegap-aem-mobile-content-personalization.md)
-1. [Diffuser des messages importants à l’intention des utilisateurs](/help/mobile/phonegap-push-notifications.md)
+1. [Démarrer l’expérience de l’application AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
+1. [Gérer le contenu de mon application](/help/mobile/phonegap-manage-app-content.md)
+1. [Créer mon application](/help/mobile/building-app-mobile-phonegap.md)
+1. [Suivi des performances de mon application avec Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
+1. [Proposer une expérience d’application personnalisée avec Adobe Target](/help/mobile/phonegap-aem-mobile-content-personalization.md)
+1. [Envoyer des messages importants à mes utilisateurs](/help/mobile/phonegap-push-notifications.md)

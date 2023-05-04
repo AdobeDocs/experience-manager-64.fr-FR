@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: bc681589-5d46-44cd-888d-b0722a2fd006
 exl-id: d6e8412d-09d4-4cac-a691-71703ebaa374
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 7%
+source-wordcount: '335'
+ht-degree: 8%
 
 ---
 
 # Création d’une configuration d’exportation d’article{#creating-article-export-configuration}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -48,7 +52,6 @@ Configuration ContentSync disponible à l’adresse **&lt;dps-exporttemplate>/dp
 >* installation de l’exemple de contenu
 >* exécution de l’instance AEM
 >* aucun contexte personnalisé configuré ou port différent
-
 >
 
 

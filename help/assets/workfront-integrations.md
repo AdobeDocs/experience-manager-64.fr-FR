@@ -4,14 +4,18 @@ description: Présentation de l’intégration entre  [!DNL Assets]  et  [!DNL W
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 598be71d-88f1-4ace-aa99-c8ea22e907ed
-source-git-commit: 333150f824fa57f807621978612055f4929a3b69
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1171'
 ht-degree: 97%
 
 ---
 
 # Intégration d’[!DNL Adobe Experience Manager Assets] à [!DNL Adobe Workfront] {#assets-integration-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 [!DNL Adobe Workfront] est une application de gestion du travail qui vous permet de gérer l’ensemble du cycle de vie du travail en un seul endroit. L’intégration entre [!DNL Workfront] et [!DNL Adobe Experience Manager Assets] permet aux entreprises d’améliorer la vitesse du contenu et le délai de mise sur le marché en établissant des liens intrinsèques entre le travail et la gestion des ressources numériques. Dans le cadre de la gestion de leur travail dans Workfront, les utilisateurs ont accès aux documents et images requis.
 
@@ -44,7 +48,7 @@ Vous trouverez ci-dessous les détails des fonctionnalités disponibles à trave
 
 | Fonctionnalité | Description | [!DNL Workfront] et [!DNL Assets Essentials] *Aucun connecteur (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Nécessite un connecteur* | Workfront et [!DNL Experience Manager as a Cloud Service] *Aucun connecteur (OOTB)* |
 |----|----|----|-----|-----|
-| Méthodes de déploiement | Approprié pour quelle offre [!DNL Assets]. | Assets Essentials | Adobe Managed Services, On-Premise | Cloud Service |
+| Méthodes de déploiement | Approprié pour quelle offre [!DNL Assets]. | Assets Essentials | Adobe Managed Services, On-Premise | Cloud Service |
 | **Général** |
 | Envoyer des fichiers numériques depuis [!DNL Workfront] vers [!DNL Assets] | La dernière version d’un document WF peut être chargée vers AEM Assets, et sera liée en tant que nouvelle version du document. | ✓ | ✓ | ✓ |
 | Lier manuellement des dossiers AEM à des objets Workfront | Les dossiers AEM existants peuvent être liés en tant que dossier Workfront. Ses ressources enfants sont liées en tant que nouveaux documents Workfront. | ✓ | ✓ | ✓ |
@@ -60,7 +64,7 @@ Vous trouverez ci-dessous les détails des fonctionnalités disponibles à trave
 | Rediriger les utilisateurs vers AEM en cas de clic sur les ressources liées dans Workfront | Les utilisateurs sont redirigés vers AEM pour prévisualiser une ressource liée dans Workfront. | ✓ | ✓ | À venir |
 | Créer automatiquement des dossiers AEM liés dans Workfront | Créez automatiquement des dossiers AEM liés dans Workfront à l’aide des statuts de projet. Configurez automatiquement les dossiers AEM en fonction des portfolios, programmes et projets Workfront. | Non | ✓ | Non |
 | Naviguer directement vers les référentiels AEM à partir de Workfront | Permet aux utilisateurs et utilisatrices de naviguer vers les référentiels AEM disponibles configurés dans Workfront. | ✓ | Non | ✓ |
-| Création de dossiers d’AEM liés dans Workfront | Créez manuellement des dossiers d’AEM liés dans Workfront à l’aide de l’option disponible dans l’onglet Documents . | ✓ | Non | ✓ |
+| Créer des dossiers AEM liés dans Workfront | Créez manuellement des dossiers AEM liés dans Workfront à l’aide de l’option disponible dans l’onglet Documents. | ✓ | Non | ✓ |
 | Synchronisation des commentaires | Synchroniser automatiquement les commentaires des ressources de [!DNL Workfront] vers [!DNL Assets] | Non | ✓ | Non |
 | Prendre en charge plusieurs environnements Workfront se connectant à un seul environnement AEM | Les utilisateurs et utilisatrices de plusieurs environnements Workfront peuvent se connecter à un seul environnement AEM. | ✓ | Non | ✓ |
 | Prendre en charge plusieurs environnements AEM se connectant à un seul environnement Workfront | Les utilisateurs et utilisatrices d’un seul environnement Workfront peuvent envoyer ou lier des ressources entre plusieurs environnements AEM. | ✓ | ✓ | ✓ |

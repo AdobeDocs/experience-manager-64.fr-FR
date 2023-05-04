@@ -1,7 +1,7 @@
 ---
-title: Configuration des attributs système avancés
+title: Configurer les attributs système avancés
 seo-title: Configure advanced system attributes
-description: Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans qu’il soit nécessaire de l’exporter, de le modifier et de l’importer.
+description: Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans avoir à exporter, modifier et importer le fichier.
 seo-description: Use the Configure Advanced System Attributes page to modify certain settings in the configuration file without the need to export, edit, and import the file.
 uuid: 6bcfbaa9-f492-46aa-97d2-00fc3e67d0d7
 contentOwner: admin
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
 exl-id: f47c543d-6136-482b-915f-b4e13f83fa69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '511'
+ht-degree: 83%
 
 ---
 
-# Configuration des attributs système avancés {#configure-advanced-system-attributes}
+# Configurer les attributs système avancés {#configure-advanced-system-attributes}
 
-Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans qu’il soit nécessaire de l’exporter, de le modifier et de l’importer (voir [Importation et exportation du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)).
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans avoir à exporter, modifier et importer le fichier. (Voir [Import et export du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
 1. Dans la console d’administration, cliquez sur **[!UICONTROL Paramètres > User Management > Configuration > Configurer les attributs système avancés]**.
 1. (Facultatif) Modifiez l’un des attributs de session suivants :

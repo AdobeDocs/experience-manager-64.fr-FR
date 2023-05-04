@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 exl-id: 9092df98-f600-4ed8-93d8-f2e83cd8bb6a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 7%
+source-wordcount: '1220'
+ht-degree: 5%
 
 ---
 
 # Principes de recherche {#search-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
@@ -182,7 +186,7 @@ L’implémentation par défaut de la variable [Composant Recherche](search.md) 
 
 Les opérateurs de filtre sont les suivants :
 
-| EQ | égal à |
+| EQ | est égal à |
 |---|---|
 | NE | not equals |
 | LT | inférieur à |

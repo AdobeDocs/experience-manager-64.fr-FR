@@ -1,7 +1,7 @@
 ---
 title: Extension du composant Commentaires
 seo-title: Extend Comments Component
-description: Étendre le composant Commentaires afin de modifier son apparence ou son comportement pour des utilisations spécifiques
+description: Étendre le composant Commentaires afin de modifier son aspect ou son comportement pour des utilisations spécifiques
 seo-description: Extend the Comments component to alter its appearance or behavior for specific uses
 uuid: 6f439097-b1d0-4e7d-afcf-01d8f43aa866
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 exl-id: f6722953-ff71-4fba-b76e-1d566f71f6d5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 0%
+source-wordcount: '291'
+ht-degree: 3%
 
 ---
 
 # Extension du composant Commentaires {#extend-comments-component}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 L’intention de [extension](client-customize.md#extensions) un composant par défaut consiste à modifier l’aspect ou le comportement d’un composant pour des utilisations spécifiques.
 

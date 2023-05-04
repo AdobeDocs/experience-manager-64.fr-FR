@@ -1,7 +1,7 @@
 ---
 title: Les 10 plus grands risques d’OWASP
 seo-title: OWASP Top 10
-description: Découvrez comment AEM gère les 10 plus grands risques de sécurité OWASP.
+description: Découvrez comment AEM gère les 10 principaux risques de sécurité OWASP.
 seo-description: Learn how AEM deals with the top 10 OWASP security risks.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
@@ -10,26 +10,30 @@ topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: c29472c8-9a93-4cb1-9cb1-05fc155ba736
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 57%
 
 ---
 
 # Les 10 plus grands risques d’OWASP{#owasp-top}
 
-Le projet [Open Web Application Security Project](https://www.owasp.org) (OWASP) tient à jour une liste de ce qu’il considère comme les [10 plus grands risques de sécurité liés aux applications web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Ces risques sont répertoriés ci-dessous, avec une explication sur la manière dont ils sont gérés par CRX.
+Le [Ouvrir le projet Web Application Security](https://www.owasp.org) (OWASP) conserve une liste de ce qu’ils considèrent comme la variable [Les 10 principaux risques de sécurité des applications web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+
+Ils sont répertoriés ci-dessous, ainsi qu’une explication de la façon dont CRX les traite.
 
 ## 1. Injection {#injection}
 
 * SQL -Empêché par défaut : La configuration de référentiel par défaut ne comprend ni ne requiert de base de données traditionnelle et toutes les données sont stockées dans le référentiel de contenu. Tous les accès sont limités aux utilisateurs authentifiés et ne peuvent avoir lieu que via l’API JCR. SQL est pris en charge pour les requêtes de recherche uniquement (SELECT). SQL offre en outre une prise en charge de la liaison des valeurs.
-* LDAP : L’injection LDAP est impossible, car le module d’authentification filtre l’entrée et exécute l’importation des utilisateurs à l’aide de la méthode de liaison.
-* OS : Aucune exécution shell n’est effectuée dans l’application.
+* LDAP : l’injection LDAP n’est pas possible, car le module d’authentification filtre l’entrée et effectue l’importation de l’utilisateur à l’aide de la méthode bind.
+* Système d’exploitation : aucune exécution de shell n’est effectuée dans l’application.
 
-## 2. Cross-Site Scripting (XSS) {#cross-site-scripting-xss}
+## 2. Script intersite (XSS) {#cross-site-scripting-xss}
 
 La solution générale consiste à coder toutes les sorties du contenu créé par l’utilisateur avec une bibliothèque de protection XSS côté serveur basée sur [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) et [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
@@ -39,7 +43,7 @@ Le XSS est une priorité majeure pendant le test et le développement et les pro
 
 AEM utilise des techniques d’authentification performantes et éprouvées, qui font appel à [Apache Jackrabbit](https://jackrabbit.apache.org/) et [Apache Sling](https://sling.apache.org/). Les sessions de navigateur ou HTTP ne sont pas utilisées dans AEM.
 
-## 4. Références d’objets directes non sécurisées {#insecure-direct-object-references}
+## 4. Références d’objets directs non sécurisées {#insecure-direct-object-references}
 
 Tous les accès aux objets de données sont arbitrés par le référentiel et donc restreints par le contrôle d’accès basé sur les rôles.
 
@@ -49,19 +53,19 @@ Une attaque Cross-Site Request Forgery (CSRF) est arbitrée en injectant autom
 
 En outre, AEM est fourni avec un filtre référent-en-tête, qui peut être configuré pour autoriser *uniquement* les requêtes POST d’hôtes spécifiques (inscrits dans une liste autorisée).
 
-## 6. Configuration incorrecte de la sécurité {#security-misconfiguration}
+## 6. Erreur de configuration de la sécurité {#security-misconfiguration}
 
-Il est impossible de garantir que tous les logiciels sont toujours correctement configurés. Toutefois, nous nous efforçons de fournir autant d’assistance que possible et de rendre la configuration aussi simple possible. En outre, AEM est fourni avec des [contrôles d’intégrité intégrés de la sécurité](/help/sites-administering/operations-dashboard.md) qui vous aident à surveiller la configuration de la sécurité en un clin d’œil.
+Il est impossible de garantir que tous les logiciels sont toujours correctement configurés. Toutefois, nous nous efforçons de fournir autant d’assistance que possible et de rendre la configuration aussi simple possible. De plus, AEM navires avec [Contrôle d’intégrité de la sécurité intégré](/help/sites-administering/operations-dashboard.md) qui vous aident à surveiller en un coup d’oeil la configuration de la sécurité.
 
 Veuillez examiner la [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) pour plus d’informations et obtenir des instructions étape par étape.
 
 ## 7. Stockage cryptographique non sécurisé {#insecure-cryptographic-storage}
 
-Les mots de passe sont stockés en tant que hachages cryptographiques dans le nœud d’utilisateur ; par défaut, ces nœuds sont lisibles uniquement par l’administrateur et par l’utilisateur lui-même.
+Les mots de passe sont stockés en tant que hachages cryptographiques dans le noeud utilisateur ; par défaut, ces noeuds ne sont lisibles que par l’administrateur et l’utilisateur lui-même.
 
-Les données sensibles telles que les identifiants tiers sont stockées dans un formulaire chiffré à l’aide d’une bibliothèque cryptographique certifiée FIPS 140-2.
+Les données sensibles telles que les informations d’identification tierces sont stockées sous forme chiffrée à l’aide d’une bibliothèque cryptographique certifiée FIPS 140-2.
 
-## 8. Échec de la restriction de l’accès à l’URL {#failure-to-restrict-url-access}
+## 8. Échec de la limitation de l’accès à l’URL {#failure-to-restrict-url-access}
 
 Le référentiel permet de définir des [autorisations précises (comme spécifié par JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) pour n’importe quel utilisateur ou groupe dans n’importe quel chemin d’accès, via des entrées de contrôle d’accès. Les restrictions d’accès sont appliquées par le référentiel.
 

@@ -11,20 +11,24 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: c613b54b-8768-46ef-a6f5-15bcc1642a75
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 100%
+source-wordcount: '244'
+ht-degree: 88%
 
 ---
 
 # Mise à niveau vers AEM 6.4 Forms{#upgrade-to-aem-forms}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 AEM 6.4 Forms comporte plusieurs nouvelles fonctionnalités et améliorations qui optimisent la création, la gestion et la convivialité des formulaires et correspondances. Pour en savoir plus sur toutes les nouvelles fonctionnalités et améliorations d’AEM 6.4 Forms, voir [Résumé des nouvelles fonctionnalités](/help/forms/using/whats-new.md).
 
 Vous pouvez mettre à niveau votre installation LiveCycle ou AEM Forms pour obtenir les nouvelles fonctionnalités et améliorations proposées dans AEM 6.4 Forms tout en conservant intactes les données, processus et actifs existants. Lors de la mise à niveau, les métadonnées et l’état des processus sont également conservés. Vous pouvez choisir un chemin de mise à niveau pour commencer la mise à niveau.
 
-Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM Forms on OSGi :
+Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM Forms on OSGi :
 
 ![](do-not-localize/osgi-upgrade.png)
 
@@ -38,7 +42,7 @@ Vous pouvez également effectuer une mise à niveau en plusieurs étapes depuis
 * AEM 6.0 Forms on OSGi
 * AEM 6.1 Forms on OSGi
 
-Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM Forms on JEE :
+Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM Forms on JEE :
 
 ![](do-not-localize/jee-upgrade-6-4.png)
 

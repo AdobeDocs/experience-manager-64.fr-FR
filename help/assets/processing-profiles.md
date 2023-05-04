@@ -1,6 +1,6 @@
 ---
 title: Profils de traitement des métadonnées, des images et des vidéos
-description: Un profil est un jeu de règles concernant les options à appliquer aux ressources téléchargées dans un dossier. Spécifiez le profil de métadonnées et le profil de codage vidéo à appliquer aux ressources vidéo que vous chargez. Pour les ressources d’images, vous pouvez également spécifier le profil d’imagerie qui doit leur être appliqué afin de les recadrer correctement.
+description: Un profil est un ensemble de règles autour des options à appliquer aux ressources chargées dans un dossier. Spécifiez le profil de métadonnées et le profil de codage vidéo à appliquer aux ressources vidéo que vous chargez. Pour les ressources d’image, vous pouvez également spécifier le profil d’image à appliquer aux ressources d’image afin de les recadrer correctement.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
@@ -8,28 +8,32 @@ content-type: reference
 feature: Workflow,Asset Management,Renditions
 role: User,Admin
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 94%
+source-wordcount: '1410'
+ht-degree: 81%
 
 ---
 
 # Profils de traitement des métadonnées, des images et des vidéos {#profiles-for-processing-metadata-images-and-videos}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Un profil est une recette indiquant les options à appliquer aux ressources qui sont chargées dans un dossier. Par exemple, vous pouvez spécifier le profil de métadonnées et le profil de codage vidéo à appliquer aux ressources vidéo que vous chargez, ou le profil d’image à appliquer aux ressources image afin de les recadrer correctement.
 
-Ces règles peuvent inclure l’ajout de métadonnées, le recadrage intelligent des images ou la mise en place de profils de codage vidéo. AEM vous permet de créer trois types de profils, qui sont abordés en détail sous les liens suivants :
+Ces règles peuvent inclure l’ajout de métadonnées, le recadrage intelligent d’images ou la création de profils de codage vidéo. Dans AEM, vous pouvez créer trois types de profils, qui sont abordés en détail à l’aide des liens suivants :
 
 * [Profils de métadonnées](metadata-profiles.md)
 * [Profils d’image](image-profiles.md)
 * [Profils vidéo](video-profiles.md)
 
-Vous devez disposer de droits d’administrateur pour créer, modifier et supprimer des profils vidéo, de métadonnées ou d’image.
+Vous devez disposer des droits d’administrateur pour créer, modifier et supprimer des profils vidéo, de métadonnées ou d’image.
 
-Une fois votre profil vidéo, de métadonnées ou d’image créé, vous pouvez l’affecter à un ou plusieurs dossiers utilisés comme destination des ressources qui viennent d’être chargées.
+Après avoir créé votre profil de métadonnées, d’image ou vidéo, vous l’affectez à un ou plusieurs dossiers que vous utilisez comme destination des ressources nouvellement chargées.
 
-Un concept important concernant l’utilisation des profils dans [!DNL Experience Manager] Les ressources sont affectées à des dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par les profils. Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous pouvez tirer pleinement parti de votre collection de ressources numériques et vous assurer que les bons fichiers sont traités par le profil adéquat. Pour consulter un exemple, reportez-vous à la section [organisation des ressources à l’aide de dossiers](organize-assets.md#organize-using-folders).
+Un concept important concernant l’utilisation des profils dans [!DNL Experience Manager] Les ressources sont affectées à des dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Par conséquent, la manière dont vous nommez les fichiers et les dossiers, organisez les sous-dossiers et gérez les fichiers dans ces dossiers a un impact significatif sur la manière dont ces ressources sont traitées par un profil. Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous pouvez tirer pleinement parti de votre collection de ressources numériques et vous assurer que les bons fichiers sont traités par le profil adéquat. Pour consulter un exemple, reportez-vous à la section [organisation des ressources à l’aide de dossiers](organize-assets.md#organize-using-folders).
 
 >[!NOTE]
 >
@@ -93,7 +97,7 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 **Pour régler, si nécessaire, la taille de lot du workflow de retraitement, procédez comme suit :**
 
 1. Dans Experience Manager, appuyez sur **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis appuyez sur l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow > Modèles]**.
-1. Sur la page Modèles de processus, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
+1. Sur la page Modèles de processus, dans la vue Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
 
    ![Page Modèles de processus avec le workflow Scene7 : Retraiter les ressources sélectionné en mode Carte](/help/assets/assets-dm/reprocess-assets7.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Personnaliser l’interface de création de correspondance
 seo-title: Customize create correspondence UI
-description: Découvrez comment personnaliser l’interface de création de correspondance.
+description: Découvrez comment personnaliser l’interface utilisateur de création de correspondance.
 seo-description: Learn how to customize create correspondence UI.
 uuid: 5b6eb8fd-0270-4638-bdf4-cb7015919d57
 content-type: reference
@@ -10,14 +10,18 @@ topic-tags: correspondence-management
 discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
 feature: Correspondence Management
 exl-id: 63cd01d2-a0d5-4f85-b9d2-ec3007ce3fa9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 94%
+source-wordcount: '1131'
+ht-degree: 77%
 
 ---
 
 # Personnaliser l’interface de création de correspondance {#customize-create-correspondence-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
@@ -40,15 +44,15 @@ Pour configurer une image de logo de votre choix, procédez comme suit :
 
 ## Création de la structure de dossiers requise {#creatingfolderstructure}
 
-Créez la structure de dossiers, comme expliqué ci-après, pour héberger l’image de logo et la feuille de style personnalisées. La nouvelle structure de dossiers avec le dossier racine /apps est similaire à la structure de dossier /libs.
+Créez la structure de dossiers, comme expliqué ci-après, pour héberger l’image de logo et la feuille de style personnalisées. La nouvelle structure de dossiers avec le dossier racine /apps est similaire à la structure du dossier /libs .
 
-Pour une personnalisation, créez une structure de dossiers parallèle, comme expliqué ci-après, dans la branche /apps.
+Pour toute personnalisation, créez une structure de dossiers parallèle, comme expliqué ci-dessous, dans la branche /apps .
 
 La branche /apps (structure de dossiers) :
 
 * Garantit que vos fichiers sont sûrs en cas de mise à jour du système. En cas de mise à niveau, de Feature Pack ou de correctif, la branche /libs est mise à jour et si vous hébergez vos modifications dans la branche /libs, elles sont écrasées.
-* Vous aide à ne pas toucher au système/à la branche actuels, que vous pouvez ébranler par erreur si vous utilisez les emplacements par défaut pour enregistrer les fichiers personnalisés.
-* Aide vos ressources pour obtenir une priorité plus élevée si AEM recherche des ressources. AEM est configuré pour rechercher une ressource d’abord dans la branche /apps, puis dans la branche /libs. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
+* Vous aide à ne pas perturber le système/la branche actuel, que vous pouvez peut-être dérégler par erreur si vous utilisez les emplacements par défaut pour stocker les fichiers personnalisés.
+* Permet à vos ressources d’obtenir une priorité plus élevée lorsqu’AEM recherche des ressources. AEM est configuré pour rechercher une ressource d’abord dans la branche /apps, puis dans la branche /libs. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
 
 Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans la branche /apps :
 
@@ -73,11 +77,11 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
 
       >[!NOTE]
       >
-      >N’apportez aucune modification à la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
+      >N’apportez aucune modification à la branche /libs. Toute modification que vous apportez peut être perdue, car cette branche est sujette à des modifications lorsque vous :
       >
       >* Effectuez une mise à niveau sur votre instance
-      >* Appliquez un correctif
-      >* Configurez un feature pack
+      >* Appliquer un correctif
+      >* Installation d’un Feature Pack
 
 
    1. Cliquez sur **OK**. Le dossier CSS est créé au niveau du chemin d’accès indiqué.
@@ -97,13 +101,13 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
 
       >[!NOTE]
       >
-      >Vous pouvez également créer la structure de dossiers dans le dossier /apps manuellement.
+      >Vous pouvez également créer manuellement la structure de dossiers dans le dossier /apps .
 
 1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications sur le serveur.
 
 ## Télécharger le nouveau logo dans CRX {#uploadlogo}
 
-Téléchargez votre fichier de logo personnalisé dans CRX. Les règles HTML standard régissent le rendu du logo. Les formats de fichiers image pris en charge le sont selon le navigateur utilisé pour accéder à AEM Forms. Tous les navigateurs prennent en charge les fichiers JPEG, GIF et PNG. Pour en savoir plus, reportez-vous à la documentation du navigateur sur les formats d’image pris en charge.
+Téléchargez votre fichier de logo personnalisé dans CRX. Les règles HTML standard régissent le rendu du logo. Les formats de fichiers image pris en charge le sont selon le navigateur utilisé pour accéder à AEM Forms. Tous les navigateurs prennent en charge le JPEG, le GIF et le format PNG. Pour en savoir plus, reportez-vous à la documentation du navigateur sur les formats d’image pris en charge.
 
 * Les dimensions par défaut de l’image du logo sont de 48 px &amp;ast; 48 px. Assurez-vous que votre image est de cette taille ou d’une taille supérieure ou égale à 48 pixels ; 48 px.
 * Si la hauteur de l’image de logo est de plus de 50 px, l’interface utilisateur de création de correspondance réduit l’image à une hauteur maximale de 50 px car il s’agit de la hauteur de l’en-tête. Lors de la réduction de l’image, l’interface utilisateur de création de correspondance conserve les proportions de votre image.
@@ -140,7 +144,7 @@ Suivez les étapes ci-dessous pour télécharger le fichier du logo personnalis�
 
 1. Dans la boîte de dialogue Edit jcr:data, cliquez sur **Parcourir** et sélectionnez le fichier image que vous souhaitez utiliser comme logo (ici, CustomLogo.png).
 
-   Les formats de fichiers image pris en charge le sont selon le navigateur utilisé pour accéder à AEM Forms. Tous les navigateurs prennent en charge les fichiers JPEG, GIF et PNG. Pour en savoir plus, reportez-vous à la documentation du navigateur sur les formats d’image pris en charge.
+   Les formats de fichiers image pris en charge le sont selon le navigateur utilisé pour accéder à AEM Forms. Tous les navigateurs prennent en charge le JPEG, le GIF et le format PNG. Pour en savoir plus, reportez-vous à la documentation du navigateur sur les formats d’image pris en charge.
 
    ![Exemple de fichier de logo personnalisé](assets/geometrixx-outdoors.png)
    **Figure :** *Exemple : CustomLogo.png à utiliser comme logo personnalisé*
@@ -162,7 +166,7 @@ Effectuez les étapes suivantes pour définir la feuille de style pour le rendu 
 
    1. Faites un clic droit sur le dossier **css** et sélectionnez **Créer > Créer un fichier**.
    1. Dans la boîte de dialogue Nouveau fichier, indiquez le nom du CSS comme `customcss.css`(vous ne pouvez pas utiliser de nom différent), puis cliquez sur **OK**.
-   1. Ajoutez le code suivant dans le fichier CSS que vous venez de créer. Dans la partie content:url du code, indiquez le nom de l’image que vous avez téléchargée dans le dossier imgs dans CRXDE.
+   1. Ajoutez le code suivant au fichier CSS nouvellement créé. Dans la partie content:url du code, indiquez le nom de l’image que vous avez téléchargée dans le dossier imgs dans CRXDE.
 
       ```css
       .logo, .logo:after {
@@ -174,7 +178,7 @@ Effectuez les étapes suivantes pour définir la feuille de style pour le rendu 
 
 ## Actualiser l’interface utilisateur de création de correspondance pour voir le logo personnalisé {#refreshccrui}
 
-Effacez la mémoire cache du navigateur, puis ouvrez l’instance de l’interface utilisateur de création de correspondance dans votre navigateur. Vous devez voir votre logo personnalisé.
+Effacez la mémoire cache du navigateur, puis ouvrez l’instance de l’interface utilisateur de création de correspondance dans votre navigateur. Votre logo personnalisé devrait s’afficher.
 
 ![Interface utilisateur de création de correspondance avec un logo personnalisé](assets/0_1_introscreenshot-1.png)
 **Figure :** *Icône personnalisée dans l’interface utilisateur de création de correspondance*

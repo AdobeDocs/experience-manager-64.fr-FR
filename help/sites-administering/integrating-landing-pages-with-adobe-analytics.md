@@ -1,7 +1,7 @@
 ---
-title: Intégration des pages d’entrée à Adobe Analytics
+title: Intégrer des pages d’entrée à Adobe Analytics
 seo-title: Integrating Landing Pages with Adobe Analytics
-description: Découvrez comment intégrer des pages d’entrée à Adobe Analytics.
+description: Découvrez comment intégrer des landing pages à Adobe Analytics.
 seo-description: Learn how to integrate landing pages with Adobe Analytics.
 uuid: 8f6672d1-497f-4ccb-b3cc-f6120fc467ba
 contentOwner: msm-service
@@ -10,19 +10,23 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: 2923ae94-375a-4c44-a08f-f992eb08000a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 76%
 
 ---
 
-# Intégration des pages d’entrée à Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
+# Intégrer des pages d’entrée à Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM a intégré la solution des pages de destination à [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) en utilisant les composants CTA (call-to-action) suivants :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-1. Composant Lien des clics publicitaires
-1. Composant Lien graphique
+AEM a intégré la solution des pages d’entrée à [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) en utilisant les composants CTA (call-to-action) suivants :
+
+1. Composant Clic publicitaire
+1. Composant de lien graphique
 
 Ces composants exposent certains attributs pouvant être mappés via les variables Adobe Analytics (variables de trafic, de conversion) et des événements de réussite pour envoyer des informations à Adobe Analytics.
 
@@ -36,12 +40,12 @@ Dans AEM, les composants **Appel à l’action** (**ClickThroughLink** et **Grap
 
 ![chlimage_1-21](assets/chlimage_1-21.jpeg)
 
-### Mappage de composants de page d’entrée sur Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
+### Mappage des composants de page d’entrée à Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
 
-Pour mapper des composants de page d’entrée sur Adobe Analytics :
+Pour mapper des composants de page d’entrée à Adobe Analytics :
 
-1. Après avoir créé la configuration Adobe Analytics et un nouveau framework, sélectionnez la suite de rapports appropriée dans le menu déroulant. Ceci fait, les variables Adobe Analytics sont récupérées et affichées dans l’outil de recherche de contenu.
-1. Faites glisser des composants CTA (Appel à l’action) depuis le sidekick vers la zone de mappage située au centre de la page, s’il y a lieu.
+1. Après avoir créé la configuration Adobe Analytics et un nouveau framework, sélectionnez la suite de rapports appropriée dans le menu déroulant. Les variables Adobe Analytics sont alors récupérées et affichées dans l’outil de recherche de contenu.
+1. Faites glisser les composants CTA (Appel à l’action) du sidekick vers la zone de mappage située au milieu de la page, le cas échéant.
 
 <table> 
  <tbody>

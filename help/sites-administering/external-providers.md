@@ -1,7 +1,7 @@
 ---
 title: Analytics avec des fournisseurs externes
 seo-title: Analytics with External Providers
-description: Découvrez le fonctionnement d’Analytics avec des fournisseurs externes.
+description: Découvrez Analytics avec des fournisseurs externes.
 seo-description: Learn about Analytics with External Providers.
 uuid: bea8ec38-a190-46f9-a5fa-8d65321fdf20
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
 exl-id: 6d906c2b-c8bc-4d54-9887-8aaeb6cc83d3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 97%
+source-wordcount: '478'
+ht-degree: 76%
 
 ---
 
 # Analytics avec des fournisseurs externes{#analytics-with-external-providers}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Analytics peut vous apporter des informations importantes et intéressantes sur l’utilisation de votre site web.
 
@@ -26,7 +30,7 @@ Différentes configurations sont disponibles par défaut pour l’intégration a
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-Vous pouvez également configurer votre propre instance des **Extrait de code Analytics générique** afin de définir de nouvelles configurations de service.
+Vous pouvez également configurer votre propre instance de la variable **Fragments de code Analytics générique** pour définir de nouvelles configurations de service.
 
 Les informations sont alors collectées au moyen de petits fragments de code, qui sont ajoutés à des pages web. Par exemple :
 
@@ -46,12 +50,12 @@ _gaq.push(['_trackPageview']);
 })();
 ```
 
-Ces fragments de code permettent de collecter des données et de générer des rapports. Les données réelles collectées dépendent du fournisseur et du fragment de code réel utilisé. Voici quelques exemples de statistiques :
+Ces fragments de code permettent de collecter des données et de générer des rapports. Les données réelles collectées dépendent du fournisseur et du fragment de code réel utilisé. Voici des exemples de statistiques :
 
-* Nombre de visiteurs dans le temps
-* Nombre de pages consultées
-* Termes recherchés
-* Pages d’entrée
+* combien de visiteurs au fil du temps
+* le nombre de pages visitées
+* termes de recherche utilisés
+* landing pages
 
 >[!CAUTION]
 >
@@ -105,9 +109,9 @@ Après avoir créé la configuration de service, vous devez maintenant configure
 
 1. Cliquez sur **OK** pour enregistrer.
 
-   Le fragment de code est maintenant visible si vous affichez la source de la page.
+   Le fragment de code s’affiche désormais si vous affichez la source de la page.
 
-   Après un certain temps, vous pourrez voir les statistiques collectées.
+   Une fois la période appropriée écoulée, vous pourrez visualiser les statistiques qui ont été collectées.
 
    >[!NOTE]
    >

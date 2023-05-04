@@ -10,38 +10,42 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 36c87684-e62a-4983-b123-87f56dbf7bc5
 exl-id: 020d8f9b-7e55-415c-8b1e-c23a5f84a092
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 100%
+source-wordcount: '586'
+ht-degree: 63%
 
 ---
 
 # Compréhension de la segmentation{#understanding-segmentation}
 
-La segmentation est un élément clé de la création d’une campagne. Dans la plupart des cas, vous devez avoir des segments déjà définis avant de démarrer votre campagne.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Les visiteurs de site se rendent sur un site en fonction d’intérêts et d’objectifs divers. Le fait de comprendre ces objectifs et de satisfaire à ces attentes est un important facteur de réussite en matière de marketing en ligne.
+La segmentation est un élément clé de la création d’une campagne. Dans la plupart des cas, les segments doivent être déjà définis avant de démarrer votre campagne.
 
-La segmentation permet d’y parvenir en procédant à une analyse et à une caractérisation des aspects suivants du visiteur :
+Les visiteurs du site ont des intérêts et des objectifs différents lorsqu’ils se rendent sur un site. Comprendre ces objectifs et répondre aux attentes est un facteur de réussite important pour le marketing en ligne.
 
-* son activité sur le site web
+La segmentation permet d’y parvenir en analysant et en caractérisant les éléments suivants d’un visiteur :
+
+* activité sur le site web
 * son profil
-* son activité sur d’autres sites web.
+* activité sur d’autres sites web
 
-Le contenu peut cibler les besoins et centres d’intérêts spécifiques des visiteurs en fonction du ou des segments correspondants.
+Le contenu peut ensuite être spécifiquement ciblé sur les besoins et centres d’intérêt du visiteur, en fonction du ou des segments correspondants.
 
 ## Utilisation de la segmentation {#using-segmentation}
 
-Les segments sont définis dans la section [Configuration de la segmentation](/help/sites-administering/campaign-segmentation.md). Ils sont utilisés afin d’orienter le contenu réel affiché pour une audience cible spécifique.
+Les segments sont définis dans [Configuration de la segmentation](/help/sites-administering/campaign-segmentation.md). Ils sont utilisés afin d’orienter le contenu réel affiché pour une audience cible spécifique.
 
 ## Terminologie de la segmentation {#segmentation-terminology}
 
 Lors de la discussion de la segmentation, la terminologie suivante est utilisée :
 
-**Visiteur** : un visiteur est une personne qui visite un site web. La visite de cette personne commence généralement à partir d’une page de référence, puis aboutit à l’affichage d’une ou de plusieurs pages de votre propre site web. Un profil de comportement peut être créé à partir des détails de la visite de cette personne.
+**Visiteur** : un visiteur est une personne qui visite un site web. La visite de cette personne commence généralement à partir d’une page de référence, puis passe à une ou plusieurs pages vues sur votre propre site web. Un profil comportemental peut être créé à partir des détails de la visite de cette personne.
 
-**Utilisateur** : un utilisateur est un visiteur qui s’inscrit auprès du site web pour recevoir un profil de compte. Pour générer son profil, il fournit des informations d’identification supplémentaires telles qu’une adresse électronique, son sexe, entre autres. Des informations supplémentaires peuvent également être collectées, y compris l’activité communautaire et les comportements d’achats, entre autres choses encore. En fonction des informations fournies dans le profil, un profil démographique peut être créé.
+**Utilisateur** : un utilisateur est un visiteur qui s’inscrit auprès du site web pour recevoir un profil de compte. Pour générer leur profil, ils fournissent une identification supplémentaire, telle qu’une adresse email et un genre, entre autres. Des informations supplémentaires peuvent également être collectées, notamment l’activité de la communauté et les modèles d’achat, entre autres. En fonction des informations fournies dans le profil, un profil démographique peut être créé.
 
 **Caractéristique** : une caractéristique est une particularité ou une propriété d’un visiteur qui peut être utilisée pour déterminer son appartenance à un segment spécifique.
 
@@ -52,11 +56,11 @@ Lors de la discussion de la segmentation, la terminologie suivante est utilisée
 * L’intérêt au sein de votre site web ; notamment les pages visitées et les produits achetés.
 * L’intérêt sur le site web de référence ; notamment les termes de recherche utilisés ou les publicités cliquées.
 * L’intérêt sur d’autres sites, déterminé à l’aide d’outils tels que Spyjax.
-* La fidélité du visiteur ; la durée de la visite, la fréquence des visites.
+* la fidélité des visiteurs ; durée de la visite, fréquence des visites.
 
 **Caractéristiques démographiques** : il s’agit de caractéristiques de population choisies, notamment :
 
-* Âge
+* Age
 * Revenu
 * Taille de la famille
 * État civil

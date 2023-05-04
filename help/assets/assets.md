@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management
 role: Leader,Architect,User
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 99%
+source-wordcount: '897'
+ht-degree: 84%
 
 ---
 
 # A propos d’[!DNL Adobe Experience Manager Assets] en tant que solution de gestion des ressources numériques (DAM) {#about-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 [!DNL Assets] est un outil de gestion des ressources numériques (DAM) qui fait partie intégrante d’[!DNL Experience Manager] et qui permet à votre entreprise de gérer et de distribuer des ressources numériques. Les utilisateurs d’une entreprise peuvent gérer, stocker et accéder à de nombreux types de ressources numériques, tels que des images, des vidéos, des documents, des clips audio, des fichiers 3D et des médias riches, en vue de les utiliser sur le Web, sur papier et pour la distribution numérique.
 
@@ -23,10 +27,10 @@ ht-degree: 99%
 Les fonctionnalités d’[!DNL Assets] d’[!DNL Experience Manager] vous permettent d’effectuer les opérations suivantes :
 
 * Ajouter et partager des images, des documents, ainsi que des fichiers audio et vidéo dans divers formats
-* Gérer les ressources en les regroupant par balise, lightbox ou étoiles (vos favoris) Annoter les ressources.
-* Rechercher des ressources en recherchant des noms de fichier, le texte intégral des documents et en recherchant les dates, le type de document et les balises.
+* Gérer les ressources en les regroupant par balise, lightbox ou étoiles (vos favoris) Ajoutez des annotations aux ressources.
+* Recherchez des ressources en recherchant les noms de fichiers, le texte intégral des documents et en recherchant des dates, un type de document et des balises.
 * Ajouter ou modifier des informations sur les métadonnées pour les ressources Le contrôle de version des métadonnées se fait automatiquement en fonction de la ressource correspondante. Vous pouvez importer ou exporter des métadonnées de ressources.
-* Exercer des fonctions de retouche d’images, telles que la mise à l’échelle et l’ajout de filtres d’image. Importer et exporter simultanément des ressources numériques multiples à l’aide d’un dossier WebDAV ou CIFS.
+* Exécutez des fonctions d’édition d’images, telles que la mise à l’échelle et l’ajout de filtres d’images. Importez et exportez simultanément plusieurs ressources numériques à l’aide d’un dossier WebDAV ou CIFS.
 * Utiliser les workflows et les notifications pour permettre le traitement et le téléchargement communs de n’importe quel groupe de ressources et gérer les droits d’accès aux ressources
 
 ### [!DNL Experience Manager Assets] est intégré à [!DNL Experience Manager Sites]. {#aem-assets-fully-integrated-in-cq-wcm}
@@ -52,7 +56,7 @@ Pour déterminer s’il est nécessaire de mettre une image dans le référentie
 
 Une ressource est un document numérique, une image, une vidéo ou un fichier audio (ou une partie de ces éléments) qui peut avoir plusieurs rendus et plusieurs sous-ressources (par exemple, des calques dans un fichier Photoshop, des diaporamas dans un fichier PowerPoint, des pages dans un fichier PDF, des fichiers dans un ZIP, etc.).
 
-Une ressource se compose principalement de données binaires + métadonnées + rendus + sous-ressources. Consultez le [Guide de performance DAM](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=fr) pour plus d’informations.
+Une ressource est essentiellement un fichier binaire avec des métadonnées plus des rendus plus des sous-ressources. Voir [Guide de performance de la gestion des actifs numériques](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=fr) pour plus d’informations.
 
 >[!CAUTION]
 >
@@ -66,13 +70,13 @@ Lorsque vous travaillez avec des ressources numériques dans [!DNL Experience Ma
 
 * **Métadonnées** : les ressources [!DNL Assets] ont des métadonnées ; par exemple, l’auteur, la date d’expiration, les informations DRM (Digital Rights Management), etc. Les métadonnées sont sous contrôle d’accès. [!DNL Assets] prend en charge les schémas de métadonnées communs suivants :
 
-   * Dublin Core : notamment l’auteur, la description, la date, l’objet, etc.
-   * IPTC : notamment l’événement, le modèle, l’emplacement, etc.
+   * Dublin Core : y compris l’auteur, la description, la date, le sujet, etc.
+   * IPTC : y compris l’événement, le modèle, l’emplacement, etc.
    * Gestion de contenu web : notamment les propriétés de page, l’[!UICONTROL Heure d’activation] et l’[!UICONTROL Heure de désactivation], etc.
 
 * **Balisage** : les ressources [!DNL Assets] peuvent être balisées et classifiées. Consultez [Organisation des ressources](/help/assets/organize-assets.md).
 
-* **Rendus** : un rendu est une représentation binaire d’une ressource. Les ressources [!DNL Assets] possèdent une représentation principale, à savoir celle du fichier transféré. Elle peut en avoir d’autres qui sont créées par des étapes de workflow personnalisées ou lors du téléchargement de la ressource, par exemple. Les rendus peuvent avoir différentes tailles, différentes résolutions et un filigrane ou d’autres caractéristiques modifiées.
+* **Rendus** : un rendu est une représentation binaire d’une ressource. Les ressources [!DNL Assets] possèdent une représentation principale, à savoir celle du fichier transféré. Elle peut en avoir d’autres qui sont créées par des étapes de workflow personnalisées ou lors du téléchargement de la ressource, par exemple. Les rendus peuvent avoir une taille différente, avec une résolution différente, avec un filigrane ajouté ou une autre caractéristique modifiée.
 
 * **Versions** : le contrôle de version permet de créer un instantané des ressources numériques à un moment donné. Vous pouvez restaurer la version précédente des ressources. Consultez [Contrôle de version dans  [!DNL Assets]](managing-assets-touch-ui.md#asset-versioning).
 

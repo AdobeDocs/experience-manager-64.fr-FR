@@ -6,15 +6,19 @@ seo-description: DO NOT PUBLISH
 page-status-flag: de-activated
 uuid: 2cb2bf82-130f-4d6b-a711-df0b97cb0504
 discoiquuid: f3ca177f-7c0d-4b8b-ab4b-bf04668d634c
-source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 18%
+source-wordcount: '820'
+ht-degree: 13%
 
 ---
 
 
 # NE PAS PUBLIER Créer votre premier document adaptatif {#do-not-publish-create-your-first-adaptive-document}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Cas d’utilisation {#use-case}
 
@@ -45,8 +49,8 @@ Vous trouverez à la fin du tutoriel un document adaptatif similaire à ce qui s
     <ul> 
      <li>Configurez AEM instance d’auteur. </li> 
      <li>Installation du module complémentaire AEM Forms. Pour plus d’informations, voir <a href="/help/forms/using/installing-configuring-aem-forms-osgi.md" target="_blank">Installation et configuration d’AEM Forms</a>.</li> 
-     <li>Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du didacticiel sont basés sur la base de données MySQL et utilisent le pilote de base de données MySQL JDBC d’Oracle. </li> 
-     <li>Configurez une base de données contenant les données client. Une base de données est essentielle pour créer un document adaptatif. Ce didacticiel utilise une base de données pour afficher les fonctionnalités de modèle de données de formulaire et de persistance d’AEM Forms. </li> 
+     <li>Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données MySQL et utilisent le pilote de base de données MySQL JDBC d’Oracle. </li> 
+     <li>Configurez une base de données contenant les données client. Une base de données est essentielle pour créer un document adaptatif. Ce tutoriel utilise une base de données pour afficher le modèle de données de formulaire et les fonctionnalités de persistance d’AEM Forms. </li> 
      <li>Créer/importer et activer <a href="/help/forms/using/web-channel-print-channel.md">Modèles de canal d’impression et web</a>.</li> 
      <li>Assurez-vous que vous disposez de la variable <a href="/help/forms/using/document-fragments.md">Fragments de document basés sur FDM</a>.</li> 
     </ul> </td> 
@@ -56,9 +60,9 @@ Vous trouverez à la fin du tutoriel un document adaptatif similaire à ce qui s
 
 ## Étape 1 : création d’un modèle de données de formulaire {#step-create-form-data-model}
 
-Un modèle de données de formulaire permet de connecter un document adaptatif à des sources de données disparates. par exemple, le profil utilisateur AEM, les services Web RESTful, les services Web basés sur SOAP, les services OData et les bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié des entités et services d’entreprise disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec un document adaptatif pour récupérer les données des sources de données connectées. Pour plus d’informations sur le modèle de données de formulaire, voir [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
+Un modèle de données de formulaire permet de connecter un document adaptatif à des sources de données disparates. Par exemple, AEM profil utilisateur, services Web RESTful, services Web SOAP, services OData et bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié des entités commerciales et des services disponibles dans les sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec un document adaptatif pour récupérer les données des sources de données connectées. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
-Objectifs:
+Objectifs :
 
 * Configuration de l’instance de base de données (Microsoft Dynamics) comme source de données
 * Création du modèle de données de formulaire à l’aide de Microsoft Dynamics en tant que source de données
@@ -74,7 +78,7 @@ Grâce aux documents adaptatifs, vous pouvez créer des communications client qu
 
 <!--`For more information about adaptive documents, see [Introduction to authoring adaptive documents](/forms/using/introduction-ad-authoring.md).`-->
 
-Objectifs:
+Objectifs :
 
 * Créez l’impression et la sortie web d’un document adaptatif en fonction du modèle de données de formulaire.
 * Mise en page des champs d’un formulaire adaptatif pour afficher des informations au client
@@ -86,7 +90,7 @@ Objectifs:
 
 Le document adaptatif fournit un éditeur pour l’écriture de règles sur les objets de document adaptatif. Ces règles définissent les actions à déclencher sur les objets de document en fonction des conditions prédéfinies et des actions de l’utilisateur sur le document. Cela permet d’assurer la précision et d’accélérer l’expérience utilisateur dans la version web du document adaptatif. Pour plus d’informations sur l’éditeur de règles et de règles de document adaptatif, voir [éditeur de règles](/help/forms/using/rule-editor.md).
 
-Objectifs:
+Objectifs :
 
 * Créer et appliquer des règles aux champs de canal web du document adaptatif
 * Utilisation de règles pour déclencher des services de modèle de données de document dans le canal web
@@ -95,7 +99,7 @@ Objectifs:
 
 Les documents adaptatifs fournissent un éditeur pour créer des thèmes pour les documents adaptatifs et le style en ligne. Un thème contient les détails de style des composants et des panneaux, et vous pouvez réutiliser un thème sur les canaux web de différents documents. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez le thème à votre document, le style spécifié se reflète sur les composants correspondants de votre document. Pour plus d’informations, voir [Thèmes](/help/forms/using/themes.md).
 
-Objectifs:
+Objectifs :
 
 * Créer un thème pour le canal web du document adaptatif
 * Application du thème au canal web du document adaptatif

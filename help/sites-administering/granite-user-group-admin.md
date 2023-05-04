@@ -1,7 +1,7 @@
 ---
 title: Opérations Granite - Administration des utilisateurs et des groupes
 seo-title: Granite Operations - User and Group Administration
-description: En savoir plus sur l’administration des utilisateurs et des groupes Granite.
+description: Découvrez l’administration des utilisateurs et des groupes Granite.
 feature: Security
 seo-description: Learn about Granite user and group administration.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
@@ -11,32 +11,36 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: bd29e81d-eb4a-4764-96f2-84e091836a8a
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 100%
+source-wordcount: '959'
+ht-degree: 72%
 
 ---
 
 # Opérations Granite - Administration des utilisateurs et des groupes{#granite-operations-user-and-group-administration}
 
-Au fur et à mesure que Granite intègre l’implémentation du référentiel CRX de la spécification API JCR, il applique sa propre administration des utilisateurs et des groupes.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Ces comptes sont la base des [comptes AEM](/help/sites-administering/security.md) et les modifications de compte apportées avec l’administration Granite sont reflétées si/lorsque l’accès aux comptes s’effectue à partir de la [console AEM Users](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (par exemple, `http://localhost:4502/useradmin`). La console AEM Users vous permet également de gérer les autorisations et autres éléments spécifiques à AEM.
+Granite intègre l’implémentation du référentiel CRX de la spécification API JCR. Elle dispose de sa propre administration utilisateur et de groupe.
 
-Les consoles d’administration des utilisateurs et des groupes Granite sont disponibles via la console **[Outils](/help/sites-administering/tools-consoles.md)** de l’interface utilisateur optimisée pour les écrans tactiles :
+Ces comptes sont la base des [comptes AEM](/help/sites-administering/security.md) et les modifications de compte apportées avec l’administration Granite sont reflétées si/lorsque l’accès aux comptes s’effectue à partir de la [console AEM Users](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (par exemple, `http://localhost:4502/useradmin`). Dans la console Utilisateurs d’AEM, vous pouvez également gérer les privilèges et d’autres détails d’AEM.
+
+Les consoles d’administration des utilisateurs et des groupes Granite sont toutes deux disponibles dans la **[Outils](/help/sites-administering/tools-consoles.md)** console de l’IU optimisée pour les écrans tactiles :
 
 ![chlimage_1-72](assets/chlimage_1-72.png)
 
-Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la console adéquate. Dans chaque console, vous pouvez agir en utilisant la case à cocher, puis les actions de la barre d’outils ou en ouvrant les détails de compte par le biais du lien situé sous **Nom**.
+Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la console adéquate. Dans les deux, vous pouvez agir soit en utilisant la case à cocher, puis les actions de la barre d’outils, soit en ouvrant les détails du compte via le lien situé sous **Nom**.
 
 * [Administration des utilisateurs](#user-administration)
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-   La console **Utilisateurs** répertorie :
+   Le **Utilisateurs** listes console :
 
-   * le nom de l’utilisateur
+   * nom d’utilisateur
    * l’identifiant de connexion de l’utilisateur (nom de compte)
    * tout titre attribué au compte
 
@@ -44,21 +48,21 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
-   La console **Groupes** répertorie :
+   Le **Groupes** listes console :
 
-   * le nom du groupe
-   * la description du groupe
-   * le nombre d’utilisateurs/de groupes dans le groupe
+   * nom du groupe
+   * la description du groupe ;
+   * le nombre d’utilisateurs/de groupes dans le groupe ;
 
 ## Administration des utilisateurs {#user-administration}
 
 ### Ajout d’un nouvel utilisateur {#adding-a-new-user}
 
-1. Utilisez l’icône **Ajouter un utilisateur** :
+1. Utilisez la variable **Ajouter un utilisateur** icon :
 
    ![](do-not-localize/chlimage_1-1.png)
 
-1. Le formulaire **Créer un utilisateur** s’ouvre :
+1. Le **Créer un utilisateur** Le formulaire s’ouvre :
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
@@ -109,12 +113,12 @@ Vous pouvez marquer le compte comme
 
    * **Groupes**
 
-      Liste des groupes dont l’utilisateur est actuellement membre. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
+      Liste des groupes dont l’utilisateur est actuellement membre. Utilisez la variable **X** par le nom à désélectionner avant l’enregistrement.
 
 
-1. Lorsque vous avez défini le compte d’utilisateur, utilisez :
+1. Lorsque vous avez défini le compte utilisateur, utilisez :
 
-   * **Annuler** pour abandonner l’enregistrement.
+   * **Annuler** pour annuler l’enregistrement.
    * **Enregistrer** pour terminer l’enregistrement. La création du compte d’utilisateur est confirmée par un message.
 
 ### Modification d’un utilisateur existant {#editing-an-existing-user}
@@ -141,7 +145,7 @@ Vous pouvez marquer le compte comme
 
    Un message confirme que le mot de passe a été modifié.
 
-### Affectation rapide de groupes {#quick-group-assignment}
+### Attribution de groupes rapides {#quick-group-assignment}
 
 1. Utilisez la case à cocher pour marquer un ou plusieurs utilisateurs.
 1. Utilisez l’icône **Groupes** :
@@ -166,17 +170,17 @@ Vous pouvez marquer le compte comme
 
    ![](do-not-localize/chlimage_1-3.png)
 
-1. Vous êtes invité à confirmer la suppression, puis un message confirme que la suppression a eu lieu.
+1. Vous êtes invité(e) à confirmer la suppression, puis un message confirme que la suppression a eu lieu.
 
 ## Administration des groupes {#group-administration}
 
 ### Ajout d’un nouveau groupe {#adding-a-new-group}
 
-1. Utilisez l’icône Ajouter un groupe :
+1. Utilisez l’icône Ajouter un groupe :
 
    ![](do-not-localize/chlimage_1-4.png)
 
-1. Le formulaire **Créer un groupe** s’ouvre :
+1. Le **Créer un groupe** Le formulaire s’ouvre :
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -200,11 +204,11 @@ Vous pouvez marquer le compte comme
 
    * **Membres du groupe**
 
-      Liste des utilisateurs figurant dans le groupe. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
+      Liste des utilisateurs figurant dans le groupe. Utilisez la variable **X** par le nom à désélectionner avant l’enregistrement.
 
-1. Lorsque vous avez défini le groupe, utilisez :
+1. Lorsque vous avez défini le groupe, utilisez :
 
-   * **Annuler** pour abandonner l’enregistrement.
+   * **Annuler** pour annuler l’enregistrement.
    * **Enregistrer** pour terminer l’enregistrement. La création du groupe est confirmée par un message.
 
 ### Modification d’un groupe existant {#editing-an-existing-group}

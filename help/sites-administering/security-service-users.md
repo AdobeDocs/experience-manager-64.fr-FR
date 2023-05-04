@@ -1,7 +1,7 @@
 ---
 title: Utilisateurs de services dans AEM
 seo-title: Service Users in AEM
-description: Apprenez-en plus sur les utilisateurs de services dans AEM.
+description: Découvrez les utilisateurs du service dans AEM.
 feature: Security
 seo-description: Learn about Service Users in AEM.
 uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
@@ -11,14 +11,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
 exl-id: b6e77f61-5c7b-4e40-881c-057177e7ea6d
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 100%
+source-wordcount: '1814'
+ht-degree: 64%
 
 ---
 
 # Utilisateurs de services dans AEM{#service-users-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
@@ -26,43 +30,43 @@ La principale façon d’obtenir un résolveur de session d’administration ou 
 
 Toutefois, aucune de ces méthodes n’a été conçue selon le [principe de moindre privilège](https://fr.wikipedia.org/wiki/Principe_de_moindre_privil%C3%A8ge). En conséquence, il est trop facile d’ignorer au cours du développement la planification d’une structure et de niveaux de contrôle d’accès (ACL) appropriés pour leur contenu dès le début. Si une vulnérabilité est présente dans un tel service, elle conduit souvent à des réaffectations de privilèges `admin`, même si le code n’a pas besoin de privilèges d’administration pour fonctionner.
 
-## Élimination des sessions d’administrateur {#how-to-phase-out-admin-sessions}
+## Comment supprimer les sessions d’administration {#how-to-phase-out-admin-sessions}
 
-### Priorité 0 : la fonction est-elle active/nécessaire/abandonnée ? {#priority-is-the-feature-active-needed-derelict}
+### Priorité 0 : La fonctionnalité est-elle principale/nécessaire/abandonnée ? {#priority-is-the-feature-active-needed-derelict}
 
 Il peut y avoir des cas où la session d’administration n’est pas utilisée, ou la fonction est complètement désactivée. Si tel est le cas avec votre mise en œuvre, assurez-vous de supprimer la fonction entièrement ou accompagnez-la d’une [instruction nulle](https://fr.wikipedia.org/wiki/Instruction_nulle).
 
-### Priorité 1 : utilisez la session de requête {#priority-use-the-request-session}
+### Priorité 1 : Utilisation De La Session De Requête {#priority-use-the-request-session}
 
-Lorsque cela est possible, refactorisez votre fonction de sorte que la session de requête authentifiée donnée puisse être utilisée pour écrire ou lire du contenu. Si ce n’est pas possible, elle peut fréquemment être obtenue en appliquant les priorités comme ci-dessous.
+Lorsque cela est possible, refactorisez votre fonction de sorte que la session de requête authentifiée donnée puisse être utilisée pour écrire ou lire du contenu. Si cela n&#39;est pas possible, il est souvent possible d&#39;y parvenir en appliquant les priorités suivantes.
 
-### Priorité 2 : restructurez le contenu {#priority-restructure-content}
+### Priorité 2 : Restructurer le contenu {#priority-restructure-content}
 
-De nombreux problèmes peuvent être résolus en restructurant le contenu. Gardez ces règles simples à l’esprit lors de la restructuration :
+De nombreux problèmes peuvent être résolus en restructurant le contenu. Gardez ces règles simples à l’esprit lorsque vous effectuez la restructuration :
 
-* **Modification du contrôle d’accès**
+* **Modifier le contrôle d’accès**
 
-   * Assurez-vous que les utilisateurs ou les groupes qui ont réellement besoin d’accès ont accès.
+   * Assurez-vous que les utilisateurs ou les groupes qui ont réellement besoin d’un accès ont bien accès à .
 
-* **Amélioration de la structure de contenu**
+* **Affiner la structure de contenu**
 
-   * Déplacez-le vers d’autres emplacements, par exemple là où le contrôle d’accès correspond aux sessions de requête disponibles.
-   * Modifiez la granularité du contenu.
+   * Déplacez-le vers d’autres emplacements, par exemple lorsque le contrôle d’accès correspond aux sessions de requête disponibles ;
+   * modifier la granularité du contenu ;
 
 * **Refactorisation du code afin qu’il corresponde à un service approprié**
 
    * Redéfinissez la logique métier du code JSP en service. Cela permet une modélisation de contenu différente.
 
-En outre, assurez-vous que toutes les nouvelles fonctions que vous développez sont conformes aux principes suivants :
+Veillez également à ce que toutes les nouvelles fonctionnalités que vous développez respectent les principes suivants :
 
-* **Les exigences de sécurité doivent déterminer la structure du contenu.**
+* **Les exigences de sécurité doivent déterminer la structure de contenu**
 
-   * La gestion du contrôle d’accès doit sembler naturelle.
-   * Le contrôle d’accès doit être imposé par le référentiel, et non par l’application.
+   * La gestion du contrôle d’accès doit être naturelle
+   * Le contrôle d’accès doit être appliqué par le référentiel, et non par l’application.
 
-* **Tirez parti des types de nœuds.**
+* **Utilisation des types de noeuds**
 
-   * Limitez le jeu de propriétés qui peut être défini.
+   * Restreindre l’ensemble des propriétés qui peuvent être définies
 
 * **Respectez les paramètres de confidentialité**
 
@@ -76,8 +80,8 @@ Si vous appliquez le contrôle d’accès lors de la restructuration du contenu 
 
 * Utilisez des [restrictions](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
-* Application de listes ACL aux types de nœuds
-* Limitation des autorisations
+* Application de listes de contrôle d’accès pour les types de noeuds
+* Limiter les autorisations
 
    * Par exemple, si vous avez besoin de l’autorisation d’écriture uniquement pour les propriétés, ne donnez pas l’autorisation `jcr:write`, utilisez plutôt `jcr:modifyProperties`.
 
@@ -93,18 +97,18 @@ En cas d’échec de la procédure ci-dessus, Sling 7 offre un service de mappa
 * `service-id` est mis en correspondance avec un résolveur de ressource et/ou un ID d’utilisateur de référentiel JCR pour l’authentification.
 * `service-name` est le nom symbolique du lot qui fournit le service.
 
-## Autres recommandations {#other-recommendations}
+## Autres Recommendations {#other-recommendations}
 
-### Remplacement de l’admin-session par un service-user {#replacing-the-admin-session-with-a-service-user}
+### Remplacement de la session d’administration par un utilisateur de service {#replacing-the-admin-session-with-a-service-user}
 
-Un utilisateur de service est un utilisateur JCR sans mot de passe défini et avec un jeu minimal d’autorisations nécessaires pour effectuer une tâche spécifique. L’absence de mot de passe défini signifie qu’il n’est pas possible de se connecter avec un utilisateur de service.
+Un utilisateur de service est un utilisateur JCR sans mot de passe défini et avec un jeu minimal d’autorisations nécessaires pour effectuer une tâche spécifique. Si aucun mot de passe n’est défini, il ne sera pas possible de se connecter avec un utilisateur du service.
 
-Une façon de rendre une session administrative obsolète consiste à la remplacer par des sessions d’utilisateurs de services. Elle pourrait également être remplacée par plusieurs utilisateurs de sous-services si nécessaire.
+Une façon de rendre une session administrative obsolète consiste à la remplacer par des sessions d’utilisateurs de services. Il peut également être remplacé par plusieurs utilisateurs de sous-services si nécessaire.
 
-Pour remplacer la session administrative par un utilisateur de services, vous devez effectuer les étapes suivantes :
+Pour remplacer la session d’administrateur par un utilisateur de service, procédez comme suit :
 
-1. Identifiez les autorisations nécessaires pour votre service, en gardant à l’esprit le principe de moindre autorisation.
-1. Vérifiez s’il existe déjà un utilisateur disponible ayant exactement la configuration de permissions dont vous avez besoin. Créez un utilisateur de service système si aucun utilisateur existant ne correspond à vos besoins. RTC est nécessaire pour créer un utilisateur de service. Dans certains cas, il est préférable de créer plusieurs utilisateurs de sous-services (par exemple, un pour écrire et l’autre pour lire) afin de compartimenter encore davantage l’accès.
+1. Identifiez les autorisations nécessaires à votre service, en gardant à l’esprit le principe de la moindre autorisation.
+1. Vérifiez s’il existe déjà un utilisateur disponible ayant exactement la configuration de permissions dont vous avez besoin. Créez un utilisateur de service système si aucun utilisateur existant ne correspond à vos besoins. RTC est nécessaire pour créer un utilisateur de service. Parfois, il est logique de créer plusieurs utilisateurs de sous-services (par exemple, un pour l’écriture et un autre pour la lecture) pour compartimenter encore plus l’accès.
 1. Configurez et testez les ACE pour votre utilisateur.
 1. Ajoutez une mise en correspondance `service-user` pour votre service et pour les `user/sub-users`
 
@@ -114,16 +118,16 @@ Pour remplacer la session administrative par un utilisateur de services, vous de
 
 ## Création d’un utilisateur de service {#creating-a-new-service-user}
 
-Après avoir vérifié qu’aucun utilisateur dans la liste des utilisateurs de services AEM ne s’applique à votre cas d’utilisation, et que les problèmes RTC correspondants ont été approuvés, vous pouvez procéder à l’ajout de l’utilisateur au contenu par défaut.
+Après avoir vérifié qu’aucun utilisateur de la liste des utilisateurs du service AEM ne s’applique à votre cas d’utilisation et que les problèmes RTC correspondants ont été approuvés, vous pouvez poursuivre et ajouter le nouvel utilisateur au contenu par défaut.
 
 Il est recommandé de créer un utilisateur de service pour utiliser l’explorateur de référentiel à l’adresse *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*.
 
-Le but est d’obtenir une propriété `jcr:uuid` valide qui est obligatoire pour créer l’utilisateur par l’intermédiaire d’une installation de module de contenu.
+Le but est d’obtenir une propriété `jcr:uuid` valide qui est obligatoire pour créer l’utilisateur par l’intermédiaire d’une installation de package de contenu.
 
 Vous pouvez créer des utilisateurs de services de la façon suivante :
 
 1. En vous rendant dans l’explorateur de référentiel sur *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*.
-1. Ouvrez une session en tant qu’administrateur en appuyant sur le lien **Connexion** dans le coin supérieur gauche de l’écran.
+1. Connectez-vous en tant qu’administrateur en appuyant sur la touche **Connexion** dans le coin supérieur gauche de l’écran.
 1. Ensuite, créez et nommez votre utilisateur système. Pour créer l’utilisateur en tant qu’utilisateur système, définissez le chemin intermédiaire comme `system` et ajoutez des sous-dossiers facultatifs en fonction de vos besoins :
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
@@ -136,7 +140,7 @@ Vous pouvez créer des utilisateurs de services de la façon suivante :
    >
    >Notez qu’il n’y a aucun type de mixin associé aux utilisateurs de services. Cela signifie qu’il n’y a aucune stratégie de contrôle d’accès pour les utilisateurs système.
 
-En ajoutant le fichier content.xml correspondant au contenu du lot, assurez-vous que vous avez défini le `rep:authorizableId` et que le type principal est `rep:SystemUser`. Il doit ressembler à ceci :
+En ajoutant le fichier content.xml correspondant au contenu du lot, assurez-vous que vous avez défini le `rep:authorizableId` et que le type principal est `rep:SystemUser`. Il doit ressembler à ceci :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -147,9 +151,9 @@ En ajoutant le fichier content.xml correspondant au contenu du lot, assurez-vous
     rep:authorizableId="authentication-service"/>
 ```
 
-## Ajout d’un amendement de configuration à la configuration ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
+## Ajout d’une modification de configuration à la configuration ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-Pour ajouter une mise en correspondance de votre service avec les utilisateurs système correspondants, vous devez créer une configuration de fabrique pour le service ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)`. Pour conserver la modularité, de telles fonctionnalités peuvent être fournies par le [mécanisme d’amendement de Sling](https://issues.apache.org/jira/browse/SLING-3578). La méthode recommandée pour installer ces configurations avec votre lot consiste à utiliser le [chargement du contenu initial de Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html) :
+Pour ajouter une mise en correspondance de votre service avec les utilisateurs système correspondants, vous devez créer une configuration de fabrique pour le service ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)`. Pour conserver la modularité, de telles fonctionnalités peuvent être fournies par le [mécanisme d’amendement de Sling](https://issues.apache.org/jira/browse/SLING-3578). La méthode recommandée pour installer de telles configurations avec votre lot consiste à utiliser [Chargement initial du contenu Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. Créez un sous-dossier SLING-INF/content sous le dossier src/main/resources de votre lot.
 1. Dans ce dossier, créez un fichier appelé org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-&lt;nom unique de votre configuration de fabrique>.xml avec le contenu de votre configuration de fabrique (incluant toutes les mises en correspondance d’utilisateurs de sous-services). Exemple :
@@ -194,27 +198,27 @@ Pour ajouter une mise en correspondance de votre service avec les utilisateurs s
 
 Les appels à `loginAdministrative()` apparaissent souvent avec les sessions partagées. Ces sessions sont acquises lors de l’activation du service et ne sont déconnectées qu’après l’arrêt du service. Bien qu’il s’agisse d’une pratique courante, cela débouche sur deux problèmes :
 
-* **Sécurité** : ces sessions d’administrateur sont utilisées pour mettre en cache et renvoyer les ressources ou d’autres objets qui sont liés à la session partagée. Plus loin dans la pile d’appels, ces objets peuvent être adaptés aux sessions ou aux résolveurs de ressources avec des autorisations élevées, or il n’est souvent pas évident pour l’appelant que la session utilisée est une session d’administrateur.
-* **Performances** : dans Oak, les sessions partagées peuvent entraîner des problèmes de performances, et il n’est pas recommandé de les utiliser à l’heure actuelle.
+* **Sécurité** : ces sessions d’administrateur sont utilisées pour mettre en cache et renvoyer les ressources ou d’autres objets qui sont liés à la session partagée. Plus loin dans la pile d’appels, ces objets peuvent être adaptés aux sessions ou aux résolveurs de ressources avec des privilèges élevés. Il n’est souvent pas clair pour l’appelant qu’il s’agit d’une session d’administration avec laquelle ils opèrent.
+* **Performances :** Dans Oak, les sessions partagées peuvent entraîner des problèmes de performances et il n’est actuellement pas recommandé de les utiliser.
 
 La solution la plus évidente au risque de sécurité est de remplacer simplement l’appel `loginAdministrative()` par un appel `loginService()` à un utilisateur disposant d’autorisations limitées. Toutefois, cette opération n’aura aucune incidence sur une éventuelle dégradation des performances. Vous pouvez limiter ces éventuelles dégradations en incluant toutes les informations requises dans un objet qui n’est plus associé à la session. Ensuite, créez (ou détruisez) la session à la demande.
 
-L’approche recommandée consiste à refactoriser l’API du service pour donner à l’appelant le contrôle de la création/destruction de la session.
+L’approche recommandée consiste à refactoriser l’API du service afin que l’appelant puisse contrôler la création/destruction de la session.
 
-## Sessions administratives dans les JSP {#administrative-sessions-in-jsps}
+## Sessions d’administration dans les JSP {#administrative-sessions-in-jsps}
 
 Les JSP ne peuvent pas utiliser `loginService()` car il n’y a aucun service associé. Toutefois, les sessions administratives dans les JSP indiquent généralement une violation du paradigme MVC.
 
-Cela peut être corrigé de deux façons :
+Ce problème peut être résolu de deux façons :
 
-1. En restructurant le contenu d’une manière qui permet de les manipuler avec la session utilisateur
-1. En extrayant la logique vers un service qui fournit une API qui peut alors être utilisée par le JSP
+1. Restructurer le contenu de manière à pouvoir le manipuler avec la session utilisateur ;
+1. Extraire la logique vers un service qui fournit une API qui peut ensuite être utilisée par le JSP.
 
 La première méthode est préférable.
 
-## Traitement des événements, des préprocesseurs de réplication et des tâches {#processing-events-replication-preprocessors-and-jobs}
+## Événements de traitement, préprocesseurs de réplication et tâches {#processing-events-replication-preprocessors-and-jobs}
 
-Lors du traitement d’événements, de tâches, et dans certains cas, de workflows, la session correspondante qui a déclenché l’événement est généralement perdue. Il en résulte que les gestionnaires d’événements et les processeurs de tâches utilisent souvent des sessions administratives pour effectuer leurs tâches. Différentes approches sont envisageables pour résoudre ce problème, chacune ayant ses avantages et ses inconvénients :
+Lors du traitement d’événements, de tâches, et dans certains cas, de workflows, la session correspondante qui a déclenché l’événement est généralement perdue. Il en résulte que les gestionnaires d’événements et les processeurs de tâches utilisent souvent des sessions administratives pour effectuer leurs tâches. Il existe différentes approches possibles pour résoudre ce problème, chacune présentant ses avantages et ses inconvénients :
 
 1. Transmettez l’`user-id` dans le payload de l’événement et utilisez l’emprunt d’identité.
 
@@ -230,18 +234,18 @@ Lors du traitement d’événements, de tâches, et dans certains cas, de workfl
 
 1. Transmettez une sérialisation du `Subject` dans le payload d’événement et créez un `ResourceResolver` basé sur cet objet. Un exemple serait d’utiliser le JAAS `doAsPrivileged` dans le `ResourceResolverFactory`.
 
-   **Avantages :** mise en œuvre propre du point de vue de la sécurité. Cela évite la réauthentification et utilise les privilèges d’origine. Le code relevant de la sécurité est transparent pour le consommateur de l’événement.
+   **Avantages :** mise en œuvre propre du point de vue de la sécurité. Cela évite la réauthentification et utilise les privilèges d’origine. Le code pertinent pour la sécurité est transparent pour le consommateur de l’événement.
 
-   **Inconvénients :** nécessité de refactoriser. Le fait que le code relevant de la sécurité soit transparent pour le consommateur de l’événement peut également entraîner des problèmes.
+   **Inconvénients :** nécessité de refactoriser. Le fait que le code approprié pour la sécurité soit transparent pour le consommateur de l’événement peut également entraîner des problèmes.
 
 La troisième approche est actuellement la technique de traitement préférée.
 
 ## Processus de workflow {#workflow-processes}
 
-Dans les mises en œuvre de processus de workflow, la session utilisateur correspondante ayant déclenché le workflow est généralement perdue. En conséquence, les processus de workflow utilisent souvent des sessions administratives pour effectuer leurs tâches.
+Dans les mises en œuvre de processus de workflow, la session utilisateur correspondante ayant déclenché le workflow est généralement perdue. Cela conduit à ce que les processus de workflow utilisent souvent des sessions administratives pour effectuer leur travail.
 
-Pour résoudre ces problèmes, il est recommandé que les mêmes approches mentionnées dans les [Traitement des événements, des préprocesseurs de réplication et des tâches](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) soient utilisées.
+Pour résoudre ces problèmes, il est recommandé d’utiliser les mêmes méthodes que celles mentionnées dans la section [Événements de traitement, préprocesseurs de réplication et tâches](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) à utiliser.
 
-## Processeurs POST Sling et pages supprimées {#sling-post-processors-and-deleted-pages}
+## Traitateurs de POST Sling et pages supprimées {#sling-post-processors-and-deleted-pages}
 
-Plusieurs sessions administratives sont utilisées dans les mises en œuvre de processeur POST Sling. En règle générale, les sessions administratives sont utilisées pour accéder aux nœuds qui sont en attente de suppression dans le POST en cours de traitement. Par conséquent, ils ne sont plus disponibles via la session de requête. Les nœuds en attente de suppression sont accessibles pour révéler les métadonnées qui ne devraient pas être accessibles dans le cas contraire.
+Plusieurs sessions administratives sont utilisées dans les mises en œuvre de processeur POST Sling. En règle générale, les sessions administratives sont utilisées pour accéder aux nœuds qui sont en attente de suppression dans le POST en cours de traitement. Par conséquent, ils ne sont plus disponibles via la session de requête. Un noeud en attente de suppression peut être accessible pour révéler des métadonnées qui, autrement, ne devraient pas être accessibles.

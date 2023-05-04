@@ -10,20 +10,24 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 4ddbdba8-073b-42ed-b4c9-d97d20b4739b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 100%
+source-wordcount: '1290'
+ht-degree: 82%
 
 ---
 
 # Utilisation de Sling Resource Merger dans AEM{#using-the-sling-resource-merger-in-aem}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Objectif {#purpose}
 
-Sling Resource Merger propose des services pour accéder à des ressources et les fusionner. Il fournit des mécanismes de différenciation (diff) pour les deux éléments suivants :
+Sling Resource Merger fournit des services pour accéder aux ressources et les fusionner. Il fournit des mécanismes de différenciation pour les deux :
 
-* **[Incrustations](/help/sites-developing/overlays.md)** de ressources à l’aide de [chemins de recherche configurés](/help/sites-developing/overlays.md#configuring-the-search-paths).
+* **[Recouvrements](/help/sites-developing/overlays.md)** de ressources à l’aide de la fonction [chemins de recherche configurés](/help/sites-developing/overlays.md#configuring-the-search-paths).
 
 * **Remplacements** de boîtes de dialogue de composant pour l’interface utilisateur tactile (`cq:dialog`), à l’aide de la hiérarchie des types de ressource (par le biais de la propriété `sling:resourceSuperType`).
 
@@ -35,9 +39,9 @@ Avec Sling Resource Merger, les ressources et/ou propriétés de recouvrement/re
 
 >[!CAUTION]
 >
->Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html). Cela signifie également qu’ils ne sont adaptés qu’à l’interface utilisateur tactile standard ; les remplacements définis de cette manière, notamment, ne s’appliquent qu’à la boîte de dialogue tactile d’un composant.
+>Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html). Cela signifie également qu’il s’applique uniquement à l’IU tactile standard ; en particulier, les remplacements définis de cette manière ne s’appliquent qu’à la boîte de dialogue tactile d’un composant.
 >
->S’agissant des incrustations/remplacements relatifs à d’autres sections (y compris d’autres aspects d’un composant tactile ou de l’interface utilisateur classique), le nœud et la structure appropriés doivent être copiés à l’endroit où la personnalisation sera définie à partir de l’original.
+>Les recouvrements/remplacements pour d’autres zones (y compris d’autres aspects d’un composant tactile ou de l’IU classique) impliquent la copie du noeud et de la structure appropriés de l’original à l’endroit où la personnalisation sera définie.
 
 ### Objectifs pour AEM {#goals-for-aem}
 
@@ -65,6 +69,7 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
 >1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
 >
 >1. Apportez les modifications désirées dans `/apps`.
+
 >
 
 
@@ -139,9 +144,9 @@ Ainsi, dans l’exemple de recouvrement ci-dessus, les nœuds suivants sont néc
 
 ### Cas d’utilisation {#use-cases}
 
-Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d’effectuer les opérations suivantes :
+Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’effectuer les opérations suivantes :
 
-* **Ajouter une propriété**
+* **Ajout d’une propriété**
 
    La propriété n’existe pas dans la définition `/libs`, mais elle est requise dans le recouvrement/remplacement `/apps`.
 
@@ -155,13 +160,13 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
    1. Créez le nœud correspondant dans `/apps`.
    1. Créez la propriété correspondante sur ce nœud (sous /`apps`).
 
-      * La priorité de la propriété sera basée sur la configuration de Sling Resource Resolver.
-      * Le type de la propriété peut être modifié.
+      * La propriété aura une priorité basée sur la configuration Sling Resource Resolver.
+      * La modification du type de propriété est prise en charge.
 
          Si vous utilisez un type de propriété différent de celui utilisé dans `/libs`, c’est le type que vous avez défini qui sera utilisé.
    >[!NOTE]
    >
-   >Le type de la propriété peut être modifié.
+   >La modification du type de propriété est prise en charge.
 
 * **Redéfinir une propriété créée automatiquement**
 
@@ -176,17 +181,17 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
 
    Le nœud et ses enfants sont définis dans `/libs`, mais une nouvelle configuration est requise dans le recouvrement/remplacement de `/apps`.
 
-   1. Combinez les actions des opérations suivantes :
+   1. Combinez les actions des éléments suivants :
 
-      1. Masquer les enfants d’un nœud (conserver les propriétés du nœud).
-      1. Redéfinir la (les) propriétés.
+      1. Masquer les enfants d’un noeud (en conservant les propriétés du noeud)
+      1. Redéfinir la propriété/les propriétés
 
 * **Masquer une propriété**
 
    La propriété est définie dans `/libs`, mais elle n’est pas requise dans le recouvrement/remplacement de `/apps`.
 
    1. Créez le nœud correspondant dans `/apps`.
-   1. Créez une propriété `sling:hideProperties` de type `String` ou `String[]`. Utilisez-la pour spécifier les propriétés à masquer/ignorer. Des caractères génériques peuvent également être utilisés. Par exemple :
+   1. Créez une propriété `sling:hideProperties` de type `String` ou `String[]`. Utilisez cette option pour spécifier les propriétés à masquer/ignorer. Vous pouvez également utiliser des caractères génériques. Par exemple :
 
       * `*`
       * `["*"]`
@@ -232,11 +237,11 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
 
 ### Appel de Sling Resource Merger à partir de votre code {#invoking-the-sling-resource-merger-from-your-code}
 
-Sling Resource Merger comprend deux fournisseurs de ressources personnalisés : un pour les recouvrements et un autre pour les remplacements. Chacun d’eux peut être appelé dans votre code en utilisant un point de montage :
+Sling Resource Merger comprend deux fournisseurs de ressources personnalisés : un pour les recouvrements et un autre pour les remplacements. Chacun d’eux peut être appelé dans votre code à l’aide d’un point de montage :
 
 >[!NOTE]
 >
->Lorsque vous accédez à votre ressource, il est conseillé d’utiliser le point de montage approprié.
+>Lors de l’accès à votre ressource, il est recommandé d’utiliser le point de montage approprié.
 >
 >De cette manière, vous avez la garantie que Sling Resource Merger est appelé et que la ressource entièrement fusionnée est renvoyée (réduction de la structure qui doit être répliquée à partir de `/libs`).
 
@@ -260,7 +265,7 @@ Sling Resource Merger comprend deux fournisseurs de ressources personnalisés�
 
 ### Exemple d’utilisation {#example-of-usage}
 
-Quelques exemples sont traités :
+Voici quelques exemples :
 
 * Recouvrement :
 

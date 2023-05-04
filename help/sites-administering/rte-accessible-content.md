@@ -1,7 +1,7 @@
 ---
 title: Configuration de l’éditeur de texte enrichi pour produire des sites accessibles
 seo-title: Configuring RTE for Producing Accessible Sites
-description: Découvrez comment configurer l’éditeur de texte enrichi (RTE) pour produire des sites accessibles.
+description: Découvrez comment configurer l’éditeur de texte enrichi AEM pour produire des sites accessibles.
 seo-description: Learn how to configure the AEM Rich Text Editor to produce accessible sites.
 uuid: 87539fee-3ecc-49f4-af3d-8dde72399c28
 contentOwner: Guillaume Carlino
@@ -10,39 +10,43 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 exl-id: 245e1c28-f702-4300-81cf-5139db9d95ec
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 83%
+source-wordcount: '954'
+ht-degree: 50%
 
 ---
 
 # Configuration de l’éditeur de texte enrichi pour produire des sites accessibles {#configuring-rte-for-producing-accessible-sites}
 
-AEM prend en charge à la fois :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-* Les fonctions d’accessibilité standard, notamment le texte de remplacement pour les images
-* Des fonctionnalités supplémentaires qui sont accessibles lors de la création de contenu avec les composants qui utilisent l’éditeur de texte enrichi (RTE)
+AEM prend en charge les deux éléments suivants :
+
+* fonctions d’accessibilité standard, y compris le texte de remplacement des images
+* ainsi que d’autres fonctionnalités accessibles lors de la création de contenu avec des composants qui utilisent l’éditeur de texte enrichi (RTE).
 
 >[!NOTE]
 >
 >* [Guide rapide relatif à WCAG 2.0](/help/managing/qg-wcag.md)
->* [Création d’un contenu accessible (conformité WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
+>* [Création de contenu accessible (conformité WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
 
 
-Les auteurs de contenu peuvent utiliser les fonctions de l’éditeur de texte enrichi afin de fournir des informations d’accessibilité lors de l’ajout de contenu à une page. Cela peut impliquer l’ajout d’informations structurelles via des en-têtes et des éléments de paragraphe.
+Les auteurs de contenu peuvent utiliser les fonctionnalités de l’éditeur de texte enrichi pour fournir des informations d’accessibilité lors de l’ajout de contenu à une page. Cela peut inclure l’ajout d’informations structurelles au moyen d’en-têtes et d’éléments de paragraphe.
 
-Vous pouvez [configurer et personnaliser ces fonctions en configurant des modules externes RTE](#configuring-the-plugin-features) pour le composant. Par exemple, la variable `paraformat` vous permet d’ajouter des éléments sémantiques de niveau bloc supplémentaires, y compris d’étendre le nombre de niveaux d’en-tête pris en charge au-delà des niveaux de base. `H1`, `H2` et `H3` fourni par défaut.
+Vous pouvez [configurer et personnaliser ces fonctionnalités en configurant les modules externes de l’éditeur de texte enrichi](#configuring-the-plugin-features) pour le composant. Par exemple, la variable `paraformat` vous permet d’ajouter des éléments sémantiques de niveau bloc supplémentaires, y compris d’étendre le nombre de niveaux d’en-tête pris en charge au-delà des niveaux de base. `H1`, `H2` et `H3` fourni par défaut.
 
-L’éditeur de texte enrichi est disponible dans divers composants de l’interface utilisateur tactile et classique. Cependant, le composant principal pour l’utilisation de l’éditeur de texte enrichi est le composant **Texte**.
+L’éditeur de texte enrichi est disponible dans divers composants de l’interface utilisateur tactile et classique. Cependant, le composant Principal pour l’utilisation de l’éditeur de texte enrichi est le suivant : **Texte** composant.
 
-Le **Texte** dans AEM est disponible pour les IU tactile et classique. Les illustrations suivantes présentent l’éditeur de texte enrichi avec une plage de modules externes activés, y compris `paraformat` :
+Le **Texte** dans AEM est disponible pour les IU tactile et classique. Les illustrations suivantes montrent l’éditeur de texte enrichi avec un éventail de modules externes activés, y compris `paraformat`:
 
 * Le **Texte** dans l’interface utilisateur tactile :
 
    ![Composant Texte (éditeur de texte enrichi) en mode plein écran dans l’IU optimisée pour les écrans tactiles](assets/chlimage_1-206.png)
 
-* Composant **Text** dans l’IU classique :
+* Le **Texte** dans l’IU classique :
 
    ![Boîte de dialogue Modifier (éditeur de texte enrichi) du composant Texte dans l’IU classique](assets/chlimage_1-207.png)
 
@@ -55,9 +59,9 @@ Le **Texte** dans AEM est disponible pour les IU tactile et classique. Les illus
 >
 
 
-## Configuration des fonctionnalités de module externe {#configuring-the-plugin-features}
+## Configuration des fonctionnalités du module externe {#configuring-the-plugin-features}
 
-Les instructions complètes sur la configuration de l’éditeur de texte enrichi sont disponibles sur la page [Configuration de l’éditeur de texte enrichi.](/help/sites-administering/rich-text-editor.md) Celle-ci couvre tous les problèmes, y compris les principales étapes :
+Vous trouverez des instructions complètes sur la configuration de l’éditeur de texte enrichi sur la page [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md) page. Celle-ci couvre tous les problèmes, y compris les principales étapes :
 
 * [Modules externes et leurs fonctionnalités](/help/sites-administering/rich-text-editor.md#aboutplugins)
 * [Emplacements de configuration](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)
@@ -68,23 +72,23 @@ En configurant un module externe dans le `rtePlugins` sous-branche dans CRXDE Li
 
 ![CRXDE Lite présentant un exemple de rtePlugin](assets/chlimage_1-208.png)
 
-### Exemple : spécification des formats de paragraphes disponibles dans le champ de sélection de l’éditeur de texte enrichi {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### Exemple - Spécification des formats de paragraphe disponibles dans le champ de sélection de l’éditeur de texte enrichi {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
-De nouveaux formats de bloc sémantique peuvent être rendus disponibles pour la sélection comme suit :
+De nouveaux formats de bloc sémantique peuvent être mis à disposition pour sélection par :
 
 1. Selon votre éditeur de texte enrichi, déterminez son [emplacement de configuration](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations) et accédez-y.
-1. [Activez le champ de sélection Paragraphe](/help/sites-administering/rich-text-editor.md). En [activant le module externe](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
-1. [Spécifiez les formats qui doivent être disponibles dans le champ de sélection Paragraphes](/help/sites-administering/rich-text-editor.md).
+1. [Activation du champ de sélection Paragraphes](/help/sites-administering/rich-text-editor.md); par [activation du module externe](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [Spécifiez les formats qui doivent être disponibles dans le champ de sélection Paragraphes .](/help/sites-administering/rich-text-editor.md).
 1. Les formats de paragraphe sont ensuite à la disposition de l’auteur du contenu des champs de sélection dans l’éditeur de texte enrichi. Ils sont accessibles :
 
    * Utilisation du paragraphe ([pilcrow](https://en.wikipedia.org/wiki/Pilcrow)) dans l’IU tactile :
 
    ![Icône de paragraphe (pied-de-mouche).](do-not-localize/chlimage_1-7.png)
 
-   * Utilisation du champ **Format** (sélecteur déroulant) dans l’IU classique.
+   * En utilisant la variable **Format** (sélecteur de liste déroulante) dans l’IU classique.
 
 
-Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, AEM constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, ce qui empêche toute création de formatage en ligne. À la place, ils doivent sélectionner les éléments structurels appropriés comme les en-têtes et utiliser des styles globaux choisis via l’option Styles. Ceci garantit une mise en forme nette, de meilleures options pour les utilisateurs qui naviguent avec leurs propres feuilles de style et un contenu correctement structuré.
+Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, AEM constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, ce qui empêche toute création de formatage en ligne. À la place, ils doivent sélectionner les éléments structurels appropriés comme les en-têtes et utiliser des styles globaux choisis via l’option Styles. Cela garantit un balisage propre, de plus grandes options pour les utilisateurs qui naviguent avec leurs propres feuilles de style et du contenu correctement structuré.
 
 ## Utilisation de l’option Modification de la source  {#use-of-the-source-edit-feature}
 
@@ -94,7 +98,7 @@ Dans certains cas, les auteurs de contenu constateront qu’il est nécessaire d
 >
 >Utilisez la fonction `sourceedit` avec prudence. Les fautes de frappe et/ou les fonctions non prises en charge peuvent entraîner d’autres problèmes.
 
-## Ajout de la prise en charge des éléments et attributs HTML supplémentaires {#adding-support-for-additional-html-elements-and-attributes}
+## Ajout de la prise en charge d’éléments et d’attributs de HTML supplémentaires {#adding-support-for-additional-html-elements-and-attributes}
 
 Pour étendre davantage les fonctions d’accessibilité d’AEM, vous pouvez étendre les composants existants (par exemple, les composants **Texte** et **Tableau**) en fonction de l’éditeur de texte enrichi avec des éléments et attributs supplémentaires.
 
@@ -104,15 +108,15 @@ La procédure suivante explique comment étendre le composant **Tableau** avec u
 
 Dans le constructeur de l’élément `TablePropertiesDialog`, ajoutez un champ de saisie de texte supplémentaire utilisé pour modifier la légende. Notez que `itemId` doit être défini sur `caption` (à savoir le nom de l’attribut DOM) pour traiter automatiquement son contenu.
 
-Dans le composant **Table**, vous devez définir ou supprimer explicitement l’attribut vers/depuis l’élément DOM. La valeur est transmise par la boîte de dialogue dans l’objet `config`. Notez que les attributs DOM doivent être définis ou supprimés à l’aide des méthodes `CQ.form.rte.Common` correspondantes (`com` est un raccourci de `CQ.form.rte.Common`) pour éviter les pièges courants des mises en œuvre de navigateur.
+Dans **Tableau** vous devez définir ou supprimer explicitement l’attribut vers/depuis l’élément DOM. La valeur est transmise par la boîte de dialogue dans l’objet `config`. Notez que les attributs DOM doivent être définis ou supprimés à l’aide des méthodes `CQ.form.rte.Common` correspondantes (`com` est un raccourci de `CQ.form.rte.Common`) pour éviter les pièges courants des mises en œuvre de navigateur.
 
 >[!NOTE]
 >
->Cette procédure convient uniquement à l’IU classique.
+>Cette procédure ne convient qu’à l’IU classique.
 
-### Instructions détaillées {#step-by-step-instructions}
+### Instructions étape par étape {#step-by-step-instructions}
 
-1. Démarrez CRXDE Lite. Par exemple : [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Démarrez CRXDE Lite. Par exemple : [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Copier :
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`

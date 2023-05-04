@@ -11,14 +11,18 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: de8ba694-0b68-4442-bd50-5ba6d845749c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: '4657'
 ht-degree: 97%
 
 ---
 
 # Appeler AEM Forms à l’aide de Remoting {#invoking-aem-forms-using-remoting}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les processus créés dans Workbench peuvent être appelés à l’aide de Remoting. En d’autres termes, vous pouvez appeler un processus AEM Forms à partir d’une application cliente créée avec Flex. Cette fonctionnalité est basée sur les services de données.
 
@@ -969,7 +973,7 @@ Les champs de la classe ActionScript correspondent aux champs appartenant au typ
 >[!NOTE]
 Pour déterminer les noms de champ appartenant à un type complexe Forms, une méthode efficace consiste à afficher le WSDL d’un service dans un navigateur web. Un WSDL spécifie les types complexes d’un service ainsi que les membres de données correspondants. Le WSDL suivant est utilisé pour le service client : *https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.*
 
-La classe ActionScript client appartient à un module nommé Client. Il est recommandé de placer toutes les classes ActionScript qui correspondent à des types de données AEM Forms complexes dans leur propre package. Créez un dossier dans le dossier src du projet Flex et placez le fichier ActionScript dans le dossier, comme illustré ci-dessous.
+La classe ActionScript client appartient à un package nommé Client. Il est recommandé de placer toutes les classes ActionScript qui correspondent à des types de données AEM Forms complexes dans leur propre package. Créez un dossier dans le dossier src du projet Flex et placez le fichier ActionScript dans le dossier, comme illustré ci-dessous.
 
 ![iu_iu_customeras](assets/iu_iu_customeras.png)
 

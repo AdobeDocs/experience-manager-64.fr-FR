@@ -1,7 +1,7 @@
 ---
 title: Intégration JCR
 seo-title: JCR Integration
-description: Conseils pour savoir quand il faut intégrer au niveau JCR
+description: Conseils pour savoir quand vous devez intégrer au niveau JCR
 seo-description: Tips for when you must integrate at the JCR level
 uuid: 11518baf-521e-471d-ad4f-2baa76075cfa
 contentOwner: User
@@ -10,24 +10,28 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: e6647a11-a36e-4808-bb61-29b2895c6b1d
 exl-id: 3e9727a5-32f8-40ad-aa06-619f50d109b2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 100%
+source-wordcount: '331'
+ht-degree: 71%
 
 ---
 
 # Intégration JCR{#jcr-integration}
 
-## Privilégier l’API Sling Resource à l’API JCR {#prefer-the-sling-resource-api-to-jcr-api}
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-L’API Sling fonctionne à un niveau plus avancé et plus abstrait que l’API JCR. Ainsi, votre code est plus réutilisable et indépendant du stockage sous-jacent. Cela facilite l’ajout de données virtuelles externes via le mécanisme ResourceProvider si nécessaire.
+## Préférence de l’API de ressource Sling à l’API JCR {#prefer-the-sling-resource-api-to-jcr-api}
 
-## Éviter les requêtes autant que possible {#avoid-queries-wherever-possible}
+L’API Sling fonctionne à un niveau plus avancé et plus abstrait que l’API JCR. Ainsi, votre code est plus réutilisable et indépendant du stockage sous-jacent. Cela facilite l’inclusion de données virtuelles externes via le mécanisme ResourceProvider si nécessaire.
 
-Pour récupérer des données, il est toujours plus simple de naviguer dans le référentiel plutôt que d’exécuter une requête. Dans certains cas, les requêtes sont nécessaires, par exemple, une requête d’utilisateur final ou s’il faut trouver du contenu structuré à travers le référentiel entier, mais pour toutes les autres situations, il est préférable de naviguer jusqu’aux nœuds demandés. Les requêtes devraient toujours être évitées en matière de rendus, comme les composants de navigation, une « liste d’éléments récents », le nombre d’éléments, etc.. Dans ces cas, il est préférable de parcourir la hiérarchie ou de pré-mettre en cache le résultat afin qu’il puisse être utilisé directement lors du rendu.
+## Éviter les requêtes dans la mesure du possible {#avoid-queries-wherever-possible}
 
-## Limiter la portée de l’observation JCR {#restrict-the-scope-of-jcr-observation}
+Pour récupérer des données, il est toujours plus simple de naviguer dans le référentiel plutôt que d’exécuter une requête. Dans certains cas, les requêtes sont nécessaires, par exemple, une requête d’utilisateur final ou s’il faut trouver du contenu structuré à travers le référentiel entier, mais pour toutes les autres situations, il est préférable de naviguer jusqu’aux nœuds demandés. Les requêtes devraient toujours être évitées en matière de rendus, comme les composants de navigation, une « liste d’éléments récents », le nombre d’éléments, etc.. Dans ce cas, il est préférable de parcourir la hiérarchie ou de pré-mettre en cache le résultat afin qu’il puisse être utilisé directement lors du rendu.
+
+## Limitation de la portée de l’observation JCR {#restrict-the-scope-of-jcr-observation}
 
 Lors de l’écoute des événements dans le référentiel, il est important de réduire la portée autant que possible. Par exemple, il est préférable d’écouter un événement au niveau `/etc/mycompany` plutôt que `/etc`. N’écoutez jamais les événements à la racine du référentiel. En outre, assurez-vous que les méthodes de rappel s’exécutent aussi rapidement que possible quand il n’y a pas de requêtes.
 

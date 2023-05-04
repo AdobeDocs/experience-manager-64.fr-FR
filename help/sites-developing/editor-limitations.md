@@ -1,7 +1,7 @@
 ---
 title: Limites de l’éditeur
 seo-title: Editor Limitations
-description: L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
+description: L’éditeur de l’interface utilisateur tactile utilise des superpositions pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
 seo-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
 uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
 contentOwner: User
@@ -10,16 +10,20 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 exl-id: ce860880-5954-4f72-8ec6-60209c1ec659
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 100%
+source-wordcount: '352'
+ht-degree: 61%
 
 ---
 
 # Limites de l’éditeur{#editor-limitations}
 
-L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions lorsque cela s’avère possible.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+L’éditeur de l’interface utilisateur tactile utilise des superpositions pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions ou des solutions lorsque cela s’avère possible.
 
 ## Limites fonctionnelles {#functional-limitations}
 
@@ -41,9 +45,9 @@ Un développeur peut être confronté aux limites suivantes concernant les inter
 
 ### Éléments à positionnement absolu {#absolutely-positioned-elements}
 
-Les éléments à positionnement absolu peuvent occasionner des problèmes au niveau de la position de leur incrustation.
+Les éléments positionnés de manière absolue peuvent entraîner des problèmes de position de leur superposition.
 
-* Si cela se produit, assurez-vous que les dimensions de l’élément à positionnement absolu sont correctes, car l’éditeur créera une incrustation ayant exactement les mêmes dimensions.
+* Si cela se produit, assurez-vous que les dimensions de l’élément à positionnement absolu sont correctes, car l’éditeur crée une superposition avec les mêmes dimensions.
 
 ### Unités vh {#vh-units}
 
@@ -51,7 +55,7 @@ Les unités `vh` ne sont pas prises en charge, car la hauteur de l’iFrame doit
 
 ### Images d’arrière-plan fixes {#fixed-background-images}
 
-Il est possible que les images d’arrière-plan fixes ne puissent pas être affichées en mode fixe lors du défilement, étant donné qu’elles sont incorporées dans un iFrame.
+Les images d’arrière-plan fixes peuvent ne pas être affichées comme fixes lors du défilement, car elles sont incorporées dans un iframe.
 
 * Sélectionnez **Afficher la page comme publiée** dans les actions de la barre d’en-tête pour afficher correctement la page.
 

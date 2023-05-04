@@ -10,22 +10,26 @@ topic-tags: repo_restructuring
 discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Upgrading
 exl-id: d0cdb15d-196a-44e3-bd98-91588b6979ab
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 100%
+source-wordcount: '1495'
+ht-degree: 70%
 
 ---
 
 # Restructuration des référentiels dans AEM 6.4{#sites-repository-restructuring-in-aem}
 
-Comme indiqué dans la page parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution AEM Sites. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Comme indiqué dans la page parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution AEM Sites. Certaines modifications nécessitent des efforts lors de la mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
 
 **Avec la mise à niveau vers la version 6.4**
 
 * [Segments ContextHub](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#contexthub-segments)
 
-**Avant de procéder à la mise à niveau vers la version 6.5**
+**Avant la mise à niveau vers la version 6.5**
 
 * [Bibliothèques clientes Adobe Analytics](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#adobe-analytics-client-libraries)
 * [De Microsoft Word classique à la conception de pages web](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#classic-microsoft-word-to-web-page-designs)
@@ -66,16 +70,16 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Remarques</strong></td> 
-   <td><p>Les segments ContextHub persistants à l’emplacement précédent s’affichent en lecture seule dans <strong>AEM &gt; Personnalisation &gt; Audiences</strong>.</p> <p>Si les segments ContextHub doivent être modifiables dans AEM, ils doivent être migrés vers le nouvel emplacement (<code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>). Tous les nouveaux segments ContentHub créés dans AEM sont persistants dans le nouvel emplacement (<code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>).</p> <p>Les propriétés de la page AEM Sites permettent uniquement la sélection de l’emplacement précédent (<code>/etc</code>) ou d’un nouvel emplacement unique (<code>/apps</code>, <code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>). Les segments de ContextHub doivent donc être migrés en conséquence.</p> <p>Tous les segments ContextHub inutilisés des sites de référence AEM peuvent être supprimés et ne pas être migrés vers le nouvel emplacement :</p> 
+   <td><p>Les segments ContextHub persistants à l’emplacement précédent s’affichent en lecture seule dans <strong>AEM &gt; Personnalisation &gt; Audiences</strong>.</p> <p>Si les segments ContextHub doivent être modifiables dans AEM, ils doivent être migrés vers le nouvel emplacement (<code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>). Tous les nouveaux segments ContentHub créés dans AEM sont persistants dans le nouvel emplacement (<code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>).</p> <p>Les propriétés de la page AEM Sites permettent uniquement la sélection de l’emplacement précédent (<code>/etc</code>) ou d’un nouvel emplacement unique (<code>/apps</code>, <code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>). Les segments de ContextHub doivent donc être migrés en conséquence.</p> <p>Les segments ContextHub inutilisés des sites de référence d’AEM peuvent être supprimés et ne pas être migrés vers le nouvel emplacement :</p> 
     <ul> 
      <li>/etc/segmentation/geometrixx/</li> 
      <li>/etc/segmentation/geometrixx-outdoors</li> 
-    </ul> <p>Remarque : si ClientContext est en cours d’utilisation, il est recommandé d’effectuer un conversion en ContextHub.</p> </td> 
+    </ul> <p>Remarque : Si ClientContext est en cours d’utilisation, il est recommandé de le convertir en ContextHub.</p> </td> 
   </tr>
  </tbody>
 </table>
 
-## Avant de procéder à la mise à niveau vers la version 6.5 {#prior-to-upgrade}
+## Avant la mise à niveau vers la version 6.5 {#prior-to-upgrade}
 
 ### Bibliothèques clientes Adobe Analytics {#adobe-analytics-client-libraries}
 
@@ -91,10 +95,10 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseils de restructuration</strong></td> 
-   <td><p>Toute utilisation personnalisée de ces bibliothèques clientes doit faire référence à la bibliothèque cliente par catégorie et non par chemin :</p> 
+   <td><p>Toute utilisation personnalisée de ces bibliothèques clientes doit faire référence à la bibliothèque cliente par catégorie, et non par chemin d’accès :</p> 
     <ol> 
-     <li>Toute référence à la bibliothèque cliente par chemin d’accès à l’emplacement précédent doit être mise à jour pour utiliser l’<a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">infrastructure de référencement de la bibliothèque cliente AEM</a>.</li> 
-     <li>Si l’infrastructure de référencement des bibliothèques clientes AEM ne peut pas être utilisée, le chemin absolu des bibliothèques clientes peut être référencé via la servlet proxy des bibliothèques clientes AEM.
+     <li>Toute référence à la bibliothèque cliente par chemin d’accès à l’emplacement précédent doit être mise à jour pour utiliser <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM framework de référence de bibliothèque cliente</a>.</li> 
+     <li>Si AEM framework de référencement de bibliothèque cliente ne peut pas être utilisé, le chemin absolu des bibliothèques clientes peut être référencé via AEM servlet proxy de bibliothèque cliente.
       <ul> 
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/appmeasurement.js</code></li> 
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/plugins.js</code></li> 
@@ -136,7 +140,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
     <ol> 
      <li>Copiez les conceptions de l’emplacement précédent dans le nouvel emplacement (<code>/apps</code>).</li> 
      <li>Convertissez les ressources statiques, CSS et JavaScript dans la conception en <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">bibliothèque cliente</a> avec <code>allowProxy = true</code>.</li> 
-     <li>Mettez à jour les références à l’emplacement précédent dans la propriété cq:designPath.</li> 
+     <li>Mettez à jour les références à l’emplacement précédent dans la propriété cq:designPath .</li> 
      <li>Mettez à jour les pages faisant référence à l’emplacement précédent pour utiliser la nouvelle catégorie de bibliothèque cliente (cela nécessite la mise à jour du code d’implémentation de la page).</li> 
      <li>Mettez à jour les règles du Dispatcher AEM pour autoriser le service des bibliothèques clientes via la servlet proxy <code>/etc.clientlibs/</code>.</li> 
     </ol> <p>Pour les conceptions NON gérées dans SCM et modifiées au moment de l’exécution via les boîtes de dialogue de conception :</p> 
@@ -223,7 +227,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Remarques</strong></td> 
-   <td><p>Toutes les configurations de plans directeurs de Multi-site Manager fournies par AEM existent dans le nouvel emplacement de <code>/libs</code>.</p> <p>Le contenu ne fait pas référence aux configurations Blueprint de Multi-site Manager. Par conséquent, il n’y a pas de références de contenu à ajuster.</p> </td> 
+   <td><p>Toutes les configurations de plans directeurs de Multi-site Manager fournies par AEM existent dans le nouvel emplacement de <code>/libs</code>.</p> <p>Le contenu ne fait pas référence aux configurations bleues de Multi-site Manager. Il n’existe donc pas de références de contenu à ajuster.</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -250,7 +254,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Remarques</strong></td> 
-   <td>Si vous ne supprimez pas les configurations de déploiement de Multi-site Manager migrées de l’emplacement précédent, des options de déploiement en double sont affichées pour les auteurs d’AEM.</td> 
+   <td>Si vous ne supprimez pas les configurations de déploiement multi-site Manager migrées de l’emplacement précédent, des options de déploiement en double s’affichent pour les auteurs AEM.</td> 
   </tr>
  </tbody>
 </table>
@@ -269,7 +273,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseils de restructuration</strong></td> 
-   <td><p>Les seuls nouveaux modèles d’e-mail de notification d’événement de page gérés doivent prendre en charge de nouveaux paramètres régionaux.</p> <p>La résolution des modèle d’e-mail d’événement se produit dans l’ordre suivant :</p> 
+   <td><p>Les seuls nouveaux modèles d’e-mail de notification d’événement de page pris en charge sont la prise en charge de nouveaux paramètres régionaux.</p> <p>La résolution du modèle d’e-mail d’événement de page s’effectue dans l’ordre suivant :</p> 
     <ol> 
      <li><code>/etc/notification/email/default/com.day.cq.wcm.core.page</code></li> 
      <li><code>/apps/settings/notification-templates/com.day.cq.wcm.core.page</code></li> 
@@ -307,7 +311,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseils de restructuration</strong></td> 
-   <td>Les structures créées à l’emplacement précédent utilisent l’infrastructure existante et ne peuvent pas être migrées vers le nouvel emplacement. Pour s’aligner sur le nouvel emplacement, toute structure existante doit être re-développée à l’aide de l’infrastructure prise en charge.</td> 
+   <td>Les structures créées à l’emplacement précédent utilisent l’infrastructure existante et ne peuvent pas être migrées vers le nouvel emplacement. Pour s’aligner sur le nouvel emplacement, tout modèle de génération de modèles automatique hérité doit être redéveloppé à l’aide de la structure de génération de modèles automatique prise en charge.</td> 
   </tr>
   <tr>
    <td><strong>Remarques</strong></td> 
@@ -330,9 +334,9 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseils de restructuration</strong></td> 
-   <td><p>Toute référence à l’emplacement précédent dans les fichiers LESS personnalisés doit être mise à jour pour pouvoir être importée à partir du nouvel emplacement.</p> 
+   <td><p>Toutes les références à l’emplacement précédent dans les fichiers LESS personnalisés doivent être mises à jour pour être importées à partir du nouvel emplacement.</p> 
     <ul> 
-     <li>Mettez à jour tous les fichiers LESS personnalisés faisant référence à grid_base.less dans l’emplacement précédent pour référencer le nouvel emplacement.</li> 
+     <li>Mettez à jour tous les fichiers LESS personnalisés référençant grid_base.less dans l’emplacement précédent pour référencer le nouvel emplacement.</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -422,10 +426,10 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseils de restructuration</strong></td> 
-   <td><p>Toute utilisation personnalisée de ces bibliothèques clientes doit référencer la bibliothèque cliente par catégorie, et non par le chemin.</p> 
+   <td><p>Toute utilisation personnalisée de ces bibliothèques clientes doit faire référence à la bibliothèque cliente par catégorie, et non par chemin d’accès.</p> 
     <ol> 
-     <li>Toute référence à la bibliothèque cliente par chemin d’accès à l’emplacement précédent doit être mise à jour pour utiliser l’<a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">infrastructure de référencement des bibliothèques clientes AEM</a>.</li> 
-     <li>Si l’infrastructure de référencement des bibliothèques clientes AEM ne peut pas être utilisée, le chemin absolu des bibliothèques clientes peut être référencé via la servlet proxy des bibliothèques clientes AEM :</li> 
+     <li>Toute référence à la bibliothèque cliente par chemin d’accès à l’emplacement précédent doit être mise à jour pour utiliser <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM framework de référence de bibliothèque cliente</a>.</li> 
+     <li>Si AEM framework de référencement de bibliothèque cliente ne peut pas être utilisé, le chemin absolu des bibliothèques clientes peut être référencé via AEM servlet proxy de bibliothèque cliente :</li> 
     </ol> 
     <ul> 
      <li><code>/etc.clientlibs/cq/testandtarget/clientlibs/testandtarget/testandtarget.js</code></li> 
@@ -439,7 +443,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Remarques</strong></td> 
-   <td><p>La modification de ces bibliothèques clientes n’a jamais été prise en charge.</p> <p>Pour obtenir les catégories des bibliothèques clientes, accédez à chaque nœud cq:ClientLIbraryFolder via CRXDELite et inspectez la propriété des catégories :</p> 
+   <td><p>La modification de ces bibliothèques clientes n’a jamais été prise en charge.</p> <p>Pour obtenir les catégories de la bibliothèque cliente, consultez chaque noeud cq:ClientLIbraryFolder via CRXDELite et examinez la propriété categories :</p> 
     <ul> 
      <li><code>/libs/cq/testandtarget/clientlibs/testandtarget/testandtarget</code></li> 
      <li><code>/libs/cq/testandtarget/clientlibs/testandtarget/atjs</code></li> 
@@ -467,10 +471,10 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseils de restructuration</strong></td> 
-   <td><p>Toute utilisation personnalisée de ces bibliothèques clientes doit référencer la bibliothèque cliente par catégorie, et non par le chemin.</p> 
+   <td><p>Toute utilisation personnalisée de ces bibliothèques clientes doit faire référence à la bibliothèque cliente par catégorie, et non par chemin d’accès.</p> 
     <ol> 
-     <li>Toute référence à la bibliothèque cliente par chemin d’accès à l’emplacement précédent doit être mise à jour pour utiliser l’<a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">infrastructure de référencement des bibliothèques clientes AEM</a>.</li> 
-     <li>Si l’infrastructure de référencement des bibliothèques clientes AEM ne peut pas être utilisée, le chemin absolu des bibliothèques clientes peut être référencé via la servlet proxy des bibliothèques clientes AEM.</li> 
+     <li>Toute référence à la bibliothèque cliente par chemin d’accès à l’emplacement précédent doit être mise à jour pour utiliser <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM framework de référence de bibliothèque cliente</a>.</li> 
+     <li>Si AEM framework de référencement de bibliothèque cliente ne peut pas être utilisé, le chemin absolu des bibliothèques clientes peut être référencé via AEM servlet proxy de bibliothèque cliente.</li> 
     </ol> 
     <ul> 
      <li><code>/etc.clientlibs/wcm/foundation/clientlibs/accessibility.css</code></li> 

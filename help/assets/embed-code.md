@@ -12,14 +12,18 @@ discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
 feature: Components
 role: User
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 95%
+source-wordcount: '403'
+ht-degree: 85%
 
 ---
 
 # Intégration de la visionneuse de vidéos ou d’images Dynamic Media dans une page web {#embedding-the-video-or-image-viewer-on-a-web-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Utilisez la fonction **[!UICONTROL Code incorporé]** lorsque vous souhaitez lire une vidéo ou afficher une ressource incorporée dans une page web. Vous copiez le code incorporé dans le Presse-papiers afin de le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Code incorporé]**.
 
@@ -31,7 +35,7 @@ Consultez aussi [Diffusion d’images optimisées pour un site réactif.](respon
 
 >[!NOTE]
 >
->Le code incorporé n’est pas disponible pour la copie tant que vous n’avez pas publié la ressource sélectionnée. En outre, vous devez également publier le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini.
+>Le code incorporé ne peut pas être copié tant que vous n’avez pas publié la ressource sélectionnée. En outre, vous devez également publier le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini.
 >
 >Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
 >
@@ -53,12 +57,12 @@ Consultez aussi [Diffusion d’images optimisées pour un site réactif.](respon
 
 1. Dans le rail de gauche, sélectionnez le menu déroulant et cliquez ou appuyez ensuite sur **[!UICONTROL Visionneuses]**.
 1. Dans le rail de gauche, appuyez sur un nom de paramètre prédéfini de la visionneuse. Le paramètre de visionneuse prédéfini est appliqué à la ressource.
-1. Appuyez sur **[!UICONTROL Incorporer]**.
+1. Appuyer **[!UICONTROL Incorporer]**.
 1. Dans la boîte de dialogue **[!UICONTROL Code intégré]**, copiez l’ensemble du code dans le Presse-papiers, puis appuyez sur **[!UICONTROL Fermer]**.
 1. Collez le code intégré dans vos pages web.
 
 ## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
+HTTP/2 est le nouveau protocole Web mis à jour qui améliore la communication entre les navigateurs et les serveurs. Il permet un transfert plus rapide des informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
 Voir [Diffusion du contenu sur HTTP2](http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.

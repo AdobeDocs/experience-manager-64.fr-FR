@@ -5,14 +5,18 @@ uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 exl-id: fcdc65c9-929d-4a87-8ff7-5e3cf5711fd9
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 1%
+source-wordcount: '1076'
+ht-degree: 0%
 
 ---
 
 # Nouveautés d’AEM 6.4 Communities {#what-s-new-in-aem-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 AEM Communities offre un cadre aux entreprises pour collaborer entre leurs partenaires, clients et employés. Il transmet des capacités sociales à la structure du site web et aide les entreprises à impliquer et à transmettre des connaissances à leurs parties prenantes, afin d’améliorer la valeur de leur marque à leur manière.
 
@@ -24,7 +28,7 @@ Pour une introduction rapide aux nouvelles fonctionnalités et améliorations, r
 
 AEM Communities permet aux administrateurs de la communauté de créer des groupes et des sous-groupes sur le site des communautés, à l’aide de modèles prédéfinis, dans l’environnement de création. Ces groupes servent de sous-communautés, qui peuvent hériter de nombreuses configurations, telles que les thèmes et le style du site parent. Cependant, ces groupes peuvent différer du site parent, par exemple s’ils disposent d’un ensemble différent de modérateurs de groupe ou peuvent varier au niveau de sécurité. Ces groupes fonctionnent comme des mini-communautés indépendantes et à part entière, qui sont dotées des améliorations suivantes.
 
-### Création de groupes de différents paramètres régionaux en une seule étape {#create-multi-locale-groups-in-single-step}
+### Création de groupes multiparamètres régionaux en une seule étape {#create-multi-locale-groups-in-single-step}
 
 Dans le cadre d’un site de communauté, les groupes multilingues peuvent être créés en une seule opération. **[!UICONTROL Langue(s) de groupe de communautés disponible(s) supplémentaire(s)]** champ dans **[!UICONTROL Modèle de groupe de communautés]** , disponible lors de la création d’une [nouveau groupe de communautés](groups.md) dans un site communautaire, rend cela possible.
 
@@ -48,7 +52,7 @@ Le contenu d’apprentissage peut désormais être créé, géré et publié pou
 
 AEM 6.4 Communities offre peu d’améliorations à la modération, qui sont essentielles pour faciliter la vie quotidienne des modérateurs de la communauté.
 
-### Détection automatique du contenu indésirable  {#automatic-spam-detection}
+### Détection automatique de messages indésirables  {#automatic-spam-detection}
 
 Le nouveau moteur de détection des emails indésirables permet de filtrer le contenu non souhaité et non sollicité généré par les utilisateurs sur les sites ou groupes de la communauté. Lorsqu’elle est activée, cette fonctionnalité peut marquer un élément de contenu généré par l’utilisateur comme indésirable ou non indésirable en fonction d’un ensemble prédéfini de mots indésirables. Les modérateurs peuvent agir sur le contenu pour le refuser ou l’autoriser à apparaître sur l’instance de publication. Ces actions de modération peuvent être exécutées en ligne ou par le biais de la console de modération en bloc.
 
@@ -66,7 +70,7 @@ AEM 6.4 ajoute deux [nouveaux filtres](moderation.md#filter-rail), nommées Rép
 
 Lorsque vous sélectionnez l’état Répondu , toutes les questions qui ont reçu une réponse sont visibles par le modérateur dans la zone de contenu. En revanche, si seul l’état Non reçu est sélectionné, le modérateur verra tout le contenu (pour tous les types de contenu), à l’exception des questions auxquelles il a répondu, car la propriété responsable de la Question à laquelle il a répondu n’existe pas dans le cas de questions sans réponse et d’autres contenus tels que le sujet du forum, l’article de blog ou les commentaires.
 
-### Marquage avec signet des filtres de modération {#bookmark-moderation-filters}
+### Filtres de modération en signet {#bookmark-moderation-filters}
 
 AEM Communities permet de [Ajouter un signet aux filtres de modération prédéfinis](moderation.md#filter-rail) sur la console de modération. Ces signets enregistrés peuvent être revus ultérieurement et partagés avec d’autres utilisateurs.
 

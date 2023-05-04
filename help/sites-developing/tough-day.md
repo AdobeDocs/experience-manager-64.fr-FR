@@ -1,7 +1,7 @@
 ---
 title: Tough Day
 seo-title: Tough Day
-description: Le test Tough Day simule la charge quotidienne d’environ 1 000 auteurs dans le pire des scénarios, toutes les opérations se déroulant simultanément.
+description: Le test Tough Day simule la charge quotidienne d’environ 1 000 auteurs dans le pire des cas, avec toutes les opérations en même temps.
 seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 uuid: 7a13efe0-c455-4af0-ad7b-c39cb2479d74
 contentOwner: Guillaume Carlino
@@ -10,20 +10,24 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 95%
+source-wordcount: '1931'
+ht-degree: 77%
 
 ---
 
 # Tough Day{#tough-day}
 
-## Qu’est-ce que Tough Day 2 ? {#what-is-tough-day}
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Tough Day 2 est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. [Cet enregistrement](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) est une présentation de l’application.
+## Qu’est-ce que Tough Day 2 ? {#what-is-tough-day}
 
-## Procédure d’exécution de Tough Day 2 {#how-to-run-tough-day}
+Tough Day 2 est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. Vous pouvez regarder [cet enregistrement](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=fr) pour une présentation de l’application.
+
+## Exécution de Tough Day 2 {#how-to-run-tough-day}
 
 Téléchargez la dernière version de Tough Day 2 à partir du [référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Après avoir téléchargé l’application, vous pouvez l’extraire en fournissant le paramètre `host`. Dans l’exemple suivant, l’instance AEM s’exécute localement, de sorte que la valeur `localhost` est utilisée :
 
@@ -31,17 +35,17 @@ Téléchargez la dernière version de Tough Day 2 à partir du [référentiel 
 java -jar toughday2.jar --host=localhost
 ```
 
-La suite par défaut qui s’exécute après l’ajout des paramètres s’appelle `toughday`. Elle contient les cas d’utilisation suivants :
+La suite par défaut qui s’exécute après l’ajout des paramètres s’appelle `toughday`. Il contient les cas d’utilisation suivants :
 
-* Créer des pages et des copies en direct pour eux (y compris les déploiements)
+* Créer des pages et des Live Copies pour elles (y compris les déploiements)
 * Obtenir la page d’accueil
-* Exécuter des requêtes dans le générateur de requêtes
-* Créer des hiérarchies de ressources
+* Exécution de requêtes dans querybuilder
+* Création de hiérarchies de ressources
 * Suppression des ressources
 
-La suite contient 15 % d’actions d’écriture et 85 % d’actions de lecture.
+La suite contient 15 % d’actions d’écriture et 85 % d’actions de lecture.
 
-Pour exécuter les tests de la suite, Tough Day 2 installe son module de contenu par défaut. Cela peut être évité en définissant le paramètre `installsamplecontent` sur `false`, mais souvenez-vous que vous devez également modifier les chemins par défaut pour les tests que vous avez l’intention d’exécuter. Si le jar est exécuté sans paramètres, Tough Day 2 affiche les [informations d’aide](/help/sites-developing/tough-day.md#getting-help).
+Pour exécuter les tests de la suite, Tough Day 2 installe son package de contenu par défaut. Cela peut être évité en définissant le paramètre `installsamplecontent` sur `false`, mais souvenez-vous que vous devez également modifier les chemins par défaut pour les tests que vous avez l’intention d’exécuter. Si le jar est exécuté sans paramètres, Tough Day 2 affiche les [informations d’aide](/help/sites-developing/tough-day.md#getting-help).
 
 En règle générale, vous pouvez utiliser l’application en suivant ce modèle :
 
@@ -51,9 +55,9 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
->Tough Day 2 n’a pas d’étape de nettoyage. Par conséquent, il est recommandé d’exécuter Tough Day 2 sur une instance de transfert clonée et non sur l’instance de production principale. L’instance de transfert doit être supprimée après les tests.
+>Tough Day 2 n’a pas d’étape de nettoyage. Par conséquent, il est recommandé d’exécuter Tough Day 2 sur une instance de transfert clonée et non sur l’instance de production principale. L’instance d’évaluation doit être supprimée après les tests.
 
-### Obtenir de l’aide {#getting-help}
+### Obtention d’aide {#getting-help}
 
 Tough Day 2 offre un large éventail d’options d’aide accessibles depuis la ligne de commande. Par exemple :
 
@@ -61,7 +65,7 @@ Tough Day 2 offre un large éventail d’options d’aide accessibles depuis la
 java -jar toughday2.jar --help_full
 ```
 
-Le tableau ci-dessous décrit des paramètres d’aide pertinents.
+Dans le tableau ci-dessous, vous trouverez les paramètres d’aide pertinents.
 
 <table> 
  <tbody> 
@@ -121,11 +125,11 @@ Tough Day 2 propose des paramètres globaux qui définissent ou modifient l’e
 java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m --dryrun=true 
 ```
 
-Voici la liste des paramètres pertinents :
+Vous trouverez les paramètres appropriés dans la liste ci-dessous :
 
 | **Paramètre** | **Description** | **Valeur par défaut** | **Valeurs possibles** |
 |---|---|---|---|
-| `--installsamplecontent=<Val>` | Installe ou ignore le module de contenu Tough Day 2 par défaut. | true | true ou false |
+| `--installsamplecontent=<Val>` | Installe ou ignore le package de contenu Tough Day 2 par défaut. | true | true ou false |
 | `--protocol=<Val>` | Protocole utilisé pour l’hôte. | http | http ou https |
 | `--host=<Val>` | Nom d’hôte ou adresse IP qui sera ciblé. |  |  |
 | `--port=<Val>` | Port de l’hôte. | 4502 |  |
@@ -149,13 +153,13 @@ La seule façon d’enregistrer une configuration de test consiste à la copier 
 
 Si vous ne voulez pas utiliser la suite `toughday` par défaut, vous pouvez ajouter un test de votre choix en utilisant le paramètre `add`. Les exemples ci-dessous montrent comment ajouter le test `CreateAssetTreeTest` en utilisant des paramètres de ligne de commande ou un fichier de configuration yaml.
 
-En utilisant les paramètres de la ligne de commande :
+En utilisant les paramètres de ligne de commande :
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest
 ```
 
-En utilisant un fichier de configuration yaml :
+En utilisant un fichier de configuration yaml :
 
 ```xml
 globals:
@@ -168,13 +172,13 @@ tests:
 
 Vous pouvez également ajouter et exécuter plusieurs instances du même test, mais chaque instance doit avoir un nom unique. Les exemples ci-dessous montrent comment ajouter deux instances du même test en utilisant des paramètres de ligne de commande ou un fichier de configuration yaml.
 
-En utilisant les paramètres de la ligne de commande :
+En utilisant les paramètres de ligne de commande :
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest name=FirstAssetTree --add CreateAssetTreeTest name=SecondAssetTree
 ```
 
-En utilisant un fichier de configuration yaml :
+En utilisant un fichier de configuration yaml :
 
 ```xml
 globals:
@@ -200,13 +204,13 @@ Gardez à l’esprit que les fichiers de configuration yaml écraseront les para
 
 Les exemples ci-dessous montrent comment modifier la propriété `template` pour le test `CreatePageTreeTest` au moyen des paramètres de ligne de commande ou d’un fichier de configuration yaml.
 
-En utilisant les paramètres de la ligne de commande :
+En utilisant les paramètres de ligne de commande :
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreatePageTreeTest template=/conf/toughday-templates/settings/wcm/templates/toughday-template
 ```
 
-En utilisant un fichier de configuration yaml :
+En utilisant un fichier de configuration yaml :
 
 ```xml
 globals:
@@ -223,13 +227,13 @@ Les exemples ci-dessous montrent comment ajouter un test à une suite prédéfin
 
 Vous pouvez ajouter un nouveau test à une suite prédéfinie en utilisant le paramètre `add` et en spécifiant la suite prédéfinie ciblée.
 
-En utilisant les paramètres de la ligne de commande :
+En utilisant les paramètres de ligne de commande :
 
 ```xml
 java -jar toughday2.jar --host=localhost --suite=toughday --add CreatePageTreeTest
 ```
 
-En utilisant un fichier de configuration yaml :
+En utilisant un fichier de configuration yaml :
 
 ```xml
 globals:
@@ -243,13 +247,13 @@ Les tests existants d’une suite donnée peuvent également être reconfigurés
 
 Dans l’exemple ci-dessous, le titre de la ressource par défaut pour `CreatePageTreeTest` (nommé `UploadAsset`) est remplacé par « NewAsset ».
 
-En utilisant les paramètres de la ligne de commande :
+En utilisant les paramètres de ligne de commande :
 
 ```xml
 java -jar toughday2.jar --host=localhost --suite=toughday --config UploadAsset title=NewAsset
 ```
 
-En utilisant un fichier de configuration yaml :
+En utilisant un fichier de configuration yaml :
 
 ```xml
 globals:
@@ -263,13 +267,13 @@ tests:
 
 En outre, vous pouvez également supprimer les tests des suites prédéfinies ou des éditeurs de la configuration par défaut à l’aide du paramètre `exclude`. Notez que vous devez également spécifier le nom de la suite et le nom réel du test (pas le nom de la c`lass` de test). Le nom du test est disponible dans la propriété `name` de la classe de test. Dans l’exemple ci-dessous, le test `CreatePageTreeTest` (nommé `UploadAsset`) est supprimé de la suite toughday.
 
-En utilisant les paramètres de la ligne de commande :
+En utilisant les paramètres de ligne de commande :
 
 ```xml
 java -jar toughday2.jar --host=localhost --suite=toughday --exclude UploadAsset
 ```
 
-En utilisant un fichier de configuration yaml :
+En utilisant un fichier de configuration yaml :
 
 ```xml
 globals:
@@ -289,13 +293,13 @@ Le mode d’exécution **normal** présente deux paramètres :
 
 * `waittime` : temps d’attente entre deux exécutions de test consécutives sur le même thread. La valeur doit être exprimée en millisecondes.
 
-L’exemple ci-dessous montre comment ajouter les paramètres au moyen de la ligne de commande :
+L’exemple ci-dessous montre comment ajouter les paramètres à l’aide de la ligne de commande :
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest --runmode=normal concurrency=20
 ```
 
-ou en utilisant un fichier de configuration yaml :
+ou en utilisant un fichier de configuration yaml :
 
 ```xml
 runmode:
@@ -310,7 +314,7 @@ Le mode d’exécution **charge constante** diffère du mode d’exécution norm
 
 Le processus de sélection de test est le même pour les deux modes d’exécution et il se présente comme suit : tous les tests ont une propriété `weight` qui détermine la probabilité d’exécution dans un thread. Prenons l’exemple de deux tests, l’un avec une pondération de 5 et l’autre de 10. Dans ce cas, ce dernier a deux fois plus de chance d’être exécuté que le premier.
 
-De plus, les tests peuvent avoir une propriété `count`, ce qui limite le nombre d’exécutions à un nombre donné. Une fois ce nombre atteint, aucune autre exécution du test n’aura lieu. Toutes les instances de test en cours d’exécution se terminent selon leur configuration. L’exemple suivant montre comment ajouter ces paramètres à l’aide de la ligne de commande ou d’un fichier de configuration yaml.
+De plus, les tests peuvent avoir une propriété `count`, ce qui limite le nombre d’exécutions à un nombre donné. Une fois ce nombre atteint, aucune autre exécution du test n’aura lieu. Toutes les instances de test en cours d’exécution se terminent selon leur configuration. L&#39;exemple suivant montre comment ajouter ces paramètres en ligne de commande ou à l&#39;aide d&#39;un fichier de configuration yaml.
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20 
@@ -335,7 +339,7 @@ ou
 
 ### Exécution d’essai {#dry-run}
 
-Une analyse à sec étudie toutes les entrées données (paramètres de ligne de commande ou fichiers de configuration), les fusionne avec les valeurs par défaut, puis affiche les résultats. Elle n’exécute aucun des tests.
+Une analyse à sec étudie toutes les entrées données (paramètres de ligne de commande ou fichiers de configuration), les fusionne avec les valeurs par défaut, puis affiche les résultats. Il n’exécute aucun des tests.
 
 ```xml
 java -jar toughday2.jar --host=localhost --suite=toughday --add CreatePageTreeTest --dryrun=true
@@ -345,7 +349,7 @@ java -jar toughday2.jar --host=localhost --suite=toughday --add CreatePageTreeTe
 
 Tough Day 2 génère à la fois des métriques de test et des journaux. Pour plus de détails, lisez les sections suivantes.
 
-### Métriques de test {#test-metrics}
+### Mesures de test {#test-metrics}
 
 Tough Day 2 fait actuellement état de 9 métriques de test que vous pouvez évaluer. Mesures avec la variable **&amp;ast;** Les symboles ne sont signalés qu’après des exécutions réussies :
 
@@ -378,13 +382,13 @@ En outre, il existe deux modes de génération des mesures :
 
 L’exemple suivant montre comment configurer le paramètre `intervals`au moyen de la ligne de commande ou d’un fichier de configuration yaml.
 
-En utilisant les paramètres de la ligne de commande :
+En utilisant les paramètres de ligne de commande :
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreatePageTreeTest --publishmode type=intervals interval=10s 
 ```
 
-En utilisant un fichier de configuration yaml :
+En utilisant un fichier de configuration yaml :
 
 ```xml
 publishmode:
@@ -396,9 +400,9 @@ publishmode:
 
 ### Journalisation {#logging}
 
-Tough Day 2 crée un dossier .logs dans le répertoire où vous avez exécuté Tough Day 2. Ce dossier contient deux types de journaux :
+Tough Day 2 crée un dossier .logs dans le répertoire où vous avez exécuté Tough Day 2. Ce dossier contient deux types de journaux :
 
-* **toughday.log** : contient les messages relatifs à l’état de l’application, aux informations de débogage et aux messages d’ordre général.
-* **toughday_&lt;testname>.log** : messages liés au test spécifié.
+* **toughday.log**: contient des messages liés à l’état de l’application, des informations de débogage et des messages globaux.
+* **toughday_&lt;testname>.log**: messages liés au test spécifié.
 
 Les journaux ne sont pas remplacés, les exécutions subséquentes ajoutent des messages aux journaux existants. Les journaux ont plusieurs niveaux. Pour plus d’informations, consultez la section ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.

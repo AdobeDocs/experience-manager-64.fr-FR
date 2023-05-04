@@ -1,7 +1,7 @@
 ---
 title: Déchargeur de workflow de ressources
 seo-title: Assets Workflow Offloader
-description: Familiarisez-vous avec le déchargeur de workflow de ressources.
+description: Découvrez le déchargeur de workflow de ressources.
 seo-description: Learn about the Assets Workflow Offloader.
 uuid: d1c93ef9-a0e1-43c7-b591-f59d1ee4f88b
 contentOwner: Chiradeep Majumdar
@@ -10,18 +10,22 @@ topic-tags: content
 content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba
 exl-id: 2ca8e786-042b-44f6-ac60-834eca64f79f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 30%
+source-wordcount: '628'
+ht-degree: 3%
 
 ---
 
 # Déchargeur de workflow de ressources{#assets-workflow-offloader}
 
-Le déchargeur de workflow de ressources permet à plusieurs instances Adobe Experience Manager (AEM) Assets de réduire la charge de traitement sur l’instance principale. La charge de traitement est répartie entre l’instance principale et les différentes instances de déchargement (auxiliaires) que vous y ajoutez. La répartition de la charge de traitement des ressources augmente l’efficacité et la vitesse de traitement des ressources par AEM Assets. De plus, elle contribue à allouer des ressources dédiées pour traiter des ressources d’un type MIME particulier. Par exemple, vous pouvez réserver un nœud spécifique de votre topologie au traitement des ressources InDesign.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-## Configuration de la topologie du déchargeur {#configure-offloader-topology}
+Le déchargeur de workflow de ressources permet d’activer plusieurs instances d’Adobe Experience Manager (AEM) Assets afin de réduire la charge de traitement sur l’instance Principale (principale). La charge de traitement est répartie entre l’instance principale et les différentes instances de déchargement (worker) que vous y ajoutez. La distribution de la charge de traitement des ressources augmente l’efficacité et la vitesse avec lesquelles AEM Assets traite les ressources. En outre, il permet d’allouer des ressources dédiées pour traiter des ressources d’un type MIME particulier. Par exemple, vous pouvez allouer un noeud spécifique dans votre topologie pour traiter uniquement les ressources d’InDesign.
+
+## Configuration de la topologie de déchargement {#configure-offloader-topology}
 
 Utilisez Configuration Manager pour ajouter l’URL de l’instance principale et les noms d’hôte des instances de déchargement pour les requêtes de connexion sur l’instance principale.
 
@@ -42,9 +46,9 @@ Utilisez Configuration Manager pour ajouter l’URL de l’instance principale e
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
-1. Pour afficher les instances de déchargement connectées à l’instance principale, sélectionnez **Tools** > **Deployment** > **Topology** et appuyez/cliquez sur la vue Cluster.
+1. Pour afficher les instances de déchargement connectées à l’instance principale, accédez à **Outils** > **Déploiement** > **Topologie** et appuyez/cliquez sur la vue Cluster.
 
-## Désactivation du déchargement {#disable-offloading}
+## Désactiver le déchargement {#disable-offloading}
 
 1. Appuyez/cliquez sur le logo AEM, puis sélectionnez **Outils** > **Déploiement** > **Déchargement**. Le **Navigateur de déchargement** La page affiche les rubriques et les instances de serveur qui peuvent utiliser les rubriques.
 
@@ -76,11 +80,11 @@ Configuration des lanceurs de workflow pour utiliser **Déchargement des ressour
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
-1. Affichez le menu contextuel de la **Déchargement du workflow DAM** et choisissez **Modifier**. Vérifiez la saisie dans le champ **Rubrique de tâche** de l’onglet **Arguments génériques** de la boîte de dialogue de configuration.
+1. Affichez le menu contextuel de la **Déchargement du workflow DAM** et choisissez **Modifier**. Vérifiez l’entrée dans le **Rubrique de tâche** du champ **Arguments génériques** de la boîte de dialogue de configuration.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
-## Désactivation des lanceurs de workflow sur les instances de déchargement {#disable-the-workflow-launchers-on-the-offloader-instances}
+## Désactivez les lanceurs de workflow sur les instances de déchargement. {#disable-the-workflow-launchers-on-the-offloader-instances}
 
 Désactivez les lanceurs de workflow qui exécutent le **Ressources de mise à jour de gestion des actifs numériques** workflow sur l’instance principale.
 

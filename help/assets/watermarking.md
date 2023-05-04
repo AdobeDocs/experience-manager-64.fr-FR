@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management
 role: User,Admin
 exl-id: ed01143c-b516-44f8-aceb-ad2e3f0106b2
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 77%
+source-wordcount: '355'
+ht-degree: 60%
 
 ---
 
 # Ajoutez un filigrane à vos ressources numériques. {#watermarking}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 [!DNL Adobe Experience Manager Assets] vous permet d’ajouter un filigrane numérique aux ressources pour vérifier l’authenticité et la propriété des droits d’auteur de ces ressources. [!DNL Experience Manager Assets] prend en charge le texte à utiliser comme filigrane dans les fichiers PNG et JPEG.
 
@@ -31,10 +35,10 @@ Pour appliquer le filigrane sur les ressources, ajoutez l’étape d’ajout d�
    >
    >Placez l’étape [!UICONTROL Ajouter un filigrane] n’importe où avant l’étape [!UICONTROL Traitement de la miniature].
 
-1. Ouvrez l’étape **[!UICONTROL Ajouter un filigrane]** pour afficher ses propriétés.
-1. Sous l’onglet **[!UICONTROL Arguments]**, spécifiez des valeurs valides dans les différents champs, notamment le texte, le type de police, la taille, la couleur, l’emplacement, l’orientation, etc. Pour confirmer les modifications, cliquez sur **[!UICONTROL Terminé]**.
+1. Ouvrez le **[!UICONTROL Ajouter un filigrane]** pour afficher ses propriétés.
+1. Dans le **[!UICONTROL Arguments]** , spécifiez des valeurs valides dans les différents champs, notamment le texte, le type de police, la taille, la couleur, la position, l’orientation, etc. Pour confirmer les modifications, cliquez sur **[!UICONTROL Terminé]**.
 
-   ![Indiquer les arguments dans l’étape Ajouter un filigrane dans Assets](assets/arguments_add_watermark_aem_assets.png)
+   ![Fournir les arguments dans l’étape Ajouter un filigrane dans Assets](assets/arguments_add_watermark_aem_assets.png)
 
 1. Enregistrez le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]** avec l’étape Filigrane.
 1. Dans l’interface utilisateur d’[!DNL Experience Manager], téléchargez un exemple de ressource. Le filigrane apparaît avec la taille de police, la couleur, etc., à l’emplacement configuré aux étapes ci-dessus.

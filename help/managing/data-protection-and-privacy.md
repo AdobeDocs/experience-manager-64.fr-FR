@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: grdp, introduction
 discoiquuid: 93e71efe-c1c6-4d83-9b57-6c70f7bc0b80
 exl-id: 46ad04b1-a660-4cdd-8649-5cdb00dbcae3
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 99%
+source-wordcount: '959'
+ht-degree: 78%
 
 ---
 
 # Préparation d’Adobe Experience Manager pour les règlements sur la protection et la confidentialité des données {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!WARNING]
 >
@@ -37,7 +41,7 @@ Adobe propose de la documentation et des procédures (avec des API si disponible
 >
 >Les données d’un autre service à la demande d’Adobe, ainsi que toute demande associée d’accès à des informations personnelles, nécessiteront des actions relatives à ce service.
 >
->Pour plus d’informations, voir la section [Centre de traitement des données personnelles d’Adobe](https://www.adobe.com/privacy.html).
+>Pour plus d’informations, voir la section [Centre de traitement des données personnelles d’Adobe](https://www.adobe.com/fr/privacy.html).
 
 ## Présentation {#introduction}
 
@@ -93,9 +97,9 @@ Consultez les sections ci-dessous pour en savoir plus sur la réglementation des
 
 Consultez [Gestion des demandes de protection et de confidentialité des données pour AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
-## Souscription à la collecte de statistiques d’utilisation agrégées dans AEM {#aem-opting-into-aggregate-usage-statistics-collection}
+## AEM de la collecte de statistiques d’utilisation agrégées {#aem-opting-into-aggregate-usage-statistics-collection}
 
-Voir [Collecte de statistiques d’utilisation agrégées](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+Voir [Collecte des statistiques d’utilisation agrégées](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
 ## AEM Sites {#aem-sites}
 
@@ -120,18 +124,18 @@ Pour plus d’informations, voir :
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities accorde aux personnes concernées un droit sur la portabilité de leurs données, un droit à l’accès, ainsi qu’un droit à l’oubli à l’aide d’[API prêtes à l’emploi](/help/communities/user-ugc-management-service.md). Ces API permettent une suppression et une exportation en bloc du contenu généré par les utilisateurs, de même que la désactivation des comptes utilisateur identifiés par leur ID autorisable. Toutefois, la suppression définitive d’un compte utilisateur est réalisée par la suppression du nœud de l’utilisateur dans CRXDE Lite, ce qui satisfait la nécessité de disposer d’un moyen facile d’exclusion du système.
+AEM Communities accorde aux sujets des données le droit à la portabilité de leurs données, le droit d’accès et le droit à l’oubli au moyen de [API prêtes à l’emploi](/help/communities/user-ugc-management-service.md). Ces API permettent une suppression et une exportation en bloc du contenu généré par les utilisateurs, de même que la désactivation des comptes utilisateur identifiés par leur ID autorisable. Toutefois, la suppression définitive du compte utilisateur est réalisable par la suppression du noeud utilisateur dans CRXDE Lite, ce qui répond à la nécessité d’un opt-out facile du système.
 
-En outre, AEM Communities offre la confidentialité de par sa conception en raison de sa console de modération en masse, qui permet aux membres privilégiés de rechercher et de supprimer les contributions et les détails des utilisateurs. La console de gestion des membres permet une limitation pouvant aller jusqu’à l’interdiction d’un contributeur. De plus, elle permet aux personnes concernées de supprimer les contributions qu’elles ont écrites.
+En outre, AEM Communities offre une confidentialité par conception en raison de sa console de modération en bloc, qui permet aux membres privilégiés de rechercher et de supprimer les contributions et les détails des utilisateurs. La console de gestion des membres permet de limiter au point d’interdire un contributeur. En outre, il autorise les sujets des données à supprimer les contributions qu’ils ont créées.
 
 ## AEM Forms {#aem-forms}
 
-AEM Forms comprend des composants et des workflows qui capturent, traitent et stockent des données de manière à organiser les processus d’entreprise et à effectuer des transactions numériques. Les différents composants utilisent différents magasins de données et permettent également l’intégration avec des magasins de données personnalisés. La documentation suivante explique les procédures et les directives relatives à l’accès et à la gestion des données utilisateur afin de prendre en charge la protection des données et la confidentialité (par exemple, le RGPD ou le CCPA) pour un composant.
+AEM Forms comprend des composants et des workflows qui capturent, traitent et stockent des données pour orchestrer les processus d’entreprise et terminer les transactions numériques. Différents composants utilisent différents entrepôts de données et permettent l’intégration à des entrepôts de données personnalisés. La documentation suivante explique les procédures et les directives relatives à l’accès et à la gestion des données utilisateur afin de prendre en charge la protection des données et la confidentialité (par exemple, le RGPD ou le CCPA) pour un composant.
 
 * [Portail Formulaires](/help/forms/using/forms-portal-handling-user-data.md)
 * [Correspondence Management](/help/forms/using/correspondence-management-handling-user-data.md)
 * [Intégration à Acrobat Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
 * [Workflows basés sur Forms sur OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
-* [Workflows Forms JEE](/help/forms/using/forms-workflow-jee-handling-user-data.md) (AEM Forms JEE uniquement)
-* [Document Security](/help/forms/using/document-security-handling-user-data.md) (AEM Forms JEE uniquement)
-* [User Management](/help/forms/using/user-management-handling-user-data.md) (AEM Forms JEE uniquement)
+* [Workflows Forms JEE](/help/forms/using/forms-workflow-jee-handling-user-data.md) (AEM Forms JEE uniquement)
+* [Document Security](/help/forms/using/document-security-handling-user-data.md) (AEM Forms JEE uniquement)
+* [Gestion des utilisateurs](/help/forms/using/user-management-handling-user-data.md) (AEM Forms JEE uniquement)

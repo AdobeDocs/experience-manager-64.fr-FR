@@ -1,5 +1,5 @@
 ---
-title: Exécution d’AEM en mode Prêt pour l’exploitation
+title: Exécuter AEM en mode Prêt pour la production
 seo-title: Running AEM in Production Ready Mode
 description: Découvrez comment exécuter AEM en mode Prêt pour la production.
 seo-description: Learn how to run AEM in Production Ready Mode.
@@ -10,14 +10,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 exl-id: 2ab55a72-2eb2-49dc-8716-0a8a4d0c4b73
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 100%
+source-wordcount: '419'
+ht-degree: 80%
 
 ---
 
-# Exécution d’AEM en mode Prêt pour l’exploitation{#running-aem-in-production-ready-mode}
+# Exécuter AEM en mode Prêt pour la production{#running-aem-in-production-ready-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Avec AEM 6.1, Adobe introduit le nouveau mode d’exécution `"nosamplecontent"` visant à automatiser les étapes nécessaires pour préparer le déploiement d’une instance AEM dans un environnement d’exploitation.
 
@@ -25,7 +29,7 @@ Le nouveau mode d’exécution configure non seulement automatiquement l’insta
 
 >[!NOTE]
 >
->Puisque, pour des raisons pratiques, le mode Prêt pour la production d’AEM couvre uniquement une majorité de tâches requises pour sécuriser une instance, il est vivement conseillé de consulter la [liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) avant de passer à la publication dans votre environnement de production.
+>Étant donné que, pour des raisons pratiques, le mode AEM Prêt pour la production ne couvre que la majorité des tâches nécessaires pour sécuriser une instance, il est vivement recommandé de consulter le [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) avant de passer en ligne avec votre environnement de production.
 >
 >De plus, notez qu’exécuter AEM en mode Prêt pour la production aura pour effet de désactiver l’accès à CRXDE Lite. Si vous en avez besoin à des fins de débogage, consultez la section [Activation de CRXDE Lite dans AEM](/help/sites-administering/enabling-crxde-lite.md).
 
@@ -47,7 +51,7 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 Plus spécifiquement, les modifications de configuration suivantes seront effectuées lorsque AEM est exécuté en mode Prêt pour l’exploitation :
 
-1. Le **lot de prise en charge CRXDE** (`com.adobe.granite.crxde-support`) est désactivé par défaut dans le mode Prêt pour l’exploitation. Il peut être installé à tout moment à partir du référentiel Maven public Adobe. La version 3.0.0 est requise pour AEM 6.1.
+1. Le **lot de prise en charge CRXDE** (`com.adobe.granite.crxde-support`) est désactivé par défaut dans le mode Prêt pour l’exploitation. Il peut être installé à tout moment à partir du référentiel Maven public Adobe. La version 3.0.0 est requise pour AEM 6.1.
 
 1. Le lot **Accès aux référentiels WebDAV simple Apache Sling** (`org.apache.sling.jcr.webdav`) ne sera disponible que sur les instances de **création**.
 

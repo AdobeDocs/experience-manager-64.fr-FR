@@ -5,26 +5,30 @@ contentOwner: AG
 feature: Collaboration
 role: User
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 80%
+source-wordcount: '481'
+ht-degree: 29%
 
 ---
 
 # Partage de dossiers privés {#private-folder-sharing}
 
-Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager Assets un dossier privé qui vous est exclusivement accessible. Vous pouvez partager ce dossier privé avec d’autres utilisateurs auxquels vous attribuez différents droits. Selon le niveau de privilège que vous attribuez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager Assets un dossier privé qui vous est exclusivement accessible. Vous pouvez partager ce dossier privé avec d’autres utilisateurs et leur attribuer divers privilèges. Selon le niveau de privilège que vous attribuez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
 
 1. Dans la console Ressources, appuyez ou cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis choisissez **[!UICONTROL Dossier]** dans le menu.
 
    ![chlimage_1-411](assets/chlimage_1-411.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Ajouter un dossier]**, entrez un titre et un nom pour le dossier (facultatif), puis sélectionnez **[!UICONTROL Privé]**.
+1. Dans le **[!UICONTROL Ajouter un dossier]** , saisissez un titre et un nom (facultatif) pour le dossier, puis sélectionnez **[!UICONTROL Privé]**.
 
    ![chlimage_1-412](assets/chlimage_1-412.png)
 
-1. Cliquez/appuyez sur **[!UICONTROL Créer]**. Un dossier privé est alors créé dans l’interface utilisateur.
+1. Cliquez/appuyez sur **[!UICONTROL Créer]**. Un dossier privé est créé dans l’interface utilisateur.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
@@ -36,13 +40,13 @@ Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager A
    >
    >Le dossier n’est pas visible par les autres utilisateurs tant qu’il n’est pas partagé.
 
-1. Sélectionnez un utilisateur dans la liste **[!UICONTROL Ajouter un utilisateur]** de la page Propriétés du dossier, attribuez-lui un rôle dans le dossier privé, puis cliquez sur **[!UICONTROL Ajouter]**.
+1. Sur la page Propriétés du dossier , sélectionnez un utilisateur dans la **[!UICONTROL Ajouter un utilisateur]** , attribuez un rôle à l’utilisateur dans votre dossier privé, puis cliquez sur **[!UICONTROL Ajouter]**.
 
    ![chlimage_1-415](assets/chlimage_1-415.png)
 
    >[!NOTE]
    >
-   >Vous pouvez affecter différents rôles (tels que Éditeur, Propriétaire ou Observateur) à l’utilisateur avec lequel vous partagez le dossier. Si vous attribuez un rôle Propriétaire à l’utilisateur, l’utilisateur possède des privilèges Éditeur sur le dossier. En outre, il peut partager le dossier avec d’autres utilisateurs. Si vous affectez le rôle Éditeur, l’utilisateur peut modifier les ressources situées dans votre dossier privé. Si vous affectez le rôle Observateur, l’utilisateur ne peut que consulter les ressources du dossier privé.
+   >Vous pouvez affecter différents rôles, tels que l’éditeur, le propriétaire ou le visualisateur, à l’utilisateur avec lequel vous partagez le dossier. Si vous attribuez un rôle de propriétaire à l’utilisateur, celui-ci dispose des droits d’éditeur sur le dossier. En outre, il peut partager le dossier avec d’autres utilisateurs. Si vous attribuez un rôle d’éditeur, l’utilisateur peut modifier les ressources de votre dossier privé. Si vous attribuez un rôle de visionneuse, l’utilisateur ne peut afficher que les ressources de votre dossier privé.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Selon le rôle que vous attribuez, l’utilisateur se voit attribuer un ensemble de privilèges sur votre dossier privé lorsqu’il se connecte à [!DNL Experience Manager] Ressources.
 1. Cliquez sur **[!UICONTROL OK]** pour fermer le message de confirmation.
@@ -50,7 +54,7 @@ Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager A
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Cliquez ou appuyez sur l’icône Notification pour ouvrir la liste des notifications.
+1. Appuyez/cliquez sur l’icône Notification pour ouvrir la liste de notifications.
 
    ![chlimage_1-417](assets/chlimage_1-417.png)
 
@@ -58,4 +62,4 @@ Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager A
 
 >[!NOTE]
 >
->Pour pouvoir créer un dossier privé, vous devez disposer d’autorisations ACL en lecture et en modification au niveau du dossier parent dans lequel vous souhaitez créer un dossier privé. Si vous n’êtes pas administrateur, ces autorisations ne sont pas activées pour vous par défaut au niveau de */content/dam*. Dans ce cas, commencez par obtenir ces autorisations pour votre ID utilisateur/groupe avant d’essayer de créer des dossiers privés ou d’afficher les paramètres de dossier.
+>Pour pouvoir créer un dossier privé, vous devez disposer des autorisations de lecture et d’édition de l’ACL sur le dossier parent sous lequel vous souhaitez créer un dossier privé. Si vous n’êtes pas administrateur, ces autorisations ne sont pas activées pour vous par défaut sur */content/dam*. Dans ce cas, vous devez d’abord obtenir ces autorisations pour votre identifiant utilisateur/groupe avant de tenter de créer des dossiers privés ou d’afficher les paramètres du dossier.

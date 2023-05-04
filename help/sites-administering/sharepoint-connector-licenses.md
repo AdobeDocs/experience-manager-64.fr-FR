@@ -1,7 +1,7 @@
 ---
 title: Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector
 seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
-description: Découvrez les licences, les notices de copyright et les clauses de non-responsabilité de SharePoint Connector.
+description: Découvrez les licences, les avis de copyright et les clauses de non-responsabilité de SharePoint Connector.
 seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: fba2c8ad-c6f3-484e-87b6-ddc426f7087a
 contentOwner: User
@@ -10,20 +10,24 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
 exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 58%
 
 ---
 
 # Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-Cette section répertorie l’ensemble des licences, des notices de copyright et des clauses de non-responsabilité qui doivent être présentées explicitement avec Day JCR Connector for Microsoft SharePoint.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-## Présentation des bibliothèques Connector tierces {#overview-of-connector-rd-party-libraries}
+Cette section répertorie toutes les licences, les notices de copyright et les clauses de non-responsabilité qui doivent être explicitement indiquées en rapport avec Day JCR Connector for MS SharePoint.
 
-Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les bibliothèques de base SharePoint Connector, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les prennent en charge :
+## Présentation des bibliothèques tierces connecteurs {#overview-of-connector-rd-party-libraries}
+
+Le tableau suivant répertorie les bibliothèques tierces utilisées dans les bibliothèques principales de SharePoint Connector, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les couvrent :
 
 | Bibliothèque | Type de licence |
 |---|---|
@@ -62,9 +66,9 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les
 | xml-apis | [Apache](#apache) (contient des portions couvertes par les licences de domaine public et de logiciels W3C) |
 | XmlSchema | [Apache](#apache) |
 
-## Présentation des bibliothèques CRX tierces {#overview-of-crx-rd-party-libraries}
+## Présentation des bibliothèques tierces CRX {#overview-of-crx-rd-party-libraries}
 
-Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans CRX, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les prennent en charge :
+Le tableau suivant répertorie les bibliothèques tierces utilisées dans CRX, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les couvrent :
 
 <table> 
  <colgroup> 
@@ -154,9 +158,9 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans CRX
  </tbody> 
 </table>
 
-## Présentation des bibliothèques CQSE tierces {#overview-of-cqse-rd-party-libraries}
+## Présentation des bibliothèques tierces CQSE {#overview-of-cqse-rd-party-libraries}
 
-Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Communiqué Servlet Engine, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les prennent en charge :
+Le tableau suivant répertorie les bibliothèques tierces utilisées dans le moteur Communiqué Servlet, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les couvrent :
 
 <table> 
  <colgroup> 
@@ -214,7 +218,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
   </tr> 
   <tr> 
    <td><br /> </td> 
-   <td><a href="#w-c-software">Logiciel W3C</a></td> 
+   <td><a href="#w-c-software">Logiciels W3C</a></td> 
   </tr> 
  </tbody> 
 </table>
@@ -425,7 +429,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      limitations under the License.
 ```
 
-## Contextuel {#concurrent}
+## Concurrent {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -566,7 +570,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      implementations, and test suites thereof.
 ```
 
-## Groupe Hypersonic SQL {#hypersonic-sql-group}
+## Hypersonic SQL Group {#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES
@@ -1179,7 +1183,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      (last updated by reagle on 1999/04/99.)
 ```
 
-## Logiciel W3C {#w-c-software}
+## Logiciels W3C {#w-c-software}
 
 ```xml
      This license came from: <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>

@@ -11,14 +11,18 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
 exl-id: e4e99b9d-3023-4b9b-9c93-be04c7a871ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 100%
+source-wordcount: '1818'
+ht-degree: 98%
 
 ---
 
 # Créer des applications Flash Builder qui effectuent une authentification SSO à l’aide de jetons HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez créer une application cliente à l’aide d’un Flash Builder qui effectue l’authentification par authentification unique (SSO) à l’aide de jetons HTTP. Supposons, par exemple, que vous créiez une application web à l’aide de Flash Builder. Supposons ensuite que l’application contienne des vues différentes, où chaque vue appelle une opération AEM Forms différente. Au lieu d’authentifier un utilisateur pour chaque opération Forms, vous pouvez créer une page de connexion qui permet à un utilisateur de s’authentifier une fois. Une fois authentifié, un utilisateur peut appeler plusieurs opérations sans avoir à s’authentifier à nouveau. Par exemple, si un utilisateur s’est connecté à Workspace (ou à une autre application Forms), il n’aura plus besoin de s’authentifier.
 
@@ -128,7 +132,7 @@ L’illustration suivante fournit une représentation visuelle de l’applicatio
 
 >[!NOTE]
 >
->Remarquez qu’il existe deux packs nommés um et views. Lorsque vous créez l’application client, veillez à placer les fichiers dans les packs appropriés. Veillez également à ajouter le fichier adobe-remoting-provider.swc au chemin d’accès des classes de votre projet. (Voir [Inclure le fichier de la bibliothèque AEM Forms Flex](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
+>Remarquez qu’il existe deux packages nommés um et views. Lorsque vous créez l’application client, veillez à placer les fichiers dans les packages appropriés. Veillez également à ajouter le fichier adobe-remoting-provider.swc au chemin d’accès des classes de votre projet. (Voir [Inclure le fichier de la bibliothèque AEM Forms Flex](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
 
 ### Créer le fichier SSOStandalone.mxml {#creating-the-ssostandalone-mxml-file}
 

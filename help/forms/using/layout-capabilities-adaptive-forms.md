@@ -1,7 +1,7 @@
 ---
 title: Fonctionnalités de disposition des formulaires adaptatifs
 seo-title: Layout capabilities of adaptive forms
-description: La disposition et l’apparence des formulaires adaptatifs sur différents appareils sont déterminées par les paramètres de disposition. Comprenez les différentes dispositions et leur mode d’application.
+description: La mise en page et l’aspect des formulaires adaptatifs sur divers appareils sont régis par les paramètres de mise en page. Comprenez les différentes dispositions et leur mode d’application.
 seo-description: Layout and appearances of adaptive forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
 uuid: 7df2d234-e2e3-432a-9720-e73296424302
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -9,16 +9,20 @@ topic-tags: author
 discoiquuid: 10bf1d44-9660-44d9-b2c3-dd9a252efc3a
 feature: Adaptive Forms
 exl-id: 887e88c6-4c2b-4ef3-b268-8956fdb4535f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 89%
+source-wordcount: '1179'
+ht-degree: 57%
 
 ---
 
 # Fonctionnalités de disposition des formulaires adaptatifs {#layout-capabilities-of-adaptive-forms}
 
-Adobe Experience Manager (AEM) vous permet de créer des formulaires adaptatifs simples d’emploi qui offrent des expériences dynamiques aux utilisateurs finaux. La disposition détermine l’affichage des ressources et composants sur un formulaire adaptatif.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Adobe Experience Manager (AEM) vous permet de créer des formulaires adaptatifs simples d’utilisation qui offrent des expériences dynamiques aux utilisateurs finaux. La disposition du formulaire contrôle la manière dont les éléments ou les composants sont affichés dans un formulaire adaptatif.
 
 ## Connaissances préalables {#prerequisite-knowledge}
 
@@ -30,7 +34,7 @@ Avant de découvrir les différentes fonctionnalités de disposition des formula
 
 ## Types de disposition {#types-of-layouts}
 
-Un formulaire adaptatif vous propose les types de disposition suivants :
+Un formulaire adaptatif vous fournit les types de disposition suivants :
 
 **Disposition de panneau** : contrôle l’affichage des éléments ou des composants d’un panneau sur un appareil.
 
@@ -71,7 +75,7 @@ Cette disposition vous permet de placer plusieurs composants **[!UICONTROL Pann
 
 **Figure :** *Formulaire avec mise en page réactive, tel qu’il est affiché sur un grand écran*
 
-### Assistant : création de formulaire en plusieurs étapes, une étape à la fois {#wizard-a-multi-step-form-showing-one-step-at-a-time}
+### Assistant : formulaire à plusieurs étapes qui affiche une étape à la fois {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
 Utilisez cette disposition de panneau pour proposer une navigation guidée dans un formulaire. Vous pouvez, par exemple, l’utiliser pour capturer des informations obligatoires dans un formulaire, tout en guidant les utilisateurs pas à pas.
 
@@ -89,7 +93,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 **Figure :** *Formulaire avec assistant*
 
-### Disposition de la conception en accordéon {#layout-for-accordion-design}
+### Disposition pour la conception en accordéon {#layout-for-accordion-design}
 
 Cette disposition vous permet de placer le composant `Panel adaptive form` dans un panneau avec un style de navigation en accordéon. Cette disposition permet également de créer des panneaux reproductibles. Ces panneaux permettent d’ajouter ou de supprimer des panneaux de manière dynamique en fonction de vos besoins. Vous pouvez définir le nombre minimal et maximal de répétitions d’un panneau. Le titre du panneau peut également être déterminé de manière dynamique en fonction des informations fournies dans les éléments du panneau.
 
@@ -117,9 +121,9 @@ Cette disposition permet de placer le composant `Panel adaptive form` dans un pa
 
 ## Dispositions pour appareils mobiles {#mobile-layouts}
 
-Ces dispositions permettent de naviguer de manière conviviale sur les appareils mobiles équipés d’écrans relativement petits. Les styles Avec onglets ou Assistant sont utilisés pour naviguer dans les formulaires. L’application d’une telle disposition permet de bénéficier d’une disposition unique pour l’ensemble du formulaire.
+Les dispositions pour appareils mobiles permettent une navigation conviviale sur les appareils mobiles dotés d’écrans relativement plus petits. Les mises en page mobiles utilisent des styles de tabulation ou d’assistant pour la navigation dans les formulaires. L’application d’une disposition mobile offre une disposition unique pour l’ensemble du formulaire.
 
-Avec cette disposition, le contrôle de la navigation s’effectue à l’aide d’une barre de navigation et d’un menu de navigation. La barre de navigation affiche des icônes **&lt;** et **>** pour indiquer les étapes de navigation **suivante** et **précédente** dans le formulaire.
+Cette disposition contrôle la navigation à l’aide d’une barre de navigation et d’un menu de navigation. La barre de navigation affiche des icônes **&lt;** et **>** pour indiquer les étapes de navigation **suivante** et **précédente** dans le formulaire.
 
 Les dispositions pour appareils mobiles sont disponibles à l’emplacement `/libs/fd/af/layouts/mobile/`. Les dispositions suivantes pour appareils mobiles sont disponibles, par défaut, dans les formulaires adaptatifs.
 
@@ -131,7 +135,7 @@ Lorsque vous utilisez une disposition pour appareils mobiles, le menu de formula
 
 ### Disposition avec titres de panneau dans l’en-tête de formulaire {#layout-with-panel-titles-in-the-form-header}
 
-Cette disposition, comme son nom l’indique, affiche les titres du panneau avec la barre et le menu de navigation. Les icônes Suivant et Précédent sont également disponibles à des fins de navigation.
+Cette disposition, comme son nom l’indique, affiche les titres des panneaux avec le menu de navigation et la barre de navigation. Cette disposition fournit également les icônes Suivant et Précédent pour la navigation.
 
 ![Dispositions pour appareils mobiles avec affichage du titre du panneau dans les en-têtes de formulaire](assets/mobile_layout_with.png)
 
@@ -139,7 +143,7 @@ Cette disposition, comme son nom l’indique, affiche les titres du panneau avec
 
 ### Disposition sans titres de panneau dans l’en-tête de formulaire {#layout-without-panel-titles-in-the-form-header}
 
-Cette disposition, comme son nom l’indique, affiche uniquement le menu et la barre de navigation, sans les titres de panneau. Les icônes Suivant et Précédent sont également disponibles à des fins de navigation.
+Cette disposition, comme son nom l’indique, affiche uniquement le menu de navigation et la barre de navigation sans titre de panneau. Cette disposition fournit également les icônes Suivant et Précédent pour la navigation.
 
 ![Dispositions pour appareils mobiles sans affichage du titre du panneau dans les en-têtes de formulaire](assets/mobile_layout_without.png)
 
@@ -157,9 +161,9 @@ Les dispositions de barre d’outils sont disponibles à l’emplacement `/libs/
 
 ### Disposition par défaut pour la barre d’outils {#default-layout-for-toolbar}
 
-Cette disposition est sélectionnée par défaut lorsque vous ajoutez des boutons d’action dans un formulaire adaptatif. Lorsque vous sélectionnez cette disposition, elle est affichée pour les appareils fixes (ordinateurs de bureau) et mobiles.
+Cette disposition est sélectionnée par défaut lorsque vous ajoutez des boutons d’action dans un formulaire adaptatif. La sélection de cette disposition affiche la même disposition pour les appareils mobiles et de bureau.
 
-Vous pouvez, en outre, ajouter plusieurs barres d’outils contenant des boutons d’action configurés avec cette disposition. Un bouton d’action est associé à un contrôle de formulaire. Vous pouvez configurer les barres d’outils pour qu’elles apparaissent avant ou après le panneau.
+Vous pouvez également ajouter plusieurs barres d’outils contenant des boutons d’action configurés avec cette disposition. Un bouton d’action est associé à un contrôle de formulaire. Vous pouvez configurer les barres d’outils pour qu’elles apparaissent avant ou après un panneau.
 
 ![Affichage par défaut de la barre d’outils](assets/toolbar_layout_default.png)
 
@@ -169,9 +173,9 @@ Vous pouvez, en outre, ajouter plusieurs barres d’outils contenant des boutons
 
 Sélectionnez cette disposition pour fournir des variantes d’affichage pour les ordinateurs de bureau et les appareils mobiles.
 
-Dans le cas de la disposition pour ordinateur de bureau, vous pouvez ajouter des boutons d’action à l’aide de libellés spécifiques. Une seule barre d’outils peut être configurée avec cette disposition. Si plusieurs barres d’outils sont configurées avec cette disposition, elles se chevauchent dans le cas des appareils mobiles et une seule barre est visible. Il peut, par exemple, y avoir une barre d’outils dans la partie inférieure ou supérieure du formulaire ou encore avant ou après les panneaux du formulaire.
+Pour la disposition de bureau, vous pouvez ajouter des boutons d’action à l’aide de libellés spécifiques. Une seule barre d’outils peut être configurée avec cette disposition. Si plusieurs barres d’outils sont configurées avec cette disposition, il existe un chevauchement pour les appareils mobiles et une seule barre d’outils est visible. Par exemple, vous pouvez avoir une barre d’outils en bas ou en haut du formulaire, ou, après ou avant les panneaux du formulaire.
 
-Dans le cas de la disposition pour appareils mobiles, vous pouvez ajouter des boutons d’action avec des icônes.
+Pour la disposition pour appareils mobiles, vous pouvez ajouter des boutons d’action à l’aide d’icônes.
 
 ![Disposition fixe pour appareil mobile pour la barre d’outils](assets/toolbar_layout_mobile_fixed.png)
 

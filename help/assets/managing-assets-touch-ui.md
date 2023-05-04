@@ -6,14 +6,18 @@ feature: Asset Management,Search,Renditions,Collaboration
 role: User
 mini-toc-levels: 4
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 14633d278f1e6fe7c1a47168006b8387c150e63d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10145'
-ht-degree: 69%
+source-wordcount: '10181'
+ht-degree: 40%
 
 ---
 
 # Gérer vos ressources numériques {#managing-assets-with-the-touch-optimized-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Découvrez les différentes tâches de gestion et de modification des ressources que vous pouvez effectuer à l’aide de l’interface utilisateur optimisée pour les écrans tactiles de [!DNL Experience Manager] Ressources.
 
@@ -21,17 +25,17 @@ Cet article décrit comment gérer et modifier des ressources à l’aide de l�
 
 ## Création de dossiers  {#create-folders}
 
-Lorsque vous organisez une collection de ressources, comme toutes les images `Nature`, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. [!DNL Experience Manager] Assets ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
+Lorsque vous organisez une collection de ressources, comme toutes les images `Nature`, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. [!DNL Experience Manager] Les ressources ne nécessitent pas que vous organisiez les ressources dans des dossiers pour mieux fonctionner.
 
 >[!NOTE]
 >
 >* Partage d’un dossier de ressources de type `sling:OrderedFolder` n’est pas prise en charge lors du partage vers Marketing Cloud. Si vous souhaitez partager un dossier, ne sélectionnez pas Ordonné lors de la création du dossier.
->* Experience Manager n’autorise pas l’utilisation du mot `subassets` comme nom de dossier. Il s’agit d’un mot-clé réservé au nœud qui contient des sous-ressources pour les ressources composites. 
+>* Experience Manager n’autorise pas l’utilisation du mot `subassets` comme nom de dossier. Il s’agit d’un mot-clé réservé au nœud qui contient des sous-ressources pour les ressources composites..
 
 
 1. Dans le dossier Ressources numériques, accédez à l’emplacement où vous souhaitez créer un dossier.
 1. Dans le menu, cliquez sur **[!UICONTROL Créer]**. Sélectionnez **[!UICONTROL Nouveau dossier]**.
-1. Dans le champ **[!UICONTROL Titre]**, indiquez le nom du dossier. Par défaut, DAM utilise le titre que vous avez fourni comme nom du dossier. Une fois le dossier créé, vous pouvez remplacer le nom par défaut et entrer un autre nom de dossier.
+1. Dans le champ **[!UICONTROL Titre]**, indiquez le nom du dossier. Par défaut, DAM utilise le titre que vous avez fourni comme nom du dossier. Une fois le dossier créé, vous pouvez remplacer la valeur par défaut et spécifier un autre nom de dossier.
 1. Cliquez sur **[!UICONTROL Créer]**. Le dossier apparaît dans le dossier Ressources numériques.
 
 Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici et séparés par des espaces) :
@@ -45,11 +49,11 @@ Vous pouvez charger différents types de ressources (y compris des images, des f
 
 >[!NOTE]
 >
->Dans le mode Scene 7 de Dynamic Media, vous pouvez télécharger uniquement des ressources dont la taille de fichier est de 2 Go ou inférieure.
+>En mode Dynamic Media - Scene7, vous pouvez uniquement charger des ressources dont la taille de fichier est inférieure ou égale à 2 Go.
 
-Vous pouvez choisir de transférer des ressources vers des dossiers avec ou sans un profil de traitement attribué.
+Vous pouvez choisir de charger des ressources dans des dossiers auxquels ou sans profil de traitement est affecté.
 
-Pour les dossiers auxquels un profil de traitement est affecté, le nom du profil s’affiche sur la vignette en mode Carte. En mode Liste, le nom du profil s’affiche dans la colonne **[!UICONTROL Profil de traitement]**. Reportez-vous à la section [Profils de traitement](processing-profiles.md).
+Pour les dossiers auxquels un profil de traitement est affecté, le nom du profil s’affiche sur la vignette en mode Carte. Dans la vue Liste, le nom du profil s’affiche dans la colonne **[!UICONTROL Profil de traitement]**. Reportez-vous à la section [Profils de traitement](processing-profiles.md).
 
 Avant de charger une ressource, assurez-vous qu’elle se trouve dans une [format pris en charge](assets-formats.md).
 
@@ -65,29 +69,29 @@ Avant de charger une ressource, assurez-vous qu’elle se trouve dans une [forma
 
    Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl/Commande et sélectionnez les ressources dans la boîte de dialogue de sélecteur de fichiers. Dans iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
 
-   Vous pouvez suspendre le chargement des ressources volumineuses (dont la taille est supérieure à 500 Mo) et reprendre ultérieurement à partir de la même page. Appuyez sur l’icône **[!UICONTROL Pause]** à côté de la barre de progression qui s’affiche au début du téléchargement.
+   Vous pouvez suspendre le chargement des ressources volumineuses (dont la taille est supérieure à 500 Mo) et reprendre ultérieurement à partir de la même page. Appuyez sur le bouton **[!UICONTROL Pause]** en regard de la barre de progression qui s’affiche au début du téléchargement.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
-   Vous pouvez configurer la taille au-dessus de laquelle une ressource est considérée comme volumineuse. Par exemple, vous pouvez configurer le système de sorte qu’il considère les ressources dont la taille est supérieure à 1 000 Mo (au lieu de 500 Mo) comme des ressources volumineuses. Dans ce cas, le bouton **[!UICONTROL Pause]** figurant dans la barre de progression s’affiche lors du transfert de fichiers d’une taille supérieure à 1 000 Mo.
+   La taille au-dessus de laquelle une ressource est considérée comme une ressource volumineuse est configurable. Par exemple, vous pouvez configurer le système de sorte qu’il considère les ressources dont la taille est supérieure à 1 000 Mo (au lieu de 500 Mo) comme des ressources volumineuses. Dans ce cas, la variable **[!UICONTROL Pause]** dans la barre de progression s’affiche lorsque des ressources d’une taille supérieure à 1 000 Mo sont chargées.
 
-   Le **[!UICONTROL Pause]** n’indique pas si un fichier de plus de 1 000 Mo est chargé avec un fichier de moins de 1 000 Mo. Toutefois, si vous annulez le téléchargement de fichier inférieur à 1 000 Mo, le bouton **[!UICONTROL Pause]** apparaît.
+   Le **[!UICONTROL Pause]** n’indique pas si un fichier de plus de 1 000 Mo est chargé avec un fichier de moins de 1 000 Mo. Cependant, si vous annulez le téléchargement de fichier inférieur à 1 000 Mo, la variable **[!UICONTROL Pause]** s’affiche.
 
    Pour modifier la limite de taille, configurez la propriété `chunkUploadMinFileSize` du nœud `fileupload` dans le référentiel CRX.
 
-   Lorsque vous cliquez sur l’icône **[!UICONTROL Pause]**, elle devient une icône **[!UICONTROL Lire]**. Pour reprendre le transfert, cliquez sur l’icône **[!UICONTROL Lire.]**
+   Lorsque vous cliquez sur le bouton **[!UICONTROL Pause]** , il se change en **[!UICONTROL Play]** icône . Pour reprendre le chargement, cliquez sur le bouton **[!UICONTROL Play]** icône .
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
    Pour annuler un chargement en cours, cliquez sur le bouton `X` en regard de la barre de progression. Lorsque vous annulez l’opération de transfert, [!DNL Experience Manager] Les ressources suppriment la partie partiellement chargée de la ressource.
 
-   La possibilité de reprendre le téléchargement s’avère particulièrement utile dans les scénarios dans lesquels la bande passante est faible et le réseau dysfonctionne, car le téléchargement d’une ressource volumineuse prend un long moment. Vous pouvez suspendre l’opération de transfert et la reprendre ultérieurement lorsque la situation s’améliore. Lorsque vous reprenez le transfert, il commence au niveau où vous l’avez suspendu.
+   La possibilité de reprendre le chargement est particulièrement utile dans les scénarios à faible bande passante et les pannes de réseau, où le chargement d’une ressource volumineuse prend beaucoup de temps. Vous pouvez suspendre l’opération de chargement et continuer ultérieurement lorsque la situation s’améliore. Lorsque vous reprenez, le téléchargement commence à partir du point où vous l’avez mis en pause.
 
    Pendant l’opération de chargement, [!DNL Experience Manager] enregistre les parties de la ressource en cours de chargement sous forme de blocs de données dans le référentiel CRX. Une fois le chargement terminé, [!DNL Experience Manager] regroupe ces blocs en un seul bloc de données dans le référentiel.
 
    Pour configurer la tâche de nettoyage pour les tâches de chargement de blocs non terminées, reportez-vous à `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
-   Si vous transférez une ressource portant le même nom qu’une ressource déjà disponible à l’emplacement où vous transférez la ressource, un message d’avertissement s’affiche.
+   Si vous téléchargez une ressource portant le même nom qu’une ressource déjà disponible à l’emplacement où vous téléchargez la ressource, une boîte de dialogue d’avertissement s’affiche.
 
    Vous pouvez choisir de remplacer une ressource existante, de créer une autre version ou de garder les deux en renommant la nouvelle ressource téléchargée. Si vous remplacez une ressource existante, les métadonnées de la ressource ainsi que toute modification et historique antérieure (annotations, recadrages, etc.) sont supprimées. Si vous choisissez de conserver les deux ressources, la nouvelle ressource est renommée.
 
@@ -99,7 +103,7 @@ Avant de charger une ressource, assurez-vous qu’elle se trouve dans une [forma
    >
    >If **[!UICONTROL Informations sur les ressources]** est activé pour effectuer le suivi des impressions/clics avec Adobe Analytics, cet ID de ressource régénéré invalide les données capturées pour la ressource sur Adobe Analytics.
 
-   Si la ressource que vous chargez existe dans [!DNL Experience Manager] Ressources, **[!UICONTROL Doublons détectés]** la boîte de dialogue vous avertit que vous tentez de charger une ressource en double. La boîte de dialogue s’affiche uniquement si la valeur de somme de contrôle SHA 1 du fichier binaire des ressources existantes correspond à celle de la ressource que vous téléchargez. Dans ce cas, le nom des ressources est immatériel. En d’autres termes, la boîte de dialogue peut même s’afficher pour des ressources dont le nom diffère si la valeur SHA 1 de leur fichier binaire est identique.
+   Si la ressource que vous chargez existe dans [!DNL Experience Manager] Ressources, **[!UICONTROL Doublons détectés]** la boîte de dialogue vous avertit que vous tentez de charger une ressource en double. La boîte de dialogue s’affiche uniquement si la valeur de somme de contrôle SHA 1 du binaire de la ressource existante correspond à la valeur de somme de contrôle de la ressource que vous chargez. Dans ce cas, les noms des ressources ne sont pas significatifs. En d’autres termes, la boîte de dialogue peut même s’afficher pour les ressources portant des noms différents si les valeurs SHA 1 de leurs fichiers binaires sont identiques.
 
    >[!NOTE]
    >
@@ -109,7 +113,7 @@ Avant de charger une ressource, assurez-vous qu’elle se trouve dans une [forma
 
    Appuyer **[!UICONTROL Conserver]** pour conserver la ressource en double dans [!DNL Experience Manager] Ressources. Appuyer  **[!UICONTROL Supprimer]** pour supprimer la ressource en double que vous avez chargée.
 
-   [!DNL Experience Manager] Assets vous empêche de transférer des ressources dont le nom de fichier contient des caractères interdits. Si vous essayez de charger une ressource qui comprend les caractères interdits, [!DNL Experience Manager] Assets affiche un message d’avertissement concernant la présence de caractères interdits dans le nom de fichier et interrompt le chargement jusqu’à ce que vous supprimiez ces caractères ou utilisiez un nom autorisé.
+   [!DNL Experience Manager] Assets vous empêche de charger des ressources dont le nom de fichier contient des caractères interdits. Si vous essayez de charger une ressource qui comprend les caractères interdits, [!DNL Experience Manager] Assets affiche un message d’avertissement concernant la présence de caractères interdits dans le nom de fichier et interrompt le chargement jusqu’à ce que vous supprimiez ces caractères ou utilisiez un nom autorisé.
 
    Pour respecter des conventions d’appellation de fichiers spécifiques à votre entreprise, la variable **[!UICONTROL Chargement de ressources]** vous permet de spécifier des noms longs pour les fichiers que vous chargez.
 
@@ -141,24 +145,24 @@ Dynamic Media active le chargement par lots des ressources par le biais du serve
 
 >[!NOTE]
 >
->Dans le mode Scene 7 de Dynamic Media, vous pouvez télécharger uniquement des ressources dont la taille de fichier est de 2 Go ou inférieure.
+>En mode Dynamic Media - Scene7, vous pouvez uniquement charger des ressources dont la taille de fichier est inférieure ou égale à 2 Go.
 
 >[!NOTE]
 >
->Pour charger des ressources par FTP dans Dynamic Media - mode Scene7, installez le Feature Pack (FP) 18912 sur [!DNL Experience Manager] auteur. Contactez l’assistance clientèle Adobe pour obtenir l’accès au pack de fonctionnalités 18912 et terminer la configuration de votre compte FTP. Voir la section [Installation du pack de fonctionnalités 18912 pour la migration des ressources en bloc](/help/assets/bulk-ingest-migrate.md).
+>Pour charger des ressources par FTP dans Dynamic Media - mode Scene7, installez le Feature Pack (FP) 18912 sur [!DNL Experience Manager] auteur. Contactez l’assistance clientèle Adobe pour obtenir l’accès au pack de fonctionnalités 18912 et terminer la configuration de votre compte FTP. Voir [Installation du Feature Pack 18912 pour la migration de ressources en masse](/help/assets/bulk-ingest-migrate.md).
 >
 >Si vous utilisez le protocole FTP pour charger des ressources, les paramètres de chargement spécifiés dans [!DNL Experience Manager] sont ignorés. Des règles de traitement de fichiers telles que définies dans Dynamic Media Classic sont utilisées à la place. 
 
-**Pour télécharger des ressources via FTP, procédez comme suit :**
+**Pour télécharger des ressources via FTP**
 
-1. Sélectionnez le client FTP de votre choix, puis connectez-vous à l’aide du nom d’utilisateur et du mot de passe FTP qui vous ont été envoyés par courrier électronique. Dans le client FTP, téléchargez les fichiers et/ou dossiers vers le serveur FTP.
+1. À l’aide du client FTP de votre choix, connectez-vous au serveur FTP à l’aide du nom d’utilisateur et du mot de passe FTP que vous avez reçus de l’e-mail de mise en service. Dans le client FTP, téléchargez des fichiers ou des dossiers sur le serveur FTP.
 1. Ouvrez le [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à votre compte à l’aide des informations d’identification reçues de l’e-mail de mise en service.
-1. Appuyez ou cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
+1. Dans la barre de navigation globale, appuyez sur **[!UICONTROL Télécharger]**.
 1. Sur le **[!UICONTROL Télécharger]** , près du coin supérieur gauche, appuyez sur **[!UICONTROL Via FTP]** .
-1. Sélectionnez le dossier FTP source à utiliser pour le transfert des fichiers dans la partie gauche de la page et le dossier de destination dans la partie droite.
+1. Sur le côté gauche de la page, sélectionnez un dossier FTP à partir duquel charger les fichiers. sur le côté droit de la page, sélectionnez un dossier de destination.
 1. Dans le coin inférieur droit de la page, appuyez sur **[!UICONTROL Options de tâche]** puis définissez les options de votre choix en fonction des ressources du dossier que vous avez sélectionné.
 
-   Voir [Options de la tâche de transfert](#upload-job-options).
+   Voir [Télécharger les options de la tâche](#upload-job-options).
 
    >[!NOTE]
    >
@@ -167,63 +171,63 @@ Dynamic Media active le chargement par lots des ressources par le biais du serve
 1. Dans le coin inférieur droit du **[!UICONTROL Télécharger les options de la tâche]** boîte de dialogue, appuyez sur **[!UICONTROL Enregistrer]**.
 1. Dans le coin inférieur droit du **[!UICONTROL Télécharger]** page, appuyez sur **[!UICONTROL Envoyer le téléchargement]**.
 
-   Pour afficher la progression du téléchargement, appuyez sur **[!UICONTROL Tâches]** dans la barre de navigation globale. Le **[!UICONTROL Tâches]** affiche la progression du chargement. Vous pouvez continuer à travailler dans [!DNL Experience Manager] et revenir à tout moment à la page Tâches dans Dynamic Media Classic afin de consulter une tâche en cours.
+   Pour afficher la progression du chargement, appuyez sur dans la barre de navigation globale. **[!UICONTROL Tâches]**. Le **[!UICONTROL Tâches]** affiche la progression du chargement. Vous pouvez continuer à travailler dans [!DNL Experience Manager] et revenir à tout moment à la page Tâches dans Dynamic Media Classic afin de consulter une tâche en cours.
 
-   Pour annuler une tâche de téléchargement en cours, appuyez ou cliquez sur **[!UICONTROL Annuler]****[!UICONTROL à côté de la durée.]**
+   Pour annuler une tâche de téléchargement en cours, appuyez sur **[!UICONTROL Annuler]** en regard de **[!UICONTROL Durée]** temps.
 
 #### Options de la tâche de chargement {#upload-job-options}
 
 | Option de chargement | Sous-option | Description |
 |---|---|---|
 | Nom de la tâche |  | Le nom par défaut qui est prérempli dans le champ de texte comprend la portion du nom saisie par l’utilisateur, ainsi que l’horodatage. Vous pouvez utiliser le nom par défaut ou indiquer un nom personnalisé pour cette tâche de chargement. <br>Cette tâche, ainsi que les autres tâches de chargement et de publication, sont enregistrées sur la page Tâches, où vous pouvez vérifier leur statut. |
-| Publier après le chargement |  | Publie automatiquement les ressources que vous téléchargez. |
-| Remplacer dans un dossier, même nom de ressource de base, quelle que soit l’extension |  | Sélectionnez cette option si vous voulez que les fichiers que vous téléchargez remplacent les fichiers existants portant le même nom. Le nom de cette option peut varier en fonction des paramètres définis sous **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]** > **[!UICONTROL Télécharger dans l’application]** > **[!UICONTROL Écraser les images]**. |
+| Publier après le chargement |  | Publie automatiquement les ressources que vous chargez. |
+| Remplacer dans un dossier, même nom de ressource de base, quelle que soit l’extension |  | Sélectionnez cette option si vous souhaitez que les fichiers que vous téléchargez remplacent les fichiers existants portant le même nom. Le nom de cette option peut être différent, en fonction des paramètres définis dans **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]** > **[!UICONTROL Téléchargement vers l’application]** > **[!UICONTROL Remplacer les images]**. |
 | Décompresser des fichiers ZIP ou TAR au chargement |  |  |
 | Options de tâche |  | Appuyez/cliquez sur **[!UICONTROL Options de tâche]** pour ouvrir le [!UICONTROL Télécharger les options de la tâche] et choisissez des options qui affectent l’ensemble de la tâche de téléchargement. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour charger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Appuyez sur le bouton **[!UICONTROL Options de téléchargement par défaut]** pour ouvrir le [!UICONTROL Télécharger les options de la tâche] de la boîte de dialogue |
-|  | Quand | Sélectionnez Unique ou Périodique. Pour définir une tâche périodique, sélectionnez une option de répétition (Quotidien, Hebdomadaire, Mensuel ou Personnalisé) afin d’indiquer la fréquence souhaitée pour la tâche de transfert FTP. Indiquez ensuite les options de planification suivant vos besoins. |
-|  | Inclure les sous-dossiers | Téléchargez tous les sous-dossiers du dossier que vous avez l’intention de télécharger. Les noms du dossier et de ses sous-dossiers que vous chargez sont automatiquement renseignés dans [!DNL Experience Manager] Ressources. |
-|  | Options de recadrage | Pour recadrer manuellement une image par ses côtés, sélectionnez le menu Recadrer, puis choisissez Manuel. Indiquez ensuite le nombre de pixels à recadrer d’un seul côté ou de chaque côté de l’image. La proportion de l’image qui est rognée dépend du paramètre ppp (pixels par pouce) défini dans le fichier d’image. Par exemple, si l’image affiche 150 ppp et que vous saisissez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur** : sélectionnez l’option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**Transparence** : sélectionnez l’option Transparence.<br> **Tolérance** : faites glisser le curseur pour définir une tolérance de 0 à 1. Pour un rognage en fonction de la couleur, spécifiez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur sélectionnée dans le coin de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Notez que ces options de recadrage sont non destructives. |
-|  | Options de profils de couleurs | Sélectionnez une conversion de couleurs lorsque vous créez des fichiers optimisés utilisés pour la livraison :<ul><li>Conservation des couleurs par défaut : conserve les couleurs des images sources lorsque les images comportent des informations d’espace colorimétrique ; il n’y a aucune conversion des couleurs. Actuellement, le profil colorimétrique approprié est déjà intégré dans pratiquement toutes les images. Cependant, si une image source CMJN ne contient pas de profil colorimétrique intégré, les couleurs sont converties dans l’espace colorimétrique sRVB (Rouge Vert Bleu standard). sRVB est l’espace colorimétrique recommandé pour l’affichage d’images sur des pages web.</li><li>Conserver l’espace colorimétrique original : conserve les couleurs d’origine sans conversion des couleurs au niveau du point. Pour les images sans profil colorimétrique incorporé, toute conversion des couleurs s’effectue à l’aide des profils colorimétriques par défaut configurés dans les Paramètres de publication. Les profils de couleurs peuvent ne pas correspondre aux couleurs des fichiers créés avec cette option. Par conséquent, vous êtes invité à utiliser l’option de conservation des couleurs par défaut.</li><li>Personnaliser de > en<br> Permet d’accéder aux menus pour sélectionner un espace colorimétrique source (Convertir de) et un espace colorimétrique cible (Convertir en). Cette option avancée remplace toutes les informations de couleur incorporées dans le fichier source. Sélectionnez cette option uniquement lorsque toutes les images que vous envoyez contiennent des données de profil de couleurs incorrectes ou manquantes.</li></ul> |
-|  | Options d’édition d’images | Vous pouvez conserver les masques d’écrêtage dans les images et choisir un profil de couleurs.<br> Voir [Définition des options d’édition d’image lors du téléchargement](#setting-image-editing-options-at-upload). |
-|  | Options Postscript | Vous pouvez pixelliser les fichiers PostScript®, recadrer les fichiers, conserver les arrière-plans transparents et choisir une résolution ainsi qu’un espace colorimétrique.<br> Consultez la section [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
+|  | Quand | Sélectionnez Unique ou Récurrente. Pour définir une tâche récurrente, sélectionnez une option Répéter (Quotidienne, Hebdomadaire, Mensuelle ou Personnalisée) pour indiquer à quel moment la tâche de transfert FTP doit se répéter. Spécifiez ensuite les options de planification selon vos besoins. |
+|  | Inclure les sous-dossiers | Transférez tous les sous-dossiers dans le dossier que vous avez l’intention de charger. Les noms du dossier et de ses sous-dossiers que vous chargez sont automatiquement renseignés dans [!DNL Experience Manager] Ressources. |
+|  | Options de recadrage | Pour recadrer manuellement les bords d’une image, sélectionnez le menu Recadrer, puis choisissez Manuel. Saisissez ensuite le nombre de pixels à recadrer d’un côté ou de chaque côté de l’image. La quantité de recadrage de l’image dépend du paramètre ppi (pixels par pouce) défini dans le fichier image. Par exemple, si l’image affiche 150 ppp et que vous entrez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur** : sélectionnez l’option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**Transparence** : sélectionnez l’option Transparence.<br> **Tolérance** : faites glisser le curseur pour définir une tolérance de 0 à 1. Pour un rognage en fonction de la couleur, spécifiez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur sélectionnée dans le coin de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Notez que ces options de recadrage sont non destructives. |
+|  | Options de profil colorimétrique | Choisissez une conversion de couleurs lorsque vous créez des fichiers optimisés utilisés pour la diffusion :<ul><li>Conservation des couleurs par défaut : Conserve les couleurs de l’image source chaque fois que les images contiennent des informations sur l’espace colorimétrique ; il n’existe aucune conversion de couleur. Presque toutes les images d’aujourd’hui ont déjà un profil colorimétrique approprié incorporé. Cependant, si une image source CMJN ne contient pas de profil colorimétrique incorporé, les couleurs sont converties dans l’espace colorimétrique sRVB (Rouge Vert Bleu standard). sRVB est l’espace colorimétrique recommandé pour l’affichage des images sur les pages web.</li><li>Conserver l’espace colorimétrique d’origine : Conserve les couleurs d’origine sans conversion des couleurs au niveau du point. Pour les images sans profil colorimétrique incorporé, toute conversion de couleurs est effectuée à l’aide des profils colorimétriques par défaut configurés dans les paramètres de publication. Les profils de couleurs peuvent ne pas correspondre à la couleur des fichiers créés avec cette option. Par conséquent, nous vous recommandons d’utiliser l’option Conservation des couleurs par défaut.</li><li>Personnaliser de > à<br> Ouvre les menus pour vous permettre de choisir un espace colorimétrique Convertir à partir de et Convertir en . Cette option avancée remplace toutes les informations de couleur incorporées dans le fichier source. Sélectionnez cette option uniquement lorsque toutes les images que vous envoyez contiennent des données de profil de couleurs incorrectes ou manquantes.</li></ul> |
+|  | Options d’édition d’images | Vous pouvez conserver les masques d’écrêtage dans les images et choisir un profil de couleurs.<br> Voir [Définition des options d’édition d’images lors du téléchargement](#setting-image-editing-options-at-upload). |
+|  | Options Postscript | Vous pouvez pixelliser des fichiers PostScript®, recadrer des fichiers, conserver des arrière-plans transparents, choisir une résolution et choisir un espace colorimétrique.<br> Consultez la section [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Options Photoshop | Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, conserver les calques, définir la méthode d’attribution des noms de calque, extraire du texte et indiquer le mode d’ancrage des images dans les modèles.<br> Notez que les modèles ne sont pas pris en charge dans AEM.<br> Consultez la section [Définition des options de chargement Photoshop](#setting-photoshop-upload-options). |
-|  | Options PDF | Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, générer automatiquement un catalogue électronique, définir la résolution et choisir un espace de couleurs.<br> Notez que les catalogues électroniques ne sont pas pris en charge dans AEM. <br> Voir [Définition des options de transfert de PDF ](#setting-pdf-upload-options)<br>**Remarque**: Le nombre maximal de pages qu’un PDF peut envisager pour extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite passera à 100 pages (pour tous les PDF). Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md). |
+|  | Options de PDF | Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, générer automatiquement un catalogue électronique, définir la résolution et choisir un espace colorimétrique.<br> Notez que les catalogues électroniques ne sont pas pris en charge dans AEM. <br> Voir [Définition des options de transfert de PDF ](#setting-pdf-upload-options)<br>**Remarque**: Le nombre maximal de pages qu’un PDF peut envisager pour extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite passera à 100 pages (pour tous les PDF). Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md). |
 |  | Options Illustrator | Vous pouvez pixelliser les fichiers Adobe Illustrator®, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace colorimétrique.<br> Consultez la section [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Options eVideo | Vous pouvez transcoder un fichier vidéo en sélectionnant un paramètre vidéo prédéfini.<br> Consultez la section [Définition des options de chargement eVideo](#setting-evideo-upload-options). |
-|  | Paramètres prédéfinis de lot | Pour créer automatiquement une visionneuse d’images ou une visionneuse à 360° à partir de fichiers téléchargés, cliquez sur la colonne Actif correspondant au paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Les paramètres prédéfinis sont créés sur la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br>Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, consultez la section [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Consultez la section [Définition de paramètres prédéfinis de lot lors du chargement](#setting-batch-set-presets-at-upload). |
+|  | Paramètres prédéfinis de lot | Pour créer une visionneuse d’images ou une visionneuse à 360° à partir des fichiers chargés, cliquez sur la colonne Principale du paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Vous créez les paramètres prédéfinis sur la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br>Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, consultez la section [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Consultez la section [Définition de paramètres prédéfinis de lot lors du chargement](#setting-batch-set-presets-at-upload). |
 
 #### Définition des options d’édition d’images lors du téléchargement {#setting-image-editing-options-at-upload}
 
 Lors du chargement de fichiers d’image, y compris de fichiers AI, EPS et PSD, vous pouvez effectuer les opérations d’édition suivantes à partir de la boîte de dialogue **[!UICONTROL Charger les options de la tâche]** :
 
 * Recadrer manuellement des images par leurs côtés (voir la description dans le tableau ci-dessus).
-* Recadrer manuellement des images par leurs côtés (voir la description dans le tableau ci-dessus).
-* Choisir un profil colorimétrique (voir la description de l’option dans le tableau ci-dessus).
-* Créer un masque à partir d’un chemin de tracé.
-* Accentuer les images grâce aux options de masquage flou.
-* Masquer l’arrière-plan.
+* Recadrez manuellement les images à partir des côtés (voir la description dans le tableau ci-dessus).
+* Choisissez un profil colorimétrique (voir la description de l’option dans le tableau ci-dessus).
+* Créez un masque à partir d’un chemin de détourage.
+* Accentuer les images à l’aide des options de masquage flou
+* Présentation
 
 | Option | Sous-option | Description |
 |---|---|---|
-| Créer un masque à partir du chemin de tracé |  | Créez un masque pour l’image d’après les informations de son chemin de tracé. Cette option s’applique aux images créées à l’aide d’applications de retouche d’images dans lesquelles un chemin de tracé a été créé. |
-| Masquage flou |  | Permet d’affiner l’effet du filtre d’accentuation sur l’image sous-échantillonnée finale, en contrôlant l’intensité et le rayon de l’effet (mesuré en pixels), et un seuil de contraste qui est ignoré.<br> Cet effet utilise les mêmes options que le filtre de masquage flou de Photoshop. Contrairement à ce que suggère son nom, l’accentuation est un filtre d’accentuation. Sous Masquage flou, définissez les options de votre choix. Les options de paramètre sont décrites dans ce qui suit : |
-|  | Quantité | Contrôle l’intensité du contraste appliqué aux pixels de contour.<br> Considérez cela comme l’intensité de l’effet. La principale différence entre les valeurs de quantité de l’accentuation dans  Dynamic Media et les valeurs de quantité dans Adobe Photoshop est que Photoshop a une plage de valeurs comprise entre 1 % et 500 %. En revanche, dans Dynamic Media, la plage de valeurs est comprise entre 0,0 et 5,0. Une valeur de 5,0 équivaut environ à 500 % dans Photoshop ; une valeur de 0,9 équivaut à 90 %, etc. |
-|  | Rayon | Contrôle le rayon de l’effet. La plage de valeurs est comprise entre 0 et 250.<br> L’effet est exécuté sur tous les pixels d’une image et s’étend depuis tous les pixels dans toutes les directions. Le rayon est mesuré en pixels. Par exemple, pour obtenir un effet d’accentuation comparable dans des images de 2 000 x 2 000 pixels et de 500 x 500 pixels, définissez une valeur de rayon de deux pixels pour l’image de 2 000 x 2 000 pixels et d’un pixel pour l’image de 500 x 500 pixels. Utilisez une valeur plus élevée pour une image avec plus de pixels. |
-|  | Seuil | Le seuil est une plage de contraste qui est ignorée lorsque le filtre d’accentuation est appliqué. Cela est important, de sorte qu’aucun « bruit » ne soit introduit dans une image lorsque ce filtre est utilisé. La plage de valeurs est comprise entre 0 et 255, ce qui correspond au nombre de degrés de luminosité dans une image en niveaux de gris. 0 = noir, 128 = 50 % gris et 255 = blanc.<br> Par exemple, une valeur de seuil de 12 ignore les légères variations de luminosité de la peau pour éviter d’ajouter du bruit, tout en ajoutant un contraste sur les bords dans les zones contrastées, comme l’endroit où les cils rencontrent la peau.<br> Si, par exemple, vous disposez d’une photo du visage d’une personne, le masquage flou affecte les parties contrastées de l’image, comme l’endroit où les cils se rencontrent pour créer une zone de contraste évidente et la peau lisse elle-même. Même la peau la plus lisse affiche des variations subtiles de ses valeurs de luminosité. Si vous n’utilisez aucune valeur de seuil, le filtre accentue ces changements subtils dans les pixels de la peau. Un effet de bruit indésirable est alors créé lorsque le contraste sur les cils est augmenté, ce qui améliore la netteté.<br> Pour éviter ce problème, utilisez une valeur de seuil qui indique au filtre d’ignorer les pixels qui ne modifient pas considérablement le contraste, comme la peau lisse.<br> Dans l’image de fermeture éclair présentée plus haut, remarquez la texture en regard des fermetures. Le bruit d’une image est exposé, car les valeurs de seuil étaient trop faibles pour supprimer le bruit. |
+| Création d’un masque à partir du chemin de tracé |  | Créez un masque pour l’image en fonction des informations de son chemin de détourage. Cette option s’applique aux images créées avec des applications d’édition d’images dans lesquelles un chemin de détourage a été créé. |
+| Masquage flou |  | Permet d’affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite, en contrôlant l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré.<br> Cet effet utilise les mêmes options que le filtre Masquage flou de Photoshop. Contrairement à ce que suggère son nom, l’accentuation est un filtre d’accentuation. Sous Masquage flou, définissez les options de votre choix. Les options de paramétrage sont décrites dans les sections suivantes : |
+|  | Quantité | Contrôle l’intensité du contraste appliqué aux pixels de contour.<br> Considérez cela comme l’intensité de l’effet. La principale différence entre les valeurs de quantité de l’accentuation dans  Dynamic Media et les valeurs de quantité dans Adobe Photoshop est que Photoshop a une plage de valeurs comprise entre 1 % et 500 %. En revanche, dans Dynamic Media, la plage de valeurs est comprise entre 0,0 et 5,0. Une valeur de 5,0 est l’équivalent approximatif de 500 % dans Photoshop ; une valeur de 0,9 équivaut à 90 %, etc. |
+|  | Rayon | Contrôle le rayon de l’effet. La plage de valeurs est comprise entre 0 et 250.<br> L’effet est exécuté sur tous les pixels d’une image et s’étend de tous les pixels dans toutes les directions. Le rayon est mesuré en pixels. Par exemple, pour obtenir un effet d’accentuation similaire pour une image de 2 000 x 2 000 pixels et une image de 500 x 500 pixels, définissez un rayon de deux pixels sur l’image de 2 000 x 2 000 pixels et une valeur de rayon d’un pixel sur l’image de 500 x 500 pixels. Utilisez une valeur plus élevée pour une image avec plus de pixels. |
+|  | Seuil | Le seuil est une plage de contraste qui est ignorée lorsque le filtre d’accentuation est appliqué. Il est important de sorte qu’aucun &quot;bruit&quot; ne soit introduit dans une image lorsque ce filtre est utilisé. La plage de valeurs est comprise entre 0 et 255, ce qui correspond au nombre d’étapes de luminosité dans une image en niveaux de gris. 0=noir, 128=50 % gris et 255=blanc.<br> Par exemple, une valeur de seuil de 12 ignore les légères variations de luminosité de la peau pour éviter d’ajouter du bruit, tout en ajoutant un contraste sur les bords dans les zones contrastées, comme l’endroit où les cils rencontrent la peau.<br> Si, par exemple, vous disposez d’une photo du visage d’une personne, le masquage flou affecte les parties contrastées de l’image, comme l’endroit où les cils se rencontrent pour créer une zone de contraste évidente et la peau lisse elle-même. Même la peau la plus lisse présente des changements subtils dans les valeurs de luminosité. Si vous n’utilisez pas de valeur de seuil, le filtre accentue ces changements subtils en pixels de peau. En retour, un effet bruyant et indésirable est créé lorsque le contraste sur les cils est augmenté, ce qui améliore la netteté.<br> Pour éviter ce problème, utilisez une valeur de seuil qui indique au filtre d’ignorer les pixels qui ne modifient pas considérablement le contraste, comme la peau lisse.<br> Dans l’image de fermeture éclair présentée plus haut, remarquez la texture en regard des fermetures. Le bruit d’une image est exposé, car les valeurs de seuil étaient trop faibles pour supprimer le bruit. |
 |  | Monochrome | Sélectionnez cette option pour appliquer l’accentuation sur la luminosité de l’image (intensité).<br> Désélectionnez-la pour appliquer l’accentuation sur chaque composante de couleur séparément. |
-| Masquer l’arrière-plan. |  | Supprime automatiquement l’arrière-plan d’une image lorsque vous la téléchargez. Cette technique est utile pour attirer l’attention sur un objet précis et pour le faire ressortir dans un arrière-plan chargé. Sélectionnez cette option pour activer la fonction Masquage de l’arrière-plan et les sous-options suivantes : |
-|  | Coin | Requis.<br> Coin de l’image servant à définir la couleur d’arrière-plan à masquer.<br> Vous pouvez choisir parmi **Supérieur gauche**, **Bas et gauche**, **Supérieur droit** ou **Bas et droite**. |
-|  | Méthode de remplissage | Requis.<br> Contrôle la transparence des pixels à partir du coin que vous avez défini.<br>Vous pouvez choisir parmi les méthodes de remplissage suivantes : <ul><li>**Remplissage par diffusion** : rend transparents tous les pixels qui correspondent au coin que vous avez spécifié et qui y sont rattachés.</li><li>**Correspondance des pixels** : rend transparents tous les pixels correspondants, quel que soit leur emplacement dans l’image.</li></ul> |
-|  | Tolérance | Facultative.<br> Contrôle le degré de variation autorisé dans la couleur des pixels correspondante d’après l’emplacement du coin que vous avez défini.<br> Utilisez une valeur de 0,0 pour établir une correspondance exacte avec les couleurs des pixels ou une valeur de 1,0 pour permettre une plus grande variation. |
+| Présentation |  | Supprime automatiquement l’arrière-plan d’une image lorsque vous la chargez. Cette technique est utile pour attirer l’attention sur un objet particulier et le faire ressortir sur un arrière-plan chargé. Sélectionnez cette option pour activer la fonction Masquer l’arrière-plan et les sous-options suivantes : |
+|  | Coin | Requis.<br> Coin de l’image utilisé pour définir la couleur d’arrière-plan à masquer.<br> Vous pouvez choisir parmi **Upper Left**, **Bas à gauche**, **Upper Right** ou **Bas à droite**. |
+|  | Méthode de remplissage | Requis.<br> Contrôle la transparence des pixels à partir de l’emplacement du coin que vous définissez.<br> Vous pouvez choisir parmi les méthodes de remplissage suivantes : <ul><li>**Remplir Flood** - rend transparents tous les pixels qui correspondent au coin que vous avez spécifié et auxquels vous êtes connecté.</li><li>**Correspondance de pixel** : rend transparents tous les pixels correspondants, quel que soit leur emplacement sur l’image.</li></ul> |
+|  | Tolérance | Facultatif.<br> Contrôle la quantité de variation autorisée dans la correspondance des couleurs des pixels en fonction de l’emplacement du coin que vous avez défini.<br> Utilisez une valeur de 0,0 pour faire correspondre exactement les couleurs des pixels ou utilisez une valeur de 1,0 pour permettre la plus grande variation. |
 
 #### Définition des options de chargement PostScript et Illustrator {#setting-postscript-and-illustrator-upload-options}
 
-Lorsque vous transférez des fichiers d’image PostScript (EPS) ou Illustrator (AI), vous pouvez les formater de différentes manières. Vous pouvez pixelliser les fichiers, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace colorimétrique. Les options de formatage des fichiers PostScript et Illustrator sont disponibles dans les sections Options PostScript et Options Illustrator de la boîte de dialogue Charger les options de la tâche.
+Lorsque vous chargez des fichiers image PostScript (EPS) ou Illustrator (AI), vous pouvez les mettre en forme de différentes manières. Vous pouvez pixelliser les fichiers, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace colorimétrique. Les options de formatage des fichiers PostScript et Illustrator sont disponibles dans les sections Options PostScript et Options Illustrator de la boîte de dialogue Charger les options de la tâche.
 
 | Option | Sous-option | Description |
 |---|---|---|
-| Traitement |  | Sélectionnez **[!UICONTROL Pixelliser]** pour convertir les graphiques vectoriels du fichier au format bitmap. |
-| Conserver la transparence en arrière-plan dans l’image rendue |  | Conserve la transparence en arrière-plan du fichier. |
+| Traitement |  | Choisir **[!UICONTROL Pixelliser]** pour convertir des graphiques vectoriels dans le fichier au format bitmap. |
+| Conserver l’arrière-plan transparent dans l’image rendue |  | Maintenez la transparence en arrière-plan du fichier. |
 | Résolution |  | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier. |
 | Espace colorimétrique |  | Dans le menu Espace colorimétrique, sélectionnez l’une des options d’espace colorimétrique suivantes : |
 |  | Détecter automatiquement | Conserve l’espace colorimétrique du fichier. |
@@ -233,7 +237,7 @@ Lorsque vous transférez des fichiers d’image PostScript (EPS) ou Illustrator 
 
 #### Définition des options de chargement Photoshop {#setting-photoshop-upload-options}
 
-Les fichiers PSD (Photoshop Document) sont généralement utilisés pour créer des modèles d’image. Lorsque vous transférez un fichier PSD, vous pouvez créer automatiquement un modèle d’image à partir de celui-ci (sélectionnez l’option Créer un modèle sur l’écran Charger).
+Les fichiers PSD (Photoshop Document) sont le plus souvent utilisés pour créer des modèles d’image. Lorsque vous transférez un fichier PSD, vous pouvez créer automatiquement un modèle d’image à partir de celui-ci (sélectionnez l’option Créer un modèle sur l’écran Charger).
 
 Dynamic Media crée plusieurs images à partir d’un fichier PSD avec des calques si vous utilisez ce fichier pour créer un modèle ; il crée une image par calque.
 
@@ -245,19 +249,19 @@ Utilisez les **[!UICONTROL options de recadrage]** et de **[!UICONTROL profil de
 
 | Option | Sous-option | Description |
 |---|---|---|
-| Conserver les calques |  | Pixellise les calques du fichier PSD, le cas échéant, dans des fichiers individuels. Les calques de ces fichiers restent associés au fichier PSD. Pour les afficher, ouvrez le fichier PSD dans le mode d’affichage Détail et sélectionnez le panneau Calque. |
+| Conserver les calques |  | Pixellise les calques du PSD, le cas échéant, dans des ressources individuelles. Les calques de ces fichiers restent associés au fichier PSD. Vous pouvez les afficher en ouvrant le fichier de PSD dans la vue Détails et en sélectionnant le panneau Calque. |
 | Créer un modèle |  | Crée un modèle à partir des calques du fichier PSD. |
-| Extraire du texte |  | Extrait le texte pour permettre aux utilisateurs de rechercher une chaîne de caractères dans une visionneuse. |
+| Extraction de texte |  | Extrait le texte pour permettre aux utilisateurs de rechercher une chaîne de caractères dans une visionneuse. |
 | Étendre les calques à la taille de l’arrière-plan |  | Étend la taille des calques d’image pixellisés à celle du calque en arrière-plan. |
-| Affectation de nom de calque |  | Les calques du fichier PSD sont téléchargés comme des images distinctes. |
-|  | Nom de couche | Les images adoptent le nom de leur calque dans le fichier PSD. Par exemple, un calque nommé Étiquette de prix dans le fichier PSD d’origine devient une image nommée Étiquette de prix. Cependant, si les calques du fichier PSD portent les noms de calques Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier PSD, et non d’après leur nom de calque par défaut. |
-|  | Photoshop et numéro de couche | Nomme les images d’après leur numéro de calque dans le fichier PSD, leur nom de calque d’origine étant ignoré. Le nom des images est composé du nom de fichier Photoshop et d’un numéro de calque annexé. Par exemple, le deuxième calque d’un fichier appelé Pub printemps.psd est nommé Pub printemps_2, même s’il portait un nom personnalisé dans Photoshop. |
-|  | Photoshop et nom de couche | Nomme les images en reprenant le nom du fichier PSD suivi du nom ou du numéro de calque. Le numéro de calque est utilisé si le nom du calque dans le fichier PSD est un nom de calque Photoshop par défaut. Par exemple, un calque nommé Étiquette de prix dans un fichier PSD appelé Pub Printemps est nommé Pub Printemps_Étiquette de prix. Un calque portant le nom par défaut Calque 2 est nommé Pub Printemps_2. |
-| Ancrer |  | Indiquez le mode d’ancrage des images dans les modèles qui sont générés à partir de la composition superposée produite à partir du fichier PSD. Par défaut, l’ancrage est au centre. Un ancrage au centre permet aux images de remplacement de remplir de manière optimale le même espace, quelles que soient les proportions de l’image de remplacement. Les images qui remplacent cette image et qui présentent un aspect différent occupent le même espace lorsque le modèle est référencé et le paramètre de substitution utilisé. Changez de paramètre si votre application exige que les images de remplacement occupent l’espace alloué dans le modèle. |
+| Nom de calque |  | Les calques du fichier PSD sont téléchargés comme des images distinctes. |
+|  | Nom de calque | Nomme les images en fonction de leur nom de calque dans le fichier de PSD. Par exemple, un calque nommé Étiquette de prix dans le fichier PSD d’origine devient une image nommée Étiquette de prix. Cependant, si les noms de calque dans le fichier de PSD sont des noms de calque Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier de PSD, et non selon leur nom de calque par défaut. |
+|  | Photoshop et numéro de calque | Nomme les images en fonction de leur numéro de calque dans le fichier de PSD, en ignorant les noms de calque d’origine. Le nom des images est composé du nom de fichier Photoshop et d’un numéro de calque annexé. Par exemple, le deuxième calque d’un fichier appelé Pub printemps.psd est appelé Pub printemps_2 même s’il portait un nom autre que celui par défaut dans Photoshop. |
+|  | Photoshop et nom de calque | Nomme les images après le fichier de PSD suivi du nom ou du numéro de calque. Le numéro de calque est utilisé si le nom du calque dans le fichier PSD est un nom de calque Photoshop par défaut. Par exemple, un calque appelé Balise de prix dans un fichier de PSD nommé SpringAd est nommé Balise de prix de publicité Printemps. Un calque portant le nom par défaut Calque 2 est appelé Pub printemps_2. |
+| Ancrer |  | Indiquez le mode d’ancrage des images dans les modèles générés à partir de la composition superposée produite à partir du fichier de PSD. Par défaut, l’ancre est le centre. Une ancre centrale permet aux images de remplacement de remplir au mieux le même espace, quel que soit le rapport L/H de l’image de remplacement. Les images avec un aspect différent qui remplacent cette image, lors du référencement du modèle et de l’utilisation de la substitution des paramètres, occupent effectivement le même espace. Définissez un autre paramètre si votre application nécessite que les images de remplacement remplissent l’espace alloué dans le modèle. |
 
 #### Définition des options de chargement de PDF {#setting-pdf-upload-options}
 
-Lorsque vous transférez un fichier PDF, vous pouvez le formater de différentes manières. Vous pouvez recadrer les pages, extraire des mots de recherche, spécifier une résolution en pixels par pouce et choisir un espace colorimétrique. Les fichiers PDF contiennent souvent une marge de rognage, des traits de coupe, des repères de montage et d’autres repères d’impression. Vous pouvez éliminer ces marques sur les côtés des pages lorsque vous transférez un fichier PDF.
+Lorsque vous chargez un fichier de PDF, vous pouvez le formater de différentes manières. Vous pouvez recadrer ses pages, extraire des mots de recherche, saisir une résolution en pixels par pouce et choisir un espace colorimétrique. Les fichiers de PDF contiennent souvent une marge de rognage, des marques de recadrage, des marques d’enregistrement et d’autres marques d’imprimante. Vous pouvez éliminer ces marques sur les côtés des pages lorsque vous téléchargez un fichier PDF.
 
 Le nombre maximal de pages de PDF acceptable pour une extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite passera à 100 pages (pour tous les PDF). Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
@@ -270,19 +274,19 @@ Faites votre choix parmi les options suivantes :
 | Option | Sous-option | Description |
 |---|---|---|
 | Traitement | Pixelliser | (Par défaut) Pixellise les pages du fichier PDF et convertit les graphiques vectoriels en images bitmap. Sélectionnez cette option pour créer un catalogue électronique. |
-| Extraire | Termes de recherche | Extrait les termes du fichier PDF afin qu’ils puissent être recherchés par mot-clé dans une visionneuse de catalogue électronique. |
-|  | Liens | Extrait les liens des fichiers PDF et les convertit en zones cliquables utilisées dans une visionneuse de catalogue électronique. |
-| Générer automatiquement un catalogue électronique à partir d’un PDF de plusieurs pages |  | Crée automatiquement un catalogue électronique à partir du fichier PDF. Le catalogue électronique reprend le nom du fichier PDF que vous avez transféré (cette option n’est disponible que si vous pixellisez le fichier PDF au moment du transfert). |
-| Résolution |  | Détermine le paramètre de résolution. Ce paramètre définit le nombre de pixels affichés par pouce dans le fichier PDF. La valeur par défaut est de 150. |
-| Espace colorimétrique |  | Dans le menu Espace colorimétrique, sélectionnez un espace colorimétrique pour le fichier PDF. La plupart des fichiers PDF contiennent des images en couleurs RVB et CMJN. L’espace colorimétrique RVB est préférable pour un affichage à l’écran. |
-|  | Détecter automatiquement | Conserve l’espace colorimétrique du fichier PDF. |
+| Extraire | Mots de recherche | Extrait les mots du fichier du PDF afin que le fichier puisse être recherché par mot-clé dans une visionneuse de catalogue électronique. |
+|  | Liens | Extrait les liens des fichiers du PDF et les convertit en zones cliquables utilisées dans une visionneuse de catalogue électronique. |
+| Génération automatique d’un catalogue électronique à partir de plusieurs PDF de page |  | Crée automatiquement un catalogue électronique à partir du fichier du PDF. Le catalogue électronique est nommé d’après le fichier de PDF que vous avez chargé. (Cette option n’est disponible que si vous pixellisez le fichier du PDF au fur et à mesure de son chargement.) |
+| Résolution |  | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier du PDF. La valeur par défaut est de 150. |
+| Espace colorimétrique |  | Sélectionnez le menu Espace colorimétrique et choisissez un espace colorimétrique pour le fichier de PDF. La plupart des fichiers de PDF comportent des images en couleur RGB et CMJN. L’espace colorimétrique du RGB est préférable pour l’affichage en ligne. |
+|  | Détecter automatiquement | Conserve l’espace colorimétrique du fichier de PDF. |
 |  | Forcer comme RVB | Applique l’espace colorimétrique RVB. |
 |  | Forcer comme CMJN | Applique l’espace colorimétrique CMJN. |
 |  | Forcer comme Niveaux de gris | Applique l’espace colorimétrique Niveaux de gris. |
 
 #### Définition des options de chargement eVideo {#setting-evideo-upload-options}
 
-Vous pouvez transcoder un fichier vidéo en sélectionnant une option parmi divers paramètres vidéo prédéfinis.
+Vous pouvez transcoder un fichier vidéo en choisissant parmi divers paramètres vidéo prédéfinis.
 
 | Option | Sous-option | Description |
 |---|---|---|
@@ -300,7 +304,7 @@ Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble pa
 
 ### Chargements en continu {#streamed-uploads}
 
-Si vous chargez de nombreuses ressources, des appels d’E/S vers la variable [!DNL Experience Manager] augmente considérablement le serveur, ce qui réduit l’efficacité du chargement et peut même entraîner son expiration. [!DNL Experience Manager] Assets prend en charge le chargement de ressources en continu. Le transfert en continu réduit les E/S de disque lors de l’opération de transfert en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont transférées directement vers le référentiel. Cela permet à la fois d’accélérer le transfert de ressources volumineuses et de réduire les risques d’expiration. Le chargement en continu est activé par défaut dans [!DNL Experience Manager] Ressources.
+Si vous chargez de nombreuses ressources, des appels d’E/S vers la variable [!DNL Experience Manager] augmente considérablement le serveur, ce qui réduit l’efficacité du chargement et peut même entraîner son expiration. [!DNL Experience Manager] Assets prend en charge le chargement de ressources en continu. Le chargement en continu réduit les E/S du disque pendant l’opération de chargement en évitant le stockage des ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont directement transférées vers le référentiel. Ainsi, le temps de chargement des ressources volumineuses et la possibilité de dépassements de délai sont réduits. Le chargement en continu est activé par défaut dans [!DNL Experience Manager] Ressources.
 
 Le transfert en continu est désactivé pour [!DNL Experience Manager] s’exécutant sur le serveur JEE avec une version de servlet-api inférieure à 3.1.
 
@@ -308,7 +312,7 @@ Le transfert en continu est désactivé pour [!DNL Experience Manager] s’exéc
 
 Vous pouvez télécharger des archives ZIP comme toute autre ressource prise en charge. Les mêmes règles de nom de fichier s’appliquent aux fichiers ZIP. [!DNL Experience Manager] vous permet d’extraire une archive ZIP vers un emplacement de gestion des ressources numériques.
 
-Sélectionnez une archive ZIP à la fois, cliquez sur **[!UICONTROL Extraire l’archive]**, puis sélectionnez un dossier de destination. Sélectionnez une option pour gérer les conflits, le cas échéant. Si les ressources du fichier ZIP existent déjà dans le dossier de destination, vous pouvez sélectionner l’une des options suivantes : ignorer l’extraction, remplacer les fichiers existants, conserver les deux fichiers en attribuant un nouveau nom ou créer une nouvelle version.
+Sélectionnez une archive ZIP à la fois, cliquez sur **[!UICONTROL Extraire l’archive]**, puis sélectionnez un dossier de destination. Sélectionnez une option pour gérer les conflits, le cas échéant. Si les ressources du fichier ZIP existent déjà dans le dossier de destination, vous pouvez sélectionner l’une de ces options : ignorer l’extraction, remplacer les fichiers existants, conserver les deux ressources en renommant ou créer une nouvelle version.
 
 Une fois l’extraction terminée, [!DNL Experience Manager] vous avertit dans la zone de notification. Lorsqu’[!DNL Experience Manager] extrait le fichier ZIP, vous pouvez reprendre votre travail sans interrompre l’extraction.
 
@@ -320,7 +324,7 @@ La fonctionnalité présente certaines limites :
 
 * Si vous annulez l’extraction, les ressources déjà extraites ne sont pas supprimées.
 
-* Vous ne pouvez pas sélectionner deux fichiers ZIP simultanément et les extraire. Vous pouvez seulement extraire une archive ZIP à la fois.
+* Vous ne pouvez pas sélectionner simultanément deux fichiers ZIP et les extraire. Vous ne pouvez extraire qu’une seule archive ZIP à la fois.
 
 ## Prévisualiser des ressources {#previewing-assets}
 
@@ -331,11 +335,11 @@ La fonctionnalité présente certaines limites :
 
 1. En mode Aperçu, les options de zoom sont disponibles pour les [types d’images pris en charge](assets-formats.md#supported-raster-image-formats) (avec modification interactive).
 
-   Pour effectuer un zoom avant sur une ressource, appuyez sur **[!UICONTROL +]** (ou appuyez sur la loupe de la ressource). Pour effectuer un zoom arrière, appuyez sur **[!UICONTROL -]**. Lorsque vous effectuez un zoom avant, vous pouvez observer en détail une zone de l’image en réalisant un panoramique. La flèche **[!UICONTROL Réinitialiser le zoom]** rétablit la vue initiale.
+   Pour effectuer un zoom avant sur une ressource, appuyez sur **[!UICONTROL +]** (ou appuyez sur la loupe de la ressource). Pour effectuer un zoom arrière, appuyez sur **[!UICONTROL -]**. Lorsque vous effectuez un zoom avant, vous pouvez observer en détail une zone de l’image en réalisant un panoramique. Le **[!UICONTROL Réinitialiser le zoom]** la flèche vous ramène à la vue d’origine.
 
    ![uploadicon](assets/uploadicon.png)
 
-   Appuyez sur le bouton **[!UICONTROL Réinitialiser]** pour réinitialiser la vue à sa taille d’origine.
+   Appuyez sur le bouton **[!UICONTROL Réinitialiser]** pour rétablir la taille d’origine de la vue.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
@@ -376,26 +380,26 @@ Pour créer des balises, vous devez disposer d’une autorisation d’écriture 
 
    ![évaluations](assets/ratings.png)
 
-   Le score d’évaluation que vous affectez à la ressource s’affiche sous **[!UICONTROL Vos évaluations]**. Le score d’évaluation moyen que la ressource a reçu des utilisateurs qui ont évalué la ressource s’affiche sous **[!UICONTROL Évaluation]**. De plus, la répartition des scores d’évaluation contribuant au score d’évaluation moyen s’affiche sous **[!UICONTROL Ventilation d’évaluation]**. Vous pouvez rechercher des ressources en fonction de leur score d’évaluation moyen.
+   Le score d’évaluation que vous affectez à la ressource s’affiche sous **[!UICONTROL Vos évaluations]**. Le score d’évaluation moyen que la ressource a reçu des utilisateurs qui ont évalué la ressource s’affiche sous **[!UICONTROL Évaluation]**. En outre, la ventilation des scores d’évaluation qui contribuent au score d’évaluation moyen s’affiche sous **[!UICONTROL Ventilation des évaluations]**. Vous pouvez rechercher des ressources en fonction de scores d’évaluation moyens.
 
 1. Pour afficher les statistiques d’utilisation de la ressource, appuyez sur la **[!UICONTROL Insights]** .
 
-   Les statistiques d’utilisation comprennent les suivantes :
+   Les statistiques d’utilisation incluent :
 
-   * Le nombre de fois que la ressource a été visualisée ou téléchargée. 
-   * Les canaux/périphériques via lesquels la ressource a été utilisée.
-   * Des solutions de création où la ressource a été récemment utilisée.
+   * Nombre de fois où la ressource a été affichée ou téléchargée.
+   * Canaux/appareils par lesquels la ressource a été utilisée.
+   * Solutions de création dans lesquelles la ressource a été récemment utilisée.
 
    Pour plus d’informations, reportez-vous à la section [Informations sur les ressources](touch-ui-asset-insights.md).
 
 1. Appuyez sur **[!UICONTROL Enregistrer et fermer]**.
-1. Accédez à l’IU Assets. Les propriétés de métadonnées modifiées, notamment le titre, la description, les évaluations, etc., sont affichées sur la carte de la ressource en mode Carte et sous les colonnes pertinentes en mode Liste.
+1. Accédez à l’interface utilisateur d’Assets. Les propriétés de métadonnées modifiées, notamment le titre, la description, les évaluations, etc., sont affichées sur la carte de la ressource en mode Carte et sous les colonnes pertinentes en mode Liste.
 
 ## Copie de ressources {#copying-assets}
 
-Lorsque vous copiez une ressource ou un dossier, l’intégralité de la ressource ou le dossier sont copiés, avec la structure du contenu. Une ressource copiée ou un dossier sont dupliqués à l’emplacement cible. La ressource stockée à l’emplacement source n’est pas modifiée.
+Lorsque vous copiez une ressource ou un dossier, l’intégralité de la ressource ou du dossier est copiée, ainsi que sa structure de contenu. Une ressource ou un dossier copié est dupliqué à l’emplacement cible. La ressource à l’emplacement source n’est pas modifiée.
 
-Quelques attributs uniques à une copie spécifique d’une ressource ne sont pas reportés. Voici quelques exemples :
+Certains attributs propres à une copie spécifique d’une ressource ne sont pas transférés. Voici quelques exemples :
 
 * ID de la ressource, date et heure de création, versions et historique des versions. Certaines de ces propriétés sont indiquées par les propriétés `jcr:uuid`, `jcr:created` et `cq:name`.
 
@@ -429,7 +433,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 ## Déplacement ou changement du nom des ressources {#moving-or-renaming-assets}
 
-Lorsque vous déplacez des ressources (ou des dossiers) vers un autre emplacement, les ressources (ou dossiers) ne sont pas dupliquées, contrairement à lors de la copie de la ressource. Les ressources (ou les dossiers) sont placés à l’emplacement cible et sont supprimés de l’emplacement source. Vous pouvez également renommer la ressource lorsque vous la déplacez vers le nouvel emplacement. Si vous déplacez une ressource publiée vers un autre emplacement, vous avez la possibilité de la republier. Par défaut, l’opération de déplacement sur une ressource publiée annule automatiquement sa publication. La ressource déplacée est republiée si l’auteur sélectionne la variable [!UICONTROL Republier] lors du déplacement de la ressource.
+Lorsque vous déplacez des ressources (ou des dossiers) vers un autre emplacement, les ressources (ou dossiers) ne sont pas dupliquées, contrairement à lors de la copie de la ressource. Les ressources (ou les dossiers) sont placés à l’emplacement cible et sont supprimés de l’emplacement source. Vous pouvez également renommer la ressource lorsque vous la déplacez vers le nouvel emplacement. Si vous déplacez une ressource publiée vers un autre emplacement, vous avez la possibilité de la republier. Par défaut, l’opération de déplacement sur une ressource publiée la dépublie automatiquement. La ressource déplacée est republiée si l’auteur sélectionne la variable [!UICONTROL Republier] lors du déplacement de la ressource.
 
 ![Vous pouvez republier une ressource déjà publiée lors de son déplacement.](assets/republish-on-move.png)
 
@@ -453,8 +457,8 @@ Pour déplacer des ressources ou des dossiers :
    * Cliquez sur **[!UICONTROL Annuler]** pour arrêter le processus.
    >[!NOTE]
    >
-   >* Vous pouvez attribuer le même nom à la ressource si aucune autre ressource portant ce nom n’existe dans le nouvel emplacement. Cependant, vous devez utiliser un nouveau nom si vous déplacez la ressource vers un emplacement dans lequel une ressource portant le même nom existe. Si vous utilisez le même nom, le système génère automatiquement une variante du nom. Par exemple, si votre ressource porte le nom Carré, le système génère le nom Carré1 pour sa copie.
-   >* Lors de l’attribution d’un nouveau nom à un fichier, aucun espace n’est autorisé dans le nom.
+   >* Vous pouvez spécifier le même nom pour la ressource si aucune ressource portant ce nom n’existe au nouvel emplacement. Cependant, vous devez utiliser un nom différent si vous déplacez la ressource vers un emplacement où il existe une ressource portant le même nom. Si vous utilisez le même nom, le système génère automatiquement une variante du nom. Par exemple, si votre ressource porte le nom Carré, le système génère le nom Carré1 pour sa copie.
+   >* Lors du changement de nom, le nom du fichier ne contient pas d’espace.
 
 
 1. Dans la boîte de dialogue **[!UICONTROL Sélectionner la destination]**, procédez comme suit :
@@ -478,7 +482,7 @@ Pour déplacer des ressources ou des dossiers :
 
 ### Déplacement de ressources à l’aide de l’opération Glisser {#move-using-drag}
 
-Vous pouvez déplacer des ressources (ou des dossiers) vers un dossier frère en les faisant glisser vers l’emplacement cible, au lieu d’utiliser l’option [!UICONTROL Déplacer] dans l’interface utilisateur. Toutefois, cette opération n’est possible que dans le mode Liste.
+Vous pouvez déplacer des ressources (ou des dossiers) vers un dossier frère en les faisant glisser vers l’emplacement cible, au lieu d’utiliser l’option [!UICONTROL Déplacer] dans l’interface utilisateur. Toutefois, cette opération n’est possible que dans la vue Liste.
 
 Le déplacement de ressources par glisser-déposer n’ouvre pas l’assistant [!UICONTROL Déplacer une ressource], vous n’avez par conséquent pas la possibilité de renommer les ressources lors du déplacement. En outre, les ressources déjà publiées sont republiées lors de leur déplacement par glisser-déposer, sans approbation préalable de la republication.
 
@@ -524,7 +528,7 @@ Le déplacement de ressources par glisser-déposer n’ouvre pas l’assistant [
 
    Vous pouvez configurer les dimensions du rendu à afficher dans la page de détails d’une ressource image ou vidéo. Selon les dimensions que vous spécifiez, [!DNL Experience Manager] Assets affiche le rendu avec les dimensions exactes ou les plus proches.
 
-   Pour configurer les dimensions de rendu d’une image au niveau des détails de la ressource, recouvrez la propriété **[!UICONTROL renditionpicker]** node `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` et configurez la valeur de la propriété width . Configurez la propriété **[!UICONTROL size (Long) in KB]** (taille (Longueur) en Ko) à la place de la largeur pour personnaliser le rendu dans la page des détails de la ressource selon la taille de l’image. Pour une personnalisation dépendant de la taille, la propriété **[!UICONTROL preferOriginal]** affecte les préférences à l’image initiale si la taille du rendu correspondant est supérieure à celle de l’image initiale.
+   Pour configurer les dimensions de rendu d’une image au niveau des détails de la ressource, recouvrez la propriété **[!UICONTROL renditionpicker]** node `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` et configurez la valeur de la propriété width . Configurez la propriété **[!UICONTROL size (Long) in KB]** (taille (Longueur) en Ko) à la place de la largeur pour personnaliser le rendu dans la page des détails de la ressource selon la taille de l’image. Pour une personnalisation basée sur la taille, la propriété **[!UICONTROL preferOriginal]** attribue une préférence à l’original si la taille du rendu associé est supérieure à celle de l’original.
 
    De même, vous pouvez personnaliser la variable **[!UICONTROL Annotation]** image de page en superposant `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
@@ -542,9 +546,9 @@ Pour plus d’informations sur les sous-ressources, voir [gestion des sous-resso
 
 Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource.
 
-De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvrement afin d’empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
+Désactivez également le bouton Forcer la suppression à l’aide d’une superposition afin d’empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
 
-Pour pouvoir supprimer une ressource, vous devez disposer des autorisations appropriées dans la gestion des actifs numériques/ressource. Si vous disposez uniquement d’autorisations de modification, vous pourrez seulement modifier les métadonnées de la ressource et ajouter des annotations à cette dernière. Toute suppression s’avérera impossible.
+Pour pouvoir supprimer une ressource, vous devez disposer des autorisations appropriées dans la gestion des actifs numériques/ressource. Si vous disposez uniquement des autorisations de modification, vous pouvez uniquement modifier les métadonnées de la ressource et ajouter des annotations à la ressource. Cependant, vous ne pouvez pas supprimer la ressource ou ses métadonnées.
 
 **Pour supprimer des ressources**:
 
@@ -574,31 +578,31 @@ Voir [Téléchargement de ressources à partir d’AEM](download-assets-from-aem
 
 ## Publication et annulation de la publication de ressources {#publish-assets}
 
-Après avoir chargé, traité ou modifié vos ressources sur l’auteur [!DNL Experience Manager], vous publiez la ressource sur le serveur de publication. La publication rend la ressource disponible publiquement. L’action d’annulation de publication a supprimé la ressource du serveur de publication, mais pas du serveur auteur.
+Après avoir chargé, traité ou modifié vos ressources sur l’auteur [!DNL Experience Manager], vous publiez la ressource sur le serveur de publication. La publication rend la ressource disponible publiquement. L’action de dépublication a supprimé la ressource du serveur de publication, mais pas du serveur auteur.
 
 Pour plus d’informations spécifiques à [!DNL Dynamic Media], consultez la section [Publication de ressources  [!DNL Dynamic Media] ](publishing-dynamicmedia-assets.md).
 
-1. Accédez à l’emplacement de la ressource ou du dossier de ressources que vous souhaitez publier ou que vous souhaitez supprimer dans l’environnement de publication (annuler la publication).
+1. Accédez à l’emplacement de la ressource ou du dossier de ressources que vous souhaitez publier ou dépublier dans l’environnement de publication (dépublication).
 
 1. Sélectionnez la ressource ou le dossier dont vous souhaitez annuler la publication, puis cliquez sur **[!UICONTROL Gérer la publication]** ![option gérer la publication](assets/do-not-localize/globe-publication.png) dans la barre d’outils. Pour publier rapidement, vous pouvez également sélectionner l’option **[!UICONTROL Publication rapide]** dans la barre d’outils. Si le dossier que vous souhaitez publier comprend un sous-dossier vide, ce dernier n’est pas publié.
 
-1. Sélectionnez l’option **[!UICONTROL Modifier]** ou **[!UICONTROL Annuler la publication]** selon vos besoins.
+1. Sélectionnez l’option **[!UICONTROL Modifier]** ou **[!UICONTROL Dépublier]** selon vos besoins.
 
-   ![Action Annuler la publication](assets/unpublish_action.png)
-   *Figure : options Publier et Annuler la publication et option de planification.*
+   ![Action Dépublier](assets/unpublish_action.png)
+   *Figure : options Publier et Dépublier, et option de planification.*
 
 1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou sélectionnez **[!UICONTROL Plus tard]** pour planifier l’action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]**. Cliquez sur **[!UICONTROL Suivant]**.
 
-1. Lors d’une publication, si la ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’Assistant. Seules les références qui ne sont pas publiées ou modifiées depuis la dernière publication s’affichent. Choisissez les références que vous souhaitez publier.
+1. Lors d’une publication, si la ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’Assistant. Seules les références qui ont été dépubliées ou modifiées depuis la dernière publication s’affichent. Choisissez les références que vous souhaitez publier.
 
-1. Lors de l’annulation de la publication, si une ressource fait référence à d’autres ressources, sélectionnez les références dont vous souhaitez annuler la publication. Cliquez sur **[!UICONTROL Annuler la publication]**. Dans la boîte de dialogue de confirmation, cliquez sur **[!UICONTROL Annuler]** pour arrêter l’action ou sur **[!UICONTROL Annuler la publication]** pour confirmer que les ressources doivent être dépubliées à la date spécifiée.
+1. Lors de la dépublication, si une ressource fait référence à d’autres ressources, sélectionnez les références que vous souhaitez dépublier. Cliquez sur **[!UICONTROL Dépublier]**. Dans la boîte de dialogue de confirmation, cliquez sur **[!UICONTROL Annuler]** pour arrêter l’action ou sur **[!UICONTROL Dépublier]** pour confirmer que les ressources doivent être dépubliées à la date spécifiée.
 
-Gardez à l’esprit les limites et conseils suivants liés à la publication ou à l’annulation de la publication de ressources ou de dossiers :
+Gardez à l’esprit les limites et conseils suivants liés à la publication ou la dépublication de ressources ou de dossiers :
 
 * L’option [!UICONTROL Gérer la publication] n’est disponible que pour les comptes d’utilisateurs disposant d’autorisations de réplication.
-* Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références car elles peuvent être référencées par d’autres ressources publiées.
+* Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez de dépublier les références, car elles peuvent être référencées par d’autres ressources publiées.
 * Les dossiers vides ne sont pas publiés.
-* Si vous publiez une ressource qui est en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez attendre la fin du traitement avant de publier ou republier la ressource une fois le traitement terminé.
+* Si vous publiez une ressource en cours de traitement, seul le contenu d’origine est publié. Les rendus sont absents. Attendez que le traitement soit terminé, puis publiez ou republiez la ressource une fois le traitement terminé.
 
 ## Création d’un groupe d’utilisateurs fermé {#closed-user-group}
 
@@ -613,18 +617,18 @@ Les groupes d’utilisateurs fermés sont un moyen supplémentaire de restreindr
 
    ![add_user](assets/add_user.png)
 
-1. Pour afficher un écran de connexion lorsque les utilisateurs accèdent au dossier, sélectionnez l’option **[!UICONTROL Activer]**. Ensuite, sélectionnez le chemin de la page de connexion dans AEM et enregistrez les modifications.
+1. Pour afficher un écran de connexion lorsque les utilisateurs accèdent au dossier, sélectionnez l’option **[!UICONTROL Activer]**. Sélectionnez ensuite le chemin d’accès à une page de connexion dans AEM, puis enregistrez les modifications.
 
    ![login_page](assets/login_page.png)
 
    Si vous ne spécifiez pas le chemin d’une page de connexion, [!DNL Experience Manager] affiche la page de connexion par défaut dans l’instance de publication.
 
-1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
+1. Publiez le dossier, puis essayez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
 1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’[!DNL Experience Manager] vous a authentifié.
 
 ## Recherche de ressources {#searching-assets}
 
-Les recherches de base sont décrites dans la section [Rechercher et filtrer. ](/help/sites-authoring/search.md#search-and-filter) Utilisez la variable **[!UICONTROL Rechercher]** pour rechercher des ressources, des balises et des métadonnées. Vous pouvez rechercher des parties d’une chaîne en utilisant le caractère générique astérisque. En outre, vous pouvez personnaliser la variable **[!UICONTROL Rechercher]** panneau à l’aide de [Facettes de recherche](search-facets.md).
+La recherche de base est présentée dans la section [Recherche et filtrage](/help/sites-authoring/search.md#search-and-filter) . Utilisez la variable **[!UICONTROL Rechercher]** pour rechercher des ressources, des balises et des métadonnées. Vous pouvez rechercher des parties d’une chaîne à l’aide de l’astérisque générique. En outre, vous pouvez personnaliser la variable **[!UICONTROL Rechercher]** panneau à l’aide de [Facettes de recherche](search-facets.md).
 
 ![filters_panel](assets/filters_panel.png)
 
@@ -657,9 +661,9 @@ Pour plus d’informations, voir [Affichage et sélection des ressources](/help/
 
 ## Modifier les images {#editing-images}
 
-Les outils de modification dans la [!DNL Experience Manager] L’interface Assets vous permet d’effectuer de petites tâches de modification sur les ressources d’image. Vous pouvez recadrer les images, les faire pivoter, les retourner et effectuer d’autres tâches de modification. Vous pouvez également ajouter des zones cliquables aux ressources.
+Les outils de modification dans la [!DNL Experience Manager] L’interface Assets vous permet d’effectuer de petites tâches de modification sur les ressources d’image. Vous pouvez recadrer, faire pivoter, retourner et effectuer d’autres tâches de modification sur les images. Vous pouvez également ajouter des zones cliquables aux ressources.
 
-La modification d’images est prise en charge pour les fichiers aux formats suivants :
+La modification d’images est prise en charge pour les fichiers aux formats suivants :
 
 * BMP
 * GIF
@@ -670,7 +674,7 @@ Pour certains composants, **[!UICONTROL Plein écran]** Le mode comporte d’aut
 
 Pour modifier un fichier TXT, définissez **[!UICONTROL Externalisateur de lien Day CQ]** dans Configuration Manager.
 
-Vous pouvez également ajouter des zones cliquables à l’aide de l’éditeur d’image. Pour plus d’informations, voir [Ajout de zones cliquables](image-maps.md).
+Vous pouvez également ajouter des zones cliquables à l’aide de l’éditeur d’images. Pour plus d’informations, voir [Ajout de zones cliquables](image-maps.md).
 
 **Pour modifier des images**:
 
@@ -715,22 +719,22 @@ Vous pouvez également ajouter des zones cliquables à l’aide de l’éditeur 
 
 Le **[!UICONTROL Chronologie]** vous permet d’afficher divers événements pour un élément sélectionné, tels que des workflows principaux pour une ressource, des commentaires, des annotations, des journaux d’activité et des versions.
 
-Dans la [console Collections](managing-collections-touch-ui.md#navigating-the-collections-console), la liste **[!UICONTROL Tout afficher]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la chronologie ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous accédez à l’intérieur des collections.
+Dans la [console Collections](managing-collections-touch-ui.md#navigating-the-collections-console), la liste **[!UICONTROL Tout afficher]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la chronologie ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous naviguez dans l’une des collections.
 
 **[!UICONTROL Chronologie]** contient plusieurs [options spécifiques aux fragments de contenu](content-fragments-managing.md#timeline-for-content-fragments); cette fonctionnalité requiert [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) ou plus tard.
 
 **Pour utiliser la chronologie**:
 
-1. Ouvrez la page Ressource de la ressource ou sélectionnez cette dernière dans l’IU Assets.
+1. Ouvrez la page Ressource d’une ressource ou sélectionnez-la dans l’interface utilisateur d’Assets.
 1. Appuyez sur le bouton **[!UICONTROL Navigation globale]** et choisissez **[Chronologie]** dans la liste.
 
    ![chronologie](assets/timeline.png)
 
-1. Dans la liste qui s’affiche, utilisez l’option **[!UICONTROL Tout afficher]** pour filtrer les résultats selon les commentaires, les versions, les workflows et les activités.
+1. Dans la liste qui s’affiche, utilisez la méthode **[!UICONTROL Tout afficher]** pour filtrer les résultats en fonction des commentaires, versions, workflows et activités.
 
    ![timeline_options](assets/timeline_options.png)
 
-## Ajouter des annotations {#annotating}
+## Ajout d’annotations {#annotating}
 
 Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketing la possibilité de collaborer et de laisser des commentaires sur des ressources.
 
@@ -758,7 +762,7 @@ Vous pouvez également ajouter des annotations à une collection. Toutefois, si 
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-1. Pour signaler une annotation à un utilisateur, indiquez l’adresse électronique de l’utilisateur et ajoutez le commentaire. Par exemple, pour informer Aaron McDonald d’une annotation, saisissez @aa. Des conseils à l’usage des utilisateurs correspondant s’affichent dans une liste. Sélectionnez l’adresse électronique d’Aaron dans la liste pour le marquer avec le commentaire. De même, vous pouvez taguer d’autres personnes à n’importe quel emplacement de l’annotation, avant ou après celle-ci.
+1. Pour informer un utilisateur d’une annotation, indiquez l’adresse électronique de l’utilisateur et ajoutez le commentaire. Par exemple, pour informer Aaron McDonald d’une annotation, saisissez @aa. Des conseils à l’intention de tous les utilisateurs correspondants s’affichent dans une liste. Sélectionnez l’adresse électronique d’Aaron dans la liste pour le marquer avec le commentaire. De même, vous pouvez taguer d’autres personnes à n’importe quel emplacement de l’annotation, avant ou après celle-ci.
 
    >[!NOTE]
    >
@@ -817,11 +821,11 @@ Vous pouvez également choisir de n’imprimer que les annotations ou le statut 
 >
 >Vous pouvez sélectionner plusieurs annotations lors de l’impression de la ressource annotée au format PDF.
 
-Il se peut que les annotations trop longues ne s’affichent pas correctement dans le fichier PDF. Pour un rendu optimal, Adobe recommande de limiter la taille des annotations à 50 mots.
+Les annotations longues peuvent ne pas s’afficher correctement dans le fichier du PDF. Pour un rendu optimal, Adobe recommande de limiter les annotations à 50 mots.
 
 Pour imprimer les annotations et l’état de révision, appuyez sur le bouton **[!UICONTROL Imprimer]** et suivez les instructions de l’assistant. L’icône **[!UICONTROL Imprimer]** ne s’affiche dans la barre d’outils que lorsque la ressource est associée à au moins une annotation ou un statut de révision.
 
-1. Ouvrez la page d’aperçu d’une ressource à partir de l’interface utilisateur d’Assets.
+1. Dans l’interface utilisateur d’Assets, ouvrez la page d’aperçu d’une ressource.
 1. Utilisez l’une des méthodes suivantes :
 
    * Pour imprimer toutes les annotations et l’état de révision, passez à l’étape 4.
@@ -857,11 +861,11 @@ Pour imprimer les annotations et l’état de révision, appuyez sur le bouton *
    >
    >Si la ressource contient des sous-ressources, vous pouvez les imprimer avec leurs annotations spécifiques.
 
-   Pour modifier l’aspect du fichier de PDF rendu, par exemple la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des états, ouvrez le **[!UICONTROL Configuration du PDF d’annotation]** de **[!UICONTROL Configuration Manager]** et modifiez les options de votre choix. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](managing-assets-touch-ui.md#annotating).
+   Pour modifier l’aspect du fichier de PDF rendu, par exemple la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des états, ouvrez le **[!UICONTROL Configuration du PDF d’annotation]** de **[!UICONTROL Configuration Manager]** et modifiez les options de votre choix. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotation](managing-assets-touch-ui.md#annotating).
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
-   Revenez au fichier PDF généré et actualisez-le. Le fichier PDF actualisé affiche désormais les modifications que vous avez effectuées.
+   Revenez au fichier de PDF rendu et actualisez-le. Le PDF actualisé reflète les modifications que vous avez apportées.
 
 **Pour imprimer des annotations dans des langues étrangères**: Si une ressource contient des annotations dans des langues étrangères (en particulier dans des langues non latines), vous devez d’abord configurer le service Font Manager CQ-DAM-Handler-Gibson sur la page [!DNL Experience Manager] pour pouvoir imprimer ces annotations. Lorsque vous configurez ce service, indiquez le chemin d’accès aux polices à utiliser pour ces langues.
 
@@ -869,8 +873,8 @@ Pour imprimer les annotations et l’état de révision, appuyez sur le bouton *
 1. Pour configurer **[!UICONTROL Service Font Manager CQ-DAM-Handler-Gibson]**, effectuez l’une des opérations suivantes :
 
    * Dans le **[!UICONTROL Polices système]** , indiquez le chemin d’accès complet au répertoire des polices sur votre système. Par exemple, si vous êtes un utilisateur Mac, vous pouvez spécifier le chemin comme `/Library/Fonts` dans le **[!UICONTROL Polices système]** l’option du répertoire . [!DNL Experience Manager] récupère les polices dans ce répertoire.
-   * Créez un répertoire nommé **fonts** dans le dossier **[!UICONTROL crx-quickstart]**. **** Le service Font Manager CQ-DAM-Handler-Gibson récupère automatiquement les polices à l’emplacement `crx-quickstart/fonts`. Vous pouvez remplacer ce chemin par défaut depuis l’élément **[!UICONTROL Adobe Server Fonts]** l’option du répertoire .
-   * Créez un dossier pour les polices sur votre système et stockez-y les polices de votre choix. Ensuite, spécifiez le chemin d’accès complet à ce dossier dans le **[!UICONTROL Polices client]** l’option du répertoire .
+   * Création d’un répertoire nommé **polices** à l’intérieur de **[!UICONTROL crx-quickstart]** dossier. **** Le service Font Manager CQ-DAM-Handler-Gibson récupère automatiquement les polices à l’emplacement `crx-quickstart/fonts`. Vous pouvez remplacer ce chemin par défaut depuis l’élément **[!UICONTROL Adobe Server Fonts]** l’option du répertoire .
+   * Créez un dossier pour les polices de votre système et stockez-y les polices souhaitées. Ensuite, spécifiez le chemin d’accès complet à ce dossier dans le **[!UICONTROL Polices client]** l’option du répertoire .
 
 1. Accédez au **[!UICONTROL PDF d’annotation]** configuration à partir de l’URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
 1. Configurez la variable **[!UICONTROL PDF d’annotation]** avec le jeu correct font-family comme suit :
@@ -887,7 +891,7 @@ Voici un exemple de configuration : [!DNL Experience Manager] pour imprimer des 
    * Noto Sans (pour les langues européennes) : [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
    * Polices Noto pour une langue de votre choix : [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
 
-1. Configurez le fichier PDF d’annotation en définissant le paramètre font-family sur `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Cette configuration est disponible par défaut et fonctionne pour l’ensemble des langues européennes, ainsi que pour le chinois, le japonais et le coréen (CJC).
+1. Configurez le fichier PDF d’annotation en définissant le paramètre font-family sur `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Cette configuration est disponible par défaut et fonctionne pour toutes les langues européennes et CJK.
 1. Si la langue de votre choix est différente de celles mentionnées à l’étape 2, ajoutez une entrée appropriée (séparée par des virgules) à la famille de polices font-family par défaut.
 
 ## Création de versions de ressources {#asset-versioning}
@@ -896,16 +900,16 @@ Le contrôle de version permet de créer un instantané des ressources numériqu
 
 Voici quelques scénarios de création de versions :
 
-* Vous modifiez une image dans une autre application et la téléchargez vers [!DNL Experience Manager] Ressources. Une version de l’image est créée afin que votre image d’origine ne soit pas remplacée.
+* Vous modifiez une image dans une autre application et la téléchargez vers [!DNL Experience Manager] Ressources. Une version de l’image est créée afin que l’image d’origine ne soit pas écrasée.
 * Vous modifiez les métadonnées d’une ressource.
 * Vous utilisez l’application de bureau [!DNL Experience Manager] pour extraire une ressource existante et enregistrer vos changements. Une nouvelle version est créée chaque fois que la ressource est enregistrée.
 
 Vous pouvez également activer le contrôle de version automatique à l’aide d’un workflow. Lorsque vous créez une version d’une ressource, les métadonnées et les rendus sont enregistrés avec la version. Les rendus sont d’autres affichages d’une même image (un rendu PNG d’un fichier JPEG téléchargé, par exemple).
 
-La création de versions permet d’effectuer les opérations suivantes :
+La fonctionnalité de contrôle de version vous permet d’effectuer les opérations suivantes :
 
-* créer une version d’une ressource ;
-* afficher la révision actuelle d’une ressource ;
+* Créez une version d’une ressource.
+* Afficher la révision actuelle d’une ressource.
 * restaurer une version précédente de la ressource.
 
 **Pour créer un contrôle de version des ressources**:
@@ -958,12 +962,12 @@ Voir [appliquer un workflow à une [!DNL Experience Manager] ressource](/help/as
 
 ## À propos des collections {#collections}
 
-Une collection est un ensemble de ressources classées. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
+Une collection est un ensemble ordonné de ressources. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
 
-* Une collection peut comporter des ressources provenant de différents emplacements, car elle ne contient que les références à ces ressources. Chaque collection préserve l’intégrité du référentiel des ressources.
-* Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
+* Une collection peut inclure des ressources provenant de différents emplacements, car elle ne contient que des références à ces ressources. Chaque collection conserve l’intégrité référentielle des ressources.
+* Vous pouvez partager des collections avec plusieurs utilisateurs avec différents niveaux de privilèges, y compris la modification, l’affichage, etc.
 
-Un utilisateur peut avoir accès à plusieurs collections. Selon la façon dont elles rassemblent les ressources, les collections sont des types suivants :
+Un utilisateur peut avoir accès à plusieurs collections. Les collections sont des types suivants, en fonction de la manière dont elles collectent les ressources :
 
 * Une collection avec une **liste de référence statique** de ressources, de dossiers et d’autres collections.
 
@@ -973,4 +977,4 @@ Voir [Gestion des collections](managing-collections-touch-ui.md) pour plus d’i
 
 >[!NOTE]
 >
->Pour créer ou modifier des ressources, vous devez disposer des droits d’accès appropriés pour votre compte.
+>Vous avez besoin des droits d’accès appropriés pour votre compte afin de créer ou modifier des ressources.

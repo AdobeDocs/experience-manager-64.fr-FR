@@ -1,7 +1,7 @@
 ---
 title: Images interactives
 seo-title: Interactive Images
-description: Découvrir comment utiliser les images interactives dans les médias dynamiques
+description: Découvrez comment utiliser des images interactives dans Dynamic Media
 seo-description: Learn how to work with interactive images in dynamic media
 uuid: e8f79bc1-fccb-48d0-aca1-7f319c595fe9
 contentOwner: Rick Brough
@@ -12,14 +12,18 @@ discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 exl-id: 4d3299e2-269b-4a41-a979-c884c707666d
 feature: Interactive Images
 role: User
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4247'
-ht-degree: 80%
+source-wordcount: '4283'
+ht-degree: 63%
 
 ---
 
 # Images interactives {#interactive-images}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez facilement créer des expériences riches et attrayantes pour vos clients à partir d’images statiques en ajoutant des zones réactives « shoppable » aux images par glisser-déposer. Les zones réactives Shoppable rassemblent des informations supplémentaires sur un produit ou un service avec une fonctionnalité directe de point de vente de type « Ajouter au panier » ou « Acheter ». Les clients peuvent appuyer sur ces zones réactives et être liés directement au produit ou au service, l’ajouter à un panier ou être associés à une page web. Les expériences directes de ce type augmentent l’engagement et la conversion des clients sur votre site web.
 
@@ -39,21 +43,21 @@ Visionnez une présentation vidéo de 10 minutes et 33 secondes sur la [créat
 
 La description suivante du workflow étape par étape est conçue pour vous aider à mettre en route rapidement les images interactives dans AEM Assets.
 
-Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel reposant sur l’exemple de page web suivant qui ne contient pas encore d’images interactives :
+Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel basé sur l’exemple de page web suivant qui ne contient pas encore d’images interactives :
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr)
 
-Le tutoriel permet d’illustrer les étapes d’intégration d’images interactives à votre site web.
+Le tutoriel permet d’illustrer les étapes de l’intégration d’images interactives à votre propre site web.
 
 **Workflow Images interactives**:
 
-1. **(Facultatif) Identification des variables de zone réactive** : si vous utilisez des instances autonomes d’AEM Assets et de Dynamic Media, commencez par identifier les variables dynamiques utilisées dans votre aperçu rapide existant afin de pouvoir entrer les données de zone réactive lors de la création de l’image interactive. Voir [(Facultatif) Identification des variables de zone réactive](#optional-identifying-hotspot-variables).
+1. **(Facultatif) Identification des variables de zone réactive** - Si vous utilisez des instances autonomes d’AEM Assets et de Dynamic Media, commencez par identifier les variables dynamiques utilisées dans votre mise en oeuvre existante de l’aperçu rapide afin de pouvoir entrer les données de zone réactive lors de la création de l’image interactive. Voir [(Facultatif) Identification des variables de zone réactive](#optional-identifying-hotspot-variables).
 
    Cependant, si vous utilisez AEM Sites ou AEM eCommerce, ou les deux, cette étape n’est pas nécessaire.
 
-   Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/sites-administering/concepts.md).
+   Voir [Concepts d’eCommerce dans AEM Assets](/help/sites-administering/concepts.md).
 
-1. **(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives**. Personnalisez l’image utilisée pour représenter des zones réactives. Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse d’images interactives si vous envisagez plutôt d’utiliser le paramètre prédéfini de visionneuse d’images interactive prêt à l’emploi `Shoppable_Banner`.
+1. **(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives** - Personnalisez l’image utilisée pour représenter les zones réactives. Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse d’images interactives si vous envisagez plutôt d’utiliser le paramètre prédéfini de visionneuse d’images interactive prêt à l’emploi `Shoppable_Banner`.
 
 
    Voir [(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives](managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -81,7 +85,7 @@ Le tutoriel permet d’illustrer les étapes d’intégration d’images interac
 >Cette tâche n’est nécessaire que si les conditions ci-dessous sont vraies :
 >
 >* Vous souhaitez ajouter de l’interactivité à votre image en déclenchant des aperçus rapides.
->* Votre mise en œuvre d’AEM n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Path, Hybris ou Intershop. Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/sites-administering/concepts.md).
+>* Votre mise en œuvre d’AEM n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Path, Hybris ou Intershop. Voir [Concepts d’eCommerce dans AEM Assets](/help/sites-administering/concepts.md).
 >
 >Si votre mise en œuvre d’AEM utilise eCommerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
 
@@ -93,16 +97,16 @@ Il est important d’identifier correctement le nombre et le type de variables �
 
 Il existe différentes manières d’identifier un jeu de variables à utiliser pour les données des zones réactives.
 
-Il peut parfois être nécessaire de consulter les spécialistes informatiques responsables de l’implémentation d’aperçu rapide existante, car ils connaissent probablement le jeu minimum de données nécessaires pour identifier l’aperçu rapide dans le système. Cependant, dans la plupart des cas, il est également possible d’analyser le comportement existant du code frontal.
+Il peut parfois être nécessaire de consulter les spécialistes informatiques responsables de l’implémentation d’aperçu rapide existante, car ils connaissent probablement le jeu minimum de données nécessaires pour identifier l’aperçu rapide dans le système. Cependant, dans la plupart des cas, il est également possible d’analyser simplement le comportement existant du code frontal.
 
-La majorité des implémentations d’aperçu rapide utilisent le paradigme suivant :
+La plupart des implémentations d’aperçu rapide utilisent le paradigme suivant :
 
 * L’utilisateur active un élément d’interface utilisateur sur le site web. Par exemple, en cliquant sur un **[!UICONTROL Aperçu rapide]** bouton .
-* Le site web envoie une demande Ajax au serveur principal afin de charger les données ou le contenu de l’aperçu rapide, le cas échéant.
-* Les données de l’aperçu rapide sont traduites en contenu en préparation du rendu sur la page web.
+* Le site Web envoie une requête Ajax au serveur principal afin de charger les données ou le contenu de l’aperçu rapide, le cas échéant.
+* Les données de l’aperçu rapide sont traduites en contenu en préparation du rendu sur la page Web.
 * Enfin, le code en front-end effectue le rendu visuel de ce contenu à l’écran.
 
-L’approche consiste alors à visiter différentes zones du site web existant où la fonctionnalité d’aperçu rapide est implémentée, à déclencher l’aperçu rapide et à capturer l’URL Ajax envoyée par la page web pour charger les données ou le contenu de l’aperçu rapide.
+L’approche consiste ensuite à visiter différentes zones du site web existant où la fonction d’aperçu rapide est mise en oeuvre, à déclencher l’aperçu rapide et à capturer l’URL Ajax envoyée par la page web pour le chargement des données ou du contenu de l’aperçu rapide.
 
 Normalement, il n’est pas nécessaire d’utiliser des outils de débogage spécialisés. Les navigateurs web modernes incluent des inspecteurs web qui font un travail correct. Vous trouverez ci-dessous quelques exemples de navigateurs web qui incluent des inspecteurs web :
 
@@ -120,11 +124,11 @@ Vous trouvez maintenant l’URL Ajax d’aperçu rapide dans le journal réseau.
 
 Au cours de ce processus, il est important de parcourir différentes zones de votre site web, avec différentes catégories et types de produits. C’est pourquoi les URL d’aperçu rapide peuvent avoir des parties communes pour une catégorie de site web donnée, mais ne changent que si vous visitez une autre zone du site web.
 
-Dans le cas le plus simple, la seule partie variable dans l’URL de l’aperçu rapide est le SKU du produit. Dans ce cas, la valeur du SKU est la seule donnée dont vous avez besoin pour ajouter des zones réactives à l’image de bannière.
+Dans le cas le plus simple, la seule partie variable dans l’URL de l’aperçu rapide est le SKU du produit. Dans ce cas, la valeur de SKU est la seule donnée dont vous avez besoin pour ajouter des zones réactives à l’image de bannière.
 
-Cependant, dans les cas complexes, l’URL d’aperçu rapide comporte différents éléments variables en complément du SKU, comme l’identifiant de la catégorie, le code couleur, le code taille, etc. Dans ce cas, chaque élément est une variable distincte dans votre définition de données d’images interactives dans la fonction d’image interactive publicitaire d’AEM Assets.
+Cependant, dans les cas complexes, l’URL d’aperçu rapide comporte différents éléments variables en complément du SKU, comme l’identifiant de la catégorie, le code couleur, le code taille, etc. Dans ce cas, chaque élément est une variable distincte dans votre définition de données de zone réactive dans la fonction d’image interactive Shoppable d’AEM Assets.
 
-Consultez les exemples suivants d’URL d’aperçu rapide et les variables de zones réactives résultantes :
+Examinez les exemples suivants d’URL d’aperçu rapide et les variables de zone réactive qui en résultent :
 
 <table> 
      <tbody> 
@@ -160,19 +164,19 @@ Consultez les exemples suivants d’URL d’aperçu rapide et les variables de z
 
 Vous pouvez appliquer la même approche utilisée dans les trois exemples ci-dessus à la page web de démonstration :
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr)
 
-La page web de démonstration comporte plusieurs miniatures de produit, chacune disposant d’un bouton d’aperçu rapide intitulé &quot;Aperçu rapide&quot;. **[!UICONTROL Voir Plus]**. À l’aide de l’outil de débogage de votre navigateur web toujours activé, cliquez sur chaque bouton et notez les URL d’aperçu rapide enregistrées. Une fois que vous avez activé l’aperçu rapide des quatre produits disponibles sur la page, vous obtenez la liste suivante de demandes d’aperçu rapide exécutées en arrière-plan :
+La page web de démonstration comporte plusieurs miniatures de produit, chacune disposant d’un bouton d’aperçu rapide intitulé &quot;Aperçu rapide&quot;. **[!UICONTROL Voir Plus]**. À l’aide de l’outil de débogage de votre navigateur web toujours activé, cliquez sur chaque bouton et notez les URL d’aperçu rapide enregistrées. Après avoir activé les quatre aperçus rapides de produit disponibles sur la page, la liste suivante de demandes d’aperçu rapide est envoyée au serveur principal :
 
 * `/datafeed/Men-Windbreaker.json`
 * `/datafeed/Men-SimpleHenley.json`
 * `/datafeed/Men-CamoPullover.json`
 * `/datafeed/Women-QuiltedDownJacket.json`
 
-Lorsque vous observez ces appels de serveur, vous constatez que les informations spécifiques au produit ne sont présentes que dans le chemin de la requête. Vous notez également que la chaîne de requête n’est pas du tout utilisée et que deux types de données distincts sont impliqués :
+En examinant ces appels de serveur, vous voyez que les informations spécifiques au produit ne sont présentes que dans le chemin de requête. Vous notez également que la chaîne de requête n’est pas du tout utilisée et que deux types de données distincts sont impliqués :
 
-* Le premier type correspond au sexe, Homme ou Femme. Vous pouvez l’appeler « catégorie de produits ».
-* Le second type correspond au nom du produit, comme « CamoPullover ». Vous pouvez considérer que c’est la SKU du produit.
+* Le premier type est Hommes ou Femmes. Vous pouvez l’appeler « catégorie de produits ».
+* Le deuxième type est le nom du produit, tel que CamoPullover. Vous pouvez supposer qu’il s’agit du SKU du produit.
 
 Compte tenu de ces informations, l’intégralité de l’URL de l’aperçu rapide suit le schéma suivant :
 
@@ -209,7 +213,7 @@ Une fois le paramètre prédéfini de visionneuse enregistré, il est automatiqu
 
    Assurez-vous de publier le nouveau paramètre prédéfini de la visionneuse.
 
-   Voir [Publication des paramètres prédéfinis de la visionneuse que vous avez ajoutés](managing-viewer-presets.md#publishing-viewer-presets).
+   Voir [Publication des paramètres prédéfinis de visionneuse que vous avez ajoutés](managing-viewer-presets.md#publishing-viewer-presets).
 
    Vous êtes désormais prêt à charger une bannière d’image.
 
@@ -229,7 +233,7 @@ Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l�
 
 Vous pouvez ajouter des zones réactives à une bannière d’image à l’aide de l’éditeur sur la page **[!UICONTROL Gestion des zones réactives]** page.
 
-Lorsque vous ajoutez des zones réactives, vous pouvez les définir comme un écran contextuel d’aperçu rapide, un lien hypertexte ou un fragment d’expérience.
+Lorsque vous ajoutez des zones réactives, vous pouvez les définir comme un affichage contextuel d’aperçu rapide, comme lien hypertexte ou comme fragment d’expérience.
 
 Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
@@ -245,9 +249,9 @@ Reportez-vous à la section [(Facultatif) Aperçu des images interactives](#opti
 
 >[!NOTE]
 >
->Lorsque vous ajoutez des zones réactives à une image dans une image interactive ou une bannière de carrousel, les informations de zone réactive sont stockées au même emplacement de métadonnées (par rapport à l’emplacement de l’image), qu’il s’agisse d’une image interactive ou d’une bannière de carrousel. Cette fonctionnalité signifie que vous pouvez facilement réutiliser la même image (avec ses données de zone réactive définies) dans les visionneuses.
+>Lorsque vous ajoutez des zones réactives à une image dans une image interactive ou bannière de carrousel, les informations de zone réactive sont stockées au même emplacement de métadonnées (par rapport à l’emplacement de l’image), qu’il s’agisse d’une image interactive ou d’une bannière de carrousel. Cette fonctionnalité signifie que vous pouvez facilement réutiliser la même image (ainsi que ses données de zone réactive définies) dans n’importe quelle visionneuse.
 >
->Notez cependant que les bannières de carrousel prennent en charge les images à zones cliquables, qui peuvent également contenir des zones réactives. Les images interactives n’en comportent pas. Pensez-y si vous envisagez de créer une image interactive ou une bannière de carrousel qui utilise la même image. Vous pouvez créer des images interactives et des bannières de carrousel à l’aide de copies distinctes de la même image.
+>Notez cependant que les bannières de carrousel prennent en charge les images à zones cliquables, qui peuvent également contenir des zones réactives. Les images interactives n’en comportent pas. Gardez cela à l’esprit si vous envisagez de créer une image interactive ou une bannière de carrousel qui utilise la même image. Vous pouvez créer des images interactives et des bannières de carrousel à l’aide de copies distinctes de la même image.
 >
 >Voir aussi [Bannières de carrousel](carousel-banners.md).
 
@@ -257,11 +261,11 @@ Reportez-vous à la section [(Facultatif) Aperçu des images interactives](#opti
 
 **Pour ajouter des zones réactives à une bannière d’image** :
 
-1. En mode Ressources, accédez à la bannière d’image à laquelle vous souhaitez ajouter de l’interactivité.
+1. Dans la vue Ressources, accédez à la bannière d’image que vous souhaitez rendre interactive.
 1. Utilisez l’une des méthodes suivantes :
 
    * Pointez sur l’image, puis appuyez sur la touche **[!UICONTROL Sélectionner]** (icône de coche). Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier]**.
-   * Pointez sur l’image, puis appuyez sur **[!UICONTROL Autres actions]** (icône représentant des points de suspension) > **[!UICONTROL Modifier]**.
+   * Pointez sur l’image, puis appuyez sur **[!UICONTROL Autres actions]** (icône représentant trois points) > **[!UICONTROL Modifier]**.
    * Appuyez sur l’image pour l’ouvrir dans le **[!UICONTROL Affichage des détails]** page. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier]**.
 
 1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Ajouter une zone réactive]** (icône d’appui à l’aide du doigt) pour ouvrir la fenêtre **[!UICONTROL Gestion des zones réactives]** page.
@@ -302,8 +306,8 @@ c. Ajoutez d’autres zones réactives si nécessaire en répétant les étapes 
 
 
 
-1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer vos modifications et revenir à la page du navigateur.****
-1. Publiez l’image interactive. La publication permet de fournir la bannière par le biais du cloud et génère également le code intégré si vous devez l’intégrer à un site web tiers.
+1. Appuyer **[!UICONTROL Enregistrer]** pour enregistrer votre travail et revenir au **[!UICONTROL Parcourir]** page.
+1. Publiez l’image interactive. La publication permet à la bannière d’être diffusée par le cloud et génère également du code intégré si vous devez l’intégrer à un site web tiers.
 
    Voir [Publication de ressources](managing-assets-touch-ui.md#publishing-assets).
 
@@ -353,11 +357,11 @@ Si vous êtes client AEM Assets autonome, vous pouvez ajouter manuellement l’
 
 **Exemple**
 
-En vous servant du site web de démonstration comme exemple, procédez comme suit :
+Utiliser le site web de démonstration comme exemple :
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr)
 
-Notez que l’image des trois hommes est une balise `IMG` statique :
+Remarquez que la photo des trois hommes est statique. `IMG` tag :
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
@@ -377,7 +381,7 @@ Voir l’attribut de configuration [ZoomView.iscommand](https://experienceleague
 
 Voir la commande de service d’images [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=fr).
 
-Vous êtes désormais prêt à intégrer l’image interactive à un aperçu rapide existant de votre site web.
+Vous êtes maintenant prêt à intégrer l’image interactive à un aperçu rapide existant sur votre site web.
 
 ## Intégration d’une image interactive dans un aperçu rapide existant {#integrating-an-interactive-image-with-an-existing-quickview}
 
@@ -385,29 +389,29 @@ Vous êtes désormais prêt à intégrer l’image interactive à un aperçu rap
 >
 >Cette tâche ne s’applique que si vous êtes un client AEM Assets autonome.
 
-La dernière étape de cette procédure intègre l’image interactive à un aperçu rapide existant sur votre site web. Pour ce qui est de l’intégration, il n’existe pas de solution qui fonctionne dans tous les cas. Chaque mise en œuvre de l’aperçu rapide est unique, et une approche spécifique est nécessaire, ce qui implique généralement l’assistance d’un informaticien compétent en systèmes frontaux.
+La dernière étape de cette procédure intègre l’image interactive à un aperçu rapide existant sur votre site web. Pour ce qui est de l’intégration, il n’existe pas de solution qui fonctionne dans tous les cas. Chaque mise en oeuvre d’aperçu rapide est unique et une approche spécifique est nécessaire, qui implique probablement l’assistance d’un informaticien compétent.
 
-L’implémentation d’aperçus rapides existante représente normalement une chaîne d’actions entre-associées qui se produisent sur la page web dans l’ordre suivant :
+L’implémentation d’aperçus rapides existante représente normalement une chaîne d’actions interdépendantes qui se produisent sur la page web dans l’ordre suivant :
 
 1. Un utilisateur déclenche un élément dans l’interface utilisateur de votre site web.
-1. Le code frontal obtient une URL d’aperçu rapide basée sur l’élément d’interface utilisateur qui a été déclenché à l’étape 1.
+1. Le code en front-end obtient une URL d’aperçu rapide basée sur l’élément d’interface utilisateur qui a été déclenché à l’étape 1.
 1. Le code en front-end envoie une demande Ajax en utilisant l’URL obtenue à l’étape 2.
-1. La logique du serveur principal renvoie les données ou le contenu de l’aperçu rapide correspondant au code frontal.
-1. Le code frontal charge les données ou le contenu de l’aperçu rapide.
-1. Le code frontal convertit éventuellement les données téléchargées de l’aperçu rapide en une représentation HTML.
+1. La logique du serveur principal renvoie les données ou le contenu de l’aperçu rapide correspondant au code en front-end.
+1. Le code en front-end charge les données ou le contenu de l’aperçu rapide.
+1. Facultativement, le code en front-end convertit les données chargées de l’aperçu rapide en une représentation HTML.
 1. Le code en front-end affiche une boîte de dialogue ou un panneau modal et effectue le rendu du contenu HTML à l’écran pour l’utilisateur final.
 
 Ces appels peuvent ne pas représenter des appels d’API publiques indépendants qui peuvent être appelés par la logique de la page web depuis une étape arbitraire. À la place, il s’agit d’un appel chaîné où chaque étape suivante est masquée dans la dernière phase (rappel) de l’étape précédente.
 
-En même temps que l’image interactive Shoppable remplace l’étape 1 et partiellement l’étape 2, lorsqu’un utilisateur clique sur une zone réactive dans l’image Shoppable, cette interaction est gérée par la visionneuse. La visionneuse renvoie un événement à la page web qui contient toutes les données des zones réactives ajoutées antérieurement à AEM Assets.
+Au même moment que l’image interactive Shoppable remplace l’étape 1 et partiellement l’étape 2, lorsqu’un utilisateur clique sur une zone réactive dans l’image Shoppable, cette interaction utilisateur est gérée par la visionneuse. La visionneuse renvoie un événement à la page web qui contient toutes les données des zones réactives ajoutées précédemment dans AEM Assets.
 
 Dans ce type de gestionnaire d’événements, le code en front-end effectue les opérations suivantes :
 
-* Il écoute un événement émis par l’image interactive Shoppable.
-* Il crée une URL d’aperçu rapide basée sur les données des zones réactives.
+* Écoute un événement émis par l’image interactive Shoppable.
+* Construit une URL d’aperçu rapide basée sur les données de zone réactive.
 * Il déclenche le processus de chargement de l’aperçu rapide depuis le serveur principal et en effectue le rendu à l’écran.
 
-Le code intégré renvoyé par AEM Assets comporte déjà un descripteur d’événement prêt à l’emploi, qui est commenté, comme vous pouvez le constater dans le fragment de code mis en surbrillance ci-dessous :
+Le code incorporé renvoyé par AEM Assets dispose déjà d’un gestionnaire d’événements prêt à l’emploi qui est commenté, comme illustré dans le fragment de code mis en surbrillance suivant :
 
 ```xml
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
@@ -433,11 +437,11 @@ Le code intégré renvoyé par AEM Assets comporte déjà un descripteur d’é
 
 Il suffit donc de supprimer les commentaires du code et de remplacer le corps factice du gestionnaire par le code spécifique à la page web.
 
-Le processus de création de l’URL d’aperçu rapide est presque l’opposé du processus utilisé pour identifier les variables des zones réactives décrit précédemment.
+Le processus de création de l’URL d’aperçu rapide est essentiellement l’opposé du processus utilisé pour identifier les variables de zone réactive décrit précédemment.
 
 Voir [Identification des variables des zones réactives](#optional-identifying-hotspot-variables).
 
-En utilisant nos exemples précédents d’URL d’aperçu rapide, vous pouvez voir, dans les exemples suivants, comment l’URL est créée dans chaque cas :
+En utilisant nos exemples précédents d’URL d’aperçu rapide, vous pouvez voir, dans les exemples suivants, comment l’URL d’aperçu rapide est créée dans chaque cas :
 
 <table> 
  <tbody> 
@@ -468,9 +472,9 @@ En utilisant nos exemples précédents d’URL d’aperçu rapide, vous pouvez v
  </tbody> 
 </table>
 
-La dernière étape pour déclencher l’URL d’aperçu rapide et activer le panneau d’aperçu rapide nécessite probablement l’assistance d’un informaticien compétent de votre service informatique. Celui-ci sait comment déclencher précisément l’implémentation de l’aperçu rapide à partir de l’étape appropriée, avec une URL d’aperçu rapide prête à l’emploi.
+La dernière étape pour déclencher l’URL d’aperçu rapide et activer le panneau d’aperçu rapide nécessite probablement l’assistance d’un informaticien compétent de votre service informatique. Celui-ci sait comment déclencher précisément l’implémentation de l’aperçu rapide à l’aide de l’étape appropriée, avec une URL d’aperçu rapide prête à l’emploi.
 
-Vous pouvez découvrir comment ces étapes sont appliquées au site web de démonstration pour l’intégration complète d’une image interactive publicitaire avec le code d’aperçu rapide. Plus tôt dans cette rubrique, la structure de l’URL de l’aperçu rapide a été identifiée comme suit :
+Vous pouvez découvrir comment ces étapes sont appliquées au site web de démonstration pour l’intégration complète d’une image interactive publicitaire avec le code d’aperçu rapide. Auparavant, la structure de l’URL d’aperçu rapide était identifiée comme suit :
 
 ```xml
 /datafeed/$categoryId$-$SKU$.json
@@ -512,7 +516,7 @@ Voici le code source complet :
  s7interactiveimageviewer.init();
 ```
 
-Le dernier site web de démonstration avec l’image interactive totalement intégrée se présente comme suit :
+Le dernier site web de démonstration avec l’image interactive entièrement intégrée ressemble à ce qui suit :
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=fr)
 

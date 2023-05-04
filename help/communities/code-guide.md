@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 244cd43c-a573-495d-b80c-b97ba9d19b75
 exl-id: 022043cd-35ed-49b1-b5b4-5cc92d29cef4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 3%
+source-wordcount: '216'
+ht-degree: 6%
 
 ---
 
 # Consignes de codage {#coding-guidelines}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Conseils, astuces et astuces {#guidelines-tips-and-tricks}
 
@@ -33,7 +37,7 @@ Vous trouverez ci-dessous diverses instructions de codage et bonnes pratiques po
 * [Refactorisation de SocialUtils](socialutils.md) - méthodes d’utilitaire pour SRP qui remplacent SocialUtils.
 * [Conventions de dénomination](naming-conventions.md) - conventions de dénomination pour les classes Java personnalisées.
 
-### Scripts {#scripts}
+### Scripts  {#scripts}
 
 * [Chargement partiel des composants de communauté](sideloading.md) : procédure d’ajout dynamique d’un composant après le chargement de la page.
 * [Principes élémentaires de l’éditeur de texte enrichi](rte.md) - Comment personnaliser l’interface utilisateur de texte enrichi fournie aux membres pour la publication de contenu.

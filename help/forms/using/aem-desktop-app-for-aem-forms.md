@@ -11,26 +11,30 @@ discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 role: Admin
 exl-id: 26cd0851-cadf-4a8f-b3bf-59f77671f584
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 88%
+source-wordcount: '494'
+ht-degree: 54%
 
 ---
 
 # Application de bureau AEM pour AEM Forms {#aem-desktop-app-for-aem-forms}
 
-L’application de bureau AEM vous permet de mapper le référentiel des actifs Adobe Experience Manager (AEM) et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. Vous pouvez afficher les actifs et les fichiers binaires synchronisés dans un explorateur de fichiers et utiliser différentes applications pour modifier les fichiers selon les besoins. Outre l’affichage des fichiers, vous pouvez également créer, charger et supprimer les fichiers binaires. Vous pouvez également ouvrir, modifier et enregistrer les fichiers directement à partir du logiciel. Par exemple, vous pouvez directement ouvrir et modifier un fichier XDP à partir de Designer. Les modifications apportées aux actifs localement sont répercutés dans le référentiel des AEM Assets et dans l’interface utilisateur AEM Forms.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+L’application de bureau AEM vous permet de mapper le référentiel des actifs Adobe Experience Manager (AEM) et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. Vous pouvez afficher les ressources synchronisées et les fichiers binaires dans un explorateur de fichiers et utiliser diverses applications pour modifier les fichiers selon vos besoins. Outre l’affichage des fichiers, vous pouvez également créer, charger et supprimer les fichiers binaires. Vous pouvez également ouvrir, modifier et enregistrer des fichiers directement à partir du logiciel. Par exemple, vous pouvez ouvrir et modifier directement un fichier XDP à partir de Designer. Les modifications apportées aux actifs localement sont répercutés dans le référentiel des AEM Assets et dans l’interface utilisateur AEM Forms.
 
 Vous pouvez télécharger l’application à partir d’une instance AEM. Pour obtenir des informations détaillées sur le téléchargement de l’application, voir [Notes de mise à jour de l’application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=fr).
 
 ## Actifs AEM Forms pris en charge par l’application de bureau AEM {#aem-forms-assets-supported-in-aem-desktop-app}
 
-Vous pouvez utiliser l’application pour synchroniser les fichiers binaires des types suivants : modèles de formulaire (.xdp), formulaire PDF (.pdf), document (.pdf), images, schéma XML (.xsd), feuilles de style (.xfs). L’application répertorie tous les autres fichiers (fichiers non pris en charge) en tant que fichiers de 0 octets. L’énumération des fichiers non pris en charge en tant que fichiers de 0 octet garantit que l’utilisateur est conscient de l’existence d’autres ressources disponibles sur le serveur AEM Forms.
+Vous pouvez utiliser l’application pour synchroniser les fichiers binaires AEM Forms du type Form Templates (.xdp), PDF Form (.pdf), Document (.pdf), Images, Schéma XML (.xsd), Feuilles de style (.xfs). L’application répertorie tous les autres fichiers (fichiers non pris en charge) sous la forme de fichiers de 0 octet. L’énumération des fichiers non pris en charge comme fichiers de 0 octet garantit que l’utilisateur est conscient de l’existence d’autres ressources disponibles sur le serveur AEM Forms.
 
 >[!NOTE]
 >
->Un nom de fichier ne peut contenir que des caractères alphanumériques, des traits d’union ou des caractères de soulignement.
+>Un nom de fichier ne peut contenir que des caractères alphanumériques, des tirets ou des traits de soulignement.
 
 ## Activer AEM Forms pour l’application de bureau AEM {#enable-aem-forms-for-aem-desktop-app}
 

@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 role: Admin
 exl-id: 905b6dc5-cf17-4f58-a687-27e2910a0729
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 3%
+source-wordcount: '234'
+ht-degree: 6%
 
 ---
 
 # Stockage  Configuration {#storage-configuration}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 La configuration du stockage est le moyen d’identifier le stockage choisi pour le contenu de la communauté, également appelé contenu généré par l’utilisateur (UGC).
 

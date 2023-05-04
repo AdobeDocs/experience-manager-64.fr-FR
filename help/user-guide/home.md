@@ -6,14 +6,18 @@ seo-description: An overview of all of the essential resources for understanding
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: dbeb093b-489b-46c3-b136-e33a430793e0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 100%
+source-wordcount: '250'
+ht-degree: 88%
 
 ---
 
 # Hub des guides de l’utilisateur d’AEM 6.4 {#aem-64-user-guide}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#introduction}
 

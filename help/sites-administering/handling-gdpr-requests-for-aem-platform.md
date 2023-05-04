@@ -7,14 +7,18 @@ uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 exl-id: dcd67a1e-b20f-4ed4-b154-dd250cbd8320
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '471'
+ht-degree: 82%
 
 ---
 
 # Traitement des demandes RGPD pour AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!IMPORTANT]
 >
@@ -76,7 +80,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Désactivation d’un utilisateur {#disable-user}
 
 1. Ouvrez la console Administration utilisateur et recherchez l’utilisateur en question, comme décrit ci-dessus.
-1. Survolez l’utilisateur avec le curseur, puis cliquez sur l’icône sélectionnée. Le profil devient gris pour indiquer qu’il est sélectionné.
+1. Pointez sur l’utilisateur et cliquez sur l’icône de sélection. Le profil devient gris pour indiquer qu’il est sélectionné.
 
 1. Appuyez sur le bouton Désactiver dans le menu supérieur pour désactiver l’utilisateur :
 
@@ -100,7 +104,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. Supprimez les nœuds de profil et tous leurs enfants. Il existe deux formats de nœuds de profil, selon la version d’AEM :
+1. Supprimez les noeuds de profil et tous leurs enfants. Il existe deux formats pour les noeuds de profil, selon la version AEM :
 
    1. Le profil privé par défaut sous `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]`, pour les nouveaux profils créés à l’aide d’AEM 6.4
@@ -111,7 +115,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 Les procédures suivantes utilisent l’outil de ligne de commande `curl` pour illustrer comment désactiver l’`userId` **[!UICONTROL cavery]** et supprimer ses profils disponibles à l’emplacement par défaut.
 
-* *Découverte du répertoire de base (home) de l’utilisateur*
+* *Découverte de la page d’accueil de l’utilisateur*
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'

@@ -1,5 +1,5 @@
 ---
-title: Résolution des problèmes d’intégration
+title: Résoudre les problèmes d’intégration
 seo-title: Troubleshooting Integration Issues
 description: Découvrez comment résoudre les problèmes d’intégration.
 seo-description: Learn how to troubleshoot integration issues.
@@ -10,20 +10,24 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
 exl-id: 81b8f8c0-7f9d-4748-af07-c550826c19b4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 97%
+source-wordcount: '1130'
+ht-degree: 57%
 
 ---
 
-# Résolution des problèmes d’intégration{#troubleshooting-integration-issues}
+# Résoudre les problèmes d’intégration{#troubleshooting-integration-issues}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Conseils pratiques de dépannage {#general-troubleshooting-tips}
 
-### Vérification de l’absence d’erreur JavaScript {#ensure-there-are-no-javascript-errors}
+### S’assurer qu’il n’y a aucune erreur JavaScript {#ensure-there-are-no-javascript-errors}
 
-Vérifiez si des erreurs s’affichent sur la console JavaScript du navigateur. Les erreurs non prises en charge peuvent empêcher le code suivant de s’exécuter correctement. S’il y a des erreurs, vérifiez le script à l’origine de chaque erreur et dans quelle zone celle-ci s’est produite. Le chemin d’accès au script peut donner une indication de la fonctionnalité à laquelle le script est associé.
+Vérifiez si des erreurs s’affichent sur la console JavaScript du navigateur. Les erreurs non prises en charge peuvent empêcher le code suivant de s’exécuter correctement. S’il y a des erreurs, vérifiez le script à l’origine de chaque erreur et dans quelle zone celle-ci s’est produite. Le chemin d’accès au script peut indiquer à quelle fonctionnalité le script appartient.
 
 ### Connexion au niveau du composant {#logging-on-component-level}
 
@@ -45,27 +49,27 @@ ${ myHtlVariable }
 
 Pour plus d’informations sur la connexion, reportez-vous aux pages [Connexion](/help/sites-deploying/configure-logging.md) et [Utilisation d’enregistrements d’audit et de fichiers journaux](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
-## Problèmes d’intégration d’Analytics {#analytics-integration-issues}
+## Problèmes d’intégration Analytics {#analytics-integration-issues}
 
-### L’importateur de rapports mobilise fortement le processeur/la mémoire {#the-report-importer-causes-high-cpu-memory-usage}
+### L’importateur de rapports provoque une utilisation élevée du processeur/de la mémoire {#the-report-importer-causes-high-cpu-memory-usage}
 
 L’importateur de rapports mobilise fortement le processeur ou la mémoire ou entraîne des exceptions de type `OutOfMemoryError`.
 
 #### Solution {#solution}
 
-Pour résoudre ce problème, vous pouvez essayer la méthode suivante :
+Pour résoudre ce problème, essayez les méthodes suivantes :
 
-* Vérifiez l’absence d’enregistrement d’une quantité importante d’importateurs d’interrogations (voir la section « L’arrêt prend un certain temps à cause de l’importateur d’interrogations » ci-dessous).
+* Assurez-vous qu’il n’y a pas un grand nombre d’importateurs d’interrogations enregistrés (voir la section &quot;L’arrêt prend beaucoup de temps en raison de l’importateur d’interrogations&quot; ci-dessous).
 * Exécutez les importateurs de rapports à un moment précis de la journée à l’aide des expressions CRON pour les configurations `ManagedPollingImporter` dans la [console OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Pour plus d’informations sur la création de services d’importation de données personnalisés dans AEM, consultez l’article [https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html).
 
-### L’arrêt prend un certain temps à cause de l’importateur d’interrogations {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
+### L’arrêt prend beaucoup de temps en raison de PollingImporter. {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
 Analytics a été conçu avec un mécanisme d’héritage. L’utilisateur active généralement Analytics pour un site en ajoutant une référence à une configuration Analytics dans l’onglet des propriétés de la page des [Services cloud](/help/sites-developing/extending-cloud-config.md). Toutes les sous-pages héritent alors automatiquement de la configuration sans qu’il soit nécessaire d’ajouter à nouveau la référence, sauf si une page nécessite une configuration différente. L’ajout d’une référence à un site crée également automatiquement plusieurs noeuds (12 pour AEM 6.3 et versions antérieures ou 6 pour AEM 6.4) de type `cq;PollConfig` qui instancie les importateurs d’interrogations utilisés pour importer des données Analytics dans AEM. Par conséquent :
 
-* Le fait d’avoir un grand nombre de pages référençant Analytics génère de nombreux importateurs d’interrogations.
-* De plus, la copie et le collage de pages avec une référence dans une configuration Analytics entraînent la duplication de ses importateurs d’interrogations.
+* Le fait que de nombreuses pages fassent référence à Analytics génère un grand nombre d’importateurs d’interrogations.
+* En outre, la copie et le collage de pages avec une référence à une configuration Analytics entraîne une duplication de ses importateurs d’interrogations.
 
 #### Solution {#solution-1}
 
@@ -73,51 +77,63 @@ Tout d’abord, l’analyse du fichier [error.log](/help/sites-deploying/configu
 
 ```
 # Count PollingImporter entries
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 $ sed -n "s/.*(aem-analytics-integration-.*).*target=\(.*\),interval.*/\1/p" error.log | wc -l
 86415
 # Count PollingImporter entries for last30days
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 $ sed -n "s/.*(aem-analytics-integration-last30Days).*target=\(.*\),interval.*/\1/p" error.log | wc -l
 14531
 # Count unique paths of PollingImporter registrations
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 sed -n "s/.*(aem-analytics-integration-.*).*target=\(.*\)\/jcr:content.*/\1/p" error.log | sort | uniq -c
 28115
 ```
 
-Ensuite, vérifiez que seules les pages principales (en haut dans la hiérarchie) ont une configuration d’Analytics référencée.
+Ensuite, assurez-vous que seules les pages principales (situées en haut de la hiérarchie) disposent d’une configuration Analytics référencée.
 
 Pour plus d’informations sur la création de services d’importation de données personnalisés dans AEM, consultez l’article [https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html).
 
-## Problèmes de gestion dynamique des balises (hérités) {#dtm-legacy-issues}
+## Problèmes DTM (hérités) {#dtm-legacy-issues}
 
-### La balise de script de gestion dynamique des balises n’est pas rendue dans la source de la page {#the-dtm-script-tag-is-not-rendered-in-the-page-source}
+### La balise de script de la gestion dynamique des balises n’est pas rendue dans la source de la page. {#the-dtm-script-tag-is-not-rendered-in-the-page-source}
 
-La balise de script de [gestion dynamique des balises](/help/sites-administering/dtm.md) n’est pas correctement incluse dans la page, même si la configuration a été référencée dans l’onglet des propriétés de la page des [Services cloud](/help/sites-developing/extending-cloud-config.md).
+Le [DTM](/help/sites-administering/dtm.md) La balise de script n’est pas correctement incluse dans la page même si la configuration a été référencée dans les propriétés de la page. [Cloud Services](/help/sites-developing/extending-cloud-config.md) .
 
 #### Solution {#solution-2}
 
-Pour résoudre ce problème, vous pouvez essayer les méthodes suivantes :
+Pour résoudre ce problème, vous pouvez essayer les méthodes suivantes :
 
-* Assurez-vous que les propriétés chiffrées peuvent être déchiffrées (notez que le chiffrement peut utiliser une clé générée automatiquement différente pour chaque instance AEM). Pour plus d’informations, voir aussi la section [Prise en charge du chiffrement des propriétés de configuration](/help/sites-administering/encryption-support-for-configuration-properties.md).
+* Assurez-vous que les propriétés chiffrées peuvent être déchiffrées (notez que le chiffrement peut utiliser une clé générée automatiquement différente pour chaque instance AEM). Pour plus d’informations, reportez-vous également à la section [Prise en charge du chiffrement des propriétés de configuration](/help/sites-administering/encryption-support-for-configuration-properties.md).
 * Republiez les configurations trouvées dans `/etc/cloudservices/dynamictagmanagement`.
-* Vérifiez les listes de contrôle d’accès sur `/etc/cloudservices`. Les listes de contrôle d’accès doivent être les suivantes :
+* Vérifiez les listes de contrôle d’accès sur `/etc/cloudservices`. Les listes de contrôle d’accès doivent être les suivantes :
 
-   * allow; jcr:read; webservice-support-servicelibfinder
+   * allow; jcr:read; webservice-support-service-elibfinder
    * allow; jcr:read; everyone; rep:glob:&amp;ast;/defaults/&amp;ast;
    * allow; jcr:read; everyone; rep:glob:&amp;ast;/defaults
    * allow; jcr:read; everyone; rep:glob:&amp;ast;/public/&amp;ast;
    * allow; jcr:read; everyone; rep:glob:&amp;ast;/public
 
-Pour plus d’informations sur la gestion des listes de contrôle d’accès, consultez la page [Administration et sécurité des utilisateurs](/help/sites-administering/security.md#permissions-in-aem).
+Pour plus d’informations sur la gestion des listes de contrôle d’accès, consultez la section [Administration et sécurité des utilisateurs](/help/sites-administering/security.md#permissions-in-aem) page.
 
-## Problèmes d’intégration dans Target {#target-integration-issues}
+## Problèmes d’intégration de Target {#target-integration-issues}
 
-### Le contenu cible n’est pas visible en mode Aperçu lors de l’utilisation de composants de page personnalisés {#targeted-content-not-visible-in-preview-mode-when-using-custom-page-components}
+### Contenu ciblé non visible en mode Aperçu lors de l’utilisation de composants de page personnalisés {#targeted-content-not-visible-in-preview-mode-when-using-custom-page-components}
 
-Ce problème se produit parce que les composants de page personnalisés n’incluent pas le bon JSP ou les bibliothèques clientes qui gèrent les intégrations de gestion dynamique des balises dans Target.
+Ce problème se produit car les composants de page personnalisés n’incluent pas le JSP correct ou les bibliothèques clientes qui gèrent les intégrations de la gestion dynamique des balises Target.
 
 #### Solution {#solution-3}
 
-Vous pouvez essayer les solutions suivantes :
+Vous pouvez essayer les solutions suivantes :
 
 * Assurez-vous que le fichier personnalisé `headlibs.jsp` (le cas échéant, `/apps/<CUSTOM-COMPONENTS-PATH>/headlibs.jsp`) inclut les propriétés suivantes :
 
@@ -137,11 +153,11 @@ Le fichier `servicelibs.jsp` ajoute les objets d’analyse JavaScript requis et 
 
 Le jeu de bibliothèques chargé dépend du type de bibliothèque cliente cible (`mbox.js` ou `at.js`) utilisé dans la configuration de Target.
 
-Lorsque vous utilisez la gestion dynamique des balises pour fournir `mbox.js` ou `at.js`, assurez-vous que les bibliothèques sont chargées avant que le contenu soit rendu. L’utilisation de systèmes de gestion des balises qui chargent ces bibliothèques de manière asynchrone risque d’entraîner des problèmes lors de l’exécution du code JavaScript spécifique à la cible.
+Lorsque vous utilisez la gestion dynamique des balises pour fournir `mbox.js` ou `at.js`, assurez-vous que les bibliothèques sont chargées avant que le contenu soit rendu. L’utilisation de systèmes Tag Management qui chargent ces bibliothèques de manière asynchrone peut entraîner des problèmes lors de l’exécution du code JavaScript spécifique à la cible.
 
-Pour plus d’informations, consultez la page [Développement pour le contenu ciblé](/help/sites-developing/target.md#understanding-the-target-component).
+Pour plus d’informations, reportez-vous à la section [Développement pour le contenu ciblé](/help/sites-developing/target.md#understanding-the-target-component) page.
 
-### L’erreur « Identifiant de suite de rapports manquant dans l’initialisation d’AppMeasurement » s’affiche dans la console du navigateur. {#the-error-missing-report-suite-id-in-appmeasurement-initialization-is-displayed-in-the-browser-console}
+### L’erreur &quot;Identifiant de suite de rapports manquant dans l’initialisation d’AppMeasurement&quot; s’affiche dans la console du navigateur. {#the-error-missing-report-suite-id-in-appmeasurement-initialization-is-displayed-in-the-browser-console}
 
 Ce problème peut se produire lorsqu’Adobe Analytics est mis en œuvre sur le site web à l’aide de la gestion dynamique des balises et utilise le code personnalisé. Cette expression utilise `s = new AppMeasurement()` pour instancier l’objet `s`.
 
@@ -154,9 +170,9 @@ var s_account="INSERT-RSID-HERE"
 var s=s_gi(s_account)
 ```
 
-### Une offre par défaut s’affiche de manière aléatoire au lieu de l’offre correcte {#a-default-offer-is-randomly-displayed-instead-of-the-correct-offer}
+### Une offre par défaut s’affiche de manière aléatoire au lieu de l’offre correcte. {#a-default-offer-is-randomly-displayed-instead-of-the-correct-offer}
 
-Ce problème peut avoir plusieurs causes :
+Ce problème peut avoir plusieurs causes :
 
 * Le chargement asynchrone de bibliothèques clientes cibles (`mbox.js` ou `at.js`) à l’aide de systèmes de gestion des balises tiers peut rompre le ciblage de manière aléatoire. Les bibliothèques cibles doivent être chargées de manière synchrone dans l’en-tête de la page. C’est toujours le cas lorsque les bibliothèques sont diffusées à partir d’AEM.
 
@@ -164,12 +180,12 @@ Ce problème peut avoir plusieurs causes :
 
 #### Solution {#solution-5}
 
-Vous pouvez essayer les solutions suivantes :
+Vous pouvez essayer les solutions suivantes :
 
-* Assurez-vous que le code client utilisé pour charger les bibliothèques de gestion dynamique des balises (qui, à leur tour, chargent les bibliothèques cible) est exécuté de manière synchrone dans l’[en-tête de la page](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages).
+* Assurez-vous que le code client qui charge les bibliothèques de type DTM (qui à leur tour chargent les bibliothèques Target) est exécuté de manière synchrone dans la variable [en-tête de page](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages).
 * Si le site est configuré pour utiliser la gestion dynamique des balises pour fournir les bibliothèques cible, assurez-vous que la **bibliothèque cliente diffusée par l’option de gestion dynamique des balises** est cochée dans la [configuration cible](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/target-configuring.html) de ce site.
 
-### Une offre par défaut s’affiche toujours à la place de l’offre correcte lors de l’utilisation d’AT.js 1.3+ {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
+### Une offre par défaut est toujours affichée à la place de l’offre correcte lors de l’utilisation d’AT.js 1.3+ {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
 Les versions prêtes à l’emploi AEM 6.2 et 6.3 ne sont pas compatibles avec AT.js version 1.3.0+. Avec l’introduction par AT.js version 1.3.0 de la validation des paramètres pour ses API, `adobe.target.applyOffer()` a besoin d’un paramètre « mbox » qui n’est pas fourni par le code `atjs-itegration.js`.
 
@@ -196,7 +212,7 @@ Ce problème est probablement lié à la mise en service de la [configuration A4
 
 #### Solution {#solution-7}
 
-Vous devez vérifier qu’A4T est correctement activé pour votre compte Target en envoyant la demande de vérification suivante à AEM :
+Vous devez vérifier que A4T est correctement activé pour votre compte Target en adressant la demande de vérification suivante à AEM :
 
 ```
 http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.a4t.json
@@ -216,9 +232,9 @@ Si la réponse contient la ligne `a4tEnabled:false`, contactez l’[Assistance c
 
 ### API Target utiles {#helpful-target-apis}
 
-Vous trouverez ci-dessous deux API Target qui peuvent s’avérer utiles lors du dépannage des problèmes dans Target :
+Vous trouverez ci-dessous deux API Target pouvant être utiles pour résoudre les problèmes liés à Target :
 
-* Pour récupérer le point de terminaison Target pour un code client spécifique
+* Récupération du point de terminaison Target pour un code client donné
 
 ```
 https://admin.testandtarget.omniture.com/rest/v1/endpoint/<CLIENTCODE>.json
@@ -226,7 +242,7 @@ https://admin.testandtarget.omniture.com/rest/v1/endpoint/<CLIENTCODE>.json
 {"api":"https://admin<N>.testandtarget.omniture.com/admin/rest/v1"}
 ```
 
-* Pour récupérer le profil d’un client
+* Récupération du profil d’un client
 
 ```
 https://admin<N>.testandtarget.omniture.com/admin/rest/v1/clients/<CLIENT>?email=<EMAIL>&password=<PASSWORD>

@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 exl-id: 538d6c02-acee-4774-ab3f-1cf152bb42da
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 13%
+source-wordcount: '633'
+ht-degree: 9%
 
 ---
 
 # Tableau de bord des applications AEM Mobile {#aem-mobile-application-dashboard}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -25,7 +29,7 @@ ht-degree: 13%
 
 Vous pouvez gérer le contenu de votre application et de votre application mobile à partir du tableau de bord de l’application AEM Mobile ou du centre de contrôle.
 
-Vous pouvez passer en revue chaque mosaïque du Centre de contrôle pour afficher ou modifier ses détails en cliquant sur « … » dans le coin inférieur droit.
+Vous pouvez parcourir chaque mosaïque du Centre de contrôle pour afficher ou modifier les détails en cliquant sur &quot;...&quot;. dans le coin inférieur droit.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -37,14 +41,14 @@ La gestion du contenu des applications nécessite un effort collectif des dével
 
 Enfin, les administrateurs publient stratégiquement le contenu de l’application mis à jour.
 
-## Mosaïque Gestion de l’application {#the-manage-app-tile}
+## Mosaïque Gérer l’application {#the-manage-app-tile}
 
 Le **Gérer l’application** La mosaïque affiche les informations d’application disponibles :
 
 * Titre
 * Description
 * Icône
-* Dernière modification
+* Date de dernière modification
 * Dernière modification par
 
 ![chlimage_1-55](assets/chlimage_1-55.png)

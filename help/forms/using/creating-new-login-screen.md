@@ -1,7 +1,7 @@
 ---
-title: Création d’un écran de connexion
+title: Créer un écran de connexion
 seo-title: Creating a new login screen
-description: Comment modifier la page de connexion des modules de LiveCycle, par exemple de l’espace de travail AEM Forms ou de Forms Manager.
+description: Comment modifier la page de connexion des modules de LiveCycle, par exemple AEM Forms Workspace ou Forms Manager.
 seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
 uuid: c7643f87-4a08-4c63-b87c-f987dbe18ece
 content-type: reference
@@ -9,16 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 exl-id: caa4f835-c353-49d5-b18c-4d0538c1136f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 99%
+source-wordcount: '504'
+ht-degree: 79%
 
 ---
 
-# Création d’un écran de connexion {#creating-a-new-login-screen}
+# Créer un écran de connexion {#creating-a-new-login-screen}
 
-Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui utilisent l’écran de connexion AEM Forms. Par exemple, les modifications affectent à la fois l’écran de connexion de Forms Manager et de l’espace de travail AEM Forms.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui utilisent l’écran de connexion AEM Forms. Par exemple, les modifications affectent l’écran de connexion de Forms Manager et de l’espace de travail AEM Forms.
 
 ## Prérequis {#prerequisite}
 
@@ -179,7 +183,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
    for(int i=0; i<locales.length; i++)
    ```
 
-## Ajout de nouveau texte ou modification du texte existant {#adding-new-text-or-modifying-existing-text}
+## Ajouter un nouveau texte ou modifier du texte existant {#adding-new-text-or-modifying-existing-text}
 
 1. Copiez le dossier `i18n`
 
@@ -223,8 +227,8 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
    * vers `/apps/livecycle/core/content`
 
 1. Supprimez les fichiers `login.js` et `jquery-1.8.0.min.js` du noeud `/apps/livecycle/core/content/login.`
-1. Modifiez les styles définis dans le fichier CSS.
-1. Pour ajouter de nouveaux styles :
+1. Modifiez les styles du fichier CSS.
+1. Pour ajouter de nouveaux styles :
 
    1. Ajoutez de nouveaux styles à `/apps/livecycle/core/content/login/login.css`
    1. Copier `login.jsp`
@@ -262,7 +266,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 ## Ajoutez de nouvelles images {#add-new-images}
 
 1. Suivez les étapes des sections Ajout d’un nouveau style ou Modification d’un style existant (présentées ci-dessus).
-1. Ajoutez de nouvelles images dans `/apps/livecycle/core/content/login`. Pour ajouter une image :
+1. Ajoutez de nouvelles images dans `/apps/livecycle/core/content/login`. Pour ajouter une image :
 
    1. Installez le client WebDAV.
    1. Naviguez jusqu’au dossier `/apps/livecycle/core/content/login` à l’aide du client webDAV. Pour plus d’informations, consultez le site [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/fr/crx/current/how_to/webdav_access.html).

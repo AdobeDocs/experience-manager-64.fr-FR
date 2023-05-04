@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 exl-id: 3f7d1b95-729a-4c55-af96-efdb9617d333
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 5%
+source-wordcount: '701'
+ht-degree: 6%
 
 ---
 
 # Événements OSGi pour les composants Communities {#osgi-events-for-communities-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
@@ -36,7 +40,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 |---|---|
 | POST | Un membre crée un événement de calendrier |
 | AJOUTER | commentaires d’un membre sur un événement de calendrier |
-| UPDATE | l’événement ou le commentaire de calendrier du membre est modifié. |
+| MISE À JOUR | l’événement ou le commentaire de calendrier du membre est modifié. |
 | SUPPRIMER | l’événement ou le commentaire de calendrier du membre est supprimé. |
 
 [Composant Commentaires](essentials-comments.md)
@@ -46,7 +50,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 |---|---|
 | POST | Un membre crée un commentaire |
 | AJOUTER | réponses du membre au commentaire |
-| UPDATE | le commentaire du membre est modifié. |
+| MISE À JOUR | le commentaire du membre est modifié. |
 | SUPPRIMER | le commentaire du membre est supprimé. |
 
 [Composant Bibliothèque de fichiers](essentials-file-library.md)
@@ -56,7 +60,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 |---|---|
 | POST | crée un dossier |
 | ATTACH | Le membre charge un fichier |
-| UPDATE | met à jour un dossier ou un fichier |
+| MISE À JOUR | met à jour un dossier ou un fichier |
 | SUPPRIMER | supprime un dossier ou un fichier |
 
 [Composant du forum](essentials-forum.md)
@@ -66,7 +70,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 |---|---|
 | POST | thème de forum de création de membre |
 | AJOUTER | réponses des membres au sujet du forum |
-| UPDATE | Le sujet ou la réponse du forum du membre est modifié |
+| MISE À JOUR | Le sujet ou la réponse du forum du membre est modifié |
 | SUPPRIMER | La rubrique ou la réponse du forum du membre est supprimée |
 
 [Composant Journal](blog-developer-basics.md)
@@ -76,7 +80,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 |---|---|
 | POST | Un membre crée un article de blog. |
 | AJOUTER | commentaires d&#39;un membre sur un article de blog |
-| UPDATE | article ou commentaire de blog du membre modifié |
+| MISE À JOUR | article ou commentaire de blog du membre modifié |
 | SUPPRIMER | article ou commentaire de blog du membre supprimé |
 
 [Composant Q&amp;R](qna-essentials.md)
@@ -86,7 +90,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 |---|---|
 | POST | crée une question Q&amp;R |
 | AJOUTER | crée une réponse Q&amp;R |
-| UPDATE | Q&amp;R du membre : une question ou une réponse est modifiée |
+| MISE À JOUR | Q&amp;R du membre : une question ou une réponse est modifiée |
 | SELECT | la réponse du membre est sélectionnée. |
 | UNSELECT | la réponse du membre est désélectionnée. |
 | SUPPRIMER | Q&amp;R du membre : une question ou une réponse est supprimée |
@@ -97,7 +101,7 @@ SocialEvent `topic`= com/adobe/cq/social/review
 | **Verbe** | **Description** |
 |---|---|
 | POST | création de la révision par le membre |
-| UPDATE | la révision du membre est modifiée. |
+| MISE À JOUR | la révision du membre est modifiée. |
 | SUPPRIMER | la révision du membre est supprimée. |
 
 [Composant d’évaluation](rating-basics.md)

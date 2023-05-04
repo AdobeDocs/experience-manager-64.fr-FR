@@ -1,7 +1,7 @@
 ---
-title: Lancement d’un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms
+title: Démarrer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms
 seo-title: Initiating a new process with existing process data in AEM Forms workspace
-description: Découvrez comment vous pouvez démarrer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms.
+description: Découvrez comment lancer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms.
 seo-description: See how you can initiate a new process with existing process data in AEM Forms workspace.
 uuid: 57a7f414-c9f2-4acc-890a-e29e1adff084
 content-type: reference
@@ -9,24 +9,28 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4d55a100-1876-41f0-a06f-7a009c934f3d
 exl-id: d7bdbd22-97b0-45cd-8e72-43ca3d0d1215
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 99%
+source-wordcount: '268'
+ht-degree: 25%
 
 ---
 
-# Lancement d’un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms {#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
+# Démarrer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms {#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
 
-Vous pouvez lancer un nouveau processus à l’aide des données de processus existantes. La nécessité de lancer un nouveau processus à partir des données de processus existantes survient lorsqu’un même formulaire doit être utilisé fréquemment et que son contenu inclut peu de modifications, comme les formulaires pour congés payés. Cette fonction permet de gagner du temps et de faciliter l’expérience des utilisateurs, en particulier lorsque le processus implique le remplissage de longs formulaires.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Vous trouverez ci-dessous les étapes à suivre pour lancer un nouveau processus à partir des données de processus existantes : -
+Vous pouvez lancer un nouveau processus à l’aide des données d’un processus existant. La nécessité d’initier un nouveau processus à partir des données de processus existantes survient lorsque nous devons fréquemment utiliser le même formulaire avec peu de modifications de contenu, comme les formulaires pour congés payés. Cette fonctionnalité permet aux utilisateurs de gagner du temps et de faire des efforts, en particulier lorsque le processus a un long formulaire à remplir.
 
-1. Il peut effectuer l’une des opérations suivantes :
+Voici les étapes pour lancer un nouveau processus à partir des données de processus existantes : -
 
-   * Dans Suivi, cliquez sur l’instance de processus dont vous souhaitez utiliser les données. Dans la vue Historique des processus dans le volet droit, cliquez sur la ligne de tâche correspondant au point de départ.
-   * Dans Suivi, sélectionnez un modèle de recherche pour afficher une liste des instances de processus. Sélectionnez l’instance dont vous souhaitez utiliser les données.
-   * Dans l’onglet **[!UICONTROL Tâches]**, sélectionnez une tâche. Cliquez sur l’onglet **[!UICONTROL Historique]** et sélectionnez une tâche qui a lancé une instance de processus.
+1. Effectuez l’une des opérations suivantes :
+
+   * Dans Tracking, cliquez sur l’instance de processus dont vous souhaitez utiliser les données. Dans la vue Historique des processus du volet de droite, cliquez sur la ligne de tâche correspondant au point de départ.
+   * Dans Suivi, sélectionnez un modèle de recherche pour afficher une liste des instances de processus. Sélectionnez l&#39;instance dont vous souhaitez utiliser les données.
+   * Dans le **[!UICONTROL Tâches]** , sélectionnez la tâche. Cliquez sur le bouton **[!UICONTROL Histoire]** et sélectionnez la tâche qui a lancé l’instance de processus.
 
    ![start3](assets/start3.png) ![start1](assets/start1.png)
 

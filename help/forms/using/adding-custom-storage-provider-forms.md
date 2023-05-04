@@ -10,20 +10,24 @@ topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
 exl-id: 22f78940-de5f-4e16-b1f8-c3762d81802b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 100%
+source-wordcount: '347'
+ht-degree: 48%
 
 ---
 
 # Stockage personnalisé pour le composant Brouillons et envois {#custom-storage-for-drafts-and-submissions-component}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Présentation {#overview}
 
-AEM Forms vous permet d’enregistrer un formulaire sous forme de brouillon. La fonctionnalité de brouillon vous permet de mettre à jour un formulaire de travail en cours, que vous pouvez remplir et envoyer ultérieurement sur n’importe quel périphérique.
+AEM Forms vous permet d’enregistrer un formulaire en tant que brouillon. La fonctionnalité de brouillon vous permet de gérer un formulaire de travail en cours, que vous pouvez compléter et envoyer ultérieurement à partir de n’importe quel périphérique.
 
-Par défaut, AEM Forms stocke les données d’utilisateur associées au brouillon et à l’envoi d’un formulaire dans le nœud `/content/forms/fp` de l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Par exemple, vous pouvez stocker des données utilisateur dans un magasin de données.
+Par défaut, AEM Forms stocke les données d’utilisateur associées au brouillon et à l’envoi d’un formulaire dans le nœud `/content/forms/fp` de l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Vous pouvez par exemple stocker des données utilisateur dans un entrepôt de données.
 
 ## Prérequis  {#prerequisites}
 
@@ -184,7 +188,7 @@ public interface SubmitDataService {
 }
 ```
 
-Le portail Forms utilise le concept d’identificateur unique universel (UUID) pour générer un identificateur unique pour chaque brouillon et formulaire envoyé. Vous pouvez également générer un identifiant unique de votre choix. Vous pouvez implémenter l’interface FPKeyGeneratorService, remplacer ses méthodes et développer une logique personnalisée pour générer un identifiant unique personnalisé pour chaque brouillon et formulaire envoyé. En outre, définissez le rang de service de l’implémentation de génération d’ID personnalisé sur une valeur supérieure à 0. Cela garantit que l’implémentation personnalisée est utilisée à la place de l’implémentation par défaut.
+Forms Portal utilise le concept d’identifiant unique universel (UUID) pour générer un identifiant unique pour chaque brouillon et formulaire envoyé. Vous pouvez également générer votre propre identifiant unique. Vous pouvez implémenter l’interface FPKeyGeneratorService, remplacer ses méthodes et développer une logique personnalisée pour générer un identifiant unique personnalisé pour chaque brouillon et formulaire envoyé. En outre, définissez le rang de service de l’implémentation de la génération d’identifiants personnalisée supérieur à 0. Cela garantit que l’implémentation personnalisée est utilisée à la place de l’implémentation par défaut.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -199,7 +203,7 @@ public interface FPKeyGeneratorService {
 }
 ```
 
-Vous pouvez utiliser l’annotation ci-dessous pour augmenter le classement du service pour l’ID personnalisé généré avec le code ci-dessus :
+Vous pouvez utiliser l’annotation ci-dessous pour augmenter le classement du service pour l’ID personnalisé généré avec le code ci-dessus :
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 

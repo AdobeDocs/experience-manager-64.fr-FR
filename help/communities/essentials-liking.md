@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
 exl-id: 509d1fb4-a88d-4438-a618-ba063adb6fb9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 2%
+source-wordcount: '326'
+ht-degree: 3%
 
 ---
 
 # Notions fondamentales relatives aux mentions J’aime {#liking-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le composant J’aime, une [tally](tally.md) subclass est un outil utile qui permet aux membres d’exprimer une opinion positive sur un élément de contenu particulier en sélectionnant simplement l’icône coeur.
 

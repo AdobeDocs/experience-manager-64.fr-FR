@@ -1,5 +1,5 @@
 ---
-title: Le Framework de protection CSRF
+title: Le framework de protection CSRF
 seo-title: The CSRF Protection Framework
 description: Le framework utilise des jetons pour garantir que la demande du client est légitime
 seo-description: The framework makes use of tokens to guarantee that the client request is legitimate
@@ -10,16 +10,20 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: 533c348e-517f-4d70-a89c-bfc87f71a633
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 100%
+source-wordcount: '318'
+ht-degree: 76%
 
 ---
 
-# Le Framework de protection CSRF{#the-csrf-protection-framework}
+# Le framework de protection CSRF {#the-csrf-protection-framework}
 
-En plus du filtre Apache Sling Referrer, Adobe fournit également un nouveau framework de protection CSRF pour se protéger contre ce type d’attaque.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Outre le filtre de référent Apache Sling, Adobe fournit également un nouveau framework de protection CSRF pour se protéger contre ce type d’attaque.
 
 Le framework utilise des jetons pour garantir que la demande du client est légitime. Les jetons sont générés lorsque le formulaire est envoyé au client et validé lorsque le formulaire est renvoyé au serveur.
 
@@ -35,7 +39,7 @@ Tout composant associé à la dépendance `granite.jquery` bénéficie automatiq
 
 ### Réplication de la clé de chiffrement {#replicating-crypto-keys}
 
-Pour utiliser les jetons, vous devez répliquer le binaire `/etc/keys/hmac` sur toutes les instances de votre déploiement. Un moyen pratique de copier la clé HMAC sur toutes les instances consiste à créer un module contenant la clé et à l’installer via le gestionnaire de modules sur toutes les instances.
+Pour utiliser les jetons, vous devez répliquer le binaire `/etc/keys/hmac` sur toutes les instances de votre déploiement. Un moyen pratique de copier la clé HMAC sur toutes les instances consiste à créer un package contenant la clé et à l’installer via le gestionnaire de packages sur toutes les instances.
 
 >[!NOTE]
 >

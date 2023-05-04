@@ -10,14 +10,18 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
 exl-id: fdf1aba8-17fa-473a-9c32-7189d0628927
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 98%
+source-wordcount: '668'
+ht-degree: 87%
 
 ---
 
 # Modèles de fragment de contenu{#content-fragment-templates}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!CAUTION]
 >
@@ -62,7 +66,7 @@ L’ordre de priorité est (dans l’ordre décroissant) `/conf`, `/apps`, `/lib
 >
 
 
-La structure de base d’un modèle est stockée sous :
+La structure de base d’un modèle est conservée sous :
 
 ```xml
 conf
@@ -75,7 +79,7 @@ conf
               ...
 ```
 
-La structure spécifique étant :
+Avec la structure spécifique :
 
 ```xml
 + <template-name>

@@ -11,14 +11,18 @@ topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 0ae0ddbf-ded6-4494-bf94-bf6cf7f1fd46
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 95%
+source-wordcount: '854'
+ht-degree: 92%
 
 ---
 
 # Présentation des processus AEM Forms {#understanding-aem-forms-processes}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Un cas dʼutilisation courant consiste à utiliser un ensemble de services AEM Forms sur un seul document. Vous pouvez envoyer une demande au conteneur de services en créant un processus à l’aide de Workbench. Un processus correspond à un processus métier que vous souhaitez automatiser. Pour plus d’informations sur la création de processus, consultez la section [Utiliser Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).
 
@@ -46,7 +50,7 @@ L’illustration suivante représente un exemple de processus de courte durée n
 
 >[!NOTE]
 >
->Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre les exemples de code qui expliquent comment appeler ce processus, créez un processus nommé `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre les exemples de code qui expliquent comment appeler ce processus, créez un processus nommé `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
 
 Lorsque ce processus est invoqué, il effectue les actions suivantes :
 
@@ -58,7 +62,7 @@ Lorsque ce processus est invoqué, il effectue les actions suivantes :
 
    >[!NOTE]
    >
-   >En règle générale, un processus de courte durée comprend plus de trois actions. La création dʼun processus sʼeffectue à lʼaide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+   >En règle générale, un processus de courte durée comprend plus de trois actions. La création dʼun processus sʼeffectue à lʼaide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
 
    La section *Programmation avec AEM Forms* décrit les différentes méthodes dʼappel par programmation de ce processus de courte durée, à savoir :
 

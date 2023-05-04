@@ -10,16 +10,20 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: 65e534ec-7f73-4333-b225-7adf082f66d5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 100%
+source-wordcount: '670'
+ht-degree: 57%
 
 ---
 
 # Annotations lors de la modification d’une page{#annotations-when-editing-a-page}
 
-L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette procédure, de nombreux composants directement liés au contenu (contrairement, par exemple, à la mise en page) permettent d’ajouter une annotation.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette opération, de nombreux composants directement liés au contenu (par opposition, à la mise en page, par exemple) vous permettent d’ajouter une annotation.
 
 Une annotation place une note autocollante colorée sur la page. L’annotation vous permet (ainsi qu’aux autres utilisateurs) de laisser des commentaires ou des questions à l’intention d’autres auteurs ou réviseurs.
 
@@ -29,7 +33,7 @@ Une annotation place une note autocollante colorée sur la page. L’annotation 
 
 >[!NOTE]
 >
->Les annotations créées dans l’IU classique sont affichées dans l’IU optimisée pour les écrans tactiles. Toutefois, les esquisses sont spécifiques à l’IU et ne s’affichent donc que dans l’interface dans laquelle elles ont été créées.
+>Les annotations créées dans l’interface utilisateur classique s’affichent dans l’interface utilisateur tactile. Toutefois, les esquisses sont spécifiques à l’interface utilisateur et elles ne s’affichent que dans l’interface dans laquelle elles ont été créées.
 
 >[!CAUTION]
 >
@@ -58,9 +62,9 @@ Un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) spécial
 
 ### Annotation d’un composant {#annotating-a-component}
 
-Le mode Annoter permet de créer, de modifier, de déplacer ou de supprimer des annotations sur votre contenu :
+Le mode Annotation vous permet de créer, modifier, déplacer ou supprimer des annotations sur votre contenu :
 
-1. Pour activer le mode Annotation, cliquez sur l’icône dans la barre d’outils (en haut à droite) lorsque vous modifiez une page :
+1. Vous pouvez entrer en mode Annotation à l’aide de l’icône de la barre d’outils (en haut à droite) lors de la modification d’une page :
 
    ![](do-not-localize/screen_shot_2018-03-22at110414.png)
 
@@ -68,21 +72,21 @@ Le mode Annoter permet de créer, de modifier, de déplacer ou de supprimer des 
 
    >[!NOTE]
    >
-   >Pour quitter le mode Annotation, appuyez ou cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
+   >Pour quitter le mode Annotation, appuyez/cliquez sur l’icône Annoter (symbole x) située à droite de la barre d’outils supérieure.
 
 1. Cliquez/appuyez sur l’icône Ajouter une annotation (symbole plus à gauche de la barre d’outils) pour commencer à ajouter des annotations.
 
    >[!NOTE]
    >
-   >Pour mettre un terme à l’ajout d’annotations (et revenir à l’affichage), appuyez/cliquez sur l’icône Annuler (symbole x dans un cercle blanc) à gauche de la barre d’outils supérieure.
+   >Pour arrêter l’ajout d’annotations (et revenir à l’affichage), appuyez/cliquez sur l’icône Annuler (symbole x dans un cercle blanc) à gauche de la barre d’outils supérieure.
 
-1. Cliquez/appuyez sur le composant requis (les composants qui peuvent être annotés sont encadrés en bleu) pour ajouter l’annotation et ouvrir la boîte de dialogue :
+1. Cliquez/appuyez sur le composant requis (les composants pouvant être annotés sont mis en surbrillance avec une bordure bleue) pour ajouter l’annotation et ouvrir la boîte de dialogue :
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
-   Utilisez alors le champ et/ou l’icône appropriée pour effectuer ce qui suit :
+   Ici, vous pouvez utiliser le champ et/ou l’icône appropriés pour :
 
-   * Entrez le texte de l’annotation.
+   * Saisissez le texte de l’annotation.
    * Créez une esquisse (traits et formes) pour mettre en surbrillance une zone du composant.
 
       Le curseur prend la forme d’une croix lorsque vous créez une esquisse. Vous pouvez tracer plusieurs lignes distinctes. La ligne d’esquisse reflète la couleur de l’annotation et peut être une flèche, un cercle ou un ovale.
@@ -96,23 +100,23 @@ Le mode Annoter permet de créer, de modifier, de déplacer ou de supprimer des 
 
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
-1. Pour fermer la boîte de dialogue de l’annotation, cliquez ou appuyez en dehors de la boîte de dialogue. Une vue tronquée (le premier mot) de l’annotation s’affiche avec les schémas :
+1. Pour fermer la boîte de dialogue de l’annotation, cliquez ou appuyez en dehors de la boîte de dialogue. Une vue tronquée (le premier mot) de l’annotation, ainsi que les schémas, s’affiche :
 
    ![screen_shot_2018-03-22at110850](assets/screen_shot_2018-03-22at110850.png)
 
 1. Après avoir modifié une annotation, vous pouvez effectuer ce qui suit :
 
-   * Cliquer/appuyer sur la marque de texte pour ouvrir l’annotation. Vous pouvez alors voir le texte intégral de l’annotation, modifier cette dernière ou encore la supprimer.
+   * Cliquez ou appuyez sur le marqueur de texte pour ouvrir l’annotation. Une fois ouvert, vous pouvez afficher le texte intégral, apporter des modifications ou supprimer l’annotation.
 
-      * Il n’est pas possible de supprimer les esquisses indépendamment de l’annotation.
+      * Les schémas ne peuvent pas être supprimés indépendamment de l’annotation.
    * Repositionner la marque de texte.
    * Cliquez/appuyez sur un trait du schéma pour le sélectionner et le faire glisser jusqu’à la position voulue.
-   * Déplacer ou copier un composant.
+   * Déplacer ou copier un composant
 
-      * Toutes les annotations qui lui sont associées, ainsi que leurs esquisses, sont également déplacées ou copiées ; leur position par rapport au paragraphe demeure inchangée.
+      * Toutes les annotations associées et leurs schémas sont également déplacés ou copiés et leur position par rapport au paragraphe reste la même.
 
 
-1. Pour quitter le mode Annotation et revenir au mode précédemment affiché, appuyez ou cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
+1. Pour quitter le mode Annotation et revenir au mode précédemment utilisé, appuyez/cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
 
 >[!NOTE]
 >Les annotations ne peuvent pas être ajoutées à une page verrouillée par un autre utilisateur.

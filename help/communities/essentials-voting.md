@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 exl-id: f2ecd59c-a311-4e4a-b1a8-2bc3afe0599d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 2%
+source-wordcount: '320'
+ht-degree: 3%
 
 ---
 
 # Notions fondamentales sur le vote {#voting-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le composant Vote, une [tally](tally.md) subclass est un outil utile qui permet aux membres d’évaluer un élément de contenu particulier en sélectionnant simplement les flèches haut ou bas pour indiquer leur opinion.
 

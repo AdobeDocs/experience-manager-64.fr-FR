@@ -1,5 +1,5 @@
 ---
-title: Balisage de contenu généré par l’utilisateur
+title: Balisage du contenu généré par l’utilisateur
 seo-title: Tagging User Generated Content
 description: Le balisage du contenu généré par l’utilisateur (UGC) permet aux membres de la communauté d’aider d’autres membres à rechercher du contenu.
 seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 role: Admin
 exl-id: 834df392-df38-498c-9e2a-489484e20e0a
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 8%
+source-wordcount: '263'
+ht-degree: 7%
 
 ---
 
-# Balisage de contenu généré par l’utilisateur {#tagging-user-generated-content}
+# Balisage du contenu généré par l’utilisateur {#tagging-user-generated-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 

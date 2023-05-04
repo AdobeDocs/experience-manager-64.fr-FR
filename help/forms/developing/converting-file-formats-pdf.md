@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 79091a75-2669-453f-9560-e58bfffa3487
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '7872'
-ht-degree: 97%
+source-wordcount: '7908'
+ht-degree: 95%
 
 ---
 
 # Convertir entre les formats de fichier et le PDF {#converting-between-file-formatsand-pdf}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 **À propos du service Generate PDF**
 
@@ -48,29 +52,29 @@ Le service Generate PDF utilise des applications natives pour convertir les for
 
 * Adobe FrameMaker® 7.2 et 8 pour convertir le format FM (Windows uniquement).
 * Adobe PageMaker 7.0 pour convertir les formats PMD, PM6, P65 et PM (Windows uniquement).
-* Formats natifs pris en charge par les applications tierces (requiert le développement de fichiers d’installation spécifiques à l’application) (Windows uniquement)
+* Formats natifs pris en charge par les applications tierces (nécessite le développement de fichiers de configuration spécifiques à l’application) (Windows uniquement)
 
-Le service Generate PDF peut convertir les formats standards suivants en PDF.
+Le service Generate PDF convertit les formats de fichiers standard suivants en PDF.
 
-* Formats vidéo : SWF, FLV (Windows uniquement)
-* Formats image : JPEG, JPG, JP2, J2Kí, JPC, J2C, GIF, BMP, TIFF, TIF, PNG, JPF
-* HTML (Windows, Sun™, Solaris™ et Linux®).
+* Formats vidéo : SWF, FLV (Windows uniquement)
+* Formats d’image : JPEG, JPG, JP2, J2Kí, JPC, J2C, GIF, BMP, TIFF, TIF, PNG, JPF
+* HTML (Windows, Sun™ Solaris™ et Linux®)
 
-Le service Generate PDF peut convertir des PDF aux formats de fichiers suivants (Windows uniquement) :
+Le service Generate PDF convertit PDF aux formats de fichier suivants (Windows uniquement) :
 
-* Encapsulated Postscript (EPS)
-* HTML3.2
-* HTML 4.01 avec CSS 1.0
-* DOC (format Microsoft Word)
+* Encapsulated PostScript (EPS)
+* HTML 3.2
+* HTML 4.01 avec CSS 1.0
+* DOC (format Word Microsoft)
 * RTF
-* Texte (à la fois accessible et brut)
+* Texte (accessible et brut)
 * XML
 * PDF/A-1a utilisant uniquement l’espace colorimétrique DeviceRGB.
 * PDF/A-1b utilisant uniquement l’espace colorimétrique DeviceRGB.
 
-Le service Generate PDF requiert que vous réalisiez ces tâches administratives :
+Le service Generate PDF requiert que vous effectuiez les tâches administratives suivantes :
 
-* Installez les applications natives requises sur l’ordinateur hébergeant AEM Forms
+* Installez les applications natives requises sur l’ordinateur hébergeant AEM Forms.
 * Installez Adobe Acrobat Professional ou Acrobat Pro Extended 9.2 sur l’ordinateur hébergeant AEM Forms.
 * Réalisez les tâches consécutives à l’installation.
 
@@ -96,7 +100,7 @@ Cette section décrit comment utiliser l’API Generate PDF pour convertir par p
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -263,7 +267,7 @@ Cette section décrit comment utiliser l’API Generate PDF pour convertir par 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Generate PDF, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -413,7 +417,7 @@ Cette section décrit comment utiliser l’API Java Generate PDF et l’API Web 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 

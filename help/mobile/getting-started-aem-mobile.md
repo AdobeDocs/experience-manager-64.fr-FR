@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 724e09c2-3df3-4080-a0d4-ee2ede483791
 exl-id: 3c9d856e-4f94-4295-9f30-d675110016b7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 14%
+source-wordcount: '242'
+ht-degree: 15%
 
 ---
 
 # Prise en main d’AEM Mobile{#getting-started-with-aem-mobile}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >

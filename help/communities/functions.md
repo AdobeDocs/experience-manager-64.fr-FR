@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
 role: Admin
 exl-id: 2007336d-d75c-4e01-af81-181751c04cfe
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 6%
+source-wordcount: '2568'
+ht-degree: 3%
 
 ---
 
 # Fonctions de la communauté {#community-functions}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le type de fonctionnalités attendu d’une expérience communautaire est bien connu. Les fonctions de communauté sont disponibles sous la forme de fonctions de communauté. Il s’agit essentiellement d’une ou de plusieurs pages préconfigurées pour mettre en oeuvre une fonctionnalité de communauté qui nécessite plus qu’un simple ajout d’un composant à une page en mode création. Il s’agit des blocs de construction utilisés pour définir la structure d’une [modèle de site communautaire](sites.md) à partir de quels sites communautaires [created](sites-console.md).
 
@@ -82,13 +86,13 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * Voir [Paramètres de titre et d’URL](#title-and-url-settings)
 * **[!UICONTROL Afficher la vue &quot;Mes activités&quot;]**
-Si cette case est cochée, la page Activités comprend un onglet qui filtre les activités en fonction de celles générées dans la communauté par le membre actuel. Cette option est cochée par défaut.
+Si cette case est cochée, la page Activités comprend un onglet qui filtre les activités en fonction de celles générées dans la communauté par le membre actuel. La valeur par défaut est cochée.
 
 * **[!UICONTROL Afficher la vue &quot;Toutes les activités&quot;]**
-Si cette case est cochée, la page Activités comprend un onglet qui inclut toutes les activités générées au sein de la communauté auxquelles le membre actuel a accès. Cette option est cochée par défaut.
+Si cette case est cochée, la page Activités comprend un onglet qui inclut toutes les activités générées au sein de la communauté auxquelles le membre actuel a accès. La valeur par défaut est cochée.
 
 * **[!UICONTROL Afficher la vue &quot;Flux de nouvelles&quot;]**
-Si cette case est cochée, la page Activités comprend un onglet qui filtre les activités en fonction de celles que le membre actuel suit. Cette option est cochée par défaut.
+Si cette case est cochée, la page Activités comprend un onglet qui filtre les activités en fonction de celles que le membre actuel suit. La valeur par défaut est cochée.
 
 ### Fonction Affectations {#assignments-function}
 
@@ -108,16 +112,16 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * Voir [Paramètres de titre et d’URL](#title-and-url-settings)
 * **[!UICONTROL Autoriser les membres privilégiés]**
-Si cette case est cochée, le blog ne permettra aux membres privilégiés que de créer des articles en autorisant la sélection d’un [groupe de membres privilégiés](users.md#privileged-members-group). Si cette option n’est pas cochée, tous les membres de la communauté sont autorisés à créer. Cette option n’est pas cochée par défaut.
+Si cette case est cochée, le blog ne permettra aux membres privilégiés que de créer des articles en autorisant la sélection d’un [groupe de membres privilégiés](users.md#privileged-members-group). Si cette option n’est pas cochée, tous les membres de la communauté sont autorisés à créer. La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser les chargements de fichiers]**
-Si cette case est cochée, le blog permet aux membres de charger des fichiers. Cette option est cochée par défaut.
+Si cette case est cochée, le blog permet aux membres de charger des fichiers. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser les réponses à threads]**
-Si cette option n’est pas cochée, le blog autorise les réponses (commentaires) à un article, mais les réponses aux commentaires ne sont pas autorisées. Cette option est cochée par défaut.
+Si cette option n’est pas cochée, le blog autorise les réponses (commentaires) à un article, mais les réponses aux commentaires ne sont pas autorisées. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser le contenu proposé]**
-Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](featured.md). Cette option est cochée par défaut.
+Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](featured.md). La valeur par défaut est cochée.
 
 ### Fonction Calendrier {#calendar-function}
 
@@ -129,19 +133,19 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * Voir [Paramètres de titre et d’URL](#title-and-url-settings)
 * **[!UICONTROL Permettre la mise en page]**
-Si cette option est cochée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. Cette option est cochée par défaut.
+Si cette option est cochée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser les membres privilégiés]**
-Si cette case est cochée, le blog ne permettra aux membres privilégiés que de créer des articles en autorisant la sélection d’un [groupe de membres privilégiés](users.md#privileged-members-group). Si cette option n’est pas cochée, tous les membres de la communauté sont autorisés à créer. Cette option n’est pas cochée par défaut.
+Si cette case est cochée, le blog ne permettra aux membres privilégiés que de créer des articles en autorisant la sélection d’un [groupe de membres privilégiés](users.md#privileged-members-group). Si cette option n’est pas cochée, tous les membres de la communauté sont autorisés à créer. La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser les chargements de fichiers]**
-Si cette case est cochée, le blog permet aux membres de charger des fichiers. Cette option est cochée par défaut.
+Si cette case est cochée, le blog permet aux membres de charger des fichiers. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser les réponses à threads]**
-Si cette option n’est pas cochée, le blog autorise les réponses (commentaires) à un article, mais les réponses aux commentaires ne sont pas autorisées. Cette option est cochée par défaut.
+Si cette option n’est pas cochée, le blog autorise les réponses (commentaires) à un article, mais les réponses aux commentaires ne sont pas autorisées. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser le contenu proposé]**
-Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](featured.md). Cette option est cochée par défaut.
+Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](featured.md). La valeur par défaut est cochée.
 
 ### Fonction Catalogue {#catalog-function}
 
@@ -159,7 +163,7 @@ Lorsqu’elle est ajoutée à un modèle, la configuration permet de spécifier 
    * Les espaces de noms de balise sélectionnés définissent les balises pouvant être sélectionnées par les visiteurs pour le filtrage de la liste des ressources d’activation répertoriées dans le catalogue.
    * Si cette case est cochée, tous les espaces de noms de balise autorisés pour le site de la communauté sont disponibles.
    * Si cette option n’est pas cochée, il est possible de sélectionner un ou plusieurs espaces de noms autorisés pour le site de la communauté.
-   * Cette option est cochée par défaut.
+   * La valeur par défaut est cochée.
 
 ### Fonction de contenu en vedette {#featured-content-function}
 
@@ -187,19 +191,19 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 * Voir [Paramètres de titre et d’URL](#title-and-url-settings)
 * **[!UICONTROL Permettre la mise en page]**
-Si cette option est cochée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. Cette option est cochée par défaut.
+Si cette option est cochée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser les membres privilégiés]**
-Si cette option est cochée, le forum autorise uniquement les membres privilégiés à publier des sujets en autorisant la sélection d’une [groupe de membres privilégiés](users.md#privileged-members-group). Si cette option n’est pas cochée, tous les membres de la communauté sont autorisés à publier du contenu. Cette option n’est pas cochée par défaut.
+Si cette option est cochée, le forum autorise uniquement les membres privilégiés à publier des sujets en autorisant la sélection d’une [groupe de membres privilégiés](users.md#privileged-members-group). Si cette option n’est pas cochée, tous les membres de la communauté sont autorisés à publier du contenu. La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser les chargements de fichiers]**
-Si cette option est cochée, le forum offre aux membres la possibilité de télécharger des fichiers. Cette option est cochée par défaut.
+Si cette option est cochée, le forum offre aux membres la possibilité de télécharger des fichiers. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser les réponses à threads]**
-Si elle n’est pas cochée, le forum autorise les commentaires sur un sujet, mais les réponses à ces commentaires ne sont pas autorisées. Cette option est cochée par défaut.
+Si elle n’est pas cochée, le forum autorise les commentaires sur un sujet, mais les réponses à ces commentaires ne sont pas autorisées. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser le contenu proposé]**
-Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](featured.md). Cette option est cochée par défaut.
+Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](featured.md). La valeur par défaut est cochée.
 
 ### Fonction Groupes {#groups-function}
 
@@ -226,7 +230,7 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 Un menu déroulant qui permet de sélectionner un ou plusieurs modèles de groupe activés à partir desquels le futur créateur d’un nouveau groupe de communauté (dans l’environnement de publication) peut choisir.
 
 * **[!UICONTROL Autoriser les membres privilégiés]**
-Si cette option est cochée, le forum autorise uniquement les membres privilégiés à publier des sujets en autorisant la sélection d’une [groupe de sécurité des membres privilégiés](users.md#privileged-members-group). Si cette option n’est pas cochée, tous les membres de la communauté sont autorisés à publier du contenu. Cette option n’est pas cochée par défaut.
+Si cette option est cochée, le forum autorise uniquement les membres privilégiés à publier des sujets en autorisant la sélection d’une [groupe de sécurité des membres privilégiés](users.md#privileged-members-group). Si cette option n’est pas cochée, tous les membres de la communauté sont autorisés à publier du contenu. La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser la création de publication]**
 Si cette case est cochée, les membres autorisés de la communauté peuvent créer un groupe dans l’environnement de publication. Si cette option n’est pas cochée, les nouveaux groupes (sous-communautés) ne peuvent être créés que dans l’environnement de création à partir de la console Groupes de sites des communautés .
@@ -243,16 +247,16 @@ Une fois ajouté à un modèle, la boîte de dialogue suivante s’ouvre, qui sp
 
 * Voir [Paramètres de titre et d’URL](#title-and-url-settings)
 * **[!UICONTROL Autoriser les membres privilégiés]**
-Si cette option est cochée, le forum autorise uniquement les membres privilégiés à publier des sujets en autorisant la sélection d’une [groupe de sécurité des membres privilégiés](users.md#privileged-members-group). Si cette option n’est pas cochée, tous les membres de la communauté sont autorisés à publier du contenu. Cette option n’est pas cochée par défaut.
+Si cette option est cochée, le forum autorise uniquement les membres privilégiés à publier des sujets en autorisant la sélection d’une [groupe de sécurité des membres privilégiés](users.md#privileged-members-group). Si cette option n’est pas cochée, tous les membres de la communauté sont autorisés à publier du contenu. La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser les chargements de fichiers]**
-Si cette option est cochée, l’idée inclut la possibilité pour les membres de charger des fichiers. Cette option est cochée par défaut.
+Si cette option est cochée, l’idée inclut la possibilité pour les membres de charger des fichiers. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser les réponses à threads]**
-Si elle n’est pas cochée, l’idée autorise les réponses (commentaires) à un sujet, mais les réponses aux commentaires ne sont pas autorisées. Cette option est cochée par défaut.
+Si elle n’est pas cochée, l’idée autorise les réponses (commentaires) à un sujet, mais les réponses aux commentaires ne sont pas autorisées. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser le contenu proposé]**
-Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](featured.md). Cette option est cochée par défaut.
+Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](featured.md). La valeur par défaut est cochée.
 
 ### Fonction de classement {#leaderboard-function}
 
@@ -268,17 +272,17 @@ Une fois ajouté à un modèle, la boîte de dialogue suivante s’ouvre, qui sp
 * **[!UICONTROL Afficher le badge]**
 Si cette case est cochée, une colonne pour les icônes de badge est incluse dans le tableau de classement.
 
-   Cette option n’est pas cochée par défaut.
+   La case par défaut est décochée.
 
 * **[!UICONTROL Nom du badge d’affichage]**
 Si cette case est cochée, une colonne correspondant au nom du badge est incluse dans le tableau de classement.
 
-   Cette option n’est pas cochée par défaut.
+   La case par défaut est décochée.
 
 * **[!UICONTROL Avatar d’affichage]**
 Si cette case est cochée, l’avatar du membre est inclus dans le tableau de classement, en regard du lien de son nom vers son profil de membre.
 
-   Cette option n’est pas cochée par défaut.
+   La case par défaut est décochée.
 
 ### Fonction Page {#page-function}
 
@@ -296,19 +300,19 @@ Lorsqu’elle est ajoutée à un modèle, la configuration autorise la restricti
 
 * Voir [Paramètres de titre et d’URL](#title-and-url-settings)
 * **[!UICONTROL Permettre la mise en page]**
-Si cette option est cochée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. Cette option est cochée par défaut.
+Si cette option est cochée, le forum permet d’épingler les réponses aux sujets au début de la liste des commentaires. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser les membres privilégiés]**
-Si cette option est cochée, le forum Q&amp;R permet uniquement aux membres privilégiés de poser des questions en autorisant la sélection d’une [groupe de membres privilégiés](users.md#privileged-members-group). Si cette option n’est pas cochée, tous les membres de la communauté sont autorisés à publier du contenu. Cette option n’est pas cochée par défaut.
+Si cette option est cochée, le forum Q&amp;R permet uniquement aux membres privilégiés de poser des questions en autorisant la sélection d’une [groupe de membres privilégiés](users.md#privileged-members-group). Si cette option n’est pas cochée, tous les membres de la communauté sont autorisés à publier du contenu. La case par défaut est décochée.
 
 * **[!UICONTROL Autoriser les chargements de fichiers]**
-Si cette case est cochée, le forum Q&amp;R permet aux membres de charger des fichiers. Cette option est cochée par défaut.
+Si cette case est cochée, le forum Q&amp;R permet aux membres de charger des fichiers. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser les réponses à threads]**
-Si cette option n’est pas cochée, le forum Q&amp;R permet d’ajouter des commentaires (réponses) à une question publiée, mais les réponses aux réponses ne sont pas autorisées. Cette option est cochée par défaut.
+Si cette option n’est pas cochée, le forum Q&amp;R permet d’ajouter des commentaires (réponses) à une question publiée, mais les réponses aux réponses ne sont pas autorisées. La valeur par défaut est cochée.
 
 * **[!UICONTROL Autoriser le contenu proposé]**
-Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](featured.md). Cette option est cochée par défaut.
+Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](featured.md). La valeur par défaut est cochée.
 
 ## Créer une fonction de communauté {#create-community-function}
 

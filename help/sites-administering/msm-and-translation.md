@@ -10,14 +10,18 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: e8f83d21-b55e-4415-a581-8df1b71a84b1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 100%
+source-wordcount: '377'
+ht-degree: 46%
 
 ---
 
 # Administration de sites web{#website-administration}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les outils d’administration suivants sont disponibles pour gérer les sites et les pages web :
 
@@ -29,19 +33,19 @@ Les outils d’administration suivants sont disponibles pour gérer les sites et
 
    * [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md)
 
-* Ces deux fonctions peuvent être combinées pour gérer les sites web qui sont à la fois [internationaux et multilingues](#multinational-and-multilingual-sites).
+* Ces deux fonctionnalités peuvent être combinées pour prendre en charge les sites web qui sont tous deux [Multinationale et multilingue](#multinational-and-multilingual-sites).
 
 ## Sites internationaux et multilingues {#multinational-and-multilingual-sites}
 
-Vous pouvez créer efficacement du contenu pour les sites internationaux et multilingues par l’utilisation conjointe de Multi Site Manager et du workflow de traduction. Créez un gabarit de site dans une langue, pour un pays spécifique, puis utilisez ce contenu comme base des autres sites, à l’aide de la traduction si nécessaire :
+Vous pouvez créer efficacement du contenu pour les sites internationaux et multilingues par l’utilisation conjointe de Multi Site Manager et du workflow de traduction. Créez un site maître dans une langue, pour un pays spécifique, puis utilisez ce contenu comme base pour les autres sites, en utilisant la traduction si nécessaire :
 
 * [Traduisez](/help/sites-administering/translation.md) le site de gabarit dans différentes langues.
 
 * Utilisez [Multi Site Manager](/help/sites-administering/msm.md) pour effectuer les tâches suivantes :
 
-   * Réutilisez le contenu du site de gabarit et les traductions afin de créer des sites pour d’autres pays et cultures.
-   * Limitez l’utilisation de Multi Site Manager à du contenu dans une seule langue ; par exemple, Anglais maître -> branches de langue anglaise dans les sites pays, Français maître -> branches de langue française dans les sites pays.
-   * Si nécessaire, désolidarisez les éléments des Live Copies pour ajouter les détails de localisation.
+   * Réutilisez le contenu du site maître et les traductions pour créer des sites pour d’autres pays et cultures.
+   * Veillez à limiter l’utilisation de Multi Site Manager au contenu dans une langue, par exemple le gabarit anglais -> branches de langue anglaise dans les sites de pays, le gabarit français -> branches de langue française dans les sites de pays.
+   * Si nécessaire, désolidarisez des éléments des Live Copies pour ajouter des détails de localisation.
 
 Le diagramme suivant illustre la manière dont les principaux concepts sont en corrélation (mais n’affiche pas tous les niveaux/éléments impliqués) :
 
@@ -51,8 +55,8 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >
 >Dans ces scénarios et dans d’autres scénarios comparables, MSM ne gère pas les différentes versions de langues en tant que telles.
 >
->* [MSM](/help/sites-administering/msm.md) gère le déploiement du contenu traduit d’un plan directeur (par exemple, un gabarit mondial) des Live Copies (par exemple, les sites locaux), dans les limites d’une langue.
->* Les fonctionnalités d’intégration de [traduction](/help/sites-administering/translation.md) d’AEM, combinées aux services de gestion de traduction tiers, gèrent les langues et le contenu de traduction dans ces différentes langues.
+>* [MSM](/help/sites-administering/msm.md) gère le déploiement du contenu traduit d’un plan directeur (un gabarit global, par exemple) vers les Live Copies (les sites locaux, par exemple), dans les limites d’une langue.
+>* Le [translation](/help/sites-administering/translation.md) les fonctionnalités d’intégration d’AEM, en association avec des services de gestion de traduction tiers, gèrent les langues et la traduction de contenu dans ces différentes langues.
 >
 >Pour les cas d’utilisation plus avancés, MSM peut également être utilisé dans les gabarits de langue.
 
@@ -61,9 +65,9 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >Dans tous les cas, il est recommandé de lire les bonnes pratiques suivantes :
 >
 >* [Bonnes pratiques liées à MSM](/help/sites-administering/msm-best-practices.md) ; en particulier :
->
->   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
->   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+   >
+   >   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Bonnes pratiques de traduction](/help/sites-administering/tc-bp.md)
 

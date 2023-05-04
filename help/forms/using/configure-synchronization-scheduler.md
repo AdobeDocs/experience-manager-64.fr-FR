@@ -1,7 +1,7 @@
 ---
-title: Configuration du planificateur de synchronisation
+title: Configurer le planificateur de synchronisation
 seo-title: Configuring the synchronization scheduler
-description: Apprenez à migrer et à synchroniser des ressources, à configurer le planificateur de synchronisation et à organiser les ressources dans des dossiers.
+description: Découvrez comment migrer et synchroniser des ressources, configurer le planificateur de synchronisation et utiliser des dossiers pour classer les ressources.
 seo-description: Learn how to migrate and sync assets, configure sync scheduler, and use folders to arrange assets.
 uuid: a6445b45-9c1c-4483-a32e-453648c488c5
 content-type: reference
@@ -10,28 +10,32 @@ topic-tags: Configuration
 discoiquuid: 2c8cea3c-8d8b-41d4-8ef9-a0ada8f86be6
 role: Admin
 exl-id: 7f1c4bac-accf-43e4-9439-89c5420d50f2
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 59%
 
 ---
 
-# Configuration du planificateur de synchronisation {#configuring-the-synchronization-scheduler}
+# Configurer le planificateur de synchronisation {#configuring-the-synchronization-scheduler}
 
-Par défaut, le planificateur de synchronisation s’exécute toutes les 3 minutes pour synchroniser toutes les ressources modifiées et mises à jour dans le référentiel via LiveCycle Workbench 11. Les applications contenant des formulaires ou des ressources sont visibles dans l’interface utilisateur d’AEM Forms une fois le processus de synchronisation terminé.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Par défaut, le planificateur de synchronisation s’exécute toutes les 3 minutes pour synchroniser toutes les ressources modifiées et mises à jour dans le référentiel via LiveCycle Workbench 11. Les applications contenant des formulaires et des ressources sont visibles dans l’interface utilisateur d’AEM Forms une fois le processus de synchronisation terminé.
 
 ## Modifier l’intervalle du planificateur de synchronisation {#change-interval-of-the-synchronization-scheduler}
 
-Suivez les étapes suivantes pour modifier l’intervalle du planificateur de synchronisation :
+Effectuez les étapes suivantes pour modifier l’intervalle du planificateur de synchronisation :
 
-1. Connectez-vous au Configuration Manager d’AEM. L’URL de Configuration Manager est la suivante : `https://[Server]:[Port]/lc/system/console/configMgr`.
+1. Connectez-vous à AEM Configuration Manager. L’URL de Configuration Manager est la suivante : `https://[Server]:[Port]/lc/system/console/configMgr`.
 
 1. Recherchez et ouvrez le lot **FormsManagerConfiguration**.
 
 1. Choisissez une nouvelle valeur pour l’option de fréquence du **planificateur de synchronisation**.
 
-   Les unités de fréquence se comptent en minutes. Par exemple, pour configurer une exécution du planificateur toutes les 60 minutes, entrez 60.
+   Les unités de fréquence se comptent en minutes. Par exemple, pour configurer l’exécution du planificateur toutes les 60 minutes, indiquez 60.
 
 ## Synchronisation des ressources {#synchronizing-assets}
 
@@ -49,9 +53,9 @@ Vous pouvez utiliser l’option **Synchroniser les ressources à partir du réf�
 
    **Figure :** *boîte de dialogue de synchronisation*
 
-## Dépannage des erreurs de synchronisation {#troubleshooting-synchronization-error}
+## Dépannage de l’erreur de synchronisation {#troubleshooting-synchronization-error}
 
-Vous pouvez créer de nouvelles applications dans le Concepteur de flux de travaux (LiveCycle Workbench).
+Vous pouvez créer de nouvelles applications dans le concepteur de workflow (LiveCycle Workbench).
 
 Si une application que vous venez de créer et un dossier se trouvant sous /content/dam/formsanddocuments portent le même nom, une erreur « *Une ressource portant le même nom que l’application existe déjà au niveau racine.* » est consignée.
 

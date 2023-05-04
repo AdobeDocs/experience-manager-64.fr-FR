@@ -6,14 +6,18 @@ seo-description: An overview of how to implement AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: e8434d46-b169-4408-85e7-b619c6f7b877
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 100%
+source-wordcount: '138'
+ht-degree: 79%
 
 ---
 
 # Guides de l’utilisateur pour la mise en œuvre d’AEM 6.4 {#aem-64-implementation-user-guides}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Développement dans AEM {#developing-on-aem}
 

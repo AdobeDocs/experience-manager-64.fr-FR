@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8cc04993-4021-4cb7-b973-5afc4da1ed11
 exl-id: 74dcbefa-e670-419b-af9b-b3d3c593ebaa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 3%
+source-wordcount: '332'
+ht-degree: 4%
 
 ---
 
 # Notions fondamentales sur les flux d’activités {#activity-stream-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les activités d’un membre de la communauté connecté, comme la publication sur un forum ou un blog, sont collectées dans un flux qui peut être filtré et affiché de différentes manières via la configuration du composant Flux d’activités.
 
@@ -33,7 +37,7 @@ Un membre peut suivre un flux d’activité en suivant un autre individu ou un a
 
 A *fil d&#39;actualités* est une fusion des flux d’activité suivis par un membre dans un seul flux.
 
-A [graphique social](essentials-socialgraph.md) capture les relations suivantes d’un membre par rapport à un autre.
+A [graphique social](essentials-socialgraph.md) capture les relations suivantes d’un membre à un autre.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 

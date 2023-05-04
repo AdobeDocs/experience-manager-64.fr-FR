@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: cd036e4a-0884-4ba0-83e9-7013583bbbae
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '601'
 ht-degree: 8%
 
 ---
 
 # Développement d’une application Sandbox {#develop-sandbox-application}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Dans cette section, maintenant que le modèle a été configuré dans la variable [application initiale](initial-app.md) et les pages initiales établies dans la section [contenu initial](initial-content.md) , l’application peut être développée à l’aide de scripts de base, notamment la possibilité d’activer la création avec des composants Communities. A la fin de cette section, le site web sera fonctionnel.
 
@@ -126,17 +130,17 @@ Le panneau latéral Ressources/Composant s’affiche lorsque le panneau latéral
 
 ![chlimage_1-232](assets/chlimage_1-232.png)
 
-* IU classique: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
+* Interface utilisateur classique : `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
 Voici comment la page de lecture s’affiche dans l’IU classique, y compris avec l’outil de recherche de contenu (cf) :
 
 ![chlimage_1-233](assets/chlimage_1-233.png)
 
-## Composants d’AEM Communities {#communities-components}
+## Composants Communities {#communities-components}
 
 Pour activer les composants Communities pour la création, commencez par suivre les instructions suivantes :
 
-* [Accès aux composants d’AEM Communities](basics.md#accessing-communities-components)
+* [Accès aux composants Communities](basics.md#accessing-communities-components)
 
 Pour les besoins de cet environnement de test, commencez par ces **Communautés** composants (activer en cochant la case) :
 
@@ -145,7 +149,7 @@ Pour les besoins de cet environnement de test, commencez par ces **Communautés*
 * Évaluation
 * Révisions
 * Résumé des révisions (affichage)
-* Vote
+* Votant
 
 En outre, choisissez **[!UICONTROL Général]** les composants, tels que
 
@@ -157,7 +161,7 @@ En outre, choisissez **[!UICONTROL Général]** les composants, tels que
 >[!NOTE]
 >
 >Les composants activés pour la partie page sont stockés dans le référentiel comme valeur de la propriété `components` de la propriété\
->`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
+>`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` noeud .
 
 ## Page d’entrée {#landing-page}
 

@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Link Sharing,Asset Management
 role: User
 exl-id: bf4b0acf-4103-4da1-8666-c6d9fe80c41f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 93%
+source-wordcount: '1056'
+ht-degree: 84%
 
 ---
 
 # Partage d’une ressource via un lien {#asset-link-sharing}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 [!DNL Adobe Experience Manager Assets] vous permet de partager des ressources, des dossiers et des collections sous forme d’URL avec des collaborateurs de l’entreprise et des tiers, notamment des partenaires et des fournisseurs. Le partage de ressources au moyen d’un lien est très pratique dans la mesure où il permet à des tiers d’y accéder sans avoir besoin de se connecter au préalable à [!DNL Assets].
 
@@ -35,7 +39,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
 1. Dans la zone Adresse e-mail de la boîte de dialogue **[!UICONTROL Partage de liens]**, saisissez l’ID d’e-mail de la personne avec laquelle vous souhaitez partager le lien. Vous pouvez ajouter une ou plusieurs personnes.
 
-   ![Partage de liens vers des ressources directement depuis la boîte de dialogue Partage de lien](assets/chlimage_1-543.png)
+   ![Partage de liens vers des ressources directement à partir de la boîte de dialogue Partage de liens](assets/chlimage_1-543.png)
 
    *Figure : Partage de liens vers des ressources directement à partir de [!UICONTROL Partage de liens] boîte de dialogue.*
 
@@ -43,14 +47,14 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
    >
    >Si vous saisissez l’ID d’e-mail d’une personne qui ne fait pas partie de votre entreprise, les mots [!UICONTROL Utilisateur externe] sont ajoutés à son ID d’e-mail.
 
-1. Dans le champ **[!UICONTROL Objet]**, indiquez l’objet de la ressource que vous souhaitez partager.
-1. Dans le champ **[!UICONTROL Message]**, vous pouvez saisir un message si vous le souhaitez.
+1. Dans le **[!UICONTROL Objet]** , saisissez l’objet de la ressource que vous souhaitez partager.
+1. Dans le **[!UICONTROL Message]** , saisissez un message facultatif.
 
 1. Dans le champ **[!UICONTROL Expiration]**, spécifiez la date et l’heure d’expiration du lien à l’aide du sélecteur de date. Le délai d’expiration par défaut du lien est de 1 jour.
 
    ![Définition de la date d’expiration du lien partagé](assets/chlimage_1-544.png)
 
-1. Pour permettre aux utilisateurs de télécharger la ressource d’origine avec les rendus, sélectionnez **[!UICONTROL Autoriser le téléchargement du fichier d’origine]**. Par défaut, les utilisateurs peuvent uniquement télécharger les rendus de la ressource que vous partagez sous forme de lien.
+1. Pour permettre aux utilisateurs de télécharger la ressource d’origine avec les rendus, sélectionnez **[!UICONTROL Autoriser le téléchargement du fichier d’origine]**. Par défaut, les utilisateurs peuvent uniquement télécharger les rendus de la ressource que vous partagez sous la forme d’un lien.
 
 1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec le ou les personnes par e-mail.
 
@@ -76,8 +80,8 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 1. Dans la liste des services, recherchez le **[!UICONTROL service de messagerie Day CQ]**.
 1. Cliquez sur **[!UICONTROL Modifier]** en regard du service, puis configurez les paramètres suivants pour le **[!UICONTROL service de messagerie Day CQ]** avec les détails mentionnés par rapport à leur nom :
 
-   * Nom d’hôte du serveur SMTP : nom d’hôte du serveur de messagerie
-   * Port du serveur SMTP : port du serveur de messagerie
+   * SMTP server host name : nom d’hôte du serveur de messagerie
+   * Port du serveur SMTP : port du serveur de messagerie
    * Utilisateur SMTP : nom d’utilisateur du serveur de messagerie
    * Mot de passe SMTP : mot de passe du serveur de messagerie
 
@@ -99,7 +103,7 @@ Lorsque vous téléchargez des ressources via le lien partagé avec la fonction 
 
 ## Bonnes pratiques et résolution des problèmes {#best-practices-and-troubleshooting}
 
-* Les collections ou les dossiers de ressources dont le nom contient un espace blanc risquent de ne pas être partagés.
+* Les dossiers de ressources ou les collections dont le nom contient un espace blanc peuvent ne pas être partagés.
 * Si des personnes ne peuvent pas télécharger les ressources partagées, contactez votre équipe d’administration [!DNL Experience Manager] pour connaître les [limites de téléchargement](#configure-maximum-data-size).
 * Si vous ne pouvez pas envoyer d’e-mail avec des liens vers des ressources partagées ou si les autres personnes ne peuvent pas recevoir votre e-mail, contactez votre équipe d’administration [!DNL Experience Manager] pour savoir si le [service de messagerie](#configure-day-cq-mail-service) est configuré ou non.
 * Si vous ne pouvez pas partager des fichiers à l’aide de la fonctionnalité de partage de liens, assurez-vous que vous disposez des autorisations appropriées. Voir [Partager des fichiers](#share-assets).

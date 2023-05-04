@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 role: Developer
 exl-id: 0a418016-f61a-485d-a87a-a3d48651e0d7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 92%
+source-wordcount: '305'
+ht-degree: 83%
 
 ---
 
 # Démarrage rapide (SOAP) de l’API Java du service DocConverter {#docconverter-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le démarrage rapide (SOAP) de l’API Java est disponible pour le service DocConverter.
 

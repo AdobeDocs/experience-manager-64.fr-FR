@@ -1,7 +1,7 @@
 ---
 title: Utiliser les API pour accéder aux instances de lettre
 seo-title: APIs to access letter instances
-description: Découvrez comment utiliser des API pour accéder aux instances de lettre.
+description: Découvrez comment utiliser les API pour accéder aux instances de lettre.
 seo-description: Learn how to use APIs to access letter instances.
 uuid: e7fb7798-f49d-458f-87f5-22df5f3e7d10
 content-type: reference
@@ -10,30 +10,34 @@ topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 feature: Correspondence Management
 exl-id: 64ca6baa-5534-4227-a969-fb67cc6eb207
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 56%
 
 ---
 
 # Utiliser les API pour accéder aux instances de lettre {#apis-to-access-letter-instances}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Présentation {#overview}
 
-A l’aide de l’interface utilisateur de création de correspondance de Correspondence Management, vous pouvez enregistrer des brouillons d’instances de lettre en cours. Vous y trouverez également les instances de lettre envoyées.
+À l’aide de l’interface utilisateur de création de correspondance de Correspondence Management, vous pouvez enregistrer les brouillons d’instances de lettre en cours et il existe des instances de lettre envoyées.
 
-Correspondence Management vous fournit des API grâce auxquelles vous pouvez créer l’interface d’énumération pour travailler sur des instances de lettre envoyées ou des brouillons. Les API répertorient et ouvrent les brouillons et les instances de lettre envoyées d’un agent, de sorte que l’agent puisse continuer de travailler sur les brouillons ou les instances de lettre envoyées.
+Correspondence Management vous fournit des API à l’aide desquelles vous pouvez créer l’interface de liste pour qu’elle fonctionne avec les instances de lettre envoyées ou les brouillons. Les API répertorient et ouvrent les brouillons et les instances de lettre envoyées d’un agent, de sorte que l’agent puisse continuer de travailler sur les brouillons ou les instances de lettre envoyées.
 
-## Récupérer des instances de lettre {#fetching-letter-instances}
+## Récupération des instances de lettre {#fetching-letter-instances}
 
-Correspondence Management expose les API pour récupérer des instances de lettre par le biais du service LetterInstanceService.
+Correspondence Management expose les API pour récupérer les instances de lettre par le biais du service LetterInstanceService.
 
 | Méthode | Description |
 |--- |--- |
 | getAllLetterInstances | Récupère des instances de lettre en fonction du paramètre de requête d’entrée. Pour récupérer toutes les instances de lettre, transmettez le paramètre de requête comme nul. |
-| getLetterInstance | Récupère l’instance de lettre spécifiée en fonction de l’ID de l’instance de lettre. |
-| letterInstanceExists | Vérifie l’existence d’une instance de lettre selon le nom spécifié. |
+| getLetterInstance | Récupère l’instance de lettre spécifiée en fonction de l’ID d’instance de lettre. |
+| letterInstanceExists | Vérifie si une instance de lettre existe selon le nom donné. |
 
 >[!NOTE]
 >
@@ -54,12 +58,12 @@ L’API suivante recherche les instances de lettre en fonction de l’objet de l
   </tr> 
   <tr> 
    <td>query</td> 
-   <td>Le paramètre de requête est utilisé pour trouver/filtrer l’instance de lettre. Ici, la requête prend en charge uniquement des attributs/propriétés supérieurs de l’objet. La requête se compose d’instructions et l’« attributeName » utilisé dans l’objet d’instruction doit être le nom de la propriété dans l’objet d’instance de lettre.<br /> </td> 
+   <td>Le paramètre de requête est utilisé pour rechercher/filtrer l’instance de lettre. Ici, la requête prend en charge uniquement des attributs/propriétés supérieurs de l’objet. La requête se compose d’instructions et l’« attributeName » utilisé dans l’objet d’instruction doit être le nom de la propriété dans l’objet d’instance de lettre.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Exemple 1 : récupérer toutes les instances de lettre de type ENVOYEE {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### Exemple 1 : Récupérer toutes les instances de lettre de type ENVOYÉ {#example-fetch-all-the-letter-instances-of-type-submitted}
 
 Le code suivant renvoie la liste des instances de lettre envoyées. Pour afficher uniquement les brouillons, modifiez `LetterInstanceType.COMPLETE.name()` par `LetterInstanceType.DRAFT.name().`.
 
@@ -126,7 +130,7 @@ Vérifiez si une instance de lettre existe selon le nom spécifié.
 
 | **Paramètre** | **Description** |
 |---|---|
-| letterInstanceName | Il s’agit du nom de l’instance de lettre dont vous souhaitez vérifier l’existence. |
+| letterInstanceName | Nom de l’instance de lettre que vous souhaitez vérifier si elle existe. |
 
 ```java
 @Reference
@@ -137,14 +141,14 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 ## Ouverture d’instances de lettre {#opening-letter-instances}
 
-L’instance de lettre peut être de type Envoyée ou Brouillon. L’ouverture des deux types d’instance de lettre présente deux cas de figure différents :
+L’instance de lettre peut être de type Envoyé ou Brouillon. L’ouverture des deux types d’instances de lettre présente des comportements différents :
 
-* Dans le cas d’une instance de lettre envoyée, un PDF représentant l’instance de lettre s’ouvre. L’instance de lettre envoyée conservée sur le serveur contient également les données XML et XDP traitées qui peuvent être utilisées à des fins d’exécution et de personnalisation selon les cas d’utilisation, comme la création d’un PDF/A.
+* Dans le cas de l’instance de lettre envoyée, un PDF représentant l’instance de lettre est ouvert. L’instance de lettre envoyée conservée sur le serveur contient également les données XML et XDP traitées, qui peuvent être utilisées pour accomplir et personnaliser davantage un cas tel que la création d’un PDF/A.
 * Dans le cas d’un brouillon d’instance de lettre, l’interface utilisateur de création de correspondance réapparaît exactement comme elle se présentait au moment où le brouillon a été créé
 
-### Ouverture d’un brouillon d’instance de lettre  {#opening-draft-letter-instance-nbsp}
+### Ouverture d’une instance de lettre préliminaire  {#opening-draft-letter-instance-nbsp}
 
-L’interface utilisateur CCR prend en charge le paramètre cmLetterInstanceId, qui peut être utilisé pour une lettre rechargée.
+L’interface utilisateur CCR prend en charge le paramètre cmLetterInstanceId, qui peut être utilisé pour la lettre rechargée.
 
 `https://[hostName]:[portNo]/[contextPath]//aem/forms/createcorrespondence.html?random=[randomNo]&cmLetterInstanceId=[letterInstanceId]`
 
@@ -154,6 +158,6 @@ L’interface utilisateur CCR prend en charge le paramètre cmLetterInstanceId, 
 
 ### Ouverture d’une instance de lettre envoyée {#opening-submitted-letter-instance}
 
-Le PDF envoyé peut être directement ouvert en utilisant l’ID de l’instance de lettre :
+Le PDF envoyé peut être directement ouvert à l’aide de l’ID d’instance de lettre :
 
 `https://[hostName]:[portNo]/[contextPath]/[letterInstanceId]`

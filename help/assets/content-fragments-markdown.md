@@ -1,7 +1,7 @@
 ---
 title: Texte (Markdown)
 seo-title: Markdown
-description: Lors du processus de création, l’éditeur de fragments de contenu utilise la syntaxe markdown pour vous permettre d’écrire aisément du contenu.
+description: Lors de la création, l’éditeur de fragment de contenu utilise la syntaxe markdown pour vous permettre d’écrire facilement du contenu.
 seo-description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
 uuid: 12b185a5-3d87-4d7c-8d09-8cc2726009a8
 contentOwner: AEM Docs
@@ -12,14 +12,18 @@ discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 97%
+source-wordcount: '571'
+ht-degree: 64%
 
 ---
 
 # Markdown {#markdown}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!CAUTION]
 >
@@ -29,7 +33,7 @@ Lors du processus de [création](content-fragments-variations.md#authoring-your-
 
 ![Éditeur de balisage](/help/assets/assets/cfm-6420-08.png)
 
-Vous pouvez définir :
+Vous pouvez définir :
 
 * [Notation d’en-tête](/help/assets/content-fragments-markdown.md#heading-notation)
 * [Paragraphes et sauts de ligne](/help/assets/content-fragments-markdown.md#paragraphs-and-line-breaks)
@@ -43,7 +47,7 @@ Vous pouvez définir :
 
 ## Notation d’en-tête {#heading-notation}
 
-Pour créer un en-tête en plaçant un hashtag (#) devant le titre. Un hashtag (#) est utilisé pour un H1, deux hashtags (##) pour un H2, etc. Vous pouvez utiliser jusqu’à 6 hashtags. Par exemple :
+Pour créer un en-tête en plaçant un hashtag (#) devant le titre. Une balise de hachage (#) est utilisée pour un H1, deux balises de hachage (##) pour un H2, etc. Vous pouvez utiliser jusqu’à 6 hashtags. Par exemple :
 
     `## This is an H2`
 
@@ -63,7 +67,7 @@ Si vous le souhaitez, vous pouvez créer une balise H1 en soulignant le texte pa
 
 ## Paragraphes et sauts de ligne {#paragraphs-and-line-breaks}
 
-Un paragraphe est simplement une ou plusieurs lignes de texte consécutives, séparées par une ou plusieurs lignes vierges. Une ligne vierge est une ligne ne contenant que des espaces ou des tabulations. Les paragraphes normaux ne doivent pas être mis en retrait avec des espaces ou des tabulations.
+Un paragraphe est simplement une ou plusieurs lignes consécutives de texte, séparées par une ou plusieurs lignes vierges. Une ligne vierge est une ligne ne contenant rien d’autre que des espaces ou des onglets. Les paragraphes normaux ne doivent pas être mis en retrait avec des espaces ou des tabulations.
 
 Un saut de ligne est créé en terminant une ligne par deux espaces ou plus puis un retour.
 
@@ -117,7 +121,7 @@ Où « id » est le nom d’une référence d’image définie. Les référenc
 
 ## Blocs de citations {#block-quotes}
 
-Vous pouvez inclure des citations en ajoutant le symbole > avant le texte. Par exemple :
+Vous pouvez placer un texte entre guillemets en ajoutant le symbole > avant le texte. Par exemple :
 
     `>This is block quotes`
 
@@ -125,7 +129,7 @@ Vous pouvez inclure des citations en ajoutant le symbole > avant le texte. Par e
 
     `>asdfahsdlfasdfj`
 
-Vous pouvez utiliser des blocs de citations imbriqués. Par exemple :
+Vous pouvez avoir des guillemets de bloc imbriqués. Par exemple :
 
     `> This is the first level of quoting.`
 
@@ -149,7 +153,7 @@ Pour créer une liste non ordonnée, insérez le symbole * avant les éléments 
 
     `* item in list`
 
-Pour créer une liste ordonnée, ajoutez les chiffres, suivis d’un point, avant chaque élément de la liste. Par exemple :
+Pour créer une liste ordonnée, ajoutez les nombres, suivis d’un point, avant chaque élément de la liste. Par exemple :
 
     `1. First item in list.`
 
@@ -185,7 +189,7 @@ Par exemple :
 
 ## Blocs de code {#code-blocks}
 
-Les blocs de code sont généralement utilisés pour illustrer le code source. Vous pouvez créer des blocs de code en mettant le code en retrait à l’aide d’une tabulation ou d’au moins 4 espaces. Par exemple :
+Les blocs de code sont généralement utilisés pour illustrer le code source. Vous pouvez créer des blocs de code en mettant le code en retrait à l’aide d’un onglet ou d’un minimum de 4 espaces. Par exemple :
 
     `This is a normal paragraph.`
 

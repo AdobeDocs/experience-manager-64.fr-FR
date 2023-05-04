@@ -10,29 +10,33 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 780d1a2d-38f1-4115-a9bd-f466aa3774dd
 exl-id: 6ba1e011-e18d-4e2a-a47c-85a4962cc83c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1842'
-ht-degree: 100%
+source-wordcount: '1878'
+ht-degree: 65%
 
 ---
 
 # Configuration de ContextHub {#configuring-contexthub}
 
-ContextHub est un framework permettant de stocker, manipuler et présenter des données contextuelles. Pour plus de détails sur ContextHub, voir la [documentation destinée aux développeurs](/help/sites-developing/contexthub.md). ContextHub remplace [ClientContext](/help/sites-administering/client-context.md) dans l’IU tactile.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Configurez la barre d’outils [ContextHub](/help/sites-developing/contexthub.md) pour contrôler si elle apparaît dans le mode d’aperçu, afin de créer des magasins ContextHub et d’ajouter des modules d’IU à l’aide de l’IU optimisée pour les écrans tactiles.
+ContextHub est un framework permettant de stocker, manipuler et présenter des données contextuelles. Pour plus de détails sur ContextHub, voir la [documentation destinée aux développeurs](/help/sites-developing/contexthub.md). ContextHub remplace [ClientContext](/help/sites-administering/client-context.md) dans l’interface utilisateur tactile.
+
+Configurez la variable [ContextHub](/help/sites-developing/contexthub.md) pour contrôler si elle s’affiche en mode Aperçu, créer des magasins ContextHub et ajouter des modules d’IU à l’aide de l’IU optimisée pour les écrans tactiles.
 
 ## Désactivation de ContextHub {#disabling-contexthub}
 
-Par défaut, ContextHub est activé dans une installation AEM. ContextHub peut être désactivé pour éviter qu’il charge js/css et s’initialise. Il existe deux options pour désactiver ContextHub :
+Par défaut, ContextHub est activé dans une installation AEM. ContextHub peut être désactivé pour éviter qu’il charge js/css et s’initialise. Il existe deux options pour désactiver ContextHub :
 
 * Modifiez la configuration de ContextHub et cochez l’option **Désactiver ContextHub**
 
-   1. Sur le rail, cliquez ou appuyez sur **Outils > Sites > ContextHub**.
-   1. Cliquez ou appuyez sur le **conteneur de configurations** par défaut.
-   1. Sélectionnez la **configuration ContextHub** et cliquez ou appuyez sur **Modifier l’élément sélectionné**.
-   1. Cliquez ou appuyez sur **Désactiver ContextHub** et cliquez ou appuyez sur **Enregistrer**.
+   1. Dans le rail, cliquez ou appuyez sur **Outils > Sites > ContextHub**
+   1. Cliquez ou appuyez sur la valeur par défaut. **Conteneur de configuration**
+   1. Sélectionnez la **Configuration ContextHub** et cliquez ou appuyez sur **Modifier l’élément sélectionné**
+   1. Cliquez ou appuyez sur **Désactivation de ContextHub** et cliquez ou appuyez sur **Enregistrer**
 
 ou
 
@@ -53,19 +57,19 @@ Configurez le service Adobe Granite ContextHub OSGi pour afficher ou masquer l�
 
 Pour configurer le service, vous pouvez utiliser la [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un [nœud JCR du référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
 
-* **Console web :** pour afficher l’IU, sélectionnez la propriété Afficher l’IU. Pour masquer l’IU, désélectionnez la propriété Masquer l’IU.
+* **Console web :** pour afficher l’IU, sélectionnez la propriété Afficher l’IU. Pour masquer l’interface utilisateur, désélectionnez la propriété Masquer l’interface utilisateur .
 * **Nœud JCR :** pour afficher l’IU, définissez la propriété booléenne `com.adobe.granite.contexthub.show_ui` sur `true`. Pour masquer l’IU, définissez la propriété sur `false`.
 
-Si l’IU ContextHub est activée, elle s’affiche uniquement sur les pages sur les instances de création AEM. L’IU ne s’affiche pas sur les pages des instances de publication.
+Si l’IU ContextHub est activée, elle s’affiche uniquement sur les pages sur les instances de création AEM. L’interface utilisateur n’apparaît pas sur les pages des instances de publication.
 
 ## Ajout des modes et des modules d’IU ContextHub {#adding-contexthub-ui-modes-and-modules}
 
-Configurez les modes et les modules d’IU qui apparaissent dans la barre d’outils ContextHub en mode d’aperçu :
+Configurez les modes et modules d’IU qui s’affichent dans la barre d’outils ContextHub en mode Aperçu :
 
-* Modes de l’IU : groupes de modules associés.
-* Modules : widgets qui exposent des données contextuelles d’un magasin et permettent aux auteurs de modifier le contexte.
+* Modes d’IU : Groupes de modules connexes
+* Modules : Widgets qui exposent les données contextuelles d’un magasin et permettent aux auteurs de manipuler le contexte
 
-Les modes d’IU s’affichent sous forme d’une série d’icônes dans la partie gauche de la barre d’outils. Lorsqu’un mode d’IU est sélectionné, ses modules s’affichent à droite.
+Les modes d’IU s’affichent sous forme d’une série d’icônes dans la partie gauche de la barre d’outils. Lorsque cette option est sélectionnée, les modules d’un mode d’IU s’affichent à droite.
 
 ![chlimage_1-319](assets/chlimage_1-319.png)
 
@@ -73,20 +77,20 @@ Les icônes sont des références de la [bibliothèque d’icônes CoralUI](http
 
 ### Ajout d’un mode d’IU {#adding-a-ui-mode}
 
-Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsque vous créez le mode d’IU, vous fournissez le titre et l’icône figurant dans la barre d’outils ContextHub.
+Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsque vous créez le mode d’IU, vous fournissez le titre et l’icône qui s’affichent dans la barre d’outils ContextHub.
 
-1. Sur le rail Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
-1. Cliquez ou appuyez sur le conteneur de configurations par défaut.
-1. Cliquez ou appuyez sur la configuration de ContextHub.
-1. Cliquez ou appuyez sur le bouton Créer, puis sur le mode d’IU ContextHub.
+1. Sur le rail du Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
+1. Cliquez ou appuyez sur Conteneur de configuration par défaut.
+1. Cliquez ou appuyez sur Configuration ContextHub.
+1. Cliquez ou appuyez sur le bouton Créer, puis sur Mode d’IU ContextHub.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
 1. Saisissez les valeurs pour les propriétés suivantes :
 
    * Titre du mode d’IU : titre qui identifie le mode d’IU.
-   * Icône de mode : sélecteur de l’[icône de CoralUI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) à utiliser ; par exemple `coral-Icon--user`.
-   * Activé : sélectionnez cette option pour afficher le mode d’IU dans la barre d’outils ContextHub.
+   * Icône de mode : sélecteur de l’[icône de CoralUI](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) à utiliser ; par exemple `coral-Icon--user`.
+   * Activé : Sélectionnez cette option pour afficher le mode d’IU dans la barre d’outils ContextHub.
 
 1. Cliquez ou appuyez sur Enregistrer.
 
@@ -96,7 +100,7 @@ Ajoutez un module d’IU ContextHub à un mode d’IU afin qu’il s’affiche d
 
 AEM propose un type de module d’IU de base, ainsi que plusieurs types de modules d’IU d’exemple sur lesquels vous pouvez baser un module d’IU. Le tableau suivant présente une brève description de chacun d’entre eux. Pour plus d’informations sur le développement d’un module d’IU personnalisé, voir [Création de modules d’IU ContextHub](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
-Les propriétés du module d’IU incluent une configuration de détails où vous pouvez fournir des valeurs pour des propriétés spécifiques au module. Vous fournissez la configuration de détails au format JSON. La colonne Type de module dans le tableau fournit des liens vers des informations sur le code JSON requis pour chaque type de module d’IU.
+Les propriétés du module d’IU incluent une configuration de détails où vous pouvez fournir des valeurs pour des propriétés spécifiques au module. Vous fournissez la configuration de détails au format JSON. La colonne Type de module du tableau fournit des liens vers des informations sur le code JSON requis pour chaque type de module d’IU.
 
 | Type de module | Description | Magasin |
 |---|---|---|
@@ -105,30 +109,30 @@ Les propriétés du module d’IU incluent une configuration de détails où vou
 | [contexthub.datetime](/help/sites-developing/ch-samplemodules.md#contexthub-datetime-ui-module-type) | Affiche la date et l’heure. | datetime |
 | [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Affiche le périphérique client | emulators |
 | [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Affiche la latitude et la longitude du client, ainsi que l’emplacement sur une carte. Vous permet de modifier l’emplacement. | geolocation |
-| [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Affiche l’orientation de l’écran de l’appareil (paysage ou portrait). | émulateurs |
+| [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Affiche l’orientation de l’écran de l’appareil (paysage ou portrait). | emulators |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Affiche des statistiques sur les balises de page. | tagcloud |
 | [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Affiche les informations de profil de l’utilisateur actuel, y compris les authorizableID, displayName et familyName. Vous pouvez modifier la valeur du nom d’affichage (displayName) et du nom de famille (familyName). | profile |
 
-1. Sur le rail Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
-1. Cliquez ou appuyez sur le conteneur de configurations auquel vous voulez ajouter un module d’IU.
-1. Cliquez ou appuyez sur la configuration ContextHub à laquelle vous voulez ajouter le module d’IU.
+1. Sur le rail du Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
+1. Cliquez ou appuyez sur le conteneur de configuration auquel vous souhaitez ajouter un module d’IU.
+1. Cliquez ou saisissez la configuration ContextHub à laquelle vous souhaitez ajouter le module d’IU.
 1. Cliquez ou appuyez sur le mode d’IU auquel vous ajoutez le module d’IU.
-1. Cliquez ou appuyez sur le bouton Créer, puis cliquez ou appuyez sur le module d’IU ContextHub (générique).
+1. Cliquez ou appuyez sur le bouton Créer, puis sur Module d’IU ContextHub (générique).
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
 1. Saisissez les valeurs pour les propriétés suivantes :
 
-   * Titre du module d’IU : titre qui identifie le module d’IU
-   * Type de module : type du module
-   * Activé : sélectionnez cette option pour afficher le module d’IU dans la barre d’outils ContextHub.
+   * Titre du module d’IU : Titre qui identifie le module d’IU.
+   * Type de module : Type de module
+   * Activé : Sélectionnez cette option pour afficher le module d’IU dans la barre d’outils ContextHub.
 
-1. (Facultatif) Pour désactiver la configuration de magasin par défaut, saisissez un objet JSON afin de configurer le module d’IU.
+1. (Facultatif) Pour remplacer la configuration de magasin par défaut, saisissez un objet JSON pour configurer le module d’IU.
 1. Cliquez ou appuyez sur Enregistrer.
 
 ## Création d’un magasin ContextHub {#creating-a-contexthub-store}
 
-Créez un magasin ContextHub pour conserver les données utilisateur et accéder aux données selon vos besoins. Les magasins ContextHub sont basés sur des candidats de magasins enregistrés. Lorsque vous créez le magasin, vous avez besoin de la valeur du paramètre storeType avec lequel le candidat de magasin a été enregistré. (Voir [Création de candidats de magasins personnalisés](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).)
+Créez un magasin ContextHub pour conserver les données utilisateur et accéder aux données selon vos besoins. Les magasins ContextHub sont basés sur des candidats de magasins enregistrés. Lorsque vous créez le magasin, vous avez besoin de la valeur du paramètre storeType avec lequel le candidat de magasin a été enregistré. (Voir [Création de candidats de magasin personnalisés](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).)
 
 ### Configuration de magasin détaillée {#detailed-store-configuration}
 
@@ -152,21 +156,21 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | Stocke des informations sur le client, telles que les informations relatives à l’appareil, le type de navigateur et l’orientation de la fenêtre. |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) | Stocke les balises de page et le nombre de balises. |
 
-1. Sur le rail Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
-1. Cliquez ou appuyez sur le conteneur de configurations par défaut.
-1. Cliquez ou appuyez sur Configuration ContextHub.
+1. Sur le rail du Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
+1. Cliquez ou appuyez sur le conteneur de configuration par défaut.
+1. Cliquez ou appuyez sur Configuration ContextHub
 1. Pour ajouter un magasin, cliquez ou appuyez sur l’icône Créer, puis sur Configuration de magasin ContextHub.
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-1. Saisissez les valeurs des propriétés de configuration de base, puis cliquez ou appuyez sur Suivant :
+1. Indiquez les valeurs des propriétés de configuration de base, puis cliquez ou appuyez sur Suivant :
 
-   * **Titre de configuration :** titre qui identifie le magasin.
-   * **Type de magasin :** valeur de la propriété storeType du candidat de magasin sur lequel vous souhaitez baser le magasin.
+   * **Titre de configuration :** Titre qui identifie le magasin
+   * **Type de magasin :** La valeur de la propriété storeType du magasin candidat sur lequel baser le magasin
    * **Obligatoire :** sélectionnez cette option.
-   * **Activé :** sélectionnez cette option pour activer le magasin.
+   * **Activé :** Sélectionnez cette option pour activer le magasin.
 
-1. (Facultatif) Pour remplacer la configuration de magasin par défaut, saisissez un objet JSON dans la case Configuration des détails (JSON).
+1. (Facultatif) Pour remplacer la configuration de magasin par défaut, saisissez un objet JSON dans la zone Configuration des détails (JSON).
 1. Cliquez ou appuyez sur Enregistrer.
 
 ## Exemple : en utilisant un service JSONP  {#example-using-a-jsonp-service}
@@ -218,9 +222,9 @@ Ajoutez un module d’IU à la barre d’outils ContextHub pour afficher les don
 
 ![chlimage_1-323](assets/chlimage_1-323.png)
 
-Utilisez la procédure décrite dans [Ajout d’un module d’IU](/help/sites-administering/contexthub-config.md#adding-a-ui-module) pour ajouter le module d’IU à un mode d’IU existant, comme l’exemple de mode d’IU Perona. Pour le module d’IU, utilisez les valeurs de propriétés suivantes :
+Utilisez la procédure de la section [Ajout d’un module d’IU](/help/sites-administering/contexthub-config.md#adding-a-ui-module) pour ajouter le module d’IU à un mode d’IU existant, comme l’exemple de mode d’IU Perona. Pour le module d’IU, utilisez les valeurs de propriété suivantes :
 
-* **Titre du module d’IU :** MD5.
+* **Titre du module d’IU :** MD5
 * **Type de module :** contexthub.base.
 * **Configuration des détails (JSON) :**
 
@@ -236,15 +240,15 @@ Utilisez la procédure décrite dans [Ajout d’un module d’IU](/help/sites-ad
 
 ## Débogage de ContextHub {#debugging-contexthub}
 
-Une procédure de débogage pour ContextHub peut être activée afin de permettre la résolution des incidents. Le mode de débogage peut être activé via la configuration de ContextHub ou CRXDE.
+Une procédure de débogage pour ContextHub peut être activée afin de permettre la résolution des incidents. Le mode de débogage peut être activé via la configuration ContextHub ou via CRXDE.
 
 ### Via la configuration {#via-the-configuration}
 
 Modifiez la configuration de ContextHub et cochez l’option **Débogage**.
 
-1. Sur le rail, cliquez ou appuyez sur **Outils > Sites > ContextHub**.
-1. Cliquez ou appuyez sur le **conteneur de configurations** par défaut.
-1. Sélectionnez la **configuration ContextHub** et cliquez ou appuyez sur **Modifier l’élément sélectionné**.
+1. Dans le rail, cliquez ou appuyez sur **Outils > Sites > ContextHub**
+1. Cliquez ou appuyez sur la valeur par défaut. **Conteneur de configuration**
+1. Sélectionnez la **Configuration ContextHub** et cliquez ou appuyez sur **Modifier l’élément sélectionné**
 1. Cliquez ou appuyez sur **Débogage** et cliquez ou appuyez sur **Enregistrer**.
 
 ### Via CRXDE {#via-crxde}
@@ -260,7 +264,7 @@ Utilisez CRXDE Lite pour définir la propriété `debug` sur **true** sous :
 
 ### Mode silencieux {#silent-mode}
 
-Le mode silencieux supprime toutes les informations de débogage. Contrairement à l’option de débogage normal, qui peut être définie séparément pour chaque configuration ContextHub, le mode silencieux est un paramètre global qui prend la priorité sur tout paramètre de débogage au niveau de la configuration de ContextHub.
+Le mode silencieux supprime toutes les informations de débogage. Contrairement à l’option de débogage normale, qui peut être définie indépendamment pour chaque configuration ContextHub, le mode silencieux est un paramètre global qui a un précédent sur tous les paramètres de débogage au niveau de la configuration ContextHub.
 
 Cela est utile pour votre instance de publication, où vous ne souhaitez pas voir d’informations de débogage. Puisqu’il s’agit d’un paramètre global, il est activé via OSGi.
 
@@ -269,9 +273,9 @@ Cela est utile pour votre instance de publication, où vous ne souhaitez pas voi
 1. Cliquez sur la configuration **Adobe Granite ContextHub** pour en modifier les propriétés.
 1. Cochez l’option **Mode silencieux** et cliquez sur **Enregistrer**.
 
-## Récupération des configurations de ContextHub après une mise à niveau {#recovering-contexthub-configurations-after-upgrading}
+## Récupération des configurations ContextHub après la mise à niveau {#recovering-contexthub-configurations-after-upgrading}
 
-Lors d’une [mise à niveau vers AEM](/help/sites-deploying/upgrade.md), les configurations de ContextHub sont sauvegardées et stockées dans un emplacement sécurisé. Lors de la mise à niveau, les configurations de ContextHub par défaut sont installées et remplacent les configurations existantes. La sauvegarde est nécessaire pour conserver tous les changements ou ajouts que vous avez effectués.
+Lors d’une [mise à niveau vers AEM](/help/sites-deploying/upgrade.md), les configurations de ContextHub sont sauvegardées et stockées dans un emplacement sécurisé. Lors de la mise à niveau, les configurations de ContextHub par défaut sont installées et remplacent les configurations existantes. La sauvegarde est nécessaire pour conserver les modifications ou ajouts que vous avez apportés.
 
 Les configurations ContextHub sont stockées dans un dossier nommé `contexthub` sous les nœuds suivants :
 

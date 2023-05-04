@@ -7,10 +7,11 @@ breadcrumb-title: Notes de mise à jour
 user-guide-description: Découvrez les dernières fonctionnalités d’AEM 6.4 dans ces notes de mise à jour.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 78%
+ht-degree: 50%
 
 ---
 
@@ -19,13 +20,13 @@ ht-degree: 78%
 
 + [Présentation d’AEM 6.4](home.md)
 + [Notes de mise à jour générales](release-notes.md)
-+ [Notes de mise à jour du Service Pack ](sp-release-notes.md)
++ [Notes de mise à jour du Service Pack](sp-release-notes.md)
 + [Notes de mise à jour du pack de correctifs cumulés ](cfp-release-notes.md)
 + [Notes de mise à jour d’AEM Sites](sites.md)
 + [Notes de mise à jour d’AEM Assets](assets.md)
 + [Notes de mise à jour d’AEM Forms](forms.md)
 + [Programme d’installation du patch JEE AEM Forms](jee-patch-installer-64.md)
-+ [Notes de mise à jour d’AEM Communities](communities-release-notes.md)
++ [Notes de mise à jour d’AEM Communities](communities-release-notes.md)
 + [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
 + [Problèmes connus](known-issues.md)
 + [AEM Foundation et référentiel](wcm-platform.md)

@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 exl-id: 85a367fe-a124-42af-ae3e-fe4d10425ea1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '391'
 ht-degree: 26%
 
 ---
 
 # Propriétés et noeuds de contenu {#content-properties-and-nodes}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -36,8 +40,8 @@ Les tableaux suivants décrivent les propriétés et les noeuds du contenu.
 | dps-id | Chaîne |  | affectée par AEM Mobile et stockée par AEM une fois chargée dans AEM Mobile ou importée depuis AEM Mobile |
 | dps-resourceType | Chaîne | dps:Article | dps:Bannière | dps:Collection | propriété de type d’entité |
 | dps-version | Chaîne |  | version de l’entité AEM Mobile (également contenue dans aemm-id complet) |
-| dps-lastSynced | Plage |  | date de la dernière synchronisation/importation d’AEM Mobile dans AEM |
-| dps-lastUploaded | Plage |  | date du dernier téléchargement d’AEM vers AEM Mobile |
+| dps-lastSynced | Date |  | date de la dernière synchronisation/importation d’AEM Mobile dans AEM |
+| dps-lastUploaded | Date |  | date du dernier téléchargement d’AEM vers AEM Mobile |
 | dps-lastUploadedBy | Chaîne : userid |  | ID de l’utilisateur qui a effectué la dernière requête de chargement d’AEM vers AEM Mobile |
 
 ## Propriétés des métadonnées principales {#core-metadata-properties}

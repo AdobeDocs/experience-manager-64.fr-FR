@@ -1,7 +1,7 @@
 ---
 title: Lecteurs d’écran pour les formulaires HTML5
 seo-title: Screen readers for HTML5 forms
-description: Répertorie les lecteurs d’écran pris en charge par les formulaires HTML5.
+description: Répertorie les lecteurs d’écran pris en charge avec les formulaires HTML5.
 seo-description: Lists the screen readers supported with HTML5 forms.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
@@ -10,27 +10,31 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
 exl-id: c27eb771-d390-4534-8e67-f1277550e760
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 94%
+source-wordcount: '373'
+ht-degree: 60%
 
 ---
 
 # Lecteurs d’écran pour les formulaires HTML5 {#screen-readers-for-html-forms}
 
-Les composants de formulaires HTML5 rendent des modèles de formulaires XFA au format HTML5. Tous les navigateurs standard supportant le format HTML5 peuvent générer ces formulaires. Pour prendre en charge une expérience de capture de données similaire entre les formulaires PDF et HTML5, la mise en page des formulaires PDF est conservée dans les formulaires au format HTML5.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Les formulaires HTML5 utilisent des constructions HTML standard, ce qui permet d’utiliser les outils d’accessibilité usuels du format HTML avec ces formulaires. Si un formulaire est conçu selon les meilleures pratiques relatives aux formulaires accessibles, il fonctionne sur n’importe quel lecteur d’écran pris en charge. En outre, ces formulaires sont activés pour la navigation au clavier.
+Les composants de HTML5 forms génèrent un modèle de formulaire XFA au format HTML5. Tous les navigateurs standard prenant en charge HTML5 peuvent générer ces formulaires. Pour prendre en charge une expérience de capture de données similaire dans les formulaires PDF et HTML5, la mise en page des PDF forms est conservée dans les formulaires HTML5.
+
+Les formulaires HTML5 utilisent des constructions HTML standard, ce qui permet d’utiliser les outils d’accessibilité usuels du format HTML avec ces formulaires. Si un formulaire est conçu selon les bonnes pratiques relatives aux formulaires accessibles, il fonctionne avec n’importe quel lecteur d’écran pris en charge. De plus, ces formulaires sont activés pour la navigation au clavier.
 
 ## Normes d’accessibilité {#accessibility-standards}
 
-Les formulaires HTML5 sont conformes à la section 508 concernant l’accessibilité avec des exceptions connues. Voir [VPAT pour les formulaires HTML5](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf) pour obtenir des détails.
+Les formulaires HTML5 sont conformes à la section 508 concernant l’accessibilité avec des exceptions connues. Voir [VPAT pour les formulaires HTML5](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf) pour plus d’informations.
 
 ## Lecteurs d’écran certifiés pour les formulaires HTML5 {#certified-screen-readers-for-html-forms}
 
-* JAWS 14.0 sous Microsoft Windows
-* Voix off sous Mac OS X et iPad
+* JAWS 14.0 sous Microsoft Windows
+* Voix off sur Mac OS X et iPad
 
 ### JAWS {#jaws}
 

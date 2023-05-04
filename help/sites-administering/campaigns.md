@@ -10,25 +10,29 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 4a3a2ad7-40b0-4f19-a012-167453f58bc2
 exl-id: 2bc23d5a-11ee-4d29-be3d-1a8cac306aa6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 100%
+source-wordcount: '178'
+ht-degree: 42%
 
 ---
 
 # Campagnes{#campaigns}
 
-La gestion des campagnes offre aux spécialistes du marketing numérique la possibilité de diffuser du contenu personnalisé et de créer ainsi des expériences dédiées pour les visiteurs.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Si vous administrez des campagnes (y compris les pages d’accueil), il se peut que vous deviez effectuer les opérations suivantes :
+La gestion des campagnes offre aux spécialistes du marketing numérique la possibilité de diffuser du contenu personnalisé et de créer des expériences dédiées pour les visiteurs.
 
-* **Définir des segments** : vous devez définir des segments et des stratégies pour votre contenu ciblé.
-* **Préparer le HTML pour les pages d’entrée** : les pages d’entrée permettent d’importer rapidement et facilement la conception et le contenu directement vers une page AEM. Vous devez préparer le HTML afin que les ressources puissent être correctement importées. Les pages d’entrée sont utiles pour créer des pages d’entrée de marketing actives uniquement pendant une période limitée et qui doivent être créées rapidement.
-* **Intégration avec SiteCatalyst** : vous pouvez intégrer des pages d’entrée avec SiteCatalyst.
+Si vous administrez des campagnes (y compris les pages d’entrée), il se peut que vous deviez effectuer les opérations suivantes :
 
-Voir les pages suivantes :
+* **Définition de segments** - Vous devez définir des segments et des stratégies pour votre contenu ciblé.
+* **Préparer le HTML pour les pages d’entrée** : les pages d’entrée permettent d’importer rapidement et facilement la conception et le contenu directement vers une page AEM. Vous devez préparer le HTML afin que les ressources puissent être correctement importées. Les landing pages sont utiles lors de la création de landing pages marketing qui ne sont principales que pendant une durée limitée et qui doivent être créées rapidement.
+* **Intégration à SiteCatalyst** - Vous pouvez intégrer des landing pages à SiteCatalyst.
+
+Consultez les pages suivantes :
 
 * [Configuration de la segmentation](/help/sites-administering/campaign-segmentation.md)
 * [Extension et configuration de l’importateur de conception pour les pages d’entrée](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
-* [Intégration des pages d’entrée à Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
+* [Intégration des pages d’entrée à Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)

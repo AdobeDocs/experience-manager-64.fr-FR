@@ -10,16 +10,20 @@ content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
 description: Catalog Producer
 exl-id: 00776df6-1afe-4b14-a267-3ceba22dcad5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 100%
+source-wordcount: '918'
+ht-degree: 87%
 
 ---
 
 # Catalog Producer{#catalog-producer}
 
-Découvrez comment utiliser le Catalog Producer dans AEM Assets pour générer des catalogues de produits à l’aide de vos ressources numériques.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Découvrez comment utiliser Catalog Producer dans AEM Assets pour générer des catalogues de produits à l’aide de vos ressources numériques.
 
 Grâce au Catalog Producer d’Adobe Experience Manager (AEM) Assets, vous pouvez créer des catalogues pour vos produits de marque à l’aide de modèles InDesign importés à partir d’une application InDesign. Pour importer des modèles InDesign, intégrez d’abord AEM Assets à un serveur InDesign.
 
@@ -35,9 +39,9 @@ Dans le cadre du processus d’intégration, configurez le workflow **Ressource 
 
 >[!NOTE]
 >
->Seuls des fichiers InDesign (.indd) sont utilisés comme modèles. Les fichiers possédant l’extension « .indt » ne sont pas pris en charge.
+>Seuls des fichiers InDesign (.indd) sont utilisés comme modèles. Les fichiers avec l’extension .indt ne sont pas pris en charge.
 
-## Création d’un catalogue {#creating-a-catalog}
+## Créer un catalogue {#creating-a-catalog}
 
 Catalog Producer utilise des données de gestion d’informations sur les produits pour mapper les propriétés d’un produit aux propriétés XML affichées dans le modèle. Pour créer un catalogue, procédez comme suit :
 
@@ -56,9 +60,9 @@ Catalog Producer utilise des données de gestion d’informations sur les produ
 
 1. Pour ajouter des pages au catalogue, appuyez/cliquez sur **Créer** dans la barre d’outils, puis sélectionnez l’option **Nouvelle page**.
 1. Dans l’assistant, sélectionnez un modèle InDesign pour votre page. Ensuite, appuyez/cliquez sur **Suivant**.
-1. Spécifiez un nom pour la page et une description (facultative). Spécifiez des balises, le cas échéant.
-1. Appuyez/cliquez sur **Créer** dans la barre d’outils. Ensuite, appuyez/cliquez sur **Ouvrir** dans la boîte de dialogue. Les propriétés du produit sont affichées dans le volet gauche. Les propriétés prédéfinies du modèle InDesign s’affichent dans le volet droit.
-1. Dans le volet gauche, faites glisser les propriétés du produit vers les propriétés du modèle InDesign, puis créez un mappage entre elles.
+1. Spécifiez un nom pour la page et une description (facultative). Indiquez des balises, le cas échéant.
+1. Appuyez/cliquez sur **Créer** dans la barre d’outils. Ensuite, appuyez/cliquez sur **Ouvrir** dans la boîte de dialogue. Les propriétés du produit sont affichées dans le volet gauche. Les propriétés prédéfinies du modèle d’InDesign s’affichent dans le volet de droite.
+1. Dans le volet de gauche, faites glisser les propriétés du produit vers les propriétés du modèle d’InDesign, puis créez un mappage entre elles.
 
    Pour visualiser l’affichage de la page en temps réel, appuyez/cliquez sur l’onglet **Aperçu** du volet droit.
 
@@ -68,7 +72,7 @@ Catalog Producer utilise des données de gestion d’informations sur les produ
 
    >[!NOTE]
    >
-   >Vous ne pouvez créer des pages similaires que pour les produits ayant une structure similaire.
+   >Vous pouvez uniquement créer des pages similaires pour les produits ayant une structure similaire.
 
    Appuyez/cliquez sur l’icône Ajouter, sélectionnez les produits à l’aide du sélecteur de produits, puis appuyez/cliquez sur **Sélectionner** dans la barre d’outils.
 

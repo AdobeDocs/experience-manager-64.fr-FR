@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Developer Tools
 role: Admin
 exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 71%
+source-wordcount: '439'
+ht-degree: 50%
 
 ---
 
 # Utilisation de Camera Raw pour traiter les images {#camera-raw-support}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez activer la prise en charge Camera Raw pour traiter les formats de fichiers bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. Cette fonctionnalité est prise en charge dans Adobe Experience Manager Assets à l’aide de la fonction [Package Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible à partir de Distribution logicielle.
 
@@ -59,7 +63,7 @@ Pour activer la prise en charge Camera Raw dans Adobe Experience Manager Assets,
 >
 >Vérifiez que la configuration ci-dessus est identique à la configuration de l’**[!UICONTROL exemple de ressource de mise à jour de la gestion des ressources numériques avec l’étape de Camera RAW et DNG Handler]**.
 
-Vous pouvez désormais importer des fichiers Camera Raw dans [!DNL Experience Manager] Ressources. Une fois que vous avez installé le module Camera Raw et configuré le workflow requis, l’option **[!UICONTROL Réglage de l’image]** apparaît dans la liste des volets latéraux.
+Vous pouvez désormais importer des fichiers Camera Raw dans [!DNL Experience Manager] Ressources. Une fois que vous avez installé le package Camera Raw et configuré le workflow requis, l’option **[!UICONTROL Réglage de l’image]** apparaît dans la liste des volets latéraux.
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
@@ -69,12 +73,12 @@ Vous pouvez désormais importer des fichiers Camera Raw dans [!DNL Experience Ma
 
 *Image : utilisez cette option pour apporter des modifications légères à vos images*
 
-Après avoir enregistré les modifications apportées à une image Camera Raw, un nouveau rendu `AdjustedPreview.jpg` est généré pour cette image. Pour les types d’images autres que Camera Raw, les modifications sont répercutées dans tous les rendus.
+Après avoir enregistré les modifications sur une image Camera Raw, un nouveau rendu `AdjustedPreview.jpg` est généré pour l’image. Pour les autres types d’image, à l’exception de Camera Raw, les modifications sont répercutées dans tous les rendus.
 
 ## Bonnes pratiques, problèmes connus et limites {#best-practices}
 
 La fonctionnalité présente les limites suivantes :
 
-* La fonctionnalité ne prend en charge que les rendus JPEG. Elle est prise en charge sous Windows 64 bits, Mac OS et RHEL 7.x.
+* La fonctionnalité ne prend en charge que les rendus JPEG. Il est pris en charge sur Windows 64 bits, Mac OS et RHEL 7.x.
 * L’écriture différée des métadonnées n’est pas prise en charge pour les formats RAW et DNG.
-* La bibliothèque Camera Raw présente des limitations quant au nombre total de pixels qu’elle peut traiter à la fois. Actuellement, il peut traiter un fichier de maximum 65 000 pixels de long, ou de maximum 512 MP, quel que soit la limite rencontrée en premier.
+* La bibliothèque Camera Raw présente des limites relatives au nombre total de pixels qu’elle peut traiter à la fois. Actuellement, il peut traiter un fichier de maximum 65 000 pixels de long, ou de maximum 512 MP, quel que soit la limite rencontrée en premier.

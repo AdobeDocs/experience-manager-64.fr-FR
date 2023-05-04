@@ -11,14 +11,18 @@ discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3562'
-ht-degree: 53%
+source-wordcount: '3598'
+ht-degree: 32%
 
 ---
 
 # Utilisation d’Acrobat Sign dans un formulaire adaptatif {#using-adobe-sign-in-an-adaptive-form}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Activez les processus de signature électronique (Acrobat Sign) pour un formulaire adaptatif afin d’automatiser les processus de signature, de simplifier les processus à signature unique et multiple et de signer électroniquement des formulaires à partir de périphériques mobiles.
 
@@ -35,9 +39,9 @@ L’intégration d’Acrobat Sign avec AEM Forms prend en charge :
 
 * Processus de signature d’utilisateur unique et multiutilisateur
 * Processus de signature séquentiels et simultanés
-* Expériences de signature dans le formulaire et hors du formulaire
+* Expériences de signature dans le formulaire et hors formulaire
 * Signature de formulaires en tant qu’utilisateur anonyme ou connecté
-* Processus de signature dynamiques (intégration au processus AEM Forms)
+* Processus de signature dynamique (intégration au workflow AEM Forms)
 * Authentification par le biais d’une base de connaissances, un téléphone et des profils de réseaux sociaux
 
 En savoir plus [bonnes pratiques d’utilisation d’Acrobat Sign avec les formulaires adaptatifs](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) pour créer de meilleures expériences de signature.
@@ -47,7 +51,7 @@ En savoir plus [bonnes pratiques d’utilisation d’Acrobat Sign avec les formu
 Avant d’utiliser Acrobat Sign dans un formulaire adaptatif :
 
 * Assurez-vous que le service cloud AEM Forms est configuré pour utiliser Acrobat Sign. Pour plus d’informations, voir [Intégration d’Acrobat Sign à AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
-* Gardez la liste des signataires prête. Vous devez disposer d’au moins une adresse électronique pour chaque signataire.
+* Préparez la liste des signataires. Vous avez besoin d’au moins une adresse électronique pour chaque signataire.
 
 ## Configuration d’Acrobat Sign pour un formulaire adaptatif {#configure-adobe-sign-for-an-adaptive-form}
 
@@ -109,7 +113,7 @@ Effectuez les étapes suivantes pour utiliser Acrobat Sign dans un formulaire ad
 
 Acrobat Sign comporte différents champs qui peuvent être placés sur un formulaire adaptatif. Ces champs acceptent divers types de données tels que les signatures, les initiales, la société ou le titre et aident à collecter des informations supplémentaires lors de la signature. Vous pouvez utiliser le composant Bloc Acrobat Sign pour placer des champs Acrobat Sign à différents emplacements dans un formulaire adaptatif.
 
-Effectuez les étapes suivantes pour ajouter des champs à un formulaire adaptatif et personnaliser diverses options liées à ces champs :
+Effectuez les étapes suivantes pour ajouter des champs à un formulaire adaptatif et personnaliser diverses options liées à ces champs :
 
 1. Glisser-déposer **Bloc Acrobat Sign** du navigateur de composants au formulaire adaptatif. Le composant Bloc Acrobat Sign contient tous les champs Acrobat Sign pris en charge. Par défaut, il ajoute un champ **Signature** au formulaire adaptatif.
 
@@ -146,11 +150,11 @@ Acrobat Sign n’est pas activé par défaut pour un formulaire adaptatif. Effec
 
 ### Sélection du Cloud Service Acrobat Sign et de l’ordre de signature {#selectadobesigncloudserviceforanadaptiveform}
 
-Vous pouvez configurer plusieurs services Acrobat Sign pour une instance d’AEM Forms. Il est recommandé de disposer d’un ensemble distinct de services pour chaque fonction (ressources humaines, service financier, etc.). Cela facilite le suivi et la création de rapports sur les documents signés. Par exemple, une banque a plusieurs services. Vous pouvez avoir une configuration séparée pour chaque service pour un meilleur suivi des documents.
+Vous pouvez configurer plusieurs services Acrobat Sign pour une instance d’AEM Forms. Il est conseillé d’avoir un ensemble distinct de services pour chaque fonction (Ressources humaines, Finance, etc.). Cela facilite le suivi et le reporting des documents signés. Par exemple, une banque a plusieurs départements. Vous pouvez avoir une configuration séparée pour chaque service pour un meilleur suivi des documents.
 
-Un document peut également avoir plusieurs signataires. Par exemple, une demande de carte de crédit peut avoir plusieurs demandeurs. Une banque exige la signature de tous les demandeurs avant de commencer le traitement de la demande. Pour les scénarios multisignataires, vous pouvez choisir de signer le document dans un ordre séquentiel ou simultané.
+Un document peut également comporter plusieurs signataires. Par exemple, une demande de carte de crédit peut comporter plusieurs candidats. Une banque exige la signature de tous les demandeurs avant de commencer le traitement de la demande. Dans le cas de scénarios impliquant plusieurs signataires, vous pouvez choisir de signer le document dans l’ordre séquentiel ou simultané.
 
-Effectuez les étapes suivantes pour sélectionner un service cloud et un ordre de signature :
+Effectuez les étapes suivantes pour sélectionner un service cloud et l’ordre de signature :
 
 ![cloud-service](assets/cloud-service.png)
 
@@ -164,15 +168,15 @@ Effectuez les étapes suivantes pour sélectionner un service cloud et un ordre 
 
 1. Sélectionnez l’ordre de signature dans la boîte de dialogue **Les signataires peuvent signer**. Les chanteurs Acrobat Sign peuvent signer un formulaire adaptatif **Séquentiel** - l’un après l’autre signataire ; ou **Simultanément** - dans n’importe quel ordre.
 
-   Dans un ordre séquentiel, un signataire à la fois reçoit le formulaire à signer. Une fois que le signataire a terminé la signature du document, le formulaire est envoyé au signataire suivant, et ainsi de suite.
+   Dans l’ordre séquentiel, un signataire reçoit le formulaire à signer, à la fois. Une fois qu’un signataire a signé le document, le formulaire est envoyé au signataire suivant, etc.
 
-   Dans l’ordre simultané, plusieurs signataires à la fois peuvent signer un formulaire.
+   Dans l’ordre simultané, plusieurs signataires peuvent signer un formulaire à la fois.
 
 1. [Ajout de signataires à un formulaire adaptatif](#addsignerstoanadaptiveform) et appuyez sur l’icône Terminé pour enregistrer les modifications.
 
-### Ajouter des signataires à un formulaire adaptatif {#addsignerstoanadaptiveform}
+### Ajout de signataires à un formulaire adaptatif {#addsignerstoanadaptiveform}
 
-Vous ne pouvez avoir qu’un seul signataire ou plusieurs signataires pour un formulaire adaptatif. Lorsque vous ajoutez un signataire, vous pouvez également configurer les détails d’authentification pour le signataire. Vous pouvez également sélectionner si le remplisseur du formulaire et le signataire sont la même personne. Effectuez les étapes suivantes pour ajouter et fournir divers détails sur un signataire :
+Vous ne pouvez avoir qu’un ou plusieurs signataires pour un formulaire adaptatif. Lorsque vous ajoutez un signataire, vous pouvez également configurer les détails d’authentification du signataire. Vous pouvez également choisir si l’utilisateur et le chanteur du formulaire sont la même personne. Effectuez les étapes suivantes pour ajouter et fournir divers détails sur un signataire :
 
 1. Dans l’explorateur de contenu, appuyez sur **Conteneur de formulaires**, puis sur l’icône **Configurer** ![configure](assets/configure.png). Il ouvre l’explorateur de propriétés avec les propriétés du conteneur de formulaires adaptatifs.
 1. Dans l’explorateur de propriétés, développez la **Signature électronique** puis sélectionnez l’option **Activer Acrobat Sign** . Il active Acrobat Sign pour un formulaire adaptatif.
@@ -181,10 +185,10 @@ Vous ne pouvez avoir qu’un seul signataire ou plusieurs signataires pour un fo
 
    Cliquez sur l’icône **Modifier** ![aem_6_3_edit](assets/aem_6_3_edit.png) pour spécifier les informations suivantes concernant le signataire :
 
-   * **Titre :** spécifiez un titre pour identifier de manière unique un signataire.
+   * **Titre :** Spécifiez un titre pour identifier de manière unique un signataire.
    * **Le signataire et la personne remplissant le formulaire sont-ils les mêmes ? :** Sélectionner **Oui**, si l’utilisateur et le premier signataire sont la même personne. Si l’option est définie sur **Non,** n’utilisez pas le composant d’étape de signature dans le formulaire adaptatif. Si le formulaire contient un composant Étape de signature, le champ est automatiquement défini sur Oui.
-   * **Adresse électronique du signataire :** spécifiez l’adresse électronique du signataire. Le signataire reçoit les documents/formulaires à signer à l’adresse électronique indiquée. Vous pouvez choisir d’utiliser une adresse électronique fournie dans un champ de formulaire, dans le profil utilisateur AEM de l’utilisateur connecté ou d’entrer manuellement une adresse électronique. Il s’agit d’une étape obligatoire. Notez également que si vous avez configuré un seul signataire, assurez-vous que l’adresse électronique du signataire n’est pas identique au compte Acrobat Sign utilisé pour configurer les services cloud AEM.
-   * **Méthode d’authentification du signataire :** spécifiez la méthode pour authentifier un utilisateur avant d’ouvrir un formulaire à des fins de signature. Vous pouvez choisir entre le téléphone, la base de connaissances et l’authentification basée sur l’identité de réseau social.
+   * **Adresse électronique du signataire :** Indiquez l’adresse électronique du signataire. Le signataire reçoit les documents/formulaires à signer à l’adresse électronique indiquée. Vous pouvez choisir d’utiliser une adresse électronique fournie dans un champ de formulaire, dans AEM profil utilisateur de l’utilisateur connecté ou saisir manuellement une adresse électronique. Il s’agit d’une étape obligatoire. Notez également que si vous avez configuré un seul signataire, assurez-vous que l’adresse électronique du signataire n’est pas identique au compte Acrobat Sign utilisé pour configurer les services cloud AEM.
+   * **Méthode d’authentification du signataire :** Indiquez la méthode d’authentification d’un utilisateur avant d’ouvrir un formulaire à signer. Vous pouvez choisir entre le téléphone, la base de connaissances et l’authentification basée sur l’identité sociale.
 
    >[!NOTE]
    >
@@ -207,9 +211,9 @@ En outre, un formulaire adaptatif activé par Acrobat Sign n’est envoyé qu’
 
 >[!NOTE]
 >
->Les données du formulaire adaptatif sont stockées temporairement sur le portail des formulaires. Il est recommandé d’utiliser [stockage personnalisé pour Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). Il garantit que les données PII (informations personnellement identifiables) ne sont pas stockées sur les serveurs AEM.
+>Les données du formulaire adaptatif sont stockées temporairement sur Forms Portal. Il est recommandé d’utiliser [stockage personnalisé pour Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). Cela permet de s’assurer que les données des PII (informations d’identification personnelle) ne sont pas stockées sur les serveurs d’AEM.
 
-Votre expérience de signature de formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature. Sur le formulaire publié, les champs Bloc Acrobat Sign s’affichent lorsqu’un signataire reçoit le formulaire à signer par courrier électronique. Cette expérience est également connue comme expérience de signature hors du formulaire. Vous pouvez également configurer une expérience de signature dans le formulaire pour le premier signataire. Pour les étapes détaillées, voir [Créer une expérience de signature dans le formulaire](/help/forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
+Votre expérience de signature de formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature. Sur le formulaire publié, les champs Bloc Acrobat Sign s’affichent lorsqu’un signataire reçoit le formulaire à signer par courrier électronique. Cette expérience est également connue sous le nom d’expérience de signature hors formulaire. Vous pouvez également configurer une expérience de signature dans le formulaire pour le premier signataire. Pour obtenir des instructions détaillées, voir [Création d’une expérience de signature dans le formulaire](/help/forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
 
 ## Configurer des signatures cloud pour un formulaire adaptatif {#configure-cloud-signatures-for-an-adaptive-form}
 
@@ -248,29 +252,29 @@ Après [modification des propriétés d’un formulaire adaptatif pour Acrobat S
    * [Sélectionner Envoyer l’action pour un formulaire adaptatif](#selectsubmitactionforanadaptiveform)
 
 
-## Créer une expérience de signature dans le formulaire {#create-in-form-signing-experience}
+## Création d’une expérience de signature dans le formulaire {#create-in-form-signing-experience}
 
-Un utilisateur peut également signer un formulaire adaptatif lors du remplissage du formulaire. Cette expérience est également connue comme expérience de signature dans le formulaire. L’expérience de signature dans le formulaire est disponible uniquement pour le premier signataire dans un environnement à plusieurs signataires. Effectuez les étapes suivantes pour créer une expérience de signature dans le formulaire pour un formulaire adaptatif :
+Un utilisateur peut également signer un formulaire adaptatif lors du remplissage du formulaire. Cette expérience est également connue sous le nom d’expérience de signature dans le formulaire. L’expérience de signature dans le formulaire est disponible uniquement pour le premier chanteur dans un environnement de plusieurs signataires. Effectuez les étapes suivantes pour créer une expérience de signature dans le formulaire pour un formulaire adaptatif :
 
-1. Ajoutez et configurez le composant [Étape de signature](#add-and-configure-the-signature-step-component).
-1. Ajoutez le composant [Étape de résumé](#configure-the-thank-you-page-or-summary-step-component).
+1. [Ajout et configuration du composant Étape de signature](#add-and-configure-the-signature-step-component).
+1. [Ajout du composant Étape de résumé](#configure-the-thank-you-page-or-summary-step-component).
 
 ![in-form-signing-experience](assets/in-form-signing-experience.png)
 
-### Ajouter et configurer le composant Étape de signature {#add-and-configure-the-signature-step-component}
+### Ajout et configuration du composant Étape de signature {#add-and-configure-the-signature-step-component}
 
-Utilisez le composant Étape de signature pour fournir une zone pour signer électroniquement le formulaire rempli. Lorsque la section contenant le composant Étape de signature est générée, elle affiche une version PDF à signer du formulaire rempli. Le composant Étape de signature prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de signature.
+Utilisez le composant Étape de signature pour fournir une zone permettant de signer électroniquement le formulaire rempli. Lorsque la section contenant le composant Étape de signature est générée, elle affiche une version de PDF à signer du formulaire rempli. Le composant Étape de signature prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de signature.
 
-Effectuez les étapes suivantes pour configurer le composant Étape de signature :
+Effectuez les étapes suivantes pour configurer le composant Étape de signature :
 
-1. Glissez et déposez le composant **Étape de signature** dans le formulaire à partir de l’explorateur de composants.
-1. Sélectionnez le composant Étape de signature nouvellement ajouté et cliquez sur l’icône ![configure](assets/configure.png) **Configurer**. Elle ouvre l’explorateur de propriétés et affiche les propriétés Étape de signature. Configurez les propriétés suivantes :
+1. Faites glisser et déposez le **Étape de signature** du navigateur Composants au formulaire.
+1. Sélectionnez le composant Étape de signature nouvellement ajouté et cliquez sur l’icône ![configure](assets/configure.png) **Configurer**. Il ouvre l’explorateur de propriétés et affiche les propriétés de l’étape Signature. Configurez les propriétés suivantes :
 
-   * **Nom d’élément** : spécifiez le nom du composant.
-   * **Titre :** indiquez le titre unique du composant.
-   * **Message du modèle :** indiquez le message à afficher lorsque la signature PDF est chargée. Les services Acrobat Sign prennent du temps pour préparer et charger le PDF de signatures.
+   * **Nom de l’élément**: Indiquez le nom du composant.
+   * **Titre :** Spécifiez le titre unique du composant.
+   * **Message du modèle :** Spécifiez le message à afficher pendant le chargement du PDF de signatures. Les services Acrobat Sign prennent du temps pour préparer et charger le PDF de signatures.
    * **Service de signature :** Sélectionnez la **Acrobat Sign** .
-   * **Utiliser le composant de signature électronique hérité** : si vous utilisez le formulaire adaptatif respectif dans [l’espace de travail AEM Forms](/help/forms/using/introduction-html-workspace.md), l’application AEM Forms ou que le formulaire adaptatif sous-jacent a un composant de signature électronique hérité, sélectionnez l’option **Utiliser le composant de signature électronique hérité**.
+   * **Utilisation du composant E-sign hérité**: Si vous utilisez le formulaire adaptatif correspondant dans [Espace de travail AEM Forms](/help/forms/using/introduction-html-workspace.md), l’application AEM Forms ou le formulaire adaptatif sous-jacent comporte un composant d’e-signature hérité, sélectionnez la variable **Utilisation du composant E-sign hérité** .
    * **Configuration**: Sélectionnez une configuration (Acrobat Sign Cloud Service). La liste déroulante n’est disponible que si l’option **Utiliser le composant de signature électronique** est activée.
 
    Appuyez sur l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications.
@@ -285,9 +289,9 @@ Effectuez les étapes suivantes pour configurer le composant Étape de signature
 
 ### Configuration de la page de remerciements ou du composant d’étape de résumé {#configure-the-thank-you-page-or-summary-step-component}
 
-Le composant **Étape de résumé** envoie automatiquement le formulaire, indique les informations dans la page Résumé personnalisée et affiche le résumé du formulaire envoyé. Il obtient également les informations requises dans le mappage de retour. Il prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de résumé.
+Le composant **Étape de résumé** envoie automatiquement le formulaire, indique les informations dans la page Résumé personnalisée et affiche le résumé du formulaire envoyé. Il obtient également les informations requises dans la carte de retour. Il prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de résumé.
 
-Maintenant, l’expérience de signature dans le formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature.
+Désormais, l’expérience de signature dans le formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature.
 
 ## Questions fréquemment posées  {#frequently-asked-questions}
 
@@ -295,18 +299,18 @@ Maintenant, l’expérience de signature dans le formulaire est prête. Vous pou
 
 **Réponse :** Non, AEM Forms ne prend pas en charge l’utilisation d’un formulaire adaptatif qui incorpore un formulaire adaptatif activé par Acrobat Sign pour la signature.
 
-**Q : Lorsque je crée un formulaire adaptatif à l’aide du modèle avancé et que je l’ouvre pour modification, un message d’erreur &quot;Signatures électroniques ou signataires ne sont pas configurés correctement&quot; s’affiche. s’affiche. Comment résoudre le message d’erreur ?**
+**Q : Lorsque je crée un formulaire adaptatif à l’aide du modèle avancé et que je l’ouvre pour modification, un message d’erreur &quot;Signatures électroniques ou signataires ne sont pas configurés correctement&quot; s’affiche. s’affiche. Comment résoudre le message d’erreur ?**
 
 **Réponse :** Le formulaire adaptatif créé à l’aide du modèle avancé est configuré pour utiliser Acrobat Sign. Pour résoudre l’erreur, créez et sélectionnez une configuration cloud Acrobat Sign et configurez un signataire Acrobat Sign pour le formulaire adaptatif.
 
 **Q : Puis-je utiliser des balises de texte Acrobat Sign dans un composant de texte statique d’un formulaire adaptatif ?**
 
-**Réponse :** Oui, vous pouvez utiliser des balises de texte dans un composant de texte pour ajouter des champs Acrobat Sign à une [Document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (Option de document d’enregistrement généré automatiquement uniquement) Activation du formulaire adaptatif. Pour en savoir plus sur la procédure et les règles de création d’une balise de texte, voir [Documentation Acrobat Sign](https://experienceleague.adobe.com/docs/document-cloud-learn/sign-learning-hub/admin-set-up/advanced-tasks-admins/adobe-sign-text-tagging.html). Notez également que les formulaires adaptatifs offre une prise en charge limitée des balises de texte. Vous pouvez utiliser les balises de texte pour créer uniquement les champs pris en charge par le bloc Acrobat Sign.
+**Réponse :** Oui, vous pouvez utiliser des balises de texte dans un composant de texte pour ajouter des champs Acrobat Sign à une [Document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (Option de document d’enregistrement généré automatiquement uniquement) Activation du formulaire adaptatif. Pour en savoir plus sur la procédure et les règles de création d’une balise de texte, voir [Documentation Acrobat Sign](https://experienceleague.adobe.com/docs/document-cloud-learn/sign-learning-hub/admin-set-up/advanced-tasks-admins/adobe-sign-text-tagging.html). Notez également que la prise en charge des balises de texte est limitée dans les formulaires adaptatifs. Vous pouvez utiliser les balises de texte pour créer uniquement les champs pris en charge par le bloc Acrobat Sign.
 
-**Q : AEM Forms fournit des composants de bloc Acrobat Sign et d’étape de signature. Peut-on les utiliser simultanément dans un formulaire adaptatif ?**
+**Q : AEM Forms fournit des composants de bloc Acrobat Sign et d’étape de signature. Peut-on les utiliser simultanément dans un formulaire adaptatif ?**
 
 **Réponse** : Vous pouvez utiliser simultanément les deux composants dans un formulaire. Voici quelques recommandations relatives à l’utilisation des composants suivants :
 
-**Bloc Acrobat Sign :** Vous pouvez utiliser le bloc Acrobat Sign pour ajouter des champs Acrobat Sign n’importe où dans le formulaire adaptatif. Il permet également d’attribuer des champs spécifiques aux signataires. Par défaut, lorsqu’un formulaire adaptatif est prévisualisé ou publié, le bloc Acrobat Sign n’est pas visible. Ces blocs sont disponibles uniquement dans le document de signature. Dans le document de signature, seuls les champs affectés à un signataire sont activés. Le bloc Acrobat Sign peut être utilisé avec les premiers signataires et les signataires suivants.
+**Bloc Acrobat Sign :** Vous pouvez utiliser le bloc Acrobat Sign pour ajouter des champs Acrobat Sign n’importe où dans le formulaire adaptatif. Il permet également d’attribuer des champs spécifiques aux signataires. Par défaut, lorsqu’un formulaire adaptatif est prévisualisé ou publié, le bloc Acrobat Sign n’est pas visible. Ces blocs ne sont activés que dans le document de signature. Dans le document de signature, seuls les champs affectés à un signataire sont activés. Le bloc Acrobat Sign peut être utilisé avec les premiers signataires et les signataires suivants.
 
-**Composant d’étape de signature :** vous pouvez utiliser le composant d’étape de signature pour créer une expérience de signature dans le formulaire. Il permet uniquement au premier signataire de signer pendant que le formulaire est rempli. Lorsque la section contenant le composant Étape de signature est générée, elle affiche une version PDF à signer du formulaire. Il s’agit généralement de la dernière ou de l’avant-dernière section suivie du composant de résumé d’un formulaire.
+**Composant d’étape de signature :** Vous pouvez utiliser le composant d’étape de signature pour créer une expérience de signature dans le formulaire. Il permet uniquement au premier signataire de signer lorsque le formulaire est en cours de remplissage. Lorsque la section contenant le composant Étape de signature est générée, elle affiche une version de PDF à signer du formulaire. Il s’agit généralement de la dernière ou de l’avant-dernière section suivie du composant de résumé d’un formulaire.

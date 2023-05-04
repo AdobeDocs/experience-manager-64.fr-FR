@@ -10,14 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 exl-id: a0dcffed-1040-4d6d-b8e9-3bbe5f30deb4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 10%
+source-wordcount: '372'
+ht-degree: 8%
 
 ---
 
 # Fonctionnalité Contenu proposé {#featured-content-feature}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#introduction}
 
@@ -33,7 +37,7 @@ Une fois que le contenu est marqué comme présenté, il est répertorié dans c
 
 La possibilité d’afficher du contenu peut être autorisée ou non par composant.
 
-Cette section de la documentation décrit :
+Cette section de la documentation décrit
 
 * Ajout de contenu présenté à un site de la communauté
 * Paramètres de configuration de la variable `Featured Content`component
@@ -58,7 +62,7 @@ Sélectionnez le `Featured Content` pour accéder au composant et le sélectionn
 
 ![chlimage_1-14](assets/chlimage_1-14.png) ![chlimage_1-15](assets/chlimage_1-15.png)
 
-### Onglet Settings {#settings-tab}
+### Onglet Paramètres {#settings-tab}
 
 Sous , **[!UICONTROL Paramètres]** , identifiez le contenu à afficher :
 
@@ -73,7 +77,7 @@ Titre de la liste du contenu présenté. Par exemple :
 * **[!UICONTROL Limite d’affichage]**
 Nombre maximal de contenus présentés à afficher. La valeur par défaut est 5.
 
-## Expérience des visiteurs {#site-visitor-experience}
+## Expérience du visiteur du site {#site-visitor-experience}
 
 La capacité à marquer le contenu comme contenu présenté nécessite des privilèges de modérateur.
 

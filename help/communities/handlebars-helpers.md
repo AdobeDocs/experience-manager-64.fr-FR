@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: 66045e67-4d33-4c0c-81d7-d4287ed68ccc
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 9%
+source-wordcount: '1550'
+ht-degree: 8%
 
 ---
 
 # Assistant de Handlebars SCF {#scf-handlebars-helpers}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 | **[⇐ Notions fondamentales sur les fonctionnalités](essentials.md)** | **[⇒ de personnalisation côté serveur](server-customize.md)** |
 |---|---|
@@ -25,7 +29,7 @@ ht-degree: 9%
 
 Handlebars Helpers (helpers) sont des méthodes appelables à partir des scripts Handlebars pour faciliter l’utilisation des composants SCF.
 
-L’implémentation comprend une définition côté client et une définition côté serveur. Il est également possible pour les développeurs de créer des assistants personnalisés.
+L’implémentation comprend une définition côté client et côté serveur. Il est également possible pour les développeurs de créer des assistants personnalisés.
 
 Les assistants SCF personnalisés fournis avec AEM Communities sont définis dans la variable [bibliothèque cliente](../../help/sites-developing/clientlibs.md):
 
@@ -266,7 +270,7 @@ Cette assistance, appropriée uniquement côté serveur, fournit des fonctionnal
 
 * **authoringDisabled**: Booléen
 
-   (facultatif) La valeur par défaut est false. usage interne uniquement.
+   (facultatif) La valeur par défaut est false. Pour une utilisation interne uniquement.
 
 ### Exemple {#example-4}
 

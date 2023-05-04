@@ -4,14 +4,18 @@ seo-title: AEM 6.4 Mobile User Guide
 description: Ce guide explique comment créer et gérer du contenu pour les applications mobiles.
 seo-description: Describes how to create and manage content for mobile applications.
 exl-id: 89af57da-8bd6-46b7-9462-fcf51687004e
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 93%
+source-wordcount: '352'
+ht-degree: 86%
 
 ---
 
 # Guide de l’utilisateur AEM 6.4 Mobile
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Ce guide couvre toutes les tâches d’AEM Mobile, telles que la création et la gestion de contenu pour les applications mobiles.
 

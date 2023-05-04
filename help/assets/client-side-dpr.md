@@ -3,14 +3,18 @@ title: Utilisation de l’imagerie dynamique avec rapport des pixels côté clie
 description: Découvrez comment utiliser le rapport de pixels d’appareil côté client avec l’imagerie dynamique dans Adobe Experience Manager as a Cloud Service avec Dynamic Media.
 role: Admin,User
 exl-id: 3c19a02f-9d97-4ed4-92ea-0b5861267219
-source-git-commit: 176e974bf99d9f70a5c1d075ee83eea9e9173221
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 100%
+source-wordcount: '359'
+ht-degree: 92%
 
 ---
 
 # À propos de l’imagerie dynamique avec rapport des pixels de périphérique côté client (RPD) {#client-side-dpr}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 La solution d’imagerie dynamique actuelle utilise des chaînes d’agent utilisateur pour déterminer le type d’appareil utilisé (ordinateur de bureau, tablette, mobile, etc.).
 

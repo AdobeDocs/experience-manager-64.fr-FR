@@ -1,7 +1,7 @@
 ---
-title: Création et utilisation de tâches pour le déchargement
+title: Créer et utiliser des tâches pour le déchargement
 seo-title: Creating and Consuming Jobs for Offloading
-description: La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet de créer des tâches JobManager et des services JobConsumer qui utilisent ces dernières.
+description: La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet de créer des tâches JobManager et des services JobConsumer qui les utilisent.
 seo-description: The Apache Sling Discovery feature provides a Java API that enables you to create JobManager jobs and JobConsumer services that consume them
 uuid: d6a5beb0-0618-4b61-9b52-570862eac920
 contentOwner: Guillaume Carlino
@@ -10,22 +10,26 @@ topic-tags: platform
 content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 exl-id: ec5253cd-7f1e-4408-9765-8aaa9a81095c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 100%
+source-wordcount: '428'
+ht-degree: 36%
 
 ---
 
-# Création et utilisation de tâches pour le déchargement{#creating-and-consuming-jobs-for-offloading}
+# Créer et utiliser des tâches pour le déchargement{#creating-and-consuming-jobs-for-offloading}
 
-La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet de créer des tâches JobManager et des services JobConsumer qui utilisent ces dernières.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet de créer des tâches JobManager et des services JobConsumer qui les utilisent.
 
 Pour plus d’informations sur la création de topologies de déchargement et la configuration de la consommation de rubrique, voir [Tâches de déchargement](/help/sites-deploying/offloading.md).
 
 ## Gestion des charges utiles de la tâche {#handling-job-payloads}
 
-La structure de déchargement définit deux propriétés de tâche que vous utilisez pour identifier la charge utile de la tâche. Les agents de réplication de déchargement utilisent ces propriétés pour identifier les ressources à répliquer sur les instances de la topologie :
+La structure de déchargement définit deux propriétés de tâche que vous utilisez pour identifier la charge utile de la tâche. Les agents de réplication de déchargement utilisent ces propriétés pour identifier les ressources à répliquer sur les instances dans la topologie :
 
 * `offloading.job.input.payload` : liste de chemins d’accès au contenu séparés par des virgules. Le contenu est répliqué sur l’instance qui exécute la tâche.
 * `offloading.job.output.payload` : liste de chemins d’accès au contenu séparés par des virgules. Une fois l’exécution de la tâche terminée, le payload est répliqué sur ces chemins d’accès sur l’instance qui a créé la tâche.
@@ -35,17 +39,17 @@ Utilisez l’énumération `OffloadingJobProperties` pour faire référence aux 
 * `OffloadingJobProperties.INPUT_PAYLOAD.propertyName()`
 * `OffloadingJobProperties.OUTPUT_PAYLOAD.propetyName()`
 
-Une charge utile n’est pas obligatoire pour les tâches. Elle est toutefois nécessaire si la tâche requiert la manipulation d’une ressource et si l’ordinateur sur lequel elle est déchargée n’a pas servi à la créer.
+Les tâches ne nécessitent pas de payloads. Toutefois, la charge utile est nécessaire si la tâche nécessite la manipulation d’une ressource et si la tâche est déchargée sur un ordinateur qui n’a pas créé la tâche.
 
 ## Création de tâches pour le déchargement {#creating-jobs-for-offloading}
 
-Créez un client qui appelle la méthode JobManager.addJob afin de créer une tâche exécutée par un service JobConsumer sélectionné automatiquement. Indiquez les informations suivantes pour créer la tâche :
+Créez un client qui appelle la méthode JobManager.addJob pour créer une tâche qu’un JobConsumer sélectionné automatiquement exécute. Indiquez les informations suivantes pour créer la tâche :
 
-* Rubrique : rubrique de tâche.
+* Rubrique : Rubrique de la tâche.
 * Nom : (Facultatif)
 * Carte des propriétés : objet `Map<String, Object>` contenant un nombre indéfini de propriétés, telles que les chemins de payload en entrée et en sortie. Cet objet Map est disponible pour l’objet JobConsumer qui exécute la tâche.
 
-L’exemple de service suivant crée une tâche pour un chemin de charge utile en entrée et de rubrique donné.
+L’exemple de service suivant crée une tâche pour une rubrique et un chemin de payload d’entrée donnés.
 
 ```java
 package com.adobe.example.offloading;
@@ -168,7 +172,7 @@ public class MyJobConsumer implements JobConsumer {
 }
 ```
 
-La classe MyJobConsumer génère les messages de journal suivants pour une charge utile en entrée de /content/geometrixx/de/services :
+La classe MyJobConsumer génère les messages de journal suivants pour un payload d’entrée /content/geometrixx/de/services :
 
 ```shell
 10.06.2013 16:02:40.803 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Consuming job of topic: com/adobe/example/offloading
@@ -176,13 +180,13 @@ La classe MyJobConsumer génère les messages de journal suivants pour une charg
 10.06.2013 16:02:40.884 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Job OK for payload /content/geometrixx/de/services
 ```
 
-Vous pouvez observer la propriété consommée à l’aide de CRXDE Lite :
+La propriété Consumed peut être observée à l’aide de CRXDE Lite :
 
 ![chlimage_1-25](assets/chlimage_1-25.png)
 
 ## Dépendances Maven {#maven-dependencies}
 
-Ajoutez les définitions de dépendance suivantes à votre fichier pom.xml, de sorte que Maven puisse résoudre les classes liées au déchargement.
+Ajoutez les définitions de dépendance suivantes à votre fichier pom.xml afin que Maven puisse résoudre les classes liées au déchargement.
 
 ```xml
 <dependency>
@@ -199,7 +203,7 @@ Ajoutez les définitions de dépendance suivantes à votre fichier pom.xml, de s
 </dependency>
 ```
 
-Les exemples précédents nécessitaient également les définitions de dépendance suivantes :
+Les exemples précédents nécessitaient également les définitions de dépendance suivantes :
 
 ```xml
 <dependency>

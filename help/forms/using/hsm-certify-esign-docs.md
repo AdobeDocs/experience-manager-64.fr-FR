@@ -1,7 +1,7 @@
 ---
 title: Utiliser HSM pour signer ou certifier des documents numériquement
 seo-title: Use HSM to certify eSigned documents
-description: Utiliser des modules HSM ou etoken pour certifier des documents signés électroniquement
+description: Utilisation de modules HSM ou etoken pour certifier des documents signés électroniquement
 seo-description: Use HSM or etoken devices to certify eSigned documents
 uuid: bbe057c1-6150-41f9-9c82-4979d31d305d
 contentOwner: vishgupt
@@ -10,36 +10,40 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 exl-id: ab5233dd-182e-4871-997f-b2142901bce7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 41%
 
 ---
 
 # Utiliser HSM pour signer ou certifier des documents numériquement {#use-hsm-to-digitally-sign-or-certify-documents}
 
-Les modules de sécurité matérielle (HSM) et etokens sont des modules informatiques dédiés, sécurisés de manière renforcée et résistants aux modifications conçus pour gérer, traiter et stocker les clés numériques en toute sécurité. Ces modules sont directement associés à un ordinateur ou à un serveur réseau.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Adobe Experience Manager Forms peut utiliser les informations d’identification stockées sur un HSM ou etoken en vue d’être signé électroniquement ou appliquer les signatures numériques côté serveur à un document. Pour utiliser un module HSM ou etoken avec AEM Forms :
+Les modules de sécurité matérielle (HSM) et etokens sont des appareils informatiques dédiés, sécurisés et résistants aux modifications, conçus pour gérer, traiter et stocker en toute sécurité des clés numériques. Ces périphériques sont directement associés à un ordinateur ou à un serveur réseau.
+
+Adobe Experience Manager Forms peut utiliser des informations d’identification stockées sur un HSM ou etoken pour eSign ou appliquer des signatures numériques côté serveur à un document. Pour utiliser un module HSM ou etoken avec AEM Forms :
 
 1. Activez le service DocAssurance.
-1. Configurez les certificats avec l’extension Lecture.
-1. Créez un alias pour le module HSM ou etoken dans la console Web AEM.
-1. Utilisez les API du service DocAssurance pour signer ou certifier les documents avec les clés numériques stockées sur le module.
+1. Configurez des certificats pour l’extension de Reader.
+1. Créez un alias pour le module HSM ou etoken dans AEM console web.
+1. Utilisez les API du service DocAssurance pour signer ou certifier les documents avec des clés numériques stockées sur l’appareil.
 
 ## Avant de configurer les modules HSM ou etoken avec AEM Forms  {#configurehsmetoken}
 
-* Installez le [module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
-* Installez et configurez le logiciel client du HSM ou etoken sur le même ordinateur que le serveur AEM Le logiciel client est requis pour communiquer avec les modules HSM et etoken.
-* (Microsoft windows uniquement) Configurez la variable d’environnement JAVA_HOME_32 de façon à ce qu’elle pointe vers le répertoire d’installation de la version 32 bits du kit de développement Java 8 (JDK 8). Le chemin d’accès par défaut du répertoire est le suivant : C:\Program Files(x86)\Java\jdk&lt;version>
-* (AEM Forms sur OSGi uniquement) installez le certificat racine dans le trust store. Cela est nécessaire pour vérifier le PDF signé 
+* Installer [Module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) module.
+* Installez et configurez le logiciel client HSM ou etoken sur le même ordinateur que le serveur AEM. Le logiciel client est nécessaire pour communiquer avec les périphériques HSM et etoken.
+* (Microsoft Windows uniquement) Définissez la variable d’environnement JAVA_HOME_32 de sorte qu’elle pointe vers le répertoire d’installation de la version 32 bits du kit de développement Java 8 (JDK 8). Le chemin par défaut du répertoire est C:\Program Files(x86)\Java\jdk&lt;version>
+* (AEM Forms sur OSGi uniquement) Installez le certificat racine dans le trust store. Cela est nécessaire pour vérifier le PDF signé 
 
 >[!NOTE]
 >
->Sous Microsoft Windows, les clients à 32 bits uniquement de LunaSA ou EToken sont pris en charge.
+>Sous Microsoft Windows, seuls les clients LunaSA ou EToken 32 bits sont pris en charge.
 
-## Activer le service DocAssurance {#configuredocassurance}
+## Activation du service DocAssurance {#configuredocassurance}
 
 Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes suivantes pour activer le service :
 
@@ -63,9 +67,9 @@ Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes 
 1. Enregistrez et fermez le fichier sling.properties.
 1. Redémarrez l’instance AEM.
 
-## Configuration des certificats pour les extensions Lecture {#set-up-certificates-for-reader-extensions}
+## Configuration de certificats pour les extensions de Reader {#set-up-certificates-for-reader-extensions}
 
-Effectuez les étapes suivantes pour configurer des certificats :
+Effectuez les étapes suivantes pour configurer des certificats :
 
 1. Connectez-vous à l’instance Auteur AEM en tant qu’administrateur.
 
@@ -89,34 +93,34 @@ Effectuez les étapes suivantes pour configurer des certificats :
 
 >[!NOTE]
 >
->Pour AEM Forms sur OSGi, pour vérifier le PDF signé, le certificat racine est installé dans le magasin d’approbations.
+>Pour AEM Forms sur OSGi, pour vérifier le PDF signé, le certificat racine est installé dans Trust Store.
 
 >[!NOTE]
 >
->Pour passer à l’environnement de production, remplacez les informations d’identification d’évaluation par celles de production. Veillez à supprimer vos anciennes informations d’identification Reader Extensions avant de mettre à jour des informations d’identification expirées ou d’évaluation.
+>Lorsque vous passez à l’environnement de production, remplacez vos informations d’identification d’évaluation par les informations d’identification de production. Veillez à supprimer vos anciennes informations d’identification Reader Extensions avant de mettre à jour des informations d’identification expirées ou d’évaluation.
 
 ## Création d’un alias pour le périphérique  {#configuredeviceinaemconsole}
 
-L’alias contient l’ensemble des paramètres dont a besoin un périphérique HSM ou etoken. Suivez les instructions ci-dessous pour créer un alias pour les informations d’identification de chaque module HSM ou etoken qu’utilisent eSign ou les signatures numériques :
+L’alias contient tous les paramètres requis par HSM ou etoken. Suivez les instructions ci-dessous pour créer un alias pour chaque module HSM ou etoken utilisé par eSign ou Digital Signatures :
 
-1. Ouvrez la console AEM. L’URL par défaut de la console AEM est https://&lt;host>:&lt;port>/system/console/configMgr
+1. Ouvrez AEM console. L’URL par défaut de la console AEM est https://&lt;host>:&lt;port>/system/console/configMgr
 1. Ouvrez le **Service de configuration des informations d’identification HSM** et spécifiez les valeurs des champs suivants :
 
    * **Alias d’authentification** : spécifiez une chaîne utilisée pour identifier l’alias. Cette valeur est utilisée en tant que propriété pour certaines opérations de signatures numériques, comme l’opération de saisie du champ de signature.
-   * **Chemin du DLL** : spécifiez le chemin d’accès complet à la bibliothèque cliente de votre module HSM ou etoken sur le serveur. Par exemple, C:\Program Files\LunaSA\cryptoki.dll. Dans un environnement organisé en grappe, ce chemin d’accès doit être identique pour l’ensemble des serveurs de la grappe.
+   * **Chemin d’accès DLL**: Spécifiez le chemin d’accès complet à votre bibliothèque cliente HSM ou etoken sur le serveur. Par exemple, C:\Program Files\LunaSA\cryptoki.dll. Dans un environnement organisé en grappe, ce chemin d’accès doit être identique pour tous les serveurs de la grappe.
    * **Code secret HSM** : indiquez le mot de passe requis pour accéder à la clé du module.
-   * **Id d’emplacement HSM** : indiquez un identifiant d’emplacement de type entier. L’ID d’emplacement est défini pour les clients de façon individuelle. Si vous enregistrez un second ordinateur sur une partition différente (par exemple, HSMPART2 sur le même module HSM), l’emplacement 1 est associé à la partition HSMPART2 pour ce client.
+   * **Identifiant d’emplacement HSM**: Indiquez un identifiant d’emplacement de type entier. L’identifiant d’emplacement est défini client par client. Si vous enregistrez une deuxième machine sur une partition différente (par exemple, HSMPART2 sur le même appareil HSM), l’emplacement 1 est associé à la partition HSMPART2 du client.
 
-   **Remarque :** *lors de la configuration d’Etoken, entrez une valeur numérique pour le champ d’ID d’emplacement HSM. Une valeur numérique est nécessaire pour que les opérations de signature fonctionnent.*
+   **Remarque :** *Lors de la configuration d’Etoken, spécifiez une valeur numérique pour le champ Identifiant d’emplacement HSM. Une valeur numérique est nécessaire pour que les opérations de signature fonctionnent.*
 
-   * **Certificat SHA1** : indiquez la valeur SHA1 (empreinte numérique) du fichier de clé publique (.cer) pour les informations d’identification utilisées. Veillez à ce que la valeur SHA1 ne contienne aucun espace. Si vous utilisez un certificat physique, cette valeur n’est pas requise.
+   * **Certificat SHA1**: Spécifiez la valeur SHA1 (empreinte numérique) du fichier de clé publique (.cer) pour les informations d’identification que vous utilisez. Assurez-vous qu’aucun espace n’est utilisé dans la valeur SHA1. Si vous utilisez un certificat physique, il n’est pas obligatoire.
    * **Type de module HSM** : sélectionnez l’éditeur du module HSM (Luna ou autre) ou eToken.
 
-   Cliquez sur **Enregistrer**. Le module de sécurité matérielle est configuré pour AEM Forms. Désormais, vous pouvez utiliser le module de sécurité matérielle avec AEM Forms pour signer ou certifier des documents.
+   Cliquez sur **Enregistrer**. Le module de sécurité matérielle est configuré pour AEM Forms. Vous pouvez désormais utiliser le module de sécurité matérielle avec AEM Forms pour signer ou certifier des documents.
 
-## Utiliser les API du service DocAssurance pour signer ou certifier un document avec des clés numériques stockées sur le module  {#programatically}
+## Utilisez les API du service DocAssurance pour signer ou certifier un document avec des clés numériques stockées sur le périphérique.  {#programatically}
 
-L’exemple de code suivant utilise HSM ou etoken pour signer ou certifier un document.
+L’exemple de code suivant utilise un HSM ou etoken pour signer ou certifier un document.
 
 ```java
 /*************************************************************************
@@ -397,10 +401,10 @@ public class Sign{
 }
 ```
 
-Si vous avez effectué la mise à niveau d’AEM 6.0 Forms ou AEM 6.1 Forms et que vous utilisiez le service DocAssurance dans la version précédente, alors :
+Si vous avez effectué une mise à niveau à partir d’AEM 6.0 Forms ou AEM 6.1 Forms et que vous utilisiez le service DocAssurance dans la version précédente, alors :
 
-* Pour utiliser le service DocAssurance sans module HSM ni etoken, continuez à utiliser le code existant.
-* Pour utiliser le service DocAssurance avec un module HSM ou etoken, remplacez le code de l’objet existant CredentialContext par l’API indiquée ci-dessous.
+* Pour utiliser le service DocAssurance sans module HSM ou etoken, continuez à utiliser le code existant.
+* Pour utiliser le service DocAssurance avec un module HSM ou etoken, remplacez votre code d’objet CredentialContext existant par l’API répertoriée ci-dessous.
 
 ```java
 /**
@@ -413,4 +417,4 @@ Si vous avez effectué la mise à niveau d’AEM 6.0 Forms ou AEM 6.1 Forms et q
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-Pour en savoir plus sur les API et des exemples de code du service DocAssurance, consultez [Utilisation des Services de document AEM par programmation](/help/forms/using/aem-document-services-programmatically.md).
+Pour plus d’informations sur les API et un exemple de code du service DocAssurance, voir [Utilisation d’AEM Services de document par programmation](/help/forms/using/aem-document-services-programmatically.md).

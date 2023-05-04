@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: bf182bb7-e305-45be-aadb-d71efd70f8cb
 exl-id: 5d58f9c5-3210-48ef-94a3-805a1a57e3af
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 4%
+source-wordcount: '1672'
+ht-degree: 3%
 
 ---
 
 # Création d’un site de communauté {#author-a-new-community-site}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Création d’un site de communauté {#create-a-new-community-site}
 
@@ -36,7 +40,7 @@ Pour commencer à créer un site communautaire :
 
 ### Étape 1 : Modèle de site {#step-site-template}
 
-![createsitemplate63](assets/createsitetemplate63.png)
+![createsitetemplate63](assets/createsitetemplate63.png)
 
 Sur le [Étape Modèle de site](sites-console.md#step2013asitetemplate), saisissez un titre, une description, le nom de l’URL, puis sélectionnez un modèle de site de communauté, par exemple :
 
@@ -100,7 +104,7 @@ Cochez toutes les cases pour [Gestion des utilisateurs](sites-console.md#user-ma
 
 ![createsitesettings](assets/createsitesettings.png)
 
-#### Balisage {#tagging}
+#### BALISAGE {#tagging}
 
 Les balises qui peuvent être appliquées au contenu de la communauté sont contrôlées en sélectionnant AEM espaces de noms précédemment définis via la variable [Console Balisage](../../help/sites-administering/tags.md#tagging-console) (par exemple, [Espace de noms du tutoriel](setup.md#create-tutorial-tags)).
 
@@ -227,7 +231,7 @@ Sélectionnez l’icône d’exportation pour créer un package du site de la co
 >1. (Facultatif) Sélectionnez `Clear` ou `Force Retry` pour réinitialiser la file d’attente de réplication
 
 
-### Sélectionnez Publier {#select-publish}
+### Sélectionnez Publier . {#select-publish}
 
 Une fois que le serveur de publication est en cours d’exécution, sélectionnez l’icône mondiale pour publier le site de la communauté.
 

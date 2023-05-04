@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 exl-id: 00ac29fb-cc8f-4dd9-a261-839a4bf664c2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 4%
+source-wordcount: '447'
+ht-degree: 5%
 
 ---
 
 # Création d’un exemple de page {#create-a-sample-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Depuis AEM 6.1 Communities, le moyen le plus simple de créer un exemple de page est de créer un site de communauté simple, composé simplement d’une fonction Page .
 

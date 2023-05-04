@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 exl-id: 3d5396b5-10e5-49bc-aa11-5a3df93d70c3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '388'
 ht-degree: 5%
 
 ---
 
 # Notions fondamentales sur les commentaires {#comments-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Cette page fournit l’essentiel de l’utilisation du système de commentaires (composant de commentaires) et des options de gestion du contenu généré par l’utilisateur (contenu généré par les utilisateurs) lorsque les membres publient des commentaires ou des réponses.
 
@@ -60,7 +64,7 @@ Le composant Commentaires établit un système de commentaires, de sorte que cha
 
 La pagination et l’utilisation d’URL pour la mise en cache et la liaison nécessitent que l’URL soit unique par système de commentaire. Par conséquent, une seule instance d’un système de commentaires est autorisée par page.
 
-D’autres fonctionnalités incluent déjà le système de commentaires. à savoir :
+D’autres fonctionnalités incluent déjà le système de commentaires. Ces éléments sont les suivants :
 
 * [Blog](blog-developer-basics.md)
 * [Calendrier](calendar-basics-for-developers.md)

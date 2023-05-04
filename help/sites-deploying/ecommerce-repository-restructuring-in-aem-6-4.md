@@ -10,16 +10,20 @@ topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
 feature: Upgrading
 exl-id: 6adcc1a4-eb0f-4410-8219-dbd7e6bbe469
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 100%
+source-wordcount: '237'
+ht-degree: 42%
 
 ---
 
 # Restructuration des référentiels e-Commerce dans AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Comme indiqué dans la page parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution de e-Commerce d’AEM. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Comme indiqué dans la page parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution de e-Commerce d’AEM. Certaines modifications nécessitent des efforts lors de la mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
 
 ## Avec la mise à niveau vers la version 6.4 {#with-upgrade}
 
@@ -37,19 +41,19 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td> 
-   <td><p>Vous pouvez utiliser une tâche de <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">migration différée</a> pour migrer les données e-Commerce.</p> <p>La procédure effectue les étapes suivantes :</p> 
+   <td><p>Vous pouvez utiliser une <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migration différée</a> tâche de migration des données de commerce électronique.</p> <p>Elle effectue les étapes suivantes :</p> 
     <ul> 
-     <li>ajuste les références à l’ancien emplacement pour pointer vers le nouvel emplacement</li> 
-     <li>transfère le contenu de l’ancien emplacement vers le nouvel emplacement</li> 
-     <li>supprime l’ancien emplacement pour éventuellement activer l’utilisation du nouvel emplacement dans l’ensemble du système</li> 
-    </ul> <p>Les emplacements couverts par la tâche sont les suivants :</p> 
+     <li>ajuste les références à l’ancien emplacement pour qu’il pointe vers le nouvel emplacement.</li> 
+     <li>déplace le contenu de l’ancien emplacement vers le nouvel emplacement</li> 
+     <li>supprime l’ancien emplacement pour activer éventuellement l’utilisation d’un nouvel emplacement dans l’ensemble du système.</li> 
+    </ul> <p>Les emplacements couverts par la tâche sont les suivants :</p> 
     <ul> 
      <li>/etc/commerce/products</li> 
      <li>/etc/commerce/collections<br /> </li> 
      <li>/etc/commerce/orders<br /> </li> 
      <li>/etc/commerce/payment-methods<br /> </li> 
      <li>/etc/commerce/shipping-methods<br /> </li> 
-    </ul> <p>Pour les catalogues plus volumineux, il est recommandé d’exécuter la tâche de migration de commerce individuellement en transmettant la propriété système Java suivante à AEM :</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Après la migration, AEM doit être redémarré.</p> </td> 
+    </ul> <p>Pour les catalogues plus volumineux, il est recommandé d’exécuter la tâche de migration de commerce individuellement en transmettant la propriété système Java suivante à AEM :</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Après la migration, AEM doit être redémarré.</p> </td> 
   </tr>
   <tr>
    <td><strong>Remarques</strong></td> 

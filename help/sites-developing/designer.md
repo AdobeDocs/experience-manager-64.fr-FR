@@ -1,7 +1,7 @@
 ---
 title: Conceptions et Designer
 seo-title: Designs and the Designer
-description: Vous devez créer une conception pour votre site web et dans AEM. Pour ce faire, vous allez utiliser le Designer.
+description: Vous devez créer une conception pour votre site web et, dans AEM, utiliser le Concepteur
 seo-description: You will need to create a design for your website and in AEM, you do so by using the Designer
 uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: 8a4fc7c7-03bc-44db-93f1-dbd76fc9dbd7
-source-git-commit: 9ae048ca2811a56c5d6f0b2415fcfcccc4384dbf
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 70%
 
 ---
 
 # Conceptions et Designer{#designs-and-the-designer}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!CAUTION]
 >
@@ -27,7 +31,7 @@ Le Designer permet de créer une conception pour votre site Web à l’aide de l
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’accessibilité web, voir [AEM et les instructions pour l’accessibilité web](/help/managing/web-accessibility.md).
+>Pour plus d’informations sur l’accessibilité web, voir [AEM et directives d’accessibilité web](/help/managing/web-accessibility.md).
 
 ## Utilisation de Designer {#using-the-designer}
 
@@ -43,11 +47,11 @@ Les conceptions sont stockées sous `/apps/<your-project>`. Le chemin d’accès
 
 >[!NOTE]
 >
->Toutes les modifications apportées à une page dans le mode Création sont conservées sous le nœud de conception du site et sont automatiquement appliquées à toutes les pages qui présentent la même conception.
+>Toutes les modifications apportées à une page en mode de conception sont conservées sous le noeud de conception du site et sont automatiquement appliquées à toutes les pages qui ont la même conception.
 
-## Éléments nécessaires {#what-you-will-need}
+## Ce dont vous aurez besoin {#what-you-will-need}
 
-Pour créer votre conception, vous aurez besoin des éléments suivants :
+Pour réaliser votre conception, vous aurez besoin des éléments suivants :
 
 **CSS** - Les feuilles de style en cascade (CSS) définissent les formats de zones spécifiques sur vos pages.
 

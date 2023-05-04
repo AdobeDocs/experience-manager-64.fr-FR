@@ -1,7 +1,7 @@
 ---
 title: Création et organisation des pages
 seo-title: Creating and Organizing Pages
-description: Comment créer et gérer des pages avec AEM
+description: Comment créer et gérer des pages avec AEM
 seo-description: How to create and manage pages with AEM
 uuid: 9bdc3222-6a0c-48a2-be1d-79ceb3bbc828
 contentOwner: Chris Bohnert
@@ -10,20 +10,24 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 exl-id: 0182155a-0156-458c-b89b-35ab3e27819e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 99%
+source-wordcount: '2331'
+ht-degree: 68%
 
 ---
 
 # Création et organisation des pages{#creating-and-organizing-pages}
 
-Cette section décrit comment créer et gérer des pages avec Adobe Experience Manager (AEM) pour pouvoir ensuite [créer du contenu](/help/sites-authoring/editing-content.md) dans ces pages.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Cette section décrit comment créer et gérer des pages avec Adobe Experience Manager (AEM) afin que vous puissiez ensuite [créer du contenu](/help/sites-authoring/editing-content.md) sur ces pages.
 
 >[!NOTE]
 >
->Vous devez disposer des [droits d’accès](/help/sites-administering/security.md) et [des autorisations appropriés](/help/sites-administering/security.md#permissions) sur votre compte pour agir sur les pages, notamment pour créer, copier, déplacer, modifier et supprimer du contenu.
+>Votre compte a besoin de la fonction [droits d’accès appropriés](/help/sites-administering/security.md) et [permissions](/help/sites-administering/security.md#permissions) pour agir sur les pages, par exemple créer, copier, déplacer, modifier et supprimer.
 >
 >En cas de problème, contactez votre administrateur système.
 
@@ -94,7 +98,7 @@ Lors de la création d’une page, il y a deux champs clés :
 * **[Nom](#name)** :
 
    * Il est utilisé pour générer l’URI.
-   * L’entrée utilisateur pour ce champ est facultative. Si le nom n’est pas spécifié, il est dérivé du titre. Consultez la section [Restrictions de nom de page et bonnes pratiques](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) pour plus d’informations.
+   * L’entrée utilisateur pour ce champ est facultative. S’il n’est pas spécifié, le nom est dérivé du titre. Consultez la section [Restrictions de nom de page et bonnes pratiques](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) pour plus d’informations.
 
 #### Restrictions de nom de page et bonnes pratiques {#page-name-restrictions-and-best-practices}
 
@@ -114,9 +118,9 @@ Lors de la création d’une page, AEM [valide son nom en fonction des conventio
 
 Les caractères minimum autorisés sont :
 
-* « a » à « z »
-* « A » à « Z »
-* « 0 » à « 9 »
+* &quot;a&quot; à &quot;z&quot;
+* &quot;A&quot; à &quot;Z&quot;
+* &#39;0&#39; à &#39;9&#39;
 * _ (trait de soulignement)
 * `-` (tiret/signe moins)
 
@@ -137,7 +141,7 @@ Si vous n’indiquez qu’un **titre** de page lors de la création d’une page
 
 #### Nom {#name}
 
-Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. Vous ne pouvez pas utiliser de caractères non valides dans le champ **Nom**. Lorsqu’AEM détecte des caractères incorrects, le champ est mis en surbrillance avec un message d’explication.
+Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. Vous ne pouvez pas utiliser de caractères non valides dans le champ **Nom**. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance avec un message d’explication.
 
 ![screen_shot_2018-03-22at104817](assets/screen_shot_2018-03-22at104817.png)
 
@@ -145,15 +149,15 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 >
 >Vous devez éviter d’utiliser un code à deux lettres tel que défini par la norme ISO-639-1 comme nom de page, sauf s’il s’agit d’une racine de langue.
 >
->Pour plus d’informations, voir [Préparation du contenu pour la traduction](/help/sites-administering/tc-prep.md).
+>Voir [Préparation du contenu à traduire](/help/sites-administering/tc-prep.md) pour plus d’informations.
 
 ### Modèles {#templates}
 
-Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle sera utilisé comme base pour n’importe quelle page créée.
+Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle sera utilisé comme base pour toute nouvelle page en cours de création.
 
-Le modèle définit la structure d’une page, notamment une miniature ainsi que d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de sites et les informations de contact. Les modèles sont constitués de [composants](#components).
+Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les informations de contact. Les modèles se composent de [components](#components).
 
-AEM comporte plusieurs modèles prêts à l’emploi. Les modèles proposés dépendent du site web individuel. Les champs clés sont les suivants :
+AEM comporte plusieurs modèles prêts à l’emploi. Les modèles disponibles dépendent du site web individuel. Les champs clés sont les suivants :
 
 * **Titre**
 Titre affiché sur la page web obtenue.
@@ -174,11 +178,11 @@ Les composants sont des éléments fournis par AEM pour vous permettre d’ajout
 
 * Texte
 * Image
-* Diaporama
+* Slideshow
 * Vidéo
-* Etc.
+* Et bien plus encore
 
-Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l’aide des composants](/help/sites-authoring/editing-content.md#inserting-a-component), qui sont disponibles dans l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser).
+Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l’aide des composants ;](/help/sites-authoring/editing-content.md#inserting-a-component), qui sont disponibles à partir de l’ [explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser).
 
 >[!NOTE]
 >
@@ -188,7 +192,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
 ### Création d’une page {#creating-a-new-page}
 
-Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf si toutes les pages ont été créées au préalable :
+Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à moins que toutes les pages n’aient été créées pour vous à l’avance :
 
 1. Ouvrez la console Sites (par exemple, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
 1. Accédez à l’emplacement où créer la page.
@@ -206,16 +210,16 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
 1. À l’étape finale de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
    * Utilisez les trois onglets pour accéder aux [propriétés de la page](/help/sites-authoring/editing-page-properties.md) à attribuer à la nouvelle page, puis cliquez ou appuyez sur **Créer** pour réellement créer la page.
-   * Cliquez ou appuyez sur **Précédent** pour revenir au choix du modèle.
+   * Utilisation **Précédent** pour revenir à la sélection de modèle.
 
-   Les champs clés sont les suivants :
+   Les champs clés sont les suivants :
 
    * **Titre** :
 
-      * Ce champ s’affiche pour l’utilisateur et est obligatoire.
+      * Celui-ci s’affiche pour l’utilisateur et est obligatoire.
    * **Nom** :
 
-      * Il est utilisé pour générer l’URI. Si le nom n’est pas spécifié, il est dérivé du titre.
+      * Il est utilisé pour générer l’URI. S’il n’est pas spécifié, le nom est dérivé du titre.
       * Si vous indiquez le **nom** d’une page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
       * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsqu’AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
 
@@ -223,7 +227,7 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
    >
    >Voir [Conventions de dénomination des pages](#page-naming-conventions).
 
-   Le **Titre** au moins doit être spécifié pour créer une page.
+   Les informations minimales requises pour créer une page sont les suivantes : **Titre**.
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
@@ -245,11 +249,11 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
 
 ### Ouverture d’une page pour la modifier {#opening-a-page-for-editing}
 
-Après avoir créé une page ou accédé à une page existante (dans la console), vous pouvez l’ouvrir pour la modifier :
+Après avoir créé une page ou accédé à une page existante (dans la console), vous pouvez l’ouvrir pour la modifier :
 
-1. Ouvrez la console **Sites**.
-1. Accédez à la page que vous souhaitez modifier.
-1. Sélectionnez votre page à l’aide de l’une des fonctionnalités suivantes :
+1. Ouvrez le **Sites** console.
+1. Accédez à la page à modifier.
+1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * Le [mode de sélection](/help/sites-authoring/basic-handling.md#product-navigation) et la barre d’outils
@@ -266,28 +270,28 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 
 ### Copier et coller une page {#copying-and-pasting-a-page}
 
-Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplacement :
+Vous pouvez copier une page et toutes ses sous-pages vers un nouvel emplacement :
 
-1. Dans la console **Sites**, accédez à la page que vous souhaitez copier.
-1. Sélectionnez votre page à l’aide de l’une des options suivantes :
+1. Dans le **Sites** , accédez à la page à copier.
+1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * Le [mode de sélection](/help/sites-authoring/basic-handling.md#product-navigation) et la barre d’outils
 
-   Sélectionnez ensuite l’icône de page **Copier** :
+   Et puis le **Copier** icône de page :
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
 
    >[!NOTE]
    >
-   >En mode de sélection, cette page est fermée dès qu’elle est copiée.
+   >Si vous êtes en mode de sélection, cette opération se déclenche automatiquement dès que la page est copiée.
 
 1. Accédez à l’emplacement destiné à la nouvelle copie de la page.
-1. Utilisez l’icône de page **Coller** :
+1. Utilisez la variable **Coller** icône de page :
 
    ![screen_shot_2018-03-22at105510](assets/screen_shot_2018-03-22at105510.png)
 
-   Une copie de la page originale et de toutes les sous-pages est créée à cet emplacement.
+   Une copie de la page d’origine et de toutes les sous-pages sera créée à cet emplacement.
 
    >[!NOTE]
    >
@@ -297,11 +301,11 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 
 >[!NOTE]
 >
->L’attribution d’un nouveau nom à une page doit elle aussi respecter les [conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom de la page.
+>Le changement de nom d’une page est également soumis au [Conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom de page.
 
 >[!NOTE]
 >
->Une page peut uniquement être déplacée vers un emplacement où le modèle sur lequel la page est basée est autorisé. Pour plus d’informations, voir [Disponibilité des modèles](/help/sites-developing/templates.md#template-availability).
+>Une page ne peut être déplacée qu’à un emplacement où le modèle sur lequel la page est basée est autorisé. Pour plus d’informations, voir [Disponibilité des modèles](/help/sites-developing/templates.md#template-availability).
 
 La procédure pour déplacer ou renommer une page est plus ou moins la même et est gérée par le même assistant. Cet assistant permet d’effectuer les opérations suivantes :
 
@@ -309,40 +313,40 @@ La procédure pour déplacer ou renommer une page est plus ou moins la même et 
 * Déplacer la page sans la renommer
 * Déplacer et renommer une page simultanément.
 
-AEM vous offre la possibilité de mettre à jour des liens internes vers la page dont le déplacement ou le changement de nom est en cours. Vous pouvez procéder page par page afin de bénéficier d’un confort d’utilisation optimal.
+AEM vous offre la possibilité de mettre à jour les liens internes qui font référence à la page en cours de changement de nom. Cette opération peut être effectuée page par page afin d’offrir une flexibilité totale.
 
-1. Accédez à la page que vous souhaitez déplacer.
-1. Sélectionnez votre page à l’aide de l’une des options suivantes :
+1. Accédez à la page à déplacer.
+1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * Le [mode de sélection](/help/sites-authoring/basic-handling.md#product-navigation) et la barre d’outils
 
-   Sélectionnez ensuite l’icône de page **Déplacer** :
+   Sélectionnez ensuite le **Déplacer** icône de page :
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
 
-   L’assistant de déplacement des pages s’ouvre alors.
+   L’assistant de déplacement de page s’ouvre alors.
 
-1. À l’étape **Renommer** de l’assistant, effectuez l’une des opérations suivantes :
+1. Dans la **Renommer** à l’étape de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
    * Spécifiez le nom à attribuer à la page après son déplacement et cliquez/appuyez sur **Suivant** pour poursuivre.
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
-   Le nom de la page peut être conservé si vous déplacez uniquement la page.
+   Le nom de la page peut rester identique si vous déplacez uniquement la page.
 
    >[!NOTE]
    >
    >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
 
-1. À l’étape **Sélectionner la destination** de l’assistant, effectuez l’une des opérations suivantes :
+1. Dans la **Sélectionner la destination** à l’étape de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Utilisez le [mode Colonnes](/help/sites-authoring/basic-handling.md#column-view) pour accéder au nouvel emplacement de la page :
+   * Utilisez la variable [mode colonne](/help/sites-authoring/basic-handling.md#column-view) pour accéder au nouvel emplacement de la page :
 
       * Sélectionnez la destination en cliquant sur sa miniature.
       * Cliquez sur **Suivant** pour continuer.
-   * Utilisez la commande **Précédent** pour revenir à l’étape de spécification du nom de la page.
+   * Utilisation **Précédent** pour revenir à la spécification du nom de page.
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -350,15 +354,15 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
    >
    >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
 
-1. Si la page est liée ou référencée par d’autres pages, ces références seront répertoriées à l’étape **Adapter/republier**. Vous pouvez indiquer quelles pages adapter et republier, le cas échéant.
+1. Si la page est liée ou référencée, ces références sont répertoriées dans la variable **Ajuster/republier** étape . Vous pouvez indiquer quelles pages adapter et republier, le cas échéant.
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
-1. Sélectionnez **Déplacer** pour terminer le processus et déplacer ou renommer votre page.
+1. Sélection **Déplacer** terminera le processus et déplacera/renommera votre page selon les besoins.
 
 >[!NOTE]
 >
->Si la page a déjà été publiée, le déplacement de la page annule automatiquement la publication. Par défaut, la page est republiée une fois le déplacement terminé, mais ce comportement peut être modifié en désélectionnant le champ **Republier** de l’étape **Adapter/Republier**.
+>Si la page a déjà été publiée, son déplacement la dépublie automatiquement. Par défaut, il sera republié une fois le déplacement terminé, mais ce paramètre peut être modifié en décochant la case **Republier** dans le champ **Ajuster/republier** étape .
 
 >[!NOTE]
 >
@@ -382,14 +386,14 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
       * Les pages supprimées sans les versions précédentes ne peuvent pas être restaurées.
       * Cette option est disponible uniquement depuis AEM version 6.4.7.0.
    * **Annuler** pour abandonner l’action
-   * **Supprimer** pour confirmer l’action :
+   * **Supprimer** pour confirmer l’action :
 
       * Si la page ne comporte aucune référence, elle est supprimée.
       * Si la page comporte des références, un message vous informe qu’**une ou plusieurs pages sont référencées.** Vous pouvez sélectionner **Forcer la suppression** ou **Annuler**.
 
 >[!NOTE]
 >
->Si une page est déjà publiée, la publication est automatiquement annulée avant la suppression.
+>Si une page est déjà publiée, elle est automatiquement dépubliée avant suppression.
 
 ### Verrouillage d’une page    {#locking-a-page}
 
@@ -403,19 +407,19 @@ Vous pouvez créer des dossiers pour classer vos fichiers et vos pages.
 
 >[!NOTE]
 >
->Les dossiers doivent eux aussi respecter les [conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom du dossier.
+>Les dossiers sont également soumis aux [Conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom de dossier.
 
 >[!CAUTION]
 >
->* Les dossiers ne peuvent être créés que sous **Sites** ou sous d’autres dossiers. Ils ne peuvent pas être créés sous une page.
->* Les opérations standard (déplacer, copier, coller, supprimer, publier, annuler la publication et afficher/modifier les propriétés) peuvent être effectuées sur un dossier.
+>* Les dossiers ne peuvent être créés que directement sous **Sites** ou sous d’autres dossiers. Ils ne peuvent pas être créés sous une page.
+>* Les opérations standard (déplacer, copier, coller, supprimer, publier, dépublier et afficher/modifier les propriétés) peuvent être effectuées sur un dossier.
 >* Dans une Live Copy, les dossiers ne peuvent pas être sélectionnés.
 >
 
 
-1. Ouvrez la console **Sites**, puis accédez à l’emplacement requis.
-1. Pour ouvrir la liste d’options, sélectionnez **Créer** dans la barre d’outils.
-1. Pour afficher la boîte de dialogue, sélectionnez **Dossier**. Vous pouvez y entrer le **nom** et le **titre** :
+1. Ouvrez le **Sites** et accédez à l’emplacement requis.
+1. Pour ouvrir la liste des options, sélectionnez **Créer** de la barre d’outils ;
+1. Sélectionner **Dossier** pour ouvrir la boîte de dialogue. Vous pouvez y entrer le **nom** et le **titre** :
 
    ![chlimage_1-14](assets/chlimage_1-14.png)
 

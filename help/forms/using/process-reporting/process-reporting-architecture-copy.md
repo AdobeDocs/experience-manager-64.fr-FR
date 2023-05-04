@@ -8,15 +8,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: a1af9920-5d2a-462f-bdee-ccec4c047c5b
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 100%
+source-wordcount: '381'
+ht-degree: 92%
 
 ---
 
 
 # Fonctionnement de Process Reporting {#how-process-reporting-works}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Process Reporting est le module de création de rapports d’AEM Forms on JEE.
 

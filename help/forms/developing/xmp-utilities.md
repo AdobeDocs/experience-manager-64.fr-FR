@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 role: Developer
 exl-id: 00a7989f-0a08-4552-8493-d4d790ed81e9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 100%
+source-wordcount: '1427'
+ht-degree: 98%
 
 ---
 
 # Utiliser XMP Utilities {#working-with-xmp-utilities}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 **À propos du service XMP Utilities**
 
@@ -114,7 +118,7 @@ Le code XML suivant contient des valeurs de métadonnées qui correspondent à l
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service XMP Utilities, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service XMP Utilities, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -231,7 +235,7 @@ Vous pouvez utiliser les API Java et Web Service XMP Utilities pour récupérer 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service XMP Utilities, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service XMP Utilities, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 

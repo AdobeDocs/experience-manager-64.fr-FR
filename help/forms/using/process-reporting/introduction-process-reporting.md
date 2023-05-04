@@ -9,14 +9,18 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0cfe62b8-839e-414b-95e5-1bfce6a9d16a
 exl-id: 279b2f89-5b91-4b8f-ab0f-8ade9b9f3932
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 84%
+source-wordcount: '330'
+ht-degree: 77%
 
 ---
 
 # Présentation de Process Reporting {#introduction-to-process-reporting}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ![process-reporting](assets/process-reporting.png)
 
@@ -50,7 +54,7 @@ Process Reporting offre également la possibilité d’exporter le rapport et l
 
 Utilisez des filtres pour obtenir une vue spécifique des données.
 
-Vous pouvez rechercher des processus ou des tâches par identifiant, durée, dates de début et de fin, initiateur de processus, etc. 
+Vous pouvez rechercher des processus ou des tâches par identifiant, durée, dates de début et de fin, initiateur de processus, etc..
 
 Vous pouvez combiner plusieurs filtres pour créer des rapports spécifiques.
 

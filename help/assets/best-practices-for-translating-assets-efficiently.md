@@ -1,49 +1,53 @@
 ---
-title: Meilleures pratiques pour une traduction efficace des ressources
+title: Bonnes pratiques relatives à la traduction efficace des ressources
 description: Bonnes pratiques pour une gestion efficace des ressources afin de synchroniser les diverses versions traduites et de rationaliser les workflows de traduction.
 contentOwner: AG
 feature: Translation
 role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 94%
+source-wordcount: '534'
+ht-degree: 13%
 
 ---
 
 # Bonnes pratiques relatives à la traduction des ressources efficace {#best-practices-for-translating-assets-efficiently}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Adobe Experience Manager Assets prend en charge les workflows multilingues pour traduire les fichiers binaires, les métadonnées et les balises des ressources numériques en plusieurs langues et pour gérer les ressources traduites. Pour plus d’informations, consultez [Ressources multilingues](multilingual-assets.md).
 
-Pour une gestion efficace des ressources et pour garantir la synchronisation des différentes versions traduites, créez des [copies de langue](preparing-assets-for-translation.md) des ressources avant d’exécuter les workflows de traduction.
+Pour une gestion efficace des ressources afin de garantir que les différentes versions traduites restent synchronisées, créez [copies de langue](preparing-assets-for-translation.md) de ressources avant d’exécuter des workflows de traduction.
 
-Une copie de langue d’une ressource ou d’un groupe de ressources est un frère de langue (ou une version de la ou des ressources dans une langue apparentée) avec une hiérarchie de contenu similaire.
+Une copie de langue d’une ressource ou d’un groupe de ressources est un frère de langue (ou une version des ressources dans une langue commune) avec une hiérarchie de contenu similaire.
 
-Chaque copie de langue est une ressource indépendante. Par conséquent, la traduction des ressources dans plusieurs paramètres régionaux peut considérablement augmenter la taille du référentiel CRX. Par exemple, la traduction de ressources d’une taille combinée de 10 Go en deux langues peut augmenter la taille du référentiel d’environ 20 Go (10 Go pour chaque langue).
+Chaque copie de langue est une ressource indépendante. Par conséquent, la traduction de ressources en plusieurs paramètres régionaux peut augmenter considérablement la taille du référentiel CRX. Par exemple, la traduction de ressources d’une taille combinée de 10 Go en deux langues peut augmenter la taille du référentiel d’environ 20 Go (10 Go pour chaque langue).
 
-Les fichiers binaires des ressources occupent un espace de stockage beaucoup plus important que les métadonnées et les balises. Par conséquent, si la traduction des métadonnées et des balises est suffisante pour atteindre votre objectif, omettez de traduire les fichiers binaires. Vous pouvez conserver la copie d’origine des fichiers binaires dans le référentiel pour une association avec des métadonnées et des balises traduites dans différents paramètres régionaux. La conservation d’une copie unique des fichiers binaires, au lieu de plusieurs versions traduites, minimise l’impact sur la taille du référentiel.
+Les fichiers binaires des ressources occupent un espace de stockage beaucoup plus important que les métadonnées et les balises. Par conséquent, si la traduction des métadonnées et des balises est adaptée à votre objectif, omettez de traduire les binaires. Vous pouvez conserver la copie d’origine des binaires dans le référentiel pour l’associer aux métadonnées et aux balises traduites dans différents paramètres régionaux. La conservation d’une seule copie de binaires, au lieu de plusieurs versions traduites, réduit l’impact sur la taille du référentiel.
 
-L’entrepôt de données basé sur les fichiers et l’entrepôt de données Amazon S3 fournissent une infrastructure de stockage mieux adaptée à ces scénarios. Ces référentiels de stockage enregistrent une copie unique des fichiers binaires des ressources (y compris les rendus) pouvant être partagée en fonction des métadonnées et des balises dans plusieurs paramètres régionaux. Par conséquent, la création de copies de langue des ressources et la traduction des métadonnées et des balises n’affectent pas la taille du référentiel.
+File Data Store et Amazon S3 Data Store fournissent une infrastructure de stockage qui convient le mieux à ces scénarios. Ces référentiels de stockage stockent une seule copie des binaires de ressources (y compris les rendus) qui peut être partagée par les métadonnées et les balises dans plusieurs paramètres régionaux. Par conséquent, la création de copies de langue de ressource et la traduction des métadonnées et des balises n’ont aucune incidence sur la taille du référentiel.
 
-Vous pouvez également apporter des modifications de configuration à quelques workflow et à la structure d’intégration de traduction afin de rationaliser davantage le workflow.
+Vous pouvez également apporter quelques modifications de configuration à quelques workflows et à la structure d’intégration de traduction afin de rationaliser davantage le processus.
 
 1. Utilisez l’une des méthodes suivantes :
 
    * [Configurer le magasin de données basé sur les fichiers](/help/sites-deploying/data-store-config.md)
    * [Configurer le magasin de données Amazon S3](/help/sites-deploying/data-store-config.md)
 
-1. Désactivez le workflow [Écriture différée des métadonnées de gestion des actifs numériques](/help/sites-administering/workflow-offloader.md#disable-offloading).
+1. Désactivez le [Écriture différée des métadonnées de gestion des actifs numériques](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow
 
-   Comme son nom l’indique, le workflow *Écriture différée des métadonnées de gestion des actifs numériques* réécrit les métadonnées sur le fichier binaire. Comme les métadonnées changent après la traduction, l’écriture différée sur le fichier binaire génère un fichier binaire différent pour chaque copie de langue.
+   Comme son nom l’indique, la variable *Écriture différée des métadonnées de gestion des actifs numériques* workflow réécrit les métadonnées dans le fichier binaire. Les métadonnées étant modifiées après traduction, l’écriture différée dans le fichier binaire génère un fichier binaire différent pour une copie de langue.
 
    >[!NOTE]
    >
-   >La désactivation du workflow *Écriture différée des métadonnées de gestion des actifs numériques* désactive l’écriture différée des métadonnées XMP sur les fichiers binaires des ressources. Par conséquent, les modifications futures des métadonnées ne sont plus enregistrées dans les ressources. Évaluez les conséquences avant de désactiver ce workflow.
+   >Désactivation de la variable *Écriture différée des métadonnées de gestion des actifs numériques* workflow désactive XMP’écriture différée des métadonnées sur les fichiers binaires de ressources. Par conséquent, les futures modifications apportées aux métadonnées ne seront plus enregistrées dans les ressources. Évaluez les conséquences avant de désactiver ce workflow.
 
-1. Activez le workflow *Définir la date de dernière modification*.
+1. Activez la variable *Définir la date de dernière modification* workflow.
 
-   Le workflow *Définir la date de dernière modification* configure la date de dernière modification pour une ressource. Comme vous désactivez ce workflow à l’étape 2, [!DNL Experience Manager Assets] n’est plus en mesure de maintenir à jour la date de dernière modification des ressources. Par conséquent, activez le workflow *Définir la date de dernière modification* pour vous assurer que les dates de dernière modification des ressources sont à jour. Les ressources dont les dates de dernière modification sont obsolètes peuvent entraîner des erreurs.
+   Le *Écriture différée des métadonnées de gestion des actifs numériques* workflow configure la date de dernière modification d’une ressource. Comme vous désactivez ce workflow à l’étape 2, [!DNL Experience Manager Assets] n’est plus en mesure de maintenir à jour la date de dernière modification des ressources. Par conséquent, activez la variable *Définir la date de dernière modification* pour vous assurer que les dates de dernière modification des ressources sont à jour. Les ressources dont les dates de dernière modification sont obsolètes peuvent entraîner des erreurs.
 
-1. [Configurez la structure d’intégration de traduction](/help/sites-administering/tc-tic.md) pour arrêter la traduction des fichiers binaires des ressources. Désactivez l’option « Traduire les ressources » dans l’onglet « Ressources » pour arrêter la traduction des fichiers binaires des ressources.
-1. Traduisez les métadonnées/balises des ressources à l’aide des [workflow des ressources multilingues](multilingual-assets.md).
+1. [Configuration de la structure d’intégration de traduction](/help/sites-administering/tc-tic.md) pour arrêter la traduction des fichiers binaires de ressources. Désélectionnez l’option &quot;Traduire les ressources&quot; sous l’onglet Ressources pour arrêter la traduction des fichiers binaires des ressources.
+1. Traduire les métadonnées/balises de ressources à l’aide de [Workflows de ressources multilingues](multilingual-assets.md).

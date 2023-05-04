@@ -9,14 +9,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 84eb552c-ba47-46e1-86e3-9460bd77dfbe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 2%
+source-wordcount: '1195'
+ht-degree: 3%
 
 ---
 
 # Création et ajout de modèles et de composants {#creating-and-adding-templates-and-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >
@@ -65,7 +69,7 @@ Une fois que vous avez créé une application à l’aide de ce modèle, vous po
 
 ## Création de modèles de contenu {#creating-content-templates}
 
-Chaque type d’entité comporte deux modèles d’usine. à savoir :
+Chaque type d’entité comporte deux modèles d’usine. Ces éléments sont les suivants :
 
 * **Modèles par défaut :** utilisé pour la création de contenu avec les propriétés/la structure par défaut applicables
 * **Modèles importés :** utilisé pour importer du contenu à partir d’AEM Mobile avec les propriétés/la structure par défaut applicables

@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: 9d459939-a311-4770-84db-f2a4b7869072
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 100%
+source-wordcount: '1942'
+ht-degree: 98%
 
 ---
 
 # Utiliser des formulaires à code-barres {#working-with-barcoded-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## À propos du service Barcoded Forms {#about-the-barcoded-forms-service}
 
@@ -34,7 +38,7 @@ Vous pouvez utiliser l’API du service Barcoded Forms pour décoder les donnée
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Barcoded Forms, consultez la section [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Barcoded Forms, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 

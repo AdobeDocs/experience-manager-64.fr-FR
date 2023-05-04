@@ -1,18 +1,22 @@
 ---
 title: Publication de dossiers sur Brand Portal
-description: Découvrez comment publier des dossiers ou en annuler la publication sur Brand Portal.
+description: Découvrez comment publier des dossiers et en annuler la publication sur Brand Portal.
 contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: f41ab750-5780-42ae-a131-5bc748280215
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 65%
+source-wordcount: '588'
+ht-degree: 49%
 
 ---
 
 # Publication de dossiers sur Brand Portal {#publish-folders-to-brand-portal}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 En tant qu’administrateur Adobe Experience Manager Assets, vous pouvez publier des ressources et des dossiers sur le [!DNL Experience Manager Assets Brand Portal] de votre entreprise (ou programmez le processus de publication à une date/heure ultérieure). Cependant, vous devez d’abord intégrer [!DNL Experience Manager Assets] avec [!DNL Brand Portal]. Pour plus d’informations, voir [Configurer [!DNL Experience Manager Assets] avec Brand Portal](configure-aem-assets-with-brand-portal.md).
 
@@ -28,9 +32,9 @@ Si vous apportez des modifications ultérieures à la ressource ou au dossier d�
 
    ![publish2bp](assets/publish2bp.png)
 
-2. **Publication instantanée des dossiers**
+2. **Publication immédiate des dossiers**
 
-   Pour publier les dossiers sélectionnés sur Brand Portal, effectuez l’une des opérations suivantes :
+   Pour publier les dossiers sélectionnés dans Brand Portal, effectuez l’une des opérations suivantes :
 
    * Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Ensuite, sélectionnez **[!UICONTROL Publier sur Brand Portal]** dans le menu.
    * Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**.
@@ -38,7 +42,7 @@ Si vous apportez des modifications ultérieures à la ressource ou au dossier d�
 3. Ensuite, dans **[!UICONTROL Action]**, sélectionnez **[!UICONTROL Publier sur Brand Portal]** et dans **[!UICONTROL Planification]**, sélectionnez **[!UICONTROL Maintenant]**. Appuyez sur **[!UICONTROL Suivant].**
 4. Within **[!UICONTROL Portée]**, confirmez votre sélection et appuyez sur **[!UICONTROL Publication sur Brand Portal]**.
 
-   Un message indique que le dossier a été placé en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour voir le dossier publié.
+   Un message indique que le dossier a été placé en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour afficher le dossier publié.
 
    **Publication ultérieure de dossiers**
 
@@ -55,11 +59,11 @@ Si vous apportez des modifications ultérieures à la ressource ou au dossier d�
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
-## Annulation de la publication de dossiers sur Brand Portal {#unpublish-folders-from-brand-portal}
+## Dépublication de dossiers sur Brand Portal {#unpublish-folders-from-brand-portal}
 
-Vous pouvez supprimer tout dossier de ressources publié sur Brand Portal en l’annulant à partir de [!DNL Experience Manager] Instance de création. Une fois que vous avez annulé la publication du dossier original, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
+Vous pouvez supprimer tout dossier de ressources publié sur Brand Portal en l’annulant à partir de [!DNL Experience Manager] Instance de création. Une fois que vous avez dépublié le dossier d’origine, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
 
-Vous avez la possibilité d’annuler rapidement la publication de dossiers sur Brand Portal ou de planifier l’annulation à une date et une heure ultérieures. Pour annuler la publication de dossiers de ressources sur Brand Portal :
+Vous avez la possibilité d’annuler rapidement la publication de dossiers à partir de Brand Portal ou de la planifier pour une date et une heure ultérieures. Pour dépublier des dossiers de ressources de Brand Portal :
 
 1. Dans la [!DNL Assets] dans [!DNL Experience Manager]  Instance de création, sélectionnez le dossier dont vous souhaitez annuler la publication.
 
@@ -67,9 +71,9 @@ Vous avez la possibilité d’annuler rapidement la publication de dossiers sur 
 
 2. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Gérer la publication]**.
 
-3. **Annulation rapide d’une publication sur Brand Portal**
+3. **Annuler la publication sur Brand Portal maintenant**
 
-   Pour annuler rapidement la publication du dossier désiré sur Brand Portal :
+   Pour annuler rapidement la publication du dossier souhaité dans Brand Portal :
 
    1. Activé **[!UICONTROL Gérer la publication]** page, à partir de **[!UICONTROL Action]** select **[!UICONTROL Annuler la publication à partir de Brand Portal]** et de **[!UICONTROL Planification]** select **[!UICONTROL Maintenant]**.
    2. Appuyez/cliquez sur **[!UICONTROL Suivant].**
@@ -77,7 +81,7 @@ Vous avez la possibilité d’annuler rapidement la publication de dossiers sur 
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
-   **Annulation ultérieure de la publication sur Brand Portal**
+   **Dépublication ultérieure sur Brand Portal**
 
    Pour planifier l’annulation de la publication d’un dossier sur Brand Portal à une date et à une heure ultérieures :
 
@@ -91,4 +95,4 @@ Vous avez la possibilité d’annuler rapidement la publication de dossiers sur 
 
 >[!NOTE]
 >
->La procédure de publication/d’annulation de publication vers/depuis Brand Portal est identique à la procédure correspondante pour les dossiers.
+>La procédure de publication/de dépublication vers/depuis Brand Portal est identique à la procédure correspondante pour les dossiers.

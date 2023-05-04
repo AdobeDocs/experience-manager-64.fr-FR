@@ -1,7 +1,7 @@
 ---
 title: Conditions préalables à l’intégration à Adobe Target
 seo-title: Prerequisites for Integrating with Adobe Target
-description: Découvrez les conditions requises pour l’intégration avec Adobe Target.
+description: Découvrez les conditions préalables à l’intégration à Adobe Target.
 seo-description: Find out about the prerequisites for integrating with Adobe Target.
 uuid: 88be6a97-c964-4e42-a3a2-ed9b2c9ee49e
 contentOwner: User
@@ -10,38 +10,42 @@ topic-tags: integration
 content-type: reference
 discoiquuid: a84fd0ab-0bcd-48cf-bba3-fb29308fa0f8
 exl-id: f47e5c6a-ed52-4493-83bd-73e5e693d117
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 96%
+source-wordcount: '558'
+ht-degree: 66%
 
 ---
 
 # Conditions préalables à l’intégration à Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Dans le cadre de l’[intégration d’AEM et Adobe Target](/help/sites-administering/target.md), vous devez vous inscrire à Adobe Target, configurer l’agent de réplication et sécuriser les paramètres d’activité sur le nœud de publication.
 
-## Inscription à Adobe Target {#registering-with-adobe-target}
+## Enregistrement auprès d’Adobe Target {#registering-with-adobe-target}
 
-Pour intégrer AEM à Adobe Target, vous devez disposer d’un compte Adobe Target valide. Ce compte doit disposer au minimum des autorisations de niveau **approbateur **. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client et de vos nom d’utilisateur et mot de passe Adobe Target pour connecter AEM à Adobe Target.
+Pour intégrer AEM à Adobe Target, vous devez disposer d’un compte Adobe Target valide. Ce compte doit disposer au minimum des autorisations de niveau **approbateur **. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client ainsi que de votre nom d’utilisateur et de votre mot de passe Adobe Target pour vous connecter AEM à Adobe Target.
 
-Le code client identifie le compte client Adobe Target en appelant le serveur Adobe Target.
+Le code client identifie le compte client Adobe Target lors de l’appel du serveur Adobe Target.
 
 >[!NOTE]
 >
 >Votre compte doit également être activé par l’équipe Target pour pouvoir utiliser l’intégration.
 >
 >
->Si ce n’est pas encore le cas, contactez l’[Assistance clientèle Adobe Target](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
+>Si ce n&#39;est pas le cas, veuillez contacter [Assistance clientèle d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=fr).
 
 ## Activation de l’agent de réplication Target {#enabling-the-target-replication-agent}
 
 L’[agent de réplication](/help/sites-deploying/replication.md) Test&amp;Target doit être activé sur l’instance de création. Notez que cet agent de réplication n’est pas activé par défaut si vous utilisez le mode d’exécution [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) pour installer AEM. Pour plus d’informations sur la sécurisation de votre environnement de production, voir [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
 
-1. Sur la page d’accueil d’AEM, cliquez ou appuyez sur **Outils** > **Déploiement** > **Réplication**.
+1. Sur la page d’accueil AEM, cliquez ou appuyez sur **Outils** > **Déploiement** > **Réplication**.
 1. Cliquez ou appuyez sur **Agents sur l’auteur**.
-1. Cliquez ou appuyez sur l’agent de réplication **Test&amp;Target**, puis cliquez ou appuyez sur **Modifier**.
-1. Sélectionnez l’option Activé, puis cliquez ou appuyez sur **OK**.
+1. Cliquez ou appuyez sur **Test et cible (test et cible)** agent de réplication, puis cliquez ou appuyez sur **Modifier**.
+1. Sélectionnez l’option Activé , puis cliquez ou appuyez sur **OK**.
 
    >[!NOTE]
    >
@@ -57,9 +61,9 @@ Le nœud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/
 
 Le nœud **cq:ActivitySettings** sous le nœud jcr:content de l’activité est protégé par les listes ACL suivantes :
 
-* Tout refuser pour tout le monde
-* Autoriser jcr:read,rep:write pour target-activity-authors (l’auteur est membre de ce groupe par défaut)
-* Autoriser jcr:read,rep:write pour targetservice
+* Refuser tout pour tous
+* Autoriser jcr:read,rep:write pour &quot;target-activity-authors&quot; (l’auteur est membre de ce groupe prêt à l’emploi)
+* Autoriser jcr:read,rep:write pour &quot;targetservice&quot;
 
 Ces paramètres permettent de garantir que les utilisateurs ordinaires n’ont pas accès aux propriétés de nœud. Utilisez les mêmes listes ACL sur les instances de création et de publication. Consultez la section [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) pour plus d’informations.
 

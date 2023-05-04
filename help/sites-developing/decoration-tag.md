@@ -2,35 +2,39 @@
 title: Balise décorative
 description: Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés.
 exl-id: b5edfd56-8e21-44b9-9ea4-3bbdcdb23b50
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 93%
+source-wordcount: '911'
+ht-degree: 67%
 
 ---
 
 # Balise décorative {#decoration-tag}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Dans ce cas, l’objectif est double :
 
-* Un composant ne peut être modifié que lorsqu’il est enveloppé dans un élément HTML.
-* L’élément d’encapsulage est utilisé pour appliquer des classes HTML qui fournissent :
+* Un composant ne peut être modifié que s’il est encapsulé avec un élément de HTML.
+* L’élément wrapper est utilisé pour appliquer des classes de HTML qui fournissent :
 
-   * des informations de mise en page,
-   * des informations de style.
+   * informations de mise en page
+   * informations de style
 
-Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés. Le rendu de la balise décorative et la méthode de rendu employée sont définis par la combinaison de deux facteurs, que cette page se propose de détailler :
+Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés. Le rendu de la balise décorative est défini par la combinaison de deux facteurs, dont cette page se penchera sur :
 
-* Le composant proprement dit peut configurer sa balise décorative avec un ensemble de propriétés.
-* Les scripts qui contiennent des composants (HTL, JSP, dispatcher, etc.) peuvent définir les aspects de la balise décorative avec des paramètres d’inclusion.
+* Le composant peut configurer sa balise décorative avec un ensemble de propriétés.
+* Les scripts qui incluent des composants (HTL, JSP, dispatcher, etc.) peuvent définir les aspects de la balise décorative avec des paramètres d’inclusion.
 
 ## Recommandations {#recommendations}
 
-Ces quelques recommandations générales vous indiquent à quel moment inclure l’élément wrapper afin d’éviter tout problème imprévu :
+Voici quelques recommandations générales sur le moment où inclure l’élément wrapper qui devrait permettre d’éviter des problèmes inattendus :
 
-* La présence de l’élément wrapper ne doit pas être différente entre les modes WCM (mode d’aperçu ou d’édition), les instances (création ou publication) et l’environnement (intermédiaire ou production), de sorte que les fichiers CSS et JavaScript de la page fonctionnent de manière identique dans tous les cas.
-* L’élément wrapper doit être ajouté à tous les composants qui sont modifiables, afin que l’éditeur de page puisse les initialiser et les mettre à jour correctement.
-* Dans le cas des composants non modifiables, l’élément wrapper peut être omis s’il ne remplit pas de fonction particulière, de manière à éviter toute inflation inutile du balisage.
+* La présence de l’élément wrapper ne doit pas différer entre les modes WCMM (mode d’édition ou de prévisualisation), les instances (auteur ou publication) ou l’environnement (évaluation ou production), de sorte que les scripts CSS et JavaScript de la page fonctionnent de manière identique dans tous les cas.
+* L’élément wrapper doit être ajouté à tous les composants modifiables, de sorte que l’éditeur de page puisse les initialiser et les mettre à jour correctement.
+* Pour les composants non modifiables, l’élément wrapper peut être évité s’il ne remplit aucune fonction particulière, de sorte que les balises résultantes ne soient pas inutilement gonflées.
 
 ## Contrôles de composant {#component-controls}
 
@@ -44,18 +48,18 @@ Les propriétés et nœuds suivants peuvent être appliqués aux composants pour
 
 ## Contrôles de script {#script-controls}
 
-Le comportement de l’élément wrapper diffère toutefois selon que [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) est utilisé pour inclure l’élément .
+Il convient toutefois de noter que le comportement de l’élément wrapper varie selon que [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) est utilisé pour inclure l’élément.
 
 ### HTL {#htl}
 
 En règle générale, le comportement de l’élément wrapper dans HTL peut être résumé comme suit :
 
 * Aucun élément DIV wrapper n’est rendu par défaut (en exécutant simplement `data-sly-resource="foo"`).
-* Tous les modes WCM (désactivé, aperçu, édition sur les instances de création et de publication) sont rendus de manière identique.
+* Tous les modes wcm (désactivés, prévisualisés, modifiés sur l’auteur et la publication) sont rendus de manière identique.
 
-Le comportement de l’élément wrapper peut également faire l’objet d’un contrôle total.
+Le comportement de l’élément wrapper peut également être entièrement contrôlé.
 
-* Le script HTL contrôle complètement le comportement de la balise wrapper.
+* Le script HTL contrôle entièrement le comportement obtenu de la balise wrapper.
 * Les propriétés de composant (comme `cq:noDecoration` et `cq:tagName`) peuvent également définir la balise wrapper.
 
 Il est possible de contrôler entièrement le comportement des balises wrapper à partir de scripts HTL et de la logique qui y est associée.
@@ -70,9 +74,9 @@ Cette arborescence de décision résume la logique qui détermine le comportemen
 
 #### Cas d’utilisation {#use-cases}
 
-Les trois scénarios d’utilisation présentent des exemples de gestion des balises wrapper. Ils montrent également à quel point il est facile de contrôler le comportement souhaité de ces balises.
+Les trois cas d’utilisation suivants fournissent des exemples de gestion des balises wrapper et illustrent également la simplicité du contrôle du comportement souhaité des balises wrapper.
 
-La structure de contenu et les composants suivants sont utilisés dans les exemples ci-dessous :
+Tous les exemples qui suivent supposent la structure de contenu et les composants suivants :
 
 ```
 /content/test/
@@ -137,13 +141,13 @@ Résultat obtenu `/content/test.html` :
 
 ## JSP {#jsp}
 
-Lors de l’inclusion d’un composant à l’aide de `cq:includ`e ou `sling:include`, le comportement par défaut dans AEM consiste à utiliser un élément DIV pour encapsuler l’élément. Toutefois, cet encapsulage peut être personnalisé de deux façons :
+Lorsque vous incluez un composant à l’aide de `cq:includ`e ou `sling:include`, le comportement par défaut dans AEM consiste à utiliser un DIV pour encapsuler l’élément. Toutefois, cet encapsulage peut être personnalisé de deux façons :
 
-* Indiquer explicitement à AEM de ne pas encapsuler le composant à l’aide de `cq:noDecoration`.
-* Utilisez une balise de HTML personnalisée pour encapsuler le composant à l’aide de `cq:htmlTag`/ `cq:tagName` ou `decorationTagName`.
+* Indiquer explicitement à AEM de ne pas encapsuler le composant à l’aide de `cq:noDecoration`
+* Utiliser une balise HTML personnalisée pour encapsuler le composant à l’aide de `cq:htmlTag`/`cq:tagName` ou `decorationTagName`
 
 ### Arborescence de décision {#decision-tree-1}
 
-L’arborescence de décision suivante illustre comment `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, et `decorationTagName` affecte le comportement de l’élément wrapper.
+L’arborescence de décision ci-dessous montre de quelle façon `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` et `decorationTagName` affectent le comportement de l’élément wrapper.
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)

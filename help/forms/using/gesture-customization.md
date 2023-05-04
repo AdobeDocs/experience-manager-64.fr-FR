@@ -1,7 +1,7 @@
 ---
 title: Personnalisation de mouvement
 seo-title: Gesture customization
-description: Personnaliser les mouvements sur votre application AEM Forms
+description: Personnalisation des mouvements sur votre application AEM Forms
 seo-description: Customize the gestures on your AEM Forms app
 uuid: 117e0e21-66bd-42f1-879c-6c1443991974
 contentOwner: robhagat
@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 238410e0-1623-49dc-b2fc-b5b2d5fb362b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 100%
+source-wordcount: '332'
+ht-degree: 81%
 
 ---
 
 # Personnalisation de mouvement {#gesture-customization}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez personnaliser les mouvements de l’application AEM Forms pour interagir différemment avec l’application. Par exemple, vous pouvez ajouter de nouveaux mouvements pour ouvrir/fermer une tâche ou un point de départ.
 
@@ -70,6 +74,6 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
 
 
 1. Enregistrez et fermez le fichier `task.js`.
-1. Générez et exécutez l’application AEM Forms. Vous pouvez désormais ouvrir une tâche en faisant glisser votre doigt vers la gauche et la droite.
+1. Créez et exécutez l’application AEM Forms. Vous pouvez désormais ouvrir un à l’aide d’un glissement vers la gauche et vers la droite.
 
 De même, vous pouvez apporter des modifications dans les autres vues pour différentes combinaisons de mouvements, d’éléments HTML et de fonctions.

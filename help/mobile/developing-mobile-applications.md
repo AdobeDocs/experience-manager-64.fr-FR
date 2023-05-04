@@ -10,20 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 exl-id: 1ec3096c-e63c-4384-b152-957ff0eef4b2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 11%
+source-wordcount: '619'
+ht-degree: 5%
 
 ---
 
 # Développement d’applications mobiles dans AEM {#developing-mobile-applications-in-aem}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 >[!NOTE]
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-AEM tire parti des solutions Adobe PhoneGap and Adobe Publishing, ce qui vous permet de créer et de gérer les applications mobiles riches en contenu multiplateformes basées sur des utilitaires:
+AEM exploite Adobe PhoneGap et les solutions de publication d’Adobe, ce qui vous permet de créer et de gérer des applications mobiles riches en contenu et basées sur des utilitaires sur plusieurs plateformes :
 
 * Gérez toutes les applications mobiles de vos entreprises au même endroit.
 * Passez en revue les applications dans les environnements de développement et d’évaluation sans connaître la complexité des profils de mise en service et sans avoir à créer et charger votre application pour le partage.

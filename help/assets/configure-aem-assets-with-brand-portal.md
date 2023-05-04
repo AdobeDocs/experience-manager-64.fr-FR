@@ -5,14 +5,18 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 69%
+source-wordcount: '1678'
+ht-degree: 65%
 
 ---
 
 # Configuration d’AEM Assets avec Brand Portal {#configure-integration-64}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Adobe Experience Manager Assets est configuré avec Brand Portal via [!DNL Adobe I/O], qui fournit un jeton IMS pour autoriser votre client Brand Portal.
 
@@ -260,7 +264,7 @@ Pour créer une configuration de service cloud Brand Portal, procédez comme su
 
    ![](assets/test-integration4.png)
 
-1. En bas des résultats du test, vérifiez que la réplication a réussi.
+1. Consultez le bas des résultats du test pour vérifier que la réplication a réussi.
 
    ![](assets/test-integration5.png)
 
@@ -269,7 +273,7 @@ Pour créer une configuration de service cloud Brand Portal, procédez comme su
 
    >[!NOTE]
    >
-   >Évitez de désactiver tout agent de réplication, car cela peut entraîner l’échec de la réplication de certaines ressources.
+   >Évitez de désactiver les agents de réplication, car cela peut entraîner l’échec de la réplication de certaines ressources.
    >
    >Assurez-vous que les quatre agents de réplication sont configurés pour éviter toute erreur de délai d’expiration. Consultez [Dépannage des problèmes de publication en parallèle sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=fr#connection-timeout).
 
@@ -353,8 +357,8 @@ Vous pouvez désormais [créer une configuration](#configure-new-integration-64)
    <li>Step text</li>
    -->
 
-Une fois la réplication réussie, vous pouvez publier des ressources, des dossiers et des collections sur Brand Portal. Pour plus d’informations, voir :
+Une fois la réplication réussie, vous pouvez publier des ressources, des dossiers et des collections sur Brand Portal. Pour plus d’informations, voir :
 
 * [Publication de ressources sur Brand Portal](brand-portal-publish-assets.md)
 * [Publication de ressources et de dossiers sur Brand Portal](brand-portal-publish-folder.md)
-* [Publication de collections sur Brand Portal](brand-portal-publish-collection.md)
+* [Publication de collections dans Brand Portal](brand-portal-publish-collection.md)

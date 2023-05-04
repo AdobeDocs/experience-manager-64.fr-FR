@@ -1,7 +1,7 @@
 ---
 title: Conseils pour minimiser la croissance de la base de données
 seo-title: Tips for minimizing database growth
-description: Les processus de longue durée stockent des données de processus dans la base de données AEM Forms. La croissance de la base de données AEM forms peut être minimisée grâce à quelques stratégies simples de configuration de produit et de conception de processus.
+description: Les processus de longue durée stockent les données de processus dans la base de données d’AEM forms. La croissance de la base de données d’AEM forms peut être réduite à l’aide de quelques stratégies de configuration de produit et de conception de processus simples.
 seo-description: Long-lived processes store process data in the AEM forms database. The growth of the AEM forms database can be minimized using a few easy process design and product configuration strategies.
 uuid: 13f99d4f-848e-451e-90d9-55e202dc0bdb
 contentOwner: admin
@@ -10,29 +10,33 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 89441336-babc-4d1f-9053-d1566cd42d22
 exl-id: 7b266170-c7e2-42e7-8ee0-153e1e73a901
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 100%
+source-wordcount: '444'
+ht-degree: 5%
 
 ---
 
 # Conseils pour minimiser la croissance de la base de données {#tips-for-minimizing-database-growth}
 
-Les processus de longue durée stockent des données de processus dans la base de données AEM Forms. La croissance de la base de données AEM forms peut être minimisée grâce à quelques stratégies simples de configuration de produit et de conception de processus.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-## Conseils pour la conception de processus {#process-design-tips}
+Les processus de longue durée stockent les données de processus dans la base de données d’AEM forms. La croissance de la base de données d’AEM forms peut être réduite à l’aide de quelques stratégies de configuration de produit et de conception de processus simples.
 
-Dans la mesure du possible, utilisez des processus de longue durée. Les processus de courte durée ne stockent pas de données le concernant dans la base de données. L’inconvénient des processus de courte durée réside dans le fait que leur statut et leur état ne font pas l’objet d’un suivi dans Administration Console et que le système ne stocke aucun historique.
+## Conseils sur la conception de processus {#process-design-tips}
 
-Certaines opérations de service, comme l’opération d’affectation de tâche dans le service User, requièrent des processus de longue durée. Dans ce cas, vous pouvez segmenter le processus en plusieurs sous-processus dont vous raccourcissez la durée dans la mesure du possible. Avec cette stratégie, les sous-processus de courte durée doivent pouvoir gérer les éléments de données volumineux, comme les valeurs de document.
+Dans la mesure du possible, utilisez des processus de courte durée. Les processus de courte durée ne stockent pas de données de processus dans la base de données. L’inconvénient des processus de courte durée est que leur état et leur état ne sont pas suivis dans la console d’administration et qu’il n’existe aucun historique du processus.
 
-Utilisez les variables avec parcimonie. Si vous exploitez des processus de longue durée, un espace est alloué dans la base de données à chaque variable de chaque instance de processus. L’utilisation stratégique de variables permet d’économiser un espace considérable. Par exemple, vous pouvez remplacer des valeurs de variable lorsque les anciennes valeurs ne sont plus nécessaires au processus. Veillez également à supprimer les variables que vous avez créées et que vous n’exploitez pas. Vous pouvez valider le processus pour identifier les variables inutilisées.
+Certaines opérations de service, telles que l’opération Assign Task (service User), nécessitent qu’elles soient utilisées dans des processus de longue durée. Dans ce cas, vous pouvez segmenter le processus en plusieurs sous-processus et les rendre de courte durée lorsque cela est possible. Si vous utilisez cette stratégie, les sous-processus de courte durée doivent gérer des éléments de données volumineux, tels que les valeurs de document.
 
-Préférez les types de variable simples (par exemple, string ou int) aux types de variable complexes. La base de données alloue un espace aux variables même lorsque celles-ci ne contiennent aucune valeur. En général, les variables complexes requièrent davantage d’espace que les variables simples.
+Utilisez les variables avec parcimonie. Lors de l’utilisation de processus de longue durée, pour chaque instance de processus, de l’espace est alloué sur la base de données pour chaque variable du processus. L’utilisation stratégique de variables peut réduire considérablement l’espace. Par exemple, vous pouvez remplacer des valeurs de variable lorsque les anciennes valeurs ne sont plus nécessaires dans le processus. Supprimez également les variables que vous avez créées et que vous n’utilisez pas. Vous pouvez valider le processus pour rechercher des variables inutilisées.
 
-## Conseils pour l’administration du produit {#product-administration-tips}
+Utilisez des types de variable simples (par exemple, string ou int) et évitez d’utiliser des types de variable complexes lorsque cela est possible. L’espace de base de données est alloué aux variables même lorsqu’elles ne contiennent pas de valeur. Les variables complexes requièrent généralement plus d’espace que les variables simples.
 
-Utilisez efficacement le stockage global de documents. Le répertoire de stockage global de documents sur le serveur Forms permet de stocker, entre autres, les fichiers qui sont transmis aux services AEM Forms dans les processus. Pour améliorer les performances, les documents plus petits sont stockés en mémoire et conservés dans la base de données.
+## Conseils d’administration de produit {#product-administration-tips}
 
-Administration Console s’appuie sur la propriété Taille maximale par défaut de la ligne d’entrée du document, pour configurer la taille maximale des documents stockés en mémoire et maintenus dans la base de données (voir [Configuration des paramètres généraux d’AEM forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)). Si vous affectez une valeur faible à cette propriété, la plupart des documents sont conservés dans le répertoire de stockage global de documents et non dans la base de données. L’avantage est que vous pouvez plus facilement supprimer des fichiers de ce répertoire lorsqu’ils ne sont plus nécessaires.
+Utilisez efficacement le stockage global de documents. Le répertoire de stockage global de documents sur le serveur Forms est utilisé pour stocker, entre autres, les fichiers transmis aux services faisant partie d’AEM forms dans les processus. Pour améliorer les performances, les documents plus petits sont stockés en mémoire et conservés dans la base de données.
+
+Administration Console expose la propriété Taille maximale par défaut de la ligne d’entrée du document pour configurer la taille maximale des documents stockés en mémoire et conservés dans la base de données. (voir [Configuration des paramètres généraux d’AEM forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)). Si vous définissez cette propriété sur une valeur faible, la plupart des documents sont conservés dans le répertoire de stockage global de documents et non dans la base de données. L’avantage est de pouvoir supprimer plus facilement les fichiers qui ne sont plus nécessaires lorsqu’ils sont stockés dans le répertoire de stockage global de documents.

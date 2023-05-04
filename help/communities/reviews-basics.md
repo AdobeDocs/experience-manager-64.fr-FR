@@ -10,20 +10,24 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
 exl-id: ddd2bd98-b375-4d1e-b9d1-5efc3dbca398
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 6%
+source-wordcount: '355'
+ht-degree: 3%
 
 ---
 
 # Notions fondamentales sur les révisions {#reviews-essentials}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Cette fonctionnalité se compose de deux composants qui fonctionnent ensemble : révisions et résumé de révision.
 
 Les révisions sont un composant composite basé sur une [système de commentaires](essentials-comments.md) qui contient un ou plusieurs [note](rating-basics.md) (tally) des composants.
 
-La publication anonyme d’une révision n’est pas possible. Les visiteurs du site doivent s’inscrire et se connecter pour ajouter une révision. Le visiteur connecté (membre) peut mettre à jour sa révision à tout moment.
+La publication anonyme d’une révision n’est pas prise en charge. Les visiteurs du site doivent s’inscrire et se connecter pour ajouter une révision. Le visiteur connecté (membre) peut mettre à jour sa révision à tout moment.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 

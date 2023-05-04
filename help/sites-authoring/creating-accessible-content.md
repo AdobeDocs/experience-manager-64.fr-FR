@@ -10,14 +10,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3d4258de-c0bb-4952-b6f0-0c5f2a15e531
 exl-id: f792a65d-35f5-4143-bec2-c64de3f567b4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '8923'
-ht-degree: 97%
+source-wordcount: '8959'
+ht-degree: 69%
 
 ---
 
 # Création d’un contenu accessible (conformité WCAG 2.0) {#creating-accessible-content-wcag-conformance}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le WCAG 2.0 regroupe un ensemble de consignes et de critères de réussite qui ne sont pas associés à une technologie particulière et visant à rendre les contenus web plus accessibles aux personnes en situation de handicap.
 
@@ -25,7 +29,7 @@ Le WCAG 2.0 regroupe un ensemble de consignes et de critères de réussite qui 
 >
 >Voir également :
 >
->* Notre [guide rapide à propos de WCAG 2.0](/help/managing/qg-wcag.md) pour en savoir plus
+>* our [Guide rapide relatif à WCAG 2.0](/help/managing/qg-wcag.md) pour plus de détails
 >* [Configuration de l’éditeur de texte enrichi pour produire du contenu accessible](/help/sites-administering/rte-accessible-content.md)
 >
 
@@ -42,7 +46,7 @@ La section suivante présente les [règles du WCAG 2.0](https://www.w3.org/TR/W
 
 >[!NOTE]
 >
->Il n’est pas possible, pour certains types de contenu, de satisfaire à tous les critères de réussite du niveau de conformité AAA ; celui-ci n’est donc pas recommandé à titre de politique générale.
+>Comme il n’est pas possible de satisfaire tous les critères de réussite de niveau AAA pour certains types de contenu, il n’est pas recommandé que ce niveau de conformité soit requis comme politique générale.
 
 >[!NOTE]
 >
@@ -69,9 +73,9 @@ La section suivante présente les [règles du WCAG 2.0](https://www.w3.org/TR/W
 
 #### Objectif – Contenu non textuel (1.1.1) {#purpose-non-text-content}
 
-Le contenu d’une page web peut être proposé dans différents formats non textuels (photos, vidéos, animations, tableaux et graphiques). Les personnes aveugles ou malvoyantes ne sont pas en mesure de voir le contenu non textuel, mais elles peuvent accéder au contenu textuel en le faisant lire par un lecteur d’écran ou sous forme tactile dans un appareil d’affichage en braille. Ainsi, en proposant des équivalents textuels pour le contenu graphique, les personnes qui ne voient pas le contenu graphique peuvent accéder à une version équivalente des informations véhiculées par le contenu.
+Les informations d’une page web peuvent être fournies dans différents formats non textuels, tels que des images, des vidéos, des animations, des graphiques et des graphiques. Les personnes aveugles ou ayant de graves déficiences visuelles ne peuvent pas voir le contenu non textuel, mais elles peuvent accéder au contenu textuel en le faisant lire par un lecteur d’écran ou en le présentant sous forme tactile par un dispositif d’affichage en braille. Ainsi, en proposant des équivalents textuels au contenu au format graphique, les personnes qui ne peuvent pas voir le contenu graphique peuvent accéder à une version équivalente de l’information fournie par le contenu.
 
-Autre avantage utile : les équivalents textuels permettent aux moteurs de recherche d’indexer le contenu non textuel.
+Un autre avantage utile est que les équivalents textuels permettent l’indexation du contenu non textuel par la technologie des moteurs de recherche.
 
 #### Comment procéder – Contenu non textuel (1.1.1) {#how-to-meet-non-text-content}
 
@@ -81,9 +85,9 @@ Pour les images statiques, la règle de base consiste à fournir un équivalent 
 >
 >Certains composants prêts à l’emploi, tels que **Carrousel** et **Diaporama**, ne permettent pas d’ajouter des descriptions d’images sous forme de texte de remplacement. Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement devra configurer ces composants pour prendre en charge l’attribut `alt` afin que les auteurs puissent l’ajouter au contenu (consultez [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
-Le champ **Texte de remplacement** est disponible dans la boîte de dialogue du composant **Image** sous l’onglet **Métadonnées** :
+Le **Texte de remplacement** est disponible dans le champ **Image** de la boîte de dialogue du composant **Métadonnées** tab :
 
-![Boîte de dialogue de modification du composant Image dans l’interface utilisateur optimisée pour les écrans tactiles ; présente le champ Texte de remplacement.](assets/screen_shot_2018-03-21at165045.png)
+![Boîte de dialogue de modification du composant Image dans l’IU optimisée pour les écrans tactiles ; affiche le champ Texte de remplacement .](assets/screen_shot_2018-03-21at165045.png)
 
 Dans AEM, le champ **Texte secondaire** doit être renseigné par défaut. Si votre image est purement décorative et que le texte secondaire est dénué de sens, l’option **L’image est décorative** peut être sélectionnée.
 
@@ -131,8 +135,8 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
    Le W3C propose un certain nombre de suggestions, telles que les suivantes. Chacune de ces approches présente ses avantages et ses inconvénients.
 
-   * Énigmes logiques
-   * Utilisation d’une sortie audio plutôt que d’images
+   * Puzzles logiques
+   * Utilisation de la sortie son au lieu des images
    * Comptes d’utilisateur limités et filtres de courrier indésirable
 
 * Images d’arrière-plan : Pour ce faire, utilisez des feuilles de style en cascade (CSS) plutôt que dans le HTML. Cela signifie qu’il n’est pas possible de spécifier une autre valeur de texte. Par conséquent, les images d’arrière-plan ne doivent pas fournir d’informations textuelles importantes. Si elles le font, ces informations doivent également être fournies dans le texte de la page.
@@ -154,28 +158,28 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
 [Règle 1.2 – Média temporel : propose des versions de remplacement aux médias temporels.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
-Cette section traite du contenu web *temporel*, notamment le contenu que l’utilisateur peut lire (contenu vidéo, audio et animé, par exemple) et qui peut être pré-enregistré ou en direct.
+Il s’agit du contenu web qui est *en fonction du temps*. Cela concerne le contenu que l’utilisateur peut lire (contenu vidéo, audio et animé, par exemple) et qui peut être pré-enregistré ou en direct.
 
 ### Contenu seulement audio ou vidéo (pré-enregistré) (1.2.1)  {#audio-only-and-video-only-pre-recorded}
 
 * Critère de réussite 1.2.1
 * Niveau A
-* Contenu seulement audio ou vidéo (pré-enregistré) : pour des médias pré-enregistrés seulement audio et pré-enregistrés seulement vidéo, sauf si l’audio ou la vidéo est un média de remplacement pour un texte et qu’ils sont clairement identifiés comme tels, ce qui suit s’applique :
+* Contenu seulement audio ou vidéo (pré-enregistré) : Pour les médias pré-enregistrés audio uniquement et pré-enregistrés vidéo uniquement, les faits suivants sont vrais, sauf lorsque l’audio ou la vidéo est un média de remplacement pour le texte et est clairement étiqueté comme tel :
 
-   * Contenu pré-enregistré seulement audio : fournir une version de remplacement pour un média temporel, présentant une information équivalente au contenu seulement audio.
-   * Contenu pré-enregistré seulement vidéo : fournir, soit une version de remplacement pour un média temporel, soit une piste audio (présentant une information équivalente) pour un contenu pré-enregistré seulement vidéo.
+   * Contenu audio pré-enregistré uniquement : Une alternative pour les médias temporels est fournie, qui présente des informations équivalentes pour le contenu audio pré-enregistré uniquement.
+   * Vidéo pré-enregistrée uniquement : Une alternative pour les médias temporels ou une piste audio est fournie qui présente des informations équivalentes pour le contenu vidéo pré-enregistré uniquement.
 
 #### Objectif – Contenu seulement audio ou vidéo (pré-enregistré) (1.2.1)  {#purpose-audio-only-and-video-only-pre-recorded}
 
-Les personnes suivantes peuvent éprouver des problèmes à accéder au contenu vidéo et audio :
+Les problèmes d’accessibilité pour la vidéo et l’audio peuvent être rencontrés par :
 
-* Les personnes malvoyantes lorsqu’il n’y a aucune piste audio ou si la piste audio ne suffit pas à les informer de ce qui se passe dans la vidéo ou l’animation.
-* Les personnes malentendantes ou sourdes, qui ne peuvent pas écouter la piste audio.
-* Les personnes qui peuvent écouter la piste audio, mais qui ne la comprennent pas (si par exemple elle est dans une langue qu’elles ne comprennent pas).
+* Les personnes malvoyantes lorsqu’il n’y a pas de bande sonore, ou que la bande sonore n’est pas suffisante pour les informer de ce qui se passe dans la vidéo ou l’animation ;
+* les personnes malentendantes ou sourdes, qui ne peuvent pas entendre la bande sonore ;
+* Les personnes qui peuvent entendre la bande sonore, mais ne comprennent pas ce qui est parlé (par exemple, parce qu&#39;elle est dans une langue qu&#39;elles ne comprennent pas).
 
-Les personnes qui utilisent des navigateurs ou des périphériques qui ne prennent pas en charge la lecture du contenu dans des formats multimédias spécifiques (Adobe Flash par exemple) peuvent aussi ne pas avoir accès au contenu vidéo ou audio.
+Les utilisateurs de navigateurs ou d’appareils qui ne prennent pas en charge la lecture de contenu dans des formats multimédias spécifiques, tels que le Flash des Adobes, peuvent également ne pas avoir accès aux vidéos ou au contenu audio.
 
-En proposant ces informations dans un autre format (texte par exemple, ou audio pour un contenu vidéo sans audio), elles seront accessibles par les personnes qui ne sont pas en mesure d’accéder au contenu original.
+Fournir ces informations dans un format différent, tel que du texte (ou de l’audio pour une vidéo sans audio), peut les rendre accessibles aux personnes qui ne peuvent pas accéder au contenu d’origine.
 
 #### Comment procéder – Contenu seulement audio ou vidéo (pré-enregistré) (1.2.1)  {#how-to-meet-audio-only-and-video-only-pre-recorded}
 
@@ -185,16 +189,16 @@ En proposant ces informations dans un autre format (texte par exemple, ou audio 
 
       La transcription doit être une page HTML avec un équivalent textuel de tout le contenu non parlé important et parlé, et indiquer en outre qui parle, avec les expressions vocales et une description du décor et de tout autre contenu audio significatif.
 
-* Si le contenu est une animation ou une vidéo pré-enregistrée sans audio :
+* Si le contenu est une animation ou une vidéo pré-enregistrée sans audio :
 
-   * Fournissez un lien immédiatement avant ou après le contenu vers une description textuelle équivalente des informations communiquées par la vidéo.
-   * Ou fournissez une audio-description équivalente dans un format audio fréquemment utilisé (MP3 par exemple).
+   * Fournissez un lien juste avant ou après le contenu vers une description textuelle équivalente des informations fournies par la vidéo.
+   * Ou une audio-description équivalente dans un format audio couramment utilisé, tel que MP3.
 
 >[!NOTE]
 >
->Si le contenu audio ou vidéo est fourni comme alternative au contenu qui existe déjà dans un autre format sur une page web, il n’est pas nécessaire d’adhérer aux exigences ci-dessus. Si, par exemple, une vidéo illustre une liste d’instructions textuelles, il n’est pas nécessaire d’ajouter un équivalent puisque les instructions textuelles agissent comme équivalent de la vidéo.
+>Si le contenu audio ou vidéo est fourni comme alternative au contenu existant déjà dans un autre format sur une page web, il n’est pas nécessaire de respecter les exigences ci-dessus. Par exemple, si une vidéo illustre une liste d’instructions textuelles, cette vidéo ne nécessite pas d’alternative, car les instructions textuelles agissent déjà comme une alternative à la vidéo.
 
-L’ajout de contenu multimédia (Flash notamment) dans vos pages web AEM revient à ajouter une image. Toutefois, puisque le contenu multimédia représente bien davantage qu’une image fixe, il existe différents paramètres et options pour contrôler la lecture du multimédia.
+L’insertion de contenu multimédia, en particulier de contenu de Flash, dans vos pages web AEM est similaire à l’insertion d’une image. Cependant, le contenu multimédia étant plus complexe qu’une image fixe, de nombreux paramètres et options sont nécessaires pour contrôler sa lecture.
 
 >[!NOTE]
 >
@@ -213,11 +217,11 @@ L’ajout de contenu multimédia (Flash notamment) dans vos pages web AEM revien
 
 #### Objectif – Sous-titres (pré-enregistrés) (1.2.2)  {#purpose-captions-pre-recorded}
 
-Les personnes sourdes ou malentendantes n’auront pas accès au contenu audio, ou y auront accès avec de grandes difficultés. Les sous-titres sont des équivalents textuels au contenu audio parlé et non parlé ; ils s’affichent à l’écran au moment approprié durant la vidéo. Ils permettent aux personnes qui ne peuvent pas écouter le contenu audio de comprendre ce qui se passe.
+Les personnes sourdes ou malentendantes ne pourront pas accéder au contenu audio ou auront de grandes difficultés à y accéder. Les sous-titres sont des équivalents textuels pour un son parlé ou non, qui s’affiche à l’écran au moment approprié pendant la vidéo. Ils permettent aux gens qui ne peuvent pas entendre le son de comprendre ce qui se passe.
 
 >[!NOTE]
 >
->Les sous-titres ne sont pas obligatoires s’il existe déjà des équivalents textuels ou non textuels adaptés (qui fournissent directement des informations équivalentes) sur la même page que la vidéo ou l’animation.
+>Les sous-titres ne sont pas requis lorsque du texte ou des équivalents non textuels appropriés (qui fournissent des informations directement équivalentes) sont disponibles sur la même page que la vidéo ou l’animation.
 
 #### Comment procéder – Sous-titres (pré-enregistrés) (1.2.2)  {#how-to-meet-captions-pre-recorded}
 
@@ -243,27 +247,27 @@ Si vous devez utiliser des sous-titres intégrés, incorporez le texte à la pis
 
 * Critère de réussite 1.2.3
 * Niveau A
-* Audio-description ou version de remplacement pour un média temporel (pré-enregistré) : fournir une version de remplacement pour un média temporel ou une audio-description du contenu vidéo pré-enregistré pour un média synchronisé, excepté quand le média est un média de remplacement pour un texte et qu’il est clairement identifié comme tel.
+* Audio-description ou version de remplacement pour un média temporel (pré-enregistré) : Une alternative pour un média temporel ou une audio-description du contenu vidéo pré-enregistré est fournie pour un média synchronisé, sauf lorsque le média est un média de remplacement pour un texte et qu’il est clairement étiqueté comme tel.
 
 #### Objectif – Audio-description ou version de remplacement pour un média temporel (pré-enregistré) (1.2.3)  {#purpose-audio-description-or-media-alternative-pre-recorded}
 
 Les personnes aveugles ou malvoyantes ne pourront pas accéder au contenu si les informations dans une vidéo ou une animation sont fournies sous forme visuelle seulement ou si la piste audio ne fournit pas suffisamment d’informations pour comprendre ce qui se passe visuellement.
 
-#### Comment procéder – Audio-description ou version de remplacement pour un média temporel (pré-enregistré) (1.2.3) {#how-to-meet-audio-description-or-media-alternative-pre-recorded}
+#### Comment procéder – Audio-description ou version de remplacement pour un média temporel (pré-enregistré) (1.2.3)  {#how-to-meet-audio-description-or-media-alternative-pre-recorded}
 
-Deux approches peuvent être adoptées pour remplir ce critère de réussite. Les deux sont acceptables :
+Deux méthodes peuvent être adoptées pour remplir ce critère de réussite. N’importe lequel est acceptable :
 
-1. Inclure une audio-description supplémentaire pour le contenu vidéo. Vous pouvez y parvenir de trois façons :
+1. Incluez une audio-description supplémentaire pour le contenu vidéo. Cela peut se faire de trois façons :
 
-   * Durant les pauses dans le dialogue existant, fournissez des informations sur les modifications dans la scène qui ne sont pas présentées dans la piste audio existante.
+   * Pendant les pauses dans la boîte de dialogue existante, fournissez des informations sur les modifications de la scène qui ne sont pas présentées dans le cadre de la piste audio existante ;
    * Fournissez une nouvelle piste audio supplémentaire et facultative contenant la piste audio originale, mais aussi des informations audio supplémentaires sur les modifications dans la scène.
 
       * Les utilisateurs peuvent ainsi permuter entre la piste audio existante (qui ne contient *pas* de description audio) et la nouvelle piste audio (qui *comprend* une description audio).
-      * De cette façon, les utilisateurs qui n’ont pas besoin de la description supplémentaire ne sont pas interrompus.
-   * Créez une deuxième version du contenu vidéo afin d’y inclure des audio-descriptions plus détaillées. Ceci réduit les difficultés associées à la spécification d’audio-descriptions détaillées dans les intervalles au sein du dialogue existant, en interrompant temporairement l’audio et la vidéo à des points appropriés. Vous pouvez ainsi ajouter une audio-description beaucoup plus longue avant que l’action ne recommence. Comme dans l’exemple précédent, il est préférable de proposer une piste audio supplémentaire facultative afin d’éviter toute interruption pour les utilisateurs qui n’ont pas besoin du contenu supplémentaire.
+      * Cela évite toute perturbation des utilisateurs qui n’ont pas besoin de la description supplémentaire.
+   * Créez une deuxième version du contenu vidéo pour permettre des descriptions audio étendues. Cela permet de réduire les difficultés liées à la fourniture de descriptions audio détaillées dans les espaces entre les dialogues existants, en mettant temporairement le contenu audio et vidéo en pause aux moments appropriés. Par conséquent, une audio-description beaucoup plus longue peut être fournie avant que l’action ne recommence. Comme dans l’exemple précédent, il est préférable de le fournir en tant que piste audio supplémentaire en option afin d’éviter toute perturbation des utilisateurs qui n’ont pas besoin de la description supplémentaire.
 
 
-1. Fournissez une transcription textuelle qui est un équivalent textuel adapté des éléments audio et visuels de la vidéo ou de l’animation. Il peut s’agir, si cela est approprié, d’une indication précisant qui parle, d’une description du décor ou d’expressions vocales. Selon sa durée, vous pouvez placer la transcription sur la même page que la vidéo ou animation, ou sur une autre page ; dans le deuxième cas, fournissez un lien vers la transcription près de la vidéo ou de l’animation.
+1. Fournissez une transcription textuelle formant un équivalent textuel adapté des éléments audio et visuels de la vidéo ou de l’animation. Cela devrait inclure, le cas échéant, une indication sur qui parle, une description du décor, des expressions vocales. Selon sa durée, vous pouvez placer la transcription sur la même page que la vidéo ou l’animation, ou sur une autre page ; dans le deuxième cas, fournissez un lien vers la transcription à proximité de la vidéo ou de l’animation.
 
 Les détails exacts de la création de vidéos avec description audio ne sont pas compris dans ce guide. La création de descriptions vidéo et audio peut prendre du temps, mais d’autres produits Adobe peuvent vous aider à accomplir ces tâches. Si vous créez du contenu dans Adobe Flash Professional, vous devez également créer un script pour inviter l’utilisateur à télécharger le plug-in approprié et fournir un texte secondaire via l’élément `<noscript>`.
 
@@ -301,7 +305,7 @@ Ce document ne vise pas à fournir des instructions détaillées à ce sujet, ma
 
 * Critère de réussite 1.2.5
 * Niveau AA
-* Audio-description (pré-enregistrée) : fournir une audio-description pour tout contenu vidéo pré-enregistré, sous forme de média synchronisé.
+* Audio-description (pré-enregistrée) : Une description audio est fournie pour tout le contenu vidéo pré-enregistré dans les médias synchronisés.
 
 #### Objectif – Audio-description (pré-enregistrée) (1.2.5)  {#purpose-audio-description-pre-recorded}
 
@@ -318,9 +322,9 @@ Suivez les instructions de la section [Audio-description ou version de remplacem
 
 ### Adaptable (1.3) {#adaptable}
 
-[Règle 1.3 – Adaptable : créer un contenu qui puisse être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG20/#content-structure-separation)
+[Règle 1.3 - Adaptable : Créez un contenu qui peut être présenté de différentes manières (par exemple de manière plus simple) sans perdre d’informations ni de structure.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
-Cette règle couvre les exigences nécessaires pour aider les personnes qui :
+Cette ligne directrice couvre les exigences nécessaires pour soutenir les personnes qui :
 
 * peut ne pas être en mesure d’accéder aux informations présentées par un auteur dans une *standard* mise en page web colorée, à plusieurs colonnes et bidimensionnelle
 
@@ -330,19 +334,19 @@ Cette règle couvre les exigences nécessaires pour aider les personnes qui :
 
 * Critère de réussite 1.3.1
 * Niveau A
-* Informations et relations : l’information, la structure et les relations véhiculées par la présentation peuvent être déterminées par un programme informatique ou sont disponibles sous forme de texte.
+* Informations et relations : Les informations, la structure et les relations véhiculées par la présentation peuvent être déterminées par programmation ou sont disponibles dans le texte.
 
 #### Objectif – Informations et relations (1.3.1) {#purpose-info-and-relationships}
 
-Nombre des technologies d’assistance auxquelles ont recours les personnes en situation de handicap ont recours à des informations structurelles pour afficher ou restituer efficacement le contenu. Ces informations structurelles peuvent se présenter sous forme de titres de page, de titres de lignes et de colonnes de tableau et de types de liste. Par exemple, un utilisateur peut recourir à un lecteur d’écran pour parcourir une page d’un titre à un autre. Si, toutefois, le contenu d’une page semble avoir une structure de style visuel uniquement, plutôt qu’un code HTML sous-jacent, aucune information structurelle n’est disponible pour les technologies d’assistance, ce qui limite leur capacité à faciliter la navigation.
+De nombreuses technologies d’assistance utilisées par les personnes en situation de handicap reposent sur des informations structurelles pour afficher ou générer efficacement du contenu. Ces informations structurelles peuvent se présenter sous forme de titres de page, de titres de lignes et de colonnes de tableau et de types de liste. Par exemple, un utilisateur peut recourir à un lecteur d’écran pour parcourir une page d’un titre à un autre. Cependant, si le contenu d’une page semble s’appuyer exclusivement sur une structure de style visuel plutôt que sur le code HTML sous-jacent, aucune information structurelle n’est disponible pour les technologies d’assistance, ce qui limite leur capacité à faciliter la navigation.
 
-Ce critère de réussite vise à garantir que de telles informations structurelles sont fournies dans le code HTML, de sorte que les navigateurs et les technologies d’assistance puissent accéder à l’information et l’exploiter.
+Ce critère de réussite vise à s’assurer que ces informations structurelles sont fournies par HTML, de sorte que les navigateurs et les technologies d’assistance puissent accéder à ces informations et les exploiter.
 
 #### Comment procéder – Informations et relations (1.3.1)  {#how-to-meet-info-and-relationships}
 
-AEM facilite la construction de pages web à l’aide des éléments HTML appropriés. Ouvrez le contenu de la page dans l’éditeur de texte enrichi (un composant Texte) et, à l’aide du menu **Paraformat** (symbole du paragraphe), spécifiez l’élément structurel approprié (paragraphe, en-tête, etc.).
+AEM facilite la construction de pages web à l’aide des éléments de HTML appropriés. Ouvrez le contenu de la page dans l’éditeur de texte enrichi (un composant Texte) et, à l’aide du menu **Paraformat** (symbole du paragraphe), spécifiez l’élément structurel approprié (paragraphe, en-tête, etc.).
 
-L’image suivante présente du texte stylisé comme texte de paragraphe.
+L’image suivante présente le texte qui a été stylisé en tant que texte de paragraphe.
 
 ![Exemple de l’élément Paragraphe affiché en mode d’édition de la source (IU classique).](assets/screen_shot_2018-03-21at165623.png)
 
@@ -367,21 +371,21 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
    >
    >Dans une installation AEM standard, l’éditeur de texte enrichi est configuré pour utiliser :
    >
-   >* &lt;b> au lieu de &lt;strong>
-   * &lt;i> au lieu de &lt;em>
+   >* &lt;b> pour &lt;strong>
+   * &lt;i> pour &lt;em>
 
-   Même s’ils sont en réalité identiques, &lt;strong> et &lt;em> sont préférables car ils constituent un code html sémantiquement correct. Votre équipe de développement peut configurer l’éditeur de texte enrichi pour utiliser &lt;strong> et &lt;em> (au lieu de &lt;b> et &lt;i>) lors de l’élaboration de votre instance de projet.
+   Ils sont effectivement identiques, mais et sont préférables, car il s’agit de code HTML sémantiquement correct. Votre équipe de développement peut configurer l’éditeur de texte enrichi pour qu’il utilise et (au lieu de et ) lors du développement de votre instance de projet.
 
 * **Utiliser les listes** : vous pouvez spécifier trois différents types de listes en HTML :
 
    * L’élément `<ul>` est utilisé pour les listes *non triées* (à puces). Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`. 
 
-      Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste à puces**.
+      dans l’éditeur de texte enrichi, utilisez la variable **Liste à puces** icône .
 
    * L’élément `<ol>` est utilisé pour les listes *numérotées*. Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`.
 
       Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste numérotée**.
-   Pour modifier un contenu existant en un type de liste particulier, sélectionnez-le, puis choisissez le type de liste approprié. Comme dans l’exemple précédent illustrant la saisie du texte du paragraphe, les éléments de liste appropriés sont automatiquement ajoutés au fichier HTML.
+   Si vous souhaitez modifier le contenu existant en un type de liste spécifique, mettez en surbrillance le texte approprié et sélectionnez le type de liste approprié. Comme dans l’exemple précédent qui illustre la saisie du texte de paragraphe, les éléments de liste appropriés sont automatiquement ajoutés à votre HTML.
 
    En mode Plein écran, les icônes **Liste à puces** et **Liste numérotée** sont visibles. Lorsque vous n’êtes pas en mode Plein écran, les deux options sont disponibles derrière l’icône **Listes** unique.
 
@@ -390,9 +394,9 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
    >[!NOTE]
    `<dl>` n’est pas pris en charge par l’éditeur de texte enrichi.
 
-* **Tableaux** :
+* **Utilisation de tableaux**:
 
-   Les tableaux de données doivent être identifiés à l’aide des éléments de tableau HTML :
+   Les tableaux de données doivent être identifiés à l’aide d’éléments de tableau de HTML :
 
    * un élément `<table>` ;
    * un élément `<tr>` pour chaque ligne du tableau ;
@@ -400,7 +404,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
    * un élément `<td>` pour chaque cellule de données.
 
    >[!NOTE]
-   Dans l’IU classique, les tables doivent être réalisées avec le composant **Table.**
+   Dans l’IU classique, les tableaux doivent être créés avec la fonction **Tableau** composant.
 
    En outre, les tableaux accessibles utilisent les éléments et attributs suivants :
 
@@ -409,16 +413,16 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
    * L’attribut `scope` de l’élément `<th>` sert à indiquer si une cellule représente un en-tête pour une ligne ou une colonne particulière. Une approche similaire consiste à utiliser les attributs header et id dans des tableaux complexes, où les cellules de données peuvent être associées à un ou plusieurs en-têtes.
 
    >[!NOTE]
-   Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administrateur du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau[ (voir** Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+   Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administrateur du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau** (voir [Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
-   Lorsque vous ajoutez un **Tableau**, configurez ses propriétés dans la boîte de dialogue **Propriétés du tableau**.
+   Lors de l’ajout d’une **Tableau** vous pouvez configurer **Propriétés du tableau** à l’aide de la boîte de dialogue .
 
-   * Une **Légende** appropriée.
+   * un **Légende**.
    * Idéalement, supprimez toutes les valeurs par défaut pour **Largeur**, **Hauteur**, **Bordure**, **Marge intérieure des cellules** et **Espacement des cellules**. En effet, ces propriétés peuvent être définies dans une feuille de style globale.
 
    ![Boîte de dialogue Propriétés du tableau.](assets/chlimage_1-205.png)
 
-   Utilisez les **Propriétés de la cellule** pour déterminer si la cellule est une cellule de données ou d’en-tête et, dans le deuxième cas, si elle renvoie à une ligne, à une colonne ou aux deux :
+   Vous pouvez ensuite utiliser la variable **Propriétés des cellules** pour choisir si la cellule est une cellule de données ou d’en-tête et, si une cellule d’en-tête est liée à une ligne ou à une colonne, ou les deux :
 
    ![Boîte de dialogue Propriétés de la cellule ; définition d’une ligne (généralement la première) comme ligne d’en-tête.](assets/chlimage_1-206.png)
 
@@ -430,7 +434,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
    L’attribut id n’est pas disponible dans une installation prête à l’emploi. Il peut être activé en configurant les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
 
    >[!NOTE]
-   Dans l’IU classique, les tables doivent être réalisées avec le composant **Table.**
+   Dans l’IU classique, les tableaux doivent être créés à l’aide de la fonction **Tableau** composant.
 
    ```xml
    <table>
@@ -459,10 +463,10 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
    </table>
    ```
 
-   Pour y parvenir dans AEM, vous devez ajouter la balise directement en mode d’édition de la source.
+   Pour ce faire dans AEM, vous devez ajouter les balises directement à l’aide du mode d’édition de la source.
 
    >[!NOTE]
-   Cette fonctionnalité n’est pas immédiatement disponible dans une installation standard. Vous devez configurer les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
+   Cette fonctionnalité n’est pas disponible immédiatement dans une installation standard. Elle nécessite la configuration de l’éditeur de texte enrichi, des règles de HTML et du sérialiseur.
 
 #### En savoir plus – Informations et relations (1.3.1) {#more-information-info-and-relationships}
 
@@ -471,13 +475,13 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
 ### Caractéristiques sensorielles (1.3.3)    {#sensory-characteristics}
 
-* Critère de réussite 1.3.3
+* Critère de réussite 1.3.3
 * Niveau A
 * Caractéristiques sensorielles : les instructions données pour la compréhension et l’utilisation du contenu ne doivent pas reposer uniquement sur les caractéristiques sensorielles des éléments comme la forme, la taille, l’emplacement visuel, l’orientation ou le son.
 
 #### Objectif – Caractéristiques sensorielles (1.3.3) {#purpose-sensory-characteristics}
 
-Les concepteurs concentrent généralement leurs efforts sur le côté visuel (couleur, forme, style du texte ou position absolue ou relative d’un élément du contenu) de la présentation des informations. Même s’il peut s’agir de techniques de conception très efficaces pour véhiculer l’information, les personnes aveugles ou malvoyantes peuvent ne pas être en mesure d’accéder à l’information nécessitant une identification visuelle des attributs (position, couleur ou forme, par exemple).
+Les concepteurs concentrent généralement leurs efforts sur le côté visuel (couleur, forme, style du texte, ou position absolue ou relative d’un élément du contenu) de la présentation des informations. Il peut s’agir de techniques de conception très puissantes pour véhiculer l’information, mais les personnes aveugles ou malvoyantes peuvent ne pas être en mesure d’accéder à l’information qui nécessite l’identification visuelle d’attributs tels que la position, la couleur ou la forme.
 
 De même, les informations qui impliquent de distinguer différents sons (contenu verbalisé par un homme ou une femme, par exemple) présentent un obstacle à l’accessibilité pour les personnes malentendantes si elles ne sont pas reproduites dans un équivalent textuel du contenu audio.
 
@@ -486,13 +490,13 @@ Pour connaître les conditions requises en rapport avec les alternatives aux cou
 
 #### Comment procéder – Caractéristiques sensorielles (1.3.3) {#how-to-meet-sensory-characteristics}
 
-Veillez à ce que les informations qui reposent sur des caractéristiques visuelles du contenu de la page soient également présentées dans un autre format.
+Assurez-vous que toutes les informations qui reposent sur les caractéristiques visuelles du contenu de la page sont également présentées dans un autre format.
 
-* Ne vous fiez pas à la seule position visuelle pour transmettre une information. Si, par exemple, vous souhaitez renvoyer les utilisateurs à un menu sur le côté droit de la page pour accéder à d’autres informations, ne renvoyez pas au *menu à droite* ; nommez plutôt le menu (par exemple au moyen d’un titre) et faites référence à ce nom dans le texte.
-* Ne vous fiez pas au style de texte (gras ou italique par exemple) comme seul moyen de transmettre l’information.
+* Ne vous fiez pas à la position visuelle pour donner des informations. Par exemple, si vous souhaitez renvoyer les utilisateurs vers un menu sur le côté droit de la page pour accéder à des informations supplémentaires, ne reportez-vous pas à la section *le menu de droite ;*; au lieu de cela, nommez le menu (par exemple au moyen d’un en-tête) et faites référence à ce nom dans le texte.
+* Ne vous fiez pas au style du texte (par exemple, le texte en gras ou en italique) comme seul moyen de transmettre des informations.
 
 >[!NOTE]
-L’utilisation de termes descriptifs est acceptable s’ils ont une signification dans un contexte non visuel. Par exemple, les termes *ci-dessus* et *ci-dessous* sont généralement acceptables, puisqu’ils impliquent respectivement le contenu juste avant ou après un élément de contenu particulier ; ils resteront donc significatifs si le contenu est lu à haute voix.
+L’utilisation de termes descriptifs est acceptable s’ils ont une signification dans un contexte non visuel. Par exemple, en utilisant *above* et *below* serait généralement acceptable, car ils impliquent respectivement du contenu avant et après un élément de contenu particulier ; cela aurait encore du sens lorsque le contenu est parlé à haute voix.
 
 #### En savoir plus – Caractéristiques sensorielles (1.3.3) {#more-information-sensory-characteristics}
 
@@ -507,24 +511,24 @@ L’utilisation de termes descriptifs est acceptable s’ils ont une significati
 
 * Critère de réussite 1.4.1
 * Niveau A
-* Utilisation de la couleur : la couleur n’est pas utilisée comme la seule façon de véhiculer de l’information, d’indiquer une action, de solliciter une réponse ou de distinguer un élément visuel.
+* Utilisation de la couleur : La couleur n’est pas utilisée comme seul moyen visuel de transmettre des informations, d’indiquer une action, de demander une réponse ou de distinguer un élément visuel.
 
 >[!NOTE]
 Ce critère de réussite traite spécifiquement de la perception des couleurs. Les autres formes de perception sont traitées à la règle [Adaptable (1.3)](#adaptable), comme l’accès à la couleur par programme informatique et les autres formes de codage de la présentation visuelle.
 
 #### Objectif – Utilisation de la couleur (1.4.1) {#purpose-use-of-color}
 
-La couleur est un moyen évidemment efficace d’améliorer l’aspect esthétique des pages web ; elle est également utile pour véhiculer l’information. Toutefois, en raison de différentes déficiences visuelles (de la cécité au daltonisme), certaines personnes ne sont pas capables de distinguer certaines couleurs. Par conséquent, le codage en couleurs ne constitue pas un moyen fiable de véhiculer l’information.
+La couleur est évidemment un moyen efficace d&#39;améliorer l&#39;aspect esthétique des pages web et est aussi utile pour véhiculer l&#39;information. Cependant, il existe une gamme de déficiences visuelles, de la cécité à la déficience visuelle en matière de couleurs, ce qui signifie que certaines personnes sont incapables de distinguer certaines couleurs. Cela fait du codage par couleur un moyen peu fiable de fournir des informations.
 
-Par exemple, une personne qui ne distingue pas le vert du rouge ne sera pas en mesure de distinguer différentes nuances de ces couleurs. Si elle voit ces couleurs comme une troisième couleur (marron par exemple), elle ne sera pas non plus en mesure de distinguer le rouge du vert et du marron.
+Par exemple, une personne ayant une déficience visuelle de couleur rouge-vert ne pourra pas distinguer les nuances de vert et les nuances de rouge. Elles peuvent voir les deux couleurs comme une troisième couleur (marron, par exemple), auquel cas elles ne pourront pas distinguer le rouge, le vert et le marron.
 
-En outre, les personnes qui utilisent des navigateurs qui ne reconnaissent que le texte, des périphériques d’affichage monochromes ou un imprimé en noir et blanc de la page ne verront pas les couleurs.
+En outre, les personnes qui utilisent des navigateurs exclusivement textuels, des appareils d’affichage monochromes ou qui visualisent une impression en noir et blanc de la page ne peuvent pas percevoir les couleurs.
 
 #### Comment procéder – Utilisation de la couleur (1.4.1)  {#how-to-meet-use-of-color}
 
 Si la couleur sert à véhiculer l’information, veillez à ce que cette information soit accessible sans recourir à la couleur.
 
-Par exemple, veillez à ce que l’information véhiculée par la couleur le soit aussi explicitement dans le texte. L’illustration ci-dessous présente de quelle façon le texte et la couleur identifient les sièges vacants à un spectacle :
+Par exemple, assurez-vous que les informations fournies par couleur sont également fournies explicitement dans le texte. L’illustration ci-dessous montre comment la couleur et le texte indiquent tous deux la disponibilité de sièges pour une représentation :
 
 <table> 
  <tbody> 
@@ -533,21 +537,21 @@ Par exemple, veillez à ce que l’information véhiculée par la couleur le soi
    <td><p><strong>Disponibilité</strong></p> </td> 
   </tr> 
   <tr> 
-   <td><p>Mardi 16<sup></sup> mars</p> </td> 
-   <td><p>SIÈGES VACANTS</p> </td> 
+   <td><p>Mardi 16 mars<sup>th</sup></p> </td> 
+   <td><p>SIÈGES DISPONIBLES</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Mercredi 17 mars</p> </td> 
-   <td><p>SIÈGES VACANTS</p> </td> 
+   <td><p>Mercredi 17 mars</p> </td> 
+   <td><p>SIÈGES DISPONIBLES</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Jeudi 18<sup></sup> mars</p> </td> 
-   <td><p>COMPLET</p> </td> 
+   <td><p>Jeudi 18 mars<sup>th</sup></p> </td> 
+   <td><p>VENDU</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Si la couleur sert de repère pour fournir l’information, ajoutez un repère visuel supplémentaire, notamment en changeant le style (gras ou italique, par exemple) ou la police. Les personnes malvoyantes ou ayant une déficience visuelle seront ainsi en mesure d’identifier l’information. Toutefois, cette méthode seule ne suffit pas, car elle n’est d’aucune utilité pour les personnes qui ne voient pas du tout la page.
+Si la couleur est utilisée comme indice pour fournir des informations, vous devez fournir un indice visuel supplémentaire, tel que la modification du style (gras ou italique, par exemple) ou de la police. Cela aide les personnes malvoyantes ou ne percevant pas bien les couleurs à identifier l’information. Cependant, elle ne peut pas être entièrement fiable, car elle n’aidera pas les personnes qui ne peuvent pas voir la page du tout.
 
 #### En savoir plus – Utilisation de la couleur (1.4.1) {#more-information-use-of-color}
 
@@ -555,13 +559,13 @@ Si la couleur sert de repère pour fournir l’information, ajoutez un repère v
 * [Comment remplir le critère de réussite 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 * [Conseils pour obtenir un rapport de contraste de 3:1, avec une liste de couleurs adaptées au web](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
-### Contraste (minimum) (1.4.3)  {#contrast-minimum}
+### Contraste (minimum) (1.4.3) {#contrast-minimum}
 
 * Critère de réussite 1.4.3
 * Niveau AA
-* Contraste (minimum) : la présentation visuelle du texte et du texte sous forme d’image a un rapport de contraste d’au moins 4,5:1, sauf dans les cas suivants :
+* Contraste (minimum) : La présentation visuelle du texte et des images du texte présente un rapport de contraste d’au moins 4,5:1, sauf pour ce qui suit :
 
-   * Texte agrandi : le texte agrandi et le texte agrandi sous forme d’image ont un rapport de contraste d’au moins 3:1.
+   * Texte grand format : Le texte à grande échelle et les images de texte à grande échelle ont un rapport de contraste d’au moins 3:1.
    * Texte décoratif : aucune exigence de contraste pour le texte ou le texte sous forme d’image intégré à un composant d’interface utilisateur inactif. Il s’agit d’un élément purement décoratif, invisible de tous ou intégré à une partie d’une image contenant un autre contenu significatif.
    * Logotypes : aucune exigence de contraste pour le texte faisant partie d’un logo ou d’un nom de marque.
 
@@ -570,24 +574,24 @@ Si la couleur sert de repère pour fournir l’information, ajoutez un repère v
 Les personnes avec certaines déficiences visuelles peuvent ne pas être en mesure de distinguer certaines paires de couleurs à faible contraste. Elles peuvent être confrontées à des obstacles à l’accessibilité si :
 
 * Le texte est faiblement contrasté avec sa couleur d’arrière-plan.
-* Le codage en couleurs du texte (par exemple entre le texte du lien et le texte en dehors du lien) joue un rôle pour distinguer l’information.
+* Le codage colorimétrique du texte (tel que le texte du lien et le texte hors lien) est important pour distinguer les informations.
 
 >[!NOTE]
-Le texte simplement décoratif est exclu de ce critère de réussite.
+Le texte utilisé uniquement à des fins décoratives est exclu de ce critère de réussite.
 
 #### Comment procéder – Contraste (minimum) (1.4.3) {#how-to-meet-contrast-minimum}
 
 Veillez à ce que le texte soit suffisamment contrasté par rapport à son arrière-plan. Les rapports de contraste dépendent de la taille et du style du texte en question :
 
 * Pour le texte de moins de 18 points (ou 14 points en gras), le rapport de contraste entre le texte/les images de texte et l’arrière-plan doit être d’au moins 4.5:1.
-* Pour le texte de 18 points (ou 14 points en gras) au moins, le rapport de contraste doit être d’au moins 3:1.
+* Pour le texte d’au moins 18 points (ou 14 points en gras), le rapport de contraste doit être d’au moins 3:1.
 * Si un arrière-plan a un motif, l’arrière-plan autour du texte doit être ombré, de sorte que le rapport de 4.5:1 ou 3:1 soit préservé.
 
-Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que l’[analyseur de contraste des couleurs du groupe Paciello](https://www.paciellogroup.com/resources/contrast-analyser.html) ou l’[outil de vérification du contraste des couleurs de webAIM](https://www.webaim.org/resources/contrastchecker/), afin de vérifier les paires de couleurs et de signaler les éventuels problèmes de contraste.
+Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que l’[analyseur de contraste des couleurs du groupe Paciello](https://www.paciellogroup.com/resources/contrast-analyser.html) ou l’[outil de vérification du contraste des couleurs de WebAIM](https://www.webaim.org/resources/contrastchecker/), afin de vérifier les paires de couleurs et de signaler les éventuels problèmes de contraste.
 
-Par ailleurs, si l’aspect de votre page n’est pas un souci majeur, vous avez la possibilité de ne spécifier aucune couleur de texte de premier plan ou d’arrière-plan. Dans ce cas, il n’est pas nécessaire de vérifier le contraste, puisque le navigateur de l’utilisateur déterminera les couleurs du texte et de l’arrière-plan.
+Si vous êtes moins intéressé par l’aspect de votre page, vous pouvez également choisir de ne pas spécifier de couleurs de texte d’arrière-plan et de premier plan. Aucune vérification du contraste n’est requise, car le navigateur de l’utilisateur détermine les couleurs du texte et de l’arrière-plan.
 
-S’il n’est pas possible d’obtenir les niveaux de contraste recommandés, vous devez fournir un lien vers une version équivalente alternative de la page (qui ne présente aucun problème de contraste des couleurs) ou permettre à l’utilisateur de régler le contraste du jeu de couleurs de la page selon ses besoins.
+S’il n’est pas possible de respecter les niveaux de contraste recommandés, vous devrez fournir un lien vers une version équivalente alternative de la page (qui ne présente aucun problème de contraste des couleurs) ou permettre à l’utilisateur d’ajuster le contraste du modèle de couleurs de la page à ses propres besoins.
 
 #### En savoir plus – Contraste (minimum) (1.4.3) {#more-information-contrast-minimum}
 
@@ -600,11 +604,11 @@ S’il n’est pas possible d’obtenir les niveaux de contraste recommandés, v
 * Niveau AA
 * Texte sous forme d’image : si les technologies utilisées peuvent réaliser la présentation visuelle, du texte est utilisé pour véhiculer l’information plutôt que du texte sous forme d’image sauf dans les cas suivants :
 
-   * Personnalisable : le texte sous forme d’image peut être personnalisé visuellement selon les exigences de l’utilisateur.
-   * Essentielle : une présentation spécifique du texte est essentielle à l’information véhiculée.
+   * Personnalisable : L’image du texte peut être visuellement personnalisée en fonction des besoins de l’utilisateur.
+   * Essentiel : Une présentation particulière du texte est essentielle à la transmission de l&#39;information.
 
 >[!NOTE]
-Les logotypes (le texte qui fait partie d’un logo ou d’un nom de marque) sont considérés comme essentiels.
+Les logotypes (texte faisant partie d’un logo ou d’un nom de marque) sont considérés comme essentiels.
 
 #### Objectif – Texte sous forme d’image (1.4.5) {#purpose-images-of-text}
 
@@ -612,7 +616,7 @@ Le texte sous forme d’image est souvent utilisé lorsqu’un style particulier
 
 #### Comment procéder – Texte sous forme d’image (1.4.5) {#how-to-meet-images-of-text}
 
-Si vous devez utiliser du texte sous forme d’image, utilisez une feuille de style CSS pour remplacer le texte sous forme d’image par un équivalent textuel HTML, de sorte que le texte puisse être personnalisé. Pour en savoir plus à ce sujet, voir [C30: Using CSS to replace text with images of text and providing user interface controls to switch](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30) (Utilisation d’une feuille de style CSS pour remplacer du texte par du texte sous forme d’image et fournir des commandes d’interface utilisateur à permuter ; en anglais).
+Si des images de texte doivent être utilisées, utilisez CSS pour remplacer les images de texte par du texte équivalent en HTML afin que le texte soit disponible de manière personnalisable. Pour un exemple sur la manière d’y parvenir, reportez-vous à [C30: Using CSS to replace text with images of text and providing user interface controls to switch](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
 
 #### En savoir plus – Texte sous forme d’image (1.4.5) {#more-information-images-of-text}
 
@@ -629,15 +633,15 @@ Si vous devez utiliser du texte sous forme d’image, utilisez une feuille de st
 * Niveau A
 * Mettre en pause, arrêter, masquer : pour toute information en mouvement, clignotante, défilante ou mise à jour automatiquement, tous les points suivants sont vrais :
 
-   * déplacement, clignotement, défilement : pour toute information en mouvement, clignotante ou défilante qui (a) démarre automatiquement, (b) dure plus de cinq secondes et (c) est présentée conjointement avec un autre contenu, il y a un mécanisme à la disposition de l’utilisateur pour la mettre en pause, l’arrêter ou la masquer, à moins que le mouvement, le clignotement ou le défilement s’avère un élément essentiel au bon déroulement de l’activité ; et
-   * mise à jour automatique : pour toute information mise à jour automatiquement qui (a) démarre automatiquement et (b) est présentée conjointement avec un autre contenu, il y a un mécanisme à la disposition de l’utilisateur pour la mettre en pause, l’arrêter ou pour en contrôler la fréquence des mises à jour à moins que la mise à jour automatique s’avère essentielle au bon déroulement de l’activité.
+   * Déplacement, clignotement, défilement : Pour toute information en mouvement, clignotante ou défilante qui (a) démarre automatiquement, (b) dure plus de cinq secondes, et (c) est présentée en parallèle à d’autres contenus, il existe un mécanisme permettant à l’utilisateur de la suspendre, de l’arrêter ou de la masquer à moins que le mouvement, la clignotante ou le défilement ne fassent partie d’une activité où il est essentiel ;
+   * Mise à jour automatique : Pour toute information mise à jour automatiquement qui (a) démarre automatiquement et (b) est présentée en parallèle avec d’autres contenus, il existe un mécanisme permettant à l’utilisateur de la mettre en pause, de l’arrêter ou de la masquer, ou de contrôler la fréquence de la mise à jour, sauf si la mise à jour automatique fait partie d’une activité où elle est essentielle.
 
-Remarques :
+Les points à noter sont les suivants :
 
 1. Pour les exigences relatives au contenu scintillant ou flashant, se référer à la règle [Ne pas concevoir de contenu susceptible de provoquer des crises (2.3)](#seizures).
 1. Puisque tout contenu ne satisfaisant pas ce critère de réussite peut interférer avec la capacité de l’utilisateur à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour satisfaire d’autres critères de réussite ou non) doit satisfaire ce critère de réussite. Voir [Exigence de conformité 5 : Non-interférence](https://www.w3.org/TR/WCAG20/#cc5).
-1. Il n’est pas exigé que le contenu mis à jour périodiquement par logiciel ou diffusé en flux à l’agent utilisateur conserve ou présente l’information générée ou reçue entre la mise en pause et la reprise de la présentation, puisque cela peut ne pas être techniquement possible et s’avérer trompeur dans beaucoup de situations.
-1. Une animation survenant dans une phase de pré-chargement ou dans une situation similaire peut être considérée comme essentielle si aucune interaction n’est permise à tous les utilisateurs durant cette phase et si l’absence d’indication de progression est susceptible de perturber les utilisateurs ou de leur faire croire que le contenu est figé ou défectueux.
+1. Le contenu mis à jour régulièrement par un logiciel ou diffusé en continu à l’agent utilisateur n’est pas nécessaire pour conserver ou présenter des informations générées ou reçues entre le lancement de la mise en pause et la reprise de la présentation, car cela peut ne pas être techniquement possible et dans de nombreuses situations peut induire en erreur.
+1. Une animation qui se produit dans le cadre d’une phase de préchargement ou d’une situation similaire peut être considérée comme essentielle si l’interaction ne peut pas se produire au cours de cette phase pour tous les utilisateurs et si ne pas indiquer la progression, cela peut dérouter les utilisateurs ou les faire croire que le contenu a été figé ou cassé.
 
 #### Objectif – Mettre en pause, arrêter, masquer (2.2.2) {#purpose-pause-stop-hide}
 
@@ -650,8 +654,8 @@ Selon la nature du contenu, appliquez une ou plusieurs des suggestions ci-après
 * Fournissez un moyen de mettre en pause le contenu défilant afin que l’utilisateur dispose de suffisamment de temps pour le lire. Par exemple, des téléscripteurs de nouvelles ou du texte automatiquement mis à jour.
 * Veillez à ce que le contenu qui clignote s’arrête de clignoter après cinq secondes.
 * Utilisez des technologies appropriées pour afficher le contenu clignotant pouvant être désactivé par le navigateur. Par exemple, des fichiers GIF (Graphics Interchange Format) ou APNG (Animated Portable Network Graphics).
-* Fournissez un contrôle de formulaire sur la page web permettant à l’utilisateur de désactiver tout le contenu clignotant sur la page.
-* Si aucune des solutions ci-dessus n’est possible, fournissez un lien vers une page avec tout le contenu mais sans aucun clignotement.
+* Fournissez un contrôle de formulaire sur la page web pour permettre à l’utilisateur de désactiver tout le contenu clignotant sur la page.
+* Si l’une des options ci-dessus n’est pas possible, fournissez un lien vers une page contenant tout le contenu, mais sans clignotement.
 
 #### En savoir plus – Mettre en pause, arrêter, masquer (2.2.2)  {#more-information-pause-stop-hide}
 
@@ -677,9 +681,9 @@ Il arrive que le contenu qui flashe provoque des crises de photosensibilité. En
 
 #### Comment procéder – Pas plus de trois flashs ou sous le seuil critique (2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
 
-Veillez à ce que les techniques ci-après soient appliquées :
+Vous devez prendre des mesures pour vous assurer que les techniques suivantes sont appliquées :
 
-* Veillez à ce que les composants ne flashent pas plus de trois fois dans n’importe quel intervalle d’une seconde.
+* Assurez-vous que les composants ne clignotent pas plus de trois fois au cours d’une période d’une seconde ;
 * S’il n’est pas possible de remplir la condition ci-dessus, présentez le contenu qui clignote dans un *petit espace sécurisé* en pixels à l’écran. Cet espace est calculé selon une formule complexe, abordée dans la section [G176: Keeping the flashing area small enough](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176) (faire en sorte que la zone qui clignote soit suffisamment petite ; en anglais). Cette technique doit être appliquée uniquement si le contenu qui clignote est *absolument* nécessaire.
 
 #### En savoir plus – Pas plus de trois flashs ou sous le seuil critique (2.3.1) {#more-information-three-flashes-or-below-threshold}
@@ -689,9 +693,9 @@ Veillez à ce que les techniques ci-après soient appliquées :
 
 ### Titre de page (2.4.2)    {#page-titled}
 
-* Critère de réussite 2.4.2
+* Critère de réussite 2.4.2
 * Niveau A
-* Titre de page : les pages web présentent un titre qui décrit leur sujet ou leur but.
+* Titre de page : Les pages web comportent des titres qui décrivent la rubrique ou l’objectif.
 
 #### Objectif – Titre de page (2.4.2) {#purpose-page-titled}
 
@@ -710,7 +714,7 @@ Vous pouvez également changer le titre d’une page que vous modifiez en sélec
 
 ### Fonction du lien (selon le contexte) (2.4.4)    {#link-purpose-in-context}
 
-* Critère de réussite 2.4.4
+* Critère de réussite 2.4.4
 * Niveau A
 * Fonction du lien (selon le contexte) : la fonction de chaque lien est déterminée par le texte du lien seul ou par le texte du lien associé à un contexte du lien déterminé par un programme informatique, sauf si la fonction du lien est ambiguë pour tout utilisateur.
 
@@ -724,7 +728,7 @@ Avant tout, veillez à ce que l’objectif d’un lien soit clairement décrit d
 
 * Mauvais exemple :
 
-   * Texte : Pour plus de détails sur nos cours du soir de l’automne 2010, cliquez <u>ici</u>.
+   * Texte : Pour plus d’informations sur nos cours du soir de l’automne 2010, cliquez sur <u>here</u>.
    * Motif : le lien est ambigu et n’indique pas clairement sa destination.
 
 * Bon exemple :
@@ -734,17 +738,17 @@ Avant tout, veillez à ce que l’objectif d’un lien soit clairement décrit d
 
 Les liens doivent être formulés de manière cohérente sur toutes les pages, en particulier pour les barres de navigation. Si, par exemple, un lien vers une page spécifique est nommé **Publications** sur une page, il doit être nommé de la même façon sur toutes les autres pages.
 
-Au moment de la rédaction toutefois, certains problèmes peuvent se présenter quant à l’utilisation des titres :
+Cependant, au moment de la rédaction de cet article, l&#39;utilisation des titres pose certains problèmes :
 
-* Habituellement, seuls les utilisateurs d’une souris ont accès au texte contenu dans l’attribut de titre, sous forme d’info-bulle contextuelle ; ce texte n’est pas accessible par clavier.
-* Les lecteurs d’écran peuvent lire à haute voix les attributs de titre, mais cette fonctionnalité peut ne pas être activée par défaut ; les utilisateurs peuvent donc ne pas savoir qu’il existe un attribut de titre.
-* Il est difficile de modifier l’aspect du texte d’un titre, ce qui signifie qu’il peut être difficile ou impossible de le lire pour certains utilisateurs.
+* Le texte contenu dans l’attribut title est généralement disponible uniquement pour les utilisateurs de souris sous la forme d’une info-bulle contextuelle. Il n’est pas accessible à l’aide du clavier.
+* Les lecteurs d’écran peuvent lire les attributs de titre, mais cette fonctionnalité peut ne pas être activée par défaut. par conséquent, les utilisateurs peuvent ne pas connaître l’existence d’un attribut de titre.
+* Il est difficile de changer l&#39;aspect du texte du titre, ce qui signifie qu&#39;il peut être difficile ou impossible à lire pour certaines personnes.
 
-Par conséquent, même si vous pouvez utiliser l’attribut de titre pour fournir plus de contexte sur un lien, vous devez connaître ses limites et ne pas l’utiliser comme alternative à un texte de lien approprié.
+Ainsi, bien que l’attribut de titre puisse être utilisé pour fournir un contexte supplémentaire à un lien, gardez à l’esprit ses limites et ne l’utilisez pas comme alternative au texte du lien approprié.
 
 Si le lien est composé d’une image, veillez à ce que le texte secondaire de l’image décrive la destination du lien. Si, par exemple, une image de bibliothèque est définie comme lien vers les publications d’une personne, le texte secondaire doit indiquer **Publications de Jean Dupont** et non **Bibliothèque**.
 
-Par ailleurs, si l’ancre du lien contient du texte qui décrit l’objet du lien en sus de l’image (et par conséquent que le texte apparaît le long de l’image), utilisez un attribut alt vide pour l’image :
+Si l’ancre de lien contient du texte qui décrit l’objet du lien en plus de l’élément image (et donc que le texte apparaît à côté de l’image), utilisez un attribut alt vide pour l’image :
 
 ```xml
 <a href="publications.html">
@@ -754,17 +758,17 @@ John Smith’s publications
 ```
 
 >[!NOTE]
-L’extrait de code ci-dessus est une illustration ; il est recommandé d’utiliser le composant **Image**.
+Le fragment de code ci-dessus est une illustration. Il est recommandé d’utiliser la variable **Image** composant.
 
 Il est conseillé de spécifier un texte du lien qui identifie l’objet du lien sans avoir besoin de contexte supplémentaire ; toutefois, cela n’est pas toujours possible. Des liens sans contexte peuvent être utilisés dans les cas suivants (vous trouverez des exemples HTML dans la section [Comment remplir le critère de réussite 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs)) :
 
 * Si le texte du lien fait partie d’une liste de liens étroitement liés et si l’élément de liste encadrant le lien fournit suffisamment de contexte.
 * Si l’objet d’un lien peut être clairement identifié dans le texte du paragraphe *précédent* (et non suivant).
-* si le lien est contenu dans un tableau de données et par conséquent que l’objet du lien peut être clairement identifié dans les titres associés.
-* si une liste de liens est contenue dans un jeu de titres et que le titre lui-même fournit suffisamment de contexte.
-* si une liste de liens est contenue dans un lien imbriqué et que la liste parente elle-même au-dessus du lien imbriqué fournit suffisamment de contexte.
+* Lorsque le lien est contenu dans un tableau de données, l’objectif peut donc être clairement identifié à partir des en-têtes associés.
+* Lorsqu’une liste de liens est contenue dans un ensemble d’en-têtes et que l’en-tête lui-même fournit un contexte approprié.
+* Lorsqu’une liste de liens est contenue dans un lien imbriqué et que l’élément de liste parent situé au-dessus du lien imbriqué fournit un contexte approprié.
 
-Dans certains cas, s’il existe plusieurs liens sur une page (chacun d’eux fournit la destination d’un lien avec des détails complexes mais nécessaires), il peut être nécessaire de fournir une version alternative de la page web qui affiche exactement le même contenu, mais où le texte du lien n’est pas aussi détaillé.
+Dans certains cas, lorsqu’il existe plusieurs liens sur une page (chacun d’eux fournit la direction d’un lien avec des détails complexes mais nécessaires), il peut être judicieux de fournir une version alternative de la page web qui affiche exactement le même contenu, mais lorsque le texte du lien n’est pas aussi détaillé.
 
 Toutefois, il est possible d’utiliser des scripts de sorte qu’un texte minimal soit fourni avec le lien lui-même, mais, à l’activation d’une commande appropriée placée vers le haut de la page, que le texte du lien soit *développé* afin d’afficher davantage de détails. Une approche similaire consiste à utiliser une feuille de style CSS afin de *masquer* le lien complet pour les utilisateurs voyants, tout en l’affichant dans son intégralité pour les utilisateurs d’un lecteur d’écran. Cela ne fait pas partie du sujet de ce document ; toutefois, vous en apprendrez davantage dans la section [En savoir plus – Fonction du lien (selon le contexte) (2.4.4)](#more-information-link-purpose-in-context).
 
@@ -786,7 +790,7 @@ Toutefois, il est possible d’utiliser des scripts de sorte qu’un texte minim
 
 * Critère de réussite 3.1.1
 * Niveau A
-* Langue de la page : la langue par défaut de chaque page web peut être déterminée par un programme informatique.
+* Langue de la page : La langue humaine par défaut de chaque page web peut être déterminée par programmation.
 
 #### Objectif – Langue de la page (3.1.1) {#purpose-language-of-page}
 
@@ -816,12 +820,12 @@ Dans AEM, la langue par défaut de la page est définie lors de sa création, ma
 
 #### Objectif – Langue d’un passage (3.1.2) {#purpose-language-of-parts}
 
-Ce critère de réussite vise le même objectif que le critère de réussite [Langue de la page](#language-of-page), mais il s’applique aux pages web avec du contenu en plusieurs langues sur une seule page (par exemple, en raison de citations ou de mots empruntés peu courants).
+L’objectif de ce critère de réussite est similaire au critère de réussite. [Langue de la page](#language-of-page), sauf qu’il s’applique aux pages web comportant du contenu dans plusieurs langues sur une seule page (en raison, par exemple, de citations ou de mots empruntés peu courants).
 
-Si une page applique ce critère de réussite, alors :
+Les pages appliquant ce critère de réussite permettent :
 
-* Le logiciel de transition en braille peut insérer des caractères accentués.
-* Les lecteurs d’écran peuvent prononcer correctement les mots qui sont dans une autre langue que la langue par défaut.
+* Logiciel de transition en braille pour insérer des caractères accentués.
+* Les lecteurs d’écran peuvent prononcer correctement les mots qui ne sont pas dans la langue par défaut.
 * Les outils de traduction du type Google Translate peuvent correctement traduire les mots d’une langue à une autre.
 
 #### Comment procéder – Langue d’un passage (3.1.2) {#how-to-meet-language-of-parts}
@@ -861,13 +865,13 @@ Pour ajouter l’élément span, avec un langage approprié, vous pouvez modifie
 
 * Critère de réussite 3.3.2
 * Niveau A
-* Étiquettes ou instructions : des étiquettes sont présentées ou des instructions sont fournies quand un contenu requiert une saisie utilisateur.
+* Étiquettes ou instructions : Des libellés ou des instructions sont fournis lorsque le contenu nécessite une saisie de l’utilisateur.
 
 #### Objectif – Étiquettes ou instructions (3.3.2) {#purpose-labels-or-instructions}
 
-La fourniture d’instructions pour aider les utilisateurs à remplir des formulaires est l’un des éléments essentiels pour rendre une interface conviviale. Ceci s’avère particulièrement utile pour les personnes ayant des déficiences visuelles ou cognitives qui risquent autrement d’avoir du mal à comprendre la mise en page d’un formulaire et le tri des données à fournir dans un champ particulier du formulaire.
+L’ajout d’instructions pour aider les utilisateurs à remplir des formulaires est l’un des éléments essentiels afin de rendre une interface conviviale. Cela s’avère particulièrement utile pour les personnes ayant des déficiences visuelles ou cognitives qui risquent autrement d’avoir du mal à comprendre la mise en page d’un formulaire et le type de données à fournir dans un champ particulier du formulaire.
 
-Dans AEM, une étiquette est ajoutée par défaut lorsque vous ajoutez un composant de formulaire, tel que **Champ de texte**, à la page. Ce titre par défaut dépend du type de composant. Vous pouvez ajouter votre propre titre pour ce champ dans l’onglet **Titre et texte** de la boîte de dialogue d’édition. Veillez à ce que les étiquettes aident les utilisateurs à comprendre les données associées à chaque composant de formulaire.
+Dans AEM, un libellé par défaut est ajouté lorsque vous ajoutez un composant de formulaire, tel qu’un **Champ de texte**, sur la page . Ce titre par défaut dépend du type de composant. Vous pouvez ajouter votre propre titre dans l’onglet **Titre et Texte** de la boîte de dialogue de modification de ce champ. Il est important de s’assurer que les étiquettes aident les utilisateurs à comprendre les données associées à chaque composant de formulaire.
 
 ![Onglet Titre et Texte (boîte de dialogue d’édition) ; le titre « Description » a été ajouté.](assets/chlimage_1-207.png)
 

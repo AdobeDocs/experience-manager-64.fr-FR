@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 role: Developer
 exl-id: d580b32c-a344-4a8c-bd61-0949da76d981
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '267'
+ht-degree: 89%
 
 ---
 
 # Gestion par programmation des nœuds de préférences {#programmatically-managing-the-preferencesnodes}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Cette rubrique décrit comment utiliser l’API de service du Gestionnaire de préférences (Java) pour gérer par programmation les nœuds de préférences.
 

@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7185fb13-46a2-4fa3-aa21-a51e63cdb9be
 exl-id: 96ef7e58-66c9-4985-973b-0c6fc7c39fd5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 1%
+source-wordcount: '420'
+ht-degree: 2%
 
 ---
 
 # Ajout d’un commentaire à un exemple de page {#add-comment-to-sample-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Maintenant que les composants du système de commentaires personnalisé sont en place dans le répertoire de l’application (/apps), il est possible d’utiliser le composant étendu. L’instance du système de commentaires d’un site web à affecter doit définir resourceType comme système de commentaires personnalisé et inclure toutes les bibliothèques clientes nécessaires.
 

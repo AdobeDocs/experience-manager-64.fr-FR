@@ -10,25 +10,29 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 5480ac38-f651-4211-94f6-c588fb44ad55
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 54%
+source-wordcount: '441'
+ht-degree: 22%
 
 ---
 
 # Modèles et composants d’application{#app-templates-and-components}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 >[!NOTE]
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Un modèle sert à créer une page. Il définit les composants pouvant être utilisés dans l’étendue sélectionnée. Un modèle est une hiérarchie de nœuds qui a la même structure que la page à créer, mais sans contenu réel.
+Un modèle sert à créer une page. Il définit les composants pouvant être utilisés dans l’étendue sélectionnée. Un modèle est une hiérarchie de noeuds ayant la même structure que la page à créer, mais sans contenu réel.
 
-Chaque modèle présente une sélection de composants disponibles.
+Chaque modèle vous présente une sélection de composants disponibles.
 
-* Les modèles sont constitués de [Composants](/help/sites-developing/components.md) ;
-* Les composants utilisent et autorisent l’accès aux Widgets et ceux-ci sont utilisés pour rendre le contenu.
+* Les modèles sont constitués de [Composants](/help/sites-developing/components.md);
+* Les composants utilisent et permettent d’accéder aux widgets, qui sont utilisés pour le rendu du contenu.
 
 >[!NOTE]
 >
@@ -42,17 +46,17 @@ Cette action de copie confère également à la page son contenu initial (géné
 
 ## Structure d’un modèle {#structure-of-a-template}
 
-Il y a deux aspects à considérer :
+Deux aspects doivent être pris en compte :
 
-* la structure du modèle lui-même
-* la structure du contenu produit lorsqu’un modèle est utilisé
+* la structure du modèle lui-même ;
+* la structure du contenu produit lors de l&#39;utilisation d&#39;un modèle ;
 
-Un modèle est créé sous un nœud de type **cq:Template**.
+Un modèle est créé sous un noeud de type **cq:Template**.
 
-Différentes propriétés peuvent être définies, en particulier :
+Différentes propriétés peuvent être définies, notamment :
 
-* **jcr:title**- titre du modèle. Apparaît dans la boîte de dialogue lors de la création d’une page.
-* **jcr:description**- description du modèle. Apparaît dans la boîte de dialogue lors de la création d’une page.
+* **jcr:title** - titre du modèle ; s’affiche dans la boîte de dialogue lors de la création d’une page.
+* **jcr:description** - description du modèle ; s’affiche dans la boîte de dialogue lors de la création d’une page.
 
 Ce noeud contient *un jcr:content (cq:PageContent)* Noeud servant de base au noeud de contenu des pages résultantes ; cette référence, à l’aide de *sling:resourceType*, composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
 

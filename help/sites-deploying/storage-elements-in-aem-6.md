@@ -1,7 +1,7 @@
 ---
 title: Éléments de stockage dans AEM 6.4
 seo-title: Storage Elements in AEM 6.4
-description: Obtenez des informations sur les mises en œuvre du stockage de nœud disponibles dans AEM 6.4 et la maintenance du référentiel.
+description: Découvrez les implémentations de stockage de noeud disponibles dans AEM 6.4 et comment gérer le référentiel.
 seo-description: Learn about the node storage implementations available in AEM 6.4 and how to maintain the repository.
 uuid: 3b018830-c42e-48e0-9b6f-cd230b02d914
 contentOwner: User
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 3b1100ed-44c6-4c09-aec4-9e6670234567
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 100%
+source-wordcount: '750'
+ht-degree: 67%
 
 ---
 
 # Éléments de stockage dans AEM 6.4{#storage-elements-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Dans cet article, nous allons aborder les éléments suivants :
 
@@ -27,9 +31,9 @@ Dans cet article, nous allons aborder les éléments suivants :
 
 ## Présentation du stockage dans AEM 6 {#overview-of-storage-in-aem}
 
-L’un des principaux changements dans AEM 6 concerne les innovations au niveau du référentiel.
+L’une des modifications les plus importantes d’AEM 6 concerne les innovations au niveau du référentiel.
 
-Actuellement, il existe deux implémentations de stockage de nœud disponibles dans AEM 6 : le stockage tar et le stockage MongoDB.
+Actuellement, il existe deux implémentations de stockage de noeuds disponibles dans AEM6 : Stockage Tar et stockage MongoDB.
 
 ### Stockage tar {#tar-storage}
 
@@ -39,10 +43,10 @@ Actuellement, il existe deux implémentations de stockage de nœud disponibles d
 >
 >Le PID du magasin de nœuds de segment a été changé, en remplaçant org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService dans les versions précédentes d’AEM 6 par org.apache.jackrabbit.oak.segment.SegmentNodeStoreService dans AEM 6.3. Veillez à effectuer les réglages de configuration nécessaires pour prendre en compte cette modification.
 
-Par défaut, AEM 6 utilise le stockage tar pour stocker les nœuds et les fichiers binaires à l’aide des options de configuration par défaut. Pour configuer manuellement les paramètres de stockage, suivez la procédure ci-dessous :
+Par défaut, AEM 6 utilise le stockage tar pour stocker les nœuds et les fichiers binaires à l’aide des options de configuration par défaut. Pour configurer manuellement ses paramètres de stockage, procédez comme suit :
 
-1. Téléchargez le jar quickstart AEM 6 et placez-le dans un nouveau dossier. 
-1. Décompressez AEM en exécutant :
+1. Téléchargez AEM jar de démarrage rapide 6 et placez-le dans un nouveau dossier.
+1. Décompressez l’AEM en exécutant :
 
    `java -jar cq-quickstart-6.jar -unpack`
 
@@ -50,7 +54,7 @@ Par défaut, AEM 6 utilise le stockage tar pour stocker les nœuds et les fichi
 
 1. Créez un fichier nommé `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` dans le dossier nouvellement créé.
 
-1. Modifiez le fichier, puis définissez les options de configuration. Les options suivantes sont disponibles pour l’entrepôt du nœud de segment, qui est la base de cette implémentation du stockage tar AEM :
+1. Modifiez le fichier et définissez les options de configuration. Les options suivantes sont disponibles pour le magasin de noeuds de segment, qui est la base de l’implémentation de l’espace de stockage AEM Tar :
 
    * `repository.home` : chemin vers le répertoire racine du référentiel dans lequel sont stockées les différentes données associées au référentiel. Par défaut, les fichiers de segment doivent être stockés dans le répertoire crx-quickstart/segmentstore.
    * `tarmk.size` : taille maximale d’un segment en Mo. La valeur par défaut est 256 Mo.
@@ -63,8 +67,8 @@ Par défaut, AEM 6 utilise le stockage tar pour stocker les nœuds et les fichi
 
 AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suivant la procédure ci-dessous :
 
-1. Téléchargez le jar quickstart AEM 6 et placez-le dans un nouveau fichier. 
-1. Décompressez AEM en exécutant la commande suivante :
+1. Téléchargez le fichier jar de démarrage rapide AEM 6 et placez-le dans un nouveau dossier.
+1. Décompressez l’AEM en exécutant la commande suivante :
 
    `java -jar cq-quickstart-6.jar -unpack`
 
@@ -74,7 +78,7 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
 
    Le magasin de nœuds de document (qui sert de base à l’implémentation du stockage MongoDB d’AEM) utilise un fichier nommé `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`.
 
-1. Modifiez le fichier, puis définissez les options de configuration. Les options suivantes sont disponibles :
+1. Modifiez le fichier et définissez vos options de configuration. Les options suivantes sont disponibles :
 
    * `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base de données Mongo. La valeur par défaut est de `mongodb://localhost:27017`.
    * `db` : nom de la base de données Mongo. Par défaut, les nouvelles installations d’AEM 6 utilisent **aem-author** comme nom de la base de données.
@@ -92,9 +96,9 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
 
    Où **`-r`** est le mode d’exécution principal. Dans cet exemple, cela commence par la prise en charge de MongoDB. 
 
-#### Désactiver les pages THP {#disabling-transparent-huge-pages}
+#### Désactivation de la transparence des pages Huge {#disabling-transparent-huge-pages}
 
-Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transparent Huge Pages (THP). Tandis qu’AEM effectue des lectures et des écritures affinées, THP est optimisé pour des opérations plus volumineuses. Pour cette raison, il est recommandé de désactiver THP sur le stockage Tar et Mongo. Pour désactiver l’algorithme, procédez comme suit :
+Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transparent Huge Pages (THP). Tandis qu’AEM effectue des lectures et des écritures affinées, THP est optimisé pour des opérations plus volumineuses. Pour cette raison, il est recommandé de désactiver THP sur le stockage Tar et Mongo. Pour désactiver l’algorithme, procédez comme suit :
 
 1. Ouvrez le fichier `/etc/grub.conf` dans l’éditeur de texte de votre choix.
 1. Ajoutez la ligne suivante au fichier **grub.conf** :
@@ -103,13 +107,13 @@ Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transpar
    transparent_hugepage=never
    ```
 
-1. Enfin, vérifiez si le paramètre a été appliqué en exécutant :
+1. Enfin, vérifiez si le paramètre a été appliqué en exécutant :
 
    ```
    cat /sys/kernel/mm/redhat_transparent_hugepage/enabled
    ```
 
-   Si THP est désactivé, la sortie de la commande ci-dessus doit être :
+   Si THP est désactivé, la sortie de la commande ci-dessus doit être :
 
    ```
    always madvise [never]
@@ -117,7 +121,7 @@ Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transpar
 
 >[!NOTE]
 >
->De plus, vous pouvez également consulter les ressources suivantes :
+>Vous pouvez également consulter les ressources suivantes :
 >
 >* Pour plus d’informations sur Transparent Huge Pages sur Red Hat Linux, reportez-vous à cet [article](https://access.redhat.com/solutions/46111).
 >* Pour obtenir des conseils sur l’optimisation sous Linux, reportez-vous à cet [article](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
@@ -126,4 +130,4 @@ Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transpar
 
 ## Maintenance du référentiel {#maintaining-the-repository}
 
-Chaque mise à jour du référentiel crée une nouvelle révision de contenu. Par conséquent, avec chaque mise à jour, la taille du référentiel augmente. Pour éviter une croissance incontrôlée au référentiel, il faut nettoyer les anciennes révisions pour libérer de l’espace sur le disque. Cette fonctionnalité de maintenance est appelée le nettoyage des révisions. Le mécanisme de nettoyage des révisions permet de récupérer de l’espace disque en supprimant les données obsolètes du référentiel. Pour de plus amples informations sur le nettoyage des révisions, consultez la page [Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md). 
+Chaque mise à jour du référentiel crée une révision du contenu. Par conséquent, avec chaque mise à jour, la taille du référentiel augmente. Pour éviter une croissance incontrôlée du référentiel, les anciennes révisions doivent être nettoyées pour libérer des ressources de disque. Cette fonctionnalité de maintenance est appelée Nettoyage des révisions. Le mécanisme de nettoyage des révisions permet de récupérer de l’espace disque en supprimant les données obsolètes du référentiel. Pour de plus amples informations sur le nettoyage des révisions, consultez la page [Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md). 

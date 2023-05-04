@@ -10,14 +10,18 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: ce9a1c1f-a37b-4765-b87e-5b2359312cfe
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 80%
 
 ---
 
 # Activation de l’exportateur JSON pour un composant{#enabling-json-export-for-a-component}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
 
@@ -25,7 +29,7 @@ Les composants peuvent être adaptés pour générer l’exportation JSON de leu
 
 L’exportation JSON est basée sur des [modèles Sling](https://sling.apache.org/documentation/bundles/models.html) et sur le framework d’[exportation des modèles Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (lequel s’appuie lui-même sur des [annotations Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
-Cela signifie que le composant doit avoir un modèle Sling pour effectuer une exportation JSON. Par conséquent, vous devez suivre ces deux étapes pour activer l’exportation JSON des composants.
+Cela signifie que le composant doit disposer d’un modèle Sling s’il doit exporter du code JSON. Par conséquent, vous devrez suivre ces deux étapes pour activer l’exportation JSON sur n’importe quel composant.
 
 * [Définition d’un modèle Sling pour le composant](/help/sites-developing/json-exporter-components.md#define-a-sling-model-for-the-component)
 * [Annotation de l’interface du modèle Sling](#annotate-the-sling-model-interface)
@@ -52,7 +56,7 @@ En outre, cela indique que la classe de modèles Sling peut être adaptée dans 
 
 >[!NOTE]
 >
->Les annotations Jackson ne sont généralement pas spécifiées au niveau de la classe de modèles Sling, mais plutôt au niveau de l’interface de modèle. Cela permet de vérifier que l’exportation JSON est considérée comme faisant partie de l’API du composant.
+>Les annotations Jackson ne sont généralement pas spécifiées au niveau de la classe de modèles Sling, mais plutôt au niveau de l’interface de modèle. Cela permet de s’assurer que l’exportation JSON est considérée comme faisant partie de l’API du composant.
 
 >[!NOTE]
 >
@@ -74,11 +78,11 @@ Pour être prise en compte par le framework de l’exportateur JSON, l’interfa
 
 L’interface de modèle Sling correspondante (`MyComponent`) est alors marquée avec les [annotations Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) pour définir la manière dont les méthodes doivent être exportées (sérialisées).
 
-L’interface de modèle doit être correctement annotée afin de définir les méthodes qui doivent être sérialisées. Par défaut, on attribue un numéro de série à toutes les méthodes qui respectent la convention de dénomination habituelle pour des getters. En outre, leurs noms de propriétés JSON sont naturellement dérivés des noms des getters. Cela peut être évité en utilisant `@JsonIgnore` ou `@JsonProperty` pour renommer la propriété JSON.
+L’interface de modèle doit être correctement annotée pour définir les méthodes à sérialiser. Par défaut, on attribue un numéro de série à toutes les méthodes qui respectent la convention de dénomination habituelle pour des getters. En outre, leurs noms de propriétés JSON sont naturellement dérivés des noms des getters. Cela peut être évité en utilisant `@JsonIgnore` ou `@JsonProperty` pour renommer la propriété JSON.
 
 ## Exemple {#example}
 
-Les composants principaux prennent en charge l’exportation JSON depuis la version[ 1.1.0 des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et peuvent être utilisés comme référence.
+Les composants principaux prennent en charge l’exportation JSON depuis la version [1.1.0 des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et peut être utilisé comme référence.
 
 Pour obtenir un exemple, consultez la mise en œuvre du modèle Sling sur le composant principal de l’image et son interface annotée.
 
@@ -98,4 +102,4 @@ Pour plus d’informations, voir :
 * [Modèles de fragment de contenu](/help/assets/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-authoring/content-fragments.md)
 * [Exportateur JSON pour Content Services](/help/sites-developing/json-exporter.md)
-* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://helpx.adobe.com/fr/experience-manager/core-components/using/content-fragment-component.html)
+* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [composant Fragment de contenu](https://helpx.adobe.com/fr/experience-manager/core-components/using/content-fragment-component.html)

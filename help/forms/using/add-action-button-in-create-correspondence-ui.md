@@ -1,7 +1,7 @@
 ---
-title: Ajout d’une action ou d’un bouton personnalisé à l’interface utilisateur de création de correspondance
+title: Ajouter un bouton d’action personnalisé dans l’interface utilisateur de création de correspondance
 seo-title: Add custom action/button in Create Correspondence UI
-description: Découvrez comment ajouter une action/un bouton personnalisé(e) à l’interface utilisateur Création de correspondance.
+description: Découvrez comment ajouter une action/un bouton personnalisé(e) dans l’interface utilisateur de création de correspondance
 seo-description: Learn how to add custom action/button in Create Correspondence UI
 uuid: e3609371-caaa-4efe-8f63-4d982cd456ab
 content-type: reference
@@ -10,14 +10,18 @@ topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 feature: Correspondence Management
 exl-id: 5bcb26dc-aeb7-4a81-b905-23c8fb05d6d0
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 91%
+source-wordcount: '1891'
+ht-degree: 67%
 
 ---
 
-# Ajout d’une action ou d’un bouton personnalisé à l’interface utilisateur de création de correspondance {#add-custom-action-button-in-create-correspondence-ui}
+# Ajouter un bouton d’action personnalisé dans l’interface utilisateur de création de correspondance {#add-custom-action-button-in-create-correspondence-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 
@@ -27,17 +31,17 @@ Le scénario présenté dans ce document explique comment créer un bouton dans 
 
 ### Prérequis {#prerequisites}
 
-Les éléments suivants sont requis pour terminer ce scénario :
+Pour terminer ce scénario, vous devez disposer des éléments suivants :
 
-* Connaissances de CRX et Javascript
-* Serveur LiveCycle
+* Connaissance de CRX et JavaScript
+* LiveCycle Server
 
-## Scénario : Création du bouton dans l’interface utilisateur de création de correspondance en vue de la révision d’une lettre {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## Scénario : Création du bouton dans l’interface utilisateur de création de correspondance pour envoyer une lettre à réviser {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
-L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à l’interface utilisateur de création de correspondance comprend :
+L’ajout d’un bouton avec une action (ici, envoyer une lettre pour révision) à l’interface utilisateur de création de correspondance comprend :
 
-1. L’ajout du bouton à l’interface utilisateur de création de correspondance
-1. L’ajout d’un traitement d’action au bouton
+1. Ajout du bouton à l’interface utilisateur de création de correspondance
+1. Ajout d’une gestion des actions au bouton
 1. Ajout du processus de LiveCycle pour activer l’action &quot;gestion&quot;
 
 ### Ajout du bouton à l’interface utilisateur de création de correspondance {#add-the-button-to-the-create-correspondence-user-interface}
@@ -72,10 +76,10 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
       ![Copie du fichier acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
 
-   * Faites un clic droit sur le dossier **[!UICONTROL defaultApp]** sous « /applications/fd/cm/config/defaultApp/, » et sélectionnez **[!UICONTROL Coller]**.
+   * Cliquez avec le bouton droit de la souris sur le **[!UICONTROL defaultApp]** dossier à l’emplacement &quot;/apps/fd/cm/config/defaultApp/&quot;, puis sélectionnez **[!UICONTROL Coller]**.
    * Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-1. Double-cliquez sur la copie du fichier acmExtentionsConfig.xml créée dans le dossier d’applications. Le fichier à modifier s’ouvre.
+1. Double-cliquez sur la copie du fichier acmExtentionsConfig.xml que vous venez de créer dans le dossier des applications. Le fichier s’ouvre pour modification.
 1. Recherchez le code suivant :
 
    ```xml
@@ -102,13 +106,13 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
    ![balise customAction](assets/5_acmextensionsconfig_xml.png)
 
-   La balise modelExtension dispose d’un jeu de balises enfant customAction qui permet de configurer l’action, les autorisations et l’aspect du bouton d’action. Voici la liste des balises de configuration customAction :
+   La balise modelExtension comporte un ensemble de balises enfants customAction configurant l’action, les autorisations et l’aspect du bouton d’action. Voici la liste des balises de configuration customAction :
 
    | **Nom** | **Description** |
    |---|---|
    | name | Le nom alphanumérique de l’action à exécuter. La valeur de cette balise est obligatoire, doit être unique (dans la balise modelExtension) et doit commencer par une lettre de l’alphabet. |
-   | label | Libellé du bouton d’action. |
-   | tooltip | Texte de l’info-bulle du bouton, qui s’affiche lorsque l’utilisateur passe le pointeur de la souris sur le bouton. |
+   | label | Libellé à afficher sur le bouton d’action |
+   | tooltip | Texte de l’info-bulle du bouton, qui s’affiche lorsque l’utilisateur passe la souris sur le bouton. |
    | styleName | Nom du style personnalisé appliqué au bouton d’action. |
    | permissionName | L’action correspondante s’affiche uniquement si l’utilisateur dispose de l’autorisation spécifiée par la valeur permissionName. Lorsque vous spécifiez la valeur permissionName en tant que `forms-users`, tous les utilisateurs ont accès à cette option. |
    | actionHandler | Nom complet de la classe ActionHandler appelée lorsque l’utilisateur clique sur le bouton. |
@@ -161,9 +165,9 @@ Le fichier ACMExtensionsMessages.properties comprend des libellés et des messag
 
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-#### Redémarrage du lot du bloc de création Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
+#### Redémarrez le lot du bloc de création Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
 
-Après avoir effectué chaque modification côté serveur, redémarrez le lot du bloc de création Adobe Asset Composer. Dans ce scénario, les fichiers acmExtensionsConfig.xml et ACMExtensionsMessages.properties côté serveur sont modifiés et, par conséquent, le lot du bloc de création Adobe Asset Composer nécessite un redémarrage.
+Après avoir effectué chaque modification côté serveur, redémarrez le lot du bloc de création Asset Composer Adobe. Dans ce scénario, les fichiers acmExtensionsConfig.xml et ACMExtensionsMessages.properties côté serveur sont modifiés et, par conséquent, le lot du bloc de création Adobe Asset Composer nécessite un redémarrage.
 
 >[!NOTE]
 >
@@ -175,11 +179,11 @@ Après avoir effectué chaque modification côté serveur, redémarrez le lot du
 
    ![Bloc de création Adobe Asset Composer](assets/6_assetcomposerbuildingblockbundle.png)
 
-Après le redémarrage du lot du bloc de création Adobe Asset Composer, le bouton personnalisé s’affiche dans l’interface utilisateur de création de correspondance. Vous pouvez ouvrir une lettre dans l’interface utilisateur de création de correspondance afin de prévisualiser le bouton personnalisé.
+Après le redémarrage du lot du bloc de création Adobe Asset Composer, le bouton personnalisé s’affiche dans l’interface utilisateur de création de correspondance. Vous pouvez ouvrir une lettre dans l’interface utilisateur de création de correspondance pour prévisualiser le bouton personnalisé.
 
-### Ajouter un traitement d’action au bouton {#add-action-handling-to-the-button}
+### Ajout de la gestion des actions au bouton {#add-action-handling-to-the-button}
 
-Par défaut, la classe ActionHandler est intégrée dans le fichier cm.domain.js de l’interface utilisateur de création de correspondance à l’emplacement suivant :
+Par défaut, l’interface utilisateur de création de correspondance dispose de l’implémentation d’ActionHandler dans le fichier cm.domain.js à l’emplacement suivant :
 
 /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccr/js/cm.domain.js
 
@@ -223,7 +227,7 @@ Le traitement de l’action/du bouton lors d’un clic sur l’action/le bouton 
       Nommez le fichier ccrcustomization.js.
 
    1. Double-cliquez sur le fichier ccrcustomization.js pour l’ouvrir dans CRX.
-   1. Dans le fichier, collez le code suivant puis cliquez sur **[!UICONTROL Enregistrer tout]** :
+   1. Dans le fichier , collez le code suivant, puis cliquez sur **[!UICONTROL Enregistrer tout]**:
 
       ```
       /* for adding and handling custom actions in Extensible Toolbar.
@@ -322,12 +326,12 @@ Le traitement de l’action/du bouton lors d’un clic sur l’action/le bouton 
       '</div>';
       ```
 
-### Ajout d’un processus LiveCycle pour activer le traitement <span class="acrolinxCursorMarker"></span>d’action {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Ajouter le processus de LiveCycle pour activer l’action <span class="acrolinxCursorMarker"></span>gestion {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Dans ce scénario, activez les composants suivants, qui font partie du fichier joint components.zip :
 
 * Fichier jar du composant DSC (`DSCSample.jar`)
-* Processus LCA d’envoi de la lettre pour révision (`SendLetterForReview.lca`)
+* Envoi d’une lettre au processus de révision LCA (`SendLetterForReview.lca`)
 
 Téléchargez et décompressez le fichier `components.zip` fichier à obtenir `DSCSample.jar` et `SendLetterForReview.lca` fichiers . Utilisez ces fichiers comme indiqué dans les procédures suivantes.
 
@@ -382,7 +386,7 @@ Processus LiveCycle requis permettant l’exécution du processus de service de 
 
 #### Ajout de ServiceName à la liste de services Placés sur la liste autorisée {#adding-servicename-to-the-allowlisted-service-list}
 
-Indiquez dans le serveur AEM les services LiveCycle auxquels vous souhaitez qu’il accède.
+Indiquez dans le serveur AEM les services de LiveCycle auxquels vous souhaitez accéder au serveur AEM.
 
 1. Connectez-vous en tant qu’administrateur à `https:/[host]/:[port]/system/console/configMgr`.
 
@@ -391,9 +395,9 @@ Indiquez dans le serveur AEM les services LiveCycle auxquels vous souhaitez qu�
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-#### Configuration du service de courrier électronique {#configure-the-email-service}
+#### Configuration du service de messagerie {#configure-the-email-service}
 
-Dans ce scénario, configurez le service de messagerie dans le serveur LiveCycle afin que Correspondence Management puisse envoyer un courrier électronique.
+Dans ce scénario, pour que Correspondence Management puisse envoyer un email, configurez le service de messagerie dans le serveur LiveCycle.
 
 1. Connectez-vous avec les informations d’identification d’administrateur à l’interface utilisateur du serveur LiveCycle à l’adresse `https:/[lc server]:[lc port]/adminui`.
 
@@ -418,7 +422,7 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
 1. Indiquez les paramètres suivants dans le fichier de configuration :
 
    * **crx.serverUrl**=https:/[hôte]/:[port]/[chemin du contexte]/[URL AEM]
-   * **crx.username**= nom d’utilisateur AEM
+   * **crx.username**= AEM nom d’utilisateur
    * **crx.password**= AEM mot de passe
    * **crx.appRoot**=/content/apps/cm
 
@@ -426,13 +430,13 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
    >
    >À chaque modification apportée au côté serveur, redémarrez le serveur 
 
-   Le `DSCSample.jar` utilise la variable `renderLetter` API. Pour plus d’informations sur l’API renderLetter, voir [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   Le `DSCSample.jar` utilise la variable `renderLetter` API. Pour plus d’informations sur l’API renderLetter, voir [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importation de DSC dans AEM Forms on JEE {#import-dsc-to-livecyle}
 
-`DSCSample.jar``renderLetter`Le fichier utilise l’API pour effectuer le rendu d’une lettre sous forme d’octets PDF à partir des données XML fournies par C en tant qu’entrée. Pour plus d’informations sur l’API renderLetter et les autres API, voir [Service de rendu de lettre](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+`DSCSample.jar` utilise la variable `renderLetter` API pour effectuer le rendu d’une lettre en tant qu’octets PDF à partir des données XML que C donne en entrée. Pour plus d’informations sur renderLetter et les autres API, voir [Service de rendu de lettre](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
-1. Démarrer Workbench et connectez-vous.
+1. Démarrez Workbench et connectez-vous.
 1. Sélectionnez **[!UICONTROL Fenêtre > Afficher les vues > Composants]**. La vue Composants est ajoutée à Workbench ES2.
 
 1. Faites un clic droit sur **[!UICONTROL Composants]** et sélectionnez **[!UICONTROL Installer un composant]**.
@@ -440,9 +444,9 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
 1. Sélectionnez le fichier `DSCSample.jar` via l’explorateur de fichiers et cliquez sur **[!UICONTROL Ouvrir]**.
 1. Faites un clic droit sur **[!UICONTROL RenderWrapper]** et sélectionnez **[!UICONTROL Démarrer le composant]**. Si le composant démarre, une flèche verte apparaît en regard du nom du composant.
 
-## Envoi de la lettre pour révision {#send-letter-for-review}
+## Envoyer une lettre pour révision {#send-letter-for-review}
 
-Après avoir configuré l’action et le bouton d’envoi de la lettre pour révision :
+Après avoir configuré l’action et le bouton permettant d’envoyer la lettre pour révision :
 
 1. Videz la mémoire cache du navigateur.
 

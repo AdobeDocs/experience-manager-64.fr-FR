@@ -1,7 +1,7 @@
 ---
 title: Personnalisation des boîtes de dialogue d’erreur
 seo-title: Customizing error dialogs
-description: Comment personnaliser les boîtes de dialogue d’erreur de l’espace de travail LiveCycle AEM Forms pour ajouter des descriptions d’erreur différentes.
+description: Comment personnaliser les boîtes de dialogue d’erreur de l’espace de travail AEM Forms LiveCycle pour ajouter différentes descriptions d’erreur.
 seo-description: How-to customize the error dialogs of LiveCycle AEM Forms workspace to add different fault descriptions.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 exl-id: e45f7f79-a5c3-439c-bf6c-7b14590cd3fc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 100%
+source-wordcount: '184'
+ht-degree: 67%
 
 ---
 
 # Personnalisation des boîtes de dialogue d’erreur {#customizing-error-dialogs}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dialogue d’erreur. Pour personnaliser les boîtes de dialogue d’erreur, réalisez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) suivie de la procédure ci-dessous.
 
@@ -223,7 +227,7 @@ L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dial
 
 ## Exemples {#examples}
 
-* **Pour personnaliser la boîte de dialogue d’erreur, modifiez les éléments suivants :**
+* **Pour personnaliser la boîte de dialogue d’erreur, modifiez les éléments suivants :**
 
 ```css
 .error-dialog{

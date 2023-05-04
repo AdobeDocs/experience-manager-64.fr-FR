@@ -1,7 +1,7 @@
 ---
-title: Personnalisation des vues des propriétés de la page
+title: Personnaliser les vues des propriétés de la page
 seo-title: Customizing Views of Page Properties
-description: Chaque page s’accompagne d’un jeu de propriétés que vous pouvez modifier suivant vos besoins.
+description: Chaque page comporte un ensemble de propriétés que vous pouvez modifier selon vos besoins.
 seo-description: Every page has a set of properties that you can edit as required
 uuid: cbfca6e6-cb9e-43b1-8889-09a7cc9f8a51
 contentOwner: User
@@ -10,16 +10,20 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 25dad368-8227-424d-960b-1664d8e20a21
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 98%
+source-wordcount: '515'
+ht-degree: 69%
 
 ---
 
-# Personnalisation des vues des propriétés de la page{#customizing-views-of-page-properties}
+# Personnaliser les vues des propriétés de la page{#customizing-views-of-page-properties}
 
-Chaque page s’accompagne d’un jeu de [propriétés](/help/sites-authoring/editing-page-properties.md) que les utilisateurs peuvent afficher et modifier ; certaines sont obligatoires lors de la création de la page (create view), tandis que d’autres peuvent être affichées et modifiées ultérieurement (edit view). Ces propriétés de page sont définies et mises à la disposition des utilisateurs dans la boîte de dialogue (`cq:dialog`) du composant de page approprié.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Chaque page comporte un ensemble de [properties](/help/sites-authoring/editing-page-properties.md) qui peuvent être affichés et modifiés par les utilisateurs ; certaines sont requises lors de la création de la page (création d’une vue), d’autres peuvent être affichées et modifiées ultérieurement (modification d’une vue). Ces propriétés de page sont définies et mises à la disposition des utilisateurs dans la boîte de dialogue (`cq:dialog`) du composant de page approprié.
 
 >[!CAUTION]
 >
@@ -31,7 +35,7 @@ Le statut par défaut de chaque propriété de la page est :
 
 * disponible dans la vue d’édition (**Afficher les propriétés**, par exemple).
 
-Les champs doivent être configurés spécifiquement si une modification est requise. Pour ce faire, utilisez les propriétés de nœud appropriées :
+Les champs doivent être configurés spécifiquement si une modification est requise. Pour ce faire, utilisez les propriétés de noeud appropriées :
 
 * Propriété de page qui doit être disponible dans la vue de création (assistant **Créer une page**, par exemple) :
 
@@ -51,11 +55,11 @@ Reportez-vous, par exemple, aux paramètres des champs regroupés sous l’ongle
 
 >[!TIP]
 >
->Consultez le [Tutoriel sur l’extension des propriétés de page](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) pour obtenir un guide sur la personnalisation des propriétés de page.
+>Consultez le [Tutoriel sur l’extension des propriétés de page](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=fr) pour obtenir un guide sur la personnalisation des propriétés de page.
 
-## Configuration de vos propriétés de page {#configuring-your-page-properties}
+## Configurer vos propriétés de page {#configuring-your-page-properties}
 
-Vous pouvez également configurer les champs disponibles en configurant la boîte de dialogue de votre composant de page et en appliquant les propriétés de nœud appropriées.
+Vous pouvez également configurer les champs disponibles en configurant la boîte de dialogue de votre composant de page et en appliquant les propriétés de noeud appropriées.
 
 Par exemple, l’assistant [**Créer une page**](/help/sites-authoring/managing-pages.md#creating-a-new-page) affiche, par défaut, les champs regroupés sous **Autres titres et description**. Pour masquer ces derniers, définissez la configuration suivante :
 
@@ -103,11 +107,11 @@ Par exemple, l’assistant [**Créer une page**](/help/sites-authoring/managing-
    * **Type** : `Boolean`
    * **Valeur** : `false`
 
-   La section **Autres titres et description** ne sera plus affichée dans l’assistant **Créer une page**.
+   Le **Autres titres et description** ne s’affichera plus dans la section **Créer une page** assistant.
 
 >[!NOTE]
 >
->Lors de la configuration des propriétés de page à utiliser avec des Live Copies, reportez-vous à la section [Configuration de verrouillages MSM sur les propriétés de page](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) pour plus d’informations.
+>Lors de la configuration des propriétés de page à utiliser avec des Live Copies, voir [Configuration des verrous MSM sur les propriétés de page](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) pour plus d’informations.
 
 ## Exemple de configuration des propriétés de page {#sample-configuration-of-page-properties}
 

@@ -1,7 +1,7 @@
 ---
 title: Statut des fonctionnalités de l’IU tactile
 seo-title: Touch UI Feature Status
-description: Notes de mise à jour spécifiques à l’IU tactile d’Adobe Experience Manager 6.3.
+description: Notes de mise à jour spécifiques à l’interface utilisateur tactile d’Adobe Experience Manager 6.3.
 seo-description: Release notes specific to Adobe Experience Manager 6.3 Touch UI.
 uuid: dc335334-6c50-4cee-8a2e-183958742686
 contentOwner: msm-service
@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
 exl-id: e1422581-143b-4fce-976e-e5aa3360e2d0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 90%
+source-wordcount: '1096'
+ht-degree: 59%
 
 ---
 
@@ -21,9 +21,13 @@ ht-degree: 90%
 
 >[!CAUTION]
 >
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+>[!CAUTION]
+>
 >Avec la version 6.4 d’AEM, la variable [L’interface utilisateur classique est obsolète.](/help/release-notes/deprecated-removed-features.md). Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont encouragés à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
 
-Depuis la version 6.0, AEM est doté d’une nouvelle interface appelée IU optimisée pour les écrans tactiles (ou IU tactile) qui est cohérente avec Adobe Marketing Cloud et les instructions générales concernant les interfaces utilisateur Adobe. Avec la mise en œuvre quasi totale de la parité des fonctionnalités, cette interface est devenue l’interface utilisateur standard d’AEM. L’ancienne interface orientée bureau est dénommée « IU classique ».
+À compter de la version 6.0, AEM a introduit une nouvelle interface utilisateur appelée &quot;IU tactile&quot; (également appelée &quot;IU tactile&quot;) alignée sur Adobe Marketing Cloud et les directives générales de l’interface utilisateur de l’Adobe. Avec la quasi-partialité des fonctionnalités atteinte, cette interface est devenue l’interface standard d’AEM avec l’ancienne interface orientée bureau appelée &quot;IU classique&quot;.
 
 Bien que la plupart des fonctionnalités soient déjà présentes dans l’interface utilisateur optimisée pour les écrans tactiles, il en reste certaines à intégrer, qui le seront dans les prochaines mises à jour.
 
@@ -33,20 +37,20 @@ Pour des recommandations destinées aux clients qui effectuent une mise à nivea
 
 >[!NOTE]
 >
->Veuillez noter que cette page porte uniquement sur la parité des fonctionnalités avec l’IU classique.
+>Notez que cette page couvre uniquement la parité des fonctionnalités avec l’IU classique.
 >
->Les fonctionnalités qui ont été ajoutées à l’IU optimisée pour les écrans tactiles et qui sont absentes de l’IU classique ne sont pas répertoriées.
+>Les fonctionnalités ajoutées et uniques à l’IU tactile qui ne sont pas présentes dans l’IU classique ne sont pas répertoriées.
 
 >[!NOTE]
 >
->Cette liste est la plus complète possible, mais ne doit pas être considérée comme exhaustive.
+>Cette liste s’efforce d’être complète, mais ne doit pas être considérée comme exhaustive.
 
 ## Légende {#legend}
 
-* **Complète :** la fonctionnalité est entièrement disponible dans l’IU optimisée pour les écrans tactiles.
+* **Terminer**: Cette fonctionnalité est entièrement disponible dans l’IU tactile.
 * **Principalement** : la fonctionnalité est principalement disponible dans l’IU optimisée pour les écrans tactiles.
-* **Absente :** la fonctionnalité n’est pas disponible dans l’IU optimisée pour les écrans tactiles. L’IU classique doit être utilisée pour exécuter cette action.
-* **Remplacée :** la fonctionnalité a été remplacée par une nouvelle implémentation qui fonctionne différemment.
+* **Absente**: Cette fonctionnalité n’est pas présente dans l’IU tactile. L’IU classique doit être utilisée pour effectuer cette action.
+* **Remplacé**: La fonctionnalité a été remplacée par une nouvelle mise en oeuvre qui fonctionne différemment.
 * **Supprimée :** la fonctionnalité n’existe plus dans l’IU optimisée pour les écrans tactiles et elle ne sera pas remplacée.
 
 ## Statut des fonctionnalités : administration de sites {#feature-status-sites-admin}
@@ -71,7 +75,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’Administration de
    <td> </td> 
   </tr>
   <tr>
-   <td>Créer une page</td> 
+   <td>Création d’une page.</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
@@ -106,22 +110,22 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’Administration de
    <td> </td> 
   </tr>
   <tr>
-   <td>Copier/coller une page (duplication)</td> 
+   <td>Copier/coller la page (Dupliquer)</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Déplacer une page</td> 
+   <td>Déplacer la ou les pages</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Publier une page</td> 
+   <td>Publier la ou les pages</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Publier une page sans droits de réplication</td> 
+   <td>Publier une ou plusieurs pages sans droits de réplication</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
@@ -131,22 +135,22 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’Administration de
    <td> </td> 
   </tr>
   <tr>
-   <td>Publier l’arborescence</td> 
+   <td>Arborescence de publication</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Annuler la publication de page(s)</td> 
+   <td>Annulation de la publication des pages</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Annuler la publication de page(s) sans droits de réplication</td> 
+   <td>Annuler la publication de pages sans droits de réplication</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Annuler la publication ultérieurement</td> 
+   <td>Dépublier ultérieurement</td> 
    <td>Complète<br /> </td> 
    <td> </td> 
   </tr>
@@ -156,7 +160,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’Administration de
    <td> </td> 
   </tr>
   <tr>
-   <td>Verrouiller/déverrouiller</td> 
+   <td>Verrouillage/déverrouillage</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
@@ -166,7 +170,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’Administration de
    <td> </td> 
   </tr>
   <tr>
-   <td>Définir les autorisations sur les pages</td> 
+   <td>Définition des autorisations sur la ou les pages</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
@@ -181,7 +185,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’Administration de
    <td> </td> 
   </tr>
   <tr>
-   <td>Restaurer l’arborescence et les pages supprimées</td> 
+   <td>Restaurer l’arborescence et restaurer les pages supprimées</td> 
    <td>Absente</td> 
    <td>Utiliser l’IU classique.</td> 
   </tr>
@@ -191,12 +195,12 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’Administration de
    <td> </td> 
   </tr>
   <tr>
-   <td>Actions Live Copy (déploiement)</td> 
+   <td>Actions de Live Copy (déploiement)</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Afficher les copies de langue</td> 
+   <td>Voir Copies de langue</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
@@ -206,9 +210,9 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’Administration de
    <td>Utiliser l’IU classique.</td> 
   </tr>
   <tr>
-   <td>Boîte de réception des notifications (événements JCR)</td> 
+   <td>Boîte de réception de notifications (événements JCR)</td> 
    <td>Absente</td> 
-   <td>Utiliser l’IU classique. Sera remplacée par une autre implémentation.</td> 
+   <td>Utiliser l’IU classique. Sera remplacé par une mise en oeuvre différente.</td> 
   </tr>
   <tr>
    <td>Références</td> 
@@ -280,12 +284,12 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’éditeur de page 
    <td> </td> 
   </tr>
   <tr>
-   <td>Mode : Modifier la conception</td> 
+   <td>Mode : Modifier la conception</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Mode : Scaffolding</td> 
+   <td>Mode : Génération de modèles automatique</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
@@ -295,7 +299,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’éditeur de page 
    <td> </td> 
   </tr>
   <tr>
-   <td>Ajouter des annotations</td> 
+   <td>Ajout d’annotations</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
@@ -305,17 +309,17 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’éditeur de page 
    <td> </td> 
   </tr>
   <tr>
-   <td>Déployer la page</td> 
+   <td>Page de déploiement</td> 
    <td>Terminé<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Démarrer et afficher les processus</td> 
+   <td>Démarrer et afficher le workflow</td> 
    <td>Terminé</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Présentation des packages de processus</td> 
+   <td>Gestion des packages de workflow</td> 
    <td>Principalement</td> 
    <td>Complètement accessible dans l’interface utilisateur tactile. Plusieurs payload de workflow sont toujours présentés dans l’IU classique.<br /> </td> 
   </tr>
@@ -330,7 +334,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’éditeur de page 
    <td> </td> 
   </tr>
   <tr>
-   <td>Annuler la publication de la page</td> 
+   <td>Dépublication de la page</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
@@ -370,7 +374,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’éditeur de page 
    <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">restaurer des versions</a>.</td> 
   </tr>
   <tr>
-   <td>Passer d’un lancement à un autre</td> 
+   <td>Changement de lancement</td> 
    <td>Supprimé</td> 
    <td>Utilisez l’Administration de sites pour <a href="/help/sites-authoring/launches-promoting.md">basculer entre les lancements</a>.<br /> </td> 
   </tr>
@@ -385,14 +389,14 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’éditeur de page 
    <td> </td> 
   </tr>
   <tr>
-   <td>Définir les autorisations</td> 
+   <td>Définition des autorisations</td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>IU contextuelle du client <br /> </td> 
    <td>Remplacé</td> 
-   <td>Utilisez dorénavant l’IU <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a>.</td> 
+   <td>Utilisez la variable <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a> Dorénavant, l’interface utilisateur est disponible.</td> 
   </tr>
   <tr>
    <td>Outil de recherche de contenu pour les différents types de médias<br /> </td> 
@@ -405,12 +409,12 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’éditeur de page 
    <td> </td> 
   </tr>
   <tr>
-   <td>Copier et coller des composants <br /> </td> 
+   <td>Copier et coller des composants<br /> </td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Liste des composants du presse-papiers</td> 
+   <td>Liste des composants dans le presse-papiers</td> 
    <td>Absente</td> 
    <td> </td> 
   </tr>
@@ -420,12 +424,12 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’éditeur de page 
    <td> </td> 
   </tr>
   <tr>
-   <td>Glisser du contenu dans un espace réservé aux composants</td> 
+   <td>Faire glisser et déposer du contenu dans l’espace réservé du composant</td> 
    <td>Terminé</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Avec la création automatique de composants, faites glisser le contenu directement dans l’espace réservé parsys<br /> </td> 
+   <td>Faites glisser et déposez directement le contenu dans l’espace réservé parsys avec la création automatique de composant.<br /> </td> 
    <td>Complète</td> 
    <td> </td> 
   </tr>
@@ -593,7 +597,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités des éditeurs de texte, 
 
 ## Statut des fonctionnalités : outils {#feature-status-tools}
 
-La liste ci-dessous répertorie divers outils proposés dans l’IU classique et indique leur état dans l’IU optimisée pour les écrans tactiles.
+Il s’agit d’une liste des différents outils de l’IU classique et de leur état dans l’IU tactile.
 
 <table> 
  <tbody>

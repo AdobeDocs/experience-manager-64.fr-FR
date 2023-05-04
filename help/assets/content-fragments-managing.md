@@ -12,14 +12,18 @@ discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 98%
+source-wordcount: '1528'
+ht-degree: 55%
 
 ---
 
 # Gérer des fragments de contenu {#managing-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!CAUTION]
 >
@@ -29,7 +33,7 @@ Les fragments de contenu sont stockés en tant que **[!UICONTROL Ressources]**, 
 
 >[!NOTE]
 >
->Les fragments de contenu sont ensuite utilisés avec les pages de création ; voir [Création de page avec des fragments de contenu](/help/sites-authoring/content-fragments.md).
+>Les fragments de contenu sont ensuite utilisés avec les pages de création ; see [Création de pages avec des fragments de contenu](/help/sites-authoring/content-fragments.md).
 
 ## Créer des fragments de contenu {#creating-content-fragments}
 
@@ -39,21 +43,21 @@ Les [modèles de fragments de contenu](content-fragments-models.md) peuvent êtr
 
 >[!NOTE]
 >
->Voir [Développement de fragments de contenu](/help/sites-developing/customizing-content-fragments.md) pour plus d’informations sur les modèles ; utilisés pour les fragments de contenu simples.
+>Voir [Développement de fragments de contenu](/help/sites-developing/customizing-content-fragments.md) pour plus d&#39;informations sur les modèles ; utilisé pour les fragments de contenu simples.
 
 ### Création d’un fragment de contenu {#creating-a-content-fragment}
 
-La méthode de création de fragments de contenu est (fondamentalement) la même pour les fragments simples et structurés :
+La méthode de création d’un fragment de contenu est (fondamentalement) la même pour les fragments simples et structurés :
 
 1. Accédez au dossier **[!UICONTROL Ressources]** dans lequel vous souhaitez créer le fragment.
 1. Pour ouvrir l’assistant, sélectionnez **[!UICONTROL Créer]**, puis **[!UICONTROL Fragment de contenu]**.
 1. La première étape de l’assistant nécessite de spécifier la base du nouveau fragment.
 
-   * Cela peut être :
+   * Il peut s’agir d’un :
 
       * [](/help/sites-developing/content-fragment-templates.md)un modèle, par exemple, un **[!UICONTROL Fragment simple]** ;
-      * un [modèle](content-fragments-models.md) utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle d’**aéroport**.
-   * Tous les modèles disponibles sont affichés.
+      * [Modèle](content-fragments-models.md) - utilisé pour créer un fragment qui nécessite du contenu structuré ; par exemple, la fonction **Aéroport** model
+   * Tous les modèles et modèles disponibles s’affichent.
 
    Après la sélection, cliquez ou appuyez sur **[!UICONTROL Suivant]** pour continuer.
 
@@ -84,10 +88,10 @@ La méthode de création de fragments de contenu est (fondamentalement) la même
 
 ## Actions pour un fragment de contenu {#actions-for-a-content-fragment}
 
-Dans la console **[!UICONTROL Ressources]**, différentes actions sont disponibles pour vos fragments de contenu, soit :
+Dans le **[!UICONTROL Ressources]** pour vos fragments de contenu, vous pouvez exécuter diverses actions dans la console :
 
-* dans la barre d’outils : une fois le fragment sélectionné, toutes les actions appropriées sont disponibles ;
-* sous forme d’[actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) : un sous-ensemble d’actions disponibles pour les différentes cartes de fragments.
+* Dans la barre d’outils ; après la sélection de votre fragment, toutes les actions appropriées sont disponibles.
+* As [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions); un sous-ensemble d’actions disponibles pour les cartes de fragments individuelles.
 
 ![cfm-6420-17](assets/cfm-6420-17.png)
 
@@ -111,9 +115,9 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 * **[!UICONTROL À la collection]**
 
    * Ajoutez le fragment à une collection.
-   * Ceci peut également être réalisé [en associant une collection au fragment](content-fragments-assoc-content.md#adding-associated-content).
+   * Cela peut également être effectué lorsque [association d’une collection au fragment](content-fragments-assoc-content.md#adding-associated-content).
 
-* **[!UICONTROL Copier/Coller]**
+* **[!UICONTROL Copier/coller]**
 * **[!UICONTROL Déplacer]**
 * **[!UICONTROL Publication rapide]**
 * **[!UICONTROL Gérer la publication]**
@@ -131,10 +135,10 @@ Pour ouvrir votre fragment à des fins de modification :
 >
 >Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administrateur système.
 
-1. Utilisez la console **[!UICONTROL Assets]** afin de naviguer jusqu’à l’emplacement de votre fragment de contenu.
-1. Ouvrez le fragment en mode édition, en effectuant l’une des opérations suivantes :
+1. Utilisez la variable **[!UICONTROL Ressources]** pour accéder à l’emplacement de votre fragment de contenu.
+1. Ouvrez le fragment à modifier, en effectuant l’une des opérations suivantes :
 
-   * Cliquez/appuyez sur le fragment ou le lien de fragment (selon l’affichage console).
+   * Cliquez/appuyez sur le fragment ou le lien du fragment (cela dépend de l’affichage de la console).
    * Sélectionnez le fragment, puis cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
 
    L’éditeur de fragment s’ouvre alors :
@@ -148,7 +152,7 @@ Pour ouvrir votre fragment à des fins de modification :
    >2. Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **[!UICONTROL Activer/désactiver le panneau latéral]**.
 
 
-1. Naviguez parmi les trois modes à l’aide des icônes du panneau latéral :
+1. Parcourez les trois modes à l’aide des icônes du panneau latéral :
 
    * Variations : [Modification du contenu](#editing-the-content-of-your-fragment) et [Gestion des variations](#creating-and-managing-variations-within-your-fragment)
    * [Annotations](content-fragments-variations.md#annotating-a-content-fragment)
@@ -157,7 +161,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
    ![cfm-10](assets/cfm-10.png)
 
-1. Après avoir effectué les modifications, utilisez **[!UICONTROL Enregistrer]** ou **[!UICONTROL Annuler]** selon le cas.
+1. Après avoir apporté des modifications, utilisez **[!UICONTROL Enregistrer]** ou **[!UICONTROL Annuler]** selon les besoins.
 
    >[!NOTE]
    >
@@ -169,11 +173,11 @@ Pour ouvrir votre fragment à des fins de modification :
 >
 >Les versions peuvent également être [créées, comparées et rétablies à partir de la chronologie](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments).
 
-L’éditeur possède deux options :
+L’éditeur dispose de deux options :
 
 * **[!UICONTROL Enregistrer]**
 
-   Enregistre les dernières modifications et quitte l’éditeur.
+   Enregistrez les dernières modifications et quittez l’éditeur.
 
    >[!CAUTION]
    >
@@ -181,25 +185,25 @@ L’éditeur possède deux options :
 
    >[!NOTE]
    >
-   >Pour rester dans l’éditeur, il suffit d’apporter une série de modifications avant de sélectionner **[!UICONTROL Enregistrer]**.
+   >Il est possible de rester dans l’éditeur, en effectuant une série de modifications, avant de sélectionner **[!UICONTROL Enregistrer]**.
 
    >[!CAUTION]
    >
-   >En plus de simplement enregistrer vos modifications, l’option **[!UICONTROL Enregistrer]** met à jour les références éventuelles et s’assure que le Dispatcher est nettoyé si nécessaire. Le traitement de ces modifications peut prendre un certain temps. Cela peut donc avoir un impact sur les performances d’un système étendu/complexe/fortement chargé.
+   >En plus d’enregistrer simplement vos modifications, **[!UICONTROL Enregistrer]** met également à jour toutes les références et s’assure que Dispatcher est vidé selon les besoins. Le traitement de ces modifications peut prendre du temps. Cela peut avoir un impact sur les performances d’un système volumineux/complexe/lourdement chargé.
    >
    >
-   >Veuillez en tenir compte lorsque vous exécutez **[!UICONTROL Enregistrer]**, puis rouvrez aussitôt l’éditeur de fragments afin d’apporter d’autres modifications et de les enregistrer.
+   >Gardez ceci à l’esprit lorsque vous utilisez **[!UICONTROL Enregistrer]** puis saisissez à nouveau rapidement l’éditeur de fragments pour effectuer et enregistrer d’autres modifications.
 
 * **[!UICONTROL Annuler]**
 
-   Ferme l’éditeur sans enregistrer les dernières modifications.
+   Quitte l’éditeur sans enregistrer les dernières modifications.
 
-Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des versions pour que le contenu précédent puisse être restauré si vous **[!UICONTROL annulez]** les modifications :
+Lors de la modification de votre AEM de fragment de contenu, crée automatiquement des versions afin de vous assurer que le contenu précédent peut être restauré si vous **[!UICONTROL Annuler]** vos modifications :
 
 1. Lorsqu’un fragment de contenu est ouvert pour modification, AEM vérifie l’existence d’un jeton basé sur les cookies indiquant s’il existe une *session de modification* :
 
-   1. Si ce jeton est trouvé, le fragment est considéré comme faisant partie de la session de modification existante.
-   1. Si le jeton *n’est pas* disponible et que l’utilisateur commence à modifier le contenu, une version est créée et un jeton est envoyé au client pour cette nouvelle session de modification, où il est enregistré dans un cookie.
+   1. Si le jeton est trouvé, le fragment est considéré comme faisant partie de la session de modification existante.
+   1. Si le jeton est *not* disponible et que l’utilisateur commence à modifier le contenu, une version est créée et un jeton est envoyé au client pour cette nouvelle session de modification, où il est enregistré dans un cookie.
 
 1. Lors d’une session de modification *active*, le contenu en cours de modification est automatiquement enregistré toutes les 600 secondes (par défaut).
 
@@ -224,7 +228,7 @@ Une fois que vous avez créé le contenu maître, vous pouvez créer et gérer d
 
 ## Association de contenu au fragment {#associating-content-with-your-fragment}
 
-Vous pouvez également [associer du contenu](content-fragments-assoc-content.md) à un fragment. Cela fournit une liaison pour que les ressources (c’est-à-dire les images) puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
+Vous pouvez également [association de contenu](content-fragments-assoc-content.md) avec un fragment. Cela fournit une connexion de sorte que les ressources (c’est-à-dire les images) puissent être (éventuellement) utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
 
 ## Affichage et modification des métadonnées (propriétés) du fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -234,13 +238,13 @@ Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de
 
 Outre les options standard, la [Chronologie](managing-assets-touch-ui.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
 
-* Affichage des informations sur les versions, commentaires et annotations
+* Affichage d’informations sur les versions, les commentaires et les annotations
 * Actions pour les versions
 
    * **[[!UICONTROL Revenir à cette version]](#reverting-to-a-version)** (sélectionner un fragment existant, puis une version spécifique)
    * **[[!UICONTROL Comparer à actuel]](#comparing-fragment-versions)** (sélectionner un fragment existant, puis une version spécifique)
    * Ajouter une **[!UICONTROL étiquette]** et/ou un **[!UICONTROL commentaire]** (sélectionner un fragment existant, puis une version spécifique)
-   * **[!UICONTROL Enregistrer comme version]** (sélectionner un fragment existant, puis la flèche du haut au bas de la chronologie)
+   * **[!UICONTROL Enregistrer comme version]** (sélectionnez un fragment existant, puis la flèche vers le haut située au bas de la chronologie)
 
 * Actions pour les annotations
 
@@ -248,16 +252,16 @@ Outre les options standard, la [Chronologie](managing-assets-touch-ui.md#timelin
 
 >[!NOTE]
 >
->Les commentaires :
+>Les commentaires sont les suivants :
 >
->* Une fonctionnalité standard pour toutes les ressources
->* Réalisés dans la chronologie
->* Liés à la ressource de fragment
+>* Fonctionnalité standard de toutes les ressources
+>* Créé dans la chronologie
+>* Lié à la ressource de fragment
 >
->Les annotations (pour les fragments de contenu) sont :
+>Les annotations (pour les fragments de contenu) sont les suivantes :
 >
->* Entrées dans l’éditeur de fragments
->* Spécifiques à un segment de texte sélectionné au sein du fragment
+>* Entré dans l’éditeur de fragments
+>* Spécifique à un segment de texte sélectionné dans le fragment
 
 
 Par exemple :
@@ -266,15 +270,15 @@ Par exemple :
 
 ## Comparaison des versions de fragments {#comparing-fragment-versions}
 
-L’action de **[!UICONTROL comparer à la version actuelle]** est disponible dans la [[!UICONTROL chronologie] après avoir sélectionné une version spécifique.](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)
+Le **[!UICONTROL Comparer à actuel]** est disponible à partir de la fonction [[!UICONTROL Chronologie]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) après avoir sélectionné une version spécifique.
 
-Cette opération va ouvrir :
+Cette action s’ouvre :
 
 * la version **[!UICONTROL actuelle]** (la plus récente) (à gauche) ;
 
 * la version sélectionnée **v&lt;*x.y*>** (à droite).
 
-Elles seront affichées côte à côte, où :
+Elles sont affichées côte à côte, où :
 
 * les différences sont mises en surbrillance ;
 
@@ -282,21 +286,21 @@ Elles seront affichées côte à côte, où :
    * le texte inséré est en vert ;
    * le texte remplacé est en bleu.
 
-* L’icône en plein écran permet d’ouvrir l’une ou l’autre version seule, puis de revenir en mode parallèle.
+* L’icône Plein écran vous permet d’ouvrir l’une des versions seule ; puis revenir à la vue parallèle
 * Vous pouvez **[!UICONTROL rétablir]** la version spécifique
-* **[!UICONTROL Terminé]** vous ramène à la console
+* **[!UICONTROL Terminé]** vous renvoie à la console.
 
 >[!NOTE]
 >
->Vous ne pouvez pas modifier le contenu du fragment lors de la comparaison des fragments.
+>Vous ne pouvez pas modifier le contenu du fragment lors de la comparaison de fragments.
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
 ## Restauration vers une version spécifique   {#reverting-to-a-version}
 
-Vous pouvez restaurer vers une version spécifique de votre fragment :
+Vous pouvez restaurer à une version spécifique de votre fragment :
 
-* Directement à partir de la [[!UICONTROL chronologie]](content-fragments-managing.md#timeline-for-content-fragments).
+* Directement à partir de la [[!UICONTROL Chronologie]](content-fragments-managing.md#timeline-for-content-fragments).
 
    Sélectionnez la version requise, puis l’action **[!UICONTROL Revenir à cette version]**.
 
@@ -306,13 +310,13 @@ Vous pouvez restaurer vers une version spécifique de votre fragment :
 
 >[!CAUTION]
 >
->Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](content-fragments-models.md#publishing-a-content-fragment-model).
+>Si votre fragment est basé sur un modèle, vous devez vous assurer que la variable [Le modèle a été publié](content-fragments-models.md#publishing-a-content-fragment-model).
 >
 >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
 
 Les fragments de contenu doivent être publiés pour être utilisés dans l’environnement de publication. Ils peuvent être publiés :
 
-* Une fois créés, depuis la console **[!UICONTROL Ressources]**.
+* Après la création de la **[!UICONTROL Ressources]** console.
 * Lorsque vous [publiez une page qui utilise le fragment](/help/sites-authoring/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
 
 >[!CAUTION]
@@ -321,14 +325,14 @@ Les fragments de contenu doivent être publiés pour être utilisés dans l’en
 
 ## Suppression d’un fragment {#deleting-a-fragment}
 
-Pour supprimer un fragment :
+Pour supprimer un fragment :
 
-1. Dans la console **[!UICONTROL Ressources]**, naviguez jusqu’à l’emplacement de votre fragment de contenu.
+1. Dans le **[!UICONTROL Ressources]** accédez à l’emplacement du fragment de contenu dans la console.
 1. Sélectionnez le fragment.
 
    >[!NOTE]
    >
-   >L’action **[!UICONTROL Supprimer]** n’est pas proposée comme action rapide.
+   >Le **[!UICONTROL Supprimer]** n’est pas disponible en tant qu’action rapide.
 
 1. Sélectionnez **[!UICONTROL Supprimer]** dans la barre d’outils.
 1. Confirmez l’action **[!UICONTROL Supprimer]**.

@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 exl-id: 357a130a-af60-4e86-9161-5dc7056aa052
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '454'
 ht-degree: 2%
 
 ---
 
 # Notions fondamentales sur les groupes de communautés {#community-group-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 La fonctionnalité de groupes de communautés permet à une sous-communauté d’être créée dynamiquement dans un site de communauté par des utilisateurs autorisés à partir des environnements de publication et de création.
 

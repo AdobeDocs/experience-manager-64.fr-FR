@@ -10,14 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 exl-id: b5918a54-ef7b-4b3f-bca7-ed0344bab4aa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 7%
+source-wordcount: '262'
+ht-degree: 8%
 
 ---
 
 # Utilisation de l’option J’aime {#using-liking}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le `Liking`component est un outil utile qui permet aux utilisateurs d’exprimer une opinion sur un élément de contenu particulier, comme un commentaire dans un forum. Avec le `Liking`, les membres sélectionnent l’icône coeur pour indiquer une opinion positive.
 
@@ -57,7 +61,7 @@ Sous , **[!UICONTROL Textes et libellés]** , spécifiez les propriétés utilis
 (
 *Obligatoire*) Nom de propriété interne identifiable de cette instance d’un composant Vote.
 
-## Expérience des visiteurs {#site-visitor-experience}
+## Expérience du visiteur du site {#site-visitor-experience}
 
 ### Membres {#members}
 

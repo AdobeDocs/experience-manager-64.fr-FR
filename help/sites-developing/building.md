@@ -1,5 +1,5 @@
 ---
-title: Création du balisage dans une application AEM
+title: Créer le balisage dans une application AEM
 seo-title: Building Tagging into an AEM Application
 description: Utilisation ou extension de balises par programmation dans une application AEM personnalisée
 seo-description: Programmatically work with tags or extending tags within a custom AEM application
@@ -11,16 +11,20 @@ content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: b3b0f505-3d7d-493d-a37b-abc8a365f95b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '911'
+ht-degree: 91%
 
 ---
 
-# Création du balisage dans une application AEM{#building-tagging-into-an-aem-application}
+# Créer le balisage dans une application AEM{#building-tagging-into-an-aem-application}
 
-Dans un contexte de programmation par balises ou d’extension de balises dans une application AEM personnalisée, cette page décrit l’utilisation de
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Dans le but d’utiliser par programmation des balises ou d’étendre des balises dans une application d’AEM personnalisée, cette page décrit l’utilisation de la fonction
 
 * [l’API de balisage ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -35,7 +39,7 @@ Pour plus d’informations sur le balisage, consultez :
 
 ## Vue d’ensemble de l’API de balisage {#overview-of-the-tagging-api}
 
-L’implémentation du [cadre de balisage](/help/sites-developing/framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. TagManager garantit que les balises saisies en tant que valeurs dans la propriété de tableau de chaîne de caractères `cq:tags` ne sont pas dupliquées, supprime les TagID pointant vers des balises non existantes et met à jour les TagID pour les balises déplacées ou fusionnées. TagManager utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le module [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
+L’implémentation du [cadre de balisage](/help/sites-developing/framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. TagManager garantit que les balises saisies en tant que valeurs dans la propriété de tableau de chaîne de caractères `cq:tags` ne sont pas dupliquées, supprime les TagID pointant vers des balises non existantes et met à jour les TagID pour les balises déplacées ou fusionnées. TagManager utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le package [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
 
 * JcrTagManagerFactory - Renvoie une implémentation JCR d’un `TagManager`. C’est l’implémentation de référence de l’API de balisage.
 * `TagManager` – permet de résoudre et de créer des balises par chemins et noms.
@@ -188,7 +192,7 @@ Pour le balisage, la localisation dépend du contexte, car la balise `titles` pe
 
 ### Ajout d’une langue à la boîte de dialogue Modifier la balise {#adding-a-new-language-to-the-edit-tag-dialog}
 
-La procédure suivante décrit comment ajouter une langue (finnois) à la boîte de dialogue **Modifier la balise** :
+La procédure suivante décrit l’ajout d’une nouvelle langue (finnois) au **Modification de balise** dialog :
 
 1. Dans **CRXDE**, modifiez la propriété multi-valeur `languages` du nœud `/content/cq:tags`.
 

@@ -8,15 +8,19 @@ uuid: 60808852-f63f-4c0a-badb-b0af93c995a8
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 342f111e-f15a-4f9a-8993-f90760363c02
-source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 28%
+source-wordcount: '521'
+ht-degree: 17%
 
 ---
 
 
 # NE PAS PUBLIER L’interface utilisateur en fonction du rôle dans Correspondence Management {#do-not-publish-role-based-user-interface-in-correspondence-management}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Dans AEM, l’administrateur peut fournir un accès en fonction du rôle à différents groupes d’utilisateurs pour effectuer diverses actions sur différentes ressources. Par exemple, la fonctionnalité de création ou de modification des dictionnaires de données peut être disponible uniquement pour les utilisateurs d’un groupe d’utilisateurs spécifique, tandis que d’autres utilisateurs peuvent uniquement afficher et utiliser les dictionnaires de données.
 
@@ -38,14 +42,14 @@ Pour plus d’informations sur les groupes, les autorisations, les listes de con
 
    Par exemple, si une entreprise possède des divisions de prêt immobilier, de carte de crédit et d’assurance, elle peut créer des dossiers nommés `HomeMortgage`, `CreditCard,`et `Insurance` conserver les ressources appropriées et donner accès sélectivement aux agents pour les ressources pertinentes uniquement pour leur service.
 
-1. Pour accéder à la sécurité AEM WCM, effectuez l’une des opérations suivantes :
+1. Pour accéder à AEM sécurité WCM, effectuez l’une des opérations suivantes :
 
    1. Dans l’écran d’accueil ou à différents emplacements d’AEM, cliquez sur l’icône de sécurité :
 
    1. Accédez directement à `https://[server]:[port]/useradmin`. Assurez-vous de vous connecter à AEM avec des droits d’administration.
 
       ![]()
-   L’arborescence de gauche répertorie tous les utilisateurs et groupes actuellement dans le système. Vous pouvez sélectionner les colonnes que vous souhaitez afficher, trier le contenu des colonnes et même modifier l’ordre dans lequel les colonnes sont affichées en faisant glisser l’en-tête de colonne vers la nouvelle position souhaitée.
+   L’arborescence de gauche répertorie tous les utilisateurs et groupes actuellement dans le système. Vous pouvez sélectionner les colonnes à afficher, trier le contenu des colonnes et même modifier l’ordre d’affichage des colonnes en faisant glisser l’en-tête de colonne vers une nouvelle position.
 
    Les onglets permettent d’accéder à diverses configurations :
 
@@ -55,7 +59,7 @@ Pour plus d’informations sur les groupes, les autorisations, les listes de con
 
 1. Dans l’onglet Autorisations, accédez au chemin auquel vous souhaitez ajouter des autorisations. Les dossiers de Correspondence Management se trouvent sous le `content/apps/cm/` dossier.
 
-   Dans la colonne Membre, cochez la case correspondant aux membres qui doivent disposer d’autorisations au niveau de ce chemin d’accès. Décochez la case correspondant aux membres dont vous souhaitez supprimer les autorisations. Un triangle rouge apparaît dans la cellule à laquelle vous avez apporté des modifications.
+   Dans la colonne Membre, cochez la case correspondant aux membres qui doivent disposer d’autorisations au niveau de ce chemin d’accès. Décochez la case correspondant aux membres dont vous souhaitez supprimer les autorisations. Un triangle rouge apparaît dans la cellule sur laquelle vous avez apporté des modifications.
 
    ![useradmin-creditcard](assets/useradmin-creditcard.png)
 

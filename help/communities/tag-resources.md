@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 role: Admin
 exl-id: 89ca201e-23ad-4038-8f3e-7c9cd04f52e2
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '655'
 ht-degree: 2%
 
 ---
 
-# Balisage des ressources d’activation  {#tagging-enablement-resources}
+# Balisage des ressources d’activation {#tagging-enablement-resources}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#overview}
 

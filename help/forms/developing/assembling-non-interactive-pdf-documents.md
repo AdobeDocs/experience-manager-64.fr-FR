@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 role: Developer
 exl-id: d4e40d68-781d-4fc8-8557-bf36462ca1d9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1775'
-ht-degree: 100%
+source-wordcount: '1811'
+ht-degree: 98%
 
 ---
 
 # Assembler des documents PDF non interactifs {#assembling-non-interactive-pdf-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Vous pouvez assembler un document PDF non interactif lorsque vous utilisez un formulaire PDF interactif en tant quʼentrée. Prenons lʼexemple suivant : vous disposez dʼun formulaire que les utilisateurs peuvent utiliser pour saisir des données dans ses champs. Vous pouvez transmettre ce formulaire au service Assembler. Ce dernier renvoie alors un document PDF qui empêche les utilisateurs de saisir des données dans ses champs. Ce document est un formulaire PDF non interactif. L’illustration suivante est un exemple de prêt immobilier, sous la forme dʼun formulaire interactif.
 

@@ -10,26 +10,30 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 48%
+source-wordcount: '1109'
+ht-degree: 10%
 
 ---
 
 # Problèmes connus {#known-issues}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Cette page contient la liste des problèmes connus d’Adobe Experience Manager 6.4, publiée en avril 2018. Pour plus d’informations sur les problèmes connus, [support technique](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr).
 
-## Appareils hybrides {#hybrid-devices}
+## Périphériques hybrides {#hybrid-devices}
 
-Les appareils hybrides ne sont pas pris en charge. Plusieurs problèmes peuvent être rencontrés lors de l’utilisation de tels appareils. Les procédures suggérées suivantes permettent de résoudre de nombreux problèmes :
+Les périphériques hybrides ne sont pas pris en charge. Plusieurs problèmes peuvent être rencontrés lors de l’utilisation de tels appareils. Les procédures suggérées suivantes permettent de résoudre de nombreux problèmes :
 
 Si vous utilisez Google Chrome comme navigateur :
 
 * Type `chrome://flags/` dans la barre d’adresse et appuyez sur Entrée.
-* Cliquez sur Activer les événements tactiles > Désactivé.
-* Redémarrez le navigateur (l’ensemble des onglets et des fenêtres).
+* Cliquez sur Activer les événements tactiles > Désactivé.
+* Redémarrez le navigateur (tous les onglets et fenêtres).
 
 Si vous utilisez Mozilla Firefox comme navigateur :
 
@@ -48,7 +52,7 @@ Si vous utilisez Microsoft Edge comme navigateur :
 
 ## Plateforme {#platform}
 
-* **Tableau de bord des opérations :** la barre de progression n’apparaît pas lorsque l’extension .zip est manquante dans le fichier de sauvegarde. (GRANITE-10713)
+* **Tableau de bord des opérations :** La barre de progression n’est pas affichée lorsque l’extension .zip est manquante dans le fichier de sauvegarde. (GRANITE-10713)
 * **HTL :** L’objet Use Java avec un espace de fin dans la déclaration du package gèle le SightlyJavaCompilerService (GRANITE-20836).
 * **Apache Felix/Sling :** Fichier de configuration toujours présent dans le référentiel, même après configuration.delete() (GRANITE-20618)
 * **Paramètres du cloud :** La console est rompue après la modification du conteneur de configuration (GRANITE-20726)
@@ -62,13 +66,13 @@ Si vous utilisez Microsoft Edge comme navigateur :
 * **Outils - CRX DE Lite :** La propriété de noeud ne s’affiche pas après avoir renommé le noeud (GRANITE-7160).
 * **Interface utilisateur :** Menu déroulant &quot;plus...&quot; n’affiche pas tous les éléments lorsqu’ils sont ouverts sur un élément contextuel dans IE et Firefox (GRANITE-16326).
 * **Interface utilisateur :** L’info-bulle est masquée lors de l’utilisation d’une disposition à colonnes fixes avec 2 colonnes côte à côte (GRANITE-16869).
-* **Interface utilisateur** : erreur non gérée lorsque vous empruntez l’identité d’un utilisateur qui n’existe pas (GRANIT -23228). Solution[ : mise en œuvre d’un gestionnaire d’erreur](/help/sites-developing/customizing-errorhandler-pages.md) pour personnaliser le message d’erreur.
+* **Interface utilisateur :** Erreur non gérée lors de l’emprunt de l’identité d’un utilisateur qui n’existe pas (GRANITE-23228). Solution de contournement par [implémentation d’un gestionnaire d’erreurs](/help/sites-developing/customizing-errorhandler-pages.md) pour personnaliser le message d’erreur.
 
 * **Omnisearch :** Les recherches avec barre oblique inverse provoquent une exception (GRANITE-11769)
 * **Omnisearch :** L’ouverture de &quot;Paramètres d’affichage&quot; en mode Liste entraîne la modification du filtre de recherche (GRANITE-16524).
 * **Omnisearch :** Liste incorrecte des configurations de colonne affichée lors de la recherche de ressources à partir de Sites (GRANITE-16527)
 
-* **Omnisearch :** les prédicats de rail gauche s’entendent avec la demande de serveur Omnisearch (GRANITE-20524).
+* **Omnisearch :** Les prédicats du rail de gauche s’entendent avec la requête du serveur Omni-recherche (GRANITE-20524)
 * **Omnisearch :** Omnisearch ne prend pas en charge les chemins de contexte (GRANITE-16044).
 
 ## Ressources {#assets}
@@ -89,11 +93,11 @@ Si vous utilisez Microsoft Edge comme navigateur :
 
 * **Brand Portal**: La publication sur Brand Portal ne fonctionne pas pour les collections (CQ-4238731)
 
-* **Téléchargement** : lors du téléchargement de ressources dont le nom de fichier contient des caractères spéciaux, le message d’erreur de validation relatif aux caractères non autorisés ne s’affiche pas pour chacune des ressources. Bien que ce message s’affiche uniquement pour la première ressource, l’interface indique clairement à l’utilisateur que le nom de fichier de la ressource fournie n’est pas autorisé. (CQ-4256876)
+* **Télécharger**: Lors du chargement de ressources dont le nom de fichier contient des caractères spéciaux, le message d’erreur de validation relatif aux caractères non autorisés ne s’affiche pas pour chaque ressource. Bien qu’elle s’affiche uniquement pour la première ressource, l’interface indique clairement à l’utilisateur que le nom de fichier de la ressource fournie n’est pas autorisé. (CQ-4256876)
 
 ## Communities {#communities}
 
-* **Modération :** impossible de supprimer une publication parente en une seule opération de suppression à partir de l’interface utilisateur de modération en masse (CQ-4236797).
+* **Modération** - Impossible de supprimer la publication parente en tant qu’opération de suppression unique dans l’interface utilisateur de modération en bloc (CQ-4236797)
 
 * **Console** - Le lien Nom d’utilisateur ou Mot de passe oublié redirige vers la page de connexion au lieu du formulaire de récupération de mot de passe correspondant (CQ-4237682).
 
@@ -101,30 +105,30 @@ Si vous utilisez Microsoft Edge comme navigateur :
 
 ### Installation et déploiement
 
-* (AEM Forms JEE uniquement) En cas d’amorçage d’un serveur d’applications JBoss en cours d’exécution, le gestionnaire de configuration renvoie un appel EJB et des erreurs d’échec de l’amorçage. Vous pouvez toutefois les ignorer. (Réf. CQ-4229793)
+* (AEM Forms JEE uniquement) Lorsque vous démarrez le serveur d’applications JBoss lors de l’exécution de Configuration Manager, les erreurs d’appel EJB et d’échec d’amorçage sont renvoyées. Vous pouvez toutefois les ignorer. (Réf. CQ-4229793)
 * Au démarrage d’AEM Forms, l’avertissement `SAX Security Manager could not be setup` s’affiche. (CQ-4297403)
 
 ### Communications interactives
 
-* L’interface utilisateur de l’agent prend un certain temps à charger les communications interactives qui incluent des éléments d’images ou de graphiques. (CQ-4236630)
+* L’interface utilisateur de l’agent prend un certain temps pour charger les communications interactives qui incluent des éléments de graphique ou d’image. (CQ-4236630)
 * Le format d’affichage des données dans l’aperçu avant impression est jj-mm-aaaa alors que dans l’aperçu web est `dd-mmm-yy` (CQ-4237045)
-* Le canal web de communication interactive (Interactive Communication Web) prend uniquement en charge les listes ordonnées et désordonnées. Dans des fragments de document de liste, la mise en retrait et le listage composites ne sont pas pris en charge pour le canal web de la communication interactive. (CQ-4233672)
-* Les problèmes suivants sont observés lors de la synchronisation du canal web avec le canal d’impression :
+* Le canal web de communication interactive ne prend en charge que les listes triées et non triées. Dans les fragments de document de liste, la mise en retrait et la mise en retrait composites ne sont pas prises en charge pour le canal web de la communication interactive. (CQ-4233672)
+* Les problèmes suivants sont observés lorsque le canal web se synchronise avec le canal d’impression :
 
-   * Le canal web prend un certain temps à se synchroniser lors du changement initial à partir du canal d’impression.
-   * Le canal web ne se synchronise pas si le canal d’impression comprend un composant de graphique non configuré. Pour résoudre le problème, supprimez le composant de graphique et synchronisez à nouveau.
-   * La synchronisation échoue parfois avec l’erreur &quot;Une erreur s’est produite lors de la synchronisation de la Live Copy&quot;. Actualisez la page pour résoudre l’erreur.
-   * Le texte statique d’un fragment de disposition est remplacé par le nom d’une cellule de tableau lorsque la première colonne du tableau est une colonne d’en-tête dans le modèle de canal d’impression.
-   * Impossible d’ajouter des composants ou des actifs dans tout autre emplacement que la partie inférieure d’une communication de canal web. Pour les placer à un autre emplacement, ajoutez un panneau dans la partie inférieure du canal web et réorganisez l’arborescence de contenu.
-   * Impossible de déplacer du contenu dans une zone cible héritée du canal web sans supprimer l’héritage de Live Copy.
+   * La synchronisation du canal web prend un certain temps lors du premier basculement du canal d’impression.
+   * Le canal web ne se synchronise pas si le canal d’impression comprend un composant graphique non configuré. Pour résoudre ce problème, supprimez le composant de graphique et resynchronisez-le.
+   * La synchronisation échoue parfois avec l’erreur &quot;Une erreur s’est produite lors de la synchronisation de la Live Copy&quot;. Pour résoudre ce problème, actualisez la page.
+   * Le texte statique d’un fragment de mise en page est remplacé par le nom de la cellule du tableau lorsque la première colonne du tableau est une colonne d’en-tête dans le modèle de canal d’impression.
+   * Impossible d’ajouter des composants ou des ressources à un autre emplacement qu’au bas d’une communication de canal web. Pour le placer à un autre emplacement, ajoutez un panneau au bas du canal web et réorganisez-le à l’aide de l’arborescence de contenu.
+   * Peut déplacer du contenu dans la zone cible héritée du canal web sans supprimer l’héritage de la Live Copy.
 
 (CQ-4239780)
 
 ### Intégration de données
 
-* Les configurations d’authentification des services web basés sur SOAP ne sont pas visibles et ne peuvent donc pas être configurées dans les services cloud. Pour résoudre le problème :
+* Les configurations d’authentification des services web SOAP ne sont pas visibles et ne peuvent donc pas être configurées dans les services cloud. Pour résoudre le problème :
 
-   1. Dans la console CRXDE Lite, accédez au nœud suivant.\
+   1. Dans la console CRXDE Lite, accédez au noeud suivant.\
       /libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices/\
       wsdlauthenticationsettings/items/fixedcolumns/items/container/items/wsdl/items/\
       selectAuthentication/items/custom.
@@ -137,9 +141,9 @@ Si vous utilisez Microsoft Edge comme navigateur :
 
 * Le planificateur Acrobat Sign cesse de fonctionner par intermittence. Par conséquent, les formulaires en attente de signature ne passent pas à l’envoi. Pour résoudre le problème, redémarrez l’événement **Prise en charge du planificateur Apache Sling** à partir de la console web d’AEM à l’adresse https://[*server*]:[*port*]/system/console/bundles.
 
-### Création de formulaires adaptatifs
+### Création de Forms adaptatif
 
-* Le composant Graphique des formulaires adaptatifs prend davantage d’espace qu’il en prend normalement.
+* Le composant de graphique des formulaires adaptatifs prend plus d’espace qu’il ne le fait normalement.
 * Une exception est renvoyée lors de l’enregistrement des propriétés des formulaires adaptatifs, des fragments de formulaire adaptatif ou des communications interactives dans l’interface utilisateur de Forms Manager.
 * Le nombre maximal de caractères spécifié pour un champ de texte de formulaire adaptatif n’est pas honoré sur les périphériques Samsung sous Android 6.0. (Réf. CQ-4235205)
 * Lorsque vous envoyez un formulaire contenant un champ de chargement HTML standard d’un appareil iOS d’Apple, le contenu du fichier n’est parfois pas envoyé et un fichier de 0 octet est reçu à l’autre bout. Apple iOS 15.1 apporte un correctif pour le problème.

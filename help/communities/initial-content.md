@@ -1,7 +1,7 @@
 ---
 title: Contenu d’environnement de test initial
 seo-title: Initial Sandbox Content
-description: Créer le contenu
+description: Créer du contenu
 seo-description: Create content
 uuid: 9810fe47-8d1a-4238-9b9c-0cc47c63d97a
 contentOwner: User
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 exl-id: 171fd95d-51f6-468b-84ed-4a757dba868e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '500'
 ht-degree: 7%
 
 ---
 
 # Contenu d’environnement de test initial {#initial-sandbox-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Dans cette section, vous créez les pages suivantes qui utilisent toutes le [modèle de page](initial-app.md#createthepagetemplate):
 

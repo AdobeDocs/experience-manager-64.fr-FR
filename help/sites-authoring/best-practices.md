@@ -1,7 +1,7 @@
 ---
 title: Bonnes pratiques
 seo-title: Best Practices
-description: Découvrez comment utiliser AEM de la manière la plus efficace possible.
+description: Utilisation d’AEM de la manière la plus efficace et la plus efficace possible
 seo-description: How to use AEM in the most efficient and most effective way possible
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
@@ -10,18 +10,22 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 exl-id: 84db73b0-1bc3-4c39-9bc2-0840e24832b0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 88%
+source-wordcount: '321'
+ht-degree: 39%
 
 ---
 
 # Bonnes pratiques{#best-practices}
 
-Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Une documentation sur les meilleures pratiques est disponible pour les aspects suivants :
+Les bonnes pratiques de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de sujets englobe un large éventail de domaines dans AEM.
+
+La documentation relative aux bonnes pratiques est disponible dans les domaines suivants :
 
 * [Assets](#assets)
 * [Sites](#sites)
@@ -33,11 +37,11 @@ Pour connaître les bonnes pratiques en matière d’administration, de déploie
 * [Bonnes pratiques de développement](/help/sites-developing/best-practices.md)
 * [Bonnes pratiques de déploiement](/help/sites-deploying/best-practices.md)
 
-Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
+Les documents spécifiques sont décrits et associés dans les tables qui suivent.
 
-## Ressources {#assets}
+## Assets {#assets}
 
-Les meilleures pratiques concernant les ressources, y compris les fonctionnalités Dynamic Media et l’intégration de Scene 7, sont décrites dans les rubriques suivantes :
+Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Dynamic Media et l’intégration de Scene 7, sont décrites dans les rubriques suivantes :
 
 <table> 
  <tbody>
@@ -49,10 +53,10 @@ Les meilleures pratiques concernant les ressources, y compris les fonctionnalit�
   <tr>
    <td>Codage vidéo</td> 
    <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Bonnes pratiques en matière de codage</a></td> 
-   <td>Décrit les meilleures pratiques concernant le codage de fichiers vidéo source.</td> 
+   <td>Décrit les conseils sur les bonnes pratiques concernant le codage des fichiers vidéo sources.</td> 
   </tr>
   <tr>
-   <td>Imagerie dynamique</td> 
+   <td>Dynamic Imaging</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Bonnes pratiques relatives à Dynamic Imaging</a></td> 
    <td><p>Décrit comment accentuer une image pour obtenir de meilleurs résultats et la meilleure manière d’optimiser la qualité de vos images si vous utilisez la fonctionnalité Dynamic Media ou effectuez une intégration avec Dynamic Media.</p> </td> 
   </tr>
@@ -66,7 +70,7 @@ Les meilleures pratiques concernant les ressources, y compris les fonctionnalit�
 
 ## Sites {#sites}
 
-Les meilleures pratiques en termes de création et de gestion du contenu de votre site web sont les suivantes :
+La gestion et la création du contenu de votre site web comportent les bonnes pratiques suivantes :
 
 |  |  |  |
 |---|---|---|
@@ -77,5 +81,5 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
 
 |  |  |  |
 |---|---|---|
-| Formulaires adaptatifs | [Bonnes pratiques pour travailler avec les formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md) | Décrit les meilleures pratiques pour configurer, créer et personnaliser les formulaires adaptatifs. |
-| Formulaires HTML5 | [Meilleures pratiques pour concevoir des formulaires HTML5](/help/forms/using/best-practices-for-html5-forms.md) | Décrit les meilleures pratiques pour travailler sur la mise en page et la conception des formulaires HTML5. |
+| Formulaires adaptatifs | [Bonnes pratiques pour travailler avec les formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md) | Décrit les meilleures pratiques de configuration, de création et de personnalisation des formulaires adaptatifs. |
+| Formulaires HTML5 | [Bonnes pratiques pour la conception de formulaires HTML5](/help/forms/using/best-practices-for-html5-forms.md) | Décrit les bonnes pratiques relatives à la mise en page et à la conception de formulaires HTML5. |

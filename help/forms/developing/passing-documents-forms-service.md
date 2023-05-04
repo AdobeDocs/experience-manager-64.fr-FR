@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 role: Developer
 exl-id: fe19e9b3-d662-4df2-b372-5006b794cde8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 98%
+source-wordcount: '1706'
+ht-degree: 97%
 
 ---
 
 # Transmettre des documents au service Forms {#passing-documents-to-the-formsservice}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le service AEM Forms effectue le rendu de PDF forms interactifs sur les appareils clients, généralement des navigateurs Web, afin de collecter des informations auprès des utilisateurs. Un formulaire PDF interactif est basé sur une conception de formulaire généralement enregistrée sous forme de fichier XDP et créée dans Designer. À partir d’AEM Forms, vous pouvez transmettre au service Forms un objet `com.adobe.idp.Document` qui contient la conception du formulaire. Le service Forms effectue ensuite le rendu de la conception du formulaire située dans l’objet `com.adobe.idp.Document`.
 

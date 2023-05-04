@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 955a1876-4882-4926-82e9-846bc8bb332c
 exl-id: 87be7ffe-d937-4e85-8d90-5b7c356f0876
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 4%
+source-wordcount: '629'
+ht-degree: 5%
 
 ---
 
 # Création de groupes imbriqués {#authoring-nested-groups}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Création de groupes sur l’instance de création {#creating-groups-on-author}
 
@@ -89,13 +93,13 @@ Attendez la confirmation de la publication du groupe.
 Le `arts` Le groupe doit également contenir un `groups` , mais vide et dans lequel de nouveaux groupes peuvent être créés. Accédez au dossier du groupe d’arts et créez trois groupes imbriqués, chacun avec un paramètre d’adhésion différent :
 
 1. Visible
-   * Titre: `Visual Arts`
+   * Titre : `Visual Arts`
    * Nom : `visual`
    * Modèle: `Reference Group`
    * Adhésion : select `Optional Membership`
 Un groupe public, ouvert à tous les membres
 1. Auditoire
-   * Titre: `Auditory Arts`
+   * Titre : `Auditory Arts`
    * Nom : `auditory`
    * Modèle: `Reference Group`
    * Adhésion : select `Required Membership`
@@ -103,7 +107,7 @@ Un groupe ouvert, disponible pour que les membres se joignent à
 
 1. Historique
 
-   * Titre: `Art History`
+   * Titre : `Art History`
    * Nom : `history`
    * Modèle: `Reference Group`
    * Adhésion : select `Restricted Membership`

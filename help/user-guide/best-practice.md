@@ -6,18 +6,22 @@ seo-description: Resources for best practices, troubleshooting and training for 
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: ba222869-1268-481d-b342-27ea12b15999
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 96%
+source-wordcount: '445'
+ht-degree: 80%
 
 ---
 
 # Bonnes pratiques relatives à AEM 6.4 {#aem-64-best-practices}
 
-## Où puis-je obtenir d’autres informations sur les formations à AEM ? {#training}
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Adobe propose des ressources très utiles pour vous aider à tirer le meilleur parti d’AEM.
+## Où puis-je en apprendre davantage sur la formation ou l&#39;éducation pour AEM ? {#training}
+
+Adobe dispose de plusieurs ressources clés pour vous aider à tirer le meilleur parti d’AEM.
 
 * [Notre catalogue officiel de formation AEM est disponible ici.](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1)
 * Si vous comptez obtenir une certification AEM, consultez notre [guide complet sur les certifications AEM officielles.](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)
@@ -39,7 +43,7 @@ La Communauté AEM crée régulièrement des exemples de workflows et de code, e
 
 ## Guides de prise en main des différentes fonctionnalités d’AEM {#getting-started}
 
-AEM peut être utilisé de plusieurs façons dans les organisations de service et offre des fonctionnalités à l’échelle de l’entreprise. Si vous vous demandez par où commencer, consultez nos guides de prise en main :
+AEM a de nombreux usages dans les entreprises et est suffisamment vaste pour offrir des fonctionnalités à l’ensemble de l’entreprise. Si vous vous demandez par où commencer, consultez nos guides de prise en main :
 
 * [Prise en main d’AEM Platform et Sites](/help/sites-deploying/deploy.md#getting-started)
 * [Prise en main d’AEM Forms](/help/forms/using/introduction-aem-forms.md)

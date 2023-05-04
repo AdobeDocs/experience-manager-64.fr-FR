@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: a7678273-81f6-4089-ac73-2458d940e374
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 1%
+source-wordcount: '825'
+ht-degree: 2%
 
 ---
 
 # Modération dans le contexte {#in-context-moderation}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Pour AEM Communities, la modération peut être effectuée par les administrateurs et les membres de la communauté de confiance directement sur la page publiée où le contenu de la communauté a été publié.
 
@@ -67,7 +71,7 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
 * Connectez-vous en tant qu’Aaron McDonald (aaron.mcdonald@mailinator.com)
 
    * Sélectionner un forum
-   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus.
+   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus
    * Saisissez le commentaire correspondant à la fonction Publier la réponse .
 
       Je change la mienne une fois par semaine et je les reçois de mai à octobre.

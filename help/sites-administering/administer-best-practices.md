@@ -6,18 +6,22 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 8c41dba4-bedc-4747-b67d-fd89d71c8b2c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 89%
+source-wordcount: '573'
+ht-degree: 55%
 
 ---
 
 # Bonnes pratiques{#best-practices}
 
-La section Meilleures pratiques décrit comment développer, administrer ou utiliser AEM de la manière la plus efficace possible. Cette liste de rubriques, qui évolue constamment, inclut un grand nombre de zones dans AEM.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-Une documentation sur les meilleures pratiques est disponible pour les aspects suivants :
+La section Meilleures pratiques décrit comment développer, administrer ou utiliser AEM de la manière la plus efficace possible. Cette liste croissante de sujets englobe un large éventail de domaines dans AEM.
+
+La documentation relative aux bonnes pratiques est disponible dans les domaines suivants :
 
 * [Assets](#assets)
 * [Sites](#sites)
@@ -28,9 +32,9 @@ Pour connaître les bonnes pratiques concernant la création, le déploiement et
 * [Bonnes pratiques de développement](/help/sites-developing/best-practices.md)
 * [Bonnes pratiques de déploiement](/help/sites-deploying/best-practices.md)
 
-Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
+Les documents spécifiques sont décrits et associés dans les tables qui suivent.
 
-## Ressources {#assets}
+## Assets {#assets}
 
 Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic Media et son intégration, sont décrites dans les rubriques suivantes :
 
@@ -44,17 +48,17 @@ Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic 
   <tr>
    <td>Comment organiser votre contenu (hiérarchie des dossiers)</td> 
    <td><a href="/help/assets/organize-assets.md">Bonnes pratiques relatives à la gestion des fichiers</a></td> 
-   <td>De nombreux profils de traitement basés sur des dossiers sous formes de vidéo, de métadonnées, de traitement d’image sont toujours appliquées aux dossiers. Ce document sur les meilleures pratiques décrit la procédure à suivre pour définir et configurer votre hiérarchie de dossiers. La hiérarchie a un impact considérable sur la manière dont le contenu est traité. </td> 
+   <td>La plupart des profils de traitement reposent sur des dossiers, car les vidéos, les métadonnées et le traitement des images sont toujours appliqués aux dossiers. Ce document de bonnes pratiques décrit comment définir et configurer votre hiérarchie de dossiers, car la hiérarchie a un impact significatif sur le traitement du contenu. </td> 
   </tr>
   <tr>
    <td>Intégration de Dynamic Media Classic et d’AEM</td> 
    <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Bonnes pratiques pour intégrer Dynamic Media Classic à AEM</a></td> 
-   <td><p>Indique quand activer l’importateur d’interrogations, comment tester votre intégration et quand utiliser l’explorateur de contenu plutôt qu’un téléchargement direct dans les ressources.</p> </td> 
+   <td><p>Décrit quand activer l’importateur d’interrogations, comment tester votre intégration et quand utiliser l’explorateur de contenu plutôt qu’un téléchargement direct vers Assets.</p> </td> 
   </tr>
   <tr>
    <td>Options des paramètres prédéfinis d’image</td> 
    <td>Comprendre les <a href="/help/assets/managing-image-presets.md#understanding-image-presets">paramètres prédéfinis d’image</a> et <a href="/help/assets/managing-image-presets.md#image-preset-options">les bonnes pratiques en matière de paramètres prédéfinis d’image</a></td> 
-   <td>Dans le cadre de la documentation sur <a href="/help/assets/managing-image-presets.md">la gestion des paramètres d’image prédéfinis</a>, ces rubriques décrivent ce que sont les paramètres d’image prédéfinis et les meilleures pratiques concernant les options des paramètres d’image prédéfinis.</td> 
+   <td>Dans le cadre de la documentation sur <a href="/help/assets/managing-image-presets.md">Gestion des paramètres d’image prédéfinis</a>, ces rubriques décrivent les paramètres d’image prédéfinis et les bonnes pratiques concernant la sélection des options de paramètres d’image prédéfinis.</td> 
   </tr>
   <tr>
    <td>Dynamic Media et intégration directe à Dynamic Media Classic</td> 
@@ -66,7 +70,7 @@ Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic 
 
 ## Sites {#sites}
 
-Les meilleures pratiques en termes de création et de gestion du contenu de votre site web sont les suivantes :
+La gestion et la création du contenu de votre site web comportent les bonnes pratiques suivantes :
 
 <table> 
  <tbody>
@@ -76,9 +80,9 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
    <td>Le règlement général sur la protection des données (RGPD) de l’Union européenne sur les droits de confidentialité des données entre en vigueur en mai 2018. AEM Sites est conforme au RGPD. Cette page guide les clients à travers les procédures de gestion des demandes RGPD dans AEM Sites. Elle décrit l’emplacement des données privées stockées et la procédure pour les supprimer manuellement ou à l’aide de code.</td> 
   </tr>
   <tr>
-   <td>Définissez l’IU par défaut pour votre instance.</td> 
+   <td>Définissez l’interface utilisateur par défaut de votre instance.</td> 
    <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">Configuration de l’IU par défaut pour votre instance</a></p> </td> 
-   <td>AEM comporte deux interfaces utilisateur : une interface classique et une interface optimisée pour les écrans tactiles. Cette section décrit comment définir l’IU par défaut pour votre instance.</td> 
+   <td>AEM comporte deux interfaces utilisateur : une interface classique et une interface optimisée pour les écrans tactiles. Cette section explique comment définir l’interface utilisateur par défaut de votre instance.</td> 
   </tr>
   <tr>
    <td>Gestion multisite</td> 
@@ -88,7 +92,7 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
   <tr>
    <td>Traduction du contenu</td> 
    <td><a href="/help/sites-administering/tc-bp.md">Bonnes pratiques en matière de traduction</a></td> 
-   <td>Meilleures pratiques concernant la planification et la mise en œuvre de votre site multilingue.</td> 
+   <td>Bonnes pratiques pour la planification et la mise en oeuvre de votre site multilingue.</td> 
   </tr>
   <tr>
    <td>Administration des utilisateurs</td> 

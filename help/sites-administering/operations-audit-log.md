@@ -1,7 +1,7 @@
 ---
-title: Maintenance du journal d’audit dans AEM 6
+title: Maintenance du journal d’audit dans AEM 6
 seo-title: Audit Log Maintenance in AEM 6
-description: Découvrez comment tenir à jour le journal d’audit dans AEM.
+description: Découvrez la maintenance du journal d’audit dans AEM.
 feature: Operations
 seo-description: Lear about Audit Log Maintenance in AEM.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
@@ -11,20 +11,24 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: bcbdab55-4871-4c7f-b82a-b7d8280e82e3
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 100%
+source-wordcount: '639'
+ht-degree: 56%
 
 ---
 
-# Maintenance du journal d’audit dans AEM 6{#audit-log-maintenance-in-aem}
+# Maintenance du journal d’audit dans AEM 6{#audit-log-maintenance-in-aem}
 
-Les événements AEM pouvant être inclus dans la journalisation d’audit génèrent une grande quantité de données archivées. Ces données peuvent rapidement s’agrandir au fil du temps en raison des réplications, des téléchargements de ressources et autres activités du système.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-La maintenance du journal d’audit comprend plusieurs fonctionnalités qui permettent d’automatiser la maintenance du journal d’audit dans le cadre de stratégies spécifiques.
+Les événements AEM pouvant être inclus dans la journalisation d’audit génèrent une grande quantité de données archivées. Ces données peuvent rapidement augmenter au fil du temps en raison de réplications, de chargements de ressources et d’autres activités du système.
 
-Elle est mise en œuvre comme une tâche de maintenance hebdomadaire configurable et est accessible par le biais de la console de surveillance du tableau de bord des opérations.
+La maintenance du journal d’audit comprend plusieurs parties des fonctionnalités qui permettent d’automatiser la maintenance du journal d’audit sous des stratégies spécifiques.
+
+Il est mis en oeuvre en tant que tâche de maintenance hebdomadaire configurable et est accessible via la console de surveillance du tableau de bord des opérations .
 
 Pour en savoir plus, consultez la [documentation du tableau de bord des opérations](/help/sites-administering/operations-dashboard.md).
 
@@ -48,10 +52,10 @@ Suivez ces étapes pour configurer la purge du journal d’audit :
 
 1. Ensuite, configurez le planificateur de purge en fonction de vos besoins. Les options disponibles sont les suivantes :
 
-   * **Nom de la règle :** nom de la règle de stratégie d’audit.
+   * **Nom de la règle :** le nom de la règle de stratégie d’audit ;
    * **Chemin d’accès au contenu :** chemin d’accès au contenu auquel la règle s’appliquera.
-   * **Âge minimum :** nombre de jours pendant lesquels les journaux d’audit doivent être conservés.
-   * **Type de journal d’audit :** type de journal d’audit à purger.
+   * **Âge minimum :** la durée (en jours) pendant laquelle les journaux d’audit doivent être conservés ;
+   * **Type de journal d’audit :** type de journal d’audit à purger.
 
    >[!NOTE]
    >
@@ -70,34 +74,34 @@ Suivez ces étapes pour configurer la purge du journal d’audit :
 
 Dans AEM 6.3, si la période de maintenance planifiée se ferme avant que la tâche de purge du journal d’audit ne puisse se terminer, la tâche s’arrête automatiquement. Elle reprend lorsque commence la période de maintenance suivante.
 
-**Dans AEM 6.4**, vous pouvez arrêter manuellement une tâche de purge du journal d’audit en cours d’exécution en cliquant sur le bouton **Arrêter**. La tâche reprendra sans risque à la prochaine exécution.
+**Dans AEM 6.4**, vous pouvez arrêter manuellement une tâche de purge du journal d’audit en cours d’exécution en cliquant sur le bouton **Arrêter**. Lors de la prochaine exécution, la tâche reprendra en toute sécurité.
 
 >[!NOTE]
 >
->L’arrêt de la tâche de maintenance consiste à suspendre son exécution sans perdre la trace de la tâche déjà en cours.
+>Arrêter la tâche de maintenance signifie suspendre son exécution sans perdre la trace du traitement déjà en cours.
 
-## Configuration de la purge du journal d’audit de la gestion des actifs numériques {#configure-dam-audit-log-purging}
+## Configuration de la purge du journal d’audit DAM {#configure-dam-audit-log-purging}
 
 1. Rendez-vous dans la console Système sur *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
-1. Recherchez la règle **Purge du journal d’audit de la gestion des actifs numériques** et cliquez sur le résultat.
-1. Dans la fenêtre suivante, configurez la règle. Les options disponibles sont les suivantes :
+1. Rechercher **Purge du journal d’audit DAM** et cliquez sur le résultat.
+1. Dans la fenêtre suivante, configurez la règle. Les options sont les suivantes :
 
-   * **Nom de la règle :** nom de la règle de stratégie d’audit.
+   * **Nom de la règle :** le nom de la règle de stratégie d’audit ;
    * **Chemin d’accès au contenu :** chemin d’accès au contenu auquel la règle s’appliquera.
-   * **Âge minimum :** nombre de jours pendant lesquels les journaux d’audit doivent être conservés.
-   * **Types d’événements de journal d’audit de la gestion des actifs numériques :** types d’événements à purger.
+   * **Âge minimum :** le temps (en jours) pendant lequel les journaux d’audit doivent être conservés.
+   * **Types d’événements de la gestion des journaux d’audit :** les types d’événements de contrôle DAM qui doivent être purgés.
 
-1. Cliquez sur **Enregistrer** pour enregistrer votre configuration.
+1. Cliquez sur **Enregistrer** pour enregistrer votre configuration
 
 ## Configuration de la purge du journal d’audit de réplication  {#configure-replication-audit-log-purging}
 
 1. Rendez-vous dans la console Système sur *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
-1. Recherchez le **planificateur de purge du journal d’audit de réplication** et cliquez sur le résultat.
-1. Dans la fenêtre suivante, configurez la règle. Les options disponibles sont les suivantes :
+1. Rechercher **Planificateur de purge du journal d’audit de réplication** et cliquez sur le résultat
+1. Dans la fenêtre suivante, configurez la règle. Les options sont les suivantes :
 
-   * **Nom de la règle :** nom de la règle de stratégie d’audit.
+   * **Nom de la règle :** nom de la règle de stratégie d’audit
    * **Chemin d’accès au contenu :** chemin d’accès au contenu auquel la règle s’appliquera.
-   * **Âge minimum :** nombre de jours pendant lesquels les journaux d’audit doivent être conservés.
-   * **Types d’événements de journal d’audit de réplication :** types d’événements à purger.
+   * **Âge minimum :** le temps (en jours) pendant lequel les journaux d’audit doivent être conservés.
+   * **Types d’événement de réplication du journal d’audit :** les types d’événements de contrôle de réplication qui doivent être purgés ;
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre configuration.

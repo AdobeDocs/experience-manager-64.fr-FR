@@ -1,7 +1,7 @@
 ---
 title: Utilisation des sélecteurs
 seo-title: Working with Selectors
-description: Sélection de ressources pour les images interactives, vidéos interactives et bannières de carrousel
+description: Sélection de ressources pour des images interactives, des vidéos interactives et des bannières de carrousel
 seo-description: Selecting assets for interactive images, interactive video, and carousel banners
 uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
 contentOwner: Rick Brough
@@ -12,14 +12,18 @@ discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
 feature: Selectors
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 94%
 
 ---
 
 # Utilisation des sélecteurs {#working-with-selectors}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Lorsque vous utilisez une image interactive, une vidéo interactive ou une bannière de carrousel, vous sélectionnez des ressources, ainsi que des sites et des produits auxquels relier les zones réactives et les zones cliquables. Lorsque vous travaillez avec des visionneuses d’images, des visionneuses à 360° et de contenu multimédia, vous devez également sélectionner les ressources à l’aide du sélecteur de ressources.
 
@@ -59,7 +63,7 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Appuyez sur **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (mode **[!UICONTROL Liste]** ou mode **[!UICONTROL Carte]**).
+   Appuyez sur **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (vue **[!UICONTROL Liste]** ou **[!UICONTROL Carte]**).
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -91,7 +95,7 @@ Utilisez le sélecteur de sites pour choisir une page web lorsque vous souhaitez
 
 1. En mode **[!UICONTROL Aperçu]**, si vous appuyez sur la zone réactive ou la zone cliquable, vous accédez à la page AEM Site que vous avez spécifiée.
 
-## Sélection des ressources {#selecting-assets}
+## Sélection de ressources {#selecting-assets}
 
 Utilisez ce sélecteur pour sélectionner les images à utiliser dans une bannière de carrousel, une vidéo interactive, des visionneuses d’images, de contenus multimédia variés et à 360°. Dans la vidéo interactive, le sélecteur de ressources est disponible lorsque vous tapez sur **[!UICONTROL Sélectionner des ressources]** dans l’onglet **[!UICONTROL Contenu]**. Dans les ensembles de carrousels, le sélecteur de ressources est disponible lorsque vous créez une nouvelle diapositive. Dans les visionneuses d’images, de contenus multimédia variés et à 360°, le sélecteur de ressources est disponible lorsque vous créez respectivement une nouvelle visionneuse d’images, de contenus multimédia variés ou à 360°.
 
@@ -112,7 +116,7 @@ Reportez-vous également à la section [Sélecteur de ressources](asset-selector
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Appuyez sur **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (en mode **[!UICONTROL Liste]**, en mode **[!UICONTROL Colonne]** ou en mode **[!UICONTROL Carte]**).
+   Appuyez sur **[!UICONTROL Afficher comme]** pour changer l’affichage des produits (dans la vue **[!UICONTROL Liste]**, **[!UICONTROL Colonne]** ou **[!UICONTROL Carte]**).
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 

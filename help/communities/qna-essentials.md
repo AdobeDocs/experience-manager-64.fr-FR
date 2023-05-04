@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: 99f8afda-1771-471b-bd0c-99960a453bc9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 3%
+source-wordcount: '284'
+ht-degree: 4%
 
 ---
 
 # Notions fondamentales sur la qualité de vie {#qna-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Cette page fournit les informations essentielles pour utiliser la fonction de forum de questions et réponses (Q&amp;R).
 

@@ -1,7 +1,7 @@
 ---
-title: Configuration de la commande Annuler pour la modification des pages
+title: Configurer la commande Annuler pour la modification des pages
 seo-title: Configuring Undo for Page Editing
-description: Découvrez comment configurer la commande Annuler pour la modification des pages dans AEM.
+description: Découvrez comment configurer la prise en charge de l’annulation pour la modification de pages dans AEM.
 seo-description: Learn how to configure Undo support for page editing in AEM.
 uuid: e5a49587-a2a6-41d5-b449-f7a8f7e4cee6
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 3cc7efc5-bcb2-41c9-b78b-308f6b7a298e
 exl-id: badb7082-3ebf-4bb3-9157-48b8e7ea8ff9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 81%
 
 ---
 
-# Configuration de la commande Annuler pour la modification des pages{#configuring-undo-for-page-editing}
+# Configurer la commande Annuler pour la modification des pages{#configuring-undo-for-page-editing}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le [service OSGI](/help/sites-deploying/configuring-osgi.md) de **configuration de l’annulation de la gestion de contenu Web Day CQ** (`com.day.cq.wcm.undo.UndoConfigService`) expose plusieurs propriétés qui contrôlent le comportement des commandes d’annulation et de restauration pour la modification des pages.
 
@@ -35,9 +39,9 @@ Ce nœud contient les propriétés `cq.wcm.undo.whitelist` et `cq.wcm.undo.black
 >
 >En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
 
-## Configuration des commandes d’annulation et de restauration {#configuring-undo-and-redo}
+## Configuration des options Annuler et Rétablir {#configuring-undo-and-redo}
 
-Vous pouvez configurer ces propriétés de service OSGI pour votre propre instance.
+Vous pouvez configurer ces propriétés de service OSGi pour votre propre instance.
 
 >[!NOTE]
 >
@@ -63,7 +67,7 @@ La liste suivante répertorie les propriétés affichées dans la console Web, s
 
    >[!NOTE]
    >
-   >Par défaut, seuls les administrateurs peuvent accéder au nœud `/var/undo`. Les auteurs peuvent effectuer des opérations d’annulation et de restauration sur du contenu binaire uniquement lorsqu’ils sont dotés de droits d’accès aux données d’annulation binaires.
+   >Par défaut, seuls les administrateurs peuvent accéder au nœud `/var/undo`. Les auteurs ne peuvent effectuer des opérations d’annulation et de rétablissement sur le contenu binaire qu’après avoir reçu les autorisations d’accès aux données d’annulation binaires.
 
 * **Min. validity**
 ( 
@@ -97,7 +101,7 @@ La liste suivante répertorie les propriétés affichées dans la console Web, s
 ( 
 `cq.wcm.undo.persistence.mode`)
 
-   * **Description** : détermine à quel moment l’historique d’annulation est conservé. Sélectionnez cette option pour conserver un historique d’annulation après chaque modification de page. Désactivez cette option pour conserver uniquement lorsqu’un rechargement de page se produit (par exemple, l’utilisateur accède à une autre page).
+   * **Description** : détermine à quel moment l’historique d’annulation est conservé. Sélectionnez cette option pour conserver un historique d’annulation après chaque modification de page. Désactivez cette option pour qu’elle persiste uniquement lorsqu’une page se recharge (par exemple, l’utilisateur accède à une autre page).
 
       La conservation de l’historique d’annulation utilise les ressources du navigateur Web. Si le navigateur de vos utilisateurs réagit lentement aux modifications de la page, essayez de conserver l’historique d’annulation lors du rechargement de la page.
 
@@ -108,10 +112,10 @@ La liste suivante répertorie les propriétés affichées dans la console Web, s
 ( 
 `cq.wcm.undo.markermode`)
 
-   * **Description** : spécifie l’indice visuel à utiliser pour indiquer quels paragraphes sont affectés lorsqu’une opération d’annulation ou de restauration se produit. Les valeurs suivantes sont valides :
+   * **Description** : spécifie l’indice visuel à utiliser pour indiquer quels paragraphes sont affectés lorsqu’une opération d’annulation ou de restauration se produit. Les valeurs suivantes sont valides :
 
-      * Clignotement : l’indicateur de sélection de paragraphe clignote temporairement.
-      * Sélection : le paragraphe est sélectionné.
+      * flash : L’indicateur de sélection des paragraphes clignote temporairement.
+      * select : Le paragraphe est sélectionné.
    * **Valeur par défaut** : `flash`
    * **Type** : `String`
 
@@ -146,9 +150,9 @@ La liste suivante répertorie les propriétés affichées dans la console Web, s
 
    >[!NOTE]
    >
-   >Lorsqu’une opération figure dans cette liste, elle est toujours ajoutée à l’historique d’annulation. Les utilisateurs ne peuvent pas annuler des opérations qui existent antérieurement à une opération **Bad Component** dans l’historique d’annulation.
+   >Lorsqu’une opération figure dans cette liste, elle est toujours ajoutée à l’historique d’annulation. Les utilisateurs ne peuvent pas annuler des opérations antérieures à une **Composant incorrect** dans l’historique d’annulation.
 
-   * Les noms d’opération standard sont les suivants :
+   * Les noms types des opérations sont les suivants :
 
       * `insertParagraph` : le composant est ajouté à la page.
       * `removeParagraph` : le composant est supprimé.

@@ -10,14 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
 exl-id: 1ebe0cbb-33be-4101-92e3-64253a7f7f31
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 19%
+source-wordcount: '437'
+ht-degree: 9%
 
 ---
 
 # Fonctionnalité de classement {#leaderboard-feature}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#introduction}
 
@@ -25,7 +29,7 @@ Le `Leaderboard` composant permet d’obtenir une idée de la façon dont les me
 
 Avant d’inclure le composant de classement sur une page, il est nécessaire de configurer [Notation et badges des communautés](implementing-scoring.md).
 
-Cette section de la documentation décrit :
+Cette section de la documentation décrit
 
 * Ajouter le `Leaderboard` en un composant [site communautaire](overview.md#community-sites)
 
@@ -41,7 +45,7 @@ et faites-le glisser sur la page.
 
 Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
 
-Placé pour la première fois sur une page d’un site de communauté, voici à quoi ressemble le composant :
+Lorsqu’il est placé pour la première fois sur une page d’un site de communauté, voici comment le composant apparaît :
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -51,7 +55,7 @@ Sélectionnez le `Leaderboard` pour accéder au composant et le sélectionner. `
 
 ![chlimage_1-9](assets/chlimage_1-9.png) ![chlimage_1-10](assets/chlimage_1-10.png)
 
-### Onglet Settings {#settings-tab}
+### Onglet Paramètres {#settings-tab}
 
 Sous , **[!UICONTROL Paramètres]** , indiquez les informations relatives au membre qui s’affichent :
 
@@ -63,17 +67,17 @@ Nom descriptif à afficher pour le panorama, reflétant les règles sélectionn�
 * **[!UICONTROL Badge]**
 Si cette case est cochée, une colonne pour les icônes de badge est incluse dans le tableau de classement.
 
-   Cette option n’est pas cochée par défaut.
+   La case par défaut est décochée.
 
 * **[!UICONTROL Nom du badge]**
 Si cette case est cochée, une colonne correspondant au nom du badge est incluse dans le tableau de classement.
 
-   Cette option n’est pas cochée par défaut.
+   La case par défaut est décochée.
 
 * **[!UICONTROL Utiliser l’avatar]**
 Si cette case est cochée, l’avatar du membre est inclus dans le tableau de classement, en regard du lien de son nom vers son profil de membre.
 
-   Cette option n’est pas cochée par défaut.
+   La case par défaut est décochée.
 
 ### Onglet Règles {#rules-tab}
 
@@ -99,7 +103,7 @@ Ce tableau de classement indique les résultats de l’application de règles de
 
 Configuration des composants de classement :
 
-* **[!UICONTROL Onglet Settings:]**
+* **[!UICONTROL Paramètres]** tab :
 
    * Nom d’affichage = `Participation Board`
    * `checked` :
@@ -123,7 +127,7 @@ Ce tableau de classement indique les résultats de l’application de règles de
 
 Configuration des composants de classement :
 
-* **[!UICONTROL Onglet Settings:]**
+* **[!UICONTROL Paramètres]** tab :
 
    * Nom d’affichage = `Expertise Board`
    * `checked` :

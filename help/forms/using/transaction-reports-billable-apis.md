@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 exl-id: 18b5c6e2-3b0c-4ec8-9e65-c4105b47be4e
-source-git-commit: eeaa70855980ca62574f89e280b46c02c0b65bdc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 95%
+source-wordcount: '1895'
+ht-degree: 93%
 
 ---
 
 # API de rapports de transactions facturables {#transaction-reports-billable-apis}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Liste de toutes les API comptabilisées comme des transactions
 
@@ -77,7 +81,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
    <td> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td> 
+   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td> 
    <td>Convertit des fichiers Adobe PDF en types de fichiers pris en charge. </td> 
    <td>Documents traités<br /> </td> 
    <td> </td> 
@@ -238,7 +242,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
    <td> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td> 
+   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td> 
    <td>Convertit un fichier PDF plat au format PostScript à l’aide des options spécifiées dans la spécification de l’option.</td> 
    <td>Documents traités</td> 
    <td> </td> 
@@ -286,8 +290,8 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
     </ul> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td> 
-   <td>Exécute le document DDX spécifié et renvoie un objet <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> contenant les documents créés. </td> 
+   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td> 
+   <td>Exécute le document DDX spécifié et renvoie un objet <a href="https://helpx.adobe.com/fr/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> contenant les documents créés. </td> 
    <td>Documents traités</td> 
    <td>Tous les formats de fichiers d’entrée pris en charge par PDF Generator, Forms et Output, le service Assembler prend en charge tous ces formats en tant que formats de fichiers de sortie. </td> 
   </tr>
@@ -326,7 +330,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
  </tbody>
 </table>
 
-### Service Doc Assurance {#doc-assurance-service}
+### Service Doc Assurance {#doc-assurance-service}
 
 <table> 
  <tbody>

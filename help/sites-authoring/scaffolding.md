@@ -1,7 +1,7 @@
 ---
-title: Génération de modèles automatique
+title: Mode Scaffolding
 seo-title: Scaffolding
-description: Avec le mode Scaffolding, vous pouvez créer un formulaire dont les champs représentent la structure souhaitée pour vos pages, puis l’utiliser afin de créer aisément des pages sur la base de cette structure.
+description: Avec la génération de modèles automatique, vous pouvez créer un modèle automatique avec des champs qui reflètent la structure souhaitée pour vos pages, puis utiliser ce formulaire pour créer facilement des pages en fonction de cette structure.
 seo-description: With scaffolding you can create a scaffold with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure
 uuid: f2542fe2-598f-4631-ae64-a6ee14cd7748
 contentOwner: Chris Bohnert
@@ -10,18 +10,22 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
 exl-id: 20197226-09d5-4ac6-b4cb-0793576a56cf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 100%
+source-wordcount: '185'
+ht-degree: 25%
 
 ---
 
-# Génération de modèles automatique{#scaffolding}
+# Mode Scaffolding{#scaffolding}
 
-Dans certains cas, il arrive que vous deviez créer un jeu volumineux dont les pages partagent la même structure, mais présentent un contenu différent. Si vous utilisez l’interface AEM standard, vous devez créer chaque page, y faire glisser les composants appropriés, puis compléter chacune d’elles séparément.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-En mode Génération de modèles automatique, vous pouvez créer un formulaire (que l’on désigne sous le nom de modèle automatique) dont les champs représentent la structure souhaitée pour vos pages, puis l’utiliser afin de créer aisément des pages sur la base de cette structure.
+Il peut arriver que vous deviez créer un grand ensemble de pages partageant la même structure mais ayant un contenu différent. Par le biais de l’interface d’AEM standard, vous devez créer chaque page, faire glisser les composants appropriés sur la page et remplir chacune d’elles individuellement.
+
+Avec la génération de modèles automatique, vous pouvez créer un formulaire (un modèle automatique) avec des champs qui reflètent la structure souhaitée pour vos pages, puis utiliser ce formulaire pour créer facilement des pages en fonction de cette structure.
 
 >[!NOTE]
 >

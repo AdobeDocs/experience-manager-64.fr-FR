@@ -1,7 +1,7 @@
 ---
-title: Configuration du projet Android Studio et génération de l’application Android
+title: Installer le projet Android Studio et générer l’application Android
 seo-title: Set up the Android studio project and build the Android app
-description: Procédure d’installation du projet Android Studio et de génération du programme d’installation pour l’application AEM Forms
+description: Procédure de configuration du projet Android Studio et de génération du programme d’installation pour l’application AEM Forms
 seo-description: Steps to set up the Android Studio project and build the installer for the AEM Forms app
 uuid: 4c966cdc-d0f5-4b5b-b21f-f11e8a35ec8a
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 exl-id: a797ec42-e6bf-457e-91d7-0430b4671a68
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 98%
+source-wordcount: '626'
+ht-degree: 80%
 
 ---
 
 # Configuration du projet Android Studio et génération de l’application Android {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Cet article permet de créer l’application AEM Forms 6.3.1.1 et versions ultérieures. Pour créer une application à partir du code source AEM Forms App 6.3, voir [Configurer le projet Eclipse et génération de l’application Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
 
@@ -26,10 +30,10 @@ Pour obtenir le code source de l’application AEM Forms, procédez comme suit�
 
 1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
-1. Dans la section **[!UICONTROL Filtres]** :
-   1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
+1. Dans le **[!UICONTROL Filtres]** section :
+   1. Sélectionner **[!UICONTROL Forms]** de la **[!UICONTROL Solution]** liste déroulante.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
-1. Appuyez sur le nom applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+1. Appuyez sur le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis appuyez sur **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package, puis cliquez sur **[!UICONTROL Installer]**.
 
@@ -43,9 +47,9 @@ L’image suivante affiche la structure du répertoire du dossier `android` dans
 
 ## Génération d’une application AEM Forms standard {#set-up-the-xcode-project}
 
-1. Effectuez les étapes suivantes pour configurer un projet dans Android™ Studio et fournir une identité de signature :
+1. Effectuez les étapes suivantes pour configurer un projet dans Android™ Studio et fournir une identité de signature :
 
-   Ouvrez une session sur un ordinateur sur lequel Android™ Studio est installé et configuré.
+   Connectez-vous à un ordinateur sur lequel Android™ Studio est installé et configuré.
 
 1. Copiez l’archive `adobe-lc-mobileworkspace-src-<version>.zip` téléchargée sous :
 
@@ -86,7 +90,7 @@ L’image suivante affiche la structure du répertoire du dossier `android` dans
 
    **Pour les utilisateurs de Windows® :** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
-1. Une fois le projet importé, une fenêtre contextuelle s’affiche avec une option permettant de mettre à jour le module externe Android™ Gradle. Cliquez sur le bouton approprié selon vos exigences.
+1. Une fois le projet importé, une fenêtre contextuelle s’affiche avec l’option permettant de mettre à jour le module externe Android™ Gradle. Cliquez sur le bouton approprié en fonction de vos besoins.
 
    ![dontremindmeagainforthisproject](assets/dontremindmeagainforthisproject.png)
 

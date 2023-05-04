@@ -5,20 +5,24 @@ contentOwner: AG
 feature: Developer Tools,Renditions
 role: User,Admin
 exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 96%
+source-wordcount: '287'
+ht-degree: 57%
 
 ---
 
 # Lightbox {#lightbox}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 En savoir plus sur Lightbox dans [!DNL Experience Manager] Ressources.
 
 Lightbox est un type spécial de collection fournissant un accès facile aux ressources. Vous pouvez accéder rapidement à Lightbox pour ajouter ou supprimer des ressources. Il sert de galerie d’images personnelle.
 
-Si vous êtes utilisateur Adobe Experience Manager Assets, Lightbox est créé automatiquement la première fois que vous vous connectez à l’application. Il est exclusif à votre connexion. Les autres utilisateurs ne peuvent pas accéder à votre Lightbox.
+Si vous êtes utilisateur Adobe Experience Manager Assets, Lightbox est créé automatiquement la première fois que vous vous connectez à l’application. Il est exclusif à votre connexion. D’autres utilisateurs ne peuvent pas accéder à votre Lightbox.
 
 ## Ajout de ressources à Lightbox {#adding-assets-to-lightbox}
 
@@ -33,11 +37,11 @@ Si vous êtes utilisateur Adobe Experience Manager Assets, Lightbox est créé
 
    >[!NOTE]
    >
-   >Bien que Lightbox ressemble à une collection, vous ne pouvez pas effectuer les actions que vous effectuez normalement sur les collections. Par exemple, vous ne pouvez pas supprimer, partager ou afficher des paramètres pour une Lightbox. Vous ne pouvez pas non plus l’ajouter à d’autres collections. Néanmoins, vous pouvez modifier les ressources d’une Lightbox.
+   >Bien que Lightbox ressemble à une collection, vous ne pouvez pas effectuer toutes les actions que vous effectuez normalement sur les collections. Par exemple, vous ne pouvez pas supprimer, partager ou afficher les paramètres d’une Lightbox. En outre, vous ne pouvez pas l’ajouter à d’autres collections. Vous pouvez toutefois modifier les ressources dans une Lightbox.
 
 ## Suppression de ressources dans Lightbox {#removing-assets-from-lightbox}
 
-1. Accédez à la console Collections, puis appuyez/cliquez sur Lightbox pour en afficher les ressources.
+1. Accédez à la console Collections, appuyez/cliquez sur Lightbox pour afficher ses ressources.
 1. Sélectionnez les ressources à supprimer.
 1. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 1. Dans la boîte de dialogue, appuyez/cliquez sur **[!UICONTROL Supprimer]** pour confirmer la suppression. Les ressources sont supprimées de Lightbox.

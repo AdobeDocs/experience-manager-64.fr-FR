@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 66%
+source-wordcount: '429'
+ht-degree: 42%
 
 ---
 
 # Archivage et extraction de fichiers dans AEM Assets {#check-in-and-check-out-files-in-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Adobe Experience Manager Assets vous permet d’extraire des ressources pour les modifier et de les archiver à nouveau une fois les modifications effectuées. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous n’avez pas archivé la ressource dans [!DNL Experience Manager] Ressources. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
 
@@ -38,11 +42,11 @@ Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
 
-   Sélectionnez la ressource. Notez que la barre d’outils n’affiche aucune option permettant de modifier, d’annoter, de publier ou de supprimer la ressource.
+   Sélectionnez la ressource. Notez que la barre d’outils n’affiche aucune option vous permettant de modifier, d’annoter, de publier ou de supprimer la ressource.
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Vous pouvez, toutefois, cliquer/appuyer sur l’icône **[!UICONTROL Afficher les propriétés]** pour modifier les métadonnées de la ressource verrouillée.
+   Vous pouvez toutefois cliquer/appuyer sur le bouton **[!UICONTROL Afficher les propriétés]** pour modifier les métadonnées de la ressource verrouillée.
 
 1. Cliquez/appuyez sur l’icône Modifier pour ouvrir la ressource en mode d’édition.
 
@@ -65,10 +69,10 @@ Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser
 Les administrateurs peuvent archiver des ressources extraites par d’autres utilisateurs.
 
 1. Connectez-vous à [!DNL Assets] en tant qu’administrateur.
-1. Dans l’interface utilisateur d’Assets, sélectionnez une ou plusieurs ressources extraites par d’autres utilisateurs.
+1. Dans l’interface utilisateur d’Assets, sélectionnez une ou plusieurs ressources qui ont été extraites par d’autres utilisateurs.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. Dans la barre d’outils, cliquez/appuyez sur l’icône **[!UICONTROL Libérer le verrou]**. La ressource est à nouveau archivée et disponible pour modification pour d’autres utilisateurs.
+1. Dans la barre d’outils, cliquez/appuyez sur la **[!UICONTROL Verrouillage de version]** icône . La ressource est à nouveau archivée et disponible pour modification pour d’autres utilisateurs.
 
    ![chlimage_1-477](assets/chlimage_1-477.png)

@@ -11,26 +11,30 @@ content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
 feature: Configuring
 exl-id: 357d5f23-3e75-44e3-905f-4efe960858bf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 68%
+source-wordcount: '752'
+ht-degree: 27%
 
 ---
 
 # Purge de version{#version-purging}
 
-Durant l’installation standard, AEM crée une version de page ou de nœud lorsque la page est activée après la mise à jour du contenu. 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Dans une installation standard, AEM crée une nouvelle version d’une page ou d’un noeud lorsque vous activez une page après la mise à jour du contenu.
 
 >[!NOTE]
 >
->Si aucune modification de contenu n’est effectuée, vous verrez un message affirmant que la page a été activée, cependant aucune nouvelle version ne sera créée.
+>Si aucune modification du contenu n’est apportée, un message s’affiche indiquant que la page a été activée, mais qu’aucune nouvelle version ne sera créée.
 
-Vous pouvez créer des versions supplémentaires sur demande à l’aide de l’onglet **Versions** du sidekick. Ces versions sont stockées dans le référentiel et peuvent être restaurées si nécessaire. 
+Vous pouvez créer des versions supplémentaires sur demande à l’aide de la méthode **Contrôle de version** de l’onglet du sidekick. Ces versions sont stockées dans le référentiel et peuvent être restaurées si nécessaire.
 
-Ces versions n’étant jamais purgées, la taille du référentiel va continuer d’augmenter et devra être gérée.
+Ces versions ne sont jamais purgées. Par conséquent, la taille du référentiel va augmenter au fil du temps et doit donc être gérée.
 
-AEM est livré avec divers mécanismes vous permettant de gérer le référentiel :
+AEM est fourni avec divers mécanismes pour vous aider à gérer votre référentiel :
 
 * la valeur [Version Manager](#version-manager)
 
@@ -55,11 +59,11 @@ AEM est livré avec divers mécanismes vous permettant de gérer le référentie
 
 >[!CAUTION]
 >
->Pour optimiser la taille du référentiel, vous devez exécuter la tâche Purge de version fréquemment. La tâche doit être planifiée en dehors des heures de bureau lorsque le trafic est limité.
+>Pour optimiser la taille du référentiel, vous devez exécuter la tâche Purge de version fréquemment. La tâche doit être planifiée en dehors des heures de bureau lorsqu’il y a un trafic limité.
 
-## Gestionnaire de versions {#version-manager}
+## Version Manager {#version-manager}
 
-En plus de la purge explicite via l’outil de purge, le gestionnaire de version peut être configuré pour purger d’anciennes versions lorsque de nouvelles versions sont créées.
+Outre la purge explicite au moyen de l’outil de purge, le gestionnaire de versions peut être configuré pour purger les anciennes versions lors de la création de nouvelles versions.
 
 Pour installer le gestionnaire de versions, créez une configuration pour :
 
@@ -107,23 +111,23 @@ Les options suivantes sont disponibles :
 
 Les options qui définissent la manière dont les versions doivent être conservées (`maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) peuvent être combinées en fonction de vos besoins.
 
-Par exemple, en définissant le nombre maximum de versions à conserver ET la version la plus ancienne à conserver :
+Par exemple, lors de la définition du nombre maximal de versions à conserver ET de la version la plus ancienne à conserver :
 
 * Configuration :
 
    * `maxNumberVersions` = 7
    * `maxAgeDays` = 30
 
-* Avec :
+* Avec :
 
-   * 10 versions créées dans les 60 derniers jours
-   * 3 de ces versions créées dans les 30 derniers jours 
+   * 10 versions créées au cours des 60 derniers jours
+   * 3 de ces versions créées au cours des 30 derniers jours
 
-* Ce qui signifie que :
+* Cela signifie que :
 
-   * les 3 dernières versions seront conservées 
+   * Les 3 dernières versions seront conservées.
 
-Par exemple, en définissant les nombres maximum ET minimum de versions à conserver ET la version la plus ancienne à conserver :
+Par exemple, lors de la définition du nombre maximal ET minimum de versions à conserver ET de la version la plus ancienne à conserver :
 
 * Configuration :
 
@@ -131,14 +135,14 @@ Par exemple, en définissant les nombres maximum ET minimum de versions à conse
    * `maxAgeDays` = 30
    * `minNumberVersions` = 3
 
-* Avec :
+* Avec :
 
-   * 5 versions créées il y a 60 jours
+   * 5 versions créées il y a 60 jours
 
-* Ce qui signifie que :
+* Cela signifie que :
 
-   * 3 versions seront conservées
+   * 3 versions seront conservées
 
-## Outil de purge des versions {#purge-versions-tool}
+## Outil Purge des versions {#purge-versions-tool}
 
-L’outil de [purge des versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) est conçu pour la purge des versions d’un nœud ou d’une hiérarchie de nœuds dans votre référentiel. Son principal objectif est de vous aider à réduire la taille du référentiel en supprimant les anciennes versions de vos nœuds. 
+Le [Purge des versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) est destiné à purger les versions d’un noeud ou d’une hiérarchie de noeuds dans votre référentiel. Son Principal objectif est de vous aider à réduire la taille de votre référentiel en supprimant les anciennes versions de vos noeuds.

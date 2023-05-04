@@ -1,7 +1,7 @@
 ---
 title: Amélioration des traductions
 seo-title: Translation Enhancements
-description: Amélioration des traductions dans AEM.
+description: Améliorations de la traduction dans AEM.
 seo-description: Translation enhancements in AEM.
 uuid: 0563603f-327b-48f1-ac14-6777c06734b9
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,20 @@ content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 feature: Language Copy
 exl-id: 57a77cec-e228-4ec7-8502-e6e23baddd92
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 83%
 
 ---
 
 # Amélioration des traductions{#translation-enhancements}
 
-Cette page présente les améliorations et les perfectionnements incrémentiels apportés aux capacités de gestion des traductions d’AEM.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Cette page présente des améliorations et des améliorations incrémentielles apportées aux fonctionnalités AEM gestion des traductions.
 
 ## Automatisation des projets de traduction {#translation-project-automation}
 
@@ -69,7 +73,7 @@ Les modifications manuelles du contenu traduit peuvent être synchronisées avec
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction qui doivent être synchronisées avec la mémoire de traduction et sélectionnez **Mettre à jour la mémoire**.
+1. Une vue Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction qui doivent être synchronisées avec la mémoire de traduction et sélectionnez **Mettre à jour la mémoire**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
@@ -85,7 +89,7 @@ Les racines de langues peuvent désormais être regroupées sous des nœuds, par
 
 >[!CAUTION]
 >
->Un seul niveau est autorisé. Par exemple, les adresses suivantes ne permettent pas à la page « es » de se résoudre en une copie de langue :
+>Un seul niveau est autorisé. Par exemple, les éléments suivants ne permettent pas à la page &quot;es&quot; de se résoudre sur une copie de langue :
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
@@ -94,13 +98,13 @@ Les racines de langues peuvent désormais être regroupées sous des nœuds, par
 
 >[!NOTE]
 >
->Les racines de langues peuvent avoir n’importe quel nom de page, plutôt que simplement le code ISO de la langue en question. AEM commence toujours par vérifier le chemin et le nom, mais si le nom de la page n’indique pas de langue, AEM vérifie la propriété cq:language de la page afin d’identifier la langue.
+>Les racines de langues peuvent avoir n’importe quel nom de page, plutôt que simplement le code ISO de la langue en question. AEM vérifie toujours d’abord le chemin et le nom, mais si le nom de page n’identifie pas de langue, AEM vérifie la propriété cq:language de la page pour l’identification de la langue.
 
-## Créations de rapports d’état de traduction {#translation-status-reporting}
+## Rapports d’état de traduction {#translation-status-reporting}
 
-Une propriété peut désormais être sélectionnée dans le mode Liste de Sites. Cette propriété indique si une page a été traduite, si elle est en cours de traduction ou si elle n’a pas encore été traduite. Pour l’afficher, procédez comme suit :
+Une propriété peut désormais être sélectionnée dans la vue Liste de Sites. Cette propriété indique si une page a été traduite, si elle est en cours de traduction ou si elle n’a pas encore été traduite. Pour l’afficher, procédez comme suit :
 
-1. Dans Sites, passez en **mode Liste.**
+1. Dans Sites, basculez vers la vue **Liste**.
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 

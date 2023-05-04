@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
 exl-id: fa2bff05-a3b8-4230-95d6-1fbdc96bac3b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 100%
+source-wordcount: '2542'
+ht-degree: 98%
 
 ---
 
 # Préparer AEM Forms pour la sauvegarde {#preparing-aem-forms-for-backup}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## À propos du service de sauvegarde et restauration (Backup and Restore) {#about-the-backup-and-restore-service}
 
@@ -57,11 +61,11 @@ Vous passez en mode de sauvegarde pour permettre les sauvegardes à chaud d’un
 * La durée d’exécution de la procédure de sauvegarde.
 * Un indicateur qui signale si le mode de sauvegarde en continu doit être activé, ce qui n’est utile que si vous effectuez des sauvegardes en continu.
 
-Avant d’écrire des applications pour passer en mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde qui seront utilisées après avoir activé le mode de sauvegarde sur le serveur Forms. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, reportez-vous à l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63).
+Avant d’écrire des applications pour passer en mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde qui seront utilisées après avoir activé le mode de sauvegarde sur le serveur Forms. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, reportez-vous à l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Sauvegarder et Restaurer, reportez-vous aux [références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Sauvegarder et Restaurer, reportez-vous aux [références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -86,7 +90,7 @@ Pour quitter le mode de sauvegarde par programme, créez un objet client BackupS
 
 **Choisir un libellé unique, déterminer le temps nécessaire à la sauvegarde et décider s’il faut passer en mode de sauvegarde continue**
 
-Avant de passer en mode de sauvegarde, vous devez choisir un libellé unique, déterminer le temps que vous souhaitez allouer à l’exécution de la sauvegarde et décider si vous souhaitez que le serveur Forms reste en mode de sauvegarde. Ces considérations sont importantes pour l’intégration aux procédures de sauvegarde établies par votre organisation. (Voir l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Avant de passer en mode de sauvegarde, vous devez choisir un libellé unique, déterminer le temps que vous souhaitez allouer à l’exécution de la sauvegarde et décider si vous souhaitez que le serveur Forms reste en mode de sauvegarde. Ces considérations sont importantes pour l’intégration aux procédures de sauvegarde établies par votre organisation. (Voir l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).)
 
 **Activer le mode de sauvegarde**
 
@@ -182,11 +186,11 @@ Pour passer en mode de sauvegarde à l’aide du service web fourni par l’API 
 
 Vous devez quitter le mode de sauvegarde afin que le serveur Forms puisse reprendre la purge des fichiers du répertoire de stockage global de documents (GDS) sur le serveur Forms.
 
-Avant d’écrire des demandes pour quitter le mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde utilisées avec AEM Forms. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, consultez la section [Aide dʼadministration](https://www.adobe.com/go/learn_aemforms_admin_63).
+Avant d’écrire des demandes pour quitter le mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde utilisées avec AEM Forms. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, consultez la section [Aide dʼadministration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Sauvegarder et Restaurer, reportez-vous aux [références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Sauvegarder et Restaurer, reportez-vous aux [références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 

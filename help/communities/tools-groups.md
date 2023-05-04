@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
 role: Admin
 exl-id: ac399a66-0f3b-4f95-969e-a4109c260d1d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 2%
+source-wordcount: '569'
+ht-degree: 3%
 
 ---
 
 # Modèles de groupe {#group-templates}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 La console Modèles de groupe est très similaire au [Modèles de site](sites.md) console. Il s’agit de plans directeurs pour un ensemble de pages préconfigurées et de fonctionnalités qui forment un site communautaire. La différence est qu’un modèle de site est destiné à la communauté principale et qu’un modèle de groupe est destiné à un groupe de communauté, une sous-communauté imbriquée dans la communauté principale.
 

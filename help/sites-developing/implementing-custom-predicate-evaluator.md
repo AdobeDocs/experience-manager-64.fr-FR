@@ -1,7 +1,7 @@
 ---
 title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder
 seo-title: Implementing a Custom Predicate Evaluator for the Query Builder
-description: Query Builder offre un moyen simple pour effectuer des requêtes sur le référentiel de contenu.
+description: Query Builder offre un moyen simple d’interroger le référentiel de contenu.
 seo-description: The Query Builder offers an easy way of querying the content repository
 uuid: 5b599b60-a149-4425-b7ac-7fbe7e048bca
 contentOwner: Guillaume Carlino
@@ -10,26 +10,30 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 08bdade7-fdad-445d-80fe-8fc06596dace
 exl-id: afa7f346-fefa-4faa-bf2d-7480a7e5a5ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 95%
+source-wordcount: '810'
+ht-degree: 69%
 
 ---
 
 # Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-Cette section décrit comment étendre [Query Builder](/help/sites-developing/querybuilder-api.md) en mettant en œuvre un évaluateur de prédicat personnalisé.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Cette section décrit comment étendre le [Query Builder](/help/sites-developing/querybuilder-api.md) en implémentant un évaluateur de prédicat personnalisé.
 
 ## Présentation {#overview}
 
-[Query Builder](/help/sites-developing/querybuilder-api.md) offre un moyen simple pour effectuer des requêtes sur le référentiel de contenu. AEM est fourni avec un ensemble d’évaluateurs de prédicats qui vous aident à traiter vos données.
+Le [Query Builder](/help/sites-developing/querybuilder-api.md) offre un moyen simple d’interroger le référentiel de contenu. AEM est fourni avec un ensemble d’évaluateurs de prédicats qui vous aident à traiter vos données.
 
-Toutefois, vous pouvez simplifier vos requêtes en mettant en œuvre un évaluateur de prédicat personnalisé qui masque une partie de la complexité et assure une meilleure sémantique.
+Cependant, vous pouvez simplifier vos requêtes en implémentant un évaluateur de prédicat personnalisé qui masque une certaine complexité et garantit une meilleure sémantique.
 
-Un prédicat personnalisé peut également réaliser d’autres actions qui ne sont pas directement possibles avec XPath, par exemple :
+Un prédicat personnalisé peut également effectuer d’autres tâches qui ne sont pas directement possibles avec XPath, par exemple :
 
-* Recherche de certaines données d’un service donné
+* recherche de certaines données à partir de certains services ;
 * Filtrage personnalisé basé sur le calcul
 
 >[!NOTE]
@@ -51,11 +55,11 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 Un évaluateur gère l’évaluation de certains prédicats qui constituent les contraintes définissant une requête.
 
-Il mappe une contrainte de recherche de plus haut niveau (par exemple, « width > 200 ») sur une requête JCR spécifique qui est adaptée au modèle de contenu actuel (par exemple, metadata/@width > 200). Il peut également filtrer manuellement les nœuds et vérifier leurs contraintes.
+Elle mappe une contrainte de recherche de niveau supérieur (telle que &quot;width > 200&quot;) à une requête JCR spécifique qui correspond au modèle de contenu réel (par exemple, metadata/@width > 200). Il peut également filtrer manuellement les nœuds et vérifier leurs contraintes.
 
 >[!NOTE]
 >
->Pour plus d’informations sur `PredicateEvaluator` et le module `com.day.cq.search`, voir la [documentation Java](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html).
+>Pour plus d’informations sur `PredicateEvaluator` et le package `com.day.cq.search`, voir la [documentation Java](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ## Mise en œuvre d’un évaluateur de prédicat personnalisé pour les métadonnées de réplication {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -105,7 +109,7 @@ Le regroupement des prédicats de métadonnées de réplication avec un évaluat
 
 >[!NOTE]
 >
->La configuration de nouveaux projets AEM à l’aide de Maven est décrite dans [Création de projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
+>La configuration de nouveaux projets AEM à l’aide de maven est documentée par [Création de projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 Tout d’abord, vous devez mettre à jour les dépendances Maven de votre projet. `PredicateEvaluator` fait partie de l’artefact `cq-search` et doit donc être ajouté à votre fichier pom Maven.
 
@@ -147,7 +151,7 @@ Le projet `cq-search` contient la classe abstraite `AbstractPredicateEvaluator`.
 
    src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java
 
-   Le fragment suivant présente les différences au [format diff unifié](https://en.wikipedia.org/wiki/Diff#Unified_format).
+   Le fragment suivant présente les différences au [format diff unifié](https://fr.wikipedia.org/wiki/Diff#Unified_format).
 
 
 ```

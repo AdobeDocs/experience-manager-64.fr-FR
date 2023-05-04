@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: abc2af58-3bf7-493e-917d-081022afb9a3
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 97%
+source-wordcount: '1545'
+ht-degree: 96%
 
 ---
 
 # Démarrages rapides de l’API Forms Service {#forms-service-api-quick-starts}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les tutoriels de démarrage rapides ci-dessous sont disponibles pour le service Forms :
 

@@ -11,26 +11,30 @@ topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 role: Developer
 exl-id: 82770ac6-aafc-44b9-82fb-6f193bb3a128
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2492'
-ht-degree: 99%
+source-wordcount: '2528'
+ht-degree: 96%
 
 ---
 
 # Appeler AEM Forms à l’aide de demandes REST {#invoking-aem-forms-using-rest-requests}
 
-les processus créés dans Workbench peuvent être configurés pour être invoqués via des demandes REST (Representational State Transfer). Ces demandes sont envoyées à partir de pages HTML. C’est pourquoi, vous pouvez appeler un processus Forms directement à partir d’une page web à l’aide d’une requête REST. Vous pouvez par exemple ouvrir une nouvelle instance d’une page web. Vous pouvez ensuite appeler un processus Forms et charger un document PDF généré avec les données envoyées dans une requête HTTP POST.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Les processus créés dans Workbench peuvent être configurés de sorte que vous puissiez les appeler par le biais de demandes REST (Really State Transfer). Les demandes REST sont envoyées à partir de pages de HTML. C’est pourquoi, vous pouvez appeler un processus Forms directement à partir d’une page web à l’aide d’une requête REST. Vous pouvez par exemple ouvrir une nouvelle instance d’une page web. Vous pouvez ensuite appeler un processus Forms et charger un document PDF généré avec les données envoyées dans une requête HTTP POST.
 
 Il existe deux types de clients HTML. Le premier client HTML est un client AJAX écrit en JavaScript. Le second type de client est un formulaire HTML contenant un bouton d’envoi. Outre lʼapplication client HTML, il existe dʼautres clients REST possibles. Toute application client prenant en charge les requêtes HTTP peut appeler un service à l’aide d’un appel REST. Par exemple, vous pouvez appeler un service à partir d’un formulaire PDF via un appel REST. (Consultez la section [Appeler le processus MyApplication/EncryptDocument depuis Acrobat](#rest-invocation-examples)).
 
-Lorsque vous utilisez des requêtes REST, il est recommandé de ne pas appeler directement les services Forms. Au lieu de cela, appelez les processus qui ont été créés dans Workbench. Lors de la création d’un processus destiné à un appel REST, utilisez un point de départ programmatique. Le point de terminaison REST est alors ajouté automatiquement. Pour plus d’informations sur la création de processus dans Workbench, consultez la section [Utiliser Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).
+Lorsque vous utilisez des requêtes REST, il est recommandé de ne pas appeler directement les services Forms. Au lieu de cela, appelez les processus qui ont été créés dans Workbench. Lors de la création d’un processus destiné à un appel REST, utilisez un point de départ programmatique. Le point d’entrée REST est alors ajouté automatiquement. Pour plus d’informations sur la création de processus dans Workbench, consultez la section [Utiliser Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).
 
 Lorsque vous appelez un service à l’aide de REST, vous êtes invité à saisir un nom d’utilisateur et un mot de passe AEM Forms. Toutefois, si vous ne souhaitez pas spécifier un nom d’utilisateur et un mot de passe, vous pouvez désactiver la sécurité du service.
 
-Pour appeler un service Forms (un processus devient un service lorsque le processus est activé) à l’aide de REST, configurez un point de terminaison REST. (Consultez la section « Gérer les points de terminaison » dans lʼ[Aide dʼadministration](https://www.adobe.com/go/learn_aemforms_admin_63_fr)).
+Pour appeler un service Forms (un processus devient un service lorsque le processus est activé) à l’aide de REST, configurez un point d’entrée REST. (Consultez la section « Gérer les points d’entrée » dans lʼ[Aide dʼadministration](https://www.adobe.com/go/learn_aemforms_admin_63_fr)).
 
-Une fois la configuration dʼun point de terminaison REST terminée, vous pouvez appeler un service Forms à l’aide d’une méthode HTTP GET ou POST.
+Une fois la configuration dʼun point d’entrée REST terminée, vous pouvez appeler un service Forms à l’aide d’une méthode HTTP GET ou POST.
 
 ```as3
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
@@ -149,7 +153,7 @@ Pour assurer une transmission sécurisée des appels REST, un administrateur d�
 
 >[!NOTE]
 >
->En tant que développeur Workbench souhaitant exposer ses processus via un point de terminaison REST, gardez à l’esprit le problème de la vulnérabilité XSS. Les vulnérabilités XSS peuvent être exploitées pour voler ou manipuler des cookies, modifier la présentation du contenu et compromettre des informations confidentielles. Il est recommandé d’étendre la logique de processus avec les règles supplémentaires de validation des données d’entrée et de sortie pour éviter les problèmes de vulnérabilité XSS.
+>En tant que développeur Workbench souhaitant exposer ses processus via un point d’entrée REST, gardez à l’esprit le problème de la vulnérabilité XSS. Les vulnérabilités XSS peuvent être exploitées pour voler ou manipuler des cookies, modifier la présentation du contenu et compromettre des informations confidentielles. Il est recommandé d’étendre la logique de processus avec les règles supplémentaires de validation des données d’entrée et de sortie pour éviter les problèmes de vulnérabilité XSS.
 
 ## Services AEM Forms qui prennent en charge les appels REST {#aem-forms-services-that-support-rest-invocation}
 
@@ -289,11 +293,11 @@ Vous pouvez appeler un processus de courte durée AEM Forms nommé *MyApplicatio
 
 >[!NOTE]
 >
->Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre l’exemple de code, créez un processus appelé `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre l’exemple de code, créez un processus appelé `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
-1. Obtention du document PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
+1. Obtient le document de PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
 1. Chiffrement du document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le document PDF chiffré avec un mot de passe est retourné dans une variable de processus nommée `outDoc`.
 
    Lorsque ce processus est appelé à l’aide d’une requête REST, le document de PDF chiffré s’affiche dans le navigateur web. Avant d’afficher le document PDF, vous devez spécifier le mot de passe (sauf si la protection est désactivée). Le code HTML suivant représente une demande d’appel REST au processus `MyApplication/EncryptDocument`.

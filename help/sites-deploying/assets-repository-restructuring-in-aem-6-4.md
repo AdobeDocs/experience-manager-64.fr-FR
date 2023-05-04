@@ -10,29 +10,33 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: Upgrading
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 90%
+source-wordcount: '1149'
+ht-degree: 79%
 
 ---
 
 # Restructuration des référentiels d’Assets dans AEM 6.4{#assets-repository-restructuring-in-aem}
 
-Comme indiqué dans la page parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution AEM Assets. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Comme indiqué dans la page parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution AEM Assets. Certaines modifications nécessitent des efforts lors de la mise à niveau vers AEM 6.4, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version 6.5.
 
 **Avec la mise à niveau vers la version 6.4**
 
 * [Divers](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#misc)
 
-**Avant de procéder à la mise à niveau vers la version 6.5**
+**Avant la mise à niveau vers la version 6.5**
 
 * [Modèle de notification par e-mail d’événement de ressource/collection](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#asset-collection-event-e-mail-notification-template)
 * [Conceptions classiques de partage de ressources](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#classic-asset-share-designs)
 * [Modèle de notification par e-mail de téléchargement de ressource](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#download-asset-e-mail-notification-template)
 * [Exemple de licences DRM](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#example-drm-licenses)
 
-* [Modèle de notification par e-mail de lien de partage](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#link-share-e-mail-notification-template)
+* [Modèle de notification par e-mail de partage de lien](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#link-share-e-mail-notification-template)
 * [Scripts de workflow InDesign](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#indesign-workflow-scripts)
 * [Configurations de transcodage vidéo](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#video-transcoding-configurations)
 * [Divers](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#misc2)
@@ -53,7 +57,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr> 
   <tr> 
    <td><strong>Conseil de restructuration</strong></td> 
-   <td><p>Si du code personnalisé dépend de cet emplacement (par exemple, le code repose explicitement sur ce chemin), il doit être mis à jour pour utiliser le nouvel emplacement avant de procéder à la mise à niveau. Idéalement, les API Java sont utilisées lorsqu’elles sont disponibles pour limiter les dépendances sur un chemin spécifique dans JCR.</p> <p>Emplacement temporaire pour contenir le fichier zip à télécharger par le client. Il n’est pas nécessaire d’effectuer une mise à jour, car lorsque le client demande de télécharger la ressource, il génère un fichier au nouvel emplacement.</p> </td> 
+   <td><p>Si du code personnalisé dépend de cet emplacement (par exemple, le code repose explicitement sur ce chemin), le code doit être mis à jour pour utiliser le nouvel emplacement avant la mise à niveau ; Idéalement, les API Java sont utilisées lorsqu’elles sont disponibles pour réduire les dépendances sur n’importe quel chemin spécifique dans le JCR.</p> <p>Emplacement temporaire pour contenir le fichier zip à télécharger par le client. Il n’est pas nécessaire d’effectuer une mise à jour, car lorsque le client demande de télécharger la ressource, Il génère le fichier au nouvel emplacement.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Remarques</strong></td> 
@@ -62,7 +66,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
  </tbody> 
 </table>
 
-## Avant de procéder à la mise à niveau vers la version 6.5 {#prior-to-upgrade}
+## Avant la mise à niveau vers la version 6.5 {#prior-to-upgrade}
 
 ### Modèle de notification par e-mail d’événement de ressource/collection {#asset-collection-event-e-mail-notification-template}
 
@@ -116,7 +120,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
      <li>Copiez les conceptions de l’emplacement précédent vers le nouvel emplacement sous <code>/apps</code>.</li> 
      <li>Convertissez les ressources statiques, CSS et JavaScript dans la conception en <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">bibliothèque cliente</a> avec <code>allowProxy = true</code>.</li> 
      <li>Mettez à jour les références à l’emplacement précédent dans la propriété <code>cq:designPath</code> via <strong>AEM &gt; Administrateur de gestion des ressources numériques &gt; Page de partage des ressources &gt; Propriétés de la page &gt; Onglet avancé &gt; Champ de conception</strong>.</li> 
-     <li>Mettez à jour les pages faisant référence à l’emplacement précédent pour utiliser la nouvelle catégorie Bibliothèque cliente. Cela nécessite la mise à jour du code de mise en oeuvre de la page.</li> 
+     <li>Mettez à jour les pages faisant référence à l’emplacement précédent pour utiliser la nouvelle catégorie de bibliothèque cliente. Cela nécessite la mise à jour du code d’implémentation de la page.</li> 
      <li>Mettez à jour les règles de Dispatcher pour autoriser le service de bibliothèques clientes via la servlet proxy <code>/etc.clientlibs/</code>.</li> 
     </ol> <p>Pour les conceptions qui ne sont pas gérées dans SCM et modifiées au moment de l’exécution via les boîtes de dialogue de conception, ne déplacez pas les conceptions activées par l’auteur en dehors de <code>/etc</code>.</p> </td> 
   </tr> 
@@ -155,7 +159,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr> 
   <tr> 
    <td><strong>Remarques</strong></td> 
-   <td>Bien que <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> soit pris en charge techniquement (avec la priorité sur /apps via la recherche habituelle Sling CAConfig<code>/etc</code>), le modèle peut être placé dans <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. Cependant, cela n’est pas recommandé car il n’y a pas d’IU d’exécution pour faciliter la modification du modèle d’e-mail.</td> 
+   <td>Bien que <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> soit pris en charge techniquement (avec la priorité sur /apps via la recherche habituelle Sling CAConfig<code>/etc</code>), le modèle peut être placé dans <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. Cela n’est toutefois pas recommandé, car il n’existe pas d’interface utilisateur d’exécution pour faciliter la modification du modèle d’e-mail.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -168,7 +172,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
 | **Conseils de restructuration** | S/O |
 | **Remarques** | S/O |
 
-### Modèle de notification par e-mail de lien de partage {#link-share-e-mail-notification-template}
+### Modèle de notification par e-mail de partage de lien {#link-share-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -196,7 +200,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr> 
   <tr> 
    <td><strong>Remarques</strong></td> 
-   <td>Bien que <code>/conf/global/settings/dam/adhocassetshare</code> soit techniquement pris en charge pour la recherche (il est prioritaire par rapport à <code>/apps</code> dans la recherche habituelle Sling CAConfig, mais passe après <code>/etc</code>), le modèle peut être placé dans <code>/conf/global/settings/dam/adhocassetshare</code>. Cependant, cela n’est pas recommandé car il n’y a pas d’IU d’exécution pour faciliter la modification du modèle d’e-mail.</td> 
+   <td>Bien que <code>/conf/global/settings/dam/adhocassetshare</code> soit techniquement pris en charge pour la recherche (il est prioritaire par rapport à <code>/apps</code> dans la recherche habituelle Sling CAConfig, mais passe après <code>/etc</code>), le modèle peut être placé dans <code>/conf/global/settings/dam/adhocassetshare</code>. Toutefois, cela n’est pas recommandé, car il n’existe pas d’interface utilisateur d’exécution pour faciliter la modification du modèle d’e-mail.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -276,7 +280,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr> 
   <tr> 
    <td><strong>Conseil de restructuration</strong></td> 
-   <td><p>Les paramètres prédéfinis prêts à l’emploi de la visionneuse ne seront disponibles que dans le nouvel emplacement.</p> <p>Pour les paramètres prédéfinis personnalisés de la visionneuse :</p> 
+   <td><p>Pour le paramètre prédéfini de visionneuse prêt à l’emploi, il est disponible uniquement au nouvel emplacement.</p> <p>Pour le paramètre prédéfini de visionneuse personnalisée :</p> 
     <ul> 
      <li>vous devez exécuter un script de migration pour déplacer le nœud de <code>/etc</code> vers <code>/conf</code>. Le script se trouve à l’adresse <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
      <li>ou vous pouvez modifier la configuration pour qu’ils soient enregistrés automatiquement au nouvel emplacement.</li> 

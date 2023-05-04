@@ -1,7 +1,7 @@
 ---
 title: Identity Management
 seo-title: Identity Management
-description: Découvrez la gestion de l’identité dans AEM.
+description: Découvrez la gestion des identités dans AEM.
 seo-description: Learn about identity management in AEM.
 uuid: 719601d2-b850-4114-8ece-1b11708a5078
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a6d9b08d-e669-4b9b-b591-c21cd72b6e22
 exl-id: 82e4af22-30b7-4678-9b14-84f2fecfd310
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 99%
+source-wordcount: '1262'
+ht-degree: 65%
 
 ---
 
 # Identity Management{#identity-management}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les visiteurs individuels de votre site web ne peuvent être identifiés que lorsque vous leur donnez la possibilité de se connecter. Vous pouvez leur permettre de se connecter pour différentes raisons :
 
@@ -42,20 +46,20 @@ La fonctionnalité de connexion (et de déconnexion) est mise à disposition par
 
    Si vous disposez d’un petit nombre de profils, qui devront de toute façon être autorisés, vous pouvez décider de les enregistrer directement.
 
-Pour permettre aux visiteurs de s’enregistrer, une série de composants et de formulaires peut être utilisée pour recueillir les informations d’identification nécessaires, puis d’autres informations de profil (facultatives). Une fois qu’ils se sont enregistrés, ils doivent également pouvoir vérifier et mettre à jour les informations qu’ils ont envoyées.
+Pour permettre aux visiteurs de s’enregistrer, une série de composants et de formulaires peut être utilisée pour recueillir les informations d’identification nécessaires, puis d’autres informations de profil (facultatives). Une fois enregistré, il doit également pouvoir vérifier et mettre à jour les détails qu’il a soumis.
 
-La fonctionnalité supplémentaire peut être configurée ou développée :
+D’autres fonctionnalités peuvent être configurées ou développées :
 
-* Configurez une réplication inverse nécessaire.
-* Permettez à un utilisateur de supprimer son profil en développant un formulaire associé à un workflow.
+* Configurez toute réplication inverse requise.
+* Permet à un utilisateur de supprimer son profil, en développant un formulaire avec un workflow.
 
 >[!NOTE]
 >
->Les informations spécifiées dans le profil peuvent également être utilisées pour proposer à l’utilisateur du contenu ciblé par le biais de [segments](/help/sites-administering/campaign-segmentation.md) et de [campagnes](/help/sites-authoring/personalization.md).
+>Les informations spécifiées dans le profil peuvent également être utilisées pour fournir à l’utilisateur du contenu ciblé via [Segments](/help/sites-administering/campaign-segmentation.md) et [Campagnes](/help/sites-authoring/personalization.md).
 
-## Formulaires d’enregistrement {#registration-forms}
+## Enregistrement de Forms {#registration-forms}
 
-Un formulaire peut être utilisé pour collecter des informations d’enregistrement, puis générer le nouveau compte et le nouveau profil.
+Un formulaire peut être utilisé pour collecter les informations d’enregistrement, puis générer le nouveau compte et le nouveau profil.
 
 Par exemple, les utilisateurs peuvent demander un nouveau profil à l’aide de la page Geometrixx\
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
@@ -70,7 +74,7 @@ Le nouveau compte est également visible dans la [console Utilisateurs](/help/si
 
 ## Connexion {#login}
 
-Le composant Connexion peut être utilisé pour collecter les informations de connexion, puis activer le processus de connexion.
+Le composant de connexion peut être utilisé pour collecter les informations de connexion, puis activer le processus de connexion.
 
 Les champs standard **Nom d’utilisateur** et **Mot de passe**, avec un bouton **Connexion**, s’affichent à l’intention du visiteur afin de lui permettre d’activer le processus de connexion lors de la saisie des informations d’identification.
 
@@ -82,7 +86,7 @@ Par exemple, les utilisateurs peuvent se connecter ou créer un compte à l’ai
 
 ## Déconnexion {#logging-out}
 
-Tout comme il y a un mécanisme de connexion, un mécanisme de déconnexion est également nécessaire. Il est disponible sous la forme de l’option **Se connecter** dans Geometrixx.
+Tout comme il y a un mécanisme de connexion, un mécanisme de déconnexion est également nécessaire. Cette option est disponible sous la forme **Se déconnecter** dans Geometrixx.
 
 ## Affichage et mise à jour d’un profil {#viewing-and-updating-a-profile}
 
@@ -102,21 +106,21 @@ Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/s
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. Cliquez sur **Mon profil** dans le coin supérieur droit. Le profil de votre compte actuel s’affiche. Par exemple, l’administrateur.
-1. Appuyez sur les touches **Ctrl+Alt+C** pour ouvrir le contexte du client.
-1. Dans le coin supérieur gauche du contexte du client, cliquez sur le bouton **Charger un profil**.
+1. Cliquez sur **Mon profil** dans le coin supérieur droit. Le profil de votre compte actuel s’affiche. par exemple l’administrateur.
+1. Press **control-alt-C** pour ouvrir le contexte client.
+1. Dans le coin supérieur gauche du contexte client, cliquez sur le bouton **Chargement d’un profil** bouton .
 
    ![](do-not-localize/loadprofile.png)
 
-1. Sélectionnez un autre profil dans la liste déroulante de la boîte de dialogue. Par exemple, **Alison Parker**.
+1. Sélectionnez un autre profil dans la liste déroulante de la boîte de dialogue ; par exemple, **Alison Parker**.
 1. Cliquez sur **OK**.
-1. Cliquez de nouveau sur **Mon profil**. Le formulaire est mis à jour avec les détails d’Alison.
+1. Cliquez de nouveau sur **Mon profil**. Le formulaire sera mis à jour avec les détails d’Alison.
 
    ![profilealison](assets/profilealison.png)
 
-1. Vous pouvez maintenant utiliser **Modifier le profil** ou **Modifier le mot de passe** pour mettre à jour les informations.
+1. Vous pouvez désormais utiliser **Modifier le profil** ou **Modifier le mot de passe** pour mettre à jour les détails.
 
-## Ajout de champs à la définition d’un profil {#adding-fields-to-the-profile-definition}
+## Ajout de champs à la définition de profil {#adding-fields-to-the-profile-definition}
 
 Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pour ajouter un champ Couleur préférée au profil Geometrixx :
 
@@ -150,13 +154,13 @@ Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pou
 
 Différents cas d’utilisation nécessitent de savoir si un utilisateur (ou plutôt son profil) est dans un *état spécifique* ou non.
 
-Cela implique de définir, dans le profil utilisateur, une propriété appropriée qui :
+Cela implique de définir une propriété appropriée dans le profil utilisateur de manière à :
 
-* soit visible et accessible à l’utilisateur ;
-* définisse deux états pour chaque propriété ;
-* permette de basculer entre les deux états définis.
+* est visible et accessible pour l’utilisateur ;
+* définit deux états pour chaque propriété ;
+* permet de basculer entre les deux états définis.
 
-Cette opération s’effectue avec :
+Pour ce faire, procédez comme suit :
 
 * [Fournisseurs d’état](#state-providers)
 
@@ -175,9 +179,9 @@ Différents états peuvent être définis. Dans Geometrixx, par exemple, il s’
 
 Un fournisseur d’état gère le statut actuel de la propriété en question, ainsi que les transitions entre les deux états possibles.
 
-Les fournisseurs d’état sont mis en œuvre sous forme de composants et peuvent donc être personnalisés pour votre projet. Dans Geometrixx, ces états sont les suivants :
+Les fournisseurs d’état sont mis en œuvre sous forme de composants et peuvent donc être personnalisés pour votre projet. En Geometrixx, ces éléments sont les suivants :
 
-* S’abonner/Se désabonner du sujet du forum
+* S&#39;abonner/Se désabonner du sujet du forum
 * Ajouter/Supprimer un ami
 
 ### Workflows {#workflows}
@@ -194,41 +198,41 @@ Le profil se trouve sous `/home/users/geometrixx` :
 
 ![chlimage_1-385](assets/chlimage_1-385.png)
 
-Dans une configuration standard (création ou publication), chacun possède un accès en lecture à toutes les informations de profil de tous les utilisateurs. Chacun est un *groupe intégré contenant automatiquement tous les utilisateurs et groupes existants. La liste des membres ne peut pas être modifiée*.
+Dans une configuration standard (création ou publication), chacun possède un accès en lecture à toutes les informations de profil de tous les utilisateurs. Chacun est un *groupe intégré contenant automatiquement tous les utilisateurs et groupes existants. La liste des membres ne peut pas être modifiée.*&quot;.
 
-Ces droits d’accès sont définis par la liste de contrôle d’accès générique suivante :
+Ces droits d’accès sont définis par la liste de contrôle d’accès générique suivante :
 
 /home everyone permet jcr:read rep:glob = &amp;ast;/profile&amp;ast;
 
-Elle autorise :
+Cela permet :
 
-* L’affichage des informations des forums, commentaires ou articles de blog (comme l’icône ou le nom complet) du profil approprié
-* Les liens vers des pages de profil geometrixx
+* forum, commentaires ou publications de blog pour afficher des informations (telles qu’une icône ou un nom complet) à partir du profil approprié.
+* liens vers les pages de profil geometrixx
 
-Si cet accès n’est pas approprié pour votre installation, vous pouvez modifier ces paramètres par défaut.
+Si cet accès n’est pas adapté à votre installation, vous pouvez modifier ces paramètres par défaut.
 
 À cet effet, utilisez l’onglet **[Contrôle d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management)** :
 
 ![aclmanager](assets/aclmanager.png)
 
-## Composants Profil {#profile-components}
+## Composants de profil {#profile-components}
 
-Une plage de composants Profil est également disponible pour définir les exigences de profil de votre site.
+Plusieurs composants de profil sont également disponibles pour définir les exigences de profil de votre site.
 
-### Champ du mot de passe coché {#checked-password-field}
+### Champ du mot de passe vérifié {#checked-password-field}
 
-Ce composant fournit deux champs pour :
+Ce composant vous donne deux champs pour :
 
-* la saisie d’un mot de passe ;
-* une nouvelle saisie du mot de passe pour vérifier qu’il a été saisi correctement.
+* saisie d’un mot de passe
+* une vérification pour confirmer que le mot de passe a été saisi correctement.
 
-Avec les paramètres par défaut, le composant ressemble à celui-ci :
+Avec les paramètres par défaut, le composant s’affiche comme suit :
 
 ![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
 
 ### Photo de l’avatar du profil {#profile-avatar-photo}
 
-Ce composant fournit à l’utilisateur une méthode pour sélectionner un fichier de photo d’avatar et le télécharger.
+Ce composant fournit à l’utilisateur un mécanisme permettant de sélectionner et de charger un fichier photo d’avatar.
 
 ![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png)
 
@@ -238,8 +242,8 @@ Ce composant permet à l’utilisateur de saisir un nom détaillé.
 
 ![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
 
-### Genre du profil {#profile-gender}
+### Sexe du profil {#profile-gender}
 
-Ce composant permet à l’utilisateur d’indiquer son sexe.
+Ce composant permet à l’utilisateur de saisir son sexe.
 
 ![dc_profiles_gender](assets/dc_profiles_gender.png)

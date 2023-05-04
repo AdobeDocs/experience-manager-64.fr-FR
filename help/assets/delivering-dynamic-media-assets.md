@@ -12,23 +12,27 @@ discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
 feature: Asset Management
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 91%
+source-wordcount: '353'
+ht-degree: 61%
 
 ---
 
 # Diffusion de ressources Dynamic Media {#delivering-dynamic-media-assets}
 
-La diffusion des ressources Dynamic Media (vidéos et images) dépend de la mise en œuvre de votre site web.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+La manière dont vous pouvez diffuser vos ressources Dynamic Media (vidéo et images) dépend de la mise en oeuvre de votre site web.
 
 Avec Dynamic Media, vous disposez de plusieurs options :
 
 * Si votre site web est hébergé sur AEM, vous souhaiterez ajouter les ressources Dynamic Media directement à votre page.
 * Si votre site web n’est pas hébergé par AEM, les possibilités suivantes s’offrent à vous :
 
-   * Intégration de votre vidéo ou image à votre site web.
+   * Incorporation de votre vidéo ou image sur votre site web.
    * Liez des URL à votre application web. Utilisez la liaison lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre contextuelle ou modale.
    * Si votre site est réactif, vous pouvez [diffuser des images optimisées.](responsive-site.md)
 
@@ -50,6 +54,6 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 ## Diffusion de ressources Dynamic Media via HTTP/2 {#http-delivery-of-dynamic-media-assets}
 
-AEM prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
+AEM prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code incorporé pour l’image ou la vidéo peut être intégré à toute application qui accepte une ressource hébergée. Cette ressource publiée est ensuite diffusée au moyen du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
-Pour en savoir plus, reportez-vous aux [Questions fréquentes sur la diffusion de contenu HTTP/2](/help/sites-administering/scene7-http2faq.md).
+Voir [Questions fréquentes sur la diffusion de contenu HTTP/2](/help/sites-administering/scene7-http2faq.md) pour en savoir plus.

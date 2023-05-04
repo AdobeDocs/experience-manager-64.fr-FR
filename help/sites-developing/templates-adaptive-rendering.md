@@ -10,39 +10,43 @@ topic-tags: platform
 content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 exl-id: a2adc825-2a18-42b8-a639-c48243b2279c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 100%
+source-wordcount: '522'
+ht-degree: 61%
 
 ---
 
 # Rendu de modèle adaptatif{#adaptive-template-rendering}
 
-Le rendu de modèle adaptatif permet de gérer une page avec des variantes. Servant au départ à fournir diverses sorties HTML pour les appareils mobiles (par exemple, un téléphone multifonction ou un smartphone), cette fonctionnalité est utile si des expériences doivent être proposées sur divers appareils nécessitant un balisage ou une sortie HTML différents.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Le rendu de modèle adaptatif permet de gérer une page avec des variantes. Utile à l’origine pour fournir divers HTMLS de sortie pour les appareils mobiles (p. ex. téléphone polyvalent par rapport au smartphone), cette fonctionnalité est utile lorsque des expériences doivent être diffusées sur différents appareils qui ont besoin de balises différentes ou d’une sortie de HTML différente.
 
 ## Présentation {#overview}
 
 Les modèles sont généralement créés autour d’une grille réactive. Les pages créées à partir de ces modèles sont entièrement réactives, s’adaptant automatiquement à la fenêtre de l’appareil du client. À l’aide de la barre d’outils de l’émulateur dans l’éditeur de pages, les auteurs peuvent cibler des dispositions sur des appareils spécifiques.
 
-Il est également possible de configurer des modèles pour prendre en charge le rendu adaptatif. Lorsque les groupes d’appareils sont correctement configurés, la page est rendue avec un sélecteur différent dans l’URL lors de la sélection d’un appareil en mode émulateur. À l’aide d’un sélecteur, un rendu de page spécifique peut être appelé directement via l’URL.
+Il est également possible de configurer des modèles pour prendre en charge le rendu adaptatif. Lorsque les groupes d’appareils sont correctement configurés, la page est rendue avec un sélecteur différent dans l’URL lors de la sélection d’un appareil en mode émulateur. A l’aide d’un sélecteur, un rendu de page spécifique peut être appelé directement via l’URL.
 
-N’oubliez pas ce qui suit lors de la configuration de vos groupes d’appareils :
+N’oubliez pas de configurer vos groupes d’appareils :
 
 * Chaque appareil doit appartenir à au moins un groupe d’appareils.
-* Un appareil peut appartenir à plusieurs groupes d’appareils.
-* Étant donné que les appareils peuvent appartenir à plusieurs groupes d’appareils, les sélecteurs peuvent être combinés.
-* La combinaison de sélecteurs est évaluée de manière descendante car ils sont conservés dans le référentiel.
+* Un appareil peut se trouver dans plusieurs groupes d’appareils.
+* Les appareils pouvant appartenir à plusieurs groupes d’appareils, les sélecteurs peuvent être combinés.
+* La combinaison de sélecteurs est évaluée de haut en bas, car ils sont conservés dans le référentiel.
 
 >[!NOTE]
 >
->Le groupe d’appareils **Appareils sensibles** ne propose jamais de sélecteur, car les appareils reconnus comme prenant en charge le responsive design ne sont pas censés avoir besoin d’une disposition adaptative.
+>Groupe d’appareils **Appareils réactifs** ne disposera jamais d’un sélecteur, car les appareils reconnus comme prenant en charge la conception réactive sont supposés n’avoir pas besoin d’une mise en page adaptative.
 
 ## Configuration {#configuration}
 
-Les sélecteurs de rendu adaptatif peuvent être configurés pour les groupes d’appareils existants ou pour ceux [que vous avez vous-même créés.](/help/sites-developing/mobile.md#device-groups)
+Les sélecteurs de rendu adaptatif peuvent être configurés pour les groupes d’appareils existants ou pour [des groupes que vous avez vous-même créés.](/help/sites-developing/mobile.md#device-groups)
 
-Dans cet exemple, nous allons configurer le groupe d’appareils existant **Smart Phones** pour qu’il dispose d’un sélecteur de rendu adaptatif dans le modèle **Experience Page** sur We.Retail.
+Dans cet exemple, nous allons configurer le groupe d’appareils existant **Smart Phones** pour avoir un sélecteur de rendu adaptatif dans le **Page d’expérience** dans We.Retail.
 
 1. Modifiez le groupe d’appareils qui nécessite un sélecteur adaptatif dans `http://localhost:4502/miscadmin#/etc/mobile/groups`.
 

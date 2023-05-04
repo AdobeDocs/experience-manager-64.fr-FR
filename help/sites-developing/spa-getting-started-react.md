@@ -10,16 +10,20 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 0843ceff-2607-4733-8383-681820e513d1
 exl-id: 43376dfd-9cef-46f5-af14-21e379fbb79a
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 98%
+source-wordcount: '1214'
+ht-degree: 93%
 
 ---
 
 # Prise en main des SPA dans AEM avec React {#getting-started-with-spas-in-aem-react}
 
-Les applications sur une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs souhaitent pouvoir créer des sites à l’aide de structures SPA et les auteurs souhaitent modifier facilement du contenu dans AEM pour un site créé à l’aide de structures SPA.
 
 La fonction de création d’application sur une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente une SPA simplifiée dans le framework React, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA.
 
@@ -38,7 +42,7 @@ Cet article résume le fonctionnement de base d’une SPA simple et ce que vous 
 
 Pour plus de détails sur le fonctionnement des SPA dans AEM, consultez les documents suivants :
 
-* [Introduction et présentation des SPA](/help/sites-developing/spa-walkthrough.md)
+* [Introduction et présentation des applications monopage (SPA)](/help/sites-developing/spa-walkthrough.md)
 
 * [Introduction à la création d’une application d’une seule page](/help/sites-developing/spa-overview.md)
 
@@ -58,7 +62,7 @@ En plus de la dépendance React attendue, l’exemple de SPA tire parti de bibli
 
 ### Dépendances {#dependencies}
 
-Le fichier `package.json` définit les exigences du module SPA global. Les dépendances AEM minimales d’une SPA opérationnelle sont répertoriées ici.
+Le fichier `package.json` définit les exigences du package SPA global. Les dépendances AEM minimales d’une SPA opérationnelle sont répertoriées ici.
 
 ```
   "dependencies": {
@@ -116,11 +120,11 @@ module.exports = {
 
 ### Génération {#building}
 
-En réalité, la construction de l’application utilise [Webpack](https://webpack.js.org/) pour la transpilation, en plus du aem-clientlib-generator pour la création automatique de la bibliothèque cliente. Par conséquent, la commande de construction est similaire à :
+En réalité, la construction de l’application utilise [Webpack](https://webpack.js.org/) pour la transpilation, en plus du aem-clientlib-generator pour la création automatique de la bibliothèque cliente. Par conséquent, la commande de génération ressemblera à :
 
 `"build": "webpack && clientlib --verbose"`
 
-Une fois généré, le module peut être chargé dans une instance AEM.
+Une fois généré, le package peut être chargé dans une instance AEM.
 
 ### Archétype de projet AEM {#aem-project-archetype}
 
@@ -128,7 +132,7 @@ Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://experie
 
 ## Structure d’application {#application-structure}
 
-Si vous ajoutez les dépendances et que vous construisez votre application comme décrit précédemment, vous disposez d’un module SPA opérationnel que vous pouvez charger dans votre instance AEM.
+Si vous ajoutez les dépendances et que vous construisez votre application comme décrit précédemment, vous disposez d’un package SPA opérationnel que vous pouvez charger dans votre instance AEM.
 
 La section suivante de ce document explique comment une SPA est structurée dans AEM et décrit les fichiers importants qui pilotent l’application et leur interfonctionnement.
 

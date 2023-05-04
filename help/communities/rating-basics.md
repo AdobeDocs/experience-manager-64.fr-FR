@@ -10,20 +10,24 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 exl-id: f722051c-9512-4420-b12e-cb20aa6759f7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 5%
+source-wordcount: '315'
+ht-degree: 3%
 
 ---
 
 # Notions fondamentales sur la notation {#rating-essentials}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Le composant Évaluation, une [tally](tally.md) sous-classe , permet aux membres de la communauté connectés d’évaluer une fonctionnalité sur le site web.
 
 Le placement de plusieurs instances d’un composant Vote sur la même page est autorisé ; chaque instance doit être configurée avec une `tally name` .
 
-La publication anonyme d’une évaluation n’est pas possible. Les visiteurs du site ne doivent s’inscrire et se connecter qu’une seule fois pour participer à une évaluation. Le visiteur connecté (membre) peut modifier son évaluation à tout moment.
+La publication anonyme d’une évaluation n’est pas prise en charge. Les visiteurs du site ne doivent s’inscrire et se connecter qu’une seule fois pour participer à une évaluation. Le visiteur connecté (membre) peut modifier son évaluation à tout moment.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 

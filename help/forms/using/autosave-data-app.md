@@ -1,7 +1,7 @@
 ---
-title: Utilisation de l’enregistrement automatique dans l’application AEM Forms
+title: Utiliser l’enregistrement automatique dans l’application AEM Forms
 seo-title: Using autosave in AEM Forms app
-description: Apprenez à utiliser enregistrement automatique dans l’application AEM Forms afin d’éviter la perte de données.
+description: Découvrez comment utiliser la fonction d’enregistrement automatique dans l’application AEM Forms qui vous permet d’éviter la perte de données.
 seo-description: Learn how to use autosave feature in AEM Forms app that lets you avoid data loss.
 uuid: f18ab6b4-dd4a-4dcb-88e6-e349777d47ea
 contentOwner: sashanka
@@ -10,24 +10,28 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 133d93b0-512c-46db-b5f9-f981d77b565f
 exl-id: 6eb00c31-6806-478a-99d1-55912798ea69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 62%
 
 ---
 
-# Utilisation de l’enregistrement automatique dans l’application AEM Forms {#using-autosave-in-aem-forms-app}
+# Utiliser l’enregistrement automatique dans l’application AEM Forms {#using-autosave-in-aem-forms-app}
 
-Lorsqu’un utilisateur saisit des données dans l’application Adobe Experience Manager Forms, la fonction d’enregistrement automatique les enregistre à intervalles réguliers. La fonction d’enregistrement automatique de l’application AEM Forms vous permet d’éviter la perte de données si l’application se ferme accidentellement.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-L’application se ferme accidentellement :
+Lorsqu’un utilisateur saisit des données dans l’application Adobe Experience Manager Forms, la fonction d’enregistrement automatique les enregistre à intervalles réguliers. La fonction d’enregistrement automatique de l’application AEM Forms vous permet d’éviter toute perte de données si l’application est accidentellement fermée.
 
-* Si votre périphérique s’arrête car sa batterie est faible
+Votre application peut se fermer accidentellement :
+
+* Si votre appareil s’arrête en raison d’une batterie faible
 * Si l’utilisateur stoppe l’application
-* Si une panne inattendue se produit
+* En cas de blocage inattendu
 
-Vous pouvez spécifier les intervalles auxquels l’application enregistre les données saisies.
+Vous pouvez spécifier les intervalles après lesquels l’application enregistre les données saisies.
 
 >[!NOTE]
 >

@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 role: Developer
 exl-id: 0bca3af9-78df-44e6-96ef-62bda24d0025
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2473'
-ht-degree: 99%
+source-wordcount: '2509'
+ht-degree: 98%
 
 ---
 
 # Effectuer le rendu de formulaires PDF interactifs {#rendering-interactive-pdf-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Le service Forms effectue le rendu de formulaires PDF interactifs sur les appareils clients, généralement les navigateurs web, afin de collecter des informations auprès des utilisateurs. Une fois le formulaire interactif généré, l’utilisateur peut saisir des données dans les champs du formulaire et cliquer sur un bouton d’envoi situé sur le formulaire pour renvoyer les informations au service Forms. Adobe Reader ou Acrobat doit être installé sur l’ordinateur hébergeant le navigateur web client pour qu’un formulaire PDF interactif soit visible.
 

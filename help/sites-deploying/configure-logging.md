@@ -1,7 +1,7 @@
 ---
 title: Journalisation
 seo-title: Logging
-description: Découvrez comment configurer des paramètres globaux pour le service de journalisation centrale, des paramètres spécifiques pour les services individuels ou apprenez à demander la journalisation des données.
+description: Découvrez comment configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 seo-description: Learn how to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
 uuid: 8c9e3628-2f2c-445d-9706-5c7725b85fe2
 contentOwner: User
@@ -11,19 +11,23 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: d94b776d-db06-4f46-ac7f-c3b8e4160b69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 100%
+source-wordcount: '700'
+ht-degree: 59%
 
 ---
 
 # Journalisation{#logging}
 
-AEM vous offre la possibilité de configurer :
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-* les paramètres généraux du service de journalisation central ;
-* la journalisation des données de requête (une configuration de journalisation spécialisée pour les informations de requête) :
+AEM vous offre la possibilité de configurer :
+
+* paramètres globaux pour le service de journalisation central
+* la journalisation des données de demande ; une configuration de journalisation spécialisée pour les informations de requête ;
 * les paramètres spécifiques des services individuels ; par exemple, un fichier journal individuel et le format des messages du journal.
 
 Il s’agit toutes de [configurations OSGi](/help/sites-deploying/configuring-osgi.md).
@@ -34,10 +38,10 @@ Il s’agit toutes de [configurations OSGi](/help/sites-deploying/configuring-o
 
 ## Journalisation globale {#global-logging}
 
-La [configuration de la journalisation d’Apache Sling](/help/sites-deploying/osgi-configuration-settings.md) sert à configurer l’enregistreur racine. Cela définit les paramètres globaux pour la journalisation dans AEM :
+[Configuration de la journalisation Apache Sling](/help/sites-deploying/osgi-configuration-settings.md) est utilisé pour configurer l’enregistreur racine. Cela définit les paramètres globaux pour la connexion à AEM :
 
-* le niveau de journalisation
-* l’emplacement du fichier journal central
+* niveau de journalisation
+* l’emplacement du fichier journal central ;
 * le nombre de versions à conserver
 * la rotation de version (soit une taille maximale, soit un intervalle de temps)
 * le format à utiliser lors de l’écriture des messages du journal
@@ -51,7 +55,7 @@ La [configuration de la journalisation d’Apache Sling](/help/sites-deploying/
 En plus des paramètres de journalisation globale, AEM permet de configurer des paramètres spécifiques pour un service individuel :
 
 * le niveau de journalisation spécifique
-* l’emplacement du fichier journal individuel
+* l’emplacement du fichier journal individuel ;
 * le nombre de versions à conserver
 * la rotation de version (soit une taille maximale, soit un intervalle de temps) 
 * le format à utiliser lors de l’écriture des messages du journal
@@ -59,11 +63,11 @@ En plus des paramètres de journalisation globale, AEM permet de configurer des 
 
 Cela vous permet de canaliser les messages de journal pour un seul service dans un fichier distinct. Cela peut être particulièrement utile pendant le développement ou les tests, par exemple, si vous avez besoin d’un niveau de journalisation accru pour un service spécifique.
 
-AEM utilise ce qui suit pour écrire des messages de journal dans un fichier :
+AEM utilise les éléments suivants pour écrire des messages de journal dans le fichier :
 
-1. Un **service OSGi**(enregistreur) écrit un message de journal.
-1. Un **enregistreur de journalisation** met en forme ce message selon vos spécifications.
-1. Un **rédacteur de journalisation** rédige tous ces messages dans le fichier physique que vous avez défini.
+1. Un **Service OSGi** (journal) écrit un message de journal.
+1. A **Enregistreur de journalisation** prend ce message et le formate selon vos spécifications.
+1. A **Enregistreur de journalisation** écrit tous ces messages dans le fichier physique que vous avez défini.
 
 Ces éléments sont liés par les paramètres suivants pour les éléments appropriés :
 
@@ -81,11 +85,11 @@ Ces éléments sont liés par les paramètres suivants pour les éléments appro
 
    Définissez le fichier physique dans lequel les messages du journal seront écrits.
 
-   La valeur doit être identique au même paramètre de la configuration du rédacteur de journalisation, sinon la correspondance ne s’effectue pas. En l’absence de correspondance, un rédacteur implicite est créé avec la configuration par défaut (rotation quotidienne du journal).
+   La valeur doit être identique au même paramètre de la configuration du rédacteur de journalisation, sinon la correspondance ne s’effectue pas. S’il n’existe aucune correspondance, un rédacteur implicite est créé avec la configuration par défaut (rotation quotidienne du journal).
 
 ### Enregistreurs et rédacteurs standard {#standard-loggers-and-writers}
 
-Certains enregistreurs et rédacteurs sont inclus dans l’installation AEM standard.
+Certains enregistreurs et rédacteurs sont inclus dans une installation d’AEM standard.
 
 Le premier est un cas particulier car il contrôle à la fois les fichiers `request.log` et `access.log` :
 
@@ -107,7 +111,7 @@ Le premier est un cas particulier car il contrôle à la fois les fichiers `requ
 
 Ceux-ci peuvent être personnalisés si nécessaire, bien que la configuration standard convienne à la plupart des installations.
 
-Les autres paires suivent la configuration standard :
+Les autres paires suivent la configuration standard :
 
 * L’enregistreur :
 
@@ -133,19 +137,19 @@ Les autres paires suivent la configuration standard :
 
 ### Création de vos propres enregistreurs et rédacteurs {#creating-your-own-loggers-and-writers}
 
-Vous pouvez définir votre propre paire Enregistrer/Rédacteur :
+Vous pouvez définir votre propre paire enregistreur/rédacteur :
 
-1. Créez une nouvelle instance de la configuration d’usine [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md).
+1. Création d’une instance de la configuration d’usine [Configuration de l’enregistreur de journalisation Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
 
-   1. Définissez le fichier journal.
+   1. Spécifiez le fichier journal.
    1. Définissez l’enregistreur.
-   1. Configurez les autres paramètres en fonction de vos besoins.
+   1. Configurez les autres paramètres selon les besoins.
 
-1. Créez une nouvelle instance de la configuration d’usine [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md).
+1. Création d’une instance de la configuration d’usine [Configuration de l’auteur de journalisation Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
 
-   1. Spécifiez le fichier journal (il doit correspondre à celui spécifié pour l’enregistreur).
-   1. Configurez les autres paramètres en fonction de vos besoins.
+   1. Spécifiez le fichier journal. Celui-ci doit correspondre à celui spécifié pour l’enregistreur.
+   1. Configurez les autres paramètres selon les besoins.
 
 >[!NOTE]
 >
->Dans certaines circonstances, vous pouvez créer un [fichier journal personnalisé](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
+>Dans certains cas, vous pouvez créer une [fichier journal personnalisé](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).

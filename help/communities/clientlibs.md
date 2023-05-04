@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7d423dff-8710-4f43-ad55-8863169946e2
 exl-id: 9b4ed16f-3c7c-478a-a897-9b4be086988b
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 3%
+source-wordcount: '418'
+ht-degree: 5%
 
 ---
 
 # Clientlibs des composants Communities {#clientlibs-for-communities-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 ## Présentation {#introduction}
 

@@ -4,28 +4,32 @@ description: Notes de mise à jour spécifiques aux packs de correctifs cumulati
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4681'
-ht-degree: 37%
+source-wordcount: '4717'
+ht-degree: 31%
 
 ---
 
 # Notes de mise à jour du pack de correctifs cumulés AEM 6.4 {#aem-cumulative-fix-pack-release-notes}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 ## Informations sur la version {#release-information}
 
 <!-- TBD: Update the SD URL. -->
 
-| Produits | **Adobe Experience Manager (AEM) 6.4** |
+| Produits | **Adobe Experience Manager (AEM) 6.4** |
 |---|---|
 | Version | 6.4.8.4 |
-| Type | Pack de correctifs cumulés |
-| Plage | 25 février 2021 |
-| Prérequis | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
+| Type | Pack de correctifs cumulatif |
+| Date | 25 février 2021 |
+| Prérequis | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
 | URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-4.0.zip) |
 
-## Fonctionnalités présentes dans AEM 6.4.8.4 {#what-s-included-in-aem}
+## Éléments inclus dans AEM 6.4.8.4 {#what-s-included-in-aem}
 
 AEM Cumulative Fix Pack 6.4.8.4 est une mise à jour importante qui comporte plusieurs correctifs internes et clients depuis la disponibilité générale d’AEM 6.4 Service Pack 8 (6.4.8.0) en mars 2020.
 
@@ -173,7 +177,7 @@ Adobe Experience Manager 6.4.8.3 fournit des correctifs pour les problèmes suiv
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Le pack de correctifs cumulés n’inclut pas de correctifs pour [!DNL Experience Manager Forms]. Les correctifs sont fournis à l’aide d’un module complémentaire [!DNL Forms] distinct. En outre, un programme d’installation cumulatif est publié, qui inclut des correctifs pour [!DNL Experience Manager Forms] sous JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Le pack de correctifs cumulés n’inclut pas de correctifs pour [!DNL Experience Manager Forms]. Les correctifs sont fournis à l’aide d’un package complémentaire [!DNL Forms] distinct. En outre, un programme d’installation cumulatif est publié, qui inclut des correctifs pour [!DNL Experience Manager Forms] sous JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
 
 **Formulaires adaptatifs**
 
@@ -273,7 +277,7 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 
 * L’affichage du nombre de ressources sélectionnées sur une page de recherche est incorrect (NPR-33540).
 
-#### Communautés {#communities-6482}
+#### Communities {#communities-6482}
 
 * Les utilisateurs existants d’un groupe de la communauté ajoutés par le biais de l’Admin Console sont supprimés de la liste des utilisateurs lors de toute modification dans la console du groupe de la communauté (NPR-34312).
 
@@ -281,7 +285,7 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Le pack de correctifs cumulés n’inclut pas de correctifs pour [!DNL Experience Manager Forms]. Les correctifs sont fournis à l’aide d’un module complémentaire [!DNL Forms] distinct. En outre, un programme d’installation cumulatif est publié, qui inclut des correctifs pour [!DNL Experience Manager Forms] sous JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Le pack de correctifs cumulés n’inclut pas de correctifs pour [!DNL Experience Manager Forms]. Les correctifs sont fournis à l’aide d’un package complémentaire [!DNL Forms] distinct. En outre, un programme d’installation cumulatif est publié, qui inclut des correctifs pour [!DNL Experience Manager Forms] sous JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
 
 **Formulaires adaptatifs**
 
@@ -331,7 +335,7 @@ Adobe Experience Manager 6.4.8.2 fournit des correctifs pour les problèmes suiv
 
 * Lorsque vous mettez à niveau la variable [!DNL JBoss] vers la version 7.0.9 pour [!DNL Experience Manager Forms] avec Document Security dans une [!DNL Linux] , une erreur se produit (CQ-4300546).
 
-Pour plus d’informations sur les mises à jour de sécurité, consultez la [page des bulletins de sécurité d’Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
+Pour plus d’informations sur les mises à jour de sécurité, consultez la [page des bulletins de sécurité d’Experience Manager](https://helpx.adobe.com/fr/security/products/experience-manager.html).
 
 ### Adobe Experience Manager 6.4.8.1 {#experience-manager-6481}
 
@@ -406,7 +410,7 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 
 * Cross-site scripting pour JSON (NPR-32745).
 
-#### Communautés {#communities-6481}
+#### Communities {#communities-6481}
 
 * Les auteurs, après la création d’un groupe, ne sont pas redirigés vers la section [!UICONTROL Groupe de la communauté] dans [!DNL Internet Explorer] 11 (NPR-33202).
 * Une erreur se produit lors de l’accès à la page [!UICONTROL Flux d’activités] (NPR-33152).
@@ -424,7 +428,7 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 
 >[!NOTE]
 >
->AEM Cumulative Fix Pack n’inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct. En outre, un programme d’installation cumulatif est publié, qui inclut des correctifs pour AEM Forms sous JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
+>AEM Cumulative Fix Pack n’inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un package complémentaire Forms distinct. En outre, un programme d’installation cumulatif est publié, qui inclut des correctifs pour AEM Forms sous JEE. Pour plus d’informations, voir [Installation du module complémentaire AEM Forms](#install-aem-forms-add-on-package) et [Installation du programme d’installation d’AEM Forms JEE](#install-aem-forms-jee-installer).
 
 * Correspondence Management : Lorsqu’un utilisateur colle du contenu à partir d’une [!DNL Word] document, le fragment de document texte ne conserve pas la mise en forme (NPR-33213).
 * Formulaires adaptatifs : une nouvelle ligne ajoutée à une chaîne dans un dictionnaire de formulaires adaptatifs ajoute les caractères `&#xa;` au dictionnaire (NPR-33265).
@@ -439,7 +443,7 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 
 ## Installation de la version 6.4.8.4 {#install}
 
-### Conditions requises {#setup-requirements}
+### Configuration requise {#setup-requirements}
 
 <!--
 
@@ -456,13 +460,13 @@ Adobe Experience Manager 6.4.8.1 fournit des correctifs pour les problèmes suiv
 >Pour les clients disposant de Feature Packs installés sur AEM 6.4. Les Feature Packs facultatifs fournis par Adobe ont des dépendances sur la version de publication et les Service Packs. Si vous avez installé un Feature Pack, contactez l’équipe d’assistance AEM clientèle pour valider la compatibilité de ces Feature Packs avec ce pack de correctifs cumulatif pour AEM 6.4.
 
 * AEM 6.4.8.4 nécessite AEM 6.4.8.0. Veuillez consulter [documentation de mise à niveau](../sites-deploying/upgrade.md) pour obtenir des instructions détaillées.
-* Lors d’un déploiement avec MongoDB et plusieurs instances, installez AEM 6.4.8.4 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.
+* Sur un déploiement avec MongoDB et plusieurs instances, installez AEM 6.4.8.4 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.
 * Avant d’installer le pack de correctifs cumulatifs, veillez à disposer d’un instantané ou d’une nouvelle sauvegarde de votre instance AEM.
-* Redémarrez l’instance avant l’installation. Cela est nécessaire uniquement lorsque l’instance reste en mode de mise à jour (ce qui est le cas lorsque l’instance vient d’être mise à jour depuis une version antérieure). Toutefois, cela est généralement recommandé si l’instance s’est exécutée pendant longtemps.
+* Redémarrez l’instance avant l’installation. Bien que cela ne soit nécessaire que lorsque l’instance est toujours en mode de mise à jour (et c’est le cas lorsque l’instance vient d’être mise à jour à partir d’une version antérieure), il est généralement recommandé que l’instance s’exécute pendant une plus longue période.
 
 >[!NOTE]
 >
->Adobe recommande de ne pas supprimer ni désinstaller le package AEM 6.4.8.4.
+>Adobe ne recommande pas de supprimer ou de désinstaller le package AEM 6.4.8.4.
 
 ### Installation du pack de correctifs cumulés {#install-cumulative-fix-pack}
 
@@ -476,15 +480,15 @@ Procédez comme suit pour installer le pack de correctifs cumulés sur une insta
 
 >[!NOTE]
 >
->**La boîte de dialogue sur l’interface utilisateur de Package Manager se ferme parfois de manière impromptue lors de l’installation de la version 6.4.8.4**
+>**La boîte de dialogue de l’interface utilisateur de Package Manager se ferme parfois de manière impromptue lors de l’installation de la version 6.4.8.4**
 >
->Il est donc recommandé d’attendre que les journaux d’erreurs se stabilisent avant d’accéder à l’instance. L’utilisateur doit attendre les journaux spécifiques liés à la désinstallation du lot de mise à jour avant de s’assurer que l’installation est réussie. Cela se produit généralement sur Safari, mais peut se produire par intermittence sur n’importe quel navigateur.
+>Par conséquent, il est recommandé d’attendre que les journaux d’erreurs se stabilisent avant d’accéder à l’instance. L’utilisateur doit attendre les journaux spécifiques liés à la désinstallation du lot de mise à jour avant de s’assurer que l’installation est réussie. Cela se produit généralement sur Safari, mais peut se produire par intermittence sur n’importe quel navigateur.
 
 ### Installation automatique {#auto-installation}
 
-Il existe deux manières d’installer automatiquement AEM 6.4.8.4 dans une instance en cours d’exécution :
+Il existe deux manières d’installer automatiquement AEM 6.4.8.4 dans une instance en cours d’exécution :
 
-A. Placez le package dans le dossier ..*/crx-quickstart/install* pendant que le serveur est en cours d’exécution. Le package est automatiquement installé.
+A. Placez le package dans ..*/crx-quickstart/install* pendant l’exécution du serveur. Le package est automatiquement installé.
 
 B. Utilisez la variable [API HTTP à partir de Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) - Assurez-vous que vous utilisez `cmd=install&recursive=true` - pour que le package imbriqué soit installé.
 
@@ -494,7 +498,7 @@ B. Utilisez la variable [API HTTP à partir de Package Manager](https://docs.ado
 
 ### Validation de l’installation {#validate-install}
 
-1. La page d’informations du produit (*/system/console/productinfo*) doit maintenant afficher la chaîne de version mise à jour d’Adobe Experience Manager, version 6.4.8.4, sous Produits installés.
+1. La page Informations sur le produit (*/system/console/productinfo*) doit maintenant afficher la chaîne de version mise à jour &quot;Adobe Experience Manager, version 6.4.8.4&quot; sous Produits installés.
 1. Tous les lots OSGI sont ACTIFS ou FRAGMENT dans la console OSGI (utiliser la console web : /system/console/bundles).
 1. Le lot OSGI org.apache.jackrabbit.oak-core est sur la version 1.8.17 ou ultérieure (Utiliser la console web : /system/console/bundles).
 
@@ -511,7 +515,7 @@ AEM 6.4.8.4 contient une nouvelle version des visionneuses Dynamic Media (5.10.1
 
 qui copiera les nouveaux paramètres prédéfinis de visionneuse à l’emplacement /conf.
 
-### Installation du module complémentaire AEM Forms {#install-aem-forms-add-on-package}
+### Installation AEM package de module complémentaire Forms {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -519,23 +523,23 @@ qui copiera les nouveaux paramètres prédéfinis de visionneuse à l’emplacem
 
 >[!NOTE]
 >
->Passez cette étape si vous n’utilisez pas AEM Forms. Les correctifs dans AEM Forms sont fournis dans un module complémentaire distinct.
+>Ignorez si vous n’utilisez pas AEM Forms. Les correctifs dans AEM Forms sont fournis par le biais d’un module complémentaire distinct.
 
 1. Vérifiez que vous avez installé le AEM Cumulative Fix Pack.
 1. Téléchargez le module complémentaire de formulaires correspondant répertorié à l’adresse [Versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr#forms-updates) pour votre système d’exploitation.
 1. Installez le module complémentaire Forms comme décrit dans la section [Installation des packages de modules complémentaires AEM forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
-### Installation du programme d’installation d’AEM Forms JEE {#install-aem-forms-jee-installer}
+### Installation du programme d’installation d’AEM Forms JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
 >Passez cette étape si vous n’utilisez pas AEM Forms sous JEE. Les correctifs dans AEM Forms JEE sont fournis dans un programme d’installation distinct.
 
-Pour plus d’informations sur l’installation du programme d’installation cumulatif pour AEM Forms JEE et la configuration post-déploiement, voir [AEM Forms JEE Patch Installer](jee-patch-installer-64.md).
+Pour plus d’informations sur l’installation du programme d’installation cumulatif pour AEM Forms JEE et la configuration après le déploiement, voir [Programme d’installation des correctifs d’AEM Forms JEE](jee-patch-installer-64.md).
 
 >[!NOTE]
 >
->Après avoir installé le programme d’installation cumulatif de Experience Manager Forms sous JEE, installez le dernier module complémentaire Forms, supprimez le module complémentaire Forms du dossier `crx-repository\install` et redémarrez le serveur.
+>Après avoir installé le programme d’installation cumulatif de Experience Manager Forms sous JEE, installez le dernier package complémentaire Forms, supprimez le package complémentaire Forms du dossier `crx-repository\install` et redémarrez le serveur.
 
 ### Uber Jar {#uber-jar}
 
@@ -560,10 +564,10 @@ Pour utiliser Uber Jar dans un projet Maven, reportez-vous à l’article [Comme
 
 Cette section répertorie les fonctionnalités qui ont été supprimées ou désignées comme obsolètes dans AEM 6.4.
 
-| Zone | Fonctionnalité | Remplacement | Version  |
+| Domaine | Fonctionnalité | Remplacement | Version  |
 |---|---|---|---|
-| Ressources | Gestion de l’action de balise pour les sous-ressources | Aucun remplacement. | AEM 6.4.2.0 |
-| Intégration des Ressources et d’Adobe Creative Cloud | [Le partage de dossiers AEM vers Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) a été introduit dans AEM 6.2 afin de permettre aux créatifs d’accéder aux ressources depuis AEM. Adobe Asset Link, une nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apportera pas d’améliorations supplémentaires à la fonctionnalité de partage de dossiers. Bien que la fonctionnalité soit incluse dans AEM, les clients sont (il est vivement conseillé d’utiliser le remplacement). | Adobe d’Asset Link ou de l’appli de bureau. Pour plus d’informations, reportez-vous à l’article [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
+| Ressources | Gestion de l’action de balise pour les sous-ressources | Aucun remplacement | AEM 6.4.2.0 |
+| Intégration d’Assets et de Adobe Creative Cloud | [Le partage de dossiers AEM vers Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) a été introduit dans AEM 6.2 afin de permettre aux créatifs d’accéder aux ressources depuis AEM. Adobe Asset Link, une nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’apporte pas d’autres améliorations à la fonctionnalité de partage de dossiers. Bien que la fonctionnalité soit incluse dans AEM, les clients sont (il est vivement conseillé d’utiliser le remplacement). | Adobe d’Asset Link ou de l’appli de bureau. Pour plus d’informations, voir [Intégration d’AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) article. | AEM 6.4.4.0 |
 
 ## Problèmes connus {#known-issues}
 
@@ -590,9 +594,9 @@ Liste des packages de contenu inclus dans AEM 6.4.8.4
 * [Documentation d’AEM 6.4](https://helpx.adobe.com/fr/support/experience-manager/6-4.html)
 * Abonnement aux [mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
-## Sites restreints {#restricted-sites-new}
+## Sites à accès limité {#restricted-sites-new}
 
-Seuls les clients peuvent accéder à ces sites. Si vous devez y accéder en tant que client, contactez votre gestionnaire de compte Adobe.
+Ces sites sont réservés aux clients. Si vous êtes client et avez besoin d’un accès, contactez votre gestionnaire de compte d’Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance client](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=fr)
+* [Contacter l’assistance clientèle](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=fr)

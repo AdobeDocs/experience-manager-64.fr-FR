@@ -1,5 +1,5 @@
 ---
-title: Dépannage de Dynamic Media – mode Scene7
+title: Dépannage de Dynamic Media - mode Scene7
 description: Résolution des problèmes liés au mode d’exécution Dynamic Media - Scene7.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -9,23 +9,27 @@ exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: Troubleshooting
 role: Admin,User
 mini-toc-levels: 3
-source-git-commit: 48e75239b9934ebe6c3c0d4f76b7990372646f23
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 90%
+source-wordcount: '1431'
+ht-degree: 58%
 
 ---
 
-# Dépannage de Dynamic Media – mode Scene7 {#troubleshooting-dynamic-media-scene-mode}
+# Dépannage de Dynamic Media - mode Scene7 {#troubleshooting-dynamic-media-scene-mode}
 
-Le document suivant décrit la résolution des problèmes affectant Dynamic Media en mode d’exécution **dynamicmedia_scene7**.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-## Installation et configuration {#setup-and-configuration}
+Le document suivant décrit la résolution des problèmes liés à l’exécution de Dynamic Media. **dynamicmedia_scene7** mode d’exécution.
 
-Assurez-vous que Dynamic Media a été correctement configuré en procédant comme suit :
+## Configuration et configuration {#setup-and-configuration}
+
+Vérifiez que Dynamic Media a été configuré correctement en procédant comme suit :
 
 * La commande Start up contient la commande `-r dynamicmedia_scene7` argument runmode.
-* Tous les packs de correctifs cumulatifs (CFP) AEM 6.4 ont été installés *avant* tout Feature Pack Dynamic Media disponible.
+* Tout pack de correctifs cumulatifs (CFP) AEM 6.4 a été installé en premier. *before* tous les Feature Packs Dynamic Media disponibles.
 * Le pack de fonctionnalités 18912 facultatif est installé.
 
    Ce pack de fonctionnalités facultatif est utile pour la prise en charge FTP ou si vous effectuez une migration des ressources de Dynamic Media vers Dynamic Media Classic.
@@ -41,13 +45,13 @@ Vous trouverez ci-après quelques astuces et conseils généraux concernant tout
 
 ### Propriétés de l’état de synchronisation des ressources {#asset-synchronization-status-properties}
 
-Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE Lite pour vérifier que la synchronisation de la ressource depuis AEM vers Dynamic Media s’est déroulée correctement :
+Les propriétés de ressource suivantes peuvent être examinées en CRXDE Lite pour confirmer la synchronisation réussie de la ressource d’AEM vers Dynamic Media :
 
 | **Propriété** | **Exemple** | **Description** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | `a\|364266` | Indicateur général indiquant que le nœud est lié à Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **[!UICONTROL PublishComplete]** ou texte d’erreur | Statut du téléchargement de la ressource vers Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | Doit être renseigné pour générer des URL vers la ressource distante de Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | Doit être renseigné pour générer des URL vers une ressource distante de Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | `success` ou `failed:<error text>` | Statut de synchronisation des visionneuses (visionneuses à 360°, visionneuses d’images, etc.), des paramètres prédéfinis d’image, des paramètres prédéfinis de visionneuse, des mises à jour de zone cliquable pour une ressource ou des images ayant été modifiées. |
 
 ### Journalisation de la synchronisation {#synchronization-logging}
@@ -66,7 +70,7 @@ Avant d’effectuer une opération de déplacement, de copie ou de suppression, 
 
 Lorsque vous remplacez une ressource Dynamic Media existante (même nom et emplacement), vous avez la possibilité de conserver les deux ressources ou de remplacer ou de créer une version :
 
-* Si vous conservez les deux, une nouvelle ressource est créée avec un nom unique pour l’URL de la ressource publiée. Par exemple : **[!UICONTROL image.jpg]** est la ressource d’origine et **[!UICONTROL image1.jpg]** est la ressource qui vient d’être chargée.
+* Si vous conservez les deux, une nouvelle ressource est créée avec un nom unique pour l’URL de ressource publiée. Par exemple : **[!UICONTROL image.jpg]** est la ressource d’origine et **[!UICONTROL image1.jpg]** est la ressource qui vient d’être chargée.
 
 * La création d’une version n’est pas prise en charge dans le cadre de la diffusion en mode Scene7 de Dynamic Media. La nouvelle version remplace la ressource existante lors de la diffusion.
 
@@ -82,54 +86,54 @@ Si des problèmes surviennent avec les images et les visionneuses, reportez-vous
    <td><strong>Solution</strong></td> 
   </tr> 
   <tr> 
-   <td>Impossible d’accéder au bouton Copier le code intégré/l’URL dans la vue détaillée de la ressource</td> 
+   <td>Impossible d’accéder au bouton Copier l’URL/Incorporer en mode Détails de la ressource</td> 
    <td> 
     <ol> 
-     <li><p>Accédez à CRX/DE :</p> 
+     <li><p>Accédez à CRX/DE :</p> 
       <ul> 
        <li>Vérifiez si le paramètre prédéfini dans le JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> est défini. Remarque : cet emplacement s’applique si vous avez effectué la mise à niveau d’AEM 6.x vers la version 6.4 et si vous avez choisi de ne pas utiliser la migration. Dans le cas contraire, l’emplacement est <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li> 
        <li>Vérifiez que la ressource dans le JCR présente <code>dam:scene7FileStatus</code><strong> </strong>sous Métadonnées défini sur <code>PublishComplete</code>.</li> 
       </ul> </li> 
     </ol> </td> 
-   <td><p>Actualisez la page/accédez à une autre page et revenez sur la page (le code JSP de rail latéral doit être recompilé)</p> <p>Si cela ne fonctionne pas :</p> 
+   <td><p>Actualisez la page/accédez à une autre page et revenez (le JSP du rail latéral doit être recompilé).</p> <p>Si cela ne fonctionne pas :</p> 
     <ul> 
      <li>Publiez la ressource.</li> 
      <li>Rechargez la ressource et publiez-la.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Le sélecteur de ressources dans l’éditeur de visionneuse est bloqué dans un chargement perpétuel.</td> 
+   <td>Sélecteur de ressources dans l’éditeur de visionneuse bloqué dans le chargement perpétuel</td> 
    <td><p>Problème connu à corriger dans la version 6.4</p> </td> 
    <td><p>Fermez le sélecteur et rouvrez-le.</p> </td> 
   </tr> 
   <tr> 
-   <td>Le bouton <strong>Sélectionner</strong> n’est pas actif après sélection d’une ressource dans le cadre de la modification de ressource.</td> 
+   <td><strong>Sélectionner</strong> n’est pas principal après la sélection d’une ressource dans le cadre de la modification d’une visionneuse.</td> 
    <td><p> </p> <p>Problème connu à corriger dans la version 6.4</p> <p> </p> </td> 
-   <td><p>Cliquez sur un autre dossier dans le sélecteur de ressources et revenez pour sélectionner la ressource.</p> </td> 
+   <td><p>Cliquez d’abord sur un autre dossier du sélecteur de ressources, puis revenez pour sélectionner la ressource.</p> </td> 
   </tr> 
   <tr> 
-   <td>La zone réactive de carrousel se déplace après un basculement entre des diapositives.</td> 
+   <td>La zone réactive du carrousel se déplace après le basculement entre les diapositives</td> 
    <td><p>Vérifiez que toutes les diapositives ont la même taille.</p> </td> 
-   <td><p>Utilisez uniquement des images de taille identique pour le carrousel.</p> </td> 
+   <td><p>Utilisez uniquement des images de la même taille pour le carrousel.</p> </td> 
   </tr> 
   <tr> 
-   <td>L’aperçu de l’image ne s’affiche pas avec la visionneuse Dynamic Media.</td> 
+   <td>L’image n’est pas prévisualisée avec la visionneuse Dynamic Media</td> 
    <td><p>Vérifiez que la ressource contient <code>dam:scene7File</code> dans les propriétés de métadonnées (CRXDE Lite).</p> </td> 
    <td><p>Vérifiez que le traitement de toutes les ressources est terminé.</p> </td> 
   </tr> 
   <tr> 
-   <td>La ressource téléchargée n’apparaît pas dans le sélecteur de ressources.</td> 
+   <td>La ressource téléchargée ne s’affiche pas dans le sélecteur de ressources</td> 
    <td><p>Vérifiez que la ressource présente la propriété <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite)</p> </td> 
    <td><p>Vérifiez que le traitement de toutes les ressources est terminé.</p> </td> 
   </tr> 
   <tr> 
-   <td>La bannière en mode Carte affiche <strong>Nouveau</strong> lorsque la ressource n’a pas commencé le traitement.</td> 
+   <td>La bannière en mode Carte s’affiche <strong>Nouveau</strong> lorsque le traitement de la ressource n’a pas commencé</td> 
    <td>Vérifiez que la ressource <code>jcr:content</code> &gt; <code>dam:assetState</code> = if <code>unprocessed</code> n’a pas été sélectionnée par le workflow.</td> 
-   <td>Attendez que la ressource soit sélectionnée par le workflow.</td> 
+   <td>Attendez que la ressource soit récupérée par le workflow.</td> 
   </tr> 
   <tr> 
-   <td>Les images ou les visionneuses n’affichent pas l’URL ou le code intégré de la visionneuse.</td> 
-   <td>Vérifiez que le paramètre prédéfini de visionneuse a été publié.</td> 
+   <td>Les images ou les visionneuses n’affichent pas l’URL de la visionneuse ou le code intégré</td> 
+   <td>Vérifiez si le paramètre prédéfini de visionneuse a été publié.</td> 
    <td><p>Accédez à <strong>Outils</strong> &gt; <strong>Ressources</strong> &gt; <strong>Paramètres prédéfinis de la visionneuse</strong> et publiez le paramètre prédéfini de la visionneuse.</p> </td> 
   </tr> 
  </tbody> 
@@ -147,19 +151,19 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
    <td><strong>Solution</strong></td> 
   </tr> 
   <tr> 
-   <td>L’aperçu de la vidéo ne peut pas être affiché.</td> 
+   <td>La vidéo ne peut pas être prévisualisée</td> 
    <td> 
     <ul> 
-     <li>Vérifiez que le dossier est associé à un profil vidéo (dans le cas d’un format de fichier non pris en charge). En l’absence de prise en charge, seule une image est affichée.</li> 
-     <li>Le profil vidéo doit contenir plusieurs paramètres prédéfinis de codage pour générer un ensemble AVS (les codages uniques sont considérés comme du contenu vidéo pour les fichiers MP4 ; dans le cas des fichiers non pris en charge, ils sont considérés comme étant non traités).</li> 
+     <li>Vérifiez que le dossier est associé à un profil vidéo (dans le cas d’un format de fichier non pris en charge). Si elle n’est pas prise en charge, seule une image s’affiche.</li> 
+     <li>Le profil vidéo doit contenir plusieurs paramètres prédéfinis de codage pour générer un ensemble AVS (les codages uniques sont traités comme du contenu vidéo pour les fichiers MP4 ; pour les fichiers non pris en charge, traité de la même manière que les fichiers non traités).</li> 
      <li>Vérifiez que le traitement de la vidéo est terminé en confirmant <code>dam:scene7FileAvs</code> de <code>dam:scene7File</code> dans les métadonnées.</li> 
     </ul> </td> 
    <td> 
     <ol> 
-     <li>Attribuez un profil vidéo au dossier.</li> 
-     <li>Modifiez le profil vidéo de sorte qu’il inclue plusieurs paramètres de codage prédéfinis.</li> 
+     <li>Affectez un profil vidéo au dossier.</li> 
+     <li>Modifiez le profil vidéo pour inclure plusieurs paramètres prédéfinis de codage.</li> 
      <li>Attendez que le traitement de la vidéo soit terminé.</li> 
-     <li>Rechargez la vidéo et assurez-vous que le workflow Vidéo de codage de média dynamique n’est pas en cours d’exécution.<br /> </li> 
+     <li>Pour recharger la vidéo, assurez-vous que le workflow Vidéo de codage Dynamic Media n’est pas en cours d’exécution.<br /> </li> 
      <li>Rechargez la vidéo.</li> 
     </ol> </td> 
   </tr> 
@@ -168,7 +172,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
    <td> 
     <ul> 
      <li>Vérifiez que le mode d’exécution est <span class="kbd">dynamicmedia_scene7</span>.</li> 
-     <li>Vérifiez que le service cloud Dynamic Media est configuré.</li> 
+     <li>Vérifiez si le service cloud Dynamic Media est configuré.</li> 
      <li>Vérifiez qu’un profil vidéo est associé au dossier de chargement.</li> 
     </ul> </td> 
    <td> 
@@ -180,7 +184,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
   </tr> 
   <tr> 
    <td>Le traitement vidéo prend trop de temps.</td> 
-   <td><p>Pour déterminer si le codage vidéo est toujours en cours ou s’il est passé à l’état d’échec :</p> 
+   <td><p>Pour déterminer si le codage vidéo est toujours en cours ou s’il est à l’état d’échec :</p> 
     <ul> 
      <li>Vérifiez l’état de la vidéo <code>http://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <span class="kbd">dam:assetState</span></li> 
      <li>Surveillez la vidéo via la console de workflow <code>http://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; onglets Instances, Archive, Échecs.</li> 
@@ -188,15 +192,15 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Absence de rendu vidéo</td> 
-   <td><p>Lorsque la vidéo est téléchargée, mais qu’il n’y a aucun rendu codé :</p> 
+   <td>Rendu vidéo manquant</td> 
+   <td><p>Lorsque la vidéo est téléchargée, mais qu’il n’y a aucun rendu codé :</p> 
     <ul> 
-     <li>Vérifiez qu’un profil vidéo est attribué au dossier.</li> 
+     <li>Vérifiez qu’un profil vidéo est affecté au dossier.</li> 
      <li>Vérifiez que le traitement de la vidéo est terminé en confirmant <code>dam:scene7FileAvs</code> dans les métadonnées.</li> 
     </ul> </td> 
    <td> 
     <ol> 
-     <li>Attribuez un profil vidéo au dossier.</li> 
+     <li>Affectez un profil vidéo au dossier.</li> 
      <li>Attendez que le traitement de la vidéo soit terminé.<br /> </li> 
     </ol> </td> 
   </tr> 
@@ -250,8 +254,8 @@ Si les exemples de ressources ou l’illustration du paramètre prédéfini de l
 
 1. Accédez à CRXDE Lite.
 1. Supprimez `<sync-folder>/_CSS/_OOTB`.
-1. Accédez au gestionnaire de modules CRX : `https://localhost:4502/crx/packmgr/`.
-1. Recherchez le module de visionneuse dans la liste ; il commence par `cq-dam-scene7-viewers-content`.
+1. Accédez au gestionnaire de packages CRX : `https://localhost:4502/crx/packmgr/`.
+1. Recherchez le package de visionneuse dans la liste ; il commence par `cq-dam-scene7-viewers-content`.
 1. Sélectionnez **Réinstaller**.
 1. Sous Services cloud, accédez à la page Configuration de Dynamic Media, puis ouvrez la boîte de dialogue de configuration correspondant à la configuration S7 de Dynamic Media.
 1. N’effectuez aucune modification, sélectionnez **Enregistrer**.

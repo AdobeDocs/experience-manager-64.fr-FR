@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 role: Admin
 exl-id: f31072dc-ad2d-4f2d-b222-05d7fb19e471
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 2%
+source-wordcount: '377'
+ht-degree: 3%
 
 ---
 
 # Consoles Communities {#communities-consoles}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Les consoles AEM Communities, disponibles dans l’environnement de création à partir du panneau de navigation globale, permettent d’accéder aux tâches administratives telles que
 

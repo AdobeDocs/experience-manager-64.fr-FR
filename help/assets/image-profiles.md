@@ -1,7 +1,7 @@
 ---
 title: Profils d’image Dynamic Media
 seo-title: Dynamic Media Image Profiles
-description: Créez des profils d’image qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’image.
+description: Créez des profils d’image qui contiennent des paramètres pour l’accentuation, et utilisez le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’images.
 seo-description: Create Image Profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
@@ -12,14 +12,18 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 56d711eb5aa87a2aa4c5476bae0627afccc579d1
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2924'
-ht-degree: 67%
+source-wordcount: '2960'
+ht-degree: 84%
 
 ---
 
 # Profils d’image Dynamic Media {#image-profiles}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en appliquant un profil d’image au dossier.
 
@@ -48,15 +52,15 @@ Les coordonnées de recadrage intelligent dépendent des proportions de l’imag
 
 Chaque génération de recadrage intelligent créée nécessite un traitement supplémentaire. Par exemple, l’ajout de plus de cinq proportions de recadrage intelligent peut ralentir le taux d’ingestion des ressources. Cet ajout peut également augmenter la charge des systèmes. Étant donné que le recadrage intelligent s’applique aux dossiers, Adobe vous recommande de l’utiliser *uniquement* pour les dossiers où cela est nécessaire.
 
-**Instructions pour définir le recadrage intelligent dans un profil d’image**
-Pour contrôler l’utilisation du recadrage intelligent et optimiser le temps de traitement et le stockage des recadrages, Adobe recommande les instructions et conseils suivants :
+**Recommandations relatives au recadrage intelligent dans un profil d’image**
+Pour garder l’utilisation du recadrage intelligent sous contrôle et optimiser le temps de traitement et le stockage des recadrages, Adobe fournit les pratiques et conseils suivants :
 
 * Évitez de créer des profils de recadrage intelligent en double ayant les mêmes valeurs de largeur et de hauteur.
 * Nommez les recadrages intelligents en fonction des dimensions de recadrage et non de leur utilisation finale. Cela permet d’optimiser les doublons lorsqu’une seule dimension est utilisée sur plusieurs pages.
 * Créez des profils d’image au niveau de la page ou du type de ressource pour des dossiers et sous-dossiers spécifiques, au lieu d’un profil de recadrage intelligent commun appliqué à tous les dossiers ou ressources.
 * Le profil d’image appliqué aux sous-dossiers remplace le profil d’image appliqué au dossier.
-* Créez des profils d’image au niveau de la page ou du type de ressource pour des dossiers et sous-dossiers spécifiques au lieu d’un profil de recadrage intelligent commun appliqué à tous les dossiers ou à toutes les ressources.
-* Un profil d’image que vous appliquez aux sous-dossiers remplace un profil d’image appliqué au dossier.
+* Créez des profils d’image au niveau de la page ou du type de ressource pour des dossiers et sous-dossiers spécifiques, au lieu d’un profil de recadrage intelligent commun appliqué à tous les dossiers ou ressources.
+* Le profil d’image appliqué aux sous-dossiers remplace le profil d’image appliqué au dossier.
 * Idéalement, effectuez 10 à 15 recadrages intelligents par image afin d’optimiser les proportions et le temps de traitement.
 
 <!--
@@ -86,7 +90,7 @@ Vous avez le choix entre deux options de recadrage d’image. Vous pouvez égale
   <tr> 
    <td>Recadrage des pixels</td> 
    <td>Recadrage en bloc des images en fonction des dimensions uniquement.</td> 
-   <td><p>Pour utiliser cette option, sélectionnez <strong>Recadrage de pixels</strong> dans la liste déroulante Options de recadrage .</p> <p>Pour recadrer les bords d’une image, entrez le nombre de pixels à recadrer de n’importe quel côté ou de chaque côté de l’image. La proportion du recadrage de l’image dépend du paramètre ppi (pixels par pouce) du fichier d’image.</p> <p>Un recadrage de pixels de profil d’image s’affiche de la manière suivante :<br /> </p> 
+   <td><p>Pour utiliser cette option, sélectionnez <strong>Recadrage des pixels</strong> dans la liste déroulante Options de recadrage.</p> <p>Pour recadrer les bords d’une image, entrez le nombre de pixels à recadrer de n’importe quel côté ou de chaque côté de l’image. La proportion du recadrage de l’image dépend du paramètre ppi (pixels par pouce) du fichier d’image.</p> <p>Un recadrage de pixels de profil d’image s’affiche de la manière suivante :<br /> </p> 
     <ul> 
      <li>Les valeurs sont Haut, Bas, Gauche et Droite.</li> 
      <li>Le coin supérieur gauche est considéré comme 0,0 et le recadrage de pixels est calculé à partir de là.</li> 
@@ -98,7 +102,7 @@ Vous avez le choix entre deux options de recadrage d’image. Vous pouvez égale
   <tr> 
    <td>Recadrage intelligent</td> 
    <td>Recadrer en masse des images en fonction de leur point focal visuel.</td> 
-   <td><p>Le recadrage intelligent utilise la puissance de l’intelligence artificielle dans Adobe Sensei pour automatiser rapidement le recadrage des images en masse. Le recadrage intelligent détecte et recadre automatiquement le point focal d’une image afin de capturer le point ciblé prévu, quelle que soit la taille de l’écran.</p> <p>Pour utiliser le recadrage intelligent, sélectionnez <strong>Recadrage intelligent</strong> dans la liste déroulante des Options de recadrage, puis à droite de Recadrage d’image réactive, activez la fonction.</p> <p>Les tailles des points d’arrêt par défaut Grand, Moyen et Petit couvrent généralement l’ensemble des tailles utilisées par la plupart des images sur les appareils mobiles et les tablettes, les ordinateurs de bureau et les bannières. Si vous le souhaitez, vous pouvez modifier les noms par défaut des points Grand, Moyen et Petit.</p> <p>Pour ajouter d’autres points d’arrêt, cliquez sur <strong>Ajouter un recadrage</strong>; pour supprimer un recadrage, cliquez sur l’icône poubelle .</p> </td> 
+   <td><p>Le recadrage intelligent utilise la puissance de l’intelligence artificielle dans Adobe Sensei pour automatiser rapidement le recadrage des images en masse. Il détecte automatiquement le point focal de n’importe quelle image et recadre de façon à capturer le point d’intérêt prévu, quelle que soit la taille de l’écran.</p> <p>Pour utiliser le recadrage intelligent, sélectionnez <strong>Recadrage intelligent</strong> dans la liste déroulante des Options de recadrage, puis à droite de Recadrage d’image réactive, activez la fonction.</p> <p>Les tailles par défaut des points de rupture (Grand, Moyen et Petit) couvrent généralement toute la gamme de tailles utilisées par la plupart des images sur les appareils mobiles, les tablettes, les ordinateurs de bureau et les bannières. Si vous le souhaitez, vous pouvez modifier les noms par défaut des points Grand, Moyen et Petit.</p> <p>Pour ajouter d’autres points d’arrêt, cliquez sur <strong>Ajouter un recadrage</strong>; pour supprimer un recadrage, cliquez sur l’icône poubelle .</p> </td> 
   </tr> 
   <tr> 
    <td>Échantillon de couleurs et d’images</td> 
@@ -112,7 +116,7 @@ Vous avez le choix entre deux options de recadrage d’image. Vous pouvez égale
 
 ## Accentuation {#unsharp-mask}
 
-Vous utilisez **Accentuation** pour affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre Accentuation d’Adobe Photoshop.
+Vous utilisez **Accentuation** pour affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre « Accentuation » d’Adobe Photoshop.
 
 >[!NOTE]
 L’accentuation n’est appliquée qu’aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. En d’autres termes, les rendus de plus grande taille dans le fichier PTIFF ne sont pas affectés par le masquage flou, tandis que les rendus de plus petite taille, tels que les miniatures, sont modifiés (et affichent le masque flou).
@@ -135,7 +139,7 @@ L’option **Accentuation** propose les options de filtre suivantes :
   </tr> 
   <tr> 
    <td>Seuil</td> 
-   <td><p>Détermine la plage de contraste à ignorer lorsque le filtre de masquage flou est appliqué. En d’autres termes, cette option détermine la différence entre les pixels accentués et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et ne soient accentués. Pour éviter d’introduire du bruit, essayez des valeurs comprises entre 0 et 255.</p> </td> 
+   <td><p>Détermine la plage de contraste à ignorer lorsque le filtre d’accentuation est appliqué. En d’autres termes, cette option définit l’écart recherché entre les pixels accentués et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et ne soient accentués. Pour éviter d’introduire du bruit, essayez des valeurs comprises entre 0 et 255.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -171,7 +175,7 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
 ## Application d’un profil d’image Dynamic Media aux dossiers {#applying-an-image-profile-to-folders}
 
-Lorsque vous affectez un Profil Image à un dossier, tous les sous-dossiers héritent automatiquement du profil de son dossier parent. Ce workflow signifie que vous ne pouvez affecter qu’un seul profil d’image à un dossier. Ainsi, réfléchissez soigneusement à la structure de dossiers de l’emplacement où vous téléchargez, stockez, utilisez et archivez les ressources.
+Lorsque vous affectez un profil d’image à un dossier, tous les sous-dossiers héritent automatiquement du profil de son dossier parent. Ce processus signifie que vous ne pouvez attribuer qu’un seul profil d’image à un dossier. Ainsi, réfléchissez soigneusement à la structure de dossiers de l’emplacement où vous téléchargez, stockez, utilisez et archivez les ressources.
 
 Si vous avez affecté un profil d’image différent à un dossier, le nouveau profil remplace le précédent. Les ressources du dossier précédent restent inchangées. Le nouveau profil sera appliqué aux ressources ajoutées ultérieurement au dossier.
 
@@ -244,9 +248,9 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 
 1. Procédez de l’une des manières suivantes :
 
-   * Près du coin supérieur droit de la page, faites glisser le curseur vers la gauche ou la droite pour augmenter ou diminuer l’affichage de l’image, respectivement.
+   * Près du coin supérieur droit de la page, faites glisser le curseur vers la gauche ou la droite pour augmenter ou diminuer l’affichage de l’image.
    * Sur l’image, faites glisser une poignée d’angle pour ajuster la taille de la zone visible du recadrage ou de l’échantillon.
-   * Sur l’image, faites glisser la zone/l’échantillon vers un nouvel emplacement. Vous ne pouvez modifier que les échantillons d’images. les échantillons de couleurs sont statiques.
+   * Sur l’image, faites glisser la zone/l’échantillon vers un nouvel emplacement. Vous ne pouvez modifier que les échantillons d’images. Les échantillons de couleurs sont statiques.
    * Au-dessus de l’image, appuyez sur **[!UICONTROL Rétablir]** pour annuler toutes les modifications effectuées et restaurer le recadrage ou l’échantillon d’origine.
 
 1. Près du coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**, puis appuyez sur **[!UICONTROL Fermer]** pour revenir au dossier des ressources.
@@ -272,7 +276,7 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
       ![edit_smart_crops-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
-   * Filtrez la liste des images visibles en fonction des noms des points d’arrêt. Dans l’exemple ci-dessous, les images sont filtrées en fonction du nom de point d’arrêt « Moyenne ».
+   * Filtrez la liste des images visibles en fonction des noms de point d’arrêt. Dans l’exemple ci-dessous, les images sont filtrées en fonction du nom de point d’arrêt « Moyenne ».
 
       Près du coin supérieur droit de la page, dans la liste déroulante, sélectionnez un nom de point d’arrêt pour filtrer les images que vous souhaitez voir (voir l’image ci-dessus).
 
@@ -280,15 +284,15 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
    * Redimensionnez la zone de recadrage intelligent. Effectuez l’une des opérations suivantes :
 
-      * Si l’image comporte uniquement un recadrage intelligent ou un échantillon intelligent, faites glisser sur l’image la poignée de l’angle de la zone de recadrage pour ajuster la taille de la zone visible du recadrage.
-      * Si l’image comporte à la fois un recadrage intelligent et un échantillon intelligent, faites glisser sur l’image la poignée de l’angle de la zone de recadrage pour ajuster la taille de la zone visible du recadrage. Ou appuyez ou cliquez sur l’échantillon intelligent sous l’image (les échantillons de couleurs sont statiques), puis faites glisser la poignée de l’angle de la zone de recadrage pour ajuster la taille de la zone visible de l’échantillon.
+      * Si l’image comporte un recadrage intelligent ou un échantillon intelligent uniquement, faites glisser sur celle-ci la poignée d’angle de la zone de recadrage pour ajuster la taille de la zone visible du recadrage.
+      * Si l’image comporte à la fois un recadrage intelligent et un échantillon intelligent, faites glisser sur celle-ci la poignée d’angle de la zone de recadrage pour ajuster la taille de la zone visible du recadrage. Ou appuyez ou cliquez sur l’échantillon intelligent sous l’image (les échantillons de couleurs sont statiques), puis faites glisser la poignée de l’angle de la zone de recadrage pour ajuster la taille de la zone visible de l’échantillon.
 
       ![Redimensionnement du recadrage intelligent d’une image.](assets/edit_smart_crops-resize.png)
 
    * Déplacez la zone de recadrage intelligent. Effectuez l’une des opérations suivantes :
 
-      * Si l’image comporte uniquement un recadrage intelligent ou un échantillon intelligent, faites glisser la zone de recadrage vers un nouvel emplacement.
-      * Si l’image comporte à la fois un recadrage intelligent et un échantillon intelligent, faites glisser la zone de recadrage intelligent sur l’image vers un nouvel emplacement. Ou appuyez sur l’échantillon intelligent sous l’image (les échantillons de couleurs sont statiques), puis faites glisser la zone de recadrage d’échantillon intelligent vers un nouvel emplacement.
+      * Si l’image comporte uniquement un recadrage intelligent ou un échantillon intelligent, faites glisser sur celle-ci la zone de recadrage vers un nouvel emplacement.
+      * Si l’image comporte à la fois un recadrage intelligent et un échantillon intelligent, faites glisser sur celle-ci la zone de recadrage intelligent vers un nouvel emplacement. Ou appuyez sur l’échantillon intelligent sous l’image (les échantillons de couleurs sont statiques), puis faites glisser la zone de recadrage d’échantillon intelligent vers un nouvel emplacement.
 
       ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 

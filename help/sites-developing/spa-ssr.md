@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 exl-id: 89e45231-885a-4d35-839b-2b50239503ad
-source-git-commit: 199ee2b38cbffc2b97e0fd3c25d828a7e5718bf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1807'
 ht-degree: 80%
 
 ---
 
-# SPA et rendu côté serveur (SSR){#spa-and-server-side-rendering}
+# SPA et rendu côté serveur (SSR) {#spa-and-server-side-rendering}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 >[!NOTE]
 >La fonction Éditeur d’application sur une seule page (SPA) nécessite [AEM 6.4 Service Pack 2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html) ou plus récent.
@@ -63,7 +67,7 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 
 >[!NOTE]
 >
->Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Il est ainsi possible d’obtenir des modèles de cycle de vie de développement de systèmes (SDLC) types, avec différentes versions d’une application unique, déployée dans différents environnements. Voir le document [CI/CD pour les applications du créateur d’applications de projet](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) pour plus d’informations.
+>Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Il est ainsi possible d’obtenir des modèles de cycle de vie de développement de systèmes (SDLC) types, avec différentes versions d’une application unique, déployée dans différents environnements. Pour plus d’informations, consultez le document [CI/CD pour les applications de projet de créateur d’applications](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/).
 >
 >Un espace de travail distinct n’est pas nécessaire pour chaque instance (création, publication), sauf s’il existe des différences dans l’implémentation de l’environnement d’exécution (runtime) par type d’instance.
 
@@ -105,7 +109,7 @@ Lors de l’utilisation du rendu côté serveur, la variable [workflow d’inter
 
 ![server-side-rendering-cms-drivenaemnode](assets/server-side-rendering-cms-drivenaemnode-adobeio.png)
 
-### Flux de communication piloté par Adobe I/O Runtime {#adobe-io-driven-communication-flow}
+### Flux de communication piloté par Adobe I/O Runtime {#adobe-io-driven-communication-flow}
 
 La section [Flux de communication piloté par AEM](#aem-driven-communication-flow) décrit l’implémentation standard et recommandée du rendu côté serveur en ce qui concerne les SPA dans AEM, où l’instance d’AEM effectue le démarrage et la diffusion du contenu.
 
@@ -197,7 +201,7 @@ Pour qu’un servlet récupère et renvoie du contenu pouvant être injecté dan
 1. Assurez-vous que votre serveur distant est accessible.
 1. Ajoutez l’un des fragments de code suivants au modèle HTL d’un composant AEM.
 1. Vous pouvez éventuellement créer ou modifier les configurations OSGi.
-1. Parcourir le contenu de votre site
+1. Parcourir le contenu de votre site.
 
 En général, le modèle HTL d’un composant de page est le principal destinataire d’une telle fonctionnalité.
 

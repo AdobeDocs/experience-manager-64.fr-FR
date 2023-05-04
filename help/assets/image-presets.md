@@ -12,16 +12,20 @@ discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 exl-id: 07a4f315-a60e-456b-b02d-035b3f6ad9ad
 feature: Image Presets
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 91%
+source-wordcount: '349'
+ht-degree: 61%
 
 ---
 
 # Application de paramètres d’image prédéfinis Dynamic Media {#applying-image-presets}
 
-Les préréglages d’image permettent aux ressources de fournir dynamiquement des images de différentes tailles, dans différents formats ou avec d’autres propriétés d’image qui sont générées dynamiquement. Vous pouvez choisir un paramètre prédéfini lorsque vous exportez des images, ce qui modifie également le format des images selon les spécifications définies par l&#39;administrateur.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Les préréglages d’image permettent aux ressources de fournir dynamiquement des images de différentes tailles, dans différents formats ou avec d’autres propriétés d’image qui sont générées dynamiquement. Vous pouvez choisir un paramètre prédéfini lorsque vous exportez des images, qui reformate également les images selon les spécifications définies par votre administrateur.
 
 Vous pouvez en outre sélectionner un paramètre prédéfini d’image réactif (signalé par le bouton **[!UICONTROL RESS]** une fois que vous l’avez sélectionné).
 
@@ -39,7 +43,7 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
 
    >[!NOTE]
    >
-   >* Les rendus statiques apparaissent dans la moitié supérieure du volet. Les rendus dynamiques apparaissent dans la moitié inférieure. Avec des rendus dynamiques uniquement, vous pouvez utiliser l’URL pour afficher l’image. Le bouton **[!UICONTROL URL]** apparaît uniquement lorsque vous sélectionnez un rendu dynamique. Le bouton **[!UICONTROL RESS]** ne s’affiche que lorsque vous sélectionnez un paramètre d’image prédéfini réactif.
+   >* Les rendus statiques apparaissent dans la moitié supérieure du volet. Les rendus dynamiques apparaissent dans la moitié inférieure. Avec les rendus dynamiques uniquement, vous pouvez utiliser l’URL pour afficher l’image. Le **[!UICONTROL URL]** n’apparaît que si vous sélectionnez un rendu dynamique. Le **[!UICONTROL RESS]** s’affiche uniquement si vous sélectionnez un paramètre d’image prédéfini réactif.
    >
    >* Le système affiche plusieurs rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter le nombre de paramètres prédéfinis visibles. Voir [Augmentation du nombre de paramètres d’image prédéfinis affichés](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
@@ -48,7 +52,7 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
 
 1. Procédez de l’une des manières suivantes :
 
-   * Sélectionnez un rendu dynamique pour afficher un aperçu du paramètre d’image prédéfini.
+   * Sélectionnez un rendu dynamique pour prévisualiser le paramètre d’image prédéfini.
    * Appuyez sur **[!UICONTROL URL]**, **[!UICONTROL Incorporer]** ou **[!UICONTROL RESS]** pour afficher la fenêtre contextuelle.
 
    >[!NOTE]

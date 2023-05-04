@@ -1,7 +1,7 @@
 ---
 title: Utilisation de conditions de masquage
 seo-title: Using Hide Conditions
-description: Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non.
+description: Vous pouvez utiliser des conditions de masquage pour déterminer si une ressource de composant est générée ou non.
 seo-description: Hide conditions can be used to determine if a component resource is rendered or not.
 uuid: 93b4f450-1d94-4222-9199-27b5f295f8e6
 contentOwner: User
@@ -10,26 +10,30 @@ topic-tags: components
 content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 exl-id: 646146b1-55bf-4d13-ba3d-2e9bdfd8d8af
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 100%
+source-wordcount: '662'
+ht-degree: 50%
 
 ---
 
 # Utilisation de conditions de masquage{#using-hide-conditions}
 
-Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non. Cela peut être le cas, par exemple, lorsqu’un créateur de modèles configure le composant principal [Composant de liste](https://helpx.adobe.com/fr/experience-manager/core-components/using/list.html) dans l’[éditeur de modèles](/help/sites-authoring/templates.md) et décide de désactiver les options afin de créer la liste sur la base des pages enfants. Si vous désactivez cette option dans la boîte de dialogue de création, une propriété est définie, de sorte que, lorsque le composant de liste est rendu, la condition de masquage soit évaluée et l’option d’affichage des pages enfants ne soit pas présentée.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Vous pouvez utiliser des conditions de masquage pour déterminer si une ressource de composant est générée ou non. Par exemple, lorsqu’un créateur de modèles configure le composant principal [composant de liste](https://helpx.adobe.com/fr/experience-manager/core-components/using/list.html) dans le [éditeur de modèles](/help/sites-authoring/templates.md) et décide de désactiver les options pour créer la liste en fonction des pages enfants. La désactivation de cette option dans la boîte de dialogue de conception définit une propriété de sorte que lorsque le composant de liste est rendu, la condition de masquage est évaluée et l’option d’affichage des pages enfants n’est pas affichée.
 
 ## Présentation {#overview}
 
-Les boîtes de dialogue peuvent devenir très complexes et contenir de nombreuses options. Cependant, l’utilisateur ne pourra peut-être exploiter qu’une petite partie de celles mises à sa disposition. Cela peut avoir une incidence considérable sur l’expérience utilisateur.
+Les boîtes de dialogue peuvent devenir très complexes et contenir de nombreuses options pour l’utilisateur, qui ne peut utiliser qu’une fraction des options à sa disposition. Cela peut entraîner une surcharge des expériences de l’interface utilisateur pour les utilisateurs.
 
-Grâce aux conditions de masquage, les administrateurs, développeurs et super-utilisateurs ont la possibilité de masquer des ressources sur la base d’un ensemble de règles. Cette fonctionnalité permet de déterminer les ressources qui doivent être affichées lorsqu’un auteur modifie le contenu.
+En utilisant les conditions de masquage, les administrateurs, les développeurs et les super-utilisateurs ont un moyen de masquer les ressources en fonction d’un ensemble de règles. Cette fonction leur permet de décider quelles ressources afficher lorsqu’un auteur modifie le contenu.
 
 >[!NOTE]
 >
->Le masquage d’une ressource sur la base d’une expression ne remplace pas les autorisations ACL. Le contenu peut toujours être modifié, mais il n’est pas simplement affiché.
+>Le masquage d’une ressource à partir d’une expression ne remplace pas les autorisations ACL. Le contenu reste modifiable mais n’est tout simplement pas affiché.
 
 ## Détails relatifs à la mise en œuvre et à l’utilisation {#implementation-and-usage-details}
 
@@ -57,13 +61,13 @@ Lors de la définition de votre expression de masquage, veuillez tenir compte de
 
 ## Exemple {#example}
 
-Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) en particulier. Prenons notamment l’exemple du [composant principal Liste](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
+Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) en particulier. Par exemple, la variable [composant principal de liste](https://helpx.adobe.com/fr/experience-manager/core-components/using/list.html).
 
-[En utilisant l’éditeur de modèles](/help/sites-authoring/templates.md), l’auteur de modèles peut définir, dans la boîte de dialogue de conception, les options du composant de liste mises à la disposition de l’auteur de pages. Il est ainsi possible d’activer ou de désactiver des options permettant de définir une liste comme étant statique, une liste de pages enfants, une liste de pages balisées, etc.
+[En utilisant l’éditeur de modèles](/help/sites-authoring/templates.md), l’auteur de modèles peut définir, dans la boîte de dialogue de conception, les options du composant de liste mises à la disposition de l’auteur de pages. Des options telles que l’autorisation ou non d’une liste statique, d’une liste de pages enfants, d’une liste de pages balisées, etc. peuvent être activées ou désactivées.
 
-Si un auteur de modèles choisit de désactiver l’option des pages enfants, une propriété de conception est définie et une condition de masquage est évaluée par rapport à celle-ci, ce qui empêche le rendu de cette option pour l’auteur de pages.
+Si un auteur de modèles choisit de désactiver l’option des pages enfants, une propriété de conception est définie et une condition de masquage est évaluée par rapport à celle-ci, ce qui entraîne l’absence de rendu de l’option pour l’auteur de pages.
 
-1. Par défaut, l’auteur de la page peut utiliser le composant principal Liste pour créer une liste à l’aide des pages enfants en choisissant l’option **Pages enfants**.
+1. Par défaut, l’auteur de la page peut utiliser le composant principal Liste pour créer une liste à l’aide de pages enfants en sélectionnant l’option . **Pages enfants**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 

@@ -8,20 +8,24 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: c81dfb71-8901-49fd-b448-a7afdbae24fd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 98%
+source-wordcount: '1775'
+ht-degree: 42%
 
 ---
 
-# Ajout et configuration d’utilisateurs {#adding-and-configuring-users}
+# Ajouter et configurer des utilisateurs {#adding-and-configuring-users}
 
-Les informations relatives aux utilisateurs et aux groupes sont gérées dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management n’a pas la possibilité d’écrire dans le système de stockage tiers, mais assure la synchronisation de ces informations avec sa propre base de données
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
-## Créer un utilisateur {#create-a-user}
+Les informations sur les utilisateurs et les groupes sont conservées dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management n’écrit pas sur le système de stockage tiers. Au lieu de cela, User Management synchronise les informations sur les utilisateurs et les groupes avec sa propre base de données.
 
-Lorsque vous créez des utilisateurs, vous pouvez les ajouter à des groupes et leur affecter des rôles.
+## Création d’un utilisateur {#create-a-user}
+
+Lorsque vous créez des utilisateurs, vous pouvez les ajouter à des groupes et leur attribuer des rôles.
 
 1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Gestion des utilisateurs > Utilisateurs et groupes]**, puis sur **[!UICONTROL Nouvel utilisateur]**.
 .
@@ -39,13 +43,13 @@ Lorsque vous créez des utilisateurs, vous pouvez les ajouter à des groupes et 
 
    >[!NOTE]
    >
-   >Si vous rencontrez tout problème de connexion avec l’utilisateur, voir [L’utilisateur AEM Forms on JEE ne parvient pas à se connecter à partir d’AEM Forms on OSGi](https://helpx.adobe.com/fr/aem-forms/kb/AEM-users-fails-to-login.html).
+   >Si vous rencontrez un problème de connexion avec l’utilisateur, reportez-vous à la section [L’utilisateur d’AEM Forms on JEE ne parvient pas à se connecter à AEM Forms côté OSGi.](https://helpx.adobe.com/fr/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## Paramètres utilisateur {#user-settings}
 
-Spécifiez les paramètres ci-dessous lorsque vous créez ou modifiez un utilisateur.
+Spécifiez les paramètres suivants lorsque vous créez ou modifiez un utilisateur.
 
-**Nom canonique :**(obligatoire) identificateur unique de l’utilisateur. Tous les utilisateurs et groupes d’un domaine doivent disposer d’un nom canonique unique. Cochez la case Généré par le système pour laisser User Management affecter une valeur unique au paramètre Nom canonique ou désélectionnez la case et saisissez une valeur personnalisée.
+**Nom canonique :**(obligatoire) identificateur unique de l’utilisateur. Chaque utilisateur et groupe d’un domaine doit avoir un nom canonique unique. Cochez la case Généré par le système pour laisser User Management attribuer une valeur unique ou décochez la case et spécifiez une valeur personnalisée pour le Nom canonique.
 
 Évitez l’utilisation de caractères de soulignement (_) dans les noms canoniques, par exemple, `sample_user`. Lorsque vous recherchez des utilisateurs à l’aide de leur nom canonique, les noms contenant des caractères de soulignement n’apparaissent pas dans les résultats.
 
@@ -63,56 +67,56 @@ Spécifiez les paramètres ci-dessous lorsque vous créez ou modifiez un utilisa
 
 **Adresse :** adresse postale de l’utilisateur.
 
-**Société :** entreprise dont l’utilisateur fait partie.
+**Organisation :** Organisation à laquelle appartient l’utilisateur
 
-**Alias de messagerie :** alias de messagerie de l’utilisateur. Séparez les alias de messagerie par des virgules.
+**Alias de messagerie :** alias de messagerie de l’utilisateur. Séparez les alias de messagerie par des virgules.
 
-**Domaine :** domaine dont l’utilisateur fait partie.
+**Domaine :** Domaine auquel appartient l’utilisateur
 
 **Paramètres régionaux :** paramètres régionaux ISO de l’utilisateur.
 
-**Clé du calendrier professionnel :** (facultatif) permet d’associer un calendrier professionnel à un utilisateur, en fonction de la valeur de ce paramètre. Les calendriers professionnels définissent les jours ouvrés et non ouvrés. AEM forms peut faire appel à des calendriers professionnels lors du calcul des dates et heures futures associées à des événements, tels que rappels, échéances et transmissions. Les clés de calendrier professionnel sont attribuées à des utilisateurs en fonction du domaine utilisé, tel que le domaine d’entreprise, local ou hybride (voir [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains)).
+**Clé du calendrier professionnel :** (facultatif) permet d’associer un calendrier professionnel à un utilisateur, en fonction de la valeur de ce paramètre. Les calendriers professionnels définissent les jours ouvrés et non ouvrés. AEM les formulaires peuvent utiliser des calendriers professionnels pour calculer les dates et heures futures des événements tels que les rappels, les échéances et les transmissions. La manière dont vous attribuez des clés de calendrier professionnel aux utilisateurs varie selon que vous utilisez un domaine d’entreprise, local ou hybride. (Voir [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
 
-Si vous utilisez un domaine local ou hybride, les informations relatives aux utilisateurs ne sont stockées que dans la base de données User Management. Pour ces utilisateurs, définissez la clé de calendrier professionnel sur une chaîne. Associez ensuite cette clé (la chaîne) à un calendrier professionnel dans le processus des formulaires.
+Si vous utilisez un domaine local ou hybride, les informations sur les utilisateurs sont stockées uniquement dans la base de données User Management. Pour ces utilisateurs, définissez la clé du calendrier professionnel sur une chaîne. Associez ensuite la clé de calendrier professionnel (la chaîne) à un calendrier professionnel dans le processus des formulaires.
 
-Si vous utilisez un domaine d’entreprise, les informations relatives aux utilisateurs résident dans un système de stockage tiers, comme un annuaire LDAP. User Management synchronise les informations utilisateur de l’annuaire avec la base de données User Management. Cette fonction vous permet d’associer une clé de calendrier professionnel à un champ de l’annuaire LDAP. Imaginons, par exemple, un scénario où chaque utilisateur enregistré dans votre annuaire dispose d’un champ pays et où vous souhaitez affecter des calendriers professionnels en fonction du pays dans lequel l’utilisateur se trouve. Dans ce cas, vous indiquez le nom du champ pays dans le champ Clé du calendrier professionnel. Vous pouvez ensuite associer les clés de calendrier professionnel (valeurs définies pour le champ « pays » dans l’annuaire LDAP) aux calendriers professionnels dans le processus des formulaires.
+Si vous utilisez un domaine d’entreprise, les informations sur les utilisateurs résident dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management synchronise les informations utilisateur de l’annuaire avec la base de données User Management. Cette fonctionnalité vous permet de mapper une clé de calendrier professionnel à un champ de l’annuaire LDAP. Supposons, par exemple, que chaque utilisateur enregistré dans votre annuaire dispose d’un champ pays et que vous souhaitiez attribuer des calendriers professionnels en fonction du pays où se trouve l’utilisateur. Dans ce cas, vous indiquez le nom du champ de pays comme valeur du paramètre Clé du calendrier professionnel . Vous pouvez ensuite associer les clés de calendrier professionnel (valeurs définies pour le champ pays dans l’annuaire LDAP) aux calendriers professionnels dans le processus des formulaires.
 
-Pour plus d’informations sur les calendriers professionnels, notamment sur la manière d’associer des clés de calendrier professionnel à des calendriers professionnels, voir [Configuration des calendriers professionnels](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
+Pour plus d’informations sur les calendriers professionnels, y compris sur la façon de mapper des clés de calendrier professionnel à des calendriers professionnels, voir [Configuration des calendriers professionnels](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
 
-Limitez la longueur du nom à moins de 53 caractères. Un nom court contribue à réduire les problèmes d’affichage de la clé de calendrier professionnel dans les pages Process Management d’Administration Console.
+Limitez le nom à moins de 53 caractères. Un nom court contribue à réduire les problèmes d’affichage de la clé de calendrier professionnel dans les pages Process Management d’Administration Console.
 
-**ID utilisateur :**(obligatoire) ID que l’utilisateur utilise pour se connecter. L’ID utilisateur n’est pas sensible à la casse et doit être unique pour tout le domaine.
+**ID utilisateur :**(obligatoire) ID que l’utilisateur utilise pour se connecter. L’ID utilisateur n’est pas sensible à la casse et doit être unique dans l’ensemble du domaine.
 
-Dans les domaines d’entreprise, utilisez un attribut non ND comme ID utilisateur, car le ND d’un utilisateur peut changer si l’utilisateur évolue au sein de l’entreprise. Ce paramètre dépend du serveur d’annuaire. La valeur est `objectGUID` pour Active Directory 2003, `nsuniqueID` pour Sun™ One et `guid` pour eDirectory.
+Dans les domaines d’entreprise, utilisez un attribut non ND comme identifiant utilisateur, car le ND d’un utilisateur peut changer s’il se déplace vers une autre partie de l’entreprise. Ce paramètre dépend du serveur d’annuaire. La valeur est `objectGUID` pour Active Directory 2003, `nsuniqueID` pour Sun™ One et `guid` pour eDirectory.
 
-Assurez-vous que l’ID utilisateur est unique. N’utilisez pas un ID qui était affecté à un utilisateur supprimé.
+Assurez-vous que l’ID utilisateur est unique. N’utilisez pas celui qui a été affecté à un utilisateur supprimé.
 
-AEM forms ne peut pas différencier les comptes utilisateur qui possèdent des ID utilisateur et des mots de passe identiques mais qui appartiennent à des domaines différents. Pour éviter ce problème, ne créez pas de compte portant le même ID utilisateur dans plusieurs domaines.
+AEM formulaires ne peuvent pas différencier les comptes d’utilisateurs qui possèdent des identifiants utilisateur et des mots de passe identiques mais qui appartiennent à des domaines différents. Pour éviter ce problème, ne créez pas de comptes portant le même ID utilisateur sur plusieurs domaines.
 
-Si vous utilisez une base de données SQL Server, vous ne pouvez pas créer d’ID utilisateur contenant plus de 255 caractères.
+Lors de l’utilisation de SQL Server comme base de données, vous ne pouvez pas créer d’ID utilisateur contenant plus de 255 caractères.
 
-Avec MySQL, l’ID utilisateur peut contenir des caractères étendus. Cependant, en cas de comparaison entre deux chaînes telles que abcde et âbcdè, aucune distinction n’est faite entre les deux. Par exemple, lors d’une synchronisation après l’ajout d’un nouvel utilisateur à la base de données, une comparaison est effectuée pour vérifier si cet ID utilisateur existe dans la base de données. Si l’utilisateur *abcde* existe déjà dans la base de données lorsque le nouvel utilisateur *âbcdè * est ajouté, la comparaison ne peut pas faire la distinction entre les deux noms. Le système suppose que l’utilisateur existe déjà dans la base de données et ne procède donc pas à l’ajout de ce dernier.
+Lorsque vous utilisez MySQL, l’ID utilisateur peut contenir des caractères étendus. Cependant, lorsqu’une comparaison est effectuée entre deux chaînes, telles que abcde et âbcdè, elles sont considérées comme identiques. Par exemple, lors de la synchronisation, si un nouvel utilisateur a été ajouté à la base de données, une comparaison est effectuée pour vérifier si un utilisateur portant le même ID utilisateur existe dans la base de données. Si l’utilisateur *abcde* existe déjà dans la base de données lorsque le nouvel utilisateur *âbcdè * est ajouté, la comparaison ne peut pas faire la distinction entre les deux noms. On suppose que l’utilisateur existe déjà dans la base de données et que le nouvel utilisateur est ignoré et n’est pas ajouté.
 
-Evitez de créer des noms d’utilisateur commençant par un dièse (#). Les recherches de tâches ne renvoient aucun résultat pour ces noms d’utilisateur (voir [Utilisation de tâches](/help/forms/using/admin-help/tasks.md#working-with-tasks)).
+Évitez de créer des noms d’utilisateur commençant par un signe dièse (#). L’exécution de recherches de tâches ne renvoie aucun résultat pour ces noms d’utilisateur. (Voir [Utilisation des tâches](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
 
-**Mot de passe et Confirmer le mot de passe :** mot de passe que l’utilisateur utilise pour se connecter. Il doit comporter huit caractères au minimum. Aucun mot de passe n’est exigé si l’utilisateur fait partie d’un domaine hybride.
+**Mot de passe et Confirmer le mot de passe :** mot de passe que l’utilisateur utilise pour se connecter. Il doit comporter au minimum huit caractères. Aucun mot de passe n’est requis pour un utilisateur faisant partie d’un domaine hybride.
 
 ## Affichage des détails d’un utilisateur {#view-details-about-a-user}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
-1. Indiquez les informations permettant d’affiner la recherche, puis, dans la liste Dans, sélectionnez Utilisateurs et cliquez sur Rechercher. Les résultats de recherche apparaissent au bas de la page. Vous pouvez trier la liste en cliquant sur les en-têtes de colonne.
-1. Cliquez sur le nom de l’utilisateur dont vous souhaitez afficher les détails. La page Modifier l’utilisateur affiche les informations détaillées indiquées relatives à l’utilisateur :
+1. Indiquez les informations pour affiner la recherche, puis, dans la liste Dans, sélectionnez Utilisateurs et cliquez sur Rechercher. Les résultats de la recherche sont répertoriés au bas de la page. Vous pouvez trier la liste en cliquant sur l’un des en-têtes de colonne.
+1. Cliquez sur le nom de l’utilisateur dont vous souhaitez afficher les détails. La page Modifier l’utilisateur affiche les détails suivants sur l’utilisateur :
 
-   * informations d’identification d’ordre général, telles que nom, adresse électronique, adresse, domaine et société ;
-   * rôles qui lui sont affectés ;
-   * groupes dont il est membre.
+   * Informations d’identification générales, telles que le nom, l’adresse électronique, l’adresse, le domaine et l’organisation
+   * Rôles affectés à l’utilisateur
+   * Groupes dont l’utilisateur est membre
 
 ## Modification du mot de passe d’un utilisateur local {#change-the-password-for-a-local-user}
 
 1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Gestion des utilisateurs > Utilisateurs et groupes]**.
-1. Indiquez les informations permettant d’affiner la recherche pour un utilisateur particulier et cliquez sur **[!UICONTROL Rechercher]**. Les résultats de recherche apparaissent au bas de la page. Vous pouvez trier la liste en cliquant sur les en-têtes de colonne.
+1. Indiquez les informations permettant d’affiner la recherche pour un utilisateur particulier et cliquez sur **[!UICONTROL Rechercher]**. Les résultats de la recherche sont répertoriés au bas de la page. Vous pouvez trier la liste en cliquant sur l’un des en-têtes de colonne.
 1. Cliquez sur le nom de l’utilisateur, puis sur **[!UICONTROL Modifier le mot de passe]**.
-1. Saisissez et confirmez le nouveau mot de passe puis cliquez sur **[!UICONTROL OK]**. Le mot de passe doit contenir au moins huit caractères.
+1. Saisissez et confirmez le nouveau mot de passe puis cliquez sur **[!UICONTROL OK]**. Le mot de passe doit comporter au minimum huit caractères.
 
 ## Modification des propriétés d’un utilisateur {#edit-a-user-s-properties}
 
@@ -125,7 +129,7 @@ Evitez de créer des noms d’utilisateur commençant par un dièse (#). Les rec
    * Sélectionnez le domaine, indiquez le nombre d’éléments à afficher, puis cliquez sur **[!UICONTROL Rechercher]**.
 
 1. Cliquez sur l’utilisateur à modifier.
-1. Dans le cas d’un utilisateur appartenant à un domaine local ou hybride, modifiez les **[!UICONTROL paramètres généraux]** et les **[!UICONTROL paramètres de connexion]** dans l’onglet **[!UICONTROL Détails]**, puis cliquez sur **[!UICONTROL Enregistrer]**. Pour plus d’informations sur ces paramètres, voir [Paramètres utilisateur](adding-configuring-users.md#user-settings). Vous n’avez pas la possibilité de modifier les paramètres généraux ni les paramètres de connexion d’un utilisateur appartenant à un domaine d’entreprise.
+1. Dans le cas d’un utilisateur appartenant à un domaine local ou hybride, modifiez les **[!UICONTROL paramètres généraux]** et les **[!UICONTROL paramètres de connexion]** dans l’onglet **[!UICONTROL Détails]**, puis cliquez sur **[!UICONTROL Enregistrer]**. Pour plus d’informations sur ces paramètres, voir [Paramètres utilisateur](adding-configuring-users.md#user-settings). Vous ne pouvez pas modifier les paramètres généraux ni les paramètres de connexion d’un utilisateur appartenant à un domaine d’entreprise.
 1. Pour modifier les paramètres du groupe de l’utilisateur, cliquez sur l’onglet **[!UICONTROL Membres du groupe]** et procédez comme suit :
 
    * Cliquez sur **[!UICONTROL Rechercher des groupes]** et renseignez les informations de recherche.
@@ -133,7 +137,7 @@ Evitez de créer des noms d’utilisateur commençant par un dièse (#). Les rec
 
    >[!NOTE]
    >
-   >il n’est pas possible d’ajouter des utilisateurs locaux à des groupes d’annuaires. Néanmoins, il est possible d’ajouter des utilisateurs d’annuaire à des groupes locaux.
+   >Les utilisateurs locaux ne peuvent pas être ajoutés aux groupes d’annuaires. Toutefois, les utilisateurs d’annuaire peuvent être ajoutés aux groupes locaux.
 
    * Pour supprimer l’utilisateur d’un groupe, activez la case à cocher correspondant au groupe, cliquez sur **[!UICONTROL Supprimer]**, puis sur **[!UICONTROL Enregistrer]**.
 
@@ -158,20 +162,20 @@ Evitez de créer des noms d’utilisateur commençant par un dièse (#). Les rec
 
 >[!NOTE]
 >
->AEM Forms sur JEE permet également aux utilisateurs du module complémentaire AEM Forms exécuté dans un environnement OSGi d’être reconnus en tant qu’utilisateurs AEM. Ceci est nécessaire dans les cas où une authentification unique entre AEM Forms sur JEE et le module complémentaire AEM Forms exécuté dans un environnement OSGi est requise (dans le cas de l’espace de travail HTML par exemple). L’opération de suppression mentionnée ci-dessus supprime un utilisateur d’AEM Forms sur JEE uniquement. L’utilisateur n’est pas supprimé du module complémentaire AEM Forms exécuté dans un environnement OSGi. Toutefois, toute tentative de connexion effectuée après la suppression de l’utilisateur (une tentative de connexion au module complémentaire AEM Forms sur un serveur JEE ou au module complémentaire AEM Forms dans un environnement OSGi) est refusée.
+>AEM Forms on JEE permet également aux utilisateurs du module complémentaire AEM forms s’exécutant sur OSGi d’être reconnus comme AEM utilisateurs. Cela est nécessaire dans les cas où l’authentification unique entre AEM Forms on JEE et le module complémentaire d’AEM forms exécuté sur OSGi est requise (par exemple, l’espace de travail HTML). L’opération de suppression mentionnée ci-dessus supprime un utilisateur d’AEM Forms sur JEE uniquement. L’utilisateur n’est pas supprimé du module complémentaire AEM Forms exécuté dans un environnement OSGi. Cependant, toute tentative de connexion effectuée après la suppression de l’utilisateur (une tentative de connexion au serveur de module complémentaire AEM Forms JEE ou au module complémentaire AEM Forms dans un environnement OSGi) est refusée.
 
-## Création d’un gestionnaire d’erreur de connexion personnalisé {#create-custom-login-error-handler}
+## Créer un gestionnaire d’erreur de connexion personnalisé {#create-custom-login-error-handler}
 
-Si un utilisateur ne disposant pas des autorisations AEM forms et CQ requises tente de se connecter aux applications AEM forms suivantes intégrées à CQ, il est redirigé vers la page CQ 404, indiquant le suivi de l’erreur :
+Si un utilisateur ne disposant pas des autorisations AEM et CQ requises tente de se connecter aux applications suivantes intégrées à CQ, il est redirigé vers la page CQ 404 par défaut contenant la trace de l’erreur :
 
 * Solution Correspondence Management
-* AEM forms Workspace
+* Espace de travail des formulaires AEM
 
    ***Remarque ** : Flex Workspace est obsolète pour la version d’AEM Forms.*
 
-* Gestionnaire des formulaires
+* gestionnaire de formulaires
 * Rapports de workflow
 
-CQ fournit un mécanisme de remplacement du gestionnaire jsp 404 par défaut.
+CQ fournit un mécanisme pour remplacer le jsp du gestionnaire 404 par défaut.
 
 Pour plus d’informations sur la personnalisation de la page de gestion des erreurs, voir [Personnalisation des pages affichées par le gestionnaire d’erreur](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) dans la documentation d’Adobe Experience Manager.

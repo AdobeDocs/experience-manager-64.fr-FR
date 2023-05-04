@@ -10,29 +10,33 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 39419e0e-ad37-4ca5-8205-c29fc2cd1474
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 99%
+source-wordcount: '830'
+ht-degree: 64%
 
 ---
 
 # Démarrage d’un workflow{#starting-workflows}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 Lors de l’administration des workflows, vous pouvez les démarrer selon différentes méthodes :
 
 * Manuellement :
 
-   * À partir d’un [modèle de workflow](#workflow-models)
-   * À l’aide d’un module de workflow pour le [le traitement par lots](#workflow-packages-for-batch-processing)
+   * À partir d’un [Modèle de workflow](#workflow-models).
+   * Utilisation d’un module de workflow pour [traitement par lots](#workflow-packages-for-batch-processing).
 
-* Automatiquement :
+* Automatiquement :
 
-   * En réponse à des modifications de nœud, [à l’aide d’un lanceur](#workflows-launchers)
+   * En réponse aux modifications de noeud, [utilisation d’un lanceur](#workflows-launchers).
 
 >[!NOTE]
 >
->D’autres méthodes sont également disponibles pour les créateurs. Pour plus d’informations, voir :
+>D&#39;autres méthodes sont également disponibles pour les auteurs. pour plus d’informations, voir :
 >
 >* [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md)
 >* [Application de workflows à des ressources de gestion des ressources numériques](/help/assets/assets-workflow.md)
@@ -43,19 +47,19 @@ Lors de l’administration des workflows, vous pouvez les démarrer selon diffé
 
 ## Modèles de workflow {#workflow-models}
 
-Vous pouvez démarrer un workflow [reposant sur l’un des modèles](/help/sites-administering/workflows.md#workflow-models-and-instances) répertoriés dans la console Modèles de workflows. La charge utile constitue les seules informations obligatoires, même s’il est possible d’ajouter également un titre et/ou un commentaire.
+Vous pouvez démarrer un workflow [reposant sur l’un des modèles](/help/sites-administering/workflows.md#workflow-models-and-instances) répertoriés dans la console Modèles de workflows. La seule information obligatoire est la payload, bien qu’un titre et/ou un commentaire puisse également être ajouté.
 
 ## Lanceurs de workflows {#workflows-launchers}
 
-Le lanceur de workflows surveille les modifications du référentiel de contenu pour lancer des workflows en fonction du type d’emplacement et de ressource du nœud modifié.
+Le lanceur de processus surveille les modifications apportées au référentiel de contenu pour lancer les processus en fonction de l’emplacement et du type de ressource du noeud modifié.
 
 À l’aide du **Lanceur**, vous pouvez :
 
-* afficher les workflows déjà lancés pour des nœuds spécifiques ;
-* sélectionner un workflow à lancer lorsqu’un certain nœud/type de nœud a été créé/modifié/supprimé ;
-* supprimer des relations workflow -nœud existantes.
+* Voir les workflows déjà lancés pour des noeuds spécifiques.
+* Sélectionnez un workflow à lancer lorsqu’un certain noeud/type de noeud a été créé/modifié/supprimé.
+* Supprimez une relation workflow-noeud existante.
 
-Vous pouvez créer un lanceur sur n’importe quel nœud. Cependant, les modifications apportées à certains nœuds ne lancent pas de workflows. Les modifications apportées à des nœuds sous les chemins d’accès ci-dessous n’entraînent pas le lancement des workflows :
+Vous pouvez créer un lanceur sur n’importe quel nœud. Cependant, les modifications apportées à certains nœuds ne lancent pas de workflows. Les modifications apportées aux noeuds situés sous les chemins suivants ne provoquent pas le lancement des workflows :
 
 * `/var/workflow/instances`
 * Tout nœud workflow-inbox situé n’importe où dans la branche `/home/users`
@@ -69,21 +73,21 @@ Vous pouvez créer un lanceur sur n’importe quel nœud. Cependant, les modific
 
    * Exception : les modifications apportées aux nœuds sous `/var/statistics/tracking` *provoquent* le lancement de workflows.
 
-Différentes définitions sont incluses avec l’installation standard. Elles sont utilisées pour les tâches de gestion des actifs numériques et de collaboration sociale :
+Différentes définitions sont incluses avec l’installation standard. Ils sont utilisés pour les tâches de gestion des ressources numériques et de collaboration sociale :
 
 ![wf-100](assets/wf-100.png)
 
-## Modules de workflow pour le traitement par lots {#workflow-packages-for-batch-processing}
+## Modules de processus pour le traitement par lots {#workflow-packages-for-batch-processing}
 
-Les modules de workflow sont des modules qui peuvent être transmis à un workflow sous forme de charge utile pour traitement, ce qui permet de traiter plusieurs ressources.
+Les modules de workflow sont des modules qui peuvent être transmis à un workflow en tant que charge utile pour le traitement, ce qui permet de traiter plusieurs ressources.
 
-Un module de workflow :
+Un module de workflow :
 
-* contient des liens vers un ensemble de ressources (comme des pages ou des ressources) ;
-* contient des informations sur les modules, comme la date de création, l’utilisateur qui a créé le module et une brève description ;
-* est défini à l’aide d’un modèle de page spécialisé. Ce type de page permet de spécifier les ressources dans le module ;
-* peut être utilisé plusieurs fois ;
-* peut être modifié par l’utilisateur (ajout ou suppression de ressources) alors que l’instance de workflow est en cours d’exécution.
+* contient des liens vers un ensemble de ressources (telles que des pages, des ressources).
+* contient des informations sur le package, telles que la date de création, l’utilisateur qui a créé le package et une brève description.
+* est défini à l’aide d’un modèle de page spécialisé. Ce type de page permet de spécifier les ressources dans le package ;
+* peut être utilisé plusieurs fois.
+* peut être modifié par l’utilisateur (ajouter ou supprimer des ressources) pendant que l’instance de workflow est en cours d’exécution.
 
 ## Démarrage d’un workflow à partir de la console Modèles {#starting-a-workflow-from-the-models-console}
 
@@ -101,7 +105,7 @@ Un module de workflow :
 
    * **Payload**
 
-      Il peut s’agir d’une page, d’un nœud, d’une ressource, d’un module, entre autres ressources.
+      Il peut s’agir d’une page, d’un nœud, d’une ressource, d’un package, entre autres ressources.
 
    * **Titre**
 
@@ -164,8 +168,8 @@ Un module de workflow :
 
       Contrôle si le lanceur de workflow est activé :
 
-      * Sélectionnez **Activer** pour lancer des workflows lorsque des propriétés de configuration sont remplies.
-      * Sélectionnez **Désactiver** lorsque le workflow ne doit pas être exécuté (pas même lorsque les propriétés de configuration sont satisfaites).
+      * Sélectionner **Activer** pour lancer des workflows lorsque les propriétés de configuration sont satisfaites.
+      * Sélectionner **Désactiver** lorsque le workflow ne doit pas s’exécuter (pas même lorsque les propriétés de configuration sont satisfaites).
    * **Exclure la liste**
 
       Cette option spécifie des événements JCR à exclure (c’est-à-dire à ignorer) lorsque vous déterminez si un workflow doit être déclenché.

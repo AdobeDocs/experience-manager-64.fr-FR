@@ -10,21 +10,25 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 exl-id: 654387e3-d837-4bde-a9e4-962862ad69e9
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 95%
+source-wordcount: '1570'
+ht-degree: 69%
 
 ---
 
 # Connexion à Adobe Analytics et création de frameworks{#connecting-to-adobe-analytics-and-creating-frameworks}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 Pour effectuer le suivi des données Web de vos pages AEM dans Adobe Analytics, créez une configuration de services cloud Adobe Analytics et un framework Adobe Analytics :
 
 * **Configuration Adobe Analytics :** informations sur votre compte Adobe Analytics. La configuration Adobe Analytics permet à AEM de se connecter à Adobe Analytics. Créez une configuration Adobe Analytics pour chaque compte que vous utilisez.
 * **Framework Adobe Analytics :** ensemble de mappages entre les propriétés de suite de rapports Adobe Analytics et les variables CQ. Utilisez un framework pour configurer la façon dont les données de votre site Web renseignent vos rapports Adobe Analytics. Les frameworks sont associés à une configuration Adobe Analytics. Vous pouvez créer plusieurs frameworks pour chaque configuration.
 
-Lorsque vous associez une page web à une structure, cette structure effectue le suivi pour cette page et ses descendants. Les vues de page peuvent ensuite être récupérées dans Adobe Analytics et affichées dans la console Sites.
+Lorsque vous associez une page web à une structure, celle-ci effectue le suivi pour cette page et ses descendants. Les vues de page peuvent ensuite être récupérées dans Adobe Analytics et affichées dans la console Sites.
 
 ## Prérequis {#prerequisites}
 
@@ -39,7 +43,7 @@ Le compte Adobe Analytics doit :
 
 >[!CAUTION]
 >
->Le fait de fournir des autorisations **Administrateur** (dans Adobe Analytics) ne suffit pas pour permettre à l’utilisateur de se connecter d’AEM à Adobe Analytics. Le compte doit également disposer d’autorisations **Accès aux services web**.
+>Le fait de fournir des autorisations **Administrateur** (dans Adobe Analytics) ne suffit pas pour permettre à l’utilisateur de se connecter d’AEM à Adobe Analytics. Le compte doit également avoir **Accès aux services web** des privilèges.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
@@ -61,7 +65,7 @@ Les [centres de données](https://developer.omniture.com/en_US/content_page/conc
 | Singapour | https://api4.omniture.com/admin/1.4/rest/ |
 | Oregon | https://api5.omniture.com/admin/1.4/rest/ |
 
-AEM utilise le centre de données de San Jose (https://api.omniture.com/admin/1.4/rest/) par défaut.
+AEM utilise par défaut le centre de données de San Jose (https://api.omniture.com/admin/1.4/rest/).
 
 Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **client HTTP Adobe AEM Analytics du lot OSGi**. Ajoutez l’**URL du centre de données** du centre de données qui héberge une suite de rapports pour laquelle vos pages AEM collectent des données.
 
@@ -72,12 +76,12 @@ Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-o
 
    >[!NOTE]
    >
-   >Contactez l’administrateur de votre site web pour savoir si vous avez accès à cette console.
+   >Contactez votre administrateur de site pour savoir si vous avez accès à cette console.
 
-1. Sélectionnez l’élément de configuration nommé **Client HTTP Adobe AEM Analytics**.
+1. Sélectionnez l’élément Configuration nommé **Adobe AEM client HTTP Analytics**.
 1. Pour ajouter l’URL d’un centre de données, appuyez sur le bouton + situé en regard de la liste **URL de centre de données**, puis saisissez l’URL dans la boîte de dialogue.
 
-1. Pour supprimer une URL de la liste, cliquez sur le bouton - situé en regard de l’URL.
+1. Pour supprimer une URL de la liste, cliquez sur le bouton - situé en regard de l’URL.
 1. Cliquez sur Enregistrer.
 
 ## Configuration de la connexion à Adobe Analytics {#configuring-the-connection-to-adobe-analytics}
@@ -94,19 +98,19 @@ Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-o
 >
 >En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->Le [plug-in Activity Map fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) doit désormais être utilisé.
+>Le [plug-in Activity Map fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=fr) doit désormais être utilisé.
 
 ## Création d’un framework Adobe Analytics {#creating-a-adobe-analytics-framework}
 
 Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez contrôler quelles instances de serveur (création, publication ou les deux) contribuent aux données de la suite de rapports :
 
-* **Tout** : les informations de l’instance de création et de publication renseignent la suite de rapports.
-* **Création** : seules les informations de l’instance de création renseignent la suite de rapports.
-* **Publication** : seules les informations de l’instance de publication renseignent la suite de rapports.
+* **Tous**: Les informations de l’instance d’auteur et de publication renseignent la suite de rapports.
+* **Auteur**: Seules les informations provenant de l’instance d’auteur renseignent la suite de rapports.
+* **Publier**: Seules les informations provenant de l’instance de publication renseignent la suite de rapports.
 
 >[!NOTE]
 >
->La sélection du type d’instance de serveur ne restreint pas les appels à Adobe Analytics, mais contrôle simplement quels appels incluent le RSID.
+>La sélection du type d’instance de serveur ne limite pas les appels à Adobe Analytics, elle contrôle simplement les appels qui incluent le RSID.
 >
 >Par exemple, une structure est configurée pour utiliser la suite de rapports *diiweretail* et l’instance de serveur sélectionnée est l’instance de création. Lorsque les pages sont publiées avec la structure, les appels sont toujours émis vers Adobe Analytics, mais ces appels ne contiennent pas le RSID. Seuls les appels effectués à partir de l’instance de création incluent le RSID.
 
@@ -114,10 +118,10 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
 2. Faites défiler jusqu’à **Adobe Analytics** et cliquez sur **[+]** en regard de **Configurations disponibles**.
 3. Cliquez sur le bouton **[+]** lien en regard de votre configuration Adobe Analytics.
 
-4. Dans la boîte de dialogue **Créer une structure** :
+4. Dans le **Créer une structure** dialog :
 
    * Spécifiez un **Titre**.
-   * Vous pouvez éventuellement spécifier le **Nom**, pour le nœud qui stocke les détails de la structure dans le référentiel.
+   * Vous pouvez éventuellement spécifier la variable **Nom**, pour le noeud qui stocke les détails de la structure dans le référentiel.
    * Sélectionnez **Framework Adobe Analytics**,
 
    puis cliquez sur **Créer**.
@@ -144,7 +148,7 @@ Le système de framework vous permet de modifier les paramètres de serveur dans
 >
 >Ces paramètres déterminant où vos données sont envoyées et comment, il est impératif de *ne pas les modifier vous-même* et de laisser votre représentant Adobe Analytics les configurer.
 
-Commencez par ouvrir le panneau. Appuyez sur la flèche vers le bas située en regard de **Serveurs** :
+Commencez par ouvrir le panneau. Appuyez sur la flèche vers le bas en regard de **Serveurs**:
 
 ![server_001](assets/server_001.png)
 
@@ -159,7 +163,7 @@ Commencez par ouvrir le panneau. Appuyez sur la flèche vers le bas située en r
 * **Serveur de suivi sécurisé**
 
    * Comporte les mêmes segments que le serveur de suivi
-   * Ceci permet d’envoyer les données à partir des pages sécurisées (https://)
+   * Il est utilisé pour envoyer des données à partir de pages sécurisées (https://).
 
 * **Espace de noms du visiteur**
 
@@ -168,33 +172,33 @@ Commencez par ouvrir le panneau. Appuyez sur la flèche vers le bas située en r
 
 ## Association d’une page à un framework Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 
-Lorsqu’une page est associée à un framework Adobe Analytics, elle envoie des données à Adobe Analytics lors de son chargement. Les variables que la page renseigne sont mappées et extraites des variables Adobe Analytics dans la structure. Par exemple, les pages vues sont extraites d’Adobe Analytics.
+Lorsqu’une page est associée à un framework Adobe Analytics, elle envoie des données à Adobe Analytics lors de son chargement. Les variables que la page renseigne sont mappées et extraites des variables Adobe Analytics dans la structure. Par exemple, les pages vues sont récupérées à partir d’Adobe Analytics.
 
-Les descendants de la page héritent de l’association avec la structure. Par exemple, lorsque vous associez la page racine de votre site à une structure, toutes les pages du site sont associées à cette structure.
+Les descendants de la page héritent de l’association avec la structure. Par exemple, lorsque vous associez la page racine de votre site à une structure, toutes les pages du site sont associées à la structure.
 
 1. Dans la console **Sites**, sélectionnez la page dont vous souhaitez configurer le suivi.
 1. Ouvrez les **[Propriétés de la page](/help/sites-authoring/editing-page-properties.md)**, directement à partir de la console ou via l’éditeur de page.
-1. Ouvrez l’onglet **Services Cloud**.
+1. Ouvrez le **Cloud Services** .
 
-1. Utilisez le menu déroulant **Ajouter une configuration** pour sélectionner **Adobe Analytics** parmi les options disponibles. Si l’héritage est en place, vous devez le désactiver pour que le sélecteur devienne disponible.
+1. Utilisez le menu déroulant **Ajouter une configuration** pour sélectionner **Adobe Analytics** parmi les options disponibles. Si l’héritage est défini, vous devez le désactiver avant que le sélecteur ne soit disponible.
 
 1. Le sélecteur déroulant pour **Adobe Analytics** est ajouté aux options disponibles. Utilisez-le pour sélectionner la configuration de framework requise.
 
-1. Sélectionnez **Enregistrer et fermer**.
-1. **[Publiez](/help/sites-authoring/publishing-pages.md)** la page pour activer la page et tous les fichiers/configurations connecté(e)s.
-1. La dernière étape consiste à visiter la page sur l’instance de publication et à rechercher un mot-clé (par exemple, aubergine) à l’aide du composant **Rechercher**.
-1. Vous pouvez ensuite vérifier les appels effectués à Adobe Analytics à l’aide d’un outil approprié, par exemple [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
-1. Dans l’exemple fourni, l’appel doit contenir la valeur entrée (c’est-à-dire, aubergine) dans eVar7 et la liste des événements doit contenir event3.
+1. Sélectionner **Enregistrer et fermer**.
+1. **[Publier](/help/sites-authoring/publishing-pages.md)** la page pour activer la page et les configurations/fichiers connectés.
+1. La dernière étape consiste à accéder à la page sur l’instance de publication et à rechercher un mot-clé (par exemple, aubergine) à l’aide de la fonction **Rechercher** composant.
+1. Vous pouvez ensuite vérifier les appels effectués à Adobe Analytics à l’aide d’un outil approprié, par exemple [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=fr).
+1. A partir de l&#39;exemple fourni, l&#39;appel doit contenir la valeur renseignée (c&#39;est-à-dire aubergine) en eVar7 et la liste des événements doit contenir event3.
 
 ### Pages vues {#page-views}
 
-Lorsqu’une page est associée à un framework Adobe Analytics, le nombre de pages vues peut être affiché dans le mode liste de la console Sites.
+Lorsqu’une page est associée à un framework Adobe Analytics, le nombre de pages vues peut être affiché dans la vue Liste de la console Sites.
 
 Voir [Affichage des données d’analyse de page](/help/sites-authoring/pa-using.md) pour plus de détails.
 
 ### Configuration de l’intervalle d’importation {#configuring-the-import-interval}
 
-Configurez l’instance appropriée du service **Configurations d’interrogation personnalisées Adobe AEM** :
+Configurez l’instance appropriée de la **Adobe AEM configuration des interrogations gérées** service :
 
 * **Intervalle d&#39;interrogation**:
 
@@ -208,14 +212,14 @@ Configurez l’instance appropriée du service **Configurations d’interrogatio
 
 Pour configurer ce service OSGi, vous pouvez utiliser la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un [nœud osgiConfig dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (le PID de service est `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`).
 
-## Modification de configurations et/ou de structures Adobe Analytics {#editing-adobe-analytics-configurations-and-or-frameworks}
+## Modification des configurations et/ou des structures Adobe Analytics {#editing-adobe-analytics-configurations-and-or-frameworks}
 
 Comme pour la création d’une configuration ou d’une structure Adobe Analytics, accédez à l’écran **Services cloud** (hérité). Sélectionnez **Afficher les configurations**, puis cliquez sur le lien vers la configuration que vous souhaitez mettre à jour.
 
 Lorsque vous modifiez une configuration Adobe Analytics, vous devez également appuyer sur le bouton **Modifier** sur la page de configuration elle-même afin d’ouvrir la boîte de dialogue **Modifier le composant**.
 
-## Suppression de structures Adobe Analytics {#deleting-adobe-analytics-frameworks}
+## Suppression des frameworks Adobe Analytics {#deleting-adobe-analytics-frameworks}
 
-Pour supprimer une structure Adobe Analytics, [ouvrez-la d’abord pour la modifier](#editing-adobe-analytics-configurations-and-or-frameworks).
+Pour supprimer une structure Adobe Analytics, commencez par [l’ouvrir pour modification](#editing-adobe-analytics-configurations-and-or-frameworks).
 
 Sélectionnez ensuite **Supprimer le framework** dans l’onglet **Page** du sidekick.

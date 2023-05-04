@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cf140483-470f-4bff-8870-304207508aab
 exl-id: acce13aa-864c-4999-be5c-6d49b99d5459
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 65%
+source-wordcount: '177'
+ht-degree: 27%
 
 ---
 
 # Fichiers journaux {#log-files}
 
-Les événements, comme les erreurs d’exécution ou de démarrage, sont enregistrés dans les fichiers journaux du serveur d’applications. Ces fichiers peuvent vous aider à diagnostiquer les éventuels problèmes rencontrés lors du déploiement sur le serveur d’applications. Vous pouvez les ouvrir dans un éditeur de texte.
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Les événements tels que les erreurs d’exécution ou de démarrage sont enregistrés dans les fichiers journaux du serveur d’applications. Si vous rencontrez des problèmes lors du déploiement sur le serveur d’applications, vous pouvez utiliser les fichiers journaux pour vous aider à résoudre le problème. Vous pouvez ouvrir les fichiers journaux à l’aide de n’importe quel éditeur de texte.
 
 (JBoss) Les fichiers journaux suivants se trouvent dans le répertoire `*[appserver root]*/server/*[server]*/log` :
 

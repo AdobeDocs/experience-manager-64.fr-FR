@@ -1,18 +1,22 @@
 ---
 title: Référence des schémas de métadonnées
-description: Découvrez les conventions standard permettant de décrire les métadonnées des ressources, y compris Dublin Core, IPTC et d’autres schémas de métadonnées.
+description: Découvrez les conventions standard pour la description des métadonnées de ressources, notamment Dublin Core, IPTC et d’autres schémas de métadonnées.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 93%
+source-wordcount: '428'
+ht-degree: 61%
 
 ---
 
 # Référence des schémas de métadonnées {#metadata-schemata-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
 
 La référence ci-après contient des informations sur un schéma de métadonnées spécifique (dans l’ordre alphabétique) ainsi qu’une liste de propriétés et de leur définition.
 
@@ -44,6 +48,6 @@ Outre le DCMES, il existe d’autres éléments de métadonnées créés par le 
 
 ## IPTC {#iptc}
 
-L’ITPC (International Press Telecommunications Council) est un consortium réunissant les principales agences de presse à travers le monde. L’un de ses principaux objectifs est de développer et maintenir des normes techniques. L’IPTC a défini un ensemble de normes de métadonnées photographiques qui est presque universellement accepté par les photographes. Ces normes de métadonnées faisaient partie de la norme plus générale appelée IPTC Information Interchange Model (IIM) créée dans les années 1990.
+L&#39;International Press Telecommunications Council (IPTC) est un consortium d&#39;agences de presse à travers le monde - l&#39;un de ses objectifs est de développer et de maintenir des standards techniques. L&#39;IPTC a défini un ensemble de normes de métadonnées pour les images qui est presque universellement accepté par les photographes. Ces normes de métadonnées faisaient partie de la norme plus générale connue sous le nom de IPTC Information Interchange Model (IIM), créé dans les années 1990.
 
-Bien que les informations d’en-tête IPTC ont été essentiellement remplacées par XMP, un schéma de base IPTC et un schéma d’extension sont disponibles pour XMP. Dans les programmes de traitement d’images, les propriétés XMP et IPTC sont synchronisées.
+Bien que les informations d’en-tête IPTC aient été principalement remplacées par XMP, un schéma de base IPTC et un schéma d’extension sont disponibles pour XMP. Dans les programmes d’image, les propriétés XMP et IPTC sont synchronisées.

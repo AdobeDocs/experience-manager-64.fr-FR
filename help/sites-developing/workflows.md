@@ -10,22 +10,26 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 exl-id: 4f9bd75c-9d54-4cd6-9d73-5d580be5a9e8
-source-git-commit: 608c0fbd7eb0fc06fccf8cbcaebf874bff36d5e0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 100%
+source-wordcount: '1548'
+ht-degree: 40%
 
 ---
 
 # Développement et extension des workflows{#developing-and-extending-workflows}
 
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
 AEM fournit plusieurs outils et ressources pour créer des modèles de workflow, développer des étapes de workflow et interagir par programme avec les workflows.
 
-Les workflows vous permettent d’automatiser les processus pour gérer les ressources et publier le contenu dans votre environnement AEM. Les workflows sont constitués d’une série d’étapes accomplissant chacune une tâche discrète. Vous pouvez utiliser la logique et les données d’exécution pour prendre des décisions quant au moment où un processus peut se poursuivre et choisir l’étape suivante parmi plusieurs possibles.
+Les workflows permettent d&#39;automatiser les processus de gestion des ressources et de publication de contenu dans votre environnement AEM. Les workflows se composent d’une série d’étapes, chacune d’elles exécutant une tâche discrète. Vous pouvez utiliser la logique et les données d’exécution pour prendre des décisions sur le moment où un processus peut continuer et sélectionner l’étape suivante à partir de l’une des nombreuses étapes possibles.
 
-Par exemple, les processus métier pour la création et la publication de pages web incluent des tâches d’approbation et de validation par différents participants. Ces processus peuvent être modélisés à l’aide de workflows AEM et appliqués au contenu spécifié.
+Par exemple, les processus d’entreprise pour la création et la publication de pages web incluent les tâches de validation et de validation par différents participants. Ces processus peuvent être modélisés à l’aide de workflows AEM et appliqués à un contenu spécifique.
 
-Les aspects clés sont présentés ci-dessous, tandis que les pages suivantes abordent d’autres détails :
+Les principaux aspects sont abordés ci-dessous, tandis que les pages suivantes abordent d’autres détails :
 
 * [Création de modèles de workflow](/help/sites-developing/workflows-models.md)
 * [Extension des fonctionnalités de workflows](/help/sites-developing/workflows-customizing-extending.md)
@@ -51,29 +55,29 @@ Les aspects clés sont présentés ci-dessous, tandis que les pages suivantes ab
 
 Un `WorkflowModel` représente une définition (un modèle) d’un workflow. Il est composé de `WorkflowNodes` et de `WorkflowTransitions`. Les transitions se connectent aux nœuds et définissent le *flux*. Le modèle dispose toujours d’un nœud de début et d’un nœud de fin.
 
-### Modèle d’exécution {#runtime-model}
+### Modèle Runtime {#runtime-model}
 
-Les modèles de workflow bénéficient du contrôle de versions. Lorsque vous exécutez une instance de workflow, celle-ci utilise (et conserve) le modèle d’exécution du workflow (si disponible lors du démarrage du workflow).
+Les modèles de workflow bénéficient du contrôle de versions. Lorsque vous exécutez une instance de workflow, elle utilise (et conserve) le modèle d’exécution du workflow (disponible au moment du démarrage du workflow).
 
-Un modèle d’exécution est [généré lorsque la **synchronisation** est déclenchée dans l’editeur de modèles de workflow](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model).
+Un modèle d’exécution est [généré lorsque **Synchronisation** est déclenché dans l’éditeur de modèles de workflow](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model).
 
 Les modifications apportées au modèle de workflow et aux modèles d’exécution qui sont générés *après* le démarrage de l’instance spécifique ne sont pas appliqués à cette instance.
 
 >[!CAUTION]
 >
->Les étapes exécutées sont celles définies par le [modèle d’exécution](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model) qui est généré lorsque l’action de **synchronisation** est déclenchée dans l’éditeur de modèles de workflow.
+>Les étapes effectuées sont celles définies par la fonction [modèle d’exécution](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model); elle est générée au moment où la variable **Synchronisation** est déclenchée dans l’éditeur de modèles de workflow.
 >
->Si le modèle de workflow est modifié après ce stade (sans déclenchement de **synchronisation**), son instance d’exécution ne reflète pas ces modifications. Seuls les modèles de mise en œuvre générés après la mise à jour reflètent les modifications. Les exceptions sont les scripts ECMA sous-jacents, qui ne sont conservés qu’une seule fois, de sorte que les modifications apportées à ces derniers sont sélectionnées.
+>Si le modèle de workflow est modifié après ce moment (sans **Synchronisation** étant déclenché), l’instance d’exécution ne reflète pas ces modifications. Seuls les modèles d’exécution générés après la mise à jour reflètent les modifications. Les exceptions sont les scripts ECMA sous-jacents, qui ne sont conservés qu’une seule fois ; les modifications sont donc prises en compte.
 
 ### Étape {#step}
 
-Chaque étape accomplit une tâche discrète. Il existe différents types d’étapes de workflow :
+Chaque étape exécute une tâche discrète. Il existe différents types d’étapes de workflow :
 
-* Participant (utilisateur/groupe) : ces étapes génèrent un élément de travail et l’attribuent à un utilisateur ou à un groupe. Un utilisateur doit terminer l’élément de travail pour progresser dans le workflow.
-* Processus (script ou appel de méthode Java) : ces étapes sont exécutées automatiquement par le système. Un script ECMA ou une classe Java met l’étape en œuvre. Les services peuvent être développés pour écouter les événements de workflow spéciaux et effectuer des tâches en fonction de la logique métier.
-* Conteneur (sous-processus) : ce type d’étape démarre un autre modèle de workflow.
-* Division/jonction OU : utilisez la logique pour décider de l’étape suivante à exécuter dans le workflow.
-* Division/jonction ET : autorisez l’exécution simultanée de plusieurs étapes.
+* Participant (utilisateur/groupe) : Ces étapes génèrent un élément de travail et l’attribuent à un utilisateur ou à un groupe. Un utilisateur doit terminer l’élément de travail pour progresser dans le workflow.
+* Processus (Script, appel de méthode Java) : Ces étapes sont exécutées automatiquement par le système. Un script ECMA ou une classe Java met l’étape en œuvre. Les services peuvent être développés pour écouter les événements de workflow spéciaux et exécuter des tâches en fonction de la logique métier.
+* Conteneur (sous-workflow) : Ce type d’étape lance un autre modèle de workflow.
+* Division/jointure OU : Utilisez la logique pour décider quelle étape exécuter ensuite dans le workflow.
+* Division/jointure ET : Permet l’exécution simultanée de plusieurs étapes.
 
 Toutes les étapes partagent les propriétés suivantes : alertes `Autoadvance` et `Timeout` (scriptable).
 
@@ -82,7 +86,7 @@ Toutes les étapes partagent les propriétés suivantes : alertes `Autoadvance`
 `WorkflowTransition` représente une transition entre deux `WorkflowNodes` d’un `WorkflowModel`.
 
 * Il définit le lien entre deux étapes consécutives.
-* Il est possible d’appliquer des règles.
+* Il est possible d&#39;appliquer des règles.
 
 ### Élément de travail {#workitem}
 
@@ -95,22 +99,22 @@ Un `WorkItem` est l’unité qui est transmise par l’intermédiaire d’une in
 
 ### Payload {#payload}
 
-Elle référence la ressource qui doit être avancée par un workflow.
+Fait référence à la ressource qui doit être avancée par le biais d’un workflow.
 
-La mise en œuvre de charge utile référence une ressource dans le référentiel (par chemin, UUID ou URL) ou par un objet Java sérialisé. Le référencement d’une ressource dans le référentiel est très flexible et productif en conjonction avec Sling ; par exemple, le rendu du nœud référencé peut être effectué sous forme de formulaire.
+L’implémentation de la payload référence une ressource dans le référentiel (par chemin, UUID ou URL) ou par un objet Java sérialisé. Le référencement d’une ressource dans le référentiel est très flexible et très productif en association avec Sling ; par exemple, le noeud référencé peut être rendu sous forme de formulaire.
 
 ### Cycle de vie {#lifecycle}
 
-Il est créé lorsque vous démarrez un nouveau workflow (en choisissant le modèle de workflow respectif et en définissant la charge utile) et se termine lorsque le nœud de fin est traité.
+Est créé lors du démarrage d’un nouveau workflow (en choisissant le modèle de workflow correspondant et en définissant la charge utile) et se termine lorsque le noeud de fin est traité.
 
 Les actions suivantes sont possibles sur une instance de workflow :
 
 * Arrêter
 * Suspendre
-* Reprise
+* Reprendre
 * Redémarrer
 
-Les instances terminées et arrêtées sont archivées.
+Les instances terminées et terminées sont archivées.
 
 ### Boîte de réception {#inbox}
 
@@ -120,7 +124,7 @@ Les `WorkItems` sont attribués au compte utilisateur directement ou au groupe a
 
 ### Types de workflow {#workflow-types}
 
-Il existe différents types de workflow comme indiqué dans la console Modèles de workflow :
+Il existe différents types de processus, comme indiqué dans la console Modèles de processus :
 
 ![wf-upgraded-03](assets/wf-upgraded-03.png)
 
@@ -134,18 +138,18 @@ Il existe différents types de workflow comme indiqué dans la console Modèles 
 
 * **Hérité**
 
-   Il s’agit des workflows créés dans une version antérieure d’AEM. Ils peuvent être conservés lors d’une mise à niveau, ou exportés en tant que module de workflow à partir de la version antérieure, puis importés dans la nouvelle version.
+   Il s’agit des workflows créés dans une version antérieure d’AEM. Ils peuvent être conservés lors d’une mise à niveau ou exportés en tant que module de workflow à partir de la version précédente, puis importés dans la nouvelle version.
 
 ### Workflows transitoires {#transient-workflows}
 
-Les workflows standard enregistrent les informations (d’historique) d’exécution lors de leur exécution. Vous pouvez également définir un modèle de workflow comme **transitoire** pour éviter la persistance d’un tel historique. Il est utilisé pour ajuster les performances, car il économise le temps/les ressources utilisés pour rendre les informations persistantes.
+Les workflows standard enregistrent les informations d’exécution (historique) lors de leur exécution. Vous pouvez également définir un modèle de workflow comme **transitoire** pour éviter la persistance d’un tel historique. Il est utilisé pour l’optimisation des performances, car il permet d’économiser/d’éviter le temps/les ressources utilisés pour conserver les informations.
 
-Les workflows transitoires peuvent être utilisés pour tout workflow qui :
+Les workflows transitoires peuvent être utilisés pour tout workflow qui :
 
-* est exécuté fréquemment ;
-* ne nécessite pas l’historique de workflows.
+* sont exécutées fréquemment.
+* n’ont pas besoin de l’historique des workflows.
 
-Les workflows transitoires ont été introduits pour charger un grand nombre de ressources, où les informations des ressources sont importantes, mais pas l’historique d’exécution des workflows.
+Des workflows transitoires ont été introduits pour charger un grand nombre de ressources, où les informations sur les ressources sont importantes, mais pas l’historique d’exécution du workflow.
 
 >[!NOTE]
 >
@@ -153,48 +157,48 @@ Les workflows transitoires ont été introduits pour charger un grand nombre de 
 
 >[!CAUTION]
 >
->Lorsqu’un modèle de workflow a été marqué comme transitoire, il y a quelques situations dans lesquelles les informations d’exécution persisteront toujours :
+>Lorsqu’un modèle de workflow a été marqué comme transitoire, il existe quelques scénarios où les informations d’exécution seront conservées :
 >
->* Le type de charge utile (par exemple, vidéo) nécessite des étapes externes pour le traitement. Dans ce cas, l’historique d’exécution est nécessaire pour la confirmation de l’état.
->* Le workflow entre en **Division ET**. Dans ce cas, l’historique d’exécution est nécessaire pour la confirmation de l’état.
->* Lorsque le workflow transitoire entre dans une étape de participant, il modifie le mode (à l’exécution) en non transitoire, car la tâche est transmise à une personne, l’historique doit persister.
+>* Le type de charge utile (vidéo, par exemple) nécessite des étapes externes pour le traitement ; dans ce cas, l’historique d’exécution est nécessaire pour la confirmation de l’état.
+>* Le workflow entre dans une **Division ET**; dans ce cas, l’historique d’exécution est nécessaire pour la confirmation de l’état.
+>* Lorsque le workflow transitoire entre dans une étape de participant, il passe en mode (au moment de l’exécution) à non transitoire ; lorsque la tâche est transmise à une personne, l’historique doit être conservé.
 >
 
 
 >[!CAUTION]
 >
->Dans un workflow transitoire, vous ne devriez pas utiliser **Atteindre l’étape**.
+>Dans un workflow transitoire, vous ne devez pas utiliser un **Atteindre l’étape**.
 >
->En effet, l’**étape Goto** crée une tâche Sling pour continuer le workflow au point `goto`. Cela va à l’encontre du but recherché en rendant le workflow transitoire et génère une erreur dans le fichier journal.
+>En effet, l’**étape Goto** crée une tâche Sling pour continuer le workflow au point `goto`. Cela va à l’encontre de l’objectif de rendre le workflow transitoire et génère une erreur dans le fichier journal.
 >
->Pour prendre des décisions dans un workflow transitoire, vous pouvez utiliser la **division OU**.
+>Pour prendre des décisions dans un workflow transitoire, vous pouvez utiliser la variable **Division OU**.
 
 >[!NOTE]
 >
->Voir [Meilleures pratiques pour les ressources](/help/assets/performance-tuning-guidelines.md#transient-workflows) pour plus d’informations sur la façon dont les workflows transitoires affectent les performances des ressources.
+>Voir [Bonnes pratiques pour les ressources](/help/assets/performance-tuning-guidelines.md#transient-workflows) pour plus d’informations sur l’impact des workflows transitoires sur les performances des ressources.
 
 ### Prise en charge multi-ressource {#multi-resource-support}
 
-L’activation de la **prise en charge multi-ressource** pour votre modèle de workflow signifie qu’une instance unique de workflow démarrera, même si vous sélectionnez plusieurs ressources ; elles seront jointes à un module.
+L’activation de la **prise en charge multi-ressource** pour votre modèle de workflow signifie qu’une instance unique de workflow démarrera, même si vous sélectionnez plusieurs ressources ; elles seront jointes en tant que package.
 
-Si la **prise en charge multi-ressource** n’est pas activée pour votre modèle de workflow, et si plusieurs ressources sont sélectionnées, une instance de workflow individuelle sera démarrée pour chaque ressource.
+If **Prise en charge multi-ressource** n’est pas activé pour votre modèle de workflow et que plusieurs ressources sont sélectionnées, une instance de workflow individuelle est lancée pour chaque ressource.
 
 >[!NOTE]
 >
 >Voir [Configuration d’un workflow pour la prise en charge multi-ressource](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) pour plus de détails.
 
-### Phases de processus {#workflow-stages}
+### Étapes de workflow {#workflow-stages}
 
-Les phases de processus permettent de visualiser la progression d’un workflow lors de la gestion des tâches. Elles peuvent être utilisées pour fournir un aperçu de la progression du workflow dans le traitement. Lors de l’exécution du workflow, l’utilisateur peut ainsi afficher la progression décrite par la **phase** (par opposition à l’étape individuelle).
+Les étapes de workflow permettent de visualiser la progression d’un workflow lors de la gestion des tâches. Ils peuvent être utilisés pour fournir une vue d’ensemble de l’avancement du traitement du workflow. Par exemple, lorsque le workflow est exécuté, l’utilisateur peut afficher la progression décrite par **Évaluation** (contrairement à une étape individuelle).
 
 Les noms des étapes pouvant être spécifiques et techniques, les noms des phases peuvent être définis pour fournir une vue conceptuelle de la progression du workflow.
 
-Par exemple, pour un workflow avec six étapes et quatre phases :
+Par exemple, pour un workflow comportant six étapes et quatre étapes :
 
-1. Vous pouvez [configurer les phases de processus (qui indiquent la progression du workflow), puis attribuer la phase appropriée à chaque étape du workflow](/help/sites-developing/workflows-models.md#configuring-workflow-stages-that-show-workflow-progress) :
+1. Vous pouvez [configurez les étapes de workflow (qui affichent la progression du workflow), puis attribuez l’étape appropriée à chaque étape de votre workflow.](/help/sites-developing/workflows-models.md#configuring-workflow-stages-that-show-workflow-progress):
 
-   * Plusieurs noms de phases peuvent être créés.
-   * Un nom de phase individuel est ensuite attribué à chaque étape (un nom de phase peut être attribué à une ou plusieurs étapes).
+   * Plusieurs noms d’étape peuvent être créés.
+   * Un nom d’étape individuel est ensuite attribué à chaque étape (un nom d’étape peut être attribué à une ou plusieurs étapes).
 
    | **Nom de l’étape** | **Phase (affectée à l’étape)** |
    |---|---|
@@ -207,12 +211,12 @@ Par exemple, pour un workflow avec six étapes et quatre phases :
 
 1. Lorsque le workflow est exécuté, l’utilisateur peut afficher la progression en fonction des noms des phases (au lieu des noms des étapes). La progression du workflow est affichée dans l’onglet [INFORMATIONS SUR LE WORKFLOW de la fenêtre Détails de la tâche de l’élément de travail](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) répertorié dans la [boîte de réception](/help/sites-authoring/inbox.md).
 
-### workflows et Forms {#workflows-and-forms}
+### Workflows et Forms {#workflows-and-forms}
 
-En règle générale, les workflows sont utilisés pour traiter les envois de formulaires dans AEM. Cela peut être effectué avec les [composants de formulaires de composants principaux](https://helpx.adobe.com/fr/experience-manager/core-components/using/form-container.html) disponibles dans une instance AEM standard, ou avec la [solution AEM Forms](/help/forms/using/aem-forms-workflow.md).
+En règle générale, les processus sont utilisés pour traiter les envois de formulaire dans AEM. Cela peut être effectué avec les [composants de formulaires de composants principaux](https://helpx.adobe.com/fr/experience-manager/core-components/using/form-container.html) disponibles dans une instance AEM standard, ou avec la [solution AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
-Lors de la création d’un formulaire, l’envoi de ce formulaire peut facilement être associé à un modèle de workflow ; par exemple pour stocker le contenu dans un emplacement précis du référentiel ou pour notifier un utilisateur de l’envoi du formulaire et de son contenu.
+Lors de la création d’un formulaire, l’envoi du formulaire peut facilement être associé à un modèle de workflow ; par exemple pour stocker le contenu à un emplacement particulier du référentiel ou pour informer un utilisateur de l’envoi du formulaire et de son contenu.
 
-### workflows et traduction {#workflows-and-translation}
+### Workflows et traduction {#workflows-and-translation}
 
 Les workflows font également partie intégrante du processus de [traduction](/help/sites-administering/translation.md).

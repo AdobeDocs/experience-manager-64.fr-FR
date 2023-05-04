@@ -1,7 +1,7 @@
 ---
 title: Interaction de Backbone
 seo-title: Backbone interaction
-description: Informations conceptuelles sur l’utilisation des modèles Backbone JavaScript dans l’espace de travail AEM Forms.
+description: Informations conceptuelles sur l’utilisation des modèles JavaScript Backbone dans l’espace de travail AEM Forms.
 seo-description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
 uuid: c70da848-e514-42bc-a59b-44a7c00aa529
 content-type: reference
@@ -9,16 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
 exl-id: f726cb73-732c-4893-bdb5-10ddcf4a340a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 100%
+source-wordcount: '470'
+ht-degree: 34%
 
 ---
 
 # Interaction de Backbone {#backbone-interaction}
 
-Backbone est une bibliothèque qui permet de créer et de suivre une architecture MVC dans des applications Web. L’idée de base de Backbone est d’organiser votre interface en vues logiques, sauvegardées par des modèles, chacune d’entre elles pouvant être mise à jour de manière indépendante lorsque le modèle change, sans devoir redessiner la page. Pour plus d’informations sur Backbone, consultez la section [https://backbonejs.org](https://backbonejs.org/).
+>[!CAUTION]
+>
+>AEM 6.4 a atteint la fin de la prise en charge étendue et cette documentation n’est plus mise à jour. Pour plus d’informations, voir notre [période de support technique](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). Rechercher les versions prises en charge [here](https://experienceleague.adobe.com/docs/?lang=fr).
+
+Backbone est une bibliothèque qui permet de créer et de suivre une architecture MVC dans des applications web. L’idée de base de Backbone est d’organiser votre interface en vues logiques, reposant sur des modèles, chacun d’eux pouvant être mis à jour indépendamment lorsque le modèle change, sans avoir à redessiner la page. Pour plus d’informations sur Backbone, consultez la section [https://backbonejs.org](https://backbonejs.org/).
 
 Voici quelques concepts clés :
 
@@ -28,33 +32,33 @@ Voici quelques concepts clés :
 
 **Modèle HTML** : modèle d’enveloppe qui contient des balises d’emplacement renseignées par le modèle.
 
-**Espace de travail AEM Forms** : contient plusieurs composants individuels. Chaque composant :
+**Espace de travail AEM Forms** : contient plusieurs composants individuels. Chaque composant :
 
-* représente un seul élément d’interface utilisateur logique ;
-* il peut s’agir d’un ensemble de composants similaires ;
-* comprend le modèle Backbone, la vue Backbone et le modèle HTML ;
-* contient une référence à un service ;
-* contient une référence aux utilitaires requis.
+* Représente un seul élément d’interface utilisateur logique.
+* Il peut s’agir d’un ensemble de composants similaires.
+* Comprend le modèle Backbone, la vue Backbone et le modèle de HTML.
+* Contient une référence à un service.
+* Contient une référence aux utilitaires requis.
 
-Lorsqu’un composant est initialisé, les objets suivants sont créés :
+Lorsqu’un composant est initialisé, les objets suivants sont créés :
 
-* Une nouvelle instance du modèle Backbone du composant est créée. Ce service est inséré dans le modèle.
+* Une nouvelle instance du modèle Backbone du composant est créée. Le service est injecté dans le modèle.
 * Une nouvelle instance de la vue Backbone est créée.
-* Les instances du modèle correspondant, du modèle HTML et des utilitaires sont insérées dans la vue.
+* L’instance du modèle de HTML, du modèle et des utilitaires correspondants est injectée dans la vue.
 
-Dans la vue Backbone, un événement map mappe les divers événements qui peuvent se produire en raison des interactions de l’interface utilisateur avec un gestionnaire correspondant. Ce mappage est initié une fois qu’un composant est initialisé.
+Dans la vue Backbone, il existe une carte d’événements qui mappe les différents événements qui peuvent survenir en raison d’interactions de l’interface utilisateur avec un gestionnaire correspondant. Ce mappage est lancé une fois qu’un composant est initialisé.
 
-Lorsqu’une vue est initialisée, elle appelle son modèle correspondant pour extraire les données du serveur. Une fois que toutes les données requises par une vue sont disponibles, la vue génère les données dans le format spécifié par le modèle HTML. Plusieurs vues peuvent partager un même modèle de communication.
+Lorsqu’une vue est initialisée, elle appelle son modèle correspondant pour récupérer les données du serveur. Une fois que toutes les données requises par une vue sont disponibles, la vue génère les données dans le format spécifié par le modèle HTML. Plusieurs vues peuvent partager un même modèle de communication.
 
 ![](do-not-localize/aem_forms_workflow.png)
 
-Exemple :
+Exemple :
 
 1. L’utilisateur clique sur un modèle de tâche dans la liste des tâches.
-1. La vue Tâches écoute le clic et appelle la fonction de rendu sur le modèle de tâche.
+1. La vue Tâche écoute le clic et appelle la fonction de rendu sur le modèle de tâche.
 1. Le modèle de tâche appelle ensuite le service qui constitue un point commun pour toutes les communications avec le serveur AEM Forms.
-1. La classe service appelle le point de terminaison REST d’AEM Forms pour obtenir la méthode de rendu via ajax.
-1. Le rappel réussi de cette invocation Ajax est défini dans le modèle de la tâche.
-1. Le modèle de tâche déclenche un événement Backbone comme une notification indiquant que l’appel de rendu est terminé.
-1. Une autre vue, la vue des détails de la tâche écoute cet événement du modèle de la tâche.
-1. La vue des détails de la tâche modifie ensuite le modèle de détails de la tâche pour afficher la tâche générée (formulaire, détails, pièces jointes, notes, etc.) à l’utilisateur.
+1. La classe service appelle le point d’entrée REST d’AEM Forms pour obtenir la méthode de rendu via ajax.
+1. Le rappel de succès de cet appel Ajax est défini dans le modèle de tâche.
+1. Le modèle de tâche génère un événement Backbone en tant que notification indiquant que l’appel de rendu est terminé.
+1. Une autre vue, la vue Détails de la tâche écoute cet événement à partir du modèle de tâche.
+1. La vue Détails de la tâche modifie ensuite le modèle Détails de la tâche pour afficher la tâche rendue (formulaire, détails, pièces jointes, notes, etc.) à l’utilisateur.
